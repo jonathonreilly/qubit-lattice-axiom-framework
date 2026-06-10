@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 213 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 813 |
-| _retained_pending_chain_ | 14 |
+| _retained_pending_chain_ | 15 |
 | open_gate | 38 |
-| unaudited | 1380 |
+| unaudited | 1379 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,22 +60,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1255 |
+| `audited_clean` | 1256 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1696 |
+| `unaudited` | 1695 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1482 |
+| `bounded_theorem` | 1483 |
 | `decoration` | 54 |
 | `meta` | 324 |
 | `no_go` | 329 |
 | `open_gate` | 145 |
-| `positive_theorem` | 778 |
+| `positive_theorem` | 777 |
 
 | criticality | count |
 |---|---:|
@@ -84,7 +84,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 814 |
 | `leaf` | 1317 |
 
-- **Retained pending chain closure:** 14
+- **Retained pending chain closure:** 15
 - **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
@@ -1044,6 +1044,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15020,6 +15021,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Conditioned on a link connection being a unitary map between two two-dimensional complex Hilbert spaces, its infinitesimal algebra is u(2)=su(2)+u(1), with Pauli S_i=sigma_i/2 and central generator iI_2.  _(class `A`)_
 - **chain closes:** True — The conclusion is a finite-dimensional Lie algebra identity once the note's explicit unitary-link convention and the cited two-dimensional qubit carrier are granted. The su(2) Pauli part, central u(1) line, u(2) real dimension 4, traceless Hermitian dimension 3, and su(3) dimension obstruction all follow by standard matrix algebra from the provided inputs.
 - **rationale:** The runner source actually constructs Pauli matrices, checks commutators, anti-Hermiticity, ranks, Casimir, and firewall prose rather than merely printing constants. Independently, anti-Hermitian End(C^2) has basis iI and i sigma_i, so u(2) splits as the central u(1) plus traceless su(2), with dimensions 1+3=4. Since su(3) has real dimension 8 and its faithful adjoint/simple embedding cannot fit into the four-dimensional u(2) algebra on a single qubit carrier, the bounded color boundary also closes. The explicit convention is correctly presented as the theorem's bound, not as a derived axiom or physical Standard Model identification.
+- **auditor confidence:** high
+
+### `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the target linearized Einstein tensor operator algebra: gauge annihilation, the supplied TT eigen-response, trace-sector distinction, and explicit exclusion of Regge/metric/graviton closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:key_terminology`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-044041-617210aa7c-r3_geometric_regge_lineariza`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The linearized EH/Lichnerowicz target has gauge zero modes, a nonzero TT response G_lin(h_TT) = (1/2) k^2 h_TT, and a distinct trace sector.  _(class `A`)_
+- **chain closes:** True — The independent algebra check confirms the runner formula annihilates h_{mu nu}=k_mu xi_nu+xi_mu k_nu exactly, gives G_lin=0.5 k^2 h for the stated TT sample, and gives a non-TT-like conformal response. The note expressly excludes the Regge second variation, emergent metric degrees of freedom, and physical graviton claim, so those are not missing from the audited scope.
+- **rationale:** The runner source performs actual tensor contractions for the stated continuum target operator rather than printing unchecked constants, and its four checks match the note's narrow claims. The load-bearing math is class A because it is an algebraic verification of a supplied target operator, not a first-principles framework derivation. No cited non-retained physics dependency is needed for the bounded target-operator statement; the only cited authority supplied is process terminology. The clean verdict applies only to the narrow target algebra, not to any Regge second-variation, metric-emergence, continuum-limit, or physical graviton bridge.
 - **auditor confidence:** high
 
 ### `r_base_group_theory_derivation_theorem_note_2026-04-24`

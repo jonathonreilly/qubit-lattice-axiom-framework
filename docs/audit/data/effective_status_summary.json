@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1482,
+    "bounded_theorem": 1483,
     "decoration": 54,
     "meta": 324,
     "no_go": 329,
     "open_gate": 145,
-    "positive_theorem": 778
+    "positive_theorem": 777
   },
   "cycle_examples": [],
   "cycles_detected": 0,
@@ -46,10 +46,10 @@
     "retained": 213,
     "retained_bounded": 813,
     "retained_no_go": 207,
-    "retained_pending_chain": 14,
-    "unaudited": 1380
+    "retained_pending_chain": 15,
+    "unaudited": 1379
   },
-  "retained_pending_chain_count": 14,
+  "retained_pending_chain_count": 15,
   "retained_pending_chain_examples": [
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
@@ -61,6 +61,7 @@
     "linear_response_second_order_kubo_note",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
     "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
+    "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08",
     "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
     "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",

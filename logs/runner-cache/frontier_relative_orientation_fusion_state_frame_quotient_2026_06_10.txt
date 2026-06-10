@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_relative_orientation_fusion_state_frame_quotient_2026_06_10.py
+runner_sha256: af661db36b451ca18eb86b07bf044f78953f9b5ed2bb4c3c0c59c8713b173bf7
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.19
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (F1) simultaneous (rho,u)->(g rho g+, g u): tested record content invariant
+==============================================================================
+  [PASS] single-step + sequence record content invariant under the diagonal rotation (4 Haar trials; trace cyclicity made quantitative)  (max dev 3.3e-16)
+  [PASS] post-instrument states are COVARIANT (post -> g post g+): every longer record sequence inherits the diagonal invariance by induction
+==============================================================================
+Part 2  (F2) teeth: state-only and frame-only rotations CHANGE registered content
+==============================================================================
+  [PASS] state-only rotation changes content at order 1 (the relative datum is registrable)  (max shift 0.222)
+  [PASS] frame-only rotation changes content at order 1 (same relative datum, other side)  (max shift 0.187)
+==============================================================================
+Part 3  (F3) the vacuous directions are the diagonal (+trivial stabilizers)
+==============================================================================
+  [PASS] Jacobian rank on the 16 absolute-orientation directions is 6 (kernel 10 = 8 diagonal + 2 trivial state-stabilizer)  (rank 6; top svs [1.1846 1.014  0.7337 0.5043 0.3431 0.262  0.    ])
+  [PASS] each of the 8 DIAGONAL directions is in the kernel (state-side flow + frame-side flow cancel exactly)  (max |dF| 3.6e-06)
+  [PASS] the 2 remaining kernel directions are the TRIVIAL state-stabilizer flows ([xi,rho]=0: they move nothing)
+  [PASS] the frame FAMILY is tomographically complete: the content functional determines rho exactly (no further unregistered direction hides in the family)  (reconstruction dev 7.8e-16)
+==============================================================================
+Part 4  (F4) open-shell ground state (L=3, nf=2): fusion at the Fock level
+==============================================================================
+  [PASS] the chosen ground state is color-ASYMMETRIC (rho_color != I3/3 at the ground energy -- the (B) open-shell residual instance)  (dev 0.046)
+  [PASS] FOCK LEVEL: the frame-naming record distribution is invariant under the diagonal rotation (state AND frame co-rotated)  (max dev 6.4e-16)
+  [PASS] FOCK LEVEL teeth: the STATE-only rotation changes the frame-naming distribution (the open-shell selection's orientation is registrable ONLY relative to the frame)  (max shift 0.054)
+  [PASS] FOCK LEVEL control (color-orientation retirement case): under the COLOR-BLIND site-occupation instrument the state-only rotation is invariant (orientation vacuous there)  (max dev 5.6e-17)
+==============================================================================
+Part 5  (F5) the residuals fuse at orientation ONLY: distinct remainders exhibited
+==============================================================================
+  [PASS] (a) different rho SPECTRA, identical frames => different registered content (the state selection keeps instrument-independent registrable content: its invariants)
+  [PASS] (b) same state, different instrument CLASS (frame-naming vs color-blind) => different registered content (the frame-side residual keeps its class datum)  (outcome structures differ (8 patterns vs 4 totals))
+==============================================================================
+TOTAL: PASS=14 FAIL=0
+==============================================================================
+SCOPE: resolves the parked shape-question between the (B) open-shell selection
+  (Pauli open-shell instance) and the pointer-frame root precisely: the two selections fuse at
+  their absolute-orientation parts -- ONE vacuous diagonal SU(3) quotient (8
+  directions once, not 16; trace-cyclicity invariant; sharp in the rank-6 kernel +
+  tomographic completeness) -- and remain DISTINCT in their registrable remainders
+  (state orbit-invariants vs instrument class + relative orientation).  NEITHER
+  identification NOR independence.  Does NOT discharge either residual; the
+  refinement is global-side (admission B); the local ADM-1 root {P_r} is untouched
+  (global rotations supply no per-edge link data, per the color-orientation boundary); no
+  weight assigned; r untouched.  Conditional on the supplied C^3 carrier + named
+  instruments + named color-diagonal hopping.  Audit lane grades.
+
+----- stderr -----

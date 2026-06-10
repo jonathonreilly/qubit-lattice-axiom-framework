@@ -47574,10 +47574,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
         "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
         "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
         "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
-        "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07"
+        "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
+        "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8e89dc0b9e1e5cae132acabcbfad8d90e1956eb4124cee879802e45ac86ca526",
+      "note_hash": "8e61e033b1b25ab7155ff21e3899f9833569279c9cd2ea004272b429022d434d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

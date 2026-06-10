@@ -47577,10 +47577,6 @@
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
-      "from": "repo.front_door_status",
-      "to": "universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08"
-    },
-    {
       "from": "repo.repo_organization",
       "to": "key_terminology"
     },
@@ -91942,11 +91938,10 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08"
+        "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ea417c64163044ca504ca3fff157c17bf3206487899732abe4f759690ef1c50c",
+      "note_hash": "ed933b279997ed6dbecba47fcae8d47b931eb998e29da8d4b1af76d3f98eeb53",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -106005,8 +106000,8 @@
       "open_gate": 160,
       "positive_theorem": 619
     },
-    "edge_count": 11997,
-    "leaf_count": 1081,
+    "edge_count": 11996,
+    "leaf_count": 1082,
     "node_count": 3249,
     "root_count": 1045,
     "runners_with_path": 2831

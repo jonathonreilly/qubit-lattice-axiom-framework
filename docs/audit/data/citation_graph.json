@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
         "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30",
         "free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08",
         "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
         "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08",
-        "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05"
+        "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
+        "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9bacfc1e1cb4248505f29be604ffd0307925301dbca8f6c17f80a8a4de315dca",
+      "note_hash": "e03cae99d5b2c7ba3e48d98637d100f524b54cde0213e40dd79d35a19862b72e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 804 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1403 |
+| unaudited | 1402 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1241 |
-| `audited_conditional` | 23 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1719 |
+| `unaudited` | 1718 |
 
 | claim_type | count |
 |---|---:|
@@ -1386,6 +1386,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13224,6 +13225,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Because the record basis is orthonormal, W†W = sum_{r,s}(K_r†K_s)<r|s> = sum_r K_r†K_r, so the isometry condition gives the Kraus resolution.  _(class `A`)_
 - **chain closes:** True — The displayed identities close from the stated finite-dimensional isometry premise and orthonormal record basis. The note explicitly excludes deriving W from persistent-record dynamics, so that bridge is not needed for this bounded claim.
 - **rationale:** The load-bearing step is a direct algebraic expansion of an assumed finite isometry in an orthonormal record basis, not a definition substitution or external comparator check. The CP, trace-preservation, and selective-normalization formulas follow from the resulting Kraus resolution in finite dimensions. The runner source genuinely constructs a seeded finite isometry, extracts blocks, and checks the relevant matrix identities and positivity conditions; it does not import or hard-code the contested persistent-record bridge.
+- **auditor confidence:** high
+
+### `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite-dimensional algebraic construction of a block-stacked V from a supplied complete Kraus family; not the physical selection of the Kraus family or any overlap-kernel-to-record identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-033155-352f13cec1-persistent_record_instrument`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The proof relies on the block-matrix identity V†V = Σ_r K_r†K_r = 𝟙_sys for V obtained by stacking the Kraus operators K_r.  _(class `A`)_
+- **chain closes:** False — The algebraic identity closes under the corrected direct-sum/block-stack convention, but not exactly as written because the displayed row indexing uses α = r·d + i with r = 1,...,R and 0 ≤ i < d, which does not enumerate the rows of an R·d by d matrix. The source also needs an explicit basis-order or swap convention to identify the block stack with H_sys ⊗ H_record in the stated tensor order.
+- **rationale:** The mathematical substance is a direct class-A finite-matrix identity once a Kraus family satisfying Σ_r K_r†K_r = 𝟙 is supplied. The cited Kraus-Choi authority is retained-grade via decoration status, and the minimal axioms authority is an accepted premise, so there is no dependency-status downgrade. However, the runner implements the corrected 0-based block convention while the source note's displayed coordinate formula is off by one, and the block-stack/tensor-order equivalence is unstated. That source-runner convention drift prevents a clean verdict as written.
 - **auditor confidence:** high
 
 ### `persistent_record_matched_compare_note`

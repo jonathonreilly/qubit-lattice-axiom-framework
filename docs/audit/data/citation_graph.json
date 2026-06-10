@@ -47574,10 +47574,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
         "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "complex_selectivity_predictor_note",
         "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
         "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "36edd3a887a99bca2054350b807c5ddcaee66f62f9f1ec29109db0a738e34e96",
+      "note_hash": "3959329e5ee4dbd9c017eb223a3cb2854aee0e5e4fa12c67ea4dcd1216a35258",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

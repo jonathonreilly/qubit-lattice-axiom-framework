@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 801 |
+| **retained_bounded** | 802 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1408 |
+| unaudited | 1407 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1237 |
+| `audited_clean` | 1238 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1724 |
+| `unaudited` | 1723 |
 
 | claim_type | count |
 |---|---:|
@@ -652,6 +652,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -9138,6 +9139,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The four single-projector identities P_T1 Gamma_1 P_X Gamma_1 P_T1 give diag(1,0,0), diag(0,1,0), diag(0,0,1), and zero for X=O0,(1,1,0),(1,0,1),(0,1,1), followed by linearity in W.  _(class `A`)_
 - **chain closes:** True — The direct dependencies supply the Gamma_1/T_1 retained surface and generation triplet basis. In the fixed-taste T_1 basis, Gamma_1 flips (1,0,0) to O0, (0,1,0) to (1,1,0), and (0,0,1) to (1,0,1); the remaining T_2 state (0,1,1) has no T_1 preimage under a Gamma_1 hop. Orthogonal diagonal projectors and linearity then force the affine diagonal formula.
 - **rationale:** Second clean pass confirms the narrowed finite-matrix structural theorem. The result is only the affine projector/bit-flip identity on the retained carrier and retained generation/species surface; it does not derive charged-lepton masses, weight positivity, weight normalization, weak-axis selection, or a retained primitive fixing the three intermediate weights. One robustness PASS is informational, but the load-bearing single-hop/projector identities are independently checked and sufficient.
+- **auditor confidence:** high
+
+### `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`
+
+- **Note:** [`HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow companion repair: source the parent atomic finite-box scalar `-Delta_lat` from the retained `Z^3` graph-Laplacian/Green-kernel authority, check the Coulomb-kernel arithmetic, and disambiguate it from the staggered Dirac-square operator without claiming continuum Rydberg closure or absolute-eV predictions.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-031831-d8cda9a2b5-hydrogen_helium_atomic_latti`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the retained lattice Green-function asymptote `G(r) -> 1/(4 pi |r|)` into `V_lat(r) = -4 pi g G(r)` gives `V_lat(r) -> -g/|r|`, with the scalar kinetic operator routed to the nearest-neighbor graph Laplacian rather than the staggered Dirac square.  _(class `A`)_
+- **chain closes:** True — The retained Green-function authority supplies the stated stencil and `1/(4 pi |r|)` asymptote, and the note's Coulomb step is direct algebra from that input. The staggered-square disambiguation also closes as a finite matrix counterexample; no broader derivation of the scalar atomic Hamiltonian from the framework baseline is claimed.
+- **rationale:** The displayed coefficient and sign checks close on the restricted inputs: `(-Delta_lat)G=delta` with `G ~ 1/(4 pi r)` gives `(-Delta_lat)(-4 pi g G)=-4 pi g delta` and asymptote `-g/r`. Independently, the staggered operator square differs structurally from the scalar graph Laplacian: it has diagonal `1.5` on the `4^3` torus, no nearest-neighbor entries after KS cancellation, and distance-2 axis entries. The only non-retained-grade upstream is the minimal axiom memo flagged as an accepted premise, while the theorem authorities used for the stencil/asymptote and staggered comparison are retained_bounded.
 - **auditor confidence:** high
 
 ### `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`

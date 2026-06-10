@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "record_prerecord_instrument_kernel_gate_2026-06-06"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
         "record_prerecord_instrument_kernel_gate_2026-06-06",
         "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06",
         "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
         "second_grown_family_note",
-        "universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08"
+        "universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08",
+        "universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5123d14ab6398db688daa3f544baf1fdf488586d949ca7885de9619096fb58b1",
+      "note_hash": "b55377c671358a88581e6563eebf4e40c66de00f9758f3d65f7a75abe760607d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

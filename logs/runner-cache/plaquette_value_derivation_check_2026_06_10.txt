@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/plaquette_value_derivation_check_2026_06_10.py
+runner_sha256: e8b4743db2b4e7f53c269d847d5b9911f4d9baee50e2bf8df72a0f216cb87d07
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+Plaquette value derivation program check (2026-06-10)
+Scope: specification, thermodynamic-limit theorem (rate 6*beta/L), bracket interface, and KP cluster-domain certificate.
+== Part 1: exact J(beta) engine ==
+  [PASS][A] a_3 recurrence value equals independent Haar-moment value 1/648  (a_3 = 1/648)
+  [PASS][A] a_4 recurrence value equals independent Haar-moment value 1/2592  (a_4 = 1/2592)
+  [PASS][A] 0 <= a_n <= 1/n! for all n < 140 (exact rationals)
+  [PASS][A] J(6): rational-recurrence enclosure matches Weyl quadrature  (J(6) = 3.441440354987777569; quad residual = 4.44e-16)
+  [PASS][B] P_1plaq(6) = J'(6)/J(6) reproduces the canonical helper-surface value 0.422531739649983468...  (P_1plaq(6) = 0.4225317396499834681657)
+  [PASS][A] small-beta character convention u(beta)/beta -> 1/18  (u(1e-3)/1e-3 = 0.055560185)
+  [PASS][A] falsification: corrupted recurrence seed is detected by the quadrature route  (corrupted-seed J(6) deviates by 0.056)
+  [PASS][A] Re Tr U range on SU(3) is [-3/2, 3]  (grid min = -1.4999966459, max = 2.9999798580)
+  [PASS][A] deletion lemma L1 one-plaquette instance: ln c0(beta) in [-3beta/2, 0]
+== Part 2: counting lemmas of the thermodynamic-limit theorem ==
+  [PASS][A] torus/wrap/free-box plaquette counts match 6L^4 / 6L^2(2L-1) / 6L^2(L-1)^2  (L=2: total=96 wrap=72 free=24; L=3: total=486 wrap=270 free=216; L=4: total=1536 wrap=672 free=864)
+  [PASS][A] block-decomposition counts: interior = n^4 * 6 l^2(l-1)^2, cross <= 12 n^4 l^3  ((l=2,n=2): interior=384 cross=480; (l=3,n=2): interior=3456 cross=1944; (l=2,n=3): interior=1944 cross=3456)
+  [PASS][A] thermodynamic-limit rate constant assembles to 6*beta/L from the two counting legs (exact)  (legs = 3 + 3)
+== Part 3: bracket theorem on the exactly solvable proxy ==
+  [PASS][A] convexity chord bracket contains the exact proxy value for all tested delta  (<P>_proxy(6) = 0.42253173965)
+  [PASS][A] bracket width tracks the curvature law delta * f''(6) as delta -> 0  (width/(delta*chi) = 0.999999 at delta = 0.02)
+  [PASS][A] bracket theorem contains the exact value under all 8 extreme envelope perturbations  (L = 1000, delta = 0.25)
+  [PASS][A] falsification: sign-flipped budget produces an invalid lower bound (detected)  (flipped lb = 0.97833989 > exact 0.42253174)
+  [PASS][A] falsification: non-convex fake input violates chord ordering (detected)  (left chord 0.025 > right chord -0.025)
+== Part 4: KP cluster-expansion domain certificate ==
+  [PASS][A] each link lies in exactly 6 plaquettes; link-adjacency degree Delta = 20 exactly  (per-link = [6], neighbor degrees = [20])
+  [PASS][A] certified threshold eps* = 1/(e^2*Delta*(Delta+2)) gives subcritical q* = 1/(Delta+2)  (eps* = 0.00030758019)
+  [PASS][A] falsification: adjacency constant is load-bearing (Delta=19 would loosen eps*)  (eps*(19)/eps*(20) = 1.10276)
+  [PASS][C] sup-norm activity eps(6) = e^6/J(6) - 1 rigorously enclosed  (eps(6) = 116.226728311)
+  [PASS][C] beta = 6 fails the certified KP condition by more than 1e5 in activity  (eps(6)/eps* = 377875.0)
+  [PASS][C] certified coupling domain endpoint beta_KP located (eps(beta_KP) = eps*)  (beta_KP = 0.000307536)
+  [PASS][C] framework point beta = 6 exceeds the certified domain by more than 1e4 in coupling  (6/beta_KP = 19509.9)
+  [PASS][A] remark R1: idealized activity u(6)*e*(Delta+1) exceeds 1 by more than a factor 10  (u(6)*e*(Delta+1) = 24.1198)
+== Part 5: bracket cost budget and cross-note residuals ==
+  [PASS][A] budget: optimal-delta bracket width is 24*sqrt(chi/L) (formula arithmetic)  (chi_proxy = 0.064880483)
+  [PASS][C] a 1e-2-wide rigorous bracket needs certified ln Z_L at L > 1e5  (L(0.05) = 1.495e+4, L(0.01) = 3.737e+5, L(0.002) = 9.343e+6)
+  [PASS][C] at the largest committed MC volume (L=8) the rigorous bracket is vacuous  (width(L=8) = 2.1613 > full observable range 1.5)
+  [PASS][B] admitted reuse constant matches the canonical helper surface (consistency only)  (consumed as admitted comparison/reuse number, never derived here)
+  [PASS][B] admitted 0.5934 lies inside the committed MC-FSS two-sigma bracket [0.59327, 0.59473]  (bracket quoted from PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05)
+  [PASS][D] recorded literature singularity modulus ~5.7 lies inside the |beta|=6 disc (context)  (comparator context only; consistent with the KP certificate boundary at beta=6)
+  [PASS][A] paired note declares all required boundaries and non-claims  (all guardrail phrases present)
+
+Breakdown: A=22 B=3 C=6 D=1
+TOTAL: PASS=32 FAIL=0
+SCOPE: <P>(6) = 0.5934 is NOT derived here; B1 stays an admitted reuse number. This runner certifies the specification, the quantitative thermodynamic-limit theorem, the bracket interface with its cost budget, and the scoped KP certificate boundary at beta=6.
+
+----- stderr -----
+

@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 483 |
 | `high` | 481 |
-| `medium` | 839 |
-| `leaf` | 1325 |
+| `medium` | 838 |
+| `leaf` | 1326 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -102,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1473 | 112.03 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1472 | 112.03 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 994 | 61.96 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1341 | 60.89 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 854 | 58.24 | `unaudited` | unaudited |
@@ -116,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `alpha_s_derived_note` | bounded_theorem | critical | 856 | 38.74 | `audited_conditional` | ~~audited_conditional~~ |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 763 | 38.58 | `unaudited` | unaudited |
 | 14 | `yt_ew_color_projection_theorem` | no_go | critical | 706 | 38.47 | `audited_clean` | **retained_no_go** |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1248 | 37.79 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1247 | 37.78 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 925 | 36.35 | `audited_clean` | **retained_bounded** |
 | 17 | `three_generation_structure_note` | bounded_theorem | critical | 1056 | 36.05 | `audited_clean` | **retained_bounded** |
 | 18 | `cpt_exact_note` | positive_theorem | critical | 1310 | 35.86 | `audited_clean` | **retained** |

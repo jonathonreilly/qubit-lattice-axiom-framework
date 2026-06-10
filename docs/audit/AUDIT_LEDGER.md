@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 803 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1405 |
+| unaudited | 1404 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1240 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1721 |
+| `unaudited` | 1720 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1480 |
+| `bounded_theorem` | 1481 |
 | `decoration` | 54 |
 | `meta` | 324 |
 | `no_go` | 329 |
 | `open_gate` | 145 |
-| `positive_theorem` | 780 |
+| `positive_theorem` | 779 |
 
 | criticality | count |
 |---|---:|
@@ -1392,6 +1392,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -16475,6 +16476,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The finite-dimensional identities Tr([a,a†]) = 0 while Tr(I_H) = D rule out CCR for D >= 1, and the CAR relations give {a†,a†} = 2(a†)^2 = 0 plus n^2 = a†aa†a = n.  _(class `A`)_
 - **chain closes:** True — The algebraic statements follow from cyclic trace, explicit 2x2 CAR matrices, and same-mode CAR identities. The abstract Cl(3) dimension match is supplied by retained-grade one-hop authorities, and no physical per-site Hilbert-space identification is used.
 - **rationale:** (C1)-(P2) are finite-dimensional trace, matrix, and CAR algebra identities, and the runner source genuinely instantiates symbolic matrices and the concrete CAR carrier. The only load-bearing upstream use is the abstract Cl(3) dimension-2 readout; the supplied authorities are retained-grade, including the decoration-under retained parent. The source explicitly excludes the physical lattice identification and open staggered-Dirac bridge, so the audited narrow scope closes.
+- **auditor confidence:** high
+
+### `st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`ST1_ST2_SAME_WALL_GAUGE_DYNAMICS_RESIDUAL_CONVERGENCE_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/ST1_ST2_SAME_WALL_GAUGE_DYNAMICS_RESIDUAL_CONVERGENCE_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the finite SU(3) equivariance/counterexample diagnostics and the claimed ADM-1/ADM-2 residual convergence onto one undelivered continuous-time gauge-link/color-einselection dynamics package.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-032644-5f7a9671c3-st1_st2_same_wall_gauge_dyna`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** R1, R2, and ADM-1 collapse, for this route map, to one undelivered continuous-time gauge-link / color-einselection dynamics package, so ST1 and ST2 sit at the same wall.  _(class `B`)_
+- **chain closes:** False — The finite algebra diagnostics close as runner-supported checks, but the wall-collapse conclusion depends on route-map authorities not provided in the restricted packet, especially the ADM-2 reduction, the conditional compact-group CLT premise, and the H_cov/ADM-1 connection boundary. Without those upstream notes, the residual matching cannot be independently verified.
+- **rationale:** The runner genuinely computes the advertised finite SU(3) equivariance, non-selection, local/global mismatch, and annealed-vs-per-step diagnostics; it is not just printing constants. Those checks support the narrow negative corrections, but the load-bearing same-wall conclusion is a cross-note residual classification rather than an independent first-principles closure. The packet itself names open or conditional pieces, including R1, R2, and H_cov-as-connection, and several cited route-map authorities are referenced but not supplied, so the audit cannot ratify the residual collapse as clean from the restricted inputs alone.
+- **open / conditional deps cited:**
+  - `ADM2_GLOBAL_SU3_SYMMETRY_REDUCES_ACTION_FORM_BI_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-08.md`
+  - `EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08.md`
+  - `MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md`
 - **auditor confidence:** high
 
 ### `stable_post_record_dial_location_certificate_2026-06-06`

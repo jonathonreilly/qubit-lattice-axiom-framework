@@ -3,7 +3,7 @@
     "critical": 338,
     "high": 240,
     "leaf": 443,
-    "medium": 386
+    "medium": 385
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -17455,33 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "graph_first_su3_integration_note",
-        "cl3_color_automorphism_theorem",
-        "record_classical_semigroup_boundary_2026-06-06",
-        "record_markov_generator_embeddability_boundary_2026-06-06"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.085,
-      "note_path": "docs/ST1_ST2_SAME_WALL_GAUGE_DYNAMICS_RESIDUAL_CONVERGENCE_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_st1_st2_same_wall_gauge_dynamics_residual_2026_06_08.py",
-      "transitive_descendants": 23
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17562,6 +17535,37 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "complex_selectivity_predictor_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "second_grown_family_complex_note",
+        "alt_connectivity_family_complex_failure_note",
+        "third_grown_family_complex_boundary_note",
+        "fourth_family_complex_boundary_note",
+        "fifth_family_complex_boundary_note",
+        "claude_complex_action_grown_companion_note",
+        "second_grown_family_complex_boundary_note",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.959,
+      "note_path": "docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/COMPLEX_SELECTIVITY_PREDICTOR_SCAN.py",
+      "transitive_descendants": 21
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17606,37 +17610,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09.py",
       "transitive_descendants": 20
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "complex_selectivity_predictor_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "second_grown_family_complex_note",
-        "alt_connectivity_family_complex_failure_note",
-        "third_grown_family_complex_boundary_note",
-        "fourth_family_complex_boundary_note",
-        "fifth_family_complex_boundary_note",
-        "claude_complex_action_grown_companion_note",
-        "second_grown_family_complex_boundary_note",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.585,
-      "note_path": "docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/COMPLEX_SELECTIVITY_PREDICTOR_SCAN.py",
-      "transitive_descendants": 5
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42191,6 +42164,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 50,
-  "total_pending": 1407
+  "ready_count": 49,
+  "total_pending": 1406
 }

@@ -47574,10 +47574,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "fifth_family_complex_boundary_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "complex_selectivity_predictor_note"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "fifth_family_complex_boundary_note",
         "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08",
         "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
         "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
-        "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09"
+        "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
+        "complex_selectivity_predictor_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9f45c491dfe37195c3886f9b563c3bd8eacf98814f883a2d906237257f7bd40a",
+      "note_hash": "6b6f9be8b558f0e4b9d7a77fb171e7d0f6c4a8f366d09a0f82e5f3725566449c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

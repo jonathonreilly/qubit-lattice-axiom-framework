@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 818 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 39 |
-| unaudited | 1371 |
+| unaudited | 1370 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 34 |
+| ~~audited_conditional~~ | 35 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,28 +61,28 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1262 |
-| `audited_conditional` | 34 |
+| `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1687 |
+| `unaudited` | 1686 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1485 |
+| `bounded_theorem` | 1486 |
 | `decoration` | 54 |
 | `meta` | 324 |
 | `no_go` | 329 |
 | `open_gate` | 145 |
-| `positive_theorem` | 775 |
+| `positive_theorem` | 774 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 815 |
-| `leaf` | 1316 |
+| `medium` | 814 |
+| `leaf` | 1317 |
 
 - **Retained pending chain closure:** 15
 - **Citation cycles detected:** 0
@@ -1398,6 +1398,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dimension_selection_upper_bound_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3894,6 +3895,26 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within the restricted packet, the runner source and inlined load-bearing helper code instantiate the lattice operators, finite-rank support construction, shell averaging, least-squares harmonic projection, and finite-difference metric residual checks. The conclusion is bounded to this numerical helper workflow and does not claim a physical derivation of the projection map or full GR closure.
 - **rationale:** The load-bearing computation is not just a printed constant: the runner constructs phi grids from the supplied finite-rank/O_h machinery, fits a/r from shell averages, evaluates finite-difference Einstein-tensor residuals, and records three passing bounded checks. The upstream finite-rank helper authority is retained_bounded, and the source note explicitly limits the claim to a helper-module residual result rather than a full physical theorem. The numerical parameters in the helper are selected inputs, but the audited claim is only that this bounded module performs and reports the stated coarse-graining/residual calculation on that finite family.
 - **auditor confidence:** medium
+
+### `color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`COLOR_DEPOLARIZATION_ADM2_GATING_ADMISSIONS_COLLAPSE_TO_TWO_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/COLOR_DEPOLARIZATION_ADM2_GATING_ADMISSIONS_COLLAPSE_TO_TWO_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional C^3 and C^3 x C^3bar algebra for the stated twirl/primitivity and entanglement mechanisms, conditional on the prior mechanism mappings and gauge-structure identifications.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-050500-c263811069-color_depolarization_adm2_ga`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The three mapped ADM-2 mechanisms gate depolarization on exactly two admissions: TWIRL/PRIMITIVITY require a presupposed local SU(3) connection V != I3 plus a named frame B, while ENTANGLEMENT requires a global color-singlet/Gauss-law physical-state condition.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional algebra checked in the runner closes for the stated conditional mechanisms. The full conclusion does not close from the restricted packet because the prior block-05..08 mechanism mappings, their exhaustiveness, and the bridges identifying V != I3/frame B/Gauss-law neutrality as undelivered gauge-structure admissions are not supplied as retained-grade inputs.
+- **rationale:** The runner source performs genuine small-matrix algebra rather than printing constants, and its checks support the stochastic, Schur, marginal, Casimir, and commutant claims within the packet. Independently, unitarity implies double stochasticity and Schur's lemma gives the stated invariant marginals, so the local math is not the blocker. The blocker is dependency closure: the theorem imports unaudited per-mechanism mappings and gauge-structure/non-supply identifications that are not derivable from the empty one-hop authority packet. This is therefore a conditional bounded consolidation, not an audited-clean theorem from Lattice + Quantum + Record alone.
+- **open / conditional deps cited:**
+  - `block-05 multi-frame dichotomy source proposal (unaudited; exact path not provided in packet)`
+  - `block-06 unistochastic-primitivity criterion source proposal (unaudited; exact path not provided in packet)`
+  - `block-07 matter-unitary-primitivity-needs-connection source proposal (unaudited; exact path not provided in packet)`
+  - `block-08 color-neutrality-entanglement source proposal (unaudited; exact path not provided in packet)`
+  - `FIERZ_SINGLET_CHANNEL_SELECTOR_IS_WEIGHT_NOT_PARTITION... (unaudited; exact path not provided in packet)`
+  - `CONFINEMENT_STRING_TENSION_NOTE.md`
+- **auditor confidence:** high
 
 ### `complex_action_note`
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 816 |
+| **retained_bounded** | 817 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 39 |
-| unaudited | 1374 |
+| unaudited | 1373 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,29 +60,29 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1260 |
+| `audited_clean` | 1261 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1690 |
+| `unaudited` | 1689 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1484 |
+| `bounded_theorem` | 1485 |
 | `decoration` | 54 |
 | `meta` | 324 |
 | `no_go` | 329 |
 | `open_gate` | 145 |
-| `positive_theorem` | 776 |
+| `positive_theorem` | 775 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 816 |
-| `leaf` | 1315 |
+| `medium` | 815 |
+| `leaf` | 1316 |
 
 - **Retained pending chain closure:** 15
 - **Citation cycles detected:** 0
@@ -102,15 +102,15 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1447 | 109.50 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 778 | 61.10 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1308 | 59.35 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1307 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1049 | 47.04 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1219 | 44.25 | `audited_renaming` | ~~audited_renaming~~ |
-| 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 617 | 40.77 | `audited_clean` | **retained** |
+| 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 616 | 40.77 | `audited_clean` | **retained** |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1016 | 40.49 | `unaudited` | unaudited |
 | 10 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 270 | 39.58 | `unaudited` | unaudited |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1273 | 39.31 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1272 | 39.31 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 811 | 38.66 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 707 | 38.47 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
@@ -206,6 +206,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `blocking_isometry_reduces_to_pointer_frame_admission_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `bmv_bounded_negative_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `bmv_entanglement_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `bmv_threebody_note_2026-04-11` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -2603,6 +2604,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Completing the square in q_F at fixed q_U gives q_F^*(q_U)=C^{-1}(xi-B^T q_U), and substituting yields K_eff=A-B C^{-1}B^T and J_eff=eta-B C^{-1}xi.  _(class `A`)_
 - **chain closes:** True — The main marginalization, source update, symmetry, positivity, and determinant identity follow by direct block algebra from the stated PD block-matrix hypotheses. The associativity statement is only sketched as classical, but it is an algebraic property of iterated Schur complements under the same invertibility/PD hypotheses and introduces no external premise.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the stated real symmetric PD block matrix and source, with no cited upstream authorities or imported physical assumptions. The runner performs exact SymPy checks of the Schur complement, source update, determinant identity, and completing-square residual rather than merely printing constants. The runner does not separately test sequential marginalization associativity, so that point rests on the note's standard algebraic assertion, but it does not create an open dependency or renaming.
+- **auditor confidence:** high
+
+### `blocking_isometry_reduces_to_pointer_frame_admission_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`BLOCKING_ISOMETRY_REDUCES_TO_POINTER_FRAME_ADMISSION_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/BLOCKING_ISOMETRY_REDUCES_TO_POINTER_FRAME_ADMISSION_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite ideal pointer-record/projective model: a named complete orthogonal projector set fixes the record-write isometry up to record-register Kraus gauge, compression isometry freedom reduces to survivor range plus survivor-unitary gauge, and irreducible color C^3 supplies no nontrivial SU(3)-covariant projector refinement.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-045555-44375d2225-blocking_isometry_reduces_to`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given an orthogonal pointer projector set {P_r}, W|psi> = sum_r (P_r|psi>) ⊗ |r> has W†W = I and Kraus blocks K_r = P_r, while irreducible SU(3) on C^3 has only invariant projectors 0 and I, so the remaining physical choice is the pointer/frame projector set rather than an independent isometry.  _(class `A`)_
+- **chain closes:** True — The finite-dimensional algebra closes directly: orthogonality and sum_r P_r = I give W†W = I, K_r = P_r, and the dephasing channel; unitary Kraus mixing preserves the channel; the HW(3) twirl forces the SU(3) commutant on C^3 to be scalars. This proves the scoped reduction but does not supply the pointer projector set itself.
+- **rationale:** The runner source performs actual finite-dimensional linear-algebra checks rather than printing constants, and its PASS=30 output matches the audited identities. An independent check of the displayed formulas confirms the projector-isometry, Kraus-gauge, compression-gauge, and SU(3)-commutant claims within the stated finite projective model. The result is clean only as a bounded theorem: it does not discharge the pointer-frame admission or derive a canonical pointer set from the axioms.
 - **auditor confidence:** high
 
 ### `bmv_bounded_negative_note`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1420 |
-| Retained-grade rows, including boxed decorations | 1286 |
+| Applied audit verdicts | 1421 |
+| Retained-grade rows, including boxed decorations | 1287 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 816 |
+| Retained bounded rows | 817 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 39 |
-| Unaudited rows | 1374 |
+| Unaudited rows | 1373 |
 | Retained-pending-chain rows | 15 |
 | Audited conditional rows | 33 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1376 |
-| Ready rows | 29 |
+| Total pending rows | 1375 |
+| Ready rows | 28 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
 | Medium pending | 375 |
-| Leaf pending | 423 |
+| Leaf pending | 422 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`blocking_isometry_reduces_to_pointer_frame_admission_narrow_theorem_note_2026-06-09`](../../docs/BLOCKING_ISOMETRY_REDUCES_TO_POINTER_FRAME_ADMISSION_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08`](../../docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md) - medium; unaudited
 - [`chsh_tsirelson_lattice_qubits_bound_note_2026-05-20`](../../docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md) - medium; unaudited
 - [`color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09`](../../docs/COLOR_DEPOLARIZATION_ADM2_GATING_ADMISSIONS_COLLAPSE_TO_TWO_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09`](../../docs/CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
-- [`dimension_selection_lower_bound_bridge_v2_2026-05-20`](../../docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md) - leaf; unaudited
+- [`dimension_selection_lower_bound_bridge_v2_2026-05-20`](../../docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md) - medium; unaudited
+- [`dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,16 +83,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3249 |
 | Critical nodes | 548 |
 | High nodes | 439 |
-| Medium nodes | 858 |
-| Leaf nodes | 1404 |
+| Medium nodes | 857 |
+| Leaf nodes | 1405 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1447 descendants; score 109.500
 - `three_generation_observable_theorem_note` - critical; 778 descendants; score 61.105
-- `graph_first_su3_integration_note` - critical; 1308 descendants; score 59.354
+- `graph_first_su3_integration_note` - critical; 1307 descendants; score 59.353
 - `observable_principle_from_axiom_note` - critical; 860 descendants; score 58.250
 - `minimal_axioms_2026-05-03` - critical; 497 descendants; score 47.960
 - `key_terminology` - critical; 1049 descendants; score 47.036
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1219 descendants; score 44.253
-- `cl3_color_automorphism_theorem` - critical; 617 descendants; score 40.771
+- `cl3_color_automorphism_theorem` - critical; 616 descendants; score 40.769

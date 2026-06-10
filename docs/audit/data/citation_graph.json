@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "blocking_isometry_reduces_to_pointer_frame_admission_narrow_theorem_note_2026-06-09"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dimension_selection_lower_bound_bridge_v2_2026-05-20"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
         "blocking_isometry_reduces_to_pointer_frame_admission_narrow_theorem_note_2026-06-09",
         "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08",
         "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
         "color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09",
-        "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09"
+        "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
+        "dimension_selection_lower_bound_bridge_v2_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6dc146f645c6774bb21786ea9a46f5a834326f3bf295d77d5365dbe886085e74",
+      "note_hash": "ec8226172bd3b44d019fb5bfa69d19f0c4d7bbb3e5838d5f671442b1ee057b4e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

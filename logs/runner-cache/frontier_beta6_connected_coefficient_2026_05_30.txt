@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
-runner_sha256: acb3a6171eb01408654809217d2606f5cfe1c8a6050d0ec2fb7c646c483b6185
+runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 100.74
+elapsed_sec: 106.20
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -23,7 +23,7 @@ V1. exact free-Haar plaquette moments
 
 Enumerating connected leaf-free GF(3)-closable supports (capped at size 6) ...
   GF(3)-closable contributing supports by size: {5: 4}
-  (leaf-free supports by size, diagnostic):     {4: 28, 5: 452, 6: 5966}   (18.2s)
+  (leaf-free supports by size, diagnostic):     {4: 28, 5: 452, 6: 5966}   (20.4s)
 
 V2. order-beta^5 coefficient (cited anchor)
   [PASS] per-shell connected cumulant = 2*(1/6)^6*3^(V-E) = 1/18^5 (note Thm 4)
@@ -47,6 +47,34 @@ V4b. two-engine agreement: optimized Fraction engine vs sympy engine
   [PASS] Fraction engine reproduces sympy d_6 = 7/5668704 EXACTLY (SU(3) link-integral formulas validated against the order-6 value)
          Fraction d_6 = 7/5668704
 
+V5-cache. maxorder-7 companion cache certificate
+  [PASS] maxorder-7 packet runner exists
+         scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py
+  [PASS] maxorder-7 packet cache exists
+         logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt
+  [PASS] maxorder-7 cache runner path matches packet runner
+         scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py == scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py
+  [PASS] maxorder-7 cache wrapper SHA is fresh
+         0dd340b81de3f925eba1dd917522913cec4c99ff3250f84c88af3ffb19237dfb == 0dd340b81de3f925eba1dd917522913cec4c99ff3250f84c88af3ffb19237dfb
+  [PASS] maxorder-7 cache completed successfully
+         status=ok exit=0
+  [PASS] maxorder-7 cache contains: delegated_runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
+         delegated_runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
+  [PASS] maxorder-7 cache contains: delegated_argv: 7
+         delegated_argv: 7
+  [PASS] maxorder-7 cache contains: primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e
+         primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e
+  [PASS] maxorder-7 cache contains: V5. order-beta^7 coefficient
+         V5. order-beta^7 coefficient
+  [PASS] maxorder-7 cache contains: no GF(3)-closable distinct support of size 6 or 7 exists
+         no GF(3)-closable distinct support of size 6 or 7 exists
+  [PASS] maxorder-7 cache contains: d_7 exact value = 5/17006112
+         d_7 exact value = 5/17006112
+  [PASS] maxorder-7 cache contains: d_7/d_6 = 5/21
+         d_7/d_6 = 5/21
+  [PASS] maxorder-7 cache contains: SCORECARD: PASS=22 FAIL=0
+         SCORECARD: PASS=22 FAIL=0
+
 V6. SU(3) Haar Monte-Carlo validation of the exact integrator (CHECK, not input)
   [PASS] MC <|TrU|^2> = 1 (fundamental character orthonormality)
          MC=1.0004
@@ -64,7 +92,7 @@ EXACT CONNECTED COEFFICIENTS OF Delta(beta) = P_full - P_1plaq:
    d_5 = 1/472392 = 2.11688598e-06
    d_6 = 7/5668704 = 1.23485015e-06
 ==============================================================================
-SCORECARD: PASS=18 FAIL=0   (100.3s)
+SCORECARD: PASS=31 FAIL=0   (105.7s)
 ==============================================================================
 This is an exact strong-coupling series coefficient (bounded result).
 It does NOT close beta=6. The exact d_7 falsifies the single-ratio

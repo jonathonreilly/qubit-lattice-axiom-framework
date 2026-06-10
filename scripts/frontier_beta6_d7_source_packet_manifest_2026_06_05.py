@@ -83,7 +83,7 @@ def main() -> int:
         "completed maxorder-7 packet",
         "full untruncated source runner",
         "SCORECARD: PASS=22 FAIL=0",
-        "SUMMARY: BETA6 D7 SOURCE PACKET PASS=52 FAIL=0",
+        "SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0",
         "beta=6 closure problem remains open",
     ]
     for marker in connected_markers:
@@ -123,6 +123,7 @@ def main() -> int:
     max7_cache = PATHS["maxorder7_cache"].read_text(encoding="utf-8")
     for snippet in [
         "delegated_argv: 7",
+        f"primary_runner_sha256: {sha256(PATHS['primary_runner'])}",
         "V5. order-beta^7 coefficient",
         "d_7 exact value = 5/17006112",
         "d_7/d_6 = 5/21",

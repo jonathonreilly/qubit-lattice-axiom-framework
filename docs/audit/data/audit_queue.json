@@ -3,7 +3,7 @@
     "critical": 338,
     "high": 240,
     "leaf": 443,
-    "medium": 391
+    "medium": 390
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -17455,34 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "plaquette_bootstrap_framework_integration_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
-        "plaquette_self_consistency_note",
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-        "gauge_vacuum_plaquette_framework_point_underdetermination_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.7,
-      "note_path": "docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_plaquette_bootstrap_framework_integration.py",
-      "transitive_descendants": 51
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17628,15 +17600,15 @@
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
+      "load_bearing_score": 5.585,
       "note_path": "docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/fiber_frame_local_redundancy_bridge_2026_06_09.py",
-      "transitive_descendants": 7
+      "transitive_descendants": 23
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42324,6 +42296,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 52,
-  "total_pending": 1412
+  "ready_count": 51,
+  "total_pending": 1411
 }

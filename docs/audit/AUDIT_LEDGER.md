@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 212 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 807 |
-| _retained_pending_chain_ | 12 |
+| _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1395 |
+| unaudited | 1394 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1246 |
+| `audited_clean` | 1247 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1711 |
+| `unaudited` | 1710 |
 
 | claim_type | count |
 |---|---:|
@@ -84,7 +84,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 809 |
 | `leaf` | 1322 |
 
-- **Retained pending chain closure:** 12
+- **Retained pending chain closure:** 13
 - **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
@@ -1286,6 +1286,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18660,6 +18661,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source performs exact SymPy matrix algebra for the stated 90-degree rotation, A1 projection, moved complement coordinates, and symbolic alpha/beta quadratic-energy tie. The broader exhaustiveness claim is explicitly split off as non-load-bearing and is not counted as audited closure.
 - **rationale:** Within the narrowed bounded scope, the load-bearing step is an algebraic identity check, not a numerical match, renaming, or external comparator. The primary runner source actually constructs the projector, rotation, complement difference, and invariant energy expressions rather than merely printing expected PASS lines. The note explicitly admits that full SO(3) exhaustiveness and all-future-invariant nonexistence are not derived, so the clean verdict applies only to the checked bounded witness and invariant class.
 - **auditor confidence:** medium
+
+### `universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite runner-defined two-component Cl(3) and staggered Kähler-Dirac stress/gauge Ward identities, plus the tested non-collinear staggered cubic-triangle telescoping and same-order contact diagnostic; no full cubic diffeomorphism Ward identity, conserved cubic seagull, or Einstein-Hilbert vertex is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:key_terminology`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-035741-d776be2f0b-universal_gr_cubic_diffeo_wa`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The longitudinal contraction of the finite stress vertex decomposes into a propagator-difference term plus contact term, with the propagator-difference telescoping in the tested staggered cubic triangle and the contact remaining same-order and about one half of the contracted amplitude.  _(class `C`)_
+- **chain closes:** True — The runner source directly constructs the finite matrices, midpoint vertices, Ward contractions, Brillouin-zone sums, and contact/telescope split rather than importing a fitted value or external comparator. The open full-seagull/EH/diffeomorphism bridges are explicitly excluded from the claim scope, so they do not block this bounded finite-operator diagnostic.
+- **rationale:** The displayed two-component Ward identities reduce to the midpoint trigonometric identity and the stress identity follows algebraically from the gauge identity plus the scalar contact term. The staggered identities close from the finite hypercube operator and its Clifford anticommutation/scalar-spectrum structure, and an independent finite-toy recomputation reproduced the elliptic count, Ward residuals, telescope split, nonzero bubble term, and near-half contact ratio. No helper imports, external comparator, tuned empirical scale, or open physical identification is used for the bounded scope.
+- **auditor confidence:** high
 
 ### `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08`
 

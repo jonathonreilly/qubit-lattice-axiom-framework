@@ -47574,7 +47574,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+      "to": "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
@@ -47598,7 +47598,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"
+      "to": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+        "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08",
         "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
         "matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09",
         "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
-        "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"
+        "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e2a1f905e5c1ffb84f1d3ac1417e07e508eeaf1396a72e4f00440d004bfbfaba",
+      "note_hash": "6c6a1db91a05bb2ea6a32294168447ac07a715f6a667f7669adcd514b5163a23",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

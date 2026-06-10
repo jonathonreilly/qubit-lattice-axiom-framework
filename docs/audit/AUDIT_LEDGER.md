@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 213 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 811 |
-| _retained_pending_chain_ | 13 |
+| _retained_pending_chain_ | 14 |
 | open_gate | 38 |
-| unaudited | 1385 |
+| unaudited | 1384 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1252 |
+| `audited_clean` | 1253 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1701 |
+| `unaudited` | 1700 |
 
 | claim_type | count |
 |---|---:|
@@ -81,10 +81,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 813 |
-| `leaf` | 1318 |
+| `medium` | 814 |
+| `leaf` | 1317 |
 
-- **Retained pending chain closure:** 13
+- **Retained pending chain closure:** 14
 - **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
@@ -660,6 +660,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
+| `i1_native_quadratic_static_source_normalization_bridge_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9322,6 +9323,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Cross-note chain assembly of three explicit inputs: retained/decorative structural ratio, retained/decorative SU(3) representation-to-matter convention, and retained_bounded alpha=1/3 normalization bridge with admitted GMN/electron readout; runner checks the resulting projector algebra and charge table but does not derive the imported inputs internally.  _(class `B`)_
 - **chain closes:** True — The bounded chain closes because every physical or readout convention needed for SM-Y matching is explicitly imported: the ratio is supplied by the LH-doublet traceless-ratio note, the Sym^2/Anti^2 to color triplet/singlet assignment is supplied by the LHCM matter-assignment note under a naming convention, and the absolute scale is supplied by the audited retained_bounded alpha bridge. The current source expressly excludes internal derivations of those inputs, GMN, full-spectrum hypercharge, and anomaly cancellation, so no additional hidden bridge is required for the narrowed claim.
 - **rationale:** Audited clean only as a bounded theorem. Boundary stress check found no unlisted load-bearing admission after narrowing: quark/lepton naming, Anti^2-as-L_L readout, alpha=1/3, GMN, T3(e_L), and Q(e_L) are all named or forwarded to audited dependencies. The source's broader title and SM-Y language are controlled by the retained-scope and not read as a derivation of physical hypercharge from the commutant alone. The decoration dependencies are not promoted to independent physics; they are used only as inherited chain inputs under the retained graph-first SU(3) surface. The stale runner prose saying alpha remains open is non-authoritative under the supplied current ledger metadata and does not break the chain.
+- **auditor confidence:** high
+
+### `i1_native_quadratic_static_source_normalization_bridge_2026-06-08`
+
+- **Note:** [`I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite zero-mode-projected periodic Z^3 complete-square algebra for a supplied source-normalized quadratic action, including the two-source cross term and use of the retained Green-kernel asymptotic normalization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:key_terminology`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-042639-369980e657-i1_native_quadratic_static_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the zero-mode-projected quadratic action S[phi;J]=(1/(2 g^2))<d phi,d phi>-<J,phi>, completing the square gives L phi_*=g^2 J, S_eff[J]=-(g^2/2)<J,L^+J>, and hence V_cross(r)=-g^2 s_1 s_2 G(r).  _(class `A`)_
+- **chain closes:** True — On the zero-mean finite lattice, the variational equation and completed-square effective action follow algebraically from the supplied action and <d phi,d phi>=<phi,L phi>. The continuum 1/(4 pi r) normalization is supplied by the retained-bounded Green-kernel authority; physical source-coupling and energy-readout bridges are explicitly outside scope.
+- **rationale:** The load-bearing calculation is a genuine algebraic closure, not a definition or tuned numerical match: differentiating the stated quadratic form gives L phi=g^2 J, and completing the square gives the stated -g^2/2 factor and cross-term sign. The runner source actually instantiates finite-lattice Laplacian/FFT solves and checks the stationary equation, effective action, cross term, source-amplitude scaling, coupling scaling, and small-k normalization; no helper imports are missing. The theorem is clean only within its stated bounded scope: the source-normalized action is supplied, and no physical source-coupling normalization or general energy-readout identification is derived.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

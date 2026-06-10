@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 831 |
+| **retained_bounded** | 832 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1350 |
+| unaudited | 1349 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1279 |
+| `audited_clean` | 1280 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1666 |
+| `unaudited` | 1665 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 812 |
-| `leaf` | 1319 |
+| `medium` | 811 |
+| `leaf` | 1320 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -1319,6 +1319,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_lambda_bypass_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -19298,6 +19299,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The exact staggered Kähler-Dirac block gives a finite-BZ Zener diagnostic A≈0.97, N-stable and mass-robust, while the naive Dirac control gives A≈2.1 with O(1) anisotropy.  _(class `C`)_
 - **chain closes:** True — The runner source directly constructs the continuum, naive lattice, and staggered hypercube operators and computes the Zener components rather than importing or hard-coding the contested values. Closure is only for the bounded finite-scheme diagnostic, not for the W-native stress vertex, continuum extrapolation, or physical spin-2 isotropy theorem.
 - **rationale:** The scoped claim is deliberately bounded to the finite-BZ diagnostic actually computed in the packet. The source code contains no helper imports, external comparators, or hard-coded expected anisotropy constants; the reported continuum, naive, and staggered A values are produced by explicit operator sums. The displayed Zener normalization is internally consistent with A=1 for isotropic cubic stiffness, and the staggered scalar-spectrum identity follows from the eta-phase Clifford anticommutation in the 16x16 block. The note explicitly excludes the conserved vertex, W metric-Hessian bridge, continuum a->0 limit, and physical spin-2 theorem, so those open items do not block this bounded claim.
+- **auditor confidence:** high
+
+### `universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the displayed staggered finite carrier and runner-defined Vst0 stress vertex, the finite Brillouin-zone one-point trace is finite, nonzero, O(1), and SO(4)-isotropic.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-060155-2c3d7ed8d3-universal_gr_induced_cosmolo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-BZ runner computes a nonzero O(1) tadpole proportional to delta_mu_nu, with no cancellation inside the checked induced-action term.  _(class `C`)_
+- **chain closes:** True — The chain closes for the bounded finite-sector computation: the runner constructs the operator and vertex, evaluates finite BZ sums, and the reported numbers follow. It does not close the broader physical cosmological-constant problem or any record, unimodular, sequestering, counterterm, or backreaction route.
+- **rationale:** The runner source is not print-only: it builds the 16x16 staggered operator, velocity vertex, and finite BZ sums. An independent trace reduction gives M(P)=m^2+sum_mu sin^2(P_mu/2) and Tr(G Vst0_mu_nu)=4 sin(P_mu) sin(P_nu)/M(P), reproducing the reported vacuum energies, diagonal 0.8744 value, and off-diagonal cancellation on the symmetric grid. The cited context is retained-bounded, and the scale-reference primitive is only an optional units conversion, so the clean verdict applies only to the stated bounded finite term.
 - **auditor confidence:** high
 
 ### `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08`

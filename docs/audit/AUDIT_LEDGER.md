@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 819 |
+| **retained_bounded** | 820 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 39 |
-| unaudited | 1369 |
+| unaudited | 1368 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1263 |
+| `audited_clean` | 1264 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1685 |
+| `unaudited` | 1684 |
 
 | claim_type | count |
 |---|---:|
@@ -322,6 +322,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_upper_bound_dependency_edge_repair_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
@@ -4376,6 +4377,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Differentiating the finite layer-normalized propagator gives an exact centroid derivative at M=0 whose sign is negative for d <= 2 and positive for d >= 3 in the specified runner geometry.  _(class `C`)_
 - **chain closes:** True — The displayed derivative identities are correct finite-dimensional differentiations of A_x(M) and z/||z||, and an independent dense-matrix recomputation confirms the derivative and finite-probe sign table. The closure is bounded to the stated runner geometry only.
 - **rationale:** The runner source computes the finite-k derivative from the stated lattice propagator and does not hard-code the derivative table values. The normalization derivative, probability derivative, centroid derivative, and table signs check out independently by dense matrix construction rather than the runner's slice-based implementation. The note's non-claims correctly prevent promotion to full retained dimension selection, uniform-M control, all-parameter control, or axiom rewrite.
+- **auditor confidence:** high
+
+### `dimension_selection_lower_bound_bridge_v2_2026-05-20`
+
+- **Note:** [`DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md`](../../docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-k sign bridge for scripts/frontier_dimension_selection.py at k=6.0, L_x=40, L_y=60, source y_mid, mass offset +7, analytic f_d family, d in {1,2,3,4,5}, covering dC/dM at M=0 and the parent finite probe M=0.005.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-051227-d476414cd9-dimension_selection_lower_bo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From the retained finite-k bridge table, the normalized centroid derivative and the M=0.005 replay are negative for d=1,2 and positive for d=3,4,5, so the parent runner has raw_delta > 0 iff d >= 3 on the audited finite surface.  _(class `A`)_
+- **chain closes:** True — The retained_bounded finite-k bridge supplies the exact normalized tangent recursion and finite-probe sign table for the same geometry, constants, potential family, and observable. The supplied primary runner source matches the phase convention S=L(1-phi), the analytic potential definitions, and the layer-normalized centroid observable used by the bridge.
+- **rationale:** The note's load-bearing inference is a sign extraction from a retained_bounded upstream finite-runner bridge, not a new WKB or classical-force argument. Independent formula checks in the restricted packet confirm the radial profile identities, derivative signs, A'_x(0), normalized tangent recursion, and centroid derivative formula. The clean result is bounded: it does not prove a uniform sign interval for all M>0, the beta/alpha exponents, the upper-bound side, or full D=3 dimension selection.
 - **auditor confidence:** high
 
 ### `dimension_selection_note`

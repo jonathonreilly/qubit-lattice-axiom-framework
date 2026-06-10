@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dimension_selection_lower_bound_bridge_v2_2026-05-20"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
         "dimension_selection_lower_bound_bridge_v2_2026-05-20",
         "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
         "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09",
         "fifth_family_complex_note",
-        "fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08"
+        "fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08",
+        "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5d74b05f93f336f83b781a59e4a7e49187797c4870134573db34a8bcff1289f7",
+      "note_hash": "1e895e26ef01232478a76724ec3fc802915301d1bf9d455722f898b02de82fd8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

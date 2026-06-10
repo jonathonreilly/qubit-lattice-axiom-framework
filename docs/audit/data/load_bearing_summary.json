@@ -109,8 +109,8 @@
     {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
-      "load_bearing_score": 35.687,
-      "transitive_descendants": 1165
+      "load_bearing_score": 35.689,
+      "transitive_descendants": 1166
     },
     {
       "claim_id": "plaquette_self_consistency_note",

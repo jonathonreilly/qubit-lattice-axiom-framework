@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10.py
+runner_sha256: 52d27cb2729cc9811f00e7098fd04de933f135b822a937e8cb6d8a4681d644c8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 48.71
+status: ok
+----- stdout -----
 O(k^4) LATTICE FINGERPRINT OF THE REGGE GRAVITON SECTOR (Z^3 x Z_tau tick extension)
 ================================================================================================
 [PASS] F0 (machinery faithfulness): flat deficits of all 50 triangle classes are ZERO; the per-4-simplex Schlaefli identity holds in every length direction; Q(k) is Hermitian at random incommensurate k; the analytic continuation equals the Hermitian object at real k; the numpy EH pairing equals the sympy-derived EH pairing; Q_EH annihilates the continuum gauge family (all machine precision)
@@ -109,3 +117,6 @@ of order 1e-80 relative at gravitational-wave-band momenta (context arithmetic o
 route, not a near-term test. Open and unchanged: overall action orientation (the located sign residual),
 edge-length-DOF provenance, action selection, O(k^6) and nonlinear closure, tick scale (clock-rate
 boundary respected). No PDG / fitted value consumed.
+
+----- stderr -----
+

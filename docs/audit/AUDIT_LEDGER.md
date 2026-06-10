@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 212 |
+| **retained** | 213 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 811 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1386 |
+| unaudited | 1385 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1251 |
+| `audited_clean` | 1252 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1702 |
+| `unaudited` | 1701 |
 
 | claim_type | count |
 |---|---:|
@@ -1282,6 +1282,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
+| `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `unification_basin_failure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18629,6 +18630,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under the old identity-coupling convention, both attractive and repulsive signs remain stable on the tested graph families, so consistency does not select the sign at these parameters.  _(class `D`)_
 - **chain closes:** True — The current runner compares both signs across the three registered families and reports comparable norm drift, bounded energy, stable Phi, comparable spectra, and non-sign-selective force proxies. The conclusion is bounded to the retired identity-coupling convention and tested parameter surface.
 - **rationale:** The negative-control claim closes from the source note and current runner output. It does not claim final sign selection for the corrected parity-coupled scalar channel, and the note states that boundary. Residual risk is only if downstream readers apply this old-convention result to the corrected-coupling lane.
+- **auditor confidence:** high
+
+### `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** On the retained two-site finite-block qubit tensor surface, H_xy is C^2 tensor C^2, the generated operator algebra is M_4(C), the local embeddings are faithful commuting tensor-factor embeddings whose products span M_4(C), Bell/Pauli witnesses live on that surface, and the generated complex surface has the 16=4*4 local-tomography dimension count.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-042506-dc6934fb81-two_site_qubit_tensor_carrie`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the finite block Lambda={x,y}, the retained finite-block tensor-product surface gives H_xy=C^2_x tensor_C C^2_y, and finite-dimensional algebra gives End(H_xy) ~= M_2(C) tensor_C M_2(C) ~= M_4(C).  _(class `A`)_
+- **chain closes:** True — The cited retained finite-block tensor authorities supply the ordinary tensor carrier, and the remaining conclusions are standard finite-dimensional matrix algebra on that carrier. The retained no-go is not contradicted because the note does not derive tensor composition from operational locality alone.
+- **rationale:** The load-bearing step is algebraic closure over retained-grade tensor-product inputs, not a new axiom, external comparator, or tuned numerical match. The runner source performs exact matrix-rank, commutation, Bell-state norm, CHSH, and dimension-count checks, with dependency-status checks separated from the algebra. All cited non-axiom dependencies are retained-grade or retained_no_go, and the axiom memo is explicitly flagged as an accepted premise.
 - **auditor confidence:** high
 
 ### `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17`

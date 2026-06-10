@@ -47574,10 +47574,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
         "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
         "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
         "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06"
+        "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+        "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e85de35df733e1f71441ae3264a16743d281543607baa49a9677732c4bee5eea",
+      "note_hash": "aff9f88fef56edb98fabfbd51ce07c0430797c761f4960de4e8f01a18e84f735",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 825 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 40 |
-| unaudited | 1360 |
+| unaudited | 1359 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1271 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1676 |
+| `unaudited` | 1675 |
 
 | claim_type | count |
 |---|---:|
@@ -1417,6 +1417,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7130,6 +7131,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** "F_Htt^(0)(g_bare) = (1 / sqrt(6)) * 1 = 1 / sqrt(6)," with no gauge-coupling insertion at tree order.  _(class `A`)_
 - **chain closes:** True — The cited narrow overlap theorem supplies the normalized diagonal Wick-contractor identity and gauge-coupling independence for the operator definition; the source note only specializes it to N_iso=2, N_c=3 and a basis pair. The note explicitly excludes the broader Ward-identification step, so no unproved SM Yukawa readout is needed for the scoped claim.
 - **rationale:** The bounded theorem closes as exact algebra over the supplied narrow overlap authority plus the source note's tree-order no-gauge-insertion argument. There is no tuned numerical comparator, no hidden g_bare dependence in the stated tree-level operator matrix element, and no reliance on the terminal top-Yukawa Ward-identification row within the audited scope. Residual risk is only that downstream uses may overread the internal bare datum as a physical Standard Model top-Yukawa readout, which this note explicitly does not establish.
+- **auditor confidence:** high
+
+### `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28`
+
+- **Note:** [`G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md`](../../docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional exact arithmetic proof-walk for g_* = 106.75 from the supplied P1-P5 unbroken-Standard-Model thermal inventory plus the named R1-R6 support packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-053432-4ce21142dc-g_star_sm_content_at_leptoge`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With N_bosons = 28, N_fermions = 90, and fermion thermal weight 7/8, g_*(T) = 28 + (7/8) * 90 = 427/4 = 106.75.  _(class `A`)_
+- **chain closes:** True — The displayed boson, fermion, and 7/8-weight arithmetic closes exactly once P1-P5 are accepted as supplied premises. The packet does not close or retain the Standard Model thermal inventory premises themselves.
+- **rationale:** The load-bearing calculation is a class A rational identity over named inputs: 28 bosonic states, 90 fermionic states, and the 7/8 thermal weight give 427/4. Independent recomputation of the displayed counts and fractions matches the note, and the runner source performs Fraction arithmetic plus citation and boundary text checks, with no external comparator. The row is not eligible for audited_clean because P1-P5 explicitly supply the SM thermal inventory, vector polarization count, Higgs count, Dirac/Weyl count, and temperature regime rather than deriving them from retained or registered primitive inputs. R2 also cites a color note that expressly defers the physical color-identification bridge if read as more than algebraic support.
+- **open / conditional deps cited:**
+  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
+  - `PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`
+  - `SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `gate_b_complex_action_falsifier_note`

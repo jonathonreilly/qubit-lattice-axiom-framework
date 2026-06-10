@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/frontier_open_shell_invariant_locus_no_derived_selector_2026_06_10.py
+runner_sha256: 770ecd82d091d6d5e702d37b7c020a8a7cee3785fc05ca7809e4e6cfc1bb3910
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 22.61
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (T1) universality on the deg-20 manifold: 4 x singlet (+) 2 x octet
+==============================================================================
+  [PASS] the ground manifold is SU(3)-invariant as a subspace ([Gamma(g), P_gs] = 0)
+  [PASS] rep content: Casimir eigenvalues on the manifold are 0 (x4) and 12 (x16, the adjoint value in the un-halved-lambda normalization) => 4 x singlet (+) 2 x octet  (singlets 4, octet states 16)
+  [PASS] the commutant of the SU(3) action on the manifold has dimension EXACTLY 4^2 + 2^2 = 20 (multiplicity squares; the panel's universality upgrade)  (commutant dim 20)
+  [PASS] EVERY invariant density on the manifold is neutral at EVERY site (full commutant basis + 50 random invariant PSD states; all-site deviation < 1e-12)  (worst all-site dev 1.7e-16)
+  [PASS] the equipartition invariant state P_gs/20 (the maximally-mixed invariant state — exactly the object the G3 guard polices; EXISTENCE witness only, no realization claimed, no weight assigned): all-site neutral  (D = 5.6e-17)
+  [PASS] P_gs/20 is NOT the twirl of the broken exhibit in disguise: the broken state's exact group average has a NON-flat manifold spectrum (the equipartition witness is not the demoted uniform-weight move applied to anything)  (twirl spectrum spread 0.065)
+==============================================================================
+Part 2  (T2) equivariance (exact); the invariant locus is dynamically stable
+==============================================================================
+  [PASS] [Gamma(g), H] = 0: the named hopping is exactly equivariant
+  [PASS] [Gamma(g), I-B site-occupation projectors] = 0: the color-blind instrument class is exactly equivariant  (max dev 0.0e+00)
+  [PASS] [Gamma(g), Casimir/counts] = 0 (conservation laws equivariant)
+  [PASS] STABILITY: after a Hamiltonian step + an I-B record step an invariant state is STILL invariant (hence still all-site neutral by T1) -- preservation only, consistent with blocks 05-07  (invariance dev 1.3e-17, D 5.6e-17)
+==============================================================================
+Part 3  (T3) the order parameter D: all-site, invariant, registrable, CONTINUOUS
+==============================================================================
+  [PASS] the non-invariant exhibit sits at EXACTLY the ground energy (no derived lifting)
+  [PASS] and departs the locus: D > 0 (purity excess; instance/basis-dependent value, not a physical constant)  (D = 0.0327 (instance artifact))
+  [PASS] D is SU(3)-invariant content (D(g rho g+) = D(rho) exactly): registrable via two-copy invariant estimators per site, worst over sites  (|D(g rho g+) - D(rho)| = 1.1e-16)
+  [PASS] D is CONTINUOUS: the convex family (1-t) rho_broken + t rho_invariant sweeps D smoothly and monotonically to 0 -- the restructured residual is 'the invariant locus vs its complement under a CONTINUOUS order parameter', NOT a binary  (D(t) = [0.0327, 0.0184, 0.0082, 0.0021, 0.0])
+  [PASS] FAITHFULNESS (panel fix): a manifold state exists whose SITE-0 purity excess is small while the ALL-SITE D is large -- single-site readings are not faithful; the separator must be all-site as defined (search on the restricted manifold)  (site-0 excess 0.00094 vs all-site D 0.0259)
+==============================================================================
+Part 4  (T4) honesty: nothing derived selects either way
+==============================================================================
+  [PASS] color-blind records do NOT move a non-invariant state toward the locus: its per-site rho_color is preserved EXACTLY by I-B (block-02 lineage) => D conserved  (D change 0.0e+00)
+  [PASS] a FRAME-NAMING projector does NOT commute with the global rotation (the named exception; its content is the relative-orientation data, #3478; instance-dependent magnitude)  (non-equivariance 0.380 (instance artifact))
+==============================================================================
+TOTAL: PASS=17 FAIL=0
+==============================================================================
+SCOPE (panel-narrowed): restructures admission (B)'s open-shell residual
+  (#3474-T3b) as follows.  CONDITIONAL ON the realized state lying in the
+  SU(3)-invariant locus of the ground manifold, all-site neutrality holds with
+  ZERO further admissions (T1 universality: 4 x singlet (+) 2 x octet, full
+  commutant neutral) and PERSISTS under all derived structure (T2 stability).
+  WHICH locus the realized state occupies is the FULL remaining residual and is
+  NOT resolved here -- nothing derived selects either way (T2b), and the fork is
+  NOT a binary: departure is measured by the CONTINUOUS, all-site, SU(3)-invariant
+  order parameter D (T3; single-site readings are not faithful).  The
+  equipartition witness P_gs/20 is existence-only (and not a twirl in disguise);
+  no weight assigned; no past-hypothesis selector invoked (#3461 respected);
+  global-side throughout ({P_r} and r untouched); decimals are instance/basis
+  artifacts.  Conditional on the supplied C^3 carrier + named hopping + named
+  instrument classes.  Audit lane grades.
+
+----- stderr -----
+

@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "fifth_family_complex_note"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09",
         "fifth_family_complex_note",
         "fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08",
         "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
         "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
-        "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30"
+        "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30",
+        "free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "95162a227840ab3382337c4fcd774976120c0acf4e39c8a70220d4d66eaf6711",
+      "note_hash": "d3b95a2f93b30b8ef641c03f7a435f85009e304ef879eca0a019279fe0d585d7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

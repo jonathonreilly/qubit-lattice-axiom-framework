@@ -23,11 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 40 |
-| unaudited | 1366 |
+| unaudited | 1365 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 35 |
+| ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -63,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1266 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
-| `audited_failed` | 25 |
+| `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1682 |
+| `unaudited` | 1681 |
 
 | claim_type | count |
 |---|---:|
@@ -1492,6 +1493,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `fifth_family_complex_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
@@ -5850,6 +5852,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner now computes Born/F~M gates for all six sampled rows and fails unless the sampled complex-companion set is exactly the drift-0.20 pair {(0.20, 0), (0.20, 1)}.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helpers construct the sampled geometry, radial-shell connectivity, source field, complex propagation, Born proxy, F~M gates, and crossover predicates directly. The cached output matches the note's table and there are no cited open dependencies or external comparators in the restricted packet.
 - **rationale:** The runner source performs the load-bearing finite computation rather than merely printing constants: each row is measured from grow(), radial connectivity, source-field propagation, Born inclusion-exclusion, weak-source scaling, and sign crossover tests. The displayed table is consistent with the cached stdout: all Born values are below threshold, all F~M exponents lie within the stated gate, and only the two drift=0.20 rows have t01=1 and t05=0. The hard-coded expected companion set is used as a final assertion target after computing the rows, not as an input to produce the row values. The conclusion is correctly scoped to the sampled grid and does not claim family-wide closure.
+- **auditor confidence:** high
+
+### `fifth_family_complex_note`
+
+- **Note:** [`FIFTH_FAMILY_COMPLEX_NOTE.md`](../../docs/FIFTH_FAMILY_COMPLEX_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite sampled complex-action companion check on the radial-shell fifth-family grid drifts [0.05, 0.20, 0.30] and seeds [0, 1], specifically the claimed singleton row (0.20, 0).
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-052012-ae22321c05-fifth_family_complex_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The source note claims the complex-action targeted runner finds exactly one Born/F~M-gated TOWARD -> AWAY anchor row, drift = 0.20 and seed = 0.  _(class `C`)_
+- **chain closes:** False — The completed runner output and cited boundary note both give two surviving crossover rows, (0.20, 0) and (0.20, 1), not the singleton claimed by the source note. The missing step is a reconciled source claim/cache that matches the repaired runner result or a separate completed runner supporting the singleton.
+- **rationale:** The runner source performs an actual finite sampled computation over the stated grid, but the included completed cache refutes the source note's load-bearing singleton. Directly reading the runner table shows all six rows pass Born/F~M gates, and both drift-0.20 seeds have t01=1 and t05=0. The cited boundary note also explicitly says the older seed-singleton claim is not retained by the repaired computation. The claim therefore does not close on its own restricted packet.
 - **auditor confidence:** high
 
 ### `fifth_family_radial_boundary_note`

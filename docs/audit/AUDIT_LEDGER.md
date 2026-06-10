@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 207 |
 | **retained_bounded** | 815 |
 | _retained_pending_chain_ | 15 |
-| open_gate | 38 |
-| unaudited | 1377 |
+| open_gate | 39 |
+| unaudited | 1376 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1258 |
+| `audited_clean` | 1259 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1693 |
+| `unaudited` | 1692 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 815 |
-| `leaf` | 1316 |
+| `medium` | 816 |
+| `leaf` | 1315 |
 
 - **Retained pending chain closure:** 15
 - **Citation cycles detected:** 0
@@ -107,10 +107,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1049 | 47.04 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1219 | 44.25 | `audited_renaming` | ~~audited_renaming~~ |
-| 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 616 | 40.77 | `audited_clean` | **retained** |
+| 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 617 | 40.77 | `audited_clean` | **retained** |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1016 | 40.49 | `unaudited` | unaudited |
 | 10 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 270 | 39.58 | `unaudited` | unaudited |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1272 | 39.31 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1273 | 39.31 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 811 | 38.66 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 707 | 38.47 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
@@ -136,6 +136,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1591,6 +1592,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The narrowed claim is that five accessible-prediction scenarios follow algebraically only after granting explicit named premises P1..P6, including imported Newtonian Poisson sourcing, branch-phase dynamics, Born-gravity cross-link, extended-source ansatz, Schrodinger-Newton Gaussian evolution, and decoherence scaling.  _(class `A`)_
 - **chain closes:** True — Within the narrowed boundary, the chain closes as a bounded conditional because the missing bridges are explicitly promoted to named premises and the note disclaims derivation or retained status for them. The retained no-go dependency blocks treating P1's f/Phi and Poisson-normalization import as an audited framework consequence, but the current source note does not make that stronger claim.
 - **rationale:** Clean only as a conditional bounded theorem: all load-bearing bridge/readout/normalization assumptions are named as inputs, and the note expressly withdraws uniqueness, forward falsification, retained-premise, and primitive-derivation claims. The runner is not proof of primitives and still contains stale broad wording, but the source-note scope no longer relies on that wording.
+- **auditor confidence:** high
+
+### `acphilambda_hw_complementation_equivariance_support_note_2026-06-09`
+
+- **Note:** [`ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md`](../../docs/ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite algebraic support on the Boolean corner cube: hw=1/hw=2 complementation equivariance under C3[111], equal listed triplet profiles, and the circulant C3/symmetric readout decomposition within the stated order-48 cube relabeling group.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-044725-ce9c9401d2-acphilambda_hw_complementati`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On {0,1}^3, complementation b -> 1-b maps hw=1 bijectively to hw=2 and commutes with C3[111], while the finite relabeling/readout checks leave no invariant distinction beyond the exchanged hw label.  _(class `A`)_
+- **chain closes:** True — Direct finite enumeration gives the bijection, involution, commutation, free three-cycles, equal profiles, and L_3(1,2)=2/9 arithmetic. Standard symmetric-polynomial and C3 invariant-ring checks give the determinant cos(3 delta) identity and the single orientation-odd sin(3 delta) generator, with no physical bridge or registry premise imported.
+- **rationale:** The runner source performs actual finite enumeration and symbolic algebra rather than printing hard-coded pass counts or importing a contested premise. The displayed coefficients, signs, counts, and identities are consistent within the finite support scope, including the 3+3+3+3+36 classification for the stated order-48 relabeling group. The note's boundary language keeps the result from promoting AC_phi_lambda, selecting a physical species bridge, or changing registry status.
 - **auditor confidence:** high
 
 ### `action_crossover_note`

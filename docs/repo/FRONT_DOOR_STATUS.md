@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1417 |
+| Applied audit verdicts | 1418 |
 | Retained-grade rows, including boxed decorations | 1285 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 815 |
 | Boxed decorations under retained parents | 50 |
-| Open gates | 38 |
-| Unaudited rows | 1377 |
+| Open gates | 39 |
+| Unaudited rows | 1376 |
 | Retained-pending-chain rows | 15 |
 | Audited conditional rows | 32 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1379 |
-| Ready rows | 32 |
+| Total pending rows | 1378 |
+| Ready rows | 31 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
 | Medium pending | 375 |
-| Leaf pending | 426 |
+| Leaf pending | 425 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`acphilambda_hw_complementation_equivariance_support_note_2026-06-09`](../../docs/ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md) - medium; unaudited
 - [`adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08`](../../docs/ADM2_GLOBAL_SU3_SYMMETRY_REDUCES_ACTION_FORM_BI_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 - [`blocking_isometry_reduces_to_pointer_frame_admission_narrow_theorem_note_2026-06-09`](../../docs/BLOCKING_ISOMETRY_REDUCES_TO_POINTER_FRAME_ADMISSION_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08`](../../docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md) - medium; unaudited
 - [`chsh_tsirelson_lattice_qubits_bound_note_2026-05-20`](../../docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md) - medium; unaudited
-- [`beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md) - leaf; unaudited
+- [`color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09`](../../docs/COLOR_DEPOLARIZATION_ADM2_GATING_ADMISSIONS_COLLAPSE_TO_TWO_NARROW_THEOREM_NOTE_2026-06-09.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3249 |
 | Critical nodes | 548 |
 | High nodes | 439 |
-| Medium nodes | 857 |
-| Leaf nodes | 1405 |
+| Medium nodes | 858 |
+| Leaf nodes | 1404 |
 
 Top load-bearing rows by graph score:
 
@@ -95,4 +95,4 @@ Top load-bearing rows by graph score:
 - `minimal_axioms_2026-05-03` - critical; 497 descendants; score 47.960
 - `key_terminology` - critical; 1049 descendants; score 47.036
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1219 descendants; score 44.253
-- `cl3_color_automorphism_theorem` - critical; 616 descendants; score 40.769
+- `cl3_color_automorphism_theorem` - critical; 617 descendants; score 40.771

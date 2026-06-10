@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 207 |
 | **retained_bounded** | 804 |
 | _retained_pending_chain_ | 12 |
-| open_gate | 37 |
-| unaudited | 1401 |
+| open_gate | 38 |
+| unaudited | 1400 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1241 |
+| `audited_clean` | 1242 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1717 |
+| `unaudited` | 1716 |
 
 | claim_type | count |
 |---|---:|
@@ -1041,6 +1041,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `record_axiom_audit_application_map_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -14877,6 +14878,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The two completions kappa_EW = 0 and kappa_EW = 1 agree on the Fierz algebra and CMT scaling but disagree on K_EW; the selector is therefore underdetermined by the current packet.  _(class `A`)_
 - **chain closes:** True — The runner verifies the exact SU(N) Fierz/channel-count arithmetic and exhibits kappa_EW = 0 and kappa_EW = 1 completions that share the stated Fierz/CMT premises while giving different K_EW. With no declared one-hop dependencies and no imported selector theorem, the restricted packet closes only the underdetermination claim, not any broader physical impossibility result.
 - **rationale:** The clean verdict is for the narrowed no-go only: the source explicitly retires unconditional physical R_conn = 8/9 and preserves 8/9 only as F_adj. N1-N8 passes for that scope: five selector routes were checked as nonselecting in the packet, the wall collapses to the single missing selector/exact disconnected-coefficient theorem, hidden phrases do not introduce a second load-bearing wall, no mismatched witness or over-broad resolution claim is used, no partial-closure/convention path is dismissed as a new axiom, and the steelman is exactly the reopen condition named by the note. The runner cache is fresh against the runner hash and reports RUNNER STATUS: PASS (PASS=30 FAIL=0). This does not audit a global theorem that no future retained selector can exist.
+- **auditor confidence:** high
+
+### `rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`
+
+- **Note:** [`RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the route-demotion claim that exact Fierz trace/traceless algebra and F_adj = 8/9 survive, while the register-not-read color-trace shortcut does not close the physical kappa_EW = 0 selector on the current axiom surface.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-033905-ffb49b6984-rconn_kappa_ew_register_not_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A central-sector partition can supply sectors and counts but not the physical singlet-channel weight, and the current Record/Quantum axiom surface supplies no readout context, weighting rule, normalization, probability, dynamics, or observable bridge; therefore the Fierz split cannot be turned into a kappa_EW = 0 selector by register-not-read alone.  _(class `A`)_
+- **chain closes:** True — The finite algebra checks independently: the Fierz identity follows from the orthonormal color-operator basis, and the singlet twirl is not a nontrivial finite central-sector block partition on the irreducible color triplet. The missing physical readout and weighting rule is explicitly withheld by the cited Record/Quantum axiom boundary, so the scoped demotion follows.
+- **rationale:** The claim is not a positive closure of kappa_EW = 0; it is a scoped open-gate route demotion. The displayed quantitative identities check out: F_adj = (N_c^2 - 1)/N_c^2 gives 8/9 at N_c = 3, R_phys(0) = F_adj, R_phys(1) = 1, and the twirl/partition distinction is finite algebra rather than a fitted comparator. The Record/Quantum axiom citation is used only negatively and correctly. The runner performs substantive finite algebra checks plus text-boundary checks, with no external PDG/lattice comparator or tuned numerical match.
 - **auditor confidence:** high
 
 ### `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17`

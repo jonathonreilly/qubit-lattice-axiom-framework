@@ -47574,10 +47574,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "complex_selectivity_predictor_note",
         "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
         "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
         "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-        "matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09"
+        "matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09",
+        "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "479532063fac5f1165efdef90a5d6752cd1e29e107454cf4eabadf9214694bfa",
+      "note_hash": "266637c936e1b17309160309e36980592fb01b6e7f441865d96e2d5867f8335e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

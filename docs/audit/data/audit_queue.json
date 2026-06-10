@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 283,
     "high": 279,
-    "leaf": 424,
+    "leaf": 423,
     "medium": 409
   },
   "cycle_break_target_count": 0,
@@ -16924,33 +16924,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_self_consistent_two_body_note_2026-04-11",
-        "three_generation_observable_theorem_note",
-        "three_generation_structure_note",
-        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "grown_transfer_basin_targeted_repair_note_2026-06-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17074,6 +17047,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/microcausality_exact_h_expansion_route_obstruction_2026_06_09.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py",
       "transitive_descendants": 16
     },
     {
@@ -29587,28 +29588,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
+      "claim_id": "generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "positive_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "criticality_rank": 0,
       "cross_confirmation_status": null,
       "deps": [
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
+        "three_generation_observable_theorem_note",
+        "three_generation_structure_note",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+        "staggered_self_consistent_two_body_note_2026-04-11"
       ],
       "direct_in_degree": 0,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 0.0,
-      "note_path": "docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "note_path": "docs/GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py",
+      "runner_path": "scripts/generation_localization_corner_protected_delta_runner.py",
       "transitive_descendants": 0
     },
     {
@@ -35361,34 +35362,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/generation_dial_occupancy_free_input_2026_06_05.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
-        "three_generation_observable_theorem_note",
-        "three_generation_structure_note",
-        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
-        "staggered_self_consistent_two_body_note_2026-04-11"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/generation_localization_corner_protected_delta_runner.py",
       "transitive_descendants": 0
     },
     {
@@ -41938,5 +41911,5 @@
     }
   ],
   "ready_count": 8,
-  "total_pending": 1395
+  "total_pending": 1394
 }

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 211 |
+| **retained** | 212 |
 | **retained_no_go** | 206 |
 | **retained_bounded** | 816 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1393 |
+| unaudited | 1392 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1257 |
+| `audited_clean` | 1258 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1709 |
+| `unaudited` | 1708 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 483 |
 | `high` | 481 |
-| `medium` | 843 |
-| `leaf` | 1321 |
+| `medium` | 844 |
+| `leaf` | 1320 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -118,8 +118,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `yt_ew_color_projection_theorem` | no_go | critical | 706 | 38.47 | `audited_clean` | **retained_no_go** |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1248 | 37.79 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 925 | 36.35 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1310 | 35.86 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1057 | 35.05 | `audited_clean` | **retained_bounded** |
+| 17 | `three_generation_structure_note` | bounded_theorem | critical | 1057 | 36.05 | `audited_clean` | **retained_bounded** |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 1310 | 35.86 | `audited_clean` | **retained** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 269 | 34.58 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 699 | 32.95 | `unaudited` | unaudited |
 | 21 | `minimal_axioms_2026-04-11` | meta | critical | 1256 | 32.80 | `unaudited` | meta |
@@ -593,6 +593,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `generation_dial_local_stability_grammar_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -8330,6 +8331,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The supplied translation-character projectors and C3 cycle generator generate the full nine-dimensional M_3(C) observable algebra on H_hw=1 and have scalar commutant.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope, the runner constructs the stated 3x3 generators, computes the generated algebra dimension, and computes the commutant dimension. The conclusion follows for those supplied generators without using the out-of-scope physical bridges.
 - **rationale:** The runner performs actual finite-dimensional linear algebra rather than printing constants: it constructs the translation-sign matrices, the C3 permutation, projectors, algebra span, and commutant constraints. All four checks are algebraic identity/closure checks on the supplied local generators. Because the source note already bounds the claim to this local H_hw=1 M_3(C) reconstruction and explicitly excludes physical-species and substrate conclusions, no split is needed before audit; it should remain a bounded_theorem, not a positive_theorem.
+- **auditor confidence:** high
+
+### `generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07`
+
+- **Note:** [`GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md`](../../docs/GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite even periodic L^3 lattice with K=-G(Lap+mu^2 I)^(-1), normalized plane-wave hw=1 corner modes, and same-sector two-mode Slater Hartree-minus-exchange readout; audited result is the Vq multiplier, the 1/N normalization, and the equal negative corner-pair value for transfers with eps=8.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-212136-05cc455374-generation_corner_hf_vq_scre`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For normalized plane waves under K(x-y)=N^(-1) sum_q Vq(q) exp(i q.(x-y)), the Hartree term is Vq(0)/N and the exchange term is Vq(k_i-k_j)/N, hence delta_ij=(Vq(0)-Vq(k_i-k_j))/N.  _(class `A`)_
+- **chain closes:** True — The Fourier diagonalization, kernel reconstruction, Hartree sum, and exchange sum close by finite-dimensional translation-character algebra with the stated normalization. The three hw=1 corner differences each have two pi components, so eps=8 and the common delta is -8G/(N mu^2(8+mu^2)).
+- **rationale:** The load-bearing step is a genuine algebraic closure over the finite periodic operator and normalized plane-wave basis, not a definition, renaming, external comparator, or tuned numerical match. The cited authorities in the restricted packet are retained or retained_bounded, and the bridge does not claim to widen the open-cubic two-body mediator beyond its audited surface. The runner source materially computes the finite matrices and Fourier sums, while the independent hand check verifies the sign, 1/N factor, and corner eps=8 specialization.
 - **auditor confidence:** high
 
 ### `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23`

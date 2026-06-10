@@ -31,7 +31,7 @@ bare_retained_allowed: false
 ## Purpose
 
 The row
-[`BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md`](BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md)
+`BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md`
 was audited conditional because its arithmetic assumed the Wilson
 action-surface matching premise
 
@@ -156,7 +156,7 @@ standard Wilson plaquette action with canonical generator trace normalization.
 
 If independently retained, this row supplies a one-hop source authority for
 the `WM` premise in
-[`BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md`](BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md).
+`BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md`.
 That downstream row's rescaling product identity remains ordinary algebra.
 Any broader physical claim still needs its own action-surface and
 normalization authorities.

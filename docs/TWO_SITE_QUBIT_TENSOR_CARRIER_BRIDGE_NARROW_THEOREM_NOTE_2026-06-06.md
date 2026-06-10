@@ -13,8 +13,8 @@ pipeline after independent review.
 This note supplies a narrow one-hop bridge for source rows that need the
 ordinary two-site qubit tensor carrier, especially:
 
-- [`CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`](CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md)
-- [`LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md`](LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md)
+- `CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`
+- `LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md`
 
 The bridge does not add an axiom. It specializes already retained finite-block
 tensor-product authorities to the two distinct-site block `Lambda = {x,y}`.

@@ -17,7 +17,7 @@ direct_effective_status_change_allowed_from_this_note: false
 ## Scope
 
 This note repairs the source-side dependency edge for
-[`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md).
+`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`.
 The previous wrapper recorded Bertrand and atomic-stability results as named
 textbook imports, but the restricted packet did not expose the available
 one-hop bounded support packets as load-bearing authorities.

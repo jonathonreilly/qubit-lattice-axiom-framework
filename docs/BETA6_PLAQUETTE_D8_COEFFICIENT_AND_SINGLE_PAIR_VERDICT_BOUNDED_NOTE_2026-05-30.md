@@ -164,7 +164,7 @@ look entire-function-like.
 ## d-log-Pade Activation (and its self-contradiction at [1/1])
 
 `d_5..d_8` are the four contiguous coefficients the resummation harness
-([`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md))
+(`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`)
 names as the d-log-Pade activation minimum: three coefficients of
 `H = (log h)'`. The new `d_8` supplies the third,
 
@@ -291,7 +291,7 @@ as a derivation input.
 |---|---|---|---|
 | [`BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md`](BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md) | The d-log-Pade route is premised on a single dominant complex-conjugate pair, but with only `d_5..d_7` the class is *type-discriminated, not tested* (and `d_8` is "at/past the treewidth-29 wall"). | Supplies the exact `d_8` and tests that premise: the tested single-pair closures are falsified by the positive sign. | yes |
 | [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md) | The single-ratio geometric / tadpole continuation (`d_7^pred = (d_6/d_5) d_6`) is falsified (`d_7/d_6 = 5/21 != 7/12`). | Extends that to the *complex*-pair sub-class via the sign of `d_8`; the geometric falsification is the order-7 predecessor of this order-8 verdict. | yes |
-| [`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md) | `d_5..d_8` (`beta^8`) is the class-independent rank floor that ACTIVATES the `[1/1]` d-log-Pade predictive test. | The new `d_8` meets the floor and activates the test, which then self-contradicts. | yes |
+| `BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md` | `d_5..d_8` (`beta^8`) is the class-independent rank floor that ACTIVATES the `[1/1]` d-log-Pade predictive test. | The new `d_8` meets the floor and activates the test, which then self-contradicts. | yes |
 | [`GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md) | No finite-order truncation closes the thermodynamic `<P>(6)`. | Boundary disclaimer: this note does **not** claim beta=6 closure. Not load-bearing for the single-pair *falsifier* itself. | not load-bearing |
 | [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md) Theorem 4 | Engine-anchored bare cube cumulant `kappa_5 = 1/18^5`. | Positive arithmetic input to the exact `d_8` witness (the `kappa_5/6^k` shape law). Supports the witness, not the negative claim's logic. | not load-bearing |
 
@@ -389,7 +389,7 @@ input for `rho_{p,q}(6)`.
 - [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md)
 - [`BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md)
 - [`BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md`](BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md)
-- [`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md)
+- `BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`
 - [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
 - [`GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md)
 - [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md)

@@ -11,7 +11,7 @@ claim metadata only; it does not quote, set, or predict audit outcomes.
 **Source-packet verifier:** [`scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py`](../scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py)
 **Source-packet verifier cache:** [`logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt`](../logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt)
 **Source-packet verifier JSON:** [`outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json`](../outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json)
-**D7 companion note:** [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md)
+**D7 companion note:** `BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`
 
 ## 0. Scope and what this note is for
 
@@ -54,7 +54,7 @@ with argv `7`, and the source-packet verifier
 [`scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py`](../scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py)
 checks the source markers, cache freshness, and linked evidence. The companion
 bounded note
-[`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md)
+`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`
 records the order-7 coefficient and the bounded tadpole/geometric ansatz
 falsification.
 
@@ -329,7 +329,7 @@ All exact-computation checks PASS. The completed maxorder-7 packet cache reports
 - [`scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py`](../scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py)
 - [`logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt`](../logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt)
 - [`outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json`](../outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json)
-- [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md)
+- `BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`
 - [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md) (cited d_5 anchor)
 - [`GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md) (BBGKY identity)
 - [`GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md) (cube-shell geometry)

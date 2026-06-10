@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 815 |
+| **retained_bounded** | 816 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1397 |
+| unaudited | 1396 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1255 |
+| `audited_clean` | 1256 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1713 |
+| `unaudited` | 1712 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 483 |
 | `high` | 481 |
-| `medium` | 839 |
-| `leaf` | 1325 |
+| `medium` | 840 |
+| `leaf` | 1324 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -115,7 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `alpha_s_derived_note` | bounded_theorem | critical | 856 | 38.74 | `audited_conditional` | ~~audited_conditional~~ |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 763 | 38.58 | `unaudited` | unaudited |
 | 14 | `yt_ew_color_projection_theorem` | no_go | critical | 706 | 38.47 | `audited_clean` | **retained_no_go** |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1248 | 37.79 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1247 | 37.78 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 925 | 36.35 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1310 | 35.86 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1057 | 35.05 | `audited_clean` | **retained_bounded** |
@@ -833,6 +833,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_decay_diagnosis_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -11890,6 +11891,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** An Ad-invariant increment distribution has an Ad-invariant mean; since su(3) has no nonzero Ad-invariant vector and any nonzero equivariant linear drift has mean proportional to traceless(rho_color), centrality forces traceless(rho_color)=0.  _(class `A`)_
 - **chain closes:** True — The claim follows from standard SU(3) representation algebra: Herm(3)=1+8, Hom_SU(3)(1+8,8) is one-dimensional, the adjoint has no invariant vector, and E[traceless(phi phi^†)] = traceless(rho). The note does not claim to derive the drift channel, a relaxation law, or full gauge-link dynamics.
 - **rationale:** The load-bearing step is algebraic closure, not a numerical fit or renaming. Independent checks confirm the projection identity, the zero invariant vector condition, the order parameter identity ||traceless(rho)||_F^2 = Tr(rho^2)-1/3, and the stated Gaussian covariance anisotropy table. All cited authorities in the restricted packet are retained-grade or retained no-go boundaries, and the source note keeps the dynamics and zero-drift exceptions outside the theorem.
+- **auditor confidence:** high
+
+### `matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Current-surface finite operator-algebra theorem: local U(3) fibre-frame covariance of the retained nearest-neighbor hopping forces a link transporter with the lattice connection law and yields the covariant hopping and lattice covariant difference; no gauge action, dynamics, continuum limit, or physical SU(3)_c identification is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-211158-f67ee586f8-matter_gauge_minimal_couplin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Frame-independent nearest-neighbor hopping H_cov = sum a_x^dag U_mu(x) a_{x+mu} + h.c. is covariant under local frame changes iff U_mu(x) transforms as U'_mu(x)=g(x) U_mu(x) g(x+mu)^dag.  _(class `A`)_
+- **chain closes:** True — The cited fibre-frame bridge supplies local U(3) frame redundancy and the flat U=I link as a trivialization choice. Direct two-site block algebra gives G H[U] G^dag = H[g_x U g_y^dag], which fixes the transporter law and immediately gives D'_mu psi'=g_x D_mu psi.
+- **rationale:** The load-bearing step is a genuine algebraic identity over retained-grade inputs, including the retained_bounded local fibre-frame bridge and the retained hopping/translation authorities. The runner source instantiates finite lattice/fibre matrices and checks the covariance, wrong-law controls, covariant derivative, loop-trace invariance, O(eps^2) expansion, and U(1) analogue without hard-coded contested constants. The clean verdict is bounded to kinematics and current registered surface only; it does not promote gauge dynamics, a continuum limit, or physical colour identification.
 - **auditor confidence:** high
 
 ### `matter_inertial_closure_note`

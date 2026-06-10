@@ -47918,10 +47918,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
     },
     {
@@ -47943,6 +47939,10 @@
     {
       "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -92535,16 +92535,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
         "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
         "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
         "d3_upper_bound_import_scope_gate_note_2026-06-06",
         "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04"
+        "grown_transfer_basin_targeted_repair_note_2026-06-04",
+        "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fa2bc3e7be374038dced1d6151fcb93ed0149698fd28c2d599bd3cce493dce6b",
+      "note_hash": "0ccb0b71a15bc819a114d0e3527e9f7605271377b6d206f0bb85639a0d3e40e6",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

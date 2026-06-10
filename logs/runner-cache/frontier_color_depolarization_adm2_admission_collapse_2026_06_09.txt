@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_depolarization_adm2_admission_collapse_2026_06_09.py
+runner_sha256: 5d19d888cf5d4ef3d757ac32ef26672151f2b808ec19e923f083de47b7928a5f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+PASS  G1.1 unitary U => S_ij=|U_ij|^2 is doubly stochastic (rows & cols sum 1)
+PASS  G1.2 uniform (1/3,1/3,1/3) is stationary for every unitary-induced S
+PASS  G1.3 primitive unitary-induced S => UNIQUE stationary vector = uniform
+PASS  G2.1 generic non-unitary primitive col-stochastic => NON-uniform stationary
+PASS  G2.2 non-doubly-stochastic witness has stationary != uniform
+PASS  G3.1 free color-diagonal U = e^{i phi} I3 => S = I3 (not primitive)
+PASS  G3.2 scalar U is frame-INDEPENDENT: S = I3 in every frame (no frame rescue)
+PASS  G3.3 generic link V != I3 => primitive S => rho -> I3/3 (P -> 0)
+PASS  G3.4 the depolarizing U is a non-diagonal link (S != I3 = a connection)
+PASS  G3.5 free lane (V = I3): rho stays polarized (P unchanged = 2/3)
+PASS  G4.1 theta=0 (U scalar, no connection content): does NOT depolarize
+PASS  G4.2 theta generic (U off-diagonal = connection content): DOES depolarize
+PASS  G4.3 S = I3 exactly at theta = 0 (scalar) and != I3 for generic theta
+PASS  G5.1 q-qbar singlet marginal = I3/3 (P = 0)
+PASS  G5.2 Schur: generic GLOBAL-invariant joint state has marginal I3/3
+PASS  G5.3 the Schur premise really is GLOBAL-action invariance g (x) conj(g)
+PASS  G5.4 non-singlet product state => POLARIZED marginal (P = 2/3 > 0)
+PASS  G5.5 total-color Casimir = 0 on the singlet, > 0 on the charged state
+PASS  G5.6 total color Casimir conserved under global action (charge not driven to 0)
+PASS  G6.1 Schur on C^3 (EXACT): commutant of the SU(3) generators is 1-dimensional (= C.I3)
+PASS  G7.1 no hat discharged: free-hop + product-state default stays POLARIZED on both lanes
+PASS  G7.2 admissions distinct: global action alone leaves a non-neutral marginal polarized
+PASS  G7.3 weight-leak guard: I3/3 forced (invariant->mixed, non-invariant->polarized)
+PASS  G7.4 not-a-no-go witness: supplying the named object (a link) DOES depolarize
+
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

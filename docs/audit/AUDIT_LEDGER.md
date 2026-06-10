@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 209 |
-| **retained_no_go** | 206 |
+| **retained_no_go** | 207 |
 | **retained_bounded** | 799 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1413 |
+| unaudited | 1412 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1233 |
+| `audited_clean` | 1234 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1729 |
+| `unaudited` | 1728 |
 
 | claim_type | count |
 |---|---:|
@@ -1135,6 +1135,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_wavefield_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `spectral_closure_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `spectral_symmetry_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -16296,6 +16297,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Expanding by Duhamel, only interaction chains from X to Y contribute, each length-n chain is bounded by (2J)^n||A|| with a final 2||B|| factor, and Lemma B gives the factorial tail in (C.1).  _(class `A`)_
 - **chain closes:** True — The finite-Λ LR bound follows from the stated bounded local Hamiltonian hypotheses, Duhamel expansion, inclusive interaction-chain counting, and the factorial tail estimate. The cluster-decomposition route still needs a filter/gap bridge, but the note explicitly removes that from the audited theorem surface.
 - **rationale:** The load-bearing LR proof is an operator-norm and combinatorial closure over explicit finite-volume hypotheses, not a definition, tuned numerical match, or external comparator. Independent checking of the chain count, repeated-term inclusive degree, tail estimate, and coarse light-cone packaging supports (C.1)-(C.3). The cited mass-gap bridge and Δ_T discussion are non-load-bearing for this scoped claim, so their open spatial-clustering role does not block the LR theorem.
+- **auditor confidence:** high
+
+### `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`
+
+- **Note:** [`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Spatial O_h plus time parity alone permits a marginal time-vs-space kinetic anisotropy and therefore does not by itself justify full SO(4) continuum wording; adding c_t=c_s or 4D hypercubic symmetry is an extra premise that closes this specific obstruction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-38f48496cc-spatial_cubic_time_anisotrop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On a Z^3 x Z_tau surface with spatial O_h and time parity, the quadratic kinetic form has two independent invariant coefficients Q(p)=c_t p_tau^2+c_s(p_x^2+p_y^2+p_z^2), so spatial cubic symmetry allows c_t != c_s.  _(class `A`)_
+- **chain closes:** True — The invariant-space count follows from signed-permutation algebra: sign flips remove cross terms and spatial permutations force only the three spatial diagonal coefficients to agree, leaving independent t^2 and |p_spatial|^2 terms. Full 4D signed permutations instead force all four diagonal coefficients to agree.
+- **rationale:** The runner source genuinely computes the finite signed-permutation groups, invariant dimensions, and explicit counterexamples rather than merely printing constants. An independent check gives |O_h|=2^3*3!=48, |B_4|=2^4*4!=384, spatial-invariant quadratic span {t^2, x^2+y^2+z^2}, and B4-invariant span {t^2+x^2+y^2+z^2}. The accepted kinetic-isotropy primitive is correctly treated as a salvage premise, not as evidence that spatial O_h alone closes SO(4). The no-go is clean only in this narrow scoped sense, not as an absolute obstruction to future routes using an explicit c_t=c_s, B4, or other bridge theorem.
 - **auditor confidence:** high
 
 ### `spectral_closure_2026-04-09`

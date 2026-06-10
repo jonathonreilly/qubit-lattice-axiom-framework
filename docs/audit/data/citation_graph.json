@@ -47594,11 +47594,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22"
+      "to": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+      "to": "fifth_family_complex_boundary_note"
     },
     {
       "from": "repo.repo_organization",
@@ -91967,11 +91967,11 @@
         "plaquette_bootstrap_framework_integration_note_2026-05-03",
         "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
-        "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+        "fifth_family_complex_boundary_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8c41285c06c6a81a47ee00070f2707022ce9d61309c795fb3ed76008d4b4e7f5",
+      "note_hash": "e38fbb963f10e6137422116c6f0a42549646a2f284733f48527f3a2c4b59dfa3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

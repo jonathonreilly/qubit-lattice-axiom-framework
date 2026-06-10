@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 212 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 816 |
+| **retained_bounded** | 817 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1391 |
+| unaudited | 1390 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1258 |
+| `audited_clean` | 1259 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1707 |
+| `unaudited` | 1706 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 483 |
 | `high` | 481 |
-| `medium` | 845 |
-| `leaf` | 1319 |
+| `medium` | 844 |
+| `leaf` | 1320 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1064,6 +1064,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `registration_reinstates_chirality_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -15336,6 +15337,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** If {M, Gamma_chi}=0, then the central-sector registration map D(M)=sum_k P_k M P_k satisfies D(M)=0 under both the 3-block character partition and the 2-block singlet|doublet partition.  _(class `A`)_
 - **chain closes:** True — Since P0=J/3 and Gamma_chi=2P0-I, every allowed registration block lies wholly in a Gamma_chi eigenspace. For an anticommuting M, Gamma_chi M Gamma_chi=-M, while block registration is Gamma_chi-even, forcing D(M)=-D(M) and hence D(M)=0.
 - **rationale:** The load-bearing step is a direct algebraic identity over the supplied projector and grading definitions, not a numerical match or renaming. The runner source genuinely constructs C, the character projectors, Gamma_chi, D3, and D2, then checks the eigenspace identities, annihilation, and adversarial controls; it does not merely print canned PASS lines. The cited one-hop authorities are retained-grade, and the clean verdict is scoped to the central-sector registration no-go, not to all possible future Koide mechanisms or noncentral partitions.
+- **auditor confidence:** high
+
+### `relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10`
+
+- **Note:** [`RELATIVE_ORIENTATION_FUSION_STATE_SELECTION_POINTER_FRAME_ONE_VACUOUS_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-06-10.md`](../../docs/RELATIVE_ORIENTATION_FUSION_STATE_SELECTION_POINTER_FRAME_ONE_VACUOUS_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the supplied C^3 color carrier and the named frame-naming/color-blind instrument classes, the joint state/frame global SU(3) orientation has one shared vacuous diagonal quotient while state spectra, instrument class, and relative orientation remain distinct registrable data; local ADM-1 frame roots, weights, and r are not touched.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-212719-57b0292243-relative_orientation_fusion_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Trace cyclicity makes all tested record consequences invariant under the simultaneous rotation (rho,u)->(g rho g†,g u), and the rank/tomography check shows the only nontrivial absolute-orientation quotient is the 8-dimensional diagonal SU(3) direction, with the remaining kernel directions being the 2 state stabilizers.  _(class `A`)_
+- **chain closes:** True — The diagonal invariance follows directly from covariant projector conjugation and trace cyclicity. Independently, dim SU(3)=8 and a generic 3-level density matrix has a 2-dimensional stabilizer, so the 16 state/frame orientation directions can have rank 6 with a 10-dimensional kernel exactly as claimed.
+- **rationale:** The runner source performs actual finite-dimensional linear algebra and Fock-space computation rather than printing constants or importing a contested premise. The cited graph-first SU(3) authority is marked retained, and the claim does not rely on an unretained one-hop dependency. The theorem is properly bounded to the supplied carrier, named instruments, and global rotations; it explicitly avoids discharging the local frame root or assigning weights.
 - **auditor confidence:** high
 
 ### `replay_environment_note`

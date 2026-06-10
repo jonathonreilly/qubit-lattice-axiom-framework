@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 812 |
+| **retained_bounded** | 813 |
 | _retained_pending_chain_ | 14 |
 | open_gate | 38 |
-| unaudited | 1382 |
+| unaudited | 1381 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1254 |
+| `audited_clean` | 1255 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1698 |
+| `unaudited` | 1697 |
 
 | claim_type | count |
 |---|---:|
@@ -101,7 +101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1446 | 109.50 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 779 | 61.11 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 778 | 61.10 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1307 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
@@ -117,7 +117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1070 | 37.06 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 922 | 35.85 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1165 | 35.69 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 883 | 34.79 | `audited_clean` | **retained_bounded** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 882 | 34.79 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 705 | 32.96 | `unaudited` | unaudited |
 | 21 | `minimal_axioms_2026-04-11` | meta | critical | 1135 | 32.65 | `unaudited` | meta |
@@ -620,6 +620,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `growing_graph_static_control_audit_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `guard_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `h0125_scalable_scout_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `h0125_wider_replay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -8659,6 +8660,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The source note's numerical table matches the completed runner stdout, and the runner source computes the phase-ramp metrics and zero-source reduction rather than printing hard-coded verdict constants. The closure is only for the stated finite replay configuration and does not imply a geometry-generic no-go.
 - **rationale:** Clean for the bounded no-go scope: the runner computes the fixed-field replay, reports exact zero-source spans of zero, and returns low phase-ramp R2 values around 0.30, which supports the note's refusal to promote a grown-row transfer claim. No cited authorities are required for the limited negative conclusion as written. Residual risk is confined to the unprovided grow helper and the qualitative threshold for 'review-safe,' so the claim must remain bounded to the printed finite configuration.
 - **auditor confidence:** medium
+
+### `gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under the stated massless, zero-chemical-potential 3+1D thermal hypotheses, the fermionic per-internal-degree energy-density integral is exactly 7/8 of the bosonic one, giving rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4; Standard Model inventory counts remain external.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-043556-5bd3b5bb14-gstar_thermal_seven_eighths_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Expanding the Bose and Fermi factors into exponential series and integrating termwise gives I_B=Gamma(4) zeta(4) and I_F=Gamma(4) eta(4), with eta(4)=(7/8) zeta(4).  _(class `A`)_
+- **chain closes:** True — The series expansions are termwise integrable for the x^3 thermal integrals, and the eta-zeta quotient at s=4 gives the 7/8 ratio. Multiplication by the common phase-space prefactor preserves the ratio; the parent inventory arithmetic is only conditional on supplied counts.
+- **rationale:** The load-bearing step is a genuine algebraic/special-function identity, not a definition, renaming, tuned numerical match, or external comparator check. Independently, I_B=6 zeta(4)=pi^4/15 and I_F=6 eta(4)=6(7/8)zeta(4)=7pi^4/120, so I_F/I_B=7/8 regardless of the common normalization. The runner source checks the same symbolic identities plus text wiring and forbidden-input guards; it does not import PDG, lattice-QCD, fitted, or observed comparator inputs.
+- **auditor confidence:** high
 
 ### `guard_reconciliation_note`
 

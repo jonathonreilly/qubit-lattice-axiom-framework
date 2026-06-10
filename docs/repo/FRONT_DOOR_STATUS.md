@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3128 |
-| Applied audit verdicts | 1422 |
-| Retained-grade rows, including boxed decorations | 1287 |
+| Applied audit verdicts | 1423 |
+| Retained-grade rows, including boxed decorations | 1288 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 817 |
+| Retained bounded rows | 818 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1388 |
+| Unaudited rows | 1387 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 34 |
 | Audited renaming rows | 34 |
@@ -33,19 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1390 |
-| Ready rows | 4 |
+| Total pending rows | 1389 |
+| Ready rows | 3 |
 | Cycle-break targets | 0 |
 | Critical pending | 283 |
 | High pending | 279 |
-| Medium pending | 406 |
+| Medium pending | 405 |
 | Leaf pending | 422 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09`](../../docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md) - medium; unaudited
 - [`transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
@@ -79,13 +78,13 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3265 |
 | Critical nodes | 486 |
 | High nodes | 485 |
-| Medium nodes | 883 |
-| Leaf nodes | 1411 |
+| Medium nodes | 881 |
+| Leaf nodes | 1413 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1473 descendants; score 112.026
-- `three_generation_observable_theorem_note` - critical; 995 descendants; score 61.960
+- `three_generation_observable_theorem_note` - critical; 994 descendants; score 61.959
 - `graph_first_su3_integration_note` - critical; 1341 descendants; score 60.890
 - `observable_principle_from_axiom_note` - critical; 854 descendants; score 58.240
 - `minimal_axioms_2026-05-03` - critical; 970 descendants; score 48.423

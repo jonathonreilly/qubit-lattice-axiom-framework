@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 338,
     "high": 240,
-    "leaf": 408,
+    "leaf": 407,
     "medium": 375
   },
   "cycle_break_target_count": 0,
@@ -17477,30 +17477,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/GRAVITY_SIGN_BOTTOM_IS_LEADING_ORDER_DECOUPLES_FROM_LV_REAL_BOTTOM_IS_EMERGENT_METRIC_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gravity_sign_bottom_leading_order_decouples_from_lv_2026_06_08.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17608,6 +17584,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_rp_gauge_half_wilson_temporal_bridge.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "key_terminology",
+        "minimal_axioms",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_scalar_i_real_generation_k_parity_separation.py",
       "transitive_descendants": 16
     },
     {
@@ -29100,33 +29103,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "minimal_axioms",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_scalar_i_real_generation_k_parity_separation.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40998,6 +40974,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 14,
-  "total_pending": 1361
+  "ready_count": 13,
+  "total_pending": 1360
 }

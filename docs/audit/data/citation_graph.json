@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
         "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08",
         "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
         "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
         "record_prerecord_instrument_kernel_gate_2026-06-06",
-        "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06"
+        "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06",
+        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f22236851d81bca9da22b82765e01d10fc3cc47da3f93c27260d4419186ca062",
+      "note_hash": "ca954babb08ffcfc99460496eeed671e25585f705f22e3226eb5df19bfacd811",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

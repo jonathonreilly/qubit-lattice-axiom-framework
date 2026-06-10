@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 213 |
 | **retained_no_go** | 208 |
 | **retained_bounded** | 825 |
-| _retained_pending_chain_ | 15 |
+| _retained_pending_chain_ | 16 |
 | open_gate | 40 |
-| unaudited | 1359 |
+| unaudited | 1358 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,31 +61,31 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1271 |
+| `audited_clean` | 1272 |
 | `audited_conditional` | 36 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1675 |
+| `unaudited` | 1674 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1486 |
+| `bounded_theorem` | 1487 |
 | `decoration` | 54 |
 | `meta` | 324 |
 | `no_go` | 329 |
 | `open_gate` | 145 |
-| `positive_theorem` | 774 |
+| `positive_theorem` | 773 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 816 |
-| `leaf` | 1315 |
+| `medium` | 820 |
+| `leaf` | 1311 |
 
-- **Retained pending chain closure:** 15
+- **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
@@ -117,15 +117,15 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1071 | 37.07 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 922 | 35.85 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1165 | 35.69 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1166 | 35.69 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 882 | 34.79 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 705 | 32.96 | `unaudited` | unaudited |
 | 21 | `minimal_axioms_2026-04-11` | meta | critical | 1135 | 32.65 | `unaudited` | meta |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 702 | 31.46 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 830 | 31.20 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 327 | 30.36 | `unaudited` | unaudited |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 158 | 30.31 | `audited_clean` | **retained** |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 167 | 30.39 | `audited_clean` | **retained** |
+| 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 327 | 30.36 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -627,6 +627,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_law_cleanup_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `growing_graph_dynamic_propagation_replacement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `growing_graph_expansion_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -8843,6 +8844,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In the configured finite 1D test, identity gives well -> TOWARD and hill -> TOWARD as a negative control, while parity gives well -> TOWARD and hill -> AWAY, with lapse excluded from the bounded claim.  _(class `A`)_
 - **chain closes:** True — The one-hop dependency is retained_bounded for the displayed identity/parity/lapse operator-form algebra, and the present note narrows the audited claim to the identity/parity finite signs only. The runner output and an independent dense finite recomputation both reproduce the four stated signs with norm conservation and no lapse floor in the load-bearing path.
 - **rationale:** The scoped claim is a bounded finite diagnostic, not a derivation of physical gravity or of the coupling forms. The current runner exits 0 with PASS=17 FAIL=0 and its bounded accounting covers only identity/parity signs and norm checks; the lapse section is explicitly labelled open and outside PASS/FAIL. I independently rebuilt the 61-site dense Hamiltonians without importing the runner and checked both dense Crank-Nicolson and exact matrix-exponential evolution: identity well +1.504366/+1.503341, identity hill +1.562577/+1.561775, parity well +1.838085/+1.838024, parity hill -0.044294/-0.045776, all with unit norm and the expected sign. The dependency status is retained_bounded, so the bounded chain closes at the stated finite operator-form scope.
+- **auditor confidence:** high
+
+### `gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`GRAVITY_SIGN_BOTTOM_IS_LEADING_ORDER_DECOUPLES_FROM_LV_REAL_BOTTOM_IS_EMERGENT_METRIC_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/GRAVITY_SIGN_BOTTOM_IS_LEADING_ORDER_DECOUPLES_FROM_LV_REAL_BOTTOM_IS_EMERGENT_METRIC_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under the supplied model omega^2(k)=c2|k|^2(1+alpha A4(khat)|k|^2) with nonzero c2 and finite alpha, the O(k^4) cubic-anisotropy correction does not change the strict leading k -> 0 sign set by c2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:key_terminology`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-053725-5d9484ceeb-gravity_sign_bottom_is_leadi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any finite alpha, the strict k -> 0 sign of omega^2(k)/|k|^2 is sign(c2).  _(class `A`)_
+- **chain closes:** True — Dividing by |k|^2 gives c2(1+alpha A4(khat)|k|^2), so for finite alpha and finite direction harmonic A4 the limit is c2. The note explicitly scopes out deriving c2, the physical TT kernel, Lorentz structure, reflection-positivity transfer, and the emergent metric.
+- **rationale:** The audited claim is the narrow algebraic order-separation lemma, not the broad gravity-sign or bottom-relocation claim. An independent limit check confirms that the correction to omega^2/|k|^2 is O(|k|^2) and therefore cannot alter the strict leading sign of a supplied nonzero c2. The runner source genuinely evaluates the limit behavior, relative scaling, c2-sign dependence, and source-note guardrails; it does not hard-code a contested physics conclusion. The cited meta authority adds no open physics dependency, and no registered primitive is used to supply extra physical content.
 - **auditor confidence:** high
 
 ### `growing_graph_dynamic_limit_diagnostic_note`

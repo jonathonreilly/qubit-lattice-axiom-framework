@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 212 |
+| **retained** | 213 |
 | **retained_no_go** | 206 |
 | **retained_bounded** | 817 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1389 |
+| unaudited | 1388 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1259 |
+| `audited_clean` | 1260 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1705 |
+| `unaudited` | 1704 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 483 |
 | `high` | 481 |
-| `medium` | 843 |
-| `leaf` | 1321 |
+| `medium` | 842 |
+| `leaf` | 1322 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -596,6 +596,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `generation_dial_local_stability_grammar_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8386,6 +8387,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Under the coordinate conjugacy F(s)=L(G(h(s))), the fixed-point multiplier satisfies F'(s*)=L'(r*)G'(r*)h'(s*)=G'(r*)=alpha, and the same chain-rule cancellation preserves the flow linearization.  _(class `A`)_
 - **chain closes:** True — The identities close by direct calculus from the displayed definitions of h and L, with no cited upstream authority or external comparator. Independent checking confirms the inverse maps, positive derivative, multiplier cancellation, flow linearization cancellation, and the stated factors 2 and 1/2 for the named maps.
 - **rationale:** The claim is a self-contained algebraic/calculus theorem about a smooth positive-coordinate reparametrization. The runner mostly performs symbolic SymPy checks of the relevant identities and uses no external data, fitted constants, or cross-note imported premise; one displayed definition check is tautological but not load-bearing. The source note correctly limits the conclusion to local stability classification and explicitly does not select a physical map, flow, partition, or fixed point.
+- **auditor confidence:** high
+
+### `generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite periodic pure-corner `hw=1` plane-wave surface: using the retained attractive screened graph-Poisson Hartree-Fock bridge, the three pairwise mutual energies are identical and negative, `delta=-8G/[N mu^2(8+mu^2)]`, giving the `J-I` form while leaving the physical magnitude to `(G, mu^2, N)`.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-213400-be4b18b908-generation_localization_mome`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For two corner plane waves, `delta_ij = (Vq(0) - Vq(k_i - k_j))/N` and every distinct generation pair has `eps(k_i-k_j)=8`, so all pair couplings are equal and negative.  _(class `A`)_
+- **chain closes:** True — The cited bridge supplies the periodic `Vq` multiplier and Hartree-Fock `1/N` normalization, while retained generation authorities supply the three corners and distinct translation characters. Substitution gives `eps=8` for each pair, equal negative `delta`, and `1/N` IR-scale magnitude dependence without asserting a physical flavor value.
+- **rationale:** The load-bearing math is an algebraic specialization of the retained bridge and retained corner-character inputs. Independent checking confirms the signs, the `1/N` normalization, the `eps=8` pair equality, and the exact closed form for `delta`; no external comparator or tuned observational value is used. The claim is clean only within the stated periodic pure-corner and mediator-scope boundary, with physical magnitude explicitly left open.
 - **auditor confidence:** high
 
 ### `generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07`

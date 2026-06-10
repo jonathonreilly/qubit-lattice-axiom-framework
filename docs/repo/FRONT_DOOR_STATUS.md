@@ -12,9 +12,9 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3128 |
-| Applied audit verdicts | 1403 |
-| Retained-grade rows, including boxed decorations | 1279 |
-| Retained positive theorems | 212 |
+| Applied audit verdicts | 1404 |
+| Retained-grade rows, including boxed decorations | 1278 |
+| Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 811 |
 | Boxed decorations under retained parents | 50 |
@@ -22,7 +22,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Unaudited rows | 1404 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 27 |
-| Audited renaming rows | 33 |
+| Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
 
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1409 |
-| Ready rows | 19 |
+| Total pending rows | 1408 |
+| Ready rows | 16 |
 | Cycle-break targets | 0 |
-| Critical pending | 291 |
+| Critical pending | 290 |
 | High pending | 279 |
 | Medium pending | 409 |
 | Leaf pending | 430 |
 
 Next ready rows by queue order:
 
-- [`u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md) - critical; audit_in_progress
-- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) - critical; unaudited
 - [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; audit_in_progress
 - [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; audit_in_progress
 - [`axiom_first_spin_statistics_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 - [`qcd_low_energy_running_bridge_note_2026-05-01`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) - critical; unaudited
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
+- [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - medium; unaudited
+- [`matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08`](../../docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3265 |
 | Critical nodes | 486 |
-| High nodes | 485 |
-| Medium nodes | 878 |
+| High nodes | 486 |
+| Medium nodes | 877 |
 | Leaf nodes | 1416 |
 
 Top load-bearing rows by graph score:

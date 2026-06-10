@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1436 |
-| Retained-grade rows, including boxed decorations | 1296 |
+| Applied audit verdicts | 1437 |
+| Retained-grade rows, including boxed decorations | 1297 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 825 |
+| Retained bounded rows | 826 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 40 |
-| Unaudited rows | 1358 |
+| Unaudited rows | 1357 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 36 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1360 |
-| Ready rows | 13 |
+| Total pending rows | 1359 |
+| Ready rows | 12 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
 | Medium pending | 375 |
-| Leaf pending | 407 |
+| Leaf pending | 406 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
 - [`local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03`](../../docs/LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md) - medium; unaudited
 - [`record_prerecord_instrument_kernel_gate_2026-06-06`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md) - medium; unaudited
 - [`rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06`](../../docs/RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
-- [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - leaf; unaudited
+- [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - medium; unaudited
+- [`universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_WARD_FINITE_SCALING_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

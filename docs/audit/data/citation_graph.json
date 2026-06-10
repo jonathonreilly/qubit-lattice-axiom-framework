@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "second_grown_family_note"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08",
         "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
         "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
         "record_prerecord_instrument_kernel_gate_2026-06-06",
         "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06",
-        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
+        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
+        "second_grown_family_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ca954babb08ffcfc99460496eeed671e25585f705f22e3226eb5df19bfacd811",
+      "note_hash": "3661f91966534812e22fe7bdd5c3cfcbb30b879e7485cd809c42e839ad0a04c5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 817 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1390 |
+| unaudited | 1389 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1259 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1706 |
+| `unaudited` | 1705 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 483 |
 | `high` | 481 |
-| `medium` | 844 |
-| `leaf` | 1320 |
+| `medium` | 843 |
+| `leaf` | 1321 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1473 | 112.03 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 995 | 61.96 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1342 | 60.89 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1341 | 60.89 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 854 | 58.24 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 970 | 48.42 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1185 | 47.21 | `unaudited` | meta |
@@ -1400,6 +1400,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4166,6 +4167,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Summing dihedral contributions across all tetrahedra in T(Z^3) containing a given interior edge gives sum_{T containing e} alpha_T(e) = 2*pi for every axis, face-diagonal, and body-diagonal edge.  _(class `A`)_
 - **chain closes:** True — The source note derives the canonical tetrahedron dihedral table and then checks the finite edge-star sums for the three edge classes. The corrected axis-edge enumeration is explicit enough, and the runner source performs genuine symbolic/numerical Euclidean geometry rather than importing a contested premise.
 - **rationale:** This is a standalone Euclidean algebra claim over the stipulated flat Coxeter triangulation, with no cited upstream authorities or physical bridge imports. The runner computes volumes, dihedral angles, and representative edge-star sums directly from vertex coordinates using sympy/numpy; it is not merely printing constants or reading another note. The repaired axis-edge proof replaces the earlier uniform-incidence shortcut with the correct finite-star accounting, preserving the zero-deficit conclusion.
+- **auditor confidence:** high
+
+### `cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10`
+
+- **Note:** [`CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md`](../../docs/CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Sampled numerical O(k^4) characterization of the Regge graviton-sector remainder and TT dispersion on the Z^3 x Z_tau tick extension, with approved primitive use and runner-computed gauge/projection checks; the no-other-branch negative is supported only for the runner's scanned spatial directions.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-213101-7ece46aec2-cubic_coxeter_regge_ok4_latt`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note locates on-shell points as rank drops of the full 15x15 edge-space Bloch form at p=(k n, iE), obtaining a machine-degenerate TT pair with alpha(n)=-(1+sum_a n_a^4)/12 over sampled directions, and uses a rank-drop scan over E^2/k^2 in [0.3,2.5] to exclude other near-cone branches.  _(class `C`)_
+- **chain closes:** False — The positive sampled O(k^4) scaling, TT degeneracy, alpha special values, spread, projection split, and off-shell rational table close from the supplied runner and cited retained/primitive inputs. The unqualified no-other-branch conclusion does not close as written because F9 scans only axis, face+, and one random spatial direction, with no all-direction scan or symbolic branch-exclusion proof supplied.
+- **rationale:** The runner is not a print-only certificate: it constructs the tick-extended path complex, Regge Bloch form, metric/gauge maps, EH comparator, singular-value roots, and O(k^4) fits from the supplied geometry. The kinetic-isotropy and scale-reference authorities are registered approved primitives in the packet and are used within their declared grants, and independent formula checks confirm the displayed alpha axis/face/body values, spread 1/18, and rational table entries. However, the source's unqualified statement that no other branch exists near the cone is broader than the F9 code path, which tests only three spatial directions in the energy window. Narrowing that negative to the scanned directions, or adding a symbolic/all-direction branch certificate, is needed before clean audit.
 - **auditor confidence:** high
 
 ### `cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09`

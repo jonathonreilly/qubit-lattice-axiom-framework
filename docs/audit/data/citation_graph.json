@@ -47922,10 +47922,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10"
     },
     {
@@ -92532,14 +92528,13 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10",
         "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10",
         "generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06",
         "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09",
         "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "47a7428d41cb349cbeb399a40e6b6e3b9cc6b3f901a96514a06ee4619952fe19",
+      "note_hash": "0f55811e6c389c0b24e01c066a93a39199eee59cde87729522fa06832e21701b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -106667,7 +106662,7 @@
       "open_gate": 159,
       "positive_theorem": 619
     },
-    "edge_count": 12087,
+    "edge_count": 12086,
     "leaf_count": 1075,
     "node_count": 3265,
     "root_count": 1044,

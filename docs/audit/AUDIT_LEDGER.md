@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 812 |
 | _retained_pending_chain_ | 14 |
 | open_gate | 38 |
-| unaudited | 1383 |
+| unaudited | 1382 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1254 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1699 |
+| `unaudited` | 1698 |
 
 | claim_type | count |
 |---|---:|
@@ -100,7 +100,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1447 | 109.50 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1446 | 109.50 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 779 | 61.11 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1307 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
@@ -1398,6 +1398,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravity_clean_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8196,6 +8197,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The supplied translation-character projectors and C3 cycle generator generate the full nine-dimensional M_3(C) observable algebra on H_hw=1 and have scalar commutant.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope, the runner constructs the stated 3x3 generators, computes the generated algebra dimension, and computes the commutant dimension. The conclusion follows for those supplied generators without using the out-of-scope physical bridges.
 - **rationale:** The runner performs actual finite-dimensional linear algebra rather than printing constants: it constructs the translation-sign matrices, the C3 permutation, projectors, algebra span, and commutant constraints. All four checks are algebraic identity/closure checks on the supplied local generators. Because the source note already bounds the claim to this local H_hw=1 M_3(C) reconstruction and explicitly excludes physical-species and substrate conclusions, no split is needed before audit; it should remain a bounded_theorem, not a positive_theorem.
+- **auditor confidence:** high
+
+### `generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07`
+
+- **Note:** [`GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md`](../../docs/GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite periodic even-L lattice algebra for K=-G(Lap+mu^2 I)^(-1) on normalized plane waves at the three hw=1 Brillouin-zone corners, including the Vq multiplier and Hartree-minus-exchange normalization; no physical flavor magnitude or extension of the open-cubic mediator is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-043248-f64904454b-generation_corner_hf_vq_scre`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using K(x-y)=(1/N) sum_q Vq(q) exp(i q.(x-y)) and normalized plane waves, the Hartree and exchange terms evaluate to Vq(0)/N and Vq(k_i-k_j)/N, so delta_ij=(Vq(0)-Vq(k_i-k_j))/N.  _(class `A`)_
+- **chain closes:** True — The Fourier diagonalization, screened multiplier, 1/N Hartree and exchange normalization, eps(k_i-k_j)=8 corner specialization, and negative sign all follow by finite-dimensional algebra from the stated periodic kernel. The retained upstream notes supply only the bounded screened-channel sign/family and the hw=1 corner/translation-character inputs, without needing additional external data.
+- **rationale:** The load-bearing mathematics independently checks out: the normalization factors, signs, Fourier multiplier, corner eps=8 value, and -8G/(N mu^2(8+mu^2)) specialization are internally consistent. However, the primary runner exits nonzero because a completed source/dependency surface check fails on whether the target audit row still exposes the exact blocker. That artifact does not refute the finite-lattice algebra, but it prevents a clean terminal audit for this source packet as submitted.
 - **auditor confidence:** high
 
 ### `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23`

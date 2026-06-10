@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py
+runner_sha256: 537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 15.60
+status: ok
+----- stdout -----
+REGGE SECOND VARIATION ON THE 3+1 CUBIC-COXETER COMPLEX (Z^3 x Z_tau tick extension)
+================================================================================================
+[PASS] slice-consistency check (3+1 framing, combinatorial): the spatial (constant-tick) 3-face of the Z^3 x Z_tau path complex carries EXACTLY the retained six-tetrahedra body-diagonal chain (as vertex sets) -- the 3+1 complex is the tick extension of the retained 3D row, not a new spatial structure
+       6 spatial tetrahedra on the slice; match with retained chain: True
+[PASS] flat-anchor check (FLAT ANCHOR, the tick extension of the retained deficit-vanishing row): every interior triangle class of the flat Z^3 x Z_tau path complex has deficit ZERO to machine precision (all 50 classes; hinge stars enumerated from the complex itself), hence S_R = 0 on the flat OS0 background
+       max|deficit| over the 50 triangle classes = 1.78e-15
+[PASS] Schlaefli/Hermiticity check (exactness gates): the per-4-simplex Schlaefli identity sum_t A_t d theta_t = 0 holds to machine precision in every length direction (validates the 4-simplex dihedral-gradient pipeline), and Q(k) is HERMITIAN to machine precision at random incommensurate momentum (the complex-level Regge lemma: the flat Hessian is sum_t dA_t (x) d delta_t, symmetric)
+       max Schlaefli residual = 6.11e-16; max|Q - Q^dag| = 4.44e-16
+[PASS] end-to-end action check (end-to-end gate): the numerical second difference of the ACTUAL action S_R on a periodic 3^4 box under a commensurate cosine perturbation equals the Bloch prediction (N/2) Re[u^dag Q(k) u] (validates every sign, factor, star and phase convention at once)
+       finite-diff = -956.90913323 vs Bloch prediction = -956.90838351
+[PASS] gauge-zero-mode check (gauge): vertex-displacement fields (4 components per cell) are EXACT zero modes of Q(k) at every momentum (machine precision at two random incommensurate momenta) -- the discrete diffeomorphism family of the geometric action on Z^3 x Z_tau
+       max|Q(k) Gamma(k)| = 2.63e-15, 2.67e-15
+[PASS] mode-inventory check (k=0): constant metric perturbations (all 10 h components) are EXACT zero modes of Q(0); the FIVE non-metric edge modes split into FOUR massive branches (raw S_R eigenvalues -48, -16 x3, hence positive after the standard Euclidean orientation) and ONE exactly flat branch -- identified below (extra-branch decoupling check) as an exactly-decoupled lattice branch with zero action at ALL momenta, outside the metric sector
+       max|Q(0) M_metric| = 1.56e-15; non-metric eigenvalues (S_R orientation) = [-48.0, -16.0, -16.0, -16.0, -0.0]
+[PASS] extra-branch decoupling check (the extra branch is decoupled, not physical): at every tested k != 0 the quadratic form has EXACTLY FIVE machine-zero modes = FOUR discrete-diffeomorphism (gauge) modes + ONE extra branch; the zero space meets the metric sector in exactly the 4 gauge directions (singular values: four ~1, fifth small), so the extra exact-zero branch lies OUTSIDE the metric sector (consistent with the EH pairing having only gauge zeros there): a Rocek-Williams-type spurious lattice direction, here EXACTLY decoupled at quadratic order -- the physical low-energy content is the EH sector alone
+       zero-mode counts at three k: [5, 5, 5]; metric-overlap pattern verified (4 gauge + 1 outside)
+
+  4D comparator  Q_h(k) =? c * Q_EH(k)  per direction (tick = the LAST component):
+    pure-tick (0,0,0,1)       c = -0.500000   rel-residual = 6.846e-09
+    pure-space (1,0,0,0)      c = -0.500000   rel-residual = 8.227e-09
+    space-space (1,1,0,0)/r2  c = -0.500000   rel-residual = 5.099e-08
+    tick-space (1,0,0,1)/r2   c = -0.500000   rel-residual = 5.113e-08
+    body (1,1,1,1)/2          c = -0.500000   rel-residual = 9.948e-09
+[PASS] 4D comparator check (THE 4D COMPARATOR + EMERGENT EUCLIDEAN ISOTROPY): Q_h(k) = c * Q_EH(k) + O(k^4) with ONE constant c = -1/2 across ALL FIVE directions INCLUDING the tick-space mixed ones -- the Regge<->EH second-variation correspondence (textbook 1/2 normalization + variational sign) holds on the 3+1 tick complex, and the O(k^2) graviton-sector isotropy across tick-mixed directions is the kinetic-isotropy primitive's structural grant realized DYNAMICALLY by the geometric action on the OS0 surface
+       c = {'pure-tick (0,0,0,1)': -0.5, 'pure-space (1,0,0,0)': -0.5, 'space-space (1,1,0,0)/r2': -0.5, 'tick-space (1,0,0,1)/r2': -0.5, 'body (1,1,1,1)/2': -0.4999999}; spread/mean = 4.50e-08
+[PASS] 3+1 fiber-metric check (THE 3+1 READING -- geometric lambda-one fiber metric + multipliers): at pure-tick momentum, Q_h = omega^2 K with K_spatial-trace : K_TT = -2 : +1 (lambda-one DeWitt, indefinite, both TT channels equal) and ZERO lapse (h_tick,tick) and shift (h_space,tick) kinetic weights -- the kinetic fiber metric and multiplier structure of the 3+1 target-operator row now come from delta^2 S_R of the geometric action NATIVELY (in the raw S_R orientation the overall sign is flipped; ratios and zeros are orientation-independent)
+       K_trace=+0.500000, K_TT(yz)=-0.250000, K_TT(E)=-0.250000 (ratio -2.0000); K_lapse=+1.06e-09, K_shift=+5.22e-10
+[PASS] spatial-sign comparator check (potential signs, spatial k || x at zero tick-frequency): the two spatial TT channels are EQUAL and the transverse-trace channel is equal-magnitude OPPOSITE-sign (ratio -1) -- the degenerate-supermetric no-go's supplied pair, re-derived inside the 3+1 tick complex (consistent with the 3D row); the single remaining sign is the overall action orientation (the located sign residual)
+       V_TT(yz)=-0.250000 = V_TT(E)=-0.250000; transverse-trace=+0.250000 (ratio -1.0000)
+
+TOTAL: PASS=10 FAIL=0
+VERDICT: the retained 3D cubic-Coxeter chain extends by the emergent tick (Z^3 x Z_tau, the
+path complex whose spatial slice IS the retained chain; c_t = c_s per the kinetic-isotropy
+primitive, structural grant only), and on the flat OS0 background: deficits vanish (the 4D
+tick extension of the retained flat anchor), vertex displacements are exact zero modes at
+every momentum, the five non-metric modes are massive, and the second variation of the Regge
+action matches c = -1/2 times the 4D Euclidean linearized EH pairing at O(k^2) ISOTROPICALLY
+ACROSS TICK-MIXED DIRECTIONS -- so at pure-tick momentum the geometric action natively yields
+the lambda-one DeWitt kinetic fiber metric (K_trace:K_TT = -2:+1, both TT equal) with ZERO
+lapse/shift kinetic weights (the multiplier structure), and at zero tick-frequency the
+spatial comparator pair (+-, equal magnitude). The supplied comparator inputs named by the
+degenerate-supermetric no-go and the structural pieces certified by the 3+1 target-operator
+row are reproduced on this tick complex by delta^2 S_R. Remaining open: the overall action
+orientation (the same single located sign residual), edge-length-DOF provenance, action
+selection, nonlinear closure. The tick-scale itself is NOT derived (retained clock-rate no-go
+respected; c_t = c_s is the primitive's structural grant). No PDG/fitted value.
+
+----- stderr -----
+

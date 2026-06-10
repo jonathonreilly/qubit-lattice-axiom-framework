@@ -14,8 +14,8 @@ with the exact coupling-chain identity
 (C1, bounded corollary, explicitly NOT load-bearing for T1) Transferring
 the T1 output through the registered standard-infrastructure running
 kernel from `v` to `M_Z` gives `alpha_s(M_Z) = 0.118067 ~ 0.1181`, with
-a 1-loop/2-loop truncation envelope `~5e-4`. C1 inherits the running
-bridge's own terminal audit scope and is excluded from the T1 claim
+a 1-loop/2-loop truncation envelope `~5e-4`. C1 uses the running
+bridge's bounded transfer-kernel scope and is excluded from the T1 claim
 surface.
 **Status authority:** independent audit lane only. This source note is a
 bounded forward-computation theorem; it does not set or predict an audit
@@ -35,18 +35,16 @@ The prior revision of this note carried the load-bearing step
 > bridge transfers it to `alpha_s(M_Z) = 0.1181`.
 
 which the 2026-05-05 audit classified as class (B) — a cross-note value
-transfer — terminating in the running-bridge dependency. That bridge
-dependency ([`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md))
-now terminates in a numerical-match running bridge (2026-05-25,
-load-bearing-step class (G) at its own boundary tuple). A
-headline whose load-bearing step terminates in a class-(G) row inherits
-that scope; the prior framing of this note hid that inheritance inside
-the headline number.
+transfer — terminating in the running-bridge dependency. That dependency
+is now scoped as the bounded transfer-map kernel
+[`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md).
+The prior framing of this note hid the dependency inside the headline
+number.
 
 This repair fixes five defects:
 
-1. **(Critical) Load-bearing chain terminated in the numerical-match
-   bridge row.** The headline `0.1181` inherited a class-(G) step. Fix:
+1. **(Critical) Load-bearing chain terminated in the running bridge.**
+   The headline `0.1181` hid the bridge dependency. Fix:
    the claim is split into theorem T1 (the forward computation
    `alpha_s(v) = 0.10330382` over declared boundary inputs; load-bearing) and
    corollary C1 (the `M_Z` readout; quarantined, explicitly not
@@ -163,9 +161,10 @@ C1 is a corollary, not part of the T1 claim surface:
 - the running kernel, the quark-mass threshold, and `M_Z` are standard
   external infrastructure (registered one hop away in the bridge note),
   not framework-native results;
-- the bridge note currently has a terminal numerical-match scope
-  (class (G) at its own boundary tuple);
-  C1 honestly inherits exactly that scope;
+- the bridge note currently states a bounded transfer-map kernel over
+  `D = [0.085, 0.130]`, with PDG comparisons quarantined in its
+  comparator appendix; C1 honestly inherits exactly that bounded
+  standard-infrastructure scope;
 - removing C1 entirely leaves T1 intact — the runner computes T1 first
   and independently, and its C1 section is a self-contained 2-loop RGE
   reimplementation used only for the corollary readout and envelope.
@@ -181,14 +180,14 @@ is consumed is:
    declared reuse input. This note does not claim the value is
    derived, MC-certified, or analytically closed upstream.
 2. [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
-   (claim `qcd_low_energy_running_bridge_note_2026-05-01`; terminal
-   numerical-match scope, 2026-05-25, load-bearing-step class (G) at
-   its own boundary tuple). **Scoped to corollary step S5 only.** T1
-   does not read, transfer, or depend on any value from this row. Per
-   the bridge note's own reuse rule, C1 reads the `v -> M_Z` kernel as
-   bounded standard infrastructure, never as a first-principles
-   derivation. Any change in that row's status resolves into this note
-   by cascade on C1 alone; T1's verdict surface is unaffected.
+   (claim `qcd_low_energy_running_bridge_note_2026-05-01`; bounded
+   transfer-map kernel over `D = [0.085, 0.130]`). **Scoped to
+   corollary step S5 only.** T1 does not read, transfer, or depend on
+   any value from this row. Per the bridge note's own reuse rule, C1
+   reads the `v -> M_Z` kernel as bounded standard infrastructure, never
+   as a first-principles derivation. Any change in that row's status
+   resolves into this note by cascade on C1 alone; T1's claim surface
+   is unaffected.
 3. [`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
    (claim
    `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`).
@@ -235,9 +234,9 @@ This note does **not** claim:
   mass thresholds, or `M_Z` (C1 standard infrastructure, one hop away
   in the bridge note);
 - a framework-native prediction `alpha_s(M_Z) = 0.1181` (C1 is a
-  bounded corollary inheriting the bridge row's terminal
-  numerical-match scope);
-- any audit verdict or status promotion (status authority is the
+  bounded corollary using the bridge row's bounded transfer-kernel
+  scope);
+- any audit outcome or status promotion (status authority is the
   independent audit lane only).
 
 The honest ceiling for this row remains bounded: T1 is exact arithmetic
@@ -278,7 +277,7 @@ terminal class-(D) section. Every check is tagged [A]/[B]/[D].
   `rho_(p,q)(6)` coefficient-table delivery.
 - **2026-06-10.** T1/C1 repair (this revision). Load-bearing claim
   restructured from a class-(B) cross-note transfer terminating in the
-  numerical-match bridge row into theorem T1 — the forward
+  running-bridge row into theorem T1 — the forward
   computation `alpha_s(v) = 1/(4 pi sqrt(<P>)) = 0.10330382` over the
   explicitly declared boundary inputs B1-B4 — with the `M_Z`
   readout quarantined as bounded corollary C1 (scoped to step S5;

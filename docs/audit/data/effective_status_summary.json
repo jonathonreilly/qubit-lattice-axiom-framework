@@ -12,7 +12,7 @@
   "effective_status_counts": {
     "audited_conditional": 28,
     "audited_failed": 1,
-    "audited_numerical_match": 15,
+    "audited_numerical_match": 14,
     "audited_renaming": 33,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
@@ -48,7 +48,7 @@
     "retained_bounded": 831,
     "retained_no_go": 208,
     "retained_pending_chain": 17,
-    "unaudited": 1366
+    "unaudited": 1367
   },
   "retained_pending_chain_count": 17,
   "retained_pending_chain_examples": [

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_falsifiable_predictions_catalog_2026_06_08.py
-runner_sha256: a5d567faaac5040e5d1f004a11c4632e56924b14c9f203d8be6a108d138c0f72
+runner_sha256: c62218047fcd3963a9fd0ee3d8749f9b3b8248980cbe10d27a27bc89a88b4cdd
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -25,10 +25,11 @@ FALSIFIABLE-PREDICTIONS CATALOG -- honest consolidation cross-check (publication
        NuFit-6.1 s_23^2 = 0.47 (lower); framework predicts > 0.5
 [PASS] P2 bucket = D (fit-conditional): same consumed rectangle; unaudited
 
--- P3: Higgs vacuum stability (weakly disfavored) --
-[PASS] P3: framework forecast (absolutely stable) differs from SM-with-current-m_t (near-critical/metastable) -> a binary discrimination test
-[PASS] P3 bucket = B: the discriminating boundary lambda(M_Pl)=0 is an ADMITTED SM-shared input (native derivation retired), so 'stable' is a choice the SM can also make; ~0.75-1 sigma separation
-       not a closure of m_H; weakly disfavored
+-- P3: Higgs vacuum stability (conditional y_t signature) --
+[PASS] P3: framework central value y_t(v)=0.918 is below the admitted y_t,crit~0.93 stability comparator, but the framework's own +-3pct y_t band [0.890,0.946] straddles that boundary
+       0.44 sigma_sys above center; Gaussian-tail diagnostic ~33pct metastable; hard-interval fraction ~28pct
+[PASS] P3 bucket = B: conditional beyond-SM y_t signature, not a robust binary. The boundary lambda(M_Pl)=0 is an ADMITTED SM-shared input, y_t rests on an open Ward gate, and the stable/metastable verdict flips inside the y_t systematic
+       central-value stable; weakly disfavored / not robust; not a closure of m_H
 
 -- Table B: apparent tensions (NOT independent axiom-tests) --
 [PASS] T1: n_s = 1 - 2/N_e (N_e=60) = 0.9667 is -2.4 sigma vs ACT but only -0.4 sigma vs Planck 2018, and N_e ~ 77 reproduces ACT exactly -> tension is comparator- and N_e-dependent, NOT robust
@@ -49,7 +50,5 @@ FALSIFIABLE-PREDICTIONS CATALOG -- honest consolidation cross-check (publication
        framework's empirical content is mostly postdictions + conditional, currently unfavorable bets
 
 SCORECARD PASS=16 FAIL=0
-VERDICT: the catalog's forecasts and CURRENT standings are internally consistent and re-stated here -- P1 disfavored-but-allowed (NuFit-6.1 best fits 207/212 deg outside the band, band within 3-sigma); P2 disfavored (NuFit-6.1 both variants lower octant 0.470); P3 weakly disfavored; T1/T2 NOT independent axiom-tests (n_s -2.4 sigma vs ACT but -0.4 sigma vs Planck and N_e-dependent; J mild +1.4..+2.6 sigma comparator-dependent, decomposing into beta=6 alpha_s + the delta_CKM eta admission); bucket A empty in this catalog. Rigorous derivations deferred to the cited per-prediction runners; NuFit/ACT/global-fit values are comparison windows only, never derived inputs.
-
+VERDICT: the catalog's forecasts and CURRENT standings are internally consistent and re-stated here -- P1 disfavored-but-allowed (NuFit-6.1 best fits 207/212 deg outside the band, band within 3-sigma); P2 disfavored (NuFit-6.1 both variants lower octant 0.470); P3 weakly disfavored / not robust; T1/T2 NOT independent axiom-tests (n_s -2.4 sigma vs ACT but -0.4 sigma vs Planck and N_e-dependent; J mild +1.4..+2.6 sigma comparator-dependent, decomposing into beta=6 alpha_s + the delta_CKM eta admission); bucket A empty in this catalog. Rigorous derivations deferred to the cited per-prediction runners; NuFit/ACT/global-fit values are comparison windows only, never derived inputs.
 ----- stderr -----
-

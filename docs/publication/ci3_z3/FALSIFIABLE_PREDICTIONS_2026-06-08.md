@@ -45,7 +45,7 @@ NuFit-6.1 (Nov 2025) NO best fits used as the comparison window (named external)
 |---|---|---|---|---|---|
 | **P1** | PMNS `δ_CP` | third quadrant, `δ_CP ∈ [251.86°, 270.00°]` (≈18° bracket; `sin δ_CP ≈ −0.987` at the anchor) | **disfavored-but-allowed.** NuFit-6.1 NO best fit `δ_CP = 207°` no-SK / `212°` with-SK; the band is **within** the 3σ range `[114°, 405°]` (not excluded) but the best fit is **outside** it. (Was a favorable "match" under the stale NuFit-5.3 T2K-driven framing.) | a 5σ DUNE / Hyper-K `δ_CP` (design ±15°) **outside** `[251.86°, 270.00°]` falsifies it (band at maximal-CP peak sensitivity) | **D** · unaudited; consumes NuFit `(s₁₂², s₁₃²)` as inputs |
 | **P2** | PMNS `θ_23` octant | upper octant, `s₂₃² > 0.5` (certified `> 0.5277` over the NuFit-5.3 rectangle) | **disfavored.** NuFit-6.1 NO gives `s₂₃² = 0.470` in **both** the without-SK and with-SK fits (lower octant); the earlier NuFit-6.0 without-SK upper value (0.561) moved down. The upper-octant prediction is now against the central fit (though `s₂₃² > 0.5` is still inside the 3σ range `[0.432, 0.587]`). | a settled lower-octant determination (`s₂₃² < 0.5`) at significance (DUNE/NOvA/T2K/Hyper-K/JUNO) falsifies it | **D** · unaudited; same consumed rectangle |
-| **P3** | Higgs vacuum | **absolutely stable** (with `λ(M_Pl) = 0` on the Coleman-Weinberg-boundary surface) | **weakly disfavored.** SM with current `m_t` is near-critical / metastable; the discriminating boundary `λ(M_Pl)=0` is an **admitted SM-shared input** (native derivation retired), so "stable" is a choice the SM can also make. ~0.75–1σ separation. | a definitive **metastability** determination (precision `m_t`/`m_H`/`α_s`, `λ` at the high scale) falsifies it (HL-LHC ~2030; FCC-ee 2040s) | **B** · unaudited; not a closure of `m_H` |
+| **P3** | Higgs vacuum | **conditional beyond-SM `y_t` signature** (not a robust binary): central-value stable — framework `y_t(v)=0.918` is below the `≈0.93` stability boundary, `λ(M_Pl)=0` — **but the framework's own ±3% `y_t` band `[0.890, 0.946]` straddles the boundary** (boundary 0.44σ_sys above center; Gaussian-tail diagnostic ~33% metastable under the source sigma convention; hard-interval fraction ~28%), and `y_t=0.918` rests on the open-gate `y_t(M_Pl)/g_s=1/√6` Ward identity | **weakly disfavored / not robust.** SM with current `m_t` is near-critical / metastable; the boundary `λ(M_Pl)=0` is an **admitted SM-shared input** (native derivation retired), so "stable" is a choice the SM can also make; ~0.75σ vs the SM `y_t` extraction, and the verdict flips inside the framework's own `y_t` systematic | a definitive **metastability** determination (precision `m_t`/`m_H`/`α_s`, `λ` at the high scale) — or a `y_t` lower-5σ bound above `≈0.93` — falsifies it (HL-LHC ~2030; FCC-ee 2040s) | **B** · unaudited; knife-edge in `y_t` (see robustness note) |
 
 Honest no-prediction companions: the framework leaves **θ_12 and θ_13 unconstrained**
 inside NuFit 3σ (it takes them as the inputs that pin the chamber preimage) — a
@@ -92,8 +92,15 @@ forward falsifier identified" status is **unchanged**.
 2. **The PMNS forecasts (P1, P2) are conditional** on a preimage-localization
    admission and on the flavor/PMNS chain (downstream of the matter-content sector
    and the `AC_φλ` flavor admission); they are **unaudited**.
-3. **The vacuum-stability forecast (P3) is conditional** on the framework's `y_t` /
-   `m_H` lane and is framed as a **discrimination test**, not a closure of `m_H`.
+3. **The vacuum-stability forecast (P3) is conditional and not robust.** It is framed
+   as a **discrimination test**, not a closure of `m_H`; and its headline binary is a
+   **knife-edge in `y_t`**: the framework's own ±3% `y_t(v)=0.918` band `[0.890, 0.946]`
+   straddles the stability boundary `≈0.93` (0.44σ_sys above center; ~33% Gaussian-tail
+   diagnostic, ~28% hard-interval fraction), and `y_t=0.918` rests on the open-gate
+   `y_t(M_Pl)/g_s=1/√6` Ward identity. The defensible content is a
+   ~0.75σ beyond-SM `y_t` signature (framework `y_t` < SM `y_t≈0.94`), pending a tighter,
+   audited `y_t` — see
+   [`P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08`](../../P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08.md).
 4. **Provenance discipline.** No NuFit / ACT / global-fit observable is consumed
    as a derived value; all are comparison windows. Status authority is the independent
    audit lane; the source notes are unaudited and these forecasts inherit that status.
@@ -102,7 +109,7 @@ forward falsifier identified" status is **unchanged**.
 
 - **P1:** `δ_CP` measured at 5σ outside `[251.86°, 270.00°]` (DUNE/Hyper-K) — NuFit-6.1 best fit (207° no-SK / 212° with-SK) already leans this way.
 - **P2:** `θ_23` settled in the lower octant (`s₂₃² < 0.5`) at significance — NuFit-6.1 already prefers it in both variants.
-- **P3:** the electroweak vacuum shown to be metastable (not absolutely stable).
+- **P3:** the electroweak vacuum shown to be metastable, **or** `y_t` pinned with a lower-5σ bound above the stability boundary `≈0.93` (the forecast is a knife-edge: the framework's own ±3% `y_t` band already straddles that boundary).
 - **T1 / T2 are not independent axiom-tests** (see Table B): they restate already-admitted chains and dissolve under their own uncertainties.
 
 A confirmation of P1–P3 would be a strong coordinated success; a clean violation of
@@ -124,7 +131,9 @@ publication surface identifies **no clean unconditional forward falsifier**.
 - [`PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md)
   — P2 (θ_23 upper octant over the full NuFit rectangle).
 - [`HIGGS_VACUUM_STABILITY_NEW_PHYSICS_DISCRIMINATION_NOTE_2026-05-03.md`](../../HIGGS_VACUUM_STABILITY_NEW_PHYSICS_DISCRIMINATION_NOTE_2026-05-03.md)
-  — P3 (absolute vacuum stability discrimination test).
+  — P3 (vacuum-stability discrimination test; framework `y_t(v)=0.918`).
+- [`P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08.md`](../../P3_VACUUM_STABILITY_KNIFE_EDGE_IN_YT_ROBUSTNESS_NARROW_THEOREM_NOTE_2026-06-08.md)
+  — P3 robustness: the ±3% `y_t` band straddles the stability boundary (knife-edge); reframing to a conditional beyond-SM `y_t` signature.
 - [`PRIMORDIAL_SPECTRUM_NOTE.md`](../../PRIMORDIAL_SPECTRUM_NOTE.md)
   — T1 (n_s; the growth-noise correction flagged `missing_bridge_theorem`).
 - [`CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md`](../../CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)

@@ -47914,7 +47914,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "qcd_low_energy_running_bridge_note_2026-05-01"
+      "to": "alpha_s_derived_note"
     },
     {
       "from": "repo.front_door_status",
@@ -92534,7 +92534,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "qcd_low_energy_running_bridge_note_2026-05-01",
+        "alpha_s_derived_note",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
@@ -92544,7 +92544,7 @@
         "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2cbd0ecc00345ce8f82d7dd6d634ffe915366f5ba90212ddb6d6e383c146ef5e",
+      "note_hash": "032ff163d845b7c1e2f764d7985e077e23859c93f7890988823054ce1dd7c957",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -3,7 +3,7 @@
     "critical": 338,
     "high": 240,
     "leaf": 442,
-    "medium": 378
+    "medium": 377
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -17455,29 +17455,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+      "claim_id": "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "kinetic_isotropy_primitive",
-        "minimal_axioms",
-        "scale_reference_primitive",
-        "emergent_lorentz_invariance_note",
+        "key_terminology",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
         "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
+        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
+        "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
+        "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08"
       ],
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 6.322,
-      "note_path": "docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "note_path": "docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py",
+      "runner_path": "scripts/frontier_universal_gr_cubic_diffeo_ward_operator_telescope.py",
       "transitive_descendants": 19
     },
     {
@@ -17621,7 +17622,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08",
+      "claim_id": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -17629,23 +17630,21 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "key_terminology",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-        "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
-        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
-        "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
-        "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08"
+        "kinetic_isotropy_primitive",
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "emergent_lorentz_invariance_note",
+        "minimal_axioms"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
-      "note_path": "docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "load_bearing_score": 2.585,
+      "note_path": "docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_universal_gr_cubic_diffeo_ward_operator_telescope.py",
-      "transitive_descendants": 3
+      "runner_path": "scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py",
+      "transitive_descendants": 2
     },
     {
       "audit_independence_required": "any_non_self",
@@ -28590,34 +28589,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_normalized_schur_determinant_selector_2026_04_19.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kinetic_isotropy_primitive",
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "emergent_lorentz_invariance_note",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py",
       "transitive_descendants": 2
     },
     {
@@ -41951,5 +41922,5 @@
     }
   ],
   "ready_count": 45,
-  "total_pending": 1398
+  "total_pending": 1397
 }

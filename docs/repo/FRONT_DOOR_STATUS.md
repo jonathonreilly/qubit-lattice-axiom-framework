@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1387 |
-| Retained-grade rows, including boxed decorations | 1269 |
+| Applied audit verdicts | 1388 |
+| Retained-grade rows, including boxed decorations | 1270 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 802 |
+| Retained bounded rows | 803 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1407 |
+| Unaudited rows | 1406 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 22 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1409 |
-| Ready rows | 50 |
+| Total pending rows | 1408 |
+| Ready rows | 49 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
-| Medium pending | 388 |
+| Medium pending | 387 |
 | Leaf pending | 443 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
-- [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) - medium; unaudited
 - [`st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08`](../../docs/ST1_ST2_SAME_WALL_GAUGE_DYNAMICS_RESIDUAL_CONVERGENCE_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09`](../../docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 - [`rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09`](../../docs/UNIVERSAL_GR_QUADRATIC_MODE_GLUING_DERIVATION_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

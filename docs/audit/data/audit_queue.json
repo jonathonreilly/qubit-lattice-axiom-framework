@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 338,
     "high": 240,
-    "leaf": 442,
+    "leaf": 441,
     "medium": 376
   },
   "cycle_break_target_count": 0,
@@ -17455,31 +17455,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+      "claim_id": "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
       "claim_scope": null,
-      "claim_type": "no_go",
+      "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
-        "universal_gr_supermetric_normal_form_note",
-        "universal_gr_polarization_frame_bundle_blocker_note",
-        "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
-        "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
+        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "free_dirac_poincare_representation_bounded_note_2026-05-30",
+        "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09.py"
-      ],
-      "load_bearing_score": 6.322,
-      "note_path": "docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.392,
+      "note_path": "docs/WICK_ROTATION_COMPACT_SO4_TO_LORENTZIAN_DIRAC_DOUBLING_ORIENTATION_NOTE_2026-06-07.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py",
-      "transitive_descendants": 19
+      "runner_path": "scripts/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.py",
+      "transitive_descendants": 20
     },
     {
       "audit_independence_required": "any_non_self",
@@ -29134,33 +29131,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "free_dirac_poincare_representation_bounded_note_2026-05-30",
-        "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.822,
-      "note_path": "docs/WICK_ROTATION_COMPACT_SO4_TO_LORENTZIAN_DIRAC_DOUBLING_ORIENTATION_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.py",
-      "transitive_descendants": 4
     },
     {
       "audit_independence_required": "any_non_self",
@@ -41891,6 +41861,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 44,
-  "total_pending": 1396
+  "ready_count": 43,
+  "total_pending": 1395
 }

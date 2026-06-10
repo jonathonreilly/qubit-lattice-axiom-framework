@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 807 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1394 |
+| unaudited | 1393 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 26 |
+| ~~audited_conditional~~ | 27 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1247 |
-| `audited_conditional` | 26 |
+| `audited_conditional` | 27 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1710 |
+| `unaudited` | 1709 |
 
 | claim_type | count |
 |---|---:|
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1308 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1050 | 47.04 | `unaudited` | meta |
+| 6 | `key_terminology` | meta | critical | 1049 | 47.04 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1219 | 44.25 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 616 | 40.77 | `audited_clean` | **retained** |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1016 | 40.49 | `unaudited` | unaudited |
@@ -1405,6 +1405,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -18686,6 +18687,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** A same-vielbein-coupled finite dD/d2D/d3D decomposition reconstructs the finite-difference W''' values to 4.6e-4 absolute accuracy on the tested trace channels, with a load-bearing d3D contact term and a nonzero same-coupling dD^3 triangle term.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite Dirac matrices, applies the stated sqrt(I+h) vielbein coupling, computes log|det D[h]| finite differences, and independently forms the trace decomposition from finite-differenced D derivatives. Manual differentiation of log det D gives the displayed coefficients Tr[G d3D] - three d2D*dD terms + two ordered dD^3 triangle terms, matching the implemented decomposition after taking the real log-absolute determinant channel.
 - **rationale:** The source note is explicitly bounded and does not claim Einstein-Hilbert cubic closure, Ward closure, pure-TT nonzero response, or magnitude normalization. The runner is not a constant printer: it instantiates the finite operator and computes the determinant response, robustness checks, comparator, and same-coupling decomposition directly. The cited upstream notes are retained-grade or contextual, and the current claim does not rely on their open GR-identification bridges.
+- **auditor confidence:** high
+
+### `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional sign algebra for a degenerate trace=shear supermetric paired with the supplied opposite-signed comparator pair V_trace=-k^2/2, V_TT=+k^2/2 through omega^2=V/G.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-cb98974d2d-universal_gr_degenerate_supe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given G_trace=G_TT=G != 0 and V_trace V_TT < 0, omega_trace^2 * omega_TT^2 = (V_trace V_TT) / G^2 < 0.  _(class `A`)_
+- **chain closes:** False — The algebraic no-go closes once the opposite-signed comparator potentials and the quadratic gluing law are granted. The restricted packet does not derive the comparator signs from the framework, so the chain does not close as a framework-native GR sign theorem.
+- **rationale:** The load-bearing sign product is correct: if the two kinetic coefficients are equal and nonzero while the potential signs are opposite, an overall sign normalization cannot make both omega^2 signs match. The runner source performs finite algebraic checks and its helper implements the narrow V/G map, but the comparator pair is hard-coded as a supplied premise rather than derived. The no-go discipline gate passes only for the local comparator-gluing boundary; the packet explicitly leaves non-degenerate fiber metrics, framework-native comparator signs, and finite-k W/stress routes open.
 - **auditor confidence:** high
 
 ### `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08`

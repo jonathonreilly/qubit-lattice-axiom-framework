@@ -1,210 +1,298 @@
-# `alpha_s(M_Z)` Same-Surface-Derived Authority (bounded)
+# `alpha_s(v)` Forward-Computation Theorem over Declared Admissions, with Bounded `M_Z` Corollary
 
 **Date:** 2026-04-15 (status amended 2026-05-01; bounded source hint added
-2026-05-24)
+2026-05-24; T1/C1 repair 2026-06-10)
 **Type:** bounded_theorem
-**Status:** bounded - same-surface quantitative lane on `main`. The
-            framework-side carrier is `alpha_s(v)` from the canonical
-            plaquette/`u_0` chain; the `M_Z` readout is then the standard
-            QCD running bridge applied to that boundary. Author tier
-            amended 2026-05-01 from `proposed_retained` to `bounded` to
-            match the explicit bounded scope of
-            [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
-            and the explicit bounded scope of the registered low-energy
-            running bridge in
-            [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md).
-**Primary runner:** `scripts/frontier_yt_zero_import_chain.py` ([scripts/frontier_yt_zero_import_chain.py](../scripts/frontier_yt_zero_import_chain.py))
-**Bridge runner:** `scripts/frontier_qcd_low_energy_running_bridge.py`
-**Current package carrier:** `scripts/frontier_complete_prediction_chain.py`
-**Historical support runner:** `scripts/frontier_alpha_s_determination.py`
+**Claim scope:** One load-bearing theorem plus one explicitly quarantined
+corollary.
+(T1, load-bearing) Given the declared admitted boundary tuple B1-B4
+below, the forward computation
+`alpha_s(v) = alpha_bare / u_0^2 = 1 / (4 pi sqrt(<P>)) = 0.10330382`
+is exact zero-free-parameter arithmetic over the admissions, together
+with the exact coupling-chain identity
+`alpha_LM^2 = alpha_bare * alpha_s(v)`.
+(C1, bounded corollary, explicitly NOT load-bearing for T1) Transferring
+the T1 output through the registered standard-infrastructure running
+kernel from `v` to `M_Z` gives `alpha_s(M_Z) = 0.118067 ~ 0.1181`, with
+a 1-loop/2-loop truncation envelope `~5e-4`. C1 inherits the running
+bridge's own terminal audit scope and is excluded from the T1 claim
+surface.
+**Status authority:** independent audit lane only. This source note is a
+bounded forward-computation theorem; it does not set or predict an audit
+outcome.
+**Primary runner:** `scripts/frontier_alpha_s_derived_bounded_chain.py`
 
-**Audit replacement gate (plain-text pointer, not a one-hop authority for this
-bounded lane):** `ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md`
+**Audit replacement gate (plain-text pointer, not a one-hop authority for
+this bounded lane):** `ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md`
 with runner `scripts/frontier_alpha_s_direct_wilson_loop.py`.
 
-## Status amendment 2026-05-01 (audit-driven scope sharpening)
+## Why this note was repaired (2026-06-10)
 
-The 2026-04-29 Codex audit pass returned `audited_conditional` with the
-rationale:
+The prior revision of this note carried the load-bearing step
 
-> the restricted inputs do not include the retained low-energy running
-> bridge needed to turn alpha_s(v) into alpha_s(M_Z), and the plaquette
-> dependency itself says the exact analytic beta=6 insertion is not
-> closed... Repair target: cite and audit the running-bridge
-> theorem/threshold map and close or explicitly scope the plaquette
-> beta=6 insertion status.
+> Given `alpha_s(v) = alpha_bare / u_0^2 = 0.1033` from the canonical
+> plaquette/`u_0` chain, the registered bounded standard QCD running
+> bridge transfers it to `alpha_s(M_Z) = 0.1181`.
 
-This note responds to both repair targets:
+which the 2026-05-05 audit classified as class (B) — a cross-note value
+transfer — terminating in the running-bridge dependency. That bridge
+dependency ([`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md))
+now carries a terminal `audited_numerical_match` verdict (2026-05-25,
+load-bearing-step class (G) at its own admitted boundary tuple). A
+headline whose load-bearing step terminates in a class-(G) row inherits
+that scope; the prior framing of this note hid that inheritance inside
+the headline number.
 
-1. **Running bridge.** A one-hop running-bridge authority is now
-   registered as
-   [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md),
-   with its own runner `scripts/frontier_qcd_low_energy_running_bridge.py`.
-   The bridge note carries `bounded` author tier and explicitly scopes
-   the v -> M_Z transfer as standard SM 2-loop RGE plus quark-mass
-   threshold matching, not as a framework-native derivation.
-2. **Plaquette `beta = 6` scope.** The upstream
-   [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
-   has been amended on 2026-05-01 to carry `bounded` author tier
-   explicitly, with an explicit window for the residual analytic
-   insertion gap.
+This repair fixes five defects:
 
-The honest author tier for this note is therefore `bounded`, not
-`proposed_retained`. The numerical lane `alpha_s(M_Z) = 0.1181` remains
-in place as the bounded same-surface readout under the documented
-one-hop bridge. The `Type: bounded_theorem` source hint is an authoring
-queue hint only; independent audit still owns `claim_type`, `audit_status`,
-and any effective `retained_bounded` propagation.
+1. **(Critical) Load-bearing chain terminated in the numerical-match
+   bridge row.** The headline `0.1181` inherited a class-(G) step. Fix:
+   the claim is split into theorem T1 (the forward computation
+   `alpha_s(v) = 0.10330382` over declared admissions; load-bearing) and
+   corollary C1 (the `M_Z` readout; quarantined, explicitly not
+   load-bearing for T1). The bridge dependency is scoped to corollary
+   step S5 only — see the dependency-status declaration below.
+2. **(High) Miscited plaquette authority.** The prior text called
+   `<P> = 0.5934` "same-surface MC-evaluated". Since its 2026-05-25
+   finite-diagnostic repair, the plaquette authority
+   ([`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md))
+   licenses `0.5934` **only** as an admitted comparison/reuse number,
+   not as a value it derives or certifies. Fix: declared admission B1,
+   consuming the value exactly under that license.
+3. **(High) Silent scheme/scale identification.** Identifying the
+   tadpole-improved lattice coupling `alpha_bare / u_0^2` with the
+   strong coupling `alpha_s` at `mu = v` glosses both a scheme
+   conversion (lattice scheme vs. MSbar) and a scale assignment. Fix:
+   declared admitted premise B4.
+4. **(High) Unauthorized vertex power.** The prior chain asserted the
+   vertex power `n_link = 2` via a "vertex-power theorem" with no
+   one-hop authority in the packet. Fix: declared admitted structural
+   premise B3 (the coupling-map derivation lane
+   `docs/ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md`,
+   referenced here by file path only, is the derivation target; this
+   note does not claim it).
+5. **(Medium) Wrong registered runner.** The registered primary runner
+   was the shared `scripts/frontier_yt_zero_import_chain.py`, whose
+   PASS surface is dominated by class-(D) comparators on other lanes.
+   Fix: the dedicated runner
+   `scripts/frontier_alpha_s_derived_bounded_chain.py`, which computes
+   T1 forward from the declared admissions and tags every check
+   [A]/[B]/[D].
 
-## Authority Role
+The arithmetic of the prior note was verified correct and is retained:
+`u_0 = 0.877681381`, `alpha_s(v) = 0.10330382`, 2-loop run
+`-> 0.118067 ~ 0.1181`.
 
-This note records the standalone strong-coupling lane used on the current
-`main` package surface, scoped explicitly as `bounded` (see status
-amendment above).
+## Declared admitted boundary tuple (B1-B4)
 
-The current package treats `alpha_s(M_Z)` as its own bounded quantitative
-lane, not merely as a hidden subcomponent of a larger synthesis memo.
-The bridge from the framework-side `alpha_s(v)` to the `M_Z` readout is
-the registered standard-infrastructure running bridge; see
-[`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md).
+T1 is a theorem **over** these admissions. None of them is claimed as
+derived by this note.
 
-## Audit-Clean Replacement Route
+- **B1 (admitted reuse number).** `<P> = 0.5934`. License: the plaquette
+  authority [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+  states that "the canonical value `0.5934` may still be used by
+  downstream notes only as an admitted comparison/reuse number unless a
+  separate retained MC certificate or analytic beta=6 closure is
+  supplied." This note consumes the value exactly and only under that
+  license.
+- **B2 (declared normalization).** `g_bare = 1` on the canonical
+  same-surface chain, hence `alpha_bare = g_bare^2 / (4 pi) = 1 / (4 pi)`.
+- **B3 (admitted structural premise).** The tadpole-improved physical
+  coupling carries vertex power `n_link = 2`, i.e. the improvement
+  factor is `u_0^(-2)` (one factor of `u_0` per gauge link entering the
+  three-gluon vertex normalization). The derivation of this power is
+  the open target of the coupling-map lane
+  `docs/ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md`
+  (file-path reference only; not a one-hop authority here).
+- **B4 (admitted scheme/scale identification).** The tadpole-improved
+  lattice coupling `alpha_bare / u_0^2` is identified with the strong
+  coupling `alpha_s` at the scale `mu = v = 246.282818290129 GeV`. This
+  identification glosses a lattice-to-MSbar scheme conversion and a
+  scale assignment; both are admitted here, not derived.
 
-As of the 2026-05-01 amendment this note carries `bounded` author tier
-rather than `proposed_retained`. That records the honest scope: the
-chain works on the canonical same-surface plaquette plus the registered
-standard-infrastructure running bridge, but it does not produce an
-audit-clean framework-native closed derivation of `alpha_s(M_Z)`.
+## Theorem T1 (load-bearing)
 
-The audit-clean replacement target is the direct Wilson-loop route in
-`ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md`.
-That route is a future replacement gate, not a load-bearing authority for this
-bounded same-surface lane. It measures `alpha_s` from Wilson-loop expectation values, the
-static potential, Sommer-scale setting, and the standard QCD running
-bridge. It explicitly forbids using the `alpha_LM/u_0` or
-`alpha_bare/u_0^2` chain as authority.
+Given B1-B4:
 
-Until that direct Wilson-loop gate passes with production data and the
-audit ledger ratifies it, the chain below is the bounded same-surface
-quantitative lane, and the `alpha_LM/u_0` calculation should be used only
-as a consistency cross-check for the direct route.
-
-## Safe Statement
-
-The current bounded lane gives:
-
-- `alpha_s(v) = alpha_bare / u_0^2 = 0.1033` (boundary value on the
-  same-surface plaquette/`u_0` chain)
-- `alpha_LM^2 = alpha_bare * alpha_s(v)` as an exact algebraic
-  coupling-chain identity (decoration of upstream coupling definitions)
-- one-decade low-energy transfer from `v` to `M_Z` on the registered
-  bounded-scope running bridge
-  ([`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md))
-- `alpha_s(M_Z) = 0.1181`
-
-That is the current bounded same-surface-derived `alpha_s` result on
-`main`. The bounded scope is documented explicitly: the upstream
-plaquette analytic insertion at `beta = 6` is open work, and the bridge
-from `v` to `M_Z` is standard SM 2-loop RGE infrastructure
-(Machacek-Vaughn 1984; Arason et al. 1992) plus PDG quark-mass
-thresholds, not a framework-native derivation.
-
-## Canonical Chain
-
-```
-Cl(3) on Z^3
-  |-> g_bare = 1
-  |-> <P> = 0.5934  (same-surface MC-evaluated; bounded analytic scope -
-  |                  see PLAQUETTE_SELF_CONSISTENCY_NOTE.md status amendment)
-  |-> u_0 = <P>^(1/4)
-  |
-  |-> hierarchy theorem:
-  |     alpha_LM = alpha_bare / u_0
-  |     v = 246.282818290129 GeV
-  |
-  |-> vertex-power theorem:
-        alpha_s(v) = alpha_bare / u_0^2 = 0.1033
-        alpha_LM^2 = alpha_bare * alpha_s(v)
-  |
-  |-> low-energy transfer (bounded; standard QCD infrastructure):
-        see QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md
-        alpha_s(M_Z) = 0.1181
+```text
+u_0        = <P>^(1/4)                 = 0.877681381
+alpha_bare = 1 / (4 pi)                = 0.0795774715
+alpha_s(v) = alpha_bare / u_0^2
+           = 1 / (4 pi sqrt(<P>))      = 0.10330382
+alpha_LM   = alpha_bare / u_0,   with  alpha_LM^2 = alpha_bare * alpha_s(v)
 ```
 
-## Package Role
+Every step after the admissions is exact closed-form arithmetic with
+zero free parameters. The runner verifies the chain by two independent
+evaluation routes (the stepwise `u_0` chain and the collapsed closed
+form `1 / (4 pi sqrt(<P>))`, plus a third log-domain route) agreeing to
+`1e-16`, with exact-identity residuals at machine precision
+(`|4 pi sqrt(<P>) alpha_s(v) - 1| ~ 2e-16`,
+`|alpha_LM^2 - alpha_bare alpha_s(v)| ~ 2e-18`).
 
-This is a bounded standalone quantitative lane, not a theorem-core row.
-Its quantitative anchor is the canonical same-surface plaquette evaluation in
-[PLAQUETTE_SELF_CONSISTENCY_NOTE.md](PLAQUETTE_SELF_CONSISTENCY_NOTE.md).
-Its bridge to `M_Z` is the registered standard-infrastructure running bridge
-in [QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md).
+### Per-step authority table
 
-The framework-side quantity is `alpha_s(v)`. The quoted `alpha_s(M_Z)` row is
-the same lane after the bounded one-decade running bridge below `v`.
+| Step | Statement | Class | One-hop authority |
+| --- | --- | --- | --- |
+| S1 | admit `<P> = 0.5934` | admitted input (licensed reuse) | [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) reuse license (B1) |
+| S2 | `u_0 = <P>^(1/4) = 0.877681381` | (A) exact arithmetic | this note + dedicated runner |
+| S3 | `alpha_bare = g_bare^2/(4 pi) = 1/(4 pi)` | (A) over declared normalization | B2 (declared in this note) |
+| S4 | `alpha_s(v) = alpha_bare/u_0^2 = 1/(4 pi sqrt(<P>)) = 0.10330382`; `alpha_LM^2 = alpha_bare alpha_s(v)` | (A) exact arithmetic over admissions | B3 + B4 (declared in this note) |
+| S5 | (C1 only) `v -> M_Z` standard 2-loop transfer: `alpha_s(M_Z) = 0.118067 ~ 0.1181` | bounded standard-infrastructure transfer | [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) (scoped to C1 only) |
 
-It remains distinct from:
+The load-bearing claim surface of this note is S1-S4 (theorem T1). S5
+belongs exclusively to corollary C1.
 
-- the retained hierarchy / `v` lane
-- the EW normalization lane
-- the Yukawa / top lane
-- the Higgs / vacuum lane
+## Corollary C1 (bounded; explicitly not load-bearing for T1)
 
-## Validation Snapshot
+Transferring the T1 output `alpha_s(v) = 0.10330382` through the
+standard SM 2-loop RGE (Machacek-Vaughn 1984; Arason et al. 1992) with
+leading-order active-flavor threshold matching (only the top threshold
+`m_t = 172.69 GeV` lies between `v` and `M_Z`), holding the auxiliary
+admitted SM boundary inputs
+`(g_1, g_2, y_t, lambda)(v) = (0.46228, 0.65184, 0.93737, 0.13)` fixed,
+gives
 
-- current bounded route:
-  `alpha_s(M_Z) = 0.1181`
-- comparison value:
-  `0.1179`
-- deviation:
-  `+0.2%`
+```text
+alpha_s(M_Z) = 0.118067 ~ 0.1181
+1-loop/2-loop truncation envelope ~ 5e-4
+```
 
-Primary reruns on the current package surface:
+C1 is a corollary, not part of the T1 claim surface:
 
-- `frontier_yt_zero_import_chain.py`
-- `frontier_complete_prediction_chain.py`
+- the running kernel, the quark-mass threshold, and `M_Z` are standard
+  external infrastructure (registered one hop away in the bridge note),
+  not framework-native results;
+- the bridge note currently carries a terminal `audited_numerical_match`
+  verdict on its own scope (class (G) at its admitted boundary tuple);
+  C1 honestly inherits exactly that scope;
+- removing C1 entirely leaves T1 intact — the runner computes T1 first
+  and independently, and its C1 section is a self-contained 2-loop RGE
+  reimplementation used only for the corollary readout and envelope.
 
-Historical support, not canonical authority:
+## Dependency-status declaration (one-hop license statements)
 
-- `frontier_alpha_s_determination.py`
+This note has exactly three one-hop dependencies. Their current
+statuses and the scope on which each is consumed:
 
-## Bridge-support progress 2026-05-09 (upstream plaquette insertion)
+1. [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+   (claim `plaquette_self_consistency_note`; `audited_clean`,
+   effective `retained_bounded`). Consumed at S1/B1 only, and only
+   under its explicit reuse license: `0.5934` enters as an admitted
+   comparison/reuse number. This note does not claim the value is
+   derived, MC-certified, or analytically closed upstream.
+2. [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
+   (claim `qcd_low_energy_running_bridge_note_2026-05-01`; terminal
+   `audited_numerical_match`, 2026-05-25, load-bearing-step class (G)
+   at its own admitted boundary tuple). **Scoped to corollary step S5
+   only.** T1 does not read, transfer, or depend on any value from this
+   row. Per the bridge note's own reuse rule, C1 reads the `v -> M_Z`
+   kernel as bounded standard infrastructure, never as a
+   first-principles derivation. Any change in that row's status
+   resolves into this note by cascade on C1 alone; T1's verdict surface
+   is unaffected.
+3. [`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
+   (claim
+   `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`;
+   `audited_clean`, effective `retained_bounded`). Informational
+   progress marker on the upstream plaquette analytic program (bounded
+   `rho_(p,q)(6)` coefficient table by two independent methods). Not
+   load-bearing for T1, because T1 consumes `<P> = 0.5934` as an
+   admission (B1), not as a derived value; the citation records where
+   the admission's retirement work currently stands.
 
-Before this source edit, the 2026-05-05 audit pass on this row read
-`audited_conditional` because the upstream plaquette dependency
-([`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md))
-explicitly leaves the analytic `beta = 6` insertion open and the running
-bridge ([`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md))
-imports standard SM RGE plus PDG threshold infrastructure. This edit does
-not request a clean verdict; the row remains non-retained until the
-independent audit lane rechecks the edited source and those upstream
-dependencies.
+## Why this is not a numerical match at a tuned scale
 
-A first concrete piece of the upstream plaquette repair target landed
-audited_clean on 2026-05-09 in
-[`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md),
-which delivers a bounded finite-box computation of the normalized
-single-link SU(3) Wilson boundary character coefficients
-`rho_(p,q)(6)` for `0 <= p,q <= 4` by two independent methods (a
-Schur-Weyl Bessel-determinant sum and direct Weyl integration with
-Vandermonde squared), with cross-method agreement to `4.136e-15`
-absolute / `7.952e-14` relative error.
+- **Zero-free-parameter closed form.** T1's output is
+  `alpha_s(v) = 1 / (4 pi sqrt(<P>))` — a parameter-free function of
+  the single admitted input `<P>`. There is no second knob: nothing in
+  S2-S4 can be adjusted to move the output, and `<P>` itself is fixed
+  upstream by the Wilson action at `beta = 6`, not by any fit to
+  `alpha_s`.
+- **Analytic sensitivity is declared, not hidden.** The exact
+  sensitivity is `d alpha_s(v) / d<P> = -alpha_s(v) / (2 <P>)
+  = -0.0870`, i.e. a `1%` shift in `<P>` moves `alpha_s(v)` by `0.5%`.
+  The runner verifies this against a central finite difference. The
+  agreement of C1's readout with the PDG band is therefore not
+  tolerance-trivial; it is a genuine constraint on the admitted `<P>`,
+  and it is reported as exactly that — a constraint conditional on
+  B1-B4 — not as a framework-native prediction.
+- **The PDG comparator is quarantined.** PDG constants appear only in
+  the terminal class-(D) section of the dedicated runner and in C1's
+  standard-infrastructure threshold/scale inputs. T1's claim surface
+  (S1-S4) contains no external comparator and no externally calibrated
+  input scale: `v` enters only as the scale **label** of admission B4,
+  not as a number that the arithmetic of S1-S4 consumes.
 
-That audited_clean coefficient-table delivery does not by itself
-close either the upstream analytic `beta = 6` insertion gap or the
-load-bearing `B`-class value-transfer step of this row. The honest
-read remains:
+## Explicit non-claims
 
-- the row is correctly carried as `bounded` (matching the load-bearing
-  step class `B` that the audit recorded);
-- the upstream plaquette path now has a first audited_clean component
-  on its repair target, but the parent plaquette row continues to
-  carry `audited_conditional` because the all-weight closure and the
-  spatial Wilson tensor-transfer / Perron problem remain open;
-- the running-bridge dependency continues to import standard SM RGE
-  plus PDG threshold infrastructure as documented in
-  [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md);
-- retained-grade propagation remains blocked until both upstream
-  authorities reach independent retained-grade audit.
+This note does **not** claim:
 
-This subsection is informational reuse-discipline only; it does not
-request a clean audit verdict and does not amend the load-bearing step.
+- a derivation, MC certification, or analytic closure of
+  `<P> = 0.5934` (admitted under the upstream reuse license, B1);
+- a derivation of the lattice-to-MSbar scheme conversion or of the
+  scale assignment `mu = v` (admitted, B4);
+- a derivation of the vertex power `n_link = 2` (admitted, B3; the
+  coupling-map lane referenced by file path is the derivation target);
+- a framework-native derivation of the QCD beta function, the quark
+  mass thresholds, or `M_Z` (C1 standard infrastructure, one hop away
+  in the bridge note);
+- a framework-native prediction `alpha_s(M_Z) = 0.1181` (C1 is a
+  bounded corollary inheriting the bridge row's terminal
+  `audited_numerical_match` scope);
+- any audit verdict or status promotion (status authority is the
+  independent audit lane only).
+
+The honest ceiling for this row is `retained_bounded`: T1 is exact
+arithmetic over declared admissions, and the admissions B1, B3, B4 are
+real open work owned by the upstream plaquette and coupling-map lanes.
+
+## Verification
+
+Run:
+
+```bash
+python3 scripts/frontier_alpha_s_derived_bounded_chain.py
+```
+
+Expected result (deterministic, pure Python, runtime under one second):
+
+```text
+Breakdown: A=8 B=5 D=2
+TOTAL: PASS=15 FAIL=0
+```
+
+The runner computes T1 forward from the declared admissions B1-B4 (the
+helper module `scripts/canonical_plaquette_surface.py` is consulted only
+for tagged class-(B) consistency residuals), checks two independent
+evaluation routes to `1e-16`, the exact-identity and sensitivity
+residuals, and then runs a self-contained 2-loop SM RGE reimplementation
+for C1 with its truncation envelope. PDG constants appear only in the
+terminal class-(D) section. Every check is tagged [A]/[B]/[D].
+
+## Changelog
+
+- **2026-04-15.** Original note: canonical plaquette/`u_0` chain with
+  headline `alpha_s(M_Z) = 0.1181`.
+- **2026-05-01.** Audit-driven scope amendment: author tier moved from
+  `proposed_retained` to `bounded`; running bridge registered as a
+  one-hop authority.
+- **2026-05-09.** Informational bridge-support progress entry for the
+  `rho_(p,q)(6)` coefficient-table delivery.
+- **2026-06-10.** T1/C1 repair (this revision). Load-bearing claim
+  restructured from a class-(B) cross-note transfer terminating in the
+  `audited_numerical_match` bridge row into theorem T1 — the forward
+  computation `alpha_s(v) = 1/(4 pi sqrt(<P>)) = 0.10330382` over the
+  explicitly declared admitted boundary tuple B1-B4 — with the `M_Z`
+  readout quarantined as bounded corollary C1 (scoped to step S5;
+  resolves by cascade without touching T1). Miscitation of the
+  plaquette authority fixed (B1 admitted-reuse license); silent
+  scheme/scale identification declared (B4); vertex power declared as
+  admitted structural premise (B3, coupling-map lane by file path
+  only); dedicated runner
+  `scripts/frontier_alpha_s_derived_bounded_chain.py` registered,
+  replacing the shared `scripts/frontier_yt_zero_import_chain.py`
+  registration (that shared runner is unchanged). Prior arithmetic
+  verified and retained: `u_0 = 0.877681381`,
+  `alpha_s(v) = 0.10330382`, 2-loop `-> 0.118067 ~ 0.1181`, envelope
+  `~5e-4`.

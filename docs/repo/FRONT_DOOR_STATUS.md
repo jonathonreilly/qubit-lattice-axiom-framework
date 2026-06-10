@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3128 |
-| Applied audit verdicts | 1414 |
-| Retained-grade rows, including boxed decorations | 1282 |
+| Applied audit verdicts | 1415 |
+| Retained-grade rows, including boxed decorations | 1283 |
 | Retained positive theorems | 211 |
-| Retained no-go rows | 205 |
+| Retained no-go rows | 206 |
 | Retained bounded rows | 816 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1396 |
+| Unaudited rows | 1395 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 31 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1398 |
-| Ready rows | 11 |
+| Total pending rows | 1397 |
+| Ready rows | 10 |
 | Cycle-break targets | 0 |
 | Critical pending | 283 |
 | High pending | 279 |
 | Medium pending | 409 |
-| Leaf pending | 427 |
+| Leaf pending | 426 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
-- [`fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`](../../docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md) - medium; unaudited
 - [`persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 - [`d3_upper_bound_import_scope_gate_note_2026-06-06`](../../docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md) - medium; unaudited
 - [`generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07`](../../docs/GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
-- [`relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10`](../../docs/RELATIVE_ORIENTATION_FUSION_STATE_SELECTION_POINTER_FRAME_ONE_VACUOUS_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-06-10.md) - leaf; unaudited
+- [`relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10`](../../docs/RELATIVE_ORIENTATION_FUSION_STATE_SELECTION_POINTER_FRAME_ONE_VACUOUS_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-06-10.md) - medium; unaudited
+- [`cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10`](../../docs/CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3265 |
 | Critical nodes | 486 |
 | High nodes | 485 |
-| Medium nodes | 881 |
-| Leaf nodes | 1413 |
+| Medium nodes | 882 |
+| Leaf nodes | 1412 |
 
 Top load-bearing rows by graph score:
 

@@ -11,7 +11,7 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3118 |
+| Ledger rows | 3119 |
 | Applied audit verdicts | 1432 |
 | Retained-grade rows, including boxed decorations | 1302 |
 | Retained positive theorems | 213 |
@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 831 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 40 |
-| Unaudited rows | 1367 |
+| Unaudited rows | 1368 |
 | Retained-pending-chain rows | 17 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 33 |
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1370 |
+| Total pending rows | 1371 |
 | Ready rows | 13 |
 | Cycle-break targets | 0 |
-| Critical pending | 285 |
-| High pending | 278 |
-| Medium pending | 397 |
+| Critical pending | 286 |
+| High pending | 277 |
+| Medium pending | 398 |
 | Leaf pending | 410 |
 
 Next ready rows by queue order:
@@ -80,19 +80,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3255 |
-| Critical nodes | 482 |
-| High nodes | 488 |
-| Medium nodes | 872 |
+| Citation-graph nodes | 3256 |
+| Critical nodes | 483 |
+| High nodes | 487 |
+| Medium nodes | 873 |
 | Leaf nodes | 1413 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1449 descendants; score 110.502
-- `three_generation_observable_theorem_note` - critical; 990 descendants; score 61.953
-- `graph_first_su3_integration_note` - critical; 1336 descendants; score 60.385
-- `observable_principle_from_axiom_note` - critical; 851 descendants; score 57.735
-- `minimal_axioms_2026-05-03` - critical; 966 descendants; score 48.417
-- `key_terminology` - critical; 1181 descendants; score 47.207
-- `cl3_color_automorphism_theorem` - critical; 974 descendants; score 41.429
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 915 descendants; score 41.339
+- `minimal_axioms` - critical; 1450 descendants; score 110.503
+- `three_generation_observable_theorem_note` - critical; 991 descendants; score 61.954
+- `graph_first_su3_integration_note` - critical; 1337 descendants; score 60.386
+- `observable_principle_from_axiom_note` - critical; 852 descendants; score 57.736
+- `minimal_axioms_2026-05-03` - critical; 967 descendants; score 48.419
+- `key_terminology` - critical; 1182 descendants; score 47.208
+- `cl3_color_automorphism_theorem` - critical; 975 descendants; score 41.431
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 916 descendants; score 41.341

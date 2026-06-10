@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1407 |
-| Retained-grade rows, including boxed decorations | 1279 |
+| Applied audit verdicts | 1408 |
+| Retained-grade rows, including boxed decorations | 1280 |
 | Retained positive theorems | 212 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 810 |
+| Retained bounded rows | 811 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1387 |
+| Unaudited rows | 1386 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 30 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1389 |
-| Ready rows | 38 |
+| Total pending rows | 1388 |
+| Ready rows | 37 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
 | Medium pending | 375 |
-| Leaf pending | 436 |
+| Leaf pending | 435 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
-- [`magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md) - medium; unaudited
 - [`two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06`](../../docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - medium; unaudited
 - [`per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09`](../../docs/PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07`](../../docs/GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06`](../../docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - leaf; unaudited
+- [`gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06`](../../docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
+- [`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3249 |
 | Critical nodes | 548 |
 | High nodes | 439 |
-| Medium nodes | 854 |
-| Leaf nodes | 1408 |
+| Medium nodes | 855 |
+| Leaf nodes | 1407 |
 
 Top load-bearing rows by graph score:
 

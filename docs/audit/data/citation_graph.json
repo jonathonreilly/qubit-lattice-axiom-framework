@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "second_grown_family_note"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "universal_gr_newton_tensor_scalar_consistency_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
         "second_grown_family_note",
         "universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08",
         "universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08",
         "universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08",
-        "universal_gr_newton_tensor_scalar_consistency_bounded_theorem_note_2026-06-08"
+        "universal_gr_newton_tensor_scalar_consistency_bounded_theorem_note_2026-06-08",
+        "universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a9786c16d4fcc11c2f65dec4a719298bfac92a80c5f326d6258f9ee729752ba5",
+      "note_hash": "feaf7f168e2156fff4efe559cd43c30e2de120bf49f5c31be3c7448357ac021e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

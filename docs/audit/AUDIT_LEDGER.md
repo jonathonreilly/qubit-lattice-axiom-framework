@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 828 |
+| **retained_bounded** | 829 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1353 |
+| unaudited | 1352 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1276 |
+| `audited_clean` | 1277 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1669 |
+| `unaudited` | 1668 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 819 |
-| `leaf` | 1312 |
+| `medium` | 814 |
+| `leaf` | 1317 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -101,12 +101,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1447 | 109.50 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 779 | 61.11 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1446 | 109.50 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 778 | 61.10 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1307 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1050 | 47.04 | `unaudited` | meta |
+| 6 | `key_terminology` | meta | critical | 1049 | 47.04 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1219 | 44.25 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 616 | 40.77 | `audited_clean` | **retained** |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1016 | 40.49 | `unaudited` | unaudited |
@@ -117,15 +117,15 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1070 | 37.06 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 922 | 35.85 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1166 | 35.69 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1165 | 35.69 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 882 | 34.79 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 705 | 32.96 | `unaudited` | unaudited |
 | 21 | `minimal_axioms_2026-04-11` | meta | critical | 1135 | 32.65 | `unaudited` | meta |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 702 | 31.46 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 830 | 31.20 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 167 | 30.39 | `audited_clean` | **retained** |
-| 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 327 | 30.36 | `unaudited` | unaudited |
+| 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 327 | 30.36 | `unaudited` | unaudited |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 158 | 30.31 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1113,6 +1113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `schur_covariance_inheritance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `second_grown_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `second_grown_family_complex_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
+| `second_grown_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `second_grown_family_sign_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `self_consistency_forces_poisson_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `self_consistency_structured_null_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -16068,6 +16069,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited authority is retained_bounded for the second no-restore geometry-sector family, and the current runner separately computes the complex-action gate outcomes for the anchor row. The source note's safe read is explicitly limited to that anchor row and does not assert family-wide closure.
 - **rationale:** The audited claim is operational and narrow: the runner builds the grown geometry slice, applies the geometry-sector stencil, computes propagation/Born-proxy/centroid/probability observables, and gates the anchor-row result without hard-coded target row outputs. The one-hop dependency is retained-grade and supplies only the second-family slice, while the runner supplies the complex-action companion evidence. The note stays within the tested anchor-row boundary and explicitly denies family-wide generalization.
 - **auditor confidence:** medium
+
+### `second_grown_family_note`
+
+- **Note:** [`SECOND_GROWN_FAMILY_NOTE.md`](../../docs/SECOND_GROWN_FAMILY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited scope is only the bounded current-source restoration of scripts/second_grown_family_battery.py as a SHA-pinned cache verifier over the listed second-grown-family evidence slices, with no broad family theorem or status movement.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-055447-b16b60e54a-second_grown_family_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The battery restores the missing runner path by checking the current child runner paths, live SHA/cache SHA equality, fresh ok cache headers, and the narrowed sign, distance/impact, complex, and boundary cache gates before reporting PASS=21 FAIL=0.  _(class `A`)_
+- **chain closes:** True — The runner source and stdout close the narrow artifact/provenance claim: five imported child modules produce 15 source/cache checks, five cache/provenance content checks precede the final gate, and the final count is therefore PASS=21 FAIL=0. The cited retained and retained_bounded authorities support the bounded sign/complex scope, while the boundary note prevents overextension.
+- **rationale:** Within the note's bounded scope, the primary runner is an exact artifact verifier rather than a first-principles physics derivation. The independent count check matches the code: five child modules times three source/cache checks gives 15, plus five upstream/cache-content gates before the final algebraic gate, yielding 21 total passes. The note's conclusion is correspondingly narrow: the missing executable battery is restored as a current-source packet, not as a resurrection of the older broad retained table.
+- **auditor confidence:** high
 
 ### `second_grown_family_sign_note`
 

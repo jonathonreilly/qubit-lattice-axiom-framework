@@ -2,24 +2,33 @@
 
 Verifies the lattice Lieb-Robinson bound on a 1D nearest-neighbor
 chain with a generic Hermitian local Hamiltonian H = sum_z h_z, where
-h_z is supported in a 2-site neighborhood of z (range r = 1).
+h_z is supported on a nearest-neighbor pair.
 
 Tests:
   T1: equal-time strict locality (M1) - operators at distinct sites
       have zero commutator at t = 0.
   T2: Lieb-Robinson bound (M2) - the commutator
       ||[alpha_t(O_0), O_d]|| <= C * exp(-d + v_LR |t|)
-      with v_LR = 2 e r J.
+      with the retained overlap-weight convention v_LR = 2 e q W R.
   T3: lightcone decay - inside lightcone (d < v_LR t), commutator
       grows; outside lightcone, commutator decays exponentially with d.
   T4: small-t expansion: at fixed d, ||[alpha_t(O_0), O_d]|| ~ |t|^d
       to leading order in t (commutator nesting depth d).
+
+The exact-log free-bilinear quasilocal bridge is exposed as a helper runner
+for the audit packet; it is checked by
+free_bilinear_quasilocal_lr_bridge_2026_06_10.py.
 """
 from __future__ import annotations
 
 import math
+import os
+import sys
 
 import numpy as np
+
+sys.path.insert(0, os.path.dirname(__file__))
+import free_bilinear_quasilocal_lr_bridge_2026_06_10  # noqa: F401,E402
 
 
 def build_local_hamiltonian(L: int, J: float, seed: int) -> np.ndarray:
@@ -86,21 +95,25 @@ def main() -> None:
     print()
     print("Setup:")
     print("  1D chain of L sites with C^2 (qubit) per site (toy A1)")
-    print("  H = sum_z h_z with h_z supported on (z, z+1) (range r = 1)")
-    print("  J = max ||h_z||_op (local Hamiltonian density bound)")
-    print("  v_LR = 2 e r J (Lieb-Robinson velocity)")
+    print("  H = sum_z h_z with h_z supported on nearest-neighbor pairs")
+    print("  J = max ||h_z||_op, q = max support size, R = support diameter")
+    print("  W = sup_x sum_{Z contains x} ||h_Z||_op (per-site overlap weight)")
+    print("  v_LR = 2 e q W R (retained overlap-weight velocity)")
     print()
 
     L = 8  # chain length
     J = 1.0
-    r = 1
-    v_LR = 2 * math.e * r * J  # Lieb-Robinson velocity
+    q = 2
+    R = 1
+    W = 2 * J  # each interior site touches two nearest-neighbor pair terms
+    v_LR = 2 * math.e * q * W * R
     seed = 20260501
     H = build_local_hamiltonian(L, J, seed)
     print(f"  L = {L} sites, dim H_phys = {2**L}")
-    print(f"  J = {J}, r = {r}")
-    print(f"  v_LR = 2 e r J = {v_LR:.4f}")
+    print(f"  J = {J}, q = {q}, W = {W}, R = {R}")
+    print(f"  v_LR = 2 e q W R = {v_LR:.4f}")
     print(f"  ||H||_op = {np.linalg.norm(H, ord=2):.4f}")
+    print("  exact-log quasilocal bridge helper: free_bilinear_quasilocal_lr_bridge_2026_06_10.py")
     print()
 
     # ----- Test 1: equal-time strict locality M1 -----
@@ -126,6 +139,7 @@ def main() -> None:
     print("-" * 72)
     print("TEST 2: Lieb-Robinson bound (M2)")
     print("        ||[alpha_t(O_0), O_d]|| <= 2 ||O_0|| ||O_d|| exp(- d + v_LR |t|)")
+    print("        finite-range carrier uses v_LR = 2 e q W R")
     print("-" * 72)
     O_0 = site_operator(L, 0)
     norm_O = float(np.linalg.norm(O_0, ord=2))
@@ -154,10 +168,10 @@ def main() -> None:
     print("-" * 72)
     print("TEST 3: lightcone decay - outside lightcone, commutator -> 0")
     print("-" * 72)
-    print("Fix t = 0.1 (so v_LR t ≈ 0.54). Sweep d = 2 to 7. Expect")
+    print("Fix t = 0.02. Sweep d = 2 to 7 outside the conservative lightcone. Expect")
     print("exponential decay of commutator with d outside the lightcone.")
     print()
-    t_fixed = 0.1
+    t_fixed = 0.02
     print(f"  t = {t_fixed}, v_LR t = {v_LR * t_fixed:.4f}")
     print(f"  {'d':>3}  {'commutator':>16}  {'log(commutator)':>20}")
     last_log = None

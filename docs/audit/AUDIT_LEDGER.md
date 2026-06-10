@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 815 |
+| **retained_bounded** | 816 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 39 |
-| unaudited | 1375 |
+| unaudited | 1374 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1259 |
+| `audited_clean` | 1260 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1691 |
+| `unaudited` | 1690 |
 
 | claim_type | count |
 |---|---:|
@@ -198,6 +198,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_entropy_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2499,6 +2500,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Direct substitution gives β(g/c,N)=2N/(g/c)^2=2Nc^2/g^2=c^2β(g,N).  _(class `A`)_
 - **chain closes:** True — The conclusions follow from direct algebraic substitution and cancellation with g,c nonzero. T3 follows because c>0 and c≠1 imply c^2≠1, and the map g↦2N0/g^2 is injective on positive g when N0≠0.
 - **rationale:** The load-bearing step is a genuine class A algebraic identity over the stated variables, with no cited upstream authority or physical import needed. The runner source actually computes the symbolic residuals with sympy and exact rational checks rather than merely printing expected results. The note’s Wilson, Cl(3), SU(Nc), and g_bare language is explicitly non-load-bearing for this narrow claim.
+- **auditor confidence:** high
+
+### `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`
+
+- **Note:** [`BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional arithmetic lemma: assuming WM, beta = 2 N_c / g_bare^2 with g_bare^2 > 0, the product beta * g_bare^2 equals 2 N_c and is invariant under the joint rescaling beta -> c^2 beta, g_bare^2 -> g_bare^2 / c^2 for positive rational c.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-045313-b7de5b91d6-beta_gbare_squared_rescaling`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under WM, beta'(c) * g_bare'^2(c) = (c^2 beta) * (g_bare^2 / c^2) = beta * g_bare^2 = 2 N_c.  _(class `A`)_
+- **chain closes:** True — The c^2 factors cancel exactly, and WM supplies beta * g_bare^2 = 2 N_c. The one-hop WM source is marked retained_bounded, while the broader Wilson action-selection and g_bare = 1 interpretations are explicitly outside this claim scope.
+- **rationale:** The load-bearing step is pure algebra over the explicit WM premise and retained-grade upstream inputs. The small-a Wilson matching packet supplies WM only inside the supplied standard Wilson action and canonical trace normalization, which is enough for this bounded conditional arithmetic claim but not for any broader action-selection claim. Independent checking of the displayed formulas confirms the beta g_bare^2 product and all representative table entries. The included runner source performs exact Fraction arithmetic, though its structural claim-type markers should be rechecked against the supplied note before treating the cached stdout as a fresh execution certificate.
 - **auditor confidence:** high
 
 ### `beyond_lattice_qcd_note`

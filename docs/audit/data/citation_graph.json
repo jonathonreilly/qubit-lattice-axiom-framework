@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08",
         "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
         "blocking_isometry_reduces_to_pointer_frame_admission_narrow_theorem_note_2026-06-09",
         "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08",
         "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
-        "color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09"
+        "color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09",
+        "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1d0315cce26da590c4b79565ed61266e48b0e32dd5ec4364a2d5917de76d5662",
+      "note_hash": "6dc146f645c6774bb21786ea9a46f5a834326f3bf295d77d5365dbe886085e74",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_purity_non_reduction_past_hypothesis_2026_06_09.py
+runner_sha256: 7e1fb789cd05d64fd636050663ef590cc60b0dd8304d8ec66813dc3d3476769c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+=== A: the order parameter P = Tr(rho^2) - 1/3 and its unique zero ===
+[PASS] A1 P(I3/3) = 0 exactly (fully color-blind)
+[PASS] A1 P(polarized) > 0 (purity above the floor)
+[PASS] A2 HW twirl of a polarized density = I3/3 exactly (invariant density unique)
+[PASS] A2 HW twirl of a generic (oriented) density = I3/3 exactly
+[PASS] A2 only the twirl-fixed density is I3/3 (P=0 iff rho=I3/3)
+
+=== B: P is orientation-invariant (Part A recap: purity = spectrum) ===
+[PASS] B1 P(U rho U^dag) = P(rho) for every orientation (spectral function)
+[PASS] B2 retiring orientation leaves the purity residual intact (P stays > 0)
+
+=== C: GLOBAL entropy (what the past hypothesis fixes) does NOT fix P ===
+[PASS] C1 S(I3/3) = log 3 (maximal qutrit marginal entropy)
+[PASS] C2a globally PURE singlet: S_global = 0
+[PASS] C2a singlet marginal rho_A = I3/3 (P = 0)
+[PASS] C2b separable realization: marginal rho_A = I3/3 (P = 0)
+[PASS] C2b separable realization: S_global >= log 3 (HIGH global entropy)
+[PASS] C3 P=0 realized at both entropy poles => global entropy does not fix P
+
+=== D: P = 0 does NOT entail neutrality (purity strictly weaker) ===
+[PASS] D1 singlet rho_A = I3/3 (P = 0)
+[PASS] D1 singlet INVARIANT under g (x) g* (color-neutral)
+[PASS] D2 two-fundamental |F> is globally PURE
+[PASS] D2 two-fundamental marginal rho_A = I3/3 (P = 0)
+[PASS] D2 two-fundamental NOT invariant under diagonal g (x) g (NOT a singlet)
+[PASS] D3 purity is STRICTLY WEAKER than global neutrality (converse fails)
+
+=== E: assembly -- the proposed past-hypothesis reduction is refuted ===
+[PASS] E1 past hypothesis (fixes global entropy) does NOT pin the purity P
+[PASS] E2 retiring orientation does not pin P (pin needs the symmetry demand)
+[PASS] E3 no admission discharged / no count reduced (proposed reduction refuted)
+[PASS] E4 singlet is the neutral P=0 realization; two-fundamental is the non-neutral one
+
+=== F: discipline / hygiene ===
+[PASS] F1 all constructed objects are valid densities
+[PASS] F2 booleans wired to fresh computations (no tautological self-pass)
+
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

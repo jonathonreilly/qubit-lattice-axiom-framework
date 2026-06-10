@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_gauge_weight_heat_kernel_clt_fixed_point_2026_06_08.py
+runner_sha256: 0880740ab15af47bd515cdc6c71c06639cb232204347945a048b5a82b593e33f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  Bi-invariant per-step kernel: phi_j = 1 - eps C_2(j)/2 + O(eps^2)
+==============================================================================
+  [PASS] (1-phi_j)/C_2(j) is j-INDEPENDENT (bi-invariance => variance is the Casimir)  (ratios=[0.00996 0.0099  0.00981 0.00971] (all ~ eps/2=0.01))
+==============================================================================
+Part 2  CLT universality: HK / Wilson / Gauss steps all -> the SAME heat kernel
+==============================================================================
+  [PASS] all 3 bi-invariant steps -> heat kernel at eps=0.05 (max dev 0.0134)  (max|mu^*n - P_t| = 0.0134)
+  [PASS] all 3 bi-invariant steps -> heat kernel at eps=0.02 (max dev 0.0054)  (max|mu^*n - P_t| = 0.0054)
+  [PASS] all 3 bi-invariant steps -> heat kernel at eps=0.01 (max dev 0.0027)  (max|mu^*n - P_t| = 0.0027)
+  [PASS] convergence to the heat kernel IMPROVES monotonically as eps->0 (diffusion limit)  (devs(eps=.08->.01)=['0.0105', '0.0054', '0.0027', '0.0014'])
+==============================================================================
+Part 3  TEETH: a non-bi-invariant (drifted) step does NOT -> heat kernel
+==============================================================================
+  [PASS] CENTRAL step: fundamental Fourier matrix is SCALAR (proportional to I)  (off-diag max = 2.45e-18)
+  [PASS] DRIFTED (non-central) step: Fourier matrix is NOT scalar (preferred axis)  (deviation from scalar = 0.489)
+  [PASS] CENTRAL step^n stays SCALAR (flows to the bi-invariant heat kernel)
+  [PASS] DRIFTED step^n is NOT the heat-kernel scalar (bi-invariance load-bearing)  (drift breaks the convolution-CLT heat-kernel limit)
+==============================================================================
+Part 4  Generator uniqueness: Casimir = unique Ad-invariant quadratic, no drift
+==============================================================================
+  [PASS] Casimir C_2 = sum_a T_a^2 is Ad-invariant ([C_2, T_b]=0 for all b)  (C_2(fund) = 0.750 I = 3/4 I (= j(j+1), j=1/2))
+  [PASS] no Ad-invariant VECTOR on simple su(2) (sum c_a T_a central => c=0) => no drift  (bi-invariant continuous limit has zero drift -> pure heat semigroup)
+==============================================================================
+Part 5  SU(3): bi-invariant steps -> heat kernel (fund coeff -> exp(-t C_2/2))
+==============================================================================
+  [PASS] SU(3) bi-invariant step (eps=0.04) -> heat kernel exp(-t C_2/2)  (fund: 0.7156 vs 0.7165)
+  [PASS] SU(3) bi-invariant step (eps=0.01) -> heat kernel exp(-t C_2/2)  (fund: 0.7163 vs 0.7165)
+  [PASS] SU(3) emergent fund weight at t=1 reproduces exp(-2/3) (the no-go's <P>_HK)
+==============================================================================
+Part 6  ADM-1 does NOT imply bi-invariance (ADM-2): the gates are NOT unified
+==============================================================================
+  [PASS] gauge-covariance is INDIFFERENT to the step measure: a drifted (non-bi-invariant) link is equally gauge-covariant-valid (the law U->gUg^dag is measure-blind)
+  [PASS] the drifted step is NON-bi-invariant AND does NOT flow to the heat kernel (Part 3)  (drift Fourier-dev 0.489)
+  [PASS] => ADM-1 (static frame redundancy / gauge-covariance) does NOT imply ADM-2 (bi-invariant step measure): ADM-2 is STRICTLY STRONGER -- the gates are NOT unified  (ST1 (ADM-1) and ST2 (ADM-2) are DISTINCT open premises)
+==============================================================================
+TOTAL: PASS=17 FAIL=0
+==============================================================================
+SCOPE: Within the supplied discrete i.i.d. emergent-time gauge-link model, the
+  heat-kernel gauge weight is the UNIVERSAL convolution-CLT fixed point of
+  bi-invariant dynamics: ANY bi-invariant per-step kernel
+  (Wilson/HK/Manton/...) flows to the SAME heat kernel under emergent-time coarse-
+  graining (the microscopic action-form ambiguity washes out).  So ST2's action-form
+  reduces to ADM-2 = bi-invariance of the step measure -- a DYNAMICAL premise that is
+  STRICTLY STRONGER than, and NOT implied by, the STATIC fibre-frame redundancy ADM-1
+  (Part 6: gauge-covariance is measure-blind).  The gates are NOT unified (an earlier
+  version's 'one premise' claim was refuted by the find-the-escape panel).  Does NOT
+  derive ADM-2 (Record supplies no continuous generator -- retained boundary), the
+  discrete i.i.d. walk/stationarity premise, the rate (g_bare convention), or the
+  inter-link coupling.  No new axiom/import.
+
+----- stderr -----
+

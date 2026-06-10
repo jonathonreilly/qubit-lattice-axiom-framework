@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
         "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09",
         "fifth_family_complex_note",
         "fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08",
         "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
-        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
+        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
+        "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "189d7c6075a95a45c5af686282a7f8e5fd3c17e7947b3303dcae0443a1dbde65",
+      "note_hash": "95162a227840ab3382337c4fcd774976120c0acf4e39c8a70220d4d66eaf6711",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

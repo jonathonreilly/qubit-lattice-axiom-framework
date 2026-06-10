@@ -47574,10 +47574,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
         "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
         "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
         "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
-        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
+        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
+        "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "98443aaa92dc056bf343da7eb15be64d632f9b999bc75daadb635e6c02942b3e",
+      "note_hash": "38a7783f42d3f55829a2e8f2abaf1bf4b88f0de5660ed39153c3dd3d5a1c73cc",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

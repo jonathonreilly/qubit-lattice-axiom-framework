@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1380 |
-| Retained-grade rows, including boxed decorations | 1263 |
+| Applied audit verdicts | 1381 |
+| Retained-grade rows, including boxed decorations | 1264 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 798 |
+| Retained bounded rows | 799 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1414 |
+| Unaudited rows | 1413 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 21 |
 | Audited renaming rows | 34 |
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1416 |
+| Total pending rows | 1415 |
 | Ready rows | 52 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 242 |
-| Medium pending | 393 |
+| Medium pending | 392 |
 | Leaf pending | 443 |
 
 Next ready rows by queue order:
@@ -49,8 +49,8 @@ Next ready rows by queue order:
 - [`plaquette_bootstrap_framework_integration_note_2026-05-03`](../../docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md) - medium; unaudited
 - [`free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
-- [`luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`](../../docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 - [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

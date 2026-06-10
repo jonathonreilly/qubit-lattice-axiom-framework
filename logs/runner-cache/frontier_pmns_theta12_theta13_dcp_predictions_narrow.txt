@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_theta12_theta13_dcp_predictions_narrow.py
-runner_sha256: 022d4590d179c6585d682d54699ac2ae33d9640a029a810fe76270808e7f68ec
+runner_sha256: fadd9d7db284925842ef261172d69cac3933aa11c9c38a7f7bd681b7abd36b90
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 32.31
+elapsed_sec: 27.79
 status: ok
 ----- stdout -----
 ================================================================================
@@ -25,11 +25,11 @@ Part 1 (S1): sympy: chamber-boundary constant identity (inherited from Cycle 7).
 Part 2: interval Newton brackets eigenvalues of H at PDG anchor.
 ================================================================================
   [PASS] (P2.1) interval Newton converges for lambda_1
-  [PASS] (P2.1w) lambda_1 width <= 1e-13  (width = 4.441e-15)
+  [PASS] (P2.1w) lambda_1 width <= 1e-13  (width = 0.000e+00)
   [PASS] (P2.2) interval Newton converges for lambda_2
-  [PASS] (P2.2w) lambda_2 width <= 1e-13  (width = 2.831e-15)
+  [PASS] (P2.2w) lambda_2 width <= 1e-13  (width = 0.000e+00)
   [PASS] (P2.3) interval Newton converges for lambda_3
-  [PASS] (P2.3w) lambda_3 width <= 1e-13  (width = 3.109e-15)
+  [PASS] (P2.3w) lambda_3 width <= 1e-13  (width = 0.000e+00)
   [PASS] (P2.sep1) lambda_1 < lambda_2 strictly  (separation = 0.9887)
   [PASS] (P2.sep2) lambda_2 < lambda_3 strictly  (separation = 2.6070)
 
@@ -91,7 +91,7 @@ Part 5 (X5*, NEW CONTENT): box-Krawczyk delta_CP certification over B.
   width of delta_CP prediction:                     18.1350 deg
   NuFit 5.3 NO 3-sigma delta_CP range:              [120.0, 369.0] deg (width 249)
   s_23^2 tightest lower bound (Cycle 7 sanity):     0.527718
-  elapsed:                                          31.54s
+  elapsed:                                          27.18s
 
   [PASS] (P5.1) no top-level interval-Newton failure  (failures = 0)
   [PASS] (P5.2) every image-overlap sub-box has J < 0 (sin(d_CP) < 0) at top level  (J>=0 sub-boxes: 0)

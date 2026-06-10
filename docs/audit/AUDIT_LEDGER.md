@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 813 |
+| **retained_bounded** | 814 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1400 |
+| unaudited | 1399 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1253 |
+| `audited_clean` | 1254 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1716 |
+| `unaudited` | 1715 |
 
 | claim_type | count |
 |---|---:|
@@ -112,11 +112,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1012 | 40.48 | `unaudited` | unaudited |
 | 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 911 | 39.83 | `unaudited` | unaudited |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1307 | 39.35 | `audited_clean` | **retained** |
-| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 857 | 39.24 | `audited_conditional` | ~~audited_conditional~~ |
+| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 856 | 38.74 | `audited_conditional` | ~~audited_conditional~~ |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 763 | 38.58 | `unaudited` | unaudited |
 | 14 | `yt_ew_color_projection_theorem` | no_go | critical | 706 | 38.47 | `audited_clean` | **retained_no_go** |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1248 | 37.79 | `audited_clean` | **retained_bounded** |
-| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 926 | 36.36 | `audited_clean` | **retained_bounded** |
+| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 925 | 36.35 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1310 | 35.86 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1056 | 35.05 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 269 | 34.58 | `unaudited` | unaudited |
@@ -193,6 +193,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -2448,6 +2449,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the explicitly defined finite Hamiltonian H = H1⊗I + I⊗H1 + G Σ_ij V(i,j)|i><i|⊗|j><j|, the Horodecki CHSH computation gives |S| > 2 at the listed nonzero G values and |S| = 2 at G = 0.  _(class `C`)_
 - **chain closes:** True — The packet defines the finite lattice operators, Poisson pseudoinverse, tensor-product Hamiltonian, and CHSH/taste operators directly, and the runner source computes the displayed values rather than reading or hard-coding them. The closure is only for the bounded model surface, not for physical gravitational normalization or framework-native registration of the two-species/D5 interpretation.
 - **rationale:** The load-bearing step is class C for the narrowed finite model: the runner constructs the lattice, Clifford/taste operators, Poisson kernel, Hamiltonian, eigenstates, and CHSH matrix from the stated inputs. The displayed taste identities follow algebraically from x_mu = 2X_mu + eta_mu, and independent spot recomputation reproduces representative 1D, 2D, and 3D CHSH entries. The selected G values are part of the bounded model claim rather than an imported calibrated external comparator, so this is not class G on the audited scope. No broader physical or framework-native Bell theorem is ratified here.
+- **auditor confidence:** high
+
+### `bertrand_stable_orbit_upper_bound_support_note_2026-05-20`
+
+- **Note:** [`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](../../docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded continuum result: for d>=3 and k>0, the radial Green-kernel potential V(r)=-k/r^(d-2) with the fixed-angular-momentum effective potential has stable circular orbits only for integer d=3, with d=4 marginal and d>=5 unstable.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-210244-85f57ee9dd-bertrand_stable_orbit_upper_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using circularity to eliminate L^2 gives d^2V_eff/dr^2|_{r_c}=k(d-2)(4-d)/r_c^d, so among integer d>=3 only d=3 has positive stability sign, d=4 is marginal, and d>=5 is unstable.  _(class `A`)_
+- **chain closes:** True — The radial Laplacian identity, unit-flux normalization, absorbed positive Green-kernel coefficient, effective-potential derivatives, and sign classification follow by direct calculus from the displayed formulas. This closes only the stated continuum/effective-potential support claim, not a framework-internal gravity derivation or the full Bertrand closed-orbit theorem.
+- **rationale:** The load-bearing step is algebraic, not an imported numerical comparator or renaming. Independent manual differentiation gives the displayed radial harmonic coefficient q(q+d-2), the Green flux normalization, and the reduced second derivative k(d-2)(4-d)/r_c^d with the stated integer signs. The runner source performs finite checks consistent with these identities and does not hard-code an external measured value or read a contested premise. The clean verdict applies only to the bounded continuum claim as scoped in the note.
 - **auditor confidence:** high
 
 ### `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30`

@@ -47914,10 +47914,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "alpha_s_derived_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
     },
     {
@@ -47943,6 +47939,10 @@
     {
       "from": "repo.front_door_status",
       "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "d3_upper_bound_import_scope_gate_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -92534,17 +92534,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "alpha_s_derived_note",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
         "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
-        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
+        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
+        "d3_upper_bound_import_scope_gate_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "032ff163d845b7c1e2f764d7985e077e23859c93f7890988823054ce1dd7c957",
+      "note_hash": "3efde0bf26bfe88fcd6a8fa8ed3478e89353cd092e738f7c00cf2e9d305ed212",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

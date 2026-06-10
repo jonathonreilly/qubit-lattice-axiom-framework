@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/axiom_first_spin_statistics_check.py
+runner_sha256: fdf41bef25ff5a544ab3c5a6081fe2e96461601557f2ee2af7a4a054f7a5e1a0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
 ========================================================================
  axiom_first_spin_statistics_check.py  (re-scoped 2026-06-10)
  Claim: free-boson (CCR) exclusion on the substep-1 surface;
@@ -23,3 +31,6 @@
 [S4] PASS: <psi|c_x c_y|psi> = -0.500, <psi|c_y c_x|psi> = +0.500: equal magnitude, opposite sign, sum exactly 0 (both sides individually non-zero)
 [CTX] PASS: H(M) = (M+M^+)/2 positive definite on the canonical mass+Wilson surface (min eig +0.3000): the bosonic GAUSSIAN integral converges there, so the exclusion is at the operator/Hilbert-space level, not Gaussian convergence
 TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

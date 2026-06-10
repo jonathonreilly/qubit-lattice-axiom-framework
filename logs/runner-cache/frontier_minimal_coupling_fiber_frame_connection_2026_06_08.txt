@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py
-runner_sha256: e6a7991937e4fb86c66eb247d2ea5a5ee12a41624dcc8daa98dd1e551771b93f
+runner_sha256: 5fc88b6bbaf5423f6b62cc3bc05198c95b706bdcae01e1a752d250dee03fb0b3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -45,9 +45,9 @@ Part 5  Plaquette holonomy gauge invariant; open Wilson line is not
   [PASS] open Wilson line Tr U_mu(x) is NOT gauge invariant  (|dTr| = 6.16e-01)
   [PASS] flat connection U=I has trivial holonomy (Tr U_p = N_f = 3)
 ==============================================================================
-Part 6  U_mu = exp(i eps A_mu) gives D_mu = d_mu + i A_mu at leading order
+Part 6  U_mu = exp(i eps A_mu) gives D_mu psi = d_mu psi + i eps A_mu psi(x+mu)
 ==============================================================================
-  [PASS] minimal-coupling residual is O(eps^2) (D_mu = d_mu + i A_mu at O(eps))  (log-log slope = 2.0000 (== 2 confirms first-order minimal coupling))
+  [PASS] minimal-coupling residual is O(eps^2) for D_mu psi = d_mu psi + i eps A_mu psi(x+mu)  (log-log slope = 2.0000 (== 2 confirms first-order minimal coupling))
 ==============================================================================
 Part 7  U(1) (hypercharge-like) factor obeys the same abelian transporter law
 ==============================================================================

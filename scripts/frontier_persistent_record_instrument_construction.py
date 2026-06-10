@@ -2,10 +2,10 @@
 """Exact-symbolic + numerical audit-companion runner for
 `PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md`.
 
-Constructs the Stinespring isometry V: H_sys -> H_sys (x) H_record
+Constructs the Stinespring isometry V: H_sys -> H_record (x) H_sys
 explicitly as a block matrix from framework-side measurement-instrument
 data {K_r} on the qubit-lattice substrate, and verifies V^dagger V =
-1_sys + Sigma_r K_r^dagger K_r = 1_sys for multiple concrete instrument
+Sigma_r K_r^dagger K_r = 1_sys for multiple concrete instrument
 families.
 
 The reviewer's specific objection on PR #1634 was:
@@ -90,7 +90,7 @@ def kron(A: Matrix, B: Matrix) -> Matrix:
     """Sympy Kronecker product wrapper.
 
     A (x) B builds the tensor-product matrix on H_A (x) H_B.
-    Tensor composition on the Z^3 spatial substrate is realized this way.
+    Tensor composition on the Z^3 lattice is realized this way.
     """
     rows_a, cols_a = A.shape
     rows_b, cols_b = B.shape
@@ -108,14 +108,18 @@ def kron(A: Matrix, B: Matrix) -> Matrix:
 # --------------------------------------------------------------------------
 
 def build_stinespring_isometry(kraus_list):
-    """Build V: H_sys -> H_sys (x) H_record from a Kraus family {K_r}.
+    """Build V: H_sys -> H_record (x) H_sys from a Kraus family {K_r}.
 
     Given K_1, ..., K_R operators on H_sys (dim d) with
     Sigma_r K_r^dagger K_r = 1_sys, V is defined by
 
-        V |psi> = Sigma_r (K_r |psi>) (x) |r>
+        V |psi> = Sigma_r |r> (x) (K_r |psi>)
 
     Concretely, V is the (R*d) x d block-column matrix with K_r stacked.
+    Rows are ordered first by record label r and then by system row i, so
+    zero-based row index alpha = r*d + i.  In one-based theorem notation this is
+    alpha = (r-1)*d + i.  A downstream H_sys (x) H_record convention is obtained
+    by the fixed tensor swap, which preserves V^dagger V.
     """
     if not kraus_list:
         raise ValueError("empty Kraus family")
@@ -210,7 +214,7 @@ def test_single_qubit_projective_z():
     verify_resolution_of_identity(kraus, "T1.a")
     verify_block_structure(kraus, "T1.b")
     verify_stinespring_isometry(kraus, "T1.c")
-    # Sanity: V|0> = |0>(x)|0> (single record component)
+    # Sanity: V|0> = |0_record> (x) |0_sys> in the record-first convention.
     psi_0 = Matrix([[1], [0]])
     psi_1 = Matrix([[0], [1]])
     V = build_stinespring_isometry(kraus)
@@ -221,8 +225,8 @@ def test_single_qubit_projective_z():
     expected_1 = Matrix([[0], [0], [0], [1]])
     ok_0 = all(simplify(V_psi0[i] - expected_0[i]) == 0 for i in range(4))
     ok_1 = all(simplify(V_psi1[i] - expected_1[i]) == 0 for i in range(4))
-    _report("T1.d: V|0> = |0> (x) |0> (single record component)", ok_0)
-    _report("T1.e: V|1> = |1> (x) |1> (single record component)", ok_1)
+    _report("T1.d: V|0> = |0_record> (x) |0_sys> (single record component)", ok_0)
+    _report("T1.e: V|1> = |1_record> (x) |1_sys> (single record component)", ok_1)
 
 
 # --------------------------------------------------------------------------
@@ -479,7 +483,7 @@ def main():
     print("Persistent-record instrument construction (Stinespring V) runner")
     print("=" * 70)
     print()
-    print("Verifies the Stinespring isometry V: H_sys -> H_sys (x) H_record")
+    print("Verifies the Stinespring isometry V: H_sys -> H_record (x) H_sys")
     print("for multiple framework-side measurement-instrument families on the")
     print("qubit-lattice substrate. Total probability preservation V^dagger V = 1")
     print("is checked by explicit block-matrix algebra, NOT inherited from")

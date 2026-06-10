@@ -1,7 +1,7 @@
 # The Generation "Localization" is the Momentum-Corner Structure: the Emergent Coupling's `J − I` Form is Corner-Protected, its Sign Re-confirmed, and its Magnitude Reduces to the Mediator IR — Narrow Theorem
 
 **Date:** 2026-06-06
-**Claim type:** positive_theorem (corner-protection of the `J − I` form + sign cross-check; magnitude left open, reframed)
+**Type:** positive_theorem (corner-protection of the `J - I` form + sign cross-check; magnitude left open, reframed)
 **Status:** unaudited candidate. Graph-visible only so the independent audit lane can decide.
 **Primary runner:** [`scripts/generation_localization_corner_protected_delta_runner.py`](../scripts/generation_localization_corner_protected_delta_runner.py)
 **Cached output:** [`logs/runner-cache/generation_localization_corner_protected_delta_runner.txt`](../logs/runner-cache/generation_localization_corner_protected_delta_runner.txt)
@@ -33,8 +33,8 @@ retained
 [`STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11`](STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11.md)
 (`retained_bounded`).
 
-2026-06-07 bridge repair: the current audit blocker asked for a one-hop source theorem deriving
-the Generation periodic plane-wave density-kernel bridge. Its target is the periodic
+2026-06-07 bridge repair: the source packet supplies the one-hop theorem deriving the
+Generation periodic plane-wave density-kernel bridge. Its target is the periodic
 translation-invariant plane-wave density-density kernel and Hartree-Fock plane-wave readout
 `Vq(q) = -G/(eps(q)+mu^2)` and `delta_ij = (Vq(0)-Vq(k_i-k_j))/N`, including boundary and
 normalization, from the retained staggered two-body mediator. The bridge note above supplies that

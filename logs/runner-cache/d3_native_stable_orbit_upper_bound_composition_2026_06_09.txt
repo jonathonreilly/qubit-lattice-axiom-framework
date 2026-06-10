@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/d3_native_stable_orbit_upper_bound_composition_2026_06_09.py
-runner_sha256: 3475ca5dab2b0ac98ce1bab7f00fe877ae8bf776fe95b10140d2ca4fc3561c8a
+runner_sha256: 8bfc81551e21630bcadb282bdafb3cba667a069ea9276dc6ada0db5a72ec6184
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -39,12 +39,12 @@ PASS stable support note derives Green-kernel potential shape
 PASS stable support note gives d=3 stable and d>=5 unstable classification
 PASS stable support note does not consume full Bertrand closure theorem
 PASS Coulomb support note remains bounded companion support
-PASS legacy wrapper remains unmodified import wrapper surface
-PASS legacy gate remains unmodified import-scope gate surface
+PASS legacy-named wrapper consumes native stable-orbit edge
+PASS legacy-named gate consumes native stable-orbit edge
 PASS note non-claims block overread
 PASS note declares source-only audit boundary without retained-grade promotion
 PASS note records current lower and upper composition text
-PASS note does not claim to supersede existing wrapper/gate
+PASS note permits wrapper/gate wiring without changing support-note claim
 PASS lower support set is exactly {3,4,5}
 PASS native stable upper set over checked dims is d<=3
 PASS Coulomb weak upper set over checked dims is d<=4

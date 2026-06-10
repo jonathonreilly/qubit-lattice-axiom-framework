@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_persistent_record_instrument_construction.py
-runner_sha256: 5c6664dc46368abafec67fa252359f783bf3045f3d500e708b457d71173a7c1b
+runner_sha256: 431e3d0c62216cd7c44c3ab906cb53c3a43512b3aa30c0dcd84f50e2d3910a54
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 ======================================================================
 Persistent-record instrument construction (Stinespring V) runner
 ======================================================================
 
-Verifies the Stinespring isometry V: H_sys -> H_sys (x) H_record
+Verifies the Stinespring isometry V: H_sys -> H_record (x) H_sys
 for multiple framework-side measurement-instrument families on the
 qubit-lattice substrate. Total probability preservation V^dagger V = 1
 is checked by explicit block-matrix algebra, NOT inherited from
@@ -21,8 +21,8 @@ standard QM.
   [PASS] T1.a: Sigma_r K_r^dagger K_r = 1_sys (symbolic)
   [PASS] T1.b: V row-blocks match K_r (R=2 blocks of size 2x2)
   [PASS] T1.c: V^dagger V = 1_sys (explicit block matrix)
-  [PASS] T1.d: V|0> = |0> (x) |0> (single record component)
-  [PASS] T1.e: V|1> = |1> (x) |1> (single record component)
+  [PASS] T1.d: V|0> = |0_record> (x) |0_sys> (single record component)
+  [PASS] T1.e: V|1> = |1_record> (x) |1_sys> (single record component)
 
 [T2] Single qubit projective measurement in rotated basis (symbolic t)
   [PASS] T2.a: Sigma_r K_r^dagger K_r = 1_sys (symbolic)

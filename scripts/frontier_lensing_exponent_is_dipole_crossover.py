@@ -32,17 +32,55 @@ monopole-suppressed susceptibility, not the geometric ray deflection.
 prints TOTAL: PASS=N FAIL=0
 """
 
-import sys
 import os
+import json
+from pathlib import Path
+import sys
 import numpy as np
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
 from kubo_continuum_limit import BETA, K_PER_H, PW_PHYS, SRC_LAYER_FRAC, grow
 from lensing_adjoint_kernel_probe import build_free_and_adjoint
 from lensing_adjoint_kernel_reduced_model import signed_edge_coefficients, exact_edge_sum, log_slope
+import runner_cache as rc
 
 results = []
 def check(name, ok): results.append((name, bool(ok)))
+
+ROOT = Path(__file__).resolve().parents[1]
+H025_RUNNER = "scripts/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.py"
+H025_MANIFEST_RUNNER = "scripts/frontier_lensing_h025_source_packet_manifest_2026_06_09.py"
+H025_OUTPUT = ROOT / "outputs/lensing_h025_edge_kernel_certificate_2026_06_08.json"
+
+
+def cache_green(runner_path, total_marker):
+    cache_path, header, text = rc.load_cache(runner_path)
+    return (
+        rc.cache_status(runner_path) == "fresh"
+        and header is not None
+        and header.get("status") == "ok"
+        and str(header.get("exit_code")) == "0"
+        and text is not None
+        and total_marker in text
+        and cache_path.exists()
+    )
+
+
+def h025_json_green():
+    try:
+        data = json.loads(H025_OUTPUT.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return False
+    summary = data.get("summary", {})
+    setup = data.get("setup", {})
+    return (
+        summary.get("pass") == 12
+        and summary.get("fail") == 0
+        and setup.get("H") == 0.25
+        and setup.get("NL") == 60
+        and setup.get("n_edges_streamed", 0) > 60_000_000
+        and abs(data.get("small_fit", {}).get("slope", 0.0) + 1.4335) < 1.0e-3
+    )
 
 H = 0.6
 T_PHYS = 15.0
@@ -89,6 +127,12 @@ def alpha_abs(b):
 sl_abs = log_slope([30., 45., 60., 80.], [alpha_abs(b) for b in [30., 45., 60., 80.]])[0]
 check("T5 CONTROL: non-cancelling kernel |c_e| gives large-b -> -1 (1/b) (got %.2f)" % sl_abs,
       abs(sl_abs + 1.0) < 0.1)
+
+# --- T6: fine-H source packet is pinned without rerunning the expensive certificate ---
+check("T6 fine-H edge-kernel cache and JSON are present, fresh, and green",
+      cache_green(H025_RUNNER, "TOTAL: PASS=12 FAIL=0") and h025_json_green())
+check("T6b fine-H source-packet manifest cache is present, fresh, and green",
+      cache_green(H025_MANIFEST_RUNNER, "TOTAL: PASS=5 FAIL=0"))
 
 n_pass = sum(1 for _, ok in results if ok)
 n_fail = sum(1 for _, ok in results if not ok)

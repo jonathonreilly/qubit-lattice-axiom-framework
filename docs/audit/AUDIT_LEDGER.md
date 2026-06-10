@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 824 |
+| **retained_bounded** | 825 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 40 |
-| unaudited | 1361 |
+| unaudited | 1360 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1270 |
+| `audited_clean` | 1271 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1677 |
+| `unaudited` | 1676 |
 
 | claim_type | count |
 |---|---:|
@@ -117,7 +117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1071 | 37.07 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 922 | 35.85 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1166 | 35.69 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1165 | 35.69 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 882 | 34.79 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 705 | 32.96 | `unaudited` | unaudited |
@@ -498,6 +498,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6920,6 +6921,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** With the cited pointwise covariance limit, the identity ||S_a(p)||_F^2 = 4/Delta_a(p) and Delta_a(p) >= m^2 give |fbar(p) S_a(p) g(p)| <= (2/m)|f(p)||g(p)|, so dominated convergence yields smeared covariance convergence, after which Pfaffian polynomial continuity yields fixed finite Schwinger convergence.  _(class `A`)_
 - **chain closes:** True — The one-hop cited authority is retained_bounded and supplies the covariance formula, fixed-momentum continuum limit, and taste multiplicity input. The remaining steps are standard algebraic/analytic closure: Clifford/Frobenius norm identity, a uniform Schwartz-integrable envelope, dominated convergence, and finite Pfaffian polynomial continuity.
 - **rationale:** The displayed Frobenius identity checks independently from the Clifford relation: S_a S_a^dagger = I/Delta_a, hence ||S_a||_F^2 = 4/Delta_a for a 4-spin block. Since Delta_a >= m^2, the claimed (2/m)|f||g| domination is valid and integrable for Schwartz tests, so the pointwise limit from the retained_bounded covariance packet upgrades to smeared convergence. Pfaffian/Wick maps for fixed finite fermionic Gaussian moments are finite polynomials in covariance entries, so the finite Schwinger hierarchy convergence follows within the explicitly bounded Gaussian/quasi-free scope. The runner performs substantive algebraic and finite-grid checks, including an independent hypercube Clifford-spectrum multiplicity check, and uses no external comparator or tuned input value.
+- **auditor confidence:** high
+
+### `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`FREE_SCALAR_POINT_SPLIT_WARD_SEAGULL_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/FREE_SCALAR_POINT_SPLIT_WARD_SEAGULL_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded free-scalar nearest-neighbor lattice Ward identity and naive-current seagull residual diagnostic in d=4 random-momentum tests, with explicit guardrails against broader framework closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-053235-6d4ef5cb78-free_scalar_point_split_ward`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For G^-1(p)=m^2+sum_mu(2 sin(p_mu/2))^2, qhat_mu V^mu(p,q)=G^-1(p+q)-G^-1(p) with qhat_mu=2 sin(q_mu/2) and V^mu=2 sin(p_mu+q_mu/2).  _(class `A`)_
+- **chain closes:** True — Per component, [2 sin((p_mu+q_mu)/2)]^2-[2 sin(p_mu/2)]^2=4 sin(q_mu/2) sin(p_mu+q_mu/2)=qhat_mu V^mu, and the mass term cancels. The naive residual sign follows by subtracting the point-split identity from qhat dot V_naive.
+- **rationale:** The load-bearing identity is a direct trigonometric algebraic closure over the definitions stated in the packet, not a renaming or tuned numerical match. The runner source genuinely samples random momenta and computes both the Ward residual and the naive-current seagull residual, rather than printing hard-coded pass values. The source note's scope is narrow and its guardrails explicitly exclude full stress-tensor, cubic-seagull, Belinfante, diffeomorphism, and gravity-sign closure.
 - **auditor confidence:** high
 
 ### `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28`

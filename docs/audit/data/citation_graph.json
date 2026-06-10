@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08",
         "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
         "color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09",
         "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
         "dimension_selection_lower_bound_bridge_v2_2026-05-20",
-        "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
+        "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+        "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "76d08d70767c844c06877a409071ec42b400b3cacd81821e84d14dfe6259fc04",
+      "note_hash": "ed8b74ba2aa6d93ec6e9156aa68bb6b000560eafee371ea9aa6e6374bbec55cb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

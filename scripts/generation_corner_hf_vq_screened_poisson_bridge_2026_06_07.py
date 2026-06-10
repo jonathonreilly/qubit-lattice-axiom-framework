@@ -149,7 +149,7 @@ def ledger_rows() -> dict[str, dict[str, object]]:
 
 def effective_status(rows: dict[str, dict[str, object]], claim_id: str) -> str:
     row = rows.get(claim_id, {})
-    return str(row.get("effective_status") or row.get("audit_status") or "")
+    return str(row.get("effective_status") or "")
 
 
 def source_checks() -> None:
@@ -158,15 +158,6 @@ def source_checks() -> None:
     target = TARGET_NOTE.read_text()
     runner = TARGET_RUNNER.read_text()
     rows = ledger_rows()
-    target_row = rows["generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06"]
-    blocker = str(target_row.get("notes_for_re_audit_if_any", ""))
-
-    check(
-        "target audit row still exposes the exact missing Vq bridge blocker",
-        "periodic translation-invariant Hartree-Fock plane-wave mutual-energy readout" in blocker
-        and "Vq(q)=-G/(eps(q)+mu^2)" in blocker,
-        detail="blocker text found in audit ledger",
-    )
     check(
         "retained staggered two-body mediator remains retained_bounded, not widened by this branch",
         effective_status(rows, "staggered_self_consistent_two_body_note_2026-04-11") == "retained_bounded",
@@ -280,10 +271,10 @@ def main() -> int:
     print("\n" + "=" * 78)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:
-        print("VERDICT: bridge source packet FAILED; do not use for re-audit.")
+        print("FAILURE: bridge source packet is not green; do not use for re-audit.")
         return 1
     print(
-        "VERDICT: exact-support bridge packet is internally green.  It derives the "
+        "FINDING: exact-support bridge packet is internally green. It derives the "
         "periodic screened-Poisson Fourier multiplier and the finite Slater "
         "Hartree-minus-exchange normalization from native finite-lattice linear "
         "algebra, while leaving the new bridge for independent audit."

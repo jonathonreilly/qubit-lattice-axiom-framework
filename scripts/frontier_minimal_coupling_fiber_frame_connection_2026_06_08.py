@@ -54,8 +54,10 @@ WHAT IS DERIVED HERE (exact algebra using the current-surface bridge):
     difference does not.
   - Closed-loop holonomies (plaquette traces) are gauge invariant; open Wilson
     lines are not -- the gauge-invariant observable content is the closed loops.
-  - Leading-order U_mu = exp(i eps A_mu) reproduces D_mu = d_mu + i A_mu (minimal
-    coupling form), a consistency check -- NO continuum limit is claimed.
+  - Leading-order U_mu = exp(i eps A_mu) gives the finite-link expansion
+    (D_mu psi)(x) = (psi(x+mu)-psi(x)) + i eps A_mu(x) psi(x+mu) + O(eps^2),
+    the normalized minimal-coupling form after dividing by eps.  This is a
+    consistency check -- NO continuum limit is claimed.
   - The U(1) (hypercharge-like) factor has the same abelian transporter law.
 
 WHAT IS NOT CLAIMED:
@@ -333,11 +335,12 @@ check("flat connection U=I has trivial holonomy (Tr U_p = N_f = 3)",
       abs(np.trace(plaquette(I_link, s0, 0, 1)) - NF) < ATOL)
 
 # ---------------------------------------------------------------------------
-# Part 6.  Leading-order minimal coupling: U = exp(i eps A) -> D = d + i A.
+# Part 6.  Leading-order minimal coupling:
+# U = exp(i eps A) -> D psi = d psi + i eps A psi(x+mu) + O(eps^2).
 #   Consistency check ONLY -- no continuum limit, no dynamics claimed.
 # ---------------------------------------------------------------------------
 print("=" * 78)
-print("Part 6  U_mu = exp(i eps A_mu) gives D_mu = d_mu + i A_mu at leading order")
+print("Part 6  U_mu = exp(i eps A_mu) gives D_mu psi = d_mu psi + i eps A_mu psi(x+mu)")
 print("=" * 78)
 
 A = {(s, mu): sum(rng.normal() * li for li in lam)        # Hermitian, traceless
@@ -355,12 +358,11 @@ for eps in (1e-2, 1e-3, 1e-4):
             worst = max(worst, np.linalg.norm(exact - lead))
     errs.append((eps, worst))
 # Residual is O(eps^2): the log-log slope of residual vs eps must be ~2.
-# (A first-order error d_mu = d_mu + i A_mu would leave an O(eps^2) remainder;
-#  any non-minimal-coupling truncation would show slope != 2.)
+# Any non-minimal first-order truncation would spoil the O(eps^2) residual.
 es = np.array([e for e, _ in errs])
 ws = np.array([w for _, w in errs])
 slope = float(np.polyfit(np.log(es), np.log(ws), 1)[0])
-check("minimal-coupling residual is O(eps^2) (D_mu = d_mu + i A_mu at O(eps))",
+check("minimal-coupling residual is O(eps^2) for D_mu psi = d_mu psi + i eps A_mu psi(x+mu)",
       abs(slope - 2.0) < 0.02,
       f"log-log slope = {slope:.4f} (== 2 confirms first-order minimal coupling)")
 

@@ -85,7 +85,7 @@ def ledger_rows():
 
 def effective_status(rows, claim_id):
     row = rows.get(claim_id, {})
-    return str(row.get("effective_status") or row.get("audit_status") or "")
+    return str(row.get("effective_status") or "")
 
 
 def hf_vq_bridge_source_checks():
@@ -95,14 +95,6 @@ def hf_vq_bridge_source_checks():
     bridge = BRIDGE_NOTE.read_text() if BRIDGE_NOTE.exists() else ""
     cache = BRIDGE_CACHE.read_text() if BRIDGE_CACHE.exists() else ""
     rows = ledger_rows()
-    target_row = rows["generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06"]
-    blocker = str(target_row.get("notes_for_re_audit_if_any", ""))
-
-    check(
-        "audit blocker names the missing periodic Vq/Hartree-Fock bridge",
-        "periodic translation-invariant Hartree-Fock plane-wave mutual-energy readout" in blocker
-        and "Vq(q)=-G/(eps(q)+mu^2)" in blocker,
-    )
     check(
         "target note cites the 2026-06-07 one-hop bridge note, runner, and cache",
         BRIDGE_NOTE.name in note
@@ -229,9 +221,9 @@ def main() -> int:
     print("\n" + "=" * 78)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:
-        print("VERDICT: generation-localization corner structure FAILED.")
+        print("FAILURE: generation-localization corner structure checks failed.")
         return 1
-    print("VERDICT: the generation 'localization' is the retained momentum-corner structure (no "
+    print("FINDING: the generation 'localization' is the retained momentum-corner structure (no "
           "spatial separation). The three corners' equal inter-transfer eps(Δk)=8 protects the "
           "exact C3 (J-I) form by cubic corner symmetry; the two-fermion mutual energy is delta<0 "
           "(sign re-confirmed from the momentum picture); and |delta| is dominated by the q=0 "

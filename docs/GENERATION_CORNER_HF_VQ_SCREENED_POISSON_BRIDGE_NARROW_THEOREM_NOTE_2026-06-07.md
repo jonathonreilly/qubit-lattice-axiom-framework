@@ -1,7 +1,7 @@
 # Generation Corner Hartree-Fock `Vq` Screened-Poisson Bridge - Narrow Theorem
 
 **Date:** 2026-06-07
-**Claim type:** positive_theorem source packet (exact support; audit pending)
+**Type:** positive_theorem source packet (exact support; audit pending)
 **Status:** exact-support source-note proposal; independent audit required.
 This source-side note does not write or imply an audit verdict.
 **Primary runner:** [`scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py`](../scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py)
@@ -11,7 +11,7 @@ This source-side note does not write or imply an audit verdict.
 
 This note is a one-hop source bridge for
 `GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md`.
-The current audit blocker asks for a retained-grade authority deriving the periodic
+The target repair asks for a retained-grade authority deriving the periodic
 translation-invariant Hartree-Fock plane-wave mutual-energy readout
 
 ```text
@@ -218,7 +218,7 @@ So the dependency role is precise:
 PYTHONPATH=scripts python3 scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py
 ```
 
-The runner checks the current audit blocker/dependency surface, verifies Fourier
+The runner checks the retained dependency surface and source-packet links, verifies Fourier
 diagonalization on finite periodic lattices, reconstructs the dense screened kernel from the
 Fourier multiplier, and compares dense Hartree-minus-exchange values with the closed formula for
 all three corner pairs.

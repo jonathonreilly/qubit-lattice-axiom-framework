@@ -110,13 +110,20 @@ def source_anchor_checks() -> None:
         and "one-hop bounded support packets" in flat(wrapper),
     )
     report(
+        "wrapper records native stable-orbit import retirement",
+        "native stable-orbit import retirement" in wrapper
+        and "U_stable = {d : d <= 3}" in wrapper
+        and "full Bertrand closed-orbit theorem as an imported premise" in wrapper,
+    )
+    report(
         "lower note remains finite lower-bound support",
         "lower-bound support only" in lower
         and "not a unique-dimension\ntheorem" in lower,
     )
     report(
-        "Bertrand support remains bounded",
-        "does not retire the Bertrand theorem import completely" in bertrand
+        "stable support keeps full closed-orbit boundary",
+        "does not prove the full Bertrand closed-orbit theorem" in bertrand
+        and "not consumed by the current finite-set composition" in bertrand
         and "not claim a complete framework-internal proof" in bertrand,
     )
     report(
@@ -141,19 +148,19 @@ def source_anchor_checks() -> None:
 def composition_checks() -> None:
     lower_set = {3, 4, 5}
     checked = set(range(1, 9))
-    bertrand_upper = {d for d in checked if d <= 3}
+    stable_upper = {d for d in checked if d <= 3}
     atomic_weak_upper = {d for d in checked if d <= 4}
     atomic_strict = {3}
 
     report("lower support set is {3,4,5}", lower_set == {3, 4, 5})
-    report("Bertrand upper set is d<=3", bertrand_upper == {1, 2, 3})
+    report("native stable upper set is d<=3", stable_upper == {1, 2, 3})
     report("weak atomic upper set is d<=4", atomic_weak_upper == {1, 2, 3, 4})
-    report("lower intersect Bertrand is {3}", lower_set & bertrand_upper == {3})
+    report("lower intersect native stable edge is {3}", lower_set & stable_upper == {3})
     report("lower intersect weak atomic is {3,4}", lower_set & atomic_weak_upper == {3, 4})
     report("lower intersect strict atomic spectrum is {3}", lower_set & atomic_strict == {3})
     report(
-        "Bertrand route is decisive under weak atomic scope",
-        (lower_set & bertrand_upper) == {3}
+        "native stable route is decisive under weak atomic scope",
+        (lower_set & stable_upper) == {3}
         and (lower_set & atomic_weak_upper) != {3},
     )
     report("atomic route is compatible with selected d=3", 3 in (lower_set & atomic_weak_upper))
@@ -163,7 +170,7 @@ def cache_checks() -> None:
     bertrand_cache = text("bertrand_cache")
     coulomb_cache = text("coulomb_cache")
     gate_cache = text("gate_cache")
-    report("Bertrand cache certifies PASS=8", "SCORECARD: PASS=8" in bertrand_cache)
+    report("stable-orbit cache certifies PASS=8", "SCORECARD: PASS=8" in bertrand_cache)
     report("Coulomb cache certifies PASS=53 FAIL=0", "SUMMARY: PASS=53 FAIL=0" in coulomb_cache)
     report("D3 gate cache certifies PASS=35 FAIL=0", "SUMMARY: PASS=35 FAIL=0" in gate_cache)
 

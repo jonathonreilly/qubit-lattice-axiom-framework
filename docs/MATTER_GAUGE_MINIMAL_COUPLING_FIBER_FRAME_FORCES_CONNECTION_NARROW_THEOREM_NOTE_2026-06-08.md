@@ -1,7 +1,7 @@
 # Matter-Gauge Minimal Coupling from Local Fibre-Frame Redundancy
 
 **Date:** 2026-06-08
-**Claim type:** bounded_theorem
+**Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome.
 **Primary runner:**
@@ -143,9 +143,11 @@ exactly what repairs the difference operator.
 Closed-loop holonomies (plaquette traces `Tr U_p`) are gauge invariant; open Wilson
 lines `Tr U_μ(x)` are not *(Runner Part 5)* — the physical, registered content is the
 **closed-loop** data. Writing `U_μ = exp(iε A_μ)` with `A_μ` Hermitian (algebra-valued
-connection), the covariant difference reduces at leading order to
-`D_μ = ∂_μ^{lat} + i A_μ` — the **minimal-coupling form** `∂_μ + ig A_μ` — with the
-residual confirmed `O(ε²)` (log–log slope `2.00`) *(Runner Part 6)*. The same argument
+connection), the unscaled covariant difference has the finite-link expansion
+`(D_μψ)(x) = (ψ(x+μ)-ψ(x)) + iε A_μ(x)ψ(x+μ) + O(ε²)` — equivalently, after
+dividing by `ε`, the standard first-order **minimal-coupling form** on the normalized
+lattice derivative — with the residual confirmed `O(ε²)` (log–log slope `2.00`)
+*(Runner Part 6)*. The same argument
 with `g(x) = e^{iθ(x)}I` forces an **abelian (hypercharge-like) connection** for the
 `U(1)` factor *(Runner Part 7)*.
 
@@ -158,7 +160,9 @@ with `g(x) = e^{iθ(x)}I` forces an **abelian (hypercharge-like) connection** fo
 - Transporter law **unique** — four wrong site-assignments all break covariance.
 - `D_μ` covariant, naive `∂_μ` not.
 - Plaquette holonomy gauge-invariant, open line not; flat connection trivial holonomy.
-- Leading-order minimal coupling `D_μ = ∂_μ + iA_μ`, residual `O(ε²)` (slope `2.00`).
+- Leading-order finite-link minimal coupling
+  `(D_μψ)(x) = (ψ(x+μ)-ψ(x)) + iε A_μ(x)ψ(x+μ) + O(ε²)`, residual `O(ε²)`
+  (slope `2.00`).
 - `U(1)` factor forces an abelian connection by the same argument.
 
 ## What this closes
@@ -179,8 +183,8 @@ with `g(x) = e^{iθ(x)}I` forces an **abelian (hypercharge-like) connection** fo
 - **No gauge action / dynamics for `U_μ`.** This is pure kinematics: `U_μ` here is a
   background connection, not a dynamical field with a Yang–Mills/Wilson/heat-kernel
   action. Deriving that action is the separate gauge-action target.
-- **No continuum limit, no coupling value.** Part 6 is a leading-order consistency
-  check, not an `a→0` statement; `g` and `g_bare=1` are untouched.
+- **No continuum limit, no coupling value.** Part 6 is a leading-order finite-link
+  consistency check, not an `a→0` statement; `g` and `g_bare=1` are untouched.
 - **No physical `SU(3)_c` identification beyond the algebraic fibre** — deferred exactly
   as in `graph_first_su3_integration_note`; the abelian factor remains "hypercharge-like"
   pending the anomaly-complete identification.

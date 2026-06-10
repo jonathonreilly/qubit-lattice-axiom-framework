@@ -1,19 +1,19 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1484,
+    "bounded_theorem": 1491,
     "decoration": 54,
     "meta": 324,
     "no_go": 329,
-    "open_gate": 145,
+    "open_gate": 144,
     "positive_theorem": 776
   },
   "cycle_examples": [],
   "cycles_detected": 0,
   "effective_status_counts": {
-    "audited_conditional": 34,
+    "audited_conditional": 29,
     "audited_failed": 1,
     "audited_numerical_match": 15,
-    "audited_renaming": 34,
+    "audited_renaming": 33,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
     "decoration_under_cl3_color_automorphism_theorem": 6,
@@ -45,10 +45,10 @@
     "meta": 316,
     "open_gate": 40,
     "retained": 213,
-    "retained_bounded": 834,
+    "retained_bounded": 831,
     "retained_no_go": 208,
     "retained_pending_chain": 17,
-    "unaudited": 1350
+    "unaudited": 1365
   },
   "retained_pending_chain_count": 17,
   "retained_pending_chain_examples": [

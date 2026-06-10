@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 548,
     "high": 439,
-    "leaf": 1413,
-    "medium": 849
+    "leaf": 1412,
+    "medium": 850
   },
   "flagship_signal_used": false,
   "node_count": 3249,
@@ -79,8 +79,8 @@
     {
       "claim_id": "native_gauge_closure_note",
       "criticality": "critical",
-      "load_bearing_score": 39.315,
-      "transitive_descendants": 1273
+      "load_bearing_score": 39.314,
+      "transitive_descendants": 1272
     },
     {
       "claim_id": "yt_ward_identity_derivation_theorem",

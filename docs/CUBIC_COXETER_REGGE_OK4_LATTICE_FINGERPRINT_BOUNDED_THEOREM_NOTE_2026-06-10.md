@@ -64,9 +64,11 @@ reproduced — F1).
    chain orientation; allowed by the complex's symmetry) are **absent**: `|c₂|, |c₃| < 2×10⁻⁸`,
    `face+ = face−`, `body+ = body−`. The on-shell `O(k⁴)` anisotropy has **full cubic (B₃) symmetry,
    more symmetry than the complex itself**; `c₀ = c₁ = −1/12`.
-7. **No other branch near the cone (F9).** A wide rank-drop scan over `E²/k² ∈ [0.3, 2.5]` finds no
-   additional on-shell branch. In particular the continuum trace-comparator channel's third
-   on-shell null is **not** realized as an independent lattice branch (diagnostic: the
+7. **No other branch near the cone in the three scanned F9 directions.** A wide rank-drop scan
+   over `E²/k² ∈ [0.3, 2.5]` in the axis, face-diagonal, and one random spatial
+   direction finds no additional on-shell branch. In those scanned directions, the
+   continuum trace-comparator channel's third on-shell null is **not** realized as an
+   independent lattice branch (diagnostic: the
    exactly-decoupled fifth branch carries an `O(1)` share of the on-shell trace class — metric
    share 0.58, class overlap 0.59 mod gauge).
 8. **Projection-convention boundary, numerically pinned (F10, F12).** The TT-block roots of the
@@ -103,7 +105,8 @@ alternative discretization, **not a near-term test**.
   the on-shell graviton content near the cone is a machine-degenerate TT pair with real
   dispersion `ω² = k²[1 − k²(1+Σn̂ₐ⁴)/12] + O(k⁶)` (verified to `≤ 10⁻⁷` at 15 sampled
   directions, closed form consistent across all of them); the anisotropy is B₃-symmetric with
-  spread `1/18`; no other on-shell branch exists in `E²/k² ∈ [0.3, 2.5]`; the projected-block
+  spread `1/18`; no other on-shell branch appears in the F9 three-direction scan over
+  `E²/k² ∈ [0.3, 2.5]`; the projected-block
   `O(k⁴)` content is convention-tagged and machine-distinguished from the physical one. All with
   the F0/F1 faithfulness gates re-certifying the complex in-runner.
 - **Is not:** does **not** prove the closed form symbolically (it is verified at 15 sampled
@@ -134,18 +137,20 @@ alternative discretization, **not a near-term test**.
   does not close on `C4`; a complete enumeration of `S₄×inversion`-invariant 8-index weight
   tensors was not attempted. The raw table stands in its place, per the brief.
 - **Trace-channel reading.** "The continuum trace third null is not realized as a lattice branch"
-  is a statement about rank drops of the full form near the cone (machine scan); the accompanying
-  fifth-branch class diagnostic (overlaps 0.58/0.59) is descriptive, not a theorem.
+  is a statement about rank drops of the full form near the cone only in the F9
+  three-direction machine scan; the accompanying fifth-branch class diagnostic
+  (overlaps 0.58/0.59) is descriptive, not a theorem.
 - Literature (Regge 1961; Roček–Williams lattice graviton; Cheeger–Müller–Schrader;
   gravitational-wave dispersion-bound phenomenology for the units remark) is context only; every
   number is computed from the complex's geometry in-runner.
 
 ## No-Go Discipline Gate (scoped negatives only)
 
-This note contains two negative statements: no additional rank-drop branch in the scanned window
-`E²/k² ∈ [0.3, 2.5]`, and non-closure of the particular 8-element curvature-contraction basis
-tried for the projected off-shell `C4` table. It does **not** assert a universal no-go, a missing
-primitive, a required new axiom, or exhaustion of all invariant bases.
+This note contains two negative statements: no additional rank-drop branch in the three scanned F9
+spatial directions over `E²/k² ∈ [0.3, 2.5]`, and non-closure of the particular 8-element
+curvature-contraction basis tried for the projected off-shell `C4` table. It does **not** assert a
+universal no-go, a missing primitive, a required new axiom, or exhaustion of all directions,
+branches, or invariant bases.
 
 - **N1 alternatives:** symbolic branch analysis, wider energy-window scans, complex off-axis root
   searches, a complete `S₄×inversion` invariant-tensor basis, and higher-order/nonlinear closure

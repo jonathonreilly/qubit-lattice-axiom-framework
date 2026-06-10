@@ -37,6 +37,15 @@ follows from the current surfaces.
 
 ## Existing Surfaces
 
+**Load-bearing one-hop authorities for re-audit:** the finite lower-bound
+packet is [`DIMENSION_SELECTION_NOTE.md`](DIMENSION_SELECTION_NOTE.md); the
+native stable-orbit upper edge is
+[`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md);
+the weaker atomic companion is
+[`COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md).
+Legacy wrapper filenames below are context for the route history, not
+additional load-bearing authorities for this gate.
+
 ### Lower-bound surface
 
 `DIMENSION_SELECTION_NOTE.md` says the current bounded row is lower-bound

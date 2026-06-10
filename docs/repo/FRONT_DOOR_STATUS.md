@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3128 |
-| Applied audit verdicts | 1423 |
-| Retained-grade rows, including boxed decorations | 1288 |
+| Applied audit verdicts | 1424 |
+| Retained-grade rows, including boxed decorations | 1289 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 818 |
+| Retained bounded rows | 819 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1387 |
+| Unaudited rows | 1386 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 34 |
 | Audited renaming rows | 34 |
@@ -33,19 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1389 |
-| Ready rows | 3 |
+| Total pending rows | 1388 |
+| Ready rows | 2 |
 | Cycle-break targets | 0 |
 | Critical pending | 283 |
 | High pending | 279 |
-| Medium pending | 405 |
+| Medium pending | 404 |
 | Leaf pending | 422 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -78,8 +77,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3265 |
 | Critical nodes | 486 |
 | High nodes | 485 |
-| Medium nodes | 881 |
-| Leaf nodes | 1413 |
+| Medium nodes | 880 |
+| Leaf nodes | 1414 |
 
 Top load-bearing rows by graph score:
 

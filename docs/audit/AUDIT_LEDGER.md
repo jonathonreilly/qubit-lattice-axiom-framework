@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 818 |
+| **retained_bounded** | 819 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1387 |
+| unaudited | 1386 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1261 |
+| `audited_clean` | 1262 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1703 |
+| `unaudited` | 1702 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 483 |
 | `high` | 481 |
-| `medium` | 840 |
-| `leaf` | 1324 |
+| `medium` | 839 |
+| `leaf` | 1325 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1285,6 +1285,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `translation_abelian_composition_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -18700,6 +18701,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner checks the finite algebra and arithmetic after these conventions are fixed.  _(class `A`)_
 - **chain closes:** True — The bounded certificate closes only after the source's explicit Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula are fixed as standard inputs. It does not derive Yang-Mills topology from Cl(3)/Z3 or close global smooth-bundle/existence theorems.
 - **rationale:** Clean only as a bounded finite certificate, not as a derivation of Yang-Mills topology from Cl(3)/Z3. The note makes the Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula explicit fixed inputs rather than hidden imports. Fresh-context independent checks confirmed *^2=1 and the Bogomolny inequality algebra, the BPST substitution gives 2*pi^2 * 4 = 8*pi^2, and the listed twist examples give k/N as claimed.
+- **auditor confidence:** high
+
+### `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 bilinear staggered two-step sector for the supplied/declared symbol E_d(p): explicit exponential kernel bound for eta < arcsinh(m), exact sharpness in d=1, Z^3 axis sharpness as numerical confirmation, support-family/tail translation, and failure of the strict R <= 2 F5 form by range-4 hops.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-214054-7ab2a5b8e1-transfer_matrix_log_quasiloc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the shifted strip, Re w >= m^2 - sinh^2 eta > 0 and |arcsinh(sqrt(w))| <= C_d(eta,m), so shifting the Fourier contour in a max-coordinate direction gives |h(z)| <= a_tau^{-1} C_d(eta,m) e^{-eta ||z||_inf}.  _(class `A`)_
+- **chain closes:** True — The strip analyticity, contour-shift bound, d=1 branch-point obstruction, and support-family norm translation close from the retained two-step symbol input, blocked-time normalization, and retained tensor-product pair-norm convention. Gauged/interacting locality and a formal d=3 lower-bound proof are explicitly outside the audited theorem scope.
+- **rationale:** The load-bearing analytic inequalities are correct and give the advertised prefactor and exponential rate by a standard torus contour shift, while the d=1 branch-point derivative proves no faster exponential rate. The runner source performs substantive computations rather than printing constants: it checks the transfer-symbol anchor, strip bounds, kernels, tails, range-4 coefficients, and falsification legs. An independent Gauss-Legendre quadrature reproduces the range-4 coefficients at m=0.3, including h(4,0,0) = -0.0055630045 and h(2,2,0) = -0.0104390687, supporting the strict R <= 2 negative finding.
 - **auditor confidence:** high
 
 ### `translation_abelian_composition_theorem_note_2026-05-02`

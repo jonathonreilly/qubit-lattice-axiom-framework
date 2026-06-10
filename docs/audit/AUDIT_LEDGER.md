@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 816 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1395 |
+| unaudited | 1394 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -46,6 +46,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
 | `decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | 1 |
+| `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | 1 |
 | `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
@@ -63,16 +64,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1257 |
 | `audited_conditional` | 31 |
-| `audited_decoration` | 53 |
+| `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1711 |
+| `unaudited` | 1710 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1501 |
-| `decoration` | 54 |
+| `bounded_theorem` | 1500 |
+| `decoration` | 55 |
 | `meta` | 324 |
 | `no_go` | 329 |
 | `open_gate` | 144 |
@@ -82,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 483 |
 | `high` | 481 |
-| `medium` | 841 |
-| `leaf` | 1323 |
+| `medium` | 842 |
+| `leaf` | 1322 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1457,6 +1458,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `momentum_charge_commute_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
+| `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | decoration | ~~audited_decoration~~ | `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | cross_family | codex-gpt-5.5 | A | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -13411,6 +13413,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Because the record basis is orthonormal, W†W = sum_{r,s}(K_r†K_s)<r|s> = sum_r K_r†K_r, so the isometry condition gives the Kraus resolution.  _(class `A`)_
 - **chain closes:** True — The displayed identities close from the stated finite-dimensional isometry premise and orthonormal record basis. The note explicitly excludes deriving W from persistent-record dynamics, so that bridge is not needed for this bounded claim.
 - **rationale:** The load-bearing step is a direct algebraic expansion of an assumed finite isometry in an orthonormal record basis, not a definition substitution or external comparator check. The CP, trace-preservation, and selective-normalization formulas follow from the resulting Kraus resolution in finite dimensions. The runner source genuinely constructs a seeded finite isometry, extracts blocks, and checks the relevant matrix identities and positivity conditions; it does not import or hard-code the contested persistent-record bridge.
+- **auditor confidence:** high
+
+### `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Finite-dimensional conditional construction: given a finite qubit-region Kraus family satisfying Σ_r K_r†K_r = 𝟙, the record-first block-column V: H_sys -> H_record ⊗ H_sys is an isometry.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-211629-1e3cb3f490-persistent_record_instrument`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the block-stacked matrix V, V†V = Σ_r K_r†K_r, which equals 𝟙_sys by the Kraus resolution-of-identity hypothesis.  _(class `A`)_
+- **chain closes:** True — The index calculation for the block-column matrix is correct: reindexing rows by record label and system basis gives exactly Σ_r K_r†K_r with no missing factor or convention change. The only nonstandard input is the existence/resolution identity for the Kraus family, supplied by the cited retained-grade Kraus-Choi authority.
+- **rationale:** Independent algebra confirms the displayed matrix identities, shapes, tensor-order convention, and bilinear norm-preservation statement. The runner source performs real symbolic and numerical checks rather than merely printing constants, but all load-bearing checks are class-A algebra over the supplied Kraus-family premise. Since the note adds a standard block-matrix corollary to the upstream Kraus-Choi representation plus accepted finite-dimensional linear algebra, with no external comparator or new physical bridge, it is decoration rather than an independent theorem row.
+- **decoration parent:** `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`
 - **auditor confidence:** high
 
 ### `persistent_record_matched_compare_note`

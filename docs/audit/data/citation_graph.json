@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08",
         "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
         "acphilambda_hw_complementation_equivariance_support_note_2026-06-09",
         "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08",
         "blocking_isometry_reduces_to_pointer_frame_admission_narrow_theorem_note_2026-06-09",
-        "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08"
+        "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08",
+        "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c3e37bedc6d507d342e29e30fe2319af77d2382feef86d613753d0d25ec70d59",
+      "note_hash": "0c145548638d7ce402d04c7d94c3cc37de1d60d8535702d3c07756f224ba3cc4",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -106031,7 +106031,7 @@
       "positive_theorem": 619
     },
     "edge_count": 12002,
-    "leaf_count": 1078,
+    "leaf_count": 1077,
     "node_count": 3249,
     "root_count": 1045,
     "runners_with_path": 2831

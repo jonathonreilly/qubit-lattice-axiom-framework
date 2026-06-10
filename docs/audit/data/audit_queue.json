@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 338,
     "high": 240,
-    "leaf": 427,
+    "leaf": 426,
     "medium": 375
   },
   "cycle_break_target_count": 0,
@@ -17477,28 +17477,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "acphilambda_hw_complementation_equivariance_support_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -17588,6 +17566,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/chirality_gate_two_gates_dirac_vs_generation_2026_06_08.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
+        "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+        "minimal_axioms",
+        "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
+        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py",
       "transitive_descendants": 16
     },
     {
@@ -29085,7 +29091,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
+      "claim_id": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -29093,20 +29099,18 @@
       "criticality_rank": 0,
       "cross_confirmation_status": null,
       "deps": [
-        "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
-        "chsh_structural_bound_narrow_theorem_note_2026-05-17",
-        "minimal_axioms",
-        "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
-        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 0.0,
-      "note_path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
+      "note_path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py",
+      "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
       "transitive_descendants": 0
     },
     {
@@ -33503,32 +33507,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
       "transitive_descendants": 0
     },
     {
@@ -41468,5 +41446,5 @@
     }
   ],
   "ready_count": 32,
-  "total_pending": 1380
+  "total_pending": 1379
 }

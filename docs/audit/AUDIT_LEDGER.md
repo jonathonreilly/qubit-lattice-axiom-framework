@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 814 |
+| **retained_bounded** | 815 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 38 |
-| unaudited | 1378 |
+| unaudited | 1377 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1257 |
+| `audited_clean` | 1258 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1694 |
+| `unaudited` | 1693 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 814 |
-| `leaf` | 1317 |
+| `medium` | 815 |
+| `leaf` | 1316 |
 
 - **Retained pending chain closure:** 15
 - **Citation cycles detected:** 0
@@ -100,7 +100,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1446 | 109.50 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1447 | 109.50 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 778 | 61.10 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1308 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
@@ -1363,6 +1363,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -19769,6 +19770,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** As screening is reduced across the five-value mu^2 grid, the fitted clean-attractive distance exponent softens monotonically from about -3.315 to -1.871, approaching Newton-compatible d^-2 behavior while the mutual-attraction channel remains present.  _(class `C`)_
 - **chain closes:** True — The supplied primary runner and helper source instantiate the open Wilson lattice, Poisson solve, Wilson Hamiltonian evolution, mutual acceleration observable, clean/attract labeling, and log-log power-law fits rather than merely printing constants. The completed cache reports 12/12 clean attractive rows at each mu^2 and the quoted monotone exponent softening.
 - **rationale:** The load-bearing claim is bounded to a finite computed lattice surface and is directly supported by the supplied runner cache. The helper path used by the primary runner calls genuine computational routines; the hard-coded comparison table in the helper's own main is not on the primary runner's load-bearing path. The cited upstream authority is retained_bounded and consistent with the scoped companion calibration, while the note explicitly avoids promoting the result to full Newton closure.
+- **auditor confidence:** high
+
+### `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`
+
+- **Note:** [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](../../docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited claim is the coefficient matching beta g_bare^2/(4 N_c)=1/2, hence beta g_bare^2=2 N_c, inside the supplied standard Wilson plaquette action with canonical Tr(T_a T_b)=delta_ab/2 normalization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-044503-e0eff8189d-wilson_small_a_matching_beta`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Matching the Wilson small-a coefficient beta g_bare^2/(4 N_c) to the unordered-plane continuum Yang-Mills coefficient 1/2 gives beta = 2 N_c / g_bare^2.  _(class `A`)_
+- **chain closes:** True — The trace expansion gives Tr X^2 = a^4 g_bare^2 F^a F^a/2 and therefore plaquette deficit a^4 g_bare^2 F^a F^a/(4 N_c). The continuum 1/4 F_{mu nu}F_{mu nu} term contributes coefficient 1/2 over unordered planes, so the stated matching follows without needing g_bare=1 or Wilson surface selection.
+- **rationale:** The load-bearing mathematics is a direct algebraic trace expansion and coefficient match under the theorem's explicitly supplied Wilson-action and trace-normalization hypotheses. Independent checking confirms the factors of 1/2 and 1/(4 N_c), including the unordered-plane conversion in the continuum action. The note's boundaries exclude action-surface selection, alternative lattice actions, physical g_bare selection, and beta=6 except under the additional N_c=3, g_bare^2=1 specialization.
 - **auditor confidence:** high
 
 ### `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`

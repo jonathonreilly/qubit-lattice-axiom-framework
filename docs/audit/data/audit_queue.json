@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 338,
-    "high": 241,
+    "high": 240,
     "leaf": 443,
     "medium": 391
   },
@@ -9810,38 +9810,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "sign_portability_invariant_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
-        "alt_connectivity_family_basin_note",
-        "second_grown_family_sign_note",
-        "third_grown_family_sign_note",
-        "fourth_family_quadrant_note",
-        "fifth_family_radial_boundary_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
-        "scripts/gate_b_nonlabel_connectivity_v1.py"
-      ],
-      "load_bearing_score": 8.875,
-      "note_path": "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
-      "transitive_descendants": 82
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -42356,6 +42324,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 53,
-  "total_pending": 1413
+  "ready_count": 52,
+  "total_pending": 1412
 }

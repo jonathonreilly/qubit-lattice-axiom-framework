@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1383 |
+| Applied audit verdicts | 1384 |
 | Retained-grade rows, including boxed decorations | 1266 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 800 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1411 |
+| Unaudited rows | 1410 |
 | Retained-pending-chain rows | 12 |
-| Audited conditional rows | 21 |
+| Audited conditional rows | 22 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1413 |
-| Ready rows | 53 |
+| Total pending rows | 1412 |
+| Ready rows | 52 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
-| High pending | 241 |
+| High pending | 240 |
 | Medium pending | 391 |
 | Leaf pending | 443 |
 
 Next ready rows by queue order:
 
-- [`sign_portability_invariant_note`](../../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md) - high; unaudited
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`plaquette_bootstrap_framework_integration_note_2026-05-03`](../../docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md) - medium; unaudited
 - [`free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) - medium; unaudited
 - [`st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08`](../../docs/ST1_ST2_SAME_WALL_GAUGE_DYNAMICS_RESIDUAL_CONVERGENCE_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09`](../../docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

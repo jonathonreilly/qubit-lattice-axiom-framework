@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 800 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1411 |
+| unaudited | 1410 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 21 |
+| ~~audited_conditional~~ | 22 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1235 |
-| `audited_conditional` | 21 |
+| `audited_conditional` | 22 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1727 |
+| `unaudited` | 1726 |
 
 | claim_type | count |
 |---|---:|
@@ -1383,6 +1383,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `sign_portability_invariant_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15652,6 +15653,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** In logs/runner-cache/SIGN_PORTABILITY_INVARIANT_COMPARE.txt, the runner reports the second-grown gate block PASS, all listed core and holdout families as G1G2G3G4=PPPP, configured thresholds, and OVERALL PASS.  _(class `B`)_
 - **chain closes:** True — The narrowed claim follows from the SHA-pinned cached runner output and the inspected runner source: the runner recomputes a two-row second-grown subset and then checks the same thresholds against registered family logs. This closes only the bounded diagnostic/cache certificate, not a unit-slope theorem, row-wise lower-bound theorem, physical sign-law derivation, or cross-family proof.
 - **rationale:** The cross-log dependence is load-bearing, so the step is class B rather than a first-principles derivation; however the source note has been narrowed to exactly that finite cached gate-certificate claim. The runner source and cache output support the stated PASS lines and thresholds, and the note explicitly excludes the broader theorem and physical-derivation readings. The decoration heuristic is not controlling here because the note is not an algebraic corollary of a single parent claim; it is a bounded runner diagnostic over recorded artifacts.
+
+### `sign_portability_invariant_note`
+
+- **Note:** [`SIGN_PORTABILITY_INVARIANT_NOTE.md`](../../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite runner-defined G1/G2/G3/G4 gate comparison over the second-grown derivation subset, five core family logs, and one holdout family at the stated thresholds; not a cross-family theorem or independent order parameter.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-031000-9a1f128d29-sign_portability_invariant_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Any other retained sign-law family sharing the three structural inputs inherits the same four gates by the same proof steps, with a family-specific remainder constant C_F.  _(class `B`)_
+- **chain closes:** False — The finite cached gate comparison is supported by the runner output and source. The broader inheritance/corollary step does not close because the packet lacks a bridge theorem proving the structural hypotheses and the nonzero linear-response/lower-bound condition needed for G4 across every family.
+- **rationale:** The primary runner is not a trivial print-only runner: Block 1 recomputes two second-grown rows through the helper construction and propagation code, while Block 2 verifies thresholds from registered family logs. But the cited derivation authority is itself only a bounded cached-output certificate and explicitly does not prove unit-slope regularity or a cross-family theorem. The source note's strongest load-bearing statement still imports an unclosed cross-family structural bridge and G4 lower-bound/linear-response premise, so the finite comparison can stand only conditionally.
+- **open / conditional deps cited:**
+  - `SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`
+- **auditor confidence:** high
 
 ### `signed_gravity_aps_locked_source_action_proposal_note`
 

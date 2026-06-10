@@ -47914,10 +47914,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "qcd_low_energy_running_bridge_note_2026-05-01"
     },
     {
@@ -47938,11 +47934,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
     },
     {
       "from": "repo.front_door_status",
-      "to": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
+      "to": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
     },
     {
       "from": "repo.repo_organization",
@@ -92534,17 +92534,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
+        "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
         "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
-        "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
+        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a562f6bcc92a2ee538f371613a5bff9876c1d98851174874a5339ead017b21ab",
+      "note_hash": "04427b7a130f52def957b0132ef7a3100384e644385160f436c257d95ef470d6",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

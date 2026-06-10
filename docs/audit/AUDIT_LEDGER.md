@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 830 |
+| **retained_bounded** | 831 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1351 |
+| unaudited | 1350 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1278 |
+| `audited_clean` | 1279 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1667 |
+| `unaudited` | 1666 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 813 |
-| `leaf` | 1318 |
+| `medium` | 812 |
+| `leaf` | 1319 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -1317,6 +1317,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -19271,6 +19272,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given G_trace=G_TT=G != 0 and V_trace V_TT < 0, omega_trace^2 * omega_TT^2 = (V_trace V_TT) / G^2 < 0.  _(class `A`)_
 - **chain closes:** False — The algebraic no-go closes once the opposite-signed comparator potentials and the quadratic gluing law are granted. The restricted packet does not derive the comparator signs from the framework, so the chain does not close as a framework-native GR sign theorem.
 - **rationale:** The load-bearing sign product is correct: if the two kinetic coefficients are equal and nonzero while the potential signs are opposite, an overall sign normalization cannot make both omega^2 signs match. The runner source performs finite algebraic checks and its helper implements the narrow V/G map, but the comparator pair is hard-coded as a supplied premise rather than derived. The no-go discipline gate passes only for the local comparator-gluing boundary; the packet explicitly leaves non-degenerate fiber metrics, framework-native comparator signs, and finite-k W/stress routes open.
+- **auditor confidence:** high
+
+### `universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_GRAVITON_DISPERSION_LORENTZ_ISOTROPY_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_GRAVITON_DISPERSION_LORENTZ_ISOTROPY_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the implemented staggered Kahler-Dirac 16x16 finite-BZ TT two-point calculation at m=0.7, yz polarization, and N=6,8,10, C(e0) and C(e1) agree within tolerance while the sampled t-x diagonal excess is positive and scales approximately as 0.043 k0^2 over the tested grids.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-055945-c86c62991c-universal_gr_graviton_disper`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite Brillouin-zone runner computes C(Khat) for the implemented staggered Kahler-Dirac 16x16 TT channel and finds axis equality, positive decreasing t-x diagonal excess, and a stable finite-grid coefficient near 0.043.  _(class `C`)_
+- **chain closes:** True — The runner source explicitly constructs the 16x16 staggered operator, velocity-momentum stress vertex, propagators, and finite Brillouin-zone sum, with no hard-coded target constants or opaque helper imports. The audited conclusion is only the finite-grid channel diagnostic, so no continuum Lorentz, GR-recovery, or gravitational-wave-speed bridge is needed.
+- **rationale:** The load-bearing step is a first-principles finite computation within the supplied implementation, not a definition, cross-note import, external comparator, or tuned observational match. Independent arithmetic from the displayed table gives diagonal excesses 0.046898, 0.026247, and 0.016737, with coefficients 0.04277, 0.04255, and 0.04239 and spread about 0.9%, matching the runner claims. The cited authorities are retained_bounded and used only as contextual finite-grid support; their open physical bridges are not imported by this narrowed claim. This verdict does not audit or retain any physical dispersion, continuum Lorentz theorem, GR recovery, or GW-speed comparison.
 - **auditor confidence:** high
 
 ### `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08`

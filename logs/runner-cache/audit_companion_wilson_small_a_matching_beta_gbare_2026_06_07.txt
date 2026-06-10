@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py
+runner_sha256: 6b3b2ce5371ea68ae8ac17890b14d968b315ace081ac9192a4718903cbe91d40
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
 WILSON SMALL-A MATCHING BETA/G_BARE THEOREM
 
 ========================================================================================
@@ -82,3 +90,6 @@ Part 5: downstream link and firewall
 [PASS] beta row still forbids status promotion
 
 TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/record_generation_readout_two_sectors_2026_06_05.py
+runner_sha256: a1a845c44c4bcaef066c6e1103a558db621e112642c4e12db2957248981ca0ea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
 RECORD_GENERATION_READOUT_TWO_SECTORS — generation readout resolves two K/CPT-orbit sectors (singlet + doublet)
 Conditional derivation: central-sector decomposition + K/CPT supplied by the readout context; Record only names the realized orbit and adds disjoint records.
 
@@ -95,3 +103,6 @@ RESULT
 PASS=32 FAIL=0
 ALL CHECKS PASSED
 Generation readout resolves exactly TWO K/CPT-orbit sectors: SINGLET (chi_0, dim 1) + DOUBLET ({chi_1,chi_2}, dim 2).
+
+----- stderr -----
+

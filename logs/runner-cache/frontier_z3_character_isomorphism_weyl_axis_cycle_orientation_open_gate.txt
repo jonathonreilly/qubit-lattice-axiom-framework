@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/frontier_z3_character_isomorphism_weyl_axis_cycle_orientation_open_gate.py
+runner_sha256: ed76c18c0b344cf469cd8210e62958952a226330f12981d0e99704fbf0026777
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+
+================================================================================
+Note scope
+================================================================================
+[PASS] note contains marker: **Claim type:** open_gate
+[PASS] note contains marker: axis-cycle regular character: verified
+[PASS] note contains marker: canonical within-sector orientation from that finite character calculation: open
+[PASS] note contains marker: not a formal no-go over all possible color/generation bridges
+[PASS] note contains marker: does not approve
+[PASS] note omits non-native marker: Generated with
+[PASS] note omits non-native marker: source-note proposal only
+[PASS] note omits non-native marker: actual_current_surface_status
+[PASS] note omits non-native marker: audit lane
+[PASS] note omits non-native marker: retained_bounded
+[PASS] note omits non-native marker: retained_no_go
+[PASS] note omits non-native marker: A_min
+[PASS] note omits non-native marker: P1
+[PASS] note omits non-native marker: P2
+[PASS] note omits non-native marker: P3
+
+================================================================================
+Axis-cycle and center characters
+================================================================================
+[PASS] axis-cycle character is regular (3,0,0)  --  [3, 0, 0]
+[PASS] center character is not regular  --  [3, 3*(-1)**(2/3), -3*(-1)**(1/3)]
+[PASS] P^3 = I
+[PASS] det(P) = 1  --  1
+
+================================================================================
+Commutant and permutation alignments
+================================================================================
+[PASS] every a0 I + a1 P + a2 P^2 commutes with P
+[PASS] span{I,P,P^2} is three-dimensional  --  rank=3
+[PASS] exactly three permutation alignments commute with P  --  [(0, 1, 2), (1, 2, 0), (2, 0, 1)]
+[PASS] the commuting alignments are exactly I, P, P^2
+[PASS] the other three permutations do not commute with P  --  [(0, 2, 1), (1, 0, 2), (2, 1, 0)]
+
+================================================================================
+Cyclic relabeling is isospectral
+================================================================================
+[PASS] cyclic relabeling changes order  --  Matrix([[9, 0, 0], [0, 2, 0], [0, 0, 5]])
+[PASS] cyclic relabeling preserves spectrum  --  {9: 1, 2: 1, 5: 1}
+
+TOTAL: PASS=26 FAIL=0
+VERDICT: Weyl axis-cycle character/orientation open-gate checks pass.
+
+----- stderr -----
+

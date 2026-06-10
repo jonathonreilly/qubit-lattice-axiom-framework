@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_selective_instrument_atom_criterion_2026_06_05.py
+runner_sha256: c5a9764d2994d7ec4a99e8c6d5d10342b4c8bd35066bc4d00526ec5793fbed80
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD SELECTIVE INSTRUMENT ATOM CRITERION
 bounded-support / selective post-record gate runner
@@ -56,3 +64,6 @@ bounded-support / selective post-record gate runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=33 FAIL=0
+
+----- stderr -----
+

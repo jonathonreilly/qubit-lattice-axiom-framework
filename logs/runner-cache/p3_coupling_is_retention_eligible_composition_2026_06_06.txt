@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/p3_coupling_is_retention_eligible_composition_2026_06_06.py
+runner_sha256: d6b22e2006c68bd0da87195756b73b9791caae28d39224fdc2173a3f705b1fd1
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 0.30
+status: nonzero_exit
+----- stdout -----
 --- Section A: geometric-mean identity (retained) ---
 PASS: alpha_LM = sqrt(alpha_bare * alpha_s) (geometric mean; retained identity)
 PASS: alpha_bare : alpha_LM : alpha_s is a geometric progression, ratio 1/u_0
@@ -28,17 +36,20 @@ PASS: plaquette_self_consistency_note effective status is retained_bounded
 PASS: source note lists authority row plaquette_self_consistency_note
 PASS: ledger has one-hop row: magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06
 PASS: magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06 note path matches authority packet
-PASS: magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06 effective status is audited_conditional
+FAIL: magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06 effective status is audited_conditional
 PASS: source note lists authority row magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06
 PASS: ledger has one-hop row: i1_static_readout_is_native_field_integration_2026-06-06
 PASS: i1_static_readout_is_native_field_integration_2026-06-06 note path matches authority packet
-PASS: i1_static_readout_is_native_field_integration_2026-06-06 effective status is audited_conditional
+FAIL: i1_static_readout_is_native_field_integration_2026-06-06 effective status is audited_conditional
 PASS: source note lists authority row i1_static_readout_is_native_field_integration_2026-06-06
-PASS: conditional 4pi/I1 authorities remain visibly conditional, not retained
+FAIL: conditional 4pi/I1 authorities remain visibly conditional, not retained
 PASS: source note states P3 is not retained on the current surface
 --- Section D: the single open step = physical-not-bare coupling (register-not-read, 5th) ---
 PASS: the open step is a SELECTION: physical alpha_LM vs bare u_0 (they differ)
 PASS: the selection is register-not-read (registered=physical, not bare); the 5th application -> FLAGGED for the audit lane (genuine extension vs over-application)
 PASS: NET: P3 = authority-inventoried composition + ONE open register-not-read selection step (not a free substitution; not retained closure)
 
-TOTAL: PASS=38 FAIL=0
+TOTAL: PASS=35 FAIL=3
+
+----- stderr -----
+

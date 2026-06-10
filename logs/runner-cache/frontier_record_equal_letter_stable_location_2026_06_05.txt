@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_equal_letter_stable_location_2026_06_05.py
+runner_sha256: a930db195b0c2d78cf85a26cbfbc6bbccdf505398c46cb2dfb4d96b1a157bd79
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
 [PASS] S1.1 sidecar exposes exactly three equal-letter stable-location rows
 [PASS] S1.2 all stable-location rows are marked s=0_stable_location
 [PASS] S1.3 no stable-location row is labelled as forced
@@ -33,3 +41,6 @@ Equal-letter is a stable s=0 location on the post-record atom-symmetric dial.
 The construction also works for arbitrary pi_s, so it is not a physical dial selector.
 The three sidecar rows should be read as stable-location support only.
 SCORECARD PASS=26 FAIL=0
+
+----- stderr -----
+

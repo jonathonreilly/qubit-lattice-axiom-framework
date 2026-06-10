@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/color_generation_z3_identification_no_go_2026_06_05.py
+runner_sha256: 8fc53d5f9b89793c948fee0edc385b916871e3b9b87d0df76a863c8d8a88a4de
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
 ==============================================================================
 COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO  (derivation runner)
 ==============================================================================
@@ -63,3 +71,6 @@ VERDICT: NO-GO -- the color center scalar rep 3*chi_w (3, 3w, 3w^2)
   generation is a category error absent the named non-native import
   'scalar-generation-action' (replace the derived axis cycle by w*I).
 ==============================================================================
+
+----- stderr -----
+

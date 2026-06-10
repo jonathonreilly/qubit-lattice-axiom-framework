@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_dynamics_koide_dial_firewall_2026_06_05.py
+runner_sha256: 08161fa02dd4a27e0709ce4567cf74829f28752b521d2e54b48328f690fca9c0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD DYNAMICS KOIDE DIAL FIREWALL
 no-go / supplied-setting readout classifier
@@ -58,3 +66,6 @@ no-go / supplied-setting readout classifier
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=35 FAIL=0
+
+----- stderr -----
+

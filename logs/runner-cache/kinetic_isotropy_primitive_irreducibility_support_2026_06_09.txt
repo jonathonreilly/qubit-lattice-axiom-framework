@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_isotropy_primitive_irreducibility_support_2026_06_09.py
+runner_sha256: 5d372024ef9c23567c60dfb49705a62c969038e641fc346934075459713cacba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 ================================================================================================
 kinetic-isotropy primitive support: listed current structures do not fix xi=c_t/c_s
 ================================================================================================
@@ -75,3 +83,6 @@ Sets no audit status and supplies no downstream Lorentz theorem.
 ================================================================================================
 TOTAL: PASS=17 FAIL=0
 ================================================================================================
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_g_bare_parent_promotion_gate_map_2026_06_06.py
+runner_sha256: b5e0d415f4e74957f16a45afea0f994543889464741154f8eef1263b95f5cd2a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 
 ----------------------------------------------------------------------------------------
 Part 1: active review gate is present
@@ -19,8 +27,8 @@ Part 2: parent note carries dependency-chain gate
   [PASS] parent note contains: not a dynamical calculation
   [PASS] parent note contains: not a fit
   [PASS] parent note contains: not a\nfixed-point condition
-  [PASS] rescaling repair candidate exists  (/private/tmp/physics-loop-campaign-down-lanes-20260605/docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
-  [PASS] constraint/convention repair candidate exists  (/private/tmp/physics-loop-campaign-down-lanes-20260605/docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md)
+  [PASS] rescaling repair candidate exists  (/private/tmp/cl3-audit-backlog-scan-20260610/docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+  [PASS] constraint/convention repair candidate exists  (/private/tmp/cl3-audit-backlog-scan-20260610/docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md)
 
 ----------------------------------------------------------------------------------------
 Part 3: promotion panel identifies the blocking premise
@@ -67,3 +75,6 @@ Part 5: branch-local note hygiene
 ========================================================================================
   TOTAL: PASS=45, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

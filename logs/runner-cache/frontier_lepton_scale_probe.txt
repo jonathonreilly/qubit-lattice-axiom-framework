@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lepton_scale_probe.py
+runner_sha256: 6a959740838b3994e5dfbed6b6658fd20b06a63b0c179a05a98d908230006152
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 ================================================================================
 LEPTON-SCALE FRONTIER PROBE (META)
 ================================================================================
@@ -92,3 +100,6 @@ Charged-lepton mass scale: FREE-FLAVOR-INPUT modulo the m_W/256 open gate.
 
   y_tau is NOT pinnable on the retained surface. The honest floor is
   ONE real flavor input; the open derivation target is exactly 1/256.
+
+----- stderr -----
+

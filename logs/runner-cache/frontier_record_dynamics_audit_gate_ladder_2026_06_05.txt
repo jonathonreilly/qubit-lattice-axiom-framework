@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_dynamics_audit_gate_ladder_2026_06_05.py
+runner_sha256: 97a1a94534cea37b583875508c3688d5d95349e60caa50ffc22a6491a21f910f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.06
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD DYNAMICS AUDIT GATE LADDER
 bounded-support / classifier runner
@@ -62,3 +70,6 @@ bounded-support / classifier runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=39 FAIL=0
+
+----- stderr -----
+

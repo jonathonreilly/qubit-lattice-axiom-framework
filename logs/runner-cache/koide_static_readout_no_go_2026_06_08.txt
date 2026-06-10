@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/koide_static_readout_no_go_2026_06_08.py
+runner_sha256: 8620f06231efd154706f4e3955014e8288b625dc710546c773719d44cdbd3756
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
 ==============================================================================
 Koide tested static-readout no-go aggregate runner
 ==============================================================================
@@ -41,3 +49,6 @@ VERDICT: the framework-native complex structure J_cs commutes with the generatio
 ==============================================================================
 AGGREGATE TOTAL: PASS=11 FAIL=0
 ==============================================================================
+
+----- stderr -----
+

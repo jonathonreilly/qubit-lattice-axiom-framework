@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_history_count_audit_unlock_scan_2026_06_05.py
+runner_sha256: 191ba598d28ee5d87307983a3918f5769d00164f7675b6e08fad480ed25ea5cf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
 [PASS] S1 support note exists: history_monoid
        docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md
 [PASS] S1 support note exists: finite_alphabet_dynamics
@@ -135,3 +143,6 @@ The new history/count dynamics stack creates citation-ready support for finite a
 Rows needing probability, production, source/action, Kraus instruments, or carrier dynamics remain blocked at named gates.
 No audit verdicts or status fields are changed by this support map.
 SCORECARD PASS=67 FAIL=0
+
+----- stderr -----
+

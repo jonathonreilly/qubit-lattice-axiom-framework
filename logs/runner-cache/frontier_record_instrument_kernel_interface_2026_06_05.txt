@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_instrument_kernel_interface_2026_06_05.py
+runner_sha256: 97ed0f8c1cc4710e0ca84c71fb7f46c8bb4eab92e0196d338917a9f9620ea6cb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD INSTRUMENT KERNEL INTERFACE
 bounded-support / exact conditional finite-matrix runner
@@ -75,3 +83,6 @@ bounded-support / exact conditional finite-matrix runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=48 FAIL=0
+
+----- stderr -----
+

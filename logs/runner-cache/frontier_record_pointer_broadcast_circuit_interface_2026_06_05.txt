@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_pointer_broadcast_circuit_interface_2026_06_05.py
+runner_sha256: 581ec0a3ceab0f358e03e85355a825483613f684e163ee8fc98565d815e0b709
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD POINTER BROADCAST CIRCUIT INTERFACE
 bounded-support / conditional finite witness runner
@@ -66,3 +74,6 @@ bounded-support / conditional finite witness runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=35 FAIL=0
+
+----- stderr -----
+

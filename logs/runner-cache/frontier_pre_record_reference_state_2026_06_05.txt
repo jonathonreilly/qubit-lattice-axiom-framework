@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_pre_record_reference_state_2026_06_05.py
+runner_sha256: b1829212807edb6d0258ce7e29da29cc5121625eb39b5ddfa2462300c4fcc8ba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.74
+status: ok
+----- stdout -----
 PRE-RECORD REFERENCE STATE rho_ref = I/d : FORCED or OPEN PREMISE?
 Repo: cl3-lattice-framework | axioms {Quantum, Lattice, Record}
 
@@ -78,3 +86,6 @@ Classification of  rho_ref = I/d  under {Quantum, Lattice, Record}:  OPEN PREMIS
 RESULT: 14/14 checks PASS
 CLASSIFICATION: rho_ref = I/d remains an open maximal-symmetry premise X
 ==========================================================================
+
+----- stderr -----
+

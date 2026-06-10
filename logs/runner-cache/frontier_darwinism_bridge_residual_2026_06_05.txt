@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_darwinism_bridge_residual_2026_06_05.py
+runner_sha256: 48c0f304ab801612b3884e0919a9621c654baf5963089b2fd5f6d14a14978deb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
 Darwinism-bridge residual: is 'record = redundant objective imprint' forced from {Quantum, Lattice, Record}?
 
 === A. AXIOM CONTENT: what does the Record axiom assert? ===
@@ -60,5 +68,8 @@ Darwinism-bridge residual: is 'record = redundant objective imprint' forced from
 [PASS] VERDICT D: Darwinism bridge (record=redundant objective imprint) is OPEN
        minimal extra premise = local observability of a determined outcome (many-observer consensus); additivity (Record)+locality (Lattice) do NOT supply it
 
-PEAK_RSS_MB=31.2
+PEAK_RSS_MB=31.0
 SUMMARY: PASS=19 FAIL=0
+
+----- stderr -----
+

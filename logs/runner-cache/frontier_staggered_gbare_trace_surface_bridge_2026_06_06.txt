@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.py
+runner_sha256: 885617f5278cbe5f7c0339d1633b9db0260a5264efd20c532285272859ad356d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 
 ----------------------------------------------------------------------------------------
 Part 1: source surfaces expose the intended narrow gate
@@ -91,3 +99,6 @@ Part 6: branch-local note hygiene
 ========================================================================================
   TOTAL: PASS=65, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

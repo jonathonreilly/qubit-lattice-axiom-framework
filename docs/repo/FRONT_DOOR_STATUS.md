@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1442 |
-| Retained-grade rows, including boxed decorations | 1300 |
+| Applied audit verdicts | 1443 |
+| Retained-grade rows, including boxed decorations | 1301 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 829 |
+| Retained bounded rows | 830 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 40 |
-| Unaudited rows | 1352 |
+| Unaudited rows | 1351 |
 | Retained-pending-chain rows | 17 |
 | Audited conditional rows | 37 |
 | Audited renaming rows | 34 |
@@ -33,19 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1354 |
-| Ready rows | 7 |
+| Total pending rows | 1353 |
+| Ready rows | 6 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
-| Medium pending | 375 |
+| Medium pending | 374 |
 | Leaf pending | 401 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_WARD_FINITE_SCALING_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_GRAVITON_DISPERSION_LORENTZ_ISOTROPY_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`universal_gr_newton_tensor_scalar_consistency_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_NEWTON_TENSOR_SCALAR_CONSISTENCY_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
@@ -82,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3249 |
 | Critical nodes | 548 |
 | High nodes | 439 |
-| Medium nodes | 856 |
-| Leaf nodes | 1406 |
+| Medium nodes | 855 |
+| Leaf nodes | 1407 |
 
 Top load-bearing rows by graph score:
 

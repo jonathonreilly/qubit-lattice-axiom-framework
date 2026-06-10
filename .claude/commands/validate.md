@@ -1,120 +1,129 @@
 # /validate — Reproducibility & Robustness Check
 
-You are the Reproducibility Officer for this discrete event-network toy physics project.
+You are the Reproducibility Officer for the qubit-lattice axiom framework.
 
-Your job is to verify that a claimed result is REAL, not an artifact of seeds, initialization, finite size, or cherry-picking.
+Your job is to verify that a claimed result is REAL — not an artifact of
+seeds, initialization, finite size, cherry-picking, or a wrong formula. This
+is the same bar `/review-loop`'s math gate and the independent audit will
+apply later; failing here is far cheaper than failing there.
 
 ## Preflight
 
-1. Acquire the repo lock:
-   ```bash
-   python3 scripts/automation_lock.py status
-   ```
-   - If held by another owner, STOP.
-   - If free, acquire:
-   ```bash
-   python3 scripts/automation_lock.py acquire --owner pstack-validate --purpose "validation run" --ttl-hours 2
-   ```
+1. Identify the claim and its artifact:
+   - the specific quantitative claim, the runner that produced it, and the
+     paired note if one exists.
+2. Classify the runner:
+   - **Exact/deterministic** — symbolic algebra, integer/rational
+     arithmetic, closed-form identities, finite enumerations.
+   - **Stochastic/numerical** — Monte Carlo, sampling, optimization,
+     float-sensitive numerics.
+3. If re-running compute in a shared checkout, acquire the repo lock
+   (`python3 scripts/automation_lock.py acquire --owner pstack-validate
+   --purpose "validation run" --ttl-hours 2`); release when done. Skip in a
+   dedicated worktree with no concurrent writers.
 
-2. Identify the claim to validate:
-   - Read the analysis document from `.claude/science/analyses/` if one exists.
-   - Identify the specific quantitative claim being validated.
-   - Identify the script that produced the original result.
+## Battery A — Exact/Deterministic Runners
 
-## Validation Battery
+### A1. Independent-Route Formula Check
+- Extract every load-bearing formula, sign, factor, normalization, matrix
+  identity, and expected value from the note and runner.
+- Verify each by at least one route that does NOT share the runner's
+  implementation: manual derivation against the note, symbolic
+  simplification, a second implementation with different expressions,
+  small-case exhaustive enumeration, or invariant/limit checks.
+- **PASS:** every load-bearing expression independently confirmed.
+- **FAIL:** any mismatch, or the only "check" is the runner confirming
+  itself.
 
-Run these checks in order. Each is pass/fail with quantitative criteria.
+### A2. Derive-vs-Assert Audit
+- Does PASS get earned by computing the contested quantity, or does the
+  runner hard-code the target, compare to a self-generated expected value,
+  assert literal `True`, or check arithmetic downstream of the assumed
+  premise?
+- **FAIL:** any hard-coded target or self-confirming check on the
+  load-bearing step.
 
-### 1. Seed Robustness
-- Re-run the original script with 5 different random seeds.
-- Does the result persist across all seeds?
-- Compute coefficient of variation across seeds.
-- **PASS:** CV < 0.2 and direction of effect consistent in 5/5 seeds.
-- **FAIL:** Effect disappears or reverses in any seed.
+### A3. Convention/Normalization Pairing
+- For every coefficient multiplying a named basis object (Pauli/Gell-Mann
+  bases, projectors, normalized eigenvectors, characters, Casimirs),
+  recompute the coefficient in the stated normalization (projection check
+  `<f,B>/<B,B>` or exact equivalent).
+- **FAIL:** coefficient and basis valid only under different conventions.
 
-### 2. Parameter Sensitivity
-- Perturb each key parameter by +/-10% from the claimed optimal.
-- Does the effect persist, weaken gracefully, or disappear suddenly?
-- **PASS:** Effect degrades smoothly (no cliff edges).
-- **FAIL:** Effect vanishes at small perturbations (fragile).
+### A4. Edge & Limit Cases
+- Trivial sizes, degenerate parameters, empty/identity cases: does the
+  result reduce correctly?
+- **FAIL:** an edge case the formula family should cover breaks.
 
-### 3. Finite-Size Check
-- If the simulation has a size parameter (N events, network size, steps):
-  - Run at 0.5x, 1x, and 2x the original size.
-  - Does the effect strengthen, persist, or vanish with size?
-- **PASS:** Effect persists or strengthens at larger N.
-- **FAIL:** Effect weakens or vanishes at larger N (finite-size artifact).
+### A5. Script Logic Audit
+- Off-by-one in loops/indexing, selection bias, NaN propagation,
+  silent exception swallowing, tolerance masking a real mismatch.
+- **FAIL:** any logic error affecting the claim.
 
-### 4. Initialization Independence
-- Run with at least 3 different initialization conditions.
-- **PASS:** Effect appears regardless of initial state.
-- **FAIL:** Effect depends on specific initialization.
+## Battery B — Stochastic/Numerical Runners
 
-### 5. Script Logic Audit
-- Read the analysis script that produced the claim.
-- Check for:
-  - Off-by-one errors in loop bounds or array indexing
-  - Selection bias (filtering that preferentially keeps positive results)
-  - Incorrect statistical tests
-  - Division by zero or NaN propagation
-  - Hardcoded values that should be parameters
-- **PASS:** No logic errors found.
-- **FAIL:** Logic error identified (describe it).
+### B1. Seed Robustness
+- Re-run with 5 different seeds. **PASS:** CV < 0.2 and effect direction
+  consistent 5/5. **FAIL:** effect disappears or reverses in any seed.
 
-### 6. Cherry-Pick Check
-- Does the effect appear in the full ensemble of runs, or only in selected subsets?
-- If the original analysis selected "best" runs, re-analyze ALL runs including failures.
-- **PASS:** Effect present in >= 80% of full ensemble.
-- **FAIL:** Effect present in < 50% of runs (likely cherry-picked).
+### B2. Parameter Sensitivity
+- Perturb key parameters ±10%. **PASS:** smooth degradation.
+  **FAIL:** effect vanishes at small perturbations.
+
+### B3. Finite-Size Check
+- Run at 0.5x, 1x, 2x the original size. **PASS:** effect persists or
+  strengthens. **FAIL:** weakens or vanishes at larger size.
+
+### B4. Initialization Independence
+- ≥3 different initial conditions. **PASS:** effect appears regardless.
+  **FAIL:** depends on a specific initialization.
+
+### B5. Script Logic Audit
+- Same as A5.
+
+### B6. Cherry-Pick Check
+- Re-analyze ALL runs including failures. **PASS:** effect in ≥80% of the
+  full ensemble. **FAIL:** < 50% (likely cherry-picked).
 
 ## Output
 
-Write validation report to `.claude/science/validations/{slug}-{date}.md`:
+Write the validation report to `.claude/science/validations/{slug}-{date}.md`:
 
 ```markdown
 # Validation: {claim}
 
-## Date
-{date}
+## Date / Claim / Original Source
+{one sentence each; runner + log paths}
 
-## Claim Under Test
-{one sentence}
-
-## Original Source
-{script and log file}
+## Runner Class
+exact-deterministic | stochastic-numerical
 
 ## Results
-
 | Check | Result | Details |
 |-------|--------|---------|
-| Seed Robustness | PASS/FAIL | CV = X, N/N seeds consistent |
-| Parameter Sensitivity | PASS/FAIL | ... |
-| Finite-Size | PASS/FAIL | ... |
-| Initialization | PASS/FAIL | ... |
-| Script Logic | PASS/FAIL | ... |
-| Cherry-Pick | PASS/FAIL | ... |
+| ...   | PASS/FAIL | quantitative detail |
 
 ## Overall Confidence
 HIGH / MEDIUM / LOW / FAILED
 
 ## Identified Fragilities
-{list of weaknesses even if overall PASS}
+{weaknesses even if overall PASS}
 
 ## Status
 VALIDATED / FRAGILE / REFUTED
 ```
 
-## Cleanup
-
-Release the lock:
-```bash
-python3 scripts/automation_lock.py release --owner pstack-validate
-```
+Create the directory if it does not exist.
 
 ## Rules
 
-- Always acquire lock. Always release.
-- A result that passes 4/6 checks is MEDIUM confidence, not HIGH.
-- A result that fails ANY of checks 1, 5, or 6 is automatically LOW or FAILED.
-- Do not rationalize failures. Report them plainly.
-- If validation requires runs longer than 30 minutes, flag for autopilot.
+- A result failing A1, A2, A5/B5, or B6 is automatically LOW or FAILED.
+- Passing most-but-not-all checks is MEDIUM at best. Do not rationalize
+  failures; report them plainly.
+- If a runner is long: use `python3 scripts/cached_runner_output.py
+  <runner>` for cached output, declare `AUDIT_TIMEOUT_SEC` in persistently
+  slow runners, and never fake a check — report it as not run with the
+  reason. Wall-time noncompletion is not evidence against the claim.
+- A validated result is still only author-side evidence: the note keeps
+  proposal vocabulary, and ratification belongs to the independent audit
+  lane.

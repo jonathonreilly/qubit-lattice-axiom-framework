@@ -45,33 +45,37 @@ execution requests even when the user says only `run`.
    claim state, retire an import, close a blocker, prove a no-go, create a
    decisive artifact, or make a recorded first-principles stretch attempt on a
    named hard residual.
-8. Add a trace gate for each serious route in `TRACE_GATE.md`: name the exact
+8. Apply the skill's pre-PR gates in writing: the V1-V5 Promotion Value Gate
+   for any retained-positive proposal, and the N1-N8 No-Go Discipline Gate
+   (`no-go-discipline` skill) for any negative claim. Record both in the
+   block's certificate/queue files and PR body as the skill specifies.
+9. Add a trace gate for each serious route in `TRACE_GATE.md`: name the exact
    claim/blocker/import the artifact is meant to move, or classify it as
    `frontier_discovery` when it is pure science with no known downstream
    blocker yet. Frontier discovery is valid output, but it must not be framed
    as closing, promoting, or retiring an existing lane.
-9. For unattended runs longer than one major cycle, build
+10. For unattended runs longer than one major cycle, build
    `OPPORTUNITY_QUEUE.md` and keep selecting the next ranked retained-positive
    opportunity until runtime/max cycles expires or the refreshed queue is
    globally exhausted.
-10. Write `CLAIM_STATUS_CERTIFICATE.md` for each science block. Do not use bare
+11. Write `CLAIM_STATUS_CERTIFICATE.md` for each science block. Do not use bare
    `retained` / `promoted` status language in branch-local source notes. Use
    `proposed_retained` / `proposed_promoted` only when the certificate supports
    a theorem-grade proposal and marks the later independent audit requirement;
    otherwise demote branch-local, conditional, same-surface,
    admitted-observation, or Axiom* consequences to the narrowest honest status.
-11. Checkpoint `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md` throughout
+12. Checkpoint `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md` throughout
    unattended work.
-12. After two audit/no-go/blocker cycles in a row, run a stretch attempt before
+13. After two audit/no-go/blocker cycles in a row, run a stretch attempt before
    declaring a route blocked. If stuck, fan out 3-5 orthogonal premises before
    declaring global queue exhaustion.
-13. Run `review-loop` after each major artifact unless explicitly disabled.
+14. Run `review-loop` after each major artifact unless explicitly disabled.
    Treat review demotions/blockers as block-level demotion/pivot events, not
    campaign stops.
-14. At each coherent science-block closure, open or prepare one review PR
+15. At each coherent science-block closure, open or prepare one review PR
     unless `--no-pr` was supplied; do not wait until the 12-hour campaign ends
     if the block is already coherent.
-15. Keep science runs science-only. Record proposed repo weaving in
+16. Keep science runs science-only. Record proposed repo weaving in
    `HANDOFF.md`; do not update repo-wide authority surfaces until later review
    and backpressure integration.
 

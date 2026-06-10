@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "universal_gr_newton_tensor_scalar_consistency_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08"
     },
     {
@@ -91947,11 +91943,10 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "universal_gr_newton_tensor_scalar_consistency_bounded_theorem_note_2026-06-08",
         "universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0dd4b1239c2c654947a1b4cceab819eadd15cd13138531286c7e2db4734c32c1",
+      "note_hash": "ea417c64163044ca504ca3fff157c17bf3206487899732abe4f759690ef1c50c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -106010,8 +106005,8 @@
       "open_gate": 160,
       "positive_theorem": 619
     },
-    "edge_count": 11998,
-    "leaf_count": 1080,
+    "edge_count": 11997,
+    "leaf_count": 1081,
     "node_count": 3249,
     "root_count": 1045,
     "runners_with_path": 2831

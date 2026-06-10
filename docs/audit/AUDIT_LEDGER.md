@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 833 |
+| **retained_bounded** | 834 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1348 |
+| unaudited | 1347 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1281 |
+| `audited_clean` | 1282 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1664 |
+| `unaudited` | 1663 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 810 |
-| `leaf` | 1321 |
+| `medium` | 809 |
+| `leaf` | 1322 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -1329,6 +1329,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | A | - |
 | `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -19430,6 +19431,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The conserved D(P_eff)+sqrt(g) quartic Ward residual normalized by the gauge amplitude decreases monotonically over L=6,8,10 (0.203, 0.164, 0.143, about k^0.69), while the naive C1 control is much flatter and larger at the shared momenta.  _(class `C`)_
 - **chain closes:** True — The runner source explicitly builds the finite Z^3 lattice operators, Pauli blocks, densitized-vielbein coupling, lattice diffeomorphism variation, and a2*a3*a4 cross extraction, with no helper imports or upstream numerical inputs. Independent arithmetic checks k=2*pi/L, the reported exponents, monotonicity, and conserved-vs-naive comparisons from the displayed values.
 - **rationale:** The load-bearing result is a first-principles finite-lattice computation from the stated operator definition, not a renaming, external comparator match, or copied upstream value. The runner has hard-coded prose in its final summary, but the PASS checks compute the residual ratios and exponents before testing them. The clean scope is bounded to the runner-supported diagnostic; the naive comparison is established at the two shared momenta reported by the runner, not as an independent all-L naive continuum extrapolation.
+- **auditor confidence:** high
+
+### `universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_QUINTIC_DIFFEO_WARD_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_QUINTIC_DIFFEO_WARD_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited claim is the finite-lattice quintic Ward diagnostic for the specified four non-collinear TT graviton modes and gauge field: conserved D(P_eff)+sqrt(g) has about 20-33x smaller normalized residual than the naive control and decreases from L=6 to L=8, without claiming all-order closure or a fitted continuum exponent.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-060757-31c51a5c6c-universal_gr_quintic_diffeo_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the runner-defined four-fold a2*a3*a4*a5 cross term of dW/depsilon, the conserved D(P_eff)+sqrt(g) coupling gives a quintic resid/amplitude far below the naive coupling, remains amplitude-stable, and decreases from L=6 to L=8 while the naive residual stays flat.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the lattice operators, conserved and naive Dirac operators, TT modes, lattice diffeomorphism variation, finite-difference dW/depsilon, and 16-point fourth cross term directly; it does not read or hard-code the contested residuals. Manual checks of the sine-expansion coefficients, cross-stencil normalization, TT transversality/tracelessness, and momentum closure match the stated bounded diagnostic.
+- **rationale:** The load-bearing step is a first-principles finite computation from the framework baseline, not a definition, renaming, external comparator, or tuned numerical match. The included source computes the residuals from instantiated lattice matrices and asserts three bounded checks: conserved-vs-naive contrast at L=6, amplitude robustness at amp 0.04 and 0.09, and conserved decrease from L=6 to L=8 with naive flatness. There are no cited non-retained authorities or missing helper imports in the restricted packet. The clean verdict is limited to the bounded runner-defined quintic diagnostic, not an all-order Einstein-Hilbert closure claim.
 - **auditor confidence:** high
 
 ### `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08`

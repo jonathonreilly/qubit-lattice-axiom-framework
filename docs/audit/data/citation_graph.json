@@ -47718,15 +47718,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
       "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
@@ -47743,6 +47739,10 @@
     {
       "from": "repo.front_door_status",
       "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
     },
     {
       "from": "repo.repo_organization",
@@ -92209,16 +92209,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-        "abj_epsilon_index_square_block_no_go_note_2026-05-30",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
+        "abj_epsilon_index_square_block_no_go_note_2026-05-30",
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
+        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f92a77cc6e794947555ce52b7d38ae15f60a9483e7731eda80308430835e2b96",
+      "note_hash": "f33677f9a4dafa0b3d64440034109383a6c362ab536df65b70247fd91ec2bdba",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -96217,8 +96217,8 @@
     },
     "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": {
       "claim_id": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "bounded support theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
@@ -96226,10 +96226,10 @@
         "fermion_parity_z2_grading_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4975377e4d8d95f5b5c0962b8856f9ea73cd67df6dbb82440e54e50b7c5682fe",
+      "note_hash": "6884e9b647787191cce1ed2eef535ffcf963942d829e4e2c3594c59694eac9a4",
       "path": "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
       "runner_path": "scripts/probe_kawamoto_smit_phase_forcing.py",
-      "title": "Staggered-Dirac Substep 2 \u2014 Kawamoto-Smit Phase Forcing (Block 03)"
+      "title": "Staggered-Dirac Substep 2 \u2014 Kawamoto-Smit Phase Forcing"
     },
     "staggered_dirac_physical_species_direct_theorem_note_2026-05-07": {
       "claim_id": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07",
@@ -106273,11 +106273,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1020,
+      "bounded_theorem": 1021,
       "decoration": 1,
       "meta": 278,
       "no_go": 162,
-      "none": 1514,
+      "none": 1513,
       "open_gate": 85,
       "positive_theorem": 195
     },

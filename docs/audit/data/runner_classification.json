@@ -28321,15 +28321,15 @@
       "runner": "scripts/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.py"
     },
     "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": {
-      "assert_count": 1,
+      "assert_count": 2,
       "counts": {
-        "A": 5,
+        "A": 6,
         "B": 0,
-        "C": 5,
+        "C": 18,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "A",
+      "dominant_class": "C",
       "runner": "scripts/probe_kawamoto_smit_phase_forcing.py"
     },
     "staggered_dirac_physical_species_direct_theorem_note_2026-05-07": {
@@ -72087,18 +72087,18 @@
       "exists": true
     },
     "scripts/probe_kawamoto_smit_phase_forcing.py": {
-      "assert_count": 1,
+      "assert_count": 2,
       "claims": [
         "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
       ],
       "counts": {
-        "A": 5,
+        "A": 6,
         "B": 0,
-        "C": 5,
+        "C": 18,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "A",
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/probe_three_states_direct_derivation.py": {
@@ -74805,9 +74805,9 @@
   "stats": {
     "decoration_candidates": 522,
     "dominant_class_distribution": {
-      "A": 389,
+      "A": 388,
       "B": 449,
-      "C": 1041,
+      "C": 1042,
       "D": 380,
       "none": 454
     },

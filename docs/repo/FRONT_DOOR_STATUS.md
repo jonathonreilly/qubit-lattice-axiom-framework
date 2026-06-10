@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1437 |
-| Retained-grade rows, including boxed decorations | 1297 |
+| Applied audit verdicts | 1438 |
+| Retained-grade rows, including boxed decorations | 1298 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 826 |
+| Retained bounded rows | 827 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 40 |
-| Unaudited rows | 1357 |
+| Unaudited rows | 1356 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 36 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1359 |
-| Ready rows | 12 |
+| Total pending rows | 1358 |
+| Ready rows | 11 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
 | Medium pending | 375 |
-| Leaf pending | 406 |
+| Leaf pending | 405 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03`](../../docs/LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md) - medium; unaudited
 - [`record_prerecord_instrument_kernel_gate_2026-06-06`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md) - medium; unaudited
 - [`rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06`](../../docs/RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - medium; unaudited
-- [`universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_WARD_FINITE_SCALING_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
+- [`universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_WARD_FINITE_SCALING_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_GRAVITON_DISPERSION_LORENTZ_ISOTROPY_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,16 +83,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3249 |
 | Critical nodes | 548 |
 | High nodes | 439 |
-| Medium nodes | 862 |
-| Leaf nodes | 1400 |
+| Medium nodes | 861 |
+| Leaf nodes | 1401 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1447 descendants; score 109.500
 - `three_generation_observable_theorem_note` - critical; 779 descendants; score 61.107
-- `graph_first_su3_integration_note` - critical; 1308 descendants; score 59.354
+- `graph_first_su3_integration_note` - critical; 1307 descendants; score 59.353
 - `observable_principle_from_axiom_note` - critical; 860 descendants; score 58.250
 - `minimal_axioms_2026-05-03` - critical; 497 descendants; score 47.960
 - `key_terminology` - critical; 1050 descendants; score 47.038
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1219 descendants; score 44.253
-- `cl3_color_automorphism_theorem` - critical; 617 descendants; score 40.771
+- `cl3_color_automorphism_theorem` - critical; 616 descendants; score 40.769

@@ -19,8 +19,8 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 797 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1416 |
-| Retained-pending-chain rows | 13 |
+| Unaudited rows | 1417 |
+| Retained-pending-chain rows | 12 |
 | Audited conditional rows | 20 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 15 |
@@ -36,14 +36,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Total pending rows | 1421 |
 | Ready rows | 54 |
 | Cycle-break targets | 0 |
-| Critical pending | 343 |
+| Critical pending | 342 |
 | High pending | 242 |
 | Medium pending | 394 |
-| Leaf pending | 442 |
+| Leaf pending | 443 |
 
 Next ready rows by queue order:
 
-- [`lattice_greens_function_maradudin_textbook_import_note_2026-05-18`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) - critical; audit_in_progress
 - [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; unaudited
 - [`yt_ew_matching_rule_m_note_2026-05-02`](../../docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md) - critical; audit_in_progress
 - [`su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`](../../docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md) - high; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`plaquette_bootstrap_framework_integration_note_2026-05-03`](../../docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md) - medium; unaudited
+- [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

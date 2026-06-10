@@ -47570,10 +47570,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "higgs_from_lattice_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "fifth_family_radial_boundary_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "plaquette_bootstrap_framework_integration_note_2026-05-03"
     },
     {
       "from": "repo.repo_organization",
@@ -91961,17 +91961,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "higgs_from_lattice_note",
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
         "yt_ew_matching_rule_m_note_2026-05-02",
         "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
         "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "fifth_family_radial_boundary_note"
+        "fifth_family_radial_boundary_note",
+        "plaquette_bootstrap_framework_integration_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ac70a5bbeb7d6bfbe4ce793c5581f5b02af41ae6748b5122aaa3f19b6aaeb201",
+      "note_hash": "9c95111816c0cc002c6552d623bc84d2bd7068237319a8088ac55564151193ac",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

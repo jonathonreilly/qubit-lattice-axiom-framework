@@ -1,35 +1,13 @@
 {
   "by_criticality": {
-    "critical": 343,
+    "critical": 342,
     "high": 242,
-    "leaf": 442,
+    "leaf": 443,
     "medium": 394
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-      "claim_scope": "Framework-local nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization for the explicitly stated stencil (-Delta_lat f)(x)=6f(x)-sum_{|y-x|=1}f(y): the singular Fourier mode has continuum-leading coefficient 1/(4*pi*|r|) with unit lattice spacing, and the included certificate checks the small-k symbol normalization, unit-flux convention, and axis residual scaling. No downstream Newton-law, gravity theorem, scalar-field equation of motion, or physical Poisson dynamics is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 13,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.67,
-      "note_path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
-      "transitive_descendants": 287
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -17677,15 +17655,15 @@
         "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
         "gauge_vacuum_plaquette_framework_point_underdetermination_note"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.172,
+      "load_bearing_score": 7.7,
       "note_path": "docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_plaquette_bootstrap_framework_integration.py",
-      "transitive_descendants": 50
+      "transitive_descendants": 51
     },
     {
       "audit_independence_required": "any_non_self",
@@ -29853,6 +29831,32 @@
       "ready": true,
       "runner_path": "scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py",
       "transitive_descendants": 3
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "key_terminology",
+        "minimal_axioms",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.085,
+      "note_path": "docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
+      "transitive_descendants": 2
     },
     {
       "audit_independence_required": "any_non_self",

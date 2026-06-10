@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 209 |
 | **retained_no_go** | 206 |
 | **retained_bounded** | 797 |
-| _retained_pending_chain_ | 13 |
+| _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1416 |
+| unaudited | 1417 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -58,14 +58,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
+| `audit_in_progress` | 4 |
 | `audited_clean` | 1229 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1732 |
+| `unaudited` | 1733 |
 
 | claim_type | count |
 |---|---:|
@@ -83,7 +83,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 808 |
 | `leaf` | 1324 |
 
-- **Retained pending chain closure:** 13
+- **Retained pending chain closure:** 12
 - **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
@@ -113,9 +113,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 811 | 38.66 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 708 | 38.47 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1070 | 36.06 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1071 | 36.07 | `audited_clean` | **retained_bounded** |
 | 16 | `cpt_exact_note` | positive_theorem | critical | 1165 | 35.69 | `audited_clean` | **retained** |
-| 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 922 | 34.85 | `audited_clean` | **retained_bounded** |
+| 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 923 | 34.85 | `audited_clean` | **retained_bounded** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 882 | 34.79 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 705 | 32.96 | `unaudited` | unaudited |
@@ -131,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -654,7 +653,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
-| `i1_native_quadratic_static_source_normalization_bridge_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -772,6 +770,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_fanout_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_keff_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9114,19 +9113,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** Audited clean only as a bounded theorem. Boundary stress check found no unlisted load-bearing admission after narrowing: quark/lepton naming, Anti^2-as-L_L readout, alpha=1/3, GMN, T3(e_L), and Q(e_L) are all named or forwarded to audited dependencies. The source's broader title and SM-Y language are controlled by the retained-scope and not read as a derivation of physical hypercharge from the commutant alone. The decoration dependencies are not promoted to independent physics; they are used only as inherited chain inputs under the retained graph-first SU(3) surface. The stale runner prose saying alpha remains open is non-authoritative under the supplied current ledger metadata and does not break the chain.
 - **auditor confidence:** high
 
-### `i1_native_quadratic_static_source_normalization_bridge_2026-06-08`
-
-- **Note:** [`I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite zero-mode-projected periodic Z^3 complete-square algebra for a supplied source-normalized quadratic static-source action, including the two-source cross term and use of the retained Green-kernel 1/(4 pi r) asymptotic.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:key_terminology`)
-- **auditor:** `codex-cli-gpt-5.5-20260609-121507-a79b159c7b-i1_native_quadratic_static_s`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given S[phi; J] = (1/(2 g^2)) <d phi, d phi> - <J, phi> and <d phi,d phi>=<phi,L phi>, completing the square gives L phi_* = g^2 J and S_eff[J] = -(g^2/2)<J,L^+J>, hence V_cross(r) = -g^2 s_1 s_2 G(r).  _(class `A`)_
-- **chain closes:** True — The finite-dimensional zero-mean quadratic form has stationary equation (1/g^2)L phi - J = 0, so phi_* = g^2 L^+J and substitution gives -(g^2/2)<J,L^+J>. Expanding J = s_1 delta_a + s_2 delta_b with zero-mode projection gives the separation-dependent off-diagonal term -g^2 s_1 s_2 G(a-b), while the 1/(4 pi r) asymptotic is supplied by the retained_bounded Green-kernel authority.
-- **rationale:** The claimed bridge is explicitly bounded to a supplied quadratic source action and does not claim to derive the physical source normalization or energy readout. The displayed signs and factors check independently: the variation of (1/(2g^2))<phi,Lphi>-<J,phi> gives Lphi=g^2J, and completing the square gives the stated negative effective action with exactly one cross term -g^2 s_1s_2G(r). The only non-axiom cited physics authority needed for the asymptotic coefficient is retained_bounded, and the minimal-axiom citation is an accepted premise for the Z^3 lattice background.
-- **auditor confidence:** high
-
 ### `i3_zero_exact_theorem_note`
 
 - **Note:** [`I3_ZERO_EXACT_THEOREM_NOTE.md`](../../docs/I3_ZERO_EXACT_THEOREM_NOTE.md)
@@ -10793,6 +10779,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Under the gravity-observable hierarchy classifier, the runner-computed z = 2, 3, 4, 5 window is genuinely attractive on this tested 3D dense spent-delay card.  _(class `C`)_
 - **chain closes:** True — The primary runner constructs the lattice, field, propagation, detector probabilities, centroid shift, P_near, and channel bias directly, then computes all four z = 2..5 rows without importing or hard-coding the contested values. The cited hierarchy authority supplies the retained sign-interpretation rule, and the source note excludes the rows and broader claims that the authority does not retain.
 - **rationale:** The load-bearing attractive-window claim is a bounded first-principles runner computation on the stated card. The runner source is not a constant printer or cross-note equality check; it generates the graph, propagates amplitudes, computes the observables, and classifies z = 2, 3, 4, 5 as attractive with positive centroid, P_near, and bias. The one-hop hierarchy authority is retained_bounded, and the note explicitly narrows away z = 6, 2D distance-law, refinement, and all-distances claims. A second auditor should note the minor non-load-bearing Born display drift between 7.39e-16 in the note and 7.37e-16 in the runner output.
+- **auditor confidence:** high
+
+### `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
+
+- **Note:** [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-023044-a64d1566bc-lattice_greens_function_mara`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Because the graph-Laplacian symbol satisfies lambda(k)=|k|^2+O(|k|^4) at the only singular mode, the leading Green kernel is the inverse Fourier transform of 1/|k|^2, namely 1/(4 pi |x|).  _(class `C`)_
+- **chain closes:** True — The stated stencil gives lambda(k)=sum_i k_i^2-(1/12)sum_i k_i^4+O(|k|^6), so the singular Fourier coefficient is exactly the continuum |k|^-2 one under the packet's transform convention. Independently, the axis residual of 1/(4 pi r) scales as 7/(8 pi) r^-5, matching the runner's coefficient and confirming the stated lower-order lattice-harmonic behavior away from the source.
+- **rationale:** The load-bearing coefficient is not imported from the listed textbook authorities; it follows from the exact framework stencil's small-k symbol and the standard continuum Fourier normalization. The runner source genuinely evaluates the stencil symbol, continuum flux convention, and discrete residual, with no helper imports or external comparator data. The runner does hard-code the candidate continuum kernel for the flux/residual checks, but the independent Taylor/Fourier check closes the normalization from the stated operator rather than relying on that printout alone.
 - **auditor confidence:** high
 
 ### `lattice_keff_continuum_note`

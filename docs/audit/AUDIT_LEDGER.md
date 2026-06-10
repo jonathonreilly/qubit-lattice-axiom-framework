@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 212 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 809 |
+| **retained_bounded** | 810 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1391 |
+| unaudited | 1390 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,29 +60,29 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1249 |
+| `audited_clean` | 1250 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1707 |
+| `unaudited` | 1706 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1481 |
+| `bounded_theorem` | 1482 |
 | `decoration` | 54 |
 | `meta` | 324 |
 | `no_go` | 329 |
 | `open_gate` | 145 |
-| `positive_theorem` | 779 |
+| `positive_theorem` | 778 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 810 |
-| `leaf` | 1321 |
+| `medium` | 811 |
+| `leaf` | 1320 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 0
@@ -102,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1447 | 109.50 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 778 | 61.10 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1308 | 59.35 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1307 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1050 | 47.04 | `unaudited` | meta |
@@ -318,6 +318,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dimension_upper_bound_dependency_edge_repair_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4252,6 +4253,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner table reports that d=1,2 fail the attractive-gravity/beta lower-bound criteria while d=3,4,5 pass them, and the finite-k derivative bridge certifies the same d<=2 away versus d>=3 toward sign transition for the runner centroid observable.  _(class `C`)_
 - **chain closes:** True — The primary runner and exposed helpers compute the finite-k centroid derivative, finite-M centroid replay, beta fits, alpha entries, and I3 check for the stated runner inputs. An independent direct matrix-recursion check reproduces the displayed sign transition and table values within numerical tolerance.
 - **rationale:** The cited finite-k bridge is retained-bounded and directly supplies the runner-specific sign certificate, while the helper sources expose the original beta/I3 computation and cache freshness checks. The source note explicitly narrows the claim to finite-runner lower-bound support and disclaims unique d=3 selection, framework-internal derivation of the all-d potential family, and any axiom rewrite. Within that bounded scope, the computation closes without external comparator input or definition substitution.
+- **auditor confidence:** high
+
+### `dimension_upper_bound_dependency_edge_repair_note_2026-06-08`
+
+- **Note:** [`DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md`](../../docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Source-side dependency-edge repair plus exact finite-set composition for the dimension upper-bound wrapper; no framework-native Bertrand, Coulomb, electromagnetic-sector, substrate, or audit-status promotion claim was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-041050-2450172898-dimension_upper_bound_depend`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With L_runner = {3,4,5}, L_runner intersect {d : d <= 3} = {3} while L_runner intersect {d : d <= 4} = {3,4}, so the Bertrand route is the decisive uniqueness gate and the weak atomic route is companion support.  _(class `A`)_
+- **chain closes:** True — The finite intersections are exact, and the cited one-hop authorities are retained_bounded, which the rubric treats as retained-grade for this scoped bounded claim. The note does not consume the out-of-scope stronger physics statements preserved as non-claims in the support packets.
+- **rationale:** The load-bearing step is elementary finite-set algebra over the exposed lower support set and upper-bound scopes. The runner mainly verifies cross-note citation/existence edges and cache certificates, with only the finite set operations providing direct algebraic checks; it performs no first-principles physics computation and no external comparator check. Independent formula review of the displayed radial Green-kernel, effective-potential sign, dilation-scaling, and finite-composition identities found no sign, factor, or normalization defect relevant to this bounded repair scope.
 - **auditor confidence:** high
 
 ### `dimensional_gravity_table`

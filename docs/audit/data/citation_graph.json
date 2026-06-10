@@ -23198,11 +23198,11 @@
     },
     {
       "from": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      "to": "minimal_axioms"
     },
     {
       "from": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-      "to": "minimal_axioms"
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
     {
       "from": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
@@ -47714,11 +47714,35 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
     },
     {
       "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
     },
     {
       "from": "repo.repo_organization",
@@ -80377,16 +80401,16 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "minimal_axioms",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
         "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e6d15d8f52c8ebbb31c7ae132814f58c5aa54518418f11317f210b654c398d5f",
+      "note_hash": "8a7edd0213648f4c2aee6be9d1f4f568fcdd4f709f3b7d5da764387c812571f0",
       "path": "docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md",
       "runner_path": "scripts/microcausality_finite_range_h_bridge_2026_05_09.py",
-      "title": "Bounded Action-Support J Bound for the Microcausality / Lieb-Robinson Bridge"
+      "title": "Bounded Action-Support Budgets and a Proved Finite-Range Lieb-Robinson Bridge for Microcausality"
     },
     "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08": {
       "claim_id": "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08",
@@ -92184,11 +92208,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "abj_epsilon_index_square_block_no_go_note_2026-05-30",
+        "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04"
+        "grown_transfer_basin_targeted_repair_note_2026-06-04",
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
+        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
+        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dbc3c8bcb9a6dc6564c940b3b2622276343abe3399d162280ff722778312242d",
+      "note_hash": "a5ba6b548fe975f4196bcabf781a51cb291509693a9a4186360d267874163c95",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -106260,7 +106290,7 @@
       "open_gate": 159,
       "positive_theorem": 619
     },
-    "edge_count": 12032,
+    "edge_count": 12038,
     "leaf_count": 1078,
     "node_count": 3255,
     "root_count": 1044,

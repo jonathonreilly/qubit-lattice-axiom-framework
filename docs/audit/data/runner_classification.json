@@ -19685,8 +19685,8 @@
       "counts": {
         "A": 0,
         "B": 3,
-        "C": 32,
-        "D": 2
+        "C": 30,
+        "D": 9
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -70809,8 +70809,8 @@
       "counts": {
         "A": 0,
         "B": 3,
-        "C": 32,
-        "D": 2
+        "C": 30,
+        "D": 9
       },
       "decoration_candidate": false,
       "dominant_class": "C",

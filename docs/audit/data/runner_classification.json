@@ -21900,6 +21900,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_patched_stationary_system_pl_s3.py"
     },
+    "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 18,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_pauli_closed_shell_color_marginal_discharge_2026_06_10.py"
+    },
     "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02": {
       "assert_count": 0,
       "counts": {
@@ -58196,6 +58208,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_pauli_closed_shell_color_marginal_discharge_2026_06_10.py": {
+      "assert_count": 1,
+      "claims": [
+        "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 18,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_per_plaquette_from_adjacency_license_2026_06_09.py": {
       "assert_count": 1,
       "claims": [
@@ -74807,12 +74834,12 @@
     "dominant_class_distribution": {
       "A": 388,
       "B": 449,
-      "C": 1042,
+      "C": 1043,
       "D": 380,
       "none": 454
     },
-    "runners_classified": 2713,
-    "runners_with_C": 1398,
-    "runners_with_D": 815
+    "runners_classified": 2714,
+    "runners_with_C": 1399,
+    "runners_with_D": 816
   }
 }

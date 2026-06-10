@@ -25937,6 +25937,38 @@
       "to": "universal_gr_discrete_global_closure_note"
     },
     {
+      "from": "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10",
+      "to": "color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09"
+    },
+    {
+      "from": "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10",
+      "to": "matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09"
+    },
+    {
+      "from": "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10",
+      "to": "color_einselection_matter_unitary_primitivity_requires_background_connection_narrow_theorem_note_2026-06-09"
+    },
+    {
+      "from": "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10",
+      "to": "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
+    },
+    {
+      "from": "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10",
+      "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10",
+      "to": "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05"
+    },
+    {
+      "from": "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10",
+      "to": "color_orientation_of_the_state_is_predictively_vacuous_narrow_theorem_note_2026-06-09"
+    },
+    {
+      "from": "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10",
+      "to": "color_purity_does_not_reduce_to_past_hypothesis_slot_narrow_theorem_note_2026-06-09"
+    },
+    {
       "from": "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
       "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
     },
@@ -83953,6 +83985,27 @@
       "runner_path": "scripts/frontier_patched_stationary_system_pl_s3.py",
       "title": "Patched Stationary System on PL S^3 \u2014 Theorem Note"
     },
+    "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10": {
+      "claim_id": "pauli_closed_shell_color_marginal_discharge_discrete_reduction_bounded_theorem_note_2026-06-10",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (closed-shell discharge and open-shell residual for admission (B)'s purity core)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09",
+        "matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09",
+        "color_einselection_matter_unitary_primitivity_requires_background_connection_narrow_theorem_note_2026-06-09",
+        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+        "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05",
+        "color_orientation_of_the_state_is_predictively_vacuous_narrow_theorem_note_2026-06-09",
+        "color_purity_does_not_reduce_to_past_hypothesis_slot_narrow_theorem_note_2026-06-09"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "305a57e4f407d6529b32c070c0af5e87bd9a6503b747f51db88008efd4f0c80f",
+      "path": "docs/PAULI_CLOSED_SHELL_COLOR_MARGINAL_DISCHARGE_DISCRETE_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+      "runner_path": "scripts/frontier_pauli_closed_shell_color_marginal_discharge_2026_06_10.py",
+      "title": "Pauli Filling Forces the Color Marginal `I\u2083/3` in Closed-Shell Sectors"
+    },
     "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02": {
       "claim_id": "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
       "claim_type_author_hint": "positive_theorem",
@@ -92218,7 +92271,7 @@
         "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f92a77cc6e794947555ce52b7d38ae15f60a9483e7731eda80308430835e2b96",
+      "note_hash": "a033e08b211000c78f0a9d8d40b1d8ba4b07533fcf3a040cbb3917d8e9a7403e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -106273,7 +106326,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1021,
+      "bounded_theorem": 1022,
       "decoration": 1,
       "meta": 278,
       "no_go": 162,
@@ -106282,7 +106335,7 @@
       "positive_theorem": 195
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1439,
+      "bounded_theorem": 1440,
       "decoration": 1,
       "meta": 278,
       "no_go": 278,
@@ -106290,10 +106343,10 @@
       "open_gate": 159,
       "positive_theorem": 619
     },
-    "edge_count": 12038,
-    "leaf_count": 1078,
-    "node_count": 3255,
+    "edge_count": 12046,
+    "leaf_count": 1077,
+    "node_count": 3256,
     "root_count": 1044,
-    "runners_with_path": 2839
+    "runners_with_path": 2840
   }
 }

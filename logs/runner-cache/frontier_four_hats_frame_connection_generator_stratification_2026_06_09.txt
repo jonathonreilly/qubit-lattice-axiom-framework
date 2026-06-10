@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py
+runner_sha256: 04a0fa3a15d0782625ac5dac75765e6375281819368f85ee0a8f0dc944b6c7c1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+[PASS] su(3) basis has 8 elements
+[PASS] every su(3) basis element is traceless anti-Hermitian
+[PASS] frame stabilizer dim = 2 (maximal torus T^2) for all random frames
+       observed stabilizer dims = [np.int64(2), np.int64(2), np.int64(2), np.int64(2), np.int64(2), np.int64(2)]
+[PASS] arrow 1 is not onto: residual connection freedom 8 - 2 = 6 > 0
+[PASS] arrow-1 residual connection is color-diagonal in the frame (V in T^2)
+[PASS] stabilizer connection gives unistochastic S = I3 (block-07 no-depolarization)
+[PASS] transverse connection gives all-nonzero S (depolarization-capable)
+[PASS] connection V is special-unitary (det V = 1)
+[PASS] each exhibited branch is a valid su(3) generator
+[PASS] each branch exponentiates back to the SAME connection V
+[PASS] distinct generators of the same V exist (min separation > 1)
+[PASS] branch separations grow without bound (Z-lattice, not a finite set)
+       generator separations ||X0 - Xk||_F = [np.float64(8.89), np.float64(8.89), np.float64(15.39), np.float64(8.89)]
+[PASS] arrow 2 is not onto: >= 2 distinct generators share one holonomy V
+[PASS] frame -> connection -> generator chain has a gap at EACH arrow
+[PASS] record axiom delivers neither the frame nor the generator on the chain
+[PASS] NO hat discharged (each downstream object remains undelivered)
+[PASS] non-reduction, not a discharge: stratification strengthens the obstruction
+[PASS] no partition map claimed for irreducible color: {P_r} used as a supplied frame, its SU(3) stabilizer is only T^2 (no nontrivial covariant projector)
+
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

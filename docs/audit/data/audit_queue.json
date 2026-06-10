@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 338,
     "high": 240,
-    "leaf": 412,
+    "leaf": 411,
     "medium": 375
   },
   "cycle_break_target_count": 0,
@@ -17477,30 +17477,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17598,6 +17574,37 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/gravity_sign_bottom_leading_order_decouples_from_lv_2026_06_08.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py"
+      ],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_interacting_rp_full_algebra_2026_06_05.py",
       "transitive_descendants": 16
     },
     {
@@ -29090,37 +29097,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
-        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_interacting_rp_full_algebra_2026_06_05.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -41101,6 +41077,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 18,
-  "total_pending": 1365
+  "ready_count": 17,
+  "total_pending": 1364
 }

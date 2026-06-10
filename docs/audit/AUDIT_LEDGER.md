@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 822 |
+| **retained_bounded** | 823 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 40 |
-| unaudited | 1363 |
+| unaudited | 1362 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1268 |
+| `audited_clean` | 1269 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1679 |
+| `unaudited` | 1678 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 815 |
-| `leaf` | 1316 |
+| `medium` | 816 |
+| `leaf` | 1315 |
 
 - **Retained pending chain closure:** 15
 - **Citation cycles detected:** 0
@@ -115,7 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 811 | 38.66 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 707 | 38.47 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1070 | 37.06 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1071 | 37.07 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 922 | 35.85 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1166 | 35.69 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 882 | 34.79 | `audited_clean` | **retained_bounded** |
@@ -492,6 +492,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | C | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6840,6 +6841,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given the continuum free Dirac kernel and CAR quantization, the negative-energy modes can be particle-hole relabeled so that the normal-ordered finite-mode Hamiltonian is H_CAR = sum E(p)(a^dag a + b^dag b), bounded below by 0.  _(class `A`)_
 - **chain closes:** True — The retained_bounded cited authority supplies the continuum Euclidean kernel, and the remaining facts close by Clifford algebra and finite CAR algebra. Independently, (m+i gamma.p)(m-i gamma.p)=(m^2+p^2)I, H_D^2=E^2I with the standard double degeneracy, and b=d^dag turns -E d^dag d into E b^dag b up to a finite vacuum constant that the displayed H_CAR has shifted to zero.
 - **rationale:** The runner source performs actual finite matrix and finite occupation checks, with no helper imports, external comparator, or tuned numerical input. The independent algebraic checks confirm the signs, normalizations, projector identities, and CAR occupancy bound claimed in the source note. The clean result is only for the stated bounded CAR-given free-mode algebra and does not propagate to CAR selection, microcausality, Wightman reconstruction, or spin-statistics.
+- **auditor confidence:** high
+
+### `free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`
+
+- **Note:** [`FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the supplied free massive Dirac mode algebra, CAR gives a bounded-below one-mode Hamiltonian and the normalized u/v mode projectors give the equal-time CAR identity; the Bose sign choice is an unbounded antiparticle-occupation diagnostic.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-052837-6538f45dde-free_dirac_car_positive_ener`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** CAR reordering of H_hat = E a^dag a - E b b^dag using b b^dag = 1 - b^dag b gives, up to the vacuum constant, H_hat = E a^dag a + E b^dag b, while the normalized u/v mode projectors sum to I_4.  _(class `A`)_
+- **chain closes:** True — The cited authority is retained_bounded for the free Dirac mode split and u/v structure, and the current note only performs finite CAR/Bose reordering plus projector-completeness algebra over that input. The note explicitly leaves CAR selection, OS/Wightman field construction, and spacelike microcausality outside scope.
+- **rationale:** The load-bearing CAR calculation is an algebraic closure: H = E n_a - E(1 - n_b) differs from E n_a + E n_b only by the discarded vacuum constant, giving finite fermionic eigenvalues {0,E,E,2E}. The Bose alternative H = E n_a - E n_b is unbounded below as n_b grows, and the equal-time matrix identity follows from the positive- and negative-energy orthonormal eigenspaces resolving the identity. The runner is a finite algebra/sample verification, not a first-principles framework compute, but the scoped bounded support conclusion follows from the retained_bounded upstream mode algebra without external comparator or hidden bridge.
 - **auditor confidence:** high
 
 ### `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`

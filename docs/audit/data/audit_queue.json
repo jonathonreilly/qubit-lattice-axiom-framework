@@ -3,7 +3,7 @@
     "critical": 338,
     "high": 241,
     "leaf": 443,
-    "medium": 392
+    "medium": 391
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -9815,6 +9815,38 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "sign_portability_invariant_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
+        "alt_connectivity_family_basin_note",
+        "second_grown_family_sign_note",
+        "third_grown_family_sign_note",
+        "fourth_family_quadrant_note",
+        "fifth_family_radial_boundary_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
+        "scripts/gate_b_nonlabel_connectivity_v1.py"
+      ],
+      "load_bearing_score": 8.875,
+      "note_path": "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
+      "transitive_descendants": 82
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -12209,38 +12241,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_koide_q_reduced_observable_restriction_theorem.py",
       "transitive_descendants": 83
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "sign_portability_invariant_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
-        "alt_connectivity_family_basin_note",
-        "second_grown_family_sign_note",
-        "third_grown_family_sign_note",
-        "fourth_family_quadrant_note",
-        "fifth_family_radial_boundary_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
-        "scripts/gate_b_nonlabel_connectivity_v1.py"
-      ],
-      "load_bearing_score": 8.875,
-      "note_path": "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
-      "transitive_descendants": 82
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17487,36 +17487,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "fifth_family_radial_boundary_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
-        "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
-        "scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py",
-        "scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py",
-        "scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py",
-        "scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py",
-        "scripts/gate_b_no_restore_farfield.py"
-      ],
-      "load_bearing_score": 7.409,
-      "note_path": "docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py",
-      "transitive_descendants": 84
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "plaquette_bootstrap_framework_integration_note_2026-05-03",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17663,15 +17633,15 @@
         "record_classical_semigroup_boundary_2026-06-06",
         "record_markov_generator_embeddability_boundary_2026-06-06"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 4.0,
+      "load_bearing_score": 6.085,
       "note_path": "docs/ST1_ST2_SAME_WALL_GAUGE_DYNAMICS_RESIDUAL_CONVERGENCE_NARROW_THEOREM_NOTE_2026-06-08.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_st1_st2_same_wall_gauge_dynamics_residual_2026_06_08.py",
-      "transitive_descendants": 7
+      "transitive_descendants": 23
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42387,5 +42357,5 @@
     }
   ],
   "ready_count": 53,
-  "total_pending": 1414
+  "total_pending": 1413
 }

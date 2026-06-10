@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 799 |
+| **retained_bounded** | 800 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1412 |
+| unaudited | 1411 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1234 |
+| `audited_clean` | 1235 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1728 |
+| `unaudited` | 1727 |
 
 | claim_type | count |
 |---|---:|
@@ -409,6 +409,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_repaired_positive_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5554,6 +5555,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because L is symmetric, d/dPhi[1/2 Phi^T L Phi]=L Phi, and adding the mass and source derivatives gives grad_Phi S=(L+mu^2 I)Phi-G_c rho.  _(class `A`)_
 - **chain closes:** True — The result is direct quadratic-form calculus on the displayed action: the graph-gradient, mass, and source derivatives have the stated signs and factors. The cited self-consistency note is not load-bearing for this variational identity and is not used to select the action.
 - **rationale:** The load-bearing step is a genuine class A algebraic closure over a stipulated action, not a definition substitution or numerical match. The runner source performs exact rational checks of the Laplacian construction, action gradient, stationary-source witness, constant-mode behavior, positive-mu2 witnesses, and scope firewalls rather than merely printing PASS. Independently, with the standard unordered-edge, nonnegative-weight Laplacian convention, Phi^T L Phi=sum_E w_ij(Phi_i-Phi_j)^2, so the factor 1/2 differentiates to L Phi; the mass and source terms then give the displayed equation. The repaired note explicitly disclaims action selection and operator uniqueness, so no hidden selection theorem is being imported.
+- **auditor confidence:** high
+
+### `fifth_family_radial_boundary_note`
+
+- **Note:** [`FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded certificate for the radial-shell family at drift=0.20, seed=0: exact zero-source and neutral cancellations plus the local plus/minus sign-orientation boundary; no wider radial-basin theorem is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-030715-d8cff47a7b-fifth_family_radial_boundary`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At drift=0.20, seed=0, the radial-shell row has exact zero/neutral controls but flips sign orientation with plus < 0, minus > 0, and a negative first-order orientation slope.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the deterministic grown row, radial-shell connectivity, source field, propagation, and detector-centroid observable, then computes the claimed signs. The separate certificate closes the zero/neutral exactness algebraically from field linearity and verifies the negative first-order orientation coefficient by differentiating the propagation recurrence.
+- **rationale:** The primary runner is not print-only and does not hard-code the contested values; it computes the finite row from the supplied framework operators and asserts the local boundary signs. The helper certificate no longer depends on stdout substring replay: it imports the source-level certificate computation, checks exact zero/neutral cancellations, and computes the negative variational slope with finite plus/minus signs matching. The result is clean only at the bounded row/window stated in the note; the note correctly excludes a wider basin or corrected positive-orientation variant.
 - **auditor confidence:** high
 
 ### `fifth_family_radial_fm_transfer_note`

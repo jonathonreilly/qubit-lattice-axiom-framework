@@ -47574,10 +47574,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "fifth_family_radial_boundary_note"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "fifth_family_complex_boundary_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
         "fifth_family_radial_boundary_note",
         "plaquette_bootstrap_framework_integration_note_2026-05-03",
         "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
         "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-        "fifth_family_complex_boundary_note"
+        "fifth_family_complex_boundary_note",
+        "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e38fbb963f10e6137422116c6f0a42549646a2f284733f48527f3a2c4b59dfa3",
+      "note_hash": "e13d05bb8a6bdbe35f4efe16d6faf2c163ad43753c6324047f898f251e309842",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

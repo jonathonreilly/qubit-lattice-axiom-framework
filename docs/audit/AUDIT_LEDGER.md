@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 211 |
-| **retained_no_go** | 206 |
+| **retained_no_go** | 205 |
 | **retained_bounded** | 812 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1402 |
+| unaudited | 1403 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 1252 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1718 |
+| `unaudited` | 1719 |
 
 | claim_type | count |
 |---|---:|
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -490,7 +489,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
-| `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1171,6 +1169,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -6732,19 +6731,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The source partitions the cosmological backdrop into five framework/conditional context ingredients and three local supplied premises C1-C3, keeps the sets disjoint, records zero admission retirements, and explicitly denies theorem-grade closure or repo-wide status effects.  _(class `A`)_
 - **chain closes:** True — As an open_gate, the row closes: the registered runner verifies the finite partition, source-firewall phrases, non-link context-surface handling, and no-overclaim boundaries, while the source leaves C1-C3 and all cosmology derivations open.
 - **rationale:** Clean only as an open admission-boundary gate. The runner's 48 PASS checks are textual and finite-partition guards rather than cosmology dynamics, but that is exactly the claimed object: a record that the existing eta-cascade backdrop still depends on C1 cosmological principle, C2 adiabatic expansion, and C3 non-Lambda EOS labels. Independent partition arithmetic confirms 5 framework/conditional ingredients plus 3 supplied premises, disjoint, with union size 8 and zero retired admissions. No retained theorem, observational value, entropy-conservation derivation, FRW dynamics, Tier-A registry entry, or effective-status promotion is claimed.
-- **auditor confidence:** high
-
-### `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`
-
-- **Note:** [`FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md`](../../docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Audited the narrow claim that, on the one-qubit M2(C) local algebra over the Z^3 substrate, a granted on-site spinor U_2pi=-I sign does not force CAR via the rotation-exchange route without an additional continuous/discrete exchange bridge or graded-locality input.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-ec9a192c2f-fs_rotation_exchange_discret`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The unital *-algebra generated by U_2pi⊗I and I⊗U_2pi is scalars only while the exchange swap P is non-scalar, so the on-site 2π sign cannot generate or encode the two-site exchange sign.  _(class `A`)_
-- **chain closes:** True — The Pauli/tensor-product identities close directly: exp(2πiσ3/2)=-I2, both two-site lifts are -I4, while the swap P has symmetric/antisymmetric eigenvalues and is non-scalar. The retained parent supplies the broader statistics-agnostic wall, and the accepted Lattice/Quantum axiom premise supplies only the discrete site set and one-qubit local algebra, not graded locality or a continuous configuration-space homotopy.
-- **rationale:** The runner source performs exact symbolic matrix algebra rather than printing constants, and the decisive identities also check manually from the Pauli matrices and tensor swap. No PDG, fitted value, tuned scale, or external numerical comparator is imported. The no-go discipline gate is satisfied for the scoped route-pruning claim: it leaves graph-braid/discrete-homotopy and graded-locality paths explicitly open and does not assert absolute impossibility of fermionic statistics.
 - **auditor confidence:** high
 
 ### `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`
@@ -16888,6 +16874,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The mathematical chain closes within the stated abstract tensor-product scope, and the runner source genuinely performs exact symbolic matrix checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream input. Under the stated tie-breaker, zero external comparator checks plus reduction to a single retained parent claim and standard mathematics requires audited_decoration rather than audited_clean. | The mathematical chain closes: the cited Cl(3) authority is retained and supplies the two-dimensional Pauli carrier, and the rest is exact finite-dimensional Pauli/Jordan-Wigner algebra. The runner source genuinely computes symbolic matrix identities and reports PASS=44 FAIL=0, all class A. Under the explicit tie-breaker, zero external comparator checks plus one retained parent claim and standard algebra classifies this as audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract scope: the retained upstream note supplies the two-dimensional Pauli carrier, and the rest is finite Pauli-tensor/Jordan-Wigner algebra. The load-bearing step is class A, the runner source genuinely performs exact symbolic checks, and the packet reports PASS=44 FAIL=0. Under the explicit clean-vs-decoration tie-breaker, zero D checks plus one retained parent claim plus standard mathematics classifies this as audited_decoration, not audited_clean. | The mathematical chain closes within the note's abstract scope: the retained upstream authority supplies the two-dimensional Pauli carrier, and the Jordan-Wigner CAR statements are finite tensor-product algebra. The runner source performs exact symbolic matrix checks rather than printing constants, and all checks are class A with no external comparator. Under the stated tie-breaker, a zero-D, pure class-A chain reducing to one retained parent plus standard finite-dimensional mathematics is audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract tensor-product scope, and the runner source performs real exact symbolic checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream Cl(3) carrier. Under the binding tie-breaker, zero D checks plus a chain reducing to one retained parent claim and standard mathematics is classified as audited_decoration, not audited_clean.
 - **decoration parent:** `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10`
 - **auditor confidence:** judicial_panel_majority
+
+### `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-0834e4fc8c-staggered_dirac_substep1_sta`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The qubit-ladder generators and the JW-fermion generators generate the same full ungraded matrix algebra on each finite tensor block, while the hard-core-boson site has the same two-dimensional per-site space as a fermion.  _(class `C`)_
+- **chain closes:** True — The cited minimal axiom premise supplies the one-qubit local algebra on the Z^3 substrate, and standard finite tensor-product algebra closes the hard-core-boson and JW-CAR computations. No additional retained selector is needed for this scoped negative conclusion; possible future graded-locality or spin-statistics selectors are outside the claim.
+- **rationale:** The runner source actually constructs Pauli tensor operators, JW strings, generated-algebra ranks, hard-core/free-boson dimension checks, and finite ordering obstructions; it is not merely printing expected constants. Independent algebra confirms that disjoint bare ladders commute, JW-dressed ladders satisfy CAR, and both generator sets recover the same full matrix algebra, so ungraded algebra and dimension data cannot distinguish the statistics frame. The no-go is properly scoped to forcing from those baseline data and does not claim that every possible future graded-locality or spin-statistics principle is excluded.
+- **auditor confidence:** high
 
 ### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
 

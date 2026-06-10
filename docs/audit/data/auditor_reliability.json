@@ -66,9 +66,9 @@
     },
     "codex-gpt-5.5": {
       "audits_with_runner_class": {
-        "A": 677,
+        "A": 676,
         "B": 33,
-        "C": 420,
+        "C": 421,
         "D": 12,
         "E": 21,
         "F": 12,
@@ -80,22 +80,22 @@
         "same_severity": 31
       },
       "criticality_counts": {
-        "critical": 169,
+        "critical": 170,
         "high": 159,
         "leaf": 504,
-        "medium": 357
+        "medium": 356
       },
       "cross_confirmation_agreement_rate": 0.776,
       "cross_confirmation_outcomes": {
         "awaiting_second": 1,
-        "confirmed": 235,
+        "confirmed": 236,
         "third_confirmed_first": 30,
         "third_confirmed_hybrid": 4,
         "third_confirmed_second": 34
       },
-      "cross_confirmation_pairs_agreed_first_try": 235,
-      "cross_confirmation_pairs_n": 303,
-      "cross_confirmation_pairs_seen": 303,
+      "cross_confirmation_pairs_agreed_first_try": 236,
+      "cross_confirmation_pairs_n": 304,
+      "cross_confirmation_pairs_seen": 304,
       "judicial_third_pass_count": 63,
       "overturned_by_third": 57,
       "ratified_by_third": 57,
@@ -137,8 +137,8 @@
     "auditor_families_observed": 3,
     "overall_agreement_rate": 0.787,
     "total_audits_recorded": 1407,
-    "total_cross_confirmation_family_participations": 367,
-    "total_cross_confirmation_pairs": 319,
+    "total_cross_confirmation_family_participations": 368,
+    "total_cross_confirmation_pairs": 320,
     "total_third_pass_decisions": 128
   }
 }

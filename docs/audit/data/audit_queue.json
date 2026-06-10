@@ -1,37 +1,13 @@
 {
   "by_criticality": {
-    "critical": 287,
+    "critical": 286,
     "high": 279,
     "leaf": 430,
-    "medium": 409
+    "medium": 410
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-      "claim_scope": "Audited only the scoped no-go that the Lattice/Quantum qubit-on-Z^3 baseline plus finite tensor-product ungraded algebra, dimension, and finite local-ordering checks do not derive Grassmann/CAR statistics as forced rather than compatible.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "retained_no_go",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.905,
-      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py",
-      "transitive_descendants": 958
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -17114,14 +17090,39 @@
         "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "minimal_axioms"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 4.67,
+      "load_bearing_score": 6.644,
       "note_path": "docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_persistent_record_instrument_construction.py",
+      "transitive_descendants": 24
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.67,
+      "note_path": "docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py",
       "transitive_descendants": 8
     },
     {

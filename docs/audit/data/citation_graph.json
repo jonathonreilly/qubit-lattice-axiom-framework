@@ -47574,10 +47574,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
         "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
         "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
         "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
-        "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08"
+        "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08",
+        "universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a4efb4e3a6a5b500a4b64bdc662750a009ddef72dd198ab1d7382d1bbb85d563",
+      "note_hash": "ee098bd0745d74d37427061586e98542e2c24571335751ae7e54e28fa0ab3d9b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

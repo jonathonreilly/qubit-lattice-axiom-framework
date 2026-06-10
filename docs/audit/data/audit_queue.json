@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 338,
     "high": 240,
-    "leaf": 438,
+    "leaf": 437,
     "medium": 375
   },
   "cycle_break_target_count": 0,
@@ -17455,34 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dimension_selection_note",
-        "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
-        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-        "coulomb_stability_upper_bound_support_note_2026-05-20",
-        "d3_upper_bound_import_scope_gate_note_2026-06-06"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.748,
-      "note_path": "docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 18
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17610,6 +17582,33 @@
       "ready": true,
       "runner_path": "scripts/frontier_per_plaquette_from_adjacency_license_2026_06_09.py",
       "transitive_descendants": 18
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_self_consistent_two_body_note_2026-04-11",
+        "three_generation_observable_theorem_note",
+        "three_generation_structure_note",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py",
+      "transitive_descendants": 17
     },
     {
       "audit_independence_required": "any_non_self",
@@ -29101,33 +29100,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_self_consistent_two_body_note_2026-04-11",
-        "three_generation_observable_theorem_note",
-        "three_generation_structure_note",
-        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -41754,6 +41726,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 40,
-  "total_pending": 1391
+  "ready_count": 39,
+  "total_pending": 1390
 }

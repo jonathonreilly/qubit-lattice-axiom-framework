@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "acphilambda_hw_complementation_equivariance_support_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -91963,15 +91963,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
         "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
         "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08",
         "universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08",
         "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-        "acphilambda_hw_complementation_equivariance_support_note_2026-06-09"
+        "acphilambda_hw_complementation_equivariance_support_note_2026-06-09",
+        "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "90937fc32ae434f5930392153968ef7f7d42607868304d4c05b77c148ffff513",
+      "note_hash": "4c5a83cf120c34d783a5ffba0238da8c9fe1a2d385e5231bb31affeaa9145a5c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -106031,7 +106031,7 @@
       "positive_theorem": 619
     },
     "edge_count": 12002,
-    "leaf_count": 1081,
+    "leaf_count": 1080,
     "node_count": 3249,
     "root_count": 1045,
     "runners_with_path": 2831

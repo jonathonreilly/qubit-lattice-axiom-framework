@@ -47570,10 +47570,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
     },
     {
@@ -47595,6 +47591,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22"
     },
     {
       "from": "repo.front_door_status",
@@ -91961,17 +91961,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
         "fifth_family_radial_boundary_note",
         "plaquette_bootstrap_framework_integration_note_2026-05-03",
         "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
+        "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
         "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ea2228b625a6105896b0a7b0c9eaeae48ed2987b0b7d54bfeb17ecaf1c5d48e2",
+      "note_hash": "8c41285c06c6a81a47ee00070f2707022ce9d61309c795fb3ed76008d4b4e7f5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

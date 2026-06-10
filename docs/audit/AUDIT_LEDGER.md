@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 798 |
+| **retained_bounded** | 799 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1414 |
+| unaudited | 1413 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1232 |
+| `audited_clean` | 1233 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1730 |
+| `unaudited` | 1729 |
 
 | claim_type | count |
 |---|---:|
@@ -817,6 +817,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11522,6 +11523,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For any vector v, <v, PEPv> = <Pv, EPv> >= 0 and P - PEP = P(I - E)P >= 0, while finite-dimensional trace cyclicity gives Tr(rho PEP) = Tr(P rho P E).  _(class `A`)_
 - **chain closes:** True — The positivity/order claims follow from quadratic forms and I-E >= 0; the trace identity follows from finite trace cyclicity; and the nested identity follows from P=P^* and Q=Q^*. No Lüders update, Born rule, or trace-probability bridge is used.
 - **rationale:** The load-bearing content is standard finite-dimensional algebra over the stated projection, effect, and density-matrix hypotheses. The runner source performs symbolic and randomized matrix checks of these identities and includes a guard against confusing PEP compression with Jordan symmetrization; it does not hard-code an imported contested premise. The only cited upstream authority is flagged as an accepted axiom premise and is used only for finite matrix-carrier context, so the accepted-premise carve-out applies. The note's explicit boundary language prevents importing the missing Lüders/Born/probability bridge into this audited claim.
+- **auditor confidence:** high
+
+### `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For finite qubit-lattice regions, under the LSP/canonical Naimark-frame selection K_P=P for ideal unrefined projective measurement, the sequential joint effect is K_P† E K_P=PEP and the postselected state is P sigma P / Tr(P sigma P).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-025927-646786aa54-luders_sequential_product_co`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The conclusion (1) follows by direct algebra: K_P† E K_P = P† E P = P E P, using P† = P.  _(class `A`)_
+- **chain closes:** True — Given the retained-bounded LSP-projective authority for the scoped K_P=P selection and the projection identity P†=P, the displayed bridge is direct operator algebra. The result does not assert uniqueness of projective instruments, non-projective POVM selection, or physical closure outside the ideal unrefined projective/canonical-frame scope.
+- **rationale:** The load-bearing step is a genuine class A algebraic closure over retained-grade inputs: the LSP-projective cited authority is retained_bounded, the minimal axiom authority is an accepted premise, and the Kraus-Choi authority is retained-grade decoration. The runner substantively checks exact matrix identities and a non-Lüders twist, with the remaining PASS lines only checking source-boundary wording. This is clean scoped bounded support, not a universal uniqueness theorem or a promotion of any broader Lüders row.
 - **auditor confidence:** high
 
 ### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`

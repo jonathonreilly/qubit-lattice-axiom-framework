@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3128 |
-| Applied audit verdicts | 1405 |
+| Applied audit verdicts | 1406 |
 | Retained-grade rows, including boxed decorations | 1279 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 812 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1403 |
+| Unaudited rows | 1402 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 27 |
+| Audited conditional rows | 28 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1407 |
-| Ready rows | 19 |
+| Total pending rows | 1406 |
+| Ready rows | 18 |
 | Cycle-break targets | 0 |
-| Critical pending | 289 |
+| Critical pending | 288 |
 | High pending | 279 |
 | Medium pending | 409 |
 | Leaf pending | 430 |
 
 Next ready rows by queue order:
 
-- [`axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; audit_in_progress
 - [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; audit_in_progress
 - [`axiom_first_spin_statistics_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - medium; unaudited
 - [`light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md) - medium; unaudited
+- [`matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08`](../../docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -90,7 +90,7 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1473 descendants; score 112.026
 - `three_generation_observable_theorem_note` - critical; 994 descendants; score 61.959
-- `graph_first_su3_integration_note` - critical; 1342 descendants; score 60.891
+- `graph_first_su3_integration_note` - critical; 1341 descendants; score 60.890
 - `observable_principle_from_axiom_note` - critical; 854 descendants; score 58.240
 - `minimal_axioms_2026-05-03` - critical; 970 descendants; score 48.423
 - `key_terminology` - critical; 1185 descendants; score 47.212

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 821 |
+| **retained_bounded** | 822 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 40 |
-| unaudited | 1364 |
+| unaudited | 1363 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1267 |
+| `audited_clean` | 1268 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1680 |
+| `unaudited` | 1679 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 816 |
-| `leaf` | 1315 |
+| `medium` | 815 |
+| `leaf` | 1316 |
 
 - **Retained pending chain closure:** 15
 - **Citation cycles detected:** 0
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1308 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1049 | 47.04 | `unaudited` | meta |
+| 6 | `key_terminology` | meta | critical | 1050 | 47.04 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1219 | 44.25 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 617 | 40.77 | `audited_clean` | **retained** |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1016 | 40.49 | `unaudited` | unaudited |
@@ -486,6 +486,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_zdet_fermionic_statistics_admission_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | C | - |
@@ -6741,6 +6742,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** TOWARD survives across the tested W=5..7 width ladder, the W=8 row is only a frozen supportive companion, and the moving tail fits keep the 4D distance law width-limited rather than asymptotically closed.  _(class `C`)_
 - **chain closes:** True — The primary runner genuinely constructs the 4D lattice propagator through Lattice4D and computes the W=5..7 deltas and tail fits, and the cached stdout matches the note. The W=8 contribution is used only in the qualified frozen-companion sense stated by the note, so no live W=8 or asymptotic closure is needed for this bounded claim.
 - **rationale:** The source is narrow enough that the completed W=5..7 computation is the load-bearing evidence, and the runner source is not a hard-coded PASS harness: it builds fields, propagates amplitudes, computes detector centroids, and fits the post-peak tails. The cited dimensional table is retained_bounded and supports the same bounded/open read; the note does not promote the 4D row to a Newtonian 1/b^2 closure or to a live W=8 theorem. The residual W=8 evidence remains a frozen companion log, but that limitation is explicitly inside the audited claim boundary rather than hidden.
+- **auditor confidence:** high
+
+### `four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional algebraic non-reduction for the supplied C^3 carrier and displayed frame -> connection -> generator chain; no realized frame, connection, generator, or dynamics is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-052509-e797411dd6-four_hats_frame_connection_g`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For a complete frame on C^3 the SU(3) stabilizer is T^2 of dimension 2, leaving six transverse su(3) connection directions, and a regular SU(3) connection has an unbounded integer lattice of traceless anti-Hermitian logarithms, so neither arrow determines its downstream object.  _(class `A`)_
+- **chain closes:** True — The stabilizer calculation closes by diagonalizing in the supplied frame: determinant-one diagonal phases form T^2, and the off-diagonal su(3) complement has dimension six. For regular V, eigenphase shifts by 2*pi integer triples with zero sum give distinct traceless anti-Hermitian logarithms at unbounded Frobenius distance.
+- **rationale:** The displayed quantitative identities check independently: dim su(3)=8, dim T^2=2, |<e_i|V_diag|e_j>|^2=delta_ij, and the logarithm branches form an unbounded integer lattice subject to zero trace. The runner mostly implements these finite-dimensional algebra checks rather than importing empirical comparators. Its hard-coded Record-endpoint status check is treated as non-load-bearing for this scoped theorem, so the clean verdict applies only to the displayed non-reduction chain on the supplied C^3 carrier, not to any broader claim that future dynamics cannot jointly supply the objects.
 - **auditor confidence:** high
 
 ### `fourth_family_complex_boundary_note`

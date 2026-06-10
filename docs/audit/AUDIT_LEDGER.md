@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 804 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1402 |
+| unaudited | 1401 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1241 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1718 |
+| `unaudited` | 1717 |
 
 | claim_type | count |
 |---|---:|
@@ -1385,6 +1385,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -11716,6 +11717,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The matched comparison does not support a clean '4D flattens the ceiling' claim under the pinned 2D/4D generator definitions, degree matching, seeds, k-band, and pur_min metric.  _(class `C`)_
 - **chain closes:** True — The runner constructs both graph families from the named generator routines, computes the matched pur_min and degree table, fits per-seed exponents, and asserts the source note's table within explicit tolerances. The note's claim is bounded to those generator definitions and default arguments, so no outside modular-universality authority is needed.
 - **rationale:** The source note and runner agree on the bounded table, alpha estimates, and conclusion that this matched pocket does not support a dimensional exponent-flattening theorem. The runner computes the graph samples and metrics before checking the pinned values, rather than importing a retained theorem or relying on author prose. Residual risk is limited to the named generator routines, seed count, radius grid, and default harness settings; broader 2D/4D modular universality is explicitly outside the audited scope.
+- **auditor confidence:** high
+
+### `matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Current-surface finite-lattice kinematic theorem: local `U(3)` fibre-frame covariance of nearest-neighbour hopping forces a link transporter with the lattice connection law and gives covariant hopping and a lattice covariant difference, excluding gauge dynamics, continuum limit, and physical `SU(3)_c` identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-033534-bd9eb53fbf-matter_gauge_minimal_couplin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `H_cov` is invariant under a local frame change iff `U_mu(x)` transforms as `U_mu(x) -> rho(g(x)) U_mu(x) rho(g(x+mu))^dag`.  _(class `A`)_
+- **chain closes:** False — The exact block-matrix covariance closes from the retained local frame-redundancy bridge and hopping inputs. The full stated minimal-coupling expansion does not close as written because `U=exp(i eps A)` gives `D=d+i eps A psi(x+mu)+O(eps^2)` unless a normalized derivative or integrated-link `A_lat=eps A` convention is added.
+- **rationale:** The central covariance theorem is genuine finite block algebra: conjugating the hopping block by local fibre frames sends `H[U]` to `H[g_x U g_y^dag]`, so the transporter law is forced once the fibre-frame redundancy bridge is accepted. The cited authorities are retained-grade, and the runner source actually constructs the finite matrices and checks covariance, holonomy, and control cases without external comparators. However, the source's displayed leading-order reduction from `U_mu=exp(i eps A_mu)` to `D_mu=partial_mu^lat+iA_mu` omits the needed `eps` factor or an explicit normalization convention; the runner verifies the corrected `d+i eps A` expression, not the displayed formula. Thus the exact kinematic connection claim closes, but the stated minimal-coupling normalization needs repair before clean status.
 - **auditor confidence:** high
 
 ### `matter_inertial_closure_note`

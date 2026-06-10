@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/staggered_site_license_tick_dichotomy_2026_06_09.py
+runner_sha256: 51946fa2582b4744663577ebf8c9cf3d894be46a41b3d94522262d0318e588f2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 10.89
+status: ok
+----- stdout -----
+
+SECTION -- the site-license degree table (combinatorial, from the fold)
+==============================================================================
+  [PASS] licensed Bloch degrees: AA={0}, BB={0}, AB={0,-1}, BA={0,+1} (diagonals CONSTANT)  --  a same-sublattice hop is a distance-2 move -- the license forbids it
+  [PASS] site license forces the trace structurally CONSTANT (no momentum dependence possible)  --  tr U = alpha + delta -- block01's degree-1 trace freedom is GONE for this carrier
+  [PASS] full unitarity makes each hop a single monomial and removes on-site dispersive amplitudes  --  s*conj(r) = p*conj(q) = 0; orthogonality forces alpha = delta = 0 on the dispersive branch
+  [PASS] det U has at most one z power in every branch (monomial lemma => det = e^{iD} z^w)  --  w in {-1, 0, +1}: the total winding is the det phase degree
+
+SECTION -- the two-circles lemma and the dichotomy (exact)
+==============================================================================
+  [PASS] two-circles: for T != 0 the eigenvalue set is <= 2 points (x = T/2; empty for |T| > 2)  --  intersection x = t/2, y = +-sqrt(1 - t^2/4); unitarity caps |T| <= 2 anyway
+  [PASS] T != 0 confines det to ONE value; a dispersive licensed det sweeps the BZ => T = 0 FORCED  --  det = -q r / z takes a continuum of values; constant nonzero trace is impossible for a dispersive tick
+  [PASS] actual T = 0 cell gives omega_pm(K) = (D + pi + wK)/2 + {0, pi}: |v| = 1 edge/tick; curvature == 0  --  1 cell = 2 sites: |v| = 1 edge/tick exactly; all artifact orders vanish identically
+  [PASS] w = 0 cells are FLAT, computed from an actual licensed cell's eigenvalues (K-independent bands)  --  the dichotomy is {flat, exactly saturating}: NO dispersive tunable cell exists
+  [PASS] sweep: every dispersive solution FOUND has tr ~ 0, |w| = 1, v = 1 site/tick; BOTH branches w = -1 and w = +1 reached  --  24 dispersive (windings [-1, 1]), 62 flat, 0 non-converged discards; violations: none
+
+SECTION -- the realization tie: the dispersive cells SHARE the staggered hopping shape
+==============================================================================
+  [PASS] the dispersive cell is the (phase-decorated) site-shift: unitary, tr = 0, det ~ 1/z  --  (U psi)_A(j) = q psi_B(j-1), (U psi)_B(j) = r psi_A(j): site x <- x-1, one edge per tick
+  [PASS] the dispersive tick is sublattice-off-diagonal (eps U eps = -U): the staggered hopping shape  --  pure A <-> B hopping, no same-sublattice action -- the staggered structure
+  [PASS] the dispersive cells are the conjugate left/right single-mover sectors (w = -1 / w = +1)  --  one chiral sector per tick; Dirac pairing = larger-cell named open
+  [PASS] eta_mu(x) is constant along its own axis mu (landed KS formulas, verified on a 3^3 block)  --  the 1D theorem applies to any per-axis FACTOR, where the tick factorizes (3D simultaneous tick = named open)
+
+SECTION -- exclusions: why block01's tunable cells cannot occur for this carrier
+==============================================================================
+  [PASS] split-step has K-dependent DIAGONAL entries: distance-2 site hops, license-ILLEGAL here  --  the tunable witness needs a carrier density the scheme-forcing excludes
+  [PASS] block01's cell-level winding construction (full-swap brickwork) is ALSO site-license-illegal here  --  diagonal z-entries = 2-site moves; the realized saturating cells are the site-shifts
+  [PASS] the legal gapped cell [[cos t, i sin t /z],[i sin t z, cos t]] is unitary and FLAT  --  mass at 2-site periodicity = dispersionless exchange; curved massive bands need a larger cell (named open)
+
+==============================================================================
+SCORECARD: PASS=16 FAIL=0
+==============================================================================
+
+----- stderr -----
+

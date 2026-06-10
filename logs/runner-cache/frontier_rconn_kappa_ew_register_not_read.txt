@@ -1,24 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_rconn_kappa_ew_register_not_read.py
-runner_sha256: b2d142794895636d0f89c58c6e8f0def25c866cbad0aaec2c5b235deafae3aaf
+runner_sha256: 85823fab886834f01e78fdb0b3779da12d5593af24b892d7735a52688e6510cd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 PASS: FIERZ_S_plus_C_exact_Nc2 ||G||^2=3.4695 = S+C=3.4695
 PASS: FIERZ_S_plus_C_exact_Nc3 ||G||^2=14.9563 = S+C=14.9563
 PASS: FIERZ_S_plus_C_exact_Nc4 ||G||^2=28.4183 = S+C=28.4183
 PASS: FIERZ_S_plus_C_exact_Nc5 ||G||^2=52.0924 = S+C=52.0924
-PASS: S_is_the_I_over_d_trace_reference_component |<G,I/sqrt(Nc)>|^2=0.486609 = S(singlet/disconnected)=0.486609
-PASS: octet_generators_are_traceless_content every t^A is traceless -> the C-channel is the traceless (octet) content
-PASS: KAPPA_octet_only_gives_F_adj_8_9 kappa_EW=0 -> R_conn=F_adj=(Nc^2-1)/Nc^2=0.8889=8/9
-PASS: KAPPA_total_gives_1 kappa_EW=1 -> R_phys=1 (the trace S registered too)
-PASS: CONDITIONAL_traceless_content_fraction_is_F_adj dim(traceless octet)/dim(all) = 8/9 = F_adj = 8/9
-PASS: FAMILY_traceless_fraction_is_Nc2m1_over_Nc2 traceless-channel fraction is (N_c^2-1)/N_c^2 at every N_c (N_c=3 -> 8/9)
+PASS: S_is_the_I_over_sqrt_Nc_trace_component |<G,I/sqrt(Nc)>|^2=0.486609 = S=0.486609
+PASS: adjoint_generators_are_traceless C-channel basis is traceless
+PASS: KAPPA_zero_specialization_is_F_adj_8_9 kappa_EW=0 specialization gives 0.8889
+PASS: KAPPA_one_specialization_is_total_channel_1 kappa_EW=1 specialization keeps the trace channel too
+PASS: traceless_channel_count_fraction_is_F_adj dim(traceless)/dim(all) = 8/9
+PASS: FAMILY_traceless_fraction_is_Nc2m1_over_Nc2 N_c-universal channel-count identity
+PASS: E_sing_is_idempotent_unital conditional expectation onto C*I
+PASS: E_sing_is_Ad_invariant_twirl_target singlet channel is the depolarizing twirl target
+PASS: nontrivial_partition_map_differs_from_singlet_twirl partition preserves diagonal block; twirl averages trace
+PASS: nontrivial_color_partition_fails_centrality projector/generator commutator dev 0.50
+PASS: trivial_central_partition_is_identity_not_twirl Schur-compatible {I} partition gives identity on a generic matrix
+PASS: kappa_EW_is_free_weight_not_count 8/9 count is fixed while kappa_EW changes the singlet weight
+PASS: Record_axiom_does_not_supply_weighting_or_context current axioms cannot close kappa_EW by themselves
+PASS: source_note_records_route_demoted_not_closed source surface matches repaired route boundary
 
-TOTAL: PASS=10 FAIL=0
-CONDITIONAL RESULT: the Fierz S/C split is exactly the trace/traceless operator split, and the traceless-channel fraction is (N_c^2-1)/N_c^2 (8/9 at N_c=3). If a separate theorem later proves that register-not-read governs this color operator-trace split and excludes the trace component as unregistered reference, then kappa_EW=0 follows. This runner does not prove that Record supplies that color-trace selector.
+TOTAL: PASS=18 FAIL=0
+ROUTE-DEMOTION RESULT: the exact Fierz trace/traceless algebra and the 8/9 count survive, but register-not-read does not by itself select kappa_EW=0 on the current Record/axiom surface. The kappa_EW gate remains open for a future non-axiom readout theorem, convention, or approved admission; no audit verdict is applied here.
 
 ----- stderr -----
 

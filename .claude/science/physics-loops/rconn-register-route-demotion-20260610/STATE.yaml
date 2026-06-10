@@ -1,0 +1,19 @@
+loop_id: rconn-register-route-demotion-20260610
+status: packaged_for_review
+created: 2026-06-10
+base_ref: origin/main
+base_sha: 01e9de8de
+target_claim_id: rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08
+target_prior_audit_status: audited_conditional
+source_note: docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md
+runner: scripts/frontier_rconn_kappa_ew_register_not_read.py
+runner_cache: logs/runner-cache/frontier_rconn_kappa_ew_register_not_read.txt
+audit_blocker: "missing_bridge_theorem: retain a theorem that register-not-read governs this color operator-trace split and treats the trace channel as unregistered reference."
+actual_current_surface_status: demotion
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+audit_required_before_effective_status_change: true
+proposed_retained_allowed: false
+bare_retained_allowed: false
+open_residual: "kappa_EW still needs a non-axiom physical EW readout/weighting theorem, approved convention, or owner-approved admission."
+next_exact_action: "Reviewer should inspect the source repair, rerun the runner/cache checks, and queue the row for independent re-audit as a route-demotion/open-gate repair, not as a positive kappa_EW selector."

@@ -18,7 +18,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 212 |
+| **retained** | 211 |
 | **retained_no_go** | 206 |
 | **retained_bounded** | 811 |
 | _retained_pending_chain_ | 16 |
@@ -26,7 +26,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | unaudited | 1404 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
-| ~~audited_renaming~~ | 33 |
+| ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 27 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
+| `audit_in_progress` | 4 |
 | `audited_clean` | 1250 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
-| `audited_renaming` | 33 |
+| `audited_renaming` | 34 |
 | `unaudited` | 1720 |
 
 | claim_type | count |
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 483 |
-| `high` | 481 |
-| `medium` | 837 |
+| `high` | 482 |
+| `medium` | 836 |
 | `leaf` | 1327 |
 
 - **Retained pending chain closure:** 16
@@ -136,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
-| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -1539,6 +1538,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | judicial_review | codex-gpt-5.5 | F | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
@@ -18550,6 +18550,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The conclusion follows by substituting the retained K4 dimensional readout dim_C V = 2 into the stated tadpole convention. The proof does not require any numerical plaquette value or downstream running input.
 - **rationale:** The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the narrow claim that the accepted one-qubit-per-site Quantum axiom identifies the per-site carrier with a single C^2 M_2(C)/Cl(3,0) module, thereby retiring U4 as an open bridge under that reframe.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260610-u4_closes_under_qubit_reframe_narrow_the-r1`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The qubit-per-site baseline directly specifies H_x = C^2, A_x = M_2(C) acting irreducibly, and k(x)=1; this is the content of the baseline.  _(class `F`)_
+- **chain closes:** False — The cited Quantum axiom is an accepted premise, so there is no dependency downgrade. But the decisive move is the assertion that the former U4 bridge is the same content as the one-qubit-per-site carrier already supplied by the axiom, and the source note explicitly frames this as baseline content rather than a derivation. Standard M_2(C) module theory supports the consistency of the identification, but it is not the load-bearing first-principles computation that closes the claim as class C.
+- **rationale:** The cited Quantum axiom is an accepted premise, so there is no dependency downgrade. But the decisive move is the assertion that the former U4 bridge is the same content as the one-qubit-per-site carrier already supplied by the axiom, and the source note explicitly frames this as baseline content rather than a derivation. Standard M_2(C) module theory supports the consistency of the identification, but it is not the load-bearing first-principles computation that closes the claim as class C.
 - **auditor confidence:** high
 
 ### `unification_basin_failure_note`

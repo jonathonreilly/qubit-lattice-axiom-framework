@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09.py
+runner_sha256: e30746e2ce2be1104ad6074c6854278227f98c18ccd6a4b9dccce06d220e71c7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.19
+status: ok
+----- stdout -----
+SECOND VARIATION OF THE REGGE ACTION ON THE RETAINED CUBIC-COXETER COMPLEX (3D, flat)
+================================================================================================
+[PASS] R1 (flat anchor = the retained row, reproduced on the periodic build): every interior edge deficit is 0 to machine precision (all classes), the representative axis edge has the CORRECTED 6-tet edge-star of the 2026-05-19 repair, and S_R = sum ell_e delta_e = 0
+       max|deficit| = 1.33e-15; axis edge-star tets = 6 (retained row: 6); S_R = 1.21e-13
+[PASS] R2 (exactness gates): per-tet Schlaefli identity sum_e ell_e d theta_e = 0 holds to machine precision (validates the symbolic angle-gradient pipeline), and J = d delta/d ell is SYMMETRIC to machine precision (Regge's first-variation identity dS/d ell = delta realized: J is the Hessian of S_R at flat)
+       max per-tet Schlaefli residual = 8.88e-16; max|J - J^T| = 4.44e-16
+[PASS] R3 (gauge): a random vertex-displacement field of the flat complex is an EXACT zero mode of Q = delta^2 S_R (flat stays flat under vertex motion) -- the discrete diffeomorphism family, exact at the discrete level (contrast: the transcribed continuum operator on the hypercubic lattice had only approximate gauge zero modes)
+       |Q eps_gauge| / |eps| = 1.44e-15
+[PASS] R4 (Bloch reduction faithful): the 7x7 Q(k) reproduces the periodic-build quadratic form on a commensurate plane-wave edge field to machine precision
+       |periodic - Bloch| = 4.62e-14
+[PASS] R3b (gauge at Bloch level): Q(k) Gamma(k) = 0 to machine precision at a random incommensurate momentum -- the vertex-displacement gauge family is exact at every k
+       max|Q(k) Gamma(k)| = 6.25e-15 at k = [0.37, -0.83, 0.51]
+[PASS] R2b (end-to-end gate): the numerical second difference of the ACTUAL Regge action S_R = sum ell delta under a random edge-length perturbation equals eps^T Q eps from the assembled Hessian (validates every sign, factor, and assembly step at once)
+       finite-diff = -1.7699254971e-05 vs eps^T Q eps = -1.7699253643e-05
+[PASS] R2c (convention gate): a continuum gauge perturbation h = i(k xi + xi k) maps through the exact line-averaged metric map onto EXACTLY the discrete vertex-displacement family (pins the midpoint-phase/sinc conventions; line integral of a tangential derivative = endpoint difference)
+       max|M(k) h_gauge - Gamma(k) xi| = 4.74e-16
+[PASS] R5 (k=0): constant metric perturbations (all 6 h components) are EXACT zero modes of Q(0) (a constant h re-flattens the complex), while the single NON-METRIC edge mode per cell (the 7-edge-class complement of the 6 metric components) is NOT a zero mode -- the breathing mode has nonzero quadratic weight at k=0 (sign reported)
+       max|Q(0) M_metric| = 5.84e-15; non-metric breathing weight = -24.000000 in the raw S_R orientation (= +48.0 in the standard Euclidean orientation S_E = -2 S_R: massive and healthy there; no flat direction beyond gauge+metric)
+
+  small-k metric-sector comparison  Q_h(k) =? c * Q_EH(k)  per direction:
+    axis(100):  c = -0.500000   rel-residual = 6.774e-09   schur-vs-project = 2.2e-09
+    face(110):  c = -0.500000   rel-residual = 2.630e-08   schur-vs-project = 3.8e-09
+    body(111):  c = -0.500000   rel-residual = 2.689e-08   schur-vs-project = 4.8e-09
+[PASS] R6 (THE COMPARATOR QUESTION -- exact proportionality, derived normalization, isotropy): at small k the Regge metric-sector quadratic form is EXACTLY PROPORTIONAL to the 3D Euclidean linearized EH pairing in ALL THREE lattice directions, with ONE constant c = -1/2 -- which is precisely the TEXTBOOK correspondence delta^2 S_R = (1/2) delta^2 (int sqrt(g) R) combined with the variational sign delta(sqrt(g)R) = -sqrt(g) G^{mu nu} delta g_{mu nu}: the runner DERIVES the Regge<->EH second-variation correspondence on the retained complex, including the 1/2 normalization, with O(k^2) ISOTROPY (direction spread ~1e-8) and slice-invariance (Schur complement vs projection agree). The opposite-signed comparator PAIR the no-go named is therefore DERIVED from the framework's own retained geometry (the overall orientation of the action is the single remaining sign -- see R7).
+       c = {'axis(100)': -0.49999997, 'face(110)': -0.49999995, 'body(111)': -0.49999993} (= -1/2 exactly); spread/mean = 7.54e-08; residuals = {'axis(100)': '6.8e-09', 'face(110)': '2.6e-08', 'body(111)': '2.7e-08'}
+[PASS] R7 (channel structure, k || x): the two TT channels are EQUAL (spin-2 isotropy exact at O(k^2)), the transverse-trace channel has the OPPOSITE sign with EQUAL magnitude (ratio exactly -1: the no-go's named pair V = +-k^2/2 with equal magnitudes, derived), and the gauge channel is zero. ORIENTATION (honest): in the runner's raw S_R = sum ell delta orientation TT is negative and trace positive; in the standard Euclidean orientation S_E = -int sqrt(g) R = -2 S_R, TT is POSITIVE, the conformal/trace mode NEGATIVE (the textbook Euclidean conformal-factor structure), and the breathing mode +48 (massive, healthy). The overall orientation of the geometric action is the SINGLE remaining sign -- the same located sign residual as the arrow/stability/spectral no-go row; everything orientation-independent (opposite-sign pair, equal magnitudes, isotropy, gauge zeros, massive breathing) is derived here.
+       TT(yz)=-0.250000 = TT(E)=-0.250000; transverse-trace=+0.250000 (ratio -1.0000); gauge(xy)=-1.46e-09  (per k^2, unit-norm channels, raw S_R orientation)
+
+TOTAL: PASS=10 FAIL=0
+VERDICT: on the RETAINED cubic-Coxeter complex (the exact six-tetrahedra body-diagonal chain of
+the deficit-vanishing row), the second variation of the Regge action around flat EQUALS the
+continuum linearized Einstein-Hilbert second variation at leading order, EXACTLY and
+ISOTROPICALLY: Q_h(k) = c * Q_EH(k) + O(k^4) with the single constant c = -1/2 in all three
+lattice directions (= the textbook delta^2 S_R = (1/2) delta^2 int sqrt(g) R with the
+variational sign, DERIVED including the 1/2). Vertex displacements are exact zero modes at
+every momentum (discrete gauge); constant metric perturbations re-flatten (k=0 zero modes);
+the single non-metric breathing mode is massive (no extra flat direction); the two TT channels
+are equal and the transverse-trace channel is equal-magnitude opposite-sign (ratio -1) -- the
+degenerate-supermetric no-go's named comparator pair (+-k^2/2) is hereby DERIVED from the
+framework's own retained geometry. The one remaining sign is the overall action orientation
+(S_R vs -S_R), the same single located sign residual as the arrow/stability/spectral no-go
+row. OPEN (named): the 4D/timelike cubic-Coxeter extension (the kinetic fiber metric from the
+geometric action itself), edge-length-DOF provenance, action selection, nonlinear closure.
+No PDG/fitted value.
+
+----- stderr -----
+

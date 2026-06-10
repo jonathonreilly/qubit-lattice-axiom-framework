@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 210 |
+| **retained** | 211 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 803 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1406 |
+| unaudited | 1405 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1239 |
+| `audited_clean` | 1240 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1722 |
+| `unaudited` | 1721 |
 
 | claim_type | count |
 |---|---:|
@@ -409,6 +409,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `fifth_family_complex_boundary_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5560,6 +5561,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because L is symmetric, d/dPhi[1/2 Phi^T L Phi]=L Phi, and adding the mass and source derivatives gives grad_Phi S=(L+mu^2 I)Phi-G_c rho.  _(class `A`)_
 - **chain closes:** True — The result is direct quadratic-form calculus on the displayed action: the graph-gradient, mass, and source derivatives have the stated signs and factors. The cited self-consistency note is not load-bearing for this variational identity and is not used to select the action.
 - **rationale:** The load-bearing step is a genuine class A algebraic closure over a stipulated action, not a definition substitution or numerical match. The runner source performs exact rational checks of the Laplacian construction, action gradient, stationary-source witness, constant-mode behavior, positive-mu2 witnesses, and scope firewalls rather than merely printing PASS. Independently, with the standard unordered-edge, nonnegative-weight Laplacian convention, Phi^T L Phi=sum_E w_ij(Phi_i-Phi_j)^2, so the factor 1/2 differentiates to L Phi; the mass and source terms then give the displayed equation. The repaired note explicitly disclaims action selection and operator uniqueness, so no hidden selection theorem is being imported.
+- **auditor confidence:** high
+
+### `fifth_family_complex_boundary_note`
+
+- **Note:** [`FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** On the finite sampled radial-shell fifth-family slice with drifts {0.05, 0.20, 0.30} and seeds {0, 1}, all six rows pass the Born/F~M gates and exactly the two drift=0.20 rows show TOWARD -> AWAY crossover.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-032427-c6e34d142c-fifth_family_complex_boundar`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner now computes Born/F~M gates for all six sampled rows and fails unless the sampled complex-companion set is exactly the drift-0.20 pair {(0.20, 0), (0.20, 1)}.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helpers construct the sampled geometry, radial-shell connectivity, source field, complex propagation, Born proxy, F~M gates, and crossover predicates directly. The cached output matches the note's table and there are no cited open dependencies or external comparators in the restricted packet.
+- **rationale:** The runner source performs the load-bearing finite computation rather than merely printing constants: each row is measured from grow(), radial connectivity, source-field propagation, Born inclusion-exclusion, weak-source scaling, and sign crossover tests. The displayed table is consistent with the cached stdout: all Born values are below threshold, all F~M exponents lie within the stated gate, and only the two drift=0.20 rows have t01=1 and t05=0. The hard-coded expected companion set is used as a final assertion target after computing the rows, not as an input to produce the row values. The conclusion is correctly scoped to the sampled grid and does not claim family-wide closure.
 - **auditor confidence:** high
 
 ### `fifth_family_radial_boundary_note`

@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 797 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1417 |
+| unaudited | 1416 |
+| audit_in_progress | 1 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -58,14 +59,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
+| `audit_in_progress` | 5 |
 | `audited_clean` | 1229 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1733 |
+| `unaudited` | 1732 |
 
 | claim_type | count |
 |---|---:|
@@ -114,7 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 708 | 38.47 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1071 | 36.07 | `audited_clean` | **retained_bounded** |
-| 16 | `cpt_exact_note` | positive_theorem | critical | 1165 | 35.69 | `audited_clean` | **retained** |
+| 16 | `cpt_exact_note` | positive_theorem | critical | 1166 | 35.69 | `audited_clean` | **retained** |
 | 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 923 | 34.85 | `audited_clean` | **retained_bounded** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 882 | 34.79 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
@@ -131,6 +132,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |

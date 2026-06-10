@@ -10,25 +10,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
-      "claim_scope": null,
+      "claim_scope": "Audited the legacy Maradudin lattice-Green bridge reroute onto the retained framework-local Z^3 nearest-neighbor Green-kernel asymptotic and its coefficient normalization c = 1/(4 pi).",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "minimal_axioms"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 9.124,
       "note_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
       "transitive_descendants": 278
@@ -17681,15 +17681,15 @@
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 4.748,
+      "load_bearing_score": 5.755,
       "note_path": "docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
-      "transitive_descendants": 18
+      "transitive_descendants": 26
     },
     {
       "audit_independence_required": "any_non_self",

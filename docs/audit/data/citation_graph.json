@@ -47914,10 +47914,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
     },
     {
@@ -47943,6 +47939,10 @@
     {
       "from": "repo.front_door_status",
       "to": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -92534,17 +92534,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "abj_epsilon_index_square_block_no_go_note_2026-05-30",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
+        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ff3ca6affe50ecbec81dad3d7502b1065da0c23f8f06bb5430e7f692d4f7ca0e",
+      "note_hash": "fce853aa29187125e5d7531b07988e98dd2769c5a41632cd99ed2ad616d15055",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

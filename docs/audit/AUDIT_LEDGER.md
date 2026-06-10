@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1251 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1252 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1473 | 112.03 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 994 | 61.96 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1341 | 60.89 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1342 | 60.89 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 854 | 58.24 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 970 | 48.42 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1185 | 47.21 | `unaudited` | meta |
@@ -117,7 +117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `yt_ew_color_projection_theorem` | no_go | critical | 706 | 38.47 | `audited_clean` | **retained_no_go** |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1248 | 37.79 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 925 | 36.35 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1311 | 35.86 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1310 | 35.86 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1056 | 35.05 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 269 | 34.58 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 699 | 32.95 | `unaudited` | unaudited |
@@ -132,10 +132,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -1545,6 +1545,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 
 ## Audit findings (full)
+
+### `abj_epsilon_index_square_block_no_go_note_2026-05-30`
+
+- **Note:** [`ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The standard massless nearest-neighbor staggered site-parity epsilon heat-trace index A_t[U]=Tr(epsilon exp(-t D^dag D)) vanishes for all t>0 on equal-sublattice finite even periodic 4D hypercubic tori with arbitrary U(1) link phases; only that same-surface epsilon-index route to P1' is pruned.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-9f464c2dad-abj_epsilon_index_square_blo`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** After epsilon-parity ordering, D[U] has square bipartite form [[0,B],[-B^dag,0]], so D[U]^dag D[U]=diag(BB^dag,B^dagB) and the two sector heat traces have identical spectra including zero modes.  _(class `A`)_
+- **chain closes:** True — Nearest-neighbor staggered hopping flips epsilon parity and unitary link phases do not alter the bipartite support pattern. For square B, BB^dag and B^dagB have the same singular-value-square spectrum and equal nullity, so Tr(exp(-t BB^dag))-Tr(exp(-t B^dagB))=0.
+- **rationale:** The load-bearing step is a genuine finite-dimensional algebraic closure, not a renaming, numerical fit, or external comparator check. The runner source constructs staggered Dirac matrices for representative random and flux U(1) backgrounds and verifies the same block, spectrum, zero-mode, and heat-trace identities rather than merely printing constants. The no-go discipline gate is satisfied because the claim is narrow: it excludes only the standard equal-sublattice epsilon-index route and explicitly leaves continuum ABJ, taste-singlet/Adams/overlap, imbalanced or curved complexes, and accepted-premise routes outside its scope.
+- **auditor confidence:** high
 
 ### `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28`
 

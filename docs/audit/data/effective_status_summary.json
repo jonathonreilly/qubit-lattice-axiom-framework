@@ -1,43 +1,18 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1460,
+    "bounded_theorem": 1480,
     "decoration": 53,
     "meta": 324,
-    "no_go": 328,
-    "open_gate": 144,
-    "positive_theorem": 778
+    "no_go": 329,
+    "open_gate": 145,
+    "positive_theorem": 781
   },
-  "cycle_examples": [
-    [
-      "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-      "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
-    ],
-    [
-      "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2",
-      "g_newton_self_consistency_bounded_sharpening_note_2026-05-10_planckp4"
-    ],
-    [
-      "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
-      "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
-    ],
-    [
-      "beta6_delta_analytic_class_frontier_note_2026-05-30",
-      "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
-      "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04"
-    ],
-    [
-      "beta6_delta_analytic_class_frontier_note_2026-05-30",
-      "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
-      "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
-      "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
-      "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30"
-    ]
-  ],
-  "cycles_detected": 18,
+  "cycle_examples": [],
+  "cycles_detected": 0,
   "effective_status_counts": {
-    "audited_conditional": 20,
+    "audited_conditional": 18,
     "audited_numerical_match": 15,
-    "audited_renaming": 35,
+    "audited_renaming": 34,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
     "decoration_under_cl3_color_automorphism_theorem": 6,
@@ -68,10 +43,10 @@
     "meta": 316,
     "open_gate": 37,
     "retained": 209,
-    "retained_bounded": 798,
+    "retained_bounded": 797,
     "retained_no_go": 206,
     "retained_pending_chain": 13,
-    "unaudited": 1389
+    "unaudited": 1418
   },
   "retained_pending_chain_count": 13,
   "retained_pending_chain_examples": [

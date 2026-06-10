@@ -2798,9 +2798,9 @@
   ],
   "retired": [
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
+      "actual_effective_status": "unaudited",
       "audit_question": "High downstream reach, but explicitly bounded quantitative support only; needs separate Higgs authority-boundary rewrite before promotion re-audit.",
       "claim_id": "higgs_from_lattice_note",
       "expected_current_audit_status": "audited_clean",

@@ -1,14 +1,31 @@
 # Axiom-First Microcausality / Lieb-Robinson Bound on A_min
 
-**Date:** 2026-05-01 (2026-05-09: bounded action-support/J-bound support added — see new section below)
-**Type:** positive_theorem
-**Claim scope:** equal-time strict locality [O_x, O_y] = 0 for x ≠ y on Cl(3) tensor structure (M1); Lieb-Robinson lightcone bound ‖[α_t(O_x), O_y]‖ ≤ 2‖O_x‖‖O_y‖exp(-d + v_LR|t|) with v_LR = 2erJ on framework's finite-range Hamiltonian (M2); continuum spacelike microcausality in the smooth-limit Lorentz regime (M3).
+**Date:** 2026-05-01 (2026-05-09: bounded action-support/J-bound support added;
+2026-06-10: M2 rescoped to the proved overlap-weight velocity and the exact-H
+quasilocal decomposition, M3 scoped as explicitly conditional — see the
+load-bearing-consequence paragraph below)
+**Type:** bounded_theorem
+**Claim scope:** equal-time strict locality [O_x, O_y] = 0 for x ≠ y on Cl(3)
+tensor structure (M1); Lieb-Robinson lightcone bound
+‖[α_t(O_x), O_y]‖ ≤ 2‖O_x‖‖O_y‖exp(-d + v_LR|t|) with the proved
+overlap-weight velocity v_LR = 2·e·q·W·R from
+[`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+(unconditional on the nearest-neighbor hopping-bilinear surface,
+v_LR ≤ 4·e·(|m| + 2d)); for the exact reconstructed H = -log(T̂²)/(2a_τ) the
+strict finite-range hypothesis is false and M2 holds in truncated quasilocal
+form on the free bilinear sector via
+[`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md),
+with the exact-H lightcone assembly and the gauged/interacting sector named
+open (M2); continuum spacelike microcausality explicitly conditional on a
+retained Lorentz scaling bridge (M3).
 **Status:** awaiting independent audit. Under the scope-aware classification framework (audit-lane proposal #291), `effective_status` is computed by the audit pipeline from `audit_status` + `claim_type` + dependency chain.
 **Loop:** `24h-axiom-first-derivations-20260501`
 **Cycle:** 4 (Block 04; independent of Blocks 01-03)
 **Branch:** `physics-loop/24h-axiom-first-block04-microcausality-20260501`
 **Runner:** `scripts/axiom_first_microcausality_check.py`
-**Log:** `outputs/axiom_first_microcausality_check_2026-05-01.txt`
+**Log:** `outputs/axiom_first_microcausality_check_2026-06-10.txt`
+(2026-06-10 rerun with the proved overlap-weight velocity; the
+2026-05-01 log predates the constant repair)
 
 ## Scope
 
@@ -72,6 +89,14 @@ cluster-decomposition theorem (which is the *spatial* decay theorem).
   `H` on `H_phys` is bounded operator with finite spectral norm
   (since `H_phys` has finite dimension on any finite block, by RP
   reconstruction).
+- **Exact-H quasilocal decomposition (free bilinear sector).** From
+  [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md),
+  the single-particle hopping kernel of the exact reconstructed
+  `H = -log(T̂²)/(2 a_τ)` obeys an explicit exponential bound at sharp
+  rate `η* = arcsinh(m)`, giving finite per-site overlap weight `W_H`
+  and exponentially convergent finite-range truncations `H_R`. Sector
+  restriction declared there: free (`U = 1`) bilinear staggered
+  two-step sector only.
 
 ## Statement
 
@@ -93,13 +118,17 @@ be Heisenberg evolution, `d(x, y)` the lattice graph distance, and
 define
 
 ```text
-    v_LR  :=  2 e r · J                                                      (3)
+    v_LR  :=  2 e q W R                                                      (3)
     ξ      :=  1                                                              (4)
 ```
 
-where `J := sup_z ‖h_z‖_op` is the maximum local-Hamiltonian-density
-norm. Then for any operators `O_x, O_y` supported at sites `x, y`
-respectively,
+where `q` is the largest support size, `R` the largest support
+diameter (graph distance), and `W := max_x Σ_{Z ∋ x} ‖h_Z‖_op` the
+per-site overlap weight — the velocity proved in
+[`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+(Lemma (L1)/(L2); the earlier `v_LR = 2 e r J` plug-in is superseded —
+it omitted the overlap weight). Then for any operators `O_x, O_y`
+supported at sites `x, y` respectively,
 
 ```text
     ‖ [α_t(O_x), O_y] ‖_op  ≤  2 · ‖O_x‖_op · ‖O_y‖_op · exp(- d(x,y) + v_LR |t|)    (5)
@@ -108,12 +137,18 @@ respectively,
 In particular, when `d(x, y) > v_LR |t|`, the commutator is bounded by
 `2 ‖O_x‖ ‖O_y‖ · e^{-(d - v_LR |t|)} → 0` exponentially.
 
-**(M3) Continuum-limit microcausality.** In the lattice continuum
-limit `a → 0` with `v_LR · a_s / a_τ → c < ∞` fixed (which holds on
-the framework's retained Lorentz kernel surface
-[`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)), the bound (5) becomes
-strict: `[O(x), O(y)] = 0` for any pair of operators at points `x, y`
-with spacelike separation in the asymptotic Lorentzian metric.
+**(M3) Continuum-limit microcausality (explicitly conditional).** In
+the lattice continuum limit `a → 0` with `v_LR · a_s / a_τ → c < ∞`
+fixed, the bound (5) becomes strict: `[O(x), O(y)] = 0` for any pair
+of operators at points `x, y` with spacelike separation in the
+asymptotic Lorentzian metric. The fixed-lightcone-slope scaling
+premise is conditional on a retained Lorentz scaling bridge: the cited
+Lorentz surfaces
+([`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md),
+[`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md))
+supply kernel positivity and the smooth-limit regime, not the
+lightcone-slope scaling statement itself. M3 is claimed only modulo
+that named bridge.
 
 Statements (M1)–(M3) constitute the framework microcausality theorem
 on `A_min`.
@@ -213,8 +248,18 @@ Using the standard estimate
 (after writing `(4 e J r |t| / d)^{d/r} = exp((d/r) log(4 e J r |t| / d))`
 and using `log(z) ≤ z - 1` for the dominant exponential).
 
-This is the Lieb-Robinson bound (5) with `v_LR := 2 e r J` and
-decay rate `ξ = 1`. ∎
+The estimate (10) as written concludes with the plug-in
+`v_LR = 2 e r J`. That constant is **superseded**: the companion
+bridge note
+([`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md))
+proves the same lightcone bound (5) by the iterated-commutator
+argument with every constant traced, and the honest velocity for this
+support-overlap convention is `v_LR := 2·e·q·W·R` with `q` the largest
+support size, `R` the largest support diameter, and
+`W := max_x Σ_{Z ∋ x} ‖h_Z‖_op` the per-site overlap weight (the
+`2 e r J` form omitted the overlap counting). On the nearest-neighbor
+hopping-bilinear surface the bridge note's unconditional instantiation
+gives `v_LR ≤ 4·e·(|m| + 2d)`. Decay rate `ξ = 1`. ∎
 
 ### Bounded action-support/J-bound support (added 2026-05-09)
 
@@ -249,11 +294,17 @@ local action-density pieces, using `‖U_μ‖_op = 1` because
 by 1, and `|1 - Re tr(U_P)/N_c| <= 2` for unitary `U_P`. The bound is
 gauge-background-independent.
 
-**(F3) Conditional Lieb-Robinson velocity.** If the exact
-reconstructed Hamiltonian has a finite-range/quasilocal decomposition
-with compatible support and local bound, Hastings-Koma /
-Nachtergaele-Sims gives `v_LR = 2 e r J`; preserving the leading
-`r_action <= 2` support would give `v_LR ≤ 4 e · (|m| + 30)`.
+**(F3) Conditional Lieb-Robinson velocity (per the repaired bridge
+note).** The bridge note's in-note Lemma (L1)/(L2) gives the traced
+velocity `v_LR = 2·e·q·W·R` (no literature constant imported; the
+earlier `2 e r J` summary of this paragraph is superseded). Its
+conditional corollary: if the exact reconstructed `H` admits a
+carrier-compatible decomposition (`q <= 4`, `R <= 2`,
+`W <= |m| + 300`), then `v_LR <= 16·e·(|m| + 300)`. The 2026-06-10
+quasilocality theorem shows the strict finite-range form of that
+hypothesis is false for the exact free-sector `H` (range-4 hops), so
+the corollary is read through the truncation family `H_R` as in the
+load-bearing-consequence paragraph below.
 
 The bridge note's runner `scripts/microcausality_finite_range_h_bridge_2026_05_09.py`
 verifies (F1) on a finite-range toy action-density carrier, (F2) by
@@ -262,18 +313,36 @@ against the conservative `J_max`, (F3) by verifying the standard
 Lieb-Robinson bound (5) on a 1D finite-range Hamiltonian, and (F4)
 outside-lightcone exponential decay.
 
-**Consequence for the load-bearing claim.** The action-support and
-coefficient/norm pieces are no longer asserted, but Step 2 still
-requires an exact finite-range or quasilocal estimate for the
-reconstructed logarithmic Hamiltonian. Until that bridge is supplied,
-the parent lightcone claim remains conditional.
+**Consequence for the load-bearing claim (updated 2026-06-10).** The
+action-support and coefficient/norm pieces are no longer asserted, and
+the exact-H decomposition ask is now answered on the free bilinear
+sector by
+[`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md):
+the exact reconstructed `H = -log(T̂²)/(2 a_τ)` of the free staggered
+two-step transfer matrix is **not** finite-range (nonzero hops at
+`l1`-range 4 are exhibited, so the strict finite-range reading of the
+original M2 wording is false there); `H` is instead quasilocal, with
+the explicit exponential hopping bound at sharp rate
+`η* = arcsinh(m)`, finite per-site overlap weight `W_H = ‖h‖_l1 < ∞`,
+and finite-range truncations `H_R` whose per-site tail weights and
+single-particle operator-norm errors decay exponentially in `R`. The
+proved Lieb-Robinson lemma applies verbatim to each truncation `H_R`
+with velocity `v_LR(R) = 2·e·q_R·W_R·R`. Two pieces remain named open
+and bound this claim: (i) the exact-H lightcone statement assembled
+from the truncation family plus the exponential error control (the
+quasilocal-assembly lemma), and (ii) the gauged/interacting
+log-transfer locality, which the quasilocality theorem's declared
+sector restriction leaves open.
 
 ### Step 3 — Continuum microcausality (proves M3)
 
 In the lattice → continuum limit `a → 0` with
-`v_LR · a_s / a_τ  =  c < ∞` (the framework's emergent Lorentz
-velocity, retained on [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md) and
-[`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)), spatial graph distance
+`v_LR · a_s / a_τ  =  c < ∞` (the fixed-lightcone-slope scaling
+premise; explicitly conditional on a retained Lorentz scaling bridge —
+see (M3): the cited
+[`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md) and
+[`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)
+surfaces do not themselves fix that scaling), spatial graph distance
 `d_phys = d · a_s` and time `t_phys = t · a_τ` satisfy
 `v_LR |t| = c |t_phys| / a_s`. The Lieb-Robinson exponent in (5)
 becomes
@@ -296,9 +365,10 @@ statement. ∎
 - A4 (plaquette gauge range r_g = 1).
 - RP transfer matrix (defines H_phys).
 - Spectrum condition (H bounded operator with finite J).
-- Standard Lieb-Robinson 1972 / Nachtergaele-Sims 2010 lattice
-  estimation (admitted-context, theorem-grade lattice statistics
-  reference).
+- Proved finite-range Lieb-Robinson lemma with traced constants
+  (`v_LR = 2·e·q·W·R`) from
+  [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md);
+  no literature constant is imported.
 
 No fitted parameters. No observed values used as proof inputs.
 
@@ -335,7 +405,10 @@ condition.** (M1)–(M3) are derived from:
 - A3, A4 (finite-range hopping/gauge);
 - RP (defines H, H_phys);
 - spectrum condition (H bounded);
-- standard Lieb-Robinson lattice estimation (admitted-context).
+- the proved overlap-weight Lieb-Robinson lemma (bridge note; no
+  literature constant imported);
+- the exact-H quasilocal decomposition on the free bilinear sector
+  (quasilocality theorem; assembly lemma and gauged sector named open).
 
 The runner verifies the lattice Lieb-Robinson bound numerically on a
 small block (1D chain, range-1 nearest-neighbor Hamiltonian, with

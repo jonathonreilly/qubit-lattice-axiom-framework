@@ -9,7 +9,13 @@ Tests:
       have zero commutator at t = 0.
   T2: Lieb-Robinson bound (M2) - the commutator
       ||[alpha_t(O_0), O_d]|| <= C * exp(-d + v_LR |t|)
-      with v_LR = 2 e r J.
+      with the proved overlap-weight velocity v_LR = 2 e q W R from
+      MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09
+      Lemma (L1)/(L2): q = largest support size, R = largest support
+      diameter (graph distance), W = max_x sum_{Z owns x} ||h_Z||_op
+      (per-site overlap weight, computed from the instantiated terms
+      below, not asserted). The earlier plug-in v_LR = 2 e r J is
+      superseded (it omitted the overlap weight).
   T3: lightcone decay - inside lightcone (d < v_LR t), commutator
       grows; outside lightcone, commutator decays exponentially with d.
   T4: small-t expansion: at fixed d, ||[alpha_t(O_0), O_d]|| ~ |t|^d
@@ -22,17 +28,23 @@ import math
 import numpy as np
 
 
-def build_local_hamiltonian(L: int, J: float, seed: int) -> np.ndarray:
+def build_local_hamiltonian(
+    L: int, J: float, seed: int
+) -> tuple[np.ndarray, list[float]]:
     """Build a Hermitian H on (C^2)^L of the form H = sum_z h_z
 
     where h_z is a random Hermitian operator on sites z and z+1
     (range r = 1) with norm <= J.
 
-    Returns H as a (2^L, 2^L) Hermitian matrix.
+    Returns (H, term_norms) where H is the (2^L, 2^L) Hermitian matrix
+    and term_norms[z] = ||h_z||_op for the term supported on {z, z+1}
+    (used to compute the per-site overlap weight W, eq. (6) of the
+    bridge note).
     """
     rng = np.random.default_rng(seed)
     dim = 2 ** L
     H = np.zeros((dim, dim), dtype=complex)
+    term_norms: list[float] = []
     for z in range(L - 1):
         # h_z acts on sites z, z+1 as a 4x4 Hermitian matrix
         h_local = rng.standard_normal((4, 4)) + 1j * rng.standard_normal((4, 4))
@@ -42,6 +54,7 @@ def build_local_hamiltonian(L: int, J: float, seed: int) -> np.ndarray:
         norm = np.max(np.abs(eigvals))
         if norm > 0:
             h_local = h_local * (J / norm)
+        term_norms.append(float(np.max(np.abs(np.linalg.eigvalsh(h_local)))))
         # Embed h_local into the full Hilbert space (acts as identity elsewhere)
         # Tensor structure: site 0 is leftmost, site L-1 rightmost
         # h_z at sites (z, z+1): identity on sites 0..z-1, h_local on (z, z+1), identity on z+2..L-1
@@ -49,7 +62,7 @@ def build_local_hamiltonian(L: int, J: float, seed: int) -> np.ndarray:
         right_dim = 2 ** (L - z - 2)
         h_full = np.kron(np.eye(left_dim), np.kron(h_local, np.eye(right_dim)))
         H = H + h_full
-    return H
+    return H, term_norms
 
 
 def site_operator(L: int, site: int) -> np.ndarray:
@@ -88,18 +101,32 @@ def main() -> None:
     print("  1D chain of L sites with C^2 (qubit) per site (toy A1)")
     print("  H = sum_z h_z with h_z supported on (z, z+1) (range r = 1)")
     print("  J = max ||h_z||_op (local Hamiltonian density bound)")
-    print("  v_LR = 2 e r J (Lieb-Robinson velocity)")
+    print("  v_LR = 2 e q W R (proved overlap-weight Lieb-Robinson velocity,")
+    print("  bridge note Lemma L1/L2; supersedes the 2 e r J plug-in)")
     print()
 
     L = 8  # chain length
     J = 1.0
-    r = 1
-    v_LR = 2 * math.e * r * J  # Lieb-Robinson velocity
     seed = 20260501
-    H = build_local_hamiltonian(L, J, seed)
+    H, term_norms = build_local_hamiltonian(L, J, seed)
+    # Overlap-weight velocity data, computed from the instantiated terms
+    # (bridge note eq. (6)), not asserted:
+    #   q = largest support size; each term acts on exactly {z, z+1}
+    #   R = largest support diameter in graph distance
+    #   W = max_x sum_{Z owns x} ||h_Z||_op
+    q = 2
+    R = 1
+    site_weight = [0.0] * L
+    for z, nrm in enumerate(term_norms):  # term z supported on {z, z+1}
+        site_weight[z] += nrm
+        site_weight[z + 1] += nrm
+    W = max(site_weight)
+    v_LR = 2 * math.e * q * W * R  # proved overlap-weight Lieb-Robinson velocity
     print(f"  L = {L} sites, dim H_phys = {2**L}")
-    print(f"  J = {J}, r = {r}")
-    print(f"  v_LR = 2 e r J = {v_LR:.4f}")
+    print(f"  J = {J}")
+    print(f"  q = {q} (support size), R = {R} (support diameter)")
+    print(f"  W = max_x sum_(Z owns x) ||h_Z||_op = {W:.4f} (per-site overlap weight)")
+    print(f"  v_LR = 2 e q W R = {v_LR:.4f}")
     print(f"  ||H||_op = {np.linalg.norm(H, ord=2):.4f}")
     print()
 
@@ -154,7 +181,7 @@ def main() -> None:
     print("-" * 72)
     print("TEST 3: lightcone decay - outside lightcone, commutator -> 0")
     print("-" * 72)
-    print("Fix t = 0.1 (so v_LR t ≈ 0.54). Sweep d = 2 to 7. Expect")
+    print("Fix t = 0.1. Sweep d = 2 to 7. Expect")
     print("exponential decay of commutator with d outside the lightcone.")
     print()
     t_fixed = 0.1

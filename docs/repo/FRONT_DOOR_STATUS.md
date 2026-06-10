@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1373 |
+| Applied audit verdicts | 1374 |
 | Retained-grade rows, including boxed decorations | 1261 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 797 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1418 |
+| Unaudited rows | 1417 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 18 |
+| Audited conditional rows | 19 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1423 |
-| Ready rows | 56 |
+| Total pending rows | 1422 |
+| Ready rows | 55 |
 | Cycle-break targets | 0 |
-| Critical pending | 345 |
+| Critical pending | 344 |
 | High pending | 242 |
 | Medium pending | 394 |
 | Leaf pending | 442 |
 
 Next ready rows by queue order:
 
-- [`microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) - critical; unaudited
 - [`higgs_from_lattice_note`](../../docs/HIGGS_FROM_LATTICE_NOTE.md) - critical; unaudited
 - [`lattice_greens_function_maradudin_textbook_import_note_2026-05-18`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) - critical; audit_in_progress
 - [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`](../../docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md) - critical; audit_in_progress
 - [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
 - [`spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md) - high; unaudited
+- [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

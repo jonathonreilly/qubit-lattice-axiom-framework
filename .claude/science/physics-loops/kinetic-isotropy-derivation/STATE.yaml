@@ -1,0 +1,30 @@
+loop_slug: kinetic-isotropy-derivation
+goal: derive or otherwise retire the kinetic_isotropy_primitive (c_t = c_s); ruler OFF-target
+mode: run
+target: best-honest-status
+started: 2026-06-09
+branch: physics-loop/kinetic-isotropy-derivation-block02-20260609
+worktree: /Users/jonBridger/tp-wt-kinetic-isotropy
+cycle: 2
+active_route: R-A index/winding-quantized saturation (ROUTE_PORTFOLIO.md)
+hard_residual: >
+  P2 (unitary strict-tick reading, not retained) and P4 (realized staggered
+  carrier's band winding identification) are the surviving conditional inputs;
+  3D Weyl-block enumeration named open.
+artifacts:
+  - docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md
+  - scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py (25/25)
+  - logs/runner-cache/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.txt
+open_imports: none (no literature values consumed; comparators not cited)
+no_go_routes: see NO_GO_LEDGER.md (9 entries)
+review: block01 pass (1 BLOCKER + 4 MAJOR fixed); block02 pass (no blockers, 3 MAJOR fixed)
+pr_status: >
+  block01 PR #3442 LANDED on main (reviewer cherry-pick d0e7ed7fc, note
+  refined + retitled 'Strict Unitary Chiral Band Velocity Quantization');
+  block02 rebased onto main, PR pending.
+next_exact_action: >
+  open block02 PR against main. Then cycle 3 candidates: (a) larger-
+  periodicity enumeration (mass/Dirac-pairing cells; does the massless
+  normalization keep saturation?), (b) 3D simultaneous tick, (c) P2
+  unitarity provenance.
+stop_condition: owner session-scoped run; stop after PR + report unless directed onward

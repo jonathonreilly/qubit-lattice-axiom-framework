@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 805 |
+| **retained_bounded** | 806 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 38 |
-| unaudited | 1398 |
+| unaudited | 1397 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1243 |
+| `audited_clean` | 1244 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1714 |
+| `unaudited` | 1713 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 808 |
-| `leaf` | 1323 |
+| `medium` | 809 |
+| `leaf` | 1322 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 0
@@ -1293,6 +1293,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_lorentzian_global_atlas_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_polarization_frame_bundle_attempt` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | A | - |
+| `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18747,6 +18748,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Runner result: localization coefficients depend on frame choice, with max channel delta across two valid polarization frames = 6.767e-02 and PASS=11 FAIL=0.  _(class `A`)_
 - **chain closes:** True — The note claims a bounded negative/blocker result, not a positive universal-GR closure theorem: the available quotient/kernel data yield an orbit of localization responses while no distinguished projector bundle or connection is supplied. The SHA-pinned cached runner completed successfully and algebraically verifies frame-dependent channel coefficients across valid 3+1 polarization frames, which is enough for the stated no-canonical-projector blocker. No timeout, stale output, hidden dependency, or unratified physical bridge is load-bearing for this bounded claim because the note explicitly stops before identifying the Hessian with Einstein/Regge dynamics.
 - **rationale:** The note claims a bounded negative/blocker result, not a positive universal-GR closure theorem: the available quotient/kernel data yield an orbit of localization responses while no distinguished projector bundle or connection is supplied. The SHA-pinned cached runner completed successfully and algebraically verifies frame-dependent channel coefficients across valid 3+1 polarization frames, which is enough for the stated no-canonical-projector blocker. No timeout, stale output, hidden dependency, or unratified physical bridge is load-bearing for this bounded claim because the note explicitly stops before identifying the Hessian with Einstein/Regge dynamics.
+- **auditor confidence:** high
+
+### `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`UNIVERSAL_GR_QUADRATIC_MODE_GLUING_DERIVATION_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/UNIVERSAL_GR_QUADRATIC_MODE_GLUING_DERIVATION_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite diagonal quadratic-mode gluing law omega^2 = V/G from the stated quadratic Lagrangian with nonzero G; GR comparator signs, the Einstein-Hilbert action, continuum coefficients, and G_Newton are outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-034824-4338192ea1-universal_gr_quadratic_mode_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the finite diagonal quadratic channel L = (1/2) G qdot^2 - (1/2) V q^2, substituting q(t)=exp(i omega t) into G qddot + V q = 0 gives omega^2 = V/G for G != 0.  _(class `A`)_
+- **chain closes:** True — The Euler-Lagrange equation gives d/dt(G qdot) - (-V q) = 0, hence G qddot + V q = 0. For q=exp(i omega t), qddot=-omega^2 q, so (V-G omega^2)q=0 and omega^2=V/G when q is nonzero and G != 0.
+- **rationale:** The load-bearing step is a direct algebraic consequence of the stated finite quadratic Lagrangian and does not import a comparator sign, fitted value, physical Newton constant, or external GR action. Independent checking confirms the displayed rational examples, sign-product consequence for equal kinetic coefficients, and lambda-one control arithmetic. The source note explicitly limits the theorem to the gluing law and keeps the GR comparator-sign packet outside the claimed derivation.
 - **auditor confidence:** high
 
 ### `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08`

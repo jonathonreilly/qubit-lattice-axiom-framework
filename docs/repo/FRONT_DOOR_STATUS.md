@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1396 |
-| Retained-grade rows, including boxed decorations | 1273 |
+| Applied audit verdicts | 1397 |
+| Retained-grade rows, including boxed decorations | 1274 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 805 |
+| Retained bounded rows | 806 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1398 |
+| Unaudited rows | 1397 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 26 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1400 |
+| Total pending rows | 1399 |
 | Ready rows | 45 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
 | Medium pending | 379 |
-| Leaf pending | 443 |
+| Leaf pending | 442 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
-- [`universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09`](../../docs/UNIVERSAL_GR_QUADRATIC_MODE_GLUING_DERIVATION_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
+- [`universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08`](../../docs/UNIVERSAL_GR_STAGGERED_TT_PROJECTED_STRESS_TRIANGLE_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08`](../../docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09`](../../docs/MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09`](../../docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md) - medium; unaudited
 - [`magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md) - medium; unaudited
 - [`two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06`](../../docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
-- [`universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08`](../../docs/UNIVERSAL_GR_STAGGERED_TT_PROJECTED_STRESS_TRIANGLE_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - leaf; unaudited
+- [`universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3249 |
 | Critical nodes | 548 |
 | High nodes | 439 |
-| Medium nodes | 850 |
-| Leaf nodes | 1412 |
+| Medium nodes | 851 |
+| Leaf nodes | 1411 |
 
 Top load-bearing rows by graph score:
 

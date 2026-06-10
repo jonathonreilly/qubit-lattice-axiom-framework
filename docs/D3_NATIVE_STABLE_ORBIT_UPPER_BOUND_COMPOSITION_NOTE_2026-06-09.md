@@ -36,11 +36,12 @@ stable-circular-orbit edge:
   this composition. It remains context for a stronger claim, not the
   load-bearing finite-set edge used here.
 
-The existing legacy wrapper
+The legacy-named wrapper
 [`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
 and existing gate
 [`D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md`](D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md)
-are not modified by this note.
+now consume this native stable-orbit edge on the current source surface; their
+filenames are historical.
 
 ## Inputs
 
@@ -113,9 +114,9 @@ selector.
 
 This note deliberately does not edit retained-row source files. It cites the
 existing stable-orbit support note as an already-present native edge and adds a
-small composition certificate on top of it. Review-loop can land this note
-without changing the source hash of the retained support note or the existing
-import-scope gate.
+small composition certificate on top of it. Later source repairs may wire the
+legacy-named wrapper/gate to this native edge without changing the support-note
+claim itself.
 
 ## Non-Claims
 

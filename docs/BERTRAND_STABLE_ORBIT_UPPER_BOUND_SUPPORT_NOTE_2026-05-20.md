@@ -53,10 +53,11 @@ The landable support claim is:
 > circular orbits only for integer `d = 3`; `d = 4` is marginal and
 > `d >= 5` is unstable.
 
-This supports the existing named-import wrapper by making the elementary
-stability part explicit. The all-bounded-orbits-are-closed part of Bertrand's
-theorem remains standard classical mechanics unless separately derived and
-audited.
+This supports the existing upper-bound wrapper by making the elementary
+stability part explicit. The current finite-set composition consumes this
+stable-circular-orbit edge; the all-bounded-orbits-are-closed part of
+Bertrand's theorem remains broader classical context unless separately derived
+and audited.
 
 ## Inputs
 
@@ -175,7 +176,8 @@ gaps remain open as described in `D3_RETENTION_CLOSURE_PLAN_2026-05-20.md`.
 
 ## What This Does Not Close
 
-- It does not retire the Bertrand theorem import completely.
+- It does not prove the full Bertrand closed-orbit theorem; that stronger
+  theorem is not consumed by the current finite-set composition.
 - It does not claim an interacting framework gravity derivation or a
   physical-dimensional substrate replacement; it proves the continuum
   Green-kernel shape used by this support note.

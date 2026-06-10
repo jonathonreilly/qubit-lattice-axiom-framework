@@ -75,7 +75,7 @@ with `α(b)=Σ_e c_e/r_e(b)`:
 - **(T5, control)** the non-cancelling kernel `|c_e|` gives large-`b` `→ −1.00` (`1/b`)
   — the cancellation is what produces the steepening.
 
-Primary coarse-H runner: `TOTAL: PASS=8 FAIL=0`.
+Primary coarse-H runner plus fine-H packet guards: `TOTAL: PASS=10 FAIL=0`.
 Fine-H edge-kernel companion: `TOTAL: PASS=12 FAIL=0`.
 Fine-H source-packet manifest: `TOTAL: PASS=5 FAIL=0`; it verifies the
 transitive local helper scripts, fresh cache/source SHA, source fine-H slope

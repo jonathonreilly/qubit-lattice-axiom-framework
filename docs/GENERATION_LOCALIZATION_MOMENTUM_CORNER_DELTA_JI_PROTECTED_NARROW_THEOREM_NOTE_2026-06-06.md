@@ -33,8 +33,8 @@ retained
 [`STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11`](STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11.md)
 (`retained_bounded`).
 
-2026-06-07 bridge repair: the current audit blocker asked for a one-hop source theorem deriving
-the Generation periodic plane-wave density-kernel bridge. Its target is the periodic
+2026-06-07 bridge repair: the source packet supplies the one-hop theorem deriving the
+Generation periodic plane-wave density-kernel bridge. Its target is the periodic
 translation-invariant plane-wave density-density kernel and Hartree-Fock plane-wave readout
 `Vq(q) = -G/(eps(q)+mu^2)` and `delta_ij = (Vq(0)-Vq(k_i-k_j))/N`, including boundary and
 normalization, from the retained staggered two-body mediator. The bridge note above supplies that

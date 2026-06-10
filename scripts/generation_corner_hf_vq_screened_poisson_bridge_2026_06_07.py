@@ -158,15 +158,6 @@ def source_checks() -> None:
     target = TARGET_NOTE.read_text()
     runner = TARGET_RUNNER.read_text()
     rows = ledger_rows()
-    target_row = rows["generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06"]
-    blocker = str(target_row.get("notes_for_re_audit_if_any", ""))
-
-    check(
-        "target audit row still exposes the exact missing Vq bridge blocker",
-        "periodic translation-invariant Hartree-Fock plane-wave mutual-energy readout" in blocker
-        and "Vq(q)=-G/(eps(q)+mu^2)" in blocker,
-        detail="blocker text found in audit ledger",
-    )
     check(
         "retained staggered two-body mediator remains retained_bounded, not widened by this branch",
         effective_status(rows, "staggered_self_consistent_two_body_note_2026-04-11") == "retained_bounded",

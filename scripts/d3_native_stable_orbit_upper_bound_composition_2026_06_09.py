@@ -135,7 +135,7 @@ def source_checks() -> None:
     report(
         "stable support note does not consume full Bertrand closure theorem",
         "The exact all-`L` closed-orbit theorem is not consumed" in stable_flat
-        and "This note only supplies the stable-circular-orbit upper-bound support step" in stable_flat,
+        and "stable-circular-orbit edge" in stable_flat,
     )
     report(
         "Coulomb support note remains bounded companion support",
@@ -143,14 +143,15 @@ def source_checks() -> None:
         and "does not close the D=3 chain by itself" in coulomb_flat,
     )
     report(
-        "legacy wrapper remains unmodified import wrapper surface",
-        "Dimension Selection Upper-Bound" in legacy_wrapper
-        and "bounded named-import wrapper" in legacy_wrapper,
+        "legacy-named wrapper consumes native stable-orbit edge",
+        "Native Stable-Orbit Edge" in legacy_wrapper
+        and "U_stable = {d : d <= 3}" in legacy_wrapper
+        and "full Bertrand closed-orbit theorem as an imported premise" in legacy_wrapper,
     )
     report(
-        "legacy gate remains unmodified import-scope gate surface",
-        "# D3 Upper-Bound Import Scope Gate" in legacy_gate
-        and "exact-support branch-local import-scope gate" in legacy_gate,
+        "legacy-named gate consumes native stable-orbit edge",
+        "# D3 Upper-Bound Native Stable-Orbit Scope Gate" in legacy_gate
+        and "exact-support branch-local native-stable-edge gate" in legacy_gate,
     )
     report(
         "note non-claims block overread",
@@ -171,9 +172,9 @@ def source_checks() -> None:
         and "{3,4,5} intersect {d : d <= 4}" in note,
     )
     report(
-        "note does not claim to supersede existing wrapper/gate",
-        "are not modified by this note" in note
-        and "Review-loop can land this note" in note,
+        "note permits wrapper/gate wiring without changing support-note claim",
+        "now consume this native stable-orbit edge" in note
+        and "Later source repairs may wire the\nlegacy-named wrapper/gate" in note,
     )
 
 

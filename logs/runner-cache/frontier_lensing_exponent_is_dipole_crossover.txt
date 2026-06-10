@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lensing_exponent_is_dipole_crossover.py
-runner_sha256: ad43c91ec04be1701509d85514af447dafb8861baf7b4b4c359a7ff0ca2fd7d8
+runner_sha256: 8438a1cfbc1ead097c93cf8255968ca58ccd2ad25da8789245d110cbb764d8c9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.35
+elapsed_sec: 2.40
 status: ok
 ----- stdout -----
 PASS T1 monopole cancels: |sum c|/sum|c| < 0.01 (got 0.0001)
@@ -14,9 +14,11 @@ PASS T4 crossover: |small-b slope| < |large-b slope| (-1.57 vs -2.02)
 PASS T4b coarse-H large-b signed slope is near -2 (got -2.02, within 0.15)
 PASS T4c small-b slope is steeper than -1 but shallower than -2 (crossover, got -1.57)
 PASS T5 CONTROL: non-cancelling kernel |c_e| gives large-b -> -1 (1/b) (got -1.00)
+PASS T6 fine-H edge-kernel cache and JSON are present, fresh, and green
+PASS T6b fine-H source-packet manifest cache is present, fresh, and green
 
 mechanism: monopole=0.0001 support=3.61 small_b_slope=-1.57 asym_slope=-2.02 abs_kernel_asym=-1.00
-TOTAL: PASS=8 FAIL=0
+TOTAL: PASS=10 FAIL=0
 
 ----- stderr -----
 

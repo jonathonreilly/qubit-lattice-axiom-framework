@@ -19,14 +19,16 @@ direct_effective_status_change_allowed_from_this_note: false
 This note repairs the source-side dependency edge for
 `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`.
 The previous wrapper recorded Bertrand and atomic-stability results as named
-textbook imports, but the restricted packet did not expose the available
-one-hop bounded support packets as load-bearing authorities.
+textbook imports, but the current source surface exposes the available
+one-hop bounded support packets as load-bearing authorities. The decisive
+stable-orbit edge is now native to the repo; textbook Bertrand references are
+parallel context for the stronger closed-orbit theorem.
 
 This repair makes the current graph explicit:
 
 | Upper-bound role | Source support packet | Runner/cache |
 | --- | --- | --- |
-| Bertrand / stable-orbit route | [`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) | [`scripts/bertrand_stable_orbit_green_kernel_bridge.py`](../scripts/bertrand_stable_orbit_green_kernel_bridge.py), [`logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt`](../logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt) |
+| Native stable-orbit route | [`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) | [`scripts/bertrand_stable_orbit_green_kernel_bridge.py`](../scripts/bertrand_stable_orbit_green_kernel_bridge.py), [`logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt`](../logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt) |
 | Atomic / Coulomb route | [`COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) | [`scripts/frontier_coulomb_stability_scaling_repair.py`](../scripts/frontier_coulomb_stability_scaling_repair.py), [`logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt`](../logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt) |
 | Current composition gate | [`D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md`](D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md) | [`scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py`](../scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py), [`logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt`](../logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt) |
 
@@ -41,12 +43,12 @@ L_runner = {3,4,5}.
 The two upper-bound routes compose differently with that set:
 
 ```text
-L_runner intersect {d : d <= 3} = {3}      # Bertrand route
+L_runner intersect {d : d <= 3} = {3}      # native stable-orbit route
 L_runner intersect {d : d <= 4} = {3,4}    # weak atomic-stability route
 L_runner intersect {3} = {3}               # strict Coulomb-spectrum route, if separately scoped
 ```
 
-So the currently decisive uniqueness gate is the Bertrand stable-orbit upper
+So the currently decisive uniqueness gate is the native stable-orbit upper
 route. The atomic route is compatible companion support under the weaker
 `d <= 4` stability statement, and becomes unique only if the stronger
 `d = 3` spectral statement is separately admitted and scoped.
@@ -55,7 +57,7 @@ route. The atomic route is compatible companion support under the weaker
 
 This repair does not:
 
-- derive Bertrand's theorem from the framework;
+- derive the full Bertrand closed-orbit theorem from the framework;
 - derive atomic stability from the framework;
 - derive a framework-native electromagnetic sector or hydrogenic spectrum;
 - derive a `Z^d` substrate from the present `Z^3` substrate;
@@ -63,7 +65,7 @@ This repair does not:
 - edit `docs/audit/**`.
 
 Its role is narrower: expose the one-hop support packets and exact finite-set
-composition so the upper-bound wrapper is auditable without an unattributed
+composition so the upper-bound wrapper is auditable without a load-bearing
 textbook-import edge.
 
 ## Runner Certificate
@@ -80,7 +82,7 @@ The runner verifies:
 Expected output:
 
 ```text
-SUMMARY: PASS=47 FAIL=0
+SUMMARY: PASS=48 FAIL=0
 ```
 
 ## Status Certificate

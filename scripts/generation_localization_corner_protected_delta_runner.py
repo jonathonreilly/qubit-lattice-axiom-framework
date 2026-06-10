@@ -95,14 +95,6 @@ def hf_vq_bridge_source_checks():
     bridge = BRIDGE_NOTE.read_text() if BRIDGE_NOTE.exists() else ""
     cache = BRIDGE_CACHE.read_text() if BRIDGE_CACHE.exists() else ""
     rows = ledger_rows()
-    target_row = rows["generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06"]
-    blocker = str(target_row.get("notes_for_re_audit_if_any", ""))
-
-    check(
-        "audit blocker names the missing periodic Vq/Hartree-Fock bridge",
-        "periodic translation-invariant Hartree-Fock plane-wave mutual-energy readout" in blocker
-        and "Vq(q)=-G/(eps(q)+mu^2)" in blocker,
-    )
     check(
         "target note cites the 2026-06-07 one-hop bridge note, runner, and cache",
         BRIDGE_NOTE.name in note

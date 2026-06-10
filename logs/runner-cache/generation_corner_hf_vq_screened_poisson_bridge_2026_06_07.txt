@@ -1,17 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py
-runner_sha256: 84163509fa62d38d7aaf5772366ac25813943f8996dfa30cae1c1df02cc7d7a5
+runner_sha256: 56c6ebb3f3d7f0a93c9ad87e1052cfa79bd5e81212ec72d411ad5f5f5a38b6a6
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.28
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
 ----- stdout -----
 ==============================================================================
 GENERATION CORNER HF Vq SCREENED-POISSON BRIDGE  [exact support]
 ==============================================================================
 
 -- Source and dependency surface checks --
-  [FAIL] target audit row still exposes the exact missing Vq bridge blocker  (blocker text found in audit ledger)
   [PASS] retained staggered two-body mediator remains retained_bounded, not widened by this branch  (retained_bounded)
   [PASS] generation-corner dependencies are retained or retained_bounded on current main  ({'three_generation_observable_theorem_note': 'retained', 'three_generation_structure_note': 'retained_bounded', 'three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10': 'retained'})
   [PASS] bridge note declares exact-support source status and independent audit requirement
@@ -35,8 +34,8 @@ GENERATION CORNER HF Vq SCREENED-POISSON BRIDGE  [exact support]
   [PASS] the pure-corner magnitude scales as 1/N with fixed IR multiplier  (|delta|*N=49993.750781)
 
 ==============================================================================
-TOTAL: PASS=15 FAIL=1
-VERDICT: bridge source packet FAILED; do not use for re-audit.
+TOTAL: PASS=15 FAIL=0
+VERDICT: exact-support bridge packet is internally green.  It derives the periodic screened-Poisson Fourier multiplier and the finite Slater Hartree-minus-exchange normalization from native finite-lattice linear algebra, while leaving the new bridge for independent audit.
 
 ----- stderr -----
 

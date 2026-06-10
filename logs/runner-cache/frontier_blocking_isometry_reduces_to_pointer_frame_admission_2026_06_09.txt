@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/frontier_blocking_isometry_reduces_to_pointer_frame_admission_2026_06_09.py
+runner_sha256: 259930836520eaeee42243f49aafc16933cdc04f51dae7ea44cf769658edc208
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+=== B1: given {P_r}, the record-write isometry W is FIXED ===
+  PASS  B1 n=2: W^dag W = I (W is a normalized isometry)
+  PASS  B1 n=2: extracted Kraus blocks K_r = P_r
+  PASS  B1 n=2: Tr_record(W rho W^dag) = sum_r P_r rho P_r
+  PASS  B1 n=3: W^dag W = I (W is a normalized isometry)
+  PASS  B1 n=3: extracted Kraus blocks K_r = P_r
+  PASS  B1 n=3: Tr_record(W rho W^dag) = sum_r P_r rho P_r
+  PASS  B1 n=4: W^dag W = I (W is a normalized isometry)
+  PASS  B1 n=4: extracted Kraus blocks K_r = P_r
+  PASS  B1 n=4: Tr_record(W rho W^dag) = sum_r P_r rho P_r
+
+=== B2: given the CHANNEL, W is unique only up to a record-register gauge ===
+  PASS  B2 unitary-mixed Kraus reproduce the SAME channel (Kraus gauge)
+  PASS  B2 projective rep obeys K_r^dag K_s = delta_rs K_r (one-hot record atoms)
+  PASS  B2 a generic Kraus-gauge rep is NOT projective (record atoms scrambled)
+  PASS  B2 the Kraus gauge leaves every system observable's statistics invariant
+
+=== B3: the genuine undelivered content is {P_r}, not the isometry ===
+  PASS  B3 two DIFFERENT pointer sets give DIFFERENT channels (physical choice)
+  PASS  B3 a record-label relabeling leaves the channel invariant (pure gauge)
+  PASS  B3 relabeled set is the same projector set up to order (one-hot preserved)
+
+=== B4: compression isometry V (block spin) -- same reduction ===
+  PASS  B4 V^dag V = I_2 (V is an isometry; E(X)=V^dag X V is unital, CP)
+  PASS  B4 V'=V U has the SAME range (survivor-qubit gauge, not physical)
+  PASS  B4 the gauge only conjugates the survivor: E'(Y) = U^dag E(Y) U
+  PASS  B4 a different range = a physically distinct surviving sector/pointer
+
+=== B5: irreducible color C^3 -- no canonical covariant pointer set ===
+  PASS  B5 sampled g are genuine SU(3) (unitary, det=1)
+  PASS  B5 I3 commutes with every g (the trivial invariant projector)
+  PASS  B5 a rank-1 color projector breaks SU(3) covariance (commutator > 0)
+  PASS  B5 HW(3) generators lie in SU(3) (det Z = det X = 1)
+  PASS  B5 HW(3) twirl of a Hermitian X -> scalar (Tr X /3) I3 (commutant=scalars)
+  PASS  B5 only SU(3)-invariant projector ranks are 0 and 3 (no nontrivial sector)
+  PASS  B5 d=2 sanity: a rank-1 SU(2) projector also breaks covariance
+
+=== B6: consolidation (each flag is recomputed fresh, not a literal) ===
+  PASS  B6 isometry FIXED given {P_r} (so hat 4 is gated, not impossible/no-go)
+  PASS  B6 hat 4 reduces to the named pointer-frame admission (not independent)
+  PASS  B6 NO hat discharged (isometry not delivered from the axioms)
+
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

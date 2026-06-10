@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 827 |
+| **retained_bounded** | 828 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 40 |
-| unaudited | 1355 |
+| unaudited | 1354 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1274 |
+| `audited_clean` | 1275 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1671 |
+| `unaudited` | 1670 |
 
 | claim_type | count |
 |---|---:|
@@ -1090,6 +1090,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `ring_monodromy_does_not_force_car_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15740,6 +15741,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** No Lattice+Quantum+RP datum tested rejects the HCB ring; RP/T-positivity certifies both HCB and CAR in every parity sector, so selecting CAR requires positing the graded tensor product / FS boundary condition.  _(class `C`)_
 - **chain closes:** True — The HCB ring is an explicit non-CAR countermodel satisfying the audited constraints, while the CAR ring also satisfies them. Therefore the tested positivity/monodromy/local-observable data are nonselective; the graded loop boundary condition remains an extra FS premise.
 - **rationale:** The runner source substantively constructs the finite one-qubit tensor operators, HCB and JW-CAR ring Hamiltonians, parity projectors, transfer matrices, spectra, locality tests, and flux samples; it is not just printing expected constants. The load-bearing result is a first-principles finite-matrix counterexample from the accepted Lattice+Quantum premise plus retained parity/spectral inputs, with no PDG, tuned scale, or external comparator. This is clean only for the packet's scoped finite transfer-matrix T-positivity / monodromy-local-observable selector, not for a broader spin-statistics or full OS reflection-positivity theorem.
+- **auditor confidence:** high
+
+### `rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Two-slice temporal-gauge pure-gauge Wilson plane bridge on the certified abelian Z_N (N=2,3,4,5) and U(1) character surfaces; SU(2)/SU(3) data are diagnostic only and not audited as W2/W3 closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-054915-ecafe39feb-rp_gauge_half_wilson_tempora`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the abelian Z_N and U(1) surfaces the Wilson plane weight has nonnegative character/Fourier coefficients, so the reflected Gram factors as G = W diag(c) W^† and is PSD.  _(class `A`)_
+- **chain closes:** True — The abelian plane-kernel positivity follows from nonnegative Fourier/Bessel coefficients, and character orthogonality gives v^†Gv = sum_a c_a |sum_I v_I W_I(a)|^2 >= 0. The nonabelian product-character reconstruction is explicitly excluded from the claim scope.
+- **rationale:** The load-bearing step is a genuine algebraic closure: the Wilson sign gives exp(+beta cos), U(1) coefficients are I_n(beta) with a manifestly nonnegative series, and the finite Z_N coefficients are the corresponding nonnegative aliased Fourier coefficients. The runner source actually computes the DFT/Bessel-series coefficients, Gram PSD checks, the SU(2) mismatch guard, and wrong-sign negative controls rather than printing constants. All load-bearing dependencies in the restricted packet are retained-grade, and the source cleanly bounds away from the unsupported nonabelian W2/W3 reconstruction.
 - **auditor confidence:** high
 
 ### `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29`

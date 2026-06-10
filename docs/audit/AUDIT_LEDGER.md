@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 802 |
+| **retained_bounded** | 803 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1407 |
+| unaudited | 1406 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1238 |
+| `audited_clean` | 1239 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1723 |
+| `unaudited` | 1722 |
 
 | claim_type | count |
 |---|---:|
@@ -116,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1070 | 37.06 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 922 | 35.85 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1166 | 35.69 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1165 | 35.69 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 882 | 34.79 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 705 | 32.96 | `unaudited` | unaudited |
@@ -638,6 +638,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8873,6 +8874,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The source note is appropriately bounded and does not claim exact m_H closure. However, its load-bearing support is a runner/comparator study rather than a first-principles derivation from the restricted packet. The code genuinely performs numerical CW-lattice calculations, but key quantitative inputs and comparison targets are hard-coded or imported, and several PASS lines are SM/PDG consistency checks.
 - **open / conditional deps cited:**
   - `HIGGS_MASS_DERIVED_NOTE.md`
+- **auditor confidence:** high
+
+### `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure lattice-side mean-field algebra on the retained bridge-backed d=4/Z^4 APBC taste/determinant surface: R_lattice = 4/(u_0^2 N_taste) with N_taste = 16 equals the per-mode source curvature 1/(4 u_0^2), with no physical Higgs-mass matching or numerical u_0 claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-032130-4d6af91aa8-higgs_lattice_eigenvalue_rat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using W(J) = (N_tot/2) log(J^2 + 4 u_0^2), W''(0)/N_tot = 1/(4 u_0^2), and R_lattice = 4/(u_0^2 N_taste) with N_taste = 16 also equals 1/(4 u_0^2).  _(class `A`)_
+- **chain closes:** True — The supplied retained bridge authorities provide N_taste = 16 and D_mf^dag D_mf = 4 u_0^2 I_48 inside the named mean-field truncation. Independent differentiation of the displayed W(J) gives W''(0)/N_tot = 1/(4 u_0^2), matching the stated R_lattice algebraically.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained or retained_bounded inputs, not a physical readout or numerical match. The finite carrier and determinant form are supplied by retained bridge packets, while the mean-field replacement is kept as an explicit bounded hypothesis rather than promoted to the exact theory. The runner source performs symbolic Clifford and curvature checks plus bridge-cache verification, and the same curvature and ratio equality check out by direct manual differentiation and simplification.
 - **auditor confidence:** high
 
 ### `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`

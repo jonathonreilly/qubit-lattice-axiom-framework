@@ -70,12 +70,14 @@ def main() -> int:
     check("P2 bucket = D (fit-conditional): same consumed rectangle; unaudited", True)
 
     # ---- P3: Higgs vacuum stability ----
-    print("\n-- P3: Higgs vacuum stability (weakly disfavored) --")
-    check("P3: framework forecast (absolutely stable) differs from SM-with-current-m_t (near-critical/"
-          "metastable) -> a binary discrimination test", "absolutely_stable" != "metastable")
-    check("P3 bucket = B: the discriminating boundary lambda(M_Pl)=0 is an ADMITTED SM-shared input (native "
-          "derivation retired), so 'stable' is a choice the SM can also make; ~0.75-1 sigma separation", True,
-          "not a closure of m_H; weakly disfavored")
+    print("\n-- P3: Higgs vacuum stability (conditional y_t signature) --")
+    check("P3: framework central value y_t(v)=0.918 is below the admitted y_t,crit~0.93 stability comparator, "
+          "but the framework's own +-3pct y_t band [0.890,0.946] straddles that boundary", True,
+          "0.44 sigma_sys above center; Gaussian-tail diagnostic ~33pct metastable; hard-interval fraction ~28pct")
+    check("P3 bucket = B: conditional beyond-SM y_t signature, not a robust binary. The boundary "
+          "lambda(M_Pl)=0 is an ADMITTED SM-shared input, y_t rests on an open Ward gate, and the "
+          "stable/metastable verdict flips inside the y_t systematic", True,
+          "central-value stable; weakly disfavored / not robust; not a closure of m_H")
 
     # ---- Table B: two apparent tensions that are NOT independent axiom-tests ----
     print("\n-- Table B: apparent tensions (NOT independent axiom-tests) --")
@@ -136,7 +138,7 @@ def main() -> int:
     print(
         "VERDICT: the catalog's forecasts and CURRENT standings are internally consistent and re-stated here -- "
         "P1 disfavored-but-allowed (NuFit-6.1 best fits 207/212 deg outside the band, band within 3-sigma); P2 "
-        "disfavored (NuFit-6.1 both variants lower octant 0.470); P3 weakly disfavored; T1/T2 NOT independent "
+        "disfavored (NuFit-6.1 both variants lower octant 0.470); P3 weakly disfavored / not robust; T1/T2 NOT independent "
         "axiom-tests (n_s -2.4 sigma vs ACT but -0.4 sigma vs Planck and N_e-dependent; J mild +1.4..+2.6 sigma "
         "comparator-dependent, decomposing into beta=6 alpha_s + the delta_CKM eta admission); bucket A empty "
         "in this catalog. "

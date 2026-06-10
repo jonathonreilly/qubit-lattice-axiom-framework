@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1375 |
-| Retained-grade rows, including boxed decorations | 1261 |
+| Applied audit verdicts | 1376 |
+| Retained-grade rows, including boxed decorations | 1262 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 797 |
+| Retained bounded rows | 798 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
 | Unaudited rows | 1416 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1421 |
+| Total pending rows | 1420 |
 | Ready rows | 54 |
 | Cycle-break targets | 0 |
-| Critical pending | 342 |
+| Critical pending | 341 |
 | High pending | 242 |
 | Medium pending | 394 |
 | Leaf pending | 443 |
 
 Next ready rows by queue order:
 
-- [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; audit_in_progress
+- [`gravity_clean_derivation_note`](../../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md) - critical; unaudited
 - [`yt_ew_matching_rule_m_note_2026-05-02`](../../docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md) - critical; audit_in_progress
 - [`su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`](../../docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md) - critical; audit_in_progress
 - [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited

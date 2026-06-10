@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1421
+**Total pending:** 1420
 **Ready (all deps already at retained-grade or metadata tiers):** 54
 
 By criticality:
-- `critical`: 342
+- `critical`: 341
 - `high`: 242
 - `medium`: 394
 - `leaf`: 443
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | audit_in_progress | critical | 278 | 9.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
+| 1 | `gravity_clean_derivation_note` | bounded_theorem | unaudited | critical | 276 | 19.11 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 2 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | audit_in_progress | critical | 261 | 10.03 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py` |
 | 3 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | audit_in_progress | critical | 256 | 9.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py` |
 | 4 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 1071 | 21.57 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_kawamoto_smit_phase_forcing.py` |

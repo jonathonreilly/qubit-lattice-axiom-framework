@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 797 |
+| **retained_bounded** | 798 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
 | unaudited | 1416 |
-| audit_in_progress | 1 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 1229 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 1230 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
@@ -132,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -773,6 +771,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lattice_keff_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10794,6 +10793,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Because the graph-Laplacian symbol satisfies lambda(k)=|k|^2+O(|k|^4) at the only singular mode, the leading Green kernel is the inverse Fourier transform of 1/|k|^2, namely 1/(4 pi |x|).  _(class `C`)_
 - **chain closes:** True — The stated stencil gives lambda(k)=sum_i k_i^2-(1/12)sum_i k_i^4+O(|k|^6), so the singular Fourier coefficient is exactly the continuum |k|^-2 one under the packet's transform convention. Independently, the axis residual of 1/(4 pi r) scales as 7/(8 pi) r^-5, matching the runner's coefficient and confirming the stated lower-order lattice-harmonic behavior away from the source.
 - **rationale:** The load-bearing coefficient is not imported from the listed textbook authorities; it follows from the exact framework stencil's small-k symbol and the standard continuum Fourier normalization. The runner source genuinely evaluates the stencil symbol, continuum flux convention, and discrete residual, with no helper imports or external comparator data. The runner does hard-code the candidate continuum kernel for the flux/residual checks, but the independent Taylor/Fourier check closes the normalization from the stated operator rather than relying on that printout alone.
+- **auditor confidence:** high
+
+### `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`
+
+- **Note:** [`LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bridge reroute only: verifies the Z^3 nearest-neighbor graph-Laplacian normalization, unit-flux convention, O(r^-5) lattice-harmonic residual at axis points, and dependence on the retained_bounded parent Green-kernel theorem rather than a load-bearing textbook import.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-023630-7379689507-lattice_greens_maradudin_asy`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** B4: the leading Green-kernel coefficient is c = 1/(4 pi) for the exact nearest-neighbor Z^3 graph-Laplacian convention, using the retained parent framework-local theorem plus B1-B3 normalization checks.  _(class `A`)_
+- **chain closes:** True — The source note does not try to reprove the full Green-kernel theorem; it consumes the cited retained_bounded parent theorem and checks that the bridge uses the same lattice symbol, sign, flux, and residual normalization. The Lattice axiom is an accepted premise and no external fitted or observational input is used.
+- **rationale:** The displayed symbol normalization follows from the Fourier symbol of the stated stencil and the cosine Taylor expansion, and the continuum flux of 1/(4 pi r) is correctly normalized to one. An independent axis expansion gives (-Delta_lat)(1/(4 pi r)) at (n,0,0) = -7/(8 pi)n^-5 + O(n^-7), matching the runner's stable scaled residual near 0.2785. The only theorem-level asymptotic existence input is the cited retained_bounded parent note, so the bridge closes within its bounded scope without a textbook import or comparator value.
 - **auditor confidence:** high
 
 ### `lattice_keff_continuum_note`

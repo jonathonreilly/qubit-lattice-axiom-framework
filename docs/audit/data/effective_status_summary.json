@@ -46,10 +46,10 @@
     "retained": 212,
     "retained_bounded": 807,
     "retained_no_go": 207,
-    "retained_pending_chain": 12,
-    "unaudited": 1395
+    "retained_pending_chain": 13,
+    "unaudited": 1394
   },
-  "retained_pending_chain_count": 12,
+  "retained_pending_chain_count": 13,
   "retained_pending_chain_examples": [
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
@@ -62,6 +62,7 @@
     "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
     "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
     "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
-    "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
+    "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+    "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"
   ]
 }

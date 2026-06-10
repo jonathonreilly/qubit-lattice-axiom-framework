@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3128 |
-| Applied audit verdicts | 1409 |
+| Applied audit verdicts | 1410 |
 | Retained-grade rows, including boxed decorations | 1279 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 205 |
 | Retained bounded rows | 813 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1401 |
+| Unaudited rows | 1400 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 29 |
+| Audited conditional rows | 30 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1403 |
-| Ready rows | 16 |
+| Total pending rows | 1402 |
+| Ready rows | 15 |
 | Cycle-break targets | 0 |
-| Critical pending | 284 |
+| Critical pending | 283 |
 | High pending | 280 |
 | Medium pending | 409 |
 | Leaf pending | 430 |
 
 Next ready rows by queue order:
 
-- [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; unaudited
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`bertrand_stable_orbit_upper_bound_support_note_2026-05-20`](../../docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08`](../../docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`](../../docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md) - medium; unaudited
 - [`persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
+- [`d3_upper_bound_import_scope_gate_note_2026-06-06`](../../docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -61,15 +61,15 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 164 |
+| critical | `unaudited` | 163 |
 | high | `unaudited` | 161 |
 | medium | `unaudited` | 95 |
 | critical | `open_gate` | 3 |
+| critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |

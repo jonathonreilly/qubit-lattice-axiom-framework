@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 797 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1417 |
+| unaudited | 1416 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 19 |
+| ~~audited_conditional~~ | 20 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1229 |
-| `audited_conditional` | 19 |
+| `audited_conditional` | 20 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1733 |
+| `unaudited` | 1732 |
 
 | claim_type | count |
 |---|---:|
@@ -113,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 811 | 38.66 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 708 | 38.47 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1071 | 36.07 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1070 | 36.06 | `audited_clean` | **retained_bounded** |
 | 16 | `cpt_exact_note` | positive_theorem | critical | 1165 | 35.69 | `audited_clean` | **retained** |
 | 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 922 | 34.85 | `audited_clean` | **retained_bounded** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 882 | 34.79 | `audited_clean` | **retained_bounded** |
@@ -1371,6 +1371,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `higgs_from_lattice_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8804,6 +8805,21 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Spatial APBC is not selected by exponent counting; it is selected by the existence of a finite intensive 3+1 order-parameter limit on the minimal hierarchy block, while the exact local observable depends on u0 only through m/u0.  _(class `C`)_
 - **chain closes:** True — Within the bounded minimal-block scope, the determinant formulas, coefficient asymptotics, and u0 homogeneity follow from the explicit finite Dirac operator and exact formulas checked by the runner. The note explicitly excludes the broader physical electroweak order-parameter selection theorem from the closed claim.
 - **rationale:** The runner constructs the minimal L_s=2 Dirac matrix, compares direct determinants against the stated closed formulas for both spatial BCs, verifies the BC-independent zero-mass u0 power, and checks the exact homogeneity and small-m coefficient consequences with zero failures. The source note does not overclaim the full hierarchy theorem: it confines closure to the spatial-BC and u0-scaling objections and explicitly leaves the physical intensive order-parameter selection as open. Residual risk is limited to not treating this bounded theorem as the missing physical bridge.
+- **auditor confidence:** high
+
+### `higgs_from_lattice_note`
+
+- **Note:** [`HIGGS_FROM_LATTICE_NOTE.md`](../../docs/HIGGS_FROM_LATTICE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded runner-level support for nontrivial lattice Coleman-Weinberg Higgs behavior and consistency ranges, not an exact Higgs-mass derivation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-022715-2bf2ec4529-higgs_from_lattice_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The quantitative Higgs output moves materially with the accepted y_t(v) route and comparison inputs, so the runner supports bounded consistency studies rather than exact m_H authority.  _(class `D`)_
+- **chain closes:** False — The runner implements and evaluates a lattice CW potential, but the quantitative support imports or chooses SM couplings, y_t, lambda_bare, m_sq_bare, matching factors, and asserted CW/particle-content identifications. The restricted packet supplies no retained upstream theorem deriving those inputs from the axiom-only baseline.
+- **rationale:** The source note is appropriately bounded and does not claim exact m_H closure. However, its load-bearing support is a runner/comparator study rather than a first-principles derivation from the restricted packet. The code genuinely performs numerical CW-lattice calculations, but key quantitative inputs and comparison targets are hard-coded or imported, and several PASS lines are SM/PDG consistency checks.
+- **open / conditional deps cited:**
+  - `HIGGS_MASS_DERIVED_NOTE.md`
 - **auditor confidence:** high
 
 ### `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`

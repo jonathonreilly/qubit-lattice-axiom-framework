@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1486,
+    "bounded_theorem": 1487,
     "decoration": 54,
     "meta": 324,
     "no_go": 329,
     "open_gate": 145,
-    "positive_theorem": 774
+    "positive_theorem": 773
   },
   "cycle_examples": [],
   "cycles_detected": 0,
@@ -47,15 +47,16 @@
     "retained": 213,
     "retained_bounded": 825,
     "retained_no_go": 208,
-    "retained_pending_chain": 15,
-    "unaudited": 1359
+    "retained_pending_chain": 16,
+    "unaudited": 1358
   },
-  "retained_pending_chain_count": 15,
+  "retained_pending_chain_count": 16,
   "retained_pending_chain_examples": [
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
     "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
+    "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08",
     "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
     "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
     "lattice_3d_nyquist_diffraction_note",

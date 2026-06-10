@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lepton_yukawa_256_structural_probe.py
+runner_sha256: 5da16232d63d7e59d4a91a217da2ba54d90d4166eeff5483d2568c7288527b1c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 ==============================================================================
 LEPTON-YUKAWA 1/256 STRUCTURAL vs FIT PROBE (meta)
 ==============================================================================
@@ -79,3 +87,6 @@ Exponent test: base 4=dim_C M_2 -> integer exponent 4 (unique structural base)
 d=3+1 survival: 4^3=64 and (2^3)^2=64 both FAIL; exponent-4 needs an unforced input
 Look-elsewhere: 256 unique perfect power within +/-5%; LEE for the integer ~0.007
 VERDICT: PARTIAL -- structural base, undetermined exponent, value in mild tension
+
+----- stderr -----
+

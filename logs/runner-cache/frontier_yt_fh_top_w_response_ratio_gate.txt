@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_fh_top_w_response_ratio_gate.py
+runner_sha256: a722193d42999e4d794c012084bc67072e831bfd7500136b9973170b80eb27c4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
+----- stdout -----
+==============================================================================
+Y_T FH TOP/W RESPONSE-RATIO GATE
+==============================================================================
+
+Part 1: anchors and current authority
+[PASS] docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
+[PASS] docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md exists
+[PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/EW_COUPLING_DERIVATION_NOTE.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Same-Source Top/W Response Ratio
+[PASS] note contains required section: Transfer-Matrix Feynman-Hellmann Form
+[PASS] note contains required section: Why This Beats The Pole-Row Normalization No-Go
+[PASS] note contains required section: Current Attempt Result
+[PASS] note contains required section: Non-Claims
+[PASS] EW Higgs mass diagonalization is retained
+[PASS] source-action support packet is retained_bounded
+[PASS] pole-row normalization no-go is retained_no_go
+[PASS] EW coupling note is not retained g2 authority
+
+Part 2: transfer-matrix Feynman-Hellmann derivative identity
+[PASS] d[-log(Lambda_t/Lambda_0)/a]/dh identity
+
+Part 3: same-source top/W response ratio
+[PASS] response ratio equals sqrt(2) y_t / g_2: sqrt(2)*y_t/g_2
+[PASS] y_t recovered from g_2 and response ratio: y_t
+[PASS] same-source reparameterization h' = c h cancels: sqrt(2)*y_t/g_2
+
+Part 4: retained W denominator algebra
+[PASS] M_W^2/M_Z^2 is v-independent: g_2**2/(g_2**2 + g_Y**2)
+[PASS] absolute W response plus g_2 recovers v: v
+
+Part 5: current closure blockers
+[PASS] symbolic top response row packet present: outputs/yt_strict_symbolic_top_response_row_packet_2026-05-25.json
+[PASS] coefficient-certified top/W FH rows absent: outputs/yt_fh_top_w_strict_response_rows_2026-05-25.json
+[PASS] strict W/Z denominator-response packet present: outputs/yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json
+[PASS] source-action support note says physical neutral EW/Higgs authority remains open
+[PASS] source-action support note lists W/Z bypass as open gate
+
+Part 6: firewalls
+[PASS] firewall phrase present: `H_unit`
+[PASS] firewall phrase present: `yt_ward_identity`
+[PASS] firewall phrase present: `y_t_bare`
+[PASS] firewall phrase present: `alpha_LM`
+[PASS] firewall phrase present: plaquette/u0
+[PASS] firewall phrase present: PDG
+[PASS] firewall phrase present: observed W/Z/top masses
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: positive Y_T closure has been obtained
+[PASS] forbidden overclaim absent: This note derives a numerical `y_t`
+[PASS] forbidden overclaim absent: `kappa_Y = 0` is derived
+
+wrote outputs/yt_fh_top_w_response_ratio_gate_2026-05-25.json
+SUMMARY: PASS=38 FAIL=0
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_delta_azimuth_chirality_necessity.py
+runner_sha256: bd0fe51946cd16ccbc4864250c780f05aa232457d613c81cfb0a08ae89d49078
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 16.51
+status: ok
+----- stdout -----
 PASS: L_permutation_action_delta_to_minus_delta_is_(1 2) max|p(-d)-(12)p(d)|=6.66e-16
 PASS: L_amplitude_permutation_action max=1.78e-15
 PASS: T_mirror_degeneracy_var max|F(+d)-F(-d)|=5.00e-16
@@ -33,3 +41,6 @@ PASS: R_physical_is_bare_radian_not_index_phase index phase 2pi/9=0.698132 (fact
 
 TOTAL: PASS=32 FAIL=0
 VERDICT: Brannen-delta azimuth selection on the C_3 records simplex requires a chirality-odd functional; every achiral records/Born functional is mirror-degenerate and cannot select the chiral physical azimuth. Magnitude 2/9=L_3(1,2) and the radian unit remain separate residuals; the cone r=1/2 firewall is untouched.
+
+----- stderr -----
+

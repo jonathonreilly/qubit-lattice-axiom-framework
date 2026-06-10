@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_scalar_kz_external_lift_gate_status_2026_06_06.py
+runner_sha256: 54f173685ed44b58d52cdabf4a5f9a8e3142b92cb4b7e32aa2950acafbb3a174
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.44
+status: ok
+----- stdout -----
 
 ----------------------------------------------------------------------------------------
 Part 1: source gate is present
@@ -21,8 +29,10 @@ Part 1: source gate is present
 ----------------------------------------------------------------------------------------
 Part 2: optional SDP stack availability
 ----------------------------------------------------------------------------------------
-  [PASS] cvxpy availability is recorded  (ModuleNotFoundError("No module named 'cvxpy'"))
-  [PASS] optional SDP stack absence leaves gate open  (cvxpy unavailable)
+  [PASS] cvxpy availability is recorded  (available)
+  [PASS] cvxpy version is visible  (1.8.2)
+  [PASS] CLARABEL solver is installed  (CLARABEL,HIGHS,OSQP,SCIPY,SCS)
+  [PASS] SCS-class fallback solver is installed  (CLARABEL,HIGHS,OSQP,SCIPY,SCS)
 
 ----------------------------------------------------------------------------------------
 Part 3: local SU(3) witness scale
@@ -35,15 +45,15 @@ Part 3: local SU(3) witness scale
 ----------------------------------------------------------------------------------------
 Part 4: minimal SDP feasibility probe
 ----------------------------------------------------------------------------------------
-  [PASS] minimal PSD/Hausdorff SDP probe skipped when cvxpy unavailable
-  [PASS] SDP interval claim is not made without cvxpy
-  [PASS] conservative interval remains an unexecuted optional probe
-  [PASS] SDP probe width check waits for optional SDP stack
+  [PASS] minimal PSD/Hausdorff SDP solves  (optimal)
+  [PASS] SDP value lies in conservative W_lift interval  (p1=0.6879905406923785)
+  [PASS] conservative interval is inside SU(3) support  ([0.686266, 0.736266])
+  [PASS] SDP probe width equals W_lift
 
 ----------------------------------------------------------------------------------------
 Part 5: gate classifier
 ----------------------------------------------------------------------------------------
-  [PASS] local optional-SDP execution path status is recorded  (False)
+  [PASS] local optional-SDP execution path status is recorded  (True)
   [PASS] primary SU(3), beta=6 bracket remains unavailable
   [PASS] gate remains open because primary bracket is missing
   [PASS] old K-Z benchmark is not used as target bracket
@@ -65,5 +75,8 @@ Part 6: branch-local note hygiene
   [PASS] status note avoids banned phrase: retained_no_go
 
 ========================================================================================
-  TOTAL: PASS=41, FAIL=0
+  TOTAL: PASS=43, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

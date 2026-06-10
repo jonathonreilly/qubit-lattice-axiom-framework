@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_uv_yukawa_sc_exclusion_certificate_2026_06_06.py
+runner_sha256: 8bbce717e15d311b7a3e8940a976dd9515b322c3de6f1cc175816fc59ae2be98
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.81
+status: ok
+----- stdout -----
 ==============================================================================
 UV gauge-to-Yukawa: STRONG-COUPLING DOMAIN EXCLUSION at beta=6
 (subordinate support for uv_gauge_to_yukawa_bridge_sc_vs_pert_note)
@@ -39,3 +47,6 @@ UV gauge-to-Yukawa: STRONG-COUPLING DOMAIN EXCLUSION at beta=6
 ==============================================================================
 SCORECARD:  PASS = 21   FAIL = 0
 ==============================================================================
+
+----- stderr -----
+

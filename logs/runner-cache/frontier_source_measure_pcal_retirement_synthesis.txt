@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/frontier_source_measure_pcal_retirement_synthesis.py
+runner_sha256: b9426d4b829ee70ebb3a70df73c32c05b3d76f8d1e3d237a570e6a8b81605855
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 0.07
+status: nonzero_exit
+----- stdout -----
+========================================================================================
+SOURCE/MEASURE P-CAL RETIREMENT SYNTHESIS
+========================================================================================
+
+Part 1: artifact presence
+[PASS] docs/SOURCE_MEASURE_PCAL_RETIREMENT_SYNTHESIS_NOTE_2026-05-30.md exists
+[PASS] docs/SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md exists
+[PASS] outputs/source_measure_pcal_rn_cocycle_2026-05-30.json exists
+[PASS] outputs/source_measure_pcal_cumulant_mobius_2026-05-30.json exists
+[PASS] outputs/source_measure_sharp_record_tangent_space_2026-05-30.json exists
+
+Part 2: runner outputs
+[PASS] rn runner has zero failures: {'actual_current_surface_status': 'exact-support', 'bare_retained_allowed': False, 'fail': 0, 'pass': 56, 'proposal_allowed': False, 'target_blocker': 'P-cal / primitive source-action unit', 'trace_class': 'direct_blocker_closure_candidate'}
+[PASS] rn runner is exact-support: {'actual_current_surface_status': 'exact-support', 'bare_retained_allowed': False, 'fail': 0, 'pass': 56, 'proposal_allowed': False, 'target_blocker': 'P-cal / primitive source-action unit', 'trace_class': 'direct_blocker_closure_candidate'}
+[PASS] rn runner does not allow proposal yet: {'actual_current_surface_status': 'exact-support', 'bare_retained_allowed': False, 'fail': 0, 'pass': 56, 'proposal_allowed': False, 'target_blocker': 'P-cal / primitive source-action unit', 'trace_class': 'direct_blocker_closure_candidate'}
+[PASS] cumulant runner has zero failures: {'actual_current_surface_status': 'exact-support', 'fail': 0, 'pass': 33, 'proposal_allowed': False, 'trace_class': 'direct_blocker_closure_candidate'}
+[PASS] cumulant runner is exact-support: {'actual_current_surface_status': 'exact-support', 'fail': 0, 'pass': 33, 'proposal_allowed': False, 'trace_class': 'direct_blocker_closure_candidate'}
+[PASS] cumulant runner does not allow proposal yet: {'actual_current_surface_status': 'exact-support', 'fail': 0, 'pass': 33, 'proposal_allowed': False, 'trace_class': 'direct_blocker_closure_candidate'}
+[PASS] tangent runner has zero failures: {'actual_current_surface_status': 'bounded-support', 'fail': 0, 'pass': 58, 'proposal_allowed': False, 'reachability_to_target': 'partially_closes', 'trace_class': 'direct_blocker_closure'}
+[FAIL] tangent runner is exact-support: {'actual_current_surface_status': 'bounded-support', 'fail': 0, 'pass': 58, 'proposal_allowed': False, 'reachability_to_target': 'partially_closes', 'trace_class': 'direct_blocker_closure'}
+[PASS] tangent runner does not allow proposal yet: {'actual_current_surface_status': 'bounded-support', 'fail': 0, 'pass': 58, 'proposal_allowed': False, 'reachability_to_target': 'partially_closes', 'trace_class': 'direct_blocker_closure'}
+
+Part 3: synthesis status boundary
+[PASS] synthesis contains section/phrase: What is now closed
+[PASS] synthesis contains section/phrase: What remains
+[PASS] synthesis contains section/phrase: Impact on Y_T
+[PASS] synthesis contains section/phrase: Status boundary
+[PASS] synthesis contains section/phrase: Non-claims
+[PASS] synthesis states exact-support
+[PASS] synthesis exposes single semantic residual
+[PASS] synthesis forbids bare retained
+[PASS] synthesis says not unbounded Y_T closure
+
+Part 4: firewall
+[PASS] forbidden import named: H_unit
+[PASS] forbidden import named: yt_ward_identity
+[PASS] forbidden import named: y_t_bare
+[PASS] forbidden import named: PDG
+[PASS] forbidden import named: alpha_LM
+[PASS] forbidden import named: plaquette
+[PASS] forbidden import named: fitted selector
+[PASS] forbidden overclaim absent: Status: retained
+[PASS] forbidden overclaim absent: audit-clean retained
+[PASS] forbidden overclaim absent: unbounded retained Y_T closure is claimed
+
+========================================================================================
+SUMMARY: PASS=35 FAIL=1
+Wrote outputs/source_measure_pcal_retirement_synthesis_2026-05-30.json
+
+----- stderr -----
+

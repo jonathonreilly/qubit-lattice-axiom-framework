@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_value_frontier_probe_2026_06_05.py
+runner_sha256: 907ae70489b0d1f9488e8a3e86cb1c22ba6c80e920d488232d6a92c2117522e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 ========================================================================
 HIERARCHY-VALUE FRONTIER PROBE 2026-06-05
 ========================================================================
@@ -106,3 +114,6 @@ Best mechanism-supplied decade count: 16.7 (EW power-law).
 Single gauge transmutation: only ~4 decades (sister-branch result).
 ========================================================================
 TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

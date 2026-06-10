@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_flavor_handedness_rk_even_arrow_insufficient.py
+runner_sha256: 03940129435ac73c6766b8fd59bc0d0795a02d32b97edbbcd6ce6d7ab9fd89dc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.13
+status: ok
+----- stdout -----
 PASS: H_handedness_is_sign_Delta_nonzero Delta(+2/9)=+4.674812e-02 -> sign=+1
 PASS: T_K_conjugates_circulant_to_minus_delta K: g1->conj(g1) == delta->-delta on the circulant
 PASS: T_sign_Delta_is_T_odd sign Delta(+d)=+1  sign Delta(-d)=-1
@@ -15,3 +23,6 @@ PASS: C_comparator_delta_pdg delta_PDG=0.222230
 
 TOTAL: PASS=14 FAIL=0
 VERDICT: the flavor handedness sign(Delta) (count + phase) is T-odd AND R-odd (RK-even). The time-arrow breaks only T (H=iD T-symmetric, arrow = past-hypothesis boundary); the spatial axis-swap reflection R stays a bare-lattice symmetry. So the arrow ALONE cannot fix the handedness -- it requires spatial-reflection (parity) breaking (the open residual; staggered axis-ordering is the natural candidate), RK-correlated with the arrow. Magnitude 2/9=L_3(1,2) and the r=1/2 cone untouched.
+
+----- stderr -----
+

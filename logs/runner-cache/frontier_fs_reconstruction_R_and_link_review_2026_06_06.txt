@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_fs_reconstruction_R_and_link_review_2026_06_06.py
+runner_sha256: 9edcf16a09d5b58bcc3c7a47e1c45d2fb924354b238cd7bfe73b534584e9c109
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
 ==============================================================================================
 BUILD R (RP selects fermionic) + TIGHTNESS REVIEW of every link in the FS chain
 ==============================================================================================
@@ -42,3 +50,6 @@ BUILD R (RP selects fermionic) + TIGHTNESS REVIEW of every link in the FS chain
 ==============================================================================================
 SCORECARD:  PASS = 20   FAIL = 0
 ==============================================================================================
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/born_rule_framework_bridge_check.py
-runner_sha256: 1c66abf1fe1bd29b111c04d0332ec0180a6aa678037b98f96431cda308e143ca
+runner_sha256: 45882e18df584bf788b79e5da7a15f924f6c5cd157fd910270f64f80687d2ec2
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.09
@@ -58,6 +58,10 @@ T6: projective record Kraus family is trace preserving
 ==============================================================================
 T7: source-note dependency and firewall wording
 ==============================================================================
+  [PASS] source contains required phrase: Claim type:** bounded support note
+  [PASS] source contains required phrase: Type:** conditional / support
+  [PASS] source contains required phrase: identification `tau = rho_ref` treated as the open conditional bridge
+  [PASS] source contains required phrase: physical pre-record identification remains open
   [PASS] source contains required phrase: Framework-Dependency Repair
   [PASS] source contains required phrase: GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
   [PASS] source contains required phrase: BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
@@ -68,6 +72,8 @@ T7: source-note dependency and firewall wording
   [PASS] source contains required phrase: LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md
   [PASS] source contains required phrase: durable/native persistent-record formation
   [PASS] source contains required phrase: arbitrary unsharp-instrument uniqueness
+  [PASS] source omits forbidden phrase: Claim type:** bounded_theorem
+  [PASS] source omits forbidden phrase: Type:** bounded_theorem
   [PASS] source omits forbidden phrase: Status:
   [PASS] source omits forbidden phrase: effective status
   [PASS] source omits forbidden phrase: audited_
@@ -75,7 +81,7 @@ T7: source-note dependency and firewall wording
   [PASS] source omits forbidden phrase: durable/native persistent-record formation theorem
   [PASS] source omits forbidden phrase: arbitrary unsharp-instrument uniqueness theorem.
 
-=== TOTAL: PASS=29, FAIL=0 ===
+=== TOTAL: PASS=35, FAIL=0 ===
 
 ----- stderr -----
 

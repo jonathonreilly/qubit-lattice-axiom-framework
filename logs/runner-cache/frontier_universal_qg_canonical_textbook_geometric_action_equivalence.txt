@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_qg_canonical_textbook_geometric_action_equivalence.py
+runner_sha256: 750a6481c91a6575af0993aec4bfeb4762204d41cf64483efbe5c560e9480443
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[EXACT] PASS: the route already has canonical textbook weak/measure closure, canonical smooth geometric/action closure, and exact Lorentzian/global Einstein/Regge stationary closure
+    this theorem composes the already-closed canonical textbook weak/Gaussian object with the already-closed canonical smooth geometric/action family and Lorentzian/global stationary closure
+[EXACT] PASS: the same exact bilinear kernel family underlies both the textbook weak sector and the Lorentzian stationary sector
+    positive signature=(30, 0, 0), lorentzian signature=(21, 9, 0)
+[EXACT] PASS: the positive sector transports its covariance exactly under smooth chart changes on the canonical textbook target
+    positive covariance transport error=1.776e-14
+[EXACT] PASS: the same action family transports exactly on both the positive textbook weak sector and the Lorentzian stationary sector
+    positive action transport error=2.842e-14, lorentzian action transport error=2.842e-14
+[EXACT] PASS: stationary representatives transport exactly on both signature classes
+    positive stationary error=1.421e-14, lorentzian stationary error=2.132e-14
+[EXACT] PASS: the stronger external textbook Einstein-Hilbert-style geometric/action comparison is therefore already closed on the chosen canonical target
+    the project-native smooth geometric/action family is already one canonical textbook weak/stationary action family on the chosen smooth realization
+UNIVERSAL QG CANONICAL TEXTBOOK GEOMETRIC/ACTION EQUIVALENCE
+==============================================================================
+positive signature                    = (30, 0, 0)
+lorentzian signature                  = (21, 9, 0)
+positive covariance transport error   = 1.776e-14
+positive action transport error       = 2.842e-14
+lorentzian action transport error     = 2.842e-14
+positive stationary error             = 1.421e-14
+lorentzian stationary error           = 2.132e-14
+
+Verdict:
+The already-closed project-native smooth geometric/action family is already canonically equivalent to one textbook Einstein-Hilbert-style weak/stationary action family on the chosen smooth realization.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=6 FAIL=0 TOTAL=6
+
+----- stderr -----
+

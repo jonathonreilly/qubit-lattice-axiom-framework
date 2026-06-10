@@ -1,0 +1,175 @@
+===== runner cache v1 =====
+runner: scripts/frontier_sm_gstar_from_framework_structure_2026_05_29.py
+runner_sha256: b7a877e9900957ecb9b232d849eb164a3fea682a81139d5b6a0e5be9a11549d6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+dof-sourcing as EXECUTED asserts (each factor tied to its source)
+----------------------------------------------------------------------------------------
+  [PASS] SU(3): dim adj = N_c^2 - 1 sourced from N_c=3 (retained cl3_color_automorphism) (N_c=3 -> dim adj = 8)
+  [PASS] SU(3): gluon dof = dim adj * 2 pol = 8 * 2 = 16 (8 * 2 = 16)
+  [PASS] SU(2): dim adj = 3 sourced from Cl(3) bivectors (retained native_gauge_closure) (dim adj = 3)
+  [PASS] SU(2): gauge boson dof = dim adj * 2 pol = 3 * 2 = 6 (3 * 2 = 6)
+  [PASS] U(1)_Y: 1 abelian generator (residual R-U1Y, unaudited hypercharge note) (n_u1 = 1)
+  [PASS] U(1)_Y: gauge boson dof = 1 * 2 pol = 2 (1 * 2 = 2)
+  [PASS] massless vector: 2 pol from rank arithmetic 4 - 1 - 1 = 2 (residual R-POL) (4 - 1 - 1 = 2)
+  [PASS] N_c = 3 sourced from retained cl3_color_automorphism (N_c = 3)
+  [PASS] n_gen = 3 sourced from retained three-generation observable (n_gen = 3)
+  [PASS] gauge subtotal = 16 + 6 + 2 = 24 (sourced from SU(3)+SU(2)+U(1) sectors) (16 + 6 + 2 = 24)
+
+----------------------------------------------------------------------------------------
+per-generation matter completion sourcing (EXECUTED assert)
+----------------------------------------------------------------------------------------
+  [PASS] per-generation matter = 24 (quark) + 4 (clept) + 2 (nu) = 30 (per_gen = 30)
+  [PASS] quark dof/gen = (n_up+n_down) * N_c * 4 = 24 (24)
+  [PASS] charged lepton dof/gen = 1 * 4 = 4
+  [PASS] active neutrino dof/gen = 1 * 2 (LH Weyl) = 2
+  [PASS] N_fermions = n_gen * 30 = 3 * 30 = 90 (3 * 30 = 90)
+
+----------------------------------------------------------------------------------------
+assembly arithmetic (exact rational, Fraction)
+----------------------------------------------------------------------------------------
+  [PASS] Higgs dof = 4 (one complex SU(2) doublet)
+  [PASS] N_bosons = 16 + 6 + 2 + 4 = 28 (16 + 6 + 2 + 4 = 28)
+  [PASS] N_fermions = 90 (90)
+  [PASS] fermion thermal weight ratio = 7/8 (retained)
+  [PASS] (7/8) * 90 = 630/8 = 78.75 exact (315/4)
+  [PASS] g_* = 28 + 78.75 = 106.75 (427/4)
+  [PASS] g_* exact rational = 854/8 = 427/4
+  [PASS] g_* decimal = 106.75 (106.75)
+
+----------------------------------------------------------------------------------------
+counterfactual arithmetic (executed) — load-bearing sensitivity
+----------------------------------------------------------------------------------------
+  [PASS] baseline g_* = 106.75
+  [PASS] C-c: Dirac-thermalized nu_R -> per-gen 32 -> N_fermions 96 -> g_* = 112 (N_fermions=96, g_*=112)
+  [PASS] C-c: neutrino sector IS load-bearing (g_* shifts 106.75 -> 112)
+  [PASS] C-d: second Higgs doublet -> N_bosons 32 -> g_* = 110.75 (N_bosons=32, g_*=443/4)
+  [PASS] C-d: g_* = 110.75 decimal
+  [PASS] C-b: massless vector -> 2 pol
+  [PASS] C-b: massive vector -> 3 pol (no residual gauge orbit)
+  [PASS] C-b: 3-pol gauge bosons give gauge subtotal 36, breaking the 28 bosonic total ((8+3+1)*3 = 36)
+  [PASS] C-e: N_c is load-bearing (N_c=3 -> 90; N_c=4 -> 114 fermionic) (N_c=3->90, N_c=4->114)
+
+----------------------------------------------------------------------------------------
+cited sourcing-authority files exist
+----------------------------------------------------------------------------------------
+  [PASS] authority file exists: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+  [PASS] note references authority: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+  [PASS] authority file exists: NATIVE_GAUGE_CLOSURE_NOTE.md
+  [PASS] note references authority: NATIVE_GAUGE_CLOSURE_NOTE.md
+  [PASS] authority file exists: CL3_COLOR_AUTOMORPHISM_THEOREM.md
+  [PASS] note references authority: CL3_COLOR_AUTOMORPHISM_THEOREM.md
+  [PASS] authority file exists: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
+  [PASS] note references authority: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
+  [PASS] authority file exists: THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] note references authority: THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] authority file exists: ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] note references authority: ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] authority file exists: SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] note references authority: SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] authority file exists: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] note references authority: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] authority file exists: HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] note references authority: HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] authority file exists: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
+  [PASS] note references authority: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
+  [PASS] authority file exists: STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md
+  [PASS] note references authority: STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md
+  [PASS] authority file exists: MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md
+  [PASS] note references authority: MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md
+  [PASS] authority file exists: SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md
+  [PASS] note references authority: SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md
+  [PASS] authority file exists: ONE_GENERATION_MATTER_CLOSURE_NOTE.md
+  [PASS] note references authority: ONE_GENERATION_MATTER_CLOSURE_NOTE.md
+  [PASS] authority file exists: AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md
+  [PASS] note references authority: AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md
+
+----------------------------------------------------------------------------------------
+note structure and bounded scope
+----------------------------------------------------------------------------------------
+  [PASS] note contains: Claim type:** bounded_theorem
+  [PASS] note contains: Status authority:** independent audit lane only
+  [PASS] note contains: no framework derivation of the inventory
+  [PASS] note contains: monolithic external
+  [PASS] note contains: Derived vs residual-input table
+  [PASS] note contains: Counterfactual pass
+  [PASS] note contains: import-bearing ceiling
+  [PASS] note contains: does not claim
+  [PASS] note contains: What this note closes
+  [PASS] note contains: What this note does NOT close
+  [PASS] note contains: Forbidden imports check
+  [PASS] note contains: Independent audit handoff
+  [PASS] note contains: 427/4
+  [PASS] note contains: 106.75
+  [PASS] note contains: 28 + (7/8) * 90
+  [PASS] note contains: inventory-sourcing decomposition
+  [PASS] note contains: SUPPLIED_THERMAL_INVENTORY
+
+----------------------------------------------------------------------------------------
+Derived-vs-residual census labels present in note
+----------------------------------------------------------------------------------------
+  [PASS] DERIVED label present: SU(3)_c sector
+  [PASS] DERIVED label present: SU(2)_L sector
+  [PASS] DERIVED label present: generation count
+  [PASS] DERIVED label present: color count
+  [PASS] DERIVED label present: fermion thermal weight
+  [PASS] residual tag present: R-U1Y
+  [PASS] residual tag present: R-POL
+  [PASS] residual tag present: R-HIGGS
+  [PASS] residual tag present: R-MATTER
+  [PASS] residual tag present: R-FSB
+  [PASS] residual tag present: R-SPIN
+  [PASS] import tag present: I11
+  [PASS] import tag present: I12
+  [PASS] honest neutrino caveat present (g_* = 112 if nu_R thermalized Dirac)
+
+----------------------------------------------------------------------------------------
+no overclaim / claim-status firewall
+----------------------------------------------------------------------------------------
+  [PASS] banned status phrase absent: 'would become retained'
+  [PASS] banned status phrase absent: 'promote to retained'
+  [PASS] banned status phrase absent: 'retained on the actual surface'
+  [PASS] banned status phrase absent: 'retained branch-local'
+  [PASS] note explicitly does NOT claim g_* fully derived/retained/positive
+
+----------------------------------------------------------------------------------------
+forbidden-import and new-vocabulary scan
+----------------------------------------------------------------------------------------
+  [PASS] 'plaquette' only referenced inside the forbidden-import disclaimer (outside-disclaimer count=0)
+  [PASS] 'staggered phase' only referenced inside the forbidden-import disclaimer (outside-disclaimer count=0)
+  [PASS] 'Wilson plaquette' only referenced inside the forbidden-import disclaimer (outside-disclaimer count=0)
+  [PASS] 'Brillouin' only referenced inside the forbidden-import disclaimer (outside-disclaimer count=0)
+  [PASS] 'link unitary' only referenced inside the forbidden-import disclaimer (outside-disclaimer count=0)
+  [PASS] 'Monte Carlo' only referenced inside the forbidden-import disclaimer (outside-disclaimer count=0)
+  [PASS] 'u_0' only referenced inside the forbidden-import disclaimer (outside-disclaimer count=0)
+  [PASS] forbidden vocabulary absent: 'g-star landing class'
+  [PASS] forbidden vocabulary absent: 'g_* landing class'
+  [PASS] forbidden vocabulary absent: 'thermal dof framing'
+  [PASS] forbidden vocabulary absent: 'two-class framing'
+  [PASS] forbidden vocabulary absent: 'algebraic universality'
+  [PASS] forbidden vocabulary absent: 'lattice-realization-invariant'
+  [PASS] forbidden vocabulary absent: 'new theory class'
+
+----------------------------------------------------------------------------------------
+alignment with the import note being retired
+----------------------------------------------------------------------------------------
+  [PASS] import note contains: g_bosonic = 16 + 6 + 2 + 4 = 28
+  [PASS] import note contains: g_fermionic = 72 + 12 + 6 = 90
+  [PASS] import note contains: 106.75
+  [PASS] import note states the blocker (no framework derivation of the inventory)
+
+----------------------------------------------------------------------------------------
+runner-note self-consistency
+----------------------------------------------------------------------------------------
+  [PASS] runner path cited in note
+
+TOTAL: PASS=117 FAIL=0
+SUMMARY: bounded theorem passes; g_* = 106.75 is assembled from framework gauge+generation structure (retained core sourced from retained authorities) with named residuals (R-U1Y, R-POL, R-HIGGS, R-MATTER, R-FSB, R-SPIN) and honest imports (I11, I12). The monolithic external SM-census import status is retired; effective status is owned by the independent audit lane.
+
+----- stderr -----
+

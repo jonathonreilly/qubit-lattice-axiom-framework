@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_source_resolved_propagating_green_pocket_kernel_display_reconcile.py
+runner_sha256: 1dba9fdc83c68e07f638a63b8350607a8a77368e216382fc7502361d85d4d7c2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.02
+status: ok
+----- stdout -----
+============================================================================================
+KERNEL-DISPLAY RECONCILE COMPANION
+  parent: SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md
+  source repair target: kernel display versus executed convention
+============================================================================================
+h=0.5, W=3, L=20, source_cluster=4 nodes, mix=0.9
+GREEN_MU=0.08, GREEN_EPS=0.5, FIELD_TARGET_MAX=0.02
+source strengths: (0.001, 0.002, 0.004, 0.008)
+
+GATE 1 — pointwise constant factor
+  predicted K_exec(d) / K_disp(d) = exp(-mu*eps) = 0.9607894391523232
+  max |K_exec/K_disp - c| over lattice: 4.441e-16
+  [PASS] pointwise constant factor
+
+GATE 2 — calibrated Green field bit-identity
+  gain_exec = 2.1317743900454134e+00, gain_disp = 2.0481863206110189e+00
+  predicted gain_exec / gain_disp = 1/c = 1.0408107741923882
+  observed gain_exec / gain_disp     = 1.0408107741923880
+  max |cal_green_exec - cal_green_disp|: 3.469e-18
+  [PASS] calibrated Green field bit-identity
+
+GATE 3 — calibrated propagating-Green field bit-identity
+  max |cal_prop_exec - cal_prop_disp|: 2.602e-18
+  [PASS] calibrated propagating-Green field bit-identity
+
+GATE 4 — observable invariance across kernel conventions
+       s       green_e       green_d        prop_e        prop_d     |Δ|max
+--------------------------------------------------------------------------------
+  0.0010 +2.139974e-03 +2.139974e-03 +2.460113e-03 +2.460113e-03   3.20e-16
+  0.0020 +4.279368e-03 +4.279368e-03 +4.919670e-03 +4.919670e-03   3.44e-16
+  0.0040 +8.557987e-03 +8.557987e-03 +9.837774e-03 +9.837774e-03   1.77e-16
+  0.0080 +1.712572e-02 +1.712572e-02 +1.967434e-02 +1.967434e-02   2.91e-16
+  max |observable_exec - observable_disp| across ladder: 3.443e-16
+  [PASS] observable invariance
+
+GATE 5 — frozen-table reproduction (executed convention)
+  mean |prop/inst|  = 1.420  (frozen range 1.41..1.43)
+  mean |prop/green| = 1.149  (frozen range 1.148..1.151)
+  causal memory (prop - green): +1.197212e-03  (frozen sign: positive)
+  TOWARD rows: 4/4  (frozen: 4/4)
+  inst F~M = 1.01, green F~M = 1.00, prop F~M = 1.00
+  [PASS] frozen-table reproduction
+
+ASSERTIONS: PASS  (gates: 1=True, 2=True, 3=True, 4=True, 5=True)
+
+----- stderr -----
+

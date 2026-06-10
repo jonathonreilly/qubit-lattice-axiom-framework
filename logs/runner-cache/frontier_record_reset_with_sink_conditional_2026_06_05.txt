@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_reset_with_sink_conditional_2026_06_05.py
+runner_sha256: 39276d65b6c20b7e15d00056ff9e2c562c48d9e8a19d01fbf6c2ea893faa116f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD RESET WITH EXPLICIT SINK CONDITIONAL
 bounded-support / reversible finite construction runner
@@ -56,3 +64,6 @@ bounded-support / reversible finite construction runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=29 FAIL=0
+
+----- stderr -----
+

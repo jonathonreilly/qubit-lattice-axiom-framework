@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/generation_record_partition_selector_2026_06_05.py
+runner_sha256: 3960d1a73ef4e162b36046c53cdb2947e39944048c14b3c314e39db12bc98125
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.31
+status: ok
+----- stdout -----
 [PASS] P1.1 C is the order-3 generation cycle
 [PASS] P1.2 primitive cube root identities hold exactly
 [PASS] P1.3 complex central character projectors are orthogonal idempotents
@@ -37,3 +45,6 @@ SCORECARD PASS=25 FAIL=0
 FINDING: with the supplied C3 carrier and fixed K/CPT conjugation,
          Record-compatible central sectors are uniquely P0 | P1.
          Splitting the doublet requires a K-odd orientation import.
+
+----- stderr -----
+

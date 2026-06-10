@@ -1,0 +1,98 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_tier_a_source_action_top_premise_closure.py
+runner_sha256: 0fc09a91a8ad8f5ce36c4a79fd77e0d0ab669d5cd183c813a227b7d69cb93c08
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 0.90
+status: nonzero_exit
+----- stdout -----
+
+Part 1: anchors and status boundary
+[PASS] docs/YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md exists
+[PASS] docs/audit/data/tier_a_admissions.json exists
+[PASS] docs/audit/data/axiom_premise_nodes.json exists
+[PASS] docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md exists
+[PASS] docs/OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md exists
+[PASS] docs/OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md exists
+[PASS] docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md exists
+[PASS] docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md exists
+[PASS] docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md exists
+[PASS] docs/YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md exists
+[PASS] docs/YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md exists
+[PASS] docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md exists
+[PASS] docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains section/phrase: Question
+[PASS] note contains section/phrase: Answer
+[PASS] note contains section/phrase: Finite RN Proof
+[PASS] note contains section/phrase: Top Operator Application
+[PASS] note contains section/phrase: Relation To The Current No-Go
+[PASS] note contains section/phrase: Relation To Planck And Scale Setting
+[PASS] note contains section/phrase: Claim-Status Certificate
+[PASS] note contains section/phrase: Non-Claims
+[FAIL] P1 is in Tier-A derivation targets
+[PASS] Tier-A P1 is chain-satisfying only at bounded tier
+[PASS] scale reference is not a Tier-A derivation target
+[PASS] scale reference moved to approved primitive registry
+[PASS] Tier-A registry records scale primitive reclassification
+[PASS] g0 convention is not an accepted derivation target
+[PASS] P1P2 synthesis names P-cal residual
+[PASS] P1P2 synthesis does not close parent scalar-additivity premise
+[PASS] source/action candidate states action derivatives define insertions
+[PASS] source/action candidate is open_gate, not unilateral closure
+[FAIL] LSP source support is retained_bounded
+[PASS] source covariance support is retained_bounded
+[PASS] primitive unit source/action no-go row is present and non-positive: unaudited
+[PASS] source-scale boundary row does not claim unbounded closure: unaudited
+
+Part 2: finite RN/Fisher source unit
+[PASS] primitive signed source score is epsilon: epsilon
+[PASS] primitive Fisher norm is one: 1
+[PASS] scaled score is lambda epsilon: epsilon*lambda
+[PASS] scaled Fisher norm is lambda^2: lambda**2
+[PASS] lambda=1 is forced by primitive Fisher unit: [1]
+[PASS] source/action derivative gives -O modulo identity: -O
+[PASS] scaled source/action derivative gives -lambda O: -O*lambda
+
+Part 3: normalized six-component top operator
+[PASS] six-component top vector is unit normalized: 1
+[PASS] each component is 1/sqrt(6): sqrt(6)/6
+[PASS] lambda family is lambda/sqrt(6): sqrt(6)*lambda/6
+[PASS] Tier-A primitive source unit selects y=1/sqrt(6): sqrt(6)/6
+[PASS] positive lambda preserves normalized top source ray: Matrix([[sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6]])
+[PASS] projective component probability remains 1/6: 1/6
+
+Part 4: Planck/scale scope
+[PASS] Planck source-unit theorem separates bare and physical source unit
+[PASS] Planck source-unit theorem is not standalone minimal-stack closure
+[PASS] Y_T note treats Planck as context-only
+[PASS] Y_T note says Planck does not determine dimensionless top Yukawa
+
+Part 5: firewalls and claim status
+[PASS] firewall phrase present: `H_unit`
+[PASS] firewall phrase present: `yt_ward_identity`
+[PASS] firewall phrase present: `y_t_bare`
+[PASS] firewall phrase present: observed top/W/Z masses
+[PASS] firewall phrase present: PDG
+[PASS] firewall phrase present: `alpha_LM`
+[PASS] firewall phrase present: plaquette/u0
+[PASS] firewall phrase present: Planck, alpha_s, or a fitted selector
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: Status:** proposed_retained
+[PASS] forbidden overclaim absent: This note derives P-cal/P1 from the two axioms
+[PASS] forbidden overclaim absent: P-cal/P1 is derived from the two axioms
+[PASS] forbidden overclaim absent: strict same-source top/W pole-response evidence has been produced
+[PASS] forbidden overclaim absent: bare_retained_allowed: true
+[PASS] forbidden overclaim absent: proposal_allowed: true
+[PASS] status certificate records: actual_current_surface_status: bounded-support
+[PASS] status certificate records: trace_class: direct_blocker_closure
+[PASS] status certificate records: reachability_to_target: partially_closes
+[PASS] status certificate records: proposal_allowed: false
+[PASS] status certificate records: bare_retained_allowed: false
+
+wrote outputs/yt_tier_a_source_action_top_premise_closure_2026-05-29.json
+SUMMARY: PASS=72 FAIL=2
+
+----- stderr -----
+

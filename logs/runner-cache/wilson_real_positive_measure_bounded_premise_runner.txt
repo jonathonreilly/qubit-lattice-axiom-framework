@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/wilson_real_positive_measure_bounded_premise_runner.py
+runner_sha256: f4540b74d9d95963ab5306a4624ba0244f48d1cfa660d9da114acacf56081b26
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+==============================================================================
+WILSON REAL-POSITIVE MEASURE BOUNDED-PREMISE BRIDGE
+==============================================================================
+
+== Source firewall ==
+
+  [PASS] source contains required phrase: row-local bounded premise
+  [PASS] source contains required phrase: no new repo-wide axiom
+  [PASS] source contains required phrase: scripts/wilson_real_positive_measure_bounded_premise_runner.py
+  [PASS] source contains required phrase: CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md
+  [PASS] source contains required phrase: WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md
+  [PASS] source contains required phrase: Wilson real-positive measure surface
+  [PASS] source excludes overclaim phrase: retained_unbounded
+  [PASS] source excludes overclaim phrase: audited_clean
+  [PASS] source excludes overclaim phrase: audited_conditional
+  [PASS] source excludes overclaim phrase: adds a new repo-wide axiom
+  [PASS] source excludes overclaim phrase: derive A1/A2
+
+== B1: beta=6 matching arithmetic ==
+
+  [PASS] beta = 2*N_c/g_bare^2 at N_c=3, g_bare^2=1 gives beta=6  (beta=6)
+  [PASS] Wilson coefficient beta/N_c = 2  (beta/N_c=2)
+
+== B2/B3: real-positive bounded Wilson measure checks ==
+
+  [PASS] sampled matrices are SU(3)  (max_unitarity=1.38e-15, max|det-1|=9.09e-16)
+  [PASS] Re Tr(U_P) lies in [-N_c, N_c] on sampled SU(3)  (range=[-1.212376, 2.143349])
+  [PASS] S_W = (beta/N_c) sum(N_c-Re Tr U_P) is bounded below by 0  (min S_W=126.617512)
+  [PASS] exp(-S_W) is real-positive and finite on sampled finite products  (BF range=[8.661e-71, 1.025e-55])
+
+== B4/B5: theta-slot algebra and V7 drift guard ==
+
+  [PASS] Q_lat density (Tr U - Tr U^dag)/(2i) is real  (max imaginary residue=0.00e+00)
+  [PASS] correct theta forms agree and are pure imaginary  (max form deviation=0.00e+00)
+  [PASS] spurious extra-i form differs from correct i*theta*Q_lat  (min gap=1.7704e-03)
+  [PASS] sampled Q_lat takes nonzero values  (max|Q_lat|=8.4083)
+  [PASS] nonzero theta generically makes exp(-S_W - i*theta*Q_lat) complex  (30/30 configs complex)
+
+== B6: row-local bounded-premise discipline ==
+
+  [PASS] single bounded premise is recorded
+  [PASS] recorded premise names the Wilson real-positive measure surface
+  [PASS] premise text is row-local and not a repo-wide axiom
+
+==============================================================================
+SUMMARY: PASS=25 FAIL=0 runtime=0.10s
+VERDICT: bounded-premise bridge passes; premise is explicit and row-local.
+
+----- stderr -----
+

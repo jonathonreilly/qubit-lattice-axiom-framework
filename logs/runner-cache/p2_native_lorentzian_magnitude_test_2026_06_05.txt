@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/p2_native_lorentzian_magnitude_test_2026_06_05.py
+runner_sha256: 96f4de0702db537a5c9fb41a88e1843f6fa4ddfad43ed488df13a276e9317545
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.68
+status: ok
+----- stdout -----
 == Block 0: native d=3+1 Dirac Hamiltonian H = alpha.k + beta m on Z^3 ==
 [PASS] alpha_1^2 = I_4: got=True want=True
 [PASS] {alpha_1, beta} = 0: got=True want=True
@@ -65,3 +73,6 @@
 [PASS] VERDICT = NATIVE-GIVES-DIFFERENT: native d=3+1 count is 2^3=8 (single emergent time has no temporal-momentum corner); the Euclidean 16 = 8(spatial) x 2(temporal corner) needs the Wick rotation Z^3->Z^4 (P2); native magnitude v ~ M_Pl(7/8)^{1/4}alpha_LM^8 ~ 5.4e10 GeV != 246 GeV. The exponent 16 and the +0.0255% v-match are Euclidean-regulator-specific, NOT native to d=3+1.: got=True want=True
 
 SUMMARY: PASS=46 FAIL=0
+
+----- stderr -----
+

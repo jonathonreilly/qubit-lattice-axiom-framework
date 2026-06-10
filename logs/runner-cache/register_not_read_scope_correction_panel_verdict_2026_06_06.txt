@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/register_not_read_scope_correction_panel_verdict_2026_06_06.py
+runner_sha256: 1c9976790823830e565a6b71bc00caeaedc6fa8fbe6dcb23c8245aa7e2925f78
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 --- Section L: partition-map license (delivers count/overlaps, NOT within-block weight) ---
 PASS: D kills inter-sector coherence (off-block entries -> 0; not registered)
 PASS: D delivers partition overlaps tr(P_k rho) = (0.5, 0.5) -- registered
@@ -16,3 +24,6 @@ PASS: A1/A0/A3 = legitimate/object-level (KEEP); A2/A4 = demote the register-not
 PASS: object-level math survives in ALL five; nothing retracted
 
 TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

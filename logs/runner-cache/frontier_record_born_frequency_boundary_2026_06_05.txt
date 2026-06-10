@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_born_frequency_boundary_2026_06_05.py
+runner_sha256: 0af6108b676a2c0b3c44322eb4bca0e8f24eacea49bf6688064e43e3221faf8b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD BORN-FREQUENCY BOUNDARY
 no-go / finite history-count runner
@@ -58,3 +66,6 @@ no-go / finite history-count runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=35 FAIL=0
+
+----- stderr -----
+

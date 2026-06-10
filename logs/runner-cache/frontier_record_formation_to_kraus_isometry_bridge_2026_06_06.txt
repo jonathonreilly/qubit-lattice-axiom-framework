@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py
+runner_sha256: 1328e681e1e26eecbddf8fc2265a9c040399fc615ac562dcfaef5ce1f21a566f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -81,3 +89,6 @@ SUMMARY: PASS=66 FAIL=0
 RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE=EXACT_SUPPORT_UNDER_FINITE_POINTER_MODEL
 GENERAL_PERSISTENT_RECORD_DYNAMICS_TO_W_DERIVED=FALSE
 POST_RECORD_COUNTS_SELECT_PROBABILITY_OR_DIAL=FALSE
+
+----- stderr -----
+

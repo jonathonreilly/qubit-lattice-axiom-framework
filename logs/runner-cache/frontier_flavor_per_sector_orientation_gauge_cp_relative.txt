@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_flavor_per_sector_orientation_gauge_cp_relative.py
+runner_sha256: 3dce817aa85a2182ffbaf0557dd0c3ca465a9a985dc0200c6ec95a1bd8bd59ba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
 PASS: R_is_orientation_reversing_transposition det(R)=-1
 PASS: R_unbroken_staggered_S3_authority_is_retained_grade effective status retained_bounded
 PASS: MASS_handedness_sign_Delta_R_odd sign(Delta) flips under R (gauge)
@@ -12,3 +20,6 @@ PASS: MAG_cp_phase_magnitude_formula_is_separate cos^2(delta_CKM)=1/n_quark (mag
 
 TOTAL: PASS=11 FAIL=0
 VERDICT: under the shared generation-relabeling gauge R, every PER-SECTOR flavor orientation is R-ODD (gauge) -- the mass cyclic handedness sign(Delta) AND the within-sector CP cubic I_src; only the INTER-SECTOR Jarlskog J is R-invariant (physical). The physical flavor CP content is purely the inter-sector RELATIVE orientation; the per-sector CP orientation and the April-20 'parity bit' are gauge-dependent. Magnitude cos^2(delta)=1/n_quark is separate/retained.
+
+----- stderr -----
+

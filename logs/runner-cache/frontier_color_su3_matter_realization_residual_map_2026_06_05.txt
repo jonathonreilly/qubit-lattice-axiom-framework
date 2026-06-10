@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_su3_matter_realization_residual_map_2026_06_05.py
+runner_sha256: 2b1ab2dd3bae9d1e1a184b548dcce9068d877583e1f7f2db1f71a0fceb4c4b60
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
 ==============================================================================
 COLOR SU(3) MATTER-REALIZATION RESIDUAL MAP
 meta support-map / negative-route-pruning runner
@@ -75,3 +83,6 @@ meta support-map / negative-route-pruning runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=44 FAIL=0
+
+----- stderr -----
+

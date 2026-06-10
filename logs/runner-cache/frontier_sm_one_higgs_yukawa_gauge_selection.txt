@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_one_higgs_yukawa_gauge_selection.py
-runner_sha256: d9cc06742c97f7b2c11b5c6e5a365c92b9adfb0bb5a54be7940d63d451784e24
+runner_sha256: e27a01007320187226d487cd925cab9ca5b043a2c1e054a804de54ba89ef336d
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.05
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
 ----- stdout -----
 PASS: theorem note exists -- docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md
-PASS: retained hypercharge authority exists -- docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md
+PASS: hypercharge authority note exists -- docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md
 PASS: EW Higgs authority exists -- docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
-PASS: hypercharge authority status is retained -- **Status:** **proposed_retained standalone structural-uniqueness theorem** on `main`. Extracts and packages as its own theorem the uniqueness claim that is *used but not separately proposed_retained* in [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) Step 2 and implicitly carried by [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md). The proposed_retained anomaly-forces-time theorem explicitly states: *"The time theorem only needs the existence of an SU(2)-singlet opposite-chirality completion; it does not rely on uniqueness from anomaly arithmetic alone."* This note closes the conditional uniqueness statement as a standalone proposed_retained row; it does not rederive the proposed_retained left-handed surface, the singlet right-handed completion requirement, or the neutral-singlet input.
-FAIL: EW Higgs authority status is standalone positive -- **Status:** proposed_retained - explicit strong derivation claim pending audit
+PASS: hypercharge authority row is present and pending audit -- {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
+PASS: EW Higgs authority is retained/audited_clean in ledger -- {'effective_status': 'retained', 'audit_status': 'audited_clean'}
 PASS: doubled-hypercharge convention present
 PASS: EW-normalized convention present
 PASS: EW Higgs normalized Y_H maps to doubled Y(H)
@@ -49,7 +49,7 @@ PASS: note records primary runner
 PASS: note states no numerical Yukawa eigenvalue claim
 PASS: note states no CKM or PMNS angle claim
 PASS: note states no top-Yukawa Ward normalization claim
-TOTAL: PASS=42, FAIL=1
+TOTAL: PASS=43, FAIL=0
 
 ----- stderr -----
 

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_asymptotic_reset_convergence_ledger_2026_06_05.py
+runner_sha256: 8ca08c13f57e8e01f1cfcd94537301fc4f3ee630f5465b4f2641b1aaf20c81e9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD ASYMPTOTIC RESET CONVERGENCE LEDGER
 bounded-support / epsilon-reset residual runner
@@ -63,3 +71,6 @@ bounded-support / epsilon-reset residual runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=36 FAIL=0
+
+----- stderr -----
+

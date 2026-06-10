@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_pointer_broadcast_hamiltonian_2026_06_05.py
+runner_sha256: 64fdb2c15c93a80c47180dd9dd6959cb3396e9b2f28188013ab59db742a4555c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD POINTER BROADCAST HAMILTONIAN CONDITIONAL
 bounded-support / conditional finite construction runner
@@ -64,3 +72,6 @@ bounded-support / conditional finite construction runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=37 FAIL=0
+
+----- stderr -----
+

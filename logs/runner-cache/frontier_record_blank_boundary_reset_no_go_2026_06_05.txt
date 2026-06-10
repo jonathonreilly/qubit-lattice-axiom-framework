@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_blank_boundary_reset_no_go_2026_06_05.py
+runner_sha256: 726259e514cfb2ad88c7aaf14334c548b768e799154148cab3b83811dad1fa62
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD BLANK-BOUNDARY RESET NO-GO
 exact negative boundary / finite-unitary runner
@@ -58,3 +66,6 @@ exact negative boundary / finite-unitary runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=31 FAIL=0
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_finite_time_reset_semigroup_no_go_2026_06_05.py
+runner_sha256: ab83bfcb463eda821a4f84f7f2a5ae78f23bbe74b7083e98a4ef0541009c860f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD FINITE-TIME RESET SEMIGROUP NO-GO
 no-go / singular reset endpoint runner
@@ -66,3 +74,6 @@ no-go / singular reset endpoint runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=43 FAIL=0
+
+----- stderr -----
+

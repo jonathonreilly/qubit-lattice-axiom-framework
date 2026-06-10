@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_finite_alphabet_post_record_dynamics_2026_06_05.py
+runner_sha256: f4354f7612a66cc2c8a9e85503e04eccaace62dc0f7287f1874d8ef486d64fde
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
 [PASS] append.1 empty suffix acts as identity
 [PASS] append.2 suffix action composes by concatenating suffixes
 [PASS] append.3 append increases length by suffix length
@@ -36,3 +44,6 @@ Finite suffixes act on record histories by append; counts update by translations
 Alphabet coarse-grainings commute with append/count dynamics, with scalar preservation only under compatible readout.
 The grammar supplies post-record information dynamics, not record-production probabilities, rates, or dial selection.
 SCORECARD PASS=28 FAIL=0
+
+----- stderr -----
+

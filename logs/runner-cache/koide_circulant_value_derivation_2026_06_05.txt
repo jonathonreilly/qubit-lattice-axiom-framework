@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/koide_circulant_value_derivation_2026_06_05.py
+runner_sha256: 7869cb2e1a6e903b9e32e185545918141a058c356de4e658a598235afb060525
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
 PASS: eigenvalue k=0: a + b w^k + conj(b) w^2k = a + 2|b|cos(theta+2pi k/3)
 PASS: eigenvalue k=1: a + b w^k + conj(b) w^2k = a + 2|b|cos(theta+2pi k/3)
 PASS: eigenvalue k=2: a + b w^k + conj(b) w^2k = a + 2|b|cos(theta+2pi k/3)
@@ -14,3 +22,6 @@ PASS: degenerate setting r = 0    =>  Q = 1/3
 PASS: Born setting       r = 1    =>  Q = 1
 
 SUMMARY: PASS=14 FAIL=0
+
+----- stderr -----
+

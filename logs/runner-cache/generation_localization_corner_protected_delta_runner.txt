@@ -1,12 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/generation_localization_corner_protected_delta_runner.py
+runner_sha256: 9089285a5021c8832062205b970962af59707f87f5d131ed0c11d2743013688c
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 0.24
+status: nonzero_exit
+----- stdout -----
 ==============================================================================
 GENERATION LOCALIZATION = momentum corners: J-I corner-protected; delta<0; |delta| IR  [class A]
 ==============================================================================
 
 -- (0) 2026-06-07 source bridge for periodic Vq / Hartree-Fock normalization --
-  [PASS] audit blocker names the missing periodic Vq/Hartree-Fock bridge
+  [FAIL] audit blocker names the missing periodic Vq/Hartree-Fock bridge
   [PASS] target note cites the 2026-06-07 one-hop bridge note, runner, and cache
   [PASS] bridge note proves the finite periodic boundary and normalization, not an external textbook import
-  [PASS] bridge runner exists and has a green cached output  (generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt)
+  [FAIL] bridge runner exists and has a green cached output  (generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt)
   [PASS] retained bounded mediator status is read from the ledger without widening it  (retained_bounded)
   [PASS] generation-corner inputs remain retained or retained_bounded on the current ledger  (['retained', 'retained_bounded', 'retained'])
 
@@ -26,5 +34,8 @@ GENERATION LOCALIZATION = momentum corners: J-I corner-protected; delta<0; |delt
   [PASS] the q=0 monopole carries essentially all of |delta| (corner structure fixes the FORM and SIGN, the IR scale fixes the magnitude)  (Hartree fraction of |delta| = 1.00013)
 
 ==============================================================================
-TOTAL: PASS=13 FAIL=0
-VERDICT: the generation 'localization' is the retained momentum-corner structure (no spatial separation). The three corners' equal inter-transfer eps(Δk)=8 protects the exact C3 (J-I) form by cubic corner symmetry; the two-fermion mutual energy is delta<0 (sign re-confirmed from the momentum picture); and |delta| is dominated by the q=0 mediator monopole (~1/(N mu^2)) -- so the magnitude reduces to the mediator IR scale, NOT to the localization, and stays open (wide-window robust).
+TOTAL: PASS=11 FAIL=2
+VERDICT: generation-localization corner structure FAILED.
+
+----- stderr -----
+

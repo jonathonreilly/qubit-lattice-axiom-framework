@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_open_system_reset_channel_interface_2026_06_05.py
+runner_sha256: 2fd22ea01455d7eef416cf200ac6a0f2f83ed7589d854ee6ee6504dbee4bf60b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD OPEN-SYSTEM RESET CHANNEL INTERFACE
 bounded-support / Stinespring-Kraus reset runner
@@ -76,3 +84,6 @@ bounded-support / Stinespring-Kraus reset runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=49 FAIL=0
+
+----- stderr -----
+

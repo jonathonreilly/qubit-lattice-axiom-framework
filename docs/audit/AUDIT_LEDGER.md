@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 818 |
+| **retained_bounded** | 819 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 39 |
-| unaudited | 1370 |
+| unaudited | 1369 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1262 |
+| `audited_clean` | 1263 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1686 |
+| `unaudited` | 1685 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 814 |
-| `leaf` | 1317 |
+| `medium` | 815 |
+| `leaf` | 1316 |
 
 - **Retained pending chain closure:** 15
 - **Citation cycles detected:** 0
@@ -102,15 +102,15 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1447 | 109.50 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 778 | 61.10 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1307 | 59.35 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1308 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1049 | 47.04 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1219 | 44.25 | `audited_renaming` | ~~audited_renaming~~ |
-| 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 616 | 40.77 | `audited_clean` | **retained** |
+| 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 617 | 40.77 | `audited_clean` | **retained** |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1016 | 40.49 | `unaudited` | unaudited |
 | 10 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 270 | 39.58 | `unaudited` | unaudited |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1272 | 39.31 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1273 | 39.31 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 811 | 38.66 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 707 | 38.47 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
@@ -307,6 +307,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `critical_exponents_topology_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cross_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cycle_battery_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `cycle_battery_scaled_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -4167,6 +4168,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The source note derives the canonical tetrahedron dihedral table and then checks the finite edge-star sums for the three edge classes. The corrected axis-edge enumeration is explicit enough, and the runner source performs genuine symbolic/numerical Euclidean geometry rather than importing a contested premise.
 - **rationale:** This is a standalone Euclidean algebra claim over the stipulated flat Coxeter triangulation, with no cited upstream authorities or physical bridge imports. The runner computes volumes, dihedral angles, and representative edge-star sums directly from vertex coordinates using sympy/numpy; it is not merely printing constants or reading another note. The repaired axis-edge proof replaces the earlier uniform-incidence shortcut with the correct finite-star accounting, preserving the zero-deficit conclusion.
 - **auditor confidence:** high
+
+### `cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited scope is the retained 3D cubic-Coxeter six-tetrahedra complex: second variation of S_R about flat, gauge and k=0 consistency, non-metric breathing mass, and leading O(k^2) proportionality to the in-runner-derived 3D Euclidean linearized EH pairing.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-050759-7b8cc67339-cubic_coxeter_regge_second_v`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At small k, the metric-sector Regge quadratic form from the exact line-averaged metric map satisfies Q_h(k) = c * Q_EH(k) + O(k^4) with the single constant c = -1/2 in the tested axis, face-diagonal, and body-diagonal directions, with exact gauge zero modes and a massive non-metric complement.  _(class `C`)_
+- **chain closes:** True — The only load-bearing upstream authority is the retained flat cubic-Coxeter complex/zero-deficit note, and the runner directly instantiates that geometry, assembles the Regge Hessian from tetrahedral dihedral geometry, and checks Schlaefli, Hessian symmetry, action finite difference, gauge, Bloch, k=0, and comparator gates. An independent finite-difference reconstruction of tetrahedron geometry reproduced the flat deficits, 6-tet axis edge-star, c approximately -0.5 including a generic k direction, and the TT/trace signs to finite-difference accuracy.
+- **rationale:** The runner is not a print-only certificate: it constructs the retained periodic complex, computes dihedral derivatives, assembles J, verifies exactness gates, and compares the computed Bloch Hessian to an EH operator derived from curvature definitions. The hard-coded -1/2 pass threshold is applied only after c is computed from the Regge Hessian; no fitted value, external comparator, or unretained authority is consumed. The unaudited contextual rows are not load-bearing for the scoped 3D statement.
+- **auditor confidence:** medium
 
 ### `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10`
 

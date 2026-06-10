@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 338,
     "high": 240,
-    "leaf": 419,
+    "leaf": 418,
     "medium": 375
   },
   "cycle_break_target_count": 0,
@@ -17477,30 +17477,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17597,6 +17573,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_derivation_note",
+        "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/FIXED_GBARE_INTERACTING_EXISTENCE_IR_TARGET_REFRAMING_BOUNDED_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/fixed_gbare_interacting_existence_ir_target_reframing_2026_06_08.py",
       "transitive_descendants": 16
     },
     {
@@ -29089,31 +29090,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_derivation_note",
-        "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FIXED_GBARE_INTERACTING_EXISTENCE_IR_TARGET_REFRAMING_BOUNDED_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/fixed_gbare_interacting_existence_ir_target_reframing_2026_06_08.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -41274,6 +41250,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 25,
-  "total_pending": 1372
+  "ready_count": 24,
+  "total_pending": 1371
 }

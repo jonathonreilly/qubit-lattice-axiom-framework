@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 831 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1438 |
+| Unaudited rows | 1437 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 32 |
 | Audited renaming rows | 34 |
@@ -37,13 +37,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Ready rows | 28 |
 | Cycle-break targets | 0 |
 | Critical pending | 297 |
-| High pending | 292 |
-| Medium pending | 424 |
+| High pending | 291 |
+| Medium pending | 425 |
 | Leaf pending | 428 |
 
 Next ready rows by queue order:
 
-- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
+- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; audit_in_progress
 - [`axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; unaudited
@@ -82,17 +82,17 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3327 |
 | Critical nodes | 513 |
-| High nodes | 511 |
-| Medium nodes | 897 |
+| High nodes | 510 |
+| Medium nodes | 898 |
 | Leaf nodes | 1406 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1529 descendants; score 127.079
-- `three_generation_observable_theorem_note` - critical; 1056 descendants; score 63.546
-- `graph_first_su3_integration_note` - critical; 1388 descendants; score 60.940
+- `minimal_axioms` - critical; 1530 descendants; score 127.080
+- `three_generation_observable_theorem_note` - critical; 1057 descendants; score 63.547
+- `graph_first_su3_integration_note` - critical; 1389 descendants; score 60.941
 - `observable_principle_from_axiom_note` - critical; 881 descendants; score 59.285
-- `key_terminology` - critical; 1215 descendants; score 47.248
-- `minimal_axioms_2026-05-03` - critical; 997 descendants; score 46.963
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 969 descendants; score 42.422
-- `plaquette_self_consistency_note` - critical; 953 descendants; score 42.398
+- `key_terminology` - critical; 1216 descendants; score 47.249
+- `minimal_axioms_2026-05-03` - critical; 998 descendants; score 46.964
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 970 descendants; score 42.423
+- `plaquette_self_consistency_note` - critical; 954 descendants; score 42.399

@@ -49638,11 +49638,35 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "alpha_s_derived_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "cl3_taste_generation_theorem"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "higgs_mass_from_axiom_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "pmns_twisted_flux_transfer_holonomy_boundary_note"
     },
     {
       "from": "repo.repo_organization",
@@ -95176,11 +95200,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04"
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
+        "alpha_s_derived_note",
+        "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
+        "cl3_taste_generation_theorem",
+        "higgs_mass_from_axiom_note",
+        "pmns_twisted_flux_transfer_holonomy_boundary_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5bfa6e6aff6c4e75bc6dbb1cdffdf8799819618ccf99e66fecadd51d9f46b277",
+      "note_hash": "80e544bb52ab9f8098bf31e959ed28f36c08dbab9091126810742880a1007f9d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -109617,7 +109647,7 @@
       "open_gate": 158,
       "positive_theorem": 617
     },
-    "edge_count": 12513,
+    "edge_count": 12519,
     "leaf_count": 1068,
     "node_count": 3327,
     "root_count": 1047,

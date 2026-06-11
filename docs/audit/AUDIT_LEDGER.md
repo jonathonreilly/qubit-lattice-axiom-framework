@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 823 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1410 |
+| unaudited | 1409 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 37 |
+| ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1267 |
-| `audited_conditional` | 37 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1726 |
+| `unaudited` | 1725 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 853 |
-| `leaf` | 1312 |
+| `medium` | 854 |
+| `leaf` | 1311 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1434,6 +1434,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -18041,6 +18042,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Mirror symmetry can produce a genuine near-rank-2 signature, but only in the strict chokepoint pocket and only at small N; outside that pocket, the rank story is heuristic rather than a retained large-N mechanism.  _(class `C`)_
 - **chain closes:** True — Running the registered script with the note's stated N=15,25 and 16-seed setup reproduces the table: original mirror has lower s2/s1 than random-2layer at both sizes, while mirror-chokepoint has high s2/s1, effective rank near 2, and Born zero at machine precision in the small-N pocket.
 - **rationale:** The current runner reproduces the note's diagnostic table under the stated setup, and the note's conclusion stays bounded: support exists for a strict small-N mirror-chokepoint rank signature, not for a scalable large-N rank-protected architecture. The default runner window tests larger N and is not the note's quoted table, but it reinforces the same non-scalability boundary rather than contradicting the bounded claim.
+- **auditor confidence:** high
+
+### `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure algebraic isotropy of the fermion Coleman-Weinberg Hessian V_f(phi)=Σ_s f(lambda_s(phi)^2) on the C^8 binary taste block at an axis-aligned real point phi=(v,0,0), with gauge, scalar, electroweak, and Higgs-sector consequences excluded.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-142622-3673f5ff00-taste_scalar_fermion_cw_isot`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At phi=(v,0,0), lambda_s^2=v^2 is uniform, so the Hessian coefficient factors out and the remaining binary sum is Σ_s (-1)^{s_i}(-1)^{s_j}=8 δ_ij.  _(class `A`)_
+- **chain closes:** False — The binary orthogonality and Hessian factorization close algebraically: ∂_ij f(lambda^2)=(2 f'(v^2)+4 v^2 f''(v^2))(-1)^{s_i+s_j}, giving a common diagonal coefficient after summing over s. The audit chain does not close to retained-grade status because the cited staggered-Dirac realization authority is supplied as unaudited/bounded context.
+- **rationale:** The load-bearing theorem is a genuine class-A algebraic identity on the abstract binary taste cube, and the runner source computes the orthogonality sums and Hessian examples rather than merely printing constants. The exact generic Hessian coefficient is 8(2 f'(v^2)+4 v^2 f''(v^2)), so the claimed isotropy follows within the stated algebraic scope. However, the row cites docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md as a physical context dependency, and that authority is marked effective_status unaudited and claim_type bounded_theorem in the restricted packet. Under the rubric, retained status cannot propagate through that non-retained dependency.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `taste_scalar_isotropy_theorem_note`

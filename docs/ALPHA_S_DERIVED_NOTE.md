@@ -1,7 +1,8 @@
 # `alpha_s(v)` Forward-Computation Theorem over Declared Boundary Inputs, with Bounded `M_Z` Corollary
 
 **Date:** 2026-04-15 (status amended 2026-05-01; bounded source hint added
-2026-05-24; T1/C1 repair 2026-06-10)
+2026-05-24; T1/C1 repair 2026-06-10; B3 algebraic half grounded in the
+retained tadpole-improvement narrow theorem 2026-06-11)
 **Type:** bounded_theorem
 **Claim scope:** One load-bearing theorem plus one explicitly quarantined
 corollary.
@@ -109,11 +110,25 @@ claimed as derived by this note.
   is actually discharged.
 - **B2 (declared normalization).** `g_bare = 1` on the canonical
   same-surface chain, hence `alpha_bare = g_bare^2 / (4 pi) = 1 / (4 pi)`.
-- **B3 (declared structural input).** The tadpole-improved physical
+- **B3 (declared structural input; algebraic half grounded
+  2026-06-11).** The tadpole-improved physical
   coupling carries vertex power `n_link = 2`, i.e. the improvement
   factor is `u_0^(-2)` (one factor of `u_0` per gauge link entering the
-  three-gluon vertex normalization). The derivation of this power is
-  the open target of the coupling-map lane
+  three-gluon vertex normalization). **Retained one-hop authority for
+  the algebraic half:** the standalone algebraic equivalences consumed
+  by T1 — `alpha_LM = alpha_bare/u_0`, `alpha_s(v) = alpha_bare/u_0²`,
+  the vertex-power identities `alpha_s(v)·u_0² = alpha_bare`,
+  `alpha_LM·u_0 = alpha_bare`, and the geometric-mean identity
+  `alpha_LM² = alpha_bare·alpha_s(v)` on abstract
+  `(alpha_bare, u_0) ∈ R⁺ × R⁺` — are the retained narrow theorem
+  [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+  (consumed strictly within its abstract-algebra scope; it supplies no
+  plaquette value, no scheme conversion, and no operator-level
+  justification of the power). **What remains declared in B3 is only
+  the operator-level counting itself** — that the physical three-gluon
+  vertex normalization carries exactly `n_link = 2` powers of `1/u_0`.
+  The derivation of that counting is the open target of the
+  coupling-map lane
   `docs/ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md`
   (file-path reference only; not a one-hop authority here).
 - **B4 (declared scheme/scale input).** The tadpole-improved
@@ -149,7 +164,7 @@ form `1 / (4 pi sqrt(<P>))`, plus a third log-domain route) agreeing to
 | S1 | reuse `<P> = 0.5934` | licensed boundary input | [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) reuse license (B1) |
 | S2 | `u_0 = <P>^(1/4) = 0.877681381` | (A) exact arithmetic | this note + dedicated runner |
 | S3 | `alpha_bare = g_bare^2/(4 pi) = 1/(4 pi)` | (A) over declared normalization | B2 (declared in this note) |
-| S4 | `alpha_s(v) = alpha_bare/u_0^2 = 1/(4 pi sqrt(<P>)) = 0.10330382`; `alpha_LM^2 = alpha_bare alpha_s(v)` | (A) exact arithmetic over boundary inputs | B3 + B4 (declared in this note) |
+| S4 | `alpha_s(v) = alpha_bare/u_0^2 = 1/(4 pi sqrt(<P>)) = 0.10330382`; `alpha_LM^2 = alpha_bare alpha_s(v)` | (A) exact arithmetic over boundary inputs | algebraic identities: retained [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md); `n_link = 2` counting + scheme/scale: B3 + B4 (declared in this note) |
 | S5 | (C1 only) `v -> M_Z` standard 2-loop transfer: `alpha_s(M_Z) = 0.118067 ~ 0.1181` | bounded standard-infrastructure transfer | [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) (scoped to C1 only) |
 
 The load-bearing claim surface of this note is S1-S4 (theorem T1). S5
@@ -242,8 +257,11 @@ This note does **not** claim:
   `<P> = 0.5934` (declared under the upstream reuse license, B1);
 - a derivation of the lattice-to-MSbar scheme conversion or of the
   scale assignment `mu = v` (declared, B4);
-- a derivation of the vertex power `n_link = 2` (declared, B3; the
-  coupling-map lane referenced by file path is the derivation target);
+- a derivation of the operator-level vertex-power counting `n_link = 2`
+  (declared, B3; the coupling-map lane referenced by file path is the
+  derivation target — the retained tadpole-improvement narrow theorem
+  cited in B3 grounds only the abstract algebraic equivalences, not
+  this counting);
 - a framework-native derivation of the QCD beta function, the quark
   mass thresholds, or `M_Z` (C1 standard infrastructure, one hop away
   in the bridge note);
@@ -316,3 +334,16 @@ terminal class-(D) section. Every check is tagged [A]/[B]/[D].
   cluster-expansion route at `beta = 6` (T3). The admitted-reuse
   license text is unchanged; B1's status (admitted, not derived) is
   unchanged; runner untouched.
+- **2026-06-11.** B3 algebraic half grounded (audit-requested partial
+  repair of "supply retained one-hop authority for B3"). The retained
+  narrow theorem
+  `ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`
+  is wired as the one-hop markdown authority for the abstract
+  algebraic equivalences T1 consumes (`alpha_LM = alpha_bare/u_0`,
+  `alpha_s(v) = alpha_bare/u_0²`, vertex-power and geometric-mean
+  identities on `R⁺ × R⁺`), strictly within its abstract scope. B3's
+  declared residue narrows to exactly the operator-level `n_link = 2`
+  counting (coupling-map lane, file-path target unchanged). B1 (the
+  plaquette value, retirement interface unchanged) and B4 (the
+  scheme/scale bridge) remain declared open boundary inputs — those
+  are real derivation programs owned upstream, not citation gaps.

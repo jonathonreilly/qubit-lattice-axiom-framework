@@ -767,12 +767,13 @@ Stop and write a clear `HANDOFF.md` when:
   campaign can produce are textbook re-verifications, near-tautological
   rescopes, or one-step variants of landed cycles, the campaign must stop
   rather than fill the cycle cap;
-- **volume cap reached**: maximum 5 PRs per 24-hour campaign on a single
-  goal-specific target unless the user has explicitly extended. After 5,
-  stop and report — do not continue past this cap on the strength of
-  earlier "keep going" affirmations. The cap exists because the marginal
-  value of cycle N+1 reliably drops below the cost of audit-lane review
-  burden once N exceeds ~5–8 in one session;
+- **(no volume cap)**: there is NO fixed PR-count cap per campaign or per
+  day (owner decision 2026-06-11; the former 5-PRs-per-24-hour volume cap
+  is removed). PR volume is gated by CONTENT, not by a counter: every PR
+  must pass the V1-V5 Promotion Value Gate, negative claims must pass
+  N1-N8, and the judgment-based cluster-cap evaluator applies from the
+  3rd PR in a parent-row family. A campaign stops on quality-gate
+  exhaustion (the two conditions above), never on a PR count;
 - **cluster cap evaluator triggered**: at the 3rd and every subsequent
   PR in a single parent-row family (`koide_*`, `dm_neutrino_*`,
   `gauge_vacuum_plaquette_*`, `ckm_*_2026-04-25`, `bridge_gap_*`, etc.)

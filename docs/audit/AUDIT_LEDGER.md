@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1255 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1256 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
@@ -135,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1030,6 +1029,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `quantum_horizon_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
@@ -14585,6 +14585,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The cached runner computes alpha_crit for k in {1,2,3,4,5,6,7,10} on the retained generated-geometry absorbing proxy and fits the sub-Nyquist rows as alpha_crit ~= 0.08 * k^0.03, showing no strong k-dependent horizon shift for this observable.  _(class `C`)_
 - **chain closes:** True — The one-hop dependency is retained_bounded for the same runner-defined absorbing proxy family, and the primary runner reuses that harness to compute the k sweep directly. The source keeps the negative claim narrow to this observable and family, and the no-go discipline gate leaves other wavelength-dependent trapping or spectral routes explicitly open.
 - **rationale:** Fresh-context audit agreed that the runner genuinely computes the finite k/alpha sweep and that the cached output matches the note: alpha_crit stays near 0.08-0.09 with a sub-Nyquist exponent around 0.03. The N1-N8 gate does not expose an overbroad no-go because the source does not rule out all trapping, all spectral effects, or other horizon observables. This is clean only as the finite-envelope no-go for the declared alpha_crit observable on the declared retained-bounded proxy family.
+- **auditor confidence:** high
+
+### `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`
+
+- **Note:** [`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Scoped no-go: the Quantum local algebra M_2(C) on C^2 alone does not identify the physical matter-field boost with the Pauli/Weyl operator-frame action; with such an attachment or kinetic selector, scalar boosts are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-279805bd69-quantum_local_algebra_does_n`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The antecedent is not supplied by Quantum alone: the same C^2 admits a scalar boost action S(eta)=exp(eta c)I_2 unless a matter-attachment or kinetic-kernel selector identifies the physical boost with the Pauli operator frame.  _(class `A`)_
+- **chain closes:** True — The accepted minimal axiom supplies the one-site M_2(C) / Cl(3,0) algebra and explicitly omits dynamics, species identification, and physical observable bridges. A scalar action on the same C^2 is compatible with that restricted content, while the Pauli/Weyl exclusion appears only after the operator-frame or kinetic-kernel selector is added.
+- **rationale:** The runner computes the finite Pauli/Clifford, commutant, Lorentz-bracket, scalar-action, and kinetic-kernel checks; its final C.4 line is a hard-coded summary, but the no-go is independently supported by the cited axiom boundary plus the scalar-action countermodel. Manual algebra confirms {sigma_i,sigma_j}=2 delta_ij I, scalar commutant, and the conditional result that if K transforms as a vector under J=sigma/2 then K_i=lambda J_i with lambda=+-i for so(3,1). The no-go discipline gate passes only for the narrow Quantum-alone route: the note leaves matter-attachment and explicit-admission closure paths open and does not assert an absolute no-go against faithful boosts.
 - **auditor confidence:** high
 
 ### `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28`

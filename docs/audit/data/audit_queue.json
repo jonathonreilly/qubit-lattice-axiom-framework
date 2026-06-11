@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 299,
+    "critical": 298,
     "high": 284,
     "leaf": 439,
     "medium": 421
@@ -8,30 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
-      "claim_scope": "Quantum's one-site M_2(C)/Cl(3,0) local algebra does not by itself identify the physical matter boost action with the Pauli operator-frame action; the no-go is only against that Quantum-alone derivation route.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "retained_no_go",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.284,
-      "note_path": "docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py",
-      "transitive_descendants": 1246
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -217,15 +193,15 @@
         "minimal_axioms_2026-04-11",
         "staggered_dirac_realization_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 22,
+      "direct_in_degree": 23,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 20.504,
+      "load_bearing_score": 21.006,
       "note_path": "docs/CL3_TASTE_GENERATION_THEOREM.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/verify_cl3_sm_embedding.py",
-      "transitive_descendants": 725
+      "transitive_descendants": 726
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -43380,6 +43356,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 43,
-  "total_pending": 1443
+  "ready_count": 42,
+  "total_pending": 1442
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 832 |
+| **retained_bounded** | 833 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 39 |
-| unaudited | 1387 |
+| unaudited | 1386 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1279 |
+| `audited_clean` | 1280 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1703 |
+| `unaudited` | 1702 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 854 |
-| `leaf` | 1311 |
+| `medium` | 853 |
+| `leaf` | 1312 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1283,6 +1283,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `third_grown_family_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `third_grown_family_complex_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18873,6 +18874,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** By hypothesis eta^2 = rho(1-rho), hence v_1 . v_2 = -rho(1-rho)+eta^2 = 0.  _(class `A`)_
 - **chain closes:** True — The source note's explicit premise eta^2 = rho(1-rho) makes the Euclidean dot product of the two incident edge vectors exactly zero. The assumptions 0 < rho < 1 and eta > 0 keep the vectors nonzero and the arctan angles positive, so the right-angle and arctan-sum conclusions follow without any ledger dependency.
 - **rationale:** The audited claim is only the narrow pure Euclidean implication, not the CKM-specific choice rho=1/6, eta=sqrt(5)/6 and not a physical CKM right-angle prediction. The load-bearing step is a direct algebraic identity over the stated premises, with no hidden PDG, fitted, literature, unit, or upstream-value import. The parent and CKM value rows are cross-references only; they are not needed for this scoped theorem. Residual risk is only scope creep: this clean verdict must not be cited as auditing any CKM-specific parameter derivation.
+- **auditor confidence:** high
+
+### `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional exclusion of a local cross-plane F tilde F slot only inside the supplied additive per-plaquette action class A = sum_P f(U_P).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-154518-26e4be3a96-theta_cross_plane_term_absen`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The coefficient of a cross-plane monomial such as F_01 F_23 is a mixed derivative of a sum of single-plane plaquette functions, and those mixed derivatives vanish identically.  _(class `A`)_
+- **chain closes:** True — Treating the per-plaquette action class as the stated hypothesis, the action separates by plaquette plane, so mixed derivatives with respect to disjoint plane variables are zero. Multi-plaquette and clover terms are not closed by this argument, but they are explicitly outside the audited scope.
+- **rationale:** The load-bearing step is a direct algebraic separability check: a sum of one-plane functions has zero mixed derivative across different plane variables. An independent manual check agrees with the runner's symbolic and direction-counting result, and the note consistently limits the conclusion to the supplied per-plaquette class. The cited per-plaquette enumeration authority is retained_bounded and non-load-bearing for this theorem; no external comparator or tuned numerical value is used.
 - **auditor confidence:** high
 
 ### `third_grown_family_boundary_note`

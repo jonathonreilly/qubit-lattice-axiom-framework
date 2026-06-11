@@ -3,7 +3,7 @@
     "critical": 282,
     "high": 281,
     "leaf": 416,
-    "medium": 410
+    "medium": 409
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16996,30 +16996,6 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 90
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py",
-      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -41916,6 +41892,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 6,
-  "total_pending": 1389
+  "ready_count": 5,
+  "total_pending": 1388
 }

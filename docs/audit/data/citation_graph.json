@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09"
     },
     {
@@ -94062,14 +94058,13 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09",
         "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
         "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10",
         "universal_gr_conformal_mode_sign_diagnostic_bounded_theorem_note_2026-06-08",
         "universal_gr_round_pl_s3_regge_hessian_canonical_channels_narrow_theorem_note_2026-06-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "efdfef8b1c816b773ac431afd2cf09ab7268ae9ae21e203905c468eee7a91c83",
+      "note_hash": "505341f4423eb9af029e6131cfc042523b8139a86bfa4350e8a4456e75d000b9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -108368,8 +108363,8 @@
       "open_gate": 158,
       "positive_theorem": 617
     },
-    "edge_count": 12339,
-    "leaf_count": 1059,
+    "edge_count": 12338,
+    "leaf_count": 1060,
     "node_count": 3298,
     "root_count": 1044,
     "runners_with_path": 2883

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1426 |
-| Retained-grade rows, including boxed decorations | 1289 |
+| Applied audit verdicts | 1427 |
+| Retained-grade rows, including boxed decorations | 1290 |
 | Retained positive theorems | 213 |
-| Retained no-go rows | 206 |
+| Retained no-go rows | 207 |
 | Retained bounded rows | 820 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1417 |
+| Unaudited rows | 1416 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 35 |
 | Audited renaming rows | 34 |
@@ -33,19 +33,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1419 |
-| Ready rows | 30 |
+| Total pending rows | 1418 |
+| Ready rows | 31 |
 | Cycle-break targets | 0 |
 | Critical pending | 282 |
 | High pending | 282 |
-| Medium pending | 414 |
+| Medium pending | 413 |
 | Leaf pending | 441 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
+- [`koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04`](../../docs/KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`koide_real_rep_block_count_permitted_not_forced_note_2026-05-30`](../../docs/KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md) - medium; unaudited
 - [`fifth_family_complex_note`](../../docs/FIFTH_FAMILY_COMPLEX_NOTE.md) - medium; unaudited
 - [`d3_upper_bound_import_scope_gate_note_2026-06-06`](../../docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md) - medium; unaudited
 - [`quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md) - medium; unaudited

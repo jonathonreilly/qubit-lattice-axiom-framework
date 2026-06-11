@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 206 |
+| **retained_no_go** | 207 |
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1417 |
+| unaudited | 1416 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1262 |
+| `audited_clean` | 1263 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1733 |
+| `unaudited` | 1732 |
 
 | claim_type | count |
 |---|---:|
@@ -746,6 +746,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_record_sign_agnostic_eta_refuted_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_pointer_grounds_block_channel_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10641,6 +10642,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For H=aI+bC+conj(b)C^2, the trace projections recover a and b, Q=(1+2|b|^2/a^2)/3 gives Q=1/3 at b=0 and Q=2/3 at r=1/2, L_3(1,2)=2/9, and Q is independent of the phase of b.  _(class `A`)_
 - **chain closes:** True — The displayed identities follow by trace orthogonality of the C3 circulant basis, the root-of-unity cosine sums, and the cited retained-grade L_3(1,2)=2/9 calculation. The note explicitly leaves the physical interaction or record mechanism outside scope.
 - **rationale:** Independent algebra checks reproduce a=Tr(H)/3, b=Tr(C^{-1}H)/3, Q=(3a^2+6|b|^2)/(3a)^2=(1+2r)/3, the r=0 and r=1/2 values, phase independence, and L_3(1,2)=2/9. The runner performs finite algebraic checks rather than merely printing constants, although it is not a first-principles framework computation. All cited authorities are retained-grade for the bounded algebra used here, and the source does not claim charged-lepton channel closure.
+- **auditor confidence:** high
+
+### `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30`
+
+- **Note:** [`KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md`](../../docs/KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the narrow claim that the listed real-representation, CPT/Theta, signed-det_R/readout, and real-D constraints do not force the (1,1) block-count weighting over the surviving (1,2) dimension weighting.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-ffe436368b-koide_real_rep_block_count_p`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The explicit Hilbert-Schmidt witness diag(3,6,6) realizes the (1,2) weighting while remaining real, positive-definite, C3-invariant, and Theta-invariant, so the listed real-structure constraints do not forbid (1,2) or force (1,1).  _(class `A`)_
+- **chain closes:** True — The algebraic witness satisfying all listed constraints is enough to refute incompatibility of (1,2), and the independent checks of rotation-invariant Grams, Theta reflection invariance, Hermitian circulant eigenvalues, Q=(1+2r)/3, and det_R=alpha*beta^2 agree with the note. The conclusion is narrow and leaves the SO(2)/U(1)_b quotient or readout-factorization route open.
+- **rationale:** The load-bearing step is finite linear algebra over retained-grade inputs, not a definition, external comparator, or tuned numerical match. Independently, a C3-invariant symmetric Gram on the singlet plus real doublet has form diag(g00,g11,g11), Theta=diag(1,1,-1) imposes no further restriction on that cone, and the unreduced real determinant of alpha P_s + beta P_d carries beta squared because the doublet has real rank two. The no-go discipline gate is satisfied only in the stated bounded sense: this closes the listed real-structure forcing route, not all possible quotient or convention/readout routes.
 - **auditor confidence:** high
 
 ### `koide_record_sign_agnostic_eta_refuted_2026-06-04`

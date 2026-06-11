@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_bimodule_norm_naturality_theorem_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "quark_bimodule_norm_naturality_theorem_note_2026-04-19",
         "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
         "fifth_family_complex_note",
         "d3_upper_bound_import_scope_gate_note_2026-06-06",
         "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
-        "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
+        "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+        "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fa31f19abc076e218e65a5f08c846fd8b6120ec618ea05bce5bd8f247b065b41",
+      "note_hash": "0ffe808dc8fdc222694fb8829c09f1dbc00fb3380f9749ac43d54cb4a8979eda",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

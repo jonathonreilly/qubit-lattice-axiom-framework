@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 298,
+    "critical": 297,
     "high": 284,
     "leaf": 439,
     "medium": 421
@@ -8,41 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "single_clock_uniqueness_scope_boundary_2026-06-06",
-        "kinetic_isotropy_primitive",
-        "emergent_lorentz_invariance_note",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
-      ],
-      "direct_in_degree": 25,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 22.782,
-      "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
-      "transitive_descendants": 1244
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -215,15 +180,15 @@
       "criticality_rank": 3,
       "cross_confirmation_status": "awaiting_second",
       "deps": [],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "retained",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.355,
+      "load_bearing_score": 15.858,
       "note_path": "docs/ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_alpha_s_tadpole_improvement_vertex_power_narrow.py",
-      "transitive_descendants": 654
+      "transitive_descendants": 655
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -43356,6 +43321,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 42,
-  "total_pending": 1442
+  "ready_count": 41,
+  "total_pending": 1441
 }

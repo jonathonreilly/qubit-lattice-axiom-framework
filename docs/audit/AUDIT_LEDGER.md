@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 816 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1439 |
+| unaudited | 1438 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 20 |
+| ~~audited_conditional~~ | 21 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1256 |
-| `audited_conditional` | 20 |
+| `audited_conditional` | 21 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1755 |
+| `unaudited` | 1754 |
 
 | claim_type | count |
 |---|---:|
@@ -1391,6 +1391,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2274,6 +2275,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The action-derived two-step monodromy has eigenvalues e^{±2E(p)} with E(p)=arcsinh(sqrt(m^2+sin^2 p)); selecting the decaying channel gives t1^(2)(p)=e^{-2E(p)}, so Gamma(t1^(2))=tensor_p diag(1,e^{-2E(p)})=B^dag B is positive Hermitian.  _(class `C`)_
 - **chain closes:** True — Independently, T_odd T_even has determinant 1 and trace 2+4(m^2+sin^2 p)=2 cosh(2E), giving eigenvalues e^{±2E}; the one-step characteristic equation has non-real roots for sin(p)!=0 and one negative root at sin(p)=0. The finite diagonal Gamma construction then gives a positive B^dag B factorization from the positive decaying eigenvalues.
 - **rationale:** The load-bearing free-case derivation is a first-principles finite-matrix computation from the stated staggered action, not a fitted numerical match or renaming. The displayed trace/determinant identities, exceptional one-step eigenvalues, spectral projectors, and finite exterior/Gamma positivity all check algebraically. The runner's C7 parent-source guard is a non-load-bearing cross-note/source-wiring check and was not used for the free-case closure.
+- **auditor confidence:** high
+
+### `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`
+
+- **Note:** [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Axis-conditional single-clock Stone evolution from the retained two-step positive transfer and B-AXIS, equal-time codimension-1 tensor slices, and the exact staggered time-space exchange certificate; the finite-speed LR propagation clause for the same transfer-derived logarithmic Hamiltonian was also audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-114905-5f0936f730-axiom_first_single_clock_cod`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Step 2(c) applies the retained cluster row's L1/L3 Lieb-Robinson bound with v_LR = 2 e J_* D_int R_int to the Hamiltonian H := -(1/(2a_tau)) log(T_hat^2/M_T) supplied by the two-step transfer construction.  _(class `A`)_
+- **chain closes:** False — S1, equal-time tensor factorization, codimension arithmetic, tau-relative uniqueness, and the W exchange phase identity close within the restricted packet. The full S2(c) chain does not close because R-CD L1/L3 applies to finite-range Hamiltonians, while R-RP2/R-SC2 supply a positive transfer and its logarithmic generator but no one-hop bridge proving that this H is finite-range.
+- **rationale:** The runner genuinely checks the Stone reconstruction and computes the staggered exchange intertwiner; an independent parity enumeration confirms the displayed eta/epsilon phase identity. However, the LR block uses a separately constructed toy finite-range qubit-chain Hamiltonian, not the transfer-derived H under audit. Therefore the cited LR theorem's finite-range hypothesis is not shown to apply to H = -log(T_hat^2/M_T)/(2a_tau), so the finite-speed Cauchy-slice clause remains conditional on a missing bridge or explicit premise.
 - **auditor confidence:** high
 
 ### `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05`

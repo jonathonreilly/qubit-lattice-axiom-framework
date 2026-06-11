@@ -48922,7 +48922,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
+      "to": "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
@@ -94064,7 +94064,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
+        "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "alpha_s_derived_note",
         "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
@@ -94074,7 +94074,7 @@
         "pmns_twisted_flux_transfer_holonomy_boundary_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f45625c8a8943becc066ff3ce1007536e2a4b718a12cfb2646a9a42a5ffab616",
+      "note_hash": "1b8c88678342feec04a0e9b3f0c47d84749f42a6a2a61c407d4c7b2179b7ac17",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

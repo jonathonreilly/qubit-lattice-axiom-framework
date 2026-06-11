@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "d3_upper_bound_import_scope_gate_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "spin_statistics_fs_admission_located_exercise_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "d3_upper_bound_import_scope_gate_note_2026-06-06",
         "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
         "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
         "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
         "alpha_s_derived_narrow_theorem_note_2026-05-10",
-        "spin_statistics_fs_admission_located_exercise_note_2026-06-06"
+        "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
+        "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7409ea82cba2f9fb222ac6829b03941d4e95483313a895cf539e6a093c99fcbb",
+      "note_hash": "57150517cabef0d5b010a3ca9c08a59d7216e9ce4a09c5abba1822be22326776",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

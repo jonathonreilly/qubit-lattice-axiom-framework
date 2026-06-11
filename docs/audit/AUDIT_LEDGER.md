@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 833 |
+| **retained_bounded** | 834 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 39 |
-| unaudited | 1385 |
+| unaudited | 1384 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1280 |
+| `audited_clean` | 1281 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1701 |
+| `unaudited` | 1700 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 852 |
-| `leaf` | 1313 |
+| `medium` | 851 |
+| `leaf` | 1314 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -101,7 +101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1504 | 122.56 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1503 | 122.56 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1016 | 63.49 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1358 | 60.91 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 862 | 59.25 | `unaudited` | unaudited |
@@ -1313,6 +1313,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `universal_gr_conformal_mode_sign_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -19408,6 +19409,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source performs exact SymPy matrix algebra for the stated 90-degree rotation, A1 projection, moved complement coordinates, and symbolic alpha/beta quadratic-energy tie. The broader exhaustiveness claim is explicitly split off as non-load-bearing and is not counted as audited closure.
 - **rationale:** Within the narrowed bounded scope, the load-bearing step is an algebraic identity check, not a numerical match, renaming, or external comparator. The primary runner source actually constructs the projector, rotation, complement difference, and invariant energy expressions rather than merely printing expected PASS lines. The note explicitly admits that full SO(3) exhaustiveness and all-future-invariant nonexistence are not derived, so the clean verdict applies only to the checked bounded witness and invariant class.
 - **auditor confidence:** medium
+
+### `universal_gr_conformal_mode_sign_diagnostic_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_CONFORMAL_MODE_SIGN_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_CONFORMAL_MODE_SIGN_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the runner-defined finite 4D Brillouin-zone stress-bubble kinetic matrix at m=0.7, N=4 and N=6, with momentum along one spatial axis, including the pure-trace probe, full 10x10 eigenanalysis, and runner-defined transverse block check.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-155155-ee9b0e093d-universal_gr_conformal_mode_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner-defined metric-weighted 10x10 finite-BZ matrix at N=6 has exactly one eigenvalue below -1e-4, ev=-0.0099, whose eigenvector has trace/conformal overlap 0.49 and tested yz-TT overlap 0.000.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the staggered finite-BZ operator, stress vertices, BZ sums, metric weights, and eigenanalysis rather than printing fixed expected constants. An independent re-evaluation of the displayed finite definitions reproduces the quoted numerical pattern: trace probe 0.029517, N=6 lowest eigenvalue -0.009936 with one negative mode, N=4 lowest eigenvalue -0.049580, and a positive runner-defined transverse block.
+- **rationale:** The audited claim is explicitly finite and runner-defined, not a continuum GR, Ward-identity, two-DOF, scalar-tensor, or cosmological-constant theorem. The load-bearing computation is class C: it instantiates the finite matrix from the supplied operator algebra and produces numbers not imported from another note or external calibration. The cited authorities are retained-grade context and are not used to smuggle in any stronger open identification. Within the bounded finite scope, the theorem follows from the supplied runner and independently checked arithmetic.
+- **auditor confidence:** high
 
 ### `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08`
 

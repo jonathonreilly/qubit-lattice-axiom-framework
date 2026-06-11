@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/eta_twisted_walk_family_discovery_2026_06_10.py
+runner_sha256: 4cdc21657b72fcf79c7c45aa04a237f7a9b984103d6e39efed43f03e999940ad
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 294.04
+status: ok
+----- stdout -----
+
+PART A -- the eta-twisted S3 sign action (computed gauges; closure verified)
+==============================================================================
+  [PASS] A1 diagonal +-1 gauges make W = V P a eta-twisted linear S3 action covariantly permuting the decorated shifts  --  the staggered eta structure supplies the eta twist the linear representation lacks
+
+PART B -- orbit reduction of the W-equivariant licensed family
+==============================================================================
+  [PASS] B1 the eta-twisted-equivariant licensed family: 4 diagonal + 12 hop orbits, 0 sign-obstructed (computed)  --  32 real parameters; contrast: the LINEAR family had the same dimensions but different sign structure
+
+PART C -- THE DISCOVERY: the exactly solvable dispersive subfamily
+==============================================================================
+  [PASS] C1 SYMBOLIC unitarity for ARBITRARY moduli phases: the 6-phase family is exactly unitary  --  diagonals ZERO, six hop orbits at amplitude (1/sqrt 3) e^{i phi_j}: an exactly solvable covariant walk family
+  [PASS] C2 the family is dispersive in ALL axes simultaneously (a genuinely 3D covariant walk)  --  band motion 0.184 (axis 1), 0.376 (axis 3): outside every class block04 analyzed
+
+PART D -- exact band structure: pairing, strata, the RIGID symmetric-point drift
+==============================================================================
+  [PASS] D1 family-wide lambda -> -lambda pairing (25 random moduli/momenta); double DEGENERACY is a phi=0-stratum property, NOT generic  --  generic pair splitting up to 1.89; phi=0 splitting 8.9e-16: the first-draft 'everywhere degenerate' was a stratum fact
+  [PASS] D2 bands are genuinely CURVED (eigenvector-tracked slope varies along k1)  --  curved covariant dispersion EXISTS at this density (landed block04 Result 6 realized in the covariant class)
+  [PASS] D3a EXACT: the axis-line charpoly is EVEN in lambda and factors as Q_A(X) Q_B(X) / (9 w^2), X = lambda^2 (rational identity)  --  the family is exactly solvable on every axis line
+  [PASS] D3b EXACT slopes: dX/dt = -+ i X/3 at the two roots (=> lambda-slopes -+1/6) when alpha != beta; X = alpha e^{+-it/sqrt 3} on the equal stratum (=> +-1/(2 sqrt 3)); slope 0 NEVER  --  symmetric-point velocity set = the DISCRETE set {+-1/6, +-1/(2 sqrt 3)}: quantized over the whole torus, never flat
+  [PASS] D3c the phi=0 stratum moves at +-1/(2 sqrt 3) (one-sided; the central-difference 'flat' reading was an artifact, documented)  --  one-sided rates [0.2887 0.2887 0.2887 0.2887] vs 1/(2 sqrt 3) = 0.2887
+  [PASS] D4 SCOPED no-dial: diagonal dispersion EXACTLY linear (slope 1/2) for all sampled moduli; off-axis FRONT SPEEDS are moduli-dependent (the honest continuous content)  --  diag linearity dev 4.4e-14; front speeds [0.169 0.17  0.183 0.232]: rigid invariants = the +-(1,1,1)/6 drift + the diagonal line; shapes/front speeds = moduli content
+
+PART F -- the eta twist is load-bearing: the same structure WITHOUT the twist signs fails
+==============================================================================
+  [PASS] F1 the SAME orbits and amplitudes WITHOUT the eta signs are NOT unitary; WITH them, exactly unitary  --  sign-stripped residual 0.67 vs eta-twisted 2.2e-16: the staggered eta signs are load-bearing for covariant transport; linear-family flatness = landed block04 F2b
+
+PART E -- the equivariant seeded sweep census (sweep-grade; the family is what the sweeps find)
+==============================================================================
+  [PASS] E1 sweep census: every dispersive equivariant unitary found lies in the six-orbit walk family (diag ~ 0, moduli 1/sqrt 3)  --  73 unitaries, 21 dispersive, 21 in-family: the family IS the dispersive sector found
+
+PART G -- open-1 status: the unrestricted family's tree exceeds any practical cap (computed)
+==============================================================================
+  [PASS] G1 the unrestricted family's kill-propagation exceeds the 50,000-leaf cap (deterministic): exhaustive enumeration infeasible  --  200 exact equations; cap exceeded -- open 1 (full-family exhaustive closure) remains NAMED, sharpened by documentation
+
+==============================================================================
+SCORECARD: PASS=13 FAIL=0
+==============================================================================
+
+----- stderr -----
+

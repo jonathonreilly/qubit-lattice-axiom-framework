@@ -4,7 +4,8 @@
   "canonical_ids": [
     "minimal_axioms",
     "scale_reference_primitive",
-    "kinetic_isotropy_primitive"
+    "kinetic_isotropy_primitive",
+    "realized_state_primitive"
   ],
   "nodes": {
     "minimal_axioms": {
@@ -36,6 +37,14 @@
       ],
       "legacy_claim_ids": [],
       "note": "Explicitly approved framework primitive for the space-time kinetic-form isotropy c_t=c_s (OS0 graining isotropy): the emergent tick is grained on the same footing as the spatial edge. A dimensionless STRUCTURAL premise, the time-direction analogue of the Lattice axiom's spatial cubic adjacency; carries no dimensionless DYNAMICAL content (no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or fit) and does not re-axiomatize emergent time. This primitive supplies only the kinetic form ratio, not an absolute scale, spacing-ratio theorem, dynamics, or downstream Lorentz theorem. Dependencies on this primitive chain-satisfy without bounding downstream rows."
+    },
+    "realized_state_primitive": {
+      "current_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "aliased_paths": [
+        "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+      ],
+      "legacy_claim_ids": [],
+      "note": "Explicitly approved framework primitive for the realized-state interface: the axioms select no state; a physical history fixes one law-admissible realized state, and derivations may evaluate at it POINTWISE only. Supplies the slot, never the content: no state, state-selection rule, measure, typicality/genericity assumption, weighting, probability rule, preferred/default state, or state-contingent value. Policing clauses: no averaging over alternatives; 'typical'/'generic' banned as specialization predicates; the counterfactual test (a quoted number must be invariant over the law-admissible family, else it is registered data); law admissibility. The past hypothesis is explicitly NOT housed here (a strictly stronger specialness input; anchored at the arrow note). Dependencies on this primitive chain-satisfy without bounding downstream rows; the primitive itself carries no contingent content, and rows quoting data of a particular realized state remain conditional on that supplied data as supplied inputs always are."
     }
   }
 }

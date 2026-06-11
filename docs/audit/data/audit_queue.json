@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 292,
+    "critical": 291,
     "high": 291,
     "leaf": 428,
     "medium": 425
@@ -8,41 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-      "claim_scope": "Equal-time tensor-factor locality, finite-velocity LR bounds for the finite-range support-family carrier and the free U=1 bilinear exact-log quasilocal carrier, plus only the stated sector-conditional continuum scaling corollary; gauged/interacting exact-log locality and full Wightman microcausality are excluded.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
-        "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
-        "emergent_lorentz_invariance_note",
-        "lorentz_kernel_positive_closure_note",
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 21,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
-        "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py"
-      ],
-      "load_bearing_score": 20.457,
-      "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_microcausality_check.py",
-      "transitive_descendants": 993
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -17760,6 +17725,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
+        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.085,
+      "note_path": "docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py",
+      "transitive_descendants": 5
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -28211,33 +28203,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_local_frame_orbit_flat_sector_converse_holonomy_residual_2026_06_10.py",
-      "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.085,
-      "note_path": "docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py",
       "transitive_descendants": 5
     },
     {
@@ -43231,5 +43196,5 @@
     }
   ],
   "ready_count": 40,
-  "total_pending": 1436
+  "total_pending": 1435
 }

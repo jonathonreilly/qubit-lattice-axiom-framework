@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 832 |
+| **retained_bounded** | 833 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1432 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1276 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1277 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
@@ -132,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -186,6 +184,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | B | - |
 | `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2284,6 +2283,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Because the finite anti-Hermitian staggered Dirac matrix anticommutes with epsilon, D^dag D commutes with epsilon and D bijects the positive-eigenvalue epsilon=+ and epsilon=- subspaces, so Tr(epsilon exp(-t D^dag D)) equals n_+ - n_- and is t-independent/integer-valued.  _(class `A`)_
 - **chain closes:** True — The core identity closes by finite-dimensional linear algebra: even periodicity makes epsilon flip on every nearest-neighbor hop, anti-Hermiticity gives a normal D, and D pairs all nonzero D^dag D eigenspaces across epsilon signs. The gauge-invariance and explicit-background checks are direct finite matrix/U(1) computations in the supplied runner source.
 - **rationale:** The cited minimal-axiom authority is explicitly flagged as an accepted axiom premise, and the retained cited authorities are not used for any open SME/anomaly identification. The runner source actually constructs the finite matrices, U(1) links, heat kernels, spectra, plaquettes, and Polyakov loops; it does not hard-code the contested trace values or compare to an external calibrated source. The source note is correctly narrowed to bounded finite trace support, with observed index zero and no claimed ABJ/cohomology/continuum bridge.
+- **auditor confidence:** high
+
+### `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`
+
+- **Note:** [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Equal-time tensor-factor locality, finite-velocity LR bounds for the finite-range support-family carrier and the free U=1 bilinear exact-log quasilocal carrier, plus only the stated sector-conditional continuum scaling corollary; gauged/interacting exact-log locality and full Wightman microcausality are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260611-axiom_first_microcausality_lieb_robinson-r1`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The parent imports the retained finite-range bridge velocity v_LR = 2 e q W R and the retained free-bilinear quasilocal LR bound, then applies the stated same-sector scaling implication for M3.  _(class `B`)_
+- **chain closes:** True — The controlling packet supports a clean bounded verdict: M1 follows from the accepted Quantum tensor-factor premise, M2a/M2b are supplied by retained-bounded bridge authorities, and M3 is explicitly only a same-sector conditional scaling consequence. The correct class is B because the parent row’s load-bearing LR content is read from one-hop bridge notes rather than re-derived in this source note; the algebraic scaling part does not make the headline LR import class A. The older stale-constant objection is not applicable to the current restricted packet, which carries the repaired 2β, J, W, and v_LR constants and a runner guard for that text.
+- **rationale:** The controlling packet supports a clean bounded verdict: M1 follows from the accepted Quantum tensor-factor premise, M2a/M2b are supplied by retained-bounded bridge authorities, and M3 is explicitly only a same-sector conditional scaling consequence. The correct class is B because the parent row’s load-bearing LR content is read from one-hop bridge notes rather than re-derived in this source note; the algebraic scaling part does not make the headline LR import class A. The older stale-constant objection is not applicable to the current restricted packet, which carries the repaired 2β, J, W, and v_LR constants and a runner guard for that text.
 - **auditor confidence:** high
 
 ### `axiom_first_reeh_schlieder_theorem_note_2026-05-01`

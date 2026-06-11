@@ -1,0 +1,12 @@
+campaign: matter-cone-larger-cell
+created: 2026-06-11
+parent_campaign: kinetic-isotropy-derivation (blocks 01-07)
+cycle: 0
+status: launched — scoping cycle next
+next_action: >
+  Cycle 1 scoping: (a) construct the 4^3-cell licensed family skeleton and
+  the eta-twisted gauges on it (the cocycle generalization); (b) attempt
+  the sigma-law generalization on the blocked 2-tick composite read as a
+  64-component single tick; (c) the cone-slope census of every exactly
+  solvable subfamily found. Budget guard: orbit-reduce BEFORE any
+  enumeration; cap all propagation trees; structured seeds only.

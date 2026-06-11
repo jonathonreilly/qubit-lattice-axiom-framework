@@ -1,32 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py
-runner_sha256: a1792650ca6834ce1826fdecb5f501298086be0b6af9bfef6596e10aa7b58eb5
+runner_sha256: 436250923d1ca22e0fb1416c66109ee1523d7c20cce15bbaea5fcbc98e5d39cf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.79
+elapsed_sec: 0.66
 status: ok
 ----- stdout -----
-K/CPT determinant and AC_phi_lambda orientation invariance checks
+K/CPT orientation invariance checks for the AC_phi_lambda gate
 ============================================================================
 PASS source does not claim a completed Tier-A registry change
-PASS source names the retained-bridge requirement for strong-CP mass orientation
-PASS source preserves the Record axiom boundary
 PASS source avoids the rejected theta shortcut
 PASS source names the AC_phi_lambda conditional registrability bridge
 PASS source keeps audit status authority external
-PASS live strong-CP note still names action-slot and positive-mass selected-surface premises
-PASS K/CPT conjugation maps determinant z to conj(z)
-PASS cos(arg z) is K-invariant, so orbit invariance alone gives evenness not phase erasure
-PASS phase character exp(i k arg z) is multiplicative when phases add
-PASS K-invariance of the determinant-character phase for all phi forces k = 0 -- linear coefficient 2*I*k; solutions [0]
-PASS surviving determinant-character readout is phase-free and depends only on |det|
+PASS source points at the moved determinant-character lemma note
 PASS conjugation maps the AC_phi_lambda circulant H(delta) exactly to H(-delta)
 PASS elementary symmetric polynomials of the AC_phi_lambda spectrum match at +/-delta
 PASS delta -> -delta permutes eigenvalue labels by k -> -k
-PASS staggered-Dirac source still names AC_phi_lambda as admitted-context residual
+PASS staggered-Dirac source still carries the AC_phi_lambda gate surface
 PASS all local markdown dependency links resolve
 ============================================================================
-SUMMARY: PASS=17 FAIL=0
+SUMMARY: PASS=10 FAIL=0
 
 ----- stderr -----
 

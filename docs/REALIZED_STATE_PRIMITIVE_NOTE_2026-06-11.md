@@ -18,11 +18,15 @@ set, predict, or estimate any audit verdict.
 
 ## The Primitive
 
-> The laws don't pick the state; the world does — among the states the laws
-> permit. Derivations may evaluate at the realized state — pointwise, nothing
-> more: no averaging over alternatives, no "typical" or "generic", and no
-> quoting a number that would differ had another state been realized. The past
-> hypothesis is a separate, stronger input.
+The laws do not pick the state; the world does, among the states the laws permit.
+
+Derivations may evaluate at the realized state, pointwise.
+
+Nothing more is supplied: no averaging over alternatives, no typical or generic
+claim, and no quoting a number that would differ had another law-admissible
+state been realized.
+
+The past hypothesis is a separate, stronger input.
 
 ## What This Declares
 
@@ -30,10 +34,10 @@ The framework takes one realized-state reference: a law-admissible state supplie
 by the physical history.
 
 This is pointwise evaluation, not a state-selection rule. It carries zero
-state-contingent content: no state, measure, weighting, averaging or aggregation
-over alternatives, probability rule, typicality claim, genericity claim,
-preferred state, default state, boundary condition, normalization rule, or value
-is supplied by it.
+state-contingent content: no state, averaging over alternatives, measure,
+weighting, probability rule, typicality claim, genericity claim, preferred
+state, default state, boundary condition, normalization rule, or value is
+supplied by it.
 
 A row may evaluate an already-defined state functional at the supplied realized
 state. A value that would change under a different law-admissible realized state
@@ -48,49 +52,26 @@ structural core is undetermined until one realized state is supplied.
 That reference is irreducible as a laws-versus-state distinction. A realized
 state cannot be derived from state-blind laws, and treating this supplied state
 as a Tier-A admitted derivation target incorrectly bounds lanes whose structural
-content is otherwise clean. Irreducibility is exhibited on exact instances by the
-support runner (state-blind dynamics with state-contingent registered outcomes;
-invariant-state continua on degenerate manifolds — invariance does not select,
-and the maximal-symmetry reference is one more invariant point, never "the
-natural input").
+content is otherwise clean.
 
 ## What This Does Not Do
 
 - It does not add or amend an axiom.
-- It does not supply a state-selection rule, measure, weighting, averaging or
-  aggregation over alternatives, probability rule, typicality claim, genericity
-  claim, preferred state, default state, boundary condition, normalization
-  rule, or state-contingent value.
+- It does not supply a state-selection rule, averaging over alternatives,
+  measure, weighting, probability rule, typicality claim, genericity claim,
+  preferred state, default state, boundary condition, normalization rule, or
+  state-contingent value.
 - It does not assert any special boundary condition on the realized history. A
-  low-record or low-entropy boundary remains a separate named input — the past
-  hypothesis, anchored as the residual of
-  `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`.
+  low-record or low-entropy boundary remains a separate named input, anchored
+  at `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`.
 - It does not change any audit verdict. Audit status remains set only by the
   independent audit lane.
 
-## Audit-Pipeline Treatment
+## Informative State-Contingency Register
 
-The machine-readable distinction is:
-
-- `docs/audit/data/axiom_premise_nodes.json` lists framework axioms and
-  explicitly approved framework primitives. These dependencies chain-satisfy
-  without bounding downstream rows.
-- `docs/audit/data/tier_a_admissions.json` lists non-axiom derivation-target
-  admissions. These dependencies chain-satisfy only at `retained_bounded`
-  until the relevant admission is retired by a retained derivation.
-
-The realized-state primitive belongs to the first registry, not the second.
-It carries no contingent content, so rows quoting realized-state data remain
-conditional on that supplied data.
-
-## The State-Contingency Register (documentation, not a gate)
-
-The primitive is self-gating: invoking it never upgrades a row — evaluation is
-licensed, and any quoted value that varies across law-admissible states is
-registered data by the counterfactual sentence above. The register below
-documents the data currently known to live in this slot, each backed by a
-landed exact-runner underdetermination result. (Statuses are pipeline-derived;
-paths are source notes, not status claims.)
+The register records current examples of realized-state data already separated
+from derivation output. It is documentation, not an additional gate: the
+primitive is policed by the counterfactual test above.
 
 1. **Which point of the open-shell degenerate ground manifold is realized** —
    `docs/OPEN_SHELL_INVARIANT_LOCUS_CONDITIONAL_NEUTRALITY_NO_DERIVED_SELECTOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`.
@@ -106,34 +87,20 @@ paths are source notes, not status claims.)
    settings `r = 0, 1/2, 1`) is family-invariant and quotable; each sector's
    setting is data.
 
-**Explicitly not an entry:** the past hypothesis (see above — separate,
-stronger input).
+**Explicitly not an entry:** the past hypothesis (separate, stronger input;
+anchored above).
 
-## Review Trail
+## Audit-Pipeline Treatment
 
-Wording was stress-tested by a two-round, ten-persona adversarial physics
-panel (lattice gauge theory, operator algebras/axiomatic QFT, quantum
-foundations, cosmology/initial conditions, particle phenomenology, general
-relativity, statistical mechanics, precision flavor experiment, condensed
-matter, sceptical senior theory). Round 1 (a "conditioning ONLY" wording)
-drew 9 reservations + 1 objection: the decisive defects were the
-measure-presupposition of the word "conditioning" (and its Borel-Kolmogorov
-ill-posedness at measure-zero specializations), an unbanned "generic", an
-unpinned value-extraction seam, and the past-hypothesis bundling
-contradiction. Round 2 (the present wording: pointwise evaluation; "typical"
-and "generic" banned by name; the counterfactual test; constraint
-admissibility in-clause; the past hypothesis carved out) passed 10/10 with no
-objections. The corpus motivates the named ban: "generic/generically" appears
-~800 times across ~356 notes versus ~57 for "typical" — the named ban covers
-the workhorse term, and the counterfactual test independently forecloses the
-substance.
+The machine-readable distinction is:
 
-## Enforcement
+- `docs/audit/data/axiom_premise_nodes.json` lists framework axioms and
+  explicitly approved framework primitives. These dependencies chain-satisfy
+  without bounding downstream rows.
+- `docs/audit/data/tier_a_admissions.json` lists non-axiom derivation-target
+  admissions. These dependencies chain-satisfy only at `retained_bounded`
+  until the relevant admission is retired by a retained derivation.
 
-Mechanical, not honor-system: workers apply
-`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` (do not grant more
-than this note declares). The operative gate is the counterfactual sentence —
-a quoted value that would change under a different law-admissible realized
-state is registered data, and no citation of this primitive alters that. The
-audit lane alone sets effective statuses; nothing in this primitive's
-semantics promotes state-contingent rows.
+The realized-state primitive belongs to the first registry, not the second. It
+carries no contingent content, so rows quoting realized-state data remain
+conditional on that supplied data.

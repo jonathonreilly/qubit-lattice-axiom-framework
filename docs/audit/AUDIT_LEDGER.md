@@ -20,15 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 821 |
+| **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1429 |
+| unaudited | 1431 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 25 |
-| `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -60,23 +59,23 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 1261 |
 | `audited_conditional` | 25 |
-| `audited_decoration` | 54 |
+| `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1745 |
+| `unaudited` | 1747 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1529 |
-| `decoration` | 55 |
+| `decoration` | 54 |
 | `meta` | 324 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 774 |
+| `positive_theorem` | 775 |
 
 | criticality | count |
 |---|---:|
@@ -132,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -153,6 +151,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | B | - |
+| `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alt_connectivity_family_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `alt_connectivity_family_complex_failure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `alt_connectivity_family_failure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -493,7 +492,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1421,7 +1419,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
-| `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -1789,20 +1786,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The theorem closes inside its explicitly narrow scope: once α_LM and α_s(v) are defined as α_bare/u_0 and α_bare/u_0² over positive scalars, T1-T3 are forced by algebra. The runner's numeric retained-value checks are not load-bearing for the abstract theorem, and the source note explicitly excludes physical derivation or external comparator claims.
 - **auditor confidence:** high
 
-### `alpha_s_derived_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `decoration`
-- **claim_scope:** Algebraic P1/P2 coupling-chain and ratio corollaries over abstract positive reals alpha_bare and u_0 from retained tadpole-power definitions D1/D2 only; no plaquette value, CMT bridge, running bridge, SM alpha_s identification, or numerical prediction is audited.
-- **audit_status:** ~~audited_decoration~~
-- **effective_status:** `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
-- **auditor:** `leibniz-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-alpha-s-derived-narrow`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** From D1 alpha_LM := alpha_bare/u_0 and D2 alpha_s(v) := alpha_bare/u_0^2, alpha_LM^2 = alpha_bare * alpha_s(v) and alpha_s(v)/alpha_LM = 1/u_0.  _(class `A`)_
-- **chain closes:** True — The identities close exactly by substitution from the retained tadpole-power parent, but add no independent comparator, compression, or physical content beyond that parent.
-- **rationale:** Issue: P1/P2 and the listed corollaries are exact algebraic consequences of the retained tadpole-power parent over the same abstract alpha_bare,u_0 inputs. Why this blocks: the parent scope already covers the geometric-mean / constant-ratio tadpole-power identities, so this row is not an independent positive theorem surface even though the algebra is correct. Repair target: keep the identities boxed under alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10, or add a genuinely new retained-grade physical/comparator bridge in a separate source note. Claim boundary until fixed: safe as an algebraic corollary only; no plaquette value, CMT bridge, running bridge, SM alpha_s identification, or numerical prediction is ratified.
-- **decoration parent:** `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
-- **auditor confidence:** high
-
 ### `alpha_s_derived_note`
 
 - **Note:** [`ALPHA_S_DERIVED_NOTE.md`](../../docs/ALPHA_S_DERIVED_NOTE.md)
@@ -1845,6 +1828,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The source is clean only as an open-gate/status-boundary note, not as the positive theorem suggested by the seeded claim type. The runner verifies a broad physical alpha_s(M_Z) packet, but the load-bearing physical scale and QCD-running bridges are external/admitted context, and the old minimal-axioms dependency is superseded metadata rather than retained theorem authority. The already-narrowed finite certificate parent may remain retained_bounded; this historical broad alpha_s(M_Z) promotion lane remains open until the named bridges are supplied.
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-04-11.md`
+- **auditor confidence:** high
+
+### `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The abstract R^+ algebraic identities T1-T6 relating alpha_bare, u_0, alpha_LM, alpha_s(v), and the optional positive substitution u_0=P^(1/4), with no physical plaquette, normalization, gauge-group, running, or numerical target import.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-131132-b94d3acc1d-alpha_s_tadpole_improvement_`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** From the definitions alpha_LM := alpha_bare/u_0 and alpha_s(v) := alpha_bare/u_0^2, the stated identities follow by direct algebra over positive reals.  _(class `A`)_
+- **chain closes:** True — The conclusions are algebraic consequences of the two displayed definitions with positivity supplying division, square-root uniqueness, and logarithm domains. No cited authority or hidden numerical input is needed for the audited abstract scope.
+- **rationale:** Independent symbolic checking confirms T1-T6: the vertex-power identities, geometric-mean/log form, constant-ratio chain, u_0=1 boundary, unique positive inverse, and P^(1/4) substitution all reduce to zero residuals under the stated positivity assumptions. The runner source performs genuine symbolic and numerical algebra checks rather than hard-coding a contested physical value, and its documentary scope guards do not enter the load-bearing proof. The verdict is clean only for the narrow abstract algebraic theorem, not for any parent alpha_s(M_Z), plaquette, Wilson-action, or bare-normalization claim.
 - **auditor confidence:** high
 
 ### `alt_connectivity_family_basin_note`
@@ -6761,19 +6757,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The on-site 2pi rotation lifts to the same scalar -I_4 on either tensor factor, so the algebra generated by those rotations is scalars only and cannot produce the non-scalar two-site swap P; the continuum Finkelstein-Rubinstein bridge needed to identify exchange with rotation is not supplied by the bare Z^3 site set.  _(class `A`)_
 - **chain closes:** True — The finite matrix identities close: exp(2pi i sigma_3/2)=-I_2, its two-site lifts are scalar -I_4, while the swap P is non-scalar with symmetric/antisymmetric eigenvalue split. The accepted minimal axiom packet supplies only the discrete Z^3 site set, not the continuous configuration-space pi_1 bridge or a graded-locality premise.
 - **rationale:** The runner source genuinely computes the exact finite-dimensional algebraic facts with Sympy matrices rather than printing constants or importing the contested conclusion, and an independent manual check confirms the signs, scalar algebra dimension, swap spectrum, cross-site commutator/CAR distinction, and M_4(C) closure claims. The only non-retained upstream is the minimal-axiom authority, which is explicitly flagged as an accepted axiom premise, so the carve-out applies. The no-go is scoped to pruning the rotation-exchange route and explicitly leaves graph-braid/discrete-homotopy and graded-locality paths open, so it is not an overbroad absolute impossibility claim.
-- **auditor confidence:** high
-
-### `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`
-
-- **Note:** [`G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded algebraic implication only: given the literature input u_0(SU(2)) in [0.96, 0.98], the named scale ratio L = ln(M_Pl/v) = 38.44, the standard one-loop SU(2) running equation, and the retained/retained_bounded lattice-anchor, beta-coefficient, native-SU(2), Wilson-normalization, and tadpole vertex-power inputs, exact substitution plus monotonicity gives g_2(v = 246 GeV) in [0.659392836186702, 0.682834304553707]. No derivation of u_0, L, the one-loop RGE, a PDG comparator, or a point prediction is audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Equations (R1)-(R3) substitute the explicit inputs into 1/alpha_2(v) = 16*pi*u_0^2 - (b_2/(2*pi))*L and then invert to g_2(v), while (M1)/(S7) proves the endpoint reversal because d/du_0[1/alpha_2(v)] = 32*pi*u_0 > 0.  _(class `A`)_
-- **chain closes:** True — The scoped result is an algebraic bounded implication over explicit hypotheses. The direct ledger dependencies are retained-grade or decoration-under-retained, and the remaining non-framework inputs are explicitly scoped as named admissions rather than claimed derivations. The runner recomputes the symbolic formula, monotonicity, endpoint reversal, and decimal interval with PASS=18 FAIL=0.
-- **rationale:** No-go/admission gate: this row does not assert a no-go or wall closure; it states a bounded implication with explicit admissions. The admission set is u_0(SU(2)) in [0.96,0.98], L=38.44, and the standard one-loop SU(2) running equation; treating those as hypotheses, not derived outputs, avoids hidden-wall inflation. The load-bearing algebra then closes: the denominator is 16*pi*u_0^2 - (b_2/(2*pi))*L, monotonicity maps u_hi to the lower g_2 endpoint and u_lo to the upper endpoint, and the exact runner reproduces the displayed interval. Residual risk is bounded-scope only: deriving u_0, the scale ratio, or the one-loop RGE from framework primitives would require separate retained rows, and this audit does not promote a point value or PDG match.
 - **auditor confidence:** high
 
 ### `g_bare_canonical_convention_narrow_theorem_note_2026-05-02`

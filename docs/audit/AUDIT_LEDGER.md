@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 817 |
+| **retained_bounded** | 818 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
 | unaudited | 1436 |
-| audit_in_progress | 1 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1257 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1258 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
@@ -135,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -856,6 +854,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_two_stage_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `minimal_absorbing_horizon_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_bidirectional_trapping_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -12004,6 +12003,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the retained 2D family, the stage-2 broad surrogate built from the stage-1 sourced response reproduces the stage-1 surrogate rows at printed precision across the tested topN values.  _(class `C`)_
 - **chain closes:** True — The provided runner constructs the 2D lattice, propagates the probe, builds stage-1 and stage-2 compressed surrogate source profiles, and computes the displayed ratios, TV distances, captures, spreads, and overlap. The bounded conclusion is limited to the frozen family and printed-precision two-stage stability.
 - **rationale:** The primary runner does not merely print constants: it generates the lattice, propagates amplitudes under distributed and point-source fields, compresses computed profiles, and compares the second-stage surrogate against the first. The helper source supplies lattice generation and constants used by the computation rather than importing the contested result from another note. The cited authorities are retained_bounded and the note's conclusion stays bounded: mesoscopic two-stage stability, not localized persistent-mass closure.
+- **auditor confidence:** high
+
+### `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`
+
+- **Note:** [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** F1-F2c carrier support/J/W budgets, F3-L1/L2 finite-range LR lemma with derived constants, and F4 unconditional tensor-product nearest-neighbor hopping-H microcausality bound; F5 only as an explicit conditional/open exact-H context.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260611-microcausality_finite_range_h_and_vlr_br-r1`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The finite-range iterated-commutator lemma derives v_LR := 2·e·q·W·R, and inserting H_hop support data q=2, R=1, W=|m|+2d gives v_LR <= 4·e·(|m|+2d).  _(class `A`)_
+- **chain closes:** True — The ledger-scoped theorem closes by finite-dimensional support counting, operator-norm algebra, and the in-note LR tail estimate over retained-grade or accepted-premise inputs. The exact reconstructed H=-log(T)/a_tau locality and quasilocal tail-composition discussion is explicitly not ratified as proved and is outside the unconditional F1-F4 surface. The load-bearing step is analytic algebra over existing support-family inputs, so class A is more accurate than class C, though the runner includes nontrivial finite-matrix checks.
+- **rationale:** The ledger-scoped theorem closes by finite-dimensional support counting, operator-norm algebra, and the in-note LR tail estimate over retained-grade or accepted-premise inputs. The exact reconstructed H=-log(T)/a_tau locality and quasilocal tail-composition discussion is explicitly not ratified as proved and is outside the unconditional F1-F4 surface. The load-bearing step is analytic algebra over existing support-family inputs, so class A is more accurate than class C, though the runner includes nontrivial finite-matrix checks.
 - **auditor confidence:** high
 
 ### `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`

@@ -1,0 +1,314 @@
+===== runner cache v1 =====
+runner: scripts/linear_response_true_kubo_convergence_closure_2026_06_10.py
+runner_sha256: 06274a273617c49d2065dfe716b905383292a2f95609f54bfc29a8ca3319e913
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 216.92
+status: ok
+----- stdout -----
+====================================================================================================
+TRUE FIRST-ORDER KUBO - CONVERGENCE CLOSURE (matched-discretization derivative, s->0 ladder)
+====================================================================================================
+
+SECTION 1 - frozen-artifact reproduction (parse + recompute)
+----------------------------------------------------------------------------------------------------
+[PASS] frozen true-kubo runner cache exists :: logs/runner-cache/linear_response_true_kubo.txt
+[PASS] cache parses to 44 family rows (26/9/9 by group) :: rows=44
+[PASS] cached overall r recomputes to 0.9716 from the cache's own columns :: r=0.9716
+[PASS] cached by-group r recompute (0.9875 / 0.9793 / 0.9995) :: swept=0.9875 scaffolded=0.9793 off_scaffold=0.9995
+[PASS] cached sign agreement recounts to 42/44 :: 42/44
+[PASS] cached ratio stats recompute (N=39, mean 1.0465, std 0.8269, min -0.3596, max 5.7671) :: N=39 mean=1.0465 std=0.8269 min=-0.3596 max=5.7671
+[PASS] heuristic lane frozen 44-family log exists :: logs/2026-04-07-linear-response-derivation.txt
+[PASS] heuristic frozen log recomputes (44 rows, r=0.5605, sign 36/44) :: rows=44 r=0.5605 sign=36/44
+
+SECTION 2 - full 44-family live lap (free beam, matched + midpoint derivatives,
+            landed-runner import, response at s=1e-3 and s=5e-4, panel classification)
+----------------------------------------------------------------------------------------------------
+  A1_orig_Fam1_swept                    swept          live p_det=9.399e+09 pruned=    0 k_end=  +6.692401 k_mid=  +5.728955 m(1e-3)=  +6.707034
+  A2_orig_Fam2_swept                    swept          live p_det=9.924e+09 pruned=    0 k_end=  +6.674568 k_mid=  +5.718800 m(1e-3)=  +6.686474
+  A3_orig_Fam3_swept                    swept          live p_det=8.006e+09 pruned=    0 k_end=  +6.954751 k_mid=  +5.760669 m(1e-3)=  +6.971989
+  B1_pure_grid_swept                    swept          live p_det=7.264e+09 pruned=    0 k_end=  +7.513274 k_mid=  +5.564814 m(1e-3)=  +7.537016
+  C1_random_lo_swept                    swept          live p_det=1.452e+21 pruned=    0 k_end=  +0.443997 k_mid=  +0.405309 m(1e-3)=  +0.449101
+  C2_random_hi_swept                    swept          live p_det=2.688e+11 pruned=    0 k_end=  +1.500769 k_mid=  +1.424344 m(1e-3)=  +1.499422
+  D1_md1_NN_swept                       swept          live p_det=3.524e+10 pruned=    0 k_end=  +9.967991 k_mid=  +8.792843 m(1e-3)=  +9.890147
+  D2_md4_long_swept                     swept          live p_det=8.493e+09 pruned=    0 k_end=  +5.250539 k_mid=  +5.017299 m(1e-3)=  +5.272666
+  E1_PW3_narrow_swept                   swept          live p_det=7.297e+09 pruned=    0 k_end=  +1.350132 k_mid=  +1.900224 m(1e-3)=  +1.359551
+  E2_PW10_wide_swept                    swept          live p_det=1.076e+10 pruned=    0 k_end=  +6.920894 k_mid=  +5.360181 m(1e-3)=  +6.951497
+  F1_NL10_short_swept                   swept          live p_det=2.485e+03 pruned=    0 k_end=  +1.366255 k_mid=  +1.478430 m(1e-3)=  +1.364675
+  F2_NL40_long_swept                    swept          live p_det=5.024e+16 pruned=    0 k_end=  +8.775017 k_mid=  +7.135601 m(1e-3)=  +8.783983
+  G1_asym_y_swept                       swept          live p_det=1.048e+12 pruned=    0 k_end=  +3.338589 k_mid=  +2.685851 m(1e-3)=  +3.354310
+  G2_asym_z_swept                       swept          live p_det=9.745e+11 pruned=    0 k_end=  +0.090194 k_mid=  +0.306394 m(1e-3)=  +0.053128
+  H1_ring_swept                         swept          live p_det=3.787e-50 pruned=    0 k_end=  -1.093403 k_mid=  -2.116414 m(1e-3)=  -1.158873
+  H2_cross_swept                        swept          live p_det=4.539e+09 pruned=    0 k_end=  +0.789473 k_mid=  +0.793435 m(1e-3)=  +0.790601
+  I1_drift_y_swept                      swept detector_dead p_det=0.000e+00 pruned=    0 k_end=       +nan k_mid=       +nan m(1e-3)=  +0.000000
+  J1_aniso_z2_swept                     swept          live p_det=8.975e+09 pruned=    0 k_end=  +5.124541 k_mid=  +4.891321 m(1e-3)=  +5.147676
+  J2_aniso_z4_swept                     swept          live p_det=8.985e+09 pruned=    0 k_end=  +5.118770 k_mid=  +4.870076 m(1e-3)=  +5.140729
+  K1_NN_no_restore_swept                swept          live p_det=5.105e-13 pruned=    0 k_end=  +0.308650 k_mid=  +0.321249 m(1e-3)=  +0.307847
+  K2_huge_drift_md1_swept               swept          live p_det=3.966e-30 pruned=    0 k_end=  +0.006746 k_mid=  +0.006089 m(1e-3)=  +0.006752
+  K3_NL5_swept                          swept          live p_det=1.988e+01 pruned=    0 k_end=  +0.583548 k_mid=  +0.272226 m(1e-3)=  +0.578009
+  K4_PW2_swept                          swept          live p_det=8.300e+09 pruned=    0 k_end=  +1.362089 k_mid=  +1.342638 m(1e-3)=  +1.363883
+  L1_seed1_swept                        swept          live p_det=9.021e+09 pruned=    0 k_end=  +6.021980 k_mid=  +4.948510 m(1e-3)=  +6.050381
+  L2_seed2_swept                        swept          live p_det=1.050e+10 pruned=    0 k_end=  +6.496727 k_mid=  +5.016001 m(1e-3)=  +6.519002
+  L3_seed3_swept                        swept          live p_det=1.054e+10 pruned=    0 k_end=  +5.701790 k_mid=  +4.315998 m(1e-3)=  +5.713734
+  R1_kreg_k15_scaf                 scaffolded          live p_det=2.094e-49 pruned=    1 k_end=  -0.884401 k_mid=  +0.306855 m(1e-3)=  -0.853206
+  R2_kreg_k8_scaf                  scaffolded    prune_zone p_det=6.692e-63 pruned= 1195 k_end=  -0.000000 k_mid=  -0.000000 m(1e-3)=  +0.000000
+  R3_kreg_k20_scaf                 scaffolded          live p_det=1.303e-43 pruned=    0 k_end= +20.851842 k_mid= +23.897643 m(1e-3)= +22.126515
+  E1_er_p005_scaf                  scaffolded          live p_det=8.892e-35 pruned=    0 k_end=  +4.008474 k_mid=  +4.077882 m(1e-3)=  +3.992115
+  E2_er_p020_scaf                  scaffolded          live p_det=1.294e-14 pruned=    0 k_end=  +3.990353 k_mid=  +3.424645 m(1e-3)=  +3.989177
+  L1_longrange_k12_scaf            scaffolded          live p_det=1.300e-27 pruned=    0 k_end=  -0.813266 k_mid=  -1.360580 m(1e-3)=  -0.800153
+  T1_tree_fan4_scaf                scaffolded detector_dead p_det=0.000e+00 pruned=    4 k_end=       +nan k_mid=       +nan m(1e-3)=  +0.000000
+  H1_hub_scaf                      scaffolded detector_dead p_det=0.000e+00 pruned= 1125 k_end=       +nan k_mid=       +nan m(1e-3)=  +0.000000
+  X1_expander_k12_scaf             scaffolded detector_dead p_det=0.000e+00 pruned= 1145 k_end=       +nan k_mid=       +nan m(1e-3)=  +0.000000
+  OF1_uniform_k15_off            off_scaffold          live p_det=3.398e+15 pruned=    0 k_end=  +1.171709 k_mid=  +1.159865 m(1e-3)=  +1.173790
+  OF2_uniform_k30_off            off_scaffold          live p_det=5.719e+14 pruned=    0 k_end=  +1.796410 k_mid=  +1.743441 m(1e-3)=  +1.798082
+  OF3_uniform_k8_off             off_scaffold          live p_det=5.310e+15 pruned=    0 k_end=  +0.149480 k_mid=  +0.146594 m(1e-3)=  +0.149532
+  OF4_gaussian_off               off_scaffold          live p_det=2.153e+42 pruned=    0 k_end=  +0.049749 k_mid=  +0.049576 m(1e-3)=  +0.049731
+  OF5_clustered_off              off_scaffold          live p_det=1.880e+10 pruned=    0 k_end=  -0.002941 k_mid=  -0.002613 m(1e-3)=  -0.002954
+  OF6_rotated_grid_off           off_scaffold          live p_det=2.513e+12 pruned=    0 k_end=  +6.261061 k_mid=  +5.637698 m(1e-3)=  +6.272516
+  OF7_halton_off                 off_scaffold          live p_det=5.887e+14 pruned=    0 k_end=  +4.110764 k_mid=  +3.882717 m(1e-3)=  +4.117354
+  OF8_radial_off                 off_scaffold          live p_det=5.283e+51 pruned=    0 k_end=  -0.006586 k_mid=  -0.006576 m(1e-3)=  -0.006602
+  OF9_stretched_off              off_scaffold          live p_det=9.027e+12 pruned=    0 k_end=  -0.060489 k_mid=  -0.046238 m(1e-3)=  -0.058893
+[PASS] panel classification: 39 live / 4 detector-dead / 1 prune-zone :: live=39 dead=['H1_hub_scaf', 'I1_drift_y_swept', 'T1_tree_fan4_scaf', 'X1_expander_k12_scaf'] prune=['R2_kreg_k8_scaf']
+[PASS] detector-dead set is exactly {H1_hub, I1_drift_y, T1_tree_fan4, X1_expander_k12} (free p_det = 0) :: H1_hub_scaf,I1_drift_y_swept,T1_tree_fan4_scaf,X1_expander_k12_scaf
+[PASS] imported landed runner reproduces ALL 44 cached kubo_true values (<= 1.5e-6, print precision) :: max|dev|=5.00e-07
+[PASS] live response(s=1e-3) reproduces ALL 44 cached response values (<= 1.5e-6) :: max|dev|=4.97e-07
+[PASS] this runner's midpoint variant equals the imported landed kubo_true on all 39 live rows (rel <= 1e-9) :: max rel dev=3.40e-13
+[PASS] prune-zone row is R2_kreg_k8 (p_det ~ 1e-63, below the lane's |amp|<1e-30 prune resolution squared) :: R2_kreg_k8_scaf p_det=6.69e-63 pruned=1195
+[PASS] R2: matched derivative ~ 0 AND response ~ 0 at both steps; the cached kubo_true=+4.36 is a prune-semantics artifact (landed B-pass keeps propagating where the response lane prunes) :: k_end=-7.11e-15 m(1e-3)=0.00e+00 k_ltk=+4.3589
+
+SECTION 3 - convergence ladders on the 16-family subset (incl. the 3 residual cases)
+----------------------------------------------------------------------------------------------------
+
+  A1_orig_Fam1_swept  (p_det=9.40e+09)
+    k_end=+6.692401  k_mid=+5.728955  (mid-end gap -9.634e-01)
+    s=0.004000  Df=   +6.747456  err_end=+5.506e-02  err_mid=+1.019e+00
+    s=0.002000  Df=   +6.721099  err_end=+2.870e-02  err_mid=+9.921e-01
+    s=0.001000  Df=   +6.707034  err_end=+1.463e-02  err_mid=+9.781e-01  Dc=   +6.692126  errC_end=-2.752e-04
+    s=0.000500  Df=   +6.699787  err_end=+7.387e-03  err_mid=+9.708e-01  Dc=   +6.692332  errC_end=-6.881e-05
+    s=0.000250  Df=   +6.696111  err_end=+3.711e-03  err_mid=+9.672e-01  Dc=   +6.692384  errC_end=-1.720e-05
+    fwd err ratio (2.5e-4 / 5e-4) = 0.502   ctr err ratio = 0.250
+    Richardson(centered) = +6.69240082  rel-to-k_end = 7.50e-11
+    5-point O(s^4)       = +6.69240082  rel-to-k_end = 7.50e-11
+
+  B1_pure_grid_swept  (p_det=7.26e+09)
+    k_end=+7.513274  k_mid=+5.564814  (mid-end gap -1.948e+00)
+    s=0.004000  Df=   +7.599666  err_end=+8.639e-02  err_mid=+2.035e+00
+    s=0.002000  Df=   +7.559356  err_end=+4.608e-02  err_mid=+1.995e+00
+    s=0.001000  Df=   +7.537016  err_end=+2.374e-02  err_mid=+1.972e+00  Dc=   +7.512596  errC_end=-6.783e-04
+    s=0.000500  Df=   +7.525318  err_end=+1.204e-02  err_mid=+1.961e+00  Dc=   +7.513105  errC_end=-1.696e-04
+    s=0.000250  Df=   +7.519339  err_end=+6.064e-03  err_mid=+1.955e+00  Dc=   +7.513232  errC_end=-4.240e-05
+    fwd err ratio (2.5e-4 / 5e-4) = 0.504   ctr err ratio = 0.250
+    Richardson(centered) = +7.51327447  rel-to-k_end = 1.63e-10
+    5-point O(s^4)       = +7.51327447  rel-to-k_end = 1.63e-10
+
+  C1_random_lo_swept  (p_det=1.45e+21)
+    k_end=+0.443997  k_mid=+0.405309  (mid-end gap -3.869e-02)
+    s=0.004000  Df=   +0.464403  err_end=+2.041e-02  err_mid=+5.909e-02
+    s=0.002000  Df=   +0.454202  err_end=+1.020e-02  err_mid=+4.889e-02
+    s=0.001000  Df=   +0.449101  err_end=+5.105e-03  err_mid=+4.379e-02  Dc=   +0.443993  errC_end=-3.732e-06
+    s=0.000500  Df=   +0.446550  err_end=+2.553e-03  err_mid=+4.124e-02  Dc=   +0.443996  errC_end=-9.330e-07
+    s=0.000250  Df=   +0.445274  err_end=+1.277e-03  err_mid=+3.996e-02  Dc=   +0.443997  errC_end=-2.332e-07
+    fwd err ratio (2.5e-4 / 5e-4) = 0.500   ctr err ratio = 0.250
+    Richardson(centered) = +0.44399684  rel-to-k_end = 1.13e-11
+    5-point O(s^4)       = +0.44399684  rel-to-k_end = 1.13e-11
+
+  E1_PW3_narrow_swept  (p_det=7.30e+09)
+    k_end=+1.350132  k_mid=+1.900224  (mid-end gap +5.501e-01)
+    s=0.004000  Df=   +1.393267  err_end=+4.313e-02  err_mid=-5.070e-01
+    s=0.002000  Df=   +1.369866  err_end=+1.973e-02  err_mid=-5.304e-01
+    s=0.001000  Df=   +1.359551  err_end=+9.419e-03  err_mid=-5.407e-01  Dc=   +1.350570  errC_end=+4.375e-04
+    s=0.000500  Df=   +1.354731  err_end=+4.599e-03  err_mid=-5.455e-01  Dc=   +1.350242  errC_end=+1.094e-04
+    s=0.000250  Df=   +1.352404  err_end=+2.272e-03  err_mid=-5.478e-01  Dc=   +1.350160  errC_end=+2.735e-05
+    fwd err ratio (2.5e-4 / 5e-4) = 0.494   ctr err ratio = 0.250
+    Richardson(centered) = +1.35013234  rel-to-k_end = 4.50e-11
+    5-point O(s^4)       = +1.35013234  rel-to-k_end = 4.49e-11
+
+  G2_asym_z_swept  (p_det=9.75e+11)
+    k_end=+0.090194  k_mid=+0.306394  (mid-end gap +2.162e-01)
+    s=0.004000  Df=   -0.059114  err_end=-1.493e-01  err_mid=-3.655e-01
+    s=0.002000  Df=   +0.015885  err_end=-7.431e-02  err_mid=-2.905e-01
+    s=0.001000  Df=   +0.053128  err_end=-3.707e-02  err_mid=-2.533e-01  Dc=   +0.090102  errC_end=-9.165e-05
+    s=0.000500  Df=   +0.071684  err_end=-1.851e-02  err_mid=-2.347e-01  Dc=   +0.090171  errC_end=-2.291e-05
+    s=0.000250  Df=   +0.080944  err_end=-9.249e-03  err_mid=-2.254e-01  Dc=   +0.090188  errC_end=-5.728e-06
+    fwd err ratio (2.5e-4 / 5e-4) = 0.500   ctr err ratio = 0.250
+    Richardson(centered) = +0.09019365  rel-to-k_end = 5.82e-10
+    5-point O(s^4)       = +0.09019365  rel-to-k_end = 5.76e-10
+
+  H1_ring_swept  (p_det=3.79e-50)
+    k_end=-1.093403  k_mid=-2.116414  (mid-end gap -1.023e+00)
+    s=0.004000  Df=   -1.372840  err_end=-2.794e-01  err_mid=+7.436e-01
+    s=0.002000  Df=   -1.227269  err_end=-1.339e-01  err_mid=+8.891e-01
+    s=0.001000  Df=   -1.158873  err_end=-6.547e-02  err_mid=+9.575e-01  Dc=   -1.094880  errC_end=-1.477e-03
+    s=0.000500  Df=   -1.125771  err_end=-3.237e-02  err_mid=+9.906e-01  Dc=   -1.093772  errC_end=-3.690e-04
+    s=0.000250  Df=   -1.109495  err_end=-1.609e-02  err_mid=+1.007e+00  Dc=   -1.093496  errC_end=-9.225e-05
+    fwd err ratio (2.5e-4 / 5e-4) = 0.497   ctr err ratio = 0.250
+    Richardson(centered) = -1.09340333  rel-to-k_end = 1.29e-08
+    5-point O(s^4)       = -1.09340333  rel-to-k_end = 1.29e-08
+
+  H2_cross_swept  (p_det=4.54e+09)
+    k_end=+0.789473  k_mid=+0.793435  (mid-end gap +3.962e-03)
+    s=0.004000  Df=   +0.794085  err_end=+4.612e-03  err_mid=+6.498e-04
+    s=0.002000  Df=   +0.791746  err_end=+2.272e-03  err_mid=-1.689e-03
+    s=0.001000  Df=   +0.790601  err_end=+1.127e-03  err_mid=-2.835e-03  Dc=   +0.789483  errC_end=+9.794e-06
+    s=0.000500  Df=   +0.790035  err_end=+5.612e-04  err_mid=-3.401e-03  Dc=   +0.789476  errC_end=+2.448e-06
+    s=0.000250  Df=   +0.789753  err_end=+2.800e-04  err_mid=-3.682e-03  Dc=   +0.789474  errC_end=+6.121e-07
+    fwd err ratio (2.5e-4 / 5e-4) = 0.499   ctr err ratio = 0.250
+    Richardson(centered) = +0.78947346  rel-to-k_end = 3.07e-12
+    5-point O(s^4)       = +0.78947346  rel-to-k_end = 3.06e-12
+
+  K2_huge_drift_md1_swept  (p_det=3.97e-30)
+    k_end=+0.006746  k_mid=+0.006089  (mid-end gap -6.570e-04)
+    s=0.004000  Df=   +0.006769  err_end=+2.241e-05  err_mid=+6.794e-04
+    s=0.002000  Df=   +0.006758  err_end=+1.111e-05  err_mid=+6.681e-04
+    s=0.001000  Df=   +0.006752  err_end=+5.531e-06  err_mid=+6.626e-04  Dc=   +0.006746  errC_end=+2.353e-08
+    s=0.000500  Df=   +0.006749  err_end=+2.759e-06  err_mid=+6.598e-04  Dc=   +0.006746  errC_end=+5.885e-09
+    s=0.000250  Df=   +0.006748  err_end=+1.378e-06  err_mid=+6.584e-04  Dc=   +0.006746  errC_end=+1.472e-09
+    fwd err ratio (2.5e-4 / 5e-4) = 0.499   ctr err ratio = 0.250
+    Richardson(centered) = +0.00674640  rel-to-k_end = 2.10e-10
+    5-point O(s^4)       = +0.00674640  rel-to-k_end = 2.32e-10
+
+  K3_NL5_swept  (p_det=1.99e+01)
+    k_end=+0.583548  k_mid=+0.272226  (mid-end gap -3.113e-01)
+    s=0.004000  Df=   +0.556149  err_end=-2.740e-02  err_mid=+2.839e-01
+    s=0.002000  Df=   +0.571582  err_end=-1.197e-02  err_mid=+2.994e-01
+    s=0.001000  Df=   +0.578009  err_end=-5.539e-03  err_mid=+3.058e-01  Dc=   +0.583097  errC_end=-4.517e-04
+    s=0.000500  Df=   +0.580891  err_end=-2.658e-03  err_mid=+3.087e-01  Dc=   +0.583435  errC_end=-1.130e-04
+    s=0.000250  Df=   +0.582248  err_end=-1.301e-03  err_mid=+3.100e-01  Dc=   +0.583520  errC_end=-2.824e-05
+    fwd err ratio (2.5e-4 / 5e-4) = 0.489   ctr err ratio = 0.250
+    Richardson(centered) = +0.58354846  rel-to-k_end = 5.72e-09
+    5-point O(s^4)       = +0.58354846  rel-to-k_end = 5.72e-09
+
+  R1_kreg_k15_scaf  (p_det=2.09e-49)
+    k_end=-0.884401  k_mid=+0.306855  (mid-end gap +1.191e+00)
+    s=0.004000  Df=   -0.761256  err_end=+1.231e-01  err_mid=-1.068e+00
+    s=0.002000  Df=   -0.821967  err_end=+6.243e-02  err_mid=-1.129e+00
+    s=0.001000  Df=   -0.853206  err_end=+3.119e-02  err_mid=-1.160e+00  Dc=   -0.884131  errC_end=+2.692e-04
+    s=0.000500  Df=   -0.868839  err_end=+1.556e-02  err_mid=-1.176e+00  Dc=   -0.884333  errC_end=+6.723e-05
+    s=0.000250  Df=   -0.876633  err_end=+7.768e-03  err_mid=-1.183e+00  Dc=   -0.884384  errC_end=+1.680e-05
+    fwd err ratio (2.5e-4 / 5e-4) = 0.499   ctr err ratio = 0.250
+    Richardson(centered) = -0.88440066  rel-to-k_end = 6.32e-09
+    5-point O(s^4)       = -0.88440066  rel-to-k_end = 6.32e-09
+
+  R3_kreg_k20_scaf  (p_det=1.30e-43)
+    k_end=+20.851842  k_mid=+23.897643  (mid-end gap +3.046e+00)
+    s=0.004000  Df=  +26.009106  err_end=+5.157e+00  err_mid=+2.111e+00
+    s=0.002000  Df=  +23.407846  err_end=+2.556e+00  err_mid=-4.898e-01
+    s=0.001000  Df=  +22.126515  err_end=+1.275e+00  err_mid=-1.771e+00  Dc=  +20.854724  errC_end=+2.882e-03
+    s=0.000500  Df=  +21.488489  err_end=+6.366e-01  err_mid=-2.409e+00  Dc=  +20.852532  errC_end=+6.901e-04
+    s=0.000250  Df=  +21.169999  err_end=+3.182e-01  err_mid=-2.728e+00  Dc=  +20.852013  errC_end=+1.706e-04
+    fwd err ratio (2.5e-4 / 5e-4) = 0.500   ctr err ratio = 0.247
+    Richardson(centered) = +20.85183978  rel-to-k_end = 1.22e-07
+    5-point O(s^4)       = +20.85183978  rel-to-k_end = 1.22e-07
+
+  E1_er_p005_scaf  (p_det=8.89e-35)
+    k_end=+4.008474  k_mid=+4.077882  (mid-end gap +6.941e-02)
+    s=0.004000  Df=   +3.983340  err_end=-2.513e-02  err_mid=-9.454e-02
+    s=0.002000  Df=   +3.981443  err_end=-2.703e-02  err_mid=-9.644e-02
+    s=0.001000  Df=   +3.992115  err_end=-1.636e-02  err_mid=-8.577e-02  Dc=   +4.010309  errC_end=+1.835e-03
+    s=0.000500  Df=   +3.999702  err_end=-8.772e-03  err_mid=-7.818e-02  Dc=   +4.008935  errC_end=+4.608e-04
+    s=0.000250  Df=   +4.003956  err_end=-4.518e-03  err_mid=-7.393e-02  Dc=   +4.008589  errC_end=+1.153e-04
+    fwd err ratio (2.5e-4 / 5e-4) = 0.515   ctr err ratio = 0.250
+    Richardson(centered) = +4.00847391  rel-to-k_end = 3.94e-08
+    5-point O(s^4)       = +4.00847391  rel-to-k_end = 3.94e-08
+
+  L1_longrange_k12_scaf  (p_det=1.30e-27)
+    k_end=-0.813266  k_mid=-1.360580  (mid-end gap -5.473e-01)
+    s=0.004000  Df=   -0.811905  err_end=+1.361e-03  err_mid=+5.487e-01
+    s=0.002000  Df=   -0.795229  err_end=+1.804e-02  err_mid=+5.654e-01
+    s=0.001000  Df=   -0.800153  err_end=+1.311e-02  err_mid=+5.604e-01  Dc=   -0.816975  errC_end=-3.709e-03
+    s=0.000500  Df=   -0.805729  err_end=+7.537e-03  err_mid=+5.549e-01  Dc=   -0.814195  errC_end=-9.287e-04
+    s=0.000250  Df=   -0.809259  err_end=+4.008e-03  err_mid=+5.513e-01  Dc=   -0.813499  errC_end=-2.323e-04
+    fwd err ratio (2.5e-4 / 5e-4) = 0.532   ctr err ratio = 0.250
+    Richardson(centered) = -0.81326654  rel-to-k_end = 1.63e-07
+    5-point O(s^4)       = -0.81326654  rel-to-k_end = 1.63e-07
+
+  OF1_uniform_k15_off  (p_det=3.40e+15)
+    k_end=+1.171709  k_mid=+1.159865  (mid-end gap -1.184e-02)
+    s=0.004000  Df=   +1.180261  err_end=+8.552e-03  err_mid=+2.040e-02
+    s=0.002000  Df=   +1.175909  err_end=+4.200e-03  err_mid=+1.604e-02
+    s=0.001000  Df=   +1.173790  err_end=+2.081e-03  err_mid=+1.393e-02  Dc=   +1.171727  errC_end=+1.856e-05
+    s=0.000500  Df=   +1.172745  err_end=+1.036e-03  err_mid=+1.288e-02  Dc=   +1.171713  errC_end=+4.640e-06
+    s=0.000250  Df=   +1.172226  err_end=+5.168e-04  err_mid=+1.236e-02  Dc=   +1.171710  errC_end=+1.160e-06
+    fwd err ratio (2.5e-4 / 5e-4) = 0.499   ctr err ratio = 0.250
+    Richardson(centered) = +1.17170876  rel-to-k_end = 8.27e-12
+    5-point O(s^4)       = +1.17170876  rel-to-k_end = 8.39e-12
+
+  OF6_rotated_grid_off  (p_det=2.51e+12)
+    k_end=+6.261061  k_mid=+5.637698  (mid-end gap -6.234e-01)
+    s=0.004000  Df=   +6.301942  err_end=+4.088e-02  err_mid=+6.642e-01
+    s=0.002000  Df=   +6.283165  err_end=+2.210e-02  err_mid=+6.455e-01
+    s=0.001000  Df=   +6.272516  err_end=+1.146e-02  err_mid=+6.348e-01  Dc=   +6.260670  errC_end=-3.908e-04
+    s=0.000500  Df=   +6.266888  err_end=+5.827e-03  err_mid=+6.292e-01  Dc=   +6.260963  errC_end=-9.771e-05
+    s=0.000250  Df=   +6.263999  err_end=+2.938e-03  err_mid=+6.263e-01  Dc=   +6.261037  errC_end=-2.443e-05
+    fwd err ratio (2.5e-4 / 5e-4) = 0.504   ctr err ratio = 0.250
+    Richardson(centered) = +6.26106096  rel-to-k_end = 5.79e-11
+    5-point O(s^4)       = +6.26106096  rel-to-k_end = 5.79e-11
+
+  OF9_stretched_off  (p_det=9.03e+12)
+    k_end=-0.060489  k_mid=-0.046238  (mid-end gap +1.425e-02)
+    s=0.004000  Df=   -0.054071  err_end=+6.418e-03  err_mid=-7.833e-03
+    s=0.002000  Df=   -0.057292  err_end=+3.197e-03  err_mid=-1.105e-02
+    s=0.001000  Df=   -0.058893  err_end=+1.596e-03  err_mid=-1.266e-02  Dc=   -0.060486  errC_end=+2.788e-06
+    s=0.000500  Df=   -0.059692  err_end=+7.971e-04  err_mid=-1.345e-02  Dc=   -0.060488  errC_end=+6.971e-07
+    s=0.000250  Df=   -0.060091  err_end=+3.984e-04  err_mid=-1.385e-02  Dc=   -0.060489  errC_end=+1.743e-07
+    fwd err ratio (2.5e-4 / 5e-4) = 0.500   ctr err ratio = 0.250
+    Richardson(centered) = -0.06048902  rel-to-k_end = 7.37e-11
+    5-point O(s^4)       = -0.06048902  rel-to-k_end = 7.55e-11
+[PASS] forward finite-difference error is O(s) on all 16 subset families (last-pair ratio in [0.42, 0.60]) :: 0.50 0.50 0.50 0.49 0.50 0.50 0.50 0.50 0.49 0.50 0.50 0.52 0.53 0.50 0.50 0.50
+[PASS] centered finite-difference error is O(s^2) on all 16 (last-pair ratio in [0.22, 0.28]) :: 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25
+[PASS] Richardson limit of response(s) equals the matched derivative kubo_end on all 16 (rel <= 1e-5) :: worst rel=1.63e-07
+[PASS] independent 5-point O(s^4) stencil confirms kubo_end on all 16 (rel <= 1e-5) :: worst rel=1.63e-07
+[PASS] limit discrimination: wherever mid- and endpoint variants differ, the s->0 limit is the MATCHED endpoint variant (Richardson at least 50x closer to k_end than the mid-end gap) :: families with gap>1e-8: 16/16
+
+  Residual-case adjudication (the open-gate note's three sign-miss families):
+[PASS] G2_asym_z: response(s) converges to k_end=+0.0902 (sign +, like response); cached magnitude gap was midpoint-variant offset (+0.216) plus O(s) error, both now quantified :: k_end=+0.0902 k_mid=+0.3064 rich rel=5.8e-10
+[PASS] G2_asym_z nonlinearity exhibit: at the battery scale s=4e-3 the lane response has the OPPOSITE sign of the derivative (strongly nonlinear family), turning correct for s <= 2e-3 :: Df(4e-3)=-0.0591 Df(2e-3)=+0.0159
+[PASS] H1_ring: response(s) converges to k_end=-1.0934 (sign -, like response); landed midpoint value -2.116 overstated the magnitude ~2x :: k_end=-1.0934 k_mid=-2.1164 rich rel=1.3e-08
+[PASS] L1_longrange: response(s) converges to k_end=-0.8133 (sign -, like response) :: k_end=-0.8133 k_mid=-1.3606 rich rel=1.6e-07
+[PASS] R1_kreg_k15 (the landed lane's unexplained sign miss) RESOLVED: the matched derivative is k_end=-0.8844, agreeing in sign with response (-0.853 at 1e-3); the landed +0.307 was the midpoint-variant artifact, not measurement noise :: k_end=-0.8844 k_mid=+0.3069 rich rel=6.3e-09
+
+SECTION 4 - full live panel: correlation and slope versus the matched derivative as s decreases
+----------------------------------------------------------------------------------------------------
+[PASS] end-to-end live reproduction of the cached comparison: r(kubo_true, response(1e-3)) over all 44 rows = 0.9716 :: r=0.9716
+  s= 0.0010: live-39 r(k_end, response)=0.999414  slope=1.023649  sign=39/39  rms-rel=0.0677 (N=39)  [r(k_mid, response)=0.985003]
+  s= 0.0005: live-39 r(k_end, response)=0.999849  slope=1.011817  sign=39/39  rms-rel=0.0338 (N=39)  [r(k_mid, response)=0.982500]
+[PASS] sign agreement on the FULL live panel is 39/39 at BOTH steps versus the matched derivative (no exclusions; the cached comparison's two sign misses are resolved/classified) :: 39/39 at 1e-3, 39/39 at 5e-4
+[PASS] correlation rises toward 1 as s decreases: r(5e-4) > r(1e-3) > cached r=0.9716 :: r(1e-3)=0.999414 r(5e-4)=0.999849
+[PASS] through-origin slope walks to 1 at O(s): |slope(5e-4)-1| <= 0.62*|slope(1e-3)-1| :: |slope-1|: 0.0236 -> 0.0118
+[PASS] rms relative deviation halves with s (O(s) panel-wide): ratio in [0.42, 0.60] :: rms: 0.0677 -> 0.0338 (ratio 0.499)
+[PASS] the midpoint variant does NOT converge: r(k_mid, response) stays below r(k_end, response) at both steps (its deviation is s-independent discretization offset) :: mid 0.9850/0.9825 vs end 0.999414/0.999849
+
+SECTION 5 - the open-gate heuristic characterized against the exact derivative
+----------------------------------------------------------------------------------------------------
+[PASS] live heuristic recompute matches the heuristic lane's frozen log on the 16 subset families (<= 1.5e-6) :: max|dev|=4.82e-07
+  r(heuristic, k_end) over live-39 = 0.5214
+[PASS] heuristic is a coarse approximation of the exact derivative, not the derivative itself (0 < r(heuristic, k_end) < 0.9 on the live panel) :: r=0.5214
+  G2_asym_z_swept: heuristic=-0.9078 response(1e-3)=+0.0531 k_end=+0.0902
+  H1_ring_swept: heuristic=+2.0387 response(1e-3)=-1.1589 k_end=-1.0934
+  L1_longrange_k12_scaf: heuristic=+2.9150 response(1e-3)=-0.8002 k_end=-0.8133
+[PASS] on the three residual cases the heuristic sign is WRONG and the exact derivative sign is RIGHT (the derivative captures the path-phase structure the detector-only reweighting misses)
+
+====================================================================================================
+TOTAL: PASS=34 FAIL=0
+====================================================================================================
+VERDICT: the literal first-order response of the detector centroid to the lane's imposed
+  1/r source field is DERIVED in closed recurrence form and VERIFIED as the s->0 limit of the
+  finite-difference response: the parallel perturbation propagator with the lane's own
+  endpoint-averaged edge field factor g_edge = (1/(r_i+0.1)+1/(r_j+0.1))/2 is the
+  exact derivative d(cz)/ds at s=0 (O(s) forward / O(s^2) centered convergence on all 16 ladder
+  families incl. the three residual cases; Richardson and 5-point O(s^4) cross-checks agree to
+  <= 1e-5 relative; live-panel sign agreement 39/39 at both tested steps; r and slope walk to 1
+  as s decreases). The landed runner's midpoint r_edge variant is the exact derivative of a
+  DIFFERENT (midpoint-sampled) discretization: its per-family offset is s-independent and is the
+  dominant part of the cached magnitude gaps; on R1_kreg_k15 it produced the one real sign miss,
+  now resolved by the matched derivative. The open-gate note's detector-only heuristic is
+  characterized as a coarse approximation (its three residual sign misses are exactly where it
+  drops the path-phase cross terms the derivative keeps). BOUNDARIES: graph-family toy
+  linear-response lane only (NOT the cubic-Coxeter geometric rows); first order in s at s=0;
+  4 detector-dead families and 1 prune-zone family (R2_kreg_k8) are classified out with their
+  free detector probabilities printed; convergence is exhibited on the 16-family ladder subset
+  and the panel statistics on all 39 live families at s in {1e-3, 5e-4}. No audit grade is
+  authored here; the independent audit lane adjudicates all ledger statuses.
+
+----- stderr -----
+

@@ -78,3 +78,9 @@ family rows.
 | Fourth family complex boundary | [`FOURTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md`](FOURTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) | supplies the fourth-family complex boundary diagnosis |
 | Fifth family complex repaired packet | [`FIFTH_FAMILY_COMPLEX_NOTE.md`](FIFTH_FAMILY_COMPLEX_NOTE.md) | supplies the repaired drift-0.20 companion pair |
 | Fifth family complex boundary | [`FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md`](FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) | supplies the fifth-family sampled-row boundary table |
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [grown_transfer_basin_note](GROWN_TRANSFER_BASIN_NOTE.md)

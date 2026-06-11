@@ -1343,11 +1343,10 @@
       "blocked_by_group_ids": [],
       "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
       "deps": [
-        "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "minimal_axioms",
+        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
         "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
-        "minimal_axioms"
+        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",

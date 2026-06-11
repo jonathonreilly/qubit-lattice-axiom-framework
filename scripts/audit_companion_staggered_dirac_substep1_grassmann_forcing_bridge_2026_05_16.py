@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Exact-symbolic audit-companion runner for
 `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-(2026-06-10 science-fix revision: U4 boundary discharged via the Quantum axiom k=1 clause + C1).
+(2026-06-10/11 science-fix revision: former U4 boundary discharged via
+the Quantum axiom plus the retained per-site dim-two theorem).
 
 The note's load-bearing content is the two-candidate collapse on the
 framework's physical per-site Hilbert space:
@@ -14,12 +15,10 @@ framework's physical per-site Hilbert space:
 Given the cited one-hop authorities
 
   - MINIMAL_AXIOMS_2026-06-05 (Quantum axiom, accepted premise node:
-    one qubit per site, read as per-site multiplicity k = 1 in the
-    single-module row's vocabulary; the former U4 packaging row
-    U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20 is
-    graded audited_renaming -- same content, axiom baseline)
-  - STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE narrow
-    bounded note (C1: k = 1 => dim_C H_x = 2; multiplicity enumeration)
+    one qubit per site; the former U4 packaging row is the same
+    axiom-baseline content, not a separate theorem consumed here)
+  - CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02
+    (dim_C H_x = 2 exactly, Pauli realization)
   - CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10
     (Cl(3) faithful complex irrep has dim_C V = 2)
   - SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10
@@ -27,14 +26,15 @@ Given the cited one-hop authorities
 
 the dimensional-match (D1)-(D3), the Berezin readout (D4), and the
 composition / collapse (D5) all reduce to exact-symbolic arithmetic on
-finite-dim complex matrices. The 2026-06-10 revision adds:
+finite-dim complex matrices. The 2026-06-10/11 revision adds:
 
-  Part 8 - (D5) U4 composition certificate: gamma_i -> sigma_i is a
+  Part 8 - (D5) Quantum/dim-two discharge certificate:
+           gamma_i -> sigma_i is a
            real-algebra isomorphism onto M_2(C) (faithful), the action
            on C^2 is irreducible (scalar commutant), single chirality
            (omega -> +i I, k = 1), and the two-candidate surface
            collapses to single-pair (G).
-  Part 9 - (D5) falsification leg: without the axiom k=1 input, the k = 2
+  Part 9 - (D5) falsification leg: without the one-qubit/dim-two input, the k = 2
            module rho_+ (+) rho_+ on C^4 is an admissible faithful
            Cl(3) module on which the single-pair collapse FAILS.
   Part 10 - (B-stat) scope-boundary witness: the hard-core-boson frame
@@ -44,7 +44,8 @@ finite-dim complex matrices. The 2026-06-10 revision adds:
 
 Companion role: not a new claim row; provides audit-friendly evidence
 that the note's load-bearing algebraic content holds at exact symbolic
-precision, that the consumed axiom k=1 input is load-bearing
+precision, that the consumed one-qubit/dim-two input is load-bearing
+precision, that the consumed one-qubit/dim-two input is load-bearing
 (falsification leg), and that the declared scope boundary is visible
 in the verified stdout.
 """
@@ -129,7 +130,7 @@ def main() -> int:
     print("Audit companion (exact-symbolic) for")
     print("STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16")
     print("Goal: sympy verification of (D1)-(D4) Grassmann-vs-bosonic dichotomy,")
-    print("      the (D5) U4-composition collapse certificate + falsification leg,")
+    print("      the (D5) Quantum/dim-two collapse certificate + falsification leg,")
     print("      and the (B-stat) declared scope-boundary witness")
     print("=" * 88)
 
@@ -350,11 +351,11 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 8: (D5) U4 composition certificate (Quantum axiom k=1 composed with C1)")
+    section("Part 8: (D5) Quantum/dim-two discharge certificate")
     # =========================================================================
-    # The Quantum axiom supplies k = 1 (one qubit per site); composed with
-    # (C1) of the retained_bounded single-module row this delivers: H_x = C^2
-    # is the single faithful complex irreducible Cl(3,0) ~= M_2(C) module.
+    # The Quantum axiom supplies one qubit per site and the retained dim-two
+    # row supplies dim_C H_x = 2 with Pauli realization. This is the
+    # single faithful complex irreducible Cl(3,0) ~= M_2(C) module.
     # The interface facts (complex-linear, faithful, irreducible, single
     # chirality) are re-verified here at exact symbolic precision, then
     # composed with (D1)-(D3) into the collapse certificate.
@@ -422,7 +423,7 @@ def main() -> int:
     dim_Hx = cl3_carrier_dim
     k_multiplicity = dim_Hx // 2
     check(
-        "(D5) dim_C H_x = 2 = 2k with k = 1 (Quantum-axiom k=1 composed with C1)",
+        "(D5) dim_C H_x = 2 = 2k with k = 1 (Quantum axiom plus retained dim-two row)",
         dim_Hx == 2 and k_multiplicity == 1,
         detail=f"dim_C H_x = {dim_Hx}, k = {k_multiplicity}",
     )
@@ -445,19 +446,19 @@ def main() -> int:
     )
     print(
         "  COLLAPSE CERTIFICATE: on the physical per-site Hilbert space"
-        " (Quantum-axiom k=1 composed with C1, dim_C H_x = 2), the two-candidate"
+        " (Quantum axiom plus retained dim-two row, dim_C H_x = 2), the two-candidate"
         " surface {G, B} collapses to the single-pair Grassmann candidate (G)."
     )
 
     # =========================================================================
-    section("Part 9: (D5) falsification leg — collapse fails without the axiom k=1 input")
+    section("Part 9: (D5) falsification leg — collapse fails without the one-qubit/dim-two input")
     # =========================================================================
-    # Without the axiom's k=1 input, the abstract algebraic surface
+    # Without the one-qubit/dim-two input, the abstract algebraic surface
     # admits faithful Cl(3) modules at every k >= 1. Exhibit k = 2:
     # rho_+ (+) rho_+ on C^4 satisfies the Clifford relations, is faithful,
     # and has dim_C = 4 — on it the single-pair Grassmann match FAILS while
     # a two-pair Grassmann module matches instead. Hence the consumed
-    # retained authority is load-bearing for (D5).
+    # one-qubit/dim-two input is load-bearing for (D5).
 
     def blkdiag2(A: Matrix, B: Matrix) -> Matrix:
         M = zeros(A.shape[0] + B.shape[0], A.shape[1] + B.shape[1])
@@ -497,7 +498,7 @@ def main() -> int:
     )
     dim_k2 = G4[0].shape[0]
     check(
-        "(falsif) k = 2 module has dim_C = 4 != 2: admissible without the axiom k=1 input",
+        "(falsif) k = 2 module has dim_C = 4 != 2: admissible without the one-qubit/dim-two input",
         dim_k2 == 4 and dim_k2 != dim_Hx,
         detail=f"dim_C = {dim_k2}",
     )
@@ -505,7 +506,7 @@ def main() -> int:
         "(falsif) on the k = 2 module, single-pair (G) match fails (2 != 4)"
         " while a two-pair Grassmann module matches (2^2 = 4)",
         single_pair_dim != dim_k2 and 2**2 == dim_k2,
-        detail="without k = 1 the single-pair collapse is NOT forced",
+        detail="without the one-qubit/dim-two input the single-pair collapse is NOT forced",
     )
 
     # =========================================================================
@@ -561,9 +562,9 @@ def main() -> int:
     print("    (D4) Z_F[M] = det(M) at N = 1, 2, 3, 4 (cited upstream Berezin identity)")
     print("    (D4) Grassmann/bosonic single-mode traces structurally distinct")
     print("    Counterfactual: dropping nilpotency loses the dim-2 readout")
-    print("    (D5) U4 composition certificate: Cl(3,0) ~= M_2(C) faithful iso,")
+    print("    (D5) Quantum/dim-two discharge certificate: Cl(3,0) ~= M_2(C) faithful iso,")
     print("         irreducible on C^2, single chirality, k = 1 => collapse to (G)")
-    print("    (D5) Falsification leg: k = 2 module defeats the collapse without the axiom k=1 input")
+    print("    (D5) Falsification leg: k = 2 module defeats the collapse without the one-qubit/dim-two input")
     print("    (B-stat) Scope boundary: hard-core-boson frame ties on dimension;")
     print("         statistics selection declared open, not claimed")
 

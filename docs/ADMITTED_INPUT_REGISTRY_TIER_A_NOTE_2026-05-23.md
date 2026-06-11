@@ -61,11 +61,16 @@ Notes:
   determinant characters are phase-free
   (`theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10`,
   a standalone lemma with no AC_φλ gate dependency)
-  composed with the determinant-readout bridge (the bridge showing the
-  physical `arg det(M_u M_d)` datum is exhausted by the determinant-class
-  registrable readout). Retirement gates: independent audits of the two
-  2026-06-09 notes, a retained-grade determinant-readout bridge, and owner
-  approval recorded per `docs/audit/AXIOM_MINIMALITY_POLICY.md` precedent.
+  composed with the determinant-readout bridge
+  (`registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`,
+  PR #3513: any Record-registrable scalar — finitely additive over disjoint
+  records and constant on `K`/CPT orbits — is phase-free, so the
+  `arg det(M_u M_d)` phase datum is exhausted on the registrable surface;
+  the standing modeling premise that the physical readout context is
+  Record-supplied remains named there). Retirement gates: independent audits
+  of the P1/P2 basis notes (cross-plane, theta-P2 lemma, registrability
+  theorem), and owner approval recorded per
+  `docs/audit/AXIOM_MINIMALITY_POLICY.md` precedent.
   The prior no-go portfolio
   (`strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`)
   is preserved in the machine registry's `retired_derivation_targets` entry;

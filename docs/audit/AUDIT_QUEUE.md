@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | unaudited | critical | 1292 | 24.34 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py` |
+| 1 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | critical | 1292 | 24.34 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py` |
 | 2 | `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | audit_in_progress | critical | 1252 | 15.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_spatial_cubic_time_anisotropy_gate_2026_06_06.py` |
 | 3 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 1248 | 19.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_single_clock_stone_finite_dim_exact_2026_05_10.py` |
 | 4 | `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | audit_in_progress | critical | 1247 | 13.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_single_clock_uniqueness_scope_boundary_2026_06_06.py` |

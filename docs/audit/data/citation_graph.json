@@ -49638,7 +49638,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
+      "to": "yt_ward_identity_derivation_theorem"
     },
     {
       "from": "repo.front_door_status",
@@ -95200,7 +95200,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
+        "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
         "higgs_mass_from_axiom_note",
         "pmns_twisted_flux_transfer_holonomy_boundary_note",
@@ -95210,7 +95210,7 @@
         "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "12d28edede51fceaa47fa6d12bfa8463ce861d3473a32078a75e1c4eb3983e2d",
+      "note_hash": "df7d3a1c69153539f51b65051773ef84b859a8fcdf6dcb0f52d04d5fe0343a38",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

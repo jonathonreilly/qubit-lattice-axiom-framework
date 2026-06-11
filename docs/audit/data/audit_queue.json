@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 283,
+    "critical": 282,
     "high": 291,
     "leaf": 428,
     "medium": 425
@@ -10,29 +10,32 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "pmns_twisted_flux_transfer_holonomy_boundary_note",
-      "claim_scope": "The abstract 3-cycle flux-transfer kernel has exact trace/holonomy recovery of xbar, ybar, and phi, while a single holonomy probe does not uniquely select the 3-real reduced oriented-cycle family.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "pmns_three_flux_holonomy_closure_note",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "staggered_dirac_realization_gate_note_2026-05-03"
+        "pmns_twisted_flux_transfer_holonomy_boundary_note",
+        "pmns_oriented_cycle_channel_value_law_note",
+        "pmns_graph_first_cycle_frame_support_note"
       ],
-      "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
       "helper_runner_paths": [
+        "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 10.517,
-      "note_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 10.011,
+      "note_path": "docs/PMNS_THREE_FLUX_HOLONOMY_CLOSURE_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
-      "transitive_descendants": 517
+      "runner_path": "scripts/frontier_pmns_three_flux_holonomy_closure.py",
+      "transitive_descendants": 515
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4081,35 +4084,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_current_bank_value_selection_nogo.py",
-      "transitive_descendants": 515
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "pmns_three_flux_holonomy_closure_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "pmns_twisted_flux_transfer_holonomy_boundary_note",
-        "pmns_oriented_cycle_channel_value_law_note",
-        "pmns_graph_first_cycle_frame_support_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
-        "scripts/pmns_lower_level_utils.py"
-      ],
-      "load_bearing_score": 10.011,
-      "note_path": "docs/PMNS_THREE_FLUX_HOLONOMY_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_pmns_three_flux_holonomy_closure.py",
       "transitive_descendants": 515
     },
     {
@@ -42976,5 +42950,5 @@
     }
   ],
   "ready_count": 40,
-  "total_pending": 1427
+  "total_pending": 1426
 }

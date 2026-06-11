@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 836 |
+| **retained_bounded** | 837 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1423 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1280 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1281 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
@@ -135,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -992,6 +990,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `poisson_3d_self_field_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -14150,6 +14149,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The displayed standard-parametrization identities and substitutions are algebraically consistent, including the endpoint exclusion. The residual conditions are scoped hypotheses of the bounded theorem, not conclusions audited as framework-derived inputs.
 - **rationale:** The load-bearing step is a direct algebraic substitution from the stated residual assumptions and standard PMNS parametrization. The runner performs explicit Fraction and floating-point checks of the normalization, mu-tau ratio, TM2 substitution, phase divisor, and degenerate endpoint, with no helper imports, external comparators, or fitted inputs. The clean verdict applies only to the conditional algebraic consequence and does not audit any upstream derivation of the residual assumptions.
 - **auditor confidence:** high
+
+### `pmns_twisted_flux_transfer_holonomy_boundary_note`
+
+- **Note:** [`PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md`](../../docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite cyclic-frame algebra: the fluxed transfer moments recover (xbar,ybar,phi), and a single one-angle holonomy functional on the 3-real reduced oriented-cycle carrier leaves a 2-real kernel; PMNS carrier naming remains bounded through the registered Tier-A admission.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-232419-49cb920a4c-pmns_twisted_flux_transfer_h`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** From C^3 = I and tr(C) = tr(C^2) = 0, tr(T)/3 = xbar and tr(C^2 T)/3 = ybar e^{i phi}, while the one-angle reduced-family probe h(u,v,w)=2cos(phi)u+2sin(phi)v+w has a 2-real kernel.  _(class `A`)_
+- **chain closes:** True — The trace identities follow directly from cyclic-matrix trace orthogonality, and the reduced probe is a nonzero rank-one real linear functional on a 3-real-dimensional carrier. The only non-algebraic PMNS naming input is explicitly routed as a bounded Tier-A carrier admission, so the closure is bounded, not unbounded.
+- **rationale:** The runner source performs finite 3x3 matrix algebra with no external comparator, fitted input, or PMNS target-coordinate import; the hard-coded sample values are test points, not calibrated premises. An independent trace and rank check confirms the displayed factors and signs, including the 2-real kernel of the one-angle probe. The claim does not assert full PMNS value selection or phenomenology, and its carrier-name dependency is bounded through the Tier-A route rather than closed as an unbounded theorem.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+- **auditor confidence:** medium
 
 ### `pmns_uniform_scalar_deformation_boundary_note`
 

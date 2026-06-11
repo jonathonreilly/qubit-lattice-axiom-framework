@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1434 |
+| unaudited | 1433 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 21 |
+| ~~audited_conditional~~ | 22 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1260 |
-| `audited_conditional` | 21 |
+| `audited_conditional` | 22 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1750 |
+| `unaudited` | 1749 |
 
 | claim_type | count |
 |---|---:|
@@ -1395,6 +1395,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2240,6 +2241,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Because the finite anti-Hermitian staggered Dirac matrix anticommutes with epsilon, D^dag D commutes with epsilon and D bijects the positive-eigenvalue epsilon=+ and epsilon=- subspaces, so Tr(epsilon exp(-t D^dag D)) equals n_+ - n_- and is t-independent/integer-valued.  _(class `A`)_
 - **chain closes:** True — The core identity closes by finite-dimensional linear algebra: even periodicity makes epsilon flip on every nearest-neighbor hop, anti-Hermiticity gives a normal D, and D pairs all nonzero D^dag D eigenspaces across epsilon signs. The gauge-invariance and explicit-background checks are direct finite matrix/U(1) computations in the supplied runner source.
 - **rationale:** The cited minimal-axiom authority is explicitly flagged as an accepted axiom premise, and the retained cited authorities are not used for any open SME/anomaly identification. The runner source actually constructs the finite matrices, U(1) links, heat kernels, spectra, plaquettes, and Polyakov loops; it does not hard-code the contested trace values or compare to an external calibrated source. The source note is correctly narrowed to bounded finite trace support, with observed index zero and no claimed ABJ/cohomology/continuum bridge.
+- **auditor confidence:** high
+
+### `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`
+
+- **Note:** [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Lattice equal-time tensor-factor locality, finite-range support-family LR lightcones, and free (`U=1`) exact-log bilinear quasilocal LR lightcones; continuum microcausality only as the stated same-sector scaling implication, excluding gauged/interacting exact-log locality and full Wightman microcausality.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-123210-843cea0fd4-axiom_first_microcausality_l`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The source imports the retained finite-range bridge velocity `v_LR = 2 e q W R` and the retained free-bilinear quasilocal LR bound `||[alpha_t(O_x),O_y]|| <= 2||O_x||||O_y|| exp(-mu d_1(x,y)+4W_mu|t|)`, then takes the stated same-sector scaling limit for M3.  _(class `A`)_
+- **chain closes:** False — M1 and the headline M2 bounds are supported by the accepted minimal axiom premise plus retained-bounded bridge inputs, and M3 is only a conditional scaling implication. The artifact is not clean as written because its displayed action-density/J-budget paragraph still asserts the stale plaquette normalization `2β/N_c` and `J_max=|m|+30`, contradicting the one-hop retained finite-range bridge repair (`2β`, `|m|+78` on the supplied surface, with carrier/envelope variants).
+- **rationale:** The current retained bridge authorities close the finite-range overlap-weight LR constant and the free exact-log quasilocal LR composition, and the primary/helper runner sources contain substantive finite-matrix, kernel, weighted-overlap, and falsification checks rather than a bare PASS printout. However, the strict formula inventory exposes an internal source-authority drift: the source note preserves the old `2β/N_c` plaquette budget and `|m|+30` canonical `J_max`, while the cited repaired bridge explicitly supersedes that arithmetic with `2β` and `|m|+78`/`78.5`/`80` plus overlap weights `|m|+296`/`298`/`300`. Because that wrong displayed quantitative support formula remains in the audited note, the row cannot be audited clean as written, even though the bounded M1/M2 surface is recoverable from the cited bridges.
 - **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_theorem_note_2026-04-29`

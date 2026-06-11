@@ -48922,7 +48922,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10"
+      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
     },
     {
       "from": "repo.front_door_status",
@@ -94064,7 +94064,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
+        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "alpha_s_derived_note",
         "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
@@ -94074,7 +94074,7 @@
         "pmns_twisted_flux_transfer_holonomy_boundary_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7866dfc03c255ecfe277cebcc58f19ef04ce095c88df9910c9dfec55b3dbd011",
+      "note_hash": "ade7be0a0a1ca3790951a6894c5e02a47a7d1fa62289f27d3cf9889a3c174198",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

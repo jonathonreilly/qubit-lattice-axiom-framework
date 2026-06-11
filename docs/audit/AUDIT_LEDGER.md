@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1425 |
+| unaudited | 1424 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 29 |
+| ~~audited_conditional~~ | 30 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,21 +62,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1261 |
-| `audited_conditional` | 29 |
+| `audited_conditional` | 30 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1741 |
+| `unaudited` | 1740 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1529 |
+| `bounded_theorem` | 1530 |
 | `decoration` | 54 |
 | `meta` | 324 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 775 |
+| `positive_theorem` | 774 |
 
 | criticality | count |
 |---|---:|
@@ -125,7 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 704 | 31.46 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 831 | 31.20 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 317 | 30.81 | `unaudited` | unaudited |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 171 | 30.43 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 180 | 30.50 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1408,6 +1408,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `hierarchy_dimensional_compression_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8986,6 +8987,22 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **open / conditional deps cited:**
   - `HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
   - `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`
+- **auditor confidence:** high
+
+### `hierarchy_dimensional_compression_note`
+
+- **Note:** [`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded intra-framework arithmetic: computation of the staggered condensate-density ratio, application of the admitted D=4 exponent, numerical separation from the D=16 alternative, and the D=4-specific identity 1/D = 4/2^D.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-134302-acbcf3a4f0-hierarchy_dimensional_compre`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the computed condensate-density ratio R, the admitted D=4 per-determinant readout applies the exponent 1/D = 1/4, producing R^(-1/4), while the naive D=16 alternative gives R^(-1/16).  _(class `A`)_
+- **chain closes:** False — The arithmetic from R to R^(-1/4), R^(-1/16), and the D=4 identity checks closes. The full chain does not close because the per-determinant readout and N_taste = 2^D realization are inherited admissions/open or unaudited upstream authorities in the restricted packet.
+- **rationale:** The runner source genuinely computes the condensate densities by building and inverting the displayed staggered Dirac matrices, and the load-bearing PASS gates are algebraic checks rather than observation-comparator gates. The displayed numerical identities check independently: R^(-1/4) ≈ 0.96468, R^(-1/16) ≈ 0.99105, their ratio differs from unity by about 2.66%, and 1/D = 4/2^D holds only at D=4 among the tested D values. However, the D=4 exponent is explicitly inherited from a heat-kernel/per-determinant readout admission, and the supplied staggered-Dirac authority is marked unaudited, so retained-grade closure does not propagate through this packet. There is also minor source-runner drift: the note says the expected scorecard is 4 pass, while the runner emits 5 pass.
+- **open / conditional deps cited:**
+  - `HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md`
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`

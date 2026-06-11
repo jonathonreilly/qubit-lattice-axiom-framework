@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1434 |
+| Applied audit verdicts | 1435 |
 | Retained-grade rows, including boxed decorations | 1302 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 831 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1436 |
+| Unaudited rows | 1435 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 33 |
+| Audited conditional rows | 34 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1439 |
-| Ready rows | 35 |
+| Total pending rows | 1438 |
+| Ready rows | 34 |
 | Cycle-break targets | 0 |
-| Critical pending | 295 |
+| Critical pending | 294 |
 | High pending | 291 |
 | Medium pending | 425 |
 | Leaf pending | 428 |
 
 Next ready rows by queue order:
 
-- [`staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`](../../docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) - critical; unaudited
 - [`axiom_first_lattice_noether_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 - [`staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; unaudited
 - [`axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; unaudited
 - [`yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`](../../docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
+- [`higgs_mass_from_axiom_note`](../../docs/HIGGS_MASS_FROM_AXIOM_NOTE.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

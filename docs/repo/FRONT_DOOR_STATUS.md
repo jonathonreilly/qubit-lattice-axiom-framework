@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1431 |
+| Applied audit verdicts | 1432 |
 | Retained-grade rows, including boxed decorations | 1292 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 822 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1412 |
+| Unaudited rows | 1411 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 36 |
+| Audited conditional rows | 37 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1414 |
-| Ready rows | 28 |
+| Total pending rows | 1413 |
+| Ready rows | 27 |
 | Cycle-break targets | 0 |
 | Critical pending | 282 |
 | High pending | 281 |
 | Medium pending | 412 |
-| Leaf pending | 439 |
+| Leaf pending | 438 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md) - medium; unaudited
 - [`fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09`](../../docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md) - medium; unaudited
 - [`taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02`](../../docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`dimension_upper_bound_dependency_edge_repair_note_2026-06-08`](../../docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md) - medium; unaudited
 - [`alpha_s_derived_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`spin_statistics_fs_admission_located_exercise_note_2026-06-06`](../../docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md) - medium; unaudited
-- [`dimension_upper_bound_dependency_edge_repair_note_2026-06-08`](../../docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md) - leaf; unaudited
+- [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3298 |
 | Critical nodes | 509 |
 | High nodes | 501 |
-| Medium nodes | 886 |
-| Leaf nodes | 1402 |
+| Medium nodes | 887 |
+| Leaf nodes | 1401 |
 
 Top load-bearing rows by graph score:
 

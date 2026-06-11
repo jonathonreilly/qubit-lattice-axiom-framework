@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 832 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1433 |
+| Unaudited rows | 1432 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 35 |
 | Audited renaming rows | 34 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
+- [`axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) - critical; audit_in_progress
 - [`staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; unaudited
 - [`yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`](../../docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; unaudited

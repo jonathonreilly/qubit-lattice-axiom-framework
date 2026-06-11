@@ -15,14 +15,14 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | unaudited | critical | 993 | 20.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_microcausality_check.py` |
+| 1 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | audit_in_progress | critical | 993 | 20.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_microcausality_check.py` |
 | 2 | `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 993 | 12.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py` |
 | 3 | `alpha_s_derived_note` | bounded_theorem | unaudited | critical | 880 | 38.78 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_alpha_s_derived_bounded_chain.py` |
 | 4 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | unaudited | critical | 794 | 11.13 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py` |
 | 5 | `cl3_taste_generation_theorem` | bounded_theorem | unaudited | critical | 743 | 21.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/verify_cl3_sm_embedding.py` |
 | 6 | `higgs_mass_from_axiom_note` | bounded_theorem | unaudited | critical | 660 | 25.87 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/higgs_tree_level_mean_field_runner_2026_05_03.py` |
 | 7 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | unaudited | critical | 517 | 10.52 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py` |
-| 8 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | unaudited | critical | 368 | 11.03 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cpt_check.py` |
+| 8 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | unaudited | critical | 369 | 11.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cpt_check.py` |
 | 9 | `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | unaudited | critical | 283 | 11.65 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_full_lattice_schur_inheritance.py` |
 | 10 | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | unaudited | critical | 277 | 8.62 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py` |
 | 11 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | unaudited | critical | 253 | 10.99 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py` |

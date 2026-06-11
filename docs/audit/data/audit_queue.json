@@ -10,15 +10,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-      "claim_scope": null,
+      "claim_scope": "Equal-time tensor-factor locality, finite-velocity LR bounds for the finite-range support-family carrier and the free U=1 bilinear exact-log quasilocal carrier, plus only the stated sector-conditional continuum scaling corollary; gauged/interacting exact-log locality and full Wightman microcausality are excluded.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "axiom_first_spectrum_condition_theorem_note_2026-04-29",
@@ -31,14 +31,14 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 21,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
         "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py"
       ],
       "load_bearing_score": 20.457,
       "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/axiom_first_microcausality_check.py",
       "transitive_descendants": 993
@@ -225,15 +225,15 @@
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
         "assumption_derivation_ledger"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.027,
+      "load_bearing_score": 11.531,
       "note_path": "docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/axiom_first_cpt_check.py",
-      "transitive_descendants": 368
+      "transitive_descendants": 369
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

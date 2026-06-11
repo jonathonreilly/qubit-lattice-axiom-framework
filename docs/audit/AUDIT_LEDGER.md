@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 829 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 39 |
-| unaudited | 1392 |
+| unaudited | 1391 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1276 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1708 |
+| `unaudited` | 1707 |
 
 | claim_type | count |
 |---|---:|
@@ -1431,6 +1431,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_minimal_scale_free_selector_note_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_lane_demarcation_note_2026-05-30` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10588,6 +10589,24 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The conjugation map on the b-plane flips complex orientation but preserves the metric, so the per-block rank count dim(R^2)/2 = 1 is orientation-blind, while the B-coupling to B-field bridge remains open.  _(class `A`)_
 - **chain closes:** True — Within the stated local objects, the identities close by direct finite-dimensional algebra. The downstream identification of the circulant coefficient b with a first-order Kähler-Dirac B-field amplitude is explicitly left open and is not part of the audited direct claim.
 - **rationale:** The runner source performs actual finite-dimensional matrix and symbolic algebra checks rather than merely printing constants, and the displayed formulas independently reduce correctly: cJc^{-1}=-J, c^Tgc=g, c^T omega c=-omega, trace(H)=3a, trace(H^2)=3a^2+6|b|^2, and Q=(1+2r)/3. The cooling jump orthogonality and zero Lambda^1 to Lambda^1 Kähler-Dirac block are also direct algebraic facts in the finite model. The note does not claim the missing B-coupling to B-field bridge or a Koide derivation, so the bounded local-support claim closes on its own terms.
+- **auditor confidence:** high
+
+### `koide_p1_collapses_frame_residuals_note_2026-06-01`
+
+- **Note:** [`KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded residual-localization claim: CCR/free-boson exclusion and hard-core-boson blindness are checked, while the CAR-over-hard-core collapse and scalar-admission/no-faithfulness conclusion remain conditional on separate retained spin-statistics/OS/free-scalar bridges.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-152812-e64eeaf268-koide_p1_collapses_frame_res`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the faithful spin-1/2 Weyl representation, Bose-quantizing the negative-energy mode is unbounded below while CAR is bounded, so statistics conditionally collapses into faithfulness; but the hard-core boson survives retained inputs and the scalar J=K=0 is admitted, so faithfulness is not forced.  _(class `A`)_
+- **chain closes:** False — The packet verifies the finite algebraic examples and correctly preserves the hard-core residual, but it does not supply a retained theorem selecting CAR over the hard-core boson. It also imports the free scalar's full microcausality/reflection-positivity admissibility without a retained scalar free-field bridge in the restricted packet.
+- **rationale:** The runner source performs real finite checks for the negative-energy Bose unboundedness, CAR boundedness, CCR trace obstruction, hard-core-boson evasion, a simple scalar RP kernel PSD check, and the two-site JW/hard-core spectrum match. Those checks support the bounded bookkeeping, but they do not close the physics bridge from positive energy/microcausality/RP to CAR over hard-core bosons. The provided re-scoped spin-statistics authority itself excludes only the CCR/free-boson branch and explicitly leaves the hard-core-vs-CAR selection out of scope, so the claimed collapse is conditional rather than retained-load-bearing.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`
+  - `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`
+  - `free_field_os_wightman_reconstruction`
+  - `free_sector_spin_statistics_level1`
 - **auditor confidence:** high
 
 ### `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 282,
     "high": 281,
-    "leaf": 420,
+    "leaf": 419,
     "medium": 411
   },
   "cycle_break_target_count": 0,
@@ -17001,36 +17001,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_p1_collapses_frame_residuals_note_2026-06-01",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-        "free_dirac_poincare_representation_bounded_note_2026-05-30",
-        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-        "axiom_first_spin_statistics_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_p1_collapses_frame_residuals.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17133,6 +17103,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py",
       "transitive_descendants": 16
     },
     {
@@ -29743,30 +29737,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -42054,6 +42024,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 11,
-  "total_pending": 1394
+  "ready_count": 10,
+  "total_pending": 1393
 }

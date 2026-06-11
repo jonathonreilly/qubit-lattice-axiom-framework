@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py
+runner_sha256: c2dcad0620509b90c3f15192510e6a5de121511c87f309ae5e12bc164a98c9f3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+========================================================================================
+SHARED-CORE REGISTRABILITY THEOREM: additive-over-sectors + K/CPT-even => phase-free
+========================================================================================
+
+----------------------------------------------------------------------------------------
+T1 - orthogonal central idempotents define pairwise-disjoint record labels
+----------------------------------------------------------------------------------------
+  [PASS] e_j e_k = 0 (j != k): orthogonality = disjointness
+  [PASS] e_j^2 = e_j: idempotents (genuine sectors)
+  [PASS] sum_j e_j = I: the finite central-sector decomposition
+
+----------------------------------------------------------------------------------------
+T2 - finite additivity over disjoint sectors => SUM of per-sector contributions
+----------------------------------------------------------------------------------------
+  [PASS] interference term c is forced to 0 by finite additivity over a disjoint pair -- solve I(e1 u e2)=I(e1)+I(e2) for c -> [0]
+  [PASS] registrable readout on the full decomposition = sum_j I(sector_j), no interference -- iterating additivity over the disjoint central family
+
+----------------------------------------------------------------------------------------
+T3 - determinant phase = SUM of per-sector phases (additive class)
+----------------------------------------------------------------------------------------
+  [PASS] arg det(diag z) = sum_j arg(z_j)  (mod 2pi) -- residual mod 2pi = 0.00e+00
+
+----------------------------------------------------------------------------------------
+T4 - an additive R-valued functional is ODD (no regularity needed)
+----------------------------------------------------------------------------------------
+  [PASS] additivity at 0 => g(0) = 0 -- solve g(0)=2 g(0) -> [0]
+  [PASS] additivity => g(-x) = -g(x) (ODD), no continuity assumed -- g(x)+g(-x)=g(0)=0
+
+----------------------------------------------------------------------------------------
+T5 - K/CPT-even INTERSECT additive => phase functional is ZERO
+----------------------------------------------------------------------------------------
+  [PASS] even (g(-t)=g(t)) AND odd (g(-t)=-g(t)) => g(t) = 0 -- solve gt = -gt -> [0]
+  [PASS] => the per-sector PHASE contribution of any registrable readout vanishes -- determinant phase character k = 0 DERIVED, not assumed
+
+----------------------------------------------------------------------------------------
+T6 - HOSTILE GUARD: cos(arg z) is K-even but NOT additive (excluded by additivity)
+----------------------------------------------------------------------------------------
+  [PASS] cos(arg z) is K/CPT-even: cos(-theta) - cos(theta) = 0
+  [PASS] cos(arg z) is NOT sector-additive: cos(a1+a2) - (cos a1 + cos a2) != 0 -- gap = -cos(a1) - cos(a2) + cos(a1 + a2)
+  [PASS] cos additivity fails on 6/6 random phase pairs (excluded by ADDITIVITY, not evenness) -- 6/6 fail
+
+----------------------------------------------------------------------------------------
+T7 - surviving registrable det-class datum is modulus-type (k = 0)
+----------------------------------------------------------------------------------------
+  [PASS] log|z| additive: log(r1 r2) - (log r1 + log r2) = 0
+  [PASS] log|z| K-even: log|conj z| - log|z| = 0
+  [PASS] => determinant-class phase index is k=0; modulus/log-modulus data survives -- multiplicative phase character k=0 is EXHAUSTIVE on the registrable surface
+
+----------------------------------------------------------------------------------------
+T8 - strong-CP application: arg det(M_u M_d) registrable content is zero
+----------------------------------------------------------------------------------------
+  [PASS] arg det(M_u M_d) = arg det M_u + arg det M_d (additive, mod 2pi) -- residual mod 2pi = -4.44e-16
+  [PASS] => by T5 the registrable arg det(M_u M_d) = 0 (phase exhausted on registrable surface) -- discharges the mass-orientation PHASE content within the registrable readout
+
+----------------------------------------------------------------------------------------
+T9 - AC_phi_lambda application: conj(H)=H(-delta); symmetric=even, sin-line=odd
+----------------------------------------------------------------------------------------
+  [PASS] H(delta) Hermitian
+  [PASS] conj(H(delta)) = H(-delta): delta->-delta IS the K/CPT conjugation
+  [PASS] e1 even in delta -- e1 = 3*a
+  [PASS] e2 even in delta -- e2 = -3*B**2 + 3*a**2
+  [PASS] e3 even in delta (e3 ~ cos 3delta) -- e3 = 2*B**3*cos(3*delta) - 3*B**2*a + a**3
+  [PASS] e3 = a^3 - 3 a B^2 + 2 B^3 cos(3 delta) exactly
+  [PASS] orientation-odd line sin(3 delta) is K-ODD (flips under delta->-delta)
+  [PASS] => registrable species surface = symmetric functions (unordered multiset); sign of delta unregistrable; admission -> |delta| atom
+
+----------------------------------------------------------------------------------------
+T10 - boundary witnesses (what the theorem does NOT close)
+----------------------------------------------------------------------------------------
+  [PASS] R2 / PL-ABSS global bridge is OFF this layer (manifold topology, not Record) -- Cl(3)/Z^3 -> PL S^3 x R needs Perelman/Moise/van Kampen; external-math LIVE
+  [PASS] |delta| MAGNITUDE (2/9) still needs R-eta readout id + R2 (NOT supplied here) -- this theorem removes the SIGN as extra content, not the magnitude
+  [PASS] strong-CP premise 1 ('no bare theta slot') is a SEPARATE surviving premise -- RP-no-go'd distinctly; this bridge addresses ONLY mass-orientation phase
+  [PASS] standing modeling premise unchanged: physical readout satisfies Record constraints -- theorem removes phase freedom WITHIN that constrained class
+
+========================================================================================
+SCORECARD: PASS=30 FAIL=0
+========================================================================================
+
+----- stderr -----
+

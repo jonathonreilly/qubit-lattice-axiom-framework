@@ -1,0 +1,106 @@
+loop_slug: registrability-bridges-20260610
+mode: campaign
+runtime_budget: 8h
+target_status: best-honest-status
+created_utc: 2026-06-11T00:04:22Z
+worktree: /private/tmp/cl3-registrability-bridges-20260610
+base: origin/main@40ad65b19
+
+current_goal: >
+  Close or honestly bound the two registrability bridges gating the two Tier-A
+  admission retirements: (a) strong-CP determinant-readout bridge; (b)
+  AC_phi_lambda unordered-multiset / PL-ABSS equivariant global bridge.
+
+cycle_count: 1
+block_count: 1
+active_route: R-1 (shared-core registrability theorem) -> closes (a)+(b-i); bounds (b-ii)
+
+hard_residual_being_attacked: >
+  Whether the determinant-character (multiplicative phase) class is EXHAUSTIVE
+  for the registrable mass-surface readout from the Record boundary alone,
+  threading the hostile guard (K-evenness alone != phase erasure).
+
+core_finding: >
+  In a supplied readout context, Record constrains scalar readouts by finite
+  additivity over disjoint record collections AND realized-outcome = K/CPT orbit
+  (=> K-even). A Record-registrable scalar is therefore additive-over-sectors AND K-even. Additivity
+  alone forces the per-sector phase functional to be ODD (g(-x)=-g(x), no
+  regularity needed); K-evenness then forces it to ZERO. Hence the determinant
+  PHASE is not registrable content; only modulus-type (k=0) survives. Hostile
+  guard threaded: cos(arg z) is K-even but NOT additive, excluded by the
+  additivity premise not the evenness premise. Same theorem makes delta->-delta
+  (the K/CPT conjugation on the AC_phi_lambda circulant) unregistrable, reducing
+  the species surface to the unordered multiset = magnitude-only atom |delta|.
+
+claim_state_movement:
+  blocker_a_strong_cp_det_readout:
+    before: "positive-real mass orientation is an explicit condition; det-class exhaustiveness UNPROVEN"
+    after: "det-phase exhausted within the Record-registrable surface (additive+even=>phase-free); mass-orientation PHASE content discharged on the registrable surface"
+    residual: "premise 1 (no bare theta slot) is a SEPARATE surviving action-surface premise (RP-no-go'd, distinct); standing premise that the physical readout context satisfies Record registrability constraints remains the modeling identification"
+    status: bounded_theorem (proposed); direct_blocker_closure of the quoted det-readout-exhaustiveness ask
+  blocker_b_acphilambda:
+    b_i_unordered_multiset_registrability:
+      after: "CLOSED by the shared-core theorem: delta->-delta is K/CPT conj, odd part unregistrable; registrable surface = symmetric functions (unordered multiset); AC_phi_lambda reduces to |delta| atom"
+      status: bounded_theorem (proposed); direct_blocker_closure
+    b_ii_R2_PL_ABSS_global_bridge:
+      after: "NOT closed; off the Record registrability layer; external-math LIVE (Perelman PL-Poincare / Moise TOP=PL / van Kampen); honestly bounded as import-required"
+      status: bounded / named external-math wall (N1-N8 recorded)
+
+files_touched:
+  - .claude/science/physics-loops/registrability-bridges-20260610/* (loop pack)
+  - planned: docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_*NOTE_2026-06-10.md (deliverable note)
+  - planned: scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py
+  - planned: logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt
+
+open_imports:
+  - R2 PL/ABSS global Cl(3)/Z^3 -> PL S^3 x R (external math, LIVE, NOT consumed)
+  - standing modeling premise: physical mass-surface readout context satisfies Record registrability constraints (unchanged)
+
+no_go_routes_avoided:
+  - periodic q*pi delta source; Wilson-mark selection; det-sign pi packaging;
+    RP-derivation of strong-CP premise 1; convention-class reclassification by fiat
+
+trace_gate_classification: direct_blocker_closure (two quoted blockers) + negative_route_pruning (R2 off-layer) + honest external-math bound on (b-ii)
+
+review_findings: self-review hostile pass = PASS (6 attacks resolved; see REVIEW_HISTORY.md)
+pr_status: >
+  Loop-start PR #3513 was OPEN, MERGEABLE, base main, head
+  physics-loop/registrability-bridges-block01-20260610. Commit 6c17b7b52.
+  Runner SCORECARD PASS=30 FAIL=0. vocab_lint clean; 15/15 links; no audit-surface touched.
+
+block01_disposition: >
+  DELIVERED. Blocker (a) partially_closes (det-phase exhausted on registrable
+  surface; premise 1 + readout-context premise residual). Blocker (b-i) closes
+  (unordered-multiset registrability; |delta| atom). Blocker (b-ii)/R2 bounded
+  as external-math LIVE. One theorem closed/bounded BOTH blockers (shared layer
+  confirmed), honoring the "check if one theorem closes both" instruction.
+
+stretch_attempt_recorded: >
+  Probed whether block 01 opens a fresh non-churn angle on strong-CP premise 1.
+  NEGATIVE: premise 1 is on the ACTION-ADMISSIBILITY layer (theta-term exp(i theta Q)
+  uses topological-charge strata, NOT the central-idempotent decomposition the
+  registrability theorem's additivity requires), a DIFFERENT layer from
+  readout-registrability. Premise 1 is a SATURATED documented wall
+  (reality/positivity/CPT/RP all ruled out on origin/main). Honest boundary, no
+  attackable angle. See .claude/tmp/scratch_premise1_probe.py and OPPORTUNITY_QUEUE.md.
+
+stuck_fan_out_recorded: >
+  Fan-out over premise-1 routes = the origin/main ledger survey (5+ documented
+  walls) + R2's N1 6-route table. All converge: premise 1 = action-admissibility
+  wall; R2 = external-math import; |delta| magnitude = different lane. No
+  retained-positive candidate within the goal scope.
+
+final_decision: STOP — value-gate / corollary exhaustion for the STATED goal
+final_status_per_blocker: >
+  (a) partially_closes (det-phase exhausted on registrable surface; premise 1 +
+  readout-context premise residual); (b-i) closes (unordered-multiset
+  registrability; |delta| atom); (b-ii)/R2 bounded (external-math LIVE).
+
+next_exact_action: >
+  Independent audit of PR #3513 (audit-lane owned; expected first verdict
+  audited_conditional / dependency_not_retained because the consumed L2 circulant
+  is in the unaudited tier_a_korbit row). For PR #3511 owner: this PR supplies the
+  mass-orientation (premise 2) portion of #3511's gate; premise 1 remains a
+  distinct surviving gate. See HANDOFF.md.
+
+stop_condition_hit: corollary/value-gate exhaustion for the stated goal (both named blockers closed/bounded; only residuals are a saturated wall, an external-math import, or a different lane)

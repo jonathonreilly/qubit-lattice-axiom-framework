@@ -34,3 +34,25 @@ Q_B role-assignment transcription corrected against my own sp.factor output;
 numpy-float orbit signs cast to exact integers — float fuzz was defeating
 the rational identity). The exact factorization now stands on the
 artifact's own derivation with the referee's proof as corroboration.
+
+## block06, review round 1 (TWO synchronous referees, 2026-06-11)
+
+PROVENANCE: 0 BLOCKER, 4 MAJOR (paraphrase-in-quotes of the block05 sentence
+being corrected; supersession under-scoped vs block05's ~6 occurrence sites;
+missing Reproduction/Claim-scope sections; pack entries) + 2 MINOR (N4
+misattribution; two newer landed same-surface notes uncited) — all fixed;
+W-IR quote verified VERBATIM; all deps landed and accurately characterized.
+
+MATH-PHYSICS: 1 BLOCKER + 2 MAJOR + 4 MINOR:
+| finding | resolution |
+|---|---|
+| BLOCKER: E1 compared two hand-typed Rational(1,2) constants (vacuous PASS); the slope comparison was unit-INCOHERENT (family diagonal slope = 1/2 per axis-component but 1/(2 sqrt 3) per momentum arc length — sqrt-3 off vs the per-axis candidate against any single transfer dispersion) | E1 REBUILT: per-tick gradient VECTORS computed both sides (cycle exact from D1; family symbolic from the law, psi-independent) — IDENTICAL +-(1,1,1)/6: convention-independent OS0-indifference; the absolute unit identification split off as the NAMED premise U-T; equal-stratum datum named |
+| MAJOR: "no isotropic cone in either candidate" FALSE — the within-block touchings are EXACTLY isotropic 3D cones Phi = |q|/sqrt 3 (referee-verified 7 directions) | new check E3; Part F and the cone row REWRITTEN POSITIVELY: an isotropic cone exists in the family at quantized slope 1/(2 sqrt 3); the H-slope (1/2) cone remains unrealized (sqrt-3 mismatch) |
+| MAJOR: C2 proof gap — the line's gaplessness is INTER-block (shared-beta common root X = beta w), within-block touchings are isolated points; off-diagonal exclusion needed the difference factorization | C2 rebuilt: shared-root identity + Q_A - Q_B = (alpha-gamma)(3 beta - X sigma_bar), both exact |
+| MINORs: unimodularity of both roots assumed (now proven: Y1Y2=1, real sum in [-2,2]); cycle bands co-move vs family counter-propagating (added to E2); "EVERY translation-invariant functional" overbroad (scoped to per-band; both inter-block offsets named); psi != 0 -> psi not 0 mod pi; "completely solved" scoped to the eigenvalue problem | all fixed |
+| F4: the block05 front-speed correction CONFIRMED independently (the referee regenerated block05's exact RNG stream: cached values 0.169-0.232 reproduced by the single-block law to 5e-15) | quote/number wording aligned |
+
+Runner after fixes: 13/13. NOTE the E1-insert initially vanished via another
+silent str.replace overlap (caught by counting checks: 12 != 13 expected) —
+grep-verify EVERY patch, count checks after every edit.
+**Disposition: pass (13/13; both referee rounds integrated).**

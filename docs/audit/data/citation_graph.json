@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "spin_statistics_fs_admission_located_exercise_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_taste_cube_cyclic_source_descent_note_2026-04-18"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
         "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
         "quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28",
         "ring_monodromy_does_not_force_car_note_2026-06-04",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+        "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "20456c63899ca2cacf310ec30d8d99828e2b37e4d9585091f98420ee95616688",
+      "note_hash": "585f4d172b8f8d0b15f9150552d838cb924e44b8ce4bdfa414be4e4656e2f161",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

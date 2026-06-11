@@ -48922,10 +48922,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_reeh_schlieder_theorem_note_2026-05-01"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "pmns_twisted_flux_transfer_holonomy_boundary_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
     },
     {
       "from": "repo.repo_organization",
@@ -94064,17 +94064,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "alpha_s_derived_note",
         "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
         "cl3_taste_generation_theorem",
         "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
         "higgs_mass_from_axiom_note",
-        "pmns_twisted_flux_transfer_holonomy_boundary_note"
+        "pmns_twisted_flux_transfer_holonomy_boundary_note",
+        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ade7be0a0a1ca3790951a6894c5e02a47a7d1fa62289f27d3cf9889a3c174198",
+      "note_hash": "cd5d5ded2373caca952bdc7793ffa29a01e4ad90bd8ac74a619c99dd3c0ede9f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

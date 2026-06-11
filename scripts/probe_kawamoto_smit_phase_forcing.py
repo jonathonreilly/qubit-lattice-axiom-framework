@@ -493,8 +493,12 @@ def main() -> int:
     print()
     print("RESIDUAL (declared-open): P-KIN/P-SD kinetic-class premises "
           "(B2, B3) are declared, not derived from Lattice + Quantum alone.")
-    print("RESIDUAL (declared-open): substep-1 two-candidate surface / "
-          "U4 bridge (B1) enters as a bounded upstream input.")
+    print("RESIDUAL (declared-open): substep-1 two-candidate surface (B1) "
+          "enters as a bounded upstream input; per the substep-1 note's "
+          "current revision the former U4 bridge is DISCHARGED (Quantum "
+          "axiom + retained dim-two row) and the remaining substep-1 "
+          "residual is the statistics selection (two-candidate surface "
+          "is not statistics-exhaustive; S2/FS open).")
     print("RESIDUAL (declared-open): torus holonomy / APBC signs (B4) are "
           "boundary convention data, not local phase law.")
     print()

@@ -2,7 +2,8 @@
 
 **Date:** 2026-05-07; 2026-06-06 cocycle/gauge-class uniqueness repair;
 2026-06-10 science-fix (iff + premise honesty + forcing certificate —
-see §0 changelog)
+see §0 changelog); 2026-06-11 (B1/U4 wording reconciliation against the
+substep-1 note's current surface — see §0 changelog)
 **Type:** bounded_theorem
 **Claim scope:** Within the declared kinetic class — the naive-Dirac
 kinetic form on nearest-neighbor `Z³` links (premise P-KIN) made
@@ -29,6 +30,15 @@ Z2 gauge class … bounded on the declared kinetic class … the P-SD
 surface").
 
 ## 0. Changelog
+
+- **2026-06-11 (B1/U4 wording reconciliation).** Audit-requested:
+  the cited substep-1 note's surface moved (its former "U4 bridge
+  remains open" boundary is discharged via the Quantum axiom plus the
+  retained dim-two row, and its remaining residual is the statistics
+  selection). The B1 boundary row, the not-closed list, and the
+  runner's B1 RESIDUAL line are reconciled to that current surface.
+  No theorem content, premise, or runner check changes.
+
 
 - **2026-06-10 (science-fix, this revision).** Four defects repaired:
   1. *(High — missing sufficiency.)* The 2026-06-06 revision proved
@@ -108,7 +118,7 @@ realization-gate note consumes as its R2 authority.
 
 | ID | Boundary | Where it bites |
 |---|---|---|
-| B1 | Substep-1 input is the *two-candidate* Grassmann-vs-bosonic narrow theorem; the full per-site physical-Hilbert-space identification (the U4 bridge) is open in the substep-1 note itself | the single-mode premise BlockT1 is bounded, not unconditional |
+| B1 | Substep-1 input is the *two-candidate* Grassmann-vs-bosonic narrow theorem. Per the substep-1 note's current revision the former U4 bridge (per-site physical-Hilbert-space identification) is **discharged** (Quantum axiom plus the retained dim-two row); the remaining substep-1 residual is the **statistics selection** — the two-candidate surface is not statistics-exhaustive (hard-core-boson frame; S2/FS open) | the single-mode premise BlockT1 is bounded by the statistics-selection residual, not by U4 |
 | B2 | P-KIN: the naive-Dirac kinetic form `D = Σ_μ γ_μ ⊗ ∂_μ` on nearest-neighbor `Z³` links is a declared premise; non-nearest-neighbor or non-Dirac kinetic operators are not excluded here | Theorem 2 quantifies over phase systems *within* this class only |
 | B3 | P-SD: compatibility with the single-mode measure is implemented by a *site-local unitary* diagonalization `T(x)`; alternatives that bypass spin diagonalization (e.g. the 2-component naive operator) are excluded by premise, not derivation — the gate note's runner exhibits that alternative explicitly (its check 18) | the scalarization condition (4) is the P-SD premise in equation form |
 | B4 | Finite tori carry extra holonomy data: signs around non-contractible cycles (PBC/APBC and wrap-sign conventions) are boundary convention data, not local phase law; likewise lattice-axis permutation is coordinate-label gauge | Theorem 2(ii) is stated on simply connected regions |
@@ -352,8 +362,10 @@ as the PASS lines.
   operators or 2-component realizations that bypass spin
   diagonalization is open; the gate note exposes the 2-component
   alternative concretely.
-- The substep-1 U4 bridge / anything beyond the two-candidate surface
-  (B1).
+- The substep-1 statistics selection / anything beyond the
+  two-candidate surface (B1). (The former U4 bridge is discharged in
+  the substep-1 note's current revision; the statistics selection is
+  the remaining substep-1 residual.)
 - Rooting / taste reduction: the previous revision's NR claim
   ("retained no-rooting irreducibility" of the Kawamoto-Smit
   realization on `C^8`) is withdrawn from this note's premise set and

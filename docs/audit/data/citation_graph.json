@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
         "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
         "alpha_s_derived_narrow_theorem_note_2026-05-10",
         "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
-        "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
+        "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
+        "quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ccc1b9f33381771ba96e4dddca66d7f67f05deb3c48987c9e4fe3e9ccd56af90",
+      "note_hash": "872e2c1e33f27fbefff22fb868f58fa9527a350b3835d8fe2b2ad4c6d774006b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

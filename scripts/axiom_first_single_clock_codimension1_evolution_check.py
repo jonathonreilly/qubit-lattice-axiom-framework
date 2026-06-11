@@ -39,11 +39,27 @@ Computes the load-bearing content of the axis-conditional theorem
               single-clock constraint and is excluded only by the
               declared premise B-AXIS.3 (= scope-boundary N5), which is
               therefore non-vacuous.
+      [C-RANGE] (2026-06-11 #2) finite-range generator premise
+              (B-RANGE) for the propagation clause S2'(c):
+              (i) consistency — the block Hamiltonian used in
+              [A]/[B]/[C-LR] is EXACTLY finite-range (every Pauli
+              string with support diameter > 1 has zero coefficient),
+              so the runner's dynamics lies in the declared class;
+              (ii) non-vacuity witness — a strictly local positive
+              transfer T = e^{-A/2} e^{-B} e^{-A/2} (A on sites {0,1},
+              B on {1,2}) whose log-generator H_w = -log T has a
+              computed NONZERO end-to-end Pauli component (support
+              diameter 2): finite-range-ness of a log-transfer
+              generator is not automatic, so (B-RANGE) is a genuine,
+              load-bearing premise;
+              (iii) contrast — a single-factor local transfer logs
+              back to its local generator exactly (the failure in (ii)
+              is the non-commuting BCH tail, not a log artifact).
 
   [D] composition / circularity discipline: textual checks that the
-      companion note declares the premise, withdraws the old S3, and
-      keeps the claim transfer- and tau-relative (guards against
-      wording regression).
+      companion note declares the premises (B-AXIS, B-RANGE),
+      withdraws the old S3, and keeps the claim transfer- and
+      tau-relative (guards against wording regression).
 
 Deterministic; runtime well under one minute. TOTAL: PASS=n FAIL=0.
 """
@@ -448,6 +464,103 @@ def block_C_two_clock() -> None:
 
 
 # -------------------------------------------------------------------
+# [C-RANGE] finite-range generator premise (B-RANGE): consistency +
+# non-vacuity witness (the log of a strictly local positive transfer
+# is generically NOT finite-range)
+# -------------------------------------------------------------------
+
+SIGMA_Y = np.array([[0.0, -1j], [1j, 0.0]], dtype=complex)
+PAULI_1Q = {"I": np.eye(2, dtype=complex), "X": SIGMA_X, "Y": SIGMA_Y, "Z": SIGMA_Z}
+
+
+def pauli_string(ops: str) -> np.ndarray:
+    M = PAULI_1Q[ops[0]]
+    for ch in ops[1:]:
+        M = np.kron(M, PAULI_1Q[ch])
+    return M
+
+
+def pauli_support_diameter(ops: str) -> int:
+    sites = [k for k, ch in enumerate(ops) if ch != "I"]
+    if not sites:
+        return -1  # identity string
+    return max(sites) - min(sites)
+
+
+def logm_herm(T: np.ndarray) -> np.ndarray:
+    w, V = np.linalg.eigh(0.5 * (T + T.conj().T))
+    return V @ np.diag(np.log(w)) @ V.conj().T
+
+
+def block_C_range(H: np.ndarray, L: int) -> None:
+    print()
+    print("-" * 72)
+    print("[C-RANGE] (S2'c) FINITE-RANGE GENERATOR PREMISE (B-RANGE):")
+    print("          consistency + non-vacuity witness")
+    print("-" * 72)
+
+    # (i) consistency: the block Hamiltonian consumed by [A]/[B]/[C-LR]
+    # lies in the declared (B-RANGE) class EXACTLY — every Pauli string
+    # with support diameter > 1 has zero coefficient.
+    dim = 2**L
+    max_far = 0.0
+    for ops in itertools.product("IXYZ", repeat=L):
+        s = "".join(ops)
+        if pauli_support_diameter(s) <= 1:
+            continue
+        coef = abs(np.einsum("ij,ji->", pauli_string(s), H)) / dim
+        max_far = max(max_far, float(coef))
+    record("C", "(B-RANGE consistency) block H is exactly finite-range: all "
+           "Pauli strings with support diameter > 1 vanish",
+           max_far < 1e-12, f"max far-string coeff = {max_far:.2e}")
+
+    # (ii) non-vacuity witness on 3 sites: strictly local positive
+    # transfer T = e^{-A/2} e^{-B} e^{-A/2}, A on {0,1}, B on {1,2}.
+    A = 0.9 * pauli_string("XXI") + 0.4 * pauli_string("ZII")
+    B = 0.7 * pauli_string("IZZ") + 0.3 * pauli_string("IIX")
+    eA2 = expm_herm(-0.5, A)
+    T_loc = eA2 @ expm_herm(-1.0, B) @ eA2
+    herm = opnorm(T_loc - T_loc.conj().T)
+    min_eig = float(np.linalg.eigvalsh(0.5 * (T_loc + T_loc.conj().T)).min())
+    record("C", "(B-RANGE witness) strictly local transfer is positive Hermitian",
+           herm < 1e-12 and min_eig > 0.0,
+           f"||T - T^dag|| = {herm:.2e}, min eig = {min_eig:.4f}")
+
+    H_w = -logm_herm(T_loc)
+    end_to_end, best = 0.0, ""
+    nn_part = np.zeros_like(H_w)
+    for ops in itertools.product("IXYZ", repeat=3):
+        s = "".join(ops)
+        P = pauli_string(s)
+        coef = complex(np.einsum("ij,ji->", P, H_w)) / 8.0
+        if pauli_support_diameter(s) <= 1:
+            nn_part += coef * P
+        if s[0] != "I" and s[2] != "I" and abs(coef) > end_to_end:
+            end_to_end, best = abs(coef), s
+    record("C", "(B-RANGE witness) log-generator has a nonzero end-to-end Pauli "
+           "component (support diameter 2 > range 1)",
+           end_to_end > 1e-3, f"|coeff[{best}]| = {end_to_end:.4f}")
+    remainder = opnorm(H_w - nn_part)
+    record("C", "(B-RANGE witness) H_w = -log T is NOT in the range-1 class: "
+           "||H_w - P_range1(H_w)||_op > 0",
+           remainder > 1e-3, f"remainder norm = {remainder:.4f}")
+
+    # (iii) contrast: a single-factor local transfer logs back exactly —
+    # the witness failure is the non-commuting BCH tail, not the log.
+    back = opnorm(-logm_herm(expm_herm(-1.0, A)) - A)
+    record("C", "(B-RANGE contrast) single-factor transfer: -log(e^{-A}) = A "
+           "exactly (locality preserved when no non-commuting tail exists)",
+           back < 1e-10, f"resid = {back:.2e}")
+
+    print("  DECLARED-PREMISE (B-RANGE): the propagation clause (S2'c) consumes")
+    print("  the (R-CD) L1/L3 finite-range hypothesis as a declared premise. The")
+    print("  transfer-derived log-generator is NOT proven finite-range by any")
+    print("  retained one-hop authority, and the witness above shows the property")
+    print("  can fail for strictly local transfers — (B-RANGE) is load-bearing")
+    print("  and non-vacuous.")
+
+
+# -------------------------------------------------------------------
 # [D] composition / circularity discipline (note wording guards)
 # -------------------------------------------------------------------
 
@@ -485,6 +598,9 @@ def block_D_discipline() -> None:
     record("D", "spatial-clustering clause not consumed (cluster L2 is conditional)",
            "L2 spatial clustering is consumed nowhere" in text
            or "not consumed" in text, "S2'(b) demoted to conditional remark")
+    record("D", "note declares the finite-range generator premise (B-RANGE)",
+           "(B-RANGE)" in text and "conditional on (B-RANGE)" in text,
+           "S2'(c) narrowed to the declared finite-range premise")
 
 
 # -------------------------------------------------------------------
@@ -512,6 +628,7 @@ def main() -> None:
     block_A_stone(H, tau)
     block_A_slice(L)
     block_BC_lieb_robinson(H, L, J)
+    block_C_range(H, L)
     block_C_exchange()
     block_C_two_clock()
     block_D_discipline()

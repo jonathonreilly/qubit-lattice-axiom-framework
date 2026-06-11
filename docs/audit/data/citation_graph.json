@@ -48922,11 +48922,35 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+      "to": "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "single_clock_uniqueness_scope_boundary_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
     },
     {
       "from": "repo.repo_organization",
@@ -94040,11 +94064,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04"
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+        "single_clock_uniqueness_scope_boundary_2026-06-06",
+        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+        "axiom_first_spin_statistics_theorem_note_2026-04-29",
+        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "534dc8e429c6b499df631c0b0f946a0ecb19a5d5e8395e4182ad6eda22d2331e",
+      "note_hash": "bca5a8a7950675309d2235860b31b4d16a5cef920c4ced60ad91020046896fbe",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -108343,7 +108373,7 @@
       "open_gate": 158,
       "positive_theorem": 617
     },
-    "edge_count": 12334,
+    "edge_count": 12340,
     "leaf_count": 1064,
     "node_count": 3298,
     "root_count": 1044,

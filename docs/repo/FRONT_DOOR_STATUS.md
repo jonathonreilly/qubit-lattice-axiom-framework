@@ -37,8 +37,8 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Ready rows | 45 |
 | Cycle-break targets | 0 |
 | Critical pending | 303 |
-| High pending | 285 |
-| Medium pending | 420 |
+| High pending | 284 |
+| Medium pending | 421 |
 | Leaf pending | 437 |
 
 Next ready rows by queue order:
@@ -81,13 +81,13 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3298 |
 | Critical nodes | 509 |
-| High nodes | 501 |
-| Medium nodes | 883 |
+| High nodes | 500 |
+| Medium nodes | 884 |
 | Leaf nodes | 1405 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1503 descendants; score 122.555
+- `minimal_axioms` - critical; 1504 descendants; score 122.556
 - `three_generation_observable_theorem_note` - critical; 1016 descendants; score 63.490
 - `graph_first_su3_integration_note` - critical; 1358 descendants; score 60.908
 - `observable_principle_from_axiom_note` - critical; 862 descendants; score 59.253

@@ -56,3 +56,26 @@ Runner after fixes: 13/13. NOTE the E1-insert initially vanished via another
 silent str.replace overlap (caught by counting checks: 12 != 13 expected) —
 grep-verify EVERY patch, count checks after every edit.
 **Disposition: pass (13/13; both referee rounds integrated).**
+
+## block07, review round 1 (TWO synchronous referees, 2026-06-11)
+
+MATH-PHYSICS: NO BLOCKER. Independently confirmed all unit conversions
+(rebuilt the actual walk matrix; one-sided rate 0.2886751 = 1/(2 sqrt 3));
+confirmed the theta = Phi/2 double-cover is genuine, the tau-rescaling
+dichotomy survives, E1's odd-vs-even obstruction is a real theorem, and no
+vacuous checks. 2 MAJOR: (1) block06 dependency dangling (unlanded) —
+fixed: branch STACKED on block06; A3 rebuilt to RE-DERIVE the family cone
+from the walk matrix on-branch (pi-wrap at lambda = -1 dodged by tracking
+X = lambda^2); (2) "exhaustion of the covariant sector" overclaim — scoped
+to the EXHIBITED set with block05's open named as the bound.
+
+PROVENANCE: 2 BLOCKERS (stacked-PR requirement per SKILL; missing pack
+entries) — both resolved; 3 MAJOR (runner docstring "all landed" false;
+N4 stitched non-verbatim quote; the successor campaign pack shipped 2 of
+13 SKILL-required files) — all fixed (docstring gated; N4 verbatim; the
+matter-cone-larger-cell pack filled to the full file set with required
+STATE.yaml fields); 4 MINOR (N7 cell-unit mislabel; A2 comment formula;
+the chain-wide rational-placement survey claim enumerated+falsifiable;
+PRs #3545/#3543 recorded in the successor pack and the W-IR row).
+
+**Disposition: pass (9/9; stacked on #3546; land after it).**

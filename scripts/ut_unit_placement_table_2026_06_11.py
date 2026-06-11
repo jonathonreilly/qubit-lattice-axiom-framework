@@ -7,11 +7,13 @@ the factorized candidate exactly; the family needs an irrational clock
 ============================================================================
 Companion runner for
 docs/UT_PLACEMENT_TABLE_AND_SPECIES_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-11.md.
-Cycle 7 of the kinetic-isotropy derivation loop.  Inputs (all landed):
-block06's U-T premise (named there), the family cone (block06 E3), the
-1D dichotomy value (block02), the B-W reduction (W-IR + T3 Wick pairing:
-quasi-energy phase = -tau E exactly at a supplied (T, tau)), and the
-staggered Bloch kernel (block04).
+Cycle 7 of the kinetic-isotropy derivation loop.  Inputs: the LANDED
+1D dichotomy value (block02), B-W reduction (W-IR + T3 Wick pairing:
+quasi-energy phase = -tau E exactly at a supplied (T, tau)), and staggered
+Bloch kernel (block04); plus block06 (PR #3546, STACKED BASE of this
+branch, not yet landed) for the U-T naming and corroboration -- the
+load-bearing family-cone constant is RE-DERIVED here from the walk matrix
+(Part A3) and does not depend on block06's text.
 
 RESULTS:
   A  THE COMMON PARAMETRIZATION (exact): all three cone data computed in
@@ -100,8 +102,9 @@ check("A1 H-kernel cone: v_H = 1 site/tau EXACTLY (symbolic; Bloch matrix agrees
       vH == 1 and abs(E_num / eps * 2 - 1.0) < 1e-6,
       f"E ~ |kappa| site units; numeric {E_num/eps*2:.8f}")
 
-# A2: the per-axis candidate: the landed dichotomy band omega = (D + w K)/2,
-# |w| = 1, K = cell momentum: site speed = (1/2) * 2 = 1 site/tick EXACTLY:
+# A2: the per-axis candidate: the landed dichotomy band
+# omega_pm(K) = (D + pi + wK)/2 + {0, pi} EXACTLY, |w| = 1, K = cell
+# momentum: slope w/2 per K; site speed = (1/2) * 2 = 1 site/tick EXACTLY:
 w_mag = 1            # the landed quantization |w| = 1 (block01/block02)
 v_axis_site = sp.Rational(1, 2) * 2 * w_mag
 check("A2 per-axis candidate cone: v = 1 site/tick EXACTLY (the landed |v| = 1, unit-converted)",

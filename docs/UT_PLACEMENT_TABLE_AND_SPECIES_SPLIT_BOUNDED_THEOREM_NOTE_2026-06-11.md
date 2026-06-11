@@ -35,7 +35,9 @@ byproduct, resolving which exhibited candidate carries the H-sector.
 
 Under the single-tick placement **(tick = tau)** — the same epistemic move
 as the chain's standing R-P reading, and the placement the landed T3 Wick
-pairing makes natural (quasi-energy phase `= -tau E` exactly) — the
+pairing makes natural (quasi-energy phase `= -tau E` exactly; the landed
+T4 refutes the strict-tick Wick IDENTIFICATION, so naturalness here is a
+unit reading only, never an operator identity) — the
 factorized candidate's cone speed equals the H-kernel's EXACTLY, and the
 landed inverse maps give `xi = 1` at both carrier orders. **The
 kinetic-isotropy content closes on the natural row.**
@@ -43,9 +45,12 @@ kinetic-isotropy content closes on the natural row.**
 ## The rational-clock no-go (Part C; named escapes)
 
 Matching the family cone to the H-kernel requires the duration ratio
-`tick/tau = 1/sqrt(3)` — **irrational** (proven). Every reading used
-anywhere in the chain is a rational placement; within that class the
-eta-twisted family cannot carry the H-kernel cone. Escapes, named: an
+`tick/tau = 1/sqrt(3)` — **irrational** (proven). Every normalization
+appearing in the chain's shipped readings is rational (the blocked-time
+normalization is an integer 2-step block; R-P places a single tick; no
+shipped reading supplies an irrational scale — a survey claim, falsifiable
+by exhibiting one); within the rational class the eta-twisted family
+cannot carry the H-kernel cone. Escapes, named: an
 irrational supplied clock normalization (nothing landed supplies one); a
 different comparison locus (Part E closes the symmetric point: the family's
 generic first-order form there is an odd drift, which no clock rate maps
@@ -78,7 +83,7 @@ the H-cone under a rational placement" has EXACTLY ONE solution:
 | U-T (named in block06) | REDUCED: collapses to the single-tick placement (R-P-class); the natural row is forced within the exhibited set |
 | the realization row | SHARPENED: the factorized candidate is the unique rational-placement H-carrier; the family = second species (cone ratio 1/sqrt(3), exact) |
 | the sqrt-3 cone row (block06) | RESOLVED as the species split: not a defect to repair but a derived two-species ratio; the family-as-H-carrier is closed by the rational-clock no-go (escapes named) |
-| standing readings + W-IR + unaudited deps | unchanged |
+| standing readings + W-IR + unaudited deps | unchanged (open PR #3543 proposes deriving W-IR from sector-alias uniqueness; if it lands, the W-IR row upgrades independently of this note) |
 | larger-cell cone question | handed to the successor campaign (matter-cone-larger-cell loop) |
 
 ## Gate
@@ -129,9 +134,10 @@ H-kernel cone."
 - **N3 hidden-wall scan:** "site units" and "cell = 2 sites" conversions
   are computed in the runner, not asserted; the comparison locus choice is
   Part E's computed closure, not a convention.
-- **N4 residual matching:** block06's U-T row ("involves a
-  tick-vs-blocked-application unit choice — NAMED as the unit premise
-  U-T") and the sqrt-3 cone row, by their shipped wording.
+- **N4 residual matching:** block06's E1 wording, verbatim: "involves a
+  tick-vs-blocked-application unit choice — a premise of the same class as
+  the chain's R-P reading" (named U-T in its conditional-set row), and the
+  sqrt-3 cone row, by their shipped wording.
 - **N5 rhetoric audit:** "closes the chain" is scoped to the natural row
   (a reading); "second species" is scoped to licensed existence, not
   realized matter content; "forced" is always relative to the stated
@@ -141,8 +147,9 @@ H-kernel cone."
 - **N7 steelman:** "the no-go's wall is just irrationality of one number —
   fragile to any change in either cone speed." Correct, and that fragility
   is load-bearing the right way: both speeds are exact, moduli-rigid
-  constants of landed structures (1 and 1/(2 sqrt 3) cell units); the wall
-  moves only if a landed constant changes, which is the falsifier.
+  constants of shipped structures (1/2 and 1/(2 sqrt 3) in cell units; 1
+  and 1/sqrt(3) in site units); the wall moves only if a shipped constant
+  changes, which is the falsifier.
 - **N8 cross-cycle echo:** the chain's normalization freedoms (R-P, U-T)
   have collapsed into one reading; every kinetic constant in sight is a
   quantized exact value; the dial remains dead.

@@ -1219,6 +1219,49 @@ class ComputeAuditQueueTest(unittest.TestCase):
         self.assertNotIn("runner_pipeline", targets[0]["instruction"])
         self.assertIn("source-graph repair", targets[0]["instruction"])
 
+    def test_is_ready_accepts_premise_deps(self):
+        """Queue readiness mirrors compute_effective_status's accepted-premise
+        policy: a row whose only non-retained deps are an axiom/primitive
+        premise node or a Tier-A admitted derivation target is auditable now
+        (a clean verdict resolves it to retained / retained_bounded), so the
+        queue must mark it ready instead of holding it behind the admission's
+        own unaudited row."""
+        m = _import("compute_audit_queue")
+        rows = {
+            "tier_a_gate": {
+                "claim_id": "tier_a_gate",
+                "deps": [],
+                "effective_status": "unaudited",
+            },
+            "retained_dep": {
+                "claim_id": "retained_dep",
+                "deps": [],
+                "effective_status": "retained_bounded",
+            },
+            "unaudited_dep": {
+                "claim_id": "unaudited_dep",
+                "deps": [],
+                "effective_status": "unaudited",
+            },
+            "discharge_note": {
+                "claim_id": "discharge_note",
+                "deps": ["minimal_axioms", "tier_a_gate", "retained_dep"],
+                "effective_status": "unaudited",
+            },
+            "blocked_note": {
+                "claim_id": "blocked_note",
+                "deps": ["tier_a_gate", "unaudited_dep"],
+                "effective_status": "unaudited",
+            },
+        }
+        with mock.patch.object(
+            m.premise_nodes,
+            "is_accepted_premise_dep",
+            side_effect=lambda dep_id: dep_id in {"minimal_axioms", "tier_a_gate"},
+        ):
+            self.assertTrue(m.is_ready(rows["discharge_note"], rows))
+            self.assertFalse(m.is_ready(rows["blocked_note"], rows))
+
 
 class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
     def setUp(self):

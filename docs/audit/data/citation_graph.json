@@ -48922,10 +48922,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "single_clock_uniqueness_scope_boundary_2026-06-06"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "alpha_s_derived_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -94064,17 +94064,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
         "single_clock_uniqueness_scope_boundary_2026-06-06",
         "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
-        "alpha_s_derived_note"
+        "alpha_s_derived_note",
+        "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d5a74fc849b4d256a54eb4db19b060ea87616ea0d1ecbd8b09f01daf7bf6049d",
+      "note_hash": "02ba5ac75172636de8fe0fdb17d152cdd155e044593c97f3469d9d53029dda9f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

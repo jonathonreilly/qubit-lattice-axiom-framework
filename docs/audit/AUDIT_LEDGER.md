@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 1254 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 1255 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
@@ -102,26 +102,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1504 | 122.56 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1016 | 63.49 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1358 | 60.91 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1017 | 63.49 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1359 | 60.91 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 862 | 59.25 | `unaudited` | unaudited |
-| 5 | `minimal_axioms_2026-05-03` | meta | critical | 971 | 47.42 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1189 | 47.22 | `unaudited` | meta |
-| 7 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 997 | 41.46 | `audited_clean` | **retained** |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 937 | 41.37 | `unaudited` | unaudited |
+| 5 | `minimal_axioms_2026-05-03` | meta | critical | 972 | 47.43 | `unaudited` | meta |
+| 6 | `key_terminology` | meta | critical | 1190 | 47.22 | `unaudited` | meta |
+| 7 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 998 | 41.46 | `audited_clean` | **retained** |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 938 | 41.38 | `unaudited` | unaudited |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1021 | 40.50 | `unaudited` | unaudited |
-| 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 929 | 39.86 | `unaudited` | unaudited |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1324 | 39.37 | `audited_clean` | **retained** |
+| 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 930 | 39.86 | `unaudited` | unaudited |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1325 | 39.37 | `audited_clean` | **retained** |
 | 12 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1269 | 38.81 | `audited_clean` | **retained_bounded** |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 861 | 38.75 | `unaudited` | unaudited |
 | 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 772 | 38.59 | `unaudited` | unaudited |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 715 | 38.48 | `audited_clean` | **retained_no_go** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 934 | 36.87 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1329 | 36.38 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1073 | 36.07 | `audited_clean` | **retained_bounded** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1074 | 36.07 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 270 | 34.58 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 707 | 32.97 | `unaudited` | unaudited |
-| 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 940 | 31.88 | `unaudited` | unaudited |
+| 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 941 | 31.88 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 704 | 31.46 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 831 | 31.20 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 317 | 30.81 | `unaudited` | unaudited |
@@ -136,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1111,6 +1110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `site_phase_cube_shift_intertwiner_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `sixth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
@@ -15880,6 +15880,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Applying the finite-dimensional spectral functional calculus to positive Hermitian T gives H_gen=-(1/τ)log(T) with eigenvalues E_k=-(1/τ)log(λ_k), so U(t)=exp(-itH_gen) is the unique finite-matrix flow and T^n=∑_k λ_k^n P_k=∑_k exp(-nτE_k)P_k=U(-inτ).  _(class `A`)_
 - **chain closes:** True — The finite-dimensional spectral theorem supplies orthogonal spectral projectors and positive real eigenvalues, making the real logarithm and H_gen unique. The unitary group axioms, generator identity, matrix-ODE uniqueness, and T^n=U(-inτ) then follow by direct finite spectral calculus with no cited authority or physical bridge.
 - **rationale:** The load-bearing content is a genuine algebraic closure from the stated finite-dimensional hypotheses using standard spectral theory and finite-matrix ODE uniqueness. The runner source performs exact symbolic class-A checks on representative positive Hermitian matrices and does not import external numerical comparators or hidden premises. The previously false U(τ)^*T=T condition is explicitly removed and is not part of the audited scope.
+- **auditor confidence:** high
+
+### `single_clock_uniqueness_scope_boundary_2026-06-06`
+
+- **Note:** [`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`](../../docs/SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite-dimensional algebra shows Stone uniqueness is relative to a supplied positive transfer and fixed tau; it does not by itself fix the clock unit or exclude separately supplied commuting transfer factors.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-979320782a-single_clock_uniqueness_scop`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For explicit positive diagonal transfers, the same T is reconstructed by tau=1 with H1 and by tau=2 with H1/2, while T_A tensor I and I tensor T_B provide distinct commuting positive transfer factors.  _(class `A`)_
+- **chain closes:** True — The displayed diagonal and tensor-product examples independently verify the claimed non-implications: T fixes tau H, not tau or H separately, and a product transfer's generator does not erase commuting factor groups. The chain closes only for this scoped boundary, not for any framework-wide no-second-clock theorem.
+- **rationale:** The runner source performs exact symbolic matrix checks rather than printing unsupported constants, and an independent algebra check confirms the signs, factors, tensor lifts, commutators, and reconstruction identities. There are no cited upstream authorities or external comparator inputs. The no-go discipline gate is satisfied only in the narrow sense: this is a clean no-go for skipping tau, axis-transfer uniqueness, or independent-factor exclusion premises, not an absolute no-second-clock result.
 - **auditor confidence:** high
 
 ### `site_phase_cube_shift_intertwiner_note`

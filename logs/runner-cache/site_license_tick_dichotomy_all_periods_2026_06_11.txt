@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/site_license_tick_dichotomy_all_periods_2026_06_11.py
+runner_sha256: 25e3253c2590df214d5a7d20f57e9688172f5039925ff1d3222aeeeb692a8713
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+DISPLACEMENT-SUM LEMMA (symbolic, general licensed entries)
+==============================================================================
+  [PASS] p=2: every proper principal minor (all e_1..e_1) is z-INDEPENDENT; det = A + Bz + C/z  --  det*z monomial z-degrees: [0, 1, 2]
+  [PASS] p=3: every proper principal minor (all e_1..e_2) is z-INDEPENDENT; det = A + Bz + C/z  --  det*z monomial z-degrees: [0, 1, 2]
+  [PASS] p=4: every proper principal minor (all e_1..e_3) is z-INDEPENDENT; det = A + Bz + C/z  --  det*z monomial z-degrees: [0, 1, 2]
+  [PASS] p=5: every proper principal minor (all e_1..e_4) is z-INDEPENDENT; det = A + Bz + C/z  --  det*z monomial z-degrees: [0, 1, 2]
+  [PASS] p=6 numeric spot-check: all proper principal minors z-independent (random entries, 3 momenta)
+
+WINDING BUDGET: unitarity makes det a winding monomial, w in {-1, 0, +1}
+==============================================================================
+  [PASS] diag-phase x shift family is licensed-unitary at p = 1..6, every fiber
+  [PASS] det along the Brillouin circle is a single unimodular Fourier monomial (winding budget independent of p)  --  block01's monomial lemma instantiated at every period
+
+SELF-INVERSIVE IDENTITY AND VANISHING FORCING
+==============================================================================
+  [PASS] e_{p-k} = det * conj(e_k) for unimodular band values (30 random root sets, p <= 7)
+  [PASS] forcing: a constant e_k consistent with a winding det at BOTH z = 1 and z = -1 must vanish  --  subtracting the two evaluations: 2 e^{iD} conj(e_k) = 0 => e_k = 0; all intermediate e's die
+
+BAND FORMULA: chi = mu^p - e^{iD} z^w, set-exact at every fiber
+==============================================================================
+  [PASS] {eigenvalues} = {p-th roots of det} EXACTLY at every sampled fiber, p = 1..6  --  chi(mu; z) = mu^p - e^{iD} z^w: the entire spectrum is the det's p-th roots
+  [PASS] dispersive bands are exactly linear: second differences identically zero (site-unit slope = w)  --  in site units the slope is w: |v| = 1, all curvature orders vanish
+  [PASS] the w = 0 cell is FLAT: intra-cell unitary has momentum-independent bands (no transport)  --  flat or saturating -- no third cell at any period
+
+MASS-HOSTING COROLLARY
+==============================================================================
+  [PASS] massive dispersion has strictly nonzero curvature at the band bottom  --  d^2 omega/dk^2 |_0 ~ 2.488 (= 1/m for sqrt(m^2+k^2))
+  [PASS] licensed dispersive bands have curvature EXACTLY zero: no single licensed tick hosts mass at ANY period  --  mass must enter outside the class: second component, interactions, or the separate factor
+
+HOSTILE WITNESS: breaking the license restores curvature and tunability
+==============================================================================
+  [PASS] split-step walk (license-broken: distance-2 hops) has a CURVED band with tunable slope  --  slope range [0.032, 0.765], max curvature 1.148: the license is the load-bearing wall
+  [PASS] split-step max slope |cos theta| is continuously tunable (block01 witness family)
+
+SCOPE HONESTY: what is NOT proved here
+==============================================================================
+  [PASS] the theorem classifies SPECTRA of licensed unitaries; no enumeration of the licensed-unitary variety is claimed  --  instances witness non-vacuity at every tested period
+  [PASS] aperiodic/quasi-periodic ticks are NOT covered: translation covariance at some finite period is the declared setting  --  the named open that survives this cycle
+
+==============================================================================
+SCORECARD: PASS=18 FAIL=0
+==============================================================================
+
+----- stderr -----
+

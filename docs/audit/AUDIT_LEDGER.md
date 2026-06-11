@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 821 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1432 |
+| unaudited | 1431 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1261 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1748 |
+| `unaudited` | 1747 |
 
 | claim_type | count |
 |---|---:|
@@ -113,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 930 | 39.86 | `unaudited` | unaudited |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1325 | 39.37 | `audited_clean` | **retained** |
 | 12 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1269 | 38.81 | `audited_clean` | **retained_bounded** |
-| 13 | `alpha_s_derived_note` | bounded_theorem | critical | 861 | 38.75 | `unaudited` | unaudited |
+| 13 | `alpha_s_derived_note` | bounded_theorem | critical | 861 | 38.75 | `audited_conditional` | ~~audited_conditional~~ |
 | 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 772 | 38.59 | `unaudited` | unaudited |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 716 | 38.49 | `audited_clean` | **retained_no_go** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 934 | 36.87 | `audited_clean` | **retained_bounded** |
@@ -1396,6 +1396,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `alpha_s_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1798,6 +1799,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The identities close exactly by substitution from the retained tadpole-power parent, but add no independent comparator, compression, or physical content beyond that parent.
 - **rationale:** Issue: P1/P2 and the listed corollaries are exact algebraic consequences of the retained tadpole-power parent over the same abstract alpha_bare,u_0 inputs. Why this blocks: the parent scope already covers the geometric-mean / constant-ratio tadpole-power identities, so this row is not an independent positive theorem surface even though the algebra is correct. Repair target: keep the identities boxed under alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10, or add a genuinely new retained-grade physical/comparator bridge in a separate source note. Claim boundary until fixed: safe as an algebraic corollary only; no plaquette value, CMT bridge, running bridge, SM alpha_s identification, or numerical prediction is ratified.
 - **decoration parent:** `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `alpha_s_derived_note`
+
+- **Note:** [`ALPHA_S_DERIVED_NOTE.md`](../../docs/ALPHA_S_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** T1 exact arithmetic alpha_s(v)=1/(4 pi sqrt(0.5934))=0.10330382 and the alpha_LM identity over declared boundary inputs B1-B4; C1 is only a quarantined bounded v-to-M_Z corollary.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-124147-71f29b719d-alpha_s_derived_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given B1-B4, alpha_s(v) = alpha_bare/u_0^2 = 1/(4 pi sqrt(<P>)) = 0.10330382, with alpha_LM^2 = alpha_bare * alpha_s(v).  _(class `A`)_
+- **chain closes:** True — The arithmetic closes within the declared T1 scope: independent recomputation gives u_0=0.8776813811986843 and alpha_s(v)=0.1033038161222671, and the alpha_LM identity is algebraic. The closure is conditional on B1, B3, and B4, which are declared or admitted rather than derived in the packet.
+- **rationale:** The runner source genuinely computes the T1 arithmetic from the declared inputs, and the main displayed closed forms, sensitivity, and 1-loop transfer factor check independently. But B1 is explicitly an admitted reuse value, B3's vertex power is a declared structural input, and B4's lattice-to-MSbar/scale identification is declared rather than derived. Those open premises prevent audited_clean even though the bounded theorem is honestly scoped and C1 is quarantined.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30`

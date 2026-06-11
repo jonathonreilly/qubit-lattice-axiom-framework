@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 282,
-    "high": 284,
+    "high": 283,
     "leaf": 441,
     "medium": 421
   },
@@ -7985,31 +7985,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_realization_gate_note_2026-05-03",
-        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.907,
-      "note_path": "docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py",
-      "transitive_descendants": 239
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17158,15 +17133,15 @@
       "deps": [
         "staggered_dirac_realization_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.115,
+      "load_bearing_score": 6.644,
       "note_path": "docs/QUARK_BIMODULE_NORM_NATURALITY_THEOREM_NOTE_2026-04-19.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_quark_bimodule_norm_naturality_theorem.py",
-      "transitive_descendants": 48
+      "transitive_descendants": 49
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42965,6 +42940,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 37,
-  "total_pending": 1428
+  "ready_count": 36,
+  "total_pending": 1427
 }

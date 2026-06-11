@@ -34,3 +34,13 @@ Current approved primitives:
   absolute scale, spacing-ratio theorem, dynamics, Lorentz-closure theorem,
   mass ratio, coupling, mixing angle, phase, selector, readout bridge,
   probability rule, normalization rule, or empirical match.
+- `realized_state_primitive`:
+  `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`. This grants only
+  pointwise evaluation at a supplied law-admissible realized state
+  (the axioms select no state; a history fixes one). It is not an axiom, not
+  a Tier-A admission, and not a bounded-status source. It does not supply a
+  state, state-selection rule, measure, typicality or genericity assumption,
+  weighting, normalization, probability rule, preferred or default state, or
+  any state-contingent value; a quoted number that would differ had another
+  permitted state been realized is registered data, not derivation output.
+  The past hypothesis is explicitly not housed by this primitive.

@@ -32,6 +32,10 @@ saving compute on ill-posed questions.
   structural OS0 kinetic-form isotropy `c_t = c_s` and not treated as dynamics,
   a Lorentz-closure theorem, scale, spacing-ratio theorem, selector, or
   empirical input?
+- If it uses the registered `realized_state_primitive`, is it limited to
+  pointwise evaluation at the supplied law-admissible realized state --
+  no averaging over alternatives, no typicality or genericity predicate, and
+  no state-contingent number quoted as derived (the counterfactual test)?
 - Any other premise must be a retained-grade theorem, a Tier-A admission
   (which bounds the result), or an explicitly flagged new import requiring
   user approval. Does it smuggle in external assumptions instead?

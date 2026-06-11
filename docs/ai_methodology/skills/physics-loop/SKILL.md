@@ -306,7 +306,9 @@ Before writing a wall/import/dependency statement in `STATE.yaml`,
 use of the registered `scale_reference_primitive`, record it as an approved
 units primitive. If the only issue is use of the registered
 `kinetic_isotropy_primitive`, record it as approved structural kinetic-form
-isotropy. Keep the actual status judgment focused on any additional
+isotropy. If the only issue is use of the registered
+`realized_state_primitive`, record it as approved pointwise specialization to
+the supplied realized state. Keep the actual status judgment focused on any additional
 dimensionless dynamical quantity, selector, readout, normalization,
 probability, dynamics, closure theorem, or empirical content.
 

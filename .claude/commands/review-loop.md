@@ -40,7 +40,7 @@ Run the repo-native physics review loop from:
    The registered `kinetic_isotropy_primitive` grants only structural OS0
    kinetic-form isotropy `c_t = c_s`; it is not a bounded import, Lorentz
    theorem, dynamics, scale, spacing-ratio theorem, selector, or empirical
-   input.
+   input. The registered `realized_state_primitive` grants only pointwise evaluation at a supplied law-admissible realized state; it does not supply a state, state-selection rule, measure, typicality or genericity assumption, weighting, probability rule, or any state-contingent value (quantities that vary across the law-admissible family remain registered data).
 9. Re-review only files changed by the fix pass, plus interacting files that
    were already in the original changed-file set.
 10. Before closing or rejecting a non-landable PR, run the skill's salvage pass:
@@ -97,7 +97,11 @@ Run the repo-native physics review loop from:
   call the registered `kinetic_isotropy_primitive` a Tier-A admission, missing
   premise, no-go wall, bounded-status source, Lorentz theorem, dynamics, scale,
   spacing-ratio theorem, selector, or empirical input; do not grant it more
-  than `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md` declares.
+  than `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md` declares. Do not
+  call the registered `realized_state_primitive` a Tier-A admission, missing
+  premise, no-go wall, bounded-status source, state-selection rule, measure,
+  typicality assumption, weighting, or value source; do not grant it more
+  than `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` declares.
 - `/review-loop` must not apply audit verdicts. It prepares
   audit-compatible review surfaces and reports which proposed claims require
   the independent audit worker.

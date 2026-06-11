@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_alpha_s_tadpole_power_identity.py
-runner_sha256: 3a7a4853adedcaceaa74a0376cc4422e6a7276cf11665add3bf52d3ad7dff42a
+runner_sha256: a89e9f1fa5e27775532e927c4c4fb7e6e27a34452aa72afcdd7f85128133f233
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -16,6 +16,8 @@ and (P2) alpha_s(v) / alpha_LM = 1/u_0 under retained abstract tadpole-power inp
 ----------------------------------------------------------------------------------------
 Part 0: symbolic setup
 ----------------------------------------------------------------------------------------
+  [PASS (A)] source note records the powers=(1,1) counterfactual as the nonidentity diff  (prevents source-runner drift in the Validation bullet)
+  [PASS (A)] source note no longer states the powers=(1,1) counterfactual as alpha_bare = u_0  (the correct special boundary is u_0 = 1)
   symbolic alpha_bare (positive real) = alpha_bare
   symbolic u_0 (positive real)        = u_0
   cited alpha_LM tadpole power = 1
@@ -80,7 +82,7 @@ Summary
     Parametric tadpole-power form: (P1) holds iff alpha_s(v) power is twice alpha_LM power
 
 ========================================================================================
-TOTAL: PASS=16, FAIL=0
+TOTAL: PASS=18, FAIL=0
 ========================================================================================
 
 ----- stderr -----

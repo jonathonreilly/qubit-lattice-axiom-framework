@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
         "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
         "universal_gr_w_hessian_identification_full_finite_k_channel_table_bounded_theorem_note_2026-06-09",
         "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08",
         "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10",
-        "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
+        "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+        "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4fed12c592e9b026db086c9acc8a7c582e724e4c8a8fd9aa4f5eb94eafe9a286",
+      "note_hash": "6c7fc81ee8de38f75ff8caba21bf6f40784fc136b2251adaddb3ff5800016413",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -108374,7 +108374,7 @@
       "positive_theorem": 617
     },
     "edge_count": 12340,
-    "leaf_count": 1061,
+    "leaf_count": 1060,
     "node_count": 3298,
     "root_count": 1044,
     "runners_with_path": 2883

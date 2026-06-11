@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 825 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1399 |
+| unaudited | 1398 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1271 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1715 |
+| `unaudited` | 1714 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 855 |
-| `leaf` | 1310 |
+| `medium` | 856 |
+| `leaf` | 1309 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -114,7 +114,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1325 | 39.37 | `audited_clean` | **retained** |
 | 12 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1269 | 38.81 | `audited_clean` | **retained_bounded** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 772 | 38.59 | `unaudited` | unaudited |
-| 14 | `yt_ew_color_projection_theorem` | no_go | critical | 715 | 38.48 | `audited_clean` | **retained_no_go** |
+| 14 | `yt_ew_color_projection_theorem` | no_go | critical | 716 | 38.49 | `audited_clean` | **retained_no_go** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 860 | 38.25 | `audited_conditional` | ~~audited_conditional~~ |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 933 | 36.87 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1329 | 36.38 | `audited_clean` | **retained** |
@@ -1447,6 +1447,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -18944,6 +18945,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At BZ corners p_mu in {0, pi}, m(p)=sum_mu(1-cos p_mu)=2 hw(p), so the eight corners split as 1+3+3+1 and hw=1 is exactly the threefold lightest nonzero-mass orbit, with the M_3(C)/no-proper-quotient part imported from the direct audited dependency.  _(class `A`)_
 - **chain closes:** True — Independent exact enumeration gives 8 corners, degeneracies [1,3,3,1], masses 0,2,4,6 by Hamming weight, and hw=1 as the unique lightest nonzero orbit. The admitted staggered-Dirac/Wilson surface is present in the Tier-A registry, and the direct dependency's scoped algebra result supplies only the finite C^3/M_3(C) no-proper-quotient statement without importing physical-species or SM-generation claims.
 - **rationale:** The spectral calculation is a finite algebraic identity on the explicitly admitted bounded surface, not a tuned numerical comparator or a physical-generation identification. The runner's math checks agree with an independent exact enumeration, while its source-firewall checks confirm the note excludes no-rooting, physical lattice necessity, CKM, chirality, and new-axiom claims. The no-go/wall discipline gate does not expose an inflated wall set: there is a single registered Tier-A admitted surface, the no-proper-quotient residual exactly matches the direct dependency's audited scope, and all broader negative/physical claims are explicitly out of scope.
+- **auditor confidence:** high
+
+### `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`
+
+- **Note:** [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](../../docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited scope is the algebraic AC_phi_lambda orientation-flip lemma: H(delta)^* = H(-delta) and unordered spectral invariance under delta -> -delta, with no derivation of |delta| and no Tier-A registry update.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-150639-8377bcba60-tier_a_korbit_determinant_an`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the supplied AC_phi_lambda Hermitian circulant, complex conjugation sends H(delta) exactly to H(-delta), and the unordered spectrum is unchanged because the flip relabels eigenvalues by k -> -k.  _(class `A`)_
+- **chain closes:** True — The scoped algebra closes on the supplied circulant surface: an independent characteristic-polynomial check gives identical elementary symmetric invariants at +/-delta. The registry-reduction consequence remains outside the closed scope and depends on the explicitly named unordered-multiset registrability bridge.
+- **rationale:** The load-bearing step is a genuine class-A algebraic identity, not a definition, renaming, numerical match, or external comparator. The runner source actually performs symbolic matrix and spectral checks, and an independent characteristic-polynomial route confirms the sign-flip invariance. However, the AC_phi_lambda gate surface is supplied through docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md, which is explicitly marked unaudited in the restricted packet, and any registry reduction also requires the still-open unordered-multiset registrability bridge. Therefore the scoped algebra is sound, but the audit verdict is conditional rather than clean.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`

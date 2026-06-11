@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 284,
+    "critical": 283,
     "high": 291,
     "leaf": 428,
     "medium": 425
@@ -8,31 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-        "higgs_mass_from_axiom_note"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.79,
-      "note_path": "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_higgs_channel_effective_ntaste_boundary.py",
-      "transitive_descendants": 625
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -155,15 +130,15 @@
       "deps": [
         "higgs_mass_from_axiom_note"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.077,
+      "load_bearing_score": 11.582,
       "note_path": "docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_higgs_mass_status_audit.py",
-      "transitive_descendants": 269
+      "transitive_descendants": 270
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -8055,15 +8030,15 @@
         "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
         "yt_ward_identity_derivation_theorem"
       ],
-      "direct_in_degree": 12,
+      "direct_in_degree": 11,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.508,
+      "load_bearing_score": 11.992,
       "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
-      "transitive_descendants": 90
+      "transitive_descendants": 89
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -43000,6 +42975,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 41,
-  "total_pending": 1428
+  "ready_count": 40,
+  "total_pending": 1427
 }

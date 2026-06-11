@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 836 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1425 |
+| unaudited | 1424 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1280 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1742 |
+| `unaudited` | 1741 |
 
 | claim_type | count |
 |---|---:|
@@ -113,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1041 | 40.52 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1355 | 39.41 | `audited_clean` | **retained** |
 | 13 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1295 | 38.84 | `audited_clean` | **retained_bounded** |
-| 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 792 | 38.63 | `audited_clean` | **retained_bounded** |
+| 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 791 | 38.63 | `audited_clean` | **retained_bounded** |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 733 | 38.52 | `audited_clean` | **retained_no_go** |
 | 16 | `alpha_s_derived_note` | bounded_theorem | critical | 879 | 38.28 | `audited_conditional` | ~~audited_conditional~~ |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1359 | 36.91 | `audited_clean` | **retained** |
@@ -1428,6 +1428,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hierarchy_dimensional_compression_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9202,6 +9203,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Spatial APBC is not selected by exponent counting; it is selected by the existence of a finite intensive 3+1 order-parameter limit on the minimal hierarchy block, while the exact local observable depends on u0 only through m/u0.  _(class `C`)_
 - **chain closes:** True — Within the bounded minimal-block scope, the determinant formulas, coefficient asymptotics, and u0 homogeneity follow from the explicit finite Dirac operator and exact formulas checked by the runner. The note explicitly excludes the broader physical electroweak order-parameter selection theorem from the closed claim.
 - **rationale:** The runner constructs the minimal L_s=2 Dirac matrix, compares direct determinants against the stated closed formulas for both spatial BCs, verifies the BC-independent zero-mass u0 power, and checks the exact homogeneity and small-m coefficient consequences with zero failures. The source note does not overclaim the full hierarchy theorem: it confines closure to the spatial-BC and u0-scaling objections and explicitly leaves the physical intensive order-parameter selection as open. Residual risk is limited to not treating this bounded theorem as the missing physical bridge.
+- **auditor confidence:** high
+
+### `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08`
+
+- **Note:** [`HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`](../../docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the algebraic boundary that the Wilson Hamming-weight staircase multiplicities alone do not select the uniform N_taste = 16 Higgs-channel assignment, including the displayed single-class channel table.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-231812-42b6838366-higgs_channel_effective_ntas`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If the Higgs channel is identified with a single Hamming-weight class hw = k, then effective N_taste^(k) = binomial(4,k), so formula [5] gives squared values proportional to 1/binomial(4,k), none equal to the uniform all-corners N_taste = 16 value.  _(class `A`)_
+- **chain closes:** False — The algebraic distinctness claim closes for any positive u_0: the squared ratio to the uniform value is 16/binomial(4,k). However, the note and runner use u_0 = 0.8776 as the Higgs note's stated input, while the provided current Higgs authority declares u_0 = 0.877681381, so the displayed numeric table is not closed from the cited current parent.
+- **rationale:** The load-bearing math is a genuine finite algebra check: binomial(4,k) gives 1,4,6,4,1, and none of those equal 16. Independently recomputing the formula confirms the qualitative boundary and the exact squared ratios. The packet is nevertheless not clean as written because the source note and runner hard-code u_0 = 0.8776 while the supplied current parent note uses u_0 = 0.877681381; that changes at least the k = 1 and k = 3 rounded display values from 280.6 GeV to 280.5 GeV. This is source-runner/dependency drift, not a failure of the underlying boundary idea.
 - **auditor confidence:** high
 
 ### `higgs_mass_from_axiom_note`

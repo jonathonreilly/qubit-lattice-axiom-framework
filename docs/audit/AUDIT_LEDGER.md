@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 824 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1407 |
+| unaudited | 1406 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1268 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1723 |
+| `unaudited` | 1722 |
 
 | claim_type | count |
 |---|---:|
@@ -1408,6 +1408,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_taste_generation_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dimension_selection_upper_bound_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4434,6 +4435,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner table reports that d=1,2 fail the attractive-gravity/beta lower-bound criteria while d=3,4,5 pass them, and the finite-k derivative bridge certifies the same d<=2 away versus d>=3 toward sign transition for the runner centroid observable.  _(class `C`)_
 - **chain closes:** True — The primary runner and exposed helpers compute the finite-k centroid derivative, finite-M centroid replay, beta fits, alpha entries, and I3 check for the stated runner inputs. An independent direct matrix-recursion check reproduces the displayed sign transition and table values within numerical tolerance.
 - **rationale:** The cited finite-k bridge is retained-bounded and directly supplies the runner-specific sign certificate, while the helper sources expose the original beta/I3 computation and cache freshness checks. The source note explicitly narrows the claim to finite-runner lower-bound support and disclaims unique d=3 selection, framework-internal derivation of the all-d potential family, and any axiom rewrite. Within that bounded scope, the computation closes without external comparator input or definition substitution.
+- **auditor confidence:** high
+
+### `dimension_selection_upper_bound_textbook_import_note_2026-05-17`
+
+- **Note:** [`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](../../docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A bounded upper-bound wrapper whose unique selector is the finite lower packet `{3,4,5}` intersected with the native stable-circular-orbit edge `d <= 3`, with Coulomb stability presented as companion support.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-143734-f653ec05f0-dimension_selection_upper_bo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The wrapper's decisive step is `L_runner = {3,4,5}`, `U_stable = {d : d <= 3}`, so `L_runner intersect U_stable = {3}`.  _(class `A`)_
+- **chain closes:** False — The native stable-orbit path closes algebraically from the supplied lower-bound and stable-orbit support notes; an independent derivative check gives the stated `k(d-2)(4-d)/r_c^d` sign classification. The chain as written does not close for the Coulomb companion/spectrum language because the supplied Coulomb support proves only a Green-kernel scaling collapse for `d >= 5` and explicitly leaves the full hydrogenic spectrum and electromagnetic-sector bridges outside the packet.
+- **rationale:** No primary runner output or runner source was supplied for this wrapper, so the wrapper was judged from the note text and provided one-hop authorities. The finite-set native stable-orbit composition is a valid class-A algebraic closure over retained-bounded inputs, and the displayed Green-kernel/effective-potential signs check manually. The broader Coulomb companion still imports textbook/spectral assertions not closed by the restricted packet, while its one-hop support note explicitly narrows itself to a scaling lemma and leaves full atomic stability open.
+- **open / conditional deps cited:**
+  - `COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `dimension_upper_bound_dependency_edge_repair_note_2026-06-08`

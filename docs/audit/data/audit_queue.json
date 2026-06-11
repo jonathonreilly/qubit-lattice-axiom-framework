@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 282,
     "high": 281,
-    "leaf": 435,
+    "leaf": 434,
     "medium": 411
   },
   "cycle_break_target_count": 0,
@@ -17001,34 +17001,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dimension_selection_note",
-        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-        "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
-        "coulomb_stability_upper_bound_support_note_2026-05-20",
-        "d3_upper_bound_import_scope_gate_note_2026-06-06"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.748,
-      "note_path": "docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 18
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17139,6 +17111,35 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_quark_route2_rconn_center_ratio_bridge_obstruction.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "ring_monodromy_does_not_force_car_note_2026-06-04",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
+        "fermion_parity_z2_grading_theorem_note_2026-05-02",
+        "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/ring_monodromy_car.py",
       "transitive_descendants": 17
     },
     {
@@ -29744,35 +29745,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "ring_monodromy_does_not_force_car_note_2026-06-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-        "fermion_parity_z2_grading_theorem_note_2026-05-02",
-        "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/ring_monodromy_car.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42472,6 +42444,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 26,
-  "total_pending": 1409
+  "ready_count": 25,
+  "total_pending": 1408
 }

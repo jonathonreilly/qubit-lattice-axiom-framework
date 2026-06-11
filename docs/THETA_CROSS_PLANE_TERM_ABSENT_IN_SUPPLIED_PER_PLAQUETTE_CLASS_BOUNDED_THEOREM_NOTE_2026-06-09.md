@@ -67,9 +67,13 @@ per-plaquette action class, no local cross-plane `F tilde F` slot appears.
 - **N5 - rhetoric audit.** The tested resolution is the local one-plaquette
   action summand. The theorem does not claim absence across all local,
   finite-range, nonlocal, or dynamically selected action classes.
-- **N6 - partial-closure scan.** A future retained derivation forcing
-  per-plaquette/minimal action support would make this theorem more useful,
-  but that derivation is not supplied here.
+- **N6 - partial-closure scan.** A future derivation forcing
+  per-plaquette/minimal action support would make this theorem more useful;
+  that derivation is not supplied here. The bounded finite-enumeration support
+  for the explicit unit-neighborhood link-support license is
+  `PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md`
+  (linked under Dependencies); this note composes with that licensed route
+  rather than re-deriving the action class.
 - **N7 - steelman.** A hostile reviewer can add a multi-plaquette clover term
   with cross-plane support and recover a local `F tilde F` density. That is a
   valid objection to any broader claim, and is why this note is conditional.
@@ -83,8 +87,20 @@ full strong-CP closure.
 
 ## Dependencies
 
-- [NEWPHYSICS_NP_STRONG_CP_THETA_NOTE_2026-05-10_npCP.md](NEWPHYSICS_NP_STRONG_CP_THETA_NOTE_2026-05-10_npCP.md) - prior single-plaquette theta-class boundary.
-- [STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md](STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md) - multi-plaquette reopening boundary preserved here.
+- [PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md](PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md) -
+  bounded finite-enumeration support for the explicit unit-neighborhood
+  link-support license. The per-plaquette action class remains an input to
+  this note; this note does not derive the class from adjacency, the
+  kinetic-isotropy primitive, or the framework baseline.
+
+Context (not load-bearing: the proof is the self-contained mixed-derivative
+computation checked by the primary runner and uses no content from these
+notes):
+
+- `NEWPHYSICS_NP_STRONG_CP_THETA_NOTE_2026-05-10_npCP.md` - prior
+  single-plaquette theta-class boundary.
+- `STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md` -
+  multi-plaquette reopening boundary preserved here.
 
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency. The independent audit lane is the only status

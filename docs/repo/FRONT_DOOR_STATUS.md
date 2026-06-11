@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1400 |
+| Applied audit verdicts | 1401 |
 | Retained-grade rows, including boxed decorations | 1286 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 206 |
@@ -21,7 +21,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Open gates | 38 |
 | Unaudited rows | 1437 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 19 |
+| Audited conditional rows | 20 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1445 |
-| Ready rows | 45 |
+| Total pending rows | 1444 |
+| Ready rows | 44 |
 | Cycle-break targets | 0 |
-| Critical pending | 303 |
+| Critical pending | 302 |
 | High pending | 284 |
 | Medium pending | 421 |
 | Leaf pending | 437 |
 
 Next ready rows by queue order:
 
-- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; audit_in_progress
 - [`spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md) - critical; audit_in_progress
 - [`single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`single_clock_uniqueness_scope_boundary_2026-06-06`](../../docs/SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`axiom_first_spin_statistics_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 - [`microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) - critical; unaudited
+- [`axiom_first_reeh_schlieder_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

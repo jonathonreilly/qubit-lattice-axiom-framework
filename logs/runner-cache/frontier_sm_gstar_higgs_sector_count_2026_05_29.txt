@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
-runner_sha256: f07d1d9e3723b73bb48cb6f0554307c63c571b75a64a77d520f49b87b1d4cc21
+runner_sha256: 7ba4d37651779d9daabe440f4c94daa6e8b47cac3223f593656cd6c3dc8b4ff0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -33,11 +33,12 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] single-Higgs Z_3 charge q_H is a right-basis relabeling -> Y Y^dag invariant  (q_H gauge-redundant for PMNS; not a second physical doublet)
   [PASS] pseudoreality epsilon U^* = U epsilon -> tilde H determined by H (one field)  (tilde H = i tau_2 H^* is not an independent doublet)
 
-[3] genuine 2HDM (two thermalized doublets) requires a second field
+[3] 2HDM boundary and missing EWSB-field-content bridge
   [PASS] D17: H_unit (1,1) scalar singlet on Q_L has Z^2 = 6
   [PASS] D17: no second (1,1) composite scalar -> alternatives Z^2 in {8, 9/2, 24} != 6  ((1,8)=8, (3,1)=9/2, (8,3)=24)
-  [PASS] genuine 2HDM needs an independent fundamental/second-composite scalar (admitted, not retained)  (absent from the bare action (D16); not framework-native)
-  [PASS] framework-native EWSB scalar count for the census = 1 doublet (4 dof)  (outcome (a): g_* = 106.75 stands on framework-native content)
+  [PASS] note names the missing H_unit -> EWSB-doublet bridge instead of claiming closure
+  [PASS] note states no new retained bridge for H_unit, one-Higgs/Z3, or 2HDM support
+  [PASS] note states g_* = 106.75 only under the named EWSB-field-content bridge
 
 [4] note + authority cross-checks
   [PASS] authority exists: YT_WARD_IDENTITY_DERIVATION_THEOREM.md
@@ -55,7 +56,8 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] note file exists
   [PASS] note records load-bearing token: '106.75'
   [PASS] note records load-bearing token: '110.75'
-  [PASS] note records load-bearing token: 'bounded_theorem'
+  [PASS] note records load-bearing token: 'conditional / support'
+  [PASS] note records load-bearing token: 'bounded support note'
   [PASS] note records load-bearing token: 'R-HIGGS'
   [PASS] note records load-bearing token: 'H_unit'
   [PASS] forbidden-import disclaimer paragraph present in §1
@@ -71,7 +73,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] no new-vocabulary token: 'algebraic universality'
 
 ==============================================================================
-PASS=51 FAIL=0
+PASS=53 FAIL=0
 ==============================================================================
 
 ----- stderr -----

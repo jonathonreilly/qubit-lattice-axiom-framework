@@ -28,3 +28,7 @@ env/
 .claude/science/physics-loops/**/supervisor.log
 .claude/science/physics-loops/**/supervisor_status.json
 .claude/scheduled_tasks.lock
+
+# Long-running plaquette MC checkpoints are large resume artifacts; commit the
+# JSON summaries and per-stream outputs, not the active lattice checkpoints.
+outputs/plaquette_mc_grade4_2026_06_11/checkpoints/

@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_delta0_attachment_mean_field_feedback_probe_2026_06_11.py
+runner_sha256: 788f94bf5877a501ca672e7b9293058b258fecef18e7ad292e5a2c3b18190296
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.92
+status: ok
+----- stdout -----
+==============================================================================
+ frontier_hierarchy_delta0_attachment_mean_field_feedback_probe_2026_06_11.py
+ Block04 of the DELTA0 blocking campaign: FIRST FALSIFIABLE ATTEMPT at the
+ attachment rule.  Does mean-field link un-freezing (the decimated mode's
+ induced action -ln(2u) feeding the link self-consistency) supply one
+ factor alpha_s = 0.1033038 per taste decoupling?  Computed exactly under
+ DECLARED models M1 (Wilson mean field, beta = 6; U(1)/SU(2)/SU(3)) and M2
+ (induced action -n_c n ln(2u), declared link sharing).
+ Parent note: docs/HIERARCHY_DELTA0_ATTACHMENT_MEAN_FIELD_FEEDBACK_PROBE_
+              NOTE_2026-06-11.md
+==============================================================================
+
+--- Section A [C]: block01 reuse — induced action is exactly -ln(2u) per mode per color; frozen-link shift is zero ---
+  [PASS][C] A1 block01 baseline reproduced: D real antisymmetric, D^2 = -4 u^2 I, exact taste eigenbasis with T^-1 T = I (same construction code as block01)
+  [PASS][C] A2 per-mode decimation factor recomputed from the block01 code AS A FUNCTION of the link dressing: |S(u)| = 2u exactly at u in {2/3, 3/5} (m = 0), per-mode u-degree 1 — so the induced action per mode per color is exactly -ln(2u), an EXPLICIT function of u  (exact Gaussian-rational; weight (2u)^(n_c n) per block)
+  [PASS][C] A3 frozen-link Schur cross-term is EXACTLY ZERO at both rational couplings (block01 B4 reproduced): at frozen links a decimation shifts NO coupling — link un-freezing via the u-dependence of -ln(2u) is the only mean-field feedback channel left
+
+--- Section B [C]: one-link integrals F(h) per group variant (declared model M1 infrastructure) ---
+  [PASS][C] B1 U(1) one-link integral: F(h) = I_1(h)/I_0(h) (Gautschi continued-fraction backward recurrence, overflow-safe) matches deterministic 512-point quadrature of <cos th> under exp(h cos th) to < 1e-12 at 4 test h; small-h slope F'(0) = <cos^2 th>_Haar = 1/2
+  [PASS][C] B2 SU(2) one-link integral: F(h) = I_2(2h)/I_1(2h) (Gautschi continued-fraction backward recurrence, overflow-safe) matches deterministic 512-point Weyl quadrature (sin^2 measure, weight exp(2h cos th)) to < 1e-12 at 4 test h; small-h slope F'(0) = (1/N) <(Re Tr U)^2>_Haar = 1/2 (pseudo-real fundamental: <(Tr U)^2>_Haar = 1, not 0)
+  [PASS][C] B3 SU(3) one-link integral: Weyl eigenvalue-angle measure certified by exact Haar moments (<1> = 1 via norm 3!, <Re Tr U> = 0, <(Re Tr U)^2> = 1/2, <(Re Tr U)^3> = 1/4, all < 1e-12 — midpoint rule exact on trig polynomials); 64- vs 96-grid F(h) agreement < 1e-12 at 4 test h; small-h slope F'(0) = (1/N) <(Re Tr U)^2>_Haar = (1/3)(1/2) = 1/6  (norm = 1.00000000000000, <t^2> = 0.50000000000000, <t^3> = 0.25000000000000)
+
+--- Section C [A]: declared-model self-consistency solves (M1 + M2, uniform share) ---
+    U(1):  u*(0) = 0.9853748910;  u*(16) = 0.9857076265, u*(15) = 0.9856873008
+    SU(2):  u*(0) = 0.9521287139;  u*(16) = 0.9534944113, u*(15) = 0.9534118085
+    SU(3):  u*(0): no nontrivial root (disordered branch);  u*(16) = 0.7892969743, u*(15) = 0.7867845593
+  [PASS][A] C1 self-consistency u = F((6 beta u^3 + kappa/u)/N) solved per variant for n = 16 and n = 15 (uniform share kappa = 3n/64); every solved root has residual |u - F(h(u))| < 1e-12 (deterministic scan + bisection)
+  [PASS][A] C2 all fermion-feedback roots are interior to (0, 1) in all three group variants; u*(16) and u*(15) both exist (the kappa/u source forbids the trivial root)
+
+--- Section D [A]: the readout — feedback factor R per decimation vs the required alpha_s ---
+    U(1):  R_det = u*(15)/u*(16) = 0.9999793795;  R = (u*(15)/u*(16))^-2 = 1.0000412422;  R/alpha_s = 9.6806
+    SU(2):  R_det = u*(15)/u*(16) = 0.9999133683;  R = (u*(15)/u*(16))^-2 = 1.0001732859;  R/alpha_s = 9.6819
+    SU(3):  R_det = u*(15)/u*(16) = 0.9968168952;  R = (u*(15)/u*(16))^-2 = 1.0063967357;  R/alpha_s = 9.7421
+  [PASS][A] D1 per-decimation feedback factors computed per variant: R_det = u*(15)/u*(16) on the per-mode determinant share 2u, and R = R_det^(-2) on the ratio-normalized readout alpha_s(u) = alpha_bare/u^2; all finite and positive
+  [PASS][A] D2 in EVERY declared variant the feedback factor R is O(1) and close to 1 (|R - 1| < 0.5): the link un-freezing feedback is a small saddle shift, not a per-decoupling suppression  (U(1): R = 1.000041, SU(2): R = 1.000173, SU(3): R = 1.006397)
+  [PASS][A] D3 displacement R/alpha_s computed exactly per variant; in NO variant does R land within a factor 2 of the required alpha_s = 0.1033038 — the declared verdict trigger for 'supplied' or 'bounded observation' fires in NO variant  (U(1): R/alpha_s = 9.681, SU(2): R/alpha_s = 9.682, SU(3): R/alpha_s = 9.742)
+  [PASS][A] D4 branch robustness (SU(3), uniform share): the declared model's small-u branch ALSO gives an O(1) feedback factor outside a factor 2 of alpha_s — no branch selection rescues the candidate rule  (small branch: u*(16) = 0.247288, u*(15) = 0.237144, R = 1.087382, R/alpha_s = 10.526)
+
+--- Section E [A]/[C]: robustness — sharing conventions ---
+  [PASS][C] E1 sharing conventions: per-site share (per-site n_c n/16 split over the site's 8 incident links, each link fed by its 2 endpoints) equals the uniform share kappa = n_c n/64 EXACTLY (Fraction identity 2 x (n_c n/16)/8 = n_c n/64) — the two declared conventions give the SAME self-consistency, hence the same R  (kappa(n=16) = 3/4 per link)
+  [PASS][A] E2 stress brackets (kappa -> 2 kappa and kappa/2, deliberate mis-sharing by a factor 4 overall): in every variant R stays O(1) (|R - 1| < 0.5) and outside a factor 2 of alpha_s — the conclusion does NOT depend on the sharing convention  (U(1) x2: R = 1.000079; U(1) x1/2: R = 1.000021; SU(2) x2: R = 1.000324; SU(2) x1/2: R = 1.000090; SU(3) x2: R = 1.006024; SU(3) x1/2: R = 1.013302)
+
+--- Section F [A]/[B]: fenced diagnostics, scans, verdict logic ---
+    diagnostic: U(1): u*(0) = 0.9853749 vs licensed u_0 = 0.8776814 (delta = +0.1077)
+    diagnostic: SU(2): u*(0) = 0.9521287 vs licensed u_0 = 0.8776814 (delta = +0.0744)
+    diagnostic: SU(3): NO nontrivial pure-gauge root at beta = 6 (disordered mean-field branch)
+  [PASS][A] F1 FENCED DIAGNOSTIC (bounded observation, model-diagnostic context ONLY — NO claim that the mean-field model reproduces the licensed surface): pure-gauge u*(0) at beta = 6 computed and reported per variant; every root found has residual < 1e-12
+  [PASS][B] F2 upstream campaign notes on disk: block02 records the reduction target 'one factor alpha_s = 0.1033038 per taste decoupling' and block01 records the zero frozen-link coupling shift this probe starts from
+  [PASS][B] F3 licenses on disk: plaquette B1 reuse license ('admitted comparison/reuse number', 0.5934 — the licensed surface this probe does NOT claim to reproduce); DELTA0 gate note open; YT-P2 names 'non-perturbative blocking renormalization' and leaves blocking-RG routes open (this probe lives inside that permitted route)
+  [PASS][B] F4 parent-note honesty fences on disk: the note labels M1/M2 'declared model' content, states the mean-field F is 'not a licensed framework object', records the verdict as 'refuted' for this route, and 'does not close the DELTA0 gate'; forbidden closure tokens absent  (missing = [], hit = [])
+  [PASS][A] F5 verdict logic (declared up front in the docstring) applied to the computed displacements: 'supplied' fires in no variant, 'bounded observation' fires in no variant, so the candidate rule 'alpha_s per decoupling = mean-field link feedback' is REFUTED under every declared variant and sharing convention  (min displacement = 9.681x alpha_s)
+
+  RESIDUAL (declared-open): the alpha_s PER-DECOUPLING ATTACHMENT rule (block02 R1) remains UNSUPPLIED.  This probe REFUTES one candidate supplier — mean-field link un-freezing feedback of the induced action -n_c n ln(2u) — under every declared variant (U(1), SU(2), SU(3)) and sharing convention: the feedback factor R is O(1), an order of magnitude (9.7x-10.5x displacement) above alpha_s = 0.1033038.
+  RESIDUAL (declared-open): remaining candidate routes (declared-open, none probed here): (i) beyond-mean-field link fluctuations / exact one-link Haar integrals at strong coupling in the Kawamoto-Smit lineage; (ii) vacuum-polarization dressing of the Green-kernel readout itself (the 1/(4 pi) chain), rather than of the saddle u; (iii) a non-link-feedback transport rule attaching alpha_s per taste threshold directly.
+  RESIDUAL (declared-open): the DELTA0 magnitude gate (HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) remains OPEN: the obstruction is sharpened (one named candidate route eliminated), not closed.
+
+--- Terminal class-D fence: external comparators ---
+  (No PDG quantity is needed or consumed by this probe; the declared-model
+   feedback factors and the displacement are internal structure only.)
+  [PASS][D] G1 self-scan: the PDG VEV literal appears ZERO times in this runner's source — no comparator consumed anywhere
+
+==============================================================================
+ Breakdown: A=9 B=3 C=7 D=1 RESIDUAL=3
+ TOTAL: PASS=20 FAIL=0
+ VERDICT: established (bounded, declared models): the induced action of one
+   decimated taste mode is exactly -ln(2u) per color as a function of the
+   link dressing, and feeding it into the mean-field self-consistency shifts
+   the saddle by an O(1)-with-small-deviation factor R close to 1 in every
+   declared variant — an order of magnitude (9.7x-10.5x) above the required
+   alpha_s per decoupling.  REFUTED (this route): the alpha_s-per-decoupling attachment
+   rule canNOT be mean-field link feedback under any declared variant or
+   sharing convention.  NOT claimed: closure, any licensed-surface
+   reproduction, or any model-independent statement.  DELTA0 stays open;
+   obstruction sharpened (one candidate route eliminated), not closed.
+==============================================================================
+
+----- stderr -----
+

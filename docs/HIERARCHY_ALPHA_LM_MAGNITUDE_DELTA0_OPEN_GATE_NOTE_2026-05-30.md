@@ -51,6 +51,30 @@ A future source could close this gate by deriving an explicit `alpha_bare`
 dependence inside the relevant block observable, or by deriving a baseline-native
 transport rule that supplies the same constant-ratio coupling-power magnitude.
 
+## Sharpening record (2026-06-11; gate unchanged, still open)
+
+Two downstream probes (backticked context pointers; citation direction
+is downstream -> this gate) sharpened the obstruction surface without
+closing it:
+
+- `HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`
+  — exact single taste-mode decimation on the minimal `2^4` block
+  carries `m +- 2i u_0` per mode (magnitude `2 u_0` at `m = 0`) with
+  exactly zero induced coupling shift on kept modes; the bare per-mode
+  conversion target is `N = alpha_LM/(2 u_0) = 1/(8 pi u_0^2)`.
+- `HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`
+  — over a declared dressed/undressed ratio normalization the per-mode
+  factor is `u_0` and the gate's open content reduces exactly to ONE
+  unsupplied transport rule: one factor
+  `alpha_s = alpha_bare/u_0^2` (fact 3's third progression member)
+  per taste decoupling.
+
+The zero-induced-shift result forecloses quadratic-block-algebra
+closure routes at frozen links; surviving routes run through link
+un-freezing (mean-field feedback, one-link Haar integrals at strong
+coupling), readout-side dressing of the Green-kernel chain, or a
+non-link transport rule.
+
 ## Verification
 
 Run:

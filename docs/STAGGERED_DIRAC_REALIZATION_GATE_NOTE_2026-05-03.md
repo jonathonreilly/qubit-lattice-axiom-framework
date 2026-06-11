@@ -341,6 +341,16 @@ hidden inside the composition:
    substep-1 single-mode surface (one Grassmann mode per dim-2 site
    module leaves no room for a 2-component spinor per site), which is
    itself bounded on the spin-statistics support input.
+   *Narrowing record (2026-06-11; downstream pointer, backticked to
+   keep citation direction downstream -> this gate):* the prose route
+   above is now a computed narrow theorem —
+   `STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md`
+   excludes the named 2-component rival via the CAR dimension
+   obstruction (CAR(2) = `M_4(C)` admits no nonzero *-homomorphism
+   into the dim-2 module's `M_2(C)`), bounded on the substep-1 clause
+   at its declared grade. Non-nearest-neighbor and other
+   one-mode-compatible kinetic forms remain open; this residual
+   narrows, it does not vanish.
 2. **Spin-statistics support tier.** Substep 1's bosonic exclusion rests on the
    spin-statistics support input. The runner computes its finite
    core (the CCR trace obstruction), but the full spin-statistics statement remains

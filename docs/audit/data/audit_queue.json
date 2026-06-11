@@ -3,7 +3,7 @@
     "critical": 282,
     "high": 282,
     "leaf": 441,
-    "medium": 421
+    "medium": 420
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -7990,7 +7990,7 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
+      "claim_id": "hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -7998,19 +7998,20 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "staggered_dirac_realization_gate_note_2026-05-03",
-        "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25",
-        "koide_dimensionless_note_2026-04-24"
+        "g_bare_derivation_note",
+        "staggered_dirac_realization_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 14,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.285,
-      "note_path": "docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 7.5,
+      "note_path": "docs/HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_koide_q_source_domain_canonical_descent.py",
-      "transitive_descendants": 77
+      "runner_path": "scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py",
+      "transitive_descendants": 31
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17147,33 +17148,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30.py",
       "transitive_descendants": 39
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_derivation_note",
-        "staggered_dirac_realization_gate_note_2026-05-03"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 6.524,
-      "note_path": "docs/HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py",
-      "transitive_descendants": 22
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42916,6 +42890,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 35,
-  "total_pending": 1426
+  "ready_count": 34,
+  "total_pending": 1425
 }

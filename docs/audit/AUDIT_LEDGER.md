@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1424 |
+| unaudited | 1423 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1261 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1740 |
+| `unaudited` | 1739 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 501 |
-| `high` | 494 |
-| `medium` | 850 |
+| `high` | 495 |
+| `medium` | 849 |
 | `leaf` | 1316 |
 
 - **Retained pending chain closure:** 16
@@ -1412,6 +1412,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10523,6 +10524,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The readout map is exactly L(u,v,w,z)=diag(u,v,w), with the z slot mapped to zero.  _(class `A`)_
 - **chain closes:** True — Given the stated single-slot images, the rank, kernel, image, fiber, and quotient claims follow by elementary linear algebra. The broader selector-admissibility factorization is explicitly excluded from the theorem under audit.
 - **rationale:** The bounded claim is a direct algebraic closure from the explicitly defined map and its computed matrix L = [[1,0,0,0],[0,1,0,0],[0,0,1,0]]. The runner source does instantiate the relevant projectors and Γ_1 action to check the stated single-slot images, then verifies the kernel, quotient fibers, covariance, and invariant quadratic family. The note cleanly separates the unproved admissibility-implies-constancy statement as conditional, so that open extension does not contaminate the bounded theorem.
+- **auditor confidence:** high
+
+### `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25`
+
+- **Note:** [`KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md`](../../docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite C3 linear algebra: the unique trace-preserving onsite scalar descent A=span{P_plus,P_perp} -> D^C3 is trace averaging, agrees with diagonal compression on A, and kills the Z coordinate modulo common scalars; no physical Koide closure is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-134516-1b09dde973-koide_q_source_domain_canoni`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the target is D^C3 = span{I}, every descent has E_loc(X)=lambda(X)I, and trace preservation forces lambda(X)=Tr(X)/3, so E_loc(X)=(Tr X/3)I.  _(class `A`)_
+- **chain closes:** True — The algebraic descent theorem closes: P_plus=J/3, P_perp=I-J/3, Tr(P_plus)=1, Tr(P_perp)=2, Tr(Z)=-1, and Diag(alpha P_plus+beta P_perp)=((alpha+2 beta)/3)I. The downstream physical/Q reading remains conditional on the admitted source-domain and staggered-Dirac context.
+- **rationale:** The load-bearing step is a genuine class A algebraic identity, not a renaming or tuned numerical match, and the independent finite-matrix check agrees with the runner. However the packet explicitly lists docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md as a cited/admitted context authority with effective_status unaudited, and the source note itself says the physical source-domain law is not proved. Under the rubric, the exact descent can be accepted only at conditional/bounded scope until that dependency or the scope boundary is repaired.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25`

@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1447 |
-| Retained-grade rows, including boxed decorations | 1308 |
+| Applied audit verdicts | 1448 |
+| Retained-grade rows, including boxed decorations | 1309 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 837 |
+| Retained bounded rows | 838 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
 | Unaudited rows | 1422 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1426 |
+| Total pending rows | 1425 |
 | Ready rows | 40 |
 | Cycle-break targets | 0 |
-| Critical pending | 282 |
+| Critical pending | 281 |
 | High pending | 291 |
 | Medium pending | 425 |
 | Leaf pending | 428 |
 
 Next ready rows by queue order:
 
-- [`pmns_three_flux_holonomy_closure_note`](../../docs/PMNS_THREE_FLUX_HOLONOMY_CLOSURE_NOTE.md) - critical; audit_in_progress
+- [`pmns_c3_character_holonomy_closure_note`](../../docs/PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md) - critical; unaudited
 - [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; unaudited
 - [`koide_full_lattice_schur_inheritance_note_2026-04-18`](../../docs/KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18.md) - critical; unaudited
 - [`gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`](../../docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
@@ -57,7 +57,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **434**.
+- Non-retained-grade cited rows in publication tables: **433**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -70,9 +70,9 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `audited_renaming` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audit_in_progress` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
+| medium | `audited_numerical_match` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

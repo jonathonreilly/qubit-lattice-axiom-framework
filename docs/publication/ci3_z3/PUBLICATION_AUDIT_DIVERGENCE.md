@@ -26,13 +26,12 @@ publication tables phrase it.
 | critical | `audited_renaming` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audit_in_progress` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 434
+**Total non-retained-grade rows in publication tables:** 433
 
 ## Per-row breakdown
 
@@ -154,7 +153,6 @@ publication tables phrase it.
 | critical | `pmns_selector_sector_odd_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `pmns_selector_sign_to_branch_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `pmns_selector_unique_amplitude_slot_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
-| critical | `pmns_three_flux_holonomy_closure_note` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md |
 | critical | `quark_bimodule_lo_shell_normalization_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `quark_cp_carrier_completion_note_2026-04-18` | `audited_numerical_match` | `audited_numerical_match` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `quark_jts_affine_physical_carrier_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

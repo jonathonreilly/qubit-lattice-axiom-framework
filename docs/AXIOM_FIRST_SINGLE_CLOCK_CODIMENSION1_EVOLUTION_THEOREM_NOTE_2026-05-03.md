@@ -256,19 +256,32 @@ No fitted parameters. No observed values used as proof inputs.
   generically carries BCH commutator tails beyond the constituent
   range (runner block [C-RANGE], computed non-vacuity witness).
   (S1′) and (S2′a,b) do not consume (B-RANGE); only (S2′c) does.
-  **Supplier wiring (2026-06-11):** the named
-  exponentially-decaying-interaction Lieb-Robinson authority now
-  exists as a one-hop source-note,
+  **Supplier wiring (2026-06-11) — the retirement pair.** Both halves
+  of the (B-RANGE) retirement now exist as one-hop sources:
+  - *Class theorem (LR for the quasilocal class):*
   [`EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md`](EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md)
-  (finite-block quasilocal LR bound with displayed constants for the
-  Hastings-Koma weighted class containing log-transfer generators;
-  its runner witnesses a concrete `-log T` with finite weighted norm
-  and a verified cone). Once that row is retained-grade, (S2′c) can
-  be restated over the quasilocal class — replacing (R-CD) L1/L3 by
-  the quasilocal bound — and (B-RANGE) retires as a premise. Until
-  then (B-RANGE) remains declared and this row remains bounded; this
-  paragraph registers the supplier edge so the audit chain can
-  process both rows together.
+  — finite-block Lieb-Robinson bound with displayed constants for the
+  Hastings-Koma weighted class (`F_{mu,alpha}` interaction norms),
+  the class containing log-transfer generators.
+  - *Membership theorem (the actual generator is in the class):*
+  [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+  — retained_bounded: on the free (`U = 1`) bilinear two-step sector,
+  the exact reconstructed `H = -log(T̂²)/(2 a_τ)` has the sharp
+  exponential hopping bound
+  `|h(z)| <= (1/a_τ) C_d(η, m) e^{-η ||z||_∞}` for every
+  `η < η* = arcsinh(m)` (explicit prefactor; sharp rate), hence finite
+  Hastings-Koma weighted norm for any `mu < η*` — and it also proves
+  the exact `H` is **not** finite-range, which is precisely why
+  (B-RANGE) was needed as written.
+  Composition: once the class theorem reaches retained grade, (S2′c)
+  can be restated over the quasilocal class on the **free bilinear
+  sector** — replacing (R-CD) L1/L3 by the quasilocal bound with
+  `J_F` supplied by the membership row — and (B-RANGE) retires there;
+  the gauged/interacting membership remains the open residual (the
+  membership row's own declared sector boundary). Until then
+  (B-RANGE) remains declared and this row remains bounded; this
+  paragraph registers both supplier edges so the audit chain can
+  process the three rows together.
 
 ## Statement
 

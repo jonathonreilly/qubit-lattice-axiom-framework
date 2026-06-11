@@ -372,6 +372,27 @@ What this section does and does not replace:
 - Downstream arithmetic that adopts `I_S ∈ [4, 10]` remains conditional on that cited
   premise unless a later native full-`I_S` runner supplies the missing closure.
 
+## Native BZ certificate follow-on: I_leg definition gap (2026-06-11; audit-requested)
+
+The in-repo ratio-chain does not currently display a defining BZ expression for the
+staggered external-leg self-energy integral `I_leg` at the matching point. The
+chain names `I_leg` only as the common external-quark `Z_psi` term: the
+Rep-A/Rep-B note writes `2 * Z_psi^leg_A = 2 * C_F * I_leg` and says only that
+`I_leg` is the 1-loop lattice BZ integral for the quark self-energy; the
+Delta_1 note uses `I_S^cited = 2 * I_v_scalar + (-6) + 2 * I_leg` with a cited
+range for `I_leg`; and the H_unit native note enumerates the external self-energy
+topologies `D_S2`, `D_S3` but absorbs them into `Z_q` while defining only the
+`D_S1` scalar-vertex BZ integral.
+
+Therefore the missing native object is
+`I_leg^native(mu = 1/a; tadpole-improved Wilson-plaquette + 1-link staggered;
+external-quark Z_psi finite part)`. A full native reconstruction
+`I_S^native_full = 2 * I_v_scalar_native - 6 + 2 * I_leg_native` requires that
+object to be registered first. No native `I_leg` runner is added here, and the
+cited `I_S in [4, 10]` premise remains unchanged. This is an in-repo definition
+absence, not a claim that no valid lattice-PT `I_leg` expression exists
+externally.
+
 ## 3. Framework-specific P1 contribution at `α_LM = 0.0907`
 
 ### 3.1 Central estimate

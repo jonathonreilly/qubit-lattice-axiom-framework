@@ -59,8 +59,9 @@ Notes:
   (`theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`);
   (P2, positive-real mass orientation) K/CPT-invariant multiplicative
   determinant characters are phase-free
-  (`theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10`,
-  a standalone lemma with no AC_φλ gate dependency)
+  (`tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`;
+  the lemma carries a staggered-gate Tier-A dep, so the P2 discharge is
+  bounded on the surviving AC_φλ admission — the count still drops 2 → 1)
   composed with the determinant-readout bridge
   (`registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`,
   PR #3513: any Record-registrable scalar — finitely additive over disjoint
@@ -68,7 +69,7 @@ Notes:
   `arg det(M_u M_d)` phase datum is exhausted on the registrable surface;
   the standing modeling premise that the physical readout context is
   Record-supplied remains named there). Retirement gates: independent audits
-  of the P1/P2 basis notes (cross-plane, theta-P2 lemma, registrability
+  of the P1/P2 basis notes (cross-plane, K-orbit lemma, registrability
   theorem), and owner approval recorded per
   `docs/audit/AXIOM_MINIMALITY_POLICY.md` precedent.
   The prior no-go portfolio

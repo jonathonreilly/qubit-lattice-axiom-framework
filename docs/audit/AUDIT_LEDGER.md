@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 213 |
+| **retained** | 214 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 831 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1437 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1274 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1275 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
@@ -135,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1185,6 +1183,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17069,6 +17068,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Combining the bridge-derived edge-flip sign field epsilon(x)=(-1)^(x_1+x_2+x_3) with the A1 central pseudoscalar omega_global=sigma_1 sigma_2 sigma_3=iI gives omega(x)=epsilon(x) omega_global.  _(class `A`)_
 - **chain closes:** True — The cited bridge is retained_bounded and proves the unique scalar edge-flip grading on the Z^3 coordinate graph; multiplying by the central Pauli pseudoscalar is an algebraic closure, and the edgewise -1 ratio gives the stated chirality sign reversal. The eta checks are displayed Kawamoto-Smit phase definitions and gauge-cancellation consistency checks, not a derivation of the full kinetic operator.
 - **rationale:** Independent parity-path reasoning confirms that any scalar sign field flipping across every coordinate edge is s(0)(-1)^(x_1+x_2+x_3), and Pauli multiplication gives sigma_1 sigma_2 sigma_3=iI. Since iI is central, omega(x) gamma_mu omega(x+e_mu)^(-1) has the scalar ratio epsilon(x)/epsilon(x+e_mu)=-1, so the bounded chirality relation follows from the retained bridge without an extra H_staggered_chirality premise. The runner's finite GF(2) rank checks support the same edge-flip uniqueness on sample boxes, while its eta checks are algebraic/definitional and do not overclaim beyond the note's bounded scope.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-214300-2bd4a60a82-staggered_dirac_substep1_gra`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Substituting the Quantum/dim-two physical readout dim_C H_x = 2 into (D1)-(D3): candidate (B) is excluded because aleph_0 != 2, while the single-pair Grassmann candidate (G) matches because dim_C F_x = 2.  _(class `A`)_
+- **chain closes:** True — The accepted Quantum axiom plus retained dim-two row supply dim_C H_x = 2, and the finite exterior-algebra/CCR dimension comparison is algebraic. The Berezin determinant readout is supplied within the retained_bounded Grassmann-calculus authority, and the hard-core-boson statistics residual is explicitly out of scope.
+- **rationale:** The load-bearing collapse is a genuine algebraic closure over an accepted axiom premise and retained-grade inputs, not a definition substitution or tuned numerical match. Independent checking of the exterior-algebra module, CCR Fock tower, Pauli/Cl(3) dimension readout, and hard-core-boson boundary supports the stated narrow scope. The runner source performs actual symbolic matrix and finite-algebra checks and does not hard-code the contested collapse as a bare printout.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`

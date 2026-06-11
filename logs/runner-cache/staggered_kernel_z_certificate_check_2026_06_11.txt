@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/staggered_kernel_z_certificate_check_2026_06_11.py
+runner_sha256: cbdc4c31bf04c9215b83457928f43620f0bdd83aae65a9e93ad15b4e8127a5c2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.53
+status: ok
+----- stdout -----
+========================================================================
+[A] the two licensed representatives re-derived; the exact
+    symbolic Bloch closed form (all volumes); eigensolver tie
+========================================================================
+[PASS]  1. [A] both representatives Hermitian; frame-invariant uniform plaquette flux over all 192 plaquettes at L=4: K0 phi=+1, K1 phi=-1 -- the two-class surface re-derived self-contained (no kinetic-class-note import)
+[PASS]  2. [A] exact symbolic Bloch identity (symbolic kappa AND symbolic direction-3 weight c): H_c(kappa)^2 = 4(cos^2(k1/2) + cos^2(k2/2) + c^2 cos^2(k3/2)) I_8 -- at c = 1 the band family is +-2 sqrt(sum_mu sin^2 q_mu), q_mu = (pi - kappa_mu)/2, on the reduced Brillouin torus at ALL volumes (the all-L closed-form license)
+[PASS]  3. [A] Bloch decomposition tied to the explicit lattice eigensolver at L = 4, 8 (multiset equality, c = 1 and c = 1/2), and the K0 closed form 2 sum_mu cos p_mu tied likewise -- the symbol evaluations below ARE realized lattice-kernel spectra
+[PASS]  4. [A] normalization tie: the staggered central-difference Euclidean operator D_E (the retained det-positivity row's M_KS at U = 1) has |spec(i D_E)| = |spec(h_K1)| / 2 (multiset, L = 4) -- the two declared normalizations are the SAME kernel at scale lambda = 1/2, and cone data transforms exactly as V -> lambda V
+
+========================================================================
+[B] hypothesis (Z) certified for the K1 kernel, clause by
+    clause, with exact cone data
+========================================================================
+[PASS]  5. [B] (Z-i) the massless set is FINITE and exactly the 8 BZ corner points: E = 2 sqrt(sum sin^2 p_mu) = 0 iff every sin p_mu = 0 iff p_mu in {0, pi} (sympy solveset on [0, 2pi)) => |Z(h)| = 2^3 = 8; eigensolver kernel dims (8, 8, 8) at L = 4, 8, 12, L-CONSTANT; symbol-grid zero count at L = 128 is 8
+[PASS]  6. [B] (Z-ii) the cone is EXACT and the same at every corner: sin^2(c + q) = sin^2 q for c in {0, pi} (sympy), so E(p_j + q) = 2 sqrt(sum sin^2 q_mu) identically at all 8 corners; series E^2/4 = |q|^2 - (1/3) sum q_mu^4 + O(q^6) (sympy) => the cone term is exactly |2 I q|: V_j = 2 I_3 for every corner branch
+[PASS]  7. [B] (Z-ii) quantitative cone data (V, C_j, r_j) = (2I, 2/3, 1): | |E(p_j+q)| - |2Iq| | <= (2/3)|q|^3 <= (2/3)|q|^2 for |q| <= 1 -- chain: sin^2 x <= x^2; sin x >= x - x^3/6 >= 0 on [0,1] (scan min 0.0e+00 >= 0); sum q^4 <= |q|^4 (exact: difference = 2 sum_(mu<nu) q_mu^2 q_nu^2); sqrt(a) - sqrt(b) = (a-b)/(sqrt a + sqrt b); measured worst deviation ratio 0.3333 <= 2/3
+[PASS]  8. [B] (Z-iii) V_j = 2I is invertible and isotropic: det V = 8 != 0, sigma_min = 2; measured directional speeds at corners (0,0,0) and (pi,pi,pi) along axis/face-diagonal/body-diagonal/skew = 2.000000 (spread 2.2e-13) -- hypothesis (Z) holds for the K1 kernel with explicit data
+[PASS]  9. [B] cone weights, both declared normalizations: unit hopping |det V_j| = 8 per corner branch, sum |det V|^-1 = 8 x 1/8 = 1 per site (= 8 species per 2^3 cell, speed 2); central-difference h/2: V_j = I_3, |det V_j| = 1, sum |det V|^-1 = 8 per cell (speed 1) -- tied by the exact lambda^3 covariance det(lambda V)^-1 = lambda^-3 det(V)^-1; the convention-invariant datum is the count 8
+[PASS] 10. [B] definition match (textual): the (Z) certified above is FSB-K's own hypothesis -- the FSB note's defining text ('Hypothesis (Z) (point-like linear-cone zero set)', zero set 'is finite, and for each' branch an 'invertible real `3x3` matrix' V with the 'C_j |q|^2' bound) is exactly what checks 5-8 instantiate as (V, C_j, r_j) = (2I, 2/3, 1); only the DEFINITION text is consumed -- no theorem content, no grade
+RESIDUAL (declared-open): finite-L sampling is wrap-convention data: the PBC kernel realizes the 8 corner zeros iff 4 | L (certified at L = 4, 8, 12); the (Z) statement itself is about the Bloch band family on the Brillouin torus, exact at all volumes by the symbolic identity of check 2 (boundary B-Z-L)
+RESIDUAL (declared-open): two normalizations are declared (unit-hopping h and central-difference h/2); all cone data is stated in both and tied by exact scale covariance; neither is claimed canonical (boundary B-Z-N)
+
+========================================================================
+[C] the companion negative fact: the K0 kernel VIOLATES (Z)
+    (both clauses, exactly)
+========================================================================
+[PASS] 11. [C] (Z-i) FAILS for K0: zero-mode counts (20, 68, 140) at L = 4, 8, 12 = the lattice trace of the codim-1 symbol surface sum_mu cos p_mu = 0, growth exponent 1.78 -- extensive, not finite, not L-constant
+[PASS] 12. [C] (Z-i) fails EXACTLY: p(t) = (pi/2 + t, pi/2 - t, pi/2) is a one-parameter zero LINE of the K0 symbol for ALL t (sympy: cos(pi/2+t) + cos(pi/2-t) + cos(pi/2) = 0 identically) -- the zero set is uncountable in every neighborhood of (pi/2, pi/2, pi/2); no finite zero set exists
+[PASS] 13. [C] (Z-ii) fails: along the zero-line direction u the cone inequality |E(p0+tu)| >= |Vu| t - C t^2 forces |Vu| <= C t -> 0, i.e. V u = 0: ANY candidate cone matrix is singular; measured tangent speed 3.7e-10 (= 0 exactly by the check-12 identity), normal speed 3.4641 = 2 sqrt(3) -- a maximally degenerate non-cone
+[PASS] 14. [C] discipline (textual, on this note's own file): the K0 violation is a computed companion fact for the downstream consumer -- this note 'performs no selection', carries 'no thermal content', and declares status authority 'independent audit lane only'; both branches pass through the same machinery with the same tolerances
+RESIDUAL (declared-open): the K0 violation certificate is companion content for the named downstream composer; which kernel is realized (the P-FLUX bit) is neither assumed nor decided here (boundary B-Z-S)
+
+========================================================================
+[D] falsification legs: the certificate machinery is
+    quantitative and branch-sensitive, not vacuous
+========================================================================
+[PASS] 15. [D] weighted witness K1(c=1/2) (off the two-class surface -- anisotropic amplitude -- but inside FSB-K's realized class): zero set still 8 points (counts 8, 8 at L = 4, 8), detector V = diag(2.0000, 2.0000, 1.0000), det = 4: (Z) still HOLDS but with weight sum 8/4 = 2 != 1 -- the machinery tracks cone data quantitatively, it is not a rubber stamp
+[PASS] 16. [D] broken-cone witness K1(c=0): the detector reports V = diag(2.0000, 2.0000, 0.0e+00) SINGULAR (axis-3 speed 0), and the zero set goes extended (16, 32 = 4L at L = 4, 8) -- singular-V detection works on a perturbed kernel
+[PASS] 17. [D] quadratic comparator (scalar NN + on-site -6, off-surface): POINT-LIKE zero set (1, 1, 1) yet all directional speeds < 1e-5 => V = 0 singular -- the two (Z) clauses are detected independently (point-likeness alone does not pass)
+[PASS] 18. [D] non-vacuity of the decision: the (Z) machinery over {K1, K1(c=1/2), K0, K1(c=0), comparator} returns {pass, pass, fail, fail, fail} from computed zero counts and cone speeds ONLY, through one code path -- the flux certificates of check 1 are never read by the decision; no flux label, branch label, count-3, or species input enters it
+RESIDUAL (declared-open): the falsification witnesses K1(c=1/2), K1(c=0), and the comparator are declared OFF the licensed two-class surface (anisotropic amplitude / on-site sector); they exercise the machinery, they are not surface members (boundary B-Z-W)
+
+TOTAL: PASS=18 FAIL=0
+VERDICT: the flux-(-1) Kawamoto-Smit realized kernel satisfies hypothesis (Z) of FSB-K EXACTLY: massless set
+         = the 8 BZ corner points (L-constant, eigensolver-certified at L = 4, 8, 12; exact by the
+         all-volume symbolic Bloch identity), one exact isotropic cone V = 2I at every corner (V = I in the
+         central-difference normalization), explicit (V, C, r) = (2I, 2/3, 1), cone-weight sum = 1 per site
+         = 8 species per 2^3 cell. The flux-(+1) kernel VIOLATES both clauses of (Z): extensive zero set
+         20/68/140 with an EXACT zero line, and every candidate cone matrix singular along it. The machinery
+         is quantitative and branch-sensitive (falsification legs); no selection is performed and no
+         thermal content is consumed: this row only certifies kernel geometry for the named downstream
+         composer.
+
+----- stderr -----
+

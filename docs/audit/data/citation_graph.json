@@ -48922,10 +48922,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "higgs_mass_from_axiom_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "pmns_twisted_flux_transfer_holonomy_boundary_note"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.repo_organization",
@@ -94064,17 +94064,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "higgs_mass_from_axiom_note",
         "pmns_twisted_flux_transfer_holonomy_boundary_note",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "koide_full_lattice_schur_inheritance_note_2026-04-18",
         "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
         "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
         "hierarchy_dimensional_compression_note",
-        "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25"
+        "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
+        "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2108634f41f4a9d5e003b660f2231215b1395eec5f64e9969a5dd94296d82b48",
+      "note_hash": "120c9d67b0f06562da1e16c003e88cbe3f47221cb36d9e931788913f771f4b5a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

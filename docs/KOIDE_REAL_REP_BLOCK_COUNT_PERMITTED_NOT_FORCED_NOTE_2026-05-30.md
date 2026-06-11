@@ -113,9 +113,12 @@ that could supply the collapse are not established by this note; the retained
 note examining the angular kernel directly is a no-go
 ([`ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`](ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md):
 the weight `w(theta)` is not uniquely determined), and the `SO(2)` quotient is
-carried on
-[`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`](KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
-as a definitional step, not a derivation.
+carried on `KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`
+as a definitional step, not a derivation (context, not load-bearing: this
+note's N4 discipline below already classifies that row as context for the
+open quotient handle, and its audit verdict — audited_renaming, the quotient
+carrier is locally defined rather than derived — confirms exactly the
+characterization used here; no content from it is consumed as a premise).
 
 ## Boundary
 

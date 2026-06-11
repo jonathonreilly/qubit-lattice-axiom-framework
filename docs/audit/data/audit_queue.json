@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 281,
+    "critical": 280,
     "high": 291,
     "leaf": 428,
     "medium": 425
@@ -8,37 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "pmns_c3_character_holonomy_closure_note",
-      "claim_scope": "Given the retained oriented-cycle frame and the bounded one-angle holonomy law, the exact C3 character phases give an invertible three-readout linear system on the reduced graph-first PMNS cycle family; sole-axiom production of nontrivial values is not audited or claimed.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "pmns_oriented_cycle_channel_value_law_note",
-        "pmns_three_flux_holonomy_closure_note",
-        "pmns_twisted_flux_transfer_holonomy_boundary_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
-        "scripts/frontier_pmns_three_flux_holonomy_closure.py",
-        "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
-        "scripts/pmns_lower_level_utils.py"
-      ],
-      "load_bearing_score": 11.511,
-      "note_path": "docs/PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_pmns_c3_character_holonomy_closure.py",
-      "transitive_descendants": 515
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -42920,6 +42889,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 40,
-  "total_pending": 1425
+  "ready_count": 39,
+  "total_pending": 1424
 }

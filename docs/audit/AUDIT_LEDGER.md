@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 838 |
+| **retained_bounded** | 839 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1421 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1282 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1283 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
@@ -135,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `pmns_c3_character_holonomy_closure_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -980,6 +978,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `pmns_c3_character_holonomy_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_commutant_eigenoperator_selector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13954,6 +13953,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At ORDER=48 the exact-rational matching matrix for (r=2, d=12) has rank 39 equal to the 39 unknowns, and the ORDER=52 recomputation again has rank 39.  _(class `A`)_
 - **chain closes:** True — The restricted packet supplies the Bessel-determinant coefficient construction, the matching-matrix formula, runner source, and completed exact-rational output. An independent determinant-permutation coefficient extraction and Gauss-Jordan rank check reproduces a0=1, a2=1/36, a4=1/2592, a10=23/145118822400, rank 39 at ORDER=48 and ORDER=52, and the d=10,11 ranks.
 - **rationale:** The load-bearing claim is a finite linear-algebra statement over exact rationals, not an all-order minimal-annihilator claim. The runner source genuinely computes the Bessel-determinant Taylor coefficients and matching-matrix ranks rather than printing constants or importing the contested conclusion. The only cited upstream authority is retained_bounded, and the note explicitly excludes the open all-order bridge from scope.
+- **auditor confidence:** high
+
+### `pmns_c3_character_holonomy_closure_note`
+
+- **Note:** [`PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md`](../../docs/PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded reduced-readout closure: given the retained hw=1 cycle frame and one-angle holonomy law, the C3 character phases furnish an invertible three-holonomy readout for A_fwd(u,v,w), without deriving nontrivial PMNS values from the sole axiom.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-233951-6161bbecf2-pmns_c3_character_holonomy_c`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On A_fwd(u,v,w), the one-angle holonomies at the native C3 phases 0, 2 pi/3, and 4 pi/3 have design matrix [[2,0,1],[-1,sqrt(3),1],[-1,-sqrt(3),1]] with nonzero determinant, so (u,v,w) are reconstructed exactly.  _(class `A`)_
+- **chain closes:** True — The cited retained/retained_bounded authorities supply the projected cycle C, the reduced oriented-cycle family, and the one-angle holonomy law. Independently, the basis Gram factors give h_phi=2u cos(phi)+2v sin(phi)+w and the C3-phase matrix has determinant 6 sqrt(3), so the reduced coordinates invert exactly.
+- **rationale:** The load-bearing computation is finite matrix algebra over cited retained-grade bounded inputs, not a numerical match or external comparator check. The independent formula inventory confirms the signs, factors, normalization, and determinant in the displayed design matrix. The clean verdict is only for the bounded reduced-cycle readout closure; the note's sole-axiom nontrivial-value blockage is treated as a caveat, not as an audited no-go theorem.
 - **auditor confidence:** high
 
 ### `pmns_commutant_eigenoperator_selector_note`

@@ -49638,10 +49638,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_full_lattice_schur_inheritance_note_2026-04-18"
     },
     {
       "from": "repo.repo_organization",
@@ -95200,17 +95200,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "alpha_s_derived_note",
         "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
         "cl3_taste_generation_theorem",
         "higgs_mass_from_axiom_note",
         "pmns_twisted_flux_transfer_holonomy_boundary_note",
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+        "axiom_first_cpt_theorem_stretch_note_2026-04-29",
+        "koide_full_lattice_schur_inheritance_note_2026-04-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "92c0a0c122d132fc21afcb8e8da69c399a00c54b4d4a76b0f151a0e063b959dc",
+      "note_hash": "0e7cfdd756eb789052a570c5d97b7762cf409b9ec5902dd746970eec21137852",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

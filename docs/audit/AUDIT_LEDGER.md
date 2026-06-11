@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 833 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1432 |
+| unaudited | 1431 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1277 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1749 |
+| `unaudited` | 1748 |
 
 | claim_type | count |
 |---|---:|
@@ -1439,6 +1439,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `spin_statistics_fs_admission_located_exercise_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17170,6 +17171,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited minimal axiom premise supplies the one-qubit local algebra on the Z^3 substrate, and standard finite tensor-product algebra closes the hard-core-boson and JW-CAR computations. No additional retained selector is needed for this scoped negative conclusion; possible future graded-locality or spin-statistics selectors are outside the claim.
 - **rationale:** The runner source actually constructs Pauli tensor operators, JW strings, generated-algebra ranks, hard-core/free-boson dimension checks, and finite ordering obstructions; it is not merely printing expected constants. Independent algebra confirms that disjoint bare ladders commute, JW-dressed ladders satisfy CAR, and both generator sets recover the same full matrix algebra, so ungraded algebra and dimension data cannot distinguish the statistics frame. The no-go is properly scoped to forcing from those baseline data and does not claim that every possible future graded-locality or spin-statistics principle is excluded.
 - **auditor confidence:** high
+
+### `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded conditional discriminator on the finite qubit tensor-product surface: assuming GL(F), the explicit {free boson, hard-core boson, Grassmann/CAR} list selects Grassmann/CAR; dropping GL(F) restores the tested hard-core/JW tie, so no unconditional statistics selection is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-223232-f7bf8139fb-staggered_dirac_substep1_sta`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** GL(F) is non-constant across the explicit candidates: the JW/Grassmann realization satisfies the cross-site anticommutators while the hard-core realization does not, and with the dim-2 exclusion of the free boson exactly Grassmann/CAR survives.  _(class `C`)_
+- **chain closes:** False — The T1-T3 finite-algebra discriminator closes conditionally: an independent exact two-site check already gives nonzero bare cross-site anticommutator, zero JW cross-site anticommutators, and F-oddness of both frames. The full source-note scope does not close unconditionally because GL(F) is explicitly unsupplied and the T4 supplier-boundary leg relies on not-provided/unaudited nearby-row claims, especially the 04-29 spin-statistics note.
+- **rationale:** The runner source substantively constructs Pauli/JW operators and computes anticommutators, algebra dimensions, F-oddness, hopping equality, and the hard-core CCR defect; it is not a print-only certificate. An independent exact two-site calculation confirms the load-bearing exchange-sign claims and the hard-core on-site CCR defect. However, the note also asserts a supplier audit saying GL(F) is currently supplied by nothing, including an unaudited 04-29 row and other nearby rows not provided in the restricted packet. Thus the conditional selection is sound, but the row remains conditional rather than clean.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`
+- **auditor confidence:** medium
 
 ### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
 

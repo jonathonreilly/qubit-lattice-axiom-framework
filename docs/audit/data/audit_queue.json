@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 291,
+    "critical": 290,
     "high": 291,
     "leaf": 428,
     "medium": 425
@@ -8,33 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "fermion_parity_z2_grading_theorem_note_2026-05-02",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.457,
-      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py",
-      "transitive_descendants": 993
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -215,15 +188,15 @@
         "site_phase_cube_shift_intertwiner_note",
         "staggered_dirac_realization_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 7,
+      "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.65,
+      "load_bearing_score": 12.155,
       "note_path": "docs/KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_full_lattice_schur_inheritance.py",
-      "transitive_descendants": 283
+      "transitive_descendants": 284
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -43195,6 +43168,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 40,
-  "total_pending": 1435
+  "ready_count": 39,
+  "total_pending": 1434
 }

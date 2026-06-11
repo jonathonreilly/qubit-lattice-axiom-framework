@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 820 |
+| **retained_bounded** | 821 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
 | unaudited | 1432 |
-| audit_in_progress | 1 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1260 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1261 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -186,6 +184,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2256,6 +2255,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The source imports the retained finite-range bridge velocity `v_LR = 2 e q W R` and the retained free-bilinear quasilocal LR bound `||[alpha_t(O_x),O_y]|| <= 2||O_x||||O_y|| exp(-mu d_1(x,y)+4W_mu|t|)`, then takes the stated same-sector scaling limit for M3.  _(class `A`)_
 - **chain closes:** False — M1 and the headline M2 bounds are supported by the accepted minimal axiom premise plus retained-bounded bridge inputs, and M3 is only a conditional scaling implication. The artifact is not clean as written because its displayed action-density/J-budget paragraph still asserts the stale plaquette normalization `2β/N_c` and `J_max=|m|+30`, contradicting the one-hop retained finite-range bridge repair (`2β`, `|m|+78` on the supplied surface, with carrier/envelope variants).
 - **rationale:** The current retained bridge authorities close the finite-range overlap-weight LR constant and the free exact-log quasilocal LR composition, and the primary/helper runner sources contain substantive finite-matrix, kernel, weighted-overlap, and falsification checks rather than a bare PASS printout. However, the strict formula inventory exposes an internal source-authority drift: the source note preserves the old `2β/N_c` plaquette budget and `|m|+30` canonical `J_max`, while the cited repaired bridge explicitly supersedes that arithmetic with `2β` and `|m|+78`/`78.5`/`80` plus overlap weights `|m|+296`/`298`/`300`. Because that wrong displayed quantitative support formula remains in the audited note, the row cannot be audited clean as written, even though the bounded M1/M2 surface is recoverable from the cited bridges.
+- **auditor confidence:** high
+
+### `axiom_first_reeh_schlieder_theorem_note_2026-05-01`
+
+- **Note:** [`AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite staggered qubit-chain carriers with left-anchored tensor-factor local algebras: the Schmidt-rank cyclic/separating dichotomy, tested OBC vacuum separating certificates, and the nonlocal vector-generic time-translated cyclicity corollary; no continuum Reeh-Schlieder claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-123818-ef31f9c0b8-axiom_first_reeh_schlieder_t`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The non-algebraic load-bearing step is the RS-2 certificate: the staggered vacuum's reduced state rho_O has full rank on the tested L=6,8 open carriers/regions, and RS-1 then makes this equivalent to separating for A(O).  _(class `C`)_
+- **chain closes:** True — The Schmidt-decomposition identities independently give dim A(O)v = d_O*r and separating iff rho_O is full rank. The runner source genuinely constructs the finite Jordan-Wigner staggered Hamiltonians, computes ground states, reduced-state ranks, falsifiers, and the time-translated commutant collapse, rather than printing or importing the contested values.
+- **rationale:** The cited minimal axiom node is an accepted premise, and the two non-axiom cited authorities are supplied as retained_bounded, which is retained-grade for this audit rubric. The finite-dimensional algebraic part is standard linear algebra, and the numerical certificate path is first-principles finite-carrier computation from the stated staggered Hamiltonian with no external comparator or tuned empirical input. The negative boundaries are narrow: small-region equal-time cyclicity is ruled out by the dimension count, while continuum/type-III Reeh-Schlieder and uniform-in-volume full-rank theorems are explicitly left open.
 - **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_theorem_note_2026-04-29`

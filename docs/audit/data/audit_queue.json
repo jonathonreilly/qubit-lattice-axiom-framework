@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 292,
+    "critical": 291,
     "high": 284,
     "leaf": 439,
     "medium": 421
@@ -8,32 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
-      "claim_scope": "Finite-dimensional left-anchored tensor-factor local algebras A(O)=B(H_O)\u22971 on the specified staggered qubit chains: the Schmidt-rank cyclic/separating dichotomy, per-carrier full-rank vacuum certificates for L=6,8 OBC tested regions, and the L=6 non-local time-translated algebra corollary.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.878,
-      "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_reeh_schlieder_check.py",
-      "transitive_descendants": 940
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -43176,6 +43150,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 45,
-  "total_pending": 1436
+  "ready_count": 44,
+  "total_pending": 1435
 }

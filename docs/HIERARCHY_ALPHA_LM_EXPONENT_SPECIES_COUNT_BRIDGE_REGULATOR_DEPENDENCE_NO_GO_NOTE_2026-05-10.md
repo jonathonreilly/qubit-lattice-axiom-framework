@@ -1,6 +1,7 @@
-# Hierarchy alpha_LM Exponent / Species-Count Bridge — Regulator-Dependence No-Go Note
+# Hierarchy alpha_LM Exponent / Species-Count Bridge — Regulator-Dependence No-Go Note (Derivation-Source No-Go Only; Substrate-Imposed Closure Routes O1–O3 Explicitly Enumerated)
 
-**Date:** 2026-05-10
+**Date:** 2026-05-10 (2026-06-11: title-scope clarification — see
+changelog below; no claim change)
 **Claim type:** no_go
 **Scope:** at the level of standard lattice-field-theory primitives,
 the identification "physical species count `N_species` of a fermion
@@ -24,6 +25,23 @@ of regulator remains a substrate-imposed gate input, recorded in the open
 any audit result and the pipeline-derived effective status.
 **Runner:** [`scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py`](../scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py)
 **Cache:** [`logs/runner-cache/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.txt`](../logs/runner-cache/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.txt)
+
+## Changelog
+
+- **2026-06-11 (title-scope clarification; no claim change).** Retitled
+  so the headline matches the proof scope. This no-go constrains only
+  what the bridge identification can be derived FROM
+  (lattice-action-uniform QFT primitives); per its own §2 boundary it
+  does NOT constrain "whether the framework's substrate is allowed to
+  fix it as a primary modelling choice", and §5–§6 enumerate
+  exhaustively the three admissible closure routes (O1: `alpha_LM`
+  regulator-specific by definition; O2: the framework `v/M_Pl` is a
+  lattice-surface ratio; O3: explicit regulator-dependence) that any
+  staggered-Dirac realization-gate closure must select among. Readers
+  had taken the headline as "the exponent `16` is unreachable"; the
+  proof's content is "the exponent `16` is substrate-imposed, and these
+  are the exact routes by which a substrate-level closure may proceed."
+  No claim, runner, cache, or status change.
 
 ## 0. Context
 

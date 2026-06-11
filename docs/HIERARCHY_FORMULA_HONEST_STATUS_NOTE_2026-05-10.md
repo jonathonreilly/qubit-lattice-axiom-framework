@@ -118,6 +118,15 @@ chain row's "DERIVED" label remains demoted to bounded numerical match,
 and the four P1-P4 pins remain open — they are now the declared
 boundary inputs B2-B5.
 
+**Addendum (2026-06-11, same day, C3 scope sharpening; no status
+change).** The C3 closure-path bullet previously compressed the YT-P2
+standing record to "non-perturbative at the canonical coupling", which
+over-reads that no-go: its proof forecloses only per-step 1-loop
+perturbative beta integration, names the staircase a non-perturbative
+blocking renormalization, and leaves blocking-RG / strong-coupling
+routes explicitly open. The bullet now states the obstruction at proof
+scope. Nothing else in this note changed.
+
 ## What this note is and is NOT
 
 **This note proves** (T1) the structural skeleton of the hierarchy
@@ -394,11 +403,17 @@ instead of being implicit inside a comparator match.
 
 - **C3 (most defensible): per-step Wilsonian taste-staircase
   transport.** Sixteen threshold decouplings each contributing one
-  factor of `alpha_LM`; non-perturbative at the canonical coupling per
-  the YT-P2 standing record
+  factor of `alpha_LM`. Scope of the standing obstruction, read at
+  proof level: the YT-P2 record
   (`YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`,
   `YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE_2026-04-17.md`,
-  file-pointer context). Open multi-PR target; would close B4.
+  file-pointer context) forecloses only the per-step 1-LOOP
+  PERTURBATIVE beta version of this transport (Landau-pole breakdown
+  at the marginal `b_3(16) = 1/3`); the same record names the
+  staircase a non-perturbative blocking renormalization and its safe
+  claim boundary leaves blocking-RG / strong-coupling-expansion routes
+  explicitly open. Those non-perturbative routes are the C3 attack
+  surface. Open multi-PR target; would close B4.
 - **C0/C1/C2 (CW dimensional transmutation; anomalous-dimension
   power law; KK power-law running):** searched, not landed; none
   converts to the integer-power form. Recorded as context only.

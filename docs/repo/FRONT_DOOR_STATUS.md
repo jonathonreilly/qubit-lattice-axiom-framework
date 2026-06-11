@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1406 |
-| Retained-grade rows, including boxed decorations | 1287 |
+| Applied audit verdicts | 1407 |
+| Retained-grade rows, including boxed decorations | 1288 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 205 |
-| Retained bounded rows | 818 |
+| Retained bounded rows | 819 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 37 |
 | Unaudited rows | 1435 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1439 |
+| Total pending rows | 1438 |
 | Ready rows | 46 |
 | Cycle-break targets | 0 |
-| Critical pending | 295 |
+| Critical pending | 294 |
 | High pending | 284 |
 | Medium pending | 421 |
 | Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; audit_in_progress
+- [`free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10`](../../docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`axiom_first_reeh_schlieder_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; unaudited
 - [`yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`](../../docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; unaudited

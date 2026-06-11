@@ -109,3 +109,25 @@ next_trace_action: >
   reconciliation through the B-W bridges; (3) open-1 exhaustive closure
   remains named.
 ```
+
+---
+
+# Trace Gate — block06 (the sigma reconciliation)
+
+```yaml
+trace_class: direct_blocker_closure
+target_claim_id: kinetic_isotropy_primitive
+target_blocker_text: >
+  block05's "reconciliation work for the realization row" (does-not-claim
+  bullet + this pack's prior next_trace_action) and the landed B-W note's
+  W-IR premise (what the OS0 identification consumes).
+source_of_blocker_text: handoff
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: >
+  (1) the U-T unit premise (tick-vs-blocked-application normalization) —
+  the chain's last named normalization freedom alongside R-P; (2) the
+  sqrt-3 cone-slope mismatch (family 1/(2 sqrt 3) vs H 1/2): larger-cell
+  realization or a U-T resolution; (3) audit-lane ratification of blocks
+  01-06 + KS/scheme-forcing.
+```

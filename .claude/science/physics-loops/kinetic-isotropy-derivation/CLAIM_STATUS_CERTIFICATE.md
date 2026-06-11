@@ -238,3 +238,44 @@ pass — both referees delivered (synchronous clause worked); 4 BLOCKERS +
 9 MAJOR total, all resolved; the math referee SUPPLIED the exact
 factorization that upgraded D3 from sampled to symbolic-over-the-torus.
 See REVIEW_HISTORY.md block05.
+
+---
+
+# Claim Status Certificate — block06 (the sigma reconciliation)
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: >
+  The walk family's eigenvalue problem completely solved (global
+  factorization; cos Phi = Re(e^{i psi} sigma)/3; both roots proven
+  unimodular). Moduli = frame content per block (diagonal translation +
+  quasi-energy offset; exact identity), superseding block05's front-speed
+  continuity sentence (slice artifact; referee-confirmed independently).
+  OS0-indifference of the realization choice: both candidates' per-tick
+  gradient vectors computed IDENTICAL +-(1,1,1)/6 (convention-independent);
+  the absolute unit identification = NAMED premise U-T; equal-stratum datum
+  1/(2 sqrt 3) named. Review-found positive: isotropic 3D cone EXISTS in
+  the family at quantized slope 1/(2 sqrt 3) (E3); the H-slope cone
+  unrealized (sqrt-3 mismatch). Conditional on the standing set + W-IR
+  (landed) + U-T (new, named).
+claim_type_reason: >
+  rational identities + symbolic derivations throughout; E3/B2 numeric
+  checks of exact statements; U-T named not consumed.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## V1-V5 — block06
+| # | Answer |
+|---|---|
+| V1 | block05's named reconciliation residual + the landed B-W note's W-IR consumption question. Both computed. |
+| V2 | New: the global sigma law; moduli = frame content; the convention-independent gradient-vector reconciliation; the isotropic family cone at 1/(2 sqrt 3). |
+| V3 | No — all of it hangs on the landed eta structure and the family's exact solution. |
+| V4 | Yes — the realization row retires at the consumed level; the matter-cone row re-opens positively. |
+| V5 | No prior note computes any of it (block05 explicitly deferred the reconciliation). |
+
+## Review-loop disposition — block06
+pass — see REVIEW_HISTORY block06 row (1 BLOCKER + 6 MAJOR total across two referees, all integrated; the block05-correction leg independently CONFIRMED by the referee's exact-RNG reproduction).

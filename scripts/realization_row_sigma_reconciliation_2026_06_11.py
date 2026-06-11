@@ -158,8 +158,16 @@ block_eq = sp.simplify(sp.expand_complex(
     (3 * Xv + 3 * alv * bev / Xv) / h_ - 6 * sp.cos(Phi)))
 rhs_identity = sp.simplify(sp.expand_complex(
     (alv * sp.conjugate(sig_c) + bev * sig_c) / h_ - 2 * sp.re(p_ * sig_c)))
-check("A2 the cos-law (branch-free): (3X + 3 alpha beta/X)/h = 6 cos Phi and (alpha conj(s) + beta s)/h = 2 Re(e^{i psi} s)",
-      block_eq == 0 and rhs_identity == 0,
+# unimodularity of BOTH roots (real Phi is justified, not assumed): with
+# Y = X/h the quadratic becomes 3Y^2 - Y (2 Re(p s)) + 3 = 0: Y1 Y2 = 1 and
+# Y1 + Y2 = 2 Re(p s)/3 real in [-2, 2] (|s| <= 3) => |Y1| = |Y2| = 1:
+Y_ = sp.Symbol('Y')
+quadY = sp.expand((3 * X_**2 - X_ * (alv * sp.conjugate(sig_c) + bev * sig_c)
+                   + 3 * alv * bev).subs(X_, h_ * Y_) / (3 * h_**2))
+prod_ok = sp.simplify(quadY.coeff(Y_, 0) - 1) == 0
+sum_real = sp.simplify(sp.im(sp.expand_complex(quadY.coeff(Y_, 1) + 2 * sp.re(p_ * sig_c) / 3))) == 0
+check("A2 the cos-law (branch-free): (3X + 3 alpha beta/X)/h = 6 cos Phi and (alpha conj(s) + beta s)/h = 2 Re(e^{i psi} s); both roots unimodular (Y1 Y2 = 1, Y1+Y2 real in [-2,2])",
+      block_eq == 0 and rhs_identity == 0 and prod_ok and sum_real,
       "=> cos Phi = Re(e^{i psi} sigma(k)) / 3: a single-cosine band law driven by the adjacency symbol")
 
 # ----------------------------------------------------------------------------
@@ -227,19 +235,36 @@ check("C1 strata from the law: theta-slope at k=0 is EXACTLY 1/6 (any psi != 0) 
       bool(sixth_ok and equal_ok),
       "block05's exact strata re-derived from the single-cosine law; slope 0 impossible (the law's gradient never vanishes there)")
 
-# C2: the gapless locus is EXACTLY the BZ diagonal: |sigma| <= 3 with equality
-# iff all three phases align; cos Phi = +-1 requires |Re(e^{i psi} sigma)| = 3
-# hence |sigma| = 3:
+# C2: the gapless structure, stated correctly: (i) WITHIN a block,
+# touchings need |Re(e^{i psi} sigma)| = 3 hence |sigma| = 3: isolated
+# translates of the diagonal sigma = 3 points; (ii) the LINE gaplessness is
+# INTER-block: Q_A and Q_B share beta, and X = beta w is a common root of
+# both along the ENTIRE diagonal (z1 = z2 = z3 = w) -- verified exactly;
+# (iii) no off-diagonal inter-block degeneracy: a common root X of Q_A, Q_B
+# forces (alpha - gamma) X (3 beta - X sigma_bar) = 0 (subtracting the two
+# quadratics), and 3 beta = X sigma_bar with |X| = |beta| = 1 forces
+# |sigma| = 3 (the diagonal) -- the resultant argument, symbolic:
 s1, s2, s3 = sp.symbols('s1 s2 s3', real=True)
-sig_abs2 = sp.expand_complex(sp.Abs(sp.exp(sp.I * s1) + sp.exp(sp.I * s2) + sp.exp(sp.I * s3))**2)
-sig_abs2 = sp.simplify(sig_abs2)
-# |sigma|^2 = 3 + 2[cos(s1-s2) + cos(s1-s3) + cos(s2-s3)] <= 9, equality iff all equal:
+sig_abs2 = sp.simplify(sp.expand_complex(
+    sp.Abs(sp.exp(sp.I * s1) + sp.exp(sp.I * s2) + sp.exp(sp.I * s3))**2))
 bound_id = sp.simplify(sig_abs2 - (3 + 2 * (sp.cos(s1 - s2) + sp.cos(s1 - s3) + sp.cos(s2 - s3))))
 at_equal = sp.simplify(sig_abs2.subs([(s2, s1), (s3, s1)]))
 off_equal = float(sig_abs2.subs([(s1, 0), (s2, 1), (s3, 2)]))
-check("C2 the gapless locus is EXACTLY the BZ diagonal: |sigma|^2 = 3 + 2 sum cos(k_i - k_j) = 9 iff all momenta equal",
-      bound_id == 0 and sp.simplify(at_equal - 9) == 0 and off_equal < 9 - 1e-9,
-      "touchings = the diagonal line only: a 1D-like crossing locus, NOT an isotropic 3D cone point")
+# (ii) the shared-beta common root on the diagonal:
+w_d = sp.Symbol('w_d')
+QA_diag = (3 * X_**2 - X_ * (alpha_u * 3 / w_d + beta_u * 3 * w_d) + 3 * alpha_u * beta_u)
+QB_diag = (3 * X_**2 - X_ * (gamma_u * 3 / w_d + beta_u * 3 * w_d) + 3 * beta_u * gamma_u)
+shared_root = (sp.simplify(sp.expand(QA_diag.subs(X_, beta_u * w_d))) == 0 and
+               sp.simplify(sp.expand(QB_diag.subs(X_, beta_u * w_d))) == 0)
+# (iii) the difference factorization (general sigma):
+sb_, sg_ = sp.symbols('sb_ sg_')   # sigma and sigma_bar as independent symbols
+QA_s = 3 * X_**2 - X_ * (alpha_u * sb_ + beta_u * sg_) + 3 * alpha_u * beta_u
+QB_s = 3 * X_**2 - X_ * (gamma_u * sb_ + beta_u * sg_) + 3 * beta_u * gamma_u
+diff_fact = sp.simplify(sp.expand(QA_s - QB_s - (alpha_u - gamma_u) * (3 * beta_u - X_ * sb_)))
+check("C2 gapless structure: within-block touchings need |sigma| = 3 (the diagonal); the LINE is the INTER-block shared-beta root X = beta w (exact); off-diagonal inter-block degeneracy excluded by the difference factorization",
+      bound_id == 0 and sp.simplify(at_equal - 9) == 0 and off_equal < 9 - 1e-9
+      and shared_root and diff_fact == 0,
+      "|sigma|^2 = 3 + 2 sum cos(k_i-k_j) = 9 iff all momenta equal; Q_A - Q_B = (alpha-gamma)(3 beta - X sigma_bar)")
 
 # C3: on the diagonal k = (t,t,t): sigma = 3 e^{it}: the law gives
 # cos Phi = cos(t + psi) => Phi = +-(t + psi): theta = theta0/2 +- (t+psi)/2:
@@ -275,15 +300,35 @@ check("D1 (S1 S2 S3)^2 = -(z1 z2 z3)^{-1} I EXACTLY: cycle bands omega = (k1+k2+
 print("\nPART E -- the W-IR reconciliation (consumes the landed B-W reduction)")
 print("=" * 78)
 # the landed B-W reduction: the OS0 identification consumes ONLY the
-# cone-point first-order slope (W-IR).  The per-axis candidate's transport
-# slope: the landed dichotomy's saturating cell has bands omega = (D + wK)/2:
-# slope 1/2 in cell units.  The family's transport (diagonal) slope: 1/2 in
-# the cell diagonal parameter (C3).  IDENTICAL consumed datum:
-per_axis_slope = sp.Rational(1, 2)      # landed block02: (D + pi + wK)/2, |w| = 1
-family_diag_slope = sp.Rational(1, 2)   # C3, exact
-check("E1 BOTH candidates feed the SAME quantized W-IR datum: transport-direction slope = 1/2 (cell units), exactly",
-      sp.simplify(per_axis_slope - family_diag_slope) == 0,
-      "under the landed B-W reduction, the OS0-consumed content is IDENTICAL: the realization choice is OS0-IRRELEVANT at the consumed level")
+# cone-point first-order datum (W-IR).  The CONVENTION-INDEPENDENT
+# reconciliation: both candidates' per-tick first-order band forms at the
+# symmetric point are computed and are IDENTICAL AS VECTORS -- so whatever
+# unit convention the supplied transfer comparison fixes, applied uniformly,
+# both candidates feed the same consumed datum.  (The absolute
+# identification of that datum against the 1D dichotomy's value 1/2
+# involves a tick-vs-blocked-application unit choice -- NAMED as the unit
+# premise U-T below, not asserted.)
+# cycle: omega(k) = (k1+k2+k3)/6 per tick exactly (D1): gradient (1,1,1)/6:
+grad_cycle = sp.Matrix([sp.Rational(1, 6), sp.Rational(1, 6), sp.Rational(1, 6)])
+# family (generic stratum): the law cos(2 theta) = Re(e^{i psi} sigma)/3:
+# d theta/d k_i at the gapless reference (k = -psi (1,1,1), the translated
+# symmetric point -- W-IR's comparison point is fixed by the supplied
+# transfer; the translation is frame content): compute each component
+# symbolically as in C1:
+kk1, kk2, kk3 = sp.symbols('kk1 kk2 kk3', real=True)
+sig_full = (sp.exp(sp.I * (kk1 + psi_s)) + sp.exp(sp.I * (kk2 + psi_s))
+            + sp.exp(sp.I * (kk3 + psi_s)))
+theta_f = sp.acos(sp.re(sp.expand_complex(sig_full)) / 3) / 2
+grad_family = sp.Matrix([
+    sp.simplify(sp.diff(theta_f, v).subs([(kk1, 0), (kk2, 0), (kk3, 0)]))
+    for v in (kk1, kk2, kk3)])
+grad_family_eval = [sp.simplify(g.subs(psi_s, sp.Rational(1, 3))) for g in grad_family]
+vec_equal = all(sp.simplify(sp.Abs(gf) - sp.Rational(1, 6)) == 0 for gf in grad_family_eval)
+psi_indep = all(sp.simplify(sp.Abs(g.subs(psi_s, v)) - sp.Rational(1, 6)) == 0
+                for g in grad_family for v in (sp.Rational(1, 3), 1, 2))
+check("E1 COMPUTED per-tick gradient vectors at the comparison point: cycle (1,1,1)/6 (exact, D1) and family +-(1,1,1)/6 (symbolic from the law, any generic psi): IDENTICAL up to the +- pairing",
+      bool(vec_equal and psi_indep and list(grad_cycle) == [sp.Rational(1, 6)] * 3),
+      "convention-independent: whatever uniform unit convention W-IR fixes, both candidates feed the same consumed first-order datum (generic stratum; the equal stratum's distinct datum and the unit premise U-T are named in the note)")
 
 # E2: where the candidates genuinely differ -- OUTSIDE the consumed surface:
 # (i) transverse structure at the gapless locus: the family is transverse-
@@ -302,6 +347,25 @@ curv_off = abs((theta_num((0.5 + dq, 0.8, 1.1)) - 2 * theta_num((0.5, 0.8, 1.1))
 check("E2 the candidates' differences are OUTSIDE the consumed surface: transverse first-order flatness (computed ~0) + off-locus curvature (nonzero)",
       abs(trans_slope) < 1e-6 and curv_off > 1e-3,
       f"transverse slope {trans_slope:.1e}; off-locus curvature {curv_off:.3f}: shape content, not W-IR content")
+
+# E3 (review-found positive result): at the WITHIN-BLOCK touching points
+# (the translates of sigma = 3), the band pair closes as an exactly
+# ISOTROPIC 3D cone: Phi = |q|/sqrt(3) + O(q^2) in the momentum offset q
+# (theta-slope 1/(2 sqrt 3)), threaded by the inter-block nodal line:
+def Phi_law(q, psi=0.0):
+    sv = sum(np.exp(1j * (np.array([0.0, 0.0, 0.0]) + np.array(q) + psi)))
+    return np.arccos(np.clip(sv.real / 3, -1, 1))
+rngq = np.random.default_rng(11)
+iso_cone = True
+for _ in range(7):
+    nvec = rngq.normal(size=3); nvec /= np.linalg.norm(nvec)
+    eps = 1e-5
+    rate = Phi_law(eps * nvec) / eps
+    if abs(rate - 1 / np.sqrt(3)) > 1e-4:
+        iso_cone = False
+check("E3 the within-block touchings are exactly ISOTROPIC 3D cones: Phi = |q|/sqrt(3) in all directions (theta-slope 1/(2 sqrt 3))",
+      iso_cone,
+      "an isotropic cone EXISTS in the family at quantized slope 1/(2 sqrt 3) -- found in review; the H-slope-1/2 cone remains unrealized (sqrt 3 mismatch)")
 
 # ----------------------------------------------------------------------------
 print("\nPART F -- the sigma kinship and the honest cone row")
@@ -327,16 +391,16 @@ check("F1 the landed staggered H is sigma-driven too: E(k) = +-sqrt((3 - Re sigm
       sig_ok,
       "the walk family is the tick-native cos-law sibling of the landed H-law: one structure function, two readings")
 
-# F2: but the H-law's gapless point (sigma = 3, k = 0) is an ISOTROPIC cone
-# (E ~ |k|/2), while the family's gapless set is the diagonal LINE with
-# 1D-like crossings (C2, E2): the isotropic 3D cone is realized by NEITHER
-# candidate at this density -- the matter-cone row is unchanged:
+# F2: the H-law's cone (E ~ |k|/2, slope 1/2) vs the family's isotropic
+# cone (theta-slope 1/(2 sqrt 3), E3): both isotropic, slopes differing by
+# sqrt 3; the H-SLOPE cone is realized by neither candidate (the cycle has
+# no cone at all) -- the quantized-slope mismatch is the honest residue:
 kv_small = (0.01, -0.013, 0.007)
 E_small = np.sqrt((3 - sum(np.exp(1j * np.array(kv_small))).real) / 2)
 iso_ok = abs(E_small - np.linalg.norm(kv_small) / 2) < 1e-4
-check("F2 the H-cone is isotropic (E ~ |k|/2) while the family's gapless set is the diagonal line: the isotropic 3D cone is realized by NEITHER candidate",
-      iso_ok,
-      "the matter-cone row stays larger-cell content for both candidates -- stated, not implied away")
+check("F2 the H-cone is isotropic with slope 1/2; the family's cone (E3) is isotropic with slope 1/(2 sqrt 3): same geometry, slopes split by sqrt 3 -- the H-slope cone is realized by neither candidate",
+      iso_ok and abs(0.5 / (1 / (2 * np.sqrt(3))) - np.sqrt(3)) < 1e-12,
+      "the matter-cone row RE-OPENS positively: an isotropic 3D cone exists in the covariant family at quantized slope 1/(2 sqrt 3); matching the H-slope 1/2 remains larger-cell/unit-premise content")
 
 print("\n" + "=" * 78)
 print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")

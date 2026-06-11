@@ -45,3 +45,28 @@ one admission on this surface.
 
 None tooling-side. The remaining selection is the named owner-decision
 premise (not a derivation blocker on this block's scope).
+
+---
+
+# Block02 addendum (2026-06-11)
+
+`docs/KOIDE_GENERATION_CHANNEL_SPACE_HOLOMORPHY_CHANNEL_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-06-11.md`
++ runner/cache (17/17, 4 declared residuals), stacked on block01.
+
+One line: the complete C_3-equivariant bilinear channel space on the
+corner sector is M_4 + M_2 + M_2 (24-dim, fully lattice-realizable,
+including native eps hw=1<->hw=2 mixing); first-order holomorphy is
+channel-independent; count-twice arises exactly on antiunitary-tied
+parameter sections (K-real cross-block -> |det beta|^2; Hermitian
+in-block z zbar), recovering block01's c = conj(b) line (circulant
+locus where both classes coincide) and the 2026-06-08 |det M|^2 object
+(Hermitian point of the eps-mixing family).
+
+Decision input for the standing orbit-occupancy owner call: the
+occupancy binary is now channel-independent on the realization surface
+— "tied section (sector slots, r=1)" vs "holomorphic output with
+K-orbit outcomes (orbit slots, r=1/2)" — one binary, not two knobs.
+Adopting orbit-occupancy = choosing the holomorphic/K-orbit reading,
+well-defined for every bilinear equivariant channel. Out of scope and
+open: interacting actions, gauge-sector measure contributions,
+non-equivariant couplings.

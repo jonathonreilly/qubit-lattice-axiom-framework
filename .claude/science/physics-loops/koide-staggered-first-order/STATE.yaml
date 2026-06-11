@@ -1,7 +1,7 @@
 loop_slug: koide-staggered-first-order
 mode: run
-block: 1
-branch: physics-loop/koide-staggered-first-order-block01-20260611
+block: 2
+branch: physics-loop/koide-staggered-first-order-block02-20260611 (stacked on block01)
 goal: >
   Perform the not-yet-done first-order construction of the generation
   determinant from the actual one-component staggered matter measure
@@ -23,10 +23,11 @@ open_imports:
   - probe coupling form (rotation channel declared, not derived)
   - gate-note section-5 residuals (inherited at declared grades)
 next_exact_action: >
-  Enumerate C_3-equivariant coupling channels beyond the rotation
-  channel (translation-built taste operators) and test whether the
-  Wirtinger localization onto the K-real line is channel-independent;
-  if it is, the occupancy atom and the K-reality selector merge into
-  one admission on the realization surface, sharpening the owner
-  decision recorded in the 2026-06-09 occupancy note.
+  Block02 closed the channel-generality residual (complete equivariant
+  channel space classified; holomorphy channel-independent; count-twice
+  = antiunitary-tied sections). The remaining selection is the named
+  owner-decision premise (reading section: tied vs holomorphic-with-
+  K-orbit-outcomes). No further derivation cycle is queued on this atom
+  at the bilinear level; next frontier options are interacting-action
+  effects or the owner decision itself.
 stop_condition: single-block run; PR opened, then stop.

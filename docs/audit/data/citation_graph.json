@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "quark_bimodule_norm_naturality_theorem_note_2026-04-19"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19",
         "quark_bimodule_norm_naturality_theorem_note_2026-04-19",
         "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
         "fifth_family_complex_note",
         "d3_upper_bound_import_scope_gate_note_2026-06-06",
-        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
+        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
+        "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8cf28edf43538c7e193485f12a7bcc89cba03487313759e63f8cbd24afbd738d",
+      "note_hash": "fa31f19abc076e218e65a5f08c846fd8b6120ec618ea05bce5bd8f247b065b41",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

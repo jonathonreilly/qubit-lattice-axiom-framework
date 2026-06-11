@@ -10,17 +10,16 @@ substitution implication: given
        Munster strong-coupling series).
   (X2) Retained b_2 = 19/6 (SU2_WEAK_BETA_COEFFICIENT_NARROW retained_bounded).
   (X3) Retained native SU(2) gauge structure from Cl(3) bivector irrep
-       (NATIVE_GAUGE_CLOSURE_NOTE retained_bounded).
-  (X4) Retained lattice-scale anchor g_2^2 |_lattice = 1/(d+1) = 1/4
-       (YT_EW_COLOR_PROJECTION_THEOREM retained_bounded), equivalently
-       1/alpha_bare |_lattice = 16 pi, and Wilson canonical normalization
-       beta = 2N/g_bare^2 = 16 at N=2, g_bare^2=1/4
-       (G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM retained_bounded).
+       (NATIVE_GAUGE_CLOSURE_NOTE retained).
+  (X4) Retained_bounded one-hop lattice-alpha anchor
+       1/alpha_bare |_lattice = 16 pi, with beta_W = 16 as a corollary
+       (SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM).
   (X5) Retained tadpole-improvement vertex-power identity
        alpha_2^tadpole = alpha_bare / u_0^2
        (ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM retained).
   (X6) Lattice scale identified with M_Pl, ln(M_Pl/v) = L (named admission;
        EW_COUPLING_DERIVATION_NOTE Part 1.2 uses L = 38.44 at v = 246 GeV).
+  (X7) Standard one-loop RGE form (named external QFT admission).
 
 the bounded interval
 
@@ -28,8 +27,8 @@ the bounded interval
     g_lo = sqrt( 4 pi / (16 pi u_hi^2 - (b_2 / (2 pi)) * L) ),
     g_hi = sqrt( 4 pi / (16 pi u_lo^2 - (b_2 / (2 pi)) * L) ),
 
-follows from substituting the inputs into the 1-loop Peskin-Schroeder
-running equation
+follows from substituting the inputs into the admitted one-loop running
+equation
 
   1/alpha_2(v)  =  1/alpha_2^tadpole |_lattice  -  (b_2 / (2 pi)) * ln(M_Pl / v)
                 =  16 pi u_0^2  -  (b_2 / (2 pi)) * L
@@ -54,6 +53,7 @@ explicitly classified as NAMED EXTERNAL ADMISSION (not derived).
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 
 try:
     from sympy import (
@@ -75,6 +75,8 @@ except ImportError:
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -104,14 +106,42 @@ def main() -> int:
     print("Inputs (cited):")
     print("  (X1) u_0(SU(2)) in [96/100, 98/100]   ... NAMED EXTERNAL ADMISSION")
     print("  (X2) b_2 = 19/6                        ... retained_bounded")
-    print("  (X3) Cl(3) bivector -> SU(2)           ... retained_bounded")
-    print("  (X4) g_2^2 |_lattice = 1/4 -> beta=16  ... retained_bounded")
+    print("  (X3) Cl(3) bivector -> SU(2)           ... retained")
+    print("  (X4) 1/alpha_2^bare |_lattice = 16 pi  ... retained_bounded one-hop anchor")
     print("  (X5) alpha_2^tadpole = alpha_bare/u_0^2 ... retained")
     print("  (X6) ln(M_Pl/v) = 38.44                ... NAMED EXTERNAL ADMISSION")
+    print("  (X7) one-loop RGE form                 ... NAMED EXTERNAL ADMISSION")
     print("=" * 88)
 
     # ------------------------------------------------------------------
-    section("Part 0: symbolic setup (positive real symbols)")
+    section("Part 0: source-packet dependency repair checks")
+    # ------------------------------------------------------------------
+    note_text = NOTE.read_text(encoding="utf-8")
+    check("source note exists", NOTE.exists(), detail=str(NOTE.relative_to(ROOT)))
+    check(
+        "(X4) source note cites the retained_bounded SU2 lattice-alpha anchor",
+        "SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md"
+        in note_text,
+    )
+    check(
+        "(X4) source note does not leave YT_EW as a load-bearing markdown edge",
+        "](YT_EW_COLOR_PROJECTION_THEOREM.md)" not in note_text,
+    )
+    check(
+        "(X4) source note does not leave G_BARE_CANONICAL as a load-bearing markdown edge",
+        "](G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md)" not in note_text,
+    )
+    check(
+        "(X4) source note states the coupling input is not rederived here",
+        "not independently derive the anchor's assumed coupling input" in note_text,
+    )
+    check(
+        "(X7) source note registers the one-loop RGE as a named admission",
+        "**(X7) Named 1-loop RGE admission.**" in note_text,
+    )
+
+    # ------------------------------------------------------------------
+    section("Part 1: symbolic setup (positive real symbols)")
     # ------------------------------------------------------------------
     u0 = Symbol("u_0", positive=True, real=True)
     b2 = Symbol("b_2", positive=True, real=True)
@@ -121,13 +151,13 @@ def main() -> int:
     print(f"  symbolic L = ln(M_Pl/v) = {L}")
 
     # ------------------------------------------------------------------
-    section("Part 1: lattice-scale bare alpha and tadpole-improved 1/alpha")
+    section("Part 2: lattice-scale bare alpha and tadpole-improved 1/alpha")
     # ------------------------------------------------------------------
     # (X4): g_bare^2 = 1/4, alpha_bare = g_bare^2/(4 pi) = 1/(16 pi),
     #       so 1/alpha_bare|_lattice = 16 pi.
     one_over_alpha_bare = 16 * pi
     check(
-        "(X4) 1/alpha_bare |_lattice = 16 pi   (from g_2^2|_lattice = 1/4)",
+        "(X4) 1/alpha_bare |_lattice = 16 pi   (from one-hop lattice-alpha anchor)",
         simplify(one_over_alpha_bare - 16 * pi) == 0,
         detail=f"1/alpha_bare = {one_over_alpha_bare}",
     )
@@ -149,12 +179,12 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------
-    section("Part 2: 1-loop running from M_Pl to v (Peskin-Schroeder, b>0 = asymptotic freedom)")
+    section("Part 3: 1-loop running from M_Pl to v (named RGE admission, b>0 = asymptotic freedom)")
     # ------------------------------------------------------------------
     # 1/alpha_2(v) = 1/alpha_2^tadpole|_lattice - (b_2/(2 pi)) * ln(M_Pl/v)
     inv_alpha_v_sym = one_over_alpha_tadpole_lattice - (b2 / (2 * pi)) * L
     check(
-        "(P1) 1/alpha_2(v) = 16 pi u_0^2 - (b_2/(2 pi)) * L (1-loop RGE substitution)",
+        "(P1) 1/alpha_2(v) = 16 pi u_0^2 - (b_2/(2 pi)) * L (X7 RGE substitution)",
         simplify(
             inv_alpha_v_sym - (16 * pi * u0 ** 2 - (b2 / (2 * pi)) * L)
         )
@@ -176,7 +206,7 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------
-    section("Part 3: monotonicity of g_2(v) in u_0 over the input interval")
+    section("Part 4: monotonicity of g_2(v) in u_0 over the input interval")
     # ------------------------------------------------------------------
     # d/du_0 [1/alpha_2(v)] = d/du_0 [16 pi u_0^2 - (b_2/(2 pi)) L]
     #                       = 32 pi u_0  (positive for u_0 > 0)
@@ -190,7 +220,7 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------
-    section("Part 4: framework instance: u_0 in [96/100, 98/100], b_2 = 19/6, L = 3844/100")
+    section("Part 5: framework instance: u_0 in [96/100, 98/100], b_2 = 19/6, L = 3844/100")
     # ------------------------------------------------------------------
     u_lo = Rational(96, 100)
     u_hi = Rational(98, 100)
@@ -230,7 +260,7 @@ def main() -> int:
     print(f"  g_2(v) at u_0 = 0.98 (LOWER bound of g_2):  {g2_at_uhi_num}")
 
     # ------------------------------------------------------------------
-    section("Part 5: explicit bounded interval g_2(v) in [g_lo, g_hi]")
+    section("Part 6: explicit bounded interval g_2(v) in [g_lo, g_hi]")
     # ------------------------------------------------------------------
     # Endpoint reversal: g_2 monotone-decreasing in u_0, so
     #   g_lo = g_2(v) at u_0 = u_hi = 0.98
@@ -273,7 +303,7 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------
-    section("Part 6: corollaries")
+    section("Part 7: corollaries")
     # ------------------------------------------------------------------
     # (C1) Width of interval = g_hi - g_lo.
     width = Numeric(g_hi - g_lo, 30)
@@ -301,7 +331,7 @@ def main() -> int:
     # down to ~27, increasing alpha and hence g_2.
     g2_lattice = sqrt(Rational(1, 4))  # = 1/2, retained-bounded
     check(
-        "(C3) g_2|_lattice = sqrt(1/4) = 1/2 (retained-bounded primitive)",
+        "(C3) g_2|_lattice = sqrt(1/4) = 1/2 (one-hop anchor corollary)",
         g2_lattice == Rational(1, 2),
         detail=f"g_2|_lattice = {g2_lattice}",
     )
@@ -325,7 +355,7 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------
-    section("Part 7: forbidden-import audit")
+    section("Part 8: forbidden-import audit")
     # ------------------------------------------------------------------
     # The runner does NOT consume:
     #   - PDG observed g_2(v) = 0.646

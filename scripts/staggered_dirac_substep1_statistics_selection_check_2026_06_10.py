@@ -12,7 +12,8 @@ per-site dimension and ungraded operator algebra, and names the only escape:
 principle" (its N6: "a retained spin-statistics, graded-locality, or
 fermion-parity superselection principle could retire this wall").
 
-This runner computes four things, [A]-[D]:
+This runner computes the T1-T3 theorem payload plus one non-load-bearing
+boundary diagnostic, [A]-[D]:
 
   [A] FRAME-BLINDNESS of every retained substep-1 input. Per-site dimension,
       the ungraded generated algebra, the retained fermion-parity Z2 grading
@@ -44,13 +45,13 @@ This runner computes four things, [A]-[D]:
       generating family (c_x) and a GL(F)-failing one (sigma_+^(x)), so no
       functional of the ungraded algebra alone can decide GL(F).
 
-  [D] SUPPLIER AUDIT. The nominated supplier
-      AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md (unaudited) does
-      NOT supply GL(F): its load-bearing Step 2 hypothesis is the canonical
-      CCR "[a_x, a_y^+] = delta_xy" (its eq. (6)), and the hard-core boson
-      VIOLATES that hypothesis on-site ([a, a^+] = 1 - 2n != I), so the
-      04-29 exclusion argument is scoped to the FREE boson only and never
-      reaches the tied candidate. Computed here as an on-site CCR defect.
+  [D] NON-LOAD-BEARING BOUNDARY DIAGNOSTIC. The 04-29 spin-statistics
+      source note's load-bearing Step 2 hypothesis is the canonical CCR
+      "[a_x, a_y^+] = delta_xy" (its eq. (6)), and the hard-core boson
+      VIOLATES that hypothesis on-site ([a, a^+] = 1 - 2n != I). Therefore
+      this GL(F) row does not consume the 04-29 row as a GL(F) supplier.
+      This diagnostic is not used by [A]-[C] and is not a global supplier
+      survey.
 
 Pure finite tensor-product linear algebra (numpy, exact integer entries,
 tolerance 1e-12). Deterministic, < 5 s. No PDG / fitted / scale / mass input.
@@ -282,17 +283,17 @@ def main() -> int:
           "no functional of the ungraded algebra alone decides GL(F)")
 
     # ========================================================================
-    section("[D] Supplier audit: the 04-29 spin-statistics note does not "
-            "supply GL(F)")
+    section("[D] Boundary diagnostic (non-load-bearing): this GL(F) row "
+            "does not consume 04-29 as a supplier")
     # ========================================================================
     # Its Step 2 hypothesis (eq. (6)) is the canonical CCR [a_x, a_y^+] = delta_xy.
     onsite_ccr_defect = comm(SP, SM) - I2      # hard-core: [a, a^+] = 1 - 2n != I
     check("D", "hard-core ladders VIOLATE the 04-29 S2 hypothesis on-site: "
                "[a, a^+] = 1 - 2n != I (defect norm = 2)",
           abs(np.max(np.abs(onsite_ccr_defect)) - 2.0) < TOL,
-          "the hard-core boson is OUTSIDE the class the 04-29 argument excludes")
+          "boundary diagnostic only: this note does not consume 04-29 as a GL(F) supplier")
     check("D", "so the 04-29 bosonic exclusion is scoped to the FREE (CCR) boson only "
-               "-- it re-proves the retained dimensional half, not the tie-breaker",
+               "-- it does not by itself provide the GL(F) tie-breaker",
           free_boson_excluded and not is_zero(onsite_ccr_defect))
     check("D", "retained Z2-grading row is carrier, not selector "
                "(frame-blindness computed in [A])",
@@ -313,9 +314,10 @@ def main() -> int:
     print("        retained dim-2 readout, exactly one candidate survives;")
     print("    [C] removing GL(F) restores the tie (retained no-go reproduced);")
     print("        GL(F) is strictly additional input, not algebra data;")
-    print("    [D] the unaudited 04-29 spin-statistics note's S2 hypothesis is the")
-    print("        canonical CCR, which the hard-core boson violates on-site, so")
-    print("        that note does not supply GL(F).")
+    print("    [D] boundary diagnostic only: the 04-29 spin-statistics source")
+    print("        note's S2 hypothesis is the canonical CCR, which the hard-core")
+    print("        boson violates on-site, so this row does not consume 04-29 as")
+    print("        a GL(F) supplier.")
     print("  BOUNDARY (declared, not claimed): GL(F) is NOT retained and NOT a")
     print("  Tier-A admission. This runner proves a CONDITIONAL selection only;")
     print("  unconditionally, the retained 2026-05-25 no-go stands.")

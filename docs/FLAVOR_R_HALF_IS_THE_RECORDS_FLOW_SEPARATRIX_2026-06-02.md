@@ -44,7 +44,11 @@ separatrix of the supplied Lüders map. The map theorem alone does **not** drop 
 The famous **Koide precision** — `Q=2/3` to ~10⁻⁵ — now has a sharp dynamical interpretation: the
 charged-lepton sector, if modeled by this records map, lies on its separatrix. A system on that
 separatrix to 10⁻⁵ is a knife-edge: it is either **stabilized** (some mechanism pins the 2-sector
-partition as the physical record basis) or a **tuned/transient** initial condition. This reframes the
+partition as the physical record basis), or **durably stationary** (a durability principle requiring
+only fixedness under re-registration — no attraction needed; the separatrix instability then makes the
+*exact* value the only persistent one — alternative added 2026-06-11, examined in
+`KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md`), or a
+**tuned/transient** initial condition. This reframes the
 open problem without closing the physical records-flow identification.
 
 ## Net standing & the next path (not closing)
@@ -52,7 +56,10 @@ open problem without closing the physical records-flow identification.
   separatrix, and `r>1/2` runs toward the projective doublet-collapse end (`r→∞` in this coordinate).
 - The charged-lepton value, if governed by this map, would therefore be a **separatrix occupancy** that requires a **stabilizer** — and
   that stabilizer is exactly the "select the 2-sector (isotype) partition" pin the J-hunt isolated
-  (the det_C / center-state choice), now in dynamical language.
+  (the det_C / center-state choice), now in dynamical language. *(Scope correction 2026-06-11: a
+  stabilizer is one sufficient mechanism, not a necessary one — fixedness under a durability
+  principle also yields persistence of the exact separatrix value without any attraction; the
+  original wording over-demanded attraction.)*
 - **Next:** does **einselection** — a pointer basis from the *commutant of the C₃-invariant interaction
   Hamiltonian* (predictability sieve) — single out the **2 isotype sectors** as the stable record basis
   non-circularly? If an actual emergent coupling decoheres into the singlet/doublet split (rather than

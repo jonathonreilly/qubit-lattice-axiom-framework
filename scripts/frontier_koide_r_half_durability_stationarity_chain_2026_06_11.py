@@ -165,12 +165,14 @@ sep = doc_text("FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md")
 ok = ("whether the tested dynamics makes `r=1/2` an attractor" in nogo
       and "A direct block-measure admission could close the value "
           "without using dynamics" in nogo
-      and "stationar" not in nogo.lower())
+      and "Out of scope and NOT closed here: stationarity/durability "
+          "occupancy of a records-flow fixed point" in nogo)
 check(5, "textual scope interface: the stabilizer-fails no-go's own N4 "
          "restricts its residual to the ATTRACTOR question, its N6 "
-         "names only the measure-admission alternative, and the note "
-         "nowhere addresses stationarity-occupancy -- the durability "
-         "route is outside the closed scope, not a reopening", ok)
+         "names only the measure-admission alternative, and its "
+         "2026-06-11 scope statement explicitly places stationarity/"
+         "durability occupancy OUTSIDE the closed scope -- the "
+         "durability route is not a reopening", ok)
 
 ok = ("lies on its separatrix" in sep
       and "requires a **stabilizer**" in sep)

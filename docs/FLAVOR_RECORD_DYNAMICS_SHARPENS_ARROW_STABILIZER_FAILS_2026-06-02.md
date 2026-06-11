@@ -1,12 +1,25 @@
-# Flavor Record Dynamics Sharpens Arrow Stabilizer Fails
+# Flavor Record Dynamics: The Tested Thermalizing-Arrow Attractor/Stabilizer Routes Fail (Attractor-Scope No-Go)
 
-**Date:** 2026-06-02
+**Date:** 2026-06-02 (2026-06-11: title and scope statement corrected to the
+proof's own N4/N5 boundary — no claim changes, no runner changes; the old
+title "Stabilizer Fails" overstated the closure as if it covered every use
+of the fixed-point structure)
 **Claim type:** no_go.
 **Runner:** `scripts/flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026_06_02.py`.
 
 This source note closes one proposed route: using a thermalizing time-arrow map
 to force `r=1/2` as a dynamical attractor. It is not a no-go on the value and
 does not derive record dynamics from the baseline axioms.
+
+**Scope (made explicit 2026-06-11, matching N4/N6 below).** What is closed:
+attractor/stabilizer dynamics in the tested family (the reverse map is
+erasure; honest thermalization gives `r=1`; tested einselection is a no-op;
+arrow parity carries no block-count information). Out of scope and NOT
+closed here: stationarity/durability occupancy of a records-flow fixed point
+(fixedness without attraction), and measure/reference choices. The
+stationarity route is examined in
+`KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md`
+(plain-text reference; downstream of this note, not an input to it).
 
 ## Result
 
@@ -36,9 +49,13 @@ dimension weights `(1/3,2/3) -> r=1`, not `r=1/2`.
 
 ## Consequence
 
-The thermalizing-arrow stabilizer route does not force `r=1/2`. The remaining
-route is a measure/reference choice on the two-sector partition, not a
-dynamical attractor in the tested record dynamics.
+The thermalizing-arrow stabilizer route does not force `r=1/2`: nothing in
+the tested record dynamics makes it a dynamical attractor. The remaining
+routes (corrected 2026-06-11 to enumerate what the proof actually leaves
+open) are: (i) a measure/reference choice on the two-sector partition, or
+(ii) a stationarity/durability principle — occupancy of a records-flow fixed
+point without any attraction claim, which this note's N4 scope never tested.
+The earlier wording named only route (i).
 
 ## No-Go Discipline Gate
 

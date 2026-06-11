@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1440 |
-| Retained-grade rows, including boxed decorations | 1304 |
+| Applied audit verdicts | 1441 |
+| Retained-grade rows, including boxed decorations | 1305 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 833 |
+| Retained bounded rows | 834 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
 | Unaudited rows | 1429 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1433 |
+| Total pending rows | 1432 |
 | Ready rows | 38 |
 | Cycle-break targets | 0 |
-| Critical pending | 289 |
+| Critical pending | 288 |
 | High pending | 291 |
 | Medium pending | 425 |
 | Leaf pending | 428 |
 
 Next ready rows by queue order:
 
-- [`yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`](../../docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
+- [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 - [`higgs_mass_from_axiom_note`](../../docs/HIGGS_MASS_FROM_AXIOM_NOTE.md) - critical; unaudited
 - [`pmns_twisted_flux_transfer_holonomy_boundary_note`](../../docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md) - critical; unaudited
@@ -92,7 +92,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1057 descendants; score 63.547
 - `graph_first_su3_integration_note` - critical; 1389 descendants; score 60.941
 - `observable_principle_from_axiom_note` - critical; 881 descendants; score 59.285
-- `key_terminology` - critical; 1216 descendants; score 47.249
-- `minimal_axioms_2026-05-03` - critical; 998 descendants; score 46.964
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 970 descendants; score 42.423
-- `plaquette_self_consistency_note` - critical; 954 descendants; score 42.399
+- `key_terminology` - critical; 1216 descendants; score 50.249
+- `minimal_axioms_2026-05-03` - critical; 998 descendants; score 49.964
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 970 descendants; score 45.423
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 978 descendants; score 44.435

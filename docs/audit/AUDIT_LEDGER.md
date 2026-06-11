@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 850 |
-| `leaf` | 1315 |
+| `medium` | 849 |
+| `leaf` | 1316 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0

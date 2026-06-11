@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 206 |
 | **retained_bounded** | 816 |
 | _retained_pending_chain_ | 16 |
-| open_gate | 38 |
-| unaudited | 1437 |
+| open_gate | 37 |
+| unaudited | 1438 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 7 |
+| `audit_in_progress` | 6 |
 | `audited_clean` | 1254 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1753 |
+| `unaudited` | 1754 |
 
 | claim_type | count |
 |---|---:|
@@ -138,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -331,7 +330,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_field_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_v4_convergence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1155,6 +1153,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_wavefield_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `spectral_closure_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `spectral_symmetry_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4332,19 +4331,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the finite m0 = 0.10 scan grid, the Gaussian profile has 5/5 TOWARD offset biases with an offset-law fit alpha = 3.053 and R^2 = 0.8098, while all profiles fail N-monotonicity.  _(class `C`)_
 - **chain closes:** True — The runner source explicitly constructs the 4-component Dirac walk, mass-field kernels, density readout, N sweep, offset sweep, and power-law fit rather than printing hard-coded contested constants. The note's in-scope numerical statements match the completed runner output.
 - **rationale:** The narrowed binding claim is only the finite m0 = 0.10 runner-output statement, not nearby-mass robustness or physical-readout interpretation. Within that scope, the completed runner computes the quoted biases, TOWARD counts, monotonicity failures, and Gaussian offset-law fit from the implemented Dirac-walk dynamics. The source note's in-scope numbers agree with stdout, and no cited authority or missing helper source is needed for the finite computational claim.
-- **auditor confidence:** high
-
-### `dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`
-
-- **Note:** [`DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Audited only the diagnostic/open-gate facts: failure of the common Gaussian analytic-vector bridge for H, and the quadratic invariant-count distinction between native spatial Z^3, Euclidean Z^3 x Z_tau, and 4D hypercubic surfaces.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** open_gate  (reason: `audited_open_gate`)
-- **auditor:** `codex-cli-gpt-5.5-20260610-051514-622d4156dc-dirac_lorentz_diagnostic_bou`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The diagnostic boundary is that the rapidity Gaussian is analytic for K = -i d/dzeta but not for H = M_perp cosh(zeta), and signed-permutation invariant counting gives one native spatial quadratic coefficient, two Euclidean time/spatial coefficients, and one B4 coefficient.  _(class `A`)_
-- **chain closes:** True — The Gaussian H obstruction follows from the stated interval lower bound, while K analyticity follows from standard Fourier-Gaussian moment decay for the full-line derivative operator. The invariant counts reduce to orbit partitions of diagonal quadratic coefficients under signed-permutation groups; no Nelson theorem, full Poincare integration, or interacting Lorentz closure is claimed.
-- **rationale:** The load-bearing math is class A: it is analytic/algebraic closure over the displayed rapidity operators, signed-permutation groups, and free dispersion formula. The cited dependencies used for this narrow scope are retained-grade, with the Minimal Axioms treated under the accepted-premise carve-out; the note does not rely on the later kinetic-isotropy primitive or on conditional Planck-scale material. The source is scoped as an open-gate diagnostic packet and explicitly avoids promoting the rejected Nelson, unitary-representation, or interacting-naturalness claims.
 - **auditor confidence:** high
 
 ### `dirac_observable_panel_note`
@@ -16469,6 +16455,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Expanding by Duhamel, only interaction chains from X to Y contribute, each length-n chain is bounded by (2J)^n||A|| with a final 2||B|| factor, and Lemma B gives the factorial tail in (C.1).  _(class `A`)_
 - **chain closes:** True — The finite-Λ LR bound follows from the stated bounded local Hamiltonian hypotheses, Duhamel expansion, inclusive interaction-chain counting, and the factorial tail estimate. The cluster-decomposition route still needs a filter/gap bridge, but the note explicitly removes that from the audited theorem surface.
 - **rationale:** The load-bearing LR proof is an operator-norm and combinatorial closure over explicit finite-volume hypotheses, not a definition, tuned numerical match, or external comparator. Independent checking of the chain count, repeated-term inclusive degree, tail estimate, and coarse light-cone packaging supports (C.1)-(C.3). The cited mass-gap bridge and Δ_T discussion are non-load-bearing for this scoped claim, so their open spatial-clustering role does not block the LR theorem.
+- **auditor confidence:** high
+
+### `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`
+
+- **Note:** [`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-f59fb06140-spatial_cubic_time_anisotrop`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On a Z^3 x Z_tau surface with spatial O_h and time parity, Q(p)=c_t p_tau^2+c_s(p_x^2+p_y^2+p_z^2) has two independent invariant coefficients, so spatial cubic symmetry allows c_t != c_s.  _(class `A`)_
+- **chain closes:** True — The signed-permutation action has two quadratic axis orbits under spatial O_h, time separate from the three spatial axes, and one orbit under B4. Sign symmetries eliminate off-diagonal quadratic terms, so the two-coefficient obstruction is not an artifact of restricting to diagonal forms.
+- **rationale:** The runner source performs finite exact group and invariant-space checks rather than merely printing constants, and the cached output matches the source note's quantitative claims. An independent orbit/sign-flip check confirms the load-bearing invariant-space count and the explicit anisotropic counterexample. The kinetic-isotropy primitive is an approved salvage premise in the packet, but it is not needed to prove the scoped no-go about spatial O_h alone. The no-go is clean only at that scope; it does not rule out Lorentz restoration after adding c_t=c_s, B4 symmetry, or another explicit bridge.
 - **auditor confidence:** high
 
 ### `spectral_closure_2026-04-09`

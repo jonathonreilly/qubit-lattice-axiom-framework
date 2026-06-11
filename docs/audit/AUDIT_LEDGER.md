@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 835 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1427 |
+| unaudited | 1426 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1279 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1744 |
+| `unaudited` | 1743 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1553 |
+| `bounded_theorem` | 1554 |
 | `decoration` | 54 |
 | `meta` | 325 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 779 |
+| `positive_theorem` | 778 |
 
 | criticality | count |
 |---|---:|
@@ -1451,6 +1451,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -20409,6 +20410,23 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **rationale:** The displayed formulas independently check: P_+ and P_- are complementary projections, P_+ - P_- = sigma_z, d log R_h / d h_x at h=0 equals epsilon_x, and the smooth log-odds composition condition reconstructs the exponential RN family. The runner genuinely computes those finite algebraic checks and performs dependency/boundary string checks, with no external comparator or tuned numerical input. However, the headline equality between the Y_T source record and the Pauli readout is the load-bearing move, and the restricted packet does not derive that bridge from the cited authorities; it assigns the same signed label to two compatible concepts.
 - **open / conditional deps cited:**
   - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
+- **auditor confidence:** high
+
+### `yt_p1_i_s_lattice_pt_citation_note_2026-04-17`
+
+- **Note:** [`YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional citation-and-bound check that, assuming the stated external I_S bracket plus imported C_F and alpha_LM, the P1 contribution maps to [3.85%,9.62%] with central 5.77%, upward from the packaged 1.92%.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-230820-470436da3d-yt_p1_i_s_lattice_pt_citatio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The tadpole-improved staggered scalar-density literature is asserted to bracket the composite-H_unit surrogate coefficient as I_S in [4,10] in the alpha/(4pi) convention, with central estimate near 6.  _(class `D`)_
+- **chain closes:** False — The arithmetic from an assumed I_S bracket, C_F=4/3, and alpha_LM closes. The bracket itself is an external lattice-QCD citation range not supplied as a verifiable authority in the restricted packet, and the helper hard-codes the plaquette-derived alpha_LM input whose cited authority admits the 0.5934 readout is reused rather than derived here.
+- **rationale:** The runner verifies metadata, scope flags, and linear arithmetic, but it does not compute the Brillouin-zone integral or verify the quoted literature coefficients against provided source tables. The load-bearing I_S range is imported from external lattice-QCD literature and explicitly marked non-framework-native with O(1) uncertainty. The numeric P1 range is therefore a valid conditional consequence of the asserted bracket, not a retained derivation of the bracket or its applicability to the exact Cl(3) x Z^3 H_unit operator.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`
+  - `YT_WARD_IDENTITY_DERIVATION_THEOREM.md`
 - **auditor confidence:** high
 
 ### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`

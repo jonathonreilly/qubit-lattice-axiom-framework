@@ -10,26 +10,26 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Finite-dimensional algebraic audit of the Z2^d per-hypercube component-space to exterior-form-complex graded bijection, the abstract D_KD=d-\u03b4 operator identities, the d=4 spinor/taste count match, Wilson identity-term parity exclusion, and the JW-dimension boundary; no physical staggered-Dirac dynamical identification audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "cl3_complexification_split_narrow_theorem_note_2026-05-10",
         "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 13,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 16.474,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
       "transitive_descendants": 1005
@@ -220,17 +220,17 @@
       "deps": [
         "staggered_dirac_realization_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 10.014,
+      "load_bearing_score": 10.517,
       "note_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
-      "transitive_descendants": 516
+      "transitive_descendants": 517
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

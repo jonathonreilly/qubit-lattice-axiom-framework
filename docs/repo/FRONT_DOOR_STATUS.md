@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 831 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1434 |
+| Unaudited rows | 1433 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 35 |
 | Audited renaming rows | 34 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; unaudited
+- [`staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; audit_in_progress
 - [`axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; unaudited

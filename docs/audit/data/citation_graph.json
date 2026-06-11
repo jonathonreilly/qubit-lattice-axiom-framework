@@ -49638,10 +49638,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "higgs_mass_from_axiom_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "pmns_twisted_flux_transfer_holonomy_boundary_note"
     },
     {
       "from": "repo.repo_organization",
@@ -95200,17 +95200,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "alpha_s_derived_note",
         "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
         "cl3_taste_generation_theorem",
-        "higgs_mass_from_axiom_note"
+        "higgs_mass_from_axiom_note",
+        "pmns_twisted_flux_transfer_holonomy_boundary_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "57930fd910ae5cd0cc9f4d9f476b3e9324b639474ae804b1a15ba04ade6dca0d",
+      "note_hash": "4bd90647292b686dd85b9d75fc5f92bfbb19eeab00d72a5144f54fc3592e9919",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

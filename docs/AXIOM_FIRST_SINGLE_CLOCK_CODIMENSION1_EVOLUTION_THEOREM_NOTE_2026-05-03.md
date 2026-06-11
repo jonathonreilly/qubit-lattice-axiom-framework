@@ -1,7 +1,8 @@
 # Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) ⊗ Z^3
 
 **Date:** 2026-05-03 (hostile science-fix re-scope 2026-06-11;
-finite-range premise narrowing 2026-06-11 #2; see §0)
+finite-range premise narrowing 2026-06-11 #2; supplier wiring +
+wording repair 2026-06-11 #3; see §0)
 **Type:** bounded_theorem
 **Claim scope:** **Axis-conditional single-clock codimension-1 unitary
 evolution.** Given the declared evolution-axis premise (B-AXIS) below
@@ -16,8 +17,11 @@ transfer-relative and τ-relative) of the unique strongly continuous
 one-parameter unitary group `U(t) = exp(-itH)` on the finite block
 Hilbert space; (S2′) each lattice time slice `Σ_t = {t} × Z^3` is a
 codimension-1 Cauchy surface: the equal-time local algebra is the
-mutually commuting tensor product of per-site `M_2(C) ≅ Cl(3,0) ⊗ C`
-factors, and slice data propagates with the finite Lieb-Robinson
+mutually commuting tensor product of per-site `M_2(C)` factors (the
+Pauli realization; the complexification splits as
+`Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)` per the cited per-site row, with the
+physical carrier one summand),
+and slice data propagates with the finite Lieb-Robinson
 velocity `v_LR = 2 e J_* D_int R_int` of the retained_bounded cluster
 row (L1/L3) — the propagation clause (c) **conditional on the declared
 finite-range generator premise (B-RANGE)**, since the transfer-derived
@@ -50,6 +54,19 @@ rather than derived.
 
 ## 0. Changelog
 
+- **2026-06-11 #3 (supplier wiring + wording repair).** Two items from
+  the 2026-06-11 re-audit: (i) the inline claim-scope wording
+  `M_2(C) ≅ Cl(3,0) ⊗ C` is corrected to match the cited per-site
+  row's complexification split (`Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)`,
+  physical carrier one summand); (ii) the (B-RANGE) candidate
+  supplier named in the not-in-scope list now exists — the
+  exponentially-decaying-interaction Lieb-Robinson source-note is
+  wired as a one-hop edge in the Inputs section, registering the
+  supplier route for the audit chain. (B-RANGE) itself remains a
+  declared premise (its retirement is gated on the supplier reaching
+  retained grade plus a quasilocality statement for the actual
+  `T̂²` log-generator); the (B-AXIS) supplier remains future work
+  (Record-direction or boundary-condition selection row).
 - **2026-05-03.** Original version: (S1) Stone evolution, (S2)
   codimension-1 Cauchy slices, (S3) "the temporal direction is the
   unique RP-admissible reflection axis, hence exactly one clock",
@@ -239,6 +256,19 @@ No fitted parameters. No observed values used as proof inputs.
   generically carries BCH commutator tails beyond the constituent
   range (runner block [C-RANGE], computed non-vacuity witness).
   (S1′) and (S2′a,b) do not consume (B-RANGE); only (S2′c) does.
+  **Supplier wiring (2026-06-11):** the named
+  exponentially-decaying-interaction Lieb-Robinson authority now
+  exists as a one-hop source-note,
+  [`EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md`](EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md)
+  (finite-block quasilocal LR bound with displayed constants for the
+  Hastings-Koma weighted class containing log-transfer generators;
+  its runner witnesses a concrete `-log T` with finite weighted norm
+  and a verified cone). Once that row is retained-grade, (S2′c) can
+  be restated over the quasilocal class — replacing (R-CD) L1/L3 by
+  the quasilocal bound — and (B-RANGE) retires as a premise. Until
+  then (B-RANGE) remains declared and this row remains bounded; this
+  paragraph registers the supplier edge so the audit chain can
+  process both rows together.
 
 ## Statement
 
@@ -532,11 +562,16 @@ bare_retained_allowed: false
   boundary-condition (antiperiodic temporal BC) selection row; either
   would be a separate note.
 - Deriving the (B-RANGE) premise (finite-range or quasi-local
-  structure of the log-transfer generator). Candidate future
-  suppliers: a quasi-locality bridge row for logarithms of strictly
-  local positive transfers, or an exponentially-decaying-interaction
-  Lieb-Robinson authority consumed in place of (R-CD) L1/L3; either
-  would be a separate note.
+  structure of the log-transfer generator). The
+  exponentially-decaying-interaction Lieb-Robinson authority named
+  here as a candidate supplier now exists
+  (`EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md`,
+  wired as a one-hop edge in the Inputs section); the retirement of
+  (B-RANGE) — restating (S2′c) over the quasilocal class — is gated
+  on that row reaching retained grade, plus a quasilocality statement
+  for the actual `T̂²` log-generator (its runner currently witnesses
+  the class on a concrete instance, not the framework transfer
+  itself). Both steps remain outside this note's claim.
 
 ## Citations
 

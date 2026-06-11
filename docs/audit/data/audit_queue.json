@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 290,
+    "critical": 289,
     "high": 284,
     "leaf": 439,
     "medium": 421
@@ -8,31 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
-      "claim_scope": "Audited the bounded dependency-routing bridge for the parent YT Ward identity: Dep 1 routes to a registered Tier-A staggered-Dirac/canonical Q_L target, Dep 2 routes to retained beta-g_bare rescaling algebra, and the normalized form factor is g_bare-flat.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "staggered_dirac_realization_gate_note_2026-05-03",
-        "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.1,
-      "note_path": "docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py",
-      "transitive_descendants": 775
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -43122,6 +43097,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 43,
-  "total_pending": 1434
+  "ready_count": 42,
+  "total_pending": 1433
 }

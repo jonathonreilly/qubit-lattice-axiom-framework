@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 839 |
+| **retained_bounded** | 840 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1419 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1283 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1284 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -720,6 +718,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_faithfulness_rotation_scalar_excluded_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_fisher_rao_spherical_reorganization_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10208,6 +10207,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The positive-definite region alpha > 0 and alpha + 3 beta > 0 contains beta != 0 examples such as alpha = beta = 1, so the stated linear-algebra premises do not force the Frobenius normalization beta = 0.  _(class `A`)_
 - **chain closes:** True — The scalar/traceless decomposition gives weights alpha + 3 beta and alpha, so positive-definiteness only imposes alpha > 0 and alpha + 3 beta > 0. The explicit alpha = beta = 1 witness satisfies those conditions while changing the scalar/traceless ratio, closing the bounded no-go.
 - **rationale:** The displayed decomposition B(A,A) = (alpha + 3 beta) Tr(A_s^2) + alpha Tr(A_t^2), the positivity conditions, and the alpha = beta = 1 counterexample check algebraically under the note's definitions. The runner source performs symbolic decomposition and witness checks rather than merely printing a pass total. The no-go is scoped narrowly to the listed linear-algebra premises and explicitly leaves independent future normalizations out of scope, so it does not overclaim an absolute obstruction.
+- **auditor confidence:** high
+
+### `koide_full_lattice_schur_inheritance_note_2026-04-18`
+
+- **Note:** [`KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18.md`](../../docs/KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For a C_3-covariant block parent on V = T_1 ⊕ W, standard Schur reduction onto T_1 preserves C_3 covariance, so the reduced operator is circulant and an axis-diagonal readout is scalar.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-235116-e9a369a40f-koide_full_lattice_schur_inh`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** If D is invertible and S = A - B D^(-1) B† is the Schur complement on T_1, then C S = S C.  _(class `A`)_
+- **chain closes:** True — The block equations from U M U† = M give C A = A C, C B = B R, and R D = D R; hence D^(-1) commutes with R and the Schur complement commutes with C. The taste-cube and spectator-factor cases are instances of the same block-equivariance hypothesis, while the charged-lepton carrier naming remains bounded through the stated Tier-A admission rather than derived here.
+- **rationale:** The load-bearing step is pure Schur-complement equivariance algebra, not a numerical match, definition, or external comparator. Independent checking confirms the block adjoint/intertwiner identities and the circulant plus axis-diagonal scalar collapse. The clean verdict is only for the bounded theorem scope: it does not derive the physical T_1 charged-lepton identification or a new readout primitive.
 - **auditor confidence:** high
 
 ### `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`

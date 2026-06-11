@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1427 |
+| unaudited | 1426 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 27 |
+| ~~audited_conditional~~ | 28 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1261 |
-| `audited_conditional` | 27 |
+| `audited_conditional` | 28 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1743 |
+| `unaudited` | 1742 |
 
 | claim_type | count |
 |---|---:|
@@ -1406,6 +1406,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8637,6 +8638,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For any finite alpha, the strict k -> 0 sign of omega^2(k)/|k|^2 is sign(c2).  _(class `A`)_
 - **chain closes:** True — Dividing by |k|^2 gives c2(1+alpha A4(khat)|k|^2), so for finite alpha and finite direction harmonic A4 the limit is c2. The note explicitly scopes out deriving c2, the physical TT kernel, Lorentz structure, reflection-positivity transfer, and the emergent metric.
 - **rationale:** The audited claim is the narrow algebraic order-separation lemma, not the broad gravity-sign or bottom-relocation claim. An independent limit check confirms that the correction to omega^2/|k|^2 is O(|k|^2) and therefore cannot alter the strict leading sign of a supplied nonzero c2. The runner source genuinely evaluates the limit behavior, relative scaling, c2-sign dependence, and source-note guardrails; it does not hard-code a contested physics conclusion. The cited meta authority adds no open physics dependency, and no registered primitive is used to supply extra physical content.
+- **auditor confidence:** high
+
+### `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite periodic Z^3 zero-mode-subtracted weak-field variational bridge, scalar Born-density uniqueness under locality/translation covariance, and first-order localized test-source response including the force-sign statement as written.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-133659-b1d63d6bf9-gravity_weak_field_source_re`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite periodic quadratic action has Euler equation H phi = P0 rho and unique neutral-sector solution phi = H^{-1} P0 rho = G0 P0 rho, with the local normalized phase-invariant readout rho_psi=|psi|^2 and test coupling Delta S_test=-m phi(x) Delta tau.  _(class `A`)_
+- **chain closes:** False — The variational Green-kernel identity, Born-density uniqueness, neutral projection, and bilinear test-action response close as finite-dimensional algebra. The force sign does not close as written: U=-m phi implies F=+m grad phi under the note's own derivative convention and the runner checks +m grad phi, while the claim text states -m grad phi.
+- **rationale:** All cited authorities in the restricted packet are retained-grade or retained no-go boundaries, and the runner genuinely computes the finite lattice linear-algebra identities rather than only printing constants. Independent sign checking exposes a source-runner/source-internal mismatch in the test-source force statement: the action response gives Delta S=-m phi Delta tau and the proof/runner use +m grad phi, but the headline claim says -m grad phi. Because that sign is part of the audited bridge surface, the note is not clean as written even though the bounded variational and density subclaims otherwise close.
 - **auditor confidence:** high
 
 ### `growing_graph_dynamic_limit_diagnostic_note`

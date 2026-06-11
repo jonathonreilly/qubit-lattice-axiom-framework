@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 830 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 39 |
-| unaudited | 1390 |
+| unaudited | 1389 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1277 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1706 |
+| `unaudited` | 1705 |
 
 | claim_type | count |
 |---|---:|
@@ -112,7 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1021 | 40.50 | `unaudited` | unaudited |
 | 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 929 | 39.86 | `unaudited` | unaudited |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1325 | 39.37 | `audited_clean` | **retained** |
-| 12 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1269 | 38.81 | `audited_clean` | **retained_bounded** |
+| 12 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1268 | 38.81 | `audited_clean` | **retained_bounded** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 772 | 38.59 | `unaudited` | unaudited |
 | 14 | `yt_ew_color_projection_theorem` | no_go | critical | 715 | 38.48 | `audited_clean` | **retained_no_go** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 860 | 38.25 | `audited_conditional` | ~~audited_conditional~~ |
@@ -1438,6 +1438,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_readout_lane_demarcation_note_2026-05-30` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_taste_cube_cyclic_source_descent_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13496,6 +13497,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The chiral epsilon shift flips every BZ-corner coordinate, so it maps the hw=1 triplet entirely to the disjoint hw=2 triplet, while spatial inversion fixes the hw=1 corners and only axis permutations act nontrivially within hw=1.  _(class `A`)_
 - **chain closes:** True — The cited retained-grade inputs supply the relevant CPT C/P operations and the S3 generation-degeneracy constraint. The finite corner algebra then closes the route-local exclusion: epsilon leaves hw=1, inversion is trivial on hw=1, and axis-permutation S3 is distinct.
 - **rationale:** The load-bearing step is a direct algebraic check on the eight BZ corners, not a definition substitution or numerical comparator. The runner actually computes the corner images, inversion action, axis-permutation action, and operation distinctness, with PASS=7 FAIL=0. The conclusion is properly scoped as a route exclusion: it does not claim no generation breaking exists, only that the retained epsilon/parity operation does not provide the needed within-triplet breaking.
+- **auditor confidence:** high
+
+### `pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02`
+
+- **Note:** [`PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md`](../../docs/PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pauli exclusion for a normalized single fermionic mode on retained matter, with the CAR-to-Pauli step audited conditional on the CAR/Grassmann mode algebra.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-153444-925b46b402-pauli_exclusion_from_spin_st`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Specialising the assumed fermionic anticommutator {a^†_φ, a^†_ψ}=0 to φ=ψ gives 2(a^†_φ)^2=0, hence (a^†_φ)^2=0.  _(class `A`)_
+- **chain closes:** False — The CAR-to-Pauli algebra closes, including the factor of 2 and n_φ^2=n_φ for a normalized mode. The missing step is that the restricted cited authority no longer supplies an unconditional retained spin-statistics/CAR selection for the retained matter content; it supplies Grassmann consequences only under a declared Grassmann frame.
+- **rationale:** The displayed CAR consequences are algebraically correct once CAR is admitted: nilpotency follows from {a^†,a^†}=0, the same-mode vector is zero, and n^2=n follows from {a,a^†}=1 plus nilpotency. The primary runner contains substantive finite-matrix checks for CAR, nilpotency, the zero same-mode state, and projection; its basis-enumeration PASS is hard-coded but redundant. The cited authority is re-scoped retained_bounded and explicitly withdraws statistics forcing, leaving Grassmann/CAR adoption conditional and the hard-core-vs-CAR selection out of scope. Therefore the source note imports an unclosed frame-selection bridge when it treats the dependency as a retained spin-statistics theorem for all retained matter.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `pauli_group_order_theorem_note_2026-05-02`

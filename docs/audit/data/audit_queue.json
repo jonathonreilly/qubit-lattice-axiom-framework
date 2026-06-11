@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 282,
     "high": 281,
-    "leaf": 418,
+    "leaf": 417,
     "medium": 411
   },
   "cycle_break_target_count": 0,
@@ -17001,30 +17001,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_spin_statistics_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/pauli_exclusion_check.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17127,6 +17103,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "universal_gr_conformal_mode_sign_diagnostic_bounded_theorem_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
+        "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+        "universal_gr_supermetric_normal_form_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/UNIVERSAL_GR_CONFORMAL_MODE_SIGN_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_universal_gr_conformal_mode_sign_diagnostic.py",
       "transitive_descendants": 16
     },
     {
@@ -29737,32 +29739,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "universal_gr_conformal_mode_sign_diagnostic_bounded_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
-        "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
-        "universal_gr_supermetric_normal_form_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/UNIVERSAL_GR_CONFORMAL_MODE_SIGN_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_universal_gr_conformal_mode_sign_diagnostic.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "universal_gr_round_pl_s3_regge_hessian_canonical_channels_narrow_theorem_note_2026-06-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -41999,6 +41975,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 9,
-  "total_pending": 1392
+  "ready_count": 8,
+  "total_pending": 1391
 }

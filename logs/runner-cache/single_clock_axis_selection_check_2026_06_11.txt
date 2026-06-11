@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/single_clock_axis_selection_check_2026_06_11.py
+runner_sha256: b7cfda7c333a4fea12ec1bec2a5b35dca8f34a941a662a26b77d992d56297fd5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+========================================================================
+SINGLE-CLOCK AXIS SELECTION: W-TRANSPORT AUDIT (2026-06-11)
+========================================================================
+
+Question: does any retained structure (record/durability, OS/GNS,
+registration cone, anomaly/chirality) break the tau<->x_1 exchange
+W = P_{tau<->1} diag((-1)^{x_tau x_1}), so the evolution axis could be
+derived instead of declared (B-AXIS)?  Answer computed below: NO —
+every candidate transports exactly; the sharpened pin is one per-axis
+Z_2 datum (BC asymmetry) or an equivalent registration-direction bridge.
+
+  surface: block (4, 4, 2, 2), N = 64 sites, mass = 0.3, periodic BCs
+
+------------------------------------------------------------------------
+[S] BASELINE: the exact tau<->x_1 exchange certificate (recomputed)
+------------------------------------------------------------------------
+  [PASS][C] W = P_{tau<->1} diag((-1)^{x_tau x_1}) is orthogonal  -- N = 64 sites, mass = 0.3
+  [PASS][C] exact surface invariance: ||W M_KS W^T - M_KS|| = 0 (periodic BCs)  -- resid = 0.00e+00
+  [PASS][D] falsifier: plain axis swap WITHOUT the sign field fails  -- resid = 5.6569 >> 0 (the certificate is non-trivial)
+
+------------------------------------------------------------------------
+[RT-RP] ROUTE A1: does the OS/GNS construction anchor the axis? (computed: NO)
+------------------------------------------------------------------------
+  [PASS][C] W theta_tau W^T is an orthogonal involution supported EXACTLY on the x_1 site reflection x_1 -> L-1-x_1 (a signed spatial reflection)  -- involution resid = 0.0e+00, |support - R_1| = 0.0e+00
+  [PASS][C] the covariance (one-particle Euclidean kernel) is W-invariant: W M^{-1} W^T = M^{-1}  -- resid = 2.69e-15
+  [PASS][C] the x_1-axis OS kernel is EXACTLY unitarily equivalent to the temporal one: W_r G_1 W_r^T = G_tau (W_r = W restricted to halves, orthogonal)  -- ||W_r W_r^T - I|| = 0.0e+00, transport resid = 1.49e-15
+  [PASS][C] identical Hermitian spectra and identical minimum eigenvalue: WHATEVER positivity status the tau construction has, the x_1 construction has identically — the 'no spatial GNS structure' escape is FALSE  -- max |spec diff| = 6.7e-16, min eig (both) = -1.648227
+
+------------------------------------------------------------------------
+[RT-REC] ROUTE A2: does record durability anchor the axis? (textual + computed: NO)
+------------------------------------------------------------------------
+  [PASS][B] Record axiom is axis-blind by its own text: a record supplies no 'time metric' (verbatim in the exclusion list)  -- MINIMAL_AXIOMS_2026-06-05.md
+  [PASS][B] record formation is not forced (retained_no_go): 'at least one record exists' is NOT an axiom consequence, so no axis can be derived from it unconditionally  -- record-formation no-go quoted
+  [PASS][B] the clock map is supplied, never derived from records (retained_no_go): 'Without the supplied `tau`, the same record history supports many inequivalent rates' — the event ORDER carries no lattice-axis label  -- clock/rate interface quoted
+  [PASS][B] the CAP-K registration cone is axis-CONDITIONAL, not axis-selecting: its dynamics clause (REG-dyn) consumes the framework H and its window (REG-tau) consumes a supplied clock — both downstream of B-AXIS, so citing it for axis selection would be circular  -- CAP-K note clauses present
+  [PASS][A] durability ('fixed once registered, never un-registered') is operator-order monotonicity of the record counter, and operator order is unitary-transport invariant: the conjugated counter is monotone with the same increment spectra — durability CANNOT distinguish W-related axes  -- monotone before/after = True/True, max increment-spec diff = 8.9e-16
+  [PASS][C] the slice/registration-cone package transports exactly: W maps the x_1-as-evolution in-slice hop operator onto the tau-as-evolution one (W_sl D^(1) W_sl^T = D^(tau), identical spectra) — every cone constant, LR velocity, and CAP-K capacity built on the slice dynamics is equal  -- slice dim = 16, transport resid = 0.0e+00, max |spec diff| = 0.0e+00
+
+------------------------------------------------------------------------
+[RT-ANOM] ROUTE B: does the anomaly/chirality chain pick the axis? (NO: count, not label)
+------------------------------------------------------------------------
+  [PASS][C] the staggered chirality grading eps(x) = (-1)^{sum x_mu} is exactly W-invariant and the chiral anticommutation {D_hop, eps} = 0 is preserved: the chirality structure is axis-label-blind  -- ||W E W^T - E|| = 0.0e+00, ||{A,E}|| = 0.0e+00
+  [PASS][B] the anomaly consumer constrains the COUNT d_t, 'not
+   which axis is temporal' (its own non-circularity section), and the fixed note's B-AXIS 'references no anomaly content' — route B supplies no axis label by both notes' own text  -- both texts quoted
+
+------------------------------------------------------------------------
+[PIN] THE SHARPENED PIN: what WOULD break the exchange (computed witnesses)
+------------------------------------------------------------------------
+  [PASS][C] antiperiodic-tau / periodic-space BCs break the exchange EXACTLY: ||W M_ap W^T - M_ap|| > 0 — one per-axis Z_2 BC datum suffices to select the axis on this surface  -- resid = 2.828427 (= 2*sqrt(2) on this block)
+  [PASS][C] falsification leg: antiperiodic in BOTH tau and x_1 RESTORES the exact exchange symmetry — the axis-selecting datum is the BC ASYMMETRY between the axes, not the antiperiodic wrap itself  -- resid = 0.0e+00
+  [PASS][C] relabeling-invariant discriminator: with antiperiodic-tau the temporal hop sector has TRIVIAL kernel while the periodic x_1 sector has a nonzero kernel — no exchange map of any kind (signed, conjugated, or otherwise) can identify the two sectors once the BC datum is supplied  -- dim ker: temporal(apbc) = 0, x_1(pbc) = 32
+  [PASS][C] asymmetric extents L_tau != L_1 also discriminate (sector spectral radii differ) — but extents are finite-block regulator data, declared, not framework axioms; recorded as the weaker regulator-level datum  -- max|spec|: temporal = 1.7321, x_1 = 2.0000 on (6,4,2,2)
+  [PASS][D] the pin addresses ONLY the axis-label clause of B-AXIS.2 (= N4): B-AXIS.1 (the supplied 2a_tau, = N2) and B-AXIS.3 (no commuting factor clock, = N5) remain declared premises exactly per the scope boundary; the fixed note's candidate-supplier sentence names the BC route this pin sharpens  -- B-AXIS clauses + candidate-supplier sentence present
+
+------------------------------------------------------------------------
+[D] COMPOSITION DISCIPLINE (scope boundary consumed, not contradicted)
+------------------------------------------------------------------------
+  [PASS][D] scope-boundary clauses consumed verbatim: N2 (time step), N4 (axis/transfer uniqueness), N5 (commuting factors), and 'Stone uniqueness is transfer-relative and tau-relative'  -- N2/N4/N5 + repair line present
+  [PASS][D] this note is a narrow no-go that does NOT claim the axis is derived: honest-outcome strings present, forbidden closure strings absent  -- wording guards hold
+  [PASS][D] no-go is consistent with the boost-faith and cubic-anisotropy boundaries: no boost action is derived (no Lorentz content consumed), and no SO(4) wording is used (the c_t = c_s primitive makes the surface MORE exchange-symmetric, which this note's direction respects)  -- one-hop boundary texts present
+
+========================================================================
+TOTAL: PASS=23 FAIL=0
+========================================================================
+
+----- stderr -----
+

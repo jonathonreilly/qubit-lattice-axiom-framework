@@ -221,27 +221,48 @@ elementary plaquette (Wilson plaquette). This gives bounded support
 action-density pieces. It does not prove that the exact logarithmic
 Hamiltonian `H = -log(T)/a_tau` is finite range.
 
-**(F2) Explicit action-density J bound.** `J_action ≤ J_max :=
-|m| + d/2 + r_W · d + (2β/N_c) · d(d-1)/2`, depending only on action
-coefficients. For the canonical surface (`d = 4, r_W = 1, β = 6,
-N_c = 3`): `J_max = |m| + 30`. Proof: triangle inequality on the
-local action-density pieces, using `‖U_μ‖_op = 1` because
-`U_μ ∈ SU(3)` is unitary, `|η_μ(x)| = 1`, fermion ladder ops bounded
-by 1, and `|1 - Re tr(U_P)/N_c| <= 2` for unitary `U_P`. The bound is
-gauge-background-independent.
+**(F2) Explicit action-density J and overlap-weight budgets.** The
+repaired bridge uses the plaquette coefficient `2β`: the `1/N_c`
+belongs inside the trace average, not in the exterior coefficient.
+Its displayed bound is
+
+```text
+    J_action <= (d/2) · 1 + r_W · d + |m| + 2β · q_face,
+```
+
+with `q_face = d(d-1)/2`. On the canonical surface
+(`d = 4, r_W = 1, β = 6, N_c = 3`) this gives the supplied-surface
+budget `J_max = |m| + 78`. The same bridge also brackets the
+carrier-faithful Wilson reading and all-direction envelope:
+`J_max^carrier = |m| + 78.5` and `J_max^envelope = |m| + 80`.
+All three are finite and gauge-background-independent; the older
+double division by `N_c` is superseded.
+
+The LR lemma does not consume `J_action` directly. Its local input is
+the per-site overlap weight `W = sup_x Σ_{Z ∋ x} ‖h_Z‖_op`. For the
+same carrier family the bridge proves
+
+```text
+    W_surface = |m| + 296,
+    W_carrier = |m| + 298,
+    W_envelope = |m| + 300.
+```
 
 **(F3) Conditional Lieb-Robinson velocity.** If the exact reconstructed
 Hamiltonian has a finite-range/quasilocal decomposition with compatible
-support and local bound, the in-repo finite-range bridge gives the
+support and overlap weight, the in-repo finite-range bridge gives the
 overlap-weight velocity `v_LR = 2 e q W R`. The older `2 e r J`
-summary is superseded because it omitted the per-site overlap weight.
+summary is superseded because it omitted the per-site overlap weight;
+under the envelope branch the conditional finite-range ceiling is
+`v_LR <= 16·e·(|m| + 300)`.
 
 The bridge note's runner `scripts/microcausality_finite_range_h_bridge_2026_05_09.py`
 verifies (F1) on a finite-range toy action-density carrier, (F2) by
 computing `‖h_z‖_op` on 20 random SU(3) backgrounds and comparing
-against the conservative `J_max`, (F3) by verifying the standard
-Lieb-Robinson bound (5) on a 1D finite-range Hamiltonian, and (F4)
-outside-lightcone exponential decay.
+against the repaired conservative `J_max`, (F2b/F2c) by checking the
+`78 <= 78.5 <= 80` branch arithmetic and `296/298/300` overlap
+weights, (F3) by verifying the proved Lieb-Robinson bounds on a
+finite-range Hamiltonian, and (F4) outside-lightcone exponential decay.
 
 **Consequence for the load-bearing claim.** The action-support and
 coefficient/norm pieces are no longer asserted. The finite-range LR constant

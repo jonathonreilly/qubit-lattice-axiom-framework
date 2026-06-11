@@ -24,11 +24,54 @@ from __future__ import annotations
 import math
 import os
 import sys
+from pathlib import Path
 
 import numpy as np
 
 sys.path.insert(0, os.path.dirname(__file__))
 import free_bilinear_quasilocal_lr_bridge_2026_06_10  # noqa: F401,E402
+
+
+def validate_source_packet_text() -> None:
+    """Guard the parent note against stale finite-range bridge constants."""
+    root = Path(__file__).resolve().parents[1]
+    parent_note = root / "docs" / "AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md"
+    bridge_note = root / "docs" / "MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md"
+    parent_text = parent_note.read_text(encoding="utf-8")
+    bridge_text = bridge_note.read_text(encoding="utf-8")
+
+    parent_required = [
+        "2β · q_face",
+        "`J_max = |m| + 78`",
+        "`J_max^carrier = |m| + 78.5`",
+        "`J_max^envelope = |m| + 80`",
+        "W_surface = |m| + 296",
+        "W_carrier = |m| + 298",
+        "W_envelope = |m| + 300",
+        "`v_LR <= 16·e·(|m| + 300)`",
+    ]
+    bridge_required = [
+        "`J_max` (`|m| + 78` supplied surface / `|m| + 78.5`",
+        "`W` (`|m| + 296` / `|m| + 298` / `|m| + 300`",
+        "`v_LR := 2·e·q·W·R`",
+    ]
+    parent_forbidden = [
+        "(2β/" + "N_c) · d(d-1)/2",
+        "`J_max = |m| " + "+ 30`",
+    ]
+
+    missing_parent = [needle for needle in parent_required if needle not in parent_text]
+    missing_bridge = [needle for needle in bridge_required if needle not in bridge_text]
+    stale_parent = [needle for needle in parent_forbidden if needle in parent_text]
+    if missing_parent or missing_bridge or stale_parent:
+        details = []
+        if missing_parent:
+            details.append(f"parent missing {missing_parent}")
+        if missing_bridge:
+            details.append(f"bridge missing {missing_bridge}")
+        if stale_parent:
+            details.append(f"parent still has stale constants {stale_parent}")
+        raise AssertionError("; ".join(details))
 
 
 def build_local_hamiltonian(
@@ -98,6 +141,12 @@ def main() -> None:
     print("=" * 72)
     print("MICROCAUSALITY / LIEB-ROBINSON CHECK")
     print("=" * 72)
+    print()
+    validate_source_packet_text()
+    print("Source-packet constants:")
+    print("  parent note agrees with finite-range bridge on 2β, J branches,")
+    print("  overlap weights W = |m| + {296, 298, 300}, and v_LR = 2 e q W R")
+    print("  STATUS: PASS")
     print()
     print("Setup:")
     print("  1D chain of L sites with C^2 (qubit) per site")

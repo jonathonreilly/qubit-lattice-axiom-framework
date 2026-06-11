@@ -1,6 +1,6 @@
 # Dirac/Spinor Chirality Does Not Discharge Koide/Generation Chirality
 
-**Date:** 2026-06-08
+**Date:** 2026-06-08; one-way Koide-gate scope repair 2026-06-10
 **Claim type:** bounded_theorem / conditional finite algebra
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome.
@@ -30,11 +30,12 @@ only the *hybrid* `γ_CL = Γ_χ` on a single generation `R³`, **not** this sep
 **generation-ID** collapse into the same keystone.
 
 This note bounds that inference. On the supplied tensor-product carrier,
-`γ_5` is generation-blind, and the Koide `Q=2/3` mechanism requires a
-generation-sector chirality that this `γ_5` cannot supply. **"Not blocked by the
-narrow no-go" ≠ "supplied."** There are two independent chirality requirements.
-The separate derivation of the `γ_5` operator from `Cl(3,1)` and its
-spin-statistics role are outside this restricted packet.
+`γ_5` is generation-blind, and the retained anti-commuting-operator route to
+the Koide `Q=2/3` readout uses a generation-sector chirality that this `γ_5`
+cannot supply. **"Not blocked by the narrow no-go" ≠ "supplied."** There are two
+independent chirality requirements. The separate derivation of the `γ_5`
+operator from `Cl(3,1)` and its spin-statistics role are outside this
+restricted packet.
 
 ## The two gates
 
@@ -42,7 +43,7 @@ spin-statistics role are outside this restricted packet.
 |---|---|---|
 | operator | `γ_5 = I_3 ⊗ σ_3` on `(gen R³) ⊗ (L⊕R)` | a generation mass operator `M_gen` on `R³` |
 | requirement | anticommutes with the Dirac mass `β` (L↔R) | `{M_gen, Γ_χ} = 0`, `Γ_χ = (2/3)J − I` |
-| source | supplied tensor-product grading in this runner; `Cl(3,1)` derivation not claimed here | the retained `koide_anticommuting_operator_derivation`: `Q=2/3 ⟺ {M_gen, Γ_χ}=0` |
+| source | supplied tensor-product grading in this runner; `Cl(3,1)` derivation not claimed here | the retained one-way anti-commuting-operator route: an anticommuting generation mass operator supplies the chiral Koide `Q=2/3` readout used here; no converse/completeness direction is consumed |
 | needed for | Dirac/spinor L/R algebra in this restricted packet; spin-statistics use not claimed here | the charged-lepton `Q=2/3` mass spectrum |
 
 ## The separation (verified, `PASS=16`)
@@ -73,8 +74,9 @@ This sharpens, and is consistent with, the existing flavor-emergent
 chirality transport note (unaudited), whose candidate table already finds
 the `γ_CL = I_3 ⊗ σ_3` grading **INERT** on
 the generation factor (`{G⊗σ₁, I_3⊗σ₃}=0` for every `G` → zero constraint there). The added
-content here is the explicit **two-gate** framing grounded in the
-`koide_anticommuting_operator_derivation` algebraic input (not only the unaudited transport note), and the
+content here is the explicit **two-gate** framing grounded in the one-way
+anti-commuting-operator algebraic input from
+`koide_anticommuting_operator_derivation` (not only the unaudited transport note), and the
 precise **"not blocked ≠ supplied"** scope-bound on the separate-factor `Cl(3,1)` keystone claim.
 
 Authorities / inputs:
@@ -92,7 +94,9 @@ does not use it to derive `γ_5` or spin-statistics).
   `I_3 ⊗ σ_3` grading handles the Dirac/spinor L/R algebra while remaining
   generation-blind.
 - It does **not** discharge the **Koide `Q=2/3` / generation-ID chirality**, which
-  remains the open generation-`R³` C₃-breaking requirement.
+  remains the open generation-`R³` C₃-breaking requirement on the retained
+  one-way anti-commuting route. This note does not claim the converse that
+  every `Q=2/3` realization must arise from `{M_gen, Γ_χ}=0`.
 - It does **not** derive the separate L/R `γ_5` from the `Cl(3,1)` extension and
   does **not** prove spin-statistics use of that grading.
 - No new axiom or import; no PDG load-bearing. The independent audit lane owns any status.

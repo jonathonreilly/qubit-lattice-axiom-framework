@@ -3,7 +3,7 @@ runner: scripts/axiom_first_spin_statistics_source_packet_certificate_2026_06_11
 runner_sha256: b04797897e2ec0fb9f8fc0111f78f779378930f3e455ee82a51012d0163df086
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.10
 status: ok
 ----- stdout -----
 axiom-first spin-statistics source-packet certificate 2026-06-11

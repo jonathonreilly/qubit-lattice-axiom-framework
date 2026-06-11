@@ -59,8 +59,8 @@ owned by the 2026-06-10 GL(F) conditional discriminator note.
     computes the CCR defect and the exclusion certificate, and its
     falsification leg computes that the hard-core frame is NOT excluded by
     this note's hypothesis.
-- **2026-06-10.** Verdict-responsive repair (audited_conditional,
-  missing_bridge_theorem): the finite/dim-2 per-site physical-space
+- **2026-06-10.** Dependency-scope repair (finite/dim-2 bridge):
+  the finite/dim-2 per-site physical-space
   hypothesis is now explicitly carried by the Quantum axiom's
   one-qubit-per-site clause (the `k(x) = 1` case in the
   single-module row's multiplicity vocabulary) composed with (C1) of

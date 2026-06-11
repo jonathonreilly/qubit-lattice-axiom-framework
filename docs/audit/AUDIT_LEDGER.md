@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 831 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1436 |
+| unaudited | 1435 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1753 |
+| `unaudited` | 1752 |
 
 | claim_type | count |
 |---|---:|
@@ -1435,6 +1435,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `spin_statistics_fs_admission_located_exercise_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17082,6 +17083,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Combining the bridge-derived edge-flip sign field epsilon(x)=(-1)^(x_1+x_2+x_3) with the A1 central pseudoscalar omega_global=sigma_1 sigma_2 sigma_3=iI gives omega(x)=epsilon(x) omega_global.  _(class `A`)_
 - **chain closes:** True — The cited bridge is retained_bounded and proves the unique scalar edge-flip grading on the Z^3 coordinate graph; multiplying by the central Pauli pseudoscalar is an algebraic closure, and the edgewise -1 ratio gives the stated chirality sign reversal. The eta checks are displayed Kawamoto-Smit phase definitions and gauge-cancellation consistency checks, not a derivation of the full kinetic operator.
 - **rationale:** Independent parity-path reasoning confirms that any scalar sign field flipping across every coordinate edge is s(0)(-1)^(x_1+x_2+x_3), and Pauli multiplication gives sigma_1 sigma_2 sigma_3=iI. Since iI is central, omega(x) gamma_mu omega(x+e_mu)^(-1) has the scalar ratio epsilon(x)/epsilon(x+e_mu)=-1, so the bounded chirality relation follows from the retained bridge without an extra H_staggered_chirality premise. The runner's finite GF(2) rank checks support the same edge-flip uniqueness on sample boxes, while its eta checks are algebraic/definitional and do not overclaim beyond the note's bounded scope.
+- **auditor confidence:** high
+
+### `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`
+
+- **Note:** [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](../../docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the declared P-KIN/P-SD nearest-neighbor naive-Dirac kinetic class on simply connected Z^3 regions, scalarizable Z2/U(1) phase systems are exactly the Clifford −1 plaquette-cocycle solutions and form one local gauge class represented by the Kawamoto-Smit phases; kinetic-class derivation and finite-torus holonomy selection are out of scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-215155-f31db71177-staggered_dirac_kawamoto_smi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Scalarization around an elementary plaquette forces the two path transports to differ by γνγμ = −γμγν, giving the Clifford −1 plaquette cocycle, and conversely that cocycle makes the path-product transport well defined on simply connected regions.  _(class `A`)_
+- **chain closes:** True — The algebraic cocycle and gauge-class classification close within the stated bounded surface: Clifford anticommutation gives necessity, path-product transport gives sufficiency on simply connected regions, and the ratio of two solutions is an exact closed one-cochain. The closure does not derive P-KIN/P-SD or the upstream matter-sector selection.
+- **rationale:** The load-bearing math is a genuine algebraic closure, not a renaming or numerical match. Independent cochain counting on a connected simply connected box gives |ker d1| = 2^{|V|-1}, matching the unit-cube count 2^7 = 128 and the one-gauge-class result, and the displayed Clifford signs in Lemmas 2–4 check out. The audit cannot be clean because the source explicitly imports P-KIN and P-SD as declared kinetic-class premises and relies on the bounded BlockT1/substep-1 surface rather than deriving those identifications in the restricted packet.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`

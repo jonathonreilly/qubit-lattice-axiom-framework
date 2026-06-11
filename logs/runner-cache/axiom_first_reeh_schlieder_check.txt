@@ -1,78 +1,50 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_reeh_schlieder_check.py
-runner_sha256: ebc7c6340be4e4d8108d615612048e7f77079a0e56d05d387729a2beabcf5b92
+runner_sha256: 0ff8d2b190059b7733535eaf16cd1d08682963badab6737fc978f63cfddabe5a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.71
 status: ok
 ----- stdout -----
 ========================================================================
-AXIOM-FIRST REEH-SCHLIEDER CYCLICITY CHECK
+ axiom_first_reeh_schlieder_check.py  (re-scoped 2026-06-11)
+ Finite-lattice RS dichotomy + vacuum separating certificates
+ Carrier: free staggered fermion chain (Quantum qubit/site, Lattice chain)
 ========================================================================
 
-Setup:
-  L = 6 sites, dim H_phys = 64
-  local region O = sites 0..1 (R = 2)
-  H = sum_z h_{z, z+1} (range-1 NN)
+--- Section [A]: exact dichotomy theorem RS-1 ---
+  [PASS] check 1 [A]: 1 (x) B(H_Oc) commutes with all A(O) generators exactly (max |[g, 1(x)E]| = 0.0e+00); with the von Neumann double-commutant theorem this gives A(O)' = 1 (x) B(H_Oc)
+  [PASS] check 2 [A]: dichotomy dim A(O)v = d_O * SchmidtRank(v) holds exactly on constructed vectors — r=1: dim A(O)v = 4 (= 4*1); r=2: dim A(O)v = 8 (= 4*2); r=4: dim A(O)v = 16 (= 4*4)
 
-  H spectrum: ground state at E_0 = -2.870498
-              first excited at  E_1 = -2.646583
-              gap E_1 - E_0     = 0.223914
+--- Section [C]: framework carrier, vacuum certificates ---
+  [PASS] check 3 [C]: L=6 OBC staggered carrier: E_0 = -2.015030, gap E_1 - E_0 = 0.373518 > 0 (vacuum nondegenerate on THIS carrier; SC3's conditional clause is not consumed)
+  [PASS] check 4 [C]: staggered vacuum has FULL-RANK rho_O on tested regions => |Omega> separating for A(O) (no nonzero local annihilator) — R=1: rank 2/2, min lambda(rho_O) = 1.89e-01; R=2: rank 4/4, min lambda(rho_O) = 6.43e-04; R=3: rank 8/8, min lambda(rho_O) = 4.10e-08
+  [PASS] check 5 [A]: equivalences on the carrier: dim A(O)Omega = 16 = d_O^2 = 16 (map A -> A|Omega> injective <=> separating) AND dim A(O)' Omega = 64 = dim H = 64 (cyclic for the commutant) — the two RS-1 forms agree
+  [PASS] check 6 [C]: equal-time A(O)|Omega> spans 16 of 64 dims (= d_O * r = 4*4): the pre-2026-06-11 headline 'A(O)|Omega> dense for any nonempty O' is FALSE as stated for tensor-factor local algebras on a finite lattice
+  [PASS] check 7 [C]: L=6 PBC half-chain cut: Schmidt rank 4/8 (a correlation eigenvalue pins at exactly 1) => vacuum NOT separating for the half-chain algebra; explicit annihilator ||A|| = 1.000, ||A Omega|| = 1.1e-16 — the property is region- and carrier-sensitive even inside the framework
+  [PASS] check 8 [C]: mass-only comparator (hop = 0): gap = 0.300 > 0, H >= 0, but Schmidt rank = 1 (product vacuum) and the LOCAL projector n_0 in A(O) annihilates it (||n_0 Omega|| = 0.0e+00, ||n_0|| = 1.00) => the separating property is STATE-SENSITIVE: gap + spectrum condition alone cannot prove it
+  [PASS] check 9 [C]: large region O = 4 of 6 sites: dim A(O)Omega = 64 = dim H (cyclic, since r = 4 = d_Oc) but NOT separating (r < d_O = 16; annihilator with ||A Omega|| = 0.0e+00) — equal-time cyclicity is a large-region triviality, not Reeh-Schlieder content
+  [PASS] check 10 [C]: L=8 OBC carrier reproduces the certificates — gap = 0.3466; R=2: rank 4/4, min lambda(rho_O) = 5.92e-04; R=3: rank 8/8, min lambda(rho_O) = 4.54e-08; dim A(O)Omega = 16 = d_O*r << 256
 
-------------------------------------------------------------------------
-TEST 1: vacuum uniqueness (mass gap > 0)
-------------------------------------------------------------------------
-  E_1 - E_0 = 0.223914
-  STATUS: PASS
+--- Section [C]: RS-3 time-translated corollary (genericity exposed) ---
+  [PASS] check 11 [C]: A_T(O)' computed exactly as the largest ad_H-invariant subspace of A(O)': dims 256 -> 64 -> 16 -> 4 -> 1 -> scalars only => A_T(O) = B(H_phys) by the finite-dim double commutant. NOTE: A_T(O) is NOT a local algebra (alpha_t(A) has global support; exact lattice strict locality fails)
+  [PASS] check 12 [C]: time-translated words are cyclic for the vacuum AND for excited eigenstates with the same word set => RS-3 is vector-generic, NOT a vacuum-specific statement — vacuum: rank 64/64 (64th sv = 5.5e-04); excited E_17: rank 64/64 (64th sv = 2.4e-02); excited E_30: rank 64/64 (64th sv = 4.6e-02)
 
-------------------------------------------------------------------------
-TEST 2: equal-time A(O) alone — span dimension
-------------------------------------------------------------------------
-  A(O) at t = 0 contains polynomials in Pauli X, Y, Z on sites 0..1.
-  Generators: 3 Pauli x R sites = 6 single-Pauli operators,
-  plus identity. Polynomials span 16 = (2^R)^2 = (dim of M(C^4)).
+RESIDUAL (declared-open): full-rank rho_O is VERIFIED per carrier and per region, never derived; check 8 proves no derivation from gap + spectrum condition alone can exist (B-1).
+RESIDUAL (declared-open): min lambda(rho_O) margins decay fast with region size (4.1e-08 at L=6 R=3); no uniform-in-volume bound, no continuum statement (B-2).
+RESIDUAL (declared-open): RS-3's algebra A_T(O) is non-local and its cyclicity is vector-generic; the continuum Reeh-Schlieder theorem (type-III local algebras, spectrum-condition analyticity) is NOT recovered here (B-3).
 
-  rank of A(O) Omega (equal-time only) = 16
-  expected |A(O) Omega| <= dim_M(C^4) = 16
-  full H_phys dim                       = 64
-  equal-time A(O) Omega spans only 16 of 64 dims — NOT full
-  STATUS: PASS (correctly limited)
+Check-class breakdown (PASS): A=3 B=0 C=9 D=0
+TOTAL: PASS=12 FAIL=0
 
-------------------------------------------------------------------------
-TEST 3: time-translated A(O) DOES span H_phys (Reeh-Schlieder)
-------------------------------------------------------------------------
-Build A(O)_translated = { alpha_t(O) : O in A(O), t in time grid },
-apply to |Omega>, check rank = dim(H_phys).
-
-  rank of A(O)_translated Omega = 64
-  full H_phys dim               = 64
-  STATUS: PASS (Reeh-Schlieder cyclicity)
-
-------------------------------------------------------------------------
-TEST 4: vacuum is separating for A(O)' (commutant)
-------------------------------------------------------------------------
-Equivalent form: any B in A(O)' with B Omega = 0 must be B = 0.
-
-  B = sigma_X on site 2 (in A(O)' since it commutes with all A(O))
-  ||B||                                = 1.0000
-  ||B Omega||                          = 1.0000
-  B is non-zero AND B Omega is non-zero, consistent with separating
-  STATUS: PASS
-
-========================================================================
-SUMMARY
-========================================================================
-  Test 1 (vacuum uniqueness, gap > 0):                  PASS
-  Test 2 (equal-time A(O) is properly local):           PASS
-  Test 3 (time-translated A(O) spans H_phys):           PASS
-  Test 4 (vacuum separating for A(O)'):                 PASS
-
-  OVERALL: PASS
-
-Note: this runner uses a 6-qubit toy chain (toy A1 Cl(3) → C^2)
-with random range-1 NN Hermitian H. The Reeh-Schlieder theorem
-is dimension-independent and applies to the framework's Cl(3) on
-Z^3 by the same proof structure (Steps 1-6 of the companion note).
+VERDICT: on the framework's staggered carriers the finite-lattice
+RS dichotomy holds exactly (dim A(O)Omega = d_O * SchmidtRank);
+the staggered vacuum is separating for every tested small local
+algebra (full-rank rho_O, exact certificates); equal-time
+cyclicity for small regions is FALSE; the separating property is
+state- and carrier-sensitive (PBC pinned mode, product vacuum);
+time-translated cyclicity holds but is vector-generic and
+non-local. Bounded theorem; no continuum claim.
 
 ----- stderr -----
 

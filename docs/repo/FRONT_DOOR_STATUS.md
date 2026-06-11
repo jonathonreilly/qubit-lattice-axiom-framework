@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1441 |
-| Retained-grade rows, including boxed decorations | 1295 |
+| Applied audit verdicts | 1442 |
+| Retained-grade rows, including boxed decorations | 1296 |
 | Retained positive theorems | 213 |
-| Retained no-go rows | 207 |
+| Retained no-go rows | 208 |
 | Retained bounded rows | 825 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1402 |
+| Unaudited rows | 1401 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 43 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1404 |
-| Ready rows | 21 |
+| Total pending rows | 1403 |
+| Ready rows | 20 |
 | Cycle-break targets | 0 |
 | Critical pending | 282 |
 | High pending | 281 |
 | Medium pending | 411 |
-| Leaf pending | 430 |
+| Leaf pending | 429 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`ring_monodromy_does_not_force_car_note_2026-06-04`](../../docs/RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md) - medium; unaudited
 - [`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`](../../docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md) - medium; unaudited
 - [`universal_gr_w_hessian_identification_full_finite_k_channel_table_bounded_theorem_note_2026-06-09`](../../docs/UNIVERSAL_GR_W_HESSIAN_IDENTIFICATION_FULL_FINITE_K_CHANNEL_TABLE_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
-- [`chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08`](../../docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md) - leaf; unaudited
+- [`chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08`](../../docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md) - medium; unaudited
+- [`cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10`](../../docs/CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

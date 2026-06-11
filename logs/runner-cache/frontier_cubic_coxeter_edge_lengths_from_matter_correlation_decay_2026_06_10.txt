@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cubic_coxeter_edge_lengths_from_matter_correlation_decay_2026_06_10.py
+runner_sha256: 3c3b602005e393b3602ddf9f731921404ddd3b44f28786af1218515129413890
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 32.51
+status: ok
+----- stdout -----
+REGGE EDGE LENGTHS FROM MATTER CORRELATION DECAY (the edge-DOF identification, linearized)
+================================================================================================
+[PASS] E1 (sign dictionary): the lattice s-form coupling qhat^T(1+h)qhat occupies the INVERSE-metric slot of the curved-Laplacian symbol (g^{mu nu} p_mu p_nu), so h = delta g^{inverse} and the METRIC perturbation is -h at linear order (sympy: (1+eps)^{-1} = 1 - eps + O(eps^2)); the s-form is the landed TT-kernel row's canonical metric entry
+       g_00 = 1 - eps + O(eps^2) for g^{inv}_00 = 1 + eps
+[PASS] E2 (CLOSED-FORM CALIBRATION): the symmetric on-shell exponent per edge step is Lambda_k = 2k asinh(m/(2 sqrt k)) (on-shell identity exact); the m->0 ratios are sqrt(k) = {1, sqrt2, sqrt3, 2} -- EXACTLY the landed complex's flat edge-length assignment -- with finite-m deviation law 1 + (m^2/24)(1 - 1/k) + O(m^4)
+       on-shell residual = 0; deviation-law residual = 0; m->0 ratios = [1, sqrt(2), sqrt(3), 2]
+[PASS] E3 (THE EXPONENT CERTIFIED, two-sided): the analytically continued symbol K(p + i theta v) has an EXACT zero at p=0, theta* = 2 asinh(m/(2 sqrt k)) (machine precision, all class types incl. tick-mixed), and NO zero on the sampled torus at theta = 0.97 theta* (min|K| bounded away) -- the decay exponent along v is Lambda(v) = k theta*, the closed form (the standard analytic/Ornstein-Zernike exponent; context citation, certified directly). Tick and space orientations agree identically. SUPPORTING: the position-space FFT decay sequences converge toward the certified exponents monotonically from above (no fit used)
+       worst |K(p=0, theta*)| = 8.3e-17; min torus |K| at 0.97 theta* = 1.485e-02; tick-vs-space zero diff = 0.0e+00; position-space convergence-from-above: True
+[PASS] E4 (THE METRIC-RESPONSE THEOREM): the EXACT finite-h law Lambda(v;h) = 2k asinh(m/(2 sqrt(k + v^T h v))) gives delta log Lambda = c_resp(m,k) (v^T h_metric v)/|v|^2 (sign from E1), with c_resp -> 1/2 as m -> 0: delta ell_hat/ell_hat -> v^T h v/(2|v|^2) -- EXACTLY the geometric metric map of the landed Regge rows, including the factor 1/2
+       c_resp(m,k) = m/(2*sqrt(4*k + m**2)*asinh(m/(2*sqrt(k)))); m->0 limit = 1/2
+[PASS] E5 (FINITE-h CERTIFICATES, the whole family): for ALL 15 edge classes x ALL 10 metric components at h = +-0.05, the continued symbol's exact zero sits at theta*(h) of the law Lambda(v;h) = 2k asinh(m/(2 sqrt(k + v^T h v))) (machine), with the torus nonsingular below it; off-pattern components (v^T h v = 0) leave theta* EXACTLY unchanged -- the response is the closed form for the entire landed metric family, not just at linear order
+       worst |K(p=0, theta*(h))| = 1.2e-16; min torus |K| below = 1.485e-02; worst off-pattern zero shift = 8.3e-17
+[PASS] E6 (DICTIONARY CONVERGENCE, closed form): the exact dictionary response matrix converges to the geometric metric map M0 as m -> 0 with the O(m^2) law (log-log slope ~2 over the m-scan); the finite-m deviation is the exactly computable per-class factor (the c_resp and calibration corrections)
+       deviation vs m: m=0.6: 1.991e-02, m=0.45: 1.151e-02, m=0.3: 5.217e-03, m=0.15: 1.320e-03; log-log slope = 1.960
+[PASS] E7 (THE PROVENANCE STATEMENT): the operator-native metric family's exact response has rank 10 and its column space converges to the Regge metric sector im(M0) (principal-angle sine decreasing toward 0 with m): the matter sector's metric content and the geometry's metric sector COINCIDE through this linearized dictionary -- the edge-length degrees of freedom are represented by per-edge-class matter-correlation decay data; the 5 non-metric (breathing) directions are not populated in the limit
+       rank = 10; principal-angle sine: m=0.5 -> 8.74e-03, m=0.15 -> 8.17e-04
+[PASS] E8 (tick on equal footing): the exact law depends only on (k, v^T h v) -- manifestly symmetric under coordinate permutations including tick <-> space (numeric permutation identity at machine precision; c_t = c_s, the kinetic-isotropy primitive's structural grant); the record-sector realization of the TIME-edge response -- record density slowing the front -- is the landed record-density toy row (cited, not re-derived)
+       response-matrix permutation identity residual = 0.0e+00
+[PASS] E9 (honest dynamics boundary): this note supplies the DOF identification only. The matter-INDUCED action on these DOF is NOT the embedding-independent action (landed full-channel-table row: 'pure-gauge channels are not suppressed'); the EH-class dynamics is what the landed action-selection row derives for ANY embedding-independent local action. Remaining open after this note: the embedding-independence (H-property) provenance of the dynamics, the nonlinear completion, and the absolute scale kappa (= the post-record clock-rate no-go + the registered scale-reference primitive -- ratios only here).
+       linearized DOF dictionary supplied here; dynamics provenance = named open (cited rows)
+
+TOTAL: PASS=9 FAIL=0
+VERDICT: the edge-length degrees of freedom of the geometric (Regge) rows admit a linearized
+ratios-only matter-correlation dictionary on the framework's own complex, with
+ell_hat(v) = Lambda(v)/kappa built on the ANALYTIC decay exponent (certified two-sidedly, no
+fits): (i) it calibrates in closed form to the landed flat assignment {1, sqrt2, sqrt3, 2} as
+m -> 0 with an O(m^2) deviation law; (ii) it responds to the landed s-form metric family by the
+EXACT law Lambda(v;h) = 2k asinh(m/(2 sqrt(k + v^T h v))) -- certified for all 15 classes x 10
+components at finite h -- whose linearization is EXACTLY the geometric metric map (factor 1/2
+included) as m -> 0; (iii) the response lands exactly on the Regge metric sector (rank 10 ->
+im(M0)), the breathing directions unpopulated in the limit; (iv) the tick enters on equal
+footing (c_t = c_s); (v) RATIOS ONLY -- the absolute scale kappa is the located clock-rate /
+scale residual, untouched. In this linearized dictionary the Regge rows' edge fields are
+represented by the matter sector's per-edge correlation structure. Remaining of the gap: the
+dynamics' embedding-independence provenance (the matter-induced action is not the H-action --
+landed; the H-class selection theorem is landed) and the nonlinear completion.
+No external-data value.
+
+----- stderr -----
+

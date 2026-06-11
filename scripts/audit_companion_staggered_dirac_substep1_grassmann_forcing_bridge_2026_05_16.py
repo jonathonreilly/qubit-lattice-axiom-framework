@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """Exact-symbolic audit-companion runner for
 `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-(2026-06-10 science-fix revision: U4 boundary discharged).
+(2026-06-10 science-fix revision: U4 boundary discharged; 2026-06-11
+science-fix revision: U4 consumption re-routed to the axiom surface +
+retained dim-two row after the former supplier row
+U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20 was flipped
+to audited_renaming on 2026-06-10 — its content is the Quantum axiom's
+one-qubit-per-site carrier restated as baseline content, not a theorem).
 
 The note's load-bearing content is the two-candidate collapse on the
 framework's physical per-site Hilbert space:
@@ -13,10 +18,12 @@ framework's physical per-site Hilbert space:
 
 Given the cited one-hop authorities
 
-  - U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20
-    (retained: H_x = C^2 is the single faithful complex irreducible
-    Cl(3,0) ~= M_2(C) module, multiplicity k = 1, from the Quantum
-    axiom's one-qubit-per-site content)
+  - MINIMAL_AXIOMS_2026-06-05 (Quantum axiom, chain-satisfying axiom
+    premise node: one qubit per site — H_x = C^2 is the single faithful
+    complex irreducible Cl(3,0) ~= M_2(C) module, multiplicity k = 1)
+  - CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02
+    (retained positive_theorem, audited_clean: dim_C H_x = 2 exactly,
+    Pauli realization gamma_i = sigma_i, from accepted A1/A2)
   - STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE narrow
     bounded note (C1: k = 1 => dim_C H_x = 2; multiplicity enumeration)
   - CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10
@@ -43,9 +50,9 @@ finite-dim complex matrices. The 2026-06-10 revision adds:
 
 Companion role: not a new claim row; provides audit-friendly evidence
 that the note's load-bearing algebraic content holds at exact symbolic
-precision, that the consumed retained U4 authority is load-bearing
-(falsification leg), and that the declared scope boundary is visible
-in the verified stdout.
+precision, that the consumed U4 input (axiom-surface qubit + retained
+dim-two row) is load-bearing (falsification leg), and that the declared
+scope boundary is visible in the verified stdout.
 """
 
 from __future__ import annotations
@@ -349,13 +356,19 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 8: (D5) U4 composition certificate (retained one-hop authority)")
+    section("Part 8: (D5) U4 composition certificate (axiom surface + retained dim-two row)")
     # =========================================================================
-    # The retained U4 closure delivers: H_x = C^2 is the single faithful
-    # complex irreducible Cl(3,0) ~= M_2(C) module, k = 1. The interface
-    # facts (complex-linear, faithful, irreducible, single chirality) are
+    # The U4 input — the Quantum axiom's one-qubit-per-site content
+    # (MINIMAL_AXIOMS_2026-06-05) plus the retained dim-two row
+    # (CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02) — delivers:
+    # H_x = C^2 is the single faithful complex irreducible
+    # Cl(3,0) ~= M_2(C) module, k = 1, with dim_C H_x = 2 exactly and
+    # the Pauli realization gamma_i = sigma_i. The interface facts
+    # (complex-linear, faithful, irreducible, single chirality) are
     # re-verified here at exact symbolic precision, then composed with
-    # (D1)-(D3) into the collapse certificate.
+    # (D1)-(D3) into the collapse certificate. (The former one-hop
+    # supplier, the 2026-05-20 U4-closes row, is audited_renaming as of
+    # 2026-06-10 and is NOT consumed.)
 
     def real_span_rank(mats: list) -> int:
         """Rank over R of complex 2x2 (or nxn) matrices, flattened to
@@ -420,7 +433,7 @@ def main() -> int:
     dim_Hx = cl3_carrier_dim
     k_multiplicity = dim_Hx // 2
     check(
-        "(D5) dim_C H_x = 2 = 2k with k = 1 (U4 closure composed with C1)",
+        "(D5) dim_C H_x = 2 = 2k with k = 1 (axiom-surface qubit + retained dim-two row, composed with C1)",
         dim_Hx == 2 and k_multiplicity == 1,
         detail=f"dim_C H_x = {dim_Hx}, k = {k_multiplicity}",
     )
@@ -443,19 +456,21 @@ def main() -> int:
     )
     print(
         "  COLLAPSE CERTIFICATE: on the physical per-site Hilbert space"
-        " (retained U4 closure, dim_C H_x = 2, k = 1), the two-candidate"
+        " (U4 input: Quantum axiom + retained dim-two row, dim_C H_x = 2,"
+        " k = 1), the two-candidate"
         " surface {G, B} collapses to the single-pair Grassmann candidate (G)."
     )
 
     # =========================================================================
     section("Part 9: (D5) falsification leg — collapse fails without the U4 input")
     # =========================================================================
-    # Without the retained U4/k=1 authority, the abstract algebraic surface
+    # Without the U4/k=1 input (axiom-surface qubit + retained dim-two
+    # row), the abstract algebraic surface
     # admits faithful Cl(3) modules at every k >= 1. Exhibit k = 2:
     # rho_+ (+) rho_+ on C^4 satisfies the Clifford relations, is faithful,
     # and has dim_C = 4 — on it the single-pair Grassmann match FAILS while
     # a two-pair Grassmann module matches instead. Hence the consumed
-    # retained authority is load-bearing for (D5).
+    # U4 input is load-bearing for (D5).
 
     def blkdiag2(A: Matrix, B: Matrix) -> Matrix:
         M = zeros(A.shape[0] + B.shape[0], A.shape[1] + B.shape[1])

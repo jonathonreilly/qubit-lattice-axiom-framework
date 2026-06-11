@@ -1,14 +1,16 @@
 # Staggered-Dirac Substep 1 — Grassmann Forcing Bridge Narrow Theorem
 
-**Date:** 2026-05-16; 2026-06-10 science-fix (U4 boundary discharged via
-the qubit-reframe closure — see §0 changelog)
+**Date:** 2026-05-16; 2026-06-10 science-fix (U4 boundary discharged —
+see §0 changelog); 2026-06-11 science-fix (U4 consumption re-routed to
+the axiom surface + retained dim-two row — see §0 changelog)
 **Type:** positive_theorem
 **Claim type:** positive_theorem
 **Claim scope:** Two-candidate collapse on the framework's physical
-per-site Hilbert space. Given the retained U4 closure (`H_x = ℂ²`, the
-single faithful complex irreducible `Cl(3,0)` module, multiplicity
-`k = 1`, supplied by the Quantum axiom via the retained 2026-05-20
-qubit-reframe theorem), the per-site dimensional readout
+per-site Hilbert space. Given the discharged U4 identification
+(`H_x = ℂ²`, the single faithful complex irreducible `Cl(3,0)` module,
+multiplicity `k = 1`, supplied directly by the Quantum axiom's
+one-qubit-per-site content plus the retained 2026-05-02 per-site
+dim-two theorem), the per-site dimensional readout
 `dim_C H_x = 2` excludes the free-bosonic candidate (B) and matches the
 single-pair Grassmann candidate (G) exactly; within the declared
 two-candidate canonical-pair surface, (G) is the unique surviving
@@ -26,8 +28,9 @@ audit lane.
 **Primary runner:** [`scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py`](../scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py)
 **Runner cache:** [`logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt`](../logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt) (PASS=38, FAIL=0)
 **Authority role:** narrow algebraic bridge composing three upstream
-authorities — the retained U4 per-site identification (`H_x = ℂ²`,
-`k = 1`), the `Cl(3)` faithful complex-irrep dim-2 readout, and the
+inputs — the U4 per-site identification (`H_x = ℂ²`, `k = 1`; Quantum
+axiom surface + retained dim-two row), the `Cl(3)` faithful
+complex-irrep dim-2 readout, and the
 finite-Grassmann Berezin determinant identity — into the substep-1
 two-candidate collapse consumed by the staggered-Dirac spine (e.g.
 boundary B1 of
@@ -35,7 +38,30 @@ boundary B1 of
 
 ## 0. Changelog
 
-- **2026-06-10 (science-fix, this revision).** Boundary discharge. As
+- **2026-06-11 (science-fix, this revision).** Re-route U4 consumption:
+  `u4_closes` audited_renaming → axiom surface + retained dim-two row.
+  The 2026-06-10 revision discharged the U4 boundary by consuming
+  `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md` as a
+  retained one-hop authority. On 2026-06-10 the audit lane flipped that
+  row to `audited_renaming`: its content is the Quantum axiom's
+  one-qubit-per-site carrier restated as baseline content, not a
+  theorem. Accordingly, the delivered object consumed here (`H_x = ℂ²`,
+  the single faithful complex irreducible `Cl(3,0)` module, `k = 1`) is
+  now supplied one hop by the current axiom surface
+  (`MINIMAL_AXIOMS_2026-06-05.md`, Quantum axiom — chain-satisfying
+  axiom premise node) plus the retained row
+  `CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`
+  (audited_clean / retained `positive_theorem`, ratified by a
+  five-judge panel; closes from accepted A1/A2 with the Pauli
+  realization). The renaming verdict strengthens, not weakens, the
+  discharge: U4 was vacuous given the axiom — the per-site carrier was
+  never an open bridge but the axiom's own baseline content. No theorem
+  content changes: the two-candidate collapse logic (D1)–(D5) is
+  unchanged; only the supplier of the dim-2 / `k = 1` input moves. The
+  runner's interface-fact labels now name the dim-two row's delivered
+  facts; the sympy `Cl(3,0) ≅ M_2(ℂ)` computations are note-independent
+  and unchanged (`TOTAL: PASS=38, FAIL=0`).
+- **2026-06-10 (science-fix).** Boundary discharge. As
   written on 2026-05-16, this note closed only the abstract algebraic
   dichotomy (D1)–(D4) and declared "The U4 bridge remains open": the
   identification of the framework's physical per-site Hilbert space
@@ -44,7 +70,9 @@ boundary B1 of
   is now discharged by a one-hop authority that did not exist
   when this note was written:
   `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
-  (ratified 2026-05-20; re-audited 2026-06-05) closes U4 directly from the Quantum axiom's
+  (ratified 2026-05-20; re-audited 2026-06-05; **supplier re-routed
+  2026-06-11** — that row is now audited_renaming, see the entry
+  above) closes U4 directly from the Quantum axiom's
   one-qubit-per-site content: `H_x = ℂ²` is the unique faithful complex
   irreducible module of `M_2(ℂ) ≅ Cl(3,0)`, with multiplicity
   `k(x) = 1`. Composed with the conditional theorem (C1) of
@@ -69,7 +97,8 @@ boundary B1 of
 ## 1. Claim scope
 
 Let `H_x` be the framework's physical per-site Hilbert space on the
-`Z^3` substrate. By the retained U4 closure (cited in §3), `H_x = ℂ²`
+`Z^3` substrate. By the discharged U4 identification (Quantum axiom
+surface + retained dim-two row, cited in §3), `H_x = ℂ²`
 carries the single faithful complex irreducible representation of the
 real Clifford algebra `Cl(3,0) ≅ M_2(ℂ)`, with multiplicity index
 `k(x) = 1`; in particular `dim_C H_x = 2`. Let `Λ` be a finite set of
@@ -95,7 +124,8 @@ Then the following hold:
 - **(D1) Per-site Hilbert-dim mismatch (B candidate vs the physical
   per-site space).** The dimensional readout `dim_C H_x^B = ∞`
   (per-site bosonic Fock) is **strictly different** from the physical
-  per-site dimension `dim_C H_x = 2` (retained U4 closure). Hence the
+  per-site dimension `dim_C H_x = 2` (discharged U4 identification,
+  §3). Hence the
   per-site dimensional content of candidate (B) is **incompatible**
   with the framework's physical per-site Hilbert space.
 
@@ -125,7 +155,8 @@ Then the following hold:
   conventional normalization, structurally distinct from `det(M)`).
 
 - **(D5) Two-candidate collapse on the physical per-site space.**
-  Composing the retained U4 closure (`dim_C H_x = 2`, `k = 1`) with
+  Composing the discharged U4 identification (`dim_C H_x = 2`, `k = 1`;
+  §3) with
   (D1)–(D3): within the two-candidate surface {(G), (B)}, candidate
   (B) is excluded and candidate (G) is the **unique surviving**
   matter-generator measure on the framework's physical per-site
@@ -158,25 +189,35 @@ space IS a Cl(3) faithful complex irrep") open and out of scope.
 
 Three events since then change the boundary structure:
 
-- **2026-05-20.** The Quantum axiom surface's qubit reframe
-  (one qubit per site, `M_2(ℂ) ≅ Cl(3,0)`) was recorded, and
-  `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
-  made explicit that this baseline directly closes U4 (`H_x = ℂ²`,
-  `k = 1`). The per-site `k = 1` clause was ratified into the Quantum
-  axiom surface on 2026-05-22 (commit `f471b5bd6`; see the reaudit manifest
+- **2026-05-20 / 2026-06-10.** The Quantum axiom surface's qubit
+  reframe (one qubit per site, `M_2(ℂ) ≅ Cl(3,0)`) was recorded; the
+  per-site `k = 1` clause was ratified into the Quantum axiom surface
+  on 2026-05-22 (commit `f471b5bd6`; see the reaudit manifest
   `PER_SITE_K_EQUALS_1_RATIFICATION_REAUDIT_MANIFEST_NOTE_2026-05-22.md`),
   and the one-qubit-per-site content persists verbatim on the current
-  axiom surface (`MINIMAL_AXIOMS_2026-06-05.md`, Quantum axiom).
-- **2026-06-05.** The U4 closure row was re-audited and now has
-  retained-grade positive-theorem status on the live ledger — a one-hop
-  authority for exactly the object this note previously admitted.
+  axiom surface (`MINIMAL_AXIOMS_2026-06-05.md`, Quantum axiom). The
+  interim bridge row
+  `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md` was
+  flipped to `audited_renaming` on 2026-06-10: its content is the
+  Quantum axiom's one-qubit-per-site carrier restated as baseline
+  content, not a theorem. That verdict strengthens the U4 discharge —
+  the bridge was vacuous given the axiom, so the object this note
+  consumes is the axiom's own baseline content, taken here directly
+  from the axiom surface.
+- **2026-05-02 (retained theorem-grade supplier).** The per-site
+  dim-two row `CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`
+  (audited_clean / retained `positive_theorem`, ratified by a
+  five-judge panel) closes `dim_C H_x = 2` with the Pauli realization
+  from accepted A1/A2 — the retained supplier of the dimensional
+  readout consumed here.
 - **2026-05-25 / 2026-06-05.** The statistics-agnostic no-go
   `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`
   was independently ratified, establishing that the two-candidate
   surface omits the hard-core-boson frame and that statistics is not
   forced by the baseline plus dimension/operator-algebra data alone.
 
-This revision therefore (i) consumes the retained U4 closure and
+This revision therefore (i) consumes the U4 identification directly
+from the axiom surface plus the retained dim-two row and
 discharges the former "U4 bridge remains open" boundary, upgrading the
 two-candidate collapse to an unconditional theorem on the physical
 per-site space (D5); and (ii) records honestly, in agreement with the
@@ -188,23 +229,35 @@ input (§8).
 
 Load-bearing markdown-link upstream dependencies:
 
-- [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
-  — retained `positive_theorem` (re-audited 2026-06-05). Delivers the
-  U4 closure consumed in (D1), (D2), (D5): for every site `x ∈ Z^3`,
-  the per-site physical Hilbert space is `H_x = ℂ²`, the unique
-  faithful complex irreducible module of `M_2(ℂ) ≅ Cl(3,0)`, with
-  multiplicity `k(x) = 1`, supplied by the Quantum axiom's
-  one-qubit-per-site content. Interface check performed for this
-  revision: delivered object = consumed object exactly — the module is
-  complex (C-linear `M_2(ℂ)`-action), faithful (the real-algebra map
-  `γ_i ↦ σ_i` is an isomorphism onto `M_2(ℂ)`; 8-dim real span),
-  irreducible (scalar commutant), and single-copy (`k = 1`); these are
-  re-verified at exact symbolic precision by the runner (§9, Part 8).
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+  — current axiom surface (chain-satisfying axiom premise node).
+  Supplies, via the Quantum axiom's one-qubit-per-site content ("the
+  primitive physical local degree of freedom is one qubit; equivalently
+  `A_x ≅ M_2(C)`, equivalently `Cl(3,0)`"), the per-site physical
+  carrier consumed in (D1), (D2), (D5): for every site `x ∈ Z^3`,
+  `H_x = ℂ²`, the unique faithful complex irreducible module of
+  `M_2(ℂ) ≅ Cl(3,0)`, in a single copy (`k(x) = 1` — one qubit, not
+  several; the `k = 1` clause was ratified into the axiom surface on
+  2026-05-22). Interface check performed for this revision: delivered
+  object = consumed object exactly — the module is complex (C-linear
+  `M_2(ℂ)`-action), faithful (the real-algebra map `γ_i ↦ σ_i` is an
+  isomorphism onto `M_2(ℂ)`; 8-dim real span), irreducible (scalar
+  commutant), and single-copy (`k = 1`); these are re-verified at exact
+  symbolic precision by the runner (§9, Part 8). Axiom premise nodes
+  chain-satisfy without bounding.
+- [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)
+  — retained `positive_theorem` (audited_clean; ratified by a
+  five-judge panel; closes from accepted A1/A2). Delivers the
+  theorem-grade dimensional readout consumed in (D1), (D2), (D5):
+  `dim_C H_x = 2` exactly at every site, with the Pauli realization
+  `γ_i = σ_i` (its (D1)–(D2)) and the finite-block tensor dimension
+  `2^{|Λ|}` (its (D3)).
 - [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
   — retained_bounded. Consumed strictly within its bounded scope:
   conditional sub-claim (C1) (`k = 1 ⇒ dim_C H_x = 2`) and the
   multiplicity enumeration (M1)–(M2). Its conditional premise
-  (`k = 1`) is exactly what the retained U4 closure supplies, so the
+  (`k = 1`) is exactly what the Quantum axiom's one-qubit-per-site
+  content supplies (first bullet above), so the
   composition `U4 ∘ C1` is conditional on nothing open. Its
   counter-example surface (`k ≥ 2`) is reused here as the
   falsification leg: without the U4 input the collapse fails (§9,
@@ -222,16 +275,16 @@ Load-bearing markdown-link upstream dependencies:
   the **definition** of candidate (G) in this note, not a physical
   admission, so the boundedness does not propagate an open admission
   into (D2)/(D4).
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
-  — current axiom surface (chain-satisfying axiom premise node). Cited
-  for the interface check that the Quantum axiom's one-qubit-per-site
-  content ("the primitive physical local degree of freedom is one
-  qubit; equivalently `A_x ≅ M_2(C)`, equivalently `Cl(3,0)`") is
-  identical in content to the 2026-05-20 qubit baseline that the U4
-  closure note consumes, so the U4 authority's licensing premise is
-  still on the live axiom surface.
-
 No other note's effective status is consumed.
+
+Plain-text remark (non-load-bearing): the former one-hop supplier of
+the U4 input, `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`,
+was flipped to `audited_renaming` on 2026-06-10 because its content is
+the Quantum axiom's one-qubit-per-site carrier restated as baseline
+content rather than a theorem — a verdict that strengthens this
+discharge: the bridge was vacuous given the axiom, and the object is
+consumed here directly from the axiom surface plus the retained
+dim-two row, not through that renamed row.
 
 ## 4. Admitted-context inputs
 
@@ -258,7 +311,8 @@ statistics-selection input (S2/FS) is **not** consumed (§8).
 
 The bosonic per-site Fock space is `H_x^B = ⊕_{n=0}^∞ C · |n⟩_x` with
 basis `{|0⟩_x, |1⟩_x, |2⟩_x, ...}` and `dim_C H_x^B = ℵ_0` (countably
-infinite). By the retained U4 closure (§5.5), `dim_C H_x = 2`. Since
+infinite). By the discharged U4 identification (§5.5 Step 1),
+`dim_C H_x = 2`. Since
 `2 ≠ ℵ_0`, the per-site dim of candidate (B) is strictly different
 from the physical per-site dimension, so candidate (B) is incompatible
 with the framework's per-site Hilbert space at the dimensional-readout
@@ -281,8 +335,9 @@ two states span the per-site sector:
 Any further application of `χ̄_x` gives
 `χ̄_x |1⟩_x = χ̄_x χ̄_x |0⟩_x = 0` by the algebraic-Grassmann
 nilpotency `χ̄_x² = 0` (the bar-symbol analog of `(G1)`). Hence
-`H_x^G = C · |0⟩_x ⊕ C · |1⟩_x` and `dim_C H_x^G = 2`. By the retained
-U4 closure (§5.5), `dim_C H_x = 2`. Hence `dim_C H_x^G = dim_C H_x`,
+`H_x^G = C · |0⟩_x ⊕ C · |1⟩_x` and `dim_C H_x^G = 2`. By the
+discharged U4 identification (§5.5 Step 1), `dim_C H_x = 2`. Hence
+`dim_C H_x^G = dim_C H_x`,
 i.e., the per-site dimensional readout of (G) matches the framework's
 physical per-site Hilbert space exactly. ∎
 
@@ -335,22 +390,24 @@ one. ∎
 
 ### 5.5 (D5) composition: U4 discharge and two-candidate collapse
 
-**Step 1 (retained U4 input).** By
-`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
-(retained `positive_theorem`), the framework's per-site physical
-Hilbert space on the `Z^3` substrate is `H_x = ℂ²`, the unique
-faithful complex irreducible module of `M_2(ℂ) ≅ Cl(3,0)`, with
-multiplicity `k(x) = 1`. The licensing premise — one qubit per site —
-is the Quantum axiom on the current axiom surface
-(`MINIMAL_AXIOMS_2026-06-05.md`), identical in content to the
-2026-05-20 qubit baseline the U4 note consumes; axiom premise nodes
-chain-satisfy without bounding.
+**Step 1 (U4 input: axiom surface + retained dim-two row).** By the
+Quantum axiom of the current axiom surface
+(`MINIMAL_AXIOMS_2026-06-05.md`), the primitive physical local degree
+of freedom at every site `x ∈ Z^3` is one qubit: the framework's
+per-site physical Hilbert space is `H_x = ℂ²`, the unique faithful
+complex irreducible module of `M_2(ℂ) ≅ Cl(3,0)`, in a single copy
+(multiplicity `k(x) = 1`). By the retained
+`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`
+(`positive_theorem`, audited_clean), `dim_C H_x = 2` exactly, with the
+Pauli realization `γ_i = σ_i`. Axiom premise nodes chain-satisfy
+without bounding, and the dim-two row is retained, so no open
+admission enters this step.
 
 **Step 2 (multiplicity mechanics).** By (C1) of the cited
 single-module narrow bounded theorem, `k(x) = 1 ⇒ dim_C H_x = 2`. The
 conditional premise `k(x) = 1` is supplied by Step 1, so
-`dim_C H_x = 2` holds with no open conditional. (Step 1's authority
-also states `dim_C H_x = 2` directly; citing (C1) makes the
+`dim_C H_x = 2` holds with no open conditional. (Step 1's retained
+dim-two row also states `dim_C H_x = 2` directly; citing (C1) makes the
 composition's multiplicity mechanics explicit and reuses its audited
 enumeration (M1)–(M2).)
 
@@ -420,8 +477,8 @@ without the U4/`k = 1` input. The runner verifies this leg explicitly
 - No `g_bare = 1` derivation output consumed.
 - No lattice-action carrier (Wilson plaquette, staggered phases)
   load-bearing. The per-site physical-Hilbert-space identification is
-  now consumed from the retained U4 closure authority (§3), not
-  admitted.
+  consumed from the current axiom surface plus the retained dim-two
+  row (§3), not admitted.
 - No spin-statistics / FS selection input consumed (declared open
   boundary, §8).
 - No new foundational premise beyond the Lattice and Quantum axioms of
@@ -473,8 +530,8 @@ verifies via sympy exact symbolic arithmetic:
    `{1, χ_x, χ̄_x, χ_x χ̄_x}` modulo `χ_x² = χ̄_x² = 0` and the
    vacuum-cyclic-vector action.
 3. **(D2) match to `dim_C H_x = 2`.** The Pauli-realisation matrices
-   `σ_1, σ_2, σ_3` act on `C²` (the U4-closure carrier), so
-   `dim_C H_x = 2`, matching the (G) per-site Fock dim.
+   `σ_1, σ_2, σ_3` act on `C²` (the retained dim-two row's Pauli
+   carrier), so `dim_C H_x = 2`, matching the (G) per-site Fock dim.
 4. **(D3) algebraic dichotomy enumeration.** Within the two-element
    abstract canonical-bracket framing
    `{anticommutator → Grassmann, commutator → bosonic}`, only two
@@ -538,11 +595,11 @@ including one `SCOPE-BOUNDARY (declared, not claimed): ...` line for
 
 Load-bearing markdown-link upstream (five one-hop dependencies):
 
-- [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)
 - [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
 
 Plain-text (non-load-bearing) reader pointers; following the citation-graph
 cleanup pattern, these are written without markdown links so the
@@ -556,7 +613,8 @@ edges:
   a premise of (D1)–(D5).
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   — open-gate parent; its substep-1 U4 bridge is the boundary this
-  revision discharges via the retained U4 closure; its S2 support tier
+  revision discharges via the axiom surface plus the retained dim-two
+  row; its S2 support tier
   carries the remaining statistics-selection residual.
 - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
   — pre-existing bounded-support packaging of substep-1 forcing; its
@@ -570,27 +628,33 @@ edges:
   qualifier itself remains until (B-stat) is retired.
 - `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
   — sister cross-site anticommutation (Jordan-Wigner) bridge.
-- `CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`
-  — retained sister row carrying the per-site `dim = 2` statement with
-  Pauli realization; consistent with §5.5 Step 2.
+- `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
+  — former one-hop supplier of the U4 input; audited_renaming
+  (2026-06-10): the audit lane found its content is the Quantum axiom's
+  own one-qubit-per-site baseline content restated, not a theorem;
+  consistent with this note consuming the U4 input through the axiom
+  surface plus the retained dim-two row, not through that row. Its
+  effective status is not consumed.
 - `CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`
   — sister narrow theorem supplying the chirality-aware classification
   consistent with the dim-2 readout.
 - `PER_SITE_K_EQUALS_1_RATIFICATION_REAUDIT_MANIFEST_NOTE_2026-05-22.md`
   — reaudit manifest for the per-site `k = 1` ratification (commit
-  `f471b5bd6`) that preceded the U4 closure's retention.
+  `f471b5bd6`) that put the single-copy clause on the Quantum axiom
+  surface.
 - `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md`
   — hardening record for the qubit reframe and the `k = 1` clause.
 
 ## 11. Citation-graph note
 
 Load-bearing markdown-link upstream consists of exactly the five
-authorities listed in Section 3 (two retained positive-grade rows, two
-retained_bounded rows consumed strictly within their bounded scopes
-with their conditional premises discharged or definitional, and the
-chain-satisfying axiom premise node). Cross-references to the retained
+authorities listed in Section 3 (the chain-satisfying axiom premise
+node, two retained positive-grade rows — the per-site dim-two theorem
+and the complexification split — and two retained_bounded rows consumed
+strictly within their bounded scopes with their conditional premises
+discharged or definitional). Cross-references to the retained
 no-go, the open gate, the pre-existing substep-1 packaging, the
-Kawamoto-Smit consumer, the JW bridge, the per-site Hilbert dim row,
-the Pauli-irrep uniqueness narrow, the ratification manifest, and the
-hardening note are plain-text reader pointers (not markdown links);
+Kawamoto-Smit consumer, the JW bridge, the renamed former U4 bridge
+row, the Pauli-irrep uniqueness narrow, the ratification manifest, and
+the hardening note are plain-text reader pointers (not markdown links);
 the theorem does not consume their effective statuses.

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1422 |
+| unaudited | 1421 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1261 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1738 |
+| `unaudited` | 1737 |
 
 | claim_type | count |
 |---|---:|
@@ -1413,6 +1413,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_minimal_scale_free_selector_note_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -10515,6 +10516,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Exactness gives fibres, not canonical splittings; the closing section a=0, b1=0, b2=0 is exactly the missing primitive-based readout/basepoint law or an equivalent retained canonical-section theorem.  _(class `A`)_
 - **chain closes:** True — The no-go closes within the restricted packet: the note and runner exhibit nontrivial kernels, nonunique section families, and counter-representatives that preserve retained totals while changing Q or delta. No dependency note is required because the audited scope is the algebraic obstruction for the stated projections, not a positive derivation of the missing physical readout law.
 - **rationale:** The runner verifies the load-bearing linear-algebra obstruction rather than hard-coding a target Koide closure: nonzero kernel representatives preserve the retained projections and fail to close the target readouts, while the zero representative is an additional section choice. This supports the no-go claim that exactness/cohomology data alone do not supply the primitive-based basepoint/readout law. Residual risk is scope control: the clean result applies to the explicit retained-projection exact-sequence packet, not to every conceivable future cohomological theorem that might add new structure.
+- **auditor confidence:** high
+
+### `koide_q_minimal_scale_free_selector_note_2026-04-22`
+
+- **Note:** [`KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For an admitted real three-slot returned carrier with cyclic C3 action and r0 nonzero, the minimal scale-free invariant content through quadratic order is one-dimensional, represented by E_perp/E_+, Q, or the stated kappa reparametrization.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-135103-bb6f1bb08e-koide_q_minimal_scale_free_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At quadratic order the C3-invariant quadratic scalar space is exactly two-dimensional, Q(x)=A r0^2+C(r1^2+r2^2), so removing overall scale leaves the single nontrivial ratio rho_Q=(r1^2+r2^2)/(2 r0^2).  _(class `A`)_
+- **chain closes:** False — The local invariant-theory calculation closes: the real C3 representation splits into a fixed line plus a two-dimensional rotation plane, giving one linear invariant and two quadratic invariant coefficients. The full audited chain does not close because the exact second-order returned carrier and the cited staggered-Dirac realization authority are admitted/not retained-grade in the restricted packet.
+- **rationale:** An independent representation-theory check matches the runner: fixed covectors are multiples of (1,1,1), and invariant symmetric quadratic forms are the two-parameter family with equal diagonal and equal off-diagonal entries. The normalizations E_+=r0^2/3 and E_perp=(r1^2+r2^2)/6 give E_perp/E_+=(r1^2+r2^2)/(2r0^2), and Q=(1+rho_Q)/3 follows algebraically. However, the source explicitly rests on the admitted second-order carrier and a one-hop cited authority marked effective_status unaudited/bounded, so the result cannot be audited_clean from this packet.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25`

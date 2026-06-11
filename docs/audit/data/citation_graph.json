@@ -49638,10 +49638,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_full_lattice_schur_inheritance_note_2026-04-18"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -95200,17 +95200,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "koide_full_lattice_schur_inheritance_note_2026-04-18",
         "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
         "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
         "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
-        "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25"
+        "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7a99f57b8bb04637812a681f8b8f6b0c522f3f040f07db53e638515616d32a91",
+      "note_hash": "7b7df93f64d99bdbc3746da8a951e03ae1a82aba0a30b89dbdc74ead96786054",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 956 | 11.90 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py` |
+| 1 | `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | audit_in_progress | critical | 956 | 12.40 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py` |
 | 2 | `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | unaudited | critical | 940 | 13.88 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_reeh_schlieder_check.py` |
 | 3 | `alpha_s_derived_note` | bounded_theorem | unaudited | critical | 861 | 38.75 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_alpha_s_derived_bounded_chain.py` |
 | 4 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | unaudited | critical | 775 | 11.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py` |

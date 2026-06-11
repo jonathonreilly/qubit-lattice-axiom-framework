@@ -107,21 +107,75 @@ v_axis_site = sp.Rational(1, 2) * 2 * w_mag
 check("A2 per-axis candidate cone: v = 1 site/tick EXACTLY (the landed |v| = 1, unit-converted)",
       v_axis_site == 1, "slope w/2 per cell momentum, |w| = 1; cell = 2 sites")
 
-# A3: the family cone (block06 E3): theta-slope 1/(2 sqrt 3) per |k_cell|:
-# site speed = 2/(2 sqrt 3) = 1/sqrt(3) site/tick EXACTLY; re-verify the E3
-# rate from the sigma law here (numeric, 5 directions):
+# A3: the family cone: theta-slope 1/(2 sqrt 3) per |k_cell| -- RE-DERIVED
+# ON THIS BRANCH from the actual 8x8 walk matrix (built from the eta-twisted
+# orbits, phases zero), one-sided eigenvalue-phase tracking from the touching
+# point, isotropy over random directions; the cosine-law route (block06,
+# PR #3546) is corroboration, not the source here:
+g12, g23 = (1, 0, 2), (0, 2, 1)
+v12 = np.array([1, 1, 1, 1, 1, 1, -1, -1], float)
+v23 = np.array([1, 1, 1, -1, 1, 1, 1, -1], float)
+pairs_l = []
+for p_ in comps:
+    for q_ in comps:
+        if sum(abs(p_[i] - q_[i]) for i in range(3)) == 1:
+            ax_ = [i for i in range(3) if p_[i] != q_[i]][0]
+            pairs_l.append((p_, q_, ax_, +1 if p_[ax_] == 1 else -1))
+pair_at_l = {(p_, q_): i for i, (p_, q_, ax_, s_) in enumerate(pairs_l)}
+def act_l(g, vv, kind, i):
+    p_, q_, ax_, s_ = pairs_l[i]
+    return (kind, pair_at_l[(tuple(p_[g[j]] for j in range(3)),
+                             tuple(q_[g[j]] for j in range(3)))],
+            vv[idx[p_]] * vv[idx[q_]])
+from collections import deque
+labels_l = [('c', i) for i in range(24)] + [('d', i) for i in range(24)]
+seen_l = set(); orbs_l = []
+for lab in labels_l:
+    if lab in seen_l: continue
+    orb = {lab: 1.0}; dqq = deque([lab]); cons = True
+    while dqq:
+        cur = dqq.popleft()
+        for g, vv in ((g12, v12), (g23, v23)):
+            kind, j, sign = act_l(g, vv, cur[0], cur[1])
+            nxt = (kind, j); val = orb[cur] * sign
+            if nxt in orb:
+                if abs(orb[nxt] - val) > 1e-9: cons = False
+            else:
+                orb[nxt] = val; dqq.append(nxt)
+    seen_l |= set(orb)
+    if cons: orbs_l.append(orb)
+ACTIVE_l = (1, 2, 5, 6, 9, 10)
+def U_walk(kvec):
+    U = np.zeros((8, 8), complex)
+    for j in ACTIVE_l:
+        for (kind, i2), sign in orbs_l[j].items():
+            p_, q_, ax_, sgn = pairs_l[i2]
+            ph = np.exp(1j * sgn * kvec[ax_]) if kind == 'd' else 1.0
+            U[idx[p_], idx[q_]] += sign * ph / np.sqrt(3)
+    return U
+uni = max(np.abs(U_walk(kv) @ U_walk(kv).conj().T - np.eye(8)).max()
+          for kv in [(0.3, 0.9, 1.7), (2.1, 0.4, 1.1)])
 rng = np.random.default_rng(11)
-iso_ok = True
+iso_ok = uni < 1e-12
+# track the SQUARED eigenvalues X = lambda^2 (angles at 0 at the touching --
+# no pi-wrapping; lambda = -1 quartet squares to +1); the per-tick
+# eigenvalue-phase rate is half the X-phase rate (theta = arg lambda =
+# arg(X)/2, exact double cover):
+X0 = np.sort(np.angle(np.linalg.eigvals(U_walk((0, 0, 0))) ** 2))
+wrap_free = np.abs(X0).max() < 1e-9
 for _ in range(5):
     n = rng.normal(size=3); n /= np.linalg.norm(n)
     q = 1e-6 * n
-    Phi = np.arccos(np.clip(sum(np.cos(q)) / 3, -1, 1))
-    if abs(Phi / 1e-6 - 1 / np.sqrt(3)) > 1e-4:
+    Xp = np.angle(np.linalg.eigvals(U_walk(tuple(q))) ** 2)
+    rate_Phi = np.abs(Xp).max() / 1e-6          # X-phase rate ~ 1/sqrt(3)
+    rate_theta = rate_Phi / 2                   # per-tick phase rate
+    if abs(rate_theta - 1 / (2 * np.sqrt(3))) > 1e-4:
         iso_ok = False
+iso_ok = iso_ok and wrap_free
 v_fam_site = 2 / (2 * sp.sqrt(3))
-check("A3 family cone: v = 1/sqrt(3) site/tick EXACTLY (sigma-law rate re-verified isotropically)",
+check("A3 family cone: v = 1/sqrt(3) site/tick -- RE-DERIVED from the 8x8 walk matrix on this branch (unitary to 1e-12; isotropic one-sided phase rate 1/(2 sqrt 3))",
       iso_ok and sp.simplify(v_fam_site - 1 / sp.sqrt(3)) == 0,
-      "theta-slope 1/(2 sqrt 3) per cell momentum (block06 E3); cell = 2 sites")
+      "self-supporting: the load-bearing constant does not depend on the unlanded block06 text; cell = 2 sites")
 
 # ----------------------------------------------------------------------------
 print("\nPART B -- the natural-row matching theorem")

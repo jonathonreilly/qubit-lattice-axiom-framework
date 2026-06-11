@@ -29,7 +29,7 @@ byproduct, resolving which exhibited candidate carries the H-sector.
 |---|---|---|
 | H-kernel (supplied transfer side) | 1 site/tau | `E ~ |kappa|` (symbolic limit; Bloch matrix agrees) |
 | factorized per-axis candidate | 1 site/tick | the landed dichotomy `w/2` per cell momentum, `|w| = 1`, cell = 2 sites |
-| eta-twisted family cone (block06 E3) | 1/sqrt(3) site/tick | theta-slope `1/(2 sqrt 3)` per cell momentum, re-verified isotropically |
+| eta-twisted family cone | 1/sqrt(3) site/tick | RE-DERIVED on this branch from the 8x8 walk matrix (one-sided phase tracking, isotropic); block06's cosine-law route is corroboration |
 
 ## The natural-row matching theorem (Part B)
 
@@ -80,6 +80,15 @@ the H-cone under a rational placement" has EXACTLY ONE solution:
 | the sqrt-3 cone row (block06) | RESOLVED as the species split: not a defect to repair but a derived two-species ratio; the family-as-H-carrier is closed by the rational-clock no-go (escapes named) |
 | standing readings + W-IR + unaudited deps | unchanged |
 | larger-cell cone question | handed to the successor campaign (matter-cone-larger-cell loop) |
+
+## Gate
+
+This note consumes block06 (PR #3546, OPEN at writing) for: the U-T naming,
+the sigma law as corroboration, the moduli-rigidity of the family cone, and
+the consumed-datum equality. The load-bearing numeric constant (the family
+cone rate) is RE-DERIVED on this branch from the walk matrix and does not
+depend on block06's text. **This PR is stacked on #3546: land after it, and
+re-point block06 citations to the landed text if the reviewer refines it.**
 
 ## What this note does NOT claim
 

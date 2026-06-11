@@ -3,7 +3,7 @@ PART A -- the common parametrization (site momentum, per named time unit)
 ==============================================================================
   [PASS] A1 H-kernel cone: v_H = 1 site/tau EXACTLY (symbolic; Bloch matrix agrees)  --  E ~ |kappa| site units; numeric 1.00000000
   [PASS] A2 per-axis candidate cone: v = 1 site/tick EXACTLY (the landed |v| = 1, unit-converted)  --  slope w/2 per cell momentum, |w| = 1; cell = 2 sites
-  [PASS] A3 family cone: v = 1/sqrt(3) site/tick EXACTLY (sigma-law rate re-verified isotropically)  --  theta-slope 1/(2 sqrt 3) per cell momentum (block06 E3); cell = 2 sites
+  [PASS] A3 family cone: v = 1/sqrt(3) site/tick -- RE-DERIVED from the 8x8 walk matrix on this branch (unitary to 1e-12; isotropic one-sided phase rate 1/(2 sqrt 3))  --  self-supporting: the load-bearing constant does not depend on the unlanded block06 text; cell = 2 sites
 
 PART B -- the natural-row matching theorem
 ==============================================================================

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1454 |
-| Retained-grade rows, including boxed decorations | 1302 |
+| Applied audit verdicts | 1455 |
+| Retained-grade rows, including boxed decorations | 1303 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 830 |
+| Retained bounded rows | 831 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 39 |
-| Unaudited rows | 1389 |
+| Unaudited rows | 1388 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 48 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,23 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1391 |
-| Ready rows | 8 |
+| Total pending rows | 1390 |
+| Ready rows | 7 |
 | Cycle-break targets | 0 |
 | Critical pending | 282 |
 | High pending | 281 |
 | Medium pending | 411 |
-| Leaf pending | 417 |
+| Leaf pending | 416 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - medium; unaudited
 - [`su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09`](../../docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md) - medium; unaudited
 - [`theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`](../../docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10`](../../docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md) - medium; unaudited
 - [`universal_gr_conformal_mode_sign_diagnostic_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CONFORMAL_MODE_SIGN_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
-- [`universal_gr_round_pl_s3_regge_hessian_canonical_channels_narrow_theorem_note_2026-06-10`](../../docs/UNIVERSAL_GR_ROUND_PL_S3_REGGE_HESSIAN_CANONICAL_CHANNELS_NARROW_THEOREM_NOTE_2026-06-10.md) - leaf; unaudited
+- [`universal_gr_round_pl_s3_regge_hessian_canonical_channels_narrow_theorem_note_2026-06-10`](../../docs/UNIVERSAL_GR_ROUND_PL_S3_REGGE_HESSIAN_CANONICAL_CHANNELS_NARROW_THEOREM_NOTE_2026-06-10.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

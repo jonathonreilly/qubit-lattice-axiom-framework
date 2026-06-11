@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py
+runner_sha256: bc2b325c4e65dc3080f3a8367d0f533c111ed80a20983bab4fddbb4e635389d3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+FREE BILINEAR EXACT-LOG QUASILOCAL LR BRIDGE
+========================================================================
+Scope: U=1 bilinear two-step sector; exact H=-log(T_hat^2)/(2 a_tau).
+
+[PASS] Q1: d=1 weighted overlap W_mu is finite and below the cited strip-bound shell sum
+       eta=0.236538, mu=0.118269, W_mu=1.165050, shell_bound=18.132017
+[PASS] Q2: Z^3 weighted overlap W_mu is finite when 3*mu < eta < arcsinh(m)
+       eta=0.236538, mu=0.017740, W_mu(64^3)=1.810509, shell_bound=13841.615873
+[PASS] Q3: weighted convolution path bound holds for sampled path lengths
+       worst sampled path/bound ratio=0.187571
+[PASS] Q4: finite hard-core bilinear matrix witness obeys the quasilocal LR envelope
+       L=7, finite local weight=1.017695, theorem W_mu=1.165050, worst measured/bound=2.323882e-02
+[PASS] Q5: long-range-tailed positive comparator does not have the stable exponential weighted norm
+       W_bad(100)=1.254e+00, W_bad(300)=4.643e+07
+
+RESULT: for any mu with 0 < d*mu < eta < arcsinh(m), W_mu < infinity and
+        ||[alpha_t(A_x), B_y]|| <= 2||A||||B|| exp(-mu d(x,y) + 4 W_mu |t|).
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_w_hessian_identification_full_finite_k_channel_table_bounded_theorem_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
         "quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28",
         "ring_monodromy_does_not_force_car_note_2026-06-04",
         "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
         "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
-        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
+        "universal_gr_w_hessian_identification_full_finite_k_channel_table_bounded_theorem_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "38c552b41322babf9d784dc65778c1fd0d85753a03c8bae0f0ae152150bd351c",
+      "note_hash": "f25ae0b7a30c1706a901660f7b3a47c50cc40f92b272cffb61e3bf30ce507120",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

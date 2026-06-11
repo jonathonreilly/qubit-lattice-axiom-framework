@@ -2,7 +2,7 @@
 
 **Date:** 2026-04-15 (originally); 2026-06-11 (audit-requested repair:
 authority dependency edge wired + boundary inputs declared — see
-changelog)
+changelog); 2026-06-11 compute repair (runner timeout removed)
 **Status:** bounded quantitative support only
 **Primary runner:** `scripts/frontier_higgs_mass_derived.py`
 
@@ -29,6 +29,16 @@ repair:
 
 The substantive posture of the note (bounded support, no `m_H`
 authority) is unchanged.
+
+## Compute Repair (2026-06-11)
+
+The support runner was timing out under the audit runner inventory because
+each scan point evaluated dense field grids before extracting the CW minimum.
+The runner now computes the same bounded Coleman-Weinberg readout by direct
+bounded scalar minimization and local curvature evaluation. This is a compute
+repair only: it does not add dependencies, does not promote this support note,
+and keeps the exact SM crossing as an open/bounded consistency question rather
+than a closed Higgs-mass derivation.
 
 ## Authority Rule
 

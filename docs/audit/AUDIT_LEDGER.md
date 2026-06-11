@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 837 |
+| **retained_bounded** | 838 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1422 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1281 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1282 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
@@ -135,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `pmns_three_flux_holonomy_closure_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -990,6 +988,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `pmns_three_flux_holonomy_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14111,6 +14110,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Within the stated active-operator construction and the retained oriented-cycle coefficient law, the identity block and vanishing coefficients follow by direct matrix algebra. The proof does not attempt to derive the active-operator construction itself from the sole axiom.
 - **rationale:** The load-bearing step is a valid class A algebraic substitution in the supplied construction, and the cited coefficient law is marked retained. However, the audit packet contains no first-principles derivation and no external comparator checks; it reduces to one retained parent law plus standard finite-dimensional matrix algebra. Under the tie-breaking rule, a zero-D purely algebraic bridge of this kind is classified as audited_decoration rather than audited_clean.
 - **decoration parent:** `pmns_oriented_cycle_channel_value_law_note`
+- **auditor confidence:** high
+
+### `pmns_three_flux_holonomy_closure_note`
+
+- **Note:** [`PMNS_THREE_FLUX_HOLONOMY_CLOSURE_NOTE.md`](../../docs/PMNS_THREE_FLUX_HOLONOMY_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the reduced graph-first cycle family with the cited one-angle holonomy law, the three specified flux-angle readouts form an invertible 3x3 linear system and exactly recover (u,v,w).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-233232-5fbf773128-pmns_three_flux_holonomy_clo`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The three one-angle holonomies give the linear system M(phis)[u,v,w]^T=h with rows [2 cos(phi_i), 2 sin(phi_i), 1], so whenever det M(phis) != 0 the reduced coordinates are recovered exactly.  _(class `A`)_
+- **chain closes:** True — The cited twisted-flux authority and included helper source supply the reduced family and one-angle holonomy law, and the independent basis-inner-product check gives h_phi=2u cos(phi)+2v sin(phi)+w. For phis=(0, pi/2, pi/3), det M=2-2sqrt(3) != 0, so reconstruction and separation follow by linear algebra.
+- **rationale:** The load-bearing closure is finite-dimensional algebra over the cited reduced carrier and holonomy law. The displayed design matrix and determinant check out independently of the runner implementation path, and the runner source performs the claimed matrix construction, solve, and separation checks rather than merely printing constants. The retained_bounded Tier-A carrier language in the twisted-flux authority limits the theorem to bounded PMNS carrier naming, but it does not leave a missing step in this bounded algebraic inversion claim. No external comparator or tuned numerical input is used.
 - **auditor confidence:** high
 
 ### `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07`

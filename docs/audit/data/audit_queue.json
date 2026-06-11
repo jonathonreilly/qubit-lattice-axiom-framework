@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 282,
+    "critical": 281,
     "high": 291,
     "leaf": 428,
     "medium": 425
@@ -10,32 +10,34 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "pmns_three_flux_holonomy_closure_note",
-      "claim_scope": "Bounded algebraic closure of the reduced graph-first oriented-cycle coordinates (u,v,w) from three specified flux-holonomy readouts, using the cited one-angle holonomy law as input.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "pmns_c3_character_holonomy_closure_note",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "pmns_twisted_flux_transfer_holonomy_boundary_note",
         "pmns_oriented_cycle_channel_value_law_note",
-        "pmns_graph_first_cycle_frame_support_note"
+        "pmns_three_flux_holonomy_closure_note",
+        "pmns_twisted_flux_transfer_holonomy_boundary_note"
       ],
-      "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
       "helper_runner_paths": [
+        "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
+        "scripts/frontier_pmns_three_flux_holonomy_closure.py",
         "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 10.514,
-      "note_path": "docs/PMNS_THREE_FLUX_HOLONOMY_CLOSURE_NOTE.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 11.008,
+      "note_path": "docs/PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_pmns_three_flux_holonomy_closure.py",
-      "transitive_descendants": 516
+      "runner_path": "scripts/frontier_pmns_c3_character_holonomy_closure.py",
+      "transitive_descendants": 514
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4085,37 +4087,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_pmns_current_bank_value_selection_nogo.py",
       "transitive_descendants": 515
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "pmns_c3_character_holonomy_closure_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "pmns_oriented_cycle_channel_value_law_note",
-        "pmns_three_flux_holonomy_closure_note",
-        "pmns_twisted_flux_transfer_holonomy_boundary_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
-        "scripts/frontier_pmns_three_flux_holonomy_closure.py",
-        "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
-        "scripts/pmns_lower_level_utils.py"
-      ],
-      "load_bearing_score": 11.008,
-      "note_path": "docs/PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_pmns_c3_character_holonomy_closure.py",
-      "transitive_descendants": 514
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -42950,5 +42921,5 @@
     }
   ],
   "ready_count": 40,
-  "total_pending": 1426
+  "total_pending": 1425
 }

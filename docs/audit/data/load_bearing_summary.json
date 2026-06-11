@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 509,
     "high": 501,
-    "leaf": 1403,
-    "medium": 885
+    "leaf": 1402,
+    "medium": 886
   },
   "flagship_signal_used": false,
   "node_count": 3298,
@@ -163,8 +163,8 @@
     {
       "claim_id": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
       "criticality": "critical",
-      "load_bearing_score": 30.5,
-      "transitive_descendants": 180
+      "load_bearing_score": 30.426,
+      "transitive_descendants": 171
     }
   ]
 }

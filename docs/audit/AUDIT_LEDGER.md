@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 821 |
+| **retained_bounded** | 822 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1413 |
+| unaudited | 1412 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1265 |
+| `audited_clean` | 1266 |
 | `audited_conditional` | 36 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1729 |
+| `unaudited` | 1728 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 851 |
-| `leaf` | 1314 |
+| `medium` | 852 |
+| `leaf` | 1313 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -125,7 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 704 | 31.46 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 831 | 31.20 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 317 | 30.81 | `unaudited` | unaudited |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 180 | 30.50 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 171 | 30.43 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -317,6 +317,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cycle_break_slice_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `cyclic_dft_uniform_magnitude_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cyclic_projector_compression_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `delta_magnitude_reduces_to_massless_gravity_scale_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4284,6 +4285,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Exact cyclic-group averaging over the explicitly defined 3-cycle C is self-adjoint and idempotent under the Frobenius inner product, so it projects Herm(3) onto the C-fixed subspace; direct exact basis enumeration identifies that subspace as span_R{I, C+C^2, i(C-C^2)} and gives the stated coefficient formula.  _(class `A`)_
 - **chain closes:** True — The theorem closes from the explicit definition of C and P_cyc plus exact finite-dimensional algebra. The parent-row context line is not load-bearing: the row has no dependencies, defines C directly, and the asserted conclusions are independently checkable symbolic identities.
 - **rationale:** The source note is narrowly scoped and the exact runner output reports 26 algebraic checks with no failures, covering the group facts, Hermiticity, idempotence and fixed basis, basis action, and generic compression formula. The generated classifier's decoration-candidate signal arises from the parent-row context check rather than from the theorem's proof obligations, so it does not convert this independent helper theorem into decoration. Residual risk is downstream misuse: later rows must not treat B0/B1/B2 as physical response channels without a separate audited bridge.
+- **auditor confidence:** high
+
+### `d3_upper_bound_import_scope_gate_note_2026-06-06`
+
+- **Note:** [`D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md`](../../docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Branch-local finite-packet gate: the current lower-bound set {3,4,5} composed with the native stable-circular-orbit upper edge d <= 3 selects {3}; the weaker atomic d <= 4 companion does not.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-141703-40a9432c64-d3_upper_bound_import_scope_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** L_runner = {3,4,5}; L_runner intersect {d : d <= 3} = {3}, while L_runner intersect {d : d <= 4} = {3,4}.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by elementary set intersection from the cited lower-bound finite set and the cited stable-orbit upper edge. The Coulomb companion is correctly scoped as non-decisive because its weaker d <= 4 bound leaves {3,4}.
+- **rationale:** The target note does not try to re-prove the lower-bound runner or stable-orbit theorem; it composes their scoped retained_bounded outputs. Manual formula inventory confirms the load-bearing set arithmetic: {3,4,5} intersect {d <= 3} = {3} and {3,4,5} intersect {d <= 4} = {3,4}. The runner's 35 passes are mostly cross-note/prose anchor checks plus this set composition, so it supports a bounded scope gate rather than first-principles physics. Within that scope, no additional premise beyond the provided retained_bounded authorities is needed.
 - **auditor confidence:** high
 
 ### `decoherence_action_independence_note`

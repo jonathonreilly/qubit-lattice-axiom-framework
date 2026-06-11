@@ -131,8 +131,12 @@ It is “Higgs is conditionally closed at 3-loop on the accepted YT route.”
 
 - [HIGGS_MECHANISM_NOTE.md](./HIGGS_MECHANISM_NOTE.md)
   mechanism-level support
-- [HIGGS_FROM_LATTICE_NOTE.md](./HIGGS_FROM_LATTICE_NOTE.md)
-  bounded / historical quantitative support
+- `HIGGS_FROM_LATTICE_NOTE.md`
+  bounded / historical quantitative support (backticked file pointer,
+  not a markdown dependency: that support note now carries the
+  markdown authority edge **to** this note per its 2026-06-11
+  audit-requested repair, and keeping a markdown link in both
+  directions would re-create cycle-0046 in the citation graph)
 - [HIGGS_MASS_NOTE.md](./HIGGS_MASS_NOTE.md)
   historical numerical CW support
 

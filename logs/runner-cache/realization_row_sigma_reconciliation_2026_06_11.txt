@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/realization_row_sigma_reconciliation_2026_06_11.py
+runner_sha256: 33ca22bb7dcfbbbc13749fb72dddcf3ed562a94b9c9a6443c0b3cb1278b6ed29
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.10
+status: ok
+----- stdout -----
+
+PART A -- the global sigma law (exact)
+==============================================================================
+  [PASS] A1 GLOBAL factorization: the full 3-variable charpoly = Q_A Q_B / (9 e3^2) over the WHOLE BZ (rational identity)  --  each block: 3 X^2 - X (alpha sigma_bar + beta sigma) + 3 alpha beta = 0 after dividing by e3: momentum enters ONLY through sigma
+  [PASS] A2 the cos-law (branch-free): (3X + 3 alpha beta/X)/h = 6 cos Phi and (alpha conj(s) + beta s)/h = 2 Re(e^{i psi} s); both roots unimodular (Y1 Y2 = 1, Y1+Y2 real in [-2,2])  --  => cos Phi = Re(e^{i psi} sigma(k)) / 3: a single-cosine band law driven by the adjacency symbol
+
+PART B -- the moduli are frame content (exact)
+==============================================================================
+  [PASS] B1 e^{i psi} sigma(k) = sigma(k + psi (1,1,1)) EXACTLY: the psi-modulus is a DIAGONAL MOMENTUM TRANSLATION  --  per block, the moduli reduce to {diagonal translation, quasi-energy offset}: block01's frame/offset class
+  [PASS] B2 RIGIDITY: theta_psi(k) = theta_0(k + psi 1) pointwise (exact translation) => every BZ-translation-invariant kinetic functional is moduli-RIGID; the fixed-line max VARIES (the block05-record front-speed signal = slice artifact)  --  pointwise identity verified at 200 random (k, psi); fixed-line max [0.1732 0.1695 0.2352] varies: no front-speed dial exists
+
+PART C -- drift, strata, and the diagonal from the law (exact)
+==============================================================================
+  [PASS] C1 strata from the law: theta-slope at k=0 is EXACTLY 1/6 (any psi != 0) and 1/(2 sqrt 3) at psi = 0 (two-line derivations)  --  block05's exact strata re-derived from the single-cosine law; slope 0 impossible (the law's gradient never vanishes there)
+  [PASS] C2 gapless structure: within-block touchings need |sigma| = 3 (the diagonal); the LINE is the INTER-block shared-beta root X = beta w (exact); off-diagonal inter-block degeneracy excluded by the difference factorization  --  |sigma|^2 = 3 + 2 sum cos(k_i-k_j) = 9 iff all momenta equal; Q_A - Q_B = (alpha-gamma)(3 beta - X sigma_bar)
+  [PASS] C3 the diagonal law: Phi = +-(t + psi) exactly => theta-slope 1/2 in the cell diagonal parameter, ALL moduli  --  the family's transport line carries the 1D quantized value 1/2 (cell units) -- block02's dichotomy value
+
+PART D -- T1: the factorized cycle's drift equals the family's (exact)
+==============================================================================
+  [PASS] D1 (S1 S2 S3)^2 = -(z1 z2 z3)^{-1} I EXACTLY: cycle bands omega = (k1+k2+k3)/2 + const per application  --  per-tick (3 ticks/application) drift = +-(1,1,1)/6 cells/tick: IDENTICAL to the family's rigid generic drift
+
+PART E -- the W-IR reconciliation (consumes the landed B-W reduction)
+==============================================================================
+  [PASS] E1 COMPUTED per-tick gradient vectors at the comparison point: cycle (1,1,1)/6 (exact, D1) and family +-(1,1,1)/6 (symbolic from the law, any generic psi): IDENTICAL up to the +- pairing  --  convention-independent: whatever uniform unit convention W-IR fixes, both candidates feed the same consumed first-order datum (generic stratum; the equal stratum's distinct datum and the unit premise U-T are named in the note)
+  [PASS] E2 the candidates' differences are OUTSIDE the consumed surface: transverse first-order flatness (computed ~0) + off-locus curvature (nonzero)  --  transverse slope 0.0e+00; off-locus curvature 0.096: shape content, not W-IR content
+  [PASS] E3 the within-block touchings are exactly ISOTROPIC 3D cones: Phi = |q|/sqrt(3) in all directions (theta-slope 1/(2 sqrt 3))  --  an isotropic cone EXISTS in the family at quantized slope 1/(2 sqrt 3) -- found in review; the H-slope-1/2 cone remains unrealized (sqrt 3 mismatch)
+
+PART F -- the sigma kinship and the honest cone row
+==============================================================================
+  [PASS] F1 the landed staggered H is sigma-driven too: E(k) = +-sqrt((3 - Re sigma)/2) on the 8-cell (computed)  --  the walk family is the tick-native cos-law sibling of the landed H-law: one structure function, two readings
+  [PASS] F2 the H-cone is isotropic with slope 1/2; the family's cone (E3) is isotropic with slope 1/(2 sqrt 3): same geometry, slopes split by sqrt 3 -- the H-slope cone is realized by neither candidate  --  the matter-cone row RE-OPENS positively: an isotropic 3D cone exists in the covariant family at quantized slope 1/(2 sqrt 3); matching the H-slope 1/2 remains larger-cell/unit-premise content
+
+==============================================================================
+SCORECARD: PASS=13 FAIL=0
+==============================================================================
+
+----- stderr -----
+

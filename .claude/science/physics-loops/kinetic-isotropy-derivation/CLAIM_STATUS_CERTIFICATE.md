@@ -279,3 +279,41 @@ bare_retained_allowed: false
 
 ## Review-loop disposition — block06
 pass — see REVIEW_HISTORY block06 row (1 BLOCKER + 6 MAJOR total across two referees, all integrated; the block05-correction leg independently CONFIRMED by the referee's exact-RNG reproduction).
+
+---
+
+# Claim Status Certificate — block07 (the U-T placement table)
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: >
+  The placement table exact (H-kernel 1 site/tau; per-axis 1 site/tick;
+  family 1/sqrt(3) site/tick, RE-DERIVED from the walk matrix on-branch).
+  Natural row (tick = tau): the factorized candidate matches the H-cone
+  exactly, xi = 1 both carrier orders. Rational-clock no-go: the family as
+  H-carrier needs tick/tau = 1/sqrt(3), irrational; escapes named. U-T
+  collapses to the single-tick placement (unique rational solution over the
+  EXHIBITED set; block05's full-family open bounds the claim). The family =
+  second covariant species, cone ratio exactly 1/sqrt(3). Conditional on
+  the standing set + W-IR; consumes landed block06.
+claim_type_reason: >
+  exact conversions + symbolic limits + number theory; the survey claim
+  ("no shipped reading is irrational") is named and falsifiable.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## V1-V5 — block07
+| # | Answer |
+|---|---|
+| V1 | block06's U-T premise and sqrt-3 cone row, by their shipped wording. Both reduced/resolved. |
+| V2 | New: the placement table; the natural-row matching; the rational-clock no-go; the species split; U-T/R-P merger. |
+| V3 | No — the table's rows are this framework's landed constants. |
+| V4 | Yes — the chain's normalization freedoms merge to one reading; a derived two-species kinematics appears. |
+| V5 | No prior note computes any placement bookkeeping. |
+
+## Review-loop disposition — block07
+pass — math referee: NO BLOCKER (independently re-derived every conversion incl. the walk-matrix cone rate; 2 MAJOR = dependency-gating + exhibited-set overclaim, fixed); provenance referee: 2 BLOCKERS (stacking; pack entries — both resolved by stacking onto block06 + these entries) + 3 MAJOR (runner docstring, N4 stitched quote, successor-pack file set — all fixed).

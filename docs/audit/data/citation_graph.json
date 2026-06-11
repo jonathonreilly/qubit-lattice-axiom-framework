@@ -49638,15 +49638,27 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
     },
     {
       "from": "repo.front_door_status",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
@@ -49655,18 +49667,6 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "cl3_taste_generation_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "higgs_mass_from_axiom_note"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "pmns_twisted_flux_transfer_holonomy_boundary_note"
     },
     {
       "from": "repo.repo_organization",
@@ -95200,17 +95200,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
+        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "alpha_s_derived_note",
-        "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
-        "cl3_taste_generation_theorem",
-        "higgs_mass_from_axiom_note",
-        "pmns_twisted_flux_transfer_holonomy_boundary_note"
+        "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4faa5b4dfeb2e6aecf44bd52604ff5b6a9e61065a458b3a8ac25c71f757c28aa",
+      "note_hash": "d0530dd1965a998711d643922e3b54492407cf13acc2bb1f363ed4517102a567",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

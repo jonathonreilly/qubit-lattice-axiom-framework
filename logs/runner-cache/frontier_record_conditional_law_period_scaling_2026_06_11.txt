@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py
+runner_sha256: 9a7fc02f1366cb7f76c986c0a55ea1e14e677dcbcd0321cfeb604018fad999f6
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 18.89
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  L = 3 baseline (the #3554 load-bearing event, recomputed in-runner)
+==============================================================================
+  [PASS] L=3 rank guard (seed 4242)  (worst min-sv 0.0012)
+  [PASS] L=3 event A (seed 4242/depth 9, the #3554 event): clears the null with gap ~ +0.09 and the fixed-k profile STALLS  (global 0.457; profile 0.557/0.557/0.598; null p95 0.469; gap +0.088)
+  [PASS] L=3 rank guard (seed 99)  (worst min-sv 0.0011)
+  [PASS] L=3 event B (seed 99/depth 7, #3554's other null-cleared event): clears the null with gap ~ +0.19 and is MONOTONE -- the stall is EVENT-specific at L=3, not a period property (panel-decisive correction)  (global 0.057; profile 0.347/0.502/0.695; null p95 0.312; gap +0.190)
+==============================================================================
+Part 2  L = 4 (12 modes, 4096-dim Fock): three seeds, most-spread rows
+==============================================================================
+  [PASS] L=4 seed 1: rank guard  (worst min-sv 0.0037)
+  [PASS] L=4 seed 1: at the most-spread row (depth 9) the record prefix-3 CLEARS the permutation null and the fixed-k profile is MONOTONE in k (no stall)  (global 0.573; profile 0.750/0.780/0.821; null p95 0.586; gap +0.193)
+  [PASS] L=4 seed 4242: rank guard  (worst min-sv 0.0020)
+  [PASS] L=4 seed 4242: at the most-spread row (depth 9) the record prefix-3 CLEARS the permutation null and the fixed-k profile is MONOTONE in k (no stall)  (global 0.399; profile 0.609/0.638/0.690; null p95 0.421; gap +0.217)
+  [PASS] L=4 seed 99: rank guard  (worst min-sv 0.0014)
+  [PASS] L=4 seed 99: at the most-spread row (depth 8) the record prefix-3 CLEARS the permutation null and the fixed-k profile is MONOTONE in k (no stall)  (global 0.572; profile 0.597/0.665/0.784; null p95 0.589; gap +0.076)
+==============================================================================
+Part 3  the two-point scaling verdict (labeled as such)
+==============================================================================
+  [PASS] the L=4 null-cleared gaps are COMPARABLE-OR-LARGER than the L=3 SET (panel-corrected fairness: the L=3 baseline is BOTH #3554 events; ranges overlap -- worst L=4 below best L=3; median ratio ~1.4x, NOT doubled; magnitudes instance/seed-labeled)  (L=3 set ['+0.088', '+0.190'] (median +0.139) -> L=4 ['+0.193', '+0.217', '+0.076'] (median +0.193; ratio 1.40x))
+  [PASS] THE LOAD-BEARING POSITIVE: the fixed-k profile is MONOTONE at the most-spread row of EVERY L=4 seed (panel-extended: 7/7 fresh seeds + a K=6 half-filling control) -- universal monotonicity at the larger period; consistent with, NOT establishing, strengthening (at L=3 monotonicity was event-specific)
+==============================================================================
+TOTAL: PASS=12 FAIL=0
+==============================================================================
+SCOPE: scales #3554's named object (the fixed-prefix-k conditional law) from
+  L=3 to L=4 (rings; Z^3 untested -- geometry disclosed; two periods = a
+  two-point trend, labeled).  PANEL-CORRECTED FINDINGS: the L=3 baseline is the
+  SET of both #3554 null-cleared events ({+0.088 stalled, +0.190 monotone} --
+  the stall is event-specific, not a period property); the L=4 gaps are
+  COMPARABLE-OR-LARGER (ranges overlap; median ~1.4x, not doubled).  THE
+  LOAD-BEARING POSITIVE: universal fixed-k MONOTONICITY at L=4 (every seed,
+  panel-extended to 7/7 + a half-filling control) -- consistent with, not
+  establishing, strengthening with the period.  NOT claimed: gap growth as a
+  period law, concentration in the large-period limit, any CLT premise,
+  L>=5/Z^3 behavior, or gap universality (instance/seed-labeled).  Guards
+  inherited (#3554/#3507: exact tree, no MC, SVD polar, rank/no-prune, the
+  permutation null armed at every gated event).  Born cap inherited (audit lane
+  grades).  The U(1) factor is NOT identified with a physical gauge field.
+  Discrete-time (retained R1 boundaries untouched).  No new axiom/primitive/
+  measure/weight; r untouched.
+
+----- stderr -----
+

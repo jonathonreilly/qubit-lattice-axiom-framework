@@ -1,0 +1,2 @@
+build L=4 DIM 4096  in 214.1 s
+L=4 seed 99 depth(most) 8: global 0.572  p2/p3/p4 0.597/0.665/0.784  null 0.589  gap +0.076  mono=True  (96s, sv 0.0014)

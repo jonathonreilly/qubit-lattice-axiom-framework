@@ -1,0 +1,12 @@
+==============================================================================
+Part 1  L = 3 baseline (the #3554 load-bearing event, recomputed in-runner)
+==============================================================================
+  [PASS] L=3 rank guard  (worst min-sv 0.0012)
+  [PASS] L=3 baseline reproduces #3554's load-bearing event: record prefix-3 clears the null with gap ~ +0.09, and the fixed-k profile STALLS (prefix-2 = prefix-3)  (global 0.457; profile 0.557/0.557/0.598; null p95 0.469; gap +0.088)
+==============================================================================
+Part 2  L = 4 (12 modes, 4096-dim Fock): three seeds, most-spread rows
+==============================================================================
+  [PASS] L=4 seed 1: rank guard  (worst min-sv 0.0037)
+  [PASS] L=4 seed 1: at the most-spread row (depth 9) the record prefix-3 CLEARS the permutation null and the fixed-k profile is MONOTONE in k (no stall)  (global 0.573; profile 0.750/0.780/0.821; null p95 0.586; gap +0.193)
+  [PASS] L=4 seed 4242: rank guard  (worst min-sv 0.0020)
+  [PASS] L=4 seed 4242: at the most-spread row (depth 9) the record prefix-3 CLEARS the permutation null and the fixed-k profile is MONOTONE in k (no stall)  (global 0.399; profile 0.609/0.638/0.690; null p95 0.421; gap +0.217)

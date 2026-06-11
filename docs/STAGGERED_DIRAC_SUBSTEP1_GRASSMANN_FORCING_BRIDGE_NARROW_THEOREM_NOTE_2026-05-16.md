@@ -2,7 +2,9 @@
 
 **Date:** 2026-05-16; 2026-06-10 science-fix (U4 boundary discharged);
 2026-06-11 science-fix (U4 supplier re-routed to the Quantum axiom plus
-the retained dim-two row — see §0 changelog)
+the retained dim-two row — see §0 changelog); 2026-06-11 science-fix #2
+(D2 module repair: lowering operator = Berezin derivative, not the
+generator — see §0 changelog)
 **Type:** positive_theorem
 **Claim type:** positive_theorem
 **Claim scope:** Two-candidate collapse on the framework's physical
@@ -24,7 +26,7 @@ audit pipeline after independent review.
 audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py`](../scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py)
-**Runner cache:** [`logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt`](../logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt) (PASS=38, FAIL=0)
+**Runner cache:** [`logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt`](../logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt) (PASS=45, FAIL=0)
 **Authority role:** narrow algebraic bridge composing upstream inputs
 — the Quantum axiom's one-qubit per-site carrier, the retained
 per-site dim-two readout, the `Cl(3)` faithful complex-irrep dim-2
@@ -35,7 +37,33 @@ consumed by the staggered-Dirac spine (e.g. boundary B1 of
 
 ## 0. Changelog
 
-- **2026-06-10 / 2026-06-11 (science-fix, this revision).** Boundary discharge. As
+- **2026-06-11 (science-fix #2, D2 module repair, this revision).**
+  Audit-requested repair (`missing_bridge_theorem` finding on the
+  2026-06-11 conditional audit). The earlier text presented the
+  per-site two-state module with the generator action
+  `χ_x |1⟩_x = |0⟩_x`. That action is incompatible with the cited
+  Berezin algebra: `(G3)` holds for all `x, y` **including `x = y`**,
+  so `{χ_x, χ̄_x} = 0` and
+  `χ_x (χ̄_x |0⟩_x) = − χ̄_x χ_x |0⟩_x = 0 ≠ |0⟩_x` — the generator
+  `χ_x` is an integration variable, not the lowering operator. This
+  revision rebuilds (D2) on the per-site Berezin function space
+  `F_x := Λ[χ̄_x] = ℂ·1 ⊕ ℂ·χ̄_x` (dimension 2 by nilpotency alone),
+  with the raising/lowering pair realized by **operators on** `F_x`:
+  multiplication `c̄_x := (χ̄_x ·)` and the Berezin derivative
+  `c_x := ∂/∂χ̄_x` (the same operation as the per-site Berezin
+  integral `(B2)`). The relations `c_x² = c̄_x² = 0` and
+  `{c_x, c̄_x} = 1` on `F_x` are **derived** from the graded Leibniz
+  rule of the exterior calculus (§5.2) — properties of the
+  multiplication/derivative pair, not an extra premise on the
+  generators. No claim of the form `χ_x |1⟩_x = |0⟩_x` remains
+  anywhere in this note. The runner adds the matrix-level certificate
+  (the `2×2` realization of `(c_x, c̄_x)`, `{c, c̄} = 1`, number
+  operator `N_x = c̄_x c_x` with spectrum `{0, 1}`) and a
+  repaired-slip witness (`{L_{χ}, L_{χ̄}} = 0` for generator left
+  multiplication on `Λ[χ, χ̄]` — the generators do NOT realize CAR).
+  The dimensional readout (D2) and the collapse (D5) are unchanged in
+  content; only the module presentation is repaired.
+- **2026-06-10 / 2026-06-11 (science-fix).** Boundary discharge. As
   written on 2026-05-16, this note closed only the abstract algebraic
   dichotomy (D1)–(D4) and declared "The U4 bridge remains open": the
   identification of the framework's physical per-site Hilbert space
@@ -79,9 +107,17 @@ two abstract algebraic candidates for a "matter-generator measure":
 - **(Grassmann candidate G).** `2 |Λ|` generators
   `(χ_x, χ̄_x)_{x ∈ Λ}` satisfying anticommutation `(G1)-(G3)` and
   Berezin integration rules `(B1)-(B2)` as in the cited narrow theorem
-  on the Berezin determinant identity. Per-site Fock representation
-  acts on a complex vector space of dimension `2` (the two-state
-  Fock module: vacuum `|0⟩_x` and one-particle `|1⟩_x = χ̄_x|0⟩_x`).
+  on the Berezin determinant identity. Per-site state space: the
+  Berezin function space `F_x := Λ[χ̄_x] = ℂ·1 ⊕ ℂ·χ̄_x` (complex
+  dimension `2` by nilpotency `χ̄_x² = 0`), carrying the
+  multiplication operator `c̄_x := (χ̄_x ·)` and the Berezin
+  derivative `c_x := ∂/∂χ̄_x` (the operation of the per-site integral
+  `(B2)`). On `F_x` these satisfy `c_x² = c̄_x² = 0` and
+  `{c_x, c̄_x} = 1` (derived in §5.2), so `F_x` is the two-state
+  raising/lowering module with vacuum `|0⟩_x := 1` and one-particle
+  state `|1⟩_x := χ̄_x`. The generators themselves remain integration
+  variables (`{χ_x, χ̄_x} = 0` by `(G3)` at `x = y`); neither
+  generator acts as the lowering operator.
 
 - **(Commuting/"bosonic" candidate B).** `2 |Λ|` generators
   `(a_x, a_x^†)_{x ∈ Λ}` satisfying commutation
@@ -103,7 +139,8 @@ Then the following hold:
 
 - **(D2) Per-site Hilbert-dim match (G candidate vs the physical
   per-site space).** The dimensional readout `dim_C H_x^G = 2`
-  (per-site Grassmann Fock from `χ̄_x^2 = 0`) is **identical** to the
+  (per-site Berezin function space `F_x = Λ[χ̄_x]`, dimension 2 from
+  `χ̄_x^2 = 0`) is **identical** to the
   physical per-site dimension `dim_C H_x = 2`.
 
 - **(D3) Algebraic dichotomy.** Within the abstract algebraic framing
@@ -205,8 +242,8 @@ Load-bearing markdown-link upstream dependencies:
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
   — retained_bounded. Provides the Berezin determinant identity
   `Z_F[M] = det(M)` used in (D4), and the algebraic-Grassmann
-  nilpotency `χ_x² = 0` used in the (D2) per-site Fock dimension
-  count. Consumed strictly within its bounded scope: its premises (the
+  nilpotency `χ_x² = 0` used in the (D2) per-site function-space
+  dimension count. Consumed strictly within its bounded scope: its premises (the
   anticommutation rules `(G1)-(G3)` and Berezin rules `(B1)-(B2)`) are
   the **definition** of candidate (G) in this note, not a physical
   admission, so the boundedness does not propagate an open admission
@@ -248,26 +285,65 @@ level. ∎
 
 ### 5.2 (D2) per-site Hilbert-dim match for (G)
 
-The Grassmann per-site Fock space is built from the pair
-`(χ_x, χ̄_x)` plus the cyclic vector `|0⟩_x` annihilated by `χ_x`,
-i.e., `χ_x |0⟩_x = 0`. By the algebraic anticommutation `χ_x² = 0`
-(from `(G1)` at `y = x`, which the cited Berezin-determinant narrow
-theorem records as `(C1)` per its derivable-corollaries section), only
-two states span the per-site sector:
+**State space.** The per-site Berezin function space attached to the
+pair `(χ_x, χ̄_x)` is the exterior algebra on the single generator
+`χ̄_x`:
 
 ```text
-|0⟩_x   (vacuum, χ_x |0⟩_x = 0),
-|1⟩_x   (one-particle, χ̄_x |0⟩_x; satisfies χ_x |1⟩_x = |0⟩_x).
+F_x := Λ[χ̄_x] = ℂ·1 ⊕ ℂ·χ̄_x,
+|0⟩_x := 1      (vacuum),
+|1⟩_x := χ̄_x   (one-particle state).
 ```
 
-Any further application of `χ̄_x` gives
-`χ̄_x |1⟩_x = χ̄_x χ̄_x |0⟩_x = 0` by the algebraic-Grassmann
-nilpotency `χ̄_x² = 0` (the bar-symbol analog of `(G1)`). Hence
-`H_x^G = C · |0⟩_x ⊕ C · |1⟩_x` and `dim_C H_x^G = 2`. By the Quantum
-axiom plus the retained dim-two row (§5.5), `dim_C H_x = 2`. Hence
-`dim_C H_x^G = dim_C H_x`,
-i.e., the per-site dimensional readout of (G) matches the framework's
-physical per-site Hilbert space exactly. ∎
+No higher monomials exist: `χ̄_x² = 0` by the algebraic-Grassmann
+nilpotency (`(G2)` at `y = x`, the bar-symbol analog of the `χ_x² = 0`
+nilpotency that the cited Berezin-determinant narrow theorem records
+as `(C1)` per its derivable-corollaries section). Hence
+`dim_C F_x = 2`.
+
+**Raising/lowering structure (derived, not assumed).** Two operators
+act on `F_x`: the multiplication operator `c̄_x := (χ̄_x ·)` and the
+Berezin derivative `c_x := ∂/∂χ̄_x`, defined by `∂(1) = 0`,
+`∂(χ̄_x) = 1` — the same operation as the per-site Berezin integral
+`(B2)`. On the basis `(1, χ̄_x)`:
+
+```text
+c̄_x : 1 ↦ χ̄_x,   χ̄_x ↦ χ̄_x² = 0    (raising),
+c_x  : 1 ↦ 0,     χ̄_x ↦ 1            (lowering).
+```
+
+Direct evaluation on the basis gives `c_x² = c̄_x² = 0` and the
+canonical anticommutation relation **as operators on `F_x`**:
+
+```text
+{c_x, c̄_x}(1)    = ∂(χ̄_x·1) + χ̄_x·∂(1)    = 1 + 0    = 1·1,
+{c_x, c̄_x}(χ̄_x) = ∂(χ̄_x²)  + χ̄_x·∂(χ̄_x) = 0 + χ̄_x = 1·χ̄_x,
+```
+
+so `{c_x, c̄_x} = 1` on `F_x`. This is the graded Leibniz rule of the
+exterior calculus — a **derived** property of the
+multiplication/derivative pair, not an additional premise on the
+generators. In particular `c_x |1⟩_x = |0⟩_x` and `c_x |0⟩_x = 0`
+hold by the definition of `∂`, and the number operator
+`N_x := c̄_x c_x` has spectrum `{0, 1}` with `N_x |0⟩_x = 0`,
+`N_x |1⟩_x = |1⟩_x`.
+
+**Repaired slip (2026-06-11, audit-requested).** The earlier text
+wrote the lowering action as `χ_x |1⟩_x = |0⟩_x`, assigning it to the
+generator `χ_x`. That is incompatible with the cited algebra: `(G3)`
+holds for all `x, y` **including `x = y`**, so `{χ_x, χ̄_x} = 0` and
+left multiplication by the generators on `Λ[χ_x, χ̄_x]` satisfies
+`{L_{χ_x}, L_{χ̄_x}} = 0 ≠ 1` — the generators do not realize the
+raising/lowering structure. The lowering operator on `F_x` is the
+Berezin derivative `c_x = ∂/∂χ̄_x`. The runner verifies both the
+repaired realization and the slip witness (`{L_χ, L_χ̄} = 0`) at exact
+matrix level.
+
+**Dimensional readout.** Set `H_x^G := F_x`, so `dim_C H_x^G = 2`. By
+the Quantum axiom plus the retained dim-two row (§5.5),
+`dim_C H_x = 2`. Hence `dim_C H_x^G = dim_C H_x`, i.e., the per-site
+dimensional readout of (G) matches the framework's physical per-site
+Hilbert space exactly. ∎
 
 ### 5.3 (D3) algebraic dichotomy
 
@@ -442,16 +518,23 @@ verifies via sympy exact symbolic arithmetic:
    without bound as `N_max → ∞`; specifically, at `N_max ∈ {1, 2, 5,
    10, 100}` the truncated dim is `{2, 3, 6, 11, 101}`, strictly larger
    than the physical per-site dim `2` for all `N_max ≥ 2`.
-2. **(D2) per-site Grassmann dim = 2.** A two-state Fock module built
-   from `(χ_x, χ̄_x)` with `χ_x² = χ̄_x² = 0` has basis
-   `{|0⟩_x, χ̄_x|0⟩_x}` and dimensional count `dim_C H_x^G = 2`,
-   verified by exhaustive enumeration of monomials in
-   `{1, χ_x, χ̄_x, χ_x χ̄_x}` modulo `χ_x² = χ̄_x² = 0` and the
-   vacuum-cyclic-vector action.
+2. **(D2) per-site Grassmann dim = 2 (Berezin function space; repaired
+   2026-06-11).** The function space `F_x = Λ[χ̄_x]` has basis
+   `{1, χ̄_x}` and dimensional count `dim_C H_x^G = dim_C F_x = 2`,
+   verified by exhaustive enumeration of monomials modulo
+   `χ̄_x² = 0`. The matrix-level module certificate: on the basis
+   `(1, χ̄_x)`, multiplication `c̄_x` and the Berezin derivative `c_x`
+   are explicit `2×2` matrices with `c_x² = c̄_x² = 0`,
+   `{c_x, c̄_x} = 1`, `c̄_x|0⟩_x = |1⟩_x`, `c_x|1⟩_x = |0⟩_x`,
+   `c_x|0⟩_x = 0`, and number operator `N_x = c̄_x c_x = diag(0, 1)`
+   (spectrum `{0, 1}`). The repaired-slip witness: on `Λ[χ_x, χ̄_x]`
+   (4-dim), generator left multiplication satisfies
+   `{L_{χ_x}, L_{χ̄_x}} = 0 ≠ 1` — the generators do not realize the
+   raising/lowering structure; the Berezin derivative does.
 3. **(D2) match to `dim_C H_x = 2`.** The Pauli-realisation matrices
    `σ_1, σ_2, σ_3` act on `C²` (the retained dim-two row's Pauli
    carrier), so
-   `dim_C H_x = 2`, matching the (G) per-site Fock dim.
+   `dim_C H_x = 2`, matching the (G) per-site function-space dim.
 4. **(D3) algebraic dichotomy enumeration.** Within the two-element
    abstract canonical-bracket framing
    `{anticommutator → Grassmann, commutator → bosonic}`, only two
@@ -467,7 +550,8 @@ verifies via sympy exact symbolic arithmetic:
    `exp(-m a_x^† a_x)` evaluated on `|0⟩_x, |1⟩_x, |2⟩_x, ...` gives
    `Tr_{H_x^B} exp(-m a_x^† a_x) = ∑_{n=0}^∞ exp(-m n) = 1/(1 - e^{-m})`,
    structurally distinct from the Grassmann scalar trace
-   `Tr_{H_x^G} exp(-m χ̄_x χ_x) = 1 + e^{-m}`.
+   `Tr_{F_x} exp(-m N_x) = 1 + e^{-m}` (with `N_x = c̄_x c_x` the
+   number operator on the Berezin function space, spectrum `{0, 1}`).
 7. **Counter-example check.** A "candidate" `(G)` with **commuting**
    generators (i.e. dropping nilpotency `χ_x² = 0`) admits an infinite
    tower of monomials, contradicting the per-site dim-2 readout: the
@@ -506,7 +590,7 @@ python3 scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridg
 Expected output: deterministic, terminating with
 
 ```text
-TOTAL: PASS=38, FAIL=0
+TOTAL: PASS=45, FAIL=0
 ```
 
 including one `SCOPE-BOUNDARY (declared, not claimed): ...` line for

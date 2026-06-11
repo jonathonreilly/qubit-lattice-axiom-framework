@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/d3_pinch_native_upper_leg_composition_2026_06_11.py
+runner_sha256: 3260dc4f111e4b4ff30ea37f6b9ab9a81470b390e84c869689efb6cb99738562
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+NATIVE UPPER LEG, RE-DERIVED: U = { d : d <= 3 }
+==============================================================================
+  [PASS] d = 1, 2, 3 anticommuting self-adjoint-unitary families exist (Pauli sub-frames)
+  [PASS] no 4th anticommuting element of M_2(C): extension-system nullspace = 0 exactly  --  so no d >= 4 family contains any 3-family; with the Gram obstruction no 4-family exists at all
+  [PASS] Gram obstruction: a 4-family needs 4 orthonormal Bloch vectors in R^3 (rank <= 3)  --  required Gram rank 4 exceeds ambient Bloch rank 3
+  [PASS] native upper set U = {1, 2, 3} (derived from Pauli sub-frames plus the obstruction)
+
+KERNEL-DECAY SURROGATE LOWER LEG, COMPUTED PER DIMENSION
+==============================================================================
+  [PASS] d=1 torus potential kernel matches a(r) = r(L-r)/(2L) EXACTLY: linear divergence, no decaying kernel  --  a(L/8) = 7L/128 grows without bound
+  [PASS] d=2 potential kernel grows by ln(2)/(2 pi) per L-doubling (log divergence): no decaying kernel  --  increments ['0.1111', '0.1105', '0.1104'] vs ln2/2pi = 0.1103
+  [PASS] d=3: G_L(r) converges in L at fixed r and the kernel is positive decreasing: decaying kernel EXISTS
+  [PASS] d=4: G_L(r) converges in L at fixed r and the kernel is positive decreasing: decaying kernel EXISTS
+  [PASS] d=5: G_L(r) converges in L at fixed r and the kernel is positive decreasing: decaying kernel EXISTS
+  [PASS] surrogate lower set on the tested range: {3, 4, 5} pass, {1, 2} fail
+
+D = 3 TAIL CORROBORATION: LANDED 1/(4 pi r) VIA THE BESSEL REPRESENTATION
+==============================================================================
+  [PASS] 4 pi r G(r) approaches 1 along the axis (r = 4, 8, 16), reproducing the landed isotropy trend  --  4 pi r G = 4: 1.0198, 8: 1.0041, 16: 1.0010
+  [PASS] G(0) reproduces the landed Watson-integral value 0.252731 (to 1e-4)  --  G(0) = 0.252734
+
+COMPOSITION: BOTH LOWER SOURCES PINCH WITH THE NATIVE UPPER LEG TO {3}
+==============================================================================
+  [PASS] cited lane: {3,4,5} \cap {d <= 3} = {3} exactly  --  lower set is a CITED retained_bounded input; the intersection is computed
+  [PASS] native surrogate: {3,4,5} \cap {d <= 3} = {3} exactly
+  [PASS] coherence: the cited pass-set and the native surrogate set AGREE on the tested range
+
+HOSTILE/CONTRAST: EACH LEG ALONE FAILS TO PIN
+==============================================================================
+  [PASS] lower leg alone does not pin: d = 4 and d = 5 pass both lower sources  --  without the qubit bound, the pinch is {3,4,5}
+  [PASS] upper leg alone does not pin: the d = 1 Dirac-square carrier exists exactly (D^2 = I (x) Lap)  --  without the lower leg, d = 1, 2 remain; both legs are load-bearing
+
+SCOPE HONESTY: what is NOT claimed
+==============================================================================
+  [PASS] the 1/(4 pi r) reference is derived in-runner from the continuum heat-kernel identity (no imported constant)  --  the orbit/atomic textbook routes contribute no quantity anywhere in this composition
+  [PASS] the lower-leg criteria are NAMED selection requirements: d=4,5 are excluded only by the upper leg, d=1,2 only by the lower
+
+==============================================================================
+SCORECARD: PASS=19 FAIL=0
+==============================================================================
+
+----- stderr -----
+

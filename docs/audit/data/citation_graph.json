@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
         "koide_p1_collapses_frame_residuals_note_2026-06-01",
         "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09",
         "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
-        "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29"
+        "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
+        "su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "15d8cfa7ae1bf5fb6b34e98ccaf85b2d2907d0f27a2f3d4b7ed28238f5a289a0",
+      "note_hash": "92c8bf84e04a68fb378357d8786fdb2845cfdf2d37fb93e9c2e6636e3160d1b4",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

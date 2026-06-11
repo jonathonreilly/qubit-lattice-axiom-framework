@@ -118,6 +118,15 @@ chain row's "DERIVED" label remains demoted to bounded numerical match,
 and the four P1-P4 pins remain open — they are now the declared
 boundary inputs B2-B5.
 
+**Addendum (2026-06-11, same day, C3 scope sharpening; no status
+change).** The C3 closure-path bullet previously compressed the YT-P2
+standing record to "non-perturbative at the canonical coupling", which
+over-reads that no-go: its proof forecloses only per-step 1-loop
+perturbative beta integration, names the staircase a non-perturbative
+blocking renormalization, and leaves blocking-RG / strong-coupling
+routes explicitly open. The bullet now states the obstruction at proof
+scope. Nothing else in this note changed.
+
 ## What this note is and is NOT
 
 **This note proves** (T1) the structural skeleton of the hierarchy
@@ -153,13 +162,24 @@ as derived by this note.
   only under that license. B1 is licensed at 4 decimal places; the
   induced resolution window on `v_cand` is `+/- 0.0337 %` (elasticity
   `-4`; computed by the runner).
-- **B2 (declared external UV anchor).** `M_Pl = 1.2209e19 GeV`, the
-  Planck-lane anchor (Wald-Noether matching `c_cell = 1/4` to
+- **B2 (declared external UV anchor; carried by the approved
+  scale-reference primitive as of 2026-06-04/05).** `M_Pl = 1.2209e19
+  GeV`, the Planck-lane anchor (Wald-Noether matching `c_cell = 1/4` to
   `S_BH = A/(4G)`; `PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md`,
-  file-pointer context). This note does not derive `M_Pl`; the EW lane
-  consumes it as a fixed external input. Elasticity `+1`: every
-  relative shift in `M_Pl` passes through to `v_cand` unchanged. This
-  was P1 of the 2026-05-10 packet.
+  file-pointer context). The anchor's framework carrier is now the
+  approved `scale_reference_primitive`
+  (`SCALE_REFERENCE_PRIMITIVE_NOTE.md`, registered in
+  `docs/audit/data/axiom_premise_nodes.json`, owner approval in
+  `docs/audit/AXIOM_MINIMALITY_POLICY.md` §6; per
+  `MINIMAL_AXIOMS_2026-06-05.md`): exactly one dimensionful reference,
+  `a^{-1} = M_Pl`, a units conversion carrying zero dimensionless
+  content. Two consequences stated honestly: (i) the dimensionless
+  theorem content T1 (including `K = 2.017224e-17`) consumes B2
+  nowhere — only the dimension-1 readout C1 does; (ii) per the
+  primitive's own policy, consuming the ruler does not by itself
+  upgrade C1 toward `retained_bounded`. This note does not derive
+  `M_Pl`; elasticity `+1`: every relative shift in `M_Pl` passes
+  through to `v_cand` unchanged. This was P1 of the 2026-05-10 packet.
 - **B3 (declared regulator selection; regulator-conditional exponent).**
   The exponent is `N = 16 = 2^4`, the naive-operator Brillouin-zone
   corner species count on the four-direction (`Z^3 + t`) surface,
@@ -394,11 +414,17 @@ instead of being implicit inside a comparator match.
 
 - **C3 (most defensible): per-step Wilsonian taste-staircase
   transport.** Sixteen threshold decouplings each contributing one
-  factor of `alpha_LM`; non-perturbative at the canonical coupling per
-  the YT-P2 standing record
+  factor of `alpha_LM`. Scope of the standing obstruction, read at
+  proof level: the YT-P2 record
   (`YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`,
   `YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE_2026-04-17.md`,
-  file-pointer context). Open multi-PR target; would close B4.
+  file-pointer context) forecloses only the per-step 1-LOOP
+  PERTURBATIVE beta version of this transport (Landau-pole breakdown
+  at the marginal `b_3(16) = 1/3`); the same record names the
+  staircase a non-perturbative blocking renormalization and its safe
+  claim boundary leaves blocking-RG / strong-coupling-expansion routes
+  explicitly open. Those non-perturbative routes are the C3 attack
+  surface. Open multi-PR target; would close B4.
 - **C0/C1/C2 (CW dimensional transmutation; anomalous-dimension
   power law; KK power-law running):** searched, not landed; none
   converts to the integer-power form. Recorded as context only.

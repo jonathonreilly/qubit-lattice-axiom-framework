@@ -1,0 +1,104 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_delta0_s2_readout_dressing_leading_order_probe_2026_06_11.py
+runner_sha256: 44b6e7a0a3656c5870046ffacb925fed57e5a657fad8ab18d11a95b884f03034
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 1.26
+status: ok
+----- stdout -----
+==============================================================================
+ frontier_hierarchy_delta0_s2_readout_dressing_leading_order_probe_2026_06_11.py
+ Block08 of the DELTA0 blocking campaign: the S2 kill-criterion test at
+ leading order.  Does per-species vacuum-polarization dressing of the
+ static-source Green-kernel chain V(r) = -C g^2 G(r) supply one factor
+ alpha_s = 0.1033038 per taste decoupling — on the READOUT side, where the
+ saddle side (E3) is already refuted?  Computed under DECLARED models M1
+ (resummed one-loop kernel dressing, a declared model, not a landed
+ framework object) and M2 (per-species Pi_1: lattice-calibrated log variants
+ and a constant variant).
+ Parent note: docs/HIERARCHY_DELTA0_S2_READOUT_DRESSING_LEADING_ORDER_
+              PROBE_NOTE_2026-06-11.md
+==============================================================================
+
+--- Section A [C]: undressed kernel — F1 Maradudin 1/(4 pi |r|) re-verification on the declared grids ---
+  [PASS][C] A1 graph-Laplacian symbol k_hat^2 = 2 - 2 cos k has the Maradudin-note small-k normalization k^2 + O(k^4) (|k_hat^2 - k^2| <= k^4/12 at 3 test k) and the half-shifted grids never hit the zero mode (min k_hat^2 > 0 on every declared 3D and 4D grid)
+    r = 4: 4 pi r G(r) raw L=32: 0.801099, L=48: 0.874132, L=64: 0.910581;  Richardson(32,48) = 1.020199, Richardson(48,64) = 1.019928
+    r = 6: 4 pi r G(r) raw L=32: 0.678913, L=48: 0.789041, L=64: 0.843781;  Richardson(32,48) = 1.009298, Richardson(48,64) = 1.008000
+    r = 8: 4 pi r G(r) raw L=32: 0.563320, L=48: 0.712281, L=64: 0.785509;  Richardson(32,48) = 1.010205, Richardson(48,64) = 1.005191
+  [PASS][C] A2 F1 leg: undressed G reproduces the Maradudin 1/(4 pi |r|) asymptotic at r = 4, 6, 8 — the two Richardson(1/L) pair estimates agree to < 0.01 and the production estimate deviates from 1 by < 0.5/r^2 (the expected lattice-correction budget) at every radius  (r=4: dev = +0.019928, r=6: dev = +0.008000, r=8: dev = +0.005191)
+  [PASS][C] A3 F1 leg (signature): the residual deviation scales as 1/r^2 relative — r^2-scaled deviations agree across r = 4, 6, 8 (all in [0.15, 0.5], spread < 1.6x): the remaining gap is the known subleading lattice correction ('decays faster than 1/|r|', Maradudin note), not a normalization error  (r=4: r^2 dev = 0.3189, r=6: r^2 dev = 0.2880, r=8: r^2 dev = 0.3322)
+
+--- Section B [C]: per-species polarization Pi_1 — lattice-regulated calibration of the declared variants ---
+    L = 16: B(pi/4) = 0.03896267, B(pi/2) = 0.03170918
+    L = 24: B(pi/4) = 0.03953928, B(pi/2) = 0.03186521
+    L = 32: B(pi/4) = 0.03972837, B(pi/2) = 0.03191903
+  [PASS][C] B1 4D lattice-regulated bubble B(k) = (1/L^4) sum_q 1/(qhat^2 (q+k)hat^2) computed on deterministic half-shifted grids at L = 16, 24, 32 per direction; Richardson(1/L^2) estimates of B at the readout scale from the (16,24) and (24,32) pairs agree to < 1% relative  (B_rich(k_ro): (16,24) = 0.0400006, (24,32) = 0.0399715)
+  [PASS][C] B2 the bubble's measured log slope d B / d ln(1/k_hat^2) between k = pi/4 and pi/2, Richardson(1/L^2)-extrapolated, reproduces the universal one-loop coefficient 1/(16 pi^2) to < 5% (finite-k budget; pair consistency < 2%): the 1/(16 pi^2) in the declared log variant is lattice-honest, not imported on faith; b_f = 2/3 (per-Dirac-species (4/3) T_f) stays a DECLARED input  (slope/C_univ: L=16: 0.9328, L=24: 0.9869, L=32: 1.0043; rich (24,32) = 1.0266)
+  [PASS][C] B3 declared variants assembled (V-a1/V-a2 log with Lambda_hat^2 in {1, 12}; V-b constant c0 from the Richardson bubble at the readout scale k_ro = 2 pi/8); the resummed dressing 1 + g^2 n Pi_1 stays strictly positive over the entire BZ at the strongest setting (g = 1, n = 16) in every variant on every declared grid — no Landau-type pole inside the momentum sum  (c0 = b_f * B_rich(k_ro) = 0.0266477; min dressing (V-a1, g=1, n=16, BZ edge) = 0.8322)
+
+--- Section C [A]: dressed readout — R_S2 = V_15(r)/V_16(r) per variant per radius (g = 1) ---
+    V-a1 log Lh2=1   r = 4: R(L=32) = 1.010707, R(L=48) = 1.011220, R(L=64) = 1.011496;  R_rich = 1.012323
+    V-a1 log Lh2=1   r = 6: R(L=32) = 1.012446, R(L=48) = 1.013105, R(L=64) = 1.013459;  R_rich = 1.014520
+    V-a1 log Lh2=1   r = 8: R(L=32) = 1.013431, R(L=48) = 1.014227, R(L=64) = 1.014648;  R_rich = 1.015913
+    V-a2 log Lh2=12  r = 4: R(L=32) = 1.017213, R(L=48) = 1.017625, R(L=64) = 1.017847;  R_rich = 1.018515
+    V-a2 log Lh2=12  r = 6: R(L=32) = 1.018567, R(L=48) = 1.019096, R(L=64) = 1.019382;  R_rich = 1.020239
+    V-a2 log Lh2=12  r = 8: R(L=32) = 1.019339, R(L=48) = 1.019978, R(L=64) = 1.020318;  R_rich = 1.021340
+    V-b const c0     r = 4: R(L=32) = 1.019038, R(L=48) = 1.019038, R(L=64) = 1.019038;  R_rich = 1.019038
+    V-b const c0     r = 6: R(L=32) = 1.019038, R(L=48) = 1.019038, R(L=64) = 1.019038;  R_rich = 1.019038
+    V-b const c0     r = 8: R(L=32) = 1.019038, R(L=48) = 1.019038, R(L=64) = 1.019038;  R_rich = 1.019038
+  [PASS][A] C1 dressed Green kernels G_n(r) computed for n = 16 and n = 15 in every declared variant at every declared grid size by FFT-free deterministic cosine BZ sums; all values finite and positive; R_S2 = G_15/G_16 tabulated per variant per radius with Richardson(1/L) production estimates
+  [PASS][A] C2 the ratio R_S2 is grid-stable (|R(64) - R(48)| < 1e-3 and |R_rich - R(64)| < 2e-3 for every variant and radius — finite-size constants cancel in the ratio), and the constant variant matches its exact algebraic value (1 + 16 c0)/(1 + 15 c0) to < 1e-12 at every grid and radius (the constant dressing factors out of the sum exactly)  (V-b algebraic R = 1.0190379210)
+  [PASS][A] C3 in EVERY declared variant at EVERY radius the per-decimation readout factor is a small perturbative shift, R_S2 = 1 + O(g^2 Pi_1) with |R_S2 - 1| < 0.05: removing one species un-screens the kernel by ~1-2%, not by a factor ~0.1  (V-a1 log Lh2=1 r=8: 1.015913, V-a2 log Lh2=12 r=8: 1.021340, V-b const c0 r=8: 1.019038)
+
+--- Section D [A]: displacement R_S2/alpha_s vs the required per-decoupling factor ---
+    V-a1 log Lh2=1   r = 4: R_rich = 1.012323, R/alpha_s = 9.7995
+    V-a1 log Lh2=1   r = 6: R_rich = 1.014520, R/alpha_s = 9.8207
+    V-a1 log Lh2=1   r = 8: R_rich = 1.015913, R/alpha_s = 9.8342
+    V-a2 log Lh2=12  r = 4: R_rich = 1.018515, R/alpha_s = 9.8594
+    V-a2 log Lh2=12  r = 6: R_rich = 1.020239, R/alpha_s = 9.8761
+    V-a2 log Lh2=12  r = 8: R_rich = 1.021340, R/alpha_s = 9.8868
+    V-b const c0     r = 4: R_rich = 1.019038, R/alpha_s = 9.8645
+    V-b const c0     r = 6: R_rich = 1.019038, R/alpha_s = 9.8645
+    V-b const c0     r = 8: R_rich = 1.019038, R/alpha_s = 9.8645
+  [PASS][A] D1 displacement R_S2/alpha_s computed per variant per radius against the block02 target alpha_s = 0.1033038; in NO variant at NO radius does R_S2 land within a factor 2 of alpha_s  (min displacement = 9.7995, max = 9.8868)
+  [PASS][A] D2 verdict logic (declared up front in the docstring) applied to the computed displacements: 'supplied' fires nowhere, 'bounded observation' fires nowhere — the candidate rule 'alpha_s per decoupling = leading-order (resummed-one-loop) readout dressing' is ELIMINATED AT LEADING ORDER under every declared variant; the inventory's S2 kill criterion fires on its per-threshold-O(1) arm  (displacement ~ 9.80x-9.89x above alpha_s, an order of magnitude)
+
+--- Section E [A]: consistency legs — coupling smoothness and species-count linearity (declared variant V-a1, L = 48) ---
+  [PASS][A] E1 F2 leg (coupling smoothness): R_S2 = 1 EXACTLY at g = 0, decreases monotonically toward 1 as g -> 0, and (R_S2 - 1)/g^2 is stable to within 10% between g^2 = 0.25 and 0.0625 at every radius — the dressing is the leading O(g^2 Pi_1) perturbative shift it is declared to be  (r=4: ratio = 0.9634; r=6: ratio = 0.9593; r=8: ratio = 0.9563)
+  [PASS][A] E2 F3 leg (species-count linearity): at small coupling (g^2 = 0.0625) removing 8 species shifts the readout 8x as much as removing 1 species to within 2.5% at every radius (ratio in [7.8, 8.2]) — the dressing is n-linear at leading order; at g = 1 the resummation bends the ratio mildly upward (in [8, 10]), as the geometric-series form requires  (16->15 vs 16->8: r=4: 8.0474, r=6: 8.0547, r=8: 8.0596; bend(g=1, r=8) = 8.8483)
+
+--- Section F [B]: on-disk scans — the chain this probe dresses, the inventory row it tests, the fences it must carry ---
+  [PASS][B] F1 route-inventory synthesis on disk records the S2 row ('readout-side dressing of the Green-kernel/static-source chain') and its kill criterion ('per-threshold O(1) (or threshold-count-independent) eliminates S2') — the exact criterion this probe executes; downstream rows refine routes without modifying the inventory
+  [PASS][B] F2 block02 reduction note on disk records the target this probe compares against: one factor alpha_s = 0.1033038 per taste decoupling
+  [PASS][B] F3 the landed readout chain is on disk exactly as this probe consumes it: the Maradudin note's G(r) -> 1/(4 pi |r|) asymptotic and its stencil, the I1 bridge's static-source readout V(r) = -C g_bare^2 G(r), and the Plancherel bridge's alpha_bare = 1/(4 pi) composition
+  [PASS][B] F4 the E3 probe note (block04) is on disk: the pattern this probe imitates — declared models, robustness variants, displacement factor vs alpha_s, honest fences — and the saddle-side refutation that makes the readout side the channel under test here
+  [PASS][B] F5 parent-note honesty fences on disk: the note labels the resummed-one-loop form a 'declared model' that is 'not a landed framework object', states the verdict as 'eliminated at leading' (resummed-one-loop) order with the surviving content narrowed to 'non-perturbative' kernel dressing, and 'does not close the DELTA0 gate'; forbidden closure/removal tokens absent  (missing = [], hit = [])
+
+--- Terminal class-D fence: external comparators ---
+  (No PDG quantity is needed or consumed by this probe; the dressed-kernel
+   ratios and the displacement are internal structure only.)
+  [PASS][D] G1 self-scan: the PDG VEV literal appears ZERO times in this runner's source — no comparator consumed anywhere
+
+  RESIDUAL (declared-open): the alpha_s PER-DECOUPLING ATTACHMENT rule (block02 R1) remains UNSUPPLIED.  This probe ELIMINATES AT LEADING (resummed-one-loop) ORDER the route-S2 candidate — per-species vacuum-polarization dressing of the static-source Green-kernel readout — under every declared variant at every radius: R_S2 = 1 + O(g^2 Pi_1), a 1-2% per-threshold shift, displaced ~9.7x-9.9x above alpha_s = 0.1033038.
+  RESIDUAL (declared-open): the surviving content of inventory route S2 NARROWS to genuinely NON-PERTURBATIVE kernel dressing (beyond any resummed-one-loop form): unprobed here, declared-open.  The inventory's S2 row is REFINED (leading-order arm eliminated), NOT removed; the inventory itself is not modified.
+  RESIDUAL (declared-open): the DELTA0 magnitude gate (HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) remains OPEN: the obstruction is sharpened (the leading-order readout-dressing candidate eliminated), not closed.
+
+==============================================================================
+ Breakdown: A=7 B=5 C=6 D=1 RESIDUAL=3
+ TOTAL: PASS=19 FAIL=0
+ VERDICT: established (bounded, declared models): the undressed kernel
+   reproduces the landed Maradudin 1/(4 pi |r|) normalization on the declared
+   grids (F1), and under the declared resummed-one-loop dressing the
+   per-decimation readout factor is R_S2 = 1 + O(g^2 Pi_1) in every variant
+   at every radius — a 1-2% shift, an order of magnitude (~9.7x-9.9x) above
+   the required alpha_s per decoupling.  ELIMINATED AT LEADING ORDER (this
+   route): the alpha_s-per-decoupling attachment rule canNOT be leading-order
+   readout-side vacuum-polarization dressing under any declared variant; the
+   inventory's S2 kill criterion fires on its per-threshold-O(1) arm, and S2
+   narrows to genuinely non-perturbative kernel dressing.  NOT claimed:
+   closure, model-independence, removal of S2, or any licensed-surface
+   reproduction.  DELTA0 stays open; obstruction sharpened, not closed.
+==============================================================================
+
+----- stderr -----
+

@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_delta0_route_inventory_synthesis_2026_06_11.py
+runner_sha256: de687c2b353a7e8cb83b41d83925c27d9ead1bff35b7c51401cb53a5ba741ec3
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.53
+status: ok
+----- stdout -----
+==============================================================================
+ frontier_hierarchy_delta0_route_inventory_synthesis_2026_06_11.py
+ Block07 of the DELTA0 blocking campaign: the route-inventory
+ synthesis — reduced target, five eliminated routes (E1-E5,
+ key numbers recomputed, eliminating runners re-invoked), three
+ surviving routes (S1-S3, declared-open with kill criteria),
+ claim-shape ceiling.  Enumeration, not closure: DELTA0 stays
+ open and no gate status changes.
+ Parent note: docs/HIERARCHY_DELTA0_ATTACHMENT_ROUTE_INVENTORY_
+              SYNTHESIS_NOTE_2026-06-11.md
+==============================================================================
+
+--- Section A [A]/[B]: the REDUCED TARGET — B4 closure == one factor alpha_s per taste decoupling (block02, recomputed) ---
+  [PASS][A] A1 supplied constants recomputed: alpha_s = alpha_bare/u_0^2 = alpha_LM/u_0 = 0.1033038 (two routes agree < 1e-14); block01's bare conversion target N = 1/(8 pi u_0^2) = 0.0516519 = alpha_s/2; alpha_LM = u_0 x alpha_s exactly (determinant supplies the u_0, transport must supply the alpha_s)  (alpha_s = 0.1033038161, N = 0.0516519081)
+  [PASS][A] A2 equivalence chain recomputed: u_0^16 x alpha_s^16 = alpha_bare^16 x u_0^(-16) = alpha_LM^16 — exact u_0-degree bookkeeping (16 - 32 = -16), exact Fraction identity at 4 rational test points, float identity < 1e-12 relative on the B1-licensed values  (u_0^16 alpha_s^16 = 2.085701e-17, alpha_LM^16 = 2.085701e-17, rel = 1.33e-15)
+  [PASS][A] A3 staircase reading recomputed: rung ratio mu_{k+1}/mu_k = alpha_LM, per-rung log interval ln(alpha_LM) = -2.4006 (the YT-P2 retained constant), 16 rungs -> total log-span -38.41; per-rung observable share alpha_s  (ln(alpha_LM) = -2.400553, 16 ln = -38.4088)
+  [PASS][B] A4 reduced target on disk: block02 records B4's open content as exactly ONE unsupplied transport rule ('one dressed two-link gauge coupling per taste threshold') over its declared ratio normalization — reduced, not closed
+
+--- Section B [A]/[B]/[C]: ELIMINATED ROUTES E1-E5 — each key number recomputed ---
+  [PASS][C] E1.a block algebra recomputed from scratch (block01 construction reused verbatim): D real antisymmetric, D^2 = -4 I, det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color at rational test couplings  (exact Fraction arithmetic, u_0 in {2/3, 3/5}, m in {0, 1/3})
+  [PASS][C] E1.b zero induced shift recomputed: in the exact taste eigenbasis Q = T^-1 (u_0 D + m) T is EXACTLY diagonal with entries m +- 2i u_0, so one taste-mode decimation is purely multiplicative (factor m +- 2i u_0, magnitude 2 u_0 at m = 0) and the induced coupling shift B S^-1 C on the kept 15 modes is EXACTLY ZERO  (Gaussian-rational arithmetic; decimated modes {0, 5, 11})
+  [PASS][A] E1.c VERDICT recomputed: the frozen-link quadratic block algebra supplies u_0-degree +1 per mode and ZERO alpha_bare — it cannot supply the conversion target N = alpha_LM/(2 u_0) = 1/(8 pi u_0^2) = 0.0516519; route E1 ELIMINATED as a closure route (block01)  (N = 0.0516519081)
+  [PASS][A] E2 bare relabeling recomputed: identity (S) alpha_LM^16 = alpha_bare^16 x u_0^(-16) holds to < 1e-12 relative — the substitution u_0^16 -> alpha_LM^16 is BOOKKEEPING, not transport (honest-status B4: 'identity (S) is bookkeeping, not transport' on disk); the determinant's own u_0^16 is displaced from alpha_LM^16 by x 5.94e15 (no hierarchy); route E2 ELIMINATED  (identity (S) rel = 7.39e-16, displacement = 5.945e+15)
+  [PASS][B] E3.a block04's recorded saddle values on disk (consumed below as DECLARED inputs of its declared models M1/M2): u*(16)/u*(15) for U(1), SU(2), SU(3) dressed and SU(3) small-u branch, window endpoints and displacements all present in the note
+  [PASS][A] E3.b mean-field feedback recomputed from the declared inputs: R = (u*(15)/u*(16))^(-2) spans [1.0000412422, 1.087382] over every variant/branch — the window does NOT contain alpha_s, minimum displacement R/alpha_s = 9.681 (max 10.526), and neither declared verdict trigger fires; route E3 REFUTED under all declared variants (block04)  (R in [1.0000412421, 1.087381], min R/alpha_s = 9.681)
+  [PASS][A] E4.a per-step 1-loop beta recomputed: b_3(16) = (33 - 32)/3 = 1/3 exactly (AF-marginal at the UV rung); b_3(17) = -1/3 < 0 (AF lost one step beyond the canonical staircase)  (exact Fraction arithmetic)
+  [PASS][A] E4.b Landau crossing recomputed: cumulative 1-loop correction |ln alpha_LM| x sum b_3 / (8 pi^2) = 2.594 EXCEEDS the lattice UV anchor 1/g_s^2(M_Pl) = u_0 = 0.878 — the 1/g^2 trajectory crosses zero, the integration is ill-defined; route E4 ELIMINATED (YT-P2 no-go; blocking-RG / strong-coupling routes explicitly NOT foreclosed by it)  (cumulative = 2.5944 > 1/g^2 = 0.8777)
+  [PASS][A] E5.a dim-trans rewrite recomputed: c_eff = 16 alpha_LM ln(1/alpha_LM) = 3.4824 at full B1 precision (the note's prose 3.4832 is reproduced exactly from its quoted 4-d.p. alpha_LM = 0.0907 — FLAGGED as a rounded-input prose artifact; its runner computes 3.482446... as here); identity alpha_LM^16 = exp(-c_eff/alpha_LM) < 1e-12 relative  (c_eff = 3.4824465579, quoted-input c_eff = 3.483167, identity rel = 4.43e-16)
+  [PASS][A] E5.b coupling dependence recomputed: dc_eff/dalpha = 16 (ln(1/alpha) - 1) = 22.41 != 0 and c_eff shifts under alpha -> 1.1 alpha — c_eff is a FUNCTION of the coupling whose hierarchy is being explained, unlike the canonical coupling-independent dim-trans constants (instanton 8 pi^2 = 78.96, gaugino 8 pi^2/3 = 26.32); route E5 ELIMINATED as a closure route (notation rewrite only)  (dc/dalpha = 22.4088, c_eff(1.1 alpha) = 3.6786)
+
+--- Section C [B]: eliminating runners re-verified (subprocess, exit code + note-stated totals) ---
+  [PASS][B] C1 block01 (E1): 21/0 — frontier_hierarchy_delta0_blocking_single_mode_probe_2026_06_11.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=21\s+FAIL=0], 0.3s)
+  [PASS][B] C2 block02 (reduced target + E2 legs): 19/0 — frontier_hierarchy_delta0_ratio_normalized_alpha_s_reduction_2026_06_11.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=19\s+FAIL=0], 0.3s)
+  [PASS][B] C3 block04 (E3): 20/0 — frontier_hierarchy_delta0_attachment_mean_field_feedback_probe_2026_06_11.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=20\s+FAIL=0], 0.9s)
+  [PASS][B] C4 YT-P2 no-go (E4): 12/0 — frontier_yt_p2_taste_staircase_beta.py still passes with its note-stated total  (exit = 0, total line matched [RESULT:\s*12 PASS, 0 FAIL], 0.3s)
+  [PASS][B] C5 dim-trans (E5): 10/0 — frontier_hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence.py still passes with its note-stated total  (exit = 0, total line matched [TOTAL:\s*PASS=10\s+FAIL=0], 0.6s)
+
+--- Section D [A]/[B]: SURVIVING ROUTES S1-S3 — known constraints recomputed; routes printed as residuals ---
+  [PASS][A] D1 NJL leading-order constraint recomputed: G_eff = 1/(2 N_c) = 1/6 = 0.16667 < G_critical = u_0^2/4 = 0.192581 (0.19255 at the note's 4-d.p. u_0 = 0.8776), ratio 0.8654 -> SYMMETRIC phase at leading order; sigma_min^2 = 16 G_eff - 4 u_0^2 = -0.4146 < 0 (no broken-phase saddle).  FLAGGED deviation: the NJL note's prose quotes sigma_min^2 ~= -0.4561, ~10% from the recomputed -0.4141 at its own u_0 — the SIGN, hence the symmetric-phase verdict, is unchanged; recomputation governs here  (G_eff = 0.166667, G_crit = 0.192581, ratio = 0.8654, sigma_min^2 = -0.4146 (note-input -0.4141))
+  [PASS][B] D2 NJL scope on disk: the symmetric-phase verdict is LEADING-order with a named O(1) sub-leading admission and an EW-sector escape — so S1 survives ONLY at beyond-leading order (sub-leading G_eff corrections flipping G_eff > G_critical) or with electroweak-sector structure added; S3's lattice-gauge-only version inherits the same constraint (no gap-equation spectrum exists at leading order)
+  [PASS][B] D3 route enumeration matches block04's remaining-routes list on disk: S1 = its route 5.1 (Kawamoto-Smit lineage one-link Haar at strong coupling), S2 = its route 5.2 (vacuum-polarization dressing of the Green-kernel readout), S3 = its route 5.3 (non-link transport rule) — the inventory adds NO new route and drops none
+  RESIDUAL (declared-open): S1 strong-coupling one-link Haar / Kawamoto-Smit lineage: a closing source must integrate links EXACTLY (not at a saddle) over the decimated-mode fermion bilinear source and land one factor alpha_s = 0.1033038 per taste threshold.  Already constrained: the landed NJL row puts the leading strong-coupling order in the SYMMETRIC phase (G_eff = 1/6 < G_critical = u_0^2/4 = 0.192581), so S1 survives only at beyond-leading order or with EW-sector structure added.  KILL criterion: an exact one-link computation whose per-decoupling factor is O(1)-displaced from alpha_s under every declared variant (the E3 pattern) eliminates it.
+  RESIDUAL (declared-open): S2 readout-side dressing of the Green-kernel/static-source chain: a closing source must supply a per-taste-threshold vacuum-polarization dressing of the 1/(4 pi) SUPPLIER (the Plancherel-bridge kernel G(r) -> 1/(4 pi |r|) under V(r) = -C g^2 G(r)), NOT of the saddle u — delivering one factor alpha_s per threshold on the readout side.  Already constrained: the chain supplies the static VALUE only; no per-threshold rule exists.  KILL criterion: a computed kernel dressing that is per-threshold O(1) (or threshold-count-independent) eliminates it.
+  RESIDUAL (declared-open): S3 direct non-link transport rule (threshold mass generation): a closing source must produce the rung ratio mu_{k+1}/mu_k = alpha_LM from a gap-equation mass spectrum at successive taste decouplings.  Already constrained: the NJL symmetric-phase result forecloses the lattice-gauge-only version at leading order (sigma_min^2 = 16 G_eff - 4 u_0^2 < 0: no spectrum to transport); an EW-sector-driven version is open.  KILL criterion: a gap-equation spectrum computed on the declared surface whose successive-threshold ratios are O(1)-displaced from alpha_LM eliminates it.
+
+--- Section E [B]: CLAIM-SHAPE CEILING — what even a closed B4 could claim ---
+  [PASS][B] E.1 regulator-dependence no-go on disk: the exponent-16 identification is regulator-DEPENDENT with the closure routes O1-O3 enumerated exhaustively — any B4 closure inherits a SUBSTRATE-IMPOSED exponent, never a regulator-independent one
+  [PASS][B] E.2 scale-reference anti-promotion policy on disk: the single dimensionful reference a^{-1} = M_Pl carries zero dimensionless content and a row 'should not become retained_bounded merely for using a ruler' — so the lane's honest ceiling, even after a B4 closure, is retained_bounded over {axioms + approved primitives + declared conventions}
+
+--- Section F [B]/[D]: non-modification + terminal class-D fence ---
+  [PASS][B] F1 the DELTA0 gate is UNCHANGED on disk: claim type open_gate, the 2026-06-11 sharpening record present, gate recorded 'still open' — this synthesis closes nothing and changes no gate status
+  [PASS][B] F2 parent synthesis note carries the required disclaimers: independent-audit status authority, source-note proposal, bounded_theorem scope fence, what-this-note-does-NOT-claim, non-modification + downstream-refinement rule  (missing = [])
+  [PASS][D] F3 self-scan: the PDG VEV literal appears ZERO times in this runner's source — no comparator consumed anywhere
+
+==============================================================================
+ Breakdown: A=11 B=13 C=2 D=1 RESIDUAL=3
+ TOTAL: PASS=27 FAIL=0
+ VERDICT: established (bounded): over the declared ratio
+   normalization B4 closure is exactly one landed transport rule
+   away — one factor alpha_s = alpha_bare/u_0^2 = 0.1033038 per
+   taste decoupling (u_0^16 alpha_s^16 = alpha_LM^16 exactly) —
+   and five routes to that rule are ELIMINATED on their cited
+   surfaces (E1 frozen-link block algebra, E2 bare relabeling,
+   E3 mean-field link feedback, E4 per-step 1-loop beta, E5
+   coupling-independent-c dim-trans rewrite), with all five
+   eliminating runners re-verified.  NOT established: any
+   surviving route (S1 strong-coupling one-link Haar — leading
+   order already symmetric-phase-constrained by the NJL row; S2
+   Green-kernel readout dressing; S3 direct non-link transport)
+   — all three are declared-open residuals with kill criteria.
+   Ceiling: any closure is retained_bounded over {axioms +
+   approved primitives + declared conventions} with a substrate-
+   imposed exponent (O1-O3), never regulator-independent.
+   DELTA0 stays open; this synthesis fixes the decomposition and
+   closes nothing.
+
+----- stderr -----
+

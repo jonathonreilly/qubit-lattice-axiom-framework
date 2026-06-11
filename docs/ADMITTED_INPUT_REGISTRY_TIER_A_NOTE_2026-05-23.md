@@ -59,7 +59,8 @@ Notes:
   (`theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`);
   (P2, positive-real mass orientation) K/CPT-invariant multiplicative
   determinant characters are phase-free
-  (`tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`)
+  (`theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10`,
+  a standalone lemma with no AC_φλ gate dependency)
   composed with the determinant-readout bridge (the bridge showing the
   physical `arg det(M_u M_d)` datum is exhausted by the determinant-class
   registrable readout). Retirement gates: independent audits of the two

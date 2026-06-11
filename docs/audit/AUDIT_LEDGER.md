@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1429 |
+| unaudited | 1428 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 26 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1261 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 53 |
-| `audited_failed` | 26 |
+| `audited_failed` | 27 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1745 |
+| `unaudited` | 1744 |
 
 | claim_type | count |
 |---|---:|
@@ -1475,6 +1475,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -2234,6 +2235,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Near k=0, E_k ~ |k|^2, so I_d(L) has the continuum scaling proxy integral_{1/L}^1 r^{d-3} dr, giving linear/log divergences for d=1,2 and finite behavior for d>=3.  _(class `A`)_
 - **chain closes:** True — The small-k expansion 2(1-cos k_mu) ~ k_mu^2 and the radial integral test give the stated threshold. The finite table entries are actually computed by the runner and independently match the displayed values; no Ward normalization, no-SSB theorem, D9 kernel authority, or substrate-minimality conclusion is imported.
 - **rationale:** The narrowed claim is a mathematical IR-sum scaling statement from the displayed lattice dispersion and standard integral comparison, not an external Coleman-Mermin-Wagner theorem. The runner source enumerates the lattice sums rather than printing constants, and its E0-E3 checks all pass. The formula inventory check finds the displayed small-k scaling, radial exponent, divergence classes, and quantitative table entries consistent with the note's definitions. The explicit non-claims prevent the earlier Ward/SSB/D9/substrate-minimality gaps from being load-bearing here.
+- **auditor confidence:** high
+
+### `axiom_first_cpt_theorem_stretch_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fermion-sector CPT identities (CPT1)-(CPT5) for the admitted pure staggered Dirac carrier, with the SU(3) Wilson-plaquette lift deferred and not audited as closed.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-133023-0a76583196-axiom_first_cpt_theorem_stre`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The asserted fermion-sector operator identity Theta_CPT M Theta_CPT^{-1} = M^* for the admitted pure staggered Dirac operator.  _(class `A`)_
+- **chain closes:** False — The displayed algebra does not close the stated target: the note's composition line ends at M-dagger, not M^*, and gamma5/epsilon-Hermiticity does not by itself imply the target identity. The runner's canonical L=2 periodic blocks are degenerate because forward and backward staggered hops coincide and cancel, so the tested matrix is just m I; the missing step is a non-degenerate proof or computation of the stated CPT covariance for the actual KS hopping operator.
+- **rationale:** The runner does perform finite matrix checks, but the passing canonical cases are not load-bearing: on a 2^3 periodic staggered block, M_KS cancels identically and det(M)=m^8, matching the printed values. Independent inspection of the formulas shows the source proof also conflates the target M^* identity with an M-dagger expression. Thus the in-block theorem is not established even before considering the deferred gauge-sector lift or the open staggered-realization gate.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1423 |
+| Applied audit verdicts | 1424 |
 | Retained-grade rows, including boxed decorations | 1289 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 820 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1420 |
+| Unaudited rows | 1419 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 33 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1422 |
-| Ready rows | 33 |
+| Total pending rows | 1421 |
+| Ready rows | 32 |
 | Cycle-break targets | 0 |
 | Critical pending | 282 |
 | High pending | 282 |
-| Medium pending | 417 |
+| Medium pending | 416 |
 | Leaf pending | 441 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md) - medium; unaudited
 - [`quark_bicac_endpoint_obstruction_theorem_note_2026-04-19`](../../docs/QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`quark_bimodule_norm_naturality_theorem_note_2026-04-19`](../../docs/QUARK_BIMODULE_NORM_NATURALITY_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`koide_real_rep_block_count_permitted_not_forced_note_2026-05-30`](../../docs/KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md) - medium; unaudited
 - [`fifth_family_complex_note`](../../docs/FIFTH_FAMILY_COMPLEX_NOTE.md) - medium; unaudited
 - [`d3_upper_bound_import_scope_gate_note_2026-06-06`](../../docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md) - medium; unaudited
+- [`quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3298 |
 | Critical nodes | 509 |
-| High nodes | 502 |
-| Medium nodes | 882 |
+| High nodes | 501 |
+| Medium nodes | 883 |
 | Leaf nodes | 1405 |
 
 Top load-bearing rows by graph score:

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1420 |
+| unaudited | 1419 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 33 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1262 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 53 |
-| `audited_failed` | 27 |
+| `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1736 |
+| `unaudited` | 1735 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 501 |
-| `high` | 496 |
-| `medium` | 848 |
+| `high` | 495 |
+| `medium` | 849 |
 | `leaf` | 1316 |
 
 - **Retained pending chain closure:** 16
@@ -1495,6 +1495,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -11636,6 +11637,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Embedded operators supported on distinct tensor factors commute because each acts as the identity on the other's factor, so O_x O_y = O_y O_x.  _(class `A`)_
 - **chain closes:** True — The conclusions follow directly from the stipulated tensor-product Hilbert space and disjoint-factor embeddings. No upstream physical bridge, numerical comparator, or dynamical authority is needed for L1-L3.
 - **rationale:** The load-bearing step is a standard algebraic identity over tensor-product operators with disjoint support. The source note explicitly rescopes away the prior physical per-site realization clause, Lieb-Robinson time evolution, continuum microcausality, and fermionic graded tensor-product claims. The provided runner genuinely constructs symbolic and Pauli tensor-product operators and checks the claimed commutators and factorization, with no hard-coded numerical target or external comparator. The ledger visibility check is non-load-bearing and does not affect closure.
+- **auditor confidence:** high
+
+### `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`
+
+- **Note:** [`LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded finite-range-to-Crank-Nicolson bridge asserting that the global Cayley step of a finite-range Hamiltonian has a quasilocal effective generator with W_CN,mu <= (2/a_tau) artanh((a_tau/2) W exp(mu R)) and the stated LR envelope.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-135747-e9f6bdfbb4-light_cone_crank_nicolson_li`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For x_mu := (a_tau/2) W_mu(H) < 1, the odd arctan series and weighted convolution inequality give W_mu(H_CN) <= (2/a_tau) sum_{n>=0} x_mu^(2n+1)/(2n+1) <= (2/a_tau) artanh(x_mu).  _(class `A`)_
+- **chain closes:** False — The key weighted convolution step is not valid for powers of the global Hamiltonian: products of disjoint local terms create disconnected supports whose diameter includes arbitrary separation, so W_mu(H^n) is not bounded by W_mu(H)^n in the stated support-diameter norm. A commuting onsite Hamiltonian H=sum_x Z_x already makes H_CN=(2/a_tau) arctan(a_tau H/2) contain nonlocal multi-site terms, contradicting the claimed uniform quasilocal overlap bound.
+- **rationale:** The proof's central algebraic closure fails before the cited LR theorem can be applied to H_CN. The runner confirms Cayley unitarity, small-step convergence, and loose finite-volume commutator inequalities on toy matrices, but it does not construct or verify a valid support-family decomposition of H_CN and effectively reuses the contested W_CN formula. The cited retained_bounded LR authority is not the blocker; the missing and in fact false step is the claimed submultiplicative weighted-overlap control for analytic functions of the extensive Hamiltonian.
 - **auditor confidence:** high
 
 ### `linear_response_derivation_note`

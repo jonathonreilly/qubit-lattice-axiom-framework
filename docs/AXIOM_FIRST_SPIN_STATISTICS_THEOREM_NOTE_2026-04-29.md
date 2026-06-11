@@ -54,17 +54,31 @@ owned by the 2026-06-10 GL(F) conditional discriminator note.
     computes the CCR defect and the exclusion certificate, and its
     falsification leg computes that the hard-core frame is NOT excluded by
     this note's hypothesis.
+- **2026-06-10.** Verdict-responsive repair (audited_conditional,
+  missing_bridge_theorem): the finite/dim-2 per-site physical-space
+  hypothesis is now explicitly carried by the Quantum axiom's
+  one-qubit-per-site clause (`k(x) = 1`, ratified 2026-05-22) composed
+  with (C1) of the retained_bounded single-module row; the superseded
+  2026-04-11 axiom cite is replaced by the current registered premise
+  (`MINIMAL_AXIOMS_2026-06-05.md`). The Cl(3) authority's license is
+  clarified as abstract-classification-only.
 - **2026-05-03.** Upstream cl3 repair acknowledged; the dim-2 per-site readout
   is chirality-independent (U2/U4 of the cl3 note).
 - **2026-04-29.** Original version (claimed forcing; superseded).
 
 ## 1. Setting
 
-The note refers to the older 2026-04-11 axiom-first lane surface of
-[`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md):
+The note was written on the older 2026-04-11 axiom-first lane surface;
+the objects it consumes persist verbatim on the current registered axiom
+surface [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+(the stable `minimal_axioms` premise node; the superseded
+`MINIMAL_AXIOMS_2026-04-11.md` is a historical pointer only):
 
-- **Quantum/local algebra input.** `Cl(3)` at each lattice site.
-- **Finite Lattice block.** A finite block `Λ ⊂ Z^3` (used only via finiteness).
+- **Quantum/local algebra input.** One qubit at each lattice site —
+  `A_x ≅ M_2(ℂ)`, equivalently `Cl(3,0)` (the Quantum axiom), with the
+  per-site multiplicity `k(x) = 1` clause ratified 2026-05-22.
+- **Finite Lattice block.** A finite block `Λ ⊂ Z^3` (the Lattice axiom;
+  used only via finiteness).
 - **Declared Grassmann frame.** The finite local Grassmann partition with
   quadratic action
 
@@ -147,7 +161,13 @@ suppose `[a, a^†] = I`. The trace is linear and cyclic, so
 contradiction. Hence (6) forces an infinite-dimensional per-site space.
 The cited per-site readout (§4) gives a finite (dim-2) Cl(3) module per
 staggered site — both chirality irreps `ρ_±(γ_i) = ±σ_i` have complex
-dimension 2, and the dimensional conclusion is chirality-independent.
+dimension 2, and the dimensional conclusion is chirality-independent. The
+substep-1 per-site **physical** space is this finite module by the Quantum
+axiom's one-qubit-per-site content (per-site multiplicity `k(x) = 1`,
+ratified into the axiom surface 2026-05-22; axiom premise nodes
+chain-satisfy without bounding) composed with (C1) of the single-module
+row (`k = 1 ⇒ dim_C H_x = 2`, retained_bounded) — the explicit one-hop
+authority for the finite/dim-2 hypothesis this exclusion needs.
 Therefore the CCR realization of (1) cannot live on the substep-1 surface:
 the free boson is excluded. ∎
 
@@ -185,10 +205,13 @@ obstruction is at the operator/Hilbert-space level, not Gaussian convergence.
 - [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
   — **License used here:** only the U2/U4
   dimensional readout — a faithful complex Cl(3) spinor irrep has dimension
-  exactly `2`, in both chirality summands, so the per-site matter space is a
-  finite (dim-2) module. The runner independently recomputes the Clifford
-  relations and dimension for both `ρ_±`. No uniqueness-of-quantisation
-  content is consumed.
+  exactly `2`, in both chirality summands. This is the **abstract**
+  classification; the identification of the substep-1 per-site **physical**
+  space with that finite (dim-2) module is supplied separately by the
+  Quantum axiom ∘ (C1) composition below, not by this authority (whose
+  scope excludes the physical per-site readout). The runner independently
+  recomputes the Clifford relations and dimension for both `ρ_±`. No
+  uniqueness-of-quantisation content is consumed.
 - [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md)
   — **License used here:** the three-candidate
   classification (its (A)–(D)) that corrects old Fact 2.3, and the tie facts
@@ -196,11 +219,21 @@ obstruction is at the operator/Hilbert-space level, not Gaussian convergence.
   it: the exclusion here is exactly the dimensional half branch
   the no-go itself acknowledges (its §1, free-boson exclusion), and the
   forcing reading the no-go defeats is withdrawn here.
-- [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) — lane
-  baseline. **License used here:** the local-algebra, finite-lattice-block,
-  and declared-Grassmann-frame objects of §1 only; the Grassmann choice is
-  consumed as a declared frame hypothesis for
-  (S1)/(S3)/(S4), not as a derived fact.
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — current
+  registered axiom surface (chain-satisfying premise node; replaces the
+  superseded 2026-04-11 lane cite). **License used here:** the
+  local-algebra (Quantum axiom, one qubit per site with `k(x) = 1`) and
+  finite-lattice-block (Lattice axiom) objects of §1, and the physical
+  per-site carrier consumed by (S2′); the Grassmann choice remains a
+  declared frame hypothesis for (S1)/(S3)/(S4), not a derived fact and not
+  axiom content.
+- [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
+  — retained_bounded. **License used here:** conditional sub-claim (C1)
+  (`k = 1 ⇒ dim_C H_x = 2`) only, with its conditional premise `k = 1`
+  supplied by the Quantum axiom's ratified per-site clause; together these
+  are the explicit one-hop authority for the substep-1 per-site physical
+  Hilbert space being finite/dim-2 (the repair target named by the
+  2026-06 audit).
 
 **Scope-boundary pointer (non-load-bearing, plain text):** the residual
 hard-core-vs-CAR selection is the `GL(F)` predicate per
@@ -290,7 +323,8 @@ claim_scope: "Re-scoped 2026-06-10: under the explicit canonical-CCR hypothesis 
 upstream_dependencies:
   - axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29
   - staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25
-  - minimal_axioms_2026-04-11
+  - staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17
+  - minimal_axioms
 admitted_context_inputs:
   - finite-dimensional linear algebra / tensor products (standard)
   - Jordan-Wigner construction (standard methodology, recomputed by the runner)

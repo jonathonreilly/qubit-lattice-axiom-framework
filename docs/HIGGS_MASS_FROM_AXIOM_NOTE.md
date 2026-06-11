@@ -101,6 +101,25 @@ The arithmetic of the prior note was verified correct and is kept:
 cancellation, and the 2026-05-10 demotion (`m_H_tree -> m_curv_tree`,
 no Higgs-pole claim) is preserved unchanged.
 
+**Seventh defect (2026-06-11 follow-up, audit-caught).** The
+2026-06-11 audit failed this row on a normalization error in the Step
+5(c) susceptibility cross-check as restructured above: the displayed
+text wrote the FULL per-site susceptibility as `chi = N_c/(4 u_0²)` —
+omitting the `N_taste` factor — and then divided by `N_c · N_taste`,
+double-dividing by `N_taste`; the resulting per-channel value
+`1/(4 u_0² N_taste)` would NOT have reproduced formula [6]. Fix: the
+full susceptibility of the color-stacked generating function
+`W(m) = N_c · log det(u_0 D + m)` is
+
+    W''(0) = N_c · N_taste / (4 u_0²),
+
+and the per-color per-channel value is `W''(0)/(N_c · N_taste)
+= 1/(4 u_0²)`, equal to the Step-4 per-channel curvature magnitude [4]
+(W = −N_c · V_taste, so this is the same algebra). Step 5(c) is
+corrected accordingly and the runner adds the C10 assertion pair
+computing `W''(0)` from the determinant chain by finite difference and
+checking both the full and per-color per-channel values.
+
 ## What this note is and is NOT (2026-05-10 demotion, retained)
 
 **This note derives** a per-channel symmetric-point curvature scale of
@@ -461,14 +480,29 @@ does not — V_taste alone has no interior minimum, per Step 3);
 V_taste's logarithmic m⁴ and higher coefficients are non-zero and
 contribute to the broken-phase curvature).
 
-**(c) Susceptibility consistency cross-check (not independent).** The
-scalar susceptibility chi = d²W/dJ² counts the response of all internal
-DOF. The full per-site susceptibility is chi = N_c/(4 u_0²); the
-per-channel chi_curv = chi/(N_c · N_taste) = 1/(4 u_0² N_taste). The
-v-rescaled per-channel curvature reproduces formula [6]. This is a
-consistency check that reduces to the same algebra, not an independent
-derivation; the theorem content remains T1, and the readout remains
-definition D1.
+**(c) Susceptibility consistency cross-check (not independent;
+normalization corrected 2026-06-11).** The scalar susceptibility
+counts the mass-shift response of ALL internal DOF — `N_c` colors ×
+`N_taste` channels. From the color-stacked generating function
+`W(m) = N_c · log det(u_0 D + m) = −N_c · V_taste(m)`, the full
+per-site susceptibility is
+
+    W''(0) = N_c · N_taste / (4 u_0²),
+
+and the per-color per-channel value is
+
+    W''(0) / (N_c · N_taste) = 1 / (4 u_0²),
+
+which equals the per-channel curvature magnitude [4] exactly and, after
+the D1 v-rescaling, reproduces formula [6]. (The pre-2026-06-11 text
+wrote the full susceptibility as `N_c/(4 u_0²)` — omitting `N_taste` —
+and then divided by `N_c · N_taste`, double-dividing by `N_taste`; the
+displayed per-channel value `1/(4 u_0² N_taste)` would not have
+reproduced [6]. The runner now asserts the corrected chain at C10,
+computing `W''(0)` from the determinant by finite difference.) This is
+a consistency check that reduces to the same algebra (`W = −N_c ·
+V_taste`), not an independent derivation; the theorem content remains
+T1, and the readout remains definition D1.
 
 > **Note (2026-05-07 cleanup, kept).** A duplicate of paragraph (c)
 > appeared in pre-2026-05-03 drafts with the stale phrasing that "the
@@ -670,6 +704,6 @@ Expected result (deterministic, pure Python stdlib, runtime under one
 second):
 
 ```text
-Breakdown: A=6 B=9 C=12 D=2
-TOTAL: PASS=29 FAIL=0
+Breakdown: A=6 B=9 C=14 D=2
+TOTAL: PASS=31 FAIL=0
 ```

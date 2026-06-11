@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1442 |
+| Applied audit verdicts | 1443 |
 | Retained-grade rows, including boxed decorations | 1306 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 835 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1428 |
+| Unaudited rows | 1427 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 37 |
+| Audited conditional rows | 38 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1431 |
-| Ready rows | 41 |
+| Total pending rows | 1430 |
+| Ready rows | 40 |
 | Cycle-break targets | 0 |
-| Critical pending | 287 |
+| Critical pending | 286 |
 | High pending | 291 |
 | Medium pending | 425 |
 | Leaf pending | 428 |
 
 Next ready rows by queue order:
 
-- [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 - [`yt_p1_i_s_lattice_pt_citation_note_2026-04-17`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) - critical; unaudited
 - [`higgs_mass_from_axiom_note`](../../docs/HIGGS_MASS_FROM_AXIOM_NOTE.md) - critical; unaudited
 - [`pmns_twisted_flux_transfer_holonomy_boundary_note`](../../docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`koide_full_lattice_schur_inheritance_note_2026-04-18`](../../docs/KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18.md) - critical; unaudited
 - [`gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`](../../docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - critical; unaudited
+- [`hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -61,15 +61,15 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 163 |
+| critical | `unaudited` | 162 |
 | high | `unaudited` | 160 |
 | medium | `unaudited` | 95 |
 | critical | `open_gate` | 3 |
+| critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audited_conditional` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |

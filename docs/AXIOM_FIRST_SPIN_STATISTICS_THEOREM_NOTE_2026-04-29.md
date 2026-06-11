@@ -1,6 +1,7 @@
 # Axiom-First Spin-Statistics Note — Re-scoped to the Free-Boson (CCR) Exclusion on the Substep-1 Surface
 
-**Date:** 2026-04-29 (original); 2026-05-03 (upstream repair); 2026-06-10 (re-scope)
+**Date:** 2026-04-29 (original); 2026-05-03 (upstream repair);
+2026-06-10 (re-scope); 2026-06-11 (source-packet dependency certificate)
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Claim scope:** free-boson/CCR exclusion under an explicit CCR hypothesis,
@@ -13,6 +14,10 @@ pipeline after independent review.
 **Source-note proposal disclaimer:** this note is a source-note proposal;
 audit verdict and downstream status are set only by the independent audit lane.
 **Primary runner:** [`scripts/axiom_first_spin_statistics_check.py`](../scripts/axiom_first_spin_statistics_check.py)
+**Cached output:** [`logs/runner-cache/axiom_first_spin_statistics_check.txt`](../logs/runner-cache/axiom_first_spin_statistics_check.txt)
+**Source-packet verifier:** [`scripts/axiom_first_spin_statistics_source_packet_certificate_2026_06_11.py`](../scripts/axiom_first_spin_statistics_source_packet_certificate_2026_06_11.py)
+with cached output
+[`logs/runner-cache/axiom_first_spin_statistics_source_packet_certificate_2026_06_11.txt`](../logs/runner-cache/axiom_first_spin_statistics_source_packet_certificate_2026_06_11.txt).
 **Authority role:** S2-support tier for the substep-1 statistics question:
 under the canonical CCR hypothesis (eq. (6) below), the bosonic (free-boson)
 realization is excluded on the substep-1 surface, because the CCR has no
@@ -63,6 +68,11 @@ owned by the 2026-06-10 GL(F) conditional discriminator note.
   2026-04-11 axiom cite is replaced by the current registered premise
   (`MINIMAL_AXIOMS_2026-06-05.md`). The Cl(3) authority's license is
   clarified as abstract-classification-only.
+- **2026-06-11.** Source-packet dependency certificate added. The theorem
+  statement is unchanged; the companion runner verifies that the current
+  registered axiom surface, the single-module `k = 1 => dim_C H_x = 2`
+  authority, and the primary runner cache are all wired as the direct packet
+  needed for re-audit.
 - **2026-05-03.** Upstream cl3 repair acknowledged; the dim-2 per-site readout
   is chirality-independent (U2/U4 of the cl3 note).
 - **2026-04-29.** Original version (claimed forcing; superseded).
@@ -149,6 +159,17 @@ in a state where both sides are individually non-zero (runner [S4]).
 is *forced* by the baseline; that the Grassmann Fock space is the *only*
 finite-dimensional alternative; any lattice "spin-statistics theorem" reading
 under which downstream lanes may treat fermionic statistics as derived.
+
+## 2.1 2026-06-11 Source-Packet Dependency Certificate
+
+The source-packet verifier
+[`axiom_first_spin_statistics_source_packet_certificate_2026_06_11.py`](../scripts/axiom_first_spin_statistics_source_packet_certificate_2026_06_11.py)
+does not apply an audit verdict. It verifies that the re-scoped packet uses the
+current registered axiom surface, that the single-module `k = 1 => dim_C H_x =
+2` authority is linked as the explicit finite/dim-2 bridge, that the
+superseded 2026-04-11 axiom file is historical only rather than a markdown
+dependency, that the primary runner cache is SHA-pinned and passing, and that
+the hard-core/CAR selection remains out of scope.
 
 ## 3. Proof
 

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 285,
+    "critical": 284,
     "high": 291,
     "leaf": 428,
     "medium": 425
@@ -10,31 +10,28 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "higgs_mass_from_axiom_note",
-      "claim_scope": "T1 exact staggered minimal-block mean-field determinant, curvature, and N_c cancellation over declared B3/B4, with D1 as a diagnostic definition and C1 as arithmetic over declared B1/B2.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "plaquette_self_consistency_note",
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-        "yt_ew_color_projection_theorem"
+        "higgs_mass_from_axiom_note"
       ],
-      "direct_in_degree": 33,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 25.869,
-      "note_path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
-      "queue_reason": "audit_in_progress",
+      "direct_in_degree": 7,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 12.79,
+      "note_path": "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
-      "transitive_descendants": 660
+      "runner_path": "scripts/frontier_higgs_channel_effective_ntaste_boundary.py",
+      "transitive_descendants": 625
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -143,6 +140,30 @@
       "ready": true,
       "runner_path": "scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py",
       "transitive_descendants": 278
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "higgs_mass_from_axiom_note"
+      ],
+      "direct_in_degree": 6,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 11.077,
+      "note_path": "docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_higgs_mass_status_audit.py",
+      "transitive_descendants": 269
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2203,31 +2224,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_phase_removal.py",
       "transitive_descendants": 626
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-        "higgs_mass_from_axiom_note"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.79,
-      "note_path": "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_higgs_channel_effective_ntaste_boundary.py",
-      "transitive_descendants": 625
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6685,30 +6681,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_rh_sector_anomaly_cancellation_identities.py",
       "transitive_descendants": 272
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "higgs_mass_from_axiom_note"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.077,
-      "note_path": "docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_higgs_mass_status_audit.py",
-      "transitive_descendants": 269
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -17477,6 +17449,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+        "higgs_mass_from_axiom_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.585,
+      "note_path": "docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_wilson_corrected_v_taste_tree_level.py",
+      "transitive_descendants": 23
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -23585,31 +23582,6 @@
       "ready": false,
       "runner_path": "scripts/audit_companion_multifactor_cannot_cleanly_give_koide_multiplicity_exact.py",
       "transitive_descendants": 24
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-        "higgs_mass_from_axiom_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.585,
-      "note_path": "docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_wilson_corrected_v_taste_tree_level.py",
-      "transitive_descendants": 23
     },
     {
       "audit_independence_required": "any_non_self",
@@ -43028,6 +43000,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 39,
-  "total_pending": 1429
+  "ready_count": 41,
+  "total_pending": 1428
 }

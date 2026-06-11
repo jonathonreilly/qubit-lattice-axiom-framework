@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 835 |
+| **retained_bounded** | 836 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1425 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1279 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1280 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `higgs_mass_from_axiom_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -657,6 +655,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9203,6 +9202,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Spatial APBC is not selected by exponent counting; it is selected by the existence of a finite intensive 3+1 order-parameter limit on the minimal hierarchy block, while the exact local observable depends on u0 only through m/u0.  _(class `C`)_
 - **chain closes:** True — Within the bounded minimal-block scope, the determinant formulas, coefficient asymptotics, and u0 homogeneity follow from the explicit finite Dirac operator and exact formulas checked by the runner. The note explicitly excludes the broader physical electroweak order-parameter selection theorem from the closed claim.
 - **rationale:** The runner constructs the minimal L_s=2 Dirac matrix, compares direct determinants against the stated closed formulas for both spatial BCs, verifies the BC-independent zero-mass u0 power, and checks the exact homogeneity and small-m coefficient consequences with zero failures. The source note does not overclaim the full hierarchy theorem: it confines closure to the spatial-BC and u0-scaling objections and explicitly leaves the physical intensive order-parameter selection as open. Residual risk is limited to not treating this bounded theorem as the missing physical bridge.
+- **auditor confidence:** high
+
+### `higgs_mass_from_axiom_note`
+
+- **Note:** [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](../../docs/HIGGS_MASS_FROM_AXIOM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-231447-f273adc5ea-higgs_mass_from_axiom_note`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the declared B3/B4 minimal-block mean-field surface, the per-color staggered operator satisfies D^2 = -4 u_0^2 I, hence det(D + m) = (m^2 + 4 u_0^2)^8 and V_taste''(0) = -N_taste/(4 u_0^2), giving per-channel magnitude 1/(4 u_0^2).  _(class `C`)_
+- **chain closes:** True — The independent algebra closes: on an L=2 all-direction APBC staggered block, each eta-phase difference direction squares to -I and the directions anticommute, so D^2 = -4 u_0^2 I, forcing the stated spectrum, determinant, and curvature. The 140.3 GeV readout follows only after the explicit D1 definition and declared B1/B2 inputs, not as an observable Higgs-pole derivation.
+- **rationale:** The runner source genuinely constructs the 16-site staggered operator, Clifford checks, exact characteristic polynomial, exact determinant tests, color block factorization, and curvature checks; it is not merely printing expected constants. The only hard-coded helper value is the plaquette boundary number used for C1, while T1 itself is computed symbolically or by exact finite arithmetic on the declared surface. The cited authorities are retained-grade in the restricted packet, and the PDG quantities are quarantined as class-D comparators with no PASS depending on agreement. The clean verdict is therefore limited to the bounded theorem/diagnostic scope, with D1 remaining a definition and not a Higgs-mass-pole identification.
 - **auditor confidence:** high
 
 ### `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06`

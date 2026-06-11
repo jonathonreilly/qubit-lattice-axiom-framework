@@ -161,3 +161,34 @@ Recorded explicitly approved primitive:
     evolution remains derived, and only the one graining ratio `c_t/c_s` is
     fixed. It supplies no dynamics, no fourth spatial dimension, and no
     dimensionless observable.
+
+Recorded Tier-A registry refinement (admissions remain Tier-A; nothing is
+promoted to axiom or primitive class):
+
+- **2026-06-11 -- Tier-A minimum-statement refinement.** The two admitted
+  derivation targets (`AC_phi_lambda`, `theta`) are restated at their
+  sharpest landed decomposition in
+  `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` (minimum-statement
+  section) and `docs/audit/data/tier_a_admissions.json`:
+  `AC_phi_lambda` = the doublet reading/occupancy selection + the R-eta delta
+  readout identification + the species bridge; `theta` = the gauge-side
+  winding account + the mass-side orientation localized onto the
+  determinant-readout bridge, with the mass-side K-real structure identified
+  as the same `C_3` object as the `AC_phi_lambda` reading selection.
+  - **Why it is admissible.** A restatement-to-minimum is governance hygiene:
+    it removes derived/conditional content from the admission statements so
+    elimination campaigns target the true residual atoms. No admission is
+    added, removed, adopted, or re-graded; the genuine admitted-input count
+    stays at two; dependents continue to chain-satisfy only at
+    `retained_bounded`.
+  - **No laundering.** The named premise candidates for the reading
+    selection (orbit-occupancy; the R-D durability bridge) remain
+    **unadopted** proposals: the reading selection is and stays Tier-A
+    admitted content. It is a selector for dimensionless physics content
+    and is therefore **not** primitive-eligible under the kinetic-isotropy
+    admissibility boundary above; this entry exists precisely to record that
+    classification decision.
+  - **Scope.** Effective statuses are unchanged and remain audit-lane-only.
+    The `no_go_portfolio` lists are unchanged (verified rows only); the new
+    `sharpening_sources` fields list landed source notes whose audit status
+    is set only by the audit lane.

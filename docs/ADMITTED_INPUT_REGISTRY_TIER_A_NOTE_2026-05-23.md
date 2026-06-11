@@ -42,10 +42,10 @@ AC_φλ naming, explicitly **not** counted as admitted inputs (see
 
 ## Tier A-1 — Admitted derivation-targets (irreducible; have no-go portfolios)
 
-| id | statement | leverage | no-go portfolio (verified `retained_no_go` rows) |
+| id | statement (minimum form, 2026-06-11 — see the minimum-statement section below for the decompositions) | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
-| **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
-| **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1); also unsolved in the Standard Model |
+| **AC_φλ** | three named sub-admissions, nothing else: **(i)** the doublet **reading/occupancy selection** (one binary — sector-tied vs orbit/holomorphic count, `r ∈ {1, 1/2}`); **(ii)** the δ **readout identification** (R-η: density-read-as-angle; the magnitude `2/9` is fixed-locus arithmetic conditional on R-η, not an admitted number); **(iii)** the abstract-sector → physical-species **bridge**. The *naming* (which sector is e/μ/τ) remains a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
+| **θ** | with `θ̄ = θ_gauge + arg det(M_q)`: **(a)** gauge side — `θ_gauge = 0` in the topological-sector weighting, residual localized to the **multi-plaquette / large-gauge-winding** account (within the supplied per-plaquette class the local cross-plane `F·F̃` slot is derived-absent; RP, reality, positivity, CPT, parity-measure, and arrow-orientation are tracked in landed source notes as non-forcing/non-sourcing route surfaces); **(b)** mass side — the discrete orientation `arg det M ∈ {0, π} → 0` on the K-real reading (the *same* C₃ K-real structure as AC_φλ (i)), localized onto the named **determinant-readout bridge**. Also unsolved in the Standard Model. | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1) |
 
 Notes:
 - **Record retired from Tier A (2026-06-05).** The owner-approved Record axiom
@@ -159,6 +159,94 @@ AC_φλ (framework-specific physics) and θ (an SM-shared problem). Record is
 axiom content only in its narrow durable realized-outcome form. The
 scale-reference primitive is the single scale-setting every physical theory
 takes, orthogonal to all of them, and cannot supply any dimensionless number.
+
+## Minimum-statement sharpening (2026-06-11; owner-approved on merge)
+
+Restates both admissions at their sharpest currently-landed content so that
+elimination attempts target the true residual atoms. **No admission is
+added, removed, adopted, or re-graded; the count stays at two; every
+dependent stays bounded.** All inputs cited below are landed source notes;
+audit status remains audit-lane-only.
+
+### AC_φλ — minimum decomposition (three named sub-admissions)
+
+1. **The doublet reading/occupancy selection (one binary).** The landed
+   static-readout no-go states it: the *whole* magnitude admission is
+   whether the generation readout counts the complex doublet as one
+   holomorphic mode (`r = 1/2`) or two real modes (`r = 1`)
+   (`KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md`),
+   and the occupancy note reduces the whole r-gate to exactly this
+   occupancy atom, proves it independent of the current checked premise
+   surface, and names the orbit-occupancy premise candidate (proposed,
+   NOT adopted)
+   (`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`).
+   The custody decomposition's two operative selectors (K-reality;
+   det_C/equal-power) are this binary's two faces
+   (`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`).
+   Everything else about the magnitude — carrier, `Q = 1/3 + (2/3)r`
+   lever, channels, topological `2/9`, endpoint exclusion, equipartition
+   stationarity — is derived, not admitted.
+2. **The δ readout identification (R-η).** Per the landed `|δ| = 2/9`
+   chain
+   (`KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`),
+   the admitted content is the dimensionless readout-class identification
+   R-η (the C₃[111] fixed-locus spectral density read directly as the
+   angle); the magnitude `2/9` is retained-bounded fixed-locus arithmetic
+   given R-η and is **not** itself an admitted number.
+3. **The abstract-sector → physical-species bridge.** Unchanged (the
+   interpretive identification; naming remains vacuous per the
+   species-labeling no-go).
+
+### θ — minimum decomposition (two named residuals)
+
+With the landed split `θ̄ = θ_gauge + arg det(M_q)`
+(`STRONG_CP_THETA_BAR_STRUCTURED_ADMISSION_2026-06-04.md`):
+
+- **(a) Gauge side.** Admitted: `θ_gauge = 0` in the topological-sector
+  weighting. Localization: within the supplied per-plaquette action class
+  the local cross-plane `F·F̃` slot is derived-absent
+  (`THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md`),
+  and reflection positivity, reality of `Z(θ)`, positivity, CPT
+  (`STRONG_CP_GAUGE_THETA_NOT_FORCED_BY_REALITY_POSITIVITY_OR_CPT_BOUNDED_NOTE_2026-06-07.md`),
+  parity-measure correction
+  (`STRONG_CP_PARITY_MEASURE_CORRECTION_ORIENTATION_GATE_NO_GO_NOTE_2026-06-08.md`),
+  and arrow/CPT orientation
+  (`ARROW_CPT_ORIENTATION_DO_NOT_SOURCE_CP_ODD_ACTION_COEFFICIENTS_NO_GO_NOTE_2026-06-08.md`)
+  are treated in landed source notes as non-forcing/non-sourcing route
+  surfaces; audit status for those sources remains audit-lane-only. The
+  residual is the
+  multi-plaquette / large-gauge-winding account (the per-plaquette class
+  itself is an input; the FtF multiplaquette route is admissible but not
+  cleanly closeable,
+  `STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md`).
+- **(b) Mass side.** On the K-real reading the generation circulant
+  determinant is real, so `arg det M ∈ {0, π}`; admitted is the discrete
+  orientation to `0`
+  (`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`),
+  now localized onto the named **determinant-readout bridge**: within the
+  registrable multiplicative determinant-character class, K/CPT forces
+  phase erasure, and what remains admitted is that the physical
+  `arg det(M_u M_d)` is exhausted by that class
+  (`THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`).
+- **Cross-admission identification.** The K-real structure consumed by
+  θ(b) is the *same* C₃ conjugate-symmetric circulant structure as
+  AC_φλ(i)'s tied reading (structured-admission runner facts 3, 5, 6):
+  the two admissions share one structural choice on the mass side. A future
+  elimination of either should be checked against the other; it moves both
+  only after the determinant-readout/exhaustion bridge is closed, not by
+  registry wording alone.
+
+### Pending-review sharpenings (cited for tracking, NOT consumed)
+
+The 2026-06-11 review stack — staggered first-order determinant (#3551),
+equivariant channel space (#3553), durability-stationarity chain (#3556),
+flow no-go scope corrections (#3558), OO/R-D equivalence (#3559) — if
+audited, further compresses AC_φλ(i): the equal-power weight becomes a
+conditional corollary, count-twice localizes onto antiunitary-tied
+sections channel-independently, and the two candidate premise
+formulations (orbit-occupancy; R-D durability) are one decision. None of
+that is consumed by the statements above, which rest on landed notes
+only.
 
 ## Propagation wiring (audit-lane sidecar)
 

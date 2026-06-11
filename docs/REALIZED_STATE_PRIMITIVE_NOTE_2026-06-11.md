@@ -26,109 +26,75 @@ set, predict, or estimate any audit verdict.
 
 ## What This Declares
 
-The framework takes one interface fact: the three axioms (Lattice, Quantum,
-Record) fix the carrier, the adjacency, and the registration structure — they
-supply **no rule selecting which state is realized**. A physical history
-additionally fixes one realized state: a single constraint-admissible
-configuration ("among the states the laws permit"). A derivation may
-**specialize** to it — evaluate an already-derived state functional at that one
-configuration, **pointwise**. Pointwise evaluation is function application: it
-presupposes no measure, no sigma-algebra, and no disintegration.
+The framework takes one realized-state reference: a law-admissible state supplied
+by the physical history.
 
-This primitive supplies the **slot**, never the **content**. It carries no
-specific state, no value, and no dimensionless physics.
+This is pointwise evaluation, not a state-selection rule. It carries zero
+state-contingent content: no state, measure, weighting, averaging or aggregation
+over alternatives, probability rule, typicality claim, genericity claim,
+preferred state, default state, boundary condition, normalization rule, or value
+is supplied by it.
 
-## The Policing Clauses (what "nothing more" means)
-
-1. **No averaging over alternatives.** No aggregation or quantification over
-   the states the realized one could have been. Averaging requires a choice of
-   how much each alternative counts; that choice is physics this primitive does
-   not supply.
-2. **No "typical" or "generic".** Typicality and genericity are measure-one /
-   comeager claims with respect to *some* measure or topology choice;
-   ensemble-quantified predicates ("for almost every state", "the generic
-   configuration") are not admissible specialization predicates under this
-   primitive.
-3. **The counterfactual test.** No quoting a number that would differ had
-   another permitted state been realized. Any quantity extracted under
-   specialization must be invariant as the realized state ranges over the
-   entire conditioned family; if it varies, it depended on a representative
-   choice — it is registered data about our world, to be matched like the
-   masses, and may not cite this primitive as derivation support.
-4. **Constraint admissibility.** "Among the states the laws permit": the
-   supplied state must satisfy the framework's own derived consistency
-   structure. The primitive licenses no evaluation at configurations the
-   axioms' retained theorems exclude.
+A row may evaluate an already-defined state functional at the supplied realized
+state. A value that would change under a different law-admissible realized state
+is registered data, not derivation output.
 
 ## Why It Is A Primitive
 
-The framework baseline, Lattice + Quantum + Record, is state-blind: the axioms
-fix an operator algebra and a registration structure, and a state is an
-additional datum (a positive normalized functional on that algebra). That the
-axioms cannot supply it is not a temporary gap but a structural fact,
-exhibited case by case on exact finite-dimensional instances:
+The framework baseline, Lattice + Quantum + Record, does not select which
+law-admissible state is realized. Any state-dependent quantity from that
+structural core is undetermined until one realized state is supplied.
 
-- the dynamics is state-blind while registered outcomes are state-contingent
-  (the same operator set produces growing, shrinking, flat, or fluctuating
-  record counts depending solely on the supplied state — see the arrow note
-  below and check S1/S4 of the support runner);
-- no derived selector picks a point of a degenerate invariant manifold
-  (`docs/OPEN_SHELL_INVARIANT_LOCUS_CONDITIONAL_NEUTRALITY_NO_DERIVED_SELECTOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`);
-- candidate "natural" references are reconstructions, not selections: the
-  maximal-symmetry reference is one invariant state among a continuum of
-  invariant states on a degenerate manifold (support runner, check S2), and
-  identifying it as "the natural input" is exactly the move the record
-  ontology demotes (a realist slip).
-
-A primitive (rather than a per-note disclaimer) because the alternative is
-each note ad-hoc wording its own conditioning — which is precisely how a
-measure, a typicality assumption, or a representative choice gets smuggled.
-One governed object with fixed policing clauses replaces scattered prose.
+That reference is irreducible as a laws-versus-state distinction. A realized
+state cannot be derived from state-blind laws, and treating this supplied state
+as a Tier-A admitted derivation target incorrectly bounds lanes whose structural
+content is otherwise clean. Irreducibility is exhibited on exact instances by the
+support runner (state-blind dynamics with state-contingent registered outcomes;
+invariant-state continua on degenerate manifolds — invariance does not select,
+and the maximal-symmetry reference is one more invariant point, never "the
+natural input").
 
 ## What This Does Not Do
 
-- It does not add or amend an axiom. The minimal framework baseline remains
-  the three named axioms in `docs/MINIMAL_AXIOMS_2026-06-05.md`.
-- It does not supply a state, a state-selection rule, a measure or
-  distribution over states, a typicality or genericity assumption, a
-  weighting, a normalization, a probability rule, a preferred or default
-  state, or the value of any state-contingent quantity.
-- It does not permit identifying the realized state with the maximal-symmetry
-  reference (`I/d`-type reconstructions) "as the natural input".
-- It does not house the **past hypothesis**. The past hypothesis — the
-  existence of a low-record (low-entropy) end of the realized history — is a
-  strictly stronger claim: it asserts the realized state is *special*, which
-  is a typicality-class claim of exactly the kind clauses 1-2 forbid. It
-  remains a separate named input, anchored as the residual of
-  `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`
-  (which derives the arrow's *direction* from record formation and pins the
-  *existence* of the low-record boundary as the open input; statuses are
-  pipeline-derived). The two inputs are distinct axes; the support runner
-  (check S4) exhibits the separation on an explicit instance.
-- It does not convert state-contingent content into axiom-derived content.
-  Registry semantics: as an approved premise node this primitive
-  chain-satisfies dependencies without bounding downstream rows — but the
-  primitive itself carries no contingent content, so a row that *quotes data
-  of a particular realized state* (a registered pattern, a locus choice, a
-  holonomy class) remains conditional on that supplied data exactly as
-  supplied inputs always are. Nothing about this primitive lifts such a row
-  into the unconditional column; effective statuses remain audit-lane-only.
+- It does not add or amend an axiom.
+- It does not supply a state-selection rule, measure, weighting, averaging or
+  aggregation over alternatives, probability rule, typicality claim, genericity
+  claim, preferred state, default state, boundary condition, normalization
+  rule, or state-contingent value.
+- It does not assert any special boundary condition on the realized history. A
+  low-record or low-entropy boundary remains a separate named input — the past
+  hypothesis, anchored as the residual of
+  `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`.
+- It does not change any audit verdict. Audit status remains set only by the
+  independent audit lane.
 
-## The State-Contingency Register (initial entries)
+## Audit-Pipeline Treatment
 
-Entries below are the data this primitive's slot is currently known to carry —
-each backed by a landed exact-runner result establishing that the datum is
-underdetermined by Lattice + Quantum + Record + retained structure. Future
-entries require the same: a runner-backed underdetermination result, not a
-convenience reclassification. (Statuses are pipeline-derived and set by the
-independent audit lane; paths below are source notes, not status claims.)
+The machine-readable distinction is:
 
-1. **Which point of the open-shell degenerate ground manifold is realized**
-   (invariant locus vs symmetry-broken complement) —
+- `docs/audit/data/axiom_premise_nodes.json` lists framework axioms and
+  explicitly approved framework primitives. These dependencies chain-satisfy
+  without bounding downstream rows.
+- `docs/audit/data/tier_a_admissions.json` lists non-axiom derivation-target
+  admissions. These dependencies chain-satisfy only at `retained_bounded`
+  until the relevant admission is retired by a retained derivation.
+
+The realized-state primitive belongs to the first registry, not the second.
+It carries no contingent content, so rows quoting realized-state data remain
+conditional on that supplied data.
+
+## The State-Contingency Register (documentation, not a gate)
+
+The primitive is self-gating: invoking it never upgrades a row — evaluation is
+licensed, and any quoted value that varies across law-admissible states is
+registered data by the counterfactual sentence above. The register below
+documents the data currently known to live in this slot, each backed by a
+landed exact-runner underdetermination result. (Statuses are pipeline-derived;
+paths are source notes, not status claims.)
+
+1. **Which point of the open-shell degenerate ground manifold is realized** —
    `docs/OPEN_SHELL_INVARIANT_LOCUS_CONDITIONAL_NEUTRALITY_NO_DERIVED_SELECTOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`.
-2. **Which induced holonomy content the matter state carries** (the derived
-   curvature functional is exactly flat on the sea and state-dependently
-   non-flat off it) —
+2. **Which induced holonomy content the matter state carries** —
    `docs/INDUCED_HOLONOMY_MATTER_STATE_FUNCTIONAL_DERIVED_CURVATURE_TRAJECTORY_BOUNDED_THEOREM_NOTE_2026-06-10.md`.
 3. **Initial-state dependence of record-dressed relaxation data** —
    `docs/INTERLEAVED_MEAN_MAP_PERIPHERAL_COUNT_COLLAPSE_ALMOST_PERIODICITY_REMOVAL_BOUNDED_THEOREM_NOTE_2026-06-10.md`.
@@ -136,8 +102,9 @@ independent audit lane; paths below are source notes, not status claims.)
    weight `r`) — registered patterns of the realized state, matched like the
    masses; canonical statement in
    `docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`
-   (guardrail G3). This primitive is the registry-level home of that
-   discipline: dial settings (`r = 0, 1/2, 1`) are sector data, never forced.
+   (guardrail G3). The dial structure (`Q = 1/3 + (2/3) r`; distinguished
+   settings `r = 0, 1/2, 1`) is family-invariant and quotable; each sector's
+   setting is data.
 
 **Explicitly not an entry:** the past hypothesis (see above — separate,
 stronger input).
@@ -165,8 +132,8 @@ substance.
 
 Mechanical, not honor-system: workers apply
 `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` (do not grant more
-than this note declares); a specialization citing this primitive for a datum
-absent from the register above is a misuse (the correct move is to land the
-underdetermination runner first); the audit lane alone sets effective
-statuses, and nothing in this primitive's semantics promotes state-contingent
-rows.
+than this note declares). The operative gate is the counterfactual sentence —
+a quoted value that would change under a different law-admissible realized
+state is registered data, and no citation of this primitive alters that. The
+audit lane alone sets effective statuses; nothing in this primitive's
+semantics promotes state-contingent rows.

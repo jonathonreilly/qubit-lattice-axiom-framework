@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 821 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1431 |
+| unaudited | 1430 |
+| audit_in_progress | 1 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,14 +61,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 4 |
 | `audited_clean` | 1261 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1747 |
+| `unaudited` | 1746 |
 
 | claim_type | count |
 |---|---:|
@@ -113,9 +114,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 930 | 39.86 | `unaudited` | unaudited |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1325 | 39.37 | `audited_clean` | **retained** |
 | 12 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1269 | 38.81 | `audited_clean` | **retained_bounded** |
-| 13 | `alpha_s_derived_note` | bounded_theorem | critical | 861 | 38.75 | `audited_conditional` | ~~audited_conditional~~ |
-| 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 772 | 38.59 | `unaudited` | unaudited |
-| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 716 | 38.49 | `audited_clean` | **retained_no_go** |
+| 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 772 | 38.59 | `unaudited` | unaudited |
+| 14 | `yt_ew_color_projection_theorem` | no_go | critical | 716 | 38.49 | `audited_clean` | **retained_no_go** |
+| 15 | `alpha_s_derived_note` | bounded_theorem | critical | 860 | 38.25 | `audited_conditional` | ~~audited_conditional~~ |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 934 | 36.87 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1329 | 36.38 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1074 | 36.07 | `audited_clean` | **retained_bounded** |
@@ -135,6 +136,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |

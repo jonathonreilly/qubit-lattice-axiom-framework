@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_spin2_curvature_generator_supplied_2026_06_10.py
+runner_sha256: 5cc79b823a62c0e1b00b0168cf9827fba460f2413b87b51f3ce33ddf283fd0b6
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 3.70
+status: ok
+----- stdout -----
+THE SPIN-2 TWO-DERIVATIVE CURVATURE GENERATOR: SUPPLIED ON THE FLAT ATLAS (gate connector)
+================================================================================================
+[PASS] F1 (two-derivative): the geometric generator's metric-sector form vanishes at k=0 EXACTLY (constant metric perturbations re-flatten -- the landed zero-mode fact) and scales as O(k^2) at leading order (doubling k quadruples the form)
+       |Q_h(0)| = 1.8e-15; |Q_h(2k)|/|Q_h(k)| = 3.999999 (= 4 + O(k^2))
+[PASS] F2 (spin-2-coupled, with the scalar-W contrast): BOTH TT channels of the geometric generator are nonzero at O(k^2) (the landed -1/2 x EH values), while the scalar-W per-mode metric Hessian -- rank-1 longitudinal (qhat qhat)(x)(qhat qhat), the landed TT-kernel row, reproduced here -- has the TT block in its EXACT kernel: the geometric route supplies what the scalar route provably cannot
+       TT(yz) = TT(E) = -0.250000 per k^2 (nonzero); scalar-W per-mode TT overlap max = 3.0e-30 (exact kernel)
+[PASS] F3 (THE GATE'S OBSTRUCTION FAILS HERE): under random SO(4) frame rotations, the generator's metric-sector form at the rotated momentum equals c x M_EH(Rk) with THE SAME single constant c = -1/2 (the gate's exact obstruction was 'two valid frames yield different localized channel coefficients', frame_delta = 6.767e-02 on the scalar route; here the channel data collapses to ONE frame-covariant constant per momentum, residuals at the O(k^4)/numerical floor)
+       c over 6 random frames = [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5] (spread 2.0e-08); max residual = 4.4e-08
+[PASS] F4 (canonical split, ALL channels): the frame-invariant channel weights (eigenvalues of the metric-sector form in the tensor metric) extracted in two rotated frames AGREE to numerical precision -- the gate's 'only the scalar channel is canonical' limitation is superseded: every channel weight is a frame-independent scalar per momentum
+       weight-spectrum frame difference = 2.5e-08; spectrum/k^2 = [-0.25, -0.25, -0.25, -0.25, -0.25, -0.0, 0.0, 0.0, 0.0, 0.5]
+[PASS] F5 (the flat-atlas target reached): the generator's localization IS the linearized Einstein/Regge law -- Q_h = c x (EH pairing) with one constant across tick, space, and mixed momenta: 'a canonical Einstein/Regge dynamics law' (the gate's stated requirement) exists on the flat atlas WITHOUT adding a bundle primitive, because the geometric action supplies the curvature generator directly, bypassing the scalar-W localization problem
+       c per direction = [-0.5, -0.5, -0.5, -0.5, -0.4999999]
+[PASS] F6 (honest scope): the gate's atlas is PL S^3 x R; the supply certified here is the flat Z^3 x Z_tau atlas at the linearized level (the landed geometric rows). The scalar-W facts stand unchanged: the bundle non-canonicity is a true property of that route (its scalar-channel-only canonical projector, its rank-1 longitudinal Hessian -- reproduced in F2). What remains for the gate's own atlas: the S^3 transplant of the geometric construction and the nonlinear completion -- named open, not claimed.
+       flat-atlas linearized supply certified; S^3 transplant + nonlinear completion remain open
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: the minimal extra object named by the polarization-frame gate -- equivalently (per the
+landed TT-kernel re-scope) a spin-2-coupled two-derivative curvature generator turning the
+kernel data into 'a canonical Einstein/Regge dynamics law' -- EXISTS on the flat Z^3 x Z_tau
+atlas: it is the second variation of the Regge action of the landed geometric rows. It is
+two-derivative (F1), spin-2-coupled where the scalar-W route provably is not (F2), and the
+gate's exact obstruction FAILS for it: the localized channel coefficients are frame-COVARIANT,
+collapsing to the single constant c = -1/2 per momentum (F3), with every channel weight a
+frame-independent scalar (F4) and the localization equal to the linearized Einstein/Regge law
+itself (F5). The gate's obstruction remains a true fact about the scalar-W route; the
+universal-GR lane's tensor sector is unblocked by routing through the geometric action instead.
+Open and named: the S^3 transplant, the nonlinear completion. No external-data value.
+
+----- stderr -----
+

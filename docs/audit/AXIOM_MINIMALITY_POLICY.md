@@ -198,7 +198,9 @@ promoted to axiom or primitive class):
   derivation target,
   `past_hypothesis_low_record_boundary_input_note_2026-06-11`, with source
   `docs/PAST_HYPOTHESIS_LOW_RECORD_BOUNDARY_INPUT_NOTE_2026-06-11.md`.
-  Owner-directed 2026-06-11 (the named-boundary-input split-out).
+  **PROPOSAL — pending explicit owner approval.** This entry does not record
+  an approval; it records a proposed registration awaiting one. If approval
+  is not given, this entry and the registry change are withdrawn.
   - **Why Tier-A and not axiom/primitive.** It is not a law (the
     microdynamics is time-symmetric; the arrow note proves the candidate
     arrow's sign is fixed by the supplied state with the dynamics held

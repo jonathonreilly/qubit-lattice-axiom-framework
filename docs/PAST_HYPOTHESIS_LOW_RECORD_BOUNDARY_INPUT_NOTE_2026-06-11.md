@@ -5,10 +5,10 @@
 
 **Date:** 2026-06-11
 **Type:** meta
-**Status:** Tier-A admitted derivation-target declaration. Registered in
-`docs/audit/data/tier_a_admissions.json` as
-`past_hypothesis_low_record_boundary_input_note_2026-06-11`. Owner-directed
-registration recorded in `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
+**Status:** PROPOSED Tier-A admitted derivation-target declaration — pending
+explicit owner approval (not yet given; the section-6 entry records the
+proposal only). Registry id (proposed):
+`past_hypothesis_low_record_boundary_input_note_2026-06-11`.
 **Status authority:** independent audit lane only. This source note does not
 set, predict, or estimate any audit verdict.
 

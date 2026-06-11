@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1407 |
-| Retained-grade rows, including boxed decorations | 1288 |
+| Applied audit verdicts | 1408 |
+| Retained-grade rows, including boxed decorations | 1289 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 205 |
-| Retained bounded rows | 819 |
+| Retained bounded rows | 820 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 37 |
 | Unaudited rows | 1434 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1438 |
+| Total pending rows | 1437 |
 | Ready rows | 46 |
 | Cycle-break targets | 0 |
-| Critical pending | 294 |
+| Critical pending | 293 |
 | High pending | 284 |
 | Medium pending | 421 |
 | Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10`](../../docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md) - critical; audit_in_progress
+- [`axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`axiom_first_reeh_schlieder_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; unaudited
 - [`yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`](../../docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; unaudited

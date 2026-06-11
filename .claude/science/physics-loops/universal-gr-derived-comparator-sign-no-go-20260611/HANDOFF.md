@@ -2,6 +2,8 @@
 
 Branch: `physics-loop/bridge-science-block02-20260611`
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3520
+
 Target claim:
 `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08`
 
@@ -34,4 +36,4 @@ independent audit own any status movement.
 
 Next action:
 
-Open a review PR for extraction and independent audit routing.
+Reviewer extraction and independent audit routing.

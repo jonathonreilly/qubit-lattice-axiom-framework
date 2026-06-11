@@ -26,5 +26,6 @@ checks:
   - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py --force --push-mode=none --allow-non-main"
 review_disposition: "branch-local pass; external reviewer/audit still required; generated audit outputs intentionally excluded"
 lock_status: "local coordination lock acquired at /Users/jonBridger/.codex/memories/physics_worker_lock.json; default repo lock path unavailable"
-next_exact_action: "Commit, push, and open review PR without editing audit verdict files."
+pr_status: "opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3520"
+next_exact_action: "Reviewer extraction and independent audit decision; do not add audit verdict files from this PR."
 stop_condition: "PR opened for reviewer extraction and independent audit decision."

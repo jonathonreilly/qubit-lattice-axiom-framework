@@ -49638,10 +49638,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "higgs_mass_from_axiom_note"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
     },
     {
       "from": "repo.repo_organization",
@@ -95200,17 +95200,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
         "higgs_mass_from_axiom_note",
         "pmns_twisted_flux_transfer_holonomy_boundary_note",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "koide_full_lattice_schur_inheritance_note_2026-04-18",
         "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
         "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
-        "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10"
+        "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
+        "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "057f467cdafa96e20d1988b6b0a4d17d7f471d5b9a99045c03d7482cac148ab3",
+      "note_hash": "df209c341eba0d7528a068f90d2dc25f27f1ac941d533701abc788e8812225cf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

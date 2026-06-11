@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_p1_collapses_frame_residuals_note_2026-06-01"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08",
         "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10",
         "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
         "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
-        "koide_p1_collapses_frame_residuals_note_2026-06-01"
+        "koide_p1_collapses_frame_residuals_note_2026-06-01",
+        "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1596e59fdd8222f85d9f3401afdc194177b82c11e5ad2d85f46ea727fea739a6",
+      "note_hash": "f977a9a33f1d9a66517be4a6c14cd7ab405032e67f35c000831447734f5ce471",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

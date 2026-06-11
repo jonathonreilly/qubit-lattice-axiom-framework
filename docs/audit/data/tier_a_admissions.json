@@ -28,7 +28,7 @@
         "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09 (P1: per-plaquette action class licensed from nearest-neighbor adjacency plus the kinetic-isotropy primitive; audited_clean/retained_bounded)",
         "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09 (P1: no local cross-plane F-tilde-F slot in that class, f-independent; GATE: independent audit required)",
         "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10 (P2 lemma: K/CPT-invariant multiplicative determinant characters are phase-free; standalone note with deps {strong_cp_theta_zero_note, minimal_axioms} only — no AC_phi_lambda gate dependency; GATE: independent audit required)",
-        "PENDING determinant-readout bridge (P2: the physical arg det(M_u M_d) contribution is exhausted by the determinant-class registrable readout; GATE: retained-grade theorem required before this entry may land)"
+        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10 (P2 bridge: any Record-registrable scalar — finitely additive over disjoint records and constant on K/CPT orbits — is phase-free, so the arg det(M_u M_d) phase datum is exhausted on the registrable surface; PR #3513; GATE: independent audit required; standing modeling premise that the physical readout context is Record-supplied remains named in that note)"
       ],
       "prior_no_go_portfolio": [
         "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 821 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1430 |
+| unaudited | 1429 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1261 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1746 |
+| `unaudited` | 1745 |
 
 | claim_type | count |
 |---|---:|
@@ -1400,6 +1400,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_taste_generation_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3671,6 +3672,22 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within the algebraic carrier supplied by the cited retained authority, the decomposition and singlet multiplicity follow directly from standard SU(N) representation theory at N=3. The packet does not close the separate physical-color identification, but this audited scope is only the algebraic q-qbar color-structure decomposition on the admitted SU(3) carrier.
 - **rationale:** The proof is a standard algebraic corollary of one upstream retained color-structure theorem plus admitted SU(N) representation theory. The runner genuinely checks normalization, invariance under explicit Gell-Mann generators, projector idempotence/rank, and the 8-dimensional complement, but it does not derive a new framework number beyond the parent carrier and standard group theory. There are no external comparator checks or tuned numerical inputs. Because the chain reduces to a single upstream parent plus standard mathematics, the conservative rubric classifies it as decoration rather than an independent positive theorem.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `cl3_taste_generation_theorem`
+
+- **Note:** [`CL3_TASTE_GENERATION_THEOREM.md`](../../docs/CL3_TASTE_GENERATION_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic audit of the S3 representation decomposition and hw=1 Z3 orbit/Y/T3 spectra on an admitted C^8 taste carrier, excluding physical SM-generation identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-130755-17bbfa4a82-cl3_taste_generation_theorem`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The S3 tensor-position action has class character chi(e)=8, chi(2-cycle)=4, chi(3-cycle)=2, giving C^8 = 4A1 + 0A2 + 2E, with the hw=1 sector a Z3 orbit whose restricted Y/T3 spectra are {-1, +1/3, +1/3} and {-1/2, +1/2, +1/2}.  _(class `A`)_
+- **chain closes:** False — The finite S3 character computation and hw=1 spectral calculation close algebraically once the C^8 carrier and Y/T3 operators are admitted. The full chain does not close from retained inputs because the staggered-Dirac carrier authority is unaudited, the cited minimal-axiom note is superseded, and the physical generation bridge is explicitly deferred.
+- **rationale:** Issue: the runner genuinely computes algebraic matrix/character checks, but only after the C^8 staggered taste carrier and Y/T3 structure have been installed. Why this blocks: retained status cannot propagate through docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md with effective_status unaudited, and docs/MINIMAL_AXIOMS_2026-04-11.md is explicitly superseded rather than a current registered premise in this packet. Repair target: retain the staggered-Dirac realization carrier and wire a current axiom/premise authority, then fix the source-runner drift where the prose assigns T3(e3)=+1/2 while the spectrum/runner require -1/2. Claim boundary until fixed: abstract representation/spectrum consistency on an admitted carrier only.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `MINIMAL_AXIOMS_2026-04-11.md`
 - **auditor confidence:** high
 
 ### `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27`

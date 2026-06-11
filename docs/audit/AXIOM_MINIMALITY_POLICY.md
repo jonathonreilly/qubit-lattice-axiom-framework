@@ -161,3 +161,32 @@ Recorded explicitly approved primitive:
     evolution remains derived, and only the one graining ratio `c_t/c_s` is
     fixed. It supplies no dynamics, no fourth spatial dimension, and no
     dimensionless observable.
+
+- **2026-06-11 -- Record axiom individuation rewording.** The framework axiom
+  set remains the three named axioms Lattice, Quantum, and Record, with source
+  `docs/MINIMAL_AXIOMS_2026-06-11.md` and stable registry id `minimal_axioms`.
+  - **Why it is admissible.** The Record axiom now states the realized outcome
+    as the realized central sector individuated by the context's registered
+    scalar surface. The prior `K`/CPT-orbit outcome clause is recovered exactly
+    as the special case of a surface that is `K`/CPT-invariant and
+    orbit-separating, and conversely a surface separating an orbit pair is
+    inconsistent with the orbit clause -- a landed two-way equivalence
+    (`KCPT_ORBIT_CLAUSE_KINVARIANT_SURFACE_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-06-10.md`).
+    The rewording relocates where the same content sits (postulated quotient
+    becomes a theorem of surface invariance); it neither strengthens nor
+    weakens the premise.
+  - **No laundering.** Record does not supply the readout context, central
+    decomposition, registered surface, `K`/CPT structure, sector-generation
+    rule, weighting, normalization, probability, measurement/decoherence
+    dynamics, time metric, within-sector data, occupancy rule, P2/modulus,
+    log-det, source/action, scale, or arbitrary observable identification.
+    The `K`-reality of realized states remains the standing pin, exposed at
+    sector resolution by the equivalence note and not discharged by this
+    rewording.
+  - **Scope.** Dependencies on the three framework axioms chain-satisfy without
+    bounding downstream rows. This rewording invalidates prior direct
+    `minimal_axioms` audits through the axiom-premise hash guard and must be
+    re-audited by the independent audit lane where relevant. It does not itself
+    promote any downstream theory surface or apply any audit verdict. Adoption
+    is gated on the independent audit of the equivalence note and its sibling
+    campaign rows before merge.

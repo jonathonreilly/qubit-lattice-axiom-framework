@@ -18,6 +18,12 @@ and structured output
 with cache
 [`logs/runner-cache/frontier_lensing_h025_source_packet_manifest_2026_06_09.txt`](../logs/runner-cache/frontier_lensing_h025_source_packet_manifest_2026_06_09.txt).
 
+**Audit artifact repair (2026-06-10):** the primary runner imports the two
+Fine-H companion runners as no-op helper modules so the audit packet's
+`helper_runner_paths` includes the H=0.25 edge-kernel certificate and its
+source-packet manifest. The primary runner still consumes their fresh caches
+and structured JSON output instead of recomputing the expensive certificate.
+
 ## Summary
 
 The retained_bounded

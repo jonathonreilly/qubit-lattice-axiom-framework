@@ -37,6 +37,15 @@ follows from the current surfaces.
 
 ## Existing Surfaces
 
+**Load-bearing one-hop authorities for re-audit:** the finite lower-bound
+packet is [`DIMENSION_SELECTION_NOTE.md`](DIMENSION_SELECTION_NOTE.md); the
+native stable-orbit upper edge is
+[`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md);
+the weaker atomic companion is
+[`COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md).
+Legacy wrapper filenames below are context for the route history, not
+additional load-bearing authorities for this gate.
+
 ### Lower-bound surface
 
 `DIMENSION_SELECTION_NOTE.md` says the current bounded row is lower-bound
@@ -117,7 +126,8 @@ This note does not claim:
 
 - a framework-internal derivation of the full Bertrand closed-orbit theorem;
 - a framework-internal derivation of atomic stability;
-- a full dimension-selection theorem from `A_min`;
+- a full dimension-selection theorem from the current Lattice/Quantum/Record
+  baseline;
 - a derivation of a `Z^d` substrate from the current `Z^3` substrate;
 - a repo-wide audit verdict;
 - a change to any active review queue, audit ledger, lane registry, status

@@ -66,10 +66,12 @@ THIS RUNNER characterizes a sampled O(k^4) remainder fingerprint of the geometri
   F8   B3 ENHANCEMENT: the S3-only (chain-orientation-sensitive) spatial harmonics P31, P211 are
        ABSENT (< 1e-6): face+ = face-, body+ = body-. The on-shell O(k^4) fingerprint has the
        FULL cubic symmetry even though the complex's point group is only S4 x inversion.
-  F9   NO OTHER BRANCH NEAR THE CONE: a wide rank-drop scan over E^2/k^2 in [0.3, 2.5] finds no
-       additional on-shell branch; the continuum trace-channel third on-shell null is NOT
-       realized as an independent lattice branch (diagnostic: the exactly-decoupled fifth branch
-       carries an O(1) share of the on-shell trace class, overlap reported).
+  F9   NO OTHER BRANCH NEAR THE CONE IN THE THREE SCANNED DIRECTIONS: a wide rank-drop scan over
+       E^2/k^2 in [0.3, 2.5] along the axis, face-diagonal, and one random spatial direction finds
+       no additional on-shell branch in those directions; in that scanned surface the continuum
+       trace-channel third on-shell null is NOT realized as an independent lattice branch
+       (diagnostic: the exactly-decoupled fifth branch carries an O(1) share of the on-shell trace
+       class, overlap reported). This is not an all-direction branch-exclusion theorem.
   F10  PROJECTION-CONVENTION BOUNDARY (numerically pinned): the roots of the PROJECTED (exact
        line-averaged metric map) TT block at the axis are {-1/9, -2/9} -- split and unequal to
        the physical degenerate -1/6. The O(k^4) on-shell content must be read from the full
@@ -104,6 +106,10 @@ from __future__ import annotations
 import itertools
 import numpy as np
 import sympy as sp
+
+# Heavy symbolic/numeric Regge fingerprint runner; cache refreshes can take
+# longer than the default audit-runner budget on slower hosts.
+AUDIT_TIMEOUT_SEC = 600
 
 PASS = 0
 FAIL = 0
@@ -742,8 +748,9 @@ def main() -> int:
           f"c0 = {coefH[0]:+.8f}, c1(P4) = {coefH[1]:+.8f}, c2(P31) = {coefH[2]:+.1e}, "
           f"c3(P211) = {coefH[3]:+.1e}; max harmonic-fit residual = {maxresH:.1e}")
 
-    # ---------------- F9: no other branch near the cone + trace-class diagnostic ----------------
-    print("\n  wide rank-drop scan E^2/k^2 in [0.3, 2.5] (no other on-shell branch near the cone):")
+    # ---------------- F9: scoped branch scan + trace-class diagnostic ----------------
+    print("\n  wide rank-drop scan E^2/k^2 in [0.3, 2.5] "
+          "(no other on-shell branch in the three scanned directions):")
     no_other = True
     k_scan = 0.0225
     for nm in ("axis (1,0,0)", "face+ (1,1,0)", "rand3d-0"):
@@ -779,12 +786,13 @@ def main() -> int:
     trq = tr10 - Ghq @ (Ghq.conj().T @ tr10)
     ov_tr = float(abs(np.vdot(h5q, trq)) / (np.linalg.norm(h5q) * np.linalg.norm(trq)))
     metric_share = float(np.linalg.norm(M0 @ h5))
-    check("F9 (NO OTHER ON-SHELL BRANCH NEAR THE CONE): the wide scan finds NO additional rank "
-          "drop in E^2/k^2 in [0.3, 2.5] away from the located degenerate TT root -- in "
-          "particular the continuum trace-comparator channel does NOT appear as an independent "
-          "on-shell lattice branch (its continuum third on-shell null is not realized; "
-          "diagnostic: the exactly-decoupled fifth branch carries an O(1) share of the on-shell "
-          "trace class)",
+    check("F9 (NO OTHER ON-SHELL BRANCH IN THE THREE SCANNED DIRECTIONS): the wide scan finds NO "
+          "additional rank drop in E^2/k^2 in [0.3, 2.5] away from the located degenerate TT root "
+          "along the axis, face-diagonal, and one random spatial direction -- in that scanned "
+          "surface the continuum trace-comparator channel does NOT appear as an independent "
+          "on-shell lattice branch (its continuum third on-shell null is not realized in the "
+          "scanned directions; diagnostic: the exactly-decoupled fifth branch carries an O(1) "
+          "share of the on-shell trace class)",
           no_other,
           f"fifth-branch metric share at p0 = {metric_share:.2f}; class overlap with "
           f"trace-transverse (mod gauge) = {ov_tr:.2f}")
@@ -969,8 +977,9 @@ def main() -> int:
         "the kinetic-isotropy structural graining\nat O(k^4). alpha runs from -1/6 (axes) through -1/8 "
         "(face diagonals) to -1/9 (body diagonals), spread\n1/18; the chain-orientation "
         "harmonics are ABSENT (face+ = face-, body+ = body-): the fingerprint is\nB3-symmetric, "
-        "more symmetric than the complex itself. No other branch exists near the cone; the\n"
-        "continuum trace-channel third on-shell null is not realized as a lattice branch (the "
+        "more symmetric than the complex itself. No other branch appears near the cone in the "
+        "three scanned F9 directions;\nthe continuum trace-channel third on-shell null is not "
+        "realized as a lattice branch in those scanned directions (the "
         "exactly-decoupled\nfifth branch carries an O(1) share of that class). The off-shell "
         "projected C4 is not captured by the\nsimple curvature-contraction basis tried "
         "(honest negative; raw table reported; its pure-tick row equals its pure-space row "

@@ -49638,7 +49638,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "pmns_three_flux_holonomy_closure_note"
+      "to": "pmns_c3_character_holonomy_closure_note"
     },
     {
       "from": "repo.front_door_status",
@@ -95200,7 +95200,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "pmns_three_flux_holonomy_closure_note",
+        "pmns_c3_character_holonomy_closure_note",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "koide_full_lattice_schur_inheritance_note_2026-04-18",
         "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
@@ -95210,7 +95210,7 @@
         "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a1330f6c7f3cd3b38e5de8a677134d93384b0d4712636868cf4d84f00923fc3c",
+      "note_hash": "f641609fc5c30c1bd7262dab18cb09812eb273c19764190c21940ef755de183a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

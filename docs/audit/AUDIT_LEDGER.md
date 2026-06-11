@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1419 |
+| unaudited | 1418 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1262 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1735 |
+| `unaudited` | 1734 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 849 |
-| `leaf` | 1316 |
+| `medium` | 850 |
+| `leaf` | 1315 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1420,6 +1420,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -14875,6 +14876,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The antecedent is not supplied by Quantum alone: the same C^2 admits a scalar boost action S(eta)=exp(eta c)I_2 unless a matter-attachment or kinetic-kernel selector identifies the physical boost with the Pauli operator frame.  _(class `A`)_
 - **chain closes:** True — The accepted minimal axiom supplies the one-site M_2(C) / Cl(3,0) algebra and explicitly omits dynamics, species identification, and physical observable bridges. A scalar action on the same C^2 is compatible with that restricted content, while the Pauli/Weyl exclusion appears only after the operator-frame or kinetic-kernel selector is added.
 - **rationale:** The runner computes the finite Pauli/Clifford, commutant, Lorentz-bracket, scalar-action, and kinetic-kernel checks; its final C.4 line is a hard-coded summary, but the no-go is independently supported by the cited axiom boundary plus the scalar-action countermodel. Manual algebra confirms {sigma_i,sigma_j}=2 delta_ij I, scalar commutant, and the conditional result that if K transforms as a vector under J=sigma/2 then K_i=lambda J_i with lambda=+-i for so(3,1). The no-go discipline gate passes only for the narrow Quantum-alone route: the note leaves matter-attachment and explicit-admission closure paths open and does not assert an absolute no-go against faithful boosts.
+- **auditor confidence:** high
+
+### `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19`
+
+- **Note:** [`QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`](../../docs/QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the displayed retained atoms and bridge family a_u(kappa) = sin_d * (1 - rho * kappa), the ray/support-only packet admits distinct support, target, and BICAC kappa values with unchanged retained identities, so it does not select the BICAC endpoint.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-140023-5bfff842a1-quark_bicac_endpoint_obstruc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** All retained ray/support identities in the present packet are independent of kappa, so the distinct values sqrt(6/7), 48/49, and 1 witness a positive-width bridge interval and do not force kappa = 1.  _(class `A`)_
+- **chain closes:** False — The local algebraic non-uniqueness claim closes over the displayed retained atoms and bridge family. The retained-grade audit chain does not close because the source relies on the staggered-Dirac realization gate as an admitted context input, and the supplied authority is unaudited/bounded.
+- **rationale:** The load-bearing step is a direct algebraic non-uniqueness witness: the retained invariants omit kappa and remain unchanged at three distinct kappa values in the bridge interval. I independently checked rho * sqrt(6/7) = 1/7, supp * delta_A1 = 1/49, kappa_target = 48/49, sqrt(6/7) < 48/49 < 1, and the STRC-LO endpoint identity. The runner source performs finite arithmetic checks rather than a first-principles framework computation, and the obstruction is scoped to the ray/support-only packet rather than an absolute no-go. The cited staggered-Dirac realization authority is not retained-grade in the restricted packet, so the result remains conditional.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28`

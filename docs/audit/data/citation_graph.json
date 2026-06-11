@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "d3_upper_bound_import_scope_gate_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19",
         "quark_bimodule_norm_naturality_theorem_note_2026-04-19",
         "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
         "fifth_family_complex_note",
-        "d3_upper_bound_import_scope_gate_note_2026-06-06"
+        "d3_upper_bound_import_scope_gate_note_2026-06-06",
+        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ffd485d8b3e1ed89136e3f78a12dd1ec251af3f1bc24777681bfd6b41e235173",
+      "note_hash": "8cf28edf43538c7e193485f12a7bcc89cba03487313759e63f8cbd24afbd738d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

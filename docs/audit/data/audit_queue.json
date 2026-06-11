@@ -3,7 +3,7 @@
     "critical": 282,
     "high": 282,
     "leaf": 441,
-    "medium": 416
+    "medium": 415
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -17027,30 +17027,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_realization_gate_note_2026-05-03"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.172,
-      "note_path": "docs/QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_quark_bicac_endpoint_obstruction_theorem.py",
-      "transitive_descendants": 50
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "quark_bimodule_norm_naturality_theorem_note_2026-04-19",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17171,15 +17147,15 @@
         "s3_taste_cube_decomposition_note",
         "quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
+      "load_bearing_score": 6.322,
       "note_path": "docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_quark_generation_equivariant_ward_degeneracy_no_go.py",
-      "transitive_descendants": 3
+      "transitive_descendants": 19
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42784,6 +42760,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 32,
-  "total_pending": 1421
+  "ready_count": 31,
+  "total_pending": 1420
 }

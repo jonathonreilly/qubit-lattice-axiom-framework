@@ -1,0 +1,22 @@
+campaign: matter-cone-larger-cell
+created: 2026-06-11
+parent_campaign: kinetic-isotropy-derivation (blocks 01-07)
+cycle: 0
+status: launched — scoping cycle next
+target_status: open question (cone-slope ladder on larger cells)
+runtime_used: "0h"
+open_imports: [landed block06, current block07, PR-3545 1D template, PR-3543 W-IR derivation]
+no_go_routes: []
+trace_gate_classification: pending (cycle 1)
+pr_status: none
+stop_condition: >
+  slope-1 cone found (positive closure) OR a quantization theorem bounding
+  all licensed larger-cell cones away from 1 (no-go closure) OR two cycles
+  of infeasibility documentation (park).
+next_action: >
+  Cycle 1 scoping: (a) 4^3-cell licensed family skeleton + eta-twisted
+  gauges (cocycle generalization); (b) sigma-law generalization on the
+  blocked 2-tick composite read as a 64-component single tick; (c)
+  cone-slope census of every exactly solvable subfamily found. Budget
+  guard: orbit-reduce BEFORE any enumeration; cap all propagation trees;
+  structured seeds only.

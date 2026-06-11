@@ -130,3 +130,23 @@ next_trace_action: >
   realization or a U-T resolution; (3) audit-lane ratification of blocks
   01-06 + KS/scheme-forcing.
 ```
+
+---
+
+# Trace Gate — block07 (the U-T placement table)
+
+```yaml
+trace_class: direct_blocker_closure
+target_claim_id: kinetic_isotropy_primitive
+target_blocker_text: >
+  block06's U-T premise (E1 wording: "involves a tick-vs-blocked-application
+  unit choice — a premise of the same class as the chain's R-P reading") and
+  block06's sqrt-3 cone row.
+source_of_blocker_text: handoff
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: >
+  (1) audit-lane ratification of the chain (blocks 01-07 + KS/scheme-forcing);
+  (2) the merged single-tick placement reading's grade call; (3) the
+  larger-cell cone question = the successor campaign.
+```

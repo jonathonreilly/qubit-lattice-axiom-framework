@@ -17,11 +17,11 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 163 |
+| critical | `unaudited` | 162 |
 | high | `unaudited` | 161 |
 | medium | `unaudited` | 95 |
+| critical | `audited_conditional` | 3 |
 | critical | `open_gate` | 3 |
-| critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_numerical_match` | 2 |
@@ -100,7 +100,7 @@ publication tables phrase it.
 | critical | `koide_circulant_character_bridge_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `koide_circulant_character_derivation_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `koide_cl3_selector_gap_note_2026-04-19` | `open_gate` | `audited_clean` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
-| critical | `koide_full_lattice_schur_inheritance_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
+| critical | `koide_full_lattice_schur_inheritance_note_2026-04-18` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `koide_positive_parent_axis_obstruction_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |

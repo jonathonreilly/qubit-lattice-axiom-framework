@@ -113,10 +113,17 @@ or audit verdict is introduced here.
 - [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) for the
   selected-surface strong-CP premise whose mass-orientation part is only a
   candidate target here.
-- [`KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md`](KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md)
-  for the determinant-orbit context.
 - [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-  for the `AC_phi_lambda` gate context.
+  for the `AC_phi_lambda` gate surface on which the orientation lemma is
+  stated.
+
+Context (not load-bearing: both lemmas are self-contained algebra on their
+supplied classes — the determinant-character computation and the circulant
+conjugation identity — and use no content from the context note; the bridge
+that would supply the determinant-class readout is the named open above):
+
+- `KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md` for the
+  determinant-orbit context.
 
 **No-promotion statement:** this note does not promote, demote, or set the audit
 status of any dependency. The independent audit lane is the only status

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/higgs_tree_level_mean_field_runner_2026_05_03.py
-runner_sha256: 1801b51a6e567e705fb3964ad5b7e44adeb50cfb79b5078736ed96663a83b960
+runner_sha256: 96ed3bf576f25ec07b16ff5b26a59da5295de24ed60b0f56a4efcd3999895d58
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -26,6 +26,8 @@ status: ok
   [PASS][C] V_taste'(0) = 0 (symmetric point is an extremum; tachyonic maximum since V'' < 0)  (V'(0) fd = 0.00e+00)
   [PASS][C] exact N_c cancellation: per-color curvature identical at N_c in {1,2,3,4} (computed)  (spread = 0.00e+00)
   [PASS][C] falsification leg F1: time-only antiperiodic wrap gives D^2 = -I and det = (m^2 + u_0^2)^8 != (m^2 + 4 u_0^2)^8 — the all-direction B4 declaration is load-bearing
+  [PASS][C] Step 5(c) susceptibility: W''(0) = N_c N_taste/(4 u_0^2) from the computed determinant (finite difference vs analytic)  (fd = 15.577849410, analytic = 15.577848471)
+  [PASS][C] Step 5(c) per-color per-channel W''(0)/(N_c N_taste) = 1/(4 u_0^2) — equals the Step-4 per-channel curvature magnitude (same algebra; no double N_taste division)  (per-color per-channel = 0.324538529, 1/(4 u_0^2) = 0.324538510)
 
 --- [A] D1/C1 readout algebra over declared boundary inputs ---
   [PASS][A] two routes agree: v*sqrt((4/u_0^2)/N_taste) == v/(2 u_0)  (140.2673027333 vs 140.2673027333)
@@ -51,8 +53,8 @@ status: ok
   [PASS][D] comparator: hierarchy-lane bounded v = 246.2828 GeV vs PDG v_obs = 246.22 GeV differ by +0.0255% (context only; neither derived here)  (rel = +0.0255%)
 
 ==============================================================================
- Breakdown: A=6 B=9 C=12 D=2
- TOTAL: PASS=29 FAIL=0
+ Breakdown: A=6 B=9 C=14 D=2
+ TOTAL: PASS=31 FAIL=0
 ==============================================================================
 
 ----- stderr -----

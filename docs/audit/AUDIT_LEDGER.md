@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 824 |
+| **retained_bounded** | 825 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1404 |
+| unaudited | 1403 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1268 |
+| `audited_clean` | 1269 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1720 |
+| `unaudited` | 1719 |
 
 | claim_type | count |
 |---|---:|
@@ -807,6 +807,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_beta_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_centroid_multipole_no_go_bounded_theorem_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_finite_path_explanation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_long_path_test_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -11601,6 +11602,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** At H=0.25 on b ∈ {3,4,5,6}, kubo_true follows a clean log-log power law with slope ≈ -1.43 and R² = 0.998, so the retained result is a non-standard power law rather than 1/b lensing.  _(class `A`)_
 - **chain closes:** True — The bounded arithmetic claim closes from the supplied per-b values and runner fit. This does not establish continuum stability, a generated-from-first-principles H=0.25 replay, other families, larger-b asymptotics, or standard 1/b lensing.
 - **rationale:** The runner parses/checks the cached H=0.25 values and performs the log-log slope/R² calculation; the reported slope, R², and non-1/b margin follow arithmetically from those fixed inputs. The runner is not a first-principles recomputation of the fine H=0.25 model values, but the note and selector firewall explicitly restrict the retained claim to the bounded cached slope-fit certificate. Residual risk is confined to any broader reading that treats four selected cached points as a continuum-stable physical law.
+- **auditor confidence:** high
+
+### `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the specified Fam1 lensing harness edge-kernel mechanism: computed signed edge coefficients have negligible monopole, localized support, a small-window -1.43 replay at H=0.25, steeper signed large-b falloff, and a non-cancelling |c| control returning 1/b. No continuum asymptotic exponent, exact dipole theorem, other-family result, or standard lensing claim was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-144903-9111a33942-lensing_exponent_is_a_dipole`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because alpha(b)=sum_e c_e/r_e(b) has |sum c|/sum|c| approximately zero and the b={3,4,5,6} window is comparable to the |c|-weighted kernel support, the 1/b monopole term cancels and the measured -1.43 is a crossover between monopole and steeper signed-multipole regimes.  _(class `C`)_
+- **chain closes:** True — The retained cited authorities supply the observed H=0.25 slope and L-independence, while the included runner chain computes the fixed edge coefficients from the framework propagator/adjoint and verifies cancellation, support, crossover, and the |c| control. Independently, the large-b expansion of sum_e c_e/r_e(b) gives a leading (sum c)/b term, so the computed near-zero sum c removes the monopole while replacing c_e by |c_e| restores the 1/b leading term.
+- **rationale:** The load-bearing mechanism is computed from the lattice/adjoint harness rather than introduced as a definition or tuned comparator match. The H=0.25 source-certificate and manifest checks are cross-artifact guards, but the cancellation, support, signed large-b falloff, and |c| control are genuine framework computations, and the independent multipole expansion verifies the core math. The clean result is bounded to the stated finite harness and corrected framing; the exact continuum signed-tail order remains outside the claim.
 - **auditor confidence:** high
 
 ### `lensing_finite_path_explanation_note`

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 207 |
+| **retained_no_go** | 208 |
 | **retained_bounded** | 825 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1402 |
+| unaudited | 1401 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1269 |
+| `audited_clean` | 1270 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1718 |
+| `unaudited` | 1717 |
 
 | claim_type | count |
 |---|---:|
@@ -1081,6 +1081,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_delay_proxy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `ring_monodromy_does_not_force_car_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15725,6 +15726,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting T^a_Rbar := -(T^a_R)^* into Tr_R[T^a_R {T^b_R, T^c_R}] gives one overall minus sign for the cubic trace, hence A(Rbar) = -A(R); with A(3)=1 this gives A(3bar)=-1 and two copies give -2.  _(class `A`)_
 - **chain closes:** True — Both one-hop dependencies are retained-grade: cl3_color_automorphism_theorem supplies the Gell-Mann SU(3) carrier and su3_dabc_symmetric_theorem_note_2026-05-02 supplies the d^{abc} decomposition. The proof is finite-dimensional trace algebra, and the exact-symbolic runner reports PASS=26 FAIL=0 for the carrier, d/f tables, conjugate representation, anomaly-index sign flip, A(3bar)=-1, two-fermion -2 contribution, and consistency probes.
 - **rationale:** The narrow theorem closes on its stated algebraic scope. The load-bearing sign flip is the odd-generator parity of the cubic anomaly trace under the complex-conjugate representation, using retained SU(3) carrier and d^{abc} inputs plus standard finite-dimensional trace algebra. The runner checks the contested algebra symbolically and does not import PDG data, fitted constants, matter-content existence, SM hypercharge, Lorentz/CPT, or continuum physics. The no-go discipline gate is satisfied as a scope guard: the source names the parent existence-side residual but does not claim that residual is impossible or closed. Residual risk is downstream overuse; this verdict cannot be cited as retained existence of u_R,d_R, physical SM color, uniqueness of the completion, or full SU(3)^3 anomaly cancellation.
+- **auditor confidence:** high
+
+### `ring_monodromy_does_not_force_car_note_2026-06-04`
+
+- **Note:** [`RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md`](../../docs/RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the explicit finite one-qubit-per-site periodic ring, RP/emergent-time T-positivity of T=exp(-tau H), parity-sector positivity, parity conservation, ordinary locality checks, flux twists, and the tested monodromy/single-valuedness consistency do not reject the HCB ring or force the CAR/graded ring algebra; selecting CAR requires the graded boundary condition/FS premise as an input.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-dcf6109745-ring_monodromy_does_not_forc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Both the HCB and CAR ring Hamiltonians are finite Hermitian parity-conserving operators whose transfer matrices are positive overall and in each parity sector, so RP/T-positivity plus the tested loop single-valuedness data certify both and do not select CAR.  _(class `C`)_
+- **chain closes:** True — The source and runner construct the HCB and JW/CAR Hamiltonians directly from the finite Pauli tensor algebra, and the independent spectral-theorem check is enough: finite Hermitian H gives positive exp(-tau H), with the same conclusion after parity restriction. The packet does not derive FS, and the claim correctly treats FS/graded loop boundary conditions as the unproved posit rather than as an output.
+- **rationale:** The load-bearing computation is framework-internal finite matrix algebra, not a numerical match, external comparator, or definition substitution. The retained/accepted cited authorities are sufficient for the Pauli parity grading and finite positive-transfer vocabulary, and the minimal-axiom citation is covered by the accepted-premise carve-out. The no-go discipline gate is satisfied for the scoped claim: the note tests multiple candidate CAR-forcing routes and keeps broader future routes, such as emergent pi_1 and multi-loop Z^3 graded-net consistency, explicitly outside the closed result.
 - **auditor confidence:** high
 
 ### `rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06`

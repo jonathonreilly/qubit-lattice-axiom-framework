@@ -18,5 +18,27 @@ Findings and fixes applied before commit:
    single-generator Berezin left-integration; first-power identity now
    verified uniformly (checks 6-7).
 
-Disposition: **pass** (local). Independent audit and external review
-still required; the note's status lines say so explicitly.
+Branch self-review disposition: **source proposal passed local pre-PR
+review**. Independent audit and external review still required; the
+note's status lines say so explicitly.
+
+## 2026-06-11 block02 local self-review (pre-PR)
+
+1. **Refinement of block01's headline made explicit, not buried:** the
+   channel-general localization has TWO antiunitary tying classes
+   (K-real cross-block gamma = conj beta; Hermitian in-block z zbar);
+   block01's c = conj(b) line is the circulant locus where they
+   coincide. The block02 note states this as a refinement of block01
+   in its Role section.
+2. **Universal quantifier discipline:** "every channel" is over the
+   computed 24-dim commutant (dimension verified two independent ways,
+   lattice realizability exhibited), with bilinear/equivariant scope
+   declared as residuals — not an open-ended family claim.
+3. **Stray construction removed** (unused projector split in check 16's
+   setup) before commit.
+
+Branch self-review disposition: **source proposal passed local pre-PR
+review**. Independent audit still required.
+
+Cluster-cap status: block02 is the 2nd PR in the koide parent-row family
+this campaign — below the 3-PR evaluator threshold.

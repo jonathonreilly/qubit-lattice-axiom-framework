@@ -77,8 +77,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3298 |
 | Critical nodes | 509 |
 | High nodes | 501 |
-| Medium nodes | 884 |
-| Leaf nodes | 1404 |
+| Medium nodes | 883 |
+| Leaf nodes | 1405 |
 
 Top load-bearing rows by graph score:
 

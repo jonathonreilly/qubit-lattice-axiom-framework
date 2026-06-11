@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1428 |
+| unaudited | 1427 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 26 |
+| ~~audited_conditional~~ | 27 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1261 |
-| `audited_conditional` | 26 |
+| `audited_conditional` | 27 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1744 |
+| `unaudited` | 1743 |
 
 | claim_type | count |
 |---|---:|
@@ -1408,6 +1408,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10070,6 +10071,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The positive-definite region alpha > 0 and alpha + 3 beta > 0 contains beta != 0 examples such as alpha = beta = 1, so the stated linear-algebra premises do not force the Frobenius normalization beta = 0.  _(class `A`)_
 - **chain closes:** True — The scalar/traceless decomposition gives weights alpha + 3 beta and alpha, so positive-definiteness only imposes alpha > 0 and alpha + 3 beta > 0. The explicit alpha = beta = 1 witness satisfies those conditions while changing the scalar/traceless ratio, closing the bounded no-go.
 - **rationale:** The displayed decomposition B(A,A) = (alpha + 3 beta) Tr(A_s^2) + alpha Tr(A_t^2), the positivity conditions, and the alpha = beta = 1 counterexample check algebraically under the note's definitions. The runner source performs symbolic decomposition and witness checks rather than merely printing a pass total. The no-go is scoped narrowly to the listed linear-algebra premises and explicitly leaves independent future normalizations out of scope, so it does not overclaim an absolute obstruction.
+- **auditor confidence:** high
+
+### `koide_full_lattice_schur_inheritance_note_2026-04-18`
+
+- **Note:** [`KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18.md`](../../docs/KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the algebraic Schur-inheritance claim: a C3-covariant parent on V = T_1 plus W induces a C3-covariant Schur complement on T_1, and an axis-diagonal such block is scalar.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-133402-5d83dde3a9-koide_full_lattice_schur_inh`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If D is invertible and S = A - B D^(-1) B^dagger is the Schur complement onto T_1, then C S = S C, so the reduced operator is circulant.  _(class `A`)_
+- **chain closes:** True — The block covariance equations imply C A = A C, C B = B R, R D = D R, hence D^(-1) commutes with R and the Schur complement commutes with C. The axis-diagonal scalar collapse also follows directly because a diagonal matrix commuting with the 3-cycle has equal diagonal entries.
+- **rationale:** The load-bearing theorem is a genuine algebraic closure, not a renaming or numerical match, and the runner source performs representation and Schur-complement checks rather than merely printing constants. However, the physical interpretation depends on the staggered-Dirac realization gate / T_1 charged-lepton carrier authority, which is provided here as an unaudited bounded theorem rather than retained-grade input. Therefore the scoped algebra closes, but the row is not eligible for audited_clean under the dependency rule.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`

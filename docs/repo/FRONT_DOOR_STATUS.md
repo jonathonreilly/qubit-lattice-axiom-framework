@@ -11,17 +11,17 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3128 |
-| Applied audit verdicts | 1424 |
-| Retained-grade rows, including boxed decorations | 1289 |
+| Ledger rows | 3161 |
+| Applied audit verdicts | 1400 |
+| Retained-grade rows, including boxed decorations | 1286 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 819 |
+| Retained bounded rows | 816 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1386 |
+| Unaudited rows | 1438 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 34 |
+| Audited conditional rows | 19 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,18 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1388 |
-| Ready rows | 2 |
+| Total pending rows | 1445 |
+| Ready rows | 45 |
 | Cycle-break targets | 0 |
-| Critical pending | 283 |
-| High pending | 279 |
-| Medium pending | 404 |
-| Leaf pending | 422 |
+| Critical pending | 303 |
+| High pending | 285 |
+| Medium pending | 420 |
+| Leaf pending | 437 |
 
 Next ready rows by queue order:
 
-- [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
-- [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
+- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
+- [`spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md) - critical; audit_in_progress
+- [`single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
+- [`single_clock_uniqueness_scope_boundary_2026-06-06`](../../docs/SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md) - critical; audit_in_progress
+- [`quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md) - critical; audit_in_progress
+- [`axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
+- [`axiom_first_spin_statistics_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
+- [`microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -55,11 +61,10 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 163 |
+| critical | `unaudited` | 165 |
 | high | `unaudited` | 161 |
 | medium | `unaudited` | 95 |
 | critical | `open_gate` | 3 |
-| critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_numerical_match` | 2 |
@@ -74,19 +79,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3265 |
-| Critical nodes | 486 |
-| High nodes | 485 |
-| Medium nodes | 879 |
-| Leaf nodes | 1415 |
+| Citation-graph nodes | 3298 |
+| Critical nodes | 509 |
+| High nodes | 501 |
+| Medium nodes | 883 |
+| Leaf nodes | 1405 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1472 descendants; score 112.025
-- `three_generation_observable_theorem_note` - critical; 994 descendants; score 61.959
-- `graph_first_su3_integration_note` - critical; 1341 descendants; score 60.890
-- `observable_principle_from_axiom_note` - critical; 854 descendants; score 58.240
-- `minimal_axioms_2026-05-03` - critical; 970 descendants; score 48.423
-- `key_terminology` - critical; 1185 descendants; score 47.212
-- `cl3_color_automorphism_theorem` - critical; 979 descendants; score 41.437
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 919 descendants; score 41.345
+- `minimal_axioms` - critical; 1503 descendants; score 122.555
+- `three_generation_observable_theorem_note` - critical; 1016 descendants; score 63.490
+- `graph_first_su3_integration_note` - critical; 1358 descendants; score 60.908
+- `observable_principle_from_axiom_note` - critical; 862 descendants; score 59.253
+- `minimal_axioms_2026-05-03` - critical; 971 descendants; score 47.425
+- `key_terminology` - critical; 1189 descendants; score 47.217
+- `cl3_color_automorphism_theorem` - critical; 997 descendants; score 41.463
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 937 descendants; score 41.373

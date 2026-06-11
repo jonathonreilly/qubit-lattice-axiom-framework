@@ -19,10 +19,10 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 162 |
 | high | `unaudited` | 159 |
-| medium | `unaudited` | 93 |
+| medium | `unaudited` | 92 |
+| medium | `audited_conditional` | 4 |
 | critical | `audited_conditional` | 3 |
 | critical | `open_gate` | 3 |
-| medium | `audited_conditional` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_conditional` | 2 |
@@ -442,7 +442,7 @@ publication tables phrase it.
 | medium | `pmns_transfer_operator_dominant_mode_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `quark_bimodule_norm_naturality_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `quark_bimodule_norm_naturality_theorem_note_2026-04-19` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `quark_endpoint_denominator_admissibility_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | medium | `quark_jts_physical_point_closure_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `quark_up_amplitude_scalar_comparison_bridge_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |

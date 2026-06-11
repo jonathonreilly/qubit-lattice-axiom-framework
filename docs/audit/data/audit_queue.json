@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 295,
+    "critical": 294,
     "high": 284,
     "leaf": 439,
     "medium": 421
@@ -10,31 +10,31 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
-      "claim_scope": "Free U=1 bilinear staggered two-step sector for the stated symbol E_d(p)=arcsinh(sqrt(m^2+sum sin^2 p_mu)): explicit exponential kernel bound and support-family/tail quasilocality for m>0, d=1 sharpness by branch obstruction, declared Z^3 carrier upper bound with numerical axis-rate confirmation, and strict R<=2 finite-range failure on the exhibited bilinear sector.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
+        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "minimal_axioms"
       ],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.402,
-      "note_path": "docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "audit_in_progress",
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py"
+      ],
+      "load_bearing_score": 10.399,
+      "note_path": "docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py",
-      "transitive_descendants": 956
+      "runner_path": "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
+      "transitive_descendants": 954
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -435,34 +435,6 @@
       "ready": false,
       "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
       "transitive_descendants": 965
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py"
-      ],
-      "load_bearing_score": 10.399,
-      "note_path": "docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
-      "transitive_descendants": 954
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -43268,5 +43240,5 @@
     }
   ],
   "ready_count": 46,
-  "total_pending": 1439
+  "total_pending": 1438
 }

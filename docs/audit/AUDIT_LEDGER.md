@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 818 |
+| **retained_bounded** | 819 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
 | unaudited | 1435 |
-| audit_in_progress | 1 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1258 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1259 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1284,6 +1282,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `translation_abelian_composition_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -18438,6 +18437,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner checks the finite algebra and arithmetic after these conventions are fixed.  _(class `A`)_
 - **chain closes:** True — The bounded certificate closes only after the source's explicit Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula are fixed as standard inputs. It does not derive Yang-Mills topology from Cl(3)/Z3 or close global smooth-bundle/existence theorems.
 - **rationale:** Clean only as a bounded finite certificate, not as a derivation of Yang-Mills topology from Cl(3)/Z3. The note makes the Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula explicit fixed inputs rather than hidden imports. Fresh-context independent checks confirmed *^2=1 and the Bogomolny inequality algebra, the BPST substitution gives 2*pi^2 * 4 = 8*pi^2, and the listed twist examples give k/N as claimed.
+- **auditor confidence:** high
+
+### `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the free U=1 bilinear staggered two-step sector with symbol E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), including the upstream-derived d=1 case and the explicitly declared d=3 carrier, the log-transfer hopping kernel is exponentially quasilocal for m>0 with the stated prefactor; d=1 sharpness is proved, d=3 axis sharpness is numerical, and the exact bilinear H is not diameter-2 finite range.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-122018-d793b464f0-transfer_matrix_log_quasiloc`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** After proving Re w >= m^2 - sinh^2 eta > 0 and |E_d(p)| <= C_d(eta,m) on the shifted strip, the proof shifts the p_mu contour to Im p_mu = -eta sgn(z_mu) and obtains |h(z)| <= a_tau^{-1} C_d(eta,m) e^{-eta ||z||_inf}.  _(class `A`)_
+- **chain closes:** True — The exponential bound follows by standard strip analyticity and contour shifting from the retained two-step symbol and normalization inputs. The support-family translation uses the retained tensor-product hopping convention, and the range-4 nonzero coefficients are independently supported by direct quadrature from the same symbol rather than by a hidden finite-range premise.
+- **rationale:** All cited authorities in the restricted packet are retained-grade or decoration under retained-grade status. The load-bearing analytic estimate closes from the displayed symbol, and the runner source performs substantive strip, Fourier-kernel, tail, truncation, and falsification checks rather than printing constants. The scoped negative is not an absolute locality no-go: it only rules out diameter <= 2 finite range on the free bilinear two-step sector, while explicitly preserving the proved quasilocal route and leaving gauged/interacting locality open.
 - **auditor confidence:** high
 
 ### `translation_abelian_composition_theorem_note_2026-05-02`

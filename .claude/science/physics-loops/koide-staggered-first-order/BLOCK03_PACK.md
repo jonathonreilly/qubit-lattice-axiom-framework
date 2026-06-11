@@ -91,3 +91,39 @@ opened this session without a fresh evaluation.
 
 Branch self-review disposition: source proposal passed local pre-PR review.
 Independent audit required.
+
+---
+
+# Block04 addendum (2026-06-11) — OO/R-D premise equivalence
+
+Branch: physics-loop/koide-oo-rd-equivalence-block04-20260611 (stacked on
+the flavor scope-corrections branch, which stacks on block03).
+
+Result: on the registered surface OO and R-D force the identical
+configuration (r, Q, rho, Z_d) = (1/2, 2/3, 1, pi/g) and the same
+spectrum (extensional equivalence); strictly inequivalent off the side
+conditions (witnesses: delta-free r=0 model; signed-branch r=infinity
+endpoint — both R-D-consistent, OO-violating; no converse witness given
+the Lueders grounding). The owner decision is ONE decision with two
+formulations. Runner 9/9, 4 residuals.
+
+Cluster-cap evaluation (4th koide-family PR this campaign): new
+load-bearing content = the consequence-level equivalence theorem with
+computed separation witnesses and the one-decision corollary — not a
+relabeling of blocks 01-03 (different claim: premise relation, not
+premise consequence); independently reviewable; completes the decision
+input the campaign was asked to produce. Verdict: OPEN. (Volume cap
+removed by owner decision 2026-06-11 — see governance PR; quality gates
+V1-V5/N1-N8 applied and recorded here.)
+
+V1: closes the named open question of the block03 note ("whether they
+are equivalent, independent, or one implies the other on the current
+surface is an open, checkable question").
+V2: new content: the orientation-guard-reproduced OO chain, the tuple
+identity, the two separation witnesses, the barycenter-fixed-point
+one-way relation.
+V3: no — requires the lane's landed rho-map, stationary set, and
+registered content; not generic math.
+V4: yes — collapses two pending premise candidates into one decision.
+V5: no — block03 proved the R-D chain; this block proves the RELATION
+between R-D and OO; distinct structure.

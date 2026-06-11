@@ -41,16 +41,21 @@ boundary B1 of
   identification of the framework's physical per-site Hilbert space
   with the Cl(3) faithful complex irrep was out of scope, so the
   two-candidate collapse was bounded on that open bridge. That boundary
-  is now discharged by a one-hop authority that did not exist
-  when this note was written:
-  `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
-  (ratified 2026-05-20; re-audited 2026-06-05) closes U4 directly from the Quantum axiom's
-  one-qubit-per-site content: `H_x = ℂ²` is the unique faithful complex
-  irreducible module of `M_2(ℂ) ≅ Cl(3,0)`, with multiplicity
-  `k(x) = 1`. Composed with the conditional theorem (C1) of
+  is now discharged by content that did not exist on the axiom surface
+  when this note was written: the Quantum axiom's one-qubit-per-site
+  clause with per-site multiplicity `k(x) = 1` (ratified into the axiom
+  surface 2026-05-22, commit `f471b5bd6`; persisting verbatim on
+  `MINIMAL_AXIOMS_2026-06-05.md`). The audit lane has since graded the
+  packaging row `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
+  `audited_renaming` — its content is the axiom baseline itself, not a
+  derivation — so this note grounds the U4 input directly on the axiom:
+  `k(x) = 1` from the Quantum axiom; `H_x = ℂ²` as the unique faithful
+  complex irreducible module of `M_2(ℂ) ≅ Cl(3,0)` via the conditional
+  theorem (C1) of
   `STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`
-  (`k = 1 ⇒ dim_C H_x = 2`, whose conditional premise `k = 1` is exactly
-  what the U4 closure supplies), the dimensional readout (D1)–(D2)
+  (`k = 1 ⇒ dim_C H_x = 2`, audited clean over the retained
+  complexification split; its conditional premise `k = 1` is exactly
+  what the axiom supplies). With that, the dimensional readout (D1)–(D2)
   becomes a statement about the physical per-site Hilbert space, and
   the two-candidate surface collapses to the single Grassmann
   candidate (D5). Claim type upgraded `bounded_theorem →
@@ -167,16 +172,21 @@ Three events since then change the boundary structure:
   `PER_SITE_K_EQUALS_1_RATIFICATION_REAUDIT_MANIFEST_NOTE_2026-05-22.md`),
   and the one-qubit-per-site content persists verbatim on the current
   axiom surface (`MINIMAL_AXIOMS_2026-06-05.md`, Quantum axiom).
-- **2026-06-05.** The U4 closure row was re-audited and now has
-  retained-grade positive-theorem status on the live ledger — a one-hop
-  authority for exactly the object this note previously admitted.
+- **2026-06-05 / 2026-06-10.** The U4 packaging row was re-audited and
+  subsequently graded `audited_renaming` on the live ledger: its
+  decisive move is the identification of the former U4 bridge with the
+  one-qubit-per-site carrier the Quantum axiom already supplies —
+  baseline content, not a derivation. The object this note previously
+  admitted is therefore supplied by the axiom surface directly
+  (`k(x) = 1` clause, ratified 2026-05-22), composed with (C1).
 - **2026-05-25 / 2026-06-05.** The statistics-agnostic no-go
   `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`
   was independently ratified, establishing that the two-candidate
   surface omits the hard-core-boson frame and that statistics is not
   forced by the baseline plus dimension/operator-algebra data alone.
 
-This revision therefore (i) consumes the retained U4 closure and
+This revision therefore (i) consumes the Quantum axiom's
+one-qubit-per-site content composed with (C1) and
 discharges the former "U4 bridge remains open" boundary, upgrading the
 two-candidate collapse to an unconditional theorem on the physical
 per-site space (D5); and (ii) records honestly, in agreement with the
@@ -188,27 +198,22 @@ input (§8).
 
 Load-bearing markdown-link upstream dependencies:
 
-- [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
-  — retained `positive_theorem` (re-audited 2026-06-05). Delivers the
-  U4 closure consumed in (D1), (D2), (D5): for every site `x ∈ Z^3`,
-  the per-site physical Hilbert space is `H_x = ℂ²`, the unique
-  faithful complex irreducible module of `M_2(ℂ) ≅ Cl(3,0)`, with
-  multiplicity `k(x) = 1`, supplied by the Quantum axiom's
-  one-qubit-per-site content. Interface check performed for this
-  revision: delivered object = consumed object exactly — the module is
-  complex (C-linear `M_2(ℂ)`-action), faithful (the real-algebra map
+- [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
+  — retained_bounded (audited clean as a class-A algebraic consequence
+  of the retained complexification split). Consumed strictly within its
+  bounded scope: conditional sub-claim (C1) (`k = 1 ⇒ dim_C H_x = 2`)
+  and the multiplicity enumeration (M1)–(M2). Its conditional premise
+  (`k = 1`) is exactly the Quantum axiom's one-qubit-per-site clause
+  (per-site `k(x) = 1`, ratified into the axiom surface 2026-05-22), so
+  the composition `axiom ∘ C1` is conditional on nothing open. The
+  delivered object is checked at the interface: the module is complex
+  (C-linear `M_2(ℂ)`-action), faithful (the real-algebra map
   `γ_i ↦ σ_i` is an isomorphism onto `M_2(ℂ)`; 8-dim real span),
   irreducible (scalar commutant), and single-copy (`k = 1`); these are
   re-verified at exact symbolic precision by the runner (§9, Part 8).
-- [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
-  — retained_bounded. Consumed strictly within its bounded scope:
-  conditional sub-claim (C1) (`k = 1 ⇒ dim_C H_x = 2`) and the
-  multiplicity enumeration (M1)–(M2). Its conditional premise
-  (`k = 1`) is exactly what the retained U4 closure supplies, so the
-  composition `U4 ∘ C1` is conditional on nothing open. Its
-  counter-example surface (`k ≥ 2`) is reused here as the
-  falsification leg: without the U4 input the collapse fails (§9,
-  Part 9).
+  Its counter-example surface (`k ≥ 2`) is reused here as the
+  falsification leg: without the axiom's `k = 1` input the collapse
+  fails (§9, Part 9).
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
   — retained. Provides the abstract Cl(3) faithful complex-irrep
   dim = 2 readout and the `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` split
@@ -223,13 +228,15 @@ Load-bearing markdown-link upstream dependencies:
   admission, so the boundedness does not propagate an open admission
   into (D2)/(D4).
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
-  — current axiom surface (chain-satisfying axiom premise node). Cited
-  for the interface check that the Quantum axiom's one-qubit-per-site
-  content ("the primitive physical local degree of freedom is one
-  qubit; equivalently `A_x ≅ M_2(C)`, equivalently `Cl(3,0)`") is
-  identical in content to the 2026-05-20 qubit baseline that the U4
-  closure note consumes, so the U4 authority's licensing premise is
-  still on the live axiom surface.
+  — current axiom surface (chain-satisfying axiom premise node).
+  Carries the U4 input consumed in (D1), (D2), (D5): the Quantum
+  axiom's one-qubit-per-site content ("the primitive physical local
+  degree of freedom is one qubit; equivalently `A_x ≅ M_2(C)`,
+  equivalently `Cl(3,0)`"), including the per-site multiplicity
+  `k(x) = 1` clause ratified 2026-05-22. The former packaging row
+  `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md` is
+  graded `audited_renaming` (same content, axiom baseline) and is kept
+  below as a reader pointer only.
 
 No other note's effective status is consumed.
 
@@ -335,24 +342,23 @@ one. ∎
 
 ### 5.5 (D5) composition: U4 discharge and two-candidate collapse
 
-**Step 1 (retained U4 input).** By
-`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
-(retained `positive_theorem`), the framework's per-site physical
-Hilbert space on the `Z^3` substrate is `H_x = ℂ²`, the unique
-faithful complex irreducible module of `M_2(ℂ) ≅ Cl(3,0)`, with
-multiplicity `k(x) = 1`. The licensing premise — one qubit per site —
-is the Quantum axiom on the current axiom surface
-(`MINIMAL_AXIOMS_2026-06-05.md`), identical in content to the
-2026-05-20 qubit baseline the U4 note consumes; axiom premise nodes
-chain-satisfy without bounding.
+**Step 1 (axiom U4 input).** By the Quantum axiom on the current
+axiom surface (`MINIMAL_AXIOMS_2026-06-05.md`), the framework's
+per-site primitive physical degree of freedom on the `Z^3` substrate
+is one qubit with per-site multiplicity `k(x) = 1` (clause ratified
+2026-05-22); axiom premise nodes chain-satisfy without bounding. The
+former packaging row
+`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md` is
+graded `audited_renaming` (its content is this axiom baseline), so the
+input is taken from the axiom directly.
 
 **Step 2 (multiplicity mechanics).** By (C1) of the cited
 single-module narrow bounded theorem, `k(x) = 1 ⇒ dim_C H_x = 2`. The
 conditional premise `k(x) = 1` is supplied by Step 1, so
-`dim_C H_x = 2` holds with no open conditional. (Step 1's authority
-also states `dim_C H_x = 2` directly; citing (C1) makes the
-composition's multiplicity mechanics explicit and reuses its audited
-enumeration (M1)–(M2).)
+`dim_C H_x = 2` holds with no open conditional, and `H_x = ℂ²` is the
+unique faithful complex irreducible module of `M_2(ℂ) ≅ Cl(3,0)` by
+(C1)'s audited enumeration (M1)–(M2) over the retained
+complexification split.
 
 **Step 3 (collapse).** Substituting the Step-2 physical readout into
 (D1)–(D3): candidate (B) is excluded (`ℵ_0 ≠ 2`), candidate (G)
@@ -536,9 +542,8 @@ including one `SCOPE-BOUNDARY (declared, not claimed): ...` line for
 
 ## 10. Cross-references
 
-Load-bearing markdown-link upstream (five one-hop dependencies):
+Load-bearing markdown-link upstream (four one-hop dependencies):
 
-- [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
 - [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -549,6 +554,11 @@ cleanup pattern, these are written without markdown links so the
 citation-graph builder does not parse them as upstream dependency
 edges:
 
+- `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
+  — `audited_renaming` packaging row for the same axiom-baseline
+  content this revision consumes directly from the Quantum axiom; kept
+  as a reader pointer per its verdict (baseline content, not a
+  derivation); not a premise of (D1)–(D5).
 - `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`
   — retained no-go establishing that the two-candidate surface is not
   statistics-exhaustive (hard-core-boson frame); source of the (B-stat)

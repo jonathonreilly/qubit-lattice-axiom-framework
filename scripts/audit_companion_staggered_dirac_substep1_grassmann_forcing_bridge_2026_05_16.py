@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact-symbolic audit-companion runner for
 `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-(2026-06-10 science-fix revision: U4 boundary discharged).
+(2026-06-10 science-fix revision: U4 boundary discharged via the Quantum axiom k=1 clause + C1).
 
 The note's load-bearing content is the two-candidate collapse on the
 framework's physical per-site Hilbert space:
@@ -13,10 +13,11 @@ framework's physical per-site Hilbert space:
 
 Given the cited one-hop authorities
 
-  - U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20
-    (retained: H_x = C^2 is the single faithful complex irreducible
-    Cl(3,0) ~= M_2(C) module, multiplicity k = 1, from the Quantum
-    axiom's one-qubit-per-site content)
+  - MINIMAL_AXIOMS_2026-06-05 (Quantum axiom, accepted premise node:
+    one qubit per site with per-site multiplicity k = 1, clause
+    ratified 2026-05-22; the former U4 packaging row
+    U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20 is
+    graded audited_renaming -- same content, axiom baseline)
   - STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE narrow
     bounded note (C1: k = 1 => dim_C H_x = 2; multiplicity enumeration)
   - CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10
@@ -43,7 +44,7 @@ finite-dim complex matrices. The 2026-06-10 revision adds:
 
 Companion role: not a new claim row; provides audit-friendly evidence
 that the note's load-bearing algebraic content holds at exact symbolic
-precision, that the consumed retained U4 authority is load-bearing
+precision, that the consumed axiom k=1 input is load-bearing
 (falsification leg), and that the declared scope boundary is visible
 in the verified stdout.
 """
@@ -349,13 +350,14 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 8: (D5) U4 composition certificate (retained one-hop authority)")
+    section("Part 8: (D5) U4 composition certificate (Quantum axiom k=1 composed with C1)")
     # =========================================================================
-    # The retained U4 closure delivers: H_x = C^2 is the single faithful
-    # complex irreducible Cl(3,0) ~= M_2(C) module, k = 1. The interface
-    # facts (complex-linear, faithful, irreducible, single chirality) are
-    # re-verified here at exact symbolic precision, then composed with
-    # (D1)-(D3) into the collapse certificate.
+    # The Quantum axiom supplies k = 1 (one qubit per site); composed with
+    # (C1) of the retained_bounded single-module row this delivers: H_x = C^2
+    # is the single faithful complex irreducible Cl(3,0) ~= M_2(C) module.
+    # The interface facts (complex-linear, faithful, irreducible, single
+    # chirality) are re-verified here at exact symbolic precision, then
+    # composed with (D1)-(D3) into the collapse certificate.
 
     def real_span_rank(mats: list) -> int:
         """Rank over R of complex 2x2 (or nxn) matrices, flattened to
@@ -420,7 +422,7 @@ def main() -> int:
     dim_Hx = cl3_carrier_dim
     k_multiplicity = dim_Hx // 2
     check(
-        "(D5) dim_C H_x = 2 = 2k with k = 1 (U4 closure composed with C1)",
+        "(D5) dim_C H_x = 2 = 2k with k = 1 (Quantum-axiom k=1 composed with C1)",
         dim_Hx == 2 and k_multiplicity == 1,
         detail=f"dim_C H_x = {dim_Hx}, k = {k_multiplicity}",
     )
@@ -443,14 +445,14 @@ def main() -> int:
     )
     print(
         "  COLLAPSE CERTIFICATE: on the physical per-site Hilbert space"
-        " (retained U4 closure, dim_C H_x = 2, k = 1), the two-candidate"
+        " (Quantum-axiom k=1 composed with C1, dim_C H_x = 2), the two-candidate"
         " surface {G, B} collapses to the single-pair Grassmann candidate (G)."
     )
 
     # =========================================================================
-    section("Part 9: (D5) falsification leg — collapse fails without the U4 input")
+    section("Part 9: (D5) falsification leg — collapse fails without the axiom k=1 input")
     # =========================================================================
-    # Without the retained U4/k=1 authority, the abstract algebraic surface
+    # Without the axiom's k=1 input, the abstract algebraic surface
     # admits faithful Cl(3) modules at every k >= 1. Exhibit k = 2:
     # rho_+ (+) rho_+ on C^4 satisfies the Clifford relations, is faithful,
     # and has dim_C = 4 — on it the single-pair Grassmann match FAILS while
@@ -495,7 +497,7 @@ def main() -> int:
     )
     dim_k2 = G4[0].shape[0]
     check(
-        "(falsif) k = 2 module has dim_C = 4 != 2: admissible without the U4 input",
+        "(falsif) k = 2 module has dim_C = 4 != 2: admissible without the axiom k=1 input",
         dim_k2 == 4 and dim_k2 != dim_Hx,
         detail=f"dim_C = {dim_k2}",
     )
@@ -561,7 +563,7 @@ def main() -> int:
     print("    Counterfactual: dropping nilpotency loses the dim-2 readout")
     print("    (D5) U4 composition certificate: Cl(3,0) ~= M_2(C) faithful iso,")
     print("         irreducible on C^2, single chirality, k = 1 => collapse to (G)")
-    print("    (D5) Falsification leg: k = 2 module defeats the collapse without U4")
+    print("    (D5) Falsification leg: k = 2 module defeats the collapse without the axiom k=1 input")
     print("    (B-stat) Scope boundary: hard-core-boson frame ties on dimension;")
     print("         statistics selection declared open, not claimed")
 

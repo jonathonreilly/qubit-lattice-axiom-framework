@@ -1,6 +1,6 @@
 # Weak-Field Source-Response Bridge for the Gravity Clean Chain
 
-**Date:** 2026-06-11
+**Date:** 2026-06-11. Test-force sign repair: 2026-06-11.
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome.
@@ -60,9 +60,15 @@ bounded finite-dimensional variational statements:
    S_test(phi; x) = L_test (1 - phi(x)).
    ```
 
-   Equivalently, the interaction energy is `-m phi(x)`, so the force on the
-   test source is proportional to `-m grad phi(x)`. For a source
-   `M delta_y`, this response is bilinear in `M` and `m`.
+   Equivalently, the weak-field test potential energy is
+   `U_test(phi; x) = -m phi(x)`, so the conservative force on the test source
+   is
+
+   ```text
+   F_x = -grad_x U_test = +m grad_x phi(x).
+   ```
+
+   For a source `M delta_y`, this response is bilinear in `M` and `m`.
 
 Composed with the retained-bounded `Z^3` Green-kernel normalization
 
@@ -149,15 +155,17 @@ response is
 S_test(phi; x) = L_test - L_test phi(x) = L_test(1 - phi(x)).
 ```
 
-Therefore the force is the spatial variation of the same interaction term:
+The static force statement uses the corresponding potential-energy convention
+`U_test(phi; x) = -m phi(x)`. Therefore
 
 ```text
-F_x = -grad_x Delta S_test = m grad_x phi(x)
+F_x = -grad_x U_test = +m grad_x phi(x)
 ```
 
-up to the sign convention for attractive potential. With a source
-`rho=M delta_y`, linearity gives `phi=M G0 delta_y`, so the test response is
-bilinear in `M` and `m`.
+with the sign fixed by the attractive potential convention in which a positive
+source has `phi(r) > 0` and `grad phi` points inward at large separation. With
+a source `rho=M delta_y`, linearity gives `phi=M G0 delta_y`, so the test
+response is bilinear in `M` and `m`.
 
 ### 4. Large-distance law
 
@@ -214,5 +222,5 @@ PYTHONPATH=scripts python3 scripts/frontier_gravity_weak_field_source_response_b
 Expected result:
 
 ```text
-TOTAL: PASS=38 FAIL=0
+TOTAL: PASS=44 FAIL=0
 ```

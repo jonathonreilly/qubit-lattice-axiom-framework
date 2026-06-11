@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 287,
+    "critical": 286,
     "high": 291,
     "leaf": 428,
     "medium": 425
@@ -8,33 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cl3_taste_generation_theorem",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "s3_taste_cube_decomposition_note",
-        "three_generation_structure_note",
-        "staggered_dirac_realization_gate_note_2026-05-03"
-      ],
-      "direct_in_degree": 23,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 21.039,
-      "note_path": "docs/CL3_TASTE_GENERATION_THEOREM.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/verify_cl3_sm_embedding.py",
-      "transitive_descendants": 743
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -51,17 +24,17 @@
         "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
         "yt_ward_identity_derivation_theorem"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 12.375,
+      "load_bearing_score": 12.877,
       "note_path": "docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_yt_p1_i_s_lattice_pt_citation.py",
-      "transitive_descendants": 663
+      "transitive_descendants": 664
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -43083,6 +43056,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 41,
-  "total_pending": 1431
+  "ready_count": 40,
+  "total_pending": 1430
 }

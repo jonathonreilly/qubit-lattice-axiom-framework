@@ -2,7 +2,7 @@
 PART A -- the global sigma law (exact)
 ==============================================================================
   [PASS] A1 GLOBAL factorization: the full 3-variable charpoly = Q_A Q_B / (9 e3^2) over the WHOLE BZ (rational identity)  --  each block: 3 X^2 - X (alpha sigma_bar + beta sigma) + 3 alpha beta = 0 after dividing by e3: momentum enters ONLY through sigma
-  [PASS] A2 the cos-law (branch-free): (3X + 3 alpha beta/X)/h = 6 cos Phi and (alpha conj(s) + beta s)/h = 2 Re(e^{i psi} s)  --  => cos Phi = Re(e^{i psi} sigma(k)) / 3: a single-cosine band law driven by the adjacency symbol
+  [PASS] A2 the cos-law (branch-free): (3X + 3 alpha beta/X)/h = 6 cos Phi and (alpha conj(s) + beta s)/h = 2 Re(e^{i psi} s); both roots unimodular (Y1 Y2 = 1, Y1+Y2 real in [-2,2])  --  => cos Phi = Re(e^{i psi} sigma(k)) / 3: a single-cosine band law driven by the adjacency symbol
 
 PART B -- the moduli are frame content (exact)
 ==============================================================================
@@ -12,7 +12,7 @@ PART B -- the moduli are frame content (exact)
 PART C -- drift, strata, and the diagonal from the law (exact)
 ==============================================================================
   [PASS] C1 strata from the law: theta-slope at k=0 is EXACTLY 1/6 (any psi != 0) and 1/(2 sqrt 3) at psi = 0 (two-line derivations)  --  block05's exact strata re-derived from the single-cosine law; slope 0 impossible (the law's gradient never vanishes there)
-  [PASS] C2 the gapless locus is EXACTLY the BZ diagonal: |sigma|^2 = 3 + 2 sum cos(k_i - k_j) = 9 iff all momenta equal  --  touchings = the diagonal line only: a 1D-like crossing locus, NOT an isotropic 3D cone point
+  [PASS] C2 gapless structure: within-block touchings need |sigma| = 3 (the diagonal); the LINE is the INTER-block shared-beta root X = beta w (exact); off-diagonal inter-block degeneracy excluded by the difference factorization  --  |sigma|^2 = 3 + 2 sum cos(k_i-k_j) = 9 iff all momenta equal; Q_A - Q_B = (alpha-gamma)(3 beta - X sigma_bar)
   [PASS] C3 the diagonal law: Phi = +-(t + psi) exactly => theta-slope 1/2 in the cell diagonal parameter, ALL moduli  --  the family's transport line carries the 1D quantized value 1/2 (cell units) -- block02's dichotomy value
 
 PART D -- T1: the factorized cycle's drift equals the family's (exact)
@@ -21,14 +21,15 @@ PART D -- T1: the factorized cycle's drift equals the family's (exact)
 
 PART E -- the W-IR reconciliation (consumes the landed B-W reduction)
 ==============================================================================
-  [PASS] E1 BOTH candidates feed the SAME quantized W-IR datum: transport-direction slope = 1/2 (cell units), exactly  --  under the landed B-W reduction, the OS0-consumed content is IDENTICAL: the realization choice is OS0-IRRELEVANT at the consumed level
+  [PASS] E1 COMPUTED per-tick gradient vectors at the comparison point: cycle (1,1,1)/6 (exact, D1) and family +-(1,1,1)/6 (symbolic from the law, any generic psi): IDENTICAL up to the +- pairing  --  convention-independent: whatever uniform unit convention W-IR fixes, both candidates feed the same consumed first-order datum (generic stratum; the equal stratum's distinct datum and the unit premise U-T are named in the note)
   [PASS] E2 the candidates' differences are OUTSIDE the consumed surface: transverse first-order flatness (computed ~0) + off-locus curvature (nonzero)  --  transverse slope 0.0e+00; off-locus curvature 0.096: shape content, not W-IR content
+  [PASS] E3 the within-block touchings are exactly ISOTROPIC 3D cones: Phi = |q|/sqrt(3) in all directions (theta-slope 1/(2 sqrt 3))  --  an isotropic cone EXISTS in the family at quantized slope 1/(2 sqrt 3) -- found in review; the H-slope-1/2 cone remains unrealized (sqrt 3 mismatch)
 
 PART F -- the sigma kinship and the honest cone row
 ==============================================================================
   [PASS] F1 the landed staggered H is sigma-driven too: E(k) = +-sqrt((3 - Re sigma)/2) on the 8-cell (computed)  --  the walk family is the tick-native cos-law sibling of the landed H-law: one structure function, two readings
-  [PASS] F2 the H-cone is isotropic (E ~ |k|/2) while the family's gapless set is the diagonal line: the isotropic 3D cone is realized by NEITHER candidate  --  the matter-cone row stays larger-cell content for both candidates -- stated, not implied away
+  [PASS] F2 the H-cone is isotropic with slope 1/2; the family's cone (E3) is isotropic with slope 1/(2 sqrt 3): same geometry, slopes split by sqrt 3 -- the H-slope cone is realized by neither candidate  --  the matter-cone row RE-OPENS positively: an isotropic 3D cone exists in the covariant family at quantized slope 1/(2 sqrt 3); matching the H-slope 1/2 remains larger-cell/unit-premise content
 
 ==============================================================================
-SCORECARD: PASS=12 FAIL=0
+SCORECARD: PASS=13 FAIL=0
 ==============================================================================

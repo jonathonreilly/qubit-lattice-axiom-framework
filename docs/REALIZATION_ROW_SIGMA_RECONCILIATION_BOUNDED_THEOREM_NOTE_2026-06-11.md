@@ -1,4 +1,4 @@
-# The Realization Row Reconciled: One Sigma Law, One Consumed Slope, No Dial
+# The Realization Row Reconciled: One Sigma Law, One Consumed Drift Vector, No Dial
 
 **Date:** 2026-06-11
 **Type:** bounded_theorem
@@ -43,24 +43,29 @@ each block's band equation collapses, branch-free, to a single-cosine law:
 ```
 
 with `h = sqrt(alpha beta)` the block's quasi-energy offset. **Momentum
-enters only through the cubic adjacency symbol sigma.** The family is
-completely solved.
+enters only through the cubic adjacency symbol sigma.** The family's
+eigenvalue problem is completely solved (both roots proven unimodular:
+Y1 Y2 = 1 with real sum in [-2, 2]).
 
 ## The moduli are frame content (runner Part B; exact)
 
 `e^{i psi} sigma(k) = sigma(k + psi (1,1,1))` exactly: the psi-modulus is a
 DIAGONAL MOMENTUM TRANSLATION, and h is a quasi-energy offset — per block,
-the six landed phases reduce to two frame moduli each plus the inter-block
-relative offset. Consequently the psi-band is the psi=0 band translated in
+the six landed phases reduce to two frame moduli each plus the two
+inter-block relative offsets (psi_A - psi_B and the quasi-energy offset
+difference). Consequently the psi-band is the psi=0 band translated in
 momentum, pointwise (verified at 200 random points to 1e-12), so **every
-translation-invariant kinetic functional — BZ-suprema of gradients, band
-widths, curvature ranges — is moduli-RIGID exactly.**
+PER-BAND translation-invariant kinetic functional — BZ-suprema of
+gradients, band widths, curvature ranges — is moduli-RIGID exactly.**
+(Joint-spectrum functionals depending on the inter-block relative offsets
+are the named non-translational remainder.)
 
 **Sharpening-correction of a landed statement:** the landed block05 note
 says "off-axis FRONT SPEEDS vary continuously
 with the moduli (computed: 0.19-0.24 across samples)". The computation
 behind that sentence (fixed-line band-tracked
-maxima) is reproduced here and its variation is real — but it is a SLICE
+maxima, cached values 0.169-0.232) is reproduced here in methodology — and
+its variation is real — but it is a SLICE
 artifact: the scan line is not translation-aligned, so a translated band
 shows a different maximum along the same fixed line while the full-BZ
 front speed cannot move. With the translation identity in hand, the
@@ -80,12 +85,17 @@ steelman names, now computed.
 ## Strata, drift, diagonal — from the law (runner Part C; exact)
 
 Two-line re-derivations from the cosine law: theta-slope at k = 0 is
-exactly +-1/6 per axis (any psi != 0) and +-1/(2 sqrt 3) at psi = 0; the
-gapless locus is exactly the BZ diagonal (`|sigma|^2 = 3 +
-2 sum cos(k_i - k_j) = 9` iff all momenta coincide); on the diagonal the
-law gives `Phi = +-(t + psi)`: **exactly linear, slope 1/2 in the cell
-diagonal parameter, for all moduli** — the same quantized value as the
-landed 1D dichotomy's saturating cell.
+exactly +-1/6 per axis (any psi not congruent to 0 mod pi) and
++-1/(2 sqrt 3) on the equal strata; the
+gapless structure is exactly resolved (`|sigma|^2 = 3 +
+2 sum cos(k_i - k_j) = 9` iff all momenta coincide): WITHIN a block,
+touchings sit at the two translates of the sigma = 3 point on the diagonal;
+the diagonal LINE's gaplessness is INTER-block — Q_A and Q_B share beta and
+X = beta w is a common root along the entire diagonal (exact), while
+off-diagonal inter-block degeneracy is excluded by the difference
+factorization `Q_A - Q_B = (alpha - gamma)(3 beta - X sigma_bar)`. On the
+diagonal the law gives `Phi = +-(t + psi)`: exactly linear, slope 1/2 in
+the cell diagonal parameter, for all moduli.
 
 ## The reconciliation (runner Parts D–E; exact)
 
@@ -94,18 +104,25 @@ landed 1D dichotomy's saturating cell.
   `+-(1,1,1)/6` cells/tick — IDENTICAL to the family's rigid generic
   drift. The two exhibited candidates share their symmetric-point
   transport exactly.
-- **(E1, OS0-indifference)** The per-axis candidate's transport-direction
-  slope is 1/2 in cell units (the landed dichotomy value); the family's
-  transport-direction (diagonal) slope is 1/2 in the cell diagonal
-  parameter (exact, above). **Both candidates feed the SAME quantized
-  first-order datum into the landed W-IR premise; the OS0-consumed content
-  is identical; the realization choice is OS0-IRRELEVANT at the consumed
-  level.** The kinetic-isotropy content of the chain does not depend on
-  which exhibited candidate the matter sector occupies.
+- **(E1, OS0-indifference, convention-independent)** Both candidates'
+  per-tick first-order band forms at the comparison point are COMPUTED and
+  are IDENTICAL AS GRADIENT VECTORS: the cycle's `(1,1,1)/6` (exact, from
+  D1) and the family's `+-(1,1,1)/6` (symbolic from the law, any generic
+  psi; the family adds the counter-propagating partner). **Whatever
+  uniform unit convention the supplied W-IR comparison fixes, both
+  candidates feed the same consumed first-order datum: the realization
+  choice is OS0-IRRELEVANT at the consumed level.** Two named residuals,
+  not asserted: **(U-T)** the absolute identification of that common
+  datum against the landed 1D value (1/2 in cell units) involves a
+  tick-vs-blocked-application unit choice — a premise of the same class as
+  the chain's R-P reading; and the equal-phase strata feed the distinct
+  quantized datum 1/(2 sqrt 3) (stratum dependence is discrete, never
+  continuous).
 - **(E2, what still differs)** Transverse first-order flatness vs per-axis
   structure; off-locus curvature (present in the family, absent in the
-  cycle's bands); the inter-block relative offset; single-tick vs
-  composite mass realization. All exhibited, all OUTSIDE the consumed
+  cycle's bands); co-moving cycle bands (one drift sign) vs the family's
+  genuine counter-propagating +- pairs; the two inter-block relative
+  offsets; single-tick vs composite mass realization. All exhibited, all OUTSIDE the consumed
   surface: shape/dynamics content, not W-IR content.
 
 ## The sigma kinship and the honest cone row (runner Part F)
@@ -115,21 +132,26 @@ The landed staggered Hamiltonian's dispersion is also sigma-driven:
 the landed
 [STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md](STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md),
 which certifies the kernel's isotropic point cones on the same surface). One structure
-function, two readings: the H-law and the tick-native cosine law. But the
-H-cone at sigma -> 3 is isotropic (`E ~ |k|/2`) while the family's gapless
-set is the diagonal LINE with 1D-like crossings (transverse-flat at first
-order): **the isotropic 3D cone is realized by NEITHER candidate at this
-density.** The matter-cone row (larger-cell content) is unchanged — stated,
-not implied away.
+function, two readings: the H-law and the tick-native cosine law. And a
+review-found POSITIVE result (runner E3): at the within-block touching
+points the family's band pair closes as an exactly ISOTROPIC 3D cone,
+`Phi = |q|/sqrt(3)` in every direction (theta-slope `1/(2 sqrt 3)`),
+threaded by the inter-block nodal line. **An isotropic 3D cone EXISTS in
+the covariant family at this density, at the quantized slope
+1/(2 sqrt 3)** — the structure block04 found absent from the factorized
+class. What remains unrealized is the H-SLOPE cone: the H-law's slope is
+1/2, a sqrt-3 mismatch with the family's cone (and the cycle has no cone
+at all). The matter-cone row re-opens positively: cone geometry exists;
+matching the H normalization is larger-cell or unit-premise (U-T) content.
 
 ## The conditional set after this cycle
 
 | entry | status |
 |---|---|
-| the realization row ("which exhibited candidate; reconcile 1/6 vs 1") | RECONCILED: identical consumed W-IR slope (1/2, cell units, transport direction); the choice is OS0-irrelevant at the consumed level; the residual choice content is dynamics/shape (named, E2) |
+| the realization row ("which exhibited candidate; reconcile 1/6 vs 1") | RECONCILED: identical consumed per-tick gradient vectors +-(1,1,1)/6 (computed, convention-independent); the choice is OS0-irrelevant at the consumed level; residual content: E2 differences + the named unit premise U-T |
 | block05's "off-axis front speeds are continuous moduli content (honest scope)" | superseded: frame content (slice artifact; exact translation identity) |
 | the standing readings + the landed W-IR premise + unaudited deps | unchanged (W-IR consumed as the landed text states it; the bare P2 reading was separately retired into two named readings by the landed [TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md](TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md), inherited not re-litigated) |
-| the isotropic 3D matter cone | unchanged: larger-cell content for BOTH candidates (computed) |
+| the isotropic 3D matter cone | RE-OPENED POSITIVELY: an isotropic cone exists in the family at quantized slope 1/(2 sqrt 3) (E3, review-found); the H-slope (1/2) cone remains unrealized (sqrt-3 mismatch = U-T/larger-cell content) |
 | open 1 (full-family exhaustive closure) | unchanged (named, documented infeasible) |
 
 ## What this note does NOT claim
@@ -147,8 +169,8 @@ not implied away.
 ## Falsifiers
 
 - A licensed dispersive equivariant cell outside the six-orbit family
-  whose transport-direction slope differs from 1/2 (the block05 census
-  falsifier surface, inherited).
+  whose symmetric-point gradient vector lies outside the computed discrete
+  set (the block05 census falsifier surface, inherited).
 - A moduli point violating the translation identity (a counterexample to
   a verified rational identity).
 - A landed sharpening of W-IR that consumes more than the first-order
@@ -184,14 +206,13 @@ artifact)"; "no isotropic cone point in either candidate".
   exact computation that produced the original number.
 - **N6 partial-closure scan:** no prior note computes the global
   factorization, the cosine law, or the reconciliation.
-- **N7 steelman:** "the diagonal slope 1/2 and the per-axis slope 1/2 are
-  measured along different directions in different parametrizations — is
-  the comparison fair?" Both are the first-order quasi-energy slope along
-  the candidate's own transport direction in cell units, which is exactly
-  the datum W-IR consumes (the supplied transfer's reconstructed
-  dispersion is compared at the same point); the unit bookkeeping is part
-  of the runner's E1 and the residual normalization-placement freedom is
-  the chain's standing R-P reading, inherited not re-litigated.
+- **N7 steelman:** "slopes measured along different directions in
+  different parametrizations are not comparable." CORRECT — and this round's
+  review proved the first-draft slope comparison was exactly that error.
+  The shipped E1 compares GRADIENT VECTORS in the common per-tick cell
+  parametrization (computed both sides), which is convention-independent;
+  the absolute unit identification is split off as the NAMED premise U-T
+  rather than silently consumed.
 - **N8 cross-cycle echo:** the quantization pattern survives its third
   formulation change (1D cells, 3D drifts, now the sigma law); the dial
   has now died at every level where it was sought, including inside the
@@ -205,7 +226,7 @@ symbolic derivations from them). The OS0-indifference claim is scoped to
 the consumed level defined by the landed W-IR premise (first-order
 agreement at the comparison point); the candidates' E2-level differences
 are exhibited, not adjudicated. The supersession of block05's front-speed
-sentence is scoped to translation-invariant functionals; the original
+sentence is scoped to PER-BAND translation-invariant functionals; the original
 fixed-line computation's numbers are real and reproduced.
 
 ## Reproduction

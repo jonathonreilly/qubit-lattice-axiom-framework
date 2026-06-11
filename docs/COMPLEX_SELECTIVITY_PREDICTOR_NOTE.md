@@ -128,15 +128,14 @@ it with an in-`docs/` retained authority). Path (ii) narrows the
 source comparison to the five wired one-hop authorities by dropping
 the "Original grown basin" row and the second-family discriminator
 detail "exact `gamma=0` + Born proxy + crossover survive narrowly".
-Until one of those lands, the regenerated ledger leaves this row for
-independent audit and the safe read is the partial bounded comparison over the
-supplied authorities. The acknowledged residual is the absence of
-the two listed one-hop audit-graph edges plus the runner's
-hard-coded-row limitation (the runner cannot itself independently
-close the missing comparison row content); everything else (the
-§Safe Read summary on `gamma=0` necessity, the five wired
-authorities, the discriminator-note table content for the wired
-families) is supported by the listed cited authorities.
+Before the 2026-06-10 dependency-repair update below, the regenerated ledger
+left this row for independent audit and the safe read was the partial bounded
+comparison over the supplied authorities. The acknowledged residual was the
+absence of the two listed one-hop audit-graph edges plus the runner's
+hard-coded-row limitation (the runner cannot itself independently close the
+missing comparison row content); everything else (the §Safe Read summary on
+`gamma=0` necessity, the five wired authorities, the discriminator-note table
+content for the wired families) was supported by the listed cited authorities.
 
 This rigorization edit only sharpens the conditional perimeter and
 registers the cited authority chain; it does not promote audit
@@ -144,9 +143,20 @@ status, hand-author audit JSON, modify the §Comparison table, or
 narrow the source claim. The claim boundary in §Final Verdict
 continues to apply: the predictor is bounded over the listed
 structured-family cards, not a universal family-portable
-discriminator; until the two unwired inputs land as one-hop edges,
-the headline reads as a **partial bounded predictor** over the
-five wired authorities.
+discriminator. The 2026-06-10 repair below wires live authorities for the
+original-grown signed/basin row and the second-family
+boundary edge, but the regenerated audit ledger remains the authority for
+whether that is enough to reclassify the row.
+
+**Audit dependency repair update (2026-06-10):** the original-grown row is now
+anchored to live in-`docs/` authority notes rather than the archived basin note.
+The signed-source center-row authority is
+[`FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md`](FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md),
+and the center/nearby-row complex-basin authority is
+[`FIXED_FIELD_COMPLEX_GROWN_BASIN_V2_NOTE.md`](FIXED_FIELD_COMPLEX_GROWN_BASIN_V2_NOTE.md).
+The unaudited live `GROWN_TRANSFER_BASIN_NOTE.md`
+and the archived stale-runner basin note remain provenance/context only, not
+load-bearing dependencies for the table row below.
 
 ## Audit dependency repair links
 
@@ -154,5 +164,7 @@ This graph-bookkeeping section records explicit dependency links named
 by the prior conditional audit so the audit citation graph can track
 them. It does not promote this note or change the audited claim scope.
 
+- [FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md](FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md) — original-grown-row signed-source center authority (`drift = 0.2`, `restore = 0.7`, seed `0`, fixed-field propagation).
+- [FIXED_FIELD_COMPLEX_GROWN_BASIN_V2_NOTE.md](FIXED_FIELD_COMPLEX_GROWN_BASIN_V2_NOTE.md) — original-grown-row / nearby-row complex-action basin authority (center `0.20, 0.70`, neighbor `0.20, 0.60`, anchor-local `TOWARD -> AWAY` crossover and weak-field `F~M` checks).
 - [CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) — original grown-basin complex-action companion (`retained_complex = yes`, anchor crossover `yes on nearby rows`).
 - [SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md](SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md) — second-family boundary-window discriminator (exact `gamma=0` + Born proxy + crossover survive narrowly; lose it in the tighter boundary window).

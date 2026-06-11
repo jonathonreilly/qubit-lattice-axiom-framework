@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 822 |
+| **retained_bounded** | 823 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1411 |
+| unaudited | 1410 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1266 |
+| `audited_clean` | 1267 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1727 |
+| `unaudited` | 1726 |
 
 | claim_type | count |
 |---|---:|
@@ -431,6 +431,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_field_family_unification_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_a1prime_debt_and_data_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5939,6 +5940,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The load-bearing step is a genuine class A algebraic closure over the supplied retained-bounded inputs; an independent arithmetic check gives beta=6 and confirms the nonzero-coupling distinction. The runner source checks ledger status, the fixed-surface algebra, scope markers, and removal of RG/asymptotic-scaling diagnostics; it does not hard-code a claimed gap or pretend to compute interacting existence. The open pure-gauge and coupled spectral controls are preserved as boundaries, not used as proved premises.
 - **open / conditional deps cited:**
   - `INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`
+- **auditor confidence:** high
+
+### `fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09`
+
+- **Note:** [`FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`](../../docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite fixed-lattice one-plaquette SU(2) and compact U(1) Wilson diagnostics at the tested beta values, plus the local sigma and leading-loop algebra, with no continuum or physical SU(3) gap claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-142255-c7579756cd-fixed_lattice_gauge_existenc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the tested finite one-plaquette compact-gauge surfaces, the Wilson integrals are finite positive and the tested leading factors lie in (0,1), so sigma=-log(factor)>0 and the toy leading-loop expression has log W(R,T)=-sigma R T.  _(class `A`)_
+- **chain closes:** True — The narrow claim closes as a compact-domain and special-function check: the displayed SU(2) integrands are positive and finite on a compact interval, I0 and I1/I0 give positive finite U(1) factors at the tested beta values, and factors in (0,1) imply sigma=-log(factor)>0. The area-law-shaped statement is then the algebraic identity R*T*log(factor)=-sigma*R*T, not a confinement theorem.
+- **rationale:** The runner source performs actual quadrature and Bessel-ratio evaluations rather than printing fixed pass strings, and its guardrails match the source note's bounded scope. An independent formula check supports the load-bearing inequalities and the sigma/log-W sign convention for the stated tested diagnostics. The cited scale-reference and kinetic-isotropy notes are explicitly registered primitive premises in the packet and are used only as scope guardrails, not as imports of dimensionless gauge dynamics or physical spectra. The clean verdict is limited to the one-plaquette diagnostic statements and does not propagate to continuum Yang-Mills existence, physical SU(3) confinement, or a framework-native gap theorem.
 - **auditor confidence:** high
 
 ### `flavor_a1prime_debt_and_data_note_2026-05-30`

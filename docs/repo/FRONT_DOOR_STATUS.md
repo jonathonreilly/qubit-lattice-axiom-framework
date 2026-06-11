@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1432 |
-| Retained-grade rows, including boxed decorations | 1292 |
+| Applied audit verdicts | 1433 |
+| Retained-grade rows, including boxed decorations | 1293 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 822 |
+| Retained bounded rows | 823 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1411 |
+| Unaudited rows | 1410 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 37 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1413 |
-| Ready rows | 27 |
+| Total pending rows | 1412 |
+| Ready rows | 28 |
 | Cycle-break targets | 0 |
 | Critical pending | 282 |
 | High pending | 281 |
 | Medium pending | 412 |
-| Leaf pending | 438 |
+| Leaf pending | 437 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09`](../../docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md) - medium; unaudited
 - [`taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02`](../../docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`dimension_upper_bound_dependency_edge_repair_note_2026-06-08`](../../docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md) - medium; unaudited
 - [`alpha_s_derived_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`spin_statistics_fs_admission_located_exercise_note_2026-06-06`](../../docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md) - medium; unaudited
-- [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - leaf; unaudited
+- [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - medium; unaudited
+- [`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

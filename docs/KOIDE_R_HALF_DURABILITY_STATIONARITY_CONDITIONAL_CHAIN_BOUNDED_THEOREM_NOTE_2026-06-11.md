@@ -47,8 +47,9 @@ claim nor a measure admission: **stationarity under durability**. The Record
 axiom's registrations are *durable*; if re-registration composes by the
 records flow (the R-D bridge), a durably registered value must be a **fixed
 point** — fixedness, not attraction. The runner interface-checks this scope
-reading against the live no-go text (check 5): the durability route is outside
-the closed scope, not a reopening.
+reading against the live no-go text (check 5; since the 2026-06-11 scope
+correction the no-go itself states that stationarity/durability occupancy is
+outside its closed scope): the durability route is not a reopening.
 
 ## The chain (runner, 15/15)
 

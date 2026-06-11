@@ -10,26 +10,26 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "pmns_twisted_flux_transfer_holonomy_boundary_note",
-      "claim_scope": null,
+      "claim_scope": "The abstract 3-cycle flux-transfer kernel has exact trace/holonomy recovery of xbar, ybar, and phi, while a single holonomy probe does not uniquely select the 3-real reduced oriented-cycle family.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "staggered_dirac_realization_gate_note_2026-05-03"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/pmns_lower_level_utils.py"
       ],
       "load_bearing_score": 10.517,
       "note_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
       "transitive_descendants": 517
@@ -8030,15 +8030,15 @@
         "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
         "yt_ward_identity_derivation_theorem"
       ],
-      "direct_in_degree": 11,
+      "direct_in_degree": 12,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.992,
+      "load_bearing_score": 12.508,
       "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
-      "transitive_descendants": 89
+      "transitive_descendants": 90
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

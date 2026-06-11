@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 205 |
+| **retained_no_go** | 206 |
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1421 |
+| unaudited | 1420 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1261 |
+| `audited_clean` | 1262 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1737 |
+| `unaudited` | 1736 |
 
 | claim_type | count |
 |---|---:|
@@ -1298,6 +1298,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18923,6 +18924,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner computes the a2*a3 cubic Ward residual cross term for L=6,8,10,12 and finds finite data compatible with resid/amplitude ~ C k^2, with simple extrapolants giving C near 0.047..0.050.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the lattice operators and diffeomorphism variation and computes the residual/amplitude data without importing or hard-coding the contested coefficient. Independent arithmetic from the displayed data confirms the monotonic normalized ratios, shrinking increments, approximately constant amplitude*k^2 spread under 15%, and the stated Richardson/geometric extrapolants.
 - **rationale:** The source note is explicitly bounded to the finite runner-defined diagnostic and does not claim an analytic continuum theorem, physical normalization, irrelevant-operator identification, or all-order Ward closure. The included runner genuinely computes the finite lattice quantities from its defined operators, has no helper imports, and does not just print expected constants. The numerical claims in the table and extrapolants check out up to ordinary rounding, so the bounded finite diagnostic closes on the restricted packet.
+- **auditor confidence:** high
+
+### `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Local finite-nonzero-k no-go: in the degenerate trace=shear comparator-gluing model, no overall normalization sign can make both trace and TT omega^2 signs healthy when glued to the derived opposite-signed Regge/EH comparator potentials.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-e0ffa77995-universal_gr_degenerate_supe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With G_trace=G_TT=G != 0 and omega^2=V/G, the derived opposite-signed pair V_trace=-k^2/2 and V_TT=+k^2/2 gives omega_trace^2 * omega_TT^2=(V_trace V_TT)/G^2<0.  _(class `A`)_
+- **chain closes:** True — Substitution gives V_trace V_TT=-k^4/4, so for k != 0 and G != 0 the product is negative and an overall sign change of the degenerate G squares out. The result is only this local comparator-gluing obstruction, not a global GR or finite-k stress-route no-go.
+- **rationale:** The load-bearing step is genuine class-A sign algebra over independent retained-grade inputs: retained degenerate trace=shear supermetric, retained finite quadratic gluing, and retained-bounded derived comparator signs. The primary runner performs real symbolic/algebraic checks for the local EH comparator and the gluing helper, with one cross-note guard for the retained cubic-Coxeter Regge/EH bridge; it does not use an external comparator or tuned scale. The no-go discipline gate passes because the conclusion is explicitly scoped to this degenerate-supermetric comparator-gluing model and leaves non-degenerate fiber metrics, 4D/timelike Regge dynamics, action orientation, and finite-k W/stress routes open.
 - **auditor confidence:** high
 
 ### `universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08`

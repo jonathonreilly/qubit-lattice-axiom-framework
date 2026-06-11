@@ -48926,11 +48926,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+      "to": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_q_minimal_scale_free_selector_note_2026-04-22"
+      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
@@ -48950,7 +48950,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08"
+      "to": "fifth_family_complex_note"
     },
     {
       "from": "repo.repo_organization",
@@ -94065,16 +94065,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
+        "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_q_minimal_scale_free_selector_note_2026-04-22",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19",
         "quark_bimodule_norm_naturality_theorem_note_2026-04-19",
         "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
-        "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08"
+        "fifth_family_complex_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "06587f4daa5a8e294cba2808633e3bc2f77dd8744fea9ee6dfa073b71c7bfafa",
+      "note_hash": "dafe14f14a20b9b92ad8a9424e634ec424e6f3d491b6ced0a7b8e75689d8b610",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

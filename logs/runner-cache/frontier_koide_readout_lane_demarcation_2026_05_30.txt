@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_readout_lane_demarcation_2026_05_30.py
-runner_sha256: 1a28d707bfee479e95415827b79f40b8a1261a9ed1fd9b399ff7e16e3b47704b
+runner_sha256: c8df9a702874e8f135031904853dacd4dbdc1ceb4a334c9dab681d218b7d00e5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.75
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 
@@ -19,6 +19,13 @@ Check 2 - residue no-go: r-independent Q only at single-pole collapse
 ========================================================================
 [PASS] non-degenerate unit residues: Q depends on x (NOT r-independent)  (dQ/dx=4*x/3)
 [PASS] no non-degenerate (Z0,w) makes Q x-independent (residue DOF exhausted)  (sols=[])
+
+========================================================================
+Check 2b - Z=(1,t,t) theta-independence endpoints
+========================================================================
+[PASS] Z=(1,1,1) unit residues are theta-independent but keep r free  (theta cancels at fixed r, while Q changes with r)
+[PASS] Z=(1,0,0) theta-independent endpoint is single-pole collapse Q=1  (theta independence here is mass-loss collapse, not a 3-mass selector)
+[PASS] Z=(1,1/2,1/2) is not theta-independent  (nonunit noncollapse residue choice retains theta dependence)
 
 ========================================================================
 Check 3 - center-mimicking residue Z=(1,1/2,1/2): not 2/3, theta/r-dependent
@@ -40,7 +47,7 @@ Check 5 - F1 extremizes at r=1/2, F3 at r=1 (the dynamics/weight choice)
 ========================================================================
 Summary
 ========================================================================
-PASS=10 FAIL=0
+PASS=13 FAIL=0
 Readout supplies the formula Q=(1+2r)/3 + theta-independence + signed class;
 tested readout freedoms do NOT supply r=1/2.
 The F1-vs-F3 (1,1)-vs-(1,2) choice is the dynamics lane.

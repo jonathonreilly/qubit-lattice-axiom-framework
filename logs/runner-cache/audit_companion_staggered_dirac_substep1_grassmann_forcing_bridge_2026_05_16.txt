@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py
-runner_sha256: bd0d45e3be31bf7eede5e302254dd99182a326d25e2aae227d3708fcd54d8e98
+runner_sha256: 65c97f804d4c3335d08467f08a0baf7e6730bd1ac819ef613a8cf94d6afbcac9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -39,6 +39,12 @@ Part 2: (D2) per-site Grassmann Fock has dim_C = 2
   [PASS (A)] (D2) Grassmann per-site Fock dim_C H_x^G = 2 (basis: |0>, chibar|0>)  (fock_states = ['|0>', 'chibar|0>'])
   [PASS (A)] (D2) algebraic chi_x^2 = 0 nilpotency (cited upstream Berezin narrow)
   [PASS (A)] (D2) algebraic chibar_x^2 = 0 nilpotency (cited upstream Berezin narrow)
+  [PASS (A)] (D2 repair) cbar^2 = 0 and c^2 = 0 on F_x (2x2 matrix realization)
+  [PASS (A)] (D2 repair) {c, cbar} = 1 on F_x (graded Leibniz, DERIVED not assumed)
+  [PASS (A)] (D2 repair) cbar|0> = |1>, c|1> = |0>, c|0> = 0 (lowering = Berezin derivative)
+  [PASS (A)] (D2 repair) number operator N = cbar c = diag(0, 1), spectrum {0, 1}
+  [PASS (A)] (D2 repair, slip witness) {L_chi, L_chibar} = 0 != 1 on Lambda[chi, chibar]  (generator left multiplication is NOT the lowering operator)
+  [PASS (A)] (D2 repair, slip witness) L_chi(L_chibar(1)) = chi*chibar != 1 (no chi|1> = |0>)  (chi(chibar 1) lands on the 2-grade monomial, not the vacuum)
 
 ----------------------------------------------------------------------------------------
 Part 3: (D2) match to dim_C V = 2 (upstream Cl(3) faithful irrep)
@@ -63,6 +69,7 @@ Part 5: (D4) Berezin scalar-finite-determinant readout at N=1..4
 ----------------------------------------------------------------------------------------
 Part 6: (D4) bosonic single-mode infinite-tower diverges from Grassmann
 ----------------------------------------------------------------------------------------
+  [PASS (A)] (D4) Tr_{F_x} exp(-m N) = 1 + exp(-m) from the repaired module's N = cbar c  (N = diag(0, 1) on the Berezin function space F_x)
   [PASS (A)] (D4) Grassmann (1 + exp(-m)) != bosonic 1/(1-exp(-m)) on single mode  (diff at m=log(2): -1/2 (G=3/2, B=2))
   [PASS (A)] (D4) Grassmann trace at m=log(2) equals 3/2
   [PASS (A)] (D4) bosonic trace at m=log(2) equals 2
@@ -106,7 +113,10 @@ Summary
 ----------------------------------------------------------------------------------------
   Verified at exact sympy precision:
     (D1) Bosonic per-site Fock truncated dim grows without bound
-    (D2) Grassmann per-site Fock dim = 2 (via nilpotency chi_x^2 = 0)
+    (D2) Berezin function space F_x = Lambda[chibar] has dim = 2 (nilpotency)
+    (D2 repair) raising/lowering = multiplication + Berezin derivative on F_x:
+         {c, cbar} = 1 DERIVED; slip witness {L_chi, L_chibar} = 0 (generators
+         are integration variables, not the lowering operator)
     (D2) dim_C H_x^G = dim_C H_x = 2 match to the physical per-site dim
     (D3) Explicit two-candidate comparison {G, B}
     (D4) Z_F[M] = det(M) at N = 1, 2, 3, 4 (cited upstream Berezin identity)
@@ -119,7 +129,7 @@ Summary
          statistics selection declared open, not claimed
 
 ========================================================================================
-TOTAL: PASS=38, FAIL=0
+TOTAL: PASS=45, FAIL=0
 ========================================================================================
 
 ----- stderr -----

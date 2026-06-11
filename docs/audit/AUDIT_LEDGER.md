@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 206 |
+| **retained_no_go** | 205 |
 | **retained_bounded** | 816 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
-| unaudited | 1438 |
+| unaudited | 1439 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
+| `audit_in_progress` | 5 |
 | `audited_clean` | 1254 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1754 |
+| `unaudited` | 1755 |
 
 | claim_type | count |
 |---|---:|
@@ -113,10 +113,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 929 | 39.86 | `unaudited` | unaudited |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1324 | 39.37 | `audited_clean` | **retained** |
 | 12 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1269 | 38.81 | `audited_clean` | **retained_bounded** |
-| 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 772 | 38.59 | `unaudited` | unaudited |
-| 14 | `yt_ew_color_projection_theorem` | no_go | critical | 715 | 38.48 | `audited_clean` | **retained_no_go** |
-| 15 | `alpha_s_derived_note` | bounded_theorem | critical | 860 | 38.25 | `unaudited` | unaudited |
-| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 933 | 36.87 | `audited_clean` | **retained_bounded** |
+| 13 | `alpha_s_derived_note` | bounded_theorem | critical | 861 | 38.75 | `unaudited` | unaudited |
+| 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 772 | 38.59 | `unaudited` | unaudited |
+| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 715 | 38.48 | `audited_clean` | **retained_no_go** |
+| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 934 | 36.87 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1329 | 36.38 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1073 | 36.07 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 270 | 34.58 | `unaudited` | unaudited |
@@ -136,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1073,7 +1072,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_delay_proxy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `ring_monodromy_does_not_force_car_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1112,6 +1110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
+| `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `site_phase_cube_shift_intertwiner_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `sixth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
@@ -15213,19 +15212,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The narrow theorem closes on its stated algebraic scope. The load-bearing sign flip is the odd-generator parity of the cubic anomaly trace under the complex-conjugate representation, using retained SU(3) carrier and d^{abc} inputs plus standard finite-dimensional trace algebra. The runner checks the contested algebra symbolically and does not import PDG data, fitted constants, matter-content existence, SM hypercharge, Lorentz/CPT, or continuum physics. The no-go discipline gate is satisfied as a scope guard: the source names the parent existence-side residual but does not claim that residual is impossible or closed. Residual risk is downstream overuse; this verdict cannot be cited as retained existence of u_R,d_R, physical SM color, uniqueness of the completion, or full SU(3)^3 anomaly cancellation.
 - **auditor confidence:** high
 
-### `ring_monodromy_does_not_force_car_note_2026-06-04`
-
-- **Note:** [`RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md`](../../docs/RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Audited the narrow finite-ring claim that one-qubit HCB and JW-CAR hopping Hamiltonians both satisfy the packet's finite transfer-operator T-positivity, parity-sector positivity, parity conservation, and single-valued local-observable constraints, so those constraints do not select CAR over HCB.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-9b8bec4349-ring_monodromy_does_not_forc`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** No Lattice+Quantum+RP datum tested rejects the HCB ring; RP/T-positivity certifies both HCB and CAR in every parity sector, so selecting CAR requires positing the graded tensor product / FS boundary condition.  _(class `C`)_
-- **chain closes:** True — The HCB ring is an explicit non-CAR countermodel satisfying the audited constraints, while the CAR ring also satisfies them. Therefore the tested positivity/monodromy/local-observable data are nonselective; the graded loop boundary condition remains an extra FS premise.
-- **rationale:** The runner source substantively constructs the finite one-qubit tensor operators, HCB and JW-CAR ring Hamiltonians, parity projectors, transfer matrices, spectra, locality tests, and flux samples; it is not just printing expected constants. The load-bearing result is a first-principles finite-matrix counterexample from the accepted Lattice+Quantum premise plus retained parity/spectral inputs, with no PDG, tuned scale, or external comparator. This is clean only for the packet's scoped finite transfer-matrix T-positivity / monodromy-local-observable selector, not for a broader spin-statistics or full OS reflection-positivity theorem.
-- **auditor confidence:** high
-
 ### `rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06`
 
 - **Note:** [`RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
@@ -15881,6 +15867,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-04-11.md`
   - `MINIMAL_AXIOMS_2026-05-03.md`
+- **auditor confidence:** high
+
+### `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-dimensional positive Hermitian T with eigenvalues in (0,1] uniquely determines H_gen=-(1/τ)log(T), the strongly continuous one-parameter unitary group U(t)=exp(-itH_gen), and the spectral-calculus identity T^n=U(-inτ) for positive integers n.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-114144-efd2d1d925-single_clock_stone_finite_di`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Applying the finite-dimensional spectral functional calculus to positive Hermitian T gives H_gen=-(1/τ)log(T) with eigenvalues E_k=-(1/τ)log(λ_k), so U(t)=exp(-itH_gen) is the unique finite-matrix flow and T^n=∑_k λ_k^n P_k=∑_k exp(-nτE_k)P_k=U(-inτ).  _(class `A`)_
+- **chain closes:** True — The finite-dimensional spectral theorem supplies orthogonal spectral projectors and positive real eigenvalues, making the real logarithm and H_gen unique. The unitary group axioms, generator identity, matrix-ODE uniqueness, and T^n=U(-inτ) then follow by direct finite spectral calculus with no cited authority or physical bridge.
+- **rationale:** The load-bearing content is a genuine algebraic closure from the stated finite-dimensional hypotheses using standard spectral theory and finite-matrix ODE uniqueness. The runner source performs exact symbolic class-A checks on representative positive Hermitian matrices and does not import external numerical comparators or hidden premises. The previously false U(τ)^*T=T condition is explicitly removed and is not part of the audited scope.
 - **auditor confidence:** high
 
 ### `site_phase_cube_shift_intertwiner_note`

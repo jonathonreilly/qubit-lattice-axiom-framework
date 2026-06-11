@@ -13,13 +13,13 @@ It is not a physics claim surface and should not be edited by hand.
 |---|---:|
 | Ledger rows | 3161 |
 | Applied audit verdicts | 1401 |
-| Retained-grade rows, including boxed decorations | 1286 |
+| Retained-grade rows, including boxed decorations | 1285 |
 | Retained positive theorems | 213 |
-| Retained no-go rows | 206 |
+| Retained no-go rows | 205 |
 | Retained bounded rows | 816 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 37 |
-| Unaudited rows | 1438 |
+| Unaudited rows | 1439 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 20 |
 | Audited renaming rows | 34 |
@@ -36,14 +36,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Total pending rows | 1444 |
 | Ready rows | 44 |
 | Cycle-break targets | 0 |
-| Critical pending | 301 |
+| Critical pending | 300 |
 | High pending | 284 |
 | Medium pending | 421 |
-| Leaf pending | 438 |
+| Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`single_clock_uniqueness_scope_boundary_2026-06-06`](../../docs/SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md) - critical; audit_in_progress
 - [`quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md) - critical; audit_in_progress
 - [`axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) - critical; unaudited
 - [`axiom_first_reeh_schlieder_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; unaudited
+- [`yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`](../../docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

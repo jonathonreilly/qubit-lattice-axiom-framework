@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1412 |
+| Applied audit verdicts | 1413 |
 | Retained-grade rows, including boxed decorations | 1288 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 205 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1433 |
-| Ready rows | 42 |
+| Total pending rows | 1432 |
+| Ready rows | 41 |
 | Cycle-break targets | 0 |
-| Critical pending | 287 |
+| Critical pending | 286 |
 | High pending | 284 |
 | Medium pending | 421 |
 | Leaf pending | 441 |
 
 Next ready rows by queue order:
 
-- [`higgs_mass_from_axiom_note`](../../docs/HIGGS_MASS_FROM_AXIOM_NOTE.md) - critical; audit_in_progress
 - [`pmns_twisted_flux_transfer_holonomy_boundary_note`](../../docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md) - critical; unaudited
 - [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; unaudited
 - [`koide_full_lattice_schur_inheritance_note_2026-04-18`](../../docs/KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - high; unaudited
 - [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
 - [`koide_q_source_domain_canonical_descent_theorem_note_2026-04-25`](../../docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md) - high; unaudited
+- [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

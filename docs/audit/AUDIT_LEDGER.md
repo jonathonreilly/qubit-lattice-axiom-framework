@@ -24,11 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 16 |
 | open_gate | 37 |
 | unaudited | 1430 |
-| audit_in_progress | 1 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 25 |
+| ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -60,11 +60,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 1261 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 53 |
-| `audited_failed` | 25 |
+| `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
 | `unaudited` | 1746 |
@@ -133,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `higgs_mass_from_axiom_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1481,6 +1480,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -9085,6 +9085,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The source note is appropriately bounded and does not claim exact m_H closure. However, its load-bearing support is a runner/comparator study rather than a first-principles derivation from the restricted packet. The code genuinely performs numerical CW-lattice calculations, but key quantitative inputs and comparison targets are hard-coded or imported, and several PASS lines are SM/PDG consistency checks.
 - **open / conditional deps cited:**
   - `HIGGS_MASS_DERIVED_NOTE.md`
+- **auditor confidence:** high
+
+### `higgs_mass_from_axiom_note`
+
+- **Note:** [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](../../docs/HIGGS_MASS_FROM_AXIOM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact L=2 all-direction-APBC staggered mean-field determinant and symmetric-point per-channel curvature theorem over declared B3/B4, with D1/C1 diagnostic readout over declared B1/B2 and source-note formula inventory included.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260611-higgs_mass_from_axiom_note-r1`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** On the declared B3/B4 surface, D^2 = -4 u_0^2 I, hence det(D + m) = (m^2 + 4 u_0^2)^8 per color and V_taste''(0) = -N_taste/(4 u_0^2).  _(class `C`)_
+- **chain closes:** False — The core T1 operator-to-determinant-to-curvature step is class C: the runner source genuinely constructs the staggered operator, characteristic polynomial, determinant checks, color factorization, and N_c cancellation. However Step 5(c) contains a displayed quantitative susceptibility cross-check that double-divides by N_taste: from W''(0) = N_c N_taste/(4 u_0^2), the per-color per-channel value is 1/(4 u_0^2), while the note's already per-site chi = N_c/(4 u_0^2) should be divided only by N_c. Because displayed closed-form identities are part of the audit surface even when labeled non-independent, the packet is not clean as written.
+- **rationale:** The core T1 operator-to-determinant-to-curvature step is class C: the runner source genuinely constructs the staggered operator, characteristic polynomial, determinant checks, color factorization, and N_c cancellation. However Step 5(c) contains a displayed quantitative susceptibility cross-check that double-divides by N_taste: from W''(0) = N_c N_taste/(4 u_0^2), the per-color per-channel value is 1/(4 u_0^2), while the note's already per-site chi = N_c/(4 u_0^2) should be divided only by N_c. Because displayed closed-form identities are part of the audit surface even when labeled non-independent, the packet is not clean as written.
 - **auditor confidence:** high
 
 ### `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06`

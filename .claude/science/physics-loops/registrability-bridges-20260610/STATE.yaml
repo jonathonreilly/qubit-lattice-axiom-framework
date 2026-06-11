@@ -1,0 +1,73 @@
+loop_slug: registrability-bridges-20260610
+mode: campaign
+runtime_budget: 8h
+target_status: best-honest-status
+created_utc: 2026-06-11T00:04:22Z
+worktree: /private/tmp/cl3-registrability-bridges-20260610
+base: origin/main@40ad65b19
+
+current_goal: >
+  Close or honestly bound the two registrability bridges gating the two Tier-A
+  admission retirements: (a) strong-CP determinant-readout bridge; (b)
+  AC_phi_lambda unordered-multiset / PL-ABSS equivariant global bridge.
+
+cycle_count: 1
+block_count: 1
+active_route: R-1 (shared-core registrability theorem) -> closes (a)+(b-i); bounds (b-ii)
+
+hard_residual_being_attacked: >
+  Whether the determinant-character (multiplicative phase) class is EXHAUSTIVE
+  for the registrable mass-surface readout from the Record boundary alone,
+  threading the hostile guard (K-evenness alone != phase erasure).
+
+core_finding: >
+  Record supplies finite scalar additivity over the disjoint central-sector
+  decomposition AND realized-outcome = K/CPT orbit (=> K-even). A Record-
+  registrable scalar is therefore additive-over-sectors AND K-even. Additivity
+  alone forces the per-sector phase functional to be ODD (g(-x)=-g(x), no
+  regularity needed); K-evenness then forces it to ZERO. Hence the determinant
+  PHASE is not registrable content; only modulus-type (k=0) survives. Hostile
+  guard threaded: cos(arg z) is K-even but NOT additive, excluded by the
+  additivity premise not the evenness premise. Same theorem makes delta->-delta
+  (the K/CPT conjugation on the AC_phi_lambda circulant) unregistrable, reducing
+  the species surface to the unordered multiset = magnitude-only atom |delta|.
+
+claim_state_movement:
+  blocker_a_strong_cp_det_readout:
+    before: "positive-real mass orientation is an explicit condition; det-class exhaustiveness UNPROVEN"
+    after: "det-phase exhausted within the Record-registrable surface (additive+even=>phase-free); mass-orientation PHASE content discharged on the registrable surface"
+    residual: "premise 1 (no bare theta slot) is a SEPARATE surviving action-surface premise (RP-no-go'd, distinct); standing premise that the physical readout context IS Record-supplied remains the modeling identification"
+    status: bounded_theorem (proposed); direct_blocker_closure of the quoted det-readout-exhaustiveness ask
+  blocker_b_acphilambda:
+    b_i_unordered_multiset_registrability:
+      after: "CLOSED by the shared-core theorem: delta->-delta is K/CPT conj, odd part unregistrable; registrable surface = symmetric functions (unordered multiset); AC_phi_lambda reduces to |delta| atom"
+      status: bounded_theorem (proposed); direct_blocker_closure
+    b_ii_R2_PL_ABSS_global_bridge:
+      after: "NOT closed; off the Record registrability layer; external-math LIVE (Perelman PL-Poincare / Moise TOP=PL / van Kampen); honestly bounded as import-required"
+      status: bounded / named external-math wall (N1-N8 recorded)
+
+files_touched:
+  - .claude/science/physics-loops/registrability-bridges-20260610/* (loop pack)
+  - planned: docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_*NOTE_2026-06-10.md (deliverable note)
+  - planned: scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py
+  - planned: logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt
+
+open_imports:
+  - R2 PL/ABSS global Cl(3)/Z^3 -> PL S^3 x R (external math, LIVE, NOT consumed)
+  - standing modeling premise: physical mass-surface readout context = Record-supplied (unchanged)
+
+no_go_routes_avoided:
+  - periodic q*pi delta source; Wilson-mark selection; det-sign pi packaging;
+    RP-derivation of strong-CP premise 1; convention-class reclassification by fiat
+
+trace_gate_classification: direct_blocker_closure (two quoted blockers) + negative_route_pruning (R2 off-layer) + honest external-math bound on (b-ii)
+
+review_findings: pending (review-loop after artifact)
+pr_status: pending
+next_exact_action: >
+  Build the deliverable runner (derives the additive+even=>phase-free theorem,
+  the cos-counterexample exclusion, the AC_phi_lambda even-symmetric/odd-sin
+  split, and prints SCORECARD), then the source note, then vocab_lint, commit,
+  PR. Apply V1-V5 and N1-N8 before PR.
+
+stop_condition: 8h runtime budget; or queue exhaustion; or global tooling failure

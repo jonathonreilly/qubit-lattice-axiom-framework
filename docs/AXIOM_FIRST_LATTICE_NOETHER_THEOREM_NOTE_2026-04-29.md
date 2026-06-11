@@ -868,17 +868,64 @@ current retained narrow theorem):**
   nearest-neighbour hop `M_{x,x±μ̂} = ±(1/2) η_μ(x)`. Used in (a) Step 2
   reindexing `η_μ(x' + μ̂) = η_μ(x')`, (b) Step 4b's two-site-shift
   symmetry verification `η_ν(x + 2μ̂) = η_ν(x)`, (c) Step 5's
-  one-site-shift counterexample. The forcing of this specific phase
-  structure (substep-2 Kawamoto-Smit forcing) is currently `unaudited`
-  on the live ledger and is **not** supplied by the retained substep
-  theorems above; the Noether identities (N1)-(N3) close as stated on
-  the admitted KS-phase carrier, with this structural input named here
-  rather than imported silently from the gate alias.
+  one-site-shift counterexample. **Status refresh (2026-06-11):** the
+  substep-2 Kawamoto-Smit forcing source-note
+  (`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`,
+  plain-text pointer) now exists on the surface and proves the forcing
+  as a bounded theorem (scalarization iff the Clifford `−1` cocycle,
+  with exactly one local gauge class — the KS class), bounded on its
+  own declared kinetic-class premises (its P-KIN/P-SD); its current
+  ledger grade is not retained, so `KS-phase-form` remains an
+  admitted-context structural input here, named rather than silently
+  imported. The Noether identities (N1)-(N3) close as stated on the
+  admitted KS-phase carrier.
 
-When the substep-2 Kawamoto-Smit phase forcing closes to retained-grade,
-the `KS-phase-form` residual admission discharges and the row becomes
-eligible for retagging from `bounded_theorem` to `positive_theorem` by
-the independent audit lane.
+## Registered Tier-A routing (2026-06-11; audit-requested repair)
+
+The recorded re-audit target for this row is to "close the full
+staggered-Dirac/Kawamoto-Smit kinetic carrier, including the residual
+KS-phase-form structural input, with retained-grade authority or keep
+this row bounded/conditional." This section takes the precedented
+registered-routing form of that repair (per
+`PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md` and
+`YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`,
+plain-text precedent pointers): the residual carrier admission is
+routed explicitly into the **registered Tier-A derivation target**, so
+the citation graph carries a registered admission rather than an
+unregistered conditional blocker.
+
+1. **The algebra is standalone.** The load-bearing content — the
+   plus-sign bilateral lattice current, the two-step Ward identity,
+   and the on-shell Noether identities (N1)-(N3) — closes by finite
+   matrix/Grassmann algebra, with the finite-Grassmann partition
+   surface supplied by the retained substep-1 narrow theorem (the
+   load-bearing one-hop dep above).
+2. **What the carrier admission carries.** Only the specific
+   Kawamoto-Smit phase form `η_μ(x)` (the `KS-phase-form` residual
+   above) consumes the staggered-Dirac realization complex; it is
+   substep-2 content of that complex.
+3. **The admission is a registered Tier-A target.** The canonical
+   parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the
+   registered Tier-A derivation target `AC_φλ` in the admission
+   registry (`docs/audit/data/tier_a_admissions.json`); the
+   `KS-phase-form` input routes **into** that registered target (its
+   substep-2 face). This note does **not** close the gate and does
+   **not** promote the substep-2 forcing note. Under the published
+   chain rule (`docs/audit/scripts/compute_effective_status.py`), a
+   clean `bounded_theorem` row whose only non-retained, non-axiom
+   admission routes to a registered Tier-A derivation target is a
+   candidate for the Tier-A-bounded class rather than an unregistered
+   conditional blocker.
+4. **No status assertion.** This section makes the narrow re-audit
+   case only. The audit lane is the sole authority on whether to honor
+   it; this note asserts no `effective_status` and predicts no audit
+   outcome.
+
+When the substep-2 Kawamoto-Smit phase forcing (or the registered
+target it routes into) closes to retained-grade, the `KS-phase-form`
+residual admission discharges and the row becomes eligible for
+retagging from `bounded_theorem` to `positive_theorem` by the
+independent audit lane.
 
 **Removed (2026-05-10 g_bare-removal repair):**
 - `g_bare_canonical_normalization_gate` — formerly listed here as a

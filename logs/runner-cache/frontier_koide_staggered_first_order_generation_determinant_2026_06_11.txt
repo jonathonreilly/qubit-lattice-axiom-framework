@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_staggered_first_order_generation_determinant_2026_06_11.py
+runner_sha256: 37280f7e9aca8f7ecdec1cd4e942765c5d851ec865b96ba7a4cf66e56adbaf05
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.14
+status: ok
+----- stdout -----
+========================================================================
+Koide staggered first-order generation determinant -- realization
+box: Z^3 torus, L = 4 (periodic sector; corner momenta exact)
+========================================================================
+
+--- A. gate-note surface reconstruction (interface checks)
+[PASS] (01) one-component staggered operator D (Kawamoto-Smit phases) is real antisymmetric on the 4^3 torus  [matrix 64x64]
+[PASS] (02) dim ker D = 8 with spectral gap 1.0 (the BZ-corner doubler set)  [computed kernel dim = 8, gap = 1.0000]
+[PASS] (03) the 8 corner plane waves are an exact orthonormal null basis of D
+[PASS] (04) Hamming grading on the corner basis = 1+3+3+1  [computed counts hw=0..3: [1, 3, 3, 1]]
+[PASS] (05) the lattice rotation U_R (C_3[111], U_R^3 = I) preserves ker D
+
+--- B. Berezin integral of the one-component measure: first power
+[PASS] (06) explicit Grassmann expansion: Z = int dchibar dchi exp(chibar K chi) = det K to the FIRST power (generic 3x3, symbolic, no determinant identity assumed)
+[PASS] (07) antisymmetric-kinetic + coupling toy of the staggered shape: the one-component measure gives Z = det(D + A), first power (NOT |det|^2; no Hermitian L/R doubling is introduced by the measure)
+RESIDUAL (declared-open): the matter-statistics clause (single Grassmann pair per site) is consumed at the gate-note grade: bounded on the spin-statistics support input of STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.
+
+--- C. generation probe coupling and exact corner factorization
+[PASS] (08) U_R on the corner basis is an exact integer permutation with U^3 = I and exactly 2 fixed corners (hw=0 and hw=3)  [trace = 2]
+[PASS] (09) U_R|ker is block-diagonal in the Hamming grading (the probe coupling does not mix hw sectors)
+[PASS] (10) in the canonical axis-index bases, the hw=1 and hw=2 blocks of U_R|ker are BOTH equal to the same explicit cyclic shift C (same orientation, exact matrix equality, not just conjugacy)
+[PASS] (11) EXACT corner factorization: det(A|ker) = (a+b+c)^2 * det3(a,b,c)^2 with det3 = a^3+b^3+c^3-3abc -- the taste-conjugate hw=2 triplet SQUARES the generation circulant factor; no |.|^2 modulus appears
+[PASS] (12) the square is channel-uniform: a uniform determinant power w cancels in the doublet:singlet log-weight ratio (the landed pruning lemma, reproven)
+[PASS] (13) small-t leading behaviour of det(D + tA) on the full 64-dim surface matches the corner factorization (ratio of two couplings)  [|ratio mismatch| = 5.89e-06]
+RESIDUAL (declared-open): the probe coupling FORM A = a*I + b*U_R + c*U_R^T (the C_3[111] rotation channel) is a declared probe, not a derived Yukawa: the framework has not derived that the generation-monitored coupling is the rotation channel; conclusions are claims about what THIS channel delivers on the realization.
+
+--- D. holomorphy fork: where count-twice enters, exactly
+[PASS] (14) the Berezin corner output is a POLYNOMIAL in the channel couplings (a,b,c): the first-order measure introduces NO conjugate dependence (holomorphic in b with c independent; d det/d bbar = 0 identically)  [free symbols = {a, b, c}, degree 8]
+[PASS] (15) Wirtinger/harmonicity: with c independent the channel factor is HARMONIC in (Re b, Im b) (Laplacian = 0, exact holomorphy criterion); on the K-real line c = bbar the count-twice term appears with d^2 det3/db dbbar = -3a (Laplacian = -12a): count-twice enters EXACTLY and ONLY through the K-reality restriction, not through the measure
+[PASS] (16) the K-real line c = conj(b) (with a real) is exactly the Hermitian-channel restriction of the probe coupling
+[PASS] (17) complex conjugation (K) swaps the omega and omega-bar generation channel projectors and fixes the trivial channel: the doublet channels form ONE K-orbit, the singlet is a K-fixed point (orbit pairing realized on the corner surface)
+[PASS] (18) on the K-real line the channel spectrum lam_k = a + 2|b| cos(delta + 2 pi k/3) is K-paired by delta -> -delta: the trivial channel is K-fixed and the two (generically distinct) doublet eigenvalues swap -- the doublet is one K-orbit
+[PASS] (19) landed rho-map arithmetic: Hermitian-channel (count-twice) slotting -> r = 1; holomorphic-channel (count-once / one slot per K-orbit) slotting -> r = 1/2 (cells cited from the landed fork note; orientation pinned there, arithmetic reproven here)
+RESIDUAL (declared-open): which horn is physical is NOT decided by this surface: the K-real (Hermitian) restriction c = conj(b) is the already-named K-reality admission of CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02; the holomorphic horn keeps the channel weights complex and consumes the orbit-occupancy premise candidate instead. Neither is derived here.
+RESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades: kinetic-class premise, spin-statistics support tier, boundary-holonomy convention, AC_phi_lambda labeling convention (STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03 section 5).
+
+TOTAL: PASS=19 FAIL=0
+VERDICT: the one-component staggered measure delivers a FIRST-ORDER generation determinant (single power, computed by explicit Grassmann expansion); the taste-conjugate triplet squares the generation factor channel-uniformly (r-neutral); count-twice |b|^2 dependence enters EXACTLY and ONLY through the K-reality restriction c = conj(b); the doublet channels are one K-orbit. No occupancy rule, premise adoption, or audit status is set.
+
+----- stderr -----
+

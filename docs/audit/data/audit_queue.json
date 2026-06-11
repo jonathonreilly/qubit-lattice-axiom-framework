@@ -10,28 +10,28 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "higgs_mass_from_axiom_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the scoped T1 operator/spectrum/determinant/curvature/N_c-cancellation theorem on the declared all-direction-APBC mean-field 2^4 staggered surface, plus D1 as a diagnostic definition and C1 as the B1/B2 numeric readout.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "plaquette_self_consistency_note",
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
         "yt_ew_color_projection_theorem"
       ],
       "direct_in_degree": 33,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
       "load_bearing_score": 25.831,
       "note_path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
       "transitive_descendants": 643
@@ -8186,15 +8186,15 @@
         "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25",
         "koide_dimensionless_note_2026-04-24"
       ],
-      "direct_in_degree": 13,
+      "direct_in_degree": 14,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.767,
+      "load_bearing_score": 13.285,
       "note_path": "docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_q_source_domain_canonical_descent.py",
-      "transitive_descendants": 76
+      "transitive_descendants": 77
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

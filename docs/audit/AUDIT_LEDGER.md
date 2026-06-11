@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 825 |
+| **retained_bounded** | 826 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1398 |
+| unaudited | 1397 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1271 |
+| `audited_clean` | 1272 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1714 |
+| `unaudited` | 1713 |
 
 | claim_type | count |
 |---|---:|
@@ -105,23 +105,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1017 | 63.49 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1359 | 60.91 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 862 | 59.25 | `unaudited` | unaudited |
-| 5 | `minimal_axioms_2026-05-03` | meta | critical | 972 | 47.43 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1190 | 47.22 | `unaudited` | meta |
+| 5 | `minimal_axioms_2026-05-03` | meta | critical | 971 | 47.42 | `unaudited` | meta |
+| 6 | `key_terminology` | meta | critical | 1189 | 47.22 | `unaudited` | meta |
 | 7 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 998 | 41.46 | `audited_clean` | **retained** |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 938 | 41.38 | `unaudited` | unaudited |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 937 | 41.37 | `unaudited` | unaudited |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1021 | 40.50 | `unaudited` | unaudited |
-| 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 930 | 39.86 | `unaudited` | unaudited |
+| 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 929 | 39.86 | `unaudited` | unaudited |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1325 | 39.37 | `audited_clean` | **retained** |
-| 12 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1269 | 38.81 | `audited_clean` | **retained_bounded** |
+| 12 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1268 | 38.81 | `audited_clean` | **retained_bounded** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 772 | 38.59 | `unaudited` | unaudited |
 | 14 | `yt_ew_color_projection_theorem` | no_go | critical | 716 | 38.49 | `audited_clean` | **retained_no_go** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 860 | 38.25 | `audited_conditional` | ~~audited_conditional~~ |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 933 | 36.87 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1329 | 36.38 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1074 | 36.07 | `audited_clean` | **retained_bounded** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1073 | 36.07 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 270 | 34.58 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 707 | 32.97 | `unaudited` | unaudited |
-| 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 941 | 31.88 | `unaudited` | unaudited |
+| 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 940 | 31.88 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 704 | 31.46 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 831 | 31.20 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 317 | 30.81 | `unaudited` | unaudited |
@@ -1326,6 +1326,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_supermetric_normal_form_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `universal_gr_w_hessian_identification_full_finite_k_channel_table_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universality_classifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `valley_linear_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -19500,6 +19501,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For symmetric perturbations h,k on D=diag(a,b,b,b), B_D(h,k)=D^2W[0](h,k)=-Tr(D^-1 h D^-1 k), and in the canonical lapse/shift/trace/shear basis this has weights diag(-a^-2, -(ab)^-1 x3, -b^-2 x6).  _(class `A`)_
 - **chain closes:** True — The audited claim is explicitly bounded to the local algebraic Hessian once the log-det generator and invariant background are assumed. Jacobi's formula, the inverse-variation identity, cyclicity of trace, and the displayed orthonormal canonical basis suffice to derive the formula and diagonal weights without importing the excluded scalar-generator selection or Einstein/Regge gluing premises.
 - **rationale:** The load-bearing step is a closed matrix-calculus identity over explicitly stated local inputs, and the note's claim boundary excludes the unproved physical selection and dynamical gluing steps. The runner source directly differentiates the symbolic log determinant for general symmetric h,k, checks the canonical Gram matrix symbolically, and numerically replays the same algebra; it does not hard-code an external comparator or tune a scale. Residual risk is only scope leakage by downstream users: this clean verdict covers the local Hessian normal form, not the route-wide scalar-generator selection premise or full GR/Regge dynamics.
+- **auditor confidence:** high
+
+### `universal_gr_w_hessian_identification_full_finite_k_channel_table_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`UNIVERSAL_GR_W_HESSIAN_IDENTIFICATION_FULL_FINITE_K_CHANNEL_TABLE_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/UNIVERSAL_GR_W_HESSIAN_IDENTIFICATION_FULL_FINITE_K_CHANNEL_TABLE_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-Brillouin-zone W-Hessian/channel-table audit for the 3D native elliptic Dirac operator and the declared/Ward-selected local schemes on the checked grids, excluding continuum, unique-improvement, and full-GR closure claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-150916-81f2e9715c-universal_gr_w_hessian_ident`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The explicit finite-BZ computation from the native elliptic Dirac operator identifies the declared local coupling's W Hessian with the midpoint bubble and gives Ward-selected TT and trace stiffnesses with the same positive sign and zero transverse trace/shear splitting, so the opposite-sign trace/TT comparator is not induced in the tested class.  _(class `C`)_
+- **chain closes:** True — The runner source instantiates the lattice Dirac operator, Pauli algebra, local vertices, seagull, position-space logdet Hessian check, and finite-BZ sums directly; the displayed channel table and sign/splitting conclusions are independently reproducible from the same restricted operator definitions. The only primitive used is the registered scale-reference units remark, which supplies no dimensionless physics and is not load-bearing.
+- **rationale:** The load-bearing computation is not a printed constant, renaming, or imported comparator match: it constructs the finite lattice operators and computes the W Hessian/channel slopes from first principles in the restricted packet. The cited upstream rows are retained-grade or an explicitly approved primitive, and the source keeps the negative scoped to the tested finite-BZ native one-loop W schemes while leaving continuum, improvement-classification, and geometric/Regge routes open. The updated cited no-go authority now treats the comparator signs as derived upstream rather than merely supplied, but that wording drift does not affect this row's audited statement that the tested W schemes do not induce that opposite-sign pair.
 - **auditor confidence:** high
 
 ### `universality_classifier_note`

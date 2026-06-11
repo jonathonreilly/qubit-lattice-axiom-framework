@@ -1,6 +1,8 @@
 # Cl(3) Taste-Generation Theorem: Z³ Lattice Doubling → 3 Tastes with Generation Structure
 
-**Date:** 2026-04-19 (originally); 2026-05-04 (audited_renaming scope-narrow)
+**Date:** 2026-04-19 (originally); 2026-05-04 (audited_renaming
+scope-narrow); 2026-06-11 (science-fix: current axiom-surface premise
+edge; T₃(e₃) sign repair)
 **Status:** representation-theory theorem on the staggered-Dirac taste cube. The hw=1 orbit gives **three Z₃-related generation-candidate states** with the listed Y/T₃ spectra; identifying these candidates with **physical SM generations** is a separate retained-bridge requirement, not part of this theorem's load-bearing scope.
 **Claim type:** bounded_theorem
 **Claim boundary authority:** this note
@@ -23,6 +25,27 @@ The renaming criterion (from the audit): *"Re-check whether a separate
 retained bridge theorem derives taste-orbit states as physical SM
 generations rather than naming them generation candidates."* This note now
 adopts the narrower "generation-candidate" framing throughout.
+
+## Audit-driven science-fix (2026-06-11)
+
+The 2026-06-11 conditional audit named two source-side repairs (the
+third item, auditing the staggered-Dirac carrier authority itself, is
+the audit lane's own queue and is not actionable from this note):
+
+1. **Superseded axiom citation replaced.** The cited axiom-set
+   authority `MINIMAL_AXIOMS_2026-04-11.md` is superseded; the current
+   registered premise node is
+   [`MINIMAL_AXIOMS_2026-06-05.md`](./MINIMAL_AXIOMS_2026-06-05.md)
+   (Lattice supplies the `Z³` substrate; Quantum supplies the
+   one-qubit-per-site local algebra whose triple tensor product is the
+   `C^8 = (ℂ²)^{⊗3}` taste-cube carrier admitted here). All axiom
+   citations below now point to the current surface.
+2. **T₃(e₃) sign drift corrected.** Section D previously wrote
+   `T₃ = +1/2` for `e₃ = |0,0,1⟩`. With `T₃` read on the `b₃` fiber
+   (`σ₃|0⟩ = +|0⟩`, `σ₃|1⟩ = −|1⟩`), the state `e₃` has `b₃ = 1` and
+   hence `T₃ = −1/2`, as both runners and every spectrum listing in
+   this note (`{−1/2, +1/2, +1/2}`) already state. The per-state
+   prose now matches the verified spectrum; no runner value changes.
 
 ## Audit-driven dependency-edge rigorization (2026-05-10)
 
@@ -60,9 +83,11 @@ sibling claim or change this row's `audited_conditional` status.
   realization parent as admitted-context input). This note's section D
   (Y/T3 spectra `{+1/3,+1/3,-1}` and `{-1/2,+1/2,+1/2}` on the hw=1 sector)
   inherits the in-scope `M_3(C)` structure of that note's items (1)–(4).
-- [`MINIMAL_AXIOMS_2026-04-11.md`](./MINIMAL_AXIOMS_2026-04-11.md) — `meta`,
-  axiom-set authority. Provides the Z³ substrate and Cl(3) local algebra
-  axioms; staggered-Dirac realization is currently flagged as an open gate
+- [`MINIMAL_AXIOMS_2026-06-05.md`](./MINIMAL_AXIOMS_2026-06-05.md) — `meta`,
+  current axiom surface (registered premise node; replaces the
+  superseded 2026-04-11 memo per the 2026-06-11 science-fix above).
+  Lattice provides the Z³ substrate and Quantum the one-qubit-per-site
+  local algebra; staggered-Dirac realization is currently flagged as an open gate
   rather than an axiom (per
   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](./STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md),
   which is the canonical open gate for the framework-carrier reading of
@@ -140,7 +165,7 @@ representation-theory.
 Related current surfaces are
 [`S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`](S3_TASTE_CUBE_DECOMPOSITION_NOTE.md),
 [`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md),
-and [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md). They are
+and [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md). They are
 not treated here as supplying the deferred physical-generation bridge.
 
 ---
@@ -190,7 +215,9 @@ The Z₃ element `(123)` sends `e₁ → e₂ → e₃ → e₁` (cyclic, verifi
 Z₃ cycles all three tensor factors: e₁→e₂→e₃→e₁. Because Z₃ maps b₃ (fiber)
 to b₁ (base) and back, it does NOT preserve the base/fiber decomposition on which
 Y and T₃ are defined. Individual hw=1 states are NOT Y eigenstates:
-- e₃ = |0,0,1⟩ (b₃=1): Y eigenstate with Y = +1/3, T₃ = +1/2
+- e₃ = |0,0,1⟩ (b₃=1): Y eigenstate with Y = +1/3, T₃ = −1/2 (σ₃|1⟩ = −|1⟩;
+  sign corrected 2026-06-11 — the earlier `+1/2` contradicted the verified
+  spectrum below and both runners)
 - e₁ = |1,0,0⟩ and e₂ = |0,1,0⟩ (b₃=0, mixed base): T₃ = +1/2 each (σ₃|0⟩ = +|0⟩);
   symmetric combination (e₁+e₂)/√2 has Y = +1/3, antisymmetric (e₁−e₂)/√2 has Y = −1.
 
@@ -236,7 +263,9 @@ additional matter input.
 | hw=1 T₃ spectrum: {−1/2, +1/2, +1/2} | exact |
 
 Independent crosscheck: `scripts/frontier_s3_action_taste_cube_decomposition.py`
-produces identical decomposition (63/63 pass, 0 fail).
+produces identical decomposition (`TOTAL: PASS=57, FAIL=0` per its
+runner cache; the older "63/63" count referred to a superseded runner
+revision).
 
 ---
 
@@ -245,8 +274,11 @@ produces identical decomposition (63/63 pass, 0 fail).
 - **Taste = generation blocker**: Z₃ cyclic symmetry of Z³ forces exactly 3
   generation candidates; the hw=1 sector has Y spectrum {+1/3, +1/3, −1} and
   T₃ spectrum {−1/2, +1/2, +1/2}, consistent with one SM left-handed generation
-- Provides algebraic support for the three-generation matter structure recorded
-  in [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
+- Provides algebraic support for the three-generation matter program on the
+  current axiom surface
+  ([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md): Z³
+  substrate plus one-qubit-per-site local algebra); the physical
+  identification remains deferred as stated above
 
 ## What Remains Bounded
 

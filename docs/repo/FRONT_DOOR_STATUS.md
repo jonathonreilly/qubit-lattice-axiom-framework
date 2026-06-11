@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1455 |
-| Retained-grade rows, including boxed decorations | 1303 |
+| Applied audit verdicts | 1456 |
+| Retained-grade rows, including boxed decorations | 1304 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 831 |
+| Retained bounded rows | 832 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 39 |
-| Unaudited rows | 1388 |
+| Unaudited rows | 1387 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 48 |
 | Audited renaming rows | 34 |
@@ -33,19 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1390 |
-| Ready rows | 7 |
+| Total pending rows | 1389 |
+| Ready rows | 6 |
 | Cycle-break targets | 0 |
 | Critical pending | 282 |
 | High pending | 281 |
-| Medium pending | 411 |
+| Medium pending | 410 |
 | Leaf pending | 416 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09`](../../docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md) - medium; unaudited
 - [`theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`](../../docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10`](../../docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md) - medium; unaudited
 - [`universal_gr_conformal_mode_sign_diagnostic_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CONFORMAL_MODE_SIGN_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
@@ -82,16 +81,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3298 |
 | Critical nodes | 509 |
 | High nodes | 501 |
-| Medium nodes | 889 |
-| Leaf nodes | 1399 |
+| Medium nodes | 888 |
+| Leaf nodes | 1400 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1504 descendants; score 122.556
-- `three_generation_observable_theorem_note` - critical; 1017 descendants; score 63.492
-- `graph_first_su3_integration_note` - critical; 1359 descendants; score 60.909
+- `three_generation_observable_theorem_note` - critical; 1016 descendants; score 63.490
+- `graph_first_su3_integration_note` - critical; 1358 descendants; score 60.908
 - `observable_principle_from_axiom_note` - critical; 862 descendants; score 59.253
 - `minimal_axioms_2026-05-03` - critical; 971 descendants; score 47.425
 - `key_terminology` - critical; 1189 descendants; score 47.217
-- `cl3_color_automorphism_theorem` - critical; 998 descendants; score 41.464
+- `cl3_color_automorphism_theorem` - critical; 997 descendants; score 41.463
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 937 descendants; score 41.373

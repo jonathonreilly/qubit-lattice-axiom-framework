@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 831 |
+| **retained_bounded** | 832 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 39 |
-| unaudited | 1388 |
+| unaudited | 1387 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1278 |
+| `audited_clean` | 1279 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1704 |
+| `unaudited` | 1703 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 855 |
-| `leaf` | 1310 |
+| `medium` | 854 |
+| `leaf` | 1311 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -102,16 +102,16 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1504 | 122.56 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1017 | 63.49 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1359 | 60.91 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1016 | 63.49 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1358 | 60.91 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 862 | 59.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 971 | 47.42 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1189 | 47.22 | `unaudited` | meta |
-| 7 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 998 | 41.46 | `audited_clean` | **retained** |
+| 7 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 997 | 41.46 | `audited_clean` | **retained** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 937 | 41.37 | `unaudited` | unaudited |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1021 | 40.50 | `unaudited` | unaudited |
 | 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 929 | 39.86 | `unaudited` | unaudited |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1325 | 39.37 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1324 | 39.37 | `audited_clean` | **retained** |
 | 12 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1268 | 38.81 | `audited_clean` | **retained_bounded** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 772 | 38.59 | `unaudited` | unaudited |
 | 14 | `yt_ew_color_projection_theorem` | no_go | critical | 715 | 38.48 | `audited_clean` | **retained_no_go** |
@@ -123,7 +123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 707 | 32.97 | `unaudited` | unaudited |
 | 21 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 940 | 31.88 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 704 | 31.46 | `unaudited` | unaudited |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 832 | 31.20 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 831 | 31.20 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 317 | 30.81 | `unaudited` | unaudited |
 | 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 171 | 30.43 | `audited_clean` | **retained** |
 
@@ -1231,6 +1231,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18069,6 +18070,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The algebra follows directly from the displayed power-law ansatz relative to the exponent-12 baseline, and independent arithmetic from the cited c_R(6) values reproduces the table ratios and Δlnρ/ln(c/c_(0,0)) = 2/π to the displayed precision. This does not audit or establish the K-tube ansatz itself or a one-loop Feynman derivation of 2/π.
 - **rationale:** The one-hop cited authority is retained_bounded, which is retained-grade under the rubric. Recomputing from the packet values gives the displayed c_R/c_(0,0) ratios and Δlnρ values, and dividing by ln(c_R/c_(0,0)) returns 0.63661977 = 2/π for each tested irrep. The note explicitly bounds itself to the denominator correction; broader statements about the physical one-loop origin and MC comparison are not established by this audit.
 - **auditor confidence:** high
+
+### `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09`
+
+- **Note:** [`SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md`](../../docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the explicit sufficient strong-coupling/KP analyticity floor β0=0.00470 for pure-gauge SU(3) fundamental-Wilson theory on the fixed Z^4 plaquette graph, excluding a second-order bulk critical point only on (0,β0].
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-154038-b9792fbbc3-su3_bulk_criticality_premise`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The KP bound (Δ+1)Σ_{n≥1} C_anim^{n-1}(ηe)^n≤1 with Δ=20 and C_anim=e(Δ+1) gives η≤1/((Δ+1)e(1+e)), and the analytic η_bound reaches this at β0=0.00470, excluding bulk criticality on (0,β0].  _(class `C`)_
+- **chain closes:** True — The runner computes rather than imports the SU(3) plaquette bound inputs, enumerates the Z^4 plaquette adjacency constants, and solves the analytic η_bound threshold. The standard KP criterion then supplies analyticity and exponential clustering below the threshold, so the bounded floor claim closes within its stated scope.
+- **rationale:** Independent checks of the displayed constants give Δ=20, ηcrit=1/(21e(1+e))≈0.004711, β0≈ln(1+ηcrit)=0.00470, and β0/6≈0.078%. The runner source is not a print-only certificate: it enumerates the plaquette graph, evaluates the SU(3) class-function calibration, and uses the analytic Hoeffding/Jensen η_bound for the floor. The supplied upstream authority is retained_bounded, which is retained-grade for this bounded theorem, and the note leaves the remaining (β0,6] interval open rather than consuming it as closed evidence.
+- **auditor confidence:** medium
 
 ### `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`
 

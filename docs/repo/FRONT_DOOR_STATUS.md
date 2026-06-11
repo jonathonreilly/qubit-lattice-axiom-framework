@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1450 |
-| Retained-grade rows, including boxed decorations | 1300 |
+| Applied audit verdicts | 1451 |
+| Retained-grade rows, including boxed decorations | 1301 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 828 |
+| Retained bounded rows | 829 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 39 |
-| Unaudited rows | 1393 |
+| Unaudited rows | 1392 |
 | Retained-pending-chain rows | 16 |
 | Audited conditional rows | 46 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1395 |
-| Ready rows | 12 |
+| Total pending rows | 1394 |
+| Ready rows | 11 |
 | Cycle-break targets | 0 |
 | Critical pending | 282 |
 | High pending | 281 |
 | Medium pending | 411 |
-| Leaf pending | 421 |
+| Leaf pending | 420 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28`](../../docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
 - [`koide_p1_collapses_frame_residuals_note_2026-06-01`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md) - medium; unaudited
 - [`microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09`](../../docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md) - medium; unaudited
 - [`pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02`](../../docs/PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - medium; unaudited
-- [`su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09`](../../docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md) - leaf; unaudited
+- [`su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09`](../../docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md) - medium; unaudited
+- [`theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`](../../docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3298 |
 | Critical nodes | 509 |
 | High nodes | 501 |
-| Medium nodes | 890 |
-| Leaf nodes | 1398 |
+| Medium nodes | 889 |
+| Leaf nodes | 1399 |
 
 Top load-bearing rows by graph score:
 

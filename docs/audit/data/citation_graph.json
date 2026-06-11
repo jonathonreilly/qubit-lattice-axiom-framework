@@ -48930,10 +48930,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "alpha_s_derived_narrow_theorem_note_2026-05-10"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
         "alpha_s_derived_narrow_theorem_note_2026-05-10",
         "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
         "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
-        "quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28"
+        "quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28",
+        "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "872e2c1e33f27fbefff22fb868f58fa9527a350b3835d8fe2b2ad4c6d774006b",
+      "note_hash": "f0f3794765f81e8a0b77e4a8cd0e9b1b4156a586a4352262e4f6047b7804ba69",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

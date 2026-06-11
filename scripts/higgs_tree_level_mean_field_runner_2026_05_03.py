@@ -398,6 +398,38 @@ def section_c():
           and det_t == (m * m + a * a) ** 8
           and det_t != (m * m + 4 * a * a) ** 8)
 
+    # C10 (Step 5(c) susceptibility cross-check, audit-requested
+    # 2026-06-11): the FULL susceptibility from the color-stacked
+    # generating function W(m) = N_c log det(u_0 D + m) = -N_c V_taste(m)
+    # is W''(0) = N_c N_taste / (4 u_0^2); the per-color per-channel
+    # value W''(0) / (N_c N_taste) = 1/(4 u_0^2) equals the Step-4
+    # per-channel curvature magnitude |V_taste''(0)| / N_taste — the
+    # cross-check reduces to the same algebra, not an independent
+    # derivation. (The pre-fix note text omitted the N_taste factor in
+    # the full susceptibility and so double-divided by N_taste.)
+    n_c_phys = 3
+
+    def w_full(m_val):
+        mat = [[d_float[i][j] + (m_val if i == j else 0.0)
+                for j in range(16)] for i in range(16)]
+        return n_c_phys * logdet_float(mat)
+
+    wpp_fd = (w_full(h) - 2 * w_full(0.0) + w_full(-h)) / h ** 2
+    wpp_analytic = n_c_phys * N_TASTE_DECLARED / (4.0 * U_0 ** 2)
+    check("C", "Step 5(c) susceptibility: W''(0) = N_c N_taste/(4 u_0^2) "
+               "from the computed determinant (finite difference vs "
+               "analytic)",
+          abs(wpp_fd - wpp_analytic) < 1e-4,
+          f"fd = {wpp_fd:.9f}, analytic = {wpp_analytic:.9f}")
+    per_color_channel = wpp_fd / (n_c_phys * N_TASTE_DECLARED)
+    check("C", "Step 5(c) per-color per-channel W''(0)/(N_c N_taste) = "
+               "1/(4 u_0^2) — equals the Step-4 per-channel curvature "
+               "magnitude (same algebra; no double N_taste division)",
+          abs(per_color_channel - 1.0 / (4.0 * U_0 ** 2)) < 1e-5
+          and abs(per_color_channel - abs(curv_fd) / N_TASTE_DECLARED) < 1e-12,
+          f"per-color per-channel = {per_color_channel:.9f}, "
+          f"1/(4 u_0^2) = {1.0 / (4.0 * U_0 ** 2):.9f}")
+
 
 # ---------------------------------------------------------------------------
 # Section A — exact readout algebra over declared inputs (D1 + C1).

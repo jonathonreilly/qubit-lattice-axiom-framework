@@ -3,12 +3,11 @@
 
 The runner checks the current repo prose anchors and the finite set
 composition used by docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md.
-It does not prove the full Bertrand closed-orbit theorem, atomic stability, or
-a framework-native dimension-selection theorem.
+It does not prove the full Bertrand closed-orbit theorem, atomic stability,
+a hydrogen spectrum, or a framework-native dimension-selection theorem.
 """
 from __future__ import annotations
 
-import re
 from pathlib import Path
 
 
@@ -50,10 +49,6 @@ def has(text: str, needle: str) -> bool:
     return needle in text
 
 
-def has_re(text: str, pattern: str) -> bool:
-    return re.search(pattern, text, flags=re.MULTILINE | re.DOTALL) is not None
-
-
 def main() -> None:
     print("D3 upper-bound native-stable-edge gate")
     print("=" * 58)
@@ -77,7 +72,7 @@ def main() -> None:
     check(
         "gate identifies native stable-orbit edge as the decisive current uniqueness route",
         has(gate, "depends on the native stable-orbit\nupper edge")
-        and has(gate, "Atomic stability supplies compatible companion support"),
+        and has(gate, "Coulomb scaling is therefore\n   companion support here"),
     )
     check(
         "gate forbids repo-wide authority edits",
@@ -121,19 +116,22 @@ def main() -> None:
         and has(upper, "L_runner intersect U_stable = {3}"),
     )
     check(
-        "upper wrapper contains atomic route and d<=4 bound",
+        "upper wrapper contains Coulomb scaling companion and d>=5 exclusion",
         has(upper, "Tangherlini")
         and has(upper, "Ehrenfest")
-        and has(upper, "stable hydrogen-like atoms require `d <= 4`"),
+        and has(upper, "bounded Coulomb Green-kernel scaling companion")
+        and has(upper, "unbounded below on this test-function family\nfor every integer `d >= 5`"),
     )
     check(
-        "upper wrapper marks standard Coulomb spectrum only at d=3",
-        has(upper, "canonical infinite-bound-state Coulomb spectrum existing only at\n`d = 3`"),
+        "upper wrapper marks hydrogen spectrum as non-load-bearing",
+        has(upper, "does **not** consume a textbook hydrogen spectrum")
+        and has(upper, "complete\natomic-stability theorem as a load-bearing input"),
     )
     check(
         "upper wrapper forbids internal-derivation overread",
         has(upper, "This is NOT a proof of the full all-bounded-orbits-are-closed Bertrand")
         and has(upper, "This is NOT a complete framework-native derivation of atomic stability")
+        and has(upper, "hydrogenic spectrum")
         and has(upper, "This is NOT a framework-level derivation of `d = 3`"),
     )
 
@@ -162,39 +160,35 @@ def main() -> None:
     lower_runner_support = {3, 4, 5}
     checked_positive_dims = set(range(1, 9))
     stable_upper = {d for d in checked_positive_dims if d <= 3}
-    atomic_ground_upper = {d for d in checked_positive_dims if d <= 4}
-    atomic_strict_spectrum = {3}
+    coulomb_scaling_upper = {d for d in checked_positive_dims if d <= 4}
 
     lower_and_stable = lower_runner_support & stable_upper
-    lower_and_atomic_ground = lower_runner_support & atomic_ground_upper
-    lower_and_atomic_strict = lower_runner_support & atomic_strict_spectrum
+    lower_and_coulomb_scaling = lower_runner_support & coulomb_scaling_upper
 
     check("lower support set is exactly the checked current finite set", lower_runner_support == {3, 4, 5})
     check("native stable upper set over checked positive dims is d<=3", stable_upper == {1, 2, 3})
-    check("atomic weaker stability upper set over checked positive dims is d<=4", atomic_ground_upper == {1, 2, 3, 4})
+    check("Coulomb scaling companion excludes d>=5 over checked positive dims", coulomb_scaling_upper == {1, 2, 3, 4})
     check("lower intersect native stable edge is unique d=3", lower_and_stable == {3}, str(sorted(lower_and_stable)))
     check(
-        "lower intersect weaker atomic stability is not unique",
-        lower_and_atomic_ground == {3, 4},
-        str(sorted(lower_and_atomic_ground)),
-    )
-    check("lower intersect strict atomic spectrum is unique if separately used", lower_and_atomic_strict == {3})
-    check(
-        "native stable edge is decisive under current weaker atomic-stability scope",
-        lower_and_stable == {3} and lower_and_atomic_ground != {3},
+        "lower intersect weaker Coulomb scaling companion is not unique",
+        lower_and_coulomb_scaling == {3, 4},
+        str(sorted(lower_and_coulomb_scaling)),
     )
     check(
-        "atomic companion support is compatible with native-stable-selected d=3",
-        3 in lower_and_atomic_ground and 3 in lower_and_stable,
+        "native stable edge is decisive under current weaker Coulomb-scaling scope",
+        lower_and_stable == {3} and lower_and_coulomb_scaling != {3},
+    )
+    check(
+        "Coulomb companion support is compatible with native-stable-selected d=3",
+        3 in lower_and_coulomb_scaling and 3 in lower_and_stable,
     )
 
-    forbidden_gate_patterns = [
-        r"framework-internal derivation of the full Bertrand closed-orbit theorem;\n-\s+a framework-internal derivation of atomic stability;\n-\s+a full dimension-selection theorem",
-        r"does not claim:\n\n-\s+a framework-internal derivation",
-    ]
     check(
         "gate non-claims include framework derivation firewall",
-        all(has_re(gate, pattern) for pattern in forbidden_gate_patterns),
+        has(gate, "This note does not claim:")
+        and has(gate, "a framework-internal derivation of the full Bertrand closed-orbit theorem")
+        and has(gate, "a framework-internal derivation of atomic stability or a hydrogenic")
+        and has(gate, "a full dimension-selection theorem from the current Lattice/Quantum/Record"),
     )
     check(
         "gate records future work as native edge audit or stronger theorem work",
@@ -214,9 +208,9 @@ def main() -> None:
     print("COMPOSITION:")
     print(f"  lower runner support: {sorted(lower_runner_support)}")
     print(f"  native stable upper:  d <= 3 -> {sorted(stable_upper)}")
-    print(f"  atomic weak upper:    d <= 4 -> {sorted(atomic_ground_upper)}")
+    print(f"  Coulomb scaling upper:d <= 4 -> {sorted(coulomb_scaling_upper)}")
     print(f"  lower & native stable:{sorted(lower_and_stable)}")
-    print(f"  lower & atomic weak:  {sorted(lower_and_atomic_ground)}")
+    print(f"  lower & Coulomb scale:{sorted(lower_and_coulomb_scaling)}")
     print("STATUS: exact-support native-stable-edge gate; audit_required_before_effective_retained=true")
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
 

@@ -48,7 +48,7 @@ and the `T_1` cyclic projector
 A_3(Y) = (1/3) Σ_{k=0}^2 C^k Y C^{-k}.
 ```
 
-If `P_1` denotes the projector onto `T_1`, then for every full-cube source
+If `P_1` denotes the projector onto `T_1`, then for every full-cube
 operator `X`
 ```
 P_1 A_8(X) P_1 = A_3(P_1 X P_1).
@@ -56,8 +56,9 @@ P_1 A_8(X) P_1 = A_3(P_1 X P_1).
 
 So exact full-cube averaging and charged-sector compression commute.
 
-Therefore every averaged full-cube source lands, after compression to `T_1`,
-in the same cyclic Hermitian image
+Therefore every averaged full-cube operator lands, after compression to
+`T_1`, in the complex cyclic image of `A_3`. For Hermitian full-cube
+sources, the compressed image is exactly the real cyclic Hermitian span
 ```
 span_R{B0, B1, B2},
 ```
@@ -192,7 +193,8 @@ Y(X) = u0(X) B0 + u1(X) B1 + u2(X) B2
 ```
 for unique real coefficients `u0,u1,u2`.
 
-Therefore any Schur-compatible charged response of the form
+Therefore any Schur-compatible charged response to a Hermitian full-cube
+source of the form
 ```
 R_M(X) = Re Tr(S(M) Y(X))
 ```
@@ -217,8 +219,8 @@ This note proves exactly:
    `B0,B1,B2`;
 3. every positive `U`-covariant full-cube parent reduced by a Schur-compatible
    charged-sector map lands in the same cyclic `3`-response family;
-4. every Schur-compatible full-cube source response factors through the same
-   three response numbers `(r0,r1,r2)`.
+4. every Schur-compatible Hermitian full-cube source response factors through
+   the same three response numbers `(r0,r1,r2)`.
 
 The runner verifies all of this directly.
 

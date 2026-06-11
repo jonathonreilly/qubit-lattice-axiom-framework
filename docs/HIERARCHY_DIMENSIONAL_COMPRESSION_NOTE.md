@@ -182,11 +182,13 @@ Verifies, using only intra-framework arithmetic, that:
    D=4-specific under the inherited per-determinant readout, not an
    interchangeable choice).
 4. The runner does NOT depend on the imported `v_obs`, `v_pred`, or
-   `C_obs` in any PASS condition. Those quantities are printed as
-   `external context` for reader transparency and are explicitly
-   excluded from PASS gates.
+   `C_obs` in any load-bearing arithmetic gate.
+5. The explicit import-hygiene PASS gate records that `v_obs`,
+   `v_pred`, and `C_obs` are introduced only after the PASS-gate block.
+   Those quantities are printed as `external context` for reader
+   transparency and are explicitly excluded from PASS gates.
 
-Expected scorecard: `4 pass, 0 fail out of 4`.
+Expected scorecard: `5 pass, 0 fail out of 5`.
 
 ```yaml
 claim_id: hierarchy_dimensional_compression_note

@@ -93,7 +93,7 @@ Verifies, at exact rational precision via Python `Fraction`:
    (verified for `v ∈ {1, 2, -3, 7/11}`).
 4. Hessian off-diagonal `∂²/∂φ_i ∂φ_j` for `i ≠ j` evaluates to 0 at
    the axis-aligned minimum (concrete numerical test for several `f`
-   choices: `f(x) = x`, `f(x) = x²`, `f(x) = log(1 + x)`).
+   choices: `f(x) = x`, `f(x) = x²`, `f(x) = x³`).
 5. Hessian diagonal `∂²/∂φ_i ∂φ_i` evaluates to a common value; concrete
    examples have nonzero common value.
 

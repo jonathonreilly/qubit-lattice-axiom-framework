@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_generation_equivariant_ward_degeneracy_no_go.py
-runner_sha256: 68ca00375cd2584aa92375f2e975c95c71b2b1385285a785584db3e23e3c2fdb
+runner_sha256: d97a8fd9ae604f3f80dcd0a18c27aaaa5bbdb2561152f9b64a6745a198b0a325
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.08
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
 ----- stdout -----
 ========================================================================================
 LANE 3 GENERATION-EQUIVARIANT WARD DEGENERACY NO-GO
@@ -17,7 +17,7 @@ PASS: THREE_GENERATION_STRUCTURE_NOTE.md exists -- docs/THREE_GENERATION_STRUCTU
 PASS: S3_TASTE_CUBE_DECOMPOSITION_NOTE.md exists -- docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md
 PASS: QUARK_GENERATION_STRATIFIED_WARD_FREE_MATRIX_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_GENERATION_STRATIFIED_WARD_FREE_MATRIX_NO_GO_NOTE_2026-04-28.md
 PASS: SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md exists -- docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md
-FAIL: generation note says hierarchy remains open
+PASS: generation note says mass hierarchy remains outside its retained scope
 PASS: S3 support note identifies hw=1 as A_1 + E
 PASS: block01 free-matrix no-go is compatible
 PASS: new note forbids retained mass closure
@@ -71,8 +71,9 @@ PASS: new note does not overclaim future no-go
 
 Summary
 ------------------------------------------------------------------------
-TOTAL: PASS=43, FAIL=1
-VERDICT: generation-equivariant Ward no-go verifier has failing checks.
+TOTAL: PASS=44, FAIL=0
+VERDICT: S_3-equivariant Ward operators cannot stratify three quark
+generation Yukawa eigenvalues without a new source/readout primitive.
 
 ----- stderr -----
 

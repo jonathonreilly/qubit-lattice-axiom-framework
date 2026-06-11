@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 821 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1414 |
+| unaudited | 1413 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1265 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1730 |
+| `unaudited` | 1729 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 850 |
-| `leaf` | 1315 |
+| `medium` | 851 |
+| `leaf` | 1314 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1419,6 +1419,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_minimal_scale_free_selector_note_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_readout_lane_demarcation_note_2026-05-30` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10670,6 +10671,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For H=aI+bC+conj(b)C^2, the trace projections recover a and b, Q=(1+2|b|^2/a^2)/3 gives Q=1/3 at b=0 and Q=2/3 at r=1/2, L_3(1,2)=2/9, and Q is independent of the phase of b.  _(class `A`)_
 - **chain closes:** True — The displayed identities follow by trace orthogonality of the C3 circulant basis, the root-of-unity cosine sums, and the cited retained-grade L_3(1,2)=2/9 calculation. The note explicitly leaves the physical interaction or record mechanism outside scope.
 - **rationale:** Independent algebra checks reproduce a=Tr(H)/3, b=Tr(C^{-1}H)/3, Q=(3a^2+6|b|^2)/(3a)^2=(1+2r)/3, the r=0 and r=1/2 values, phase independence, and L_3(1,2)=2/9. The runner performs finite algebraic checks rather than merely printing constants, although it is not a first-principles framework computation. All cited authorities are retained-grade for the bounded algebra used here, and the source does not claim charged-lepton channel closure.
+- **auditor confidence:** high
+
+### `koide_readout_lane_demarcation_note_2026-05-30`
+
+- **Note:** [`KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md`](../../docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the narrow readout-lane no-go that the tested signed/Hermitian C3-circulant mass readout and residue variants supply the Koide formula and phase quotient but do not themselves select r=1/2.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-0fc1d483cb-koide_readout_lane_demarcati`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The native signed/Hermitian readout gives Q=(1+2r)/3 with dQ/dr=2/3, while residue variations do not provide a non-degenerate readout mechanism that selects r=1/2.  _(class `A`)_
+- **chain closes:** False — The unit-residue algebra, monotonicity in r, single-pole residue-collapse condition, and F1/F3 extrema check out independently. However the source's residue section states that the doublet-symmetric family Z=(1,t,t) is theta-independent only at t=0, while direct differentiation gives theta-independence at both t=0 and t=1; the runner does not assert this stated formula.
+- **rationale:** The main readout formula is a straightforward algebraic closure: sum lambda_k=3a, sum lambda_k^2=3a^2+6|b|^2, so Q=(1+2r)/3 and dQ/dr=2/3. The residue-collapse claim is mostly supported, and an independent all-theta check confirms only single-pole normalized weights make Q identically 2/3. But the displayed Z=(1,t,t) theta-independence statement is false as written, since t=1 is the unit-residue democratic readout and is also theta-independent. Because the strict formula inventory finds a source-runner gap in a quantitative residue statement, the row is not clean as written.
 - **auditor confidence:** high
 
 ### `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30`

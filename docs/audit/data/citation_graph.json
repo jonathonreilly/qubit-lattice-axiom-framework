@@ -48930,7 +48930,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "fifth_family_complex_note"
+      "to": "koide_readout_lane_demarcation_note_2026-05-30"
     },
     {
       "from": "repo.front_door_status",
@@ -48950,7 +48950,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_readout_lane_demarcation_note_2026-05-30"
+      "to": "alpha_s_derived_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.repo_organization",
@@ -94066,15 +94066,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "fifth_family_complex_note",
+        "koide_readout_lane_demarcation_note_2026-05-30",
         "d3_upper_bound_import_scope_gate_note_2026-06-06",
         "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
         "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
         "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
-        "koide_readout_lane_demarcation_note_2026-05-30"
+        "alpha_s_derived_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4320187342c2a61d3b5b9e63c6f62a7dc62b6c83c60da4b9ee7a5d16ab9096ee",
+      "note_hash": "767dfa2a63544db07b1e0c5ccf1fc95eedbb14852b354652131b226d27f52148",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

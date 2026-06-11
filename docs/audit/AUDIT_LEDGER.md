@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 825 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1400 |
+| unaudited | 1399 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1271 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1716 |
+| `unaudited` | 1715 |
 
 | claim_type | count |
 |---|---:|
@@ -1443,6 +1443,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `spin_statistics_fs_admission_located_exercise_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -17904,6 +17905,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited retained authority supplies the trace-normalized SU(3) Gell-Mann generators and structure constants. Standard adjoint construction, Jacobi identity, Schur's lemma, and the SU(N) Killing-form identity close the algebraic Casimir claim without importing the deferred physical-color bridge.
 - **rationale:** The runner genuinely computes structure constants from Gell-Mann matrices, builds the adjoint generators, and checks hermiticity, closure, trace normalization, scalar Casimir behavior, value 3, and the 9/4 ratio. These are algebraic consistency checks over the single upstream SU(3) parent plus standard Lie-algebra facts, with no external comparator or tuned numerical input. Because the claim adds a standard algebraic corollary of the upstream SU(3) embedding and explicitly carves out physical-gluon/QCD consequences, the conservative tie-break is audited_decoration rather than an independent bounded theorem.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional fixed-lattice reduction: if the 4D SU(3) fundamental-Wilson axis has no correlation-length-divergent second-order bulk critical point for 0 < beta <= 6, and the small-beta lattice-units gap exists positively, then m(6) > 0.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-150330-4f1132d6d2-su3_beta6_gap_bulk_criticali`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In infinite volume the gap is m(beta)=1/xi(beta), so a zero gap at or before beta=6 is exactly a divergent correlation length on that Wilson axis.  _(class `A`)_
+- **chain closes:** False — The conditional implication is algebraically coherent once the gap-correlation-length relation and the no-criticality premise are granted. The restricted packet does not prove the no-second-order-bulk-critical-point premise, nor does it supply a retained derivation of the small-beta positive gap/transfer-matrix bridge used as background.
+- **rationale:** The runner performs bounded one-plaquette, asymptotic, toy-kernel, guardrail, and comparator-label checks, but it does not compute or prove the load-bearing no-critical-point premise. The cited fixed-lattice authority is retained-bounded for one-plaquette scope diagnostics and explicitly does not supply a controlled SU(3) beta=6 gap theorem or all-coupling confinement bridge. The minimal axioms and registered primitive summaries do not add a Wilson action, transfer matrix, coupling convention, or criticality theorem. Therefore the note is valid only as a conditional reduction, not as a closed beta=6 gap proof.
 - **auditor confidence:** high
 
 ### `su3_bridge_pr525_flaw_fix_note_2026-05-05`

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1418 |
+| Applied audit verdicts | 1419 |
 | Retained-grade rows, including boxed decorations | 1288 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 205 |
 | Retained bounded rows | 820 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1425 |
+| Unaudited rows | 1424 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 29 |
+| Audited conditional rows | 30 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1427 |
-| Ready rows | 36 |
+| Total pending rows | 1426 |
+| Ready rows | 35 |
 | Cycle-break targets | 0 |
 | Critical pending | 282 |
-| High pending | 283 |
+| High pending | 282 |
 | Medium pending | 421 |
 | Leaf pending | 441 |
 
 Next ready rows by queue order:
 
-- [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
 - [`koide_q_source_domain_canonical_descent_theorem_note_2026-04-25`](../../docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`koide_q_minimal_scale_free_selector_note_2026-04-22`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`quark_bicac_endpoint_obstruction_theorem_note_2026-04-19`](../../docs/QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`quark_bimodule_norm_naturality_theorem_note_2026-04-19`](../../docs/QUARK_BIMODULE_NORM_NATURALITY_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`koide_real_rep_block_count_permitted_not_forced_note_2026-05-30`](../../docs/KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md) - medium; unaudited
+- [`hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29`](../../docs/HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,7 +62,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 162 |
-| high | `unaudited` | 161 |
+| high | `unaudited` | 160 |
 | medium | `unaudited` | 95 |
 | critical | `audited_conditional` | 3 |
 | critical | `open_gate` | 3 |
@@ -70,9 +70,9 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `audited_renaming` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| high | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
-| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

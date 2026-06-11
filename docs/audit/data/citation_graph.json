@@ -48926,11 +48926,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+      "to": "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30"
+      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
@@ -94065,8 +94065,8 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
+        "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
         "fifth_family_complex_note",
         "d3_upper_bound_import_scope_gate_note_2026-06-06",
         "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
@@ -94074,7 +94074,7 @@
         "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0ffe808dc8fdc222694fb8829c09f1dbc00fb3380f9749ac43d54cb4a8979eda",
+      "note_hash": "218ce7ce4ca2a9edb385ce9595bf15de38a2913384c1be3f4a43347f9e0edbbc",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

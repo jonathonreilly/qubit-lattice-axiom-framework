@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 207 |
 | **retained_bounded** | 820 |
 | _retained_pending_chain_ | 16 |
-| open_gate | 37 |
-| unaudited | 1416 |
+| open_gate | 38 |
+| unaudited | 1415 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1263 |
+| `audited_clean` | 1264 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1732 |
+| `unaudited` | 1731 |
 
 | claim_type | count |
 |---|---:|
@@ -692,6 +692,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9829,6 +9830,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The C_3[111] cyclic permutation has transverse eigenvalues {omega, omega^2}, hence weights (1,2), and the unique trace-free pair gives L_3(1,2)=2/9 via (omega-1)(omega^2-1)=3.  _(class `A`)_
 - **chain closes:** True — Independently, the cyclic matrix sends e1->e2->e3->e1, has det(P-xI)=1-x^3, rank(P-I)=2, and transverse spectrum {omega, omega^2}. Among nontrivial weight pairs only (1,2)/(2,1) has determinant character 1, and the density sum gives two terms of 1/3 divided by 3, hence 2/9.
 - **rationale:** The load-bearing result is finite linear algebra and exact root-of-unity arithmetic over retained or retained_bounded inputs, not a numerical match or definition substitution. The runner source performs actual symbolic computations rather than printing constants, and an independent hand derivation checks the same determinant, rank, trace-free-pair, and density factors. The open PL/global ABSS and physical readout bridges are explicitly outside the narrowed A/B claim scope, so they do not block this bounded theorem verdict.
+- **auditor confidence:** high
+
+### `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04`
+
+- **Note:** [`KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md`](../../docs/KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Four-cell mechanism check separating polarization from statistics for the real versus holomorphic doublet count in R[Z_3] = R (+) C, with the corresponding r and Q values.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-140810-6f4ce2b3ef-koide_berezin_detc_vs_detr_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The r = 1/2 cell follows from holomorphic polarization, choosing the doublet complex structure J and counting the doublet as one complex slot; changing Gaussian to Berezin statistics alone does not supply it because the real Majorana Berezin cell remains on the real-slot count.  _(class `A`)_
+- **chain closes:** True — The finite algebra, determinant, Pfaffian, complex-structure, and Q = (1 + 2r) / 3 checks support the four table entries under the stated model-cell choices. The source does not claim to derive or adopt J, so the still-open native polarization selector is outside this audited scope.
+- **rationale:** The runner source performs finite algebraic checks rather than relying only on printed PASS lines, and the independent formula check matches the displayed decompositions, determinant counts, Berezin/Pfaffian identities, and r-to-Q table. No external comparator, fitted value, or physical charged-lepton identification is imported. The complex-slot count is a scoped holomorphic-polarization model-cell assumption, not a claimed native derivation, which is consistent with claim_type open_gate.
 - **auditor confidence:** high
 
 ### `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29`

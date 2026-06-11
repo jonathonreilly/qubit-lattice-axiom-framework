@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_single_clock_codimension1_evolution_check.py
-runner_sha256: a93529b0a25981f5d9a92cd8df0eaafc975fb1b4a2735e0e297a10cfff9e0693
+runner_sha256: b17af603b0409e5e67814e6c31adf283684d57a03b6e42de1affb7ceed627b5a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.70
+elapsed_sec: 0.89
 status: ok
 ----- stdout -----
 ========================================================================
@@ -49,6 +49,22 @@ exchange symmetry shows the axis itself is a premise (old S3 withdrawn).
   [PASS] [C] commutator decays with distance outside the cone (profile = ['4.2e-01', '2.4e-02', '1.9e-03', '8.3e-05', '2.7e-06'])
 
 ------------------------------------------------------------------------
+[C-RANGE] (S2'c) FINITE-RANGE GENERATOR PREMISE (B-RANGE):
+          consistency + non-vacuity witness
+------------------------------------------------------------------------
+  [PASS] [C] (B-RANGE consistency) block H is exactly finite-range: all Pauli strings with support diameter > 1 vanish (max far-string coeff = 7.03e-17)
+  [PASS] [C] (B-RANGE witness) strictly local transfer is positive Hermitian (||T - T^dag|| = 3.38e-16, min eig = 0.2075)
+  [PASS] [C] (B-RANGE witness) log-generator has a nonzero end-to-end Pauli component (support diameter 2 > range 1) (|coeff[XYY]| = 0.0477)
+  [PASS] [C] (B-RANGE witness) H_w = -log T is NOT in the range-1 class: ||H_w - P_range1(H_w)||_op > 0 (remainder norm = 0.0759)
+  [PASS] [C] (B-RANGE contrast) single-factor transfer: -log(e^{-A}) = A exactly (locality preserved when no non-commuting tail exists) (resid = 2.40e-15)
+  DECLARED-PREMISE (B-RANGE): the propagation clause (S2'c) consumes
+  the (R-CD) L1/L3 finite-range hypothesis as a declared premise. The
+  transfer-derived log-generator is NOT proven finite-range by any
+  retained one-hop authority, and the witness above shows the property
+  can fail for strictly local transfers — (B-RANGE) is load-bearing
+  and non-vacuous.
+
+------------------------------------------------------------------------
 [C-EX] (S3') EXACT TIME-SPACE EXCHANGE INTERTWINER (withdraws old S3)
 ------------------------------------------------------------------------
   [PASS] [C] W = P_{tau<->1} diag((-1)^{x_tau x_1}) is orthogonal (N = 64 sites, mass = 0.3)
@@ -77,9 +93,10 @@ exchange symmetry shows the axis itself is a premise (old S3 withdrawn).
   [PASS] [D] claim stays transfer- and tau-relative (scope-boundary compliant) (G-SCOPE compliance wording present)
   [PASS] [D] claim_type is bounded_theorem (no positive_theorem over-claim) (yaml handoff checked)
   [PASS] [D] spatial-clustering clause not consumed (cluster L2 is conditional) (S2'(b) demoted to conditional remark)
+  [PASS] [D] note declares the finite-range generator premise (B-RANGE) (S2'(c) narrowed to the declared finite-range premise)
 
 ========================================================================
-TOTAL: PASS=36 FAIL=0
+TOTAL: PASS=42 FAIL=0
 ========================================================================
 
 ----- stderr -----

@@ -10,32 +10,32 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "pmns_three_flux_holonomy_closure_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded algebraic closure of the reduced graph-first oriented-cycle coordinates (u,v,w) from three specified flux-holonomy readouts, using the cited one-angle holonomy law as input.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "pmns_twisted_flux_transfer_holonomy_boundary_note",
         "pmns_oriented_cycle_channel_value_law_note",
         "pmns_graph_first_cycle_frame_support_note"
       ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "direct_in_degree": 3,
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 10.011,
+      "load_bearing_score": 10.514,
       "note_path": "docs/PMNS_THREE_FLUX_HOLONOMY_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_pmns_three_flux_holonomy_closure.py",
-      "transitive_descendants": 515
+      "transitive_descendants": 516
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

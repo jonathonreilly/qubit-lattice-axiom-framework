@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 833 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1431 |
+| unaudited | 1430 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1277 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1748 |
+| `unaudited` | 1747 |
 
 | claim_type | count |
 |---|---:|
@@ -113,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1041 | 40.52 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1355 | 39.41 | `audited_clean` | **retained** |
 | 13 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1295 | 38.84 | `audited_clean` | **retained_bounded** |
-| 14 | `alpha_s_derived_note` | bounded_theorem | critical | 880 | 38.78 | `unaudited` | unaudited |
+| 14 | `alpha_s_derived_note` | bounded_theorem | critical | 880 | 38.78 | `audited_conditional` | ~~audited_conditional~~ |
 | 15 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 791 | 38.63 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 733 | 38.52 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1359 | 36.91 | `audited_clean` | **retained** |
@@ -1411,6 +1411,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `alpha_s_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1812,6 +1813,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0², α_LM² = (α_bare/u_0)² = α_bare·(α_bare/u_0²) = α_bare·α_s(v).  _(class `A`)_
 - **chain closes:** True — The scoped claim is purely algebraic and follows immediately from the two definitional equations plus positivity for the logarithm. No physical plaquette value, running bridge, PDG comparator, or retained dependency is needed for the theorem as stated.
 - **rationale:** The theorem closes inside its explicitly narrow scope: once α_LM and α_s(v) are defined as α_bare/u_0 and α_bare/u_0² over positive scalars, T1-T3 are forced by algebra. The runner's numeric retained-value checks are not load-bearing for the abstract theorem, and the source note explicitly excludes physical derivation or external comparator claims.
+- **auditor confidence:** high
+
+### `alpha_s_derived_note`
+
+- **Note:** [`ALPHA_S_DERIVED_NOTE.md`](../../docs/ALPHA_S_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** T1 exact forward arithmetic for `alpha_s(v)` and the `alpha_LM` identity over declared boundary inputs B1-B4; C1 is only a quarantined bounded `v -> M_Z` corollary.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-223632-e6929c2c92-alpha_s_derived_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given B1-B4, `alpha_s(v) = alpha_bare / u_0^2 = 1 / (4 pi sqrt(<P>)) = 0.10330382`, together with `alpha_LM^2 = alpha_bare * alpha_s(v)`.  _(class `A`)_
+- **chain closes:** True — The arithmetic closes over the declared inputs: independently, `<P>=0.5934` gives `u_0=0.8776813811986844`, `alpha_s(v)=0.1033038161222671`, and the geometric-mean identity holds to roundoff. It does not close as an unconditional derivation because B1, the operator-level part of B3, and B4 remain declared inputs rather than derived results in the packet.
+- **rationale:** The load-bearing step is class A arithmetic, and the runner source genuinely recomputes the T1 values rather than merely printing the headline. However, the theorem depends on explicit declared premises: B1 licenses `0.5934` only as admitted reuse, the retained tadpole theorem supplies only abstract algebra and not the operator-level `n_link=2` counting, and B4 declares the lattice-to-MSbar scheme/scale identification. Therefore the scoped bounded arithmetic is sound, but the chain remains conditional on those open boundary inputs.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md`
+  - `PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`
 - **auditor confidence:** high
 
 ### `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30`

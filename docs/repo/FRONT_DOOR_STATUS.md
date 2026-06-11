@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1401 |
+| Applied audit verdicts | 1402 |
 | Retained-grade rows, including boxed decorations | 1285 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 205 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1444 |
-| Ready rows | 44 |
+| Total pending rows | 1443 |
+| Ready rows | 43 |
 | Cycle-break targets | 0 |
-| Critical pending | 300 |
+| Critical pending | 299 |
 | High pending | 284 |
 | Medium pending | 421 |
 | Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`single_clock_uniqueness_scope_boundary_2026-06-06`](../../docs/SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md) - critical; audit_in_progress
 - [`quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md) - critical; audit_in_progress
 - [`axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`axiom_first_spin_statistics_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`axiom_first_reeh_schlieder_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; unaudited
 - [`yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`](../../docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; unaudited
+- [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -88,10 +88,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1504 descendants; score 122.556
-- `three_generation_observable_theorem_note` - critical; 1016 descendants; score 63.490
-- `graph_first_su3_integration_note` - critical; 1358 descendants; score 60.908
+- `three_generation_observable_theorem_note` - critical; 1017 descendants; score 63.492
+- `graph_first_su3_integration_note` - critical; 1359 descendants; score 60.909
 - `observable_principle_from_axiom_note` - critical; 862 descendants; score 59.253
-- `minimal_axioms_2026-05-03` - critical; 971 descendants; score 47.425
-- `key_terminology` - critical; 1189 descendants; score 47.217
-- `cl3_color_automorphism_theorem` - critical; 997 descendants; score 41.463
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 937 descendants; score 41.373
+- `minimal_axioms_2026-05-03` - critical; 972 descendants; score 47.426
+- `key_terminology` - critical; 1190 descendants; score 47.218
+- `cl3_color_automorphism_theorem` - critical; 998 descendants; score 41.464
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 938 descendants; score 41.375

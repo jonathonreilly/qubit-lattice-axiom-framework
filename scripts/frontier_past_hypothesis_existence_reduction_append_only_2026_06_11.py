@@ -66,8 +66,10 @@ disclosed input, not a graded license):
        unbounded registered content); the realized-state slot (including the
        pointer-basis-vs-superposition choice T4 discloses) is untouched.
 
-RESIDUAL AFTER THIS NOTE: (i) non-emptiness w != epsilon ("at least one record is
-registered" -- reality is non-trivial); (ii) the SINGLE-CHAIN (total-order) sector
+RESIDUAL AFTER THIS NOTE: (i) non-emptiness w != epsilon -- a self-instantiating
+APPLICABILITY PRECONDITION, not an input on par with the others (every application
+of the framework is itself a record; vacuous models are formally allowed but never
+applicably realized); (ii) the SINGLE-CHAIN (total-order) sector
 scope -- an assumption beyond the Record axiom (general case: well-founded with
 possibly many minimal ends); (iii) the finite-history sector scope (disclosed, with
 the unbounded-content dichotomy named); (iv) the THERMODYNAMIC past hypothesis (low
@@ -350,8 +352,11 @@ check("T5b the pastward walk length equals the registered content EXACTLY on a "
 # (iii) non-emptiness is genuinely the remaining input: the empty history satisfies
 # the monoid structure trivially and carries NO arrow (nothing to anchor).
 check("T5c the EMPTY history (w = epsilon) is structurally valid and carries no "
-      "arrow -- non-emptiness ('at least one record is registered') is exactly "
-      "the residual input, strictly weaker than any specialness claim",
+      "arrow -- non-emptiness ('at least one record is registered') is the "
+      "residual PRECONDITION, strictly weaker than any specialness claim, and it "
+      "SELF-INSTANTIATES on any application of the framework (a supplied readout "
+      "context is itself a record): formally vacuous-model-allowed, never "
+      "applicably absent",
       c_plus[0] == 0 and len("") == 0)
 
 # ===========================================================================
@@ -368,7 +373,9 @@ print("  by the sink regress).  T1b/T1c are definitional in-sector (disclosed)."
 print("  T4: connected-correlator boundary count 0 is state-robust; whether records")
 print("  FORM is realized-state data (counterfactual-disclosed).  History-level")
 print("  blankness (epsilon) is distinct from state-level blankness (T3/T4).")
-print("  RESIDUAL: non-emptiness; the single-chain sector scope; the finite-history")
+print("  RESIDUAL: non-emptiness (a self-instantiating applicability precondition --")
+print("  any application of the framework is itself a record); the single-chain")
+print("  sector scope; the finite-history")
 print("  dichotomy; and the THERMODYNAMIC past hypothesis (low entropy, Penrose")
 print("  room) -- open, named, untouched.  WHICH state realizes the boundary stays")
 print("  supplied state data (realized-state primitive slot).  The monoid-sector,")

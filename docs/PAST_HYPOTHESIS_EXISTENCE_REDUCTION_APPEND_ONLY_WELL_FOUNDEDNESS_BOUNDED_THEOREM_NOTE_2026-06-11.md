@@ -76,8 +76,17 @@ claimed structural.
 
 ## What remains — the residual inventory (anti-overclaim controls in-runner)
 
-1. **Non-emptiness**: `w ≠ ε` — *at least one record is registered*; reality is
-   non-trivial. The empty history is structurally valid and carries no arrow.
+1. **Non-emptiness**: `w ≠ ε` — *at least one record is registered*. Formally this
+   is not a theorem (the empty history satisfies the axioms vacuously and carries no
+   arrow — checked), but it is **not an input on par with the others either: it is a
+   self-instantiating applicability precondition** (owner-observed). The Record axiom
+   exists because there are records; every *application* of the framework — a
+   supplied readout context, a registered question, this note — is itself a record,
+   so any world in which the framework is applied has `w ≠ ε` by the act of
+   application. The framework owes no account of record-free worlds: there is no one
+   in them to owe it to. Non-emptiness therefore discharges on application, and the
+   genuinely open residuals are the sector scopes and the thermodynamic question
+   below.
 2. **The single-chain sector scope** — the total order is an assumption beyond the
    Record axiom (general case: well-founded, possibly many minimal ends — T1d).
 3. **The finite-history sector scope** — dichotomy named, not hidden: an unbounded

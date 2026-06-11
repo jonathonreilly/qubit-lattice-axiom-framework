@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_past_hypothesis_existence_reduction_append_only_2026_06_11.py
-runner_sha256: e7734455e4793ad0d3f8ea3c82fcf19e3d51aec556c92f3958e09749e085c5a5
+runner_sha256: 92b8e18599d14b02d365adf7ed3956988b19aa5801f74ccec34b5a3386af939a
 timeout_sec: 300
 exit_code: 0
 elapsed_sec: 0.13
@@ -35,7 +35,7 @@ T5  Residual inventory (anti-overclaim controls)
 ==============================================================================
   [PASS] T5a two boundary realizations with DIFFERENT room (3 vs 5 registers) both satisfy the boundary theorem -- the reduction does NOT deliver the quantitative/thermodynamic content (low entropy, Penrose room): that residual is genuinely open
   [PASS] T5b the pastward walk length equals the registered content EXACTLY on a growing family: an unbounded past requires unbounded already-registered content (the named dichotomy; the finite-history sector scope is disclosed, not hidden)  (walk lengths [10, 100, 1000, 10000])
-  [PASS] T5c the EMPTY history (w = epsilon) is structurally valid and carries no arrow -- non-emptiness ('at least one record is registered') is exactly the residual input, strictly weaker than any specialness claim
+  [PASS] T5c the EMPTY history (w = epsilon) is structurally valid and carries no arrow -- non-emptiness ('at least one record is registered') is the residual PRECONDITION, strictly weaker than any specialness claim, and it SELF-INSTANTIATES on any application of the framework (a supplied readout context is itself a record): formally vacuous-model-allowed, never applicably absent
 ==============================================================================
 TOTAL: PASS=15 FAIL=0
 ==============================================================================
@@ -49,7 +49,9 @@ SCOPE: reduces the record-arrow low-record-boundary EXISTENCE sub-clause to
   T4: connected-correlator boundary count 0 is state-robust; whether records
   FORM is realized-state data (counterfactual-disclosed).  History-level
   blankness (epsilon) is distinct from state-level blankness (T3/T4).
-  RESIDUAL: non-emptiness; the single-chain sector scope; the finite-history
+  RESIDUAL: non-emptiness (a self-instantiating applicability precondition --
+  any application of the framework is itself a record); the single-chain
+  sector scope; the finite-history
   dichotomy; and the THERMODYNAMIC past hypothesis (low entropy, Penrose
   room) -- open, named, untouched.  WHICH state realizes the boundary stays
   supplied state data (realized-state primitive slot).  The monoid-sector,

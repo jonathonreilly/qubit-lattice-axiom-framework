@@ -43,20 +43,26 @@
     {
       "claim_id": "key_terminology",
       "criticality": "critical",
-      "load_bearing_score": 47.249,
+      "load_bearing_score": 50.249,
       "transitive_descendants": 1216
     },
     {
       "claim_id": "minimal_axioms_2026-05-03",
       "criticality": "critical",
-      "load_bearing_score": 46.964,
+      "load_bearing_score": 49.964,
       "transitive_descendants": 998
     },
     {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
       "criticality": "critical",
-      "load_bearing_score": 42.423,
+      "load_bearing_score": 45.423,
       "transitive_descendants": 970
+    },
+    {
+      "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+      "criticality": "critical",
+      "load_bearing_score": 44.435,
+      "transitive_descendants": 978
     },
     {
       "claim_id": "plaquette_self_consistency_note",
@@ -69,12 +75,6 @@
       "criticality": "critical",
       "load_bearing_score": 41.521,
       "transitive_descendants": 1038
-    },
-    {
-      "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
-      "criticality": "critical",
-      "load_bearing_score": 41.435,
-      "transitive_descendants": 978
     },
     {
       "claim_id": "anomaly_forces_time_theorem",
@@ -125,6 +125,12 @@
       "transitive_descendants": 1108
     },
     {
+      "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+      "criticality": "critical",
+      "load_bearing_score": 34.94,
+      "transitive_descendants": 981
+    },
+    {
       "claim_id": "koide_circulant_character_derivation_note_2026-04-18",
       "criticality": "critical",
       "load_bearing_score": 34.614,
@@ -135,12 +141,6 @@
       "criticality": "critical",
       "load_bearing_score": 33.0,
       "transitive_descendants": 723
-    },
-    {
-      "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
-      "criticality": "critical",
-      "load_bearing_score": 31.94,
-      "transitive_descendants": 981
     },
     {
       "claim_id": "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",

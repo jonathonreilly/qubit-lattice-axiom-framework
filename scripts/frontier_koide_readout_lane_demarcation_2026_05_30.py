@@ -79,6 +79,39 @@ def main() -> int:
     check("no non-degenerate (Z0,w) makes Q x-independent (residue DOF exhausted)",
           all((s.get(Z0, 1) == 0 or s.get(w, 1) == 0) for s in sol), f"sols={sol}")
 
+    section("Check 2b - Z=(1,t,t) theta-independence endpoints")
+
+    def q_weighted(a0: float, b0: float, theta0: float, t0: float) -> float:
+        L = lams(a0, b0, theta0)
+        Z = np.array([1.0, t0, t0])
+        return float(np.sum(Z * L**2) / (np.sum(Z * L))**2)
+
+    theta_grid = [0.0, 0.31, 0.73, 1.27]
+    b_grid = [0.25, 0.5, 0.7071]
+    unit_vals = [q_weighted(1.0, b0, theta0, 1.0) for b0 in b_grid for theta0 in theta_grid]
+    collapse_vals = [q_weighted(1.0, b0, theta0, 0.0) for b0 in b_grid for theta0 in theta_grid]
+    half_vals_by_b = [
+        [q_weighted(1.0, b0, theta0, 0.5) for theta0 in theta_grid]
+        for b0 in b_grid
+    ]
+    check(
+        "Z=(1,1,1) unit residues are theta-independent but keep r free",
+        max(abs(q_weighted(1.0, b0, theta0, 1.0) - ((1 + 2 * b0**2) / 3.0))
+            for b0 in b_grid for theta0 in theta_grid) < 1e-10
+        and max(unit_vals) - min(unit_vals) > 1e-3,
+        "theta cancels at fixed r, while Q changes with r",
+    )
+    check(
+        "Z=(1,0,0) theta-independent endpoint is single-pole collapse Q=1",
+        max(abs(v - 1.0) for v in collapse_vals) < 1e-10,
+        "theta independence here is mass-loss collapse, not a 3-mass selector",
+    )
+    check(
+        "Z=(1,1/2,1/2) is not theta-independent",
+        any(max(vals) - min(vals) > 1e-3 for vals in half_vals_by_b),
+        "nonunit noncollapse residue choice retains theta dependence",
+    )
+
     section("Check 3 - center-mimicking residue Z=(1,1/2,1/2): not 2/3, theta/r-dependent")
     vals = []
     for theta in (0.0, 0.6, 1.2):

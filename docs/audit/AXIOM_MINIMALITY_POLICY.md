@@ -192,3 +192,32 @@ promoted to axiom or primitive class):
     The `no_go_portfolio` lists are unchanged (verified rows only); the new
     `sharpening_sources` fields list landed source notes whose audit status
     is set only by the audit lane.
+- **2026-06-11 -- past-hypothesis low-record boundary input (Tier-A
+  registration).** The past hypothesis -- the realized history has a
+  low-record (low-entropy) boundary -- is registered as a Tier-A admitted
+  derivation target,
+  `past_hypothesis_low_record_boundary_input_note_2026-06-11`, with source
+  `docs/PAST_HYPOTHESIS_LOW_RECORD_BOUNDARY_INPUT_NOTE_2026-06-11.md`.
+  Owner-directed 2026-06-11 (the named-boundary-input split-out).
+  - **Why Tier-A and not axiom/primitive.** It is not a law (the
+    microdynamics is time-symmetric; the arrow note proves the candidate
+    arrow's sign is fixed by the supplied state with the dynamics held
+    fixed), and it is content-bearing -- a specialness claim about the
+    realized history, exactly the class the realized-state primitive
+    declares it does not supply -- so it is not primitive-eligible under the
+    Born-reading classification precedent above. Tier-A is the honest
+    semantics: arrow-dependent rows are genuinely conditional on this input
+    and chain-satisfy at `retained_bounded`; the drawer keeps the
+    retirement route open (a retained derivation of the low-record boundary
+    retires the admission and upgrades dependents automatically).
+  - **No laundering.** Supplies the boundary's existence only. The arrow's
+    direction is derived; no measure or typicality machinery beyond the
+    boundary fact, no specific initial state, no within-history data, no
+    entropy-functional choice, no rate, no time metric, no second boundary
+    claim. Sharpening rows record what it does not determine (provably
+    uninformative about the color-purity slot; time arrow alone insufficient
+    for flavor handedness).
+  - **Scope.** Effective statuses are unchanged and remain audit-lane-only.
+    `genuine_admitted_input_count` rises from 2 to 3 in
+    `docs/audit/data/tier_a_admissions.json`.
+

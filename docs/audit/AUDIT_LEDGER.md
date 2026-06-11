@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 831 |
+| **retained_bounded** | 832 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1433 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1275 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1276 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
@@ -135,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1188,6 +1186,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17169,6 +17168,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Assume k(x)=1, so (n_+(x),n_-(x)) is (1,0) or (0,1); then H_x is one two-dimensional chirality summand, hence dim_C H_x=2.  _(class `A`)_
 - **chain closes:** True — For the ledger's C1-only scoped row, the chain closes as a class-A algebraic consequence of the retained Cl(3) complexification split plus standard finite-dimensional semisimple representation theory. The source note explicitly does not claim unconditional U4 closure, and the k>=2 constructions correctly mark that broader statement as outside scope. The second audit identified a plausible issue with C2's unitary-conjugacy wording, but C2 is not part of the current ratified C1-only scope.
 - **rationale:** For the ledger's C1-only scoped row, the chain closes as a class-A algebraic consequence of the retained Cl(3) complexification split plus standard finite-dimensional semisimple representation theory. The source note explicitly does not claim unconditional U4 closure, and the k>=2 constructions correctly mark that broader statement as outside scope. The second audit identified a plausible issue with C2's unitary-conjugacy wording, but C2 is not part of the current ratified C1-only scope.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Abstract finite-dimensional component-space theorem: V_Hn = C^(2^d) is graded-linearly equivalent to Lambda^*(C^d); D_KD = d - delta has the stated parity, square, adjoint, and Hermiticity properties; the d=4 spinor-count arithmetic matches the cited Cl(3) chirality-pair dimension, with physical staggered-operator and JW/Fock identifications out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-221335-1ee0a9f8d6-staggered_dirac_substep2_kah`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The Hamming-weight identity card({b in {0,1}^d : hw(b)=p}) = binomial(d,p) = dim_C Lambda^p(C^d) gives a graded vector-space bijection V_Hn ~= Lambda^*(C^d), after which the stated D_KD identities follow from exterior wedge/contraction algebra.  _(class `A`)_
+- **chain closes:** True — The component count, form-degree count, and b-to-subset map are exact finite combinatorics, and the operator identities close by the standard wedge/contraction adjoint relation. The packet does not need any physical staggered-Dirac realization, regulator choice, JW Fock-space identification, or dynamical equivalence.
+- **rationale:** The cited authorities are retained-grade for the algebraic inputs actually used, including the retained_bounded substep-3 arithmetic, and the proof uses them only within their declared scopes. The runner source computes finite combinatorics and exact exterior-algebra matrix identities; I independently checked the signs, nilpotency, adjointness, D_KD^2 identity, parity reversal, even-d factorization, and JW/form dimension separation with a separate bitmask implementation. E7 is a narrow operator-shape exclusion for D_KD + rM with a nonzero form-degree-preserving term, not an absolute Wilson or regulator no-go.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 824 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1406 |
+| unaudited | 1405 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1268 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1722 |
+| `unaudited` | 1721 |
 
 | claim_type | count |
 |---|---:|
@@ -1436,6 +1436,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `spin_statistics_fs_admission_located_exercise_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17012,6 +17013,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The finite-dimensional identities Tr([a,a†]) = 0 while Tr(I_H) = D rule out CCR for D >= 1, and the CAR relations give {a†,a†} = 2(a†)^2 = 0 plus n^2 = a†aa†a = n.  _(class `A`)_
 - **chain closes:** True — The algebraic statements follow from cyclic trace, explicit 2x2 CAR matrices, and same-mode CAR identities. The abstract Cl(3) dimension match is supplied by retained-grade one-hop authorities, and no physical per-site Hilbert-space identification is used.
 - **rationale:** (C1)-(P2) are finite-dimensional trace, matrix, and CAR algebra identities, and the runner source genuinely instantiates symbolic matrices and the concrete CAR carrier. The only load-bearing upstream use is the abstract Cl(3) dimension-2 readout; the supplied authorities are retained-grade, including the decoration-under retained parent. The source explicitly excludes the physical lattice identification and open staggered-Dirac bridge, so the audited narrow scope closes.
+- **auditor confidence:** high
+
+### `spin_statistics_fs_admission_located_exercise_note_2026-06-06`
+
+- **Note:** [`SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md`](../../docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that this packet locates the cross-site fermion exchange sign as not supplied by Cl(3), graph-braid topology, transfer positivity, or Record, while retaining the occupation-parity grading.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-144120-84879d6c5a-spin_statistics_fs_admission`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained Z2 parity grading is a central-sector datum shared by the hard-core-boson and CAR frames, while the cross-site exchange sign is within-sector data that Record explicitly does not supply; therefore CAR is not derived from {Lattice, Quantum, Record}.  _(class `B`)_
+- **chain closes:** False — The local algebra checks close, and the Record-boundary argument is plausible over the supplied axiom text. The broader admission/no-route conclusion does not close because the packet leaves the multi-loop graded-net cocycle route open and relies on route/no-go/literature assertions not fully established inside the restricted packet.
+- **rationale:** The runner genuinely computes the Pauli pseudoscalar identities and the maximal-anticommuting nullspace, and the Hom(Z2,U(1)) sign dichotomy is elementary. However, most load-bearing route-closure statements are hard-coded True checks or cross-note/literature assertions rather than independent derivations. The graph-braid authority is explicitly a bounded witness packet, the 3x3x2 H1 value is flagged for re-verification, and the source itself identifies multi-loop graded-net consistency as an unrefuted opening. Therefore the packet supports a narrowed location statement but not a clean theorem that FS is globally a settled admission on the static baseline.
+- **open / conditional deps cited:**
+  - `CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md`
+  - `AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`
+  - `GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md`
 - **auditor confidence:** high
 
 ### `stable_post_record_dial_location_certificate_2026-06-06`

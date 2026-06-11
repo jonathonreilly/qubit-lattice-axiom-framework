@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 213 |
+| **retained** | 214 |
 | **retained_no_go** | 208 |
 | **retained_bounded** | 825 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1401 |
+| unaudited | 1400 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1270 |
+| `audited_clean` | 1271 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1717 |
+| `unaudited` | 1716 |
 
 | claim_type | count |
 |---|---:|
@@ -1200,6 +1200,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_graph_portability_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_graph_portability_stress_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_layered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_layered_gauge_engineering_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_layered_gauge_phase_diagram_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -17549,6 +17550,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** All six items follow from the explicit row-by-row matrix entries of D per (D), (eta).  _(class `A`)_
 - **chain closes:** True — The cited authority is retained and supplies the staggered hopping construction used as input. From the explicitly stated D and D_mu matrix entries, S1-S6 follow by direct support and Hilbert-Schmidt orthogonality arguments within the stated lattice-operator scope.
 - **rationale:** The claim is tightly scoped to lattice operator algebra and explicitly excludes the continuum SME dictionary and coefficient-level conclusions. The proof is a genuine algebraic closure over the provided retained staggered-hopping input, not a renaming, numerical fit, or external comparator check. The runner source constructs D and D_mu directly, checks the claimed support, Hermiticity, decomposition, and Hilbert-Schmidt projection identities, and contains no hard-coded contested output.
+- **auditor confidence:** high
+
+### `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Kernel-geometry certificate only: the constructed flux-(-1) Kawamoto-Smit NN kernel satisfies the stated point-like linear-cone hypothesis (Z) with eight zero branches, V=2I, (C,r)=(2/3,1), and the declared normalization covariance; the constructed flux-(+1) scalar NN kernel violates (Z) by an extended zero set and singular cone direction. No flux selection or thermal conclusion is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-145837-fd105964f0-staggered_kernel_satisfies_z`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The K1 Bloch symbol satisfies H_c(kappa)^2 = 4(cos^2(k1/2)+cos^2(k2/2)+c^2 cos^2(k3/2)) I_8, giving E=2 sqrt(sum sin^2 p_mu), so zeros are exactly {0,pi}^3 with cone V=2I; K0 has scalar symbol 2 sum cos p_mu with the exact zero line p(t)=(pi/2+t,pi/2-t,pi/2), forcing any cone matrix singular.  _(class `C`)_
+- **chain closes:** True — The accepted axiom premise supplies the Z^3 lattice/one-site carrier and the retained bridge supplies the finite periodic one-particle/Fock surface; the rest is an explicit matrix/symbol computation and exact cone algebra. No external numerical comparator, tuned input, or downstream FSB theorem content is needed for the audited kernel-geometry claim.
+- **rationale:** The runner source actually constructs the hopping matrices and Bloch symbols, verifies the symbolic H^2 identity, ties spectra to finite eigensolvers, and checks falsification witnesses; it is not merely printing constants. An independent check confirms the K0 counts 20/68/140, the exact zero-line identity, the K1 cone expansion coefficient -1/3, and the inequality ingredients for the (2/3,1) cone bound. The FSB-K definition match is textual and non-load-bearing for the self-contained (Z) geometry audited here.
 - **auditor confidence:** high
 
 ### `staggered_layered_backreaction_note`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 282,
     "high": 281,
-    "leaf": 429,
+    "leaf": 428,
     "medium": 411
   },
   "cycle_break_target_count": 0,
@@ -17001,31 +17001,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/staggered_kernel_z_certificate_check_2026_06_11.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17124,6 +17099,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/chirality_gate_two_gates_dirac_vs_generation_2026_06_08.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+        "kinetic_isotropy_primitive",
+        "scale_reference_primitive",
+        "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10.py",
       "transitive_descendants": 16
     },
     {
@@ -29734,33 +29736,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
-        "kinetic_isotropy_primitive",
-        "scale_reference_primitive",
-        "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -42299,6 +42274,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 20,
-  "total_pending": 1403
+  "ready_count": 19,
+  "total_pending": 1402
 }

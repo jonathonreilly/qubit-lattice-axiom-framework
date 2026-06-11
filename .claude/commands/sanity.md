@@ -33,6 +33,10 @@ the immune system against self-deception.
   granted structural OS0 kinetic-form isotropy `c_t = c_s` and no extra
   dynamics, Lorentz closure, scale, spacing-ratio theorem, selector, or
   empirical content?
+- If it uses the registered `realized_state_primitive`, is it using only the
+  granted pointwise evaluation at the supplied constraint-admissible realized
+  state -- no averaging over alternatives, no typicality or genericity
+  predicate, and no state-contingent number quoted as derived?
 - Does it smuggle in assumptions the axioms exclude? (continuum space,
   fields, Born weights, species identifications, measurement dynamics —
   each enters only via a named lane, retained theorem, or explicit

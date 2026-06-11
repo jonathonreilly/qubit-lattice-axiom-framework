@@ -97,7 +97,7 @@ worktree/lock conflict, or documented global queue exhaustion.
   conversion only and does not bound a row by itself. The registered
   `kinetic_isotropy_primitive` grants only structural OS0 kinetic-form isotropy
   `c_t = c_s` and does not supply dynamics, a Lorentz-closure theorem, scale,
-  spacing-ratio theorem, selector, or empirical content. Proposed primitives not
+  spacing-ratio theorem, selector, or empirical content. The registered `realized_state_primitive` grants only pointwise evaluation at a supplied constraint-admissible realized state; it does not supply a state, state-selection rule, measure, typicality or genericity assumption, weighting, probability rule, or any state-contingent value (quantities that vary across the conditioned family remain registered data). Proposed primitives not
   in `docs/audit/data/axiom_premise_nodes.json` remain unapproved.
 - No Nature-grade or retained-grade proposal language without decisive artifact
   support, a passing retained-proposal certificate, review-loop backpressure,

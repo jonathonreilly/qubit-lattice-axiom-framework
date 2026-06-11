@@ -19,8 +19,9 @@ Run `/framework-refresher` first if you have not this session.
    source notes grant (run
    `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`). Currently:
    `scale_reference_primitive` (Planck scale reference as units conversion
-   only) and `kinetic_isotropy_primitive` (structural OS0 kinetic-form
-   isotropy `c_t = c_s` only).
+   only), `kinetic_isotropy_primitive` (structural OS0 kinetic-form
+   isotropy `c_t = c_s` only), and `realized_state_primitive` (pointwise
+   evaluation at the supplied constraint-admissible realized state only).
 3. **Retained-grade theorems** — verify each via `/ledger` that
    `effective_status` is `retained`, `retained_bounded`, or `retained_no_go`
    on `origin/main`. A note's own `Status:` header is not evidence.

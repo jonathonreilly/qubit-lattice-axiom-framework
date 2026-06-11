@@ -165,6 +165,44 @@ Recorded explicitly approved primitive:
 Recorded Tier-A registry refinement (admissions remain Tier-A; nothing is
 promoted to axiom or primitive class):
 
+- **2026-06-11 -- realized-state primitive.** The realized-state interface --
+  the axioms select no state; a physical history fixes one constraint-admissible
+  realized state; derivations may evaluate at it pointwise only -- is accepted
+  as a framework primitive and registered as `realized_state_primitive` with
+  source `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`. Explicit owner
+  approval recorded 2026-06-11, conditional on best-physics-judgment affirmation
+  (necessary, unavoidable, clean) -- affirmed; wording passed a two-round
+  ten-persona adversarial physics panel (round 1: 9 reservations + 1 objection;
+  round 2: 10/10 pass, no objections).
+  - **Why it is admissible.** It is the laws-versus-initial-conditions floor
+    made explicit: the three axioms fix the carrier, adjacency, and registration
+    structure, and a state is an additional datum no state-blind structure can
+    supply. Irreducibility is exhibited case by case on exact instances
+    (state-blind dynamics with state-contingent registered outcomes; no derived
+    selector on degenerate invariant manifolds; invariant-state continua --
+    support runner
+    `scripts/realized_state_primitive_irreducibility_support_2026_06_11.py`,
+    PASS=8). A registered slot with fixed policing clauses replaces per-note
+    ad-hoc conditioning prose, which is where measures, typicality assumptions,
+    and representative choices get smuggled.
+  - **No laundering.** The primitive supplies the slot, never the content: no
+    state, state-selection rule, measure, typicality/genericity assumption,
+    weighting, normalization, probability rule, preferred or default state
+    (the maximal-symmetry reference is never "the natural input"), or any
+    state-contingent value. Its counterfactual test makes the boundary
+    mechanical: a quoted number that would differ had another permitted state
+    been realized is registered data, not derivation output.
+  - **Past-hypothesis classification.** The past hypothesis is explicitly NOT
+    housed by this primitive: it is a strictly stronger input (a specialness /
+    atypicality claim about the realized history, exactly the class the
+    primitive's clauses forbid it from supplying), and remains the named
+    residual of
+    `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`.
+  - **Scope.** Effective statuses are unchanged and remain audit-lane-only.
+    Dependencies on this primitive chain-satisfy without bounding downstream
+    rows; rows quoting data of a particular realized state remain conditional
+    on that supplied data exactly as supplied inputs always are -- nothing here
+    lifts state-contingent content into the unconditional column.
 - **2026-06-11 -- Tier-A minimum-statement refinement.** The two admitted
   derivation targets (`AC_phi_lambda`, `theta`) are restated at their
   sharpest landed decomposition in

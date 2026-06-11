@@ -98,7 +98,7 @@ framing in prose:
    `kinetic_isotropy_primitive` grants only structural OS0 kinetic-form
    isotropy `c_t = c_s`; it is not a bounded import and does not supply
    dynamics, a Lorentz-closure theorem, scale, spacing-ratio theorem, selector,
-   or empirical content. For the symmetric check on bounded-theorem candidates,
+   or empirical content. The registered `realized_state_primitive` grants only pointwise evaluation at a supplied constraint-admissible realized state; it does not supply a state, state-selection rule, measure, typicality or genericity assumption, weighting, probability rule, or any state-contingent value (quantities that vary across the conditioned family remain registered data). For the symmetric check on bounded-theorem candidates,
    see the
    `LabelingConventionReviewer` in
    `docs/ai_methodology/skills/review-loop/SKILL.md`.

@@ -109,6 +109,10 @@ row `retained_bounded` on that basis. If the dependency is only the registered
 `kinetic_isotropy_primitive`, treat `c_t = c_s` as already granted structural
 kinetic-form isotropy and do not bound the row on that basis; audit only the
 extra dynamics, closure theorem, observable, or empirical content actually
+claimed. If the dependency is only the registered `realized_state_primitive`,
+treat pointwise evaluation at the supplied realized state as already granted
+and do not bound the row on that basis; audit only any averaging, typicality
+or genericity predicate, weighting, or state-contingent value actually
 claimed.
 
 The framework baseline (per `MINIMAL_AXIOMS_2026-06-05.md`) is the three named

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3161 |
-| Applied audit verdicts | 1416 |
+| Applied audit verdicts | 1417 |
 | Retained-grade rows, including boxed decorations | 1288 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 205 |
 | Retained bounded rows | 820 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1427 |
+| Unaudited rows | 1426 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 27 |
+| Audited conditional rows | 28 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1429 |
-| Ready rows | 38 |
+| Total pending rows | 1428 |
+| Ready rows | 37 |
 | Cycle-break targets | 0 |
-| Critical pending | 283 |
+| Critical pending | 282 |
 | High pending | 284 |
 | Medium pending | 421 |
 | Leaf pending | 441 |
 
 Next ready rows by queue order:
 
-- [`gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`](../../docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - high; unaudited
 - [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
 - [`koide_q_source_domain_canonical_descent_theorem_note_2026-04-25`](../../docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`koide_q_minimal_scale_free_selector_note_2026-04-22`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md) - medium; unaudited
 - [`light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md) - medium; unaudited
 - [`quark_bicac_endpoint_obstruction_theorem_note_2026-04-19`](../../docs/QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
+- [`quark_bimodule_norm_naturality_theorem_note_2026-04-19`](../../docs/QUARK_BIMODULE_NORM_NATURALITY_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

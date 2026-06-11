@@ -304,6 +304,46 @@ Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`c
 
 Therefore `claim_type: bounded_theorem` until that gate closes. When that gate closes, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
 
+## Registered Tier-A routing (2026-06-11; audit-requested repair)
+
+The recorded conditional-audit repair target for this row is
+`dependency_not_retained` on the staggered-Dirac realization gate. This
+section takes the precedented registered-routing form of that repair
+(per `PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md` and
+`YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`,
+plain-text precedent pointers): the carrier admission is routed
+explicitly into the **registered Tier-A derivation target**, so the
+citation graph carries a registered admission rather than an
+unregistered conditional blocker.
+
+1. **The algebra is standalone.** The NORM-naturality uniqueness is pure bimodule structural algebra:
+under the three named structural conditions (complementarity, endpoint
+normalization, affine naturality) the normalized affine extension of
+the LO split law is unique; no carrier input enters the uniqueness
+proof.
+2. **What the carrier admission carries.** Only the identification of the bimodule structure and the physical LO
+point with the staggered-Dirac quark sector consumes the realization
+(the three structural conditions themselves remain premises exactly as
+stated in this note).
+   That naming is the admitted context input this row declares.
+3. **The admission is a registered Tier-A target.** The canonical
+   parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the
+   registered Tier-A derivation target `AC_phi_lambda` (display
+   `AC_φλ`) in the admission registry
+   (`docs/audit/data/tier_a_admissions.json`). This note
+   routes the carrier naming **into** that registered target; it does
+   **not** close the gate. Under the published chain rule
+   (`docs/audit/scripts/compute_effective_status.py`), a clean
+   `bounded_theorem` row whose only non-retained, non-axiom one-hop
+   dependency is a registered Tier-A derivation target is a candidate
+   for the Tier-A-bounded class rather than an unregistered
+   conditional blocker.
+4. **No status assertion.** This section makes the narrow re-audit
+   case only. The audit lane is the sole authority for audit status and
+   effective status; this note asserts no `effective_status` and
+   predicts no audit outcome.
+
+
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.

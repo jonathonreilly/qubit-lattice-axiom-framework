@@ -92,7 +92,21 @@ claimed as derived by this note.
   downstream notes only as an admitted comparison/reuse number unless a
   separate retained MC certificate or analytic beta=6 closure is
   supplied." This note consumes the value exactly and only under that
-  license.
+  license. The specification note
+  `docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`
+  (follow-up reference) is hereby cited as B1's **declared
+  retirement interface**: its S0/T1 give the admission a precise
+  referent — the proven-to-exist infinite-volume number
+  `<P>* = 1 + f'(6)` with quantitative finite-size rate
+  `|f_L - f| <= 6*beta/L` — so `0.5934` stands for a well-defined
+  object rather than "the canonical lattice value". Its T2 reduces
+  retiring B1 to one certified three-point `ln Z_L` enclosure with a
+  proven, honestly priced error budget (`L ~ 3.7e5` for a rigorous
+  `0.01`-wide bracket under the unconditional rate), and its T3 closes
+  the rival convergent strong-coupling-expansion route at `beta = 6`
+  at the standard-certificate level. None of this changes B1's status
+  here: the value remains admitted, not derived, until that interface
+  is actually discharged.
 - **B2 (declared normalization).** `g_bare = 1` on the canonical
   same-surface chain, hence `alpha_bare = g_bare^2 / (4 pi) = 1 / (4 pi)`.
 - **B3 (declared structural input).** The tadpole-improved physical
@@ -292,3 +306,13 @@ terminal class-(D) section. Every check is tagged [A]/[B]/[D].
   verified and retained: `u_0 = 0.877681381`,
   `alpha_s(v) = 0.10330382`, 2-loop `-> 0.118067 ~ 0.1181`, envelope
   `~5e-4`.
+- **2026-06-10.** B1 retirement-interface citation (follow-up). The B1
+  admission paragraph now cites
+  `docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`
+  (follow-up reference) as the declared retirement interface
+  for B1: precise referent `<P>* = 1 + f'(6)` with proven finite-size
+  rate (S0/T1), bracket reduction to one certified three-point `ln Z_L`
+  computation with proven budget (T2), and closure of the rival
+  cluster-expansion route at `beta = 6` (T3). The admitted-reuse
+  license text is unchanged; B1's status (admitted, not derived) is
+  unchanged; runner untouched.

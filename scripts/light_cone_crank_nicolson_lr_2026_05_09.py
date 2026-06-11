@@ -16,13 +16,13 @@ Tests:
 
   CN1: U_CN is unitary (Cayley transform of Hermitian).
 
-  CN2: Per-step matrix-element decay. For random finite-range H with
-       ||a_tau H||_op < 2, |<x|U_CN|y>| decays exponentially in d(x, y)
-       with single-step rate kappa_step >= xi_CN derived in note.
+  CN2: Subcritical weighted-overlap bound. For random finite-range H, the
+       effective generator H_CN = (2/a_tau) arctan(a_tau H/2) has finite
+       weighted overlap when x_mu = (a_tau/2) W exp(mu R) < 1.
 
   CN3: n-step velocity bound. For U_CN^n acting over time t = n * a_tau,
-       the support spreads at velocity v_LR_CN <= v_LR(H) / (1 - a_tau J)
-       to leading order; in the a_tau -> 0 limit recovers v_LR(H).
+       the support spreads at the derived quasilocal velocity
+       v_CN,mu = 4 W_CN,mu / mu.
 
   CN4: Convergence: the Crank-Nicolson commutator
        || [U_CN^n O_x U_CN^(-n), O_y] ||_op
@@ -116,6 +116,25 @@ def crank_nicolson_step(H: np.ndarray, a_tau: float) -> np.ndarray:
     return B @ np.linalg.inv(A)
 
 
+def cn_weighted_overlap_bound(a_tau: float, J: float, mu: float) -> tuple[float, float, float]:
+    """Conservative finite-range-to-CN weighted-overlap constants.
+
+    For the runner's nearest-neighbor pair Hamiltonian, q=2, R=1, and each
+    interior site sees at most two pair terms with norm J, so W=2J. The
+    weighted finite-range norm obeys W_mu(H) <= W exp(mu R). The Cayley
+    generator H_CN=(2/a_tau) arctan(a_tau H/2) has
+        W_mu(H_CN) <= (2/a_tau) artanh((a_tau/2) W_mu(H)).
+    """
+    W = 2.0 * J
+    R = 1.0
+    W_mu_H = W * math.exp(mu * R)
+    x_mu = 0.5 * a_tau * W_mu_H
+    if x_mu >= 1.0:
+        return W_mu_H, x_mu, float("inf")
+    W_cn_mu = (2.0 / a_tau) * math.atanh(x_mu)
+    return W_mu_H, x_mu, W_cn_mu
+
+
 # ---------------------------------------------------------------------------
 # Tests
 # ---------------------------------------------------------------------------
@@ -146,21 +165,12 @@ def test_unitarity(L: int, J: float, seed: int) -> None:
 
 
 def test_per_step_decay(L: int, J: float, seed: int) -> tuple[float, float]:
-    """CN2: per-step Heisenberg evolution of a local operator decays in d.
-
-    Equivalent to checking that ||[alpha_1step(O_0), O_d]||_op decays
-    exponentially in d for a single Crank-Nicolson step. The per-step
-    bound (note Step 2): with epsilon = a_tau * ||H||_op / 2 < 1,
-
-        ||[alpha_step(O_0), O_d]||_op  <=  C * (epsilon)^d
-
-    so log of commutator scales linearly with d at slope log(epsilon) < 0.
-    """
+    """CN2: subcritical weighted-overlap constants and per-step decay."""
     print()
     print("-" * 72)
-    print("CN2: Per-step commutator decay")
-    print("     For one CN step, ||[U_CN O_0 U_CN^(-1), O_d]|| decays in d")
-    print("     With H finite-range r=1, ||a_tau H/2|| < 1 (sub-critical step)")
+    print("CN2: Subcritical weighted-overlap constants and per-step decay")
+    print("     W_CN,mu <= (2/a_tau) artanh((a_tau/2) W exp(mu R))")
+    print("     plus finite one-step commutator decay on the toy chain")
     print("-" * 72)
     H = build_local_hamiltonian(L, J, seed)
     H_norm = float(np.linalg.norm(H, ord=2))
@@ -170,12 +180,13 @@ def test_per_step_decay(L: int, J: float, seed: int) -> tuple[float, float]:
     #   ratio_d := comm(d=2) / comm(d=1)  ~  O(epsilon)
     # at small epsilon (Neumann-series leading term).
     print(f"     ||H||_op = {H_norm:.4f}")
-    print(f"     {'a_tau':>8}  {'eps=a J/2':>10}  {'comm(d=1)':>14}  "
-          f"{'comm(d=2)':>14}  {'ratio_2/1':>10}  {'eps_pred':>10}")
+    mu = 0.5
+    print(f"     {'a_tau':>8}  {'x_mu':>10}  {'W_CN,mu':>12}  {'comm(d=1)':>14}  "
+          f"{'comm(d=2)':>14}  {'ratio_2/1':>10}")
 
     overall_ok = True
     for a_tau in [0.01, 0.02, 0.05, 0.1]:
-        eps = a_tau * H_norm / 2.0
+        _W_mu_H, x_mu, W_cn_mu = cn_weighted_overlap_bound(a_tau, J, mu)
         U = crank_nicolson_step(H, a_tau)
         Udag = U.conj().T
         O_0 = site_operator(L, 0)
@@ -186,61 +197,54 @@ def test_per_step_decay(L: int, J: float, seed: int) -> tuple[float, float]:
             comm = commutator_norm(alpha_step_O0, O_d)
             comms.append(comm)
         ratio = comms[1] / comms[0] if comms[0] > 0 else float("inf")
-        # Theoretical: each additional step in d costs roughly factor of
-        # epsilon (Neumann-series order). Accept ratio < 5*eps as evidence
-        # of Neumann-series scaling (allow factor 5 for chain effects).
-        ratio_ok = ratio < 5.0 * eps + 0.5  # 0.5 absolute slack
+        # The theorem only needs x_mu < 1. The finite matrix check also
+        # verifies the expected decay from d=1 to d=2 for the same constants.
+        ratio_ok = x_mu < 1.0 and math.isfinite(W_cn_mu) and ratio < 0.5
         if not ratio_ok:
             overall_ok = False
         print(
-            f"     {a_tau:>8.4f}  {eps:>10.4f}  {comms[0]:>14.6e}  "
-            f"{comms[1]:>14.6e}  {ratio:>10.4f}  {eps:>10.4f}"
+            f"     {a_tau:>8.4f}  {x_mu:>10.4f}  {W_cn_mu:>12.6f}  "
+            f"{comms[0]:>14.6e}  {comms[1]:>14.6e}  {ratio:>10.4f}"
         )
 
     print()
-    print(f"     [Single-step Neumann bound: ratio_2/1 ~ O(epsilon).]")
+    print("     [Subcritical theorem input: x_mu < 1 gives finite W_CN,mu.]")
     check(
-        "CN2 per-step Neumann-series decay",
+        "CN2 subcritical CN weighted-overlap bound",
         overall_ok,
-        f"comm at d=2 scales as O(epsilon) relative to d=1, consistent with "
-        f"single-step v_LR_CN = v_LR(H)/(1 - a_tau J/2)",
+        "x_mu < 1 for all tested steps and one-step commutators decay with distance",
     )
     return 0.0, 0.0
 
 
 def test_n_step_velocity(L: int, J: float, seed: int) -> None:
-    """CN3: U_CN^n velocity bound v_LR_CN <= v_LR(H) (1 + O(a_tau J))."""
+    """CN3: U_CN^n obeys the derived quasilocal CN LR envelope."""
     print()
     print("-" * 72)
-    print("CN3: n-step Crank-Nicolson velocity bound")
+    print("CN3: n-step Crank-Nicolson quasilocal velocity bound")
     print("     For t = n a_tau, ||[U_CN^n O_0 U_CN^(-n), O_d]|| obeys")
-    print("     a Lieb-Robinson bound with v_LR_CN -> 2 e r J as a_tau -> 0.")
+    print("     the derived bound with v_CN,mu = 4 W_CN,mu / mu.")
     print("-" * 72)
     H = build_local_hamiltonian(L, J, seed)
-    r = 1
-    v_LR_H = 2 * math.e * r * J  # toy Hamiltonian-side LR velocity
-    print(f"     Toy Hamiltonian-side v_LR(H) = 2 e r J = {v_LR_H:.4f}")
-    print(f"     for toy r = {r}, J = {J}")
+    q = 2
+    R = 1
+    W = 2.0 * J
+    v_LR_H = 2 * math.e * q * W * R
+    mu = 0.5
+    print(f"     Toy Hamiltonian-side v_LR(H) = 2 e q W R = {v_LR_H:.4f}")
+    print(f"     for toy q = {q}, W = {W}, R = {R}, J = {J}, mu = {mu}")
     O_0 = site_operator(L, 0)
     norm_O = float(np.linalg.norm(O_0, ord=2))
 
     # Pick a small a_tau so a_tau * J << 1
     a_tau_values = [0.005, 0.01, 0.02, 0.05]
     print()
-    print(
-        f"     {'a_tau':>8}  {'a_tau J':>8}  {'n':>4}  {'t':>6}  {'d':>3}  "
-        f"{'comm':>14}  {'CN bound':>14}  {'OK?':>4}"
-    )
+    print(f"     {'a_tau':>8}  {'x_mu':>8}  {'v_CN,mu':>10}  {'n':>4}  {'t':>6}  "
+          f"{'d':>3}  {'comm':>14}  {'CN bound':>14}  {'OK?':>4}")
     bounds_ok = True
     for a_tau in a_tau_values:
-        a_tau_J = a_tau * J
-        # The CN n-step bound (derived in note):
-        #   ||[U_CN^n O_x U_CN^(-n), O_y]||
-        #     <= 2 ||O_x|| ||O_y|| exp(-d + v_LR_CN |t|)
-        # with v_LR_CN = v_LR(H) / (1 - a_tau J / 2) (single-step numerator
-        # range correction from the Neumann series). For a_tau J small this
-        # reduces to v_LR(H) (1 + a_tau J / 2 + O((a_tau J)^2)).
-        v_LR_CN = v_LR_H / max(1.0 - a_tau_J / 2.0, 1e-9)
+        _W_mu_H, x_mu, W_cn_mu = cn_weighted_overlap_bound(a_tau, J, mu)
+        v_CN_mu = 4.0 * W_cn_mu / mu
         n_steps = 10
         t = n_steps * a_tau
 
@@ -262,19 +266,20 @@ def test_n_step_velocity(L: int, J: float, seed: int) -> None:
         for d in [3, 4, 5]:
             O_d = site_operator(L, d)
             comm = commutator_norm(alpha_O0, O_d)
-            bound = 2 * norm_O * norm_O * math.exp(-d + v_LR_CN * t)
+            bound = 2 * norm_O * norm_O * math.exp(-mu * d + 4.0 * W_cn_mu * t)
             ok = comm <= bound + 1e-9
             if not ok:
                 bounds_ok = False
             print(
-                f"     {a_tau:>8.4f}  {a_tau_J:>8.3f}  {n_steps:>4}  {t:>6.3f}  "
-                f"{d:>3}  {comm:>14.6e}  {bound:>14.6e}  {'OK' if ok else 'FAIL'}"
+                f"     {a_tau:>8.4f}  {x_mu:>8.3f}  {v_CN_mu:>10.3f}  "
+                f"{n_steps:>4}  {t:>6.3f}  {d:>3}  {comm:>14.6e}  "
+                f"{bound:>14.6e}  {'OK' if ok else 'FAIL'}"
             )
 
     check(
         "CN3 n-step velocity bound",
         bounds_ok,
-        f"v_LR_CN = v_LR(H) / (1 - a_tau J / 2); reduces to v_LR(H) as a_tau -> 0",
+        "bound uses derived W_CN,mu and v_CN,mu, not a hard-coded diagnostic velocity",
     )
 
 
@@ -338,7 +343,7 @@ def test_lr_velocity_agreement(L: int, J: float, seed: int) -> None:
     H = build_local_hamiltonian(L, J, seed)
     t = 0.1
     O_0 = site_operator(L, 0)
-    print(f"     fixed t = {t}, J = {J}, v_LR(H) = 2 e r J = {2 * math.e * 1 * J:.3f}")
+    print(f"     fixed t = {t}, J = {J}")
     print()
     print(f"     {'a_tau':>10}  {'d':>3}  {'comm_CN':>14}  {'comm_exact':>14}  {'diff':>12}")
     max_diff = 0.0
@@ -392,11 +397,11 @@ def main() -> int:
     print("=" * 72)
     print()
     print("Cites: MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE")
-    print("       (bounded Hamiltonian-side action-support/J-budget context)")
+    print("       (overlap-weight finite-range LR convention)")
     print()
     print("This runner: finite-volume Crank-Nicolson diagnostics")
-    print("             v_CN = v_LR(H) / (1 - a_tau J / 2) on tested toy models")
-    print("             interpreted as bounded support, not a retained constant")
+    print("             W_CN,mu <= (2/a_tau) artanh((a_tau/2) W exp(mu R))")
+    print("             v_CN,mu = 4 W_CN,mu / mu on tested toy models")
     print()
 
     L = 8

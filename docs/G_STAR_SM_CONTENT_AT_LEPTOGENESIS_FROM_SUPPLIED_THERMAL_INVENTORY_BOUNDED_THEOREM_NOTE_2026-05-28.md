@@ -13,7 +13,9 @@ and cache
 
 ## Claim
 
-Given the supplied Standard Model thermal-inventory premise packet P1-P5,
+Given the registered Standard Model thermal-inventory premise packet P1-P5
+from
+[`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md),
 with support for the generation count, color count, one-generation
 singlet-completion structure, and fermion thermal weight where cited below,
 the relativistic effective degrees-of-freedom count
@@ -28,13 +30,16 @@ particles are relativistic), is a bounded proof-walk on:
 
 - a small set of named group-theoretic / structural / thermal support inputs
   (the **support packet** R1-R6 below);
-- an explicit Standard Model thermal-inventory premise packet
-  (P1-P5 below) declared and not re-derived here.
+- the retained-bounded declared-inventory premise packet
+  (P1-P5 below) registered in `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`.
 
 This is a bounded proof-walk of the `g_* = 106.75` arithmetic. It does not
 add a new axiom, a new repo-wide theory class, or a retained-status claim.
-The Standard Model thermal inventory itself remains an external physical
-input named in P1-P5.
+The Standard Model thermal inventory itself remains a declared physical
+inventory premise, not a framework derivation of which particles nature
+contains. The repair here is that the premise packet is no longer anonymous:
+it is routed through the retained-bounded finite declared-inventory arithmetic
+certificate.
 
 ## Support packet (R1-R6)
 
@@ -86,13 +91,16 @@ classification.
 The parent inventory note
 `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md` is the existing
 finite declared-inventory arithmetic certificate this proof-walk traces as
-context. It is not a load-bearing dependency for this row, because this row
-repeats the arithmetic directly.
+the registered P1-P5 premise packet. It is now a load-bearing dependency for
+this row: the local proof-walk repeats the arithmetic directly, while the
+parent note supplies the retained-bounded declared-inventory boundary.
 
-## Supplied premise packet (P1-P5, not framework-retained)
+## Registered premise packet (P1-P5)
 
 The following premise packet supplies the Standard Model thermal inventory.
-P1-P5 are declared explicitly for this proof-walk; they are not derived from
+P1-P5 are declared explicitly in the retained-bounded finite inventory wrapper
+[`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
+and repeated here so this row is self-contained. They are not derived from
 the framework here and are not promoted to axioms.
 
 - **P1 Declared Standard Model particle inventory.** The relativistic
@@ -135,8 +143,9 @@ matter multiplets, P2 supplies the two-transverse-polarization state count
 for massless vector bosons, P3 supplies the four-real-component Higgs-doublet
 count, P4 supplies the Dirac/Weyl thermal state-count convention for
 fermions, and P5 supplies the relativistic-temperature regime. The retained
-support packet checks framework-side consistency where cited, but this row
-does not pretend to derive the full Standard Model thermal inventory.
+support packet checks framework-side consistency where cited, while the
+retained-bounded inventory wrapper registers the finite SM inventory premise
+packet as the physical input boundary.
 
 ## Proof-walk
 
@@ -209,6 +218,12 @@ parent inventory note's totals `28` and `90`.
 
 Load-bearing support dependencies for this proof-walk:
 
+- [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
+  retained-bounded finite declared-inventory arithmetic certificate for P1-P5:
+  the unbroken Standard Model thermal inventory, vector/scalar/Dirac/Weyl
+  state-count conventions, and the `T`-regime premise. This is a registered
+  physical-inventory premise wrapper, not a framework derivation of the SM
+  particle list.
 - [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
   retained three-generation observable algebra (`retained_bounded`).
 - [`THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -233,11 +248,12 @@ Load-bearing support dependencies for this proof-walk:
   parallel `d=4` eta/zeta arithmetic identity; context for the same
   rational value, not the thermal-integral bridge.
 
-These are support authorities and bridges for a bounded theorem. The row remains
-unaudited until the independent audit lane reviews this note, its
-dependencies, the supplied premise packet, and the runner. The Standard Model
-thermal inventory still comes from P1-P5, not from these retained support
-authorities alone.
+These are support authorities and bridges for a bounded theorem. The row
+remains unaudited until the independent audit lane reviews this note, its
+dependencies, the registered P1-P5 premise packet, and the runner. The
+Standard Model thermal inventory still comes from P1-P5 and the finite
+declared-inventory wrapper, not from the framework-side support authorities
+alone.
 
 Non-load-bearing context:
 
@@ -249,8 +265,8 @@ Non-load-bearing context:
 - `AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md` records the
   bosonic Stefan-Boltzmann constant on the framework substrate;
   context-only here.
-- `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md` is the parent
-  finite declared-inventory arithmetic certificate; context-only here.
+- `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md` is load-bearing for
+  P1-P5 above. It is no longer context-only for this row.
 
 ## Boundaries
 

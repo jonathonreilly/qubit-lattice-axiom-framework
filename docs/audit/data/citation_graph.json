@@ -48922,10 +48922,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
     },
     {
@@ -48951,6 +48947,10 @@
     {
       "from": "repo.front_door_status",
       "to": "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "higgs_mass_from_axiom_note"
     },
     {
       "from": "repo.repo_organization",
@@ -94064,17 +94064,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "alpha_s_derived_note",
         "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
         "cl3_taste_generation_theorem",
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
+        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+        "higgs_mass_from_axiom_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3aaed844057e76d49d87020611b8269579934cde192d81a4e64091d6facd8948",
+      "note_hash": "6333f858dbd6a4e2fc3dcecb9ba4cd16adb61cd14677dd3bf3a834532cba3a2f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 833 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 39 |
-| unaudited | 1386 |
+| unaudited | 1385 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 49 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1280 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 49 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1702 |
+| `unaudited` | 1701 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 853 |
-| `leaf` | 1312 |
+| `medium` | 852 |
+| `leaf` | 1313 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1459,6 +1459,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
@@ -18887,6 +18888,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of a cross-plane monomial such as F_01 F_23 is a mixed derivative of a sum of single-plane plaquette functions, and those mixed derivatives vanish identically.  _(class `A`)_
 - **chain closes:** True — Treating the per-plaquette action class as the stated hypothesis, the action separates by plaquette plane, so mixed derivatives with respect to disjoint plane variables are zero. Multi-plaquette and clover terms are not closed by this argument, but they are explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a direct algebraic separability check: a sum of one-plane functions has zero mixed derivative across different plane variables. An independent manual check agrees with the runner's symbolic and direction-counting result, and the note consistently limits the conclusion to the supplied per-plaquette class. The cited per-plaquette enumeration authority is retained_bounded and non-load-bearing for this theorem; no external comparator or tuned numerical value is used.
+- **auditor confidence:** high
+
+### `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10`
+
+- **Note:** [`THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`](../../docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the stipulated continuous multiplicative determinant-character readout family chi_{s,k}(z)=|z|^s exp(i k arg z), with K/CPT acting by complex conjugation, invariant members have k=0; no strong-CP mass-orientation discharge is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-154859-189e6d2d66-theta_p2_k_cpt_determinant_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Requiring exp(i k phi) = exp(-i k phi) for all phi gives sin(k phi) = 0 for all phi, hence k = 0.  _(class `A`)_
+- **chain closes:** False — The algebraic implication closes inside the supplied determinant-character family: differentiating the invariance identity at phi=0 gives 2 i k = 0. The restricted packet does not derive the determinant readout context from Record or prove that it exhausts the physical arg det(M_u M_d) datum.
+- **rationale:** The load-bearing math is a valid class A algebraic identity check, and the hostile guard is also correct: K-even functions such as cos(arg z) need not erase phase. The runner source verifies text boundaries and the same elementary algebra, but it does not construct the determinant readout from framework primitives. Because the source explicitly imports a supplied determinant-class readout and names the determinant-readout bridge as open for strong-CP use, the chain is conditional rather than clean.
+- **open / conditional deps cited:**
+  - `STRONG_CP_THETA_ZERO_NOTE.md`
 - **auditor confidence:** high
 
 ### `third_grown_family_boundary_note`

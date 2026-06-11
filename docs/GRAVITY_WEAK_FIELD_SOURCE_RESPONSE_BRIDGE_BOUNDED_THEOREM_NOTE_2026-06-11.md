@@ -5,6 +5,7 @@
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome.
 **Primary runner:** [`scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py`](../scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py)
+**Cached output:** [`logs/runner-cache/frontier_gravity_weak_field_source_response_bridge_2026_06_11.txt`](../logs/runner-cache/frontier_gravity_weak_field_source_response_bridge_2026_06_11.txt)
 
 ## Claim
 

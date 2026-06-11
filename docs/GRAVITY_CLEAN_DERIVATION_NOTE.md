@@ -1,13 +1,15 @@
 # Conditional Weak-Field Gravity IF-Chain on `Z^3`
 
 **Date:** 2026-04-13. Scope repair: 2026-05-27. Green-kernel dependency
-repair: 2026-06-09.
+repair: 2026-06-09. Parent composition certificate: 2026-06-11.
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome.
-**Primary runner:** none registered for this row. The binding claim is the
-bounded implication below, with the cited one-hop authorities supplying the
-premises at their own audited scopes.
+**Primary runner:** [`scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py`](../scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py)
+with cached output
+[`logs/runner-cache/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.txt`](../logs/runner-cache/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.txt).
+The binding claim is the bounded implication below, with the cited one-hop
+authorities supplying the premises at their own audited scopes.
 
 ## 2026-06-11 Weak-Field Bridge Repair
 
@@ -26,6 +28,17 @@ Euler equation of the source action, the uniqueness of the local
 phase-invariant normalized source readout, and the first-order test-source
 action response. It does not claim nonlinear gravity, physical `G_Newton`, or
 any audit outcome.
+
+## 2026-06-11 Parent Composition Certificate
+
+The parent row now has a source-side certificate runner,
+[`frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py`](../scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py).
+It does not apply an audit verdict. It checks that this parent note routes all
+three formerly row-local bridge inputs through the weak-field bridge, that the
+bridge cache is SHA-pinned and passing, that the one-hop dependency links are
+present, that the bounded weak-field status firewall remains explicit, and that
+the composed `G(r) ~ 1/(4 pi r)` plus `S = L(1 - phi)` response gives a
+bilinear inverse-square force in lattice units.
 
 ## Binding Claim
 
@@ -172,7 +185,8 @@ In particular:
 - No derivation of the full Einstein equations.
 - No strong-field, horizon, frame-dragging, gravitational-wave, WEP,
   geodesic, or light-bending theorem.
-- No registered primary runner for this row.
+- No audit verdict; the primary runner is only a source-side composition
+  certificate for this bounded weak-field parent row.
 
 ## What Would Close The Stronger Lane
 

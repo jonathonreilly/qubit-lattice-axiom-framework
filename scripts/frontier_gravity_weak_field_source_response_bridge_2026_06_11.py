@@ -104,6 +104,8 @@ def main() -> int:
         "rho_psi(x) = |psi(x)|^2",
         "S_test(phi; x) = L_test (1 - phi(x))",
         "L^{-1} = G0",
+        "U_test(phi; x) = -m phi(x)",
+        "F_x = -grad_x U_test = +m grad_x phi(x)",
         "This is a bounded weak-field theorem",
         "does not claim",
         "LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
@@ -118,6 +120,8 @@ def main() -> int:
         "zero-free-parameter physical-gravity closure",
         "full Einstein equations are derived",
         "G_Newton in SI units is derived",
+        "proportional to `-m grad phi(x)`",
+        "F_x = -grad_x Delta S_test",
     ]
     for phrase in forbidden_phrases:
         check(f"note excludes forbidden phrase: {phrase}", phrase not in note_text)
@@ -211,6 +215,10 @@ def main() -> int:
     grad_phi = finite_difference_gradient(background_phi, test_site, L)
     force = m * grad_phi
     check("force is m times gradient of background potential", np.linalg.norm(force - m * grad_phi) < 1e-12)
+    U_values = -m * background_phi
+    force_from_potential = -finite_difference_gradient(U_values, test_site, L)
+    check("U=-m phi gives F=-grad U=+m grad phi", np.allclose(force_from_potential, force, atol=1e-12))
+    check("test potential energy is -m phi", abs(U_values[idx(test_site, L)] + m * background_phi[idx(test_site, L)]) < 1e-12)
 
     M1, m1 = 1.7, 2.9
     M2, m2 = 0.4, 5.1

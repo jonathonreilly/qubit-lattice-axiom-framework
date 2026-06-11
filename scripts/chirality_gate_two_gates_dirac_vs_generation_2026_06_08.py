@@ -10,8 +10,10 @@ requirement). "Not blocked by the narrow no-go" != "supplied".
 
 Grounds in the algebraic inputs (no new axiom/import, no PDG):
   - koide_anticommuting_operator_derivation_theorem  (retained):
-        Q=2/3  <=>  generation mass operator M_gen anticommutes with
-        Gamma_chi = (2/3)J - I.
+        the one-way anti-commuting route used here: a generation mass operator
+        M_gen that anticommutes with Gamma_chi = (2/3)J - I supplies the
+        chiral Koide Q=2/3 readout. This runner does not use or claim a
+        converse/completeness theorem.
   - koide_z3_equivariant_anticommuting_no_go          (retained_bounded):
         a C3-equivariant (circulant) M_gen with {M_gen, Gamma_chi}=0 is M_gen=0.
 

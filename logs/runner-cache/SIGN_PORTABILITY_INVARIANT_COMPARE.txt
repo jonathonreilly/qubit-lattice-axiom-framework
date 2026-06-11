@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py
 runner_sha256: 02e3c0ec275db8a548ce4f78120f2e8271dcbced48fea46ccf3dd0708cf885e0
-timeout_sec: 120
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 5.76
+elapsed_sec: 7.37
 status: ok
 ----- stdout -----
 # Sign Portability Invariant Comparison
@@ -76,7 +76,7 @@ the row-wise lower-bound theorem remains separate open work.
 ## Holdout (out-of-band confirmation)
 
 ## family: Fifth family radial
-   log: 2026-04-06-fifth-family-radial.txt
+   log: FIFTH_FAMILY_RADIAL_SWEEP.txt
    rows parsed: 3 ; excluded by family: 1
    [PASS] G1_zero_source_cancellation: max|zero|=0.000e+00 <= 1e-12 ; offenders=0/3
    [PASS] G2_neutral_cancellation: max|neutral|=0.000e+00 <= 1e-12 ; offenders=0/3

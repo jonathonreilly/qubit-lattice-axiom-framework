@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/chirality_gate_two_gates_dirac_vs_generation_2026_06_08.py
-runner_sha256: c8bf5ed98b3147974eb2836a2cf6814cdbf9e124ac5543c69eeed6de04c6f5e7
+runner_sha256: c8e69a6b9832d6eabdb3fff817d3f21f9152bf09c7aca6cdebc477f4f17b5cc6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 == Koide/generation grading Gamma_chi ==

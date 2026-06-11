@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 834 |
+| **retained_bounded** | 835 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 39 |
-| unaudited | 1384 |
+| unaudited | 1383 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1281 |
+| `audited_clean` | 1282 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1700 |
+| `unaudited` | 1699 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 501 |
 | `high` | 495 |
-| `medium` | 851 |
-| `leaf` | 1314 |
+| `medium` | 850 |
+| `leaf` | 1315 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1330,6 +1330,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_round_pl_s3_regge_hessian_canonical_channels_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -19629,6 +19630,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the runner-defined four-fold a2*a3*a4*a5 cross term of dW/depsilon, the conserved D(P_eff)+sqrt(g) coupling gives a quintic resid/amplitude far below the naive coupling, remains amplitude-stable, and decreases from L=6 to L=8 while the naive residual stays flat.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the lattice operators, conserved and naive Dirac operators, TT modes, lattice diffeomorphism variation, finite-difference dW/depsilon, and 16-point fourth cross term directly; it does not read or hard-code the contested residuals. Manual checks of the sine-expansion coefficients, cross-stencil normalization, TT transversality/tracelessness, and momentum closure match the stated bounded diagnostic.
 - **rationale:** The load-bearing step is a first-principles finite computation from the framework baseline, not a definition, renaming, external comparator, or tuned numerical match. The included source computes the residuals from instantiated lattice matrices and asserts three bounded checks: conserved-vs-naive contrast at L=6, amplitude robustness at amp 0.04 and 0.09, and conserved decrease from L=6 to L=8 with naive flatness. There are no cited non-retained authorities or missing helper imports in the restricted packet. The clean verdict is limited to the bounded runner-defined quintic diagnostic, not an all-order Einstein-Hilbert closure claim.
+- **auditor confidence:** high
+
+### `universal_gr_round_pl_s3_regge_hessian_canonical_channels_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`UNIVERSAL_GR_ROUND_PL_S3_REGGE_HESSIAN_CANONICAL_CHANNELS_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/UNIVERSAL_GR_ROUND_PL_S3_REGGE_HESSIAN_CANONICAL_CHANNELS_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The supplied 3D Λ-Regge action on the round boundary of the 4-simplex, including the exact critical Λ*, the curved-background Hessian, and the S₅ multiplicity-free channel decomposition with measured channel eigenvalues.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-155403-f6493a7952-universal_gr_round_pl_s3_reg`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At the round ∂Δ⁴ point the computed Λ-Regge Hessian commutes with the full S₅ edge action and the 10-edge representation decomposes multiplicity-free as 10 = 1 ⊕ 4 ⊕ 5, so Schur's lemma gives the unique channel split H = h₁P₁ + h₄P₄ + h₅P₅.  _(class `C`)_
+- **chain closes:** True — The runner constructs the ∂Δ⁴ complex, tetrahedral dihedral angles, volumes, Λ*, Hessian, S₅ action, and projectors directly, without importing an external comparator or prior note value. An independent finite-difference coordinate reconstruction checks the displayed deficit, Λ*, Hessian spectrum signs, and channel values to the stated precision.
+- **rationale:** The source is explicitly bounded to the supplied finite background and supplied Λ-Regge action, and within that scope the load-bearing computation closes. The runner source is not a print-only or hard-coded-eigenvalue certificate: it symbolically differentiates tetrahedral geometry, assembles the Regge Hessian, builds S₅ projectors, and verifies equivariance and scalar channel decomposition. The displayed closed forms δ = 2π - 3 arccos(1/3), Λ* = δ/(2 dV/dℓ), 10 = 1 ⊕ 4 ⊕ 5, complement rank 9, and the reported channel signs/numbers are consistent with an independent numerical check. The theorem does not claim action selection, off-round canonicity, 3+1 dynamics, or a continuum limit.
 - **auditor confidence:** high
 
 ### `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08`

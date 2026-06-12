@@ -1,0 +1,160 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py
+runner_sha256: e4ac2659ac993b4a7111d5d639b7bb0e30f0ba5509b3d00722d28ef5b79e0902
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 8.39
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette multi-word tensor-transfer Perron ladder
+beta=6.0, source NMAX=7, source MODE_MAX=200
+default tensor box NMAX=4, MODE_MAX=80
+
+================================================================================================
+Part 1: finite dimension and memory estimate
+================================================================================================
+NMAX=3, words=2: word_box=16, dim=256, dense_matrix=512.000 KiB, sparse_fusion_entries=4356
+NMAX=3, words=3: word_box=16, dim=4096, dense_matrix=128.000 MiB, sparse_fusion_entries=287496
+NMAX=4, words=2: word_box=25, dim=625, dense_matrix=2.980 MiB, sparse_fusion_entries=12544
+NMAX=4, words=3: word_box=25, dim=15625, dense_matrix=1.819 GiB, sparse_fusion_entries=1404928
+PASS: two-word default dimension is within the requested finite range
+      dim=625
+PASS: three-word default is handled matrix-free rather than as a dense matrix
+      dim=15625, dense=1.819 GiB
+
+================================================================================================
+Part 2: one-word anchor gate
+================================================================================================
+one-word tensor Perron eigenvalue: 1.012369912748
+rho_tw1(1,0): 0.378514922317
+P_tw1(6): 0.434215413260
+P_loc reference: 0.452407159045
+P_triv reference: 0.422531739647
+PASS: one-word composed readout reproduces the PR3606 gate value
+      P_tw1=0.434215413260, reference=0.434215413260
+PASS: source Perron anchors reproduce rho=delta and rho=1 ordering
+      P_triv=0.422531739647, P_tw1=0.434215413260, P_loc=0.452407159045
+
+================================================================================================
+Part 3: two-word construction variants
+================================================================================================
+Control with no adjacent contraction: T_2 = T_1 tensor T_1, so the marked-word readout should reproduce P_tw1.
+control dim=625, eig=1.024892840237, residual=2.776e-16, P=0.434215413260
+PASS: uncontracted tensor-product control reproduces the one-word readout
+      delta=0.000e+00
+character/same: dim=625, middle_nonzero=25, fusion_nnz=12544, eig=0.456421298630, residual=1.665e-16, psi_min=-9.404e-38
+PASS: two-word character/same Perron residual is small
+      residual=1.665e-16
+PASS: two-word character/same Perron vector is nonnegative up to tolerance
+      psi_min=-9.404e-38
+character/conjugate: dim=625, middle_nonzero=25, fusion_nnz=12544, eig=0.456421298630, residual=1.665e-16, psi_min=-1.156e-33
+PASS: two-word character/conjugate Perron residual is small
+      residual=1.665e-16
+PASS: two-word character/conjugate Perron vector is nonnegative up to tolerance
+      psi_min=-1.156e-33
+matrix_element/same: dim=625, middle_nonzero=25, fusion_nnz=12544, eig=0.156078513772, residual=2.082e-17, psi_min=-4.592e-40
+PASS: two-word matrix_element/same Perron residual is small
+      residual=2.082e-17
+PASS: two-word matrix_element/same Perron vector is nonnegative up to tolerance
+      psi_min=-4.592e-40
+matrix_element/conjugate: dim=625, middle_nonzero=25, fusion_nnz=12544, eig=0.156078513772, residual=1.388e-17, psi_min=-4.815e-35
+PASS: two-word matrix_element/conjugate Perron residual is small
+      residual=1.388e-17
+PASS: two-word matrix_element/conjugate Perron vector is nonnegative up to tolerance
+      psi_min=-4.815e-35
+
+bond_norm | orientation | words | readout | rho10 | rho11 | P(6) | delta_distance_to_0.5934_vs_tw1
+------------------------------------------------------------------------------------------------------------------------
+character      | same       |     2 | word0-marginal      | 0.232710097468 | 0.162385894803 | 0.429847250027 | -0.004368163233
+character      | same       |     2 | word0-trivial_slice | 0.211265869825 | 0.162259799480 | 0.429196712321 | -0.005018700938
+character      | conjugate  |     2 | word0-marginal      | 0.232710097468 | 0.162385894803 | 0.429847250027 | -0.004368163233
+character      | conjugate  |     2 | word0-trivial_slice | 0.211265869825 | 0.162259799480 | 0.429196712321 | -0.005018700938
+matrix_element | same       |     2 | word0-marginal      | 0.448136509420 | 0.162403385294 | 0.436251149956 | +0.002035736696
+matrix_element | same       |     2 | word0-trivial_slice | 0.211265869825 | 0.162259799480 | 0.429196712321 | -0.005018700938
+matrix_element | conjugate  |     2 | word0-marginal      | 0.448136509420 | 0.162403385294 | 0.436251149956 | +0.002035736696
+matrix_element | conjugate  |     2 | word0-trivial_slice | 0.211265869825 | 0.162259799480 | 0.429196712321 | -0.005018700938
+PASS: same-orientation and conjugate-orientation two-word character contractions agree on P
+PASS: same-orientation and conjugate-orientation two-word matrix-element contractions agree on P
+
+================================================================================================
+Part 4: two-word NMAX/MODE_MAX drift
+================================================================================================
+NMAX MODE bond_norm readout P(6) rho10 rho11
+------------------------------------------------------------------------------------------------
+   3   80 character      marginal      0.429847250027 0.232710097468 0.162385894803
+   3   80 character      trivial_slice 0.429196712321 0.211265869825 0.162259799480
+   3   80 matrix_element marginal      0.436251149956 0.448136509420 0.162403385294
+   3   80 matrix_element trivial_slice 0.429196712321 0.211265869825 0.162259799480
+   3  200 character      marginal      0.429847250027 0.232710097468 0.162385894803
+   3  200 character      trivial_slice 0.429196712321 0.211265869825 0.162259799480
+   3  200 matrix_element marginal      0.436251149956 0.448136509420 0.162403385294
+   3  200 matrix_element trivial_slice 0.429196712321 0.211265869825 0.162259799480
+   4   80 character      marginal      0.429847250027 0.232710097468 0.162385894803
+   4   80 character      trivial_slice 0.429196712321 0.211265869825 0.162259799480
+   4   80 matrix_element marginal      0.436251149956 0.448136509420 0.162403385294
+   4   80 matrix_element trivial_slice 0.429196712321 0.211265869825 0.162259799480
+   4  200 character      marginal      0.429847250027 0.232710097468 0.162385894803
+   4  200 character      trivial_slice 0.429196712321 0.211265869825 0.162259799480
+   4  200 matrix_element marginal      0.436251149956 0.448136509420 0.162403385294
+   4  200 matrix_element trivial_slice 0.429196712321 0.211265869825 0.162259799480
+PASS: two-word character/marginal P drift is small on NMAX=3..4, MODE=80/200
+      span=8.044e-14
+PASS: two-word character/trivial_slice P drift is small on NMAX=3..4, MODE=80/200
+      span=0.000e+00
+PASS: two-word matrix_element/marginal P drift is small on NMAX=3..4, MODE=80/200
+      span=2.304e-14
+PASS: two-word matrix_element/trivial_slice P drift is small on NMAX=3..4, MODE=80/200
+      span=5.551e-17
+
+================================================================================================
+Part 5: feasible three-word extension
+================================================================================================
+three-word character/same: dim=15625, middle_nonzero=25, fusion_nnz=1404928, eig=0.219691349471, residual=3.053e-16, psi_min=-6.888e-41
+PASS: three-word character/same Perron residual is small
+      residual=3.053e-16
+three-word matrix_element/same: dim=15625, middle_nonzero=25, fusion_nnz=1404928, eig=0.045553399484, residual=6.939e-18, psi_min=-3.341e-52
+PASS: three-word matrix_element/same Perron residual is small
+      residual=6.939e-18
+
+bond_norm | orientation | words | readout | rho10 | rho11 | P(6) | delta_distance_to_0.5934_vs_tw1
+------------------------------------------------------------------------------------------------------------------------
+character      | same       |     3 | word0-marginal      | 0.214641212848 | 0.162262316312 | 0.429299240786 | -0.004916172474
+character      | same       |     3 | word0-trivial_slice | 0.211265869825 | 0.162259799480 | 0.429196712321 | -0.005018700938
+matrix_element | same       |     3 | word0-marginal      | 22.802148174123 | 0.162354707873 | 0.592817119605 | +0.158601706345
+matrix_element | same       |     3 | word0-trivial_slice | 0.211265869825 | 0.162259799480 | 0.429196712321 | -0.005018700938
+PASS: three-word matrix-free extension completed at NMAX=4
+
+================================================================================================
+Fenced comparator distances
+================================================================================================
+Plaquette reuse license: the canonical comparison number is admitted only as a comparison/reuse number, not as a derived value, fit target, or repinning input.
+```text
+P_tw1 = 0.434215413260
+|P_tw1 - P_loc_reference| = 0.018191745785
+|P_tw1 - P_triv_reference| = 0.011683673613
+|P_tw1 - 0.5934| = 0.159184586740
+two-word character marginal: P = 0.429847250027; |P - P_loc_reference| = 0.022559909018; |P - P_triv_reference| = 0.007315510380; |P - 0.5934| = 0.163552749973; direction_vs_tw1 = away by 0.004368163233
+two-word character trivial_slice: P = 0.429196712321; |P - P_loc_reference| = 0.023210446723; |P - P_triv_reference| = 0.006664972674; |P - 0.5934| = 0.164203287679; direction_vs_tw1 = away by 0.005018700938
+two-word matrix_element marginal: P = 0.436251149956; |P - P_loc_reference| = 0.016156009088; |P - P_triv_reference| = 0.013719410309; |P - 0.5934| = 0.157148850044; direction_vs_tw1 = toward by 0.002035736696
+two-word matrix_element trivial_slice: P = 0.429196712321; |P - P_loc_reference| = 0.023210446723; |P - P_triv_reference| = 0.006664972674; |P - 0.5934| = 0.164203287679; direction_vs_tw1 = away by 0.005018700938
+three-word character marginal: P = 0.429299240786; |P - P_loc_reference| = 0.023107918258; |P - P_triv_reference| = 0.006767501139; |P - 0.5934| = 0.164100759214; direction_vs_tw1 = away by 0.004916172474
+three-word character trivial_slice: P = 0.429196712321; |P - P_loc_reference| = 0.023210446723; |P - P_triv_reference| = 0.006664972674; |P - 0.5934| = 0.164203287679; direction_vs_tw1 = away by 0.005018700938
+three-word matrix_element marginal: P = 0.592817119605; |P - P_loc_reference| = 0.140409960560; |P - P_triv_reference| = 0.170285379958; |P - 0.5934| = 0.000582880395; direction_vs_tw1 = toward by 0.158601706345
+three-word matrix_element trivial_slice: P = 0.429196712321; |P - P_loc_reference| = 0.023210446723; |P - P_triv_reference| = 0.006664972674; |P - 0.5934| = 0.164203287679; direction_vs_tw1 = away by 0.005018700938
+```
+PASS: canonical comparator is isolated to distance reporting and not used in construction
+
+================================================================================================
+Part 6: bounded statement inputs
+================================================================================================
+Status authority: independent audit lane only. This source note does not set or predict an audit outcome.
+Named residuals: finite word count; finite dominant-weight box; no physical 3D environment computation; no untruncated convergence proof; no L_perp limit; no selected adjacent-contraction convention; no canonical repinning; no analytic P(6).
+PASS: two-word character marginal readout is finite and positive
+      P=0.429847250027
+PASS: two-word matrix-element marginal readout is finite and positive
+      P=0.436251149956
+
+TOTAL: PASS=25, FAIL=0
+
+----- stderr -----
+

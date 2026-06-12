@@ -1,0 +1,27 @@
+loop: conditional-status-firewall-sweep-20260612
+started: 2026-06-12
+branch: physics-loop/conditional-status-firewall-sweep-20260612
+target_status: best-honest-status
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: "source-boundary firewall for uncovered audited_conditional rows whose labels were stronger than their proof surface"
+files_touched:
+  - docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md
+  - scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py
+  - logs/runner-cache/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.txt
+  - docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md
+  - scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py
+  - logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt
+  - docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md
+  - scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py
+  - logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt
+open_imports:
+  - "Emergent Lorentz: framework-native interacting one-loop RG and spatial power-divergent mixing theorem"
+  - "Koide records: equal-block sector measure and records/objectivity selector"
+  - "SU3 beta6 gap: no-second-order-bulk-critical-point theorem through beta=6"
+review_findings: []
+pr_status: pending
+next_exact_action: "run precompute, diff-check, commit, push, and open review PR"
+stop_condition: "PR opened with runner caches fresh and no audit-data edits"

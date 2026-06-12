@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py
+runner_sha256: 6ed0dc1d3df6fdbca3dfdacd48683be2480114cad101b8947ea8f6aab70f6b4a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+W8a statistics atom reduction runner
+Status authority: independent audit lane only; this runner sets no audit outcome.
+
+========================================================================================
+Symbolic checks
+========================================================================================
+PASS: K1 restatement: 2x2 Born partition arithmetic
+      p_s=a, p_d=1 - a, sum=1
+PASS: K1 restatement: 3x3 supplied two-outcome partition arithmetic
+      p_s=a, p_d=1 - a, sum=1
+PASS: K2 lemma: Tr((A tensor B)(C tensor D)) factors
+PASS: K2 core: sigma tensor sigma product partition gives p_j p_k
+      ('s', 's')=a**2, ('s', 'd')=a*(1 - a), ('d', 's')=a*(1 - a), ('d', 'd')=(a - 1)**2
+PASS: K2 completeness: four joint product weights sum to 1
+PASS: K3a agreement conditioning gives ratio map x -> x^2
+      p_s'=p_s**2/(p_d**2 + p_s**2), p_d'=p_d**2/(p_d**2 + p_s**2)
+PASS: K3b x=2r gives r -> 2r^2 and inverse sqrt(r/2)
+      inverse=sqrt(2)*sqrt(r)/2
+PASS: K4 structural witness: correlated joint weights do not factor
+      w_sd=0, product p_s p_d=p_d*p_s
+PASS: K4 structural witness: agreement conditioning is identity
+      conditioned=(p_s/(p_d + p_s), p_d/(p_d + p_s))
+PASS: K4 reduction assembly: retained Born form plus product form gives retained flow
+      non-retained ingredient isolated as the product-form instance premise
+
+========================================================================================
+Textual firewall checks
+========================================================================================
+PASS: B1 Gleason dependency contains H_Lambda application phrase
+PASS: B2 note quotes the Gleason H_Lambda application phrase
+PASS: B3 Gleason dependency contains Born-form claim sentence
+PASS: B4 Busch dependency contains m(E)=Tr form
+PASS: B5 note quotes the Busch m(E)=Tr form
+PASS: B6 MINIMAL_AXIOMS contains the non-supply clause
+PASS: B7 note quotes the MINIMAL_AXIOMS non-supply clause
+PASS: B8 firewall sentences present
+PASS: B9 closing/adoption overclaim language absent
+PASS: B10 markdown link inventory is exactly the three requested dependencies
+      found=['[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)', '[`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)', '[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)']
+PASS: B11 context and companion names are backticked only
+      missing=[]; linked=[]
+PASS: B12 No-promotion statement present
+PASS: B13 Date and bounded_theorem claim type present
+PASS: B14 K1-K4 check tags present
+PASS: B15 product-form premise is named but not discharged
+
+========================================================================================
+git diff --stat
+========================================================================================
+(computed without invoking git, per the no-git rule)
+ docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md | 164 +
+ scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py | 379 +
+ 2 files changed, 543 insertions(+)
+
+SUMMARY:
+K1-K4 verified symbolically; note firewall, dependency links, backticked context, and No-promotion statement verified.
+The only non-retained ingredient isolated by the computation is the named product-form instance premise.
+TOTAL: PASS=25 FAIL=0
+CHAIN: {'k1': True, 'k2': True, 'k3': True, 'k4': True}
+
+----- stderr -----
+

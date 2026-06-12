@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1457 |
+| Applied audit verdicts | 1458 |
 | Retained-grade rows, including boxed decorations | 1314 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 843 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1414 |
+| Unaudited rows | 1413 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 43 |
+| Audited conditional rows | 44 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1416 |
-| Ready rows | 37 |
+| Total pending rows | 1415 |
+| Ready rows | 36 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
-| High pending | 291 |
+| High pending | 290 |
 | Medium pending | 425 |
 | Leaf pending | 428 |
 
 Next ready rows by queue order:
 
-- [`g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19`](../../docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md) - high; unaudited
 - [`koide_q_source_domain_canonical_descent_theorem_note_2026-04-25`](../../docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md) - high; unaudited
 - [`observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md) - high; unaudited
 - [`flavor_r_half_is_the_records_flow_separatrix_2026-06-02`](../../docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - high; unaudited
 - [`koide_berry_monopole_bridge_reduction_note_2026-05-31`](../../docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
+- [`koide_q_minimal_scale_free_selector_note_2026-04-22`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -61,16 +61,16 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| high | `unaudited` | 160 |
+| high | `unaudited` | 159 |
 | critical | `unaudited` | 157 |
 | medium | `unaudited` | 95 |
 | critical | `open_gate` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
+| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| high | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 

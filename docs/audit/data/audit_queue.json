@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 272,
-    "high": 291,
+    "high": 290,
     "leaf": 428,
     "medium": 425
   },
@@ -7721,31 +7721,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
-        "yt_ward_identity_derivation_theorem"
-      ],
-      "direct_in_degree": 12,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.508,
-      "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
-      "transitive_descendants": 90
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17021,15 +16996,15 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.992,
+      "load_bearing_score": 7.508,
       "note_path": "docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": null,
-      "transitive_descendants": 89
+      "transitive_descendants": 90
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42682,6 +42657,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 37,
-  "total_pending": 1416
+  "ready_count": 36,
+  "total_pending": 1415
 }

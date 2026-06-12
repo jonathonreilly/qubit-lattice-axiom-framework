@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 843 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1414 |
+| unaudited | 1413 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1288 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1731 |
+| `unaudited` | 1730 |
 
 | claim_type | count |
 |---|---:|
@@ -1433,6 +1433,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -7071,6 +7072,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** "F_Htt^(0)(g_bare) = (1 / sqrt(6)) * 1 = 1 / sqrt(6)," with no gauge-coupling insertion at tree order.  _(class `A`)_
 - **chain closes:** True — The cited narrow overlap theorem supplies the normalized diagonal Wick-contractor identity and gauge-coupling independence for the operator definition; the source note only specializes it to N_iso=2, N_c=3 and a basis pair. The note explicitly excludes the broader Ward-identification step, so no unproved SM Yukawa readout is needed for the scoped claim.
 - **rationale:** The bounded theorem closes as exact algebra over the supplied narrow overlap authority plus the source note's tree-order no-gauge-insertion argument. There is no tuned numerical comparator, no hidden g_bare dependence in the stated tree-level operator matrix element, and no reliance on the terminal top-Yukawa Ward-identification row within the audited scope. Residual risk is only that downstream uses may overread the internal bare datum as a physical Standard Model top-Yukawa readout, which this note explicitly does not establish.
+- **auditor confidence:** high
+
+### `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19`
+
+- **Note:** [`G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`](../../docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact conditional coefficient algebra: from retained Rep-B input F_Htt^(0)^2 = 1/6 and the explicitly admitted same-projected 1PI identity, the positive branch gives g_bare = 1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-002321-6e86ea1137-g_bare_two_ward_same_1pi_pin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the H_unit-residue admission, Representation B is allowed to be read as the same complete projected coefficient as Representation A, so equating coefficients gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c).  _(class `A`)_
+- **chain closes:** False — The rational solve itself closes: 2 * 3 * (1/6) = 1. The full off-surface pinning chain does not close because the packet does not derive the H_unit-residue exhaustion theorem identifying the H_unit matrix element with the complete same-projected 1PI Gamma_S^(4) residue.
+- **rationale:** The runner source performs source-firewall checks and exact rational algebra, not a first-principles derivation of the residue bridge. Independent algebra confirms that, if F_Htt^(0)^2 = 1/6 and F_Htt^(0)^2 = g_bare^2/(2 N_c) with N_c = 3 are both accepted, then g_bare^2 = 1 and the positive branch is g_bare = 1. The load-bearing bridge is explicitly an H_unit-residue admission, and the source note states that it does not derive the complete same-projected 1PI exhaustion theorem. Retained status therefore cannot propagate to an unconditional pinning theorem from this packet.
 - **auditor confidence:** high
 
 ### `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28`

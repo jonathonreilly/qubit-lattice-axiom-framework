@@ -17,16 +17,16 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| high | `unaudited` | 160 |
+| high | `unaudited` | 159 |
 | critical | `unaudited` | 157 |
 | medium | `unaudited` | 95 |
 | critical | `open_gate` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
+| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| high | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
@@ -280,7 +280,7 @@ publication tables phrase it.
 | high | `fractional_charge_denominator_from_n_c_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `frontier_extension_lane_opening_note_2026-04-25` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `g_bare_two_ward_closure_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
-| high | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
+| high | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | high | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `grav_decoherence_derived_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

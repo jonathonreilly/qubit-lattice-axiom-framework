@@ -77,16 +77,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3327 |
 | Critical nodes | 513 |
 | High nodes | 511 |
-| Medium nodes | 898 |
-| Leaf nodes | 1405 |
+| Medium nodes | 897 |
+| Leaf nodes | 1406 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1530 descendants; score 127.080
-- `three_generation_observable_theorem_note` - critical; 1057 descendants; score 63.547
-- `graph_first_su3_integration_note` - critical; 1389 descendants; score 60.941
+- `minimal_axioms` - critical; 1529 descendants; score 127.079
+- `three_generation_observable_theorem_note` - critical; 1056 descendants; score 63.546
+- `graph_first_su3_integration_note` - critical; 1388 descendants; score 60.940
 - `observable_principle_from_axiom_note` - critical; 881 descendants; score 59.285
-- `key_terminology` - critical; 1216 descendants; score 50.249
-- `minimal_axioms_2026-05-03` - critical; 998 descendants; score 49.964
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 970 descendants; score 45.423
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 978 descendants; score 44.435
+- `key_terminology` - critical; 1215 descendants; score 50.248
+- `minimal_axioms_2026-05-03` - critical; 997 descendants; score 49.963
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 969 descendants; score 45.422
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 977 descendants; score 44.434

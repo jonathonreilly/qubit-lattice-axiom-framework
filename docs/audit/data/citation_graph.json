@@ -49645,10 +49645,6 @@
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
-      "from": "repo.front_door_status",
-      "to": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
-    },
-    {
       "from": "repo.repo_organization",
       "to": "key_terminology"
     },
@@ -95181,11 +95177,10 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
+        "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3c1a80949c3ea00f6262b5971f3df513487228138f24bad5578500ffd8a2e6fb",
+      "note_hash": "8fde8c0a2c11778335d538b39afb924f752dbc894c2aaaabfb4544b779b2015b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -109622,8 +109617,8 @@
       "open_gate": 158,
       "positive_theorem": 617
     },
-    "edge_count": 12514,
-    "leaf_count": 1067,
+    "edge_count": 12513,
+    "leaf_count": 1068,
     "node_count": 3327,
     "root_count": 1047,
     "runners_with_path": 2912

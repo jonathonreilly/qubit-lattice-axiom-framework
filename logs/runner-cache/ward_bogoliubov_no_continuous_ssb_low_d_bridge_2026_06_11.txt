@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/ward_bogoliubov_no_continuous_ssb_low_d_bridge_2026_06_11.py
+runner_sha256: a3c9c8c602e140d1159decb33e1985ec2ec444471c8dfb50d87cb67eab6599b3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.30
+status: ok
+----- stdout -----
+============================================================================
+WARD/BOGOLIUBOV NO-CONTINUOUS-SSB BRIDGE AT d <= 2 (finite T)
+(B1)-(B5) chain checked as identities/inequalities with margins
+============================================================================
+
+----------------------------------------------------------------------------
+[L] (B1) lemma certificates and the Bogoliubov inequality
+----------------------------------------------------------------------------
+  [PASS] [L] scalar log-mean <= arithmetic mean on the grid
+  [PASS] [L] (L1) (X,X)_D <= <{X,X^dag}>/2 on random instances
+  [PASS] [L] (L2) beta([H,C^dag],X)_D = <[C,X]> on random instances  (max residual = 1.3e-14)
+  [PASS] [L] positivity <[[C,H],C^dag]> >= 0 on random instances
+  [PASS] [L] (B1) assembled Bogoliubov inequality on random instances
+
+----------------------------------------------------------------------------
+block d=1 chain L=8, h = 0.1  (N = 8, m = 0.1078)
+----------------------------------------------------------------------------
+  [PASS] [W] (B2) Ward identity <[Q_k, A_-k]> = -iNm at every k  (max residual = 1.1e-16)
+  [PASS] [K] (B3) 0 <= <[[Q_k,H],Q_-k]> <= N(J E(k) + h|m|) at every k (E = retained C-MW kernel)
+  [PASS] [K] (B3) field part: [[Q_k, H_h], Q_-k] = h sum_x S^x exactly
+  [PASS] [B4] sum rule sum_k <{A_k, A_k^dag}> = N^2/2  (sum = 32.000000)
+  [PASS] [B5] assembled bound m^2 S(h|m|) <= beta/4  (m^2 S = 0.1423 <= beta/4 = 0.5000)
+
+----------------------------------------------------------------------------
+block d=1 chain L=8, h = 0.4  (N = 8, m = 0.3320)
+----------------------------------------------------------------------------
+  [PASS] [W] (B2) Ward identity <[Q_k, A_-k]> = -iNm at every k  (max residual = 4.5e-16)
+  [PASS] [K] (B3) 0 <= <[[Q_k,H],Q_-k]> <= N(J E(k) + h|m|) at every k (E = retained C-MW kernel)
+  [PASS] [K] (B3) field part: [[Q_k, H_h], Q_-k] = h sum_x S^x exactly
+  [PASS] [B4] sum rule sum_k <{A_k, A_k^dag}> = N^2/2  (sum = 32.000000)
+  [PASS] [B5] assembled bound m^2 S(h|m|) <= beta/4  (m^2 S = 0.1661 <= beta/4 = 0.5000)
+
+----------------------------------------------------------------------------
+block d=2 block 3x3, h = 0.2  (N = 9, m = 0.3309)
+----------------------------------------------------------------------------
+  [PASS] [W] (B2) Ward identity <[Q_k, A_-k]> = -iNm at every k  (max residual = 1.1e-16)
+  [PASS] [K] (B3) 0 <= <[[Q_k,H],Q_-k]> <= N(J E(k) + h|m|) at every k (E = retained C-MW kernel)
+  [PASS] [K] (B3) field part: [[Q_k, H_h], Q_-k] = h sum_x S^x exactly
+  [PASS] [B4] sum rule sum_k <{A_k, A_k^dag}> = N^2/2  (sum = 40.500000)
+  [PASS] [B5] assembled bound m^2 S(h|m|) <= beta/4  (m^2 S = 0.2077 <= beta/4 = 0.5000)
+
+----------------------------------------------------------------------------
+[IR] threshold composition (retained C-MW row scope)
+----------------------------------------------------------------------------
+  [PASS] [IR] d=1: (1/N) sum_{k!=0} 1/E(k) grows strictly with L  (S = ['1.33', '2.66', '5.33'])
+  [PASS] [IR] d=2: grows strictly with L  (S = ['0.38', '0.49', '0.55'])
+  [PASS] [IR] d=3: L-stable (ratio largest/smallest < 1.5; converging)  (S = ['0.215', '0.230', '0.237'])
+  [PASS] [IR] (B5) ceiling (beta/4)/S(h) -> 0 along h -> 0 at large L, d=1 (m is squeezed to 0 in the weak-field limit after the thermodynamic limit)  (ceiling = ['0.10012', '0.03163', '0.01000'])
+
+----------------------------------------------------------------------------
+[F] falsifiers
+----------------------------------------------------------------------------
+  [PASS] [F] falsifier (i): with U(1)-breaking anisotropy and h = 0, the k = 0 kernel bound N(J E(0) + h|m|) = 0 FAILS (the symmetry input is load-bearing)  (<[[Q_0,H],Q_0^dag]> = 1.8557 > 0 = bound)
+  [PASS] [F] falsifier (ii): (B1) is not vacuously slack -- constructed instance achieves a finite fraction of the bound  (saturation ratio = 0.924)
+
+============================================================================
+TOTAL: PASS=26 FAIL=0
+============================================================================
+
+----- stderr -----
+

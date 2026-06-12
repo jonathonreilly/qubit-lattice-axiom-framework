@@ -1,0 +1,16 @@
+goal: repair audited_conditional source-runner formula drift for cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27
+target_status: bounded-support
+branch: physics-loop/cl3-su3-commutant-formula-sync-20260612
+base: origin/main
+current_block: formula-sync
+files_touched:
+  - docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md
+  - .claude/science/physics-loops/cl3-su3-commutant-formula-sync-20260612/
+audit_result_edits: false
+latest_verification:
+  - "PYTHONPATH=scripts python3 scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py -> TOTAL: PASS=109, FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py --check-only --push-mode none --allow-non-main -> fresh=1"
+  - "git diff --check -> clean"
+  - "git diff --name-only -- docs/audit docs/repo/FRONT_DOOR_STATUS.md -> empty"
+next_action: commit, push, open PR
+stop_condition: source drift repaired and PR opened for independent review

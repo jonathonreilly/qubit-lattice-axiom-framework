@@ -13,9 +13,12 @@ inside the commutant of the fiber `SU(2)` action
 denotes the `4 × 4` matrix `U_base^† · diag(λ^a/2, 0_1) · U_base`
 acting on the 3D symmetric base subspace of `C^4_base` (basis
 `{|00⟩, |11⟩, (|01⟩+|10⟩)/√2}`) and the zero on the 1D antisymmetric
-base subspace (basis `(|01⟩−|10⟩)/√2`). The embedding satisfies
-`Tr[T^a_{8D} T^b_{8D}] = (1/2) δ^{ab}` (Gell-Mann normalization on a
-single block, i.e. `T_F = 1/2`), the closed-form structure constants
+base subspace (basis `(|01⟩−|10⟩)/√2`). The embedding has the
+following normalization:
+`Tr_3[(λ^a/2)(λ^b/2)] = (1/2) δ^{ab}` (`T_F = 1/2`) while the full
+8D embedded operators have `Tr_8[T^a_{8D} T^b_{8D}] = δ^{ab}` because
+of the fiber `I_2` trace. It also satisfies the closed-form structure
+constants
 `[T^a_{8D}, T^b_{8D}] = i f^{abc} T^c_{8D}`, and the exact
 commutativity `[T^a_{8D}, Jf_i] = 0` for all `(a, i) ∈ {1,…,8} × {1,2,3}`.
 This is purely an algebraic-embedding statement on the chosen
@@ -145,9 +148,11 @@ a notational convention; the algebraic content of the embedding theorem
 below is identical under any of the three `b_k`-fiber choices.
 
 (C3) The Gell-Mann matrices `{λ^a}_{a=1}^8` are the standard
-`su(3)` generators of [Gell-Mann 1962]; the structure constants
-`f^{abc}` are computed from `2/i · Tr([λ^a, λ^b] · λ^c)` and the
-normalization is `Tr[λ^a λ^b/4] = (1/2) δ^{ab}`.
+`su(3)` generators of [Gell-Mann 1962]. With `T^a := λ^a/2`, the
+structure constants are computed from
+`f^{abc} = (2/i) · Tr([T^a, T^b] T^c)`, equivalently
+`f^{abc} = (1/(4i)) · Tr([λ^a, λ^b] λ^c)`, and the normalization is
+`Tr[T^a T^b] = Tr[λ^a λ^b/4] = (1/2) δ^{ab}`.
 
 **Conclusion (T1) (Embedding into the 4D base).** For each
 `a ∈ {1, …, 8}`, the operator `T^a_{8D}` defined by (T-8D) is a
@@ -368,7 +373,9 @@ Gell-Mann construction backing the abstract statement:
 - It embeds `T3[a]` on the 3D symmetric block (`diag(T3[a], 0)`),
   rotates by `U_base^†` to the original base basis, and tensors
   with `I_2` on the fiber.
-- It checks `Tr[T^a T^b] = (1/2) δ^{ab}`, the Jacobi identity
+- It checks the single-block normalization
+  `Tr_3[T^a T^b] = (1/2) δ^{ab}` for `T^a = λ^a/2`, the full embedded
+  normalization `Tr_8[T^a_{8D} T^b_{8D}] = δ^{ab}`, the Jacobi identity
   (`max_jac < 10^{-12}`), the structure-constant relation
   `[T^a, T^b] = i f^{abc} T^c` in 8D (`max_lie < 10^{-12}`), and
   the commutator with the fiber `SU(2)`
@@ -431,8 +438,9 @@ machine precision otherwise, all conclusions (T1)-(T5):
    of 2 from the `I_2` fiber trace).
 9. **Jacobi identity (T4).** All 512 triples
    `[[T^a, T^b], T^c] + cyc = 0`.
-10. **Structure constants (T3).** Computed
-    `f^{abc} = 2/i · Tr([T^a, T^b] T^c)` and checked
+10. **Structure constants (T3).** Computed, with `T^a = λ^a/2`,
+    `f^{abc} = (2/i) · Tr([T^a, T^b] T^c)`, equivalently
+    `f^{abc} = (1/(4i)) · Tr([λ^a, λ^b] λ^c)`, and checked
     `[T^a_{8D}, T^b_{8D}] = i · ∑_c f^{abc} T^c_{8D}` on all 64
     pairs.
 11. **Sample non-zero `f^{abc}`.** Reproduce

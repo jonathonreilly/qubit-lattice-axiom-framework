@@ -18,7 +18,7 @@ External-context block (printed, NOT PASS-load-bearing):
   interest; explicitly excluded from any PASS condition.
 
 This script does not derive the EW VEV from primitives. The within-
-scope load-bearing content is the four PASS conditions below; the
+scope load-bearing content is the five PASS conditions below; the
 deeper effective-potential-density bridge remains open.
 """
 

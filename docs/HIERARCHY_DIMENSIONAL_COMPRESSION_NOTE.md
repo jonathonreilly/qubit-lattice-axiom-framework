@@ -145,6 +145,64 @@ bounded-support to retained-grade; none are claimed in this note.
    continuum-limit reading; at the minimal block the (1/4) is bounded
    D=4-consistent.
 
+### 5.1 D=4 readout / effective-potential-density bridge check (2026-06-11)
+
+The load-bearing readout used by this note is the parent claim's
+`v ∝ |det|^(1/(N_taste · L_t))` with `N_taste = 2^D = 16` in `D = 4`.
+The bridge it would need is the Section 5 item 1 target above: a retained
+derivation showing how the `L_t > 2` block normalization enters the
+physical VEV formula with explicit sign and placement.
+
+Current retained-row check: no retained row checked in this repair
+supplies that exact bridge at this scope.
+`HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md` is retained-bounded
+for endpoint coefficient algebra, but its audited scope excludes the
+physical electroweak insertion map and its source text leaves Bridge 2
+as the dimension-4 insertion theorem.
+`SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md` is retained for the scalar
+endpoint ratio `A_inf/A_2 = 2/sqrt(3)`, but its audited scope excludes
+observable-level dimension-4 insertion.
+`HIGGS_MASS_FROM_AXIOM_NOTE.md` now supplies a retained-bounded
+per-color determinant to `V_taste` symmetric-point curvature theorem,
+but it declares the EW VEV scale as boundary input B2 and D1 as a
+diagnostic definition; it does not derive this note's per-determinant
+`v(L_t)` readout or the `L_t` sign/placement bridge. The heat-kernel
+and Matsubara-ratio notes still name the D=4 readout as an admission in
+their own current text and are unaudited in the current ledger.
+
+Future bridge note proof obligation: derive, from retained framework
+primitives, the map from the per-determinant or effective-potential
+density coefficient on the `L_t > 2` block to the physical VEV readout,
+including the exponent, inverse/direct placement, sign, and
+normalization relative to the `L_t = 2` baseline.
+
+## Registered Tier-A routing (2026-06-11; audit-requested repair)
+
+The 2026-06-11 audit repair target routes the carrier admission into
+the registered Tier-A derivation target rather than treating it as an
+unregistered conditional blocker.
+
+1. **The algebra is standalone.** The load-bearing computations of this
+   note close as arithmetic on the computed condensate-density ratio:
+   `R` maps to `R^(-1/4)` and `R^(-1/16)`, the two candidates are
+   separated, and the identity `1/D = 4/2^D` holds at `D = 4` and fails
+   at the tested neighboring dimensions. This standalone arithmetic
+   does not consume carrier naming.
+2. **What the carrier admission carries.** The carrier-consuming parts
+   are the per-determinant readout naming the arithmetic as a VEV or
+   effective-potential-density readout, and the realization claim
+   `N_taste = 2^D = 16` in `D = 4`. Those are the admitted context
+   inputs declared in this note, separate from the arithmetic itself.
+3. **The admission is a registered Tier-A target.** The canonical
+   parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the
+   registered Tier-A derivation target `AC_phi_lambda` in
+   `docs/audit/data/tier_a_admissions.json`. This note routes the
+   carrier naming into that registered target; it does not close the
+   gate.
+4. **Routing boundary.** This section records the carrier route only.
+   It does not supply the per-determinant readout bridge, does not
+   derive `N_taste = 2^D`, and does not assert an audit outcome.
+
 ## 6. Dependencies
 
 - `HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md`
@@ -177,16 +235,36 @@ Verifies, using only intra-framework arithmetic, that:
 2. The D=4 and D=16 candidates are numerically distinct (their ratio
    deviates from unity by > 2%), so the two compression readings are
    not a single observable hidden as two.
-3. The structural identity `1/D = 4 / 2^D` holds at `D = 4` and FAILS
-   at all of `D ∈ {1, 2, 3, 5, 6, 8}` (so the (1/4) reading is
-   D=4-specific under the inherited per-determinant readout, not an
-   interchangeable choice).
-4. The runner does NOT depend on the imported `v_obs`, `v_pred`, or
+3. The structural identity `1/D = 4 / 2^D` holds at `D = 4`.
+4. The same identity FAILS at all of `D ∈ {1, 2, 3, 5, 6, 8}` (so the
+   (1/4) reading is D=4-specific under the inherited per-determinant
+   readout, not an interchangeable choice).
+5. The runner does NOT depend on the imported `v_obs`, `v_pred`, or
    `C_obs` in any PASS condition. Those quantities are printed as
    `external context` for reader transparency and are explicitly
    excluded from PASS gates.
 
-Expected scorecard: `4 pass, 0 fail out of 4`.
+Expected scorecard: `5 pass, 0 fail out of 5`.
+
+### 7.1 Scorecard sync (2026-06-11)
+
+The fifth PASS gate genuinely remains in the current runner, so the
+source scorecard is synced from `4` to `5`. Gate-by-gate check against
+`scripts/frontier_hierarchy_dimensional_compression.py`:
+
+1. `D=4 inverse compression R^(-1/4) reproduces by independent routes`
+   — current runner computes `R**(-0.25)` and `exp(-log(R)/4)` and
+   checks agreement to `1e-12`.
+2. `D=4 and D=16 inverse compressions differ by more than 2%` —
+   current runner computes `abs(R^(-1/4)/R^(-1/16) - 1) > 0.02`.
+3. `Structural identity 1/D = 4 / 2^D holds at D = 4` — current runner
+   checks `1/4 = 4/2^4`.
+4. `Structural identity FAILS at D in {1,2,3,5,6,8}` — current runner
+   checks each listed dimension separately.
+5. `PASS conditions are free of observed-target imports` — this is the
+   gate that flipped the scorecard text: the runner already contains
+   the explicit Gate 5 and only introduces `v_obs`, `v_pred`, and
+   `C_obs` after all PASS gates, in the external-context block.
 
 ```yaml
 claim_id: hierarchy_dimensional_compression_note
@@ -216,3 +294,13 @@ forbidden_imports_used: false
 observed_target_used_in_pass_conditions: false
 proposal_allowed: true
 ```
+
+## 8. Changelog
+
+- **2026-06-11 audit-requested repair.** Synced the source scorecard to
+  the runner's five PASS gates after checking the current runner; added
+  registered Tier-A routing for the staggered-Dirac carrier admission
+  through `AC_phi_lambda`; and recorded the strict D=4 readout /
+  effective-potential-density bridge check, leaving the future proof
+  obligation scoped to the determinant/effective-potential-density to
+  physical-VEV map with exponent, sign, placement, and normalization.

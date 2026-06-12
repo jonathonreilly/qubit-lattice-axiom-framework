@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 865 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1366 |
+| unaudited | 1365 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1320 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1683 |
+| `unaudited` | 1682 |
 
 | claim_type | count |
 |---|---:|
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 720 | 31.49 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 850 | 31.23 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.84 | `unaudited` | unaudited |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 188 | 30.56 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 179 | 30.49 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1487,6 +1487,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_minimal_scale_free_selector_note_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_taste_cube_cyclic_source_descent_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lepton_block_d12_prime_matching_no_go_note_2026-05-10` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `light_cone_framing_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -12187,6 +12188,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** At H=0.25, the T_phys=7.5 kubo_true fit gives slope -1.4356 on b in {3,4,5,6}, essentially matching the retained T_phys=15 slope near -1.43 while the finite-path formula predicts -1.7336 at T_phys=7.5.  _(class `C`)_
 - **chain closes:** True — The primary runner recomputes the T_phys=7.5 kubo_true values from the DAG/Kubo propagator and the helper source does not hard-code the contested short-path slope. The T_phys=15 comparison slope is supplied by a retained_no_go cited authority, and no open positive layer-weighted bridge is needed to falsify the surrogate prediction.
 - **rationale:** Independent recomputation of the displayed finite-path formula slopes gives -1.7336, -1.4188, and -1.0776 for L_eff=5, 10, and 30, matching the packet. Independently fitting the stdout T_phys=7.5, H=0.25 kubo_true values gives slope -1.4356 with R2=0.9985, also matching the packet. The runner source instantiates the lattice/DAG propagation and first-order Kubo calculation rather than reading the contested value from another note. The audited conclusion is limited to falsifying this finite-path surrogate's regime-transition prediction, not deriving the unknown positive mechanism for the observed slope.
+- **auditor confidence:** high
+
+### `lepton_block_d12_prime_matching_no_go_note_2026-05-10`
+
+- **Note:** [`LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Current-source-surface audit of whether the quoted YT-style quark matching authorities supply a physical lepton-composite scalar bridge for reusing the matching as a lepton-block Ward identity.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-024912-266259d693-lepton_block_d12_prime_match`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The formal lepton equation only solves y_tau = g_1/sqrt(2) if a unit lepton scalar operator is supplied, and the current cited sources do not identify such a lepton scalar with the physical scalar used in the quark YT matching.  _(class `B`)_
+- **chain closes:** False — The formal algebraic coefficients check independently, and the packet does not contain a lepton-composite scalar bridge. However, the runner/cache and source note also assert that YUKAWA_COLOR_PROJECTION_THEOREM.md defines the quark scalar through a color-indexed quark bilinear, while the supplied authority is a channel-fraction theorem and does not contain that scalar definition.
+- **rationale:** The conditional lepton algebra y_tau = g_1/sqrt(2) follows from |Y_L Y_R| = 1/2, and the absence of a lepton-operator bridge in the restricted authorities supports only a current-surface open gate, not a no-go or prediction. No-go discipline is satisfied only for that narrow open-gate framing because future lepton-operator routes are expressly left open. The clean verdict is blocked by a runner/source-surface artifact: one PASS depends on a YUKAWA-source quark-bilinear claim not present in the supplied YUKAWA authority.
 - **auditor confidence:** high
 
 ### `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26`

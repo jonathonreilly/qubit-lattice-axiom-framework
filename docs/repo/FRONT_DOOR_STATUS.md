@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1506 |
-| Retained-grade rows, including boxed decorations | 1343 |
+| Applied audit verdicts | 1507 |
+| Retained-grade rows, including boxed decorations | 1344 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 865 |
+| Retained bounded rows | 866 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 40 |
-| Unaudited rows | 1365 |
+| Unaudited rows | 1364 |
 | Retained-pending-chain rows | 17 |
 | Audited conditional rows | 60 |
 | Audited renaming rows | 34 |
@@ -33,19 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1367 |
-| Ready rows | 7 |
+| Total pending rows | 1366 |
+| Ready rows | 6 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
 | High pending | 285 |
-| Medium pending | 411 |
+| Medium pending | 410 |
 | Leaf pending | 399 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28`](../../docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
 - [`rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md) - medium; unaudited
 - [`record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
@@ -82,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3327 |
 | Critical nodes | 513 |
 | High nodes | 511 |
-| Medium nodes | 904 |
-| Leaf nodes | 1399 |
+| Medium nodes | 903 |
+| Leaf nodes | 1400 |
 
 Top load-bearing rows by graph score:
 

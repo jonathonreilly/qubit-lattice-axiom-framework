@@ -1,83 +1,121 @@
-# The Dirac Generation Mass Forces r=1 on the Current Surface; the Chiral L-R Coupling Is Berry-Flat (Bounded No-Go; the Open Corner Realization Is Not Theorem-Foreclosed)
+# Dirac Current-Surface Algebraic Sign-Blindness and L-R Berry Flatness at the r=1 Branch (Bounded No-Go; Readout-to-Branch Selection Bridge Open)
 
 **Date:** 2026-06-05
 **Type:** no_go
-**Claim type:** no_go (**bounded**, computable-side). On the current A_min surface, `r = |b|²/a² = 1` (Koide
-`Q=1`) is the **forced** reading of the charged-lepton generation mass, and the chiral L-R coupling localized as
-the selector (the block-1 result, PR #2758) **does not reach `r=1/2`**. This **closes the open route from
-block-1**: localizing the selector to a coupling does not, by itself, open `r=1/2` — the specific C₃-circulant
-L-R coupling is Berry-flat.
-**Claim scope:** **bounded — not a hard universal no-go.** It establishes `r=1` is forced *for the
-physical (singular-value) Dirac mass on the current A_min algebra*, and that the bundle-curving coupling which
-would give `r=1/2` is forbidden *within R³* by `C³=I`. It does **not** rule out a future derivation: the open
-staggered-Dirac corner realization (`AC_φλ` substep-4) is **not theorem-foreclosed**, and the residual is the
-genuinely un-forced **sign of `√m`** (signed-eigenvalue vs singular-value readout).
+**Claim type:** no_go (**bounded**, computable-side). Narrowed claim: for the declared C₃-circulant Dirac
+current-surface mass operator `M(b)` and factor-crossing L-R coupling `M(b)⊗σ₊`, the runner proves algebraic
+sign-blindness and algebraic flatness. In the tested coupling class, `det D` is modulus-squared, `D²` carries
+singular-value data, the generation eigenvectors are b-independent Fourier modes, and the signed-vs-absolute
+readout differs at the declared `r=1/2` Koide dial point. This coupling class cannot distinguish the signed
+`√m` orientation by generation-bundle curvature. It does not prove a physical readout->branch-selection theorem,
+and it does not claim `r=1` is physically selected.
+**Claim scope:** **bounded — not a hard universal no-go.** It establishes only the algebraic
+flatness/sign-blindness of this current `A_min` coupling class. The readout->branch-selection bridge is the named
+open target `READOUT_TO_BRANCH_SELECTION_BRIDGE`: derive, from repo-internal admitted inputs, whether the
+Berry-flat/sign-blind Dirac current-`A_min` readout selects, distinguishes, or leaves open any branch among the
+distinct dial locations `r=0`, `r=1/2`, and `r=1`. This note neither supplies nor denies that bridge; the open
+staggered-Dirac corner realization (`AC_φλ` substep-4) remains outside this theorem's claim.
+**r = 1/2 firewall:** `r = 1/2` is a stable dial setting, never forced by this note; `r = 0`, `r = 1/2`, and
+`r = 1` are distinct framework locations. This note concerns the declared `r = 1` branch as an algebraic branch
+for the tested coupling class, not as a physically selected branch.
 **Status authority:** independent audit lane only. No effective-status change; independent audit required.
 **Runner:** [`scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py`](./../scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py)
 
-## The four exact facts (runner 5/5)
+## The four exact facts (runner 6/6, including source-boundary check)
 
-1. **A Dirac fermion's determinant is the modulus-squared.** For the genuine Dirac operator
-   `D = [[0, M],[M†, 0]]` on generation⊗{L,R}, `det D = |det M|²` (runner (1)) — second-order *by construction*.
-   Only a **Weyl** fermion keeps `det M` alone (first-order). Charged leptons are Dirac, so the determinant
-   route is second-order, full stop.
-2. **The physical masses are singular values.** `D² = diag(MM†, M†M)` (runner (2)) → the Dirac spectrum is
-   `±` the **singular values** `|λ_k|` of `M`, which are **sign-blind**.
+1. **The declared Dirac block has a modulus-squared determinant.** For
+   `D = [[0, M],[M†, 0]]` on generation⊗{L,R}, `det D = |det M|²` up to the fixed block sign (runner (1)).
+   This is the algebraic determinant statement for the declared block form, not a branch-selection result.
+2. **The declared singular-value readout is sign-blind.** `D² = diag(MM†, M†M)` (runner (2)), so the block
+   spectrum is `±` the singular values `|λ_k|` of `M`. The runner proves sign-blindness of this readout; it does
+   not identify that readout as the physical branch-selection authority.
 3. **The L-R coupling `M(b)⊗σ₊` is Berry-flat.** Its generation eigenvectors are the b-independent C₃-Fourier
-   modes `f_k` (runner (3)); the operator factorizes as `(Fourier mode)⊗(spinor)`, so the **generation bundle
-   is flat** (zero Berry curvature) → `r=1`. The block-1 escape *exists in the algebra* but **does not curve the
-   generation bundle**, hence does not deliver `r=1/2`.
-4. **`r=1/2` needs the signed `√m` readout, which the physical mass erases.** At the operator Koide point
-   (`s=√2`, `r=1/2`) some `√m_k = a+2|b|cos(δ+2πk/3)` are **negative** (because `2|b|>a`). The **signed** readout
-   gives `Q=2/3` for all δ (runner (4a)); the **singular-value** (physical Dirac mass) readout gives `Q≠2/3`
-   wherever an eigenvalue is negative (runner (4b)). The masses `m_k=(√m_k)²` are identical; they differ **only
-   by the sign of `√m`**.
+   modes `f_k` (runner (3)); the operator factorizes as `(Fourier mode)⊗(spinor)`, so the generation bundle is
+   flat (zero Berry curvature). This is the algebraic flatness result for the tested `r=1` branch; it is not a
+   physical selection result.
+4. **The signed-vs-absolute readout split is visible at the `r=1/2` dial point.** At the declared operator Koide
+   point (`s=√2`, `r=1/2`) some `√m_k = a+2|b|cos(δ+2πk/3)` are negative (because `2|b|>a`). The signed readout
+   gives `Q=2/3` on the sampled δ checks (runner (4a)); the absolute-value readout gives `Q≠2/3` on sampled
+   negative-eigenvalue checks (runner (4b)). The masses `m_k=(√m_k)²` are identical; the runner isolates the sign
+   of `√m` as the readout datum not carried by the sign-blind algebra.
 
-## The wall, named exactly
+## The narrowed wall and named open target
 
-> On the current A_min surface the generation mass is the C₃-circulant `M(b)`, whose Dirac realization gives
-> **singular-value (sign-blind) masses → `r=1`**. The bundle-curving coupling that would produce `r=1/2`
-> (b-dependent generation eigenvectors, a nonzero Berry monopole) is **chirality-crossing within R³**, and is
-> **forbidden by `C³=I`** (`comm(C)∩anticomm(Γ_χ)={0}`). The factor-crossing L-R coupling that *is* allowed
-> (`M(b)⊗σ₊`) is **Berry-flat**. So `r=1/2` reduces to the **un-forced sign of `√m`** — a choice no A_min
-> structure (kinetic operator, ε grading, complex structure `J_cs`, Record) fixes.
+> Narrowed wall: in the declared C₃-circulant current-surface algebra, the factor-crossing L-R coupling
+> `M(b)⊗σ₊` is Berry-flat and the singular-value readout is sign-blind. This coupling class therefore cannot
+> distinguish the signed `√m` orientation by generation-bundle curvature.
 
-So `r=1` is forced on the current surface; `r=1/2` is not derived. This is the robust partial-falsification at
-its deepest point: **the framework does not derive the charged-lepton mass ratios.**
+> Named open target: `READOUT_TO_BRANCH_SELECTION_BRIDGE` is the missing theorem deriving the physical
+> readout->branch-selection map, if any, for the distinct dial locations `r=0`, `r=1/2`, and `r=1`. This note
+> does not claim `r=1` is physically selected, and it does not claim `r=1/2` is physically excluded.
+
+Thus the deliverable is the algebraic flatness/sign-blindness boundary for one tested coupling class. The
+physical readout->branch-selection bridge remains an explicit open target.
+
+## 2026-06-12 narrowing repair
+
+- Physical bridge sentences identified: the prior headline, claim type, claim scope, wall paragraph, N5 wording,
+  and runner summary ranged over physical readout->branch selection. They are narrowed here to the
+  algebraic flatness/sign-blindness result that the runner actually checks.
+- Algebraic content preserved: determinant modulus-squared, `D²` singular-value sign-blindness, Fourier-mode
+  b-independence/Berry flatness for `M(b)⊗σ₊`, and the signed-vs-absolute readout split at the declared `r=1/2`
+  dial point.
+- Open target named: `READOUT_TO_BRANCH_SELECTION_BRIDGE` is not claimed and not denied.
+- Dial firewall restored: `r=1/2` is a stable dial setting, never forced; `r=0`, `r=1/2`, and `r=1` remain
+  distinct framework locations.
 
 ## No-Go Discipline Gate (N1-N8)
 
-**N1 — Alternative routes (≥5, all → r=1 or foreclosed):** modulus `Tr log(M†M)` (rank-2 → r=1, #2624);
-det-extremum (r=1, r=4, never 1/2); taste-multiplicity (M₂(ℂ) simple → r=1); Connes-Lott (Schur → r=1);
-ε-grading (phase-only, moves δ not r); `J_cs` (measure-neutral); Record (dimension count → r=1); native-mass
-Berry (flat → r=1); **L-R coupling `M(b)⊗σ₊` (Berry-flat → r=1, this note)**; bundle-curving within R³
-(forbidden by C³=I). Twelve routes; all land on r=1 or are foreclosed.
-**N2 — Wall independence:** two distinct walls — (i) *within R³* the bundle-curving coupling is forbidden
-(`C³=I`); (ii) *across factors* the allowed coupling is Berry-flat (factorization). They are independent (one is
-a forbidding, one is a flatness). The singular-value-vs-signed residual is the *consequence*, not a third wall.
-**N3 — Hidden-wall scan:** "Dirac" is forced (charged leptons are Dirac, non-circular); no "by construction"
-admission beyond that. The complex structure `J_cs` is named explicitly as measure-neutral, not assumed.
-**N4 — Residual matching:** the cited no-gos
+**N1 — Alternative routes against the narrowed claim (≥5):**
+- ATTEMPTED: determinant/modulus route. Runner (1) proves the declared Dirac block has a modulus-squared
+  determinant, so this route supports sign-blind algebra only.
+- ATTEMPTED: `D²` route. Runner (2) proves the declared block carries singular-value data, so this route supports
+  sign-blind algebra only.
+- ATTEMPTED: L-R coupling localization route. Runner (3) proves the generation eigenvectors remain
+  b-independent Fourier modes, so this route supplies Berry flatness, not branch selection.
+- ATTEMPTED: signed-vs-absolute readout route. Runner (4a/4b) proves the sign datum matters at the declared
+  `r=1/2` dial point and is absent from the absolute-value readout.
+- RULED OUT BY PRIOR FOR THE R³ CHIRALITY-CROSSING COUPLING ONLY: the chirality-crossing route remains bounded
+  by [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](./KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md).
+  It is not used here to assert physical readout->branch selection.
+- OPEN TARGET: `READOUT_TO_BRANCH_SELECTION_BRIDGE` is the named open target, not part of the negative
+  claim.
+
+**N2 — Wall independence:** the narrowed claim has one load-bearing wall: the tested coupling class is
+Berry-flat/sign-blind. The R³ chirality-crossing obstruction is boundary context for a different coupling, and
+the physical readout->branch-selection bridge is an open target rather than a wall counted as resolved.
+
+**N3 — Hidden-wall scan:** the broad "physical" and branch-selection language has been removed
+or demoted to the named open target. "Dirac" means the declared block form checked in runner (1)/(2). No
+"by construction" admission is used as a load-bearing bridge.
+
+**N4 — Residual matching:** the runner is load-bearing for the narrowed residual: algebraic
+flatness/sign-blindness of `M(b)⊗σ₊`. The cited boundary notes
 ([`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](./KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md),
 [`KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md`](./KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md),
 [`KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`](./KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md))
-match the residual exactly (Berry-flat ⟺ r=1; signed-vs-singular = the sign of √m).
-**N5 — Rhetoric audit:** "r=1 is forced" is scoped to **the singular-value/physical Dirac mass on the current
-A_min surface**, per-operator. It is **not** claimed lattice-wide or for the open corner realization.
-**N6 — Partial-closure scan:** the signed-`√m` readout is a *convention/definition* (which root of `m`), not a
-new axiom — that is the import-retirement handle, recorded as the open residual, not called "new axiom required."
-**N7 — Steelman:** the strongest case for `r=1/2` is that the **signed** readout *does* give `Q=2/3` exactly (the
-operator sits at the Koide point for the Yukawa eigenvalues), so the physical readout *should* be the signed
-Yukawa eigenvalue, not the singular value. This steelman is **real and unresolved** — hence the **bounded**
-status (not a hard no-go): the sign of `√m` is the genuine open residual.
-**N8 — Cross-cycle echo:** structurally similar walls (modulus, det) were not retired by any later mechanism;
-the signed-vs-singular handle is the only one not yet foreclosed, and it is preserved here as open.
+remain boundary/comparator authorities only. None is used to assert the missing bridge.
+
+**N5 — Rhetoric audit:** phrases asserting physical `r=1` selection have been replaced by "the specified coupling
+class is Berry-flat/sign-blind." The untested physical readout->branch-selection statement is named open.
+
+**N6 — Partial-closure scan:** the signed-`√m` readout may be a convention/definition handle or may require a
+separate theorem. This note does not classify that bridge; it records `READOUT_TO_BRANCH_SELECTION_BRIDGE` as the
+next target.
+
+**N7 — Steelman:** a reviewer can argue that the signed Yukawa eigenvalue, not the absolute value, is the relevant
+readout because it hits the `Q=2/3` comparator in the checked signed-readout samples at the declared `r=1/2` dial
+point. That objection is not answered by the flatness runner; it is exactly the named bridge target.
+
+**N8 — Cross-cycle echo:** signed-vs-singular readout issues recur in the Koide lane. This note preserves that
+handle as open and uses the runner only for the algebraic sign-blindness/Berry-flatness boundary.
 
 ## Forbidden-import / reprove-and-cite
 
-All four facts reproven from the C₃ primitive in the runner (sympy/numpy, 5/5). Singular-value-vs-signed,
-Berry-monopole, McKean-Singer are comparators only. No PDG values; `r=1/2`/`Q=2/3` named only as the empirical
-target this note does **not** derive.
+All four algebraic facts are reproven from the C₃ primitive in the runner (sympy/numpy, 6/6 including the
+source-boundary check). Singular-value-vs-signed, Berry-monopole, McKean-Singer are comparators only. No PDG
+values; the existing `r=1/2`/`Q=2/3` labels are restated only as declared Koide-lane dial/comparator labels, with
+no physical selection claimed.
 
 ## Dependencies
 

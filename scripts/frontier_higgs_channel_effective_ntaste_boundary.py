@@ -174,13 +174,13 @@ def part3_multiplicities() -> None:
 # ---------------------------------------------------------------------------
 # Part 4: Channel-assignment table — for each k ∈ {0,1,2,3,4}, compute
 # (m_H_tree^(k))^2 = v^2 · 4 / (u_0^2 · binomial(4, k)) at exact
-# Fraction precision, with the Higgs note's stated v and u_0 as exact
+# Fraction precision, with the Higgs note's current stated v and u_0 as exact
 # rationals.
 # ---------------------------------------------------------------------------
 # v = 246.22 GeV  ->  Fraction(24622, 100) = Fraction(12311, 50)
 V = Fraction(24622, 100)
-# u_0 = 0.8776   ->  Fraction(8776, 10000) = Fraction(1097, 1250)
-U0 = Fraction(8776, 10000)
+# u_0 = 0.877681381  ->  current parent Higgs note declared input
+U0 = Fraction(877681381, 1000000000)
 
 
 def m_h_tree_squared(n_taste_int: int) -> Fraction:
@@ -201,8 +201,8 @@ def part4_channel_assignment_table() -> None:
         f"V = {V}",
     )
     check(
-        "u_0 = 0.8776 as exact Fraction(1097, 1250)",
-        U0 == Fraction(1097, 1250),
+        "u_0 = 0.877681381 as exact Fraction(877681381, 1000000000)",
+        U0 == Fraction(877681381, 1000000000),
         f"U0 = {U0}",
     )
     check(
@@ -210,8 +210,8 @@ def part4_channel_assignment_table() -> None:
         Fraction(24622, 100) == V,
     )
     check(
-        "u_0 stated = 8776 / 10000",
-        Fraction(8776, 10000) == U0,
+        "u_0 stated = 877681381 / 1000000000",
+        Fraction(877681381, 1000000000) == U0,
     )
 
     # Per-class squared values.
@@ -269,7 +269,7 @@ def part4_channel_assignment_table() -> None:
 
     # Spot-check the rounded numerical predictions against the table in
     # the note (read as approximate display).
-    expected_rounded = {0: 561.1, 1: 280.6, 2: 229.1, 3: 280.6, 4: 561.1}
+    expected_rounded = {0: 561.1, 1: 280.5, 2: 229.1, 3: 280.5, 4: 561.1}
     for k, target in expected_rounded.items():
         m_float = float(rows[k][1]) ** 0.5
         rounded = round(m_float, 1)
@@ -390,7 +390,7 @@ def part8_forbidden_imports() -> None:
         f"non-stdlib = {bad}" if bad else "stdlib only",
     )
 
-    # Note: this runner deliberately uses v = 246.22 and u_0 = 0.8776
+    # Note: this runner deliberately uses v = 246.22 and u_0 = 0.877681381
     # as Fraction placeholders matching the values stated in
     # HIGGS_MASS_FROM_AXIOM_NOTE.md. These are not new PDG pins; they
     # are the parent note's already-stated values. The pin-pattern

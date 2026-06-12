@@ -1,0 +1,28 @@
+slug: compute-skips-conditional-repairs-20260612
+branch: physics-loop/compute-skips-20260612
+status: review_pr_ready
+created_at: 2026-06-12
+objective: >
+  Repair compute-required skips where source/cache evidence is missing and
+  address tractable audited-conditional source/runner blockers without editing
+  audit ledger data.
+policy:
+  audit_json_edited: false
+  new_axioms: false
+  independent_audit_required: true
+targets:
+  compute_required_checked:
+    - asymmetry_persistence_collapse_note
+    - wave_direct_dm_h025_two_point_synthesis_note
+    - beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30
+  repaired_in_branch:
+    - higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08
+    - wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08
+    - observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17
+checks:
+  - PYTHONPATH=scripts python3 scripts/frontier_higgs_channel_effective_ntaste_boundary.py
+  - PYTHONPATH=scripts python3 scripts/frontier_wilson_corrected_v_taste_tree_level.py
+  - PYTHONPATH=scripts python3 scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py
+  - python3 scripts/cached_runner_output.py --refresh --timeout-sec 120 scripts/frontier_higgs_channel_effective_ntaste_boundary.py
+  - python3 scripts/cached_runner_output.py --refresh --timeout-sec 120 scripts/frontier_wilson_corrected_v_taste_tree_level.py
+  - python3 scripts/cached_runner_output.py --refresh --timeout-sec 120 scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py

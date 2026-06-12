@@ -11,8 +11,9 @@ Scope (bounded / conditional theorem):
   information geometry; it is NOT derived from Cl(3) on Z^3.
 
   IF the minimum-information selector law (below) is adopted as a post-axiom
-  convention on the fixed native N_e seed surface, THEN it picks out a
-  unique exact-closure off-seed source on the transport-favored column.
+  convention on the fixed native N_e seed surface, THEN the runner finds a
+  reproducible low-cost exact-closure off-seed source on the transport-favored
+  column after imposing eta_{i_*}/eta_obs = 1.
 
 Law (adopted definition):
   1. keep the already-derived native seed pair (xbar, ybar) fixed
@@ -30,13 +31,15 @@ What this runner does NOT prove:
     exist; see relative_action_stationarity and observable_relative_action_law)
   - baseline-framework closure for the PMNS-assisted N_e branch
 
-This yields a unique, low-deformation exact closure source on the current
-branch CONDITIONAL on adopting I_seed as the selector.
+This yields a reproducible low-deformation exact-closure source on the current
+branch CONDITIONAL on adopting I_seed as the selector. It does not prove global
+uniqueness or a baseline-framework selector derivation.
 """
 
 from __future__ import annotations
 
 import math
+from pathlib import Path
 import sys
 
 import numpy as np
@@ -58,6 +61,10 @@ from frontier_dm_leptogenesis_pmns_projector_interface import canonical_h
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = ROOT / "docs" / "DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md"
+NOTE_TEXT = NOTE_PATH.read_text(encoding="utf-8")
+NOTE_FLAT = " ".join(NOTE_TEXT.split())
 
 XBAR_NE = 0.5633333333333334
 YBAR_NE = 0.30666666666666664
@@ -119,6 +126,33 @@ def best_eta_from_params(params: np.ndarray) -> float:
     x, y, delta = build_active_from_params(params)
     _packet, etas = eta_columns_from_active(x, y, delta)
     return float(np.max(etas))
+
+
+def part0_source_scope_firewall() -> None:
+    print("\n" + "=" * 88)
+    print("PART 0: SOURCE SCOPE FIREWALL")
+    print("=" * 88)
+
+    check(
+        "Source note carries current-surface numerical-match certificate",
+        "2026-06-12 Current-Surface Status Certificate" in NOTE_TEXT
+        and "actual_current_surface_status: conditional-support / numerical-match" in NOTE_TEXT
+        and "bare_retained_allowed: false" in NOTE_TEXT,
+    )
+    check(
+        "Source note states no new axiom, retained bridge, or ledger status",
+        "No new axiom, retained bridge, or ledger status is introduced here" in NOTE_FLAT,
+    )
+    check(
+        "Source note does not claim global uniqueness as runner-proved",
+        "does not prove that this point is the unique global stationary point" in NOTE_TEXT
+        and "not a proof of global uniqueness" in NOTE_TEXT,
+    )
+    check(
+        "Source note keeps eta_obs equality as an imposed comparator constraint",
+        "eta_obs normalization target is used as a comparator constraint" in NOTE_TEXT
+        and "imposed `eta_obs` equality" in NOTE_TEXT,
+    )
 
 
 def info_cost(x: np.ndarray, y: np.ndarray, delta: float) -> float:
@@ -279,9 +313,9 @@ def part3_bottom_line() -> None:
         "minimum information deformation at exact closure on the favored column",
     )
     check(
-        "Conditional on adopting I_seed, the result is strictly sharper than the bare extremal candidate",
+        "Conditional on adopting I_seed, the runner-found source is sharper than the bare extremal candidate",
         True,
-        "it picks the least-deformed exact closure source, not just some overshooting source",
+        "it finds a low-deformation exact closure source, not just some overshooting source",
     )
     check(
         "The runner verifies the conditional theorem, not the unconditional one",
@@ -303,7 +337,8 @@ def part4_honest_scope_assertions(
     theorem of the form
 
         IF I_seed is adopted as the selector,
-        THEN the closure source on the favored column is uniquely fixed.
+        THEN the runner finds a calibrated low-cost closure source on the
+        favored column.
 
     It does NOT claim baseline-framework derivation of I_seed itself.
     """
@@ -323,7 +358,7 @@ def part4_honest_scope_assertions(
     )
     cost_value = info_cost(x_min, y_min, delta_min)
     check(
-        "Selected source has finite, computable information cost (defines unique selection)",
+        "Selected source has finite, computable information cost (defines the reported selection)",
         math.isfinite(cost_value) and cost_value > 0.0,
         f"I_seed = {cost_value:.12f}",
     )
@@ -349,8 +384,9 @@ def main() -> int:
     print()
     print("Scope (bounded / conditional theorem):")
     print("  IF the minimum-information selector law is adopted as a post-axiom")
-    print("  convention on the fixed native N_e seed surface, THEN it picks out")
-    print("  a unique exact-closure off-seed source on the transport-favored column.")
+    print("  convention on the fixed native N_e seed surface, THEN the runner")
+    print("  finds a calibrated low-cost exact-closure off-seed source on the")
+    print("  transport-favored column after imposing eta_{i_*}/eta_obs = 1.")
     print()
     print("Adopted definition:")
     print("  Choose the off-seed source minimizing")
@@ -361,8 +397,10 @@ def main() -> int:
     print("NOT claimed:")
     print("  - that I_seed itself follows from Cl(3) on Z^3")
     print("  - that I_seed is the unique correct selector")
+    print("  - global uniqueness/minimality of the constrained optimizer output")
     print("  - baseline-framework closure of the PMNS-assisted N_e branch")
 
+    part0_source_scope_firewall()
     i_star, extremal_params = part1_transport_extremality_fixes_the_favored_column()
     x_min, y_min, delta_min, _packet_min, etas_min = part2_minimum_information_closure_law(
         i_star, extremal_params
@@ -375,7 +413,7 @@ def main() -> int:
     print("=" * 88)
     print("  Adopted post-axiom selector law (definition, not derivation):")
     print("    - favored column fixed by exact transport extremality")
-    print("    - off-seed source fixed by minimum-information exact closure")
+    print("    - off-seed source reported by minimum-information exact closure")
     print("    - exact eta/eta_obs = 1 on the current PMNS-assisted N_e branch")
     print("    - conditional on adopting I_seed as the selector")
     print()

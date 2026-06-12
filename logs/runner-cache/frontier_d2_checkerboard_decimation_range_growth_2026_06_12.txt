@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d2_checkerboard_decimation_range_growth_2026_06_12.py
+runner_sha256: 10bb3e1b70fc0ba4d41a6dd78d5e910121e1e5a9e34b38ead912fb32553e72c4
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+PASS Y1a L=6 white-white block is exactly mu*I: max|h_oo-mu*I|=0.000e+00
+PASS Y1b L=6 Schur output equals mu*I-(t^2/mu)*P: max path-formula error=0.000e+00
+PASS Y1b L=6 diag coefficient is mu-4*t^2/mu: measured=2.2263636363636365e+00 expected=2.2263636363636365e+00 err=0.000e+00
+PASS Y1b L=6 rotated-NN coupling is 2*t^2/mu: expected=2.6181818181818178e-01 maxerr=0.000e+00
+PASS Y1b L=6 rotated-NNN axial coupling is t^2/mu: expected=1.3090909090909089e-01 maxerr=0.000e+00
+PASS Y1b L=6 no step-1 couplings beyond rotated-NNN: max |off-family entry|=0.000e+00 for d2 not in {2,4}
+PASS Y1a L=8 white-white block is exactly mu*I: max|h_oo-mu*I|=0.000e+00
+PASS Y1b L=8 Schur output equals mu*I-(t^2/mu)*P: max path-formula error=0.000e+00
+PASS Y1b L=8 diag coefficient is mu-4*t^2/mu: measured=2.2263636363636365e+00 expected=2.2263636363636365e+00 err=0.000e+00
+PASS Y1b L=8 rotated-NN coupling is 2*t^2/mu: expected=2.6181818181818178e-01 maxerr=0.000e+00
+PASS Y1b L=8 rotated-NNN axial coupling is t^2/mu: expected=1.3090909090909089e-01 maxerr=0.000e+00
+PASS Y1b L=8 no step-1 couplings beyond rotated-NNN: max |off-family entry|=0.000e+00 for d2 not in {2,4}
+PASS Y1c rotated eliminated block is NOT diagonal: max internal offdiag=1.3090909090909089e-01
+Y1c step-2 nonzero off-diagonal coupling shell table:
+  d2= 4 count= 32 magnitudes=[2.0606024250387150e-01]
+  d2= 8 count= 32 magnitudes=[4.0258214823084011e-02]
+  d2=16 count= 16 magnitudes=[9.4686532209458472e-03]
+  d2=20 count= 32 magnitudes=[5.3652780513874093e-03]
+  d2=32 count=  8 magnitudes=[1.2619028818289695e-03]
+PASS Y1c range grows in THIS d=2 checkerboard convention: the two-coupling family does NOT close in the L=8 measured shell table: max shell d2=32, closed-family max d2=8; new shells: d2=16 max=9.4686532209458472e-03 mags=[9.4686532209458472e-03]; d2=20 max=5.3652780513874093e-03 mags=[5.3652780513874093e-03]; d2=32 max=1.2619028818289695e-03 mags=[1.2619028818289695e-03]
+Y1c L=12 shells: {4: '2.057e-01', 8: '3.990e-02', 16: '4.748e-03', 20: '2.665e-03', 32: '3.204e-04', 36: '5.998e-04', 40: '3.522e-04', 52: '5.920e-05', 72: '1.392e-05'}
+Y1c L=14 shells: {4: '2.057e-01', 8: '3.990e-02', 16: '4.731e-03', 20: '2.654e-03', 32: '3.158e-04', 36: '3.190e-04', 40: '1.877e-04', 52: '3.172e-05', 72: '4.228e-06'}
+PASS Y1c the L=8 'd2<=32' table was wraparound-TRUNCATED: L=12/14 show shells beyond 32 (finite-box range growth; this runner does not prove an infinite-lattice all-shell theorem -- disclosed): max shells: L=12 -> 72, L=14 -> 72
+PASS Y1c near-shell magnitudes CONVERGE in L (L=12 vs L=14 within 5% relative on d2=16/20/32) while the far tail remains L-limited (printed): d2=16: 4.748e-03 vs 4.731e-03; d2=20: 2.665e-03 vs 2.654e-03; d2=32: 3.204e-04 vs 3.158e-04
+PASS Y1c coupling magnitudes DECAY by distance band (L=14): {16,20} > {32,36,40} > {52} > {72} with the far tail < 1e-5 -- dense, decaying structure; within-band ordering is anisotropic (diagonal vs axial shells at similar d2, disclosed: the (32,36) pair is near-degenerate): bands: ['4.73e-03', '2.65e-03'] > ['3.16e-04', '3.19e-04', '1.88e-04'] > ['3.17e-05'] > ['4.23e-06']
+PASS Y1d L=6 shifted onsite coefficient uses mu-E: measured=1.8622448979591839e+00 expected=1.8622448979591839e+00 err=2.220e-16
+PASS Y1d L=6 E-shifted rotated-NN coupling uses mu-E: expected=2.9387755102040813e-01 maxerr=0.000e+00
+PASS Y1d L=6 E-shifted rotated-NNN coupling uses mu-E: expected=1.4693877551020407e-01 maxerr=0.000e+00
+PASS Y1d L=6 E-shifted step-1 has no couplings beyond rotated-NNN: max |off-family entry|=0.000e+00 for d2 not in {2,4}
+PASS Y1d L=8 shifted onsite coefficient uses mu-E: measured=1.8622448979591837e+00 expected=1.8622448979591839e+00 err=2.220e-16
+PASS Y1d L=8 E-shifted rotated-NN coupling uses mu-E: expected=2.9387755102040813e-01 maxerr=0.000e+00
+PASS Y1d L=8 E-shifted rotated-NNN coupling uses mu-E: expected=1.4693877551020407e-01 maxerr=0.000e+00
+PASS Y1d L=8 E-shifted step-1 has no couplings beyond rotated-NNN: max |off-family entry|=0.000e+00 for d2 not in {2,4}
+PASS Y1e L=6 retained-site resolvent is preserved at step 1: max resolvent error=3.331e-16
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

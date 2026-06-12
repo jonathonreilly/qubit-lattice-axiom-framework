@@ -50346,7 +50346,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_color_automorphism_theorem"
+      "to": "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
     },
     {
       "from": "repo.front_door_status",
@@ -50374,7 +50374,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     },
     {
       "from": "repo.repo_organization",
@@ -96684,17 +96684,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "cl3_color_automorphism_theorem",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
         "cl3_taste_generation_theorem",
         "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
         "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c9ebc8bbce97e4ca3a76912c1867e7ac6d924687d8e9cd081115f44a6bc34969",
+      "note_hash": "2e3a8a3c574527dec527b00a528c20ebb46ad7dc58b1aecd25184e0dcf3863e5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

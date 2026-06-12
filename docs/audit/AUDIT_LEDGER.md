@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 844 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 39 |
-| unaudited | 1485 |
+| unaudited | 1484 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 29 |
+| ~~audited_conditional~~ | 30 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1289 |
-| `audited_conditional` | 29 |
+| `audited_conditional` | 30 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1802 |
+| `unaudited` | 1801 |
 
 | claim_type | count |
 |---|---:|
@@ -108,8 +108,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 928 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 928 | 43.36 | `unaudited` | unaudited |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.00 | `audited_clean` | **retained_bounded** |
-| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
+| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
+| 11 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 40.50 | `audited_clean` | **retained_bounded** |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 798 | 39.14 | `audited_clean` | **retained_bounded** |
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1272 | 38.81 | `audited_clean` | **retained_bounded** |
@@ -1429,6 +1429,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6819,6 +6820,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The constraint-vs-convention status of g or beta is a function of the admission rank r: with r = 1 the remaining variables lie on a one-parameter convention curve, while with r = 2 the remaining variable is uniquely forced by beta*g^2 = K.  _(class `A`)_
 - **chain closes:** True — The proof is elementary algebra over R_{>0}: solve beta*g^2=K under each admission specialization and count the resulting free parameters. The runner verifies the symbolic identities and exact rational witnesses with PASS=52, FAIL=0, and the note has no load-bearing dependencies.
 - **rationale:** The scoped theorem closes because every claimed case follows directly from the single relation beta*g^2=K over positive reals: K alone leaves a one-parameter curve, fixed K and beta or fixed K and g gives a unique positive solution for the third variable, and no admissions leave a two-parameter surface. The runner checks the symbolic substitutions, exact rational samples, dimension count, round trips, and negative examples without importing any physical interpretation. Residual risk is scope drift only: this audit does not ratify any physical claim that g_bare=1 is forced in the lattice gauge setting.
+- **auditor confidence:** high
+
+### `g_bare_constraint_vs_convention_theorem_note_2026-05-03`
+
+- **Note:** [`G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`](../../docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic corollary: under canonical SU(3) trace normalization, N_c = 3, scoped Wilson matching beta = 2 N_c / g_bare^2, and scoped beta = 6, g_bare^2 = 1 and g_bare = 1 on the positive branch.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-200625-5dc8350032-g_bare_constraint_vs_convent`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Assuming beta = 2 N_c / g_bare^2 with N_c = 3 and beta = 6, exact rational arithmetic gives g_bare^2 = 2 N_c / beta = 6/6 = 1.  _(class `A`)_
+- **chain closes:** True — The arithmetic closes over the explicitly listed assumptions: 2*3/6 = 1. The packet does not derive the Wilson matching relation or the beta = 6 surface, so closure is only for the stated conditional implication.
+- **rationale:** The load-bearing calculation is a correct class-A algebraic substitution, independently checked without relying on the runner. The runner source uses exact Fraction arithmetic on scoped values and has no helper imports, so it verifies the bounded algebraic slice rather than deriving the Wilson matching relation or beta = 6 from first principles. The cited CL3 authority is retained_bounded for the algebraic SU(3) normalization and N_c = 3 content needed here; its deferred physical-color bridge is not load-bearing for this narrowed claim. The verdict is conditional because WM and beta = 6 remain explicit scoped premises not closed by a retained authority in the restricted packet.
 - **auditor confidence:** high
 
 ### `g_bare_dynamical_fixation_obstruction_note_2026-04-18`

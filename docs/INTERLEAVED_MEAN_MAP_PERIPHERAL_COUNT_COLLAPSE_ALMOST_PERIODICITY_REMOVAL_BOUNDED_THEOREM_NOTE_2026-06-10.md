@@ -78,7 +78,7 @@ the fixed point itself is *diagonal* and carries **no link**; the convergent
 object is the polar **orientation of the vanishing centered transient** (a
 scale-invariant direction), not a gauge configuration present at the fixed
 point. The limit is **initial-state-dependent**: no universal selection is
-claimed, matching the open-shell state-realization boundary linked above.
+claimed, matching the open-shell state-realization boundary linked above. The state-conditioning here is the registered [`realized_state_primitive`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) interface: pointwise evaluation at the supplied law-admissible realized state, nothing more; the state-contingent data quoted remain registered data per its counterfactual clause.
 
 **(M4) Color-blind record erasure.** The color-blind per-site total-occupation
 instrument's site-pinching is scalar **zero** on adjacent cross-blocks —

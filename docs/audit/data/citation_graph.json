@@ -50346,10 +50346,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.repo_organization",
@@ -96684,17 +96684,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
         "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
         "hierarchy_dimensional_compression_note",
         "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "su3_adjoint_casimir_theorem_note_2026-05-02",
-        "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+        "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
+        "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "790dde93d0003e2ad479b6a9b6b0f7f1b060dd76ce81831f1d447aa2e208e66c",
+      "note_hash": "e7c426a44cda86966e5b8f82527a2021c2b743051f79516e7671094351178e70",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

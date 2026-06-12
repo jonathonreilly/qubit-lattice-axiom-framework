@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 843 |
+| **retained_bounded** | 844 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 39 |
 | unaudited | 1485 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1288 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1289 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
@@ -109,7 +108,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 928 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 928 | 43.36 | `unaudited` | unaudited |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.00 | `audit_in_progress` | audit_in_progress |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.00 | `audited_clean` | **retained_bounded** |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 798 | 39.14 | `audited_clean` | **retained_bounded** |
@@ -131,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `cl3_color_automorphism_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -274,6 +272,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_color_automorphism_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3539,6 +3538,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Against the singlet plus doublet split of Gamma_chi, symmetric anticommuting H has only singlet-doublet off-diagonal blocks, while every C3-equivariant symmetric native operator has scalar doublet block and therefore cannot select a doublet h.  _(class `A`)_
 - **chain closes:** True — The block decomposition of Gamma_chi gives the anticommuting family directly, and Schur/circulant algebra gives doublet isotropy for C3-equivariant symmetric content. The no-go is scoped narrowly to this axis-versus-h sourcing question and does not claim closure of the separate block-count or future chirality-sourcing routes.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: Gamma_chi = diag(+1,-1,-1) forces symmetric anticommuting H to be purely singlet-doublet mixing, and C3-equivariant symmetric operators remain scalar on the doublet plane. The runner source materially computes the relevant matrices rather than merely printing constants, and its outputs match the restricted proof. The no-go discipline boundary is respected: the result is not an absolute Koide no-go and explicitly leaves the J_cs block-count route and possible upstream C3-breaking mechanisms out of scope.
+- **auditor confidence:** high
+
+### `cl3_color_automorphism_theorem`
+
+- **Note:** [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](../../docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the 8D taste carrier, its tensor-factor commutation with the defined weak-fiber and block-scalar Y operators, and the SU(3) channel-count fraction R_conn=8/9; no physical SM-color or EW-readout bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-200144-5ecb282dd1-cl3_color_automorphism_theor`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** From the SU(3) Fierz/decomposition on the 3-dimensional symmetric base carrier, the non-singlet adjoint channel has dimension N_c^2-1 inside End(C^{N_c}), so R_conn=(N_c^2-1)/N_c^2=8/9 at N_c=3.  _(class `A`)_
+- **chain closes:** True — Within the narrowed algebraic scope, the chain closes by finite-dimensional matrix algebra: a 3D carrier supports the standard SU(3) fundamental generators, the tensor/block construction gives the stated commutators, and dim(adj)/dim(End(C^3))=8/9. The physical identification of this carrier with SM color and the kappa_EW=0 readout are explicitly outside the audited conclusion.
+- **rationale:** The runner source genuinely constructs the relevant finite matrices, verifies the SU(3) normalization/Fierz identity and commutators, and does not import an external calibrated value for the load-bearing 8/9 fraction. An independent dimension-count check gives End(C^3)=1+8, hence the non-singlet channel fraction is 8/9 and K_EW(0)=9/8 only as the stated conditional specialization. The verdict is clean only for the scope-narrowed algebraic theorem; the note’s own physical-color and EW-readout bridge exclusions remain load-bearing boundaries for downstream use.
 - **auditor confidence:** high
 
 ### `cl3_complexification_split_narrow_theorem_note_2026-05-10`

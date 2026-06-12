@@ -298,8 +298,8 @@ hop. On the kernel:
 
 `K` is complex conjugation (`i ↦ -i`). On the real staggered carrier
 `K M K^{-1} = M^* = M`; antiunitarity is what makes `Θ_CPT` a CPT
-(not just a unitary) symmetry and is load-bearing for the CP-odd
-sign-flip corollary (CPT5).
+(not just a unitary) symmetry and is load-bearing for the
+Theta_CPT-odd observable-vanishing corollary (CPT5).
 
 ### 4. Composition (corrected chain — lands at `M^*`)
 
@@ -343,9 +343,9 @@ step of any in-block theorem below.
 Conditional on the deferred (R2)(II) gate closing, `Θ_CPT` lifts to an
 antiunitary operator on the physical Hilbert space `H_phys` (built via
 the reflection-positivity reconstruction sibling note) that commutes
-with the transfer matrix `T` and reverses the sign of all CP-odd local
-observables. This conditional corollary is **not** an in-block theorem
-of this note.
+with the transfer matrix `T` and reverses the sign of all
+Theta_CPT-odd local observables. This conditional corollary is **not**
+an in-block theorem of this note.
 
 ## Statement (post-split 2026-05-10; corrected 2026-06-11)
 
@@ -389,11 +389,12 @@ so the fermion-sector contribution to the partition function is real.
 The full-`Z` reality, including the gauge-sector measure, is
 conditional on the deferred (R2)(II) gate.
 
-**(CPT5) CP-odd fermion-sector local observable sign-flip.** For any
-local observable `O` constructed from admitted-staggered Grassmann
-bilinears that is CP-odd, `Θ_CPT(O) = -O`, hence `⟨O⟩_F = 0` in the
-fermion-sector ensemble. The same statement on the full ensemble is
-conditional on the deferred (R2)(II) gate.
+**(CPT5) Theta_CPT-odd fermion-sector observable vanishing.** For any
+local observable O with Theta_CPT(O) = -O (Theta_CPT-odd), <O>_F = 0
+in the fermion-sector ensemble. The bridge from CP-odd (in the C·P
+sense) to Theta_CPT-odd is NOT supplied here; consumers needing the
+CP-odd form require that separate bridge. The same statement on the
+full ensemble is conditional on the deferred (R2)(II) gate.
 
 ## Honest status (corrected 2026-06-11)
 
@@ -416,7 +417,7 @@ on every block (`max |M_KS| ∈ {0.5, 1.0}`), per the rewritten runner
 | (CPT2) `Θ_CPT M Θ_CPT^{-1} = M^*` (corrected chain)      | closed in-block | 0.0e+00 |
 | (CPT3) `S_F` invariance under `Θ_CPT` (fermion-sector)   | closed in-block (from CPT2) | n/a |
 | (CPT4) `det(M) ∈ R`                                      | closed in-block | `Im det(M) = 0.0e+00` |
-| (CPT5) CPT-odd kernel `tr(A_odd M^{-1}) = 0` (computed)  | closed in-block | < 1e-15 |
+| (CPT5) Theta_CPT-odd kernel `tr(A_odd M^{-1}) = 0` (computed) | closed in-block | < 1e-15 |
 | `ε`-Hermiticity `ε M ε = M^†`                            | closed in-block | 0.0e+00 |
 | `C` kernel identity `E M^T E = M`                        | closed in-block | 0.0e+00 |
 | `Θ_PT` reflection identity `→ M^T` (bond-centered)       | closed in-block | 0.0e+00 |
@@ -461,6 +462,41 @@ gauge-sector CPT lift closes upstream and the named admitted
 [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md), this
 row becomes eligible for retagging by the independent audit lane.
 
+## Registered Tier-A routing (2026-06-11 #2; audit-requested repair)
+
+The admitted `staggered_dirac_realization_gate` context input used by
+this note routes into the registered Tier-A derivation target
+`AC_phi_lambda` in docs/audit/data/tier_a_admissions.json, with
+canonical parent STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md.
+This routing follows the same packet-registration move used in
+PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md and the current
+CL3_TASTE_GENERATION_THEOREM.md dependency-edge treatment.
+
+1. **The algebra is standalone.** The load-bearing in-block algebra is
+   the finite-matrix package (CPT1)–(CPT4): ε-Hermiticity, the
+   bond-centered reflection with its sign field, the composite
+   involution, and the corrected `M^*` identity. The runner verifies
+   these identities with explicit matrices on non-degenerate staggered
+   blocks and falsification legs for the missing sign field, wrong
+   sign field, and wrong boundary convention.
+2. **What the carrier admission carries.** The carrier admission
+   carries only the identification of `M = m + M_KS` as the framework
+   matter operator on the admitted pure-staggered Grassmann surface.
+   It does not supply, and this note does not claim, the finite-matrix
+   identities listed in point 1.
+3. **The admission is a registered Tier-A target.** The canonical
+   parent STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md is the
+   registered Tier-A derivation target `AC_phi_lambda` (display
+   `AC_φλ`) in docs/audit/data/tier_a_admissions.json. This note routes
+   its admitted carrier input into that registered target; it does not
+   close the gate. Under the published chain rule in
+   docs/audit/scripts/compute_effective_status.py, registered Tier-A
+   admissions are handled by the audit pipeline as bounded admissions
+   rather than unregistered conditional blockers.
+4. **No status assertion.** This section records the routing case only.
+   Status authority: independent audit lane only. The note asserts no
+   `effective_status` and predicts no audit outcome.
+
 ## Corollaries (downstream tools)
 
 C1. *Partial discharge of the `CPT-even` assumption in downstream
@@ -477,11 +513,22 @@ on the fermion-sector determinant; the full `θ_eff = 0` row of the
 package's strong-CP retention is conditional on the deferred (R2)(II)
 gate.
 
-C3. *Reuse for any fermion-sector neutral-current / CP-odd lane.*
+C3. *Reuse for any fermion-sector neutral-current / Theta_CPT-odd lane.*
 Any future lane that needs to assert "the fermion-sector ensemble
-on the admitted staggered carrier has zero expectation of a CP-odd
-local observable" can cite (CPT5). The full-ensemble version is
-conditional on (R2)(II).
+on the admitted staggered carrier has zero expectation of a
+Theta_CPT-odd local observable" can cite (CPT5). The bridge from
+CP-odd (in the C·P sense) to Theta_CPT-odd is not supplied here; lanes
+needing the CP-odd form require that separate bridge. The full-ensemble
+version is conditional on (R2)(II).
+
+## Changelog
+
+- 2026-06-11 #2: Added the registered Tier-A routing section that
+  packet-registers the admitted `staggered_dirac_realization_gate`
+  carrier input against `AC_phi_lambda` without making an audit-status
+  assertion, and narrowed (CPT5) plus corollary C3 from CP-odd
+  observables to Theta_CPT-odd fermion-sector observables with the
+  missing CP-odd-to-Theta_CPT-odd bridge stated as separate.
 
 ## Citations
 

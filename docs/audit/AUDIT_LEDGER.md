@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 214 |
+| **retained** | 215 |
 | **retained_no_go** | 208 |
 | **retained_bounded** | 856 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1391 |
+| unaudited | 1390 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1302 |
+| `audited_clean` | 1303 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1708 |
+| `unaudited` | 1707 |
 
 | claim_type | count |
 |---|---:|
@@ -398,6 +398,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `em_gravity_coexistence_2x2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_lorentz_invariance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
+| `emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_product_law_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -5556,6 +5557,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel majority 3/5 ratified tuple ('first', 'audited_clean', 'bounded_theorem', 'C'). Representative rationale: Under the note's binding narrowed scope, the Planck-pin estimate and broad/full SME coefficient interpretation are explicitly non-load-bearing. The runner source genuinely computes the sin^2 dispersion coefficients, finite-lattice free-H residuals, parity-even dispersion check, and the cubic harmonic identity rather than merely printing constants. The normalization issue is correctly repaired: for normalized Y_lm the K4 coefficient is 4 sqrt(pi)/15, not 4/5, and the runner checks this pointwise and symbolically. The open SME-basis caveats in upstream notes would block a broader SME/operator-basis claim, but not this bounded structural free-lattice theorem.
 - **rationale:** Five-judge panel majority 3/5 ratified tuple ('first', 'audited_clean', 'bounded_theorem', 'C'). Representative rationale: Under the note's binding narrowed scope, the Planck-pin estimate and broad/full SME coefficient interpretation are explicitly non-load-bearing. The runner source genuinely computes the sin^2 dispersion coefficients, finite-lattice free-H residuals, parity-even dispersion check, and the cubic harmonic identity rather than merely printing constants. The normalization issue is correctly repaired: for normalized Y_lm the K4 coefficient is 4 sqrt(pi)/15, not 4/5, and the runner checks this pointwise and symbolically. The open SME-basis caveats in upstream notes would block a broader SME/operator-basis claim, but not this bounded structural free-lattice theorem.
 - **auditor confidence:** judicial_panel_vote
+
+### `emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** On the approved OS0 kinetic-form surface, B4 signed-permutation symmetry forbids a diagonal marginal time/spatial velocity anisotropy and makes B4-symmetric one-loop temporal/spatial self-energy coefficients equal; the remaining cited lattice artifact is dimension-6 with only a scale-reference units estimate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-013258-739e54e6b8-emergent_lorentz_radiative_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The B4 invariant space of diagonal quadratic kinetic forms is one-dimensional, so c_t = c_s is forced.  _(class `A`)_
+- **chain closes:** True — The four diagonal coefficients form one orbit under B4, while spatial O_h has a time singleton plus one spatial orbit, so the marginal anisotropic diagonal operator is not B4-invariant. The one-loop equality follows by finite relabeling under a B4-invariant measure/action, and the primitive dependencies supply only the accepted OS0 surface and units conversion used by the scoped estimate.
+- **rationale:** The load-bearing step is a genuine finite-group algebraic closure, not a symbol definition or numerical tuning. The kinetic-isotropy and scale-reference inputs are approved primitive premises in the restricted packet, and the other cited authorities are retained-grade for the structural dimension-6 support used here. An independent check confirmed the invariant dimensions, the sine-dispersion coefficient -a^2/3, and the 1 GeV estimate 2.24e-39; the clean verdict is limited to the stated diagonal quadratic and B4-symmetric one-loop scope, not full Lorentz closure or interacting all-n-point dynamics.
+- **auditor confidence:** high
 
 ### `emergent_product_law_audit_2026-04-11`
 

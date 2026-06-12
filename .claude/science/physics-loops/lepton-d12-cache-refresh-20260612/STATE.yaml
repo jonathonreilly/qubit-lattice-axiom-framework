@@ -19,6 +19,6 @@ open_imports:
 verification:
   live_runner: "python3 scripts/frontier_lepton_block_d12_prime_matching.py -> TOTAL: PASS=13, FAIL=0"
   cache_refresh: "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_lepton_block_d12_prime_matching.py --force --concurrency 1 --push-mode none --allow-non-main -> ok 1"
-pr_status: pending
-next_exact_action: "Run final checks, commit, push, and open PR."
-stop_condition: "Stop this block after PR creation; row remains open-gate."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3691"
+next_exact_action: "Reviewer should inspect PR #3691; remaining science is the separate lepton-composite scalar bridge."
+stop_condition: "This block is packaged and open for review; row remains open-gate."

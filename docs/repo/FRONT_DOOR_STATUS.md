@@ -12,15 +12,15 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1481 |
+| Applied audit verdicts | 1482 |
 | Retained-grade rows, including boxed decorations | 1329 |
 | Retained positive theorems | 215 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 856 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1390 |
-| Retained-pending-chain rows | 16 |
+| Unaudited rows | 1389 |
+| Retained-pending-chain rows | 17 |
 | Audited conditional rows | 52 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1392 |
-| Ready rows | 30 |
+| Total pending rows | 1391 |
+| Ready rows | 29 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
 | High pending | 285 |
-| Medium pending | 412 |
+| Medium pending | 411 |
 | Leaf pending | 423 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
 - [`alpha_s_derived_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02`](../../docs/FLAVOR_RECORD_DYNAMICS_SHARPENS_ARROW_STABILIZER_FAILS_2026-06-02.md) - medium; unaudited
 - [`gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07`](../../docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06`](../../docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md) - medium; unaudited
-- [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
+- [`koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02`](../../docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

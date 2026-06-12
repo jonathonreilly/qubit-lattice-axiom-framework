@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
         "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
         "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
         "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07",
         "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
-        "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
+        "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
+        "centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "416f8d01d52e370d6de49a3a5d6ce58bd63dc837ee73afe15dc928bbd7bc46e6",
+      "note_hash": "2f92379549754a36e0c9c12426471420ebfab05c1c62a7e72d3c21d700be8628",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -109648,7 +109648,7 @@
       "positive_theorem": 617
     },
     "edge_count": 12519,
-    "leaf_count": 1067,
+    "leaf_count": 1066,
     "node_count": 3327,
     "root_count": 1047,
     "runners_with_path": 2912

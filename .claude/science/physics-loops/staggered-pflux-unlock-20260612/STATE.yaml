@@ -1,0 +1,29 @@
+loop_slug: staggered-pflux-unlock-20260612
+branch: physics-loop/staggered-dirac-gate-20260612
+started_utc: "2026-06-12T02:07:08Z"
+updated_utc: "2026-06-12T02:35:00Z"
+goal: "Unlock the higher-impact staggered/P-FLUX kinetic-order lane without adding axioms or editing audit results."
+target_status: best-honest-status
+current_status: bounded-support
+cycle_count: 1
+active_route: "Repair the P-FLUX composer after the retained Z-certificate audit and remove the stale U4 dependency from FSB-K."
+hard_residual: "FSB-K remains unaudited; the kinetic-class two-class surface remains unaudited for wholesale P-KIN closure."
+files_touched:
+  - docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md
+  - docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py
+  - scripts/p_flux_selection_via_fsb_k_check_2026_06_11.py
+  - logs/runner-cache/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.txt
+  - logs/runner-cache/p_flux_selection_via_fsb_k_check_2026_06_11.txt
+open_imports: []
+open_conditions:
+  - "C1: AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26 remains unaudited."
+  - "Kinetic-class forcing surface remains unaudited for retiring P-KIN wholesale."
+trace_gate:
+  trace_class: direct_blocker_closure
+  reachability_to_target: partially_closes
+  target_claim_id: p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11
+review_findings: "No review-loop run in this block; reviewer is expected to extract/land science."
+pr_status: pending
+next_exact_action: "Commit, push, and open a review PR for the bounded-support science block."
+stop_condition: "Stop after PR creation and lock release; reviewer owns landing."

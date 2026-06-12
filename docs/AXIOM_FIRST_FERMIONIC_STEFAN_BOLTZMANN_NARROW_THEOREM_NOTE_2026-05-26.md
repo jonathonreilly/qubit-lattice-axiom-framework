@@ -2,8 +2,9 @@
 
 **Date:** 2026-05-26 (re-scoped 2026-06-11; see §0)
 **Claim type:** bounded_theorem
-**Claim scope:** On the retained `Z³` single-mode-per-site one-particle
-hopping surface, for **every** kinetic kernel in the realized class —
+**Claim scope:** On the `Z³` one-qubit single-ladder one-particle
+hopping surface supplied by the current minimal axiom memo and the
+retained tensor-product Fock/translation bridge, for **every** kinetic kernel in the realized class —
 finite-range, sublattice-periodic, Hermitian hopping with analytic
 Bloch band family `{E_b(p)}` on the Brillouin torus — **whose massless
 set is point-like with linear cones** (hypothesis (Z): the zero set
@@ -109,9 +110,11 @@ neither assumed nor derived.
 
 ## 2. Setup and definitions
 
-**Surface.** The retained `Z³` single-mode-per-site one-particle
-hopping surface (qubit-reframe row) with its finite periodic Fock
-extension (tensor-product fermion bridge row). A **realized-class
+**Surface.** The `Z³` one-qubit single-ladder one-particle hopping
+surface: `MINIMAL_AXIOMS_2026-06-05.md` supplies one primitive qubit
+per site, and the retained tensor-product fermion bridge supplies the
+finite periodic Fock/translation extension with local ladder operators.
+A **realized-class
 kinetic kernel** is a finite-range Hermitian hopping matrix `h` on
 this surface, periodic under a full-rank sublattice `Λ ⊆ Z³` with
 unit cell of `n_c` sites, hence with an analytic Hermitian Bloch
@@ -327,14 +330,11 @@ Load-bearing (markdown links):
    axiom premise node. License used: Lattice (`Z³`, translations, NN
    cubic adjacency) and Quantum (per-site qubit) for the kernel-class
    constructions. No dynamics drawn.
-2. [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
-   — retained. License used: the single-mode-per-site one-particle
-   hopping surface on which the kernel class is defined.
-3. [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
+2. [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
    — retained. License used: the finite periodic Fock surface on
    which the per-mode `Z_mode = 1 + e^(−|E|/T)` half-filled reading
    of the probe lives.
-4. [`GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+3. [`GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
    — retained-grade currency-setting row. License used: the
    Fermi-Dirac integral identity `I_F = Γ(4)η(4) = 7π⁴/120` and the
    per-dof normalization `(7/8)(π²/30)T⁴` (Step 4 of the proof and
@@ -344,7 +344,7 @@ Load-bearing (markdown links):
    Model particle inventory"); this row binds the kernel class and
    derives WHICH count a (Z)-satisfying realized spectrum supplies.
    Disjoint roles; no duplication, no contradiction.
-5. [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
+4. [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
    — retained. License used: the algebraic identity
    `η(4)/ζ(4) = 1 − 2^(1−4) = 7/8` (Corollary FSB-C's
    identification only).
@@ -478,10 +478,9 @@ derived. Exit code 0 iff `FAIL=0`.
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "On the retained Z^3 single-mode-per-site one-particle hopping surface: for every realized-class kinetic kernel (finite-range, sublattice-periodic, Hermitian hopping with analytic Bloch bands) satisfying hypothesis (Z) — the massless set is a finite set of points with linear cones, |E_b(p_j+q)| = |V_jb q| + O(|q|^2), V_jb invertible — the half-filled free-Fermi thermal energy density per site obeys u(T) = g_eff (7/8)(pi^2/30) T^4 + O(T^5) as T -> 0, with g_eff = sum |det V_jb|^{-1} finite = the cone-weighted massless species count; equivalently g_eff(T) = u(T)/[(7/8)(pi^2/30)T^4] has a finite plateau (the massless species density is finite, in the retained SB bridge row's per-dof currency), conditionally on (Z). Error control: off-cone O(e^{-Delta/T}), cone-window O(T^5) absolute / O(T) relative, constants explicit in the kernel's cone data, gap, band number, bandwidth. The hypothesis is demonstrably load-bearing in both clauses (computed certificates: extended zero surface gives g_eff ~ T^-2 Sommerfeld; quadratic point zero gives g_eff ~ T^-3/2). Bounded by: the probe currency (free-Fermi half-filled integrand, equilibrium not derived); thermodynamic-limit statement with numerically certified finite-L control; (Z) verified only for the runner's witnesses, never for 'the realized kernel'; FSB-X at certificate grade. Branch-blind: phi = -1 is neither assumed nor derived, and no flux, branch, or inventory input is consumed. Continuum specialization preserved: u_F = (7 pi^2/60) T^4 per Dirac species; u_F/u_B = 7/8 per dof."
+claim_scope: "On the Z^3 one-qubit single-ladder one-particle hopping surface supplied by the current minimal axiom memo and the retained tensor-product Fock/translation bridge: for every realized-class kinetic kernel (finite-range, sublattice-periodic, Hermitian hopping with analytic Bloch bands) satisfying hypothesis (Z) — the massless set is a finite set of points with linear cones, |E_b(p_j+q)| = |V_jb q| + O(|q|^2), V_jb invertible — the half-filled free-Fermi thermal energy density per site obeys u(T) = g_eff (7/8)(pi^2/30) T^4 + O(T^5) as T -> 0, with g_eff = sum |det V_jb|^{-1} finite = the cone-weighted massless species count; equivalently g_eff(T) = u(T)/[(7/8)(pi^2/30)T^4] has a finite plateau (the massless species density is finite, in the retained SB bridge row's per-dof currency), conditionally on (Z). Error control: off-cone O(e^{-Delta/T}), cone-window O(T^5) absolute / O(T) relative, constants explicit in the kernel's cone data, gap, band number, bandwidth. The hypothesis is demonstrably load-bearing in both clauses (computed certificates: extended zero surface gives g_eff ~ T^-2 Sommerfeld; quadratic point zero gives g_eff ~ T^-3/2). Bounded by: the probe currency (free-Fermi half-filled integrand, equilibrium not derived); thermodynamic-limit statement with numerically certified finite-L control; (Z) verified only for the runner's witnesses, never for 'the realized kernel'; FSB-X at certificate grade. Branch-blind: phi = -1 is neither assumed nor derived, and no flux, branch, or inventory input is consumed. Continuum specialization preserved: u_F = (7 pi^2/60) T^4 per Dirac species; u_F/u_B = 7/8 per dof."
 upstream_dependencies:
   - minimal_axioms
-  - u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20
   - tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25
   - gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06
   - hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10

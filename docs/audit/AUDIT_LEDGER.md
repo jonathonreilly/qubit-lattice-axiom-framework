@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 853 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1454 |
+| unaudited | 1453 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1303 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1771 |
+| `unaudited` | 1770 |
 
 | claim_type | count |
 |---|---:|
@@ -1466,6 +1466,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15590,6 +15591,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The determinant positivity follows from S + D = S^(1/2)(I + B)S^(1/2) with B real antisymmetric, so det(I+B)=prod_k(1+lambda_k^2)>0, and determinant multiplicativity plus Record finite additivity and explicit continuity give W=c log det.  _(class `A`)_
 - **chain closes:** True — The L1 and L2 determinant claims close by finite-dimensional real linear algebra: antisymmetric spectral pairing, positive diagonal congruence, Neumann invertibility, and sign constancy. L3 closes only in the scoped sense stated in the note: Record supplies finite additivity, while determinant-only dependence, continuity/regularity, and c=1 are explicit conventions rather than derived axioms.
 - **rationale:** The displayed matrix factorization, spectral product sign, Neumann patch, block determinant identity, and continuous multiplicative-to-additive Cauchy solution all check independently of the runner. The runner performs finite random and structural sanity checks with no hard-coded fitted values or contested external comparators, and its source matches the note's scoped claims. The clean verdict is limited to the bounded theorem as written and does not derive a physical readout context, the continuity convention, or the c=1 normalization from Record.
+- **auditor confidence:** high
+
+### `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1, d=3 staggered one-particle/free-bilinear exact-log Hamiltonian kernel is exponentially quasi-local for m>0, assuming the displayed d=3 dispersion; no interacting-H or Lieb-Robinson velocity closure audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-235652-4471ebcec1-reconstructed_h_quasilocal_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because R(p)=m²+Σμ sin²pμ is bounded away from zero for m>0, E(p)=arcsinh(sqrt(R(p))) is analytic in a positive complex strip, so Paley-Wiener/Bernstein gives exponentially decaying Fourier coefficients for H(x)=FT[E(p)].  _(class `A`)_
+- **chain closes:** False — The analytic-to-exponential implication is sound if the displayed d=3 dispersion is already supplied. In the restricted packet, however, the cited transfer-matrix authority derives the exact free staggered dispersion only on a 1+1d surface, and no provided authority derives the three-spatial-dimensional symbol Σμ=1^3 sin²pμ.
+- **rationale:** The runner source genuinely computes consistency checks from the assumed dispersion and numerically fits the Fourier-axis tail, but it does not derive the missing d=3 transfer-matrix dispersion from the cited authorities. The core Paley-Wiener step is a standard class-A closure over that dispersion, and the m=0 contrast is consistent with the strip closing. The chain therefore remains conditional on a retained one-hop d=3 free staggered two-step dispersion authority, and the note should also keep the spectral statement scoped to the one-particle/free-bilinear kernel rather than the full many-body Fock transfer spectrum.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`
 - **auditor confidence:** high
 
 ### `record_axiom_audit_application_map_2026-06-06`

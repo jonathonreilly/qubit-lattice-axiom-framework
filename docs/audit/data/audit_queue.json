@@ -3,7 +3,7 @@
     "critical": 278,
     "high": 285,
     "leaf": 469,
-    "medium": 424
+    "medium": 423
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -17115,33 +17115,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.459,
-      "note_path": "docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py",
-      "transitive_descendants": 21
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17290,15 +17263,15 @@
         "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
         "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.748,
       "note_path": "docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py",
-      "transitive_descendants": 2
+      "transitive_descendants": 18
     },
     {
       "audit_independence_required": "any_non_self",
@@ -43877,6 +43850,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 58,
-  "total_pending": 1456
+  "ready_count": 57,
+  "total_pending": 1455
 }

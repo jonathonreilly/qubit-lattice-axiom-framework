@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d2_truncation_error_budget_2026_06_12.py
+runner_sha256: 2e670deb657a8293e917fafa17cddfe213c2b81c1982bc64abaae704821007ec
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+Controlled-truncation datum: d=2 checkerboard convention
+finite periodic L in {12,16}; dense NumPy; E=0; free d=2 Laplacian
+cross-reference: landed range-unbounded note follow-on; no fixed-point claim
+
+L=12
+  retained sizes: step2=36 step3=18
+  dropped-tail max ||h2_keep4_8 - h2_full||_max = 2.0947570947570958e-02
+  dropped-tail support count keep4_8 = 972
+  harsh dropped-tail max ||h2_keep4 - h2_full||_max = 1.2252284752284760e-01
+  harsh dropped-tail support count keep4 = 1116
+  retained resolvent error keep4_8 at E=0 = 4.5584986499406788e-03
+  retained resolvent error keep-d2-4-only = 2.5616712420312271e-02
+  no-trunc h3 max difference = 0.0000000000000000e+00
+  no-trunc resolvent max difference = 0.0000000000000000e+00
+
+L=16
+  retained sizes: step2=64 step3=32
+  dropped-tail max ||h2_keep4_8 - h2_full||_max = 2.0764467758934570e-02
+  dropped-tail support count keep4_8 = 3520
+  harsh dropped-tail max ||h2_keep4 - h2_full||_max = 1.2249899959984002e-01
+  harsh dropped-tail support count keep4 = 3776
+  retained resolvent error keep4_8 at E=0 = 1.3546552274037664e-02
+  retained resolvent error keep-d2-4-only = 4.8954125599004479e-02
+  no-trunc h3 max difference = 0.0000000000000000e+00
+  no-trunc resolvent max difference = 0.0000000000000000e+00
+
+Checks
+  [PASS][A] measured dropped-tail regression ceiling on L=16
+       measured=2.0764467758934570e-02, labeled measured ceiling=2.1000000000000001e-02
+  [PASS][A] dropped-tail max-amplitude finite-size probe L=12 vs L=16 within factor 2
+       L12=2.0947570947570958e-02, L16=2.0764467758934570e-02
+  [PASS][A] finite-lattice wraparound probe for kept d2={4,8} shells
+       kept shells are represented by shortest torus displacements on both lattices
+  [PASS][A] dropped-tail support count grows from L=12 to L=16 for keep-d2-{4,8}
+       L12=972, L16=3520
+  [PASS][A] measured retained-site resolvent error budget on L=16
+       measured=1.3546552274037664e-02, labeled measured ceiling=1.4000000000000000e-02
+  [PASS][A] the truncation error GROWS with L (consistent with the L-growing dropped tail of the range-unbounded step-2 structure): ratio in [1, 4], both errors nonzero
+       L12=4.5584986499406788e-03, L16=1.3546552274037664e-02
+  [PASS][A] proportionality ordering: keep-d2-4-only error > keep-d2-{4,8} error > 0 on L=16
+       err_keep4=4.8954125599004479e-02, err_keep4_8=1.3546552274037664e-02
+  [PASS][A] harsh truncation drops at least as much operator tail as keep-d2-{4,8} on L=16
+       tail_keep4=1.2249899959984002e-01, tail_keep4_8=2.0764467758934570e-02
+  [PASS][A] truncating nothing reproduces exact step 3 at the operator level
+       L12=0.0000000000000000e+00, L16=0.0000000000000000e+00, tol=1.0e-12
+  [PASS][A] truncating nothing reproduces exact step-3 retained resolvent
+       L12=0.0000000000000000e+00, L16=0.0000000000000000e+00, tol=1.0e-12
+
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

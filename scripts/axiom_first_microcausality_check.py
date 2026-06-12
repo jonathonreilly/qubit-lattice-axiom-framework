@@ -24,11 +24,37 @@ from __future__ import annotations
 import math
 import os
 import sys
+from pathlib import Path
 
 import numpy as np
 
 sys.path.insert(0, os.path.dirname(__file__))
 import free_bilinear_quasilocal_lr_bridge_2026_06_10  # noqa: F401,E402
+
+
+def source_budget_guard() -> bool:
+    """Guard against the stale 2β/N_c / |m|+30 support formula."""
+    root = Path(__file__).resolve().parents[1]
+    note = root / "docs" / "AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md"
+    text = note.read_text(encoding="utf-8")
+    checks = {
+        "note file exists": note.exists(),
+        "corrected Wilson plaquette coefficient is named": "plaquette slot is bounded by `2β`, not by `2β/N_c`" in text,
+        "canonical J_max is |m| + 78": "J_max = |m| + 2 + 4 + 72 = |m| + 78" in text,
+        "branch/envelope budgets are recorded": "|m| + 78 <= |m| + 78.5 <= |m| + 80" in text,
+        "overlap weights are recorded": "W_surface = |m| + 296" in text
+        and "W_carrier = |m| + 298" in text
+        and "W_envelope = |m| + 300" in text,
+        "stale canonical |m|+30 formula removed": "`J_max = |m| + 30`" not in text
+        and "J_max = |m| + 30" not in text,
+    }
+    print("-" * 72)
+    print("TEST 0: source budget formula guard")
+    print("-" * 72)
+    for label, ok in checks.items():
+        print(f"  {label}: {'PASS' if ok else 'FAIL'}")
+    print()
+    return all(checks.values())
 
 
 def build_local_hamiltonian(
@@ -125,6 +151,8 @@ def main() -> None:
     print(f"  ||H||_op = {np.linalg.norm(H, ord=2):.4f}")
     print("  exact-log quasilocal bridge helper: free_bilinear_quasilocal_lr_bridge_2026_06_10.py")
     print()
+
+    t0_ok = source_budget_guard()
 
     # ----- Test 1: equal-time strict locality M1 -----
     print("-" * 72)
@@ -235,12 +263,13 @@ def main() -> None:
     print("=" * 72)
     print("SUMMARY")
     print("=" * 72)
+    print(f"  Test 0 (source budget formula guard):         {'PASS' if t0_ok else 'FAIL'}")
     print(f"  Test 1 (equal-time strict locality M1):       {'PASS' if t1_ok else 'FAIL'}")
     print(f"  Test 2 (Lieb-Robinson bound M2):              {'PASS' if t2_ok else 'FAIL'}")
     print(f"  Test 3 (outside-lightcone exponential decay): {'PASS' if t3_ok else 'FAIL'}")
     print(f"  Test 4 (small-t scaling t^d):                 {'PASS' if t4_ok else 'FAIL'}")
     print()
-    all_ok = t1_ok and t2_ok and t3_ok and t4_ok
+    all_ok = t0_ok and t1_ok and t2_ok and t3_ok and t4_ok
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
     print("Note: this runner verifies the lattice Lieb-Robinson bound on a")

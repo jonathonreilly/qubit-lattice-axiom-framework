@@ -1,0 +1,32 @@
+loop_slug: latest-audit-science-20260611
+branch: physics-loop/latest-audit-science-20260611
+base: origin/main
+current_goal: "Repair the latest audited conditional source blockers without applying audit verdicts."
+target_status: bounded-support
+cycle_count: 1
+active_route: "source repair and demotion packet"
+hard_residual: "Several audited conditional rows are re-auditable only after source notes/runners stop relying on stale constants, mixed physical bridges, or imported numerical brackets."
+files_touched:
+  - docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md
+  - scripts/frontier_higgs_channel_effective_ntaste_boundary.py
+  - logs/runner-cache/frontier_higgs_channel_effective_ntaste_boundary.txt
+  - docs/CL3_TASTE_GENERATION_THEOREM.md
+  - scripts/verify_cl3_sm_embedding.py
+  - logs/runner-cache/verify_cl3_sm_embedding.txt
+  - docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md
+  - scripts/frontier_yt_p1_i_s_lattice_pt_citation.py
+  - logs/runner-cache/frontier_yt_p1_i_s_lattice_pt_citation.txt
+  - .claude/science/physics-loops/latest-audit-science-20260611/
+open_imports:
+  - "Independent audit must decide whether the Higgs source-runner repair closes the prior conditional."
+  - "The CL3 theorem is narrowed to finite taste-cube representation support; physical SM-generation identification remains out of scope."
+  - "The YT P1 I_S bracket remains supplied/conditional in this older row; the full-staggered BZ quadrature lane is the separate native numerical candidate."
+no_go_routes:
+  - "Do not retag audit ledger rows or edit generated audit results from this branch."
+  - "Do not claim retained status for source-side repairs before independent audit."
+  - "Do not use the old YT citation bracket as framework-native numerical authority."
+trace_gate_classification: direct_blocker_closure
+review_findings: "pending external reviewer; local verification only"
+pr_status: pending
+next_exact_action: "Run verification, commit, push, open PR, and hand to reviewer/auditor."
+stop_condition: "Stop this block after PR creation; reviewer/auditor owns landing and any status changes."

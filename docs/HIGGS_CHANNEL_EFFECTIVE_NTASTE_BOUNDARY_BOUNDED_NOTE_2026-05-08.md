@@ -49,17 +49,17 @@ as identified with that single class gives effective
 m_H_tree^(k)  =  v · sqrt( 4 / ( u_0^2 · binomial(4, k) ) ),             (1)
 ```
 
-with the Higgs note's stated `v = 246.22 GeV` and `u_0 = 0.8776`. The
-runner computes `(m_H_tree^(k))^2` exactly as `Fraction` and reports
-the numerical square root only for display. Numerical values rounded to
-0.1 GeV:
+with the Higgs note's current declared C1 inputs `v = 246.22 GeV` and
+`u_0 = 0.877681381`. The runner computes `(m_H_tree^(k))^2` exactly as
+`Fraction` and reports the numerical square root only for display.
+Numerical values rounded to 0.1 GeV:
 
 | `k` | `N_taste^(k) = binomial(4, k)` | `m_H_tree^(k)` (GeV) |
 |---|---|---|
 | 0 | 1  | 561.1 |
-| 1 | 4  | 280.6 |
+| 1 | 4  | 280.5 |
 | 2 | 6  | 229.1 |
-| 3 | 4  | 280.6 |
+| 3 | 4  | 280.5 |
 | 4 | 1  | 561.1 |
 
 For comparison, the **uniform all-corners** assignment (the choice made
@@ -84,8 +84,8 @@ The runner repeats the channel-assignment computation with
 
 - `v = Fraction(24622, 100) = Fraction(12311, 50)` (the Higgs note's
   stated `v = 246.22 GeV`);
-- `u_0 = Fraction(8776, 10000) = Fraction(1097, 1250)` (the Higgs note's
-  stated `u_0 = 0.8776`);
+- `u_0 = Fraction(877681381, 1000000000)` (the Higgs note's current
+  declared C1 input `u_0 = 0.877681381`);
 - `binomial(4, k)` for `k ∈ {0, 1, 2, 3, 4}` evaluated as exact integers.
 
 For each `k` the runner computes

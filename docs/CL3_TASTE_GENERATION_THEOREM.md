@@ -1,9 +1,14 @@
-# Cl(3) Taste-Generation Theorem: Z³ Lattice Doubling → 3 Tastes with Generation Structure
+# Cl(3) Taste-Cube Generation-Candidate Representation Theorem
 
 **Date:** 2026-04-19 (originally); 2026-05-04 (audited_renaming
 scope-narrow); 2026-06-11 (science-fix: current axiom-surface premise
 edge; T₃(e₃) sign repair)
-**Status:** representation-theory theorem on the staggered-Dirac taste cube. The hw=1 orbit gives **three Z₃-related generation-candidate states** with the listed Y/T₃ spectra; identifying these candidates with **physical SM generations** is a separate retained-bridge requirement, not part of this theorem's load-bearing scope.
+**Status:** representation-theory theorem on the admitted abstract
+`C^8 = (C^2)^{\otimes 3}` taste cube. The hw=1 orbit gives **three
+Z₃-related generation-candidate labels** with the listed Y/T₃ spectra;
+identifying these candidates with a framework staggered-Dirac carrier or
+with **physical SM generations** is outside this theorem's load-bearing
+scope.
 **Claim type:** bounded_theorem
 **Claim boundary authority:** this note
 **Script:** `scripts/verify_cl3_sm_embedding.py` (section G);
@@ -28,89 +33,70 @@ adopts the narrower "generation-candidate" framing throughout.
 
 ## Audit-driven science-fix (2026-06-11)
 
-The 2026-06-11 conditional audit named two source-side repairs (the
-third item, auditing the staggered-Dirac carrier authority itself, is
-the audit lane's own queue and is not actionable from this note):
+The 2026-06-11 conditional audit found that the finite S3 character
+computation and the restricted hw=1 Y/T3 spectra close, while the source
+still mixed that closed algebra with an unaudited carrier/generation
+reading. This repair keeps only the closed representation-theory surface:
 
-1. **Superseded axiom citation replaced.** The cited axiom-set
-   authority `MINIMAL_AXIOMS_2026-04-11.md` is superseded; the current
-   registered premise node is
-   [`MINIMAL_AXIOMS_2026-06-05.md`](./MINIMAL_AXIOMS_2026-06-05.md)
-   (Lattice supplies the `Z³` substrate; Quantum supplies the
-   one-qubit-per-site local algebra whose triple tensor product is the
-   `C^8 = (ℂ²)^{⊗3}` taste-cube carrier admitted here). All axiom
-   citations below now point to the current surface.
-2. **T₃(e₃) sign drift corrected.** Section D previously wrote
+1. **Current retained dependencies.** The one-hop parents now used for this
+   row are the current retained abstract S3 theorem and the retained-bounded
+   three-generation local-structure row:
+   [`S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`](./S3_TASTE_CUBE_DECOMPOSITION_NOTE.md)
+   and
+   [`THREE_GENERATION_STRUCTURE_NOTE.md`](./THREE_GENERATION_STRUCTURE_NOTE.md).
+   The theorem begins from the admitted abstract `C^8` carrier and does not
+   cite a carrier-realization row as a load-bearing dependency.
+2. **No carrier or physical-generation closure.** Any separate row that
+   wants to identify this abstract `C^8` with a framework staggered-Dirac
+   BZ-corner carrier, or identify the three labels with physical SM
+   generations, must supply that bridge independently. This note proves only
+   the finite S3/Z3 representation and restricted-spectrum facts.
+3. **T₃(e₃) sign drift corrected.** Section D previously wrote
    `T₃ = +1/2` for `e₃ = |0,0,1⟩`. With `T₃` read on the `b₃` fiber
    (`σ₃|0⟩ = +|0⟩`, `σ₃|1⟩ = −|1⟩`), the state `e₃` has `b₃ = 1` and
    hence `T₃ = −1/2`, as both runners and every spectrum listing in
    this note (`{−1/2, +1/2, +1/2}`) already state. The per-state
    prose now matches the verified spectrum; no runner value changes.
 
-3. **Registered Tier-A routing added (2026-06-11, same revision).**
-   The carrier reading is routed into the registered Tier-A target
-   (section below), preserving the audit lane's abstract-`C^8`
-   narrowing option.
+## Audit-driven dependency-edge rigorization (2026-05-10; refreshed 2026-06-11)
 
-## Audit-driven dependency-edge rigorization (2026-05-10)
-
-The 2026-05-05 audit verdict on this row was `audited_conditional`
-(load-bearing 16.267) with rationale: "The internal algebraic checks close
-for the scoped representation statement once the taste-cube carrier and Y/T3
-operators are admitted. The broader generation-candidate framing remains
-conditional on the open staggered-Dirac/taste-carrier realization and does
-not close a physical-generation identification." The named repair target
-was: "dependency_not_retained: audit or replace the unaudited/open-gated
-taste-cube and three-generation authority inputs with retained-grade
-dependencies, then re-audit only the narrowed representation-theory claim."
+The earlier dependency blocker was that this row cited non-retained
+taste-cube and three-generation authority inputs while also using
+generation-candidate language. The current source separates those concerns:
+the retained S3 parent supplies the abstract representation theorem, the
+retained-bounded three-generation parent supplies only its narrowed local
+triplet support, and carrier/physical-generation identification is excluded
+from the load-bearing statement.
 
 This rigorize pass makes the one-hop dependency status explicit so the audit
 graph can route directly to current ledger verdicts. It does not promote any
-sibling claim or change this row's `audited_conditional` status.
+sibling claim or apply an audit status.
 
 **Cited authorities (one-hop deps):**
 
 - [`S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`](./S3_TASTE_CUBE_DECOMPOSITION_NOTE.md)
-  — `claim_type: bounded_theorem`, current ledger
-  `effective_status: unaudited` (audit-prep refresh 2026-05-10 already
-  narrowed its load-bearing scope to the abstract representation-theoretic
-  theorem `C^8 = 4 A_1 + 2 E` and explicitly defers the framework-carrier
-  identification to the staggered-Dirac open gate). This note's sections
-  A-C (S3 character decomposition, hw=1 = S3 irrep `A_1 + E`, Z3 orbit
-  `e1 -> e2 -> e3 -> e1`)
-  are the same scoped class-A representation theorem as that note's safe
-  statement; this row inherits its bounded scope.
+  — current ledger `effective_status: retained` for the abstract finite
+  theorem: under tensor-position permutations of S3 on
+  `C^8 = (C^2)^{\otimes 3}`, the class character is `(8,4,2)` and
+  `C^8 ~= 4 A_1 + 2 E` with no `A_2` summand. This note's sections A-C
+  reuse that retained abstract theorem directly.
 - [`THREE_GENERATION_STRUCTURE_NOTE.md`](./THREE_GENERATION_STRUCTURE_NOTE.md)
-  — `claim_type: bounded_theorem`, current ledger
-  `effective_status: unaudited` (audit-prep refresh 2026-05-07 narrowed its
-  load-bearing scope to the local algebraic/spectral content `8 = 1+1+3+3`
-  with `M_3(C)` no-proper-quotient theorem, and treats the staggered-Dirac
-  realization parent as admitted-context input). This note's section D
-  (Y/T3 spectra `{+1/3,+1/3,-1}` and `{-1/2,+1/2,+1/2}` on the hw=1 sector)
-  inherits the in-scope `M_3(C)` structure of that note's items (1)–(4).
-- [`MINIMAL_AXIOMS_2026-06-05.md`](./MINIMAL_AXIOMS_2026-06-05.md) — `meta`,
-  current axiom surface (registered premise node; replaces the
-  superseded 2026-04-11 memo per the 2026-06-11 science-fix above).
-  Lattice provides the Z³ substrate and Quantum the one-qubit-per-site
-  local algebra; staggered-Dirac realization is currently flagged as an open gate
-  rather than an axiom (per
-  [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](./STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md),
-  which is the canonical open gate for the framework-carrier reading of
-  `C^8 = (C^2)^{⊗3}` as the staggered-Dirac BZ-corner taste cube).
+  — current ledger `effective_status: retained_bounded` for the narrowed
+  local spectral/orbit structure on its admitted surface, with physical
+  species and SM-generation identification out of scope. This note uses
+  only its retained-bounded local `hw=1` triplet/no-quotient support, not
+  any physical-generation conclusion.
+- [`MINIMAL_AXIOMS_2026-06-05.md`](./MINIMAL_AXIOMS_2026-06-05.md) — current
+  axiom-surface metadata for the finite tensor local algebra context. This
+  theorem does not add an axiom.
 
-**What the cite-chain does NOT close.** The two parent notes
-(`s3_taste_cube_decomposition_note`, `three_generation_structure_note`) are
-both currently `unaudited` rather than `retained_bounded`. The audit
-verdict's "dependency_not_retained" criterion is therefore not directly
-satisfied by this rigorize pass; the chain remains conditional on the parent
-audits being upgraded. The scoped representation-theory facts of items
-(1)–(4) of this note's statement are nonetheless internally closed via the
-finite-group character computation, and the runner
-`scripts/frontier_s3_action_taste_cube_decomposition.py` (PASS=57) verifies
-them numerically. Item (5) (the "generation-candidate framing")
-explicitly defers physical-generation identification to a separate retained
-bridge as already documented in the Statement and `Physical-generation
-identification` sections.
+**What the cite-chain does NOT close.** The source now satisfies the earlier
+"dependency_not_retained" repair target for the scoped representation claim:
+the direct S3 parent is retained and the local triplet parent is
+retained_bounded. The chain still does **not** close a framework-carrier
+derivation or physical SM-generation identification, because those statements
+are deliberately outside the load-bearing theorem. The word
+"generation-candidate" below is only a three-state-orbit label.
 
 **Admitted-context literature input.** Standard finite-group character
 theory for S₃ (permutation-character formula `chi(sigma) = |Fix(sigma)|`,
@@ -119,9 +105,10 @@ universal mathematics input; not framework-derived.
 
 ## Statement (scope-narrowed)
 
-**Theorem (representation-theory, scope-narrowed).** The staggered-fermion
-doubling on Z³ produces a taste space `C^8 = (ℂ²)^{⊗3}` on which the
-following are exact representation-theory facts:
+**Theorem (representation-theory, scope-narrowed).** Let
+`C^8 = (C^2)^{\otimes 3}` be the admitted abstract taste-cube carrier with
+the tensor-position S3 action and the Y/T3 operators defined in the runner.
+Then the following are exact representation-theory facts:
 
 1. The axis-permutation group S₃ acts by tensor-position permutation, giving the
    decomposition `C^8 = 4A₁ + 0A₂ + 2E` (no A₂ component).
@@ -137,11 +124,12 @@ following are exact representation-theory facts:
    {−1/2, +1/2, +1/2} within the 3D subspace. The Z₃ cyclic symmetry relates all
    three states.
 
-5. **Generation-candidate framing.** The combined hw=1 matter content — two
-   quark-like (Y=+1/3) and one lepton-like (Y=−1) — is **consistent with**
-   one SM left-handed generation, and the three-fold Z₃ degeneracy provides
-   **3 such generation-candidate states**. This statement is at the level
-   of representation-theory consistency, not physical identification.
+5. **Generation-candidate terminology.** The combined hw=1 content — two
+   `Y=+1/3` eigenvectors and one `Y=-1` eigenvector — is compatible with
+   the charge pattern usually sought for one left-handed generation block,
+   so this note calls the three Z3-related labels "generation candidates."
+   This is terminology for the abstract orbit only; it is not a physical
+   generation-identification theorem.
 
 ## Physical-generation identification (deferred to a separate bridge)
 
@@ -207,7 +195,7 @@ Multiplicities via inner product with irrep characters:
 
 Result: **C^8 = 4A₁ + 2E** — no A₂ appears.
 
-### C. hw=1 Triplet = Generation Sector
+### C. hw=1 Triplet = Generation-Candidate Orbit
 
 The hw=1 sector `{e₁, e₂, e₃}` has characters:
 - `χ(e) = 3`, `χ(2-cycle) = 1`, `χ(3-cycle) = 0`
@@ -229,28 +217,23 @@ Y and T₃ are defined. Individual hw=1 states are NOT Y eigenstates:
 The Y eigenvalue spectrum of the full 3D hw=1 subspace is {+1/3, +1/3, −1}.
 The T₃ spectrum is {−1/2, +1/2, +1/2}.
 
-The Z₃ symmetry establishes these three states as a degenerate generation-structure
-orbit: each copy of the lattice (choosing a different axis as the "generation axis")
-gives the same {+1/3, +1/3, −1} matter content, so three Z₃-orbit copies yield
-three families with the same quantum number structure.
+The Z3 symmetry establishes only a three-state abstract orbit carrying the
+restricted spectra above. It does not establish three physical families,
+mass ordering, or a framework carrier.
 
 ---
 
-## Physical Interpretation
+## Interpretation Boundary
 
-The three taste doublers from Z³ staggered fermions are not spurious artifacts:
-they are the algebraic origin of three generation-analogous structures, each with
-Y spectrum {+1/3, +1/3, −1} and T₃ spectrum {−1/2, +1/2, +1/2}, related by the
-Z₃ cyclic symmetry of the cubic lattice.
+The closed content is the abstract chain
 
-The S₃ → Z₃ → 3 generations chain is:
-1. Z³ spatial lattice has cubic symmetry S₃ (axis permutations)
-2. Staggered doubling maps each spatial axis to a taste direction
-3. Z₃ subgroup cyclically permutes the three taste-axis states
-4. Each copy has Y spectrum {+1/3, +1/3, −1} (quark-like + lepton-like) → 3 generation-analogous structures
+```text
+S3 tensor-position action on C^8 -> hw=1 A1+E sector -> Z3 three-state orbit
+```
 
-This provides the algebraic basis for "taste = generation" without requiring
-additional matter input.
+together with the restricted Y/T3 spectra. This is useful generation-lane
+support, but it is not a "taste = physical generation" theorem and it does
+not derive a staggered-Dirac carrier from the framework.
 
 ---
 
@@ -276,68 +259,21 @@ revision).
 
 ## What This Theorem Sharpens
 
-- **Taste = generation blocker**: Z₃ cyclic symmetry of Z³ forces exactly 3
-  generation candidates; the hw=1 sector has Y spectrum {+1/3, +1/3, −1} and
-  T₃ spectrum {−1/2, +1/2, +1/2}, consistent with one SM left-handed generation
-- Provides algebraic support for the three-generation matter program on the
-  current axiom surface
-  ([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md): Z³
-  substrate plus one-qubit-per-site local algebra); the physical
-  identification remains deferred as stated above
-
-## Registered Tier-A routing (2026-06-11; audit-requested repair)
-
-The 2026-06-11 conditional audit's recorded repair target was:
-"dependency_not_retained: retain or replace
-`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` for the
-taste-carrier dependency, or narrow this row to a purely abstract `C^8`
-representation theorem." This section takes the registered routing form
-of that repair: the carrier dependency is routed explicitly into the
-registered Tier-A derivation target, so the citation graph carries a
-registered admission rather than an unregistered conditional blocker.
-
-1. **The algebra is standalone.** The load-bearing computations of this
-   note close as pure finite representation theory with no carrier
-   input: the S3 character decomposition `C^8 = 4A1 + 0A2 + 2E`, the
-   `hw=1` sector as the `A1 + E` permutation representation, the Z3
-   orbit `e1 -> e2 -> e3 -> e1`, and the restricted `Y/T3` spectra
-   `{+1/3, +1/3, -1}` and `{-1/2, +1/2, +1/2}`. The existing runners
-   verify these facts without consuming any fermion content.
-2. **What the carrier admission carries.** Only the identification of
-   `C^8 = (C^2)^{⊗3}` as the staggered-Dirac BZ-corner taste cube (the
-   framework-carrier reading) consumes the realization. The
-   physical-generation identification is separately deferred; the
-   existing "Physical-generation identification" section governs that
-   bridge unchanged.
-3. **The admission is a registered Tier-A target.** The canonical
-   parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the
-   registered Tier-A derivation target `AC_phi_lambda` (display
-   `AC_φλ`) in `docs/audit/data/tier_a_admissions.json`. This note
-   routes the carrier reading **into** that registered target; it does
-   **not** close the gate. Under the published chain rule
-   `docs/audit/scripts/compute_effective_status.py`, a clean
-   `bounded_theorem` row whose only non-retained, non-axiom one-hop
-   dependency is a registered Tier-A derivation target is a candidate
-   for the Tier-A-bounded class rather than an unregistered conditional
-   blocker.
-4. **No status assertion.** This section makes the narrow re-audit case
-   only. The audit lane is the sole authority on whether to honor it;
-   this note asserts no `effective_status` and predicts no audit
-   outcome. The audit's alternative narrowing route ("narrow to a purely
-   abstract `C^8` representation theorem") remains available to the
-   audit lane; this routing preserves the carrier-named reading while
-   registering the admission.
+- Exact abstract support for a three-state Z3 orbit in the hw=1 sector.
+- Exact restricted spectra `{+1/3,+1/3,-1}` and `{-1/2,+1/2,+1/2}` on that
+  sector.
+- A retained-dependency route for re-auditing this narrowed support claim
+  without importing the open carrier or physical-generation bridge.
 
 ## What Remains Bounded
 
-- Generation mass splitting (CKM, Yukawa hierarchy) is not derived here
-- The identification of hw=1 tastes with specific SM generations requires the
-  graph-first axis-selection procedure
-- This theorem establishes the count and degeneracy; the dynamics distinguishing
-  generations are a separate derivation
+- framework-native derivation of a staggered-Dirac carrier;
+- physical identification of the three labels with SM generations;
+- generation mass splitting, CKM, Yukawa hierarchy, and flavor dynamics;
+- any claim that the Z3 orbit fixes physical ordering.
 
 ## Reading Rule
 
-This note is the claim boundary for this reviewed taste/generation support result.
-It sharpens the existing three-generation matter package on current `main`, but
-generation mass structure and full flavor phenomenology remain separate.
+This note is the claim boundary for the narrowed representation-theory support
+result. It does not retag audit status and does not apply physical-generation
+authority to downstream rows.

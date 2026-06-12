@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05",
         "koide_readout_lane_demarcation_note_2026-05-30",
         "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
         "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+        "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "786d2a68e2e6efa301b9e959bf0c17b75dc3404273edde367fbaea36bc5a8db0",
+      "note_hash": "056e3de5b32f51b8a6b1a91e1a36c5f2ae45962e3f6019db15fb8c97159d7543",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

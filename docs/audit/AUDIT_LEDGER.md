@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 854 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1396 |
+| unaudited | 1395 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1299 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1713 |
+| `unaudited` | 1712 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 505 |
 | `high` | 506 |
-| `medium` | 862 |
-| `leaf` | 1317 |
+| `medium` | 863 |
+| `leaf` | 1316 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1454,6 +1454,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_minimal_scale_free_selector_note_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10299,6 +10300,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For each listed alpha_i = q_i*pi with q_i a nonzero rational, any rational c satisfying c*alpha_i = 2/9 would make pi = 2/(9*c*q_i) rational, so no such rational c exists; c=0 gives 0 != 2/9.  _(class `A`)_
 - **chain closes:** True — Within the bounded six-value scope, the proof needs only q_i != 0, rational arithmetic, and pi irrational/transcendental: a rational multiple of pi cannot equal the nonzero rational 2/9. The retained three-generation dependency supplies the d=3 positional value used in the listed coefficients, and the retained no-go is only positional for the bridge residual rather than a forcing input.
 - **rationale:** The audited result is a class-A separation theorem over six stated rational multiples of pi, and the independent calculation closes by the elementary fact Q*pi intersects Q only at 0. The cached runner computes the exact rational/pi forms and no-rational-solution checks with PASS=146, FAIL=0 under SHA 73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275. No-go discipline is satisfied only because the verdict is bounded: it does not ratify an exhaustive native-unit list, a radian-bridge closure, or the broader Koide/Brannen programme. A non-load-bearing admitted-context sentence about arbitrary polynomials in pi is broader than needed; the clean audit relies only on the correct linear q*pi case.
+- **auditor confidence:** high
+
+### `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05`
+
+- **Note:** [`KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md`](../../docs/KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded current-A_min claim: the Dirac block mass has singular-value readout, the allowed C3-circulant L-R coupling is generation-Berry-flat, and the within-R3 Gamma_chi-anticommuting curving route is obstructed; not a universal no-go or a closure of the open staggered-corner realization.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-10b47417d1-koide_dirac_mass_forces_r_on`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The physical Dirac mass is read by sign-blind singular values, and the allowed L-R coupling M(b)⊗σ+ has b-independent C3 Fourier generation eigenvectors, so the generation bundle is Berry-flat and cannot supply the r=1/2 signed-readout route.  _(class `A`)_
+- **chain closes:** False — The determinant, D^2, Fourier-eigenvector flatness, and signed-vs-absolute Koide identities are algebraic checks, but they do not supply the missing branch-selection theorem from Berry-flat/sign-blind Dirac readout to forced r=1. The cited Berry authority explicitly leaves the Berry/chirality-to-r weighting rule open and says zero Berry may not be used as a derivation of the Q=1/r=1 branch.
+- **rationale:** The runner performs real symbolic/numeric algebra checks, but it verifies flatness and sign-blindness rather than the claimed selection rule r=1. The packet's own Berry authority is retained only as a bounded finite-matrix support result and explicitly does not derive a rule assigning zero Berry to r=1 or nonzero Berry to r=1/2. The staggered-Dirac gate dependency is unaudited, and an independent sign check finds det([[0,M],[M†,0]]) = -|det M|^2 for three generations, not +|det M|^2 as written, although the second-order modulus point survives.
+- **open / conditional deps cited:**
+  - `KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `koide_dweh_cyclic_compression_note_2026-04-18`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 850 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1464 |
+| unaudited | 1463 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1297 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1781 |
+| `unaudited` | 1780 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 513 |
-| `high` | 509 |
-| `medium` | 870 |
+| `high` | 510 |
+| `medium` | 869 |
 | `leaf` | 1349 |
 
 - **Retained pending chain closure:** 18
@@ -101,14 +101,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1565 | 132.61 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1037 | 64.02 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1036 | 64.02 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1396 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
-| 5 | `key_terminology` | meta | critical | 1282 | 50.33 | `unaudited` | meta |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1073 | 49.57 | `unaudited` | meta |
+| 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
 | 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 928 | 44.36 | `unaudited` | unaudited |
-| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 928 | 43.36 | `unaudited` | unaudited |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
+| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
 | 11 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 40.50 | `audited_clean` | **retained_bounded** |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
@@ -116,9 +116,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1272 | 38.81 | `audited_clean` | **retained_bounded** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 738 | 38.03 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1363 | 36.91 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1362 | 36.91 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1139 | 36.16 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 930 | 34.86 | `unaudited` | unaudited |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 929 | 34.86 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 728 | 33.01 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 725 | 31.50 | `unaudited` | unaudited |
@@ -1467,6 +1467,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -20276,6 +20277,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For n_mu in {0,1}, 1 - cos(n_mu*pi) = 1 - (-1)^{n_mu} = 2*n_mu, so W(n) = r*sum_mu 2*n_mu = 2*r*hw(n).  _(class `A`)_
 - **chain closes:** True — The audited statement is finite combinatorics plus exact integer arithmetic: {0,1}^4 has 16 corners, Hamming-weight classes have binomial(4,k) multiplicities, and the per-coordinate Wilson contribution is exactly 0 or 2. The direct dependency is retained-bounded for the Z^3 sister spectrum and no-quotient scope; this audit uses it only as contextual bounded authority, not as support for any physical species, Higgs, g_bare, or Wilson-coefficient claim.
 - **rationale:** The source note proves only the bounded staircase identity and explicitly excludes the Wilson coefficient r, staggered-Dirac realization gate, g_bare, Higgs gap chain, continuum mass, and physical matter/species claims. Independent enumeration confirms the 16 corners, the binomial multiplicities (1,4,6,4,1), exact W/r values (0,2,4,6,8), and class uniformity. The no-go/wall discipline check does not expose an inflated negative or hidden physical closure: the named walls are boundaries of scope, not asserted solved facts.
+- **auditor confidence:** high
+
+### `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08`
+
+- **Note:** [`WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md`](../../docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the closed-form V_taste^W(m), its first two m-derivatives at m=0, the r=0 reduction, and the leading r^2 curvature coefficient within the supplied one-hop packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-232401-b448653ea5-wilson_corrected_v_taste_tre`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note assumes that each Hamming-weight class k has Wilson-corrected eigenvalues with real part 2rk + m and imaginary part ±2u_0, so |λ + mI|^2 = (2rk + m)^2 + 4u_0^2 and the classes can be summed with binomial(4,k).  _(class `B`)_
+- **chain closes:** False — The calculus, binomial moments, signs, factors, and r->0/leading-r limits check out once the stated Wilson-corrected eigenvalue distribution is assumed. The restricted packet does not derive or verify that the Wilson Hamming-corner shifts and the APBC staggered ±2iu_0 spectrum are simultaneous eigenvalues of the combined canonical operator.
+- **rationale:** The runner is stdlib and genuinely checks coefficient algebra, derivative formulas, binomial moments, and prose boundaries; it does not instantiate the Wilson-corrected staggered operator or compute its spectrum. The cited authorities separately retain the Wilson Hamming staircase and the r=0 staggered mean-field determinant, but the source note imports the combined per-corner eigenvalue as a premise. Because that combined-spectrum/eigenbasis bridge is the step that makes formula (1) true, the theorem is conditional rather than clean.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `wilson_mu2_distance_sweep_note_2026-04-11`

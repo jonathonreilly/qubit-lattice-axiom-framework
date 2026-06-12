@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_carrier_locus_decomposition_note_2026-06-01"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_kahler_dirac_silent_on_measure_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_reality_type_permitted_not_forced_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07",
         "koide_carrier_locus_decomposition_note_2026-06-01",
         "koide_dkd_berry_spectator_note_2026-05-31",
         "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
         "koide_import_two_bit_decomposition_note_2026-05-30",
-        "koide_kahler_dirac_silent_on_measure_note_2026-05-30"
+        "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+        "koide_reality_type_permitted_not_forced_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "778d9768fc456049ad0954ca2d888a92b107f52710dae7131318745db8dd2032",
+      "note_hash": "3ada6921e5f321819ad80d169fa3ec3f6aea7c19e773af4956e6cfd8ae2e1822",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

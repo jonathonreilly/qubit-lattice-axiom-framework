@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 861 |
+| **retained_bounded** | 862 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 39 |
-| unaudited | 1372 |
+| unaudited | 1371 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1315 |
+| `audited_clean` | 1316 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1689 |
+| `unaudited` | 1688 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 505 |
 | `high` | 506 |
-| `medium` | 869 |
-| `leaf` | 1310 |
+| `medium` | 868 |
+| `leaf` | 1311 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -713,6 +713,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_carrier_locus_decomposition_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10320,6 +10321,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the scalar-rephased generator, `(exp(i alpha) C)^3 = exp(3 i alpha) I`, so preserving `C^3 = I` requires `exp(3 i alpha) = 1`.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from the stated `3 x 3` cyclic-shift algebra and the retained order-three generation surface by direct matrix identities. The negative scope is properly narrow: it closes only the scalar generator-rephasing route and explicitly leaves non-circulant or tensor-factor routes open.
 - **rationale:** The load-bearing step is a genuine algebraic identity, not a definition, numerical fit, or external comparator check. The displayed rotation formulas for `B1,B2`, the cube-root quantization, the commuting-centralizer claim, and the diagonal phase proportionality criterion all check under the note's conventions. The runner source performs the relevant finite-dimensional matrix computations rather than merely printing constants, and its extra Koide-context checks are not needed for the audited obstruction. The no-go discipline gate is satisfied at the narrow route level because the note does not claim a global absence of continuous doublet actions.
+- **auditor confidence:** high
+
+### `koide_carrier_locus_decomposition_note_2026-06-01`
+
+- **Note:** [`KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md`](../../docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded source decomposition only: correction of the staggered/hw=1/isotropy mislabels, localization of the L1 statistics and L3 range choices into the matter Dirac operator M, verification that L2, L3a, and L4 are native given that frame, and identification of the residual Z2 Hodge-orientation bit. No derivation or approval of M, no Koide value, and no records-pointer bridge are audited as closed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-022908-71fb26ff46-koide_carrier_locus_decompos`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The remaining non-native content is localized to the scoped matter operator M, specified as the first-order cross-site-anticommuting fermionic chiral staggered operator, while the hw=1 locus labels follow from S3-invariant Hamming-shell/parity facts and leave only a Z2 Hodge-orientation bit.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the algebraic checks close from retained-grade inputs: the corner spectra, S3 shell labels, qubit-ladder statistics distinction, parity/range relation, and Pfaffian orientation sign are finite algebraic facts. The fermionic first-order matter-frame selection is not closed, but the source note explicitly treats it as the localized import rather than as a derived conclusion.
+- **rationale:** The displayed quantitative identities independently check: staggered zeros occur at all eight corners, the Wilson term has only the hw=0 zero, S3 shell sizes are 1+3+3+1, the pair (epsilon parity, orbit size) uniquely labels hw=1, nearest-neighbor hops flip epsilon parity, and Pf([[0,beta],[-beta,0]])=beta with orientation flip changing the sign. The runner source mostly computes these finite facts directly; one runner line about gauge_wilson_isotropy being the wrong wall is narrative, but that wall-scope distinction is supported by the cited retained no-go’s plaquette-coefficient scope and is not a hidden numerical derivation. The clean verdict is only for the bounded decomposition, not for deriving the matter operator M or selecting the residual Hodge sign.
 - **auditor confidence:** high
 
 ### `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02`

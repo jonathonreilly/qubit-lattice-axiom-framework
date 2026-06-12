@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 854 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1397 |
+| unaudited | 1396 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1299 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1714 |
+| `unaudited` | 1713 |
 
 | claim_type | count |
 |---|---:|
@@ -1479,6 +1479,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -20660,6 +20661,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given lambda^2 = alpha_s/n_pair and A^2 = n_pair/n_color, substitution forces A^2 lambda^2 = alpha_s/n_color, |V_cb|^2 = alpha_s^2/(n_pair n_color), and |V_ub|_0^2 = alpha_s^3(rho^2+eta^2)/(n_pair^2 n_color).  _(class `A`)_
 - **chain closes:** True — Inside the stated scope, every asserted identity follows by direct symbolic substitution from the hypotheses. The runner checks only class-A algebra and reports PASS=22, FAIL=0, matching the note's deliberately narrow claim boundary.
 - **rationale:** The scoped theorem is not claiming the input identities, a physical observable bridge, or numerical agreement; it only claims algebraic consequences conditional on explicit hypotheses. Those consequences close exactly by substitution, including the n_pair cancellation and the count-substituted forms. No hidden dependency is needed for this narrow claim because the upstream CKM/CP claims are excluded rather than consumed as authority.
+- **auditor confidence:** high
+
+### `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`
+
+- **Note:** [`work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Diagnostic finite-box work-history numerics for the scalar Z^3 graph-Laplacian Coulomb hydrogen runner and the declared helium Hartree/Jastrow companion readouts, with no continuum-limit, absolute-eV, exact-helium, or retained derivation-chain authority audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-011416-864ce5802b-work_history.atomic.hydrogen`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's load-bearing step is that the companion runners instantiate the finite-box scalar graph-Laplacian Coulomb Hamiltonian and same-kernel helium ansatz, then cached stdout pins the quoted hydrogen ratios, helium Hartree row, and one-parameter Jastrow/VMC improvement.  _(class `C`)_
+- **chain closes:** False — The visible hydrogen source genuinely builds the finite-box operator and computes eigenvalues rather than hard-coding the quoted ratios. The helium Hartree and Jastrow portions do not close in this restricted packet because only snippets with ellipses and stdout tails are provided, so stdout alone cannot verify that those quoted readouts were computed from the stated operators.
+- **rationale:** The hydrogen numerical readouts are supported by visible source code plus cached output, and the scalar graph-Laplacian/Coulomb operator route is bounded through the lattice-Green and dependency-repair notes. However, the full helium Hartree and Jastrow runner sources are not present, and the prompt explicitly forbids treating stdout alone as authoritative for class C. The packet also contains stale or superseded kinetic/axiom rhetoric, especially the 2026-04-11 axiom citation and broad-gravity kinetic wording, though the narrowed repair note largely walls that off from the audited scope.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-04-11.md`
+  - `scripts/frontier_atomic_helium_hartree_companion.py`
+  - `scripts/frontier_atomic_helium_jastrow_companion.py`
 - **auditor confidence:** high
 
 ### `work_history.ckm.cabibbo_bound_note`

@@ -3,7 +3,7 @@
     "critical": 272,
     "high": 285,
     "leaf": 428,
-    "medium": 414
+    "medium": 413
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16887,35 +16887,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "broad_gravity_derivation_note",
-        "gravity_clean_derivation_note",
-        "minimal_axioms_2026-04-11",
-        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.2,
-      "note_path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_atomic_hydrogen_lattice_companion.py",
-      "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17041,15 +17012,15 @@
         "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
         "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
+      "load_bearing_score": 6.322,
       "note_path": "docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py",
-      "transitive_descendants": 3
+      "transitive_descendants": 19
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42257,6 +42228,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 34,
-  "total_pending": 1399
+  "ready_count": 33,
+  "total_pending": 1398
 }

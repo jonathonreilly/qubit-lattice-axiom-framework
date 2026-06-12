@@ -3,7 +3,8 @@
 **Date:** 2026-06-10 (split from
 `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
 so the strong-CP mass-orientation route stands on the theta surface alone,
-with no dependency on the `AC_phi_lambda` staggered gate)
+with no dependency on the `AC_phi_lambda` staggered gate); 2026-06-12:
+source-side determinant-readout bridge wired for independent re-audit.
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
@@ -22,8 +23,11 @@ This note proves one bounded fact:
 
 It does not discharge the strong-CP mass-orientation premise by itself,
 derive the strong-CP action-form premise, or change
-`docs/audit/data/tier_a_admissions.json`. Those moves require later
-registry/audit handling and the missing bridge named below.
+`docs/audit/data/tier_a_admissions.json`. The determinant-readout bridge for
+the mass-determinant channel is now supplied in
+`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`;
+audit/review still own whether that source-side bridge closes the row, and
+the gauge/action theta residual remains separate.
 
 ## Determinant Readout Lemma
 
@@ -55,24 +59,31 @@ not phase erasure. For example `cos(arg z)` is K-invariant and still depends
 on the phase. The phase-erasure conclusion applies only inside the supplied
 multiplicative determinant-character class.
 
-## Named Open: The Determinant-Readout Bridge
+## Determinant-Readout Bridge Wiring
 
 This lemma is a candidate route for the mass-orientation part of the
-strong-CP surface, not a completed discharge. To discharge that premise, a
-later retained bridge must show that the physical `arg det(M_u M_d)`
-contribution used by
-[`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) is exhausted
-by this determinant-class registrable readout, and that no phase-sensitive
-non-multiplicative or action-level datum remains relevant to that premise.
-Until that bridge exists, the positive-real mass orientation remains an
+strong-CP surface, not a completed registry discharge. The source-side bridge
+now supplied in
+[`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+proves the determinant-channel interface: under independent-block determinant
+multiplication and K/CPT orbit registration, the physical mass determinant
+readout has no registered phase character, and K-even nonmultiplicative phase
+probes such as `cos(arg det)` are outside the determinant-channel block law.
+
+That bridge is deliberately narrow. It does not set `theta_gauge = 0`, does
+not derive the real-positive Wilson action surface, does not eliminate
+multi-plaquette or large-winding gauge data, and does not prove that arbitrary
+action-level observables factor through the mass determinant. Until audit
+accepts the bridge for this row, the positive-real mass orientation remains an
 explicit condition of the strong-CP selected surface.
 
 ## Registry Consequence
 
-The only supported consequence is a candidate route for future Tier-A
-registry review: the determinant lemma may help remove the positive-real
-mass-orientation condition of the strong-CP selected surface only after the
-determinant-readout bridge above is retained.
+The only supported consequence is a candidate route for Tier-A registry
+review: the determinant lemma may help remove the positive-real
+mass-orientation condition of the strong-CP selected surface if independent
+review/audit accepts the determinant-readout bridge above for the mass
+determinant channel.
 
 No new axiom, primitive, admission, normalization, probability rule,
 comparator, or audit verdict is introduced here.
@@ -81,6 +92,9 @@ comparator, or audit verdict is introduced here.
 
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) for the
   narrow Record axiom boundary.
+- [`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+  for the source-side determinant-channel bridge from block multiplicativity
+  and K/CPT orbit registration to phase-character erasure.
 - [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) for the
   selected-surface strong-CP premise whose mass-orientation part is the
   candidate target here.

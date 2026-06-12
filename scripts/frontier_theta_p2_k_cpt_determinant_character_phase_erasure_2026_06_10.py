@@ -18,6 +18,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
 THETA_NOTE = DOCS / "STRONG_CP_THETA_ZERO_NOTE.md"
 AXIOM_NOTE = DOCS / "MINIMAL_AXIOMS_2026-06-05.md"
+BRIDGE_NOTE = DOCS / "STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md"
 
 PASS = 0
 FAIL = 0
@@ -49,12 +50,14 @@ def main() -> int:
     theta_text = THETA_NOTE.read_text(encoding="utf-8")
     axiom_text = AXIOM_NOTE.read_text(encoding="utf-8")
     axiom_flat = flat(axiom_text)
+    bridge_text = BRIDGE_NOTE.read_text(encoding="utf-8")
+    bridge_flat = flat(bridge_text)
 
     # Source-boundary checks: candidate route only, no discharge, no registry edit.
     check(
         "source does not claim a completed discharge or Tier-A registry change",
         "does not edit the audit-lane-owned Tier-A registry" in note_flat
-        and "not a completed discharge" in note_flat
+        and "not a completed registry discharge" in note_flat
         and "does not discharge the strong-CP mass-orientation premise by itself"
         in note_flat,
     )
@@ -64,10 +67,18 @@ def main() -> int:
         and "No new axiom, primitive, admission" in note_text,
     )
     check(
-        "source names the determinant-readout bridge as the open",
-        "arg det(M_u M_d)" in note_flat
-        and "Until that bridge exists" in note_flat
-        and "remains an explicit condition" in note_flat,
+        "source wires the determinant-readout bridge without claiming retained closure",
+        BRIDGE_NOTE.name in note_text
+        and "Determinant-Readout Bridge Wiring" in note_text
+        and "independent review/audit accepts the determinant-readout bridge" in note_flat
+        and "remains an explicit condition" in note_flat
+        and "does not set `theta_gauge = 0`" in note_text,
+    )
+    check(
+        "bridge note supplies the mass determinant-channel boundary only",
+        "mass-determinant channel only" in bridge_flat
+        and "not a gauge-theta theorem" in bridge_flat
+        and "does not prove that every possible action-level observable" in bridge_flat,
     )
 
     # The Record axiom boundary the note leans on must still be in the axiom memo.

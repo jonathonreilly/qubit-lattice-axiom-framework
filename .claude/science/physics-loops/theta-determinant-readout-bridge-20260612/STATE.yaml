@@ -1,0 +1,24 @@
+loop: theta-determinant-readout-bridge-20260612
+mode: source_repair
+status: pr_ready
+target_claim_id: theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md
+  - scripts/frontier_strong_cp_determinant_readout_bridge_2026_06_12.py
+  - logs/runner-cache/frontier_strong_cp_determinant_readout_bridge_2026_06_12.txt
+  - docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md
+  - scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py
+  - logs/runner-cache/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.txt
+  - .claude/science/physics-loops/theta-determinant-readout-bridge-20260612/HANDOFF.md
+  - .claude/science/physics-loops/theta-determinant-readout-bridge-20260612/TRACE_GATE.md
+  - .claude/science/physics-loops/theta-determinant-readout-bridge-20260612/CLAIM_STATUS_CERTIFICATE.md
+remaining_boundaries:
+  - mass-determinant-channel only
+  - gauge/action theta residual outside scope
+  - real-positive Wilson action surface outside scope
+  - arbitrary action-level observables outside scope
+next_exact_action: "Open review PR; independent review/audit owns row movement."

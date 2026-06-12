@@ -1,16 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py
-runner_sha256: f5cd4b7405f82e076be8d19366eb29a875a3103b2722af485dc7369967d366ae
+runner_sha256: 3ed8b61eb1630d8987b6bcd3606d43c795b3c83342d95d1166a7bc0c67d93af6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.66
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 K/CPT determinant-character phase-erasure checks (theta P2 route)
 ============================================================================
 PASS source does not claim a completed discharge or Tier-A registry change
 PASS source keeps audit status authority external
-PASS source names the determinant-readout bridge as the open
+PASS source wires the determinant-readout bridge without claiming retained closure
+PASS bridge note supplies the mass determinant-channel boundary only
 PASS Record axiom memo still withholds the readout context
 PASS live strong-CP note still names the positive-mass selected-surface premise
 PASS K/CPT conjugation maps determinant z to conj(z)
@@ -22,7 +23,7 @@ PASS k = 0 character is identically K/CPT invariant
 PASS surviving determinant-character readout is phase-free and depends only on |det|
 PASS cos(arg z) is K-invariant yet phase-dependent: orbit invariance alone is not phase erasure
 ============================================================================
-SUMMARY: PASS=13 FAIL=0
+SUMMARY: PASS=14 FAIL=0
 
 ----- stderr -----
 

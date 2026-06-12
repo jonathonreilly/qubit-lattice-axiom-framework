@@ -20,12 +20,20 @@ named predicate — cross-site graded locality
 relative to the **retained** fermion-parity grading, written `GL(F)` below —
 (ii) proves the selection **is forced conditionally on `GL(F)`** within the
 explicit three-candidate list used below, and
-(iii) computes why the nominated supplier
-(`axiom_first_spin_statistics_theorem_note_2026-04-29`, unaudited) and every
-nearby retained row checked here fail to supply `GL(F)`.
+(iii) records only a non-load-bearing boundary diagnostic for why this note
+itself does not supply `GL(F)`. The theorem payload for audit is **T1–T3**:
+finite-algebra frame-blindness, conditional discrimination by `GL(F)`, and
+the falsification leg that restores the retained no-go when `GL(F)` is
+removed.
 
 ## 0. Changelog
 
+- **2026-06-11 (scope split).** The conditional discriminator is narrowed to
+  the T1–T3 payload only. The old §4 "supplier audit" language is retained
+  only as non-load-bearing boundary diagnostics: it is not a claim that a
+  restricted audit packet must adjudicate every nearby row. In particular,
+  the 04-29 spin-statistics source note is no longer described here as an
+  unaudited supplier; current audit status remains owned by the audit ledger.
 - **2026-06-10 (this note).** Written in response to the retained no-go's own
   escape clause. The no-go
   [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md)
@@ -34,10 +42,11 @@ nearby retained row checked here fail to supply `GL(F)`.
   currently carried by the **unaudited** `axiom_first_spin_statistics_theorem`)";
   and (N6): "A retained spin-statistics, graded-locality, or fermion-parity
   superselection principle could retire this wall without changing the local
-  qubit axiom." This note checked that nominated carrier and found it does
-  **not** supply the input (§4, computed in runner [D]); the retained rows
-  checked on this surface do not supply it either (§4, computed in runner
-  [A]). Honest outcome: **sharpened boundary**, with the conditional
+  qubit axiom." This note does **not** try to settle that global supplier
+  question. It computes the conditional discriminator and its falsification
+  leg, then records a local diagnostic that the hard-core tied candidate is
+  outside the canonical-CCR hypothesis class of the 04-29 spin-statistics
+  source note. Honest outcome: **sharpened boundary**, with the conditional
   discriminator as the computed witness.
 
 ## 1. Setting and the one open predicate
@@ -104,19 +113,20 @@ ungraded-algebra data**: the same `M_{2^N}(C)` contains both a
 `GL(F)`-passing generating family (`c_x`) and a `GL(F)`-failing one
 (`σ₊^(x)`), so no functional of the ungraded algebra alone can decide it.
 
-**(T4) Supplier audit — `GL(F)` is currently supplied by nothing.** See §4;
-the load-bearing computed fact is that the hard-core ladders violate the
-canonical CCR **hypothesis** of the 04-29 spin-statistics note's Step 2
-(on-site `[a, a^†] = 1 - 2n ≠ I`, defect norm `2`), so that note's bosonic
-exclusion is scoped to the free (CCR) boson only and never reaches the tied
-candidate.
+**Boundary diagnostic (not a theorem step).** See §4; the only computed
+diagnostic used there is that the hard-core ladders violate the canonical
+CCR **hypothesis** of the 04-29 spin-statistics source note's Step 2
+(on-site `[a, a^†] = 1 - 2n ≠ I`, defect norm `2`). This explains why this
+GL(F) note does not consume that row as a `GL(F)` supplier. It is not used
+to prove (T1)–(T3), and this row makes no global claim that all possible
+future spin-statistics, graded-locality, or superselection suppliers fail.
 
 **Sharpened boundary (the result).** On the tested substep-1 surface, the
 statistics-selection residual (B-stat) is located at the predicate `GL(F)` —
 equivalently the cross-site exchange sign / FS input. Given `GL(F)`, the
 explicit three-candidate selection closes (T2). Without it, the retained
-no-go stands unchanged (T3). `GL(F)` is not retained, not Tier-A admitted,
-and not supplied by the rows checked on this surface (T1, T4).
+no-go stands unchanged (T3). This note does not supply `GL(F)`, does not
+admit it, and does not ask the audit to adjudicate a global supplier survey.
 
 ## 3. Cited authorities (one hop, with licenses)
 
@@ -152,16 +162,19 @@ standard methodology, used only to exhibit the CAR realization and recomputed
 in full by the runner. No PDG value, fitted selector, scale, mass, or
 `g_bare` input. No lattice-action carrier load-bearing.
 
-## 4. Why each nearby row fails to supply `GL(F)` (one sentence each, with the computed witness)
+## 4. Non-load-bearing boundary diagnostics
 
-- `axiom_first_spin_statistics_theorem_note_2026-04-29` (**unaudited**): its
+This section is a source-boundary map, not part of the row's audited theorem
+payload. The T1–T3 proof above is complete without it. The diagnostic purpose
+is only to prevent a reader from mistaking this note for an unconditional
+statistics-selection or `GL(F)`-supplier theorem.
+
+- `axiom_first_spin_statistics_theorem_note_2026-04-29`: its
   load-bearing Step 2 hypothesis is the canonical CCR `[a_x, a_y^†] = δ_xy`
   (its eq. (6)), which the hard-core boson violates on-site
   (`[a, a^†] = 1 - 2n ≠ I`, runner [D]), so its bosonic exclusion reaches
-  only the free boson — it re-proves the retained dimensional half, supplies
-  no cross-site graded-locality/CAR/superselection input, and is in any case
-  not retained, so it cannot satisfy the no-go's "independent, **retained**"
-  requirement.
+  only the free/CCR boson branch. This note does not cite that row as a
+  `GL(F)` supplier and does not rely on its audit status for (T1)–(T3).
 - `fermion_parity_z2_grading_theorem_note_2026-05-02` (retained): supplies
   the carrier `F` but is frame-blind — both candidates' fields are `F`-odd
   with `F`-even bilinears (runner [A]) — and it self-disclaims any selector
@@ -190,8 +203,9 @@ in full by the runner. No PDG value, fitted selector, scale, mass, or
 Non-load-bearing reader pointers (plain text): the gate
 `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (S2 support tier this
 boundary refines), `SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md`
-(unaudited exercise verdict that FS is a located admission — this note's (T1)
-–(T4) are the computed, surface-specific version of that location),
+(unaudited exercise verdict that FS is a located admission — this note's
+T1–T3 plus the boundary diagnostic are the computed, surface-specific
+version of that location),
 `CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md`,
 `FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md`,
 `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` (contains **no** FS row
@@ -222,10 +236,10 @@ verified equal across frames, restoring the tie; and the same algebra
 containing both a passing and a failing generating family shows `GL(F)` is
 not a function of the ungraded algebra. ∎(T3)
 
-**(T4).** Runner [D]: on-site `[a, a^†] = 1 - 2n`, defect norm exactly `2`;
-hence the hard-core candidate is outside the 04-29 note's eq.-(6) hypothesis
-class. The remaining bullets of §4 are licensed by the cited rows' own
-audited scopes. ∎(T4)
+**Boundary diagnostic.** Runner [D]: on-site `[a, a^†] = 1 - 2n`, defect norm
+exactly `2`; hence the hard-core candidate is outside the 04-29 note's
+eq.-(6) hypothesis class. This diagnostic is intentionally not a theorem
+step: the conditional discriminator and falsification leg close in (T1)–(T3).
 
 **Load-bearing step.** The decisive step is (T2)'s non-constancy
 computation: *`GL(F)` distinguishes the two tied candidates while every
@@ -249,7 +263,7 @@ shows the conclusion fails when the hypothesis is dropped).
 - **No claim about other locality formalisms.** `GL(F)` is the specific
   graded-locality predicate defined in §1 relative to the retained `F`; this
   note does not claim it is the unique possible selector, only that it is
-  sufficient (T2), currently unsupplied (T1, T4), and minimal in the sense of
+  sufficient (T2), not supplied by this row, and minimal in the sense of
   (T3) (not ungraded-algebra-derivable).
 - Sets, promotes, or changes **no** row's effective status; proposes no edit
   to audit-lane-owned data.
@@ -277,19 +291,20 @@ final line
 TOTAL: PASS=20 FAIL=0
 ```
 
-including, among others, the load-bearing lines:
+including, among others, the load-bearing T1–T3 lines and the non-load-bearing
+boundary diagnostic line:
 
 ```text
 [B] PASS: JW/Grassmann frame PASSES GL(F): {c_x, c_y} = {c_x, c_y^+} = 0 for x != y
 [B] PASS: hard-core frame FAILS GL(F): {sigma_+^(x), sigma_+^(y)} != 0 for x != y
 [B] PASS: selection certificate: exactly one of three candidates passes {dim = 2} AND GL(F): ['Grassmann/CAR']  (the forcing is CONDITIONAL on GL(F); the baseline does not supply GL(F))
 [C] PASS: with GL(F) removed, every remaining tested predicate is constant across the two frames (tie restored)  (reproduces STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING facts (C)/(D))
-[D] PASS: hard-core ladders VIOLATE the 04-29 S2 hypothesis on-site: [a, a^+] = 1 - 2n != I (defect norm = 2)  (the hard-core boson is OUTSIDE the class the 04-29 argument excludes)
+[D] PASS: hard-core ladders VIOLATE the 04-29 S2 hypothesis on-site: [a, a^+] = 1 - 2n != I (defect norm = 2)  (boundary diagnostic only: this note does not consume 04-29 as a GL(F) supplier)
 ```
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "Substep-1 statistics selection sharpened on the tested surface: every retained input checked here (per-site dim, ungraded algebra, retained Z2 parity grading F, finite transfer positivity) is computed constant across the tied hard-core-boson and Grassmann/CAR frames; the cross-site graded-locality predicate GL(F) relative to the retained F is non-constant (Grassmann passes, hard-core fails) and, with the retained dim-2 free-boson exclusion, selects the Grassmann/CAR class conditionally on GL(F) within the explicit three-candidate list; removing GL(F) restores the tie (the retained 2026-05-25 no-go is reproduced, not contradicted); the unaudited 2026-04-29 spin-statistics note does not supply GL(F) (its S2 hypothesis is the canonical CCR, violated on-site by the hard-core ladders); GL(F)/FS remains an unsupplied admission candidate — no unconditional selection is claimed."
+claim_scope: "Substep-1 statistics selection sharpened on the tested surface: every retained input checked here (per-site dim, ungraded algebra, retained Z2 parity grading F, finite transfer positivity) is computed constant across the tied hard-core-boson and Grassmann/CAR frames; the cross-site graded-locality predicate GL(F) relative to the retained F is non-constant (Grassmann passes, hard-core fails) and, with the retained dim-2 free-boson exclusion, selects the Grassmann/CAR class conditionally on GL(F) within the explicit three-candidate list; removing GL(F) restores the tie (the retained 2026-05-25 no-go is reproduced, not contradicted); GL(F)/FS remains unsupplied by this row and no unconditional selection is claimed; the source-boundary diagnostics about possible suppliers are non-load-bearing and outside this row's theorem payload."
 upstream_dependencies:
   - staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25
   - fermion_parity_z2_grading_theorem_note_2026-05-02

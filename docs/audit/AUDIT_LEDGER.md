@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 857 |
+| **retained_bounded** | 858 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1381 |
+| unaudited | 1380 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1310 |
+| `audited_clean` | 1311 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1698 |
+| `unaudited` | 1697 |
 
 | claim_type | count |
 |---|---:|
@@ -803,6 +803,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_fanout_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lattice_keff_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -11624,6 +11625,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Under the gravity-observable hierarchy classifier, the runner-computed z = 2, 3, 4, 5 window is genuinely attractive on this tested 3D dense spent-delay card.  _(class `C`)_
 - **chain closes:** True — The primary runner constructs the lattice, field, propagation, detector probabilities, centroid shift, P_near, and channel bias directly, then computes all four z = 2..5 rows without importing or hard-coding the contested values. The cited hierarchy authority supplies the retained sign-interpretation rule, and the source note excludes the rows and broader claims that the authority does not retain.
 - **rationale:** The load-bearing attractive-window claim is a bounded first-principles runner computation on the stated card. The runner source is not a constant printer or cross-note equality check; it generates the graph, propagates amplitudes, computes the observables, and classifies z = 2, 3, 4, 5 as attractive with positive centroid, P_near, and bias. The one-hop hierarchy authority is retained_bounded, and the note explicitly narrows away z = 6, 2D distance-law, refinement, and all-distances claims. A second auditor should note the minor non-load-bearing Born display drift between 7.39e-16 in the note and 7.37e-16 in the runner output.
+- **auditor confidence:** high
+
+### `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07`
+
+- **Note:** [`LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md`](../../docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact Z^3 graph-Laplacian heat-kernel resolvent identity and Bessel factorization, plus the leading 1/(4*pi|x|) Green asymptotic routed through the retained stronger lattice-correction theorem for the same kernel; direct local-CLT proof and physical G_Newton calibration are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-020054-48f7de950c-lattice_greens_1_over_r_from`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The stronger lattice-correction theorem proves the asymptotic expansion for the same exact heat-kernel/Bessel Green function, so the leading 1/(4*pi|x|) term follows by discarding the O(|x|^-3) correction.  _(class `A`)_
+- **chain closes:** True — The exact resolvent/factorization identifies the kernel in this note with the kernel consumed by the retained stronger theorem, whose expansion immediately implies the leading term. The open uniform local-CLT/tail-domination route is explicitly non-load-bearing.
+- **rationale:** The load-bearing closure is algebraic over retained-grade inputs: once the same Green kernel is identified, the cited retained expansion gives the leading term directly. The runner source performs real matrix-exponential, Bessel-integral, continuum-integral, numerical convergence, and cross-note artifact checks rather than merely printing PASS. The direct large-distance passage through the heat-kernel integral remains open, but the note scopes it as an alternate non-load-bearing route.
 - **auditor confidence:** high
 
 ### `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`

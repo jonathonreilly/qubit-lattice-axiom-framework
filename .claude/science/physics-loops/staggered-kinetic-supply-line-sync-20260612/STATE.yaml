@@ -26,6 +26,6 @@ no_go_routes:
 verification:
   live_runner: "python3 scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py -> TOTAL: PASS=53 FAIL=0"
   cache_refresh: "python3 scripts/precompute_audit_runners.py --runners scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py --force --concurrency 1 --push-mode none --allow-non-main -> ok 1"
-pr_status: pending
-next_exact_action: "Run final diff/status checks, commit, push, and open the review PR."
-stop_condition: "Stop this block after PR creation; next campaign step is a fresh audited-conditional scan."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3690"
+next_exact_action: "Reviewer should inspect PR #3690; campaign should next scan fresh audited-conditional rows for independent repairs."
+stop_condition: "This block is packaged and open for review."

@@ -1,10 +1,15 @@
 # PR Backlog
 
-No backlog entry yet. The intended branch is
-`physics-loop/staggered-kinetic-supply-line-sync-20260612`, with base
-`main` and title:
+No backlog.
 
+Opened PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3690
+
+Branch:
+`physics-loop/staggered-kinetic-supply-line-sync-20260612`
+
+Base:
+`main`
+
+Title:
 `[physics-loop] staggered kinetic supply-line sync bounded-support`
-
-This file should be updated with the PR URL after creation, or with the
-exact recovery command if GitHub creation fails.

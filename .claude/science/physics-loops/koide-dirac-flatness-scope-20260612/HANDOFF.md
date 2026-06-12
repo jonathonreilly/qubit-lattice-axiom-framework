@@ -33,4 +33,4 @@ Results:
 - No physical charged-lepton mass bridge.
 - No hard universal no-go.
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3704

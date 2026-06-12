@@ -25,6 +25,7 @@ verification:
   - "python3 scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py -> 6 PASS, 0 FAIL"
   - "citation extraction excludes staggered_dirac_realization_gate_note_2026-05-03"
   - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py --force --concurrency 1 --push-mode none --allow-non-main -> ok=1"
-pr_status: pending
-next_exact_action: push branch and open review PR
-stop_condition: review PR opened or PR_BACKLOG updated if GitHub creation fails
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3704
+next_exact_action: await review/audit extraction
+stop_condition: review PR opened

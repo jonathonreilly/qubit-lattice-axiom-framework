@@ -1,0 +1,22 @@
+loop_slug: su3-casimir-k1k3-scope-repair-20260612
+goal: "Repair the audited_conditional SU(3) fundamental Casimir row by removing stale physical-readout overclaim language while preserving the K1-K3 algebraic theorem."
+target_claim_id: su3_casimir_fundamental_theorem_note_2026-05-02
+mode: source_repair
+cycle_count: 1
+active_route: k1_k3_scope_repair
+actual_current_surface_status: audited_conditional_on_main_until_reaudit
+branch_status: bounded-support_source_repair
+files_touched:
+  - docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md
+  - scripts/su3_casimir_fundamental_check.py
+  - .claude/science/physics-loops/su3-casimir-k1k3-scope-repair-20260612/
+open_imports:
+  - "Physical SM color identification/readout bridge remains outside this claim."
+no_go_routes:
+  - "Do not promote K4/C1-C5 physical-quark color-factor readouts from this branch."
+trace_gate: direct_blocker_closure
+proposal_allowed: false
+proposal_allowed_reason: "Independent audit/review still owns status; this branch only repairs source scope."
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer should inspect scope wording, then queue the row for re-audit against the K1-K3 algebraic surface."
+stop_condition: "Science block complete when branch is pushed and PR opened."

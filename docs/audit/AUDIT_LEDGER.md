@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 215 |
-| **retained_no_go** | 206 |
+| **retained_no_go** | 207 |
 | **retained_bounded** | 851 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1461 |
+| unaudited | 1460 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1299 |
+| `audited_clean` | 1300 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1778 |
+| `unaudited` | 1777 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 513 |
-| `high` | 508 |
-| `medium` | 871 |
+| `high` | 509 |
+| `medium` | 870 |
 | `leaf` | 1349 |
 
 - **Retained pending chain closure:** 18
@@ -123,7 +123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 728 | 33.01 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 725 | 31.50 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 855 | 31.24 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 186 | 31.05 | `audited_clean` | **retained** |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 195 | 31.11 | `audited_clean` | **retained** |
 | 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 327 | 30.86 | `unaudited` | unaudited |
 
 
@@ -578,6 +578,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_susceptibility_flow_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8073,6 +8074,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner constructs S_packet = exp(ETA J) D_packet exp(ETA J), eta_packet = exp(ETA J / 2) e_(0,0), and z_packet = S_packet^DEPTH eta_packet, then verifies the finite positivity, symmetry, normalization, and Perron-overlap properties.  _(class `C`)_
 - **chain closes:** True — Within the narrowed finite scope, the runner source genuinely constructs the recurrence matrix, transfer witness, boundary vector, and boundary-amplitude sequence, then checks the claimed finite properties. The full Wilson-environment transfer identity is explicitly outside the audited claim scope.
 - **rationale:** The source note’s load-bearing claim is only the existence and verification of one finite constructed witness packet, and the provided runner actually computes that packet rather than importing or printing contested constants. The cited upstream authority is retained_bounded, and the open full Wilson-environment bridge is not used as a premise for this bounded claim. The conclusion therefore closes on its own finite terms while preserving the stated exclusions.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite structural-surface underdetermination only: on the runner's truncated class-sector witness surface, the listed positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique transfer/boundary pair or normalized rho sequence; the full beta=6 Wilson-parent/factorization stack is not audited closed or ruled out.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-bd11df3516-gauge_vacuum_plaquette_spati`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner exhibits admissible choices on the listed finite structural surface with rho_A != rho_B, hence the listed positivity/self-adjointness/swap-symmetry/boundary conditions do not determine a unique normalized beta-side vector.  _(class `C`)_
+- **chain closes:** True — A finite counterexample pair is enough to refute uniqueness for the listed structural surface, and the runner source actually constructs two such positive self-adjoint swap-symmetric witnesses with different normalized rho data and different induced three-sample triples. The broader physical beta=6 uniqueness question is explicitly left open, so it is not part of the closed no-go.
+- **rationale:** The audited no-go is narrow and finite: it denies only that the enumerated structural constraints alone select a unique witness on the runner surface. The code is not just printing constants; it builds the finite recurrence, constructs two transfer/boundary pairs, verifies the relevant symmetries and positivity of the transfer operators, and computes nonzero rho and three-sample gaps. The cited upstream authority is retained_bounded and is used consistently as bounded finite context; its full Wilson-environment open target is not claimed closed here.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_spectral_measure_theorem_note`

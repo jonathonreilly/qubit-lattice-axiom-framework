@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1493 |
+| Applied audit verdicts | 1494 |
 | Retained-grade rows, including boxed decorations | 1337 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 859 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1378 |
+| Unaudited rows | 1377 |
 | Retained-pending-chain rows | 17 |
-| Audited conditional rows | 55 |
+| Audited conditional rows | 56 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1380 |
-| Ready rows | 20 |
+| Total pending rows | 1379 |
+| Ready rows | 19 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
 | High pending | 285 |
 | Medium pending | 411 |
-| Leaf pending | 412 |
+| Leaf pending | 411 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11`](../../docs/CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06`](../../docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`flavor_zdet_fermionic_statistics_admission_2026-06-04`](../../docs/FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md) - medium; unaudited
 - [`free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30`](../../docs/FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
-- [`gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07`](../../docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
+- [`gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07`](../../docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
+- [`koide_carrier_locus_decomposition_note_2026-06-01`](../../docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -89,10 +89,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1530 descendants; score 127.080
-- `three_generation_observable_theorem_note` - critical; 1057 descendants; score 63.547
-- `graph_first_su3_integration_note` - critical; 1389 descendants; score 60.941
+- `three_generation_observable_theorem_note` - critical; 1056 descendants; score 63.546
+- `graph_first_su3_integration_note` - critical; 1388 descendants; score 60.940
 - `observable_principle_from_axiom_note` - critical; 881 descendants; score 59.285
-- `key_terminology` - critical; 1216 descendants; score 50.249
-- `minimal_axioms_2026-05-03` - critical; 998 descendants; score 49.964
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 970 descendants; score 45.423
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 978 descendants; score 44.435
+- `key_terminology` - critical; 1215 descendants; score 50.248
+- `minimal_axioms_2026-05-03` - critical; 997 descendants; score 49.963
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 969 descendants; score 45.422
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 977 descendants; score 44.434

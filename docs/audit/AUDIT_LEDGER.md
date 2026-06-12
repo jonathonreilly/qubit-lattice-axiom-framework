@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 859 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1378 |
+| unaudited | 1377 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 56 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1312 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 56 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1695 |
+| `unaudited` | 1694 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1555 |
+| `bounded_theorem` | 1556 |
 | `decoration` | 54 |
 | `meta` | 326 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 776 |
+| `positive_theorem` | 775 |
 
 | criticality | count |
 |---|---:|
@@ -101,24 +101,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1530 | 127.08 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1057 | 63.55 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1389 | 60.94 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1056 | 63.55 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1388 | 60.94 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 881 | 59.28 | `unaudited` | unaudited |
-| 5 | `key_terminology` | meta | critical | 1216 | 50.25 | `unaudited` | meta |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 998 | 49.96 | `unaudited` | meta |
-| 7 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 970 | 45.42 | `unaudited` | unaudited |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 978 | 44.44 | `unaudited` | unaudited |
+| 5 | `key_terminology` | meta | critical | 1215 | 50.25 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 997 | 49.96 | `unaudited` | meta |
+| 7 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 969 | 45.42 | `unaudited` | unaudited |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 977 | 44.43 | `unaudited` | unaudited |
 | 9 | `plaquette_self_consistency_note` | bounded_theorem | critical | 953 | 42.40 | `audited_clean` | **retained_bounded** |
-| 10 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1038 | 41.52 | `audited_clean` | **retained** |
+| 10 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1037 | 41.52 | `audited_clean` | **retained** |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1041 | 40.52 | `unaudited` | unaudited |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1355 | 39.41 | `audited_clean` | **retained** |
-| 13 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1295 | 38.84 | `audited_clean` | **retained_bounded** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1354 | 39.40 | `audited_clean` | **retained** |
+| 13 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1294 | 38.84 | `audited_clean` | **retained_bounded** |
 | 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 791 | 38.63 | `audited_clean` | **retained_bounded** |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 732 | 38.52 | `audited_clean` | **retained_no_go** |
 | 16 | `alpha_s_derived_note` | bounded_theorem | critical | 879 | 38.28 | `audited_conditional` | ~~audited_conditional~~ |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1359 | 36.91 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1108 | 36.12 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 981 | 34.94 | `unaudited` | unaudited |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1107 | 36.11 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 980 | 34.94 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 276 | 34.61 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 723 | 33.00 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 720 | 31.49 | `unaudited` | unaudited |
@@ -1451,6 +1451,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_taste_generation_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_upper_bound_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3115,6 +3116,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The primary runner recomputes the configured finite zero controls and placement-comparison ratios for three growth families and three source-placement rules, and the note's boundary claim is limited to those runner-defined outputs: placement changes the measured ratios, while no common portable cross-family scale appears in the configured cases.  _(class `C`)_
 - **chain closes:** True — The source note's table and safe read match the completed primary runner output, and the helper only supplies finite growth, propagation, and centroid routines. The two one-hop dependencies are retained-bounded and supply fixed-anchor finite context; the audited claim does not rely on the unaudited center-family 0.45 result, physical field theory, source-placement causality, or a portability theorem beyond the configured harness.
 - **rationale:** Clean only as a bounded finite diagnostic. The runner directly checks the load-bearing numerical controls and placement-ratio table, the values match the source note, and the retained-bounded dependencies are sufficient for the fixed-anchor context. Residual risk is external validity: broader source-placement causality, physical field theory, and portability/no-go claims remain outside the audited scope.
+- **auditor confidence:** high
+
+### `centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-horizon, finite-seed computation for the supplied centered U(1) fluctuation model showing non-stationarity, spread-regime non-Gaussianity, and record-prefix mixture structure at the stated instance.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-020929-d5fa372704-centered_u1_fluctuation_law_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At seed 4242, depth 9, prefix-3 record conditioning gives 0.557 versus label-permutation-null median/p95/max 0.463/0.469/0.481, so the record prefix clears the null and exhibits record-sector structure with within-sector remainder.  _(class `C`)_
+- **chain closes:** False — The runner source genuinely computes the finite-instance characteristic-function, prefix-conditioning, and permutation-null quantities from the supplied Born-weighted trajectory model. The restricted packet does not close the Born weighting/readout-instrument/carrier/hopping premises from retained authorities or approved primitives, and the note itself flags the Born cap as unaudited.
+- **rationale:** The primary runner constructs the finite fermionic model, Kraus pair, exact binary outcome tree, prefix profiles, and permutation nulls rather than merely printing constants, so the load-bearing computation is class C at the supplied instance. Full closure is still conditional because the packet imports the Born-weighted outcome tree and supplied instrument/carrier/hopping setup without a retained one-hop authority. Formula inventory also finds a source/runner arithmetic drift: at depth 9 and prefix 3 the binary tree has 2^(9-3)=64 branches per family, not 128, though the reported null-clearing inequality is still the computed one.
+- **open / conditional deps cited:**
+  - `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `central_band_born_dense_sweep_note`

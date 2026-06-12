@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 858 |
+| **retained_bounded** | 859 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1380 |
+| unaudited | 1379 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1311 |
+| `audited_clean` | 1312 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1697 |
+| `unaudited` | 1696 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 505 |
 | `high` | 505 |
-| `medium` | 872 |
-| `leaf` | 1308 |
+| `medium` | 871 |
+| `leaf` | 1309 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -912,6 +912,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_c2_derivation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -13230,6 +13231,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source computes relaunch profiles, capture, carry, and relative shift error for the listed top-N classes, and the completed stdout shows no row satisfying all three thresholds. The conclusion is limited to this finite sweep and does not establish any broader persistent-pattern inertial-mass theorem.
 - **rationale:** The source note makes a bounded negative claim and does not overstate it into a positive Newton or inertial-mass theorem. The supplied runner performs a finite propagation/relaunch sweep and the stdout supports the stated negative result: the only row with capture above threshold has rel_shift_err=0.271, far above 0.05. The clean scope is only the enumerated runner configuration and thresholds; broader ordered-lattice or Newton-derivation closure remains outside this claim.
 - **auditor confidence:** medium
+
+### `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17`
+
+- **Note:** [`NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](../../docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Newton-Poisson homogeneous pressureless-dust first integral to the flat k = 0 first Friedmann law, conditional on the stated dust continuity and flat-branch premises.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-020420-43666d298c-newton_poisson_flat_friedman`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The first Friedmann law follows from a first integral of a''/a = -(4 pi G/3) rho, with the integration constant fixed to zero by the flatness assumption k = 0.  _(class `A`)_
+- **chain closes:** True — Using M=(4 pi/3)rho R^3 and R=aR0 gives a''/a=-(4 pi G/3)rho. With dust continuity rho a^3=constant, direct first integration gives H^2=(8 pi G/3)rho+C/a^2, and the flat k=0 branch sets C=0.
+- **rationale:** The load-bearing step is a hand-checkable algebraic first integral over the explicitly stated Newton-Poisson dust hypotheses, not a tuned numerical match or symbol renaming. The source correctly excludes radiation/general-pressure fluids, where the rho-only Newtonian acceleration would give half the GR radiation coefficient. The cited one-hop authorities are retained-grade in the restricted packet, and no runner artifact is needed to judge this algebraic closure.
+- **auditor confidence:** high
 
 ### `newtonian_distance_law_confirmed`
 

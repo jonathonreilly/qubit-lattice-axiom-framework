@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_zdet_fermionic_statistics_admission_2026-06-04"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_carrier_locus_decomposition_note_2026-06-01"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_dkd_berry_spectator_note_2026-05-31"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
         "flavor_zdet_fermionic_statistics_admission_2026-06-04",
         "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
         "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30",
         "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07",
-        "koide_carrier_locus_decomposition_note_2026-06-01"
+        "koide_carrier_locus_decomposition_note_2026-06-01",
+        "koide_dkd_berry_spectator_note_2026-05-31"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0c00971ff497dda13fe7a529a0cd90f5076894794585c3bec00592f61509d109",
+      "note_hash": "06c3e2664b5ed10fa1a573063479859cfc00a0b6af549ba25e2ec8488404c9f9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

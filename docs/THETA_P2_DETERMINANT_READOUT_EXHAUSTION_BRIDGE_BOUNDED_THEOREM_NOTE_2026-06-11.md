@@ -1,0 +1,396 @@
+# Theta P2 Determinant-Readout Exhaustion Bridge
+
+**Date:** 2026-06-11
+**Claim type:** bounded_theorem
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
+registry, ledger, queue, or publication-status surfaces.
+**Primary runner:**
+[`scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py`](../scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py)
+(TOTAL: PASS=35 FAIL=0; cached:
+[`logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt`](../logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt))
+
+---
+
+## Target
+
+The audit-lane conditional verdict on
+[`THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`](THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md)
+names the missing piece exactly:
+
+> missing_bridge_theorem: retain a determinant-readout bridge proving that the
+> physical `arg det(M_u M_d)` contribution is exhausted by the multiplicative
+> determinant-character readout and that no phase-sensitive non-multiplicative
+> or action-level datum remains.
+
+This note supplies that bridge as a bounded theorem, with the surviving
+residuals named explicitly in the Boundary section. The word "exhaust" below
+is used only in the audit lane's own technical sense — a proved factorization
+statement about a constrained readout class — never as a claim about a search
+space.
+
+## Statement
+
+**Theorem (determinant-readout exhaustion bridge).** Fix a supplied
+mass-surface readout context consisting of: a finite central-sector
+decomposition; the fixed `K`/CPT conjugation acting on the central determinant
+data by complex conjugation; a per-record determinant datum map `e -> z(e)`
+in `C^x` that is multiplicative over disjoint records
+(`z(e_1 cup e_2) = z(e_1) z(e_2)`), with the scalar readout a function of that
+datum, `I(e) = F(z(e))`. Conditional on the physical readout satisfying the
+Record registrability constraints (the standing premise W2), and — for part
+(v) — on the supplied per-plaquette-plus-Gaussian-fermion action class:
+
+1. **(Orbit)** The `K`/CPT orbit of the datum `z = det(M_u M_d)` is
+   `{z, conj z}`: `|z|` is fixed and `arg z -> -arg z`.
+2. **(Forcing — registrable implies multiplicative-class)** Every
+   Record-registrable readout of the determinant datum automatically satisfies
+   the homomorphism equation `F(z w) = F(z) + F(w)` (with `F(1) = 0`): Record
+   additivity over disjoint records, applied to the multiplicative union
+   datum, *is* that functional equation. Consequently a "phase-sensitive
+   non-multiplicative registrable datum" does not exist as a category: a
+   functional violating the homomorphism equation violates a Record additivity
+   instance and is therefore not registrable at all.
+3. **(Erasure — for every registrable readout, not a family)** Every
+   Record-registrable readout factors through `|det|`. Writing
+   `z = (log|z|, arg z)` in the group `C^x ~= R x (R/2 pi Z)`, the
+   homomorphism `F` splits into a modulus component and a phase component
+   `g`; `g` is additive, hence odd (`g(0) = 0`, `g(-t) = -g(t)` — pure
+   algebra, no continuity, measurability, or linearity assumed); `K`/CPT orbit
+   constancy makes `g` even; even and odd force `g == 0`. So
+   `F(z) = a(log|z|)` for an additive `a`, and the registrable phase content
+   of `arg det(M_u M_d)` is exactly zero.
+4. **(Exhaustion)** Therefore the invariant (`k = 0`, modulus-class) members
+   of the multiplicative determinant-character family exhaust the
+   Record-registrable readout content of the `arg det(M_u M_d)` datum: the
+   `k = 0` conclusion of the determinant-character note is an instance of a
+   law holding for *all* registrable readouts, not a restriction to the
+   supplied character family. On the finite models in the runner this is
+   verified as a complete solution-space computation (nullspace dimension
+   count), not on a hand-picked family.
+5. **(Action-level entry characterization)** On the strong-CP selected
+   surface, the fermion integral is Gaussian and exact, so the entire
+   vacuum-weight dependence on the mass datum is the determinant
+   `det(D + M)`; its orientation-sensitive part is `arg det`, which is the
+   per-sector-additive phase datum of parts (2)-(4). The supplied
+   per-plaquette gauge class contains no local cross-plane `F Ftilde` slot
+   that could host an independent orientation-sensitive action-level datum
+   (composition with the retained_bounded cross-plane note). Hence, within
+   the supplied action class and the `theta_eff` vacuum-weight premise, the
+   only orientation-sensitive action-level entry of the mass datum is
+   `arg det(M_u M_d)` — and parts (2)-(4) erase it at registration. The
+   pieces this part does **not** cover are named in the Boundary section.
+
+## Setup and derivation
+
+### What is supplied vs. derived
+
+The Record axiom
+([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)) supplies only:
+(Additivity) the scalar readout `I` is finitely additive over finite
+pairwise-disjoint record collections with `I(empty) = 0`; (Orbit) the realized
+outcome is the `K`/CPT orbit of the realized central sector. It supplies no
+readout context. The determinant-class readout context — the finite
+central-sector decomposition, the conjugation, and the per-record determinant
+datum map with multiplicative union data — is *supplied*, exactly as in the
+determinant-character note being bridged. This note does not construct that
+context from the axioms; it proves what every registrable readout of that
+context must look like.
+
+### Part (1) — orbit
+
+`K`/CPT conjugates each mass block, so `det` conjugates:
+`det(conj M_u conj M_d) = conj det(M_u M_d)` (runner B1, 8 samples, both the
+elementwise-conjugation and dagger forms). Conjugation is an involution, so
+the orbit of `z` is `{z, conj z}`; `|z|` invariant, `arg z` negated; and
+`arg det(M_u M_d) = arg det M_u + arg det M_d (mod 2 pi)`.
+
+### Part (2) — forcing
+
+Let `e_1, e_2` be disjoint records with data `z_1, z_2`. The union record has
+datum `z_1 z_2` (multiplicativity of `det` over disjoint blocks; runner B2).
+Record (Additivity) says `I(e_1 cup e_2) = I(e_1) + I(e_2)`, i.e.
+
+```text
+F(z_1 z_2) = F(z_1) + F(z_2).
+```
+
+Two disjoint datum-`1` records give `F(1) = 2 F(1)`, so `F(1) = 0`. This is
+the whole content of "registrable implies multiplicative-class": the
+homomorphism equation is not an extra hypothesis, it is the additivity clause
+read on multiplicative union data. Any non-multiplicative functional —
+`cos(arg z)`, `|sin(arg z)|`, principal `Arg`, an interference cross term —
+fails a concrete additivity instance (witnesses in the Hostile-guard section)
+and is therefore outside the registrable class, not merely outside a supplied
+family.
+
+### Part (3) — erasure
+
+`C^x ~= R x (R/2 pi Z)` via `z -> (log|z|, arg z)`. A homomorphism
+`F : C^x -> (R, +)` splits as `F(r, phi) = a(r) + g(phi)` with `a, g`
+additive (evaluate on `(r, 0)` and `(0, phi)`). For any additive `g` on an
+abelian group: `g(0) = g(0) + g(0)` gives `g(0) = 0`, and
+`g(t) + g(-t) = g(0) = 0` gives oddness — with **no** regularity assumption,
+so the Hamel/Cauchy pathologies of additive functions are irrelevant. (Orbit)
+constancy under `z -> conj z` reads `g(-phi) = g(phi)`: evenness. Even and
+odd give `g == 0`. So `F(z) = a(log|z|)`: every registrable readout factors
+through the modulus.
+
+The runner verifies this as a *complete* solution-space computation on two
+finite models of the datum group (B3):
+
+- **Model A** (phase = `Z_12` torsion): the additive solution space has
+  nullspace dimension exactly 1, spanned by the modulus coordinate. (Torsion
+  alone kills the phase generator here; this model shows the discrete-phase
+  case.)
+- **Model B** (real-lift phase, no torsion — the case matching the continuum
+  argument): the additive solution space has dimension exactly 2
+  (`a*log-modulus + b*phase-lift`); every additive solution is odd in the
+  phase coordinate (checked on the full basis); adding the `K`/CPT evenness
+  rows cuts the space 2 -> 1; the surviving line has overlap 1.000000000000
+  with the pure modulus coordinate.
+
+The dimension counts are the exhaustion claim in checkable form: nothing
+phase-sensitive survives in the *entire* constrained class.
+
+### Part (4) — exhaustion
+
+Combining (2) and (3): the registrable readouts of the determinant datum are
+exactly the additive functions of `log|det|` — the logarithms of the
+invariant (`k = 0`) multiplicative determinant characters, with the continuous
+members exactly `s log|z| <-> |z|^s`. The phase character index is `k = 0`
+for *every* registrable readout because the phase component is identically
+zero, not because the family was restricted to characters. This discharges
+the first half of the audit ask: the physical `arg det(M_u M_d)` contribution
+carries zero Record-registrable content, and the multiplicative
+determinant-character readout (its `k = 0` members) is exhaustive for what a
+registrable readout can carry of the determinant datum.
+
+### Part (5) — action-level half
+
+The audit ask's second half is that "no phase-sensitive non-multiplicative or
+action-level datum remains." The non-multiplicative half is part (2): such a
+datum is not registrable. For the action-level half, characterize how the
+mass-orientation datum enters the supplied action class:
+
+- **Fermion side.** On the strong-CP selected surface
+  ([`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md), Leg A,
+  retained_bounded), the fermion action is bilinear, so the Grassmann
+  integral is exact and Gaussian: the entire vacuum-weight dependence on the
+  mass datum is `det(D + M)`, with `Gamma_f = -Tr ln(D + M)` and no higher
+  fermion loops. The runner's B2 miniature replicates the structure at small
+  dimension: an anti-Hermitian `D` with the `epsilon` pairing gives
+  `det(D + m I)` real positive for real `m > 0`; `exp(Tr log(D+M)) =
+  det(D+M)` (branch-free identity); and an orientation phase
+  `alpha -> -alpha` in `M = m e^{i alpha} I` exactly conjugates the weight —
+  the `K`/CPT orbit pair of part (1). So the orientation-sensitive part of
+  the action-level mass entry is `arg det`, the additive phase datum that
+  parts (2)-(4) erase at registration.
+- **Gauge side.** The supplied gauge action class is the per-plaquette class
+  under the unit-neighborhood link-support license
+  ([`PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md`](PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md),
+  retained_bounded — a licensed input, not a derivation). Within it, every
+  local cross-plane `F Ftilde` coefficient vanishes identically
+  ([`THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md`](THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md),
+  retained_bounded; the runner re-checks the mixed-derivative computation
+  symbolically as a composition sanity check, not a re-derivation). So the
+  gauge sector of the supplied class supplies no local orientation-sensitive
+  slot that could re-introduce the erased phase.
+
+Within the supplied class and the `theta_eff` vacuum-weight premise, the
+orientation-sensitive action-level entry of the mass datum is therefore
+`arg det(M_u M_d)` and nothing else — and that datum registers as zero phase.
+
+## Hostile-guard section
+
+The conditional note's hostile guard was: `K`-even functions such as
+`cos(arg z)` need not erase phase. Each guard below is run against the
+*generalized* statement (parts 2-4), with the killing hypothesis identified
+per candidate (runner B4):
+
+| candidate | orbit-constant | additive | phase-sensitive | killed by |
+|---|---|---|---|---|
+| `log\|z\|` | yes | yes | no | survives (modulus class) |
+| `cos(arg z)` (old guard, re-run) | yes | **no** (witness `phi_1 = phi_2 = 2 pi/3`: `cos(4 pi/3) = -0.5 != -1.0`) | yes | ADDITIVITY |
+| `\|sin(arg z)\|` (new) | yes | **no** | yes | ADDITIVITY |
+| principal `Arg z` (new) | **no** | **no** (wrap witness `Arg(z^2) != 2 Arg z`) | yes | both |
+| interference `cos(arg z_1 - arg z_2)` on the union record (new) | yes (simultaneous conjugation negates the difference; `cos` even) | **no** (cross term `= +1.0` at the witness) | yes | ADDITIVITY (no-cross-term) |
+| real-lift `k * phi` (new) | **no** (`k(-phi) != k(phi)` for `k != 0`) | yes | yes | ORBIT constancy |
+
+Two structural points the table shows:
+
+1. **Additivity alone is not enough** (the real-lift `k * phi` is additive and
+   phase-sensitive) **and orbit constancy alone is not enough** (`cos`,
+   `|sin|`, and the interference functional are orbit-constant and
+   phase-sensitive). The theorem lives exactly on the intersection, matching
+   the runner's 2 -> 1 nullspace cut.
+2. **The new interference guard is the sharpest hostile reading**: it is a
+   genuinely non-multiplicative, fully `K`/CPT-even, phase-sensitive
+   cross-sector functional — precisely the kind of datum the audit ask worries
+   about — and it is removed by the no-cross-term consequence of Record
+   additivity, not by evenness.
+
+## Boundary (named residuals — none hidden)
+
+This bridge is bounded. What survives, explicitly:
+
+- **W2 — the standing registrability identification.** The theorem is
+  conditional on the physical mass-surface readout context satisfying the
+  Record registrability constraints (additivity + orbit constancy). It
+  removes all phase freedom *within* that class; it does not prove the
+  physical readout must be registrable. This is the same standing modeling
+  premise carried by the prior registrability work, unchanged here.
+- **Strong-CP premise 1 ("no bare `theta` slot") is separate.** The
+  gauge-action admissibility of a bare `theta` term is a distinct
+  action-surface premise, shown not derivable from retained reflection
+  positivity by
+  [`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md).
+  This note addresses only the mass-orientation datum.
+- **The supplied action class is licensed, not derived.** The per-plaquette
+  class enters through the retained_bounded unit-neighborhood license; part
+  (5) is conditional on that class. Multi-plaquette / clover terms with
+  cross-plane support reopen a local `F Ftilde` slot (named in the
+  cross-plane note) and are outside part (5). Global / multi-plaquette
+  topological winding data is likewise outside this note.
+- **Source/insertion observables.** Fermion-source correlators depend on
+  `(D + M)^{-1}`, i.e. on more of `M` than `det(D + M)`. The bridge covers
+  the `arg det(M_u M_d)` contribution to `theta_eff` (the vacuum-weight
+  premise of the strong-CP note), not the full `M`-dependence of every
+  observable.
+- **The prior additive+even core note is currently unaudited.**
+  [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+  states the additive+even core first; its live ledger status at this note's
+  date is `unaudited`. It is cited as prior statement only and is **not**
+  load-bearing here: every leg used (oddness from additivity, even-and-odd
+  vanishing, the `cos` exclusion) is re-derived in this note and re-checked
+  self-contained in this note's runner.
+
+## What this note adds beyond the prior registrability note
+
+Three things the prior note does not contain, each pointed at the exact audit
+ask: (i) the **forcing step** — additivity over disjoint records plus
+determinant multiplicativity *is* the homomorphism equation, so
+"non-multiplicative registrable" is empty as a category (the prior note
+excluded `cos(arg z)` by a single counterexample; here the entire
+non-multiplicative class is removed by hypothesis collision, and the runner
+computes the full solution space by nullspace count rather than testing a
+family); (ii) the **action-level half** — the characterization that, on the
+supplied class, the mass orientation enters the action only through
+`det(D + M)` (Gaussian exactness, composed with the retained_bounded
+cross-plane absence on the gauge side); (iii) the **new hostile readings**,
+including the cross-sector interference functional, which is `K`/CPT-even and
+non-multiplicative — the precise shape of datum the audit verdict asked to be
+excluded — killed by the no-cross-term consequence of additivity.
+
+## No-Go / Bounded-Wall Discipline Gate (N1-N8)
+
+The negative sentence shipped is: *within the Record-registrable class of the
+supplied determinant readout context, and within the supplied action class
+for part (5), no phase-sensitive datum of the mass orientation survives
+registration.*
+
+- **N1 — alternative routes (>= 5).** (a) Non-multiplicative orbit-constant
+  functionals (`cos`, `|sin|`): fail a Record additivity instance — witnesses
+  printed. (b) Additive phase lifts (`k * phi`, including regularity-free
+  Hamel-type additive maps): odd by additivity, killed by orbit evenness.
+  (c) Cross-sector interference data: removed by the no-cross-term
+  consequence of additivity. (d) Branch tricks (principal `Arg`): fail both
+  hypotheses at the wrap. (e) Action-level re-entry through a local gauge
+  `F Ftilde` slot: absent in the supplied per-plaquette class
+  (retained_bounded). (f) Action-level re-entry through non-determinant mass
+  dependence of the vacuum weight: excluded by Gaussian exactness on the
+  selected surface. Routes outside these hypotheses (non-registrable
+  readouts, multi-plaquette classes, source insertions) are not closed — they
+  are the named Boundary.
+- **N2 — wall independence.** Surviving walls: W2 (registrability
+  identification), premise 1 (bare `theta` slot), the per-plaquette license,
+  and the multi-plaquette reopening. None implies another; none is collapsed
+  here.
+- **N3 — hidden-wall scan.** "Supplied context", "multiplicative union
+  datum", "selected surface", and "licensed class" are all explicit inputs.
+  The readout-is-a-function-of-the-datum clause is stated as part of the
+  supplied context, not smuggled.
+- **N4 — residual matching.** The RP no-go is matched to premise 1 only; the
+  cross-plane note is matched to the local-slot absence only; the license
+  note is matched to the class input only; none is repurposed as a closure
+  of anything else.
+- **N5 — rhetoric audit.** "Exhaustion" appears only as the proved
+  factorization/solution-space statement (and in the audit lane's own
+  wording). No "only route", "last route", or route-closure language is
+  used. The erasure claim is made at the registrable-class resolution and
+  the supplied-action-class resolution, nowhere broader.
+- **N6 — partial-closure scan.** A derivation of W2 (that the physical
+  readout context satisfies the Record constraints) or a framework
+  derivation of the action class would strengthen this bridge; neither is
+  supplied or assumed here. The next path this opens is the W2
+  identification itself and the multi-plaquette action-class question.
+- **N7 — steelman.** Strongest objection: "the homomorphism property is an
+  artifact of stipulating that the readout is a function of the datum and
+  that disjoint-union data multiply; a physical readout might see the record
+  pair, not the product." Response: the multiplicative union datum is not a
+  new assumption — it is what the determinant *is* on disjoint blocks (runner
+  B2), and a readout that sees more of the pair than the union datum is
+  using within-sector or cross-sector data that Record explicitly does not
+  supply; the interference guard shows concretely that such cross-sector
+  data collides with the additivity clause. What remains assumable is W2
+  itself, which is named, not hidden.
+- **N8 — cross-cycle echo.** The prior registrability note reached the
+  `k = 0` conclusion on the character family; the audit lane judged the
+  bridging step missing rather than implied. This note responds by proving
+  the class-level statement rather than re-asserting the family-level one —
+  the same repair pattern (replace family-instance by solution-space
+  computation) used in earlier deflation lessons.
+
+## Honest-auditor-read
+
+What an auditor should verify first: (1) that the forcing step (part 2) uses
+only the Record additivity clause plus determinant multiplicativity, with the
+readout-as-function-of-datum clause correctly attributed to the *supplied*
+context (it is — see Setup); (2) that the erasure step (part 3) makes no
+regularity assumption (it does not — oddness is two lines of group algebra,
+and the runner's Model B verifies the full nullspace, including any
+discretized stand-in for pathological additive maps); (3) that part (5)'s
+"entire vacuum-weight dependence is `det(D+M)`" is consumed from the
+retained_bounded strong-CP note's selected surface and checked only in
+miniature here, with source insertions explicitly excluded; (4) that the
+unaudited prior note is not load-bearing (all used legs re-derived and
+re-checked in this note's runner); (5) that no claim is made beyond the
+registrable class, the supplied context, and the supplied action class. The
+claim is a conditional bounded theorem: if those named premises hold, the
+physical `arg det(M_u M_d)` contribution is exhausted by the multiplicative
+determinant-character readout (its `k = 0` members), and no phase-sensitive
+non-multiplicative or action-level datum of the mass orientation remains
+within the stated surfaces.
+
+## Dependencies
+
+Live ledger `effective_status` checked on `origin/main`
+(`docs/audit/data/audit_ledger.json`) at 2026-06-11:
+
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+  (`minimal_axioms`, **meta** axiom node) — the Record (Additivity)+(Orbit)
+  boundary; the only axiom content used.
+- [`THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`](THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md)
+  (**audited_conditional**) — the note being bridged: supplies the
+  determinant-character family, the named-open bridge, and the supplied
+  determinant readout context this note works in.
+- [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md)
+  (**retained_bounded**) — the selected surface and Leg-A Gaussian/exact
+  determinant structure consumed by part (5); also the consumer of the
+  bridged premise.
+- [`THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md`](THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+  (**retained_bounded**) — gauge-side local cross-plane `F Ftilde` absence
+  composed in part (5).
+- [`PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md`](PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+  (**retained_bounded**) — the licensed action-class input of part (5).
+- [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+  (**unaudited** — prior statement only, NOT load-bearing; all used legs
+  re-derived and re-checked self-contained here).
+- [`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)
+  (**retained_no_go**) — cited only to scope what part (5) does NOT close
+  (premise 1).
+
+**No-promotion statement:** this note does not promote, demote, or set the
+audit status of any dependency. The independent audit lane is the only status
+authority.

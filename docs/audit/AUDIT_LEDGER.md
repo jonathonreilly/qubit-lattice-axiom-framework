@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 215 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 851 |
+| **retained_bounded** | 852 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1460 |
+| unaudited | 1459 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1300 |
+| `audited_clean` | 1301 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1777 |
+| `unaudited` | 1776 |
 
 | claim_type | count |
 |---|---:|
@@ -733,6 +733,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_octahedral_overconstrains_value_bit_narrow_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -10431,6 +10432,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With J_i = sigma_i/2 and K_i = B_i = i sigma_i/2, the Pauli commutators give [J,J]=i epsilon J, [J,K]=i epsilon K, and [K,K]=-i epsilon J, so the single-site bivectors realize the Lorentzian so(3,1) generator algebra.  _(class `A`)_
 - **chain closes:** True — The scoped algebraic claim closes by direct Pauli matrix identities and standard representation theory: B_i=(1/2)gamma_j gamma_k=i sigma_i/2 has the required non-compact commutator sign, while a Hermitian boost gives the compact sign. The note does not claim to derive the faithful matter selection, chirality, or the physical (3,1) signature.
 - **rationale:** Independent checking of the signs and factors confirms the Pauli/Clifford algebra used in the load-bearing step. The cited authorities supplied in the packet are retained-grade for the Pauli spin action, bivector identification, Cl(3)->Cl(3,1) sign branch framing, and no on-site anticommuting gamma0. Some runner PASS lines are qualitative or hard-coded, but the verdict does not rely on those lines: the load-bearing closure is a direct algebraic identity and the residual selections are explicitly outside the claim boundary.
+- **auditor confidence:** high
+
+### `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`
+
+- **Note:** [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](../../docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Relative to the enumerated current Record/Koide bookkeeping surface, the sector-versus-orbit occupancy rule is underdetermined; orbit-occupancy is only a proposed premise, not adopted.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-233856-dd21bd9457-koide_orbit_occupancy_indepe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Two explicit sector- and orbit-occupancy models both satisfy the stated Record/Koide bookkeeping constraints while giving doublet weights differing by the exact factor 2, and Record explicitly declines to supply any weighting or occupancy rule.  _(class `A`)_
+- **chain closes:** True — The Record axiom is an accepted premise and explicitly excludes weighting, normalization, probability, and occupancy rules. The two exhibited models satisfy the stated invariance, positivity, normalizability, and finite-additivity constraints while differing exactly in the occupancy factor, so the stated surface does not select one horn.
+- **rationale:** The non-axiom cited authority is retained, and the Minimal Axioms citation is covered by the accepted-premise carve-out. Independent checks reproduce the Gaussian and Berezin weight factors, the factor-2 ratio, the rho orientation, the Q map, and the slot/outcome count. The PDG comparison and kinetic-isotropy analogy are labeled non-inputs, and the note does not claim adoption of orbit-occupancy or a derivation of r = 1/2.
 - **auditor confidence:** high
 
 ### `koide_order_one_circulant_diagnostic_note_2026-05-29`

@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/beta_eff_two_witness_refresh_assessment_2026_06_12.py
+runner_sha256: ba596bb146ca70441780e2cf5e49b47c44a63da22ceaef8ae28105d4fba67b39
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.58
+status: ok
+----- stdout -----
+beta_eff two-witness refresh assessment
+original a = 1/26244
+original c = 1/10000000
+beta_eff_minus(6) = 170/27 ~= 6.296296296296297
+beta_eff_plus(6) = 26582183/4218750 ~= 6.300961896296296
+delta beta_eff(6) = 729/156250 ~= 0.004665600000000
+R_O(beta_eff_minus(6)) ~= 0.441402699435447
+R_O(beta_eff_plus(6)) ~= 0.441694136647056
+delta R_O ~= 2.914372116089026e-04
+PASS: retained packet pins beta_eff only through beta^5 -- no-go section 1 contains the retained onset datum
+PASS: original witnesses differ first at beta^6 -- delta_beta=729/156250
+PASS: original witnesses are analytic polynomials -- exact Fraction coefficients at integer powers 1, 5, and 6
+PASS: original witnesses are strictly increasing on [0,6] -- derivatives are 1 + nonnegative beta powers for beta >= 0
+PASS: original R_O spread is positive -- delta_R_O=2.914372116089026e-04
+PASS: ledger status for docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md -- effective_status=retained_no_go
+PASS: ledger status for docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md -- effective_status=retained_bounded
+PASS: docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md pins Delta object -- object=Delta(beta); effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md has ledger row for standing disclosure -- effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md pins Delta object -- object=Delta(beta); effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md has ledger row for standing disclosure -- effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md pins Delta object -- object=Delta(beta); effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md has ledger row for standing disclosure -- effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md pins Delta object -- object=Delta(beta); effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md has ledger row for standing disclosure -- effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_D10_COEFFICIENT_AND_RADIUS_EVIDENCE_BOUNDED_NOTE_2026-06-04.md pins Delta object -- object=Delta(beta); effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_D10_COEFFICIENT_AND_RADIUS_EVIDENCE_BOUNDED_NOTE_2026-06-04.md has ledger row for standing disclosure -- effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_D11_COEFFICIENT_AND_CONTINUATION_SPREAD_BOUNDED_NOTE_2026-06-04.md pins Delta object -- object=Delta(beta); effective_status=unaudited
+PASS: docs/BETA6_PLAQUETTE_D11_COEFFICIENT_AND_CONTINUATION_SPREAD_BOUNDED_NOTE_2026-06-04.md has ledger row for standing disclosure -- effective_status=unaudited
+PASS: docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md pins Delta object -- object=Delta(beta); effective_status=unaudited
+PASS: docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md has ledger row for standing disclosure -- effective_status=unaudited
+PASS: radius row threshold is the Delta tree-sector product threshold -- retained row states the sector object and threshold
+PASS: radius inequality threshold algebra -- (18/6)^4 = 81
+PASS: radius row does not bound beta_eff tail coefficient -- no beta_eff-series coefficient bound is stated
+PASS: no refreshed beta_eff witness pair is triggered -- beta_eff_pinning_rows=[]
+TOTAL: PASS=25, FAIL=0
+
+----- stderr -----
+

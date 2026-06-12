@@ -6,6 +6,8 @@
 and bounded Coulomb Green-kernel scaling companion that complement the
 `d >= 3` lower-bound result in
 [DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md).
+**Primary source-packet runner:** [`scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py`](../scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py)
+**Cached source-packet output:** [`logs/runner-cache/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.txt`](../logs/runner-cache/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.txt)
 **Status authority:** independent audit lane only.
 
 ## Purpose
@@ -68,6 +70,39 @@ full Bertrand closed-orbit theorem as an imported premise. The textbook
 Bertrand theorem remains a parallel cross-reference for the broader classical
 statement, not the source of the current finite-set upper cut.
 
+## 2026-06-12 Coulomb companion scope narrowing
+
+The Coulomb companion previously carried broader textbook/spectral breadth.
+This source packet therefore narrows the Coulomb side to the runner-checked
+Green-kernel support lemma in
+[`COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md):
+
+```text
+Q_d[psi_lambda] = lambda^2 T - lambda^(d-2) U
+```
+
+for the attractive Green-kernel form `G_d(r) = r^(2-d)` on compactly supported
+test functions away from the origin. The lemma shows ultraviolet collapse of
+this form for integer `d >= 5` and identifies `d = 4` as the marginal
+inverse-square exponent. It does **not** prove a framework-native
+electromagnetic sector, a hydrogenic spectrum, bound-state threshold
+accumulation, or atomic stability.
+
+Thus the Coulomb companion is only compatible support:
+
+```text
+L_runner = {3,4,5}
+U_Coulomb_scaling = {d : d <= 4}   (weak scaling upper edge)
+L_runner intersect U_Coulomb_scaling = {3,4}.
+```
+
+It is not the selector in this wrapper. The decisive upper edge remains the
+native stable-circular-orbit route:
+
+```text
+L_runner intersect U_stable = {3}.
+```
+
 ## Upper-bound routes covered
 
 ### 1. Native stable-circular-orbit upper edge (Bertrand context)
@@ -90,23 +125,30 @@ attiré vers un centre fixe," *C. R. Acad. Sci. Paris* **77**, 849
 Mechanics*, 3rd ed. (Addison-Wesley 2002), §3.6. These references are not
 load-bearing for the finite stable-circular-orbit composition above.
 
-### 2. Bounded Coulomb Green-kernel scaling companion (textbook context)
+### 2. Bounded Coulomb Green-kernel scaling companion
 
 Statement: the runner-checked support note proves only the framework-local
-scaling sublemma for the admitted Green-kernel quadratic form
+scaling sublemma for the admitted attractive Green-kernel quadratic form
 
 ```text
 Q_d[psi] = kappa int |grad psi|^2 dx
-           - alpha int |x|^(2-d) |psi|^2 dx.
+           - alpha int |x|^(2-d) |psi|^2 dx,
 ```
 
-The native calculation shows that `Delta r^(2-d) = 0` away from the origin,
-that norm-preserving dilations satisfy
-`Q_d[psi_lambda] = lambda^2 T - lambda^(d-2) U`, and therefore that the
-attractive Green-kernel form is unbounded below on this test-function family
-for every integer `d >= 5`. The `d = 4` case is marginal under this scaling
-test, and `d = 3` does not show ultraviolet collapse from this exponent
-comparison alone.
+the dilation `psi_lambda(x) = lambda^(d/2) psi(lambda x)` preserves
+the `L^2` norm and gives
+
+```text
+Q_d[psi_lambda] = lambda^2 T - lambda^(d-2) U.
+```
+
+Therefore the scaling test sends `Q_d[psi_lambda] -> -infinity` for
+integer `d >= 5`, while `d = 4` is marginal and `d = 3` is not ruled
+out by this ultraviolet collapse test. This is the whole load-bearing
+Coulomb companion in this wrapper.
+
+Equivalently, the attractive Green-kernel form is unbounded below on this test-function family
+for every integer `d >= 5`.
 
 Textbook references are cited only in parallel for the broader historical
 hydrogenic/atomic-stability context:
@@ -120,8 +162,10 @@ hydrogenic/atomic-stability context:
   Phys.* **354**, 316 (2015) — discussion of the bound-state existence
   threshold for the higher-dimensional Coulomb potential.
 
-This wrapper does **not** consume a textbook hydrogen spectrum, threshold
-accumulation theorem, self-adjoint-extension classification, or complete
+These references are parallel context for the broader physical hydrogenic
+story. They are not load-bearing authority in this wrapper, which consumes
+only the Green-kernel scaling lemma above. This wrapper does **not** consume a textbook hydrogen spectrum,
+threshold-accumulation theorem, self-adjoint-extension classification, or complete
 atomic-stability theorem as a load-bearing input.
 
 ## Upper-bound conclusion
@@ -130,17 +174,19 @@ Combined with the runner-verified `d >= 3` lower bound from
 self-consistent propagator + gravitational field in
 [DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md), the native
 stable-orbit edge gives the matching upper bound `d <= 3`, yielding the
-current finite-set conclusion `d = 3`. The bounded Coulomb scaling companion
-excludes `d >= 5` on its admitted Green-kernel form and leaves `d = 4`
-marginal; it is compatible support, not the unique selector for this packet.
+current finite-set conclusion `d = 3`. The bounded Coulomb Green-kernel
+scaling companion gives only the weaker exclusion of `d >= 5` by this
+ultraviolet-collapse test; against `L_runner = {3,4,5}`, it leaves `{3,4}`
+and is therefore compatible support, not the selector for this packet.
 
 ## What this note does NOT claim
 
 - This is NOT a proof of the full all-bounded-orbits-are-closed Bertrand
   theorem; the current finite composition only consumes the native
   stable-circular-orbit edge.
-- This is NOT a complete framework-native derivation of atomic stability,
-  a hydrogenic spectrum, or a `d = 3` Coulomb threshold theorem.
+- This is NOT a complete framework-native derivation of atomic stability.
+- This is NOT a hydrogenic spectral theorem: no normalizable-ground-state,
+  threshold-accumulation, or canonical Rydberg-series claim is load-bearing.
 - This is NOT a framework-level derivation of `d = 3` from `Cl(3)` on
   `Z^3` alone — `Cl(3) ⊗ Z^3` has `d = 3` built into the substrate, so
   the framework does not need a separate dimension-selection theorem.
@@ -152,7 +198,7 @@ marginal; it is compatible support, not the unique selector for this packet.
 
 This wrapper is consumed by:
 
-- [DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md) — supplies the upper-bound native stable-orbit edge plus bounded Green-kernel scaling companion complementing the lower-bound (self-consistent gravity / propagator) runner result.
+- [DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md) — supplies the upper-bound native stable-orbit edge plus bounded Coulomb Green-kernel scaling companion complementing the lower-bound (self-consistent gravity / propagator) runner result.
 
 ## Boundary
 

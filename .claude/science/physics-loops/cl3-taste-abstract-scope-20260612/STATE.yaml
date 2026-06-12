@@ -1,0 +1,33 @@
+loop: cl3-taste-abstract-scope-20260612
+date: 2026-06-12
+branch: physics-loop/cl3-taste-abstract-scope-20260612
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+cycle_count: 1
+active_route: abstract C8 scope narrowing
+target_claim_id: cl3_taste_generation_theorem
+target_blocker: "dependency_not_retained: retain or replace docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md for the taste-carrier dependency, or narrow this row to a purely abstract C^8 representation theorem with no staggered-Dirac carrier/generation-candidate load."
+files_touched:
+  - docs/CL3_TASTE_GENERATION_THEOREM.md
+  - scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py
+  - scripts/verify_cl3_sm_embedding.py
+  - logs/runner-cache/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.txt
+  - logs/runner-cache/verify_cl3_sm_embedding.txt
+open_imports:
+  - framework matter-carrier realization of the abstract C8
+  - physical-family identification of the three Z3 orbit labels
+  - mass ordering, hierarchy, CKM, Yukawa, chirality, and flavor dynamics
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+verification:
+  - "python3 scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py -> PASS=15 FAIL=0"
+  - "python3 scripts/verify_cl3_sm_embedding.py -> PASS=95 FAIL=0"
+  - "citation extraction for docs/CL3_TASTE_GENERATION_THEOREM.md -> s3_taste_cube_decomposition_note,minimal_axioms"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py,scripts/verify_cl3_sm_embedding.py --force --concurrency 1 --push-mode none --allow-non-main -> ok=2"
+pr_status: pending
+next_exact_action: push branch and open review PR
+stop_condition: review PR opened or PR_BACKLOG updated if GitHub creation fails

@@ -8,3 +8,4 @@
 - Result: `TOTAL: PASS=16 FAIL=0`.
 - Ran `python3 scripts/precompute_audit_runners.py --runners scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py --force --concurrency 1 --push-mode none --allow-non-main`.
 - Result: `ok 1`.
+- Opened PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3707

@@ -18,6 +18,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
 THETA_NOTE = DOCS / "STRONG_CP_THETA_ZERO_NOTE.md"
 AXIOM_NOTE = DOCS / "MINIMAL_AXIOMS_2026-06-05.md"
+BRIDGE_NOTE = DOCS / "REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
 
 PASS = 0
 FAIL = 0
@@ -48,7 +49,9 @@ def main() -> int:
     note_flat = flat(note_text)
     theta_text = THETA_NOTE.read_text(encoding="utf-8")
     axiom_text = AXIOM_NOTE.read_text(encoding="utf-8")
+    bridge_text = BRIDGE_NOTE.read_text(encoding="utf-8")
     axiom_flat = flat(axiom_text)
+    bridge_flat = flat(bridge_text)
 
     # Source-boundary checks: candidate route only, no discharge, no registry edit.
     check(
@@ -64,10 +67,18 @@ def main() -> int:
         and "No new axiom, primitive, admission" in note_text,
     )
     check(
-        "source names the determinant-readout bridge as the open",
+        "source names the determinant-readout bridge and cites the bridge note",
         "arg det(M_u M_d)" in note_flat
-        and "Until that bridge exists" in note_flat
+        and "REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
+        in note_text
         and "remains an explicit condition" in note_flat,
+    )
+    check(
+        "cited bridge note carries the Consequence A bridge content",
+        "arg det(M_u M_d)" in bridge_flat
+        and "exhausted" in bridge_flat
+        and "phase-free" in bridge_flat
+        and "additive" in bridge_flat,
     )
 
     # The Record axiom boundary the note leans on must still be in the axiom memo.

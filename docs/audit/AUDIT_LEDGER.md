@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 848 |
+| **retained_bounded** | 849 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1467 |
+| unaudited | 1466 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1295 |
+| `audited_clean` | 1296 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1784 |
+| `unaudited` | 1783 |
 
 | claim_type | count |
 |---|---:|
@@ -198,6 +198,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -2552,6 +2553,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The radial Laplacian identity, unit-flux normalization, absorbed positive Green-kernel coefficient, effective-potential derivatives, and sign classification follow by direct calculus from the displayed formulas. This closes only the stated continuum/effective-potential support claim, not a framework-internal gravity derivation or the full Bertrand closed-orbit theorem.
 - **rationale:** The load-bearing step is algebraic, not an imported numerical comparator or renaming. Independent manual differentiation gives the displayed radial harmonic coefficient q(q+d-2), the Green flux normalization, and the reduced second derivative k(d-2)(4-d)/r_c^d with the stated integer signs. The runner source performs finite checks consistent with these identities and does not hard-code an external measured value or read a contested premise. The clean verdict applies only to the bounded continuum claim as scoped in the note.
 - **auditor confidence:** high
+
+### `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded exact strong-coupling coefficients for Delta(beta)=P_full-P_1plaq through beta^7, including the finite GF(3) support reduction to cube-shell multiplicity terms and the arithmetic single-ratio falsification d_7/d_6 != d_6/d_5.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-231238-2591fe059f-beta6_plaquette_connected_be`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** No size-6 or size-7 distinct action support is GF(3)-closable, so d_6 and d_7 reduce to the four cube shells' multiplicity cumulants, which the exact SU(3) Haar/Moebius runner computes as d_6 = 7/5668704 and d_7 = 5/17006112.  _(class `C`)_
+- **chain closes:** True — The retained one-hop authorities supply the connected-cumulant hierarchy, the d_5 cube-shell anchor, and the finite distinct-shell geometry; the supplied runner source then computes the new finite Haar cumulant sums rather than importing a fitted value. Independent rational checks confirm the displayed d_5, d_6, d_7 ratios and multiplicity arithmetic, and no external comparator is load-bearing.
+- **rationale:** The load-bearing computation is first-principles finite enumeration plus exact SU(3) invariant-projector Haar integration and set-partition cumulants. The code path does not reduce to printing constants: it constructs projectors, moments, support enumeration, multiplicity sums, and exact Fraction cross-checks, while the maxorder-7 result is exposed through a SHA-pinned cache certificate. The claim is clean only at the bounded coefficient/support-reduction scope and does not derive P(6) or any nonperturbative beta=6 closure.
+- **auditor confidence:** medium
 
 ### `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30`
 

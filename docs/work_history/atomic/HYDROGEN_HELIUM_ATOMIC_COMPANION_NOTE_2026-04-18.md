@@ -2,7 +2,9 @@
 
 **Date:** 2026-04-18 (2026-05-18: claim_scope formalized as diagnostic
 work-history numerics only, not retained bounded authority, per audit
-verdict boundary instruction).
+verdict boundary instruction; 2026-06-12: source/cache packet verifier
+added for the hydrogen, helium Hartree, helium Jastrow, and dependency
+repair artifacts).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing content
 of this note is **diagnostic work-history numerics only**: the
@@ -11,18 +13,20 @@ vs `0.25`, `E_3/E_1 ≈ 0.11132` vs `0.11111`, emergent length
 `r_0 = 2/g`), the helium Hartree upper-bound row at the declared
 parameters, and the one-parameter Jastrow/VMC `|E(He)|/|E(He^+)|`
 improvement to `1.4357`. The note **does NOT** claim retained
-bounded authority on a hydrogen or helium derivation chain; the
-quoted readouts are diagnostic work-history numerics preserved from
-the source branch review, not pinned against a cached runner stdout
-under `logs/runner-cache/` in the restricted packet. The audit
-verdict's substantive repair sub-target ("provide the preserved
-runner source plus completed stdout/cached certificates and include
-the one-hop retained lattice kinetic and Coulomb-kernel authority
-notes") remains separate open work.
+bounded authority on a hydrogen or helium derivation chain. The quoted
+readouts are diagnostic work-history numerics preserved from the source
+branch review and are now pinned against preserved runner sources plus
+cached runner stdout under `logs/runner-cache/` in the restricted packet.
+The repair does not change the claim ceiling: continuum/volume control,
+exact helium, absolute eV scale, and retained atomic derivation-chain
+authority remain outside this row.
 **Status authority:** independent audit lane only.
 **Status:** bounded work-history companion; preserved from branch review, not a
 flagship authority surface
 **Source branch reviewed:** `origin/frontier/hydrogen-helium-review`
+**Packet verifier:** [`scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py`](../../../scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py)
+with cache
+[`logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt`](../../../logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt).
 
 **Audit-conditional perimeter (2026-05-05):**
 In the cited audit snapshot, the audit lane classified this row `audited_conditional` with
@@ -41,13 +45,23 @@ retained lattice kinetic and Coulomb-kernel authority notes in the
 restricted packet." This is a **diagnostic companion / work-history
 note** that **does not propagate** as a flagship authority: the
 quoted numerical readouts (`E_2/E_1 = 0.25857`, helium `|E(He)| /
-|E(He^+)| = 1.3424` and Jastrow `1.4357`, etc.) are not pinned in
-this revision to a cached runner stdout under
-`logs/runner-cache/`, and the upstream lattice-kinetic and
-Coulomb-kernel authority notes are not yet wired as audit-graph
-one-hop dependencies on this row. Nothing in this source edit sets audit status; the note remains a diagnostic work-history record.
+|E(He^+)| = 1.3424` and Jastrow `1.4357`, etc.) are now pinned in
+this revision to cached runner stdout under `logs/runner-cache/`, and
+the upstream lattice-kinetic and Coulomb-kernel authority notes are
+named through the dependency-repair note/verifier below. Nothing in
+this source edit sets audit status; the note remains a diagnostic
+work-history record.
 See "Citation chain and audit-stated repair path (2026-05-10)"
 below.
+
+**2026-06-12 source-packet repair:** the compact packet verifier named
+above checks that all three companion runner sources are present, that
+their `logs/runner-cache/` certificates are SHA-current and zero-exit,
+that the quoted hydrogen/helium readouts are present in those caches, and
+that the lattice-kinetic / Coulomb-kernel dependency repair verifier
+cache is present and passing (`PASS=28 FAIL=0`). This is a
+restricted-packet visibility repair only. Independent review and audit
+own whether it resolves the runner-artifact conditional verdict.
 
 ## Runner source + cache excerpt (load-bearing for restricted packet, inlined 2026-05-18)
 
@@ -419,6 +433,7 @@ authority chain on this row currently stands as follows.
 | Helium Hartree companion runner | [`scripts/frontier_atomic_helium_hartree_companion.py`](../../../scripts/frontier_atomic_helium_hartree_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_helium_hartree_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_hartree_companion.txt) | product-state upper bound only |
 | Helium Jastrow / VMC companion runner | [`scripts/frontier_atomic_helium_jastrow_companion.py`](../../../scripts/frontier_atomic_helium_jastrow_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt) | one-parameter VMC companion only |
 | Lattice-kinetic / Coulomb-kernel dependency repair verifier | [`docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md`](../../HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md), [`scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py`](../../../scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py) | verifier cache [`logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt`](../../../logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt), `PASS=28 FAIL=0` | later review decides whether this dependency repair is sufficient |
+| Restricted-packet source/cache verifier | [`scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py`](../../../scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py) | verifier cache [`logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt`](../../../logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt) | confirms source/cache visibility only; no status lift |
 | One-hop retained lattice kinetic operator / graph Hamiltonian | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) and current baseline [`MINIMAL_AXIOMS_2026-06-04.md`](../../MINIMAL_AXIOMS_2026-06-04.md) | named in the 2026-06-02 dependency repair note and checked by the verifier | scalar graph-Laplacian surface only |
 | One-hop retained Coulomb-kernel route on `Z^3` | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) | four-line `G(r) -> 1/(4 pi |r|)` to `V(r)=-g/|r|` arithmetic recorded in the 2026-06-02 repair note and checked by the verifier | Maradudin/asymptotic bridge scope only |
 | Live retained EW normalization lane (used as boundary disclaimer only) | retained on `main` per "Upstream Surfaces Used Here" | retained | this companion stays in dimensionless / coupling-relative units |
@@ -435,9 +450,11 @@ graph-Laplacian and Coulomb-kernel source path and explicitly rejects the
 unsupported "unique from Cl(3)" and finite-continuum-Rydberg framings.
 Independent review and audit must decide whether those repairs are
 sufficient; this note remains a diagnostic work-history companion and
-does not propagate as retained authority. The acknowledged residual is the
-pinning gap (no cached stdout backing the numerical readouts) plus
-the missing audit-graph dependency edges to the upstream lattice
+does not propagate as retained authority. The source/cache pinning gap is
+now addressed in the restricted packet. The remaining scientific residuals
+are scope residuals: finite-box rather than continuum control, product-state
+plus one-parameter Jastrow rather than exact helium, absolute eV scale
+outside this row, and audit-graph acceptance of the upstream lattice
 surfaces.
 
 This rigorization edit only sharpens the conditional perimeter and

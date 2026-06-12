@@ -1,0 +1,22 @@
+loop: atomic-companion-packet-repair-20260612
+mode: source_repair
+status: pr_ready
+target_claim_id: work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md
+  - scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py
+  - logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt
+  - .claude/science/physics-loops/atomic-companion-packet-repair-20260612/HANDOFF.md
+  - .claude/science/physics-loops/atomic-companion-packet-repair-20260612/TRACE_GATE.md
+  - .claude/science/physics-loops/atomic-companion-packet-repair-20260612/CLAIM_STATUS_CERTIFICATE.md
+remaining_boundaries:
+  - finite-box diagnostic numerics only
+  - continuum/volume-control closure outside scope
+  - exact helium outside scope
+  - absolute eV scale outside scope
+  - retained atomic derivation-chain authority outside scope
+next_exact_action: "Open review PR; independent review/audit owns row movement."

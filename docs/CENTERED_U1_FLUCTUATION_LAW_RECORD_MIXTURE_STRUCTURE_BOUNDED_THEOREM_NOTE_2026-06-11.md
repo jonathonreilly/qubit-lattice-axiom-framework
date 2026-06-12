@@ -95,3 +95,9 @@ not seed-robust as-is.
   status.
 - Standard math (method only): circular statistics; mixture decompositions; conditioning
   on filtrations (record prefixes); quantum-trajectory trees.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [born_rule_from_gleason_busch_derivation_note_2026-05-20](BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)

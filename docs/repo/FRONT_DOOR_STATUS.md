@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1511 |
+| Applied audit verdicts | 1508 |
 | Retained-grade rows, including boxed decorations | 1345 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 866 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 40 |
-| Unaudited rows | 1360 |
+| Unaudited rows | 1363 |
 | Retained-pending-chain rows | 17 |
-| Audited conditional rows | 63 |
+| Audited conditional rows | 60 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,16 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1362 |
-| Ready rows | 2 |
+| Total pending rows | 1365 |
+| Ready rows | 3 |
 | Cycle-break targets | 0 |
-| Critical pending | 272 |
+| Critical pending | 273 |
 | High pending | 285 |
 | Medium pending | 406 |
-| Leaf pending | 399 |
+| Leaf pending | 401 |
 
 Next ready rows by queue order:
 
+- [`staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 
@@ -82,11 +83,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1529 descendants; score 127.079
+- `minimal_axioms` - critical; 1530 descendants; score 127.080
 - `three_generation_observable_theorem_note` - critical; 1056 descendants; score 63.546
 - `graph_first_su3_integration_note` - critical; 1388 descendants; score 60.940
 - `observable_principle_from_axiom_note` - critical; 881 descendants; score 59.285
-- `key_terminology` - critical; 1215 descendants; score 50.248
+- `key_terminology` - critical; 1216 descendants; score 50.249
 - `minimal_axioms_2026-05-03` - critical; 997 descendants; score 49.963
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 969 descendants; score 45.422
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 977 descendants; score 44.434

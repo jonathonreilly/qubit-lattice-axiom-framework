@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_readout_lane_demarcation_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "alpha_s_derived_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_readout_lane_demarcation_note_2026-05-30",
         "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
         "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
         "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08",
         "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-        "alpha_s_derived_narrow_theorem_note_2026-05-10"
+        "alpha_s_derived_narrow_theorem_note_2026-05-10",
+        "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fb0ef897b501f99c0a0a9fc5ef43ec18953b8373f9db59fe9f65cf48169a5dbf",
+      "note_hash": "137b621e46423d56bba3c3bcc155e489309edcfcc8ecbcf7f2945e895df291c3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

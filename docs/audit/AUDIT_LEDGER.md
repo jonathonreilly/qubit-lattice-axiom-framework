@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 854 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1394 |
+| unaudited | 1393 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1300 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1711 |
+| `unaudited` | 1710 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 505 |
 | `high` | 505 |
-| `medium` | 865 |
-| `leaf` | 1315 |
+| `medium` | 866 |
+| `leaf` | 1314 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 720 | 31.49 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 850 | 31.23 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.84 | `unaudited` | unaudited |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 188 | 30.56 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 179 | 30.49 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1468,6 +1468,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -15709,6 +15710,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The L1 and L2 determinant claims close by finite-dimensional real linear algebra: antisymmetric spectral pairing, positive diagonal congruence, Neumann invertibility, and sign constancy. L3 closes only in the scoped sense stated in the note: Record supplies finite additivity, while determinant-only dependence, continuity/regularity, and c=1 are explicit conventions rather than derived axioms.
 - **rationale:** The displayed matrix factorization, spectral product sign, Neumann patch, block determinant identity, and continuous multiplicative-to-additive Cauchy solution all check independently of the runner. The runner performs finite random and structural sanity checks with no hard-coded fitted values or contested external comparators, and its source matches the note's scoped claims. The clean verdict is limited to the bounded theorem as written and does not derive a physical readout context, the continuity convention, or the c=1 normalization from Record.
 - **auditor confidence:** high
+
+### `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1, m>0 reconstructed two-step staggered Hamiltonian quasilocality from an assumed analytic free dispersion; not the interacting U-integrated log and not a full Lieb-Robinson velocity theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-012408-83a9eb3ddc-reconstructed_h_quasilocal_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since the free dispersion E(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)) is analytic in a positive complex strip for m>0, Paley-Wiener/Bernstein implies exponentially decaying Fourier coefficients H(x).  _(class `A`)_
+- **chain closes:** False — The analytic-to-exponential implication is valid once the stated massive dispersion and an appropriate positive strip are supplied. In this restricted packet, the explicit RP authority derives the dispersion only in 1+1d, while the source and runner use the d-dimensional sum_mu sin^2 p_mu form and also overstate the global arcsinh(m) rate/LR constant beyond what is checked.
+- **rationale:** The runner is substantive but assumes the d-dimensional dispersion formula and numerically checks an axis marginal, so its PASS lines do not independently close the full position-space kernel claim. The standard Paley-Wiener route supports quasilocality for a supplied massive analytic dispersion, but the packet lacks a one-hop retained derivation of the exact d-dimensional reconstructed transfer spectrum used by the note. The displayed correlation-length claim xi=1/arcsinh(m) is only justified as a one-axis rate scale, and the stated v_LR <= 2erJ composition is stale relative to the cited LR authority's overlap-weight/quasilocal formulation.
+- **open / conditional deps cited:**
+  - `MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`
+- **auditor confidence:** medium
 
 ### `record_axiom_audit_application_map_2026-06-06`
 

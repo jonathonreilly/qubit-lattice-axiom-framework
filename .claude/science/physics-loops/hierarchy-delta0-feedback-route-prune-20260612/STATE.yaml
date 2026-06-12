@@ -15,5 +15,5 @@ files_touched:
 verification:
   - "PYTHONPATH=scripts python3 scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py => PASS=32 FAIL=0"
   - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py --allow-non-main => ok 1, nonzero_exit 0"
-pr_status: pending
-next_exact_action: "Open review PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3720"
+next_exact_action: "Hand to reviewer/auditor; do not merge directly."

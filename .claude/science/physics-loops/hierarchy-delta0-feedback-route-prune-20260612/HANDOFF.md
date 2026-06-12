@@ -2,6 +2,8 @@
 
 This PR source-repairs the hierarchy DELTA0 magnitude open gate by recording one existing route-pruning result.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3720
+
 It does not close the gate. It records that ordinary mean-field link feedback is refuted as the supplier for the `alpha_s`-per-decoupling attachment rule, and leaves the three surviving route families explicit.
 
 Verification:

@@ -68,3 +68,17 @@ sections above. Create the directory if it does not exist.
   interpretation silently leans on.
 - An exciting match to a known constant is a comparator observation, not a
   derivation — say which one it is.
+
+## Execution Mechanism (standing — 2026-06-12)
+
+All execution under this command runs through the workhorse split (see the
+`workhorse` skill): Fable plans, writes specs, reviews every diff
+line-by-line, and lands; GPT-5.5 xhigh via `codex exec` executes (note/runner
+drafting per spec, scratch computation, structured extraction, panel lens
+execution — lenses run `-s read-only`; verdict synthesis is never delegated).
+No-go planning discipline applies: read the actual no-go note's primary text
+and plan against its exact audited scope, never its title or a secondary
+summary; if work reveals no-go language broader than its audited
+`claim_scope`, queue a narrowing repair PR. Where this command references
+review-loop or audit steps, those lanes are owner-operated (standing rule
+2026-06-11): prepare the PR/review surface and hand off; never run them.

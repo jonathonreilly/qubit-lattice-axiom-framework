@@ -1,7 +1,7 @@
 # P1 I_S Lattice-PT Citation and Bound Note (Composite H_unit Scalar-Bilinear Matching)
 
 **Date:** 2026-04-17
-**Claim type:** bounded support note
+**Claim type:** bounded_theorem
 **Type:** conditional / support
 **Runner:** `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`
 
@@ -296,6 +296,103 @@ estimate `6` is the honest summary of the literature bracket; the narrower range
 `[5, 7]` would be defensible under a more aggressive convention-matching argument but is
 not claimed here. **Users of this bound should treat the range as the primary output, not
 any central number.**
+
+## Native BZ certificate (2026-06-11; audit-requested)
+
+Status authority: independent audit lane only.
+
+The audit-requested native route was attempted without importing any literature numerical
+values as inputs. The in-repo definition chain is not a single unambiguous executable
+formula for the older `I_S ∈ [4, 10]` premise:
+
+- this note defines `I_S` as the finite `Z_S^{lat → MSbar}` matching coefficient
+  (`Z_S = 1 + (α_s C_F/(4π)) I_S + O(α_s^2)`);
+- `YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md` gives the symbolic
+  `D_S1` BZ kernel and the tadpole-subtracted definition
+  `I_S^{framework} := I_S^{D_S1,TI} = I_S^{D_S1} - I_S^{tadpole}`, but it names
+  `I_S^{tadpole}` only as the constant-propagator piece absorbed by `u_0`, not as a closed
+  numerical subtraction formula;
+- the later ratio chain decomposes the cited scalar-density coefficient as
+  `I_S^cited = 2 · I_v_scalar - 6 + 2 · I_leg`, while `I_leg` cancels from the
+  displayed ratio correction and is not natively computed here.
+
+The closest operational native scalar-vertex expression already present in the repo is the
+full-staggered BZ expression from
+`scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py`:
+
+```
+I_scalar_native(N)
+  = 2 + (16π² / (16 · u_0²))
+      · < N_S(k) / ((D_ψ(k) + m²)(D_g(k) + m²))
+          - 4 / (k² + m²)² >_BZ
+
+D_ψ(k) = Σ_μ sin²(k_μ)
+D_g(k) = 4 Σ_μ sin²(k_μ/2)
+N_S(k) = Σ_μ cos²(k_μ/2)
+m² = 0.01,  u_0 = 0.5934^(1/4)
+```
+
+The new runner
+`scripts/yt_p1_i_s_native_bz_certificate_2026_06_11.py` evaluates that expression on
+uniform 4D midpoint BZ grids `N = 8, 16, 32, 64` and writes the cache
+`logs/runner-cache/yt_p1_i_s_native_bz_certificate_2026_06_11.txt`. Current run:
+`TOTAL: PASS=11 FAIL=0`.
+
+Grid values:
+
+| N | `I_scalar_native` | change vs previous |
+|---:|-------------------:|-------------------:|
+| 8  | 3.794186533223 | seed |
+| 16 | 3.885650653368 | 2.3539% |
+| 32 | 3.900542209113 | 0.3818% |
+| 64 | 3.902216606381 | 0.0429% |
+
+Second-order extrapolation from `N = 32, 64` gives
+
+```
+I_scalar_native = 3.902774738804 ± 0.000558132423   (resolution estimate)
+Δ_1_native      = 2 · I_scalar_native - 6
+                = 1.805549477608                  (conserved-current ratio diagnostic)
+```
+
+**Bracket verdict:** this native scalar-vertex computation does **not** certify the older
+`I_S ∈ [4, 10]` premise. The extrapolated native scalar value is below the lower edge `4`
+by about `0.0972`, far larger than the resolution estimate. It is finite and non-vacuous,
+but it is not inside `[4, 10]`.
+
+What this section does and does not replace:
+
+- It supplies a framework-native BZ runner for the operational scalar-vertex candidate
+  and records its convergence.
+- It does **not** replace the literature-citation premise for the older full
+  scalar-density `I_S ∈ [4, 10]` bracket.
+- It does **not** demote the literature premise to non-load-bearing context; the native
+  computation did not certify the bracket, and the in-repo full `I_S` reconstruction remains
+  ambiguous without a native `I_leg`/tadpole-subtraction closure.
+- Downstream arithmetic that adopts `I_S ∈ [4, 10]` remains conditional on that cited
+  premise unless a later native full-`I_S` runner supplies the missing closure.
+
+## Native BZ certificate follow-on: I_leg definition gap (2026-06-11; audit-requested)
+
+The in-repo ratio-chain does not currently display a defining BZ expression for the
+staggered external-leg self-energy integral `I_leg` at the matching point. The
+chain names `I_leg` only as the common external-quark `Z_psi` term: the
+Rep-A/Rep-B note writes `2 * Z_psi^leg_A = 2 * C_F * I_leg` and says only that
+`I_leg` is the 1-loop lattice BZ integral for the quark self-energy; the
+Delta_1 note uses `I_S^cited = 2 * I_v_scalar + (-6) + 2 * I_leg` with a cited
+range for `I_leg`; and the H_unit native note enumerates the external self-energy
+topologies `D_S2`, `D_S3` but absorbs them into `Z_q` while defining only the
+`D_S1` scalar-vertex BZ integral.
+
+Therefore the missing native object is
+`I_leg^native(mu = 1/a; tadpole-improved Wilson-plaquette + 1-link staggered;
+external-quark Z_psi finite part)`. A full native reconstruction
+`I_S^native_full = 2 * I_v_scalar_native - 6 + 2 * I_leg_native` requires that
+object to be supplied as a native definition/runner first. No native `I_leg`
+runner is added here, and the
+cited `I_S in [4, 10]` premise remains unchanged. This is an in-repo definition
+absence, not a claim that no valid lattice-PT `I_leg` expression exists
+externally.
 
 ## 3. Framework-specific P1 contribution at `α_LM = 0.0907`
 

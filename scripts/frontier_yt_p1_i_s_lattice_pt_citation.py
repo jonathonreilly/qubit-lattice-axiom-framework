@@ -115,7 +115,7 @@ def part_0_status_boundary() -> None:
 
     note = read_note()
     check("source note exists", NOTE_PATH.exists(), str(NOTE_PATH.relative_to(ROOT)))
-    check("claim type is bounded support note", "**Claim type:** bounded support note" in note)
+    check("claim type is bounded_theorem", "**Claim type:** bounded_theorem" in note)
     check("type is conditional / support", "**Type:** conditional / support" in note)
     check("conditional citation/support boundary is present", "conditional citation/support layer" in note)
     check("old proposed_retained status is absent", "proposed_retained" not in note)

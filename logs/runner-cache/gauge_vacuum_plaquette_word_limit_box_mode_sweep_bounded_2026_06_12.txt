@@ -1,0 +1,165 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_word_limit_box_mode_sweep_bounded_2026_06_12.py
+runner_sha256: 5fcbc0513b5936983ba4514d36bc1ef24e1b75fec5c7d84b1786413257eaadd7
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.55
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette word-limit box/mode sweep
+beta=6.0, word NMAX=(3, 4, 5, 6, 7), word MODE_MAX=(80, 200), source default NMAX=7, source MODE_MAX=200
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+No fitting, extrapolation claim, or canonical repinning is performed.
+
+================================================================================================================
+Part 1: builder cost and memory budget
+================================================================================================================
+NMAX MODE_MAX word_box reduced_shape coefficient_mode_terms
+----------------------------------------------------------------------------
+   3       80       16 16x16       2576
+   3      200       16 16x16       6416
+   4       80       25 25x25       4025
+   4      200       25 25x25      10025
+   5       80       36 36x36       5796
+   5      200       36 36x36      14436
+   6       80       49 49x49       7889
+   6      200       49 49x49      19649
+   7       80       64 64x64      10304
+   7      200       64 64x64      25664
+PASS: NMAX=4 box convention is 25 weights
+PASS: NMAX=6 reduced object is 49x49
+PASS: NMAX=7 optional cell remains a 64x64 reduced object
+PASS: Wilson coefficient table work stays inside the bounded runner budget
+      max coefficient-mode terms=25664
+
+================================================================================================================
+Part 2: word-packet NMAX/MODE_MAX sweep
+================================================================================================================
+NMAX MODE word_box theta theta_ratio P_inf P40 |P40-P_inf| |P_inf-0.5934|
+------------------------------------------------------------------------------------------------------------------------------------
+   3   80       16 0.263745855986681 0.263711666964916 0.615191992185898 0.615191992185897 2.220e-16 0.021791992185898
+PASS: eta_inf residual is small for word NMAX=3, MODE_MAX=80
+      residual=2.220e-16
+PASS: k=40 reaches the pair-support P_inf for word NMAX=3, MODE_MAX=80
+      |P40-P_inf|=2.220e-16
+PASS: theta closed form matches the measured increment ratio for word NMAX=3, MODE_MAX=80
+      theta=0.263745855986681, ratio=0.263711666964916, delta=3.419e-05
+   3  200       16 0.263745855986681 0.263711666964916 0.615191992185898 0.615191992185897 2.220e-16 0.021791992185898
+PASS: eta_inf residual is small for word NMAX=3, MODE_MAX=200
+      residual=2.220e-16
+PASS: k=40 reaches the pair-support P_inf for word NMAX=3, MODE_MAX=200
+      |P40-P_inf|=2.220e-16
+PASS: theta closed form matches the measured increment ratio for word NMAX=3, MODE_MAX=200
+      theta=0.263745855986681, ratio=0.263711666964916, delta=3.419e-05
+   4   80       25 0.263745855973467 0.263714844278881 0.615191992185898 0.615191992185897 4.441e-16 0.021791992185898
+PASS: eta_inf residual is small for word NMAX=4, MODE_MAX=80
+      residual=1.665e-16
+PASS: k=40 reaches the pair-support P_inf for word NMAX=4, MODE_MAX=80
+      |P40-P_inf|=4.441e-16
+PASS: theta closed form matches the measured increment ratio for word NMAX=4, MODE_MAX=80
+      theta=0.263745855973467, ratio=0.263714844278881, delta=3.101e-05
+   4  200       25 0.263745855973467 0.263714844278881 0.615191992185898 0.615191992185897 4.441e-16 0.021791992185898
+PASS: eta_inf residual is small for word NMAX=4, MODE_MAX=200
+      residual=1.665e-16
+PASS: k=40 reaches the pair-support P_inf for word NMAX=4, MODE_MAX=200
+      |P40-P_inf|=4.441e-16
+PASS: theta closed form matches the measured increment ratio for word NMAX=4, MODE_MAX=200
+      theta=0.263745855973467, ratio=0.263714844278881, delta=3.101e-05
+   5   80       36 0.263745855973467 0.263714870591533 0.615191992185898 0.615191992185898 0.000e+00 0.021791992185898
+PASS: eta_inf residual is small for word NMAX=5, MODE_MAX=80
+      residual=1.110e-16
+PASS: k=40 reaches the pair-support P_inf for word NMAX=5, MODE_MAX=80
+      |P40-P_inf|=0.000e+00
+PASS: theta closed form matches the measured increment ratio for word NMAX=5, MODE_MAX=80
+      theta=0.263745855973467, ratio=0.263714870591533, delta=3.099e-05
+   5  200       36 0.263745855973467 0.263714870591533 0.615191992185898 0.615191992185898 0.000e+00 0.021791992185898
+PASS: eta_inf residual is small for word NMAX=5, MODE_MAX=200
+      residual=1.110e-16
+PASS: k=40 reaches the pair-support P_inf for word NMAX=5, MODE_MAX=200
+      |P40-P_inf|=0.000e+00
+PASS: theta closed form matches the measured increment ratio for word NMAX=5, MODE_MAX=200
+      theta=0.263745855973467, ratio=0.263714870591533, delta=3.099e-05
+   6   80       49 0.263745855973467 0.263714844278881 0.615191992185898 0.615191992185897 4.441e-16 0.021791992185898
+PASS: eta_inf residual is small for word NMAX=6, MODE_MAX=80
+      residual=1.665e-16
+PASS: k=40 reaches the pair-support P_inf for word NMAX=6, MODE_MAX=80
+      |P40-P_inf|=4.441e-16
+PASS: theta closed form matches the measured increment ratio for word NMAX=6, MODE_MAX=80
+      theta=0.263745855973467, ratio=0.263714844278881, delta=3.101e-05
+   6  200       49 0.263745855973467 0.263714844278881 0.615191992185898 0.615191992185897 4.441e-16 0.021791992185898
+PASS: eta_inf residual is small for word NMAX=6, MODE_MAX=200
+      residual=1.665e-16
+PASS: k=40 reaches the pair-support P_inf for word NMAX=6, MODE_MAX=200
+      |P40-P_inf|=4.441e-16
+PASS: theta closed form matches the measured increment ratio for word NMAX=6, MODE_MAX=200
+      theta=0.263745855973467, ratio=0.263714844278881, delta=3.101e-05
+   7   80       64 0.263745855973467 0.263714855724793 0.615191992185898 0.615191992185897 4.441e-16 0.021791992185898
+PASS: eta_inf residual is small for word NMAX=7, MODE_MAX=80
+      residual=2.220e-16
+PASS: k=40 reaches the pair-support P_inf for word NMAX=7, MODE_MAX=80
+      |P40-P_inf|=4.441e-16
+PASS: theta closed form matches the measured increment ratio for word NMAX=7, MODE_MAX=80
+      theta=0.263745855973467, ratio=0.263714855724793, delta=3.100e-05
+   7  200       64 0.263745855973467 0.263714855724793 0.615191992185898 0.615191992185897 4.441e-16 0.021791992185898
+PASS: eta_inf residual is small for word NMAX=7, MODE_MAX=200
+      residual=2.220e-16
+PASS: k=40 reaches the pair-support P_inf for word NMAX=7, MODE_MAX=200
+      |P40-P_inf|=4.441e-16
+PASS: theta closed form matches the measured increment ratio for word NMAX=7, MODE_MAX=200
+      theta=0.263745855973467, ratio=0.263714855724793, delta=3.100e-05
+
+word-axis P_inf span across computed cells = 0.000000000000e+00
+word-axis P40 span across computed cells = 4.440892098501e-16
+theta span across computed cells = 1.321337483873e-11
+PASS: word-box and tensor-mode axes do not move P_inf at 1e-12 in this finite sweep
+      P_inf span=0.000e+00, P40 span=4.441e-16
+PASS: theta is stable across the word box/mode cells at the displayed precision scale
+      theta span=1.321e-11
+
+================================================================================================================
+Part 3: source-box sweep at fixed word packet
+================================================================================================================
+source_NMAX source_MODE P_inf P40 |P40-P_inf| |P_inf-0.5934|
+----------------------------------------------------------------------------------------------------------------
+          5         200 0.615191040446003 0.615191040446003 1.110e-16 0.021791040446003
+PASS: source NMAX=5 reaches pair-support P_inf by k=40
+      |P40-P_inf|=1.110e-16
+          7         200 0.615191992185898 0.615191992185897 4.441e-16 0.021791992185898
+PASS: source NMAX=7 reaches pair-support P_inf by k=40
+      |P40-P_inf|=4.441e-16
+          9         200 0.615191992282189 0.615191992282189 0.000e+00 0.021791992282189
+PASS: source NMAX=9 reaches pair-support P_inf by k=40
+      |P40-P_inf|=0.000e+00
+source-box P_inf span over NMAX=5,7,9 = 9.518361862026e-07
+source NMAX 5->7 drift = +9.517398950054e-07
+source NMAX 7->9 drift = +9.629119723797e-11
+PASS: source-box drift is recorded and remains far below the fenced comparator distance
+      source_span=9.518e-07, default_distance=2.179e-02
+
+================================================================================================================
+Part 4: bounded verdict diagnostics
+================================================================================================================
+```text
+default word packet P_inf = 0.615191992185898; |P_inf - 0.5934| = 0.021791992185898
+word-axis P_inf span = 0.000000000000e+00; word-axis P40 span = 4.440892098501e-16; theta span = 1.321337483873e-11
+source-box P_inf span = 9.518361862026e-07; source NMAX 5->7 drift = +9.517398950054e-07; source NMAX 7->9 drift = +9.629119723797e-11
+diagnostic verdict: within these computed cells, the dominant-weight box and Bessel-mode axes do not move the word-limit value toward the fenced comparator; the named open target left by this sweep is the 1D word-chain versus 3D rim-geometry residual.
+non-load-bearing Richardson-style diagnostic: no word-axis Richardson value is emitted because the computed P_inf cells are identical at the 1e-12 scale.
+```
+PASS: fenced comparator is used only for distance reporting
+PASS: no fitting or extrapolation claim is emitted
+
+================================================================================================================
+Part 5: note hygiene and residual boundary
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note links the primary runner as a one-hop authority
+PASS: note omits transient preparation refs
+PASS: note names canonical load-bearing input notes
+Named residuals: finite dominant-weight box; finite Bessel mode support; source-box truncation; finite word count checked through k=40; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.
+PASS: runner names residuals without claiming them retired
+
+TOTAL: PASS=47, FAIL=0
+
+----- stderr -----
+

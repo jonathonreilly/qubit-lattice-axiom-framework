@@ -3,11 +3,13 @@
 **Date:** 2026-06-10 (split from
 `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
 so the strong-CP mass-orientation route stands on the theta surface alone,
-with no dependency on the `AC_phi_lambda` staggered gate)
+with no dependency on the `AC_phi_lambda` staggered gate) (2026-06-12: the
+determinant-readout bridge named open here is now supplied by
+`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+and wired below as a load-bearing dependency)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
-set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
-registry.
+set or predict an audit outcome and does not edit the audit-lane-owned Tier-A registry.
 **Primary runner:** [`scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py`](../scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py)
 **Runner cache:** [`logs/runner-cache/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.txt`](../logs/runner-cache/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.txt)
 
@@ -23,7 +25,8 @@ This note proves one bounded fact:
 It does not discharge the strong-CP mass-orientation premise by itself,
 derive the strong-CP action-form premise, or change
 `docs/audit/data/tier_a_admissions.json`. Those moves require later
-registry/audit handling and the missing bridge named below.
+registry/audit handling and the determinant-readout bridge cited below, whose
+audit status is owned by the independent audit lane.
 
 ## Determinant Readout Lemma
 
@@ -50,29 +53,49 @@ hence `sin(k phi) = 0` for all `phi`, so `k = 0`. Therefore the invariant
 members of this determinant-character family are phase-free functions of
 `|det|`.
 
-The hostile guard is important: K/CPT orbit invariance alone gives evenness,
-not phase erasure. For example `cos(arg z)` is K-invariant and still depends
-on the phase. The phase-erasure conclusion applies only inside the supplied
-multiplicative determinant-character class.
+The hostile guard is important: K/CPT orbit invariance alone gives evenness, not phase erasure.
+For example `cos(arg z)` is K-invariant and still depends on the phase. The
+phase-erasure conclusion applies only inside the supplied multiplicative
+determinant-character class.
 
-## Named Open: The Determinant-Readout Bridge
+## The Determinant-Readout Bridge (supplied)
 
-This lemma is a candidate route for the mass-orientation part of the
-strong-CP surface, not a completed discharge. To discharge that premise, a
+This lemma is a candidate route for the mass-orientation part of the strong-CP
+surface, not a completed discharge by itself. To discharge that premise, a
 later retained bridge must show that the physical `arg det(M_u M_d)`
 contribution used by
-[`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) is exhausted
-by this determinant-class registrable readout, and that no phase-sensitive
+[`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) is exhausted by
+this determinant-class registrable readout, and that no phase-sensitive
 non-multiplicative or action-level datum remains relevant to that premise.
-Until that bridge exists, the positive-real mass orientation remains an
-explicit condition of the strong-CP selected surface.
+That bridge is now supplied by
+[`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+(Consequence A there): a Record-registrable scalar readout is finitely
+additive over pairwise-disjoint records and constant on `K`/CPT orbits;
+additivity forces its per-sector phase functional to be odd, orbit-constancy
+forces it to be even, and odd-and-even forces it to vanish identically. Hence
+the registrable content of `arg det(M_u M_d)` is exhausted by the phase-free
+`k = 0` (modulus) class: phase-sensitive non-multiplicative functionals (for
+example `cos(arg z)`, this note's hostile guard) are excluded by additivity,
+cross-sector interference data are excluded by additivity, and the
+action-level bare-`theta` slot is strong-CP premise 1 — a separate
+action-surface premise tracked by the per-plaquette license route, not part of
+the mass-orientation premise.
+
+What remains conditional, exactly as named in the bridge note: the standing
+modeling premise that the physical mass-surface readout context satisfies the
+Record registrability constraints remains an explicit condition of the
+strong-CP selected surface (the bridge removes phase freedom within the
+Record-registrable class; it does not prove the physical readout must be in
+that class), and the bridge note's audit status is owned by the independent
+audit lane and is not asserted here.
 
 ## Registry Consequence
 
 The only supported consequence is a candidate route for future Tier-A
-registry review: the determinant lemma may help remove the positive-real
-mass-orientation condition of the strong-CP selected surface only after the
-determinant-readout bridge above is retained.
+registry review: the determinant lemma composed with the determinant-readout
+bridge cited above may help remove the positive-real mass-orientation
+condition of the strong-CP selected surface only after that bridge is
+retained; registry handling stays with the audit lane.
 
 No new axiom, primitive, admission, normalization, probability rule,
 comparator, or audit verdict is introduced here.
@@ -84,6 +107,11 @@ comparator, or audit verdict is introduced here.
 - [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) for the
   selected-surface strong-CP premise whose mass-orientation part is the
   candidate target here.
+- [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+  for the determinant-readout bridge (its Consequence A): registrable readouts
+  are additive plus `K`/CPT-orbit-constant, hence phase-free, so the
+  multiplicative determinant-character family exhausts the registrable
+  `arg det(M_u M_d)` content.
 
 The `AC_phi_lambda` orientation lemma that previously shared a note with
 this lemma remains in

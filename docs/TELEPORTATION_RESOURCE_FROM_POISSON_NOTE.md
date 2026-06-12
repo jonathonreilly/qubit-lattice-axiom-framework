@@ -98,6 +98,51 @@ apparatus Hamiltonian, durable endogenous records, or a native detector path.
 It only routes the finite logical-operator selection through a retained-bounded
 source instead of leaving it as an unregistered convention.
 
+## 2026-06-12 Native Preparation/Readout Hard Residual
+
+The finite operator algebra is no longer the live blocker: RALA supplies
+the retained-axis `Z_axis`, `X_axis`, Bell projectors, and ideal logical
+teleportation closure on the finite audited surfaces. The live blocker
+is operational.
+
+What this packet can currently say:
+
+- the Poisson/CHSH small-surface ground states, after tracing cells and
+  spectator tastes, contain a high-fidelity retained-axis logical Bell
+  resource relative to the null case;
+- the retained-axis operator convention is finite-algebraic and
+  retained-bounded;
+- the standard teleportation channel algebra closes for a supplied
+  logical resource.
+
+What it still does not derive:
+
+- a native preparation Hamiltonian or schedule that produces the
+  Poisson resource without offline diagonalization;
+- a physical detector/readout path for the retained-axis logical bit
+  and Bell record;
+- endogenous durable records or apparatus dynamics that implement the
+  ideal logical operations.
+
+The adjacent preparation/readout probe and operator-consistent
+end-to-end artifacts are therefore support-only. They narrow the target
+but do not replace the missing native preparation/readout theorem. This
+row remains an open gate for a physical deterministic resource, not a
+retained teleportation-resource theorem.
+
+```yaml
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+closed_in_this_source_packet:
+  - bounded offline Poisson/CHSH extraction diagnostics
+  - retained-bounded finite retained-axis logical operator algebra
+remaining_live_blocker: native preparation/readout and apparatus theorem
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+```
+
 ## Script
 
 New runner:

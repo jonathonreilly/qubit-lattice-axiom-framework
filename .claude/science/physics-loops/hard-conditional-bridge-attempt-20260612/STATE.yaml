@@ -1,0 +1,45 @@
+loop: hard-conditional-bridge-attempt-20260612
+date: 2026-06-12
+mode: run
+target_status: best-honest-status
+base: origin/main
+branch: physics-loop/hard-conditional-bridge-attempt-20260612
+current_surface_status: source-repair-pack
+cycle_count: 1
+active_route: source-side residual certificates for remaining uncovered conditional rows
+files_touched:
+  - docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
+  - scripts/axiom_first_single_clock_codimension1_evolution_check.py
+  - docs/ALPHA_S_DERIVED_NOTE.md
+  - scripts/frontier_alpha_s_derived_bounded_chain.py
+  - docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md
+  - scripts/signed_gravity_aps_locked_source_action_proposal.py
+  - docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md
+  - scripts/frontier_teleportation_resource_from_poisson.py
+  - docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md
+  - scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py
+  - docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_neutrino_schur_suppression_named_admissions.py
+open_imports:
+  - B-AXIS single-clock registration direction
+  - alpha_s B1 plaquette value certificate
+  - alpha_s B3 channel-selection/coupling-map bridge
+  - alpha_s B4 lattice-to-MSbar scheme/scale bridge
+  - APS-locked source-action origin
+  - teleportation native preparation/readout and apparatus theorem
+  - quark sector-specific mass scheme/scale and dial theorem
+  - DM-neutrino physical readout, physical coupling, and phi-space transport
+no_go_routes:
+  - single-clock Record/anomaly/chirality route does not derive B-AXIS
+  - signed-gravity separable APS/Wald/Gauss stack does not span chi-odd source
+  - DM-neutrino native pure even-trace Dirac-Higgs transport cannot supply taste-cube anisotropy
+trace_gate_classification: mixed direct_blocker_closure and negative_route_pruning
+review_findings: not yet reviewed
+verification:
+  affected_runners: pass
+  explicit_precompute_check_only: fresh
+  diff_check: clean
+  audit_data_changes: none
+pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3739
+next_exact_action: reviewer extracts science and audit lane re-evaluates independently
+stop_condition: all six remaining uncovered conditional rows have source repairs or explicit hard-residual guards

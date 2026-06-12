@@ -45,7 +45,7 @@ status are set only by the independent audit lane.
 **Loop:** `3plus1d-native-closure-2026-05-02` (original);
 science-fix lane 2026-06-11 (re-scope)
 **Runner:** [`scripts/axiom_first_single_clock_codimension1_evolution_check.py`](../scripts/axiom_first_single_clock_codimension1_evolution_check.py)
-(`TOTAL: PASS=44 FAIL=0`, deterministic, runtime well under one minute)
+(`TOTAL: PASS=45 FAIL=0`, deterministic, runtime well under one minute)
 **Authority role:** source-note proposal. If retained, this row
 supplies the *axis-conditional* single-clock codimension-1 clauses
 (S1′)+(S2′) cited by `ANOMALY_FORCES_TIME_THEOREM.md` (its SC premise
@@ -290,6 +290,42 @@ supplies the free-bilinear exact-log membership. The composed
 free-bilinear LR bridge (R-FBQL) is the current one-hop propagation
 supplier consumed here; it does not prove gauged/interacting
 membership.
+
+## 2026-06-12 Remaining-Blocker Source Firewall
+
+This repair separates the already-retired propagation premise from the
+still-live axis-selection premise:
+
+- **B-RANGE is not a current blocker.** The current claim no longer
+  asks the auditor to grant finite range for a generic log-transfer
+  generator. S2'(c) is sourced only by the retained_bounded free
+  bilinear exact-log/quasilocal bridge (R-FBQL) on its own `U = 1`,
+  massive-sector surface. Interacting or fixed-background exact-log
+  propagation remains open, but it is not part of this row's current
+  theorem statement.
+- **B-AXIS remains a real declared premise.** The framework has not
+  derived the registration direction, the blocked time unit, or the
+  exclusion of independent commuting transfer factors from the current
+  retained axiom surface. The follow-up source
+  [`SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`](SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md)
+  narrows the route: Record durability, anomaly/chirality labels, and
+  the native exchange-symmetric staggered surface transport with the
+  axis and therefore do not derive B-AXIS. A future positive supplier
+  must provide a non-transportable registration-direction theorem or a
+  reviewed boundary-condition asymmetry bridge; this note does not add
+  such a premise and does not treat it as an axiom.
+
+```yaml
+actual_current_surface_status: bounded-support
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+remaining_live_blocker: B-AXIS
+retired_from_current_scope:
+  - B-RANGE
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+```
 
 ## Statement
 

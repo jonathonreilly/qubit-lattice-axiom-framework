@@ -613,6 +613,13 @@ def block_D_discipline() -> None:
            and "R-FBQL" in text
            and "0 < d μ < η < arcsinh(m)" in text,
            "free U=1 exact-log sector and finite quasilocal lightcone named")
+    record("D", "2026-06-12 firewall: B-RANGE retired, B-AXIS remains the live blocker",
+           "2026-06-12 Remaining-Blocker Source Firewall" in text
+           and "remaining_live_blocker: B-AXIS" in text
+           and "SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md" in text
+           and "do not derive B-AXIS" in text
+           and "bare_retained_allowed: false" in text,
+           "axis-selection no-go route wired without retained promotion")
 
 
 # -------------------------------------------------------------------

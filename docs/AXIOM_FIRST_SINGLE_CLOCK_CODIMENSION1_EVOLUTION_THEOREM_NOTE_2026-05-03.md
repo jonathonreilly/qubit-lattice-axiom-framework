@@ -1,7 +1,8 @@
-# Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) ⊗ Z^3
+# Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3
 
 **Date:** 2026-05-03 (hostile science-fix re-scope 2026-06-11;
-finite-range premise narrowing 2026-06-11 #2; see §0)
+finite-range premise narrowing 2026-06-11 #2; Cl(3) complexification
+wording hygiene 2026-06-11 #3; see §0)
 **Type:** bounded_theorem
 **Claim scope:** **Axis-conditional single-clock codimension-1 unitary
 evolution.** Given the declared evolution-axis premise (B-AXIS) below
@@ -16,13 +17,15 @@ transfer-relative and τ-relative) of the unique strongly continuous
 one-parameter unitary group `U(t) = exp(-itH)` on the finite block
 Hilbert space; (S2′) each lattice time slice `Σ_t = {t} × Z^3` is a
 codimension-1 Cauchy surface: the equal-time local algebra is the
-mutually commuting tensor product of per-site `M_2(C) ≅ Cl(3,0) ⊗ C`
-factors, and slice data propagates with the finite Lieb-Robinson
-velocity `v_LR = 2 e J_* D_int R_int` of the retained_bounded cluster
-row (L1/L3) — the propagation clause (c) **conditional on the declared
-finite-range generator premise (B-RANGE)**, since the transfer-derived
-logarithmic generator is not proven finite-range by any retained
-one-hop authority; (S3′) **the axis is a premise, not a derivation**: the
+mutually commuting tensor product of per-site one-qubit `M_2(C)` Pauli
+factors selected from the retained complexification split
+`Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)`, and slice data propagates with the
+finite Lieb-Robinson velocity `v_LR = 2 e J_* D_int R_int` of the
+retained_bounded cluster row (L1/L3) — the propagation clause (c)
+**conditional on the declared finite-range generator premise
+(B-RANGE)**, since the transfer-derived logarithmic generator is not
+proven finite-range by any retained one-hop authority; (S3′) **the axis
+is a premise, not a derivation**: the
 staggered-Dirac hop operator is *exactly* invariant under the
 time-space exchange unitary `W = P_{τ↔1} ∘ diag((-1)^{x_τ x_1})`
 (computed certificate, residual `0`), so RP-admissibility cannot
@@ -135,6 +138,13 @@ rather than derived.
   interaction Lieb-Robinson authority consumed in place of (R-CD)
   L1/L3) is named future work, not claimed here. (S1′), (S2′a,b),
   and (S3′) are unchanged.
+- **2026-06-11 #3 (source hygiene, Cl(3) complexification wording).**
+  The headline and S2′ summary no longer write the full complexified
+  algebra as a single `M_2(C)`. They now match the retained
+  classification used below: `Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)`, with this
+  note consuming one per-site one-qubit `M_2(C)` Pauli factor. This is
+  wording synchronization only; it does not discharge the declared
+  premises (B-AXIS) or (B-RANGE).
 
 ## Scope
 

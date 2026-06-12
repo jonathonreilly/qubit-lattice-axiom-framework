@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_dimensional_compression.py
-runner_sha256: 5906ec6e66c2993f3e231ce04ca05e1f85174e1db70dfd12753a41a352fbe3a4
+runner_sha256: 8964cc22450a2ec0835078759127c41a839de6ce9179c9ea2059c2b8c5d840af
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Hierarchy dimensional-compression diagnostic

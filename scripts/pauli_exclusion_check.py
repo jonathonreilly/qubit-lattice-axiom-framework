@@ -204,11 +204,10 @@ def main() -> None:
     print()
     print("Note: this runner verifies the Pauli exclusion principle on a")
     print("2-mode fermionic Fock space constructed via Jordan-Wigner from")
-    print("the retained anticommutation relations. The proof in the companion")
+    print("the declared CAR anticommutation relations. The proof in the companion")
     print("theorem note is dimension-independent (Steps 1-3 use only the")
-    print("structural anticommutator from the retained spin-statistics theorem")
-    print("and apply equally to any number of modes on the framework matter")
-    print("content).")
+    print("structural anticommutator in the CAR/Grassmann frame and apply")
+    print("equally to any number of modes once that frame is supplied).")
     if not all_ok:
         raise SystemExit(1)
 

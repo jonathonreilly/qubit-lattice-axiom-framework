@@ -3,7 +3,7 @@ runner: scripts/frontier_coulomb_stability_scaling_repair.py
 runner_sha256: 9be7f0102bab08c2763210570e9031da5cd7f9f2fa9b9b5c6e7bc09bd269b90e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 COULOMB GREEN-KERNEL SCALING REPAIR

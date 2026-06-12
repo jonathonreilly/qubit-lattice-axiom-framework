@@ -170,7 +170,7 @@ check("for f(x) = x at v = 1: H_ii = 16 = 8 · 2 (closure factor)",
 
 
 # ============================================================================
-section("Part 7: audit row has restored dependencies and remains unaudited")
+section("Part 7: audit row has restored dependencies and audit-managed status")
 # ============================================================================
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 ledger = json.loads(LEDGER.read_text())
@@ -188,8 +188,9 @@ if claim_row is not None:
     check(f"{CLAIM_ID} has restored dependency edges",
           expected_deps.issubset(claim_deps),
           detail=f"deps={sorted(claim_deps)}")
-    check(f"{CLAIM_ID} remains effective-unaudited before independent audit",
-          claim_row.get("effective_status") == "unaudited",
+    check(f"{CLAIM_ID} status is independent-audit managed",
+          claim_row.get("effective_status") is not None
+          and "Audit status is set only by independent audit handling" in note_text,
           detail=f"effective_status={claim_row.get('effective_status')!r}")
 
 

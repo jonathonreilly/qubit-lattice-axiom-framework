@@ -3,8 +3,7 @@
 Koide taste-cube cyclic-source descent runner
 =============================================
 
-STATUS: constructive positive-path reduction theorem on the full 8-corner
-carrier
+STATUS: constructive bounded reduction theorem on the full 8-corner carrier
 
 Question:
   If we work on the physical taste cube C^8 first, rather than assuming the
@@ -15,10 +14,10 @@ Question:
     2. a Schur-compatible charged-sector reduction onto T_1?
 
 Answer:
-  The target is still exactly the same 3-response cyclic Koide bundle. Full-
-  cube averaging descends to the same T_1 cyclic projector, and every
-  Schur-compatible charged-sector response factors through the same three
-  cyclic channels B0, B1, B2.
+  The Hermitian response target is still exactly the same 3-response cyclic
+  Koide bundle. Full-cube averaging descends to the same T_1 cyclic projector,
+  and every tested Schur-compatible Hermitian charged-sector response factors
+  through the same three cyclic channels B0, B1, B2.
 """
 
 from __future__ import annotations
@@ -427,13 +426,13 @@ def main() -> int:
 
     print()
     print("Interpretation:")
-    print("  The physical taste cube does not force us back to a vague large-source")
-    print("  target. Exact C_3[111] averaging and a Schur-compatible charged-sector")
-    print("  reduction collapse the full 8-corner source bank to the same three")
-    print("  cyclic response channels already identified on T_1. So the honest")
-    print("  remaining job is not to rediscover the carrier size. It is to derive")
-    print("  the microscopic full-cube source law for those channels, and then the")
-    print("  selector law that would put them on the Koide cone.")
+    print("  The physical taste cube does not force us back to a vague Hermitian")
+    print("  source-response target. Exact C_3[111] averaging and a Schur-compatible")
+    print("  charged-sector reduction collapse the full 8-corner Hermitian source")
+    print("  responses to the same three cyclic channels already identified on T_1.")
+    print("  So the honest remaining job is not to rediscover the carrier size; it is")
+    print("  to derive the microscopic full-cube source law for those channels, and")
+    print("  then the selector law that would put them on the Koide cone.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

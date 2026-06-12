@@ -9,9 +9,9 @@ supported by the existing exact stack:
    Z_6^env(W_C) factors through one common propagated beta-side vector;
 2. the left sample operator is already fixed and unique, and on the first
    symmetric witness sector it is exactly the radical matrix F;
-3. the current exact stack still does not determine that common beta-side
-   vector, so it does not yet furnish an actual evaluator for the three
-   sample values.
+3. the restricted finite structural surface still does not determine that
+   common beta-side vector, so this packet does not yet furnish an actual
+   evaluator for the three sample values.
 """
 
 from __future__ import annotations
@@ -296,7 +296,7 @@ def main() -> int:
     print(f"  rank(F)                                     = {reduced_rank}")
     print(f"  max restriction error                       = {reduced_matrix_error:.3e}")
     print()
-    print("Two admissible normalized beta-side witnesses on the current structural surface")
+    print("Two admissible normalized beta-side witnesses on the restricted finite structural surface")
     print(f"  S_A symmetry / swap errors                  = {s_a_sym:.3e}, {s_a_swap:.3e}")
     print(f"  S_B symmetry / swap errors                  = {s_b_sym:.3e}, {s_b_swap:.3e}")
     print(f"  eta_A / eta_B swap errors                   = {eta_a_swap:.3e}, {eta_b_swap:.3e}")
@@ -360,7 +360,7 @@ def main() -> int:
         detail=f"max direct-evaluation error={max(direct_errors):.3e}",
     )
     check(
-        "the current structural surface admits distinct positive self-adjoint conjugation-symmetric beta-side witnesses",
+        "the restricted finite structural surface admits distinct positive self-adjoint conjugation-symmetric beta-side witnesses",
         s_a_sym < 1.0e-12
         and s_b_sym < 1.0e-12
         and s_a_swap < 1.0e-12
@@ -373,7 +373,7 @@ def main() -> int:
         and rho_b_swap < 1.0e-12
         and abs(rho00_a - 1.0) < 1.0e-12
         and abs(rho00_b - 1.0) < 1.0e-12,
-        detail=f"rho-gap={rho_gap:.3e} on the same exact structural surface",
+        detail=f"rho-gap={rho_gap:.3e} on the same restricted finite structural surface",
     )
     check(
         "the same universal left operator sends those two admissible normalized beta-side vectors to different normalized three-sample triples",
@@ -385,9 +385,9 @@ def main() -> int:
         detail=f"Zhat_A=({format_triple(zhat_a)}); Zhat_B=({format_triple(zhat_b)})",
     )
     check(
-        "therefore the current exact stack does not yet furnish an actual evaluator for Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C): even the normalized triple is still not unique",
+        "therefore this finite structural packet does not yet furnish an actual evaluator for Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C): even the normalized triple is still not unique",
         reduced_rank == 3 and rho_gap > 1.0e-3 and triple_gap > 1.0e-2,
-        detail="the real route is one common beta-side vector hit by a fixed three-row operator, and that beta-side vector is still not determined",
+        detail="the formal route is one common beta-side vector hit by a fixed three-row operator, and that beta-side vector is still not determined",
     )
 
     print()

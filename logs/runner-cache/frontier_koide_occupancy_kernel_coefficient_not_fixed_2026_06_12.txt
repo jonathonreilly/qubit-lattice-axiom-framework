@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_occupancy_kernel_coefficient_not_fixed_2026_06_12.py
+runner_sha256: 10de3bad807c6c2dfbc8ed6c952b6f9950b6010e0322f75c712010f471e94403
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.15
+status: ok
+----- stdout -----
+PASS - A1 K1 symbolic 2x2 Berezin expansion extracts the determinant polynomial
+PASS - A2 K1 symbolic 3x3 Berezin expansion gives the six-term permutation formula
+PASS - A3 K2a block-diagonal singlet plus doublet factorizes from the expansion
+PASS - A4 K2b doublet rank-2 scaling is lambda^2 and paired rank-1 scaling is lambda
+PASS - A5 K2c Grassmann nilpotency and dimension are preserved under lambda scaling
+PASS - A6 K2c supplied circulant class remains C3-equivariant after lambda scaling
+PASS - A7 K3a lambda freedom realizes both Z_d weight cells under the rho map
+PASS - A8 K3b no check pins r; lambda-free admissible r set is the full binary
+PASS - B1 substep1 carries evaluates-exactly/det/unique-surviving/single-pair source text
+PASS - B2 substep2 carries the no-physical-identification sentence fragment
+PASS - B3 retained notes do not supply transfer/time/reflection-positivity strings
+PASS - B4 note carries supplied-circulant/prerequisite/live-route language without closing phrases
+PASS - B5 firewall keeps the occupancy binary open and avoids the forbidden r-forcing phrase
+PASS - B6 link inventory has exactly two load-bearing markdown note links and backticked context names
+PASS - B7 no-promotion statement is present
+PASS - B8 runner uses explicit expansion path and no matrix-det call as a K1 substitute
+SUMMARY: PASS=16 FAIL=0
+
+----- stderr -----
+

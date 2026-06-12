@@ -3,7 +3,8 @@
 
 The runner verifies the algebraic content of
 docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md
-(orientation-only since 2026-06-10; the determinant-character lemma moved to
+(orientation-only since 2026-06-10; the note states the lemma on the supplied
+circulant class stipulated in-note; the determinant-character lemma moved to
 THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md
 with its own runner). It intentionally does not claim that the Tier-A
 registry has changed.
@@ -20,7 +21,6 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md"
 AXIOM_NOTE = DOCS / "MINIMAL_AXIOMS_2026-06-05.md"
-STAGGERED_NOTE = DOCS / "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
 
 PASS = 0
 FAIL = 0
@@ -145,11 +145,15 @@ def main() -> int:
         label_flip_matches,
     )
 
-    staggered_text = STAGGERED_NOTE.read_text(encoding="utf-8")
     check(
-        "staggered-Dirac source still carries the AC_phi_lambda gate surface",
-        ("AC_φλ" in staggered_text or "AC_phi_lambda" in staggered_text)
-        and "labeling" in staggered_text,
+        "source stipulates the supplied circulant class in-note",
+        "supplied circulant class" in note_flat
+        and "H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T" in note_flat,
+    )
+    check(
+        "staggered gate is cited as context only, not a load-bearing markdown link",
+        "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md" in note_text
+        and "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)" not in note_text,
     )
 
     # Markdown dependency hygiene for the source note.

@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Helium Jastrow companion on the retained Cl(3)/Z³ lattice Hamiltonian surface.
+"""Helium Jastrow companion on the narrowed Cl(3)/Z³ lattice Hamiltonian surface.
 
 ==========================================================================
 NUMERICAL JASTROW COMPANION ON THE LATTICE HAMILTONIAN SURFACE
 ==========================================================================
 
-AXIOM 1: The physical local algebra is Cl(3).
-AXIOM 2: The spatial substrate is the cubic lattice Z³.
+Framework surface: current minimal Cl(3)/Z³ primitives plus the narrowed
+scalar graph-Laplacian and lattice Green-kernel dependency repair.
+Sources: MINIMAL_AXIOMS_2026-06-04.md;
+HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md;
+LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md.
 
 Same kinetic operator and Coulomb kernel as
 `frontier_atomic_helium_hartree_companion.py`.
@@ -38,9 +41,9 @@ At order 1/r₁₂:   -2 × (2/r₁₂) × ψ'(0) + g_EM/r₁₂ × ψ(0) = 0
 
 Therefore:   ψ'(0) = (g_EM/4) × ψ(0)   [KATO CUSP CONDITION]
 
-On the lattice Hamiltonian surface this follows from:
-    1. The kinetic operator -Δ_Z³ (Cl(3)/Z³ axiom)
-    2. The interaction kernel g_EM/|r₁₂| (Z³ Green's function)
+On the narrowed lattice Hamiltonian surface this follows from:
+    1. The kinetic operator -Δ_Z³ (scalar graph-Laplacian repair)
+    2. The interaction kernel g_EM/|r₁₂| (Z³ Green-kernel repair)
     3. Self-adjointness of H₂ on l²(Z³×Z³)  (mathematical requirement)
 
 JASTROW ANSATZ:

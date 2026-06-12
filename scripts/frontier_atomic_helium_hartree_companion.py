@@ -5,14 +5,16 @@
 NUMERICAL VARIATIONAL COMPANION ON THE LATTICE HAMILTONIAN SURFACE
 ==========================================================================
 
-AXIOM 1: The physical local algebra is Cl(3).
-AXIOM 2: The spatial substrate is the cubic lattice Z³.
-Sources: MINIMAL_AXIOMS_2026-04-11.md
+Framework surface: current minimal Cl(3)/Z³ primitives plus the narrowed
+scalar graph-Laplacian and lattice Green-kernel dependency repair.
+Sources: MINIMAL_AXIOMS_2026-06-04.md;
+HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md;
+LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md.
 
 Steps 1–3: Same as hydrogen
 (`frontier_atomic_hydrogen_lattice_companion.py`).
-    H_free = -Δ_Z³   [DERIVED from Cl(3)]
-    V(r) = -g/|r|     [DERIVED from Z³ Green's function]
+    H_free = -Δ_Z³   [narrowed scalar graph-Laplacian surface]
+    V(r) = -g/|r|     [lattice Green-kernel repair]
 
 --------------------------------------------------------------------------
 STEP 4: TWO-BODY HAMILTONIAN  [extension, same kernel]

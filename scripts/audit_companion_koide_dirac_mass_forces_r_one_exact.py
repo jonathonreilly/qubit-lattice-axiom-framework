@@ -5,8 +5,8 @@ KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-
 BOUNDED result (NOT a hard universal no-go; the open staggered-Dirac corner realization is not theorem-foreclosed).
 On the current A_min surface, r=1 (Q=1) is the FORCED reading of the charged-lepton generation mass, and the
 chiral L-R coupling localized as the selector (block-1) does NOT reach r=1/2:
-  (1) a DIRAC fermion's determinant is det[[0,M],[M^dag,0]] = |det M|^2 (second-order/modulus by construction --
-      only a Weyl fermion keeps det M, first-order);
+  (1) a DIRAC fermion's determinant is det[[0,M],[M^dag,0]] = (-1)^3 |det M|^2 on the three-generation
+      chiral block (second-order/modulus up to orientation sign -- only a Weyl fermion keeps det M, first-order);
   (2) D^2 = diag(M M^dag, M^dag M) -> physical masses = SINGULAR VALUES |lambda_k| (sign-blind);
   (3) the L-R coupling M(b)(x)sigma_+ FACTORIZES through the C3-Fourier modes -> b-independent generation
       eigenvectors -> Berry-FLAT -> r=1 (it does NOT curve the generation bundle);
@@ -28,11 +28,12 @@ a,bre,bim=symbols('a bre bim',real=True); b=bre+I*bim
 M=a*eye(3)+b*C+conjugate(b)*(C*C)
 NOTE=Path(__file__).resolve().parent.parent/"docs"/"KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md"
 
-# (1) Dirac determinant = |det M|^2 (second-order), NOT det M (first-order/Weyl)
+# (1) Dirac determinant = (-1)^3 |det M|^2 (second-order up to orientation sign),
+# NOT det M (first-order/Weyl)
 D=Matrix(sp.BlockMatrix([[zeros(3,3), M],[M.H, zeros(3,3)]]).as_explicit())
 detD=simplify(D.det()); detM=M.det()
-chk("(1) det of the Dirac operator [[0,M],[M^dag,0]] = |det M|^2 (second-order/modulus, not first-order det M)",
-    simplify(detD - detM*conjugate(detM))==0 or simplify(detD + detM*conjugate(detM))==0)
+chk("(1) det of the three-generation Dirac operator [[0,M],[M^dag,0]] = -|det M|^2 (orientation sign); the magnitude is second-order/modulus, not first-order det M",
+    simplify(detD + detM*conjugate(detM))==0)
 
 # (2) D^2 = diag(M M^dag, M^dag M) -> Dirac spectrum = +/- singular values -> physical masses = singular values (sign-blind)
 blk=Matrix(sp.BlockMatrix([[M*M.H, zeros(3,3)],[zeros(3,3), M.H*M]]).as_explicit())
@@ -64,7 +65,7 @@ for l,o in R: print(("PASS" if o else "FAIL"),"-",l)
 print("\n%d PASS, %d FAIL"%(P,F))
 if F: raise SystemExit(1)
 print("\nBLOCK-2 (bounded): r=1 is the FORCED reading on the current A_min surface. A Dirac fermion's determinant is\n"
-      "|det M|^2 (second-order) and its physical masses are singular values (sign-blind) -> r=1; the L-R coupling\n"
+      "(-1)^3 |det M|^2 (second-order modulo chiral-block orientation sign) and its physical masses are singular values (sign-blind) -> r=1; the L-R coupling\n"
       "M(b)(x)sigma_+ is Berry-flat (factorizes) so it does NOT reach r=1/2; the bundle-curving coupling that would\n"
       "is forbidden by C^3=I. The residual reduces to the UN-FORCED sign of sqrt(m). NOT a hard universal no-go:\n"
       "the open staggered-Dirac corner realization is not theorem-foreclosed. The framework does NOT derive r=1/2.")

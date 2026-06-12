@@ -57,8 +57,11 @@ P_1 A_8(X) P_1 = A_3(P_1 X P_1).
 So exact full-cube averaging and charged-sector compression commute.
 
 Therefore every averaged full-cube operator lands, after compression to
-`T_1`, in the complex cyclic image of `A_3`. For Hermitian full-cube
-sources, the compressed image is exactly the real cyclic Hermitian span
+`T_1`, in the complex cyclic image of `A_3`. This is the boundary for
+arbitrary non-Hermitian sources: oriented channels such as `C` and `C^2`
+are complex-cyclic, not themselves real Hermitian responses. For
+Hermitian full-cube sources, the compressed image is exactly the real
+cyclic Hermitian span
 ```
 span_R{B0, B1, B2},
 ```
@@ -220,7 +223,9 @@ This note proves exactly:
 3. every positive `U`-covariant full-cube parent reduced by a Schur-compatible
    charged-sector map lands in the same cyclic `3`-response family;
 4. every Schur-compatible Hermitian full-cube source response factors through
-   the same three response numbers `(r0,r1,r2)`.
+   the same three response numbers `(r0,r1,r2)`. Non-Hermitian sources are
+   only claimed to land in the complex cyclic span before Hermitian
+   response extraction.
 
 The runner verifies all of this directly.
 

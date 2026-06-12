@@ -17,10 +17,12 @@ genuinely un-forced **sign of `√m`** (signed-eigenvalue vs singular-value read
 
 ## The four exact facts (runner 5/5)
 
-1. **A Dirac fermion's determinant is the modulus-squared.** For the genuine Dirac operator
-   `D = [[0, M],[M†, 0]]` on generation⊗{L,R}, `det D = |det M|²` (runner (1)) — second-order *by construction*.
-   Only a **Weyl** fermion keeps `det M` alone (first-order). Charged leptons are Dirac, so the determinant
-   route is second-order, full stop.
+1. **A Dirac fermion's determinant is the modulus-squared, up to the chiral block sign.** For the genuine Dirac
+   operator `D = [[0, M],[M†, 0]]` on the three-generation `generation⊗{L,R}` space,
+   `det D = (-1)^3 |det M|² = -|det M|²` (runner (1)). The sign is the odd-generation chiral block
+   orientation; the load-bearing fact is still that the Dirac determinant is a second-order modulus of the Weyl
+   determinant, not `det M` itself. Only a **Weyl** fermion keeps `det M` alone (first-order). Charged leptons
+   are Dirac, so the determinant route is second-order, full stop.
 2. **The physical masses are singular values.** `D² = diag(MM†, M†M)` (runner (2)) → the Dirac spectrum is
    `±` the **singular values** `|λ_k|` of `M`, which are **sign-blind**.
 3. **The L-R coupling `M(b)⊗σ₊` is Berry-flat.** Its generation eigenvectors are the b-independent C₃-Fourier

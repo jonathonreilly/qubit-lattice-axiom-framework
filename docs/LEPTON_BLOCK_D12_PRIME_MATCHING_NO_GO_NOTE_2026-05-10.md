@@ -16,11 +16,16 @@ identity on the current source surface unless an additional physical-operator
 bridge is supplied.
 
 The reason is narrow. In the quark YT chain, the two sides of the matching
-refer to the same composite scalar operator. The relevant source notes define
-that scalar through a color-indexed quark bilinear:
+refer to the same `Q_L` scalar-singlet operator. The current scalar-operator
+authority is:
 
-- [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md)
 - [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
+
+The companion color note
+[`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md)
+now supplies only the finite-dimensional SU(3) channel-fraction
+`f_adj,dim = 8/9`. It explicitly does not supply a scalar wave-function
+normalization, physical Yukawa correction, or lepton operator bridge.
 
 The lepton-block analogy can formally write a hypercharge exchange equation
 and, if a unit lepton scalar matrix element is supplied, it algebraically
@@ -50,8 +55,10 @@ The paired runner verifies:
 - the quark YT matching algebra gives `y_t = g_s/sqrt(6)`;
 - the formal lepton hypercharge analogy would give `y_tau = g_1/sqrt(2)`
   if a unit lepton scalar operator were supplied;
-- the cited YUKAWA source defines the scalar with a color-indexed quark
-  bilinear;
+- the current YT Ward source defines the `Q_L` scalar-singlet operator used
+  by the quark/top matching context;
+- the current YUKAWA color-projection source is only a channel-fraction
+  theorem and is not treated as a scalar-operator authority;
 - the current cited source text does not define a lepton-composite scalar
   bridge;
 - the result remains an open gate, not a retained-grade no-go or mass

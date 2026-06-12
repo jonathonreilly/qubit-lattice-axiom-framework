@@ -46,6 +46,12 @@ Per-lane open-lane documents:
 - [`06_CHARGED_LEPTON_MASS_RETENTION_OPEN_LANE_2026-04-26.md`](./06_CHARGED_LEPTON_MASS_RETENTION_OPEN_LANE_2026-04-26.md)
 - [`07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md`](./07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md)
   (proposed 2026-06-12 addition — see the dated subsection below)
+- [`08_CLASSICAL_ELECTROMAGNETISM_LIGHT_OPEN_LANE_2026-06-12.md`](./08_CLASSICAL_ELECTROMAGNETISM_LIGHT_OPEN_LANE_2026-06-12.md)
+  (proposed 2026-06-12 addition — see the dated subsection below)
+- [`09_PHASES_OF_MATTER_TRANSITIONS_OPEN_LANE_2026-06-12.md`](./09_PHASES_OF_MATTER_TRANSITIONS_OPEN_LANE_2026-06-12.md)
+  (proposed 2026-06-12 addition — see the dated subsection below)
+- [`10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md`](./10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md)
+  (proposed 2026-06-12 addition — see the dated subsection below)
 
 Each lane stub is intended to be a parallel-worker handoff surface. The top
 metadata block names the primary closure targets, the first worker target, and
@@ -99,6 +105,29 @@ gated by Lane 2.
 
 Per-lane document:
 [`07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md`](./07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md).
+
+## 2026-06-12 Lanes 8–10 Addition (proposed)
+
+Following Lane 7, three further *everyday-physics layers* — each absent from the
+original six-lane inventory, not merely a deferred observable — were scoped the
+same day on branch `claude/feynman-atomic-thermal-motion-o3fuij`. Same precedent
+(no theorem/claim promotion; pending review). These complete the
+Feynman-Lecture-1-adjacent foundational layers: thermal motion (7), light (8),
+phases of matter (9), and the continuum fluid (10).
+
+| # | Lane | Science priority | Approachability | Status today |
+|---|---|---|---|---|
+| 8 | Classical electromagnetism & light (Maxwell, radiation, optics) | HIGH-FOUNDATIONAL / VISCERAL | Tier B-C | `U(1)` derived; only scattered electrostatics notes; no Maxwell/radiation/optics layer |
+| 9 | Phases of matter & transitions (solid/liquid/gas, latent heat, criticality) | HIGH-FOUNDATIONAL | Tier C (gated by Lanes 7, 2) | no phase-structure lane; universality classifier scaffolding exists |
+| 10 | Continuum / hydrodynamics (Euler/Navier–Stokes, sound) | MEDIUM-FOUNDATIONAL | Tier C (gated by Lane 7) | overlaps Lane 7's 7G transport + emergent-continuum work; fold-vs-standalone is an open reviewer decision |
+
+Per-lane documents:
+[`08_CLASSICAL_ELECTROMAGNETISM_LIGHT_OPEN_LANE_2026-06-12.md`](./08_CLASSICAL_ELECTROMAGNETISM_LIGHT_OPEN_LANE_2026-06-12.md),
+[`09_PHASES_OF_MATTER_TRANSITIONS_OPEN_LANE_2026-06-12.md`](./09_PHASES_OF_MATTER_TRANSITIONS_OPEN_LANE_2026-06-12.md),
+[`10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md`](./10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md).
+
+Note: Lane 10 is explicitly flagged as a fold candidate into Lane 7 (7G); the
+standalone-vs-fold decision is left to reviewers.
 
 ## Common scoping principles for all six lanes
 

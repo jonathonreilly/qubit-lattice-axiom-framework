@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_corrected_v_taste_tree_level.py
-runner_sha256: 28571de23b2b38276751f832ca69d397d5d4b5e2301bead8d6548f2280b75a8d
+runner_sha256: 611951018bff447acca950f8b3bc38511ebea5a5d71df1697688f54271c8519c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 

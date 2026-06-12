@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 866 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1364 |
+| unaudited | 1363 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -41,6 +41,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | 1 |
+| `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
 | `decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | 1 |
@@ -62,16 +63,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1321 |
 | `audited_conditional` | 60 |
-| `audited_decoration` | 53 |
+| `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1681 |
+| `unaudited` | 1680 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1557 |
-| `decoration` | 54 |
+| `bounded_theorem` | 1556 |
+| `decoration` | 55 |
 | `meta` | 326 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
@@ -81,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 505 |
 | `high` | 505 |
-| `medium` | 869 |
-| `leaf` | 1311 |
+| `medium` | 868 |
+| `leaf` | 1312 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -1551,6 +1552,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | decoration | ~~audited_decoration~~ | `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | cross_family | codex-gpt-5.5 | A | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
+| `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | decoration | ~~audited_decoration~~ | `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | cross_family | codex-gpt-5.5 | A | `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` |
 | `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
@@ -16039,6 +16041,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** eta_bar / rho_bar = (mu eta) / (mu rho) = eta / rho, since mu > 0 cancels; the origin angle and doubled-angle identities then depend only on this preserved slope, and the (1,0)-based finite tangent difference factors as eta*(mu - 1)/((1 - mu*rho)*(1 - rho)).  _(class `A`)_
 - **chain closes:** True — The scoped claim is pure algebra and elementary plane geometry over abstract positive real symbols with no cited dependencies. The note explicitly guards the finite-tangent exclusions needed for T4, so the factorization proves the iff condition on its stated domain.
 - **rationale:** The load-bearing step is a direct algebraic cancellation under positive radial scaling, with standard arctan and double-angle consequences, and the runner independently verifies the symbolic slope, origin-angle, doubled-angle, radius, and finite-tangent factorization checks. Residual risk is limited to scope control: this clean verdict covers only the abstract Euclidean radial-scaling theorem and does not ratify any CKM-specific assignment, physical observable bridge, or upstream parent framing.
+- **auditor confidence:** high
+
+### `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`
+
+- **Note:** [`RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic locator: given the retained C3 coupling form `K = |K|(J-I)`, `J` is the rank-1 singlet projector up to factor 3, `K` has a singlet-plus-degenerate-doublet spectrum, and the stated reduced 2x2 toy blocks give maximal versus small mixing.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-025552-bb1381c7dc-rank1_single_source_template`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `K = 3|K| P_singlet - |K| I` and `(J-I)` has eigenvalues `(2,-1,-1)`, giving a distinct singlet plus a 2-fold degenerate doublet.  _(class `A`)_
+- **chain closes:** True — The scoped claim follows by standard linear algebra from the retained upstream `J-I` C3 form: `J^2=3J`, `P_singlet=J/3`, and `spec(J-I)={2,-1,-1}`. The physical mass/readout identification and derivation of the hierarchy are explicitly outside this audited scope.
+- **rationale:** The load-bearing content is algebra over one retained parent claim, not a new first-principles computation. Independent formula checks confirm the projector normalization, rank, spectrum, the 45 degree degenerate 2x2 block, and the split toy-block value `theta = 0.5 atan(2 sqrt(0.05)/0.95) ~= 12.6 deg`. The runner performs the same finite linear algebra; its chosen `Kmag=0.4` is illustrative and non-load-bearing. This adds a structural locator/template consequence while leaving mass/readout and hierarchy closure open.
+- **decoration parent:** `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`
 - **auditor confidence:** high
 
 ### `rconn_derived_note`

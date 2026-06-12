@@ -1,6 +1,10 @@
 # The Koide Occupancy Atom Is Independent of the Current Checked Premise Surface; the Orbit-Occupancy Premise Candidate
 
 **Date:** 2026-06-09
+**Review-loop update:** 2026-06-12 — the four fork cells and the `rho`-map
+orientation are now derived in this note's runner from explicit per-cell
+integrals. The landed table remains a consistency cross-check; the fork and
+sharpening citations are context accordingly.
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem + premise-candidate proposal (proposal NOT adopted)
 **Status authority:** independent audit lane only. This source note does not set
@@ -9,7 +13,7 @@ or predict an audit outcome.
 [`scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py`](../scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py)
 **Cached runner output:**
 [`logs/runner-cache/frontier_koide_orbit_occupancy_independence_2026_06_09.txt`](../logs/runner-cache/frontier_koide_orbit_occupancy_independence_2026_06_09.txt)
-(SCORECARD: PASS=24, FAIL=0)
+(SCORECARD: PASS=32, FAIL=0)
 
 > **Not claimed:** a derivation of `r = 1/2`, adoption of any premise, or a mass
 > prediction. **Claimed:** the one residual atom behind the Koide `r`-gate — the
@@ -25,7 +29,7 @@ or predict an audit outcome.
 ## Role
 
 The orbit-quotient sharpening
-([`KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md`](KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md))
+`KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md`
 reduced the Koide `r`-gate
 to one residual atom: the slot **degree** — equivalently, at the landed fork's
 bookkeeping level, the per-doublet measure-weight class
@@ -72,10 +76,11 @@ explicit owner-approved premise is one possible resolution.
 ## Consequence map — at the landed bookkeeping level only
 
 No new microscopic bridge is invented (the #3138 lesson). The runner includes an
-explicit **orientation guard**: of the two a-priori normalizations of the landed
-`ρ`-map, the inverted one is computed and **rejected against the landed table**,
-and the landed orientation (`ρ = (π/g)/Z_d`, `r = 1/(2ρ)`) is verified to
-reproduce the landed cells exactly:
+explicit **orientation guard**: of the two a-priori normalizations of the
+`ρ`-map, the inverted one is computed and **rejected against the derived
+per-model `r` values**, and the orientation (`ρ = (π/g)/Z_d`,
+`r = 1/(2ρ)`) is verified from the explicit per-cell integrals. The landed
+table remains only a consistency cross-check:
 
 ```text
 M_sector  →  ρ = 1/2  →  r = 1    →  Q = 1      (the real/2-slot cell)
@@ -116,10 +121,14 @@ structural choice rather than an eighth derivation attempt.
 
 ## No-go discipline gate
 
-- **N1 Route enumeration:** checked routes are Record's non-supply clause, the
-  sector occupancy model, the orbit occupancy model, the prior
-  CW/fluctuation-modulus sector-side route, the landed `ρ`-orientation table, the
-  PDG comparator, and the future-larger-premise route left open.
+- **N1 Route enumeration:** Record non-supply is ATTEMPTED and stops at the
+  axiom's explicit "no occupancy rule" clause; sector occupancy is ATTEMPTED
+  and gives a consistent `r = 1` horn; orbit occupancy is ATTEMPTED and gives a
+  consistent `r = 1/2` horn but remains proposed, not adopted; the prior
+  CW/fluctuation-modulus route is RULED OUT BY PRIOR as supplied sector-side
+  occupancy context; the derived `rho`-orientation check is ATTEMPTED and
+  orients the map but selects no horn; the PDG comparator is ATTEMPTED only as
+  labeled non-input support; the future-larger-premise route is left OPEN.
 - **N2 Wall independence:** the common wall is the missing occupancy/weighting
   rule; the two exhibited models agree on the checked constraints and differ
   only at that wall.
@@ -141,12 +150,13 @@ structural choice rather than an eighth derivation attempt.
 
 - **Not** a derivation of `r = 1/2`; **not** adoption of orbit-occupancy; **not**
   a charged-lepton mass prediction.
-- **Not** a broad no-go ("no future route can derive the occupancy rule from a
-  *larger* premise surface" is not claimed — the independence is relative to the
-  **current checked** Record/Koide bookkeeping surface, witnessed by the
-  exhibited models and the axiom's own clause).
+- **Not** a universal route-closure claim: no claim is made that a future
+  larger premise surface cannot derive the occupancy rule. The independence is
+  relative to the **current checked** Record/Koide bookkeeping surface,
+  witnessed by the exhibited models and the axiom's own clause.
 - **Not** a new microscopic moment-bridge: all cell assignments pass through the
-  landed `ρ`-map with the orientation pinned by the landed table.
+  explicit per-cell integrals and derived `ρ`-map identity; the landed table is
+  kept only as a consistency cross-check.
 - **No** PDG/fitted input in any derivation step (PDG `Q` is a labeled
   comparator); **no** new axiom, primitive, vocabulary, or class tag is added by
   this note (the candidate is *proposed*, with approval routed through
@@ -155,20 +165,32 @@ structural choice rather than an eighth derivation attempt.
 
 ## Reprove-and-cite ledger
 
-- **Reproven here** (runner): the orbit partition (`K(e₁)=e₂`); the landed
-  four-cell table cross-check; the `Q`-lever (100 draws); the exact weights
-  `2π/g` and `π/g` and their factor-2 fiber interpretation; the two models'
-  checked constraint-consistency; the mechanical axiom-clause check; both `ρ`-map
-  orientations with the landed-table arbitration; the convention-free cell
-  ratio; the slot/outcome counting; the PDG comparator arithmetic.
-- **Cited:** [`KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md`](KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md)
-  (the landed cells + `ρ` bookkeeping);
-  [`KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
-  (the lever); [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- **Reproven here** (runner): the orbit partition (`K(e₁)=e₂`); the four fork
+  cells (partition weights AND equipartition `r` per model) derived from
+  explicit integrals; the `ρ`-map `r = 1/(2ρ)` verified as a derived identity;
+  the landed table kept as a consistency cross-check; the `Q`-lever (100 draws);
+  the exact weights `2π/g` and `π/g` and their factor-2 fiber interpretation;
+  the two models' checked constraint-consistency; the mechanical axiom-clause
+  check; the convention-free cell ratio; the slot/outcome counting; the PDG
+  comparator arithmetic.
+- **Cited:** [`KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+  (the `E_s = 3a^2`, `E_d = 6|b|^2` lever used by the equipartition
+  derivation); [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
   (the non-supply clause and the orbit wording);
   [`AXIOM_MINIMALITY_POLICY.md`](audit/AXIOM_MINIMALITY_POLICY.md) §6 (the
   approval mechanism the proposal would route through); the refuted-route corpus
   (#2624, #2688, #3138) as non-re-walk boundaries.
+
+**Context (not load-bearing: backticked names are context, not dependency
+edges):**
+
+- `KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md` — where the
+  four-cell mechanism landed (open-gate row); the cells are recomputed from
+  explicit per-cell actions in this note's runner, and the landed table is
+  consumed only as a consistency cross-check.
+- `KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md` —
+  the reduction history (how the r-gate narrowed to this atom); framing only, no
+  content consumed.
 
 **No-promotion statement:** this note does not promote, demote, or set the audit
 status of any dependency. The independent audit lane is the only status authority.

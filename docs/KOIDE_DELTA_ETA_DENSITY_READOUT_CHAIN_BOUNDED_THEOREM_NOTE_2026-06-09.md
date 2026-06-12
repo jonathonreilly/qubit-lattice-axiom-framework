@@ -1,6 +1,6 @@
 # The |δ| = 2/9 Theorem Chain: Retained Fixed-Locus Arithmetic + One Named Readout Identification
 
-**Date:** 2026-06-09
+**Date:** 2026-06-09 (2026-06-12: dependency decoupling — the carrier surface is stipulated in-note as the supplied circulant class; the period-fork and detc/detr-fork citations are demoted to context (the period content used here is computed in this note's own runner; the circulant class is supplied in-note); the E6 orientation-strip consumption now cites its authority as a load-bearing dependency.)
 **Claim type:** bounded_theorem (a conditional theorem chain; the single conditional input is a named, proposed identification — no new number, no new primitive)
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set
@@ -48,10 +48,19 @@ density, read directly as the angle:* `|δ| = L₃(1,2)`. R-η is a dimensionles
 readout-class **identification** — the sibling of the `(M)`/det-class readout
 atom — and it names no number; the number comes from E1.
 
+**Carrier class (supplied).** Throughout, the carrier is the supplied
+charged-lepton circulant class: the three-parameter Hermitian circulant family
+`H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T` with `a` real, `B > 0`,
+`delta` real, and `C` the cyclic 3-shift, stipulated here as the supplied surface.
+The physical identification of this class as the charged-lepton carrier is carried
+by the `AC_phi_lambda` admission itself, which supplies its own gate surface
+(`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is context for where that
+surface arises physically, not load-bearing here).
+
 **E3 — the period fork, computed honestly.** The alternative standard packaging
 (the density entering as a determinant-phase exponent, `δ = π·L = 2π/9`)
 predicts a wildly wrong spectrum (computed: `m_τ` off by orders of magnitude).
-The fork is physical, not conventional (the landed radian-period note).
+The fork is physical, not conventional (see the radian-period context note named below).
 
 **E8 — period-fork diagnostic.** The fork is not promoted into an extra hidden
 admission. The runner records the following bounded diagnostics:
@@ -93,9 +102,11 @@ not entered (line selection remains with the carrier gate and the unaudited
 chirality-selector companion). The gated CP-odd vacuum route — circular on the
 carrier gate — is **not used**: bypassed, not resolved.
 
-**E6 — K-orbit consistency.** `conj(H(δ)) = H(−δ)` (consumed from the Tier-A
-shrink): the registrable atom is `|δ|` — exactly what the chain supplies; the
-sign stays frame content.
+**E6 — K-orbit consistency.** `conj(H(δ)) = H(−δ)` on the supplied circulant
+class, and the registrable species surface is the unordered mass multiset
+([`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md),
+Consequence B): the registrable atom is `|δ|` — exactly what the chain supplies;
+the sign stays frame content.
 
 ## Net
 
@@ -103,7 +114,8 @@ sign stays frame content.
 |δ| = 2/9  =  THEOREM conditional on:
     R-η          (proposed readout identification — the single named gap;
                   owner/audit decision; now stated number-free)
-    carrier gate (staggered realization — existing Tier-A, consumed)
+    carrier class (the supplied circulant class above; its physical carrier
+                  identification is carried by the AC_phi_lambda admission)
     context      (landed circulant; r = 1/2 used only in the mass comparator
                   unless the separate occupancy-subsumption row lands)
 
@@ -170,14 +182,27 @@ all other phase-readout routes.
   — the retained-bounded arithmetic (re-proven here; the chain's number source).
 - [KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
   — the enumeration no-go whose bins this route is outside (boundary cited, respected).
-- [KOIDE_DELTA_RADIAN_PERIOD_PHYSICAL_NOT_VACUOUS_NARROW_THEOREM_NOTE_2026-06-04.md](KOIDE_DELTA_RADIAN_PERIOD_PHYSICAL_NOT_VACUOUS_NARROW_THEOREM_NOTE_2026-06-04.md)
-  — the period fork's physicality (E3 computes both rows).
-- [STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-  — the carrier gate (consumed, not modified).
-- [KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md](KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md)
-  — the circulant context. The orientation-strip and occupancy-subsumption
-  rows are context for downstream mass-pattern assembly, not load-bearing
-  status claims made by this note.
+- [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+  — the orientation strip consumed in E6 (registrable species surface = unordered
+  multiset; the registrable atom is `|δ|`).
+
+Context (not load-bearing: cited only to locate surfaces and corroborate
+diagnostics; no content is consumed):
+
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` — where the supplied
+  circulant class arises physically as the charged-lepton carrier; the chain is
+  stated on the supplied class above, and the physical identification rides with
+  the `AC_phi_lambda` admission.
+- `KOIDE_DELTA_RADIAN_PERIOD_PHYSICAL_NOT_VACUOUS_NARROW_THEOREM_NOTE_2026-06-04.md`
+  — corroborating context for E3; the period-fork physicality used by this chain
+  (the π-packaging mass prediction failing by a wide margin) is computed directly
+  in this note's primary runner, and the note's own boundary states the period
+  discussion is a bounded diagnostic.
+- `KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md` — the open-gate
+  row for the occupancy binary (real vs holomorphic doublet count); cited only to
+  locate that binary. The circulant class is stipulated in-note; the orientation-strip
+  and occupancy-subsumption rows remain context for downstream mass-pattern
+  assembly, not load-bearing status claims made by this note.
 
 **No-promotion statement:** this note does not promote, demote, or set the audit
 status of any dependency. The independent audit lane is the only status authority.

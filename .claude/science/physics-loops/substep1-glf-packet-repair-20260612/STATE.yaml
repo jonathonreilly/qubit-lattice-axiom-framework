@@ -1,0 +1,25 @@
+loop_slug: substep1-glf-packet-repair-20260612
+branch: physics-loop/audit-unlock-next-20260612
+started_utc: "2026-06-12T02:27:08Z"
+updated_utc: "2026-06-12T02:50:00Z"
+goal: "Unlock as much of the audit as possible by repairing high-impact conditional rows without editing audit results."
+target_status: best-honest-status
+current_status: bounded-support
+cycle_count: 1
+active_route: "Repair the source packet for the GL(F) conditional statistics discriminator after the 04-29 spin-stat and 05-16 bridge audit updates."
+hard_residual: "GL(F)/FS remains unsupplied and not Tier-A admitted; this block only removes stale missing-dependency ambiguity."
+files_touched:
+  - docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md
+  - scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py
+  - logs/runner-cache/staggered_dirac_substep1_statistics_selection_check_2026_06_10.txt
+open_imports: []
+open_conditions:
+  - "GL(F)/FS cross-site graded locality is still not derived, retained, or admitted."
+trace_gate:
+  trace_class: direct_blocker_closure
+  reachability_to_target: partially_closes
+  target_claim_id: staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10
+review_findings: "Not run through review-loop; reviewer owns extraction/landing."
+pr_status: pending
+next_exact_action: "Commit, push, and open a review PR for the packet repair."
+stop_condition: "Stop after PR creation and lock release unless the campaign is resumed."

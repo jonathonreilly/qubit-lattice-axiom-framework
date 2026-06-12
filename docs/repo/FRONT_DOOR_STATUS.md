@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1441 |
-| Retained-grade rows, including boxed decorations | 1310 |
+| Applied audit verdicts | 1442 |
+| Retained-grade rows, including boxed decorations | 1311 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 846 |
+| Retained bounded rows | 847 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
 | Unaudited rows | 1479 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1483 |
-| Ready rows | 76 |
+| Total pending rows | 1482 |
+| Ready rows | 78 |
 | Cycle-break targets | 4 |
-| Critical pending | 289 |
+| Critical pending | 288 |
 | High pending | 291 |
 | Medium pending | 435 |
 | Leaf pending | 468 |
 
 Next ready rows by queue order:
 
-- [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; audit_in_progress
 - [`yt_p1_i_s_lattice_pt_citation_note_2026-04-17`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) - critical; unaudited
 - [`higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08`](../../docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md) - critical; unaudited
 - [`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
@@ -51,13 +50,14 @@ Next ready rows by queue order:
 - [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
+- [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **429**.
+- Non-retained-grade cited rows in publication tables: **428**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -68,7 +68,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |

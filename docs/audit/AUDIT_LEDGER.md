@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 846 |
+| **retained_bounded** | 847 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 39 |
 | unaudited | 1479 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1291 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1292 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
@@ -131,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `cl3_taste_generation_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -280,6 +278,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
+| `cl3_taste_generation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3671,6 +3670,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Five-judge panel result: 3/5 judges sided with the second tuple and ratified audited_clean / positive_theorem / class C; 2/5 sided with the first tuple and class A. Majority rationale: the claim closes only with accepted A1/A2 in the packet. A1 supplies the one-qubit/C^2/Pauli local site module and physical site-Hilbert bridge, A2 supplies the Z^3 site set, and the retained pure Cl(3,0) theorem supplies the finite-dimensional faithful irreducible module classification. The finite-block formula is then ordinary tensor-product dimension algebra. Under the audit rubric, correct use of accepted axiom content as the framework baseline is class C rather than a mere class A identity check over retained inputs. The clean verdict is therefore ratified in the scoped A1/A2 sense, not as a pure-Cl(3)-only derivation or a chirality/spin-statistics claim.
 - **rationale:** Five-judge panel result: 3/5 judges sided with the second tuple and ratified audited_clean / positive_theorem / class C; 2/5 sided with the first tuple and class A. Majority rationale: the claim closes only with accepted A1/A2 in the packet. A1 supplies the one-qubit/C^2/Pauli local site module and physical site-Hilbert bridge, A2 supplies the Z^3 site set, and the retained pure Cl(3,0) theorem supplies the finite-dimensional faithful irreducible module classification. The finite-block formula is then ordinary tensor-product dimension algebra. Under the audit rubric, correct use of accepted axiom content as the framework baseline is class C rather than a mere class A identity check over retained inputs. The clean verdict is therefore ratified in the scoped A1/A2 sense, not as a pure-Cl(3)-only derivation or a chirality/spin-statistics claim.
 - **auditor confidence:** judicial
+
+### `cl3_taste_generation_theorem`
+
+- **Note:** [`CL3_TASTE_GENERATION_THEOREM.md`](../../docs/CL3_TASTE_GENERATION_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the abstract finite representation-theory statement on C^8: S3 decomposition, hw=1 A1+E/Z3 orbit, and restricted Y/T3 spectra, with no carrier-realization or physical SM-generation identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-204936-b7451a3508-cl3_taste_generation_theorem`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Under the tensor-position S3 action on C^8, the character values are chi(e)=8, chi(2-cycle)=4, chi(3-cycle)=2, giving C^8 = 4A1 + 0A2 + 2E, with the hw=1 subspace an A1+E Z3 orbit carrying Y/T3 spectra {-1,+1/3,+1/3} and {-1/2,+1/2,+1/2}.  _(class `A`)_
+- **chain closes:** True — The S3 character calculation, hw=1 restriction, Z3 orbit, and Y/T3 spectra follow by finite-dimensional linear algebra from the provided definitions and retained-grade abstract inputs. The deferred physical-generation bridge is explicitly outside the audited scope.
+- **rationale:** The load-bearing mathematics is a direct algebraic identity check: fixed-point counts give the S3 character and standard S3 inner products give 4A1+2E with no A2. Independently, the hw=1 basis has transposition/3-cycle characters 1 and 0, so it is A1+E, and the stated Y/T3 spectra follow from the b1/b2 swap projectors and b3 Pauli fiber action. The runner source actually constructs the relevant matrices and projectors for Section G rather than merely printing constants. The note keeps carrier realization and physical SM-generation identification outside scope, so no open bridge is used to close the bounded claim.
+- **auditor confidence:** high
 
 ### `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27`
 

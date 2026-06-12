@@ -5,6 +5,11 @@ This runner verifies only the finite algebra stated in
 docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md.
 It does not select CAR from the framework, prove spacelike microcausality, or
 close an OS/Wightman field-construction residual.
+
+The spinor completeness check uses orthonormal Hamiltonian eigenspinors from
+numpy.linalg.eigh. It is not a covariant 2E-normalized textbook spin-sum; that
+normalization would require the usual compensating 1/(2E) field-expansion
+weight before producing an equal-time identity.
 """
 
 from __future__ import annotations
@@ -63,6 +68,12 @@ def main() -> int:
         f"spectrum +/-E={energy:.3f}; two u modes and two v modes",
     )
 
+    check(
+        "spinor_columns_are_orthonormal_eigh_modes",
+        np.allclose(eigvecs.conj().T @ eigvecs, np.eye(4), atol=1e-12),
+        "eigh returns an orthonormal Hamiltonian eigenbasis",
+    )
+
     one_mode_e = 1.0
     n_a = np.diag([0.0, 1.0, 0.0, 1.0])
     n_b = np.diag([0.0, 0.0, 1.0, 1.0])
@@ -91,9 +102,19 @@ def main() -> int:
 
     completeness = u_modes @ u_modes.conj().T + v_modes @ v_modes.conj().T
     check(
-        "spinor_completeness_gives_equal_time_CAR_matrix",
+        "orthonormal_eigenspinor_projectors_resolve_identity",
         np.allclose(completeness, np.eye(4)),
-        "sum_s(u u^dag + v v^dag)=I_4",
+        "U_+U_+^dag+U_-U_-^dag=I_4 for orthonormal eigenspinors",
+    )
+
+    pos_projector = u_modes @ u_modes.conj().T
+    neg_projector = v_modes @ v_modes.conj().T
+    check(
+        "positive_negative_energy_projectors_are_orthogonal",
+        np.allclose(pos_projector @ neg_projector, np.zeros((4, 4)), atol=1e-12)
+        and np.allclose(pos_projector @ pos_projector, pos_projector, atol=1e-12)
+        and np.allclose(neg_projector @ neg_projector, neg_projector, atol=1e-12),
+        "P_+P_-=0 and P_+^2=P_+, P_-^2=P_-",
     )
 
     bose_sign_matrix = u_modes @ u_modes.conj().T - v_modes @ v_modes.conj().T
@@ -140,6 +161,13 @@ def main() -> int:
         and "partner chirality is physically supplied" in note_text
         and "the framework derives the CAR/spin-statistics selection" in note_text,
         "guardrails keep CAR selection, partner chirality, and spacelike causality open",
+    )
+    check(
+        "source_note_declares_orthonormal_not_2E_spinor_normalization",
+        "orthonormal-eigenspinor route" in note_text
+        and "1/(2E)" in note_text
+        and "No such covariant-spinor normalization is imported or claimed here" in note_text,
+        "normalization bridge is explicit",
     )
 
     print()

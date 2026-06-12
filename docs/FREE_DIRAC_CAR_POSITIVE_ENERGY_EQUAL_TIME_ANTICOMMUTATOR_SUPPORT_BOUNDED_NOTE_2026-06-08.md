@@ -79,12 +79,36 @@ The runner also constructs an explicit `4 x 4` massive Dirac Hamiltonian and
 checks:
 
 - the single-particle spectrum is `{+E, +E, -E, -E}`;
-- `sum_s(u_s u_s^dag + v_s v_s^dag) = I_4`;
+- the positive- and negative-energy eigenspinors are orthonormal Hamiltonian
+  eigenvectors;
+- `sum_s(u_s u_s^dag + v_s v_s^dag) = I_4` as an orthonormal projector
+  resolution of identity;
 - the Bose-sign combination `sum_s(u_s u_s^dag - v_s v_s^dag)` is not `I_4`;
 - the scalar mass matrix is invariant under the supplied spinor boost matrix.
 
 The equal-time conclusion is therefore canonical CAR support, not a spacelike
 field-commutator theorem.
+
+## 2026-06-12 normalization bridge
+
+The conditional audit asked for an explicit bridge from textbook
+`2E`-normalized Dirac spinors to the orthonormal eigenspinor projector
+identity, or for the required `1/(2E)` field-expansion factor to be included
+before claiming an `I_4` equal-time matrix.
+
+This note takes the orthonormal-eigenspinor route. The runner diagonalizes the
+finite `4 x 4` Hermitian Dirac Hamiltonian with `numpy.linalg.eigh`, so the
+columns `u_s` and `v_s` are orthonormal in the finite Hilbert-space inner
+product. The identity checked is the spectral resolution
+
+```text
+U_+ U_+^dag + U_- U_-^dag = I_4,
+```
+
+not the covariant textbook spin-sum normalization. If one rewrites the same
+calculation using covariant `2E`-normalized spinors, the corresponding field
+expansion must carry the standard compensating `1/(2E)` weight.
+No such covariant-spinor normalization is imported or claimed here.
 
 ## Guardrails
 
@@ -109,4 +133,4 @@ anticommutator is canonical.
 python3 scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py
 ```
 
-Expected: `TOTAL: PASS=8 FAIL=0`.
+Expected: `TOTAL: PASS=11 FAIL=0`.

@@ -1,0 +1,17 @@
+loop_id: free-dirac-car-orthonormal-bridge-20260612
+status: packaged_for_review
+created: 2026-06-12
+target_claim_id: free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08
+target_prior_audit_status: audited_conditional
+source_note: docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md
+runner: scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py
+runner_cache: logs/runner-cache/frontier_free_dirac_car_positive_energy_equal_time_support.txt
+audit_blocker: "add and check explicit bridge from cited 2E-normalized Dirac spinors to orthonormal eigenspinor projector identity, or include required 1/(2E) field-expansion factor before claiming I4 equal-time matrix."
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/free-dirac-car-orthonormal-bridge-20260612
+pr_url: null
+next_exact_action: "Reviewer should confirm the normalization bridge and re-audit the row; no audit ledger status is changed by this branch."

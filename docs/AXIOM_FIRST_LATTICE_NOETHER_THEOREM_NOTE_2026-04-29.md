@@ -881,6 +881,52 @@ current retained narrow theorem):**
   imported. The Noether identities (N1)-(N3) close as stated on the
   admitted KS-phase carrier.
 
+## Kinetic supply-line refresh (2026-06-12; audit-unblock repair)
+
+The 2026-06-11 registered-routing section below correctly kept this
+row bounded/conditional because the residual `KS-phase-form` structural
+input was still routed through the registered staggered-Dirac target.
+Latest main now makes that route sharper without changing this row's
+status:
+
+1. [`STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`](STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md)
+   supplies a source-side two-flux-class theorem on the licensed
+   nearest-neighbor bilinear surface. Its cache
+   `logs/runner-cache/staggered_dirac_kinetic_class_forcing_check_2026_06_10.txt`
+   records `TOTAL: PASS=27 FAIL=0`. For this Noether row, the two
+   relevant outputs are:
+   - P-SD is discharged as the absorbing-frame theorem on the
+     flux-`-1` branch;
+   - P-KIN is reduced from a broad kinetic-class declaration to the
+     one-bit P-FLUX selector `phi = -1`, with `K0` the computed
+     countermodel inside the tested constraint set.
+2. [`P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`](P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md)
+   supplies the conditional composer for that bit. Its cache
+   `logs/runner-cache/p_flux_selection_via_fsb_k_check_2026_06_11.txt`
+   records `TOTAL: PASS=16 FAIL=0`: using the retained
+   [`STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md`](STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md)
+   geometry leg, P-FLUX is selected only if FSB-K reaches retained
+   grade with its realized-kernel quantifier and FSB-CL intact.
+3. [`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`](AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md)
+   remains the named open condition for that composer as of this sync.
+
+Thus this Noether row's residual is no longer "derive the entire
+Kawamoto-Smit carrier from scratch"; it is the sharper cascade
+
+```text
+kinetic-class forcing
+  -> P-SD discharged on K1
+  -> P-KIN reduced to P-FLUX
+  -> P-FLUX conditionally selected by FSB-K + retained Z
+```
+
+The local Noether algebra is unchanged and remains the same finite
+Grassmann/Kawamoto-Smit carrier identity checked by
+`scripts/axiom_first_lattice_noether_check.py`. This section does not
+promote the row: until the supplier rows are independently audited and
+the conditional FSB-K leg resolves, the Noether row remains bounded on
+the admitted `KS-phase-form` carrier.
+
 ## Registered Tier-A routing (2026-06-11; audit-requested repair)
 
 The recorded re-audit target for this row is to "close the full

@@ -1,0 +1,31 @@
+loop_slug: staggered-kinetic-supply-line-sync-20260612
+date: 2026-06-12
+mode: run
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Wire latest kinetic-class and P-FLUX supplier chain into audited-conditional staggered/Noether consumers."
+target_claims:
+  - staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07
+  - axiom_first_lattice_noether_theorem_note_2026-04-29
+  - staggered_dirac_realization_gate_note_2026-05-03
+blocker_attacked: "Audit residual asked for retained derivation of P-KIN/P-SD or full Kawamoto-Smit kinetic carrier."
+files_touched:
+  - docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+  - docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
+  - scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py
+  - logs/runner-cache/staggered_dirac_kinetic_supply_line_sync_2026_06_12.txt
+open_imports:
+  - "FSB-K is still the named conditional leg for P-FLUX."
+  - "Kinetic-class and P-FLUX supplier rows remain independently audit-owned."
+  - "The consumer rows remain bounded/conditional until supplier audits and FSB-K resolve."
+no_go_routes:
+  - "Do not branch-locally retag Noether or Kawamoto-Smit as retained; the supply line is not fully audited."
+verification:
+  live_runner: "python3 scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py -> TOTAL: PASS=53 FAIL=0"
+  cache_refresh: "python3 scripts/precompute_audit_runners.py --runners scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py --force --concurrency 1 --push-mode none --allow-non-main -> ok 1"
+pr_status: pending
+next_exact_action: "Run final diff/status checks, commit, push, and open the review PR."
+stop_condition: "Stop this block after PR creation; next campaign step is a fresh audited-conditional scan."

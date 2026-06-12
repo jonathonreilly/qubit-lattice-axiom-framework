@@ -49638,7 +49638,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
+      "to": "gravity_clean_derivation_note"
     },
     {
       "from": "repo.front_door_status",
@@ -95200,7 +95200,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+        "gravity_clean_derivation_note",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
         "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
@@ -95210,7 +95210,7 @@
         "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8ec5b9f4624f9e7a57e176bb83fa565f72a786fc508fe5691a11404f1fe28802",
+      "note_hash": "21b5d4a57f03d2e0c127ac3bbc37ab22df94a4fe2bf2e1df36be5d7c50c3361a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

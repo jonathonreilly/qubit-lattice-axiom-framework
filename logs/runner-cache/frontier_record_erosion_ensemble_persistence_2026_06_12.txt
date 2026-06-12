@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_erosion_ensemble_persistence_2026_06_12.py
+runner_sha256: f7503518face22338513a996582968b99e3ba3794f370ae3c88cb51087e872c5
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 0.28
+status: ok
+----- stdout -----
+TRACE: t=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+TRACE: eps=0.3 Rbar=[1, 2, 2.0475, 2.4194625, 1.5526875, 1.97579484375, 1.23632742188, 1.64060648883, 1.01255215852, 1.38044610944] Rens=[1, 2, 3, 3, 3, 3, 3, 3, 3, 3]
+TRACE: eps=0.6 Rbar=[1, 0.64, 1.44, 0.4608, 0.768, 0.24576, 0.43008, 0.1376256, 0.24772608, 0.0792723456] Rens=[1, 2, 3, 3, 3, 3, 3, 3, 3, 3]
+TRACE: eps=0.9 Rbar=[0, 0.19, 0, 0.0406125, 0, 0.0064303125, 0, 0.00106903945312, 0, 0.000182805746484] Rens=[1, 2, 3, 3, 3, 3, 3, 3, 3, 3]
+PASS: Y4a exact no-prune tree eps=0.3 :: max_weight_err=6.661e-16, branch_counts=[2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+PASS: Y4a exact no-prune tree eps=0.6 :: max_weight_err=5.551e-16, branch_counts=[2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+PASS: Y4a exact no-prune tree eps=0.9 :: max_weight_err=1.998e-15, branch_counts=[2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+PASS: Y4b branch t=3 matches repeated-readout closed form :: computed=[2.0475, 1.44, 0], closed_form=[2.0475, 1.44, 0]
+PASS: Y4b ensemble t=3 has all three classical records :: Rens=[3, 3, 3], MI=[[1.0, 1.0, 1.0], [1.0, 1.0, 1.0], [1.0, 1.0, 1.0]]
+PASS: Y4c eps=0.3 threshold-count trajectory has phase-2 rebounds :: phase2_Rbar=[2.0475, 2.4194625, 1.5526875, 1.97579484375, 1.23632742188, 1.64060648883, 1.01255215852, 1.38044610944], deltas=[0.3719625, -0.866775, 0.42310734375, -0.739467421875, 0.404279066953, -0.628054330313, 0.367893950927]
+PASS: Y4c eps=0.6 threshold-count trajectory has phase-2 rebounds :: phase2_Rbar=[1.44, 0.4608, 0.768, 0.24576, 0.43008, 0.1376256, 0.24772608, 0.0792723456], deltas=[-0.9792, 0.3072, -0.52224, 0.18432, -0.2924544, 0.11010048, -0.1684537344]
+PASS: Y4c eps=0.9 phase-2 trajectory OSCILLATES with decaying envelope: even steps exactly zero, odd-step rebounds strictly decaying (odd-step envelope strictly decreasing (ratio reported in detail)) -- not monotone-zero :: phase2_Rbar=[0, 0.0406125, 0, 0.0064303125, 0, 0.00106903945312, 0, 0.000182805746484]
+PASS: Y4d ensemble record forms by broadcast count and persists through phase 2 :: Rens(t)=min(t,3) for t=1..10 and every phase-2 fragment MI is 1 bit
+PASS: Y4e eps=0 phase 2 changes no branch-relational records :: phase2_Rbar=[3, 3, 3, 3, 3, 3, 3, 3]
+PASS: Y4e projective phase-2 step kills all connected correlators in one step :: before=3, after=0
+PASS: Y4e |0> pointer initial registers no branch or ensemble records :: max_Rbar=0.000e+00, max_Rens=0, max_MI=0.000e+00
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

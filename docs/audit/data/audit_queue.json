@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 278,
-    "high": 291,
+    "high": 290,
     "leaf": 469,
     "medium": 435
   },
@@ -7947,30 +7947,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hierarchy_dimensional_compression_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_realization_gate_note_2026-05-03"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.419,
-      "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_dimensional_compression.py",
-      "transitive_descendants": 241
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17301,15 +17277,15 @@
         "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.322,
+      "load_bearing_score": 7.84,
       "note_path": "docs/LIGHT_CONE_FRAMING_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/light_cone_staggered_dispersion.py",
-      "transitive_descendants": 79
+      "transitive_descendants": 80
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44310,6 +44286,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 71,
-  "total_pending": 1473
+  "ready_count": 70,
+  "total_pending": 1472
 }

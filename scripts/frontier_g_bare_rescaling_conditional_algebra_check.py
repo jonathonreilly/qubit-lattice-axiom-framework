@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Exact bounded-surface check for the g_bare rescaling algebra repair.
 
-This runner checks only the narrowed conditional lemma:
+This runner checks only the narrowed bounded algebraic split:
 
-  CN + scoped Wilson matching + rescaling by c
-    => Gram -> c^2 Gram and beta -> c^2 beta.
+  CN + scoped Wilson matching + rescaling by c => Gram -> c^2 Gram.
+  On fixed-g Wilson matching, beta_new = beta_old.
+  On the explicit counter-rescaled-coupling action surface
+      g_bare,new^2 = g_bare,old^2 / c^2,
+  Wilson matching gives beta_new = c^2 beta_old.
 
 It does not prove Wilson matching, does not derive the Wilson action surface,
 and does not apply an audit verdict.
@@ -46,11 +49,15 @@ def scale_gram(gram: list[list[Fraction]], c_squared: Fraction) -> list[list[Fra
     return [[c_squared * entry for entry in row] for row in gram]
 
 
+def wilson_beta(n_c: Fraction, g_bare_sq: Fraction) -> Fraction:
+    return Fraction(2) * n_c / g_bare_sq
+
+
 def main() -> int:
     gram = canonical_gram()
     n_c = Fraction(3)
     g_bare_sq = Fraction(1)
-    beta_old = Fraction(2) * n_c / g_bare_sq
+    beta_old = wilson_beta(n_c, g_bare_sq)
 
     check(
         "scoped WM gives beta_old = 2 N_c / g_bare^2 = 6 at the test point",
@@ -68,8 +75,6 @@ def main() -> int:
             for j in range(8)
             if i != j
         )
-        beta_new = c_squared * beta_old
-
         check(
             f"Gram scales by c^2 = {c_squared}",
             diag_ok and off_diag_ok,
@@ -80,10 +85,27 @@ def main() -> int:
             c_squared != 1 and expected_diag != Fraction(1, 2),
             "canonical diagonal is 1/2",
         )
+        beta_fixed_g = wilson_beta(n_c, g_bare_sq)
+        counter_rescaled_g_sq = g_bare_sq / c_squared
+        beta_counter_rescaled = wilson_beta(n_c, counter_rescaled_g_sq)
+
         check(
-            f"scoped WM routes rescaling into beta by c^2 = {c_squared}",
-            beta_new / beta_old == c_squared,
-            f"beta_new = {beta_new}; beta_new / beta_old = {beta_new / beta_old}",
+            f"fixed-g scoped WM leaves beta unchanged for c^2 = {c_squared}",
+            beta_fixed_g / beta_old == 1,
+            f"beta_fixed_g = {beta_fixed_g}; ratio = {beta_fixed_g / beta_old}",
+        )
+        check(
+            f"the c^2 beta rule is not a fixed-g consequence for c^2 = {c_squared}",
+            c_squared * beta_old != beta_fixed_g,
+            f"c^2 beta_old = {c_squared * beta_old}; fixed-g beta = {beta_fixed_g}",
+        )
+        check(
+            f"counter-rescaled coupling g_new^2 = g_old^2 / c^2 routes beta by c^2 = {c_squared}",
+            beta_counter_rescaled / beta_old == c_squared,
+            (
+                f"g_new^2 = {counter_rescaled_g_sq}; beta_new = {beta_counter_rescaled}; "
+                f"beta_new / beta_old = {beta_counter_rescaled / beta_old}"
+            ),
         )
 
     print(f"SUMMARY: PASS = {PASS}, FAIL = {FAIL}")
@@ -91,7 +113,7 @@ def main() -> int:
         print("Conditional rescaling algebra check failed.")
         return 1
 
-    print("Conditional rescaling algebra check passed; no retained status is asserted.")
+    print("Bounded rescaling algebra split passed; no retained status is asserted.")
     return 0
 
 

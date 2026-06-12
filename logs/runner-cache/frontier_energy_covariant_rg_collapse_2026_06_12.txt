@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_energy_covariant_rg_collapse_2026_06_12.py
+runner_sha256: fc208d9e24c65377c7425f6057c7b7ea594c74d352b37208b4e7ab9345efb734
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+SCOPE: free 1D, the declared b=2 Schur convention, now E-COVARIANT in the shifted quotient coupling |h| = |t/(mu-E)| by the algebraic Schur formula; dense checks run on sampled admissible (E,t,mu) instances away from the singular odd-block gate, with chart |h| < 1/sqrt(2). NOT claimed: interacting, d=3, gauge, universality beyond the convention. Statuses pipeline-derived; audit lane grades.
+[PASS] X1 domain: every sampled (E,t,mu) has |mu-E| > 0.1: admissible-domain gate over the actual sample list; min_abs_mu_minus_E=1.7, samples=12
+[PASS] X1a closure at E != 0: E={-0.7,0.3,1.1}, 4 points, N=16; max_uniform_NN_residual=0.000e+00, diag_spread=0.000e+00, nn_spread=0.000e+00, diag_prime_range=[-3.52846808511,4.17840816327], t_prime_range=[-0.0579655172414,0.017064516129]
+[PASS] X1b shift identity: mu_prime - E = (mu - E)(1 - 2 h^2) at every sampled admissible (E,t,mu) instance; the source note gives the algebraic all-domain formula for mu != E; max_abs_error=4.441e-16
+[PASS] X1c collapse on sampled admissible (E,t,mu) instances: Schur h_prime equals h^2/(1 - 2 h^2) on the sampled grid; this matches the E=0 quotient map in the shifted coupling; max_abs_error=1.388e-17
+[PASS] mu=E excluded from the domain: at mu=E exactly with t=0.4, N=16, h_oo - E is singular and the runner decimation path rejects it; min_singular_value=0.000e+00, decimation raised LinAlgError
+[PASS] X1d threshold covariance: |mu-E| <= 2|t| iff |h| >= 1/2 at E=2.5 and E=0.3; below_gap64=0.5, below_gap128=0.5, below_resolvent_norm128<=2; finite-N witness above_gap64=0.0901806, above_gap128=0.00653905
+[PASS] X1e energy-resolved length: N=128 resolvent log-slope below threshold matches xi_E=1/arccosh(1/(2|h|)); (E,h)=(-0.4,0.31) xi_meas=0.945867, xi_exact=0.945867, rel=2.348e-16; (E,h)=(0.85,0.44) xi_meas=1.93621, xi_exact=1.93621, rel=1.872e-12; xi(h')/xi(h) at h=0.49 is 0.5
+[PASS] X1f quotient/chart inherited: E=0.37 sign quotient spectra(t) = spectra(-t); chart discloses boundary blow-up from actual Schur output at |h|=0.7065 just below 1/sqrt(2)=0.70711; sign_spectrum_err=0.000e+00, abs_h_prime=290.96, map_evenness_err=0.000e+00
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

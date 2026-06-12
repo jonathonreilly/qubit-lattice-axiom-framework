@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 848 |
+| **retained_bounded** | 849 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1403 |
+| unaudited | 1402 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1293 |
+| `audited_clean` | 1294 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1720 |
+| `unaudited` | 1719 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 505 |
-| `high` | 505 |
-| `medium` | 863 |
+| `high` | 506 |
+| `medium` | 862 |
 | `leaf` | 1317 |
 
 - **Retained pending chain closure:** 16
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 720 | 31.49 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 850 | 31.23 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.84 | `unaudited` | unaudited |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 179 | 30.49 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 188 | 30.56 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1052,6 +1052,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `quantum_horizon_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
@@ -15248,6 +15249,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The antecedent is not supplied by Quantum alone: the same C^2 admits a scalar boost action S(eta)=exp(eta c)I_2 unless a matter-attachment or kinetic-kernel selector identifies the physical boost with the Pauli operator frame.  _(class `A`)_
 - **chain closes:** True — The accepted minimal axiom supplies the one-site M_2(C) / Cl(3,0) algebra and explicitly omits dynamics, species identification, and physical observable bridges. A scalar action on the same C^2 is compatible with that restricted content, while the Pauli/Weyl exclusion appears only after the operator-frame or kinetic-kernel selector is added.
 - **rationale:** The runner computes the finite Pauli/Clifford, commutant, Lorentz-bracket, scalar-action, and kinetic-kernel checks; its final C.4 line is a hard-coded summary, but the no-go is independently supported by the cited axiom boundary plus the scalar-action countermodel. Manual algebra confirms {sigma_i,sigma_j}=2 delta_ij I, scalar commutant, and the conditional result that if K transforms as a vector under J=sigma/2 then K_i=lambda J_i with lambda=+-i for so(3,1). The no-go discipline gate passes only for the narrow Quantum-alone route: the note leaves matter-attachment and explicit-admission closure paths open and does not assert an absolute no-go against faithful boosts.
+- **auditor confidence:** high
+
+### `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19`
+
+- **Note:** [`QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`](../../docs/QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic obstruction on the retained ray/support-only packet: given p, r, a_d, supp, delta_A1, and a_u(kappa)=sin_d*(1-rho*kappa), the current packet leaves kappa unfixed and BICAC is only the kappa=1 endpoint.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-005834-5f89638826-quark_bicac_endpoint_obstruc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** All retained ray/support identities are independent of kappa and remain true at the distinct points kappa=sqrt(6/7), 48/49, and 1, so the packet admits a positive-width bridge interval and does not force kappa=1.  _(class `A`)_
+- **chain closes:** True — Independent algebra verifies rho*sqrt(supp)=1/7, supp*delta_A1=1/49, sqrt(6/7)<48/49<1, and the listed packet invariants do not contain kappa. The obstruction is narrow: it rules out endpoint selection from this support-only packet, not from later kappa-sensitive carrier normalization data.
+- **rationale:** The load-bearing step is a genuine algebraic non-uniqueness argument over the declared retained inputs, and the runner source computes the stated identities rather than importing external comparators or opaque helpers. The cited staggered-Dirac authority is used only for carrier naming, while the endpoint-obstruction algebra is standalone and the note explicitly limits itself to bounded scope. The no-go discipline stress test does not expose an overbroad wall because the claim is confined to the current ray/support-only packet and expressly leaves shell-normalization and future endpoint-selection routes open.
 - **auditor confidence:** high
 
 ### `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28`

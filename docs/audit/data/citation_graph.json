@@ -50346,10 +50346,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_dimensional_compression_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -96684,17 +96684,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "su3_casimir_fundamental_theorem_note_2026-05-02",
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
         "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
-        "hierarchy_dimensional_compression_note"
+        "hierarchy_dimensional_compression_note",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "495b91f1e90e69d0919c5df91a55da07f5e8377b1ba2bcdafb9f6b94420aca9d",
+      "note_hash": "4dda83500a9029834e2d44ac8333ad552581e3849b64c8b01fe55a69b64df7e6",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

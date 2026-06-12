@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 216 |
-| **retained_no_go** | 208 |
+| **retained_no_go** | 209 |
 | **retained_bounded** | 856 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1387 |
+| unaudited | 1386 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1305 |
+| `audited_clean` | 1306 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1704 |
+| `unaudited` | 1703 |
 
 | claim_type | count |
 |---|---:|
@@ -475,6 +475,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6633,6 +6634,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The note's operative step is that asserting the physical observable to be the intensive C3 Atiyah-Bott density on intrinsic R3 at the z=0 zero-section, rather than the Gamma5-graded extensive lattice index, is simultaneously the carrier identification and the zero-section pick.  _(class `F`)_
 - **chain closes:** False — The displayed C3, transverse determinant, J_cs, and L3 arithmetic checks close, but they do not derive the physical readout identification. The missing step is an independent bridge theorem forcing the intensive intrinsic-R3 z=0 readout as the physical observable rather than naming that choice as the carrier/basepoint gate.
 - **rationale:** The runner genuinely checks the finite C3 algebra and J_cs commutation facts, and an independent formula pass did not expose a sign, factor, or normalization error in those displayed identities. Those facts support the negative that J_cs does not select the r parameter and show that both intensive and extensive readouts remain available. The conclusion equating the readout gate, carrier identification, and zero-section pick is a symbol-identity assertion over existing choices, not a first-principles derivation from the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02`
+
+- **Note:** [`FLAVOR_RECORD_DYNAMICS_SHARPENS_ARROW_STABILIZER_FAILS_2026-06-02.md`](../../docs/FLAVOR_RECORD_DYNAMICS_SHARPENS_ARROW_STABILIZER_FAILS_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow no-go for the tested attractor/stabilizer family: Lüders sharpening, its reverse erasure map, tested C3 block einselection, and I/3 thermalization do not make r=1/2 a dynamical attractor; stationarity/durability and measure/reference routes are out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-a45e9e42da-flavor_record_dynamics_sharp`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the tested two-sector record map, Lüders self-composition sharpens r -> 2r^2, so r=1/2 is a fixed point with multiplier 2 and is unstable.  _(class `A`)_
+- **chain closes:** True — The stability claim follows algebraically: f(1/2)=1/2, f'(1/2)=2, and for 0<r<1/2 the iterate f(r)=2r^2 decreases toward 0. Independent checks also confirm g(r)=sqrt(r/2) is the inverse/stabilizing erasure direction, the C3-invariant operator commutes with the singlet projector, and I/3 gives weights 1/3 and 2/3, hence r=1.
+- **rationale:** The runner source performs the finite algebraic checks it reports rather than merely printing expected constants, and the displayed factors, derivative, projectors, and thermal normalization independently check out. This is class A algebraic closure over the stated tested maps, not a class C derivation of those maps from baseline axioms. The no-go discipline gate passes only in the corrected narrow scope: the packet closes the tested attractor/stabilizer route, while explicitly leaving stationarity/durability fixed-point occupancy, measure/reference choices, and other future dynamics open.
 - **auditor confidence:** high
 
 ### `flavor_record_readout_form_not_weight_2026-06-02`

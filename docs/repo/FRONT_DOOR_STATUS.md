@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1484 |
-| Retained-grade rows, including boxed decorations | 1330 |
+| Applied audit verdicts | 1485 |
+| Retained-grade rows, including boxed decorations | 1331 |
 | Retained positive theorems | 216 |
-| Retained no-go rows | 208 |
+| Retained no-go rows | 209 |
 | Retained bounded rows | 856 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1387 |
+| Unaudited rows | 1386 |
 | Retained-pending-chain rows | 17 |
 | Audited conditional rows | 53 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1389 |
-| Ready rows | 27 |
+| Total pending rows | 1388 |
+| Ready rows | 26 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
 | High pending | 285 |
 | Medium pending | 411 |
-| Leaf pending | 421 |
+| Leaf pending | 420 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02`](../../docs/FLAVOR_RECORD_DYNAMICS_SHARPENS_ARROW_STABILIZER_FAILS_2026-06-02.md) - medium; unaudited
 - [`gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07`](../../docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06`](../../docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md) - medium; unaudited
 - [`koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02`](../../docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md) - medium; unaudited
 - [`koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
-- [`interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`](../../docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md) - leaf; unaudited
+- [`interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`](../../docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
+- [`newton_poisson_flat_friedmann_textbook_import_note_2026-05-17`](../../docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

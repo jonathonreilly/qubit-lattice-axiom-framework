@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "alpha_s_derived_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "alpha_s_derived_narrow_theorem_note_2026-05-10",
         "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02",
         "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07",
         "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
         "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
-        "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04"
+        "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
+        "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4862ec5a7cab5865801d0176111bb0802f19a276ceded582cc09b6daf2934c28",
+      "note_hash": "eb39b0cafb835e82c8225d119dc803baa22df1957ad40eb1b51fa84a183c6921",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

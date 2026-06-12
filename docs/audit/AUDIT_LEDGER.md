@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 847 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1406 |
+| unaudited | 1405 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1292 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1723 |
+| `unaudited` | 1722 |
 
 | claim_type | count |
 |---|---:|
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 720 | 31.49 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 850 | 31.23 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.84 | `unaudited` | unaudited |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 188 | 30.56 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 179 | 30.49 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1448,6 +1448,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_minimal_scale_free_selector_note_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_taste_cube_cyclic_source_descent_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10751,6 +10752,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Exactness gives fibres, not canonical splittings; the closing section a=0, b1=0, b2=0 is exactly the missing primitive-based readout/basepoint law or an equivalent retained canonical-section theorem.  _(class `A`)_
 - **chain closes:** True — The no-go closes within the restricted packet: the note and runner exhibit nontrivial kernels, nonunique section families, and counter-representatives that preserve retained totals while changing Q or delta. No dependency note is required because the audited scope is the algebraic obstruction for the stated projections, not a positive derivation of the missing physical readout law.
 - **rationale:** The runner verifies the load-bearing linear-algebra obstruction rather than hard-coding a target Koide closure: nonzero kernel representatives preserve the retained projections and fail to close the target readouts, while the zero representative is an additional section choice. This supports the no-go claim that exactness/cohomology data alone do not supply the primitive-based basepoint/readout law. Residual risk is scope control: the clean result applies to the explicit retained-projection exact-sequence packet, not to every conceivable future cohomological theorem that might add new structure.
+- **auditor confidence:** high
+
+### `koide_q_minimal_scale_free_selector_note_2026-04-22`
+
+- **Note:** [`KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic uniqueness, up to reparametrization, of the minimal nontrivial scale-free C3-invariant quadratic selector on an admitted three-slot returned carrier.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-004910-205c9e441a-koide_q_minimal_scale_free_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At quadratic order the C3-invariant quadratic scalar space is two-dimensional, spanned by r0^2 and r1^2+r2^2, so quotienting by overall scale leaves exactly one nontrivial ratio rho_Q=(r1^2+r2^2)/(2r0^2).  _(class `A`)_
+- **chain closes:** False — The invariant-theory count itself checks out algebraically: the linear invariant is only r0, and the quadratic invariant family is exactly two-dimensional, leaving one scale-free ratio. The full carrier identification remains conditional on the cited staggered-Dirac realization parent, which is marked unaudited in the restricted packet, and the kappa normalization bridge is asserted as convention rather than independently derived here.
+- **rationale:** The runner genuinely performs symbolic algebra for the C3 invariant count and the independent check confirms the key factors: r1^2+r2^2=4(S-P), rho_Q=(r1^2+r2^2)/(2r0^2), and Q=(1+rho_Q)/3=S/(u+v+w)^2. This supports the abstract selector-uniqueness claim on the three-slot carrier. However the source note explicitly depends on the staggered-Dirac second-order carrier admission, and the only cited authority for that carrier is marked effective_status unaudited. The displayed rho_Q=2/kappa equivalence also depends on a named circulant convention not derived from the restricted packet.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25`

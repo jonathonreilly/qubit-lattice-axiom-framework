@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 272,
     "high": 285,
-    "leaf": 422,
+    "leaf": 421,
     "medium": 411
   },
   "cycle_break_target_count": 0,
@@ -16887,30 +16887,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "alpha_s_derived_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.248,
-      "note_path": "docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_alpha_s_tadpole_power_identity.py",
-      "transitive_descendants": 18
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17014,6 +16990,38 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/koide_carrier_scoring_needs_nontrivial_modular_2026_06_02.py",
+      "transitive_descendants": 18
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+        "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "cpt_exact_note",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_readout_lane_demarcation_note_2026-05-30"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.248,
+      "note_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/koide_signed_readout_is_not_chirality.py",
       "transitive_descendants": 18
     },
     {
@@ -29626,38 +29634,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
-        "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
-        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "cpt_exact_note",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_readout_lane_demarcation_note_2026-05-30"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/koide_signed_readout_is_not_chirality.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -42004,6 +41980,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 28,
-  "total_pending": 1390
+  "ready_count": 27,
+  "total_pending": 1389
 }

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 215 |
+| **retained** | 216 |
 | **retained_no_go** | 208 |
 | **retained_bounded** | 856 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1388 |
+| unaudited | 1387 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1304 |
+| `audited_clean` | 1305 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1705 |
+| `unaudited` | 1704 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 505 |
 | `high` | 506 |
-| `medium` | 867 |
-| `leaf` | 1312 |
+| `medium` | 869 |
+| `leaf` | 1310 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -149,6 +149,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `alpha_s_derived_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1855,6 +1856,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0², α_LM² = (α_bare/u_0)² = α_bare·(α_bare/u_0²) = α_bare·α_s(v).  _(class `A`)_
 - **chain closes:** True — The scoped claim is purely algebraic and follows immediately from the two definitional equations plus positivity for the logarithm. No physical plaquette value, running bridge, PDG comparator, or retained dependency is needed for the theorem as stated.
 - **rationale:** The theorem closes inside its explicitly narrow scope: once α_LM and α_s(v) are defined as α_bare/u_0 and α_bare/u_0² over positive scalars, T1-T3 are forced by algebra. The runner's numeric retained-value checks are not load-bearing for the abstract theorem, and the source note explicitly excludes physical derivation or external comparator claims.
+- **auditor confidence:** high
+
+### `alpha_s_derived_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact algebraic tadpole-power identities P1, P2, and the listed corollaries over positive real alpha_bare and u_0, conditional only on the retained abstract definitions alpha_LM = alpha_bare/u_0 and alpha_s(v) = alpha_bare/u_0^2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-014208-925ca56649-alpha_s_derived_narrow_theor`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting alpha_LM := alpha_bare/u_0 and alpha_s(v) := alpha_bare/u_0^2 gives alpha_LM^2 = alpha_bare * alpha_s(v) and alpha_s(v)/alpha_LM = 1/u_0.  _(class `A`)_
+- **chain closes:** True — The cited authority is retained and supplies exactly the two abstract positive-real definitions consumed by the source note. Independent substitution verifies P1, P2, and the corollaries without any plaquette value, running bridge, external comparator, or physical identification.
+- **rationale:** The load-bearing step is a genuine class A algebraic closure over retained-grade cited inputs. The runner source performs symbolic SymPy reductions on free positive symbols rather than merely printing constants or importing a numerical target, and its PASS breakdown is consistent with the note's stated scope. The source note explicitly excludes the open plaquette evaluation, M_Z running bridge, numerical readouts, and Standard-Model identification, so no open dependency is load-bearing for this narrow claim.
 - **auditor confidence:** high
 
 ### `alpha_s_derived_note`

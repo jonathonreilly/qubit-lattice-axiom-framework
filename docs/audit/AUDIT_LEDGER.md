@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 862 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1370 |
+| unaudited | 1369 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 59 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1317 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1687 |
+| `unaudited` | 1686 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1556 |
+| `bounded_theorem` | 1557 |
 | `decoration` | 54 |
 | `meta` | 326 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 775 |
+| `positive_theorem` | 774 |
 
 | criticality | count |
 |---|---:|
@@ -1479,6 +1479,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_minimal_scale_free_selector_note_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10638,6 +10639,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With J_i = σ_i/2 ≠ 0, K_i = 0 makes [K_i,K_j] = 0 while the so(3,1) or so(4) bracket requires [K_i,K_j] = ± i ε_ijk J_k, so K=0 is not a completion.  _(class `A`)_
 - **chain closes:** True — The retained merger supplies the operator-frame spatial rotation generators J_i=σ_i/2, and the Lie-bracket contradiction for K=0 is immediate. The chain does not close full matter faithfulness; the missing step is the matter-field-index attachment bridge, which the note explicitly disclaims.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: for any off-diagonal pair, ε_ijk J_k is nonzero, so K=0 cannot satisfy either sign of the [K,K] bracket. An independent algebra check also gives the listed same-carrier completions K_i=aJ_i with a^2=-1 for so(3,1) and a^2=+1 for so(4). The runner's section E uses hard-coded scope assertions, so those are not treated as proof; the clean verdict rests on the bracket algebra and the cited operator-frame merger only.
+- **auditor confidence:** high
+
+### `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`
+
+- **Note:** [`KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3/circulant algebra localization: Q is phase-independent, the Z3 character index gives a multiplicity readout, same-factor C3-equivariant Gamma_chi anticommutation is zero, and a separate chirality-factor anticommuter exists; no derivation of r=1/2 is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-023550-61b52a267e-koide_first_order_selector_i`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Within the C3-equivariant R^3 generation algebra the only Gamma_chi-anticommuting operator is zero, while on R^3 tensor C^2 an off-diagonal chirality operator commutes with C tensor I and anticommutes with I tensor sigma_z, so the first-order escape is a factor-crossing L-R coupling.  _(class `A`)_
+- **chain closes:** False — The finite algebraic identities close under the narrow C3-equivariant/circulant scope. The full selector claim does not close because the AC_phi_lambda L-R coupling and the bridge from that coupling to the physical first-order determinant/r weighting remain open or unaudited in the restricted packet.
+- **rationale:** Independent checks confirm the runner's algebraic core: the trigonometric sums are delta-independent, the regular C3 character has multiplicities (1,1,1), the circulant same-factor anticommuting intersection is zero, and the tensor-factor sigma_x escape exists. However, the cited staggered-Dirac gate is unaudited and explicitly carries open residuals, while the Berry authority does not supply a retained Berry/chirality-to-r branch-selection theorem. The source also overstates the shorthand C3-equivariance iff commutes-with-Gamma_chi: the forward implication holds for circulants, but the converse is false for general operators preserving the singlet/doublet split. Thus the packet supports a narrowed algebraic localization, not a clean closure of the framework selector.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md`
+  - `KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`
 - **auditor confidence:** high
 
 ### `koide_fisher_rao_spherical_reorganization_note_2026-06-01`

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1501 |
+| Applied audit verdicts | 1502 |
 | Retained-grade rows, including boxed decorations | 1340 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 862 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 40 |
-| Unaudited rows | 1370 |
+| Unaudited rows | 1369 |
 | Retained-pending-chain rows | 17 |
-| Audited conditional rows | 58 |
+| Audited conditional rows | 59 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1372 |
-| Ready rows | 12 |
+| Total pending rows | 1371 |
+| Ready rows | 11 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
 | High pending | 285 |
 | Medium pending | 411 |
-| Leaf pending | 404 |
+| Leaf pending | 403 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md) - medium; unaudited
 - [`koide_import_two_bit_decomposition_note_2026-05-30`](../../docs/KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md) - medium; unaudited
 - [`koide_kahler_dirac_silent_on_measure_note_2026-05-30`](../../docs/KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md) - medium; unaudited
 - [`koide_reality_type_permitted_not_forced_note_2026-05-30`](../../docs/KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md) - medium; unaudited
 - [`lepton_block_d12_prime_matching_no_go_note_2026-05-10`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md) - medium; unaudited
-- [`observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28`](../../docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md) - leaf; unaudited
+- [`observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28`](../../docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
+- [`rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -93,7 +93,18 @@ def main() -> int:
     check(
         "spinor_completeness_gives_equal_time_CAR_matrix",
         np.allclose(completeness, np.eye(4)),
-        "sum_s(u u^dag + v v^dag)=I_4",
+        "orthonormal projectors: sum_s(u u^dag + v v^dag)=I_4",
+    )
+
+    u_2e = np.sqrt(2.0 * energy) * u_modes
+    v_2e = np.sqrt(2.0 * energy) * v_modes
+    completeness_2e_unweighted = u_2e @ u_2e.conj().T + v_2e @ v_2e.conj().T
+    completeness_2e_weighted = completeness_2e_unweighted / (2.0 * energy)
+    check(
+        "twoE_normalized_spinors_need_field_expansion_weight",
+        not np.allclose(completeness_2e_unweighted, np.eye(4))
+        and np.allclose(completeness_2e_weighted, np.eye(4)),
+        "2E-normalized unweighted sum is 2E I_4; (1/(2E)) weighted sum is I_4",
     )
 
     bose_sign_matrix = u_modes @ u_modes.conj().T - v_modes @ v_modes.conj().T

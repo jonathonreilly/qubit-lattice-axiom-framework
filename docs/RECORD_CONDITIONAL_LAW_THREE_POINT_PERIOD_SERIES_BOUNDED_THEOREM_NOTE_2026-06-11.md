@@ -5,8 +5,9 @@
 **Claim type:** bounded_theorem
 **Script:** `scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py`
 **Cache:** `logs/runner-cache/frontier_record_conditional_law_three_point_period_series_2026_06_11.txt`
-**Status:** source proposal; the audit lane grades. Runner `PASS=17 FAIL=0` — exact,
-deterministic, no MC. **Memory contract respected by construction:** uniform
+**Status:** source proposal; the audit lane grades. Runner `PASS=19 FAIL=0` checks exact
+finite-tree evolution plus a fixed 300-permutation deterministic sampled-null certificate.
+It is not an exhaustive permutation-null p95 certificate. **Memory contract respected by construction:** uniform
 `expm_multiply` machinery across all three periods — the step unitary is *never*
 materialized (a dense `U` at L=5 would be 17 GB); environments freed between periods;
 measured **peak footprint ~2.5 GB** (`/usr/bin/time -l`; max RSS ~1.4 GB), single-run safe, panels serialize heavy recomputes.
@@ -20,7 +21,7 @@ mislabel the #3554 stall (first gain `4×10⁻⁴`), while a 0.01 tolerance flip
 events. The honest statistic is **criterion-free: the minimum k-step gain**
 `min(p₃−p₂, p₄−p₃)` per event, reported as a number.
 
-## The findings (exact — runner `PASS=17 FAIL=0`)
+## The findings (runner `PASS=19 FAIL=0`)
 
 **(G1) The min-gain ledger — no systematic period strengthening:**
 
@@ -37,9 +38,9 @@ min-gain > 0 is exactly equivalent to `p₂<p₃<p₄`). What does **not** persi
 weakening is of *clarity*, not of monotonicity — the strict signature survives
 three-point (1/2, 7/7, 6/6).
 
-**(G2) Null-clearing drops from all-tested to typical:** 5/6 L=5 seeds clear their
-label-permutation null; seed 20260611's most-spread event does **not** (gap `−0.030`) —
-the first non-clearing event of the series, disclosed rather than averaged away — **a null-clearing failure, not a monotonicity failure** (its min-gain is positive).
+**(G2) Fixed-sample sampled-null clearing drops from all-tested to typical:** 5/6 L=5 seeds clear their
+fixed 300-permutation sampled null; seed 20260611's most-spread event does **not** (gap `−0.030`) —
+the first non-clearing event of the series, disclosed rather than averaged away — **a sampled-null failure, not a monotonicity failure** (its min-gain is positive).
 
 **(G3) The gap medians are trendless:** `{~0.139, ~0.193, ~0.095}` for L = {3,4,5} —
 fluctuating within overlapping ranges. The #3555 panel-corrected verdict
@@ -49,13 +50,33 @@ law**; gap magnitudes are event/seed-dominated.
 ## The three-point verdict — an honest negative that redirects
 
 Across L = 3, 4, 5 the record-conditional structure **does not strengthen
-systematically with the period**: gain magnitudes and null-clearing both regress at
+systematically with the period**: gain magnitudes and sampled-null clearing both regress at
 L=5, while the strict-monotonicity signature itself persists — #3555's magnitude
 clarity was not the onset of a trend. **At
 accessible periods the conditional law's structure is event/seed-dominated, and period
 scans at these sizes cannot decide the conditional-law question.** The redirect this
 buys: the next genuine lever on the R2 stationarity residual is **analytic, or a
 different observable** — not larger rings.
+
+## 2026-06-12 sampled-null scope repair
+
+The permutation-null statistic in this source packet is a fixed, seeded,
+300-permutation sampled-null p95 computed by the runner:
+
+```text
+null_p95(Theta, w, kpref=3, n_draws=300, seed=7777).
+```
+
+This is a deterministic source-packet certificate for the named finite samples
+and seeds. It does not claim an exhaustive permutation-null p95, a certified
+finite-sample upper confidence bound, or a Monte-Carlo-free null theorem. The
+bounded positive retained for re-audit is therefore only:
+
+```text
+For the stated L=3/L=4/L=5 events, occupancies, seeds, depth choices, and
+fixed 300-permutation sampled-null protocol, the three-point min-gain ledger
+and sampled-null gap series have the displayed values.
+```
 
 ## What this does and does not claim
 

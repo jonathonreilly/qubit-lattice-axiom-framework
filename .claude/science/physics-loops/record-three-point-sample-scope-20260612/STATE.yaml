@@ -1,0 +1,17 @@
+loop_id: record-three-point-sample-scope-20260612
+status: packaged_for_review
+created: 2026-06-12
+target_claim_id: record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11
+target_prior_audit_status: audited_conditional
+source_note: docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md
+runner: scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py
+runner_cache: logs/runner-cache/frontier_record_conditional_law_three_point_period_series_2026_06_11.txt
+audit_blocker: "missing_dependency_edge: provide retained one-hop authorities for the inherited #3554/#3555 Born/record-conditioning chain, named instrument/carrier/hopping and selector protocol, and either certify the permutation null exactly or narrow the claim to the implemented sampled-null protocol."
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/record-three-point-sample-scope-20260612
+pr_url: null
+next_exact_action: "Reviewer should confirm the sampled-null scope narrowing. Remaining inherited dependency edges still require audit or separate source suppliers."

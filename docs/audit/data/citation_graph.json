@@ -4393,6 +4393,10 @@
       "to": "causal_field_portability_note"
     },
     {
+      "from": "centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11",
+      "to": "born_rule_from_gleason_busch_derivation_note_2026-05-20"
+    },
+    {
       "from": "central_band_layernorm_note",
       "to": "geometry_lane_head_to_head_note"
     },
@@ -21013,6 +21017,10 @@
       "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
     },
     {
+      "from": "koide_p1_collapses_frame_residuals_note_2026-06-01",
+      "to": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
+    },
+    {
       "from": "koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23",
       "to": "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
     },
@@ -33539,6 +33547,10 @@
     {
       "from": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
       "to": "minimal_axioms"
+    },
+    {
+      "from": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
+      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
     },
     {
       "from": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
@@ -55632,9 +55644,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "bounded theorem (answer-mode; source proposal for PR #3532's named next object)",
       "claim_type_seed_hint": null,
-      "deps": [],
+      "deps": [
+        "born_rule_from_gleason_busch_derivation_note_2026-05-20"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "0f1f84df6e83c42d97d0ea4878fb2ef0c27fc722cd47ee4415cc5ea07c8a0cf5",
+      "note_hash": "220a32888c7a7217cda8f8c975d60d0c6b57faddb4ca6ad9c38065ebbc773453",
       "path": "docs/CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_centered_u1_fluctuation_record_mixture_structure_2026_06_11.py",
       "title": "The Centered U(1) Fluctuation Law: Not Distribution-Stationary, Non-Gaussian in the Spread Regime \u2014 and the Spread Decomposes into Record-Sector Mixture plus Within-Sector Spread"
@@ -78308,10 +78322,11 @@
         "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-        "axiom_first_spin_statistics_theorem_note_2026-04-29"
+        "axiom_first_spin_statistics_theorem_note_2026-04-29",
+        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ceff2f90052c93e7ffcab3ac88a12cd8f51d1e456c01cf90e25bbcc1e12d0e54",
+      "note_hash": "e9ca4fb713af252b9ce3fb5a7aebf0c568eba38ea6d1d1650eda06b1c9159cf8",
       "path": "docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md",
       "runner_path": "scripts/frontier_koide_p1_collapses_frame_residuals.py",
       "title": "Microcausality/Reflection-Positivity Localizes Carrier-Frame Residuals Without Forcing Faithfulness"
@@ -99400,10 +99415,11 @@
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "fermion_parity_z2_grading_theorem_note_2026-05-02",
-        "minimal_axioms"
+        "minimal_axioms",
+        "axiom_first_spin_statistics_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "effa148bee8396a65b31db3cd30e61012fc52e317199f7f384fda1cfb31dedc4",
+      "note_hash": "4f9cadf6dce0d1fd7df0e84102c79fa4406bad5c927122f40677079a19e25585",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md",
       "runner_path": "scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Statistics Selection: GL(F) Conditional Discriminator, No Unconditional Closure"
@@ -108706,7 +108722,6 @@
     "carrier_orbit_invariance_note_2026-05-03",
     "causal_escape_window_note",
     "causal_propagating_field_live_packet_note_2026-06-05",
-    "centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11",
     "central_band_born_dense_sweep_note",
     "central_band_born_largen_note",
     "central_band_collapse_note",
@@ -109617,10 +109632,10 @@
       "open_gate": 158,
       "positive_theorem": 617
     },
-    "edge_count": 12513,
+    "edge_count": 12516,
     "leaf_count": 1068,
     "node_count": 3327,
-    "root_count": 1047,
+    "root_count": 1046,
     "runners_with_path": 2912
   }
 }

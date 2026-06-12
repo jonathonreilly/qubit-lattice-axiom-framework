@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 866 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1360 |
+| unaudited | 1363 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 60 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -62,21 +62,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1321 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1677 |
+| `unaudited` | 1680 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1559 |
+| `bounded_theorem` | 1558 |
 | `decoration` | 55 |
 | `meta` | 326 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 771 |
+| `positive_theorem` | 772 |
 
 | criticality | count |
 |---|---:|
@@ -101,11 +101,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1529 | 127.08 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1530 | 127.08 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1056 | 63.55 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1388 | 60.94 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 881 | 59.28 | `unaudited` | unaudited |
-| 5 | `key_terminology` | meta | critical | 1215 | 50.25 | `unaudited` | meta |
+| 5 | `key_terminology` | meta | critical | 1216 | 50.25 | `unaudited` | meta |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 997 | 49.96 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 969 | 45.42 | `unaudited` | unaudited |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 977 | 44.43 | `unaudited` | unaudited |
@@ -1461,7 +1461,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_taste_generation_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_upper_bound_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1485,7 +1484,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_minimal_scale_free_selector_note_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_taste_cube_cyclic_source_descent_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1507,7 +1505,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `spin_statistics_fs_admission_located_exercise_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3134,21 +3131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The primary runner recomputes the configured finite zero controls and placement-comparison ratios for three growth families and three source-placement rules, and the note's boundary claim is limited to those runner-defined outputs: placement changes the measured ratios, while no common portable cross-family scale appears in the configured cases.  _(class `C`)_
 - **chain closes:** True — The source note's table and safe read match the completed primary runner output, and the helper only supplies finite growth, propagation, and centroid routines. The two one-hop dependencies are retained-bounded and supply fixed-anchor finite context; the audited claim does not rely on the unaudited center-family 0.45 result, physical field theory, source-placement causality, or a portability theorem beyond the configured harness.
 - **rationale:** Clean only as a bounded finite diagnostic. The runner directly checks the load-bearing numerical controls and placement-ratio table, the values match the source note, and the retained-bounded dependencies are sufficient for the fixed-anchor context. Residual risk is external validity: broader source-placement causality, physical field theory, and portability/no-go claims remain outside the audited scope.
-- **auditor confidence:** high
-
-### `centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11`
-
-- **Note:** [`CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-horizon, finite-seed computation for the supplied centered U(1) fluctuation model showing non-stationarity, spread-regime non-Gaussianity, and record-prefix mixture structure at the stated instance.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260612-020929-d5fa372704-centered_u1_fluctuation_law_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** At seed 4242, depth 9, prefix-3 record conditioning gives 0.557 versus label-permutation-null median/p95/max 0.463/0.469/0.481, so the record prefix clears the null and exhibits record-sector structure with within-sector remainder.  _(class `C`)_
-- **chain closes:** False — The runner source genuinely computes the finite-instance characteristic-function, prefix-conditioning, and permutation-null quantities from the supplied Born-weighted trajectory model. The restricted packet does not close the Born weighting/readout-instrument/carrier/hopping premises from retained authorities or approved primitives, and the note itself flags the Born cap as unaudited.
-- **rationale:** The primary runner constructs the finite fermionic model, Kraus pair, exact binary outcome tree, prefix profiles, and permutation nulls rather than merely printing constants, so the load-bearing computation is class C at the supplied instance. Full closure is still conditional because the packet imports the Born-weighted outcome tree and supplied instrument/carrier/hopping setup without a retained one-hop authority. Formula inventory also finds a source/runner arithmetic drift: at depth 9 and prefix 3 the binary tree has 2^(9-3)=64 branches per family, not 128, though the reported null-clearing inequality is still the computed one.
-- **open / conditional deps cited:**
-  - `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `central_band_born_dense_sweep_note`
@@ -10980,24 +10962,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The runner source performs actual finite-dimensional matrix and symbolic algebra checks rather than merely printing constants, and the displayed formulas independently reduce correctly: cJc^{-1}=-J, c^Tgc=g, c^T omega c=-omega, trace(H)=3a, trace(H^2)=3a^2+6|b|^2, and Q=(1+2r)/3. The cooling jump orthogonality and zero Lambda^1 to Lambda^1 Kähler-Dirac block are also direct algebraic facts in the finite model. The note does not claim the missing B-coupling to B-field bridge or a Koide derivation, so the bounded local-support claim closes on its own terms.
 - **auditor confidence:** high
 
-### `koide_p1_collapses_frame_residuals_note_2026-06-01`
-
-- **Note:** [`KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded residual-localization claim: CCR/free-boson exclusion and hard-core-boson blindness are checked, while the CAR-over-hard-core collapse and scalar-admission/no-faithfulness conclusion remain conditional on separate retained spin-statistics/OS/free-scalar bridges.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260611-152812-e64eeaf268-koide_p1_collapses_frame_res`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given the faithful spin-1/2 Weyl representation, Bose-quantizing the negative-energy mode is unbounded below while CAR is bounded, so statistics conditionally collapses into faithfulness; but the hard-core boson survives retained inputs and the scalar J=K=0 is admitted, so faithfulness is not forced.  _(class `A`)_
-- **chain closes:** False — The packet verifies the finite algebraic examples and correctly preserves the hard-core residual, but it does not supply a retained theorem selecting CAR over the hard-core boson. It also imports the free scalar's full microcausality/reflection-positivity admissibility without a retained scalar free-field bridge in the restricted packet.
-- **rationale:** The runner source performs real finite checks for the negative-energy Bose unboundedness, CAR boundedness, CCR trace obstruction, hard-core-boson evasion, a simple scalar RP kernel PSD check, and the two-site JW/hard-core spectrum match. Those checks support the bounded bookkeeping, but they do not close the physics bridge from positive energy/microcausality/RP to CAR over hard-core bosons. The provided re-scoped spin-statistics authority itself excludes only the CCR/free-boson branch and explicitly leaves the hard-core-vs-CAR selection out of scope, so the claimed collapse is conditional rather than retained-load-bearing.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`
-  - `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`
-  - `free_field_os_wightman_reconstruction`
-  - `free_sector_spin_statistics_level1`
-- **auditor confidence:** high
-
 ### `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04`
 
 - **Note:** [`KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md`](../../docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md)
@@ -18119,21 +18083,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited minimal axiom premise supplies the one-qubit local algebra on the Z^3 substrate, and standard finite tensor-product algebra closes the hard-core-boson and JW-CAR computations. No additional retained selector is needed for this scoped negative conclusion; possible future graded-locality or spin-statistics selectors are outside the claim.
 - **rationale:** The runner source actually constructs Pauli tensor operators, JW strings, generated-algebra ranks, hard-core/free-boson dimension checks, and finite ordering obstructions; it is not merely printing expected constants. Independent algebra confirms that disjoint bare ladders commute, JW-dressed ladders satisfy CAR, and both generator sets recover the same full matrix algebra, so ungraded algebra and dimension data cannot distinguish the statistics frame. The no-go is properly scoped to forcing from those baseline data and does not claim that every possible future graded-locality or spin-statistics principle is excluded.
 - **auditor confidence:** high
-
-### `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10`
-
-- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded conditional discriminator on the finite qubit tensor-product surface: assuming GL(F), the explicit {free boson, hard-core boson, Grassmann/CAR} list selects Grassmann/CAR; dropping GL(F) restores the tested hard-core/JW tie, so no unconditional statistics selection is audited.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260611-223232-f7bf8139fb-staggered_dirac_substep1_sta`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** GL(F) is non-constant across the explicit candidates: the JW/Grassmann realization satisfies the cross-site anticommutators while the hard-core realization does not, and with the dim-2 exclusion of the free boson exactly Grassmann/CAR survives.  _(class `C`)_
-- **chain closes:** False — The T1-T3 finite-algebra discriminator closes conditionally: an independent exact two-site check already gives nonzero bare cross-site anticommutator, zero JW cross-site anticommutators, and F-oddness of both frames. The full source-note scope does not close unconditionally because GL(F) is explicitly unsupplied and the T4 supplier-boundary leg relies on not-provided/unaudited nearby-row claims, especially the 04-29 spin-statistics note.
-- **rationale:** The runner source substantively constructs Pauli/JW operators and computes anticommutators, algebra dimensions, F-oddness, hopping equality, and the hard-core CCR defect; it is not a print-only certificate. An independent exact two-site calculation confirms the load-bearing exchange-sign claims and the hard-core on-site CCR defect. However, the note also asserts a supplier audit saying GL(F) is currently supplied by nothing, including an unaudited 04-29 row and other nearby rows not provided in the restricted packet. Thus the conditional selection is sound, but the row remains conditional rather than clean.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`
-- **auditor confidence:** medium
 
 ### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
 

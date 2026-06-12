@@ -1,0 +1,21 @@
+loop: noether-gate-edge-boundary-repair-20260612
+date: 2026-06-12
+branch: physics-loop/noether-gate-edge-boundary-repair-20260612
+base: origin/main
+current_goal: "Repair the Axiom-first lattice Noether conditional source edge to the unaudited parent staggered gate."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_lattice_noether_check.py
+  - .claude/science/physics-loops/noether-gate-edge-boundary-repair-20260612/
+open_imports:
+  - "KS-phase-form remains an admitted structural input until the staggered carrier closes."
+review_findings: []
+next_exact_action: "Open review PR; audit/review decides whether this removes the accidental unaudited parent-gate dependency edge."
+stop_condition: "PR opened with Noether runner passing and no audit data edited."

@@ -847,19 +847,21 @@ directly rather than this gate alias").
   quantum number) and C3 (compatibility with reflection-positivity
   superselection), but this rewire does not consume it as audit authority.
 
-**Registered Tier-A carrier route (load-bearing admitted target, not
-retained authority):**
+**Plain-text registered Tier-A carrier route (admitted target, not one-hop
+authority):**
 
-- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   — parent-identity gate alias and registered Tier-A derivation target
   `AC_φλ`, consumed here only as the carrier route for the residual
   `KS-phase-form` input. This is not retained authority and does not
-  close the gate. The load-bearing finite-Grassmann algebra is supplied
-  by the retained substep-1 Grassmann narrow theorem above; the specific
-  Kawamoto-Smit phase form `η_μ(x)` (used in Step 2's bilateral
-  derivation and Step 4b's two-site-shift symmetry) remains an explicit
-  admitted-context structural input on the staggered carrier, carried
-  forward as the residual `KS-phase` structural admission below.
+  close the gate, and it is intentionally written as a plain-text pointer
+  rather than a markdown link so the citation graph does not record it as a
+  one-hop dependency. The load-bearing finite-Grassmann algebra is supplied by
+  the retained substep-1 Grassmann narrow theorem above; the specific
+  Kawamoto-Smit phase form `η_μ(x)` (used in Step 2's bilateral derivation and
+  Step 4b's two-site-shift symmetry) remains an explicit admitted-context
+  structural input on the staggered carrier, carried forward as the residual
+  `KS-phase` structural admission below.
 
 **Residual structural admission (admitted context, not supplied by any
 current retained narrow theorem):**
@@ -890,10 +892,12 @@ this row bounded/conditional." This section takes the precedented
 registered-routing form of that repair (per
 `PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md` and
 `YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`,
-plain-text precedent pointers): the residual carrier admission is
-routed explicitly into the **registered Tier-A derivation target**, so
-the citation graph carries a registered admission rather than an
-unregistered conditional blocker.
+plain-text precedent pointers): the residual carrier admission is routed
+explicitly into the **registered Tier-A derivation target** by name, while the
+parent target remains a plain-text pointer rather than a markdown dependency
+edge. The source graph therefore carries the retained substep-1 algebra edge
+and a named registered admission, not an accidental unaudited parent-gate
+one-hop authority.
 
 1. **The algebra is standalone.** The load-bearing content — the
    plus-sign bilateral lattice current, the two-step Ward identity,
@@ -905,18 +909,18 @@ unregistered conditional blocker.
    Kawamoto-Smit phase form `η_μ(x)` (the `KS-phase-form` residual
    above) consumes the staggered-Dirac realization complex; it is
    substep-2 content of that complex.
-3. **The admission is a registered Tier-A target.** The canonical
-   parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the
-   registered Tier-A derivation target `AC_φλ` in the admission
-   registry (`docs/audit/data/tier_a_admissions.json`); the
-   `KS-phase-form` input routes **into** that registered target (its
-   substep-2 face). This note does **not** close the gate and does
-   **not** promote the substep-2 forcing note. Under the published
-   chain rule (`docs/audit/scripts/compute_effective_status.py`), a
-   clean `bounded_theorem` row whose only non-retained, non-axiom
-   admission routes to a registered Tier-A derivation target is a
-   candidate for the Tier-A-bounded class rather than an unregistered
-   conditional blocker.
+3. **The admission is a registered Tier-A target.** The canonical parent
+   `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the registered
+   Tier-A derivation target `AC_φλ` in the admission registry
+   (`docs/audit/data/tier_a_admissions.json`); the `KS-phase-form` input routes
+   **into** that registered target (its substep-2 face). The parent remains a
+   plain-text pointer here, not a markdown dependency edge. This note does
+   **not** close the gate and does **not** promote the substep-2 forcing note.
+   Under the published chain rule
+   (`docs/audit/scripts/compute_effective_status.py`), a clean
+   `bounded_theorem` row whose only non-retained, non-axiom admission routes to
+   a registered Tier-A derivation target is a candidate for the Tier-A-bounded
+   class rather than an unregistered conditional blocker.
 4. **No status assertion.** This section makes the narrow re-audit
    case only. The audit lane is the sole authority on whether to honor
    it; this note asserts no `effective_status` and predicts no audit

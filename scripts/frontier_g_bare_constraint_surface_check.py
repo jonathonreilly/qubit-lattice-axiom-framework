@@ -20,6 +20,11 @@ from __future__ import annotations
 
 import sys
 from fractions import Fraction
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md"
 
 
 PASS = 0
@@ -42,6 +47,18 @@ def check(name: str, cond: bool, detail: str = "") -> bool:
 
 
 def main() -> int:
+    note_text = NOTE.read_text(encoding="utf-8")
+    check(
+        "source declares Wilson matching as an accepted/supplied premise",
+        "accepted/supplied premise" in note_text
+        and "separate retained Wilson" in note_text
+        and "matching theorem" in note_text,
+    )
+    check(
+        "source declares beta=6 as an accepted/scoped assumption",
+        "`beta = 6`" in note_text and "accepted/scoped assumptions" in note_text,
+    )
+
     N_c = Fraction(3)
     beta_local = Fraction(2) * N_c
     check(

@@ -25,9 +25,11 @@ formula [5] of
 
 Specifically, if the Higgs is identified with a **single** Hamming-weight
 class `hw = k`, the effective `N_taste^(k) = binomial(4, k)`, and the
-five candidate single-class assignments give five distinct tree-level
-values `m_H_tree^(k)`. None of them coincide with the existing 140.3 GeV
-headline of `HIGGS_MASS_FROM_AXIOM_NOTE.md`. The `N_taste = 16` choice
+five candidate single-class assignments give three distinct tree-level
+values `m_H_tree^(k)` because the binomial staircase has the symmetries
+`k = 0` with `k = 4` and `k = 1` with `k = 3`. None of the five
+assignments coincides with the existing 140.3 GeV headline of
+`HIGGS_MASS_FROM_AXIOM_NOTE.md`. The `N_taste = 16` choice
 that produces the existing 140.3 GeV headline is the **uniform**
 all-corners admission that treats the 16 corners as one Higgs channel;
 that choice is itself an admitted convention, not a structural derivation
@@ -171,6 +173,7 @@ This note does not close:
 ## Changelog
 
 - 2026-06-11 (u_0 precision reconciliation, audit-requested): parent B1/C1 input synced to u_0 = <P>^{1/4} = 0.877681381 under the plaquette reuse license (PLAQUETTE_SELF_CONSISTENCY_NOTE.md, cited per the house B1 pattern); channel table regenerated from the rerun; no claim-scope change.
+- 2026-06-12 (scope-too-broad repair): replaced the stale "five distinct tree-level values" wording with the exact table-supported statement: five assignments yield three distinct values, with `k = 0/4` and `k = 1/3` degeneracies, and none equals the uniform-16 readout.
 
 ## Verification
 
@@ -186,7 +189,8 @@ Expected:
 TOTAL: PASS=N FAIL=0
 VERDICT: the Wilson Hamming-weight staircase does not by itself fix
 N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md formula [5]; the five
-single-class assignments give five distinct m_H_tree values, none of
-which coincides with the uniform-16 admission that produces the
-existing 140.3 GeV headline.
+single-class assignments give three distinct m_H_tree values, with the
+`k = 0/4` and `k = 1/3` degeneracies shown in the table, and none of
+the five assignments coincides with the uniform-16 admission that
+produces the existing 140.3 GeV headline.
 ```

@@ -1,0 +1,35 @@
+loop: conditional-source-cleanups-20260612
+date: 2026-06-12
+branch: physics-loop/conditional-source-cleanups-20260612
+base: origin/main
+mode: source_repair
+target_status: bounded-support
+audit_authority: independent_audit_lane_only
+audit_data_files_modified: false
+current_surface_status: source_repair_pr
+target_rows:
+  - higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08
+  - g_bare_constraint_vs_convention_theorem_note_2026-05-03
+  - g_bare_rescaling_freedom_removal_theorem_note_2026-05-03
+  - quark_route2_source_domain_bridge_no_go_note_2026-04-28
+  - yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17
+files_touched:
+  - docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md
+  - scripts/frontier_higgs_channel_effective_ntaste_boundary.py
+  - docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md
+  - scripts/frontier_g_bare_constraint_surface_check.py
+  - docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
+  - scripts/frontier_g_bare_rescaling_conditional_algebra_check.py
+  - docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+  - scripts/frontier_quark_route2_source_domain_bridge_no_go.py
+  - docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
+verification:
+  higgs_runner: "PASS=93 FAIL=0"
+  gbare_constraint_runner: "PASS=7 FAIL=0"
+  gbare_rescaling_runner: "PASS=15 FAIL=0"
+  route2_runner: "PASS=104 FAIL=0"
+  yt_bc_transfer_runner: "PASS=29 FAIL=0"
+  precompute_check: "All relevant caches are fresh"
+next_exact_action: independent review/audit can re-check the five repaired source surfaces
+stop_condition: PR opened for review

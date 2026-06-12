@@ -15,7 +15,8 @@ docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md
   - Identifying the Higgs with a single Hamming-weight class
     hw = k gives effective N_taste^(k) = binomial(4, k) and
     m_H_tree^(k) = v * sqrt(4 / (u_0^2 * binomial(4, k))).
-  - The five single-class values are pairwise distinct from the
+  - The five single-class assignments fall into three distinct values
+    by binomial symmetry, and each assignment is distinct from the
     uniform-N_taste = 16 value v^2 / (4 u_0^2). The "uniform 16"
     choice is itself an admission, not a consequence of the
     staircase identity.
@@ -488,7 +489,7 @@ def main() -> int:
     banner("frontier_higgs_channel_effective_ntaste_boundary.py")
     print(" Bounded boundary statement: the Wilson Hamming-weight staircase")
     print(" does not by itself fix N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md")
-    print(" formula [5]; the five single-class assignments give five")
+    print(" formula [5]; the five single-class assignments give three")
     print(" distinct m_H_tree values, none matching the uniform-16 admission")
     print(" that produces the existing 140.3 GeV headline.")
 
@@ -510,8 +511,8 @@ def main() -> int:
         print()
         print(" VERDICT: the Wilson Hamming-weight staircase does not by itself")
         print(" fix N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md formula [5]; the")
-        print(" five single-class assignments give five distinct m_H_tree")
-        print(" values, none of which coincides with the uniform-16 admission")
+        print(" five single-class assignments give three distinct m_H_tree")
+        print(" values, and none coincides with the uniform-16 admission")
         print(" that produces the existing 140.3 GeV headline.")
     return 0 if FAIL == 0 else 1
 

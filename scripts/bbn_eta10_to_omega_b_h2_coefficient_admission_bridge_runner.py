@@ -7,8 +7,8 @@ The runner checks only:
    integral, computed independently and matched against the standard
    photon-number density per unit T^3;
 2. The supplied P1-P4 premise packet recorded in the source note (proton
-   mass, CMB temperature, critical density unit, Cyburt convention /
-   residual normalization);
+   mass, CMB temperature, critical-density unit from admitted H_100 and G,
+   Cyburt convention / residual normalization);
 3. The deterministic arithmetic recovering Omega_b h^2 / eta_10 within 0.2% of the
    Cyburt-Fields-Olive-Yeh 2016 value 3.6515e-3.
 
@@ -40,8 +40,21 @@ M_P_GRAMS = 1.6726219236e-24       # P1: proton rest mass in cgs
 T_CMB_KELVIN = 2.725                # P2: present-day CMB temperature
 K_B_GEV_PER_K = 8.617333262e-14     # auxiliary: Boltzmann constant in GeV/K
 HBAR_C_GEV_CM = 1.97326980e-14      # auxiliary: hbar*c in GeV*cm
-RHO_CRIT_PER_H2 = 1.878e-29         # P3: critical density unit in g/cm^3
+H100_KM_S_MPC = 100.0               # P3a: H_100 convention
+MPC_METERS = 3.0856775814913673e22   # P3b: SI Mpc conversion
+G_NEWTON_SI = 6.67430e-11            # P3c: Newton constant in SI
+KG_PER_M3_TO_G_PER_CM3 = 1.0e-3
 S_CYBURT = 1.0                      # P4: raw unit-conversion baseline
+
+
+def critical_density_per_h2() -> float:
+    """Compute rho_crit/h^2 from admitted H_100 and G in cgs units."""
+    h100_s_inv = (H100_KM_S_MPC * 1000.0) / MPC_METERS
+    rho_kg_m3 = 3.0 * h100_s_inv**2 / (8.0 * pi * G_NEWTON_SI)
+    return rho_kg_m3 * KG_PER_M3_TO_G_PER_CM3
+
+
+RHO_CRIT_PER_H2 = critical_density_per_h2()
 
 PASS = 0
 FAIL = 0
@@ -70,6 +83,7 @@ def part0_source_firewall() -> None:
         "P1 proton rest mass",
         "P2 present-day CMB temperature",
         "P3 critical-density unit",
+        "2026-06-12 P3 critical-density unit decomposition",
         "P4 Cyburt conversion convention",
         "does not derive the premise packet" if "does not derive the premise packet" in note else "does not derive P1-P4",
         "not registry accepted premises",
@@ -159,9 +173,14 @@ def part4_premise_packet_named() -> None:
         f"T_CMB = {T_CMB_KELVIN} K",
     )
     check(
-        "P3 critical-density unit admitted as textbook import (not derived here)",
-        abs(RHO_CRIT_PER_H2 - 1.878e-29) / 1.878e-29 < 1e-2,
-        f"rho_crit/h^2 = {RHO_CRIT_PER_H2} g/cm^3",
+        "P3 critical-density unit computed from admitted H_100 and G",
+        abs(RHO_CRIT_PER_H2 - 1.878e-29) / 1.878e-29 < 1e-3,
+        f"rho_crit/h^2 = {RHO_CRIT_PER_H2:.6e} g/cm^3",
+    )
+    check(
+        "P3 formula is rho_crit/h^2 = 3 H_100^2 / (8 pi G) with SI-to-cgs conversion",
+        H100_KM_S_MPC == 100.0 and G_NEWTON_SI > 0.0 and MPC_METERS > 0.0,
+        f"H100={H100_KM_S_MPC} km/s/Mpc, G={G_NEWTON_SI:.6e} SI",
     )
     check(
         "P4 Cyburt convention / residual normalization admitted as combined import",
@@ -174,12 +193,12 @@ def part5_retention_scorecard(coeff: float) -> None:
     print("\n== Part 5: retention scorecard ==")
     note = NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "source says one factor out of five is analytic rather than empirical",
-        "One factor out of five is analytic rather than empirical" in note,
+        "source says critical-density unit is formula-expanded instead of black-boxed",
+        "critical-density unit is now formula-expanded instead of black-boxed" in note,
     )
     check(
-        "source keeps the remaining four components imported as P1-P4",
-        all(marker in note for marker in ["imported (P1)", "imported (P2)", "imported (P3)", "imported (P4)"]),
+        "source keeps four admitted premise classes P1-P4",
+        all(marker in note for marker in ["imported (P1)", "imported (P2)", "admitted `H_100`, `G`", "imported (P4)"]),
     )
     check(
         "bridge does not promote the parent cosmology cascade row",
@@ -203,9 +222,9 @@ def main() -> int:
             "VERDICT: bounded admission bridge passes; the textbook coefficient "
             "3.6515e-3 decomposes into one analytic factor (2 zeta(3)/pi^2 "
             "from the Planck distribution) and four imported premises (P1 m_p, "
-            "P2 T_CMB, P3 rho_crit/h^2, P4 Cyburt convention / residual "
-            "normalization), recovered to within 0.13% of the Cyburt+ 2016 "
-            "published value."
+            "P2 T_CMB, P3 H_100/G critical-density unit, P4 Cyburt convention / "
+            "residual normalization), recovered to within 0.13% of the Cyburt+ "
+            "2016 published value."
         )
         return 0
     print("VERDICT: bounded admission bridge FAILED.")

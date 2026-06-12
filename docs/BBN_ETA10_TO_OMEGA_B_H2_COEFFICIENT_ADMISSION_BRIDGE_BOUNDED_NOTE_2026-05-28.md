@@ -31,6 +31,23 @@ No new axiom, import, or retained bridge is introduced. The conditional
 arithmetic is the load-bearing content; the premise packet stays admitted
 until a retained authority for it lands.
 
+## 2026-06-12 P3 critical-density unit decomposition
+
+This repair removes one black-box numerical constant from P3. The runner now
+computes
+
+```text
+rho_crit / h^2 = 3 H_100^2 / (8 pi G)
+```
+
+with `H_100 = 100 km s^-1 Mpc^-1`, `G = 6.67430e-11 m^3 kg^-1 s^-2`, the
+SI megaparsec conversion, and the final `kg m^-3 -> g cm^-3` unit conversion.
+The calculation recovers `rho_crit/h^2 = 1.878e-29 g cm^-3`.
+
+This is a unit-definition arithmetic repair, not a framework derivation of
+`H_100`, `G`, or SI/CGS metrology. P3 remains a supplied physical-constant
+premise, but no longer enters as an opaque critical-density unit.
+
 ## 0. Scope and Boundary
 
 This note formalizes a single textbook coefficient that currently enters the
@@ -73,7 +90,7 @@ where the bracketed factors carry the following imported / framework status:
 | `2 zeta(3) / pi^2`              | photon number density / T^3     | analytic Planck-distribution factor, not an empirical fit |
 | `T_CMB`                         | present-day CMB temperature     | imported (P2) |
 | `m_p`                           | proton rest mass                | imported (P1) |
-| `rho_crit / h^2`                | unit-conversion constant from `H_100` | imported (P3) |
+| `rho_crit / h^2`                | computed unit conversion from admitted `H_100` and `G` | imported constants, arithmetic explicit (P3) |
 | `S_Cyburt`                      | conversion convention / residual normalization | imported (P4) |
 
 The bridge proves: **if** P1-P4 are admitted as the non-framework premise
@@ -99,9 +116,11 @@ introduced.
   textbook present-day CMB photon temperature (FIRAS / Planck). The framework
   does not derive `T_CMB` on this row.
 - **P3 critical-density unit.** `rho_crit / h^2 = 1.878e-29 g cm^-3` is
-  admitted as the textbook Friedmann unit constant derived from
-  `H_100 = 100 km s^-1 Mpc^-1` and Newton's constant `G`. The framework does
-  not derive `H_100` or `G` on this row.
+  computed by the runner from the textbook critical-density formula
+  `rho_crit/h^2 = 3 H_100^2/(8 pi G)`, the admitted convention
+  `H_100 = 100 km s^-1 Mpc^-1`, the admitted Newton constant `G`, and the
+  stated SI-to-cgs unit conversion. The framework does not derive `H_100`,
+  `G`, or the metrology constants on this row.
 - **P4 Cyburt conversion convention / residual normalization.** The combined
   factor `S_Cyburt` carries the small convention difference between the raw
   `m_p * n_gamma0 / (rho_crit/h^2)` unit conversion and the published
@@ -174,19 +193,29 @@ post-e+e- baryon-to-photon ratio convention. This row does not derive that
 convention; it records the residual Cyburt normalization as an admitted
 input.
 
-Dividing by the textbook `rho_crit / h^2 = 1.878e-29 g cm^-3`:
+The runner computes the critical-density unit as
+
+```text
+H_100        = 100 km s^-1 Mpc^-1
+             = 3.240779...e-18 s^-1,
+rho_crit/h^2 = 3 H_100^2 / (8 pi G)
+             = 1.878e-26 kg m^-3
+             = 1.878e-29 g cm^-3.                                      (V)
+```
+
+Dividing by that computed P3 unit:
 
 ```text
 Omega_b h^2 / eta  =  n_gamma_today * m_p * S_Cyburt / (rho_crit / h^2)
                   =  410.5 * 1.6726e-24 * S_Cyburt / 1.878e-29
-                  ~=  3.656e7 * S_Cyburt.                               (V)
+                  ~=  3.656e7 * S_Cyburt.                               (VI)
 ```
 
 With `S_Cyburt = 1` as the raw unit-conversion baseline:
 
 ```text
 Omega_b h^2 / eta  ~=  3.656e7,
-Omega_b h^2 / eta_10  ~=  3.656e-3,                                     (VI)
+Omega_b h^2 / eta_10  ~=  3.656e-3,                                     (VII)
 ```
 
 within 0.13% of the published Cyburt+ 2016 value `3.6515e-3`. The residual
@@ -199,12 +228,14 @@ sub-percent gap is the admitted P4 convention / normalization residual.
 | `2 zeta(3) / pi^2` | Riemann zeta arithmetic, photon polarization count | analytic, non-empirical factor inside the supplied setup |
 | `T_CMB` | 2.725 K, set by CMB-FIRAS measurement | imported (P2) |
 | `m_p` | 938.272 MeV, set by QCD spectroscopy | imported (P1) |
-| `rho_crit / h^2` | derives from `H_100` and `G` | imported (P3) |
+| `rho_crit / h^2` | `3 H_100^2/(8 pi G)` plus unit conversion | formula computed from admitted `H_100` and `G` (P3) |
 | `S_Cyburt` | conversion convention / residual normalization | imported (P4) |
 
-**One factor out of five is analytic rather than empirical.** The remaining
-four are recorded here as a named premise packet. This is the canonical
-import-name-it admission step.
+**One factor out of five is analytic rather than empirical, and the
+critical-density unit is now formula-expanded instead of black-boxed.** The
+four premise classes P1-P4 remain admitted because P3 still depends on
+admitted `H_100`, `G`, and metrology constants. This is the canonical
+import-name-it admission step, sharpened so the unit arithmetic is executable.
 
 ## 4. What this bridge does NOT close
 
@@ -214,8 +245,9 @@ This bridge intentionally does not close:
   workstream);
 - derivation of the present-day CMB temperature `T_CMB` (separate cosmology
   / Planck-pin workstream);
-- derivation of the Hubble unit `H_100` or Newton's constant `G` entering
-  `rho_crit / h^2` (the latter is a separate framework gravity workstream);
+- derivation of the Hubble unit `H_100`, Newton's constant `G`, or the SI/CGS
+  metrology constants entering `rho_crit / h^2` (the formula and unit
+  conversion are computed here; the physical constants are not);
 - derivation of the photon entropy / e+e- annihilation / neutrino-decoupling
   convention used to quote the post-e+e- baryon-to-photon ratio;
 - derivation of the Cyburt+ convention / normalization residual;
@@ -233,9 +265,10 @@ cosmology cascade.
 
 This bridge has no retained-grade load-bearing dependencies on framework
 authorities. The analytic factor `2 zeta(3) / pi^2` is elementary
-analysis of the supplied Planck distribution and is computed inline. The four
-admitted premises (P1-P4) are explicit textbook imports recorded in
-section 2.
+analysis of the supplied Planck distribution and is computed inline. P3's
+critical-density arithmetic is also computed inline from its admitted
+physical constants. The four admitted premise classes (P1-P4) are explicit
+textbook imports recorded in section 2.
 
 ## 6. Non-Load-Bearing Context
 
@@ -265,12 +298,13 @@ PYTHONPATH=scripts python3 scripts/bbn_eta10_to_omega_b_h2_coefficient_admission
 Expected:
 
 ```text
-TOTAL: PASS=29 FAIL=0
+TOTAL: PASS=31 FAIL=0
 VERDICT: bounded admission bridge passes; the textbook coefficient
 3.6515e-3 decomposes into one analytic factor (2 zeta(3)/pi^2 from the
 Planck distribution) and four imported premises (P1 m_p, P2 T_CMB, P3
-rho_crit/h^2, P4 Cyburt convention / residual normalization), recovered
-to within 0.13% of the Cyburt+ 2016 published value.
+H_100/G critical-density unit, P4 Cyburt convention / residual
+normalization), recovered to within 0.13% of the Cyburt+ 2016 published
+value.
 ```
 
 ## 8. Audit Boundary

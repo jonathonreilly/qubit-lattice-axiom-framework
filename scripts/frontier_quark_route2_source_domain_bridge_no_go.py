@@ -679,7 +679,9 @@ def main() -> int:
         == (
             "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
             "QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md",
+            "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md",
             "RCONN_DERIVED_NOTE.md",
+            "S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md",
         ),
         str(dependency_files),
     )

@@ -1,0 +1,22 @@
+loop: microcausality-lr-budget-repair-20260612
+date: 2026-06-12
+branch: physics-loop/microcausality-lr-budget-repair-20260612
+base: origin/main
+current_goal: "Repair the audited conditional microcausality/Lieb-Robinson row by removing stale finite-range budget arithmetic."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+target_claim_id: axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01
+files_touched:
+  - docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md
+  - scripts/axiom_first_microcausality_check.py
+  - .claude/science/physics-loops/microcausality-lr-budget-repair-20260612/
+open_imports:
+  - "Gauged/interacting exact-log locality bridge remains open."
+  - "Continuum microcausality remains sector-scoped to the Lorentz/lightcone inputs."
+review_findings: []
+next_exact_action: "Open review PR and let independent audit/review decide whether the stale-formula conditional blocker is cleared."
+stop_condition: "PR opened with row-level and finite-range bridge runners passing."

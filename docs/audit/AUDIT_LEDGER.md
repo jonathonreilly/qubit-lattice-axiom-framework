@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 846 |
+| **retained_bounded** | 847 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1407 |
+| unaudited | 1406 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1291 |
+| `audited_clean` | 1292 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1724 |
+| `unaudited` | 1723 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 505 |
-| `high` | 506 |
-| `medium` | 862 |
+| `high` | 505 |
+| `medium` | 863 |
 | `leaf` | 1317 |
 
 - **Retained pending chain closure:** 16
@@ -108,13 +108,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 998 | 49.96 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 970 | 45.42 | `unaudited` | unaudited |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 978 | 44.44 | `unaudited` | unaudited |
-| 9 | `plaquette_self_consistency_note` | bounded_theorem | critical | 954 | 42.40 | `audited_clean` | **retained_bounded** |
+| 9 | `plaquette_self_consistency_note` | bounded_theorem | critical | 953 | 42.40 | `audited_clean` | **retained_bounded** |
 | 10 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1038 | 41.52 | `audited_clean` | **retained** |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1041 | 40.52 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1355 | 39.41 | `audited_clean` | **retained** |
 | 13 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1295 | 38.84 | `audited_clean` | **retained_bounded** |
 | 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 791 | 38.63 | `audited_clean` | **retained_bounded** |
-| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 733 | 38.52 | `audited_clean` | **retained_no_go** |
+| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 732 | 38.52 | `audited_clean` | **retained_no_go** |
 | 16 | `alpha_s_derived_note` | bounded_theorem | critical | 879 | 38.28 | `audited_conditional` | ~~audited_conditional~~ |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1359 | 36.91 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1108 | 36.12 | `audited_clean` | **retained_bounded** |
@@ -700,6 +700,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10027,6 +10028,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The r = 1/2 cell follows from holomorphic polarization, choosing the doublet complex structure J and counting the doublet as one complex slot; changing Gaussian to Berezin statistics alone does not supply it because the real Majorana Berezin cell remains on the real-slot count.  _(class `A`)_
 - **chain closes:** True — The finite algebra, determinant, Pfaffian, complex-structure, and Q = (1 + 2r) / 3 checks support the four table entries under the stated model-cell choices. The source does not claim to derive or adopt J, so the still-open native polarization selector is outside this audited scope.
 - **rationale:** The runner source performs finite algebraic checks rather than relying only on printed PASS lines, and the independent formula check matches the displayed decompositions, determinant counts, Berezin/Pfaffian identities, and r-to-Q table. No external comparator, fitted value, or physical charged-lepton identification is imported. The complex-slot count is a scoped holomorphic-polarization model-cell assumption, not a claimed native derivation, which is consistent with claim_type open_gate.
+- **auditor confidence:** high
+
+### `koide_berry_monopole_bridge_reduction_note_2026-05-31`
+
+- **Note:** [`KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`](../../docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite matrix support only: the C3 circulant index map, native circulant eigenvector rigidity and zero Berry curvature away from band-crossing loci, a Pauli two-band anticommuting Berry comparator, the native circulant commutation obstruction, and the two algebraic Q(r) identities; no physical r-weighting or Q-branch selection is audited as derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-004629-f7e2bca9f0-koide_berry_monopole_bridge_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The native circulant mass has b-independent Fourier eigenvectors and commutes with Gamma_chi, while the separate sigma_x/sigma_y two-band comparator anticommutes with sigma_z and has nonzero Berry curvature; the Q(r=1/2)=2/3 and Q(r=1)=1 statements are standalone algebraic identities.  _(class `A`)_
+- **chain closes:** True — The scoped conclusion follows from finite Fourier/circulant algebra, Pauli-matrix anticommutation, and the elementary Q(r)=1/3+2r/3 identity. The missing Berry/chirality-to-r bridge is explicitly excluded from the claim boundary.
+- **rationale:** The runner source performs actual finite-matrix computations rather than only printing expected PASS lines, and all eight checks are class-A algebraic or finite numerical checks. Independent inspection confirms the key identities: (1/3)Tr(C^-1 H)=b, circulant matrices share the Fourier eigenbasis so the native Berry curvature is zero on nondegenerate patches, nonzero native circulants commute rather than anticommute with Gamma_chi, and Q(r)=1/3+2r/3 gives the two stated Q values. The cited authorities are retained-grade, and the open physical branch-selection bridge is not imported into the audited claim.
 - **auditor confidence:** high
 
 ### `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29`

@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
         "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
         "centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11",
         "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
         "flavor_zdet_fermionic_statistics_admission_2026-06-04",
-        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
+        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
+        "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "54888b08dac97c723a7eaf552030930ea647830841b0ad92c13ed48b52126061",
+      "note_hash": "40920b7717c8f02fbafb9116c99dc0ab9469d52f072773fbff5eb4cc876f2381",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -109648,7 +109648,7 @@
       "positive_theorem": 617
     },
     "edge_count": 12519,
-    "leaf_count": 1063,
+    "leaf_count": 1062,
     "node_count": 3327,
     "root_count": 1047,
     "runners_with_path": 2912

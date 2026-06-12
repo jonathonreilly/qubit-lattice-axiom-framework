@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
         "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08",
         "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
         "alpha_s_derived_narrow_theorem_note_2026-05-10",
         "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02",
-        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
+        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07",
+        "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4ef597f88ea481ba49c55f459db099db916be362b4e1d38098657d379403f250",
+      "note_hash": "f9ec03820f90a8ec07b55062c61cad2dee62881733e4466c06637720cc14498b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

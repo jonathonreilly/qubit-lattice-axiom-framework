@@ -6,6 +6,23 @@
 **Type:** planning / open-gate consistency artifact
 **Companion runner:** `scripts/frontier_teleportation_axiom_closure_checks.py`
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** open-gate planning / renaming support only.
+Independent audit owns the effective status; this source records the claim
+boundary.
+
+The note's load-bearing content is a lane-status and principle-bundle
+definition, plus finite Bell-frame XOR and speed-one Manhattan accounting on
+the audited side-2 surface. This note may be cited only as planning/open-gate
+structure and bounded accounting. It may not be cited as native teleportation
+closure, resource-genesis closure, apparatus derivation, noise/scaling
+derivation, or a retained physical control theorem.
+
+Promotion beyond planning support requires retained-grade derivations of the
+resource, apparatus, causal-record, noise/leakage, scaling, and correction
+control surfaces.
+
 ## Abstract
 
 The note is valid as a planning / open-gate consistency artifact, not as

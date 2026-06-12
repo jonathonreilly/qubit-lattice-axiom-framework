@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/exp_decay_lieb_robinson_quasilocal_bridge_2026_06_11.py
+runner_sha256: 030b2d0e7cbc69344232ec39dd7d035b8b134937d82e04543c43ea7c4c054a4c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.15
+status: ok
+----- stdout -----
+EXP-DECAY LIEB-ROBINSON QUASILOCAL BRIDGE RUNNER
+deterministic seed = 20260611
+DECLARED SCOPE: finite blocks; constants displayed; consumer must separately supply finite weighted log-transfer norm
+
+[C] reproducing inequality and pure-exponential falsifier
+---------------------------------------------------------
+[PASS] [C] F_{mu,alpha} has bounded reproducing ratios on finite Z^1/Z^2/Z^3 boxes  (Z^1: max F-ratio=2.7312 < C_box=11.2317; pure 6.00->26.00; Z^2: max F-ratio=2.4886 < C_box=23.6601; pure 11.98->51.94; Z^3: max F-ratio=2.3038 < C_box=43.8564; pure 23.94->103.78)
+[PASS] [C] FALSIFIER: pure exponential reproducing ratio grows with distance  (geodesic contribution visible in all tested dimensions)
+
+[N] log-transfer interaction norm
+---------------------------------
+[PASS] [N] strictly local positive T gives Hermitian H_log = -log T  (min eig(T)=0.695028, hermiticity defect=0.0e+00)
+[PASS] [N] weighted interaction norm is finite and support-diameter tail is negligible  (L=6, mu=0.45, alpha=3.0, supports=58, J_F=1.145870, diam weights={0:8.528e-02, 1:4.547e-01, 2:2.371e-04, 3:3.336e-04, 4:6.211e-07, 5:1.599e-07}, tail diam>=4 rel=1.44e-06)
+
+[LR] displayed Lieb-Robinson inequality
+---------------------------------------
+[PASS] [LR] matrix commutators obey the displayed bound with computed C_alpha and J_F  (worst ratio=0.1804 at t=0.005, d=1, true=3.516e-04, bound=1.949e-03)
+
+[F] falsifiers and finite-range consistency
+-------------------------------------------
+[PASS] [F] pure-exponential convolution growth is asserted as the note's falsifier  (same data as [C])
+[PASS] [F] finite-range special case is inside the new normed class  (max diam=1, J_F(finite-range)=1.140618, F(r)<=exp(-mu r) for r<=5)
+[PASS] [F] dropping C_alpha from the velocity violates the true commutator bound  (t=0.005, d=1, true=3.516e-04 > no-C bound=1.635e-04)
+[PASS] [F] k=2 and k=3 path-series terms obey the corrected C_alpha powers  (worst k=2 ratio=0.0381, worst k=3 ratio=0.0017)
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

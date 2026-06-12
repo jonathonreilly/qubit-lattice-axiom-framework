@@ -1,12 +1,12 @@
 """
 verify_cl3_sm_embedding.py
 
-Algebraic verification of the Cl(3) -> SM embedding theorem.
+Algebraic verification of finite Cl(3)/taste-cube support checks.
 
 Framework axiom: local algebra Cl(3) on spatial substrate Z^3.
 
 STRUCTURE OF THE PROOF:
-  A. Cl(3) = {Gamma_i} on 8D taste space via Z^3 staggered phases
+  A. Cl(3) = {Gamma_i} on an explicit 8D Pauli-tensor taste-cube model
   B. Cl+(3) = even subalgebra, isomorphic to H (quaternions), containing su(2)
   C. Pseudoscalar omega = G1G2G3 is central with omega^2=-I, generating U(1)_Y center
   D. Dimension theorem: dim(Cl+(3)) = d+1 = 4 -> g2^2 = 1/4;
@@ -14,7 +14,7 @@ STRUCTURE OF THE PROOF:
   E. Physical SU(2)_weak: fiber operators commute with hypercharge Y
      Isomorphism: fiber SU(2) ~ Clifford SU(2) proves Cl+(3) contains the gauge group
   F. Hypercharge Y: eigenvalues +1/3 (6D quark block) and -1 (2D lepton block)
-  G. Z^3 taste cube S3 action: C^8 = 4A_1+2E; hw=1 triplet = 3 generations via Z3
+  G. Abstract taste-cube S3 action: C^8 = 4A_1+2E; hw=1 triplet is a Z3 orbit
   H. SU(3)_c from symmetric-base commutant of SU(2)_weak: T_F = 1/2, [SU(3),SU(2)]=0
   I. N_c = 3 from dim(Z^3); R_conn = 8/9 from Fierz; sqrt(9/8) EW correction
   J. L-sector determinant support: det(H_L) >= 0 from Kramers degeneracy on chiral sector
@@ -63,7 +63,7 @@ def state_idx(b1, b2, b3):
 
 
 # ---------------------------------------------------------------------------
-# Cl(3) generators on 8D taste space via Z^3 staggered phases.
+# Cl(3) generators on an explicit 8D Pauli-tensor taste-cube model.
 # State |b1 b2 b3> in {0,1}^3, n = 4*b1 + 2*b2 + b3.
 #
 # Gamma_1 = sigma_1 x I2 x I2   (flip b1, eta_1=1)
@@ -325,17 +325,17 @@ ok_F &= check(f"  Y eigenvalue +1/3 has multiplicity 6", n_plus == 6, f"got {n_p
 ok_F &= check(f"  Y eigenvalue -1 has multiplicity 2", n_minus == 2, f"got {n_minus}")
 
 # Physical interpretation: +1/3 = quark-like (3 colors x 2 isospin), -1 = lepton-like
-ok_F &= check("  SM interpretation: Y=+1/3 matches quark L doublet (3c x 2 iso = 6D)",
-              n_plus == 6, "3 color x 2 weak-doublet states")
-ok_F &= check("  SM interpretation: Y=-1 matches lepton L doublet (1 x 2 iso = 2D)",
-              n_minus == 2, "1 antisym-base x 2 weak-doublet states")
+ok_F &= check("  Y=+1/3 symmetric block has dimension 6",
+              n_plus == 6, "six-dimensional symmetric block")
+ok_F &= check("  Y=-1 antisymmetric block has dimension 2",
+              n_minus == 2, "two-dimensional antisymmetric block")
 
 check("Section F", ok_F)
 
 # ---------------------------------------------------------------------------
-# Section G: Z^3 taste cube S3 action -> 3 generations via Z3 symmetry
+# Section G: abstract taste-cube S3 action -> Z3 three-state orbit
 # ---------------------------------------------------------------------------
-section("G: S3 action on taste cube: C^8 = 4A1+2E; hw=1 triplet = 3 generations")
+section("G: S3 action on taste cube: C^8 = 4A1+2E; hw=1 triplet = Z3 orbit")
 
 ok_G = True
 
@@ -657,7 +657,7 @@ check("Section J", ok_J)
 section(f"SUMMARY  [PASS={PASS_COUNT}, FAIL={FAIL_COUNT}]")
 
 print(f"""
-Cl(3)/Z^3 -> SM Embedding Theorem — algebraic checks complete.
+Finite Cl(3)/taste-cube support packet — algebraic checks complete.
 
   A. Cl(3) generators {{Gamma_i}} on 8D taste space: anticommutation exact.
   B. Cl+(3) ≅ H: bivectors square to -I, quaternion products correct, su(2) closes.
@@ -669,7 +669,7 @@ Cl(3)/Z^3 -> SM Embedding Theorem — algebraic checks complete.
   E. Physical SU(2)_weak = fiber ops {{I4 x sigma_i/2}} commute with Y.
      Isomorphic to Cl+(3) bivector SU(2) as abstract Lie algebra.
   F. Hypercharge Y: +1/3 on 6D quark block, -1 on 2D lepton block. Traceless.
-  G. S3 on C^8 = 4A1+2E; hw=1 triplet = 3 generation candidates, Z3-related.
+  G. S3 on C^8 = 4A1+2E; hw=1 triplet is a Z3-related three-state orbit.
   H. SU(3)_c on symmetric base: T_F=1/2; [SU(3),SU(2)]=0; [SU(3),Y]=0.
   I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz verified.
   J. L-sector determinant support: det(H_L)>=0 forced by Kramers degeneracy T^2<0 on L-sector.

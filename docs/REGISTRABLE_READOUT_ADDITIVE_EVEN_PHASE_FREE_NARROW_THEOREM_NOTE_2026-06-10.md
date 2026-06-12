@@ -1,6 +1,6 @@
 # Registrable Readout Is Additive-Plus-Even Hence Phase-Free — Narrow Bounded Theorem
 
-**Date:** 2026-06-10
+**Date:** 2026-06-10 (2026-06-12: two boundary-naming citations — the |delta|-magnitude chain note and the hw-complementation support note — are demoted from dependency links to context; both are cited only to name what this note does NOT close, and the sin(3 delta) / symmetric-function facts used by Consequence B are verified directly in the primary runner.)
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status:** source-side claim-boundary declaration only — a narrow conditional
@@ -166,7 +166,8 @@ the reduction the orientation lemma was waiting on.
 
 - The `|delta|` **magnitude** value (`2/9`) and its single-summand readout still
   depend on the named readout identification **R-eta** of
-  [`KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`](KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+  `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`
+  (context, not load-bearing: cited only to name the open magnitude chain)
   and on the global geometry **R2** below. This note removes only the **sign**
   as extra content.
 - **R2, the PL/ABSS equivariant global bridge** — the global geometric
@@ -325,12 +326,17 @@ similar wall was retired by a mechanism overlooked here.
 - [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   — where R2 (the global PL/ABSS bridge) is named open; cited to bound
   Consequence B.
-- [`KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`](KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md)
-  — the `|delta|` magnitude chain conditional on R-eta; cited to bound what
-  Consequence B leaves open.
-- [`ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md`](ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md)
-  — the finite complementation support; the orientation-odd `sin(3 delta)` line
-  context for Consequence B.
+
+Context (not load-bearing: cited only to name boundaries; no content is consumed):
+
+- `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md` — names
+  the still-open `|delta|` magnitude chain (R-eta) that Consequence B explicitly does
+  NOT close; the theorem and both consequences consume no content from it.
+- `ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md` —
+  corroborating context for the orientation-odd `sin(3 delta)` line; the
+  symmetric-function evenness and `sin(3 delta)` K-oddness used by Consequence B are
+  verified directly in this note's primary runner, so no content is consumed from the
+  support note.
 
 **No-promotion statement:** this note does not promote, demote, or set the audit
 status of any dependency. The independent audit lane is the only status

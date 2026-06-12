@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1463 |
+| Applied audit verdicts | 1464 |
 | Retained-grade rows, including boxed decorations | 1317 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 846 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1408 |
+| Unaudited rows | 1407 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 46 |
+| Audited conditional rows | 47 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1410 |
-| Ready rows | 39 |
+| Total pending rows | 1409 |
+| Ready rows | 38 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
-| High pending | 286 |
+| High pending | 285 |
 | Medium pending | 424 |
 | Leaf pending | 428 |
 
 Next ready rows by queue order:
 
-- [`wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08`](../../docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
 - [`koide_berry_monopole_bridge_reduction_note_2026-05-31`](../../docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`koide_q_minimal_scale_free_selector_note_2026-04-22`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`quark_bicac_endpoint_obstruction_theorem_note_2026-04-19`](../../docs/QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`quark_bimodule_norm_naturality_theorem_note_2026-04-19`](../../docs/QUARK_BIMODULE_NORM_NATURALITY_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md) - medium; unaudited
+- [`higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`](../../docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -1,0 +1,27 @@
+loop: hubble-a2-action-unit-source-boundary-20260612
+branch: physics-loop/hubble-a2-action-unit-source-boundary-20260612
+base: origin/main@c2fee7c99
+status: pr_ready
+target_claim_id: hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29
+target_note: docs/HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md
+target_runner: scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: no-go over supplied dimensionless inputs
+hypothetical_positive_status: requires physical clock/source/action metrology bridge
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: demotion
+files_touched:
+  - docs/HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md
+  - scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py
+  - logs/runner-cache/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.txt
+  - .claude/science/physics-loops/hubble-a2-action-unit-source-boundary-20260612/
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py -> TOTAL: PASS=16 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py --allow-non-main -> ok 1"
+open_imports:
+  - physical clock/source/action metrology theorem tying dimensionless lattice action to dimensional kappa
+  - independent treatment of the g_bare parent gate
+  - staggered-carrier input routed through AC_phi_lambda rather than closed here
+stop_condition: source repair branch opened for reviewer
+next_exact_action: independent review can decide whether the repaired source boundary is ready for re-audit

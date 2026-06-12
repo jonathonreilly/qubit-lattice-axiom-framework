@@ -5,6 +5,21 @@
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/staggered_scalar_mass_class_bounded_premise_runner.py`](../scripts/staggered_scalar_mass_class_bounded_premise_runner.py)
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** renaming / bounded-premise support only.
+The runner verifies consequences after the scalar-mass action class is
+introduced; it does not derive that action class from baseline framework
+inputs.
+
+This note may be cited only for the row-local premise `M = m I`, `m > 0`,
+`M_epsilon = 0`, and the determinant-phase consequences under that premise.
+It may not be cited as a derivation of the scalar-mass-only class, a global
+axiom, a Tier-A admission, or a closure of all mixed/pseudoscalar mass routes.
+
+Promotion beyond bounded-premise support requires deriving the scalar-mass
+action class from retained inputs rather than introducing it locally.
+
 ## Scope
 
 This note supplies the explicit row-local bounded premise requested by the

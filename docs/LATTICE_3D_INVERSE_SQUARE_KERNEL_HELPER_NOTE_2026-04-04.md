@@ -10,6 +10,21 @@ defaults and the `build_family / barrier_metrics / no_barrier_distance
 is audit-lane infrastructure for the corresponding helper module.
 **Primary runner / module:** `scripts/lattice_3d_inverse_square_kernel.py`
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** renaming / helper-wrapper support only.
+This source documents an implementation interface and width-6 comparator
+defaults.
+
+The load-bearing move is wrapper documentation for constants and helper
+function names. This note may be cited only for the module interface. It may
+not be cited as a derivation of an inverse-square kernel, asymptotic tail law,
+downstream tail-statistics theorem, or implementation-fidelity certificate.
+
+Promotion beyond wrapper support requires the helper source/runner to be
+audited for implementation fidelity or a separate theorem deriving the
+inverse-square kernel from retained framework inputs.
+
 ## Purpose
 
 This wrapper note documents the 3D inverse-square kernel helper

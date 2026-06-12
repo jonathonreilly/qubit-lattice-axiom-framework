@@ -8,6 +8,22 @@ modules consumed by the runner
 **Status authority:** independent audit lane only. This wrapper note is
 audit-lane infrastructure for the corresponding helper modules.
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** renaming / helper-wrapper support only.
+This source records helper-module roles so downstream notes can register a
+clean dependency edge.
+
+The load-bearing move is the creation of a citeable umbrella handle for five
+helper modules. This note may be cited only as a helper-wrapper registry. It
+may not be cited as a derivation of the helper modules, the exterior projector,
+the source-family constructors, the sewing-shell projection, the radial DtN
+kernel, or the parent shell-law theorem.
+
+Promotion beyond wrapper support requires separate retained wrapper notes or
+complete helper-runner sources for the helper modules whose behavior is meant
+to be load-bearing.
+
 ## Purpose
 
 This wrapper note documents the five frontier helper modules that the

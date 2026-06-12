@@ -1,0 +1,13 @@
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: renaming / wrapper / bounded-premise support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The target rows remain helper wrappers, row-local premises, formal packages, or operational identifications."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+
+No new axiom is introduced. This block preserves bounded utilities while
+blocking retained-grade theorem consumption.

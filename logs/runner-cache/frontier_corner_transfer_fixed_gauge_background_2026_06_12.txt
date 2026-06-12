@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_corner_transfer_fixed_gauge_background_2026_06_12.py
-runner_sha256: e3e76a52a2e775ec8d81b256087abc2c4f18f73bf288fc7fea9566f73707abe4
+runner_sha256: 761ad11e640548b92578922e727cc551e46b5e18cc02c7d51983f1b2b9baa5e8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -43,7 +43,9 @@ N4 -- K/conjugated-background complement statement
   [PASS] N4a: t_k[U](delta) = t_sigma(k)[conj(U)](-delta) computed -- doublet swap residual=1.571e-16
   [PASS] N4b: K-real Z_2 witness has exact hw-complement unitary equivalence and equal N=1,2 traces -- unitary residual=2.721e-20; trace residual=6.661e-16
   [PASS] N4c: complex witness reading-1 at U equals reading-2 at conj(U) -- unitary residual=1.195e-16; trace residual=2.220e-16
-  [PASS] N4d: honesty control at complex background -- zero same-U trace gap on this L_s=2 witness: BROADER_EQUALITY_EMPIRICAL_FLAG; theorem scope remains K-real plus conjugated-background; gap=2.220e-16
+  [PASS] N4d-i: registrable trace data of the positive corner transfer are real -- Im Tr(T), Im Tr(T^2) below tolerance at the complex witness
+  [PASS] N4d-ii: background conjugation conjugates the transfer matrix -- T[conj U, -delta] = conj(T[U, -delta]) entrywise (1e-12)
+  [PASS] N4d-iii: hence same-U registrable-trace equivalence at EVERY background (theorem-backed condition) -- same-U trace gap=2.220e-16; real + conjugate => equal, with N4c
 
 ----------------------------------------------------------------------------------------
 N5 -- assembly
@@ -67,7 +69,7 @@ B-checks -- source-note and dependency hygiene
   [PASS] No-promotion statement present
   [PASS] Berezin self-check flag is true
 
-SCORECARD: PASS=28 FAIL=0
+SCORECARD: PASS=30 FAIL=0
 SUMMARY: fixed-background corner transfer checks complete; U-integrated gauge dynamics remains the named open.
 
 ----- stderr -----

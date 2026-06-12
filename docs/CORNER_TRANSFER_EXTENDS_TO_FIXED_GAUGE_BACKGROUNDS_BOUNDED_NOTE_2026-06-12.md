@@ -112,13 +112,21 @@ Therefore:
   corner transfers are unitarily equivalent by the channel-swap permutation,
   and the registrable data checked by the runner, including traces and
   dispersions, agree.
-- On general backgrounds, the exact statement is the conjugated-background
-  statement: reading-1 data at `U` equal reading-2 data at `conj(U)`. The
-  exact same-background equivalence is asserted only on the `K`-invariant
-  class. The small `L_s = 2` witness may show accidental broader trace equality
-  in the runner; that empirical fact is not promoted beyond this stated scope.
+- On general backgrounds, the operator-level statement is the
+  conjugated-background statement: reading-1 data at `U` equal reading-2 data
+  at `conj(U)`; operator-level unitary equivalence at the same background is
+  asserted only on the `K`-invariant class.
+- **(strengthened, second pass) Registrable trace data are same-background
+  equivalent at EVERY fixed background.** Three computed legs: traces of the
+  positive Hermitian corner transfer are real; conjugating the background
+  conjugates the transfer matrix, so trace data at `conj(U)` are the complex
+  conjugates of those at `U`; real and conjugate together force equality, and
+  with the conjugated-background statement the same-background trace gap
+  between the two readings vanishes — a theorem-backed runner condition, not
+  an empirical flag. Operator-level same-background equivalence beyond the
+  `K`-real class is still not claimed.
 
-Check tags: `N4a`, `N4b`, `N4c`, `N4d`.
+Check tags: `N4a`, `N4b`, `N4c`, `N4d-i/ii/iii`.
 
 **(N5) Consequence.** Both interacting opens narrow from "interacting/gauge" to
 the U-INTEGRATED level. The occupancy lane's transfer-route prerequisite chain

@@ -435,16 +435,31 @@ def main() -> int:
     check("N4c: complex witness reading-1 at U equals reading-2 at conj(U)",
           n4c_ok, detail=f"unitary residual={worst_conj_unitary:.3e}; trace residual={worst_conj_trace:.3e}")
 
+    # N4d (strengthened): the same-U equality of REGISTRABLE TRACE DATA is a
+    # theorem, not an empirical flag. Argument verified in three computed legs:
+    # (i) traces of the positive Hermitian corner transfer are real;
+    # (ii) conjugating the background conjugates the transfer matrix, so trace
+    #      data at conj(U) are the complex conjugates of those at U;
+    # (iii) real + conjugate => equal; combined with N4c the same-U trace gap
+    #      between the two readings must vanish — now a CONDITION.
+    reality_ok = True
+    conj_pair_ok = True
     same_u_gap = 0.0
     for a, B, delta in PARAMS:
         T1, _ = corner_transfer(complex_bg, a, B, delta)
         T2, _ = corner_transfer(complex_bg, a, B, -delta)
+        T2c, _ = corner_transfer(conj_background(complex_bg), a, B, -delta)
+        for M in (T1, T2):
+            reality_ok = reality_ok and abs(np.imag(np.trace(M))) < TOL and abs(np.imag(np.trace(M @ M))) < TOL
+        conj_pair_ok = conj_pair_ok and np.allclose(T2c, np.conj(T2), atol=1e-12)
         same_u_gap = max(same_u_gap, float(max(abs(np.trace(T1) - np.trace(T2)), abs(np.trace(T1 @ T1) - np.trace(T2 @ T2)))))
-    if same_u_gap > 1.0e-10:
-        label = "nonzero same-U trace gap: exact-equivalence scope is the K-real class"
-    else:
-        label = "zero same-U trace gap on this L_s=2 witness: BROADER_EQUALITY_EMPIRICAL_FLAG; theorem scope remains K-real plus conjugated-background"
-    check("N4d: honesty control at complex background", True, detail=f"{label}; gap={same_u_gap:.3e}")
+    check("N4d-i: registrable trace data of the positive corner transfer are real",
+          reality_ok, detail="Im Tr(T), Im Tr(T^2) below tolerance at the complex witness")
+    check("N4d-ii: background conjugation conjugates the transfer matrix",
+          conj_pair_ok, detail="T[conj U, -delta] = conj(T[U, -delta]) entrywise (1e-12)")
+    check("N4d-iii: hence same-U registrable-trace equivalence at EVERY background (theorem-backed condition)",
+          reality_ok and conj_pair_ok and same_u_gap < TOL,
+          detail=f"same-U trace gap={same_u_gap:.3e}; real + conjugate => equal, with N4c")
 
     section("N5 -- assembly")
     n5_ok = all_domain and all_block and all_pos and n2_ok and n3a_ok and berezin_self_check and n4a_ok and n4b_ok and n4c_ok

@@ -1,0 +1,29 @@
+loop_slug: audit-artifact-cleanup-20260612b
+date: "2026-06-12"
+mode: run
+branch: physics-loop/audit-cleanup-20260612b
+base_ref: origin/main
+base_sha: 353202eb32243180342df3a27b59b07c36de7e56
+target_status: bounded-support
+current_goal: "Repair narrow source/runner artifact drift that blocks current audited-conditional rows."
+cycle_count: 1
+active_route: "artifact drift cleanup for Wilson-corrected V_taste and taste-scalar CW isotropy."
+hard_residual: "No retained-status claim is made; independent review/audit owns effective status."
+files_touched:
+  - docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md
+  - scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py
+  - logs/runner-cache/frontier_taste_scalar_fermion_cw_isotropy_narrow.txt
+  - scripts/frontier_wilson_corrected_v_taste_tree_level.py
+  - logs/runner-cache/frontier_wilson_corrected_v_taste_tree_level.txt
+open_imports:
+  - "Taste-scalar physical staggered-Dirac realization remains context only, not proof input."
+  - "Wilson-corrected V_taste remains bounded over upstream Wilson/staggered mean-field surfaces."
+no_go_routes:
+  - "Do not promote either row locally."
+  - "Do not edit docs/audit/** or apply row/effective status."
+trace_gate_classification: direct_blocker_closure
+review_disposition: "local pass for bounded-support artifact cleanup; codex reviewer still required."
+pr_status: pending
+next_exact_action: "Run scoped runners, diff checks, commit, push, open review PR."
+stop_condition: "Stop after PR creation or PR_BACKLOG recovery instructions."
+automation_lock_owner: codex-audit-cleanup-20260612b

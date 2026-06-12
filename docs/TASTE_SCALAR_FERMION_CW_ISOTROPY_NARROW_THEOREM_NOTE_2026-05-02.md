@@ -1,7 +1,7 @@
 # Taste-Scalar Fermion Coleman-Weinberg Isotropy — Narrow Theorem
 
 **Date:** 2026-05-02
-**Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
+**Type:** bounded_theorem (axiom-reset source narrowing 2026-05-03)
 **Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).
 **Primary runner:** `scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py`
 
@@ -92,8 +92,8 @@ Verifies, at exact rational precision via Python `Fraction`:
 3. At `φ = (v, 0, 0)`: `λ_s² = v²` uniformly across all 8 basis states
    (verified for `v ∈ {1, 2, -3, 7/11}`).
 4. Hessian off-diagonal `∂²/∂φ_i ∂φ_j` for `i ≠ j` evaluates to 0 at
-   the axis-aligned minimum (concrete numerical test for several `f`
-   choices: `f(x) = x`, `f(x) = x²`, `f(x) = log(1 + x)`).
+   the axis-aligned point (concrete exact tests for several `f`
+   choices: `f(x) = x`, `f(x) = x²`, `f(x) = x³`).
 5. Hessian diagonal `∂²/∂φ_i ∂φ_i` evaluates to a common value; concrete
    examples have nonzero common value.
 
@@ -139,9 +139,23 @@ as the safe algebraic scope.
 - Cycles 1-7 (PRs #292-302) — sister narrow theorems on different lanes.
 
 
-## Hypothesis set used (axiom-reset 2026-05-03)
+## Hypothesis set used (axiom-reset 2026-05-03; source-scope sync 2026-06-12)
 
-Per `MINIMAL_AXIOMS_2026-05-03.md`, this note depends on the **staggered-Dirac realization derivation target**, which is currently an open gate. The note's load-bearing claim defines or relies on fermion fields, fermion-number operators, fermion correlators, fermion bilinears, the staggered Dirac action, the BZ-corner doubler structure, the `hw=1` triplet, charged-lepton sector content, neutrino sector content, quark / hadron content, the Koide / PMNS / CKM observable surfaces, or the Grassmann CAR boundary structure — all of which depend on the staggered-Dirac realization derivation target listed in `MINIMAL_AXIOMS_2026-05-03.md`.
+Per `MINIMAL_AXIOMS_2026-05-03.md`, the broader physical taste/fermion
+framing is associated with the **staggered-Dirac realization derivation
+target**, which is currently an open gate. That gate is recorded as a
+context dependency so graph consumers do not treat this row as a
+full physical staggered-Dirac realization theorem.
+
+The load-bearing claim in this narrow note is smaller: it is only the
+abstract binary taste-block identity on `C^8 = (C^2)^{⊗3}` with commuting
+shift involutions `S_i`, proving the Coleman-Weinberg Hessian isotropy for
+`V_f(φ)=Σ_s f(λ_s(φ)^2)` at `φ=(v,0,0)`. It does not use fermion-number
+operators, fermion correlators, fermion bilinears, the full staggered
+Dirac action, BZ-corner doubler realization, the `hw=1` triplet, charged-
+lepton sector content, neutrino sector content, quark/hadron content,
+Koide/PMNS/CKM observable surfaces, or the Grassmann CAR boundary
+structure as proof inputs.
 
 Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`claim_type: open_gate`). In-flight supporting work (see `MINIMAL_AXIOMS_2026-05-03.md`):
 
@@ -151,7 +165,11 @@ Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`c
 - `scripts/frontier_generation_rooting_undefined.py`
 - `GENERATION_AXIOM_BOUNDARY_NOTE.md` (preserved)
 
-Therefore `claim_type: bounded_theorem` until that gate closes. When that gate closes, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
+Therefore this source note remains a `bounded_theorem` source packet with
+an explicit non-load-bearing physical-context edge. Any later claim-type or
+effective-status change belongs to independent review and audit handling.
+The substantive science content of this note is unchanged by this source-
+scope sync.
 
 ## Audit dependency repair links
 

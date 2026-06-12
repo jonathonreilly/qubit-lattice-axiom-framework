@@ -23,6 +23,7 @@ import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md"
 
 THEOREM_PASS = 0
 SUPPORT_PASS = 0
@@ -214,6 +215,7 @@ def format_triple(values: np.ndarray) -> str:
 
 
 def main() -> int:
+    route_note = NOTE.read_text(encoding="utf-8")
     transfer_note = read("docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md")
     eval_reduction_note = read(
         "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md"
@@ -348,6 +350,30 @@ def main() -> int:
         "the local-Wilson obstruction note already rules out the local-Wilson shortcut on the three-sample seam",
         "cannot itself be the first symmetric positive-type environment evaluator" in local_obstruction_note,
         detail="the unresolved route cannot be closed by reusing the local Wilson triple alone",
+        bucket="SUPPORT",
+    )
+    flat_route = " ".join(route_note.split())
+    check(
+        "source note declares finite-surface no_go with open physical-stack bridge",
+        "**Claim type:** no_go" in route_note
+        and "no_go on the listed finite structural\nsurface" in route_note
+        and "remains open_gate" in route_note
+        and "finite-surface exhaustiveness bridge" in route_note,
+        detail="claim metadata is finite-surface only, not a beta=6 Wilson/Haar closure",
+        bucket="SUPPORT",
+    )
+    check(
+        "source note firewalls actual beta=6 Wilson/Haar exhaustiveness",
+        "## 2026-06-12 audit firewall: no beta=6 Wilson/Haar exhaustiveness claim" in route_note
+        and "does not claim that the listed finite structural witness surface is the actual `beta = 6` Wilson/Haar current stack" in flat_route
+        and "physical-stack bridge remains open" in flat_route,
+        detail="the runner surface cannot be read as exhaustive for the physical stack",
+        bucket="SUPPORT",
+    )
+    check(
+        "source note introduces no retained beta=6 surface claim or audit status",
+        "retained beta=6 surface claim, or\naudit status is introduced here" in route_note,
+        detail="independent audit remains the only status authority",
         bucket="SUPPORT",
     )
 

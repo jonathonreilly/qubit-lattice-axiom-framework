@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py
-runner_sha256: 3065cec2175549ac9e568539a90f3641b13ab55579dec9fc230c154b05427402
+runner_sha256: b6f03681bc336af03d432df18d0ce532ffbeb1b2a697d64395602523949051f4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 Record pre-record instrument kernel gate
@@ -21,6 +21,9 @@ A. cited authority anchors and supplied readout context
 [PASS] retained-bounded LSP authority states canonical K_r = P_r
 [PASS] retained-bounded Lueders bridge states trace-normalized branch
 [PASS] readout context remains supplied, not selected by Record
+[PASS] source note has no-retained-production-kernel audit firewall
+[PASS] source note says no further repair is needed only for supplied-context finite algebra
+[PASS] source note leaves readout/probability/rate bridges outside Record
 
 B. one-qubit state and projective instruments
 [PASS] rho has trace one -- rho=Matrix([[2/3, sqrt(2)/3], [sqrt(2)/3, 1/3]])
@@ -59,7 +62,7 @@ F. boundary firewalls
 [PASS] no clock/rate unit is selected
 [PASS] no generation or Koide dial value is selected
 
-SCORECARD: PASS=33 FAIL=0
+SCORECARD: PASS=36 FAIL=0
 VERDICT: bounded support for the pre-record instrument kernel gate. With cited retained-bounded projective instrument/trace authority and a supplied readout context, a qubit state gives probabilities over possible future record atoms; the written post-record atom is realized information, not the probability vector.
 
 ----- stderr -----

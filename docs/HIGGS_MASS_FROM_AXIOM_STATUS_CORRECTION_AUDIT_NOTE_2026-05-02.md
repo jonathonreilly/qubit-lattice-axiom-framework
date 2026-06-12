@@ -3,9 +3,24 @@
 **Date:** 2026-05-02
 **Packet role:** demotion / status correction packet for
 [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](HIGGS_MASS_FROM_AXIOM_NOTE.md).
+**Claim type:** open_gate.
+**Type:** demotion / status-correction packet.
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome.
 **Primary runner:** `scripts/frontier_higgs_mass_status_audit.py`
+
+## 2026-06-12 audit firewall: source correction only
+
+This packet is a source-side correction, not a positive Higgs-pole
+derivation. It does not add a new axiom, Tier-A admission, external
+comparator, or audit status. It records that the current parent packet has
+not derived the lattice-curvature-to-physical-Higgs-pole bridge.
+
+The future bridge remains open: an exact scalar-normalization theorem,
+nonperturbative matching theorem, or approved scheme-classification route may
+still identify the parent diagnostic curvature with the physical Higgs pole.
+This source note does not preclude that route and does not set downstream
+effective status.
 
 ## 0. Audit context
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_higgs_mass_status_audit.py
-runner_sha256: b5baf9f4c5cea9cb35be8052d065a8f81b50f0fecaded7093652a73ab63e3391
+runner_sha256: 1d841eae02d3eb2ebe214a8b619a258a5929bc162a38f4a2ccb1fbae9249ae1f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 Higgs status-correction content audit
@@ -19,6 +19,8 @@ PASS: cycle 5 authority row is markdown-linkable by ledger metadata -- retained_
 PASS: cycle 9 authority row is markdown-linkable by ledger metadata -- retained_no_go no_go
 PASS: unaudited cluster synthesis is not used as authority
 PASS: status authority block is present
+PASS: target declares open-gate demotion/status-correction source type
+PASS: target has source-correction audit firewall
 PASS: target has dated 2026-06-12 repair section
 PASS: target has source-side no-go discipline scope gate
 PASS: target contains no external markdown links
@@ -60,7 +62,7 @@ PASS: no-go discipline gate includes N5
 PASS: no-go discipline gate includes N6
 PASS: no-go discipline gate includes N7
 PASS: no-go discipline gate includes N8
-TOTAL: PASS=53, FAIL=0
+TOTAL: PASS=55, FAIL=0
 
 ----- stderr -----
 

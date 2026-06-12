@@ -15,6 +15,18 @@ proposal_allowed_reason: "The projective instrument and trace-normalized branch 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 
+## 2026-06-12 audit firewall: no retained production-kernel promotion
+
+No further repair is needed for the stated supplied-context finite algebra:
+with cited bounded projective/Lueders authorities and a supplied readout
+context, the runner verifies the one-qubit probability-to-record typing.
+
+This does not promote the packet to bare retained status. The readout context,
+probability/Born-rule authority, physical production generator, and clock/rate
+normalization remain outside the Record axiom and outside this finite gate.
+No new axiom, Tier-A admission, arbitrary measurement primitive, or audit
+status is introduced here.
+
 ## Summary
 
 This block makes the pre-record side of dynamics explicit:
@@ -58,7 +70,7 @@ logs/runner-cache/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.tx
 Scorecard:
 
 ```text
-PASS=33 FAIL=0
+PASS=36 FAIL=0
 ```
 
 ## Authority Repair

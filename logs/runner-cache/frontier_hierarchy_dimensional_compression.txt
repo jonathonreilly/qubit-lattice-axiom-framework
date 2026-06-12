@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_dimensional_compression.py
-runner_sha256: 8964cc22450a2ec0835078759127c41a839de6ce9179c9ea2059c2b8c5d840af
+runner_sha256: fbcd2f1a15fb3cb258d81e5a849f6c1946d5080f2a778429c0afe04c8d250dac
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 Hierarchy dimensional-compression diagnostic
@@ -53,6 +53,8 @@ Hierarchy dimensional-compression diagnostic
          D=1:fails(1.0000 vs 2.0000), D=2:fails(0.5000 vs 1.0000), D=3:fails(0.3333 vs 0.5000), D=5:fails(0.2000 vs 0.1250), D=6:fails(0.1667 vs 0.0625), D=8:fails(0.1250 vs 0.0156)
   [PASS] PASS conditions are free of observed-target imports (audit-transparent)
          v_obs, v_pred, C_obs are not referenced before this point
+  [PASS] source note demotes stale bounded-theorem proposal to conditional support
+  [PASS] source note leaves D=4 readout bridge open
 
 ------------------------------------------------------------------------------
   External context (NOT a PASS condition, NOT load-bearing)
@@ -75,7 +77,7 @@ Conclusion (within-scope):
   at D=4. No within-scope claim depends on the imported v_obs.
 
 ==============================================================================
-SCORECARD: 5 pass, 0 fail out of 5
+SCORECARD: 7 pass, 0 fail out of 7
 ==============================================================================
 
 ----- stderr -----

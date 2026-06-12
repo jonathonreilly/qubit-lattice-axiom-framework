@@ -38,6 +38,17 @@ retained/effective-bounded bridge is added; no new import, axiom, comparator,
 or external citation is introduced. The row is source-demoted to the
 runner-local diagnostic license below.
 
+## 2026-06-12 audit firewall: no retained beta=6 surface claim
+
+This packet remains an admitted-input runner-local diagnostic only. The
+finite weak-coupling/tadpole/Pade checks are useful route pruning over the
+listed supplied packet, but they do not derive the actual `beta = 6`
+plaquette, do not validate the admitted NSPT or comparator inputs, and do not
+license any downstream beta=6 Wilson/Haar surface claim.
+
+The repair therefore stops at demotion: no retained/effective-bounded bridge,
+new axiom, external comparator authority, or audit status is introduced here.
+
 ## Admitted Inputs (runner-local diagnostic license)
 
 The runner-local packet is:
@@ -321,7 +332,7 @@ python3 scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
 Expected output:
 
 ```text
-TOTAL: PASS=28, FAIL=0
+TOTAL: PASS=29, FAIL=0
 ```
 
 The runner exercises each conclusion (T1)-(T5) plus framework-side

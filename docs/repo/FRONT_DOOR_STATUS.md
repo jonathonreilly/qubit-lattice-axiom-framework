@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1443 |
+| Applied audit verdicts | 1444 |
 | Retained-grade rows, including boxed decorations | 1311 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 206 |
@@ -21,7 +21,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Open gates | 39 |
 | Unaudited rows | 1477 |
 | Retained-pending-chain rows | 17 |
-| Audited conditional rows | 33 |
+| Audited conditional rows | 34 |
 | Audited renaming rows | 33 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 4 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1481 |
-| Ready rows | 77 |
+| Total pending rows | 1480 |
+| Ready rows | 76 |
 | Cycle-break targets | 4 |
-| Critical pending | 287 |
+| Critical pending | 286 |
 | High pending | 291 |
 | Medium pending | 435 |
 | Leaf pending | 468 |
 
 Next ready rows by queue order:
 
-- [`higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08`](../../docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md) - critical; audit_in_progress
 - [`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; unaudited
 - [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
 - [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - critical; unaudited
 - [`koide_moment_ratio_uniformity_theorem_note_2026-04-19`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md) - critical; audit_in_progress
+- [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

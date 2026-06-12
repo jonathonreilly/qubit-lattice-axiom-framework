@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 847 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1473 |
+| unaudited | 1472 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
 | ~~audited_conditional~~ | 36 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
-| `decoration_under_cl3_color_automorphism_theorem` | 1 |
+| `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -62,20 +62,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1293 |
 | `audited_conditional` | 36 |
-| `audited_decoration` | 48 |
+| `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1790 |
+| `unaudited` | 1789 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1607 |
-| `decoration` | 49 |
+| `decoration` | 50 |
 | `meta` | 325 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 781 |
+| `positive_theorem` | 780 |
 
 | criticality | count |
 |---|---:|
@@ -1465,6 +1465,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
+| `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -3552,6 +3553,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The source combines the universal Clifford basis count dim_R Cl(p,q)=2^(p+q) with an explicit Cartan-Bott/real-matrix realization of Cl(3,1) as M_4(R), so both algebras have real dimension 16.  _(class `A`)_
 - **chain closes:** True — The independent check verifies the 2^n basis count, and the runner gives explicit real 4x4 generators with signature (+,+,+,-), 16 independent Clifford monomials, and full rank in M_4(R). This establishes the claimed isomorphism/dimension statement within the admitted real Clifford-algebra setting without using framework physics premises.
 - **rationale:** The row closes as a standalone Clifford-algebra classification/dimension theorem. The exact runner does more than cite the periodic table: it constructs a real 4x4 representation of the Cl(3,1) relations and shows the 16 monomials span all of M_4(R). Residual risk is only downstream overuse: this row does not derive Wick rotation, select Cl(3,1) over Cl(1,3) from framework axioms, or bridge the integer 16 to hierarchy or lattice-species surfaces.
+- **auditor confidence:** high
+
+### `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02`
+
+- **Note:** [`CL3_BARYON_QQQ_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md`](../../docs/CL3_BARYON_QQQ_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic SU(3) statement on the cited symmetric-base fundamental: 3 ⊗ 3 ⊗ 3 decomposes as 1 ⊕ 8 ⊕ 8 ⊕ 10 and has exactly one normalized totally antisymmetric epsilon singlet; no physical SM-color or baryon-existence corollary is audited as closed.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-214129-58836bb67c-cl3_baryon_qqq_color_singlet`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With N_c = 3 from the cited color-structure note, standard SU(3) Clebsch-Gordan rules give 3 ⊗ 3 ⊗ 3 = (6 ⊗ 3) ⊕ (3̄ ⊗ 3) = (10 ⊕ 8) ⊕ (1 ⊕ 8).  _(class `A`)_
+- **chain closes:** True — Given the retained-bounded algebraic SU(3) action on the symmetric-base 3, the decomposition and epsilon-singlet uniqueness follow from admitted standard SU(3) representation theory. The closure is algebraic only; physical baryon, confinement, and SM-color-carrier readings remain outside this audited scope.
+- **rationale:** The load-bearing work is class A standard SU(3) algebra over the single upstream color-structure parent, with no external comparator or tuned numerical input. The runner source genuinely checks epsilon normalization, SU(3) invariance, permutation antisymmetry, and a one-dimensional generator-nullspace singlet, though its dimension/decomposition line is partly a hard-coded representation-theory check rather than a first-principles framework computation. Because the note’s closed claim is only the algebraic channel-count and epsilon singlet on the cited carrier, it is a decoration of the parent rather than an independent positive theorem.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17`

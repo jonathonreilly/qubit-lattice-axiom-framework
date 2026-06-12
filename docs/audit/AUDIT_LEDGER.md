@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 856 |
+| **retained_bounded** | 857 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1384 |
+| unaudited | 1383 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1307 |
+| `audited_clean` | 1308 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1701 |
+| `unaudited` | 1700 |
 
 | claim_type | count |
 |---|---:|
@@ -80,9 +80,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 505 |
-| `high` | 506 |
-| `medium` | 870 |
-| `leaf` | 1309 |
+| `high` | 505 |
+| `medium` | 872 |
+| `leaf` | 1308 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -709,6 +709,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_wilson_target_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10195,6 +10196,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the scalar-rephased generator, `(exp(i alpha) C)^3 = exp(3 i alpha) I`, so preserving `C^3 = I` requires `exp(3 i alpha) = 1`.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from the stated `3 x 3` cyclic-shift algebra and the retained order-three generation surface by direct matrix identities. The negative scope is properly narrow: it closes only the scalar generator-rephasing route and explicitly leaves non-circulant or tensor-factor routes open.
 - **rationale:** The load-bearing step is a genuine algebraic identity, not a definition, numerical fit, or external comparator check. The displayed rotation formulas for `B1,B2`, the cube-root quantization, the commuting-centralizer claim, and the diagonal phase proportionality criterion all check under the note's conventions. The runner source performs the relevant finite-dimensional matrix computations rather than merely printing constants, and its extra Koide-context checks are not needed for the audited obstruction. The no-go discipline gate is satisfied at the narrow route level because the note does not claim a global absence of continuous doublet actions.
+- **auditor confidence:** high
+
+### `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02`
+
+- **Note:** [`KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md`](../../docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that the supplied tracial R[Z_3] standard-form carrier and the listed kinematic routes do not supply the channel-counting r=1/2 weight; they leave it as a non-tracial finite-beta density/dynamical residual.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-015129-5d6285c879-koide_carrier_scoring_needs_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the supplied tracial carrier, Tomita-Takesaki gives Delta=1 and hence a uniform per-direction modular/state weight r=1, while r=1/2 requires a non-tracial finite-beta density gap such as diag(1/5,2/5,2/5).  _(class `A`)_
+- **chain closes:** True — The finite-dimensional trace calculation independently gives S^*S=1, K=0, and uniform tracial weights, so the carrier's own modular data yields direction-counting r=1. The exhibited r=1/2 density witness is algebraically non-tracial, and the conclusion is scoped to tested routes rather than a global no-go on future dynamics.
+- **rationale:** The load-bearing step is finite algebra over the supplied carrier and retained-grade cited algebra: trace implies trivial modular flow, uniform weights imply Q=1, and p0/p1=1/2 implies Q=2/3 only for a non-tracial density. The cited authorities used load-bearing are retained or retained_bounded, and the note explicitly preserves the open dynamical selection of the density gap. The clean verdict is therefore only for the bounded modular-diagnosis and tested-route negative scope, not for deriving r=1/2 physically.
 - **auditor confidence:** high
 
 ### `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`

@@ -1,0 +1,13 @@
+loop: quark-route2-fadj-boundary-refresh-20260612
+target_claim_id: quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28
+actual_current_surface_status: bounded-support
+trace_class: negative_route_pruning
+reachability_to_target: supports
+branch: physics-loop/quark-route2-fadj-boundary-refresh-20260612
+base: origin/main
+files_touched:
+  - docs/QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md
+  - scripts/frontier_quark_route2_rconn_center_ratio_bridge_obstruction.py
+status: ready_for_review
+audit_data_changed: false
+

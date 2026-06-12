@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 850 |
+| **retained_bounded** | 851 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1463 |
+| unaudited | 1462 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1297 |
+| `audited_clean` | 1298 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1780 |
+| `unaudited` | 1779 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 513 |
-| `high` | 510 |
-| `medium` | 869 |
+| `high` | 509 |
+| `medium` | 870 |
 | `leaf` | 1349 |
 
 - **Retained pending chain closure:** 18
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
 | 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
-| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
+| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
@@ -115,8 +115,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 797 | 39.14 | `audited_clean` | **retained_bounded** |
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1272 | 38.81 | `audited_clean` | **retained_bounded** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
-| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 738 | 38.03 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1362 | 36.91 | `audited_clean` | **retained** |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 737 | 38.03 | `audited_clean` | **retained_no_go** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1363 | 36.91 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1139 | 36.16 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 929 | 34.86 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
@@ -200,6 +200,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2582,6 +2583,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Independently rescaling by 18^n gives m_5=4, m_6=42, m_7=180, and m_5 m_7 - m_6^2 = -1044, hence the original determinant is strictly negative. A positive Hamburger moment window requires the corresponding Hankel matrix to be positive semidefinite, and Stieltjes positivity is stronger.
 - **rationale:** The load-bearing step is a direct algebraic identity over the displayed rational inputs, not a renaming, external comparator, or tuned numerical match. The runner hard-codes the input coefficients but also performs the determinant and integer-witness checks; an independent integer-rescaling calculation gives the same negative sign and reduced fraction. The no-go discipline scope is satisfied only for the stated positive-measure real-axis branch, with non-Stieltjes continuations explicitly left open.
 - **auditor confidence:** high
+
+### `beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded exact coefficient d_7 = 5/17006112 for Delta(beta)=P_full-P_1plaq through order beta^7, and the resulting falsification of the specific single-ratio geometric/tadpole continuation d_7=(d_6/d_5)d_6; no beta=6 plaquette closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-232734-d5aa985d09-beta6_plaquette_d7_coefficie`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** After the GF(3) support reduction to the four cube shells, the exact order-7 cube-shell multiplicity sum gives d_7 = 5/17006112, so d_7/d_6 = 5/21 rather than d_6/d_5 = 7/12.  _(class `C`)_
+- **chain closes:** True — The cited upstream authority is retained_bounded and supplies the d_5/d_6 anchors plus the size-6/7 support reduction. The provided runner wrapper delegates to source code that constructs exact SU(3) Haar projectors, exact moments/cumulants, and Fraction-arithmetic cube-shell multiplicity sums; the ansatz falsification then follows by direct rational arithmetic.
+- **rationale:** The load-bearing coefficient is not merely printed: the helper source computes it from framework primitives via exact invariant-projector link integrals, set-partition cumulants, GF(3) support filtering, and optimized Fraction contraction, then compares the computed rational to the displayed value. Independent arithmetic checks confirm the displayed per-shell aggregation, ratios, prediction 49/68024448, and relative misses 29/49 and 29/20. The Monte Carlo checks are non-load-bearing validation only, and no external comparator or beta=6 closure is imported.
+- **auditor confidence:** medium
 
 ### `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31`
 

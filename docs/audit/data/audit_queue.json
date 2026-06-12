@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 278,
-    "high": 286,
+    "high": 285,
     "leaf": 469,
     "medium": 432
   },
@@ -7947,32 +7947,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_beta6_connected_coefficient_2026_05_30.py"
-      ],
-      "load_bearing_score": 7.358,
-      "note_path": "docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py",
-      "transitive_descendants": 28
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17278,15 +17252,15 @@
         "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
         "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.085,
+      "load_bearing_score": 5.459,
       "note_path": "docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py",
-      "transitive_descendants": 5
+      "transitive_descendants": 21
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44111,6 +44085,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 65,
-  "total_pending": 1465
+  "ready_count": 64,
+  "total_pending": 1464
 }

@@ -33,9 +33,12 @@ classifies the unique additive functional satisfying further regularity
 conditions as `H(p) = -k sum p_i log p_i`. None of these theorems
 **derive** additivity from independence; they assume it and characterize
 its consequences. Applying them to `|Z[J]|` on independent Grassmann
-blocks therefore reproduces the existing parent-note conclusion
-`W = c log|Z| + const` **given P1 admitted**, without retiring P1
-itself.
+blocks therefore reproduces the normalized exact-additive part of the
+existing parent-note conclusion, `W = c log|Z|`, **given P1 admitted**.
+An additive constant is only a separate zero-of-free-energy convention
+after normalization; it is not a solution of the exact equation
+`W(r_1 r_2) = W(r_1) + W(r_2)` unless the constant is zero. This
+classification does not retire P1 itself.
 
 The honest landing is therefore a **bounded_theorem** that records
 Shannon-Khinchin-Aczel-Daroczy as a citable Layer-1 external
@@ -169,20 +172,24 @@ generator" as a continuous, additive, CPT-even, real-valued functional
 on `|Z[J]|`, then:
 
 - The continuous additive functional equation `W(r_1 r_2) = W(r_1) +
-  W(r_2)` on `R_+` (with `r_i = |Z_i|`) has unique solution `W =
-  c log r + const` by Cauchy's theorem (§1.1) — equivalently, by the
+  W(r_2)` on `R_+` (with `r_i = |Z_i|`) has unique normalized solution
+  `W = c log r` by Cauchy's theorem (§1.1) — equivalently, by the
   Aczel-Daroczy classification (§1.4) specialized to scalar functionals
-  on `R_+`;
+  on `R_+`. A displayed affine form `c log r + C` satisfies exact
+  additivity only when `C = 0`; nonzero `C` is a post-classification
+  baseline convention, not part of the exact Cauchy solution;
 - The Shannon-Khinchin theorem (§1.3) applied to the multinomial
   probability distribution `p_i = |Z_i|^2 / sum_j |Z_j|^2`
   reproduces `H(p) = -k sum_i p_i log p_i` — but this is the
   **Shannon entropy of a constructed probability distribution**, not
   the Grassmann observable generator.
 
-The conditional conclusion `W = c log|Z| + const` matches the parent
-note's existing conclusion. The Shannon-Khinchin scaffold therefore
-provides a **published external uniqueness theorem cite** for the same
-content; it does not provide new closure.
+The normalized conditional conclusion `W = c log|Z|`, with any later
+constant treated only as a separate baseline convention, matches the
+additive core of the parent note's existing conclusion. The
+Shannon-Khinchin scaffold therefore provides a **published external
+classification theorem cite** for the same additive content; it does
+not provide new closure.
 
 ### 2.3 Why P1 is NOT retired by this scaffold
 

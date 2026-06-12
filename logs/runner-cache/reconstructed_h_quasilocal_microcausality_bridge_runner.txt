@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py
-runner_sha256: d5ef3250889e5e5f4a8eb4d0b00b267d92014999c25a89d023b2dd53aea786ad
+runner_sha256: e71520bfb9612cb7808ec077454ca04fb08b1b3f240ad6947ef20f39911f654a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 24.00
+elapsed_sec: 21.12
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -28,7 +28,7 @@ reconstructed free H = -log(T^2)/(2 a_tau) is QUASI-LOCAL (exp tail)  [class A]
 
 ==============================================================================
 TOTAL: PASS=8 FAIL=0
-VERDICT: the reconstructed free Hamiltonian H = -log(T^2)/(2 a_tau) = E(p) is QUASI-LOCAL: the staggered dispersion is real-analytic on the torus for m>0 (radicand >= m^2 > 0), so by Paley-Wiener its kernel has an exponential tail H(x) ~ x^-p e^{-a|x|} with a = arcsinh(m) > 0; the m=0 gapless case is pure power-law (strip closed), so the mass gap is load-bearing. This supplies the finite-range/quasi-local H structure the microcausality (M2) Lieb-Robinson bound needs -- closing the bridge's named non-perturbative H=-log(T)/a_tau finite-range step on the free surface.
+VERDICT: the reconstructed free Hamiltonian H = -log(T^2)/(2 a_tau) = E(p) is QUASI-LOCAL: the staggered dispersion is real-analytic on the torus for m>0 (radicand >= m^2 > 0), so by Paley-Wiener its kernel has an exponential tail H(x) ~ x^-p e^{-a|x|} with a = arcsinh(m) > 0; the m=0 gapless case is pure power-law (strip closed), so the mass gap is load-bearing. This supplies free-surface quasi-local-H support for the microcausality (M2) Lieb-Robinson bridge; the interacting H and LR velocity constant remain separate open authorities.
 
 ----- stderr -----
 

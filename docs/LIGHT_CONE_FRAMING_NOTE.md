@@ -57,15 +57,21 @@ corrected formula numerically against the dispersion at fine k.
 ## The Lieb-Robinson Bound
 
 The Lieb-Robinson theorem (Lieb-Robinson 1972) bounds signal propagation
-in any local lattice Hamiltonian by an exponentially-suppressed cone
+in any local lattice Hamiltonian by an exponentially-suppressed cone. In
+the current repo convention the finite-range carrier authority uses an
+overlap-weight velocity
 
-    v_LR ≤ 2 · ‖H_hop‖ · (lattice spacing)
+    v_LR := 2 · e · q · W · R
 
-For the staggered hopping with weight w = 1/(2a), this gives v_LR = 1/a in
-lattice units, matching v_max(m=0) = 1 above. In the continuum limit
-(a → 0, with m·a → 0), the LR cone approaches the strict relativistic
-light cone from above. The 97% containment seen at finite lattice spacing
-in the Crank-Nicolson evolution is the standard discretization artifact.
+for interaction-strength bound `q`, per-site overlap weight `W`, and
+diameter `R`, not the older shorthand `2 e r J`. For the nearest-neighbor
+free hopping subcase this has the expected finite-velocity shape, while
+the current action-carrier constants are supplied by the bridge note cited
+below. In the continuum limit, once the matching lattice-spacing bridge is
+supplied, the LR cone is the lattice finite-speed analogue of the
+relativistic light cone. The 97% containment seen at finite lattice spacing
+in the Crank-Nicolson evolution is evidence consistent with an LR tail, not
+an exact theorem-grade identification by itself.
 
 ### Hamiltonian-side bounded support
 
@@ -74,10 +80,15 @@ The Hamiltonian-side support note
 records bounded action-density support and a conservative local
 coefficient budget:
 
-    r_action <= 2,    J_action <= |m| + 30  (canonical action-density surface)
+    J_action <= |m| + 78      (supplied surface)
+    J_action <= |m| + 78.5    (displayed carrier)
+    J_action <= |m| + 80      (safe envelope)
 
-This is bounded support for the LR chain, not a retained exact theorem
-for the reconstructed logarithmic Hamiltonian `H = -log(T)/a_tau`.
+The same authority records the overlap-weight LR convention and states
+that the earlier `2 e r J` plug-in is superseded because it omitted the
+overlap weight. This is bounded support for the LR chain, not a retained
+exact theorem for the interacting reconstructed logarithmic Hamiltonian
+`H = -log(T)/a_tau`.
 
 ### Crank-Nicolson refinement
 
@@ -90,26 +101,19 @@ This is a different operator from the continuous evolution exp(−itH);
 they agree only in the continuum limit. The Crank-Nicolson diagnostic
 note
 [`LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`](LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md):
-checks, on finite nearest-neighbor toy Hamiltonians, the bounded
-velocity shape
-
-    v_LR^CN(a_τ)  =  v_LR(H) / (1 − a_τ J / 2)
-                  =  v_LR(H) · (1 + a_τ J / 2 + O((a_τ J)²))
-
-with the bound
-
-    ‖[α_t^CN(O_x), O_y]‖_op  ≤  2 ‖O_x‖ ‖O_y‖ · exp(−d(x,y) + v_LR^CN |t|).
-
-The correction factor `1/(1 − a_τ J / 2)` is a bounded diagnostic
-read of the Neumann-series resolvent expansion of
-`(I + i a_τ H/2)^{−1}`. As `a_τ → 0`, the Crank-Nicolson evolution
-converges to the continuous Hamiltonian evolution.
+now explicitly withdraws the prior fixed-step quasilocal-generator claim
+for `H_CN = (2/a_τ) arctan(a_τ H/2)` and its associated fixed-step LR
+envelope. Its corrected load-bearing statement is a finite-block
+cone-inheritance theorem: on the subcritical surface
+`y := a_τ ||H||/2 < 1`, the CN dynamics tracks the exact finite-range
+flow with an explicit `O(a_τ^2)` per-step defect and hence inherits the
+exact-flow cone up to the stated accumulated defect. No locality property
+of `H_CN` itself is claimed.
 
 The companion runner
-`scripts/light_cone_crank_nicolson_lr_2026_05_09.py` checks (CN-A)
-unitarity, (CN-B) per-step Neumann-series decay, (CN-C) the n-step
-velocity bound, and (CN-D) the `O(a_τ²)` continuum convergence
-(`PASS=5 FAIL=0`).
+`scripts/light_cone_crank_nicolson_lr_2026_05_09.py` checks Cayley
+unitarity, the spectral-generator identity, the withdrawal witnesses, the
+cone-inheritance step defect, and the `O(a_τ²)` continuum convergence.
 
 ## What This Architecture Does Provide
 
@@ -142,12 +146,15 @@ closed:
 
   - **Hamiltonian-side action support/J budget** is recorded in
     [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
-    as bounded support: `r_action <= 2`, `J_action <= |m| + 30`.
+    as bounded support in the overlap-weight convention, with
+    `J_action <= |m| + 78` (supplied surface), `|m| + 78.5`
+    (displayed carrier), and `|m| + 80` (safe envelope).
 
   - **Crank-Nicolson-side finite-step behavior** is checked in
     [`LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`](LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md):
-    `v_LR^CN(a_τ) = v_LR(H) / (1 − a_τ J/2)` on tested finite
-    nearest-neighbor toy models, with `U_CN^n -> exp(-itH)` as
+    the prior fixed-step quasilocal-generator formula is withdrawn, and
+    the retained content is finite-block cone inheritance with an explicit
+    subcritical step-defect bound and `U_CN^n -> exp(-itH)` as
     `a_τ -> 0`.
 
 The remaining open bridge is an exact finite-range or quasilocal LR

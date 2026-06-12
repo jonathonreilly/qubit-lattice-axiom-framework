@@ -5,8 +5,10 @@
 **Claim type:** bounded_theorem
 **Script:** `scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py`
 **Cache:** `logs/runner-cache/frontier_record_conditional_law_three_point_period_series_2026_06_11.txt`
-**Status:** source proposal; the audit lane grades. Runner `PASS=17 FAIL=0` — exact,
-deterministic, no MC. **Memory contract respected by construction:** uniform
+**Status:** source proposal; the audit lane grades. Runner `PASS=17 FAIL=0` — exact
+finite evolution with a deterministic seeded 300-draw permutation-null diagnostic.
+The null comparison is not an exact enumeration of all label permutations. **Memory
+contract respected by construction:** uniform
 `expm_multiply` machinery across all three periods — the step unitary is *never*
 materialized (a dense `U` at L=5 would be 17 GB); environments freed between periods;
 measured **peak footprint ~2.5 GB** (`/usr/bin/time -l`; max RSS ~1.4 GB), single-run safe, panels serialize heavy recomputes.
@@ -37,9 +39,11 @@ min-gain > 0 is exactly equivalent to `p₂<p₃<p₄`). What does **not** persi
 weakening is of *clarity*, not of monotonicity — the strict signature survives
 three-point (1/2, 7/7, 6/6).
 
-**(G2) Null-clearing drops from all-tested to typical:** 5/6 L=5 seeds clear their
-label-permutation null; seed 20260611's most-spread event does **not** (gap `−0.030`) —
-the first non-clearing event of the series, disclosed rather than averaged away — **a null-clearing failure, not a monotonicity failure** (its min-gain is positive).
+**(G2) Seeded-null positivity drops from all-tested to typical:** 5/6 L=5 seeds exceed
+their fixed seeded 300-draw label-permutation p95 diagnostic; seed 20260611's
+most-spread event does **not** (gap `−0.030`) — the first non-positive seeded-null
+event of the series, disclosed rather than averaged away — **a seeded-null diagnostic
+failure, not a monotonicity failure** (its min-gain is positive).
 
 **(G3) The gap medians are trendless:** `{~0.139, ~0.193, ~0.095}` for L = {3,4,5} —
 fluctuating within overlapping ranges. The #3555 panel-corrected verdict
@@ -49,8 +53,8 @@ law**; gap magnitudes are event/seed-dominated.
 ## The three-point verdict — an honest negative that redirects
 
 Across L = 3, 4, 5 the record-conditional structure **does not strengthen
-systematically with the period**: gain magnitudes and null-clearing both regress at
-L=5, while the strict-monotonicity signature itself persists — #3555's magnitude
+systematically with the period**: gain magnitudes and seeded-null positivity both
+regress at L=5, while the strict-monotonicity signature itself persists — #3555's magnitude
 clarity was not the onset of a trend. **At
 accessible periods the conditional law's structure is event/seed-dominated, and period
 scans at these sizes cannot decide the conditional-law question.** The redirect this
@@ -75,6 +79,10 @@ different observable** — not larger rings.
 - **Method delivered:** the `expm_multiply` pattern makes 32k-dimensional exact
   outcome-tree scans run in seconds within a ~2.5 GB envelope — recorded for future
   blocks (with the panel-serialization caveat).
+- Null-diagnostic scope: every displayed p95 value is the p95 of the fixed seeded
+  300-draw label-permutation sample implemented by the runner. The source claim is
+  the finite, code-defined diagnostic result under that protocol, not an exact
+  all-permutations null-clearing theorem.
 
 ## Cross-references
 

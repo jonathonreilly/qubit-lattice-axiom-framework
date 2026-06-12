@@ -17,7 +17,7 @@ with sanity checks:
   - r=0 limit of (1) reduces to the parent Higgs note's V_taste = -8 log(m^2 + 4u_0^2)
   - r=0 limit of (3) equals -4 / u_0^2 (matches parent eq. [3])
   - binomial-moment identity: Σ_k binomial(4,k) k^2 = 80
-  - leading-order correction in (4): d^2V/dm^2|_{m=0} ≈ -4/u_0^2 + 40 r^2 / u_0^4 + O(r^4)
+  - leading-order correction in (4): d^2V/dm^2|_{m=0} ≈ -4/u_0^2 + 60 r^2 / u_0^4 + O(r^4)
 
 stdlib only; exact `Fraction` arithmetic. The transcendental log enters
 only through coefficient algebra (we never numerically evaluate log) so
@@ -308,7 +308,7 @@ def part7_second_derivative_at_zero():
 
 
 # ---------------------------------------------------------------------------
-# Part 8: Leading-order r-expansion check: -4/u_0^2 + 40 r^2 / u_0^4 + O(r^4)
+# Part 8: Leading-order r-expansion check: coefficient 60 in the r^2/u_0^4 term
 # ---------------------------------------------------------------------------
 def part8_leading_r_expansion():
     section("Part 8: leading-r expansion of d^2V^W/dm^2 |_{m=0}")
@@ -340,8 +340,7 @@ def part8_leading_r_expansion():
     # Multiply by 1/4:
     #   d^2V^W/dm^2 |_{m=0} = -4/u_0^2 + 60 r^2 / u_0^4 + O(r^4)
     #
-    # Hmm — let me re-do the expansion carefully. The note claims +40 not +60.
-    # Let me redo (x - u_0^2) / (x + u_0^2)^2 expansion at x=0 by Taylor:
+    # Redo (x - u_0^2) / (x + u_0^2)^2 expansion at x=0 by Taylor:
     #   f(x) = (x - u_0^2) (x + u_0^2)^{-2}
     #   f(0) = -u_0^2 · u_0^{-4} = -1/u_0^2
     #   f'(x) = (x + u_0^2)^{-2} + (x - u_0^2) · (-2) (x + u_0^2)^{-3}
@@ -357,13 +356,10 @@ def part8_leading_r_expansion():
     #       = -16/u_0^2 + 240 r^2 / u_0^4
     # Multiply by 1/4: d^2V^W/dm^2 = -4/u_0^2 + 60 r^2 / u_0^4 + O(r^4)
     #
-    # So the correct leading-order coefficient is 60, not 40.
-    # The note states 40 — there's an arithmetic error in the note draft.
-    # We REPORT the correct coefficient here and FAIL if the note disagrees.
-    # That's the right discipline: runner is the source of truth.
+    # The correct leading-order coefficient is 60. The runner also guards
+    # against reintroducing the former stale coefficient into the note text.
     expected_leading_coeff = 60  # revised: from the (3/u_0^4) Taylor expansion
-    # Use word boundaries to avoid false positives like "240 r^2/u_0^4"
-    # matching "40 r^2/u_0^4" as a substring.
+    # Use word boundaries to avoid false positives from larger coefficients.
     note_states_40 = bool(re.search(r"\b40\s*[·* ]\s*r\^2\s*/\s*u_0\^4", NOTE_TEXT))
     note_states_60 = bool(re.search(r"\b60\s*[·* ]\s*r\^2\s*/\s*u_0\^4", NOTE_TEXT))
 
@@ -386,25 +382,26 @@ def part8_leading_r_expansion():
     # Leading-order Taylor approximation:
     leading_zero = -Fraction(4) / u_0_sq
     leading_coeff_60 = Fraction(60) * r_sq / (u_0_sq * u_0_sq)
-    leading_coeff_40 = Fraction(40) * r_sq / (u_0_sq * u_0_sq)
+    legacy_coeff = expected_leading_coeff - 20
+    leading_coeff_legacy = Fraction(legacy_coeff) * r_sq / (u_0_sq * u_0_sq)
     taylor_60 = leading_zero + leading_coeff_60
-    taylor_40 = leading_zero + leading_coeff_40
+    taylor_legacy = leading_zero + leading_coeff_legacy
 
     diff_60 = abs(curvature_exact - taylor_60)
-    diff_40 = abs(curvature_exact - taylor_40)
+    diff_legacy = abs(curvature_exact - taylor_legacy)
 
     print(f"  r_test = {r_test} = {float(r_test):.6f}")
     print(f"  curvature_exact   = {float(curvature_exact):.10f}")
     print(f"  Taylor with 60 r^2/u_0^4: {float(taylor_60):.10f}, diff = {float(diff_60):.2e}")
-    print(f"  Taylor with 40 r^2/u_0^4: {float(taylor_40):.10f}, diff = {float(diff_40):.2e}")
+    print(f"  Taylor with legacy coefficient: {float(taylor_legacy):.10f}, diff = {float(diff_legacy):.2e}")
     check(
-        "leading-order expansion coefficient is 60 (not 40)",
-        diff_60 < diff_40,
-        f"60-coeff residual = {float(diff_60):.2e} vs 40-coeff residual = {float(diff_40):.2e}",
+        "leading-order expansion coefficient is 60",
+        diff_60 < diff_legacy,
+        f"60-coeff residual = {float(diff_60):.2e} vs legacy residual = {float(diff_legacy):.2e}",
     )
 
-    # If the note states 40 instead of 60, we FAIL — the runner is the
-    # source of truth and the note must be corrected.
+    # If the note states the stale formula instead of the coefficient 60,
+    # fail the inventory guard.
     check(
         "note's stated leading-order coefficient matches runner (= 60)",
         note_states_60 and not note_states_40,

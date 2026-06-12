@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_corrected_v_taste_tree_level.py
-runner_sha256: 28571de23b2b38276751f832ca69d397d5d4b5e2301bead8d6548f2280b75a8d
+runner_sha256: 8fc8da7ff7b13b5a15f5a3abb839f25fc393de6112f36f2cfdc05648053a65d1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -95,8 +95,8 @@ status: ok
   r_test = 1/100 = 0.010000
   curvature_exact   = -5.1834828345
   Taylor with 60 r^2/u_0^4: -5.1834642658, diff = 1.86e-05
-  Taylor with 40 r^2/u_0^4: -5.1868359240, diff = 3.35e-03
-  [PASS] leading-order expansion coefficient is 60 (not 40)  (60-coeff residual = 1.86e-05 vs 40-coeff residual = 3.35e-03)
+  Taylor with legacy coefficient: -5.1868359240, diff = 3.35e-03
+  [PASS] leading-order expansion coefficient is 60  (60-coeff residual = 1.86e-05 vs legacy residual = 3.35e-03)
   [PASS] note's stated leading-order coefficient matches runner (= 60)  (note_states_60 = True, note_states_40 = False)
 
 ----------------------------------------------------------------------------------------

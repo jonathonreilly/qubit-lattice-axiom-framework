@@ -7,6 +7,8 @@ and bounded Coulomb Green-kernel scaling companion that complement the
 `d >= 3` lower-bound result in
 [DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md).
 **Status authority:** independent audit lane only.
+**Primary runner:** [`scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py`](../scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py)
+**Cached runner output:** [`logs/runner-cache/dimension_upper_bound_dependency_edge_repair_2026_06_08.txt`](../logs/runner-cache/dimension_upper_bound_dependency_edge_repair_2026_06_08.txt)
 
 ## Purpose
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Class-A verifier: the reconstructed free Hamiltonian H = -log(T_hat^2)/(2 a_tau) is
-QUASI-LOCAL (exponentially-decaying kernel) -- the finite-range-H input that the microcausality
-/ Lieb-Robinson bound (M2) needs, and the exact `H = -log(T)/a_tau` finite-range step the parent
-bridge note explicitly leaves open.
+QUASI-LOCAL (exponentially-decaying kernel) on the supplied free U=1, d=3 surface. This
+is support for the finite-range/quasi-local-H input that the microcausality / Lieb-Robinson
+bridge (M2) needs; it is not an interacting-H proof or a Lieb-Robinson velocity theorem.
 
 Mechanism (Paley-Wiener / Bernstein). In momentum space the reconstructed free Hamiltonian is the
 exact free staggered dispersion
@@ -11,16 +11,16 @@ exact free staggered dispersion
     R(p) = m^2 + sum_mu sin^2 p_mu  >=  m^2 > 0   for all real p (m > 0),
 extends holomorphically (a polynomial in cos 2p_mu) and stays positive on the real torus. In the
 complex strip before the first R=0 singularity, one can choose analytic branches of sqrt(R) and
-arcsinh(sqrt(R)). Hence E(p) is REAL-ANALYTIC on T^d with positive analyticity-strip half-width;
+arcsinh(sqrt(R)). Hence E(p) is REAL-ANALYTIC on T^3 with positive analyticity-strip half-width;
 along one complex momentum direction the first branch point occurs at sin^2 p = -m^2, giving the
 rate scale a = arcsinh(m) > 0. By Paley-Wiener the kernel has an EXPONENTIAL TAIL:
 H(x) ~ (algebraic prefactor) * e^{-a|x|}, so H is quasi-local. The mass gap (m > 0) is
 load-bearing: at m = 0 the radicand vanishes at p = 0 ON the real torus, the strip closes
 (a = 0), and H(x) is a PURE power law (not quasi-local).
 
-This supplies the missing finite-range/quasi-local H structure for the parent microcausality
-Lieb-Robinson bound (M2). Free (U = 1) surface only; the interacting H = -log(T[U]) quasi-locality
-is separate and not claimed.
+This supplies free-surface quasi-local-H support for the parent microcausality bridge. Free
+(U = 1) surface only; the interacting H = -log(T[U]) quasi-locality and the LR velocity constant
+are separate and not claimed.
 
 No new axiom: uses the retained free staggered dispersion (rungs B, C) and standard
 Paley-Wiener/Bernstein analyticity-to-decay; the verification checks the load-bearing inequalities
@@ -123,9 +123,9 @@ def main() -> int:
           "QUASI-LOCAL: the staggered dispersion is real-analytic on the torus for m>0 (radicand "
           ">= m^2 > 0), so by Paley-Wiener its kernel has an exponential tail H(x) ~ x^-p e^{-a|x|} "
           "with a = arcsinh(m) > 0; the m=0 gapless case is pure power-law (strip closed), so the "
-          "mass gap is load-bearing. This supplies the finite-range/quasi-local H structure the "
-          "microcausality (M2) Lieb-Robinson bound needs -- closing the bridge's named "
-          "non-perturbative H=-log(T)/a_tau finite-range step on the free surface.")
+          "mass gap is load-bearing. This supplies free-surface quasi-local-H support for the "
+          "microcausality (M2) Lieb-Robinson bridge; the interacting H and LR velocity constant "
+          "remain separate open authorities.")
     return 0
 
 

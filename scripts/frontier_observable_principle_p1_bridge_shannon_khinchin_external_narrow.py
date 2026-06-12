@@ -59,14 +59,25 @@ def test_T1_cauchy_log_symbolic() -> None:
         diff == 0,
         f"sympy.simplify(lhs - rhs) = {diff}",
     )
-    # Also verify Cauchy's uniqueness up to constant: c*log satisfies the
-    # equation for any real c.
+    # Also verify the exact Cauchy solution family: c*log satisfies the
+    # equation for any real c, while a nonzero additive constant does not.
     c = sp.Symbol("c", real=True)
     expr = c * sp.log(x * y) - c * sp.log(x) - c * sp.log(y)
     check(
         "c*log(x*y) = c*log(x) + c*log(y) for any real c",
         sp.simplify(expr) == 0,
         f"sympy.simplify(c*log diff) = {sp.simplify(expr)}",
+    )
+    C = sp.Symbol("C", real=True)
+    affine_residual = sp.simplify(
+        (c * sp.log(x * y) + C)
+        - (c * sp.log(x) + C)
+        - (c * sp.log(y) + C)
+    )
+    check(
+        "an additive constant violates exact additivity unless C=0",
+        affine_residual == -C,
+        f"affine residual = {affine_residual}",
     )
 
 
@@ -276,8 +287,8 @@ def test_T8_sensitivity_non_additive_alternatives() -> None:
         f_square_r1r2 != f_square_sum,
         f"f(r1 r2)={f_square_r1r2}, f(r1)+f(r2)={f_square_sum}",
     )
-    # Confirm that log is the unique class satisfying multiplicative-to-additive
-    # via Cauchy: any continuous f with f(xy)=f(x)+f(y) must be c log x.
+    # Confirm that log is the classified continuous family satisfying
+    # multiplicative-to-additive via Cauchy.
     # This is a CLASSIFICATION conclusion, NOT a derivation of additivity.
     import math
     c = 1.0
@@ -285,7 +296,7 @@ def test_T8_sensitivity_non_additive_alternatives() -> None:
     lhs = c * math.log(r1f * r2f)
     rhs = c * math.log(r1f) + c * math.log(r2f)
     check(
-        "c*log uniquely satisfies the multiplicative-to-additive equation",
+        "c*log satisfies the multiplicative-to-additive equation",
         abs(lhs - rhs) < 1e-12,
         f"lhs={lhs:.6f}, rhs={rhs:.6f}",
     )

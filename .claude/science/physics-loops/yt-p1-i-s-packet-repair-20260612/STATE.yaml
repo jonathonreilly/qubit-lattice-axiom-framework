@@ -1,0 +1,27 @@
+loop_slug: yt-p1-i-s-packet-repair-20260612
+date: 2026-06-12
+branch: physics-loop/yt-p1-i-s-packet-repair-20260612
+base: origin/main
+target_claim_id: yt_p1_i_s_lattice_pt_citation_note_2026-04-17
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+current_cycle: 1
+files_touched:
+  - docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md
+  - scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
+  - logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt
+  - .claude/science/physics-loops/yt-p1-i-s-packet-repair-20260612/
+open_imports:
+  - The full supplied literature bracket I_S in [4,10] is still not derived from framework primitives by this row.
+  - The historical full-staggered BZ note contains over-strong status wording and must be audited separately before it can replace the citation bracket.
+  - The native lower-end BZ candidate supports scale and operator family, not the full upper-end bracket.
+verification:
+  - python3 scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py --force --concurrency 1 --push-mode none --allow-non-main
+next_exact_action: Open review PR for this bounded-support packet repair, then continue with another audited_conditional row not already covered by open PRs.
+stop_condition: Stop this block after PR handoff; do not claim retained closure.

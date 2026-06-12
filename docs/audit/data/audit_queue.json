@@ -73,15 +73,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
-      "claim_scope": null,
+      "claim_scope": "Conditional substep-1 statistics discriminator on the explicit {free boson, hard-core boson, Grassmann/CAR} candidate list: GL(F) selects Grassmann/CAR when imposed, and removing GL(F) restores the retained hard-core/CAR tie; no unconditional GL(F) supplier or statistics selection is claimed.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
@@ -90,11 +90,11 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 15.883,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py",
       "transitive_descendants": 943
@@ -282,15 +282,15 @@
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
         "assumption_derivation_ledger"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.051,
+      "load_bearing_score": 11.555,
       "note_path": "docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/axiom_first_cpt_check.py",
-      "transitive_descendants": 374
+      "transitive_descendants": 375
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

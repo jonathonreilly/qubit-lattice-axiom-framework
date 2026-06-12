@@ -78,6 +78,10 @@ def note_path_aliases(note_path: str) -> set[str]:
     basename = Path(normalized).name
     if basename:
         aliases.add(basename)
+        aliases.add(basename.lower())
+        stem = Path(basename).stem
+        aliases.add(stem)
+        aliases.add(stem.lower())
     return aliases
 
 
@@ -104,7 +108,17 @@ def canonicalize_decoration_parent_ids(ledger: dict) -> None:
         if not isinstance(parent, str) or not parent or parent in rows:
             continue
         normalized = parent.lstrip("./")
-        candidates = [parent, normalized, f"./{normalized}", Path(normalized).name]
+        basename = Path(normalized).name
+        stem = Path(basename).stem
+        candidates = [
+            parent,
+            normalized,
+            f"./{normalized}",
+            basename,
+            basename.lower(),
+            stem,
+            stem.lower(),
+        ]
         for candidate in candidates:
             replacement = note_to_claim.get(candidate)
             if replacement:

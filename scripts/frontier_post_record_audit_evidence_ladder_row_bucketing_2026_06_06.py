@@ -17,17 +17,17 @@ PASS = 0
 FAIL = 0
 
 SCOPE_EFFECTIVE = {"retained_bounded", "retained_pending_chain", "audited_conditional"}
-EXPECTED_LEDGER_ROWS = 2939
-EXPECTED_SCOPED_ROWS = 1371
+EXPECTED_LEDGER_ROWS = 3190
+EXPECTED_SCOPED_ROWS = 1578
 EXPECTED_BUCKET_COUNTS = Counter(
     {
         "append_count_ready": 0,
-        "finite_law_or_certificate_needed": 10,
-        "not_record_ladder_relevant": 1085,
-        "production_dynamics_needed": 6,
+        "finite_law_or_certificate_needed": 12,
+        "not_record_ladder_relevant": 1226,
+        "production_dynamics_needed": 7,
         "record_type_support_only": 1,
-        "selector_or_dial_needed": 246,
-        "simulation_support_only": 23,
+        "selector_or_dial_needed": 296,
+        "simulation_support_only": 36,
     }
 )
 
@@ -152,9 +152,9 @@ def source_anchor_checks() -> None:
         "docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md",
         [
             "read-only scanner",
-            "scans `1371` bounded/conditional",
-            "touches `286` rows",
-            "`selector_or_dial_needed` | 246",
+            "scans `1578` bounded/conditional",
+            "touches `352` rows",
+            "`selector_or_dial_needed` | 296",
             "bounded/conditional-scope rows",
             "bucket counts sum to the scoped count",
             "audit ledger hash is unchanged",

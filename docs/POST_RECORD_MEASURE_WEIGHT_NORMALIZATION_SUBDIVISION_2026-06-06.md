@@ -36,13 +36,13 @@ On the current ledger snapshot:
 
 | Measure/weight lane | Rows |
 |---|---:|
-| `source_measure_or_rn_bridge` | 15 |
-| `trace_normalization_reference` | 6 |
-| `character_path_channel_weight` | 8 |
-| `selector_tangent_readout_weight` | 8 |
-| `generic_measure_weight_import` | 8 |
+| `source_measure_or_rn_bridge` | 16 |
+| `trace_normalization_reference` | 9 |
+| `character_path_channel_weight` | 11 |
+| `selector_tangent_readout_weight` | 10 |
+| `generic_measure_weight_import` | 13 |
 
-Total: `45` rows.
+Total: `59` rows.
 
 ## Meaning
 
@@ -105,8 +105,8 @@ The runner verifies:
 - the selector/dial helper source used to obtain the bucket is included in the
   packet;
 - bounded ledger-row export exists for the selected measure/weight rows;
-- the current `measure_weight_normalization` row count is `45`;
-- lane counts match the current 2026-06-08 snapshot;
+- the current `measure_weight_normalization` row count is `59`;
+- lane counts match the current 2026-06-12 snapshot;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;
 - no audit verdict, audit-data write, retained/promoted claim, normalized-measure

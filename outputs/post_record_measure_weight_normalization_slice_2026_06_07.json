@@ -1,18 +1,18 @@
 {
   "bucket": "measure_weight_normalization",
-  "generated_on": "2026-06-08",
+  "generated_on": "2026-06-12",
   "lane_counts": {
-    "character_path_channel_weight": 8,
-    "generic_measure_weight_import": 8,
-    "selector_tangent_readout_weight": 8,
-    "source_measure_or_rn_bridge": 15,
-    "trace_normalization_reference": 6
+    "character_path_channel_weight": 11,
+    "generic_measure_weight_import": 13,
+    "selector_tangent_readout_weight": 10,
+    "source_measure_or_rn_bridge": 16,
+    "trace_normalization_reference": 9
   },
   "ledger_path": "docs/audit/data/audit_ledger.json",
-  "ledger_sha256": "61339ea0132d46103e9aa6bbeee835a5f2232254671eb104b4fc99593a6e4699",
+  "ledger_sha256": "0f427ba4485653824157d05fc348ca3fed1c118aab37988c514ac02b0986fbc7",
   "ledger_sha256_unchanged": true,
   "parent_runner": "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
-  "row_count": 45,
+  "row_count": 59,
   "row_fields": [
     "claim_id",
     "audit_status",
@@ -23,6 +23,15 @@
     "measure_lane"
   ],
   "rows": [
+    {
+      "claim_id": "action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_action_form_continuum_removal_scoping_2026_06_08.py",
+      "measure_lane": "character_path_channel_weight"
+    },
     {
       "claim_id": "architecture_note_directional_measure",
       "audit_status": "audited_numerical_match",
@@ -87,6 +96,24 @@
       "measure_lane": "character_path_channel_weight"
     },
     {
+      "claim_id": "quark_route2_e_center_lift_measured_calibration_narrow_theorem_note_2026-06-10",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "runner_path": "scripts/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
+      "claim_id": "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_EMERGENT_Q_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_theta_gauge_substrate_winding_vacuity_2026_06_11.py",
+      "measure_lane": "character_path_channel_weight"
+    },
+    {
       "claim_id": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
       "audit_status": "unaudited",
       "effective_status": "unaudited",
@@ -111,6 +138,15 @@
       "claim_type": "bounded_theorem",
       "note_path": "docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md",
       "runner_path": "scripts/central_band_born_dense_sweep.py",
+      "measure_lane": "generic_measure_weight_import"
+    },
+    {
+      "claim_id": "kcpt_orbit_clause_kinvariant_surface_equivalence_narrow_theorem_note_2026-06-10",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KCPT_ORBIT_CLAUSE_KINVARIANT_SURFACE_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "runner_path": "scripts/kcpt_orbit_clause_kinvariant_surface_equivalence_2026_06_10.py",
       "measure_lane": "generic_measure_weight_import"
     },
     {
@@ -150,12 +186,21 @@
       "measure_lane": "generic_measure_weight_import"
     },
     {
-      "claim_id": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
-      "audit_status": "audited_clean",
-      "effective_status": "retained_bounded",
+      "claim_id": "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
+      "audit_status": "audited_conditional",
+      "effective_status": "audited_conditional",
       "claim_type": "bounded_theorem",
-      "note_path": "docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "runner_path": "scripts/frontier_persistent_record_instrument_construction.py",
+      "note_path": "docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py",
+      "measure_lane": "generic_measure_weight_import"
+    },
+    {
+      "claim_id": "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11",
+      "audit_status": "audited_conditional",
+      "effective_status": "audited_conditional",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py",
       "measure_lane": "generic_measure_weight_import"
     },
     {
@@ -166,6 +211,42 @@
       "note_path": "docs/STAGGERED_DIRAC_EXERCISE_HONEST_REASSESSMENT_NOTE_2026-06-06.md",
       "runner_path": "scripts/frontier_exercise_staggered_dirac_reassessment_2026_06_06.py",
       "measure_lane": "generic_measure_weight_import"
+    },
+    {
+      "claim_id": "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10",
+      "audit_status": "audited_conditional",
+      "effective_status": "audited_conditional",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md",
+      "runner_path": "scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py",
+      "measure_lane": "generic_measure_weight_import"
+    },
+    {
+      "claim_id": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
+      "audit_status": "audited_conditional",
+      "effective_status": "audited_conditional",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
+      "runner_path": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
+      "measure_lane": "generic_measure_weight_import"
+    },
+    {
+      "claim_id": "u1_det_sector_bi_orbit_quotient_step_law_baseline_decomposition_bounded_theorem_note_2026-06-10",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/U1_DET_SECTOR_BI_ORBIT_QUOTIENT_STEP_LAW_BASELINE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+      "runner_path": "scripts/frontier_u1_det_sector_bi_orbit_quotient_step_law_2026_06_10.py",
+      "measure_lane": "generic_measure_weight_import"
+    },
+    {
+      "claim_id": "alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "runner_path": "scripts/alpha_bare_four_pi_from_z3_plancherel_bridge_2026_05_26.py",
+      "measure_lane": "selector_tangent_readout_weight"
     },
     {
       "claim_id": "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
@@ -186,6 +267,24 @@
       "measure_lane": "selector_tangent_readout_weight"
     },
     {
+      "claim_id": "hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/HIERARCHY_DELTA0_S1_EXACT_ONE_LINK_STRONG_COUPLING_PROBE_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_2026_06_11.py",
+      "measure_lane": "selector_tangent_readout_weight"
+    },
+    {
+      "claim_id": "hierarchy_formula_honest_status_note_2026-05-10",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md",
+      "runner_path": "scripts/frontier_hierarchy_formula_honest_status.py",
+      "measure_lane": "selector_tangent_readout_weight"
+    },
+    {
       "claim_id": "higgs_taste_singlet_projection_bounded_note_2026-05-09",
       "audit_status": "unaudited",
       "effective_status": "unaudited",
@@ -201,15 +300,6 @@
       "claim_type": "bounded_theorem",
       "note_path": "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
       "runner_path": "scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py",
-      "measure_lane": "selector_tangent_readout_weight"
-    },
-    {
-      "claim_id": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
-      "audit_status": "unaudited",
-      "effective_status": "unaudited",
-      "claim_type": "bounded_theorem",
-      "note_path": "docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md",
-      "runner_path": "scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py",
       "measure_lane": "selector_tangent_readout_weight"
     },
     {
@@ -246,6 +336,15 @@
       "claim_type": "bounded_theorem",
       "note_path": "docs/HIGGS_X_S4B_COMBINED_HIGGS_EWSB_G2_NOTE_2026-05-08_probeX_S4b_combined.md",
       "runner_path": "scripts/cl3_higgs_x_s4b_combined_2026_05_08_probeX_S4b_combined.py",
+      "measure_lane": "source_measure_or_rn_bridge"
+    },
+    {
+      "claim_id": "i1_static_readout_is_native_field_integration_2026-06-06",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/I1_STATIC_READOUT_IS_NATIVE_FIELD_INTEGRATION_2026-06-06.md",
+      "runner_path": "scripts/i1_static_readout_is_native_field_integration_2026_06_06.py",
       "measure_lane": "source_measure_or_rn_bridge"
     },
     {
@@ -331,8 +430,8 @@
     },
     {
       "claim_id": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
-      "audit_status": "audited_conditional",
-      "effective_status": "audited_conditional",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
       "claim_type": "bounded_theorem",
       "note_path": "docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md",
       "runner_path": "scripts/frontier_source_measure_sharp_record_tangent_space.py",
@@ -402,12 +501,30 @@
       "measure_lane": "trace_normalization_reference"
     },
     {
+      "claim_id": "hierarchy_delta0_b4_attachment_observable_enumeration_note_2026-06-11",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md",
+      "runner_path": "scripts/frontier_hierarchy_delta0_b4_attachment_observable_enumeration_2026_06_11.py",
+      "measure_lane": "trace_normalization_reference"
+    },
+    {
       "claim_id": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
       "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
       "claim_type": "bounded_theorem",
       "note_path": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
       "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py",
+      "measure_lane": "trace_normalization_reference"
+    },
+    {
+      "claim_id": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md",
+      "runner_path": "scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py",
       "measure_lane": "trace_normalization_reference"
     },
     {
@@ -426,6 +543,15 @@
       "claim_type": "bounded_theorem",
       "note_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
       "runner_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
+      "measure_lane": "trace_normalization_reference"
+    },
+    {
+      "claim_id": "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_pending_chain",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/r3_regge_linearization_lambda1_healthy_graviton_2026_06_08.py",
       "measure_lane": "trace_normalization_reference"
     }
   ]

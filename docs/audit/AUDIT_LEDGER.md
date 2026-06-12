@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 847 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1469 |
+| unaudited | 1468 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1294 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1786 |
+| `unaudited` | 1785 |
 
 | claim_type | count |
 |---|---:|
@@ -1431,6 +1431,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3721,6 +3722,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Given the supplied SU(3) carrier with N_c = 3 and the admitted SU(N) representation rule, the decomposition, singlet multiplicity, octet dimension, and projector formula follow algebraically. This closes only for the algebraic carrier scope, not as an independent physical SM-color bridge.
 - **rationale:** The load-bearing math is standard SU(3) representation algebra over the single cited color-structure parent plus admitted group theory. The runner constructs the normalized trace singlet, checks generator invariance, projector idempotence/rank, and dimension count, all as algebraic identity checks rather than first-principles framework computation or external comparison. Because the chain reduces to one upstream parent plus standard mathematics with zero class-D checks, the correct conservative classification is decoration, not a standalone clean theorem.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic embedding of the standard Gell-Mann generators as the symmetric-base block diag(lambda^a/2,0) tensored with I_2, with su(3) closure and commutation with the fiber SU(2), excluding physical SM-color identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-230708-330a176995-cl3_su3_symmetric_base_commu`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because M^a_4 is unitary-conjugate to diag(lambda^a/2,0) and T^a_8D=M^a_4 tensor I_2, the Lie brackets reduce to the standard Gell-Mann block while [T^a_8D,Jf_i]=[A tensor I,I tensor B]=0.  _(class `A`)_
+- **chain closes:** False — The core block-embedding and commutant argument is a valid algebraic identity over the stated carrier. The source is not clean as written because it also displays incorrect normalization/formula statements: full Tr_8[T^a_8D T^b_8D] equals delta_ab, not (1/2)delta_ab, and 2/i Tr([lambda^a,lambda^b]lambda^c) using full Gell-Mann matrices gives 8 f^{abc}, not f^{abc}.
+- **rationale:** The runner source performs real symbolic/numerical algebra rather than merely printing constants, and its completed cache supports the corrected block embedding, full 8D trace, Lie closure, Jacobi identity, and fiber-SU(2) commutation checks. The cited physical-color and physical-generation bridges are explicitly out of scope and are not needed for this algebraic bounded theorem. However, the restricted source packet contains source-runner drift in displayed load-bearing normalization and structure-constant extraction formulas, so audited_clean is blocked until those formulas are corrected in the note.
 - **auditor confidence:** high
 
 ### `cl3_taste_generation_theorem`

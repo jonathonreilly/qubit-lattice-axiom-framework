@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py
-runner_sha256: 8bb9a4aed78d75f68ec3dcdb97b4193489556cfcbf54f0aea5fed2f82fdf5930
+runner_sha256: ce4c4c74b88139e6d57454853c913020e0d4fa1f62bac9f6aa1fe984fe8ae7b5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 1.51
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -41,18 +41,18 @@ E4: the comparator -- m_tau prediction and the fitted-phase residual
 E5: no-go boundary compliance
 ----------------------------------------------------------------------------------------
   [PASS] the radian-bridge audit forecloses PERIODIC (q*pi) sources; the density L_3(1,2) is a RATIONAL spectral count outside its Type-A bin -- and the audit itself carries the eta/2-9 value as an unforeclosed witness (grep: '2/9' appears in the audit's own witness inventory)  --  enumeration no-go, not an impossibility theorem; this route is outside its bins
-  [PASS] the eigenline/cobordism no-gos police Wilson-MARK selection on the rank-2 zero-mode space; this chain is a READOUT identification (which number the registered phase equals), not a mark-selection claim -- their scope is not entered (the line-selection question remains with the carrier gate and the unaudited chirality-selector companion)
-  [PASS] the gated CP-odd vacuum route (gated on the staggered mass = the circular gate) is NOT used anywhere in this chain -- the circularity is bypassed, not resolved
+  [PASS] the eigenline/cobordism no-gos police Wilson-MARK selection on the rank-2 zero-mode space; this chain is a READOUT identification (which number the registered phase equals), not a mark-selection claim -- their scope is not entered (the line-selection question remains with the carrier surface and the unaudited chirality-selector companion)
+  [PASS] the gated CP-odd vacuum route (gated on the physical carrier surface) is NOT used anywhere in this chain -- the circularity is bypassed, not resolved
 
 ----------------------------------------------------------------------------------------
 E6: K-orbit consistency -- the chain supplies exactly the registrable atom
 ----------------------------------------------------------------------------------------
-  [PASS] conj(H(delta)) = H(-delta) (consumed from the Tier-A shrink): the registrable atom is |delta| -- exactly what the chain supplies; the sign stays frame content
+  [PASS] conj(H(delta)) = H(-delta) on the supplied circulant class; with the registrability bridge, the registrable atom is |delta| -- exactly what the chain supplies; the sign stays frame content
 
 ----------------------------------------------------------------------------------------
 E7: honest conditionality and falsifiers
 ----------------------------------------------------------------------------------------
-  [PASS] delta = 2/9 is a THEOREM conditional on: {R-eta (proposed identification), the staggered carrier gate (existing Tier-A), and the landed circulant context}. The r=1/2 subsumption row is comparator context only unless separately landed. NOT unconditional; R-eta is the owner/audit decision
+  [PASS] delta = 2/9 is a THEOREM conditional on: {R-eta (proposed identification), the supplied circulant class; physical carrier identification rides with the AC_phi_lambda admission}. The r=1/2 subsumption row is comparator context only unless separately landed. NOT unconditional; R-eta is the owner/audit decision
   [PASS] ZERO new numbers consumed: R-eta is a class identification; 2/9 is retained arithmetic; PDG values are labeled comparators
   [PASS] FALSIFIER: a tighter m_tau measurement pulling the fitted phase away from 2/9 (current residual 7.4e-6 absolute; the chain dies if it grows with precision)
   [PASS] the Callan-Harvey 2/N^2 = 2/9 is a DISTINCT object (proven distinct in-repo; coincides only at d = 3) -- recorded as consistency, not consumed

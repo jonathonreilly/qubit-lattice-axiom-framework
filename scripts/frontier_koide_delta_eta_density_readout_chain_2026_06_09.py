@@ -39,15 +39,15 @@ The chain, every link computed and its status labeled:
       witness); the eigenline/cobordism no-gos police Wilson-mark selection,
       not readout identification; the chain does NOT route through the gated
       CP-odd vacuum term (the circular gate is bypassed).
-  E6  K-ORBIT CONSISTENCY: conj(H(delta)) = H(-delta), so the registrable atom
-      is |delta| -- exactly what the chain supplies; the sign stays frame
-      content (the Tier-A shrink result, consumed).
+  E6  K-ORBIT CONSISTENCY: conj(H(delta)) = H(-delta) on the supplied
+      circulant class. With the registrability bridge, the registrable atom is
+      |delta| -- exactly what the chain supplies; the sign stays frame content.
   E7  HONEST CONDITIONALITY: delta = 2/9 is a THEOREM conditional on
-      {R-eta (proposed identification, owner/audit decision), the staggered
-      carrier gate (existing Tier-A), the landed circulant context}. The
-      r=1/2 subsumption row is comparator context only unless separately
-      landed. NOT unconditional. Falsifier: a tighter m_tau measurement
-      pulling the fitted phase away from 2/9.
+      {R-eta (proposed identification, owner/audit decision), the supplied
+      circulant class; physical carrier identification rides with the
+      AC_phi_lambda admission}. The r=1/2 subsumption row is comparator context
+      only unless separately landed. NOT unconditional. Falsifier: a tighter
+      m_tau measurement pulling the fitted phase away from 2/9.
 
 Sets no audit status. PDG values are comparators only.
 """
@@ -206,9 +206,9 @@ def main():
         "the eigenline/cobordism no-gos police Wilson-MARK selection on the rank-2 "
         "zero-mode space; this chain is a READOUT identification (which number the "
         "registered phase equals), not a mark-selection claim -- their scope is not "
-        "entered (the line-selection question remains with the carrier gate and the "
+        "entered (the line-selection question remains with the carrier surface and the "
         "unaudited chirality-selector companion)": True,
-        "the gated CP-odd vacuum route (gated on the staggered mass = the circular gate) "
+        "the gated CP-odd vacuum route (gated on the physical carrier surface) "
         "is NOT used anywhere in this chain -- the circularity is bypassed, not resolved": True,
     }
     for k, v in boundaries.items():
@@ -220,17 +220,18 @@ def main():
     b_s = B * sp.exp(sp.I * d_s)
     H = a_s * sp.eye(3) + b_s * C + sp.conjugate(b_s) * C.T
     H_minus = a_s * sp.eye(3) + B * sp.exp(-sp.I * d_s) * C + B * sp.exp(sp.I * d_s) * C.T
-    check("conj(H(delta)) = H(-delta) (consumed from the Tier-A shrink): the registrable "
-          "atom is |delta| -- exactly what the chain supplies; the sign stays frame content",
+    check("conj(H(delta)) = H(-delta) on the supplied circulant class; with the "
+          "registrability bridge, the registrable atom is |delta| -- exactly what "
+          "the chain supplies; the sign stays frame content",
           sp.simplify(H.applyfunc(sp.conjugate) - H_minus) == sp.zeros(3, 3))
 
     # ------------------------------------------------------------------ E7
     section("E7: honest conditionality and falsifiers")
     scope = {
         "delta = 2/9 is a THEOREM conditional on: {R-eta (proposed identification), "
-        "the staggered carrier gate (existing Tier-A), and the landed circulant context}. "
-        "The r=1/2 subsumption row is comparator context only unless separately landed. "
-        "NOT unconditional; R-eta is the owner/audit decision": True,
+        "the supplied circulant class; physical carrier identification rides with "
+        "the AC_phi_lambda admission}. The r=1/2 subsumption row is comparator context "
+        "only unless separately landed. NOT unconditional; R-eta is the owner/audit decision": True,
         "ZERO new numbers consumed: R-eta is a class identification; 2/9 is retained "
         "arithmetic; PDG values are labeled comparators": True,
         "FALSIFIER: a tighter m_tau measurement pulling the fitted phase away from 2/9 "
@@ -254,7 +255,7 @@ def main():
           abs(((argdet - np.pi * n_minus) + np.pi) % (2 * np.pi) - np.pi) < 1e-12,
           detail=f"n_minus={n_minus}, arg det = {argdet:.6f} = pi*n_minus mod 2pi")
     # (b) the door is closed: K-invariant MULTIPLICATIVE det-class readouts are
-    # phase-free (the Tier-A shrinks lemma, re-verified here): the phase
+    # phase-free (the registrability theorem, re-verified here): the phase
     # character k of |z|^s e^{ik arg z} is forced to 0 by K-invariance.
     k_, phi_ = sp.symbols("k phi", real=True)
     coeff = sp.series(2 * sp.sin(k_ * phi_), phi_, 0, 2).removeO().coeff(phi_, 1)

@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/signed_gravity_interface_pfaffian_gap_closing_sweep_2026_06_12.py
+runner_sha256: 86f260e148b6b7eb7e5ccdf1032efd8d62807f227c26a9d83ce64b9c53536c5f
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 28.14
+status: ok
+----- stdout -----
+MEASURE: gate theta=pi size=20x30 profile=step
+MEASURE: O-real residuals O2=0.000e+00 O_anticomm=0.000e+00 B_imag=6.303e-18 B_asym=0.000e+00
+PASS: gate O^2 residual :: 0.000e+00
+PASS: gate O anticommutes with K_odd :: 0.000e+00
+PASS: gate O-real B imaginary residual :: 6.303e-18
+PASS: gate O-real B antisymmetry residual :: 0.000e+00
+MEASURE: line mass:20x30:step:theta1 params=[1, 0.75, 0.5, 0.3, 0.25, 0.2, 0.15, 0.1, 0.05, 0.02, 0.01, 0] rank_changes=[1->36, 0.2->40] degenerate_params=[] sign_changes=[] raw_svd_orientation_flips=4 min_overlap_sv=0.985688505251 min_support_abs_eig=0.00487307597631 at 0.2 min_top_abs=0.0266925252584 at 1 rel_gap_above_min=0.0629268008559 rel_gap_below_max=0.0489832334382
+PASS: mass:20x30:step:theta1 has no degenerate mass point :: degenerate=[]
+PASS: mass:20x30:step:theta1 measured no same-rank transported sign flip :: sign_changes=[]
+PASS: mass:20x30:step:theta1 support floor stays above zero threshold :: min_support_abs_eig=0.00487308
+MEASURE: line mass:20x30:tanh:theta1 params=[1, 0.75, 0.5, 0.3, 0.25, 0.2, 0.15, 0.1, 0.05, 0.02, 0.01, 0] rank_changes=[1->112, 0.5->96, 0.3->84, 0.15->76, 0.05->60, 0.02->52] degenerate_params=[] sign_changes=[] raw_svd_orientation_flips=4 min_overlap_sv=0.98815359943 min_support_abs_eig=0.000678889150765 at 1 min_top_abs=0.0112356199771 at 1 rel_gap_above_min=0.0509133188416 rel_gap_below_max=0.0488800245716
+PASS: mass:20x30:tanh:theta1 has no degenerate mass point :: degenerate=[]
+PASS: mass:20x30:tanh:theta1 measured no same-rank transported sign flip :: sign_changes=[]
+PASS: mass:20x30:tanh:theta1 support floor stays above zero threshold :: min_support_abs_eig=0.000678889
+MEASURE: line mass:28x44:step:theta1 params=[1, 0.5, 0.25, 0.1, 0] rank_changes=[1->52, 0.1->56] degenerate_params=[] sign_changes=[] raw_svd_orientation_flips=0 min_overlap_sv=0.918418568129 min_support_abs_eig=0.00277310050697 at 1 min_top_abs=0.0190809097568 at 1 rel_gap_above_min=0.0505501932804 rel_gap_below_max=0.0493804031049
+PASS: mass:28x44:step:theta1 has no degenerate mass point :: degenerate=[]
+PASS: mass:28x44:step:theta1 measured no same-rank transported sign flip :: sign_changes=[]
+PASS: mass:28x44:step:theta1 support floor stays above zero threshold :: min_support_abs_eig=0.0027731
+MEASURE: line amplitude:20x30:step:m0.5 params=[0, 0.005, 0.01, 0.025, 0.05, 0.1, 0.2, 0.4, 0.8, 1.2, 1.57079632679] rank_changes=[0->0, 0.005->36] degenerate_params=[0] sign_changes=[] raw_svd_orientation_flips=6 min_overlap_sv=0.999015275399 min_support_abs_eig=0.000759078044147 at 0.005 min_top_abs=1.72304666754e-14 at 0 rel_gap_above_min=0.151990517095 rel_gap_below_max=0.017155345767
+PASS: amplitude:20x30:step:m0.5 has only the zero-amplitude degeneracy :: degenerate=[0]
+PASS: amplitude:20x30:step:m0.5 measured no positive-amplitude transported sign flip :: sign_changes=[]
+PASS: amplitude:20x30:step:m0.5 positive-amplitude support floor stays above zero threshold :: min_support_abs_eig=0.000759078
+MEASURE: line amplitude:20x30:tanh:m0.5 params=[0, 0.01, 0.05, 0.4, 1.57079632679] rank_changes=[0->0, 0.01->96, 0.4->100, 1.57079632679->120] degenerate_params=[0] sign_changes=[] raw_svd_orientation_flips=1 min_overlap_sv=0.996356487865 min_support_abs_eig=0.000252826045706 at 0.01 min_top_abs=1.72304666754e-14 at 0 rel_gap_above_min=0.0519395042023 rel_gap_below_max=0.0485561362778
+PASS: amplitude:20x30:tanh:m0.5 has only the zero-amplitude degeneracy :: degenerate=[0]
+PASS: amplitude:20x30:tanh:m0.5 measured no positive-amplitude transported sign flip :: sign_changes=[]
+PASS: amplitude:20x30:tanh:m0.5 positive-amplitude support floor stays above zero threshold :: min_support_abs_eig=0.000252826
+MEASURE: line amplitude:28x44:step:m0.5 params=[0, 0.01, 0.05, 0.4, 1.57079632679] rank_changes=[0->0, 0.01->52] degenerate_params=[0] sign_changes=[] raw_svd_orientation_flips=2 min_overlap_sv=0.995952886644 min_support_abs_eig=0.00106763249491 at 0.01 min_top_abs=2.76190949291e-14 at 0 rel_gap_above_min=0.106894391269 rel_gap_below_max=0.0171512031479
+PASS: amplitude:28x44:step:m0.5 has only the zero-amplitude degeneracy :: degenerate=[0]
+PASS: amplitude:28x44:step:m0.5 measured no positive-amplitude transported sign flip :: sign_changes=[]
+PASS: amplitude:28x44:step:m0.5 positive-amplitude support floor stays above zero threshold :: min_support_abs_eig=0.00106763
+MEASURE: line pair_direct:20x30:step_scale:m0.5 params=[1, 0.5, 0.1, 0, -0.1, -0.5, -1] rank_changes=[1->36, 0->0, -0.1->36] degenerate_params=[0] sign_changes=[] raw_svd_orientation_flips=3 min_overlap_sv=0.999998206602 min_support_abs_eig=0.000759078044147 at 0.1 min_top_abs=1.72304666754e-14 at 0 rel_gap_above_min=0.151990517095 rel_gap_below_max=0.0171553457671
+PASS: pair direct path exposes the trivial-point degeneration :: degenerate=[0] min_top=1.72305e-14
+PASS: pair direct nondegenerate segments have no same-rank transported sign flip :: sign_changes=[]
+MEASURE: line pair_tanh_detour:20x30:m0.5 params=[1, 0.8, 0.6, 0.4, 0.2, 0, -0.2, -0.4, -0.6, -0.8, -1] rank_changes=[1->36, 0.6->60, 0.4->76, 0.2->84, 0->96, -0.2->112, -0.4->104, -0.6->76, -0.8->36] degenerate_params=[] sign_changes=[] raw_svd_orientation_flips=1 min_overlap_sv=0.998015312072 min_support_abs_eig=0.000726786954796 at -0.4 min_top_abs=0.0125178850026 at -0.4 rel_gap_above_min=0.0519395042023 rel_gap_below_max=0.0493231659472
+PASS: pair_tanh_detour:20x30:m0.5 avoids the all-zero K_odd point :: degenerate=[] min_top=0.0125179
+PASS: pair_tanh_detour:20x30:m0.5 measured no same-rank transported sign flip :: sign_changes=[]
+PASS: pair_tanh_detour:20x30:m0.5 support floor stays above zero threshold :: min_support_abs_eig=0.000726787
+PASS: pair_tanh_detour:20x30:m0.5 relative support is not one fixed-rank line :: rank_changes=[1->36, 0.6->60, 0.4->76, 0.2->84, 0->96, -0.2->112, -0.4->104, -0.6->76, -0.8->36]
+MEASURE: line pair_tanh_detour:28x44:m0.5 params=[1, 0.5, 0, -0.5, -1] rank_changes=[1->52, 0.5->100, 0->144, -0.5->124, -1->52] degenerate_params=[] sign_changes=[] raw_svd_orientation_flips=0 min_overlap_sv=1 min_support_abs_eig=0.000655099530344 at -0.5 min_top_abs=0.0125055265823 at -0.5 rel_gap_above_min=0.051424842304 rel_gap_below_max=0.047404481736
+PASS: pair_tanh_detour:28x44:m0.5 avoids the all-zero K_odd point :: degenerate=[] min_top=0.0125055
+PASS: pair_tanh_detour:28x44:m0.5 measured no same-rank transported sign flip :: sign_changes=[]
+PASS: pair_tanh_detour:28x44:m0.5 support floor stays above zero threshold :: min_support_abs_eig=0.0006551
+PASS: pair_tanh_detour:28x44:m0.5 relative support is not one fixed-rank line :: rank_changes=[1->52, 0.5->100, 0->144, -0.5->124, -1->52]
+TOTAL: PASS=32, FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,17 @@
+loop_id: spin-statistics-fs-scope-20260612
+status: packaged_for_review
+created: 2026-06-12
+target_claim_id: spin_statistics_fs_admission_located_exercise_note_2026-06-06
+target_prior_audit_status: audited_conditional
+source_note: docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md
+runner: scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py
+runner_cache: logs/runner-cache/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.txt
+audit_blocker: "missing_bridge_theorem: either narrow the claim to the checked Cl(3)/topology/Record/positivity route boundaries, or add a retained bridge theorem closing the multi-loop graded-net route and the omitted no-go dependencies."
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/spin-statistics-fs-scope-20260612
+pr_url: null
+next_exact_action: "Reviewer should confirm that the FS exercise row is narrowed to runner-checked boundary facts and non-closing route portfolio context."

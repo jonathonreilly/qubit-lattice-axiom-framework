@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py
-runner_sha256: 3e6b08a118c32869faed4a9548ba075a72c3acffb8d106ccca6a4599165740a4
+runner_sha256: 6cbd769db70765e6d76bc23bfec8e7341612eff17eeec63fd06095b9c1f0ee99
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -32,8 +32,13 @@ status: ok
   [PASS] ROUTE (migration): emergent Lorentz -> standard spin-statistics theorem becomes available  --  migrates FS to the emergent-Lorentz/continuum frontier
   [PASS] NO route closes FS on the static {Lattice,Quantum,Record} baseline without a new principle  --  consistent with the 4 repo no-gos; no new axiom invented
 
+[BLOCK 5] Source-scope guards: route map is non-closing
+  [PASS] source note limits load-bearing scope to checked Cl(3), topology, and Record-boundary facts
+  [PASS] source note says route portfolio is not a closure theorem
+  [PASS] source note forbids CAR/spin-statistics closure and new axioms
+
 ========================================================================================
-SCORECARD:  PASS = 14   FAIL = 0
+SCORECARD:  PASS = 17   FAIL = 0
 ========================================================================================
 
 ----- stderr -----

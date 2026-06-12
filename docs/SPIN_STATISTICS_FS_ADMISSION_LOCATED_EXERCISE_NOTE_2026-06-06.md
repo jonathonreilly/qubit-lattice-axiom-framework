@@ -30,7 +30,7 @@ the cross-site exchange sign differs. The standard spin-statistics theorem needs
 Lorentz invariance + microcausality + positivity — the lattice lacks manifest
 Lorentz (`axiom_first_spin_statistics_theorem` is unaudited).
 
-## Verdict — FS is a genuine admission, precisely located (runner SCORECARD 14/14)
+## Verdict — FS is a genuine admission, precisely located (runner SCORECARD 17/17)
 
 All five exercise slices converge:
 
@@ -68,6 +68,30 @@ This is consistent with the four existing repo no-gos (`car_from_positivity`,
 `staggered_dirac_substep1_statistics_agnostic`, `ring_monodromy_does_not_force_car`,
 `FS_rotation_exchange_discrete_insufficiency`).
 
+## 2026-06-12 audited scope narrowing
+
+The load-bearing scope for re-audit is limited to the facts directly checked by
+the runner:
+
+1. the Cl(3) pseudoscalar is `i I`, squares to `-I`, and no nonzero `2 x 2`
+   operator anticommutes with all three Pauli generators;
+2. the exchange topology route supplies the order-two sign dichotomy
+   `{+1, -1}` but does not select the sign;
+3. the Record boundary used here is only that Record supplies no
+   within-sector exchange-sign datum once the retained central fermion-parity
+   label is in place.
+
+The route portfolio below is not a closure theorem. In particular, the
+multi-loop graded-net route is an open target, the continuum-migration route is
+conditional on a future Lorentz/microcausality bridge, and the `3 x 3 x 2`
+configuration-space witness remains a fan-out lead until independently
+re-verified. Literature and existing repo no-gos are comparator/context
+surfaces, not additional load-bearing proof steps in this note.
+
+Thus this note is a bounded location certificate for the present FS admission.
+It does not derive CAR, does not close spin-statistics, does not prove a
+multi-loop no-go, and does not add a new axiom.
+
 ## Route portfolio
 
 | Rank | Route | Outcome class | First artifact |
@@ -92,7 +116,8 @@ flagged for re-verification. No new axiom.
 ## Reprove-and-cite ledger
 
 - **Reproven here** (runner): `ω = i·I`, `ω² = −I`, only `G=0` anticommutes all
-  three Paulis; `Hom(Z₂,U(1)) = {±1}`; the route classifications.
+  three Paulis; `Hom(Z₂,U(1)) = {±1}`; and the source-scope guards that keep the
+  route portfolio non-closing.
 - **Cited**: the four repo no-gos; `fermion_parity_z2_grading_theorem` (retained);
   the graph-braid dichotomy (retained_bounded); the Record axiom boundary
   (`MINIMAL_AXIOMS_2026-06-05`); literature (Allen–Mondragon, DHR, Berry–Robbins,

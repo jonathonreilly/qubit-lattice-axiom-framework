@@ -50350,7 +50350,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02"
+      "to": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17"
     },
     {
       "from": "repo.front_door_status",
@@ -96685,7 +96685,7 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
+        "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
         "gellmann_completeness_theorem_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
         "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
@@ -96694,7 +96694,7 @@
         "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c426ef22130e9ad100f5b22379f3cb5fd00fb91cc37c4b3b15184cb4d5cf14a2",
+      "note_hash": "b086413259db1f079d536eebd7ecae21bec8c5e2482d65b5c6e8b5fbaa5dfead",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

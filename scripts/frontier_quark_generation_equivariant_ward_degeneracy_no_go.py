@@ -4,7 +4,7 @@
 This block-05 runner verifies the representation-theoretic boundary behind
 QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md.
 
-It checks that the retained hw=1 generation carrier is the S_3 three-point
+It checks that the explicit S_3 three-point generation carrier is the
 permutation representation A_1 + E, and that every S_3-equivariant Hermitian
 Ward endomorphism has commutant form a I + b J. Such an operator has one
 singlet eigenvalue and one doubly-degenerate E eigenvalue, so it cannot yield
@@ -138,6 +138,7 @@ def main() -> int:
         check(f"{path.name} exists", path.exists(), str(path.relative_to(ROOT)))
 
     new_text = read(new_note)
+    new_flat = " ".join(new_text.split())
     generation_text = read(generation_note)
     s3_text = read(s3_note)
     free_text = read(free_matrix_note)
@@ -151,6 +152,23 @@ def main() -> int:
     check("S3 support note identifies hw=1 as A_1 + E", "hw = 1" in s3_text and "A_1 + E" in s3_text)
     check("block01 free-matrix no-go is compatible", "does not fix" in free_text and "Y_u" in free_text and "Y_d" in free_text)
     check("new note forbids retained mass closure", "not claim retained" in new_text and "`m_b`" in new_text)
+    check(
+        "new note states no admitted context input for the load-bearing no-go",
+        "none for the load-bearing representation-theory" in new_flat
+        and "not a premise of the S3 commutant theorem" in new_flat,
+    )
+    check(
+        "new note has no markdown dependency edge to the open staggered gate",
+        "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)" not in new_text,
+    )
+    stale_gate_phrases = (
+        "this note depends on the **staggered-Dirac realization derivation target**",
+        "Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`",
+    )
+    check(
+        "new note does not state the open physical gate as load-bearing",
+        all(phrase not in new_text for phrase in stale_gate_phrases),
+    )
 
     print()
     print("B. S3 permutation representation on the generation triplet")

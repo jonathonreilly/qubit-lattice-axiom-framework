@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 215 |
+| **retained** | 216 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 853 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1456 |
+| unaudited | 1455 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1302 |
+| `audited_clean` | 1303 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1773 |
+| `unaudited` | 1772 |
 
 | claim_type | count |
 |---|---:|
@@ -80,9 +80,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 513 |
-| `high` | 509 |
-| `medium` | 870 |
-| `leaf` | 1349 |
+| `high` | 508 |
+| `medium` | 872 |
+| `leaf` | 1348 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -101,16 +101,16 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1565 | 132.61 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1036 | 64.02 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1037 | 64.02 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1396 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
-| 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
+| 5 | `key_terminology` | meta | critical | 1282 | 50.33 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1073 | 49.57 | `unaudited` | meta |
 | 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
-| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
-| 11 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 40.50 | `audited_clean` | **retained_bounded** |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 928 | 44.36 | `unaudited` | unaudited |
+| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 928 | 43.36 | `unaudited` | unaudited |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
+| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 797 | 39.14 | `audited_clean` | **retained_bounded** |
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1272 | 38.81 | `audited_clean` | **retained_bounded** |
@@ -118,7 +118,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 737 | 38.03 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1363 | 36.91 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1139 | 36.16 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 929 | 34.86 | `unaudited` | unaudited |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 930 | 34.86 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 728 | 33.01 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 725 | 31.50 | `unaudited` | unaudited |
@@ -588,6 +588,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gellmann_completeness_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -8239,6 +8240,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For any dominant weight (p,q), V_(p,q) occurs in Sym^p(3) tensor Sym^q(3bar) inside V^{tensor(p+q)} as the Cartan highest-weight component.  _(class `A`)_
 - **chain closes:** True — The tensor-power expansion of chi_V^n has nonnegative irreducible multiplicities, and the Cartan product gives a positive n=p+q contribution for every (p,q). The formal convolution statement is restricted to the algebraic dual of finite-character tests and does not assert analytic closure.
 - **rationale:** The all-weight positivity follows from finite-dimensional SU(3) representation algebra: chi_V^n is a tensor-power character with nonnegative multiplicities, and the Cartan highest-weight component supplies the strict positive witness. The runner checks arithmetic consequences and packet markers rather than independently decomposing tensor powers, so runner PASS is supporting evidence, not the sole basis for the verdict. The formal distribution dictionary is explicitly algebraic/formal and does not overclaim L2, continuity, positivity, or bounded-operator closure.
+- **auditor confidence:** high
+
+### `gellmann_completeness_theorem_note_2026-05-02`
+
+- **Note:** [`GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Purely algebraic claim that the eight normalized 3x3 Gell-Mann generators form a real basis of traceless Hermitian matrices, equivalently iT^a span su(3), with commutator closure in that basis; no physical SM color/gluon/QCD identification is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-235158-8d5fd2f6d7-gellmann_completeness_theore`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The space of 3x3 traceless Hermitian matrices has real dimension 8, so the real span of the 8 trace-orthonormal, linearly independent Gell-Mann generators is the full space.  _(class `A`)_
+- **chain closes:** True — Given the cited Hermiticity, tracelessness, and trace orthonormality, the Gram matrix is nonsingular and dimension counting gives a basis of the 8-dimensional real traceless-Hermitian space. The coefficient formula and commutator closure then follow from trace projection and the anti-Hermitian, traceless form of commutators.
+- **rationale:** The load-bearing argument is elementary linear algebra over the cited normalized Gell-Mann basis, with no fitted value, external comparator, or physical-color bridge imported. The runner hard-codes the standard Gell-Mann matrices and checks algebraic identities, so it supports class A rather than class C; the proof itself supplies the general dimension argument beyond the sampled reconstruction check. The parent's open physical SM-color identification is explicitly excluded from the audited scope, so the narrowed algebraic theorem closes.
 - **auditor confidence:** high
 
 ### `generation_axiom_boundary_note`

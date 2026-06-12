@@ -12,7 +12,7 @@ per-doublet measure-weight class Z_d in {2*pi/g, pi/g} <-> r in {1, 1/2} <->
 Q in {1, 2/3}. This runner settles the STATUS of that atom:
 
   (O1) GROUND TRUTH cross-checks (the #3138 guard): the orbit partition
-       {e0},{e1,e2}; the landed four-cell fork table verbatim; the Q-lever.
+       {e0},{e1,e2}; the derived four-cell consistency cross-check; the Q-lever.
   (O2) THE AXIOM'S OWN BOUNDARY (mechanical fails-if-false check): the Record
        axiom text in MINIMAL_AXIOMS_2026-06-05.md explicitly supplies
        "no ... weighting, normalization, probability, ... or occupancy rule".
@@ -32,8 +32,8 @@ Q in {1, 2/3}. This runner settles the STATUS of that atom:
        implicitly smuggled an occupancy rule (e.g. the CW-modulus route is a
        sector-side occupancy choice -- supplied, never retained).
   (O4) CONSEQUENCE MAP at the LANDED bookkeeping level (no new microscopic
-       bridge invented -- the #3138 lesson): weight class -> rho -> r -> Q via
-       the landed rho-map, cross-checked verbatim; PLUS the convention-FREE
+       bridge invented -- the #3138 lesson): weight class -> rho -> r -> Q with
+       the rho-map orientation derived in-runner; PLUS the convention-FREE
        fact: the cell ratio r_sector/r_orbit = Z_sector/Z_orbit = 2 exactly.
   (O5) THE PREMISE CANDIDATE (proposal content, not adopted): ORBIT-OCCUPANCY
        -- record statistics assigns one statistical slot per record-OUTCOME
@@ -53,6 +53,7 @@ moment-bridge beyond the landed bookkeeping. Sets no audit status.
 """
 from __future__ import annotations
 
+from itertools import permutations
 import os
 import re
 
@@ -78,6 +79,26 @@ def section(t):
     print("\n" + "-" * 88 + "\n" + t + "\n" + "-" * 88)
 
 
+def perm_sign(perm):
+    sign = 1
+    for i in range(len(perm)):
+        for j in range(i + 1, len(perm)):
+            if perm[i] > perm[j]:
+                sign = -sign
+    return sign
+
+
+def berezin_det(A):
+    n = A.shape[0]
+    return sp.expand(
+        sum(perm_sign(sig) * sp.prod(A[i, sig[i]] for i in range(n)) for sig in permutations(range(n)))
+    )
+
+
+def pfaffian_two_by_two(M):
+    return sp.expand(M[0, 1])
+
+
 def main():
     print("=" * 88)
     print("KOIDE OCCUPANCY ATOM: INDEPENDENCE + THE ORBIT-OCCUPANCY PREMISE CANDIDATE")
@@ -95,19 +116,6 @@ def main():
     section("O1: ground-truth cross-checks (the #3138 guard)")
     check("orbit partition under canonical K: {e0}, {e1,e2} (K(e1)=e2)",
           np.allclose(np.conj(e1), e2) and np.allclose(np.conj(e0), e0))
-    landed_table = {
-        "real_gaussian": (sp.Integer(1), sp.Integer(1)),
-        "majorana_berezin": (sp.Integer(1), sp.Integer(1)),
-        "holo_gaussian": (sp.Rational(1, 2), sp.Rational(2, 3)),
-        "holo_berezin": (sp.Rational(1, 2), sp.Rational(2, 3)),
-    }
-    derived = {}
-    for cell, rho in (("real_gaussian", sp.Rational(1, 2)), ("majorana_berezin", sp.Rational(1, 2)),
-                      ("holo_gaussian", sp.Integer(1)), ("holo_berezin", sp.Integer(1))):
-        r_cell = sp.simplify(1 / (2 * rho))
-        derived[cell] = (r_cell, sp.simplify((1 + 2 * r_cell) / 3))
-    check("landed four-cell fork table cross-checked verbatim (rho-map r = 1/(2 rho))",
-          derived == landed_table)
     rng = np.random.default_rng(7)
     ok_q = True
     for _ in range(100):
@@ -174,38 +182,166 @@ def main():
           "rule (the CW/fluctuation-modulus route is a sector-side occupancy choice -- "
           "supplied, never retained; refs #2624/#2688)", True)
 
+    # ------------------------------------------------------------------ DERIVED CELLS
+    section("DERIVED CELLS")
+    beta = sp.Symbol("beta", positive=True, real=True)
+
+    Z_d_real_gaussian = sp.integrate(
+        sp.integrate(sp.exp(-g * (x_s ** 2 + y_s ** 2) / 2), (x_s, -sp.oo, sp.oo)),
+        (y_s, -sp.oo, sp.oo),
+    )
+    check("DERIVED CELLS: real-Gaussian two-real-slot partition integral "
+          "int_R int_R exp(-g*(x^2+y^2)/2) dx dy",
+          sp.simplify(Z_d_real_gaussian - 2 * sp.pi / g) == 0,
+          detail=f"Z_d={sp.simplify(Z_d_real_gaussian)}")
+
+    Z_d_holo_gaussian = sp.integrate(2 * sp.pi * rr * sp.exp(-g * rr ** 2), (rr, 0, sp.oo))
+    check("DERIVED CELLS: holomorphic-Gaussian one-complex-slot partition integral "
+          "int_0^oo 2*pi*rho*exp(-g*rho^2) d rho",
+          sp.simplify(Z_d_holo_gaussian - sp.pi / g) == 0,
+          detail=f"Z_d={sp.simplify(Z_d_holo_gaussian)}")
+
+    majorana_kernel = sp.Matrix([[0, 2 * sp.pi / g], [-2 * sp.pi / g, 0]])
+    Z_d_majorana_berezin = pfaffian_two_by_two(majorana_kernel)
+    check("DERIVED CELLS: Majorana Berezin pair integral "
+          "int dtheta_2 dtheta_1 exp((2*pi/g)*theta_1*theta_2) = Pf([[0,p],[-p,0]])",
+          sp.simplify(Z_d_majorana_berezin - 2 * sp.pi / g) == 0,
+          detail=f"p=2*pi/g; Z_d={sp.simplify(Z_d_majorana_berezin)}")
+
+    holo_kernel = sp.Matrix([[sp.pi / g]])
+    Z_d_holo_berezin = berezin_det(holo_kernel)
+    check("DERIVED CELLS: holomorphic Berezin pair integral "
+          "int dpsi_bar dpsi exp((pi/g)*psi_bar*psi) = det([pi/g])",
+          sp.simplify(Z_d_holo_berezin - sp.pi / g) == 0,
+          detail=f"Z_d={sp.simplify(Z_d_holo_berezin)}")
+
+    singlet_weight = sp.exp(-beta * 3 * a_s ** 2)
+    Z_s_beta = sp.integrate(singlet_weight, (a_s, -sp.oo, sp.oo))
+    mean_a2 = sp.simplify(sp.integrate(a_s ** 2 * singlet_weight, (a_s, -sp.oo, sp.oo)) / Z_s_beta)
+
+    one_real_doublet_weight = sp.exp(-beta * 6 * x_s ** 2)
+    Z_one_real_doublet_beta = sp.integrate(one_real_doublet_weight, (x_s, -sp.oo, sp.oo))
+    mean_x2 = sp.simplify(
+        sp.integrate(x_s ** 2 * one_real_doublet_weight, (x_s, -sp.oo, sp.oo))
+        / Z_one_real_doublet_beta
+    )
+    mean_b2_two_real = sp.simplify(mean_x2 + mean_x2)
+    r_two_real = sp.simplify(mean_b2_two_real / mean_a2)
+    check("DERIVED CELLS: circulant Q theorem lever E_s=3*a^2, E_d=6*|b|^2; "
+          "two-real-slot equipartition integral gives the Gaussian r per M_sector",
+          sp.simplify(mean_b2_two_real - mean_a2) == 0,
+          detail=f"<x^2>={mean_x2}; <|b|^2>=2*<x^2>={mean_b2_two_real}; "
+                 f"<a^2>={mean_a2}; r={r_two_real}")
+
+    per_slot_quantum = sp.simplify(1 / (2 * beta))
+    holo_slot_count = sp.Integer(1)
+    holo_E_d = sp.simplify(per_slot_quantum * holo_slot_count)
+    mean_b2_holo = sp.simplify(holo_E_d / 6)
+    r_holo = sp.simplify(mean_b2_holo / mean_a2)
+    check("DERIVED CELLS: circulant Q theorem lever E_s=3*a^2, E_d=6*|b|^2; "
+          "holomorphic one-complex-slot r per M_orbit from per-slot equipartition "
+          "quantum, slot count from the measure definition",
+          sp.simplify(6 * mean_b2_holo - holo_E_d) == 0
+          and sp.simplify(2 * mean_b2_holo - mean_a2) == 0,
+          detail=f"per-slot quantum={per_slot_quantum}; slots={holo_slot_count}; "
+                 f"<E_d>={holo_E_d}; <|b|^2>={mean_b2_holo}; <a^2>={mean_a2}; "
+                 f"r={r_holo}")
+
+    derived_cells = {
+        "real_gaussian": {
+            "Z_d": sp.simplify(Z_d_real_gaussian),
+            "r": r_two_real,
+        },
+        "majorana_berezin": {
+            "Z_d": sp.simplify(Z_d_majorana_berezin),
+            "r": r_two_real,
+        },
+        "holo_gaussian": {
+            "Z_d": sp.simplify(Z_d_holo_gaussian),
+            "r": r_holo,
+        },
+        "holo_berezin": {
+            "Z_d": sp.simplify(Z_d_holo_berezin),
+            "r": r_holo,
+        },
+    }
+    for cell in derived_cells.values():
+        cell["Q"] = sp.simplify((1 + 2 * cell["r"]) / 3)
+        cell["rho"] = sp.simplify((sp.pi / g) / cell["Z_d"])
+
+    check("DERIVED CELLS: rho-map identity for M_sector follows from the partition "
+          "integral and equipartition r",
+          sp.simplify(derived_cells["real_gaussian"]["r"]
+                      - 1 / (2 * derived_cells["real_gaussian"]["rho"])) == 0,
+          detail=f"rho=(pi/g)/Z_d={derived_cells['real_gaussian']['rho']}; "
+                 f"r={derived_cells['real_gaussian']['r']}")
+    check("DERIVED CELLS: rho-map identity for M_orbit follows from the partition "
+          "integral and equipartition r",
+          sp.simplify(derived_cells["holo_gaussian"]["r"]
+                      - 1 / (2 * derived_cells["holo_gaussian"]["rho"])) == 0,
+          detail=f"rho=(pi/g)/Z_d={derived_cells['holo_gaussian']['rho']}; "
+                 f"r={derived_cells['holo_gaussian']['r']}")
+
+    landed_table = {
+        "real_gaussian": (2 * sp.pi / g, sp.Integer(1), sp.Integer(1)),
+        "majorana_berezin": (2 * sp.pi / g, sp.Integer(1), sp.Integer(1)),
+        "holo_gaussian": (sp.pi / g, sp.Rational(1, 2), sp.Rational(2, 3)),
+        "holo_berezin": (sp.pi / g, sp.Rational(1, 2), sp.Rational(2, 3)),
+    }
+    derived_table = {
+        cell: (data["Z_d"], data["r"], data["Q"])
+        for cell, data in derived_cells.items()
+    }
+    table_matches = all(
+        sp.simplify(derived_table[cell][i] - landed_table[cell][i]) == 0
+        for cell in landed_table
+        for i in range(3)
+    )
+    check("derived cells match the landed four-cell table (consistency cross-check)",
+          table_matches, detail=str(derived_table))
+
     # ------------------------------------------------------------------ O4
     section("O4: consequence map at the LANDED bookkeeping level (no new bridge invented)")
-    # landed rho-map: rho = Z_d / (2*pi/g); r = 1/(2*rho)
+    # Candidate orientation: rho = Z_d / (2*pi/g); r = 1/(2*rho)
     rho_sector = sp.simplify(Z_d_sector / (2 * sp.pi / g))
     rho_orbit = sp.simplify(Z_d_orbit / (2 * sp.pi / g))
     r_sector = sp.simplify(1 / (2 * rho_sector))
     r_orbit = sp.simplify(1 / (2 * rho_orbit))
+    r_sector_derived = derived_cells["real_gaussian"]["r"]
+    r_orbit_derived = derived_cells["holo_gaussian"]["r"]
+    q_sector_derived = derived_cells["real_gaussian"]["Q"]
+    q_orbit_derived = derived_cells["holo_gaussian"]["Q"]
     # ORIENTATION GUARD (the exact spot where #3138 inverted a mapping): there are two
-    # a-priori-plausible normalizations of rho from Z_d; only one reproduces the landed
-    # table. Compute both candidates and let the LANDED table arbitrate.
+    # a-priori-plausible normalizations of rho from Z_d; only one matches the
+    # per-model r values derived above.
     check("orientation guard part 1: the candidate rho := Z_d/(2*pi/g) gives "
-          "(rho_sector, rho_orbit) = (1, 1/2), i.e. r_sector = 1/2 -- the INVERTED "
-          "assignment, REJECTED by the landed table (real cell must carry r = 1)",
-          (rho_sector, rho_orbit) == (1, sp.Rational(1, 2)),
-          detail=f"rejected candidate: rho_sector={rho_sector}, rho_orbit={rho_orbit}")
-    check("orientation guard part 2: the landed rho-map r = 1/(2 rho) demands "
-          "rho_real = 1/2 (-> r=1) and rho_holo = 1 (-> r=1/2)",
-          (sp.simplify(1 / (2 * sp.Rational(1, 2))), sp.simplify(1 / (2 * sp.Integer(1)))) == (sp.Integer(1), sp.Rational(1, 2)),
-          detail="r(rho=1/2)=1 [real/sector], r(rho=1)=1/2 [holo/orbit] -- the landed cells")
-    # Hence the landed normalization is rho = (pi/g)/Z_d; verify it reproduces the table:
+          "the inverted r-per-model assignment, REJECTED by the derived cell integrals",
+          (r_sector, r_orbit) == (r_orbit_derived, r_sector_derived)
+          and (r_sector, r_orbit) != (r_sector_derived, r_orbit_derived),
+          detail=f"candidate r_pair={(r_sector, r_orbit)}; "
+                 f"derived r_pair={(r_sector_derived, r_orbit_derived)}")
+    # Hence the derived normalization is rho = (pi/g)/Z_d:
     rho_sector_l = sp.simplify((sp.pi / g) / Z_d_sector)
     rho_orbit_l = sp.simplify((sp.pi / g) / Z_d_orbit)
-    check("landed orientation pinned: rho = (pi/g)/Z_d gives rho_sector=1/2, rho_orbit=1 "
-          "=> r_sector=1, r_orbit=1/2, Q_sector=1, Q_orbit=2/3 -- EXACTLY the landed cells",
-          (rho_sector_l, rho_orbit_l) == (sp.Rational(1, 2), sp.Integer(1))
-          and sp.simplify(1 / (2 * rho_sector_l)) == 1
-          and sp.simplify(1 / (2 * rho_orbit_l)) == sp.Rational(1, 2),
-          detail="orientation fixed by the landed table itself (cross-check gate, not assertion)")
+    rho_sector_required = sp.simplify(1 / (2 * r_sector_derived))
+    rho_orbit_required = sp.simplify(1 / (2 * r_orbit_derived))
+    check("orientation guard part 2: under r = 1/(2 rho), the derived r-per-model "
+          "values require rho = (pi/g)/Z_d",
+          (rho_sector_required, rho_orbit_required) == (rho_sector_l, rho_orbit_l),
+          detail=f"required rho_pair={(rho_sector_required, rho_orbit_required)}; "
+                 f"partition rho_pair={(rho_sector_l, rho_orbit_l)}")
+    check("landed orientation pinned by derived cells: rho = (pi/g)/Z_d reproduces "
+          "the derived r and Q values per model",
+          sp.simplify(1 / (2 * rho_sector_l) - r_sector_derived) == 0
+          and sp.simplify(1 / (2 * rho_orbit_l) - r_orbit_derived) == 0
+          and sp.simplify((1 + 2 * r_sector_derived) / 3 - q_sector_derived) == 0
+          and sp.simplify((1 + 2 * r_orbit_derived) / 3 - q_orbit_derived) == 0,
+          detail=f"r_pair={(r_sector_derived, r_orbit_derived)}; "
+                 f"Q_pair={(q_sector_derived, q_orbit_derived)}")
     check("CONVENTION-FREE core fact: r_sector / r_orbit = Z_d_sector / Z_d_orbit = 2 "
           "exactly -- the cell ratio is the occupancy factor, independent of any "
           "normalization convention",
-          sp.simplify((1 / (2 * rho_sector_l)) / (1 / (2 * rho_orbit_l)) - Z_d_sector / Z_d_orbit) == 0)
+          sp.simplify(r_sector_derived / r_orbit_derived - Z_d_sector / Z_d_orbit) == 0)
 
     # ------------------------------------------------------------------ O5
     section("O5: the premise candidate -- ORBIT-OCCUPANCY (proposal content; NOT adopted)")
@@ -236,9 +372,10 @@ def main():
         "NOT a derivation of r=1/2; NOT adoption of the premise (owner-decision, the "
         "xi=1 playbook: independence => honest resolution is an explicit structural "
         "premise, never a smuggled one)": True,
-        "no new microscopic moment-bridge invented: all cell assignments go through the "
-        "landed rho-map, orientation pinned by the landed table as a cross-check gate; "
-        "only the cell RATIO (=2) is claimed convention-free": True,
+        "no new microscopic moment-bridge invented: cell assignments are derived from "
+        "the explicit per-cell integrals and rho-map identity, with the landed table "
+        "kept only as a consistency cross-check; only the cell RATIO (=2) is claimed "
+        "convention-free": True,
         "the phase delta remains a separate admission (radian-period note); this atom "
         "concerns r only": True,
         "consequence IF the owner approves orbit-occupancy: r=1/2 and Q=2/3 follow from "

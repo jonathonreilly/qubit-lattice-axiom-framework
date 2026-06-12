@@ -33,4 +33,4 @@ Results:
 - No new axiom.
 - No carrier realization or physical-family claim.
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3696

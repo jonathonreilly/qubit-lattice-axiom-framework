@@ -28,6 +28,7 @@ verification:
   - "python3 scripts/verify_cl3_sm_embedding.py -> PASS=95 FAIL=0"
   - "citation extraction for docs/CL3_TASTE_GENERATION_THEOREM.md -> s3_taste_cube_decomposition_note,minimal_axioms"
   - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py,scripts/verify_cl3_sm_embedding.py --force --concurrency 1 --push-mode none --allow-non-main -> ok=2"
-pr_status: pending
-next_exact_action: push branch and open review PR
-stop_condition: review PR opened or PR_BACKLOG updated if GitHub creation fails
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3696
+next_exact_action: await review/audit extraction
+stop_condition: review PR opened

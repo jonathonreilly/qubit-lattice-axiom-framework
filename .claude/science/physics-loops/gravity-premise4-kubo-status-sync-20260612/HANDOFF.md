@@ -2,6 +2,8 @@
 
 Branch: `physics-loop/gravity-premise4-kubo-status-sync-20260612`
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3716
+
 Target row:
 `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07`
 

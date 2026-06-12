@@ -23,6 +23,6 @@ no_go_routes:
   - "Do not treat the retained_bounded Kubo comparison packet as a supplier of the Fermat/eikonal bridge."
 trace_gate_classification: partial direct blocker closure
 review_findings: []
-pr_status: pending
-next_exact_action: "commit, push, open review PR"
-stop_condition: "this branch is complete once the PR is open and verified"
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3716"
+next_exact_action: "continue draining independent audited conditionals"
+stop_condition: "this branch is complete; continue campaign on the next independent row"

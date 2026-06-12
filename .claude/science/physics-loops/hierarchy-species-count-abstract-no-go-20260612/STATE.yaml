@@ -1,0 +1,19 @@
+loop: hierarchy-species-count-abstract-no-go-20260612
+status: ready_for_review
+current_goal: "Repair the hierarchy species-count no-go by making the load-bearing theorem abstract rather than dependent on imported regulator tables."
+target_claim_id: hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md
+  - scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py
+  - logs/runner-cache/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.txt
+open_imports:
+  - "B1/B2 remain witness/context if a downstream row wants the standard-regulator instantiation."
+  - "O1/O2/O3 substrate-specific closure routes remain open."
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py --force --concurrency 1 --push-mode none --allow-non-main"
+runner_result: "TOTAL: PASS=15 FAIL=0"
+

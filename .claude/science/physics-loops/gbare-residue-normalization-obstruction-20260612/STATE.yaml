@@ -1,0 +1,26 @@
+loop: gbare-residue-normalization-obstruction-20260612
+branch: physics-loop/gbare-residue-normalization-obstruction-20260612
+base: origin/main
+base_head: 23da867a5
+target_claim_id: g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "g_bare = 1 follows only if the H_unit-residue multiplier R(g_bare)=1 is supplied by a retained same-projected 1PI exhaustion theorem"
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+artifact_role: no_go
+files_touched:
+  - docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md
+  - scripts/frontier_gbare_same_1pi_admitted_residue_repair.py
+  - logs/runner-cache/frontier_gbare_same_1pi_admitted_residue_repair.txt
+  - .claude/science/physics-loops/gbare-residue-normalization-obstruction-20260612/
+open_imports:
+  - "Same-projected 1PI exhaustion theorem, equivalently R(g_bare)=1 for the H_unit residue on the off-surface family."
+closed_this_block:
+  - "The current retained packet cannot derive g_bare=1 from D17 scalar-singlet uniqueness plus canonical-surface agreement alone."
+verification:
+  - "python3 scripts/frontier_gbare_same_1pi_admitted_residue_repair.py => PASS=43 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_gbare_same_1pi_admitted_residue_repair.py --allow-non-main => ok 1, nonzero_exit 0"
+pr_status: pending
+next_exact_action: "Open review PR and hand to reviewer/auditor."
+stop_condition: "PR opened and verified."

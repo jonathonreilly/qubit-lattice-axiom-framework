@@ -21,6 +21,9 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md"
 AXIOM_NOTE = DOCS / "MINIMAL_AXIOMS_2026-06-05.md"
 STAGGERED_NOTE = DOCS / "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+UNORDERED_MULTISET_NOTE = (
+    DOCS / "UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md"
+)
 
 PASS = 0
 FAIL = 0
@@ -51,6 +54,8 @@ def main() -> int:
     note_flat = flat(note_text)
     axiom_text = AXIOM_NOTE.read_text(encoding="utf-8")
     axiom_flat = flat(axiom_text)
+    bridge_text = UNORDERED_MULTISET_NOTE.read_text(encoding="utf-8")
+    bridge_flat = flat(bridge_text)
 
     # Source-boundary checks: the note must be candidate-route, not registry edit.
     check(
@@ -68,6 +73,21 @@ def main() -> int:
         "source names the AC_phi_lambda conditional registrability bridge",
         "conditional on the registrable species surface being exactly the unordered mass multiset" in note_flat
         and "does not derive the magnitude `|delta| = 2/9`" in note_flat,
+    )
+    check(
+        "source cites the dedicated unordered-mass-multiset bridge without claiming retention",
+        UNORDERED_MULTISET_NOTE.name in note_text
+        and "dedicated source-side bridge for independent audit" in note_flat
+        and "without editing the Tier-A registry" in note_flat
+        and "does not enact that registry reduction" in note_flat
+        and "retained or confirmed as already supplied" not in note_text,
+    )
+    check(
+        "unordered-mass-multiset bridge supplies the registry consequence boundary",
+        "unordered-mass-multiset registrability bridge" in bridge_flat
+        and "enact any registry reduction" in bridge_flat
+        and "this note supplies the bridge theorem" in bridge_flat
+        and "derive `|delta| = 2/9`" in bridge_flat,
     )
     check(
         "source keeps audit status authority external",

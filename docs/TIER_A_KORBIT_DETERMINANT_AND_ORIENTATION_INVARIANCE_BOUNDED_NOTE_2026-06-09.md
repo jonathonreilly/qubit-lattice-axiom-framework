@@ -4,7 +4,9 @@
 lemma moved to its own note,
 `THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`,
 so the strong-CP route stands free of this note's staggered-gate dependency;
-the filename keeps the original title per the no-rename rule)
+the filename keeps the original title per the no-rename rule; 2026-06-12:
+the unordered-mass-multiset registrability bridge is now cited as a dedicated
+source-side bridge for independent audit, without editing the Tier-A registry)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome and does not edit the audit-lane-owned Tier-A
@@ -30,8 +32,10 @@ with its own runner; it is context for this note, not load-bearing.)
 
 It does not strip the `AC_phi_lambda` admission by itself, derive
 `|delta| = 2/9`, or change `docs/audit/data/tier_a_admissions.json`.
-Those moves require later registry/audit handling and any missing bridge named
-below.
+Those moves require later registry/audit handling. The previously missing
+unordered-mass-multiset registrability bridge is now supplied in
+`UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`;
+this note only composes with that source bridge as an audit candidate.
 
 ## Determinant Readout Lemma (Moved)
 
@@ -67,12 +71,17 @@ beyond the unordered multiset.
 
 ## Registry Consequence
 
-The only supported consequence is a candidate route for future Tier-A registry
-review:
+The only supported consequence is a candidate route for Tier-A registry
+review, conditional on independent review/audit of the bridge note named
+below:
 
 - `AC_phi_lambda`: the orientation lemma may help reduce the admission to a
-  magnitude-only atom only after the unordered-multiset registrability bridge is
-  retained or confirmed as already supplied by existing audited surfaces.
+  magnitude-only atom by composing the algebraic `delta -> -delta` invariance
+  here with the unordered-mass-multiset registrability bridge in
+  `UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`.
+  This source note still does not enact that registry reduction, and if an
+  audit target loads the staggered-Dirac gate authority itself, that authority
+  remains a separate dependency to drain.
 
 (The strong-CP theta consequence of the determinant lemma is stated in the
 moved note named above.)
@@ -87,11 +96,14 @@ or audit verdict is introduced here.
 - [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
   for the `AC_phi_lambda` gate surface on which the orientation lemma is
   stated.
+- [`UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`](UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md)
+  for the Record-registrability bridge needed by any registry-reduction
+  consequence; it is not needed for the narrow circulant conjugation identity
+  itself.
 
 Context (not load-bearing: both lemmas are self-contained algebra on their
 supplied classes — the determinant-character computation and the circulant
-conjugation identity — and use no content from the context note; the bridge
-that would supply the determinant-class readout is the named open above):
+conjugation identity — and use no content from the context note):
 
 - `KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md` for the
   determinant-orbit context.

@@ -2,7 +2,7 @@
 
 **Date:** 2026-04-19 (originally); 2026-05-04 (audited_renaming
 scope-narrow); 2026-06-11 (science-fix: current axiom-surface premise
-edge; T₃(e₃) sign repair)
+edge; T₃(e₃) sign repair); 2026-06-12 (focused runner-surface repair)
 **Status:** representation-theory theorem on the admitted abstract
 `C^8 = (C^2)^{\otimes 3}` taste cube. The hw=1 orbit gives **three
 Z₃-related generation-candidate labels** with the listed Y/T₃ spectra;
@@ -11,8 +11,10 @@ with **physical SM generations** is outside this theorem's load-bearing
 scope.
 **Claim type:** bounded_theorem
 **Claim boundary authority:** this note
-**Script:** `scripts/verify_cl3_sm_embedding.py` (section G);
-            `scripts/frontier_s3_action_taste_cube_decomposition.py` (independent crosscheck)
+**Primary runner:** `scripts/frontier_cl3_taste_generation_representation_scope.py`
+**Legacy crosschecks:** `scripts/frontier_s3_action_taste_cube_decomposition.py`
+for the S3 decomposition only; `scripts/verify_cl3_sm_embedding.py` section G
+is historical and no longer load-bearing for this scoped row.
 
 ---
 
@@ -57,6 +59,29 @@ reading. This repair keeps only the closed representation-theory surface:
    hence `T₃ = −1/2`, as both runners and every spectrum listing in
    this note (`{−1/2, +1/2, +1/2}`) already state. The per-state
    prose now matches the verified spectrum; no runner value changes.
+
+## Audit-driven runner-surface repair (2026-06-12)
+
+The 2026-06-11 source repair narrowed the prose to an abstract
+`C^8 = (C^2)^{\otimes 3}` representation theorem, but the note still
+named `scripts/verify_cl3_sm_embedding.py` as the primary runner. That
+script is a broad SM-embedding verifier with coupling, color, determinant,
+and physical-interpretation sections outside this row's narrowed scope.
+
+The primary runner is now
+[`scripts/frontier_cl3_taste_generation_representation_scope.py`](../scripts/frontier_cl3_taste_generation_representation_scope.py).
+It verifies exactly this row's load-bearing surface:
+
+- tensor-position `S3` representation on `C^8`;
+- `C^8 = 4 A1 + 0 A2 + 2 E`;
+- `hw=1 = A1 + E` and the `Z3` cyclic orbit of the three labels;
+- restricted `Y` and `T3` spectra on the `hw=1` sector;
+- source-boundary guards excluding staggered-Dirac carrier closure and
+  physical SM-generation identification.
+
+The older `verify_cl3_sm_embedding.py` section G and
+`frontier_s3_action_taste_cube_decomposition.py` remain useful crosschecks,
+but they are not the load-bearing packet for this claim row.
 
 ## Audit-driven dependency-edge rigorization (2026-05-10; refreshed 2026-06-11)
 
@@ -250,10 +275,17 @@ not derive a staggered-Dirac carrier from the framework.
 | hw=1 Y spectrum: {−1, +1/3, +1/3} | exact |
 | hw=1 T₃ spectrum: {−1/2, +1/2, +1/2} | exact |
 
+Primary verification:
+`scripts/frontier_cl3_taste_generation_representation_scope.py`
+(`TOTAL: PASS=51, FAIL=0`), with cache at
+`logs/runner-cache/frontier_cl3_taste_generation_representation_scope.txt`.
+
 Independent crosscheck: `scripts/frontier_s3_action_taste_cube_decomposition.py`
-produces identical decomposition (`TOTAL: PASS=57, FAIL=0` per its
-runner cache; the older "63/63" count referred to a superseded runner
-revision).
+produces the same abstract S3 decomposition (`TOTAL: PASS=57, FAIL=0` per
+its runner cache; the older "63/63" count referred to a superseded runner
+revision). The legacy `scripts/verify_cl3_sm_embedding.py` section G is
+historical context only and is not the primary audit packet for this
+narrowed row.
 
 ---
 

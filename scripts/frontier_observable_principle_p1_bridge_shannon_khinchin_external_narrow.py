@@ -59,8 +59,8 @@ def test_T1_cauchy_log_symbolic() -> None:
         diff == 0,
         f"sympy.simplify(lhs - rhs) = {diff}",
     )
-    # Also verify Cauchy's uniqueness up to constant: c*log satisfies the
-    # equation for any real c.
+    # Also verify that exact multiplicative-to-additive composition allows
+    # an arbitrary scale c but no additive offset.
     c = sp.Symbol("c", real=True)
     expr = c * sp.log(x * y) - c * sp.log(x) - c * sp.log(y)
     check(
@@ -68,10 +68,17 @@ def test_T1_cauchy_log_symbolic() -> None:
         sp.simplify(expr) == 0,
         f"sympy.simplify(c*log diff) = {sp.simplify(expr)}",
     )
+    b = sp.Symbol("b", real=True)
+    shifted = (c * sp.log(x * y) + b) - (c * sp.log(x) + b) - (c * sp.log(y) + b)
+    check(
+        "additive offset b is forbidden by exact additivity unless b=0",
+        sp.simplify(shifted) == -b,
+        f"shifted residual = {sp.simplify(shifted)}",
+    )
 
 
 def test_T2_cauchy_log_numerical_grid() -> None:
-    section("T2: Cauchy log uniqueness on rational grid (numerical)")
+    section("T2: Cauchy log equation on rational grid (numerical)")
     import math
     rationals = [Fraction(1, 2), Fraction(2, 1), Fraction(3, 7), Fraction(11, 5),
                  Fraction(13, 9), Fraction(1, 3)]
@@ -285,7 +292,7 @@ def test_T8_sensitivity_non_additive_alternatives() -> None:
     lhs = c * math.log(r1f * r2f)
     rhs = c * math.log(r1f) + c * math.log(r2f)
     check(
-        "c*log uniquely satisfies the multiplicative-to-additive equation",
+        "c*log satisfies the multiplicative-to-additive equation",
         abs(lhs - rhs) < 1e-12,
         f"lhs={lhs:.6f}, rhs={rhs:.6f}",
     )

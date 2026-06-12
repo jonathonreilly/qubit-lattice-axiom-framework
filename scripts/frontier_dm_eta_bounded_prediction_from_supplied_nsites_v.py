@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Runner: DM eta conditional support from supplied N_sites · v premise.
+"""Runner: DM eta conditional support from the local P_DM_ETA input packet.
 
 Audits the conditional bounded-support prediction note
 `docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md`
@@ -12,7 +12,7 @@ arithmetic elsewhere, the bounded prediction surface:
 2. Structural composed product N_sites · v = 16 · v ≈ 3940 GeV from the
    supplied composed-product premise (P2).
 3. Freeze-out-bypass identity eta = C · m_DM^2 with C as in (M0) under
-   the supplied premise packet (P1, P3-P7).
+   the local packet: supplied P1-P4 and P6-P7 plus retained_bounded P5.
 4. Central evaluation eta_pred(central) = 6.38e-10 at
    (x_F = 25, S_vis/S_dark = 1.59, alpha_X = alpha_LM).
 5. Bounded band eta_pred in [5.25e-10, 8.11e-10] over
@@ -20,7 +20,7 @@ arithmetic elsewhere, the bounded prediction surface:
 6. Central deviation +4.22% vs eta_obs = 6.12e-10.
 7. Falsifiable single-mass readout m_DM ≈ 3.94 TeV.
 8. Cross-check with ETA_188 structural decomposition consistency.
-9. Note-text recording of the named premise packet P1-P7.
+9. Note-text recording of the named local packet P1-P7.
 10. Note-text recording of the supplied composed-product (P2) as a
     candidate, not a retained dependency.
 
@@ -52,9 +52,9 @@ BIPARTITION_FNAME = (
     "HUBBLE_LANE5_C2_ATTACK_SURFACE_BIPARTITION_NARROW_THEOREM_NOTE_2026-05-27.md"
 )
 
-# Standard-physics constants and supplied premise packet inputs
+# Standard-physics constants and local packet inputs
 M_PL_GEV = 1.2209e19          # axiom-level Planck mass
-G_STAR = 106.75               # P5: SM effective DOF at EW/leptogenesis scale
+G_STAR = 106.75               # P5: retained_bounded SM finite-inventory count
 K_PREFACTOR = 1.07e9          # P6: Kolb-Turner kinematic prefactor [GeV^-1]
 BBN_COEFF_OMEGAB = 3.6515e-3  # P3: BBN coefficient Omega_b h^2 = coeff * eta_10
 ETA_OBS = 6.12e-10            # comparator only (Planck/BBN)
@@ -121,7 +121,7 @@ def eta_pred(
 # ---------------------------------------------------------------------------
 
 print("=" * 72)
-print("DM eta conditional support from supplied N_sites · v premise")
+print("DM eta conditional support from local P_DM_ETA input packet")
 print("=" * 72)
 
 print()
@@ -148,16 +148,35 @@ audit(
     "Status authority:** independent audit lane only" in note_text,
 )
 audit(
-    "Note records conditional support over supplied premise packet",
-    "conditional support over the supplied" in note_text,
+    "Note records conditional support over the P_DM_ETA input packet",
+    "conditional support over the\n`P_DM_ETA` input packet" in note_text
+    or "conditional support over the `P_DM_ETA` input packet" in note_text,
+)
+audit(
+    "Note records 2026-06-12 P5 retained-input repair",
+    "2026-06-12 P5 retained-input repair" in note_text,
 )
 audit(
     "Note records 2026-06-07 source-boundary repair",
     "2026-06-07 Source-Boundary and Rounding Repair" in note_text,
 )
 audit(
-    "Note records supplied P_DM_ETA packet",
+    "Note records P_DM_ETA packet",
     "P_DM_ETA = (" in note_text,
+)
+audit(
+    "P_DM_ETA records P5 as retained_bounded finite-inventory authority",
+    "P5: g_* = 106.75 (retained_bounded finite-inventory authority)" in note_text,
+)
+audit(
+    "Source cites retained_bounded SM finite-inventory authority for P5",
+    "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md" in note_text
+    and "retained_bounded finite-inventory" in note_text,
+)
+audit(
+    "Source no longer says g_* = 106.75 is supplied as P5",
+    "g_* = 106.75` is supplied as `P5" not in note_text
+    and "SM effective DOF `g_* = 106.75` | P5 supplied SM count" not in note_text,
 )
 audit(
     "Note records corrected exact central R ratio 1643/300",
@@ -495,11 +514,11 @@ audit(
 
 
 # ---------------------------------------------------------------------------
-# Section 8: note-text records named premise packet P1-P7
+# Section 8: note-text records named local input packet P1-P7
 # ---------------------------------------------------------------------------
 
 print()
-print("Section 8: note-text records named premise packet P1-P7")
+print("Section 8: note-text records named local input packet P1-P7")
 print("-" * 72)
 
 for p_label, marker in [
@@ -535,6 +554,12 @@ audit(
     "Note lists eta_188 authority under load-bearing dependencies",
     "## Load-bearing dependencies" in note_text
     and "ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md"
+    in note_text.split("## Load-bearing dependencies", 1)[1].split("## Audit-companion", 1)[0],
+)
+audit(
+    "Note lists retained_bounded SM_RELATIVISTIC_DOF authority under load-bearing dependencies",
+    "## Load-bearing dependencies" in note_text
+    and "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md"
     in note_text.split("## Load-bearing dependencies", 1)[1].split("## Audit-companion", 1)[0],
 )
 audit(

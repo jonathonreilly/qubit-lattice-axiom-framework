@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 860 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 39 |
-| unaudited | 1375 |
+| unaudited | 1374 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 56 |
+| ~~audited_conditional~~ | 57 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1314 |
-| `audited_conditional` | 56 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1692 |
+| `unaudited` | 1691 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 505 |
-| `high` | 505 |
-| `medium` | 870 |
+| `high` | 506 |
+| `medium` | 869 |
 | `leaf` | 1310 |
 
 - **Retained pending chain closure:** 17
@@ -101,29 +101,29 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1530 | 127.08 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1056 | 63.55 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1388 | 60.94 | `audited_clean` | **retained** |
-| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 881 | 59.28 | `unaudited` | unaudited |
-| 5 | `key_terminology` | meta | critical | 1215 | 50.25 | `unaudited` | meta |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 997 | 49.96 | `unaudited` | meta |
-| 7 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 969 | 45.42 | `unaudited` | unaudited |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 977 | 44.43 | `unaudited` | unaudited |
-| 9 | `plaquette_self_consistency_note` | bounded_theorem | critical | 953 | 42.40 | `audited_clean` | **retained_bounded** |
-| 10 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1037 | 41.52 | `audited_clean` | **retained** |
-| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1041 | 40.52 | `unaudited` | unaudited |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1354 | 39.40 | `audited_clean` | **retained** |
-| 13 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1294 | 38.84 | `audited_clean` | **retained_bounded** |
-| 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 791 | 38.63 | `audited_clean` | **retained_bounded** |
-| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 732 | 38.52 | `audited_clean` | **retained_no_go** |
-| 16 | `alpha_s_derived_note` | bounded_theorem | critical | 879 | 38.28 | `audited_conditional` | ~~audited_conditional~~ |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1057 | 63.55 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1389 | 60.94 | `audited_clean` | **retained** |
+| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 882 | 59.29 | `unaudited` | unaudited |
+| 5 | `key_terminology` | meta | critical | 1216 | 50.25 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 998 | 49.96 | `unaudited` | meta |
+| 7 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 970 | 45.42 | `unaudited` | unaudited |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 978 | 44.44 | `unaudited` | unaudited |
+| 9 | `plaquette_self_consistency_note` | bounded_theorem | critical | 954 | 42.40 | `audited_clean` | **retained_bounded** |
+| 10 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1038 | 41.52 | `audited_clean` | **retained** |
+| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1042 | 40.53 | `unaudited` | unaudited |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1355 | 39.41 | `audited_clean` | **retained** |
+| 13 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1295 | 38.84 | `audited_clean` | **retained_bounded** |
+| 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 792 | 38.63 | `audited_clean` | **retained_bounded** |
+| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 733 | 38.52 | `audited_clean` | **retained_no_go** |
+| 16 | `alpha_s_derived_note` | bounded_theorem | critical | 880 | 38.28 | `audited_conditional` | ~~audited_conditional~~ |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1359 | 36.91 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1107 | 36.11 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 980 | 34.94 | `unaudited` | unaudited |
-| 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 276 | 34.61 | `unaudited` | unaudited |
-| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 723 | 33.00 | `unaudited` | unaudited |
-| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 720 | 31.49 | `unaudited` | unaudited |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 850 | 31.23 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.84 | `unaudited` | unaudited |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1108 | 36.12 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 981 | 34.94 | `unaudited` | unaudited |
+| 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 277 | 34.62 | `unaudited` | unaudited |
+| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 724 | 33.00 | `unaudited` | unaudited |
+| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 721 | 31.50 | `unaudited` | unaudited |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 851 | 31.23 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 324 | 30.84 | `unaudited` | unaudited |
 | 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 188 | 30.56 | `audited_clean` | **retained** |
 
 
@@ -1461,6 +1461,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -6982,6 +6983,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The retained-bounded upstream supplies the continuum free Dirac kernel, and the claimed facts then follow by Clifford-algebra identities plus finite CAR occupancy algebra. No Wightman reconstruction, locality theorem, statistics-selection theorem, or interacting claim is needed for the audited scope.
 - **rationale:** The runner source performs substantive checks of the displayed algebra rather than merely printing constants: inverse/poles, Hamiltonian spectrum, spinor completeness and signs, finite CAR spectrum, and the raw negative-branch diagnostic. An independent algebra check gives the same factors and signs: (m+i gamma.p)(m-i gamma.p)=m^2+p^2, H_D^2=E^2 I with double +/-E degeneracy, ubar u=+2m and vbar v=-2m while Hilbert norms are 2E, and CAR occupancies are 0/1 so the relabeled finite spectrum is nonnegative. The only load-bearing upstream authority is retained_bounded and supplies exactly the bounded continuum kernel input used here; there is no external comparator or tuned numerical match.
 - **auditor confidence:** high
+
+### `free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`
+
+- **Note:** [`FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite one-mode CAR/Bose Hamiltonian reordering plus the claimed equal-time spinor projector identity for the supplied free massive Dirac mode algebra.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-021904-f5920ed213-free_dirac_car_positive_ener`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With H_hat = E a^dag a - E b b^dag, CAR gives b b^dag = 1 - b^dag b and hence a bounded H_hat = E a^dag a + E b^dag b up to the vacuum constant, while the equal-time claim uses sum_s(u_s u_s^dag + v_s v_s^dag) = I_4.  _(class `A`)_
+- **chain closes:** False — The CAR boundedness and Bose unboundedness close as finite algebraic reorderings. The equal-time I_4 identity does not close from the cited upstream u/v normalization without an explicit rescaling or field-normalization bridge, because the runner uses unit-norm eigenspinors while the cited authority states u^dag u = v^dag v = 2E.
+- **rationale:** The runner is not a print-only artifact: it constructs the finite Dirac Hamiltonian, number operators, projectors, and source-note guardrail checks. However, the load-bearing equal-time matrix identity is convention-sensitive. Under the cited authority's 2E-normalized spinor convention, the unweighted projector sum is not I_4; obtaining I_4 requires orthonormalized spinors or the corresponding 1/(2E) field-expansion normalization. The source note leaves CAR selection, spacelike microcausality, and OS/Wightman delivery open, but the displayed equal-time normalization bridge is still missing as written.
+- **open / conditional deps cited:**
+  - `FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md`
+- **auditor confidence:** medium
 
 ### `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`
 

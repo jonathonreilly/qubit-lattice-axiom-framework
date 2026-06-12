@@ -1,9 +1,23 @@
 # Native Teleportation Transport Theory Note
 
 **Date:** 2026-04-26
-**Status:** planning / candidate transport theory; not retained framework
+**Status:** open-gate / bounded algebraic support only; not retained framework
 promotion
 **Companion runner:** `scripts/frontier_teleportation_transport_invariants.py`
+
+actual_current_surface_status: open-gate / bounded algebraic support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: formal Pauli-frame transport consequences under
+supplied transport premises
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: >
+  T1-T6 are candidate transport premises, not new axioms or retained
+  physical-teleportation closure.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
 
 ## Scope
 
@@ -15,9 +29,13 @@ This note proposes a more structural interpretation:
 > It is trivialization of a discrete Pauli-frame connection on a retained
 > taste-qubit fiber, enabled by a classical 3D+1 record section.
 
-This is a candidate lane theory only. It does not promote teleportation beyond
-planning status and does not claim matter teleportation, mass transfer, charge
-transfer, energy transfer, object transport, or faster-than-light signaling.
+This is a candidate lane theory only. The transport clauses below are not new
+axioms and do not change the repo axiom count. They are supplied/open premises
+used to state finite Pauli-frame consequences and to name the physical bridges
+that a future closure would have to derive. The note does not promote
+teleportation beyond planning status and does not claim matter teleportation,
+mass transfer, charge transfer, energy transfer, object transport, or
+faster-than-light signaling.
 
 ## Geometric Object
 
@@ -47,7 +65,17 @@ retained fiber:   encoded taste-qubit state and Pauli frame
 Teleportation acts on the retained fiber of Bob's already-present register. It
 does not move the base ledger from Alice's site to Bob's site.
 
-## New Candidate Axioms
+## Candidate Transport Premises (not axioms)
+
+The labels T1-T6 below are a route vocabulary for the teleportation lane. They
+are not framework axioms, not proposed additions to `MINIMAL_AXIOMS`, and not
+retained physical bridge theorems. Their current role is:
+
+- T1/T2: bounded algebraic support through the retained-axis operator-algebra
+  closure (RALA), as recorded in the 2026-05-07 section below.
+- T3-T6: supplied/open physical-transport premises naming exactly which causal
+  record, apparatus, branch-record, loop-record, and preparation-calibration
+  bridges remain unclosed.
 
 ### T1. Base-Fiber Separation
 
@@ -164,7 +192,7 @@ needs a calibration law for how the Bell frame changes under native parameter
 variation, and a proof that any changes are either continuous within a sector,
 cross a diagnosed gap/degeneracy event, or become explicit records.
 
-## Derived Results
+## Formal Consequences Under Supplied Premises
 
 ### Theorem A: Missing-Record Twirl
 
@@ -252,6 +280,28 @@ This theory raises the closure bar. A future nature-grade package would need:
 
 Until those exist, the lane remains planning / candidate theory, even when the
 small-surface teleportation fidelity is high.
+
+## Audit Scope Firewall (2026-06-12)
+
+The current audit target is not native physical teleportation closure. It is
+the narrower open-gate boundary:
+
+```text
+Pauli-frame/base-fiber algebraic invariants are consistent under the stated
+transport premises; physical implementation remains unclosed.
+```
+
+The source and runner therefore enforce these boundaries:
+
+- T1/T2 may be cited only as bounded algebraic support through RALA.
+- T3-T6 remain supplied/open premises until independent source notes derive the
+  causal record carrier, durable Bell-record apparatus, loop-record protocol,
+  branch-record/readout model, and Bell-resource preparation/calibration.
+- A runner pass for this note is not a pass for native resource genesis,
+  physical Bell measurement, a field-theoretic record carrier, apparatus/noise
+  robustness, conservation-ledger derivation, object transport, or FTL-safe
+  communication theory beyond the finite Pauli-frame bookkeeping stated here.
+- No audit ledger row is retagged by this source note.
 
 ## Coordinated Algebraic Closure (2026-05-07)
 

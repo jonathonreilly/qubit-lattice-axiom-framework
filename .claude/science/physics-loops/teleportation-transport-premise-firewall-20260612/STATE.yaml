@@ -1,0 +1,20 @@
+loop_slug: teleportation-transport-premise-firewall-20260612
+date: 2026-06-12
+branch: physics-loop/teleportation-transport-premise-firewall-20260612
+base: origin/main
+target_claim_id: teleportation_native_transport_theory_note
+actual_current_surface_status: open-gate / bounded algebraic support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: source-firewall repair for T1-T6 premise wording and runner checks
+files_touched:
+  - docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md
+  - scripts/frontier_teleportation_transport_invariants.py
+  - logs/runner-cache/frontier_teleportation_transport_invariants.txt
+runner_status:
+  command: python3 scripts/frontier_teleportation_transport_invariants.py
+  result: PASS 10, FAIL 0
+precompute_status:
+  command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_teleportation_transport_invariants.py --allow-non-main
+  result: ok=1 nonzero_exit=0 timeout=0 error=0 missing=0
+next_exact_action: reviewer should decide whether this source firewall is enough to re-audit the row as an open-gate bounded algebraic artifact.

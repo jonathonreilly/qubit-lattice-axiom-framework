@@ -1,0 +1,180 @@
+===== runner cache v1 =====
+runner: scripts/frontier_susceptibility_density_identity_zero_2026_06_12.py
+runner_sha256: e8be7755c3b70a97e94fc5e7553c3da21d55d9a8d061469ec12647cc6c974df2
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 1.40
+status: ok
+----- stdout -----
+Y2 susceptibility density runner
+Bands E_pm(k)=pm sqrt(m^2 + 4 cos^2(k)); k in [-pi/2, pi/2]; chi_inf=(1/2pi) integral sum_pm.
+Y2 symbolic integration-by-parts identity
+PASS Y2 symbolic total-derivative residual vanishes: residual=0
+Y2a finite-N convergence
+Y2a mu_ch=0.00 m=0.40 T=0.30 chi_inf=+2.6062878639770486e-16 quad_err=1.076e-14
+  N= 8 chi_N=-1.9620233138358517e-01 abs_err=1.9620233138358542e-01
+  N=10 chi_N=-8.9134732472775868e-02 abs_err=8.9134732472776132e-02
+  N=12 chi_N=-3.9590725291383022e-02 abs_err=3.9590725291383286e-02
+  N=14 chi_N=-1.7207650339156381e-02 abs_err=1.7207650339156642e-02
+  N=16 chi_N=-7.3436271255155616e-03 abs_err=7.3436271255158218e-03
+  N=18 chi_N=-3.0876678982122551e-03 abs_err=3.0876678982125158e-03
+  N=20 chi_N=-1.2826009014265782e-03 abs_err=1.2826009014268388e-03
+  N=22 chi_N=-5.2751876490221181e-04 abs_err=5.2751876490247246e-04
+  N=24 chi_N=-2.1517844723689672e-04 abs_err=2.1517844723715736e-04
+  N=26 chi_N=-8.7164588465693527e-05 abs_err=8.7164588465954155e-05
+  N=28 chi_N=-3.5099954137878573e-05 abs_err=3.5099954138139202e-05
+  N=30 chi_N=-1.4062175473498565e-05 abs_err=1.4062175473759194e-05
+  N=32 chi_N=-5.6087274288574296e-06 abs_err=5.6087274291180582e-06
+  N=34 chi_N=-2.2283145977820094e-06 abs_err=2.2283145980426381e-06
+  N=36 chi_N=-8.8223314668548858e-07 abs_err=8.8223314694611734e-07
+  N=38 chi_N=-3.4821523381704141e-07 abs_err=3.4821523407767022e-07
+  N=40 chi_N=-1.3705897154991932e-07 abs_err=1.3705897181054810e-07
+PASS Y2a mu=0.00 N=40 endpoint below 1e-3: abs_err(N=40)=1.371e-07, chi_inf=+2.6062878639770486e-16
+PASS Y2a mu=0.00 N/2 even tail error decreasing: N=[20, 24, 28, 32, 36, 40], abs_err=['1.283e-03', '2.152e-04', '3.510e-05', '5.609e-06', '8.822e-07', '1.371e-07']
+PASS Y2a mu=0.00 N/2 even endpoint below 1e-3: N=40, abs_err=1.371e-07
+PASS Y2a mu=0.00 N/2 odd tail error decreasing: N=[22, 26, 30, 34, 38], abs_err=['5.275e-04', '8.716e-05', '1.406e-05', '2.228e-06', '3.482e-07']
+PASS Y2a mu=0.00 N/2 odd endpoint below 1e-3: N=38, abs_err=3.482e-07
+Y2a mu_ch=0.50 m=0.40 T=0.30 chi_inf=+1.3031439319885243e-16 quad_err=9.984e-15
+  N= 8 chi_N=+2.5219022895807797e-02 abs_err=2.5219022895807665e-02
+  N=10 chi_N=+4.2953632713705170e-02 abs_err=4.2953632713705038e-02
+  N=12 chi_N=+3.0571303585418198e-02 abs_err=3.0571303585418066e-02
+  N=14 chi_N=+1.6046588517285878e-02 abs_err=1.6046588517285746e-02
+  N=16 chi_N=+6.8316417652311001e-03 abs_err=6.8316417652309700e-03
+  N=18 chi_N=+2.3682596803191488e-03 abs_err=2.3682596803190187e-03
+  N=20 chi_N=+6.0712571332313117e-04 abs_err=6.0712571332300084e-04
+  N=22 chi_N=+5.3723801482285048e-05 abs_err=5.3723801482154733e-05
+  N=24 chi_N=-6.0814847289221895e-05 abs_err=6.0814847289352209e-05
+  N=26 chi_N=-5.3508681516596551e-05 abs_err=5.3508681516726865e-05
+  N=28 chi_N=-2.9334740782133955e-05 abs_err=2.9334740782264270e-05
+  N=30 chi_N=-1.2817865488153520e-05 abs_err=1.2817865488283834e-05
+  N=32 chi_N=-4.6550974407560952e-06 abs_err=4.6550974408864095e-06
+  N=34 chi_N=-1.3526967953079434e-06 abs_err=1.3526967954382577e-06
+  N=36 chi_N=-2.4942408436176874e-07 abs_err=2.4942408449208311e-07
+  N=38 chi_N=+2.9992448559811253e-08 abs_err=2.9992448429496862e-08
+  N=40 chi_N=+5.9713719047227448e-08 abs_err=5.9713718916913057e-08
+PASS Y2a mu=0.50 N=40 endpoint below 1e-3: abs_err(N=40)=5.971e-08, chi_inf=+1.3031439319885243e-16
+PASS Y2a mu=0.50 N/2 even tail error decreasing: N=[20, 24, 28, 32, 36, 40], abs_err=['6.071e-04', '6.081e-05', '2.933e-05', '4.655e-06', '2.494e-07', '5.971e-08']
+PASS Y2a mu=0.50 N/2 even endpoint below 1e-3: N=40, abs_err=5.971e-08
+PASS Y2a mu=0.50 N/2 odd tail error decreasing: N=[22, 26, 30, 34, 38], abs_err=['5.372e-05', '5.351e-05', '1.282e-05', '1.353e-06', '2.999e-08']
+PASS Y2a mu=0.50 N/2 odd endpoint below 1e-3: N=38, abs_err=2.999e-08
+Y2a mu_ch=1.00 m=0.40 T=0.30 chi_inf=+8.8348741151764360e-17 quad_err=7.992e-15
+  N= 8 chi_N=+1.3978780447298328e-01 abs_err=1.3978780447298320e-01
+  N=10 chi_N=+2.4516565102793365e-02 abs_err=2.4516565102793278e-02
+  N=12 chi_N=-1.3780851486418666e-02 abs_err=1.3780851486418754e-02
+  N=14 chi_N=-1.1604372910860392e-02 abs_err=1.1604372910860481e-02
+  N=16 chi_N=-3.7368078997739307e-03 abs_err=3.7368078997740192e-03
+  N=18 chi_N=-4.9424665030242368e-05 abs_err=4.9424665030330717e-05
+  N=20 chi_N=+5.6154281964388981e-04 abs_err=5.6154281964380145e-04
+  N=22 chi_N=+2.9009229809802542e-04 abs_err=2.9009229809793705e-04
+  N=24 chi_N=+6.0043291643866827e-05 abs_err=6.0043291643778478e-05
+  N=26 chi_N=-1.3334141142120957e-05 abs_err=1.3334141142209306e-05
+  N=28 chi_N=-1.5368106829941448e-05 abs_err=1.5368106830029797e-05
+  N=30 chi_N=-5.5961242476569122e-06 abs_err=5.5961242477452612e-06
+  N=32 chi_N=-5.2268999337079514e-07 abs_err=5.2268999345914385e-07
+  N=34 chi_N=+5.4295228146163681e-07 abs_err=5.4295228137328810e-07
+  N=36 chi_N=+3.3676500695486072e-07 abs_err=3.3676500686651196e-07
+  N=38 chi_N=+8.6300024360637452e-08 abs_err=8.6300024272288713e-08
+  N=40 chi_N=-5.4764514867411407e-09 abs_err=5.4764515750898816e-09
+PASS Y2a mu=1.00 N=40 endpoint below 1e-3: abs_err(N=40)=5.476e-09, chi_inf=+8.8348741151764360e-17
+PASS Y2a mu=1.00 N/2 even tail error decreasing: N=[20, 24, 28, 32, 36, 40], abs_err=['5.615e-04', '6.004e-05', '1.537e-05', '5.227e-07', '3.368e-07', '5.476e-09']
+PASS Y2a mu=1.00 N/2 even endpoint below 1e-3: N=40, abs_err=5.476e-09
+PASS Y2a mu=1.00 N/2 odd tail error decreasing: N=[22, 26, 30, 34, 38], abs_err=['2.901e-04', '1.333e-05', '5.596e-06', '5.430e-07', '8.630e-08']
+PASS Y2a mu=1.00 N/2 odd endpoint below 1e-3: N=38, abs_err=8.630e-08
+Y2b sign table of the density-limit object
+Y2b row m=0.20 T=0.15
+  mu_ch=0.00 chi_inf=+2.0320210464905801e-16 sign=ZERO quad_err=1.248e-14
+  mu_ch=0.25 chi_inf=+3.5339496460705743e-17 sign=ZERO quad_err=1.223e-14
+  mu_ch=0.50 chi_inf=-2.1203697876423444e-16 sign=ZERO quad_err=1.428e-14
+  mu_ch=0.75 chi_inf=+1.1485336349729365e-16 sign=ZERO quad_err=1.150e-13
+  mu_ch=1.00 chi_inf=-5.3009244691058611e-17 sign=ZERO quad_err=1.838e-14
+  mu_ch=1.25 chi_inf=-1.0601848938211722e-16 sign=ZERO quad_err=7.742e-15
+  mu_ch=1.50 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=5.440e-14
+Y2b row m=0.20 T=0.30
+  mu_ch=0.00 chi_inf=+5.3009244691058611e-17 sign=ZERO quad_err=1.125e-14
+  mu_ch=0.25 chi_inf=+1.0601848938211722e-16 sign=ZERO quad_err=1.098e-14
+  mu_ch=0.50 chi_inf=+7.5096429978999701e-17 sign=ZERO quad_err=1.024e-14
+  mu_ch=0.75 chi_inf=+3.5339496460705743e-17 sign=ZERO quad_err=9.227e-15
+  mu_ch=1.00 chi_inf=+1.4135798584282297e-16 sign=ZERO quad_err=7.953e-15
+  mu_ch=1.25 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=6.543e-15
+  mu_ch=1.50 chi_inf=-3.5339496460705743e-17 sign=ZERO quad_err=1.537e-14
+Y2b row m=0.20 T=0.60
+  mu_ch=0.00 chi_inf=+7.0678992921411486e-17 sign=ZERO quad_err=8.562e-15
+  mu_ch=0.25 chi_inf=+1.4135798584282297e-16 sign=ZERO quad_err=8.408e-15
+  mu_ch=0.50 chi_inf=+7.0678992921411486e-17 sign=ZERO quad_err=7.975e-15
+  mu_ch=0.75 chi_inf=+1.4135798584282297e-16 sign=ZERO quad_err=7.311e-15
+  mu_ch=1.00 chi_inf=+3.5339496460705743e-17 sign=ZERO quad_err=6.486e-15
+  mu_ch=1.25 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=5.570e-15
+  mu_ch=1.50 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=4.625e-15
+Y2b row m=0.40 T=0.15
+  mu_ch=0.00 chi_inf=+8.8348741151764360e-17 sign=ZERO quad_err=1.278e-13
+  mu_ch=0.25 chi_inf=+1.0601848938211722e-16 sign=ZERO quad_err=1.146e-14
+  mu_ch=0.50 chi_inf=-1.7669748230352872e-16 sign=ZERO quad_err=1.110e-14
+  mu_ch=0.75 chi_inf=+1.4577542290041119e-16 sign=ZERO quad_err=1.539e-13
+  mu_ch=1.00 chi_inf=+9.0557459680558468e-17 sign=ZERO quad_err=9.532e-14
+  mu_ch=1.25 chi_inf=-8.8348741151764360e-17 sign=ZERO quad_err=7.991e-15
+  mu_ch=1.50 chi_inf=-8.8348741151764357e-18 sign=ZERO quad_err=3.093e-14
+Y2b row m=0.40 T=0.30
+  mu_ch=0.00 chi_inf=+2.6062878639770486e-16 sign=ZERO quad_err=1.076e-14
+  mu_ch=0.25 chi_inf=+4.8591807633470396e-17 sign=ZERO quad_err=1.056e-14
+  mu_ch=0.50 chi_inf=+1.3031439319885243e-16 sign=ZERO quad_err=9.984e-15
+  mu_ch=0.75 chi_inf=+5.3009244691058611e-17 sign=ZERO quad_err=9.100e-15
+  mu_ch=1.00 chi_inf=+8.8348741151764360e-17 sign=ZERO quad_err=7.992e-15
+  mu_ch=1.25 chi_inf=-1.7669748230352871e-17 sign=ZERO quad_err=6.628e-15
+  mu_ch=1.50 chi_inf=-3.5339496460705743e-17 sign=ZERO quad_err=1.270e-14
+Y2b row m=0.40 T=0.60
+  mu_ch=0.00 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=8.407e-15
+  mu_ch=0.25 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=8.264e-15
+  mu_ch=0.50 chi_inf=+7.0678992921411486e-17 sign=ZERO quad_err=7.866e-15
+  mu_ch=0.75 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=7.245e-15
+  mu_ch=1.00 chi_inf=+3.5339496460705743e-17 sign=ZERO quad_err=6.462e-15
+  mu_ch=1.25 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=5.580e-15
+  mu_ch=1.50 chi_inf=+3.5339496460705743e-17 sign=ZERO quad_err=4.659e-15
+Y2b row m=1.00 T=0.15
+  mu_ch=0.00 chi_inf=+4.4174370575882179e-18 sign=ZERO quad_err=8.733e-15
+  mu_ch=0.25 chi_inf=+3.5339496460705743e-17 sign=ZERO quad_err=8.732e-15
+  mu_ch=0.50 chi_inf=+7.0678992921411486e-17 sign=ZERO quad_err=8.724e-15
+  mu_ch=0.75 chi_inf=+1.3694054878523476e-16 sign=ZERO quad_err=8.680e-15
+  mu_ch=1.00 chi_inf=-1.7669748230352871e-17 sign=ZERO quad_err=8.526e-15
+  mu_ch=1.25 chi_inf=-3.5339496460705743e-17 sign=ZERO quad_err=1.767e-14
+  mu_ch=1.50 chi_inf=-3.5339496460705743e-17 sign=ZERO quad_err=6.922e-15
+Y2b row m=1.00 T=0.30
+  mu_ch=0.00 chi_inf=+7.0678992921411486e-17 sign=ZERO quad_err=2.862e-14
+  mu_ch=0.25 chi_inf=+8.6140022622970240e-17 sign=ZERO quad_err=1.420e-13
+  mu_ch=0.50 chi_inf=-1.3252311172764653e-17 sign=ZERO quad_err=8.440e-15
+  mu_ch=0.75 chi_inf=+7.0678992921411486e-17 sign=ZERO quad_err=8.140e-15
+  mu_ch=1.00 chi_inf=-1.7669748230352871e-17 sign=ZERO quad_err=7.613e-15
+  mu_ch=1.25 chi_inf=+1.7669748230352871e-17 sign=ZERO quad_err=6.796e-15
+  mu_ch=1.50 chi_inf=+5.3009244691058611e-17 sign=ZERO quad_err=5.892e-15
+Y2b row m=1.00 T=0.60
+  mu_ch=0.00 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=7.499e-15
+  mu_ch=0.25 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=7.420e-15
+  mu_ch=0.50 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=7.181e-15
+  mu_ch=0.75 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=6.785e-15
+  mu_ch=1.00 chi_inf=+7.0678992921411486e-17 sign=ZERO quad_err=6.245e-15
+  mu_ch=1.25 chi_inf=+0.0000000000000000e+00 sign=ZERO quad_err=5.582e-15
+  mu_ch=1.50 chi_inf=+7.0678992921411486e-17 sign=ZERO quad_err=4.832e-15
+PASS Y2b full table uniformly ZERO to stated precision: max_abs=2.606e-16, tol=5.0e-13, observed_labels=['ZERO']
+PASS Y2b no positive density-limit entries above tolerance: largest=2.606e-16, tol=5.0e-13
+PASS Y2b no negative density-limit entries below tolerance: smallest=-2.120e-16, tol=5.0e-13
+Y2c particle-hole point mu_ch=0
+  m=0.20 T=0.15 chi_inf(mu=0)=+2.0320210464905801e-16 sign=ZERO
+  m=0.20 T=0.30 chi_inf(mu=0)=+5.3009244691058611e-17 sign=ZERO
+  m=0.20 T=0.60 chi_inf(mu=0)=+7.0678992921411486e-17 sign=ZERO
+  m=0.40 T=0.15 chi_inf(mu=0)=+8.8348741151764360e-17 sign=ZERO
+  m=0.40 T=0.30 chi_inf(mu=0)=+2.6062878639770486e-16 sign=ZERO
+  m=0.40 T=0.60 chi_inf(mu=0)=+0.0000000000000000e+00 sign=ZERO
+  m=1.00 T=0.15 chi_inf(mu=0)=+4.4174370575882179e-18 sign=ZERO
+  m=1.00 T=0.30 chi_inf(mu=0)=+7.0678992921411486e-17 sign=ZERO
+  m=1.00 T=0.60 chi_inf(mu=0)=+0.0000000000000000e+00 sign=ZERO
+PASS Y2c particle-hole envelope limit is ZERO to stated precision: max_abs_mu0=2.606e-16, tol=5.0e-13
+Y2d independent quadrature validation
+  m=0.40 mu_ch=0.00 T=0.30 quad=+2.6062878639770486e-16 gauss=+3.9262518204078584e-15 diff=3.666e-15 quad_err=1.076e-14
+PASS Y2d quad-vs-gauss agreement m=0.40 mu=0.00 T=0.30: diff=3.666e-15, tol=1.0e-10
+  m=0.20 mu_ch=1.25 T=0.15 quad=-1.0601848938211722e-16 gauss=-1.4153764443094158e-15 diff=1.309e-15 quad_err=7.742e-15
+PASS Y2d quad-vs-gauss agreement m=0.20 mu=1.25 T=0.15: diff=1.309e-15, tol=1.0e-10
+  m=1.00 mu_ch=0.75 T=0.60 quad=+0.0000000000000000e+00 gauss=+1.5841633696023552e-16 diff=1.584e-16 quad_err=6.785e-15
+PASS Y2d quad-vs-gauss agreement m=1.00 mu=0.75 T=0.60: diff=1.584e-16, tol=1.0e-10
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

@@ -4,7 +4,7 @@
 **Status:** conditional supplied-premise interval support
 **Type:** conditional / support
 **Date:** 2026-04-17  
-**Date of scope repair:** 2026-05-30
+**Date of scope repair:** 2026-05-30; compute repair: 2026-06-11
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
 **Script:** `scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py`
 
@@ -109,6 +109,18 @@ layer itself.
 ```bash
 python3 scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
 ```
+
+## 2026-06-11 Compute Repair
+
+The theorem runner previously passed but could exceed the audit inventory's
+60-second health ceiling because the shared thermal helper evaluated finite
+Meijer-G series through `mp.nsum` at 80 decimal digits. The helper now evaluates
+the same finite positive-series partial sums by explicit finite `mp.fsum`
+loops at 60 decimal digits. The printed certified endpoints, bracketing
+inequalities, and root interval are unchanged at the displayed precision, while
+the runner clears the audit timeout. This is a compute repair only; it does not
+alter the supplied-premise boundary or derive the live-DM constants / selector
+premises.
 
 ## Audit Dependency And Supplied-Premise Links
 

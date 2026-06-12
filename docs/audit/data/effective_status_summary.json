@@ -10,7 +10,7 @@
   "cycle_examples": [],
   "cycles_detected": 0,
   "effective_status_counts": {
-    "audited_conditional": 53,
+    "audited_conditional": 54,
     "audited_numerical_match": 14,
     "audited_renaming": 34,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
@@ -47,7 +47,7 @@
     "retained_bounded": 856,
     "retained_no_go": 209,
     "retained_pending_chain": 17,
-    "unaudited": 1385
+    "unaudited": 1384
   },
   "retained_pending_chain_count": 17,
   "retained_pending_chain_examples": [

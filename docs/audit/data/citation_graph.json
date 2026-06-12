@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07",
         "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
         "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
         "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
         "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
-        "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17"
+        "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
+        "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2caaf35cff6afc8642536b827f25179d04369c6da33ac9882bc729a301c975a9",
+      "note_hash": "d08aae2b8733272c4a5d82fb834cbf93876c43353d0a23c59b70ceb59ce0f89d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

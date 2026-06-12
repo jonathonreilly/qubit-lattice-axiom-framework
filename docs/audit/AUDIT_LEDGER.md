@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 856 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1385 |
+| unaudited | 1384 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 54 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1307 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1702 |
+| `unaudited` | 1701 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 505 |
 | `high` | 506 |
-| `medium` | 869 |
-| `leaf` | 1310 |
+| `medium` | 870 |
+| `leaf` | 1309 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -1459,6 +1459,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9335,6 +9336,21 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The monotonicity-based integer uniqueness: (eta(s)/zeta(s))^(1/s) = (7/8)^(1/4) among integer s >= 2 iff s = 4.  _(class `A`)_
 - **chain closes:** True — The eta/zeta identity follows from the odd-even splitting of the absolutely convergent series. Strict monotonicity closes by the log-series comparison with u=2^(-s), since each right-side term (s+1)(2u)^k/k exceeds s u^k/k, and uniqueness at s=4 follows immediately.
 - **rationale:** Independent of the runner, the displayed load-bearing math checks out: g(s+1)>g(s) reduces to s[-log(1-u)] < (s+1)[-log(1-2u)] with u=2^(-s), and the Taylor-series terms compare strictly for every k >= 1 and integer s >= 2. The value g(4)=(1-2^(-3))^(1/4)=(7/8)^(1/4) is exact, so monotonicity gives the claimed integer uniqueness. The dimensional-analysis component is only the exponent bookkeeping [f]=d -> f^(1/d), not an imported framework observable or numerical comparator.
+- **auditor confidence:** high
+
+### `hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06`
+
+- **Note:** [`HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md`](../../docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-algebra audit of the AC_phi_lambda two-bit decomposition: Berezin determinant exponent, block-weight arithmetic, J_cs measure neutrality, and the two stated orthogonality facts, excluding any closure of the Bit B selector or r=1/2 forcing.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-014800-a6365f2e11-hierarchy_koide_acphilambda_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The gate separates into a determinant-power statistics bit and a discrete block-weight selector bit: det(M)^{+1} fixes only Bit A, while Bit B is the algebraic choice (1,1)->r=1/2 versus (1,2)->r=1 and J_cs is measure-neutral rather than selecting count-once.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the displayed finite identities close by algebra: the weight formula gives the two r values, J_cs has spectrum {0,i,-i} with det(exp(theta J_cs))=1, g_bare cancels identically, and the circulant/chirality intersection is zero. This does not close the parent AC_phi_lambda gate or supply the missing J_cs-holomorphic bilinear selector.
+- **rationale:** The load-bearing content is algebraic, and the runner source mostly performs the relevant symbolic finite-matrix checks; an independent manual check of the key factors and signs agrees. One printed bosonic-exponent line is essentially a hard-coded contrast, but it is not load-bearing for the scoped claim. The row is still conditional because it depends on the supplied AC_phi_lambda/staggered-Dirac realization parent authority, which is marked unaudited, and the Bit B selector remains explicitly open.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10`

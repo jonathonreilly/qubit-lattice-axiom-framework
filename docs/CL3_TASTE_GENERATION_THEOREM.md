@@ -47,6 +47,11 @@ the audit lane's own queue and is not actionable from this note):
    this note (`{−1/2, +1/2, +1/2}`) already state. The per-state
    prose now matches the verified spectrum; no runner value changes.
 
+3. **Registered Tier-A routing added (2026-06-11, same revision).**
+   The carrier reading is routed into the registered Tier-A target
+   (section below), preserving the audit lane's abstract-`C^8`
+   narrowing option.
+
 ## Audit-driven dependency-edge rigorization (2026-05-10)
 
 The 2026-05-05 audit verdict on this row was `audited_conditional`
@@ -279,6 +284,49 @@ revision).
   ([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md): Z³
   substrate plus one-qubit-per-site local algebra); the physical
   identification remains deferred as stated above
+
+## Registered Tier-A routing (2026-06-11; audit-requested repair)
+
+The 2026-06-11 conditional audit's recorded repair target was:
+"dependency_not_retained: retain or replace
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` for the
+taste-carrier dependency, or narrow this row to a purely abstract `C^8`
+representation theorem." This section takes the registered routing form
+of that repair: the carrier dependency is routed explicitly into the
+registered Tier-A derivation target, so the citation graph carries a
+registered admission rather than an unregistered conditional blocker.
+
+1. **The algebra is standalone.** The load-bearing computations of this
+   note close as pure finite representation theory with no carrier
+   input: the S3 character decomposition `C^8 = 4A1 + 0A2 + 2E`, the
+   `hw=1` sector as the `A1 + E` permutation representation, the Z3
+   orbit `e1 -> e2 -> e3 -> e1`, and the restricted `Y/T3` spectra
+   `{+1/3, +1/3, -1}` and `{-1/2, +1/2, +1/2}`. The existing runners
+   verify these facts without consuming any fermion content.
+2. **What the carrier admission carries.** Only the identification of
+   `C^8 = (C^2)^{⊗3}` as the staggered-Dirac BZ-corner taste cube (the
+   framework-carrier reading) consumes the realization. The
+   physical-generation identification is separately deferred; the
+   existing "Physical-generation identification" section governs that
+   bridge unchanged.
+3. **The admission is a registered Tier-A target.** The canonical
+   parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the
+   registered Tier-A derivation target `AC_phi_lambda` (display
+   `AC_φλ`) in `docs/audit/data/tier_a_admissions.json`. This note
+   routes the carrier reading **into** that registered target; it does
+   **not** close the gate. Under the published chain rule
+   `docs/audit/scripts/compute_effective_status.py`, a clean
+   `bounded_theorem` row whose only non-retained, non-axiom one-hop
+   dependency is a registered Tier-A derivation target is a candidate
+   for the Tier-A-bounded class rather than an unregistered conditional
+   blocker.
+4. **No status assertion.** This section makes the narrow re-audit case
+   only. The audit lane is the sole authority on whether to honor it;
+   this note asserts no `effective_status` and predicts no audit
+   outcome. The audit's alternative narrowing route ("narrow to a purely
+   abstract `C^8` representation theorem") remains available to the
+   audit lane; this routing preserves the carrier-named reading while
+   registering the admission.
 
 ## What Remains Bounded
 

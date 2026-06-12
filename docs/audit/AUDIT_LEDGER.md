@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 856 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1389 |
+| unaudited | 1388 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1304 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1706 |
+| `unaudited` | 1705 |
 
 | claim_type | count |
 |---|---:|
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 720 | 31.49 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 850 | 31.23 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.84 | `unaudited` | unaudited |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 179 | 30.49 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 188 | 30.56 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1447,6 +1447,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5544,6 +5545,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On seed 42, the primary runner's matter-coupled growth rule produces a grown graph with higher effective dimension and much higher peak shell-bin density than the uniform-growth control.  _(class `C`)_
 - **chain closes:** True — The included runner source actually constructs both graphs, evolves the matter field for the coupled case, applies the |psi|^2-biased parent selection, and computes the reported shell-volume and density metrics. The cached output supports the narrowed qualitative claim on this seed.
 - **rationale:** The narrowed load-bearing claim is not the broader multi-seed or gravitational-closure story; it is the single-seed primary-runner comparison. The runner does not merely print constants or import the contested conclusion: it computes the grown graph and control from fixed rules and reports d_eff = 1.64 versus 1.55 and peak shell-bin density about 72 versus 11. The broader companion-runner claims are explicitly scoped as support diagnostics and are not needed for this audited claim.
+- **auditor confidence:** high
+
+### `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`
+
+- **Note:** [`EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic packet: from the supplied one-loop velocity-RG equations plus the stated structural symmetry/normalization premises, the runner-supported consequences are difference-mode attraction, O_h one-scalar spatial reduction, and the illustrative RG damping form, without solving the Collins power-divergent naturalness residual.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-013927-feb973b0fc-emergent_lorentz_interacting`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied one-loop velocity RG, d(v_F - v_b)/dl = -(C_F + C_B N_f) alpha (v_F - v_b), so the velocity-difference mode is IR-attractive; with O_h reducing spatial renormalization to one scalar and canonical time fixing c_t, the remaining anisotropy is one conditional IR-attractive scalar.  _(class `A`)_
+- **chain closes:** False — The algebraic manipulations in the restricted packet check out: the difference-mode sign, O_h invariant-tensor dimension, and damping exponent follow from the supplied equations. The full chain from retained one-hop authorities does not close because the one-loop velocity dynamics, spatial-only power-divergent mixing context, and physical fixed-point gamma are stipulated rather than derived or supplied by retained authority in the packet.
+- **rationale:** The load-bearing math is class A algebra over supplied inputs, not a first-principles compute from the framework baseline. Independent checks confirm the displayed RG sign and factors, the one-dimensional O_h invariant symmetric-tensor space, and the numerical damping estimate for the runner's chosen alpha and hierarchy. However, the source note explicitly relies on supplied one-loop dynamics and supplied power-divergent mixing/power-counting context, while also leaving the physical gamma and coefficient open; those are not closed by the restricted one-hop packet.
 - **auditor confidence:** high
 
 ### `emergent_lorentz_invariance_note`

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py
-runner_sha256: a1a4b3cb7e08ccc7324945ad351645239a58fe0b0c19891852bf153f43592f3c
+runner_sha256: ae0ce83ef86771ad04be0404ef49057ea62f55cb7d2e7673e7ded6b4c26d4b6d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 
@@ -60,11 +60,11 @@ Part 6: closure factor 8 is exact independent of f
   [PASS (A)] for f(x) = x at v = 1: H_ii = 16 = 8 · 2 (closure factor)  (H_00 = 16)
 
 ----------------------------------------------------------------------------------------
-Part 7: audit row has restored dependencies and audit-managed status
+Part 7: audit row exists with the narrowed dependency set
 ----------------------------------------------------------------------------------------
   [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 seeded by audit pipeline  (run docs/audit/scripts/run_pipeline.sh after editing the note)
-  [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 has restored dependency edges  (deps=['minimal_axioms_2026-05-03', 'staggered_dirac_realization_gate_note_2026-05-03'])
-  [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 status is independent-audit managed  (effective_status='audited_conditional')
+  [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 dependency edges within the allowed narrowed set  (deps=['minimal_axioms'])
+  [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 carries a recognized effective_status (informational: 'unaudited')  (effective_status='unaudited')
 
 ========================================================================================
   TOTAL: PASS=31, FAIL=0

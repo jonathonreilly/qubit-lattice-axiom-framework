@@ -1,0 +1,31 @@
+loop_slug: audit-unlock-20260612
+date: "2026-06-12"
+mode: run
+branch: physics-loop/audit-unlock-20260612
+base_ref: origin/main
+base_sha: e93cc53fffeca79817d0ec883736e1dc87042929
+target_status: bounded-support
+current_goal: "Unlock current audit lanes by repairing source-scope and stale dependency wording without editing audit verdict surfaces."
+cycle_count: 1
+active_route: "source-scope repair for the dimension upper-bound wrapper plus single-clock downstream sync for anomaly-forces-time."
+hard_residual: "No branch-local retained claim is made; independent review and audit still own final status."
+files_touched:
+  - docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
+  - scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py
+  - logs/runner-cache/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.txt
+  - docs/ANOMALY_FORCES_TIME_THEOREM.md
+  - scripts/frontier_anomaly_forces_time.py
+  - logs/runner-cache/frontier_anomaly_forces_time.txt
+open_imports:
+  - "Dimension wrapper still does not prove a framework-native electromagnetic sector, hydrogenic spectrum, or atomic stability theorem."
+  - "Anomaly-forces-time still depends on declared premises P-ABJ, P-HY, P-COMP, P-REC, and the cited single-clock B-AXIS premise."
+  - "Single-clock B-AXIS itself is inherited as a source premise here, not derived by this block."
+no_go_routes:
+  - "Do not repair the Coulomb blocker by importing textbook spectral atomic stability as load-bearing."
+  - "Do not repair anomaly-forces-time by reinstating the withdrawn unique-RP-axis claim."
+trace_gate_classification: direct_blocker_closure
+review_disposition: "local pass for bounded-support wording; independent codex reviewer still required before landing."
+pr_status: pending
+next_exact_action: "Run certificate runners, run diff checks, commit, push, open a ready review PR."
+stop_condition: "Stop after PR creation or after PR_BACKLOG records exact recovery commands."
+automation_lock_owner: codex-audit-unlock-20260612

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time.py
-runner_sha256: 31fa5613221136a2876d07d55dddb0b6298d163c1b852552dea5428b65923b3e
+runner_sha256: 321253fbdf50f88dc03aabf0bf50dd86dc705d2a646535c166fec41a8967e5ec
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.75
 status: ok
 ----- stdout -----
 ========================================================================
@@ -12,7 +12,7 @@ bounded theorem runner: computed content vs declared imports
 ========================================================================
 
 Declared imports (never computed here): P-ABJ, P-HY, P-COMP, P-REC,
-and the cited single-clock theorem clauses. See the paired note.
+B-AXIS, and the cited single-clock theorem clauses. See the paired note.
 
 ========================================================================
 STEP 0: ABELIAN EIGENVALUE SURFACE (recompute cited construction)
@@ -226,12 +226,15 @@ STEP 6: COMPOSITION WITH SINGLE-CLOCK CODIMENSION-1 EVOLUTION
   AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03
     unique-generator clause: exactly one generator H of a strongly
          continuous one-parameter unitary group U(t) = exp(-itH) on H_phys;
-    RP-admissibility clause: the temporal direction is the UNIQUE
-         RP-admissible reflection axis of the staggered-Dirac action.
-  NON-CIRCULARITY: the time axis is defined there by RP admissibility,
-  with no anomaly input; this note never defines time via the anomaly.
+    axis-conditional clause: under B-AXIS, exactly one admitted
+         axis/transfer construction and no second commuting clock factor.
+  NON-CIRCULARITY: B-AXIS is inherited from the cited single-clock
+  source and contains no anomaly input; this note never defines time
+  via the anomaly.
 
-  [PASS][B] imported d_t <= 1 (single-clock clauses) intersected with computed odd set gives {1}  (lower bound computed in Steps 1-4; upper bound imported from the cited theorem)
+  [PASS][B] source sync: anomaly note consumes B-AXIS, not the withdrawn unique-RP-axis claim  (SC cap is axis-conditional in the paired source note)
+  [PASS][B] source sync: cited single-clock note declares axis selection as a premise  (no new axis-selection theorem is introduced here)
+  [PASS][B] imported d_t <= 1 (single-clock clauses) intersected with computed odd set gives {1}  (lower bound computed in Steps 1-4; upper bound imported from SC conditional on B-AXIS)
   [PASS][B] conclusion: d_t = 1, total dimension 3 + 1 = 4, signature (3,1)
 
   Corroborating dispersion check (cross-reference Craig-Weinstein 2009 /
@@ -260,15 +263,15 @@ STEP 7: COUNTERFACTUAL — CANCEL THE ANOMALY, LOSE THE FORCING
   falsification behaviour a genuine forcing theorem must show.
 
 ========================================================================
-CLASS BREAKDOWN: A=47 B=2 C=36 D=0
-TOTAL: PASS=85 FAIL=0
+CLASS BREAKDOWN: A=47 B=4 C=36 D=0
+TOTAL: PASS=87 FAIL=0
 ========================================================================
 
 VERDICT: bounded anomaly/single-clock bridge verified. Computed: exact
 anomaly arithmetic, Clifford parity law, staggered grading, lattice
 index mechanism, and both falsification legs. Imported (declared):
-P-ABJ, P-HY, P-COMP, P-REC, single-clock theorem clauses. Conclusion within the
-declared boundary: d_t = 1, spacetime signature (3,1).
+P-ABJ, P-HY, P-COMP, P-REC, B-AXIS, and single-clock theorem clauses.
+Conclusion within the declared boundary: d_t = 1, spacetime signature (3,1).
 
 ----- stderr -----
 

@@ -46,8 +46,8 @@ table, or a tuned scale):
               s*q with one global sign s. Conjugate-charge pairing
               cancels the index exactly (vector-like falsification leg).
   STEP 6  [B] Composition with the cited single-clock codimension-1
-              evolution theorem (unique generator and unique
-              RP-admissible reflection axis): d_t <= 1 imported, then
+              evolution theorem in its current axis-conditional form:
+              under the declared B-AXIS premise, d_t <= 1 is imported, then
               {odd positives} ∩ {<=1} = {1}. Plus a corroborating [A]
               dispersion check that a second time direction admits
               exponentially growing codimension-1 slice modes while
@@ -68,9 +68,13 @@ What is IMPORTED (declared in the note, never computed here):
           SU(2)-singlet.
   P-REC   the staggered epsilon grading is realized as the Clifford
           chirality on the irreducible emergent Dirac factor.
+  B-AXIS  inherited from the cited single-clock theorem: one supplied
+          blocked time step, one declared evolution axis/transfer
+          construction, and no admitted independent commuting transfer
+          factor as a second clock.
   single-clock theorem clauses
-          the cited internal theorem supplies d_t <= 1 and the anomaly-
-          independent definition of the time axis.
+          the cited internal theorem supplies d_t <= 1 conditional on
+          B-AXIS. It does not derive B-AXIS here.
 
 Every check line is tagged with its rubric class:
   [A] algebraic identity on cited inputs
@@ -83,10 +87,13 @@ from __future__ import annotations
 
 import sys
 from fractions import Fraction
+from pathlib import Path
 
 import numpy as np
 
 np.set_printoptions(precision=8, suppress=True, linewidth=120)
+
+ROOT = Path(__file__).resolve().parents[1]
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -788,11 +795,29 @@ def step6_single_clock():
     print("  AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03")
     print("    unique-generator clause: exactly one generator H of a strongly")
     print("         continuous one-parameter unitary group U(t) = exp(-itH) on H_phys;")
-    print("    RP-admissibility clause: the temporal direction is the UNIQUE")
-    print("         RP-admissible reflection axis of the staggered-Dirac action.")
-    print("  NON-CIRCULARITY: the time axis is defined there by RP admissibility,")
-    print("  with no anomaly input; this note never defines time via the anomaly.")
+    print("    axis-conditional clause: under B-AXIS, exactly one admitted")
+    print("         axis/transfer construction and no second commuting clock factor.")
+    print("  NON-CIRCULARITY: B-AXIS is inherited from the cited single-clock")
+    print("  source and contains no anomaly input; this note never defines time")
+    print("  via the anomaly.")
     print()
+    note_text = (ROOT / "docs/ANOMALY_FORCES_TIME_THEOREM.md").read_text(encoding="utf-8")
+    sc_text = (
+        ROOT / "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md"
+    ).read_text(encoding="utf-8")
+    stale_phrase = "unique RP-admissible reflection axis"
+    check(
+        "source sync: anomaly note consumes B-AXIS, not the withdrawn unique-RP-axis claim",
+        "B-AXIS" in note_text and stale_phrase not in note_text,
+        "B",
+        "SC cap is axis-conditional in the paired source note",
+    )
+    check(
+        "source sync: cited single-clock note declares axis selection as a premise",
+        "(B-AXIS)" in sc_text and "axis selection is a premise" in sc_text,
+        "B",
+        "no new axis-selection theorem is introduced here",
+    )
     odd_set = set(dt for dt in range(1, 100) if (3 + dt) % 2 == 0)
     cap_set = set(dt for dt in range(0, 100) if dt <= 1)
     inter = sorted(odd_set & cap_set)
@@ -800,7 +825,7 @@ def step6_single_clock():
         "imported d_t <= 1 (single-clock clauses) intersected with computed odd set gives {1}",
         inter == [1],
         "B",
-        "lower bound computed in Steps 1-4; upper bound imported from the cited theorem",
+        "lower bound computed in Steps 1-4; upper bound imported from SC conditional on B-AXIS",
     )
     check("conclusion: d_t = 1, total dimension 3 + 1 = 4, signature (3,1)", 3 + inter[0] == 4, "B")
     print()
@@ -880,7 +905,7 @@ def main():
     print("=" * 72)
     print()
     print("Declared imports (never computed here): P-ABJ, P-HY, P-COMP, P-REC,")
-    print("and the cited single-clock theorem clauses. See the paired note.")
+    print("B-AXIS, and the cited single-clock theorem clauses. See the paired note.")
 
     step0_abelian_surface()
     step1_lh_anomalous()
@@ -906,8 +931,8 @@ def main():
         "\nVERDICT: bounded anomaly/single-clock bridge verified. Computed: exact"
         "\nanomaly arithmetic, Clifford parity law, staggered grading, lattice"
         "\nindex mechanism, and both falsification legs. Imported (declared):"
-        "\nP-ABJ, P-HY, P-COMP, P-REC, single-clock theorem clauses. Conclusion within the"
-        "\ndeclared boundary: d_t = 1, spacetime signature (3,1)."
+        "\nP-ABJ, P-HY, P-COMP, P-REC, B-AXIS, and single-clock theorem clauses."
+        "\nConclusion within the declared boundary: d_t = 1, spacetime signature (3,1)."
     )
     sys.exit(0)
 

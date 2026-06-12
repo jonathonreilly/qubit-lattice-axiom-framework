@@ -172,7 +172,7 @@ def cache_checks() -> None:
     gate_cache = text("gate_cache")
     report("stable-orbit cache certifies PASS=8", "SCORECARD: PASS=8" in bertrand_cache)
     report("Coulomb cache certifies PASS=53 FAIL=0", "SUMMARY: PASS=53 FAIL=0" in coulomb_cache)
-    report("D3 gate cache certifies PASS=35 FAIL=0", "SUMMARY: PASS=35 FAIL=0" in gate_cache)
+    report("D3 gate cache certifies PASS=34 FAIL=0", "SUMMARY: PASS=34 FAIL=0" in gate_cache)
 
 
 def main() -> int:

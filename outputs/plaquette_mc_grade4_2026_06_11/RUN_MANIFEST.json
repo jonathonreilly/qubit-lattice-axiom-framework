@@ -1,0 +1,36 @@
+{
+  "argv": {
+    "checkpoint_dir": "/Users/jonBridger/Toy Physics/outputs/plaquette_mc_grade4_2026_06_11/checkpoints",
+    "checkpoint_every": 25,
+    "hot_chunk": 32768,
+    "keep_checkpoints": false,
+    "max_lag": 200,
+    "measurements": 500,
+    "numba_threads": 6,
+    "output_dir": "/Users/jonBridger/Toy Physics/outputs/plaquette_mc_grade4_2026_06_11",
+    "overrelax": 3,
+    "progress_interval": 50,
+    "replicas": 1,
+    "resume": true,
+    "seed_base": 2026061104,
+    "separation": 6,
+    "starts": [
+      "cold",
+      "hot"
+    ],
+    "therm": 1000,
+    "time_budget_hours": 20.0,
+    "volumes": [
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "window_factor": 5.0
+  },
+  "backend": "scripts/alpha_s_numba_wilson_loop_mc.py",
+  "kind": "plaquette_grade4_production_manifest",
+  "protocol_note": "docs/PLAQUETTE_MC_CERTIFICATION_PROTOCOL_NOTE_2026-06-11.md",
+  "timestamp_utc": "2026-06-11T19:19:05Z"
+}

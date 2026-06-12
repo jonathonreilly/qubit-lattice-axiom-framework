@@ -52,8 +52,8 @@ For the `C3`-circulant Yukawa with `r = |b|^2/a^2`, `Q = (1 + 2r)/3` exactly
 ## Why this note exists
 
 The within-orbit Koide weighting (`kappa = 2`, `r = 1/2`) has resisted a
-30-probe symmetry/operator campaign
-([KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)).
+30-probe symmetry/operator campaign recorded in
+`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md` as non-load-bearing context.
 This note explains a narrow part of that failure: the C3/S3 unitary
 symmetry-protection routes do not fix `r = 1/2`. The condition is the
 equal-channel-energy balance, so the remaining content lives in a dynamical or
@@ -134,7 +134,10 @@ Pure finite-dimensional algebra; each step is reproduced by the runner.
   staggered-Dirac realization. Establishing `|b|/a = 1/sqrt(2)` there would
   derive the lepton `Q = 2/3`; it is not done here.
 
-## Declared dependencies (graph-visible)
+## Declared dependencies and context
+
+Only load-bearing authorities are graph-visible Markdown dependencies here.
+Context campaign notes are plain-text references.
 
 The runner exhibits all facts directly; cited as context:
 
@@ -143,8 +146,8 @@ The runner exhibits all facts directly; cited as context:
   [KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
   and
   [KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md).
-- The 30-probe campaign this no-go explains —
-  [KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md).
+- Non-load-bearing context: the 30-probe campaign this no-go explains is
+  recorded in `KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`.
 - The `Z3`-equivariant / Schur foreclosures this sharpens —
   [KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md).
 
@@ -165,8 +168,8 @@ obstruction to a singlet/doublet swap.
 
 ## Cross-references
 
-- [KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md) —
-  the symmetry/operator campaign this no-go explains the failure of.
+- `KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md` — non-load-bearing
+  context for the symmetry/operator campaign this no-go explains.
 - [KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md),
   [KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) —
   the retained circulant structure.

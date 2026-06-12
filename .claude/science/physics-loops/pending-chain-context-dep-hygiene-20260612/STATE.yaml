@@ -1,0 +1,28 @@
+loop: pending-chain-context-dep-hygiene-20260612
+goal: remove false meta/context citation blockers from remaining retained_pending_chain source notes
+target_status: bounded-support
+started: 2026-06-12
+base: origin/main@7f95c3b0090ec29e1a26c96f9031dc73d9366816
+current_block: context_dependency_hygiene
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_blockers:
+  - chain_waiting_on:start_here
+  - chain_waiting_on:minimal_axioms_2026-05-03
+  - chain_waiting_on:koide_bae_30_probe_campaign_note_2026-05-09
+files_touched:
+  - docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md
+  - docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md
+  - docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md
+verification:
+  citation_graph_in_memory: false blocker edges removed
+  diff_check: pass
+  live_runners:
+    - scripts/lattice_3d_nyquist_diffraction_probe.py
+    - scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py
+  cached_runner_used:
+    - scripts/linear_response_second_order_kubo.py
+pr_status: pending
+next_action: open review PR
+stop_condition: reviewer can extract the source hygiene block

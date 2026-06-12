@@ -78,7 +78,8 @@ So the honest interpretation is:
 This note should be read alongside the valley-linear finite-lattice bridge:
 
 - [`VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md)
-- [`docs/START_HERE.md`](/Users/jonreilly/Projects/Physics/docs/START_HERE.md) if you want the retained 3D gravity lane in the broader repo context
+- `docs/START_HERE.md` only as non-load-bearing broader repo context for the
+  retained 3D gravity lane
 
 The difference is:
 

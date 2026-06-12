@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""P-FLUX selection via FSB-K + the (Z) certificate — phi = -1
-conditional on the named chain grades (composer runner).
+"""P-FLUX selection via FSB-K + the retained (Z) certificate — phi = -1
+conditional on the FSB-K grade (composer runner).
 
 Companion to
 docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md
@@ -8,14 +8,14 @@ docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-
 The honest conditional composed here:
 
   IF  C1: the FSB-K row (axiom_first_fermionic_stefan_boltzmann_
-          narrow_theorem_note_2026-05-26, re-scoped 2026-06-11:
+          narrow_theorem_note_2026-05-26, re-scoped 2026-06-12:
           quantifier on the realized kernel class, hypothesis (Z)
           explicit) stands at retained grade with its quantifier and
           Corollary FSB-CL intact,
-  AND C2: the (Z)-certificate row (staggered_kernel_satisfies_z_point_
-          cone_certificate_narrow_theorem_note_2026-06-11: Theorem
-          Z-K1, the K1 kernel satisfies (Z) exactly; Theorem Z-K0, the
-          K0 kernel violates it) stands at retained grade,
+  USING   the retained (Z)-certificate row (staggered_kernel_satisfies_
+          z_point_cone_certificate_narrow_theorem_note_2026-06-11:
+          Theorem Z-K1, the K1 kernel satisfies (Z) exactly; Theorem
+          Z-K0, the K0 kernel violates it),
   THEN within the licensed two-class kinetic surface the finite-
        species-density requirement (CL) -- boundary B-Z2 of the P-FLUX
        no-gos, in the retained Stefan-Boltzmann bridge row's own
@@ -24,19 +24,18 @@ The honest conditional composed here:
        in the central-difference normalization = sum |det V|^-1;
        equivalently ~ 1 = 8/2^3 per site at unit hopping) and VIOLATED
        by K0 (g_eff ~ T^-2, Sommerfeld), hence phi = -1 is selected:
-       B-Z2 supplied, B-BIT retired -- CONDITIONAL on the named chain
-       grades.
+       B-Z2 supplied, B-BIT retired -- CONDITIONAL on C1's grade.
 
 What this runner verifies:
 
-  [A] chain inventory and honesty about TODAY's grades: both named
-      conditions are OPEN as of 2026-06-11 (FSB-K unaudited; the (Z)
-      certificate not yet audited), the retained currency/surface
-      anchors are at their stated grades, the known grade risk in C1's
-      own upstream set (the u4 row at audited_renaming) is recorded;
-      the condition rows' load-bearing content is string-verified
-      (quantifier, FSB-CL, branch-blindness; Z-K1/Z-K0); the (Z)
-      interface matches verbatim across the two condition rows, and
+  [A] chain inventory and honesty about TODAY's grades: the FSB-K
+      condition is OPEN as of 2026-06-12, the (Z)-certificate row is
+      retained, and the retained currency/surface anchors are at their
+      stated grades. The FSB-K row no longer carries the old U4 row as
+      a load-bearing dependency; the load-bearing content is string-
+      verified (quantifier, FSB-CL, branch-blindness; Z-K1/Z-K0); the
+      (Z) interface matches verbatim across FSB-K and the retained
+      geometry row, and
       FSB-K's g_eff formula instantiates on the certified cone data to
       8 per cell (central-difference) / 1 per site (unit hopping).
   [B] the composed conclusion is recomputed in-runner, self-contained,
@@ -57,14 +56,16 @@ What this runner verifies:
       kinetic-class note's B-BIT by that note's own named route
       ('point-like zero sets (relativistic cones)'), the retained SB
       bridge supplies the currency (7/240 exact; 427/4 branch-
-      independent), and the note's condition structure (C1, C2,
-      cascade at audited_conditional, collapse at audited_failed/
-      renaming, surface scope B-C0) is declared in the note text.
+      independent), and the note's condition structure (C1 as the sole
+      open condition, retained Z geometry, cascade at audited_
+      conditional, collapse at audited_failed/renaming, surface scope
+      B-C0) is declared in the note text.
   [D] falsification legs and inversion-guard compliance: dropping (CL)
       restores the retained-surface tie (carrier battery recomputed:
       cube TRUE/TRUE, M_3(C) dim 9/9, count 3 = 3 -- selects nothing);
-      dropping C2 leaves FSB-K's hypothesis unverified AND FSB-K minus
-      (Z) is false as a universal statement (the realized-class
+      dropping the retained Z geometry leaves FSB-K's hypothesis
+      unverified AND FSB-K minus (Z) is false as a universal statement
+      (the realized-class
       comparator violates the T^4 law), so the selection collapses;
       the selection consumes thermal/spectral data only -- the
       kernel-global count readouts are 8/4 vs 20/8, never 3, the only
@@ -361,7 +362,7 @@ def carrier_data(h, L, sites, idx):
 
 def main():
     print("=" * 72)
-    print("[A] the named chain: today's grades (honesty), condition-row")
+    print("[A] the named chain: today's grades (honesty), FSB-K condition")
     print("    content, and the (Z) interface match")
     print("=" * 72)
 
@@ -378,27 +379,26 @@ def main():
                          "bridge_narrow_theorem_note_2026-06-06")
     st_tb = status(rows, "tensor_product_translation_fermion_operator_"
                          "bridge_narrow_theorem_note_2026-05-25")
-    st_u4 = status(rows, "u4_closes_under_qubit_reframe_narrow_theorem_"
-                         "note_2026-05-20")
     own_txt = note_text("docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_"
                         "CERTIFICATE_CONDITIONAL_THEOREM_NOTE_"
                         "2026-06-11.md")
+    no_old_u4_risk = "known u4 risk" not in own_txt and "recorded u4" not in own_txt
     report(st_c1 == "unaudited"
-           and st_c2 in (None, "unaudited")
+           and retained_grade(st_c2)
            and st_kc == "unaudited"
            and st_sd in (None, "unaudited")
            and st_sb == "retained_bounded" and st_tb == "retained"
-           and st_u4 == "audited_renaming"
+           and no_old_u4_risk
+           and "C1 is unaudited and the Z certificate is retained" in own_txt
            and "performs no selection at current grades" in own_txt,
-           f"[A] today's grades (as of 2026-06-11), recorded honestly: "
-           f"C1 (FSB-K) = {st_c1}; C2 ((Z) certificate) = "
-           f"{'absent-from-ledger' if st_c2 is None else st_c2}; the "
+           f"[A] today's grades (as of 2026-06-12), recorded honestly: "
+           f"C1 (FSB-K) = {st_c1}; retained Z certificate = {st_c2}; the "
            f"kinetic-class surface row = {st_kc}; the finite-species-"
            f"density no-go = "
            f"{'absent-from-ledger' if st_sd is None else st_sd}; the "
            f"retained anchors: SB bridge = {st_sb}, Fock bridge = "
-           f"{st_tb}; known C1-upstream risk: u4 = {st_u4} -- both "
-           f"named conditions are OPEN and this note 'performs no "
+           f"{st_tb}; the old U4 row is not load-bearing -- C1 is the "
+           f"sole open condition and this note 'performs no "
            f"selection at current grades'")
 
     fsb_txt = note_text("docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_"
@@ -423,7 +423,7 @@ def main():
                in zc_txt
            and "(V, C_j, r_j) = (2I, 2/3, 1)" in zc_txt
            and "performs no selection" in zc_txt,
-           "[A] C2 content (textual): the (Z)-certificate row states "
+           "[A] retained Z content (textual): the (Z)-certificate row states "
            "Theorem Z-K1 (K1 satisfies (Z) exactly, explicit cone data "
            "(V, C_j, r_j) = (2I, 2/3, 1)) and Theorem Z-K0 (K0 "
            "violates both clauses), and itself 'performs no selection' "
@@ -437,16 +437,16 @@ def main():
     inst_cd = 8 * 1.0
     report(ok_iface and abs(inst_unit - 1.0) < 1e-15
            and abs(inst_cd - 8.0) < 1e-15,
-           "[A] the (Z) interface matches VERBATIM across the two "
-           "condition rows (shared defining strings: the zero set "
+           "[A] the (Z) interface matches VERBATIM across FSB-K and the "
+           "retained Z row (shared defining strings: the zero set "
            "'Z(h) = {(p_j, b) : E_b(p_j) = 0}', 'is finite, and for "
            "each', 'invertible real `3x3` matrix'), and FSB-K's "
            "g_eff = sum |det V_jb|^-1 instantiates on the certified "
            "cone data to 8 x 1/8 = 1 per site (unit hopping, V = 2I) "
            "= 8 per cell (central-difference, V = I) -- no quantifier "
            "gap in the composition")
-    residual("both named conditions C1 and C2 are OPEN as of "
-             "2026-06-11; the composed selection is conditional and "
+    residual("C1 is OPEN as of 2026-06-12 while the Z certificate is "
+             "retained; the composed selection is conditional and "
              "performs nothing at current grades (boundary B-C1)")
 
     print()
@@ -564,7 +564,7 @@ def main():
     print()
     print("=" * 72)
     print("[C] the conditional assembly: B-Z2 supplied, B-BIT retired,")
-    print("    at the named chain grades; condition structure declared")
+    print("    conditional on C1, using retained Z geometry")
     print("=" * 72)
 
     sd_txt = note_text("docs/P_FLUX_FINITE_SPECIES_DENSITY_FROM_"
@@ -592,7 +592,8 @@ def main():
            "[C] the conclusion is EXACTLY the named missing row: the "
            "finite-species-density no-go's section-7 formulation 2 "
            "('g_eff bounded as T -> 0', the retained SB row's own "
-           "currency) is what C1+C2 jointly state of the realized "
+           "currency) is what C1 plus the retained Z geometry states "
+           "of the realized "
            "kernel, and its N6/section-7 language names this "
            "retained-SB-row promotion target; "
            "its B-F2 strictly-stronger caveat is reproduced by the "
@@ -610,7 +611,8 @@ def main():
            "candidate route ('a dynamical/spectral principle requiring "
            "point-like zero sets (relativistic cones)', its section "
            "7), which is exactly the (Z)+(CL) principle composed "
-           "here; B-BIT retires CONDITIONALLY on C1 + C2, within the "
+           "here; B-BIT retires CONDITIONALLY on C1, using the retained "
+           "Z geometry, within the "
            "licensed two-class surface")
 
     sb_txt = note_text("docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_"
@@ -636,21 +638,21 @@ def main():
            "bookkeeping, the exact content of B-Z2")
 
     report("C1 (FSB-K retained" in own_txt
-           and "C2 ((Z) certificate retained" in own_txt
+           and "Retained geometry leg" in own_txt
+           and "Z certificate is retained" in own_txt
            and "resolves by cascade" in own_txt
            and "collapses" in own_txt
            and "boundary B-C0" in own_txt
-           and "conditional on the named chain grades" in own_txt,
+           and "conditional on C1 reaching retained grade" in own_txt,
            "[C] the condition structure is declared in the note text: "
-           "named conditions C1 (FSB-K retained, quantifier + FSB-CL "
-           "intact) and C2 ((Z) certificate retained, Z-K1 + Z-K0 "
-           "intact); at audited_conditional from dependency_not_"
-           "retained the selection stands conditionally and 'resolves "
-           "by cascade' (standing owner method; known u4 risk "
-           "recorded); at audited_failed / audited_renaming of either "
-           "condition the composition 'collapses' and B-Z2 reopens; "
+           "C1 (FSB-K retained, quantifier + FSB-CL intact) is the sole "
+           "open condition, and the retained Z geometry carries Z-K1 + "
+           "Z-K0; at audited_conditional from dependency_not_retained "
+           "the selection stands conditionally and 'resolves by cascade' "
+           "(standing owner method); at audited_failed / audited_renaming "
+           "of C1 the composition 'collapses' and B-Z2 reopens; "
            "the two-class surface itself is scope (boundary B-C0) -- "
-           "the conclusion is 'conditional on the named chain grades', "
+           "the conclusion is 'conditional on C1 reaching retained grade', "
            "nothing more")
     residual("the licensed two-class surface is the kinetic-class "
              "forcing row's scope (unaudited); this composition "
@@ -681,12 +683,13 @@ def main():
     report(2.5 < rca < 2.95
            and "neither assumes nor derives `phi = -1`" in fsb_txt
            and verdicts["A"][0] != verdicts["B"][0],
-           "[D] falsification leg 2 (drop the (Z) certificate): "
+           "[D] falsification leg 2 (drop the retained Z geometry): "
            "FSB-K minus (Z) is FALSE as a universal statement (the "
            "realized-class quadratic comparator violates the T^4 law, "
            "ratios ~ 2^1.5), and FSB-K is branch-blind on its face "
-           "('neither assumes nor derives `phi = -1`') -- without C2 "
-           "the hypothesis is unverified on BOTH licensed kernels and "
+           "('neither assumes nor derives `phi = -1`') -- without the "
+           "retained Z leg the hypothesis is unverified on BOTH licensed "
+           "kernels and "
            "the quantifier instantiates on neither: the selection "
            "collapses; the (Z) leg is load-bearing, not decorative")
 
@@ -720,7 +723,7 @@ def main():
     residual("finite grids: eigensolver L in {4, 8, 12} (PBC, 4 | L "
              "wrap convention), symbol grids L in {64, 128} licensed "
              "by the closed-form ties of check 5 (boundary B-G)")
-    residual("at audited_conditional grades of C1/C2 the selection "
+    residual("at audited_conditional grade of C1 the selection "
              "stands conditionally and resolves by cascade; this "
              "runner re-checks the grades on every run, so the row "
              "self-reports when the conditions move (boundary B-C1)")
@@ -729,21 +732,23 @@ def main():
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print("VERDICT: CONDITIONAL selection, composed honestly: IF the "
-              "FSB-K row (C1) and the (Z)-certificate row (C2) stand")
-        print("         at retained grade, THEN within the licensed "
-              "two-class kinetic surface the finite-species-density")
+              "FSB-K row (C1) stands at retained grade, THEN")
+        print("         using the retained (Z)-certificate geometry leg, "
+              "within the licensed two-class kinetic surface the")
+        print("         finite-species-density")
         print("         requirement (CL) -- B-Z2 in the retained SB "
               "bridge's own per-dof currency -- is satisfied by K1")
         print("         (g_eff plateau ~ 8 = sum |det V|^-1 per cell; "
               "~ 1 = 8/2^3 per site at unit hopping) and violated by")
         print("         K0 (g_eff ~ T^-2, Sommerfeld), hence phi = -1 "
               "is selected: B-Z2 supplied, B-BIT retired, conditional")
-        print("         on the named chain grades. TODAY both "
-              "conditions are open (C1 unaudited; C2 unaudited): this")
+        print("         on C1's grade. TODAY C1 is unaudited and the Z "
+              "certificate is retained: this")
         print("         note performs no selection at current grades. "
               "Dropping (CL) restores the retained-surface tie;")
-        print("         dropping C2 leaves the hypothesis unverified "
-              "and the selection collapses. Nothing is forced from")
+        print("         dropping the retained Z geometry leaves the "
+              "hypothesis unverified and the selection collapses. "
+              "Nothing is forced from")
         print("         the matched-3=3 count: the selection consumes "
               "thermal/spectral data only.")
     return 0 if FAIL == 0 else 1

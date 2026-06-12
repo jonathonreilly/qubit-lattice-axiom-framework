@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py
-runner_sha256: 2f4f1e7adce3007366a187eeea9a10ad7d222bbb4375c1e5d26f4c8fed235f63
+runner_sha256: c759c026987cbab59fe8aa92e19b478290daaabda9053ae218b126c74b591d47
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.19
+elapsed_sec: 1.90
 status: ok
 ----- stdout -----
 ========================================================================
@@ -45,7 +45,7 @@ RESIDUAL (declared-open): u(T) is the half-filled free-Fermi probe in the retain
     circularity discipline
 ========================================================================
 [PASS] 16. [D] composition with the retained-grade bridge (current effective_status=retained_bounded): the bridge binds 'a relativistic, effectively massless thermal degree of freedom' with a SUPPLIED inventory and owns the integral arithmetic; this row binds the kernel class and derives WHICH count the realized spectrum supplies (g_eff = cone-weighted species count) -- same per-dof coefficient 7/240, disjoint roles, no duplication, no contradiction
-[PASS] 17. [D] circularity discipline (textual, on this note's own file): the staggered-derived emergent-Lorentz row and the unaudited KMS row are NOT load-bearing citations (no markdown links; the linear-cone dispersion is hypothesis (Z), stated of the kernel, not imported); the note declares it 'neither assumes nor derives `phi = -1`' -- branch-blind on its face
+[PASS] 17. [D] circularity discipline (textual, on this note's own file): the staggered-derived emergent-Lorentz row and the unaudited KMS row are NOT load-bearing citations, and the old U4 qubit-reframe row is not a load-bearing citation (no markdown links; the linear-cone dispersion is hypothesis (Z), stated of the kernel, not imported); the note declares it 'neither assumes nor derives `phi = -1`' -- branch-blind on its face
 [PASS] 18. [D] branch-blindness of the computation: both licensed branch symbols are evaluated by the SAME probe/grid code path and are separated ONLY by their computed zero-set geometry (the (Z) classification of check 6); no flux value, branch label, or species inventory enters any load-bearing computation above
 RESIDUAL (declared-open): hypothesis (Z) is a CONDITION: this row verifies it for its explicit witnesses only and does NOT certify it for the realized kernel; which kernel is realized (the P-FLUX bit) is neither assumed nor derived here (boundary B-3)
 RESIDUAL (declared-open): the falsification legs [C] are computed certificates with proof sketches, not the theorem-grade core; they establish only that (Z) is load-bearing (boundary B-5)

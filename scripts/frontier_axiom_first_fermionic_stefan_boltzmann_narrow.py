@@ -475,13 +475,16 @@ def main():
     no_lorentz_link = "](EMERGENT_LORENTZ_INVARIANCE_NOTE.md)" not in self_txt
     no_kms_link = "](AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md)" \
         not in self_txt
-    report(no_lorentz_link and no_kms_link
+    no_u4_link = "](U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)" \
+        not in self_txt
+    report(no_lorentz_link and no_kms_link and no_u4_link
            and "neither assumes nor derives `phi = -1`" in self_txt
            and "hypothesis (Z)" in self_txt,
            "[D] circularity discipline (textual, on this note's own "
            "file): the staggered-derived emergent-Lorentz row and the "
-           "unaudited KMS row are NOT load-bearing citations (no "
-           "markdown links; the linear-cone dispersion is hypothesis "
+           "unaudited KMS row are NOT load-bearing citations, and the "
+           "old U4 qubit-reframe row is not a load-bearing citation "
+           "(no markdown links; the linear-cone dispersion is hypothesis "
            "(Z), stated of the kernel, not imported); the note "
            "declares it 'neither assumes nor derives `phi = -1`' -- "
            "branch-blind on its face")

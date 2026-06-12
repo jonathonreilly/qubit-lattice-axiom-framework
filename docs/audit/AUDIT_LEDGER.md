@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 843 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 39 |
-| unaudited | 1487 |
+| unaudited | 1486 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_conditional~~ | 29 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1288 |
-| `audited_conditional` | 28 |
+| `audited_conditional` | 29 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1804 |
+| `unaudited` | 1803 |
 
 | claim_type | count |
 |---|---:|
@@ -114,7 +114,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 798 | 39.14 | `audited_clean` | **retained_bounded** |
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1272 | 38.81 | `audited_clean` | **retained_bounded** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
-| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 737 | 38.03 | `audited_clean` | **retained_no_go** |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 738 | 38.03 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1363 | 36.91 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1139 | 36.16 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 930 | 34.86 | `unaudited` | unaudited |
@@ -1422,6 +1422,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2356,6 +2357,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The action-derived two-step monodromy has eigenvalues e^{±2E(p)} with E(p)=arcsinh(sqrt(m^2+sin^2 p)); selecting the decaying channel gives t1^(2)(p)=e^{-2E(p)}, so Gamma(t1^(2))=tensor_p diag(1,e^{-2E(p)})=B^dag B is positive Hermitian.  _(class `C`)_
 - **chain closes:** True — Independently, T_odd T_even has determinant 1 and trace 2+4(m^2+sin^2 p)=2 cosh(2E), giving eigenvalues e^{±2E}; the one-step characteristic equation has non-real roots for sin(p)!=0 and one negative root at sin(p)=0. The finite diagonal Gamma construction then gives a positive B^dag B factorization from the positive decaying eigenvalues.
 - **rationale:** The load-bearing free-case derivation is a first-principles finite-matrix computation from the stated staggered action, not a fitted numerical match or renaming. The displayed trace/determinant identities, exceptional one-step eigenvalues, spectral projectors, and finite exterior/Gamma positivity all check algebraically. The runner's C7 parent-source guard is a non-load-bearing cross-note/source-wiring check and was not used for the free-case closure.
+- **auditor confidence:** high
+
+### `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`
+
+- **Note:** [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Axis-conditional single-clock codimension-1 unitary evolution: assuming B-AXIS, the retained transfer/spectrum/Stone inputs give one transfer-relative and tau-relative generator and unitary group; equal-time slices carry per-site `M_2(C)` tensor locality; free `U=1` bilinear exact-log propagation uses the retained_bounded R-FBQL quasilocal LR bridge; axis selection is not derived and the exchange certificate withdraws the old unique-RP-axis claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-195426-50aea15fb6-axiom_first_single_clock_cod`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By (R-STONE) applied to `(T̂²/M_T, 2a_τ)`, the supplied positive Hermitian transfer determines the unique self-adjoint generator `H := -(1/(2a_τ)) log(T̂²/M_T)` and one unitary group, with codimension-1 tensor slices and free-sector propagation imported from R-FBQL, conditional on (B-AXIS).  _(class `A`)_
+- **chain closes:** False — The algebraic closure from retained and retained_bounded inputs closes after assuming B-AXIS. The unrestricted chain does not close because B-AXIS itself, especially axis/transfer-construction uniqueness and exclusion of independent commuting clock factors, is a declared premise rather than a retained supplier theorem.
+- **rationale:** The Stone, spectrum-normalization, equal-time tensor, Cl(3) complexification, and free-sector quasilocal LR uses are consistent with the cited retained-grade or accepted-premise authorities. Independent checks of the load-bearing formulas confirm the log normalization, `T^n = U(-inτ)`, codimension arithmetic, the R-FBQL lightcone form, and the staggered `τ↔1` phase-intertwiner identity. However, the theorem still imports B-AXIS as an explicit non-derived premise, and the runner’s two-clock comparator shows that this premise excludes a realizable alternative rather than following from Stone uniqueness. That makes the presented result conditional, not clean retained closure.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md#B-AXIS`
 - **auditor confidence:** high
 
 ### `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05`

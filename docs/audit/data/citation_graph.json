@@ -50346,10 +50346,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
     },
     {
       "from": "repo.repo_organization",
@@ -96684,17 +96684,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
         "cl3_color_automorphism_theorem",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
         "cl3_taste_generation_theorem",
-        "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
+        "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
+        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "685e7f23d9df82458ac16d880f48f0d0c4f997ffa99f2ec12e5ff7d972769a62",
+      "note_hash": "5c70e0875ba511544194f242bd7694cb57813edbeeba747cbee179ce72a42161",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

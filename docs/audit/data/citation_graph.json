@@ -49638,10 +49638,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_positive_parent_axis_obstruction_note_2026-04-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -95200,17 +95200,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_positive_parent_axis_obstruction_note_2026-04-18",
         "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
         "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
         "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
         "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4fed51ff5b3db30c6ca6bb475c98b4a9766264186f6937b363a5715815e76f60",
+      "note_hash": "2f8a7874e43d02fb0c3b440ab861109037739fec7242a257a68524733cbce175",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

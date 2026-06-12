@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 286,
+    "critical": 285,
     "high": 291,
     "leaf": 468,
     "medium": 435
@@ -71,30 +71,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_color_automorphism_theorem"
-      ],
-      "direct_in_degree": 12,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.954,
-      "note_path": "docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_rescaling_conditional_algebra_check.py",
-      "transitive_descendants": 495
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -8161,15 +8137,15 @@
       "deps": [
         "staggered_dirac_realization_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.913,
+      "load_bearing_score": 10.419,
       "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_dimensional_compression.py",
-      "transitive_descendants": 240
+      "transitive_descendants": 241
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -44484,6 +44460,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 76,
-  "total_pending": 1480
+  "ready_count": 75,
+  "total_pending": 1479
 }

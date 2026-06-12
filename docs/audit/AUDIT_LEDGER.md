@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 847 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 39 |
-| unaudited | 1477 |
+| unaudited | 1476 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 34 |
+| ~~audited_conditional~~ | 35 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1292 |
-| `audited_conditional` | 34 |
+| `audited_conditional` | 35 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1794 |
+| `unaudited` | 1793 |
 
 | claim_type | count |
 |---|---:|
@@ -1434,6 +1434,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6894,6 +6895,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Equating the two abstract constraints F^2 = c0 and F^2 = g^2/(2N) gives g^2 = 2 N c0, so on the positive branch g = sqrt(2 N c0) when c0 > 0.  _(class `A`)_
 - **chain closes:** True — The theorem follows by direct substitution and multiplication by 2N over the stated positive-real domain, with the c0=0 boundary explicitly excluded by g>0. The runner verifies the symbolic identity, positive branch, rational instances, non-unit counterexamples, and scope disclaimers with PASS=39, FAIL=0.
 - **rationale:** The scoped claim closes as pure algebra: the two hypotheses give c0 = g^2/(2N), hence g^2 = 2Nc0, and the positive branch is unique for c0>0. The specific g=1 result is correctly limited to pairs satisfying 2Nc0=1, with the note and runner showing that other pairs such as (N,c0)=(1,1) force different values. This audit does not ratify the physical Ward-route premises or any claim that those abstract variables are fixed by Cl(3), Wilson, or SU(N_c) structure.
+- **auditor confidence:** high
+
+### `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`
+
+- **Note:** [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic rescaling lemma: assuming canonical SU(3) trace normalization and a scoped Wilson matching/action-surface rule, a scalar rescaling by c changes the Gram normalization by c^2 and is asserted to route the same factor into beta.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-211216-4e8af2e9da-g_bare_rescaling_freedom_rem`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** CN + WM + rescaling by c => Gram -> c^2 Gram and beta -> c^2 beta.  _(class `A`)_
+- **chain closes:** False — The Gram scaling follows directly from Tr((cT_a)(cT_b)) = c^2 Tr(T_aT_b). The beta scaling does not follow from the displayed WM formula alone: with N_c and g_bare^2 fixed, beta = 2 N_c / g_bare^2 is unchanged unless an additional action-surface or rescaled-coupling rule is supplied.
+- **rationale:** The trace-normalization part is a valid class-A algebraic identity over the retained CL3 trace normalization. Wilson matching is explicitly scoped rather than derived, and the packet does not include the extra rule needed to turn a generator/connection rescaling into beta_new = c^2 beta_old. The runner confirms exact rational Gram scaling, but its beta check assigns beta_new = c_squared * beta_old and then verifies the assigned ratio, so it does not independently close the missing Wilson action-surface transformation.
 - **auditor confidence:** high
 
 ### `g_bare_rigidity_theorem_note`

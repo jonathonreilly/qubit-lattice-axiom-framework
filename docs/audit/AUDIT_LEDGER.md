@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 840 |
+| **retained_bounded** | 841 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1418 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1284 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1285 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `koide_positive_parent_axis_obstruction_note_2026-04-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -741,6 +739,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_pointer_record_degeneracy_d3_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_positive_parent_axis_obstruction_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_k0_real_block_equivalence_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -10526,6 +10525,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the C_3 regular representation, S=C+C^2=J-I has eigenvalue +2 on the singlet projector and eigenvalue -1 on the rank-2 doublet projector, so a sharp S record has exactly two spectral atoms while the atom measure remains unspecified.  _(class `A`)_
 - **chain closes:** True — The spectral claims follow directly from the C_3 shift matrix: C has characters 1, omega, omega^2, so S has eigenvalues 2,-1,-1 and A has eigenvalues 0,±sqrt(3). The Koide-weight comparison then follows algebraically from Q=(1+2r)/3 with r=1/2 for equal atom count and r=1 for rank/dimension weighting; the note explicitly leaves the measure selector open.
 - **rationale:** The restricted packet contains enough finite linear algebra to verify the load-bearing statement independently of the runner: S=J-I has spectral projectors of ranks 1 and 2, and A is a commuting Hermitian pointer that separates the two nontrivial C_3 characters. The runner source performs direct matrix and symbolic checks rather than importing a contested value or fitting an external comparator. The cited authorities are retained-grade for the bounded algebra/no-go context used here, and the source does not overclaim physical selection of the (1,1) measure.
+- **auditor confidence:** high
+
+### `koide_positive_parent_axis_obstruction_note_2026-04-18`
+
+- **Note:** [`KOIDE_POSITIVE_PARENT_AXIS_OBSTRUCTION_NOTE_2026-04-18.md`](../../docs/KOIDE_POSITIVE_PARENT_AXIS_OBSTRUCTION_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the retained T_1 charged-lepton lane with U_e = I_3 axis readout, and within the cited C_3-equivariant Schur/effective reduction class for larger carriers, a nondegenerate positive C_3[111]-covariant parent cannot supply the physical charged-lepton hierarchy.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260611-235923-a0d6826e1c-koide_positive_parent_axis_o`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** A 3x3 Hermitian circulant that is diagonal in the axis basis has b = 0, hence is a scalar multiple of I_3.  _(class `A`)_
+- **chain closes:** True — The small-carrier claim closes by solving the off-diagonal equations of a Hermitian circulant: zero off-diagonals force the single complex circulant coefficient to vanish, leaving aI_3. The larger-carrier extension is exactly the cited retained_bounded Schur-inheritance result, so closure is bounded to that reduction/readout class and not to alternative readouts or symmetry-breaking routes.
+- **rationale:** The load-bearing step is a pure algebraic identity, and an independent check of the off-diagonal equations and Fourier-basis conditions confirms that nondegenerate spectra necessarily create axis-basis off-diagonals. The runner source performs actual symbolic matrix computations for the algebra; its Part 2 iff statement is secured by the independent real/imaginary solve rather than by the runner's syntactic nonzero assertion alone. The Schur inheritance dependency is supplied as retained_bounded/Tier-A-bounded context, so the clean result is a bounded theorem rather than an unbounded physical closure. The obstruction is scoped to the current axis readout and C_3-equivariant Schur/effective reduction; the packet explicitly leaves new readout, non-Schur reduction, non-isolated carrier, and controlled-breaking routes open.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `koide_q23_block_weight_frontier_bounded_note_2026-05-29`

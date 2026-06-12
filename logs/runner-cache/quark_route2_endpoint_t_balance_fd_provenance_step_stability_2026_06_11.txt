@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/quark_route2_endpoint_t_balance_fd_provenance_step_stability_2026_06_11.py
+runner_sha256: 2e704b18955c30a0a56c7a95010a834e4945142003b5aef2f1f8f3bd8c82168c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 99.15
+status: ok
+----- stdout -----
+Endpoint t_balance: FD provenance + step stability
+========================================================================
+
+Part 1: finite-difference provenance of the current live ratios
+------------------------------------------------------------------------
+PASS: current live slope_ratio = 2.621602843782 reproduced at module step EPS=0.005
+    recomputed 2.621602843782; |diff| = 7.55e-15
+PASS: current live shell_ratio = 2.005383530819 reproduced at module step EPS=0.005
+    recomputed 2.005383530819; |diff| = 1.11e-13
+PASS: current live t_balance = 1.000030814262 reproduced at module step EPS=0.005
+    recomputed 1.000030814262; |diff| = 3.64e-13
+
+Part 2: step-stability of the t_balance near-miss (stable window)
+------------------------------------------------------------------------
+  eps        |b_E/b_T|        |a_T/a_E|        |b_T/a_T|
+  2.0e-03  2.621602450715  2.005382281415  1.000031700607
+  1.0e-03  2.621618786852  2.005383630023  1.000027389214
+  5.0e-04  2.621595261381  2.005384143552  1.000030750230
+  2.0e-04  2.621583528384  2.005399375554  1.000030438902
+PASS: t_balance stays inside the narrow band over the stable window
+    band [1.0000259, 1.0000319]; observed [1.000027389, 1.000031701]
+  Richardson extrapolants (leading O(eps^2) cancellation model):
+    from eps=2e-03: t_balance -> 1.000025952084
+    from eps=1e-03: t_balance -> 1.000031870569
+PASS: Richardson extrapolants stay inside the same band
+    extrapolants ['1.000025952', '1.000031871']
+PASS: the band excludes t_balance = 1 by more than six times the observed spread
+    min(t_balance) - 1 = 2.74e-05; window spread = 4.31e-06
+
+Part 3: small-step noise floor (bounds the honest FD precision)
+------------------------------------------------------------------------
+  eps=1.0e-04: t_balance = 0.999941294367
+  eps=5.0e-05: t_balance = 0.999996341542
+PASS: below eps ~ 1e-4 the chain leaves the stable band (internal noise floor)
+    max |drift from 1.0000308| = 8.95e-05; the exact slope needs the symbolic (Hellmann-Feynman) route, not smaller FD steps
+
+TOTAL: PASS=7, FAIL=0
+
+----- stderr -----
+

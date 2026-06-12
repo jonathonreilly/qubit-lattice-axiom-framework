@@ -1,0 +1,27 @@
+loop: koide-mru-quotient-demotion-20260612
+branch: physics-loop/koide-mru-quotient-demotion-20260612
+base: origin/main@421ec87f7
+status: pr_ready
+target_claim_id: koide_mru_weight_class_obstruction_theorem_note_2026-04-19
+target_note: docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md
+target_runner: scripts/frontier_koide_mru_weight_class_obstruction_theorem.py
+actual_current_surface_status: conditional-support
+conditional_surface_status: exact-support after retained scalar-lane SO(2) quotient bridge
+hypothetical_positive_status: requires retained physical quotient or cos(3 arg b) decoupling theorem
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: demotion
+files_touched:
+  - docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md
+  - scripts/frontier_koide_mru_weight_class_obstruction_theorem.py
+  - logs/runner-cache/frontier_koide_mru_weight_class_obstruction_theorem.txt
+  - .claude/science/physics-loops/koide-mru-quotient-demotion-20260612/
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_koide_mru_weight_class_obstruction_theorem.py -> classified_pass=31 fail=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_mru_weight_class_obstruction_theorem.py --allow-non-main -> ok 1"
+open_imports:
+  - physical scalar-lane SO(2) quotient theorem
+  - proof that the charged-lepton scalar observable decouples the cos(3 arg b) channel
+  - retained bridge identifying the two-slot carrier as physical, not a local carrier choice
+stop_condition: source repair branch opened for reviewer
+next_exact_action: independent review/audit can decide whether this source-boundary repair is accepted or whether a new bridge theorem is required before re-audit

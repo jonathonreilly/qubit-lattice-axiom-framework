@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_mru_weight_class_obstruction_theorem.py
-runner_sha256: 1ed21f52547bf74065c93739703899aed60ef2e7b6c2a1b10390ab6fa224af51
+runner_sha256: dcd683eca0c33f6e11ba5266076a60f29fae64b1ee178008b82c4596e02644d5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.78
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 
@@ -20,9 +20,9 @@ status: ok
 [A] PASS: det(alpha P_+ + beta P_perp) = alpha beta^2
 [A] PASS: Unreduced weight pair (1,2) lands at kappa = 1
 
-=== Part 2: exact SO(2) quotient to the two-slot carrier ===
+=== Part 2: conditional SO(2)-quotient algebra ===
 [A] PASS: The doublet block power is SO(2)-orbit invariant
-[A] PASS: The scalar lane therefore quotients the ordered pair (r_1, r_2)
+[A] PASS: If the scalar lane quotients the ordered pair, the radius is invariant
 [A] PASS: Reduced carrier coordinates satisfy rho_+^2 = E_+
 [A] PASS: Reduced carrier coordinates satisfy rho_perp^2 = E_perp
 [A] PASS: On the quotient carrier kappa = 2 E_+ / E_perp
@@ -38,14 +38,28 @@ status: ok
 [A] PASS: Reduced two-slot carrier has det = alpha beta
 [A] PASS: On the reduced carrier log|det| = log alpha + log beta
 
+=== Part 5: source-boundary discipline ===
+[A] PASS: source note contains boundary phrase: 'This source does not derive that object'
+[A] PASS: source note contains boundary phrase: 'conditional support'
+[A] PASS: source note contains boundary phrase: 'cos(3 arg b)'
+[A] PASS: source note contains boundary phrase: 'does **not** derive'
+[A] PASS: source note contains boundary phrase: 'physical quotient bridge is supplied'
+[A] PASS: source note omits old overclaim phrase: 'The branch now derives it'
+[A] PASS: source note omits old overclaim phrase: 'exact missing object, now derived'
+[A] PASS: source note omits old overclaim phrase: 'exact retained two-slot real-isotype carrier'
+[A] PASS: source note omits old overclaim phrase: 'positive layer:'
+[A] PASS: source note omits old overclaim phrase: 'resolves it on this branch'
+
 Interpretation:
   The old obstruction is still exact on the unreduced 3x3 carrier.
-  The branch-local closure step is the derived SO(2) quotient of the
-  non-trivial real doublet to a single scalar slot rho_perp.
-  After that reduction, the standard log-volume law is the equal-weight
-  MRU law automatically.
+  The quotient calculation is conditional: if a retained bridge supplies
+  the SO(2) quotient, the non-trivial real doublet reduces to one scalar
+  slot rho_perp. After that supplied reduction, the standard log-volume
+  law is the equal-weight MRU law automatically.
+  The missing science remains the physical quotient / cos(3 arg b)
+  decoupling bridge.
 
-classified_pass=21 fail=0
+classified_pass=31 fail=0
 
 ----- stderr -----
 

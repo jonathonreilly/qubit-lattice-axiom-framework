@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Runner for the no-go obstruction: identifying the staggered species count
-N_taste = 2^d|_{d=4} = 16 with the hierarchy exponent in v = M_Pl * alpha_LM^16 * (7/8)^(1/4)
-is regulator-dependent at the lattice-field-theory primitive level.
+"""Runner for the bounded no-go obstruction over declared inputs B1-B2.
 
-The runner verifies six standard-QFT consistency checks (T1-T6) plus a
-source-note boundary check (T7) that together force the no-go verdict
-on the regulator-independent reading of the bridge identification
-"physical species count -> hierarchy exponent".
+Identifying the species count N_species = 2^d at d=4 = 16 with the
+hierarchy exponent in v = M_Pl * alpha_LM^16 * (7/8)^(1/4) is
+regulator-dependent at the lattice-field-theory primitive level once the
+declared species-count packet B1 and common-continuum packet B2 are
+accepted.
+
+The runner verifies six consistency checks (T1-T6) plus a source-note
+boundary check (T7) over that declared packet. It does not derive B1 or
+B2, and it does not assert any audit status.
 
 It does NOT modify:
 - the parent narrow theorem
@@ -19,12 +22,13 @@ It does NOT modify:
   choice.
 
 It verifies that, taken as a regulator-independent QFT identification,
-the bridge fails because:
-- Different standard lattice regulators (Wilson, twisted-mass, staggered,
-  domain-wall, overlap) on the same four-direction regulator surface produce DIFFERENT
-  physical-species counts (1, 2, 4, 1, 1 respectively);
-- Symanzik improvement / continuum-limit theorems require all standard
-  regulators to converge to the same continuum SM as a -> 0;
+the bridge fails over B1-B2 because:
+- The declared B1 packet gives listed non-naive lattice regulators
+  (Wilson, twisted-mass, staggered, domain-wall, overlap) on the same
+  four-direction regulator surface physical-species counts
+  (1, 2, 4, 1, 1 respectively);
+- The declared B2 packet treats all listed regulators as converging to
+  the same continuum SM as a -> 0;
 - Therefore an IR observable like `v` that depends on the
   regulator-specific count would be regulator-dependent, contradicting
   regulator-independence of continuum-limit observables.
@@ -66,7 +70,7 @@ def check(label: str, ok: bool, detail: str = "") -> None:
     else:
         FAIL += 1
         status = "FAIL"
-    print(f"  [{status}] {label}")
+    print(f"{status}: {label}")
     if detail:
         print(f"         {detail}")
 
@@ -78,20 +82,12 @@ def section(title: str) -> None:
 
 
 # ---------------------------------------------------------------------------
-# T1: enumerate physical species counts for standard d=4 lattice regulators
+# T1: enumerate physical species counts for the declared d=4 packet
 # ---------------------------------------------------------------------------
 
-# Standard lattice-field-theory species counts at d=4 (textbook values).
-# References:
-#   - Naive: Karsten-Smit, Nucl. Phys. B 183 (1981) 103-140 (2^d = 16 at d=4)
-#   - Wilson: K. Wilson, in "New Phenomena in Subnuclear Physics" (1977)
-#     (lifts 15 doublers, 1 physical species)
-#   - Twisted-mass: Frezzotti-Rossi, JHEP 04 (2004) 070 (2 light doublers)
-#   - Staggered (Kogut-Susskind): 16 BZ corners decomposed into 4 tastes
-#     via the Kawamoto-Smit spin-taste decomposition (NPB 192 (1981) 100)
-#   - Domain-wall: Kaplan, PLB 288 (1992) 342 (1 chiral mode)
-#   - Overlap: Neuberger, PLB 417 (1998) 141 (1 chiral mode)
-
+# Species counts at d=4. The naive count is checked as exact arithmetic
+# against the parent theorem's surface; the non-naive entries are the
+# declared B1 packet consumed by this runner, not derived here.
 REGULATOR_SPECIES_COUNTS_D4 = {
     "naive": 16,
     "wilson": 1,
@@ -103,25 +99,25 @@ REGULATOR_SPECIES_COUNTS_D4 = {
 
 
 def test_regulator_species_counts() -> None:
-    section("T1: regulator-by-regulator species counts at d=4")
+    section("T1: declared regulator-by-regulator species counts at d=4")
     distinct = len(set(REGULATOR_SPECIES_COUNTS_D4.values()))
     check(
-        "at least three distinct species counts across standard regulators",
+        "at least three distinct species counts across listed regulators",
         distinct >= 3,
         f"distinct={distinct}, counts={REGULATOR_SPECIES_COUNTS_D4}",
     )
     check(
-        "naive lattice count equals 2^4 = 16 (landed parent theorem)",
+        "naive lattice count equals 2^4 = 16 (parent theorem surface)",
         REGULATOR_SPECIES_COUNTS_D4["naive"] == 16,
         f"naive={REGULATOR_SPECIES_COUNTS_D4['naive']}",
     )
     check(
-        "Wilson lattice count equals 1 (single physical species)",
+        "B1 declares Wilson lattice count equals 1",
         REGULATOR_SPECIES_COUNTS_D4["wilson"] == 1,
         f"wilson={REGULATOR_SPECIES_COUNTS_D4['wilson']}",
     )
     check(
-        "overlap and domain-wall counts equal 1 (Ginsparg-Wilson chiral)",
+        "B1 declares overlap and domain-wall counts equal 1",
         REGULATOR_SPECIES_COUNTS_D4["overlap"] == 1
         and REGULATOR_SPECIES_COUNTS_D4["domain_wall"] == 1,
         f"overlap={REGULATOR_SPECIES_COUNTS_D4['overlap']}, "
@@ -192,31 +188,16 @@ def test_regulator_dependence_of_predicted_v() -> None:
 
 
 # ---------------------------------------------------------------------------
-# T3: continuum-limit uniqueness -- all standard regulators converge to
-# the same continuum SM as a -> 0
+# T3: declared common-continuum packet across listed regulators
 # ---------------------------------------------------------------------------
 
 
 def test_continuum_limit_uniqueness() -> None:
-    section("T3: continuum-limit uniqueness across regulators")
-    # This is a structural fact of lattice gauge theory. We codify it as a
-    # registered claim. References:
-    #   - Symanzik, "Continuum limit and improved action in lattice
-    #     theories", NPB 226 (1983) 187
-    #   - Reisz, "A power-counting theorem for Feynman integrals on the
-    #     lattice", CMP 116 (1988) 81
-    #   - Luscher, "Selected topics in lattice field theory", in 'Fields,
-    #     Strings, Critical Phenomena' (1988)
-    # Each says: a renormalisable lattice action whose continuum limit
-    # satisfies the standard power counting reaches the same continuum
-    # theory as a -> 0, independent of the lattice action chosen (modulo
-    # the Symanzik-improvement program for sub-leading O(a^n) corrections).
-
-    # Codify each regulator's continuum-limit target identity. Each maps
-    # to the same continuum SM after the regulator-specific reduction.
-    # The continuum target label is the SAME across all six (the SM); the
-    # reduction prescription varies. Symanzik-improvement / Reisz power
-    # counting forces the same target.
+    section("T3: declared common-continuum packet across regulators")
+    # B2 declares each regulator's continuum-limit target identity. Each
+    # maps to the same continuum SM after the regulator-specific reduction.
+    # This runner checks consequences of that declaration; it does not
+    # derive the common-continuum theorem.
     continuum_target = {
         "naive": "SM",
         "wilson": "SM",
@@ -227,9 +208,9 @@ def test_continuum_limit_uniqueness() -> None:
     }
     distinct_continuum_targets = len(set(continuum_target.values()))
     check(
-        "all six standard regulators target a SINGLE continuum limit (SM)",
+        "B2 declares all six listed regulators target a single continuum limit (SM)",
         distinct_continuum_targets == 1,
-        "all map to: 'SM' (regulator-specific reductions differ; see note §4)",
+        "all map to: 'SM' (regulator-specific reductions differ; see note B2)",
     )
 
 
@@ -250,8 +231,8 @@ def test_naive_direct_match() -> None:
 
 
 # ---------------------------------------------------------------------------
-# T5: at other d, the naive count is 2^d, and the substitution-bridge
-# would predict alpha_LM^{2^d} -- which has no honest sensible reading
+# T5: at other d, the naive count is 2^d, so the substitution-bridge
+# would predict alpha_LM^{2^d} on a different regulator surface
 # ---------------------------------------------------------------------------
 
 
@@ -297,11 +278,9 @@ def test_regulator_independence_formal_check() -> None:
     #
     # (a) alpha_LM(a)^N_species(R) tends to a common limit independent of
     #     R. Since alpha_LM(a) is bounded away from 0 and 1 at fixed
-    #     beta, and N_species differs across regulators (T1), this is
-    #     ONLY possible if v/M_Pl factor is universal AT a SPECIFIC
-    #     anchor scale -- i.e., the lattice-side normalisation of
-    #     alpha_LM itself depends on the regulator in a way that cancels
-    #     the N_species variation.
+    #     beta, and N_species differs across regulators (T1), this needs
+    #     a regulator-specific normalisation of alpha_LM that cancels the
+    #     N_species variation.
     #
     # (b) The framework's substrate is implicit in alpha_LM itself, so
     #     alpha_LM is regulator-specific. In that case, the hierarchy
@@ -309,15 +288,15 @@ def test_regulator_independence_formal_check() -> None:
     #     on the lattice surface; the regulator-independent continuum
     #     observable IS NOT v/M_Pl as written but a different combination.
     #
-    # Either resolution requires accepting that the bridge "N_species ->
-    # alpha_LM^N exponent" is not a regulator-independent QFT identity.
+    # Either resolution requires supplying a substrate/regulator target
+    # rather than deriving the bridge from lattice-action-uniform inputs.
     obstruction_routes = [
         "(O1) require regulator-specific alpha_LM cancellation: substrate-imposed",
         "(O2) re-define v/M_Pl as regulator-specific lattice ratio: substrate-imposed",
         "(O3) admit the bridge is regulator-DEPENDENT (this no-go): honest reading",
     ]
     check(
-        "three logically-exhaustive routes around the no-go all require substrate gate input",
+        "three named routes around the obstruction require a substrate/regulator target",
         len(obstruction_routes) == 3,
         "; ".join(obstruction_routes),
     )
@@ -334,11 +313,15 @@ def test_note_boundary() -> None:
     must_have = [
         "**Claim type:**",
         "no_go",
+        "Declared boundary inputs (B1-B2)",
+        "Registered Tier-A routing",
+        "AC_phi_lambda",
+        "**Status authority:** independent audit lane only",
         "regulator",
         "species count",
         "continuum limit",
         "staggered_dirac_realization_gate_note_2026-05-03",
-        "Symanzik",
+        "Symanzik/Reisz",
     ]
     missing = [item for item in must_have if item not in text]
     forbidden = [
@@ -364,7 +347,7 @@ def main() -> int:
     test_d_variation_breaks_hierarchy()
     test_regulator_independence_formal_check()
     test_note_boundary()
-    print(f"\n=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")
+    print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 
 

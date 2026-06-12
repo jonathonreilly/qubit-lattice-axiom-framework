@@ -14,6 +14,11 @@ from __future__ import annotations
 
 import sys
 from fractions import Fraction
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md"
 
 
 PASS = 0
@@ -47,6 +52,18 @@ def scale_gram(gram: list[list[Fraction]], c_squared: Fraction) -> list[list[Fra
 
 
 def main() -> int:
+    note_text = NOTE.read_text(encoding="utf-8")
+    check(
+        "source declares Wilson action-surface rescaling as accepted/scoped premise",
+        "accepted/scoped premise" in note_text
+        and "does not derive that rule from WM alone" in note_text,
+    )
+    check(
+        "source blocks unconditioned rescaling-freedom removal",
+        "future unconditioned rescaling-freedom-removal theorem" in note_text
+        and "retained Wilson action-surface rescaling authority" in note_text,
+    )
+
     gram = canonical_gram()
     n_c = Fraction(3)
     g_bare_sq = Fraction(1)

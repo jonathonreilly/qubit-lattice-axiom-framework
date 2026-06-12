@@ -317,17 +317,26 @@ check(
 )
 check(
     "section0_imports_are_implementation_inputs",
-    "visible implementation inputs rather than retained proof authorities" in note_text,
+    "visible" in note_text
+    and "accepted-premise implementation inputs" in note_text
+    and "accepted-premise implementation inputs for this bounded" in note_text,
     "canonical plaquette and Ward target are not proof authorities for this row",
 )
 check(
     "section0_continuum_claims_excluded",
-    "does not claim continuum monotonicity, exact continuum uniqueness" in note_text,
+    "does not assert continuum" in note_text
+    and "unique-root closure" in note_text
+    and "does not claim continuum monotonicity, exact continuum uniqueness" in note_text,
     "finite grid diagnostic only",
 )
 check(
+    "section0_accepted_premise_inputs_enumerated",
+    all(token in note_text for token in ("**I1:**", "**I2:**", "**I3:**", "**I4:**", "**I5:**")),
+    "plaquette, Ward target, RGE, thresholds, and EW initial conditions are enumerated",
+)
+check(
     "section0_runner_count_updated",
-    "Counts: 28 PASS, 0 FAIL" in note_text,
+    "Counts: 29 PASS, 0 FAIL" in note_text,
     "note scorecard matches source-boundary runner",
 )
 check(

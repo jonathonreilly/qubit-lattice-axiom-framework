@@ -2,15 +2,14 @@
 
 **Date:** 2026-05-17
 **Type:** bounded_theorem
-**Claim scope:** the standalone numerical-mathematical statement that the
-backward-RGE map `y_t(v) -> y_t(M_Pl)` used in the BC-transfer step of the
-parent `yt_boundary_theorem` (claim iv) is well-defined, smooth, strictly
-monotone, locally Lipschitz with a finite numerical constant, free of
-Landau-pole obstruction on the segment `[ln v, ln M_Pl]` for SM-physical
-initial data in the scan interval `y_t(v) in [0.5, 1.2]`, and therefore
-admits a UNIQUE root of the lattice Ward boundary condition
-`y_t(M_Pl) = g_lattice / sqrt(6) = 0.43577` in that interval at
-`y_t(v) = X* = 0.97267 +/- 1e-10`.
+**Claim scope:** the standalone finite-grid numerical diagnostic that the
+runner's backward-RGE map `y_t(v) -> y_t(M_Pl)` is finite on the sampled
+trajectories, increasing on the runner's 33-point `X` grid, has finite
+observed grid slopes, and gives stable bracketed `brentq` roots for the
+runner's supplied Ward boundary target
+`y_t(M_Pl) = g_lattice / sqrt(6) = 0.43577` near
+`y_t(v) = X* = 0.97267 +/- 1e-10`, all conditional on the runner's
+accepted-premise implementation inputs.
 
 The scan interval `[0.5, 1.2]` is chosen physically: it is strictly below
 the SM-EFT Yukawa Landau-pole-like onset, which the runner locates
@@ -25,10 +24,9 @@ device** asserted in claim (iv) of `YT_BOUNDARY_THEOREM.md`. It does NOT
 re-derive Options A / B / C in the parent and it does NOT claim that the SM
 EFT is physical at `M_Pl`. It establishes the strictly weaker but
 prerequisite fact that the backward-extrapolation root-finder used to
-implement Option A in `frontier_yt_boundary_consistency.py` has a unique
-solution. The unique-root claim is what makes "the BC transfer selects a
-unique trajectory" in claim (iv) a mathematically defensible statement
-rather than an implicit assumption.
+implement Option A in `frontier_yt_boundary_consistency.py` is reproducible
+and stable on the declared finite grid. It does not assert continuum
+unique-root closure.
 
 **Status authority:** independent audit lane only.
 
@@ -41,7 +39,7 @@ The direct claim is a bounded finite-grid diagnostic over the runner's explicit
 implementation inputs. The canonical plaquette constants, Ward target, two-loop
 SM RGE normalization, threshold scales, and EW initial conditions are not
 load-bearing retained proof authorities for this row. They are visible
-implementation inputs to the finite diagnostic.
+accepted-premise implementation inputs to the finite diagnostic.
 
 The row therefore asks only whether the registered runner performs the stated
 finite checks on the stated grid and brackets:
@@ -112,12 +110,21 @@ This is the whole source-side claim. The branch intentionally does not promote `
 
 ## Imported Inputs
 
-The following are implementation inputs for this bounded diagnostic, not retained proof authorities supplied by this note:
+The following are accepted-premise implementation inputs for this bounded
+diagnostic, not retained proof authorities supplied by this note:
 
-- `CANONICAL_PLAQUETTE`, `CANONICAL_U0`, `CANONICAL_ALPHA_BARE`, `CANONICAL_ALPHA_LM`, and `CANONICAL_ALPHA_S_V` from `scripts/canonical_plaquette_surface.py`.
-- `WARD_TARGET = g_lattice / sqrt(6)` as the target boundary value used by the runner.
-- The two-loop SM RGE coefficients and threshold procedure copied into the runner from the existing YT consistency implementation.
-- The fixed threshold scales used by the runner (`M_T_POLE`, `M_B_MSBAR`, `M_C_MSBAR`) as numerical RGE seeds, not fitted proof targets.
+- **I1:** `CANONICAL_PLAQUETTE`, `CANONICAL_U0`, `CANONICAL_ALPHA_BARE`,
+  `CANONICAL_ALPHA_LM`, and `CANONICAL_ALPHA_S_V` from
+  `scripts/canonical_plaquette_surface.py`.
+- **I2:** `WARD_TARGET = g_lattice / sqrt(6)` as the target boundary value
+  used by the runner.
+- **I3:** the two-loop SM RGE coefficients and threshold procedure copied
+  into the runner from the existing YT consistency implementation.
+- **I4:** the fixed threshold scales used by the runner (`M_T_POLE`,
+  `M_B_MSBAR`, `M_C_MSBAR`) as numerical RGE seeds, not fitted proof
+  targets.
+- **I5:** the EW initial-condition constants at `M_Z` (`ALPHA_EM_MZ`,
+  `SIN2_TW_MZ`) and derived initial `g1(v), g2(v)` surface.
 
 No PDG observable value is consumed by the load-bearing pass/fail checks. The runner may print familiar scales for context, but the checks evaluate only the coded diagnostic.
 
@@ -132,7 +139,7 @@ No PDG observable value is consumed by the load-bearing pass/fail checks. The ru
 
 ## Runner Evidence
 
-The runner performs 28 pass/fail checks:
+The runner performs 29 pass/fail checks:
 
 - setup and imported-input consistency checks;
 - finite trajectory checks on a coarse `X` grid;
@@ -145,7 +152,7 @@ The runner performs 28 pass/fail checks:
 Expected result:
 
 ```text
-Counts: 28 PASS, 0 FAIL
+Counts: 29 PASS, 0 FAIL
 ```
 
 ## Audit Graph Hygiene

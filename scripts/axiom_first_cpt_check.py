@@ -77,7 +77,7 @@ Check blocks:
   [CPT]  composite (CPT1) Theta^2 = id and (CPT2) Theta M Theta^{-1}
          = M^* on every non-degenerate block.
   [DET]  (CPT4) det(M) real; (CPT5) computational corollary: a
-         CPT-odd bilinear kernel has vanishing fermion-sector
+         Theta_CPT-odd bilinear kernel has vanishing fermion-sector
          expectation tr(A_odd M^{-1}) = 0.
   [FALS] falsifiers: reflection without the sign field fails; wrong
          sign field fails; site-centered reflection under APBC fails;
@@ -243,17 +243,17 @@ def main() -> int:
                   resid(V @ M.conj() @ V.T - M.conj()) == 0.0
                   and resid(V @ M @ V.T - M) == 0.0)
 
-            # determinant reality + CP-odd corollary
+            # determinant reality + Theta_CPT-odd corollary
             detM = np.linalg.det(M)
             check("DET", "(CPT4) det(M) real",
                   abs(np.imag(detM)) == 0.0, f"det = {detM:.6e}")
             rng = np.random.default_rng(20260429)
             B = rng.standard_normal((N, N))
-            A_odd = B - V @ B @ V.T          # CPT-odd part: V A V^-1 = -A
-            check("DET", "(CPT5) CPT-odd kernel: V A_odd V^-1 = -A_odd exactly",
+            A_odd = B - V @ B @ V.T          # Theta_CPT-odd part: V A V^-1 = -A
+            check("DET", "(CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly",
                   resid(V @ A_odd @ V.T + A_odd) < 1e-12)
             ev = abs(np.trace(A_odd @ np.linalg.inv(M)))
-            check("DET", "(CPT5) fermion-sector expectation of the CPT-odd "
+            check("DET", "(CPT5) fermion-sector expectation of the Theta_CPT-odd "
                          "bilinear vanishes: |tr(A_odd M^-1)| = 0",
                   ev < 1e-10, f"|tr| = {ev:.2e}")
 

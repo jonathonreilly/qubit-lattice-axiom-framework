@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_cpt_check.py
-runner_sha256: 2cc6a72a4777486bb28978cff38ee9bc75f3b72cc3b113206bfc62f027a34c55
+runner_sha256: c73307ecd338a6986dd1e3dd44fbcc601bb55e0c9e89015364230c98f58661a3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 ============================================================================
@@ -30,8 +30,8 @@ block 2^4 all-APBC, m = 0.3  (N = 16)
   [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
   [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
   [PASS] [DET] (CPT4) det(M) real  (det = 7.830445e+04)
-  [PASS] [DET] (CPT5) CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
-  [PASS] [DET] (CPT5) fermion-sector expectation of the CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 2.22e-16)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 2.22e-16)
   [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
   [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
   [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
@@ -48,8 +48,8 @@ block 2^4 all-APBC, m = 0.5  (N = 16)
   [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
   [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
   [PASS] [DET] (CPT4) det(M) real  (det = 1.064416e+05)
-  [PASS] [DET] (CPT5) CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
-  [PASS] [DET] (CPT5) fermion-sector expectation of the CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 4.44e-16)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 4.44e-16)
   [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
   [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
   [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
@@ -66,8 +66,8 @@ block 4^4 periodic, m = 0.3  (N = 256)
   [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
   [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
   [PASS] [DET] (CPT4) det(M) real  (det = 5.902929e+28)
-  [PASS] [DET] (CPT5) CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
-  [PASS] [DET] (CPT5) fermion-sector expectation of the CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 2.58e-14)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 2.58e-14)
   [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
   [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
 
@@ -83,8 +83,8 @@ block 4^4 periodic, m = 0.5  (N = 256)
   [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
   [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
   [PASS] [DET] (CPT4) det(M) real  (det = 3.951667e+36)
-  [PASS] [DET] (CPT5) CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
-  [PASS] [DET] (CPT5) fermion-sector expectation of the CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 6.22e-15)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 6.22e-15)
   [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
   [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
 
@@ -100,8 +100,8 @@ block 4^4 APBC-time, m = 0.3  (N = 256)
   [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
   [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
   [PASS] [DET] (CPT4) det(M) real  (det = 5.255258e+34)
-  [PASS] [DET] (CPT5) CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
-  [PASS] [DET] (CPT5) fermion-sector expectation of the CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 7.11e-15)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 7.11e-15)
   [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
   [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
   [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
@@ -118,8 +118,8 @@ block 4^4 APBC-time, m = 0.5  (N = 256)
   [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
   [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
   [PASS] [DET] (CPT4) det(M) real  (det = 8.695131e+39)
-  [PASS] [DET] (CPT5) CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
-  [PASS] [DET] (CPT5) fermion-sector expectation of the CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 1.78e-14)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 1.78e-14)
   [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
   [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
   [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
@@ -136,8 +136,8 @@ block 4x2x4x2 mixed-APBC, m = 0.3  (N = 64)
   [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
   [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
   [PASS] [DET] (CPT4) det(M) real  (det = 6.841482e+09)
-  [PASS] [DET] (CPT5) CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
-  [PASS] [DET] (CPT5) fermion-sector expectation of the CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 8.88e-16)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 8.88e-16)
   [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
   [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
   [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)
@@ -154,8 +154,8 @@ block 4x2x4x2 mixed-APBC, m = 0.5  (N = 64)
   [PASS] [CPT] (CPT1) involution: Theta^2 = id  (V real, V^2 = I)
   [PASS] [CPT] (CPT2) Theta M Theta^-1 = M^*  (corrected chain lands at M^*, not M^dagger)
   [PASS] [DET] (CPT4) det(M) real  (det = 8.278123e+10)
-  [PASS] [DET] (CPT5) CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
-  [PASS] [DET] (CPT5) fermion-sector expectation of the CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 8.88e-16)
+  [PASS] [DET] (CPT5) Theta_CPT-odd kernel: V A_odd V^-1 = -A_odd exactly
+  [PASS] [DET] (CPT5) fermion-sector expectation of the Theta_CPT-odd bilinear vanishes: |tr(A_odd M^-1)| = 0  (|tr| = 8.88e-16)
   [PASS] [FALS] falsifier: reflection WITHOUT the sign field fails (plain S = 1)
   [PASS] [FALS] falsifier: WRONG sign field (-1)^{x_2} fails
   [PASS] [FALS] falsifier: SITE-centered reflection x -> -x mod L is wrap-incompatible under APBC (boundary convention is load-bearing)

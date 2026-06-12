@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_import_two_bit_decomposition_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
         "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30",
         "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07",
         "koide_carrier_locus_decomposition_note_2026-06-01",
         "koide_dkd_berry_spectator_note_2026-05-31",
-        "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05"
+        "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
+        "koide_import_two_bit_decomposition_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "db3f77e00d075a48b1437284e4f40e4aadfa3c61bfceeffd1bf955ccfcd01ba2",
+      "note_hash": "51e7ff3984d074d20bded0a9b3c2e9c909594600f324ffcab7c33356e918c42c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1497 |
-| Retained-grade rows, including boxed decorations | 1338 |
+| Applied audit verdicts | 1498 |
+| Retained-grade rows, including boxed decorations | 1339 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 860 |
+| Retained bounded rows | 861 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 39 |
-| Unaudited rows | 1374 |
+| Unaudited rows | 1373 |
 | Retained-pending-chain rows | 17 |
 | Audited conditional rows | 57 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1376 |
-| Ready rows | 16 |
+| Total pending rows | 1375 |
+| Ready rows | 15 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
 | High pending | 285 |
 | Medium pending | 411 |
-| Leaf pending | 408 |
+| Leaf pending | 407 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30`](../../docs/FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07`](../../docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`koide_carrier_locus_decomposition_note_2026-06-01`](../../docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md) - medium; unaudited
 - [`koide_dkd_berry_spectator_note_2026-05-31`](../../docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md) - medium; unaudited
 - [`koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md) - medium; unaudited
-- [`koide_import_two_bit_decomposition_note_2026-05-30`](../../docs/KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md) - leaf; unaudited
+- [`koide_import_two_bit_decomposition_note_2026-05-30`](../../docs/KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md) - medium; unaudited
+- [`koide_kahler_dirac_silent_on_measure_note_2026-05-30`](../../docs/KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

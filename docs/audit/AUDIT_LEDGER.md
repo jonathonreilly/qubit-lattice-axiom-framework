@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 860 |
+| **retained_bounded** | 861 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 39 |
-| unaudited | 1374 |
+| unaudited | 1373 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1314 |
+| `audited_clean` | 1315 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1691 |
+| `unaudited` | 1690 |
 
 | claim_type | count |
 |---|---:|
@@ -501,6 +501,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -7049,6 +7050,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For compactly supported smooth psi, the phase, Lorentz pullback, and SU(2) carrier vary pointwise continuously near the identity and are dominated on a common compact support, so dominated convergence gives ||U(a,Lambda)psi - psi|| -> 0, and unitary density extends this to all H_1.  _(class `A`)_
 - **chain closes:** True — The retained_bounded companion supplies mass-shell preservation, invariant d^3p/(2E), and Wigner/SU(2) carrier facts. From those inputs, the displayed action has unitary norm preservation, the Wigner cocycle gives the semidirect product group law, and the dense-carrier dominated-convergence plus epsilon/3 argument gives strong continuity on H_1.
 - **rationale:** The load-bearing step is an analytic/algebraic closure over explicit retained-bounded continuum Wigner-action inputs, not a definition substitution or tuned numerical match. Independent formula checks close the semidirect product phase, Wigner cocycle, invariant-measure unitarity, SU(2) carrier unitarity/group law, and the dense-to-completion strong-continuity bridge within the stated bounded scope. The runner is partly artifact/dependency verification and finite proxy checking, but the restricted source and retained-bounded companion authority are sufficient for this bounded one-particle continuum claim. The note does not claim lattice Lorentz derivation, spin-statistics, interacting theory, or direct retained-status promotion.
+- **auditor confidence:** high
+
+### `free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30`
+
+- **Note:** [`FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md`](../../docs/FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For fixed m > 0, the displayed free staggered-Dirac covariance converges against Schwartz spinor tests to the continuum free Dirac covariance, with taste only as four-fold spectral multiplicity; within a specified fermionic quasi-free state this implies convergence of fixed finite Pfaffian Schwinger functions and the Grassmann generating functional.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-022307-6d65244338-free_field_lattice_to_contin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bound ||S_a(p)||_F^2 = 4/Delta_a(p) with Delta_a(p) >= m^2 gives |fbar(p) S_a(p) g(p)| <= (2/m)|f(p)||g(p)|, so dominated convergence upgrades pointwise S_a(p) -> S(p) to smeared covariance convergence, and Pfaffian/Wick polynomiality then gives fixed finite Schwinger convergence.  _(class `A`)_
+- **chain closes:** True — The one-hop authority is retained_bounded and supplies the covariance formula, pointwise continuum limit, and taste multiplicity used here. The source note then closes the bounded claim by standard dominated convergence plus finite Pfaffian polynomial continuity, without importing the transfer-matrix bridge or OS reconstruction.
+- **rationale:** The independent formula check closes the load-bearing math: the Clifford identity gives S_a S_a^dagger = Delta_a^{-1} I_4, hence ||S_a||_F^2 = 4/Delta_a and the stated Schwartz-integrable envelope; Jordan's inequality gives the optional central-zone refinement. The Pfaffian and generating-functional claims are finite polynomial continuity statements inside the already specified quasi-free fermionic category, not a statistics-selection theorem. The runner source performs real finite checks rather than printing constants; its alpha-matrix taste check is first-principles, while the main convergence step remains standard algebraic/analytic closure over retained-grade input.
 - **auditor confidence:** high
 
 ### `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08`

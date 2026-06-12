@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_trivial_slice_eigen_identity_lemma_2026_06_12.py
+runner_sha256: b8b5feffb1fe86d48ebd3323b96999150f6e263d0947df00b34f7f24aa3716c1
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.42
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette trivial-slice eigen-identity lemma runner
+finite packet: NMAX=4, MODE_MAX=80, words checked=2,3,4
+
+================================================================================================
+Part 1: packet algebra identities
+================================================================================================
+D(0,0)=1.000000000000
+D(1,0)=0.422531739650
+D(0,1)=0.422531739650
+dim(1,0)=3, dim(0,1)=3
+PASS: fundamental and antifundamental packet coefficients match by conjugation
+      D_f-D_fb=0.000e+00
+PASS: trivial row of fusion sum sees exactly the fundamental pair
+      survivors=[(0, 1), (1, 0)]
+PASS: predicted slice support has six finite-box weights
+      support=[(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (2, 0)]
+PASS: k=2 matrix-element middle support is the all-equal diagonal
+      nonzero=25, max_diff=4.337e-19
+PASS: k=3 matrix-element middle support is the all-equal diagonal
+      nonzero=25, max_diff=1.355e-20
+PASS: closed normalized formula gives the measured rho10 and rho11
+      rho10=0.211265869825, rho11=0.162259799480
+
+================================================================================================
+Part 2: two-word and three-word Perron slices
+================================================================================================
+k=2 eig=0.156078513772, residual=2.082e-17
+k=3 eig=0.045553399484, residual=6.939e-18
+raw k=3/k=2 slice ratio=0.025986536153, spread=1.388e-16
+PASS: two-word trivial slice equals the closed formula
+      max_diff=8.327e-17
+PASS: three-word trivial slice equals the closed formula
+      max_diff=4.718e-16
+PASS: measured raw two/three slice proportionality is reproduced
+      ratio=0.025986536153, reference=0.025986536153, spread=1.388e-16
+PASS: three-word full vector is not rank-one across the outer word
+      second/top singular ratio=0.024190312518
+
+================================================================================================
+Part 3: eigen-equation restriction checks
+================================================================================================
+PASS: k=2 restricted eigen-equation is exactly the two-channel formula
+      max_diff=8.327e-17
+PASS: k=2 Perron channel functionals are conjugation-equal
+      h_f=1.066002509669e+00, h_fb=1.066002509669e+00, diff=0.000e+00
+PASS: k=3 restricted eigen-equation is exactly the two-channel formula
+      max_diff=5.898e-17
+PASS: k=3 Perron channel functionals are conjugation-equal
+      h_f=5.740453588998e-02, h_fb=5.740453588998e-02, diff=6.939e-18
+
+================================================================================================
+Part 4: k=4 finite-rank prediction
+================================================================================================
+The k=4 check uses the 25 x 25 finite-rank reduction of the same operator.
+full k=4 dimension would be 390625
+k=4 reduced eig=0.016255508920
+PASS: finite-rank reduction reproduces the direct k=2 and k=3 eigenvalues
+      k2_delta=5.551e-17, k3_delta=0.000e+00
+PASS: finite-rank reduction reproduces the direct k=2 and k=3 slices
+      k2_diff=1.665e-16, k3_diff=4.718e-16
+PASS: k=4 matrix-element trivial slice equals the k-independent formula
+      rho10=0.211265869825, rho11=0.162259799480, max_diff=5.551e-17
+PASS: word-count-stationary trivial-slice source readout is reproduced
+      P=0.429196712321
+
+================================================================================================
+Part 5: falsification controls
+================================================================================================
+symmetric character-control eigs: k2=0.456421298630, k3=0.219691349471
+perturbed character-control eigs: k2=1.602334430950, k3=2.817982535078
+perturbed normalized-slice max diff=4.061e-02, raw-ratio spread=4.854e-01
+PASS: unperturbed character-level bond preserves this trivial-slice closure
+      k2_diff=2.776e-17, k3_diff=2.776e-17
+PASS: conjugation-asymmetric character-level perturbation breaks slice proportionality
+      norm_diff=4.061e-02, raw_spread=4.854e-01
+
+================================================================================================
+Part 6: bounded statement inputs
+================================================================================================
+Status authority: independent audit lane only. This source note does not set or predict an audit outcome.
+No new literature values, axioms, external citations, or comparator numbers are imported; all checks use the finite packet and landed runner construction.
+Named residuals: finite dominant-weight box; finite Bessel mode support; no full physical 3D environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no evaluated full rim-boundary eta_beta^env; no analytic P(6).
+PASS: closed formula is normalized at the trivial channel and nonnegative on the finite box
+      min=0.000e+00, rho00=1.000000000000
+
+TOTAL: PASS=21, FAIL=0
+
+----- stderr -----
+

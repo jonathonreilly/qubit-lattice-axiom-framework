@@ -1,0 +1,26 @@
+loop: gbare-structural-normalization-demotion-20260612
+branch: physics-loop/gbare-structural-normalization-demotion-20260612
+base: origin/main@421ec87f7
+status: pr_ready
+target_claim_id: g_bare_structural_normalization_theorem_note_2026-04-18
+target_note: docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md
+target_runner: scripts/frontier_g_bare_structural_normalization.py
+actual_current_surface_status: demotion
+conditional_surface_status: bounded-support
+hypothetical_positive_status: requires_new_action_or_connection_normalization_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: demotion
+files_touched:
+  - docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md
+  - scripts/frontier_g_bare_structural_normalization.py
+  - logs/runner-cache/frontier_g_bare_structural_normalization.txt
+  - .claude/science/physics-loops/gbare-structural-normalization-demotion-20260612/
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_g_bare_structural_normalization.py -> PASS=74 FAIL=0"
+open_imports:
+  - Wilson plaquette action form
+  - physical action coefficient / connection normalization rho = g^2
+  - upstream graph-first axis selector and hw=1 triplet status
+stop_condition: source repair branch opened for reviewer
+next_exact_action: independent review/audit can decide whether repaired source demotes the row or asks for a positive normalization theorem

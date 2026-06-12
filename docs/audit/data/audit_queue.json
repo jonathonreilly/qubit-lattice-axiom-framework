@@ -3,7 +3,7 @@
     "critical": 278,
     "high": 285,
     "leaf": 469,
-    "medium": 428
+    "medium": 427
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -17115,7 +17115,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
+      "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -17123,18 +17123,27 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "cl3_color_automorphism_theorem",
-        "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+        "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+        "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
+        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
+        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
+        "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
+        "plaquette_self_consistency_note"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.728,
-      "note_path": "docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py",
+        "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
+        "scripts/dm_full_closure_same_surface_thermal_support_common.py",
+        "scripts/dm_leptogenesis_exact_common.py"
+      ],
+      "load_bearing_score": 7.672,
+      "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py",
-      "transitive_descendants": 52
+      "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py",
+      "transitive_descendants": 50
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17281,7 +17290,7 @@
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
         "plaquette_self_consistency_note"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
@@ -17289,12 +17298,12 @@
         "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
         "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
       ],
-      "load_bearing_score": 3.5,
+      "load_bearing_score": 6.322,
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06_12.py",
-      "transitive_descendants": 3
+      "transitive_descendants": 19
     },
     {
       "audit_independence_required": "any_non_self",
@@ -20808,40 +20817,6 @@
       "ready": false,
       "runner_path": null,
       "transitive_descendants": 51
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
-        "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
-        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
-        "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
-        "plaquette_self_consistency_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
-        "scripts/dm_full_closure_same_surface_thermal_support_common.py",
-        "scripts/dm_leptogenesis_exact_common.py"
-      ],
-      "load_bearing_score": 7.672,
-      "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py",
-      "transitive_descendants": 50
     },
     {
       "audit_independence_required": "any_non_self",
@@ -43986,5 +43961,5 @@
     }
   ],
   "ready_count": 61,
-  "total_pending": 1460
+  "total_pending": 1459
 }

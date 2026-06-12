@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "d3_upper_bound_import_scope_gate_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
         "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
         "gellmann_completeness_theorem_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
         "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
         "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
-        "d3_upper_bound_import_scope_gate_note_2026-06-06"
+        "d3_upper_bound_import_scope_gate_note_2026-06-06",
+        "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "39797e6579ad57290ecf0c147c9a2bc57531b65e9c9c26b073de70b589a3b644",
+      "note_hash": "c426ef22130e9ad100f5b22379f3cb5fd00fb91cc37c4b3b15184cb4d5cf14a2",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

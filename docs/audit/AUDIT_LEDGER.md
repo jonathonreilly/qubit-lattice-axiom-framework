@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 215 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 852 |
+| **retained_bounded** | 853 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1458 |
+| unaudited | 1457 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1301 |
+| `audited_clean` | 1302 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1775 |
+| `unaudited` | 1774 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
 | 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
-| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
+| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
@@ -352,6 +352,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_continuum_limit_velocity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_current_bank_quantitative_mapping_note_2026-04-21` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_dple_abcc_no_go_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
 | `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4843,6 +4844,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `DM_ETA_NSITES_V_STRUCTURAL_SUPPORT_LIFT_THEOREM_NOTE_2026-04-29.md`
   - `HIGGS_MASS_FROM_AXIOM_NOTE.md`
   - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
+- **auditor confidence:** high
+
+### `dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic SU(3) carrier identity that the 3 x 3bar singlet/octet multiplicities and squared channel factors normalize to visible-channel coefficients 8/9 and 1/9; physical-color identification and downstream DM closure are outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-234519-bd30328d77-dm_full_closure_64_to_1_chan`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The multiplicity-folded squared color weights are w_1=(1/9)(4/3)^2=16/81 and w_8=(8/9)(1/6)^2=2/81, so (w_1 s_1+w_8 s_8)/(w_1+w_8)=(8s_1+s_8)/9.  _(class `A`)_
+- **chain closes:** True — From the retained algebraic SU(3) carrier with N_c=3 and 3 x 3bar=1+8, the standard Casimir relation for q qbar channels gives singlet -4/3 and octet +1/6. Squaring these factors, multiplying by multiplicities 1 and 8, and normalizing gives the displayed formula, while the note explicitly preserves the physical-color and downstream-closure deferrals.
+- **rationale:** The load-bearing step is finite SU(3) algebra plus rational normalization, not a new empirical match or definition substitution. The runner source constructs explicit Gell-Mann generators, singlet/octet projectors, channel scalars, and exact Fraction arithmetic rather than merely printing constants, and its 29 checks pass with no failures. An independent Casimir check T_q.T_qbar=(C_R-2C_F)/2 reproduces -4/3 for the singlet and +1/6 for the octet, and the 64:1 to 8:1 fold follows exactly. The cited authorities are retained_bounded and are used only for the algebraic carrier split and Sommerfeld notation; their physical-color deferrals are not imported into this scoped claim.
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16`

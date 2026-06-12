@@ -50346,15 +50346,35 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
-      "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+      "to": "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "cl3_taste_generation_theorem"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
     },
     {
       "from": "repo.repo_organization",
@@ -96664,12 +96684,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+        "cl3_color_automorphism_theorem",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
-        "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04"
+        "axiom_first_lattice_noether_theorem_note_2026-04-29",
+        "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
+        "cl3_taste_generation_theorem",
+        "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6d9361e9e35668546f81d6f84359635ce4ec908ce5fed8d405c63b985b189dd5",
+      "note_hash": "685e7f23d9df82458ac16d880f48f0d0c4f997ffa99f2ec12e5ff7d972769a62",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -111316,7 +111341,7 @@
       "open_gate": 162,
       "positive_theorem": 615
     },
-    "edge_count": 12691,
+    "edge_count": 12696,
     "leaf_count": 1092,
     "node_count": 3383,
     "root_count": 1059,

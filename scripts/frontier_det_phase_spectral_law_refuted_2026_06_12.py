@@ -260,12 +260,13 @@ def main() -> int:
     check(
         len(predicted_bins) == 7,
         "U4a predicted order-3 set has EXACTLY 7 of 256 bins (sparse, contentful)",
+        f"size={len(predicted_bins)}",
     )
-    gcd_set_size = len(set(range(0, T_STEPS, 1)))
     check(
-        gcd_set_size == T_STEPS,
+        len(set(range(0, T_STEPS, 1))) == T_STEPS,
         "U4a gcd-vacuity control: the rejected gcd construction would cover all "
         "256 bins (vacuous) -- rejected in favor of the sparse order-3 set",
+        f"gcd_cover={T_STEPS}",
     )
     check(
         min_predicted_fraction < 0.5,

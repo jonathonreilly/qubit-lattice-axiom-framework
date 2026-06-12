@@ -1,29 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_det_phase_spectral_law_refuted_2026_06_12.py
-runner_sha256: 693979c9ef4c97bd5917f5ee65e58d36b25646ea4be25d78659e546f4846db14
+runner_sha256: 69ffaaed20c490cea1ab9832e01ace70143a6d83f4bd8f202f20cbd37b9f3a65
 timeout_sec: 3000
-exit_code: 1
-elapsed_sec: 0.13
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
 ----- stdout -----
 SCOPE: deterministic baseline phase spectral anatomy at L=3; exact single-particle route; tau=0.35 aliases a gap by k(DeltaE)=round(T*((DeltaE*tau/2pi) mod 1)) mod T; direct gap bins=[0, 43, 213]; generated predicted bins count=7; frequencies are dispersion data, amplitudes are realized-state data; free sector only for this period.
 PASS: finite lattice has 3 sites, 3 colors, and 9 modes :: N_MODES=9
 PASS: ring indexing wraps across the finite lattice boundary :: forward=0 backward=2
 PASS: free single-particle Hamiltonian is the periodic nearest-neighbor ring :: hermitian=True nnz=18 wrap=True
-Traceback (most recent call last):
-  File "/private/tmp/u4-wt/scripts/frontier_det_phase_spectral_law_refuted_2026_06_12.py", line 302, in <module>
-    sys.exit(main())
-             ~~~~^^
-  File "/private/tmp/u4-wt/scripts/frontier_det_phase_spectral_law_refuted_2026_06_12.py", line 260, in main
-    check(
-    ~~~~~^
-        len(predicted_bins) == 7,
-        ^^^^^^^^^^^^^^^^^^^^^^^^^
-        "U4a predicted order-3 set has EXACTLY 7 of 256 bins (sparse, contentful)",
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-TypeError: check() missing 1 required positional argument: 'datum'
+PASS: U4a predicted order-3 set has EXACTLY 7 of 256 bins (sparse, contentful) :: size=7
+PASS: U4a gcd-vacuity control: the rejected gcd construction would cover all 256 bins (vacuous) -- rejected in favor of the sparse order-3 set :: gcd_cover=256
+PASS: U4a THE STATE-INDEPENDENT SPECTRAL LAW IS REFUTED: the order-3 gap-sum set (7 of 256 bins) captures under half the power at the worst state (min 0.33), with STATE-DEPENDENT capture spanning to 0.85 -- no few-frequency law holds at every state; the capture spread is the datum :: min_fraction=0.331017 max_fraction=0.854150 predicted_bins=7
+PASS: U4b full finite-window DFT support at the stated power floor for every tested state (a leakage statement under the binning convention -- gaps sit off-grid, e.g. bin 42.78 -> 43; NOT exact spectral support) :: support_sizes=256,256,256,256,256
+PASS: U4b at least one predicted-bin amplitude differs by more than 10 percent :: max_relative_difference=0.9988349630226561
+PASS: U4c polar blocks stay above the singular-value rank floor :: min_sv=0.01104016888029342 floor=1e-08
+TOTAL: PASS=9 FAIL=0
 
 ----- stderr -----
 

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 866 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1362 |
+| unaudited | 1361 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 61 |
+| ~~audited_conditional~~ | 62 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -62,28 +62,28 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1321 |
-| `audited_conditional` | 61 |
+| `audited_conditional` | 62 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1679 |
+| `unaudited` | 1678 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1557 |
+| `bounded_theorem` | 1558 |
 | `decoration` | 55 |
 | `meta` | 326 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 773 |
+| `positive_theorem` | 772 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 505 |
 | `high` | 505 |
-| `medium` | 866 |
-| `leaf` | 1314 |
+| `medium` | 865 |
+| `leaf` | 1315 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -1500,6 +1500,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -16176,6 +16177,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** False — The runner genuinely instantiates the finite sparse fermionic ring computation and the displayed monotonicity and median-ratio arithmetic check out. The exact/null-cleared claim does not close as written because null_p95 uses 300 seeded random label permutations, not an exhaustive or certified permutation-null p95, despite the note's exact/no-MC language.
 - **rationale:** The primary runner is not a constant-printer: it builds the operators, evolves the exact finite tree, computes profiles, rank guards, and sampled permutation-null gaps. Independent arithmetic checks confirm the displayed gap differences, monotone inequalities, overlapping ranges, and median ratio. However, the load-bearing null-clearing assertions are stronger than the implemented null calculation, because the runner samples 300 seeded permutations and provides no exact enumeration or finite-sample upper-bound certificate. The bounded monotonicity evidence is therefore auditable only conditional on repairing or narrowing the permutation-null claim.
 - **auditor confidence:** high
+
+### `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite, code-defined scan of L=3,4,5 ring instances with the stated seeds, selectors, eps=0.6, tau=0.35, C^3 carrier, min-gain statistic, and permutation-null protocol; no asymptotic, L>=6, or Z^3 claim audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-030153-6de6cdf07b-record_conditional_law_three`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The computed min-gain ledger for L=3,4,5, together with L=5 null-clearing 5/6 and gap medians about 0.139/0.193/0.095, is used to conclude that accessible period scans show no systematic period strengthening.  _(class `C`)_
+- **chain closes:** False — The runner source performs a real sparse operator computation rather than printing hard-coded constants, and the reported ledger arithmetic supports the finite no-strengthening pattern. The broader chain does not close from the restricted packet because the inherited Born/record-conditioning apparatus, instrument/carrier/hopping choices, selector comparability, and null protocol are not supplied as retained authorities; the advertised exact/no-MC null-clearing is also not supported by the code's fixed 300-draw permutation sample.
+- **rationale:** The primary runner instantiates the finite fermionic model and computes the profiles, min-gains, rank guards, and aggregate checks, so the load-bearing numerical step is class C at the code-defined finite-scan level. Independent arithmetic over the reported table confirms the 4/6 clear and 2/6 marginal L=5 count, 5/6 positive gaps, and non-monotone median sequence. However, the source packet provides no one-hop retained authorities for the inherited conditional-law premises and model choices, and the null-clearing exactness is overstated relative to the sampled permutation implementation. The claim is therefore only conditional on those open premises and protocol choices.
+- **auditor confidence:** medium
 
 ### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`
 

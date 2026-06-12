@@ -23,6 +23,6 @@ no_go_routes:
   - "Do not use commutes-with-Gamma_chi as a converse criterion for C3-equivariance outside the circulant generation-mass family."
 trace_gate_classification: partial direct blocker closure
 review_findings: []
-pr_status: pending
-next_exact_action: "commit, push, open review PR, then continue draining independent audited conditionals"
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3715"
+next_exact_action: "continue draining independent audited conditionals"
 stop_condition: "global conditional backlog exhausted or all remaining rows require new hard bridge science beyond this branch"

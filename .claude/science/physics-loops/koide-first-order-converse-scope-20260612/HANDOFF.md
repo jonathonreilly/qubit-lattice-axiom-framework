@@ -2,6 +2,8 @@
 
 Branch: `physics-loop/koide-first-order-converse-scope-20260612`
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3715
+
 Target row:
 `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`
 

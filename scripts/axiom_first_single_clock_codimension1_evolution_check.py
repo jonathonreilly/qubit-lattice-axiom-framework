@@ -12,9 +12,10 @@ Computes the load-bearing content of the axis-conditional theorem
       reconstruction, group laws, tau-rescaling (scope-boundary N2 is
       load-bearing), and the non-Hermitian-transfer falsifier.
 
-  [B] cross-note input verification: the (R-CD) Lieb-Robinson constant
-      v_LR = 2 e J_* D_int R_int is imported with its parameters named,
-      and the (R-CD) L1 bound form is instantiated from those imports.
+  [B] finite-range Lieb-Robinson sanity check on the explicit toy block:
+      the standard v_LR = 2 e J_* D_int R_int form is instantiated only
+      as a finite-range boundary witness, not as the current propagation
+      supplier for the source note.
 
   [C] first-principles computes:
       [C-LR]  computed Heisenberg commutator residuals vs the L1 bound,
@@ -39,8 +40,7 @@ Computes the load-bearing content of the axis-conditional theorem
               single-clock constraint and is excluded only by the
               declared premise B-AXIS.3 (= scope-boundary N5), which is
               therefore non-vacuous.
-      [C-RANGE] (2026-06-11 #2) finite-range generator premise
-              (B-RANGE) for the propagation clause S2'(c):
+      [C-BDRY] strict finite-range boundary for log-transfer generators:
               (i) consistency — the block Hamiltonian used in
               [A]/[B]/[C-LR] is EXACTLY finite-range (every Pauli
               string with support diameter > 1 has zero coefficient),
@@ -49,15 +49,17 @@ Computes the load-bearing content of the axis-conditional theorem
               transfer T = e^{-A/2} e^{-B} e^{-A/2} (A on sites {0,1},
               B on {1,2}) whose log-generator H_w = -log T has a
               computed NONZERO end-to-end Pauli component (support
-              diameter 2): finite-range-ness of a log-transfer
-              generator is not automatic, so (B-RANGE) is a genuine,
-              load-bearing premise;
+              diameter 2): strict finite-range-ness of a log-transfer
+              generator is not automatic, so the current theorem must
+              cite the retained free-bilinear quasilocal bridge rather
+              than keep the old B-RANGE premise;
               (iii) contrast — a single-factor local transfer logs
               back to its local generator exactly (the failure in (ii)
               is the non-commuting BCH tail, not a log artifact).
 
   [D] composition / circularity discipline: textual checks that the
-      companion note declares the premises (B-AXIS, B-RANGE),
+      companion note declares B-AXIS, retires B-RANGE from current
+      scope, cites the free-bilinear quasilocal propagation supplier,
       withdraws the old S3, and keeps the claim transfer- and
       tau-relative (guards against wording regression).
 
@@ -241,15 +243,16 @@ def block_A_slice(L: int) -> None:
 def block_BC_lieb_robinson(H: np.ndarray, L: int, J: float) -> None:
     print()
     print("-" * 72)
-    print("[B]/[C-LR] (S2') FINITE-SPEED PROPAGATION vs (R-CD) L1 BOUND")
+    print("[B]/[C-LR] FINITE-RANGE SANITY CHECK vs STANDARD LR BOUND")
     print("-" * 72)
 
-    # [B] import the (R-CD) constants: v_LR = 2 e J_* D_int R_int.
+    # [B] instantiate the standard finite-range constants:
+    # v_LR = 2 e J_* D_int R_int.
     # For the nearest-neighbor chain: J_* = J, D_int = 2 (each site is in
     # <= 2 interaction terms), R_int = 1.
     J_star, D_int, R_int = J, 2, 1
     v_LR = 2 * math.e * J_star * D_int * R_int
-    record("B", "(R-CD) import: v_LR = 2 e J_* D_int R_int instantiated",
+    record("B", "finite-range LR sanity: v_LR = 2 e J_* D_int R_int instantiated",
            abs(v_LR - 4 * math.e * J) < 1e-12,
            f"J_*={J_star}, D_int={D_int}, R_int={R_int} -> v_LR = {v_LR:.4f}")
 
@@ -464,9 +467,9 @@ def block_C_two_clock() -> None:
 
 
 # -------------------------------------------------------------------
-# [C-RANGE] finite-range generator premise (B-RANGE): consistency +
-# non-vacuity witness (the log of a strictly local positive transfer
-# is generically NOT finite-range)
+# [C-BDRY] strict finite-range boundary: consistency + counterexample
+# witness (the log of a strictly local positive transfer is generically
+# NOT finite-range)
 # -------------------------------------------------------------------
 
 SIGMA_Y = np.array([[0.0, -1j], [1j, 0.0]], dtype=complex)
@@ -492,16 +495,16 @@ def logm_herm(T: np.ndarray) -> np.ndarray:
     return V @ np.diag(np.log(w)) @ V.conj().T
 
 
-def block_C_range(H: np.ndarray, L: int) -> None:
+def block_C_range_boundary(H: np.ndarray, L: int) -> None:
     print()
     print("-" * 72)
-    print("[C-RANGE] (S2'c) FINITE-RANGE GENERATOR PREMISE (B-RANGE):")
-    print("          consistency + non-vacuity witness")
+    print("[C-BDRY] STRICT FINITE-RANGE BOUNDARY FOR LOG-TRANSFER GENERATORS:")
+    print("         sanity check + counterexample witness")
     print("-" * 72)
 
     # (i) consistency: the block Hamiltonian consumed by [A]/[B]/[C-LR]
-    # lies in the declared (B-RANGE) class EXACTLY — every Pauli string
-    # with support diameter > 1 has zero coefficient.
+    # lies in the finite-range class EXACTLY — every Pauli string with
+    # support diameter > 1 has zero coefficient.
     dim = 2**L
     max_far = 0.0
     for ops in itertools.product("IXYZ", repeat=L):
@@ -510,7 +513,7 @@ def block_C_range(H: np.ndarray, L: int) -> None:
             continue
         coef = abs(np.einsum("ij,ji->", pauli_string(s), H)) / dim
         max_far = max(max_far, float(coef))
-    record("C", "(B-RANGE consistency) block H is exactly finite-range: all "
+    record("C", "(finite-range sanity) block H is exactly finite-range: all "
            "Pauli strings with support diameter > 1 vanish",
            max_far < 1e-12, f"max far-string coeff = {max_far:.2e}")
 
@@ -522,7 +525,7 @@ def block_C_range(H: np.ndarray, L: int) -> None:
     T_loc = eA2 @ expm_herm(-1.0, B) @ eA2
     herm = opnorm(T_loc - T_loc.conj().T)
     min_eig = float(np.linalg.eigvalsh(0.5 * (T_loc + T_loc.conj().T)).min())
-    record("C", "(B-RANGE witness) strictly local transfer is positive Hermitian",
+    record("C", "(strict-range boundary) strictly local transfer is positive Hermitian",
            herm < 1e-12 and min_eig > 0.0,
            f"||T - T^dag|| = {herm:.2e}, min eig = {min_eig:.4f}")
 
@@ -537,27 +540,25 @@ def block_C_range(H: np.ndarray, L: int) -> None:
             nn_part += coef * P
         if s[0] != "I" and s[2] != "I" and abs(coef) > end_to_end:
             end_to_end, best = abs(coef), s
-    record("C", "(B-RANGE witness) log-generator has a nonzero end-to-end Pauli "
+    record("C", "(strict-range boundary) log-generator has a nonzero end-to-end Pauli "
            "component (support diameter 2 > range 1)",
            end_to_end > 1e-3, f"|coeff[{best}]| = {end_to_end:.4f}")
     remainder = opnorm(H_w - nn_part)
-    record("C", "(B-RANGE witness) H_w = -log T is NOT in the range-1 class: "
+    record("C", "(strict-range boundary) H_w = -log T is NOT in the range-1 class: "
            "||H_w - P_range1(H_w)||_op > 0",
            remainder > 1e-3, f"remainder norm = {remainder:.4f}")
 
     # (iii) contrast: a single-factor local transfer logs back exactly —
     # the witness failure is the non-commuting BCH tail, not the log.
     back = opnorm(-logm_herm(expm_herm(-1.0, A)) - A)
-    record("C", "(B-RANGE contrast) single-factor transfer: -log(e^{-A}) = A "
+    record("C", "(strict-range contrast) single-factor transfer: -log(e^{-A}) = A "
            "exactly (locality preserved when no non-commuting tail exists)",
            back < 1e-10, f"resid = {back:.2e}")
 
-    print("  DECLARED-PREMISE (B-RANGE): the propagation clause (S2'c) consumes")
-    print("  the (R-CD) L1/L3 finite-range hypothesis as a declared premise. The")
-    print("  transfer-derived log-generator is NOT proven finite-range by any")
-    print("  retained one-hop authority, and the witness above shows the property")
-    print("  can fail for strictly local transfers — (B-RANGE) is load-bearing")
-    print("  and non-vacuous.")
+    print("  BOUNDARY: strict finite-range-ness of a log-transfer generator is")
+    print("  not automatic. The companion note therefore retires the old B-RANGE")
+    print("  premise from the current claim and cites the retained free-bilinear")
+    print("  quasilocal LR bridge only on its stated free U=1 exact-log sector.")
 
 
 # -------------------------------------------------------------------
@@ -595,12 +596,23 @@ def block_D_discipline() -> None:
            "proposed_claim_type: bounded_theorem" in text
            and "positive_theorem grade" not in text,
            "yaml handoff checked")
+    record("D", "proposal firewall: B-AXIS open means proposal_allowed is false",
+           "proposal_allowed: false" in text
+           and "B-AXIS remains declared" in text,
+           "no retained-grade proposal while B-AXIS is declared")
     record("D", "spatial-clustering clause not consumed (cluster L2 is conditional)",
            "L2 spatial clustering is consumed nowhere" in text
            or "not consumed" in text, "S2'(b) demoted to conditional remark")
-    record("D", "note declares the finite-range generator premise (B-RANGE)",
-           "(B-RANGE)" in text and "conditional on (B-RANGE)" in text,
-           "S2'(c) narrowed to the declared finite-range premise")
+    record("D", "note retires B-RANGE from current scope",
+           ("no longer a current premise" in text
+            or "no\nlonger a current premise" in text)
+           and "conditional on (B-RANGE)" not in text,
+           "S2'(c) now uses the retained free-sector quasilocal supplier")
+    record("D", "note cites the free-bilinear quasilocal LR bridge as propagation supplier",
+           "FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md" in text
+           and "R-FBQL" in text
+           and "0 < d μ < η < arcsinh(m)" in text,
+           "free U=1 exact-log sector and finite quasilocal lightcone named")
 
 
 # -------------------------------------------------------------------
@@ -615,8 +627,10 @@ def main() -> None:
     print()
     print("Axis-conditional theorem (S1')-(S3'): conditional on B-AXIS, the")
     print("supplied transfer data give one generator, one unitary group, and")
-    print("codimension-1 Cauchy slices; the staggered action's exact time-space")
-    print("exchange symmetry shows the axis itself is a premise (old S3 withdrawn).")
+    print("codimension-1 Cauchy slices. Propagation is cited only on the")
+    print("retained free U=1 exact-log quasilocal bridge; the staggered action's")
+    print("exact time-space exchange symmetry shows the axis itself is a premise")
+    print("(old S3 withdrawn).")
 
     L = 6
     J = 1.0
@@ -628,7 +642,7 @@ def main() -> None:
     block_A_stone(H, tau)
     block_A_slice(L)
     block_BC_lieb_robinson(H, L, J)
-    block_C_range(H, L)
+    block_C_range_boundary(H, L)
     block_C_exchange()
     block_C_two_clock()
     block_D_discipline()

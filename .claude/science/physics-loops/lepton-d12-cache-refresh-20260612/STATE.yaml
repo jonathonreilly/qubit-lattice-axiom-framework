@@ -1,0 +1,24 @@
+loop_slug: lepton-d12-cache-refresh-20260612
+date: 2026-06-12
+mode: run
+target_status: open
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Repair stale runner/cache artifact for the lepton D12-prime matching open gate."
+target_claims:
+  - lepton_block_d12_prime_matching_no_go_note_2026-05-10
+blocker_attacked: "runner_artifact_issue: refresh frontier_lepton_block_d12_prime_matching.py/cache against current cited authorities or reroute the quark-scalar premise explicitly to YT_WARD_IDENTITY_DERIVATION_THEOREM.md."
+files_touched:
+  - docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md
+  - scripts/frontier_lepton_block_d12_prime_matching.py
+  - logs/runner-cache/frontier_lepton_block_d12_prime_matching.txt
+open_imports:
+  - "No lepton-composite scalar bridge is supplied."
+  - "No lepton Yukawa prediction or retained no-go is claimed."
+verification:
+  live_runner: "python3 scripts/frontier_lepton_block_d12_prime_matching.py -> TOTAL: PASS=13, FAIL=0"
+  cache_refresh: "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_lepton_block_d12_prime_matching.py --force --concurrency 1 --push-mode none --allow-non-main -> ok 1"
+pr_status: pending
+next_exact_action: "Run final checks, commit, push, and open PR."
+stop_condition: "Stop this block after PR creation; row remains open-gate."

@@ -16,8 +16,10 @@ identity on the current source surface unless an additional physical-operator
 bridge is supplied.
 
 The reason is narrow. In the quark YT chain, the two sides of the matching
-refer to the same composite scalar operator. The relevant source notes define
-that scalar through a color-indexed quark bilinear:
+refer to the same composite scalar operator. On current main, that operator
+surface is supplied by the YT Ward source as the `H_unit` scalar-singlet
+bilinear on the `Q_L` block, while the color-projection source is explicitly
+only a representation channel-fraction boundary:
 
 - [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md)
 - [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
@@ -50,9 +52,29 @@ The paired runner verifies:
 - the quark YT matching algebra gives `y_t = g_s/sqrt(6)`;
 - the formal lepton hypercharge analogy would give `y_tau = g_1/sqrt(2)`
   if a unit lepton scalar operator were supplied;
-- the cited YUKAWA source defines the scalar with a color-indexed quark
-  bilinear;
+- the current YT source defines `H_unit` as the scalar-singlet bilinear on
+  the `Q_L` block;
+- the current YUKAWA color-projection source is only a channel-fraction
+  theorem, not a physical Yukawa or scalar wave-function normalization;
 - the current cited source text does not define a lepton-composite scalar
   bridge;
 - the result remains an open gate, not a retained-grade no-go or mass
   prediction.
+
+## 2026-06-12 runner-cache refresh for re-audit
+
+The audited-conditional re-audit note asked for the runner/cache to be
+refreshed against the current cited authorities or for the quark-scalar
+premise to be routed explicitly to
+[`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md).
+This source note now makes that routing load-bearing: the current YT
+Ward source supplies `H_unit` as the scalar-singlet bilinear on the
+`Q_L` block, while the current YUKAWA color-projection source remains a
+non-physical channel-fraction boundary. The lepton side remains blocked
+on a missing physical lepton-composite scalar bridge.
+
+The paired runner now reports cited source paths relative to the repo
+root instead of embedding a temporary worktree path in the cache. The
+2026-06-12 cache refresh is therefore a runner-artifact repair only. It
+does not change this row's status, close Lane 6, predict a lepton
+Yukawa, or claim a retained-grade no-go.

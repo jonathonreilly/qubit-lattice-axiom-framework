@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/signed_gravity_wilson_mass_holonomy_twisted_edge_2026_06_11.py
+runner_sha256: f97a934b1d1485be2be1898943e12d9382c11aa5ebce067cc251a07534914e42
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+============================================================================
+WILSON-MASS HOLONOMY-TWISTED EDGE REALIZATION (signed-gravity)
+(W0) pure staggered: no twist datum on ANY background;
+(W1/W2) the named Wilson-mass route hosts it, twist = holonomy
+============================================================================
+
+----------------------------------------------------------------------------
+[W0] structural obstruction: pure staggered, arbitrary background
+----------------------------------------------------------------------------
+  [PASS] [W0] {Gamma_5, H_stag} = 0 exactly and eta_delta = 0 (free background)  (max|anti| = 0.0e+00, eta = +0)
+  [PASS] [W0] {Gamma_5, H_stag} = 0 exactly and eta_delta = 0 (random U(1) seed 1)  (max|anti| = 0.0e+00, eta = +0)
+  [PASS] [W0] {Gamma_5, H_stag} = 0 exactly and eta_delta = 0 (random U(1) seed 2)  (max|anti| = 0.0e+00, eta = +0)
+  [PASS] [W0] H_stag is block-off-diagonal in the parity grading (every hop flips parity, phases irrelevant)  (|even-even| = 0.0e+00, |odd-odd| = 0.0e+00)
+
+----------------------------------------------------------------------------
+[W1] Wilson-mass cylinder: in-gap edge tower and label table
+----------------------------------------------------------------------------
+  [PASS] [W1] in-gap localization is bimodal: every in-gap state sits on exactly one edge with weight > 0.999; zero ambiguous states  (min edge weight = 0.999998, ambiguous = 0)
+  [PASS] [W1] theta = 0: zero crossing on each edge (h_delta = 1) -> label undefined, matching the untwisted no-label case  (h_bottom = 1, h_top = 1)
+  [PASS] [W1] theta = +0.7: chi_bottom = +1 (h_delta = 0, eta = +1)  (eta = +1, n_states = 3)
+  [PASS] [W1] theta = -0.7: chi_bottom = -1 (sign tracks the holonomy)  (eta = -1)
+  [PASS] [W1] theta = pi: eta_delta = 0 on each edge (the symmetric half-twist point) -> label undefined  (eta_bottom = +0, eta_top = +0)
+
+----------------------------------------------------------------------------
+[W2] orientation pairing: the two edges carry opposite labels
+----------------------------------------------------------------------------
+  [PASS] [W2] chi_top = -chi_bottom at every defined theta (orientation pair realized geometrically)  (theta=+0.7: (+1, -1); theta=-0.7: (-1, +1))
+
+----------------------------------------------------------------------------
+[W3] controls: trivial window; size stability
+----------------------------------------------------------------------------
+  [PASS] [W3] trivial window m = +1: the in-gap edge set is EMPTY (no label can be defined; the gapped-window structure is load-bearing)  (in-gap states = 0)
+  [PASS] [W3] size stability: L_x = 20 -> 40 grows the edge tower while the label stays chi = +1 (quantized, not drifting)  (n_states 3 -> 7, eta stays +1)
+  [PASS] [W3] quantization across a fine holonomy sweep: |eta| <= 1 on every defined point (the label is a sign, not a magnitude)
+
+============================================================================
+TOTAL: PASS=13 FAIL=0
+============================================================================
+
+----- stderr -----
+

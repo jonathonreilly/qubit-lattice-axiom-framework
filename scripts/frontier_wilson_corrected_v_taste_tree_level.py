@@ -17,7 +17,7 @@ with sanity checks:
   - r=0 limit of (1) reduces to the parent Higgs note's V_taste = -8 log(m^2 + 4u_0^2)
   - r=0 limit of (3) equals -4 / u_0^2 (matches parent eq. [3])
   - binomial-moment identity: Σ_k binomial(4,k) k^2 = 80
-  - leading-order correction in (4): d^2V/dm^2|_{m=0} ≈ -4/u_0^2 + 40 r^2 / u_0^4 + O(r^4)
+  - leading-order correction in (4): d^2V/dm^2|_{m=0} ≈ -4/u_0^2 + 60 r^2 / u_0^4 + O(r^4)
 
 stdlib only; exact `Fraction` arithmetic. The transcendental log enters
 only through coefficient algebra (we never numerically evaluate log) so
@@ -308,7 +308,7 @@ def part7_second_derivative_at_zero():
 
 
 # ---------------------------------------------------------------------------
-# Part 8: Leading-order r-expansion check: -4/u_0^2 + 40 r^2 / u_0^4 + O(r^4)
+# Part 8: Leading-order r-expansion check: -4/u_0^2 + 60 r^2 / u_0^4 + O(r^4)
 # ---------------------------------------------------------------------------
 def part8_leading_r_expansion():
     section("Part 8: leading-r expansion of d^2V^W/dm^2 |_{m=0}")
@@ -340,8 +340,7 @@ def part8_leading_r_expansion():
     # Multiply by 1/4:
     #   d^2V^W/dm^2 |_{m=0} = -4/u_0^2 + 60 r^2 / u_0^4 + O(r^4)
     #
-    # Hmm — let me re-do the expansion carefully. The note claims +40 not +60.
-    # Let me redo (x - u_0^2) / (x + u_0^2)^2 expansion at x=0 by Taylor:
+    # Recheck (x - u_0^2) / (x + u_0^2)^2 expansion at x=0 by Taylor:
     #   f(x) = (x - u_0^2) (x + u_0^2)^{-2}
     #   f(0) = -u_0^2 · u_0^{-4} = -1/u_0^2
     #   f'(x) = (x + u_0^2)^{-2} + (x - u_0^2) · (-2) (x + u_0^2)^{-3}
@@ -357,10 +356,8 @@ def part8_leading_r_expansion():
     #       = -16/u_0^2 + 240 r^2 / u_0^4
     # Multiply by 1/4: d^2V^W/dm^2 = -4/u_0^2 + 60 r^2 / u_0^4 + O(r^4)
     #
-    # So the correct leading-order coefficient is 60, not 40.
-    # The note states 40 — there's an arithmetic error in the note draft.
-    # We REPORT the correct coefficient here and FAIL if the note disagrees.
-    # That's the right discipline: runner is the source of truth.
+    # The leading-order coefficient is 60. The 40-coefficient expression
+    # remains below only as a rejected comparator and stale-text guard.
     expected_leading_coeff = 60  # revised: from the (3/u_0^4) Taylor expansion
     # Use word boundaries to avoid false positives like "240 r^2/u_0^4"
     # matching "40 r^2/u_0^4" as a substring.

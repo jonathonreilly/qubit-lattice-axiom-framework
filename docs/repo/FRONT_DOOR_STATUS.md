@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1459 |
-| Retained-grade rows, including boxed decorations | 1316 |
+| Applied audit verdicts | 1460 |
+| Retained-grade rows, including boxed decorations | 1317 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 850 |
+| Retained bounded rows | 851 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1463 |
+| Unaudited rows | 1462 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 41 |
 | Audited renaming rows | 34 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1465 |
-| Ready rows | 65 |
+| Total pending rows | 1464 |
+| Ready rows | 64 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
-| High pending | 286 |
+| High pending | 285 |
 | Medium pending | 432 |
 | Leaf pending | 469 |
 
 Next ready rows by queue order:
 
-- [`beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`light_cone_framing_note`](../../docs/LIGHT_CONE_FRAMING_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`gellmann_completeness_theorem_note_2026-05-02`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
 - [`reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06`](../../docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
+- [`tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`](../../docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3383 |
 | Critical nodes | 521 |
-| High nodes | 516 |
-| Medium nodes | 908 |
+| High nodes | 515 |
+| Medium nodes | 909 |
 | Leaf nodes | 1438 |
 
 Top load-bearing rows by graph score:
@@ -93,5 +93,5 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 887 descendants; score 59.294
 - `key_terminology` - critical; 1281 descendants; score 50.324
 - `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 49.567
-- `plaquette_self_consistency_note` - critical; 971 descendants; score 46.425
+- `plaquette_self_consistency_note` - critical; 970 descendants; score 46.423
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 927 descendants; score 44.358

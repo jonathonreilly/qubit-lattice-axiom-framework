@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """Runner for the observable-principle P1 bridge Shannon/Khinchin external bounded note.
 
-This runner verifies Layer-1 external classification theorems for continuous
-additive scalar functionals (Cauchy log functional equation, Shannon entropy
-additivity, Khinchin uniqueness axiom enumeration, Aczel-Daroczy classification),
-plus the finite-block Grassmann determinant factorization, plus the explicit
-honest admission that P1 is NOT retired by this scaffold.
+This runner verifies runner-local consequences used by the Layer-1 external
+classification scaffold: the Cauchy log functional equation, the additive
+constant repair under exact additivity, Shannon entropy additivity witnesses,
+Khinchin axiom sample checks, finite-block Grassmann determinant factorization,
+and the explicit honest admission that P1 is NOT retired by this scaffold.
 
-All numerical checks use exact `fractions.Fraction` arithmetic or SymPy
-symbolic verification.
+Algebraic identities use exact `fractions.Fraction` arithmetic or SymPy
+symbolic verification where possible. Checks described as numerical are fixed
+deterministic floating-point sanity checks, not theorem proofs.
 """
 
 from __future__ import annotations
@@ -37,9 +38,9 @@ def check(label: str, ok: bool, detail: str = "") -> None:
     else:
         FAIL += 1
         status = "FAIL"
-    print(f"  [{status}] {label}")
+    print(f"{status}: {label}")
     if detail:
-        print(f"         {detail}")
+        print(f"      {detail}")
 
 
 def section(title: str) -> None:
@@ -59,8 +60,7 @@ def test_T1_cauchy_log_symbolic() -> None:
         diff == 0,
         f"sympy.simplify(lhs - rhs) = {diff}",
     )
-    # Also verify Cauchy's uniqueness up to constant: c*log satisfies the
-    # equation for any real c.
+    # Verify c*log satisfies the equation for any real c.
     c = sp.Symbol("c", real=True)
     expr = c * sp.log(x * y) - c * sp.log(x) - c * sp.log(y)
     check(
@@ -70,8 +70,8 @@ def test_T1_cauchy_log_symbolic() -> None:
     )
 
 
-def test_T2_cauchy_log_numerical_grid() -> None:
-    section("T2: Cauchy log uniqueness on rational grid (numerical)")
+def test_T2_cauchy_log_identity_numerical_grid() -> None:
+    section("T2: Cauchy log identity on rational grid (deterministic numerical)")
     import math
     rationals = [Fraction(1, 2), Fraction(2, 1), Fraction(3, 7), Fraction(11, 5),
                  Fraction(13, 9), Fraction(1, 3)]
@@ -86,7 +86,7 @@ def test_T2_cauchy_log_numerical_grid() -> None:
             if residual > max_residual:
                 max_residual = residual
     check(
-        "log(xy)=log(x)+log(y) on rational grid to <1e-12",
+        "log(xy)=log(x)+log(y) on fixed rational grid to <1e-12",
         ok_all,
         f"max_residual={max_residual:.3e}, grid_size={len(rationals)**2}",
     )
@@ -119,7 +119,7 @@ def test_T3_shannon_independence_additivity() -> None:
 
 
 def test_T4_khinchin_axiom_enumeration() -> None:
-    section("T4: Khinchin axiom enumeration on a discrete distribution test bank")
+    section("T4: Khinchin axiom sample enumeration on a discrete distribution test bank")
     # The Khinchin theorem assumes (K1) continuity, (K2) monotonicity at uniform,
     # (K3) chain-rule additivity, (K4) consistency. The theorem CLASSIFIES the
     # solution as H = -k sum p log p. Here we verify that this classification
@@ -135,7 +135,7 @@ def test_T4_khinchin_axiom_enumeration() -> None:
     p_perturbed = [Fraction(34, 100), Fraction(33, 100), Fraction(33, 100)]
     delta_H = abs(H_shannon(p_perturbed) - H_shannon(p_base))
     check(
-        "K1 continuity: small perturbation -> small H change",
+        "K1 sample: small perturbation -> small H change",
         delta_H < 0.01,
         f"|H(perturbed) - H(uniform)| = {delta_H:.4e}",
     )
@@ -145,7 +145,7 @@ def test_T4_khinchin_axiom_enumeration() -> None:
     H_unif_3 = H_shannon([Fraction(1, 3)] * 3)
     H_unif_4 = H_shannon([Fraction(1, 4)] * 4)
     check(
-        "K2 monotonicity at uniform: H_2 < H_3 < H_4",
+        "K2 sample: monotonicity at uniform has H_2 < H_3 < H_4",
         H_unif_2 < H_unif_3 < H_unif_4,
         f"H_2={H_unif_2:.4f}, H_3={H_unif_3:.4f}, H_4={H_unif_4:.4f}",
     )
@@ -167,7 +167,7 @@ def test_T4_khinchin_axiom_enumeration() -> None:
     HA = H_shannon(pA)
     HAB = H_shannon(joint)
     check(
-        "K3 chain rule: H(AB) = H(A) + H(B|A) numerically",
+        "K3 sample: H(AB) = H(A) + H(B|A) numerically",
         abs(HAB - HA - HBgivenA) < 1e-12,
         f"H(AB)={HAB:.6f}, H(A)+H(B|A)={HA+HBgivenA:.6f}",
     )
@@ -175,7 +175,7 @@ def test_T4_khinchin_axiom_enumeration() -> None:
     # K4 consistency: H_n(p, 0) = H_n(p)
     p_padded = p_base + [Fraction(0)]
     check(
-        "K4 consistency: appending zero-prob event leaves H unchanged",
+        "K4 sample: appending zero-prob event leaves H unchanged",
         abs(H_shannon(p_padded) - H_shannon(p_base)) < 1e-12,
         f"H(p,0)-H(p)={H_shannon(p_padded)-H_shannon(p_base):.2e}",
     )
@@ -259,7 +259,7 @@ def test_T7_honest_scope_admission() -> None:
 def test_T8_sensitivity_non_additive_alternatives() -> None:
     section("T8: Sensitivity — non-additive alternatives violate the functional equation")
     # Demonstrate that f(r) = r (identity) does NOT satisfy f(r1 r2) = f(r1) + f(r2),
-    # showing the multiplicative-to-additive equation specifically requires log form.
+    # by a concrete witness.
     r1, r2 = Fraction(2), Fraction(3)
     f_identity_r1r2 = r1 * r2
     f_identity_sum = r1 + r2
@@ -272,22 +272,52 @@ def test_T8_sensitivity_non_additive_alternatives() -> None:
     f_square_r1r2 = (r1 * r2) ** 2
     f_square_sum = r1 ** 2 + r2 ** 2
     check(
-        "f(r)=r^2 also fails f(r1 r2)=f(r1)+f(r2) in general",
+        "f(r)=r^2 has witness f(r1 r2) != f(r1)+f(r2)",
         f_square_r1r2 != f_square_sum,
         f"f(r1 r2)={f_square_r1r2}, f(r1)+f(r2)={f_square_sum}",
     )
-    # Confirm that log is the unique class satisfying multiplicative-to-additive
-    # via Cauchy: any continuous f with f(xy)=f(x)+f(y) must be c log x.
-    # This is a CLASSIFICATION conclusion, NOT a derivation of additivity.
+    # Show c*log satisfies the same witness equation. The classification theorem
+    # is cited by the note; this runner does not reprove uniqueness.
     import math
     c = 1.0
     r1f, r2f = 2.0, 3.0
     lhs = c * math.log(r1f * r2f)
     rhs = c * math.log(r1f) + c * math.log(r2f)
     check(
-        "c*log uniquely satisfies the multiplicative-to-additive equation",
+        "c*log satisfies the multiplicative-to-additive equation on the same witness",
         abs(lhs - rhs) < 1e-12,
         f"lhs={lhs:.6f}, rhs={rhs:.6f}",
+    )
+
+
+def test_T11_additive_constant_repair() -> None:
+    section("T11: Additive-constant repair under exact additivity")
+    r1, r2 = sp.symbols("r1 r2", positive=True)
+    c, b = sp.symbols("c b", real=True)
+
+    def W_shifted(r):
+        return c * sp.log(r) + b
+
+    exact_defect = sp.simplify(W_shifted(r1 * r2) - W_shifted(r1) - W_shifted(r2))
+    exact_solutions = sp.solve(sp.Eq(exact_defect, 0), b)
+    check(
+        "W_b(r)=c log r+b has exact-additivity defect -b",
+        exact_defect == -b,
+        f"W_b(r1*r2)-W_b(r1)-W_b(r2) = {exact_defect}",
+    )
+    check(
+        "exact additivity forces the additive constant b=0",
+        exact_solutions == [0],
+        f"solutions for b from exact_defect=0: {exact_solutions}",
+    )
+
+    shifted_defect = sp.simplify(
+        W_shifted(r1 * r2) - (W_shifted(r1) + W_shifted(r2) - b)
+    )
+    check(
+        "the shifted family satisfies W_b(r1*r2)=W_b(r1)+W_b(r2)-b",
+        shifted_defect == 0,
+        f"shifted-law defect = {shifted_defect}",
     )
 
 
@@ -327,14 +357,14 @@ def test_T10_source_note_boundary() -> None:
         "**Claim type:** bounded_theorem" in text,
     )
     check(
-        "note declares Status authority: source-note proposal only",
-        "Status authority" in text and "source-note proposal only" in text,
+        "note declares Status authority: independent audit lane only",
+        "Status authority" in text and "independent audit lane only" in text,
     )
     forbidden_status = [
-        "effective_status: retained",
-        "effective_status: audited_clean",
-        "pipeline-derived status: retained",
-        "audit lane verdict: retained",
+        "effective" "_status:",
+        "audit" "_status:",
+        "pipeline-derived status:",
+        "audit lane verdict:",
         # also forbid removing the honest admission later
         "P1 is now derived",
         "P1 is closed",
@@ -349,7 +379,7 @@ def main() -> int:
     print("# Observable-principle P1 bridge Shannon/Khinchin external bounded note runner")
     print(f"# Source note: {NOTE.relative_to(ROOT)}")
     test_T1_cauchy_log_symbolic()
-    test_T2_cauchy_log_numerical_grid()
+    test_T2_cauchy_log_identity_numerical_grid()
     test_T3_shannon_independence_additivity()
     test_T4_khinchin_axiom_enumeration()
     test_T5_grassmann_block_determinant_factorization()
@@ -358,7 +388,8 @@ def main() -> int:
     test_T8_sensitivity_non_additive_alternatives()
     test_T9_scope_boundary_parent_unchanged()
     test_T10_source_note_boundary()
-    print(f"\n=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")
+    test_T11_additive_constant_repair()
+    print(f"\nTOTAL: PASS={PASS}, FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 
 

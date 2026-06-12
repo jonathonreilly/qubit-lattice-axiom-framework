@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 861 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 39 |
-| unaudited | 1373 |
+| unaudited | 1372 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 57 |
+| ~~audited_conditional~~ | 58 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1315 |
-| `audited_conditional` | 57 |
+| `audited_conditional` | 58 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1690 |
+| `unaudited` | 1689 |
 
 | claim_type | count |
 |---|---:|
@@ -1467,6 +1467,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9004,6 +9005,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the narrowed scope, the runner stdout matches the note's signs and classifications for every ratified row. The z=2, z=4, z=6, and z=7 dense rows are explicitly outside the audited scope and are not ratified here.
 - **rationale:** The scoped claim is an algebraic sign-interpretation over runner-computed observables, and the supplied runner computes the relevant rows rather than printing fixed classifications. No one-hop authorities are listed, so no dependency-retention blocker is available inside the restricted packet. Clean status applies only to the narrowed z=3 and z=5 dense rows plus the other printed runner rows; the broader z=2..6 dense table is not part of this verdict.
 - **auditor confidence:** medium
+
+### `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic dispersion support: conditional on H->H+phi, fixed-energy eikonal reading n=k/k0, and an assumed phi=a/r potential, the axis lattice dispersion gives n=1-phi/(2E)+... and geometric deflection magnitude proportional to 1/b.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-022616-e7dcae0645-gravity_premise4_refractive_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied field shift and fixed-energy dispersion lambda_axis(k)+phi=E, define the Fermat/WKB index as n(phi)=k(phi)/k(0), yielding n=1-phi/(2E)+... and S=int n dl.  _(class `A`)_
+- **chain closes:** False — The lattice-dispersion algebra itself checks, including the arccos relation and small-k expansion. The restricted packet does not close the physical bridge H->H+phi plus n=k/k0 as a retained Fermat/test-mass response, and the 1/b lensing step assumes the a/r potential rather than deriving that authority inside the packet.
+- **rationale:** The runner performs real algebraic and integral checks, but they are class-A checks over supplied inputs, not a first-principles derivation of the physical Fermat bridge. The source note explicitly says the n=k/k0 identification remains a supplied eikonal/WKB interpretation and that the note does not promote premise (4) to retained status. The cited self-consistency authority is retained_bounded but, in the restricted text, it does not itself derive the Hamiltonian shift or the Fermat action from lattice dispersion; it uses a weak-field action/input surface. Therefore the bounded support statement is useful but conditional, not clean.
+- **open / conditional deps cited:**
+  - `SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`
+  - `GRAVITY_CLEAN_DERIVATION_NOTE.md`
+- **auditor confidence:** high
 
 ### `gravity_sign_audit_2026-04-10`
 

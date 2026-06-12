@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
-runner_sha256: 7ba4d37651779d9daabe440f4c94daa6e8b47cac3223f593656cd6c3dc8b4ff0
+runner_sha256: 1e92156495b01e4addc74f455429b09334e3a3665f9360d67ab8d989175b8528
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -36,6 +36,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
 [3] 2HDM boundary and missing EWSB-field-content bridge
   [PASS] D17: H_unit (1,1) scalar singlet on Q_L has Z^2 = 6
   [PASS] D17: no second (1,1) composite scalar -> alternatives Z^2 in {8, 9/2, 24} != 6  ((1,8)=8, (3,1)=9/2, (8,3)=24)
+  [PASS] note claim type is conditional-support and has a 2026-06-12 R-HIGGS firewall
   [PASS] note names the missing H_unit -> EWSB-doublet bridge instead of claiming closure
   [PASS] note states no new retained bridge for H_unit, one-Higgs/Z3, or 2HDM support
   [PASS] note states g_* = 106.75 only under the named EWSB-field-content bridge
@@ -57,7 +58,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] note records load-bearing token: '106.75'
   [PASS] note records load-bearing token: '110.75'
   [PASS] note records load-bearing token: 'conditional / support'
-  [PASS] note records load-bearing token: 'bounded support note'
+  [PASS] note records load-bearing token: 'conditional-support note'
   [PASS] note records load-bearing token: 'R-HIGGS'
   [PASS] note records load-bearing token: 'H_unit'
   [PASS] forbidden-import disclaimer paragraph present in §1
@@ -73,7 +74,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] no new-vocabulary token: 'algebraic universality'
 
 ==============================================================================
-PASS=53 FAIL=0
+PASS=54 FAIL=0
 ==============================================================================
 
 ----- stderr -----

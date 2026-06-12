@@ -1,0 +1,29 @@
+loop: conditional-source-firewall-sweep2-20260612
+started: 2026-06-12
+branch: physics-loop/conditional-source-firewall-sweep2-20260612
+target_status: best-honest-status
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: "source-boundary hardening for remaining uncovered audited_conditional rows with finite algebra/diagnostic content"
+files_touched:
+  - docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md
+  - scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
+  - docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py
+  - docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md
+  - scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
+  - docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md
+  - scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py
+  - docs/GATE_B_DYNAMICS_NOTE.md
+  - scripts/gate_b_connectivity_tolerance.py
+open_imports:
+  - "DM: live-DM constants and packet-completeness/selector premises"
+  - "Koide toy: retained support for local admissions A1-A5"
+  - "SM gstar: H_unit scalar-singlet to one complex SU(2)_L EWSB doublet thermal-census bridge"
+  - "EP: continuous local energy/action context and gravitational source/shared-coupling bridge"
+  - "Gate B: GB-S1, GB-S2, GB-S3 from retained primitives"
+pr_status: pending
+next_exact_action: "verify, commit, push, open PR"
+stop_condition: "PR open with fresh caches and no audit-data edits"

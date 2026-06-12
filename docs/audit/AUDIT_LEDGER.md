@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 841 |
+| **retained_bounded** | 842 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1417 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1285 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1286 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -629,6 +627,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `growing_graph_dynamic_propagation_replacement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `growing_graph_expansion_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -8785,6 +8784,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For any finite alpha, the strict k -> 0 sign of omega^2(k)/|k|^2 is sign(c2).  _(class `A`)_
 - **chain closes:** True — Dividing by |k|^2 gives c2(1+alpha A4(khat)|k|^2), so for finite alpha and finite direction harmonic A4 the limit is c2. The note explicitly scopes out deriving c2, the physical TT kernel, Lorentz structure, reflection-positivity transfer, and the emergent metric.
 - **rationale:** The audited claim is the narrow algebraic order-separation lemma, not the broad gravity-sign or bottom-relocation claim. An independent limit check confirms that the correction to omega^2/|k|^2 is O(|k|^2) and therefore cannot alter the strict leading sign of a supplied nonzero c2. The runner source genuinely evaluates the limit behavior, relative scaling, c2-sign dependence, and source-note guardrails; it does not hard-code a contested physics conclusion. The cited meta authority adds no open physics dependency, and no registered primitive is used to supply extra physical content.
+- **auditor confidence:** high
+
+### `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional weak-field Z^3 graph-Laplacian bridge: on the zero-mode-removed sector, the quadratic source action has minimizer G0 P0 rho, the stated local diagonal phase-invariant normalized density is |psi|^2, and same-source test coupling gives U=-m phi and F=+m grad phi, with the 1/(4 pi r) asymptotic imported from the retained Green-kernel authority.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-000614-6c4bb64b2b-gravity_weak_field_source_re`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The first variation gives H phi = P0 rho, so positive definiteness of H on the P0 sector yields the unique neutral solution phi = H^{-1} P0 rho = G0 P0 rho, with the local readout and test response fixed by the stated covariance/normalization and same-source coupling assumptions.  _(class `A`)_
+- **chain closes:** True — The variational equation, density uniqueness, zero-mode projection, sign convention, and bilinearity are finite-dimensional algebra under the stated bounded assumptions. The only asymptotic coefficient is supplied by a retained-bounded cited authority, and all one-hop cited authorities are retained-grade.
+- **rationale:** The runner source genuinely builds the finite periodic Z^3 Laplacian, P0, and G0, then checks the Euler equation, convex minimum, local-density covariance/normalization, test-source sign, and bilinear response rather than printing constants. An independent formula check gives the same factors and signs: A(phi+eta)-A(phi)=1/2 eta.H.eta, U=-m phi gives F=+m grad phi, and a positive 1/r Green potential attracts inward. The no-go citations are used only as scoped boundaries, not as new negative closure or load-bearing support for the bridge.
 - **auditor confidence:** high
 
 ### `growing_graph_dynamic_limit_diagnostic_note`

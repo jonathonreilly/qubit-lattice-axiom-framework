@@ -49662,11 +49662,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+      "to": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -95206,11 +95206,11 @@
         "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
         "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
         "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2f8a7874e43d02fb0c3b440ab861109037739fec7242a257a68524733cbce175",
+      "note_hash": "8ec5b9f4624f9e7a57e176bb83fa565f72a786fc508fe5691a11404f1fe28802",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

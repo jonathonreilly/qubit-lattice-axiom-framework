@@ -1,0 +1,17 @@
+loop_slug: gauge-beta6-seam-domain-guard-20260612
+target_claim_id: gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17
+mode: source_repair
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md
+  - scripts/frontier_gauge_vacuum_plaquette_beta6_seam_domain_guard_2026_06_12.py
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_beta6_seam_domain_guard_2026_06_12.txt
+open_imports:
+  - full Wilson/Haar one-slab kernel theorem
+  - full-slice rim-lift theorem
+  - exact kernel/rim compression theorem
+  - exact compressed rim-evaluation theorem
+next_exact_action: reviewer should inspect the source-domain guard and decide whether to include it in the next audit repair extraction.

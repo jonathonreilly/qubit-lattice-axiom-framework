@@ -111,3 +111,18 @@ Create the directory if it does not exist.
   without explicit user approval.
 - This is a branch-local working document; landing any resulting science
   follows the note + runner + cache shape through `/review-loop`.
+
+## Execution Mechanism (standing — 2026-06-12)
+
+All execution under this command runs through the workhorse split (see the
+`workhorse` skill): Fable plans, writes specs, reviews every diff
+line-by-line, and lands; the strongest configured text worker via `codex exec`
+executes bounded note/runner drafting, scratch computation, structured
+extraction, and panel lens execution (lenses run `-s read-only`; verdict
+synthesis is never delegated).
+No-go planning discipline applies: read the actual no-go note's primary text
+and plan against its exact audited scope, never its title or a secondary
+summary; if work reveals no-go language broader than its audited
+`claim_scope`, queue a narrowing repair PR. Where this command references
+review-loop or audit steps, those lanes are owner-operated (standing rule
+2026-06-11): prepare the PR/review surface and hand off; never run them.

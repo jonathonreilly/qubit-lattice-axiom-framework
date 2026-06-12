@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 864 |
+| **retained_bounded** | 865 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1367 |
+| unaudited | 1366 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1319 |
+| `audited_clean` | 1320 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1684 |
+| `unaudited` | 1683 |
 
 | claim_type | count |
 |---|---:|
@@ -775,6 +775,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_lane_demarcation_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_reality_type_permitted_not_forced_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_record_sign_agnostic_eta_refuted_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_pointer_grounds_block_channel_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11267,6 +11268,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The explicit Hilbert-Schmidt witness diag(3,6,6) realizes the (1,2) weighting while remaining real, positive-definite, C3-invariant, and Theta-invariant, so the listed real-structure constraints do not forbid (1,2) or force (1,1).  _(class `A`)_
 - **chain closes:** True — The algebraic witness satisfying all listed constraints is enough to refute incompatibility of (1,2), and the independent checks of rotation-invariant Grams, Theta reflection invariance, Hermitian circulant eigenvalues, Q=(1+2r)/3, and det_R=alpha*beta^2 agree with the note. The conclusion is narrow and leaves the SO(2)/U(1)_b quotient or readout-factorization route open.
 - **rationale:** The load-bearing step is finite linear algebra over retained-grade inputs, not a definition, external comparator, or tuned numerical match. Independently, a C3-invariant symmetric Gram on the singlet plus real doublet has form diag(g00,g11,g11), Theta=diag(1,1,-1) imposes no further restriction on that cone, and the unreduced real determinant of alpha P_s + beta P_d carries beta squared because the doublet has real rank two. The no-go discipline gate is satisfied only in the stated bounded sense: this closes the listed real-structure forcing route, not all possible quotient or convention/readout routes.
+- **auditor confidence:** high
+
+### `koide_reality_type_permitted_not_forced_note_2026-05-30`
+
+- **Note:** [`KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md`](../../docs/KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3/Jcs algebra showing that D-reality is compatible with both Pfaffian/per-block and determinant/per-dimension readings, with no physical Wick-face or Koide-measure selector supplied.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-024629-6c98f65ebb-koide_reality_type_permitted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A single real anti-Hermitian D on a complex space simultaneously supports the antisymmetric bilinear omega(u,v)=u^T D v and the Hermitian sesquilinear h(u,v)=conj(u)^T(iD)v, so real-matrix D alone does not select the Pfaffian/per-block Wick face.  _(class `A`)_
+- **chain closes:** True — Within the stated boundary, the chain closes: D^T=-D gives both an antisymmetric real bilinear and Hermitian iD form, while the C3 centralizer, Jcs doublet square, Pfaffian/determinant degrees, and Q arithmetic check independently. The missing Wick-face selector is explicitly left out of scope.
+- **rationale:** The runner source performs actual finite matrix and symbolic checks rather than merely printing expected constants, and no helper imports or external comparators are involved. Independent algebra confirms the displayed signs, factors, projections, Pfaffian/determinant degrees, circulant commutation, and Q=(1+2r)/3 arithmetic. The cited authorities are retained-grade for the bounded content consumed here, and their open physical-identification language is not imported as a premise. The no-go discipline section narrows the negative result to one residual selector rather than claiming global impossibility.
 - **auditor confidence:** high
 
 ### `koide_record_sign_agnostic_eta_refuted_2026-06-04`

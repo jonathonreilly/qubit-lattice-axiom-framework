@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_kahler_dirac_silent_on_measure_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_reality_type_permitted_not_forced_note_2026-05-30"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
         "koide_reality_type_permitted_not_forced_note_2026-05-30",
         "lepton_block_d12_prime_matching_no_go_note_2026-05-10",
         "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
         "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08",
-        "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
+        "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
+        "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b9a4c013ab3f40826923c24c78c4a59042ffa981d70557748bb3d771d6c8e6b7",
+      "note_hash": "07fd8a6086ab9ce8ca764c9ff5b31e0b61057bd8537d33a7cb0b8e9be532c981",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

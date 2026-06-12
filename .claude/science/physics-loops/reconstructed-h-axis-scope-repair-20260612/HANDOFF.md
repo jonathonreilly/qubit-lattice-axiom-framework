@@ -32,4 +32,4 @@ Results:
 - No retained-status claim.
 - Full off-axis/free d-dimensional and interacting quasi-locality remain open.
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3695

@@ -24,6 +24,7 @@ reachability_to_target: partially_closes
 verification:
   - "python3 scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py -> PASS=8 FAIL=0"
   - "python3 scripts/precompute_audit_runners.py --runners scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py --force --concurrency 1 --push-mode none --allow-non-main -> ok=1"
-pr_status: pending
-next_exact_action: push branch and open review PR
-stop_condition: review PR opened or PR_BACKLOG updated if GitHub creation fails
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3695
+next_exact_action: await review/audit extraction
+stop_condition: review PR opened

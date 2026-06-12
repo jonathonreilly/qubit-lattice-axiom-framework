@@ -18,11 +18,11 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 160 |
-| high | `unaudited` | 160 |
+| high | `unaudited` | 159 |
 | medium | `unaudited` | 94 |
+| high | `audited_conditional` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `open_gate` | 2 |
-| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
 | critical | `audited_renaming` | 1 |
@@ -300,7 +300,7 @@ publication tables phrase it.
 | high | `koide_microscopic_scalar_selector_target_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | high | `koide_q_eq_3delta_identity_note_2026-04-21` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
 | high | `koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| high | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
+| high | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `koide_q_second_order_support_batch_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `koide_q_so2_phase_erasure_support_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `koide_reviewer_stress_test_note_2026-04-21` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 850 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1465 |
+| unaudited | 1464 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1297 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1782 |
+| `unaudited` | 1781 |
 
 | claim_type | count |
 |---|---:|
@@ -1451,6 +1451,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lepton_block_d12_prime_matching_no_go_note_2026-05-10` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10597,6 +10598,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The readout map is exactly L(u,v,w,z)=diag(u,v,w), with the z slot mapped to zero.  _(class `A`)_
 - **chain closes:** True — Given the stated single-slot images, the rank, kernel, image, fiber, and quotient claims follow by elementary linear algebra. The broader selector-admissibility factorization is explicitly excluded from the theorem under audit.
 - **rationale:** The bounded claim is a direct algebraic closure from the explicitly defined map and its computed matrix L = [[1,0,0,0],[0,1,0,0],[0,0,1,0]]. The runner source does instantiate the relevant projectors and Γ_1 action to check the stated single-slot images, then verifies the kernel, quotient fibers, covariance, and invariant quadratic family. The note cleanly separates the unproved admissibility-implies-constancy statement as conditional, so that open extension does not contaminate the bounded theorem.
+- **auditor confidence:** high
+
+### `koide_q_reduced_observable_restriction_theorem_2026-04-22`
+
+- **Note:** [`KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md`](../../docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic restriction of the observable-principle generator and its stated dual to the assumed normalized two-generator reduced block carrier with D_red = I_2 and K = diag(k_+, k_perp), plus the contrast with the unreduced 1⊕2 vector-slot determinant.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-232118-d51604bf48-koide_q_reduced_observable_r`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With reduced baseline D_red = I_2 and reduced source K = diag(k_+, k_perp), W_red(K) = log det(I_2 + K) = log(1+k_+) + log(1+k_perp).  _(class `A`)_
+- **chain closes:** False — The determinant restriction, coefficient fixing, dual formula, and unreduced-vector contrast close algebraically on the admitted reduced carrier. The restricted packet does not derive the physical charged-lepton observable carrier/readout or the D_red = I_2 normalization from retained upstream inputs.
+- **rationale:** The displayed projector, determinant, coefficient, dual, and vector-slot formulas check independently: det(I+K)=(1+k_+)(1+k_perp), stationarity of W-K·Y gives K_i=1/y_i-1 and S=sum_i(y_i-log y_i-1), and the unreduced carrier counts the doublet twice. The runner source genuinely performs symbolic Sympy checks for these algebraic facts; its Section E is only dependency-bookkeeping and does not promote status. The theorem still imports the normalized two-generator reduced carrier and D_red = I_2 rather than deriving them from the provided retained-bounded authorities. That open physical-identification bridge prevents clean closure beyond the admitted-carrier support theorem.
+- **open / conditional deps cited:**
+  - `KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25`

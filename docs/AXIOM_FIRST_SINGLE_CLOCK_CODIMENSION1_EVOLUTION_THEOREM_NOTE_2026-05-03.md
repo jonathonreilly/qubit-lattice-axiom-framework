@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-03 (hostile science-fix re-scope 2026-06-11;
 finite-range premise narrowing 2026-06-11 #2; Cl(3) complexification
-wording hygiene 2026-06-11 #3; see §0)
+wording hygiene + B-RANGE supplier wiring 2026-06-11 #3; see §0)
 **Type:** bounded_theorem
 **Claim scope:** **Axis-conditional single-clock codimension-1 unitary
 evolution.** Given the declared evolution-axis premise (B-AXIS) below
@@ -19,7 +19,8 @@ Hilbert space; (S2′) each lattice time slice `Σ_t = {t} × Z^3` is a
 codimension-1 Cauchy surface: the equal-time local algebra is the
 mutually commuting tensor product of per-site one-qubit `M_2(C)` Pauli
 factors selected from the retained complexification split
-`Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)`, and slice data propagates with the
+`Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)`, with the physical carrier one
+summand, and slice data propagates with the
 finite Lieb-Robinson velocity `v_LR = 2 e J_* D_int R_int` of the
 retained_bounded cluster row (L1/L3) — the propagation clause (c)
 **conditional on the declared finite-range generator premise
@@ -53,6 +54,18 @@ rather than derived.
 
 ## 0. Changelog
 
+- **2026-06-11 #3 (supplier wiring + wording repair).** Two items from
+  the 2026-06-11 re-audit: (i) the inline claim-scope wording
+  `M_2(C) ≅ Cl(3,0) ⊗ C` is corrected to match the cited per-site
+  row's complexification split (`Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)`,
+  physical carrier one summand); (ii) the (B-RANGE) candidate class
+  theorem named in the not-in-scope list has landed as a source note
+  and is wired as a one-hop edge in the Inputs section, registering the
+  supplier route for the audit chain. (B-RANGE) itself remains a
+  declared premise: retirement is gated on that class theorem reaching
+  retained grade plus a finite-weighted-norm membership statement for
+  the actual `T̂²` log-generator. The (B-AXIS) supplier remains future
+  work (Record-direction or boundary-condition selection row).
 - **2026-05-03.** Original version: (S1) Stone evolution, (S2)
   codimension-1 Cauchy slices, (S3) "the temporal direction is the
   unique RP-admissible reflection axis, hence exactly one clock",
@@ -249,6 +262,34 @@ No fitted parameters. No observed values used as proof inputs.
   generically carries BCH commutator tails beyond the constituent
   range (runner block [C-RANGE], computed non-vacuity witness).
   (S1′) and (S2′a,b) do not consume (B-RANGE); only (S2′c) does.
+  **Supplier wiring (2026-06-11) — free-sector retirement route.**
+  The (B-RANGE) retirement route is now represented by two one-hop
+  sources:
+  - *Class theorem (LR once finite weighted norm is supplied):*
+  [`EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md`](EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md)
+  — finite-block Lieb-Robinson bound with displayed constants for any
+  Hamiltonian whose interaction family has finite Hastings-Koma
+  weighted norm (`F_{mu,alpha}` interaction norms). It does not by
+  itself prove that this note's `T̂²` log-generator has that norm.
+  - *Membership theorem (free bilinear generator):*
+  [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+  — retained_bounded: on the free (`U = 1`) bilinear two-step sector,
+  the exact reconstructed `H = -log(T̂²)/(2 a_τ)` has the sharp
+  exponential hopping bound
+  `|h(z)| <= (1/a_τ) C_d(η, m) e^{-η ||z||_∞}` for every
+  `η < η* = arcsinh(m)` (explicit prefactor; sharp rate), hence finite
+  Hastings-Koma weighted norm for any `mu < η*` — and it also proves
+  the exact `H` is **not** finite-range, which is precisely why
+  (B-RANGE) was needed as written.
+  Composition: after the class theorem reaches retained grade, (S2′c)
+  can be restated over the quasilocal class on the **free bilinear
+  sector** by replacing (R-CD) L1/L3 with the quasilocal bound and
+  taking `J_F` from the membership row. That retires (B-RANGE) only on
+  that free-sector scope. The gauged/interacting membership remains
+  the open residual (the membership row's own declared sector
+  boundary). Until then (B-RANGE) remains declared and this row remains
+  bounded; this paragraph registers the supplier edges so the audit
+  chain can process the route explicitly.
 
 ## Statement
 
@@ -542,11 +583,16 @@ bare_retained_allowed: false
   boundary-condition (antiperiodic temporal BC) selection row; either
   would be a separate note.
 - Deriving the (B-RANGE) premise (finite-range or quasi-local
-  structure of the log-transfer generator). Candidate future
-  suppliers: a quasi-locality bridge row for logarithms of strictly
-  local positive transfers, or an exponentially-decaying-interaction
-  Lieb-Robinson authority consumed in place of (R-CD) L1/L3; either
-  would be a separate note.
+  structure of the log-transfer generator). The
+  exponentially-decaying-interaction Lieb-Robinson authority named
+  here as a candidate class theorem has landed as a source note
+  (`EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md`,
+  wired as a one-hop edge in the Inputs section); the retirement of
+  (B-RANGE) — restating (S2′c) over the quasilocal class — is gated
+  on that row reaching retained grade, plus a finite-weighted-norm
+  membership statement for the actual `T̂²` log-generator. The LR
+  bridge runner witnesses one concrete instance, not the framework
+  transfer itself. Both steps remain outside this note's claim.
 
 ## Citations
 

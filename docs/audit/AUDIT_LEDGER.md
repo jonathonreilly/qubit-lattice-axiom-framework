@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 846 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1408 |
+| unaudited | 1407 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1291 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1725 |
+| `unaudited` | 1724 |
 
 | claim_type | count |
 |---|---:|
@@ -1468,6 +1468,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -20397,6 +20398,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For n_mu in {0,1}, 1 - cos(n_mu*pi) = 1 - (-1)^{n_mu} = 2*n_mu, so W(n) = r*sum_mu 2*n_mu = 2*r*hw(n).  _(class `A`)_
 - **chain closes:** True — The audited statement is finite combinatorics plus exact integer arithmetic: {0,1}^4 has 16 corners, Hamming-weight classes have binomial(4,k) multiplicities, and the per-coordinate Wilson contribution is exactly 0 or 2. The direct dependency is retained-bounded for the Z^3 sister spectrum and no-quotient scope; this audit uses it only as contextual bounded authority, not as support for any physical species, Higgs, g_bare, or Wilson-coefficient claim.
 - **rationale:** The source note proves only the bounded staircase identity and explicitly excludes the Wilson coefficient r, staggered-Dirac realization gate, g_bare, Higgs gap chain, continuum mass, and physical matter/species claims. Independent enumeration confirms the 16 corners, the binomial multiplicities (1,4,6,4,1), exact W/r values (0,2,4,6,8), and class uniformity. The no-go/wall discipline check does not expose an inflated negative or hidden physical closure: the named walls are boundaries of scope, not asserted solved facts.
+- **auditor confidence:** high
+
+### `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08`
+
+- **Note:** [`WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md`](../../docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic audit of the Wilson-corrected tree-level V_taste formula, its first two derivatives at m=0, the r=0 reduction to the parent V_taste, and the leading r^2 curvature coefficient 60 on the stated mean-field surface.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-004237-b74011c1f0-wilson_corrected_v_taste_tre`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Assuming each Hamming-weight k taste corner has eigenvalue 2*r*k +/- 2*i*u_0 after the Wilson shift, the determinant contribution is log((2*r*k + m)^2 + 4*u_0^2), and summing with multiplicities binomial(4,k) gives formula (1).  _(class `A`)_
+- **chain closes:** True — The displayed source-note algebra closes from the retained-bounded staircase multiplicities/Wilson shifts and the parent staggered mean-field spectrum. Independent differentiation gives equations (2) and (3), the r=0 limit gives -8 log(m^2 + 4*u_0^2) and -4/u_0^2, and the Taylor expansion gives +60*r^2/u_0^4.
+- **rationale:** The scientific algebra in the source note is correct as written, including the nonzero first derivative for r != 0 and the leading curvature correction coefficient 60. However, the included runner source still contains stale displayed comments/docstring text claiming a +40*r^2/u_0^4 leading correction, while the executable assertions and source note use +60. Under the strict formula-inventory rule, that source-runner artifact drift prevents a clean verdict until the runner text is reconciled.
 - **auditor confidence:** high
 
 ### `wilson_mu2_distance_sweep_note_2026-04-11`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 847 |
+| **retained_bounded** | 848 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1468 |
+| unaudited | 1467 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1294 |
+| `audited_clean` | 1295 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1785 |
+| `unaudited` | 1784 |
 
 | claim_type | count |
 |---|---:|
@@ -1237,6 +1237,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `su3_adjoint_casimir_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17915,6 +17916,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substitute N_W = (N_color + 1) * N_gen, n_S^complex_components = 2, T(F) = 1/2, and C_2(adj SU(2)) = N_pair into the stated one-loop beta formula to obtain b_2 = (11/3) N_pair - (1/3)(N_color + 1)N_gen - 1/6.  _(class `A`)_
 - **chain closes:** True — Given the scoped inputs, the closed form and framework value follow by direct rational arithmetic. The cited one-hop authorities in the packet are retained-grade or retained_bounded, and the runner confirms the algebra symbolically.
 - **rationale:** The load-bearing step is a genuine algebraic identity check over the stated inputs, not a renaming, numerical fit, or comparator match. The runner source actually constructs the symbolic expression from the stated beta formula and performs exact sympy simplifications plus rational framework substitution. No missing helper source or hard-coded-only pass path is present.
+- **auditor confidence:** high
+
+### `su3_adjoint_casimir_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Purely algebraic SU(3) statement: with Gell-Mann generators T^a = λ^a/2 and Tr[T^a T^b] = 1/2 δ^{ab}, the adjoint generators (T^a_adj)_{bc} = -i f^{abc} have C_2(adj) = 3 I_8 and C_2(adj)/C_2(fund) = 9/4; no physical-gluon or QCD bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-230951-9eb13a89c5-su3_adjoint_casimir_theorem_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The standard SU(N) identity Σ_{c,d} f^{acd} f^{bcd} = N δ^{ab}, evaluated at SU(3) as 3 δ^{ab}, fixes Tr[T^a_adj T^b_adj] and hence C_2(adj) = 3 I_8 after the Schur/trace step.  _(class `A`)_
+- **chain closes:** True — The cited retained-bounded authority supplies the SU(3) generators, normalization, and structure constants needed for the algebraic computation. Standard adjoint construction, Jacobi identity, irreducibility of the su(3) adjoint, and Schur's lemma close the Casimir argument without using the deferred physical-color bridge.
+- **rationale:** The load-bearing step is an algebraic SU(3) structure-constant contraction in the stated Gell-Mann normalization, not a numerical fit, renaming, or external comparator check. The runner source actually builds the Gell-Mann matrices, computes f^{abc}, constructs the adjoint matrices, and verifies Hermiticity, closure, trace normalization, scalar Casimir, value 3, and the 9/4 ratio. The upstream authority's open physical-color identification is not imported because the audited claim is explicitly restricted to the algebraic SU(3) Casimir.
 - **auditor confidence:** high
 
 ### `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`

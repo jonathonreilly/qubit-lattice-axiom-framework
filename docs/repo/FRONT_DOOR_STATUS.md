@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1457 |
+| Applied audit verdicts | 1458 |
 | Retained-grade rows, including boxed decorations | 1316 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 850 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1465 |
+| Unaudited rows | 1464 |
 | Retained-pending-chain rows | 18 |
-| Audited conditional rows | 39 |
+| Audited conditional rows | 40 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 4 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1467 |
-| Ready rows | 67 |
+| Total pending rows | 1466 |
+| Ready rows | 66 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
-| High pending | 287 |
+| High pending | 286 |
 | Medium pending | 433 |
 | Leaf pending | 469 |
 
 Next ready rows by queue order:
 
-- [`koide_q_reduced_observable_restriction_theorem_2026-04-22`](../../docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md) - high; unaudited
 - [`wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08`](../../docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`light_cone_framing_note`](../../docs/LIGHT_CONE_FRAMING_NOTE.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`](../../docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 - [`gellmann_completeness_theorem_note_2026-05-02`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
+- [`beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,11 +62,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 160 |
-| high | `unaudited` | 160 |
+| high | `unaudited` | 159 |
 | medium | `unaudited` | 94 |
+| high | `audited_conditional` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `open_gate` | 2 |
-| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
 | critical | `audited_renaming` | 1 |

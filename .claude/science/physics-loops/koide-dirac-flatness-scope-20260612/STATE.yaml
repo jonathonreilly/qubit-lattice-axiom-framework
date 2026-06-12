@@ -1,0 +1,30 @@
+loop: koide-dirac-flatness-scope-20260612
+date: 2026-06-12
+branch: physics-loop/koide-dirac-flatness-scope-20260612
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+cycle_count: 1
+active_route: determinant-sign and algebraic-flatness scope repair
+target_claim_id: koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05
+target_blocker: "missing_bridge_theorem: supply a retained theorem deriving the Berry-flat/sign-blind Dirac current-A_min readout -> r=1 branch selection, or narrow the claim to the algebraic flatness and signed-vs-singular residual; also repair the determinant sign and avoid relying on the unaudited staggered-gate dependency for closure."
+files_touched:
+  - docs/KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md
+  - scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py
+  - logs/runner-cache/audit_companion_koide_dirac_mass_forces_r_one_exact.txt
+open_imports:
+  - retained physical charged-lepton mass readout bridge
+  - future corner-realization theorem
+  - signed-root physical readout selection
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+verification:
+  - "python3 scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py -> 6 PASS, 0 FAIL"
+  - "citation extraction excludes staggered_dirac_realization_gate_note_2026-05-03"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py --force --concurrency 1 --push-mode none --allow-non-main -> ok=1"
+pr_status: pending
+next_exact_action: push branch and open review PR
+stop_condition: review PR opened or PR_BACKLOG updated if GitHub creation fails

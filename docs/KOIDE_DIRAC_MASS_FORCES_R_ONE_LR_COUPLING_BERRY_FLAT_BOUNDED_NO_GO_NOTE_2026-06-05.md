@@ -1,35 +1,50 @@
-# The Dirac Generation Mass Forces r=1 on the Current Surface; the Chiral L-R Coupling Is Berry-Flat (Bounded No-Go; the Open Corner Realization Is Not Theorem-Foreclosed)
+# Dirac Singular-Value Readout Is Sign-Blind and the Chiral L-R Coupling Is Berry-Flat on the Current A_min Surface (Bounded Algebraic No-Go Support)
 
 **Date:** 2026-06-05
 **Type:** no_go
-**Claim type:** no_go (**bounded**, computable-side). On the current A_min surface, `r = |b|²/a² = 1` (Koide
-`Q=1`) is the **forced** reading of the charged-lepton generation mass, and the chiral L-R coupling localized as
-the selector (the block-1 result, PR #2758) **does not reach `r=1/2`**. This **closes the open route from
-block-1**: localizing the selector to a coupling does not, by itself, open `r=1/2` — the specific C₃-circulant
-L-R coupling is Berry-flat.
-**Claim scope:** **bounded — not a hard universal no-go.** It establishes `r=1` is forced *for the
-physical (singular-value) Dirac mass on the current A_min algebra*, and that the bundle-curving coupling which
-would give `r=1/2` is forbidden *within R³* by `C³=I`. It does **not** rule out a future derivation: the open
-staggered-Dirac corner realization (`AC_φλ` substep-4) is **not theorem-foreclosed**, and the residual is the
-genuinely un-forced **sign of `√m`** (signed-eigenvalue vs singular-value readout).
+**Claim type:** no_go (**bounded**, computable-side). On the current A_min algebra, the Dirac block
+operator is sign-blind: `D² = diag(MM†, M†M)`, so its spectrum reads singular values `|λ_k|`.
+The allowed factor-crossing chiral L-R coupling `M(b)⊗σ_+` has b-independent C3-Fourier
+generation eigenvectors and is Berry-flat. Therefore this algebraic route does **not** derive the
+`r=1/2` signed-root Koide branch; the residual is exactly the signed-vs-singular readout choice.
+**Claim scope:** **bounded — not a hard universal no-go.** It establishes only the algebraic
+flatness and sign-erasure statements for the current A_min matrix surface. It does **not** assert a
+retained bridge from framework matter carriers to physical charged-lepton masses, and it does not
+foreclose a future corner-realization theorem. The open residual is the genuinely unforced **sign of
+`√m`** (signed-eigenvalue vs singular-value readout).
 **Status authority:** independent audit lane only. No effective-status change; independent audit required.
 **Runner:** [`scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py`](./../scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py)
 
-## The four exact facts (runner 5/5)
+## 2026-06-12 audit-scope repair
 
-1. **A Dirac fermion's determinant is the modulus-squared.** For the genuine Dirac operator
-   `D = [[0, M],[M†, 0]]` on generation⊗{L,R}, `det D = |det M|²` (runner (1)) — second-order *by construction*.
-   Only a **Weyl** fermion keeps `det M` alone (first-order). Charged leptons are Dirac, so the determinant
-   route is second-order, full stop.
-2. **The physical masses are singular values.** `D² = diag(MM†, M†M)` (runner (2)) → the Dirac spectrum is
-   `±` the **singular values** `|λ_k|` of `M`, which are **sign-blind**.
+The conditional audit requested a retained theorem for the physical readout route or a narrowing to
+the algebraic flatness plus signed-vs-singular residual, with the determinant sign repaired and the
+unaudited staggered-gate dependency removed from closure. This note takes the narrowing route.
+
+- The determinant fact is now sign-correct for the odd `3+3` Dirac block:
+  `det [[0,M],[M†,0]] = - det(M) det(M†) = -|det M|²`. The sign is
+  irrelevant to the modulus/Jacobian point, but it is not erased in the
+  algebraic determinant identity.
+- The live no-go is the algebraic statement that the singular-value Dirac
+  readout is sign-blind and the allowed L-R coupling is Berry-flat.
+- The open corner-realization reference is plain text and non-load-bearing,
+  not a markdown citation dependency for this theorem.
+
+## The four exact facts (runner 6/6)
+
+1. **A 3-generation Dirac block determinant is the negative modulus-squared.** For the Dirac block
+   operator `D = [[0, M],[M†, 0]]` on generation⊗{L,R}, `det D = -|det M|²` (runner (1)) because
+   the generation block size is odd. The sign-correct identity still shows the determinant route is
+   second-order in `M`; only a **Weyl** block keeps `det M` alone (first-order).
+2. **The Dirac block singular-value readout is sign-blind.** `D² = diag(MM†, M†M)` (runner (2))
+   → the Dirac block spectrum is `±` the **singular values** `|λ_k|` of `M`, which are sign-blind.
 3. **The L-R coupling `M(b)⊗σ₊` is Berry-flat.** Its generation eigenvectors are the b-independent C₃-Fourier
    modes `f_k` (runner (3)); the operator factorizes as `(Fourier mode)⊗(spinor)`, so the **generation bundle
    is flat** (zero Berry curvature) → `r=1`. The block-1 escape *exists in the algebra* but **does not curve the
    generation bundle**, hence does not deliver `r=1/2`.
-4. **`r=1/2` needs the signed `√m` readout, which the physical mass erases.** At the operator Koide point
+4. **`r=1/2` needs the signed `√m` readout, which the singular-value readout erases.** At the operator Koide point
    (`s=√2`, `r=1/2`) some `√m_k = a+2|b|cos(δ+2πk/3)` are **negative** (because `2|b|>a`). The **signed** readout
-   gives `Q=2/3` for all δ (runner (4a)); the **singular-value** (physical Dirac mass) readout gives `Q≠2/3`
+   gives `Q=2/3` for all δ (runner (4a)); the **singular-value** readout gives `Q≠2/3`
    wherever an eigenvalue is negative (runner (4b)). The masses `m_k=(√m_k)²` are identical; they differ **only
    by the sign of `√m`**.
 
@@ -42,8 +57,9 @@ genuinely un-forced **sign of `√m`** (signed-eigenvalue vs singular-value read
 > (`M(b)⊗σ₊`) is **Berry-flat**. So `r=1/2` reduces to the **un-forced sign of `√m`** — a choice no A_min
 > structure (kinetic operator, ε grading, complex structure `J_cs`, Record) fixes.
 
-So `r=1` is forced on the current surface; `r=1/2` is not derived. This is the robust partial-falsification at
-its deepest point: **the framework does not derive the charged-lepton mass ratios.**
+So the singular-value Dirac readout on this current matrix surface erases the sign needed by the
+signed-root Koide branch; `r=1/2` is not derived by this algebraic route. This is a bounded
+route-pruning result, not a retained physical-mass theorem.
 
 ## No-Go Discipline Gate (N1-N8)
 
@@ -55,15 +71,17 @@ Berry (flat → r=1); **L-R coupling `M(b)⊗σ₊` (Berry-flat → r=1, this no
 **N2 — Wall independence:** two distinct walls — (i) *within R³* the bundle-curving coupling is forbidden
 (`C³=I`); (ii) *across factors* the allowed coupling is Berry-flat (factorization). They are independent (one is
 a forbidding, one is a flatness). The singular-value-vs-signed residual is the *consequence*, not a third wall.
-**N3 — Hidden-wall scan:** "Dirac" is forced (charged leptons are Dirac, non-circular); no "by construction"
-admission beyond that. The complex structure `J_cs` is named explicitly as measure-neutral, not assumed.
+**N3 — Hidden-wall scan:** "Dirac" here is the tested block-operator readout, not an asserted
+retained physical-mass bridge. The complex structure `J_cs` is named explicitly as measure-neutral,
+not assumed.
 **N4 — Residual matching:** the cited no-gos
 ([`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](./KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md),
 [`KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md`](./KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md),
 [`KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`](./KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md))
 match the residual exactly (Berry-flat ⟺ r=1; signed-vs-singular = the sign of √m).
-**N5 — Rhetoric audit:** "r=1 is forced" is scoped to **the singular-value/physical Dirac mass on the current
-A_min surface**, per-operator. It is **not** claimed lattice-wide or for the open corner realization.
+**N5 — Rhetoric audit:** "r=1" language is scoped to **the singular-value Dirac matrix readout on
+the current A_min surface**, per-operator. It is **not** claimed lattice-wide, retained as a physical
+mass bridge, or asserted for the open corner realization.
 **N6 — Partial-closure scan:** the signed-`√m` readout is a *convention/definition* (which root of `m`), not a
 new axiom — that is the import-retirement handle, recorded as the open residual, not called "new axiom required."
 **N7 — Steelman:** the strongest case for `r=1/2` is that the **signed** readout *does* give `Q=2/3` exactly (the
@@ -85,6 +103,8 @@ target this note does **not** derive.
 - [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](./KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
 - [`KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md`](./KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md)
 - [`KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`](./KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md)
-- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](./STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+
+Plain-text non-load-bearing context pointer: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+(`AC_phi_lambda`/corner realization remains open and not theorem-foreclosed).
 
 **Independent audit required.** This note asserts no effective-status change.

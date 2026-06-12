@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 847 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1472 |
+| unaudited | 1471 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
-| ~~audited_renaming~~ | 33 |
+| ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 36 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
@@ -65,8 +65,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
-| `audited_renaming` | 33 |
-| `unaudited` | 1789 |
+| `audited_renaming` | 34 |
+| `unaudited` | 1788 |
 
 | claim_type | count |
 |---|---:|
@@ -1558,6 +1558,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -9048,6 +9049,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** On the declared B3/B4 minimal-block mean-field surface, the per-color staggered operator satisfies D^2 = -4 u_0^2 I, hence det(D + m) = (m^2 + 4 u_0^2)^8 and V_taste''(0) = -N_taste/(4 u_0^2), giving per-channel magnitude 1/(4 u_0^2).  _(class `C`)_
 - **chain closes:** True — The independent algebra closes: on an L=2 all-direction APBC staggered block, each eta-phase difference direction squares to -I and the directions anticommute, so D^2 = -4 u_0^2 I, forcing the stated spectrum, determinant, and curvature. The 140.3 GeV readout follows only after the explicit D1 definition and declared B1/B2 inputs, not as an observable Higgs-pole derivation.
 - **rationale:** The runner source genuinely constructs the 16-site staggered operator, Clifford checks, exact characteristic polynomial, exact determinant tests, color block factorization, and curvature checks; it is not merely printing expected constants. The only hard-coded helper value is the plaquette boundary number used for C1, while T1 itself is computed symbolically or by exact finite arithmetic on the declared surface. The cited authorities are retained-grade in the restricted packet, and the PDG quantities are quarantined as class-D comparators with no PASS depending on agreement. The clean verdict is therefore limited to the bounded theorem/diagnostic scope, with D1 remaining a definition and not a Higgs-mass-pole identification.
+- **auditor confidence:** high
+
+### `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`
+
+- **Note:** [`HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the 2026-06-12 source-side demotion: whether the packet narrows `v/(2u_0)` to the parent `m_curv_tree` diagnostic and wires the retained cycle 5 and cycle 9 obstruction authorities without claiming a Higgs-pole bridge.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-224717-28fd1e4c6b-higgs_mass_from_axiom_status`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The parent expression `v/(2u_0)` is read as a bounded diagnostic definition on the parent packet's declared surface, not as a Higgs-pole prediction.  _(class `E`)_
+- **chain closes:** False — The demotion/status correction is internally supported by the retained parent, cycle 5, and cycle 9 packets. The queued positive-theorem chain does not close because the scalar-normalization/nonperturbative lattice-to-physical Higgs-pole bridge is explicitly not supplied.
+- **rationale:** Manual checks of the displayed arithmetic used by the packet are consistent: `F_adj=8/9`, the cycle-9 witness delta is `0.0046656`, and `246.22/(2*0.877681381)=140.3 GeV` at stated precision. The primary runner is a content, ledger, and scoped-authority guard with a few algebraic recomputations; it is not a first-principles Higgs-mass derivation. The source note explicitly says it adds no new theorem and only narrows the source-side classification, so under the queued `positive_theorem` guard this is a definition/status relabeling rather than `audited_clean`.
 - **auditor confidence:** high
 
 ### `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06`

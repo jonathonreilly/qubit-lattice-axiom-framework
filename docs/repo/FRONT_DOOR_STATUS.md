@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1451 |
-| Retained-grade rows, including boxed decorations | 1311 |
+| Applied audit verdicts | 1452 |
+| Retained-grade rows, including boxed decorations | 1312 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 840 |
+| Retained bounded rows | 841 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
 | Unaudited rows | 1418 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1422 |
-| Ready rows | 38 |
+| Total pending rows | 1421 |
+| Ready rows | 37 |
 | Cycle-break targets | 0 |
-| Critical pending | 278 |
+| Critical pending | 277 |
 | High pending | 291 |
 | Medium pending | 425 |
 | Leaf pending | 428 |
 
 Next ready rows by queue order:
 
-- [`koide_positive_parent_axis_obstruction_note_2026-04-18`](../../docs/KOIDE_POSITIVE_PARENT_AXIS_OBSTRUCTION_NOTE_2026-04-18.md) - critical; audit_in_progress
 - [`gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`](../../docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
 - [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - critical; unaudited
@@ -51,13 +50,14 @@ Next ready rows by queue order:
 - [`g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19`](../../docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md) - high; unaudited
 - [`koide_q_source_domain_canonical_descent_theorem_note_2026-04-25`](../../docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md) - high; unaudited
 - [`flavor_r_half_is_the_records_flow_separatrix_2026-06-02`](../../docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md) - high; unaudited
+- [`observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **431**.
+- Non-retained-grade cited rows in publication tables: **430**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -70,9 +70,9 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `audited_renaming` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audit_in_progress` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
+| medium | `audited_numerical_match` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

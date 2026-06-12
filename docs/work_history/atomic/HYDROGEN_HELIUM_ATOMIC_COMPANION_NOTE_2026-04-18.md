@@ -2,7 +2,7 @@
 
 **Date:** 2026-04-18 (2026-05-18: claim_scope formalized as diagnostic
 work-history numerics only, not retained bounded authority, per audit
-verdict boundary instruction).
+verdict boundary instruction; 2026-06-12 runner-artifact perimeter sync).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing content
 of this note is **diagnostic work-history numerics only**: the
@@ -11,14 +11,15 @@ vs `0.25`, `E_3/E_1 ≈ 0.11132` vs `0.11111`, emergent length
 `r_0 = 2/g`), the helium Hartree upper-bound row at the declared
 parameters, and the one-parameter Jastrow/VMC `|E(He)|/|E(He^+)|`
 improvement to `1.4357`. The note **does NOT** claim retained
-bounded authority on a hydrogen or helium derivation chain; the
-quoted readouts are diagnostic work-history numerics preserved from
-the source branch review, not pinned against a cached runner stdout
-under `logs/runner-cache/` in the restricted packet. The audit
-verdict's substantive repair sub-target ("provide the preserved
-runner source plus completed stdout/cached certificates and include
-the one-hop retained lattice kinetic and Coulomb-kernel authority
-notes") remains separate open work.
+bounded authority on a hydrogen or helium derivation chain; the quoted
+readouts are diagnostic work-history numerics preserved from the source
+branch review. As of the 2026-06-12 source sync, the runner-artifact
+portion of the audit repair target is source-visible: the hydrogen,
+helium Hartree, and helium Jastrow runner sources are present, and the
+corresponding `logs/runner-cache/` certificates are linked below. The
+remaining boundary is independent review/audit of whether the narrowed
+lattice-kinetic / Coulomb-kernel dependency repair is sufficient for
+this diagnostic work-history scope.
 **Status authority:** independent audit lane only.
 **Status:** bounded work-history companion; preserved from branch review, not a
 flagship authority surface
@@ -34,18 +35,19 @@ to verify that the quoted numbers were actually computed from the
 stated operators. The missing step is a completed runner/source
 certificate showing the scripts instantiate the claimed Hamiltonians
 and produce the quoted readouts." The audit-stated repair target
-(`notes_for_re_audit_if_any`) is exact:
+(`notes_for_re_audit_if_any`) was exact:
 "missing_dependency_edge: provide the preserved runner source plus
 completed stdout/cached certificates and include the one-hop
 retained lattice kinetic and Coulomb-kernel authority notes in the
 restricted packet." This is a **diagnostic companion / work-history
-note** that **does not propagate** as a flagship authority: the
-quoted numerical readouts (`E_2/E_1 = 0.25857`, helium `|E(He)| /
-|E(He^+)| = 1.3424` and Jastrow `1.4357`, etc.) are not pinned in
-this revision to a cached runner stdout under
-`logs/runner-cache/`, and the upstream lattice-kinetic and
-Coulomb-kernel authority notes are not yet wired as audit-graph
-one-hop dependencies on this row. Nothing in this source edit sets audit status; the note remains a diagnostic work-history record.
+note** that **does not propagate** as a flagship authority. As of the
+2026-06-12 source sync, the numerical readouts (`E_2/E_1 = 0.25857`,
+helium `|E(He)| / |E(He^+)| = 1.3424` and Jastrow `1.4357`, etc.) are
+pinned to preserved runner source plus cached stdout certificates in
+the table below, and the narrowed upstream lattice-kinetic /
+Coulomb-kernel route is supplied by the 2026-06-02 dependency repair
+note/verifier. Nothing in this source edit sets audit status; the note
+remains a diagnostic work-history record pending independent re-audit.
 See "Citation chain and audit-stated repair path (2026-05-10)"
 below.
 
@@ -407,11 +409,11 @@ Two things are intentionally *not* part of this atomic reopen path:
 
 ## Citation chain and audit-stated repair path (2026-05-10; cache repair 2026-06-06)
 
-The audit verdict (2026-05-05, see top of note) flags two missing
+The audit verdict (2026-05-05, see top of note) flagged two missing
 items: the preserved runner source plus completed stdout/cached
 certificates, and the one-hop retained lattice-kinetic and
 Coulomb-kernel authority notes as audit-graph dependencies. The cited
-authority chain on this row currently stands as follows.
+authority chain now visible to the restricted packet stands as follows.
 
 | Cited authority | File | Current restricted-packet visibility | Residual boundary |
 |---|---|---|---|
@@ -435,10 +437,10 @@ graph-Laplacian and Coulomb-kernel source path and explicitly rejects the
 unsupported "unique from Cl(3)" and finite-continuum-Rydberg framings.
 Independent review and audit must decide whether those repairs are
 sufficient; this note remains a diagnostic work-history companion and
-does not propagate as retained authority. The acknowledged residual is the
-pinning gap (no cached stdout backing the numerical readouts) plus
-the missing audit-graph dependency edges to the upstream lattice
-surfaces.
+does not propagate as retained authority. The runner-source/stdout
+pinning gap is no longer the source-side blocker: the remaining residual
+is whether the dependency repair and audit-graph edges to the upstream
+lattice surfaces are sufficient for the narrowed diagnostic scope.
 
 This rigorization edit only sharpens the conditional perimeter and
 registers the cited authority chain; it does not set audit status or

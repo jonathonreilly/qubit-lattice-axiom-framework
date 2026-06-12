@@ -1,0 +1,29 @@
+loop: reconstructed-h-axis-scope-repair-20260612
+date: 2026-06-12
+branch: physics-loop/reconstructed-h-axis-scope-repair-20260612
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+cycle_count: 1
+active_route: axis-kernel scope repair
+target_claim_id: reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06
+target_blocker: "scope_too_broad: add a retained one-hop derivation of the d-dimensional free staggered two-step dispersion or restrict to the supplied 1+1d/axis result, weaken the rate to a positive strip bound, and remove the stale 2erJ LR sentence."
+files_touched:
+  - docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py
+  - logs/runner-cache/reconstructed_h_quasilocal_microcausality_bridge_runner.txt
+open_imports:
+  - full off-axis/free d-dimensional kernel theorem
+  - interacting U-integrated reconstructed-H quasi-locality
+  - parent Lieb-Robinson velocity constant
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+verification:
+  - "python3 scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py -> PASS=8 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py --force --concurrency 1 --push-mode none --allow-non-main -> ok=1"
+pr_status: pending
+next_exact_action: push branch and open review PR
+stop_condition: review PR opened or PR_BACKLOG updated if GitHub creation fails

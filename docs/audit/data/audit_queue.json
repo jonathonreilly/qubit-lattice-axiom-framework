@@ -3,7 +3,7 @@
     "critical": 272,
     "high": 285,
     "leaf": 428,
-    "medium": 422
+    "medium": 421
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16887,25 +16887,26 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+      "claim_id": "light_cone_framing_note",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
       ],
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.358,
-      "note_path": "docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md",
+      "load_bearing_score": 7.322,
+      "note_path": "docs/LIGHT_CONE_FRAMING_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/light_cone_crank_nicolson_lr_2026_05_09.py",
-      "transitive_descendants": 81
+      "runner_path": "scripts/light_cone_staggered_dispersion.py",
+      "transitive_descendants": 79
     },
     {
       "audit_independence_required": "any_non_self",
@@ -16986,6 +16987,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.858,
+      "note_path": "docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py",
+      "transitive_descendants": 28
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17010,30 +17035,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_atomic_hydrogen_lattice_companion.py",
       "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.2,
-      "note_path": "docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py",
-      "transitive_descendants": 12
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17710,31 +17711,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
-      "transitive_descendants": 79
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "light_cone_framing_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.322,
-      "note_path": "docs/LIGHT_CONE_FRAMING_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/light_cone_staggered_dispersion.py",
       "transitive_descendants": 79
     },
     {
@@ -42460,5 +42436,5 @@
     }
   ],
   "ready_count": 38,
-  "total_pending": 1407
+  "total_pending": 1406
 }

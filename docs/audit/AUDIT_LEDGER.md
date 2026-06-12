@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 847 |
+| **retained_bounded** | 848 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1405 |
+| unaudited | 1404 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1292 |
+| `audited_clean` | 1293 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1722 |
+| `unaudited` | 1721 |
 
 | claim_type | count |
 |---|---:|
@@ -825,6 +825,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | C | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -11912,6 +11913,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Embedded operators supported on distinct tensor factors commute because each acts as the identity on the other's factor, so O_x O_y = O_y O_x.  _(class `A`)_
 - **chain closes:** True — The conclusions follow directly from the stipulated tensor-product Hilbert space and disjoint-factor embeddings. No upstream physical bridge, numerical comparator, or dynamical authority is needed for L1-L3.
 - **rationale:** The load-bearing step is a standard algebraic identity over tensor-product operators with disjoint support. The source note explicitly rescopes away the prior physical per-site realization clause, Lieb-Robinson time evolution, continuum microcausality, and fermionic graded tensor-product claims. The provided runner genuinely constructs symbolic and Pauli tensor-product operators and checks the claimed commutators and factorization, with no hard-coded numerical target or external comparator. The ledger visibility check is non-load-bearing and does not affect closure.
+- **auditor confidence:** high
+
+### `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`
+
+- **Note:** [`LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For finite-dimensional finite-range Hermitian H on a finite block with y=a_tau||H||/2<1, the CN step is unitary, has the stated spectral generator identity, does not support the withdrawn H_CN weighted-overlap quasilocality claim, and inherits the exact finite-range LR cone up to the explicit additive defect 2||B||n zeta.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-005204-68521e1eda-light_cone_crank_nicolson_li`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Duhamel interpolation plus the arctan defect series and Leibniz telescope give ||alpha_CN(A)-alpha_{a_tau}(A)|| <= a_tau ||[H,A]|| y^2/(1-y^2), which then telescopes to n zeta and transfers the exact LR cone with additive defect 2||B|| n zeta.  _(class `A`)_
+- **chain closes:** True — The defect bound follows algebraically from the norm-convergent arctan series, the Leibniz commutator telescope, and exact-flow invariance of ||[H,A]||. The cited retained_bounded LR authority is used only for the finite-range exact evolution, while the open reconstructed-H and volume-independent sharpening claims are explicitly outside scope.
+- **rationale:** The independent math check reproduces the key constants: the D series contributes sum_{n>=1} y^{2n}=y^2/(1-y^2), giving zeta, and the n-step and cone-transfer inequalities follow by unitary telescoping and ||[X,B]||<=2||B||||X||. The commuting three-site withdrawal witness also checks, since c3=(f(3)-3f(1))/4=(1/(2a))[arctan(3a/2)-3 arctan(a/2)] is nonzero and distance-independent. The runner source performs real matrix computations rather than print-only assertions, and its 27 passes cover the spectral identity, withdrawal witnesses, defect inequalities, and small-step agreement.
 - **auditor confidence:** high
 
 ### `linear_response_derivation_note`

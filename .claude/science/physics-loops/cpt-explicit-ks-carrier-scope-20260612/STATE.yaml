@@ -1,0 +1,21 @@
+loop: cpt-explicit-ks-carrier-scope-20260612
+status: ready_for_review
+current_goal: "Repair the audited-conditional CPT row by removing an unnecessary realization-gate dependency from the in-block finite-matrix theorem."
+target_claim_id: axiom_first_cpt_theorem_stretch_note_2026-04-29
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md
+  - scripts/axiom_first_cpt_check.py
+  - logs/runner-cache/axiom_first_cpt_check.txt
+open_imports:
+  - "Framework identification of the KS carrier remains the separate staggered realization gate."
+  - "Full-action CPT still waits on the SU(3) Wilson-plaquette operator-level lift."
+  - "CP-odd-to-Theta_CPT-odd bridge remains outside this row."
+verification:
+  - "PYTHONPATH=scripts python3 scripts/axiom_first_cpt_check.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/axiom_first_cpt_check.py --force --concurrency 1 --push-mode none --allow-non-main"
+runner_result: "TOTAL: PASS=118 FAIL=0"
+next_exact_action: "Reviewer/auditor should re-run dependency extraction and verify no markdown edge to STAGGERED_DIRAC_REALIZATION_GATE remains."
+

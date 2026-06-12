@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 843 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 39 |
-| unaudited | 1486 |
+| unaudited | 1485 |
+| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
@@ -58,14 +59,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 4 |
 | `audited_clean` | 1288 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1803 |
+| `unaudited` | 1802 |
 
 | claim_type | count |
 |---|---:|
@@ -108,7 +109,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 928 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 928 | 43.36 | `unaudited` | unaudited |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.00 | `unaudited` | unaudited |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.00 | `audit_in_progress` | audit_in_progress |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 798 | 39.14 | `audited_clean` | **retained_bounded** |
@@ -130,6 +131,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `cl3_color_automorphism_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |

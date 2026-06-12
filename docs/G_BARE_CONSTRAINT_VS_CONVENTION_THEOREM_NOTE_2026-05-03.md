@@ -3,8 +3,9 @@
 **Date:** 2026-05-03. Repair narrowing: 2026-05-25.
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
-**Source status:** repair candidate for independent audit. This note does
-not apply an audit verdict and does not promote any downstream `g_bare` row.
+**Actual current-surface status:** conditional-support / bounded algebraic
+surface only. This source does not claim retained status, does not apply an
+audit verdict, and does not promote any downstream `g_bare` row.
 **Primary runner:** `scripts/frontier_g_bare_constraint_surface_check.py`
 
 ## 0. Review-Loop Boundary
@@ -30,6 +31,21 @@ Here:
 - **WM** is the Wilson matching relation
   `beta = 2 N_c / g_bare^2`.
 - **beta=6** is an explicit scoped input to this corollary, not derived here.
+
+### Current-surface firewall
+
+This row is intentionally audit-ready only as a conditional algebraic support
+surface. Its load-bearing implication is exact, but the implication is
+licensed only after the two scoped inputs below are supplied:
+
+1. the Wilson matching relation `beta = 2 N_c / g_bare^2`;
+2. the local Wilson coefficient surface `beta = 6` at `N_c = 3`.
+
+Neither input is derived by this note, and neither is promoted by citing this
+note. A downstream row may cite this note only for the conditional statement
+`CN + WM + beta=6 + N_c=3 => g_bare^2=1`. It may not cite this row as a
+retained derivation of Wilson matching, the Wilson action form, the beta
+surface, or the broader `g_bare` derivation.
 
 ## 1. The Narrowed Claim
 
@@ -57,6 +73,7 @@ This repair intentionally removes the stronger claims that caused the audit
 blocker. The note does not claim:
 
 - that canonical normalization alone pins the Wilson coefficient `beta=6`;
+- that the Wilson matching relation is framework-native on this row;
 - that the Wilson plaquette action surface is uniquely selected from the
   framework baseline;
 - that all external-scale or alternative-convention routes have been
@@ -93,6 +110,12 @@ normalization CN, `N_c = 3`, scoped Wilson matching
 arithmetic gives `g_bare^2 = 1`. This row does not derive `beta = 6`, does
 not exclude external-scale conventions, and does not promote downstream
 `g_bare` claims.
+
+The next science route, if this row is to move beyond conditional support, is
+not another rewrite of this algebra. It is a separate theorem-grade supply of
+the Wilson matching relation and/or the `beta = 6` surface from accepted
+framework inputs. Until such a theorem exists and independent audit accepts
+it, this note remains a bounded conditional support surface.
 
 ## 5. Cross-References
 

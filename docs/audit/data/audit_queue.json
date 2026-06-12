@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 272,
     "high": 285,
-    "leaf": 416,
+    "leaf": 415,
     "medium": 411
   },
   "cycle_break_target_count": 0,
@@ -16887,33 +16887,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "hw1_second_order_return_shape_theorem_note",
-        "staggered_self_consistent_two_body_note_2026-04-11",
-        "wilson_two_body_open_refined_note_2026-04-11"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/interaction_asymmetry_delta_occupation_curvature_runner.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17010,6 +16983,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_centered_u1_fluctuation_record_mixture_structure_2026_06_11.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "staggered_self_consistent_two_body_note_2026-04-11",
+        "wilson_two_body_open_refined_note_2026-04-11",
+        "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/delta_sign_from_retained_mediator_runner.py",
       "transitive_descendants": 16
     },
     {
@@ -29622,33 +29622,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "staggered_self_consistent_two_body_note_2026-04-11",
-        "wilson_two_body_open_refined_note_2026-04-11",
-        "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/delta_sign_from_retained_mediator_runner.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_zdet_fermionic_statistics_admission_2026-06-04",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -29966,6 +29939,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/rank1_single_source_from_K_J_minus_I_structure_runner.py",
       "transitive_descendants": 0
     },
     {
@@ -39364,30 +39361,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/rank1_single_source_from_K_J_minus_I_structure_runner.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_born_frequency_boundary_2026-06-05",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -41840,5 +41813,5 @@
     }
   ],
   "ready_count": 23,
-  "total_pending": 1384
+  "total_pending": 1383
 }

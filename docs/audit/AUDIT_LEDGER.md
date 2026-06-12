@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 217 |
+| **retained** | 218 |
 | **retained_no_go** | 210 |
 | **retained_bounded** | 857 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1382 |
+| unaudited | 1381 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1309 |
+| `audited_clean` | 1310 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1699 |
+| `unaudited` | 1698 |
 
 | claim_type | count |
 |---|---:|
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 720 | 31.49 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 850 | 31.23 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.84 | `unaudited` | unaudited |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 188 | 30.56 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 179 | 30.49 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -691,6 +691,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9951,6 +9952,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since H_hop[U] is anti-Hermitian, lambda_j(U) is real and E_j[U]=arcsinh(sqrt(m^2+lambda_j(U)^2)) >= arcsinh(m)>0, hence Delta_T^matter >= arcsinh(m)/a_tau uniformly in U and volume.  _(class `A`)_
 - **chain closes:** True — The per-background dispersion and anti-Hermitian-hop spectrum are supplied by the cited authorities; the inequality follows from real lambda_j, sqrt(m^2+lambda_j^2)>=m, and monotonicity of arcsinh. No cited input proves the full pure-gauge/coupled gap, and the note does not claim it.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs in the restricted packet, not a definition or tuned numerical match. The runner source constructs random staggered SU(3) spatial hops, checks anti-Hermiticity, the arcsinh(m) floor, the transfer-eigenvalue cap, and a non-anti-Hermitian control; it does not hard-code the contested bound. The beta=6 pure-gauge/coupling issue remains an open gate by the note's own scope, so it is not part of the closed theorem.
+- **auditor confidence:** high
+
+### `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`
+
+- **Note:** [`INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md`](../../docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the stated Hamming-weight single-hop model and uniform native pair coupling, delta=E2-2E1+E0 vanishes for axis-separable one-body dynamics, equals the pair coefficient, and gives the regime-scoped off-diagonal K formula with the stated forbidden-diagonal one-body realization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-015741-2473202b86-interaction_asymmetry_delta_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because H=sum_mu(eps*n_mu+t*X_mu) is axis-additive, one-body occupation energies are affine in hw with zero second difference, while C(hw,2) has second difference +1 and Schur elimination gives K_off=t^2*(1/eps-1/(eps+U)).  _(class `A`)_
+- **chain closes:** True — The displayed operator algebra closes internally: tensor-summand factorization gives sumset spectra and affine free occupation energy, and the finite-difference basis makes one-body curvature vanish while pair curvature is unity. The Schur formula follows from the two hw=0 and hw=2 paths, and the product-to-sum identity gives the face-diagonal exclusion.
+- **rationale:** The runner source performs genuine finite-dimensional algebra checks rather than printing constants, and its 13 PASS rows match the note's displayed identities. Independent math checks confirm the affine second-order shift, pair-count curvature, Schur denominator signs, and cos(k_mu)cos(k_nu) product-to-sum identity. The retained_bounded mediator notes are cited only for the open future value/sign route, not for the audited structure theorem itself.
 - **auditor confidence:** high
 
 ### `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27`

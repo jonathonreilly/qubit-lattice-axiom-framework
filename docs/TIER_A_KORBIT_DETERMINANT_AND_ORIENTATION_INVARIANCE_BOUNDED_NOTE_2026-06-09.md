@@ -4,7 +4,10 @@
 lemma moved to its own note,
 `THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`,
 so the strong-CP route stands free of this note's staggered-gate dependency;
-the filename keeps the original title per the no-rename rule)
+the filename keeps the original title per the no-rename rule) (2026-06-12:
+the orientation lemma is restated on the supplied circulant class stipulated
+in-note; the staggered-Dirac gate note is context, not load-bearing — the lemma
+consumes no content from it.)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome and does not edit the audit-lane-owned Tier-A
@@ -19,9 +22,9 @@ registry has already changed.
 
 It proves one bounded fact:
 
-1. For the `AC_phi_lambda` circulant gate used in the staggered-Dirac
-   realization lane, conjugation maps `delta` to `-delta`, while the unordered
-   spectrum is invariant under that flip.
+1. For the supplied `AC_phi_lambda` circulant class stipulated in-note below,
+   conjugation maps `delta` to `-delta`, while the unordered spectrum is
+   invariant under that flip.
 
 (The companion determinant-character phase-erasure lemma, formerly stated
 here, now lives in
@@ -43,9 +46,16 @@ carries no dependency on the staggered gate surface used below.
 
 ## `AC_phi_lambda` Orientation Lemma
 
-For the circulant gate surface used by
-[`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md),
-write the relevant Hermitian circulant as
+This lemma is stated on a supplied circulant class, stipulated here: the
+three-parameter Hermitian circulant family below, with `a` real, `B > 0`,
+`delta` real, and `C` the cyclic 3-shift. The lemma is self-contained algebra
+on this supplied circulant class and consumes no content from any other note.
+Physically, this family is the `AC_phi_lambda` gate surface of the
+staggered-Dirac realization lane
+(`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, context, not
+load-bearing: the identification of the physical gate surface with this class
+is carried by the `AC_phi_lambda` admission itself, which supplies its own gate
+surface). Write the relevant Hermitian circulant as
 
 ```text
 H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T.
@@ -84,9 +94,6 @@ or audit verdict is introduced here.
 
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) for the narrow
   Record axiom boundary framing of registrable species content.
-- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-  for the `AC_phi_lambda` gate surface on which the orientation lemma is
-  stated.
 
 Context (not load-bearing: both lemmas are self-contained algebra on their
 supplied classes — the determinant-character computation and the circulant
@@ -97,6 +104,10 @@ that would supply the determinant-class readout is the named open above):
   determinant-orbit context.
 - `THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`
   for the moved determinant-character lemma (the strong-CP-side companion).
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` for where the supplied
+  circulant class arises physically as the `AC_phi_lambda` gate surface; the
+  orientation lemma is self-contained algebra on the supplied class stipulated
+  in-note and consumes no content from the gate note.
 
 **No-promotion statement:** this note does not promote, demote, or set the audit
 status of any dependency. The independent audit lane is the only status

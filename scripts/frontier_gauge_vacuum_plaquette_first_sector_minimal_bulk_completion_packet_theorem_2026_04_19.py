@@ -88,17 +88,16 @@ def main() -> int:
     print("=" * 118)
     print()
     print("Question:")
-    print("  What explicit Wilson/Perron first-layer packet is selected once the least")
-    print("  positive bulk completion principle is imposed?")
+    print("  What explicit Wilson/Perron first-layer packet is selected by the bounded")
+    print("  zero-extension branch of the minimal-bulk completion principle?")
 
     principle_note = read("docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md")
-    dm_note = read("docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md")
-    principle_is_theorem_native = (
-        "least positive bulk completion" in principle_note
-        or (
-            "Loewner-minimal positive extension" in principle_note
-            and "canonically fixed" in principle_note
-        )
+    principle_scope_matches_current_note = (
+        "coefficient-order" in principle_note
+        and "zero-extension `rho_0`" in principle_note
+        and "unique zero-coefficient lift" in principle_note
+        and "runner-tested witness families" in principle_note
+        and "does **not** certify universal Loewner" in principle_note
     )
 
     pkg = selected_transfer_and_packet()
@@ -119,8 +118,8 @@ def main() -> int:
     print()
 
     check(
-        "The minimal-bulk completion theorem already selects one unique full extension rho_ext inside the canonical Wilson factorized class",
-        principle_is_theorem_native,
+        "The minimal-bulk completion principle note is in the current bounded zero-extension / witness-family scope",
+        principle_scope_matches_current_note,
     )
     check(
         "That selected extension yields one positive self-adjoint conjugation-symmetric factorized transfer operator",
@@ -147,13 +146,13 @@ def main() -> int:
     print("\n" + "=" * 118)
     print("RESULT")
     print("=" * 118)
-    print("  Selected Wilson/Perron packet under the new principle:")
+    print("  Selected Wilson/Perron packet under the bounded zero-extension branch:")
     print(f"    - alpha0 = {pkg['alpha0']:.15f}")
     print(f"    - beta1  = {pkg['beta1']:.15f}")
     print(f"    - m1     = {pkg['m1']:.15f}")
     print(f"    - m2     = {pkg['m2']:.15f}")
-    print("    - this is now the explicit first-layer packet of the selected")
-    print("      factorized-class completion branch")
+    print("    - this is the explicit first-layer packet of the bounded")
+    print("      zero-extension branch consumed by the Hankel boundary note")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

@@ -1,0 +1,24 @@
+loop: gauge-first-hankel-packet-parent-repair-20260612
+goal: expose the missing gauge minimal-bulk-completion packet parent and repair the first-Hankel decoration chain
+target_status: bounded-support
+started: 2026-06-12
+base: origin/main@7f95c3b0090ec29e1a26c96f9031dc73d9366816
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_blocker: "decoration_waiting_on:gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19"
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PACKET_THEOREM_NOTE_2026-04-19.md
+  - docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md
+  - scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py
+verification:
+  citation_graph_in_memory:
+    packet_parent_exists: true
+    hankel_depends_on_packet_parent: true
+    packet_parent_has_no_downstream_backlink: true
+  runners:
+    packet_theorem: "PASS=5 FAIL=0"
+    first_hankel: "PASS=4 FAIL=0"
+  diff_check: pass
+pr_status: pending
+next_action: open review PR

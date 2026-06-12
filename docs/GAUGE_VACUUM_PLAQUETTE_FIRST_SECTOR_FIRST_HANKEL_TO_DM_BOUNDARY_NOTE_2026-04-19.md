@@ -23,8 +23,9 @@ the first Jacobi layer `(alpha0, beta1)` and the first Hankel packet
 
 with `beta1 > 0` (positive Perron eigenvalue, conjugation-symmetric Perron
 state, factorized transfer operator). This is exact linear algebra on the
-already-constructed packet from the sibling minimal-bulk-completion packet
-theorem and is closed inside the runner.
+already-constructed packet from the sibling
+[`minimal-bulk-completion packet theorem`](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PACKET_THEOREM_NOTE_2026-04-19.md)
+and is closed inside the runner.
 
 The previous load-bearing statement
 
@@ -67,8 +68,9 @@ per the 2026-05-24 narrowing.
 ## What the runner checks
 
 The runner now drops text checks of the contested premise. It exercises the
-canonical Wilson-side packet from the sibling minimal-bulk-completion packet
-theorem and verifies the algebraic equivalence numerically:
+canonical Wilson-side packet from the sibling
+[`minimal-bulk-completion packet theorem`](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PACKET_THEOREM_NOTE_2026-04-19.md)
+and verifies the algebraic equivalence numerically:
 
 1. one canonical realization on the minimal-bulk-completion branch is
    produced (finite `m1, m2` with `m2 > m1^2`);

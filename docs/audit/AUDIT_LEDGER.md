@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 844 |
+| **retained_bounded** | 845 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1411 |
+| unaudited | 1410 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1289 |
+| `audited_clean` | 1290 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1728 |
+| `unaudited` | 1727 |
 
 | claim_type | count |
 |---|---:|
@@ -471,6 +471,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_qubit_berry_holonomy_probe_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6531,6 +6532,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The sector-power entropy S(r) with p_singlet=1/(1+2r) and p_doublet=2r/(1+2r) is maximized at r=1/2, equivalently the singlet-doublet imbalance is zero there.  _(class `A`)_
 - **chain closes:** True — The entropy statement reduces to the binary entropy maximum at equal sector weights, which gives 1/(1+2r)=2r/(1+2r) and hence r=1/2. The Q-table entries and imbalance/fixed-point claims are direct algebraic substitutions; the broader lane-assignment dynamics is explicitly outside the audited scope.
 - **rationale:** The displayed closed-form identities check out under the note's own definitions: S(r) has its unique interior maximum at r=1/2, the imbalance |3-6r| vanishes there, and the listed Q values follow by substitution. The per-DOF caveat is also consistent with equal per-DOF weights giving r=1. This is a bounded algebraic/calculus closure, not a derivation of the physical lane assignment or charged-lepton sector selection.
+- **auditor confidence:** high
+
+### `flavor_r_half_is_the_records_flow_separatrix_2026-06-02`
+
+- **Note:** [`FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md`](../../docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the stipulated two-sector records/Lueders sharpening rule and its stated r-coordinate, the induced one-dimensional map, its finite fixed points/stability, and the S2/S3 entropy optima were audited; the physical charged-lepton records-flow identification was not.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-003255-da67b78080-flavor_r_half_is_the_records`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Sharpening p_s=1/(1+2r), p_d=2r/(1+2r) by p_i -> p_i^2/Z induces r'=(p'_d/p'_s)/2=2r^2, so r=1/2 is a repelling fixed point rather than an attractor.  _(class `A`)_
+- **chain closes:** True — The ratio proof is independent of the runner: p'_d/p'_s=(p_d/p_s)^2=(2r)^2, hence r'=2r^2; setting x=2r gives x_{n+1}=x_n^2, so x=1 (r=1/2) is repelling and separates the r->0 and r->infinity basins. Shannon concavity gives the two-sector maximum at equal sector weights r=1/2 and the three-real-DOF maximum at equal component weights r=1.
+- **rationale:** The source's bounded conclusion follows from algebraic manipulation and elementary stability/entropy checks of the stipulated update. The runner source does compute the stated map, fixed points, and entropy optima rather than merely printing a scorecard, and an independent symbolic route confirms the load-bearing formulas. The packet does not close, and does not claim to close, the separate physical bridge that this stipulated records map is the emergent charged-lepton flow.
 - **auditor confidence:** high
 
 ### `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02`

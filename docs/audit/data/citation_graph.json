@@ -49638,10 +49638,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19"
     },
     {
       "from": "repo.repo_organization",
@@ -95200,17 +95200,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
         "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
         "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
         "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
         "koide_berry_monopole_bridge_reduction_note_2026-05-31",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "koide_q_minimal_scale_free_selector_note_2026-04-22",
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
+        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+        "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2627fe95b4c4a45526d213d85c8ed727aeddd727a455cff872d1d6bf1bce3a74",
+      "note_hash": "6bc5edf1ebe9e969a0a9e56aad013403f7d1d5f75227dc8ffde125f595187a83",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

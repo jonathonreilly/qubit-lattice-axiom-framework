@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 272,
-    "high": 288,
+    "high": 287,
     "leaf": 428,
     "medium": 425
   },
@@ -7721,28 +7721,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 12,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.555,
-      "note_path": "docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py",
-      "transitive_descendants": 46
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17018,15 +16996,15 @@
       "deps": [
         "staggered_dirac_realization_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.644,
+      "load_bearing_score": 7.172,
       "note_path": "docs/QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_quark_bicac_endpoint_obstruction_theorem.py",
-      "transitive_descendants": 49
+      "transitive_descendants": 50
     },
     {
       "audit_independence_required": "any_non_self",
@@ -30172,6 +30150,63 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+        "flavor_missing_axiom_carrier_measure_note_2026-05-30",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.085,
+      "note_path": "docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/koide_carrier_scoring_needs_nontrivial_modular_2026_06_02.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "hw1_second_order_return_shape_theorem_note",
+        "staggered_self_consistent_two_body_note_2026-04-11",
+        "wilson_two_body_open_refined_note_2026-04-11"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/interaction_asymmetry_delta_occupation_curvature_runner.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -30241,6 +30276,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_centered_u1_fluctuation_record_mixture_structure_2026_06_11.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "staggered_self_consistent_two_body_note_2026-04-11",
+        "wilson_two_body_open_refined_note_2026-04-11",
+        "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/delta_sign_from_retained_mediator_runner.py",
       "transitive_descendants": 0
     },
     {
@@ -31108,36 +31170,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_g_newton_skeleton_selection_2026_05_10_gnewtonG1.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
-        "flavor_missing_axiom_carrier_measure_note_2026-05-30",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/koide_carrier_scoring_needs_nontrivial_modular_2026_06_02.py",
       "transitive_descendants": 2
     },
     {
@@ -32668,33 +32700,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "hw1_second_order_return_shape_theorem_note",
-        "staggered_self_consistent_two_body_note_2026-04-11",
-        "wilson_two_body_open_refined_note_2026-04-11"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/interaction_asymmetry_delta_occupation_curvature_runner.py",
       "transitive_descendants": 1
     },
     {
@@ -35195,33 +35200,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/de_sitter_curvature_gap_not_fierz_pauli_mass_diagnostic_2026_06_08.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "staggered_self_consistent_two_body_note_2026-04-11",
-        "wilson_two_body_open_refined_note_2026-04-11",
-        "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/delta_sign_from_retained_mediator_runner.py",
       "transitive_descendants": 0
     },
     {
@@ -42607,6 +42585,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 34,
-  "total_pending": 1413
+  "ready_count": 36,
+  "total_pending": 1412
 }

@@ -1,0 +1,108 @@
+===== runner cache v1 =====
+runner: scripts/plaquette_per_step_per_plaquette_normalization_bridge_2026_06_12.py
+runner_sha256: 2906361a1c9410270ff152d61dee39146e4e6f0ae9315238c83465513a267b30
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.33
+status: ok
+----- stdout -----
+Plaquette per-step/per-plaquette normalization bridge
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+No new imports: finite repo-internal counting and landed source-sector matrix only.
+
+================================================================================================
+Part 1: one-step slice census
+================================================================================================
+PASS: L_s=2: spatial plaquettes per slice are 3 L_s^3
+      spatial=24, 3 L_s^3=24
+PASS: L_s=2: temporal/mixed plaquettes per step are 3 L_s^3
+      temporal=24, spatial links=24
+PASS: L_s=2: one transfer step carries 6 L_s^3 plaquette factors
+      N_step=48
+PASS: L_s=3: spatial plaquettes per slice are 3 L_s^3
+      spatial=81, 3 L_s^3=81
+PASS: L_s=3: temporal/mixed plaquettes per step are 3 L_s^3
+      temporal=81, spatial links=81
+PASS: L_s=3: one transfer step carries 6 L_s^3 plaquette factors
+      N_step=162
+PASS: L_s=4: spatial plaquettes per slice are 3 L_s^3
+      spatial=192, 3 L_s^3=192
+PASS: L_s=4: temporal/mixed plaquettes per step are 3 L_s^3
+      temporal=192, spatial links=192
+PASS: L_s=4: one transfer step carries 6 L_s^3 plaquette factors
+      N_step=384
+
+================================================================================================
+Part 2: full periodic lattice count and half-slice bookkeeping
+================================================================================================
+PASS: L_s=2, L_t=5: step census sums to the full plaquette count
+      L_t*N_step=240, 6 L_s^3 L_t=240
+PASS: L_s=2, L_t=5: two half-slice spatial weights make one full spatial slice per step
+      half+half=120, full spatial total=120
+PASS: L_s=3, L_t=4: step census sums to the full plaquette count
+      L_t*N_step=648, 6 L_s^3 L_t=648
+PASS: L_s=3, L_t=4: two half-slice spatial weights make one full spatial slice per step
+      half+half=324, full spatial total=324
+PASS: L_s=4, L_t=4: step census sums to the full plaquette count
+      L_t*N_step=1536, 6 L_s^3 L_t=1536
+PASS: L_s=4, L_t=4: two half-slice spatial weights make one full spatial slice per step
+      half+half=768, full spatial total=768
+
+================================================================================================
+Part 3: dimensional normalization
+================================================================================================
+PASS: L=2: L_t/(6 L^4) equals 1/(6 L^3)
+      1/48 = 1/48
+PASS: L=3: L_t/(6 L^4) equals 1/(6 L^3)
+      1/162 = 1/162
+PASS: L=4: L_t/(6 L^4) equals 1/(6 L^3)
+      1/384 = 1/384
+PASS: L=5: L_t/(6 L^4) equals 1/(6 L^3)
+      1/750 = 1/750
+PASS: L_s=2, L_t=5: general rectangular coefficient is 1/(6 L_s^3)
+      1/48 = 1/48
+PASS: L_s=3, L_t=4: general rectangular coefficient is 1/(6 L_s^3)
+      1/162 = 1/162
+PASS: L_s=5, L_t=2: general rectangular coefficient is 1/(6 L_s^3)
+      1/750 = 1/750
+
+================================================================================================
+Part 4: constant-including Wilson convention shift
+================================================================================================
+PASS: L_s=2, L_t=5: licensed Wilson constant contributes -1 per plaquette
+      N_total=240, N_step=48
+PASS: L_s=3, L_t=3: licensed Wilson constant contributes -1 per plaquette
+      N_total=486, N_step=162
+
+================================================================================================
+Part 5: landed 25-dimensional source-sector transfer trace
+================================================================================================
+PASS: landed source-sector truncation is 25-dimensional at NMAX=4
+      shape=(25, 25)
+PASS: source-sector transfer matrix is symmetric positive on the finite box
+      sym_err=2.220e-16, min_eig=1.325e-19
+PASS: L_t=1: log Tr[T^L_t] equals Perron term plus finite spectral correction
+      lambda0=3.812612153335, correction=3.872919811482e-02, residual=0.000e+00
+PASS: L_t=2: log Tr[T^L_t] equals Perron term plus finite spectral correction
+      lambda0=3.812612153335, correction=1.085071533720e-03, residual=0.000e+00
+PASS: L_t=4: log Tr[T^L_t] equals Perron term plus finite spectral correction
+      lambda0=3.812612153335, correction=1.093484037262e-06, residual=0.000e+00
+PASS: L_t=8: log Tr[T^L_t] equals Perron term plus finite spectral correction
+      lambda0=3.812612153335, correction=1.192155550315e-12, residual=0.000e+00
+PASS: L_t=12: log Tr[T^L_t] equals Perron term plus finite spectral correction
+      lambda0=3.812612153335, correction=1.301661149279e-18, residual=0.000e+00
+PASS: finite spectral correction decreases with L_t on the positive source-sector matrix
+      L_t=4:1.093e-06, L_t=8:1.192e-12, L_t=12:1.302e-18
+
+================================================================================================
+Part 6: bridge formula summary
+================================================================================================
+PASS: per-step trace-positive derivative normalizes by N_step=6 L_s^3
+      L_s=3 N_step=162
+PASS: licensed plaquette readout is the trace-positive per-step derivative after adding back the Wilson constant
+      f'_Wilson = -1 + (1/N_step) d_beta log(lambda0_plus); <P> = 1 + f'_Wilson
+
+TOTAL: PASS=34, FAIL=0
+
+----- stderr -----
+

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1447 |
-| Retained-grade rows, including boxed decorations | 1311 |
+| Applied audit verdicts | 1448 |
+| Retained-grade rows, including boxed decorations | 1312 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 847 |
-| Boxed decorations under retained parents | 44 |
+| Boxed decorations under retained parents | 45 |
 | Open gates | 39 |
-| Unaudited rows | 1474 |
+| Unaudited rows | 1473 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 36 |
 | Audited renaming rows | 33 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1477 |
+| Total pending rows | 1476 |
 | Ready rows | 73 |
 | Cycle-break targets | 4 |
-| Critical pending | 283 |
+| Critical pending | 282 |
 | High pending | 291 |
 | Medium pending | 435 |
 | Leaf pending | 468 |
 
 Next ready rows by queue order:
 
-- [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_BARYON_QQQ_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
 - [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - critical; unaudited
 - [`koide_moment_ratio_uniformity_theorem_note_2026-04-19`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md) - critical; audit_in_progress

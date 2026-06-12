@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 845 |
+| **retained_bounded** | 846 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1410 |
+| unaudited | 1409 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1290 |
+| `audited_clean` | 1291 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1727 |
+| `unaudited` | 1726 |
 
 | claim_type | count |
 |---|---:|
@@ -834,6 +834,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `localized_source_response_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_boost_covariance_2d_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `lorentz_boost_covariance_3plus1d_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11996,6 +11997,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** In the continuum limit a -> 0, W_lat(Δt, Δx⃗; a, m) converges for spacelike separations to m K_1(m sqrt(-s^2))/(4π² sqrt(-s^2)), which depends only on the Lorentz invariant s^2.  _(class `C`)_
 - **chain closes:** True — The narrowed claim closes on the supplied free-scalar spectral integral, the retained/retained_bounded one-hop authorities, and standard invariant-measure and Bessel-form identities checked within the restricted packet. The previously open Planck-scale, finite-a causal, and physical-substrate identifications are explicitly excluded from the audited scope.
 - **rationale:** The runner source contains real lattice-dispersion, boost, quadrature, Euclidean convergence, and K4-normalization computations rather than only stdout assertions, although some final summary checks are narrative check(True) statements and are not load-bearing. Independent formula checks found the Taylor sign and coefficients, the axis/diagonal split -(a^2 p^4)/18, the normalized K4 coefficient 4√π/15, and the spacelike K1 form consistent with the note's conventions. All cited authorities used load-bearingly are retained-grade under the rubric, and the source has narrowed away the earlier non-retained Planck/readout/light-cone premises.
+- **auditor confidence:** high
+
+### `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 staggered-Dirac Euclidean 2-point function: continuum SO(4) covariance of the displayed taste-spectator spin block, plus the O(a^2) ell=4 anisotropy of the taste-singlet scalar spectrum Delta(p), excluding interacting, n-point, OS-reconstruction, physical-unit, and full finite-a spin x taste leading-correction claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-003553-bd66916658-lorentz_boost_free_staggered`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From the canonical free staggered phases, the blocked reduced operator is D_red(p)=m I_16+i sum_mu alpha_mu sin(p_mu a)/a with {alpha_mu,alpha_nu}=2 delta_mu nu I, so its inverse has denominator Delta=m^2+sum_mu sin^2(p_mu a)/a^2 and tends as a->0 to (m-i gamma.p)/(p^2+m^2).  _(class `C`)_
+- **chain closes:** True — The stated free action and canonical phases generate the required Clifford reduced operator, whose closed inverse and continuum limit are algebraic consequences. The finite-a O(a) taste-mixing caveat is scoped out of the O(a^2) leading-correction claim, which is confined to Delta(p) / the displayed taste-spectator sector.
+- **rationale:** The runner source does real operator construction from the explicit staggered phases and does not merely print expected constants; independent checks confirm the alpha_mu Clifford algebra, the -1/3 coefficient from sin^2(pa)/a^2, and the pure S^3 ell=4 harmonic H4=sum x_mu^4-(1/2)r^4. No external comparator or tuned empirical value is used. The retained_bounded Kähler-Dirac authority is consumed only for abstract spin/taste algebra; the packet independently derives the canonical free staggered reduced operator, so the upstream open physical-realization disclaimer is not load-bearing here.
 - **auditor confidence:** high
 
 ### `lorentz_kernel_positive_closure_note`

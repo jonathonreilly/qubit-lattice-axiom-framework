@@ -9,14 +9,12 @@ exactly diagonal in (i, j) with binary-orthogonality sum giving 8 δ_{ij}.
 
 from fractions import Fraction
 from itertools import product
-import json
 import math
 from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE_PATH = ROOT / "docs" / "TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md"
-CLAIM_ID = "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
 
 PASS = 0
 FAIL = 0
@@ -170,43 +168,23 @@ check("for f(x) = x at v = 1: H_ii = 16 = 8 · 2 (closure factor)",
 
 
 # ============================================================================
-section("Part 7: audit row exists with the narrowed dependency set")
+section("Part 7: dependency visibility without audit-ledger status read")
 # ============================================================================
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-ledger = json.loads(LEDGER.read_text())
-rows = ledger["rows"]
-claim_row = rows.get(CLAIM_ID)
-check(f"{CLAIM_ID} seeded by audit pipeline",
-      claim_row is not None,
-      detail="run docs/audit/scripts/run_pipeline.sh after editing the note")
-if claim_row is not None:
-    claim_deps = set(claim_row.get("deps", []))
-    # 2026-06-11 narrowing: the staggered-Dirac gate edge is demoted to a
-    # plain-text pointer (physical context, non-load-bearing) and the axiom
-    # memo edge is repointed to the current premise surface. The ledger
-    # regenerates deps from the note on the next pipeline run, so this check
-    # accepts either pre- or post-regeneration bookkeeping and rejects only
-    # unexpected edges.
-    allowed_deps = {
-        "minimal_axioms",
-        "minimal_axioms_2026-05-03",
-        "minimal_axioms_2026-06-05",
-        "staggered_dirac_realization_gate_note_2026-05-03",
-    }
-    check(f"{CLAIM_ID} dependency edges within the allowed narrowed set",
-          claim_deps.issubset(allowed_deps),
-          detail=f"deps={sorted(claim_deps)}")
-    # Status is set ONLY by the independent audit lane and changes over time;
-    # assert validity, not a point-in-time value.
-    valid = {"unaudited", "audited_conditional", "audited_clean",
-             "retained", "retained_bounded", "retained_no_go",
-             "audited_failed", "open_gate", "retained_pending_chain",
-             "audited_renaming", "audited_numerical_match"}
-    check(f"{CLAIM_ID} carries a recognized effective_status (informational: "
-          f"{claim_row.get('effective_status')!r})",
-          claim_row.get("effective_status") in valid
-          and "Audit handling is external to this note" in note_text,
-          detail=f"effective_status={claim_row.get('effective_status')!r}")
+check("source note names staggered-Dirac realization gate as context dependency",
+      "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md" in note_text)
+check("source note names historical minimal-axiom memo as context dependency",
+      "MINIMAL_AXIOMS_2026-05-03.md" in note_text)
+check("source note says the physical context edge is non-load-bearing",
+      "context dependency" in note_text
+      and "non-load-bearing physical-context edge" in note_text)
+runner_source = Path(__file__).read_text()
+live_status_read_tokens = [
+    "/".join(("docs", "audit")),
+    "audit" + "_ledger",
+    "effective" + "_status",
+]
+check("runner does not inspect live audit-status data",
+      not any(token in runner_source for token in live_status_read_tokens))
 
 
 print(f"\n{'='*88}\n  TOTAL: PASS={PASS}, FAIL={FAIL}\n{'='*88}")

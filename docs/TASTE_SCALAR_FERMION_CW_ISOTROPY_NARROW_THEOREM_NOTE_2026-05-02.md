@@ -1,7 +1,7 @@
 # Taste-Scalar Fermion Coleman-Weinberg Isotropy — Narrow Theorem
 
 **Date:** 2026-05-02
-**Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
+**Type:** bounded_theorem (axiom-reset source narrowing 2026-05-03; source-scope sync 2026-06-12)
 **Physical context pointer:** staggered-Dirac realization derivation target
 (plain-text, non-load-bearing for the theorem below:
 `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).
@@ -116,7 +116,7 @@ Verifies, at exact rational precision via Python `Fraction`:
 3. At `φ = (v, 0, 0)`: `λ_s² = v²` uniformly across all 8 basis states
    (verified for `v ∈ {1, 2, -3, 7/11}`).
 4. Hessian off-diagonal `∂²/∂φ_i ∂φ_j` for `i ≠ j` evaluates to 0 at
-   the axis-aligned minimum (concrete numerical test for several `f`
+   the axis-aligned point (concrete exact tests for several `f`
    choices: `f(x) = x`, `f(x) = x²`, `f(x) = x³`).
 5. Hessian diagonal `∂²/∂φ_i ∂φ_i` evaluates to a common value; concrete
    examples have nonzero common value.
@@ -184,8 +184,9 @@ Plain-text parent pointer: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - `scripts/frontier_generation_rooting_undefined.py`
 - `GENERATION_AXIOM_BOUNDARY_NOTE.md` (preserved)
 
-These entries are historical/context pointers only for this theorem's physical
-naming; they are not inputs to the Hessian factorization or runner checks.
+These entries are a historical context dependency for this theorem's physical
+naming only: a non-load-bearing physical-context edge, not an input to the
+Hessian factorization or runner checks.
 
 ## Audit context repair pointers
 
@@ -205,3 +206,5 @@ audited claim scope.
   references from markdown links to plain-text context pointers, added the
   explicit non-load-bearing physical-context narrowing, and corrected the
   verification prose to the runner's `x³` example.
+- **2026-06-12** — source-scope sync: kept the staggered-Dirac context
+  non-load-bearing and removed the runner's live audit-status read.

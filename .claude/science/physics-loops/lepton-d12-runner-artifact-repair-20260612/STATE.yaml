@@ -1,0 +1,21 @@
+loop_slug: lepton-d12-runner-artifact-repair-20260612
+goal: "Repair the lepton D12-prime audited_conditional runner_artifact_issue by aligning the runner/cache with current cited authorities."
+target_claim_id: lepton_block_d12_prime_matching_no_go_note_2026-05-10
+mode: source_repair
+cycle_count: 1
+active_route: current_source_reroute_and_cache_refresh
+actual_current_surface_status: audited_conditional_on_main_until_reaudit
+branch_status: open-gate_source_repair
+files_touched:
+  - docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md
+  - scripts/frontier_lepton_block_d12_prime_matching.py
+  - logs/runner-cache/frontier_lepton_block_d12_prime_matching.txt
+  - .claude/science/physics-loops/lepton-d12-runner-artifact-repair-20260612/
+open_imports:
+  - "No retained lepton-composite scalar/operator bridge is supplied."
+trace_gate: direct_blocker_closure
+proposal_allowed: false
+proposal_allowed_reason: "The repaired row remains an open gate; no lepton Yukawa theorem is proposed."
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer should re-audit the open-gate row with the fresh runner/cache."
+stop_condition: "Science block complete when branch is pushed and PR opened."

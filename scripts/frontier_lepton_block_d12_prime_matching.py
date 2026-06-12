@@ -8,8 +8,11 @@ behind the narrow claim:
 * the quark YT matching algebra gives y_t = g_s/sqrt(6);
 * the formal lepton hypercharge analogy would give y_tau = g_1/sqrt(2)
   only after a unit lepton scalar matrix element is supplied;
-* the cited current source defines the scalar through a color-indexed quark
-  bilinear and does not define a lepton-composite scalar bridge.
+* current source splits the quark-side inputs correctly: the YUKAWA source
+  supplies only the SU(N_c) color channel fraction, while the YT Ward source
+  defines the Q_L scalar-singlet H_unit bilinear;
+* the cited current sources still do not define a lepton-composite scalar
+  bridge.
 """
 
 from __future__ import annotations
@@ -96,26 +99,43 @@ section("Current source-surface bridge check")
 yukawa_note = DOCS / "YUKAWA_COLOR_PROJECTION_THEOREM.md"
 yt_note = DOCS / "YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
 
-check("YUKAWA_COLOR_PROJECTION_THEOREM.md exists", yukawa_note.exists(), str(yukawa_note))
-check("YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists", yt_note.exists(), str(yt_note))
+check("YUKAWA_COLOR_PROJECTION_THEOREM.md exists", yukawa_note.exists(), "docs/YUKAWA_COLOR_PROJECTION_THEOREM.md")
+check("YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists", yt_note.exists(), "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md")
 
 yukawa_text = yukawa_note.read_text(encoding="utf-8") if yukawa_note.exists() else ""
 yt_text = yt_note.read_text(encoding="utf-8") if yt_note.exists() else ""
 combined = (yukawa_text + "\n" + yt_text).lower()
 
-has_quark_bilinear = "psi-bar_a(x) psi_a(x)" in yukawa_text or "psi-bar_a psi_a" in yukawa_text
-has_color_index = "color index" in yukawa_text.lower() and "n_c" in yukawa_text.lower()
-has_quark_context = "quark" in combined
+has_yukawa_color_fraction = (
+    "f_adj,dim = (n_c^2 - 1) / n_c^2" in yukawa_text.lower()
+    and "representation-dimension fraction" in yukawa_text.lower()
+    and "not a physical yukawa" in yukawa_text.lower()
+)
+has_yt_h_unit = (
+    "h_unit" in yt_text.lower()
+    and "psi-bar_{alpha,a}" in yt_text
+    and "n_c · n_iso" in yt_text.lower()
+)
+has_yt_scalar_uniqueness = (
+    "scalar-singlet operator uniqueness" in yt_text.lower()
+    and "unit-normalized" in yt_text.lower()
+)
 defines_lepton_composite_bridge = (
     "lepton composite higgs" in combined
     or "lepton-composite scalar" in combined
     or "lepton composite scalar" in combined
+    or "lepton scalar bridge" in combined
 )
 
 check(
-    "YUKAWA source defines the scalar with a color-indexed quark bilinear",
-    has_quark_bilinear and has_color_index and has_quark_context,
-    f"quark_bilinear={has_quark_bilinear}, color_index={has_color_index}, quark_context={has_quark_context}",
+    "YUKAWA source is only a color channel-fraction theorem",
+    has_yukawa_color_fraction,
+    f"color_fraction_boundary={has_yukawa_color_fraction}",
+)
+check(
+    "YT Ward source defines the Q_L H_unit scalar-singlet bilinear",
+    has_yt_h_unit and has_yt_scalar_uniqueness,
+    f"h_unit={has_yt_h_unit}, uniqueness={has_yt_scalar_uniqueness}",
 )
 check(
     "current cited sources do not define a lepton-composite scalar bridge",

@@ -1,6 +1,6 @@
 # Lepton Block D12-Prime Matching - Physical-Operator Open Gate
 
-**Date:** 2026-05-10
+**Date:** 2026-05-10; 2026-06-12 runner/source-surface reroute
 **Claim type:** open_gate
 **Status:** source-note proposal; independent audit owns audit verdict and
 pipeline-derived effective status.
@@ -16,11 +16,15 @@ identity on the current source surface unless an additional physical-operator
 bridge is supplied.
 
 The reason is narrow. In the quark YT chain, the two sides of the matching
-refer to the same composite scalar operator. The relevant source notes define
-that scalar through a color-indexed quark bilinear:
+refer to the same composite scalar operator. Current source now splits the
+quark-side inputs across two notes:
 
 - [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md)
+  supplies only the SU(N_c) color channel-fraction algebra and explicitly
+  excludes physical Yukawa matching.
 - [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
+  supplies the `Q_L` scalar-singlet `H_unit` bilinear and matrix-element
+  surface used by the quark-side Ward matching.
 
 The lepton-block analogy can formally write a hypercharge exchange equation
 and, if a unit lepton scalar matrix element is supplied, it algebraically
@@ -50,8 +54,8 @@ The paired runner verifies:
 - the quark YT matching algebra gives `y_t = g_s/sqrt(6)`;
 - the formal lepton hypercharge analogy would give `y_tau = g_1/sqrt(2)`
   if a unit lepton scalar operator were supplied;
-- the cited YUKAWA source defines the scalar with a color-indexed quark
-  bilinear;
+- the YUKAWA source is only a color channel-fraction theorem;
+- the YT Ward source defines the `Q_L` `H_unit` scalar-singlet bilinear;
 - the current cited source text does not define a lepton-composite scalar
   bridge;
 - the result remains an open gate, not a retained-grade no-go or mass

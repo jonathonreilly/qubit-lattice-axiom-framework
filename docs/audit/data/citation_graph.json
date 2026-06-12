@@ -50346,10 +50346,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_dimensional_compression_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "light_cone_framing_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
     },
     {
       "from": "repo.repo_organization",
@@ -96684,17 +96684,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_dimensional_compression_note",
         "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "su3_adjoint_casimir_theorem_note_2026-05-02",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "koide_q_minimal_scale_free_selector_note_2026-04-22",
-        "light_cone_framing_note"
+        "light_cone_framing_note",
+        "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c0871bee90ef96a4003da29c562092d862a2309051f113ba6ce68335ff1d78ac",
+      "note_hash": "a7c2c6d2c58ddc374020c38249fb49de686407eebcbda8aaa418a10ea7a5592f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

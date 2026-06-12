@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_matter_loop_flux_response_no_uniform_sign_2026_06_11.py
+runner_sha256: cc799f70c9d85ae00a154dedd4ec97f6f22112770b7fb22f852280b871616904
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+  [PASS] S1 m=0 twisted spectrum matches eps_k = -2t cos((2 pi k + phi)/N)  (max |num-analytic| = 1.887e-15)
+  [PASS] S1b m=0.4 twisted spectrum matches +-sqrt(m^2+4t^2cos^2((2pi l+phi)/N)) (phi=0.0)  (max dev 8.88e-16)
+  [PASS] S1b m=0.4 twisted spectrum matches +-sqrt(m^2+4t^2cos^2((2pi l+phi)/N)) (phi=0.7)  (max dev 8.88e-16)
+   N= 8 m=0.4 K= 4 (even) V''(0)=-8.622880e-02 relDelta=1.85e-05
+   N= 8 m=0.4 K= 3 (odd ) V''(0)=+7.002185e-02 relDelta=3.04e-05
+   N= 8 m=1.0 K= 4 (even) V''(0)=-1.049347e-02 relDelta=5.08e-05
+   N= 8 m=1.0 K= 3 (odd ) V''(0)=+5.200841e-02 relDelta=1.37e-05
+   N=12 m=0.4 K= 6 (even) V''(0)=-2.522320e-02 relDelta=4.23e-05
+   N=12 m=0.4 K= 5 (odd ) V''(0)=+4.422104e-02 relDelta=2.01e-05
+   N=12 m=1.0 K= 6 (even) V''(0)=-1.166237e-03 relDelta=1.22e-03
+   N=12 m=1.0 K= 5 (odd ) V''(0)=+2.660994e-02 relDelta=1.34e-05
+   N=16 m=0.4 K= 8 (even) V''(0)=-8.888416e-03 relDelta=3.20e-04
+   N=16 m=0.4 K= 7 (odd ) V''(0)=+3.017426e-02 relDelta=1.06e-04
+   N=16 m=1.0 K= 8 (even) V''(0)=-1.486219e-04 relDelta=1.68e-02
+   N=16 m=1.0 K= 7 (odd ) V''(0)=+1.547420e-02 relDelta=2.75e-04
+  [PASS] S2 Richardson consistency on every smooth (m>0) instance (relative < 1e-3 OR absolute < 1e-5 -- the absolute branch is the double-precision second-difference floor eps*E0/h^2 ~ 4e-6 at h=5e-5, E0~O(10))
+  [PASS] S3a N=4n rings, EVEN particle number (closed shell): V''(0) < 0 at every instance (paramagnetic; phi=0 a local MAX)  (6 instances)
+  [PASS] S3b N=4n rings, ODD particle number (closed shell): V''(0) > 0 at every instance (diamagnetic; phi=0 a local MIN) -- parity alternation on the tested 4n class  (6 instances)
+  [PASS] S3c N=4n+2 rings, EVEN half filling (closed shell): V''(0) > 0 at both instances -- the bare even/odd rule does NOT extend across N mod 4; the sign structure is SHELL- and N-mod-4-resolved  (N=10: V''=+3.143e-02; N=14: V''=+1.250e-02)
+  [PASS] S3d N=4n+2, K=N/2-1 is an OPEN SHELL: a level-crossing cusp at phi=0 (slope jumps O(0.1)), not a defined curvature -- excluded from V'' tables  (N=10: jump=0.319; N=14: jump=0.207)
+  [PASS] S2' the m=0 half-filled point is a level-crossing CUSP (Fermi gap < 1e-12; slope jump 0.33) that CLOSES at m=0.4 to the smooth FD scale O(h|V''|) -- V'' is not defined at the cusp and it is excluded from smooth checks  (gap=1.85e-16 jump(m=0)=0.3333 jump(m=0.4)=2.52e-05 (FD scale 2.6e-04; contrast 1.3e+04x))
+  [PASS] S4-even decoupling: |V''(0)| decreases monotonically in m (K=6)  (2.522e-02 > 1.166e-03 > 1.942e-05)
+  [PASS] S4-odd decoupling: |V''(0)| decreases monotonically in m (K=5)  (4.422e-02 > 2.661e-02 > 1.387e-02)
+  [PASS] S6 filled band (K=N): E0(phi) - E0(0) = 0 to 1e-12 (hopping is off-diagonal => tr h flux-independent; the response vanishes exactly)  (max |Delta E0| = 8.882e-16)
+  [PASS] S7 zero-total-flux pure gauge transformation leaves E0 invariant  (|Delta E0| = 0.000e+00)
+==============================================================================
+TOTAL: PASS=13 FAIL=0
+==============================================================================
+SCOPE: the exact matter-loop flux response on free rings has NO UNIFORM
+  SIGN -- it is SHELL- and N-MOD-4-RESOLVED: tested N=4n closed shells
+  alternate with particle parity (even K para, odd K dia; 6+6 exact);
+  N=4n+2 half-filled even-K closed shells FLIP to V''>0; open shells are
+  level-crossing cusps (no curvature).  The author's working uniform
+  screening-sign hypothesis is refuted on this tested finite-ring matter
+  sector.  Fillings are SUPPLIED data.  Decoupling and cusp-closure
+  statements are scoped to the tested instances.  NOT claimed: the b3
+  coefficient, non-abelian antiscreening, the gauge self-energy (named
+  gap: requires the not-yet-derived autonomous gauge action), the
+  parity-averaged or thermodynamic-limit sign (named follow-on),
+  interacting matter, d=3, any beta-function number.  The
+  Peskin-Schroeder formula (X3) is not used anywhere.  Statuses are
+  pipeline-derived; the audit lane grades.
+
+----- stderr -----
+

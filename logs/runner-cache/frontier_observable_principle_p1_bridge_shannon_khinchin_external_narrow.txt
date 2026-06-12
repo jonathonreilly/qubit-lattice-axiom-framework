@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py
-runner_sha256: 0f412a8805bc8953952c1dc1a90198adfe259de6388682bcdea7a1dae445cc1c
+runner_sha256: d8697885477f67ee5595bad0b2d1fd5d3accf20e2a08b8c307af063251b7dcfc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 # Observable-principle P1 bridge Shannon/Khinchin external bounded note runner
@@ -16,9 +16,11 @@ T1: Cauchy log functional equation (symbolic SymPy)
          sympy.simplify(lhs - rhs) = 0
   [PASS] c*log(x*y) = c*log(x) + c*log(y) for any real c
          sympy.simplify(c*log diff) = 0
+  [PASS] additive offset b is forbidden by exact additivity unless b=0
+         shifted residual = -b
 
 ==============================================================================
-T2: Cauchy log uniqueness on rational grid (numerical)
+T2: Cauchy log equation on rational grid (numerical)
 ==============================================================================
   [PASS] log(xy)=log(x)+log(y) on rational grid to <1e-12
          max_residual=2.220e-16, grid_size=36
@@ -66,7 +68,7 @@ T8: Sensitivity — non-additive alternatives violate the functional equation
          f(r1 r2)=6, f(r1)+f(r2)=5
   [PASS] f(r)=r^2 also fails f(r1 r2)=f(r1)+f(r2) in general
          f(r1 r2)=36, f(r1)+f(r2)=13
-  [PASS] c*log uniquely satisfies the multiplicative-to-additive equation
+  [PASS] c*log satisfies the multiplicative-to-additive equation
          lhs=1.791759, rhs=1.791759
 
 ==============================================================================
@@ -84,7 +86,7 @@ T10: Source-note boundary check
   [PASS] note declares Status authority: source-note proposal only
   [PASS] note avoids forbidden status-overclaim strings
 
-=== TOTAL: PASS=19, FAIL=0 ===
+=== TOTAL: PASS=20, FAIL=0 ===
 
 ----- stderr -----
 

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1502 |
-| Retained-grade rows, including boxed decorations | 1340 |
+| Applied audit verdicts | 1503 |
+| Retained-grade rows, including boxed decorations | 1341 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 862 |
+| Retained bounded rows | 863 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 40 |
-| Unaudited rows | 1369 |
+| Unaudited rows | 1368 |
 | Retained-pending-chain rows | 17 |
 | Audited conditional rows | 59 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1371 |
-| Ready rows | 11 |
+| Total pending rows | 1370 |
+| Ready rows | 10 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
 | High pending | 285 |
 | Medium pending | 411 |
-| Leaf pending | 403 |
+| Leaf pending | 402 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`koide_import_two_bit_decomposition_note_2026-05-30`](../../docs/KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md) - medium; unaudited
 - [`koide_kahler_dirac_silent_on_measure_note_2026-05-30`](../../docs/KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md) - medium; unaudited
 - [`koide_reality_type_permitted_not_forced_note_2026-05-30`](../../docs/KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md) - medium; unaudited
 - [`lepton_block_d12_prime_matching_no_go_note_2026-05-10`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md) - medium; unaudited
 - [`observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28`](../../docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
-- [`rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md) - leaf; unaudited
+- [`rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md) - medium; unaudited
+- [`record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,16 +82,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3327 |
 | Critical nodes | 513 |
-| High nodes | 512 |
-| Medium nodes | 902 |
-| Leaf nodes | 1400 |
+| High nodes | 511 |
+| Medium nodes | 904 |
+| Leaf nodes | 1399 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1530 descendants; score 127.080
 - `three_generation_observable_theorem_note` - critical; 1057 descendants; score 63.547
 - `graph_first_su3_integration_note` - critical; 1389 descendants; score 60.941
-- `observable_principle_from_axiom_note` - critical; 882 descendants; score 59.286
+- `observable_principle_from_axiom_note` - critical; 881 descendants; score 59.285
 - `key_terminology` - critical; 1216 descendants; score 50.249
 - `minimal_axioms_2026-05-03` - critical; 998 descendants; score 49.964
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 970 descendants; score 45.423

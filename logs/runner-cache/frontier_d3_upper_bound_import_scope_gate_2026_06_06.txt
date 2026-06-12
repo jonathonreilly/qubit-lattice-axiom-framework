@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py
-runner_sha256: 7b752801eb6835e6f96c822ad9aac069e5115ffd79e46252a2eedcd429a43fa5
+runner_sha256: c95fc5db2d11982fc14ff1883a0b9d635d52da9efbac764978e81558e6128e6b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 D3 upper-bound native-stable-edge gate
@@ -24,8 +24,8 @@ D3 upper-bound native-stable-edge gate
 [PASS] upper wrapper is explicit native-stable-edge source wrapper
 [PASS] upper wrapper records independent audit authority
 [PASS] upper wrapper contains native stable route and d<=3 bound
-[PASS] upper wrapper contains atomic route and d<=4 bound
-[PASS] upper wrapper marks standard Coulomb spectrum only at d=3
+[PASS] upper wrapper contains Coulomb scaling companion and d>=5 exclusion
+[PASS] upper wrapper marks hydrogen spectrum as non-load-bearing
 [PASS] upper wrapper forbids internal-derivation overread
 [PASS] stable support note keeps full closed-orbit boundary explicit
 [PASS] Bertrand support note verifies circular-orbit sign classification
@@ -33,12 +33,11 @@ D3 upper-bound native-stable-edge gate
 [PASS] Coulomb support note does not close D3 chain by itself
 [PASS] lower support set is exactly the checked current finite set
 [PASS] native stable upper set over checked positive dims is d<=3
-[PASS] atomic weaker stability upper set over checked positive dims is d<=4
+[PASS] Coulomb scaling companion excludes d>=5 over checked positive dims
 [PASS] lower intersect native stable edge is unique d=3 ([3])
-[PASS] lower intersect weaker atomic stability is not unique ([3, 4])
-[PASS] lower intersect strict atomic spectrum is unique if separately used
-[PASS] native stable edge is decisive under current weaker atomic-stability scope
-[PASS] atomic companion support is compatible with native-stable-selected d=3
+[PASS] lower intersect weaker Coulomb scaling companion is not unique ([3, 4])
+[PASS] native stable edge is decisive under current weaker Coulomb-scaling scope
+[PASS] Coulomb companion support is compatible with native-stable-selected d=3
 [PASS] gate non-claims include framework derivation firewall
 [PASS] gate records future work as native edge audit or stronger theorem work
 [PASS] runner path is cited by gate note
@@ -47,11 +46,11 @@ D3 upper-bound native-stable-edge gate
 COMPOSITION:
   lower runner support: [3, 4, 5]
   native stable upper:  d <= 3 -> [1, 2, 3]
-  atomic weak upper:    d <= 4 -> [1, 2, 3, 4]
+  Coulomb scaling upper:d <= 4 -> [1, 2, 3, 4]
   lower & native stable:[3]
-  lower & atomic weak:  [3, 4]
+  lower & Coulomb scale:[3, 4]
 STATUS: exact-support native-stable-edge gate; audit_required_before_effective_retained=true
-SUMMARY: PASS=35 FAIL=0
+SUMMARY: PASS=34 FAIL=0
 
 ----- stderr -----
 

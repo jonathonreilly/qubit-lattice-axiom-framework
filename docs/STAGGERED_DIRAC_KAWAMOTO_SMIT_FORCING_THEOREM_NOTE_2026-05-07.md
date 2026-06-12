@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-07; 2026-06-06 cocycle/gauge-class uniqueness repair;
 2026-06-10 science-fix (iff + premise honesty + forcing certificate —
-see §0 changelog)
+see §0 changelog); 2026-06-11 substep-1 boundary sync
 **Type:** bounded_theorem
 **Claim scope:** Within the declared kinetic class — the naive-Dirac
 kinetic form on nearest-neighbor `Z³` links (premise P-KIN) made
@@ -72,6 +72,15 @@ surface").
   enumeration of all `2^12 = 4096` sign systems on the unit cube with
   scalarizability decided by explicit transport, a GF(2) cohomology
   certificate at scale, and falsification legs (§6).
+- **2026-06-11 (substep-1 boundary sync).** The substep-1 source has
+  since discharged the former U4/per-site-identification boundary via
+  the Quantum/dim-two route while preserving the statistics-selection
+  residual: the hard-core-boson frame remains outside the
+  two-candidate comparison. This note's B1 language is synchronized to
+  that current boundary. No kinetic-class derivation is added here:
+  P-KIN and P-SD remain declared premises, and BlockT1 remains a
+  bounded upstream input until the statistics-frame selection bridge is
+  retained.
 - **2026-06-06.** Cocycle/gauge-class uniqueness repair (necessity +
   classification; superseded in form by Lemmas 2 and 4 below).
 - **2026-05-07.** Original substep-2 note.
@@ -108,7 +117,7 @@ realization-gate note consumes as its R2 authority.
 
 | ID | Boundary | Where it bites |
 |---|---|---|
-| B1 | Substep-1 input is the *two-candidate* Grassmann-vs-bosonic narrow theorem; the full per-site physical-Hilbert-space identification (the U4 bridge) is open in the substep-1 note itself | the single-mode premise BlockT1 is bounded, not unconditional |
+| B1 | Substep-1 input is the *two-candidate* Grassmann-vs-bosonic narrow theorem. The former U4/per-site-identification boundary is now discharged there, but the statistics-selection/exhaustiveness boundary is still open because the hard-core-boson frame lies outside the two-candidate comparison | the single-mode premise BlockT1 is bounded, not unconditional |
 | B2 | P-KIN: the naive-Dirac kinetic form `D = Σ_μ γ_μ ⊗ ∂_μ` on nearest-neighbor `Z³` links is a declared premise; non-nearest-neighbor or non-Dirac kinetic operators are not excluded here | Theorem 2 quantifies over phase systems *within* this class only |
 | B3 | P-SD: compatibility with the single-mode measure is implemented by a *site-local unitary* diagonalization `T(x)`; alternatives that bypass spin diagonalization (e.g. the 2-component naive operator) are excluded by premise, not derivation — the gate note's runner exhibits that alternative explicitly (its check 18) | the scalarization condition (4) is the P-SD premise in equation form |
 | B4 | Finite tori carry extra holonomy data: signs around non-contractible cycles (PBC/APBC and wrap-sign conventions) are boundary convention data, not local phase law; likewise lattice-axis permutation is coordinate-label gauge | Theorem 2(ii) is stated on simply connected regions |
@@ -121,7 +130,7 @@ realization-gate note consumes as its R2 authority.
 |---|---|---|
 | Quantum | one-qubit local algebra, equivalently `M_2(C) ~= Cl(3,0)`, with Pauli realization per site | accepted axiom premise |
 | Lattice | `Z³` nearest-neighbor lattice | accepted axiom premise |
-| BlockT1 | Matter measure is single-mode Grassmann `(χ_x, χ̄_x)` per site, on the two-candidate surface | bounded upstream input per [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) (B1) |
+| BlockT1 | Matter measure is single-mode Grassmann `(χ_x, χ̄_x)` per site, on the two-candidate surface | bounded upstream input per [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md): U4/per-site identification is closed there, but the statistics-selection/exhaustiveness residual remains open (B1) |
 | U2 | Per-site faithful Cl(3) irrep of dim 2; central pseudoscalar `ω = γ₁γ₂γ₃` | per [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) |
 | F1 | Z₂ fermion-parity grading | per [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) |
 | BPG | `Z³` nearest-neighbor graph is bipartite | admissible standard math (graph theory) |
@@ -352,8 +361,10 @@ as the PASS lines.
   operators or 2-component realizations that bypass spin
   diagonalization is open; the gate note exposes the 2-component
   alternative concretely.
-- The substep-1 U4 bridge / anything beyond the two-candidate surface
-  (B1).
+- The substep-1 statistics-selection/exhaustiveness residual (B1):
+  the former U4/per-site-identification boundary is discharged in the
+  substep-1 note, but Grassmann-vs-hard-core-boson selection remains
+  open beyond the two-candidate surface.
 - Rooting / taste reduction: the previous revision's NR claim
   ("retained no-rooting irreducibility" of the Kawamoto-Smit
   realization on `C^8`) is withdrawn from this note's premise set and

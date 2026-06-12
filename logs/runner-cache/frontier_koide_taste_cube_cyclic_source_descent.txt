@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_taste_cube_cyclic_source_descent.py
-runner_sha256: 86276c4e56ed7bda73cb8b91866c6a9583d2bf76eff9cb050e1baf73c24ec008
+runner_sha256: d43c26a81e501387c7a5267d17b0cf43b4b0a6572a329213715400d7608e4c20
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.60
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -38,13 +38,13 @@ PART 4: any Schur-compatible full-cube response factors through r0, r1, r2
   [PASS] [NUMERIC] The response law ReTr(S(M) P1 A8(X) P1) factors exactly through r0, r1, r2  (M0/X0: coord=0.0e+00, fact=3.6e-15; M0/X1: coord=0.0e+00, fact=0.0e+00; M0/X2: coord=1.1e-16, fact=7.1e-15; M0/X3: coord=1.1e-16, fact=3.6e-15; ...)
 
 Interpretation:
-  The physical taste cube does not force us back to a vague large-source
-  target. Exact C_3[111] averaging and a Schur-compatible charged-sector
-  reduction collapse the full 8-corner source bank to the same three
-  cyclic response channels already identified on T_1. So the honest
-  remaining job is not to rediscover the carrier size. It is to derive
-  the microscopic full-cube source law for those channels, and then the
-  selector law that would put them on the Koide cone.
+  The physical taste cube does not force us back to a vague Hermitian
+  source-response target. Exact C_3[111] averaging and a Schur-compatible
+  charged-sector reduction collapse the full 8-corner Hermitian source
+  responses to the same three cyclic channels already identified on T_1.
+  So the honest remaining job is not to rediscover the carrier size; it is
+  to derive the microscopic full-cube source law for those channels, and
+  then the selector law that would put them on the Koide cone.
 
 PASS=15 FAIL=0
 

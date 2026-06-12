@@ -142,7 +142,12 @@ def main() -> int:
     s3_text = read(s3_note)
     free_text = read(free_matrix_note)
 
-    check("generation note says hierarchy remains open", "not retained: a first-principles `1+1+1` mass hierarchy" in generation_text)
+    check(
+        "generation note says mass hierarchy remains outside its retained scope",
+        "does not claim" in generation_text
+        and "mass hierarchy" in generation_text
+        and "separate science opportunity" in generation_text,
+    )
     check("S3 support note identifies hw=1 as A_1 + E", "hw = 1" in s3_text and "A_1 + E" in s3_text)
     check("block01 free-matrix no-go is compatible", "does not fix" in free_text and "Y_u" in free_text and "Y_d" in free_text)
     check("new note forbids retained mass closure", "not claim retained" in new_text and "`m_b`" in new_text)

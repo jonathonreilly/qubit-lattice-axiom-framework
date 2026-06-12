@@ -1,21 +1,23 @@
 # Gauge-Vacuum Plaquette First Three-Sample Environment Evaluator Route
 
 **Date:** 2026-04-17
-**Status:** exact evaluator-route reduction and exact current-stack no-go on the
-plaquette PF lane; the real compressed-sector route to
+**Status:** formal evaluator-route reduction plus finite structural-surface
+underdetermination on the plaquette PF lane; the compressed-sector route to
 `Z_6^env(W_A)`, `Z_6^env(W_B)`, `Z_6^env(W_C)` already factors through one
-common beta-side vector and one fixed three-row sample operator, but the
-current exact stack still does **not** determine that beta-side vector, so no
-actual evaluator is yet closed on the present science surface
+common beta-side vector and one fixed three-row sample operator on the stated
+source surface, but the runner's finite positive conjugation-symmetric
+witnesses show that this restricted structural surface still does **not**
+determine that beta-side vector. This is not a proof that the physical
+`beta=6` Wilson/Haar environment stack is exhausted.
 **Type:** no_go
 **Runner:** `scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py`
 
 ## Question
 
-After the exact beta-side seam-reduction theorem, the compressed
+After the formal beta-side seam-reduction theorem, the compressed
 rim-functional uniqueness theorem, the exact radical three-sample map, and the
 local-Wilson obstruction theorem, what is the strongest honest new theorem on
-the *actual evaluator route* for
+the *formal compressed-sector evaluator route* for
 
 `Z_6^env(W_A)`,
 
@@ -27,7 +29,7 @@ the *actual evaluator route* for
 
 The strongest honest statement is a two-part theorem.
 
-First, the actual compressed-sector evaluator route is already exact and
+First, the formal compressed-sector evaluator route is already exact and
 rigid:
 
 - it does **not** consist of three unrelated sample-by-sample local closures,
@@ -35,18 +37,19 @@ rigid:
 - and the only sample dependence sits in one fixed three-row Peter-Weyl sample
   operator.
 
-Second, the current exact stack still does **not** determine that common
-beta-side vector. There are still distinct admissible positive
-conjugation-symmetric `beta = 6` environment witnesses on the current exact
-surface that produce different normalized three-sample triples.
+Second, the restricted structural surface checked here still does **not**
+determine that common beta-side vector. There are still distinct positive
+conjugation-symmetric `beta = 6` environment witnesses satisfying the runner's
+listed finite constraints that produce different normalized three-sample
+triples.
 
-So the branch now knows the real route exactly:
+So the branch now knows the formal route exactly:
 
 `beta-side vector  ->  fixed three-sample operator  ->  (Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C))`.
 
 But it also knows the equally important no-go:
 
-the present exact stack still does **not** supply that beta-side vector, so it
+the restricted structural surface still does **not** supply that beta-side vector, so it
 does **not** yet furnish an actual evaluator for the three named environment
 values.
 
@@ -59,8 +62,9 @@ This is sharper than:
 - and the local-Wilson obstruction theorem, which only ruled out the strongest
   obvious local candidate.
 
-It identifies the route and proves that the current stack still does not close
-it.
+It identifies the formal route and proves finite structural-surface
+underdetermination. It does not prove that the physical Wilson/Haar
+environment stack has no further retained closure route.
 
 ## Setup
 
@@ -105,8 +109,8 @@ From
 From
 [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md](./GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md):
 
-- the current exact stack still does **not** force unique explicit
-  `beta = 6` environment data.
+- the restricted finite structural surface still does **not** force unique
+  explicit `beta = 6` environment data.
 
 From
 [GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md](./GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md):
@@ -125,7 +129,7 @@ Define the three-row sample operator
 `E_3(v)
  = [<K(W_A), v>, <K(W_B), v>, <K(W_C), v>]^T`.
 
-Then the actual compressed-sector evaluator route is exactly
+Then the formal compressed-sector evaluator route is exactly
 
 `mathbf_Z_6 = E_3(v_6)`.
 
@@ -158,7 +162,7 @@ known:
 The remaining open issue is not the sample operator. It is the beta-side
 vector to which that operator must be applied.
 
-## Theorem 2: the current exact stack still does not furnish an actual evaluator
+## Theorem 2: the restricted finite structural surface still does not furnish an actual evaluator
 
 Let
 
@@ -168,12 +172,12 @@ denote the normalized positive class-sector vector, and let
 
 `hat_Z(W) = <K(W), hat_v>`.
 
-Then the current exact stack still does **not** determine unique normalized
-three-sample data.
+Then the restricted finite structural surface still does **not** determine
+unique normalized three-sample data.
 
 More precisely, the runner exhibits two distinct admissible positive
-conjugation-symmetric `beta = 6` environment witnesses on the current exact
-surface,
+conjugation-symmetric `beta = 6` environment witnesses on the restricted
+finite structural surface,
 
 `hat_v_A != hat_v_B`,
 
@@ -183,16 +187,17 @@ such that
  != [hat_Z_B(W_A), hat_Z_B(W_B), hat_Z_B(W_C)]^T`.
 
 Therefore even the *normalized* three-sample environment triple is still not
-forced by the present exact stack.
+forced by this restricted structural surface.
 
-Hence the present stack certainly does not determine the unnormalized triple
+Hence this finite structural packet certainly does not determine the
+unnormalized triple
 
 `[Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C)]^T`
 
 either.
 
-So no actual evaluator route for the three named values is yet closed on the
-current theorem surface.
+So no actual evaluator route for the three named values is yet closed by this
+finite structural packet.
 
 ## Corollary 2: this is stronger than the earlier seam-reduction statement
 
@@ -205,11 +210,12 @@ The present theorem says the sharper thing:
 
 - those matrix elements must first determine one *common* beta-side vector,
 - the three sample values are then forced by one fixed operator `E_3`,
-- and the current exact stack still does not determine even the normalized
-  output of that operator.
+- and the restricted finite structural surface still does not determine even
+  the normalized output of that operator.
 
-So the no-go now lives directly at the actual target triple, not only at the
-more abstract level of “some beta-side evaluation still remains.”
+So the no-go now lives directly at the formal target triple on the restricted
+surface, not only at the more abstract level of “some beta-side evaluation
+still remains.”
 
 ## Corollary 3: the missing ingredient is beta-side environment data, not a new left-functional or local shortcut
 
@@ -222,16 +228,16 @@ That is the real unresolved object on the first three-sample PF lane.
 
 ## What this closes
 
-- exact identification of the actual compressed-sector evaluator route for the
-  three named environment values
+- exact identification of the formal compressed-sector evaluator route for
+  the three named environment values
 - exact clarification that the route factors through one common beta-side
   vector and one fixed three-row sample operator
 - exact clarification that on the first symmetric witness sector that operator
   is already the explicit radical matrix `F`
-- exact current-stack no-go: even the normalized three-sample triple is still
-  not uniquely determined by the present exact stack
+- exact restricted-surface no-go: even the normalized three-sample triple is
+  still not uniquely determined by the finite structural witness surface
 - exact clarification that no actual evaluator for the three named values is
-  yet available on the current theorem surface
+  yet available from this packet
 
 ## What this does not close
 
@@ -239,6 +245,9 @@ That is the real unresolved object on the first three-sample PF lane.
 - explicit `beta = 6` matrix elements of the rim lift producing `eta_6`
 - the true explicit vector `v_6`
 - the true explicit values `Z_6^env(W_A)`, `Z_6^env(W_B)`, `Z_6^env(W_C)`
+- a retained bridge showing that the runner's listed finite structural
+  witness surface is admissible and exhaustive for the physical `beta=6`
+  Wilson/Haar environment stack
 - the full plaquette PF closure
 - the global sole-axiom PF selector theorem
 
@@ -252,9 +261,9 @@ abstractly about “beta-side matrix elements.”
 
 It can now say exactly:
 
-- what the real evaluator route is,
+- what the formal evaluator route is,
 - why that route is common rather than sample-by-sample,
-- and why the current exact stack still does not close it.
+- and why the restricted finite structural surface still does not close it.
 
 That is a material advance beyond both the local-Wilson obstruction and the
 earlier seam-reduction statement.

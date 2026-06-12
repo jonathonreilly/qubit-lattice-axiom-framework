@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1477 |
+| Applied audit verdicts | 1478 |
 | Retained-grade rows, including boxed decorations | 1326 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 854 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1394 |
+| Unaudited rows | 1393 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 51 |
+| Audited conditional rows | 52 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1396 |
-| Ready rows | 32 |
+| Total pending rows | 1395 |
+| Ready rows | 31 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
 | High pending | 285 |
 | Medium pending | 413 |
-| Leaf pending | 426 |
+| Leaf pending | 425 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06`](../../docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07`](../../docs/WICK_ROTATION_COMPACT_SO4_TO_LORENTZIAN_DIRAC_DOUBLING_ORIENTATION_NOTE_2026-06-07.md) - medium; unaudited
 - [`universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08`](../../docs/UNIVERSAL_GR_STAGGERED_TT_PROJECTED_STRESS_TRIANGLE_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08`](../../docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`alpha_s_derived_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
-- [`flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02`](../../docs/FLAVOR_RECORD_DYNAMICS_SHARPENS_ARROW_STABILIZER_FAILS_2026-06-02.md) - leaf; unaudited
+- [`flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02`](../../docs/FLAVOR_RECORD_DYNAMICS_SHARPENS_ARROW_STABILIZER_FAILS_2026-06-02.md) - medium; unaudited
+- [`gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07`](../../docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3327 |
 | Critical nodes | 513 |
 | High nodes | 511 |
-| Medium nodes | 899 |
-| Leaf nodes | 1404 |
+| Medium nodes | 900 |
+| Leaf nodes | 1403 |
 
 Top load-bearing rows by graph score:
 

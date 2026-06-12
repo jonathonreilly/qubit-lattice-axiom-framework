@@ -19,7 +19,7 @@ PASSES: list[tuple[str, bool, str]] = []
 def record(name: str, ok: bool, detail: str = "") -> None:
     PASSES.append((name, ok, detail))
     status = "PASS" if ok else "FAIL"
-    print(f"[{status}] {name}")
+    print(f"{status}: {name}")
     if detail:
         for line in detail.split("\n"):
             print(f"       {line}")
@@ -113,7 +113,6 @@ def main() -> int:
     rho_fourier = sp.simplify((r1**2 + r2**2) / r0**2)
     rho_q = sp.simplify(E_perp / E_plus)
     rho_sym = sp.symbols("rho_sym", positive=True, real=True)
-    kappa = sp.symbols("kappa", positive=True, real=True)
     q_expr = sp.simplify((1 + rho_q) / 3)
     q_sym = sp.simplify((1 + rho_sym) / 3)
     record(
@@ -125,33 +124,55 @@ def main() -> int:
         "C.2 rho_Fourier = 2 rho_Q with rho_Q = E_perp / E_+",
         sp.simplify(rho_fourier - 2 * rho_q) == 0,
     )
+
+    a_cyc = sp.simplify(r0 / 3)
+    re_b_cyc = sp.simplify(r1 / 6)
+    im_b_cyc = sp.simplify(r2 / 6)
+    b_abs_sq_cyc = sp.simplify(re_b_cyc**2 + im_b_cyc**2)
+    e_plus_circ = sp.simplify(3 * a_cyc**2)
+    e_perp_circ = sp.simplify(6 * b_abs_sq_cyc)
+    kappa_cyc = sp.simplify(a_cyc**2 / b_abs_sq_cyc)
     record(
-        "C.3 rho_Q = 2 / kappa and Q = (1 + rho_Q) / 3",
-        sp.simplify(q_sym.subs(rho_sym, 2 / kappa) - (1 + 2 / kappa) / 3) == 0,
+        "C.3 selector coefficients match the carrier block-energy normalization",
+        sp.simplify(E_plus - e_plus_circ) == 0
+        and sp.simplify(E_perp - e_perp_circ) == 0,
+        f"a = {a_cyc}; Re(b) = {re_b_cyc}; Im(b) = {im_b_cyc}",
+    )
+    record(
+        "C.4 kappa bridge: E_perp/E_+ = 2/kappa for kappa = a^2/|b|^2",
+        sp.simplify(rho_q - 2 / kappa_cyc) == 0,
+        f"kappa = {kappa_cyc}",
+    )
+    record(
+        "C.5 Q = (1 + rho_Q) / 3 becomes Q = (1 + 2/kappa) / 3 under the bridge",
+        sp.simplify(q_sym.subs(rho_sym, 2 / kappa_cyc) - (1 + 2 / kappa_cyc) / 3) == 0,
         f"Q = {q_expr}",
     )
 
     section("Summary")
 
     n_pass = sum(1 for _, ok, _ in PASSES if ok)
+    n_fail = len(PASSES) - n_pass
     n_total = len(PASSES)
     print(f"PASSED: {n_pass}/{n_total}")
     for name, ok, _ in PASSES:
         status = "PASS" if ok else "FAIL"
-        print(f"  [{status}] {name}")
+        print(f"{status}: {name}")
 
     print()
     if n_pass == n_total:
-        print("VERDICT: on the exact second-order returned carrier, there is no")
+        print("RESULT: on the exact second-order returned carrier, there is no")
         print("nontrivial scale-free C3-invariant at linear order, and at quadratic")
         print("order there is exactly one nontrivial ratio after removing overall")
         print("scale. So the selector variable is unique up to reparametrization:")
         print("E_perp/E_+, 2/kappa, and Q all encode the same one-dimensional data.")
         print()
         print("This is an exact support result on the admitted second-order carrier.")
+        print(f"TOTAL: PASS={n_pass}, FAIL={n_fail}")
         return 0
 
-    print("VERDICT: minimal-selector strengthening has FAILs.")
+    print("RESULT: minimal-selector strengthening has FAILs.")
+    print(f"TOTAL: PASS={n_pass}, FAIL={n_fail}")
     return 1
 
 

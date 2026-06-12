@@ -1,8 +1,8 @@
 # R3 Target Operator: Linearized Einstein Tensor Lambda-One Algebra
 
-> **Key terms used in this doc** are indexed A-Z at
-> [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the
-> canonical source-of-truth doc.
+> **Key terms used in this doc** follow the non-load-bearing glossary index
+> `docs/KEY_TERMINOLOGY.md`; the theorem below does not cite that index as a
+> mathematical or audit dependency.
 
 **Date:** 2026-06-08
 **Type:** bounded target-operator algebra certificate

@@ -124,6 +124,19 @@ Current science/open-lane follow-ups:
   compute/establish the relevant `UD_2` homotopy or land only the narrower
   base-connection area-flux theorem.
   Disposition: `science-needed`.
+- `2026-06-12-pr3511-theta-tier-a-retirement-gate`
+  Scope: PR #3511, `docs/audit/data/tier_a_admissions.json`, and
+  `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`.
+  Finding: the owner is favorable to retiring `strong_cp_theta_zero_note` from
+  Tier-A, but only after the dependency chain independently supports the
+  retirement. Do not land PR #3511 until the cross-plane basis remains
+  audited-clean/retained-bounded, the determinant/K-CPT basis and
+  registrable-readout bridge are audited-clean/retained-grade, and owner
+  approval is recorded in the PR thread per `AXIOM_MINIMALITY_POLICY.md`.
+  Current gate check on 2026-06-12: cross-plane is clean; `theta_p2...` and
+  `tier_a_korbit...` are still `audited_conditional`; `registrable_readout...`
+  is still `unaudited`.
+  Disposition: `science-needed`.
 
 ## Intake Format
 

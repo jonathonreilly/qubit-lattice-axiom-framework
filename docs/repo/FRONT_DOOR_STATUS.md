@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1452 |
-| Retained-grade rows, including boxed decorations | 1312 |
+| Applied audit verdicts | 1453 |
+| Retained-grade rows, including boxed decorations | 1313 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 841 |
+| Retained bounded rows | 842 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
 | Unaudited rows | 1417 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1421 |
+| Total pending rows | 1420 |
 | Ready rows | 37 |
 | Cycle-break targets | 0 |
-| Critical pending | 277 |
+| Critical pending | 276 |
 | High pending | 291 |
 | Medium pending | 425 |
 | Leaf pending | 428 |
 
 Next ready rows by queue order:
 
-- [`gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`](../../docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - critical; audit_in_progress
+- [`gravity_clean_derivation_note`](../../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md) - critical; unaudited
 - [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
 - [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - critical; unaudited
 - [`hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress

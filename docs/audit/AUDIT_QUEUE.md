@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1421
+**Total pending:** 1420
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 37
 
 By criticality:
-- `critical`: 277
+- `critical`: 276
 - `high`: 291
 - `medium`: 425
 - `leaf`: 428
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | audit_in_progress | critical | 278 | 9.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py` |
+| 1 | `gravity_clean_derivation_note` | bounded_theorem | unaudited | critical | 276 | 19.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py` |
 | 2 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | positive_theorem | unaudited | critical | 270 | 11.58 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_mass_status_audit.py` |
 | 3 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | unaudited | critical | 254 | 11.49 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py` |
 | 4 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 252 | 8.98 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow.py` |

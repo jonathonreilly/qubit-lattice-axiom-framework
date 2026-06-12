@@ -3,7 +3,7 @@
     "critical": 278,
     "high": 285,
     "leaf": 469,
-    "medium": 432
+    "medium": 431
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -17115,32 +17115,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "light_cone_framing_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
-        "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.84,
-      "note_path": "docs/LIGHT_CONE_FRAMING_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/light_cone_staggered_dispersion.py",
-      "transitive_descendants": 80
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17276,15 +17250,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.085,
+      "load_bearing_score": 5.459,
       "note_path": "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
-      "transitive_descendants": 5
+      "transitive_descendants": 21
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44085,6 +44059,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 64,
-  "total_pending": 1464
+  "ready_count": 63,
+  "total_pending": 1463
 }

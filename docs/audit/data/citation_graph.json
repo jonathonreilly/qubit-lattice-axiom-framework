@@ -50346,10 +50346,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -96684,17 +96684,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "light_cone_framing_note",
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
         "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
         "gellmann_completeness_theorem_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
-        "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06"
+        "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
+        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c90defb3da12086bd17dcc7cc2f449aa3978f08d0f2c3b0955aec22d503fcbaa",
+      "note_hash": "f290f644067f77c225c1de0198705cd90efeac6036c6cf5bb40bda871ef774f8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

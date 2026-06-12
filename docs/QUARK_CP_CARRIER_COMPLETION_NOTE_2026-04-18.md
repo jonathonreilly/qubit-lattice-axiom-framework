@@ -5,6 +5,30 @@
 **Audit class:** G — load-bearing step is a numerical match, not a derivation
 **Primary runner:** `scripts/frontier_quark_cp_carrier_completion.py`
 
+## 2026-06-12 Current-Surface Status Certificate
+
+```yaml
+actual_current_surface_status: numerical-match / bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: tuned complex 1-3 carrier existence-of-fit to imported quark and CKM comparator targets
+hypothetical_axiom_status: null
+admitted_observation_status: imported mass-ratio and CKM/J comparator targets
+proposal_allowed: false
+proposal_allowed_reason: >
+  The carrier coefficients xi_u and xi_d are solved numerical degrees of
+  freedom, the comparator targets are imported, and the determinant-neutral
+  1-3 carrier slot is an ansatz rather than a retained framework consequence.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+This certificate is intentionally not an audit result. It is a source-side
+firewall: downstream use must preserve the tuned-fit/comparator condition
+unless a separate retained bridge derives the carrier slot, its coefficients,
+and the readout targets. No new axiom, retained bridge, or ledger status is
+introduced here.
+
 ## Scope (honest framing)
 
 This note is **not** a derivation that sector-specific complex `1-3` quark

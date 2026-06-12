@@ -5,6 +5,29 @@
 `E`-channel readout primitive  
 **Primary runner:** `scripts/frontier_quark_e_channel_endpoint_quotient_law.py`
 
+## 2026-06-12 Current-Surface Status Certificate
+
+```yaml
+actual_current_surface_status: numerical-match / bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: low-rational nearest-neighbor candidate around imported live endpoint quotient
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: >
+  The 15/8 E-channel quotient is a nearest low-rational match to the live
+  endpoint_readout value. The note does not derive the E-center endpoint
+  primitive or the a_T/a_E = -2 shell-multiplicity bridge.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+This certificate is intentionally not an audit result. It is a source-side
+firewall: downstream use must preserve the low-rational-match condition unless
+a separate retained bridge derives the E-channel endpoint quotient. No new
+axiom, retained bridge, or ledger status is introduced here.
+
 ## Safe statement
 
 The current branch still does **not** derive the remaining quark `E`-channel

@@ -6,6 +6,30 @@
 **Claim type:** bounded_theorem
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py`
 
+## 2026-06-12 Current-Surface Status Certificate
+
+```yaml
+actual_current_surface_status: numerical-match / bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: imported transport interval witness with interpolated eta/eta_obs = 1 point
+hypothetical_axiom_status: null
+admitted_observation_status: ETA_OBS enters as the normalization target for the interpolation
+proposal_allowed: false
+proposal_allowed_reason: >
+  The interval witness is computed inside the imported fixed-N_e transport
+  setup, and the eta/eta_obs = 1 point is selected by interpolation against
+  ETA_OBS rather than by an independently retained source selector.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+This certificate is intentionally not an audit result. It is a source-side
+firewall: downstream use must preserve the imported-transport and
+observed-normalization conditions unless a separate retained bridge derives the
+off-seed source selector. No new axiom, retained bridge, or ledger status is
+introduced here.
+
 ## Scope Narrowing (2026-05-26)
 
 The prior audit row was `audited_conditional` because this note treated

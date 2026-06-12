@@ -49638,10 +49638,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_q_minimal_scale_free_selector_note_2026-04-22"
     },
     {
       "from": "repo.repo_organization",
@@ -95200,17 +95200,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
         "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
         "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
         "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
         "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
         "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
         "koide_berry_monopole_bridge_reduction_note_2026-05-31",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04"
+        "grown_transfer_basin_targeted_repair_note_2026-06-04",
+        "koide_q_minimal_scale_free_selector_note_2026-04-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c2a96ad5206609e38e94239b1ada71e3c8ea752fe49ed36b70ce039828c5aec2",
+      "note_hash": "7abfcd610ae72941c117949742aa6492dc1bd316b6d629a9d9faa3cd6bddcb03",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

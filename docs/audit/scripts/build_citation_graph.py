@@ -85,6 +85,16 @@ RUNNER_SECTION_RE = re.compile(
 HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
+EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # The atomic work-history note registers load-bearing helium sibling
+    # runners that are not imported by the hydrogen primary runner. They still
+    # need to be included in the restricted packet as full source artifacts.
+    "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18": [
+        "scripts/frontier_atomic_helium_hartree_companion.py",
+        "scripts/frontier_atomic_helium_jastrow_companion.py",
+    ],
+}
+
 
 AXIOM_PREMISE_NODES_PATH = AUDIT_DATA_DIR / "axiom_premise_nodes.json"
 
@@ -310,6 +320,25 @@ def resolve_helper_runner_paths(primary_runner_path: str | None) -> list[str]:
     return sorted(f"scripts/{h}.py" for h in seen)
 
 
+def helper_runner_paths_for_claim(claim_id: str,
+                                  primary_runner_path: str | None) -> list[str]:
+    """Return packet helper sources for a claim.
+
+    Most helper paths are transitive imports of the primary runner. A small
+    number of legacy work-history rows register sibling runner artifacts in
+    the source note instead; keep those as explicit packet helpers so the
+    restricted audit prompt sees their full source.
+    """
+    paths: list[str] = []
+    for path in resolve_helper_runner_paths(primary_runner_path):
+        if path not in paths:
+            paths.append(path)
+    for path in EXPLICIT_PACKET_HELPER_RUNNER_PATHS.get(claim_id, []):
+        if path != primary_runner_path and (REPO_ROOT / path).exists() and path not in paths:
+            paths.append(path)
+    return paths
+
+
 def extract_runner(body: str, rel_path: str | None = None) -> str | None:
     if rel_path and rel_path.startswith("ai_methodology/raw/"):
         return None
@@ -433,7 +462,7 @@ def build_graph() -> dict:
             "claim_type_author_hint": claim_type_hint,
             "claim_type_seed_hint": claim_type_seed_hint,
             "runner_path": primary_runner,
-            "helper_runner_paths": resolve_helper_runner_paths(primary_runner),
+            "helper_runner_paths": helper_runner_paths_for_claim(cid, primary_runner),
             "note_hash": hashlib.sha256(body.encode("utf-8")).hexdigest(),
             "deps": [],
         }

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_helium_hartree_companion.py
-runner_sha256: a8c0221096e614385834b1ff9db6fe1c4ffd365ad6380cc3bb5a218669d13668
-timeout_sec: 180
+runner_sha256: 0dc08f93ca89e0f19b1b118951b6b3cee7e0159bbd4d1ad1ce0f260e06cbee65
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.37
+elapsed_sec: 21.10
 status: ok
 ----- stdout -----
 ========================================================================
@@ -37,7 +37,7 @@ STEP 2: He⁺ — one electron, Z=2
   E₁(He⁺) lattice:   -0.236922  [lattice spectral units]
   E₁(He⁺) continuum: -0.250000  [= -g_nuc²/4]
   Lattice error: +5.231%
-  Time: 0.2s
+  Compute timing: omitted from audit cache for deterministic replay.
 
   Note: E₁(He⁺) = -g_nuc²/4 = -Z² × (g_EM²/4) = -Z² × E₀(H)
   → He⁺ binds Z² times more than H. This is the scaling prediction.
@@ -61,7 +61,7 @@ STEP 3: He — two electrons, variational bound
     Coulomb integral:   E_J = 0.047371
     Variational energy: E_var = 2ε - E_J = -0.318053
     Iterations: 10,  converged: True
-    Time: 12.0s
+    Compute timing: omitted from audit cache for deterministic replay.
 
 ────────────────────────────────────────────────────────────
 STEP 4: Coupling-independent predictions
@@ -145,7 +145,14 @@ SUMMARY: HELIUM HARTREE COMPANION
   IE₁/IE₂           = 0.3424  vs Hartree ~0.424
 ========================================================================
 
-Log saved to: logs/2026-06-06-atomic_helium_hartree_companion.txt
+AUDIT CHECK SUMMARY
+PASS: hartree_he2plus_identity -- E_he2plus=0.000000
+PASS: hartree_heplus_finite_box_row -- E_heplus_over_E0=-3.7908
+PASS: hartree_helium_bound_product_state -- E_he=-0.318053, E_heplus=-0.236922
+PASS: hartree_ratio_pin -- ratio=1.34244
+PASS: hartree_ie_ratio_pin -- ratio_IE1_IE2=0.34244
+PASS: hartree_scf_converged -- iterations=10
+TOTAL: PASS=6, FAIL=0
 
 ----- stderr -----
 

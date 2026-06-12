@@ -105560,8 +105560,11 @@
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "minimal_axioms"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "2780944d9140fff86c1be59ec7b68bb44859cf9c8671746ad155731625e5deaf",
+      "helper_runner_paths": [
+        "scripts/frontier_atomic_helium_hartree_companion.py",
+        "scripts/frontier_atomic_helium_jastrow_companion.py"
+      ],
+      "note_hash": "108f009c9bb868c52c716ac9c8e16f904881bec21f240fcc678813c6400c9171",
       "path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_atomic_hydrogen_lattice_companion.py",
       "title": "Hydrogen / Helium Atomic Companion Note"

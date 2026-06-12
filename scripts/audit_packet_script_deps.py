@@ -41,6 +41,13 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS_DIR = REPO_ROOT / "scripts"
 AUDIT_DATA = REPO_ROOT / "docs" / "audit" / "data"
 
+EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18": [
+        "scripts/frontier_atomic_helium_hartree_companion.py",
+        "scripts/frontier_atomic_helium_jastrow_companion.py",
+    ],
+}
+
 
 def parse_script_imports(script_path: Path) -> set[str]:
     """Return the set of helper script names this script imports.
@@ -110,6 +117,14 @@ def transitive_helpers(primary_script: str, seen: set[str] | None = None) -> set
     return seen - {primary_script}
 
 
+def helper_runner_paths_for_claim(claim_id: str, primary_script: str) -> list[str]:
+    paths = [f"scripts/{h}.py" for h in sorted(transitive_helpers(primary_script))]
+    for path in EXPLICIT_PACKET_HELPER_RUNNER_PATHS.get(claim_id, []):
+        if path not in paths and (REPO_ROOT / path).exists():
+            paths.append(path)
+    return paths
+
+
 def main() -> int:
     print("=" * 78)
     print("AUDIT PACKET SCRIPT-DEP RESOLVER")
@@ -160,13 +175,14 @@ def main() -> int:
             continue
 
         primary_basename = rp.stem
-        helpers = transitive_helpers(primary_basename)
+        helper_runner_paths = helper_runner_paths_for_claim(claim_id, primary_basename)
+        helpers = {Path(path).stem for path in helper_runner_paths}
 
         deps_by_claim[claim_id] = {
             "primary_runner": str(rp.relative_to(REPO_ROOT)),
             "primary_basename": primary_basename,
             "helper_runners": sorted(helpers),
-            "helper_runner_paths": [f"scripts/{h}.py" for h in sorted(helpers)],
+            "helper_runner_paths": helper_runner_paths,
             "is_pending": claim_id in pending_ids,
         }
 

@@ -108,18 +108,21 @@ in any input is consistent with class `(C)`.
 {{RUNNER_SOURCE}}
 ```
 
-### 3b. Helper runner sources (transitive imports from the primary runner)
+### 3b. Helper runner sources and cache excerpts
 
 Primary runners often `import` from helper modules in `scripts/*.py`.
 Without their source, you cannot verify what the imported functions
 actually compute, and the chain reduces to opaque calls — which forces
 class `(C)` on packet-incompleteness grounds even when the chain is
-sound. The audit ledger row exposes a `helper_runner_paths` field
-listing the transitive set of `scripts/X.py` paths the audit packet
-builder is required to include alongside the primary runner.
+sound. Some legacy rows also register load-bearing sibling runner
+artifacts that are not imports of the primary runner. The audit ledger
+row exposes a `helper_runner_paths` field listing the `scripts/X.py`
+paths the audit packet builder is required to include alongside the
+primary runner.
 
-The full source of each helper script is included below, one per
-section, in the same order as `helper_runner_paths` in the ledger row.
+The full source and SHA-pinned cache excerpt for each helper script is
+included below, one per section, in the same order as
+`helper_runner_paths` in the ledger row.
 
 ```python
 {{HELPER_RUNNER_SOURCES}}

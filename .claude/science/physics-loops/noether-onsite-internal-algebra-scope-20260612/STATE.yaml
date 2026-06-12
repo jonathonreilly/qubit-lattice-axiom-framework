@@ -1,0 +1,18 @@
+loop: noether-onsite-internal-algebra-scope-20260612
+status: ready_for_review
+current_goal: "Repair the Noether onsite/internal conditional by making the load-bearing surface finite algebra rather than dependent on the open staggered realization gate."
+target_claim_id: axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
+  - logs/runner-cache/audit_companion_lattice_noether_onsite_internal_2026_06_05.txt
+open_imports:
+  - "Physical staggered/Kawamoto-Smit realization remains open context."
+  - "Site-mixing current theorem remains open."
+verification:
+  - "PYTHONPATH=scripts python3 scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py --force --concurrency 1 --push-mode none --allow-non-main"
+runner_result: "TOTAL: 14 PASS / 0 FAIL"

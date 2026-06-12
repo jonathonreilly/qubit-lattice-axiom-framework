@@ -529,21 +529,24 @@ def main() -> int:
     ).read_text()
     required_terms = [
         "2026-06-07 authority split",
+        "2026-06-12 source-boundary repair",
         "AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06",
-        "physical density/readout bridge are not derived here",
-        "supplied staggered/Kawamoto-Smit exhibit",
+        "explicit finite coefficient/Fock replay",
+        "explicit finite coefficient exhibit",
+        "not a markdown dependency edge",
     ]
     banned_terms = [
         "derives the admitted staggered",
         "derives the Kawamoto-Smit",
         "framework-native staggered carrier",
+        "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)",
     ]
     boundary_ok = all(term in note for term in required_terms) and not any(
         term in note for term in banned_terms
     )
     print(
         f"BOUNDARY GUARD: {'PASS' if boundary_ok else 'FAIL'} "
-        "retained abstract authority is cited; staggered exhibit remains bounded"
+        "retained abstract authority is cited; physical gate remains non-load-bearing context"
     )
     if not boundary_ok:
         return 1

@@ -39,19 +39,33 @@ packet: finite matrix-unit continuity, global number-charge conservation,
 orientation antisymmetry, and the exact coefficient-support current envelope.
 That abstract row is the retained authority for the general identities.
 
-With that authority split out, this note's remaining role is carrier-specific
-and explicitly bounded: on the supplied staggered/Kawamoto-Smit exhibit, it
-checks that the onsite U(1) variation is a nearest-neighbour bilateral current,
-that the physical sign is fixed by `d rho/dt + div j = 0`, and that site-mixing
-generators remain outside the onsite/internal theorem. The staggered carrier
-and physical density/readout bridge are not derived here.
+With that authority split out, this note's remaining load-bearing role is the
+explicit finite coefficient/Fock replay: it checks that an onsite U(1)
+variation has the support envelope of the Hamiltonian coefficients, that a
+nearest-neighbour staggered-form coefficient exhibit gives a nearest-neighbour
+bilateral current, that the sign is fixed by `d rho/dt + div j = 0` on that
+explicit exhibit, and that site-mixing generators remain outside the
+onsite/internal theorem. Physical identification of the exhibit with a
+staggered/Kawamoto-Smit realization is context only and is not derived here.
+
+### 2026-06-12 source-boundary repair
+
+The conditional audit of this row identified the open staggered realization
+gate and physical readout as blockers. This note now treats the
+staggered-form matrix in the runner as an explicit finite coefficient exhibit,
+not as an imported physical carrier authority. The load-bearing theorem is the
+retained abstract bilinear continuity identity plus the local finite replay on
+that explicit coefficient matrix. The physical staggered-Dirac realization
+gate remains open context and is intentionally not a markdown dependency edge
+of this note.
 
 ## Claim
 
 > **Claim (onsite/internal lattice Noether, sign-fixed by continuity).** Let
 > `H = sum_{x,y} c_{xy} a_x^dag a_y` be any number-conserving bilinear lattice
-> Hamiltonian on a finite site set (the admitted free staggered carrier is the
-> exhibit; the statement holds for an arbitrary bilinear). Let `T` be an
+> Hamiltonian on a finite site set (the runner's staggered-form nearest-
+> neighbour coefficient matrix is an explicit finite exhibit; the statement
+> holds for an arbitrary bilinear). Let `T` be an
 > **onsite/internal** symmetry generator, meaning `T` acts site-locally,
 > `T_{(x,c1)(y,c2)} = delta_{xy} t_{c1 c2}` for a single-site internal matrix
 > `t`, so `T` commutes with every lattice shift `S^{(a)}` and with the symmetry
@@ -62,10 +76,10 @@ and physical density/readout bridge are not derived here.
 >   the Hamiltonian coefficients: the bond current between `p` and `q` uses only
 >   `c_pq` and `c_qp`, and vanishes when both coefficients vanish. Thus an
 >   all-to-all bilinear has an all-to-all current envelope; a finite-range
->   bilinear has a finite-range current envelope; and the admitted staggered
->   nearest-neighbour carrier has a nearest-neighbour bond current. On that
->   staggered carrier the physical Hermitian outflow current is, with the sign
->   fixed below,
+>   bilinear has a finite-range current envelope; and the explicit
+>   staggered-form nearest-neighbour coefficient exhibit has a
+>   nearest-neighbour bond current. On that exhibit the Hermitian outflow
+>   current is, with the sign fixed below,
 >
 >   ```text
 >       j^mu_x  =  -(1/2) eta_mu(x) [ chibar_x chi_{x+mu} + chibar_{x+mu} chi_x ].   (4*)
@@ -93,7 +107,7 @@ This narrows the parent's general lattice Noether identity (parent (N3),
 arbitrary `T^A`) to the onsite/internal case. The abstract support-envelope and
 continuity identities are now delegated to the retained abstract bilinear
 theorem cited above. This note then specializes those identities to the supplied
-staggered nearest-neighbour exhibit and replaces the parent's convention-set
+nearest-neighbour coefficient exhibit and replaces the parent's convention-set
 U(1) sign (parent formula (4), fixed in the parent's Step 4a by an ad-hoc
 `-i times imaginary-generator` rule) by a sign **derived** from the continuity
 equation. The corrected formula (4*) has the **same sign** as the parent's
@@ -117,18 +131,19 @@ conventional on the supplied exhibit.
 - The current support is not automatically nearest-neighbour for an arbitrary
   bilinear. What closes generally is the **support envelope**: the U(1) current
   has support only where `c_pq` or `c_qp` is nonzero. Nearest-neighbour locality
-  is claimed only for the admitted staggered nearest-neighbour carrier, or more
+  is claimed only for the explicit nearest-neighbour coefficient exhibit, or more
   generally finite-range locality for finite-range coefficient support. For a
   site-mixing generator the variation `delta chi_x` reaches beyond nearest
   neighbours and this note does **not** claim a local current for that branch.
   The two-site translation case is left as a named open item (Part D),
   consistent with the parent's own Step 4b/Step 5 treatment of the staggered
   shift.
-- This note does not derive the admitted staggered/Grassmann carrier, the
-  Kawamoto-Smit phase form, the physical density/readout bridge, or anomaly
-  cancellation. Those remain the same admitted/open items the parent already
-  carries. The retained abstract bilinear theorem supplies only the carrier-free
-  finite matrix-unit identities; it does not supply the staggered exhibit.
+- This note does not derive a physical staggered/Grassmann realization, a
+  Kawamoto-Smit phase form from first principles, a physical density/readout
+  bridge, or anomaly cancellation. The finite matrix used in the runner is an
+  explicit coefficient exhibit; physical naming of that exhibit remains open
+  context. The retained abstract bilinear theorem supplies the carrier-free
+  finite matrix-unit identities.
 
 ## 1. Setup: the number-conserving bilinear algebra
 
@@ -208,11 +223,11 @@ formula (4*) with the `-1/2` prefactor. The current is manifestly **local**
 (supported on the bond `x, x+mu`). This is the clean nearest-neighbour
 specialization of the support-envelope theorem.
 
-## 4. Sign fixed by the continuity equation (staggered exhibit)
+## 4. Sign fixed by the continuity equation (explicit coefficient exhibit)
 
-On the admitted free staggered carrier the runner (Part C) builds the
+On the explicit free staggered-form coefficient exhibit the runner (Part C) builds the
 number-conserving Hamiltonian `H = sum_{ij} (iM)_{ij} a_i^dag a_j` (Hermitian,
-since the staggered `M` is real antisymmetric so `iM` is Hermitian) on an exact
+since the displayed `M` is real antisymmetric so `iM` is Hermitian) on an exact
 finite fermionic Fock space, and verifies:
 
 - **(C1)** the U(1) symmetry condition `[T_U1, M] = 0` with `T_U1 = i*Id`;
@@ -282,13 +297,14 @@ narrow theorem.
   conditional row; this note states an independent corrected/narrowed theorem
   and does not consume the parent as authority.
 
-**Admitted context input (open gate, named, not a retained dependency):**
+**Non-load-bearing physical context (open gate, named, not a retained dependency):**
 
-- `staggered_dirac_realization_gate` / the Kawamoto-Smit phase form
-  `eta_1 = +1`, `eta_2 = (-1)^{x_1}`, `eta_3 = (-1)^{x_1+x_2}`: the staggered
-  carrier and its phase structure are admitted, exactly as in the parent. This
-  note does not derive them; the U(1) current (4*), the sign fix, and the
-  onsite/internal locality close on the admitted carrier.
+- `staggered_dirac_realization_gate` / the Kawamoto-Smit physical realization
+  route. The runner displays the coefficient rule
+  `eta_1 = +1`, `eta_2 = (-1)^{x_1}`, `eta_3 = (-1)^{x_1+x_2}` as an explicit
+  finite coefficient exhibit. This note does not derive the physical gate; the
+  U(1) current (4*), sign fix, and onsite/internal locality close on the finite
+  coefficient/Fock algebra, not on a claimed physical realization theorem.
 
 **External mathematics (comparator only, not a derivation input):**
 
@@ -303,9 +319,10 @@ narrow theorem.
 action, per-site qubit carrier); (2) the retained abstract bilinear continuity
 theorem for the matrix-unit identities; (3) the finite-Grassmann/operator
 carrier (per-site `(chi_x, chibar_x)`, Fock dim 2, Berezin readout) from the
-retained substep-1 narrow theorem; (4) the admitted staggered Kawamoto-Smit
-carrier (open gate, named); (5) the physical number density
-`rho_x = chibar_x chi_x` as the U(1) charge density on that supplied exhibit.
+retained substep-1 narrow theorem; (4) the explicit finite staggered-form
+coefficient matrix used as an exhibit; (5) the number density
+`rho_x = chibar_x chi_x` as the U(1) charge density on that finite Fock
+surface.
 No PDG, fitted, measured, lattice-MC, `beta = 6`, or `g_bare` value is consumed
 as a derivation input; the staggered carrier mass is an arbitrary positive
 bookkeeping constant.
@@ -325,6 +342,9 @@ surface, or any other row. The audit lane is the only status authority.
 
 ## Audit dependency repair links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This graph-bookkeeping section records the prior audit's named physical
+context as a plain-text pointer only. It does not promote this note or change
+the audited claim scope, and it does not create a markdown dependency edge to
+the open gate.
 
-- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- `staggered_dirac_realization_gate_note_2026-05-03` (plain-text physical context; non-load-bearing)

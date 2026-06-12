@@ -14,7 +14,13 @@ the canonical anticommutation relations.
 """
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md"
 
 
 def build_fock_space(n_modes: int = 2) -> tuple[list[np.ndarray], list[np.ndarray], np.ndarray]:
@@ -202,13 +208,27 @@ def main() -> None:
     all_ok = sanity_ok and p1_ok and p2_ok and p3_ok and t4_ok
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
+    note_text = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    source_boundary_ok = (
+        "pure CAR/Grassmann-frame corollary" in note_flat
+        and "does not select the CAR frame for retained matter modes" in note_flat
+        and "no retained CAR/GL(F) frame-selection theorem is load-bearing here" in note_flat
+        and "upstream_dependencies: []" in note_text
+        and "Context only, not load-bearing" in note_text
+    )
+    print(
+        "  Source boundary (supplied CAR frame, no retained-matter selection): "
+        f"{'PASS' if source_boundary_ok else 'FAIL'}"
+    )
+    print()
     print("Note: this runner verifies the Pauli exclusion principle on a")
     print("2-mode fermionic Fock space constructed via Jordan-Wigner from")
-    print("the declared CAR anticommutation relations. The proof in the companion")
+    print("the supplied CAR anticommutation relations. The proof in the companion")
     print("theorem note is dimension-independent (Steps 1-3 use only the")
-    print("structural anticommutator in the CAR/Grassmann frame and apply")
+    print("structural anticommutator in the supplied CAR/Grassmann frame and apply")
     print("equally to any number of modes once that frame is supplied).")
-    if not all_ok:
+    if not (all_ok and source_boundary_ok):
         raise SystemExit(1)
 
 

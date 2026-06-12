@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py
-runner_sha256: 436250923d1ca22e0fb1416c66109ee1523d7c20cce15bbaea5fcbc98e5d39cf
+runner_sha256: f63a2bd34508155bb6bcffb3679aa70e019dd61527b48cb772f7474a50b7d702
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.48
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 K/CPT orientation invariance checks for the AC_phi_lambda gate
@@ -11,6 +11,8 @@ K/CPT orientation invariance checks for the AC_phi_lambda gate
 PASS source does not claim a completed Tier-A registry change
 PASS source avoids the rejected theta shortcut
 PASS source names the AC_phi_lambda conditional registrability bridge
+PASS source cites the dedicated unordered-mass-multiset bridge without claiming retention
+PASS unordered-mass-multiset bridge supplies the registry consequence boundary
 PASS source keeps audit status authority external
 PASS source points at the moved determinant-character lemma note
 PASS conjugation maps the AC_phi_lambda circulant H(delta) exactly to H(-delta)
@@ -19,7 +21,7 @@ PASS delta -> -delta permutes eigenvalue labels by k -> -k
 PASS staggered-Dirac source still carries the AC_phi_lambda gate surface
 PASS all local markdown dependency links resolve
 ============================================================================
-SUMMARY: PASS=10 FAIL=0
+SUMMARY: PASS=12 FAIL=0
 
 ----- stderr -----
 

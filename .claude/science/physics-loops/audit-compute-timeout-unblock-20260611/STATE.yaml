@@ -1,0 +1,13 @@
+slug: audit-compute-timeout-unblock-20260611
+date: 2026-06-11
+status: pr_ready
+branch: physics-loop/audit-repair-block10-20260611
+mode: audit_unblock_compute_repair
+scope:
+  - higgs_from_lattice_note
+  - dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17
+ledger_policy: source_repairs_only_no_audit_verdict_edits
+result:
+  compute_timeouts_repaired: 2
+  runner_caches_refreshed_under_60s: true
+  conditional_science_boundaries_preserved: true

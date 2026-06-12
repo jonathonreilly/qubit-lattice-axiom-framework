@@ -53,12 +53,10 @@ Self-contained: numpy + scipy only.
 from __future__ import annotations
 
 
-# Heavy compute / sweep runner — `AUDIT_TIMEOUT_SEC = 1800`
-# means the audit-lane precompute and live audit runner allow up to
-# 30 min of wall time before recording a timeout. The 120 s default
-# ceiling is too tight under concurrency contention; see
-# `docs/audit/RUNNER_CACHE_POLICY.md`.
-AUDIT_TIMEOUT_SEC = 1800
+# The audit-lane cache policy reads this declaration before refreshing stdout.
+# Keep the ceiling at the repair target so regressions back to dense CW sweeps
+# surface as compute breakage instead of silently claiming a long-run budget.
+AUDIT_TIMEOUT_SEC = 60
 
 import sys
 import time
@@ -184,35 +182,81 @@ def cw_effective_potential(phi_values, k_hat_sq, g, gp, yt, lam_bare, m_sq_bare)
     return v_eff
 
 
+def cw_effective_potential_scalar(phi, k_hat_sq, g, gp, yt, lam_bare, m_sq_bare):
+    """Scalar CW potential evaluator used by the audit runner.
+
+    The original runner evaluated dense 2k/5k phi grids for every scan point.
+    That made the audit-lane health check a compute bottleneck without adding
+    scientific content: the claim only needs the minimum and local curvature.
+    This scalar evaluator lets `minimize_scalar` find the same bounded CW
+    readout with tens of BZ vector evaluations instead of thousands.
+    """
+    phi = float(phi)
+    v_tree = 0.5 * m_sq_bare * phi**2 + 0.25 * lam_bare * phi**4
+
+    mw_sq = (g * phi / 2)**2
+    mz_sq = (g**2 + gp**2) * phi**2 / 4
+    mt_sq = (yt * phi)**2 / 2
+    mh_sq = abs(m_sq_bare) + 3 * lam_bare * phi**2
+    mg_sq = abs(m_sq_bare) + lam_bare * phi**2
+
+    v_1loop = 0.0
+    denom = k_hat_sq + 1e-15
+    if mw_sq > 0:
+        v_1loop += N_W * 0.5 * float(np.mean(np.log1p(mw_sq / denom)))
+    if mz_sq > 0:
+        v_1loop += N_Z * 0.5 * float(np.mean(np.log1p(mz_sq / denom)))
+    if mt_sq > 0:
+        v_1loop += N_TOP * 0.5 * float(np.mean(np.log1p(mt_sq / denom)))
+
+    mh0_sq = abs(m_sq_bare)
+    if mh_sq != mh0_sq and mh0_sq > 0:
+        v_1loop += N_HIGGS * 0.5 * float(
+            np.mean(np.log((k_hat_sq + mh_sq) / (k_hat_sq + mh0_sq + 1e-15)))
+        )
+    if mg_sq != mh0_sq and mh0_sq > 0:
+        v_1loop += N_GOLDSTONE * 0.5 * float(
+            np.mean(np.log((k_hat_sq + mg_sq) / (k_hat_sq + mh0_sq + 1e-15)))
+        )
+
+    return float(v_tree + v_1loop)
+
+
 def extract_vev_and_mh(k_hat_sq, g, gp, yt, lam_bare, m_sq_bare):
     """Extract VEV and Higgs mass from the CW potential.
 
     Returns (vev, m_H, m_W, m_Z, m_t, m_H/m_W) or None if no SSB.
     """
-    phi_range = np.linspace(0, 6.0, 2000)
-    v_eff = cw_effective_potential(phi_range, k_hat_sq, g, gp, yt, lam_bare, m_sq_bare)
-    vev_idx = np.argmin(v_eff)
-    vev = phi_range[vev_idx]
+    potential = lambda phi: cw_effective_potential_scalar(  # noqa: E731
+        phi, k_hat_sq, g, gp, yt, lam_bare, m_sq_bare
+    )
+    res = minimize_scalar(
+        potential,
+        bounds=(0.0, 6.0),
+        method="bounded",
+        options={"xatol": 2e-4, "maxiter": 80},
+    )
+    vev = float(res.x)
 
-    if vev < 0.05:
+    # Guard against the bounded optimizer returning a tiny positive endpoint
+    # when the symmetric point is the actual minimum.
+    if vev < 0.05 or potential(vev) >= potential(0.0) - 1e-7:
         return None
 
-    # Refine around the minimum
-    phi_fine = np.linspace(max(0, vev - 0.5), vev + 0.5, 5000)
-    v_eff_fine = cw_effective_potential(phi_fine, k_hat_sq, g, gp, yt, lam_bare, m_sq_bare)
-    vev_idx = np.argmin(v_eff_fine)
-    vev = phi_fine[vev_idx]
-
-    # Higgs mass from curvature
-    dphi = phi_fine[1] - phi_fine[0]
-    d2v = np.gradient(np.gradient(v_eff_fine, dphi), dphi)
-    m_h_sq = d2v[vev_idx]
+    # Higgs mass from local curvature. Use an adaptive central difference
+    # that is small enough for curvature but wide enough to beat BZ-sum noise.
+    dphi = max(1e-3, 5e-4 * vev)
+    f0 = potential(vev)
+    fp = potential(vev + dphi)
+    fm = potential(max(0.0, vev - dphi))
+    m_h_sq = (fp - 2 * f0 + fm) / (dphi**2)
 
     if m_h_sq <= 0:
-        # Try nearby points (numerical noise at exact minimum)
-        local = d2v[max(0, vev_idx - 50):min(len(d2v), vev_idx + 50)]
-        pos = local[local > 0]
-        m_h_sq = np.min(pos) if len(pos) > 0 else 0.0
+        # Try a slightly wider stencil before treating this as no curvature.
+        dphi = max(5e-3, 2e-3 * vev)
+        fp = potential(vev + dphi)
+        fm = potential(max(0.0, vev - dphi))
+        m_h_sq = max((fp - 2 * f0 + fm) / (dphi**2), 0.0)
 
     m_h = np.sqrt(max(m_h_sq, 0))
     m_w = g * vev / 2
@@ -541,7 +585,9 @@ def part2_tier2_bounded(k_hat_sq):
     print()
     print("  INTERPRETATION: The lattice framework provides a RANGE for y_t,")
     print("  not a precise value. The CW mechanism then maps this range to")
-    print("  a range of m_H/m_W values. The observed m_H is within this range.")
+    print("  a range of m_H/m_W values. In this one-loop lattice runner the")
+    print("  exact SM crossing remains open; the observed m_H is treated as")
+    print("  bounded/ballpark consistency, not as a closed derivation.")
 
     report("yt-fixed-point", abs(yt_fp - Y_TOP_MZ) / Y_TOP_MZ < 1.0,
            f"y_t* = {yt_fp:.3f} (within factor {yt_fp/Y_TOP_MZ:.1f} of observed)")
@@ -724,7 +770,7 @@ def synthesis():
     1. Explains WHY there is EWSB (CW mechanism, no elementary scalar needed)
     2. Explains WHY m_H ~ v (no hierarchy problem, Delta ~ O(1))
     3. Predicts m_H/m_W as a CURVE vs y_t (1 free parameter, not 2)
-    4. The observed m_H = 125 GeV sits ON this curve
+    4. The observed m_H = 125 GeV is a bounded/ballpark consistency check
 
   WHAT IT DOES NOT ACHIEVE:
     1. Does not predict m_H = 125 GeV without knowing y_t

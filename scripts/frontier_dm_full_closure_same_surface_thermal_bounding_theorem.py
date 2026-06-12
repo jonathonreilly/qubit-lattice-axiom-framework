@@ -26,12 +26,10 @@ Scope:
 from __future__ import annotations
 
 
-# Heavy compute / sweep runner — `AUDIT_TIMEOUT_SEC = 1800`
-# means the audit-lane precompute and live audit runner allow up to
-# 30 min of wall time before recording a timeout. The 120 s default
-# ceiling is too tight under concurrency contention; see
-# `docs/audit/RUNNER_CACHE_POLICY.md`.
-AUDIT_TIMEOUT_SEC = 1800
+# The audit-lane cache policy reads this declaration before refreshing stdout.
+# Keep the ceiling at the repair target so regressions to slow thermal
+# summation surface as compute breakage instead of claiming a long-run budget.
+AUDIT_TIMEOUT_SEC = 60
 
 import sys
 from pathlib import Path

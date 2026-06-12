@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gellmann_completeness_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "color_generation_independent_z3_structures_2026-06-05"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gellmann_completeness_theorem_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
         "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
         "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
         "d3_upper_bound_import_scope_gate_note_2026-06-06",
         "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
-        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
+        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
+        "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8a640752fd0559ce2fa3e603aefb59317fd7881dccfe4ac829f02feb9652eaea",
+      "note_hash": "7fc4532b4051851eabfa21ac1f83caf744732f42306f16d95968d1e531ee962b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

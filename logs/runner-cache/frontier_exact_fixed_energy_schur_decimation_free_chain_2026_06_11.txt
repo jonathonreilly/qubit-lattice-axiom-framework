@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_exact_fixed_energy_schur_decimation_free_chain_2026_06_11.py
+runner_sha256: 8c8c602757cb6ded800ab6ea555aba9c80cae32878900a135266ca997d05817a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+SCOPE: free sector, 1D, one color, E=0 slice; exact Schur decimation, no truncation.
+NOT CLAIMED: interacting RG, d=3, gauge sectors, continuum limits, c-functions.
+Statuses are pipeline-derived; the audit lane grades.
+D1 EXACTNESS: PASS max retained-resolvent error=7.216e-16; m=0,E=0 singular: zero-mode-projected Moore-Penrose check
+D2 FORM CLOSURE: PASS nonzero structure at E=0 is diagonal + coarse NN only for m!=0; h_eff diag=m+2t^2/m, coarse NN=t^2/m, so hopping convention gives t'=-t^2/m; m=0.3: diag=6.96666666666667, NN=3.33333333333333, NNN=0.000e+00 | m=1.5: diag=2.83333333333333, NN=0.666666666666667, NNN=0.000e+00; projected m=0 ranges={}
+D3 ONE-STEP MAP: PASS validated exact forms on disjoint grids: uniform=m+2t^2/m, NN=t^2/m, staggered m'=0; same-form Hamiltonian representation uses t'=-t^2/m and E'=-m-2t^2/m. Fixed diagnostics: m=0 is singular critical with m'=0 regulator/projected checks (0.000e+00,0.000e+00); m->inf gives |NN/diag|->0 with derivative 1.000e-06. errors infer=2.220e-16, validate=1.776e-15
+D4 OBSERVABLE INVARIANCE: PASS G[0,2](0) retained-site invariance max error=8.327e-17; samples=(t=0.481997,m=1.80166,err=3.5e-18); (t=0.761784,m=0.834218,err=8.3e-17); (t=0.940235,m=1.78603,err=0.0e+00); (t=1.77274,m=0.871243,err=8.3e-17); (t=1.24102,m=1.67166,err=1.4e-17)
+D5 ITERATION CONSISTENCY: PASS two-step vs direct-by-4: h error=5.551e-17, resolvent error=2.082e-17
+D6 CONTROLS: PASS m=0 preserves zero staggered component in projected E=0 and finite-E regulator; drop-Schur-control retained-resolvent error=2.739e+00 (>1e-6 means control fails as intended)
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 862 |
+| **retained_bounded** | 863 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1369 |
+| unaudited | 1368 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1317 |
+| `audited_clean` | 1318 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1686 |
+| `unaudited` | 1685 |
 
 | claim_type | count |
 |---|---:|
@@ -80,9 +80,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 505 |
-| `high` | 506 |
-| `medium` | 868 |
-| `leaf` | 1311 |
+| `high` | 505 |
+| `medium` | 870 |
+| `leaf` | 1310 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -103,27 +103,27 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1530 | 127.08 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1057 | 63.55 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1389 | 60.94 | `audited_clean` | **retained** |
-| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 882 | 59.29 | `unaudited` | unaudited |
+| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 881 | 59.28 | `unaudited` | unaudited |
 | 5 | `key_terminology` | meta | critical | 1216 | 50.25 | `unaudited` | meta |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 998 | 49.96 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 970 | 45.42 | `unaudited` | unaudited |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 978 | 44.44 | `unaudited` | unaudited |
-| 9 | `plaquette_self_consistency_note` | bounded_theorem | critical | 954 | 42.40 | `audited_clean` | **retained_bounded** |
+| 9 | `plaquette_self_consistency_note` | bounded_theorem | critical | 953 | 42.40 | `audited_clean` | **retained_bounded** |
 | 10 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1038 | 41.52 | `audited_clean` | **retained** |
-| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1042 | 40.53 | `unaudited` | unaudited |
+| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1041 | 40.52 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1355 | 39.41 | `audited_clean` | **retained** |
 | 13 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1295 | 38.84 | `audited_clean` | **retained_bounded** |
 | 14 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 792 | 38.63 | `audited_clean` | **retained_bounded** |
-| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 733 | 38.52 | `audited_clean` | **retained_no_go** |
-| 16 | `alpha_s_derived_note` | bounded_theorem | critical | 880 | 38.28 | `audited_conditional` | ~~audited_conditional~~ |
+| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 732 | 38.52 | `audited_clean` | **retained_no_go** |
+| 16 | `alpha_s_derived_note` | bounded_theorem | critical | 879 | 38.28 | `audited_conditional` | ~~audited_conditional~~ |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1359 | 36.91 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1108 | 36.12 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 981 | 34.94 | `unaudited` | unaudited |
-| 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 277 | 34.62 | `unaudited` | unaudited |
-| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 724 | 33.00 | `unaudited` | unaudited |
-| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 721 | 31.50 | `unaudited` | unaudited |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 851 | 31.23 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 324 | 30.84 | `unaudited` | unaudited |
+| 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 276 | 34.61 | `unaudited` | unaudited |
+| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 723 | 33.00 | `unaudited` | unaudited |
+| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 720 | 31.49 | `unaudited` | unaudited |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 850 | 31.23 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.84 | `unaudited` | unaudited |
 | 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 188 | 30.56 | `audited_clean` | **retained** |
 
 
@@ -741,6 +741,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -10760,6 +10761,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Gamma_chi = 2vv^T - I is the body-diagonal pi rotation on the grade-1 vector carrier, and for w perpendicular to v, H = |v><w| + |w><v| anticommutes with Gamma_chi while generically [H,R] != 0, so it lies outside the cited comm(R) no-go.  _(class `A`)_
 - **chain closes:** True — The cited retained-grade inputs supply the Pauli/Spin(3) carrier, the generation-triplet separation, the circulant no-go scope, and the Q=2/3 algebraic identity. Independent matrix checks confirm Gamma_chi is the proper body-diagonal pi rotation, the displayed non-circulant anticommuting family exists, and the Q=2/3 condition remains exactly the r=1/2 amplitude condition rather than being discharged.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs, not a fitted numerical match or a definition-only substitution. The runner source checks the core matrices directly, and an independent calculation verifies the key signs, coefficients, spectra, commutators, and Q-ratio normalization. The claim is correctly scoped as carrier compatibility only; it does not inherit closure of the physical generation identification, vector-vs-spinor sign bridge, or r-pin.
+- **auditor confidence:** high
+
+### `koide_import_two_bit_decomposition_note_2026-05-30`
+
+- **Note:** [`KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md`](../../docs/KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3 generation algebra: Jcs supplies the complex/Kahler doublet data, orientation and modulus are independent, and the symmetric Gamma_chi-anticommuting eigenvalue-operator class has a zero eigenvalue; no measure selector or physical Q=2/3 derivation is claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-023932-760f35102f-koide_import_two_bit_decompo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Every circulant mass operator H = aI + bC + conj(b)C^2 commutes with Jcs for all r, so orienting Jcs does not choose the modulus.  _(class `A`)_
+- **chain closes:** True — The key identities close by polynomial algebra in C: Jcs^2 = -P_doublet and [aI + bC + conj(b)C^2, Jcs] = 0 because both are in the circulant algebra. The anticommuting subclaim also closes in the Gamma_chi eigenspace block form, where a symmetric anticommutant has spectrum {-s, 0, +s}.
+- **rationale:** All cited authorities in the restricted packet are retained-grade, and the source uses them only for bounded algebraic support and for preserving the open measure-selector residual. Independent checks reproduce the signs and factors for Jcs, P_doublet, the holomorphic projector, the Frobenius-Schur indicator, Q(r) = (1 + 2r)/3, and the r = 1/2 versus r = 1 measure fork. The runner source mostly computes the finite identities directly; its narrative measure-fork line is not treated as authority, but the same formula follows from the displayed block-energy algebra.
 - **auditor confidence:** high
 
 ### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`

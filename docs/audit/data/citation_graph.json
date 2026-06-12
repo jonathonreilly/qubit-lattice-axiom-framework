@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_import_two_bit_decomposition_note_2026-05-30"
     },
     {
@@ -49667,6 +49663,10 @@
     {
       "from": "repo.front_door_status",
       "to": "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
         "koide_import_two_bit_decomposition_note_2026-05-30",
         "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
         "koide_reality_type_permitted_not_forced_note_2026-05-30",
         "lepton_block_d12_prime_matching_no_go_note_2026-05-10",
-        "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28"
+        "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
+        "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7f10191c667c4a619bd4bb81060485b2c39a7e85eeb264775218d3167166b4ef",
+      "note_hash": "9a7f82a020783bf8425da0d296a7a50ab06eea4bdd290e5a84aa73eba87a8331",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

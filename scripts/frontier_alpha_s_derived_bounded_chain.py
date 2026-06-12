@@ -9,7 +9,10 @@ Claim under check (theorem T1 of the note):
                                         PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
         B2:  g_bare = 1, alpha_bare = g_bare^2 / (4 pi) = 1 / (4 pi)
                                        (declared normalization input)
-        B3:  vertex power n_link = 2   (declared structural input)
+        B3:  staggered-Dirac gauge vacuum-polarization channel has
+             operator count n_link = 2; identifying that channel count
+             with the physical coupling definition is declared here
+                                      (structural input)
         B4:  alpha_s(mu = v) := alpha_bare / u_0^2
                                        (declared scheme/scale input)
 
@@ -82,8 +85,9 @@ def check(klass: str, name: str, condition: bool, detail: str = "") -> bool:
 P_BOUNDARY = 0.5934           # B1: licensed reuse number (plaquette license)
 G_BARE = 1.0                  # B2: declared bare-coupling normalization
 ALPHA_BARE = G_BARE ** 2 / (4.0 * PI)
-N_LINK = 2                    # B3: declared structural vertex power
-# B4 is the identification alpha_s(mu=v) := alpha_bare / u_0^n_link itself.
+N_LINK = 2                    # B3: VP-channel operator count used by T1
+# B3 also declares channel selection; B4 declares scheme/scale:
+# alpha_s(mu=v) := alpha_bare / u_0^n_link.
 
 # Boundary value registered by the running-bridge note (its own rounded
 # declared value; class-B consistency target only).
@@ -363,6 +367,9 @@ def main() -> None:
     print("  - The helper module canonical_plaquette_surface.py is consulted")
     print("    only for the tagged class-B consistency residuals above; every")
     print("    T1 number is recomputed forward inside this runner.")
+    print("  - B3 consumes n_link = 2 as the staggered-Dirac gauge")
+    print("    vacuum-polarization channel count; the channel-selection step")
+    print("    into alpha_s(v) := alpha_bare/u_0^2 is declared in the note.")
     print("  - C1 uses a self-contained 2-loop SM RGE reimplementation with")
     print("    LO top-threshold matching; PDG constants appear only in the")
     print("    terminal class-D section and in the C1 threshold/scale inputs.")

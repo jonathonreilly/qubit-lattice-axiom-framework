@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_alpha_s_derived_bounded_chain.py
-runner_sha256: 9c44ded9cf1799f069d803cb028ed448973e4121f358138dda85bc03aed88f5b
-timeout_sec: 120
+runner_sha256: 7d5291b2db5cae8a675cf18935e88fcf8dea3f4e1e950b08bd6ca36eb69f4be0
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ============================================================================
@@ -49,6 +49,9 @@ Scope notes for the auditor:
   - The helper module canonical_plaquette_surface.py is consulted
     only for the tagged class-B consistency residuals above; every
     T1 number is recomputed forward inside this runner.
+  - B3 consumes n_link = 2 as the staggered-Dirac gauge
+    vacuum-polarization channel count; the channel-selection step
+    into alpha_s(v) := alpha_bare/u_0^2 is declared in the note.
   - C1 uses a self-contained 2-loop SM RGE reimplementation with
     LO top-threshold matching; PDG constants appear only in the
     terminal class-D section and in the C1 threshold/scale inputs.

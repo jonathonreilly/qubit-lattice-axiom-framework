@@ -1,0 +1,115 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_rim_depth_ladder_deep_rim_limit_2026_06_12.py
+runner_sha256: 342d952cb8853e782d4bd9e2e0aac206cdbc1a6f80d1c94eb63480f2955bab3f
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 7.64
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette finite rim-depth ladder deep-rim-limit readout
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+
+========================================================================================================
+Part 1: tensor word and Perron-boundary setup
+========================================================================================================
+tensor-word Perron eigenvalue = 1.012369912748
+tensor-word Perron residual = 1.665334536938e-16
+eta_inf rho_min = 2.286765266123e-23
+PASS: tensor-word Perron residual is small
+      residual=1.665e-16
+PASS: eta_inf is positive on the finite tensor-word box
+      rho_min=2.287e-23
+
+========================================================================================================
+Part 2: solve matrix-element multiword Perron packets once
+========================================================================================================
+PASS: 1-word matrix-element Perron residual is small
+      residual=1.110e-16
+PASS: 1-word Perron vector is nonnegative up to tolerance
+      psi_min=1.985e-23
+PASS: 2-word matrix-element Perron residual is small
+      residual=2.082e-17
+PASS: 2-word Perron vector is nonnegative up to tolerance
+      psi_min=-4.592e-40
+PASS: 3-word matrix-element Perron residual is small
+      residual=6.939e-18
+PASS: 3-word Perron vector is nonnegative up to tolerance
+      psi_min=-3.341e-52
+
+========================================================================================================
+Part 3: eta-depth ladder table
+========================================================================================================
+depth | higher_L1(eta/eta00) | higher_L1/total_L1 | ||eta-eta_inf||_inf | P1 | P2 | P3 | rho10_w2 | rho10_w3
+--------------------------------------------------------------------------------------------------------------------------------
+  k=0 | 0.000000000000 | 0.000000000000 | 3.785149223171e-01 | 0.434215413260 | 0.429196712321 | 0.429196712321 | 0.211265869825 | 0.211265869825
+  k=1 | 0.720753266493 | 0.418859159258 | 1.672490524921e-01 | 0.434215413260 | 0.431504881786 | 0.487332641164 | 0.287722573724 | 2.570788717063
+  k=2 | 0.943987938485 | 0.485593516193 | 6.669331420564e-02 | 0.434215413260 | 0.432465615318 | 0.524083379824 | 0.319839882299 | 4.970770024694
+  k=3 | 1.033609675074 | 0.508263551134 | 2.559925643371e-02 | 0.434215413260 | 0.432836697103 | 0.536381703306 | 0.332292293872 | 6.125520510667
+  k=5 | 1.081483179565 | 0.519573345671 | 3.637524928573e-03 | 0.434215413260 | 0.433030156204 | 0.542223091293 | 0.338794722612 | 6.778306945410
+  k=8 | 1.088994966639 | 0.521300904995 | 1.914976898197e-04 | 0.434215413260 | 0.433060212494 | 0.543094536619 | 0.339805604950 | 6.882859140444
+ k=12 | 1.089404185700 | 0.521394660332 | 3.768721553221e-06 | 0.434215413260 | 0.433061847558 | 0.543141664312 | 0.339860602017 | 6.888570987566
+ k=20 | 1.089412397728 | 0.521396541397 | 1.459356024913e-09 | 0.434215413260 | 0.433061880367 | 0.543142609685 | 0.339861705598 | 6.888685627437
+k=inf | 1.089412400909 | 0.521396542126 | 0.000000000000e+00 | 0.434215413260 | 0.433061880380 | 0.543142610051 | 0.339861706025 | 6.888685671846
+PASS: k=0 two-word readout reproduces the trivial-slice gate
+      P2(k=0)=0.429196712321
+PASS: k=0 three-word readout reproduces the trivial-slice gate
+      P3(k=0)=0.429196712321
+PASS: k=1 two-word readout reproduces the constructed-rim gate
+      P2(k=1)=0.431504881786
+PASS: k=1 three-word readout reproduces the constructed-rim gate
+      P3(k=1)=0.487332641164
+PASS: one-word readout is eta-depth independent and reproduces the tensor-word anchor
+      k=0:0.434215413260, k=1:0.434215413260, k=2:0.434215413260, k=3:0.434215413260, k=5:0.434215413260, k=8:0.434215413260, k=12:0.434215413260, k=20:0.434215413260, k=inf:0.434215413260
+PASS: eta_0 has zero higher-weight L1 mass after eta00 normalization
+      higher_L1(k=0)=0.000e+00
+PASS: eta_1 higher-weight L1 mass reproduces the rim-boundary row
+      higher_L1(k=1)=0.720753266493
+PASS: all reported readouts are finite and positive
+
+========================================================================================================
+Part 4: monotonicity, convergence, and landing
+========================================================================================================
+P3 finite-depth monotonicity: monotone nondecreasing
+P3 finite-depth diffs: +5.813592884225e-02 +3.675073866007e-02 +1.229832348179e-02 +5.841387987016e-03 +8.714453268881e-04 +4.712769287019e-05 +9.453728445630e-07
+P2 finite-depth monotonicity: monotone nondecreasing
+P2 finite-depth diffs: +2.308169464339e-03 +9.607335323316e-04 +3.710817848508e-04 +1.934591014593e-04 +3.005628932723e-05 +1.635063855143e-06 +3.280930060967e-08
+distance to eta_inf in rho sup norm: 3.785149223171e-01 1.672490524921e-01 6.669331420564e-02 2.559925643371e-02 3.637524928573e-03 1.914976898197e-04 3.768721553221e-06 1.459356024913e-09
+distance to P3(k=inf): 1.139458977299e-01 5.580996888770e-02 1.905923022762e-02 6.760906745833e-03 9.195187588169e-04 4.807343192881e-05 9.457390586221e-07 3.662140590777e-10
+distance to P2(k=inf): 3.865168058173e-03 1.556998593834e-03 5.962650615023e-04 2.251832766515e-04 3.172417519220e-05 1.667885864975e-06 3.282200983223e-08 1.270922256325e-11
+k=inf landing: P2=0.433061880380, P3=0.543142610051, |P3 - marginal_branch|=0.049674509554, |P3 - 0.5934|=0.050257389949
+PASS: P3 finite-depth sequence classification is monotone nondecreasing
+PASS: eta_k normalized vectors move closer to eta_inf by k=20 than by k=0
+      dist0=3.785e-01, dist20=1.459e-09
+PASS: P3(k=20) is closer to the Perron-boundary P3 than P3(k=0)
+      dist0=1.139e-01, dist20=3.662e-10
+PASS: Perron-boundary P3 lands away from the marginal branch
+      P3_inf=0.543142610051, P3_marginal=0.592817119605
+
+========================================================================================================
+Fenced comparator distances
+========================================================================================================
+Plaquette reuse license: the canonical comparison number is admitted only as a comparison/reuse number, not as a derived value, fit target, or repinning input. The marginal-branch number is the existing matrix-element/marginal readout, not a new comparator.
+```text
+k=0: P2 = 0.429196712321; P3 = 0.429196712321; higher_L1 = 0.000000000000; |P3 - P_trivial3| = 0.000000000000; |P3 - P_marginal3| = 0.163620407284; |P3 - 0.5934| = 0.164203287679
+k=1: P2 = 0.431504881786; P3 = 0.487332641164; higher_L1 = 0.720753266493; |P3 - P_trivial3| = 0.058135928843; |P3 - P_marginal3| = 0.105484478441; |P3 - 0.5934| = 0.106067358836
+k=2: P2 = 0.432465615318; P3 = 0.524083379824; higher_L1 = 0.943987938485; |P3 - P_trivial3| = 0.094886667503; |P3 - P_marginal3| = 0.068733739781; |P3 - 0.5934| = 0.069316620176
+k=3: P2 = 0.432836697103; P3 = 0.536381703306; higher_L1 = 1.033609675074; |P3 - P_trivial3| = 0.107184990985; |P3 - P_marginal3| = 0.056435416299; |P3 - 0.5934| = 0.057018296694
+k=5: P2 = 0.433030156204; P3 = 0.542223091293; higher_L1 = 1.081483179565; |P3 - P_trivial3| = 0.113026378972; |P3 - P_marginal3| = 0.050594028312; |P3 - 0.5934| = 0.051176908707
+k=8: P2 = 0.433060212494; P3 = 0.543094536619; higher_L1 = 1.088994966639; |P3 - P_trivial3| = 0.113897824298; |P3 - P_marginal3| = 0.049722582986; |P3 - 0.5934| = 0.050305463381
+k=12: P2 = 0.433061847558; P3 = 0.543141664312; higher_L1 = 1.089404185700; |P3 - P_trivial3| = 0.113944951991; |P3 - P_marginal3| = 0.049675455293; |P3 - 0.5934| = 0.050258335688
+k=20: P2 = 0.433061880367; P3 = 0.543142609685; higher_L1 = 1.089412397728; |P3 - P_trivial3| = 0.113945897364; |P3 - P_marginal3| = 0.049674509920; |P3 - 0.5934| = 0.050257390315
+k=inf: P2 = 0.433061880380; P3 = 0.543142610051; higher_L1 = 1.089412400909; |P3 - P_trivial3| = 0.113945897730; |P3 - P_marginal3| = 0.049674509554; |P3 - 0.5934| = 0.050257389949
+```
+PASS: canonical comparator is isolated to fenced distance reporting
+
+========================================================================================================
+Part 5: bounded residuals
+========================================================================================================
+Named residuals: finite word count; finite dominant-weight box; finite Bessel mode support; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.
+PASS: runner scope names the finite-packet residuals without claiming them retired
+
+TOTAL: PASS=22, FAIL=0
+
+----- stderr -----
+

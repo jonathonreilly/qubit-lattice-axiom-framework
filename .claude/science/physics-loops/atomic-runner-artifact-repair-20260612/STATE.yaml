@@ -1,0 +1,21 @@
+loop_slug: atomic-runner-artifact-repair-20260612
+goal: "Repair the atomic work-history audited_conditional runner_artifact_issue by synchronizing stale note language with the now-present helium runner sources and cache certificates."
+target_claim_id: work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18
+mode: source_repair
+cycle_count: 1
+active_route: runner_artifact_visibility_repair
+actual_current_surface_status: audited_conditional_on_main_until_reaudit
+branch_status: bounded-support_source_repair
+files_touched:
+  - docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md
+  - .claude/science/physics-loops/atomic-runner-artifact-repair-20260612/
+open_imports:
+  - "Exact helium closure remains open."
+  - "Absolute eV scale still needs the electron-mass / unit lane."
+  - "Independent audit must decide whether the narrowed lattice-kinetic and Coulomb-kernel dependency repair suffices."
+trace_gate: direct_blocker_closure
+proposal_allowed: false
+proposal_allowed_reason: "This branch removes a stale artifact blocker but does not promote the atomic lane."
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer should queue the row for re-audit with the full runner sources/caches visible in the source note."
+stop_condition: "Science block complete when branch is pushed and PR opened."

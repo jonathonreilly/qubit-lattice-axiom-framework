@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 278,
-    "high": 286,
+    "high": 287,
     "leaf": 469,
-    "medium": 435
+    "medium": 433
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -7952,6 +7952,57 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_q_reduced_observable_restriction_theorem_2026-04-22",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+        "koide_q_readout_factorization_theorem_2026-04-22",
+        "koide_q_minimal_scale_free_selector_note_2026-04-22"
+      ],
+      "direct_in_degree": 6,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.392,
+      "note_path": "docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_q_reduced_observable_restriction_theorem.py",
+      "transitive_descendants": 83
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+        "higgs_mass_from_axiom_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.822,
+      "note_path": "docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_wilson_corrected_v_taste_tree_level.py",
+      "transitive_descendants": 39
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -11390,32 +11441,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_two_endpoint_gauss_law_invariance_profile_bounded_2026_06_05.py",
-      "transitive_descendants": 83
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_q_reduced_observable_restriction_theorem_2026-04-22",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
-        "koide_q_readout_factorization_theorem_2026-04-22",
-        "koide_q_minimal_scale_free_selector_note_2026-04-22"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.392,
-      "note_path": "docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_q_reduced_observable_restriction_theorem.py",
       "transitive_descendants": 83
     },
     {
@@ -17141,31 +17166,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_q_minimal_scale_free_selector_note_2026-04-22",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_realization_gate_note_2026-05-03",
-        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.426,
-      "note_path": "docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_q_minimal_scale_free_selector.py",
-      "transitive_descendants": 85
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "light_cone_framing_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17285,31 +17285,6 @@
       "ready": true,
       "runner_path": "scripts/color_generation_z3_identification_no_go_2026_06_05.py",
       "transitive_descendants": 43
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-        "higgs_mass_from_axiom_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.585,
-      "note_path": "docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_wilson_corrected_v_taste_tree_level.py",
-      "transitive_descendants": 23
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44188,5 +44163,5 @@
     }
   ],
   "ready_count": 67,
-  "total_pending": 1468
+  "total_pending": 1467
 }

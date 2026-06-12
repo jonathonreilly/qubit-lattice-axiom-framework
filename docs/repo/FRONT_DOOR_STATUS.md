@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1456 |
-| Retained-grade rows, including boxed decorations | 1315 |
+| Applied audit verdicts | 1457 |
+| Retained-grade rows, including boxed decorations | 1316 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 849 |
+| Retained bounded rows | 850 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1466 |
+| Unaudited rows | 1465 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 39 |
 | Audited renaming rows | 34 |
@@ -33,37 +33,37 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1468 |
+| Total pending rows | 1467 |
 | Ready rows | 67 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
-| High pending | 286 |
-| Medium pending | 435 |
+| High pending | 287 |
+| Medium pending | 433 |
 | Leaf pending | 469 |
 
 Next ready rows by queue order:
 
+- [`koide_q_reduced_observable_restriction_theorem_2026-04-22`](../../docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md) - high; unaudited
+- [`wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08`](../../docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`koide_q_minimal_scale_free_selector_note_2026-04-22`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md) - medium; unaudited
 - [`light_cone_framing_note`](../../docs/LIGHT_CONE_FRAMING_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md) - medium; unaudited
 - [`dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`](../../docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 - [`gellmann_completeness_theorem_note_2026-05-02`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
-- [`wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08`](../../docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **428**.
+- Non-retained-grade cited rows in publication tables: **427**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 160 |
 | high | `unaudited` | 160 |
-| medium | `unaudited` | 95 |
+| medium | `unaudited` | 94 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `open_gate` | 2 |
 | high | `audited_conditional` | 2 |
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3383 |
 | Critical nodes | 521 |
-| High nodes | 514 |
-| Medium nodes | 910 |
+| High nodes | 515 |
+| Medium nodes | 909 |
 | Leaf nodes | 1438 |
 
 Top load-bearing rows by graph score:
@@ -93,5 +93,5 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 887 descendants; score 59.294
 - `key_terminology` - critical; 1282 descendants; score 50.325
 - `minimal_axioms_2026-05-03` - critical; 1073 descendants; score 49.569
-- `plaquette_self_consistency_note` - critical; 970 descendants; score 46.423
+- `plaquette_self_consistency_note` - critical; 971 descendants; score 46.425
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 928 descendants; score 44.360

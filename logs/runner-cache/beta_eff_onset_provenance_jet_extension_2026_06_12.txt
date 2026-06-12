@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/beta_eff_onset_provenance_jet_extension_2026_06_12.py
+runner_sha256: 70ef00363de76b8a6fc5b21a1d395773128518c24e3a14caa02ebb84aa4f6222
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.02
+status: ok
+----- stdout -----
+BETA_EFF ONSET PROVENANCE AND JET EXTENSION
+R_O jet through beta^11: -1949*beta**11/329129489203200 - 3839*beta**10/21941965946880 - 67*beta**9/87071293440 + 97*beta**8/14511882240 + 59*beta**7/604661760 + 7*beta**6/33592320 - beta**5/186624 - 5*beta**4/93312 + beta**2/216 + beta/18
+Delta jet d5..d11: -13*beta**11/3967185807360 - 10483*beta**10/5289581076480 - 2035*beta**9/264479053824 + 5*beta**8/272097792 + 5*beta**7/17006112 + 7*beta**6/5668704 + beta**5/472392
+beta_eff jet coefficients: a5=1/26244, a6=5/314928, a7=5/1889568, a8=5/136048896, a9=-955/14693280768, a10=-4207/528958107648, a11=5579/3173748645888
+beta_eff^-(6): 32111/4374
+beta_eff^+(6) - beta_eff^-(6): 17006112/78125
+beta_eff^+(6): 76893405763/341718750
+Numeric R_O spread diagnostic using existing Bessel evaluator:
+  original order-6 gap beta_eff: 729/156250
+  refreshed order-12 gap beta_eff: 17006112/78125
+  exact beta_eff gap ratio: 46656
+  original R_O gap: 2.914372116089026e-04
+  refreshed R_O gap: 4.801069283071555e-01
+
+PASS: source note contains the formal reduction-law derivation lines
+      case (a) provenance: beta_eff onset is obtained by local-response composition
+PASS: no-go note names inverse-response definition as the forbidden finite-beta route
+      the present runner performs only finite jet composition from declared series inputs
+PASS: Delta coefficients d5 through d11 are exact Fraction-declared inputs
+      d5=1/472392, d6=7/5668704, d7=5/17006112, d8=5/272097792, d9=-2035/264479053824, d10=-10483/5289581076480, d11=-13/3967185807360
+PASS: linked coefficient source notes contain the consumed d6 through d11 fractions
+      d6 from BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md, d7 from BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md, d8 from BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md, d9 from BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md, d10 from BETA6_PLAQUETTE_D10_COEFFICIENT_AND_RADIUS_EVIDENCE_BOUNDED_NOTE_2026-06-04.md, d11 from BETA6_PLAQUETTE_D11_COEFFICIENT_AND_CONTINUATION_SPREAD_BOUNDED_NOTE_2026-06-04.md
+PASS: local one-plaquette response jet is stable under a wider mode cutoff
+      mode_bound 20 equals mode_bound 24 through beta^11
+PASS: local response slope is exactly 1/18
+      slope=1/18
+PASS: all exact jet expressions contain no sympy Float atoms
+      R_O jet, Delta jet, and beta_eff coefficients are Rational-only
+PASS: beta_eff coefficients match the exact triangular inversion result
+      a5=1/26244, a6=5/314928, a7=5/1889568, a8=5/136048896, a9=-955/14693280768, a10=-4207/528958107648, a11=5579/3173748645888
+PASS: composition residual R_O(beta_eff(beta))-R_O(beta)-Delta(beta) vanishes through beta^11
+      residual=0
+PASS: onset coefficient reproduces 1/26244
+      a5=1/26244
+PASS: refreshed minimal witnesses first differ at beta^12 for the c-scale analog
+      new_gap=17006112/78125, old_gap=729/156250
+PASS: framework-point beta_eff polynomial value is exact
+      minus=32111/4374, plus=76893405763/341718750
+TOTAL: PASS=12, FAIL=0
+
+----- stderr -----
+

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1452 |
-| Retained-grade rows, including boxed decorations | 1312 |
+| Applied audit verdicts | 1453 |
+| Retained-grade rows, including boxed decorations | 1313 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 846 |
+| Retained bounded rows | 847 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1470 |
+| Unaudited rows | 1469 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 38 |
 | Audited renaming rows | 34 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1472 |
-| Ready rows | 70 |
+| Total pending rows | 1471 |
+| Ready rows | 69 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
-| High pending | 290 |
+| High pending | 289 |
 | Medium pending | 435 |
 | Leaf pending | 469 |
 
 Next ready rows by queue order:
 
-- [`observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md) - high; unaudited
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
 - [`su3_adjoint_casimir_theorem_note_2026-05-02`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md) - high; unaudited
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`koide_q_minimal_scale_free_selector_note_2026-04-22`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md) - medium; unaudited
 - [`light_cone_framing_note`](../../docs/LIGHT_CONE_FRAMING_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md) - medium; unaudited
+- [`dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`](../../docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

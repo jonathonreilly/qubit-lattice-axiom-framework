@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 866 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1361 |
+| unaudited | 1360 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -62,28 +62,28 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1321 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1678 |
+| `unaudited` | 1677 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1558 |
+| `bounded_theorem` | 1559 |
 | `decoration` | 55 |
 | `meta` | 326 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 772 |
+| `positive_theorem` | 771 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 505 |
 | `high` | 505 |
-| `medium` | 865 |
-| `leaf` | 1315 |
+| `medium` | 864 |
+| `leaf` | 1316 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -1503,6 +1503,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `spin_statistics_fs_admission_located_exercise_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17223,6 +17224,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given the retained LH charges and the admitted no-nu_R minimal RH singlet completion, the SU(3)^2Y, Tr[Y], and Tr[Y^3] anomaly equations force (Y(u_R), Y(d_R), Y(e_R)) = (+4/3, -2/3, -2), after which all six gauge-anomaly conditions cancel.  _(class `A`)_
 - **chain closes:** True — Independently, SU(3)^2Y gives y_u+y_d=2/3, Tr[Y] gives y_e=-2, and Tr[Y^3] gives y_u y_d=-8/9, so the roots are 4/3 and -2/3 up to the stated u_R/d_R convention. Substitution then gives zero perturbative anomalies and even SU(2) doublet parity; the matter-content ansatz and absolute Y scale remain scoped admissions/conventions.
 - **rationale:** The load-bearing work is finite algebra over retained-grade inputs plus explicit bounded admissions, not a renaming or numerical comparator match. The runner uses exact Fraction/integer arithmetic and does not import anomaly_forces_time, PDG values, or fitted constants. The nu_R caveat also checks independently: allowing y4=t gives y_u=4/3+t, y_d=-2/3-t, y_e=-2-t, which preserves the anomaly equations, so the no-nu_R uniqueness statement is correctly bounded.
+- **auditor confidence:** high
+
+### `sm_gstar_higgs_sector_count_stretch_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional support for the Higgs-sector g_* count: assuming the H_unit-to-one-EWSB-doublet bridge, the finite dof arithmetic gives g_* = 106.75 and a genuine second thermalized doublet would give 110.75; the flavor-sector two-Higgs theorem is audited only as a Yukawa-texture distinction.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-030706-dbe1e0e4ad-sm_gstar_higgs_sector_count_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the named EWSB-field-content bridge, the EWSB scalar entering the census is one complex SU(2)_L doublet with 4 real scalar dof, while the retained two-Higgs reduction is a Yukawa-texture statement adding no thermalized dof, so g_* = 106.75 rather than 110.75.  _(class `A`)_
+- **chain closes:** False — The arithmetic and finite Yukawa-texture linear algebra close on the supplied inputs. The chain to a framework-native single-doublet census count does not close because the H_unit scalar-singlet -> one complex SU(2)_L EWSB thermal doublet bridge is explicitly not derived in the packet.
+- **rationale:** The runner independently checks the finite dof arithmetic, monomial versus two-offset Yukawa algebra, phase count, q_H relabeling, and SU(2) pseudoreality; these are class A checks and contain no external comparator. However, the decisive identification from D17's unique scalar-singlet H_unit to one complex thermal EWSB doublet is only named as a bridge and is not supplied by any retained cited authority. The note is therefore valid as conditional support, but it cannot close R-HIGGS as a positive theorem.
 - **auditor confidence:** high
 
 ### `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29`

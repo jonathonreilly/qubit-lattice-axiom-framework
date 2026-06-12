@@ -1,16 +1,16 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1558,
+    "bounded_theorem": 1559,
     "decoration": 55,
     "meta": 326,
     "no_go": 336,
     "open_gate": 143,
-    "positive_theorem": 772
+    "positive_theorem": 771
   },
   "cycle_examples": [],
   "cycles_detected": 0,
   "effective_status_counts": {
-    "audited_conditional": 62,
+    "audited_conditional": 63,
     "audited_numerical_match": 14,
     "audited_renaming": 34,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
@@ -48,7 +48,7 @@
     "retained_bounded": 866,
     "retained_no_go": 210,
     "retained_pending_chain": 17,
-    "unaudited": 1361
+    "unaudited": 1360
   },
   "retained_pending_chain_count": 17,
   "retained_pending_chain_examples": [

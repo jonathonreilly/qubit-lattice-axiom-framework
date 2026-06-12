@@ -49646,10 +49646,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
     },
     {
@@ -95186,11 +95182,10 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11",
         "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "17a5d320f97de7c0061c31d60c671d548e366a2af44404d5f86677cd5bdab861",
+      "note_hash": "3c1a80949c3ea00f6262b5971f3df513487228138f24bad5578500ffd8a2e6fb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -109627,8 +109622,8 @@
       "open_gate": 158,
       "positive_theorem": 617
     },
-    "edge_count": 12515,
-    "leaf_count": 1066,
+    "edge_count": 12514,
+    "leaf_count": 1067,
     "node_count": 3327,
     "root_count": 1047,
     "runners_with_path": 2912

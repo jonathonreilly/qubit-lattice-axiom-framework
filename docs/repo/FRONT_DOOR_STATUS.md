@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3190 |
-| Applied audit verdicts | 1510 |
+| Applied audit verdicts | 1511 |
 | Retained-grade rows, including boxed decorations | 1345 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 866 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 40 |
-| Unaudited rows | 1361 |
+| Unaudited rows | 1360 |
 | Retained-pending-chain rows | 17 |
-| Audited conditional rows | 62 |
+| Audited conditional rows | 63 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,19 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1363 |
-| Ready rows | 3 |
+| Total pending rows | 1362 |
+| Ready rows | 2 |
 | Cycle-break targets | 0 |
 | Critical pending | 272 |
 | High pending | 285 |
-| Medium pending | 407 |
+| Medium pending | 406 |
 | Leaf pending | 399 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -78,8 +77,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3327 |
 | Critical nodes | 513 |
 | High nodes | 511 |
-| Medium nodes | 899 |
-| Leaf nodes | 1404 |
+| Medium nodes | 898 |
+| Leaf nodes | 1405 |
 
 Top load-bearing rows by graph score:
 

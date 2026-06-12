@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py
+runner_sha256: fae50c084efc0e659223a8e51f18b068c5ef914dceeca165ae274ddf5d2f1588
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 6.75
+status: ok
+----- stdout -----
+SCOPE: fixed period L=3, depth-stable events selected by the pinned argmin global |E[exp(i Theta)]| over original n>=5 rows, prefix ladder k=2..8; adequate-grade claim is no exhaustion through the adequate-family range; higher-k entries are reported with inadequacy flags; Born cap + named instruments inherited; trajectories realized-state data. Statuses pipeline-derived; audit lane grades.
+MACHINERY: K_occ=5, eps=0.6, tau=0.35, dense L=3 Fock dimension 512, diagonal Kraus pair, named OPS, baseline subtraction, null rng 7777 with 300 draws.
+[PASS] X3a anchor prefix-3 reproduction: seed=4242 row=9 prefix-3=0.557030788006 target=0.557 tol=2.0e-03
+[PASS] X3a anchor null p95 reproduction: seed=4242 row=9 null95=0.469417530473 target=0.469 tol=5.0e-03
+[PASS] X3a rank/no-prune/weight gates seed 4242: worst_sv=4.805414636974e-04 rank_tol>1.0e-08; min_norm=3.042151170644e-01 no_prune_tol>1.0e-14; max_abs(sum_w-1)=1.110223024625e-15 weight_tol<=1.0e-10
+[PASS] X3a rank/no-prune/weight gates seed 99: worst_sv=1.063103780081e-03 rank_tol>1.0e-08; min_norm=2.862151515536e-01 no_prune_tol>1.0e-14; max_abs(sum_w-1)=4.440892098501e-16 weight_tol<=1.0e-10
+[PASS] X3a rank/no-prune/weight gates seed 7: worst_sv=4.705768855393e-04 rank_tol>1.0e-08; min_norm=3.163891904480e-01 no_prune_tol>1.0e-14; max_abs(sum_w-1)=8.881784197001e-16 weight_tol<=1.0e-10
+X3b ADEQUACY-ANNOTATED k-LADDER seed=4242 selected_row=9 global_g1=0.457378328016
+  k=2 stat=0.556934429376 null95=0.463470446451 gap=+0.093463982925 gap_clears=True theorem_clears=True status="clears (adequate)" labels=4 active=4 required_active=2 branches=512 min_active=128 max_active=128 empty=0
+  k=3 stat=0.557030788006 null95=0.469417530473 gap=+0.087613257533 gap_clears=True theorem_clears=True status="clears (adequate)" labels=8 active=8 required_active=4 branches=512 min_active=64 max_active=64 empty=0
+  k=4 stat=0.597914238376 null95=0.480062127069 gap=+0.117852111307 gap_clears=True theorem_clears=True status="clears (adequate)" labels=16 active=16 required_active=8 branches=512 min_active=32 max_active=32 empty=0
+  k=5 stat=0.706693987280 null95=0.502154640268 gap=+0.204539347012 gap_clears=True theorem_clears=True status="clears (adequate)" labels=32 active=32 required_active=16 branches=512 min_active=16 max_active=16 empty=0
+  k=6 stat=0.774351430001 null95=0.548148091806 gap=+0.226203338195 gap_clears=True theorem_clears=True status="clears (adequate)" labels=64 active=64 required_active=32 branches=512 min_active=8 max_active=8 empty=0
+  k=7 stat=0.893528578836 null95=0.632158485812 gap=+0.261370093024 gap_clears=True theorem_clears=False status="reported (family-inadequate)" labels=128 active=128 required_active=64 branches=512 min_active=4 max_active=4 empty=0 min_active_family<8
+  k=8 stat=0.999832183636 null95=0.779388503144 gap=+0.220443680492 gap_clears=True theorem_clears=False status="reported (family-inadequate)" labels=256 active=256 required_active=128 branches=512 min_active=2 max_active=2 empty=0 min_active_family<8
+X3b ADEQUACY-ANNOTATED k-LADDER seed=99 selected_row=7 global_g1=0.056972843007
+  k=2 stat=0.347429533398 null95=0.238709981147 gap=+0.108719552251 gap_clears=True theorem_clears=True status="clears (adequate)" labels=4 active=4 required_active=2 branches=128 min_active=32 max_active=32 empty=0
+  k=3 stat=0.502081055875 null95=0.312477400666 gap=+0.189603655208 gap_clears=True theorem_clears=True status="clears (adequate)" labels=8 active=8 required_active=4 branches=128 min_active=16 max_active=16 empty=0
+  k=4 stat=0.694879969818 null95=0.420377778716 gap=+0.274502191102 gap_clears=True theorem_clears=True status="clears (adequate)" labels=16 active=16 required_active=8 branches=128 min_active=8 max_active=8 empty=0
+  k=5 stat=0.895595971478 null95=0.550560767419 gap=+0.345035204058 gap_clears=True theorem_clears=False status="reported (family-inadequate)" labels=32 active=32 required_active=16 branches=128 min_active=4 max_active=4 empty=0 min_active_family<8
+  k=6 stat=0.998884740989 null95=0.755499380316 gap=+0.243385360673 gap_clears=True theorem_clears=False status="reported (family-inadequate)" labels=64 active=64 required_active=32 branches=128 min_active=2 max_active=2 empty=0 min_active_family<8
+  k=7 stat=1.000000000000 null95=1.000000000000 gap=+0.000000000000 gap_clears=False theorem_clears=False status="reported (family-inadequate)" labels=128 active=128 required_active=64 branches=128 min_active=1 max_active=1 empty=0 min_active_family<8 detail=singleton-degenerate: one branch per active family; non-clearance is power-limited, not a measured difference
+  k=8 stat=1.000000000000 null95=1.000000000000 gap=+0.000000000000 gap_clears=False theorem_clears=False status="reported (family-inadequate)" labels=256 active=128 required_active=128 branches=128 min_active=1 max_active=1 empty=128 min_active_family<8,EMPTY-LABELS
+X3b ADEQUACY-ANNOTATED k-LADDER seed=7 selected_row=10 global_g1=0.120489682367
+  k=2 stat=0.452835685674 null95=0.137727378370 gap=+0.315108307304 gap_clears=True theorem_clears=True status="clears (adequate)" labels=4 active=4 required_active=2 branches=1024 min_active=256 max_active=256 empty=0
+  k=3 stat=0.483111670644 null95=0.152229098339 gap=+0.330882572304 gap_clears=True theorem_clears=True status="clears (adequate)" labels=8 active=8 required_active=4 branches=1024 min_active=128 max_active=128 empty=0
+  k=4 stat=0.484706507578 null95=0.179105276363 gap=+0.305601231215 gap_clears=True theorem_clears=True status="clears (adequate)" labels=16 active=16 required_active=8 branches=1024 min_active=64 max_active=64 empty=0
+  k=5 stat=0.541787890764 null95=0.219221414104 gap=+0.322566476660 gap_clears=True theorem_clears=True status="clears (adequate)" labels=32 active=32 required_active=16 branches=1024 min_active=32 max_active=32 empty=0
+  k=6 stat=0.639697159677 null95=0.278372982346 gap=+0.361324177331 gap_clears=True theorem_clears=True status="clears (adequate)" labels=64 active=64 required_active=32 branches=1024 min_active=16 max_active=16 empty=0
+  k=7 stat=0.738087086933 null95=0.370376763434 gap=+0.367710323499 gap_clears=True theorem_clears=True status="clears (adequate)" labels=128 active=128 required_active=64 branches=1024 min_active=8 max_active=8 empty=0
+  k=8 stat=0.893714114658 null95=0.505326207237 gap=+0.388387907421 gap_clears=True theorem_clears=False status="reported (family-inadequate)" labels=256 active=256 required_active=128 branches=1024 min_active=4 max_active=4 empty=0 min_active_family<8
+[PASS] X3c every landed ladder statistic is finite and has at least one realized family: bad_entries=[]; family_inadequate_flags=seed=4242/k=7/min_active=4/active=128/required_active=64/empty=0; seed=4242/k=8/min_active=2/active=256/required_active=128/empty=0; seed=99/k=5/min_active=4/active=32/required_active=16/empty=0; seed=99/k=6/min_active=2/active=64/required_active=32/empty=0; seed=99/k=7/min_active=1/active=128/required_active=64/empty=0; seed=99/k=8/min_active=1/active=128/required_active=128/empty=128; seed=7/k=8/min_active=4/active=256/required_active=128/empty=0
+[PASS] X3c literal full-label coverage exposes exactly the seed-99 k=8 empty-sector obstruction: empty_full_label_pairs=[(99, 8)]; expected=[(99, 8)]
+X3d ADEQUATE VERDICT seed=4242 adequate_k_max=6 adequate=[2, 3, 4, 5, 6] theorem_clears=[2, 3, 4, 5, 6] adequate_does_not_clear=[] reported_family_inadequate=[7, 8]
+X3d ADEQUATE VERDICT seed=99 adequate_k_max=4 adequate=[2, 3, 4] theorem_clears=[2, 3, 4] adequate_does_not_clear=[] reported_family_inadequate=[5, 6, 7, 8]
+X3d ADEQUATE VERDICT seed=7 adequate_k_max=7 adequate=[2, 3, 4, 5, 6, 7] theorem_clears=[2, 3, 4, 5, 6, 7] adequate_does_not_clear=[] reported_family_inadequate=[8]
+[PASS] X3d adequate-grade verdict is no exhaustion through each seed's adequate-family range and all higher-k entries are reported family-inadequate: observed_adequate_sets={4242:[2, 3, 4, 5, 6], 99:[2, 3, 4], 7:[2, 3, 4, 5, 6, 7]}; observed_theorem_clear_sets={4242:[2, 3, 4, 5, 6], 99:[2, 3, 4], 7:[2, 3, 4, 5, 6, 7]}; observed_family_inadequate_sets={4242:[7, 8], 99:[5, 6, 7, 8], 7:[8]}; observed_adequate_kmax={4242: 6, 99: 4, 7: 7}; expected_adequate_kmax={4242: 6, 99: 4, 7: 7}
+[PASS] X3e cap-11 vs cap-12 depth-stability of the selected event and k-ladder: seed=4242:cap11_row=9,cap12_row=9,max_ladder_diff=0.000e+00; seed=99:cap11_row=7,cap12_row=7,max_ladder_diff=0.000e+00; seed=7:cap11_row=10,cap12_row=10,max_ladder_diff=0.000e+00
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

@@ -3,7 +3,7 @@
     "critical": 272,
     "high": 285,
     "leaf": 428,
-    "medium": 421
+    "medium": 420
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16882,31 +16882,6 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 90
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "light_cone_framing_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.322,
-      "note_path": "docs/LIGHT_CONE_FRAMING_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/light_cone_staggered_dispersion.py",
-      "transitive_descendants": 79
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42435,6 +42410,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 38,
-  "total_pending": 1406
+  "ready_count": 37,
+  "total_pending": 1405
 }

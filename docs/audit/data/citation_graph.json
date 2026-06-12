@@ -49646,7 +49646,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
+      "to": "light_cone_framing_note"
     },
     {
       "from": "repo.front_door_status",
@@ -49662,11 +49662,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
+      "to": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+      "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
     },
     {
       "from": "repo.repo_organization",
@@ -95202,15 +95202,15 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+        "light_cone_framing_note",
         "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19",
         "quark_bimodule_norm_naturality_theorem_note_2026-04-19",
         "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-        "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+        "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0c74f41ac20698b0f2d6a3da84c8bebc10ad03fe525b3451497ab375c0cb3a05",
+      "note_hash": "8b3b0e24098bc89aee13be85ed1d959bb863e7c592023093f81fd35ba234d46e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

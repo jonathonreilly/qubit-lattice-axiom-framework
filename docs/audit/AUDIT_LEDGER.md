@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 848 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1404 |
+| unaudited | 1403 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 49 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1293 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 49 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1721 |
+| `unaudited` | 1720 |
 
 | claim_type | count |
 |---|---:|
@@ -1452,6 +1452,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_minimal_scale_free_selector_note_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_taste_cube_cyclic_source_descent_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `light_cone_framing_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -11926,6 +11927,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The Duhamel interpolation plus the arctan defect series and Leibniz telescope give ||alpha_CN(A)-alpha_{a_tau}(A)|| <= a_tau ||[H,A]|| y^2/(1-y^2), which then telescopes to n zeta and transfers the exact LR cone with additive defect 2||B|| n zeta.  _(class `A`)_
 - **chain closes:** True — The defect bound follows algebraically from the norm-convergent arctan series, the Leibniz commutator telescope, and exact-flow invariance of ||[H,A]||. The cited retained_bounded LR authority is used only for the finite-range exact evolution, while the open reconstructed-H and volume-independent sharpening claims are explicitly outside scope.
 - **rationale:** The independent math check reproduces the key constants: the D series contributes sum_{n>=1} y^{2n}=y^2/(1-y^2), giving zeta, and the n-step and cone-transfer inequalities follow by unitary telescoping and ||[X,B]||<=2||B||||X||. The commuting three-site withdrawal witness also checks, since c3=(f(3)-3f(1))/4=(1/(2a))[arctan(3a/2)-3 arctan(a/2)] is nonzero and distance-independent. The runner source performs real matrix computations rather than print-only assertions, and its 27 passes cover the spectral identity, withdrawal witnesses, defect inequalities, and small-step agreement.
+- **auditor confidence:** high
+
+### `light_cone_framing_note`
+
+- **Note:** [`LIGHT_CONE_FRAMING_NOTE.md`](../../docs/LIGHT_CONE_FRAMING_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The audited scope is the claim that the staggered dispersion has `v_max(m)=sqrt(m^2+1)-m` and that the framework's Crank-Nicolson light-cone behavior is standard finite-spacing Lieb-Robinson behavior rather than a blocker.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-005534-c398f7b81c-light_cone_framing_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The source uses the CN bridge equation `v_LR^CN(a_tau) = v_LR(H) / (1 - a_tau J / 2)` to connect the observed finite-step Crank-Nicolson containment to a standard Lieb-Robinson tail.  _(class `B`)_
+- **chain closes:** False — The dispersion subclaim closes algebraically: maximizing `sin^2(k)(1-sin^2(k))/(m^2+sin^2(k))` gives `sin^2(k*)=m(sqrt(m^2+1)-m)` and `v_max=sqrt(m^2+1)-m`. The broader LR/CN framing does not close because the cited Hamiltonian authority leaves the reconstructed `H` quasilocal bridge open, and the cited CN authority explicitly withdraws the fixed-step `v_LR^CN` formula used in the source note.
+- **rationale:** The primary runner genuinely checks the dispersion formula, but only as an algebraic/numerical validation of that subclaim, not as a proof of the LR/CN bridge. The source note contains stale quantitative bridge material: `J_action <= |m| + 30` conflicts with the retained Hamiltonian authority's repaired `|m|+78`/`78.5`/`80` and overlap-weight constants, and the quoted fixed-step CN velocity formula is explicitly withdrawn by the cited CN authority. The full identification of the observed 97% CN containment as a theorem-grade standard LR tail therefore remains conditional on an exact finite-range or quasilocal bridge for the reconstructed Hamiltonian and CN kernel.
+- **open / conditional deps cited:**
+  - `MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`
+  - `LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`
 - **auditor confidence:** high
 
 ### `linear_response_derivation_note`

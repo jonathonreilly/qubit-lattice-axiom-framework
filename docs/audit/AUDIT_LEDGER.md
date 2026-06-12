@@ -21,10 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 214 |
 | **retained_no_go** | 206 |
 | **retained_bounded** | 847 |
-| _retained_pending_chain_ | 17 |
+| _retained_pending_chain_ | 18 |
 | open_gate | 39 |
 | unaudited | 1475 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1292 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1293 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
@@ -84,7 +83,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 871 |
 | `leaf` | 1349 |
 
-- **Retained pending chain closure:** 17
+- **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
 
 ### Runner classification (static heuristic)
@@ -131,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -184,6 +182,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cluster_decomposition_temporal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | B | - |
@@ -2263,6 +2262,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Near k=0, E_k ~ |k|^2, so I_d(L) has the continuum scaling proxy integral_{1/L}^1 r^{d-3} dr, giving linear/log divergences for d=1,2 and finite behavior for d>=3.  _(class `A`)_
 - **chain closes:** True — The small-k expansion 2(1-cos k_mu) ~ k_mu^2 and the radial integral test give the stated threshold. The finite table entries are actually computed by the runner and independently match the displayed values; no Ward normalization, no-SSB theorem, D9 kernel authority, or substrate-minimality conclusion is imported.
 - **rationale:** The narrowed claim is a mathematical IR-sum scaling statement from the displayed lattice dispersion and standard integral comparison, not an external Coleman-Mermin-Wagner theorem. The runner source enumerates the lattice sums rather than printing constants, and its E0-E3 checks all pass. The formula inventory check finds the displayed small-k scaling, radial exponent, divergence classes, and quantitative table entries consistent with the note's definitions. The explicit non-claims prevent the earlier Ward/SSB/D9/substrate-minimality gaps from being load-bearing here.
+- **auditor confidence:** high
+
+### `axiom_first_cpt_theorem_stretch_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded fermion-sector CPT identities on the explicitly admitted pure staggered finite-matrix carrier M=mI+M_KS on even 4D periodic/APBC blocks; no Wilson fermion term and no in-block SU(3) Wilson-plaquette lift.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:assumption_derivation_ledger`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260612-axiom_first_cpt_theorem_stretch_note_202-r1`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** With Theta_CPT := (E Sigma_PT R_b)K, the corrected composition gives Theta_CPT M Theta_CPT^{-1}=E(Sigma_PT R_b M R_b^{-1} Sigma_PT)E=E M^T E=M=M^*.  _(class `A`)_
+- **chain closes:** True — The load-bearing step is a finite-matrix algebraic identity on the scoped pure staggered carrier, and the runner source genuinely constructs nondegenerate matrices, sign fields, bond-centered reflections, and falsification legs rather than printing expected results. The second audit correctly recognized the carrier is admitted, but treated the registered Tier-A bounded admission as an unretained dependency blocker; under the supplied rubric, a bounded row may audit clean on such an accepted bounded-tier admission while remaining effective-status bounded until that admission is retired. The SU(3) Wilson-plaquette lift, full-action CPT, and CP-odd-to-Theta_CPT-odd bridge are explicitly outside or narrowed from the audited scope.
+- **rationale:** The load-bearing step is a finite-matrix algebraic identity on the scoped pure staggered carrier, and the runner source genuinely constructs nondegenerate matrices, sign fields, bond-centered reflections, and falsification legs rather than printing expected results. The second audit correctly recognized the carrier is admitted, but treated the registered Tier-A bounded admission as an unretained dependency blocker; under the supplied rubric, a bounded row may audit clean on such an accepted bounded-tier admission while remaining effective-status bounded until that admission is retired. The SU(3) Wilson-plaquette lift, full-action CPT, and CP-odd-to-Theta_CPT-odd bridge are explicitly outside or narrowed from the audited scope.
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06`

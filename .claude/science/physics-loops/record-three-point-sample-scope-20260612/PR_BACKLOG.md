@@ -1,6 +1,8 @@
 # PR Backlog
 
-PR creation is pending.
+PR created:
+
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3712
 
 Planned title:
 
@@ -8,4 +10,4 @@ Planned title:
 [physics-loop] record three-point sampled-null scope repair bounded-support
 ```
 
-Planned base: `main`.
+Base: `main`.

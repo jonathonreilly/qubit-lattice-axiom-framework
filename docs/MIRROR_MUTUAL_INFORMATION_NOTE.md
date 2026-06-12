@@ -2,6 +2,16 @@
 
 **Status:** superseded_by [MIRROR_MUTUAL_INFORMATION_CANONICAL_FAMILIES_NOTE.md](MIRROR_MUTUAL_INFORMATION_CANONICAL_FAMILIES_NOTE.md)
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** superseded pointer / routing alias only. The
+bounded chokepoint mutual-information computation belongs to the canonical
+chokepoint artifact named below, not to this pointer file as a new claim.
+
+This file may be cited only to route readers to the canonical mirror-MI
+artifact. It may not be cited as the mirror-MI theorem, as a retained bounded
+result, or as independent scientific authority.
+
 The canonical mirror MI artifact is now frozen in:
 
 - [`docs/MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md)

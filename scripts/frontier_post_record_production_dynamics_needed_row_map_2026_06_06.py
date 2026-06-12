@@ -27,6 +27,15 @@ ROW_MAP = {
             "orientation_or_clock_bridge_if_time_directed",
         ],
     },
+    "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07": {
+        "lane": "conditional_shared_coupling_template",
+        "bridges": [
+            "continuous_energy_action_context_bridge",
+            "local_potential_stiffness_bridge",
+            "mass_scale_or_discrete_mass_extraction_bridge",
+            "gravitational_source_coupling_bridge",
+        ],
+    },
     "persistent_object_adaptive_readout_note": {
         "lane": "persistent_object_readout_kernel",
         "bridges": [
@@ -79,6 +88,7 @@ ROW_MAP = {
 
 EXPECTED_LANE_COUNTS = {
     "boundary_phase_finite_scan": 1,
+    "conditional_shared_coupling_template": 1,
     "persistent_object_readout_kernel": 2,
     "persistent_record_production_overlap": 3,
 }
@@ -206,7 +216,7 @@ def row_map_checks() -> tuple[list[dict], Counter[str]]:
         buckets[mapped_row(row)["lane"]].append(row)
     counts = Counter({lane: len(items) for lane, items in buckets.items()})
 
-    report("production-dynamics row count is current snapshot", len(rows) == 6, str(len(rows)))
+    report("production-dynamics row count is current snapshot", len(rows) == sum(EXPECTED_LANE_COUNTS.values()), str(len(rows)))
     report("expected production-dynamics claim ids match", set(observed_ids) == set(expected_ids), str(observed_ids))
     report("each expected production row appears once", len(observed_ids) == len(set(observed_ids)) == len(expected_ids))
     report("lane counts match expected", dict(counts) == EXPECTED_LANE_COUNTS, str(counts))
@@ -223,6 +233,7 @@ def row_map_checks() -> tuple[list[dict], Counter[str]]:
         for bridge in mapped_row(row)["bridges"]:
             bridge_counter[bridge] += 1
     report("boundary bridge is represented", bridge_counter["boundary_condition_bridge"] == 1)
+    report("conditional shared-coupling bridge is represented", bridge_counter["continuous_energy_action_context_bridge"] == 1)
     report("readout instrument bridge is represented", bridge_counter["detector_readout_or_instrument_bridge"] == 2)
     report("record-writing law bridge is represented", bridge_counter["record_writing_law_bridge"] == 3)
     report("production time/barrier bridge is represented", bridge_counter["production_time_or_barrier_bridge"] == 3)

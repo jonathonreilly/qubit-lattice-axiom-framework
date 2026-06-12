@@ -10,9 +10,21 @@ audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_production_dynamics_needed_row_map_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_production_dynamics_needed_row_map_2026_06_06.txt)
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** read-only row map / import taxonomy. The
+runner checks source anchors, finite counts, lane labels, and firewall flags,
+but the production-dynamics import classes are a hard-coded map rather than a
+derivation from Record or retained physics primitives.
+
+This note may be cited for audit planning and missing-bridge classification. It
+may not be cited as a retained production-dynamics theorem, a derived physical
+arrow, or a bridge deriving kernels, preservation, readout, ordering,
+normalization, or generalization.
+
 ## Result
 
-This block maps the six current `production_dynamics_needed` rows from the
+This block maps the seven current `production_dynamics_needed` rows from the
 post-record evidence-ladder row bucketing.
 
 It is read-only. It does not edit audit data, apply verdicts, promote any row,
@@ -23,16 +35,18 @@ On the current ledger snapshot:
 | Production-dynamics lane | Rows |
 |---|---:|
 | `boundary_phase_finite_scan` | 1 |
+| `conditional_shared_coupling_template` | 1 |
 | `persistent_object_readout_kernel` | 2 |
 | `persistent_record_production_overlap` | 3 |
 
-Total: `6` rows.
+Total: `7` rows.
 
 ## Row map
 
 | Claim id | Lane | Supplied bridges still needed for unbounded or physical-dynamics motion |
 |---|---|---|
 | `chiral_3plus1d_boundary_phase_note` | `boundary_phase_finite_scan` | boundary-condition bridge; finite-size or continuum bridge; propagation-mode or transfer bridge; orientation or clock bridge if the claim is made time-directed |
+| `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | `conditional_shared_coupling_template` | continuous energy/action context bridge; local potential/stiffness bridge; mass-scale or discrete mass-extraction bridge; gravitational source/coupling bridge |
 | `persistent_object_adaptive_readout_note` | `persistent_object_readout_kernel` | source-object formation bridge; detector readout or instrument bridge; kernel normalization bridge; scale or generalization bridge |
 | `persistent_object_readout_localization_note` | `persistent_object_readout_kernel` | source-object formation bridge; detector readout or instrument bridge; kernel normalization bridge; scale or generalization bridge |
 | `persistent_record_matched_compare_note` | `persistent_record_production_overlap` | record-writing law bridge; persistence or preservation bridge; overlap-kernel physical bridge; production-time or barrier bridge; comparison-baseline bridge |

@@ -42,11 +42,11 @@ GENERATION_KOIDE_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "bounded_obstruction_or_no_selection": 18,
+    "bounded_obstruction_or_no_selection": 19,
     "flow_or_records_stable_feature": 3,
     "generation_or_koide_stable_feature": 4,
-    "generic_stable_feature": 14,
-    "thermal_or_score_stable_feature": 19,
+    "generic_stable_feature": 24,
+    "thermal_or_score_stable_feature": 24,
 }
 EXPECTED_FLOW_THERMAL_ROWS = sum(EXPECTED_LANE_COUNTS.values())
 

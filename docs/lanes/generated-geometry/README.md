@@ -2,6 +2,17 @@
 
 **Status:** historical bounded family plus current staggered reopen
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** lane index / navigation surface only. This
+README groups generated-geometry source rows and runner entry points; it does
+not add a standalone scientific theorem, proof, or bounded computation beyond
+the cited source notes.
+
+This file may be cited for navigation and lane scope. It may not be cited as a
+retained bounded theorem or as authority for the underlying generated-geometry
+science; cite the audited source notes and runners directly.
+
 ## Covers
 
 - Gate B / grown-family / generated-geometry transfer program

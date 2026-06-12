@@ -8,6 +8,21 @@ after independent review.
 **Primary runner:** [`scripts/frontier_pmns_tm2_column_site_basis_kcpt_predicate.py`](../scripts/frontier_pmns_tm2_column_site_basis_kcpt_predicate.py)
 **Runner cache:** [`logs/runner-cache/frontier_pmns_tm2_column_site_basis_kcpt_predicate.txt`](../logs/runner-cache/frontier_pmns_tm2_column_site_basis_kcpt_predicate.txt)
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** finite `C3` algebra support plus
+site-basis naming boundary. The runner verifies the displayed projectors,
+conjugation action, degeneracies, and controls, but the load-bearing
+identification of the prior `K`-reality residual with site-basis K/CPT
+conjugation is introduced as the chosen predicate rather than derived from an
+independent retained K/CPT bridge.
+
+This note may be cited for the checked finite algebra and for the explicit
+site-basis predicate boundary. It may not be cited as a retained derivation that
+the realized neutrino monitor is forced `K`-real, that the predicate is derived
+unconditionally from baseline axioms, or that PMNS angles beyond the TM2 column
+are selected.
+
 ## Summary
 
 The trimaximal PMNS column `|U_x|² = 1/3` is the recorded `C₃`-singlet central sector

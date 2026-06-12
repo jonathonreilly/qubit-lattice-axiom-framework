@@ -1,0 +1,18 @@
+loop: koide-q-abstract-carrier-scope-20260612
+status: ready_for_review
+current_goal: "Repair the Koide Q selector conditional by making the load-bearing theorem abstract rather than dependent on the open staggered-Dirac carrier gate."
+target_claim_id: koide_q_minimal_scale_free_selector_note_2026-04-22
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md
+  - scripts/frontier_koide_q_minimal_scale_free_selector.py
+  - logs/runner-cache/frontier_koide_q_minimal_scale_free_selector.txt
+open_imports:
+  - "Physical identification with the staggered-Dirac second-order returned mass carrier remains open context."
+  - "Physical Koide value-law selection remains open."
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_koide_q_minimal_scale_free_selector.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_q_minimal_scale_free_selector.py --force --concurrency 1 --push-mode none --allow-non-main"
+runner_result: "TOTAL: PASS=13 FAIL=0"

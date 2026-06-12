@@ -49,6 +49,8 @@ def check_note_scope() -> None:
         "does not approve",
         "transport source for that coupling-power magnitude on the current baseline: open",
         "does not claim that every possible future mechanism is closed",
+        "mean-field link-feedback candidate is also pruned",
+        "Surviving routes run through beyond-mean-field link fluctuations",
     ]
     forbidden = [
         "Generated" + " with",
@@ -112,12 +114,45 @@ def check_delta_zero_scope() -> None:
     check("no extra-dimensional tower is supplied by this runner", delta == 0)
 
 
+def check_feedback_route_pruning() -> None:
+    section("Feedback route pruning")
+    text = read_note()
+    flat = " ".join(text.split())
+    plaquette = sp.Rational(2967, 5000)
+    alpha_bare = 1 / (4 * sp.pi)
+    alpha_s = alpha_bare / sp.sqrt(plaquette)
+    required_rdet = sp.sqrt(1 / alpha_s)
+    check(
+        "alpha_s target remains 0.1033038",
+        abs(float(alpha_s) - 0.1033038) < 5e-7,
+        f"{float(alpha_s):.7f}",
+    )
+    check(
+        "if R = alpha_s, determinant-share ratio must exceed 3, not an O(1)-near-1 saddle shift",
+        float(required_rdet) > 3.0,
+        f"required R_det = alpha_s^(-1/2) = {float(required_rdet):.6f}",
+    )
+    check(
+        "note records Block04 mean-field feedback pruning without claiming closure",
+        "ordinary mean-field link un-freezing is refuted as the supplier" in flat
+        and "gate unchanged, still open" in flat
+        and "context-only route pruning" in flat,
+    )
+    check(
+        "note leaves three surviving route families after mean-field pruning",
+        "exact one-link Haar integrals" in flat
+        and "Green-kernel" in flat
+        and "non-link transport rule" in flat,
+    )
+
+
 def main() -> int:
     check_note_scope()
     check_coupling_power()
     check_geometric_progression()
     check_block_observable_symbols()
     check_delta_zero_scope()
+    check_feedback_route_pruning()
     print()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:

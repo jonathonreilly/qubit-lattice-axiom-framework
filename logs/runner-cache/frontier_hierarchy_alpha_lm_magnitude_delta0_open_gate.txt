@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py
-runner_sha256: 91634a73bfd9a9c42cd52136793f2a4e3867b8d82c0ea3c156b1b3c523748e18
+runner_sha256: f94a7772e1d2b24de4ebfbe5522da2fc2b2a3864f904082d485cb0be6a8d6a0c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 
@@ -15,6 +15,8 @@ Note scope
 [PASS] note contains marker: does not approve
 [PASS] note contains marker: transport source for that coupling-power magnitude on the current baseline: open
 [PASS] note contains marker: does not claim that every possible future mechanism is closed
+[PASS] note contains marker: mean-field link-feedback candidate is also pruned
+[PASS] note contains marker: Surviving routes run through beyond-mean-field link fluctuations
 [PASS] note omits non-native marker: Generated with
 [PASS] note omits non-native marker: source-note proposal only
 [PASS] note omits non-native marker: actual_current_surface_status
@@ -53,7 +55,15 @@ Delta-zero scope
 [PASS] current baseline scope records delta = 0
 [PASS] no extra-dimensional tower is supplied by this runner
 
-TOTAL: PASS=26 FAIL=0
+================================================================================
+Feedback route pruning
+================================================================================
+[PASS] alpha_s target remains 0.1033038  --  0.1033038
+[PASS] if R = alpha_s, determinant-share ratio must exceed 3, not an O(1)-near-1 saddle shift  --  required R_det = alpha_s^(-1/2) = 3.111299
+[PASS] note records Block04 mean-field feedback pruning without claiming closure
+[PASS] note leaves three surviving route families after mean-field pruning
+
+TOTAL: PASS=32 FAIL=0
 VERDICT: hierarchy alpha_LM magnitude delta-zero open-gate checks pass.
 
 ----- stderr -----

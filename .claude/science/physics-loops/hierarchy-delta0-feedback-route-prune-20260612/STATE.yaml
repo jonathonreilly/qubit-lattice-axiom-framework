@@ -1,0 +1,19 @@
+loop: hierarchy-delta0-feedback-route-prune-20260612
+branch: physics-loop/hierarchy-delta0-feedback-route-prune-20260612
+base: origin/main
+base_head: 274c2637d
+target_claim_id: hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30
+actual_current_surface_status: open
+conditional_surface_status: "alpha_LM^16 magnitude still needs a baseline-native transport rule or explicit alpha_bare dependence"
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+artifact_role: no_go
+files_touched:
+  - docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md
+  - scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py
+  - logs/runner-cache/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.txt
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py => PASS=32 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py --allow-non-main => ok 1, nonzero_exit 0"
+pr_status: pending
+next_exact_action: "Open review PR."

@@ -1,13 +1,15 @@
-# Period Scaling of the Record-Conditional U(1) Law (L=3 → L=4): Seed-Robust Fixed-k Monotonicity at the Larger Period; Null-Cleared Gaps Comparable-or-Larger
+# Period Scaling of the Record-Conditional U(1) Law (L=3 -> L=4): Seed-Robust Fixed-k Monotonicity at the Larger Period; Fixed-Sample Null Gaps Comparable-or-Larger
 
 **Date:** 2026-06-11
 **Type:** bounded theorem (period-scaling source proposal for PR #3554's named object; panel-corrected)
 **Claim type:** bounded_theorem
 **Script:** `scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py`
 **Cache:** `logs/runner-cache/frontier_record_conditional_law_period_scaling_2026_06_11.txt`
-**Status:** source proposal; the audit lane grades. Runner `PASS=14 FAIL=0` — exact,
-deterministic, no MC. A mandatory 4-lens adversarial panel (memory-safe re-run after the
-first panel OOMed — see the runner's memory-discipline block) returned `land_with_edits`;
+**Status:** source proposal; the audit lane grades. Runner `PASS=16 FAIL=0` checks exact
+finite-tree evolution plus a fixed 300-permutation deterministic sampled-null certificate.
+It is not an exhaustive permutation-null p95 certificate. A mandatory
+4-lens adversarial panel (memory-safe re-run after the first panel OOMed - see the
+runner's memory-discipline block) returned `land_with_edits`;
 **all edits applied** — the decisive one kills the draft's "roughly doubles" headline by
 **baseline fairness** and re-anchors on the seed-robust positive.
 
@@ -16,19 +18,19 @@ first panel OOMed — see the runner's memory-discipline block) returned `land_w
 #3554 defined the fixed-prefix-`k` conditional law and recorded a first negative datum at
 the 3-ring (a stalled fixed-k profile). The draft of this note claimed the gap "roughly
 doubles" at L=4 and called the stall "a small-period artifact." **The panel refuted both
-by recomputing #3554's *other* null-cleared L=3 event** (seed 99/depth 7: gap `+0.190`,
+by recomputing #3554's *other* fixed-sample-null L=3 event** (seed 99/depth 7: gap `+0.190`,
 **monotone**): the honest L=3 baseline is a **set**, `{+0.088 (stalled), +0.190
 (monotone)}` — so the stall was **event-specific, not a period property**, and the gap
 comparison is overlap, not doubling. Both events are now recomputed **in-runner**.
 
-## The findings (exact — runner `PASS=14 FAIL=0`)
+## The findings (runner `PASS=16 FAIL=0`)
 
-**(F1) The L=3 baseline as a set** (both #3554 null-cleared events, in-runner):
+**(F1) The L=3 baseline as a set** (both #3554 fixed-sample-null events, in-runner):
 seed 4242/d9: gap `+0.088`, profile **stalled** (`0.557/0.557/0.598`); seed 99/d7: gap
 `+0.190`, profile **monotone** (`0.347/0.502/0.695`).
 
 **(F2) L=4 (12 modes, 4096-dim Fock; sparse machinery; three seeds, most-spread rows):**
-every seed **clears its permutation null** and every fixed-k profile is **monotone**.
+every seed **clears its fixed 300-permutation sampled null** and every fixed-k profile is **monotone**.
 The canonical runner also checks the robustness extension: **7/7 tested `K=7` seeds**
 and a `K=6` **half-filling control** (3/3), killing the filling confound:
 
@@ -38,13 +40,34 @@ seed 4242  d9: profile 0.609/0.638/0.690 | gap +0.217
 seed 99    d8: profile 0.597/0.665/0.784 | gap +0.076
 ```
 
-**(F3) The verdict, panel-corrected.** The L=4 gaps are **comparable-or-larger** than
-the L=3 set (ranges overlap — worst L=4 `+0.076` sits below best L=3 `+0.190`; median
-ratio `1.40×`, **not doubled**; magnitudes instance/seed-labeled). **The load-bearing
+**(F3) The verdict, panel-corrected.** The L=4 fixed-sample gaps are **comparable-or-larger** than
+the L=3 set (ranges overlap - worst L=4 `+0.076` sits below best L=3 `+0.190`; median
+ratio `1.40x`, **not doubled**; magnitudes instance/seed-labeled). **The load-bearing
 positive is seed-robust fixed-k monotonicity at the larger period** — every L=4 seed
 tested in-runner, robust to the filling control — *consistent with, but not establishing,*
 strengthening with the period (monotonicity at L=3 was event-specific). A two-point
 trend in the period, labeled as such.
+
+## 2026-06-12 sampled-null scope repair
+
+The permutation-null statistic in this source packet is a fixed, seeded,
+300-permutation sampled-null p95 computed by the runner:
+
+```text
+null_p95(Theta, w, kpref=3, n_draws=300, seed=7777).
+```
+
+This is a deterministic source-packet certificate for the named finite samples
+and seeds. It does not claim an exhaustive permutation-null p95, a certified
+finite-sample upper confidence bound, or a Monte-Carlo-free null theorem. The
+bounded positive retained for re-audit is therefore only:
+
+```text
+For the stated L=3/L=4 events, occupancies, seeds, depth choices, and fixed
+300-permutation sampled-null protocol, the L=4 tested profiles are monotone
+and their sampled-null gaps are comparable-or-larger by the displayed median
+comparison.
+```
 
 ## What this does and does not claim
 

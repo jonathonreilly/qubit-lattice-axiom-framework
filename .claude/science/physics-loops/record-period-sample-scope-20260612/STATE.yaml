@@ -1,0 +1,17 @@
+loop_id: record-period-sample-scope-20260612
+status: packaged_for_review
+created: 2026-06-12
+target_claim_id: record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11
+target_prior_audit_status: audited_conditional
+source_note: docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md
+runner: scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py
+runner_cache: logs/runner-cache/frontier_record_conditional_law_period_scaling_2026_06_11.txt
+audit_blocker: "scope_too_broad: either narrow the null-cleared/no-MC language to the fixed 300-permutation deterministic sample or add an exact/certified permutation-null p95 computation, then re-audit."
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/record-period-sample-scope-20260612
+pr_url: null
+next_exact_action: "Reviewer should confirm the sampled-null scope narrowing and re-audit the row; no audit ledger status is changed by this branch."

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Finite-period scaling of the record-conditional U(1) law (L = 3 -> 4): SEED-ROBUST
 fixed-k monotonicity at the larger period (every tested L=4 seed monotone +
-null-clearing; canonical runner checks 7/7 K=7 seeds and a 3/3 half-filling control),
-with null-cleared gaps
-COMPARABLE-OR-LARGER than the L=3 set (ranges overlap; median ~1.4x, NOT doubled --
-panel-corrected against the full L=3 baseline set).
+fixed 300-permutation sampled-null clearing; canonical runner checks 7/7 K=7 seeds
+and a 3/3 half-filling control), with sampled-null gaps COMPARABLE-OR-LARGER than
+the L=3 set (ranges overlap; median ~1.4x, NOT doubled -- panel-corrected against
+the full L=3 baseline set).
 
-Class-A exact verification for the source note
+Finite deterministic source-packet verification for the source note
 
     docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md
 
@@ -19,18 +19,19 @@ the identical machinery at L = 4 (12 modes, 4096-dim Fock -- the largest exactly
 treatable ring), three L=4 seeds, with the L = 3 baseline RECOMPUTED IN-RUNNER so
 the comparison is self-contained.
 
-THE FINDINGS (exact; finite horizon; two periods -- a TWO-POINT trend, labeled as such;
-PANEL-CORRECTED against the FULL L=3 baseline set):
-  (F1) L = 3 BASELINE AS A SET (both #3554 null-cleared events recomputed in-runner):
+THE FINDINGS (exact finite-tree evolution; fixed 300-permutation sampled-null p95;
+finite horizon; two periods -- a TWO-POINT trend, labeled as such; PANEL-CORRECTED
+against the FULL L=3 baseline set):
+  (F1) L = 3 BASELINE AS A SET (both #3554 sampled-null-positive events recomputed in-runner):
        seed 4242/depth 9: gap +0.088, fixed-k STALLED (0.557/0.557/0.598); seed
        99/depth 7: gap +0.190, MONOTONE (0.347/0.502/0.695).  The stall is therefore
        EVENT/SEED-specific at L=3, not a period property.
   (F2) L = 4, THREE SEEDS (most-spread rows, depth <= 9): every seed clears its
-       permutation null (gaps +0.193 / +0.217 / +0.076) and every fixed-k profile is
-       MONOTONE in k.  The canonical runner also checks the robustness extension:
+       fixed 300-permutation sampled null (gaps +0.193 / +0.217 / +0.076) and every
+       fixed-k profile is MONOTONE in k.  The canonical runner also checks the robustness extension:
        7/7 tested K=7 seeds and a K=6 half-filling control (3/3).  Seed-robust
        monotonicity at the larger period is the positive fact.
-  (F3) THE SCALING VERDICT (honest, panel-corrected): the L=4 null-cleared gaps are
+  (F3) THE SCALING VERDICT (honest, panel-corrected): the L=4 sampled-null gaps are
        COMPARABLE-OR-LARGER than the L=3 set (ranges overlap: worst L=4 +0.076 sits
        below best L=3 +0.190; median ratio ~1.4x, NOT doubled); the load-bearing
        positive is the SEED-ROBUST L=4 monotonicity -- consistent with, but NOT
@@ -38,9 +39,10 @@ PANEL-CORRECTED against the FULL L=3 baseline set):
        period law, convergence/concentration, any CLT premise, L >= 5 or Z^3 behavior
        (rings only -- geometry disclosed); all magnitudes instance/seed-labeled.
 
-Machinery and guards inherited from #3554/#3507 (exact Born-weighted outcome tree, no
-MC; SVD polar; rank guards; the label-permutation null armed at every gated event; the
-no-prune parent-alignment guard).  Conditionality inherited: the Born derived-chain cap
+Machinery and guards inherited from #3554/#3507 (exact Born-weighted outcome tree;
+fixed 300-permutation seeded sampled-null p95; SVD polar; rank guards; the
+label-permutation sampled-null test armed at every gated event; the no-prune
+parent-alignment guard).  Conditionality inherited: the Born derived-chain cap
 (assembly note UNAUDITED on the live ledger at the prior landing; statuses volatile --
 the audit lane grades); named instruments (eps = 0.6 supplied); supplied C^3 carrier;
 named hopping (tau = 0.35); guarded full-rank domain.  Discrete-time (retained R1
@@ -55,6 +57,7 @@ from __future__ import annotations
 import numpy as np
 import scipy.sparse as sp
 from scipy.linalg import expm
+from pathlib import Path
 
 # MEMORY DISCIPLINE (owner-enforced after a panel OOM): the dense-operator build held
 # ~24 x 268 MB = ~10 GB per process at L=4, and a 4-agent panel multiplied that to an
@@ -67,6 +70,9 @@ from scipy.linalg import expm
 
 PASS = 0
 FAIL = 0
+NOTE = Path(__file__).resolve().parents[1] / "docs" / (
+    "RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md"
+)
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -162,6 +168,7 @@ def prefix(Theta, w, kpref, lbl=None):
 
 
 def null_p95(Theta, w, kpref, n_draws=300, seed=7777):
+    """Seeded sampled-null p95, not exhaustive permutation enumeration."""
     r = np.random.default_rng(seed)
     B = len(w)
     base = np.arange(B) % (2 ** kpref)
@@ -222,23 +229,23 @@ g3, Th3, w3 = rows3[9]
 p2_3, p3_3, p4_3 = prefix(Th3, w3, 2), prefix(Th3, w3, 3), prefix(Th3, w3, 4)
 n3 = null_p95(Th3, w3, 3)
 gap_a = p3_3 - n3
-check("L=3 event A (seed 4242/depth 9, the #3554 event): clears the null with gap "
-      "~ +0.09 and the fixed-k profile STALLS",
+check("L=3 event A (seed 4242/depth 9, the #3554 event): clears the sampled null with gap "
+      "~ +0.09 against the fixed 300-permutation sampled null and the fixed-k profile STALLS",
       p3_3 > n3 and abs(p2_3 - p3_3) < 0.02,
-      f"global {g3:.3f}; profile {p2_3:.3f}/{p3_3:.3f}/{p4_3:.3f}; null p95 {n3:.3f}; "
+      f"global {g3:.3f}; profile {p2_3:.3f}/{p3_3:.3f}/{p4_3:.3f}; sampled-null p95 {n3:.3f}; "
       f"gap {gap_a:+.3f}")
-# PANEL EDIT (baseline-fairness): the SECOND #3554 null-cleared event joins the baseline
+# PANEL EDIT (baseline-fairness): the SECOND #3554 sampled-null-positive event joins the baseline
 most99, rows99, sv99 = scan(env3, 99, 11, 5)
 check("L=3 rank guard (seed 99)", sv99 > RANK_TOL, f"worst min-sv {sv99:.4f}")
 g9, Th9, w9 = rows99[7]
 p2_9, p3_9, p4_9 = prefix(Th9, w9, 2), prefix(Th9, w9, 3), prefix(Th9, w9, 4)
 n9 = null_p95(Th9, w9, 3)
 gap_b = p3_9 - n9
-check("L=3 event B (seed 99/depth 7, #3554's other null-cleared event): clears the "
-      "null with gap ~ +0.19 and is MONOTONE -- the stall is EVENT-specific at L=3, "
-      "not a period property (panel-decisive correction)",
+check("L=3 event B (seed 99/depth 7, #3554's other sampled-null-positive event): clears "
+      "the fixed 300-permutation sampled null with gap ~ +0.19 and is MONOTONE -- the "
+      "stall is EVENT-specific at L=3, not a period property (panel-decisive correction)",
       p3_9 > n9 and p2_9 < p3_9 < p4_9,
-      f"global {g9:.3f}; profile {p2_9:.3f}/{p3_9:.3f}/{p4_9:.3f}; null p95 {n9:.3f}; "
+      f"global {g9:.3f}; profile {p2_9:.3f}/{p3_9:.3f}/{p4_9:.3f}; sampled-null p95 {n9:.3f}; "
       f"gap {gap_b:+.3f}")
 gap3_set = [gap_a, gap_b]
 
@@ -260,10 +267,10 @@ for seed in (1, 4242, 99):
     monotone_all = monotone_all and mono
     l4_k7[seed] = {"clears": p3 > nl, "mono": mono, "gap": p3 - nl}
     check(f"L=4 seed {seed}: at the most-spread row (depth {n}) the record prefix-3 "
-          f"CLEARS the permutation null and the fixed-k profile is MONOTONE in k "
+          f"CLEARS the fixed 300-permutation sampled null and the fixed-k profile is MONOTONE in k "
           f"(no stall)",
           p3 > nl and mono,
-          f"global {g1:.3f}; profile {p2:.3f}/{p3:.3f}/{p4:.3f}; null p95 {nl:.3f}; "
+          f"global {g1:.3f}; profile {p2:.3f}/{p3:.3f}/{p4:.3f}; sampled-null p95 {nl:.3f}; "
           f"gap {p3 - nl:+.3f}")
 
 # ===========================================================================
@@ -278,12 +285,12 @@ for seed in (2026, 314, 7, 555):
     mono = p2 < p3 < p4
     l4_k7[seed] = {"clears": p3 > nl, "mono": mono, "gap": p3 - nl}
     print(f"   K=7 extension seed {seed}: depth {n}, global {g1:.3f}, "
-          f"profile {p2:.3f}/{p3:.3f}/{p4:.3f}, null p95 {nl:.3f}, "
-          f"gap {p3 - nl:+.3f}, clears_null={p3 > nl}, monotone={mono}, "
+          f"profile {p2:.3f}/{p3:.3f}/{p4:.3f}, sampled-null p95 {nl:.3f}, "
+          f"gap {p3 - nl:+.3f}, clears_sampled_null={p3 > nl}, monotone={mono}, "
           f"rank_sv={sv4:.4f}")
 k7_seeds = (1, 4242, 99, 2026, 314, 7, 555)
-check("K=7 robustness extension: all seven tested L=4 seeds clear the null and have "
-      "monotone fixed-k profiles",
+check("K=7 robustness extension: all seven tested L=4 seeds clear the fixed sampled null "
+      "and have monotone fixed-k profiles",
       all(l4_k7[s]["clears"] and l4_k7[s]["mono"] for s in k7_seeds),
       "gaps " + ", ".join(f"{s}:{l4_k7[s]['gap']:+.3f}" for s in k7_seeds))
 
@@ -296,11 +303,11 @@ for seed in (1, 99, 2026):
     mono = p2 < p3 < p4
     k6[seed] = {"clears": p3 > nl, "mono": mono, "gap": p3 - nl}
     print(f"   K=6 half-filling seed {seed}: depth {n}, global {g1:.3f}, "
-          f"profile {p2:.3f}/{p3:.3f}/{p4:.3f}, null p95 {nl:.3f}, "
-          f"gap {p3 - nl:+.3f}, clears_null={p3 > nl}, monotone={mono}, "
+          f"profile {p2:.3f}/{p3:.3f}/{p4:.3f}, sampled-null p95 {nl:.3f}, "
+          f"gap {p3 - nl:+.3f}, clears_sampled_null={p3 > nl}, monotone={mono}, "
           f"rank_sv={sv4:.4f}")
 check("K=6 half-filling control: all three tested L=4 half-filling seeds clear the "
-      "null and have monotone fixed-k profiles",
+      "fixed sampled null and have monotone fixed-k profiles",
       all(k6[s]["clears"] and k6[s]["mono"] for s in k6),
       "gaps " + ", ".join(f"{s}:{k6[s]['gap']:+.3f}" for s in k6))
 
@@ -308,7 +315,7 @@ check("K=6 half-filling control: all three tested L=4 half-filling seeds clear t
 print("=" * 78)
 print("Part 4  the two-point scaling verdict (labeled as such)")
 print("=" * 78)
-check("the L=4 null-cleared gaps are COMPARABLE-OR-LARGER than the L=3 SET "
+check("the L=4 fixed-sample sampled-null gaps are COMPARABLE-OR-LARGER than the L=3 SET "
       "(panel-corrected fairness: the L=3 baseline is BOTH #3554 events; ranges "
       "overlap -- worst L=4 below best L=3; median ratio ~1.4x, NOT doubled; "
       "magnitudes instance/seed-labeled)",
@@ -325,6 +332,18 @@ check("THE LOAD-BEARING POSITIVE: the fixed-k profile is MONOTONE at the most-sp
       and all(l4_k7[s]["clears"] and l4_k7[s]["mono"] for s in k7_seeds)
       and all(k6[s]["clears"] and k6[s]["mono"] for s in k6))
 
+note_text = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
+check(
+    "source note declares fixed 300-permutation sampled-null scope",
+    "fixed 300-permutation deterministic sampled-null certificate" in note_text
+    and "not an exhaustive permutation-null p95 certificate" in note_text,
+)
+check(
+    "source note forbids exhaustive or MC-free null theorem",
+    "does not claim an exhaustive permutation-null p95" in note_text
+    and "Monte-Carlo-free null theorem" in note_text,
+)
+
 # ===========================================================================
 print("=" * 78)
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
@@ -332,7 +351,7 @@ print("=" * 78)
 print("SCOPE: scales #3554's named object (the fixed-prefix-k conditional law) from")
 print("  L=3 to L=4 (rings; Z^3 untested -- geometry disclosed; two periods = a")
 print("  two-point trend, labeled).  PANEL-CORRECTED FINDINGS: the L=3 baseline is the")
-print("  SET of both #3554 null-cleared events ({+0.088 stalled, +0.190 monotone} --")
+print("  SET of both #3554 sampled-null-positive events ({+0.088 stalled, +0.190 monotone} --")
 print("  the stall is event-specific, not a period property); the L=4 gaps are")
 print("  COMPARABLE-OR-LARGER (ranges overlap; median ~1.4x, not doubled).  THE")
 print("  LOAD-BEARING POSITIVE: seed-robust fixed-k MONOTONICITY at L=4 (7/7 K=7")
@@ -340,9 +359,11 @@ print("  seeds + a 3/3 half-filling control in-runner) -- consistent with, not")
 print("  establishing, strengthening with the period.  NOT claimed: gap growth as a")
 print("  period law, concentration in the large-period limit, any CLT premise,")
 print("  L>=5/Z^3 behavior, or gap universality (instance/seed-labeled).  Guards")
-print("  inherited (#3554/#3507: exact tree, no MC, SVD polar, rank/no-prune, the")
-print("  permutation null armed at every gated event).  Born cap inherited (audit lane")
-print("  grades).  The U(1) factor is NOT identified with a physical gauge field.")
+print("  inherited (#3554/#3507: exact tree, fixed 300-permutation sampled-null p95,")
+print("  SVD polar, rank/no-prune, the sampled-null test armed at every gated event).")
+print("  No exhaustive permutation-null p95 or MC-free null theorem is claimed.")
+print("  Born cap inherited (audit lane grades).  The U(1) factor is NOT identified")
+print("  with a physical gauge field.")
 print("  Discrete-time (retained R1 boundaries untouched).  No new axiom/primitive/")
 print("  measure/weight; r untouched.")
 if FAIL:

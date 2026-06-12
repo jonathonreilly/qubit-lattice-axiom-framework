@@ -298,6 +298,36 @@ load-bearing physical-identification bridge in the auditor's
 supplier chains is itself audited at retained-grade and the
 composition is independently judged to close the bridge.
 
+### 8.2 2026-06-12 bridge-state obstruction repair
+
+The companion
+[`KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md`](KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md)
+records the current source-side state of the audit-named missing bridge.
+It does **not** promote this row. It proves a narrower boundary: on the
+current retained surface, the two-slot reduced scalar carrier is a
+coarse-grained readout of the retained finite `C3` generation data, not the
+retained physical charged-lepton carrier itself. The current Record/Quantum
+axioms do not supply the missing readout context, the cited real-D uniqueness
+theorem starts after its block-family class is supplied, the readout
+factorization theorem keeps admissibility-implies-constancy conditional, and
+the selector theorem starts after the second-order carrier is admitted.
+
+It also records the normalization boundary:
+
+```text
+log det(D + J) - log det(D)
+  = log(1 + j_+/d_+) + log(1 + j_perp/d_perp)
+```
+
+for any positive diagonal reduced baseline `D = diag(d_+, d_perp)`. Thus
+`D_red = I_2` is canonical after normalized source coordinates are supplied,
+but its physical source-unit meaning still needs a separate readout theorem.
+
+This repair sharpens the parent row's honest scope. The exact determinant
+restriction in Sections 1-4 remains valid support; the physical
+carrier/readout and absolute baseline-normalization bridge remains open
+rather than silently imported.
+
 ## 9. Boundaries
 
 This note does **not**:
@@ -321,3 +351,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   row until a one-way bridge lemma is extracted)
 - [koide_q_readout_factorization_theorem_2026-04-22](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
 - [koide_q_minimal_scale_free_selector_note_2026-04-22](KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md)
+- [koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12](KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md)

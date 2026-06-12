@@ -56,8 +56,12 @@ def main() -> int:
     op_text = read_doc("OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md")
     audit(
         "OP Theorem 1 — unique additive CPT-even scalar generator clause",
-        "unique additive" in op_text,
-        "OP T1 uniqueness clause present on disk (substring 'unique additive')",
+        (
+            "additive continuous scalar generator family" in op_text
+            and "W = log|det(D+J)|" in op_text
+            and "Cauchy uniqueness" in op_text
+        ),
+        "OP T1 selected-generator chain present on disk",
     )
     audit(
         "OP Theorem 1 — multiplicative-to-additive functional equation",

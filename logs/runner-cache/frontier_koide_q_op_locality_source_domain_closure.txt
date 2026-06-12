@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_op_locality_source_domain_closure.py
-runner_sha256: 7bb107350b39352fe622a242117a34f71c2dc285663ae0010962fed5ef15e81f
+runner_sha256: 4b3c9e0101ead92e2271622134e27603726580aa3a8b51994f6464eac3172eb1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 ========================================================================
@@ -12,7 +12,7 @@ Koide Q OP-Locality Source-Domain structural support claim (V8)
 
 Section 1: retained authority audits
 ------------------------------------------------------------------------
-[PASS] OP Theorem 1 — unique additive CPT-even scalar generator clause — OP T1 uniqueness clause present on disk (substring 'unique additive')
+[PASS] OP Theorem 1 — unique additive CPT-even scalar generator clause — OP T1 selected-generator chain present on disk
 [PASS] OP Theorem 1 — multiplicative-to-additive functional equation — OP T1 functional-equation phrasing present
 [PASS] OP Theorem 2 — local scalar observables source-derivative clause — OP T2 source-derivative clause present
 [PASS] OP Theorem 2 — local projector basis P_x in source-domain — OP T2 names local projector basis P_x

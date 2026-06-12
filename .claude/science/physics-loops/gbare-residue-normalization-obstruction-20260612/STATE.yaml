@@ -21,6 +21,6 @@ closed_this_block:
 verification:
   - "python3 scripts/frontier_gbare_same_1pi_admitted_residue_repair.py => PASS=43 FAIL=0"
   - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_gbare_same_1pi_admitted_residue_repair.py --allow-non-main => ok 1, nonzero_exit 0"
-pr_status: pending
-next_exact_action: "Open review PR and hand to reviewer/auditor."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3719"
+next_exact_action: "Hand to reviewer/auditor; do not merge directly."
 stop_condition: "PR opened and verified."

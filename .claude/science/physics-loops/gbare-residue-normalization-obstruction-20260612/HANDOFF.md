@@ -2,6 +2,8 @@
 
 This PR repairs the audited-conditional `g_bare` same-1PI pinning row by making the missing bridge exact.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3719
+
 It adds an explicit residue-normalization multiplier `R(g_bare)` to the source note and runner. The proof shows:
 
 - with the extra H_unit-residue normalization `R(g_bare)=1`, the existing algebra pins `g_bare=1`;

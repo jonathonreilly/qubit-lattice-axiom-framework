@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 513,
     "high": 511,
-    "leaf": 1403,
-    "medium": 900
+    "leaf": 1402,
+    "medium": 901
   },
   "flagship_signal_used": false,
   "node_count": 3327,
@@ -91,8 +91,8 @@
     {
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
       "criticality": "critical",
-      "load_bearing_score": 38.84,
-      "transitive_descendants": 1295
+      "load_bearing_score": 38.839,
+      "transitive_descendants": 1294
     },
     {
       "claim_id": "yt_ward_identity_derivation_theorem",

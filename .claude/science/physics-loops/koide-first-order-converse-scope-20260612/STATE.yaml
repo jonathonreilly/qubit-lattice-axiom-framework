@@ -1,0 +1,28 @@
+loop: koide-first-order-converse-scope-20260612
+branch: physics-loop/koide-first-order-converse-scope-20260612
+base: origin/main@841da9948
+mode: run
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "remove the false C3/Gamma_chi converse and certify the native-family scope"
+hard_residual: "retained AC_phi_lambda to physical M(b) tensor sigma_+ coupling and r-weighting bridge"
+files_touched:
+  - docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md
+  - scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py
+  - logs/runner-cache/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.txt
+  - .claude/science/physics-loops/koide-first-order-converse-scope-20260612/
+verification:
+  - "python3 scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py -> 10 PASS, 0 FAIL"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py --force --concurrency 1 --push-mode none --allow-non-main -> ok 1"
+open_imports:
+  - "AC_phi_lambda corner realization has not been retained as the physical M(b) tensor sigma_+ coupling."
+  - "No retained bridge maps the algebraic L-R coupling to the physical r=1/2 weighting."
+no_go_routes:
+  - "Do not use commutes-with-Gamma_chi as a converse criterion for C3-equivariance outside the circulant generation-mass family."
+trace_gate_classification: partial direct blocker closure
+review_findings: []
+pr_status: pending
+next_exact_action: "commit, push, open review PR, then continue draining independent audited conditionals"
+stop_condition: "global conditional backlog exhausted or all remaining rows require new hard bridge science beyond this branch"

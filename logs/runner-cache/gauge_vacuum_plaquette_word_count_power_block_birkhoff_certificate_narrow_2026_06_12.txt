@@ -1,0 +1,147 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py
+runner_sha256: fae7d43d26bb5540fe114c73e02b92a0b7012ee6f86ae75643d038a29536daee
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.23
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette word-count power-block Birkhoff certificate
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+
+============================================================================================================
+Part 1: finite packet and reduced objects
+============================================================================================================
+word box size = 25
+D min = 2.275225312476e-05
+eta_inf min = 2.286765266123e-23
+L_eta min = 4.835123710222e-21
+fusion zero entries = 513 of 625
+W_eta zero entries = 513 of 625
+PASS: finite tensor-word box has 25 weights
+PASS: D diagonal dressing is positive
+PASS: eta_inf boundary is positive
+PASS: L_eta channel contraction is positive
+PASS: W_eta has the same support as N_f + N_fbar
+      positive diagonal dressing preserves the fusion support pattern
+
+============================================================================================================
+Part 2: 8-step power-block Birkhoff coefficient
+============================================================================================================
+support primitivity index of N_f + N_fbar = 8
+support primitivity index of W_eta = 8
+W_eta^8 min entry = 4.329820883601e-109
+W_eta^8 max entry = 4.979423517082e-01
+Delta(W_eta^8) = 28.757030483287707 from rows (0, 1) and (4, 4)
+kappa(W_eta^8) = tanh(Delta/4) = 0.999998861009974
+PASS: bare fusion support is positive after 8 ordinary steps
+PASS: dressed W_eta support is positive after 8 ordinary steps
+PASS: log-domain W_eta^8 matches ordinary multiplication on this finite packet
+      max_log_diff=2.842e-14
+PASS: W_eta^8 has finite Birkhoff projective diameter
+PASS: Birkhoff contraction coefficient is strictly less than one
+      kappa=0.999998861009974
+
+============================================================================================================
+Part 3: eigenvector-level Hilbert bracket for W_eta iterates
+============================================================================================================
+k= 0: d_H=1.204910340937e+02; floor_bound=1.204910340937e+02; kover8_bound=1.204911541771e+02
+k= 1: d_H=7.654883324335e+01; floor_bound=1.204910340937e+02; kover8_bound=1.204911370223e+02
+k= 8: d_H=3.380153321741e-02; floor_bound=1.204908968556e+02; kover8_bound=1.204910169389e+02
+k= 9: d_H=1.843405395709e-02; floor_bound=1.204908968556e+02; kover8_bound=1.204909997841e+02
+k=16: d_H=6.691519611479e-05; floor_bound=1.204907596176e+02; kover8_bound=1.204908797008e+02
+k=20: d_H=2.699693837371e-06; floor_bound=1.204907596176e+02; kover8_bound=1.204908110818e+02
+k=32: d_H=3.081326305221e-08; floor_bound=1.204904851423e+02; kover8_bound=1.204906052252e+02
+k=40: d_H=3.093563982759e-08; floor_bound=1.204903479048e+02; kover8_bound=1.204904679876e+02
+W_eta Perron eigenvalue = 9.314224553790e-01
+C_H_floor = 1.204910340937e+02
+C_H_kover8 for C_H*kappa^(k/8) = 1.204911541771e+02
+eigenvector bracket at k=9:  d_H <= 1.204909997841e+02
+eigenvector bracket at k=20: d_H <= 1.204908110818e+02
+PASS: initial Hilbert distance to W_eta Perron vector is finite
+PASS: k/8 Hilbert bracket holds for W_eta iterates through k=40
+      max_margin=-1.201e-04
+
+============================================================================================================
+Part 4: measured word-count ladder reproduction
+============================================================================================================
+PASS: k=2 reduced eta formula reproduces direct rho
+      max_diff=1.665e-16
+PASS: k=3 reduced eta formula reproduces direct rho
+      max_diff=4.352e-14
+finite-packet fundamental-pair source limit P_inf = 0.615191992185898
+k | P_k | |P_inf-P_k| | rho10 | rho11
+--------------------------------------------------------------------------------------------
+ 1 | 0.434215413260 | 1.809765789260e-01 | 3.785149223171e-01 | 1.710420190918e-01
+ 2 | 0.433061880380 | 1.821301118062e-01 | 3.398617060251e-01 | 1.623177773095e-01
+ 3 | 0.543142610051 | 7.204938213447e-02 | 6.888685671846e+00 | 1.622752884292e-01
+ 4 | 0.603630724651 | 1.156126753490e-02 | 4.145992661566e+01 | 1.622604346666e-01
+ 5 | 0.612857835719 | 2.334156466489e-03 | 1.839094499046e+02 | 1.622598183057e-01
+ 6 | 0.614633873361 | 5.581188248835e-04 | 7.437451313837e+02 | 1.622597999871e-01
+ 7 | 0.615050158856 | 1.418333299219e-04 | 2.900917483466e+03 | 1.622597994931e-01
+ 8 | 0.615155144956 | 3.684723022845e-05 | 1.114069285284e+04 | 1.622597994803e-01
+ 9 | 0.615182336693 | 9.655492899330e-06 | 4.248958621452e+04 | 1.622597994799e-01
+10 | 0.615189452932 | 2.539254029155e-06 | 1.615409363881e+05 | 1.622597994799e-01
+11 | 0.615191323349 | 6.688367297780e-07 | 6.132685532532e+05 | 1.622597994799e-01
+12 | 0.615191815890 | 1.762954563445e-07 | 2.326617383061e+06 | 1.622597994799e-01
+13 | 0.615191945702 | 4.648394880125e-08 | 8.823925430828e+06 | 1.622597994799e-01
+14 | 0.615191979928 | 1.225830437157e-08 | 3.346063089845e+07 | 1.622597994799e-01
+15 | 0.615191988953 | 3.232871748082e-09 | 1.268749742998e+08 | 1.622597994799e-01
+16 | 0.615191991333 | 8.526316319646e-10 | 4.810645923558e+08 | 1.622597994799e-01
+17 | 0.615191991961 | 2.248752295486e-10 | 1.823996404724e+09 | 1.622597994799e-01
+18 | 0.615191992127 | 5.930966828771e-11 | 6.915782210485e+09 | 1.622597994799e-01
+19 | 0.615191992170 | 1.564282037236e-11 | 2.622155220393e+10 | 1.622597994799e-01
+20 | 0.615191992182 | 4.126254893322e-12 | 9.941976948601e+10 | 1.622597994799e-01
+PASS: P_inf reproduces the finite-packet fundamental-pair source solve
+      P_inf=0.615191992185898
+PASS: measured k=1 anchor is reproduced
+      P1=0.434215413260
+PASS: measured k=2 anchor is reproduced
+      P2=0.433061880380
+PASS: measured k=3 anchor is reproduced
+      P3=0.543142610051
+PASS: measured k=9 error is finite and recorded
+      |P_inf-P9|=9.655492899330e-06
+PASS: measured k=20 error is finite and recorded
+      |P_inf-P20|=4.126254893322e-12
+
+============================================================================================================
+Part 5: propagation gate
+============================================================================================================
+source readout of W_eta Perron ratio = 0.434514936019
+k | measured P_k | W_eta-iterate source P | absolute mismatch
+--------------------------------------------------------------------------------------------
+ 1 | 0.434215413260 | 0.433714254539 | 5.011587208633e-04
+ 2 | 0.433061880380 | 0.435081878425 | 2.019998045356e-03
+ 3 | 0.543142610051 | 0.434279611600 | 1.088629984518e-01
+ 4 | 0.603630724651 | 0.434623278145 | 1.690074465058e-01
+ 5 | 0.612857835719 | 0.434466709763 | 1.783911259566e-01
+ 6 | 0.614633873361 | 0.434536694335 | 1.800971790265e-01
+ 7 | 0.615050158856 | 0.434505176854 | 1.805449820020e-01
+ 8 | 0.615155144956 | 0.434519324739 | 1.806358202167e-01
+ 9 | 0.615182336693 | 0.434512964717 | 1.806693719757e-01
+10 | 0.615189452932 | 0.434515821944 | 1.806736309877e-01
+15 | 0.615191988953 | 0.434514919792 | 1.806770691615e-01
+20 | 0.615191992182 | 0.434514936316 | 1.806770558659e-01
+max measured-vs-W_eta mismatch over k=1..20 = 1.806770900531e-01
+|P_inf(fundamental-pair) - P(W_eta Perron)| = 1.806770561673e-01
+PASS: power-block iterates are not the measured entrywise-power word-count ladder
+      the measured ladder uses K_k = C_k^(1/2) G^(entrywise k) C_k^(1/2)
+PASS: W_eta Perron readout is not the measured fundamental-pair P_inf target
+      limit_mismatch=1.807e-01
+PASS: no P_inf tail bracket is emitted without a denominator/source perturbation theorem for K_k
+      remaining target: control the entrywise-power channel denominator and source solve to the boundary support
+
+============================================================================================================
+Part 6: named residuals
+============================================================================================================
+Partial certificate: W_eta^8 is entrywise positive and has a finite computed Birkhoff coefficient. This certifies the eigenvector-level Hilbert bracket for ordinary W_eta iterates.
+Not certified here: a numerical B(k) for |P_inf - P_k| on the measured word-count ladder. The missing step is a finite-packet theorem that propagates the entrywise-power reduced Perron vector through the eta-weighted denominator and then through the source Perron solve.
+Named residuals: finite dominant-weight box; finite Bessel mode support; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.
+PASS: partial certificate names the remaining propagation target
+
+TOTAL: PASS=24, FAIL=0
+
+----- stderr -----
+

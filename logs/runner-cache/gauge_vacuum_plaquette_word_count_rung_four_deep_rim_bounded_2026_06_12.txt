@@ -1,0 +1,161 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_2026_06_12.py
+runner_sha256: 08cd35999b77a45630543279647c8c4006101e7579d4b4e0e4378d63ada683d6
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 7.65
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette word-count rung-four deep-rim bounded readout
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+
+========================================================================================================
+Part 1: finite packet and eta_inf setup
+========================================================================================================
+word box size = 25
+tensor-word Perron eigenvalue = 1.012369912748
+tensor-word Perron residual = 1.665334536938e-16
+eta_inf rho_min = 2.286765266123e-23
+PASS: 25-state tensor-word box is the requested finite packet
+PASS: eta_inf Perron residual is small
+      residual=1.665e-16
+PASS: eta_inf is positive on the finite tensor-word box
+      rho_min=2.287e-23
+
+========================================================================================================
+Part 2: Route A memory estimate and factor-wise matvec validation
+========================================================================================================
+k=4 dimension = 390625
+dense k=4 matrix bytes = 1.110 TiB
+one vector bytes = 2.980 MiB
+eigsh basis bytes at ncv=30 = 89.407 MiB
+diag bytes = 2.980 MiB
+middle bytes = 2.980 MiB
+materialized fusion kron nnz estimate = 157351936
+materialized fusion kron CSR rough bytes = 1.760 GiB
+PASS: factor-wise Kronecker matvec matches materialized k=2 control
+      max_diff=4.235e-22
+PASS: Route A avoids the materialized k=4 fusion Kronecker
+      rough_CSR=1.760 GiB
+
+========================================================================================================
+Part 3: Route B eta-weighted finite-rank derivation and k=2,3 gates
+========================================================================================================
+T_k = A_k C_k A_k^T
+C_k(mu,mu) = D_mu^k / d_mu^(k-1)
+nonzero spectrum from C_k^(1/2) G^(entrywise k) C_k^(1/2)
+G(mu,nu) = sum_w D_w^2 M(w,mu) M(w,nu)
+eta readout uses L_eta(mu) = sum_w eta_inf(w) D_w M(w,mu)
+S_eta,k(a) = D_a sum_mu b_mu M(a,mu) L_eta(mu)^(k-1)
+direct k=2 eig=0.156078513772, P=0.433061880380; route_b eig=0.156078513772, P=0.433061880380
+direct k=3 eig=0.045553399484, P=0.543142610051; route_b eig=0.045553399484, P=0.543142610051
+PASS: direct k=2 deep-rim gate reproduces the existing value
+      P2=0.433061880380, reference=0.433061880380
+PASS: direct k=3 deep-rim gate reproduces the existing value
+      P3=0.543142610051, reference=0.543142610051
+PASS: Route B reproduces direct k=2 eta-weighted rho
+      max_diff=1.665e-16
+PASS: Route B reproduces direct k=3 eta-weighted rho
+      max_diff=4.352e-14
+
+========================================================================================================
+Part 4: Route A direct k=4 solve and Route B cross-check
+========================================================================================================
+Route A k=4: dim=390625, eig=0.016255508920, matvec_calls=32, residual=1.735e-18, psi_min=-2.242e-44
+Route A k=4 readout: rho10=41.459926615660, rho11=0.162260434667, P=0.603630724651
+Route B k=4 readout: rho10=41.459926615661, rho11=0.162260434667, P=0.603630724651
+PASS: Route A k=4 direct eigsh residual is small
+      residual=1.735e-18
+PASS: Route A k=4 Perron vector is nonnegative up to tolerance
+      psi_min=-2.242e-44
+PASS: Route A and Route B k=4 eigenvalues agree
+      delta=3.469e-18
+PASS: Route A and Route B k=4 eta-weighted rho agree
+      max_diff=6.111e-13
+PASS: Route A and Route B k=4 composed P agree
+      delta=4.441e-16
+
+========================================================================================================
+Part 5: word-count table k=1..20
+========================================================================================================
+k | route | eigenvalue | rho10 | rho11 | rho_min | rho_max | P | increment
+----------------------------------------------------------------------------------------------------------------------------------------
+ 1 | one-word | 1.012369912748e+00 | 0.378514922317 | 0.171042019092 | 2.287e-23 | 1.000000000000e+00 | 0.434215413260 | n/a
+ 2 | route_b  | 1.560785137725e-01 | 0.339861706025 | 0.162317777309 | 4.167e-59 | 1.000000000000e+00 | 0.433061880380 | -0.001153532880
+ 3 | route_b  | 4.555339948442e-02 | 6.888685671846 | 0.162275288429 | 1.530e-95 | 6.888685671846e+00 | 0.543142610051 | +0.110080729672
+ 4 | route_b  | 1.625550891997e-02 | 41.459926615661 | 0.162260434667 | 3.525e-132 | 4.145992661566e+01 | 0.603630724651 | +0.060488114600
+ 5 | route_b  | 5.804215471004e-03 | 183.909449904561 | 0.162259818306 | 8.860e-169 | 1.839094499046e+02 | 0.612857835719 | +0.009227111068
+ 6 | route_b  | 2.072488037619e-03 | 743.745131383680 | 0.162259799987 | -0.000e+00 | 7.437451313837e+02 | 0.614633873361 | +0.001776037642
+ 7 | route_b  | 7.400152989660e-04 | 2900.917483465650 | 0.162259799493 | -0.000e+00 | 2.900917483466e+03 | 0.615050158856 | +0.000416285495
+ 8 | route_b  | 2.642344077319e-04 | 11140.692852837070 | 0.162259799480 | 1.794e-278 | 1.114069285284e+04 | 0.615155144956 | +0.000104986100
+ 9 | route_b  | 9.434916055731e-05 | 42489.586214521885 | 0.162259799480 | -0.000e+00 | 4.248958621452e+04 | 0.615182336693 | +0.000027191737
+10 | route_b  | 3.368889076332e-05 | 161540.936388086935 | 0.162259799480 | -0.000e+00 | 1.615409363881e+05 | 0.615189452932 | +0.000007116239
+11 | route_b  | 1.202916225390e-05 | 613268.553253235179 | 0.162259799480 | -0.000e+00 | 6.132685532532e+05 | 0.615191323349 | +0.000001870417
+12 | route_b  | 4.295206557773e-06 | 2326617.383061388042 | 0.162259799480 | -0.000e+00 | 2.326617383061e+06 | 0.615191815890 | +0.000000492541
+13 | route_b  | 1.533672834777e-06 | 8823925.430827725679 | 0.162259799480 | 0.000e+00 | 8.823925430828e+06 | 0.615191945702 | +0.000000129812
+14 | route_b  | 5.476226422397e-07 | 33460630.898450482637 | 0.162259799480 | 0.000e+00 | 3.346063089845e+07 | 0.615191979928 | +0.000000034226
+15 | route_b  | 1.955375041491e-07 | 126874974.299764677882 | 0.162259799480 | 0.000e+00 | 1.268749742998e+08 | 0.615191988953 | +0.000000009025
+16 | route_b  | 6.981982222739e-08 | 481064592.355801641941 | 0.162259799480 | 0.000e+00 | 4.810645923558e+08 | 0.615191991333 | +0.000000002380
+17 | route_b  | 2.493029455949e-08 | 1823996404.723642110825 | 0.162259799480 | 0.000e+00 | 1.823996404724e+09 | 0.615191991961 | +0.000000000628
+18 | route_b  | 8.901764097860e-09 | 6915782210.485126495361 | 0.162259799480 | 0.000e+00 | 6.915782210485e+09 | 0.615191992127 | +0.000000000166
+19 | route_b  | 3.178518563624e-09 | 26221552203.928749084473 | 0.162259799480 | 0.000e+00 | 2.622155220393e+10 | 0.615191992170 | +0.000000000044
+20 | route_b  | 1.134941360863e-09 | 99419769486.012619018555 | 0.162259799480 | 0.000e+00 | 9.941976948601e+10 | 0.615191992182 | +0.000000000012
+PASS: one-word row reproduces the existing deep-rim anchor
+      P1=0.434215413260, reference=0.434215413260
+PASS: word-count start is reported as non-monotone: P2 < P1 < P3
+      P1=0.434215413260, P2=0.433061880380, P3=0.543142610051
+PASS: Route B reports finite positive composed readouts through k=20
+PASS: P4 and P5 are finite bounded readouts
+      P4=0.603630724651, P5=0.612857835719
+
+========================================================================================================
+Part 6: empirical convergence diagnostics
+========================================================================================================
+P_k monotonicity over k=1..20: non-monotone
+increments P_{k+1}-P_k: -1.153532880268e-03 +1.100807296718e-01 +6.048811459958e-02 +9.227111068407e-03 +1.776037641605e-03 +4.162854949616e-04 +1.049860996934e-04 +2.719173732912e-05 +7.116238870175e-06 +1.870417299377e-06 +4.925412734336e-07 +1.298115075432e-07 +3.422564442968e-08 +9.025432623488e-09 +2.380240116118e-09 +6.277564024160e-10 +1.655655612609e-10 +4.366684791535e-11 +1.151656547904e-11
+absolute increment ratios: 9.542921e+01 5.494887e-01 1.525442e-01 1.924804e-01 2.343900e-01 2.521974e-01 2.590032e-01 2.617059e-01 2.628379e-01 2.633323e-01 2.635546e-01 2.636565e-01 2.637038e-01 2.637259e-01 2.637366e-01 2.637417e-01 2.637435e-01 2.637370e-01
+tail ratio window k=15..20: 2.637366e-01 2.637417e-01 2.637435e-01 2.637370e-01 mean=2.637397e-01
+empirical diagnosis: non-monotone start; after k=2 the displayed increments are positive and shrink rapidly. This is a finite-table diagnosis, not an analytic convergence proof.
+PASS: convergence diagnostics explicitly preserve the non-monotone start
+
+========================================================================================================
+Fenced comparator distances
+========================================================================================================
+Plaquette reuse license: comparison numbers below are admitted only as comparison/reuse numbers, not as derived values, fit targets, or repinning inputs.
+```text
+k=1: P = 0.434215413260; |P - P_loc_reference| = 0.018191745785; |P - P_triv_reference| = 0.011683673613; |P - 0.5934| = 0.159184586740
+k=2: P = 0.433061880380; |P - P_loc_reference| = 0.019345278665; |P - P_triv_reference| = 0.010530140733; |P - 0.5934| = 0.160338119620
+k=3: P = 0.543142610051; |P - P_loc_reference| = 0.090735451007; |P - P_triv_reference| = 0.120610870404; |P - 0.5934| = 0.050257389949
+k=4: P = 0.603630724651; |P - P_loc_reference| = 0.151223565606; |P - P_triv_reference| = 0.181098985004; |P - 0.5934| = 0.010230724651
+k=5: P = 0.612857835719; |P - P_loc_reference| = 0.160450676675; |P - P_triv_reference| = 0.190326096072; |P - 0.5934| = 0.019457835719
+k=6: P = 0.614633873361; |P - P_loc_reference| = 0.162226714316; |P - P_triv_reference| = 0.192102133714; |P - 0.5934| = 0.021233873361
+k=7: P = 0.615050158856; |P - P_loc_reference| = 0.162642999811; |P - P_triv_reference| = 0.192518419209; |P - 0.5934| = 0.021650158856
+k=8: P = 0.615155144956; |P - P_loc_reference| = 0.162747985911; |P - P_triv_reference| = 0.192623405309; |P - 0.5934| = 0.021755144956
+k=9: P = 0.615182336693; |P - P_loc_reference| = 0.162775177648; |P - P_triv_reference| = 0.192650597046; |P - 0.5934| = 0.021782336693
+k=10: P = 0.615189452932; |P - P_loc_reference| = 0.162782293887; |P - P_triv_reference| = 0.192657713285; |P - 0.5934| = 0.021789452932
+k=11: P = 0.615191323349; |P - P_loc_reference| = 0.162784164305; |P - P_triv_reference| = 0.192659583702; |P - 0.5934| = 0.021791323349
+k=12: P = 0.615191815890; |P - P_loc_reference| = 0.162784656846; |P - P_triv_reference| = 0.192660076243; |P - 0.5934| = 0.021791815890
+k=13: P = 0.615191945702; |P - P_loc_reference| = 0.162784786657; |P - P_triv_reference| = 0.192660206055; |P - 0.5934| = 0.021791945702
+k=14: P = 0.615191979928; |P - P_loc_reference| = 0.162784820883; |P - P_triv_reference| = 0.192660240280; |P - 0.5934| = 0.021791979928
+k=15: P = 0.615191988953; |P - P_loc_reference| = 0.162784829908; |P - P_triv_reference| = 0.192660249306; |P - 0.5934| = 0.021791988953
+k=16: P = 0.615191991333; |P - P_loc_reference| = 0.162784832289; |P - P_triv_reference| = 0.192660251686; |P - 0.5934| = 0.021791991333
+k=17: P = 0.615191991961; |P - P_loc_reference| = 0.162784832916; |P - P_triv_reference| = 0.192660252314; |P - 0.5934| = 0.021791991961
+k=18: P = 0.615191992127; |P - P_loc_reference| = 0.162784833082; |P - P_triv_reference| = 0.192660252479; |P - 0.5934| = 0.021791992127
+k=19: P = 0.615191992170; |P - P_loc_reference| = 0.162784833126; |P - P_triv_reference| = 0.192660252523; |P - 0.5934| = 0.021791992170
+k=20: P = 0.615191992182; |P - P_loc_reference| = 0.162784833137; |P - P_triv_reference| = 0.192660252535; |P - 0.5934| = 0.021791992182
+```
+PASS: canonical comparator is isolated to fenced distance reporting
+
+========================================================================================================
+Part 7: note and bounded residual checks
+========================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note names the primary runner as a plain-text pointer
+PASS: note contains no worktree-local temp references
+Named residuals: finite word count; finite dominant-weight box; finite Bessel mode support; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.
+PASS: runner scope names the finite-packet residuals without claiming them retired
+
+TOTAL: PASS=24, FAIL=0
+
+----- stderr -----

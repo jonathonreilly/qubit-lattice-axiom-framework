@@ -19,7 +19,7 @@ three-point series, no systematic strengthening), the named fork was the
 fixed-prefix-`k` conditional structure strengthen as the record tree deepens
 (depths 9 → 14, branches to 16,384), at `L = 3` with the adversarial seed set?
 
-## The findings (runner `PASS=31`)
+## The findings (runner `PASS=35`)
 
 **(D1) The most-spread event freezes early.** For every seed, the most-spread-row
 selector returns the **same row** at every depth cap from its first appearance

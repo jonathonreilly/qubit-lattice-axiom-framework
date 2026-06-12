@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py
+runner_sha256: bc8a7a6f84a9307ab05e829d377a0d30cf33bd7c6df05c55cf4d66091601d340
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.89
+status: ok
+----- stdout -----
+Status authority: independent audit lane only. This helper runner does not set or predict an audit outcome.
+tensor_word Perron eigenvalue = 1.012369912747822
+rho10 = 0.378514922317117
+P = 0.434215413259920
+PASS: helper interface reproduces a finite tensor-word readout
+TOTAL: PASS=1, FAIL=0
+
+----- stderr -----
+

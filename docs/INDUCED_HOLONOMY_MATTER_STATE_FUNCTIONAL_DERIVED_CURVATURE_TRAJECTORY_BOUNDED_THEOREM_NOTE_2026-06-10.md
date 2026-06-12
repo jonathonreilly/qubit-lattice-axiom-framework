@@ -30,7 +30,7 @@ color-link source note's center structure) — sea-orbit states induce *central*
 SU(3)-curvature scalar used throughout is `C = 1 − |tr Hol|/3 ∈ [0,1]`: exactly zero iff
 the holonomy is central, invariant under conjugation *and* the center. **The U(1)/det
 holonomy that `C` quotients is itself a derived covariant state functional — a named open
-thread (candidate U(1) datum), not a silent quotient.**
+thread (candidate U(1) datum), not a silent quotient. The state-conditioning here is the registered [`realized_state_primitive`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) interface: pointwise evaluation at the supplied law-admissible realized state, nothing more; the state-contingent data quoted remain registered data per its counterfactual clause.**
 
 ## The results (exact — runner `PASS=12 FAIL=0`)
 

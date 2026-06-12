@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 210 |
 | **retained_bounded** | 862 |
 | _retained_pending_chain_ | 17 |
-| open_gate | 39 |
-| unaudited | 1371 |
+| open_gate | 40 |
+| unaudited | 1370 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1316 |
+| `audited_clean` | 1317 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1688 |
+| `unaudited` | 1687 |
 
 | claim_type | count |
 |---|---:|
@@ -728,6 +728,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_dkd_berry_spectator_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -10559,6 +10560,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **open / conditional deps cited:**
   - `KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+- **auditor confidence:** high
+
+### `koide_dkd_berry_spectator_note_2026-05-31`
+
+- **Note:** [`KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md`](../../docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited only the corrected finite Fock-space/Lambda^1 embedding facts and the sampled Berry-boundary repair; no Q=2/3 derivation, zero-Berry theorem, or universal no-go is claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-023159-98129b2b6b-koide_dkd_berry_spectator_no`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The corrected Wilson-loop check for the tested finite Kähler-Dirac plus circulant-mass coupling is not identically zero across the sampled kappa and band choices, so the submitted zero-Berry spectator theorem is not certified.  _(class `C`)_
+- **chain closes:** True — Within the stated open-gate scope, the included runner constructs the finite operators and verifies the corrected lift, form-parity facts, commuting b-derivatives, scalar Gamma_F on Lambda^1, and a nonzero sampled Wilson loop. The universal form-degree Berry theorem remains open by design, not as a missing dependency for this boundary claim.
+- **rationale:** The runner source performs actual finite operator construction rather than printing constants, and the load-bearing nonzero-Wilson-loop sign is independently reproducible by a bit-mask exterior-algebra construction. The cited authorities are retained-grade for the limited algebraic inputs used here, and the source note does not import PDG values, fitted selectors, or an open physical Kähler-Dirac identification. The claim is clean only as an open-gate bug repair that blocks reuse of the stale zero-Berry spectator claim; it does not certify any positive Berry theorem.
 - **auditor confidence:** high
 
 ### `koide_dweh_cyclic_compression_note_2026-04-18`

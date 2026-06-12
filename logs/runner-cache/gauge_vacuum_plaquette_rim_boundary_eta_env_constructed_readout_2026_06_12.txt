@@ -1,0 +1,115 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_2026_06_12.py
+runner_sha256: 835dba817a8a5727ce4dc445432c8ee692d4c363b7130b5ddc4ff300cdb40424
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.18
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette finite rim-boundary eta construction readout
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+
+================================================================================================
+Part 1: reproduce existing one-word and matrix-element baselines
+================================================================================================
+PASS: one-word tensor Perron residual is small
+      residual=1.665e-16
+words | readout | rho10 | rho11 | rho_min | rho_max | P(6)
+------------------------------------------------------------------------------------------------
+    1 | one_word_anchor  | 0.378514922317 | 0.171042019092 | 0.000000000000 | 1.000000000000 | 0.434215413260
+PASS: one-word anchor reproduces the existing tensor-word value
+      P_tw1=0.434215413260
+PASS: two-word matrix-element Perron residual is small
+      residual=2.082e-17
+PASS: three-word matrix-element Perron residual is small
+      residual=6.939e-18
+words | readout | rho10 | rho11 | rho_min | rho_max | P(6)
+------------------------------------------------------------------------------------------------
+    2 | trivial_slice    | 0.211265869825 | 0.162259799480 | -0.000000000000 | 1.000000000000 | 0.429196712321
+    2 | marginal         | 0.448136509420 | 0.162403385294 | 0.000000000000 | 1.000000000000 | 0.436251149956
+    3 | trivial_slice    | 0.211265869825 | 0.162259799480 | -0.000000000000 | 1.000000000000 | 0.429196712321
+    3 | marginal         | 22.802148174123 | 0.162354707873 | 0.000000000000 | 22.802148174123 | 0.592817119605
+PASS: baseline 2-word trivial_slice P reproduces existing runner value
+      P=0.429196712321, expected=0.429196712321
+PASS: baseline 2-word marginal P reproduces existing runner value
+      P=0.436251149956, expected=0.436251149956
+PASS: baseline 3-word trivial_slice P reproduces existing runner value
+      P=0.429196712321, expected=0.429196712321
+PASS: baseline 3-word marginal P reproduces existing runner value
+      P=0.592817119605, expected=0.592817119605
+
+================================================================================================
+Part 2: construct eta = tensor_word @ e_(0,0)
+================================================================================================
+eta00 = 0.845063479299967
+eta min = 0.000000000000000e+00
+eta conjugation-swap residual = 1.388e-17
+higher nonzero count = 5
+higher L1 = 0.609082263099655
+total L1 = 1.454145742399622
+higher L1 / eta00 = 0.720753266493
+higher L1 / total L1 = 0.418859159258
+higher L2 / eta00 = 0.353323610429
+higher L2 / total L2 = 0.333140744640
+eta support entries: weight | eta | eta/eta00
+  (0, 0)   | 0.845063479299967 | 1.000000000000
+  (0, 1)   | 0.178533071011641 | 0.211265869825
+  (0, 2)   | 0.057448145188670 | 0.067980863682
+  (1, 0)   | 0.178533071011641 | 0.211265869825
+  (1, 1)   | 0.137119830699031 | 0.162259799480
+  (2, 0)   | 0.057448145188670 | 0.067980863682
+PASS: constructed eta is nonnegative on the finite word box
+      eta_min=0.000e+00
+PASS: constructed eta is conjugation-symmetric
+      swap=1.388e-17
+PASS: constructed eta has nonzero higher-weight content
+      higher_l1=0.609082263100, higher_nonzero=5
+PASS: trivial slice is not equal to constructed eta after eta00 normalization
+      higher_l1/eta00=0.720753266493
+
+eta coefficient control, not the one-word Perron anchor: rho10=0.211265869825, rho11=0.162259799480, P=0.429196712321
+PASS: eta coefficient control matches the former trivial-slice ratio
+      P_eta_control=0.429196712321
+
+================================================================================================
+Part 3: matrix-element ladder with constructed eta boundary
+================================================================================================
+words | readout | rho10 | rho11 | rho_min | rho_max | P(6)
+------------------------------------------------------------------------------------------------
+    1 | one_word_anchor  | 0.378514922317 | 0.171042019092 | 0.000000000000 | 1.000000000000 | 0.434215413260
+    2 | constructed_eta  | 0.287722573724 | 0.162297788516 | 0.000000000000 | 1.000000000000 | 0.431504881786
+    3 | constructed_eta  | 2.570788717063 | 0.162266447734 | 0.000000000000 | 2.570788717063 | 0.487332641164
+PASS: two-word constructed-eta readout is finite and positive
+      P=0.431504881786, rho_min=0.000e+00
+PASS: three-word constructed-eta readout is finite and positive
+      P=0.487332641164, rho_min=0.000e+00
+PASS: constructed-eta three-word readout does not reproduce the marginal revival value
+      |P_eta3-P_marginal3|=0.105484478441
+PASS: constructed-eta three-word readout is not word-count stationary with the trivial slice
+      |P_eta3-P_trivial3|=0.058135928843
+PASS: constructed-eta three-word readout remains closer to trivial-slice P than to marginal P
+      dist_triv=0.058135928843, dist_marg=0.105484478441
+
+================================================================================================
+Fenced comparator distances
+================================================================================================
+Plaquette reuse license: the canonical comparison number is admitted only as a comparison/reuse number, not as a derived value, fit target, or repinning input.
+```text
+one-word anchor: P = 0.434215413260; |P - P_loc_reference| = 0.018191745785; |P - P_triv_reference| = 0.011683673613; |P - 0.5934| = 0.159184586740; direction_vs_tw1 = away by 0.000000000000
+two-word matrix_element constructed_eta: P = 0.431504881786; |P - P_loc_reference| = 0.020902277259; |P - P_triv_reference| = 0.008973142139; |P - 0.5934| = 0.161895118214; direction_vs_tw1 = away by 0.002710531474
+three-word matrix_element constructed_eta: P = 0.487332641164; |P - P_loc_reference| = 0.034925482119; |P - P_triv_reference| = 0.064800901517; |P - 0.5934| = 0.106067358836; direction_vs_tw1 = toward by 0.053117227904
+three-word classification: constructed_eta is neither the trivial-slice stationary value nor the marginal revival value; it is closer to the trivial-slice P-distance in this finite box.
+```
+PASS: canonical comparator is isolated to distance reporting
+
+================================================================================================
+Part 4: bounded residuals
+================================================================================================
+Named residuals: finite word count; finite dominant-weight box; finite Bessel mode support; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.
+PASS: runner scope names the full physical residuals without claiming them closed
+
+TOTAL: PASS=20, FAIL=0
+
+----- stderr -----
+

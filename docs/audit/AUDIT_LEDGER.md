@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 852 |
+| **retained_bounded** | 853 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1399 |
+| unaudited | 1398 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1297 |
+| `audited_clean` | 1298 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1716 |
+| `unaudited` | 1715 |
 
 | claim_type | count |
 |---|---:|
@@ -491,6 +491,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | C | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6836,6 +6837,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For any path connecting x to y, the triangle inequality gives prod_j ||Phi_{x_{j-1}x_j}|| <= exp(-mu d_1(x,y)) prod_j(||Phi_{x_{j-1}x_j}|| exp(mu d_1(x_{j-1},x_j))), and summing intermediate sites bounds the weighted path sum by exp(-mu d_1(x,y)) W_mu^n.  _(class `A`)_
 - **chain closes:** True — The cited exact-log quasilocality theorem supplies the exponential kernel tail and finite weighted overlap, and the cited/local one-site algebra supports the standard bounded commutator expansion. The weighted matrix/path norm then gives the claimed exponential envelope with the conservative 4 W_mu constant.
 - **rationale:** The load-bearing step is an algebraic weighted-path closure over retained_bounded inputs, not a definition, renaming, tuned numerical match, or external comparator. The helper runner source computes the imported kernel from the displayed symbol and does not hard-code the contested LR conclusion; the primary runner adds numerical overlap, path, finite-matrix, and falsification checks. Minimal axioms are explicitly accepted premise content, and no registered primitive is relevant to this scoped claim.
+- **auditor confidence:** high
+
+### `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`
+
+- **Note:** [`FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-mode free Dirac algebra: Euclidean inverse and poles, +/-E Hamiltonian spectrum, u/v completeness signs and norms, and finite CAR antiparticle relabeling bounded below.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-011028-b1006347dc-free_dirac_antiparticle_mode`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given CAR quantization, the negative-energy branch can be relabeled as a positive-energy antiparticle branch with H_CAR = sum E(p)(a^†a + b^†b), so the finite-mode Fock spectrum is bounded below by 0.  _(class `A`)_
+- **chain closes:** True — The retained-bounded upstream supplies the continuum free Dirac kernel, and the claimed facts then follow by Clifford-algebra identities plus finite CAR occupancy algebra. No Wightman reconstruction, locality theorem, statistics-selection theorem, or interacting claim is needed for the audited scope.
+- **rationale:** The runner source performs substantive checks of the displayed algebra rather than merely printing constants: inverse/poles, Hamiltonian spectrum, spinor completeness and signs, finite CAR spectrum, and the raw negative-branch diagnostic. An independent algebra check gives the same factors and signs: (m+i gamma.p)(m-i gamma.p)=m^2+p^2, H_D^2=E^2 I with double +/-E degeneracy, ubar u=+2m and vbar v=-2m while Hilbert norms are 2E, and CAR occupancies are 0/1 so the relabeled finite spectrum is nonnegative. The only load-bearing upstream authority is retained_bounded and supplies exactly the bounded continuum kernel input used here; there is no external comparator or tuned numerical match.
 - **auditor confidence:** high
 
 ### `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`

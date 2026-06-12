@@ -3,7 +3,7 @@
     "critical": 272,
     "high": 285,
     "leaf": 428,
-    "medium": 416
+    "medium": 415
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16887,7 +16887,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+      "claim_id": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -16895,17 +16895,23 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+        "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+        "graph_first_su3_integration_note",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
+        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.858,
-      "note_path": "docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md",
+      "load_bearing_score": 7.0,
+      "note_path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py",
-      "transitive_descendants": 28
+      "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
+      "transitive_descendants": 31
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17018,36 +17024,6 @@
       "ready": true,
       "runner_path": "scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py",
       "transitive_descendants": 21
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-        "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
-        "graph_first_su3_integration_note",
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
-        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.5,
-      "note_path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
-      "transitive_descendants": 15
     },
     {
       "audit_independence_required": "any_non_self",
@@ -30087,6 +30063,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35651,30 +35651,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/flavor_r_half_assumptions_audit_2026_05_30.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py",
       "transitive_descendants": 0
     },
     {
@@ -42312,5 +42288,5 @@
     }
   ],
   "ready_count": 35,
-  "total_pending": 1401
+  "total_pending": 1400
 }

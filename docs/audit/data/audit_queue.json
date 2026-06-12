@@ -3,7 +3,7 @@
     "critical": 272,
     "high": 285,
     "leaf": 428,
-    "medium": 419
+    "medium": 418
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16887,30 +16887,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "quark_bimodule_norm_naturality_theorem_note_2026-04-19",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_realization_gate_note_2026-05-03"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.644,
-      "note_path": "docs/QUARK_BIMODULE_NORM_NATURALITY_THEOREM_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_quark_bimodule_norm_naturality_theorem.py",
-      "transitive_descendants": 49
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "quark_bimodule_norm_existence_theorem_note_2026-04-19",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -16921,15 +16897,15 @@
       "deps": [
         "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.115,
+      "load_bearing_score": 6.644,
       "note_path": "docs/QUARK_BIMODULE_NORM_EXISTENCE_THEOREM_NOTE_2026-04-19.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_quark_bimodule_norm_existence_theorem.py",
-      "transitive_descendants": 48
+      "transitive_descendants": 49
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42386,6 +42362,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 37,
-  "total_pending": 1404
+  "ready_count": 36,
+  "total_pending": 1403
 }

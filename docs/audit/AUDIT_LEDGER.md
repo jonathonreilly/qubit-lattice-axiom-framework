@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 849 |
+| **retained_bounded** | 850 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1402 |
+| unaudited | 1401 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1294 |
+| `audited_clean` | 1295 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1719 |
+| `unaudited` | 1718 |
 
 | claim_type | count |
 |---|---:|
@@ -1053,6 +1053,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quantum_horizon_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `quark_bimodule_norm_naturality_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
@@ -15263,6 +15264,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Independent algebra verifies rho*sqrt(supp)=1/7, supp*delta_A1=1/49, sqrt(6/7)<48/49<1, and the listed packet invariants do not contain kappa. The obstruction is narrow: it rules out endpoint selection from this support-only packet, not from later kappa-sensitive carrier normalization data.
 - **rationale:** The load-bearing step is a genuine algebraic non-uniqueness argument over the declared retained inputs, and the runner source computes the stated identities rather than importing external comparators or opaque helpers. The cited staggered-Dirac authority is used only for carrier naming, while the endpoint-obstruction algebra is standalone and the note explicitly limits itself to bounded scope. The no-go discipline stress test does not expose an overbroad wall because the claim is confined to the current ray/support-only packet and expressly leaves shell-normalization and future endpoint-selection routes open.
 - **auditor confidence:** high
+
+### `quark_bimodule_norm_naturality_theorem_note_2026-04-19`
+
+- **Note:** [`QUARK_BIMODULE_NORM_NATURALITY_THEOREM_NOTE_2026-04-19.md`](../../docs/QUARK_BIMODULE_NORM_NATURALITY_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under complementarity, endpoint normalization, and affine naturality for real-linear split maps on the one-real channel I, the unique normalized affine split is D_a = a Id_I and U_a = (1-a) Id_I; evaluating at the supplied rho gives the stated BICAC/STRC-LO identity.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-010135-734eadfdd9-quark_bimodule_norm_naturali`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Applying affine naturality to a = a*1 + (1-a)*0 gives D_a = a D_1 + (1-a) D_0 = a Id_I, and complementarity then gives U_a = (1-a) Id_I.  _(class `A`)_
+- **chain closes:** True — The load-bearing algebra closes directly from the three stated structural premises; no dimensional physics is needed beyond the supplied carrier notation. The note does not derive NORM naturality itself, and correctly leaves that as the bounded premise/admission boundary.
+- **rationale:** The proof is a valid affine-algebra closure: substituting the endpoints 1 and 0 into the affine law forces D_a = a Id_I, and complementarity forces U_a. The displayed numerical identities for rho, sin_d, the support/target kappa values, and the BICAC endpoint arithmetic are internally consistent. The runner is not first-principles class C, but its eight checks are consistent arithmetic/algebra checks of the bounded theorem. The staggered-Dirac carrier dependence is admitted only at the bounded Tier-A routing level stated in the packet, so this is clean as a bounded theorem, not as an unbounded positive theorem.
+- **auditor confidence:** medium
 
 ### `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28`
 

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1455 |
-| Retained-grade rows, including boxed decorations | 1314 |
+| Applied audit verdicts | 1456 |
+| Retained-grade rows, including boxed decorations | 1315 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 848 |
+| Retained bounded rows | 849 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1467 |
+| Unaudited rows | 1466 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 39 |
 | Audited renaming rows | 34 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1469 |
+| Total pending rows | 1468 |
 | Ready rows | 67 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
-| High pending | 287 |
+| High pending | 286 |
 | Medium pending | 435 |
 | Leaf pending | 469 |
 
 Next ready rows by queue order:
 
-- [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`koide_q_minimal_scale_free_selector_note_2026-04-22`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md) - medium; unaudited
 - [`light_cone_framing_note`](../../docs/LIGHT_CONE_FRAMING_NOTE.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`](../../docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 - [`gellmann_completeness_theorem_note_2026-05-02`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
+- [`wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08`](../../docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

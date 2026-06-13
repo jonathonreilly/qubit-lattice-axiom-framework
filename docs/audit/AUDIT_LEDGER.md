@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 877 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 38 |
-| unaudited | 1502 |
+| unaudited | 1501 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 32 |
 | `audited_clean` | 1294 |
-| `audited_conditional` | 23 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1819 |
+| `unaudited` | 1818 |
 
 | claim_type | count |
 |---|---:|
@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1590 | 134.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1356 | 64.41 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1279 | 62.82 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1422 | 60.98 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1358 | 51.41 | `audited_clean` | **retained_bounded** |
 | 6 | `key_terminology` | meta | critical | 1396 | 50.45 | `unaudited` | meta |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1292 | 49.84 | `unaudited` | meta |
@@ -113,8 +113,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1262 | 43.30 | `unaudited` | unaudited |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1262 | 42.80 | `audited_clean` | **retained_bounded** |
 | 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1274 | 41.82 | `unaudited` | unaudited |
-| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1347 | 41.40 | `audited_failed` | ~~audited_failed~~ |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1389 | 39.44 | `audited_clean` | **retained** |
+| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1346 | 40.90 | `audited_failed` | ~~audited_failed~~ |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1388 | 39.44 | `audited_clean` | **retained** |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1307 | 38.85 | `audited_clean` | **retained_no_go** |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1285 | 38.83 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1374 | 36.92 | `audited_clean` | **retained** |
@@ -1477,6 +1477,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17138,6 +17139,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Combining the bridge-derived edge-flip sign field epsilon(x)=(-1)^(x_1+x_2+x_3) with the A1 central pseudoscalar omega_global=sigma_1 sigma_2 sigma_3=iI gives omega(x)=epsilon(x) omega_global.  _(class `A`)_
 - **chain closes:** True — The cited bridge is retained_bounded and proves the unique scalar edge-flip grading on the Z^3 coordinate graph; multiplying by the central Pauli pseudoscalar is an algebraic closure, and the edgewise -1 ratio gives the stated chirality sign reversal. The eta checks are displayed Kawamoto-Smit phase definitions and gauge-cancellation consistency checks, not a derivation of the full kinetic operator.
 - **rationale:** Independent parity-path reasoning confirms that any scalar sign field flipping across every coordinate edge is s(0)(-1)^(x_1+x_2+x_3), and Pauli multiplication gives sigma_1 sigma_2 sigma_3=iI. Since iI is central, omega(x) gamma_mu omega(x+e_mu)^(-1) has the scalar ratio epsilon(x)/epsilon(x+e_mu)=-1, so the bounded chirality relation follows from the retained bridge without an extra H_staggered_chirality premise. The runner's finite GF(2) rank checks support the same edge-flip uniqueness on sample boxes, while its eta checks are algebraic/definitional and do not overclaim beyond the note's bounded scope.
+- **auditor confidence:** high
+
+### `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`
+
+- **Note:** [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](../../docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the declared P-KIN/P-SD kinetic class on simply connected Z^3 regions, U(1)- or Z2-valued nearest-neighbor phases scalarize iff they satisfy the Clifford -1 plaquette cocycle, and all such solutions form one local gauge class represented by the Kawamoto-Smit phases.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-215032-1852284da4-staggered_dirac_kawamoto_smi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If η satisfies the Clifford -1 plaquette cocycle, the path-product transport U_{x,mu}=η_mu(x)γ_mu has identity plaquette holonomy, so T is well-defined on simply connected regions; comparing any solution with η^0 gives a closed one-cochain, hence an exact local gauge transform.  _(class `A`)_
+- **chain closes:** False — The local Clifford/cohomology argument closes as a conditional algebraic theorem under P-KIN/P-SD. The restricted packet does not close the declared kinetic-class premises or the substep-1 statistics-selection residual, so the chain does not close as an unconditional forcing result.
+- **rationale:** The displayed signs and factors in Lemmas 2-4 check out independently: γνγμ=-γμγν gives the -1 cocycle, γνγμγνγμ=-I cancels the cocycle scalar in the plaquette transport, and H^1=0 on boxes gives one gauge class with 2^{|V|-1} Z2 representatives. The runner source performs real enumeration and GF(2) rank computation rather than merely printing constants; its 47 passing checks include 2 additional U(1)/gauge checks beyond the A-D breakdown fields. The verdict is conditional because the note expressly relies on declared P-KIN/P-SD premises and the upstream two-candidate/statistics boundary, which are not closed by the restricted packet.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
+  - `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`
+  - `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`
 - **auditor confidence:** high
 
 ### `staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11`

@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_color_automorphism_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_native_double_shift_corner_coupling_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "cl3_color_automorphism_theorem",
         "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
         "cl3_taste_generation_theorem",
         "post_record_clock_rate_interface_2026-06-06",
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
         "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
         "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-        "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
+        "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
+        "flavor_native_double_shift_corner_coupling_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "97bb31d03c3d70bc64a102fe09d573299e0e6a6b09af45905879ebe25351445f",
+      "note_hash": "8eb3a686bf4581f4322797321d872cd390e0b13ad80f8635b3db07b91ca77824",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

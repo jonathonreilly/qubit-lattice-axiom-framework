@@ -26,12 +26,16 @@ inequalities and numerical kernel behavior.
 """
 
 from __future__ import annotations
+import hashlib
 from pathlib import Path
 
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE = ROOT / "docs" / "RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md"
+DISP_NOTE = ROOT / "docs" / "FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md"
+DISP_RUNNER = ROOT / "scripts" / "free_staggered_two_step_dispersion_d_dimensional_2026_06_12.py"
+DISP_CACHE = ROOT / "logs" / "runner-cache" / "free_staggered_two_step_dispersion_d_dimensional_2026_06_12.txt"
 
 PASS = 0
 FAIL = 0
@@ -46,6 +50,21 @@ def check(name, condition, detail=""):
     if detail:
         line += f"  ({detail})"
     print(line)
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def cache_header(cache_path: Path) -> dict[str, str]:
+    header = cache_path.read_text(encoding="utf-8", errors="replace").split("----- stdout -----", 1)[0]
+    fields: dict[str, str] = {}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        fields[key.strip()] = value.strip()
+    return fields
 
 
 def marginal_dispersion(px, m, ng=512):
@@ -76,16 +95,32 @@ def combined_rate(m):
 
 def source_repair_checks():
     text = NOTE.read_text(encoding="utf-8")
+    disp_text = DISP_NOTE.read_text(encoding="utf-8") if DISP_NOTE.exists() else ""
     forbidden = ["ret" + "ained", "audit" + "ed_", "un" + "audited", "2" + "erJ", "v_" + "LR"]
     checks = [
         "**Status authority:** independent audit lane only" in text,
         "FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md" in text,
+        "2026-06-13 one-hop dispersion bridge lock" in text,
+        "source-side one-hop bridge" in text,
+        "one-particle/free-bilinear" in text,
+        "not a claim about the full many-body Fock transfer spectrum" in text,
         "arcsinh(m)/(2d)" in text,
         "tail-composition step remain open" in text,
         all(token not in text for token in forbidden),
     ]
     check("source note scope repair is wired to the d-dimensional dispersion theorem and leaves residual targets open",
           all(checks), detail=f"{sum(checks)}/{len(checks)} source guards satisfied")
+    disp_checks = [
+        DISP_NOTE.exists(),
+        DISP_RUNNER.exists(),
+        DISP_CACHE.exists(),
+        "E_d(p) = arcsinh(sqrt(m^2 + sum_{mu=1}^d sin^2 p_mu))" in disp_text,
+        "action-derived one-particle two-step transfer" in disp_text,
+        "TOTAL: PASS=7, FAIL=0" in DISP_CACHE.read_text(encoding="utf-8", errors="replace") if DISP_CACHE.exists() else False,
+        cache_header(DISP_CACHE).get("runner_sha256") == sha256(DISP_RUNNER) if DISP_RUNNER.exists() and DISP_CACHE.exists() else False,
+    ]
+    check("d-dimensional dispersion bridge note/runner/cache are present, scoped, passing, and SHA-fresh",
+          all(disp_checks), detail=f"{sum(disp_checks)}/{len(disp_checks)} bridge guards satisfied")
 
 
 def main() -> int:

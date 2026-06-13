@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py
-runner_sha256: fc9c9bfc4e0bf84fc2aab54d81b18e9355b62371ea4a130c459dc206ab406b36
-timeout_sec: 120
+runner_sha256: b061934ac3a5a1da069e91b82a000efdfdce2add3790fedb46237262aa2e5333
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 28.68
+elapsed_sec: 21.78
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -11,7 +11,8 @@ reconstructed free H = -log(T^2)/(2 a_tau) is QUASI-LOCAL (exp tail)  [class A]
 ==============================================================================
 
 -- (0) source-note scope repair guardrails --
-PASS: source note scope repair is wired to the d-dimensional dispersion theorem and leaves residual targets open  (5/5 source guards satisfied)
+PASS: source note scope repair is wired to the d-dimensional dispersion theorem and leaves residual targets open  (9/9 source guards satisfied)
+PASS: d-dimensional dispersion bridge note/runner/cache are present, scoped, passing, and SHA-fresh  (7/7 bridge guards satisfied)
 
 -- (1) spec(T^2)=e^{-2E(p)} is gapped away from 0 (m>0) => log well-defined --
 PASS: m=0.1: min spec(T^2) = e^(-2 Emax) = 0.0716 > 0 (gapped)
@@ -30,7 +31,7 @@ PASS: m=1.0: exponential rate a=1.170 > 0 and within ~2x of arcsinh(m)=0.881  (p
 PASS: m=0: H(x) is PURE POWER-LAW (power-fit beats exp-fit, high R^2) => NOT quasi-local => the mass gap (m>0) is the load-bearing input for quasi-locality  (|H(x)| ~ x^-4.12; R^2 power=0.9994 > exp=0.8458)
 
 Scope: free U=1 staggered two-step sector; interacting log-transfer locality and exact tail-composition remain open.
-TOTAL: PASS=9, FAIL=0
+TOTAL: PASS=10, FAIL=0
 
 ----- stderr -----
 

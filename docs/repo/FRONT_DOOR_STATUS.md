@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1514 |
-| Retained-grade rows, including boxed decorations | 1354 |
+| Applied audit verdicts | 1515 |
+| Retained-grade rows, including boxed decorations | 1355 |
 | Retained positive theorems | 217 |
-| Retained no-go rows | 209 |
+| Retained no-go rows | 210 |
 | Retained bounded rows | 882 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1408 |
+| Unaudited rows | 1407 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 57 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1410 |
-| Ready rows | 20 |
+| Total pending rows | 1409 |
+| Ready rows | 19 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 426 |
+| Leaf pending | 425 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10`](../../docs/GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md) - medium; unaudited
 - [`grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12`](../../docs/GRAND_CANONICAL_FLUX_RESPONSE_NMOD4_ALTERNATION_NO_NET_SIGN_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
 - [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
 - [`koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
-- [`koide_p1_collapses_frame_residuals_note_2026-06-01`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md) - leaf; unaudited
+- [`koide_p1_collapses_frame_residuals_note_2026-06-01`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md) - medium; unaudited
+- [`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -94,5 +94,5 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 887 descendants; score 59.294
 - `key_terminology` - critical; 1281 descendants; score 50.324
 - `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 49.567
-- `plaquette_self_consistency_note` - critical; 971 descendants; score 46.425
+- `plaquette_self_consistency_note` - critical; 970 descendants; score 46.423
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 927 descendants; score 44.358

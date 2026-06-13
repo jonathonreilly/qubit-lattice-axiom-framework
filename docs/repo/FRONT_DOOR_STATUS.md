@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1438 |
-| Retained-grade rows, including boxed decorations | 1343 |
+| Applied audit verdicts | 1439 |
+| Retained-grade rows, including boxed decorations | 1344 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 877 |
+| Retained bounded rows | 878 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 38 |
 | Unaudited rows | 1500 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1533 |
-| Ready rows | 84 |
+| Total pending rows | 1532 |
+| Ready rows | 83 |
 | Cycle-break targets | 20 |
-| Critical pending | 359 |
+| Critical pending | 358 |
 | High pending | 261 |
 | Medium pending | 435 |
 | Leaf pending | 478 |
 
 Next ready rows by queue order:
 
-- [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; audit_in_progress
 - [`post_record_clock_rate_interface_2026-06-06`](../../docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md) - critical; audit_in_progress
 - [`record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) - critical; audit_in_progress
 - [`gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - critical; audit_in_progress
@@ -51,13 +50,14 @@ Next ready rows by queue order:
 - [`flavor_native_double_shift_corner_coupling_note_2026-05-30`](../../docs/FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md) - critical; audit_in_progress
 - [`gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06`](../../docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - critical; audit_in_progress
 - [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
+- [`record_function_finite_sector_algebra_2026-06-05`](../../docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **429**.
+- Non-retained-grade cited rows in publication tables: **428**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -68,11 +68,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_failed` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
+| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

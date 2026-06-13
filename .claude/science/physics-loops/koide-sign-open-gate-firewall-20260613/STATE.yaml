@@ -1,0 +1,16 @@
+loop: koide-sign-open-gate-firewall-20260613
+status: checkpoint_ready_for_review
+actual_current_surface_status: open
+target_status: source_boundary_repair
+target_claim_id: koide_record_sign_agnostic_eta_refuted_2026-06-04
+base: origin/main
+branch: physics-loop/koide-sign-open-gate-firewall-20260613
+files_touched:
+  - docs/KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md
+  - scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py
+  - logs/runner-cache/koide_record_sign_agnostic_eta_refuted_2026_06_04.txt
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: reviewer/auditor checks the executable downstream firewall

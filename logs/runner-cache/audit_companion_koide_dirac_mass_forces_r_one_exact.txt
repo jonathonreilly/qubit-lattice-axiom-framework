@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py
-runner_sha256: cfe4a3fe4ada556e85913f79b9fe2448c5cca1f27afc865c101ade2e08213d7b
+runner_sha256: 8a07f11105e2b8e51e22c5ae2221f9ffbde019eea49d20b7e018e007370a66a5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.02
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 PASS - (1) det of the 3-generation Dirac block [[0,M],[M^dag,0]] = -|det M|^2 (odd-block sign; second-order/modulus, not first-order det M)
@@ -12,8 +12,13 @@ PASS - (3) M(b)(x)sigma_+ generation eigenvectors = b-INDEPENDENT Fourier f_k ->
 PASS - (4a) SIGNED readout -> Koide Q=2/3 for all delta at the r=1/2 operator point
 PASS - (4b) SINGULAR-VALUE readout -> NOT 2/3 (sign of sqrt(m) erased)
 PASS - (5) source note keeps the bounded / open-bridge / dial-firewall boundary
+PASS - (6) source note does not claim a physical r=1 branch-selection theorem
+PASS - (7) source note leaves READOUT_TO_BRANCH_SELECTION_BRIDGE open
+PASS - (8) staggered gate is a plain-text non-load-bearing pointer
+PASS - (9) source note binds the no-go only to algebraic route pruning
+PASS - (10) determinant sign repair is explicit in the source note
 
-6 PASS, 0 FAIL
+11 PASS, 0 FAIL
 
 BLOCK-2 (bounded): on the current A_min matrix surface, a 3-generation Dirac block determinant is
 -|det M|^2 (odd-block sign; second-order) and the singular-value readout is sign-blind; the L-R coupling

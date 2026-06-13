@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 18 |
-| `audited_clean` | 1295 |
+| `audit_in_progress` | 17 |
+| `audited_clean` | 1296 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
@@ -142,7 +142,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1017,6 +1016,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_three_flux_holonomy_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `poisson_3d_self_field_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
@@ -14100,6 +14100,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** False — The algebraic matrix identities P0=J/3=P_char(0), conj(P_char1)=P_char2, conj(P_char2)=P_char1, and the K-real span_R{I,S} check out. The missing step is an independent retained bridge deriving or defining physical K/CPT or time-reversal K-reality as this site-basis complex conjugation, rather than asserting the identity by name.
 - **rationale:** The runner performs real finite C3 algebra checks and its 12 PASS claims match the displayed formulas, signs, factors, projectors, and degeneracies under an independent matrix audit. However, the theorem's new load-bearing move is the identification of the prior K-reality residual with site-basis K/CPT conjugation. In the restricted packet, that identity is not derived from a retained K/CPT bridge; it is introduced as the chosen name for site-basis complex conjugation. Thus the algebraic consequences are sound, but the claimed residual identification is a renaming rather than a derivation.
 - **auditor confidence:** medium
+
+### `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26`
+
+- **Note:** [`PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic determination of the PMNS magnitudes-squared matrix from a trimaximal second column, mu-tau equal moduli, doubly stochastic row/column sums, and s^2 = |U_e3|^2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-225224-42376188f4-pmns_tm2_magnitudes_conditio`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The electron row, third column, and first column stochastic sums with mu-tau equality give |U_e1|^2 = 2/3 - s^2, |U_mu3|^2 = |U_tau3|^2 = (1 - s^2)/2, and |U_mu1|^2 = |U_tau1|^2 = 1/6 + s^2/2.  _(class `A`)_
+- **chain closes:** True — Within the stated hypotheses, the stochastic row and column equations uniquely fix all displayed entries. This does not derive the residual assumptions or a value of sin^2(theta_13), but those are outside the audited conditional scope.
+- **rationale:** The displayed matrix follows by solving the stochastic row/column equations under the TM2 second-column and mu-tau equality hypotheses. Independent algebra verifies all displayed coefficients, sample values, denominator statements, double stochasticity, mu-tau equality, and nonnegativity on 0 <= s^2 <= 2/3. The runner's 41 PASS checks are class-A corroboration and partly encode the displayed formula, so the clean verdict rests on the manual algebra within the note's explicitly conditional scope.
+- **auditor confidence:** high
 
 ### `pmns_twisted_flux_transfer_holonomy_boundary_note`
 

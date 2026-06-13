@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 868 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1429 |
+| unaudited | 1428 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1320 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1746 |
+| `unaudited` | 1745 |
 
 | claim_type | count |
 |---|---:|
@@ -103,26 +103,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1565 | 132.61 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1037 | 64.02 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1396 | 60.95 | `audited_clean` | **retained** |
-| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
-| 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
-| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
-| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
+| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `unaudited` | unaudited |
+| 5 | `key_terminology` | meta | critical | 1282 | 50.33 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1073 | 49.57 | `unaudited` | meta |
+| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 928 | 44.36 | `unaudited` | unaudited |
+| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 928 | 43.36 | `unaudited` | unaudited |
 | 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
-| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
+| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1050 | 40.54 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
-| 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 797 | 39.14 | `audited_clean` | **retained_bounded** |
-| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1271 | 38.81 | `audited_clean` | **retained_bounded** |
-| 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
-| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 737 | 38.03 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1362 | 36.91 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1138 | 36.15 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 929 | 34.86 | `unaudited` | unaudited |
+| 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 798 | 39.14 | `audited_clean` | **retained_bounded** |
+| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1272 | 38.81 | `audited_clean` | **retained_bounded** |
+| 15 | `alpha_s_derived_note` | bounded_theorem | critical | 885 | 38.29 | `unaudited` | unaudited |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 738 | 38.03 | `audited_clean` | **retained_no_go** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1363 | 36.91 | `audited_clean` | **retained** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1139 | 36.16 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 930 | 34.86 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
-| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 728 | 33.01 | `unaudited` | unaudited |
-| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 725 | 31.50 | `unaudited` | unaudited |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 855 | 31.24 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 729 | 33.01 | `unaudited` | unaudited |
+| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 726 | 31.51 | `unaudited` | unaudited |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 856 | 31.24 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 195 | 31.11 | `audited_clean` | **retained** |
 | 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 327 | 30.86 | `unaudited` | unaudited |
 
@@ -1493,6 +1493,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `spin_statistics_fs_admission_located_exercise_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -16843,6 +16844,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using the relative gap-defined support frame s_j/s_0 > 0.05 and Procrustes frame transport, the measured native K_odd interface carrier has Pf(theta)/Pf(0.05)=+1 for all 63 tested theta points and an empty crossing set.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the stated lattice operator, O-real basis, relative support frames, transport alignment, and Pfaffian signs directly, with no helper imports or external comparators. The closure is for the measured finite grids only; it does not prove a continuum-in-theta no-crossing theorem between sampled points.
 - **rationale:** The load-bearing result is a first-principles finite computation of the stated matrix family, not a definition substitution or tuned external numerical match. The source code computes the spectra, ranks, transported frames, and Pfaffian signs rather than hard-coding the empty flip set; the hard-coded absolute-cutoff ranks are only a trap-control check and are not used as the label. The displayed main-line and marginal smooth-control numbers are consistent with the executable construction and the stated bounded scope.
+- **auditor confidence:** high
+
+### `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional audit of the retained Cl(3,1) eps-sector swap, boundary orientation sign flip, sector-selected eta labels on the truncated twisted tower, and coexistence with the product-grading anticommutation/commutation structure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-011153-297684801d-signed_gravity_product_gradi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the sector-selection block I ⊗ A(a) ⊗ eps, restriction to the eps=s sector gives sA(a), and the spectrally truncated twisted tower has eta_delta(A(a))=+1 on a in (0,1/2) and -1 on a in (-1/2,0), yielding chi_s=s sign(eta_delta(A(a))).  _(class `A`)_
+- **chain closes:** False — The Clifford and sector-restriction algebra closes, but T3 is over-scoped as written. The label table follows for the half-integer cutoff used by the runner, not for a generic spectral cutoff Lambda unless an additional fractional-cutoff condition is imposed.
+- **rationale:** The Clifford sector-swap and product-grading identities are genuine class-A finite-dimensional algebra, and the runner performs nontrivial matrix and tower checks. However the T3 label table is not valid for generic spectral cutoffs: writing Lambda=m+r and 0<a<1/2, an independent count gives eta=1_{r>=a}-1_{r>=1-a}, so eta can be 0 for ordinary non-boundary cutoffs such as r<a. The runner only checks lam_max=20.5, where r=1/2, so it certifies a half-integer regulator instance rather than the broader regulator wording in the note.
 - **auditor confidence:** high
 
 ### `signed_gravity_response_lane_status_note_2026-04-26`

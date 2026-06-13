@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gate_b_connectivity_tolerance_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
         "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
         "hierarchy_dimensional_compression_note",
         "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
-        "gate_b_connectivity_tolerance_note"
+        "gate_b_connectivity_tolerance_note",
+        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7c49d0cd3219dc330d02702156779f6655833f20261c3f6ac756480411655734",
+      "note_hash": "38e3bc7c55381a31d9007fc2f11b37109fcf6f1f57cd463c71205713339ff4fe",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 330,
+    "critical": 329,
     "high": 262,
     "leaf": 489,
     "medium": 439
@@ -456,32 +456,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "higgs_mass_from_axiom_note",
-        "yt_ew_matching_rule_m_note_2026-05-02",
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.65,
-      "note_path": "docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_higgs_mass_status_audit.py",
-      "transitive_descendants": 283
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -18331,15 +18305,15 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.144,
+      "load_bearing_score": 7.044,
       "note_path": "docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/gate_b_connectivity_tolerance.py",
-      "transitive_descendants": 24
+      "transitive_descendants": 32
     },
     {
       "audit_independence_required": "any_non_self",
@@ -46037,6 +46011,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 62,
-  "total_pending": 1520
+  "ready_count": 61,
+  "total_pending": 1519
 }

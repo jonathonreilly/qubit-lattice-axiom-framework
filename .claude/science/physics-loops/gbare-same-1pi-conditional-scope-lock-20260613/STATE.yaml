@@ -1,0 +1,19 @@
+loop: gbare-same-1pi-conditional-scope-lock-20260613
+started: "2026-06-13"
+base: origin/main@69df5fb83
+branch: physics-loop/gbare-same-1pi-conditional-scope-lock-20260613
+target_claim_id: g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19
+actual_current_surface_status: audited_conditional
+target_status: source_side_reaudit_candidate
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_results_edited: false
+repo_authority_surfaces_edited: false
+files_touched:
+  - docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md
+  - scripts/frontier_gbare_same_1pi_admitted_residue_repair.py
+  - logs/runner-cache/frontier_gbare_same_1pi_admitted_residue_repair.txt
+  - .claude/science/physics-loops/gbare-same-1pi-conditional-scope-lock-20260613/*
+runner_result: "PASS=50 FAIL=0"
+next_exact_action: "Submit PR for reviewer extraction and independent re-audit."
+stop_condition: "PR opened and verified; no audit verdict applied."

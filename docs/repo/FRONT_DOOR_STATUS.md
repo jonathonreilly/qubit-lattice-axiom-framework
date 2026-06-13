@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1513 |
-| Retained-grade rows, including boxed decorations | 1353 |
+| Applied audit verdicts | 1514 |
+| Retained-grade rows, including boxed decorations | 1354 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 209 |
-| Retained bounded rows | 881 |
+| Retained bounded rows | 882 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1409 |
+| Unaudited rows | 1408 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 57 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1411 |
-| Ready rows | 21 |
+| Total pending rows | 1410 |
+| Ready rows | 20 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 427 |
+| Leaf pending | 426 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RUNG_FOUR_DEEP_RIM_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10`](../../docs/GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md) - medium; unaudited
 - [`grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12`](../../docs/GRAND_CANONICAL_FLUX_RESPONSE_NMOD4_ALTERNATION_NO_NET_SIGN_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
 - [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
-- [`koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md) - leaf; unaudited
+- [`koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
+- [`koide_p1_collapses_frame_residuals_note_2026-06-01`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3383 |
 | Critical nodes | 521 |
 | High nodes | 514 |
-| Medium nodes | 923 |
-| Leaf nodes | 1425 |
+| Medium nodes | 922 |
+| Leaf nodes | 1426 |
 
 Top load-bearing rows by graph score:
 

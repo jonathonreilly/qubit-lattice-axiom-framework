@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "g_bare_dynamical_fixation_obstruction_note_2026-04-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "observable_principle_record_scalar_map_no_go_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
         "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06",
         "s3_time_theta_to_slice_coupling_note",
         "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
         "magnitude_reads_minimal_record_block_2026-06-06",
         "post_record_count_probability_firewall_2026-06-06",
-        "g_bare_dynamical_fixation_obstruction_note_2026-04-18"
+        "g_bare_dynamical_fixation_obstruction_note_2026-04-18",
+        "observable_principle_record_scalar_map_no_go_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6c8ac3f6d39c25a1fec0494e3056b9c049f801d567c49194851aa6f54052c1c9",
+      "note_hash": "e6785f24879966494aa5e11f575fe8fc9be430cd1d568bb58faf3de28b14230b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

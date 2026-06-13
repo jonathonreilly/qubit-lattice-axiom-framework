@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 866 |
+| **retained_bounded** | 867 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1431 |
+| unaudited | 1430 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1318 |
+| `audited_clean` | 1319 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1748 |
+| `unaudited` | 1747 |
 
 | claim_type | count |
 |---|---:|
@@ -123,7 +123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 728 | 33.01 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 725 | 31.50 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 855 | 31.24 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 186 | 31.05 | `audited_clean` | **retained** |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 195 | 31.11 | `audited_clean` | **retained** |
 | 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 327 | 30.86 | `unaudited` | unaudited |
 
 
@@ -1079,6 +1079,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_time_coupling_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -15644,6 +15645,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The conclusion follows by direct matrix multiplication and rational algebra inside the stated reduced family. The result is a negative boundary: 21/4 is equivalent to adding the missing center ratio -8/9 or q_E=15/8, not derived by the listed minimal constraints.
 - **rationale:** The load-bearing step is class A algebra over the explicitly stated reduced map and endpoint columns, and it establishes non-uniqueness rather than deriving a positive fitted value. The runner source does real matrix and Fraction checks for the reduced family, the equivalence to -8/9, and multiple admissible non-target choices. Its live endpoint use is quarantined as comparator/firewall evidence and is not needed for the no-go conclusion. The clean scope does not certify a first-principles derivation of the restricted carrier class or the granted T-side candidates; it certifies the no-go once those scoped premises are in place.
 - **auditor confidence:** high
+
+### `quark_route2_eta_floor_hf_boundary_note`
+
+- **Note:** [`QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md`](../../docs/QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the live Route-2 eta-floor implementation path used by the finite-difference endpoint chain and whether it exposes the spectral operator, floor eigenvalue, and eigenvector needed for a Hellmann-Feynman derivative.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-010503-f486067b1f-quark_route2_eta_floor_hf_bo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The live eta-floor endpoint is a nonspectral max-entry envelope, eta_floor[1] = max_probe,max_i,j |G_ij^TF(phi)|, not a lambda_min(A(phi)) object.  _(class `A`)_
+- **chain closes:** True — The provided runner source traces the implemented code path from support eta_floor to tensor_metrics to family_block to e_spatial_tf, scans the relevant functions for eigensolver calls, and dynamically checks endpoint equality to the max-entry observable. That is sufficient for the narrow implementation-boundary claim that the live chain lacks A(phi), lambda_min, and psi.
+- **rationale:** The load-bearing step is a class A implementation identity check, not a first-principles physics computation or an external numerical comparison. The runner is not merely printing PASS lines: its source performs source-text, AST, dynamic endpoint, and exposed-attribute checks that match the note's narrowed conclusion. The No-Go Discipline section is appropriately scoped: it blocks only the Hellmann-Feynman route for the current eta-floor object and explicitly leaves spectral-operator and nonspectral-envelope derivative routes open.
+- **auditor confidence:** medium
 
 ### `quark_route2_exact_readout_map_note_2026-04-19`
 

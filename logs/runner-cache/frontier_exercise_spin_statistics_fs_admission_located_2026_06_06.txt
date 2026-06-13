@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py
-runner_sha256: 735f0a8f5b807dbab8116db2e4a6cf0934fe092793873ce97b027c389713c556
+runner_sha256: 704ae9e5248b15949a1c53a8ff66c8c3df91069cd664a678d4cef1056bdf07a6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -32,8 +32,13 @@ status: ok
   [PASS] continuum migration remains separate frontier rather than current-surface closure  --  emergent Lorentz route is not consumed as a static-baseline proof
   [PASS] no new axiom and no audit verdict are asserted
 
+[BLOCK 5] Source-scope guards: route map is non-closing
+  [PASS] source note limits load-bearing scope to checked Cl(3), topology, and Record-boundary facts
+  [PASS] source note says route portfolio is not a closure theorem
+  [PASS] source note forbids CAR/spin-statistics closure and new axioms
+
 ========================================================================================
-SCORECARD:  PASS = 14   FAIL = 0
+SCORECARD:  PASS = 17   FAIL = 0
 ========================================================================================
 
 ----- stderr -----

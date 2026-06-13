@@ -63,9 +63,8 @@ import numpy as np
 
 PASS, FAIL = [], []
 ROOT = Path(__file__).resolve().parents[1]
-NOTE_TEXT = (
-    ROOT / "docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md"
-).read_text(encoding="utf-8")
+NOTE = ROOT / "docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md"
+NOTE_TEXT = NOTE.read_text(encoding="utf-8")
 NOTE_FLAT = " ".join(NOTE_TEXT.lower().split())
 
 
@@ -151,6 +150,34 @@ def block4_literature_and_routes():
     return True
 
 
+def block5_source_scope_guards():
+    print("\n[BLOCK 5] Source-scope guards: route map is non-closing")
+    note_text = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
+    check(
+        "source note limits load-bearing scope to checked Cl(3), topology, and Record-boundary facts",
+        "load-bearing scope for re-audit is limited" in note_text
+        and "facts directly checked" in note_text
+        and "the Cl(3) pseudoscalar is `i I`" in note_text
+        and "the exchange topology route supplies the order-two sign dichotomy" in note_text
+        and "Record supplies no" in note_text
+        and "within-sector exchange-sign datum" in note_text,
+    )
+    check(
+        "source note says route portfolio is not a closure theorem",
+        "route portfolio below is not a closure theorem" in note_text
+        and "multi-loop graded-net route is an open target" in note_text
+        and "continuum-migration route" in note_text
+        and "conditional on a future Lorentz/microcausality bridge" in note_text,
+    )
+    check(
+        "source note forbids CAR/spin-statistics closure and new axioms",
+        "It does not derive CAR" in note_text
+        and "does not close spin-statistics" in note_text
+        and "does not add a new axiom" in note_text,
+    )
+    return True
+
+
 def main():
     print("=" * 88)
     print("/exercise: spin-statistics/FS -- cross-site sign location and route boundary")
@@ -159,6 +186,7 @@ def main():
     block2_topology_dichotomy()
     block3_record_location()
     block4_literature_and_routes()
+    block5_source_scope_guards()
     print("\n" + "=" * 88)
     print(f"SCORECARD:  PASS = {len(PASS)}   FAIL = {len(FAIL)}")
     if FAIL:

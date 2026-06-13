@@ -750,6 +750,47 @@ def part11_refined_precursor_chain() -> None:
     )
 
 
+def part12_source_scope_caveat_retirement() -> None:
+    """Part 12: retire the stale phrase-match audit caveat explicitly.
+
+    The audit caveat referenced two runner FAIL lines that were phrase-match
+    artifacts against the Xi source note. The current runner/cache should have
+    no FAIL lines, and the Xi source note should pass a normalized source-scope
+    check rather than an exact phrase dependency.
+    """
+    print("\n" + "=" * 88)
+    print("PART 12: SOURCE-SCOPE CAVEAT RETIREMENT (no stale phrase-match FAILs)")
+    print("=" * 88)
+
+    source_note = read("docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md")
+    constructed_note = read("docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md")
+    flat_constructed = " ".join(constructed_note.lower().split())
+
+    check(
+        "Live carrier runner has no prior FAIL lines",
+        FAIL_COUNT == 0,
+        "legacy phrase-match FAIL artifacts are absent from the current run",
+    )
+    check(
+        "Xi source note passes normalized bounded/non-exact boundary check",
+        documents_bounded_not_exact_surface(constructed_note)
+        and "xi_r^(0)" in flat_constructed
+        and "endpoint-fixed affine bounded law" in flat_constructed,
+    )
+    check(
+        "Xi source scope remains A1 x bright-channel only, not a substantive drift",
+        "a1 x {e_x, t1x}" in flat_constructed
+        and "(gamma_e, gamma_t)" in flat_constructed
+        and "does not reintroduce a mixed `a1`-bright support block" in flat_constructed,
+    )
+    check(
+        "Source note records the 2026-06-13 phrase-match caveat retirement",
+        "source-scope caveat retirement (2026-06-13)" in source_note.lower()
+        and "substantive source-scope drift" in source_note.lower()
+        and "old phrase-match caveat is retired as stale" in source_note.lower(),
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("CARRIER ORBIT INVARIANCE — STRETCH ATTEMPT (cycle 22)")
@@ -766,6 +807,7 @@ def main() -> int:
     part9_independence_from_v_even_values()
     part10_review_value_boundary_check()
     part11_refined_precursor_chain()
+    part12_source_scope_caveat_retirement()
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

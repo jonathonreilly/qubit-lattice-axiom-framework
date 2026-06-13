@@ -1,0 +1,13 @@
+loop: carrier-orbit-source-scope-firewall-20260613
+target_claim_id: carrier_orbit_invariance_note_2026-05-03
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: source_scope_caveat_retirement
+files_touched:
+  - docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md
+  - scripts/frontier_carrier_orbit_invariance.py
+  - logs/runner-cache/frontier_carrier_orbit_invariance.txt
+status: ready_for_review
+next_exact_action: reviewer re-audits the row with the explicit source-scope guard
+stop_condition: PR opened for review

@@ -51102,11 +51102,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
+      "to": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06"
     },
     {
       "from": "repo.front_door_status",
-      "to": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06"
+      "to": "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
     },
     {
       "from": "repo.repo_organization",
@@ -98191,11 +98191,11 @@
         "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
         "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
         "flavor_native_double_shift_corner_coupling_note_2026-05-30",
-        "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
-        "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06"
+        "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+        "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "948bba70da885c81b00e032495f70fab9869add1822f971249c21fe771fa5409",
+      "note_hash": "5f79563d7b93b6fb66de6bd735e3260188d02783dacf1a0c4d40feb79d6cf71f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 359,
+    "critical": 358,
     "high": 261,
     "leaf": 478,
     "medium": 435
@@ -456,31 +456,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "cl3_taste_generation_theorem",
-      "claim_scope": "Abstract C^8=(C^2)^{otimes 3} tensor-position S3/Z3 representation theorem, including the hw=1 A1+E orbit and runner-defined restricted Y/T3 spectra, with no carrier or physical-family identification.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "s3_taste_cube_decomposition_note",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 23,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 24.85,
-      "note_path": "docs/CL3_TASTE_GENERATION_THEOREM.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py",
-      "transitive_descendants": 1304
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -46299,6 +46274,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 84,
-  "total_pending": 1533
+  "ready_count": 83,
+  "total_pending": 1532
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 863 |
+| **retained_bounded** | 864 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1436 |
+| unaudited | 1435 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1315 |
+| `audited_clean` | 1316 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1753 |
+| `unaudited` | 1752 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 879 |
-| `leaf` | 1341 |
+| `medium` | 878 |
+| `leaf` | 1342 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -580,6 +580,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -8201,6 +8202,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner computes rho_(p,q)(6)=c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) on 0<=p,q<=4 by both a Bessel-determinant formula and direct SU(3) Weyl torus integration, with max absolute disagreement 4.136e-15.  _(class `C`)_
 - **chain closes:** True — The restricted packet defines the target integral and normalization, and the runner source actually computes the coefficients by two independent implementations rather than importing or hard-coding the tabulated values. The broader residual-environment and full tensor-transfer identifications are explicitly outside this claim's scope.
 - **rationale:** The load-bearing finite coefficient table is produced from the stated SU(3) Wilson integral by implemented Bessel-determinant and Weyl-integration computations, with no cited open dependency and no hard-coded expected rho values. The structural checks over the resulting finite diagonal operator are algebraic or numerical consequences of the computed table. The clean boundary is only the bounded single-link coefficient computation and finite-box structural gates, not the parent residual-environment identification, all-weight closure, or analytic P(6).
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite beta=6 constructed-eta proxy on the NMAX=4, MODE_MAX=80 tensor-word packet, followed by one/two/three-word matrix-element ladder readouts through the NMAX=7, MODE_MAX=200 source-sector Perron machinery; no physical 3D unmarked environment, untruncated limit, L_perp limit, analytic P(6), or repinning claim was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-004909-7313753115-gauge_vacuum_plaquette_rim_b`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite proxy boundary is defined and read out as eta_constructed := tensor_word * e_(0,0), with unmarked word slots weighted by eta_constructed(label_j) and normalized by the lambda=(0,0) readout.  _(class `A`)_
+- **chain closes:** True — Within that bounded scope, the retained finite tensor-word packet supplies tensor_word and e_(0,0), and the retained source-sector machinery accepts the resulting finite rho readouts as input. An independent recomputation of the tensor column, eta ratios, and two/three-word constructed-eta source P values matched the note's load-bearing numbers.
+- **rationale:** The source does not identify eta_constructed with the full physical eta_beta^env; it explicitly keeps that bridge as a named residual. The actual audited claim is a finite algebraic construction and finite Perron readout over retained bounded inputs, and the runner source computes the relevant objects rather than merely printing constants. Hard-coded prior values are used for baseline reproduction and comparator isolation, not for the constructed-eta readout itself.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`

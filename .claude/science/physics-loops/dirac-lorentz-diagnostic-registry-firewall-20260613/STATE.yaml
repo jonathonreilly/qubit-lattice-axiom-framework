@@ -1,0 +1,13 @@
+loop: dirac-lorentz-diagnostic-registry-firewall-20260613
+target_claim_id: dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: primitive_registry_firewall
+files_touched:
+  - docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md
+  - scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py
+  - logs/runner-cache/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.txt
+status: ready_for_review
+next_exact_action: reviewer re-audits the row with the explicit primitive-registry firewall
+stop_condition: PR opened for review

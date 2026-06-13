@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 278,
     "high": 285,
-    "leaf": 421,
+    "leaf": 420,
     "medium": 421
   },
   "cycle_break_target_count": 4,
@@ -17115,31 +17115,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
-        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_p1_collapses_frame_residuals_note_2026-06-01",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17261,6 +17236,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/SIGNED_GRAVITY_NATIVE_TRANSFER_KERNEL_TWIST_SUFFICIENCY_TEST_NARROW_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/signed_gravity_native_transfer_kernel_twist_sufficiency_2026_06_11.py",
       "transitive_descendants": 16
     },
     {
@@ -30146,31 +30146,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SIGNED_GRAVITY_NATIVE_TRANSFER_KERNEL_TWIST_SUFFICIENCY_TEST_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/signed_gravity_native_transfer_kernel_twist_sufficiency_2026_06_11.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -42509,6 +42484,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 15,
-  "total_pending": 1405
+  "ready_count": 14,
+  "total_pending": 1404
 }

@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_gamma5_factor_bridge_no_go_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
         "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
         "koide_p1_collapses_frame_residuals_note_2026-06-01",
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
         "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
-        "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
+        "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
+        "signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4445d982c40ae289f1a7400d6e0c0e5b779e911d5ee635be81e82c94fd1e594a",
+      "note_hash": "30076b41bb0ac176e16dca5906cae99398fe17261600a783c3589fd11c7182fc",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

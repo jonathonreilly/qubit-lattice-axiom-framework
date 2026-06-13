@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1519 |
-| Retained-grade rows, including boxed decorations | 1357 |
+| Applied audit verdicts | 1520 |
+| Retained-grade rows, including boxed decorations | 1358 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 884 |
+| Retained bounded rows | 885 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1403 |
+| Unaudited rows | 1402 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 58 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1405 |
-| Ready rows | 15 |
+| Total pending rows | 1404 |
+| Ready rows | 14 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 421 |
+| Leaf pending | 420 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`koide_p1_collapses_frame_residuals_note_2026-06-01`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md) - medium; unaudited
 - [`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02`](../../docs/PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md) - medium; unaudited
 - [`record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
-- [`signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_NATIVE_TRANSFER_KERNEL_TWIST_SUFFICIENCY_TEST_NARROW_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
+- [`signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_NATIVE_TRANSFER_KERNEL_TWIST_SUFFICIENCY_TEST_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,14 +83,14 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3383 |
 | Critical nodes | 521 |
 | High nodes | 514 |
-| Medium nodes | 919 |
-| Leaf nodes | 1429 |
+| Medium nodes | 917 |
+| Leaf nodes | 1431 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1565 descendants; score 132.613
-- `three_generation_observable_theorem_note` - critical; 1037 descendants; score 64.020
-- `graph_first_su3_integration_note` - critical; 1396 descendants; score 60.948
+- `three_generation_observable_theorem_note` - critical; 1036 descendants; score 64.018
+- `graph_first_su3_integration_note` - critical; 1395 descendants; score 60.947
 - `observable_principle_from_axiom_note` - critical; 887 descendants; score 59.294
 - `key_terminology` - critical; 1281 descendants; score 50.324
 - `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 49.567

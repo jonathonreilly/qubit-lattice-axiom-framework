@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 885 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1398 |
+| unaudited | 1397 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 61 |
+| ~~audited_conditional~~ | 62 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -63,21 +63,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1339 |
-| `audited_conditional` | 61 |
+| `audited_conditional` | 62 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1715 |
+| `unaudited` | 1714 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1606 |
+| `bounded_theorem` | 1607 |
 | `decoration` | 51 |
 | `meta` | 325 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 780 |
+| `positive_theorem` | 779 |
 
 | criticality | count |
 |---|---:|
@@ -1518,6 +1518,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -16333,6 +16334,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For each sampled dial distribution pi(s)=(1,s,s^2)/(1+s+s^2) at s=1,2,3, the supplied complete-graph reversible generator Q(s) satisfies Q(s) pi(s)=0 with one zero eigenmode and negative transverse modes.  _(class `A`)_
 - **chain closes:** True — The displayed generator construction algebraically gives nonnegative off-diagonal rates, zero column sums, stationarity of pi, and stable transverse modes for the three sampled dial values. Rate scaling and the two-state semigroup example also close as dimensionless algebraic checks.
 - **rationale:** The claim is explicitly scoped to supplied generators and sampled dial locations, not to a derived physical generator or Record-selected dial value. Independently, Q pi=0 follows because each column j has off-diagonal entries 1/pi_j and diagonal minus their sum, and the reversible symmetric form has one stationary mode with negative transverse modes. The count/probability separation and clock/rate quotient checks are ordinary finite algebra, with no external comparator or tuned numerical input.
+- **auditor confidence:** high
+
+### `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite runner-defined L=3 to L=4 ring diagnostic for the fixed-prefix-k conditional law under the stated constants, seeds, depths, K=7 seeds, and K=6 half-filling controls.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-025551-a8fcf1a950-record_conditional_law_perio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Every tested L=4 seed has a monotone fixed-k profile clearing the fixed seeded 300-draw permutation-null p95 diagnostic, with L=4 median gap about 1.40x the L=3 baseline set.  _(class `C`)_
+- **chain closes:** False — The runner source genuinely computes the finite profiles, null p95 diagnostics, monotonicity inequalities, and median-gap arithmetic rather than merely printing constants. The theorem-level chain does not close from the restricted packet because the note expressly inherits the #3554/#3507 named law, Born-derived-chain cap, supplied carrier/readout context, and parameter premises without providing retained upstream authorities.
+- **rationale:** The numerical load-bearing result is class C: the runner instantiates sparse Fock operators, evolves the finite tree, computes determinants/profiles/null diagnostics, and verifies the displayed inequalities. An independent arithmetic pass over the displayed gaps confirms the overlap claim, the L3 median +0.139, the L4 median +0.193, and the reported approximately 1.40x ratio. However, the source note itself marks key physical/contextual ingredients as inherited from #3554/#3507, and those one-hop authorities are absent from the packet. The clean theorem claim therefore remains conditional on missing upstream closure, not failed or renaming.
 - **auditor confidence:** high
 
 ### `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11`

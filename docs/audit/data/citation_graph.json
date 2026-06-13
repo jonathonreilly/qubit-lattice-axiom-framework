@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_taste_cube_cyclic_source_descent_note_2026-04-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su3_dabc_symmetric_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
         "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11",
         "quark_route2_eta_floor_hf_boundary_note",
         "signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12",
         "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
         "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
-        "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
+        "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
+        "su3_dabc_symmetric_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "67623b3be2ac54377eac3dc0021838caef24a9eaf9d253c7ab8724a30a054515",
+      "note_hash": "c123925280fba4b11cf7a0696cb2f24b72be20b97b84661ed24b4db9be5bf517",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

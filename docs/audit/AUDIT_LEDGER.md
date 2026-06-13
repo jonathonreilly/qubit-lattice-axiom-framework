@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 865 |
+| **retained_bounded** | 866 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1432 |
+| unaudited | 1431 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1317 |
+| `audited_clean` | 1318 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1749 |
+| `unaudited` | 1748 |
 
 | claim_type | count |
 |---|---:|
@@ -101,24 +101,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1565 | 132.61 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1037 | 64.02 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1036 | 64.02 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1396 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
-| 5 | `key_terminology` | meta | critical | 1282 | 50.33 | `unaudited` | meta |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1073 | 49.57 | `unaudited` | meta |
+| 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
 | 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 928 | 44.36 | `unaudited` | unaudited |
-| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 928 | 43.36 | `unaudited` | unaudited |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
+| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
 | 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 797 | 39.14 | `audited_clean` | **retained_bounded** |
-| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1272 | 38.81 | `audited_clean` | **retained_bounded** |
+| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1271 | 38.81 | `audited_clean` | **retained_bounded** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 737 | 38.03 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1363 | 36.91 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1139 | 36.16 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 930 | 34.86 | `unaudited` | unaudited |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1362 | 36.91 | `audited_clean` | **retained** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1138 | 36.15 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 929 | 34.86 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 728 | 33.01 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 725 | 31.50 | `unaudited` | unaudited |
@@ -870,6 +870,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
+| `matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_decay_diagnosis_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -12544,6 +12545,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Three Gaussian packets of different initial widths, under the same uniform force field, give response slopes differing by a factor of 10; equivalence principle fails at the persistent-object level on the grown-DAG propagator.  _(class `C`)_
 - **chain closes:** True — The runner constructs the grown-DAG packets and field response directly, then reports failures in persistence, Newton R2 threshold, equivalence-slope agreement, and family portability. The note explicitly bounds the conclusion to this attempted Gaussian-packet/uniform-linear-field closure route rather than a universal impossibility theorem for all matter mechanisms.
 - **rationale:** The load-bearing negative follows from the cached completed runner: slope relative deviation across packets is 123.07%, with persistence and family-portability criteria also failing. The runner does not merely print constants; it grows the DAG, constructs Gaussian sources, applies the linear field, propagates amplitudes, fits delta_z versus g, and computes the stated failure metrics. This supports a clean scoped no-go for the specified Gaussian-packet closure attempt, not a broader no-go against solitons, coherent states, topological defects, modified actions, or other structural alternatives. Residual risk is confined to whether the audit lane should treat the author's 10% and R2 > 0.99 thresholds as the intended closure criteria, but the equivalence failure is large enough that the conclusion is not threshold-fragile.
+- **auditor confidence:** high
+
+### `matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`MATTER_LOOP_FLUX_RESPONSE_NO_UNIFORM_SIGN_SHELL_NMOD4_RESOLVED_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/MATTER_LOOP_FLUX_RESPONSE_NO_UNIFORM_SIGN_SHELL_NMOD4_RESOLVED_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite U(1) flux response V(phi)=E0(phi) for the listed free staggered-mass rings, N in {8,10,12,14,16}, supplied fillings K=N/2 and K=N/2-1, listed masses, and ground-state response only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-010236-91d8c95937-matter_loop_flux_response_no`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the tested finite free rings, the ground-state flux-response curvature has no uniform sign: N=4n closed shells alternate with particle parity, N=4n+2 half-filled even-K closed shells flip positive, and the N=4n+2 K=N/2-1 cases are cusps rather than curvature data.  _(class `C`)_
+- **chain closes:** True — The runner instantiates the finite twisted tight-binding Hamiltonian, diagonalizes it, forms ground-state sums, separates smooth second-difference curvatures from cusp cases, and does not import the beta formula or any cross-note premise. An independent analytic-spectrum check reproduces the stated signs, N=4n+2 flip values, cusp jumps, and filled-band flatness within finite-difference roundoff.
+- **rationale:** The load-bearing step is a first-principles finite-model computation from the explicit Hamiltonian, not a definition, renaming, comparator match, or imported beta-function statement. The code computes spectra and energies directly rather than printing hard-coded contested values, and the displayed quantitative claims are independently checked by the analytic free-ring band formula. The negative claim is narrowly bounded to the tested finite shell packet; the note explicitly excludes open-shell cusps from curvature tables and excludes continuum, parity-averaged, beta-function, non-Abelian, interacting, and gauge-self-energy extensions. The N1-N8 no-go discipline section supplies the required attack-route and scope controls for this bounded no-uniform-sign statement.
 - **auditor confidence:** high
 
 ### `matter_self_focusing_note`

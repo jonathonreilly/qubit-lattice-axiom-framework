@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1434
+**Total pending:** 1433
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 43
 
 By criticality:
 - `critical`: 278
 - `high`: 285
 - `medium`: 421
-- `leaf`: 450
+- `leaf`: 449
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -17,13 +17,13 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1051 | 11.04 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
 | 2 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1049 | 40.54 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
-| 3 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 930 | 34.86 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_bz_corner_decomposition.py` |
-| 4 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | unaudited | critical | 928 | 44.36 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_staggered_dirac_substep4_ac_check_2026_05_07_substep4ac.py` |
-| 5 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | unaudited | critical | 928 | 43.36 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py` |
-| 6 | `staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17` | bounded_theorem | unaudited | critical | 928 | 15.86 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py` |
-| 7 | `staggered_dirac_physical_species_direct_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 928 | 15.86 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_three_states_direct_derivation.py` |
-| 8 | `staggered_dirac_substep4_labeling_no_go_note_2026-05-17` | no_go | unaudited | critical | 928 | 14.86 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py` |
-| 9 | `staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 928 | 13.36 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py` |
+| 3 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 929 | 34.86 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_bz_corner_decomposition.py` |
+| 4 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | unaudited | critical | 927 | 44.36 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_staggered_dirac_substep4_ac_check_2026_05_07_substep4ac.py` |
+| 5 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | unaudited | critical | 927 | 43.36 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py` |
+| 6 | `staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17` | bounded_theorem | unaudited | critical | 927 | 15.86 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py` |
+| 7 | `staggered_dirac_physical_species_direct_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 927 | 15.86 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_three_states_direct_derivation.py` |
+| 8 | `staggered_dirac_substep4_labeling_no_go_note_2026-05-17` | no_go | unaudited | critical | 927 | 14.86 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py` |
+| 9 | `staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 927 | 13.36 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py` |
 | 10 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 893 | 10.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py` |
 | 11 | `yt_vertex_power_derivation` | bounded_theorem | unaudited | critical | 890 | 11.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_vertex_power.py` |
 | 12 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 887 | 59.29 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
@@ -72,9 +72,9 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
 |---:|---|---:|---:|---|---|---|
-| 1 | `cycle-0001` | 3 | 928 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | critical | audited_conditional |
-| 2 | `cycle-0002` | 3 | 928 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | critical | audited_conditional |
-| 3 | `cycle-0003` | 4 | 928 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | critical | audited_conditional |
-| 4 | `cycle-0004` | 4 | 928 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | critical | audited_conditional |
+| 1 | `cycle-0001` | 3 | 927 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | critical | audited_conditional |
+| 2 | `cycle-0002` | 3 | 927 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | critical | audited_conditional |
+| 3 | `cycle-0003` | 4 | 927 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | critical | audited_conditional |
+| 4 | `cycle-0004` | 4 | 927 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | critical | audited_conditional |
 
 Full queue lives in `data/audit_queue.json`.

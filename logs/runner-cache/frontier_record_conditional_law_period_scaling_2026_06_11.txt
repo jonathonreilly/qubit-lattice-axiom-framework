@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py
-runner_sha256: 0df121de862c15b13ecb983a909ec5615ebd78cdb8d52e1a949cc8f35450df9e
+runner_sha256: 4331af553f43ab6026f82bbdd716c29c3eea9803dbd232d49181aefec6a229f6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 17.76
+elapsed_sec: 23.52
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -39,8 +39,10 @@ Part 4  the two-point scaling verdict (labeled as such)
 ==============================================================================
   [PASS] the L=4 seeded-null diagnostic gaps are COMPARABLE-OR-LARGER than the L=3 SET (panel-corrected fairness: the L=3 baseline is BOTH #3554 events; ranges overlap -- worst L=4 below best L=3; median ratio ~1.4x, NOT doubled; magnitudes instance/seed-labeled)  (L=3 set ['+0.088', '+0.190'] (median +0.139) -> L=4 ['+0.193', '+0.217', '+0.076'] (median +0.193; ratio 1.40x))
   [PASS] THE LOAD-BEARING POSITIVE: the fixed-k profile is MONOTONE at the most-spread row of EVERY tested L=4 seed (7/7 K=7 seeds + a K=6 half-filling control) -- seed-robust monotonicity at the larger period; consistent with, NOT establishing, strengthening (at L=3 monotonicity was event-specific)
+  [PASS] source note declares fixed seeded 300-draw sampled-null scope
+  [PASS] source note forbids exhaustive, certified-bound, or MC-free null theorem
 ==============================================================================
-TOTAL: PASS=14 FAIL=0
+TOTAL: PASS=16 FAIL=0
 ==============================================================================
 SCOPE: scales #3554's named object (the fixed-prefix-k conditional law) from
   L=3 to L=4 (rings; Z^3 untested -- geometry disclosed; two periods = a
@@ -55,8 +57,10 @@ SCOPE: scales #3554's named object (the fixed-prefix-k conditional law) from
   period law, concentration in the large-period limit, any CLT premise,
   L>=5/Z^3 behavior, or gap universality (instance/seed-labeled).  Guards
   inherited (#3554/#3507: exact tree, SVD polar, rank/no-prune, the fixed seeded
-  300-draw permutation-null diagnostic armed at every gated event).  Born cap inherited (audit lane
-  grades).  The U(1) factor is NOT identified with a physical gauge field.
+  300-draw sampled-null diagnostic armed at every gated event).  No exhaustive
+  permutation-null p95, certified finite-sample bound, or MC-free null theorem
+  is claimed.  Born cap inherited (audit lane grades).  The U(1) factor is NOT
+  identified with a physical gauge field.
   Discrete-time (retained R1 boundaries untouched).  No new axiom/primitive/
   measure/weight; r untouched.
 

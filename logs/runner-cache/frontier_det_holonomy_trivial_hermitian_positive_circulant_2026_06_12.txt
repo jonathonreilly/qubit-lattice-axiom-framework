@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/frontier_det_holonomy_trivial_hermitian_positive_circulant_2026_06_12.py
+runner_sha256: 2b53836df0450f2b675f72cedd6e6029089b9c58fb4c10cfa6149b8e497daa80
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+Det holonomy trivial on Hermitian positive circulant edge content
+Status authority: independent audit lane only. This runner does not set or predict an audit outcome.
+No cache is written. No R-eta claim is made.
+
+================================================================================================
+V1 symbolic: generic 3 x 3 P = A^dagger A + epsilon I
+================================================================================================
+PASS: V1 symbolic construction is Hermitian
+      Adjoint(P)-P -> 0
+PASS: V1 symbolic positive branch has |P|^2 = P^2
+      P^2 - P^dagger P -> 0
+PASS: V1 symbolic polar unitary U = P |P|^-1 = I
+      P * Inverse(P) -> I
+
+================================================================================================
+V1 numeric: two generic positive-definite Hermitian witnesses
+================================================================================================
+PASS: V1 numeric witnesses are positive and have polar(P)=I
+      min eigenvalues=[0.3826698823924701, 0.42696253800880896]; polar residuals=[7.330266410210616e-16, 7.427975383286733e-16]
+
+================================================================================================
+V1/V2 numeric: supplied circulant positivity and polar links
+================================================================================================
+(a,B,delta)=(3.0,0.75,0.37) eigenvalues=[1.83100227 2.77050672 4.39849102]
+(a,B,delta)=(4.25,1.5,1.91) eigenvalues=[2.29906672 3.25179126 7.19914202]
+PASS: V1 circulant witnesses have positive spectrum and polar(H)=I
+      polar residuals=[6.415639738678321e-16, 1.5487572470640286e-15]
+
+================================================================================================
+V2 scan: 25 deltas x 2 positive-domain (a,B) pairs
+================================================================================================
+(a,B)=(3.0,0.75) max |phi|=1.273e-15; max hol-I deviation so far=3.515e-15
+(a,B)=(4.25,1.5) max |phi|=1.591e-15; max hol-I deviation so far=3.963e-15
+PASS: V2 3-cycle composite holonomy is I across the scan
+      max ||Hol-I||_F=3.963e-15
+PASS: V2 determinant phase phi(delta) is identically zero across the scan
+      max |phi|=1.591e-15
+
+================================================================================================
+V2 harmonics and K-parity
+================================================================================================
+(a,B)=(3.0,0.75) harmonic coefficients={'constant': -2.0860021273067596e-16, 'cos3': 3.3650000763194186e-16, 'sin3': 1.3997183736765211e-16, 'cos6': -2.300686966156915e-17, 'sin6': 1.9058574421376118e-16}
+(a,B)=(4.25,1.5) harmonic coefficients={'constant': -9.65326287277244e-17, 'cos3': 2.39656010401521e-17, 'sin3': 1.2851054436631932e-16, 'cos6': -7.340378400457767e-17, 'sin6': -3.4619953520625224e-16}
+PASS: V2 harmonic projections constant/cos3/sin3/cos6/sin6 vanish
+      max coefficient magnitude=3.462e-16
+PASS: V2 K-parity even part is identically zero
+      max |even|=0.000e+00
+PASS: V2 K-parity odd part is identically zero
+      max |odd|=1.591e-15
+
+================================================================================================
+V3a negative control: non-Hermitian directed perturbation
+================================================================================================
+non-Hermitian residual=7.348469e-01; ||polar(edge)-I||_F=2.054542e-01; cycle det phase=0.266526656398
+PASS: V3a witness is explicitly non-Hermitian
+      ||M^dagger-M||_F=7.348e-01
+PASS: V3a polar factor is not I and cycle det phase is nonzero
+      polar residual=2.055e-01; phase=0.266527
+
+================================================================================================
+V3b negative control: off-domain Hermitian sign sector
+================================================================================================
+off-domain H eigenvalues=[-0.5  2.5  2.5]
+polar factor eigenvalues=[ 1.+1.54162744e-31j -1.+8.42338745e-32j  1.+1.19537342e-32j]; cycle det phase=-3.141592653590
+PASS: V3b witness has an off-domain negative eigenvalue
+      min eigenvalue=-0.500000
+PASS: V3b polar factor is a nontrivial reflection with pi-valued cycle phase
+      ||polar(H)-I||_F=2.000e+00; phase=-3.141593
+
+================================================================================================
+B-checks: note boundary and inventory
+================================================================================================
+PASS: B firewall and walls-move sentences are present
+      required wall/firewall phrases scanned
+PASS: B forbidden wall phrases are absent
+      forbidden=('closes the route', 'closes this route', 'exhausted'); only_count=1
+PASS: B markdown link inventory is exactly MINIMAL_AXIOMS
+      links=['MINIMAL_AXIOMS_2026-06-05.md']
+PASS: B context filenames are backticked and not markdown-linked
+      contexts=('INDUCED_HOLONOMY_MATTER_STATE_FUNCTIONAL_DERIVED_CURVATURE_TRAJECTORY_BOUNDED_THEOREM_NOTE_2026-06-10.md', 'KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md')
+PASS: B No-promotion statement is present
+PASS: B standard status lines are present
+
+================================================================================================
+SUMMARY: PASS=20 FAIL=0
+================================================================================================
+
+----- stderr -----
+

@@ -64,7 +64,16 @@ from pathlib import Path
 NOTE=Path(__file__).resolve().parent.parent/"docs"/"KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md"
 if NOTE.exists():
     tt=NOTE.read_text()
-    toks=["**Type:** narrow_theorem","red herring","not a derivation of `r = 1/2`","L-R coupling","grading","Independent audit required"]
+    toks=[
+        "**Type:** narrow_theorem",
+        "red herring",
+        "not a derivation of `r = 1/2`",
+        "L-R coupling",
+        "grading",
+        "The converse is **not** claimed",
+        "no retained bridge supplied here",
+        "Independent audit required",
+    ]
     chk("(6) source note keeps the localization/correction/no-derivation boundary", all(k in tt for k in toks))
 else:
     chk("(6) source note present", False)

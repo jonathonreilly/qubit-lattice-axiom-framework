@@ -75,9 +75,9 @@ The real selector is the **order** of the generation determinant:
 |---|---|
 | `Q=(1+2r)/3` δ-independent → U(1)_b red herring | exact (runner (1)) |
 | discrete Z₃-character index → (1,1) → r=1/2, C³=I respected | exact (runner (2)) |
-| within `R³`: C₃-equivariant/circulant mass ⇒ second-order/Berry-flat branch ⇒ `r=1` | exact (runner (3),(5)); cited no-go |
+| native circulant `R³` family: C₃-equivariance forces second-order/Berry-flat branch ⇒ `r=1`; converse not claimed outside that family | exact (runner (3),(3c),(5)); cited no-go |
 | factor-crossing L-R coupling `M(b)⊗σ₊` = the first-order escape | exact (runner (4)) |
-| framework supplies grading `ε`, not the coupling | the gate (AC_φλ corner realization) |
+| framework supplies grading `ε`, not the coupling | open gate (AC_φλ corner realization; no retained bridge supplied here) |
 | **derive r=1/2** | **open — gated on the corner-mass L-R coupling** |
 
 The contribution is to **name the selector precisely** (a chiral L-R coupling, not a symmetry, not a static
@@ -100,9 +100,21 @@ This is exactly the gate, not a closure.
 ## Forbidden-import / reprove-and-cite discipline
 
 - Every identity (δ-independence, clock-character multiplicity, `comm(C)∩anticomm(Γ_χ)={0}`, the `R³⊗C²`
-  escape, Fourier Berry-flatness) is **reproven** from the C₃ primitive in the runner (sympy, 8/8 exact).
+  escape, the non-converse counterexample, Fourier Berry-flatness) is **reproven** from the C₃ primitive in
+  the runner (sympy exact).
 - McKean-Singer / Dolbeault index, Coleman-Weinberg, and the Berry-phase comparators are non-derivation
   context only. No PDG values; `r=1/2` is named only as the target this note does **not** derive.
+
+## 2026-06-12 audit-scope repair
+
+This repair removes the overbroad shorthand `C₃-equivariance ⟺ commutes-with-Γ_χ`. The only retained-side
+claim used here is the narrower native-family statement: for circulant generation masses, C₃-equivariance
+forces commutation with `Γ_χ`, and the C₃-equivariant/`Γ_χ`-anticommuting intersection is zero.
+The converse is **not** claimed in the full endomorphism algebra; the runner exhibits a non-circulant
+counterexample.
+
+This repair does **not** supply a retained bridge from `AC_φλ` to the physical `M(b)⊗σ₊` coupling or to the
+physical `r`-weighting. Those remain the load-bearing open gates for any positive `r=1/2` derivation.
 
 ## Dependencies (citation-graph visible)
 

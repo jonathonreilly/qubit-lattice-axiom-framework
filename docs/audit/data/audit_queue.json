@@ -458,25 +458,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "cl3_taste_generation_theorem",
-      "claim_scope": null,
+      "claim_scope": "Abstract C^8=(C^2)^{otimes 3} tensor-position S3/Z3 representation theorem, including the hw=1 A1+E orbit and runner-defined restricted Y/T3 spectra, with no carrier or physical-family identification.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "s3_taste_cube_decomposition_note",
         "minimal_axioms"
       ],
       "direct_in_degree": 23,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 24.85,
       "note_path": "docs/CL3_TASTE_GENERATION_THEOREM.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py",
       "transitive_descendants": 1304
@@ -599,6 +599,30 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
+      "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+      "claim_scope": "Under the stated massless, zero-chemical-potential 3+1D thermal hypotheses, the fermionic per-internal-degree energy-density integral is exactly 7/8 of the bosonic one, giving rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4; Standard Model inventory counts remain external.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": "awaiting_second",
+      "deps": [
+        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "retained_bounded",
+      "helper_runner_paths": [],
+      "load_bearing_score": 15.809,
+      "note_path": "docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "queue_reason": "audit_in_progress",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py",
+      "transitive_descendants": 1268
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
@@ -628,30 +652,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_quark_route2_source_domain_bridge_no_go.py",
-      "transitive_descendants": 1267
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
-      "claim_scope": "Under the stated massless, zero-chemical-potential 3+1D thermal hypotheses, the fermionic per-internal-degree energy-density integral is exactly 7/8 of the bosonic one, giving rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4; Standard Model inventory counts remain external.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.308,
-      "note_path": "docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py",
       "transitive_descendants": 1267
     },
     {

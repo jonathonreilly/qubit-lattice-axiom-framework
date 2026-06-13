@@ -120,7 +120,7 @@
   ],
   "cycles_detected": 20,
   "effective_status_counts": {
-    "audited_conditional": 22,
+    "audited_conditional": 23,
     "audited_failed": 1,
     "audited_numerical_match": 13,
     "audited_renaming": 32,
@@ -154,13 +154,13 @@
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 317,
     "open_gate": 38,
-    "retained": 214,
-    "retained_bounded": 874,
+    "retained": 212,
+    "retained_bounded": 872,
     "retained_no_go": 204,
-    "retained_pending_chain": 17,
-    "unaudited": 1511
+    "retained_pending_chain": 19,
+    "unaudited": 1512
   },
-  "retained_pending_chain_count": 17,
+  "retained_pending_chain_count": 19,
   "retained_pending_chain_examples": [
     "axiom_first_cpt_theorem_stretch_note_2026-04-29",
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
@@ -172,12 +172,14 @@
     "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
     "lattice_3d_nyquist_diffraction_note",
     "linear_response_second_order_kubo_note",
+    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
     "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
     "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08",
     "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
     "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+    "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
     "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"
   ]
 }

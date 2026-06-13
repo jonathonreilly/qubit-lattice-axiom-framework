@@ -18,16 +18,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 214 |
+| **retained** | 212 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 874 |
-| _retained_pending_chain_ | 17 |
+| **retained_bounded** | 872 |
+| _retained_pending_chain_ | 19 |
 | open_gate | 38 |
-| unaudited | 1511 |
+| unaudited | 1512 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 24 |
-| `audited_clean` | 1295 |
-| `audited_conditional` | 22 |
+| `audit_in_progress` | 23 |
+| `audited_clean` | 1294 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1828 |
+| `unaudited` | 1829 |
 
 | claim_type | count |
 |---|---:|
@@ -85,7 +85,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 856 |
 | `leaf` | 1372 |
 
-- **Retained pending chain closure:** 17
+- **Retained pending chain closure:** 19
 - **Citation cycles detected:** 20
 
 ### Runner classification (static heuristic)
@@ -138,9 +138,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_dynamical_fixation_obstruction_note_2026-04-18` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -155,7 +154,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -290,7 +289,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `chsh_structural_bound_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1464,6 +1462,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma5_factor_bridge_no_go_note_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3457,19 +3456,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Landau identity S_op^2 = 4I - [Ã_0, Ã_1][B̃_0, B̃_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2√2.  _(class `A`)_
 - **chain closes:** True — The classical proof is a finite sign enumeration and the quantum proof is an exact operator identity plus standard norm inequalities under the stated tensor-product involution hypotheses. The runner source performs genuine symbolic and numerical checks rather than merely printing pass lines.
 - **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
-- **auditor confidence:** high
-
-### `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20`
-
-- **Note:** [`CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`](../../docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** For a distinct-site two-qubit tensor carrier C^2_x tensor C^2_y with dichotomic self-adjoint single-qubit observables, the CHSH operator has norm at most 2*sqrt(2), with the standard Pauli/Bell state-space witness saturating the bound; no dynamical preparation or multiparty Bell extension is audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260610-050224-b2fe2be0b3-chsh_tsirelson_lattice_qubit`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The Landau identity C^2 = 4I - [A_1,A_2] tensor [B_1,B_2] together with ||[A_1,A_2]|| <= 2 and ||[B_1,B_2]|| <= 2 gives ||C||^2 <= 8, hence ||C|| <= 2*sqrt(2).  _(class `A`)_
-- **chain closes:** True — The retained two-site tensor-carrier bridge supplies the ordinary M_2(C) tensor M_2(C) surface and Bell-vector state space, while the displayed finite-dimensional operator algebra proves the Tsirelson bound and saturation. The only non-retained-status cited authority is the minimal axiom memo flagged as an accepted axiom premise, so it does not downgrade dependency closure.
-- **rationale:** The load-bearing square identity has the correct minus sign for the plus/plus/plus/minus CHSH convention, and the commutator norm estimate gives the stated 2*sqrt(2) bound. The Pauli/Bell witness independently saturates the bound on the retained two-site qubit surface. The runner source performs actual symbolic and numeric matrix checks, includes a wrong-sign negative control, and has no missing helper imports or external comparator input.
 - **auditor confidence:** high
 
 ### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`
@@ -12609,6 +12595,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The live probe reproduces the frozen controls and finite quadrupole rows: same-site and neutral controls are zero, the dipole mainly shifts centroid, and the centered quadrupoles give near-zero centroid change with positive width response at a = 1.0 and a = 2.0. The source explicitly excludes full tensor gravity and a general multipole theory.
 - **rationale:** The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration.
 - **auditor confidence:** high
+
+### `multisite_pauli_group_theorem_note_2026-05-02`
+
+- **Note:** [`MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Algebraic structure of the group generated by sitewise Pauli matrices on a stipulated H=(C^2)^{tensor N}: order 4^{N+1}, scalar center Z_4, quotient (Z_2 x Z_2)^N, exponent dividing 4, and minimal generator count 2N+1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260613T222843Z-multisite_pauli_group_theorem_no`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The full multi-site group has one global Z_4 of scalar phases and 4 Pauli cosets per site, so |P_N| = 4 · 4^N = 4^{N+1}; the same structure gives center, quotient, element orders, and the 2N+1 generator count via the abelianization.  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, positive_theorem, class A). Vote breakdown: J1: second / audited_conditional / positive_theorem / A; J2: second / audited_conditional / positive_theorem / A; J3: second / audited_conditional / positive_theorem / A; J4: second / audited_conditional / positive_theorem / A; J5: second / audited_conditional / positive_theorem / A. Majority rationale: J1: Independent algebra check confirms the Pauli-string normal form: one global phase in {+/-1,+/-i} times one of four local Pauli cosets per site, giving |P_N|=4^{N+1}, scalar center Z_4, quotient order 4^N, exponent dividing 4, and abelianization rank 2N+1. The runner is consistent with these class-A finite matrix checks, but the cited authority explicitly moves the physical per-site Hilbert/Fock-space bridge out of scope. No relevant registered... | J2: The displayed Pauli-group identities check algebraically: the global phase is one Z_4, each site contributes four center cosets, the center is scalar, the quotient has order 4^N, g^4=I, and [P_N,P_N]={+-I} gives abelianization rank 2N+1. But the source note claims the framework N-site Fock space H=tensor_x C^2 is supplied by the cited per-site uniqueness authority, while that authority explicitly moves the physical per-site Hilbert-dimension/F... | J3: The displayed Pauli-group formulas check algebraically under the stipulated tensor-product N-qubit model: the global phase is one Z_4, the quotient has 2N binary generators, commutators give {+-I}, and the abelianization lower bound gives 2N+1 generators. However, the source claim also identifies this stipulated tensor product with the framework's N-site Fock space via the cited per-site uniqueness note, and that cited note explicitly moves th... | J4: The displayed Pauli-group formulas check algebraically: a tensor Pauli string has one global Z_4 phase, 4^N noncentral cosets, scalar center, elementary-abelian quotient, exponent dividing 4, and abelianization rank 2N+1 because [P_N,P_N]={+-I}. The runner independently enumerates finite matrix groups and commutators for small N, but the load-bearing route is class A matrix/group algebra, not a first-principles framework compute. The stronger... | J5: The displayed Pauli-tensor formulas, phase count, quotient size, commutator subgroup {+-I}, exponent-four claim, and abelianization rank 2N+1 check out as class-A finite group algebra once H=(C^2)^{tensor N} and site-local Pauli matrices are stipulated. The stronger source-scope identification of this tensor product with the framework's N-site Fock space is not closed by the one-hop authority: that authority explicitly moved the per-site Hilbe...
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, positive_theorem, class A). Vote breakdown: J1: second / audited_conditional / positive_theorem / A; J2: second / audited_conditional / positive_theorem / A; J3: second / audited_conditional / positive_theorem / A; J4: second / audited_conditional / positive_theorem / A; J5: second / audited_conditional / positive_theorem / A. Majority rationale: J1: Independent algebra check confirms the Pauli-string normal form: one global phase in {+/-1,+/-i} times one of four local Pauli cosets per site, giving |P_N|=4^{N+1}, scalar center Z_4, quotient order 4^N, exponent dividing 4, and abelianization rank 2N+1. The runner is consistent with these class-A finite matrix checks, but the cited authority explicitly moves the physical per-site Hilbert/Fock-space bridge out of scope. No relevant registered... | J2: The displayed Pauli-group identities check algebraically: the global phase is one Z_4, each site contributes four center cosets, the center is scalar, the quotient has order 4^N, g^4=I, and [P_N,P_N]={+-I} gives abelianization rank 2N+1. But the source note claims the framework N-site Fock space H=tensor_x C^2 is supplied by the cited per-site uniqueness authority, while that authority explicitly moves the physical per-site Hilbert-dimension/F... | J3: The displayed Pauli-group formulas check algebraically under the stipulated tensor-product N-qubit model: the global phase is one Z_4, the quotient has 2N binary generators, commutators give {+-I}, and the abelianization lower bound gives 2N+1 generators. However, the source claim also identifies this stipulated tensor product with the framework's N-site Fock space via the cited per-site uniqueness note, and that cited note explicitly moves th... | J4: The displayed Pauli-group formulas check algebraically: a tensor Pauli string has one global Z_4 phase, 4^N noncentral cosets, scalar center, elementary-abelian quotient, exponent dividing 4, and abelianization rank 2N+1 because [P_N,P_N]={+-I}. The runner independently enumerates finite matrix groups and commutators for small N, but the load-bearing route is class A matrix/group algebra, not a first-principles framework compute. The stronger... | J5: The displayed Pauli-tensor formulas, phase count, quotient size, commutator subgroup {+-I}, exponent-four claim, and abelianization rank 2N+1 check out as class-A finite group algebra once H=(C^2)^{tensor N} and site-local Pauli matrices are stipulated. The stronger source-scope identification of this tensor product with the framework's N-site Fock space is not closed by the one-hop authority: that authority explicitly moved the per-site Hilbe...
+- **auditor confidence:** judicial
 
 ### `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`
 

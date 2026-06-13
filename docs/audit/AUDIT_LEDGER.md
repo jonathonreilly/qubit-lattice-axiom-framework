@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 871 |
+| **retained_bounded** | 872 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1421 |
+| unaudited | 1420 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1324 |
+| `audited_clean` | 1325 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1738 |
+| `unaudited` | 1737 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 880 |
-| `leaf` | 1340 |
+| `medium` | 879 |
+| `leaf` | 1341 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -306,6 +306,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
+| `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4202,6 +4203,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The supplied retained one-hop family notes jointly show a bounded selectivity split: signed-source transfer survives across the listed retained family slices, while complex-action support is limited to narrow anchor/local rows and fails or is not retained on other supplied slices.  _(class `B`)_
 - **chain closes:** True — The cited retained-grade authorities support the narrowed split: multiple signed-source retained_bounded positives with near-linear weak-field behavior, one retained narrow complex positive, one retained_no_go alt complex failure, and one retained_bounded second-family boundary diagnosis. The original grown-basin signed-source/F~M entry is explicitly excluded from the narrowed audited scope.
 - **rationale:** The primary runner is only a hard-coded comparison renderer, so it does not provide first-principles computation; the load-bearing support comes from cross-note verification of the supplied retained-grade authorities. Within the narrowed scope, each necessary entry is present in the restricted packet and retained-grade, including retained_no_go support for the alt complex failure. The claim is bounded and comparative, not a universal family theorem or an independent derivation of the underlying rows.
+- **auditor confidence:** high
+
+### `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`CONDITIONAL_LAW_PREFIX_LADDER_NO_FINITE_K_EXHAUSTION_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/CONDITIONAL_LAW_PREFIX_LADDER_NO_FINITE_K_EXHAUSTION_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed L=3 runner object, selected depth-stable rows at cap 12, seeds 4242/99/7, prefix k=2..8, fixed 300-draw seeded permutation-null calculation, and adequacy gate min_active_family>=8 plus active_families>=2^(k-1); no claim beyond this finite adequate-family range.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-013900-e56d3309c4-conditional_law_prefix_ladde`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the family-adequacy gate, every seed clears at every adequate k: seed 4242 through k=6, seed 99 through k=4, and seed 7 through k=7, with all higher-k entries reported as family-inadequate.  _(class `C`)_
+- **chain closes:** True — The runner constructs the finite L=3 Fock/Born tree, computes prefix statistics and seeded permutation-null p95 values, applies the adequacy gate, and reports that every adequate row has theorem_clears=true. Independent table arithmetic against the printed rows and gate gives adequate kmax values 6, 4, and 7, with all higher-k rows flagged family-inadequate.
+- **rationale:** The runner source does not merely print the claim: it builds the finite Hilbert-space machinery, evolves the branch tree, computes determinant phases, prefix-family statistics, null quantiles, adequacy flags, and cap-stability checks. The displayed adequate sets match the claimed theorem-grade clear sets, and non-clearing or singleton/empty-sector rows are outside the adequacy gate rather than counted as theorem wins. The no-exhaustion language is bounded to fixed L=3, k<=8, selected rows, and the adequate-family range, so it does not overclaim asymptotic or higher-k closure.
 - **auditor confidence:** high
 
 ### `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10`

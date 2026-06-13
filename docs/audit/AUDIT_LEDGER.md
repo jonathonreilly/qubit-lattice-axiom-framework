@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 876 |
+| **retained_bounded** | 877 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1416 |
+| unaudited | 1415 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1329 |
+| `audited_clean` | 1330 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1733 |
+| `unaudited` | 1732 |
 
 | claim_type | count |
 |---|---:|
@@ -107,7 +107,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
 | 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
-| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
+| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
 | 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
@@ -398,6 +398,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dynamics_coupling_residual_classifier_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `dynamics_nontriviality_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `edge_deletion_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5602,6 +5603,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact Schur factorization gives I_e^* D_-^(-1) I_e = L_e^(-1), and under D_- = D_-^* > 0 the completed-square identity gives u^* L_e u = min_v [u; v]^* D_- [u; v].  _(class `A`)_
 - **chain closes:** True — The note proves the scoped conclusions directly by finite-dimensional block factorization and positive-Hermitian quadratic completion. There are no one-hop dependencies and no imported physical bridge inside the audited finite-dimensional boundary theorem.
 - **rationale:** The finite-dimensional algebra closes under the note's explicit hypotheses: invertible F and L_e for the resolvent identity, and D_- = D_-^* > 0 for the variational and monotonicity statements. The runner is not a first-principles microscopic computation, but it consistently checks exact Schur/Feshbach/Dirichlet algebra and scope hygiene, with 46 PASS and 0 FAIL in the supplied live summary. Residual risk is limited to scope discipline: this clean verdict covers only the supplied-block theorem and does not certify any Wilson-native construction of D_-, charged support selection, or final DM closure.
+- **auditor confidence:** high
+
+### `doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`DOPED_FLUX_RESPONSE_NO_UNIFORM_SIGN_REGION_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/DOPED_FLUX_RESPONSE_NO_UNIFORM_SIGN_REGION_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite free U(1) rings on the tested grid N=8,10,12,14,16; m in {0,0.4}; T in {0.3,0.6}; mu_ch in {0.25,0.5,1.0,1.5}, auditing only absence of a uniform sign sequence in Omega''(0) over those tested N values.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-015206-e38af58c87-doped_flux_response_no_unifo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the tested doping grid, no tested (m,T,mu_ch) point has a uniform-sign N-sequence for the exact finite-ring orbital response.  _(class `C`)_
+- **chain closes:** True — The runner constructs the finite-ring Hamiltonian and computes Omega''(0) directly from the stated grand-canonical perturbation formula, then classifies the observed sign sequences; the no-uniform check uses those computed classifications. I independently checked the table signs by direct flux finite differences over the full tested grid and found no mismatches and no uniform sequence.
+- **rationale:** The load-bearing result is a bounded finite-grid computation, not a continuum or thermodynamic-limit theorem. The runner does real model computation rather than importing an external value; the hard-coded expected sign patterns serve as regression gates after the table is computed, not as the source of the no-uniform conclusion. The zero-doping predecessor cross-checks are ancillary and do not carry the claim. The source note keeps the negative wording scoped to the tested grid and leaves the continuum, thermodynamic, gauge-self-energy, and non-abelian routes open.
 - **auditor confidence:** high
 
 ### `dynamics_coupling_residual_classifier_2026-06-06`

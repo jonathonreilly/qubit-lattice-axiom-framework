@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1506 |
-| Retained-grade rows, including boxed decorations | 1348 |
+| Applied audit verdicts | 1507 |
+| Retained-grade rows, including boxed decorations | 1349 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 209 |
-| Retained bounded rows | 876 |
+| Retained bounded rows | 877 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1416 |
+| Unaudited rows | 1415 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 55 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1418 |
-| Ready rows | 28 |
+| Total pending rows | 1417 |
+| Ready rows | 27 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 434 |
+| Leaf pending | 433 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12`](../../docs/DOPED_FLUX_RESPONSE_NO_UNIFORM_SIGN_REGION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12`](../../docs/ENERGY_COVARIANT_RG_COLLAPSE_SHIFTED_COUPLING_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11`](../../docs/EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28`](../../docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
+- [`gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RUNG_FOUR_DEEP_RIM_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -94,5 +94,5 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 887 descendants; score 59.294
 - `key_terminology` - critical; 1281 descendants; score 50.324
 - `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 49.567
-- `plaquette_self_consistency_note` - critical; 970 descendants; score 46.423
+- `plaquette_self_consistency_note` - critical; 971 descendants; score 46.425
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 927 descendants; score 44.358

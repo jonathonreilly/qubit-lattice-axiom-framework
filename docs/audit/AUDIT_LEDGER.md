@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 864 |
+| **retained_bounded** | 859 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1517 |
+| unaudited | 1525 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
-| ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_renaming~~ | 31 |
+| ~~audited_conditional~~ | 26 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -59,14 +59,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 1302 |
-| `audited_conditional` | 28 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 1298 |
+| `audited_conditional` | 26 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
-| `audited_renaming` | 32 |
-| `unaudited` | 1834 |
+| `audited_renaming` | 31 |
+| `unaudited` | 1842 |
 
 | claim_type | count |
 |---|---:|
@@ -135,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -577,7 +576,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -591,9 +589,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1248,6 +1243,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_fusion_engine_pr1_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1410,7 +1406,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1444,8 +1439,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_upper_bound_dependency_edge_repair_note_2026-06-08` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -1558,7 +1551,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
-| `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -7464,19 +7456,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The load-bearing mathematics is compact-group convolution algebra plus the temporal-gauge Wilson plaquette identity, not a numerical comparator, renaming, or imported framework-specific premise. Independent inspection of the displayed formulas confirms the c_lambda/d_lambda normalization, the a_0=1 trivial-channel normalization, and the c_0 contribution from unmarked links. The runner performs finite-group Z_N checks consistent with the algebra and does not import SU(3), beta=6, PDG data, or a downstream marked-plaquette premise.
 - **auditor confidence:** high
 
-### `gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite beta=6 tensor-word reread at tensor NMAX=4, MODE_MAX=80 and source NMAX=7, MODE_MAX=200, auditing the matrix-element adjacent-word contraction and unit-vector boundary readout only.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260613-000901-24d06f8d03-gauge_vacuum_plaquette_adjac`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The shared-link Haar identity gives the adjacent bond b(lambda_i, lambda_(i+1)) = delta(lambda_i, lambda_(i+1)) / d_(lambda_i), and the cited finite packet's boundary0 = e_(0,0) forces the trivial-slice readout rather than an all-label marginal.  _(class `A`)_
-- **chain closes:** True — The Schur/Peter-Weyl contraction independently gives the inverse-dimension factor, and boundary0 algebraically fixes unmarked word slots to the trivial channel. No cited authority supplies the marginal/counit readout, and the full rim-boundary eta remains explicitly outside scope.
-- **rationale:** The bounded mathematical chain closes: equation (5) correctly yields delta/d for a shared inverse-oriented matrix-element link, and the finite packet's e_(0,0) boundary vector selects the trivial-slice readout. The no-go language is scoped to the finite-packet marginal-branch negative and preserves the full rim-boundary eta route as a residual. However, the source note's Verification block still expects `TOTAL: PASS=25, FAIL=0`, while the included runner/cache and source report `TOTAL: PASS=28, FAIL=0` after the reviewer checks; this stale displayed runner certificate blocks a clean verdict under the strict inventory rule.
-- **auditor confidence:** high
-
 ### `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`
 
 - **Note:** [`GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md)
@@ -7818,19 +7797,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted packet proves the finite-volume inverse-map theorem from compactness, variance monotonicity, range bounds, and the inverse function theorem. Those ingredients do not use the staggered-Dirac or g_bare=1 open gates when beta is treated only as the Wilson coupling variable. The open gates attach to the physical beta=6/canonical-plaquette interpretation, which is outside the ratified scope. | The narrowed finite Wilson-surface existence and uniqueness result closes by compactness, nonconstant-observable variance positivity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare gates are needed only to interpret beta=6 and downstream physical predictions, not to prove the abstract finite-volume implicit reduction theorem with beta as the Wilson coupling variable. The support-only canonical beta_eff and constant-lift comparisons should remain outside the ratified scope. | The narrowed claim is a standard finite-volume analytic/measure-theoretic closure: compactness gives analyticity, variance gives strict monotonicity, the range bound gives invertibility, and the inverse function theorem gives the reduction map. The open staggered-Dirac and g_bare gates are relevant to interpreting beta=6 and downstream physical predictions, but they are not load-bearing for existence and uniqueness of the implicit map with beta treated as the Wilson coupling variable. The canonical beta_eff number and old constant-lift comparison remain support-only and outside the ratified positive-theorem scope. | The finite Wilson-surface existence and uniqueness result closes by compactness, variance monotonicity, range bounds, and inverse-function algebra, without using the staggered-Dirac or g_bare=1 open gates. Those gates matter for physical beta=6 interpretation and downstream quantitative gauge predictions, but they are outside the narrowed audited scope. The second audit correctly separates the positive finite-volume theorem from the source note's broader bounded framing. | The finite Wilson existence/uniqueness result closes as a standard analytic/algebraic consequence of compactness, variance monotonicity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare=1 gates only matter when the theorem is promoted into a physical beta=6 prediction or canonical plaquette repinning claim, which this ratified scope excludes. The runner's imported canonical plaquette and old candidate comparisons are support-only and do not control the theorem scope.
 - **auditor confidence:** judicial_panel_majority
 
-### `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Per-weight formal diagonal-convolution packaging of the already-defined stripped residual operator R_beta^env = D_beta^loc^{-1} D_beta, with all-weight a_(p,q)(beta)>0 and no L2 or normalized-convolution closure claimed.
-- **audit_status:** ~~audited_renaming~~
-- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260607-181901-bdf967c1ba-gauge_vacuum_plaquette_resid`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Define Z_beta^env by z_(p,q)^env(beta) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) * lambda_env(beta), so C_(Z_beta^env) chi_(p,q) = z_(p,q)^env(beta) chi_(p,q) and division by lambda_env gives R_beta^env.  _(class `E`)_
-- **chain closes:** True — The algebraic equality closes because Z_beta^env is defined coefficientwise to have exactly lambda_env times the eigenvalues of R_beta^env, and the formal convolution dictionary then returns those coefficients on basis characters. This does not independently derive that a physically pre-existing unmarked spatial Wilson environment compression has those coefficients.
-- **rationale:** The runner correctly checks the symbolic identities, positivity prerequisites, normalization distinction, and finite-window formal convolution action. However, the load-bearing identification is obtained by defining the formal sequence Z_beta^env from kappa_(p,q)/a_(p,q)^4 rather than deriving that sequence from an independent unmarked spatial Wilson environment integral. The theorem is therefore valid as formal repackaging of R_beta^env, but the claimed structural identification reduces to a definition of the coefficient sequence.
-- **auditor confidence:** high
-
 ### `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10`
 
 - **Note:** [`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md)
@@ -7894,19 +7860,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner computes rho_(p,q)(6)=c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) on 0<=p,q<=4 by both a Bessel-determinant formula and direct SU(3) Weyl torus integration, with max absolute disagreement 4.136e-15.  _(class `C`)_
 - **chain closes:** True — The restricted packet defines the target integral and normalization, and the runner source actually computes the coefficients by two independent implementations rather than importing or hard-coding the tabulated values. The broader residual-environment and full tensor-transfer identifications are explicitly outside this claim's scope.
 - **rationale:** The load-bearing finite coefficient table is produced from the stated SU(3) Wilson integral by implemented Bessel-determinant and Weyl-integration computations, with no cited open dependency and no hard-coded expected rho values. The structural checks over the resulting finite diagonal operator are algebraic or numerical consequences of the computed table. The clean boundary is only the bounded single-link coefficient computation and finite-box structural gates, not the parent residual-environment identification, all-weight closure, or analytic P(6).
-- **auditor confidence:** high
-
-### `gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite beta=6 constructed-eta proxy on the NMAX=4, MODE_MAX=80 tensor-word packet, followed by one/two/three-word matrix-element ladder readouts through the NMAX=7, MODE_MAX=200 source-sector Perron machinery; no physical 3D unmarked environment, untruncated limit, L_perp limit, analytic P(6), or repinning claim was audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260613-004909-7313753115-gauge_vacuum_plaquette_rim_b`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The finite proxy boundary is defined and read out as eta_constructed := tensor_word * e_(0,0), with unmarked word slots weighted by eta_constructed(label_j) and normalized by the lambda=(0,0) readout.  _(class `A`)_
-- **chain closes:** True — Within that bounded scope, the retained finite tensor-word packet supplies tensor_word and e_(0,0), and the retained source-sector machinery accepts the resulting finite rho readouts as input. An independent recomputation of the tensor column, eta ratios, and two/three-word constructed-eta source P values matched the note's load-bearing numbers.
-- **rationale:** The source does not identify eta_constructed with the full physical eta_beta^env; it explicitly keeps that bridge as a named residual. The actual audited claim is a finite algebraic construction and finite Perron readout over retained bounded inputs, and the runner source computes the relevant objects rather than merely printing constants. Hard-coded prior values are used for baseline reproduction and comparator isolation, not for the constructed-eta readout itself.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`
@@ -8077,61 +8030,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The recurrence follows algebraically from the stated Bessel derivative identities and the Riccati equation, and the sign induction is valid because all summands in the convolution share the same nonzero sign. The cited parent is retained_no_go, and no open upstream premise is needed for the narrow U(1) coefficient theorem beyond the stated U(1) normalization and standard Bessel calculus.
 - **rationale:** The proof is a genuine algebraic closure: parity follows from evenness of I_0, while density and sign alternation follow from the explicit Riccati coefficient recurrence and a correct strong induction. The runner source performs exact symbolic and rational checks rather than merely printing constants, though its finite-order checks are only corroborative because the note supplies the all-order induction. The cached runner summary line reports THEOREM PASS=7 while the note expected PASS=8, but the source and stdout show no failing theorem check and this count mismatch is not load-bearing.
 - **auditor confidence:** high
-
-### `gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-packet word-count remainder certificate for tensor NMAX=4/MODE_MAX=80, source NMAX=7/MODE_MAX=200, same-label matrix-element adjacent bond, and the eta_inf boundary, asserting the displayed `|R_k| <= c3 theta_3^k` all-k word-axis envelope.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260613-021322-c1e8f1fc8b-gauge_vacuum_plaquette_word_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The packet split `x_k - chi_pair = theta^(k-1) sigma_slice + e_k`, with `||e_k||_1 <= q_l1_alpha_constant * theta^(k-1) * alpha^k`, is propagated through the source perturbation bound to `|R_k| <= c3 * theta_3^k`.  _(class `C`)_
-- **chain closes:** False — The finite packet computations and arithmetic checks are substantive, but the uniform all-k remainder split is not proved in the restricted packet. The runner estimates key constants from finite windows (`k=2..18`, checks `k=2..20`, dominance through 80) rather than supplying a theorem controlling the Neumann/source perturbation tails for all k.
-- **rationale:** The primary runner genuinely instantiates the finite packet operators and recomputes the displayed scale, derivative, bracket, and residual-window quantities; independent arithmetic checks confirm identities such as `theta_3 = theta * alpha`, `c3 = c_linear + c_quadratic`, and the displayed k=9/k=20 brackets. However, the load-bearing all-k inequality rests on a sampled finite-window constant and measured residual checks, not on an independent uniform-in-k perturbation theorem. The cited upstream theta note explicitly left proof-grade all-k tail-remainder closure as a remaining finite-packet target, and this packet does not close that bridge.
-- **open / conditional deps cited:**
-  - `GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md`
-  - `GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md`
-- **auditor confidence:** high
-
-### `gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite NMAX=4, MODE_MAX=80 tensor-word packet and NMAX=7, MODE_MAX=200 source readout: certify the W_eta^8 Birkhoff/Hilbert eigenvector bracket, reproduce the finite measured word-count ladder through k=20, and explicitly withhold any certified B(k) tail bound for the measured entrywise-power ladder.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260613-005310-8f933ba509-gauge_vacuum_plaquette_word_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The ordinary eighth power of the finite dressed operator W_eta is entrywise positive with finite Birkhoff diameter, so Birkhoff contraction gives an eigenvector-level Hilbert bracket for ordinary W_eta iterates.  _(class `A`)_
-- **chain closes:** True — The scoped certificate closes from finite retained inputs plus standard Hilbert-metric/Birkhoff algebra: W_eta has the retained finite support, W_eta^8 is positive, Delta and kappa are finite, and the displayed k/8 constant follows from block contraction plus nonexpansiveness of positive linear maps. The denominator/source perturbation theorem for the entrywise-power K_k ladder is named as outside scope, not used to prove the certified W_eta bracket.
-- **rationale:** The load-bearing step is a finite-matrix algebraic closure over retained or retained_bounded inputs, not a definition, renaming, tuned comparator match, or imported physical value. Independent formula checks agree with the runner path: the log-row diameter formula is the standard projective diameter, kappa=tanh(Delta/4), and the k/8 constant is a valid weakening of the block-floor contraction bound. The source also correctly separates the ordinary W_eta certificate from the measured entrywise-power word-count ladder, and does not ship the missing measured-tail B(k) bracket.
-- **auditor confidence:** high
-
-### `gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RUNG_FOUR_DEEP_RIM_BOUNDED_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RUNG_FOUR_DEEP_RIM_BOUNDED_NOTE_2026-06-12.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite beta=6 word-count/deep-rim readout on the stated truncated tensor_word packet, with tensor NMAX=4, MODE_MAX=80, source NMAX=7, MODE_MAX=200, matrix-element adjacent bond delta(lambda,mu)/d_lambda, and eta_inf on unmarked slots; no physical 3D environment or untruncated limit audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260613-021605-cdade15c32-gauge_vacuum_plaquette_word_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Route B reduces the k-word operator to the 25-channel finite-rank problem with nonzero spectrum from C_k^(1/2) G^(entrywise k) C_k^(1/2), and the eta-weighted readout closes as S_eta,k(a) = D_a sum_mu b_mu M(a,mu) L_eta(mu)^(k-1).  _(class `C`)_
-- **chain closes:** True — Within the bounded packet, the operator, bond normalization, eta boundary, and source rho-input readout are fixed by retained-grade finite inputs. An independent recomputation of the reduced channel formula reproduced the displayed P1-P5 and P20 values, including P4 = 0.603630724651.
-- **rationale:** The runner and helpers perform actual finite computations from Wilson Bessel coefficients, SU(3) fusion matrices, finite Perron solves, and the reduced k-word channel formula; the new P4 and continuation table are not printed constants. Hard-coded prior values are used as reproduction gates, and the canonical 0.5934 number is isolated to fenced distance reporting. The cited authorities are retained-grade on the bounded surfaces consumed here, while their open physical spatial-environment and untruncated-limit targets are explicitly outside this claim.
-- **auditor confidence:** high
-
-### `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite packet only: tensor NMAX=4/MODE_MAX=80, source NMAX=7/MODE_MAX=200, same-label matrix-element adjacent bond, eta_inf boundary, theta identification, source perturbation coefficients, and measured k=2..20 envelope.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260613-002645-ee6a1269c3-gauge_vacuum_plaquette_word_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** theta = (L_eta(f) / L_eta(0)) sqrt(D_f / d_f) t(f,0) / t(0,0) = 0.263745855973467, composed with the finite source perturbation P(epsilon)=P_inf+p1 epsilon+p2 epsilon^2.  _(class `A`)_
-- **chain closes:** True — Within the stated finite packet, the displayed theta identity and source perturbation composition reduce to finite matrix algebra over retained bounded inputs and runner-computed packet quantities. The physical 3D environment, untruncated/all-weight limit, L_perp limit, analytic P(6), canonical repinning, and proof-grade all-k remainder bound are explicitly outside the audited scope.
-- **rationale:** The cited one-hop authorities are retained-grade or retained-bounded, and the source note stays inside their finite-packet boundaries rather than importing the open physical spatial-environment identification. The primary runner and included helpers compute the finite tensor word, eta boundary, entrywise-power reduction, two-channel correction, and source perturbation rather than relying on an external comparator or tuned input. Hard-coded reference decimals are used as consistency targets for the finite packet, but the load-bearing path also recomputes the underlying finite matrices and measured ladder quantities. Clean status is only for the bounded finite-packet claim, not for any all-k rigorous tail theorem or physical untruncated plaquette result.
-- **auditor confidence:** medium
 
 ### `gauge_wilson_isotropy_boundary_note_2026-05-04`
 
@@ -17859,6 +17757,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** Independent checks of the displayed constants give Δ=20, ηcrit=1/(21e(1+e))≈0.004711, β0≈ln(1+ηcrit)=0.00470, and β0/6≈0.078%. The runner source is not a print-only certificate: it enumerates the plaquette graph, evaluates the SU(3) class-function calibration, and uses the analytic Hoeffding/Jensen η_bound for the floor. The supplied upstream authority is retained_bounded, which is retained-grade for this bounded theorem, and the note leaves the remaining (β0,6] interval open rather than consuming it as closed evidence.
 - **auditor confidence:** medium
 
+### `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite SU(3) character truncation B_N: an abstract normalized nonnegative conjugation-symmetric coefficient sequence rho defines the same diagonal operator as convolution by Z=sum d_(p,q) rho_(p,q) chi_(p,q), with uniqueness and positivity/self-adjoint/swap symmetry; no Wilson-environment identification is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-234942-2bd44de400-su3_character_diagonal_convo`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The convolution identity int_{SU(3)} chi_(p,q)(V W^{-1}) chi_(p',q')(W) dW = delta_{(p,q),(p',q')} chi_(p',q')(V) / d_(p,q), so the d_(p,q) coefficient in Z cancels and leaves rho_(p',q') chi_(p',q').  _(class `A`)_
+- **chain closes:** True — A direct Peter-Weyl matrix-coefficient expansion gives the stated character convolution identity with the 1/d_(p,q) factor, and the coefficient d_(p,q) in Z cancels it. T3 and T4 then follow from Schur orthogonality, basis independence, and real nonnegative diagonal entries.
+- **rationale:** The load-bearing step is a standard algebraic Schur/Peter-Weyl character-convolution identity, not a definition, renaming, tuned numerical match, or external comparator check. Independent inspection of the displayed normalizations confirms the SU(3) dimension factor, the Z_(0,0)=1 normalization, the 1/d convolution factor, the trivial projection case, and the swap/self-adjoint claims are mutually consistent. The runner source mostly encodes this algebraic reduction and provides finite Weyl-integration spot checks; it does not import a physical Wilson-environment premise for the theorem under audit. The hard-coded companion Wilson coefficients are used only as abstract positive symmetric input for a non-load-bearing sanity check.
+- **auditor confidence:** high
+
 ### `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`
 
 - **Note:** [`SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md`](../../docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md)
@@ -20168,19 +20079,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Matching the Wilson small-a coefficient beta g_bare^2/(4 N_c) to the unordered-plane continuum Yang-Mills coefficient 1/2 gives beta = 2 N_c / g_bare^2.  _(class `A`)_
 - **chain closes:** True — The trace expansion gives Tr X^2 = a^4 g_bare^2 F^a F^a/2 and therefore plaquette deficit a^4 g_bare^2 F^a F^a/(4 N_c). The continuum 1/4 F_{mu nu}F_{mu nu} term contributes coefficient 1/2 over unordered planes, so the stated matching follows without needing g_bare=1 or Wilson surface selection.
 - **rationale:** The load-bearing mathematics is a direct algebraic trace expansion and coefficient match under the theorem's explicitly supplied Wilson-action and trace-normalization hypotheses. Independent checking confirms the factors of 1/2 and 1/(4 N_c), including the unordered-plane conversion in the continuum action. The note's boundaries exclude action-surface selection, alternative lattice actions, physical g_bare selection, and beta=6 except under the additional N_c=3, g_bare^2=1 specialization.
-- **auditor confidence:** high
-
-### `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`
-
-- **Note:** [`WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md`](../../docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** For SU(3) and beta >= 0, the single-link Wilson gauge weight w(U)=exp((beta/3) Re Tr U) has non-negative character coefficients, hence its convolution transfer kernel is PSD in the gauge-link sector only.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260607-000031-bbf4e6185f-wilson_su3_gauge_transfer_ke`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Equation (13): c_lambda(beta) is the sum over n of (beta/(2 N_c))^n/n! times the multiplicity of chi_lambda in (chi_box + chi_boxbar)^n, and those multiplicities are non-negative integers.  _(class `A`)_
-- **chain closes:** True — The proof reduces the Wilson weight to a non-negative exponential series in the direct-sum character chi_3 + chi_3bar. SU(3) tensor-product multiplicities are non-negative integers, so every fixed character coefficient is a convergent sum of non-negative terms; the PSD convolution-kernel conclusion then follows by Peter-Weyl/Schur diagonalization.
-- **rationale:** The load-bearing derivation is a genuine algebraic closure from standard SU(3) representation-ring positivity and compact-group character orthogonality, not a definition, renaming, or tuned numerical match. The two cited authorities are marked retained and are used only for convolution/factorization structure; the sign theorem itself is independently supplied by the character-ring argument. The runner source performs nontrivial exact character-algebra checks, Monte Carlo integral checks, Gram PSD checks, and a negative-control deformation; it does not merely print expected constants or import the contested sign claim.
 - **auditor confidence:** high
 
 ### `wilson_test_mass_continuum_note_2026-04-11`

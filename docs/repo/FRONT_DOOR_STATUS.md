@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1475 |
-| Retained-grade rows, including boxed decorations | 1325 |
+| Applied audit verdicts | 1476 |
+| Retained-grade rows, including boxed decorations | 1326 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 856 |
+| Retained bounded rows | 857 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1447 |
+| Unaudited rows | 1446 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 48 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1449 |
-| Ready rows | 53 |
+| Total pending rows | 1448 |
+| Ready rows | 52 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 465 |
+| Leaf pending | 464 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02`](../../docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`dimension_upper_bound_dependency_edge_repair_note_2026-06-08`](../../docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_MULTIWORD_PERRON_LADDER_BOUNDED_NOTE_2026-06-11.md) - medium; unaudited
 - [`axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06`](../../docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md) - medium; unaudited
-- [`record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
+- [`record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12`](../../docs/BRANCHING_SLACK_RATE_PROJECTIVE_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -92,7 +92,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1037 descendants; score 64.020
 - `graph_first_su3_integration_note` - critical; 1396 descendants; score 60.948
 - `observable_principle_from_axiom_note` - critical; 887 descendants; score 59.294
-- `key_terminology` - critical; 1282 descendants; score 50.325
-- `minimal_axioms_2026-05-03` - critical; 1073 descendants; score 49.569
+- `key_terminology` - critical; 1281 descendants; score 50.324
+- `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 49.567
 - `plaquette_self_consistency_note` - critical; 971 descendants; score 46.425
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 928 descendants; score 44.360
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 927 descendants; score 44.358

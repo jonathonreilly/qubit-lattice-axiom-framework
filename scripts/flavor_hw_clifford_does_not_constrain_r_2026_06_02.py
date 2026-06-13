@@ -10,7 +10,11 @@ So the symmetry axis re-confirms, from a new direction, that r=1/2 is unforced b
 HW/Fourier route, not a symmetry fixed point. This runner verifies the qutrit Heisenberg-Weyl
 algebra and the scoped facts above. It reports source checks only.
 """
+from pathlib import Path
+
 import numpy as np
+
+from flavor_occupancy_boundary_checks_2026_06_13 import run_occupancy_boundary_checks
 
 w = np.exp(2j * np.pi / 3)
 # Shift X = C, clock Z, qutrit Fourier F.
@@ -91,12 +95,16 @@ def main():
         np.allclose(trace_part(H0), trace_part(HF)) and np.allclose(traceless_hs(H0), traceless_hs(HF)),
         f"trace={trace_part(H0):.3f}; hs2={traceless_hs(H0):.6f}"))
 
+    root = Path(__file__).resolve().parents[1]
+    passed.extend(run_occupancy_boundary_checks(root, check, "downstream occupancy atom"))
+
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("FINDING: the tested qutrit Heisenberg-Weyl/Fourier structure does NOT force r=1/2.")
     print("'|b|/a=1/sqrt2 self-dual'")
     print("is a magnitude word-coincidence (H not F-fixed there); the true F-self-dual family has r free;")
     print("F-covariance forces only b=c (off-diagonal), not r. Symmetry axis re-confirms")
     print("r=1/2 is unforced by the scoped HW/Fourier route.")
+    print("DOWNSTREAM: the residual is the explicit occupancy/slot-degree atom, not a HW/Fourier equation.")
     return 0 if all(passed) else 1
 
 

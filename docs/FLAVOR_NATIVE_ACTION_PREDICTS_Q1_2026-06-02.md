@@ -53,6 +53,26 @@ The five tested finite spectral-action cutoffs do **not** supply `r=1/2`.
 maximum of the tested cutoff scans. This row does not claim a framework-native
 action-sector prediction for all admissible actions.
 
+## 2026-06-13 Downstream Boundary Alignment
+
+The later occupancy-independence theorem
+[`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+turns the residual named here into a single explicit atom: the doublet
+occupancy/slot-degree rule. This action-axis row therefore should not be read
+as a separate open search for "some native action" in general. Its safe use is
+narrower:
+
+- the five tested finite action cutoffs land on the dimension/sector-side
+  `r = 1` horn;
+- the equal-block `r = 1/2` horn remains the separate occupancy rule;
+- the Record axiom explicitly declines to supply weighting/occupancy; and
+- the downstream theorem exhibits both sector and orbit occupancy models as
+  consistent with the checked current surface.
+
+This branch adds runner checks for that downstream boundary. It does not adopt
+orbit occupancy, does not add an action principle, and does not edit audit
+status.
+
 ## The next paths this opens (not closing)
 - The residual is one object — the trace/dimension (→ Q=1) vs sector/block-count (→ Q=2/3) weighting
   of the two C₃ isotypes. Whether any native principle (positivity, entropy, modular/KMS, records)

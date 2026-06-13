@@ -57,6 +57,22 @@ F-covariance constraint** with `a` still free. This row does not claim that the 
 is `r=1`, does not prove a discrete-Wigner/PSD/full-orbit landmark theorem, and does not close the
 readout-selection problem.
 
+## 2026-06-13 Downstream Boundary Alignment
+
+The downstream occupancy-independence theorem
+[`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+identifies the shared residual as the occupancy/slot-degree atom. This HW row
+therefore contributes one route-local negative: the tested Fourier/HW equations
+do not supply that atom. The runner now also checks the downstream facts that:
+
+- the occupancy theorem is the bounded source that names the residual;
+- Record declines weighting/occupancy supply;
+- sector and orbit occupancy weights differ by the exact factor `2`; and
+- the orientation sends sector occupancy to `r = 1` and orbit occupancy to
+  `r = 1/2`.
+
+No Clifford, Wigner, or HW equation is promoted to a selector here.
+
 ## The next paths this opens (not closing)
 - The `b=c` off-diagonal constraint is a clean derived fact worth testing against the CKM/quark
   sector (does equal shift=clock weight constrain mixing?).

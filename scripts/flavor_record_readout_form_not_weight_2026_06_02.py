@@ -7,7 +7,11 @@ sector weight needed for the Koide value.
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
+
+from flavor_occupancy_boundary_checks_2026_06_13 import run_occupancy_boundary_checks
 
 
 C = np.array([[0.0, 0.0, 1.0], [1.0, 0.0, 0.0], [0.0, 1.0, 0.0]])
@@ -78,6 +82,9 @@ def main() -> int:
         )
     )
 
+    root = Path(__file__).resolve().parents[1]
+    passed.extend(run_occupancy_boundary_checks(root, check, "downstream occupancy atom"))
+
     pass_count = sum(passed)
     fail_count = len(passed) - pass_count
     print(f"\nSCORECARD PASS={pass_count} FAIL={fail_count}")
@@ -88,6 +95,10 @@ def main() -> int:
     print(
         "Genuine log|det| counts multiplicity 1:2; r=1/2 needs the separate "
         "block-count functional."
+    )
+    print(
+        "DOWNSTREAM: the shared residual is the explicit occupancy/slot-degree atom; "
+        "Record still supplies form, not weight."
     )
     return 0 if all(passed) else 1
 

@@ -9,7 +9,11 @@ relate the two amplitudes.
 This runner does not prove a theorem for arbitrary monotone cutoffs, Casimir/HK
 Brownian time, or Wilson/HK/Manton action-form degeneracy.
 """
+from pathlib import Path
+
 import numpy as np
+
+from flavor_occupancy_boundary_checks_2026_06_13 import run_occupancy_boundary_checks
 
 C = np.array([[0, 0, 1.0], [1, 0, 0], [0, 1, 0]])
 I3 = np.eye(3)
@@ -90,11 +94,16 @@ def main():
         "mass grade (I) and hopping grade (C+C^2) are HS-orthogonal => one bi-invariant norm cannot fix the a:|b| ratio",
         abs(cross) < 1e-12, f"<mass,hop>_HS = {cross:.2e}"))
 
+    root = Path(__file__).resolve().parents[1]
+    passed.extend(run_occupancy_boundary_checks(root, check, "downstream occupancy atom"))
+
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("FINDING: the five displayed spectral-action cutoffs peak near r=1 (Q=1), not r=1/2.")
     print("The mass/hop grades are HS-orthogonal, so one HS quadratic norm on this ansatz")
     print("does not fix their ratio. This is a finite-scan/source-scope certificate, not")
     print("an arbitrary native-action theorem.")
+    print("DOWNSTREAM: the residual is the explicit occupancy/slot-degree atom; no")
+    print("action-axis selector is introduced or adopted here.")
     return 0 if all(passed) else 1
 
 

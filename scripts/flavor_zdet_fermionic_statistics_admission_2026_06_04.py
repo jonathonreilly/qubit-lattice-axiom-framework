@@ -16,6 +16,8 @@ from pathlib import Path
 
 import numpy as np
 
+from flavor_occupancy_boundary_checks_2026_06_13 import run_occupancy_boundary_checks
+
 
 PARITY_DEP = "fermion_parity_z2_grading_theorem_note_2026-05-02"
 GRASSMANN_BRIDGE_DEP = "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
@@ -161,8 +163,8 @@ def main() -> int:
     )
     passed.append(
         check(
-            "one-hop dependency status: abstract Grassmann forcing bridge is audited retained_bounded",
-            grassmann_row.get("effective_status") == "retained_bounded",
+            "one-hop dependency status: abstract Grassmann forcing bridge is audited retained or retained_bounded",
+            grassmann_row.get("effective_status") in {"retained", "retained_bounded"},
             f"{GRASSMANN_BRIDGE_DEP} -> {grassmann_row.get('effective_status')}",
         )
     )
@@ -199,7 +201,7 @@ def main() -> int:
     required = [
         "does not derive the physical-lattice choice of Grassmann/CAR variables",
         "does not introduce a new axiom or admission",
-        "retained-bounded abstract Grassmann forcing bridge",
+        "audited abstract Grassmann forcing bridge",
         "physical spin-statistics selector remains open",
         "No new axiom is introduced.",
     ]
@@ -220,6 +222,7 @@ def main() -> int:
             "parity supplies Z2 grading; Grassmann bridge supplies abstract two-candidate determinant scope",
         )
     )
+    passed.extend(run_occupancy_boundary_checks(root, check, "downstream occupancy atom"))
 
     pass_count = sum(passed)
     fail_count = len(passed) - pass_count
@@ -228,6 +231,7 @@ def main() -> int:
     print("The physical-lattice cross-site CAR/Grassmann selector remains open.")
     print("The tested finite hard-core/tensor-product routes still do not force that statistics choice.")
     print("Koide generation chirality remains a separate internal-factor residual.")
+    print("DOWNSTREAM: determinant statistics does not select the Koide occupancy/slot-degree atom.")
     return 0 if all(passed) else 1
 
 

@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1442 |
+| Applied audit verdicts | 1443 |
 | Retained-grade rows, including boxed decorations | 1328 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 204 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1529 |
-| Ready rows | 71 |
+| Total pending rows | 1528 |
+| Ready rows | 70 |
 | Cycle-break targets | 20 |
-| Critical pending | 339 |
+| Critical pending | 338 |
 | High pending | 261 |
 | Medium pending | 440 |
 | Leaf pending | 489 |
 
 Next ready rows by queue order:
 
-- [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - critical; audit_in_progress
 - [`post_record_count_probability_firewall_2026-06-06`](../../docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md) - critical; audit_in_progress
 - [`g_bare_dynamical_fixation_obstruction_note_2026-04-18`](../../docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md) - critical; audit_in_progress
 - [`observable_principle_record_scalar_map_no_go_note_2026-06-05`](../../docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`record_unbounded_finite_additivity_schema_2026-06-06`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md) - critical; audit_in_progress
 - [`pmns_tm2_residual_consequence_bounded_note_2026-05-26`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
+- [`yt_p1_i_s_lattice_pt_citation_note_2026-04-17`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

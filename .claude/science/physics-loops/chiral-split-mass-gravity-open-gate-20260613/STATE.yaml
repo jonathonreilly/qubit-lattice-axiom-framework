@@ -1,0 +1,27 @@
+loop_slug: chiral-split-mass-gravity-open-gate-20260613
+goal: "Repair the chiral split-mass/split-gravity open-gate row by making its toy-harness downstream boundary explicit and executable."
+target_claim_id: chiral_split_mass_gravity_note
+base_commit: 406357585
+branch: physics-loop/chiral-split-mass-gravity-open-gate-20260613
+actual_current_surface_status: open
+conditional_surface_status: exploratory fixed-theta g-linearity diagnostic
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: source-boundary-runner-guard
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md
+  - scripts/frontier_chiral_split_mass_gravity.py
+  - logs/runner-cache/frontier_chiral_split_mass_gravity.txt
+open_imports:
+  - framework-level mass-gravity theorem
+  - equivalence-principle closure
+  - theta_m flattening closure
+  - k-achromatic closure
+  - overload-bottleneck closure
+runner_status: "source-boundary PASS; exit=0"
+review_disposition: pass
+next_exact_action: "Open review PR; reviewer/auditor can decide whether the explicit toy-harness firewall stabilizes the row."
+stop_condition: "Source-side repair packaged for review; no audit ledger/result/status files edited."

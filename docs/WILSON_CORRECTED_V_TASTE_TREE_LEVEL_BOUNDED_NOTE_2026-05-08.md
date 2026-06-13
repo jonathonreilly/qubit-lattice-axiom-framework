@@ -2,9 +2,13 @@
 
 **Date:** 2026-05-08
 **Claim type:** bounded_theorem
-**Status authority:** source-note proposal only; audit verdict and
+**Status authority:** independent audit lane only; source-note proposal only; audit verdict and
 effective status are set by the independent audit lane.
 **Primary runner:** [`scripts/frontier_wilson_corrected_v_taste_tree_level.py`](../scripts/frontier_wilson_corrected_v_taste_tree_level.py)
+
+## Repair Note (2026-06-12)
+
+On 2026-06-12, the registered runner prose was synced to the existing derivation and executable check: its docstring and Part 8 heading/comment now state the leading correction as `+60 r^2 / u_0^4`, matching equation (4) and the exact-arithmetic computation; no runner computation, source-note derivation, dependencies, or boundaries were changed.
 
 ## Claim
 

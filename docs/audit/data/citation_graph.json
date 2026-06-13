@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
         "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12",
         "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
         "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11",
         "branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12",
-        "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27"
+        "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27",
+        "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4f89e828fc428dfa70bb4c59bd224134d68d3c028c6983be5804666ffdec3c52",
+      "note_hash": "30c579af205c1ee9f7794803f915cc4ffa4c394fd03150ec379045a5f2503512",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

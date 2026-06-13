@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 858 |
+| **retained_bounded** | 859 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1444 |
+| unaudited | 1443 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1308 |
+| `audited_clean` | 1309 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1761 |
+| `unaudited` | 1760 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
 | 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
-| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
+| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
 | 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
@@ -183,6 +183,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | - |
+| `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | B | - |
@@ -2307,6 +2308,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** With Theta_CPT := (E Sigma_PT R_b)K, the corrected composition gives Theta_CPT M Theta_CPT^{-1}=E(Sigma_PT R_b M R_b^{-1} Sigma_PT)E=E M^T E=M=M^*.  _(class `A`)_
 - **chain closes:** True — The load-bearing step is a finite-matrix algebraic identity on the scoped pure staggered carrier, and the runner source genuinely constructs nondegenerate matrices, sign fields, bond-centered reflections, and falsification legs rather than printing expected results. The second audit correctly recognized the carrier is admitted, but treated the registered Tier-A bounded admission as an unretained dependency blocker; under the supplied rubric, a bounded row may audit clean on such an accepted bounded-tier admission while remaining effective-status bounded until that admission is retired. The SU(3) Wilson-plaquette lift, full-action CPT, and CP-odd-to-Theta_CPT-odd bridge are explicitly outside or narrowed from the audited scope.
 - **rationale:** The load-bearing step is a finite-matrix algebraic identity on the scoped pure staggered carrier, and the runner source genuinely constructs nondegenerate matrices, sign fields, bond-centered reflections, and falsification legs rather than printing expected results. The second audit correctly recognized the carrier is admitted, but treated the registered Tier-A bounded admission as an unretained dependency blocker; under the supplied rubric, a bounded row may audit clean on such an accepted bounded-tier admission while remaining effective-status bounded until that admission is retired. The SU(3) Wilson-plaquette lift, full-action CPT, and CP-odd-to-Theta_CPT-odd bridge are explicitly outside or narrowed from the audited scope.
+- **auditor confidence:** high
+
+### `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For any finite-range sublattice-periodic Hermitian hopping kernel on the stated Z^3 one-qubit one-particle surface whose zero set is finite and linearly conical in the sense of (Z), the half-filled free-Fermi probe has the stated T^4 asymptotic with finite cone-weighted g_eff=sum |det V_jb|^-1; no realized-kernel selection or thermal-equilibrium derivation is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-002313-82516070a0-axiom_first_fermionic_stefan`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under hypothesis (Z), each zero branch may be replaced by its tangent cone at O(T^5) absolute cost, and the tangent-cone integral equals |det V_jb|^-1 (7/8)(pi^2/30) T^4, so summing zero branches gives u(T)=g_eff (7/8)(pi^2/30)T^4+O(T^5).  _(class `A`)_
+- **chain closes:** True — The conditional theorem closes from the stated cone hypothesis, compactness of the torus, the retained Fermi-Dirac integral normalization, and standard change-of-variables/asymptotic estimates. The row correctly leaves certification of (Z) for any physically realized kernel and derivation of equilibrium outside scope.
+- **rationale:** The non-axiom cited authorities are retained-grade, and the minimal axiom memo is flagged as an accepted premise, so there is no dependency-status downgrade. Independently of the runner path, the cone-window estimate gives O(T^5), the off-cone part is exponentially small, and the radial Fermi integral gives exactly 7 pi^2/240=(7/8)(pi^2/30). The runner source performs real arithmetic, spectral, quadrature, and text-status checks rather than merely printing the claimed verdict; the witness computations support non-vacuity and load-bearingness but are not needed to prove the theorem-grade conditional core.
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06`

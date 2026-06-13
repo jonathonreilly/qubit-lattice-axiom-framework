@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1442 |
-| Retained-grade rows, including boxed decorations | 1316 |
+| Applied audit verdicts | 1443 |
+| Retained-grade rows, including boxed decorations | 1317 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 204 |
-| Retained bounded rows | 859 |
+| Retained bounded rows | 860 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1524 |
+| Unaudited rows | 1523 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 27 |
 | Audited renaming rows | 31 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1529 |
-| Ready rows | 68 |
+| Total pending rows | 1528 |
+| Ready rows | 67 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
-| High pending | 263 |
+| High pending | 262 |
 | Medium pending | 443 |
 | Leaf pending | 496 |
 
 Next ready rows by queue order:
 
-- [`wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08`](../../docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
 - [`gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md) - medium; unaudited
+- [`wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`](../../docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`gate_b_connectivity_tolerance_note`](../../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md) - medium; unaudited
 - [`min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`](../../docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
-- [`wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`](../../docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
+- [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -89,10 +89,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1590 descendants; score 134.636
-- `three_generation_observable_theorem_note` - critical; 1357 descendants; score 64.407
-- `observable_principle_from_axiom_note` - critical; 1280 descendants; score 62.823
-- `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
+- `three_generation_observable_theorem_note` - critical; 1356 descendants; score 64.406
+- `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
+- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
 - `plaquette_self_consistency_note` - critical; 1359 descendants; score 51.409
-- `key_terminology` - critical; 1397 descendants; score 50.449
-- `minimal_axioms_2026-05-03` - critical; 1293 descendants; score 49.838
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1263 descendants; score 44.804
+- `key_terminology` - critical; 1396 descendants; score 50.448
+- `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1262 descendants; score 44.803

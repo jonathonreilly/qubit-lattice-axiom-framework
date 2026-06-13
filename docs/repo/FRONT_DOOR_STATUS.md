@@ -13,15 +13,15 @@ It is not a physics claim surface and should not be edited by hand.
 |---|---:|
 | Ledger rows | 3288 |
 | Applied audit verdicts | 1438 |
-| Retained-grade rows, including boxed decorations | 1332 |
-| Retained positive theorems | 212 |
+| Retained-grade rows, including boxed decorations | 1329 |
+| Retained positive theorems | 211 |
 | Retained no-go rows | 205 |
-| Retained bounded rows | 870 |
+| Retained bounded rows | 868 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 38 |
-| Unaudited rows | 1513 |
-| Retained-pending-chain rows | 19 |
-| Audited conditional rows | 23 |
+| Unaudited rows | 1514 |
+| Retained-pending-chain rows | 20 |
+| Audited conditional rows | 24 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 20 |
@@ -34,41 +34,41 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Metric | Value |
 |---|---:|
 | Total pending rows | 1533 |
-| Ready rows | 78 |
+| Ready rows | 76 |
 | Cycle-break targets | 20 |
-| Critical pending | 346 |
+| Critical pending | 345 |
 | High pending | 261 |
 | Medium pending | 440 |
-| Leaf pending | 486 |
+| Leaf pending | 487 |
 
 Next ready rows by queue order:
 
-- [`pmns_graph_first_axis_alignment_note`](../../docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md) - critical; audit_in_progress
 - [`koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30`](../../docs/KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY_BOUNDED_NOTE_2026-05-30.md) - critical; audit_in_progress
 - [`pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26`](../../docs/PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; audit_in_progress
-- [`pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16`](../../docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; audit_in_progress
 - [`post_record_finite_to_unbounded_family_lift_no_go_2026-06-06`](../../docs/POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md) - critical; audit_in_progress
 - [`s3_time_theta_to_slice_coupling_note`](../../docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) - critical; unaudited
 - [`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md) - critical; audit_in_progress
+- [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - critical; audit_in_progress
+- [`post_record_count_probability_firewall_2026-06-06`](../../docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **429**.
+- Non-retained-grade cited rows in publication tables: **430**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 174 |
 | high | `unaudited` | 147 |
 | medium | `unaudited` | 94 |
+| critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audited_conditional` | 1 |
 | critical | `audited_failed` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |

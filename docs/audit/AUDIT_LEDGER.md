@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 877 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 38 |
-| unaudited | 1503 |
+| unaudited | 1502 |
+| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
@@ -59,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 32 |
+| `audit_in_progress` | 33 |
 | `audited_clean` | 1294 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1820 |
+| `unaudited` | 1819 |
 
 | claim_type | count |
 |---|---:|
@@ -112,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1262 | 43.30 | `unaudited` | unaudited |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1262 | 42.80 | `audited_clean` | **retained_bounded** |
 | 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1274 | 41.82 | `unaudited` | unaudited |
-| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1347 | 41.40 | `unaudited` | unaudited |
+| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1347 | 41.40 | `audit_in_progress` | audit_in_progress |
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1389 | 39.44 | `audited_clean` | **retained** |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1307 | 38.85 | `audited_clean` | **retained_no_go** |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1285 | 38.83 | `audited_clean` | **retained_bounded** |
@@ -134,6 +135,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_color_automorphism_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |

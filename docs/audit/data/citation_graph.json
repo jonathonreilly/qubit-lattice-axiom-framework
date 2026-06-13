@@ -98195,7 +98195,7 @@
         "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "97ecb37d6c4ef46a79024467410e903a135087d9ffff01872014115701311ae7",
+      "note_hash": "d58d8ff0eb564d45ada30ec554c11b74bb9009dd87eedefa2f213d98c3a61bdf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

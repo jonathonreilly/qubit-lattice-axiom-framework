@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `cl3_color_automorphism_theorem` | bounded_theorem | unaudited | critical | 1347 | 41.40 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/verify_cl3_sm_embedding.py` |
+| 1 | `cl3_color_automorphism_theorem` | bounded_theorem | audit_in_progress | critical | 1347 | 41.40 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/verify_cl3_sm_embedding.py` |
 | 2 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 1304 | 28.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_kawamoto_smit_phase_forcing.py` |
 | 3 | `cl3_taste_generation_theorem` | bounded_theorem | unaudited | critical | 1304 | 24.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py` |
 | 4 | `post_record_clock_rate_interface_2026-06-06` | no_go | audit_in_progress | critical | 1273 | 21.32 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_post_record_clock_rate_interface_2026_06_06.py` |

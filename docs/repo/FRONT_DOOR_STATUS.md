@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 877 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 38 |
-| Unaudited rows | 1503 |
+| Unaudited rows | 1502 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 23 |
 | Audited renaming rows | 33 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`cl3_color_automorphism_theorem`](../../docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md) - critical; unaudited
+- [`cl3_color_automorphism_theorem`](../../docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md) - critical; audit_in_progress
 - [`staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`](../../docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 - [`post_record_clock_rate_interface_2026-06-06`](../../docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md) - critical; audit_in_progress
@@ -61,13 +61,14 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 176 |
+| critical | `unaudited` | 175 |
 | high | `unaudited` | 147 |
 | medium | `unaudited` | 94 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |

@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 30 |
-| `audited_clean` | 1297 |
+| `audit_in_progress` | 29 |
+| `audited_clean` | 1298 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
@@ -139,7 +139,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_dynamical_fixation_obstruction_note_2026-04-18` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -634,6 +633,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `global_coherence_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8355,6 +8355,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The decisive step is that the assignments passing the multi-loop cocycle conditions are exactly the symmetric exchange-sign assignments, and that set contains the commuting assignment eps == +1.  _(class `C`)_
 - **chain closes:** True — The Klein-string algebra gives realizability iff eps is symmetric: necessity follows from nonzero psi_x psi_y and double application of R3, while sufficiency follows by explicit mask construction. For symmetric eps, the inversion-set sign gives exchange-groupoid path independence, and the lattice-loop/framing checks supply no selector, so eps == +1 is a valid countermodel to GL(F) forcing.
 - **rationale:** The cited dependencies are retained-grade or the accepted minimal-axiom premise, and no Tier-A admission, registered primitive, external comparator, fitted scale, or hidden FS premise is imported. The runner source performs actual finite tensor-product, sign-calculus, S4 Cayley-graph, and GF(2) rank computations rather than printing constants, and the load-bearing classification also checks by direct algebra. The N1-N8 no-go discipline passes for the route-scoped claim: the result closes the multi-loop cocycle route only, while Tier-A admission, emergent-continuum migration, and future principles outside this route remain open.
+- **auditor confidence:** high
+
+### `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For finite Lambda subset Z^3 with |Lambda|>=2, assuming the standard Gleason theorem, every countably additive probability measure on P(tensor_x C^2) has a unique density-matrix trace representation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-220421-07aaefe0a7-gleason_on_qubit_lattice_pro`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Applying Gleason's theorem to the frame function on H_Lambda gives f_m(|psi>)=<psi|sigma|psi>, and orthogonal additivity over a projection decomposition gives m(P)=Tr(sigma P).  _(class `A`)_
+- **chain closes:** True — The supplied axiom authority provides the qubit-on-Z^3 substrate as an accepted premise, and the note stipulates the finite tensor-product Hilbert space with dimension 2^|Lambda|>=4. Given the cited standard Gleason theorem, the frame-function and projection-decomposition steps correctly yield the trace form and uniqueness.
+- **rationale:** No runner output or source is available, so the audit is from the note text and cited authority. The displayed dimension, frame-function normalization, projection-decomposition trace identity, and uniqueness argument check out independently in finite dimension. The current minimal-axiom authority is flagged as an accepted axiom premise, so it does not create a retained-grade downgrade; no registered primitive is load-bearing for this claim.
 - **auditor confidence:** high
 
 ### `global_coherence_held_out2_note`

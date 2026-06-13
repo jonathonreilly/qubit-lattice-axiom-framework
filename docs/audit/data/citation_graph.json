@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
     },
     {
@@ -51102,11 +51098,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "magnitude_temporal_factor_is_count_not_rate_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
     },
     {
       "from": "repo.front_door_status",
-      "to": "magnitude_temporal_factor_is_count_not_rate_2026-06-06"
+      "to": "multisite_pauli_group_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
         "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
         "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
         "flavor_native_double_shift_corner_coupling_note_2026-05-30",
         "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
         "record_function_finite_sector_algebra_2026-06-05",
+        "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
         "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
-        "magnitude_temporal_factor_is_count_not_rate_2026-06-06"
+        "multisite_pauli_group_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2726aa53b4128ceb68abc3edd6c77124fc703bec2414019f9381ac5a1db66b88",
+      "note_hash": "35972fbdd0f370774b6cb4d381a55f18ea1a47306851ad868accdde4facb07aa",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1439 |
+| Applied audit verdicts | 1440 |
 | Retained-grade rows, including boxed decorations | 1344 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1532 |
-| Ready rows | 83 |
+| Total pending rows | 1531 |
+| Ready rows | 82 |
 | Cycle-break targets | 20 |
-| Critical pending | 356 |
+| Critical pending | 355 |
 | High pending | 261 |
 | Medium pending | 436 |
 | Leaf pending | 479 |
 
 Next ready rows by queue order:
 
-- [`gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - critical; audit_in_progress
 - [`busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05`](../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`flavor_native_double_shift_corner_coupling_note_2026-05-30`](../../docs/FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md) - critical; audit_in_progress
 - [`gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06`](../../docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - critical; audit_in_progress
 - [`record_function_finite_sector_algebra_2026-06-05`](../../docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md) - critical; audit_in_progress
 - [`magnitude_temporal_factor_is_count_not_rate_2026-06-06`](../../docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md) - critical; audit_in_progress
-- [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
 - [`multisite_pauli_group_theorem_note_2026-05-02`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md) - critical; audit_in_progress
+- [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
+- [`tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

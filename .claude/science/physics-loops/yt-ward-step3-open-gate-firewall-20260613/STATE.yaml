@@ -1,0 +1,27 @@
+loop_slug: yt-ward-step3-open-gate-firewall-20260613
+goal: "Repair the YT Ward Step 3 same-1PI open-gate row by making its gate-equation downstream boundary explicit and executable."
+target_claim_id: yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10
+base_commit: 406357585
+branch: physics-loop/yt-ward-step3-open-gate-firewall-20260613
+actual_current_surface_status: open
+conditional_surface_status: coefficient-bookkeeping support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: source-boundary-runner-guard
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md
+  - scripts/yt_ward_step3_same_1pi_construction_2026_05_10.py
+  - logs/runner-cache/yt_ward_step3_same_1pi_construction_2026_05_10.txt
+open_imports:
+  - Wick-level same-1PI bridge between OGE and H_unit representations
+  - retained derivation of g_bare = 1 from that bridge
+  - top-Yukawa derivation from the closed bridge
+runner_status: "PASS=34 FAIL=0"
+review_disposition: pass
+next_exact_action: "Open review PR; reviewer/auditor can decide whether the source-boundary guard stabilizes downstream use."
+stop_condition: "Source-side repair packaged for review; no audit ledger/result/status files edited."

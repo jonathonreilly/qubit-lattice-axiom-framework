@@ -21,6 +21,19 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parent.parent
 NOTE_PATH = ROOT / "docs" / "YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md"
 
+SOURCE_BOUNDARY_REQUIRED_PHRASES = [
+    "Downstream source-boundary firewall",
+    "Allowed downstream uses",
+    "Forbidden downstream uses",
+    "coefficient-bookkeeping diagnostic",
+    "missing same-1PI bridge remains open",
+    "retained same-1PI theorem",
+    "gate equation as a retained theorem",
+    "derivation of `g_bare = 1`",
+    "top-Yukawa derivation",
+    "Wick-level proof",
+]
+
 PASS = 0
 FAIL = 0
 
@@ -52,6 +65,8 @@ for required in [
     "not load-bearing dependencies",
 ]:
     check(f"note contains required scope text: {required}", required in note_text)
+for required in SOURCE_BOUNDARY_REQUIRED_PHRASES:
+    check(f"note contains source-boundary text: {required}", required in note_text)
 for forbidden in [
     "DERIVED tree-level identity",
     "holds. The agreement is enforced",
@@ -59,6 +74,12 @@ for forbidden in [
     "audited" + "_clean",
 ]:
     check(f"note avoids overclaim/status text: {forbidden}", forbidden not in note_text)
+check(
+    "source-boundary forbids using the gate as retained same-1PI/top-Yukawa closure",
+    "do not cite this diagnostic as a retained same-1PI theorem" in note_text
+    and "do not cite this diagnostic as a derivation of `g_bare = 1`" in note_text
+    and "do not cite this diagnostic as a top-Yukawa derivation" in note_text,
+)
 
 
 section("Part 2: symbolic coefficient algebra")

@@ -125,6 +125,34 @@ amputated 1PI Green's function without first imposing `C_A = C_B`.
 - Does **not** consume any PDG observed value, fitted selector, or
   admitted unit convention.
 
+## Downstream source-boundary firewall
+
+Allowed downstream uses of this packet are limited to:
+
+- cite it as a coefficient-bookkeeping diagnostic for the proposed
+  `YT_WARD` Step 3 same-1PI construction;
+- cite the symbolic residual and the gate equation
+  `c_S * g_bare^2 = 2 / N_iso`;
+- cite the canonical reduction to `g_bare^2 = 1` at
+  `N_iso = 2`, `c_S = +1`;
+- cite the negative boundary that the missing same-1PI bridge remains open.
+
+Forbidden downstream uses without a new Wick-level bridge:
+
+- do not cite this diagnostic as a retained same-1PI theorem;
+- do not cite the gate equation as a retained theorem;
+- do not cite this diagnostic as a derivation of `g_bare = 1`;
+- do not cite this diagnostic as a top-Yukawa derivation;
+- do not cite it as a proof that OGE and `H_unit` diagrams are the same
+  amputated 1PI Green's function;
+- do not use equality of Rep A and Rep B as an input unless a later row
+  supplies a Wick-level proof of the same projected amputated 1PI
+  Green's function.
+
+Re-audit should be triggered if a downstream row uses this gate equation
+as a retained same-1PI theorem, a retained `g_bare=1` theorem, or a
+top-Yukawa derivation without adding the missing Wick-level bridge.
+
 ## Declared dependencies
 
 The coefficient diagnostic depends on the following source authorities:

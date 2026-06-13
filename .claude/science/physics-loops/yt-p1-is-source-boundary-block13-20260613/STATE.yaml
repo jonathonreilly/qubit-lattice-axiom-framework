@@ -1,0 +1,24 @@
+loop_slug: yt-p1-is-source-boundary-block13-20260613
+branch: physics-loop/audited-conditional-repair-block13-20260613
+base: origin/main@f917e06b0
+target_claim_id: yt_p1_i_s_lattice_pt_citation_note_2026-04-17
+mode: source_repair
+actual_current_surface_status: bounded-support
+proposal_allowed: false
+audit_required_before_effective_status_change: true
+active_route: "narrow historical I_S bracket to comparison-only context; make affine P1 map and native BZ non-certification the auditable source claim"
+files_touched:
+  - docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md
+  - scripts/frontier_yt_p1_i_s_lattice_pt_citation.py
+  - scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
+  - logs/runner-cache/frontier_yt_p1_i_s_lattice_pt_citation.txt
+  - logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt
+remaining_blockers:
+  - "No retained framework-native exact composite-H_unit I_S coefficient exists here."
+  - "The historical [4,10] bracket remains non-authority comparison context."
+  - "The native BZ certificate reports BRACKET_VERDICT: NOT_CERTIFIED."
+verification:
+  - "python3 scripts/frontier_yt_p1_i_s_lattice_pt_citation.py -> PASS=57 FAIL=0"
+  - "python3 scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py -> PASS=62 FAIL=0"
+next_exact_action: "Reviewer/auditor should re-audit only the narrowed affine-map plus native non-certification claim, not the old supplied-bracket authority claim."
+stop_condition: "Coherent PR opened for the only audited_conditional row not already covered by open PRs."

@@ -7,20 +7,42 @@
 **Runner cache:** [`logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt`](../logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt)
 **Original arithmetic runner:** `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`
 
-This is a conditional citation/support layer on top of the prior P1 symbolic
-decomposition. After the 2026-06-11 audit, its load-bearing claim is narrowed
-to a **conditional arithmetic lemma**: given a supplied bracket
-`I_S in [4, 10]` for the closest tadpole-improved staggered scalar-density
-analogue, the associated P1 contribution is recomputed at
-`α_LM = 0.0907` and compared to the packaged `1.92%` nominal. This row does
-not assert that the bracket is framework-native or audit-closed for the exact
-`Cl(3) x Z^3` `H_unit` operator.
+This is a source-boundary and arithmetic-support layer on top of the prior P1
+symbolic decomposition. After the 2026-06-13 repair, its load-bearing claim is
+narrowed to a **bracket-independent affine arithmetic lemma plus a native
+non-certification certificate**: for any candidate finite scalar coefficient
+`I_S`, the retained `C_F` channel maps it to
+`P1(I_S) = (α_LM/(4π)) · (4/3) · I_S`, the packaged value is exactly the
+`I_S = 2` reference, and the current native BZ candidate is
+`I_S_native = 3.902774738804`, which does **not** certify the historical
+external bracket `[4, 10]`. The historical literature bracket is retained below
+only as non-authority comparison context, not as a premise that this row asks
+audit to accept.
 
 The later canonical numerical science lane is
 `docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`, which
 performs a full-staggered BZ quadrature on the retained surface and must be
-audited on its own. This older citation row should be treated only as a
-conditional arithmetic and literature-context witness.
+audited on its own. This older citation row should be treated as an affine
+arithmetic/source-boundary witness and a falsifier for treating the historical
+bracket as framework-native.
+
+## 2026-06-13 safe narrowed audit target
+
+The intended re-audit target is now:
+
+1. **Affine transfer theorem.** Given a candidate finite coefficient `I_S` in
+   the `α/(4π)` convention, the `C_F` channel contributes
+   `P1(I_S) = (α_LM/(4π)) · (4/3) · I_S`. In particular,
+   `I_S = 2` gives the packaged `1.9240%` reference and the historical
+   comparison points `4, 6, 10` give `3.848%`, `5.772%`, and `9.620%`.
+2. **Native non-certification theorem.** The in-repo native BZ certificate
+   `scripts/yt_p1_i_s_native_bz_certificate_2026_06_11.py` computes
+   `I_S_native = 3.902774738804 ± 0.000558132423` on the operational scalar
+   expression and reports `BRACKET_VERDICT: NOT_CERTIFIED` for `[4, 10]`.
+3. **Authority firewall.** The historical external bracket `[4, 10]` and
+   central value `6` are comparison labels only. They are not dependencies, not
+   retained inputs, and not sufficient to revise any master obstruction or
+   publication surface.
 
 ## Authority notice
 
@@ -43,15 +65,15 @@ adds is narrower:
 
 1. identify the specific BZ integral `I_S` that, via the retained `I_1 = I_S` reduction, is the
    single 1-loop matching primitive entering the `C_F` channel of `Δ_R`;
-2. record the external literature bracket used as a supplied conditional input for the
+2. record the external literature bracket as historical comparison context for the
    closest lattice-QCD analogue (tadpole-improved staggered scalar density on Wilson
    plaquette action at `β ≃ 6`), with explicit source references and documented
-   citation confidence;
-3. recompute the framework-specific P1 contribution at `α_LM = 0.0907` with the supplied range;
+   citation uncertainty;
+3. recompute the P1 transfer function at `α_LM = 0.0907` on representative comparison points;
 4. compare to the packaged `delta_PT = α_LM · C_F / (2π) ≃ 1.92%` nominal (which implicitly
    assumes the standard fundamental-Yukawa value `I_S = 2` in the `α/(4π)` convention);
-5. mark clearly whether the P1 budget carried on the obstruction theorem is revised up, down,
-   or left unchanged, and if so by how much.
+5. mark clearly that no budget revision follows from this row until a retained native
+   `I_S` coefficient or retained citation certificate exists.
 
 Read it together with:
 
@@ -100,8 +122,7 @@ the value `6` is therefore chosen as a representative central, not as the arithm
 the bracket. The un-improved analogue is larger (`I_S_stag_unimpr ∈ [10, 20]`); tadpole
 improvement brings it down.
 
-Adopting the mid-range cited value `I_S ≃ 6` as the framework-specific surrogate for the
-composite-`H_unit` scalar bilinear (noting explicit citation uncertainty) gives
+Using the mid-range historical comparison label `I_S ≃ 6` in the affine map gives
 
 ```
     P1_framework  =  (α_LM / (4π)) · C_F · I_S
@@ -110,24 +131,25 @@ composite-`H_unit` scalar bilinear (noting explicit citation uncertainty) gives
                   ≃  5.8%,
 ```
 
-roughly `3×` the packaged `1.92%` nominal. The full supplied range maps to
+roughly `3×` the packaged `1.92%` nominal. The full historical comparison range maps to
 
 ```
     P1_framework  ∈  [ 3.8%,  9.6% ]     (I_S ∈ [4, 10]).
 ```
 
-**Conditional implication.** If that supplied bracket is accepted for the exact
+**Hypothetical implication.** If a separate retained native coefficient or
+retained citation certificate accepted that bracket for the exact
 operator/scheme, the associated arithmetic would revise the P1 contribution to
 `P1 ∈ [3.8%, 9.6%]` rather than the single packaged `1.92%`. This row does
 not by itself establish that acceptance.
 
-**Safe claim boundary.** The `I_S` bracket is **supplied with documented uncertainty**.
+**Safe claim boundary.** The `I_S` bracket is **comparison context with documented uncertainty**.
 No claim is made here that the bracket constitutes a framework-native derivation
 of `I_S` on the `Cl(3) × Z^3` action. The packaged `1.92%` remains a defensible
 standard-fundamental reference point under the `I_S = 2` assumption. A canonical
 positive numerical result must come from a framework-native 1-loop BZ integration
 on the retained action, such as the separate full-staggered quadrature lane; this
-row only preserves the conditional arithmetic map.
+row only preserves the affine arithmetic map and native non-certification firewall.
 
 ## 1. Retained foundations
 
@@ -240,11 +262,14 @@ between references by `O(1)` because of differing conventions on:
 - whether the plaquette `β = 6` or a slightly different value (`β = 6.0` vs `β = 6.2`, etc.)
   is used as the tadpole reference.
 
-**Bracket confidence.** This note treats the range `I_S ∈ [4, 10]` as the **conditional supplied
-bracket** for the tadpole-improved surface closest to the framework canonical surface, with
-a **central estimate** `I_S ≃ 6`. The precise per-reference number is **not** claimed; what
-is claimed is the **bracket** and the qualitative fact that the composite-`H_unit` matching
-coefficient is materially larger than the standard fundamental-Yukawa value `2`.
+**Bracket confidence.** This note treats the range `I_S ∈ [4, 10]` as
+**historical comparison context** for the tadpole-improved surface closest to
+the framework canonical surface, with a **comparison central label**
+`I_S ≃ 6`. The precise per-reference number is **not** claimed, and the
+bracket itself is not load-bearing for this row. The row's claim is only the
+affine transfer map, the comparison arithmetic, and the native-BZ
+non-certification result that prevents using the historical bracket as a
+framework-native input.
 
 A framework-native 1-loop BZ integration on the retained `Cl(3) × Z^3` canonical surface
 would be required to pin the number below `O(1)` uncertainty. That derivation is
@@ -272,8 +297,9 @@ persist under tadpole improvement. Tadpole improvement reduces the magnitude by 
 
 ### 2.4 Explicit source references
 
-The literature used for the supplied range is (in rough order of increasing retention confidence
-for the tadpole-improved 1-link staggered scalar matching):
+The literature retained as non-authority comparison context is (in rough order
+of increasing relevance for the tadpole-improved 1-link staggered scalar
+matching):
 
 - G. Kilcup and S. R. Sharpe, "A tool kit for staggered fermions",
   *Nucl. Phys.* **B283** (1987) 493 — original perturbative matching framework for staggered
@@ -295,17 +321,17 @@ for the tadpole-improved 1-link staggered scalar matching):
 *specific* composite operator `H_unit = (1/sqrt(6)) Σ ψ̄ ψ` on the framework's *specific*
 canonical surface is not quoted identically in any of the above references — each uses a
 slightly different operator and/or tadpole scheme. The range `[4, 10]` with central
-estimate `6` is the honest summary of the literature bracket; the narrower range
-`[5, 7]` would be defensible under a more aggressive convention-matching argument but is
-not claimed here. **Users of this bound should treat the range as the primary output, not
-any central number.**
+label `6` is retained as historical comparison context only; the narrower range
+`[5, 7]` would require a more aggressive convention-matching argument and is
+not claimed here. **Users of this row should treat the affine map and the native
+non-certification result as the primary output, not the historical bracket.**
 
-## 3. Framework-specific P1 contribution at `α_LM = 0.0907`
+## 3. P1 transfer function at `α_LM = 0.0907`
 
 ### 3.1 Central estimate
 
-Adopting the mid-range cited value `I_S = 6` and the retained color factor `C_F = 4/3`,
-at `α_LM = 0.09066784` the framework-specific P1 contribution in the `C_F` channel is
+Using the mid-range comparison label `I_S = 6` and the retained color factor `C_F = 4/3`,
+at `α_LM = 0.09066784` the affine P1 contribution in the `C_F` channel is
 
 ```
     P1_framework_central
@@ -318,9 +344,9 @@ at `α_LM = 0.09066784` the framework-specific P1 contribution in the `C_F` chan
 This is a factor of `5.77 / 1.92 ≃ 3.00×` larger than the packaged `1.92%` nominal that
 the master obstruction budget currently carries on the P1 line.
 
-### 3.2 Cited range
+### 3.2 Comparison points
 
-Sweeping `I_S` over the supplied bracket gives
+Sweeping `I_S` over the historical comparison points gives
 
 | `I_S` (α/(4π))  | P1 contribution     | ratio to packaged 1.92% |
 |------------------|----------------------|--------------------------|
@@ -330,7 +356,7 @@ Sweeping `I_S` over the supplied bracket gives
 | 8 (high-mid)     | 7.69%                | 4.00×                    |
 | 10 (high-end)    | 9.62%                | 5.00×                    |
 
-The full supplied range on the tadpole-improved staggered surface maps to
+The full historical comparison range on the tadpole-improved staggered surface maps to
 `P1_framework ∈ [3.85%, 9.62%]`. The un-improved analogue (cited as `I_S ∈ [10, 20]`)
 would give `P1 ∈ [9.6%, 19.2%]`; tadpole improvement on the canonical surface brings this
 down to the `[3.85%, 9.62%]` bracket quoted above.
@@ -359,12 +385,12 @@ The packaged value
 
 is recovered exactly under the **implicit** assumption `I_S = 2` (standard fundamental-Yukawa).
 
-Under the supplied bracket `I_S ∈ [4, 10]`, with central estimate
-`I_S ~= 6`, the associated framework-specific P1 contribution is
+Under the historical comparison bracket `I_S ∈ [4, 10]`, with central label
+`I_S ~= 6`, the affine P1 contribution is
 
 ```
-    P1_framework  ∈  [3.85%, 9.62%]     (supplied range)
-    P1_framework  ≃  5.77%               (central estimate)
+    P1_framework  ∈  [3.85%, 9.62%]     (comparison range)
+    P1_framework  ≃  5.77%               (central comparison label)
 ```
 
 vs the packaged `P1_packaged ≃ 1.92%`.
@@ -375,8 +401,10 @@ vs the packaged `P1_packaged ≃ 1.92%`.
     P1_framework / P1_packaged  ≃  3.00×   (upward).
 ```
 
-This is a material conditional revision of the P1 line if, and only if, the
-supplied bracket is accepted for the exact operator/scheme.
+This is comparison arithmetic only. It becomes a material P1 revision if, and
+only if, a separate retained native coefficient or retained citation
+certificate accepts the corresponding `I_S` value for the exact
+operator/scheme.
 
 ## 5. Conditional implication for the master obstruction budget
 
@@ -385,15 +413,17 @@ The master obstruction theorem
 Yukawa-lane UV-to-IR systematic into three named primitives {P1, P2, P3} and lists `P1 ≃
 1.92%` as the dominant contribution, with the total `~1.95%`.
 
-Under the central supplied `I_S ≃ 6`, the framework-specific P1 contribution is
-`~5.77%`, roughly a factor of `3×` larger. Adopting the supplied range gives
-`P1 ∈ [3.85%, 9.62%]`. These are conditional consequences of the supplied
-bracket:
+Under the central comparison label `I_S ≃ 6`, the affine map gives
+`~5.77%`, roughly a factor of `3×` larger. Applying the comparison range gives
+`P1 ∈ [3.85%, 9.62%]`. These are hypothetical consequences of accepting the
+comparison bracket; they are not consequences this row asks the audit lane to
+treat as retained:
 
-1. **If the supplied bracket is accepted for the exact operator/scheme,** the
+1. **If a retained native coefficient or retained citation certificate accepts
+   the corresponding value for the exact operator/scheme,** the
    packaged `~1.95%` value is the standard-fundamental reference point rather
    than the bracket-centered estimate. The conditional central is then
-   `~5.8%`; under the high end of the supplied range (`I_S = 10`) it reaches
+   `~5.8%`; under the high end of the comparison range (`I_S = 10`) it reaches
    `~9.6%`.
 
 2. **The arithmetic revision is upward in magnitude only, not structural.**
@@ -404,8 +434,9 @@ bracket:
 
 **Do not modify the master obstruction theorem on the basis of this citation note.** The
 theorem's `1.92%` value remains a faithful carrier of the standard-fundamental packaging.
-The note here is a documentation / citation layer that flags an honest reassessment of the
-P1 budget line; closing it requires a framework-native BZ integration.
+The note here is a source-boundary layer that prevents the historical bracket
+from being mistaken for framework-native authority; closing a revised P1 value
+requires a framework-native BZ integration or retained citation certificate.
 
 ## 6. What is retained vs. what is cited vs. what is open
 
@@ -423,7 +454,7 @@ P1 budget line; closing it requires a framework-native BZ integration.
 - Packaged `delta_PT = α_LM · C_F / (2π) ≃ 1.92%` evaluation
   (`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`).
 
-**Cited (external lattice-QCD literature, with acknowledged uncertainty):**
+**Comparison-only context (external lattice-QCD literature, with acknowledged uncertainty):**
 
 - Tadpole-improved staggered scalar-density BZ matching coefficient range
   `I_S ∈ [4, 10]` in the `α/(4π)` convention, central estimate `≃ 6`
@@ -431,12 +462,19 @@ P1 budget line; closing it requires a framework-native BZ integration.
   Sharpe 1987; Ishizuka–Shizawa 1994).
 - Un-improved analogue `I_S_unimpr ∈ [10, 20]` (same references).
 
-**Not provided in this note (would be the next retention level):**
+**Native certificate / not provided in this note:**
+
+- The existing native BZ certificate computes
+  `I_S_native = 3.902774738804 ± 0.000558132423` and explicitly reports
+  `BRACKET_VERDICT: NOT_CERTIFIED` for `[4, 10]`. That is a useful
+  framework-native scale check and a guard against accepting the comparison
+  bracket as authority.
 
 - A framework-native 1-loop BZ evaluation of `I_S` on the retained `Cl(3) × Z^3`
-  canonical action with the exact composite-`H_unit` bilinear. The separate
-  full-staggered quadrature lane is the proper candidate for that positive
-  numerical authority; this row remains conditional.
+  canonical action with the exact composite-`H_unit` bilinear remains the next
+  positive numerical authority if the lane wants a revised retained P1 value.
+  The separate full-staggered quadrature lane is the proper candidate for that
+  audit, not this historical citation row.
 - Closure of the `C_A` channel (`I_2`) and `T_F n_f` channel (`I_3`) of `Δ_R`. These
   remain OPEN P1 sub-gaps.
 - The revised P1 value's propagation into any publication-surface table. No publication-
@@ -444,21 +482,22 @@ P1 budget line; closing it requires a framework-native BZ integration.
 
 ## 7. Safe claim boundary
 
-This note claims only the conditional arithmetic statement:
+This note claims only the bracket-independent arithmetic and source-boundary
+statement:
 
-> On the retained conserved-current staggered surface, the `C_F`-channel of the 1-loop
-> lattice-to-MSbar matching correction `Δ_R` reduces to a single BZ integral `I_S` for the
-> composite-`H_unit` scalar bilinear. Assuming the supplied comparison bracket
-> `I_S ∈ [4, 10]` in the `α/(4π)` convention, with a central estimate `≃ 6`,
-> the associated framework-specific P1 contribution at
-> `α_LM = 0.0907` is `P1 ∈ [3.85%, 9.62%]` with central estimate `≃ 5.77%`, a factor of
-> approximately `3×` larger than the packaged `1.92%` nominal that the master obstruction
-> budget currently carries.
+> On the retained conserved-current staggered surface, the `C_F`-channel of the
+> 1-loop lattice-to-MSbar matching correction `Δ_R` reduces to a single finite
+> coefficient `I_S` for the composite-`H_unit` scalar bilinear. For any
+> candidate `I_S` in the `α/(4π)` convention, the associated transfer is
+> `P1(I_S) = (α_LM/(4π)) · (4/3) · I_S`; the packaged `1.92%` value is exactly
+> the `I_S = 2` reference. The in-repo native BZ certificate currently gives
+> `I_S_native = 3.902774738804 ± 0.000558132423` and explicitly does not
+> certify the historical comparison bracket `[4, 10]`.
 
 It does **not** claim:
 
 - that `I_S` is derived framework-native on the `Cl(3) × Z^3` canonical action;
-- that the supplied range `[4, 10]` is audit-closed for the exact operator/scheme
+- that the supplied range `[4, 10]` is a dependency, retained input, audit-closed for the exact operator/scheme,
   or has better than `O(1)` precision;
 - that the master obstruction theorem should be modified on the basis of this note (it
   should not — the theorem's packaged `1.92%` remains a faithful carrier of the standard-
@@ -467,16 +506,18 @@ It does **not** claim:
   remain OPEN.
 
 The packaged `1.92%` retains a defensible role as the standard-fundamental
-`I_S = 2` reference. This note preserves the conditional map from a supplied
-larger bracket to the corresponding P1 arithmetic; it does not require the
-audit lane to accept that bracket as a closed framework-native input.
+`I_S = 2` reference. This note preserves the affine map from any candidate
+coefficient to P1 arithmetic and records that the native BZ certificate does
+not certify the historical bracket; it does not require the audit lane to
+accept that bracket as a closed framework-native input.
 
 ## 8. 2026-06-12 restricted-packet re-audit bridge
 
 This section responds to the 2026-06-11 conditional audit request for a
 restricted packet that exposes the prior `I_1 = I_S` reduction, the `C_F`
-authority, and a citation/native certificate for the supplied `I_S in [4,10]`
-bracket. It is an audit-readiness bridge only. It does not update any audit
+authority, the comparison arithmetic, and the native non-certification
+certificate for the historical `I_S in [4,10]` bracket. It is an
+audit-readiness bridge only. It does not update any audit
 verdict, does not promote this row, and does not treat any unaudited downstream
 quadrature note as an authority before independent review.
 
@@ -486,21 +527,22 @@ quadrature note as an authority before independent review.
 |---|---|---|---|
 | `I_1 = I_S` reduction | `scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`; `logs/retained/yt_p1_i1_lattice_pt_symbolic_2026-04-17.log` | 21/21 symbolic checks: `I_1 = I_S - I_V`, `I_V = 0` on the conserved-current surface, hence `I_1 = I_S` | structural input exposed for audit; this bridge does not recertify its ledger status |
 | `C_F` color factor | `docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`; `scripts/frontier_yt_p1_color_factor_retention.py`; `logs/runner-cache/frontier_yt_p1_color_factor_retention.txt` | exact `SU(3)` identities `C_F = 4/3`, `C_A = 3`, `T_F n_f = 3`, plus the three-channel decomposition | algebraic authority exposed for audit; per-channel integrals remain separate inputs |
-| conditional citation arithmetic | this note; `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`; `logs/runner-cache/frontier_yt_p1_i_s_lattice_pt_citation.txt` | supplied `I_S in [4,10]` maps to `P1 in [3.85%,9.62%]`, central `5.77%`, and `I_S = 2` maps back to the packaged `1.92%` reference | conditional arithmetic only; the bracket remains supplied unless accepted by audit or replaced by a native derivation |
-| native BZ lower-end certificate candidate | `docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`; `scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py`; `logs/runner-cache/frontier_yt_p1_bz_quadrature_full_staggered_pt.txt` | full staggered-PT cache computes `I_v_scalar = +3.902` with a quoted 5% systematic envelope and `I_v_gauge = 0`; the scalar value overlaps the lower end `I_S = 4` within that systematic | candidate native numerical support only; the quadrature lane must be independently audited before it can replace the supplied bracket |
+| affine comparison arithmetic | this note; `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`; `logs/runner-cache/frontier_yt_p1_i_s_lattice_pt_citation.txt` | `P1(I_S)=(alpha_LM/(4pi))*(4/3)*I_S`; comparison points `I_S=4,6,10` map to `P1 in [3.85%,9.62%]`, and `I_S = 2` maps back to the packaged `1.92%` reference | arithmetic theorem only; the bracket remains non-authority comparison context unless accepted by a separate audit or replaced by a native derivation |
+| native BZ non-certification candidate | `scripts/yt_p1_i_s_native_bz_certificate_2026_06_11.py`; `logs/runner-cache/yt_p1_i_s_native_bz_certificate_2026_06_11.txt`; plus the full-staggered cache named below | native certificate computes `I_S_native = 3.902774738804 ± 0.000558132423` and prints `BRACKET_VERDICT: NOT_CERTIFIED` for `[4,10]`; full-staggered cache independently reports `I_v_scalar = +3.902` | native scale check and bracket firewall only; the quadrature lane must be independently audited before it can become a positive retained P1 value |
 
 ### 8.2 What the native BZ certificate does and does not prove
 
-The full-staggered quadrature cache supplies a directly inspectable native
-number near the low end of the cited bracket:
+The native certificate supplies a directly inspectable framework-side
+number near the low end of the historical comparison bracket:
 
 ```
     I_S_native_candidate  =  I_v_scalar  =  3.902
     5% systematic band    =  [3.707, 4.097]
 ```
 
-Thus the native candidate is compatible with the low endpoint `I_S = 4` of the
-supplied bracket at the stated systematic level. In the same normalization,
+Thus the native candidate is close to, but still below, the low endpoint
+`I_S = 4` of the comparison bracket; the certificate explicitly reports
+`BRACKET_VERDICT: NOT_CERTIFIED`. In the same normalization,
 using the canonical `alpha_LM` and `C_F = 4/3`,
 
 ```
@@ -511,7 +553,7 @@ using the canonical `alpha_LM` and `C_F = 4/3`,
 
 This is useful because it checks the scale and operator family against a
 framework-native full-staggered BZ computation rather than leaving the row as
-pure citation arithmetic. It still does not prove the full supplied range
+pure citation arithmetic. It still does not prove the full comparison range
 `I_S in [4,10]`, does not prove the literature upper end `10`, and does not
 authorize replacing this row's conditional boundary with an audit-clean native
 P1 value. The only proposed movement is that re-audit now has the complete
@@ -526,13 +568,13 @@ restricted packet above. Its PASS lines intentionally certify only:
 
 - source/cache presence for the prior symbolic, color-factor, citation, and
   native-BZ candidate surfaces;
-- exact recovery of `I_1 = I_S`, `C_F = 4/3`, and the conditional
-  `P1 in [3.85%,9.62%]` arithmetic;
+- exact recovery of `I_1 = I_S`, `C_F = 4/3`, and the affine
+  `P1(I_S)=(alpha_LM/(4pi))*(4/3)*I_S` arithmetic on comparison points;
 - extraction of `I_v_scalar = +3.902` and `Delta_R = -3.769%` from the native
   full-staggered cache;
 - explicit firewalls that this note does not claim audit closure, does not
-  prove the upper end of the supplied bracket, and does not modify the master
-  obstruction theorem.
+  certify the historical bracket, and does not modify the master obstruction
+  theorem.
 
 Independent audit remains required before this row or any downstream consumer
 may treat the bracket, the native-BZ candidate, or the P1 revision as retained
@@ -542,8 +584,9 @@ authority.
 
 The runner `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py` emits deterministic PASS/FAIL
 lines and is logged under `logs/retained/yt_p1_i_s_lattice_pt_citation_2026-04-17.log`.
-The runner verifies the conditional arithmetic and scope boundary; it does
-not verify the external bracket as a retained framework-native value.
+The runner verifies the affine arithmetic, native non-certification, and scope
+boundary; it does not verify the external bracket as a retained
+framework-native value.
 
 Specifically the runner verifies:
 
@@ -552,11 +595,14 @@ Specifically the runner verifies:
   `canonical_plaquette_surface.py`;
 - exact reproduction of the packaged `delta_PT ≃ 1.92%` under the implicit standard-
   fundamental `I_S = 2` (sanity check against the prior UV gauge bridge note);
-- the supplied range `I_S ∈ [4, 10]` with central `I_S ≃ 6` maps to `P1 ∈ [3.85%, 9.62%]`
-  with central `P1 ≃ 5.77%` to sub-permille tolerance on the arithmetic;
+- the comparison range `I_S ∈ [4, 10]` with central label `I_S ≃ 6` maps to
+  `P1 ∈ [3.85%, 9.62%]` with central `P1 ≃ 5.77%` to sub-permille tolerance
+  on the arithmetic;
+- the native BZ certificate gives `I_S_native = 3.902774738804` and
+  `BRACKET_VERDICT: NOT_CERTIFIED`;
 - the revision factor `P1_central / P1_packaged ≃ 3.0×` matches
   `I_S_central / I_S_standard = 6/2 = 3` exactly (structural consistency);
-- bracket confidence is explicitly logged as a supplied range, not a single number;
+- bracket confidence is explicitly logged as comparison context, not as a retained input;
 - no modification of the master obstruction theorem is implied (structural check).
 
 ## Audit dependency repair links

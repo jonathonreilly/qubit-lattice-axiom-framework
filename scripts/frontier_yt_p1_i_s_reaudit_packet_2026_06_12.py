@@ -38,11 +38,13 @@ SYMBOLIC_RUNNER = ROOT / "scripts" / "frontier_yt_p1_i1_lattice_pt_symbolic.py"
 COLOR_RUNNER = ROOT / "scripts" / "frontier_yt_p1_color_factor_retention.py"
 CITATION_RUNNER = ROOT / "scripts" / "frontier_yt_p1_i_s_lattice_pt_citation.py"
 BZ_RUNNER = ROOT / "scripts" / "frontier_yt_p1_bz_quadrature_full_staggered_pt.py"
+NATIVE_CERT_RUNNER = ROOT / "scripts" / "yt_p1_i_s_native_bz_certificate_2026_06_11.py"
 
 SYMBOLIC_LOG = ROOT / "logs" / "retained" / "yt_p1_i1_lattice_pt_symbolic_2026-04-17.log"
 COLOR_CACHE = ROOT / "logs" / "runner-cache" / "frontier_yt_p1_color_factor_retention.txt"
 CITATION_CACHE = ROOT / "logs" / "runner-cache" / "frontier_yt_p1_i_s_lattice_pt_citation.txt"
 BZ_CACHE = ROOT / "logs" / "runner-cache" / "frontier_yt_p1_bz_quadrature_full_staggered_pt.txt"
+NATIVE_CERT_CACHE = ROOT / "logs" / "runner-cache" / "yt_p1_i_s_native_bz_certificate_2026_06_11.txt"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -98,10 +100,12 @@ def block_1_packet_presence() -> None:
         COLOR_RUNNER,
         CITATION_RUNNER,
         BZ_RUNNER,
+        NATIVE_CERT_RUNNER,
         SYMBOLIC_LOG,
         COLOR_CACHE,
         CITATION_CACHE,
         BZ_CACHE,
+        NATIVE_CERT_CACHE,
     ]
     for path in required:
         check(
@@ -120,15 +124,18 @@ def block_2_source_boundary() -> None:
     note_flat = compact(note)
     check("re-audit bridge section present", "2026-06-12 restricted-packet re-audit bridge" in note)
     check("restricted packet table present", "Packet authorities exposed for re-audit" in note)
+    check("2026-06-13 narrowed target present", "2026-06-13 safe narrowed audit target" in note)
     check("native BZ candidate section present", "What the native BZ certificate does and does not prove" in note)
     check("independent audit firewall present", "Independent audit remains required" in note)
     check("no audit verdict update claimed", "does not update any audit verdict" in note_flat)
     check("no promotion claimed by bridge", "does not promote this row" in note)
-    check("upper end not proved", "does not prove the full supplied range" in note)
+    check("native certificate reports bracket not certified", "BRACKET_VERDICT: NOT_CERTIFIED" in note)
+    check("upper end not proved", "does not prove the full comparison range" in note)
     check("master theorem not modified", "does not modify the master obstruction theorem" in note_flat)
     check("old proposed_retained marker absent from citation note", "proposed_retained" not in note)
     check("citation note remains bounded theorem", "**Claim type:** bounded_theorem" in note)
-    check("citation note remains conditional arithmetic", "conditional arithmetic lemma" in note)
+    check("citation note states affine transfer theorem", "Affine transfer theorem" in note)
+    check("citation note states native non-certification theorem", "Native non-certification theorem" in note)
 
 
 def block_3_prior_reduction_and_color() -> None:
@@ -180,7 +187,7 @@ def block_4_conditional_arithmetic() -> None:
         summary is not None and summary[0] >= 41 and summary[1] == 0,
         f"summary={summary}",
     )
-    check("note records supplied bracket I_S in [4, 10]", "I_S in [4, 10]" in note or "`I_S in [4,10]`" in note)
+    check("note records comparison bracket I_S in [4, 10]", "I_S in [4, 10]" in note or "`I_S in [4,10]`" in note)
     check("low endpoint maps to about 3.85%", abs(100.0 * p1_low - 3.848) < 0.01)
     check("central maps to about 5.77%", abs(100.0 * p1_mid - 5.772) < 0.01)
     check("high endpoint maps to about 9.62%", abs(100.0 * p1_high - 9.620) < 0.01)
@@ -193,6 +200,7 @@ def block_5_native_bz_candidate() -> None:
     print("=" * 72)
 
     cache = text(BZ_CACHE)
+    native_cache = text(NATIVE_CERT_CACHE)
     note = text(NOTE)
 
     i_v_scalar = require_float(r"I_v_scalar\s+= \+([0-9.]+) \+/-", cache, "I_v_scalar")
@@ -211,12 +219,14 @@ def block_5_native_bz_candidate() -> None:
 
     check("BZ cache records clean execution", "status: ok" in cache and "exit_code: 0" in cache)
     check("BZ cache records PASS=45 FAIL=0", "SUMMARY: PASS=45  FAIL=0" in cache)
+    check("native cert cache records PASS=11 FAIL=0", "TOTAL: PASS=11 FAIL=0" in native_cache)
+    check("native cert cache records bracket not certified", "BRACKET_VERDICT: NOT_CERTIFIED" in native_cache)
     check("BZ cache gives I_v_scalar near 3.902", abs(i_v_scalar - 3.902) < 0.005)
     check("5% scalar systematic overlaps I_S = 4", syst_low <= 4.0 <= syst_high)
     check("native P1 candidate near low cited endpoint", abs(100.0 * p1_native - 3.754) < 0.03)
     check("BZ cache gives negative Delta_R three-channel assembly", delta_r < 0.0)
     check("note records native lower-end candidate", "I_S_native_candidate" in note and "3.902" in note)
-    check("note says native candidate does not prove upper end", "does not prove the literature upper end `10`" in note)
+    check("note says native candidate does not prove comparison bracket", "does not prove the full comparison range" in note)
 
 
 def block_6_scope_firewall() -> None:
@@ -227,10 +237,17 @@ def block_6_scope_firewall() -> None:
     note = text(NOTE)
     note_flat = compact(note)
 
-    check("citation note says bracket is not framework-native", "not assert that the bracket is framework-native" in note)
-    check("citation note says bracket is not audit-closed", "not assert that the bracket is framework-native or audit-closed" in note)
+    check(
+        "citation note says bracket is not framework-native",
+        "non-authority comparison context" in note
+        and "closed framework-native input" in note_flat,
+    )
+    check(
+        "citation note says bracket is not audit-closed",
+        "audit-closed" in note and "retained input" in note,
+    )
     check("citation note keeps master obstruction unchanged", "Do not modify the master obstruction theorem" in note)
-    check("new bridge calls BZ surface a candidate", "candidate native numerical support only" in note)
+    check("new bridge calls BZ surface a bracket firewall", "native scale check and bracket firewall only" in note)
     check("new bridge requires separate BZ audit", "the quadrature lane must be independently audited" in note)
     check(
         "new bridge does not treat old BZ wording as authority",

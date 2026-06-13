@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
-runner_sha256: d096bb472132ca14807b2824c6fa0221b2f135bf593ca53abea799e111e2a81b
+runner_sha256: f3ff95ef72f07402c8474635aa0f32b10dd5b58bb3c40f3e0452c12fe30e9b9c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================
@@ -23,25 +23,30 @@ BLOCK 1: restricted-packet source/cache presence
   [PASS] scripts/frontier_yt_p1_color_factor_retention.py exists  (present)
   [PASS] scripts/frontier_yt_p1_i_s_lattice_pt_citation.py exists  (present)
   [PASS] scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py exists  (present)
+  [PASS] scripts/yt_p1_i_s_native_bz_certificate_2026_06_11.py exists  (present)
   [PASS] logs/retained/yt_p1_i1_lattice_pt_symbolic_2026-04-17.log exists  (present)
   [PASS] logs/runner-cache/frontier_yt_p1_color_factor_retention.txt exists  (present)
   [PASS] logs/runner-cache/frontier_yt_p1_i_s_lattice_pt_citation.txt exists  (present)
   [PASS] logs/runner-cache/frontier_yt_p1_bz_quadrature_full_staggered_pt.txt exists  (present)
+  [PASS] logs/runner-cache/yt_p1_i_s_native_bz_certificate_2026_06_11.txt exists  (present)
 
 ========================================================================
 BLOCK 2: source-note status boundary
 ========================================================================
   [PASS] re-audit bridge section present
   [PASS] restricted packet table present
+  [PASS] 2026-06-13 narrowed target present
   [PASS] native BZ candidate section present
   [PASS] independent audit firewall present
   [PASS] no audit verdict update claimed
   [PASS] no promotion claimed by bridge
+  [PASS] native certificate reports bracket not certified
   [PASS] upper end not proved
   [PASS] master theorem not modified
   [PASS] old proposed_retained marker absent from citation note
   [PASS] citation note remains bounded theorem
-  [PASS] citation note remains conditional arithmetic
+  [PASS] citation note states affine transfer theorem
+  [PASS] citation note states native non-certification theorem
 
 ========================================================================
 BLOCK 3: prior symbolic reduction and color authority
@@ -65,8 +70,8 @@ BLOCK 4: conditional I_S bracket arithmetic
   P1(I_S=6)       = 5.7721%
   P1(I_S=10)      = 9.6202%
   [PASS] citation cache records clean execution
-  [PASS] citation cache records at least 41 PASS / 0 FAIL  (summary=(43, 0))
-  [PASS] note records supplied bracket I_S in [4, 10]
+  [PASS] citation cache records at least 41 PASS / 0 FAIL  (summary=(57, 0))
+  [PASS] note records comparison bracket I_S in [4, 10]
   [PASS] low endpoint maps to about 3.85%
   [PASS] central maps to about 5.77%
   [PASS] high endpoint maps to about 9.62%
@@ -81,12 +86,14 @@ BLOCK 5: native full-staggered BZ candidate
   Delta_R full staggered-PT  = -3.769%
   [PASS] BZ cache records clean execution
   [PASS] BZ cache records PASS=45 FAIL=0
+  [PASS] native cert cache records PASS=11 FAIL=0
+  [PASS] native cert cache records bracket not certified
   [PASS] BZ cache gives I_v_scalar near 3.902
   [PASS] 5% scalar systematic overlaps I_S = 4
   [PASS] native P1 candidate near low cited endpoint
   [PASS] BZ cache gives negative Delta_R three-channel assembly
   [PASS] note records native lower-end candidate
-  [PASS] note says native candidate does not prove upper end
+  [PASS] note says native candidate does not prove comparison bracket
 
 ========================================================================
 BLOCK 6: audit/status firewall
@@ -94,14 +101,14 @@ BLOCK 6: audit/status firewall
   [PASS] citation note says bracket is not framework-native
   [PASS] citation note says bracket is not audit-closed
   [PASS] citation note keeps master obstruction unchanged
-  [PASS] new bridge calls BZ surface a candidate
+  [PASS] new bridge calls BZ surface a bracket firewall
   [PASS] new bridge requires separate BZ audit
   [PASS] new bridge does not treat old BZ wording as authority
   [PASS] bridge keeps BZ candidate under separate audit
   [PASS] this runner does not edit audit ledger  (source/cache verifier only)
 
 ========================================================================
-SUMMARY: PASS=55  FAIL=0
+SUMMARY: PASS=62  FAIL=0
 ========================================================================
 
 RESULT:

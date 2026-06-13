@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_i_s_lattice_pt_citation.py
-runner_sha256: a16a2fec6c2dabb271c7f9f8e00b4005348b375c17490144bc054d5ae3301798
+runner_sha256: c97e99d8147b6f260a62602e08c2c954a6db2086d588adf88b256bc8335cef0f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================
@@ -18,9 +18,13 @@ PART 0: Source-note status boundary
   [PASS] source note exists  (docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md)
   [PASS] claim type is bounded_theorem
   [PASS] type is conditional / arithmetic support
-  [PASS] conditional citation/support boundary is present
-  [PASS] conditional arithmetic lemma boundary is present
+  [PASS] 2026-06-13 narrowed audit target is present
+  [PASS] affine arithmetic lemma boundary is present
+  [PASS] native non-certification theorem boundary is present
+  [PASS] authority firewall boundary is present
   [PASS] bracket is not asserted audit-closed
+  [PASS] historical bracket is non-authority context
+  [PASS] native BZ certificate does not certify bracket
   [PASS] old proposed_retained status is absent
   [PASS] PR-local source proposal marker is absent
   [PASS] PR-local control field is absent
@@ -67,12 +71,12 @@ PART C: Packaged delta_PT under standard-fundamental I_S = 2
   [PASS] Packaged delta_PT ~ 1.92% (to 5e-4 absolute)  (packaged = 1.9240 %)
 
 ========================================================================
-PART D: Supplied I_S range for composite-H_unit on the canonical surface
+PART D: Historical comparison I_S points for composite-H_unit
 ========================================================================
 
   (alpha/(4 pi) convention; tadpole-improved Wilson-plaquette +
-   1-link staggered scalar density at beta ~ 6; supplied conditional range,
-   NOT a framework-native derivation.)
+   1-link staggered scalar density at beta ~ 6; comparison range,
+   NOT a framework-native derivation and NOT a retained input.)
 
   I_S_CITED_LOW       = 4.00
   I_S_CITED_CENTRAL   = 6.00   (mid-range)
@@ -80,15 +84,15 @@ PART D: Supplied I_S range for composite-H_unit on the canonical surface
 
   (Un-improved analogue, NOT retained surface:
    I_S_UNIMPROVED in [10.0, 20.0] -- documented but not used.)
-  [PASS] Supplied range is ordered LOW <= CENTRAL <= HIGH  (4.0 <= 6.0 <= 10.0)
-  [PASS] Central estimate sits inside the bracket and on the low-mid side  (central = 6.0, arithmetic midpoint = 7.00, low = 4.0)
-  [PASS] Central estimate is strictly above the standard-fundamental value 2  (central = 6.0 > standard = 2.0)
-  [PASS] Supplied bracket sits materially ABOVE the standard-fundamental I_S = 2  (I_S_CITED_LOW = 4.0 vs 2 * I_S_standard = 4.0)
+  [PASS] Comparison range is ordered LOW <= CENTRAL <= HIGH  (4.0 <= 6.0 <= 10.0)
+  [PASS] Comparison central label sits inside the bracket and on the low-mid side  (central = 6.0, arithmetic midpoint = 7.00, low = 4.0)
+  [PASS] Comparison central label is strictly above the standard-fundamental value 2  (central = 6.0 > standard = 2.0)
+  [PASS] Comparison bracket sits materially ABOVE the standard-fundamental I_S = 2  (I_S_CITED_LOW = 4.0 vs 2 * I_S_standard = 4.0)
   [PASS] Tadpole-improved bracket is BELOW un-improved analogue  (TI_high = 10.0 vs unimpr_low = 10.0)
-  [PASS] Supplied-bracket confidence is recorded as a range, not a single number  (range width = 6.0)
+  [PASS] Comparison bracket is recorded as context, not a retained input  (range width = 6.0)
 
 ========================================================================
-PART E: Framework-specific P1 contribution at alpha_LM = 0.0907
+PART E: Affine P1 transfer at alpha_LM = 0.0907
 ========================================================================
 
   P1(I_S) = (alpha_LM / (4 pi)) * C_F * I_S = 0.007215 * 1.333333 * I_S
@@ -97,30 +101,30 @@ PART E: Framework-specific P1 contribution at alpha_LM = 0.0907
   ------------------------------------------------------------
   standard (2)  |    0.019240  |    1.924%  |         1.000x
        low (4)  |    0.038481  |    3.848%  |         2.000x
-   central (6)  |    0.057721  |    5.772%  |         3.000x
+   compare (6)  |    0.057721  |    5.772%  |         3.000x
   high-mid (8)  |    0.076961  |    7.696%  |         4.000x
      high (10)  |    0.096202  |    9.620%  |         5.000x
   [PASS] P1(I_S = 2) = packaged 1.92% (sanity)  (P1(I_S=2) = 0.019240; packaged = 0.019240)
-  [PASS] P1(I_S = 4) ~ 3.85% (low end of supplied range)  (P1(I_S=4) = 3.848 %)
-  [PASS] P1(I_S = 6) ~ 5.77% (central supplied estimate)  (P1(I_S=6) = 5.772 %)
-  [PASS] P1(I_S = 10) ~ 9.62% (high end of supplied range)  (P1(I_S=10) = 9.620 %)
-  [PASS] Full supplied P1 range: [3.8%, 9.7%] (absolute bracket)  (P1 in [3.848%, 9.620%])
+  [PASS] P1(I_S = 4) ~ 3.85% (low comparison point)  (P1(I_S=4) = 3.848 %)
+  [PASS] P1(I_S = 6) ~ 5.77% (central comparison label)  (P1(I_S=6) = 5.772 %)
+  [PASS] P1(I_S = 10) ~ 9.62% (high comparison point)  (P1(I_S=10) = 9.620 %)
+  [PASS] Full comparison P1 range: [3.8%, 9.7%] (arithmetic only)  (P1 in [3.848%, 9.620%])
 
 ========================================================================
-PART F: Revision factor vs packaged 1.92% nominal
+PART F: Comparison factor vs packaged 1.92% nominal
 ========================================================================
 
-  ratio central = P1(I_S=6) / P1(I_S=2)   = 3.0000x
+  ratio comparison = P1(I_S=6) / P1(I_S=2) = 3.0000x
   I_S_central / I_S_standard              = 3.0000x
   ratio low     = P1(I_S=4) / P1(I_S=2)   = 2.0000x
   I_S_low / I_S_standard                  = 2.0000x
   ratio high    = P1(I_S=10) / P1(I_S=2)  = 5.0000x
   I_S_high / I_S_standard                 = 5.0000x
-  [PASS] Central revision factor matches I_S ratio (3.00x) exactly  (P1 ratio = 3.0000000000, I_S ratio = 3.0000000000)
+  [PASS] Comparison factor matches I_S ratio (3.00x) exactly  (P1 ratio = 3.0000000000, I_S ratio = 3.0000000000)
   [PASS] Low-end revision factor matches I_S ratio (2.00x)  (P1 ratio = 2.0000000000)
   [PASS] High-end revision factor matches I_S ratio (5.00x)  (P1 ratio = 5.0000000000)
-  [PASS] Central revision factor is approximately 3.0x (upward)  (central ratio = 3.0000x)
-  [PASS] Revision is monotone upward: all three P1 values > packaged 1.92%  (packaged = 0.019240)
+  [PASS] Comparison factor is approximately 3.0x  (central ratio = 3.0000x)
+  [PASS] Comparison points are monotone upward relative to packaged 1.92%  (packaged = 0.019240)
 
 ========================================================================
 PART G: Scope boundary (master obstruction theorem not modified)
@@ -133,31 +137,53 @@ PART G: Scope boundary (master obstruction theorem not modified)
     C_A channel I_2 closed                    = False
     T_F n_f channel I_3 closed                = False
     supplied I_S is framework-native          = False
+    historical bracket is retained input      = False
+    native certificate proves [4,10]          = False
   [PASS] Master obstruction theorem NOT modified by this note
   [PASS] Publication-surface files NOT modified by this note
   [PASS] P1 NOT closed by this note (conditional arithmetic only)
   [PASS] C_A channel I_2 remains OPEN (not closed by this note)
   [PASS] T_F n_f channel I_3 remains OPEN (not closed by this note)
   [PASS] Supplied I_S value explicitly NOT framework-native  (framework-native BZ integration remains the next retention level)
+  [PASS] Historical bracket is comparison context, not a retained input
+  [PASS] Native certificate does NOT prove the historical [4,10] bracket
 
 ========================================================================
-SUMMARY: PASS=43  FAIL=0
+PART H: Native BZ certificate cache and bracket firewall
 ========================================================================
 
-Supplied I_S value (central conditional estimate):
-  I_S  =  6.00   (range [4.0, 10.0], alpha/(4 pi) convention)
+  native cache              = logs/runner-cache/yt_p1_i_s_native_bz_certificate_2026_06_11.txt
+  I_S_native                = 3.902774738804
+  extrapolation error       = 0.000558132423
+  P1(I_S_native)            = 3.7545 %
+  low comparison P1(I_S=4)  = 3.8481 %
+  [PASS] native BZ cache exists  (logs/runner-cache/yt_p1_i_s_native_bz_certificate_2026_06_11.txt)
+  [PASS] native BZ cache records clean execution
+  [PASS] native BZ certificate records PASS=11 FAIL=0
+  [PASS] native BZ certificate reports BRACKET_VERDICT: NOT_CERTIFIED
+  [PASS] native scalar candidate is below historical lower endpoint 4  (I_S_native=3.902774738804 < 4.0)
+  [PASS] native scalar candidate is close to low comparison scale  (I_S_native=3.902774738804)
+  [PASS] native P1 candidate is below low comparison P1  (P1_native=3.7545%, P1_low=3.8481%)
+  [PASS] native certificate is used as a firewall, not bracket proof
 
-Framework-specific P1 contribution at alpha_LM = 0.0907:
-  P1_central  =  5.772 %   (central estimate)
-  P1 range    =  [3.848%, 9.620%]
+========================================================================
+SUMMARY: PASS=57  FAIL=0
+========================================================================
+
+Historical comparison I_S label:
+  I_S  =  6.00   (range [4.0, 10.0], alpha/(4 pi) convention; comparison context only)
+
+Affine P1 transfer at alpha_LM = 0.0907:
+  P1_compare  =  5.772 %   (I_S=6 comparison label)
+  comparison range =  [3.848%, 9.620%]
 
 Comparison to packaged delta_PT = 1.92%:
   packaged    =  1.9240 %  (I_S_standard = 2 implicit)
-  revision    =  3.00x upward under central supplied I_S
+  comparison  =  3.00x at I_S=6
 
-Conditional direction: UPWARD if the supplied range is accepted
-for the exact operator/scheme. Master obstruction theorem not
-modified -- conditional arithmetic note only.
+Native BZ certificate: BRACKET_VERDICT: NOT_CERTIFIED.
+Master obstruction theorem not modified; comparison bracket is not
+a retained input or framework-native derivation.
 
 ----- stderr -----
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 876 |
+| **retained_bounded** | 874 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1509 |
+| unaudited | 1511 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 25 |
-| `audited_clean` | 1296 |
+| `audit_in_progress` | 24 |
+| `audited_clean` | 1295 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1826 |
+| `unaudited` | 1828 |
 
 | claim_type | count |
 |---|---:|
@@ -140,7 +140,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -308,7 +307,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -876,7 +874,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -3785,19 +3783,6 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** A Clifford basis monomial gamma_S anticommutes with every generator only when S is the full generator set and n is even, so A_n={0} for odd n and A_n=span(omega) for even n.  _(class `A`)_
 - **chain closes:** True — The Clifford-basis parity calculation proves the iff statement internally, and over C the even-dimensional volume element can be phase-normalized to square +I. The cited accepted axiom premise supplies only d_s=3 via the Z^3 lattice, so even total dimension gives d_t odd without another dependency.
 - **rationale:** The load-bearing work is a genuine algebraic identity/closure, not a definition, renaming, numerical comparator, or tuned-scale match. The runner source performs finite explicit Clifford-matrix checks and does not import contested values; the general proof in the note supplies the dimension-independent closure. The only upstream authority is flagged as an accepted axiom premise and is used correctly for the Z^3 to d_s=3 specialization.
-- **auditor confidence:** high
-
-### `clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08`
-
-- **Note:** [`CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md`](../../docs/CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the algebra/counting decoupling between the retained Cl(3,1) gamma extension and the retained naive-lattice 2^d species-corner count; no emergent-time gamma supply, massive field realization, or magnitude-wall closure is established.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260609-124009-7079413f42-clifford_gamma_not_lattice_s`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** A Clifford generator/gamma extension is a matrix-algebra object, while a lattice species corner is a Brillouin-zone zero; the resulting spinor dimension 4 is not the naive-lattice species count 16.  _(class `A`)_
-- **chain closes:** True — The cited retained Clifford authority supplies the gamma/spinor extension, and the cited retained lattice authority supplies the 2^d corner count. The source conclusion only separates these objects and therefore closes within its stated bounded scope.
-- **rationale:** The load-bearing step is a class-A algebraic/counting distinction over retained-grade inputs: a Clifford generator is not a momentum-space corner, and 4 spinor components are not 16 naive species corners. The runner source performs lightweight finite checks of Pauli/Dirac matrix sizes, gamma5 balance, sin(k) zeros, and powers of two; the independent audit route is the cited Clifford and lattice theorems plus the object-type distinction. The source note's guardrails prevent the clean result from being overread as emergent-time field construction or missing-corner wall closure.
 - **auditor confidence:** high
 
 ### `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`
@@ -12000,17 +11985,17 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The row is a class-A algebraic bookkeeping theorem and does not import PDG values, mass-scale observations, or a physical dimension derivation. The cached runner reports PASS=14, FAIL=0 under SHA f8e6d0d9e6a6b88a48b3cea28cf0b4f73536762df53a0784c240c0dcf71a5e20, including explicit tensor basis/rank checks at d=4. Clean status is bounded by the claim_type: downstream effective status should be retained_bounded, not an unbounded derivation of the lepton scale or d=4.
 - **auditor confidence:** high
 
-### `magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`
+### `magnitude_temporal_factor_is_count_not_rate_2026-06-06`
 
-- **Note:** [`MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md)
+- **Note:** [`MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md`](../../docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Formula-local audit that the supplied `4π` coupling slot differs from a Gaussian `2π` slot by `2^16` at exponent count 16, with retained-bounded support for native `Z^3` Green-kernel `1/(4πr)` geometry and no closure of physical readout, convention, dressing, or value gate.
+- **claim_scope:** Audited only the bounded count/rate separation: the temporal factor 2 is a transfer-step/mode count, POST_RECORD_CLOCK_RATE_INTERFACE does not block count-only use, and the minimal reflection-positive block is 2 steps; not a derivation of v, alpha_LM, or the UV/per-record readout selection.
 - **audit_status:** ~~audited_clean~~
 - **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260610-042151-5da9065bc0-magnitude_4pi_is_native_coup`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given the supplied hierarchy-formula slot `alpha_bare = g_bare^2/(4π)` and exponent `16`, replacing the coupling normalization `4π` with a Gaussian `2π` changes the factor by exactly `((1/(2π)) / (1/(4π)))^16 = 2^16`.  _(class `A`)_
-- **chain closes:** True — The load-bearing `2^16` ratio and `(4π)^-16 = ((4π)^-1)^16` identities close by direct algebra, and the cited `Z^3` Green-kernel source supplies the separate native geometric `4π` coefficient. The claim remains bounded to that objection-removal scope and does not use the explicitly open I1/I2/I3/P3 residuals.
-- **rationale:** The load-bearing step is an exact algebraic identity over the supplied formula slot and exponent, not a numerical match or empirical comparator. The one-hop cited authorities needed for the bounded scope are retained-grade under the rubric, and the runner source contains actual arithmetic checks rather than only PASS printing. The note explicitly excludes the physical static-source readout, alpha convention, Cl3 normalization, per-mode dressing, and hierarchy value gate, so those residuals are not promoted by this audit.
+- **auditor:** `codex-cli-gpt-5.5-20260613-222016-3beec995b7-magnitude_temporal_factor_is`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The exponent 16 is the mode-count cardinality 8 x L_t evaluated at the minimal reflection-positive temporal block L_t = 2, and that cardinality is independent of the hopping/rate parameter while OS normalization only rescales eigenvalues.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade authorities supply the count/rate boundary, the exact 8 L_t mode count, and the 2-step positive transfer block. The remaining step is arithmetic and invariant checking: L_t = 2 gives 16 modes, while energy normalization changes eigenvalues rather than cardinality.
+- **rationale:** The load-bearing math is a genuine algebraic closure over independent retained-grade inputs, not a definition or tuned numerical match. The displayed quantitative identities needed for the scoped claim check out: |sites| = 2^3 L_t, L_t = 2 gives 16, eta_1(t) has period 2, e^{-2E} is positive, and H = -ln(T_hat^2)/(2 a_tau) preserves the number of modes. The runner source performs finite matrix and spectrum checks rather than merely printing constants, and there are no PDG or external comparator imports in the PASS conditions.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "quark_route2_eta_floor_hf_boundary_note"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11",
         "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
         "gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12",
         "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
         "gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
-        "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11"
+        "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11",
+        "quark_route2_eta_floor_hf_boundary_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "366457e6a8cbf7df3f5baa3cb756847ec24e060b935d222c05ba2c931790edef",
+      "note_hash": "09121706775396dd7bc0966e92830a72b0462af63755d987c273e660da8198eb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

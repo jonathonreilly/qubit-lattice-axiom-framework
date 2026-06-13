@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 278,
     "high": 285,
-    "leaf": 455,
+    "leaf": 454,
     "medium": 421
   },
   "cycle_break_target_count": 4,
@@ -17115,36 +17115,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_einselection_2sector_modulo_kreality_2026-06-02",
-        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
-        "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30",
-        "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29",
-        "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17285,6 +17255,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_matter_loop_flux_response_no_uniform_sign_2026_06_11.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "quark_route2_eta_floor_hf_boundary_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/_frontier_loader.py"
+      ],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/quark_route2_eta_floor_hf_boundary_check.py",
       "transitive_descendants": 17
     },
     {
@@ -30170,30 +30164,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "quark_route2_eta_floor_hf_boundary_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/_frontier_loader.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/quark_route2_eta_floor_hf_boundary_check.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -30818,6 +30788,35 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_interacting_rp_full_algebra_2026_06_05.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_gamma5_factor_bridge_no_go.py",
       "transitive_descendants": 0
     },
     {
@@ -38251,35 +38250,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
-        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_gamma5_factor_bridge_no_go.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_generation_channel_space_holomorphy_channel_independence_bounded_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -43425,5 +43395,5 @@
     }
   ],
   "ready_count": 46,
-  "total_pending": 1439
+  "total_pending": 1438
 }

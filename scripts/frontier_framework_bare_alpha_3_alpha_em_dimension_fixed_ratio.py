@@ -59,6 +59,10 @@ def float_close(label: str, audit: Audit, actual: float, expected: float, tol: f
 
 def audit_scope_boundary(audit: Audit) -> None:
     note_path = "docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md"
+    archived_note_path = (
+        "archive_unlanded/framework-bare-alpha-assumed-input-salvage-2026-04-30/"
+        "FRAMEWORK_BARE_ALPHA_3_ALPHA_EM_DIMENSION_FIXED_RATIO_SUPPORT_NOTE_2026-04-25.md"
+    )
     archive_root = ROOT / "archive_unlanded"
 
     def _authority_exists(rel: str) -> bool:
@@ -71,9 +75,12 @@ def audit_scope_boundary(audit: Audit) -> None:
         return False
 
     audit.check(f"source file exists: {note_path}", _authority_exists(note_path))
+    audit.check(f"archived audited-failed wrapper exists: {archived_note_path}", _authority_exists(archived_note_path))
 
     note = read(note_path)
+    archived_note = read(archived_note_path)
     flat_note = " ".join(note.split())
+    flat_archived = " ".join(archived_note.split())
 
     audit.check(
         "note status is bounded formal identity theorem only",
@@ -115,6 +122,22 @@ def audit_scope_boundary(audit: Audit) -> None:
         and "bare_retained_allowed: false" in note
         and "proposal_allowed: false" in note,
     )
+    audit.check(
+        "archived failed wrapper points at canonical repair packet",
+        "docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md" in archived_note
+        and "direct same-path handoff to the narrowed source boundary" in archived_note,
+    )
+    audit.check(
+        "archived failed wrapper is non-authority conditional algebra only",
+        "This file remains archived" in archived_note
+        and "not a live retained theorem" in archived_note
+        and "not retained-grade support authority" in flat_archived
+        and "supplied inputs are hypotheses of the lemma" in flat_archived,
+    )
+    audit.check(
+        "archived failed wrapper reproduction matches current runner verdict",
+        "VERDICT: FORMAL ASSUMED-INPUT IDENTITY THEOREM VERIFIED" in archived_note,
+    )
 
     forbidden = [
         "support corollary on a retained EW-normalization surface",
@@ -127,7 +150,8 @@ def audit_scope_boundary(audit: Audit) -> None:
         "physical use is closed by this row",
     ]
     for phrase in forbidden:
-        audit.check(f"forbidden overclaim absent: {phrase}", phrase not in note)
+        audit.check(f"forbidden overclaim absent from canonical note: {phrase}", phrase not in note)
+        audit.check(f"forbidden overclaim absent from archived wrapper: {phrase}", phrase not in archived_note)
 
 
 def audit_exact_algebra(audit: Audit) -> None:

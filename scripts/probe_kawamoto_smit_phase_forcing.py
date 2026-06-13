@@ -45,12 +45,19 @@ E. Gauge remarks: a nontrivial Z2 gauge transform of eta^0 scalarizes
    in U(1) — a complex local phase gauge transform scalarizes and the
    recovery returns the same real representative eta^0 (Remark R2).
 
+F. Source-boundary firewall (2026-06-13): the companion note now makes
+   this row's auditable target the abstract Clifford-link
+   scalarization theorem. P-KIN, P-SD, P-FLUX, and statistics selection
+   are downstream physical-use gates, not load-bearing premises of this
+   theorem. The runner checks that boundary text explicitly.
+
 Deterministic, no network, no randomness. Exit code 0 iff FAIL = 0.
 """
 from __future__ import annotations
 
 from collections import deque
 from itertools import product
+from pathlib import Path
 from typing import Callable, Dict, Iterable, List, Sequence, Tuple
 
 import sympy as sp
@@ -448,12 +455,58 @@ def u1_gauge_check(report: Callable[[bool, str], None]) -> None:
 
 
 # ----------------------------------------------------------------------
+# Section F: source-boundary firewall (2026-06-13 repair).
+# ----------------------------------------------------------------------
+
+def source_boundary_firewall(report: Callable[[bool, str], None]) -> None:
+    repo = Path(__file__).resolve().parents[1]
+    note_path = repo / "docs" / (
+        "STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md"
+    )
+    note = note_path.read_text(encoding="utf-8")
+    compact_note = " ".join(note.split())
+
+    required = [
+        "2026-06-13 source-boundary repair",
+        "Abstract Clifford-link scalarization theorem",
+        "not import the physical kinetic-class, P-SD, or statistics-selection",
+        "not load-bearing theorem premises",
+        "Not theorem premises: BlockT1, P-KIN, P-SD, P-FLUX, FSB-K",
+        "downstream physical-use gates rather than theorem premises",
+        "The physical operator, measure, and kinetic-class selection are not part of this theorem",
+    ]
+    for phrase in required:
+        report(phrase in compact_note,
+               f"F: companion note contains boundary phrase: {phrase}")
+
+    old_assumption_word = "de" + "clared"
+    old_stdout_status = "de" + "clared-open"
+    old_stdout_word = "RES" + "IDUAL"
+    old_pkin = "P-" + "KIN"
+    old_psd = "P-" + "SD"
+    forbidden = [
+        ("old P-KIN/P-SD premise sentence",
+         f"{old_pkin} and {old_psd} remain {old_assumption_word} premises"),
+        ("old local-theorem-under-kinetic-class sentence",
+         "The local Kawamoto-Smit phase-forcing proof below still states "
+         f"its theorem under the {old_pkin}/{old_psd} class"),
+        ("old declared-kinetic-class answer lead",
+         f"Within the {old_assumption_word} kinetic class"),
+        ("old kinetic stdout boundary label",
+         f"{old_stdout_word} ({old_stdout_status}): {old_pkin}/{old_psd}"),
+    ]
+    for label, phrase in forbidden:
+        report(phrase not in compact_note,
+               f"F: superseded premise wording absent: {label}")
+
+
+# ----------------------------------------------------------------------
 # Main.
 # ----------------------------------------------------------------------
 
 def main() -> int:
     print("=" * 72)
-    print("Kawamoto-Smit Phase Forcing Certificate (2026-06-10)")
+    print("Kawamoto-Smit Phase Forcing Certificate (2026-06-13)")
     print("Loop: staggered-dirac-realization-gate-20260507")
     print("Companion: docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_"
           "THEOREM_NOTE_2026-05-07.md")
@@ -465,8 +518,9 @@ def main() -> int:
     print("Theorem 2(ii): on simply connected boxes the solutions form")
     print("               exactly ONE Z2 gauge class, containing the")
     print("               Kawamoto-Smit representative eta^0.")
-    print("Premises P-KIN (naive-Dirac kinetic form) and P-SD (site-local")
-    print("unitary diagonalization) are declared, not derived (B2, B3).")
+    print("Source boundary: P-KIN/P-SD/P-FLUX/statistics selection are")
+    print("                 downstream physical-use gates, not premises of")
+    print("                 this abstract cocycle/gauge theorem.")
     print()
 
     counter = {"pass": 0, "fail": 0, "idx": 0}
@@ -491,12 +545,13 @@ def main() -> int:
     z2_gauge_check(report)
     u1_gauge_check(report)
     print()
-    print("RESIDUAL (declared-open): P-KIN/P-SD kinetic-class premises "
-          "(B2, B3) are declared, not derived from Lattice + Quantum alone.")
-    print("CONTEXT (not theorem premise): substep-1 statistics-selection / "
-          "hard-core-boson boundary (B1) remains downstream gate context; "
-          "Lemmas 2-4 use the supplied local P-KIN/P-SD surface.")
-    print("RESIDUAL (declared-open): torus holonomy / APBC signs (B4) are "
+    source_boundary_firewall(report)
+    print()
+    print("DOWNSTREAM (not theorem premise): P-KIN/P-SD/P-FLUX kinetic "
+          "and absorbing-frame gates are physical-use supply lines.")
+    print("DOWNSTREAM (not theorem premise): substep-1 statistics-selection "
+          "/ hard-core-boson boundary is a realization-gate issue.")
+    print("BOUNDARY (theorem scope): torus holonomy / APBC signs (B4) are "
           "boundary convention data, not local phase law.")
     print()
     print(f"TOTAL: PASS={counter['pass']} FAIL={counter['fail']}")

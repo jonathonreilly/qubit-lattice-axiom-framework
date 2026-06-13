@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_kubo_fam2_non_convergence_stretch.py
-runner_sha256: 0ccf5766daadf4d3dc68e02e10ed856e85ad5f9682c565f8d5a5d443f9c75618
+runner_sha256: 19caba2ebb90cf84d71d6b908aa4b1c0420830cc60f05d6de647573aa3d87593
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -92,8 +92,25 @@ Part 7: Recorded Finite Data table supported by refinement output
   [PASS (A)] refinement note contains: The Fam2 series is  ()
   [PASS (A)] refinement note contains: does **not** prove literal divergence  ()
 
+----------------------------------------------------------------------------------------
+Part 8: re-audit trigger guard
+----------------------------------------------------------------------------------------
+  [PASS (A)] re-audit trigger guard contains: Re-Audit Trigger Guard  ()
+  [PASS (A)] re-audit trigger guard contains: source-bound to the two current Kubo parent/context packets  ()
+  [PASS (A)] re-audit trigger guard contains: SHA-pinned Fam2 refinement cache  ()
+  [PASS (A)] re-audit trigger guard contains: KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md  ()
+  [PASS (A)] re-audit trigger guard contains: KUBO_FAM2_REFINEMENT_NOTE.md  ()
+  [PASS (A)] re-audit trigger guard contains: scripts/kubo_fam2_refinement.py  ()
+  [PASS (A)] re-audit trigger guard contains: logs/runner-cache/kubo_fam2_refinement.txt  ()
+  [PASS (A)] re-audit trigger guard contains: effective retained_bounded status  ()
+  [PASS (A)] re-audit trigger guard contains: requires re-audit before downstream use  ()
+  [PASS (A)] freshness boundary contains: stale, refreshed, or  ()
+  [PASS (A)] freshness boundary contains: no longer supports the finite Fam2 values recorded here  ()
+  [PASS (A)] freshness boundary contains: does not promote the row  ()
+  [PASS (A)] freshness boundary contains: parent/context movement or cached-data movement  ()
+
 ========================================================================================
-  TOTAL: PASS=57, FAIL=0
+  TOTAL: PASS=70, FAIL=0
 ========================================================================================
 KUBO_FAM2_POSSIBLE_OBSTRUCTION_INVENTORY=TRUE
 OPEN_GATE_DOCUMENTED=TRUE

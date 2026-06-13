@@ -1,0 +1,24 @@
+loop_slug: acphilambda-hw-equivariance-open-gate-20260613
+date: 2026-06-13
+branch: physics-loop/acphilambda-hw-equivariance-open-gate-20260613
+base: origin/main
+goal: "Repair the AC_phi_lambda Hamming-complementation support row by making the R-A relabeling universe mathematically explicit."
+target_status: best-honest-status
+actual_current_surface_status: open
+cycle_count: 1
+active_route: finite-surface relabeling-universe clarification
+hard_residual: "The finite support result still does not derive a physical species bridge, registry edit, or charged-lepton value."
+files_touched:
+  - docs/ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md
+  - scripts/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.py
+  - logs/runner-cache/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.txt
+  - .claude/science/physics-loops/acphilambda-hw-equivariance-open-gate-20260613/
+open_imports:
+  - "Full-dynamics complementation-equivariance."
+  - "Physical species/readout bridge."
+  - "Any Tier-A registry or convention-class action."
+trace_gate_classification: direct_blocker_closure
+review_findings: pending reviewer extraction
+pr_status: pending
+next_exact_action: "Run guards, commit, push, and open PR."
+stop_condition: "PR opened with runner/cache evidence and no audit-ledger edits."

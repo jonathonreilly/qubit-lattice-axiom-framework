@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 885 |
+| **retained_bounded** | 886 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1397 |
+| unaudited | 1396 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1339 |
+| `audited_clean` | 1340 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1714 |
+| `unaudited` | 1713 |
 
 | claim_type | count |
 |---|---:|
@@ -1170,6 +1170,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
 | `signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17266,6 +17267,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using the relative gap-defined support frame s_j/s_0 > 0.05 and Procrustes frame transport, the measured native K_odd interface carrier has Pf(theta)/Pf(0.05)=+1 for all 63 tested theta points and an empty crossing set.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the stated lattice operator, O-real basis, relative support frames, transport alignment, and Pfaffian signs directly, with no helper imports or external comparators. The closure is for the measured finite grids only; it does not prove a continuum-in-theta no-crossing theorem between sampled points.
 - **rationale:** The load-bearing result is a first-principles finite computation of the stated matrix family, not a definition substitution or tuned external numerical match. The source code computes the spectra, ranks, transported frames, and Pfaffian signs rather than hard-coding the empty flip set; the hard-coded absolute-cutoff ranks are only a trap-control check and are not used as the label. The displayed main-line and marginal smooth-control numbers are consistent with the executable construction and the stated bounded scope.
+- **auditor confidence:** high
+
+### `signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`SIGNED_GRAVITY_NATIVE_TRANSFER_KERNEL_TWIST_SUFFICIENCY_TEST_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/SIGNED_GRAVITY_NATIVE_TRANSFER_KERNEL_TWIST_SUFFICIENCY_TEST_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional audit of the native free staggered two-step log kernel on the tested U(1)-holonomy cylinders, showing same-parity holonomy-odd content but no zero-centered in-gap edge tower for theta in {0, 0.6, 1.0, pi} and sizes 20x30 and 28x40.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-025922-656190f022-signed_gravity_native_transf`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because K = 2 arcsinh(sqrt(m^2 + H_hop^2)) with H_hop^2 >= 0 has spec(K) >= 2 arcsinh(m), every tested zero-centered window |lambda| <= bulk_gap/2 lies below the spectral floor, so the in-gap edge-tower set is empty.  _(class `A`)_
+- **chain closes:** True — The source and runner close the scoped finite-matrix claim: the positivity-floor inequality independently explains the empty in-gap window, and the runner source actually diagonalizes the constructed finite operators rather than printing constants. The conclusion is route-local and does not exclude Wilson-mass, domain-wall, interacting, gauged, 3D-lift, or derived symmetric-spectrum mechanisms.
+- **rationale:** The load-bearing failure of the sufficiency chain is not a tuned numerical match: it follows algebraically from the positive transfer-log spectral floor, with the finite runner confirming the relevant windows and spectra on all tested carriers. The cited retained-bounded authorities supply the two-step transfer/log normalization used by the bounded test, and no external comparator or empirical input is used. The no-go wording is properly narrowed to the native free kernel on this sufficiency route, with the missing edge tower identified as the single wall.
 - **auditor confidence:** high
 
 ### `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`

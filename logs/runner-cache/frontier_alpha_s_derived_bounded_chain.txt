@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_alpha_s_derived_bounded_chain.py
-runner_sha256: 7d5291b2db5cae8a675cf18935e88fcf8dea3f4e1e950b08bd6ca36eb69f4be0
+runner_sha256: 9e77797302a8180ebb9f22e20f1a704bf5870a784abaae9d41beb03916ead040
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ============================================================================
@@ -28,6 +28,13 @@ C1: bounded v -> M_Z corollary (quarantined; not load-bearing)
   [PASS][B] helper canonical_plaquette_surface.CANONICAL_PLAQUETTE equals declared boundary input B1  (helper = 0.5934, B1 = 0.5934)
   [PASS][B] helper CANONICAL_ALPHA_S_V agrees with the T1 forward value to 1e-15  (|helper - T1| = 0.000e+00)
   [PASS][B] bridge note's boundary alpha_s(v) = 0.103304 is the 6-decimal rounding of the T1 value  (|0.103304 - 0.10330382| = 1.839e-07)
+
+=== Source-status firewall (class B, non-load-bearing for T1) ===
+
+  [PASS][B] 2026-06-12 firewall says row remains bounded, not retained
+  [PASS][B] firewall keeps B1 plaquette value admitted until certified
+  [PASS][B] firewall keeps B3 channel-selection/coupling-map bridge open
+  [PASS][B] firewall keeps B4 lattice-to-MSbar scheme/scale bridge open
 
 === C1 (bounded corollary, NOT load-bearing for T1): v -> M_Z transfer ===
 
@@ -58,10 +65,12 @@ Scope notes for the auditor:
   - The M_Z readout uses the running-bridge note's bounded
     transfer-kernel scope; it is a corollary, not part of
     the T1 claim surface.
+  - The source firewall keeps B1, B3 channel-selection, and
+    B4 open; this runner does not promote the row.
 
 ============================================================================
-Breakdown: A=8 B=5 D=2
-TOTAL: PASS=15 FAIL=0
+Breakdown: A=8 B=9 D=2
+TOTAL: PASS=19 FAIL=0
 ============================================================================
 
 ----- stderr -----

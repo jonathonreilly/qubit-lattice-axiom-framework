@@ -271,6 +271,37 @@ records where B1's upstream plaquette analytic work currently stands.
 It is not load-bearing for T1, because T1 consumes `<P> = 0.5934` as an
 input (B1), not as a derived value.
 
+## 2026-06-12 Residual-Bridge Source Firewall
+
+The B3 algebraic identity and the B3 operator-counting half are now
+wired, but this row still cannot honestly promote beyond bounded
+forward arithmetic. The remaining promotion blockers are exact and
+source-visible:
+
+- **B1 remains an admitted plaquette value.** The bracket-reduction
+  program gives `<P>* = 1 + f'(6)` a framework-native referent and
+  reduces retirement to a certified three-point `ln Z_L` enclosure, but
+  this note does not supply that enclosure and does not derive
+  `<P> = 0.5934`.
+- **B3 still has a channel-selection residue.** The retained algebraic
+  theorem supplies the `u_0^{-2}` identities, and the operator-counting
+  lemma supplies the two-insertion vacuum-polarization channel count.
+  What is not derived here is the physical coupling-map theorem that
+  identifies that channel count as the vertex power in
+  `alpha_s(v) := alpha_bare/u_0^2`.
+- **B4 remains a scheme/scale bridge.** The lattice tadpole-improved
+  coupling is not proved here to be the MSbar strong coupling at
+  `mu = v`; the `v -> M_Z` corollary therefore stays standard
+  bounded-infrastructure context.
+
+Source-surface summary: this is bounded support only. It partially closes the
+direct blocker by preserving the T1 arithmetic over B1-B4, the B3 abstract
+algebraic identities, and the B3 vacuum-polarization two-insertion operator
+count. The live blockers remain the B1 plaquette-value certificate, the B3
+channel-selection/coupling-map theorem, and the B4 lattice-to-MSbar scheme and
+scale theorem. No retained-grade proposal or status promotion is made here;
+the independent audit lane remains the only authority for effective status.
+
 ## Why this is not a numerical match at a tuned scale
 
 - **Zero-free-parameter closed form.** T1's output is
@@ -332,8 +363,8 @@ python3 scripts/frontier_alpha_s_derived_bounded_chain.py
 Expected result (deterministic, pure Python, runtime under one second):
 
 ```text
-Breakdown: A=8 B=5 D=2
-TOTAL: PASS=15 FAIL=0
+Breakdown: A=8 B=9 D=2
+TOTAL: PASS=19 FAIL=0
 ```
 
 The runner computes T1 forward from the declared boundary inputs B1-B4 (the

@@ -91,6 +91,13 @@ def test_exact_source_boundary_manifest() -> None:
         and "does not introduce a new axiom" in lower
         and "does not mark that source principle as admitted" in lower,
     )
+    check(
+        "2026-06-12 firewall keeps source-action origin as the live blocker",
+        "2026-06-12 source-action hard residual" in lower
+        and "live blocker is a derivation of the aps-locked `chi_eta rho phi` source action" in lower
+        and "does not add that grading as a premise" in lower
+        and "no retained-grade proposal or status promotion is made here" in lower,
+    )
 
 
 def normalize(vec: np.ndarray) -> np.ndarray:

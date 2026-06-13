@@ -72,7 +72,10 @@ SOURCE_REQUIRED_SYMBOLS = (
     "lattice_3d",
 )
 RALA_CLAIM_ID = "teleportation_retained_axis_operator_algebra_closure_note"
+RESOURCE_NOTE = ROOT / "docs" / "TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md"
 RALA_NOTE = ROOT / "docs" / "TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md"
+PREP_READOUT_NOTE = ROOT / "docs" / "TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md"
+OPERATOR_END_TO_END_NOTE = ROOT / "docs" / "TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
 LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 RALA_REQUIRED_SNIPPETS = (
     "RALA(a) = { O_logical",
@@ -166,6 +169,32 @@ def retained_axis_source_certificate() -> dict[str, object]:
         "path": RALA_NOTE,
         "status": status,
         "snippet_count": len(RALA_REQUIRED_SNIPPETS),
+    }
+
+
+def source_status_firewall_certificate() -> dict[str, object]:
+    note_text = RESOURCE_NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    prep_text = PREP_READOUT_NOTE.read_text(encoding="utf-8")
+    op_text = OPERATOR_END_TO_END_NOTE.read_text(encoding="utf-8")
+    required_note_snippets = (
+        "2026-06-12 Native Preparation/Readout Hard Residual",
+        "The live blocker is still a native preparation/readout and apparatus theorem",
+        "No retained-grade proposal or status promotion is made here",
+        "row remains an open gate for a physical deterministic resource",
+    )
+    missing = [snippet for snippet in required_note_snippets if snippet not in note_flat]
+    if missing:
+        raise RuntimeError(f"source firewall snippets missing from resource note: {missing}")
+    if "preparation/readout remains open" not in prep_text.lower():
+        raise RuntimeError("preparation/readout probe no longer states the hard residual")
+    if "physical apparatus derivation" not in op_text.lower():
+        raise RuntimeError("operator-consistent end-to-end note no longer firewalls prep/readout")
+    return {
+        "path": RESOURCE_NOTE,
+        "prep_probe": PREP_READOUT_NOTE,
+        "operator_end_to_end": OPERATOR_END_TO_END_NOTE,
+        "snippet_count": len(required_note_snippets),
     }
 
 
@@ -616,6 +645,13 @@ def main() -> int:
         "Retained-axis source: "
         f"{rala_label} ledger={rala['status']} "
         f"required_theorem_snippets={rala['snippet_count']} PASS"
+    )
+    firewall = source_status_firewall_certificate()
+    print(
+        "Source firewall: "
+        f"{Path(firewall['path']).relative_to(ROOT)} "
+        f"prep/readout hard residual PASS "
+        f"required_snippets={firewall['snippet_count']}"
     )
     print("Last-taste carrier checks:")
     for certificate in (logical_carrier_certificate(case) for case in cases):

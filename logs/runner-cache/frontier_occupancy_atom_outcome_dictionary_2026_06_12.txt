@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/frontier_occupancy_atom_outcome_dictionary_2026_06_12.py
+runner_sha256: ba7576f8bca4c2b4a29db05508f0bd9e15896c2d4e45dae024f3d3479f32ecfe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+==============================================================================
+Occupancy atom / outcome dictionary bounded theorem checks
+==============================================================================
+[PASS] (01) agreement conditioning p_i -> p_i^2/Z sends x = p_d/p_s to x^2  [one-line wave-8a identification reproved]
+[PASS] (02) generic monotone dictionary x=phi(r): conjugated fixed equation is phi(r)=phi(r)^2  [interior fixed point is phi(r*)=1]
+[PASS] (03) component dictionary phi(r)=2r gives r -> 2r^2 with interior fixed point 1/2  [fixed=[0, 1/2]]
+[PASS] (04) slot dictionary phi(r)=r gives r -> r^2 with interior fixed point 1  [fixed=[0, 1]]
+[PASS] (05) dictionary-as-atom fixed-point sets re-solved in r, with projective infinity as s=1/r=0 in both charts  [s maps: component=s**2/2, slot=s**2]
+[PASS] (06) dictionary-as-atom interpretation: x=1 means p_d=p_s in both dictionaries while r-readings differ  [outcome equipartition is the invariant statement]
+[PASS] (07) tri-guise kernel<->flow labels: lambda-exponent pair {2,1} maps bijectively to {x=2r,x=r}  [det(lambda K) scaling on 2x2 vs 1x1 blocks]
+[PASS] (08) tri-guise weight<->flow labels: rho-map sends {2pi/g,pi/g} to {1,1/2}; triangle of labels commutes  [rho=(pi/g)/Z_d, r=1/(2rho)]
+[PASS] (09) conditioned-flow selection is identical in x-space while r-readings differ  [route cannot by itself discriminate]
+[PASS] (10) consistency guard: side conditions exclude 0 and infinity, component dictionary reads x=1 as r=1/2  [sharpening, not contradiction]
+[PASS] (11) negative control: hypothetical x=4r gives r*=1/4 outside the named binary  [dictionary space constrained here to the two landed bookkeepings]
+[PASS] (12) B-check: MINIMAL_AXIOMS realized-outcome-is-the-K/CPT-orbit quote present
+[PASS] (13) B-check: both flow notes' maps are present in their sources
+[PASS] (14) B-check: firewall sentences present  [cannot by itself discriminate, sharpening, not a correction, the occupancy binary stays open]
+[PASS] (15) B-check: positive closing language absent
+[PASS] (16) B-check: markdown link inventory is exactly the three dependency links  [links=[('`FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md`', 'FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md'), ('`FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md`', 'FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md'), ('`MINIMAL_AXIOMS_2026-06-05.md`', 'MINIMAL_AXIOMS_2026-06-05.md')]]
+[PASS] (17) B-check: companions are backticked context only, not markdown-linked
+[PASS] (18) B-check: canonical front matter and No-promotion statement present
+[PASS] (19) B-check: Boundary contains the required does-NOT clauses
+[PASS] (20) B-check: note, runner, and cache are the only touched files in this spec path set  [AM docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md; A  logs/runner-cache/frontier_occupancy_atom_outcome_dictionary_2026_06_12.txt; AM scripts/frontier_occupancy_atom_outcome_dictionary_2026_06_12.py]
+[PASS] (21) B-check: Record guardrail states supplied-context and no-weight/no-occupancy boundary
+[PASS] (22) B-check: tri-guise language is supplied-label scoped
+==============================================================================
+TOTAL: PASS=22 FAIL=0
+SUMMARY: conditioned flow selects x*=1; dictionary choice maps that invariant selection to r=1/2 or r=1.
+==============================================================================
+
+----- stderr -----
+

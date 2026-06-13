@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 878 |
+| **retained_bounded** | 879 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1414 |
+| unaudited | 1413 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1331 |
+| `audited_clean` | 1332 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1731 |
+| `unaudited` | 1730 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 882 |
-| `leaf` | 1338 |
+| `medium` | 883 |
+| `leaf` | 1337 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -432,6 +432,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -6089,6 +6090,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** At E=0 and m != 0, because h_oo=-mI, the Schur complement h_eff=h_ee-h_eo h_oo^{-1} h_oe has uniform diagonal m+2t^2/m, coarse nearest-neighbor entries t^2/m, zero staggered mass, and no beyond-NN terms.  _(class `A`)_
 - **chain closes:** True — The block calculation gives h_oo-E=-mI, so the Schur correction adds (1/m) times the two-hop even-to-even path matrix: 2t^2/m on-site and t^2/m on adjacent coarse sites, with no longer paths. The retained-resolvent identity and the two-step/direct-by-four consistency are standard Schur-complement algebra within the stated finite free-chain scope.
 - **rationale:** The runner source constructs the finite Hamiltonian, computes Schur complements and resolvents, and checks nontrivial controls; it is not a constant-printing runner. The disjoint-grid language is numerical corroboration rather than the symbolic source of the formula, but the displayed coefficients and signs close by direct block algebra from the matrix in the packet. No cited authority, primitive import, open bridge, or external comparator is needed for this bounded free-chain statement, and the m=0 singular case is not used as part of the m != 0 theorem.
+- **auditor confidence:** high
+
+### `exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11`
+
+- **Note:** [`EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md`](../../docs/EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-block quasilocal Lieb-Robinson bound for distinct single-site observables on Z^d, alpha>d, finite-dimensional site Hilbert spaces, and Hamiltonians with finite pair weighted norm J_F; log-transfer use is conditional on separately supplied finite J_F.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-015829-2e91c89803-exp_decay_lieb_robinson_quas`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The proof establishes the reproducing estimate sum_z F(d(x,z))F(d(z,y)) <= C_alpha^{(d)} F(d(x,y)) with C_alpha^{(d)}=2^alpha sum_z(1+||z||_1)^(-alpha), which is then used at each path-series induction step.  _(class `A`)_
+- **chain closes:** True — The reproducing inequality follows from the triangle inequality and alpha>d lattice summability, and K(u,v)<=J_F F(d(u,v)) then gives P_k(x,y)<=J_F^k C_alpha^{k-1} F(d(x,y)). The Duhamel/nested-commutator estimate supplies the displayed factor 2||A||||B||(2|t|)^k/k!, so the exponential LR series closes without importing an unstated transfer-log theorem.
+- **rationale:** The Minimal Axioms authority is an accepted premise and the finite-range cluster note is retained_bounded; no non-retained upstream result is load-bearing for this bounded theorem. Independent math checks confirm the 2^alpha reproducing constant, the C_alpha powers in the path induction, and the 2 C_alpha J_F velocity factor. The runner source performs actual finite lattice and Pauli-matrix computations with no external comparator, fitted constant, or hard-coded contested premise; its log-transfer example is correctly only a witness, not an unconditional theorem for all transfer logarithms.
 - **auditor confidence:** high
 
 ### `exponent_derivation`

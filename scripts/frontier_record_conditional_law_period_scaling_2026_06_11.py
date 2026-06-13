@@ -59,6 +59,7 @@ from __future__ import annotations
 import numpy as np
 import scipy.sparse as sp
 from scipy.linalg import expm
+from pathlib import Path
 
 # MEMORY DISCIPLINE (owner-enforced after a panel OOM): the dense-operator build held
 # ~24 x 268 MB = ~10 GB per process at L=4, and a 4-agent panel multiplied that to an
@@ -71,6 +72,9 @@ from scipy.linalg import expm
 
 PASS = 0
 FAIL = 0
+NOTE = Path(__file__).resolve().parents[1] / "docs" / (
+    "RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md"
+)
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -166,6 +170,7 @@ def prefix(Theta, w, kpref, lbl=None):
 
 
 def null_p95(Theta, w, kpref, n_draws=300, seed=7777):
+    """Seeded sampled-null p95, not exhaustive permutation enumeration."""
     r = np.random.default_rng(seed)
     B = len(w)
     base = np.arange(B) % (2 ** kpref)
@@ -333,6 +338,18 @@ check("THE LOAD-BEARING POSITIVE: the fixed-k profile is MONOTONE at the most-sp
       monotone_all
       and all(l4_k7[s]["clears"] and l4_k7[s]["mono"] for s in k7_seeds)
       and all(k6[s]["clears"] and k6[s]["mono"] for s in k6))
+note_text = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
+check(
+    "source note declares fixed seeded 300-draw sampled-null scope",
+    "fixed seeded 300-draw sampled-null diagnostic" in note_text
+    and "not an exact enumeration of all label permutations" in note_text,
+)
+check(
+    "source note forbids exhaustive, certified-bound, or MC-free null theorem",
+    "does not claim an exhaustive permutation-null p95" in note_text
+    and "finite-sample upper confidence bound" in note_text
+    and "Monte-Carlo-free null theorem" in note_text,
+)
 
 # ===========================================================================
 print("=" * 78)
@@ -351,8 +368,10 @@ print("  establishing, strengthening with the period.  NOT claimed: gap growth a
 print("  period law, concentration in the large-period limit, any CLT premise,")
 print("  L>=5/Z^3 behavior, or gap universality (instance/seed-labeled).  Guards")
 print("  inherited (#3554/#3507: exact tree, SVD polar, rank/no-prune, the fixed seeded")
-print("  300-draw permutation-null diagnostic armed at every gated event).  Born cap inherited (audit lane")
-print("  grades).  The U(1) factor is NOT identified with a physical gauge field.")
+print("  300-draw sampled-null diagnostic armed at every gated event).  No exhaustive")
+print("  permutation-null p95, certified finite-sample bound, or MC-free null theorem")
+print("  is claimed.  Born cap inherited (audit lane grades).  The U(1) factor is NOT")
+print("  identified with a physical gauge field.")
 print("  Discrete-time (retained R1 boundaries untouched).  No new axiom/primitive/")
 print("  measure/weight; r untouched.")
 if FAIL:

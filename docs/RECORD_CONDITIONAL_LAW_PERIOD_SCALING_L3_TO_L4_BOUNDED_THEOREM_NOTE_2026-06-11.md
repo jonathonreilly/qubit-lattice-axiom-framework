@@ -1,13 +1,14 @@
-# Period Scaling of the Record-Conditional U(1) Law (L=3 → L=4): Seed-Robust Fixed-k Monotonicity at the Larger Period; Null-Cleared Gaps Comparable-or-Larger
+# Period Scaling of the Record-Conditional U(1) Law (L=3 → L=4): Seed-Robust Fixed-k Monotonicity at the Larger Period; Sampled-Null Diagnostic Gaps Comparable-or-Larger
 
 **Date:** 2026-06-11
-**Type:** bounded theorem (period-scaling source proposal for PR #3554's named object; panel-corrected)
+**Type:** bounded_theorem (period-scaling source proposal for PR #3554's named object; panel-corrected)
 **Claim type:** bounded_theorem
 **Script:** `scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py`
 **Cache:** `logs/runner-cache/frontier_record_conditional_law_period_scaling_2026_06_11.txt`
-**Status:** source proposal; the audit lane grades. Runner `PASS=14 FAIL=0` — exact
-finite evolution with a deterministic seeded 300-draw permutation-null diagnostic. The
-null comparison is not an exact enumeration of all label permutations. A mandatory
+**Status:** source proposal; the audit lane grades. Runner `PASS=16 FAIL=0` — exact
+finite evolution with a fixed seeded 300-draw sampled-null diagnostic. The null
+comparison is not an exact enumeration of all label permutations or a certified
+finite-sample upper confidence bound. A mandatory
 4-lens adversarial panel (memory-safe re-run after the
 first panel OOMed — see the runner's memory-discipline block) returned `land_with_edits`;
 **all edits applied** — the decisive one kills the draft's "roughly doubles" headline by
@@ -24,7 +25,7 @@ by recomputing #3554's *other* L=3 event that is positive against the fixed seed
 (monotone)}` — so the stall was **event-specific, not a period property**, and the gap
 comparison is overlap, not doubling. Both events are now recomputed **in-runner**.
 
-## The findings (exact — runner `PASS=14 FAIL=0`)
+## The findings (exact finite evolution plus sampled-null diagnostic — runner `PASS=16 FAIL=0`)
 
 **(F1) The L=3 baseline as a set** (both #3554 events that are positive against the
 fixed seeded-null diagnostic, in-runner):
@@ -32,7 +33,7 @@ seed 4242/d9: gap `+0.088`, profile **stalled** (`0.557/0.557/0.598`); seed 99/d
 `+0.190`, profile **monotone** (`0.347/0.502/0.695`).
 
 **(F2) L=4 (12 modes, 4096-dim Fock; sparse machinery; three seeds, most-spread rows):**
-every seed exceeds its fixed seeded 300-draw permutation-null p95 diagnostic and every
+every seed exceeds its fixed seeded 300-draw sampled-null p95 diagnostic and every
 fixed-k profile is **monotone**.
 The canonical runner also checks the robustness extension: **7/7 tested `K=7` seeds**
 and a `K=6` **half-filling control** (3/3), killing the filling confound:
@@ -43,7 +44,7 @@ seed 4242  d9: profile 0.609/0.638/0.690 | gap +0.217
 seed 99    d8: profile 0.597/0.665/0.784 | gap +0.076
 ```
 
-**(F3) The verdict, panel-corrected.** The L=4 seeded-null gaps are
+**(F3) The verdict, panel-corrected.** The L=4 sampled-null diagnostic gaps are
 **comparable-or-larger** than the L=3 set (ranges overlap — worst L=4 `+0.076` sits
 below best L=3 `+0.190`; median
 ratio `1.40×`, **not doubled**; magnitudes instance/seed-labeled). **The load-bearing
@@ -51,6 +52,27 @@ positive is seed-robust fixed-k monotonicity at the larger period** — every L=
 tested in-runner, robust to the filling control — *consistent with, but not establishing,*
 strengthening with the period (monotonicity at L=3 was event-specific). A two-point
 trend in the period, labeled as such.
+
+## 2026-06-12 sampled-null scope repair
+
+The permutation-null statistic in this source packet is the p95 of the fixed
+seeded 300-draw label-permutation sample implemented by the runner:
+
+```text
+null_p95(Theta, w, kpref=3, n_draws=300, seed=7777)
+```
+
+This is a deterministic source-packet diagnostic for the named finite samples
+and seeds. It does not claim an exhaustive permutation-null p95, a certified
+finite-sample upper confidence bound, or a Monte-Carlo-free null theorem. The
+source-positive submitted for independent audit is therefore only:
+
+```text
+For the stated L=3/L=4 events, occupancies, seeds, depth choices, and fixed
+seeded 300-draw sampled-null protocol, the L=4 tested profiles are monotone
+and their sampled-null diagnostic gaps are comparable-or-larger by the
+displayed median comparison.
+```
 
 ## What this does and does not claim
 
@@ -73,17 +95,22 @@ trend in the period, labeled as such.
 - Null-diagnostic scope: every displayed p95 value is the p95 of the fixed seeded
   300-draw label-permutation sample implemented by the runner. The source claim is
   the finite, code-defined diagnostic result under that protocol, not an exact
-  all-permutations null-clearing theorem.
+  all-permutations null-clearing theorem, certified finite-sample bound, or
+  Monte-Carlo-free null theorem.
 - **The path this opens:** the period series beyond L=4 (sparse methods make L=5
   borderline-feasible), the `Z³` geometry question, and whether the seed-robust-at-L=4
   monotonicity persists or saturates — open, named, not claimed.
 
 ## Cross-references
 
-- The named object and the L=3 events: PR #3554 (science lands via the source-only
-  review loop). The decomposition: PR #3532 — science landed on origin/main via
-  cherry-pick; PR closed-not-merged. The split: PR #3522 — same status. The residuals:
-  PR #3507 — same status.
+- The named fixed-prefix object and the L=3 events:
+  [`CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md).
+- The det-sector decomposition:
+  [`U1_DET_SECTOR_BI_ORBIT_QUOTIENT_STEP_LAW_BASELINE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-10.md`](U1_DET_SECTOR_BI_ORBIT_QUOTIENT_STEP_LAW_BASELINE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-10.md).
+- The finite Born-weighted trajectory/instrument setup:
+  [`UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md`](UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md),
+  with the Born assembly dependency explicitly tracked at
+  [`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md).
 - Standard math (method only): circular statistics; permutation tests;
   quantum-trajectory trees; two-point finite-size comparisons; sparse fermionic
   operator algebra.

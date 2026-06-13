@@ -6,7 +6,7 @@ fixed point in the supplied one-loop model, and Collins' 2-parameter
 naturalness gate reduces to ONE conditional scalar
 =================================================================================
 
-This is a standalone bounded packet for the INTERACTING radiative-naturalness
+This is a standalone conditional-support packet for the INTERACTING radiative-naturalness
 problem (Collins-Perez-Sudarsky-Urrutia-Vucetich, PRL 93 (2004) 191301): on a
 Lorentz-violating (lattice/Planck) cutoff, radiative corrections regenerate the
 marginal c_t != c_s anisotropy unless a custodial symmetry protects it. The
@@ -236,6 +236,11 @@ def main():
     check("(E1) note title is narrowed to conditional algebra / supplied one-loop boundary",
           note_text.startswith("# Interacting Emergent Lorentz Conditional Algebra:"),
           detail="title no longer presents a bare interacting-Lorentz theorem")
+    check("(E1b) note claim type is open-gate conditional support, not bounded_theorem",
+          "**Claim type:** open_gate / conditional-support packet" in note_text
+          and "**Type:** conditional-support" in note_text
+          and "**Claim type:** bounded_theorem" not in note_text,
+          detail="status firewall prevents bounded-theorem promotion over supplied RG inputs")
     check("(E2) source role calls the packet conditional algebra",
           "standalone conditional-algebra packet" in note_text
           and "supplied gauge/Yukawa dynamics" in note_text,
@@ -248,6 +253,11 @@ def main():
           "physical fixed-point anomalous dimension and power-divergent coefficient are" in note_text
           and "genuine open problem" in note_text,
           detail="no retained LV-naturalness closure claimed")
+    check("(E5) 2026-06-12 audit firewall names the missing bridges and forbids axiom/admission changes",
+          "2026-06-12 audit firewall: no bounded-theorem promotion" in note_text
+          and "No new axiom, primitive" in note_text
+          and "Tier-A admission, or audit status change" in note_text,
+          detail="audit-facing boundary is explicit in the source row")
 
     # =====================================================================
     section("Summary")

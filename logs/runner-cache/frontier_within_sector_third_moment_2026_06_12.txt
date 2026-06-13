@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/frontier_within_sector_third_moment_2026_06_12.py
+runner_sha256: 1034a99f2610da1f6a7eb3a567b47ebf9818fac11fbcc2251f9f2dc5b40cda7d
+timeout_sec: 3000
+exit_code: 0
+elapsed_sec: 1.43
+status: ok
+----- stdout -----
+# U3 exact Born-tree moment program
+constants: L=3 NC=3 K_occ=5 eps=0.6 tau=0.35 depth_cap=12 prefix_k=3 ESS_min=8.0 null_rng=7777 null_draws=300
+tree: Slater initial state, U_step ring hopping, diagonal Kraus pair, OPS bilinears, baseline det-phase subtraction, composed centered Theta, Born weights
+PASS: ANCHOR FIRST: landed seed 4242 depth-9 prefix-3 and null p95 reproduce :: prefix3=0.557030788006 target=0.557 tol=2.0e-03; null_p95=0.469417530473 target=0.469 tol=5.0e-03
+TABLE seed label depth sector branches sector_weight ESS theta_mean R1 abs_z2 abs_z3 delta2 delta3 adequate
+ROW seed=4242 label=landed depth=9 sector=0 branches=64 sector_weight=2.214201944880e-01 ESS=48.304532 theta_mean=-0.421113084981 R1=0.782693296197 abs_z2=0.515281737909 abs_z3=0.260336200927 delta2=+1.399922010809e-01 delta3=+1.500999266336e-01 adequate=True
+ROW seed=4242 label=landed depth=9 sector=1 branches=64 sector_weight=1.574032694911e-01 ESS=52.645285 theta_mean=-0.557349976531 R1=0.401538053378 abs_z2=0.284432714456 abs_z3=0.349909178028 delta2=+2.584366959801e-01 delta3=+3.496378214317e-01 adequate=True
+ROW seed=4242 label=landed depth=9 sector=2 branches=64 sector_weight=1.207500370464e-01 ESS=55.038759 theta_mean=0.062535050523 R1=0.538869786598 abs_z2=0.363693254939 abs_z3=0.317611977650 delta2=+2.793723348400e-01 delta3=+3.137806040009e-01 adequate=True
+ROW seed=4242 label=landed depth=9 sector=3 branches=64 sector_weight=1.070247968794e-01 ESS=56.823569 theta_mean=-2.646375071920 R1=0.266354266001 abs_z2=0.272908655226 abs_z3=0.408528238597 delta2=+2.678755196639e-01 delta3=+4.085214911903e-01 adequate=True
+ROW seed=4242 label=landed depth=9 sector=4 branches=64 sector_weight=1.356592072399e-01 ESS=53.219660 theta_mean=-0.395547966779 R1=0.824616692170 abs_z2=0.548266482584 abs_z3=0.290577872266 delta2=+8.587642548383e-02 delta3=+1.142710591838e-01 adequate=True
+ROW seed=4242 label=landed depth=9 sector=5 branches=64 sector_weight=9.479476130876e-02 ESS=58.760409 theta_mean=-0.526342527011 R1=0.436892038259 abs_z2=0.268763678563 abs_z3=0.317127922893 delta2=+2.323305453691e-01 delta3=+3.165480041129e-01 adequate=True
+ROW seed=4242 label=landed depth=9 sector=6 branches=64 sector_weight=8.676057076000e-02 ESS=59.077606 theta_mean=0.080877297265 R1=0.579604498573 abs_z2=0.343762129072 abs_z3=0.198991043664 delta2=+2.309055217924e-01 delta3=+1.916088450053e-01 adequate=True
+ROW seed=4242 label=landed depth=9 sector=7 branches=64 sector_weight=7.618716278651e-02 ESS=61.656599 theta_mean=-2.740875587239 R1=0.306869092004 abs_z2=0.234074623185 abs_z3=0.337775061529 delta2=+2.252068904955e-01 delta3=+3.377509303616e-01 adequate=True
+ROW seed=99 label=landed depth=7 sector=0 branches=16 sector_weight=1.655234552286e-01 ESS=13.698587 theta_mean=-1.353811857207 R1=0.726778052560 abs_z2=0.244497119395 abs_z3=0.286320441877 delta2=-3.450481577235e-02 delta3=+2.297465266932e-01 adequate=True
+ROW seed=99 label=landed depth=7 sector=1 branches=16 sector_weight=1.507228892361e-01 ESS=14.124172 theta_mean=-1.197080849274 R1=0.686561695763 abs_z2=0.229899187684 abs_z3=0.255978413908 delta2=+7.712374735212e-03 delta3=+2.220849365091e-01 adequate=True
+ROW seed=99 label=landed depth=7 sector=2 branches=16 sector_weight=1.245103220997e-01 ESS=13.838429 theta_mean=-2.048860686109 R1=0.108207216171 abs_z2=0.101394677345 abs_z3=0.246840128768 delta2=+1.012575813092e-01 delta3=+2.468401267343e-01 adequate=True
+ROW seed=99 label=landed depth=7 sector=3 branches=16 sector_weight=1.341633866853e-01 ESS=13.938519 theta_mean=-1.885694142064 R1=0.090774924628 abs_z2=0.122859924065 abs_z3=0.276957547130 delta2=+1.227920250325e-01 delta3=+2.769575467119e-01 adequate=True
+ROW seed=99 label=landed depth=7 sector=4 branches=16 sector_weight=1.113776907996e-01 ESS=13.911283 theta_mean=0.981180618131 R1=0.346088518540 abs_z2=0.107132881788 abs_z3=0.386639242065 delta2=+9.278628913663e-02 delta3=+3.865680084928e-01 adequate=True
+ROW seed=99 label=landed depth=7 sector=5 branches=16 sector_weight=9.589470853964e-02 ESS=14.772459 theta_mean=0.954756508329 R1=0.351746847428 abs_z2=0.158754683675 abs_z3=0.418633056704 delta2=+1.434465990345e-01 delta3=+4.185506292427e-01 adequate=True
+ROW seed=99 label=landed depth=7 sector=6 branches=16 sector_weight=1.072924205889e-01 ESS=14.044206 theta_mean=1.811303994822 R1=0.822007156128 abs_z2=0.409444045837 abs_z3=0.121924232803 delta2=-4.712072063012e-02 delta3=-4.942429817661e-02 adequate=True
+ROW seed=99 label=landed depth=7 sector=7 branches=16 sector_weight=1.105151268222e-01 ESS=14.643612 theta_mean=1.752626875616 R1=0.834073633721 abs_z2=0.434125802509 abs_z3=0.143742326586 delta2=-4.984322708866e-02 delta3=-5.161942237020e-02 adequate=True
+ROW seed=7 label=probe depth=11 sector=0 branches=256 sector_weight=1.209662873075e-01 ESS=234.141136 theta_mean=0.588836661324 R1=0.894609699769 abs_z2=0.646191275837 abs_z3=0.398304642726 delta2=+5.668745351736e-03 delta3=+3.127391556175e-02 adequate=True
+ROW seed=7 label=probe depth=11 sector=1 branches=256 sector_weight=1.272027504227e-01 ESS=227.254366 theta_mean=0.283319022692 R1=0.893691381624 abs_z2=0.694028513332 abs_z3=0.535835208701 delta2=+5.613192528420e-02 delta3=+1.721814102426e-01 adequate=True
+ROW seed=7 label=probe depth=11 sector=2 branches=256 sector_weight=1.078570230275e-01 ESS=238.580810 theta_mean=0.455857067832 R1=0.747062883411 abs_z2=0.512003330879 abs_z3=0.402416069094 delta2=+2.005244261044e-01 delta3=+3.299366944360e-01 adequate=True
+ROW seed=7 label=probe depth=11 sector=3 branches=256 sector_weight=1.420414837820e-01 ESS=216.110295 theta_mean=-0.148808099205 R1=0.746199784869 abs_z2=0.423004606610 abs_z3=0.293124170812 delta2=+1.129626435600e-01 delta3=+2.213949562242e-01 adequate=True
+ROW seed=7 label=probe depth=11 sector=4 branches=256 sector_weight=1.109996205395e-01 ESS=235.795382 theta_mean=1.075207205666 R1=0.737755322705 abs_z2=0.377702997166 abs_z3=0.199609101832 delta2=+8.145910432064e-02 delta3=+1.348633671122e-01 adequate=True
+ROW seed=7 label=probe depth=11 sector=5 branches=256 sector_weight=1.137889315099e-01 ESS=234.683550 theta_mean=0.187423031841 R1=0.552749349906 abs_z2=0.303455754274 abs_z3=0.303581214492 delta2=+2.101060466849e-01 delta3=+2.987644638468e-01 adequate=True
+ROW seed=7 label=probe depth=11 sector=6 branches=256 sector_weight=1.203252176665e-01 ESS=231.518005 theta_mean=1.371023077564 R1=0.193151088948 abs_z2=0.094816112702 abs_z3=0.117982261161 delta2=+9.342427484774e-02 delta3=+1.179818869862e-01 adequate=True
+ROW seed=7 label=probe depth=11 sector=7 branches=256 sector_weight=1.568186857444e-01 ESS=215.710490 theta_mean=-1.288140234098 R1=0.479260259793 abs_z2=0.073838427905 abs_z3=0.099329422062 delta2=+2.108074960688e-02 delta3=+9.799546217684e-02 adequate=True
+SUMMARY seed label depth adequate weighted_abs_delta2 p95_delta2 weighted_abs_delta3 p95_delta3
+SUMMARY seed=4242 label=landed depth=9 adequate=8 weighted_abs_delta2=2.049444394404e-01 p95_delta2=2.996116893315e-01 weighted_abs_delta3=2.577456320121e-01 p95_delta3=3.201040990827e-01
+SUMMARY seed=99 label=landed depth=7 adequate=8 weighted_abs_delta2=7.060981489833e-02 p95_delta2=3.117458068717e-01 weighted_abs_delta3=2.335928506535e-01 p95_delta3=3.041865431065e-01
+SUMMARY seed=7 label=probe depth=11 adequate=8 weighted_abs_delta2=9.299603538806e-02 p95_delta2=2.511594505899e-01 weighted_abs_delta3=1.712478836511e-01 p95_delta3=2.568488390539e-01
+PASS: finite L=3 ring wraparound is active in every color channel :: nonzero one-body entries=18
+PASS: exact Born tree respects the depth cap and branch count B=2^depth :: seed 4242: depth=9, branches=512; seed 99: depth=7, branches=128; seed 7: depth=11, branches=2048
+PASS: rank, no-prune, and Born-weight normalization guards hold through depth cap :: seed 4242: worst_sv=4.805415e-04, min_norm=3.042151e-01, max_weight_error=1.110e-15; seed 99: worst_sv=1.063104e-03, min_norm=2.862152e-01, max_weight_error=4.441e-16; seed 7: worst_sv=4.705769e-04, min_norm=3.163892e-01, max_weight_error=8.882e-16
+PASS: landed seeds use the depth-stable most-spread rows 4242@9 and 99@7 :: seed 4242: cap11=9, cap12=9; seed 99: cap11=7, cap12=7
+PASS: seed-7 probe row is depth 11 and is the second-smallest global R1 row with >=64 branches :: probe_depth=11, branches=2048, global_R1=0.523396371875; smallest_depth=10, smallest_global_R1=0.120489682367
+PASS: ESS adequacy: every testable event has all eight prefix-3 sectors at ESS >= 8 :: seed 4242: adequate=8/8, min_ESS=48.304532; seed 99: adequate=8/8, min_ESS=13.698587; seed 7: adequate=8/8, min_ESS=215.710490
+PASS: U3 record-vs-null TRUE relation seed 4242: weighted mean |delta2| <= own permutation p95 :: record=2.049444394404e-01 <= null_p95=2.996116893315e-01
+PASS: U3 record-vs-null TRUE relation seed 4242: weighted mean |delta3| <= own permutation p95 :: record=2.577456320121e-01 <= null_p95=3.201040990827e-01
+PASS: U3 record-vs-null TRUE relation seed 99: weighted mean |delta2| <= own permutation p95 :: record=7.060981489833e-02 <= null_p95=3.117458068717e-01
+PASS: U3 record-vs-null TRUE relation seed 99: weighted mean |delta3| <= own permutation p95 :: record=2.335928506535e-01 <= null_p95=3.041865431065e-01
+PASS: U3 record-vs-null TRUE relation seed 7: weighted mean |delta2| <= own permutation p95 :: record=9.299603538806e-02 <= null_p95=2.511594505899e-01
+PASS: U3 record-vs-null TRUE relation seed 7: weighted mean |delta3| <= own permutation p95 :: record=1.712478836511e-01 <= null_p95=2.568488390539e-01
+PASS: anti-fabrication (ALL): every seed's tree-data weighted mean |delta2| AND |delta3| is nonzero at the floor :: seed 4242: weighted_abs_delta2=2.049444394404e-01; seed 99: weighted_abs_delta2=7.060981489833e-02; seed 7: weighted_abs_delta2=9.299603538806e-02
+PASS: joint U3 measured pattern is exactly the computed record-vs-null relation set for both moments :: delta2 4242:<=, 99:<=, 7:<=; delta3 4242:<=, 99:<=, 7:<=
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

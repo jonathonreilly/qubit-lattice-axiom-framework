@@ -1,0 +1,20 @@
+loop: fractional-instanton-open-gate-20260613
+status: checkpoint_ready_for_review
+actual_current_surface_status: open
+target_status: source_boundary_repair
+target_claim_id: fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16
+base: origin/main
+branch: physics-loop/fractional-instanton-open-gate-20260613
+files_touched:
+  - docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py
+  - logs/runner-cache/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.txt
+open_imports:
+  - external twisted-T^4 fractional-instanton charge/action algebra
+  - dilute-gas determinant, measure, phase-space, coupling scale, and convergence regime
+  - substrate/observable bridge not derived in the framework
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: reviewer/auditor decides whether the executable source-boundary firewall is sufficient for the open-gate row

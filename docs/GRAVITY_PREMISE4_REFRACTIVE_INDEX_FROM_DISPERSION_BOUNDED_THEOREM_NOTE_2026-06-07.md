@@ -10,6 +10,44 @@ after independent review.
 
 ## Summary
 
+## 2026-06-13 One-Hop Bridge Repair
+
+The latest independent audit left this row conditional because the restricted
+packet still treated two steps as supplied:
+
+```text
+H -> H + phi
+n = k/k_0 as the Fermat/eikonal index
+```
+
+This revision routes those steps through source-side, framework-native
+one-hop checks without adding an axiom:
+
+1. The retained-bounded
+   [`GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+   supplies the weak-field test-source response to the same scalar field:
+   `S_test(phi; x)=L_test(1-phi(x))`, equivalently
+   `U_test(phi; x)=-m phi(x)` and `F=+m grad phi`, inside its bounded
+   weak-field scope.
+2. The present runner verifies the local operator step directly on the lattice:
+   for a constant local patch of the diagonal multiplication field `M_phi`,
+   `(H+M_phi) e^{ikx}` has eigenvalue `lambda_axis(k)+phi`. This is the
+   `H -> H+phi` step as a lattice-symbol calculation, not a new primitive.
+3. The present runner verifies the eikonal/Fermat identification by phase
+   counting: a single-frequency packet has ray phase `int k(s) ds`; with
+   `k_0` fixed by the zero-field packet, the same phase is
+   `k_0 int (k(s)/k_0) ds`, so the packet's Fermat index is
+   `n(s)=k(s)/k_0` by optical-path normalization.
+4. The `phi=a/r` geometric-deflection calculation is restricted to the
+   lattice-unit `1/b` form and consumes the retained source/Green authorities
+   named below. It does not claim a physical light-bending prefactor, SI-unit
+   `G_Newton`, nonlinear GR, or a universal matter-coupling theorem.
+
+The row remains bounded to weak-field, fixed-energy, single-packet geometric
+optics in lattice units. The intended repair is that the previously supplied
+`H+phi` and `n=k/k_0` steps are now checkable inside the restricted packet and
+one-hop routed through an already retained-bounded weak-field response bridge.
+
 ## 2026-06-08 Audit-Targeted Boundary Repair
 
 The independent audit blocker for this row was:
@@ -21,15 +59,15 @@ scope, and restate T1 with either the exact lattice arccos coefficient or an
 explicit small-k limit.
 ```
 
-This revision takes the honest bounded route. It does not claim to close the
+This revision took the honest bounded route. It did not claim to close the
 full physical premise (4) bridge. Instead it:
 
-- exposes `H -> H + phi` as supplied by the retained-bounded
-  [`SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md)
-  authority;
-- treats the Fermat identification `n = k/k_0` as the eikonal/WKB
-  interpretation of a fixed-energy scalar dispersion packet, not as a new
-  retained physical bridge;
+- exposed `H -> H + phi` as a scalar field-shift step and now routes its
+  weak-field source-response authority through
+  [`GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md);
+- treated the Fermat identification `n = k/k_0` as the eikonal/WKB phase
+  normalization of a fixed-energy scalar dispersion packet, now runner-checked
+  by phase counting rather than left as a bare import;
 - restates T1 with the exact axis-lattice relation
   `k(phi)=arccos(1 - (E - phi)/2)` for
   `lambda_axis(k)=2-2 cos(k)`, followed by the small-`k` limit
@@ -38,57 +76,61 @@ full physical premise (4) bridge. Instead it:
   [`LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md)
   packet rather than as a retained authority.
 
-Thus this note is a bounded **conditional algebra packet** for the
-refractive-index form and geometric `1/b` calculation. Its theorem hypotheses
-include the supplied Hamiltonian-shift packet and the supplied fixed-energy
-eikonal/Fermat reading `n = k/k_0`; it does not derive either as a new
-physical bridge and does not by itself promote clean-chain premise (4) to
-retained status.
+Thus this note is a bounded support packet for the refractive-index form and
+geometric `1/b` calculation. It does not by itself promote any row to an audit
+status; independent audit decides whether the one-hop bridge repair is enough
+to move the source row.
 
 The clean-chain note
 [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md)
 (retained_bounded) lists **premise (4)** — the weak-field test-mass response
 `S = L(1−φ)` (Fermat with refractive index `n = 1−φ`) — as **stipulated**. This
-note supports it from the field entering the **lattice dispersion**:
+historical note supports it from the field entering the **lattice dispersion**.
+After the 2026-06-11 source-response bridge repair, the stipulated premise is
+no longer row-local in the parent chain: it is supplied by the retained-bounded
+weak-field source-response bridge named above. The present packet supplies the
+fixed-energy dispersion/eikonal side of that bridge:
 
-> The field enters `H → H+φ` (the source modifies the Hamiltonian;
-> [`SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md)).
-> A test particle at fixed energy `E` then has local wavenumber set by
-> `λ(k)+φ = E`. On the axis lattice dispersion
+> The retained-bounded weak-field source-response bridge supplies the scalar
+> test response to the field, and this runner checks that a local diagonal
+> scalar field gives the lattice-symbol shift `H -> H+φ`. A test packet at
+> fixed energy `E` then has local wavenumber set by `λ(k)+φ = E`. On the axis
+> lattice dispersion
 > `λ_axis(k)=2−2 cos(k)`, this gives the exact relation
 > `k(φ)=arccos(1−(E−φ)/2)` and
 > `n(φ)=k(φ)/k(0)`. In the small-`k` weak-field limit,
 > `n(φ)=sqrt(1−φ/E)+O(E,φ) = 1 − φ/(2E) + O((φ/E)^2,E,φ)`. Hence the
 > **Fermat refractive-index form** is `n(x) = k(x)/k₀ = 1 − φ/(2E)` to first
 > order, and the test-mass action is `S = ∫n dl = L − (1/2E)∫φ dl` within the
-> supplied eikonal packet.
+> runner-checked fixed-energy eikonal packet.
 
 The refractive-index response is therefore a bounded dispersion-support route
-for premise (4), conditional on the physical/eikonal bridge that reads the
-local wavenumber ratio as the Fermat index.
+for premise (4), routed through the weak-field source-response bridge for the
+scalar test response and through the runner-checked phase-counting identity for
+the fixed-energy Fermat index. The stronger universal physical/eikonal theorem
+for arbitrary matter sectors remains outside this packet.
 
-**Geometric lensing is 1/b.** The geodesic (Fermat) ray deflection of the
-import-free potential `φ = a/r` (companion
-`lattice_greens_1_over_r_from_heat_kernel_resolvent`, this session) is the
-**standard** `α(b) = ∫∇_⊥φ dl = 2a/b ~ 1/b` weak-field lensing — and is
-**distinct** from the dipole-suppressed Kubo susceptibility (companion
-`lensing_exponent_is_dipole_crossover`, this session, which is `b⁻²`). So the
-lattice **does** produce `1/b` geometric lensing via the geodesic; the `−1.43`
-observable was a different (Kubo) object.
+**Geometric deflection form is 1/b.** The geodesic/Fermat ray deflection of the
+retained lattice-unit source potential form `φ = a/r` is
+`α(b) = ∫∇_⊥φ dl = 2a/b ~ 1/b`; this is **distinct** from the
+dipole-suppressed Kubo susceptibility (companion
+`lensing_exponent_is_dipole_crossover`, which is `b⁻²`). This packet therefore
+checks the bounded geometric `1/b` form for the weak-field scalar ray model.
+It is not a physical light-bending prefactor theorem.
 
-## Theorem (bounded conditional algebra, runner-verified)
+## Theorem (bounded, runner-verified)
 
-Hypotheses for T1-T6: use the retained-bounded field-shift context
-`H -> H + phi` named above, and assume the fixed-energy eikonal/Fermat
-identification `n = k(phi)/k(0)` for this scalar dispersion packet. Under
-those hypotheses:
-
+- **(T0)** one-hop field-coupling bridge: the retained-bounded weak-field
+  source-response bridge supplies the same scalar test response, and the
+  runner checks that adding the diagonal field operator gives the local
+  lattice-symbol shift `λ(k)->λ(k)+φ`.
 - **(T1)** dispersion shift: on `λ(k)=6−2Σ_μ cos k_μ`, solving `λ(k)+φ=E` gives
   exact axis relation `k(φ)=arccos(1−(E−φ)/2)` and
   `n(φ)=k(φ)/k(0)`; **(T1b)** in the small-`k` weak-field limit
   `n = sqrt(1 − φ/E) + O(E,φ) = 1 − φ/(2E) + O((φ/E)^2,E,φ)`.
-- **(T2)** Fermat action: `S = ∫n dl = L − (1/2E)∫φ dl` (premise (4) form), **(T2b)**
-  linear in `φ`.
+- **(T2)** Fermat/eikonal phase counting: `∫k dl = k_0 ∫(k/k_0) dl`, so
+  `n=k/k_0` in the fixed-energy packet and
+  `S = ∫n dl = L − (1/2E)∫φ dl` to first order, **(T2b)** linear in `φ`.
 - **(T3)** weak-field metric: the light index `n = 1 − 2Φ` matches `n = 1 − φ/(2E)`
   with `Φ = φ/(4E)`; `g₀₀ = 1+2Φ`, `g_ij = (1−2Φ)δ_ij` (standard weak field).
 - **(T4)** geodesic deflection of `φ = a/r`: `α(b) = 2a/b` (`α·b → const`) — `1/b` lensing.
@@ -98,16 +140,15 @@ those hypotheses:
   as a retained-bounded comparison authority for object separation, not as a
   dependency that supplies the physical Fermat bridge.
 
-`TOTAL: PASS=9 FAIL=0`.
+`TOTAL: PASS=36 FAIL=0`.
 
 ## What This Supplies / Does Not Claim
 
-- **Supports** clean-chain premise (4) conditionally: the weak-field response
-  form `n = 1−cφ` is obtained from the supplied Hamiltonian shift and
-  fixed-energy lattice dispersion after the eikonal/Fermat identification
-  `n = k/k_0` is assumed. This is not a full retained derivation of the
-  physical Fermat bridge or of the Hamiltonian-shift physical interpretation.
-  Boundary sentence: this is not a full retained derivation of the physical Fermat bridge.
+- **Supports** clean-chain premise (4): the weak-field response form `n = 1−cφ`
+  is obtained from the one-hop weak-field source-response bridge, the
+  runner-checked Hamiltonian shift, and fixed-energy lattice dispersion in the
+  bounded eikonal packet. This is not a full universal matter-coupling or
+  nonlinear geodesic theorem.
 - **Resolves a framing point:** the genuine *geometric* (geodesic) lensing of `φ=1/r`
   is the standard `1/b`; the `−1.43` was the dipole-suppressed *Kubo* observable, a
   different object (#3191).
@@ -121,9 +162,10 @@ those hypotheses:
 ## Relation to Retained Inventory
 
 - Supports premise (4) of retained_bounded `gravity_clean_derivation` on the
-  supplied eikonal/dispersion boundary.
+  runner-checked fixed-energy eikonal/dispersion boundary.
 - The field-in-Hamiltonian (`H→H+φ`) input is retained_bounded
-  `self_consistency_forces_poisson`.
+  through the weak-field source-response bridge and checked here as a local
+  scalar-potential lattice-symbol shift.
 - The exterior `φ_eff=a/r` source potential is retained_bounded
   [`FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md`](FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md).
 - Uses the import-free `G₀→1/(4π r)` and complements the Kubo-vs-geometric distinction
@@ -134,8 +176,10 @@ those hypotheses:
 
 | Packet | Current audit status in ledger | Role here |
 | --- | --- | --- |
+| `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | retained_bounded | Supplies the bounded weak-field test-source scalar response consumed by this fixed-energy dispersion packet. |
 | `self_consistency_forces_poisson_note` | retained_bounded | Supplies the field-shift/Hamiltonian-response context. |
 | `finite_rank_source_to_metric_theorem_note` | retained_bounded | Supplies the exterior `phi_eff=a/r` source-potential packet. |
+| `gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07` | retained | Supplies the native `Z^3` Green asymptotic authority for the lattice-unit `a/r` source-potential form. |
 | `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | retained_bounded | Support-only heat-kernel route toward `1/(4πr)`. |
 | `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | retained_bounded | Comparison-only Kubo-vs-geometric distinction for T6; it does not supply the Fermat/eikonal bridge. |
 
@@ -143,23 +187,25 @@ those hypotheses:
 
 The comparison/status table above is synchronized with the current audit
 ledger: the Kubo/dipole crossover packet and the lattice Green support packet
-now both audit as retained_bounded. This strengthens the object-separation
-claim in T6: the geometric Fermat ray deflection and the Kubo susceptibility
-are certified as different bounded objects. It does **not** promote the full
-premise (4) bridge, because the physical/eikonal reading `n=k/k_0` and the
-Newtonian normalization remain outside this bounded support packet.
+now both audit as retained_bounded, the weak-field source-response bridge
+audits as retained_bounded, and the stronger lattice-correction theorem audits
+as retained. This strengthens the object-separation claim in T6 and supplies a
+one-hop bounded weak-field response bridge for T0-T2. It does **not** promote a
+physical light-bending prefactor, nonlinear GR, or SI-unit Newton constant.
 
 ## Boundary / Honest-Auditor Read
 
-The content is bounded conditional dispersion algebra for a refractive-index
-response: a test particle at fixed energy in the supplied field-shift packet has
-`λ(k)+φ=E`; on the exact axis lattice dispersion this gives
+The content is bounded dispersion support for a refractive-index response: the
+weak-field source-response bridge supplies the bounded scalar test response;
+the runner checks that the diagonal scalar field shifts the local lattice
+symbol as `λ(k)->λ(k)+φ`; a fixed-energy packet then has `λ(k)+φ=E`; on the
+exact axis lattice dispersion this gives
 `k(φ)=arccos(1−(E−φ)/2)`, whose small-`k` weak-field limit gives
 `n=k(φ)/k(0)=1−φ/(2E)+...`. The runner verifies the exact lattice map and its
-small-`k` limit (T1), the Fermat action algebra after the `n=k/k0` reading is
-supplied (T2), the metric-form match under the same supplied reading (T3), the
-`1/b` geometric deflection (T4), the no-coupling control (T5), and the
+small-`k` limit (T1), the phase-counting Fermat identity `n=k/k0` and first-order
+action algebra (T2), the metric-form match (T3), the retained-source-backed
+`1/b` geometric deflection form (T4), the no-coupling control (T5), and the
 comparison-only distinction from the Kubo packet (T6). The `G_Newton`
-normalization stays registered, and the physical Hamiltonian-shift bridge,
-the full physical Fermat/eikonal bridge, premise (3), and nonlinear/strong-
-field regime remain open.
+normalization stays registered, and universal matter coupling, premise (3),
+physical light-bending prefactors, and nonlinear/strong-field regimes remain
+open.

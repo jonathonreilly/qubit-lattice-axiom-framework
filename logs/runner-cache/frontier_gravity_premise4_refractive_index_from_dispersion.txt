@@ -1,14 +1,26 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py
-runner_sha256: f43ec1e7b0345fbb09fb7724c6f83f8bd924c1b4cd4a0c3a7b97a56f45d0ab71
+runner_sha256: 4784100478b873a653cf518c8f754f4ecaf92e89ec22fe44a206e54926c5a8e5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
+PASS T0 source note names the 2026-06-13 one-hop bridge repair
+PASS T0 source note routes to weak-field source-response bridge
+PASS T0 bridge note supplies bounded weak-field test response
+PASS T0 weak-field source-response bridge is retained_bounded
+PASS T0 weak-field bridge audit status is clean
+PASS T0 weak-field bridge runner and cache are present
+PASS T0 weak-field bridge cache is SHA-fresh
+PASS T0 weak-field bridge cached run passed
+PASS T0 constant-patch diagonal field shifts symbol: H+M_phi has lambda(k)+phi
+PASS T0 source note states H->H+phi is checked as a lattice-symbol step
 PASS T1 exact axis-lattice map: k(phi)=arccos(1-(E-phi)/2)
 PASS T1b small-k limit: n=k(phi)/k0 = sqrt(1-phi/E)+O(E,phi)
 PASS T1c first-order weak field: n = 1 - phi/(2E)
+PASS T2 eikonal phase counting identifies n=k/k0
+PASS T2 source note states n=k/k0 is runner-checked by phase counting
 PASS T2 Fermat action S = int n dl = L - (1/2E) int phi dl (premise 4 form)
 PASS T2b S is linear in phi (refractive-index response)
 PASS T3 weak-field metric light index n=1-2Phi matches dispersion n=1-phi/2E (Phi=phi/4E)
@@ -17,18 +29,21 @@ PASS T4b alpha*b -> const (= 2a): confirms 1/b form
 PASS T5 CONTROL: no field coupling (n=1) -> zero deflection (teeth)
 PASS T6 geometric deflection slope = -1 (1/b), distinct from Kubo b^-2 (#3191)
 PASS SOURCE note names the 2026-06-08 audit-targeted boundary repair
-PASS SOURCE note states Fermat n=k/k0 remains supplied eikonal bridge
-PASS SOURCE note states bounded conditional algebra hypotheses explicitly
-PASS SOURCE note leaves Hamiltonian-shift and Fermat physical bridges open
+PASS SOURCE note no longer leaves Fermat n=k/k0 as a bare supplied bridge
 PASS SOURCE note contains exact arccos lattice relation
 PASS AUTH self_consistency_forces_poisson is retained_bounded
 PASS AUTH finite_rank_source_to_metric is retained_bounded
+PASS AUTH gravity leading lattice correction is retained
 PASS KUBO comparison runner and cache are present
 PASS KUBO comparison cache is SHA-fresh
 PASS AUTH lattice Green support is retained_bounded
+PASS AUTH weak-field bridge is exposed in source relation table
+PASS AUTH leading lattice correction is exposed in source relation table
 PASS KUBO comparison packet status is exposed as retained_bounded comparison-only authority
-PASS SOURCE no full premise-4 promotion
+PASS SOURCE no physical light-bending or nonlinear-GR promotion
+PASS SOURCE keeps universal matter coupling outside the packet
 
-TOTAL: PASS=22 FAIL=0
+TOTAL: PASS=36 FAIL=0
 
 ----- stderr -----
+

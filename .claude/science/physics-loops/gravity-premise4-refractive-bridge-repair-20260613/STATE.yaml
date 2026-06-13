@@ -1,0 +1,19 @@
+loop: gravity-premise4-refractive-bridge-repair-20260613
+started: "2026-06-13"
+base: origin/main@0ed8a4d5e
+branch: physics-loop/gravity-premise4-refractive-bridge-repair-20260613
+target_claim_id: gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07
+actual_current_surface_status: audited_conditional
+target_status: source_side_reaudit_candidate
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_results_edited: false
+repo_authority_surfaces_edited: false
+files_touched:
+  - docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py
+  - logs/runner-cache/frontier_gravity_premise4_refractive_index_from_dispersion.txt
+  - .claude/science/physics-loops/gravity-premise4-refractive-bridge-repair-20260613/*
+runner_result: "TOTAL: PASS=36 FAIL=0"
+next_exact_action: "Submit PR for reviewer extraction and independent re-audit."
+stop_condition: "PR opened and verified; no audit verdict applied."

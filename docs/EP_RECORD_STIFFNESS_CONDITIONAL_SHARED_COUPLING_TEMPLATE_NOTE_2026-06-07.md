@@ -9,6 +9,18 @@ axiom alone.
 **Primary runner:** [`scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py`](../scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py)
 **Cached runner output:** [`logs/runner-cache/frontier_ep_record_stiffness_conditional_template_2026_06_07.txt`](../logs/runner-cache/frontier_ep_record_stiffness_conditional_template_2026_06_07.txt)
 
+## 2026-06-12 audit firewall: continuous-energy context supplied
+
+The audited missing bridge is not closed here. The continuous local
+energy/action context, inertial rest-gap mass readout, and recorded-energy
+gravitational source/shared coupling are supplied template inputs. The Record
+axiom does not supply those structures by itself.
+
+Accordingly this row is an **open-gate conditional template**. The runner
+checks only that, once the supplied continuous context is granted, the same
+stiffness parameter appears in the inertial and recorded-source slots. No new
+axiom, Tier-A admission, WEP closure, or audit-status change is introduced.
+
 ## Scope
 
 The rejected parent PR #2988 tried to derive an energy/curvature/mass bridge

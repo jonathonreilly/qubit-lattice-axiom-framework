@@ -6,6 +6,19 @@ primitive-to-readout bridge
 **Claim type:** open_gate
 **Audit-scope narrow:** 2026-06-08
 
+## 2026-06-12 audit firewall: source index, not dynamics closure
+
+The audited missing bridges remain `GB-S1`, `GB-S2`, and `GB-S3`: the
+valley-linear source/action rule, propagation/readout semantics, and
+generated-connectivity rule are supplied row-local ingredients. The primary
+connectivity replay and companion manifest verify finite generated-geometry
+behavior inside that supplied packet only.
+
+This row is therefore an **open-gate source index**. It does not derive a
+Gate B dynamics theorem, physical gravity/readout bridge, or primitive local
+growth rule from retained framework primitives, and it introduces no new
+axiom, Tier-A admission, or audit-status change.
+
 ## 2026-06-08 Audit-Scope Narrow
 
 This row is a source-side index over bounded generated-geometry numerical

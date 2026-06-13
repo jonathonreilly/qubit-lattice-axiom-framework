@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py
-runner_sha256: 0440cdfa87d605e3efb7f761e8a92cd0c996100c60e033d82a01daca3e0a1f35
+runner_sha256: ba63245c80e551cd1cbd75017926d0d1d5657bc132f869d3cdfa5471885c9177
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 EP record-stiffness conditional shared-coupling template

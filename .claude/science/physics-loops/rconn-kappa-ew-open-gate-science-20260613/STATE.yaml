@@ -1,0 +1,22 @@
+loop_slug: rconn-kappa-ew-open-gate-science-20260613
+branch: physics-loop/rconn-kappa-ew-open-gate-science-20260613
+base: origin/main@f778b4831
+target_claim_id: rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08
+mode: source_firewall_repair
+actual_current_surface_status: open_gate route-demotion
+proposal_allowed: false
+audit_required_before_effective_status_change: true
+active_route: "add downstream-use firewall so this route demotion cannot be reused as a kappa_EW=0 selector theorem"
+files_touched:
+  - docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md
+  - scripts/frontier_rconn_kappa_ew_register_not_read.py
+  - logs/runner-cache/frontier_rconn_kappa_ew_register_not_read.txt
+remaining_blockers:
+  - "No physical EW readout/weighting bridge is supplied."
+  - "This row does not close kappa_EW = 0."
+verification:
+  - "python3 -m py_compile scripts/frontier_rconn_kappa_ew_register_not_read.py"
+  - "python3 scripts/frontier_rconn_kappa_ew_register_not_read.py -> TOTAL: PASS=20 FAIL=0"
+  - "runner_cache.cache_status('scripts/frontier_rconn_kappa_ew_register_not_read.py') -> fresh"
+next_exact_action: "Reviewer/auditor should verify downstream rows do not reuse this route-demotion as a positive kappa_EW selector."
+stop_condition: "Ready PR opened for downstream-use firewall."

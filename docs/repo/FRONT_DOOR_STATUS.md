@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1487 |
-| Retained-grade rows, including boxed decorations | 1335 |
+| Applied audit verdicts | 1488 |
+| Retained-grade rows, including boxed decorations | 1336 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 209 |
-| Retained bounded rows | 864 |
+| Retained bounded rows | 865 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1435 |
+| Unaudited rows | 1434 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 50 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1437 |
+| Total pending rows | 1436 |
 | Ready rows | 45 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 453 |
+| Leaf pending | 452 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10`](../../docs/GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md) - medium; unaudited
 - [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - medium; unaudited
 - [`matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11`](../../docs/MATTER_LOOP_FLUX_RESPONSE_NO_UNIFORM_SIGN_SHELL_NMOD4_RESOLVED_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`quark_route2_eta_floor_hf_boundary_note`](../../docs/QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md) - medium; unaudited
 - [`signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12`](../../docs/SIGNED_GRAVITY_INTERFACE_KODD_PFAFFIAN_LINE_BUNDLE_LABEL_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
-- [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
+- [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_WILSON_MASS_HOLONOMY_TWISTED_EDGE_REALIZATION_NARROW_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

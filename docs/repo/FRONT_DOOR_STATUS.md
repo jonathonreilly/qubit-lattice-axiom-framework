@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1530 |
+| Applied audit verdicts | 1531 |
 | Retained-grade rows, including boxed decorations | 1363 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 889 |
 | Boxed decorations under retained parents | 47 |
 | Open gates | 39 |
-| Unaudited rows | 1392 |
+| Unaudited rows | 1391 |
 | Retained-pending-chain rows | 18 |
-| Audited conditional rows | 63 |
+| Audited conditional rows | 64 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 4 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1394 |
-| Ready rows | 4 |
+| Total pending rows | 1393 |
+| Ready rows | 3 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
-| Medium pending | 418 |
+| Medium pending | 417 |
 | Leaf pending | 413 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11`](../../docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11`](../../docs/WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 
@@ -79,8 +78,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3383 |
 | Critical nodes | 521 |
 | High nodes | 514 |
-| Medium nodes | 914 |
-| Leaf nodes | 1434 |
+| Medium nodes | 913 |
+| Leaf nodes | 1435 |
 
 Top load-bearing rows by graph score:
 

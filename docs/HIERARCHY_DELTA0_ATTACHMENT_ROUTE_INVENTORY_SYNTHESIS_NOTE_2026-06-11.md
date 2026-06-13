@@ -209,6 +209,49 @@ both are recorded here so the audit lane sees them:
   (rounded-input artifact); the identity and the coupling-dependence
   verdict are unchanged.
 
+### Addendum (2026-06-13): a framing correction and the first S1' normalization probe
+
+Two downstream developments; neither modifies the §1-§4 inventory (per
+the refinement rule above).
+
+**(a) Framing correction — the reductions are exact but DEFINITIONAL,
+not content-reducing.** An independent skeptic pass re-examined §1's
+reduced target. The identity `u_0^16 * alpha_s^16 = alpha_LM^16` is an
+exponent tautology (`16 - 32 = -16`) true for ANY base; it singles out
+`alpha_s` only because `alpha_s` is DEFINED as `alpha_bare/u_0^2` and the
+target was chosen as `alpha_LM^16`. Likewise the action-cost split
+`Delta_S = ln(4 pi) + 2 ln(u_0)` is the logarithm of that definition, and
+the "sixteen kernel normalizations = 105% of the hierarchy" bookkeeping
+decomposes a target (`ln(M_Pl/v_cand)`) that itself rides the declared B2
+anchor and B5 identification. CONSEQUENCE for how this inventory is read:
+the campaign's successive "reductions" (block01 `N = 1/(8 pi u_0^2)` ->
+block02 one `alpha_s` per decoupling -> the `Delta_S` action-cost form)
+are exact algebraic RESTATEMENTS that sharpen the STATEMENT of the single
+unsupplied attachment rule; they do NOT reduce its content. The entire
+`(4 pi)^-16` magnitude still sits in that one rule. §1 stands as exact
+arithmetic but should be read as "the sharpest STATEMENT of B4," never as
+progress toward closure. The skeptic confirmed the declared residuals
+(block02's R1) are the genuinely load-bearing ones — nothing hidden.
+
+**(b) S1' first normalization probe — graded CONDITIONAL-KILL.** The
+surviving route S1 refines to the composite S1' (block09: finite-beta
+link integration x the Green-kernel chain). The first concrete candidate
+for its channel-projected normalization Z — the LANDED NJL RPA condensate
+susceptibility `chi = G_eff/(1 - G_eff Pi(0))`, `Pi(0) = 4/u_0^2`,
+`G_crit = u_0^2/4` — is graded in
+`HIERARCHY_DELTA0_B4_NJL_RPA_NORMALIZATION_PROBE_NOTE_2026-06-13.md`
+(backticked downstream pointer): at canonical `G_eff = 1/(2 N_c)` it
+brackets closure in MAGNITUDE (enhancement `7.43`, 73% of the `10.7x`
+gap), but the as-computed RPA-normalized vertex has `u_0`-degree `-14.86`,
+FIRING the mechanism's own degree-(-2) kill criterion; it survives as
+partial-in-magnitude only under a threshold-freezing no landed object
+supplies. CONDITIONAL-KILL, adversarially verified. This refines the
+S1'/S3 entries downstream; it does NOT modify §3's surviving set.
+
+(Separately: the NJL `sigma_min^2` prose deviation flagged above was
+subsequently corrected on disk to `-0.4141`; the correction changes no
+verdict.)
+
 ### What this note does NOT claim
 
 - It does NOT close the DELTA0 gate or B4, and does NOT supply the

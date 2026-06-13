@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 868 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 38 |
-| Unaudited rows | 1516 |
+| Unaudited rows | 1515 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 23 |
 | Audited renaming rows | 32 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`s3_time_theta_to_slice_coupling_note`](../../docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) - critical; unaudited
+- [`s3_time_theta_to_slice_coupling_note`](../../docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) - critical; audit_in_progress
 - [`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md) - critical; audit_in_progress
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - critical; audit_in_progress
 - [`post_record_count_probability_firewall_2026-06-06`](../../docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md) - critical; audit_in_progress
@@ -61,7 +61,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 174 |
+| critical | `unaudited` | 173 |
 | high | `unaudited` | 147 |
 | medium | `unaudited` | 94 |
 | critical | `audited_conditional` | 2 |
@@ -69,10 +69,10 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_failed` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
-| medium | `audited_numerical_match` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

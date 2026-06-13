@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "s3_time_theta_to_slice_coupling_note"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "record_unbounded_finite_additivity_schema_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06",
         "s3_time_theta_to_slice_coupling_note",
         "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
         "magnitude_reads_minimal_record_block_2026-06-06",
         "post_record_count_probability_firewall_2026-06-06",
         "g_bare_dynamical_fixation_obstruction_note_2026-04-18",
         "observable_principle_record_scalar_map_no_go_note_2026-06-05",
-        "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31"
+        "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
+        "record_unbounded_finite_additivity_schema_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4dbe1f32d525bea3c1d0aab1280aa82adf14767f6e793ea94793650abff37d0a",
+      "note_hash": "d3bed9ce9416680291e02902deef66354da53e4ca293c38ab5239cce7202c382",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

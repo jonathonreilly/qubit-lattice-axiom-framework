@@ -971,9 +971,54 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout?",
+      "blocked_by_group_ids": [
+        "graph_first_gauge_structure"
+      ],
+      "claim_id": "cl3_color_automorphism_theorem",
+      "deps": [
+        "native_gauge_closure_note",
+        "ew_current_matching_rule_open_gate_note_2026-05-03"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 6,
+      "group_id": "su3_toolkit_algebra",
+      "group_order": 4,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
+      "runner_path": "scripts/verify_cl3_sm_embedding.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1015,9 +1060,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_failed",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_failed",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -2325,61 +2370,6 @@
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
         "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout?",
-      "blocked_by_group_ids": [
-        "graph_first_gauge_structure"
-      ],
-      "claim_id": "cl3_color_automorphism_theorem",
-      "deps": [
-        "native_gauge_closure_note",
-        "ew_current_matching_rule_open_gate_note_2026-05-03"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 6,
-      "group_id": "su3_toolkit_algebra",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
-      "resolution_evidence": {
-        "audit_date": "2026-06-12T20:05:44.908389+00:00",
-        "audit_status": "audited_clean",
-        "auditor": "codex-cli-gpt-5.5-20260612-200144-5ecb282dd1-cl3_color_automorphism_theor",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "bounded_theorem",
-        "independence": "fresh_context"
-      },
-      "resolution_manifest_date": "2026-05-22",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/verify_cl3_sm_embedding.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
         "docs/MINIMAL_AXIOMS_2026-05-20.md"
       ],
       "audit_question": "Fresh-context provenance re-audit: the current clean verdict is Claude-only but recorded as cross_family without non-Claude confirmation. Re-audit the bounded claim under current auditor-independence requirements.",
@@ -2831,9 +2821,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
       "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
       "expected_current_audit_status": "audited_clean",
@@ -2846,9 +2836,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
       "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
       "expected_current_audit_status": "audited_clean",
@@ -2906,9 +2896,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
       "claim_id": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
       "expected_current_audit_status": "audited_clean",

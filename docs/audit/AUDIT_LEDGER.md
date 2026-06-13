@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 872 |
 | _retained_pending_chain_ | 19 |
 | open_gate | 38 |
-| unaudited | 1512 |
+| unaudited | 1511 |
+| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,14 +61,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 22 |
+| `audit_in_progress` | 23 |
 | `audited_clean` | 1295 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1829 |
+| `unaudited` | 1828 |
 
 | claim_type | count |
 |---|---:|
@@ -148,6 +149,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | C | - |

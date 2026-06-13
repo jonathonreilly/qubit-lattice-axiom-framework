@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 872 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 38 |
-| Unaudited rows | 1512 |
+| Unaudited rows | 1511 |
 | Retained-pending-chain rows | 19 |
 | Audited conditional rows | 23 |
 | Audited renaming rows | 32 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
+- [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; audit_in_progress
 - [`sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06`](../../docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md) - critical; audit_in_progress
 - [`tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md) - critical; audit_in_progress
 - [`pmns_graph_first_axis_alignment_note`](../../docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md) - critical; audit_in_progress

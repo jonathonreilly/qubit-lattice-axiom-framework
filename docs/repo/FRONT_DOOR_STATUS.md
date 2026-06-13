@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1478 |
-| Retained-grade rows, including boxed decorations | 1327 |
+| Applied audit verdicts | 1479 |
+| Retained-grade rows, including boxed decorations | 1328 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 858 |
+| Retained bounded rows | 859 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1444 |
+| Unaudited rows | 1443 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 49 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1446 |
+| Total pending rows | 1445 |
 | Ready rows | 50 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 462 |
+| Leaf pending | 461 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06`](../../docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md) - medium; unaudited
 - [`record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12`](../../docs/BRANCHING_SLACK_RATE_PROJECTIVE_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27`](../../docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md) - medium; unaudited
-- [`exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11`](../../docs/EXACT_FIXED_ENERGY_SCHUR_DECIMATION_FREE_CHAIN_FORM_MIGRATION_ONE_STEP_MAP_BOUNDED_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
+- [`exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11`](../../docs/EXACT_FIXED_ENERGY_SCHUR_DECIMATION_FREE_CHAIN_FORM_MIGRATION_ONE_STEP_MAP_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -94,5 +94,5 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 887 descendants; score 59.294
 - `key_terminology` - critical; 1281 descendants; score 50.324
 - `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 49.567
-- `plaquette_self_consistency_note` - critical; 971 descendants; score 46.425
+- `plaquette_self_consistency_note` - critical; 970 descendants; score 46.423
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 927 descendants; score 44.358

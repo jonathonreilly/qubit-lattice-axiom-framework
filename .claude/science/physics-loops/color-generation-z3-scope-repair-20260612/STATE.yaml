@@ -1,0 +1,18 @@
+loop_slug: color-generation-z3-scope-repair-20260612
+target_claim_id: color_generation_independent_z3_structures_2026-06-05
+mode: source_repair
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md
+  - scripts/color_generation_z3_identification_no_go_2026_06_05.py
+  - scripts/frontier_color_generation_z3_scope_guard_2026_06_12.py
+  - logs/runner-cache/color_generation_z3_identification_no_go_2026_06_05.txt
+  - logs/runner-cache/frontier_color_generation_z3_scope_guard_2026_06_12.txt
+open_imports:
+  - physical SM color bridge
+  - physical generation bridge
+  - physical 3 x 3 product/commuting-label bridge
+next_exact_action: reviewer should decide whether this narrowed abstract Z3 inequivalence packet is ready for re-audit.

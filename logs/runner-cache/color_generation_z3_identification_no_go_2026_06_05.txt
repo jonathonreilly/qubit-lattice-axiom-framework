@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/color_generation_z3_identification_no_go_2026_06_05.py
-runner_sha256: 8fc53d5f9b89793c948fee0edc385b916871e3b9b87d0df76a863c8d8a88a4de
+runner_sha256: d3737dd8723960ba75c2f990d64ea051d49c3cdee6db19c43ec41682cc0ba329
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 ==============================================================================
-COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO  (derivation runner)
+COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO  (abstract inequivalence runner)
 ==============================================================================
-Premises: cited color and generation carrier provenance.
-Result: color-SU(3) and generation carriers cannot be identified
-        because their Z_3 characters are inequivalent.
+Premises: cited abstract color-center and generation-candidate carriers.
+Result: the two Z_3 actions are inequivalent as abstract
+        representations; physical SM label bridges are not proved.
 
 ==============================================================================
 STEP 1: NATIVE Z_3 CHARACTERS (color center scalar vs generation cycle)
@@ -62,14 +62,13 @@ CLASS-A ASSERTIONS
 
 ==============================================================================
 COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO: PASS=21 FAIL=0
-VERDICT: NO-GO -- the color center scalar rep 3*chi_w (3, 3w, 3w^2)
-  and the generation regular rep chi_0+chi_w+chi_w2 (3, 0, 0) are
-  INEQUIVALENT Z_3 representations: their characters differ at the
-  non-identity elements (3w vs 0), chi_w multiplicity is 3 vs 1, and
-  every Z_3 intertwiner has rank <= 1 (Schur), so no equivariant
-  isomorphism exists. Identifying internal color with
-  generation is a category error absent the named non-native import
-  'scalar-generation-action' (replace the derived axis cycle by w*I).
+VERDICT: ABSTRACT INEQUIVALENCE -- the color-center scalar rep
+  3*chi_w (3, 3w, 3w^2) and the generation-candidate regular rep
+  chi_0+chi_w+chi_w2 (3, 0, 0) are inequivalent Z_3
+  representations: their characters differ at non-identity elements,
+  chi_w multiplicity is 3 vs 1, and every Z_3 intertwiner has rank <= 1.
+  This runner does not identify physical SM color, physical generations,
+  or a physical 3 x 3 product-label carrier; those are bridge theorems.
 ==============================================================================
 
 ----- stderr -----

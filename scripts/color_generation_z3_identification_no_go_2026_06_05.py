@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO derivation runner (2026-06-05).
 
-Runner for docs/COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO_2026-06-05.md.
+Runner for docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md.
 
-Result (no-go, claim_type=theorem):
+Result (abstract bounded theorem):
 
-    The color-SU(3) carrier and the generation carrier cannot be identified
-    as Z_3 representations, because their Z_3 characters are inequivalent.
+    The cited abstract color-center Z_3 action and cited abstract
+    generation-candidate Z_3 action are inequivalent representations.
 
 Adopted premises (cited by name): the color and generation carrier provenance
 from Lattice/Quantum structure. The two carriers and their Z_3 actions are:
@@ -35,10 +35,13 @@ import the value from any note) and computes the obstruction:
   4. the Schur obstruction: dim Hom_{Z_3}(generation, color) = 3 (all of it in
      the single shared chi_w line), yet every intertwiner has rank <= 1, so no
      equivariant isomorphism exists;
-  5. the precise import that WOULD bridge it (stipulate the generation Z_3 to
-     act as w * I_3, discarding the derived axis-cycle), shown to be a
-     non-native stipulation -- an import, not a consequence of the named
-     premises alone.
+  5. the precise non-native stipulation that WOULD identify the two abstract
+     Z_3 actions (make the generation action scalar w * I_3), shown to be an
+     import rather than a consequence of the named premises alone.
+
+This runner does not prove physical SM color, physical generations, or a
+physical 3 x 3 product-label carrier. Those require separate retained bridge
+theorems.
 
 Reproduce:
     PYTHONPATH=scripts python3 \
@@ -321,11 +324,11 @@ def step5_named_import() -> None:
 
 def main() -> int:
     print("=" * 78)
-    print("COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO  (derivation runner)")
+    print("COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO  (abstract inequivalence runner)")
     print("=" * 78)
-    print("Premises: cited color and generation carrier provenance.")
-    print("Result: color-SU(3) and generation carriers cannot be identified")
-    print("        because their Z_3 characters are inequivalent.")
+    print("Premises: cited abstract color-center and generation-candidate carriers.")
+    print("Result: the two Z_3 actions are inequivalent as abstract")
+    print("        representations; physical SM label bridges are not proved.")
 
     chi_gen, chi_col = step1_characters()
     step2_inequivalence(chi_gen, chi_col)
@@ -353,14 +356,13 @@ def main() -> int:
     print()
     print("=" * 78)
     print(f"COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO: PASS={PASS} FAIL={FAIL}")
-    print("VERDICT: NO-GO -- the color center scalar rep 3*chi_w (3, 3w, 3w^2)")
-    print("  and the generation regular rep chi_0+chi_w+chi_w2 (3, 0, 0) are")
-    print("  INEQUIVALENT Z_3 representations: their characters differ at the")
-    print("  non-identity elements (3w vs 0), chi_w multiplicity is 3 vs 1, and")
-    print("  every Z_3 intertwiner has rank <= 1 (Schur), so no equivariant")
-    print("  isomorphism exists. Identifying internal color with")
-    print("  generation is a category error absent the named non-native import")
-    print("  'scalar-generation-action' (replace the derived axis cycle by w*I).")
+    print("VERDICT: ABSTRACT INEQUIVALENCE -- the color-center scalar rep")
+    print("  3*chi_w (3, 3w, 3w^2) and the generation-candidate regular rep")
+    print("  chi_0+chi_w+chi_w2 (3, 0, 0) are inequivalent Z_3")
+    print("  representations: their characters differ at non-identity elements,")
+    print("  chi_w multiplicity is 3 vs 1, and every Z_3 intertwiner has rank <= 1.")
+    print("  This runner does not identify physical SM color, physical generations,")
+    print("  or a physical 3 x 3 product-label carrier; those are bridge theorems.")
     print("=" * 78)
 
     return 0 if FAIL == 0 else 1

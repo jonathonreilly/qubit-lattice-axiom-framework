@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/quark_route2_cte_magnitude_structural_status_bounded_2026_06_12.py
+runner_sha256: 15e4f8254c9ea2e161afd471c31ad6d62dd49ee320c47399e61a03dba184846e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: target rho_E gives q_E=15/8 -- q_E=15/8
+PASS: target q_E gives c_TE=-8/9 -- c_TE=-8/9
+PASS: target magnitude is 8/9 -- |c_TE|=8/9
+PASS: W77 sign formula negative at rho_E=-5 -- q_E=1/6, c_TE=-10
+PASS: W77 sign formula negative at rho_E=0 -- q_E=1, c_TE=-5/3
+PASS: W77 sign formula negative at rho_E=21/4 -- q_E=15/8, c_TE=-8/9
+PASS: W77 sign formula negative at rho_E=9 -- q_E=5/2, c_TE=-2/3
+PASS: rho_E=-6 is the undefined center-ratio boundary -- q_E=0
+PASS: N_c=2 F_adj exact -- F_adj=3/4
+PASS: N_c=2 structural q_E exact -- q_E=20/9
+PASS: N_c=2 structural rho_E exact -- rho_E=22/3
+PASS: N_c=2 |c_TE| tracks F_adj -- |c_TE|=3/4
+PASS: N_c=3 F_adj exact -- F_adj=8/9
+PASS: N_c=3 structural q_E exact -- q_E=15/8
+PASS: N_c=3 structural rho_E exact -- rho_E=21/4
+PASS: N_c=3 |c_TE| tracks F_adj -- |c_TE|=8/9
+PASS: N_c=4 F_adj exact -- F_adj=15/16
+PASS: N_c=4 structural q_E exact -- q_E=16/9
+PASS: N_c=4 structural rho_E exact -- rho_E=14/3
+PASS: N_c=4 |c_TE| tracks F_adj -- |c_TE|=15/16
+PASS: fixed N_c=3 target does not track F_adj at N_c=2 -- 8/9 vs 3/4
+PASS: fixed N_c=3 target tracks F_adj at N_c=3 -- 8/9 vs 8/9
+PASS: fixed N_c=3 target does not track F_adj at N_c=4 -- 8/9 vs 15/16
+PASS: F_adj(3)=8/9 -- F_adj=8/9
+PASS: 3 x 3bar complement has dimension 8 of 9
+PASS: SU(3) C_F^2 T_F also equals 8/9 -- C_F^2 T_F=8/9
+PASS: C_F^2 T_F does not track F_adj under N_c variation -- N2=9/32 vs 3/4, N4=225/128 vs 15/16
+PASS: kappa_EW=0 specialization equals F_adj
+PASS: kappa_EW=1 specialization equals full channel
+PASS: kappa_EW changes physical readout while count is fixed
+PASS: W77 source exists -- .claude/tmp/refs/W77_NOTE.md
+PASS: W67 source exists -- .claude/tmp/refs/W67_NOTE.md
+PASS: RCONN source exists -- docs/RCONN_DERIVED_NOTE.md
+PASS: KAPPA source exists -- docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md
+PASS: FIERZ source exists -- docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md
+PASS: SINGLET source exists -- docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md
+PASS: K3 source exists -- docs/YT_P3_MSBAR_TO_POLE_K3_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md
+PASS: W77 records E_pos family
+PASS: W77 records magnitude remains open
+PASS: W67 records F_adj not typed as Route-2 center readout
+PASS: W67 records q_E=15/8 is not supplied by Fierz
+PASS: RCONN records exact F_adj formula
+PASS: RCONN keeps physical readout rule separate
+PASS: kappa note says count is not weight
+PASS: kappa note says Record does not supply readout context
+PASS: K3 color-tensor note records C_F^2 T_F=8/9
+PASS: new note exists -- docs/QUARK_ROUTE2_CTE_MAGNITUDE_STRUCTURAL_STATUS_BOUNDED_NOTE_2026-06-12.md
+PASS: note has status authority block
+PASS: note names primary runner
+PASS: note names runner cache
+PASS: note records exact magnitude-only theorem needed
+PASS: note records rho_E(N_c) exact form
+PASS: note records independent appearance count
+PASS: note records no-coincidence open theorem
+PASS: note records Record/Quantum boundary
+PASS: note records N_c=2,3,4 falsifier table
+PASS: note avoids forbidden phrase overreach_A
+PASS: note avoids forbidden phrase overreach_B
+PASS: note avoids forbidden phrase overreach_C
+PASS: note avoids forbidden phrase overreach_D
+PASS: note avoids audit-status prediction tokens
+PASS: note has no external URL tokens
+TOTAL: PASS=62, FAIL=0
+
+----- stderr -----
+

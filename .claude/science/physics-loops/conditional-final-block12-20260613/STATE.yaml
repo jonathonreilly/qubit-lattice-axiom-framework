@@ -1,0 +1,21 @@
+loop: conditional-final-block12-20260613
+branch: physics-loop/conditional-final-block12-20260613
+base: origin/main f1910ea8f3e3003bc9bddd971b0f3ac4be1e2592
+mode: source_repair
+target_status: bounded-support
+actual_current_surface_status: audited_conditional until independent audit updates ledger
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+target_claim_ids:
+  - koide_taste_cube_cyclic_source_descent_note_2026-04-18
+  - wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08
+verification:
+  - python3 scripts/frontier_koide_taste_cube_cyclic_source_descent.py
+  - PYTHONPATH=scripts python3 scripts/frontier_wilson_corrected_v_taste_tree_level.py
+  - python3 scripts/frontier_wilson_staggered_minimal_block_spectrum_bridge_2026_06_13.py
+  - python3 scripts/precompute_audit_runners.py --allow-non-main --push-mode=none --force --concurrency=3 --runners scripts/frontier_koide_taste_cube_cyclic_source_descent.py,scripts/frontier_wilson_corrected_v_taste_tree_level.py,scripts/frontier_wilson_staggered_minimal_block_spectrum_bridge_2026_06_13.py
+pr_status: pending
+next_exact_action: check-only, hygiene, commit, push, open PR
+stop_condition: PR opened for reviewer extraction

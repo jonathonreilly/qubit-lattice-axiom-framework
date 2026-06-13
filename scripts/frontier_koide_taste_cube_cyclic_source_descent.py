@@ -22,6 +22,8 @@ Answer:
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
 import sys
 from typing import Iterable
 
@@ -30,6 +32,10 @@ import sympy as sp
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = ROOT / "docs" / "KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md"
+LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 BASIS = [
     (0, 0, 0),
@@ -58,6 +64,33 @@ def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT") -> 
         msg += f"  ({detail})"
     print(msg)
     return condition
+
+
+def part0_source_scope_firewall() -> None:
+    print("=" * 88)
+    print("PART 0: source-scope firewall for the bounded finite descent theorem")
+    print("=" * 88)
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    rows = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+    s3_row = rows.get("s3_taste_cube_decomposition_note", {})
+
+    check(
+        "The note states the staggered-Dirac realization gate is not load-bearing for this finite theorem",
+        "not a load-bearing input for this bounded finite descent theorem" in note_flat,
+    )
+    check(
+        "The note separates the T_1 charged-sector block from physical charged-lepton identification",
+        "not a physical charged-lepton identification" in note_flat
+        and "not a Standard Model generation-labeling theorem" in note_flat,
+    )
+    check(
+        "The abstract S_3 taste-cube toolkit is audited clean on the current ledger",
+        s3_row.get("effective_status") == "retained"
+        and s3_row.get("audit_status") == "audited_clean",
+        detail=f"effective={s3_row.get('effective_status')}, audit={s3_row.get('audit_status')}",
+    )
 
 
 def cycle_bits(alpha: tuple[int, int, int]) -> tuple[int, int, int]:
@@ -426,6 +459,8 @@ def part4_schur_compatible_response_factorization() -> None:
 
 
 def main() -> int:
+    part0_source_scope_firewall()
+    print()
     part1_full_cube_average_descends_exactly()
     part2_canonical_full_cube_source_channels()
     part3_schur_reduction_hits_same_three_response_bundle()

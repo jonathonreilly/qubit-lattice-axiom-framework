@@ -93,6 +93,12 @@ def part1_note_structure():
         ("Dependencies section header", "## Dependencies"),
         ("Boundaries section header", "## Boundaries"),
         ("Verification section header", "## Verification"),
+        ("combined-spectrum bridge section",
+         "## Combined-Spectrum Bridge (2026-06-13)"),
+        ("combined bridge note cited",
+         "WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13"),
+        ("combined bridge eigenvalue multiset",
+         "2 r k ± 2 i u_0"),
         ("formula (1) present",
          "binomial(4, k) · log( (2 r k + m)^2 + 4 u_0^2 )"),
         ("first derivative at m=0 named",
@@ -152,6 +158,7 @@ def part3_premise_class_consistency():
     must_exist = [
         "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md",
         "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
+        "docs/WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
         "docs/MINIMAL_AXIOMS_2026-05-03.md",
     ]

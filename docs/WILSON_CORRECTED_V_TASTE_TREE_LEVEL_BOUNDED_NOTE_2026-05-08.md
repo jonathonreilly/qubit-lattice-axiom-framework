@@ -10,6 +10,25 @@ effective status are set by the independent audit lane.
 
 On 2026-06-12, the registered runner prose was synced to the existing derivation and executable check: its docstring and Part 8 heading/comment now state the leading correction as `+60 r^2 / u_0^4`, matching equation (4) and the exact-arithmetic computation; no runner computation, source-note derivation, dependencies, or boundaries were changed.
 
+## Combined-Spectrum Bridge (2026-06-13)
+
+The missing combined-spectrum bridge is now supplied by
+[`WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md`](WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md)
+with runner
+`scripts/frontier_wilson_staggered_minimal_block_spectrum_bridge_2026_06_13.py`.
+It constructs the Wilson-plus-staggered operator on the same APBC
+minimal-block corner surface and derives the eigenvalue multiset
+
+```text
+2 r k ± 2 i u_0, with multiplicity binomial(4,k), k = 0,...,4.
+```
+
+This source note now uses that bridge for the load-bearing composition of the
+Wilson Hamming staircase with the unshifted staggered mean-field pair. The
+remaining boundaries are unchanged: `r`, `u_0`, the physical Higgs-mass
+identification, the shifted extremum, and continuum closure are not derived
+here.
+
 ## Claim
 
 On the canonical staggered Kogut-Susskind Dirac fermion plus Wilson
@@ -60,6 +79,7 @@ extremum, and does **not** close the `+12%` Higgs gap chain.
 | Step | Load-bearing input | Lattice-action input? |
 |---|---|---|
 | Per-corner Wilson eigenvalue at hw class `k`: real shift `2 r k`, imaginary part `±2 i u_0` from staggered anti-Hermiticity in mean field | staircase derivation [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md) + retained mean-field staggered anti-Hermiticity in [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](HIGGS_MASS_FROM_AXIOM_NOTE.md) | already-admitted Wilson + staggered surface (cited upstream) |
+| Combined Wilson-plus-staggered eigenvalue multiset on the same APBC minimal block | bridge note [`WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md`](WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md) constructs `O_n = 2r hw(n) I_2 + [[0,-2u_0],[2u_0,0]]` and groups the resulting `2rk ± 2iu_0` spectrum by `binomial(4,k)` | yes, bounded bridge on the declared APBC corner surface |
 | `\|λ + m·I\|^2` at hw class `k` equals `(2 r k + m)^2 + 4 u_0^2` | direct algebra on a complex eigenvalue with real part `2 r k + m` and imaginary part `±2 u_0` | no |
 | Generating functional contribution per corner: `(1/2) log( (2 r k + m)^2 + 4 u_0^2 )` | standard `log\|det(D + m·I)\|^2` decomposition | no |
 | Sum over corners weighted by `binomial(4, k)` from the staircase | staircase multiplicities | no |
@@ -164,6 +184,9 @@ approximation `-4/u_0^2 + 60 r^2 / u_0^4`.
   which the `r = 0` limit reduces, and the +12% gap chain row 3
   (Wilson taste-breaking) that asserts a Wilson correction without
   computing it.
+- [`WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md`](WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md)
+  for the combined Wilson-plus-staggered APBC minimal-block operator and
+  eigenvalue multiset `2rk ± 2iu_0` with binomial multiplicities.
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   for the staggered-Dirac realization gate context; this note inherits
   the gate's open-derivation status without closing it.
@@ -200,6 +223,7 @@ Run:
 
 ```bash
 PYTHONPATH=scripts python3 scripts/frontier_wilson_corrected_v_taste_tree_level.py
+python3 scripts/frontier_wilson_staggered_minimal_block_spectrum_bridge_2026_06_13.py
 ```
 
 Expected:

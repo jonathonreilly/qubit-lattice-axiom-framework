@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_corrected_v_taste_tree_level.py
-runner_sha256: e021dfbdb49a1b6bef25c9b59249e230d3bc27f076f7b06d5231d6d3ec9e8f28
+runner_sha256: 81ad130020714070c57ce4a29ee6f3088a1431ebd0358034b95dceb23909a365
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -26,6 +26,9 @@ status: ok
   [PASS] contains: Dependencies section header  (marker = '## Dependencies')
   [PASS] contains: Boundaries section header  (marker = '## Boundaries')
   [PASS] contains: Verification section header  (marker = '## Verification')
+  [PASS] contains: combined-spectrum bridge section  (marker = '## Combined-Spectrum Bridge (2026-06-13)')
+  [PASS] contains: combined bridge note cited  (marker = 'WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13')
+  [PASS] contains: combined bridge eigenvalue multiset  (marker = '2 r k ± 2 i u_0')
   [PASS] contains: formula (1) present  (marker = 'binomial(4, k) · log( (2 r k + m)^2 + 4 u_0^2 )')
   [PASS] contains: first derivative at m=0 named  (marker = 'dV^W/dm |_{m=0}')
   [PASS] contains: second derivative at m=0 named  (marker = 'd^2 V^W / dm^2 |_{m=0}')
@@ -58,6 +61,7 @@ status: ok
 ----------------------------------------------------------------------------------------
   [PASS] upstream exists: docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md
   [PASS] upstream exists: docs/HIGGS_MASS_FROM_AXIOM_NOTE.md
+  [PASS] upstream exists: docs/WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md
   [PASS] upstream exists: docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
   [PASS] upstream exists: docs/MINIMAL_AXIOMS_2026-05-03.md
 
@@ -120,7 +124,7 @@ status: ok
   [PASS] source-note proposal language present
 
 ========================================================================================
- TOTAL: PASS=61, FAIL=0
+ TOTAL: PASS=65, FAIL=0
 ========================================================================================
 
  VERDICT: V_taste^W(m) = -(1/2) Σ_k binomial(4,k) log((2rk+m)^2 + 4u_0^2)

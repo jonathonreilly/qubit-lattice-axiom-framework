@@ -2,16 +2,20 @@
 
 **Date:** 2026-04-18  
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
-**Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).
+**Carrier input:** finite taste cube `C^8` with the spatial `C_3[111]`
+cycle inherited from the retained abstract taste-cube representation
+toolkit. The staggered-Dirac realization gate is downstream physical
+application context, not a load-bearing input for this bounded finite
+descent theorem.
 **Status:** support - structural or confirmatory support note
 **Runner:** `scripts/frontier_koide_taste_cube_cyclic_source_descent.py`
 
 ## Question
 
 The charged-lepton Koide lane should not assume too early that the bare
-`hw=1` / `T_1` triplet is the whole physical lepton story. The physical lattice
-starts on the full `8`-corner taste cube, and the right positive-path question
-is therefore:
+`hw=1` / `T_1` triplet is the whole physical lepton story. The finite
+taste-cube support toolkit starts on the full `8`-corner carrier, and the
+right positive-path question is therefore:
 
 > if we work on the full taste cube first, then apply exact `C_3[111]`
 > averaging and a Schur-compatible charged-sector reduction, what exact source
@@ -75,6 +79,20 @@ B2 = i(C - C^2).
 That is the same `3`-response Koide bundle already found on the smaller
 carrier. The full taste cube does not enlarge the response target; it only
 provides a more physical starting point for deriving it.
+
+## Scope Split: Finite Descent Versus Physical Realization
+
+The bounded theorem in this note is the finite linear-algebra statement over
+the explicitly displayed `C^8` carrier, the spatial `C_3[111]` cycle, and the
+`T_1` projection. It consumes the retained abstract taste-cube representation
+toolkit, not the still-separate staggered-Dirac realization gate.
+
+Accordingly, "charged-sector" in the theorem means the `T_1` block selected
+inside this finite carrier. It is not a physical charged-lepton
+identification, not a Standard Model generation-labeling theorem, and not a
+closure of the staggered-Dirac realization gate. Any physical charged-lepton
+application of the finite descent remains gated by the independent
+staggered-Dirac realization and labeling-convention surfaces.
 
 ## Why this is the right positive path
 

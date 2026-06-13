@@ -1,11 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_taste_cube_cyclic_source_descent.py
-runner_sha256: 12ecd413fa7919443e5f723a1487209676680d86de90002ae7a032d3ad319f5b
+runner_sha256: 17292c566316d116f96b1f5c9348713843f8ee59906336487331e29102ac698c
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.38
 status: ok
 ----- stdout -----
+========================================================================================
+PART 0: source-scope firewall for the bounded finite descent theorem
+========================================================================================
+  [PASS] The note states the staggered-Dirac realization gate is not load-bearing for this finite theorem
+  [PASS] The note separates the T_1 charged-sector block from physical charged-lepton identification
+  [PASS] The abstract S_3 taste-cube toolkit is audited clean on the current ledger  (effective=retained, audit=audited_clean)
+
 ========================================================================================
 PART 1: full-cube C_3 averaging descends exactly to the same T_1 projector
 ========================================================================================
@@ -47,7 +54,7 @@ Interpretation:
   to derive the microscopic full-cube source law for those channels, and
   then the selector law that would put them on the Koide cone.
 
-PASS=16 FAIL=0
+PASS=19 FAIL=0
 
 ----- stderr -----
 

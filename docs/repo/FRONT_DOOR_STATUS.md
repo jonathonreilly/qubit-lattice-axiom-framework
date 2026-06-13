@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1446 |
+| Applied audit verdicts | 1447 |
 | Retained-grade rows, including boxed decorations | 1328 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 204 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1525 |
-| Ready rows | 67 |
+| Total pending rows | 1524 |
+| Ready rows | 66 |
 | Cycle-break targets | 20 |
-| Critical pending | 335 |
+| Critical pending | 334 |
 | High pending | 261 |
 | Medium pending | 440 |
 | Leaf pending | 489 |
 
 Next ready rows by queue order:
 
-- [`observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31`](../../docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md) - critical; audit_in_progress
 - [`record_unbounded_finite_additivity_schema_2026-06-06`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md) - critical; audit_in_progress
 - [`pmns_tm2_residual_consequence_bounded_note_2026-05-26`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
 - [`flavor_r_half_is_the_records_flow_separatrix_2026-06-02`](../../docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md) - critical; audit_in_progress
 - [`su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`](../../docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
+- [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hkd_correspondence_general_charts_2026_06_12.py
+runner_sha256: 4d6fca5a5602c1e75e1a4e73d0a27b7f335e81259c6e567287a903d531b58958
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+# HKD/correspondence general-chart bounded real-Schur check
+STATUS: pipeline-derived; audit lane grades.
+CONVENTION: dense nearest-neighbor Hamiltonian with onsite=4.0, hop=-1.0; fixed-energy Schur E=-0.6; axis decimations=(0, 2); H_kd uses the raw checkerboard block after even-d2 truncation.
+MEMORY: total sites per chart <= 3000; largest single dense float64 array at the bound is 72.0 MB, below the stated ~150 MB ceiling; charts are processed one at a time.
+
+S0 anchors (original (L/2,L,L/2) family):
+  label                              periods      sites schur keep/drop all_even H_before          H_after           misaligned
+  anchor_L8_original_family_protected (4, 8, 4)      128    32   16/16   True      1.0252645007009416e+00  0.0000000000000000e+00          0
+  anchor_L10_original_family_unprotected (5, 10, 5)     250    90   45/45   False     1.7572014742952367e+00  7.5243559739582566e-01        700
+
+PASS: S0 anchor protected L=8 real H_kd_after equals frozen zero -- measured=0.0000000000000000e+00, frozen=0.0000000000000000e+00, residual=0.000e+00, tol=1.0e-14
+PASS: S0 anchor unprotected L=10 real H_kd_after equals frozen Schur value -- measured=7.5243559739582566e-01, frozen=7.5243559739582566e-01, residual=0.000e+00, tol=1.0e-12
+PASS: S0 anti-fabrication: real H_kd_before is nonzero before even-d2 truncation -- protected_before=1.0252645007009416e+00, unprotected_before=1.7572014742952367e+00, frozen_min=0.5
+
+S1 fixed mixed-parity general charts:
+  label                              periods      sites schur keep/drop all_even H_before          H_after           misaligned
+  all_even_cube                      (4, 4, 4)       64    16    8/8    True      1.2577381132118239e+00  0.0000000000000000e+00          0
+  all_even_rectangular               (4, 6, 4)       96    24   12/12   True      1.0964081254807447e+00  0.0000000000000000e+00          0
+  one_odd_middle                     (4, 5, 4)       80    20   12/8    False     1.1476977330246578e+00  1.1476977330246578e+00         32
+  one_odd_first_minimal              (3, 4, 4)       48    16    8/8    False     2.6389342991774600e+00  2.6389342991774600e+00         32
+  all_even_larger                    (6, 6, 4)      144    36   18/18   True      9.6427013769867187e-01  0.0000000000000000e+00          0
+  one_odd_first                      (5, 6, 4)      120    36   18/18   False     1.4115254532538564e+00  6.4271141355526795e-01         72
+
+PASS: S1 per-axis parity lemma on all periods used -- period flip table: q=3:flip=True expected_odd=True, q=4:flip=False expected_odd=False, q=5:flip=True expected_odd=True, q=6:flip=False expected_odd=False, q=8:flip=False expected_odd=False, q=10:flip=False expected_odd=False
+PASS: S1 three-way coincidence for (4, 4, 4) -- (real H_kd_after<1.0e-14)=True, zero_misaligned=True, all_periods_even=True, H_kd_after=0.0000000000000000e+00, misaligned=0
+PASS: S1 three-way coincidence for (4, 6, 4) -- (real H_kd_after<1.0e-14)=True, zero_misaligned=True, all_periods_even=True, H_kd_after=0.0000000000000000e+00, misaligned=0
+PASS: S1 three-way coincidence for (4, 5, 4) -- (real H_kd_after<1.0e-14)=False, zero_misaligned=False, all_periods_even=False, H_kd_after=1.1476977330246578e+00, misaligned=32
+PASS: S1 three-way coincidence for (3, 4, 4) -- (real H_kd_after<1.0e-14)=False, zero_misaligned=False, all_periods_even=False, H_kd_after=2.6389342991774600e+00, misaligned=32
+PASS: S1 three-way coincidence for (6, 6, 4) -- (real H_kd_after<1.0e-14)=True, zero_misaligned=True, all_periods_even=True, H_kd_after=0.0000000000000000e+00, misaligned=0
+PASS: S1 three-way coincidence for (5, 6, 4) -- (real H_kd_after<1.0e-14)=False, zero_misaligned=False, all_periods_even=False, H_kd_after=6.4271141355526795e-01, misaligned=72
+
+S2 witnesses:
+  all-even: all_even_cube periods=(4, 4, 4): no real misaligned H_kd survivor; H_kd_after=0.0000000000000000e+00
+  one-odd: one_odd_middle periods=(4, 5, 4): keep=(0, 4, 0) drop=(2, 1, 2) delta=(2, 2, 2) raw_parity=(0, 1, 0) periodic_parity=(0, 0, 0) d2=12 magnitude=1.1476977330246578e+00 H_kd_after=1.1476977330246578e+00
+PASS: S2 one-odd witness magnitude equals real H_kd_after -- witness_magnitude=1.1476977330246578, H_kd_after=1.1476977330246578e+00, tol=1.0e-14
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

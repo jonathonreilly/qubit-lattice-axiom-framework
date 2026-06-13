@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_p1_collapses_frame_residuals_note_2026-06-01"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_p1_collapses_frame_residuals_note_2026-06-01",
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
         "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
         "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
         "signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11",
-        "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29"
+        "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
+        "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "829ac39a36bc84e8252fccdc63e196ec0bd145babdc2a03627d5b38b1eb07b81",
+      "note_hash": "ec37e0748c77c7027543b2bece6680ac98ae4ec02e961141cf8d107ce1a4304e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

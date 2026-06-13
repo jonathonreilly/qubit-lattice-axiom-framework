@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 885 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1401 |
+| unaudited | 1400 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1339 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1718 |
+| `unaudited` | 1717 |
 
 | claim_type | count |
 |---|---:|
@@ -105,11 +105,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1037 | 64.02 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1396 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
-| 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
+| 5 | `key_terminology` | meta | critical | 1282 | 50.33 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1073 | 49.57 | `unaudited` | meta |
 | 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
-| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 928 | 44.36 | `unaudited` | unaudited |
+| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 928 | 43.36 | `unaudited` | unaudited |
 | 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
@@ -117,9 +117,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1272 | 38.81 | `audited_clean` | **retained_bounded** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 737 | 38.03 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1362 | 36.91 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1138 | 36.15 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 929 | 34.86 | `unaudited` | unaudited |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1363 | 36.91 | `audited_clean` | **retained** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1139 | 36.16 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 930 | 34.86 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 728 | 33.01 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 725 | 31.50 | `unaudited` | unaudited |
@@ -1510,6 +1510,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_taste_cube_cyclic_source_descent_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lepton_block_d12_prime_matching_no_go_note_2026-05-10` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -14143,6 +14144,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For each seed, the free-stage packet was compressed to its top-5 support bins and relaunched on the same ordered-lattice family, producing high relaunch carry overlaps on the fixed h=0.5, W=8, L=12 harness.  _(class `C`)_
 - **chain closes:** True — The runner instantiates the ordered-lattice propagation, constructs the packets, reidentifies top-k detector support, relaunches the surrogate, and computes the reported overlaps and centroid shifts. The note does not claim persistent mass, family-genericity, or a closed inertial-response theorem.
 - **rationale:** The load-bearing result is a first-principles numerical computation on the fixed retained ordered-lattice harness, not a definition, renaming, external comparator, or hard-coded numerical replay. The primary runner and helper source compute the lattice propagation and reported metrics directly from the stated parameters. The conclusion is appropriately bounded to support/compression control and explicitly denies persistent-mass or family-generic claims.
+- **auditor confidence:** high
+
+### `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`
+
+- **Note:** [`P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the conditional composer: IF the FSB-K row retains with its quantifier and FSB-CL intact, then using the retained (Z) certificate, the finite-g_eff criterion selects K1/phi=-1 over K0 within the stated two-class kinetic surface; no current-grade selection is established.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-024727-6b835c55b4-p_flux_selection_via_fsb_k_a`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If FSB-K is retained with its realized-kernel quantifier and FSB-CL intact, then applying it through the retained Z-K1/Z-K0 geometry certificate makes finite g_eff hold for K1 and fail for K0, so the finite-species-density requirement selects the flux -1 kernel within the two-class surface.  _(class `C`)_
+- **chain closes:** False — The conditional inference and the discriminating computations close on the stated assumptions, including the independent SB coefficient/scaling check. The effective selection does not close at current grades because C1, the FSB-K retained-grade premise, is explicitly open in the source note and runner rationale.
+- **rationale:** The runner source is substantive: it rebuilds the two kernels, recomputes fluxes, zero counts, mode-sum g_eff behavior, falsification legs, and the label-free selection pipeline rather than merely printing expected constants. The core math is consistent: the Fermi integral gives 7*pi^2/240, eight V=2I cones give sum |det V|^-1 = 1 per site, and rescaling by h/2 gives the factor 8 central-difference plateau. However the row is deliberately conditional on FSB-K reaching retained grade with its quantifier and FSB-CL intact, so the audit cannot return a current clean selection.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`
 - **auditor confidence:** high
 
 ### `packet_memory_note`

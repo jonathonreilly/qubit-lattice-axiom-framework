@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 887 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1395 |
+| unaudited | 1394 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -63,28 +63,28 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1341 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1712 |
+| `unaudited` | 1711 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1607 |
+| `bounded_theorem` | 1608 |
 | `decoration` | 51 |
 | `meta` | 325 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
-| `positive_theorem` | 779 |
+| `positive_theorem` | 778 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 878 |
-| `leaf` | 1342 |
+| `medium` | 877 |
+| `leaf` | 1343 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 728 | 33.01 | `unaudited` | unaudited |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 725 | 31.50 | `unaudited` | unaudited |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 856 | 31.24 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 855 | 31.24 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 186 | 31.05 | `audited_clean` | **retained** |
 | 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 327 | 30.86 | `unaudited` | unaudited |
 
@@ -1530,6 +1530,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `spin_statistics_fs_admission_located_exercise_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -18308,6 +18309,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
   - `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
+- **auditor confidence:** high
+
+### `staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow theorem on Quantum + Lattice plus the substep-1 single-mode Grassmann clause: the specific 2-component naive rival D_2c = sum_mu sigma_mu tensor nabla_mu requires two Grassmann pairs per site and is excluded on the same site set by the CAR(2) versus M_2(C) dimension obstruction; other one-mode-compatible kinetic forms remain open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-030539-980c25ccac-staggered_dirac_kinetic_clas`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The two-mode CAR algebra is M_4(C), simple, so any nonzero *-homomorphism M_4(C) -> M_2(C) is injective and would require dim M_4(C)=16 <= dim M_2(C)=4, impossible.  _(class `C`)_
+- **chain closes:** False — The finite-dimensional obstruction closes on the stated premise: CAR(2)=M_4(C), M_4(C) is simple, no nonzero *-homomorphism into M_2(C) exists, and the same-site global CAR(2N) dimension is too large. The retained-grade audit chain does not fully close because the realization-gate note supplying the check-18 target and residual context is marked unaudited, and the substep-1 single-mode surface is explicitly bounded/conditional.
+- **rationale:** The CAR obstruction is a genuine first-principles finite-dimensional computation from the Pauli/Jordan-Wigner and lattice objects, not a renaming or tuned numerical match. Independent dimension checks agree with the runner: two modes give M_4(C) of dimension 16, the one-qubit per-site algebra is M_2(C) of dimension 4, and an injective nonzero *-homomorphism cannot exist. The verdict is conditional because a load-bearing cited authority, the realization-gate note identifying the check-18 rival and residual being narrowed, is explicitly unaudited in the packet.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`

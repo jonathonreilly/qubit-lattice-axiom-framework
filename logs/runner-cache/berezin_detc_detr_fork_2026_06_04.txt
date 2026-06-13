@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/berezin_detc_detr_fork_2026_06_04.py
-runner_sha256: e885284796c93acb375ef35be6415e0ecfa93c3e55ff1a75f3ff3b3a36ef19fc
+runner_sha256: 49bae785b2ab86723961e5868cf0c816dfe835fe228e2d37462a824fc1555620
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 ========================================================================
@@ -34,9 +34,25 @@ PASS holo_berezin_cell
 PASS statistics_row_not_decisive_in_tested_cells
 PASS polarization_column_decisive_in_tested_cells
 PASS real_reflection_flips_J
+------------------------------------------------------------------------
+2026-06-13 downstream drain checks
+------------------------------------------------------------------------
+PASS downstream_commutant_is_span_I_J :: Z3-commutant on the doublet is two dimensional
+PASS downstream_compatible_complex_structures_are_pm_J :: [{u: 0, v: -1}, {u: 0, v: 1}]
+PASS downstream_quaternionic_polarization_impossible
+PASS downstream_K_orbit_partition_e1_e2
+PASS downstream_orbit_quotient_equals_complex_slot_quotient
+PASS downstream_phase_resolved_record_readout_excluded_by_orbits :: sector-resolved assignment is not a function on the K orbit
+PASS downstream_degree_one_and_two_both_factor_through_orbit :: orbit granularity does not select the slot degree
+PASS downstream_record_axiom_declines_weighting_and_occupancy :: checked live MINIMAL_AXIOMS_2026-06-05.md text
+PASS downstream_two_consistent_occupancy_weights_exact :: sector=2*pi/g, orbit=pi/g
+PASS downstream_occupancy_factor_is_two
+PASS downstream_orientation_matches_landed_cells :: sector=(1, 1), orbit=(1/2, 2/3)
+PASS downstream_bounded_note_records_independence_not_adoption :: claim_type=True, independence=True, not_adopted=True
 No-go discipline disposition: broad negative demoted; N1 had four routes, not five.
+Downstream disposition: fork reduced to the explicit occupancy/slot-degree atom; no selector closure claimed.
 ========================================================================
-SCORECARD: PASS=24 FAIL=0
+SCORECARD: PASS=36 FAIL=0
 ========================================================================
 
 ----- stderr -----

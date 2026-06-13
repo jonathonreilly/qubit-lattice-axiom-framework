@@ -72,3 +72,36 @@ the readout functional factors through the doublet complex-slot quotient.
 The safe downstream use is narrow: this note may be cited to say that the
 tested action-side fork separates polarization from statistics. It may not be
 cited as a closed no-go against all future `r = 1/2` derivations.
+
+## 2026-06-13 Downstream Drain: the Open Route Is Now One Occupancy Atom
+
+This source note originally left two positive routes open:
+
+1. derive a native polarization selector; or
+2. show that the readout functional factors through the doublet complex-slot
+   quotient.
+
+The later bounded theorem
+[`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+does not adopt a new premise and does not derive `r = 1/2`, but it changes the
+source-side shape of this row in a useful way. Its runner re-derives the fork
+cells from explicit finite integrals, checks the K/CPT orbit partition
+`{e_0}, {e_1,e_2}`, checks that the orbit quotient is exactly the
+`R (+) C` complex-slot quotient, and exhibits two consistent models whose only
+difference is the doublet occupancy/weight rule.
+
+So the fork is no longer an unstructured "Berezin statistics might select
+`det_C`" gate. The current source-side boundary is:
+
+- statistics alone still does not choose the horn;
+- the relevant quotient is the record-orbit / complex-slot quotient;
+- both the sector occupancy model (`Z_d = 2 pi/g`, `r = 1`) and the orbit
+  occupancy model (`Z_d = pi/g`, `r = 1/2`) satisfy the checked current surface;
+- the unresolved atom is exactly the occupancy/slot-degree rule, which the
+  Record axiom explicitly declines to supply.
+
+This is a repair of the open-gate provenance, not a status edit. The safe
+re-audit question for this row is now whether the original four-cell fork should
+be consumed as bounded mechanism support under the downstream occupancy
+independence theorem, with the live positive science moved to the explicit
+orbit-occupancy premise/derivation lane.

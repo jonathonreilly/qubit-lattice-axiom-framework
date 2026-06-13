@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 855 |
+| **retained_bounded** | 856 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1450 |
+| unaudited | 1449 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1305 |
+| `audited_clean` | 1306 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1767 |
+| `unaudited` | 1766 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 873 |
-| `leaf` | 1347 |
+| `medium` | 874 |
+| `leaf` | 1346 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -278,6 +278,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_color_automorphism_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
@@ -3713,6 +3714,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The determinant and grade-action identities follow by direct 2x2 matrix algebra once the retained upstream Cl(3,0)≅M_2(C) Pauli realisation is admitted. The lattice-readout statement is only a negative boundary disclaimer, not a claimed closure.
 - **rationale:** The proof is a genuine class-A algebraic check over the retained one-hop Cl(3) complexification/split authority plus standard 2x2 matrix algebra. The runner source actually computes symbolic and exact rational matrix identities and does not import PDG values, fitted constants, or hidden numerical comparators. Under the rubric tie-breaker, because the audit has only algebraic checks, zero external comparator checks, and reduces to one upstream retained parent plus standard mathematics, the terminal verdict is audited_decoration rather than audited_clean.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure algebraic projector, rank, trace, spectrum, |111> placement, and antisymmetric-eigenspace facts for Y=(+1/3)P_symm+(-1)P_antisymm on C^8=(C^2)^{otimes 3} under the b1<->b2 swap; no physical SM hypercharge identification audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-000722-5bc703290b-cl3_hypercharge_eigenvalue_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because Im(P_symm) and Im(P_antisymm) are complementary orthogonal projector images of ranks 6 and 2, Y acts as +1/3 on Im(P_symm) and -1 on Im(P_antisymm), so spec(Y) = {+1/3 with multiplicity 6, -1 with multiplicity 2}.  _(class `A`)_
+- **chain closes:** True — The swap action decomposes the explicit 8D basis into a 6D +1 eigenspace and a 2D -1 eigenspace; the stated projector and Y identities then follow by standard finite-dimensional linear algebra. The deferred physical-carrier and physical-hypercharge bridges are explicitly outside the audited claim scope.
+- **rationale:** An independent check of the displayed algebra gives four fixed b1=b2 states plus two symmetric b1!=b2 combinations, hence rank(P_symm)=6 and rank(P_antisymm)=2; the two antisymmetric combinations give the full Y=-1 eigenspace, while |111> is fixed by the swap and carries Y=+1/3. The runner source constructs the explicit 8x8 matrices and computes exact rational projector, trace, eigenvalue, and vector-action checks; it does not merely print constants or import the contested spectrum. The one-hop cited authorities are supplied as retained_bounded, and the note does not use their deferred physical-identification language as a premise for the audited algebraic theorem.
 - **auditor confidence:** high
 
 ### `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26`

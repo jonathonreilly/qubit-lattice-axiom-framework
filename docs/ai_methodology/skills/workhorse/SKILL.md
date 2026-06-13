@@ -17,6 +17,11 @@ coordination protocol, not a physics authority and not an audit lane.
 
 ## Execution Split
 
+The supervising agent is the model running the current chat session — whichever
+Claude model is driving the conversation (e.g. Fable, or the strongest available
+Claude model at the time). It is not a separately pinned or named model; it
+follows the in-chat model.
+
 Use the strongest configured text reasoning worker available through the local
 `codex exec` setup for bounded execution. If a named preferred worker profile is
 unavailable, do not substitute an image, visual-generation, document-rendering,

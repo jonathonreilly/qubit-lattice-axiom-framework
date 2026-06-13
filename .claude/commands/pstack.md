@@ -141,7 +141,7 @@ Print this index when invoked. Ask the user which skill to run.
 ## Execution Mechanism (standing — 2026-06-12)
 
 All execution under this command runs through the workhorse split (see the
-`workhorse` skill): Fable plans, writes specs, reviews every diff
+`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
 line-by-line, and lands; the strongest configured text worker via `codex exec`
 executes bounded note/runner drafting, scratch computation, structured
 extraction, and panel lens execution (lenses run `-s read-only`; verdict

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 862 |
+| **retained_bounded** | 863 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1438 |
+| unaudited | 1437 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1313 |
+| `audited_clean` | 1314 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1755 |
+| `unaudited` | 1754 |
 
 | claim_type | count |
 |---|---:|
@@ -421,6 +421,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5898,6 +5899,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The current approved axiom/primitive baseline supplies no weighting or physical observable bridge, so kappa_EW is not derivable from that baseline alone.  _(class `A`)_
 - **chain closes:** True — The Record and Quantum premise text withholds weighting/readout context and physical-observable bridges, and the approved primitive inventory grants only units conversion and structural kinetic isotropy. The displayed count-versus-weight and common-factor checks do not select kappa_EW, so the narrow baseline-only no-go closes.
 - **rationale:** The load-bearing step is a logical/algebraic boundary check over accepted premise content and registry state, not a fitted comparator or a definition of kappa_EW. The quantitative inventory checks independently: 8/9 = (3^2 - 1)/3^2, Pi(1) - Pi(0) = S leaves the inter-sector coefficient free, and a common K_EW factor cancels from g1^2/(g1^2 + g2^2). The no-go discipline gate is satisfied for the narrow residual because the note explicitly leaves selector, convention, derivation, and owner-approved admission routes open.
+- **auditor confidence:** high
+
+### `exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`EXACT_FIXED_ENERGY_SCHUR_DECIMATION_FREE_CHAIN_FORM_MIGRATION_ONE_STEP_MAP_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/EXACT_FIXED_ENERGY_SCHUR_DECIMATION_FREE_CHAIN_FORM_MIGRATION_ONE_STEP_MAP_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite periodic free 1D one-color staggered nearest-neighbor chain on the E=0 slice with m != 0; odd-sublattice Schur downfolding, retained-resolvent invariance, migrated uniform+NN form, and bounded diagnostics, with m=0 treated only as a projected/regulator diagnostic and no RG/rescaling claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-004358-997f7b3301-exact_fixed_energy_schur_dec`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At E=0 and m != 0, because h_oo=-mI, the Schur complement h_eff=h_ee-h_eo h_oo^{-1} h_oe has uniform diagonal m+2t^2/m, coarse nearest-neighbor entries t^2/m, zero staggered mass, and no beyond-NN terms.  _(class `A`)_
+- **chain closes:** True — The block calculation gives h_oo-E=-mI, so the Schur correction adds (1/m) times the two-hop even-to-even path matrix: 2t^2/m on-site and t^2/m on adjacent coarse sites, with no longer paths. The retained-resolvent identity and the two-step/direct-by-four consistency are standard Schur-complement algebra within the stated finite free-chain scope.
+- **rationale:** The runner source constructs the finite Hamiltonian, computes Schur complements and resolvents, and checks nontrivial controls; it is not a constant-printing runner. The disjoint-grid language is numerical corroboration rather than the symbolic source of the formula, but the displayed coefficients and signs close by direct block algebra from the matrix in the packet. No cited authority, primitive import, open bridge, or external comparator is needed for this bounded free-chain statement, and the m=0 singular case is not used as part of the m != 0 theorem.
 - **auditor confidence:** high
 
 ### `exponent_derivation`

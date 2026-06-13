@@ -157,6 +157,18 @@ def main() -> int:
         in target,
     )
     gate.check(
+        "target declares open-gate demotion/status-correction source type",
+        "**Claim type:** open_gate." in target
+        and "**Type:** demotion / status-correction packet." in target,
+    )
+    gate.check(
+        "target has source-correction audit firewall",
+        "## 2026-06-12 audit firewall: source correction only" in target
+        and "does not add a new axiom, Tier-A admission, external\ncomparator, or audit status" in target
+        and "future bridge remains open" in target
+        and "does not set downstream\neffective status" in target,
+    )
+    gate.check(
         "target has dated 2026-06-12 repair section",
         "## 7. 2026-06-12 authority repair" in target,
     )

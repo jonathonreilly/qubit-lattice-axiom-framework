@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py
-runner_sha256: 79d5da0ddce1619ea58ff2d1e54cb5b62010f29e7daeab41bd73fd62a956375b
+runner_sha256: ee7dba68486df40fb17ab9754a21d9b4ff92f66edcc97271b503f585dd48d4c8
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.59
@@ -40,6 +40,12 @@ PASS: [SUPPORT] the spatial-environment underdetermination note records that the
       the listed finite witness surface leaves the beta-side vector open
 PASS: [SUPPORT] the local-Wilson obstruction note already rules out the local-Wilson shortcut on the three-sample seam
       the unresolved route cannot be closed by reusing the local Wilson triple alone
+PASS: [SUPPORT] source note declares finite-surface no_go with open physical-stack bridge
+      claim metadata is finite-surface only, not a beta=6 Wilson/Haar closure
+PASS: [SUPPORT] source note firewalls actual beta=6 Wilson/Haar exhaustiveness
+      the runner surface cannot be read as exhaustive for the physical stack
+PASS: [SUPPORT] source note introduces no retained beta=6 surface claim or audit status
+      independent audit remains the only status authority
 PASS: [THEOREM] the universal three-sample operator restricts exactly to the radical first symmetric matrix F
       rank(F)=3, max restriction error=4.777e-15
 PASS: [THEOREM] the explicit row-operator implementation reproduces direct character evaluation on a generic class-sector test vector
@@ -51,7 +57,7 @@ PASS: [THEOREM] the same universal left operator sends those two admissible norm
 PASS: [THEOREM] therefore the listed finite structural surface does not determine Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C): even the normalized triple is not unique on that surface
       the formal route is one common beta-side vector hit by a fixed three-row operator, and the listed finite surface does not determine that vector
 
-TOTAL: PASS=10, FAIL=0
+TOTAL: PASS=13, FAIL=0
 
 ----- stderr -----
 

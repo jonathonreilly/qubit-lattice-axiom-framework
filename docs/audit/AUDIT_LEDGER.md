@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 861 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1441 |
+| unaudited | 1440 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1311 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1758 |
+| `unaudited` | 1757 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 878 |
-| `leaf` | 1342 |
+| `medium` | 879 |
+| `leaf` | 1341 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -1478,6 +1478,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15780,6 +15781,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For each sampled dial distribution pi(s)=(1,s,s^2)/(1+s+s^2) at s=1,2,3, the supplied complete-graph reversible generator Q(s) satisfies Q(s) pi(s)=0 with one zero eigenmode and negative transverse modes.  _(class `A`)_
 - **chain closes:** True — The displayed generator construction algebraically gives nonnegative off-diagonal rates, zero column sums, stationarity of pi, and stable transverse modes for the three sampled dial values. Rate scaling and the two-state semigroup example also close as dimensionless algebraic checks.
 - **rationale:** The claim is explicitly scoped to supplied generators and sampled dial locations, not to a derived physical generator or Record-selected dial value. Independently, Q pi=0 follows because each column j has off-diagonal entries 1/pi_j and diagonal minus their sum, and the reversible symmetric form has one stationary mode with negative transverse modes. The count/probability separation and clock/rate quotient checks are ordinary finite algebra, with no external comparator or tuned numerical input.
+- **auditor confidence:** high
+
+### `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite, code-defined L=3,4,5 ring diagnostic under the specified seeds, selectors, eps=0.6, tau=0.35, carrier, rank guard, and seeded 300-draw permutation-null protocol.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-003442-f618fe3c1d-record_conditional_law_three`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner-computed min-gain ledger for L=3,4,5 shows L=4 uniformly clear gains, but L=5 has 4/6 clear and 2/6 marginal gains, 5/6 seeded-null positivity, and non-monotone gap medians, so there is no systematic period strengthening in the tested finite series.  _(class `C`)_
+- **chain closes:** False — The arithmetic ledger is internally consistent with the completed runner output, and the runner source performs an actual sparse finite-state computation rather than printing constants. The restricted packet does not close the imported Born/readout chain, supplied C^3 carrier, named instrument and hopping parameters, selector protocol, or physical record-conditional interpretation from retained inputs or approved primitives.
+- **rationale:** The runner genuinely builds the finite fermionic operators and computes the displayed profiles, min-gains, seeded-null gaps, and medians; the displayed ledger checks arithmetically against stdout. However, the source note explicitly inherits conditional premises and modeling choices not supplied as retained one-hop authorities in this restricted packet. The primitive-registry excerpt does not supply those missing dynamics, readout, carrier, selector, probability, or parameter choices. The finite diagnostic is therefore credible only conditional on the unstated/imported framework setup.
 - **auditor confidence:** high
 
 ### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`

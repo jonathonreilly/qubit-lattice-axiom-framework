@@ -114,7 +114,38 @@ is honest.
 The 259 transitive descendants under `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30`
 should treat the α_s(M_Z) value as a **bounded support input with admitted
 Sommer-scale and QCD-running-bridge corrections**, not as a retained-grade
-zero-input derivation.
+zero-input derivation. Equivalently, downstream rows may cite the value only
+as bounded support input, not as a retained-grade zero-input derivation.
+
+### Downstream source-boundary firewall
+
+Allowed downstream uses of this packet are limited to:
+
+- cite the Wilson-loop/static-potential certificate as a reproducible
+  bounded-support extraction on the stated gauge surface;
+- cite the decoration-trap avoidance check that the `alpha_LM/u0` chain is
+  not used as authority;
+- cite the status correction itself: the broad physical α_s(M_Z) promotion
+  route remains open until its named bridges are supplied.
+
+Forbidden downstream uses without new retained bridge theorems:
+
+- do not cite this packet as a framework-derived Sommer scale;
+- do not cite this packet as a framework-native 4-loop QCD running and
+  threshold-matching bridge;
+- do not cite this packet as a pure-gauge-to-full-QCD sea-quark transfer;
+- do not cite this packet as a retained alpha_s(M_Z) theorem or as a retained
+  zero-input physical prediction;
+- do not use PDG agreement as proof of framework derivation;
+- do not use this packet to close the current axiom-surface normalization
+  dependency.
+
+The broad physical α_s(M_Z) lane can be re-audited only after retained bridge
+theorems supply Sommer scale setting, QCD running/threshold matching,
+pure-gauge-to-full-QCD sea-quark transfer, and current axiom-surface
+normalization. Until then, the runner's numerical PASS result is a
+bounded-support certificate plus a source-boundary guard, not a promotion
+certificate. In short, this is not a promotion certificate.
 
 ## 7. Cross-references
 

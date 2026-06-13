@@ -1,0 +1,28 @@
+loop_slug: alpha-s-direct-open-gate-firewall-20260613
+goal: "Repair the alpha_s direct Wilson-loop open-gate row by making its downstream source boundary explicit and executable."
+target_claim_id: alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02
+base_commit: ed41d2b2a
+branch: physics-loop/alpha-s-direct-open-gate-firewall-20260613
+actual_current_surface_status: open
+conditional_surface_status: bounded-support
+hypothetical_axiom_status: null
+admitted_observation_status: "Sommer scale in physical units and standard QCD running/threshold matching remain admitted external bridges."
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: source-boundary-runner-guard
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md
+  - scripts/frontier_alpha_s_direct_wilson_loop.py
+  - logs/runner-cache/frontier_alpha_s_direct_wilson_loop.txt
+open_imports:
+  - framework-derived Sommer scale setting
+  - framework-native QCD running and threshold matching
+  - pure-gauge-to-full-QCD sea-quark transfer
+  - current axiom-surface normalization
+runner_status: "PASS=20 FAIL=0"
+review_disposition: pass
+next_exact_action: "Open review PR; reviewer/auditor can decide whether the open-gate row is now adequately firewalled for downstream use."
+stop_condition: "Source-side repair packaged for review; no audit ledger/result files edited."

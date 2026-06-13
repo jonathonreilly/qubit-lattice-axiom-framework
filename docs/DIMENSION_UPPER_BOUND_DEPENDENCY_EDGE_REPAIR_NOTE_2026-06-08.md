@@ -8,7 +8,10 @@ direct_effective_status_change_allowed_from_this_note: false
 # Dimension Upper-Bound Dependency-Edge Repair Note
 
 **Date:** 2026-06-08
-**Type:** bounded theorem / source dependency repair
+**Type:** `bounded_theorem`
+**Source role:** bounded source-graph dependency-edge repair only. This file is
+not the parent dimension-selection theorem, not a `positive_theorem`, and not
+an effective-status promotion vehicle.
 **Primary runner:**
 [`scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py`](../scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py)
 **Cached runner output:**
@@ -18,6 +21,10 @@ direct_effective_status_change_allowed_from_this_note: false
 
 This note repairs the source-side dependency edge for
 `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`.
+The source claim audited here is only the wrapper's dependency graph and exact
+finite-set composition; a full audit of the parent dimension-selection theorem
+must be run on the parent theorem's own scope, not inferred from this repair
+note.
 The previous wrapper recorded Bertrand and atomic-stability results as named
 textbook imports, but the current source surface exposes the available
 one-hop bounded support packets as load-bearing authorities. The decisive
@@ -61,6 +68,8 @@ This repair does not:
 - derive atomic stability from the framework;
 - derive a framework-native electromagnetic sector or hydrogenic spectrum;
 - derive a `Z^d` substrate from the present `Z^3` substrate;
+- serve as the parent dimension-selection theorem;
+- ask the audit lane to treat this row as a `positive_theorem`;
 - promote any dimension-selection row or apply an audit verdict;
 - edit `docs/audit/**`.
 
@@ -72,6 +81,8 @@ textbook-import edge.
 
 The runner verifies:
 
+- the visible source type is the canonical `bounded_theorem` enum while the
+  prose role is bounded source-graph repair only;
 - this note cites the wrapper, the one-hop support packets, their runners, and
   their cached outputs;
 - the wrapper cites this repair note and the support packets;
@@ -82,13 +93,13 @@ The runner verifies:
 Expected output:
 
 ```text
-SUMMARY: PASS=48 FAIL=0
+SUMMARY: PASS=51 FAIL=0
 ```
 
 ## Status Certificate
 
 ```yaml
-actual_current_surface_status: exact-support
+actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
 conditional_surface_status: "dependency-edge repair for the dimension upper-bound wrapper"

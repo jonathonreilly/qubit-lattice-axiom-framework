@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py
-runner_sha256: 74ac3b4f2fe198c094fa4cd532e947f0330bcbb3c9081291f3b0957112d0d3b2
+runner_sha256: ab46416d5fec36f28fb9be6348c5c66b3e578dd95579829e5a95ceac25328684
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Dimension upper-bound dependency-edge repair
@@ -35,6 +35,9 @@ PASS wrapper cites docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-2
 PASS wrapper cites docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md
 PASS wrapper cites docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md
 PASS repair note states source-only boundary
+PASS repair note visible type is canonical bounded_theorem
+PASS repair note is not the parent dimension-selection theorem
+PASS repair note certificate is bounded-support, not exact-support
 PASS wrapper has 2026-06-08 repair section
 PASS wrapper records native stable-orbit import retirement
 PASS lower note remains finite lower-bound support
@@ -58,7 +61,7 @@ PASS Coulomb cache certifies PASS=53 FAIL=0
 PASS D3 gate cache certifies PASS=34 FAIL=0
 ========================================================================
 AUDIT_VERDICT_APPLIED=FALSE
-SUMMARY: PASS=48 FAIL=0
+SUMMARY: PASS=51 FAIL=0
 
 ----- stderr -----
 

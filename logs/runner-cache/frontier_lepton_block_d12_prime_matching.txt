@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lepton_block_d12_prime_matching.py
-runner_sha256: bb3531f1deb919a1ed6c8d7055dc0458fca56c9dde67c8f2b78067ab75cc1350
+runner_sha256: 29c1319543f79427a410020199a1183e7c2718557f803a95e11cec5fb0a6ec6f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.41
 status: ok
 ----- stdout -----
 
@@ -23,8 +23,8 @@ Formal lepton analogy is conditional
 ----------------------------------------------------------------------------------------
 Current source-surface bridge check
 ----------------------------------------------------------------------------------------
-  [PASS] YUKAWA_COLOR_PROJECTION_THEOREM.md exists  (/private/tmp/cl3-conditional-drain-block02-20260612/docs/YUKAWA_COLOR_PROJECTION_THEOREM.md)
-  [PASS] YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists  (/private/tmp/cl3-conditional-drain-block02-20260612/docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
+  [PASS] YUKAWA_COLOR_PROJECTION_THEOREM.md exists  (docs/YUKAWA_COLOR_PROJECTION_THEOREM.md)
+  [PASS] YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists  (docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
   [PASS] YT Ward source defines the current Q_L scalar-singlet operator  (this is the quark/top scalar-operator authority; it is not a lepton bridge)
   [PASS] YUKAWA color-projection source is only a channel-fraction theorem  (runner no longer treats YUKAWA_COLOR_PROJECTION_THEOREM as a scalar-operator authority)
   [PASS] current cited sources do not define a lepton-composite scalar bridge  (absence is a current-source open gate, not an impossibility theorem)

@@ -63,3 +63,20 @@ The paired runner verifies:
   bridge;
 - the result remains an open gate, not a retained-grade no-go or mass
   prediction.
+
+## 2026-06-12 runner-cache refresh for re-audit
+
+The audited-conditional re-audit note asked for this runner/cache to be
+refreshed against the current cited authorities, or for the quark-scalar
+premise to be routed explicitly to
+[`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md).
+This source note now makes that routing load-bearing: the current YT Ward
+source supplies `H_unit` as the scalar-singlet bilinear on the `Q_L` block,
+while the current YUKAWA color-projection source remains a non-physical
+channel-fraction boundary. The lepton side remains blocked on a missing
+physical lepton-composite scalar bridge.
+
+The paired runner now reports cited source paths relative to the repo root
+instead of embedding a temporary worktree path in the cache. This refresh is a
+runner-artifact repair only. It does not change this row's status, close
+Lane 6, predict a lepton Yukawa, or claim a retained-grade no-go.

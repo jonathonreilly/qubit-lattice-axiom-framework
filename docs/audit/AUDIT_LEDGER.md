@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 856 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1449 |
+| unaudited | 1448 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1306 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1766 |
+| `unaudited` | 1765 |
 
 | claim_type | count |
 |---|---:|
@@ -1454,6 +1454,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7661,6 +7662,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In temporal gauge the mixed plaquette holonomy reduces linkwise to U_(tau+1)(x,mu) U_tau(x,mu)^-1, so the mixed kernel is a product over spatial links and Schur orthogonality gives convolution eigenvalue c_lambda(beta)/d_lambda on each matrix coefficient.  _(class `A`)_
 - **chain closes:** True — The temporal-gauge plaquette reduction and product Haar measure give the tensor product kernel, and compact-group Schur orthogonality gives the stated c_lambda/d_lambda factor. The marked-link formula follows by applying the per-link identity to the fixed Peter-Weyl tensor factors and the trivial character on unmarked links.
 - **rationale:** The load-bearing mathematics is compact-group convolution algebra plus the temporal-gauge Wilson plaquette identity, not a numerical comparator, renaming, or imported framework-specific premise. Independent inspection of the displayed formulas confirms the c_lambda/d_lambda normalization, the a_0=1 trivial-channel normalization, and the c_0 contribution from unmarked links. The runner performs finite-group Z_N checks consistent with the algebra and does not import SU(3), beta=6, PDG data, or a downstream marked-plaquette premise.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite beta=6 tensor-word reread at tensor NMAX=4, MODE_MAX=80 and source NMAX=7, MODE_MAX=200, auditing the matrix-element adjacent-word contraction and unit-vector boundary readout only.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-000901-24d06f8d03-gauge_vacuum_plaquette_adjac`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The shared-link Haar identity gives the adjacent bond b(lambda_i, lambda_(i+1)) = delta(lambda_i, lambda_(i+1)) / d_(lambda_i), and the cited finite packet's boundary0 = e_(0,0) forces the trivial-slice readout rather than an all-label marginal.  _(class `A`)_
+- **chain closes:** True — The Schur/Peter-Weyl contraction independently gives the inverse-dimension factor, and boundary0 algebraically fixes unmarked word slots to the trivial channel. No cited authority supplies the marginal/counit readout, and the full rim-boundary eta remains explicitly outside scope.
+- **rationale:** The bounded mathematical chain closes: equation (5) correctly yields delta/d for a shared inverse-oriented matrix-element link, and the finite packet's e_(0,0) boundary vector selects the trivial-slice readout. The no-go language is scoped to the finite-packet marginal-branch negative and preserves the full rim-boundary eta route as a residual. However, the source note's Verification block still expects `TOTAL: PASS=25, FAIL=0`, while the included runner/cache and source report `TOTAL: PASS=28, FAIL=0` after the reviewer checks; this stale displayed runner certificate blocks a clean verdict under the strict inventory rule.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`

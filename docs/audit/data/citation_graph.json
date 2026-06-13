@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "d3_upper_bound_import_scope_gate_note_2026-06-06"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
         "d3_upper_bound_import_scope_gate_note_2026-06-06",
         "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
         "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
         "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
-        "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
+        "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12",
+        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b2a98d63fb3531c1036932d2a98086e86400eb5761a77d77606a87f658418bdb",
+      "note_hash": "4b3b8bd28faf409c3e073585ce69dc4678820e424b6972fb532eef25557d8bf7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

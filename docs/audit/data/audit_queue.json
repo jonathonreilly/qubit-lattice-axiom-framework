@@ -3,7 +3,7 @@
     "critical": 278,
     "high": 285,
     "leaf": 469,
-    "medium": 422
+    "medium": 421
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -17115,7 +17115,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "d3_upper_bound_import_scope_gate_note_2026-06-06",
+      "claim_id": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -17123,18 +17123,20 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "dimension_selection_note",
-        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-        "coulomb_stability_upper_bound_support_note_2026-05-20"
+        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
+        "minimal_axioms",
+        "strong_cp_theta_zero_note",
+        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
       ],
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 6.392,
-      "note_path": "docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md",
+      "note_path": "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py",
+      "runner_path": "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py",
       "transitive_descendants": 20
     },
     {
@@ -17282,34 +17284,6 @@
       "ready": true,
       "runner_path": "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py",
       "transitive_descendants": 18
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
-        "minimal_axioms",
-        "strong_cp_theta_zero_note",
-        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.822,
-      "note_path": "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py",
-      "transitive_descendants": 4
     },
     {
       "audit_independence_required": "any_non_self",
@@ -30219,6 +30193,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
+        "coulomb_stability_upper_bound_support_note_2026-05-20",
+        "d3_upper_bound_import_scope_gate_note_2026-06-06"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.5,
+      "note_path": "docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py",
+      "transitive_descendants": 3
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -31731,32 +31731,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_chiral_3plus1d_decoherence_sweep.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-        "coulomb_stability_upper_bound_support_note_2026-05-20",
-        "d3_upper_bound_import_scope_gate_note_2026-06-06"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py",
       "transitive_descendants": 3
     },
     {
@@ -43827,5 +43801,5 @@
     }
   ],
   "ready_count": 57,
-  "total_pending": 1454
+  "total_pending": 1453
 }

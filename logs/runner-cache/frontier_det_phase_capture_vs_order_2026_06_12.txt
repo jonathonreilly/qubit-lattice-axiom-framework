@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/frontier_det_phase_capture_vs_order_2026_06_12.py
+runner_sha256: af6e659a3afb229e8a515d16ab4c31a445bd7e0c75736d6def562bf40c75023b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+[PASS] ANCHOR reproduction: L=3, K in {3,4,5,6}, K=5 seeds 4242/99, tau=0.35, T=256, and three single-particle gaps are installed
+       N_sp=9, gap frequencies=0.350000000000, 0.595000000000, 0.945000000000
+[PASS] finite-lattice wraparound/size probe: an L=3 block wraps once and has three distinct sites
+       wrap block from 8: [8, 0, 1], rows=[0, 1, 2], cols=[3, 4, 5]
+[PASS] exact single-particle route is dense Hermitian/unitary to numerical precision
+       ||h-h*||=0.000e+00, ||u*u-I||=6.087e-15
+T2a exact-tone set sizes:
+  |W_1| = 7
+  |W_2| = 19
+  |W_3| = 37
+  |W_4| = 61
+  |W_5| = 91
+  |W_6| = 127
+  |W_7| = 169
+  |W_8| = 217
+[PASS] T2a sparse exact-tone claim: |W_8| < 256 and W_o is nested for o=1..8
+       |W_8|=217
+[PASS] exact-tone projection basis spans the deduplicated W_8 tones without binning
+       orthonormal columns=217, raw |W_8|=217, max W_8 basis residual=2.281e-14
+[PASS] rank floor: every realized M(t) block has sigma_min > 1e-8
+       minimum sigma_min over states and t = 7.454e-03
+[PASS] anti-fabrication nonzero gate: every realized det-phase increment sequence is not the zero signal
+       min increment energy=7.850200438535e+01, total increment energy=7.771660491491e+02, max |increment|=3.065921995365e+00
+T2b capture fraction table (exact-tone least squares, no binned DFT):
+  state              o=1          o=2          o=3          o=4          o=5          o=6          o=7          o=8
+  K=3, seed=4242    0.535527723   0.731231021   0.792693884   0.877968758   0.894571827   0.934894224   0.954214042   0.983559637
+  K=4, seed=4242    0.212717143   0.424003775   0.521228639   0.626369403   0.739052512   0.820118137   0.894971158   0.957039547
+  K=5, seed=4242    0.332352624   0.556335333   0.711377997   0.806848328   0.834371701   0.866466421   0.902974838   0.966143356
+  K=5, seed=99      0.498538015   0.684789421   0.777925562   0.863623027   0.909771303   0.935956642   0.959903062   0.977942747
+  K=6, seed=4242    0.685064556   0.914487523   0.978804045   0.995010014   0.999083997   0.999804965   0.999943046   0.999982136
+T2b saturation order o* at capture >= 0.99, or measured ceiling through o=8:
+  K=3, seed=4242   no o*<=8, ceiling=0.983559637
+  K=4, seed=4242   no o*<=8, ceiling=0.957039547
+  K=5, seed=4242   no o*<=8, ceiling=0.966143356
+  K=5, seed=99     no o*<=8, ceiling=0.977942747
+  K=6, seed=4242   o*=4, capture=0.995010014
+[PASS] T2b state-dependent saturation, part 1: the K=6 state saturates at o* = 4 (capture >= 0.99 by order 4)
+       K=6 o*=4
+[PASS] T2b state-dependent saturation, part 2: the K=3 and K=4 states do NOT reach capture 0.99 through o = 8 (measured ceilings 0.957-0.984)
+       non-saturating: K=3, seed=4242, K=4, seed=4242
+[PASS] T2b the harmonic depth is REALIZED-STATE DATA: the per-state o* pattern is mixed (one state saturates at low order, others not by 8) -- no state-independent 0.99 capture depth <= 8 exists on the tested family
+       o* per state: [('K=3, seed=4242', None), ('K=4, seed=4242', None), ('K=5, seed=4242', None), ('K=5, seed=99', None), ('K=6, seed=4242', 4)]
+[PASS] T2c monotonicity: exact-tone captured fraction is non-decreasing in o per state at 1e-12 tolerance
+       minimum adjacent capture delta=3.909e-05
+T2d order-3 capture by state:
+  K=3, seed=4242   capture(o=3)=0.792693884
+  K=4, seed=4242   capture(o=3)=0.521228639
+  K=5, seed=4242   capture(o=3)=0.711377997
+  K=5, seed=99     capture(o=3)=0.777925562
+  K=6, seed=4242   capture(o=3)=0.978804045
+[PASS] T2d fixed order-3 refutation statement: min-state capture at o=3 is < 0.9
+       min capture(o=3)=0.521228639
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

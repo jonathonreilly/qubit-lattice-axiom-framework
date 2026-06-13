@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 874 |
+| **retained_bounded** | 875 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1418 |
+| unaudited | 1417 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1327 |
+| `audited_clean` | 1328 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1735 |
+| `unaudited` | 1734 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 879 |
-| `leaf` | 1341 |
+| `medium` | 882 |
+| `leaf` | 1338 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1565 | 132.61 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1036 | 64.02 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1395 | 60.95 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1396 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
 | 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
@@ -112,7 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
 | 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1021 | 41.50 | `audited_clean` | **retained_bounded** |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1361 | 39.41 | `audited_clean` | **retained** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 797 | 39.14 | `audited_clean` | **retained_bounded** |
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1271 | 38.81 | `audited_clean` | **retained_bounded** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
@@ -331,6 +331,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cyclic_projector_compression_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4573,6 +4574,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The plaquette-field susceptibility χ(q)=2[Ω(B_q)-Ω(0)]/B_q² with B_q=2π/q, q∈{16,24,32}, Richardson-extrapolates to negative χ on the sampled μ_ch grid {0.0,0.5,1.0,1.5} and positive χ at μ_ch=2.0 for both sampled masses and temperatures.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the Harper Hamiltonian, the independent folded B=0 spectrum, the grand-potential integral, χ normalization, and the B² Richardson extrapolation directly rather than importing or hard-coding the asserted signs. The audited conclusion follows for the sampled grid only.
 - **rationale:** The load-bearing signs are produced by first-principles spectral computation inside the runner, not by a numerical table copied from the note or another authority. The formula inventory checks out on the restricted packet: χ=2ΔΩ/B² is the Ω″ normalization, the q=24,32 Richardson formula cancels a leading B² error term, and the B=0/gauge-origin controls test the relevant normalizations. All asserted sampled signs are resolved with margins far above the stated eps floors, and there are no cited non-retained dependencies or external comparator inputs. The clean verdict is limited to the bounded sampled-grid claim.
+- **auditor confidence:** high
+
+### `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D2_TRUNCATION_ERROR_BUDGET_FIRST_DATUM_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D2_TRUNCATION_ERROR_BUDGET_FIRST_DATUM_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite periodic free d=2 checkerboard lattices with L in {12,16} at E=0, comparing step-3 retained projected resolvents after step-2 shell truncations keep d²={4,8}, keep d²=4, and no truncation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-014715-f34e381e01-d2_truncation_error_budget_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For finite periodic L=12,16 at E=0, truncating the exact step-2 Hamiltonian to kept d²={4,8} shells and exactly stepping to step 3 gives retained projected-resolvent errors 4.558e-3 and 1.3547e-2, while the harsher keep-d²=4 truncation is larger and no truncation gives zero difference.  _(class `C`)_
+- **chain closes:** True — The included runner constructs the finite periodic free d=2 Laplacian, applies Schur-complement decimations and shell truncations, and computes the projected E=0 resolvent without importing the measured values. An independent zero-sum-subspace recomputation reproduces the stated tail sizes, support counts, resolvent errors, growth from L=12 to L=16, harshness ordering, and no-truncation zero check.
+- **rationale:** The audited claim is a bounded finite-lattice datum, not an asymptotic or fixed-point theorem. The runner source performs genuine first-principles finite linear algebra from the stated free d=2 convention and contains no helper imports, hard-coded contested constants, or external comparator values. The displayed numerical claims match both the runner output and an independent computation route, so the finite scoped conclusion closes.
 - **auditor confidence:** high
 
 ### `d3_upper_bound_import_scope_gate_note_2026-06-06`

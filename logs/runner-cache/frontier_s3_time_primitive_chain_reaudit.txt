@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_time_primitive_chain_reaudit.py
-runner_sha256: 401c171565df7dbf033b94dabe67aa3b573a37ca7a3e6226c2a18746414af585
+runner_sha256: 059d60d834b47549f74db5269cb76f29251cbb1fd31a84b5bfe53b279ca2d2a4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 14.25
+elapsed_sec: 11.90
 status: ok
 ----- stdout -----
 S3 primitive-chain open-gate re-audit helper
@@ -24,7 +24,7 @@ PASS: naturality no-go states rho_E remains free
 
 B. Reduced-family algebra
 ------------------------------------------------------------------------
-PASS: E-shell carrier column is exact -- [ 1.00000000e+00  0.00000000e+00 -5.55111512e-17 -0.00000000e+00]
+PASS: E-shell carrier column is exact -- [ 1.00000000e+00  0.00000000e+00 -4.16333634e-17  0.00000000e+00]
 PASS: E-center carrier column is exact -- [1.         0.         0.16666667 0.        ]
 PASS: rho_E=0 and rho_E=21/4 agree on shell normalization
 PASS: rho_E=0 and rho_E=21/4 differ on center lift -- 1.000000 vs 1.875000
@@ -39,10 +39,12 @@ PASS: S3 row states current objects do not uniquely select 21/4
 PASS: S3 row keeps positive target open
 PASS: S3 row remains open_gate rather than positive theorem
 PASS: S3 row does not claim beta_E derivation
+PASS: S3 row contains downstream source-boundary firewall
+PASS: S3 firewall forbids readout/time-coupling/E-channel promotion
 
 Summary
 ------------------------------------------------------------------------
-TOTAL: PASS=22, FAIL=0
+TOTAL: PASS=24, FAIL=0
 VERDICT: S3 primitive chain is an open gate backed by Route-2 non-selection.
 
 ----- stderr -----

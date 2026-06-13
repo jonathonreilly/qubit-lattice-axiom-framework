@@ -13,7 +13,7 @@ STRUCTURE OF THE PROOF:
                         dim(Cl+(3)+{omega}) = d+2 = 5 -> g_Y^2 = 1/5
   E. Physical SU(2)_weak: fiber operators commute with hypercharge Y
      Isomorphism: fiber SU(2) ~ Clifford SU(2) proves Cl+(3) contains the gauge group
-  F. Hypercharge Y: eigenvalues +1/3 (6D quark block) and -1 (2D lepton block)
+  F. Hypercharge Y: eigenvalues +1/3 (6D symmetric block) and -1 (2D antisymmetric block)
   G. Abstract taste-cube S3 action: C^8 = 4A_1+2E; hw=1 triplet is a Z3 orbit
   H. SU(3)_c from symmetric-base commutant of SU(2)_weak: T_F = 1/2, [SU(3),SU(2)]=0
   I. N_c = 3 from dim(Z^3); R_conn = 8/9 from Fierz; sqrt(9/8) EW correction
@@ -292,9 +292,9 @@ ok_E &= check("  Clifford J_i and fiber Jf_i are DIFFERENT 8x8 matrices",
 check("Section E", ok_E)
 
 # ---------------------------------------------------------------------------
-# Section F: Hypercharge eigenvalues +1/3 (6D) and -1 (2D)
+# Section F: Y-operator eigenvalues +1/3 (6D) and -1 (2D)
 # ---------------------------------------------------------------------------
-section("F: Hypercharge Y: eigenvalues +1/3 (6D quark) and -1 (2D lepton)")
+section("F: Y operator: eigenvalues +1/3 (6D symmetric) and -1 (2D antisymmetric)")
 
 ok_F = True
 
@@ -324,7 +324,6 @@ n_minus = sum(1 for e in evals_Y if abs(e + 1) < 1e-5)
 ok_F &= check(f"  Y eigenvalue +1/3 has multiplicity 6", n_plus == 6, f"got {n_plus}")
 ok_F &= check(f"  Y eigenvalue -1 has multiplicity 2", n_minus == 2, f"got {n_minus}")
 
-# Physical interpretation: +1/3 = quark-like (3 colors x 2 isospin), -1 = lepton-like
 ok_F &= check("  Y=+1/3 symmetric block has dimension 6",
               n_plus == 6, "six-dimensional symmetric block")
 ok_F &= check("  Y=-1 antisymmetric block has dimension 2",
@@ -407,12 +406,11 @@ ok_G &= check(f"  hw=1 triplet: chi(2c)={chi_hw1_2c:.0f}, chi(3c)={chi_hw1_3c:.0
               np.isclose(chi_hw1_2c, 1) and np.isclose(chi_hw1_3c, 0),
               f"  -> A1+E (permutation rep of 3-orbit)")
 
-# hw=1 Y eigenvalue spectrum: restricted 3×3 Y matrix has eigenvalues {-1, +1/3, +1/3}
-# (two quark-like states at Y=+1/3 and one lepton-like state at Y=-1)
+# hw=1 Y eigenvalue spectrum: restricted 3x3 Y matrix has eigenvalues {-1, +1/3, +1/3}
 Y_hw1 = Y[np.ix_(hw1_idx, hw1_idx)]
 evals_Y_hw1 = sorted(np.linalg.eigvalsh(Y_hw1.real))
 expected_Y_hw1 = sorted([-1.0, 1/3, 1/3])
-ok_G &= check("  hw=1 Y spectrum: {-1, +1/3, +1/3}  (quark-like x2, lepton-like x1)",
+ok_G &= check("  hw=1 Y spectrum: {-1, +1/3, +1/3}",
               np.allclose(evals_Y_hw1, expected_Y_hw1, atol=1e-8),
               f"got {np.round(evals_Y_hw1, 4)}")
 
@@ -421,7 +419,7 @@ ok_G &= check("  hw=1 Y spectrum: {-1, +1/3, +1/3}  (quark-like x2, lepton-like 
 # e3=(0,0,1) has b3=1 → T3=-1/2 (s3|1>=-|1>)
 Jf3_hw1 = Jf3[np.ix_(hw1_idx, hw1_idx)]
 evals_T3_hw1 = sorted(np.linalg.eigvalsh(Jf3_hw1.real))
-ok_G &= check("  hw=1 T3 eigenvalues: {-1/2, +1/2, +1/2}  (one down-type, two up-type)",
+ok_G &= check("  hw=1 T3 eigenvalues: {-1/2, +1/2, +1/2}",
               np.allclose(evals_T3_hw1, sorted([-0.5, 0.5, 0.5]), atol=1e-8),
               f"got {np.round(evals_T3_hw1, 4)}")
 
@@ -668,7 +666,7 @@ Finite Cl(3)/taste-cube support packet — algebraic checks complete.
      sin^2(theta_W)(bare) = 4/9.
   E. Physical SU(2)_weak = fiber ops {{I4 x sigma_i/2}} commute with Y.
      Isomorphic to Cl+(3) bivector SU(2) as abstract Lie algebra.
-  F. Hypercharge Y: +1/3 on 6D quark block, -1 on 2D lepton block. Traceless.
+  F. Y operator: +1/3 on 6D symmetric block, -1 on 2D antisymmetric block. Traceless.
   G. S3 on C^8 = 4A1+2E; hw=1 triplet is a Z3-related three-state orbit.
   H. SU(3)_c on symmetric base: T_F=1/2; [SU(3),SU(2)]=0; [SU(3),Y]=0.
   I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz verified.

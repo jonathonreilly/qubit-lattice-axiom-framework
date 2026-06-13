@@ -1,0 +1,35 @@
+loop_slug: uncovered-audit-repairs-block04-20260613
+date: 2026-06-13
+mode: audit-condition-source-repair
+target_status: bounded-support
+actual_current_surface_status: source-repair
+target_claim_ids:
+  - koide_gamma5_factor_bridge_no_go_note_2026-06-06
+  - su3_dabc_symmetric_theorem_note_2026-05-02
+  - signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11
+source_blockers:
+  - "gamma5 note displayed PASS=14 while runner/cache report PASS=20."
+  - "SU(3) dabc note displayed wrong cubic d-Casimir scalar 5/12; direct computation gives 10/9 I_3."
+  - "signed-gravity T3 label table was too broad for generic spectral cutoffs; it holds on Lambda in Z+1/2, with a known fractional-cutoff formula."
+files_touched:
+  - docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md
+  - docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md
+  - docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md
+  - scripts/su3_dabc_symmetric_check.py
+  - scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py
+  - logs/runner-cache/frontier_koide_gamma5_factor_bridge_no_go.txt
+  - logs/runner-cache/su3_dabc_symmetric_check.txt
+  - logs/runner-cache/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.txt
+runner_status:
+  gamma5_no_go: "PASS=20 FAIL=0"
+  su3_dabc: "OVERALL PASS, includes cubic d-Casimir scalar check"
+  signed_gravity_eta: "PASS=31 FAIL=0"
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+open_imports:
+  - "No physical-color bridge is supplied by the SU(3) dabc repair."
+  - "No arbitrary-cutoff nonzero eta label is claimed by the signed-gravity repair."
+review_disposition: "self-review pass for source-side repair"
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3823"
+next_exact_action: "Refresh latest audit inventory and continue with remaining uncovered rows."
+stop_condition: "Continue until no actionable incomplete audit rows remain uncovered by ready source PRs."

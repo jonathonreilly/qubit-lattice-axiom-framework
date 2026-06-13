@@ -148,7 +148,7 @@ All §2 algebra is class-(A) finite (`C²⊗C³`), recomputed in the runner.
 
 Runner
 [`scripts/frontier_koide_gamma5_factor_bridge_no_go.py`](../scripts/frontier_koide_gamma5_factor_bridge_no_go.py)
-(`PASS = 14, FAIL = 0`): `C³=I`; `eig(S)={-1,-1,2}`; dimension mismatch
+(`PASS = 20, FAIL = 0`): `C³=I`; `eig(S)={-1,-1,2}`; dimension mismatch
 (`γ₅` 2×2 vs `S` 3×3); `[γ₅⊗I, I⊗S]=0` exactly; `γ₅` K-even; `γ₅⊗I` commutes
 with `A`; any site-factor op commutes with any gen-factor op (200 samples,
 max norm 0); `P±=(1±γ₅)/2` is a spin-factor partition; the generation

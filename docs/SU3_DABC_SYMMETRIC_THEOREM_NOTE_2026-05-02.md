@@ -235,7 +235,9 @@ C2. **Algebraic cubic Casimir from d.** The cubic Casimir
 C_3 := d^{abc} T^a T^b T^c is a third-order generator of Z(U(g)) for
 the abstract algebraic carrier. On the abstract fundamental V_3 it
 evaluates to a specific scalar (related to (N²−1)(N²−4)/(4N²) for
-SU(N), giving 5/12 for N=3 in standard normalization). Whether this
+SU(N), giving 10/9 for N=3 in the `T^a = lambda^a/2`,
+`Tr[T^a T^b] = (1/2) delta^{ab}` normalization used here). The runner
+now checks `d^{abc} T^a T^b T^c = (10/9) I_3` directly. Whether this
 algebraic carrier's V_3 coincides with physical SM color fundamentals
 is the responsibility of the physical-color bridge (out of scope; see
 below).
@@ -283,8 +285,9 @@ Bounded theorem on the abstract algebraic SU(3) symmetric structure constants,
 derived from a single cited one-hop dependency by elementary trace projection
 in the Gell-Mann basis. The runner exhibits the anticommutator decomposition,
 total symmetry, reality, agreement with 16 standard reference values, the
-combined T^a T^b identity, and the f-anti-sym / d-sym orthogonality — all at
-machine precision.
+combined T^a T^b identity, the `10/9 I_3` cubic-Casimir scalar in this
+normalization, and the f-anti-sym / d-sym orthogonality — all at machine
+precision.
 
 ```yaml
 claim_type_author_hint: bounded_theorem

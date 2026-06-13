@@ -17,8 +17,10 @@ Verifies, in exact finite dimensions:
        counting asymmetries eta = +/-2; labels chi_{+/-} = +/-1; the
        orientation-image eta flip on a random unitary conjugate.
   [T3] quantized label table on the spectrally-truncated twisted tower
-       with the proposal's branch conditions (gap failure at a = 0;
-       eta = 0 at a = 1/2; chi = -1 on (1/2, 1)).
+       for Lambda in Z+1/2, with the proposal's branch conditions (gap
+       failure at a = 0; eta = 0 at a = 1/2; chi = -1 on (1/2, 1)).
+       For generic Lambda=m+r, checks the exact formula
+       eta=1_{r>=a}-1_{r>=1-a} and excluded counterexample cutoffs.
   [T4] coexistence: D_tot Hermitian; [D_gen, C3] = 0; {D_gen-part,
        Gamma_prod} = 0; [D_bdy-part, Gamma_prod] = 0; [N, eps] = 0;
        {e4, eps} = 0; {e1, eps} = 0.
@@ -71,6 +73,16 @@ def tower_spectral(a: float, lam_max: float) -> np.ndarray:
     n = np.arange(-int(lam_max + 2), int(lam_max + 2) + 1)
     lam = n + a
     return lam[np.abs(lam) <= lam_max]
+
+
+def frac_part(x: float) -> float:
+    return float(x - np.floor(x))
+
+
+def eta_formula_positive_twist(a: float, lam_max: float) -> int:
+    """Exact eta for 0 < a < 1/2 and Lambda=m+r."""
+    r = frac_part(lam_max)
+    return int(r + 1.0e-12 >= a) - int(r + 1.0e-12 >= 1.0 - a)
 
 
 def label(lam: np.ndarray) -> str:
@@ -182,15 +194,36 @@ def main() -> int:
         if got != expect:
             ok_all = False
             print(f"    MISMATCH a={aa}: got {got}, expect {expect}")
-    check("T3", "label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, "
-                "0.7, 0.9} matches exactly (chi quantized; branch "
-                "conditions fail exactly at a = 0 and a = 1/2)", ok_all)
+    check("T3", "half-integer-cutoff label table over a in {0, +/-0.1, "
+                "+/-0.3, 0.49, 0.5, 0.7, 0.9} matches exactly (chi "
+                "quantized; branch conditions fail exactly at a = 0 and "
+                "a = 1/2)", ok_all)
     e0, h0 = eta_h(tower_spectral(0.0, lam_max))
     check("T3", "a = 0 (untwisted): h_delta = 1, label undefined "
                 "(gap branch condition fails)", h0 == 1)
     e5, h5 = eta_h(tower_spectral(0.5, lam_max))
     check("T3", "a = 1/2: spectrum reflection-symmetric, eta_delta = 0, "
                 "label undefined", e5 == 0 and h5 == 0)
+    half_integer_family_ok = True
+    for lm in (0.5, 1.5, 2.5, 20.5):
+        for aa in (0.1, 0.3, 0.49):
+            half_integer_family_ok &= label(tower_spectral(aa, lm)) == "+1"
+            half_integer_family_ok &= label(tower_spectral(-aa, lm)) == "-1"
+    check("T3", "the quantized nonzero label is certified for Lambda in Z+1/2",
+          half_integer_family_ok)
+    formula_ok = True
+    for aa in (0.1, 0.3, 0.49):
+        for lm in (20.05, 20.2, 20.5, 20.8, 20.95):
+            got, h = eta_h(tower_spectral(aa, lm))
+            formula_ok &= h == 0 and got == eta_formula_positive_twist(aa, lm)
+    check("T3", "generic-cutoff formula eta=1_{r>=a}-1_{r>=1-a} is exact",
+          formula_ok)
+    excluded_ok = True
+    for aa, lm in ((0.1, 20.05), (0.1, 20.95), (0.3, 20.2), (0.3, 20.8)):
+        got, h = eta_h(tower_spectral(aa, lm))
+        excluded_ok &= h == 0 and got == 0
+    check("T3", "excluded non-half-integer cutoffs with r<a or r>=1-a have eta=0",
+          excluded_ok)
 
     # =======================================================================
     section("[T4] coexistence with the Koide-side anticommutation "

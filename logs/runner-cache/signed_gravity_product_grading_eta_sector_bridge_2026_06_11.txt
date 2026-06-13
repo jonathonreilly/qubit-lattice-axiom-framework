@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py
-runner_sha256: 58fe1f92c37420f054b488d9f1cf0be8c6eeb55413e7b50d1ed6f400896128e0
+runner_sha256: be6fc1fd3f2f677d814848a7c4c8ee6613616e25f1cfe4b3dd1c36c5273469db
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ============================================================================
@@ -40,9 +40,12 @@ plus ONE twist datum -- no sign axiom
 ----------------------------------------------------------------------------
 [T3] quantized labels + the proposal's branch conditions
 ----------------------------------------------------------------------------
-  [PASS] [T3] label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, 0.7, 0.9} matches exactly (chi quantized; branch conditions fail exactly at a = 0 and a = 1/2)
+  [PASS] [T3] half-integer-cutoff label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, 0.7, 0.9} matches exactly (chi quantized; branch conditions fail exactly at a = 0 and a = 1/2)
   [PASS] [T3] a = 0 (untwisted): h_delta = 1, label undefined (gap branch condition fails)
   [PASS] [T3] a = 1/2: spectrum reflection-symmetric, eta_delta = 0, label undefined
+  [PASS] [T3] the quantized nonzero label is certified for Lambda in Z+1/2
+  [PASS] [T3] generic-cutoff formula eta=1_{r>=a}-1_{r>=1-a} is exact
+  [PASS] [T3] excluded non-half-integer cutoffs with r<a or r>=1-a have eta=0
 
 ----------------------------------------------------------------------------
 [T4] coexistence with the Koide-side anticommutation (escape hatch II realized)
@@ -65,7 +68,7 @@ plus ONE twist datum -- no sign axiom
   [PASS] [F] (F3) a = 0 carries no label (h_delta = 1): consistent with the retained eta_APS = 0 bulk-vanishing row -- a nonzero label REQUIRES the twist datum
 
 ============================================================================
-TOTAL: PASS=28 FAIL=0
+TOTAL: PASS=31 FAIL=0
 ============================================================================
 
 ----- stderr -----

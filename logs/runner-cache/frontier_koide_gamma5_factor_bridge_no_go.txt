@@ -3,7 +3,7 @@ runner: scripts/frontier_koide_gamma5_factor_bridge_no_go.py
 runner_sha256: 3c0a819bc6cc8ab34f52b8d8dfe1fdfb0bf963fb02326b40b3743e8e4244f952
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 

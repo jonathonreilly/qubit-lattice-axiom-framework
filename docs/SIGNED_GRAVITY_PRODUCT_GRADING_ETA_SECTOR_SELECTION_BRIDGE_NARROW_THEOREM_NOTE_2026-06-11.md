@@ -19,10 +19,14 @@ hence **opposite** spectral asymmetries and the derived label pair
 `chi_+/- = +/- sign(eta_delta(A(a)))`; (T3) with the repo's counting
 regulator `eta_delta = #{lambda > delta} - #{lambda < -delta}` on the
 spectrally-truncated twisted tower `spec(A(a)) = {n + a : |n + a| <=
-Lambda}`, the labels are **quantized**: `chi = +1` for `a in (0, 1/2)`,
-`chi = -1` for `a in (-1/2, 0)`, and the proposal's branch conditions
-fail exactly where they should (`a = 0`: gap fails, `h_delta = 1`;
-`a = +/-1/2`: `eta_delta = 0`); (T4) the **same** total Dirac
+Lambda}` with the half-integer cutoff family `Lambda in Z + 1/2`, the
+labels are **quantized**: `chi = +1` for `a in (0, 1/2)`, `chi = -1`
+for `a in (-1/2, 0)`, and the proposal's branch conditions fail exactly
+where they should (`a = 0`: gap fails, `h_delta = 1`; `a = +/-1/2`:
+`eta_delta = 0`). For a generic cutoff `Lambda = m + r`, the exact
+condition is `eta = 1_{r >= a} - 1_{r >= 1-a}` for `0 < a < 1/2`;
+ordinary non-boundary cutoffs can give `eta = 0`. (T4) the **same**
+total Dirac
 simultaneously satisfies the Koide-side anticommutation
 `{D_gen-part, Gamma_prod} = 0` with the product grading
 `Gamma_prod = G (x) I (x) eps`, while `[D_bdy-part, Gamma_prod] = 0`
@@ -154,7 +158,7 @@ regulator). The factor 2 is the sector dimension and drops out of the
 sign.
 
 **(T3) Quantized labels and branch conditions.** On the
-spectrally-truncated twisted tower (generic `Lambda`, e.g. half-integer):
+spectrally-truncated twisted tower with `Lambda in Z + 1/2`:
 
 ```text
     a in (0, 1/2)   : h_delta = 0, eta_delta = +1  -> chi = +1
@@ -168,6 +172,18 @@ The undefined cases are exactly the proposal's branch conditions
 consistency leg with the retained bulk-vanishing row: the untwisted
 (flat/mean-field) surface carries **no** label, matching
 `eta_APS = 0` identically on the closed staggered torus.
+
+For a generic spectral cutoff `Lambda = m + r`, `m in Z`, `0 <= r < 1`,
+and `0 < a < 1/2`, the same counting gives
+
+```text
+    eta_delta(A(a)) = 1_{r >= a} - 1_{r >= 1-a}.
+```
+
+Thus the quantized nonzero label in this note is a half-integer-cutoff
+statement (`r = 1/2`). The row does **not** claim the same nonzero label
+for arbitrary non-boundary cutoffs; e.g. `r < a` or `r >= 1-a` gives
+`eta_delta = 0`.
 
 **(T4) Coexistence with the Koide-side anticommutation (escape hatch
 II realized).** With `Gamma_prod = G (x) I (x) eps`:
@@ -205,15 +221,17 @@ sign follows. For the orientation image: if `B' = -U B U^dag` then
 `spec(B') = -spec(B)` and the counting `eta` flips exactly. ∎
 
 **(T3).** Spectral truncation keeps `lambda = n + a` with `|n + a| <=
-Lambda`. For `a in (0, 1/2)` and generic `Lambda`: positives are `n >=
+Lambda`. For `a in (0, 1/2)` and `Lambda = m + r`: positives are `n >=
 0` with `n <= Lambda - a` (`floor(Lambda - a) + 1` values), negatives
 are `n <= -1` with `n >= -Lambda - a` (`floor(Lambda + a)` values);
-for half-integer `Lambda` both floors equal `Lambda - 1/2`, so
-`eta_delta = +1`. The map `a -> -a` flips the spectrum, giving `-1`.
+therefore `eta_delta = 1_{r >= a} - 1_{r >= 1-a}`. For half-integer
+`Lambda`, `r = 1/2`, so this equals `+1`. The map `a -> -a` flips the
+spectrum, giving `-1`.
 At `a = 0` the `n = 0` eigenvalue sits in the `delta`-window
 (`h_delta = 1`). At `a = 1/2` the spectrum is `{..., -3/2, -1/2, 1/2,
 3/2, ...}`, symmetric under reflection, so `eta_delta = 0`. (The
-runner checks every case, plus the index-truncation falsifier.) ∎
+runner checks every half-integer case, the generic-cutoff formula,
+excluded counterexample cutoffs, plus the index-truncation falsifier.) ∎
 
 **(T4).** Factor-wise: `(D_gen (x) N)(G (x) eps) + (G (x) eps)(D_gen
 (x) N) = (D_gen G) (x) (N eps) + (G D_gen) (x) (eps N) = (D_gen G +
@@ -302,10 +320,13 @@ Primary runner
    `eps = +/-1` sectors has `eta_delta = +/-2` (opposite), labels
    `chi_+/- = +/-1`; the orientation-image `eta` flip on a random
    unitary conjugate.
-4. **[T3]** the label table over `a in {0, +/-0.1, +/-0.3, 0.49,
-   0.5, 0.7, 0.9}` with exact branch-condition behavior (gap failure
-   at `a = 0` with `h_delta = 1`; `eta_delta = 0` at `a = 1/2`;
-   `chi = -1` for `a in (1/2, 1)` i.e. `a - 1 in (-1/2, 0)`).
+4. **[T3]** the half-integer-cutoff label table over
+   `a in {0, +/-0.1, +/-0.3, 0.49, 0.5, 0.7, 0.9}` with exact
+   branch-condition behavior (gap failure at `a = 0` with
+   `h_delta = 1`; `eta_delta = 0` at `a = 1/2`; `chi = -1` for
+   `a in (1/2, 1)` i.e. `a - 1 in (-1/2, 0)`), the exact
+   fractional-cutoff formula, and excluded counterexample cutoffs where
+   `r < a` or `r >= 1-a` gives `eta_delta = 0`.
 5. **[T4]** Hermiticity of `D_tot`; `[D_gen, C_3] = 0`;
    `{D_gen-part, Gamma_prod} = 0`; `[D_bdy-part, Gamma_prod] = 0`;
    `[N, eps] = 0`, `{e_4, eps} = 0`, `{e_1, eps} = 0`.
@@ -319,7 +340,7 @@ Primary runner
    bulk-vanishing row).
 
 Expected output: deterministic, terminating with
-`TOTAL: PASS=28 FAIL=0`.
+`TOTAL: PASS=31 FAIL=0`.
 
 ## Honest auditor read
 

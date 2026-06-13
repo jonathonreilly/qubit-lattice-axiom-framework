@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
         "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
         "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
         "gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
         "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12",
-        "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06"
+        "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
+        "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f3a93f93ba9a387c8fb5ccefa4209cc624c46bb4704b96d2c09d5a4d0dd2a9ca",
+      "note_hash": "b18e5367e2b569d0cc4179d42db6e4ee8482c0ce6e3ab2ef44b9480901d1c619",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

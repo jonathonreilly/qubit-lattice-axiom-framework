@@ -13,12 +13,14 @@ parameters, and the one-parameter Jastrow/VMC `|E(He)|/|E(He^+)|`
 improvement to `1.4357`. The note **does NOT** claim retained
 bounded authority on a hydrogen or helium derivation chain; the
 quoted readouts are diagnostic work-history numerics preserved from
-the source branch review, not pinned against a cached runner stdout
-under `logs/runner-cache/` in the restricted packet. The audit
-verdict's substantive repair sub-target ("provide the preserved
-runner source plus completed stdout/cached certificates and include
-the one-hop retained lattice kinetic and Coulomb-kernel authority
-notes") remains separate open work.
+the source branch review and now pinned against preserved runner source
+plus cached stdout certificates under `logs/runner-cache/` in the
+restricted packet. The audit verdict's substantive repair sub-target
+("provide the preserved runner source plus completed stdout/cached
+certificates and include the one-hop retained lattice kinetic and
+Coulomb-kernel authority notes") is the visibility repair implemented
+below; independent re-audit, not this source note, decides whether that
+repair is sufficient.
 **Status authority:** independent audit lane only.
 **Status:** bounded work-history companion; preserved from branch review, not a
 flagship authority surface
@@ -41,11 +43,12 @@ retained lattice kinetic and Coulomb-kernel authority notes in the
 restricted packet." This is a **diagnostic companion / work-history
 note** that **does not propagate** as a flagship authority: the
 quoted numerical readouts (`E_2/E_1 = 0.25857`, helium `|E(He)| /
-|E(He^+)| = 1.3424` and Jastrow `1.4357`, etc.) are not pinned in
-this revision to a cached runner stdout under
-`logs/runner-cache/`, and the upstream lattice-kinetic and
-Coulomb-kernel authority notes are not yet wired as audit-graph
-one-hop dependencies on this row. Nothing in this source edit sets audit status; the note remains a diagnostic work-history record.
+|E(He^+)| = 1.3424` and Jastrow `1.4357`, etc.) are pinned in this
+revision to preserved runner source plus cached stdout under
+`logs/runner-cache/`, and the narrowed lattice-kinetic and
+Coulomb-kernel authority notes are cited below as restricted-packet
+one-hop dependencies. Nothing in this source edit sets audit status; the
+note remains a diagnostic work-history record.
 See "Citation chain and audit-stated repair path (2026-05-10)"
 below.
 
@@ -61,23 +64,21 @@ operators produce the quoted readouts.
 
 ### One-hop retained upstream authorities (cited)
 
-- **Lattice-kinetic operator** — `H_free = -Δ_{Z³}` (graph Laplacian
-  derived from `Cl(3)` on `Z³` via the staggered Dirac square):
-  - [`docs/BROAD_GRAVITY_DERIVATION_NOTE.md`](../../BROAD_GRAVITY_DERIVATION_NOTE.md)
-    Step 1 — Clifford-forced kinetic operator on `Z³`.
-  - [`docs/GRAVITY_CLEAN_DERIVATION_NOTE.md`](../../GRAVITY_CLEAN_DERIVATION_NOTE.md)
-    — same lattice kinetic surface used by gravity lane.
-  - [`docs/MINIMAL_AXIOMS_2026-04-11.md`](../../MINIMAL_AXIOMS_2026-04-11.md)
-    baseline framework primitives: `Cl(3)` local algebra and `Z^3`
-    spatial substrate.
+- **Lattice-kinetic operator** — the scalar graph-Laplacian surface
+  `H_free = -Δ_{Z³}` used by this diagnostic companion:
+  - [`docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md`](../../HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md)
+    — narrowed dependency repair for the scalar graph-Laplacian and
+    Coulomb-kernel surfaces used here.
+  - [`docs/MINIMAL_AXIOMS_2026-06-04.md`](../../MINIMAL_AXIOMS_2026-06-04.md)
+    — current baseline framework primitives; this note does not rely on
+    the stale 2026-04-11 axiom citation.
 - **Coulomb kernel** — `V(r) = -g/|r|` from the `Z³` Green's function
   asymptote `G(r) → 1/(4π |r|)`:
-  - [`scripts/frontier_dm_coulomb_from_lattice.py`](../../../scripts/frontier_dm_coulomb_from_lattice.py)
-    — lattice potential-theory theorem that gives the `1/r` form as a
-    theorem of discrete harmonic analysis on `Z³` (not imported from
-    Coulomb's law).
-  - [`docs/BROAD_GRAVITY_DERIVATION_NOTE.md`](../../BROAD_GRAVITY_DERIVATION_NOTE.md)
-    Step 4 — same Green's-function kernel used in the gravity derivation.
+  - [`docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+    — retained-bounded lattice Green-kernel asymptotic bridge.
+  - [`scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py`](../../../scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py)
+    — verifier tying the narrowed scalar graph-Laplacian and Coulomb
+    kernel to this diagnostic atomic surface.
 
 These two upstream surfaces are exactly the operators (`-Δ_{Z³}` and
 `-g/|r|` from the same kernel) that all three companion runners
@@ -435,10 +436,11 @@ graph-Laplacian and Coulomb-kernel source path and explicitly rejects the
 unsupported "unique from Cl(3)" and finite-continuum-Rydberg framings.
 Independent review and audit must decide whether those repairs are
 sufficient; this note remains a diagnostic work-history companion and
-does not propagate as retained authority. The acknowledged residual is the
-pinning gap (no cached stdout backing the numerical readouts) plus
-the missing audit-graph dependency edges to the upstream lattice
-surfaces.
+does not propagate as retained authority. The acknowledged residual is
+not a missing-runner or missing-cache problem anymore; it is the
+independent audit decision on whether the narrowed dependency repair and
+explicit restricted-packet citations are enough for this diagnostic
+finite-box scope.
 
 This rigorization edit only sharpens the conditional perimeter and
 registers the cited authority chain; it does not set audit status or

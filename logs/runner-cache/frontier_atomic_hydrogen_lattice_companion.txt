@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_hydrogen_lattice_companion.py
-runner_sha256: e27bccd78558ce0b83140c8793a5f2a3b96d452b7cc8dba845dfaecf7afb3446
+runner_sha256: 5a4d8519e8fd3e38cc18748d718376c7dc1654501fafb1f2c9f0b61b5cf74236
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 74.07
+elapsed_sec: 67.91
 status: ok
 ----- stdout -----
 ========================================================================
@@ -12,8 +12,8 @@ Finite-box spectrum of the retained lattice kinetic + Coulomb operator
 ========================================================================
 
 Derivation chain:
-  Cl(3) on Z³  →  H_free = -Δ_Z³             [BROAD_GRAVITY_DERIVATION_NOTE Step 1]
-  Z³ Green's function  →  V(r) = -g/|r|       [frontier_dm_coulomb_from_lattice.py]
+  narrowed scalar graph-Laplacian surface  →  H_free = -Δ_Z³
+  Z³ Green's function  →  V(r) = -g/|r|       [lattice Green-kernel repair]
   Spectral problem: H_g ψ = E ψ               [lattice eigenproblem on l²(Z³)]
   Coupling g treated as free; report dimensionless ratios and scales only
 
@@ -33,7 +33,7 @@ PART 1: Energy scale — E₁ / (g²/4) → 1 as N → ∞
    0.60    40    -0.08809     0.09000     0.9788      3.33      3.00
 
   |E₁|/E₀ < 1 from lattice discretization; → 1 as N,g→0 (continuum).
-  Time: 2.7s
+  Time: 1.8s
 
 ────────────────────────────────────────────────────────────
 PART 2: Level ratios E_n/E₁  (coupling-independent prediction)
@@ -53,7 +53,7 @@ PART 2: Level ratios E_n/E₁  (coupling-independent prediction)
 
   Target: E₂/E₁ = 0.25000 (1/4),  E₃/E₁ = 0.11111 (1/9)
   This is the bounded spectral companion readout on the lattice Hamiltonian.
-  Time: 34.9s
+  Time: 30.6s
 
 ────────────────────────────────────────────────────────────
 PART 3: Orbital structure — angular character of eigenstates
@@ -73,7 +73,7 @@ PART 3: Orbital structure — angular character of eigenstates
 
   Predicted degeneracy: n² states per level (s + p + d + ... up to l=n-1).
   Angular character (s/p/d) requires finer grids to resolve reliably.
-  Time: 10.3s
+  Time: 9.0s
 
 ────────────────────────────────────────────────────────────
 PART 4: Bound state count confirms d=3 selection
@@ -104,7 +104,7 @@ SUMMARY: HYDROGEN LATTICE COMPANION
   The finite-box readout reproduces the expected 1/n² pattern to a few percent.
 ========================================================================
 
-Log saved to: logs/2026-05-21-atomic_hydrogen_companion.txt
+Log saved to: logs/2026-06-12-atomic_hydrogen_companion.txt
 
 ----- stderr -----
 

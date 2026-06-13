@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
         "gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
         "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12",
         "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
         "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11",
-        "branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12"
+        "branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12",
+        "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fcafc3317566165ee72ebf39f0f224a50c6103bf475cdc55fe47588422652a15",
+      "note_hash": "4f89e828fc428dfa70bb4c59bd224134d68d3c028c6983be5804666ffdec3c52",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

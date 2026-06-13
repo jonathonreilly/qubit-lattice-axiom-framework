@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 857 |
+| **retained_bounded** | 858 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1445 |
+| unaudited | 1444 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1307 |
+| `audited_clean` | 1308 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1762 |
+| `unaudited` | 1761 |
 
 | claim_type | count |
 |---|---:|
@@ -109,7 +109,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1021 | 41.50 | `audited_clean` | **retained_bounded** |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 797 | 39.14 | `audited_clean` | **retained_bounded** |
@@ -586,6 +586,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_susceptibility_flow_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -8270,6 +8271,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given an explicit residual diagonal input rho, the runner constructs T_src(6)=exp(3J)D_6^loc C_(Z_6^env)exp(3J), solves the finite Perron problem for rho=1, rho=delta, the three enumerated rho families, and the L_s=2 Schur rho, showing definite reference values and non-uniqueness within the tested families.  _(class `C`)_
 - **chain closes:** True — The scoped finite claim closes because the restricted packet supplies retained-bounded local coefficient and source-sector inputs, and the included runner actually constructs the finite operators and solves the Perron problems from those inputs. The physical residual environment remains explicitly outside scope rather than imported as a hidden premise.
 - **rationale:** The load-bearing computation is not a definition, renaming, or tuned comparator match: rho is explicitly supplied, and the Perron values are computed from the finite Bessel-determinant Wilson coefficients, SU(3) recurrence, matrix exponential, and diagonal rho choices. The one external comparator check is isolated as hostile-review support and is not used to select rho or compute the reported reference solves. An independent recomputation using a separate matrix exponential path reproduced the key values P_loc=0.452407159045, P_triv=0.422531739647, rho_Schur(1,0)=0.212462403803, and P_Schur,L2=0.429104996947.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_MULTIWORD_PERRON_LADDER_BOUNDED_NOTE_2026-06-11.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_MULTIWORD_PERRON_LADDER_BOUNDED_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite beta=6 two-word and feasible three-word tensor-product transfer readouts at tensor NMAX=4, MODE_MAX=80, composed into the retained source-sector Perron machinery at source NMAX=7, MODE_MAX=200, under the explicitly enumerated adjacent-bond and boundary-readout conventions only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-001940-9cf398dc45-gauge_vacuum_plaquette_tenso`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With D_mid(lambda_1,...,lambda_k)=D_k(lambda_1,...,lambda_k) times the adjacent-bond factors, the finite k-word transfer is T_k = D_k M_k D_mid M_k^T D_k, whose Perron vector is read out as marginal or trivial_slice rho and composed into the finite source-sector Perron solve.  _(class `C`)_
+- **chain closes:** True — The finite matrices and readout maps are explicitly constructed from retained bounded Wilson-coefficient, SU(3) fusion, and source-sector Perron inputs; the supplied runner computes the stated finite Perron/readout values rather than importing them. An independent low-rank Gram recomputation of the same finite T_k objects matches the displayed two-word and three-word table values, while the physical 3D environment, L_perp limit, convention selector, and canonical repinning are excluded from scope.
+- **rationale:** Within the stated bounded scope, the load-bearing step is a genuine finite numerical construction over retained bounded inputs, not a definition-only substitution or tuned comparator match. The runner source uses hard-coded reference values only as anchor/isolation checks; the multi-word values are produced by eigensolves from the constructed operators, and the canonical 0.5934 comparator is fenced to distance reporting. The cited authorities are retained_bounded, and their open physical-identification language is not imported into the audited claim.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`

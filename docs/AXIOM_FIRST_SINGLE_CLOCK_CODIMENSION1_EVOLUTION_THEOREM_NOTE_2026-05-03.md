@@ -45,7 +45,7 @@ status are set only by the independent audit lane.
 **Loop:** `3plus1d-native-closure-2026-05-02` (original);
 science-fix lane 2026-06-11 (re-scope)
 **Runner:** [`scripts/axiom_first_single_clock_codimension1_evolution_check.py`](../scripts/axiom_first_single_clock_codimension1_evolution_check.py)
-(`TOTAL: PASS=44 FAIL=0`, deterministic, runtime well under one minute)
+(`TOTAL: PASS=45 FAIL=0`, deterministic, runtime well under one minute)
 **Authority role:** source-note proposal. If retained, this row
 supplies the *axis-conditional* single-clock codimension-1 clauses
 (S1′)+(S2′) cited by `ANOMALY_FORCES_TIME_THEOREM.md` (its SC premise
@@ -291,6 +291,35 @@ free-bilinear LR bridge (R-FBQL) is the current one-hop propagation
 supplier consumed here; it does not prove gauged/interacting
 membership.
 
+## 2026-06-12 Remaining-Blocker Source Firewall
+
+This repair separates the already-retired propagation premise from the
+still-live axis-selection premise:
+
+- **B-RANGE is not a current blocker.** The current claim no longer
+  asks the auditor to grant finite range for a generic log-transfer
+  generator. S2'(c) is sourced only by the retained_bounded free
+  bilinear exact-log/quasilocal bridge (R-FBQL) on its own `U = 1`,
+  massive-sector surface. Interacting or fixed-background exact-log
+  propagation remains open, but it is not part of this row's current
+  theorem statement.
+- **B-AXIS remains a real declared premise.** The framework has not
+  derived the registration direction, the blocked time unit, or the
+  exclusion of independent commuting transfer factors from the current
+  retained axiom surface. The follow-up source
+  [`SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`](SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md)
+  narrows the route: Record durability, anomaly/chirality labels, and
+  the native exchange-symmetric staggered surface transport with the
+  axis and therefore do not derive B-AXIS. A future positive supplier
+  must provide a non-transportable registration-direction theorem or a
+  reviewed boundary-condition asymmetry bridge; this note does not add
+  such a premise and does not treat it as an axiom.
+
+Source-surface summary: this is bounded support only. The repair prunes the
+old B-RANGE route from the current scope and leaves B-AXIS as the live
+declared blocker. No retained-grade proposal or status promotion is made here;
+the independent audit lane remains the only authority for effective status.
+
 ## Statement
 
 Let `H_blk` be the finite block Hilbert space of the (R-RP2)
@@ -511,59 +540,37 @@ nonzero end-to-end Pauli component, with the single-factor contrast
 where the log returns the local generator exactly. The retained
 free-bilinear quasilocal LR supplier has its own companion runner.
 
-**Honest claim-status fields (audit-lane handoff):**
+**Honest claim-status summary.** This is a bounded theorem on retained and
+retained-bounded one-hop inputs plus the declared B-AXIS premise. Its scope is
+axis-conditional single-clock codimension-1 unitary evolution: with one supplied
+blocked time step `2a_tau`, one declared evolution axis carrying the
+retained-bounded RP/SC two-step transfer supply `T_hat^2`, and no independent
+commuting transfer factor admitted as a second clock, the retained finite-dim
+Stone row gives the unique generator
+`H = -(1/(2a_tau)) log(T_hat^2/M_T) >= 0` and the unique strongly continuous
+one-parameter unitary group `U(t) = exp(-itH)`. Each lattice slice `Sigma_t` is
+a codimension-1 Cauchy surface with mutually commuting per-site `M_2(C)`
+tensor-product equal-time algebra.
 
-```yaml
-proposed_claim_type: bounded_theorem
-proposed_claim_scope: |
-  Axis-conditional single-clock codimension-1 unitary evolution.
-  Conditional on the declared premise B-AXIS (one supplied blocked
-  time step 2a_tau; one declared evolution axis carrying the
-  retained_bounded RP/SC two-step transfer supply T_hat^2; no
-  independent commuting transfer factor admitted as a second clock),
-  the retained finite-dim Stone row gives the unique generator
-  H = -(1/(2a_tau)) log(T_hat^2/M_T) >= 0 and the unique strongly
-  continuous one-parameter unitary group U(t) = exp(-itH); each
-  lattice slice Sigma_t is a codimension-1 Cauchy surface with
-  mutually commuting per-site M_2(C) tensor-product equal-time
-  algebra. On the free U=1 bilinear exact-log sector only, cite the
-  retained_bounded free-bilinear quasilocal LR bridge for finite
-  propagation with envelope
-  ||[alpha_t(A_x),B_y]|| <= 2||A_x||||B_y||
-  exp(-mu d_1(x,y)+4 W_mu |t|), 0 < d mu < eta < arcsinh(m).
-  No interacting/fixed-background exact-log propagation claim is made.
-  The prior S3 claim that the temporal direction is the unique
-  RP-admissible reflection axis is withdrawn: the staggered hop
-  operator is exactly invariant under the time-space exchange
-  unitary W = P_{tau<->1} diag((-1)^{x_tau x_1}) (computed, residual
-  0), so axis selection is a premise, consistent with the retained
-  single-clock uniqueness scope boundary (N2/N4/N5). Continuum
-  Wightman identification stays bounded by the emergent-Lorentz
-  program.
-proposed_load_bearing_step_class: A (algebraic closure of the
-  retained Stone row over the retained_bounded transfer supply,
-  conditional on the declared B-AXIS premise; the S3' exchange
-  certificate is a class-C computed fact consumed as a boundary).
-status_authority: independent audit lane only
-actual_current_surface_status: bounded-support
-conditional_surface_status: bounded theorem on retained +
-  retained_bounded one-hop inputs + declared premise B-AXIS
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: |
-  Every load-bearing input is retained or retained_bounded on the
-  current surface; the one previously-cited audited_conditional
-  input (microcausality 2026-05-01) is no longer consumed. The
-  non-derived ingredient is the declared B-AXIS premise, required by
-  the retained scope-boundary no-go. The older B-RANGE finite-range
-  generator premise is no longer part of the current claim; free-sector
-  propagation is supplied by the retained_bounded R-FBQL bridge. Because
-  B-AXIS remains declared, this branch is not a retained-grade proposal.
-  No new axiom, no fitted parameter, no observed value.
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
+On the free `U = 1` bilinear exact-log sector only, the retained-bounded
+free-bilinear quasilocal LR bridge supplies finite propagation with envelope
+`||[alpha_t(A_x),B_y]|| <= 2||A_x||||B_y|| exp(-mu d_1(x,y)+4 W_mu |t|)`,
+`0 < d mu < eta < arcsinh(m)`. No interacting/fixed-background exact-log
+propagation claim is made. The prior S3 claim that the temporal direction is
+the unique RP-admissible reflection axis is withdrawn: the staggered hop
+operator is exactly invariant under the time-space exchange unitary
+`W = P_{tau<->1} diag((-1)^{x_tau x_1})`, so axis selection is a premise,
+consistent with the retained single-clock uniqueness scope boundary
+(N2/N4/N5). Continuum Wightman identification stays bounded by the
+emergent-Lorentz program.
+
+Every load-bearing input is retained or retained-bounded on this source
+surface except the declared B-AXIS premise. The older B-RANGE finite-range
+generator premise is no longer part of the current claim; free-sector
+propagation is supplied by the retained-bounded R-FBQL bridge. Because B-AXIS
+remains declared, this branch is not a retained-grade proposal. No new axiom,
+fitted parameter, observed value, or status promotion is made here; the
+independent audit lane remains the only authority for effective status.
 
 **Not in scope.**
 

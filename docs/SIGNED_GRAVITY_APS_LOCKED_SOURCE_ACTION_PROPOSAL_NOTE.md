@@ -58,6 +58,34 @@ the current axiom surface, then rerun the variation/table checks here. This
 note does not introduce a new axiom and does not mark that source principle as
 admitted.
 
+## 2026-06-12 Source-Action Hard Residual
+
+The local variation/table harness is not the missing science: it closes
+only after `S_int = - chi_eta M_phys <rho,Phi>` is inserted. The live
+frontier is the origin of that cross term.
+
+Current retained signed-gravity ingredients still split into the same
+two honest facts:
+
+- separable APS/Wald/Gauss source terms and positive mass/area carriers
+  span orientation-even sources plus spectators, not the required
+  orientation-odd `[+1,-1]` source vector;
+- determinant-line/orientation-line structure hosts a `Z2` label but
+  does not canonically select a section or force an active local
+  `chi_eta rho Phi` variation.
+
+The best positive route remains the generation/cochain/taste grading
+program described below: derive a non-transportable chiral grading,
+then prove that it selects the APS-locked scalar source term and a
+protected eta sector. This note does not add that grading as a premise,
+does not introduce a new axiom, and does not promote the proposal while
+the source-action origin is open.
+
+Source-surface summary: this remains an open-gate source-action target. The
+live blocker is a derivation of the APS-locked `chi_eta rho Phi` source action.
+No retained-grade proposal or status promotion is made here; the independent
+audit lane remains the only authority for effective status.
+
 ## 2026-05-28 Panel Convergence — Origin Obligation Sharpened to the Generation-Chirality Grading
 
 Proof obligation #1 ("Origin": derive `S_int = −χ_η M_phys ⟨ρ,Φ⟩` from retained

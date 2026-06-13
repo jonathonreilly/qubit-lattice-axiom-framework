@@ -73,6 +73,33 @@ load-bearing outside this open-gate comparator. A future quark-mass
 theorem must either derive a scheme-native framework mass definition or
 explicitly admit a scheme/scale convention.
 
+## 2026-06-12 Sector-Dial Source Firewall
+
+The algebraic `C_3`/Koide coordinate identity closes, but the
+quark-sector physics does not. This note's current value is a warning
+theorem for the lane: copying the charged-lepton BAE dial into quarks
+is not licensed.
+
+The exact residuals are:
+
+- no framework-native quark mass definition, renormalization scheme, or
+  scale is derived here;
+- no quark-sector Brannen phase, amplitude ratio, or sector dial is
+  derived here;
+- no CKM-to-mass theorem is consumed or implied here;
+- the displayed central values remain external comparators only.
+
+A retained positive quark-mass spectrum lane must first supply a
+sector-specific mass scheme/scale and quark dial theorem. Until then,
+this row is an open gate whose only durable result is the no-transfer
+discipline from charged leptons to quarks.
+
+Source-surface summary: this is an open gate and comparator-only route-pruning
+artifact. The live blocker is a sector-specific quark mass scheme/scale and
+quark dial theorem. No retained-grade proposal or status promotion is made
+here; the independent audit lane remains the only authority for effective
+status.
+
 ## Boundaries
 
 This open gate does not claim:
@@ -123,6 +150,6 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_mass_spectrum_koide_scheme_ope
 Expected:
 
 ```text
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=19 FAIL=0
 VERDICT: quark Koide-scheme open gate verified; quark BAE parameters and scales remain open.
 ```

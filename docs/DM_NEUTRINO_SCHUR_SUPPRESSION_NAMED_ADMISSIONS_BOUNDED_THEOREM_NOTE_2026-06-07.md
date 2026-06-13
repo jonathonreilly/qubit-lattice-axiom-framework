@@ -63,6 +63,37 @@ remaining admission is the **identification** of this graph-shift φ-space with 
 Dirac Higgs family `M(φ)=Σ φ_i Γ_i` φ-space (listed out-of-scope in `dirac_bridge`).
 This is materially narrower than the prior "V_sel flatly admitted" boundary.
 
+## 2026-06-12 Admissions-Closure Attempt And No-Go Routing
+
+The finite Schur assembly is retained algebra once the physical inputs
+are granted, but the row cannot promote without real bridge theorems.
+The current source packet narrows the remaining work as follows:
+
+- **ADM-1 stays open.** The retained observable-principle determinant
+  theorem does not license the `D = m I` neutrino baseline; its domain
+  is invertible real anti-Hermitian `D`. The readout
+  `y_nu^(0)/g = 1/sqrt2` therefore remains a physical-readout bridge,
+  not a consequence of the retained determinant theorem.
+- **ADM-2 stays a comparator.** The physical weak coupling `g` is not
+  derived here.
+- **ADM-3 is narrowed but not closed.** The retained graph-shift surface
+  derives the quartic form and coefficient `32`. The native pure
+  even-trace Dirac-Higgs transport route is blocked by
+  [`DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md`](DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md):
+  for `M(phi)^2 = |phi|^2 I`, pure even trace invariants are radial and
+  cannot reproduce the anisotropic taste-cube curvature. A positive
+  closure therefore needs an additional, reviewed phi-space transport
+  theorem outside that no-go's restricted native class.
+
+Source-surface summary: this is bounded support only. It prunes the route by
+preserving the Schur return algebra `j^2/m`, the graph-shift `V_sel` form and
+coefficient `32`, and the determinant-domain mismatch for the naive readout
+route. The live blockers remain the ADM-1 physical readout theorem, the ADM-2
+physical coupling derivation, and an ADM-3 graph-shift-to-Dirac-Higgs phi-space
+bridge outside the native even-trace no-go. No retained-grade proposal or
+status promotion is made here; the independent audit lane remains the only
+authority for effective status.
+
 ## Theorem (bounded)
 
 Given ADM-1 (`j=g/√2`) and ADM-2 (`g` the physical coupling), and with `m_perp=32`
@@ -75,7 +106,7 @@ not claimed here.)
 
 All of T1 (Schur return), T2 (V_sel=32 from the retained graph-shift + Hessian), T3
 (raw 1/√2 ratio, det responses, the `D=m·I` domain mismatch), T4 (assembly), and three
-adversarial controls are checked exactly in the runner (`TOTAL: PASS=15 FAIL=0`).
+adversarial controls are checked exactly in the runner (`TOTAL: PASS=17 FAIL=0`).
 
 ## Does Not Claim
 

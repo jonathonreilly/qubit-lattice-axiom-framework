@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1534
+**Total pending:** 1533
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 79
 
 By criticality:
-- `critical`: 349
+- `critical`: 348
 - `high`: 261
 - `medium`: 439
 - `leaf`: 485
@@ -15,15 +15,15 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | audit_in_progress | critical | 1267 | 15.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_source_domain_bridge_no_go.py` |
-| 2 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | audit_in_progress | critical | 1267 | 15.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_sharp_record_fisher_tangent_space_2026_06_06.py` |
-| 3 | `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | audit_in_progress | critical | 1267 | 15.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_tensor_composition_requires_local_tomography_exact.py` |
-| 4 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | critical | 1266 | 17.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_axis_alignment.py` |
-| 5 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | critical | 1266 | 16.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30.py` |
-| 6 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | critical | 1265 | 16.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/pmns_tm2_magnitudes_conditional_runner.py` |
-| 7 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | audit_in_progress | critical | 1265 | 15.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py` |
-| 8 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | critical | 1265 | 15.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py` |
-| 9 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | critical | 1264 | 14.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py` |
+| 1 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | audit_in_progress | critical | 1267 | 15.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_sharp_record_fisher_tangent_space_2026_06_06.py` |
+| 2 | `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | audit_in_progress | critical | 1267 | 15.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_tensor_composition_requires_local_tomography_exact.py` |
+| 3 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | critical | 1266 | 17.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_axis_alignment.py` |
+| 4 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | critical | 1266 | 16.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30.py` |
+| 5 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | critical | 1265 | 16.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/pmns_tm2_magnitudes_conditional_runner.py` |
+| 6 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | audit_in_progress | critical | 1265 | 15.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py` |
+| 7 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | critical | 1265 | 15.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py` |
+| 8 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | critical | 1264 | 14.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py` |
+| 9 | `s3_time_theta_to_slice_coupling_note` | open_gate | unaudited | critical | 1264 | 14.80 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 10 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | critical | 1264 | 14.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_kernel_z_certificate_check_2026_06_11.py` |
 | 11 | `magnitude_reads_minimal_record_block_2026-06-06` | no_go | audit_in_progress | critical | 1264 | 14.30 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/magnitude_reads_minimal_record_block_2026_06_06.py` |
 | 12 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | critical | 1263 | 16.30 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_post_record_count_probability_firewall_2026_06_06.py` |
@@ -51,20 +51,20 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 34 | `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06` | positive_theorem | audit_in_progress | critical | 1265 | 14.31 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_two_site_qubit_tensor_carrier_bridge_2026_06_06.py` |
 | 35 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 1264 | 35.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_bz_corner_decomposition.py` |
 | 36 | `dm_neutrino_schur_suppression_theorem_note_2026-04-15` | bounded_theorem | unaudited | critical | 1264 | 15.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_neutrino_schur_suppression_theorem.py` |
-| 37 | `s3_time_theta_to_slice_coupling_note` | open_gate | unaudited | critical | 1264 | 14.80 |  | fresh_context_or_stronger_with_cross_confirmation | - |
-| 38 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1264 | 14.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
-| 39 | `universal_gr_tensor_variational_candidate_note` | bounded_theorem | unaudited | critical | 1263 | 17.80 |  | fresh_context_or_stronger_with_cross_confirmation | - |
-| 40 | `neutrino_majorana_current_atlas_nonrealization_note` | positive_theorem | unaudited | critical | 1263 | 15.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py` |
-| 41 | `yt_eft_bridge_theorem` | open_gate | unaudited | critical | 1263 | 14.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_eft_bridge.py` |
-| 42 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | critical | 1263 | 13.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_local_tomography_from_complex_structure_exact.py` |
-| 43 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | unaudited | critical | 1262 | 44.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_staggered_dirac_substep4_ac_check_2026_05_07_substep4ac.py` |
-| 44 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1262 | 43.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
-| 45 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | unaudited | critical | 1262 | 43.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py` |
-| 46 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 1262 | 36.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ckm_cp_phase_structural_identity.py` |
-| 47 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 1262 | 35.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_wolfenstein_lambda_a_structural_identities.py` |
-| 48 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 1262 | 32.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_hypercharge_uniqueness.py` |
-| 49 | `ckm_atlas_axiom_closure_note` | positive_theorem | unaudited | critical | 1262 | 32.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ckm_atlas_axiom_closure.py` |
-| 50 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | unaudited | critical | 1262 | 31.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ckm_magnitudes_structural_counts.py` |
+| 37 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1264 | 14.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
+| 38 | `universal_gr_tensor_variational_candidate_note` | bounded_theorem | unaudited | critical | 1263 | 17.80 |  | fresh_context_or_stronger_with_cross_confirmation | - |
+| 39 | `neutrino_majorana_current_atlas_nonrealization_note` | positive_theorem | unaudited | critical | 1263 | 15.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py` |
+| 40 | `yt_eft_bridge_theorem` | open_gate | unaudited | critical | 1263 | 14.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_eft_bridge.py` |
+| 41 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | critical | 1263 | 13.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_local_tomography_from_complex_structure_exact.py` |
+| 42 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | unaudited | critical | 1262 | 44.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_staggered_dirac_substep4_ac_check_2026_05_07_substep4ac.py` |
+| 43 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1262 | 43.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
+| 44 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | unaudited | critical | 1262 | 43.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py` |
+| 45 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 1262 | 36.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ckm_cp_phase_structural_identity.py` |
+| 46 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 1262 | 35.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_wolfenstein_lambda_a_structural_identities.py` |
+| 47 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 1262 | 32.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_hypercharge_uniqueness.py` |
+| 48 | `ckm_atlas_axiom_closure_note` | positive_theorem | unaudited | critical | 1262 | 32.30 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ckm_atlas_axiom_closure.py` |
+| 49 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | unaudited | critical | 1262 | 31.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ckm_magnitudes_structural_counts.py` |
+| 50 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | unaudited | critical | 1262 | 31.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py` |
 
 ## Citation cycle break targets
 

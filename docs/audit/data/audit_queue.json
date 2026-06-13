@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 349,
+    "critical": 348,
     "high": 261,
     "leaf": 485,
     "medium": 439
@@ -460,39 +460,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "awaiting_cross_confirmation",
-      "claim_id": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
-      "claim_scope": "Bounded current-bank audit that the quote-anchored finite typed-edge inventory over the provided Route-2/readout/SU(3) authority bank contains no derivation from the SU(3) adjoint-fraction node to the Route-2 center T/E endpoint ratio; if that bridge is added, endpoint algebra forces `rho_E = 21/4`.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "quark_route2_exact_readout_map_note_2026-04-19",
-        "quark_route2_exact_time_coupling_note_2026-04-19",
-        "rconn_derived_note",
-        "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/_frontier_loader.py",
-        "scripts/frontier_quark_endpoint_readout_constraints.py",
-        "scripts/frontier_quark_route2_exact_readout_map.py",
-        "scripts/frontier_same_source_metric_ansatz_scan.py",
-        "scripts/frontier_tensor_support_center_excess_law.py"
-      ],
-      "load_bearing_score": 15.808,
-      "note_path": "docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_quark_route2_source_domain_bridge_no_go.py",
-      "transitive_descendants": 1267
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
       "claim_id": "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
       "claim_scope": "Finite positive probability space Fisher tangent identities, normalized exponential chart for zero-mean scores, and the uniform two-outcome signed-record unit calculation.",
       "claim_type": "positive_theorem",
@@ -680,6 +647,32 @@
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py",
+      "transitive_descendants": 1264
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "s3_time_theta_to_slice_coupling_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "quark_route2_exact_time_coupling_note_2026-04-19",
+        "quark_route2_exact_readout_map_note_2026-04-19",
+        "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.805,
+      "note_path": "docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
       "transitive_descendants": 1264
     },
     {
@@ -1364,32 +1357,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_schur_suppression_theorem.py",
-      "transitive_descendants": 1264
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "s3_time_theta_to_slice_coupling_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "quark_route2_exact_time_coupling_note_2026-04-19",
-        "quark_route2_exact_readout_map_note_2026-04-19",
-        "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.805,
-      "note_path": "docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
       "transitive_descendants": 1264
     },
     {
@@ -46366,5 +46333,5 @@
     }
   ],
   "ready_count": 79,
-  "total_pending": 1534
+  "total_pending": 1533
 }

@@ -1,0 +1,22 @@
+loop: record-three-point-conditional-law-repair-20260613
+status: checkpoint_ready_for_review
+actual_current_surface_status: finite_diagnostic_source_proposal
+target_status: source_boundary_repair
+target_claim_id: record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11
+base: origin/main
+branch: physics-loop/record-three-point-conditional-law-repair-20260613
+files_touched:
+  - docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py
+  - logs/runner-cache/frontier_record_conditional_law_three_point_period_series_2026_06_11.txt
+open_imports:
+  - Born/readout chain not closed as a framework theorem
+  - C^3 carrier not closed as a framework theorem
+  - eps/tau instruments not closed as framework instruments
+  - selector/null protocol not closed beyond fixed sampled diagnostic
+  - record-conditional interpretation not closed from approved premises
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: reviewer/auditor decides whether finite-diagnostic rescope satisfies the conditional audit blocker

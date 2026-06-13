@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 870 |
+| **retained_bounded** | 871 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1422 |
+| unaudited | 1421 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1323 |
+| `audited_clean` | 1324 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1739 |
+| `unaudited` | 1738 |
 
 | claim_type | count |
 |---|---:|
@@ -101,30 +101,30 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1565 | 132.61 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1037 | 64.02 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1396 | 60.95 | `audited_clean` | **retained** |
-| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `unaudited` | unaudited |
-| 5 | `key_terminology` | meta | critical | 1282 | 50.33 | `unaudited` | meta |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1073 | 49.57 | `unaudited` | meta |
-| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 928 | 44.36 | `unaudited` | unaudited |
-| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 928 | 43.36 | `unaudited` | unaudited |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
-| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1050 | 40.54 | `unaudited` | unaudited |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
-| 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 798 | 39.14 | `audited_clean` | **retained_bounded** |
-| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1272 | 38.81 | `audited_clean` | **retained_bounded** |
-| 15 | `alpha_s_derived_note` | bounded_theorem | critical | 885 | 38.29 | `unaudited` | unaudited |
-| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 738 | 38.03 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1363 | 36.91 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1139 | 36.16 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 930 | 34.86 | `unaudited` | unaudited |
+| 1 | `minimal_axioms` | meta | critical | 1564 | 132.61 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1036 | 64.02 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1395 | 60.95 | `audited_clean` | **retained** |
+| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
+| 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
+| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
+| 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1021 | 41.50 | `audited_clean` | **retained_bounded** |
+| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1361 | 39.41 | `audited_clean` | **retained** |
+| 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 797 | 39.14 | `audited_clean` | **retained_bounded** |
+| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1271 | 38.81 | `audited_clean` | **retained_bounded** |
+| 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 737 | 38.03 | `audited_clean` | **retained_no_go** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1362 | 36.91 | `audited_clean` | **retained** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1138 | 36.15 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 929 | 34.86 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
-| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 729 | 33.01 | `unaudited` | unaudited |
-| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 726 | 31.51 | `unaudited` | unaudited |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 856 | 31.24 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 195 | 31.11 | `audited_clean` | **retained** |
+| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 728 | 33.01 | `unaudited` | unaudited |
+| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 725 | 31.50 | `unaudited` | unaudited |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 855 | 31.24 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 186 | 31.05 | `audited_clean` | **retained** |
 | 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 327 | 30.86 | `unaudited` | unaudited |
 
 
@@ -206,6 +206,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `beta_eff_two_witness_refresh_assessment_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_entropy_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2724,6 +2725,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** In the tree-like K-built sector, the contribution is bounded by a geometric k-sum with ratio g_tree |beta|^4 / 18^4, so R_tree(g_tree)=18/g_tree^(1/4) and R_tree>6 exactly when g_tree<81; the 2x2x1 four-cube block has k=4, s=4, F=16, n=15 and refutes the all-K-built fixed-increment bridge.  _(class `A`)_
 - **chain closes:** True — The cubical identities F=6k-2s, tree specialization s=k-1, n=F-1, and geometric-series threshold independently give the stated tree-sector formula and g_crit=81. The compact four-cube block has one excess shared face, giving F=16 and n=15, so the all-K-built extension is correctly blocked rather than claimed.
 - **rationale:** The load-bearing theorem is an algebraic closure over the stated sector definitions and retained-grade upstream recurrence/cumulant inputs, with the actual growth product g_tree left explicit rather than imported. The runner source performs exact rational/symbolic checks and finite cubical incidence enumeration rather than merely printing the threshold; the independent formula check confirms the Euler exponent, threshold 81, and deficit factor 9. The note also preserves the required negative boundary by not promoting the result to all K-built clusters or to the full connected series.
+- **auditor confidence:** high
+
+### `beta_eff_two_witness_refresh_assessment_note_2026-06-12`
+
+- **Note:** [`BETA_EFF_TWO_WITNESS_REFRESH_ASSESSMENT_NOTE_2026-06-12.md`](../../docs/BETA_EFF_TWO_WITNESS_REFRESH_ASSESSMENT_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the narrow refresh assessment: whether the listed post-2026-05-03 Delta coefficient, Delta analytic-class, and Delta radius rows refresh Lemma 2's beta_eff witness pair.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-013606-febd848c26-beta_eff_two_witness_refresh`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The listed exact-coefficient rows pin Delta(beta), not beta_eff(beta), and no retained theorem maps those Delta coefficients to beta_eff coefficients without the inverse bridge excluded by the retained no-go.  _(class `A`)_
+- **chain closes:** True — The retained no-go pins beta_eff only through beta^5 and treats beta_eff = R_O^{-1}(<P>_full) as a definition or fit absent an independent completion primitive. The provided coefficient/radius surface is Delta-sector data, so it supplies no K > 5 beta_eff jet or beta_eff-tail bound.
+- **rationale:** The load-bearing conclusion is an object-scope closure, not a new numerical derivation: Delta coefficients and Delta tree-sector radius diagnostics do not by themselves constrain the beta_eff completion admitted by Lemma 2. The independent arithmetic checks pass: c 6^6 = 729/156250, beta_eff^-(6) = 170/27, beta_eff^+(6) = 26582183/4218750, and R_tree > 6 iff g_tree < 81. The no-go discipline gate is narrow and preserves future routes via an exact beta_eff coefficient theorem, a non-inverse Delta-to-beta_eff bridge theorem, a beta_eff-tail bound, or an independently selected beta_eff(6).
 - **auditor confidence:** high
 
 ### `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`

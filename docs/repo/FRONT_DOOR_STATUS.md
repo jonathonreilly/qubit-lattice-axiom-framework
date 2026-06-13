@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1528 |
-| Retained-grade rows, including boxed decorations | 1361 |
+| Applied audit verdicts | 1529 |
+| Retained-grade rows, including boxed decorations | 1362 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 887 |
+| Retained bounded rows | 888 |
 | Boxed decorations under retained parents | 47 |
 | Open gates | 39 |
-| Unaudited rows | 1394 |
+| Unaudited rows | 1393 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 63 |
 | Audited renaming rows | 34 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1396 |
-| Ready rows | 6 |
+| Total pending rows | 1395 |
+| Ready rows | 5 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
-| Medium pending | 420 |
+| Medium pending | 419 |
 | Leaf pending | 413 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`susceptibility_density_vanishes_identically_1d_ibp_bounded_theorem_note_2026-06-12`](../../docs/SUSCEPTIBILITY_DENSITY_VANISHES_IDENTICALLY_1D_IBP_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11`](../../docs/THETA_MULTI_PLAQUETTE_CROSS_PLANE_ABSENCE_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11`](../../docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
@@ -81,16 +80,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3383 |
 | Critical nodes | 521 |
 | High nodes | 514 |
-| Medium nodes | 916 |
-| Leaf nodes | 1432 |
+| Medium nodes | 915 |
+| Leaf nodes | 1433 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1565 descendants; score 132.613
-- `three_generation_observable_theorem_note` - critical; 1037 descendants; score 64.020
-- `graph_first_su3_integration_note` - critical; 1396 descendants; score 60.948
+- `three_generation_observable_theorem_note` - critical; 1036 descendants; score 64.018
+- `graph_first_su3_integration_note` - critical; 1395 descendants; score 60.947
 - `observable_principle_from_axiom_note` - critical; 887 descendants; score 59.294
-- `key_terminology` - critical; 1282 descendants; score 50.325
-- `minimal_axioms_2026-05-03` - critical; 1073 descendants; score 49.569
+- `key_terminology` - critical; 1281 descendants; score 50.324
+- `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 49.567
 - `plaquette_self_consistency_note` - critical; 970 descendants; score 46.423
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 928 descendants; score 44.360
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 927 descendants; score 44.358

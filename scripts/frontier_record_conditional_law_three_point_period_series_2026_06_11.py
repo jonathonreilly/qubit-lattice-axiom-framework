@@ -2,12 +2,14 @@
 """The three-point period series (L = 3, 4, 5) of the record-conditional U(1) law shows
 NO SYSTEMATIC PERIOD STRENGTHENING: L=4's uniformly clear fixed-k gains (min-gain >=
 0.029 every seed) do NOT persist at L=5 (4/6 clear, 2/6 marginal at ~0.005);
-seeded-null positivity against the fixed 300-draw diagnostic drops from all-tested to
-5/6; and the gap medians are trendless ({~0.14, ~0.19, ~0.09}).  The criterion-free min-gain ledger replaces the
+seeded-null clearing drops from all-tested to 5/6; and the gap medians are trendless
+({~0.14, ~0.19, ~0.09}).  The criterion-free min-gain ledger replaces the
 tolerance-sensitive "monotone/stall" dichotomy (whose strict-float form would even
 mislabel the #3554 stall).
 
-Class-A exact verification for the source note
+Class-A exact verification for the finite tree/profile/rank/min-gain computations in
+the source note, plus a deterministic 300-permutation null comparison. This runner
+does not certify an exact full-permutation null.
 
     docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md
 
@@ -20,9 +22,9 @@ forbidden by the standing memory contract).  Uniform machinery across all three 
 SIX seeds at L = 5 (the standing adversarial-seed policy); the L = 3 and L = 4 baselines
 recomputed in-runner as SETS (the #3555 baseline-fairness lesson applied from the start).
 
-THE FINDINGS (exact finite evolution; deterministic seeded-null diagnostic; three periods --
-a THREE-POINT series, labeled;
-the per-event statistic is the CRITERION-FREE minimum k-step gain min(p3-p2, p4-p3)):
+THE FINDINGS (finite-tree exact; seeded-null bounded; finite horizon; three periods
+-- a THREE-POINT series, labeled; the per-event statistic is the CRITERION-FREE
+minimum k-step gain min(p3-p2, p4-p3)):
   (G1) THE MIN-GAIN LEDGER: L=3 events {~0.0001 (the #3554 stall), ~0.155}; L=4
        {0.030, 0.029, 0.068} -- uniformly CLEAR gains; L=5 {~0.014, ~0.043, ~0.051,
        ~0.005, ~0.028, ~0.005} -- 4/6 clear, 2/6 MARGINAL.  PRECISION (panel-required
@@ -31,25 +33,27 @@ the per-event statistic is the CRITERION-FREE minimum k-step gain min(p3-p2, p4-
        persist is the gain MAGNITUDE ('clarity'): L=4's uniform >= 0.029 drops to
        2/6 marginal ~0.005.  NO SYSTEMATIC STRENGTHENING of the magnitudes; the
        strict-monotonicity signature itself survives three-point (1/2, 7/7, 6/6).
-  (G2) SEEDED-NULL POSITIVITY DROPS FROM ALL-TESTED TO TYPICAL: 5/6 L=5 seeds exceed
-       the fixed seeded 300-draw label-permutation p95 diagnostic; seed 20260611's
-       most-spread event does NOT (gap -0.030) -- the first non-positive seeded-null
-       event of the series, disclosed.
+  (G2) SEEDED-NULL CLEARING DROPS FROM ALL-TESTED TO TYPICAL: against the
+       deterministic 300-permutation p95 null used below, 5/6 L=5 seeds clear;
+       seed 20260611's most-spread event does NOT (gap -0.030) -- the first
+       non-clearing event of the series, disclosed. This is not an exact
+       full-permutation null certificate.
   (G3) NO PERIOD TREND IN THE GAPS: medians ~{0.139, 0.193, 0.092} -- fluctuating,
        not monotone.  The Block-29 verdict ("comparable-or-larger, not doubled")
        extends: gap magnitudes are event/seed-dominated, not period-dominated.
 
 THE THREE-POINT VERDICT: across L = 3, 4, 5 the record-conditional structure does not
-STRENGTHEN systematically with the period -- gain magnitudes and seeded-null positivity both
-regress at L=5 (2/6 marginal; 5/6 positive -- the G2 failure is a SEEDED-NULL
-diagnostic failure, not a monotonicity failure) -- while the strict-monotonicity signature
+STRENGTHEN systematically with the period -- gain magnitudes and seeded-null clearing both
+regress at L=5 (2/6 marginal; 5/6 clearing -- the G2 failure is a SEEDED-NULL
+failure, not a monotonicity failure) -- while the strict-monotonicity signature
 persists.  #3555's magnitude clarity was not a trend onset.  At accessible periods the conditional law's structure is
 event/seed-dominated: period scans at these sizes cannot decide the conditional-law
 question (an honest negative that redirects the program -- the next lever is analytic
 or a different observable, not larger rings).
 
-NOT claimed: any asymptotic statement, concentration, CLT premises, L >= 6 or Z^3
-behavior (rings; geometry disclosed; L = 6 full trees exceed the memory contract).
+NOT claimed: exact full-permutation null, any asymptotic statement, concentration,
+CLT premises, L >= 6 or Z^3 behavior (rings; geometry disclosed; L = 6 full trees
+exceed the memory contract).
 Conditionality inherited (#3554/#3555 chain): the Born derived-chain cap (audit lane
 grades; statuses volatile); named instruments (eps = 0.6); supplied C^3 carrier; named
 hopping (tau = 0.35); guarded full-rank domain; discrete-time (retained R1 boundaries
@@ -166,6 +170,7 @@ def prefix(Theta, w, kpref, lbl=None):
 
 
 def null_p95(Theta, w, kpref, n_draws=300, seed=7777):
+    """Deterministic finite-sample p95 comparator, not full permutation enumeration."""
     r = np.random.default_rng(seed)
     B = len(w)
     base = np.arange(B) % (2 ** kpref)
@@ -295,9 +300,10 @@ check("(G1b, panel-required) #3555's LITERAL criterion -- strict monotonicity "
       "(min-gain > 0) -- PERSISTS 6/6 at L=5: only the gain MAGNITUDE fails to grow "
       "(the weakening is of 'clarity', not of monotonicity)",
       all(m > 0 for m in mono5))
-check("(G2) SEEDED-NULL POSITIVITY DROPS FROM ALL-TESTED TO TYPICAL at L=5: 5/6 positive; the "
-      "failing seed's event DISCLOSED (a seeded-null diagnostic failure, NOT a monotonicity "
-      "failure -- its min-gain is positive)",
+check("(G2) SEEDED-NULL CLEARING DROPS FROM ALL-TESTED TO TYPICAL at L=5: 5/6 clear "
+      "against the deterministic 300-permutation p95; the failing seed's event is "
+      "DISCLOSED (a seeded-null failure, NOT a monotonicity failure -- its min-gain "
+      "is positive)",
       sum(1 for g in gaps5 if g > 0) == 5 and len(fails) == 1
       and mono5[5] > 0,
       f"gaps {[f'{g:+.3f}' for g in gaps5]}; non-clearing seed {fails}")
@@ -323,7 +329,7 @@ print("  expm_multiply machinery -- no dense step unitary anywhere; measured pea
 print("  footprint ~2.5 GB, single-run safe, panels serialize).  THE MIN-GAIN LEDGER")
 print("  replaces the monotone/stall dichotomy.  (G1) #3555's STRICT monotonicity")
 print("  persists 6/6 at L=5; the gain MAGNITUDE does not (4/6 clear, 2/6 marginal):")
-print("  no systematic strengthening.  (G2) seeded-null positivity drops from all-tested to")
+print("  no systematic strengthening.  (G2) seeded-null clearing drops from all-tested to")
 print("  5/6 (failing seed disclosed).  (G3) gap medians {~0.14, ~0.19, ~0.09}:")
 print("  trendless.  THREE-POINT VERDICT: the record-conditional structure is")
 print("  event/seed-dominated at accessible periods -- period scans at these sizes")

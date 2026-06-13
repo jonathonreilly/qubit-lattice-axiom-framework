@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_taste_cube_cyclic_source_descent.py
-runner_sha256: d43c26a81e501387c7a5267d17b0cf43b4b0a6572a329213715400d7608e4c20
+runner_sha256: 12ecd413fa7919443e5f723a1487209676680d86de90002ae7a032d3ad319f5b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -19,6 +19,7 @@ PART 2: exact full-cube orbit channels descend to B0, B1, B2
   [PASS] The diagonal one-hot orbit source descends to B0
   [PASS] The forward oriented one-hot orbit source descends to C
   [PASS] The backward oriented one-hot orbit source descends to C^2
+  [PASS] Non-Hermitian oriented channels are complex-cyclic, not real Hermitian responses
   [PASS] Hermitian full-cube orbit combinations descend to B1 and B2
   [PASS] Q0, Q1, Q2 are already C_3-averaged Hermitian full-cube source channels
 
@@ -46,7 +47,7 @@ Interpretation:
   to derive the microscopic full-cube source law for those channels, and
   then the selector law that would put them on the Koide cone.
 
-PASS=15 FAIL=0
+PASS=16 FAIL=0
 
 ----- stderr -----
 

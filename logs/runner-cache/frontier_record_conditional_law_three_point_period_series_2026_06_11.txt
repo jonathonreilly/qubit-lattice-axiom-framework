@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py
-runner_sha256: b52c4cdc8236a2fa02edfad1c7434fb2b28887ab603a9c46d232be921045740a
+runner_sha256: 14713dacf2895dfcb43200f048157dbed27009caf19a2d3c8f3c68460652c898
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 48.46
+elapsed_sec: 48.91
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -38,7 +38,7 @@ Part 2  L = 5 (15 modes, 32768-dim; expm_multiply action): SIX seeds
    L=5 seed 20260611: d7 global 0.635 | 0.648/0.653/0.714 min-gain 0.0049 | gap -0.030
   [PASS] (G1) L=4's UNIFORM CLARITY DOES NOT PERSIST: at L=5 the min-gain ledger has 4/6 clear (> 0.01) and 2/6 MARGINAL (< 0.01) -- no systematic period strengthening of the conditioning gains (the honest three-point finding)  (min-gains ['0.0142', '0.0430', '0.0509', '0.0050', '0.0281', '0.0049'])
   [PASS] (G1b, panel-required) #3555's LITERAL criterion -- strict monotonicity (min-gain > 0) -- PERSISTS 6/6 at L=5: only the gain MAGNITUDE fails to grow (the weakening is of 'clarity', not of monotonicity)
-  [PASS] (G2) SEEDED-NULL POSITIVITY DROPS FROM ALL-TESTED TO TYPICAL at L=5: 5/6 positive; the failing seed's event DISCLOSED (a seeded-null diagnostic failure, NOT a monotonicity failure -- its min-gain is positive)  (gaps ['+0.076', '+0.236', '+0.095', '+0.095', '+0.126', '-0.030']; non-clearing seed [20260611])
+  [PASS] (G2) SEEDED-NULL CLEARING DROPS FROM ALL-TESTED TO TYPICAL at L=5: 5/6 clear against the deterministic 300-permutation p95; the failing seed's event is DISCLOSED (a seeded-null failure, NOT a monotonicity failure -- its min-gain is positive)  (gaps ['+0.076', '+0.236', '+0.095', '+0.095', '+0.126', '-0.030']; non-clearing seed [20260611])
 ==============================================================================
 Part 3  (G3) the three-point gap series: NO period trend
 ==============================================================================
@@ -51,7 +51,7 @@ SCOPE: extends the period series to three points (L = 3, 4, 5 rings; uniform
   footprint ~2.5 GB, single-run safe, panels serialize).  THE MIN-GAIN LEDGER
   replaces the monotone/stall dichotomy.  (G1) #3555's STRICT monotonicity
   persists 6/6 at L=5; the gain MAGNITUDE does not (4/6 clear, 2/6 marginal):
-  no systematic strengthening.  (G2) seeded-null positivity drops from all-tested to
+  no systematic strengthening.  (G2) seeded-null clearing drops from all-tested to
   5/6 (failing seed disclosed).  (G3) gap medians {~0.14, ~0.19, ~0.09}:
   trendless.  THREE-POINT VERDICT: the record-conditional structure is
   event/seed-dominated at accessible periods -- period scans at these sizes

@@ -340,9 +340,9 @@ def part8_leading_r_expansion():
     # Multiply by 1/4:
     #   d^2V^W/dm^2 |_{m=0} = -4/u_0^2 + 60 r^2 / u_0^4 + O(r^4)
     #
-    # The note and runner both use the corrected coefficient 60. The
-    # 40-coefficient approximation below is retained only as a negative
-    # numerical guard against regression to the stale comment text.
+    # The note and runner both use the corrected coefficient 60. The executable
+    # checks below fail if the note disagrees; the stale 40-coefficient
+    # approximation is retained only as a negative regression guard.
     expected_leading_coeff = 60  # revised: from the (3/u_0^4) Taylor expansion
     # Use word boundaries to avoid false positives like "240 r^2/u_0^4"
     # matching "40 r^2/u_0^4" as a substring.
@@ -385,8 +385,8 @@ def part8_leading_r_expansion():
         f"60-coeff residual = {float(diff_60):.2e} vs 40-coeff residual = {float(diff_40):.2e}",
     )
 
-    # If the note states 40 instead of 60, we FAIL — the runner is the
-    # source of truth and the note must be corrected.
+    # If the source note regresses to the counterfactual 40 coefficient, fail:
+    # the repaired note and executable assertion must keep the +60 coefficient.
     check(
         "note's stated leading-order coefficient matches runner (= 60)",
         note_states_60 and not note_states_40,

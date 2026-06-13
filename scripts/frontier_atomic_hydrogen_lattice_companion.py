@@ -5,15 +5,16 @@
 NUMERICAL COMPANION ON THE LATTICE HAMILTONIAN SURFACE
 ==========================================================================
 
-AXIOM 1: The physical local algebra is Cl(3).
-AXIOM 2: The spatial substrate is the cubic lattice Z³.
-Sources: MINIMAL_AXIOMS_2026-04-11.md
+Framework surface: current minimal Cl(3)/Z³ primitives plus the narrowed
+scalar graph-Laplacian and lattice Green-kernel dependency repair.
+Sources: MINIMAL_AXIOMS_2026-06-04.md;
+HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md;
+LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md.
 
 --------------------------------------------------------------------------
-STEP 1: KINETIC OPERATOR  [DERIVED — BROAD_GRAVITY_DERIVATION_NOTE Step 1]
+STEP 1: KINETIC OPERATOR  [narrowed scalar graph-Laplacian surface]
 --------------------------------------------------------------------------
-Cl(3) on Z³ uniquely gives the staggered Dirac Hamiltonian whose square
-is the negative graph Laplacian:
+The diagnostic atomic companion uses the scalar graph-Laplacian surface:
 
     H_free = -Δ_Z³
 
@@ -23,11 +24,12 @@ where the graph Laplacian Δ acts on a function f : Z³ → ℝ as:
 
 so (-Δ f)(x) = 6 f(x) - sum_{nn y} f(y).
 
-This is the nearest-neighbor hopping operator on Z³. It is NOT the
-Schrödinger kinetic term (p²/2m) — it is the graph operator forced by
-the Clifford structure. It recovers ∇² in the continuum limit.
+This is the nearest-neighbor scalar graph operator on Z³ used by the
+2026-06-02 dependency repair. This diagnostic does not claim a unique
+atomic kinetic closure from Cl(3) alone, and it does not promote the
+atomic companion to retained authority.
 
-Source: BROAD_GRAVITY_DERIVATION_NOTE.md Step 1; GRAVITY_CLEAN_DERIVATION_NOTE.md.
+Source: HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md.
 
 --------------------------------------------------------------------------
 STEP 2: COULOMB POTENTIAL  [DERIVED — lattice potential theory theorem]
@@ -53,7 +55,8 @@ The coupling g is a dimensionless parameter encoding the gauge-field
 strength. The 1/r form is a theorem of discrete harmonic analysis on Z³,
 not imported from Coulomb's law.
 
-Source: frontier_dm_coulomb_from_lattice.py; BROAD_GRAVITY_DERIVATION_NOTE.md Step 4.
+Source: LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+plus the 2026-06-02 dependency-repair verifier.
 
 --------------------------------------------------------------------------
 STEP 3: EFFECTIVE HAMILTONIAN  [spectral theory on the lattice]
@@ -272,8 +275,8 @@ def run_experiment() -> None:
     log("=" * 72)
     log()
     log("Derivation chain:")
-    log("  Cl(3) on Z³  →  H_free = -Δ_Z³             [BROAD_GRAVITY_DERIVATION_NOTE Step 1]")
-    log("  Z³ Green's function  →  V(r) = -g/|r|       [frontier_dm_coulomb_from_lattice.py]")
+    log("  narrowed scalar graph-Laplacian surface  →  H_free = -Δ_Z³")
+    log("  Z³ Green's function  →  V(r) = -g/|r|       [lattice Green-kernel repair]")
     log("  Spectral problem: H_g ψ = E ψ               [lattice eigenproblem on l²(Z³)]")
     log("  Coupling g treated as free; report dimensionless ratios and scales only")
     log()

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1499 |
+| Applied audit verdicts | 1500 |
 | Retained-grade rows, including boxed decorations | 1342 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 209 |
 | Retained bounded rows | 870 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1423 |
+| Unaudited rows | 1422 |
 | Retained-pending-chain rows | 18 |
-| Audited conditional rows | 54 |
+| Audited conditional rows | 55 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 4 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1425 |
-| Ready rows | 35 |
+| Total pending rows | 1424 |
+| Ready rows | 34 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 441 |
+| Leaf pending | 440 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`](../../docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md) - medium; unaudited
 - [`beta_eff_two_witness_refresh_assessment_note_2026-06-12`](../../docs/BETA_EFF_TWO_WITNESS_REFRESH_ASSESSMENT_NOTE_2026-06-12.md) - medium; unaudited
 - [`conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12`](../../docs/CONDITIONAL_LAW_PREFIX_LADDER_NO_FINITE_K_EXHAUSTION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12`](../../docs/D2_CHECKERBOARD_DECIMATION_STEP1_CLOSED_FORM_STEP2_RANGE_GROWTH_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12`](../../docs/D2_ORBITAL_SUSCEPTIBILITY_SIGN_REGIONS_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12`](../../docs/D2_TRUNCATION_ERROR_BUDGET_FIRST_DATUM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
-- [`declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12`](../../docs/DECLARED_RG_MAP_UNIFORM_CHAIN_BAND_EDGE_FIXED_POINT_NU_HALF_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
+- [`declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12`](../../docs/DECLARED_RG_MAP_UNIFORM_CHAIN_BAND_EDGE_FIXED_POINT_NU_HALF_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12`](../../docs/DOPED_FLUX_RESPONSE_NO_UNIFORM_SIGN_REGION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3383 |
 | Critical nodes | 521 |
 | High nodes | 514 |
-| Medium nodes | 918 |
-| Leaf nodes | 1430 |
+| Medium nodes | 919 |
+| Leaf nodes | 1429 |
 
 Top load-bearing rows by graph score:
 

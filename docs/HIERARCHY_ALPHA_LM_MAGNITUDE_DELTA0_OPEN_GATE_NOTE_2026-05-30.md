@@ -1,6 +1,6 @@
 # Hierarchy Alpha_LM Magnitude Delta-Zero Open Gate
 
-**Date:** 2026-05-30
+**Date:** 2026-05-30 (2026-06-12: downstream Block04 mean-field feedback probe recorded as context-only route pruning)
 **Claim type:** open_gate
 **Status:** source note; downstream status is decided by independent review.
 **Primary runner:** [`scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py`](../scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py)
@@ -51,7 +51,7 @@ A future source could close this gate by deriving an explicit `alpha_bare`
 dependence inside the relevant block observable, or by deriving a baseline-native
 transport rule that supplies the same constant-ratio coupling-power magnitude.
 
-## Sharpening record (2026-06-11; gate unchanged, still open)
+## Sharpening record (2026-06-11 / 2026-06-12; gate unchanged, still open)
 
 Two downstream probes (backticked context pointers; citation direction
 is downstream -> this gate) sharpened the obstruction surface without
@@ -68,12 +68,21 @@ closing it:
   unsupplied transport rule: one factor
   `alpha_s = alpha_bare/u_0^2` (fact 3's third progression member)
   per taste decoupling.
+- `HIERARCHY_DELTA0_ATTACHMENT_MEAN_FIELD_FEEDBACK_PROBE_NOTE_2026-06-11.md`
+  — context-only route pruning, not a load-bearing dependency for this
+  note: under declared mean-field link-feedback variants, feeding the
+  exact induced action `-n_c n ln(2u)` into the link self-consistency
+  gives a per-decoupling readout factor `R = O(1)` near `1`, about
+  `9.7x` above the required `alpha_s = 0.1033038`; therefore ordinary
+  mean-field link un-freezing is refuted as the supplier for the
+  `alpha_s`-per-decoupling attachment rule.
 
 The zero-induced-shift result forecloses quadratic-block-algebra
-closure routes at frozen links; surviving routes run through link
-un-freezing (mean-field feedback, one-link Haar integrals at strong
-coupling), readout-side dressing of the Green-kernel chain, or a
-non-link transport rule.
+closure routes at frozen links. After Block04, the ordinary
+mean-field link-feedback candidate is also pruned. Surviving routes run
+through beyond-mean-field link fluctuations or exact one-link Haar
+integrals at strong coupling, readout-side dressing of the Green-kernel
+chain, or a non-link transport rule.
 
 ## Verification
 

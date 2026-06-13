@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 881 |
+| **retained_bounded** | 882 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1409 |
+| unaudited | 1408 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1334 |
+| `audited_clean` | 1335 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1726 |
+| `unaudited` | 1725 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 884 |
-| `leaf` | 1336 |
+| `medium` | 883 |
+| `leaf` | 1337 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -609,6 +609,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -8658,6 +8659,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The ordinary eighth power of the finite dressed operator W_eta is entrywise positive with finite Birkhoff diameter, so Birkhoff contraction gives an eigenvector-level Hilbert bracket for ordinary W_eta iterates.  _(class `A`)_
 - **chain closes:** True — The scoped certificate closes from finite retained inputs plus standard Hilbert-metric/Birkhoff algebra: W_eta has the retained finite support, W_eta^8 is positive, Delta and kappa are finite, and the displayed k/8 constant follows from block contraction plus nonexpansiveness of positive linear maps. The denominator/source perturbation theorem for the entrywise-power K_k ladder is named as outside scope, not used to prove the certified W_eta bracket.
 - **rationale:** The load-bearing step is a finite-matrix algebraic closure over retained or retained_bounded inputs, not a definition, renaming, tuned comparator match, or imported physical value. Independent formula checks agree with the runner path: the log-row diameter formula is the standard projective diameter, kappa=tanh(Delta/4), and the k/8 constant is a valid weakening of the block-floor contraction bound. The source also correctly separates the ordinary W_eta certificate from the measured entrywise-power word-count ladder, and does not ship the missing measured-tail B(k) bracket.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RUNG_FOUR_DEEP_RIM_BOUNDED_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RUNG_FOUR_DEEP_RIM_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite beta=6 word-count/deep-rim readout on the stated truncated tensor_word packet, with tensor NMAX=4, MODE_MAX=80, source NMAX=7, MODE_MAX=200, matrix-element adjacent bond delta(lambda,mu)/d_lambda, and eta_inf on unmarked slots; no physical 3D environment or untruncated limit audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-021605-cdade15c32-gauge_vacuum_plaquette_word_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Route B reduces the k-word operator to the 25-channel finite-rank problem with nonzero spectrum from C_k^(1/2) G^(entrywise k) C_k^(1/2), and the eta-weighted readout closes as S_eta,k(a) = D_a sum_mu b_mu M(a,mu) L_eta(mu)^(k-1).  _(class `C`)_
+- **chain closes:** True — Within the bounded packet, the operator, bond normalization, eta boundary, and source rho-input readout are fixed by retained-grade finite inputs. An independent recomputation of the reduced channel formula reproduced the displayed P1-P5 and P20 values, including P4 = 0.603630724651.
+- **rationale:** The runner and helpers perform actual finite computations from Wilson Bessel coefficients, SU(3) fusion matrices, finite Perron solves, and the reduced k-word channel formula; the new P4 and continuation table are not printed constants. Hard-coded prior values are used as reproduction gates, and the canonical 0.5934 number is isolated to fenced distance reporting. The cited authorities are retained-grade on the bounded surfaces consumed here, while their open physical spatial-environment and untruncated-limit targets are explicitly outside this claim.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12`

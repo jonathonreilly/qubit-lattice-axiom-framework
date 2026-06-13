@@ -18,7 +18,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 211 |
+| **retained** | 210 |
 | **retained_no_go** | 204 |
 | **retained_bounded** | 868 |
 | _retained_pending_chain_ | 20 |
@@ -27,7 +27,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,9 +60,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 9 |
+| `audit_in_progress` | 8 |
 | `audited_clean` | 1305 |
-| `audited_conditional` | 23 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
@@ -138,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1461,6 +1460,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -15468,6 +15468,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The restricted packet gives an explicit finite counterexample: fair IID, biased IID, reverse-biased IID, Markov persistence, and scripted kernels all feed the same realized append/count update while disagreeing on likelihoods and expected next counts. This closes the scoped underdetermination claim without importing any producer-selection rule.
 - **rationale:** The runner source performs finite rational checks rather than merely printing constants, and the independent algebraic check is straightforward: append takes a supplied atom and count increments by the corresponding basis vector, while many normalized kernels can assign probabilities to the same prefixes. The cited semigroup boundary is retained and supports the separation between post-record append/count dynamics and supplied ensemble or generator dynamics. The no-go is scoped to the exact post-record grammar not selecting a producer; it does not claim that no producer can be supplied or derived elsewhere.
 - **auditor confidence:** high
+
+### `record_unbounded_finite_additivity_schema_2026-06-06`
+
+- **Note:** [`RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact finite-additive readout over arbitrary finite pairwise-disjoint collections of supplied nonzero unit records, including the bounded fixed-prefix versus unbounded arbitrary-finite-family split, while leaving production, probability, IID, rates, and dial selection open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260613T233350Z-record_unbounded_finite_additivi`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** For finite disjoint unit-record collections R_n, finite additivity gives I(R_n)=n, so no finite global bound exists as n ranges over arbitrary finite integers.  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, positive_theorem, class A). Vote breakdown: J1: second / audited_conditional / positive_theorem / A; J2: second / audited_conditional / positive_theorem / A; J3: second / audited_conditional / positive_theorem / A; J4: second / audited_conditional / positive_theorem / A; J5: second / audited_conditional / positive_theorem / A. Majority rationale: J1: The load-bearing math is class A: for supplied disjoint unit records, finite additivity gives I(R_n)=n, fixed prefixes are bounded by their chosen length, and for any finite B a larger finite n gives I(R_n)>B. The displayed count and frequency identities also check algebraically and do not import probability dynamics. However, the unrestricted availability of arbitrarily large finite nonzero produced record collections in a supplied readout co... | J2: The quantitative identities inventory is algebraically consistent: finite additivity and I(empty)=0 give I(R_n)=n for n unit records, fixed prefixes are bounded by their prefix length, any proposed finite bound B is exceeded by choosing n=B+1, c -> c+e_o is exact count update, and normalized frequencies are post-record ratios only when total count is nonzero. The primitive registry makes minimal_axioms an approved premise, but the Record axiom... | J3: The displayed arithmetic is class A and independently checks out: finite additivity gives I(R_n)=n for n supplied disjoint unit records, fixed prefixes are bounded by their length, and no finite global bound exists if arbitrarily large finite supplied nonzero collections are available. The registered minimal_axioms Record premise grants finite additivity in a supplied readout context but explicitly does not supply the readout context, produced... | J4: The formula inventory closes algebraically once the supplied-record premise is granted: finite additivity gives I(R_n)=n for n unit records, every fixed prefix n<=N is bounded by N, and any proposed finite bound B is exceeded by n=B+1. But the restricted packet explicitly leaves the existence/production of arbitrarily large finite nonzero disjoint produced records and the supplied readout context outside the Record axiom, so the rubric calls f... | J5: The independent formula check confirms the algebra: I(empty)=0, finite additivity gives I(R_n)=n for n supplied unit records, fixed finite prefixes are bounded by their prefix length, and any proposed finite bound B is exceeded by choosing n>B. However the registered minimal_axioms Record premise grants finite additivity only in a supplied readout context and does not supply the readout context, production/existence of arbitrarily large nonzer...
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, positive_theorem, class A). Vote breakdown: J1: second / audited_conditional / positive_theorem / A; J2: second / audited_conditional / positive_theorem / A; J3: second / audited_conditional / positive_theorem / A; J4: second / audited_conditional / positive_theorem / A; J5: second / audited_conditional / positive_theorem / A. Majority rationale: J1: The load-bearing math is class A: for supplied disjoint unit records, finite additivity gives I(R_n)=n, fixed prefixes are bounded by their chosen length, and for any finite B a larger finite n gives I(R_n)>B. The displayed count and frequency identities also check algebraically and do not import probability dynamics. However, the unrestricted availability of arbitrarily large finite nonzero produced record collections in a supplied readout co... | J2: The quantitative identities inventory is algebraically consistent: finite additivity and I(empty)=0 give I(R_n)=n for n unit records, fixed prefixes are bounded by their prefix length, any proposed finite bound B is exceeded by choosing n=B+1, c -> c+e_o is exact count update, and normalized frequencies are post-record ratios only when total count is nonzero. The primitive registry makes minimal_axioms an approved premise, but the Record axiom... | J3: The displayed arithmetic is class A and independently checks out: finite additivity gives I(R_n)=n for n supplied disjoint unit records, fixed prefixes are bounded by their length, and no finite global bound exists if arbitrarily large finite supplied nonzero collections are available. The registered minimal_axioms Record premise grants finite additivity in a supplied readout context but explicitly does not supply the readout context, produced... | J4: The formula inventory closes algebraically once the supplied-record premise is granted: finite additivity gives I(R_n)=n for n unit records, every fixed prefix n<=N is bounded by N, and any proposed finite bound B is exceeded by n=B+1. But the restricted packet explicitly leaves the existence/production of arbitrarily large finite nonzero disjoint produced records and the supplied readout context outside the Record axiom, so the rubric calls f... | J5: The independent formula check confirms the algebra: I(empty)=0, finite additivity gives I(R_n)=n for n supplied unit records, fixed finite prefixes are bounded by their prefix length, and any proposed finite bound B is exceeded by choosing n>B. However the registered minimal_axioms Record premise grants finite additivity only in a supplied readout context and does not supply the readout context, production/existence of arbitrarily large nonzer...
+- **auditor confidence:** judicial
 
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`
 

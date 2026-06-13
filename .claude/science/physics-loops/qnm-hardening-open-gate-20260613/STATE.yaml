@@ -1,0 +1,24 @@
+loop_slug: qnm-hardening-open-gate-20260613
+date: 2026-06-13
+branch: physics-loop/qnm-hardening-open-gate-20260613
+base: origin/main
+goal: "Repair the QNM hardening open-gate row by firewalling the bounded negative certificate from future positive-law promotion."
+target_status: best-honest-status
+actual_current_surface_status: open
+cycle_count: 1
+active_route: downstream source-boundary firewall
+hard_residual: "No stable sub-Nyquist QNM hardening peaks survive the stated control family on the tested bounded surface."
+files_touched:
+  - docs/QNM_HARDENING_FEASIBILITY_NOTE.md
+  - scripts/qnm_hardening_stability_certificate.py
+  - logs/runner-cache/qnm_hardening_stability_certificate.txt
+  - .claude/science/physics-loops/qnm-hardening-open-gate-20260613/
+open_imports:
+  - "Future stable sub-Nyquist QNM peaks with G=0/null controls."
+  - "Fixed-field Born/Sorkin checks for any positive spectral packet."
+  - "Threshold/window/damping/refinement controls plus a dedicated note/log pair."
+trace_gate_classification: direct_blocker_closure
+review_findings: pending reviewer extraction
+pr_status: pending
+next_exact_action: "Run guards, commit, push, and open PR."
+stop_condition: "PR opened with fresh QNM certificate cache and no audit-ledger edits."

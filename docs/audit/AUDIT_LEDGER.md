@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 878 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 38 |
-| unaudited | 1501 |
+| unaudited | 1502 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 23 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 31 |
-| `audited_clean` | 1296 |
-| `audited_conditional` | 24 |
+| `audit_in_progress` | 30 |
+| `audited_clean` | 1297 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1818 |
+| `unaudited` | 1819 |
 
 | claim_type | count |
 |---|---:|
@@ -155,7 +155,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1107,6 +1106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_axiom_audit_application_map_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1460,7 +1460,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_upper_bound_dependency_edge_repair_note_2026-06-08` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1689,22 +1688,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
   - `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`
   - `LEPTON_PHASE_MODULUS_SEPARATION_NO_GO_2026-06-06.md`
-- **auditor confidence:** high
-
-### `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`
-
-- **Note:** [`ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-dimensional audit of the claimed decomposition of AC_phi_lambda sub-admission (iii): naming vacuity, record-determined sector-to-pattern registration under a supplied hw=1 context, and relocation of the surviving carrier-locus content to already named inputs; not a derivation of the carrier locus, PDG species match, masses, or readout context.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260613-013233-cc46bc245d-acphilambda_species_bridge_r`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given the supplied hw=1 readout context and realized records, the sector-to-pattern assignment is reconstructed pointwise and uniquely for a nondegenerate registered pattern, while a law-admissible counterfactual state permutes the assignment, so the assignment is registered data rather than derivation output.  _(class `A`)_
-- **chain closes:** False — The finite algebraic checks close internally: the nondegenerate pattern gives 6 -> 1 assignment rigidity, delta -> -delta gives state-contingency, and the color contrast arithmetic has no external comparator. The clean audit chain is missing retained/adopted authority for the record-outcome/readout-context methodology that licenses the supplied {P_k} and D-map discipline as standing context rather than an added bridge.
-- **rationale:** The runner source performs real finite-dimensional checks, and an independent recomputation confirms the load-bearing identities: Hamming grading (1,3,3,1), assignment rigidity, counterfactual k=1/k=2 exchange, Wilson hw=0 distinction, and Fourier color erasure. The realized-state primitive is an accepted primitive and does not itself create bounded status. The broader decomposition nevertheless relies on non-retained/meta methodology for the supplied record readout context, especially the canonical record-outcome observable principle, so the theorem is conditional rather than clean.
-- **open / conditional deps cited:**
-  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  - `RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `action_crossover_note`
@@ -15343,6 +15326,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For each sampled dial distribution pi(s)=(1,s,s^2)/(1+s+s^2) at s=1,2,3, the supplied complete-graph reversible generator Q(s) satisfies Q(s) pi(s)=0 with one zero eigenmode and negative transverse modes.  _(class `A`)_
 - **chain closes:** True — The displayed generator construction algebraically gives nonnegative off-diagonal rates, zero column sums, stationarity of pi, and stable transverse modes for the three sampled dial values. Rate scaling and the two-state semigroup example also close as dimensionless algebraic checks.
 - **rationale:** The claim is explicitly scoped to supplied generators and sampled dial locations, not to a derived physical generator or Record-selected dial value. Independently, Q pi=0 follows because each column j has off-diagonal entries 1/pi_j and diagonal minus their sum, and the reversible symmetric form has one stationary mode with negative transverse modes. The count/probability separation and clock/rate quotient checks are ordinary finite algebra, with no external comparator or tuned numerical input.
+- **auditor confidence:** high
+
+### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`
+
+- **Note:** [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The minimal Lattice, Quantum, and Record axioms alone do not force record formation for every admissible state/dynamics choice.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-24356ec639-record_formation_not_uncondi`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Record excludes measurement/decoherence dynamics and the Lattice/Quantum/Record baseline fixes neither dynamics nor state, so baseline-consistent no-record witnesses such as H=0, decoupled H, and energy eigenstates defeat unconditional record-formation forcing.  _(class `A`)_
+- **chain closes:** True — The cited axiom memo explicitly excludes dynamics and state selection, and the displayed witnesses are exact countermodels to unconditional forcing. The conclusion is only the narrow no-go against baseline-only unconditional record formation, not a claim that records never form.
+- **rationale:** The load-bearing step is an algebraic/logical closure over the accepted minimal-axiom premise plus exact finite-dimensional unitary witness checks. The runner source computes coherence preservation for H=0 and decoupled dynamics, verifies stationarity for an eigenstate, and treats the coupled decoherence case only as non-load-bearing contrast. The no-go passes the N1-N8 discipline gate because it is scoped to unconditional forcing from the baseline and explicitly leaves conditional record-production models open.
 - **auditor confidence:** high
 
 ### `record_iid_typicality_firewall_2026-06-06`

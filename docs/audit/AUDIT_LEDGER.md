@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 217 |
-| **retained_no_go** | 209 |
+| **retained_no_go** | 210 |
 | **retained_bounded** | 882 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1408 |
+| unaudited | 1407 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1335 |
+| `audited_clean` | 1336 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1725 |
+| `unaudited` | 1724 |
 
 | claim_type | count |
 |---|---:|
@@ -107,7 +107,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
 | 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 49.57 | `unaudited` | meta |
-| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
+| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
 | 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
@@ -623,6 +623,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
@@ -8854,6 +8855,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exchange sign of the reconstructed operators is the exchange parity of the integration variables: the Grassmann anticommutator vanishes before the action/reflection/quotient, the quotient preserves it by null-space invariance, and the OS adjoint gives the central covariance {psi_x, psi_y^dag} = (K^{-1})_{xy} I.  _(class `A`)_
 - **chain closes:** False — The finite algebraic OS/CAR computation closes on the restricted tested surfaces, and an independent quotient-model check confirms the central K^{-1} anticommutator. The broader supplier chain does not close because the Berezin/RP action surface and the identification of framework matter operators with the OS-reconstructed operators are explicit open bridges in the source packet.
 - **rationale:** The runner source is substantive rather than a PASS printer: it builds the finite Grassmann and commuting-nilpotent algebras, OS Gram matrices, quotient operators, adjoints, parity, and falsification legs. The load-bearing math is algebraic and is consistent with an independent exterior-Fock quotient check: contraction with compound Gram induced by K has OS adjoint anticommutator K^{-1} I, and annihilator anticommutators vanish. However, the note itself keeps the action-surface derivation and the framework reconstruction-identification bridge out of scope. Under the rubric, retained status does not propagate through that open identification, so the audited result is conditional rather than clean.
+- **auditor confidence:** high
+
+### `gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10`
+
+- **Note:** [`GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md`](../../docs/GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On finite Z^3 qubit blocks with the retained F grading and R1-R4 site-field surface, multi-loop graded-net cocycle consistency does not force GL(F), because the hard-core eps == +1 assignment is jointly realizable and loop-consistent alongside CAR.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-a238c3c2b9-gl_f_multiloop_graded_net_co`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The decisive step is that the assignments passing the multi-loop cocycle conditions are exactly the symmetric exchange-sign assignments, and that set contains the commuting assignment eps == +1.  _(class `C`)_
+- **chain closes:** True — The Klein-string algebra gives realizability iff eps is symmetric: necessity follows from nonzero psi_x psi_y and double application of R3, while sufficiency follows by explicit mask construction. For symmetric eps, the inversion-set sign gives exchange-groupoid path independence, and the lattice-loop/framing checks supply no selector, so eps == +1 is a valid countermodel to GL(F) forcing.
+- **rationale:** The cited dependencies are retained-grade or the accepted minimal-axiom premise, and no Tier-A admission, registered primitive, external comparator, fitted scale, or hidden FS premise is imported. The runner source performs actual finite tensor-product, sign-calculus, S4 Cayley-graph, and GF(2) rank computations rather than printing constants, and the load-bearing classification also checks by direct algebra. The N1-N8 no-go discipline passes for the route-scoped claim: the result closes the multi-loop cocycle route only, while Tier-A admission, emergent-continuum migration, and future principles outside this route remain open.
 - **auditor confidence:** high
 
 ### `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`

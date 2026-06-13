@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_p1_collapses_frame_residuals_note_2026-06-01"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12",
         "gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10",
         "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12",
         "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
         "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
         "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
-        "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17"
+        "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
+        "koide_p1_collapses_frame_residuals_note_2026-06-01"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f4e491d729c3279072bc4fb6b446e6b39da479438151da0c88bca6c7b8f4a2d3",
+      "note_hash": "01194be3d0804ba5acb20378d01afd73cdcb76b374e19751d22b892f28b1a338",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

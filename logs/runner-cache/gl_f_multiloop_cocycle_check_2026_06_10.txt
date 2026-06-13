@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/gl_f_multiloop_cocycle_check_2026_06_10.py
+runner_sha256: 9bd4be74c417728395212f68f19f380c79a641d2fe7b1aa3a4212e7e6d30fba9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
 
 ========================================================================================
 [A] Classification: realizable exchange-sign assignments = symmetric (exact enumeration)
@@ -87,3 +95,6 @@ Summary
 ========================================================================================
 TOTAL: PASS=44 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

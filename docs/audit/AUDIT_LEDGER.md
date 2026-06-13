@@ -24,11 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 18 |
 | open_gate | 38 |
 | unaudited | 1502 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 33 |
 | ~~audited_conditional~~ | 23 |
+| ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -60,11 +60,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 33 |
+| `audit_in_progress` | 32 |
 | `audited_clean` | 1294 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 48 |
-| `audited_failed` | 25 |
+| `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 33 |
 | `unaudited` | 1819 |
@@ -113,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1262 | 43.30 | `unaudited` | unaudited |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1262 | 42.80 | `audited_clean` | **retained_bounded** |
 | 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1274 | 41.82 | `unaudited` | unaudited |
-| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1347 | 41.40 | `audit_in_progress` | audit_in_progress |
+| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1347 | 41.40 | `audited_failed` | ~~audited_failed~~ |
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1389 | 39.44 | `audited_clean` | **retained** |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1307 | 38.85 | `audited_clean` | **retained_no_go** |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1285 | 38.83 | `audited_clean` | **retained_bounded** |
@@ -135,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `cl3_color_automorphism_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -1532,6 +1531,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `cl3_color_automorphism_theorem` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -3631,6 +3631,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The block decomposition of Gamma_chi gives the anticommuting family directly, and Schur/circulant algebra gives doublet isotropy for C3-equivariant symmetric content. The no-go is scoped narrowly to this axis-versus-h sourcing question and does not claim closure of the separate block-count or future chirality-sourcing routes.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: Gamma_chi = diag(+1,-1,-1) forces symmetric anticommuting H to be purely singlet-doublet mixing, and C3-equivariant symmetric operators remain scalar on the doublet plane. The runner source materially computes the relevant matrices rather than merely printing constants, and its outputs match the restricted proof. The no-go discipline boundary is respected: the result is not an absolute Koide no-go and explicitly leaves the J_cs block-count route and possible upstream C3-breaking mechanisms out of scope.
 - **auditor confidence:** high
+
+### `cl3_color_automorphism_theorem`
+
+- **Note:** [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](../../docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic SU(3) embedding on the chosen 3D symmetric base of the taste cube, its commutation with the fiber SU(2) and sector-scalar Y, and the formal 8/9 adjoint channel fraction; no physical SM-color or EW-readout bridge.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260613T214903Z-cl3_color_automorphism_theorem`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** None  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_failed, bounded_theorem, class A). Vote breakdown: J1: second / audited_failed / bounded_theorem / A; J2: second / audited_failed / bounded_theorem / A; J3: second / audited_failed / bounded_theorem / A; J4: second / audited_failed / bounded_theorem / A; J5: second / audited_failed / bounded_theorem / A. Majority rationale: J1: The restricted packet supports the finite SU(3) embedding and the standard SU(3) Fierz identity on the chosen carrier, so the load-bearing class remains A. However, the strict formula inventory pass makes the displayed identity-channel normalization part of the audited source, and the note mixes T^0 = I/sqrt(N_c) with the T_F = 1/2 completeness coefficient 1/(2N_c). That normalization mismatch means the source is not clean as written, even tho... | J2: The narrowed algebraic SU(3) embedding and standard SU(3) Fierz identity are class-A finite algebra. However, the displayed identity-channel completion is internally inconsistent: T^0 = I/sqrt(N_c) gives T^0_ij T^0_kl = delta_ij delta_kl / N_c, not the stated 1/(2N_c) term; with T_F = 1/2 the normalized identity generator would be I/sqrt(2N_c). Under the binding formula-inventory rule, this quantitative normalization defect prevents an audited... | J3: The finite SU(3) embedding, commutators, and adjoint Fierz identity are standard algebraic checks on the chosen carrier, so class A is right for the load-bearing step. Under the binding strict formula-inventory rule, however, the displayed identity-channel normalization is inconsistent as written: T^0 = I/sqrt(N_c) does not itself contribute 1/(2N_c) under the same T_F = 1/2 completeness convention. That formula defect blocks audited_clean eve... | J4: The scoped SU(3) embedding and Fierz identity are algebraic, but the strict formula-inventory pass makes the displayed identity-channel normalization defect material. With Tr(T^a T^b)=1/2 delta_ab, the identity basis element compatible with the stated 1/(2N_c) completeness term is I/sqrt(2N_c), not I/sqrt(N_c). Because this displayed normalization is part of the Fierz-to-channel-count proof text, the source is not clean as written even though... | J5: The narrowed algebraic SU(3) embedding and Fierz identity are standard finite-dimensional algebra, but the strict formula-inventory pass makes the displayed identity-channel normalization part of the audited surface. With T_F = 1/2, an unweighted identity generator contributing 1/(2N_c) would be I/sqrt(2N_c), while I/sqrt(N_c) contributes 1/N_c unless an extra 1/2 channel coefficient is explicitly supplied. The source does not reconcile that c...
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_failed, bounded_theorem, class A). Vote breakdown: J1: second / audited_failed / bounded_theorem / A; J2: second / audited_failed / bounded_theorem / A; J3: second / audited_failed / bounded_theorem / A; J4: second / audited_failed / bounded_theorem / A; J5: second / audited_failed / bounded_theorem / A. Majority rationale: J1: The restricted packet supports the finite SU(3) embedding and the standard SU(3) Fierz identity on the chosen carrier, so the load-bearing class remains A. However, the strict formula inventory pass makes the displayed identity-channel normalization part of the audited source, and the note mixes T^0 = I/sqrt(N_c) with the T_F = 1/2 completeness coefficient 1/(2N_c). That normalization mismatch means the source is not clean as written, even tho... | J2: The narrowed algebraic SU(3) embedding and standard SU(3) Fierz identity are class-A finite algebra. However, the displayed identity-channel completion is internally inconsistent: T^0 = I/sqrt(N_c) gives T^0_ij T^0_kl = delta_ij delta_kl / N_c, not the stated 1/(2N_c) term; with T_F = 1/2 the normalized identity generator would be I/sqrt(2N_c). Under the binding formula-inventory rule, this quantitative normalization defect prevents an audited... | J3: The finite SU(3) embedding, commutators, and adjoint Fierz identity are standard algebraic checks on the chosen carrier, so class A is right for the load-bearing step. Under the binding strict formula-inventory rule, however, the displayed identity-channel normalization is inconsistent as written: T^0 = I/sqrt(N_c) does not itself contribute 1/(2N_c) under the same T_F = 1/2 completeness convention. That formula defect blocks audited_clean eve... | J4: The scoped SU(3) embedding and Fierz identity are algebraic, but the strict formula-inventory pass makes the displayed identity-channel normalization defect material. With Tr(T^a T^b)=1/2 delta_ab, the identity basis element compatible with the stated 1/(2N_c) completeness term is I/sqrt(2N_c), not I/sqrt(N_c). Because this displayed normalization is part of the Fierz-to-channel-count proof text, the source is not clean as written even though... | J5: The narrowed algebraic SU(3) embedding and Fierz identity are standard finite-dimensional algebra, but the strict formula-inventory pass makes the displayed identity-channel normalization part of the audited surface. With T_F = 1/2, an unweighted identity generator contributing 1/(2N_c) would be I/sqrt(2N_c), while I/sqrt(N_c) contributes 1/N_c unless an extra 1/2 channel coefficient is explicitly supplied. The source does not reconcile that c...
+- **auditor confidence:** judicial
 
 ### `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 

@@ -105,6 +105,21 @@ def source_anchor_checks() -> None:
         and "bare_retained_allowed: false" in repair,
     )
     report(
+        "repair note visible type is canonical bounded_theorem",
+        "**Type:** `bounded_theorem`" in repair
+        and "not a `positive_theorem`" in repair,
+    )
+    report(
+        "repair note is not the parent dimension-selection theorem",
+        "not the parent dimension-selection theorem" in repair
+        and "full audit of the parent dimension-selection theorem" in repair,
+    )
+    report(
+        "repair note certificate is bounded-support, not exact-support",
+        "actual_current_surface_status: bounded-support" in repair
+        and "actual_current_surface_status: exact-support" not in repair,
+    )
+    report(
         "wrapper has 2026-06-08 repair section",
         "2026-06-08 dependency-edge source repair" in wrapper
         and "one-hop bounded support packets" in flat(wrapper),

@@ -1,0 +1,23 @@
+loop_slug: dimension-upper-bound-source-graph-scope-20260612
+date: 2026-06-12
+mode: audit-condition-source-scope-repair
+target_claim_id: dimension_upper_bound_dependency_edge_repair_note_2026-06-08
+actual_current_surface_status: bounded-support
+target_status: bounded-source-graph-repair
+source_blocker: "The row was audited under a positive_theorem guard even though the artifact is only a source-side dependency-edge repair."
+active_route: "Make the visible type canonical bounded_theorem, add an explicit not-parent-theorem firewall, demote the certificate to bounded-support, and add runner checks for that scope."
+files_touched:
+  - docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md
+  - scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py
+  - logs/runner-cache/dimension_upper_bound_dependency_edge_repair_2026_06_08.txt
+runner_status:
+  primary: "PASS=51 FAIL=0"
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+open_imports:
+  - "This branch does not audit or prove the parent dimension-selection theorem."
+  - "This branch does not change audit ledger claim_type or audit_status."
+review_disposition: "self-review pass for source-scope repair"
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3810"
+next_exact_action: "Refresh audit inventory."
+stop_condition: "Stop only when refreshed audit inventory has no uncovered actionable conditional or failed rows."

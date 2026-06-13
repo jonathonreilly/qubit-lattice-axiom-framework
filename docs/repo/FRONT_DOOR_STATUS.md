@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1482 |
-| Retained-grade rows, including boxed decorations | 1330 |
+| Applied audit verdicts | 1483 |
+| Retained-grade rows, including boxed decorations | 1331 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 861 |
+| Retained bounded rows | 862 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1440 |
+| Unaudited rows | 1439 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 50 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1442 |
-| Ready rows | 48 |
+| Total pending rows | 1441 |
+| Ready rows | 47 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 458 |
+| Leaf pending | 457 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12`](../../docs/BRANCHING_SLACK_RATE_PROJECTIVE_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27`](../../docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md) - medium; unaudited
 - [`exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11`](../../docs/EXACT_FIXED_ENERGY_SCHUR_DECIMATION_FREE_CHAIN_FORM_MIGRATION_ONE_STEP_MAP_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06`](../../docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
-- [`gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10`](../../docs/GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md) - leaf; unaudited
+- [`gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10`](../../docs/GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md) - medium; unaudited
+- [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

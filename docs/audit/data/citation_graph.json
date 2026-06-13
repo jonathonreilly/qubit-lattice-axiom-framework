@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12",
         "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
         "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
         "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
         "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
         "koide_p1_collapses_frame_residuals_note_2026-06-01",
-        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
+        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+        "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "966c1ab703b635899f510dfb67cea6e5270050c0812793174091a1c994d3adde",
+      "note_hash": "5b545f27d9d8e340bd8864c8df4accfee1a1abf564835d0f6642a0a8180e7fa2",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

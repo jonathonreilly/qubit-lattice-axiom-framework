@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_record_scalar_map_no_go_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_record_scalar_map_no_go_note_2026-06-05",
         "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
         "record_unbounded_finite_additivity_schema_2026-06-06",
         "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f423e1606d45cd4e5dddea0619d431723f6cb0bedf66377618b67607d75e5135",
+      "note_hash": "730d111648c87be30980f4c77be14453c6121517ff7eb460b355eea2556dd474",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

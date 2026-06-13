@@ -1,0 +1,24 @@
+loop_slug: beta6-multicube-open-gate-20260613
+date: 2026-06-13
+branch: physics-loop/beta6-multicube-open-gate-20260613
+base: origin/main
+goal: "Repair the beta6 multi-cube open-gate row by firewalling the Euler anchor and open beta9/beta10 classifications."
+target_status: best-honest-status
+actual_current_surface_status: open
+cycle_count: 1
+active_route: downstream source-boundary firewall
+hard_residual: "The full order-beta^9 48-support classification and order-beta^10 marked-face sector remain unproved by this runner."
+files_touched:
+  - docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md
+  - scripts/frontier_beta6_multicube_resummation_relocation.py
+  - logs/runner-cache/frontier_beta6_multicube_resummation_relocation.txt
+  - .claude/science/physics-loops/beta6-multicube-open-gate-20260613/
+open_imports:
+  - "Retained enumeration of the full order-beta^9 48-support sector."
+  - "Retained computation of the order-beta^10 marked-face 3/18^10 sector."
+  - "Cluster-growth/product closure for beta=6."
+trace_gate_classification: direct_blocker_closure
+review_findings: pending reviewer extraction
+pr_status: pending
+next_exact_action: "Run guards, commit, push, and open PR."
+stop_condition: "PR opened with PASS=13 cache evidence and no audit-ledger edits."

@@ -58,6 +58,7 @@ Run:
 from __future__ import annotations
 
 from fractions import Fraction
+from pathlib import Path
 
 import mpmath as mp
 import sympy as sp
@@ -130,6 +131,16 @@ def main() -> int:
           abs(mig[20] - 8.2052) < 0.01, f"T20={mig[20]:.4f}")
 
     # ---- relocation scope guard ------------------------------------------
+    note_text = Path("docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md").read_text(
+        encoding="utf-8"
+    )
+    note_flat = " ".join(note_text.split())
+    check("source note firewalls Euler normalization and open beta9/beta10 classifications",
+          "2*(1/6)^F*3^{V-E} = 18^{1-F}" in note_flat
+          and "do not treat the open beta9/beta10 classifications as proved here" in note_flat
+          and "do not cite this packet as proof of the full order-`beta^9` 48-support classification" in note_flat
+          and "do not cite this packet as proof of the order-`beta^10` marked-face `3/18^10` sector" in note_flat)
+
     check("OPEN GATE: local K-built support is checked; full beta9/beta10 sector "
           "classification remains a source-runner target (NOT a closure)",
           True)

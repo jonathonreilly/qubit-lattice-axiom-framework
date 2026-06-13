@@ -72,6 +72,13 @@ if NOTE.exists():
         "grading",
         "The converse is **not** claimed",
         "no retained bridge supplied here",
+        "2026-06-13 bridge-scope firewall",
+        "not a retained bridge from",
+        "not a physical `r`-weighting derivation",
+        "not a proof that the framework supplies the first-order chiral coupling",
+        "commutes with Gamma_chi  does not imply  C3-equivariant",
+        "must not cite this packet as a retained derivation of",
+        "physical `M(b)⊗σ₊` tensor coupling",
         "Independent audit required",
     ]
     chk("(6) source note keeps the localization/correction/no-derivation boundary", all(k in tt for k in toks))

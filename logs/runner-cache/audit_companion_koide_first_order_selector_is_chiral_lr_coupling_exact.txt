@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py
-runner_sha256: 45a5683cb24187baba815960f430dd0e578739882f701e2323078b6f8e4aa32e
+runner_sha256: 534ee8242958a87c00f2f2cf3b252631266e2c4aa45ad7061a191add025d96ee
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.92
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 PASS - (1a) Sum lambda = 3a, Sum lambda^2 = 3a^2+6|b|^2 (both delta-INDEPENDENT) -> U(1)_b is a red herring

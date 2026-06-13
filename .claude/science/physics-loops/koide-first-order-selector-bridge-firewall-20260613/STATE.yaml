@@ -1,0 +1,20 @@
+loop: koide-first-order-selector-bridge-firewall-20260613
+status: checkpoint_ready_for_review
+actual_current_surface_status: bounded_localization_certificate
+target_status: source_boundary_repair
+target_claim_id: koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05
+base: origin/main
+branch: physics-loop/koide-first-order-selector-bridge-firewall-20260613
+files_touched:
+  - docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md
+  - scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py
+  - logs/runner-cache/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.txt
+open_imports:
+  - retained AC_phi_lambda bridge to physical M(b) tensor sigma_+ not supplied
+  - physical r weighting not supplied
+  - false converse excluded
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: reviewer/auditor checks the bridge-scope firewall

@@ -25,11 +25,14 @@ import os
 import subprocess
 import sys
 from fractions import Fraction
+from pathlib import Path
 
 
 PASS = 0
 FAIL = 0
 LOG: list[str] = []
+ROOT = Path(__file__).resolve().parent.parent
+NOTE = ROOT / "docs" / "CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md"
 
 
 def record(name: str, ok: bool, detail: str = "") -> None:
@@ -299,6 +302,15 @@ record(
     "H8: does NOT propose new axiom or new theory-language extension",
     True,
     "uses the framework baseline, retained Koide theorems, and Tier-A registry only",
+)
+
+note_plain = " ".join(NOTE.read_text(encoding="utf-8").lower().replace("*", "").replace("`", "").split())
+record(
+    "H9: pending-chain boundary keeps Tier-A admission bounded and unretired",
+    "2026-06-13 pending-chain boundary" in note_plain
+    and "does not retire the tier-a admission" in note_plain
+    and "cannot be consumed as an unbounded retained derivation of delta = 2/9" in note_plain,
+    "source boundary is machine-checked; audit status remains pipeline-owned",
 )
 
 # ======================================================================

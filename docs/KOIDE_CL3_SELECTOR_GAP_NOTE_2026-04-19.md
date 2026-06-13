@@ -5,6 +5,9 @@
 **Type:** open_gate
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome.
+**Primary runner:** [`scripts/frontier_koide_cl3_selector_gap_open_gate_2026_06_13.py`](../scripts/frontier_koide_cl3_selector_gap_open_gate_2026_06_13.py)
+(TOTAL: PASS=23 FAIL=0; cached:
+[`logs/runner-cache/frontier_koide_cl3_selector_gap_open_gate_2026_06_13.txt`](../logs/runner-cache/frontier_koide_cl3_selector_gap_open_gate_2026_06_13.txt))
 **Status:** open selector-gap inventory / support note on current `main`
 — the listed Cl(3) doublet/Kramers, baryon-Schur, SU(3)-coupling, and
 degeneracy probes are recorded as conditional candidate routes (not
@@ -60,10 +63,22 @@ must not cite this note for:
   > 5%", "eigenvalues (−2.507, −0.848, +2.195)") as bounded-theorem
   values — these are printed inventory readings, not retained results.
 
-This source revision does not add new axioms, imports, retained
-bridges, or runners. It tightens the existing inventory-only language
-to match the 2026-05-16 feedback acknowledgment and the 2026-05-10
-perimeter.
+This source revision does not add new axioms, imports, or retained
+bridges. It tightens the existing inventory-only language to match the
+2026-05-16 feedback acknowledgment and the 2026-05-10 perimeter.
+
+## 2026-06-13 executable inventory runner
+
+This note now has a primary runner that checks the open-gate inventory
+perimeter itself. The runner verifies the single load-bearing parent,
+the per-route conditional table, the named open routes, and the small
+arithmetic readings (`m_DA = -sqrt(2/3)`, `GAMMA = 1/2`, distinct
+listed eigenvalues, and the `4*pi/sqrt(6)` transport comparator).
+
+The runner does **not** supply any per-route retained authority, does
+not close the full 4x4 / transport / kappa_* routes, and does not turn
+the global Cl(3)-alone non-derivability statement into a theorem. It is
+an audit-execution aid for the existing open-gate claim only.
 
 ---
 

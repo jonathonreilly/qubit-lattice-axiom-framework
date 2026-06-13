@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py
-runner_sha256: 194b967d1c29b89e94a35e6b5ae6615b07532f5ab71efc0fa84a06134e0234ee
+runner_sha256: 2525bac8b4c78b4efb191922353b4a595f528a25758d938347cb4a6c6f5fc665
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -34,8 +34,9 @@ Scope: bounded_theorem on Brannen-BAE algebraic chain under EXPLICIT
 [PASS] H6: does NOT derive overall charged-lepton scale a  (scale a is Tier-A 'S' (absolute scale) admission per registry; separate from AC_phi_lambda)
 [PASS] H7: does NOT make any neutrino-sector claim  (charged-lepton chamber only; neutrino sector entirely out of scope)
 [PASS] H8: does NOT propose new axiom or new theory-language extension  (uses the framework baseline, retained Koide theorems, and Tier-A registry only)
+[PASS] H9: pending-chain boundary keeps Tier-A admission bounded and unretired  (source boundary is machine-checked; audit status remains pipeline-owned)
 
-PASS=21  FAIL=0
+PASS=22  FAIL=0
 
 All bounded-theorem checks PASSED under Tier-A admission framing.
 Independent audit and generated pipeline status decide post-landing standing.

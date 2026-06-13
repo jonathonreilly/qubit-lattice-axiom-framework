@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
         "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
         "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
         "pmns_graph_first_axis_alignment_note",
         "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30",
         "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
-        "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16"
+        "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
+        "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1cdb72b598c5a495ae0152aa8e24f93e5089dd83105bdacf6f915d6191cf82b6",
+      "note_hash": "70519a08ebdb6a010eac80108541417aff92a1c1b3262dd9e7bd35d5a80d9502",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

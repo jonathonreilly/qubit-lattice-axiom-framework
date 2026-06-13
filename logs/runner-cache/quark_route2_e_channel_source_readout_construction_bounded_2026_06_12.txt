@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.py
+runner_sha256: 523a46e311dd0d19e26899cda482b470351603a8cf564bbef0c309883ba8f29a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: scaling channel endpoints are exact w_shell=(Fraction(1, 1), Fraction(0, 1)), w_center=(Fraction(1, 1), Fraction(1, 6))
+PASS: supplied T row gives rho_T=-1 exactly rho_T=-1
+PASS: supplied T row gives q_T=5/6 exactly q_T=5/6
+PASS: target E row gives rho_E=21/4 exactly when supplied rho_E=21/4
+PASS: target E row gives q_E=15/8 exactly when supplied q_E=15/8
+PASS: target rows give c_TE=-8/9 exactly c_TE=-8/9
+PASS: distinct E rows agree at shell but differ at center zero=(1,1), target=(1,15/8)
+PASS: time factor is conditional because P_R c carries the rho_E dependence center prefactor delta=7/8
+PASS: F_adj at N_c=3 is 8/9 F_adj=8/9
+PASS: signed N_c=3 bridge returns q_E=15/8 c_TE=-8/9, q_E=15/8
+PASS: signed N_c=3 bridge returns rho_E=21/4 rho_E=21/4
+PASS: wrong color count N_c=2 breaks the target c_TE=-3/4, q_E=20/9, rho_E=22/3
+PASS: wrong support denominator 5 breaks the target c_TE=-8/9, q_E=9/5, rho_E=4
+PASS: wrong support denominator 12 breaks the target c_TE=-8/9, q_E=33/16, rho_E=51/4
+PASS: wrong bridge sign breaks the target c_TE=8/9, q_E=-15/8, rho_E=-69/4
+PASS: no E-center lift breaks the target q_E=1, c_TE=-5/3
+PASS: same-slope reuse breaks the target q_E=5/6, c_TE=-2
+PASS: kappa_EW family distinguishes count from physical weight R(0)=8/9, R(1/4)=11/12, R(1)=1
+PASS: rho_E target is equivalent to q_E target rho_E <-> q_E
+PASS: color bridge arithmetic is conditional not a bridge derivation bridge and weighting firewall present
+PASS: one-hop authority links are present authority table linked
+PASS: non-authority refs are plain text context pointers not markdown-linked
+PASS: status authority block is present audit status delegated
+PASS: overreach language is absent forbidden phrases absent
+PASS: comparator firewall is explicit comparators separated
+PASS: construction differentiates itself from W69 W69 distinction present
+PASS: naturality boundary distinction is present naturality distinction present
+PASS: no-go discipline **N1 present **N1
+PASS: no-go discipline **N2 present **N2
+PASS: no-go discipline **N3 present **N3
+PASS: no-go discipline **N4 present **N4
+PASS: no-go discipline **N5 present **N5
+PASS: no-go discipline **N6 present **N6
+PASS: no-go discipline **N7 present **N7
+PASS: no-go discipline **N8 present **N8
+PASS: No-Go gate result is scoped and not an audit verdict N1-N8 scoped
+PASS: boundary excludes direct derivation claims boundary list present
+TOTAL: PASS=37, FAIL=0
+
+----- stderr -----
+

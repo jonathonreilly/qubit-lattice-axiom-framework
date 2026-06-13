@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 870 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1424 |
+| unaudited | 1423 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1323 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1741 |
+| `unaudited` | 1740 |
 
 | claim_type | count |
 |---|---:|
@@ -1457,6 +1457,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1699,6 +1700,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Because r is an already-defined functional of the registered signed-root masses and takes different values on law-admissible realized states satisfying the same structural constraints, the realized-state primitive classifies the per-lane r value as registered data, not derivation output.  _(class `A`)_
 - **chain closes:** True — The algebraic identities for the C3 circulant decomposition, Q = 1/3 + (2/3)r, and recovery of r from signed roots close independently; the accepted primitive then supplies the classification rule. The claim does not derive r = 1/2 or settle the measure-side grain selection.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs plus the registered realized-state primitive, not the PDG comparator. The primitive is correctly used only for pointwise evaluation and registered-data classification; it is not treated as a selector, measure, weighting, or source of a state-contingent value. The runner source performs finite matrix, entropy, and text/registry checks rather than merely printing PASS, and an independent check confirms the key factors and signs needed for the scoped reduction.
+- **auditor confidence:** high
+
+### `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded source-side narrowing of AC_phi_lambda sub-admission (ii), conditional on the supplied Hermitian C3 circulant H(delta), K/CPT readout context, and Record registrability setting; not a derivation of |delta| = 2/9 and not retirement of A_R-eta.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-012834-ae9187c225-acphilambda_r_eta_readout_id`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The R-eta package decomposes into a forced form layer (even |delta| on the cos(3 delta) channel with no det-class pi factor) plus the single admitted identification atom A_R-eta, because the forced machinery admits all constant-magnitude candidates and cannot select the value.  _(class `A`)_
+- **chain closes:** False — The formal 3x3 algebra closes on the supplied circulant: independent eigenvalue-route checks reproduce e1 = 3a, e2 = 3a^2 - 3B^2, e3 = a^3 - 3aB^2 + 2B^3 cos(3 delta), and L3(1,2) = 2/9. The audited chain does not close from retained-grade inputs because the physical carrier/K-orbit/readout-context bridge and W2-type registrability premise are imported from conditional or unaudited sibling surfaces, while A_R-eta itself remains admitted.
+- **rationale:** The runner source performs substantive algebra rather than merely printing PASS lines, and the main identities check independently by a route different from the determinant expansion used in the runner. The load-bearing step is class A, not class C, because the circulant form, K/CPT context, and physical readout setting are supplied inputs rather than first-principles framework output. The source note itself names conditional or unaudited dependency surfaces for the carrier/K-orbit/readout context and leaves A_R-eta as a Tier-A admitted atom, so the theorem is a conditional narrowing rather than an audited clean closure.
+- **open / conditional deps cited:**
+  - `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
+  - `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md`
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+  - `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`
+  - `LEPTON_PHASE_MODULUS_SEPARATION_NO_GO_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `action_crossover_note`

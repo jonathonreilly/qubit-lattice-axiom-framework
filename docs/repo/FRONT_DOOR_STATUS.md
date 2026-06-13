@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1500 |
-| Retained-grade rows, including boxed decorations | 1342 |
+| Applied audit verdicts | 1501 |
+| Retained-grade rows, including boxed decorations | 1343 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 209 |
-| Retained bounded rows | 870 |
+| Retained bounded rows | 871 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1422 |
+| Unaudited rows | 1421 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 55 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1424 |
-| Ready rows | 34 |
+| Total pending rows | 1423 |
+| Ready rows | 33 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 440 |
+| Leaf pending | 439 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`beta_eff_two_witness_refresh_assessment_note_2026-06-12`](../../docs/BETA_EFF_TWO_WITNESS_REFRESH_ASSESSMENT_NOTE_2026-06-12.md) - medium; unaudited
 - [`conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12`](../../docs/CONDITIONAL_LAW_PREFIX_LADDER_NO_FINITE_K_EXHAUSTION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12`](../../docs/D2_CHECKERBOARD_DECIMATION_STEP1_CLOSED_FORM_STEP2_RANGE_GROWTH_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12`](../../docs/D2_ORBITAL_SUSCEPTIBILITY_SIGN_REGIONS_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12`](../../docs/D2_TRUNCATION_ERROR_BUDGET_FIRST_DATUM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12`](../../docs/DECLARED_RG_MAP_UNIFORM_CHAIN_BAND_EDGE_FIXED_POINT_NU_HALF_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
-- [`doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12`](../../docs/DOPED_FLUX_RESPONSE_NO_UNIFORM_SIGN_REGION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
+- [`doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12`](../../docs/DOPED_FLUX_RESPONSE_NO_UNIFORM_SIGN_REGION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12`](../../docs/ENERGY_COVARIANT_RG_COLLAPSE_SHIFTED_COUPLING_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -88,11 +88,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1565 descendants; score 132.613
-- `three_generation_observable_theorem_note` - critical; 1037 descendants; score 64.020
-- `graph_first_su3_integration_note` - critical; 1396 descendants; score 60.948
-- `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
-- `key_terminology` - critical; 1282 descendants; score 50.325
-- `minimal_axioms_2026-05-03` - critical; 1073 descendants; score 49.569
-- `plaquette_self_consistency_note` - critical; 971 descendants; score 46.425
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 928 descendants; score 44.360
+- `minimal_axioms` - critical; 1564 descendants; score 132.612
+- `three_generation_observable_theorem_note` - critical; 1036 descendants; score 64.018
+- `graph_first_su3_integration_note` - critical; 1395 descendants; score 60.947
+- `observable_principle_from_axiom_note` - critical; 887 descendants; score 59.294
+- `key_terminology` - critical; 1281 descendants; score 50.324
+- `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 49.567
+- `plaquette_self_consistency_note` - critical; 970 descendants; score 46.423
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 927 descendants; score 44.358

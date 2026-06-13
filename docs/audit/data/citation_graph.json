@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_dabc_symmetric_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "su3_dabc_symmetric_theorem_note_2026-05-02",
         "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
         "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
         "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
         "beta_eff_two_witness_refresh_assessment_note_2026-06-12",
         "conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12",
-        "d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12"
+        "d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12",
+        "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7c99129646998c5bfa4723d224e53649c1debce2d4db16aa6eb96d4b3d598e6e",
+      "note_hash": "74c0e84067a6dc893fb59088f2e8b7dc2d34c20993ee5afea52f29bdf7c8343c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -111342,7 +111342,7 @@
       "positive_theorem": 615
     },
     "edge_count": 12696,
-    "leaf_count": 1086,
+    "leaf_count": 1085,
     "node_count": 3383,
     "root_count": 1059,
     "runners_with_path": 2963

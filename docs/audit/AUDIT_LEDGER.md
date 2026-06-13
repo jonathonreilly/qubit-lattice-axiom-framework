@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 869 |
+| **retained_bounded** | 870 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1425 |
+| unaudited | 1424 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1322 |
+| `audited_clean` | 1323 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1742 |
+| `unaudited` | 1741 |
 
 | claim_type | count |
 |---|---:|
@@ -138,6 +138,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1685,6 +1686,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On {0,1}^3, complementation b -> 1-b maps hw=1 bijectively to hw=2 and commutes with C3[111], while the finite relabeling/readout checks leave no invariant distinction beyond the exchanged hw label.  _(class `A`)_
 - **chain closes:** True — Direct finite enumeration gives the bijection, involution, commutation, free three-cycles, equal profiles, and L_3(1,2)=2/9 arithmetic. Standard symmetric-polynomial and C3 invariant-ring checks give the determinant cos(3 delta) identity and the single orientation-odd sin(3 delta) generator, with no physical bridge or registry premise imported.
 - **rationale:** The runner source performs actual finite enumeration and symbolic algebra rather than printing hard-coded pass counts or importing a contested premise. The displayed coefficients, signs, counts, and identities are consistent within the finite support scope, including the 3+3+3+3+36 classification for the stated order-48 relabeling group. The note's boundary language keeps the result from promoting AC_phi_lambda, selecting a physical species bridge, or changing registry status.
+- **auditor confidence:** high
+
+### `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11`
+
+- **Note:** [`ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under the accepted Minimal Axioms and realized-state primitive, plus retained Koide algebra/no-go inputs, the value-bearing AC_phi_lambda occupancy setting r reduces to realized-state registration while the sector-vs-orbit measure realization remains an open frontier.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-012442-f502b0a147-acphilambda_occupancy_select`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because r is an already-defined functional of the registered signed-root masses and takes different values on law-admissible realized states satisfying the same structural constraints, the realized-state primitive classifies the per-lane r value as registered data, not derivation output.  _(class `A`)_
+- **chain closes:** True — The algebraic identities for the C3 circulant decomposition, Q = 1/3 + (2/3)r, and recovery of r from signed roots close independently; the accepted primitive then supplies the classification rule. The claim does not derive r = 1/2 or settle the measure-side grain selection.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs plus the registered realized-state primitive, not the PDG comparator. The primitive is correctly used only for pointwise evaluation and registered-data classification; it is not treated as a selector, measure, weighting, or source of a state-contingent value. The runner source performs finite matrix, entropy, and text/registry checks rather than merely printing PASS, and an independent check confirms the key factors and signs needed for the scoped reduction.
 - **auditor confidence:** high
 
 ### `action_crossover_note`

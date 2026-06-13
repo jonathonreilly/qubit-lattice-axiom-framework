@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 865 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1434 |
+| unaudited | 1433 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1317 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1751 |
+| `unaudited` | 1750 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
 | 5 | `key_terminology` | meta | critical | 1282 | 50.33 | `unaudited` | meta |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1073 | 49.57 | `unaudited` | meta |
-| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 971 | 46.42 | `audited_clean` | **retained_bounded** |
+| 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 928 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 928 | 43.36 | `unaudited` | unaudited |
 | 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
@@ -1468,6 +1468,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8580,6 +8581,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The registered toy-DAG ensemble runner reports normalized coherent-vs-incoherent contrast 0.0393, centroid shift 0.057445, width change 0.021137, and peak-bin pairwise phase differences up to about 0.3225 rad, so coherent summation over the specified DAG geometries is distinguishable from the incoherent mixture in this bounded ensemble.  _(class `C`)_
 - **chain closes:** True — The live runner deterministically constructs the five specified DAG variants, including the repaired added-edge variant, propagates the toy path-sum amplitudes, normalizes each geometry's detector wavefunction, and reproduces the note's bounded contrast, centroid, width, and phase-difference values. The source note explicitly confines the claim to this older DAG-ensemble probe and excludes staggered/headline claims.
 - **rationale:** The bounded computation closes because the current runner output matches the scoped numerical rows and the note has narrowed away the prior inflated normalization headline and any staggered-fermion interpretation. The runner does not emit classified PASS lines, but its deterministic output directly provides the audited observables and its branch would stop claiming confirmation if normalized contrast fell below the stated 1% threshold. Residual risk is citation drift: this result is only a toy_event_physics DAG-ensemble lead, not a retained staggered or gravity-entanglement claim.
+- **auditor confidence:** high
+
+### `gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite tested Berezin/RP OS reconstruction surfaces: exact N=2,3 rational kernels and the L_s=4 staggered-kernel floating leg reconstruct canonically normalized fields satisfying GL(F), conditional on the supplied Berezin/RP action surface and the framework identification bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-005604-a8654974ba-gl_f_from_berezin_rp_reconst`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exchange sign of the reconstructed operators is the exchange parity of the integration variables: the Grassmann anticommutator vanishes before the action/reflection/quotient, the quotient preserves it by null-space invariance, and the OS adjoint gives the central covariance {psi_x, psi_y^dag} = (K^{-1})_{xy} I.  _(class `A`)_
+- **chain closes:** False — The finite algebraic OS/CAR computation closes on the restricted tested surfaces, and an independent quotient-model check confirms the central K^{-1} anticommutator. The broader supplier chain does not close because the Berezin/RP action surface and the identification of framework matter operators with the OS-reconstructed operators are explicit open bridges in the source packet.
+- **rationale:** The runner source is substantive rather than a PASS printer: it builds the finite Grassmann and commuting-nilpotent algebras, OS Gram matrices, quotient operators, adjoints, parity, and falsification legs. The load-bearing math is algebraic and is consistent with an independent exterior-Fock quotient check: contraction with compound Gram induced by K has OS adjoint anticommutator K^{-1} I, and annihilator anticommutators vanish. However, the note itself keeps the action-surface derivation and the framework reconstruction-identification bridge out of scope. Under the rubric, retained status does not propagate through that open identification, so the audited result is conditional rather than clean.
 - **auditor confidence:** high
 
 ### `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`

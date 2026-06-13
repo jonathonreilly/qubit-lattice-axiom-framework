@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/gl_f_berezin_rp_reconstruction_check_2026_06_10.py
+runner_sha256: dda7916a1c3d155360a05bb01ce9e6480db3f63f8e9ac76c332d77e8558b630a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
 ==============================================================================
 GL(F) from Berezin-RP reconstruction -- exact certificate (2026-06-10)
 ==============================================================================
@@ -55,3 +63,6 @@ GL(F) from Berezin-RP reconstruction -- exact certificate (2026-06-10)
 [D] PASS: transmission certificate: psi_x psi_y != 0 and the reconstructed cross-site exchange sign EQUALS the exchange parity of the integration variables on both branches (Grassmann integrand -> sign -1; ungraded integrand -> sign +1) -- the measure surface carries exactly the frame bit the prior static negative notes prove invisible to dimension, ungraded algebra, positivity spectra, and loop data
 
 TOTAL: PASS=44 FAIL=0
+
+----- stderr -----
+

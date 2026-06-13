@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 878 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 38 |
-| unaudited | 1500 |
+| unaudited | 1501 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
-| ~~audited_renaming~~ | 33 |
+| ~~audited_renaming~~ | 32 |
 | ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 32 |
-| `audited_clean` | 1295 |
+| `audit_in_progress` | 31 |
+| `audited_clean` | 1296 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
-| `audited_renaming` | 33 |
-| `unaudited` | 1817 |
+| `audited_renaming` | 32 |
+| `unaudited` | 1818 |
 
 | claim_type | count |
 |---|---:|
@@ -153,7 +153,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `post_record_clock_rate_interface_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1050,6 +1049,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_admitted_sample_target_vector_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_clock_rate_interface_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_directed_certificate_kernel_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_expectation_concentration_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1582,7 +1582,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
-| `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -12389,19 +12388,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The ledger-scoped theorem closes by finite-dimensional support counting, operator-norm algebra, and the in-note LR tail estimate over retained-grade or accepted-premise inputs. The exact reconstructed H=-log(T)/a_tau locality and quasilocal tail-composition discussion is explicitly not ratified as proved and is outside the unconditional F1-F4 surface. The load-bearing step is analytic algebra over existing support-family inputs, so class A is more accurate than class C, though the runner includes nontrivial finite-matrix checks.
 - **auditor confidence:** high
 
-### `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`
-
-- **Note:** [`MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the narrow claim that 6-NN Z^3 reachability advances one graph edge per update tick, while any absolute physical scale remains supplied rather than record-derived.
-- **audit_status:** ~~audited_renaming~~
-- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260608-155254-bbb285b582-min_time_step_tied_to_the_la`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The minimum time step is one elementary dynamical update = one record tick, so one tick is one nearest-neighbor hop and the lattice edge and time minimum are the same elementary causal event.  _(class `F`)_
-- **chain closes:** False — The finite graph arithmetic checks: 6-NN gives six unit-distance neighbors, 26-NN includes reach to sqrt(3), and the k-tick reachability front has graph distance k. The missing step is a non-definitional retained bridge deriving the update/record tick as a minimum time step rather than identifying it by convention.
-- **rationale:** The runner genuinely verifies the finite reachability facts it prints, and an independent check agrees with the neighbor counts, graph-distance front, and the coded dispersion bound |grad E| <= 1. But the load-bearing move is the identity between update tick, record tick, a_tau, and one lattice edge. The cited clock/rate authorities support the residual absolute-scale boundary; they do not derive that tick-to-time identification. The presented ratio therefore closes only after a renaming/definition, not as a derivation from the cited inputs.
-- **auditor confidence:** high
-
 ### `minimal_absorbing_horizon_probe_note`
 
 - **Note:** [`MINIMAL_ABSORBING_HORIZON_PROBE_NOTE.md`](../../docs/MINIMAL_ABSORBING_HORIZON_PROBE_NOTE.md)
@@ -14444,6 +14430,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Supplied finite carrier plus supplied nonnegative local weights with positive totals, exact normalization, and exact product/composition check imply a normalized finite path/channel/character weight packet.  _(class `A`)_
 - **chain closes:** True — Independently, for finite weights w_i >= 0 with total T > 0, p_i = w_i/T is nonnegative and sums to one; applying the same operation row-wise gives a row-stochastic channel, and products of supplied edge weights compose by ordinary multiplication. The displayed values check out: 4/5+1/5=1, channel rows sum to one, 2*3=6 with normalization 6/7 and 1/7, and 6+3+1 normalizes to 3/5, 3/10, 1/10.
 - **rationale:** The load-bearing content is elementary finite algebra over explicitly supplied weights, not a tuned numerical match or external comparator. The runner uses exact Fraction arithmetic for the normalization and product examples, and the helper bucket totals also arithmetically match their displayed sums: 10+6+7+15+7=45 and 105+94+45+2=246. The note is correctly scoped: it certifies supplied finite normalization semantics and expressly excludes derivation of the carrier, physical measure, selector, Born law, or production dynamics from Record.
+- **auditor confidence:** high
+
+### `post_record_clock_rate_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite post-record word/count histories determine event order and counts but do not uniquely determine a physical clock or transition rates; rates are exact only conditional on a supplied strictly increasing clock map.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-580e217f06-post_record_clock_rate_inter`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** A finite history of length n can be embedded into physical time by any strictly increasing finite clock sequence tau_0 < tau_1 < ... < tau_n, preserving the same word/counts while generally changing elapsed times and rates.  _(class `A`)_
+- **chain closes:** True — The finite word/count data are invariant under replacing the supplied clock by any other strictly increasing map on the same event indices. Since the rate denominators change while the record history does not, append/count data alone do not select a physical clock rate.
+- **rationale:** The displayed quantitative checks close by finite algebra: the same four-event word admits strict clocks with elapsed times 4, 8, and 10, giving total rates 1, 1/2, and 2/5, while counts and prefix order are unchanged. Supplied-clock formulas for durations, interval rates, total rates, and per-letter rates independently match the stated arithmetic. The runner performs the relevant finite prefix/count and Fraction calculations, while its source-anchor checks are cross-note text checks and the hard-coded firewall flags are not load-bearing. The clean no-go is branch-local to the counts-alone post-record route and does not rule out rates from an added clock, production process, or dynamics bridge.
 - **auditor confidence:** high
 
 ### `post_record_conditional_audit_evidence_ladder_2026-06-06`

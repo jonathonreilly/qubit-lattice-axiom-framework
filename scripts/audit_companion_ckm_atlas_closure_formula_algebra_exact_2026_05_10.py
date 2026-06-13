@@ -34,6 +34,7 @@ precision. Status remains owned by the audit pipeline.
 """
 
 from __future__ import annotations
+from pathlib import Path
 import sys
 
 try:
@@ -46,6 +47,8 @@ except ImportError:
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parent.parent
+NOTE = ROOT / "docs" / "CKM_ATLAS_CLOSURE_FORMULA_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-10.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -342,6 +345,22 @@ def main() -> int:
         "Bernoulli counterfactual: at (p, c) = (2, 4) where p != c - 1, M(N_color) != A^2",
         simplify(M_4 - A_sq_at_other_cf) != 0,
         detail=f"M(4)={M_4}, A^2(p=2,c=4)={A_sq_at_other_cf}",
+    )
+
+    # ---------------------------------------------------------------------
+    section("Part 8: source authority boundary")
+    # ---------------------------------------------------------------------
+    note_text = " ".join(NOTE.read_text(encoding="utf-8").lower().replace("*", "").replace("`", "").split())
+    check(
+        "source boxes this algebra as decoration/corollary, not an independent retained theorem surface",
+        "type: decoration" in note_text
+        and "decoration boxing" in note_text
+        and "not an independent retained theorem surface" in note_text,
+    )
+    check(
+        "source names the missing promotion ingredient: comparator or compression theorem",
+        "no new observable comparator" in note_text
+        and "compression theorem" in note_text,
     )
 
     # ---------------------------------------------------------------------

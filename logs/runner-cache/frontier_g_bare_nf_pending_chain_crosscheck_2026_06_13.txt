@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/frontier_g_bare_nf_pending_chain_crosscheck_2026_06_13.py
+runner_sha256: e6c1963e1772201a4318f3cbd16efec805c929cf5f225cf603c625f95c14b190
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+g_bare / N_F pending-chain exact cross-check
+g_note=docs/G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md
+nf_note=docs/N_F_BOUNDED_Z2_REDUCTION_THEOREM_NOTE_2026-05-07_w2.md
+
+PASS: canonical color-carrier Gram is Tr_3(T_a T_b)=1/2 delta_ab
+PASS: canonical color-carrier Casimir is C_F=4/3
+PASS: full framework trace gives Tr_V(T_a^V T_b^V)=1 delta_ab
+PASS: trace-surface ratio Tr_V/Tr_3 is exactly 2
+PASS: C_F=(8/3)N_F maps N_F=1/2 to C_F=4/3
+PASS: C_F=(8/3)N_F maps N_F=1 to C_F=8/3
+PASS: Wilson canonical beta=2N_c at N_c=3 gives beta=6
+PASS: beta=2N_c/g_bare^2 with beta=2N_c gives g_bare^2=1
+PASS: g_bare note locates exactly one convention layer at N_F
+PASS: g_bare note excludes derivation of N_F=1/2 from A1/A2 alone
+PASS: g_bare note keeps Wilson action form as separate retained/bounded surface
+PASS: g_bare note does not claim absolute g_bare from A1+A2
+PASS: N_F note states the binary trace-surface set {1/2, 1}
+PASS: N_F note identifies V_3 value 1/2 and full V value 1
+PASS: N_F note refuses unique derivation of N_F=1/2
+PASS: N_F note refuses zero-input derivation of g_bare=1
+PASS: N_F note names remaining binary trace-surface choice
+
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

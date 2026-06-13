@@ -31,6 +31,7 @@ symbolic precision.
 from __future__ import annotations
 
 from itertools import permutations
+from pathlib import Path
 import sys
 
 try:
@@ -44,6 +45,8 @@ except ImportError:
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parent.parent
+NOTE = ROOT / "docs" / "STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -473,6 +476,22 @@ def main() -> int:
             expected_dim == end_dim,
             detail=f"matches dim_C End(H_Lambda) = {end_dim}",
         )
+
+    # =========================================================================
+    section("Part 12: source authority boundary")
+    # =========================================================================
+    note_text = " ".join(NOTE.read_text(encoding="utf-8").lower().replace("*", "").replace("`", "").split())
+    check(
+        "source boxes JW bridge as decoration/corollary, not an independent retained theorem surface",
+        "claim type: decoration" in note_text
+        and "decoration boxing" in note_text
+        and "not an independent retained theorem surface" in note_text,
+    )
+    check(
+        "source blocks downstream use as standalone staggered-Dirac gate closure",
+        "should not be consumed downstream" in note_text
+        and "standalone status-promoting staggered-dirac gate closure" in note_text,
+    )
 
     # =========================================================================
     print()

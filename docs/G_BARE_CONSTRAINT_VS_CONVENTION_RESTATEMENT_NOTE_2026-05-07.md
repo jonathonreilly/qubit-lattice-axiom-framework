@@ -5,6 +5,24 @@
 **Status:** unaudited candidate. This note is graph-visible only so the
 independent audit lane can decide its audit and effective status.
 **Primary runner:** [`scripts/frontier_g_bare_audit_residual_closure.py`](../scripts/frontier_g_bare_audit_residual_closure.py)
+**Pending-chain helper runner:** [`scripts/frontier_g_bare_nf_pending_chain_crosscheck_2026_06_13.py`](../scripts/frontier_g_bare_nf_pending_chain_crosscheck_2026_06_13.py)
+(TOTAL: PASS=17 FAIL=0; cached:
+[`logs/runner-cache/frontier_g_bare_nf_pending_chain_crosscheck_2026_06_13.txt`](../logs/runner-cache/frontier_g_bare_nf_pending_chain_crosscheck_2026_06_13.txt))
+
+## 2026-06-13 pending-chain cross-check aid
+
+The audit ledger currently records this row as awaiting independent
+cross-confirmation after the criticality reset. This source edit does
+not supply that auditor and does not change any audit status. It adds a
+small helper runner that independently rechecks the shared exact spine
+with the `N_F` trace-surface row: canonical `Tr_3(T_a T_b)=delta_ab/2`,
+`C_F=(8/3)N_F`, the full-space trace ratio `Tr_V/Tr_3=2`, and the
+Wilson algebra `beta=2N_c/g_bare^2` with `beta=2N_c` implying
+`g_bare^2=1`.
+
+The helper also checks the boundary language that `N_F=1/2`, the Wilson
+surface, and absolute `g_bare` from A1+A2 remain outside this bounded
+theorem. It is an execution aid for re-audit/cross-confirmation only.
 
 ## 0. Audit context
 

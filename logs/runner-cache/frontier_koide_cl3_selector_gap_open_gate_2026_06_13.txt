@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_cl3_selector_gap_open_gate_2026_06_13.py
+runner_sha256: 613bad4cc4204b8c9c886fc45efceb3d219dc2dd02e6cc5f97ceeee60442a918
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Koide Cl(3) selector-gap open-gate inventory runner
+note=docs/KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md
+
+PASS: note declares Type/Status as open gate
+PASS: audit-status authority remains independent
+PASS: single load-bearing parent is the V_eff coefficient-assignment context
+PASS: downstream use is forbidden for route exhaustions
+PASS: global Cl(3)-alone non-derivability is held open
+PASS: per-route table keeps kramers doublets conditional/open
+PASS: per-route table keeps doublet-a equal-diagonal conditional/open
+PASS: per-route table keeps j2 off-diagonal conditional/open
+PASS: per-route table keeps baryon schur conditional/open
+PASS: per-route table keeps su(3) coupling-mod conditional/open
+PASS: per-route table keeps no degeneracy crossing conditional/open
+PASS: per-route table keeps m_ from h_ witness conditional/open
+PASS: per-route table keeps open routes conditional/open
+PASS: open route (a) full 4x4 block remains named
+PASS: open route (b) transport gap remains observation only
+PASS: open route (c) kappa_* derivation remains central open problem
+PASS: m_DA arithmetic: -sqrt(2/3) = -0.816497 to displayed precision
+PASS: m_DA misses m_* by about 0.344 and about 30 percent
+PASS: off-diagonal GAMMA inventory value is explicitly 1/2
+PASS: listed H_sel(m_*) eigenvalues are mutually distinct  [min_gap=1.659]
+PASS: transport comparator 4*pi/sqrt(6) is near 5.13 with about 3 percent mismatch
+PASS: source note refuses status promotion or charged-lepton package upgrade
+PASS: runnerization section is boundary-only, not a new retained authority
+
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py
-runner_sha256: bad1591642fd30784587de32a11f7e151f3db0c3e858badd985b16c1abcf57f3
+runner_sha256: f29b1651430ea0b0386615a02d040c5e5f30195d54e5f30bd044a247d418a452
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.49
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -105,8 +105,14 @@ Part 11: (J3) CAR-algebra dimension count
   [PASS (A)] (J3) abstract CAR(2N) basis count = 4^N = 16 at N = 2  (matches dim_C End(H_Lambda) = 16)
   [PASS (A)] (J3) abstract CAR(2N) basis count = 4^N = 64 at N = 3  (matches dim_C End(H_Lambda) = 64)
 
+----------------------------------------------------------------------------------------
+Part 12: source authority boundary
+----------------------------------------------------------------------------------------
+  [PASS (A)] source boxes JW bridge as decoration/corollary, not an independent retained theorem surface
+  [PASS (A)] source blocks downstream use as standalone staggered-Dirac gate closure
+
 ========================================================================================
-Audit-companion result: PASS=44 FAIL=0
+Audit-companion result: PASS=46 FAIL=0
 ========================================================================================
 
 ----- stderr -----

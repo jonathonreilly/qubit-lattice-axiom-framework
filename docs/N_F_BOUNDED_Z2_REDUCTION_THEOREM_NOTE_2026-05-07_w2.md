@@ -5,6 +5,24 @@
 **Status authority:** independent audit lane only; effective status is
 pipeline-derived.
 **Primary runner:** [`scripts/cl3_n_f_derivation_2026_05_07_w2_check.py`](../scripts/cl3_n_f_derivation_2026_05_07_w2_check.py)
+**Pending-chain helper runner:** [`scripts/frontier_g_bare_nf_pending_chain_crosscheck_2026_06_13.py`](../scripts/frontier_g_bare_nf_pending_chain_crosscheck_2026_06_13.py)
+(TOTAL: PASS=17 FAIL=0; cached:
+[`logs/runner-cache/frontier_g_bare_nf_pending_chain_crosscheck_2026_06_13.txt`](../logs/runner-cache/frontier_g_bare_nf_pending_chain_crosscheck_2026_06_13.txt))
+
+## 2026-06-13 pending-chain cross-check aid
+
+The audit ledger currently records this row as awaiting independent
+cross-confirmation after the criticality reset. This source edit does
+not supply that auditor and does not change any audit status. It adds a
+small helper runner shared with the `g_bare` convention-layer row. The
+helper independently rechecks the exact trace-surface arithmetic:
+canonical color-carrier `N_F=1/2`, full-framework `N_F=1`, the ratio
+`Tr_V/Tr_3=2`, `C_F=(8/3)N_F`, and the Wilson algebra consumed by the
+parent convention-layer framing.
+
+The helper also checks the boundary language that this theorem narrows
+the normalization to a binary trace-surface choice but does not uniquely
+derive `N_F=1/2` or `g_bare=1` from zero inputs.
 
 ## Claim
 

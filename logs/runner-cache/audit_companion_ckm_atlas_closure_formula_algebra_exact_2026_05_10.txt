@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_ckm_atlas_closure_formula_algebra_exact_2026_05_10.py
-runner_sha256: d6255e5b1dea99b601283276ac266bf108479273737699aa0bf78a91d4b136f0
+runner_sha256: 8c85c2f60edb4cc6afa6bc596991486f8bfffe5d3f90dacba0d252337c30e7d6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -70,6 +70,12 @@ Part 5: counterfactual probe for (IS1) at non-framework counts
   [PASS (A)] Bernoulli counterfactual: at (p, c) = (2, 4) where p != c - 1, M(N_color) != A^2  (M(4)=3/4, A^2(p=2,c=4)=1/2)
 
 ----------------------------------------------------------------------------------------
+Part 8: source authority boundary
+----------------------------------------------------------------------------------------
+  [PASS (A)] source boxes this algebra as decoration/corollary, not an independent retained theorem surface
+  [PASS (A)] source names the missing promotion ingredient: comparator or compression theorem
+
+----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
   Verified at exact sympy precision:
@@ -84,7 +90,7 @@ Summary
     Counterfactuals: (IS1) and (BM-A^2) require specific count tuples
 
 ========================================================================================
-TOTAL: PASS=25, FAIL=0
+TOTAL: PASS=27, FAIL=0
 ========================================================================================
 
 ----- stderr -----

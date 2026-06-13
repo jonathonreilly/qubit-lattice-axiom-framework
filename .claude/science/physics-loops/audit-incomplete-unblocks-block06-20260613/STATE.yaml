@@ -1,0 +1,24 @@
+loop: audit-incomplete-unblocks-block06-20260613
+branch: physics-loop/audit-incomplete-unblocks-block06-20260613
+base: origin/main@f6ed4e65054bec7a2747d41053554f74e01df039
+created_utc: 2026-06-13
+goal: "Drain source-side coverage gaps after audited conditional repairs."
+target_status: bounded-support
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+rows_covered:
+  - koide_cl3_selector_gap_note_2026-04-19
+  - g_bare_constraint_vs_convention_restatement_note_2026-05-07
+  - n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2
+  - charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30
+  - ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10
+  - staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17
+verification:
+  - "python3 scripts/precompute_audit_runners.py --allow-non-main --push-mode=none --force --concurrency=5 --runners <5 changed/added runners>"
+  - "python3 scripts/precompute_audit_runners.py --allow-non-main --check-only --push-mode=none --runners <5 changed/added runners>"
+pr_status: pending
+next_exact_action: "Commit, push, open review PR, then recompute uncovered backlog."
+stop_condition: "All audited_conditional/audited_failed/renaming/numerical-match rows are covered elsewhere; this block covers the remaining five pending-chain source gaps and one critical open-gate missing-runner gap."

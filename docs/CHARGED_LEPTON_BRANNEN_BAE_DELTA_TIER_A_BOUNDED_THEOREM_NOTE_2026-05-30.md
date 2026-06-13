@@ -3,6 +3,22 @@
 **Date:** 2026-05-30
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py`](../scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py)
+(TOTAL: PASS=22 FAIL=0; cached:
+[`logs/runner-cache/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.txt`](../logs/runner-cache/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.txt))
+
+## 2026-06-13 pending-chain boundary
+
+This source note remains bounded by the Tier-A admission. It does not
+retire the Tier-A admission, does not derive `delta = 2/9`, and cannot
+be consumed as an unbounded retained derivation of `delta = 2/9` or the
+`sqrt(2)` Brannen-BAE amplitude. Its bounded usability depends on the
+Tier-A registry continuing to classify the charged-lepton
+`AC_phi_lambda` phase/amplitude packet as an admitted non-axiom input
+at bounded tier.
+
+This section is a source-side pending-chain firewall only. It does not
+change any audit verdict, ledger status, registry entry, or downstream
+authority surface.
 
 ## 1. Why this note exists
 

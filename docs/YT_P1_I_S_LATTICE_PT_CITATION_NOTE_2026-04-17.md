@@ -3,7 +3,9 @@
 **Date:** 2026-04-17
 **Claim type:** bounded_theorem
 **Type:** conditional / arithmetic support
-**Runner:** `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`
+**Source runner:** [`scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py`](../scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py)
+**Runner cache:** [`logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt`](../logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt)
+**Original arithmetic runner:** `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`
 
 This is a conditional citation/support layer on top of the prior P1 symbolic
 decomposition. After the 2026-06-11 audit, its load-bearing claim is narrowed
@@ -469,7 +471,74 @@ The packaged `1.92%` retains a defensible role as the standard-fundamental
 larger bracket to the corresponding P1 arithmetic; it does not require the
 audit lane to accept that bracket as a closed framework-native input.
 
-## 8. Validation
+## 8. 2026-06-12 restricted-packet re-audit bridge
+
+This section responds to the 2026-06-11 conditional audit request for a
+restricted packet that exposes the prior `I_1 = I_S` reduction, the `C_F`
+authority, and a citation/native certificate for the supplied `I_S in [4,10]`
+bracket. It is an audit-readiness bridge only. It does not update any audit
+verdict, does not promote this row, and does not treat any unaudited downstream
+quadrature note as an authority before independent review.
+
+### 8.1 Packet authorities exposed for re-audit
+
+| role | source/cache in restricted packet | machine-checked fact | status boundary |
+|---|---|---|---|
+| `I_1 = I_S` reduction | `scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`; `logs/retained/yt_p1_i1_lattice_pt_symbolic_2026-04-17.log` | 21/21 symbolic checks: `I_1 = I_S - I_V`, `I_V = 0` on the conserved-current surface, hence `I_1 = I_S` | structural input exposed for audit; this bridge does not recertify its ledger status |
+| `C_F` color factor | `docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`; `scripts/frontier_yt_p1_color_factor_retention.py`; `logs/runner-cache/frontier_yt_p1_color_factor_retention.txt` | exact `SU(3)` identities `C_F = 4/3`, `C_A = 3`, `T_F n_f = 3`, plus the three-channel decomposition | algebraic authority exposed for audit; per-channel integrals remain separate inputs |
+| conditional citation arithmetic | this note; `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`; `logs/runner-cache/frontier_yt_p1_i_s_lattice_pt_citation.txt` | supplied `I_S in [4,10]` maps to `P1 in [3.85%,9.62%]`, central `5.77%`, and `I_S = 2` maps back to the packaged `1.92%` reference | conditional arithmetic only; the bracket remains supplied unless accepted by audit or replaced by a native derivation |
+| native BZ lower-end certificate candidate | `docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`; `scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py`; `logs/runner-cache/frontier_yt_p1_bz_quadrature_full_staggered_pt.txt` | full staggered-PT cache computes `I_v_scalar = +3.902` with a quoted 5% systematic envelope and `I_v_gauge = 0`; the scalar value overlaps the lower end `I_S = 4` within that systematic | candidate native numerical support only; the quadrature lane must be independently audited before it can replace the supplied bracket |
+
+### 8.2 What the native BZ certificate does and does not prove
+
+The full-staggered quadrature cache supplies a directly inspectable native
+number near the low end of the cited bracket:
+
+```
+    I_S_native_candidate  =  I_v_scalar  =  3.902
+    5% systematic band    =  [3.707, 4.097]
+```
+
+Thus the native candidate is compatible with the low endpoint `I_S = 4` of the
+supplied bracket at the stated systematic level. In the same normalization,
+using the canonical `alpha_LM` and `C_F = 4/3`,
+
+```
+    P1_native_candidate
+      = (alpha_LM / (4 pi)) * C_F * 3.902
+      = 3.75%   (central, before the quadrature lane is audited)
+```
+
+This is useful because it checks the scale and operator family against a
+framework-native full-staggered BZ computation rather than leaving the row as
+pure citation arithmetic. It still does not prove the full supplied range
+`I_S in [4,10]`, does not prove the literature upper end `10`, and does not
+authorize replacing this row's conditional boundary with an audit-clean native
+P1 value. The only proposed movement is that re-audit now has the complete
+one-hop packet needed to decide whether the missing dependency edge is closed
+or whether the separate full-staggered BZ lane must be audited first.
+
+### 8.3 Re-audit verifier
+
+The companion verifier
+`scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py` checks the
+restricted packet above. Its PASS lines intentionally certify only:
+
+- source/cache presence for the prior symbolic, color-factor, citation, and
+  native-BZ candidate surfaces;
+- exact recovery of `I_1 = I_S`, `C_F = 4/3`, and the conditional
+  `P1 in [3.85%,9.62%]` arithmetic;
+- extraction of `I_v_scalar = +3.902` and `Delta_R = -3.769%` from the native
+  full-staggered cache;
+- explicit firewalls that this note does not claim audit closure, does not
+  prove the upper end of the supplied bracket, and does not modify the master
+  obstruction theorem.
+
+Independent audit remains required before this row or any downstream consumer
+may treat the bracket, the native-BZ candidate, or the P1 revision as retained
+authority.
+
+## 9. Validation
 
 The runner `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py` emits deterministic PASS/FAIL
 lines and is logged under `logs/retained/yt_p1_i_s_lattice_pt_citation_2026-04-17.log`.

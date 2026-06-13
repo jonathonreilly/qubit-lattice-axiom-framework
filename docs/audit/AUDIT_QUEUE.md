@@ -15,14 +15,14 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `s3_time_theta_to_slice_coupling_note` | open_gate | unaudited | critical | 1265 | 15.31 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
+| 1 | `s3_time_theta_to_slice_coupling_note` | open_gate | audit_in_progress | critical | 1265 | 15.31 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 2 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | critical | 1265 | 15.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_kernel_z_certificate_check_2026_06_11.py` |
 | 3 | `magnitude_reads_minimal_record_block_2026-06-06` | no_go | audit_in_progress | critical | 1265 | 14.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/magnitude_reads_minimal_record_block_2026_06_06.py` |
 | 4 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | critical | 1264 | 16.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_post_record_count_probability_firewall_2026_06_06.py` |
 | 5 | `g_bare_dynamical_fixation_obstruction_note_2026-04-18` | bounded_theorem | audit_in_progress | critical | 1264 | 16.30 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_critical_feature_scan.py` |
 | 6 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | critical | 1264 | 16.30 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_record_scalar_map_no_go_2026_06_05.py` |
 | 7 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | audit_in_progress | critical | 1264 | 15.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_observable_principle_p1_exponent_irreducibility_2026_05_31.py` |
-| 8 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | audit_in_progress | critical | 1263 | 14.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py` |
+| 8 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | audit_in_progress | critical | 1264 | 15.30 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py` |
 | 9 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | critical | 1263 | 14.30 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/pmns_tm2_residual_consequence_runner.py` |
 | 10 | `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11` | bounded_theorem | unaudited | critical | 1263 | 13.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/p_flux_selection_via_fsb_k_check_2026_06_11.py` |
 | 11 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | unaudited | critical | 1262 | 16.30 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py` |

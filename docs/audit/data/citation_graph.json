@@ -50350,7 +50350,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "d3_upper_bound_import_scope_gate_note_2026-06-06"
+      "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
@@ -50374,7 +50374,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+      "to": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "d3_upper_bound_import_scope_gate_note_2026-06-06",
+        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
         "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
         "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
         "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
         "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12",
-        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+        "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4b3b8bd28faf409c3e073585ce69dc4678820e424b6972fb532eef25557d8bf7",
+      "note_hash": "4308a1c8210c725ee597dc2e7541ea1f3ab536d726353006018812b51f52756a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

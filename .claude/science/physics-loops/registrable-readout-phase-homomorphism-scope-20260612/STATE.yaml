@@ -1,0 +1,27 @@
+loop_slug: registrable-readout-phase-homomorphism-scope-20260612
+date: 2026-06-12
+mode: audit-condition-repair
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+target_claim_id: registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10
+source_blocker: "Record finite additivity over disjoint records does not imply arbitrary phase readout additivity under multiplication; non-homomorphic K-even phase readouts survive Record alone."
+active_route: "Narrow the theorem to the determinant-character / group-homomorphic phase-readout subclass H_char and preserve an explicit hostile counterexample outside that subclass."
+files_touched:
+  - docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md
+  - scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py
+  - scripts/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.py
+  - logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt
+  - logs/runner-cache/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.txt
+runner_status:
+  primary: "PASS=32 FAIL=0"
+  scope_guard: "PASS=8 FAIL=0"
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+open_imports:
+  - "Record supplies a readout context only when such a context is already supplied; this PR does not derive the physical readout context."
+  - "H_char is an explicit source-side restriction, not derived from Record finite additivity."
+  - "Non-homomorphic K-even per-sector phase data remains outside the theorem."
+review_disposition: "self-review pass for source-side boundary repair; independent audit remains authoritative"
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3806"
+next_exact_action: "Refresh origin/main for the next uncovered conditional row."
+stop_condition: "Stop only after refreshed audit inventory has no uncovered actionable conditional or failed rows outside already-open repair PRs."

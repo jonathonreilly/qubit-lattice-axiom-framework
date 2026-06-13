@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared-core registrability theorem: additive-over-sectors + K/CPT-even => phase-free.
+"""Shared-core registrability theorem on homomorphic phase readouts.
 
 This runner DERIVES (does not assert) the registrable-readout structure that the
 two Tier-A registrability bridges ask for:
@@ -14,34 +14,39 @@ two Tier-A registrability bridges ask for:
         species surface is the unordered eigenvalue multiset (symmetric
         functions), reducing the admission to the magnitude-only atom |delta|.
 
-Record axiom boundary used (and ONLY this):
+Record axiom boundary plus explicit H_char restriction:
   * finite scalar additivity I over finite pairwise-disjoint record collections,
     I(empty) = 0;
   * the realized outcome is the K/CPT orbit of the realized central sector
     (so any registrable scalar is constant on K/CPT orbits = K-even);
   * Record supplies NO readout context, weighting, normalization, probability,
     log-det, modulus rule, or observable identification.
+  * H_char (extra source-side restriction): the phase part is a
+    determinant-character / log-character group homomorphism of the
+    multiplicative sector phases. Record finite additivity alone does NOT
+    imply H_char.
 
 The theorem chain (each leg is checked, several symbolically):
   T1  orthogonal central idempotents are a pairwise-disjoint record family.
   T2  finite additivity over that family forces the registrable readout to be the
       SUM of per-sector contributions (no cross-sector / interference term).
-  T3  the determinant phase of a sector-factored configuration equals the SUM of
-      per-sector phases (det multiplicativity); so arg det is in the additive
-      class.
+  T3  under H_char, the determinant phase of a sector-factored configuration
+      equals the SUM of per-sector phases (det multiplicativity); so arg det is
+      in the group-additive homomorphic class.
   T4  an additive R-valued functional g on an abelian group is ODD:
       g(-x) = -g(x), with NO regularity/continuity assumption.
   T5  K/CPT-evenness g(-x) = g(x) intersected with oddness (T4) forces g == 0.
-      => the per-sector PHASE contribution of any registrable readout vanishes.
-  T6  HOSTILE GUARD: cos(arg z) is K-even but NOT sector-additive, so it is
-      excluded by the ADDITIVITY premise (T2), not by evenness. Evenness alone
-      does not erase phase; additivity + evenness does.
+      => the per-sector PHASE contribution of any H_char homomorphic
+      registrable phase readout vanishes.
+  T6  HOSTILE GUARD: I(S)=sum_j cos(theta_j) is finite-additive over disjoint
+      record collections and K-even while still phase-dependent. Therefore the
+      theorem does not exclude non-homomorphic per-sector phase data; it only
+      excludes phase data inside H_char.
   T7  the surviving registrable det-class datum is modulus-type: log|z| is both
       additive and K-even, i.e. exactly the phase-free (k = 0) character.
   T8  strong-CP application: arg det(M_u M_d) = arg det M_u + arg det M_d is the
-      additive sector-phase sum; by T5 its registrable content is zero. The
-      multiplicative determinant-character class is exhaustive for the
-      registrable phase readout.
+      H_char additive sector-phase sum; by T5 its homomorphic registrable
+      content is zero. This does not address non-homomorphic phase readouts.
   T9  AC_phi_lambda application: conj(H(delta)) = H(-delta); the elementary
       symmetric polynomials e1,e2,e3 are EVEN in delta (registrable, unordered
       multiset); the orientation-odd line ~ sin(3 delta) is K-ODD (unregistrable
@@ -84,7 +89,7 @@ def section(title: str) -> None:
 
 def main() -> int:
     print("=" * 88)
-    print("SHARED-CORE REGISTRABILITY THEOREM: additive-over-sectors + K/CPT-even => phase-free")
+    print("SHARED-CORE REGISTRABILITY THEOREM: H_char additive phase + K/CPT-even => phase-free")
     print("=" * 88)
 
     # ------------------------------------------------------------------
@@ -101,7 +106,7 @@ def main() -> int:
     check("sum_j e_j = I: the finite central-sector decomposition", partition)
 
     # ------------------------------------------------------------------
-    section("T2 - finite additivity over disjoint sectors => SUM of per-sector contributions")
+    section("T2 - finite additivity over disjoint records => per-record sum only")
     # A registrable readout I assigns a scalar to each record; finite additivity
     # over pairwise-disjoint records means I(union) = sum I(parts), I(empty)=0.
     # We demonstrate that ANY such I has NO cross-sector term: model the most
@@ -119,11 +124,11 @@ def main() -> int:
     check("interference term c is forced to 0 by finite additivity over a disjoint pair",
           c_forced == [0] or c_forced == [sp.Integer(0)],
           detail=f"solve I(e1 u e2)=I(e1)+I(e2) for c -> {c_forced}")
-    check("registrable readout on the full decomposition = sum_j I(sector_j), no interference",
-          True, detail="iterating additivity over the disjoint central family")
+    check("Record additivity alone is set-additivity over records, not H_char",
+          True, detail="phase homomorphism under sector multiplication is an explicit extra restriction")
 
     # ------------------------------------------------------------------
-    section("T3 - determinant phase = SUM of per-sector phases (additive class)")
+    section("T3 - H_char determinant phase = SUM of per-sector phases")
     # block-diagonal (sector-factored) configuration; det = prod of sector dets.
     rng = np.random.default_rng(7)
     zs = [rng.uniform(0.3, 4.0) * np.exp(1j * rng.uniform(-np.pi, np.pi)) for _ in range(n)]
@@ -131,7 +136,7 @@ def main() -> int:
     arg_det = np.angle(np.linalg.det(M))
     sum_phases = sum(np.angle(z) for z in zs)
     wrap = ((arg_det - sum_phases + np.pi) % (2 * np.pi)) - np.pi
-    check("arg det(diag z) = sum_j arg(z_j)  (mod 2pi)", abs(wrap) < 1e-9,
+    check("under H_char, arg det(diag z) = sum_j arg(z_j)  (mod 2pi)", abs(wrap) < 1e-9,
           detail=f"residual mod 2pi = {wrap:.2e}")
 
     # ------------------------------------------------------------------
@@ -149,7 +154,7 @@ def main() -> int:
           detail="g(x)+g(-x)=g(0)=0")
 
     # ------------------------------------------------------------------
-    section("T5 - K/CPT-even INTERSECT additive => phase functional is ZERO")
+    section("T5 - K/CPT-even INTERSECT H_char group-additive => phase functional is ZERO")
     # even: g(-t) = g(t); odd (T4): g(-t) = -g(t). Subtract: 2 g(t) = 0 => g=0.
     t = sp.symbols("t", real=True)
     gt = sp.Symbol("g_t", real=True)
@@ -157,31 +162,45 @@ def main() -> int:
     forced = sp.solve(sp.Eq(gt, -gt), gt)
     check("even (g(-t)=g(t)) AND odd (g(-t)=-g(t)) => g(t) = 0", forced == [0] or forced == [sp.Integer(0)],
           detail=f"solve gt = -gt -> {forced}")
-    check("=> the per-sector PHASE contribution of any registrable readout vanishes",
-          True, detail="determinant phase character k = 0 DERIVED, not assumed")
+    check("=> the per-sector PHASE contribution of any H_char readout vanishes",
+          True, detail="determinant phase character k = 0 inside H_char, not from Record alone")
 
     # ------------------------------------------------------------------
-    section("T6 - HOSTILE GUARD: cos(arg z) is K-even but NOT additive (excluded by additivity)")
+    section("T6 - HOSTILE GUARD: non-homomorphic K-even phase data survives Record alone")
     # K-even: cos(arg conj z) = cos(-arg z) = cos(arg z). symbolic:
     th = sp.symbols("theta", real=True)
     even_cos = sp.simplify(sp.cos(-th) - sp.cos(th))
     check("cos(arg z) is K/CPT-even: cos(-theta) - cos(theta) = 0", even_cos == 0)
-    # NOT sector-additive: cos(arg(z1 z2)) != cos(arg z1) + cos(arg z2)
+    # NOT multiplicatively homomorphic: cos(arg(z1 z2)) != cos(arg z1) + cos(arg z2)
     a1, a2 = sp.symbols("a1 a2", real=True)
     additive_gap = sp.simplify(sp.cos(a1 + a2) - (sp.cos(a1) + sp.cos(a2)))
-    check("cos(arg z) is NOT sector-additive: cos(a1+a2) - (cos a1 + cos a2) != 0",
+    check("cos(arg z) is NOT H_char: cos(a1+a2) - (cos a1 + cos a2) != 0",
           additive_gap != 0, detail=f"gap = {sp.simplify(additive_gap)}")
-    # numeric confirmation it genuinely fails for random phases
+    # But a per-record sum of cosines is finite-additive over disjoint record
+    # collections and K-even, so Record alone cannot erase it.
+    theta_vals = rng.uniform(-np.pi, np.pi, size=4)
+    set_a = [0, 2]
+    set_b = [1, 3]
+    readout = lambda idxs: float(sum(np.cos(theta_vals[i]) for i in idxs))
+    finite_additive = abs(readout(set_a + set_b) - (readout(set_a) + readout(set_b))) < 1e-12
+    k_even = abs(readout([0, 1, 2, 3]) - float(sum(np.cos(-theta_vals[i]) for i in range(4)))) < 1e-12
+    phase_dependent = abs(readout([0, 1, 2, 3]) - float(len(theta_vals))) > 1e-6
+    check("sum_j cos(theta_j) is Record-finite-additive over disjoint records",
+          finite_additive)
+    check("sum_j cos(theta_j) is K-even and phase-dependent",
+          k_even and phase_dependent,
+          detail="therefore non-homomorphic K-even phase data is NOT excluded by this theorem")
+    # numeric confirmation it genuinely fails as an H_char homomorphism.
     fails = 0
     for _ in range(6):
         b1, b2 = rng.uniform(-np.pi, np.pi), rng.uniform(-np.pi, np.pi)
         if abs(np.cos(b1 + b2) - (np.cos(b1) + np.cos(b2))) > 1e-9:
             fails += 1
-    check("cos additivity fails on 6/6 random phase pairs (excluded by ADDITIVITY, not evenness)",
+    check("cos additivity fails on 6/6 random phase pairs (excluded only from H_char)",
           fails == 6, detail=f"{fails}/6 fail")
 
     # ------------------------------------------------------------------
-    section("T7 - surviving registrable det-class datum is modulus-type (k = 0)")
+    section("T7 - inside H_char, surviving registrable det-class datum is modulus-type (k = 0)")
     # log|z| is additive AND K-even => it is the phase-free character that survives.
     r1, r2 = sp.symbols("r1 r2", positive=True)
     add_logmod = sp.simplify(sp.log(r1 * r2) - (sp.log(r1) + sp.log(r2)))
@@ -189,11 +208,11 @@ def main() -> int:
     rr = sp.symbols("r", positive=True)
     even_logmod = sp.simplify(sp.log(sp.Abs(sp.conjugate(rr * sp.exp(sp.I * th)))) - sp.log(rr))
     check("log|z| K-even: log|conj z| - log|z| = 0", sp.simplify(even_logmod) == 0)
-    check("=> determinant-class phase index is k=0; modulus/log-modulus data survives",
-          True, detail="multiplicative phase character k=0 is EXHAUSTIVE on the registrable surface")
+    check("=> determinant-class phase index is k=0; modulus/log-modulus data survives inside H_char",
+          True, detail="not an exclusion of non-homomorphic Record-additive K-even phase data")
 
     # ------------------------------------------------------------------
-    section("T8 - strong-CP application: arg det(M_u M_d) registrable content is zero")
+    section("T8 - strong-CP application: H_char arg det(M_u M_d) content is zero")
     # arg det(M_u M_d) = arg det M_u + arg det M_d -> additive sector-phase sum.
     Mu = np.diag([rng.uniform(0.3, 4) * np.exp(1j * rng.uniform(-np.pi, np.pi)) for _ in range(3)])
     Md = np.diag([rng.uniform(0.3, 4) * np.exp(1j * rng.uniform(-np.pi, np.pi)) for _ in range(3)])
@@ -202,8 +221,8 @@ def main() -> int:
     wrap2 = ((lhs - rhs + np.pi) % (2 * np.pi)) - np.pi
     check("arg det(M_u M_d) = arg det M_u + arg det M_d (additive, mod 2pi)", abs(wrap2) < 1e-9,
           detail=f"residual mod 2pi = {wrap2:.2e}")
-    check("=> by T5 the registrable arg det(M_u M_d) = 0 (phase exhausted on registrable surface)",
-          True, detail="discharges the mass-orientation PHASE content within the registrable readout")
+    check("=> by T5 the H_char arg det(M_u M_d) = 0 (phase exhausted inside H_char)",
+          True, detail="does not address non-homomorphic phase readouts")
 
     # ------------------------------------------------------------------
     section("T9 - AC_phi_lambda application: conj(H)=H(-delta); symmetric=even, sin-line=odd")
@@ -232,19 +251,20 @@ def main() -> int:
     odd_line = sp.sin(3 * delta)
     check("orientation-odd line sin(3 delta) is K-ODD (flips under delta->-delta)",
           sp.simplify(odd_line.subs(delta, -delta) + odd_line) == 0)
-    check("=> registrable species surface = symmetric functions (unordered multiset); "
-          "sign of delta unregistrable; admission -> |delta| atom", True)
+    check("=> inside the symmetric-function / H_char subclass, species surface = "
+          "unordered multiset; sign of delta is not extra homomorphic registrable content",
+          True)
 
     # ------------------------------------------------------------------
     section("T10 - boundary witnesses (what the theorem does NOT close)")
     check("R2 / PL-ABSS global bridge is OFF this layer (manifold topology, not Record)",
           True, detail="Cl(3)/Z^3 -> PL S^3 x R needs Perelman/Moise/van Kampen; external-math LIVE")
     check("|delta| MAGNITUDE (2/9) still needs R-eta readout id + R2 (NOT supplied here)",
-          True, detail="this theorem removes the SIGN as extra content, not the magnitude")
+          True, detail="this theorem removes the SIGN only inside the symmetric-function / H_char subclass")
     check("strong-CP premise 1 ('no bare theta slot') is a SEPARATE surviving premise",
           True, detail="RP-no-go'd distinctly; this bridge addresses ONLY mass-orientation phase")
-    check("standing modeling premise unchanged: physical readout satisfies Record constraints",
-          True, detail="theorem removes phase freedom WITHIN that constrained class")
+    check("standing modeling premise unchanged: physical readout satisfies Record plus H_char constraints",
+          True, detail="theorem removes determinant-character phase freedom only within that constrained class")
 
     # ------------------------------------------------------------------
     print("\n" + "=" * 88)

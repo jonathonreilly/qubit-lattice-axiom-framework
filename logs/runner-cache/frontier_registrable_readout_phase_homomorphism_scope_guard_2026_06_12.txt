@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.py
+runner_sha256: f5763eeaf0100a870a2b4a1db2aeb268ce77c3718f7914ed41cefa3708331adb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+PASS: status is scoped to determinant-character / group-homomorphic subclass
+PASS: H_char is explicit and not derived from Record additivity
+PASS: non-homomorphic K-even counterexample is preserved
+PASS: theorem statement requires H_char
+PASS: Consequence A is restricted to determinant-character content
+PASS: Consequence B is restricted to symmetric-function / H_char content
+PASS: non-claim bullet excludes Record-alone restriction
+PASS: old broad Record-alone language is absent
+TOTAL: PASS=8, FAIL=0
+
+----- stderr -----
+

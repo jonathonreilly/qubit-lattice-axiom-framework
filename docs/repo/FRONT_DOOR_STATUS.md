@@ -13,15 +13,15 @@ It is not a physics claim surface and should not be edited by hand.
 |---|---:|
 | Ledger rows | 3288 |
 | Applied audit verdicts | 1436 |
-| Retained-grade rows, including boxed decorations | 1337 |
-| Retained positive theorems | 214 |
+| Retained-grade rows, including boxed decorations | 1333 |
+| Retained positive theorems | 212 |
 | Retained no-go rows | 204 |
-| Retained bounded rows | 874 |
+| Retained bounded rows | 872 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 38 |
-| Unaudited rows | 1511 |
-| Retained-pending-chain rows | 17 |
-| Audited conditional rows | 22 |
+| Unaudited rows | 1512 |
+| Retained-pending-chain rows | 19 |
+| Audited conditional rows | 23 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 20 |
@@ -34,30 +34,30 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Metric | Value |
 |---|---:|
 | Total pending rows | 1535 |
-| Ready rows | 83 |
+| Ready rows | 80 |
 | Cycle-break targets | 20 |
-| Critical pending | 351 |
+| Critical pending | 350 |
 | High pending | 261 |
 | Medium pending | 439 |
-| Leaf pending | 484 |
+| Leaf pending | 485 |
 
 Next ready rows by queue order:
 
-- [`multisite_pauli_group_theorem_note_2026-05-02`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md) - critical; audit_in_progress
-- [`tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md) - critical; audit_in_progress
 - [`busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - critical; audit_in_progress
 - [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
 - [`sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06`](../../docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md) - critical; audit_in_progress
+- [`tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md) - critical; audit_in_progress
 - [`pmns_graph_first_axis_alignment_note`](../../docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md) - critical; audit_in_progress
 - [`koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30`](../../docs/KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY_BOUNDED_NOTE_2026-05-30.md) - critical; audit_in_progress
-- [`two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06`](../../docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - critical; audit_in_progress
+- [`pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26`](../../docs/PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md) - critical; audit_in_progress
+- [`axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **428**.
+- Non-retained-grade cited rows in publication tables: **429**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -68,11 +68,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| critical | `audited_conditional` | 1 |
 | critical | `audited_failed` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
-| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

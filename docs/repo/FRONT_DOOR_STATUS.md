@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1533 |
+| Applied audit verdicts | 1532 |
 | Retained-grade rows, including boxed decorations | 1364 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 890 |
 | Boxed decorations under retained parents | 47 |
 | Open gates | 39 |
-| Unaudited rows | 1389 |
+| Unaudited rows | 1390 |
 | Retained-pending-chain rows | 18 |
-| Audited conditional rows | 65 |
+| Audited conditional rows | 64 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 4 |
@@ -33,16 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1391 |
-| Ready rows | 1 |
+| Total pending rows | 1392 |
+| Ready rows | 2 |
 | Cycle-break targets | 4 |
-| Critical pending | 278 |
+| Critical pending | 279 |
 | High pending | 285 |
 | Medium pending | 415 |
 | Leaf pending | 413 |
 
 Next ready rows by queue order:
 
+- [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
@@ -74,8 +75,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3383 |
-| Critical nodes | 521 |
-| High nodes | 514 |
+| Critical nodes | 522 |
+| High nodes | 513 |
 | Medium nodes | 910 |
 | Leaf nodes | 1438 |
 

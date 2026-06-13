@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_unbounded_finite_additivity_schema_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "pmns_tm2_residual_consequence_bounded_note_2026-05-26"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_dimensional_compression_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "record_unbounded_finite_additivity_schema_2026-06-06",
         "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
         "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
-        "hierarchy_dimensional_compression_note"
+        "hierarchy_dimensional_compression_note",
+        "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d32388c2a30b00526203d59529a4904011a61fc102a48172ecce73b801a96254",
+      "note_hash": "baa290b0f2003a3a48399de02ad577875bac23d3c7d3e8e0b052825cecb62b6a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

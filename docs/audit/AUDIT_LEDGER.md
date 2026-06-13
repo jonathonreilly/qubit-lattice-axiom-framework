@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 868 |
+| **retained_bounded** | 867 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
 | unaudited | 1515 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,9 +60,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 8 |
+| `audit_in_progress` | 7 |
 | `audited_clean` | 1305 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
@@ -137,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1459,6 +1458,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -14179,6 +14179,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Within the stated hypotheses, the stochastic row and column equations uniquely fix all displayed entries. This does not derive the residual assumptions or a value of sin^2(theta_13), but those are outside the audited conditional scope.
 - **rationale:** The displayed matrix follows by solving the stochastic row/column equations under the TM2 second-column and mu-tau equality hypotheses. Independent algebra verifies all displayed coefficients, sample values, denominator statements, double stochasticity, mu-tau equality, and nonnegativity on 0 <= s^2 <= 2/3. The runner's 41 PASS checks are class-A corroboration and partly encode the displayed formula, so the clean verdict rests on the manual algebra within the note's explicitly conditional scope.
 - **auditor confidence:** high
+
+### `pmns_tm2_residual_consequence_bounded_note_2026-05-26`
+
+- **Note:** [`PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional PMNS algebra: trimaximal second-column residual plus column-3 mu-tau modulus residual imply sin^2(theta_23)=1/2, the TM2 sum rule, and cos(delta_CP)=0 on c12*s12*s13 != 0.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260613T233812Z-pmns_tm2_residual_consequence_bo`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Using the TM2 relation, c12^2 + s12^2 s13^2 = 2/3, so equation (3) reduces to 2 c12 s12 s13 cos(delta_CP) = 0.  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / A; J2: second / audited_conditional / bounded_theorem / A; J3: second / audited_conditional / bounded_theorem / A; J4: second / audited_conditional / bounded_theorem / A; J5: second / audited_conditional / bounded_theorem / A. Majority rationale: J1: The displayed algebra checks independently: the TM2 condition gives s12^2=1/(3c13^2), the phase-independent part of |U_mu2|^2 reduces to 2/3, and the remaining phase term forces cos(delta_CP)=0 only when c12*s12*s13 is nonzero. However, the trimaximal and mu-tau residuals are explicit unclosed assumptions, and the source note states their framework derivation remains separate. Under the rubric this is a sound conditional bounded lemma, not aud... | J2: The displayed algebra checks independently: |U_e2|^2=c13^2 s12^2 gives the TM2 sum rule, the i=3 mu-tau modulus equality gives sin^2(theta_23)=1/2, and substituting s12^2=1/(3c13^2) reduces the |U_mu2|^2 equation to 2 c12 s12 s13 cos(delta_CP)=0 on the stated nonsingular chamber. That is class A algebra, but audited_clean is unavailable because the trimaximal and mu-tau residuals are explicit imported assumptions and the restricted packet supp... | J3: The displayed identities and factors close as standard algebra under the stated PMNS parametrization assumptions: the TM2 condition gives 3 s12^2 c13^2 = 1, the column-3 mu-tau modulus equality gives sin^2(theta_23)=1/2, and the |U_mu2|^2 equation reduces to 2 c12 s12 s13 cos(delta_CP)=0 on the nonsingular chamber. However, the trimaximal and mu-tau residuals are explicit imported assumptions, and the restricted packet provides no cited retain... | J4: The displayed quantitative steps are ordinary algebra on the stated PMNS parametrization: the trimaximal e2 entry gives 3 s12^2 c13^2=1, the i=3 mu-tau modulus equality gives sin^2(theta_23)=1/2, and substituting the TM2 relation into the mu2 equation reduces the CP equation to 2 c12 s12 s13 cos(delta_CP)=0. On the declared nonsingular chamber this proves cos(delta_CP)=0, while the endpoint discussion correctly notes the phase degeneracy. Howe... | J5: The formula inventory supports class A algebra: the standard-parametrization identities, the 2/3 cancellation in the phase-independent term, and the nonsingular division by c12*s12*s13 all check on the stated chamber, with the endpoint correctly excluded. The chain is not clean because the trimaximal second-column residual and mu-tau modulus residual are explicit assumptions, and the restricted packet provides no retained upstream authority or...
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / A; J2: second / audited_conditional / bounded_theorem / A; J3: second / audited_conditional / bounded_theorem / A; J4: second / audited_conditional / bounded_theorem / A; J5: second / audited_conditional / bounded_theorem / A. Majority rationale: J1: The displayed algebra checks independently: the TM2 condition gives s12^2=1/(3c13^2), the phase-independent part of |U_mu2|^2 reduces to 2/3, and the remaining phase term forces cos(delta_CP)=0 only when c12*s12*s13 is nonzero. However, the trimaximal and mu-tau residuals are explicit unclosed assumptions, and the source note states their framework derivation remains separate. Under the rubric this is a sound conditional bounded lemma, not aud... | J2: The displayed algebra checks independently: |U_e2|^2=c13^2 s12^2 gives the TM2 sum rule, the i=3 mu-tau modulus equality gives sin^2(theta_23)=1/2, and substituting s12^2=1/(3c13^2) reduces the |U_mu2|^2 equation to 2 c12 s12 s13 cos(delta_CP)=0 on the stated nonsingular chamber. That is class A algebra, but audited_clean is unavailable because the trimaximal and mu-tau residuals are explicit imported assumptions and the restricted packet supp... | J3: The displayed identities and factors close as standard algebra under the stated PMNS parametrization assumptions: the TM2 condition gives 3 s12^2 c13^2 = 1, the column-3 mu-tau modulus equality gives sin^2(theta_23)=1/2, and the |U_mu2|^2 equation reduces to 2 c12 s12 s13 cos(delta_CP)=0 on the nonsingular chamber. However, the trimaximal and mu-tau residuals are explicit imported assumptions, and the restricted packet provides no cited retain... | J4: The displayed quantitative steps are ordinary algebra on the stated PMNS parametrization: the trimaximal e2 entry gives 3 s12^2 c13^2=1, the i=3 mu-tau modulus equality gives sin^2(theta_23)=1/2, and substituting the TM2 relation into the mu2 equation reduces the CP equation to 2 c12 s12 s13 cos(delta_CP)=0. On the declared nonsingular chamber this proves cos(delta_CP)=0, while the endpoint discussion correctly notes the phase degeneracy. Howe... | J5: The formula inventory supports class A algebra: the standard-parametrization identities, the 2/3 cancellation in the phase-independent term, and the nonsingular division by c12*s12*s13 all check on the stated chamber, with the endpoint correctly excluded. The chain is not clean because the trimaximal second-column residual and mu-tau modulus residual are explicit assumptions, and the restricted packet provides no retained upstream authority or...
+- **auditor confidence:** judicial
 
 ### `pmns_twisted_flux_transfer_holonomy_boundary_note`
 

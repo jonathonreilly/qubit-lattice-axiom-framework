@@ -1,0 +1,128 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_width_two_ladder_structural_lift_bounded_2026_06_12.py
+runner_sha256: 31b3eb046ca68928a101e6ff790b88cd5680ab0590f788df7e4636570c356123
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.72
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette width-two ladder structural lift bounded runner
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+No new imports: repo-internal finite packet quantities only.
+
+================================================================================================================
+Part 1: width-one anchors
+================================================================================================================
+width1 P_inf = 0.615191992185898
+width1 theta = 0.263745855973467
+PASS: width-one pair-support source limit matches the declared anchor
+      delta=3.331e-16
+PASS: width-one theta matches the declared anchor
+      delta=2.776e-16
+
+================================================================================================================
+Part 2: 625-state factorized pair layer
+================================================================================================================
+pair layer dimension = 625
+pair layer Perron eigenvalue = 1.024892840237034
+pair eta(f,f) = 0.143273546416733
+pair eta(f,0) = 0.378514922317117
+PASS: width-two layer space has 625 states
+PASS: factorized pair layer is entrywise nonnegative
+PASS: factorized pair layer obeys pair-swap plus conjugation symmetry
+      max_error=1.388e-17
+PASS: factorized pair t-ladder obeys pair-swap plus conjugation symmetry
+      max_error=1.735e-18
+PASS: deep-rim pair boundary is the Perron product eta_inf tensor eta_inf
+      max_diff=2.776e-16
+
+================================================================================================================
+Part 3: pinned-rail gates
+================================================================================================================
+Pinned rail-2 control rescales by the trivial second-rail scalar, then compares against the width-one objects.
+PASS: pinned pair layer reproduces the width-one tensor_word
+      max_diff=6.939e-18
+PASS: pinned pair t-ladder reproduces the width-one t-matrix
+      max_diff=6.939e-18
+theta_one_rail_formula = 0.263745855973467
+theta_layer_formula = 0.069561876543177
+theta_width1^2 = 0.069561876543177
+PASS: pinned one-rail theta formula reproduces width-one theta
+      delta=5.551e-17
+PASS: layer-diagonal theta formula is the squared width-one theta
+      delta=2.776e-17
+
+================================================================================================================
+Part 4: shared-link diagnostic branches
+================================================================================================================
+character: pinned max_diff=3.072113651204e-01; pinned_nonzero=1; base_nonzero=295
+PASS: shared-link character branch is constructed as a 625x625 nonnegative matrix
+PASS: shared-link character branch fails the mandatory pinned width-one gate
+      reported as diagnostic only; no width-lift P_inf is promoted
+matrix_element: pinned max_diff=3.072113651204e-01; pinned_nonzero=1; base_nonzero=295
+PASS: shared-link matrix_element branch is constructed as a 625x625 nonnegative matrix
+PASS: shared-link matrix_element branch fails the mandatory pinned width-one gate
+      reported as diagnostic only; no width-lift P_inf is promoted
+
+================================================================================================================
+Part 5: entrywise-power reduction and measurements
+================================================================================================================
+PASS: S_k = sqrt(d_A d_B) t_ladder(A,B)^k holds on the pair box
+      k=4 max_diff=5.421e-20
+k | P_one_rail | P_layer_diagonal | err_layer | rho10 | rho10^2
+----------------------------------------------------------------------------------------------------------------
+ 1 | 0.434215413260 | 0.427008814999 | 1.881831771866e-01 | 3.785149223171e-01 | 1.432735464167e-01
+ 2 | 0.433061880380 | 0.426151170070 | 1.890408221163e-01 | 3.398617060251e-01 | 1.155059792223e-01
+ 3 | 0.543142610051 | 0.605220036714 | 9.971955471800e-03 | 6.888685671846e+00 | 4.745399028549e+01
+ 4 | 0.603630724651 | 0.614951813995 | 2.401781908493e-04 | 4.145992661566e+01 | 1.718925514976e+03
+ 5 | 0.612857835719 | 0.615179846197 | 1.214598857646e-05 | 1.839094499046e+02 | 3.382268576420e+04
+ 6 | 0.614633873361 | 0.615191249708 | 7.424781962584e-07 | 7.437451313837e+02 | 5.531568204569e+05
+ 7 | 0.615050158856 | 0.615191943382 | 4.880390758188e-08 | 2.900917483466e+03 | 8.415322245877e+06
+ 8 | 0.615155144956 | 0.615191988877 | 3.309028828724e-09 | 1.114069285284e+04 | 1.241150372413e+08
+ 9 | 0.615182336693 | 0.615191991958 | 2.274890276155e-10 | 4.248958621452e+04 | 1.805364936681e+09
+10 | 0.615189452932 | 0.615191992170 | 1.573829955248e-11 | 1.615409363881e+05 | 2.609547412914e+10
+11 | 0.615191323349 | 0.615191992185 | 1.092459456231e-12 | 6.132685532532e+05 | 3.760983184093e+11
+12 | 0.615191815890 | 0.615191992186 | 7.638334409421e-14 | 2.326617383061e+06 | 5.413148447163e+12
+15 | 0.615191988953 | 0.615191992186 | 6.661338147751e-16 | 1.268749742998e+08 | 1.609725910357e+16
+20 | 0.615191992182 | 0.615191992186 | 0.000000000000e+00 | 9.941976948601e+10 | 9.884290564652e+21
+25 | 0.615191992186 | 0.615191992186 | 3.330669073875e-16 | 7.790126834201e+13 | 6.068607609294e+27
+measured one-rail error ratio err19/err18 = 0.263748235725758
+measured layer-diagonal error ratio err10/err9 = 0.069182675390756
+PASS: one-rail measurement reproduces the width-one k-chain through the stable displayed range
+PASS: layer-diagonal measured tail ratio tracks theta_width1 squared
+      ratio=0.069182675390756, theta_layer=0.069561876543177
+PASS: layer-diagonal final displayed row is converged to the same pair-support source limit at double precision
+      err25=3.331e-16
+
+================================================================================================================
+Part 6: comparator distances and finite diagnostic
+================================================================================================================
+Plaquette reuse license: comparator is used only as comparison/reuse context.
+```text
+P_inf(width1) = 0.615191992185898
+P_inf(width2 factorized one-rail) = 0.615191992185898
+P_inf(width2 factorized layer-diagonal) = 0.615191992185898
+|P_inf(width2) - P_inf(width1)| = 3.330669073875470e-16
+|P_inf(width2) - 0.5934| = 0.021791992185898
+fraction_of_width1_comparator_gap_closed_by_width2_limit = 0.000000000000000
+diagnostic finite k=4 layer-diagonal P = 0.614951813995048
+|diagnostic finite k=4 layer-diagonal P - 0.5934| = 0.021551813995048
+```
+PASS: width-two factorized limit does not move the finite limit away from the width-one pair-support value
+PASS: finite k=4 layer-diagonal diagnostic is not promoted as the k->infinity value
+      P_4_diag=0.614951813995048, P_inf=0.615191992185898
+
+================================================================================================================
+Part 7: note hygiene
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note uses markdown links for one-hop authorities
+PASS: note uses repo source context links, not temp handles
+PASS: note includes a visible no-go discipline gate for the bounded negative
+Named residuals: finite dominant-weight box; finite Bessel mode support; finite width-two factorized layer only; shared-link rail-rail readings fail the pinned gate; no physical 3D unmarked spatial Wilson environment computation; no width-to-infinity slab; no slab-stacking to 3D; no L_perp limit; no analytic P(6); no canonical repinning.
+PASS: runner names residuals without claiming them retired
+
+TOTAL: PASS=26, FAIL=0
+
+----- stderr -----
+

@@ -1,12 +1,26 @@
 # DM Full Closure Same-Surface Thermal Bounding Theorem
 
-**Claim type:** bounded_theorem
+**Claim type:** open_gate / conditional-support interval-composition certificate
 **Status:** conditional supplied-premise interval support
 **Type:** conditional / support
 **Date:** 2026-04-17  
 **Date of scope repair:** 2026-05-30; compute repair: 2026-06-11
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
 **Script:** `scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py`
+
+## 2026-06-12 audit firewall: supplied-premise support only
+
+The audited missing bridge is not retired by this row. The interval arithmetic,
+current-bank bracketing, and admitted-family root certificate are runner-checked
+over a supplied premise packet. They do not derive the live-DM plaquette /
+eta-omega constants, packet-completeness/selector premise, or any remaining
+same-surface physical selector from retained framework primitives.
+
+Accordingly this source row is a **conditional-support** interval-composition
+certificate, not a retained DM closure theorem and not an axiom extension. The
+64:1 same-surface channel-weight bridge may now be cited at its current
+retained-bounded status, but the remaining live-DM premise packet is still
+supplied. No audit verdict or effective status is changed here.
 
 ## Question
 

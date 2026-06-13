@@ -283,6 +283,13 @@ def section_2hdm_exclusion() -> None:
 
     text = NOTE_PATH.read_text(encoding="utf-8")
     check(
+        "note claim type is open-gate conditional-support and has a 2026-06-12 R-HIGGS firewall",
+        "**Claim type:** open_gate / conditional-support note" in text
+        and "**Type:** open_gate / conditional support" in text
+        and "2026-06-12 audit firewall: R-HIGGS bridge still open" in text
+        and "No new axiom, Tier-A admission" in text,
+    )
+    check(
         "note names the missing H_unit -> EWSB-doublet bridge instead of claiming closure",
         "does **not** derive the bridge from the" in text
         and "`H_unit` scalar-singlet structure" in text
@@ -341,7 +348,7 @@ def section_note_checks() -> None:
     text = NOTE_PATH.read_text(encoding="utf-8")
 
     # Honest-outcome and load-bearing strings present in the note.
-    for token in ["106.75", "110.75", "conditional / support", "bounded support note", "R-HIGGS", "H_unit"]:
+    for token in ["106.75", "110.75", "open_gate / conditional support", "conditional-support note", "R-HIGGS", "H_unit"]:
         check(f"note records load-bearing token: {token!r}", token in text)
 
     # Forbidden-import scan: these import strings are allowed ONLY inside the

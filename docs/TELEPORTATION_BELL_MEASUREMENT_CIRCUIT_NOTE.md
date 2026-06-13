@@ -178,3 +178,17 @@ The Bell-measurement limitation is narrowed from an undecomposed ideal Bell
 projector to an ideal logical/taste stabilizer or circuit measurement. The
 remaining gap is physical implementation: deriving or supplying a durable
 native apparatus/gate/readout mechanism with quantified imperfections.
+
+## Downstream Boundary Alignment (2026-06-13)
+
+The paired runner now checks the audited downstream teleportation boundary
+stack before accepting the ideal Bell-measurement decomposition. In particular,
+the measurement-record, apparatus-dynamics, retained-axis operator-algebra,
+no-signaling, and conclusion-boundary anchors must already be audited as
+bounded support or audited renaming, alongside the resource and encoding
+anchors used by the planning lane.
+
+This does not turn the ideal circuit into a physical apparatus derivation. It
+only makes the source dependency explicit: the decomposition is a bounded
+logical/taste measurement artifact for ordinary quantum state teleportation,
+with nature-grade closure still held by the parent lane boundary.

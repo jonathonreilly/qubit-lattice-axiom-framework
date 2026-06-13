@@ -218,3 +218,21 @@ paths in `notes_for_re_audit_if_any`:
 
 This note takes the "split" path. Bridge theorems for the seven nature-grade
 blockers remain open work and are not attempted here.
+
+## 7. Downstream Boundary Alignment (2026-06-13)
+
+The runner now also checks the audited downstream teleportation boundary stack
+that was produced after this scope split. Those anchors give the finite
+planning surface a stronger dependency certificate: causal channel,
+measurement record, apparatus dynamics, resource generation, resource
+fidelity, retained-axis operator algebra, cross-encoding, three-register
+encoding, no-signaling, 3D-operator consistency, and conclusion-boundary rows
+must all remain in audited bounded or audited renaming status for this split
+runner to pass.
+
+This does not collapse surface `B` into surface `N`. The added checks only
+make the already bounded state-teleportation planning stack explicit. Native
+resource genesis, durable Bell measurement apparatus, derived record carrier,
+apparatus-level physical readout, robustness, operational frame calibration,
+and conservation-ledger closure remain held open until separate retained-grade
+derivations exist.

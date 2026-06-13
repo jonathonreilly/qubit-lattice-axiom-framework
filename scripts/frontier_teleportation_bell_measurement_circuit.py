@@ -28,9 +28,12 @@ import argparse
 import itertools
 import math
 import sys
+from pathlib import Path
 from typing import Iterable
 
 import numpy as np
+
+from teleportation_boundary_checks_2026_06_13 import print_boundary_results, teleportation_boundary_check_results
 
 
 I2 = np.eye(2, dtype=complex)
@@ -573,7 +576,11 @@ def print_summary(
     print("  no apparatus Hamiltonian, decoherence, or durable-record derivation is supplied")
     print("  no matter, mass, charge, energy, object transport, or FTL signaling is claimed")
 
-    return all(pass_checks.values())
+    boundary_ok = print_boundary_results(
+        teleportation_boundary_check_results(Path(__file__).resolve().parents[1])
+    )
+
+    return all(pass_checks.values()) and boundary_ok
 
 
 def main() -> int:

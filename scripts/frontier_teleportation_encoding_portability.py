@@ -34,9 +34,12 @@ import dataclasses
 import itertools
 import math
 import sys
+from pathlib import Path
 from typing import Iterable
 
 import numpy as np
+
+from teleportation_boundary_checks_2026_06_13 import print_boundary_results, teleportation_boundary_check_results
 
 
 I2 = np.eye(2, dtype=complex)
@@ -882,6 +885,10 @@ def main() -> int:
         seed=args.seed,
         tolerance=args.tolerance,
     )
+    boundary_ok = print_boundary_results(
+        teleportation_boundary_check_results(Path(__file__).resolve().parents[1])
+    )
+    ok = ok and boundary_ok
     return 0 if ok else 1
 
 

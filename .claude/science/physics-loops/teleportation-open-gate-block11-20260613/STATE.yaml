@@ -1,0 +1,44 @@
+loop: teleportation-open-gate-block11-20260613
+branch: physics-loop/teleportation-open-gate-block11-20260613
+base: origin/main d068c6b4d63c1747d0ac452b6218483274fdcff5
+mode: source_repair
+target_status: bounded-support
+actual_current_surface_status: open_gate until independent audit updates ledger
+trace_class: upstream_support
+reachability_to_target: partially_closes
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+files_touched:
+  - docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md
+  - docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md
+  - docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md
+  - docs/TELEPORTATION_NATIVE_AXIOMS_SCOPE_SPLIT_SOURCE_THEOREM_NOTE_2026-05-16.md
+  - docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md
+  - docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md
+  - scripts/teleportation_boundary_checks_2026_06_13.py
+  - scripts/frontier_teleportation_3d1_causal_record_channel.py
+  - scripts/frontier_teleportation_bell_measurement_circuit.py
+  - scripts/frontier_teleportation_encoding_portability.py
+  - scripts/frontier_teleportation_native_axioms_scope_split_2026-05-16.py
+  - scripts/frontier_teleportation_taste_readout_operator_model.py
+  - logs/runner-cache/frontier_teleportation_3d1_causal_record_channel.txt
+  - logs/runner-cache/frontier_teleportation_bell_measurement_circuit.txt
+  - logs/runner-cache/frontier_teleportation_encoding_portability.txt
+  - logs/runner-cache/frontier_teleportation_native_axioms_scope_split_2026-05-16.txt
+  - logs/runner-cache/frontier_teleportation_taste_readout_operator_model.txt
+open_imports:
+  - physical Bell-measurement apparatus
+  - derived 3D+1 record carrier
+  - native resource genesis scaling beyond finite certificates
+  - noisy physical readout/control
+  - conservation-ledger nature-grade closure
+verification:
+  - python3 scripts/frontier_teleportation_3d1_causal_record_channel.py
+  - python3 scripts/frontier_teleportation_bell_measurement_circuit.py
+  - python3 scripts/frontier_teleportation_encoding_portability.py
+  - python3 scripts/frontier_teleportation_taste_readout_operator_model.py
+  - python3 scripts/frontier_teleportation_native_axioms_scope_split_2026-05-16.py
+  - python3 scripts/precompute_audit_runners.py --allow-non-main --push-mode=none --force --concurrency=5 --runners scripts/frontier_teleportation_3d1_causal_record_channel.py,scripts/frontier_teleportation_bell_measurement_circuit.py,scripts/frontier_teleportation_encoding_portability.py,scripts/frontier_teleportation_taste_readout_operator_model.py,scripts/frontier_teleportation_native_axioms_scope_split_2026-05-16.py
+pr_status: pending
+next_exact_action: run check-only, hygiene, commit, push, open PR
+stop_condition: PR opened for reviewer extraction

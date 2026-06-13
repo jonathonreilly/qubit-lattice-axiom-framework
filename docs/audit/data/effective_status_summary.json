@@ -120,7 +120,7 @@
   ],
   "cycles_detected": 20,
   "effective_status_counts": {
-    "audited_conditional": 23,
+    "audited_conditional": 24,
     "audited_failed": 1,
     "audited_numerical_match": 13,
     "audited_renaming": 32,
@@ -154,7 +154,7 @@
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 317,
     "open_gate": 39,
-    "retained": 211,
+    "retained": 210,
     "retained_bounded": 868,
     "retained_no_go": 204,
     "retained_pending_chain": 20,

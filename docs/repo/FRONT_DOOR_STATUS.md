@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1447 |
-| Retained-grade rows, including boxed decorations | 1328 |
-| Retained positive theorems | 211 |
+| Applied audit verdicts | 1448 |
+| Retained-grade rows, including boxed decorations | 1327 |
+| Retained positive theorems | 210 |
 | Retained no-go rows | 204 |
 | Retained bounded rows | 868 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 39 |
 | Unaudited rows | 1515 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 23 |
+| Audited conditional rows | 24 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 20 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1524 |
-| Ready rows | 66 |
+| Total pending rows | 1523 |
+| Ready rows | 65 |
 | Cycle-break targets | 20 |
-| Critical pending | 334 |
+| Critical pending | 333 |
 | High pending | 261 |
 | Medium pending | 440 |
 | Leaf pending | 489 |
 
 Next ready rows by queue order:
 
-- [`record_unbounded_finite_additivity_schema_2026-06-06`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md) - critical; audit_in_progress
 - [`pmns_tm2_residual_consequence_bounded_note_2026-05-26`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`yt_p1_i_s_lattice_pt_citation_note_2026-04-17`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`flavor_r_half_is_the_records_flow_separatrix_2026-06-02`](../../docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md) - critical; audit_in_progress
 - [`su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`](../../docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
+- [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

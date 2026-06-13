@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 880 |
+| **retained_bounded** | 881 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1411 |
+| unaudited | 1410 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1333 |
+| `audited_clean` | 1334 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1728 |
+| `unaudited` | 1727 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 884 |
-| `leaf` | 1336 |
+| `medium` | 882 |
+| `leaf` | 1338 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -114,7 +114,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 797 | 39.14 | `audited_clean` | **retained_bounded** |
-| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1271 | 38.81 | `audited_clean` | **retained_bounded** |
+| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1272 | 38.81 | `audited_clean` | **retained_bounded** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 737 | 38.03 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1362 | 36.91 | `audited_clean` | **retained** |
@@ -527,6 +527,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_complex_action_falsifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7441,6 +7442,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Under the H_unit-residue admission, Representation B is allowed to be read as the same complete projected coefficient as Representation A, so equating coefficients gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c).  _(class `A`)_
 - **chain closes:** False — The rational solve itself closes: 2 * 3 * (1/6) = 1. The full off-surface pinning chain does not close because the packet does not derive the H_unit-residue exhaustion theorem identifying the H_unit matrix element with the complete same-projected 1PI Gamma_S^(4) residue.
 - **rationale:** The runner source performs source-firewall checks and exact rational algebra, not a first-principles derivation of the residue bridge. Independent algebra confirms that, if F_Htt^(0)^2 = 1/6 and F_Htt^(0)^2 = g_bare^2/(2 N_c) with N_c = 3 are both accepted, then g_bare^2 = 1 and the positive branch is g_bare = 1. The load-bearing bridge is explicitly an H_unit-residue admission, and the source note states that it does not derive the complete same-projected 1PI exhaustion theorem. Retained status therefore cannot propagate to an unconditional pinning theorem from this packet.
+- **auditor confidence:** high
+
+### `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28`
+
+- **Note:** [`G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md`](../../docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact bounded arithmetic proof-walk for g_* = 106.75 from the registered P1-P5 unbroken-Standard-Model thermal inventory and the supplied 7/8 fermion thermal weight; not a derivation of the SM inventory, generation physics, color identification, or thermal dynamics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-020934-b71ee7ec58-g_star_sm_content_at_leptoge`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the supplied counts N_bosons = 28, N_fermions = 90, and the retained thermal weight 7/8, g_* = 28 + (7/8) * 90 = 427/4 = 106.75.  _(class `A`)_
+- **chain closes:** True — The restricted packet explicitly supplies the inventory and state-count premises P1-P5 through the retained-bounded parent inventory note, and R6 supplies the thermal 7/8 factor. Independently checking the boson, fermion, and rational arithmetic gives 28, 90, and 427/4 without needing any additional input.
+- **rationale:** The load-bearing step is class A exact arithmetic over named retained-grade bounded inputs: 16+6+2+4=28, 72+12+6=90, and 28+(7/8)90=427/4. The source note keeps the SM particle inventory, polarization/state-count rules, and temperature regime as explicit P1-P5 premises rather than claiming a framework derivation. The runner mostly checks citation/scope hygiene plus the same arithmetic, and an independent manual check of the displayed g_* count agrees. This clean verdict applies only to the bounded proof-walk scope, not to derivation of the Standard Model inventory or downstream cosmology.
 - **auditor confidence:** high
 
 ### `gate_b_complex_action_falsifier_note`

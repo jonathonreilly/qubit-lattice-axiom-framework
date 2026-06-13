@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py
-runner_sha256: 704ae9e5248b15949a1c53a8ff66c8c3df91069cd664a678d4cef1056bdf07a6
+runner_sha256: 9f763c3402b9d0c66ef38d12bf919939f449a2453e139392701dc1e6adce2af9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -37,8 +37,16 @@ status: ok
   [PASS] source note says route portfolio is not a closure theorem
   [PASS] source note forbids CAR/spin-statistics closure and new axioms
 
+[BLOCK 6] Bridge-scope repair: no retained multi-loop/no-go closure
+  [PASS] source note declares 2026-06-13 bridge-scope repair
+  [PASS] checked route boundaries are limited to Cl(3), topology, Record, and comparator context
+  [PASS] positivity/no-go/literature surfaces are comparator-only context
+  [PASS] multi-loop and omitted no-go dependencies are explicitly not closed
+  [PASS] future Lorentz/microcausality/positivity bridge remains required
+  [PASS] downstream retained-closure citation is forbidden
+
 ========================================================================================
-SCORECARD:  PASS = 17   FAIL = 0
+SCORECARD:  PASS = 23   FAIL = 0
 ========================================================================================
 
 ----- stderr -----

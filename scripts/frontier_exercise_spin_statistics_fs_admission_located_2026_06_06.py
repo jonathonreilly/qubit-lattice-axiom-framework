@@ -178,6 +178,44 @@ def block5_source_scope_guards():
     return True
 
 
+def block6_bridge_scope_repair():
+    print("\n[BLOCK 6] Bridge-scope repair: no retained multi-loop/no-go closure")
+    check(
+        "source note declares 2026-06-13 bridge-scope repair",
+        "2026-06-13 bridge-scope repair" in NOTE_FLAT,
+    )
+    check(
+        "checked route boundaries are limited to Cl(3), topology, Record, and comparator context",
+        "checked route boundaries are limited" in NOTE_FLAT
+        and "cl(3) algebra obstruction" in NOTE_FLAT
+        and "hom(z2, u(1)) = {+1, -1}" in NOTE_FLAT
+        and "no within-sector exchange-sign datum is supplied" in NOTE_FLAT,
+    )
+    check(
+        "positivity/no-go/literature surfaces are comparator-only context",
+        "positivity/no-go/literature surfaces as comparator" in NOTE_FLAT
+        and "context only" in NOTE_FLAT,
+    )
+    check(
+        "multi-loop and omitted no-go dependencies are explicitly not closed",
+        "does not supply a retained bridge theorem for the multi-loop" in NOTE_FLAT
+        and "does not rederive the four cited repo no-gos" in NOTE_FLAT
+        and "does not close the omitted no-go dependencies" in NOTE_FLAT,
+    )
+    check(
+        "future Lorentz/microcausality/positivity bridge remains required",
+        "continuum-migration route remains conditional on a future" in NOTE_FLAT
+        and "lorentz/microcausality/positivity bridge" in NOTE_FLAT
+        and "positivity route is not consumed as a current-surface proof of car" in NOTE_FLAT,
+    )
+    check(
+        "downstream retained-closure citation is forbidden",
+        "must not cite this packet as retained closure of spin-statistics" in NOTE_FLAT
+        and "fs, car, the multi-loop route, or the omitted no-go chain" in NOTE_FLAT,
+    )
+    return True
+
+
 def main():
     print("=" * 88)
     print("/exercise: spin-statistics/FS -- cross-site sign location and route boundary")
@@ -187,6 +225,7 @@ def main():
     block3_record_location()
     block4_literature_and_routes()
     block5_source_scope_guards()
+    block6_bridge_scope_repair()
     print("\n" + "=" * 88)
     print(f"SCORECARD:  PASS = {len(PASS)}   FAIL = {len(FAIL)}")
     if FAIL:

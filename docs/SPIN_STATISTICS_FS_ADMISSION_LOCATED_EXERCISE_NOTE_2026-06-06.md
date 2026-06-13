@@ -96,6 +96,26 @@ Thus this note is a bounded location certificate for the present FS admission.
 It does not derive CAR, does not close spin-statistics, does not prove a
 multi-loop no-go, and does not add a new axiom.
 
+## 2026-06-13 bridge-scope repair
+
+The checked route boundaries are limited to:
+
+- the Cl(3) algebra obstruction checked by the runner;
+- the topology sign-dichotomy boundary `Hom(Z2, U(1)) = {+1, -1}`;
+- the Record boundary that no within-sector exchange-sign datum is supplied
+  once the retained central fermion-parity label is in place;
+- the positivity/no-go/literature surfaces as comparator and route-boundary
+  context only.
+
+This packet does not supply a retained bridge theorem for the multi-loop
+graded-net route, does not rederive the four cited repo no-gos, and does not
+close the omitted no-go dependencies. The multi-loop graded-net route remains
+open; the continuum-migration route remains conditional on a future
+Lorentz/microcausality/positivity bridge; the positivity route is not consumed
+as a current-surface proof of CAR. A downstream row must not cite this packet
+as retained closure of spin-statistics, FS, CAR, the multi-loop route, or the
+omitted no-go chain.
+
 ## Route portfolio
 
 | Rank | Route | Outcome class | First artifact |

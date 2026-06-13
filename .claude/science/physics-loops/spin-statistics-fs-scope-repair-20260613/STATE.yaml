@@ -1,0 +1,20 @@
+loop: spin-statistics-fs-scope-repair-20260613
+status: checkpoint_ready_for_review
+actual_current_surface_status: bounded_location_certificate
+target_status: source_boundary_repair
+target_claim_id: spin_statistics_fs_admission_located_exercise_note_2026-06-06
+base: origin/main
+branch: physics-loop/spin-statistics-fs-scope-repair-20260613
+files_touched:
+  - docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md
+  - scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py
+  - logs/runner-cache/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.txt
+open_imports:
+  - multi-loop graded-net route not closed
+  - omitted no-go dependencies not rederived
+  - Lorentz/microcausality/positivity bridge not supplied
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: reviewer/auditor decides whether the bridge-scope repair satisfies the conditional audit blocker

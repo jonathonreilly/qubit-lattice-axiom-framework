@@ -98,8 +98,16 @@ section("Current source-surface bridge check")
 yukawa_note = DOCS / "YUKAWA_COLOR_PROJECTION_THEOREM.md"
 yt_note = DOCS / "YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
 
-check("YUKAWA_COLOR_PROJECTION_THEOREM.md exists", yukawa_note.exists(), str(yukawa_note))
-check("YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists", yt_note.exists(), str(yt_note))
+check(
+    "YUKAWA_COLOR_PROJECTION_THEOREM.md exists",
+    yukawa_note.exists(),
+    str(yukawa_note.relative_to(ROOT)),
+)
+check(
+    "YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists",
+    yt_note.exists(),
+    str(yt_note.relative_to(ROOT)),
+)
 
 yukawa_text = yukawa_note.read_text(encoding="utf-8") if yukawa_note.exists() else ""
 yt_text = yt_note.read_text(encoding="utf-8") if yt_note.exists() else ""

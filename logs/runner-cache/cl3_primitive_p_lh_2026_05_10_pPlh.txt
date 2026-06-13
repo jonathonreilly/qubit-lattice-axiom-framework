@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_primitive_p_lh_2026_05_10_pPlh.py
-runner_sha256: 82934f9ff9b22487e66dc438f4f905ac2a230f3eb62923e9aefe3f0f6e3d3237
+runner_sha256: d0cf9a8a8147da990b124316b03c580324a21f60449f0c3ef78bf14da2fca3f3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -91,6 +91,12 @@ SECTION 5: Tier assertions (open_gate design note; no status promotion)
   [PASS (tier)] Net verdict: design-note records 3 candidates; none single-primitive closure -- best path = NCG pair {P-LH-1, P-LH-3}; imports 2 NCG primitives
 
 ============================================================================
+SECTION 6: Source-boundary firewall
+============================================================================
+  [PASS (source-boundary)] Downstream firewall names allowed and forbidden uses -- all required phrases present
+  [PASS (source-boundary)] Downstream firewall forbids primitive/status-promotion reuse -- open-gate design map only; no primitive/list/status approval
+
+============================================================================
 VERDICT SUMMARY
 ============================================================================
 
@@ -140,7 +146,7 @@ HONEST DESIGN VERDICT:
 AUTHORITY: audit-lane owns all status decisions; this is an
            open_gate design note with no status-promotion request.
 
-=== TOTAL: PASS=53, FAIL=0 ===
+=== TOTAL: PASS=55, FAIL=0 ===
 
 ----- stderr -----
 

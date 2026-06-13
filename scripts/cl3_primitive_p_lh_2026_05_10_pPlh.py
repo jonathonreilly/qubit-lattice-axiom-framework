@@ -61,8 +61,32 @@ from __future__ import annotations
 
 import sys
 from fractions import Fraction
+from pathlib import Path
 
 import numpy as np
+
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+SOURCE_NOTE = REPO_ROOT / "docs" / "PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md"
+
+SOURCE_BOUNDARY_REQUIRED_PHRASES = {
+    "Downstream source-boundary firewall",
+    "Allowed downstream uses",
+    "Forbidden downstream uses",
+    "framework-derived SM LH/RH content theorem",
+    "approved substrate primitive",
+    "repo-wide axiom",
+    "primitive-list addition",
+    "retained surface",
+    "framework-native order-one condition",
+    "framework-native KO-dim-6 real structure",
+    "Connes-Chamseddine derivation",
+    "imported into the retained framework",
+    "P-LH-2 circular primitive",
+    "not a derivation",
+    "motivating sibling probes",
+    "framework-native derivation of the order-one condition",
+}
 
 
 # ----------------------------------------------------------------------
@@ -702,6 +726,48 @@ def section_5_tier(c: Counter) -> None:
 
 
 # ----------------------------------------------------------------------
+# Section 6 — Source-boundary firewall
+# ----------------------------------------------------------------------
+
+
+def section_6_source_boundary(c: Counter) -> None:
+    """Section 6: ensure the source note carries the downstream firewall."""
+    print("=" * 76)
+    print("SECTION 6: Source-boundary firewall")
+    print("=" * 76)
+
+    if not SOURCE_NOTE.exists():
+        c.record(
+            "Source-boundary note is present",
+            False,
+            str(SOURCE_NOTE),
+            cls="source-boundary",
+        )
+        print()
+        return
+
+    note = SOURCE_NOTE.read_text(encoding="utf-8")
+    folded = note.lower()
+    missing = [phrase for phrase in sorted(SOURCE_BOUNDARY_REQUIRED_PHRASES) if phrase.lower() not in folded]
+    c.record(
+        "Downstream firewall names allowed and forbidden uses",
+        not missing,
+        "missing=" + ", ".join(missing) if missing else "all required phrases present",
+        cls="source-boundary",
+    )
+    c.record(
+        "Downstream firewall forbids primitive/status-promotion reuse",
+        "framework-derived sm lh/rh content theorem" in folded
+        and "approved substrate primitive" in folded
+        and "framework-native order-one condition" in folded
+        and "framework-native ko-dim-6 real structure" in folded,
+        "open-gate design map only; no primitive/list/status approval",
+        cls="source-boundary",
+    )
+    print()
+
+
+# ----------------------------------------------------------------------
 # Main
 # ----------------------------------------------------------------------
 
@@ -723,6 +789,7 @@ def main() -> int:
     section_3_p_lh_3(counter)
     section_4_comparative(counter)
     section_5_tier(counter)
+    section_6_source_boundary(counter)
 
     passed, failed = counter.total()
 

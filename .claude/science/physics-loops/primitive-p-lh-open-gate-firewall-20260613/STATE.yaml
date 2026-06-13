@@ -1,0 +1,27 @@
+loop_slug: primitive-p-lh-open-gate-firewall-20260613
+goal: "Repair the primitive P-LH open-gate row by making the candidate-primitive downstream boundary explicit and executable."
+target_claim_id: primitive_p_lh_content_proposal_note_2026-05-10_pplh
+base_commit: 91d083031
+branch: physics-loop/primitive-p-lh-open-gate-firewall-20260613
+actual_current_surface_status: open
+conditional_surface_status: open-gate design support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: source-boundary-runner-guard
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md
+  - scripts/cl3_primitive_p_lh_2026_05_10_pPlh.py
+  - logs/runner-cache/cl3_primitive_p_lh_2026_05_10_pPlh.txt
+open_imports:
+  - framework-native derivation of order-one
+  - framework-native derivation of KO-dim-6 real structure
+  - framework-native derivation of finite algebra C + Clplus(3) + M3(C)
+runner_status: "PASS=55 FAIL=0"
+review_disposition: pass
+next_exact_action: "Open review PR; reviewer/auditor can decide whether the explicit firewall is enough to stabilize the open-gate row."
+stop_condition: "Source-side repair packaged for review; no audit ledger/result/status files edited."

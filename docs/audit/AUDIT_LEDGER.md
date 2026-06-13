@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 870 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1423 |
+| unaudited | 1422 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 55 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1323 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1740 |
+| `unaudited` | 1739 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 879 |
-| `leaf` | 1341 |
+| `medium` | 880 |
+| `leaf` | 1340 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -1458,6 +1458,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1720,6 +1721,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
   - `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`
   - `LEPTON_PHASE_MODULUS_SEPARATION_NO_GO_2026-06-06.md`
+- **auditor confidence:** high
+
+### `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`
+
+- **Note:** [`ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional audit of the claimed decomposition of AC_phi_lambda sub-admission (iii): naming vacuity, record-determined sector-to-pattern registration under a supplied hw=1 context, and relocation of the surviving carrier-locus content to already named inputs; not a derivation of the carrier locus, PDG species match, masses, or readout context.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-013233-cc46bc245d-acphilambda_species_bridge_r`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied hw=1 readout context and realized records, the sector-to-pattern assignment is reconstructed pointwise and uniquely for a nondegenerate registered pattern, while a law-admissible counterfactual state permutes the assignment, so the assignment is registered data rather than derivation output.  _(class `A`)_
+- **chain closes:** False — The finite algebraic checks close internally: the nondegenerate pattern gives 6 -> 1 assignment rigidity, delta -> -delta gives state-contingency, and the color contrast arithmetic has no external comparator. The clean audit chain is missing retained/adopted authority for the record-outcome/readout-context methodology that licenses the supplied {P_k} and D-map discipline as standing context rather than an added bridge.
+- **rationale:** The runner source performs real finite-dimensional checks, and an independent recomputation confirms the load-bearing identities: Hamming grading (1,3,3,1), assignment rigidity, counterfactual k=1/k=2 exchange, Wilson hw=0 distinction, and Fourier color erasure. The realized-state primitive is an accepted primitive and does not itself create bounded status. The broader decomposition nevertheless relies on non-retained/meta methodology for the supplied record readout context, especially the canonical record-outcome observable principle, so the theorem is conditional rather than clean.
+- **open / conditional deps cited:**
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+  - `RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `action_crossover_note`

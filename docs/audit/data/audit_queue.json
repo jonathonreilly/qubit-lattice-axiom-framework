@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 350,
+    "critical": 349,
     "high": 261,
     "leaf": 485,
     "medium": 439
@@ -458,32 +458,6 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": "Finite-region effect-Gleason representation on E(M_{2^|\u039b|}(C)) for all finite qubit-lattice regions |\u039b| >= 1, assuming the stated POVM-additivity axioms.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "retained",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.808,
-      "note_path": "docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
-      "transitive_descendants": 1267
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
@@ -650,15 +624,15 @@
         "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
         "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "retained_bounded",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.805,
+      "load_bearing_score": 15.306,
       "note_path": "docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py",
-      "transitive_descendants": 1264
+      "transitive_descendants": 1265
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -46391,6 +46365,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 80,
-  "total_pending": 1535
+  "ready_count": 79,
+  "total_pending": 1534
 }

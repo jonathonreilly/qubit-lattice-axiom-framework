@@ -51090,10 +51090,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "multisite_pauli_group_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
     },
     {
       "from": "repo.repo_organization",
@@ -98188,14 +98188,14 @@
         "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
         "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
-        "multisite_pauli_group_theorem_note_2026-05-02",
         "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
         "pmns_graph_first_axis_alignment_note",
         "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30",
-        "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26"
+        "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "56736e7fb321d822ab4c172aa9d68564af7b3173a2c85cf922fd277247cdf68e",
+      "note_hash": "d794645f04c77a4accde1edaab16889f48caa8b911d4deb9f4cd3af944dc5f3a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_industrial_sdp_bootstrap_block02.py
-runner_sha256: 00310b164929d9679cf0fa3a36732b76b961977e053c28feb49a5bec92b7be29
+runner_sha256: 35f545b2eb23cc2e0e929214cd719feb9854525ac2116c7a8832466a5d56f0c7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.59
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -46,6 +46,8 @@ Constraints applied:
   CVXPY-derived bracket: ⟨P⟩(β=6) ∈ [0.422504, 1.000001]
   Width: 0.577497
   Contains MC value 0.5934? True
+  [PASS] full SDP upper solve saturates the support endpoint p1=1  (max=1.000001)
+  [PASS] admitted-lower-bound solve has lower endpoint near 0.4225  (min=0.422504)
 
   Upper-bound configuration variables:
     p1     = 1.000001
@@ -60,6 +62,24 @@ Constraints applied:
     pq     = 0.178025
     rq     = 0.025799
 
+--- Exact no-upper-bound certificate (solver-independent) ---
+  [PASS] all-ones plaquette Hankel matrix is PSD  (rank=1)
+  [PASS] shifted Hausdorff lower matrix is PSD  (min_eig=0.000e+00)
+  [PASS] shifted Hausdorff upper matrix is PSD  (max_abs=0.000e+00)
+  [PASS] {1,P,R,Q} all-ones Gram matrix is PSD  (rank=1)
+  [PASS] all support and cross-correlator bounds hold at p1=1
+  [PASS] moment monotonicity p4 <= p2 is saturated
+  [PASS] area-law inequalities r1 <= p2 and q1 <= p4 are saturated
+  [PASS] optional admitted lower-bound switch p1 >= 0.4225 does not remove p1=1
+  [PASS] support bound p1 <= 1 plus feasible p1=1 proves max p1 = 1
+
+--- Source-boundary firewall ---
+  [PASS] note records source-boundary phrase: exact obstruction certificate
+  [PASS] note records source-boundary phrase: p1 = 1 is feasible
+  [PASS] note records source-boundary phrase: not load-bearing for the no-upper-bound obstruction
+  [PASS] note records source-boundary phrase: comparison/admitted context only
+  [PASS] note records source-boundary phrase: No status edit
+
 ==============================================================================
 Block 02 lattice bootstrap bracket complete.
 
@@ -73,6 +93,7 @@ Summary:
     (b) no explicit Migdal-Makeenko loop equations
     (c) CLARABEL/SCS solver precision (no Mosek)
   - Tightening to industrial precision (~10^-2) requires Mosek + larger L_max
+  - Certificate checks: PASS=16 FAIL=0
 ==============================================================================
 
 ----- stderr -----

@@ -1,0 +1,23 @@
+loop_slug: industrial-sdp-open-gate-science-20260613
+branch: physics-loop/industrial-sdp-open-gate-science-20260613
+base: origin/main@6fe26fc58
+target_claim_id: industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03
+mode: source_repair
+actual_current_surface_status: bounded no-upper-bound obstruction certificate + named open gate
+proposal_allowed: false
+audit_required_before_effective_status_change: true
+active_route: "prove exact all-ones feasible certificate; demote admitted 0.4225 lower bound to comparison/input context"
+files_touched:
+  - docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md
+  - scripts/frontier_industrial_sdp_bootstrap_block02.py
+  - logs/runner-cache/frontier_industrial_sdp_bootstrap_block02.txt
+remaining_blockers:
+  - "No explicit Migdal-Makeenko / Schwinger-Dyson loop equations are supplied."
+  - "The admitted p1 >= 0.4225 lower bound is not framework-derived by this SDP."
+  - "No physical plaquette-value closure is claimed."
+verification:
+  - "python3 -m py_compile scripts/frontier_industrial_sdp_bootstrap_block02.py"
+  - "python3 scripts/frontier_industrial_sdp_bootstrap_block02.py -> Certificate checks: PASS=16 FAIL=0"
+  - "runner_cache.cache_status('scripts/frontier_industrial_sdp_bootstrap_block02.py') -> fresh"
+next_exact_action: "Reviewer/auditor should re-audit the exact no-upper-bound obstruction, not the old admitted lower-bracket theorem."
+stop_condition: "Ready PR opened for top uncovered open-gate source repair."

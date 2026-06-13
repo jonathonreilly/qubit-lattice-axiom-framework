@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Frontier runner: P1 I_S conditional citation-and-arithmetic check.
+Frontier runner: P1 I_S affine arithmetic and native non-certification check.
 
 Status
 ------
-CONDITIONAL CITATION-AND-ARITHMETIC layer on top of the retained P1 symbolic decomposition
-(`I_1 = I_S` on the retained conserved-current surface). This runner does
-NOT derive `I_S` or audit-close the supplied bracket on the retained
-Cl(3)/Z^3 action. It verifies:
+SOURCE-BOUNDARY arithmetic layer on top of the retained P1 symbolic
+decomposition (`I_1 = I_S` on the retained conserved-current surface).
+This runner does NOT derive a retained P1 value and does NOT audit-close the
+historical comparison bracket on the retained Cl(3)/Z^3 action. It verifies:
 
   1. retained color tensor C_F = 4/3 from the prior P1 color-factor
      retention note (SU(3) Casimir D7 + S1);
@@ -15,13 +15,9 @@ Cl(3)/Z^3 action. It verifies:
      alpha_LM / (4 pi) = 0.00721 from `canonical_plaquette_surface.py`;
   3. exact reproduction of the packaged delta_PT = alpha_LM * C_F / (2 pi)
      = 1.92% under the implicit standard-fundamental assumption I_S = 2;
-  4. supplied comparison bracket I_S in [4, 10] with central I_S ~ 6 for
-     the tadpole-improved Wilson-plaquette + 1-link staggered scalar
-     density at beta ~ 6 (Sharpe 1994; Bhattacharya-Sharpe 1998;
-     Bhattacharya-Gupta-Kilcup-Sharpe 1999; Kilcup-Sharpe 1987;
-     Ishizuka-Shizawa 1994);
-  5. framework-specific P1 contribution at alpha_LM = 0.0907 under the
-     supplied bracket:
+  4. affine transfer theorem for any candidate scalar coefficient:
+        P1(I_S) = (alpha_LM / (4 pi)) * C_F * I_S;
+  5. historical comparison arithmetic at alpha_LM = 0.0907:
         P1 = (alpha_LM / (4 pi)) * C_F * I_S
         I_S = 4   -> P1 = 3.85%
         I_S = 6   -> P1 = 5.77%  (central)
@@ -30,8 +26,8 @@ Cl(3)/Z^3 action. It verifies:
      i.e. P1 in [3.85%, 9.62%] with central ~ 5.77%;
   6. revision factor P1_central / P1_packaged ~ 3.0x matches
      I_S_central / I_S_standard = 6/2 = 3.0 exactly;
-  7. explicit bracket confidence -- logged as a supplied RANGE, not a single
-     number;
+  7. native BZ certificate cache gives I_S_native = 3.902774738804 and
+     BRACKET_VERDICT: NOT_CERTIFIED for the historical [4,10] bracket;
   8. no modification of the master obstruction theorem is implied.
 
 Authority
@@ -57,11 +53,11 @@ Literature (cited with uncertainty, not re-derived):
 
 Scope
 -----
-The supplied I_S range is an HONEST conditional bracket [4, 10] on the tadpole-improved
-Wilson-plaquette + 1-link staggered scalar density closest to the
-framework canonical surface. No single per-reference number is claimed,
-and this runner does not verify the bracket as framework-native.
-The central estimate I_S ~ 6 is a mid-range value for conditional reporting.
+The historical I_S range [4, 10] is non-authority comparison context for the
+tadpole-improved Wilson-plaquette + 1-link staggered scalar density closest to
+the framework canonical surface. No single per-reference number is claimed, and
+this runner does not verify the bracket as framework-native. The comparison
+label I_S ~ 6 is used only to exercise the affine map.
 
 Self-contained: numpy + stdlib only.
 """
@@ -69,6 +65,7 @@ Self-contained: numpy + stdlib only.
 from __future__ import annotations
 
 import math
+import re
 import sys
 from pathlib import Path
 from typing import Dict, Tuple
@@ -90,6 +87,7 @@ PASS_COUNT = 0
 FAIL_COUNT = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md"
+NATIVE_BZ_CACHE = ROOT / "logs" / "runner-cache" / "yt_p1_i_s_native_bz_certificate_2026_06_11.txt"
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -110,24 +108,41 @@ def read_note() -> str:
     return NOTE_PATH.read_text(encoding="utf-8")
 
 
+def read_native_bz_cache() -> str:
+    return NATIVE_BZ_CACHE.read_text(encoding="utf-8")
+
+
+def extract_float(pattern: str, text: str) -> float:
+    match = re.search(pattern, text)
+    if not match:
+        raise ValueError(f"missing numeric pattern: {pattern}")
+    return float(match.group(1))
+
+
 def part_0_status_boundary() -> None:
     print("\n" + "=" * 72)
     print("PART 0: Source-note status boundary")
     print("=" * 72)
 
     note = read_note()
+    note_flat = " ".join(note.split())
     check("source note exists", NOTE_PATH.exists(), str(NOTE_PATH.relative_to(ROOT)))
     check("claim type is bounded_theorem", "**Claim type:** bounded_theorem" in note)
     check(
         "type is conditional / arithmetic support",
         "**Type:** conditional / arithmetic support" in note,
     )
-    check("conditional citation/support boundary is present", "conditional citation/support layer" in note)
-    check("conditional arithmetic lemma boundary is present", "conditional arithmetic lemma" in note)
+    check("2026-06-13 narrowed audit target is present", "2026-06-13 safe narrowed audit target" in note)
+    check("affine arithmetic lemma boundary is present", "Affine transfer theorem" in note)
+    check("native non-certification theorem boundary is present", "Native non-certification theorem" in note)
+    check("authority firewall boundary is present", "Authority firewall" in note)
     check(
         "bracket is not asserted audit-closed",
-        "not assert that the bracket is framework-native or audit-closed" in note,
+        "not as a premise that this row asks audit to accept" in note_flat
+        and "audit-closed" in note,
     )
+    check("historical bracket is non-authority context", "non-authority comparison context" in note)
+    check("native BZ certificate does not certify bracket", "BRACKET_VERDICT: NOT_CERTIFIED" in note)
     check("old proposed_retained status is absent", "proposed_retained" not in note)
     check("PR-local source proposal marker is absent", "source-note proposal only" not in note)
     check("PR-local control field is absent", "actual_" + "current_surface_status" not in note)
@@ -161,10 +176,10 @@ I_S_STANDARD = 2.0
 
 
 # ---------------------------------------------------------------------------
-# Supplied comparison I_S bracket (tadpole-improved staggered scalar on
-# Wilson plaquette at beta ~ 6; alpha/(4 pi) convention). Honest range,
-# not a single per-reference number. See
-# docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md for sources.
+# Historical comparison I_S bracket (tadpole-improved staggered scalar on
+# Wilson plaquette at beta ~ 6; alpha/(4 pi) convention). Non-authority
+# context only, not a retained input or dependency. See the source note for
+# references and the native certificate for the NOT_CERTIFIED verdict.
 # ---------------------------------------------------------------------------
 
 I_S_CITED_LOW = 4.0
@@ -313,17 +328,17 @@ def part_c_packaged_delta_pt() -> None:
 
 
 # ---------------------------------------------------------------------------
-# PART D: Cited-literature I_S range
+# PART D: Historical comparison I_S range
 # ---------------------------------------------------------------------------
 
 def part_d_cited_range() -> None:
     print("\n" + "=" * 72)
-    print("PART D: Supplied I_S range for composite-H_unit on the canonical surface")
+    print("PART D: Historical comparison I_S points for composite-H_unit")
     print("=" * 72)
 
     print("\n  (alpha/(4 pi) convention; tadpole-improved Wilson-plaquette +")
-    print("   1-link staggered scalar density at beta ~ 6; supplied conditional range,")
-    print("   NOT a framework-native derivation.)")
+    print("   1-link staggered scalar density at beta ~ 6; comparison range,")
+    print("   NOT a framework-native derivation and NOT a retained input.)")
     print()
     print(f"  I_S_CITED_LOW       = {I_S_CITED_LOW:.2f}")
     print(f"  I_S_CITED_CENTRAL   = {I_S_CITED_CENTRAL:.2f}   (mid-range)")
@@ -334,7 +349,7 @@ def part_d_cited_range() -> None:
           f"{I_S_UNIMPROVED_HIGH:.1f}] -- documented but not used.)")
 
     check(
-        "Supplied range is ordered LOW <= CENTRAL <= HIGH",
+        "Comparison range is ordered LOW <= CENTRAL <= HIGH",
         I_S_CITED_LOW <= I_S_CITED_CENTRAL <= I_S_CITED_HIGH,
         f"{I_S_CITED_LOW} <= {I_S_CITED_CENTRAL} <= {I_S_CITED_HIGH}",
     )
@@ -346,18 +361,18 @@ def part_d_cited_range() -> None:
     # to reflect the cited publications' typical values.
     arithmetic_mid = 0.5 * (I_S_CITED_LOW + I_S_CITED_HIGH)
     check(
-        "Central estimate sits inside the bracket and on the low-mid side",
+        "Comparison central label sits inside the bracket and on the low-mid side",
         I_S_CITED_LOW <= I_S_CITED_CENTRAL <= arithmetic_mid + 1e-9,
         f"central = {I_S_CITED_CENTRAL}, arithmetic midpoint = "
         f"{arithmetic_mid:.2f}, low = {I_S_CITED_LOW}",
     )
     check(
-        "Central estimate is strictly above the standard-fundamental value 2",
+        "Comparison central label is strictly above the standard-fundamental value 2",
         I_S_CITED_CENTRAL > I_S_STANDARD,
         f"central = {I_S_CITED_CENTRAL} > standard = {I_S_STANDARD}",
     )
     check(
-        "Supplied bracket sits materially ABOVE the standard-fundamental I_S = 2",
+        "Comparison bracket sits materially ABOVE the standard-fundamental I_S = 2",
         I_S_CITED_LOW >= 2.0 * 2.0,
         f"I_S_CITED_LOW = {I_S_CITED_LOW} vs 2 * I_S_standard = 4.0",
     )
@@ -366,9 +381,9 @@ def part_d_cited_range() -> None:
         I_S_CITED_HIGH <= I_S_UNIMPROVED_LOW + 1e-9,
         f"TI_high = {I_S_CITED_HIGH} vs unimpr_low = {I_S_UNIMPROVED_LOW}",
     )
-    # Citation-confidence contract: this is a RANGE, not a single number.
+    # Citation-confidence contract: this is a comparison RANGE, not authority.
     check(
-        "Supplied-bracket confidence is recorded as a range, not a single number",
+        "Comparison bracket is recorded as context, not a retained input",
         I_S_CITED_HIGH > I_S_CITED_LOW,
         f"range width = {I_S_CITED_HIGH - I_S_CITED_LOW}",
     )
@@ -380,7 +395,7 @@ def part_d_cited_range() -> None:
 
 def part_e_framework_p1() -> Dict[str, float]:
     print("\n" + "=" * 72)
-    print("PART E: Framework-specific P1 contribution at alpha_LM = 0.0907")
+    print("PART E: Affine P1 transfer at alpha_LM = 0.0907")
     print("=" * 72)
 
     values: Dict[str, float] = {}
@@ -393,7 +408,7 @@ def part_e_framework_p1() -> Dict[str, float]:
     for label, i_s in [
         ("standard (2)", I_S_STANDARD),
         ("low (4)",      I_S_CITED_LOW),
-        ("central (6)",  I_S_CITED_CENTRAL),
+        ("compare (6)",  I_S_CITED_CENTRAL),
         ("high-mid (8)", 8.0),
         ("high (10)",    I_S_CITED_HIGH),
     ]:
@@ -417,22 +432,22 @@ def part_e_framework_p1() -> Dict[str, float]:
         f"P1(I_S=2) = {p1_standard:.6f}; packaged = {DELTA_PT_PACKAGED:.6f}",
     )
     check(
-        "P1(I_S = 4) ~ 3.85% (low end of supplied range)",
+        "P1(I_S = 4) ~ 3.85% (low comparison point)",
         abs(p1_low * 100 - 3.85) < 0.1,
         f"P1(I_S=4) = {p1_low * 100:.3f} %",
     )
     check(
-        "P1(I_S = 6) ~ 5.77% (central supplied estimate)",
+        "P1(I_S = 6) ~ 5.77% (central comparison label)",
         abs(p1_central * 100 - 5.77) < 0.1,
         f"P1(I_S=6) = {p1_central * 100:.3f} %",
     )
     check(
-        "P1(I_S = 10) ~ 9.62% (high end of supplied range)",
+        "P1(I_S = 10) ~ 9.62% (high comparison point)",
         abs(p1_high * 100 - 9.62) < 0.1,
         f"P1(I_S=10) = {p1_high * 100:.3f} %",
     )
     check(
-        "Full supplied P1 range: [3.8%, 9.7%] (absolute bracket)",
+        "Full comparison P1 range: [3.8%, 9.7%] (arithmetic only)",
         p1_low * 100 < 3.9 and p1_high * 100 > 9.5,
         f"P1 in [{p1_low * 100:.3f}%, {p1_high * 100:.3f}%]",
     )
@@ -451,7 +466,7 @@ def part_e_framework_p1() -> Dict[str, float]:
 
 def part_f_revision_factor(p1_values: Dict[str, float]) -> None:
     print("\n" + "=" * 72)
-    print("PART F: Revision factor vs packaged 1.92% nominal")
+    print("PART F: Comparison factor vs packaged 1.92% nominal")
     print("=" * 72)
 
     ratio_central = p1_values["central"] / p1_values["standard"]
@@ -463,7 +478,7 @@ def part_f_revision_factor(p1_values: Dict[str, float]) -> None:
     structural_ratio_low = I_S_CITED_LOW / I_S_STANDARD
     structural_ratio_high = I_S_CITED_HIGH / I_S_STANDARD
 
-    print(f"\n  ratio central = P1(I_S=6) / P1(I_S=2)   = {ratio_central:.4f}x")
+    print(f"\n  ratio comparison = P1(I_S=6) / P1(I_S=2) = {ratio_central:.4f}x")
     print(f"  I_S_central / I_S_standard              = "
           f"{structural_ratio_central:.4f}x")
     print(f"  ratio low     = P1(I_S=4) / P1(I_S=2)   = {ratio_low:.4f}x")
@@ -474,7 +489,7 @@ def part_f_revision_factor(p1_values: Dict[str, float]) -> None:
           f"{structural_ratio_high:.4f}x")
 
     check(
-        "Central revision factor matches I_S ratio (3.00x) exactly",
+        "Comparison factor matches I_S ratio (3.00x) exactly",
         abs(ratio_central - structural_ratio_central) < 1e-12,
         f"P1 ratio = {ratio_central:.10f}, I_S ratio = "
         f"{structural_ratio_central:.10f}",
@@ -490,12 +505,12 @@ def part_f_revision_factor(p1_values: Dict[str, float]) -> None:
         f"P1 ratio = {ratio_high:.10f}",
     )
     check(
-        "Central revision factor is approximately 3.0x (upward)",
+        "Comparison factor is approximately 3.0x",
         abs(ratio_central - 3.0) < 0.01,
         f"central ratio = {ratio_central:.4f}x",
     )
     check(
-        "Revision is monotone upward: all three P1 values > packaged 1.92%",
+        "Comparison points are monotone upward relative to packaged 1.92%",
         p1_values["low"] > DELTA_PT_PACKAGED
         and p1_values["central"] > DELTA_PT_PACKAGED
         and p1_values["high"] > DELTA_PT_PACKAGED,
@@ -519,6 +534,8 @@ def part_g_scope_boundary() -> None:
     c_a_channel_I_2_closed = False
     t_f_n_f_channel_I_3_closed = False
     supplied_value_is_framework_native = False
+    historical_bracket_is_retained_input = False
+    native_certificate_proves_bracket = False
 
     print("\n  Scope flags:")
     print(f"    master obstruction theorem modified       = "
@@ -533,6 +550,10 @@ def part_g_scope_boundary() -> None:
           f"{t_f_n_f_channel_I_3_closed}")
     print(f"    supplied I_S is framework-native          = "
           f"{supplied_value_is_framework_native}")
+    print(f"    historical bracket is retained input      = "
+          f"{historical_bracket_is_retained_input}")
+    print(f"    native certificate proves [4,10]          = "
+          f"{native_certificate_proves_bracket}")
 
     check(
         "Master obstruction theorem NOT modified by this note",
@@ -559,6 +580,62 @@ def part_g_scope_boundary() -> None:
         supplied_value_is_framework_native is False,
         "framework-native BZ integration remains the next retention level",
     )
+    check(
+        "Historical bracket is comparison context, not a retained input",
+        historical_bracket_is_retained_input is False,
+    )
+    check(
+        "Native certificate does NOT prove the historical [4,10] bracket",
+        native_certificate_proves_bracket is False,
+    )
+
+
+# ---------------------------------------------------------------------------
+# PART H: Native BZ certificate cache and bracket firewall
+# ---------------------------------------------------------------------------
+
+def part_h_native_bz_certificate(p1_values: Dict[str, float]) -> None:
+    print("\n" + "=" * 72)
+    print("PART H: Native BZ certificate cache and bracket firewall")
+    print("=" * 72)
+
+    cache = read_native_bz_cache()
+    i_native = extract_float(r"CONVERGED_I_SCALAR_NATIVE:\s+([0-9.]+)", cache)
+    err_native = extract_float(r"RESOLUTION_EXTRAPOLATION_ERROR:\s+([0-9.]+)", cache)
+    p1_native = p1_contribution(i_native)
+
+    print(f"\n  native cache              = {NATIVE_BZ_CACHE.relative_to(ROOT)}")
+    print(f"  I_S_native                = {i_native:.12f}")
+    print(f"  extrapolation error       = {err_native:.12f}")
+    print(f"  P1(I_S_native)            = {100.0 * p1_native:.4f} %")
+    print(f"  low comparison P1(I_S=4)  = {100.0 * p1_values['low']:.4f} %")
+
+    check("native BZ cache exists", NATIVE_BZ_CACHE.exists(), str(NATIVE_BZ_CACHE.relative_to(ROOT)))
+    check("native BZ cache records clean execution", "status: ok" in cache and "exit_code: 0" in cache)
+    check("native BZ certificate records PASS=11 FAIL=0", "TOTAL: PASS=11 FAIL=0" in cache)
+    check(
+        "native BZ certificate reports BRACKET_VERDICT: NOT_CERTIFIED",
+        "BRACKET_VERDICT: NOT_CERTIFIED" in cache,
+    )
+    check(
+        "native scalar candidate is below historical lower endpoint 4",
+        i_native < I_S_CITED_LOW,
+        f"I_S_native={i_native:.12f} < {I_S_CITED_LOW}",
+    )
+    check(
+        "native scalar candidate is close to low comparison scale",
+        abs(i_native - I_S_CITED_LOW) < 0.2,
+        f"I_S_native={i_native:.12f}",
+    )
+    check(
+        "native P1 candidate is below low comparison P1",
+        p1_native < p1_values["low"],
+        f"P1_native={100.0 * p1_native:.4f}%, P1_low={100.0 * p1_values['low']:.4f}%",
+    )
+    check(
+        "native certificate is used as a firewall, not bracket proof",
+        i_native < I_S_CITED_LOW and "BRACKET_VERDICT: NOT_CERTIFIED" in cache,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -581,29 +658,29 @@ def main() -> int:
     p1_values = part_e_framework_p1()
     part_f_revision_factor(p1_values)
     part_g_scope_boundary()
+    part_h_native_bz_certificate(p1_values)
 
     print("\n" + "=" * 72)
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     print("=" * 72)
 
-    print("\nSupplied I_S value (central conditional estimate):")
+    print("\nHistorical comparison I_S label:")
     print(f"  I_S  =  {I_S_CITED_CENTRAL:.2f}   (range [{I_S_CITED_LOW}, "
-          f"{I_S_CITED_HIGH}], alpha/(4 pi) convention)")
-    print("\nFramework-specific P1 contribution at alpha_LM = 0.0907:")
-    print(f"  P1_central  =  "
-          f"{p1_values['central'] * 100:.3f} %   (central estimate)")
-    print(f"  P1 range    =  "
+          f"{I_S_CITED_HIGH}], alpha/(4 pi) convention; comparison context only)")
+    print("\nAffine P1 transfer at alpha_LM = 0.0907:")
+    print(f"  P1_compare  =  "
+          f"{p1_values['central'] * 100:.3f} %   (I_S=6 comparison label)")
+    print(f"  comparison range =  "
           f"[{p1_values['low'] * 100:.3f}%, "
           f"{p1_values['high'] * 100:.3f}%]")
     print("\nComparison to packaged delta_PT = 1.92%:")
     print(f"  packaged    =  {DELTA_PT_PACKAGED * 100:.4f} %  "
           f"(I_S_standard = 2 implicit)")
-    print(f"  revision    =  "
-          f"{p1_values['central'] / DELTA_PT_PACKAGED:.2f}x upward "
-          f"under central supplied I_S")
-    print("\nConditional direction: UPWARD if the supplied range is accepted")
-    print("for the exact operator/scheme. Master obstruction theorem not")
-    print("modified -- conditional arithmetic note only.")
+    print(f"  comparison  =  "
+          f"{p1_values['central'] / DELTA_PT_PACKAGED:.2f}x at I_S=6")
+    print("\nNative BZ certificate: BRACKET_VERDICT: NOT_CERTIFIED.")
+    print("Master obstruction theorem not modified; comparison bracket is not")
+    print("a retained input or framework-native derivation.")
 
     return 0 if FAIL_COUNT == 0 else 1
 

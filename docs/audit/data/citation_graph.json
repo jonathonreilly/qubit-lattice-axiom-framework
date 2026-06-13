@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "susceptibility_density_vanishes_identically_1d_ibp_bounded_theorem_note_2026-06-12"
     },
     {
@@ -96681,7 +96677,6 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
         "susceptibility_density_vanishes_identically_1d_ibp_bounded_theorem_note_2026-06-12",
         "theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11",
         "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
@@ -96689,7 +96684,7 @@
         "ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1433c64469897ddbb0034acc72e58190670f206ea640d2a6470f0d7934e78401",
+      "note_hash": "cc14a2ee0478cdaf132849f618e8617f441648f12c0e28644acdf9ffc73e0888",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -111336,8 +111331,8 @@
       "open_gate": 162,
       "positive_theorem": 615
     },
-    "edge_count": 12695,
-    "leaf_count": 1086,
+    "edge_count": 12694,
+    "leaf_count": 1087,
     "node_count": 3383,
     "root_count": 1059,
     "runners_with_path": 2963

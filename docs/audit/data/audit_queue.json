@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 355,
+    "critical": 354,
     "high": 261,
     "leaf": 479,
     "medium": 436
@@ -460,30 +460,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "awaiting_cross_confirmation",
-      "claim_id": "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-      "claim_scope": "Audited only the qubit M_2(C) effect-Gleason representation from the stated [0,1]-valued POVM-additive hypotheses M1-M3, not the full all-dimensions Busch/CFMR theorem or the parent Born-rule chain.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.309,
-      "note_path": "docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
-      "transitive_descendants": 1268
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
       "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
       "claim_scope": "Finite (Z_2)^3 corner-cube projection identities on the Hamming-weight-1 triplet, plus the symmetric aI+b(J-I) spectrum and Koide-ratio formula, without deriving the coefficient ratio b/a.",
       "claim_type": "bounded_theorem",
@@ -603,6 +579,30 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
+      "claim_id": "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
+      "claim_scope": "Finite-dimensional counterexample showing that faithful commuting local M2(C) subalgebras/no-signalling do not force the ordinary generated M2(C) tensor_C M2(C) ~= M4(C) composite; a local-tomography or generated-composite premise is required.",
+      "claim_type": "no_go",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": "awaiting_second",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "retained_no_go",
+      "helper_runner_paths": [],
+      "load_bearing_score": 16.308,
+      "note_path": "docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md",
+      "queue_reason": "audit_in_progress",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_tensor_composition_requires_local_tomography_exact.py",
+      "transitive_descendants": 1267
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
@@ -633,30 +633,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_quark_route2_source_domain_bridge_no_go.py",
       "transitive_descendants": 1267
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
-      "claim_scope": "Finite-dimensional counterexample showing that faithful commuting local M2(C) subalgebras/no-signalling do not force the ordinary generated M2(C) tensor_C M2(C) ~= M4(C) composite; a local-tomography or generated-composite premise is required.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "retained_no_go",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.807,
-      "note_path": "docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_tensor_composition_requires_local_tomography_exact.py",
-      "transitive_descendants": 1266
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -46261,6 +46237,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 82,
-  "total_pending": 1531
+  "ready_count": 81,
+  "total_pending": 1530
 }

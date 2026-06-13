@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 853 |
+| **retained_bounded** | 854 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1453 |
+| unaudited | 1452 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1303 |
+| `audited_clean` | 1304 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1770 |
+| `unaudited` | 1769 |
 
 | claim_type | count |
 |---|---:|
@@ -1313,6 +1313,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-26` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -19148,6 +19149,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At BZ corners p_mu in {0, pi}, m(p)=sum_mu(1-cos p_mu)=2 hw(p), so the eight corners split as 1+3+3+1 and hw=1 is exactly the threefold lightest nonzero-mass orbit, with the M_3(C)/no-proper-quotient part imported from the direct audited dependency.  _(class `A`)_
 - **chain closes:** True — Independent exact enumeration gives 8 corners, degeneracies [1,3,3,1], masses 0,2,4,6 by Hamming weight, and hw=1 as the unique lightest nonzero orbit. The admitted staggered-Dirac/Wilson surface is present in the Tier-A registry, and the direct dependency's scoped algebra result supplies only the finite C^3/M_3(C) no-proper-quotient statement without importing physical-species or SM-generation claims.
 - **rationale:** The spectral calculation is a finite algebraic identity on the explicitly admitted bounded surface, not a tuned numerical comparator or a physical-generation identification. The runner's math checks agree with an independent exact enumeration, while its source-firewall checks confirm the note excludes no-rooting, physical lattice necessity, CKM, chirality, and new-axiom claims. The no-go/wall discipline gate does not expose an inflated wall set: there is a single registered Tier-A admitted surface, the no-proper-quotient residual exactly matches the direct dependency's audited scope, and all broader negative/physical claims are explicitly out of scope.
+- **auditor confidence:** high
+
+### `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`
+
+- **Note:** [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](../../docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited claim is the algebraic orientation invariance of the note-stipulated three-parameter Hermitian circulant class: conjugation flips delta while preserving the unordered spectrum.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260612-235912-3ab9e045d1-tier_a_korbit_determinant_an`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the stipulated circulant H(delta), complex conjugation gives H(-delta), and the delta -> -delta flip only relabels the three eigenvalues by k -> -k.  _(class `A`)_
+- **chain closes:** True — Independently diagonalizing the cyclic shift by the Fourier basis gives eigenvalues a + 2B cos(delta + 2pi k/3). Replacing delta by -delta sends the k label to -k mod 3, so the unordered multiset and elementary symmetric polynomials are unchanged.
+- **rationale:** The load-bearing step is a direct algebraic identity on the supplied circulant class, not a tuned numerical comparison or a definition-only renaming. The runner source performs symbolic checks consistent with the note, and the independent Fourier-basis derivation confirms the same sign flip and spectral relabeling without relying on runner stdout. The Minimal Axioms authority is an accepted axiom premise and is not needed to close the circulant algebra; the note correctly leaves the unordered-multiset registrability bridge and any registry consequence outside the proved claim.
 - **auditor confidence:** high
 
 ### `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`

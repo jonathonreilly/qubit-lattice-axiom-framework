@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "pmns_graph_first_axis_alignment_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "magnitude_reads_minimal_record_block_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "post_record_count_probability_firewall_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30",
-        "pmns_graph_first_axis_alignment_note",
         "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
         "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06",
         "s3_time_theta_to_slice_coupling_note",
         "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-        "magnitude_reads_minimal_record_block_2026-06-06"
+        "magnitude_reads_minimal_record_block_2026-06-06",
+        "post_record_count_probability_firewall_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4772268e7fb56ae5d15a39012e499b0e682a240da1c47240239869cd34570f75",
+      "note_hash": "a7e93b0c01afa7972d039a0ce0dab62ca0c9e0ed0983cd70e87bdd72c93837a9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

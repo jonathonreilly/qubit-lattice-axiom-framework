@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1438 |
-| Retained-grade rows, including boxed decorations | 1329 |
+| Applied audit verdicts | 1437 |
+| Retained-grade rows, including boxed decorations | 1328 |
 | Retained positive theorems | 211 |
-| Retained no-go rows | 205 |
+| Retained no-go rows | 204 |
 | Retained bounded rows | 868 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 38 |
-| Unaudited rows | 1514 |
+| Unaudited rows | 1516 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 24 |
+| Audited conditional rows | 23 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 20 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1533 |
+| Total pending rows | 1534 |
 | Ready rows | 76 |
 | Cycle-break targets | 20 |
-| Critical pending | 345 |
+| Critical pending | 344 |
 | High pending | 261 |
 | Medium pending | 440 |
-| Leaf pending | 487 |
+| Leaf pending | 489 |
 
 Next ready rows by queue order:
 
-- [`koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30`](../../docs/KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY_BOUNDED_NOTE_2026-05-30.md) - critical; audit_in_progress
 - [`pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26`](../../docs/PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`post_record_finite_to_unbounded_family_lift_no_go_2026-06-06`](../../docs/POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md) - critical; audit_in_progress
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - critical; audit_in_progress
 - [`post_record_count_probability_firewall_2026-06-06`](../../docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md) - critical; audit_in_progress
+- [`g_bare_dynamical_fixation_obstruction_note_2026-04-18`](../../docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -91,7 +91,7 @@ Top load-bearing rows by graph score:
 - `minimal_axioms` - critical; 1590 descendants; score 134.636
 - `three_generation_observable_theorem_note` - critical; 1356 descendants; score 64.406
 - `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
-- `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
+- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
 - `plaquette_self_consistency_note` - critical; 1358 descendants; score 51.408
 - `key_terminology` - critical; 1396 descendants; score 50.448
 - `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837

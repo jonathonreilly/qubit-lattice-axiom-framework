@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 856 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1448 |
+| unaudited | 1447 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1306 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1765 |
+| `unaudited` | 1764 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 874 |
-| `leaf` | 1346 |
+| `medium` | 875 |
+| `leaf` | 1345 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -1468,6 +1468,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lepton_block_d12_prime_matching_no_go_note_2026-05-10` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15382,6 +15383,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The three live endpoint ratios are nearest to the small rational candidates {5/6, -2, -8/9}, which then multiply to gamma_E(center)/gamma_E(shell)=15/8.  _(class `G`)_
 - **chain closes:** False — The algebra closes once the three rational legs are granted. The derivation does not close because the load-bearing identification of those legs, especially gamma_T(center)/gamma_E(center)=-8/9, is a nearest-rational match to live endpoint data rather than a first-principles Route-2 derivation.
 - **rationale:** The runner computes live endpoint ratios, scans a bounded low-rational grammar, and verifies that the nearest candidates are {5/6, -2, -8/9}; that is class G numerical matching, not a derivation from retained tensor machinery. The downstream multiplication to 15/8, r_E=21/4, and D_E=21/8 is exact conditional algebra. The cited retained no-go explicitly says the third leg -8/9 is equivalent to the missing E-center readout primitive and is not forced by the restricted Route-2 carrier class.
+- **auditor confidence:** high
+
+### `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`
+
+- **Note:** [`QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the narrow representation-theoretic no-go: on the retained hw=1 three-generation S_3 permutation carrier, an S_3-equivariant Hermitian Ward operator cannot split three distinct generation eigenvalues, and a diagonal equivariant readout is scalar.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-001236-c4fff2e587-quark_generation_equivariant`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** An S_3-equivariant Ward endomorphism on the three-point permutation representation V ~= A_1 + E lies in the two-dimensional commutant W = aI + bJ, hence has eigenvalues a+3b on A_1 and a with multiplicity two on E.  _(class `A`)_
+- **chain closes:** True — The finite-group commutant calculation closes from the stated A_1+E permutation-carrier input and standard linear algebra. The result is only a narrow S_3-equivariant route no-go and remains status-conditional on the non-retained staggered-Dirac realization authority.
+- **rationale:** The load-bearing math is a genuine algebraic closure: the commutant of the transitive S_3 action on ordered pairs has one diagonal orbit and one off-diagonal orbit, giving span{I,J}, with the stated A_1/E eigenvalue degeneracy. The runner source computes the representation characters, commutant nullity, sample eigenvalue degeneracy, and C3 reflection-breaking boundary; the independent check agrees. The no-go is not absolute, because the note explicitly leaves non-S_3-equivariant source/readout/orientation primitives open. However, one cited carrier authority, docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md, is marked unaudited, so retained-grade closure cannot be granted in this restricted packet.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28`

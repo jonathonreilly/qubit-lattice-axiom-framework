@@ -6,13 +6,14 @@ E-center residual:
 
     gamma_T(center) / gamma_E(center) = -8/9.
 
-The tempting observation is that 8/9 is the retained SU(3) connected color
-projection R_conn = (N_c^2 - 1) / N_c^2 at N_c = 3.  The runner proves the
-conditional algebra and the import boundary: imposing c_TE = -R_conn gives the
+The tempting observation is that 8/9 is the exact SU(3) adjoint channel
+fraction F_adj = (N_c^2 - 1) / N_c^2 at N_c = 3.  The runner proves the
+conditional algebra and the import boundary: imposing c_TE = -F_adj gives the
 target rho_E = 21/4, but the current restricted Route-2 carrier contains no
-typed source-domain map from the SU(3) color projection to the E/T center
-endpoint ratio.  Therefore R_conn is a conditional bridge target, not a
-derivation of the up-type scalar law.
+typed source-domain map from the SU(3) adjoint fraction or physical
+connected-trace specialization to the E/T center endpoint ratio.  Therefore the
+legacy R_conn reading is a conditional bridge target, not a derivation of the
+up-type scalar law.
 """
 
 from __future__ import annotations
@@ -101,7 +102,12 @@ def main() -> int:
     naturality_text = read(naturality_note)
     bilinear_text = read(bilinear_note)
 
-    check("R_conn note carries the SU(3) 8/9 value", "R_conn = (N_c^2 - 1) / N_c^2" in rconn_text and "8/9" in rconn_text)
+    check(
+        "R_conn note carries the exact SU(3) adjoint 8/9 support",
+        "F_adj = dim(adj) / dim(N_c x N_c-bar)" in rconn_text
+        and "F_adj = 8/9" in rconn_text
+        and "not as a\nderived connected-trace observable" in rconn_text,
+    )
     check("readout note names -8/9 as the missing center ratio", "-8/9" in readout_text and "beta_E / alpha_E = 21/4" in readout_text)
     check("naturality note keeps -8/9 as an open E-center target", "derive gamma_T(center)/gamma_E(center) = -8/9" in naturality_text)
     check(
@@ -117,9 +123,9 @@ def main() -> int:
     center_target = -r
     q_e = q_e_from_center_ratio(center_target)
     rho_e = rho_e_from_center_ratio(center_target)
-    check("N_c=3 gives R_conn=8/9 exactly", r == Fraction(8, 9), str(r))
-    check("imposing c_TE=-R_conn gives q_E=15/8 exactly", q_e == Fraction(15, 8), str(q_e))
-    check("imposing c_TE=-R_conn gives rho_E=21/4 exactly", rho_e == Fraction(21, 4), str(rho_e))
+    check("N_c=3 gives F_adj=8/9 exactly", r == Fraction(8, 9), str(r))
+    check("imposing c_TE=-F_adj gives q_E=15/8 exactly", q_e == Fraction(15, 8), str(q_e))
+    check("imposing c_TE=-F_adj gives rho_E=21/4 exactly", rho_e == Fraction(21, 4), str(rho_e))
     check("rho_E=21/4 maps back to c_TE=-8/9 under granted T-side data", rho_e_from_center_ratio(Fraction(-8, 9)) == Fraction(21, 4))
 
     for n_c, expected in ((2, Fraction(22, 3)), (3, Fraction(21, 4)), (4, Fraction(14, 3))):
@@ -132,7 +138,7 @@ def main() -> int:
     data = restricted_readout_data()
     live_center_ratio = data.center_ratio_te
     live_rho = data.rho_e
-    check("live center T/E ratio is close to -R_conn but not exact", percent_gap(live_center_ratio, float(center_target)) < 0.25 and abs(live_center_ratio - float(center_target)) > EXACT_TOL, f"live={live_center_ratio:.12f}, target={float(center_target):.12f}, gap={percent_gap(live_center_ratio, float(center_target)):.6f}%")
+    check("live center T/E ratio is close to -F_adj but not exact", percent_gap(live_center_ratio, float(center_target)) < 0.25 and abs(live_center_ratio - float(center_target)) > EXACT_TOL, f"live={live_center_ratio:.12f}, target={float(center_target):.12f}, gap={percent_gap(live_center_ratio, float(center_target)):.6f}%")
     check("live rho_E is close to 21/4 but not exact", percent_gap(live_rho, float(Fraction(21, 4))) < 0.2 and abs(live_rho - float(Fraction(21, 4))) > EXACT_TOL, f"live={live_rho:.12f}, target={float(Fraction(21, 4)):.12f}, gap={percent_gap(live_rho, float(Fraction(21, 4))):.6f}%")
 
     print()
@@ -153,8 +159,8 @@ def main() -> int:
     route2_mentions_rconn = "R_conn" in readout_text or "R_conn" in naturality_text or "R_conn" in bilinear_text
     route2_mentions_color_trace = "color trace" in readout_text.lower() or "color trace" in naturality_text.lower() or "color trace" in bilinear_text.lower()
     rconn_mentions_route2 = "Route-2" in rconn_text or "Theta_R" in rconn_text or "E-center" in rconn_text
-    check("current Route-2 readout surfaces do not type the R_conn bridge", not route2_mentions_rconn and not route2_mentions_color_trace)
-    check("R_conn surface does not identify a Route-2 E/T endpoint ratio", not rconn_mentions_route2)
+    check("current Route-2 readout surfaces do not type the adjoint-fraction bridge", not route2_mentions_rconn and not route2_mentions_color_trace)
+    check("R_conn/F_adj surface does not identify a Route-2 E/T endpoint ratio", not rconn_mentions_route2)
 
     proof_inputs = {
         "restricted_route2_carrier",
@@ -177,10 +183,10 @@ def main() -> int:
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     if FAIL_COUNT == 0:
-        print("VERDICT: -R_conn is a sharp conditional bridge to rho_E=21/4,")
+        print("VERDICT: -F_adj is a sharp conditional bridge to rho_E=21/4,")
         print("but the source-domain identification is still missing.")
         return 0
-    print("VERDICT: R_conn bridge obstruction verifier has failing checks.")
+    print("VERDICT: R_conn/F_adj bridge obstruction verifier has failing checks.")
     return 1
 
 

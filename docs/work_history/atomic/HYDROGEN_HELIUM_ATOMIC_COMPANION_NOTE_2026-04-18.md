@@ -2,7 +2,9 @@
 
 **Date:** 2026-04-18 (2026-05-18: claim_scope formalized as diagnostic
 work-history numerics only, not retained bounded authority, per audit
-verdict boundary instruction).
+verdict boundary instruction; 2026-06-12: restricted packet verifier added
+for the hydrogen, helium Hartree, helium Jastrow, and dependency-repair
+source/cache artifacts).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing content
 of this note is **diagnostic work-history numerics only**: the
@@ -25,6 +27,9 @@ repair is sufficient.
 **Status:** bounded work-history companion; preserved from branch review, not a
 flagship authority surface
 **Source branch reviewed:** `origin/frontier/hydrogen-helium-review`
+**Source runner:** [`scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py`](../../../scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py)
+with cache
+[`logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt`](../../../logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt).
 
 **Audit-conditional perimeter (2026-05-05):**
 In the cited audit snapshot, the audit lane classified this row `audited_conditional` with
@@ -52,6 +57,15 @@ note remains a diagnostic work-history record.
 See "Citation chain and audit-stated repair path (2026-05-10)"
 below.
 
+**2026-06-12 source-packet verifier:** the compact packet verifier named
+above checks that the hydrogen, helium Hartree, helium Jastrow, and
+dependency-repair runner sources are present; that their `logs/runner-cache/`
+certificates are SHA-current and zero-exit; that the quoted hydrogen/helium
+readouts are present in those caches; and that the lattice-kinetic /
+Coulomb-kernel dependency repair verifier cache is present and passing. This
+is a restricted-packet visibility repair only. Independent review and audit
+own whether it resolves the runner-artifact conditional verdict.
+
 ## Runner source + cache excerpt (load-bearing for restricted packet, inlined 2026-05-18)
 
 This section is the restricted-packet-visibility repair for the
@@ -69,7 +83,7 @@ operators produce the quoted readouts.
   - [`docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md`](../../HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md)
     — narrowed dependency repair for the scalar graph-Laplacian and
     Coulomb-kernel surfaces used here.
-  - [`docs/MINIMAL_AXIOMS_2026-06-04.md`](../../MINIMAL_AXIOMS_2026-06-04.md)
+  - [`docs/MINIMAL_AXIOMS_2026-06-05.md`](../../MINIMAL_AXIOMS_2026-06-05.md)
     — current baseline framework primitives; this note does not rely on
     the stale 2026-04-11 axiom citation.
 - **Coulomb kernel** — `V(r) = -g/|r|` from the `Z³` Green's function
@@ -420,7 +434,8 @@ authority chain on this row currently stands as follows.
 | Helium Hartree companion runner | [`scripts/frontier_atomic_helium_hartree_companion.py`](../../../scripts/frontier_atomic_helium_hartree_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_helium_hartree_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_hartree_companion.txt) | product-state upper bound only |
 | Helium Jastrow / VMC companion runner | [`scripts/frontier_atomic_helium_jastrow_companion.py`](../../../scripts/frontier_atomic_helium_jastrow_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt) | one-parameter VMC companion only |
 | Lattice-kinetic / Coulomb-kernel dependency repair verifier | [`docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md`](../../HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md), [`scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py`](../../../scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py) | verifier cache [`logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt`](../../../logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt), `PASS=28 FAIL=0` | later review decides whether this dependency repair is sufficient |
-| One-hop retained lattice kinetic operator / graph Hamiltonian | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) and current baseline [`MINIMAL_AXIOMS_2026-06-04.md`](../../MINIMAL_AXIOMS_2026-06-04.md) | named in the 2026-06-02 dependency repair note and checked by the verifier | scalar graph-Laplacian surface only |
+| Restricted-packet source/cache verifier | [`scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py`](../../../scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py) | verifier cache [`logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt`](../../../logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt), `PASS=60 FAIL=0` | confirms source/cache visibility only; no status lift |
+| One-hop retained lattice kinetic operator / graph Hamiltonian | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) and current baseline [`MINIMAL_AXIOMS_2026-06-05.md`](../../MINIMAL_AXIOMS_2026-06-05.md) | named in the 2026-06-02 dependency repair note and checked by the verifier | scalar graph-Laplacian surface only |
 | One-hop retained Coulomb-kernel route on `Z^3` | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) | four-line `G(r) -> 1/(4 pi |r|)` to `V(r)=-g/|r|` arithmetic recorded in the 2026-06-02 repair note and checked by the verifier | Maradudin/asymptotic bridge scope only |
 | Live retained EW normalization lane (used as boundary disclaimer only) | retained on `main` per "Upstream Surfaces Used Here" | retained | this companion stays in dimensionless / coupling-relative units |
 

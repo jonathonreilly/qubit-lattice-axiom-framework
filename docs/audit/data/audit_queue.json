@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 337,
+    "critical": 336,
     "high": 261,
     "leaf": 489,
     "medium": 440
@@ -460,28 +460,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "awaiting_cross_confirmation",
-      "claim_id": "g_bare_dynamical_fixation_obstruction_note_2026-04-18",
-      "claim_scope": "Only the cached completed L=4, Lt=4 Wilson-SU(3) plus staggered-fermion six-detector scan under the runner-local beta=6 loud-feature predicate: no listed detector supplies a localized detector-loud non-smooth feature fixing g_bare=1 on that finite surface. This excludes larger volumes, unscanned observables, statistical population claims, cross-lattice persistence, and normalization/operator-algebra routes.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 6,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.305,
-      "note_path": "docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_critical_feature_scan.py",
-      "transitive_descendants": 1264
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
       "claim_id": "observable_principle_record_scalar_map_no_go_note_2026-06-05",
       "claim_scope": "Audited only the narrow claim that Record additivity alone does not derive a map from multiplicative branch data such as p or |Z| to an additive scalar record/log-det/P1 readout.",
       "claim_type": "no_go",
@@ -640,15 +618,15 @@
         "yt_ew_matching_rule_m_note_2026-05-02",
         "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.145,
+      "load_bearing_score": 11.65,
       "note_path": "docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_higgs_mass_status_audit.py",
-      "transitive_descendants": 282
+      "transitive_descendants": 283
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -46205,6 +46183,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 69,
-  "total_pending": 1527
+  "ready_count": 68,
+  "total_pending": 1526
 }

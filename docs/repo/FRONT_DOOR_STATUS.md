@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1444 |
+| Applied audit verdicts | 1445 |
 | Retained-grade rows, including boxed decorations | 1328 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 204 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1527 |
-| Ready rows | 69 |
+| Total pending rows | 1526 |
+| Ready rows | 68 |
 | Cycle-break targets | 20 |
-| Critical pending | 337 |
+| Critical pending | 336 |
 | High pending | 261 |
 | Medium pending | 440 |
 | Leaf pending | 489 |
 
 Next ready rows by queue order:
 
-- [`g_bare_dynamical_fixation_obstruction_note_2026-04-18`](../../docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md) - critical; audit_in_progress
 - [`observable_principle_record_scalar_map_no_go_note_2026-06-05`](../../docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31`](../../docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md) - critical; audit_in_progress
 - [`record_unbounded_finite_additivity_schema_2026-06-06`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`yt_p1_i_s_lattice_pt_citation_note_2026-04-17`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) - critical; unaudited
 - [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
+- [`flavor_r_half_is_the_records_flow_separatrix_2026-06-02`](../../docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

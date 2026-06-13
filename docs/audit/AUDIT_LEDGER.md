@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 12 |
-| `audited_clean` | 1302 |
+| `audit_in_progress` | 11 |
+| `audited_clean` | 1303 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `g_bare_dynamical_fixation_obstruction_note_2026-04-18` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -518,6 +517,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_dynamical_fixation_obstruction_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -6932,6 +6932,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The constraint-vs-convention status of g or beta is a function of the admission rank r: with r = 1 the remaining variables lie on a one-parameter convention curve, while with r = 2 the remaining variable is uniquely forced by beta*g^2 = K.  _(class `A`)_
 - **chain closes:** True — The proof is elementary algebra over R_{>0}: solve beta*g^2=K under each admission specialization and count the resulting free parameters. The runner verifies the symbolic identities and exact rational witnesses with PASS=52, FAIL=0, and the note has no load-bearing dependencies.
 - **rationale:** The scoped theorem closes because every claimed case follows directly from the single relation beta*g^2=K over positive reals: K alone leaves a one-parameter curve, fixed K and beta or fixed K and g gives a unique positive solution for the third variable, and no admissions leave a two-parameter surface. The runner checks the symbolic substitutions, exact rational samples, dimension count, round trips, and negative examples without importing any physical interpretation. Residual risk is scope drift only: this audit does not ratify any physical claim that g_bare=1 is forced in the lattice gauge setting.
+- **auditor confidence:** high
+
+### `g_bare_dynamical_fixation_obstruction_note_2026-04-18`
+
+- **Note:** [`G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md`](../../docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The completed L=4, Lt=4 cached Wilson-SU(3)+massless staggered scan over beta 1 through 30, using the six listed scalar detectors and the runner's local beta=6 detector-loud feature rule, found no localized detector-loud beta=6 feature.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-232033-944b5c2ef8-g_bare_dynamical_fixation_ob`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The cached runner reports `SUMMARY: PASS=6 FAIL=0` and `VERDICT: NO critical feature at beta = 6 in any scanned observable`.  _(class `C`)_
+- **chain closes:** True — The runner source constructs SU(3) Wilson configurations and massless staggered Dirac observables and computes the finite detector table, rather than importing or hard-coding the contested conclusion. Independently applying the printed harness rule to the reported feature metrics gives six non-loud outcomes, including rho(0) where kink=True but resid@6/sigma=2.71 is below the runner's >3 loud threshold.
+- **rationale:** The load-bearing result is a bounded first-principles finite-lattice computation on the stated runner surface, with no helper imports and no external comparator or tuned empirical value. The source note's narrowed scope matches the completed cache: L=4 only, six detectors only, runner threshold only, and finite sampling/cache only. The rho(0) shoulder is explicitly disclosed and remains subthreshold under the runner's own loud-feature criterion. The N1-N8 negative-claim gate is satisfied because the note does not promote the L=4 obstruction into an L=6, large-volume, unscanned-observable, or global Path 3 no-go.
 - **auditor confidence:** high
 
 ### `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10`

@@ -31,9 +31,36 @@ bookkeeping and the two-site-cell convention.  This note therefore no longer
 treats `sum_mu sin^2 p_mu` as an undeclared dimensional extension of the
 one-spatial-axis formula.
 
+## 2026-06-13 one-hop dispersion bridge lock
+
+The source-side repair target for this row is the prior conditional blocker:
+
+```text
+missing_bridge_theorem: add a one-hop derivation of
+spec(T_hat^2)(p)=exp(-2 arcsinh(sqrt(m^2+sum_mu sin^2 p_mu))) on the U=1,
+d=3 staggered two-step surface, then re-audit the Paley-Wiener closure with
+the one-particle/free-bilinear scope stated explicitly.
+```
+
+This packet now treats the d-dimensional dispersion note and runner as the
+source-side one-hop bridge for the displayed spectrum.  The exact spectral
+statement is scoped to the action-derived **one-particle/free-bilinear**
+two-step transfer channel:
+
+```text
+spec_one_particle(T_hat^2)(p)
+  = exp(-2 arcsinh(sqrt(m^2 + sum_mu sin^2 p_mu))).
+```
+
+It is not a claim about the full many-body Fock transfer spectrum beyond the
+standard second-quantized free-bilinear construction, and it is not a gauged or
+interacting log-transfer theorem.  The independent audit lane remains the only
+authority for any effective status; this section is a source-side re-audit
+trigger and does not apply an audit result.
+
 ## Safe statement
 
-On the free (`U=1`) staggered surface the reconstructed Hamiltonian is, in momentum space, the
+On the free (`U=1`) staggered one-particle/free-bilinear surface the reconstructed Hamiltonian is, in momentum space, the
 exact free staggered two-step dispersion
 ```
 E(p) = arcsinh( sqrt( m² + Σ_μ sin² p_μ ) ),    spec(T̂²) = e^{−2E(p)},
@@ -44,7 +71,7 @@ with blocked-time normalization from
 [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md).
 Its position-space kernel is `H(x) = FT[E(p)]`.
 
-**Theorem (quasi-locality of the reconstructed `H`, free surface).**
+**Theorem (quasi-locality of the reconstructed `H`, free one-particle/free-bilinear surface).**
 
 1. **The transfer matrix is gapped away from 0.** `spec(T̂²) = e^{−2E(p)} ⊂ [e^{−2E_max}, e^{−2E_min}]`
    with `E_min = arcsinh(m) > 0` and `E_max = arcsinh(√(m²+d)) < ∞`, so `min spec(T̂²) > 0` and
@@ -105,7 +132,8 @@ is named open, not asserted.
 
 ## Runner check breakdown
 
-Class A: (1) source repair guardrails; (2) `spec(T̂²)` gapped away from
+Class A: (1) source repair guardrails and d-dimensional dispersion bridge
+cache/freshness checks; (2) `spec(T̂²)` gapped away from
 0 for `m>0`; (3) `R(p) ≥ m² > 0` on the torus (analyticity strip
 positive); (4) the kernel fits `x^{−p} e^{−a|x|}` with positive
 exponential rate compatible with the theorem's axis scale; (5) `m=0` is

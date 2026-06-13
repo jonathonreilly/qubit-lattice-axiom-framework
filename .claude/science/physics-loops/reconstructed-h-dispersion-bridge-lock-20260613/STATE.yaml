@@ -1,0 +1,19 @@
+loop: reconstructed-h-dispersion-bridge-lock-20260613
+started: "2026-06-13"
+base: origin/main@d4b581c8c
+branch: physics-loop/reconstructed-h-dispersion-bridge-lock-20260613
+target_claim_id: reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06
+actual_current_surface_status: audited_conditional
+target_status: source_side_reaudit_candidate
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_results_edited: false
+repo_authority_surfaces_edited: false
+files_touched:
+  - docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py
+  - logs/runner-cache/reconstructed_h_quasilocal_microcausality_bridge_runner.txt
+  - .claude/science/physics-loops/reconstructed-h-dispersion-bridge-lock-20260613/*
+runner_result: "TOTAL: PASS=10, FAIL=0"
+next_exact_action: "Submit PR for reviewer extraction and independent re-audit."
+stop_condition: "PR opened and verified; no audit verdict applied."

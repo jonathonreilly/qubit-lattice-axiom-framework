@@ -349,6 +349,51 @@ def test_T10_no_alpha_LM_16_closure() -> None:
     )
 
 
+def test_T11_downstream_source_boundary_firewall() -> None:
+    section("T11: downstream source-boundary firewall")
+    text = NOTE.read_text(encoding="utf-8")
+    flat = " ".join(text.split())
+    lower_flat = flat.lower()
+    has_section = "## Downstream Source-Boundary Firewall" in text
+    requires_regulator_proof = (
+        "must separately prove the regulator/twist/patching sector" in lower_flat
+    )
+    requires_substrate_observable_bridge = "substrate/observable bridge" in lower_flat
+    excludes_framework_substrate_theorem = (
+        "do not cite this packet as a framework substrate theorem" in lower_flat
+    )
+    excludes_finite_action_singular_meron = (
+        "finite-action singular meron theorem" in lower_flat
+    )
+    excludes_positive_hierarchy_bridge = "positive hierarchy bridge" in lower_flat
+    excludes_hierarchy_closures = "alpha_lm^16" in lower_flat and "v/m_pl" in lower_flat
+    check(
+        "note has a downstream source-boundary firewall section",
+        has_section,
+        "firewall section present",
+    )
+    check(
+        "firewall requires separate regulator/twist/patching proof",
+        requires_regulator_proof,
+        "future framework use cannot import the regulator/twist/patching sector",
+    )
+    check(
+        "firewall requires separate substrate/observable bridge proof",
+        requires_substrate_observable_bridge,
+        "future framework use cannot import the substrate/observable bridge",
+    )
+    check(
+        "firewall forbids framework-substrate, finite-action, and hierarchy overclaims",
+        (
+            excludes_framework_substrate_theorem
+            and excludes_finite_action_singular_meron
+            and excludes_positive_hierarchy_bridge
+            and excludes_hierarchy_closures
+        ),
+        "framework substrate, finite-action singular meron, hierarchy, alpha_LM^16, and v/M_Pl closures excluded",
+    )
+
+
 def main() -> int:
     print("# Meron / fractional-instanton 4 pi^2 / g^2 external gate runner")
     print(f"# Source note: {NOTE.relative_to(ROOT)}")
@@ -362,6 +407,7 @@ def main() -> int:
     test_T8_open_gate_declaration()
     test_T9_no_substrate_identification()
     test_T10_no_alpha_LM_16_closure()
+    test_T11_downstream_source_boundary_firewall()
     print(f"\n=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")
     return 0 if FAIL == 0 else 1
 

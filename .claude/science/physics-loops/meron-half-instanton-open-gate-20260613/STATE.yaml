@@ -1,0 +1,20 @@
+loop: meron-half-instanton-open-gate-20260613
+status: checkpoint_ready_for_review
+actual_current_surface_status: open
+target_status: source_boundary_repair
+target_claim_id: meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16
+base: origin/main
+branch: physics-loop/meron-half-instanton-open-gate-20260613
+files_touched:
+  - docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py
+  - logs/runner-cache/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.txt
+open_imports:
+  - external 4D Euclidean SU(2) meron/fractional-instanton literature
+  - regulator/twist/patching sector not derived in the framework
+  - substrate/observable bridge not derived in the framework
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: reviewer/auditor decides whether the executable source-boundary firewall is sufficient for the open-gate row

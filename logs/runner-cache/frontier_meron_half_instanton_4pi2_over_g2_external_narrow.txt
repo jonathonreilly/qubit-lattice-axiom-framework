@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py
-runner_sha256: c71357305e2e76ef597f34f43b6141ac432b18bcc30f441a8c8475872528f260
+runner_sha256: 74626901e5c6bf4811a8d061de821ee570561b49acd6353a71d4475a292a63d7
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.26
@@ -95,7 +95,19 @@ T10: boundary — no alpha_LM^16 closure, no v/M_Pl, no 4pi^2 vs lnMPlv identifi
   [PASS] boundary explicitly disclaims 4π² ↔ ln(M_Pl/v) identification
          ln(M_Pl/v) referenced only in 'does not claim' disclaimer
 
-=== TOTAL: PASS=23, FAIL=0 ===
+==============================================================================
+T11: downstream source-boundary firewall
+==============================================================================
+  [PASS] note has a downstream source-boundary firewall section
+         firewall section present
+  [PASS] firewall requires separate regulator/twist/patching proof
+         future framework use cannot import the regulator/twist/patching sector
+  [PASS] firewall requires separate substrate/observable bridge proof
+         future framework use cannot import the substrate/observable bridge
+  [PASS] firewall forbids framework-substrate, finite-action, and hierarchy overclaims
+         framework substrate, finite-action singular meron, hierarchy, alpha_LM^16, and v/M_Pl closures excluded
+
+=== TOTAL: PASS=27, FAIL=0 ===
 
 ----- stderr -----
 

@@ -41,7 +41,32 @@ unaudited staggered-gate dependency removed from closure. This note takes the na
 - The `r = 1/2` dial firewall is explicit: the algebraic flatness/sign-blindness
   result does not physically select `r=1` or exclude `r=1/2`.
 
-## The four exact facts (runner 6/6)
+## 2026-06-13 Conditional-Row Source Firewall
+
+The current audit ledger may still carry an `audited_conditional` verdict until
+the row is re-audited. The source-side target of this repair is narrow:
+
+- do **not** prove or claim a retained bridge from Berry-flat/sign-blind
+  current-`A_min` Dirac readout to physical `r=1` branch selection;
+- do **not** use `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` as a
+  dependency for closure;
+- keep the determinant identity with the odd `3+3` sign
+  `det D = -|det M|^2`;
+- keep the no-go claim restricted to the algebraic facts that the tested Dirac
+  singular-value readout is sign-blind and the tested L-R coupling has
+  b-independent generation eigenvectors, hence zero generation-bundle Berry
+  curvature;
+- leave `READOUT_TO_BRANCH_SELECTION_BRIDGE` open as the theorem needed to
+  decide whether physical charged-lepton readout selects, distinguishes, or
+  leaves open the separate dials `r=0`, `r=1/2`, and `r=1`.
+
+In other words, this row is a bounded algebraic route-pruning packet. It says
+that the current singular-value/Berry-flat route cannot derive the signed-root
+`r=1/2` Koide branch. It does not say that Nature selects `r=1`, and it does
+not say that `r=1/2` is unavailable to a future signed-readout or
+corner-realization theorem.
+
+## The four exact facts (runner 11/11)
 
 1. **A 3-generation Dirac block determinant is the negative modulus-squared.** For the Dirac block
    operator `D = [[0, M],[M†, 0]]` on the three-generation `generation⊗{L,R}` space,
@@ -120,7 +145,8 @@ are restated only as declared Koide-lane dial/comparator labels, with no physica
 - [`KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md`](./KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md)
 - [`KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`](./KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md)
 
-Plain-text non-load-bearing context pointer: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+Plain-text non-load-bearing context pointer, not a dependency for closure:
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 (`AC_phi_lambda`/corner realization remains open and not theorem-foreclosed).
 
 **Independent audit required.** This note asserts no effective-status change.

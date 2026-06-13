@@ -61,16 +61,38 @@ if NOTE.exists():
         "**Type:** no_go",
         "bounded",
         "not a hard universal no-go",
+        "2026-06-13 Conditional-Row Source Firewall",
         "singular-value",
         "Berry-flat",
+        "det D = -|det M|^2",
         "sign of `√m`",
         "READOUT_TO_BRANCH_SELECTION_BRIDGE",
         "`r = 1/2` is a stable dial setting, never forced",
         "does not claim `r=1` is physically selected",
+        "does not say that Nature selects `r=1`",
+        "`r=1/2` is unavailable",
         "not theorem-foreclosed",
+        "not a dependency for closure",
         "Independent audit required",
     ]
     chk("(5) source note keeps the bounded / open-bridge / dial-firewall boundary", all(k in tt for k in toks))
+    chk("(6) source note does not claim a physical r=1 branch-selection theorem",
+        "do **not** prove or claim a retained bridge" in tt
+        and "physical `r=1` branch selection" in tt
+        and "does not claim `r=1` is physically selected" in tt)
+    chk("(7) source note leaves READOUT_TO_BRANCH_SELECTION_BRIDGE open",
+        "leave `READOUT_TO_BRANCH_SELECTION_BRIDGE` open" in tt
+        and "selects, distinguishes, or leaves open" in tt)
+    chk("(8) staggered gate is a plain-text non-load-bearing pointer",
+        "Plain-text non-load-bearing context pointer, not a dependency for closure" in tt
+        and "[`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`]" not in tt)
+    chk("(9) source note binds the no-go only to algebraic route pruning",
+        "bounded algebraic route-pruning packet" in tt
+        and "current singular-value/Berry-flat route cannot derive" in tt
+        and "future signed-readout or" in tt)
+    chk("(10) determinant sign repair is explicit in the source note",
+        "`det [[0,M],[M†,0]] = - det(M) det(M†) = -|det M|²`" in tt
+        and "`det D = -|det M|^2`" in tt)
 else:
     chk("(5) source note present", False)
 

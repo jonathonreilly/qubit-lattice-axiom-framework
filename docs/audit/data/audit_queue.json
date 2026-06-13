@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 278,
     "high": 285,
-    "leaf": 453,
+    "leaf": 452,
     "medium": 421
   },
   "cycle_break_target_count": 4,
@@ -17115,40 +17115,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
-        "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
-        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
-        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "plaquette_self_consistency_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
-        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
-        "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
-        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
-      ],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17265,6 +17231,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/signed_gravity_interface_kodd_pfaffian_line_bundle_2026_06_12.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
       "transitive_descendants": 17
     },
     {
@@ -30150,33 +30143,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -30631,6 +30597,38 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
+        "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+        "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
+        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+        "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py",
+        "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.py",
       "transitive_descendants": 0
     },
     {
@@ -36772,38 +36770,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/gauge_vacuum_plaquette_rim_depth_ladder_deep_rim_limit_2026_06_12.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
-        "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
-        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
-        "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
-        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
-        "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py",
-        "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.py",
       "transitive_descendants": 0
     },
     {
@@ -43359,5 +43325,5 @@
     }
   ],
   "ready_count": 45,
-  "total_pending": 1437
+  "total_pending": 1436
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 864 |
+| **retained_bounded** | 865 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1435 |
+| unaudited | 1434 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1316 |
+| `audited_clean` | 1317 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1752 |
+| `unaudited` | 1751 |
 
 | claim_type | count |
 |---|---:|
@@ -595,6 +595,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -8397,6 +8398,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Riccati recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k, together with induction, proves every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).  _(class `A`)_
 - **chain closes:** True — The recurrence follows algebraically from the stated Bessel derivative identities and the Riccati equation, and the sign induction is valid because all summands in the convolution share the same nonzero sign. The cited parent is retained_no_go, and no open upstream premise is needed for the narrow U(1) coefficient theorem beyond the stated U(1) normalization and standard Bessel calculus.
 - **rationale:** The proof is a genuine algebraic closure: parity follows from evenness of I_0, while density and sign alternation follow from the explicit Riccati coefficient recurrence and a correct strong induction. The runner source performs exact symbolic and rational checks rather than merely printing constants, though its finite-order checks are only corroborative because the note supplies the all-order induction. The cached runner summary line reports THEOREM PASS=7 while the note expected PASS=8, but the source and stdout show no failing theorem check and this count mismatch is not load-bearing.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite NMAX=4, MODE_MAX=80 tensor-word packet and NMAX=7, MODE_MAX=200 source readout: certify the W_eta^8 Birkhoff/Hilbert eigenvector bracket, reproduce the finite measured word-count ladder through k=20, and explicitly withhold any certified B(k) tail bound for the measured entrywise-power ladder.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-005310-8f933ba509-gauge_vacuum_plaquette_word_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The ordinary eighth power of the finite dressed operator W_eta is entrywise positive with finite Birkhoff diameter, so Birkhoff contraction gives an eigenvector-level Hilbert bracket for ordinary W_eta iterates.  _(class `A`)_
+- **chain closes:** True — The scoped certificate closes from finite retained inputs plus standard Hilbert-metric/Birkhoff algebra: W_eta has the retained finite support, W_eta^8 is positive, Delta and kappa are finite, and the displayed k/8 constant follows from block contraction plus nonexpansiveness of positive linear maps. The denominator/source perturbation theorem for the entrywise-power K_k ladder is named as outside scope, not used to prove the certified W_eta bracket.
+- **rationale:** The load-bearing step is a finite-matrix algebraic closure over retained or retained_bounded inputs, not a definition, renaming, tuned comparator match, or imported physical value. Independent formula checks agree with the runner path: the log-row diameter formula is the standard projective diameter, kappa=tanh(Delta/4), and the k/8 constant is a valid weakening of the block-floor contraction bound. The source also correctly separates the ordinary W_eta certificate from the measured entrywise-power word-count ladder, and does not ship the missing measured-tail B(k) bracket.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12`

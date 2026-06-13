@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12",
         "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
         "gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
         "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11",
         "quark_route2_eta_floor_hf_boundary_note",
-        "signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12"
+        "signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12",
+        "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "380dd269d1502278f132e6bb34ea078a0a1bf681a17682b6104063a62984b433",
+      "note_hash": "7e1ccd9ad6d784e6fe9824b404a75bdb853a53f7fec65817e6e6e83b7457a40d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

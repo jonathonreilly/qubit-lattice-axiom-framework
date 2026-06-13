@@ -1,0 +1,24 @@
+loop_slug: kawamoto-smit-source-boundary-block14-20260613
+branch: physics-loop/kawamoto-smit-source-boundary-block14-20260613
+base: origin/main@fc08b0519
+target_claim_id: staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07
+mode: source_repair
+actual_current_surface_status: ledger_surface_unchanged_prior_audited_conditional
+branch_status: source_side_reaudit_candidate
+proposal_allowed: false
+audit_required_before_effective_status_change: true
+active_route: "make the auditable claim the abstract Clifford-link scalarization theorem; move P-KIN/P-SD/P-FLUX/statistics selection to downstream physical-use context"
+files_touched:
+  - docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
+  - scripts/probe_kawamoto_smit_phase_forcing.py
+  - logs/runner-cache/probe_kawamoto_smit_phase_forcing.txt
+remaining_blockers:
+  - "This PR does not close the staggered-Dirac realization gate."
+  - "Physical kinetic-class, P-SD, P-FLUX, and statistics-selection gates remain downstream of this theorem."
+  - "Torus holonomies/APBC signs remain outside the simply connected local theorem."
+verification:
+  - "python3 -m py_compile scripts/probe_kawamoto_smit_phase_forcing.py"
+  - "python3 scripts/probe_kawamoto_smit_phase_forcing.py -> TOTAL: PASS=58 FAIL=0"
+  - "runner_cache.cache_status('scripts/probe_kawamoto_smit_phase_forcing.py') -> fresh"
+next_exact_action: "Reviewer/auditor should re-audit the abstract cocycle/gauge classification without treating P-KIN/P-SD/statistics selection as load-bearing premises of this row."
+stop_condition: "Ready PR refreshed for the current Kawamoto-Smit source-side re-audit candidate; no audit/status surfaces edited."

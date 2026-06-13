@@ -2,44 +2,44 @@
 
 **Date:** 2026-05-07; 2026-06-06 cocycle/gauge-class uniqueness repair;
 2026-06-10 science-fix (iff + premise honesty + forcing certificate —
-see §0 changelog); 2026-06-11 substep-1 boundary sync; 2026-06-15
-bounded-surface hygiene repair
+see §0 changelog); 2026-06-11 substep-1 boundary sync;
+2026-06-13 source-boundary repair
 **Type:** bounded_theorem
-**Claim scope:** On the supplied local kinetic-scalarization surface —
-the naive-Dirac kinetic form on nearest-neighbor `Z³` links (premise
-P-KIN) together with a site-local unitary scalarization hypothesis
-(premise P-SD) — a nearest-neighbor phase system `η` admits a
-site-local unitary scalarization IF AND ONLY IF it satisfies the
-Clifford `−1` plaquette cocycle, and on simply connected regions of
-`Z³` the solutions form EXACTLY ONE local gauge class: the class of the
-Kawamoto-Smit representative `η_1 = 1, η_2(x) = (−1)^{x_1}, η_3(x) =
-(−1)^{x_1+x_2}`. This is bounded forcing of the Kawamoto-Smit gauge
-class under the declared local premises (boundaries B2–B4 below), not
-an unconditional derivation of the kinetic class itself from Lattice +
-Quantum alone. The substep-1 single-mode/statistics surface is
-downstream realization context, not a premise of this local theorem.
+**Claim scope:** Abstract Clifford-link scalarization theorem on
+nearest-neighbor simply connected regions of `Z³`. Given Hermitian
+anticommuting `Cl(3)` link matrices `γ_μ` and a nearest-neighbor
+`U(1)` phase system `η`, the site-local unitary scalarization equation
+`T(x+μ) = η_μ(x) γ_μ T(x)` is solvable IF AND ONLY IF `η` satisfies the
+Clifford `−1` plaquette cocycle, and on simply connected regions the
+solutions form EXACTLY ONE local gauge class: the class of the
+Kawamoto-Smit representative
+`η_1 = 1, η_2(x) = (−1)^{x_1}, η_3(x) = (−1)^{x_1+x_2}`. This row does
+not import the physical kinetic-class, P-SD, or statistics-selection
+claims as load-bearing theorem premises; those are downstream
+physical-use gates for the staggered-Dirac realization note.
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome; audit verdict and effective status
 are set only by the independent audit lane.
 **Primary runner:** [`scripts/probe_kawamoto_smit_phase_forcing.py`](../scripts/probe_kawamoto_smit_phase_forcing.py)
-**Authority role:** source note for substep 2 (kinetic form, R2) of the
-staggered-Dirac realization gate
+**Authority role:** source note for the abstract Kawamoto-Smit
+cocycle/gauge classification used by substep 2 (kinetic form, R2) of
+the staggered-Dirac realization gate
 (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, parent context
 only, not a one-hop authority for this row),
-which consumes exactly the bounded statement above ("unique as a local
-Z2 gauge class … bounded on the declared kinetic class … the P-SD
-surface").
+which may consume this theorem only after its separate physical
+kinetic-class/P-SD/statistics gates are supplied.
 
 ## 0. Changelog
 
-- **2026-06-15 (bounded-surface hygiene repair).** The theorem surface
-  is made proof-exact: Lemmas 2--4 use the supplied local
-  `P-KIN/P-SD` scalarization surface, the Pauli/Clifford input, and
-  the `Z³` box topology. The substep-1 Grassmann/statistics packet is
-  retained as downstream realization context for gate consumers, but
-  it is no longer listed as a theorem premise or a load-bearing
-  dependency for the local Kawamoto-Smit gauge-class result. No
-  kinetic-class derivation or status promotion is claimed.
+- **2026-06-13 (source-boundary repair).** The auditable row is now the
+  abstract Clifford-link scalarization theorem, not a physical
+  derivation of the staggered kinetic class. P-KIN, P-SD, P-FLUX, and
+  the substep-1 statistics-selection boundary are retained as
+  downstream physical-use context only; they are not load-bearing
+  theorem premises for Theorem 2 below. The local theorem still proves
+  the same iff and one-gauge-class result, and still excludes torus
+  holonomies from the simply connected scope. No audit status, ledger
+  row, or realization-gate closure claim is changed here.
 - **2026-06-10 (science-fix, this revision).** Four defects repaired:
   1. *(High — missing sufficiency.)* The 2026-06-06 revision proved
      only necessity (any scalarization forces the `−1` cocycle) plus
@@ -58,18 +58,16 @@ surface").
   3. *(Medium — overclaim inconsistency.)* The old Answer and Step 4
      said spin-diagonalization is "forced by single-mode Grassmann"
      while Theorem 2 was stated "under the spin-diagonalization
-     premise." That prose is withdrawn: the naive-Dirac kinetic form
-     (P-KIN) and the site-local unitary diagonalization (P-SD) are now
-     declared, named premises (boundaries B2, B3). The single-mode
-     surface motivates P-SD (one Grassmann mode per dim-2 site module
-     leaves no room for a 2-component spinor) but the precise exclusion
-     bridge is open and is carried by the gate note's residual list,
-     not silently assumed here.
+     premise." The 2026-06-10 revision made P-KIN/P-SD explicit
+     assumptions to avoid silent physical overclaiming; the
+     2026-06-13 revision supersedes that framing for this row by moving
+     P-KIN/P-SD to downstream physical-use context and auditing only
+     the abstract scalarization theorem.
   4. *(Medium — unjustified `η ∈ {±1}`.)* The old derivation assumed
      sign-valued phases without justification. Fixed: Remark R2 — the
      entire argument runs verbatim with `U(1)`-valued phases, giving
      uniqueness up to local `U(1)` gauge with the same real
-     representative `η^0` (runner check 47).
+     representative `η^0` (runner section E).
   5. *(Low — choice-language.)* Step 3's "natural identification"
      wording (a definition presented as if load-bearing) is demoted to
      Remark R1; the actual computable content is the bipartiteness
@@ -86,11 +84,10 @@ surface").
   since discharged the former U4/per-site-identification boundary via
   the Quantum/dim-two route while preserving the statistics-selection
   residual: the hard-core-boson frame remains outside the
-  two-candidate comparison. This note's B1 language is synchronized to
-  that current boundary. No kinetic-class derivation is added here:
-  P-KIN and P-SD remain declared premises. The 2026-06-15 hygiene
-  repair below further narrows B1 from theorem premise to downstream
-  realization context.
+  two-candidate comparison. The 2026-06-11 B1/P-KIN/P-SD boundary
+  language is now superseded by the 2026-06-13 source-boundary repair:
+  BlockT1/statistics selection and P-KIN/P-SD are downstream
+  physical-use gates, not theorem premises for this row.
 - **2026-06-12 (kinetic supply-line sync).** Current main now contains
   a sharper source-side supply line for this note's former B2/B3
   residuals. `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`
@@ -99,29 +96,29 @@ surface").
   the flux-`-1` branch; it leaves exactly the P-FLUX bit
   `phi = -1` as the P-KIN residual. `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`
   then composes the retained `(Z)` geometry certificate with the FSB-K
-  thermal row as a conditional selector for that bit. This sync does
-  not change this row's current audit status and does not claim
-  retained closure: the kinetic-class and P-FLUX supplier rows are
-  still audit-owned, and the P-FLUX selection is conditional on FSB-K's
-  audit grade.
+  thermal row as a conditional selector for that bit. As of the
+  2026-06-13 source-boundary repair, this supply line is downstream
+  physical-use context only; it is not a premise for the abstract
+  cocycle/gauge theorem audited here.
 - **2026-06-06.** Cocycle/gauge-class uniqueness repair (necessity +
   classification; superseded in form by Lemmas 2 and 4 below).
 - **2026-05-07.** Original substep-2 note.
 
 ## 1. Question
 
-On the supplied local kinetic-scalarization surface (P-KIN + P-SD), is
-the staggered kinetic operator's phase structure forced to be the
-Kawamoto-Smit law, and in exactly what sense "forced"?
+For the abstract nearest-neighbor Clifford-link scalarization problem
+on a simply connected region of `Z³`, which phase systems admit a
+site-local unitary scalarizing frame, and in exactly what sense is the
+Kawamoto-Smit phase law "forced"?
 
 ## 2. Answer (bounded)
 
-**Within the declared kinetic class, yes — as an iff plus an exhaustive
-classification.** A phase system on nearest-neighbor `Z³` links admits
-a site-local unitary scalarization if and only if it satisfies the
-Clifford `−1` plaquette cocycle (Theorem 2(i), Lemmas 2 + 3), and on
-simply connected regions the cocycle solutions form exactly one local
-gauge class — the class of
+**For the abstract scalarization problem, yes — as an iff plus an
+exhaustive classification.** A phase system on nearest-neighbor `Z³`
+links admits a site-local unitary scalarization if and only if it
+satisfies the Clifford `−1` plaquette cocycle (Theorem 2(i), Lemmas 2
++ 3), and on simply connected regions the cocycle solutions form
+exactly one local gauge class — the class of
 
 ```
 η_1(x) = 1
@@ -129,29 +126,25 @@ gauge class — the class of
 η_3(x) = (−1)^{x_1 + x_2}
 ```
 
-(Theorem 2(ii), Lemma 4). What is NOT claimed: that the kinetic class
-itself (P-KIN, P-SD) is forced by Lattice + Quantum alone — those are declared premises
-with named boundaries below. This is exactly the bounded statement the
-realization-gate note consumes as its R2 authority.
+(Theorem 2(ii), Lemma 4). What is NOT claimed in this row: that a
+physical staggered kinetic class, the P-SD absorbing frame, the P-FLUX
+selector, or the single-mode statistics-selection bridge has been
+derived. Those are downstream physical-use gates, not load-bearing
+premises of the theorem proved here.
 
-## 3. Boundaries (the bounded surface, stated up front)
+## 3. Boundaries (the theorem surface, stated up front)
 
 | ID | Boundary | Where it bites |
 |---|---|---|
-| B1 | Downstream realization context: the substep-1 single-mode/statistics surface motivates why gate consumers want P-SD, but it is not a premise of Lemmas 2--4 or Theorem 2 in this row | does not bite inside the local Kawamoto-Smit proof; remains a downstream gate-residual context |
-| B2 | P-KIN: the naive-Dirac kinetic form `D = Σ_μ γ_μ ⊗ ∂_μ` on nearest-neighbor `Z³` links is a declared premise; non-nearest-neighbor or non-Dirac kinetic operators are not excluded here | Theorem 2 quantifies over phase systems *within* this class only |
-| B3 | P-SD: a *site-local unitary* scalarization `T(x)` is supplied; alternatives that bypass spin diagonalization (for example a 2-component naive operator) are outside this local theorem unless separately mapped into P-SD | the scalarization condition (4) is the P-SD premise in equation form |
-| B4 | Finite tori carry extra holonomy data: signs around non-contractible cycles (PBC/APBC and wrap-sign conventions) are boundary convention data, not local phase law; likewise lattice-axis permutation is coordinate-label gauge | Theorem 2(ii) is stated on simply connected regions |
+| B1 | Substep-1 single-mode/statistics selection is downstream physical-use context only. The abstract theorem below does not require the matter-measure row, and does not decide Grassmann-vs-hard-core-boson selection. | realization-gate closure, not Theorem 2 |
+| B2 | P-KIN/nearest-neighbor physical kinetic-class selection is downstream physical-use context only. The theorem starts after an abstract nearest-neighbor Clifford-link scalarization problem has been supplied. | realization-gate closure, not Theorem 2 |
+| B3 | P-SD/site-local absorbing-frame existence is downstream physical-use context only. The theorem classifies the phase systems satisfying the scalarization equation; it does not prove that a physical model must supply that equation. | realization-gate closure, not Theorem 2 |
+| B4 | Finite tori carry extra holonomy data: signs around non-contractible cycles (PBC/APBC and wrap-sign conventions) are boundary convention data, not local phase law; likewise lattice-axis permutation is coordinate-label gauge. | Theorem 2(ii) is stated on simply connected regions |
 
-### 3.1 2026-06-12 kinetic supply-line status
+### 3.1 2026-06-12/13 downstream physical-use supply line
 
-The B2/B3 boundary is now sharper than the original declared-premise
-wording. This subsection is **not** a load-bearing dependency edge for
-the theorem in this row: it is a source-side roadmap for future premise
-retirement. The claim audited here remains only the local iff/gauge-class
-theorem under the supplied `P-KIN` and `P-SD` hypotheses stated in B2/B3.
-Independent audit of the supplier rows is not required to audit this
-bounded local theorem on its supplied kinetic surface.
+The physical realization gate has a separate source-side supply line for
+the B2/B3 downstream-use gates:
 
 | former boundary | current source-side supplier | current honest status |
 |---|---|---|
@@ -159,8 +152,8 @@ bounded local theorem on its supplied kinetic surface.
 | P-KIN broad kinetic-class declaration | same kinetic-class forcing note | reduced to exactly two licensed frame classes, `K0` with flux `+1` and `K1` with flux `-1`; the surviving residual is the one-bit P-FLUX selector |
 | P-FLUX selector `phi = -1` | `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`; runner cache `p_flux_selection_via_fsb_k_check_2026_06_11.txt` (`TOTAL: PASS=16 FAIL=0`) | conditional on FSB-K's audit grade, using the retained `(Z)` kernel-geometry certificate; no selection is performed at current grades |
 
-Future stronger re-audit that wants to retire `P-KIN/P-SD` should treat
-this row's B2/B3 residual as a source-side cascade:
+When a downstream gate uses this row as physical staggered-Dirac
+support, that downstream row must still supply the cascade:
 
 ```text
 kinetic-class forcing
@@ -174,13 +167,9 @@ Source-only sync verifier:
 cache:
 `logs/runner-cache/staggered_dirac_kinetic_supply_line_sync_2026_06_12.txt`.
 
-This row remains a bounded theorem on supplied `P-KIN/P-SD` unless that
-cascade is accepted by the independent audit lane. The local
-Kawamoto-Smit phase-forcing proof below still states its theorem under
-the `P-KIN/P-SD` class because that is the exact local hypothesis. The
-supply-line section records the current route for retiring those
-hypotheses, not a branch-local status promotion and not a dependency
-required for this row's bounded local closure.
+This cascade is not a load-bearing premise for the theorem proved in
+this row. It matters only when a downstream realization-gate argument
+uses this abstract cocycle/gauge theorem as its R2 input.
 
 ## 4. Setup
 
@@ -188,24 +177,16 @@ required for this row's bounded local closure.
 
 | ID | Statement | Class |
 |---|---|---|
-| Quantum | one-qubit local algebra, equivalently `M_2(C) ~= Cl(3,0)`, with Pauli realization per site | accepted axiom premise |
-| Lattice | `Z³` nearest-neighbor lattice | accepted axiom premise |
-| U2 | Per-site faithful Cl(3) irrep of dim 2; central pseudoscalar `ω = γ₁γ₂γ₃` | per [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) |
-| F1 | Z₂ fermion-parity grading | per [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) |
-| BPG | `Z³` nearest-neighbor graph is bipartite | admissible standard math (graph theory) |
-| P-KIN | Naive-Dirac kinetic form on nearest-neighbor links | DECLARED premise (B2) |
-| P-SD | Site-local unitary spin diagonalization | DECLARED premise (B3) |
+| CL3 | Hermitian generators `γ_1, γ_2, γ_3` with `γ_μ² = I` and `γ_μγ_ν = −γ_νγ_μ` for `μ ≠ ν`; Pauli realization used for executable checks | native one-qubit/Cl(3) algebra, cross-referenced to [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) |
+| Lattice | Simply connected nearest-neighbor region of `Z³` with its square plaquettes | accepted lattice setting plus finite cell-complex algebra |
+| Phase | A nearest-neighbor link phase system `η_μ(x) ∈ U(1)` | theorem variable, not an imported physical input |
+| BPG | `Z³` nearest-neighbor graph is bipartite | admissible standard math (graph theory); used only for the parity corollary and global-sign gauge remark |
 
-P-KIN + P-SD together are what the realization-gate note calls "the
-declared kinetic class (the P-SD surface)". The 2026-06-06 revision's
-NR premise ("retained no-rooting irreducibility") is removed: it was
-cited via a script outside the one-hop packet and was load-bearing
-nowhere in the derivation.
-
-The substep-1 single-mode/statistics packet is downstream context for
-staggered-realization consumers. It is not used in Lemmas 2--4: once
-P-SD is supplied, the proof is the local Pauli/lattice transport
-calculation below.
+Not theorem premises: BlockT1, P-KIN, P-SD, P-FLUX, FSB-K, the
+substep-1 statistics-selection row, rooting/taste reduction, PDG
+values, lattice-MC values, or fitted coefficients. Those may matter for
+physical realization-gate closure, but they are not load-bearing inputs
+to the cocycle/gauge classification proved here.
 
 ### 4.2 Forbidden imports
 
@@ -214,17 +195,18 @@ calculation below.
 
 ### 4.3 The scalarization condition
 
-Under P-KIN the kinetic operator is `D = Σ_μ γ_μ ⊗ ∂_μ` with `∂_μ` the
-symmetric lattice difference. P-SD supplies the site-local unitary
-scalarization map `T(x)` per site, `χ(x) := T(x) ψ(x)`, with the
-**scalarization condition**
+For the abstract link problem, a scalarizing frame is a site-local
+unitary map `T(x) ∈ U(2)` satisfying the **scalarization condition**
 
 ```
 T†(x) γ_μ T(x + μ̂) = η_μ(x) · I_2                                       (4)
 ```
 
 where the phases `η_μ(x)` are a priori `U(1)`-valued (Remark R2); the
-sign-valued case `η_μ(x) ∈ {±1}` is the real representative.
+sign-valued case `η_μ(x) ∈ {±1}` is the real representative. A physical
+kinetic row may try to derive or supply this equation from its own
+matter and kinetic assumptions; this row proves what follows once the
+equation itself is the object under study.
 
 ## 5. Lemmas and theorem
 
@@ -323,8 +305,8 @@ containing the Kawamoto-Smit representative `η^0`. ∎
 
 ### Theorem 2 (Kawamoto-Smit phase forcing — bounded)
 
-**On Quantum + Lattice + U2 + F1 + BPG, within the declared kinetic
-class P-KIN (B2) + P-SD (B3):**
+**On the abstract nearest-neighbor `Cl(3)` scalarization problem over a
+simply connected region of `Z³`:**
 
 **(i)** A nearest-neighbor phase system `η` (`Z₂`- or `U(1)`-valued)
 admits a site-local unitary scalarization (4) **if and only if** it
@@ -336,15 +318,11 @@ representative `η^0` of (6); a canonical solution of (4) is
 `T(x) = γ_1^{x_1} γ_2^{x_2} γ_3^{x_3}` (on the Pauli realization,
 `T(x) = σ_1^{x_1} σ_2^{x_2} σ_3^{x_3}`). [Lemma 4]
 
-Hence the staggered kinetic operator
-
-```
-D_staggered = (1/2) Σ_{x, μ} η_μ(x) · (χ̄_{x+μ̂} χ_x − χ̄_x χ_{x+μ̂})
-```
-
-carries the Kawamoto-Smit phase law uniquely as a local gauge class, up
-to finite-boundary holonomy/APBC convention data and lattice-axis
-permutation gauge (B4). ∎
+Hence any downstream staggered kinetic construction that separately
+supplies this scalarization problem has its local link phases forced to
+the Kawamoto-Smit class, up to finite-boundary holonomy/APBC convention
+data and lattice-axis permutation gauge (B4). The physical operator,
+measure, and kinetic-class selection are not part of this theorem. ∎
 
 ### Remarks
 
@@ -359,7 +337,7 @@ permutation gauge (B4). ∎
   same two-path computation gives (8), the same transport gives
   sufficiency, and the same path-product gives (10) with `ḡ(x)` —
   uniqueness up to local `U(1)` gauge with the **same real
-  representative** `η^0`. Runner check 47 verifies this exactly
+  representative** `η^0`. Runner section E verifies this exactly
   (sympy): a genuinely complex local phase transform scalarizes and
   path-product recovery returns `η^0`.
 - **R3 (global sign is gauge).** `−η^0` is the `ε`-gauge transform of
@@ -378,7 +356,7 @@ permutation gauge (B4). ∎
 
 [`scripts/probe_kawamoto_smit_phase_forcing.py`](../scripts/probe_kawamoto_smit_phase_forcing.py)
 — deterministic, no network, no randomness, runtime well under one
-second. 47 checks in five sections; this is a *forcing certificate*,
+second. Checks are grouped in six sections; this is a *forcing certificate*,
 not an instantiate-and-check script:
 
 - **A (checks 1–25):** exact-sympy canonical construction —
@@ -404,31 +382,33 @@ not an instantiate-and-check script:
   and all 12 single-edge perturbations of `η^0` are *rejected* by the
   transport decision procedure on the unit cube; a flipped interior
   edge on the `4³` box violates the cocycle at scale.
-- **E (checks 46–47):** a nontrivial `Z₂` gauge transform of `η^0`
+- **E:** a nontrivial `Z₂` gauge transform of `η^0`
   scalarizes and its gauge function is recovered exactly by path
   products (Lemma 4); the `U(1)` leg of Remark R2 (complex local phase
   transform scalarizes; recovery returns the same real representative
   `η^0`), exact sympy.
+- **F:** source-boundary firewall — the companion note is checked for
+  the 2026-06-13 abstract theorem target and for the absence of
+  superseded declared-physical-premise wording.
 
-The runner prints the declared-open P-KIN/P-SD and B4 residuals, plus a
-`CONTEXT (not theorem premise): ...` line for the substep-1
-single-mode/statistics surface, so the bounded local theorem is not
-mistaken for an unconditional realization-gate closure.
+The runner prints source-boundary lines separating downstream
+physical-use gates (B1/B2/B3) from the actual theorem boundary (B4) so
+the stdout reflects this row's revised audit target.
 
 ## 7. What this does NOT close
 
 - The realization gate itself (carried by the gate note's bounded
   synthesis and its residual list).
 - Derivation of the kinetic class from Lattice + Quantum alone: the
-  2026-06-12 supply line narrows this residual but does not remove it
-  at this row's current grade. P-SD is discharged as a source theorem
-  on the `K1` branch, and P-KIN is reduced to the P-FLUX bit
+  2026-06-12 supply line narrows this downstream physical-use gate, but
+  it is not a premise of Theorem 2. P-SD is discharged as a source
+  theorem on the `K1` branch, and P-KIN is reduced to the P-FLUX bit
   `phi = -1`; the bit-selection route is conditional on FSB-K plus the
-  retained `(Z)` certificate and remains audit-owned.
-- The substep-1 statistics-selection/exhaustiveness residual (B1) for
-  downstream gate consumers. It is not part of this local theorem's
-  proof, but it still blocks any claim that the full staggered
-  realization gate is unconditionally closed.
+  retained `(Z)` certificate and remains audit-owned for rows that need
+  physical realization closure.
+- The substep-1 statistics-selection/exhaustiveness residual (B1): this
+  remains relevant to realization-gate closure, not to the abstract
+  cocycle/gauge classification in this row.
 - Rooting / taste reduction: the previous revision's NR claim
   ("retained no-rooting irreducibility" of the Kawamoto-Smit
   realization on `C^8`) is withdrawn from this note's premise set and
@@ -441,10 +421,10 @@ mistaken for an unconditional realization-gate closure.
 ## 8. What this supports
 
 - Substep 2 (kinetic form, R2) of the staggered-Dirac realization
-  gate, at exactly the strength the gate note cites: forcing of the
-  Kawamoto-Smit phase law, unique as a local `Z₂` gauge class by the
-  Clifford `−1` plaquette-cocycle argument, bounded on the declared
-  kinetic class (P-KIN + P-SD), with boundary holonomies/APBC and axis
+  gate, once that downstream gate separately supplies the physical
+  kinetic-class/scalarization hypotheses: forcing of the Kawamoto-Smit
+  phase law, unique as a local `Z₂` gauge class by the Clifford `−1`
+  plaquette-cocycle argument, with boundary holonomies/APBC and axis
   ordering as convention data.
 - The gauge class is derived by a genuine iff plus exhaustive
   classification (Theorem 2(i)–(ii)), not consistency-checked on a
@@ -455,9 +435,12 @@ mistaken for an unconditional realization-gate closure.
 - Parent gate (consumes this note as R2; file-path context only, not a
   one-hop authority for this row):
   `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-- Substep-1 Grassmann/statistics packet (downstream context only, not a
-  theorem premise for this row): the retained two-candidate
-  single-mode note from 2026-05-16
+- Downstream single-mode/statistics context, not a theorem premise:
+  [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- Downstream physical-use context, not theorem premises:
+  `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`
+  and
+  `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`
 - Historical substep-1 source packet:
   `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
 - Per-site uniqueness (U2):
@@ -475,19 +458,20 @@ mistaken for an unconditional realization-gate closure.
 python3 scripts/probe_kawamoto_smit_phase_forcing.py
 ```
 
-Expected output (deterministic): 47 numbered `[PASS]` lines in
-sections A–E as described in §6, including
+Expected output (deterministic): numbered `[PASS]` lines in sections
+A–F as described in §6, including
 `exactly 128 = 2^7 admit a site-local unitary scalarization`,
 `scalarizable set == Clifford -1 plaquette cocycle solution set`,
 `scalarizable set == Z2 gauge orbit of eta^0`,
 three GF(2) certificates with `nullity(d1) = |V|-1`,
 14 falsification rejections, the Z2 gauge recovery, and the U(1)
-generalization check; two `RESIDUAL (declared-open): ...` lines
-(B2/B3 kinetic-class premises and B4 holonomy) plus one
-`CONTEXT (not theorem premise): ...` line for B1; then exactly:
+generalization check; source-boundary lines recording B1/B2/B3 as
+downstream physical-use gates rather than theorem premises, plus B4 as
+the simply connected theorem boundary;
+then exactly:
 
 ```text
-TOTAL: PASS=47 FAIL=0
+TOTAL: PASS=58 FAIL=0
 ```
 
 Exit code 0 iff FAIL=0.

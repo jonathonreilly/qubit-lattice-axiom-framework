@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 875 |
+| **retained_bounded** | 876 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1417 |
+| unaudited | 1416 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1328 |
+| `audited_clean` | 1329 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1734 |
+| `unaudited` | 1733 |
 
 | claim_type | count |
 |---|---:|
@@ -102,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1565 | 132.61 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1036 | 64.02 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1037 | 64.02 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1396 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 887 | 59.29 | `unaudited` | unaudited |
 | 5 | `key_terminology` | meta | critical | 1281 | 50.32 | `unaudited` | meta |
@@ -110,7 +110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `plaquette_self_consistency_note` | bounded_theorem | critical | 970 | 46.42 | `audited_clean` | **retained_bounded** |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 927 | 44.36 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 927 | 43.36 | `unaudited` | unaudited |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1021 | 41.50 | `audited_clean` | **retained_bounded** |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1022 | 41.50 | `audited_clean` | **retained_bounded** |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 40.54 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1362 | 39.41 | `audited_clean` | **retained** |
 | 13 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 797 | 39.14 | `audited_clean` | **retained_bounded** |
@@ -333,6 +333,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `delta_magnitude_reduces_to_massless_gravity_scale_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4600,6 +4601,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** L_runner intersect {d : d <= 3} = {3}, while L_runner intersect {d : d <= 4} = {3,4}, so current unique d=3 selection depends on the native stable-orbit upper edge.  _(class `A`)_
 - **chain closes:** True — The cited lower-bound authority supplies L_runner = {3,4,5}; the stable-orbit support supplies the d <= 3 edge; and the Coulomb support supplies only the weaker d <= 4 companion. The stated intersections are correct and establish the bounded scope separation.
 - **rationale:** The load-bearing step is finite-set algebra over one-hop authorities that the packet marks retained_bounded, which is retained-grade under the rubric. The runner mainly verifies prose anchors and recomputes the same set intersections; it is not a first-principles physics derivation, but the claim does not require one. The note correctly fences off full Bertrand, hydrogen spectrum, atomic-stability, framework-native dimension selection, and repo-wide promotion claims.
+- **auditor confidence:** high
+
+### `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`DECLARED_RG_MAP_UNIFORM_CHAIN_BAND_EDGE_FIXED_POINT_NU_HALF_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/DECLARED_RG_MAP_UNIFORM_CHAIN_BAND_EDGE_FIXED_POINT_NU_HALF_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free one-dimensional uniform nearest-neighbor chain at E=0 under the declared b=2 projective Schur convention, quotient |g|=|t/μ| on |g|<1/√2, including the fixed point |g|=1/2 and the named resolvent length exponent ν=1/2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-014948-a72a86de4c-declared_rg_map_uniform_chai`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Odd-sublattice Schur decimation at E=0 maps the uniform chain to μ′=μ−2t²/μ and t′=t²/μ, so the quotient coupling obeys |g′|=g²/|1−2g²|.  _(class `A`)_
+- **chain closes:** True — The Schur-complement algebra gives the stated closure and map with the displayed signs and factors. The fixed points, band-edge threshold, derivative 4, and ξ(g)=1/arccosh(1/2g) scaling then follow from standard uniform-chain dispersion and hyperbolic identities within the declared scope.
+- **rationale:** The runner source performs actual dense Schur-complement, spectrum, unitary-equivalence, and Green-function checks rather than merely printing constants, and the no-helper packet is complete. An independent algebra check confirms the load-bearing map, fixed-point set, pole location, threshold condition |g|=1/2, and ξ composition law ξ(g′)=ξ(g)/2 below threshold. The only cited authority is retained_bounded and is used for the staggered-to-uniform composition, while the theorem itself is explicitly bounded to the free 1D E=0 convention and labels outside-chart probes as non-theorem scope.
 - **auditor confidence:** high
 
 ### `decoherence_action_independence_note`

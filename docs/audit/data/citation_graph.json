@@ -51078,15 +51078,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_dimensional_compression_note"
     },
     {
       "from": "repo.front_door_status",
       "to": "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
     },
     {
       "from": "repo.front_door_status",
@@ -51102,11 +51102,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
+      "to": "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
-      "to": "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
+      "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
         "hierarchy_dimensional_compression_note",
         "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
+        "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
         "gate_b_connectivity_tolerance_note",
-        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
+        "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08",
+        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4dd2d2f81e7a8fe142cfd81f2d73154f0184dd8ba0a67d1cef85b0b464b76936",
+      "note_hash": "a316d1148548ecce9a838c661990d8d7901f63e36fdded820cb49affeb96e1cc",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -17,6 +17,9 @@ the charged-lepton masses are empirical comparator inputs, not derivations.
 from __future__ import annotations
 
 import math
+from pathlib import Path
+
+from lepton_brannen_boundary_checks_2026_06_13 import run_delta_boundary_checks, run_scale_boundary_checks
 
 PASS = 0
 FAIL = 0
@@ -217,6 +220,12 @@ def main() -> int:
           True)
     check("Does NOT claim lepton-sector closure",
           True)
+
+    root = Path(__file__).resolve().parents[1]
+    for ok in run_scale_boundary_checks(root, check, "downstream scale boundary"):
+        pass
+    for ok in run_delta_boundary_checks(root, check, "downstream delta boundary"):
+        pass
 
     # ------------------------------------------------------------------
     # Summary

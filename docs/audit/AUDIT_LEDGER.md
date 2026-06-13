@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 889 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1391 |
+| unaudited | 1390 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 64 |
+| ~~audited_conditional~~ | 65 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1343 |
-| `audited_conditional` | 64 |
+| `audited_conditional` | 65 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1708 |
+| `unaudited` | 1707 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 874 |
-| `leaf` | 1346 |
+| `medium` | 873 |
+| `leaf` | 1347 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -1538,6 +1538,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -20679,6 +20680,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator results are explicitly negative.  _(class `C`)_
 - **chain closes:** True — The primary runner actually constructs the declared grown-DAG families, computes the five battery conditions, fits the two-property rule, runs LOO, and evaluates the hard-coded held-out predictions; its stdout matches the note's load-bearing in-family numbers. The broader universal/simple-classifier-exhaustion theorem is not audited as part of this narrowed scope and is explicitly disclaimed or bounded by the cited authorities.
 - **rationale:** The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim.
+- **auditor confidence:** high
+
+### `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 3x3 circulant Fourier-sector bridge: assuming the supplied context and P-dep, registrable scalar readouts factor through the orbit-resolved unordered mass multiset, reconstruct that multiset, and are invariant under delta -> -delta.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-031751-b5e89cd5cc-unordered_mass_multiset_regi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By P-dep, each per-record term has the form r_k = f(k, lambda_k(delta)); Orbit plus F3 gives f(k, x) = f(sigma(k), x), so R(total) = sum_k f([k], lambda_k(delta)) factors through M(delta).  _(class `A`)_
+- **chain closes:** False — The finite algebraic identities and reconstruction checks close on their own terms. The universal factorization B1 depends on P-dep, which is named as a premise/residual and is not derived from the quoted Record axiom.
+- **rationale:** The runner source performs real finite-algebra checks rather than printing constants, and the displayed identities for the flip, sector involution, signed gap, and e3 closed form check independently. However the load-bearing factorization requires P-dep to exclude additive orbit-even readouts depending directly on unregistered supplied-context data. Since P-dep is not closed by the cited Minimal Axioms packet, the theorem is conditional rather than clean.
 - **auditor confidence:** high
 
 ### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`

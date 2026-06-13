@@ -155,12 +155,12 @@
     "meta": 317,
     "open_gate": 38,
     "retained": 214,
-    "retained_bounded": 878,
-    "retained_no_go": 207,
-    "retained_pending_chain": 18,
-    "unaudited": 1502
+    "retained_bounded": 877,
+    "retained_no_go": 205,
+    "retained_pending_chain": 17,
+    "unaudited": 1506
   },
-  "retained_pending_chain_count": 18,
+  "retained_pending_chain_count": 17,
   "retained_pending_chain_examples": [
     "axiom_first_cpt_theorem_stretch_note_2026-04-29",
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
@@ -176,7 +176,6 @@
     "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
     "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08",
     "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-    "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
     "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
     "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 877 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 38 |
-| unaudited | 1506 |
+| unaudited | 1507 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 22 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 27 |
-| `audited_clean` | 1296 |
-| `audited_conditional` | 23 |
+| `audit_in_progress` | 26 |
+| `audited_clean` | 1297 |
+| `audited_conditional` | 22 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1823 |
+| `unaudited` | 1824 |
 
 | claim_type | count |
 |---|---:|
@@ -137,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_dynamical_fixation_obstruction_note_2026-04-18` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -662,6 +661,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `growing_graph_static_control_audit_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `guard_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `h0125_scalable_scout_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `h0125_wider_replay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -1468,7 +1468,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma5_factor_bridge_no_go_note_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8771,6 +8770,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** Clean for the bounded no-go scope: the runner computes the fixed-field replay, reports exact zero-source spans of zero, and returns low phase-ramp R2 values around 0.30, which supports the note's refusal to promote a grown-row transfer claim. No cited authorities are required for the limited negative conclusion as written. Residual risk is confined to the unprovided grow helper and the qualitative threshold for 'review-safe,' so the claim must remain bounded to the printed finite configuration.
 - **auditor confidence:** medium
 
+### `gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-221538-00b35cf1fc-gstar_thermal_seven_eighths_`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Using eta(4) = (1 - 2^(-3)) zeta(4), the Fermi integral is I_F = (7/8) I_B, and the common phase-space prefactor then gives rho_F = (7/8) rho_B per internal degree of freedom.  _(class `A`)_
+- **chain closes:** True — The displayed series expansions reduce the two integrals to Gamma(4) zeta(4) and Gamma(4) eta(4), and the eta-zeta identity at s=4 gives the 7/8 ratio. The phase-space prefactor is common to both statistics and gives the stated per-degree coefficients; Standard Model inventory counts remain outside this audited scope.
+- **rationale:** The load-bearing mathematics is a direct algebraic and integral identity: Gamma(4)=6, zeta(4)=pi^4/90, eta(4)=(7/8)zeta(4), so I_F/I_B=7/8. Independent checking of the displayed coefficients confirms pi^4/15, 7*pi^4/120, pi^2/30, and 7*pi^2/240. The cited eta/zeta authority is retained-grade, and the runner source performs symbolic arithmetic rather than using external comparator data or a tuned numerical match.
+- **auditor confidence:** high
+
 ### `guard_reconciliation_note`
 
 - **Note:** [`GUARD_RECONCILIATION_NOTE.md`](../../docs/GUARD_RECONCILIATION_NOTE.md)
@@ -13299,21 +13311,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For each seed, the free-stage packet was compressed to its top-5 support bins and relaunched on the same ordered-lattice family, producing high relaunch carry overlaps on the fixed h=0.5, W=8, L=12 harness.  _(class `C`)_
 - **chain closes:** True — The runner instantiates the ordered-lattice propagation, constructs the packets, reidentifies top-k detector support, relaunches the surrogate, and computes the reported overlaps and centroid shifts. The note does not claim persistent mass, family-genericity, or a closed inertial-response theorem.
 - **rationale:** The load-bearing result is a first-principles numerical computation on the fixed retained ordered-lattice harness, not a definition, renaming, external comparator, or hard-coded numerical replay. The primary runner and helper source compute the lattice propagation and reported metrics directly from the stated parameters. The conclusion is appropriately bounded to support/compression control and explicitly denies persistent-mass or family-generic claims.
-- **auditor confidence:** high
-
-### `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`
-
-- **Note:** [`P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the conditional composer: IF the FSB-K row retains with its quantifier and FSB-CL intact, then using the retained (Z) certificate, the finite-g_eff criterion selects K1/phi=-1 over K0 within the stated two-class kinetic surface; no current-grade selection is established.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260613-024727-6b835c55b4-p_flux_selection_via_fsb_k_a`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** If FSB-K is retained with its realized-kernel quantifier and FSB-CL intact, then applying it through the retained Z-K1/Z-K0 geometry certificate makes finite g_eff hold for K1 and fail for K0, so the finite-species-density requirement selects the flux -1 kernel within the two-class surface.  _(class `C`)_
-- **chain closes:** False — The conditional inference and the discriminating computations close on the stated assumptions, including the independent SB coefficient/scaling check. The effective selection does not close at current grades because C1, the FSB-K retained-grade premise, is explicitly open in the source note and runner rationale.
-- **rationale:** The runner source is substantive: it rebuilds the two kernels, recomputes fluxes, zero counts, mode-sum g_eff behavior, falsification legs, and the label-free selection pipeline rather than merely printing expected constants. The core math is consistent: the Fermi integral gives 7*pi^2/240, eight V=2I cones give sum |det V|^-1 = 1 per site, and rescaling by h/2 gives the factor 8 central-difference plateau. However the row is deliberately conditional on FSB-K reaching retained grade with its quantifier and FSB-CL intact, so the audit cannot return a current clean selection.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`
 - **auditor confidence:** high
 
 ### `packet_memory_note`

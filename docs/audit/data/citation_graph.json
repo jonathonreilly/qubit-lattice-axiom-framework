@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_native_double_shift_corner_coupling_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06"
     },
     {
@@ -51102,11 +51098,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
     },
     {
       "from": "repo.front_door_status",
-      "to": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+      "to": "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "flavor_native_double_shift_corner_coupling_note_2026-05-30",
         "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
         "record_function_finite_sector_algebra_2026-06-05",
         "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
         "multisite_pauli_group_theorem_note_2026-05-02",
         "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
+        "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
-        "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+        "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e28baaca210c0eb75e50e5759b1d164fd7a8a5487e95ec77147320bc7565018a",
+      "note_hash": "0c78a35213456dcef70a31827d1d604ae69e050a172b94b1069be7252fc102fd",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -1,0 +1,16 @@
+loop: koide-dkd-berry-open-gate-firewall-20260613
+status: checkpoint_ready_for_review
+actual_current_surface_status: open
+target_status: source_boundary_repair
+target_claim_id: koide_dkd_berry_spectator_note_2026-05-31
+base: origin/main
+branch: physics-loop/koide-dkd-berry-open-gate-firewall-20260613
+files_touched:
+  - docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md
+  - scripts/frontier_koide_dkd_berry_spectator_2026_05_31.py
+  - logs/runner-cache/frontier_koide_dkd_berry_spectator_2026_05_31.txt
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: reviewer/auditor checks the F3/Berry source-boundary firewall

@@ -12,11 +12,11 @@ open-gate repair, not a derivation of Q=2/3 and not a verdict.
       CAR {a_j, a_k^dag}=delta, d^2=delta^2=0, and i*D_KD = i*sum_k(a_k^dag - a_k) is
       Hermitian.
   F2  FORM-PARITY GRADING. {i*D_KD, Gamma_F}=0 with Gamma_F=(-1)^N on the form factor.
-  F3  BUT i*D_KD IS A BERRY SPECTATOR. With the Koide circulant mass M[b]=aI+bC+b-bar C^2
+  F3  LOCAL COMMUTING-DERIVATIVE DIAGNOSTIC. With the Koide circulant mass M[b]=aI+bC+b-bar C^2
       on Lambda^1, the two b-derivative directions COMMUTE: [dH/dRe b, dH/dIm b] = 0
       (because dH/dRe b = C+C^2 and dH/dIm b = i(C-C^2) commute -- C and C^2 commute).
-      The d-delta coupling is real and b-independent, so b enters only a real
-      diagonal energy, never a complex off-diagonal element.
+      This local algebra fact is not a zero-curvature Berry theorem without
+      band-isolation, Berry-observable, parameter-domain, and gauge/Wilson-loop data.
   F4  CORRECTED ZERO-BERRY CHECK FAILS. The Wilson-loop Berry phase of
       H(b)=kappa*(i*D_KD)+M[b] on the complex-b plane is not zero for every
       tested kappa/band. A positive control still detects curvature.
@@ -30,10 +30,13 @@ spectator theorem does not pass with the corrected Lambda^1 embedding.
 """
 
 import sys
+from pathlib import Path
 
 import numpy as np
 
 PASSES: list[tuple[str, bool, str]] = []
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md"
 
 
 def record(name, ok, detail=""):
@@ -124,8 +127,8 @@ def main():
     section("F3 - the two circulant b-derivatives commute")
     dH_dx = lift_to_lambda1(C3 + C32)            # d/d(Re b) of M[b]
     dH_dy = lift_to_lambda1(1j * (C3 - C32))     # d/d(Im b) of M[b]
-    record("F3.1 [dH/dRe b, dH/dIm b] = 0 (C and C^2 commute) -> simultaneously "
-           "diagonalizable -> zero abelian Berry curvature",
+    record("F3.1 [dH/dRe b, dH/dIm b] = 0 (C and C^2 commute): local algebra "
+           "diagnostic only, not a standalone Berry theorem",
            np.allclose(dH_dx @ dH_dy - dH_dy @ dH_dx, 0),
            f"max|[dH/dx, dH/dy]| = {np.max(np.abs(dH_dx@dH_dy - dH_dy@dH_dx)):.1e}")
 
@@ -161,6 +164,25 @@ def main():
            "the Koide grading Gamma_chi=(2/3)J-I is non-scalar on the generation R^3",
            np.allclose(GF_lambda1, -np.eye(3)),
            f"Gamma_F|Lambda^1 = {np.real(np.diag(GF_lambda1)).tolist()} (= -I)")
+
+    # ---- F6: downstream source-boundary firewall ------------------------------
+    section("F6 - downstream source-boundary firewall")
+    note_text = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    note_lower = note_flat.lower()
+    record("F6.1 note has downstream source-boundary firewall",
+           "Downstream Source-Boundary Firewall" in note_text)
+    record("F6.2 F3 is local algebra diagnostic, not a zero-curvature Berry theorem",
+           "F3 commuting-derivative fact is only a local algebra diagnostic" in note_flat
+           and "not, by itself, a zero-curvature Berry theorem" in note_flat)
+    record("F6.3 future Berry theorem requires missing band/observable data",
+           "inter-grade coupling" in note_lower
+           and "band-isolation regime" in note_lower
+           and "berry observable" in note_lower
+           and "gauge/wilson-loop convention" in note_lower)
+    record("F6.4 packet only blocks stale zero-Berry claim and records nonzero sweep",
+           "only blocks reuse of the stale zero-berry spectator claim" in note_lower
+           and "not identically zero across the tested `kappa` and band choices" in note_lower)
 
     # ---- summary ----------------------------------------------------------------
     section("SUMMARY")

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 883 |
+| **retained_bounded** | 884 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1405 |
+| unaudited | 1404 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1337 |
+| `audited_clean` | 1338 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1722 |
+| `unaudited` | 1721 |
 
 | claim_type | count |
 |---|---:|
@@ -703,6 +703,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -10158,6 +10159,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The conclusion is a direct algebraic substitution into the supplied retained-bounded Bogomolny normalization. The displayed component normalization Q = (1/(32 pi^2)) int Tr(F_mu nu *F^mu nu) and S = (1/(4g^2)) int Tr(F_mu nu F^mu nu) give S = 8 pi^2 Q/g^2 under self-duality, so Q = 1 closes the claim.
 - **rationale:** The load-bearing step is class A algebra over fixed standard normalizations and the one-hop cited authority is retained_bounded. The note explicitly narrows away Atiyah-Singer integrality, BPST existence, Luescher lattice topology, framework substrate identification, and hierarchy/scale-ratio claims, so no hidden external bridge is needed for the audited scope. The runner source performs the symbolic specialization, arithmetic evaluations, saturation identity, and boundary text checks rather than merely printing a pass line.
 - **auditor confidence:** high
+
+### `interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`
+
+- **Note:** [`INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite fixed-a staggered Kogut-Susskind carriers in temporal gauge with m>0: per-config and positive-weight U-averaged OS Grams are PSD for the stated half-space polynomial surfaces, including gauge-invariant meson/baryon observables, with explicit nonzero four-fermion diagonals on the tested SU(3) carriers; no continuum, infinite-volume, or Wilson-boundary closure is audited here.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-023602-31741ff67e-interacting_rp_full_algebra_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Per configuration, the 2-step transfer input gives T_hat^2[U]=B[U]^dag B[U], so G[U]_{IJ}=<Theta(A_I)A_J>_U is a Gram form for any half-space operator set, and the runner's Berezin Wick computation verifies positive meson/baryon diagonals on the finite carriers.  _(class `C`)_
+- **chain closes:** True — The cited retained-grade inputs supply fixed-background two-step transfer positivity and positive determinant weights. The included runner source genuinely builds the finite staggered matrix, uses full-spacetime M[U]^{-1} Wick contractions, checks per-config/U-averaged PSD and non-vacuity, and includes negative/reflection/gauge/determinant controls.
+- **rationale:** The load-bearing PSD claim is not a printed constant or tuned comparator: it follows from the retained T^2=B^dag B input plus an explicit finite Berezin computation of the stated Gram surfaces. The runner source computes the contested objects directly and the companion helper is included, hash-pinned, and used only for mass/link-reflection controls. The claim remains bounded to the finite fixed-a carrier and sampled/finite positive U-average surface stated in the note.
+- **auditor confidence:** medium
 
 ### `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30`
 

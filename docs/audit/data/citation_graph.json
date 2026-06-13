@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
         "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
         "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
         "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
         "koide_p1_collapses_frame_residuals_note_2026-06-01",
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
-        "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02"
+        "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
+        "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5b545f27d9d8e340bd8864c8df4accfee1a1abf564835d0f6642a0a8180e7fa2",
+      "note_hash": "cfb472566cd72b37573de8cb515274cb5ac4b742bd26a9a6643272174da4f56e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

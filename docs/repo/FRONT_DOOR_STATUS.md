@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1443 |
+| Applied audit verdicts | 1444 |
 | Retained-grade rows, including boxed decorations | 1328 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 204 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1528 |
-| Ready rows | 70 |
+| Total pending rows | 1527 |
+| Ready rows | 69 |
 | Cycle-break targets | 20 |
-| Critical pending | 338 |
+| Critical pending | 337 |
 | High pending | 261 |
 | Medium pending | 440 |
 | Leaf pending | 489 |
 
 Next ready rows by queue order:
 
-- [`post_record_count_probability_firewall_2026-06-06`](../../docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md) - critical; audit_in_progress
 - [`g_bare_dynamical_fixation_obstruction_note_2026-04-18`](../../docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md) - critical; audit_in_progress
 - [`observable_principle_record_scalar_map_no_go_note_2026-06-05`](../../docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31`](../../docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`pmns_tm2_residual_consequence_bounded_note_2026-05-26`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`yt_p1_i_s_lattice_pt_citation_note_2026-04-17`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) - critical; unaudited
+- [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -89,10 +89,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1590 descendants; score 134.636
-- `three_generation_observable_theorem_note` - critical; 1356 descendants; score 64.406
-- `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
-- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
-- `plaquette_self_consistency_note` - critical; 1358 descendants; score 51.408
-- `key_terminology` - critical; 1396 descendants; score 50.448
-- `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1262 descendants; score 44.803
+- `three_generation_observable_theorem_note` - critical; 1357 descendants; score 64.407
+- `observable_principle_from_axiom_note` - critical; 1280 descendants; score 62.823
+- `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
+- `plaquette_self_consistency_note` - critical; 1359 descendants; score 51.409
+- `key_terminology` - critical; 1397 descendants; score 50.449
+- `minimal_axioms_2026-05-03` - critical; 1293 descendants; score 49.838
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1263 descendants; score 44.804

@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_transfer_trace_correspondence_fixes_kernel_normalization_2026_06_12.py
+runner_sha256: e52fc1166479081dfd0ce2f67e579e38f64d947e4f327f53384055d672ebce17
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.21
+status: ok
+----- stdout -----
+======================================================================================
+TRANSFER TRACE CORRESPONDENCE FIXES BEREZIN KERNEL NORMALIZATION
+Retained free staggered surface only: 1+1d, U=1, m=0.5, 2-step blocked
+======================================================================================
+PASS A1 retained T_even/T_odd -> T_hat^2 positive Hermitian L_s=2: min eig=1.458980e-01; max eig=1.000000e+00; Herm residual=0.0e+00; BdagB residual=5.6e-17
+PASS A1 retained T_even/T_odd -> T_hat^2 positive Hermitian L_s=3: min eig=1.124403e-02; max eig=1.000000e+00; Herm residual=0.0e+00; BdagB residual=5.6e-17
+PASS A2 decaying eigenvalue matches e^(-2E(p)) L_s=2: max residual=1.110e-16; E(p)=arcsinh(sqrt(m^2+sin^2 p))
+PASS A2 decaying eigenvalue matches e^(-2E(p)) L_s=3: max residual=2.289e-16; E(p)=arcsinh(sqrt(m^2+sin^2 p))
+PASS A3 T1 exact Tr Gamma(t)=det(1+t), L_s=2: Tr Gamma=15/2 - 5*sqrt(5)/2; det(1+t)=15/2 - 5*sqrt(5)/2
+PASS A4 T1 exact Tr Gamma(t)^2=det(1+t^2), L_s=2: Tr Gamma^2=63/2 - 27*sqrt(5)/2; det(1+t^2)=63/2 - 27*sqrt(5)/2
+PASS A5 T2 genuine two-slice Berezin expansion equals det(1+t), L_s=2: Berezin=15/2 - 5*sqrt(5)/2; pairs=4; terms=36
+PASS A5b T2 Berezin value equals operator trace, L_s=2: Berezin=15/2 - 5*sqrt(5)/2; Tr Gamma=15/2 - 5*sqrt(5)/2
+PASS A5c Berezin side self-check: expansion path, no det substitute: used_det_substitute=False; source det calls absent=True
+PASS A6 T3a lambda-rescaled Berezin kernel gives lambda^k: ratio=lambda**4; extracted k=4; rank=4
+PASS A7 T3b over lambda>0 equality forces lambda=1: Eq(lambda**4*(15/2 - 5*sqrt(5)/2), 15/2 - 5*sqrt(5)/2); positive real solutions=[1]
+PASS A8 T3c numeric witness lambda=2 breaks equality by predicted factor: lambda=2 factor=16; scaled/op ratio=16
+PASS A9 T4 tie-in det(lambda K)=lambda^k det(K) uses same exponent: rank=4; determinant scaling exponent=4
+PASS A10 robustness Tr Gamma(t)=det(1+t), L_s=3: residual=0; Fock dim=8
+PASS A10b robustness Tr Gamma(t)^2=det(1+t^2), L_s=3: residual=0; Fock dim=8
+PASS A10c robustness genuine Berezin expansion equals trace, L_s=3: Berezin residual=0; pairs=6; terms=216
+PASS B11 source grep retained RP and substep1 phrases: RP terms=['2-step blocked transfer matrix', 'B^dag B', 'E(p) = arcsinh']; substep1 terms=['det(M)', 'single-pair']
+PASS B12 note firewall present and closing language absent: firewall=True; forbidden_absent=True
+PASS B13 link inventory exactly two load-bearing links: links=['AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md', 'STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md']; resolve=True; W4 backticked only=True
+PASS B14 no-promotion statement present: No-promotion statement present
+======================================================================================
+SUMMARY: PASS=20 FAIL=0
+No-promotion statement: this runner does not promote, demote, or set audit/retention status for any note; it checks only the bounded surface.
+RESULT: lambda=1 is forced by the retained transfer/trace correspondence on the free staggered 2-step surface only; the occupancy binary stays open.
+
+----- stderr -----
+

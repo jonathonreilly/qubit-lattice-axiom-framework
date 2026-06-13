@@ -51,6 +51,9 @@ required = [
     "No-go discipline boundary (2026-05-26)",
     "not a positive observable-bridge theorem",
     "not as retained positive support",
+    "positive/no-go split",
+    "do not keep asking this row to supply the missing primitive itself",
+    "route any future positive repair through a new bounded theorem",
 ]
 for s in required:
     check(f"note contains: {s!r}", s in note_text)

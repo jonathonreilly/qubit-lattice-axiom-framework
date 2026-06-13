@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py
-runner_sha256: bf3a3db7548b284f9562e990a312c49216a2f335496e20bf8231bb871907e6a0
+runner_sha256: d3ac043ccbb3e70906adfc7bea436ca9adf5b64db652da8152c36ef1e480ca33
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -29,6 +29,9 @@ Part 1: stretch-attempt note structure
   [PASS (A)] note contains: 'No-go discipline boundary (2026-05-26)'  ()
   [PASS (A)] note contains: 'not a positive observable-bridge theorem'  ()
   [PASS (A)] note contains: 'not as retained positive support'  ()
+  [PASS (A)] note contains: 'positive/no-go split'  ()
+  [PASS (A)] note contains: 'do not keep asking this row to supply the missing primitive itself'  ()
+  [PASS (A)] note contains: 'route any future positive repair through a new bounded theorem'  ()
 
 ----------------------------------------------------------------------------------------
 Part 2: 3 obstruction routes documented
@@ -81,7 +84,7 @@ Part 6: 2026-05-07 stretch-attempt bounded verdict (no-go route)
   [PASS (A)] closure section item: 'attempted positive bridge is not supplied'  (§9 closure verdict)
 
 ========================================================================================
-  TOTAL: PASS=49, FAIL=0
+  TOTAL: PASS=52, FAIL=0
 ========================================================================================
 
 ----- stderr -----

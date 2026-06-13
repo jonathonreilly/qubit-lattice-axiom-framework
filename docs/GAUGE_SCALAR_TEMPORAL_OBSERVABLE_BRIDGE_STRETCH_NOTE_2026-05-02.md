@@ -9,6 +9,8 @@ audit ledger verdict: conditional, td=266). Per skill workflow #9, declares
 A_min and forbidden imports, attempts derivation from minimal premises,
 and isolates the named obstruction.
 **Primary runner:** `scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py`
+(TOTAL: PASS=52 FAIL=0; cached:
+[`logs/runner-cache/frontier_gauge_scalar_temporal_observable_bridge_stretch.txt`](../logs/runner-cache/frontier_gauge_scalar_temporal_observable_bridge_stretch.txt))
 **Authority role:** stretch attempt deliverable + named obstruction on the
 interacting-plaquette → local-response observable bridge.
 
@@ -31,6 +33,25 @@ primitive packet and the surveyed routes below, the attempted positive bridge
 remains open unless one of the explicit nonperturbative escape hatches is
 supplied. Downstream rows may cite this note as an obstruction/open-gate
 packet, not as retained positive support for `<P>_full = R_O(beta_eff)`.
+
+## 2026-06-13 positive/no-go split
+
+This row should no longer be read as an active request to repair the
+positive bridge inside this same stretch note. The positive bridge
+`<P>_full = R_O(beta_eff)` remains open until an exact spectral,
+Perron/Jacobi, nonperturbative effective-action, or independently
+selected `beta_eff(6)` primitive lands. The companion no-go row is the
+correct negative-route artifact for the current Wilson packet; this
+stretch note remains the source-side obstruction map and escape-hatch
+inventory.
+
+Thus the audit-unblock posture is:
+
+- do not promote this stretch note to a positive theorem;
+- do not keep asking this row to supply the missing primitive itself;
+- consume the companion no-go for the negative result; and
+- route any future positive repair through a new bounded theorem that
+  supplies one of the named escape-hatch primitives.
 
 ## No-go discipline boundary (2026-05-26)
 

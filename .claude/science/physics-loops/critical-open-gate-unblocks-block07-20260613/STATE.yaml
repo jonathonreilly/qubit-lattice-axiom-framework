@@ -1,0 +1,20 @@
+loop: critical-open-gate-unblocks-block07-20260613
+branch: physics-loop/critical-open-gate-unblocks-block07-20260613
+base: origin/main@a71487b8477b237b9e5ad5095efa4da57da16d52
+created_utc: 2026-06-13
+goal: "Repair/source-cover critical open_gate rows after conditional and pending-chain coverage was drained."
+target_status: bounded-support
+actual_current_surface_status: open_gate
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+rows_covered:
+  - charged_lepton_koide_note_2026-04-18
+  - gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02
+verification:
+  - "python3 scripts/precompute_audit_runners.py --allow-non-main --push-mode=none --force --concurrency=2 --runners scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py,scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py"
+  - "python3 scripts/precompute_audit_runners.py --allow-non-main --check-only --push-mode=none --runners scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py,scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py"
+pr_status: pending
+next_exact_action: "Commit, push, open review PR, recompute remaining open-gate backlog."
+stop_condition: "The two critical uncovered open_gate rows have source-side coverage and fresh runner caches."

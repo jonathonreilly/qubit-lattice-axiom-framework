@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py
-runner_sha256: 36a07a2515ac79d90c24bab06ff7fd748fe2c75d54dc6912fac57a69fcc7ac6c
+runner_sha256: 738089e140e421afca8316367432f0c158d648d42f4ce3d2b698947094348500
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 [PASS] [A] note boundary contains: Claim type:** open_gate
@@ -11,6 +11,10 @@ status: ok
 [PASS] [A] note boundary contains: two remaining charged-lepton Koide gates
 [PASS] [A] note boundary contains: Koide surface selection gate
 [PASS] [A] note boundary contains: Brannen phase identification gate
+[PASS] [A] note boundary contains: Tier-A Bounded-Consumer Split
+[PASS] [A] note boundary contains: bounded consumer of the Brannen-BAE algebra under explicit
+[PASS] [A] note boundary contains: does **not** close either first-principles gate
+[PASS] [A] note boundary contains: No downstream row may cite this note alone
 [PASS] [A] note boundary contains: does not claim
 [PASS] [A] note boundary contains: any new axiom or audit verdict
 [PASS] [A] note boundary contains: open-gate map
@@ -31,7 +35,7 @@ status: ok
 [PASS] [B] Brannen phase bridge is a declared extra rule
 
 Charged-lepton Koide two-gate open certificate: PASS
-PASS=21 FAIL=0
+PASS=25 FAIL=0
 
 ----- stderr -----
 

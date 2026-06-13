@@ -640,9 +640,19 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
                     f"... [truncated; helper is {len(hsrc)} chars total] ...\n\n"
                     f"{tail}"
                 )
+            if skip_runner_stdout:
+                hcache = "(helper cache suppressed by --no-runner)"
+            else:
+                hcache = find_cached_runner_output(hp)
+                if hcache is None:
+                    cache_name = rc.cache_path_for(hp).relative_to(REPO_ROOT)
+                    hcache = f"[helper runner cache missing or stale: {cache_name}]"
             helper_sources_blocks.append(
                 f"=== BEGIN HELPER RUNNER: {hp} ===\n"
                 f"{hsrc}\n"
+                f"=== BEGIN HELPER RUNNER CACHE: {hp} ===\n"
+                f"{hcache}\n"
+                f"=== END HELPER RUNNER CACHE: {hp} ===\n"
                 f"=== END HELPER RUNNER: {hp} ==="
             )
         except OSError as e:

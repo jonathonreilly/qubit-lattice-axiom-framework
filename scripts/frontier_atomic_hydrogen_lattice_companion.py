@@ -127,8 +127,6 @@ BLOCKERS:
 from __future__ import annotations
 
 import os
-import sys
-import time
 
 import numpy as np
 from scipy import sparse
@@ -296,7 +294,6 @@ def run_experiment() -> None:
         f"{'|E₁|/E₀':>9}  {'r₀_pred':>8}  {'r₀_meas':>8}")
     log("  " + "─" * 60)
 
-    t0 = time.time()
     N_SCALE = 40
     for g in (0.3, 0.4, 0.5, 0.6):
         evals, evecs = solve_hamiltonian(N_SCALE, g, n_eig=5)
@@ -309,7 +306,7 @@ def run_experiment() -> None:
             f"  {ratio:7.4f}  {r0_pred:8.2f}  {r0_meas:8.2f}")
     log()
     log(f"  |E₁|/E₀ < 1 from lattice discretization; → 1 as N,g→0 (continuum).")
-    log(f"  Time: {time.time()-t0:.1f}s")
+    log("  Compute timing: omitted from audit cache for deterministic replay.")
     log()
 
     # ------------------------------------------------------------------
@@ -327,7 +324,6 @@ def run_experiment() -> None:
         f"{'E₃/E₁':>8}  {'→0.111?':>9}")
     log("  " + "─" * 55)
 
-    t0 = time.time()
     G_TEST = 1.0
     for N in (20, 30, 40, 50, 60):
         evals, _ = solve_hamiltonian(N, G_TEST, n_eig=20)
@@ -345,7 +341,7 @@ def run_experiment() -> None:
     log()
     log("  Target: E₂/E₁ = 0.25000 (1/4),  E₃/E₁ = 0.11111 (1/9)")
     log("  This is the bounded spectral companion readout on the lattice Hamiltonian.")
-    log(f"  Time: {time.time()-t0:.1f}s")
+    log("  Compute timing: omitted from audit cache for deterministic replay.")
     log()
 
     # ------------------------------------------------------------------
@@ -360,7 +356,6 @@ def run_experiment() -> None:
     log("  n=3 → 9 states (s+3p+5d), etc. — from Z³ rotation symmetry.")
     log()
 
-    t0 = time.time()
     N_ORB = 50
     G_ORB = 1.0
     evals_orb, evecs_orb = solve_hamiltonian(N_ORB, G_ORB, n_eig=25)
@@ -398,7 +393,7 @@ def run_experiment() -> None:
     log()
     log("  Predicted degeneracy: n² states per level (s + p + d + ... up to l=n-1).")
     log("  Angular character (s/p/d) requires finer grids to resolve reliably.")
-    log(f"  Time: {time.time()-t0:.1f}s")
+    log("  Compute timing: omitted from audit cache for deterministic replay.")
     log()
 
     # ------------------------------------------------------------------
@@ -450,14 +445,54 @@ def run_experiment() -> None:
     log("  The finite-box readout reproduces the expected 1/n² pattern to a few percent.")
     log("=" * 72)
 
+    audit_checks = []
+    for n, target, tol in [
+        (2, 0.25, 0.05),
+        (3, 1.0 / 9.0, 0.05),
+        (5, 0.04, 0.05),
+        (6, 1.0 / 36.0, 0.05),
+    ]:
+        ratio = levels_best[n] / E1_best
+        rel_err = abs((ratio - target) / target)
+        audit_checks.append((
+            f"hydrogen_ratio_n{n}",
+            rel_err < tol,
+            f"ratio={ratio:.5f}, target={target:.5f}, rel_err={rel_err:.4f}",
+        ))
+    audit_checks.append((
+        "hydrogen_emergent_length_r0",
+        abs(r0_best - 2.0 / G_TEST) <= 0.25,
+        f"measured={r0_best:.2f}, predicted={2.0 / G_TEST:.2f}",
+    ))
+    audit_checks.append((
+        "hydrogen_bound_state_count_positive",
+        n_bound > 0,
+        f"n_bound={n_bound}",
+    ))
+
+    pass_count = 0
+    fail_count = 0
+    log()
+    log("AUDIT CHECK SUMMARY")
+    for name, ok, detail in audit_checks:
+        if ok:
+            pass_count += 1
+            log(f"PASS: {name} -- {detail}")
+        else:
+            fail_count += 1
+            log(f"FAIL: {name} -- {detail}")
+    total_line = f"TOTAL: PASS={pass_count}, FAIL={fail_count}"
+
     os.makedirs("logs", exist_ok=True)
-    log_path = f"logs/{time.strftime('%Y-%m-%d')}-atomic_hydrogen_companion.txt"
+    log_path = "logs/frontier_atomic_hydrogen_lattice_companion.latest.txt"
     try:
         with open(log_path, "w") as f:
-            f.write("\n".join(LOG))
-        print(f"\nLog saved to: {log_path}")
-    except Exception as e:
-        print(f"  (Could not write log: {e})")
+            f.write("\n".join(LOG + [total_line]) + "\n")
+    except Exception:
+        pass
+    print(total_line)
+    if fail_count:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

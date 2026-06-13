@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_helium_jastrow_companion.py
-runner_sha256: 25f1a5d761b84cc7a2299c070b9fb8a010cac4d702985292eba6698773b7ce03
+runner_sha256: 036366a0de65583d135399c0171ece7c06477ac3ff2008046e2416add9d5c4bc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 11.36
+elapsed_sec: 21.83
 status: ok
 ----- stdout -----
 ========================================================================
@@ -28,7 +28,7 @@ STEP 1: Hartree baseline at N=20
   E(He⁺)   = -0.236366
   E_Hartree = -0.330401
   |E(He)|/|E(He⁺)| = 1.39784  (Hartree target ~1.424)
-  Time: 1.5s
+  Compute timing: omitted from audit cache for deterministic replay.
 
 ────────────────────────────────────────────────────────────
 STEP 2: Jastrow VMC scan over r_J (correlation length)
@@ -40,14 +40,14 @@ STEP 2: Jastrow VMC scan over r_J (correlation length)
 
     r_J         E_VMC           ±    |E|/|E(He⁺)|    vs Hartree   accept
   ──────────────────────────────────────────────────────────────────────
-    0.5     -0.336010  ± 0.001764         1.42157        -1.70%    0.81  (1.6s)
-    1.0     -0.337108  ± 0.001548         1.42621        -2.03%    0.81  (1.6s)
-    2.0     -0.338696  ± 0.001192         1.43293        -2.51%    0.81  (1.6s)
-    3.0     -0.339355  ± 0.001017         1.43572        -2.71%    0.81  (1.6s)
-    4.0     -0.338308  ± 0.001043         1.43129        -2.39%    0.81  (1.6s)
-    6.0     -0.336073  ± 0.001403         1.42183        -1.72%    0.81  (1.6s)
+    0.5     -0.336010  ± 0.001764         1.42157        -1.70%    0.81
+    1.0     -0.337108  ± 0.001548         1.42621        -2.03%    0.81
+    2.0     -0.338696  ± 0.001192         1.43293        -2.51%    0.81
+    3.0     -0.339355  ± 0.001017         1.43572        -2.71%    0.81
+    4.0     -0.338308  ± 0.001043         1.43129        -2.39%    0.81
+    6.0     -0.336073  ± 0.001403         1.42183        -1.72%    0.81
 
-  Total scan time: 9.7s
+  Total scan timing: omitted from audit cache for deterministic replay.
 
   Optimal r_J = 3.0  →  E_VMC = -0.339355 ± 0.001017
 
@@ -95,7 +95,13 @@ SUMMARY: HELIUM JASTROW COMPANION
   ✗ Exact two-body result remains open; Jastrow/VMC is only a bounded companion
 ========================================================================
 
-Log saved to: logs/2026-06-12-atomic_helium_jastrow_companion.txt
+AUDIT CHECK SUMMARY
+PASS: jastrow_fixed_seed_declared -- run_vmc called with seed=42 for each r_J
+PASS: jastrow_hartree_baseline_pin -- ratio_hartree=1.39784
+PASS: jastrow_best_rj_pin -- best_r_J=3.0
+PASS: jastrow_ratio_pin -- ratio_jastrow=1.43572
+PASS: jastrow_improves_over_hartree -- hartree=1.39784, jastrow=1.43572
+TOTAL: PASS=5, FAIL=0
 
 ----- stderr -----
 

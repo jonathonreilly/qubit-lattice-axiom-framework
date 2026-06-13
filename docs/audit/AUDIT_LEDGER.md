@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 216 |
+| **retained** | 217 |
 | **retained_no_go** | 209 |
 | **retained_bounded** | 869 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1427 |
+| unaudited | 1426 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1321 |
+| `audited_clean` | 1322 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1744 |
+| `unaudited` | 1743 |
 
 | claim_type | count |
 |---|---:|
@@ -1264,6 +1264,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18514,6 +18515,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner computes rather than imports the SU(3) plaquette bound inputs, enumerates the Z^4 plaquette adjacency constants, and solves the analytic η_bound threshold. The standard KP criterion then supplies analyticity and exponential clustering below the threshold, so the bounded floor claim closes within its stated scope.
 - **rationale:** Independent checks of the displayed constants give Δ=20, ηcrit=1/(21e(1+e))≈0.004711, β0≈ln(1+ηcrit)=0.00470, and β0/6≈0.078%. The runner source is not a print-only certificate: it enumerates the plaquette graph, evaluates the SU(3) class-function calibration, and uses the analytic Hoeffding/Jensen η_bound for the floor. The supplied upstream authority is retained_bounded, which is retained-grade for this bounded theorem, and the note leaves the remaining (β0,6] interval open rather than consuming it as closed evidence.
 - **auditor confidence:** medium
+
+### `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`
+
+- **Note:** [`SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Algebraic SU(3) quadratic Casimir on the cited 3-dimensional symmetric base carrier V_3: centrality, Schur scalar property, and value 4/3 in the Gell-Mann normalization Tr[T^a T^b] = (1/2) delta^{ab}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-011859-4195cc445b-su3_casimir_fundamental_alge`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** After K1 and Schur scalar give C_2 = c_2(3) I_3, the trace identity Tr[C_2] = sum_a Tr[T^a T^a] = 8/2 = 4 and Tr[c_2(3) I_3] = 3 c_2(3) implies c_2(3) = 4/3.  _(class `A`)_
+- **chain closes:** True — The cited retained_bounded authority supplies the algebraic SU(3) fundamental action on V_3 and the trace normalization; Schur's lemma and total antisymmetry then give K1-K2, and the independent trace count gives K3. The deferred physical-color identification in the cited authority is outside this claim scope and is not used.
+- **rationale:** The load-bearing derivation is a genuine algebraic closure from the supplied SU(3) fundamental generators and normalization: centrality follows by antisymmetric-symmetric contraction, Schur's lemma gives scalarity, and the trace count fixes the scalar as 4/3. The runner source actually instantiates the Gell-Mann matrices and checks hermiticity, normalization, closure, scalarity, and the Casimir value; its checks are algebraic, not external comparator or tuned-scale matches. No physical SM color bridge, lattice action quantity, fitted value, or observational input is consumed.
+- **auditor confidence:** high
 
 ### `su3_casimir_fundamental_theorem_note_2026-05-02`
 

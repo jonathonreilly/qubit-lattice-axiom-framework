@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1526 |
-| Retained-grade rows, including boxed decorations | 1360 |
+| Applied audit verdicts | 1527 |
+| Retained-grade rows, including boxed decorations | 1361 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 886 |
+| Retained bounded rows | 887 |
 | Boxed decorations under retained parents | 47 |
 | Open gates | 39 |
-| Unaudited rows | 1396 |
+| Unaudited rows | 1395 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 62 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,23 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1398 |
-| Ready rows | 8 |
+| Total pending rows | 1397 |
+| Ready rows | 7 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 414 |
+| Leaf pending | 413 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - medium; unaudited
 - [`staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`susceptibility_density_vanishes_identically_1d_ibp_bounded_theorem_note_2026-06-12`](../../docs/SUSCEPTIBILITY_DENSITY_VANISHES_IDENTICALLY_1D_IBP_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11`](../../docs/THETA_MULTI_PLAQUETTE_CROSS_PLANE_ABSENCE_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11`](../../docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
-- [`ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11`](../../docs/WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
+- [`ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11`](../../docs/WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

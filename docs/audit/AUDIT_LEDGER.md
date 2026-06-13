@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 886 |
+| **retained_bounded** | 887 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1396 |
+| unaudited | 1395 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1340 |
+| `audited_clean` | 1341 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1713 |
+| `unaudited` | 1712 |
 
 | claim_type | count |
 |---|---:|
@@ -1181,6 +1181,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sixth_family_sheared_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `sm_identity_triangulation_convergence_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -17465,6 +17466,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The Yukawa implied by empirical small m_nu is many orders below the Gamma ~ y_nu^2 T versus H thermalization threshold, so light-Dirac nu_R never equilibrates, while a heavy-Majorana nu_R is not a light relativistic dof.  _(class `D`)_
 - **chain closes:** True — The arithmetic and threshold comparison close for the explicitly conditional statement: y_nu = m_nu/<H> with sub-eV m_nu is far below the thermalization threshold, and the heavy-Majorana branch is excluded from the light-dof census by M_R >> T. The chain does not retire the empirical small-m_nu import or the standard cosmology/equilibration premises.
 - **rationale:** The runner performs real finite arithmetic and order-of-magnitude threshold checks rather than merely printing constants, and its output matches the note's core claims. However, the load-bearing step is an external empirical/comparator argument, not a framework first-principles derivation: it imports small observed m_nu, the radiation-era Hubble criterion, and the thermalization-rate ansatz. The note labels those imports honestly and scopes the result as partial resolution, so the conditional chain is coherent but not eligible for audited_clean.
+- **auditor confidence:** high
+
+### `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded R-MATTER reduction for the Standard-Model high-temperature g_* census: exact finite arithmetic from retained/decorated multiplicity inputs plus the retained-bounded SM finite-inventory wrapper, not a native derivation of the SM inventory.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-030223-e6d91ae11e-sm_gstar_r_matter_residual_r`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The thermalized per-generation count is 30 = 15 gauge-charged Weyl * 2 Weyl dof, so N_fermions = 3 * 30 = 90 and g_* = 28 + (7/8) * 90 = 427/4, with P1/P4/P5 supplying the bounded inventory, Weyl state count, and nu_R exclusion.  _(class `A`)_
+- **chain closes:** True — The cited packet supplies retained-grade or retained-bounded support for every input actually consumed by the bounded count, with the SM finite-inventory wrapper carrying the physical inventory boundary. Independent arithmetic checks confirm 6+3+3+2+1=15, 15*2=30, 3*30=90, g_*=427/4, and the nu_R counterfactual gives 112.
+- **rationale:** The load-bearing step is genuine class-A arithmetic over explicit retained-grade and retained-bounded inputs, not a definition, renaming, external comparator, or tuned numerical match. The runner mainly verifies arithmetic, citation/status bookkeeping, and no-overclaim boundaries; this is appropriate because the note only claims a bounded inventory arithmetic reduction. The claim remains bounded: P1/P4/P5 are declared physical-inventory premises, and the note does not promote them to a native framework derivation.
 - **auditor confidence:** high
 
 ### `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29`

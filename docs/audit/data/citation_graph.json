@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11",
         "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
         "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
         "susceptibility_density_vanishes_identically_1d_ibp_bounded_theorem_note_2026-06-12",
         "theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11",
         "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
-        "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
+        "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
+        "ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cb6d41aaa90fa46b8a0e1a2f1aef771edb978b13529186ca025f4afc2448c9f5",
+      "note_hash": "d30746ad5ae1c9442a945ab12e77e2713e942b9bb8caf5e7fc2b34fc72638389",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 278,
     "high": 285,
-    "leaf": 414,
+    "leaf": 413,
     "medium": 421
   },
   "cycle_break_target_count": 4,
@@ -17115,41 +17115,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sm_relativistic_dof_count_import_note_2026-05-17",
-        "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
-        "graph_first_su3_integration_note",
-        "cl3_color_automorphism_theorem",
-        "native_gauge_closure_note",
-        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-        "left_handed_charge_matching_note",
-        "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
-        "three_generation_observable_theorem_note",
-        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-        "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
-        "per_site_su2_spin_half_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17270,6 +17235,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/ward_bogoliubov_no_continuous_ssb_low_d_bridge_2026_06_11.py",
       "transitive_descendants": 16
     },
     {
@@ -30155,31 +30145,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/ward_bogoliubov_no_continuous_ssb_low_d_bridge_2026_06_11.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_logdet_form_under_record_axiom_2026-06-04",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -42332,6 +42297,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 8,
-  "total_pending": 1398
+  "ready_count": 7,
+  "total_pending": 1397
 }

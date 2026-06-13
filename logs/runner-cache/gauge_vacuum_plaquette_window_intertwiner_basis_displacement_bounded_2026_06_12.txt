@@ -1,0 +1,100 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_window_intertwiner_basis_displacement_bounded_2026_06_12.py
+runner_sha256: aadadfb72b7827f477a37611ec03b329ebc8ff37abf54be327378309e5ad5132
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.61
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette window intertwiner basis displacement bounded runner
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal notes and finite packet quantities only.
+No randomness or runtime dates are used.
+
+================================================================================================================
+Part 1: exact 3bar-3-3bar-3 delta basis
+================================================================================================================
+<T1,T1> = 9
+<T2,T2> = 9
+<T1,T2> = 3
+Gram determinant = 72
+Orthonormal basis: E1 = T1/3, E2 = (T2 - T1/3)/(2 sqrt(2)).
+PASS: exact Gram entries are 9, 9, 3
+PASS: the invariant space basis is linearly independent
+PASS: E1 has unit norm numerically
+PASS: E2 has unit norm numerically
+PASS: E1 and E2 are orthogonal numerically
+
+================================================================================================================
+Part 2: Fierz recoupling and explicit SU(3) invariance
+================================================================================================================
+max |T2 - T1/3 - 1/2 sum_A lambda_A tensor lambda_A| = 1.110e-16
+T2 = (1/3) T1 + adjoint-Fierz part, with squared fractions 1/9 and 8/9 after normalizing T2.
+PASS: Gell-Mann Fierz identity holds on the four-index tensor
+PASS: normalized T2 singlet fraction is exactly 1/9
+PASS: normalized T2 adjoint fraction is exactly 8/9
+lambda_1: unitary_err=0.000e+00, det_err=0.000e+00, fixed_err=4.578e-16, span_res=(0.000e+00,4.775e-16), coeffs T1=(1.000000000000,0.000000000000), T2=(0.000000000000,1.000000000000)
+PASS: exp(i t lambda_1) is unitary with determinant one
+PASS: T1 and T2 are fixed by simultaneous four-leg rotation for lambda_1
+PASS: rotated tensors remain in the T1/T2 span for lambda_1
+lambda_4: unitary_err=0.000e+00, det_err=0.000e+00, fixed_err=4.578e-16, span_res=(0.000e+00,4.578e-16), coeffs T1=(1.000000000000,0.000000000000), T2=(0.000000000000,1.000000000000)
+PASS: exp(i t lambda_4) is unitary with determinant one
+PASS: T1 and T2 are fixed by simultaneous four-leg rotation for lambda_4
+PASS: rotated tensors remain in the T1/T2 span for lambda_4
+lambda_8: unitary_err=0.000e+00, det_err=1.045e-17, fixed_err=3.354e-16, span_res=(0.000e+00,3.302e-16), coeffs T1=(1.000000000000,0.000000000000), T2=(0.000000000000,1.000000000000)
+PASS: exp(i t lambda_8) is unitary with determinant one
+PASS: T1 and T2 are fixed by simultaneous four-leg rotation for lambda_8
+PASS: rotated tensors remain in the T1/T2 span for lambda_8
+
+================================================================================================================
+Part 3: four-fundamental Schur normalization
+================================================================================================================
+D_(0,0) = 1.000000000000000
+D_(1,0) = 0.422531739649983
+D_(0,1) = 0.422531739649983
+c_fund(6)/c_0(6) = d_fund * D_(1,0) = 1.267595218949950
+four fundamental Schur factors = (1/3)^4 = 1/81
+Fundamental window tensor on the four-fundamental subspace:
+  K_f = (c_fund(6)/c_0(6)) * (1/3)^4 * T2
+  T1/T2 components = (0, (c_fund/c_0)/81)
+  E1/E2 components = ((c_fund/c_0)/81, 2 sqrt(2) (c_fund/c_0)/81)
+PASS: trivial channel normalization has D_0 = 1
+PASS: fundamental and antifundamental Wilson strengths agree by conjugation
+PASS: four-link Schur normalization is exactly 1/81
+PASS: projected K_f has zero T1 component in the T1/T2 basis
+PASS: projected K_f T2 component equals c_fund/c_0 divided by 81
+PASS: projected K_f has no residual outside the invariant span
+
+================================================================================================================
+Part 4: W44 insertion gate
+================================================================================================================
+B4 fundamental transitions source x 3 -> target = 56
+B4 antifundamental transitions source x 3bar -> target = 56
+diagonal fundamental transitions = 0
+non-class callable names in W44 modules = []
+PASS: fundamental insertion changes W44 labels rather than acting as a diagonal scalar
+PASS: W44 modules still expose no external-label Clebsch or 6j recoupling API
+Exact P(k=2, windowed fundamental) is NOT_REPORTED here: the universal 3bar-3-3bar-3 tensor is closed, but the 625-state strip kernel still needs normalized Hom(V_a x 3, V_c) maps and their recoupling.
+PASS: runner does not turn the missing external-label recoupling into a zero displacement claim
+P(k=2, window coupling -> 0) = 0.449370834209281
+W44 unwindowed k=2 anchor      = 0.449370834209281
+delta_zero_coupling            = +3.885780586188048e-16
+W44 strip-word deep limit       = 0.615191992185898
+pair-support limit from runner  = 0.615191992185898
+PASS: window coupling set to zero reproduces W44 k=2 exactly
+PASS: zero-coupling gate leaves the W44 deep limit unchanged
+
+================================================================================================================
+Part 5: note hygiene and bounded wall discipline
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note uses markdown links for one-hop authorities
+PASS: context refs are repo-native plain-text paths
+PASS: note avoids overreach closure phrases
+PASS: note includes visible N1-N8 wall discipline
+PASS: note states that exact fundamental-window k=2 displacement is not reported
+
+TOTAL: PASS=34, FAIL=0
+
+----- stderr -----
+

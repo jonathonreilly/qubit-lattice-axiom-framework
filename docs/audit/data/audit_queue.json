@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 278,
     "high": 285,
-    "leaf": 425,
+    "leaf": 424,
     "medium": 421
   },
   "cycle_break_target_count": 4,
@@ -17115,30 +17115,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/GRAND_CANONICAL_FLUX_RESPONSE_NMOD4_ALTERNATION_NO_NET_SIGN_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_grand_canonical_flux_response_alternation_2026_06_12.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17273,6 +17249,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_p1_collapses_frame_residuals.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/p_flux_selection_via_fsb_k_check_2026_06_11.py",
       "transitive_descendants": 16
     },
     {
@@ -30158,34 +30162,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-        "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/p_flux_selection_via_fsb_k_check_2026_06_11.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -42617,6 +42593,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 19,
-  "total_pending": 1409
+  "ready_count": 18,
+  "total_pending": 1408
 }

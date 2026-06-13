@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 882 |
+| **retained_bounded** | 883 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1407 |
+| unaudited | 1406 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1336 |
+| `audited_clean` | 1337 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1724 |
+| `unaudited` | 1723 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 883 |
-| `leaf` | 1337 |
+| `medium` | 882 |
+| `leaf` | 1338 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -628,6 +628,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `global_coherence_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `graph_first_selector_derivation_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8920,6 +8921,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The live replay asserts the archived scaffolded 7/9 free_coh result against the old 6/9 two-property rule, while the source note's 2026-04-07 update and dependency restrict that result to scaffold-specific historical evidence.  _(class `C`)_
 - **chain closes:** True — The primary runner completes and asserts the bounded archived scaffolded numbers, and the direct dependency is retained-bounded for the off-scaffold reversal. The clean scope excludes any generator-agnostic predictor or simple-classifier exhaustion theorem.
 - **rationale:** The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here.
+- **auditor confidence:** high
+
+### `grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`GRAND_CANONICAL_FLUX_RESPONSE_NMOD4_ALTERNATION_NO_NET_SIGN_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/GRAND_CANONICAL_FLUX_RESPONSE_NMOD4_ALTERNATION_NO_NET_SIGN_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite free even rings with Abelian U(1) flux at grand-canonical mu_ch=0 and finite T on the stated tested grid N={8,10,12,14,16}, m and T as listed; no continuum, thermodynamic-limit, non-Abelian, gauge-self-energy, beta-function, or mu_ch != 0 claim is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-022301-08ba17402c-grand_canonical_flux_respons`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At T=0.3 and m=0.4, exact Omega''(0) over N=8,10,12,14,16 is negative, positive, negative, positive, negative with magnitudes decaying by about 2.7 per Delta N=2.  _(class `C`)_
+- **chain closes:** True — The runner source explicitly constructs the finite staggered tight-binding Hamiltonian and computes analytic second derivatives rather than reading or hard-coding the table. An independent check from the closed-form two-band spectrum reproduces the load-bearing signs, magnitudes, ratios, and T=1 maximum scale in the restricted packet.
+- **rationale:** The load-bearing step is a first-principles finite-model computation with no external comparator, tuned empirical input, or upstream open bridge. The cited upstream note is retained_bounded and is used only as context for the finite-shell sign question, not as an imported numerical premise. The source wording stays bounded to the tested grid and explicitly excludes thermodynamic, continuum, beta-function, gauge-self-energy, and off-particle-hole-symmetry claims.
 - **auditor confidence:** high
 
 ### `graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note`

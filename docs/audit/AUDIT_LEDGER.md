@@ -23,13 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 885 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1400 |
+| unaudited | 1399 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
+| `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -63,16 +64,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1339 |
 | `audited_conditional` | 60 |
-| `audited_decoration` | 49 |
+| `audited_decoration` | 50 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1717 |
+| `unaudited` | 1716 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1607 |
-| `decoration` | 50 |
+| `bounded_theorem` | 1606 |
+| `decoration` | 51 |
 | `meta` | 325 |
 | `no_go` | 336 |
 | `open_gate` | 143 |
@@ -1565,6 +1566,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `momentum_charge_commute_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
+| `pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | cross_family | codex-gpt-5.5 | A | `axiom_first_spin_statistics_theorem_note_2026-04-29` |
 | `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | decoration | ~~audited_decoration~~ | `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | cross_family | codex-gpt-5.5 | A | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
@@ -14198,6 +14200,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The chiral epsilon shift flips every BZ-corner coordinate, so it maps the hw=1 triplet entirely to the disjoint hw=2 triplet, while spatial inversion fixes the hw=1 corners and only axis permutations act nontrivially within hw=1.  _(class `A`)_
 - **chain closes:** True — The cited retained-grade inputs supply the relevant CPT C/P operations and the S3 generation-degeneracy constraint. The finite corner algebra then closes the route-local exclusion: epsilon leaves hw=1, inversion is trivial on hw=1, and axis-permutation S3 is distinct.
 - **rationale:** The load-bearing step is a direct algebraic check on the eight BZ corners, not a definition substitution or numerical comparator. The runner actually computes the corner images, inversion action, axis-permutation action, and operation distinctness, with PASS=7 FAIL=0. The conclusion is properly scoped as a route exclusion: it does not claim no generation breaking exists, only that the retained epsilon/parity operation does not provide the needed within-triplet breaking.
+- **auditor confidence:** high
+
+### `pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02`
+
+- **Note:** [`PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md`](../../docs/PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** On a declared CAR/Grassmann surface, for a normalized fermionic mode phi, (a_phi^dagger)^2=0, a_phi^dagger a_phi^dagger|0>=0, and n_phi=a_phi^dagger a_phi is a projection with eigenvalues in {0,1}; no CAR-selection claim is audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-025102-6008a0d023-pauli_exclusion_from_spin_st`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Specializing the CAR relation to the same mode gives {a_phi^dagger, a_phi^dagger}=2(a_phi^dagger)^2=0, hence (a_phi^dagger)^2=0.  _(class `A`)_
+- **chain closes:** True — The cited retained_bounded parent supplies the CAR anticommutators on the declared CAR frame. Over the complex Hilbert space, the same-mode anticommutator immediately gives nilpotence, and P2/P3 follow by standard operator algebra for a normalized mode.
+- **rationale:** The restricted packet's load-bearing mathematics is a direct algebraic consequence of the retained_bounded CAR/Grassmann parent, not an independent first-principles computation. With A=a_phi^dagger, {A,A}=0 gives 2A^2=0 over C; applying this to the vacuum gives the same-mode zero vector, and {a_phi,a_phi^dagger}=1 gives n_phi^2=n_phi. The runner constructs a Jordan-Wigner CAR representation and checks the same identities, but this is an illustrative algebraic verification. The result does not audit or supply the separate hard-core-vs-CAR frame-selection bridge.
+- **decoration parent:** `axiom_first_spin_statistics_theorem_note_2026-04-29`
 - **auditor confidence:** high
 
 ### `pauli_group_order_theorem_note_2026-05-02`

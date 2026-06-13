@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1439 |
+| Applied audit verdicts | 1440 |
 | Retained-grade rows, including boxed decorations | 1328 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 204 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1532 |
-| Ready rows | 74 |
+| Total pending rows | 1531 |
+| Ready rows | 73 |
 | Cycle-break targets | 20 |
-| Critical pending | 342 |
+| Critical pending | 341 |
 | High pending | 261 |
 | Medium pending | 440 |
 | Leaf pending | 489 |
 
 Next ready rows by queue order:
 
-- [`post_record_finite_to_unbounded_family_lift_no_go_2026-06-06`](../../docs/POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md) - critical; audit_in_progress
 - [`s3_time_theta_to_slice_coupling_note`](../../docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) - critical; unaudited
 - [`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md) - critical; audit_in_progress
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`g_bare_dynamical_fixation_obstruction_note_2026-04-18`](../../docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md) - critical; audit_in_progress
 - [`observable_principle_record_scalar_map_no_go_note_2026-06-05`](../../docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31`](../../docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md) - critical; audit_in_progress
+- [`record_unbounded_finite_additivity_schema_2026-06-06`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

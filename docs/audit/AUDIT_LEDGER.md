@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 16 |
-| `audited_clean` | 1297 |
+| `audit_in_progress` | 15 |
+| `audited_clean` | 1298 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
@@ -143,7 +143,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1039,6 +1038,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_finite_likelihood_score_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_null_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_target_kernel_stability_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `post_record_model_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selection_rule_target_vector_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -14488,6 +14488,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For K_{pi,alpha}(i,j)=(1-alpha)delta_ij+alpha pi_j, pi K_{pi,alpha}=pi and pK_{pi,alpha}-pi=(1-alpha)(p-pi) for every row probability vector p.  _(class `A`)_
 - **chain closes:** True — The displayed identities follow by direct finite-sum algebra from the supplied definition of K_{pi,alpha}. The note explicitly limits the result to supplied pi and alpha and does not claim selection or physical derivation.
 - **rationale:** The load-bearing step is a genuine algebraic identity over explicitly supplied finite inputs: summing rows gives stochasticity, pi K equals pi by normalization, detailed balance reduces to pi_i[(1-alpha)delta_ij+alpha pi_j]=pi_j[(1-alpha)delta_ji+alpha pi_i], and pK-pi=(1-alpha)(p-pi). The runner source independently implements these finite rational checks rather than merely printing constants, though the audit judgment does not depend on the runner alone. There are no cited authorities and no imported open bridge needed for the bounded claim as stated.
+- **auditor confidence:** high
+
+### `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06`
+
+- **Note:** [`POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md`](../../docs/POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** A finite post-record certificate, without an added family-lift premise, does not determine an unbounded retained law.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-255ded6e29-post_record_finite_to_unboun`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Two unbounded completions agree on the finite prefix 1,0,1,1 and hence on the finite certificate, while their limiting marker densities are 0 and 1.  _(class `A`)_
+- **chain closes:** True — The counterexample closes by elementary finite-prefix indistinguishability: the two sequences have identical data on the certificate window but different asymptotic densities. This prunes only the finite-certificate-alone route and leaves supplied or derived family-lift routes open.
+- **rationale:** The displayed arithmetic checks independently: the prefix has count 3 and frequency 3/4; the zero-tail completion has limiting density lim 3/n = 0; the one-tail completion has limiting density lim (n-1)/n = 1; at window 20 these are 3/20 and 19/20. The runner implements the same finite-prefix construction and document-scope checks rather than importing a contested premise or external comparator. The no-go discipline gate is satisfied because the source states a narrow obstruction only to finite-certificate-alone promotion and explicitly leaves law, projective consistency, monotone exhaustion, direct-limit compatibility, and compactness/tightness routes open.
 - **auditor confidence:** high
 
 ### `post_record_flow_thermal_stable_setting_certificate_2026-06-06`

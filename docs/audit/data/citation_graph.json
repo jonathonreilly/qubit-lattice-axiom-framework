@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
         "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
         "hierarchy_dimensional_compression_note",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
+        "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7be00f0d93fc1f0680d5253b1b58d4a486dee2bda9842c8ca328bda76053add5",
+      "note_hash": "5dcb5b00297be0a6d72554941d1e2a0be9a84be0ec69998d43a2a64fcec7f122",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,11 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 869 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1426 |
+| unaudited | 1425 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 53 |
+| ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -63,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1322 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 49 |
-| `audited_failed` | 25 |
+| `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1743 |
+| `unaudited` | 1742 |
 
 | claim_type | count |
 |---|---:|
@@ -1577,6 +1578,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `shapiro_diamond_frequency_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
 | `shapiro_five_family_portability_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `shapiro_scaling_direct_replay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -18581,6 +18583,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the all-trivial plaquette assignment, all link integrations are trivial, so the sector gives Z_singlet = c_(0,0)(6)^12 and normalized rho = delta_(0,0), and plugging that rho into T_src(6) yields P_trivial(6) = 0.4225317396.  _(class `C`)_
 - **chain closes:** True — The finite encoder combinatorics independently reproduce 12 encoded plaquettes, 24 links with two incidences each, 24 adjacency edges, and a 6/6 bipartition. The trivial-sector rank-one Perron calculation independently gives c_(0,0)(6)^12 = 2.759834e6, eigenvalue 3.4414403550, and P = 0.4225317396.
 - **rationale:** The narrowed theorem is explicitly bounded to the quotient encoder and trivial sector, so the deferred Wigner-intertwiner traces and Wilson-orientation identification are not load-bearing. The runner source performs real finite enumeration and a real source-sector Perron computation; the loose 0.4225 constant is used only as a post-computation Reference B comparison. All cited authorities in the restricted packet are retained-grade, and no external comparator or fitted scale is used for the audited conclusion.
+- **auditor confidence:** high
+
+### `su3_dabc_symmetric_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic SU(3) Gell-Mann d-symbol identities D1-D6 on T^a=lambda^a/2, with displayed in-perimeter algebraic corollaries checked for stated coefficients.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-012129-eb381da405-su3_dabc_symmetric_theorem_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Trace projection with d^{abc}:=2 Tr({T^a,T^b} T^c) gives {T^a,T^b}=(1/3) delta^{ab} I_3 + d^{abc} T^c in the Gell-Mann basis with Tr[T^a T^b]=(1/2) delta^{ab}.  _(class `A`)_
+- **chain closes:** False — D1-D6 close from the supplied Gell-Mann basis and trace normalization. However C2 states that d^{abc} T^a T^b T^c gives 5/12 for N=3, while the stated standard-normalization formula and direct matrix evaluation give 10/9 I_3, so the source does not close as written.
+- **rationale:** The runner genuinely computes the anticommutator projection, symmetry, reality, reference d-symbol entries, and combined T^a T^b identity from explicit Gell-Mann matrices. Those checks support D1-D6, but they do not check the displayed C2 cubic-Casimir scalar. Independent evaluation using the same T^a=lambda^a/2 and d-definition gives d^{abc}T^aT^bT^c = 10/9 I_3, not 5/12. Because the wrong quantitative corollary is inside the claimed algebraic perimeter, the theorem note is not clean as written.
 - **auditor confidence:** high
 
 ### `su3_fusion_engine_pr1_theorem_note_2026-05-03`

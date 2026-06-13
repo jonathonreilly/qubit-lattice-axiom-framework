@@ -1,0 +1,32 @@
+loop: koide-berezin-open-gate-block08-20260613
+branch: physics-loop/koide-berezin-open-gate-block08-20260613
+base: origin/main@a71487b8477b237b9e5ad5095efa4da57da16d52
+created_utc: 2026-06-13
+goal: "Repair the high-criticality Koide Berezin det_C/det_R open-gate provenance without adding axioms or editing audit ledgers."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04
+active_route: "Drain the original unstructured fork route through the downstream occupancy-independence theorem."
+files_touched:
+  - docs/KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md
+  - scripts/berezin_detc_detr_fork_2026_06_04.py
+  - logs/runner-cache/berezin_detc_detr_fork_2026_06_04.txt
+  - .claude/science/physics-loops/koide-berezin-open-gate-block08-20260613/
+open_imports:
+  - "No new axiom or textbook import. The physical occupancy/slot-degree selector remains open unless a later premise is adopted or derived."
+no_go_routes:
+  - "Berezin statistics alone selects det_C: rejected by the four-cell table and preserved here."
+  - "Static doublet complex structure selects r: rejected by prior J_cs silence results and preserved here."
+verification:
+  runner: "python3 scripts/berezin_detc_detr_fork_2026_06_04.py"
+  cache_refresh: "python3 scripts/precompute_audit_runners.py --allow-non-main --push-mode=none --force --concurrency=1 --runners scripts/berezin_detc_detr_fork_2026_06_04.py"
+  result: "PASS=36 FAIL=0"
+review_findings: "self-review pass for scoped bounded-support/open-gate provenance repair; no retained/proposed_retained language."
+pr_status: pending
+next_exact_action: "Run check-only freshness and diff hygiene, then commit, push, and open the review PR."
+stop_condition: "Block complete when PR is open and coverage recompute shows this high open_gate row is source-covered by a ready PR."

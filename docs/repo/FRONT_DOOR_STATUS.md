@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1532 |
-| Retained-grade rows, including boxed decorations | 1363 |
+| Applied audit verdicts | 1533 |
+| Retained-grade rows, including boxed decorations | 1364 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 889 |
+| Retained bounded rows | 890 |
 | Boxed decorations under retained parents | 47 |
 | Open gates | 39 |
-| Unaudited rows | 1390 |
+| Unaudited rows | 1389 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 65 |
 | Audited renaming rows | 34 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1392 |
-| Ready rows | 2 |
+| Total pending rows | 1391 |
+| Ready rows | 1 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
-| Medium pending | 416 |
+| Medium pending | 415 |
 | Leaf pending | 413 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11`](../../docs/WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -77,8 +76,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3383 |
 | Critical nodes | 521 |
 | High nodes | 514 |
-| Medium nodes | 912 |
-| Leaf nodes | 1436 |
+| Medium nodes | 911 |
+| Leaf nodes | 1437 |
 
 Top load-bearing rows by graph score:
 

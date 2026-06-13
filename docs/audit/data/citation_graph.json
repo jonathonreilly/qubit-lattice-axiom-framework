@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11"
     },
     {
@@ -96665,11 +96661,10 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
         "ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bea340903fb947e6be2a92cde63080be0904f36abbf9de0b4aea03e5d2954722",
+      "note_hash": "df4e608d53920c066e62b7661242743789009dcf79df10f0e2bd0b12368d2633",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -111316,8 +111311,8 @@
       "open_gate": 162,
       "positive_theorem": 615
     },
-    "edge_count": 12691,
-    "leaf_count": 1090,
+    "edge_count": 12690,
+    "leaf_count": 1091,
     "node_count": 3383,
     "root_count": 1059,
     "runners_with_path": 2963

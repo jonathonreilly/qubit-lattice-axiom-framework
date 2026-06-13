@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 889 |
+| **retained_bounded** | 890 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1390 |
+| unaudited | 1389 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1343 |
+| `audited_clean` | 1344 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1707 |
+| `unaudited` | 1706 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 513 |
 | `high` | 508 |
-| `medium` | 873 |
-| `leaf` | 1347 |
+| `medium` | 872 |
+| `leaf` | 1348 |
 
 - **Retained pending chain closure:** 18
 - **Citation cycles detected:** 4
@@ -1406,6 +1406,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `valley_linear_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `valley_linear_wide_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_3plus1d_promotions_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_3plus1d_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_amplification_near_horizon_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -20810,6 +20811,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At f=0.02, R=4.0, s=0.004, the computed dz is positive for CCW and negative for CW while avg_inv_r is identical for both directions.  _(class `C`)_
 - **chain closes:** True — For the bounded case, the runner computes dz through grow/_meas_yz/_prop_orbit rather than hard-coding the claimed dz values. The scalar-exposure match also checks independently because avg_inv_r depends on y_src^2+z_src^2=R^2, so it is direction-independent at fixed parameters.
 - **rationale:** The primary runner source verifies that the reported CCW/CW dz signs come from the helper propagation computation, and the contested dz constants are not simply printed as expected values. The matched scalar exposure is not merely stdout trust: it follows algebraically from the radius formula used in avg_inv_r. This clean verdict is limited to the bounded matched-exposure CCW/CW case and does not establish a phase-independent or unqualified retained vector-sector observable.
+- **auditor confidence:** high
+
+### `ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11`
+
+- **Note:** [`WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md`](../../docs/WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-temperature nearest-neighbor U(1)-symmetric XY qubit Hamiltonian with transverse field on periodic d-dimensional sublattices, proving the commutator-normalized no-continuous-SSB weak-field conclusion for d <= 2 using the retained lattice IR-sum threshold.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-032056-e1ceb8f40a-ward_bogoliubov_no_continuou`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Combining (B1)-(B4) per mode gives m(h)^2 (1/N) sum_k 1/(J E(k)+h|m(h)|) <= beta/4, and the retained d <= 2 IR divergence then forces m(h) -> 0 as h -> 0 after the thermodynamic limit.  _(class `C`)_
+- **chain closes:** True — The independent commutator algebra gives the Ward identity, the field double commutator h sum_x S^x_x, and a bond double-commutator bounded by J N E(k); Fourier completeness gives the N^2/2 sum rule. With the retained IR threshold and finite beta, the assembled bound squeezes the thermodynamic-limit order parameter to zero as h -> 0.
+- **rationale:** The runner source genuinely constructs the finite qubit spin operators, Gibbs state, Fourier modes, commutators, lattice sums, and falsifiers; it does not merely print constants or import the contested conclusion. A separate manual check of the signs, factors, Fourier normalization, beta/4 coefficient, field regulator, and E(k)=2 sum_mu(1-cos k_mu) kernel agrees with the note. The minimal axiom citation is an accepted-premise input, and the Coleman-Mermin-Wagner IR threshold authority is retained_bounded, so no non-retained dependency blocks this bounded theorem.
 - **auditor confidence:** high
 
 ### `wave_3plus1d_promotions_note`

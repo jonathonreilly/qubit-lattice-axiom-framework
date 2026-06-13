@@ -30461,6 +30461,10 @@
       "to": "rconn_derived_note"
     },
     {
+      "from": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
+      "to": "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+    },
+    {
       "from": "quark_strc_observable_principle_note_2026-04-19",
       "to": "strc_lo_collinearity_theorem_note_2026-04-19"
     },
@@ -95097,7 +95101,8 @@
       "deps": [
         "quark_route2_exact_readout_map_note_2026-04-19",
         "quark_route2_exact_time_coupling_note_2026-04-19",
-        "rconn_derived_note"
+        "rconn_derived_note",
+        "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
       ],
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
@@ -95106,7 +95111,7 @@
         "scripts/frontier_same_source_metric_ansatz_scan.py",
         "scripts/frontier_tensor_support_center_excess_law.py"
       ],
-      "note_hash": "09d7d912ef66d892ef54a67109c1d2e60b2c42c14b2472f6bdd2e62cc43ae6b5",
+      "note_hash": "9df1cd7d3c6b1780a99506ac2bcb7e5320ba579558fff9383ac145e7dafc43f9",
       "path": "docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md",
       "runner_path": "scripts/frontier_quark_route2_source_domain_bridge_no_go.py",
       "title": "Quark Route-2 Source-Domain Bridge No-Go"
@@ -96659,7 +96664,7 @@
         "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b87374c18e000917fa40da1723f642055b14338314aba2f127e16a702727fcf9",
+      "note_hash": "e5a1c2f286aa9de0076ea74f3c190031490c5131d4cc1f46141e179c4a8413c9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -111306,7 +111311,7 @@
       "open_gate": 162,
       "positive_theorem": 615
     },
-    "edge_count": 12689,
+    "edge_count": 12690,
     "leaf_count": 1092,
     "node_count": 3383,
     "root_count": 1059,

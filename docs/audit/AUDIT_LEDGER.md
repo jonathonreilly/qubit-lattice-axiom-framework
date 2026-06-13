@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 890 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1389 |
+| unaudited | 1390 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 65 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1344 |
-| `audited_conditional` | 65 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1706 |
+| `unaudited` | 1707 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 513 |
-| `high` | 508 |
+| `critical` | 514 |
+| `high` | 507 |
 | `medium` | 871 |
 | `leaf` | 1349 |
 
@@ -1521,7 +1521,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
-| `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -16102,22 +16101,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** rho_E = 0 and rho_E = 21/4 produce the same exact shell coupling but different exact center couplings on the same slice backbone, so the unresolved readout map blocks a unique Theta_R -> Lambda_R time-coupling theorem.  _(class `A`)_
 - **chain closes:** True — The bounded claim closes: the source note does not claim a unique time-coupling law, only a conditional family plus an obstruction. The one-hop readout note supplies the reduced P(rho_E) family, and the runner verifies that two admissible choices agree on shell coupling but differ on center coupling while the slice factor is exact and nonzero.
 - **rationale:** The load-bearing step is an algebraic obstruction over the supplied readout family and computed slice backbone, not a tuned comparator or a renaming of the target quantity. The runner does not establish the missing unique readout theorem; instead it checks the bounded statement the note actually makes: conditional exactness once P_R is supplied and non-uniqueness when the readout entry remains unresolved. Because the audited scope is explicitly bounded away from a unique Theta_R -> Lambda_R theorem, the hostile review objection becomes the note's stated obstruction rather than a closure failure.
-- **auditor confidence:** high
-
-### `quark_route2_source_domain_bridge_no_go_note_2026-04-28`
-
-- **Note:** [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Bounded current-bank typed-graph audit: no retained Route-2/SU(3) source-domain edge derives `gamma_T(center)/gamma_E(center) = -R_conn`; adding that edge algebraically forces `beta_E/alpha_E = 21/4`.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-19e4acd9b1-quark_route2_source_domain_b`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The finite typed graph has no path from `R_conn` to `rho_E = 21/4`; adding exactly the missing bridge creates the path immediately.  _(class `A`)_
-- **chain closes:** False — The rational algebra and configured graph reachability close: `(-2)(5/6)/(-8/9)=15/8` and `6(15/8-1)=21/4`, and the configured graph has no outgoing bridge from `su3_R_conn_8_9`. The repaired inventory-completeness claim does not close from this restricted packet because two files in the runner's named authority bank are not supplied in full.
-- **rationale:** The scoped no-go is sound over the configured typed-edge inventory and the endpoint algebra independently checks out. However, the quote-anchored inventory repair is load-bearing, and the runner's own authority bank includes `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md` and `QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`, which are not provided as full cited authorities in the restricted packet. The source note also has stale verification text: it expects `PASS=33`, while the included completed cache reports `PASS=103`.
-- **open / conditional deps cited:**
-  - `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`
-  - `QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`
 - **auditor confidence:** high
 
 ### `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28`

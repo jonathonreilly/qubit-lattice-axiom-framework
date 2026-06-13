@@ -289,3 +289,9 @@ VERDICT: current Route-2 + SU(3) support has no typed R_conn
 source-domain bridge. Adding that bridge would force rho_E=21/4,
 but without it the up-type scalar law remains open.
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)

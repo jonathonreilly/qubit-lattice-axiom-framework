@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12",
         "energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12",
         "exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11",
         "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
         "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
-        "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12"
+        "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12",
+        "gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "792aaefdc21d0af450cb4c4ade4168bcf363914cae457a5883534bc340e72d03",
+      "note_hash": "938db8f6656dc0a78219766badff07c2f95db2beb4501c1605ac89c38bc65907",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -1,0 +1,26 @@
+loop_slug: universal-gr-polarization-open-gate-20260613
+goal: "Repair the universal GR polarization-frame open-gate row by making the full-GR/curvature-localization downstream boundary explicit and executable."
+target_claim_id: universal_gr_polarization_frame_bundle_attempt
+base_commit: f5606863c
+branch: physics-loop/universal-gr-polarization-open-gate-20260613
+actual_current_surface_status: open
+conditional_surface_status: scalar-channel and quotient-kernel support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: source-boundary-runner-guard
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md
+  - scripts/frontier_universal_gr_polarization_frame_bundle.py
+  - logs/runner-cache/frontier_universal_gr_polarization_frame_bundle.txt
+open_imports:
+  - covariant 3+1 polarization-frame/projector bundle
+  - distinguished connection or horizontal distribution on the complement
+  - full curvature-localization operator Pi_curv
+  - Einstein/Regge dynamics law
+runner_status: "PASS=13 FAIL=0"
+review_disposition: pass
+next_exact_action: "Open review PR; reviewer/auditor can decide whether the source-boundary guard stabilizes the row."
+stop_condition: "Source-side repair packaged for review; no audit ledger/result/status files edited."

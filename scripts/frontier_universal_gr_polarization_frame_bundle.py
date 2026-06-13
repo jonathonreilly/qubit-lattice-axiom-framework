@@ -32,6 +32,23 @@ UNIQUENESS = DOCS / "UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md"
 BLOCKER = DOCS / "UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md"
 CURVATURE = DOCS / "UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md"
 FRAME_BUNDLE = DOCS / "UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md"
+ATTEMPT_NOTE = DOCS / "UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md"
+
+SOURCE_BOUNDARY_REQUIRED_PHRASES = [
+    "Downstream source-boundary firewall",
+    "exact scalar observable generator",
+    "exact `3+1` kinematic lift",
+    "unique symmetric",
+    "rank-2 scalar-channel projector",
+    "complement-channel localization coefficients",
+    "canonical full polarization-frame bundle",
+    "canonical full projector bundle",
+    "curvature-localization operator `Pi_curv`",
+    "Einstein/Regge dynamics law",
+    "framework-level GR derivation",
+    "exhaustive no-go",
+    "distinguished covariant frame/projector bundle with connection",
+]
 
 
 @dataclass
@@ -218,6 +235,7 @@ def main() -> int:
     blk = read(BLOCKER)
     curv = read(CURVATURE)
     fb = read(FRAME_BUNDLE)
+    attempt = read(ATTEMPT_NOTE)
 
     d = (2.0, 3.0, 5.0, 7.0)
     basis = sym_basis(4)
@@ -300,6 +318,18 @@ def main() -> int:
             "localization coefficients depend on frame choice",
             frame_delta > 1e-6,
             f"max channel delta across two valid polarization frames = {frame_delta:.3e}",
+        ),
+        Check(
+            "source-boundary firewall names allowed and forbidden downstream uses",
+            all(phrase.lower() in attempt.lower() for phrase in SOURCE_BOUNDARY_REQUIRED_PHRASES),
+            "attempt note preserves open-gate/source-boundary guardrails",
+        ),
+        Check(
+            "source-boundary firewall forbids full GR/curvature-localization reuse",
+            has(attempt, "do not cite it as a curvature-localization operator `Pi_curv`")
+            and has(attempt, "do not cite it as an Einstein/Regge dynamics law")
+            and has(attempt, "do not cite it as a framework-level GR derivation"),
+            "runner pass remains blocker/support only, not GR closure",
         ),
     ]
 

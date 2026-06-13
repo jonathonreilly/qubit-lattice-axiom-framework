@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py
-runner_sha256: 70e81aa352527362d866bc9e680e6ff19196655b4d8e4711a0bae76d2aa7b832
+runner_sha256: 9941df41890b1aace77ee95bd720504201245b8c647897b8dda31891ad8bcf38
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ==============================================================================================
@@ -43,9 +43,11 @@ Part D: HONEST residual -- the power-divergent UV piece (Collins), scoped not so
 Part E: source title/scope is conditional algebra, not an unconditional theorem
 ----------------------------------------------------------------------------------------------
   [PASS] (E1) note title is narrowed to conditional algebra / supplied one-loop boundary  --  title no longer presents a bare interacting-Lorentz theorem
+  [PASS] (E1b) note claim type is open-gate conditional support, not bounded_theorem  --  status firewall prevents bounded-theorem promotion over supplied RG inputs
   [PASS] (E2) source role calls the packet conditional algebra  --  scope is supplied one-loop/structural packet
   [PASS] (E3) hierarchy suppression remains non-load-bearing  --  hierarchy damping is explicitly non-load-bearing
   [PASS] (E4) source explicitly leaves physical gamma/coefficient open  --  no retained LV-naturalness closure claimed
+  [PASS] (E5) 2026-06-12 audit firewall names the missing bridges and forbids axiom/admission changes  --  audit-facing boundary is explicit in the source row
 
 ----------------------------------------------------------------------------------------------
 Summary
@@ -63,7 +65,7 @@ Summary
        Source title/scope is conditional algebra over supplied one-loop dynamics.
 
 ==============================================================================================
-TOTAL: PASS=16 FAIL=0
+TOTAL: PASS=18 FAIL=0
 ==============================================================================================
 
 ----- stderr -----

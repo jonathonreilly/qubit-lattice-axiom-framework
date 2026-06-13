@@ -1,0 +1,228 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_four_strip_parity_test_bounded_2026_06_12.py
+runner_sha256: c137d28cc1e06ba9863c90f92f3c6c90d96cc0b03d30e73272d33643fc7eb865
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.06
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette four-strip parity test
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80
+source NMAX=7, source MODE_MAX=200
+transverse geometry: open 4-chain with internal links 1-2, 2-3, 3-4
+primary internal-link convention: dimension-stripped
+
+================================================================================================================
+Part 1: state space and deterministic resource estimate
+================================================================================================================
+one-word state count = 25
+four-strip layer state count = 390625
+dense transfer storage would be 1.110 TiB
+one float64 vector storage = 2.980 MiB
+eigsh ncv=32 vector basis storage estimate = 95.367 MiB
+matrix-free matvec multiply-add scale estimate = 78125000
+time estimate: dominated by eigsh matvec count times the printed matvec scale
+PASS: four-strip state space has 25^4 = 390625 states
+PASS: dense 390625 x 390625 transfer is not materialized
+PASS: matrix-free vector memory estimate remains below dense storage
+PASS: generated fusion table remains finite and nonnegative
+
+================================================================================================================
+Part 2: anchors
+================================================================================================================
+one-word eigenvalue = 1.012369912747822
+one-word Perron residual = 1.665e-16
+one-word psi_min = 1.985e-23
+rho_word(1,0) = 0.378514922317117
+rho_word(1,1) = 0.171042019091802
+P(rho_word) = 0.434215413259920
+u0(rho_word) = 0.811757498147861
+alpha_s(rho_word; alpha_bare=1) = 1.517565281370676
+PASS: one-word composed readout reproduces the declared finite value
+      delta=5.551e-17
+two-strip full-character P = 0.447034890458824
+two-strip full-character residual = 2.220e-15
+two-strip dimension-stripped P = 0.439904783618900
+two-strip dimension-stripped residual = 4.441e-16
+PASS: two-strip dimension-stripped anchor reproduces the landed value
+      delta=1.665e-16
+PASS: two-strip full-character control anchor reproduces the landed value
+      delta=0.000e+00
+three-strip dimension-stripped P = 0.436904879677743
+three-strip dimension-stripped residual = 8.882e-16
+three-strip full-character P = 0.441391418390688
+three-strip full-character residual = 1.776e-14
+PASS: three-strip dimension-stripped anchor reproduces the landed value
+      delta=4.441e-16
+PASS: three-strip full-character control anchor reproduces the landed value
+      delta=4.441e-16
+
+================================================================================================================
+Part 3: cut gates
+================================================================================================================
+all-link cut eigenvalue candidate = 1.050405333969133
+all-link cut residual on four word-chain tensor = 4.441e-16
+all-link cut max |rho-rho_word| = 5.551e-17
+P(all-link cut marginal) = 0.434215413259920
+PASS: all-link cut reproduces four independent word chains
+PASS: all-link cut marginal reproduces rho_word
+PASS: all-link cut source readout reproduces P(rho_word)
+
+dimension-stripped single-link cut gates:
+  cut link 3-4 residual on psi_3strip tensor psi_word = 8.882e-16
+  cut link 3-4 edge marginal max |rho-rho_3strip| = 1.110e-16
+  cut link 3-4 P(edge marginal) = 0.436904879677743
+  cut link 1-2 residual on psi_word tensor psi_3strip = 8.882e-16
+  cut link 1-2 block-edge marginal max |rho-rho_3strip| = 3.886e-16
+  cut link 1-2 P(block-edge marginal) = 0.436904879677743
+  cut link 2-3 residual on psi_2strip tensor psi_2strip = 7.772e-16
+  cut link 2-3 edge marginal max |rho-rho_2strip| = 2.220e-16
+  cut link 2-3 P(edge marginal) = 0.439904783618900
+PASS: dimension-stripped cut link 3-4 reproduces 3-strip x 1-word transfer
+PASS: dimension-stripped cut link 3-4 reproduces the three-strip edge rho
+PASS: dimension-stripped cut link 1-2 reproduces 1-word x 3-strip transfer
+PASS: dimension-stripped cut link 1-2 exposes the three-strip edge rho
+PASS: dimension-stripped cut link 2-3 reproduces 2-strip x 2-strip transfer
+PASS: dimension-stripped cut link 2-3 reproduces the two-strip edge rho
+
+full-character single-link cut gates:
+  cut link 3-4 residual on psi_3strip tensor psi_word = 2.309e-14
+  cut link 3-4 edge marginal max |rho-rho_3strip| = 1.110e-16
+  cut link 3-4 P(edge marginal) = 0.441391418390689
+  cut link 1-2 residual on psi_word tensor psi_3strip = 2.309e-14
+  cut link 1-2 block-edge marginal max |rho-rho_3strip| = 2.220e-16
+  cut link 1-2 P(block-edge marginal) = 0.441391418390688
+  cut link 2-3 residual on psi_2strip tensor psi_2strip = 1.599e-14
+  cut link 2-3 edge marginal max |rho-rho_2strip| = 2.220e-16
+  cut link 2-3 P(edge marginal) = 0.447034890458824
+PASS: full-character cut link 3-4 reproduces 3-strip x 1-word transfer
+PASS: full-character cut link 3-4 reproduces the three-strip edge rho
+PASS: full-character cut link 1-2 reproduces 1-word x 3-strip transfer
+PASS: full-character cut link 1-2 exposes the three-strip edge rho
+PASS: full-character cut link 2-3 reproduces 2-strip x 2-strip transfer
+PASS: full-character cut link 2-3 reproduces the two-strip edge rho
+
+================================================================================================================
+Part 4: four-strip Perron solves
+================================================================================================================
+
+four_strip_dimension_stripped_product_open_chain:
+  solver = eigsh
+  combined internal factor min/max = 1.000000000000000 / 4.890974918740656
+  eigenvalue = 11.029722455357625
+  Perron residual = 1.332e-15
+  psi_min = -2.407e-35
+  rho_edge(1,0) = 0.516765488421587
+  rho_edge(1,1) = 0.202499597996785
+  rho_edge min/max = 3.991e-24 / 1.000e+00
+  rho_inner(1,0) = 0.765661478406071
+  rho_inner(1,1) = 0.242142665998304
+  edge reversal residual = 2.331e-15
+  inner reversal residual = 3.331e-16
+  edge/inner marginal residual = 2.489e-01
+  edge conjugation residual = 1.110e-16
+  P(edge rho) = 0.438273257015454
+  P(inner rho) = 0.445322221638842
+  u0(edge rho) = 0.813647403409428
+  alpha_s(edge rho; alpha_bare=1) = 1.510523597956060
+PASS: four_strip_dimension_stripped_product_open_chain Perron residual is small
+PASS: four_strip_dimension_stripped_product_open_chain Perron vector is nonnegative up to tolerance
+PASS: four_strip_dimension_stripped_product_open_chain edge rho is admissible on B4
+PASS: four_strip_dimension_stripped_product_open_chain open-chain reversal gives equal edge marginals
+PASS: four_strip_dimension_stripped_product_open_chain open-chain reversal gives equal inner marginals
+
+four_strip_full_character_product_open_chain:
+  solver = eigsh
+  combined internal factor min/max = 1.000000000000000 / 206.296666771831468
+  eigenvalue = 1453.320477080826095
+  Perron residual = 1.705e-13
+  psi_min = -9.404e-37
+  rho_edge(1,0) = 0.703879456911549
+  rho_edge(1,1) = 0.339171272352561
+  rho_edge min/max = 1.661e-24 / 1.000e+00
+  rho_inner(1,0) = 1.342476222461378
+  rho_inner(1,1) = 0.693640281401391
+  edge reversal residual = 2.220e-15
+  inner reversal residual = 3.553e-15
+  edge/inner marginal residual = 6.386e-01
+  edge conjugation residual = 1.110e-16
+  P(edge rho) = 0.443683201450925
+  P(inner rho) = 0.460729884020911
+  u0(edge rho) = 0.816146732970987
+  alpha_s(edge rho; alpha_bare=1) = 1.501286250101338
+PASS: four_strip_full_character_product_open_chain Perron residual is small
+PASS: four_strip_full_character_product_open_chain Perron vector is nonnegative up to tolerance
+PASS: four_strip_full_character_product_open_chain edge rho is admissible on B4
+PASS: four_strip_full_character_product_open_chain open-chain reversal gives equal edge marginals
+PASS: four_strip_full_character_product_open_chain open-chain reversal gives equal inner marginals
+
+================================================================================================================
+Part 5: parity analysis and fenced comparator distances
+================================================================================================================
+Plaquette reuse license: comparator is used only as comparison/reuse context.
+```text
+dimension-stripped reading:
+  P(1) = 0.434215413259920
+  P(2) = 0.439904783618900
+  P(3) = 0.436904879677743
+  P(4) = 0.438273257015454
+  increment P2-P1 = 0.005689370358980
+  increment P3-P2 = -0.002999903941156
+  increment P4-P3 = 0.001368377337710
+  odd subsequence P(1)->P(3) monotone upward = True
+  even subsequence P(2)->P(4) monotone downward = True
+  measured tails move toward each other = True
+  measured two-sided tail bracket = [0.436904879677743, 0.438273257015454]
+  bracket note: measured from P(3) and P(4) only; no extrapolation
+  |P(1) - 0.5934| = 0.159184586740080
+  |P(2) - 0.5934| = 0.153495216381100
+  |P(3) - 0.5934| = 0.156495120322257
+  |P(4) - 0.5934| = 0.155126742984546
+per-rung internal-link density diagnostic:
+  N=1: internal_links=0, density=(N-1)/N=0.000000000000, incident_counts=[0], P=0.434215413259920, P-P(1)=0.000000000000000
+  N=2: internal_links=1, density=(N-1)/N=0.500000000000, incident_counts=[1, 1], P=0.439904783618900, P-P(1)=0.005689370358980
+  N=3: internal_links=2, density=(N-1)/N=0.666666666667, incident_counts=[1, 2, 1], P=0.436904879677743, P-P(1)=0.002689466417823
+  N=4: internal_links=3, density=(N-1)/N=0.750000000000, incident_counts=[1, 2, 2, 1], P=0.438273257015454, P-P(1)=0.004057843755534
+  density-order monotone P-deviation = False
+  diagnostic label: correlation check only; residual target remains open
+full-character control reading:
+  P(1) = 0.434215413259920
+  P(2) = 0.447034890458824
+  P(3) = 0.441391418390688
+  P(4) = 0.443683201450925
+  increment P2-P1 = 0.012819477198904
+  increment P3-P2 = -0.005643472068136
+  increment P4-P3 = 0.002291783060236
+  odd subsequence P(1)->P(3) monotone upward = True
+  even subsequence P(2)->P(4) monotone downward = True
+  measured tails move toward each other = True
+  measured two-sided tail bracket = [0.441391418390688, 0.443683201450925]
+  bracket note: measured from P(3) and P(4) only; no extrapolation
+  |P(1) - 0.5934| = 0.159184586740080
+  |P(2) - 0.5934| = 0.146365109541176
+  |P(3) - 0.5934| = 0.152008581609312
+  |P(4) - 0.5934| = 0.149716798549075
+```
+PASS: dimension-stripped ladder diagnostics are finite
+PASS: full-character control ladder diagnostics are finite
+PASS: dimension-stripped even and odd subsequence monotonicity gates pass as measured
+PASS: dimension-stripped measured tails move toward each other
+PASS: dimension-stripped measured bracket is ordered
+PASS: dimension-stripped density diagnostic is finite
+
+================================================================================================================
+Part 6: note hygiene
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note uses markdown links for one-hop authorities
+PASS: note uses durable repo context pointers instead of branch-local temp refs
+PASS: note avoids overreach closure language
+Named residuals: finite four-strip width rung; finite B4 weight box; finite Bessel support; product-orientation internal-link contraction; future all-link 6j/intertwiner normalization; strip-depth direction; wider slab limit; 3D stack; L_perp limit; analytic P(6); no repinning.
+PASS: runner names residuals without retiring them
+
+TOTAL: PASS=45, FAIL=0
+
+----- stderr -----
+

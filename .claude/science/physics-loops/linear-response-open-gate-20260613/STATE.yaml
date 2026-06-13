@@ -1,0 +1,25 @@
+loop_slug: linear-response-open-gate-20260613
+goal: "Repair the linear-response open-gate row by making the detector-only heuristic citation boundary explicit and executable."
+target_claim_id: linear_response_derivation_note
+base_commit: 68ccb26cc
+branch: physics-loop/linear-response-open-gate-20260613
+actual_current_surface_status: open
+conditional_surface_status: frozen detector-only heuristic support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: source-boundary-runner-guard
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/LINEAR_RESPONSE_DERIVATION_NOTE.md
+  - scripts/linear_response_derivation.py
+  - logs/runner-cache/linear_response_derivation.txt
+open_imports:
+  - literal first-order Kubo theorem
+  - audit-graph one-hop dependency edge to true-Kubo sibling
+  - retained compact-principle or response theorem
+runner_status: "SCORECARD PASS=15 FAIL=0"
+review_disposition: pass
+next_exact_action: "Open review PR; reviewer/auditor can decide whether the no-fit/tuned and literal-Kubo firewalls stabilize the row."
+stop_condition: "Source-side repair packaged for review; no audit ledger/result/status files edited."

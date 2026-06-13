@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3241 |
-| Applied audit verdicts | 1503 |
-| Retained-grade rows, including boxed decorations | 1345 |
+| Applied audit verdicts | 1504 |
+| Retained-grade rows, including boxed decorations | 1346 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 209 |
-| Retained bounded rows | 873 |
+| Retained bounded rows | 874 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 39 |
-| Unaudited rows | 1419 |
+| Unaudited rows | 1418 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 55 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1421 |
-| Ready rows | 31 |
+| Total pending rows | 1420 |
+| Ready rows | 30 |
 | Cycle-break targets | 4 |
 | Critical pending | 278 |
 | High pending | 285 |
 | Medium pending | 421 |
-| Leaf pending | 437 |
+| Leaf pending | 436 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12`](../../docs/D2_ORBITAL_SUSCEPTIBILITY_SIGN_REGIONS_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12`](../../docs/D2_TRUNCATION_ERROR_BUDGET_FIRST_DATUM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12`](../../docs/DECLARED_RG_MAP_UNIFORM_CHAIN_BAND_EDGE_FIXED_POINT_NU_HALF_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12`](../../docs/DOPED_FLUX_RESPONSE_NO_UNIFORM_SIGN_REGION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12`](../../docs/ENERGY_COVARIANT_RG_COLLAPSE_SHIFTED_COUPLING_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11`](../../docs/EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
-- [`free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - leaf; unaudited
+- [`free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
+- [`g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

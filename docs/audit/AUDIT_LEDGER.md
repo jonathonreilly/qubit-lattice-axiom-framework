@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 873 |
+| **retained_bounded** | 874 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1419 |
+| unaudited | 1418 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1326 |
+| `audited_clean` | 1327 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1736 |
+| `unaudited` | 1735 |
 
 | claim_type | count |
 |---|---:|
@@ -117,7 +117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1271 | 38.81 | `audited_clean` | **retained_bounded** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 737 | 38.03 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1362 | 36.91 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1363 | 36.91 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1138 | 36.15 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 929 | 34.86 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
@@ -330,6 +330,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cyclic_dft_uniform_magnitude_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cyclic_projector_compression_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4559,6 +4560,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because the first checkerboard elimination has h_oo = mu I, the Schur complement gives only the stated three step-1 couplings, while a second exact finite-torus decimation has a non-diagonal eliminated block whose inverse produces measured nonzero, decaying couplings on shells through d2 = 72 for L = 12/14.  _(class `C`)_
 - **chain closes:** True — The runner source explicitly constructs the finite square-lattice Hamiltonians, performs Schur complements with dense linear solves, and computes the shell tables rather than importing them. Independent algebra also supports the step-1 coefficients from h_oo = mu I and nearest-neighbor path counts.
 - **rationale:** The restricted packet contains no cited upstream authority or open bridge dependency. The load-bearing step is a direct finite-matrix construction and Schur-complement computation from the declared model, with no external comparator, fitted scale, or cross-note import. The note's scope is properly bounded: it claims finite-box dense, decaying range growth and explicitly does not claim an infinite-lattice all-shell theorem.
+- **auditor confidence:** high
+
+### `d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D2_ORBITAL_SUSCEPTIBILITY_SIGN_REGIONS_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D2_ORBITAL_SUSCEPTIBILITY_SIGN_REGIONS_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite sampled-grid statement for the free staggered square-lattice model: m∈{0.2,0.5}, T∈{0.2,0.4}, μ_ch∈{0.0,0.5,1.0,1.5,2.0}, rational fluxes q∈{16,24,32}, exact Harper spectra, and Gauss-Legendre quadrature; no continuum, unsampled-interval, or continuum-QFT claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-014443-a1bd84b022-d2_orbital_susceptibility_si`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The plaquette-field susceptibility χ(q)=2[Ω(B_q)-Ω(0)]/B_q² with B_q=2π/q, q∈{16,24,32}, Richardson-extrapolates to negative χ on the sampled μ_ch grid {0.0,0.5,1.0,1.5} and positive χ at μ_ch=2.0 for both sampled masses and temperatures.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the Harper Hamiltonian, the independent folded B=0 spectrum, the grand-potential integral, χ normalization, and the B² Richardson extrapolation directly rather than importing or hard-coding the asserted signs. The audited conclusion follows for the sampled grid only.
+- **rationale:** The load-bearing signs are produced by first-principles spectral computation inside the runner, not by a numerical table copied from the note or another authority. The formula inventory checks out on the restricted packet: χ=2ΔΩ/B² is the Ω″ normalization, the q=24,32 Richardson formula cancels a leading B² error term, and the B=0/gauge-origin controls test the relevant normalizations. All asserted sampled signs are resolved with margins far above the stated eps floors, and there are no cited non-retained dependencies or external comparator inputs. The clean verdict is limited to the bounded sampled-grid claim.
 - **auditor confidence:** high
 
 ### `d3_upper_bound_import_scope_gate_note_2026-06-06`

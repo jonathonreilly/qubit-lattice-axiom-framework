@@ -50350,10 +50350,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12"
     },
     {
@@ -50375,6 +50371,10 @@
     {
       "from": "repo.front_door_status",
       "to": "exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -96685,16 +96685,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12",
         "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12",
         "d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12",
         "declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12",
         "doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12",
         "energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12",
-        "exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11"
+        "exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11",
+        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1c33210eb8b520a19e5772acbd2e50a96fbdb7d689f24b8f361ae1ada4b94b47",
+      "note_hash": "eb9e60e4e6b337273d88409d8da43b0cbc4e36d6319d8095cc6f4d9e521e669f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

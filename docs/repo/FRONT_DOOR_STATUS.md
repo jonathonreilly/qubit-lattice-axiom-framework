@@ -19,10 +19,10 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 878 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 38 |
-| Unaudited rows | 1500 |
+| Unaudited rows | 1501 |
 | Retained-pending-chain rows | 18 |
 | Audited conditional rows | 24 |
-| Audited renaming rows | 33 |
+| Audited renaming rows | 32 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 20 |
 
@@ -36,21 +36,21 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Total pending rows | 1532 |
 | Ready rows | 83 |
 | Cycle-break targets | 20 |
-| Critical pending | 358 |
+| Critical pending | 357 |
 | High pending | 261 |
-| Medium pending | 435 |
+| Medium pending | 436 |
 | Leaf pending | 478 |
 
 Next ready rows by queue order:
 
-- [`post_record_clock_rate_interface_2026-06-06`](../../docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md) - critical; audit_in_progress
 - [`record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) - critical; audit_in_progress
 - [`gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - critical; audit_in_progress
 - [`busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05`](../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`flavor_native_double_shift_corner_coupling_note_2026-05-30`](../../docs/FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md) - critical; audit_in_progress
 - [`gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06`](../../docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - critical; audit_in_progress
-- [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
 - [`record_function_finite_sector_algebra_2026-06-05`](../../docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md) - critical; audit_in_progress
+- [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
+- [`magnitude_temporal_factor_is_count_not_rate_2026-06-06`](../../docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

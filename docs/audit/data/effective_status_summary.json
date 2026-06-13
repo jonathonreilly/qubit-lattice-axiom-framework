@@ -123,7 +123,7 @@
     "audited_conditional": 24,
     "audited_failed": 1,
     "audited_numerical_match": 13,
-    "audited_renaming": 33,
+    "audited_renaming": 32,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
     "decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 5,
@@ -158,7 +158,7 @@
     "retained_bounded": 878,
     "retained_no_go": 207,
     "retained_pending_chain": 18,
-    "unaudited": 1500
+    "unaudited": 1501
   },
   "retained_pending_chain_count": 18,
   "retained_pending_chain_examples": [

@@ -1,0 +1,207 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d3_step2_range_growth_period_class_2026_06_12.py
+runner_sha256: 884ba55066da9765297904dd17407dec37da15abd7bdb18e4fed26acc6ffc5c4
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 7.38
+status: ok
+----- stdout -----
+S1 d=3 step-2 range behavior at E=0
+parameters: d=3, t=1.0, mu=5.0, L_values=(8, 10, 12, 14)
+retained chart R_L: (a,b,c) -> (x,y,z)=(a,b,2c-a-b) mod L, with a,b mod L and c mod L/2.
+synthetic second reassignment: eliminate a odd and keep a even in R_L; this x-parity split is synthetic, not inherited from the first checkerboard.
+step-2 output chart K_L: (A,B,C)=(a/2,b,c), with periods (L/2,L,L/2); shell d2 values below use this chart.
+PASS: step-1 dense Schur matches landed closed form :: L=8, max_abs_error=0.000e+00, tol=1.0e-12
+PASS: step-1 eliminated block is diagonal :: L=8, max_offdiag=0.000e+00
+S1b shell table L=8 (step-2 chart d2, max |coupling|):
+  d2=  0  max_abs=3.2325980279067830e+00
+  d2=  1  max_abs=7.5322071744240682e-01
+  d2=  2  max_abs=7.5322071744240682e-01
+  d2=  3  max_abs=1.9781586289358333e-01
+  d2=  4  max_abs=9.2560813799203986e-02
+  d2=  5  max_abs=4.3244524488374647e-01
+  d2=  6  max_abs=1.9781586289358327e-01
+  d2=  8  max_abs=9.2560813799204000e-02
+  d2=  9  max_abs=1.3268611944368705e-01
+  d2= 10  max_abs=7.9706959706959790e-02
+  d2= 11  max_abs=4.9230769230769300e-02
+  d2= 12  max_abs=2.0380362671384367e-02
+  d2= 13  max_abs=7.9706959706959776e-02
+  d2= 14  max_abs=4.9230769230769293e-02
+  d2= 16  max_abs=2.5791418623394291e-02
+  d2= 17  max_abs=4.1840469401968110e-02
+  d2= 18  max_abs=4.1990950226244390e-02
+  d2= 20  max_abs=6.6853105614715594e-02
+  d2= 21  max_abs=2.7313880556313095e-02
+  d2= 24  max_abs=9.3893238924033732e-03
+PASS: S1a step-2 eliminated block has internal couplings at L=8 :: max_offdiag(h_dd)=4.0000000000000002e-01, min_required=1.0e-12
+PASS: step-2 eliminated block is invertible at L=8 :: min_singular(h_dd)=9.9999999999999989e-01
+S1b shell table L=10 (step-2 chart d2, max |coupling|):
+  d2=  0  max_abs=3.2365885097472606e+00
+  d2=  1  max_abs=7.4832497863019287e-01
+  d2=  2  max_abs=7.4832497863019276e-01
+  d2=  3  max_abs=1.9264013390138593e-01
+  d2=  4  max_abs=8.5147140977396465e-02
+  d2=  5  max_abs=4.2580790389562462e-01
+  d2=  6  max_abs=1.9264013390138582e-01
+  d2=  8  max_abs=8.5147140977396507e-02
+  d2=  9  max_abs=1.2673125398934312e-01
+  d2= 10  max_abs=6.7947745433867432e-02
+  d2= 11  max_abs=4.0627399588315342e-02
+  d2= 12  max_abs=1.7160330503112040e-02
+  d2= 13  max_abs=6.7947745433867418e-02
+  d2= 14  max_abs=4.0627399588315342e-02
+  d2= 16  max_abs=1.0252845039832004e-02
+  d2= 17  max_abs=2.3378665429324170e-02
+  d2= 18  max_abs=2.3519366189113645e-02
+  d2= 20  max_abs=3.8090997574405067e-02
+  d2= 21  max_abs=2.3519366189113638e-02
+  d2= 24  max_abs=4.3996796249882496e-03
+  d2= 25  max_abs=7.4225602638916758e-03
+  d2= 26  max_abs=1.2202757095900820e-02
+  d2= 27  max_abs=1.5058316821195860e-02
+  d2= 29  max_abs=2.3560751867830243e-02
+  d2= 30  max_abs=1.5058316821195860e-02
+  d2= 33  max_abs=2.8570155291436751e-03
+PASS: S1a step-2 eliminated block has internal couplings at L=10 :: max_offdiag(h_dd)=4.0000000000000002e-01, min_required=1.0e-12
+PASS: step-2 eliminated block is invertible at L=10 :: min_singular(h_dd)=1.0000000000000002e+00
+S1b shell table L=12 (step-2 chart d2, max |coupling|):
+  d2=  0  max_abs=3.2372618366619892e+00
+  d2=  1  max_abs=7.4747736396794529e-01
+  d2=  2  max_abs=7.4747736396794540e-01
+  d2=  3  max_abs=1.9184215222474466e-01
+  d2=  4  max_abs=8.3781826646731811e-02
+  d2=  5  max_abs=4.2466354235019110e-01
+  d2=  6  max_abs=1.9184215222474468e-01
+  d2=  8  max_abs=8.3781826646731838e-02
+  d2=  9  max_abs=1.2576544991017899e-01
+  d2= 10  max_abs=6.5868366817664059e-02
+  d2= 11  max_abs=3.9105809012915285e-02
+  d2= 12  max_abs=8.6812600392088528e-03
+  d2= 13  max_abs=6.5868366817664059e-02
+  d2= 14  max_abs=4.9345124538934207e-02
+  d2= 16  max_abs=7.1656241714957592e-03
+  d2= 17  max_abs=1.9791000077265617e-02
+  d2= 18  max_abs=2.2913588574287647e-02
+  d2= 19  max_abs=3.9105809012915278e-02
+  d2= 20  max_abs=3.3391665059361073e-02
+  d2= 21  max_abs=1.2429408932303012e-02
+  d2= 22  max_abs=7.2360675386540065e-03
+  d2= 24  max_abs=4.4125959242565221e-03
+  d2= 25  max_abs=1.9791000077265627e-02
+  d2= 26  max_abs=2.0379627317990267e-02
+  d2= 27  max_abs=8.8202435687516727e-03
+  d2= 29  max_abs=1.3771963882790832e-02
+  d2= 30  max_abs=8.8202435687516727e-03
+  d2= 33  max_abs=2.3950638102385774e-03
+  d2= 34  max_abs=1.3771963882790828e-02
+  d2= 35  max_abs=8.8202435687516727e-03
+  d2= 36  max_abs=2.2078936311988664e-03
+  d2= 37  max_abs=3.6500327359420522e-03
+  d2= 38  max_abs=5.1349522612907173e-03
+  d2= 40  max_abs=7.7577032134423952e-03
+  d2= 41  max_abs=7.0801799567447761e-03
+  d2= 43  max_abs=3.6604251519439357e-04
+  d2= 44  max_abs=1.5922406365095091e-03
+  d2= 45  max_abs=1.0875516185338064e-02
+  d2= 46  max_abs=5.1349522612907164e-03
+  d2= 49  max_abs=8.8416340003227357e-04
+  d2= 54  max_abs=3.0494707169566006e-04
+PASS: S1a step-2 eliminated block has internal couplings at L=12 :: max_offdiag(h_dd)=4.0000000000000002e-01, min_required=1.0e-12
+PASS: step-2 eliminated block is invertible at L=12 :: min_singular(h_dd)=9.9999999999999956e-01
+S1b shell table L=14 (step-2 chart d2, max |coupling|):
+  d2=  0  max_abs=3.2373838958607379e+00
+  d2=  1  max_abs=7.4732149222163946e-01
+  d2=  2  max_abs=7.4732149222163935e-01
+  d2=  3  max_abs=1.9170506806005891e-01
+  d2=  4  max_abs=8.3521093207154215e-02
+  d2=  5  max_abs=4.2445373751393345e-01
+  d2=  6  max_abs=1.9170506806005883e-01
+  d2=  8  max_abs=8.3521093207154284e-02
+  d2=  9  max_abs=1.2559363560986397e-01
+  d2= 10  max_abs=6.5482943449593448e-02
+  d2= 11  max_abs=3.8819184112713449e-02
+  d2= 12  max_abs=8.4620168008545365e-03
+  d2= 13  max_abs=6.5482943449593448e-02
+  d2= 14  max_abs=4.9141252438002693e-02
+  d2= 16  max_abs=6.5029813592421583e-03
+  d2= 17  max_abs=1.9090944474286276e-02
+  d2= 18  max_abs=2.2477071920916521e-02
+  d2= 19  max_abs=3.8819184112713442e-02
+  d2= 20  max_abs=3.2557708306505659e-02
+  d2= 21  max_abs=1.1934970509878354e-02
+  d2= 22  max_abs=7.0051715200579300e-03
+  d2= 24  max_abs=2.8410111993053093e-03
+  d2= 25  max_abs=1.9090944474286289e-02
+  d2= 26  max_abs=1.9798220442089873e-02
+  d2= 27  max_abs=7.6376722476689321e-03
+  d2= 29  max_abs=1.2009082720940069e-02
+  d2= 30  max_abs=7.6376722476689399e-03
+  d2= 33  max_abs=1.9664676854348989e-03
+  d2= 34  max_abs=1.2009082720940067e-02
+  d2= 35  max_abs=7.6376722476689408e-03
+  d2= 36  max_abs=9.1423769577139670e-04
+  d2= 37  max_abs=2.1165965658046897e-03
+  d2= 38  max_abs=3.0680654471749928e-03
+  d2= 40  max_abs=4.6080738711780679e-03
+  d2= 41  max_abs=4.1930774745304218e-03
+  d2= 43  max_abs=2.8702580388099139e-04
+  d2= 44  max_abs=1.2229090438345112e-03
+  d2= 45  max_abs=6.3962857947875819e-03
+  d2= 46  max_abs=4.1930774745304227e-03
+  d2= 49  max_abs=9.4812227686084959e-04
+  d2= 50  max_abs=1.1097323091456466e-03
+  d2= 51  max_abs=1.7107747434975031e-03
+  d2= 53  max_abs=2.4944271165735638e-03
+  d2= 54  max_abs=2.8427898439524740e-03
+  d2= 57  max_abs=9.0532565936407160e-04
+  d2= 58  max_abs=4.2342006061234028e-03
+  d2= 59  max_abs=2.8427898439524735e-03
+  d2= 62  max_abs=5.8707581108332545e-04
+  d2= 67  max_abs=9.9601579469419765e-05
+PASS: S1a step-2 eliminated block has internal couplings at L=14 :: max_offdiag(h_dd)=4.0000000000000002e-01, min_required=1.0e-12
+PASS: step-2 eliminated block is invertible at L=14 :: min_singular(h_dd)=9.9999999999999867e-01
+S1b step-1 K-K shell family in step-2 chart: [0, 1, 2, 5]
+S1b L=12 shells beyond step-1 family: [3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 29, 30, 33, 34, 35, 36, 37, 38, 40, 41, 43, 44, 45, 46, 49, 54]
+PASS: S1b range growth beyond step-1 family :: new_shell_count=37
+S1b wraparound/size probe shell-set comparison:
+  L=8 only vs L=10:  []
+  L=10 only vs L=12: []
+  L=12 only vs L=10: [19, 22, 34, 35, 36, 37, 38, 40, 41, 43, 44, 45, 46, 49, 54]
+PASS: S1b finite tables are box-limited :: shell_counts={8:20, 10:26, 12:41}
+S1b near-shell convergence probe d2<= 6:
+  d2=  0 values=(3.2325980279067830e+00, 3.2365885097472606e+00, 3.2372618366619892e+00) max_rel_delta=1.233e-03
+  d2=  1 values=(7.5322071744240682e-01, 7.4832497863019287e-01, 7.4747736396794529e-01) max_rel_delta=6.500e-03
+  d2=  2 values=(7.5322071744240682e-01, 7.4832497863019276e-01, 7.4747736396794540e-01) max_rel_delta=6.500e-03
+  d2=  3 values=(1.9781586289358333e-01, 1.9264013390138593e-01, 1.9184215222474466e-01) max_rel_delta=2.616e-02
+  d2=  4 values=(9.2560813799203986e-02, 8.5147140977396465e-02, 8.3781826646731811e-02) max_rel_delta=8.010e-02
+  d2=  5 values=(4.3244524488374647e-01, 4.2580790389562462e-01, 4.2466354235019110e-01) max_rel_delta=1.535e-02
+  d2=  6 values=(1.9781586289358327e-01, 1.9264013390138582e-01, 1.9184215222474468e-01) max_rel_delta=2.616e-02
+PASS: S1b near shells CONVERGE on the L=12 vs L=14 pair (sub-1% measured; the L=8 table is box-limited in d=3 and disclosed as such, per the d=2 lesson) :: near_shells=[0, 1, 2, 3, 4, 5, 6], measured_max_rel_delta_12v14=3.122e-03; L8-box delta=8.010e-02, tol=5.0e-02
+S1b far-tail L-dependence disclosure:
+  L=8: far_shell_count=13, largest_far_shells=[13, 14, 16, 17, 18, 20, 21, 24]
+  L=10: far_shell_count=19, largest_far_shells=[21, 24, 25, 26, 27, 29, 30, 33]
+  L=12: far_shell_count=34, largest_far_shells=[40, 41, 43, 44, 45, 46, 49, 54]
+  L=14: far_shell_count=42, largest_far_shells=[51, 53, 54, 57, 58, 59, 62, 67]
+PASS: S1b far tail changes with finite box size :: L=8/L=10 shell sets differ from L=12 in the disclosed far tail
+S1b distance-band maxima:
+  L=8: near_1_5=7.5322071744240682e-01, mid_6_14=1.9781586289358327e-01, far_15_plus=6.6853105614715594e-02
+PASS: S1b band-wise magnitude decay at L=8 :: near=7.532e-01, mid=1.978e-01, far=6.685e-02, nonzero_tol=1.0e-12
+  L=10: near_1_5=7.4832497863019287e-01, mid_6_14=1.9264013390138582e-01, far_15_plus=3.8090997574405067e-02
+PASS: S1b band-wise magnitude decay at L=10 :: near=7.483e-01, mid=1.926e-01, far=3.809e-02, nonzero_tol=1.0e-12
+  L=12: near_1_5=7.4747736396794540e-01, mid_6_14=1.9184215222474468e-01, far_15_plus=3.9105809012915278e-02
+PASS: S1b band-wise magnitude decay at L=12 :: near=7.475e-01, mid=1.918e-01, far=3.911e-02, nonzero_tol=1.0e-12
+  L=14: near_1_5=7.4732149222163946e-01, mid_6_14=1.9170506806005883e-01, far_15_plus=3.8819184112713442e-02
+PASS: S1b band-wise magnitude decay at L=14 :: near=7.473e-01, mid=1.917e-01, far=3.882e-02, nonzero_tol=1.0e-12
+S1c PERIOD-CLASS DICHOTOMY H_kd_after after even-d2 truncation:
+  L=8: K_periods=(4, 8, 4), max_abs_after=0.0000000000000000e+00
+  L=10: K_periods=(5, 10, 5), max_abs_after=7.4832497863019298e-01
+  L=12: K_periods=(6, 12, 6), max_abs_after=0.0000000000000000e+00
+  L=14: K_periods=(7, 14, 7), max_abs_after=7.4732149222164002e-01
+PASS: S1c next-checkerboard H_kd is nonzero before even-d2 truncation :: L=8, max_abs_before=7.5322071744240682e-01
+PASS: S1c PERIOD-CLASS DICHOTOMY: protection HOLDS for L=0 mod 4 :: L=8 max_abs_after=0.000e+00, L=12 max_abs_after=0.000e+00, tol=1.0e-14
+PASS: S1c PERIOD-CLASS DICHOTOMY: protection FAILS for L=2 mod 4 because K periods (L/2,L,L/2) have odd components :: L=10 max_abs_after=7.4832497863019298e-01, L=14 max_abs_after=7.4732149222164002e-01, threshold=5.0e-1
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

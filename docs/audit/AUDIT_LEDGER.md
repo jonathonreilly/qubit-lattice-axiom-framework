@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 18 |
 | open_gate | 39 |
-| unaudited | 1412 |
+| unaudited | 1411 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1333 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 56 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1729 |
+| `unaudited` | 1728 |
 
 | claim_type | count |
 |---|---:|
@@ -117,7 +117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1271 | 38.81 | `audited_clean` | **retained_bounded** |
 | 15 | `alpha_s_derived_note` | bounded_theorem | critical | 884 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 737 | 38.03 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1363 | 36.91 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1362 | 36.91 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1138 | 36.15 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 929 | 34.86 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
@@ -1481,6 +1481,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7309,6 +7310,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The C_3-invariant K-odd Hermitian operator space is span{A}, and [S,A]=0, so the A-current direction is block-diagonal/partition-blind; any T-odd selector non-commuting with S must break C_3.  _(class `A`)_
 - **chain closes:** True — The finite C_3 algebra gives K-real invariants span_R{I,S}, eig(S)={2,-1,-1}, eig(A)={0,±sqrt(3)}, [S,A]=0, H-Hbar=2 Im(b) A, and C_3-invariant K-odd Hermitians = span{A}. The conclusion is explicitly scoped to the A-current/emergent-time route and leaves C_3-breaking T-odd sources open.
 - **rationale:** The load-bearing work is exact finite-dimensional algebra over the provided C_3 matrices and does not depend on fitted values, external comparators, or definitional renaming. The one-hop cited authorities in the packet are retained-grade, and the no-go discipline scope is narrow rather than global: it does not claim δ=0 is underivable in general. The runner source genuinely computes the listed algebraic checks, and an independent projector calculation confirms the key identities.
+- **auditor confidence:** high
+
+### `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic bounded interval for g_2(v=246 GeV) from u_0 in [0.96,0.98], b_2=19/6, 1/alpha_2^bare=16*pi, alpha_tadpole=alpha_bare/u_0^2, L=38.44, and the admitted one-loop RGE.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260613-020541-c4fa5f1f13-g_2_v_bounded_interval_narro`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substitute the lattice/tadpole boundary value 1/alpha_2(M_Pl) = 16*pi*u_0^2 into the admitted one-loop RGE to get 1/alpha_2(v) = 16*pi*u_0^2 - (b_2/(2*pi))*L, then invert to g_2(v) = sqrt(4*pi/(16*pi*u_0^2 - (b_2/(2*pi))*L)).  _(class `A`)_
+- **chain closes:** True — The algebraic substitution, endpoint reversal, positivity of the denominator, and displayed decimal endpoints check out independently of the runner. Closure is only over the declared retained inputs plus the named external admissions, not a derivation of those admissions.
+- **rationale:** The runner source performs genuine symbolic and numeric checks rather than merely printing constants, and an independent calculation reproduces g_lo = 0.659392836186702 and g_hi = 0.682834304553707. The load-bearing step is class A algebra over supplied inputs. However, the result imports X1, X6, and X7 as explicit named external admissions, and the restricted packet does not close those inputs as retained framework derivations. Therefore the bounded implication is valid conditionally but is not eligible for audited_clean under the supplied rubric.
 - **auditor confidence:** high
 
 ### `g_bare_canonical_convention_narrow_theorem_note_2026-05-02`

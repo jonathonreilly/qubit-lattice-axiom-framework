@@ -3,7 +3,7 @@ runner: scripts/gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06
 runner_sha256: e068e0d8b9285fd595041213604147d914f9624f18d3672d95b0d0e4a4a6f384
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.13
+elapsed_sec: 1.38
 status: ok
 ----- stdout -----
 Gauge-vacuum plaquette adjacent-word contraction derived re-read
@@ -43,12 +43,12 @@ PASS: one-word P(6) gate reproduces the one-word ladder anchor
 ================================================================================================
 Part 4: derived two-word re-read
 ================================================================================================
-two-word matrix_element/same/trivial_slice: dim=625, eig=0.156078513772, residual=2.082e-17, psi_min=-4.592e-40
+two-word matrix_element/same/trivial_slice: dim=625, eig=0.156078513772, residual=2.776e-17, psi_min=-5.510e-40
 rho10=0.211265869825, rho11=0.162259799480, P(6)=0.429196712321
 PASS: two-word derived Perron residual is small
-      residual=2.082e-17
+      residual=2.776e-17
 PASS: two-word derived Perron vector is nonnegative up to tolerance
-      psi_min=-4.592e-40
+      psi_min=-5.510e-40
 PASS: two-word derived readout reproduces the expected finite P(6)
       P=0.429196712321
 PASS: two-word derived rho10/rho11 reproduce the expected finite readout
@@ -94,7 +94,7 @@ PASS: derived finite readouts are positive
 Part R: reviewer checks — measured stationarity and non-factorization
 ================================================================================================
 PASS: measured stationarity: derived trivial-slice readout agrees at two and three words
-      P2=0.429196712321, P3=0.429196712321, |diff|=0.000e+00
+      P2=0.429196712321, P3=0.429196712321, |diff|=5.551e-17
 PASS: non-factorization guard: the three-word Perron vector is NOT rank-one across the outer word
       second/top singular ratio = 2.419e-02 -- the stationarity is a property of the slice components, not of vector factorization
 PASS: measured slice proportionality: the all-trivial-except-word0 slice of the three-word Perron vector is a scalar multiple of the two-word slice

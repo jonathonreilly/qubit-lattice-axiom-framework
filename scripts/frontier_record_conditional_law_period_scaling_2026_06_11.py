@@ -41,14 +41,13 @@ PANEL-CORRECTED against the FULL L=3 baseline set):
        period law, convergence/concentration, any CLT premise, L >= 5 or Z^3 behavior
        (rings only -- geometry disclosed); all magnitudes instance/seed-labeled.
 
-Machinery and guards inherited from #3554/#3507 (exact Born-weighted outcome tree;
-SVD polar; rank guards; the fixed seeded 300-draw label-permutation diagnostic armed at
-every gated event; the no-prune parent-alignment guard).  Conditionality inherited:
-the Born derived-chain cap
-(assembly note UNAUDITED on the live ledger at the prior landing; statuses volatile --
-the audit lane grades); named instruments (eps = 0.6 supplied); supplied C^3 carrier;
-named hopping (tau = 0.35); guarded full-rank domain.  Discrete-time (retained R1
-boundaries untouched).  The U(1) factor is NOT identified with a physical gauge field.
+Historical context from #3554/#3507 names the route vocabulary, but this runner
+does not import their audit status as a theorem premise. The source-positive is
+only the finite runner-defined diagnostic: explicit sparse Fock evolution,
+SVD-polar determinant readout, fixed seeds/depths/occupancies, and the fixed seeded
+300-draw label-permutation diagnostic. Named instruments (eps = 0.6), supplied
+C^3 carrier, named hopping (tau = 0.35), and discrete time are finite diagnostic
+inputs here. The U(1) factor is NOT identified with a physical gauge field.
 No new axiom/primitive/measure/weight; r untouched.
 
 Run: python3 scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py
@@ -350,6 +349,21 @@ check(
     and "finite-sample upper confidence bound" in note_text
     and "Monte-Carlo-free null theorem" in note_text,
 )
+note_flat = " ".join(note_text.split())
+check(
+    "source note rescopes dependencies to finite runner-defined diagnostic",
+    "dependency-edge rescope repair" in note_flat
+    and "does not use the #3554 fixed-prefix-`k` packet" in note_flat
+    and "as load-bearing one-hop authorities" in note_flat
+    and "current source-positive is exactly the runner-defined diagnostic" in note_flat,
+)
+check(
+    "source note forbids promotion to upstream framework laws",
+    "must not cite this packet as a retained derivation of the #3554 fixed-prefix-`k` law" in note_flat
+    and "the #3507 Born-weighted trajectory/readout chain" in note_flat
+    and "a physical `U(1)` gauge field" in note_flat
+    and "all-permutations null theorem" in note_flat,
+)
 
 # ===========================================================================
 print("=" * 78)
@@ -367,11 +381,10 @@ print("  seeds + a 3/3 half-filling control in-runner) -- consistent with, not")
 print("  establishing, strengthening with the period.  NOT claimed: gap growth as a")
 print("  period law, concentration in the large-period limit, any CLT premise,")
 print("  L>=5/Z^3 behavior, or gap universality (instance/seed-labeled).  Guards")
-print("  inherited (#3554/#3507: exact tree, SVD polar, rank/no-prune, the fixed seeded")
-print("  300-draw sampled-null diagnostic armed at every gated event).  No exhaustive")
-print("  permutation-null p95, certified finite-sample bound, or MC-free null theorem")
-print("  is claimed.  Born cap inherited (audit lane grades).  The U(1) factor is NOT")
-print("  identified with a physical gauge field.")
+print("  are runner-local finite diagnostics, not inherited #3554/#3507/Born theorem")
+print("  premises.  No exhaustive permutation-null p95, certified finite-sample bound,")
+print("  or MC-free null theorem is claimed.  The U(1) factor is NOT identified with a")
+print("  physical gauge field.")
 print("  Discrete-time (retained R1 boundaries untouched).  No new axiom/primitive/")
 print("  measure/weight; r untouched.")
 if FAIL:

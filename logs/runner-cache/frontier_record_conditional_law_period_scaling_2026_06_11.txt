@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py
-runner_sha256: 4331af553f43ab6026f82bbdd716c29c3eea9803dbd232d49181aefec6a229f6
+runner_sha256: f1c7f428b0b1ed5450ba5a7bbf6750b0882ab1be980562a1b47fd7ee9d9d17bf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 23.52
+elapsed_sec: 18.47
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -41,8 +41,10 @@ Part 4  the two-point scaling verdict (labeled as such)
   [PASS] THE LOAD-BEARING POSITIVE: the fixed-k profile is MONOTONE at the most-spread row of EVERY tested L=4 seed (7/7 K=7 seeds + a K=6 half-filling control) -- seed-robust monotonicity at the larger period; consistent with, NOT establishing, strengthening (at L=3 monotonicity was event-specific)
   [PASS] source note declares fixed seeded 300-draw sampled-null scope
   [PASS] source note forbids exhaustive, certified-bound, or MC-free null theorem
+  [PASS] source note rescopes dependencies to finite runner-defined diagnostic
+  [PASS] source note forbids promotion to upstream framework laws
 ==============================================================================
-TOTAL: PASS=16 FAIL=0
+TOTAL: PASS=18 FAIL=0
 ==============================================================================
 SCOPE: scales #3554's named object (the fixed-prefix-k conditional law) from
   L=3 to L=4 (rings; Z^3 untested -- geometry disclosed; two periods = a
@@ -56,11 +58,10 @@ SCOPE: scales #3554's named object (the fixed-prefix-k conditional law) from
   establishing, strengthening with the period.  NOT claimed: gap growth as a
   period law, concentration in the large-period limit, any CLT premise,
   L>=5/Z^3 behavior, or gap universality (instance/seed-labeled).  Guards
-  inherited (#3554/#3507: exact tree, SVD polar, rank/no-prune, the fixed seeded
-  300-draw sampled-null diagnostic armed at every gated event).  No exhaustive
-  permutation-null p95, certified finite-sample bound, or MC-free null theorem
-  is claimed.  Born cap inherited (audit lane grades).  The U(1) factor is NOT
-  identified with a physical gauge field.
+  are runner-local finite diagnostics, not inherited #3554/#3507/Born theorem
+  premises.  No exhaustive permutation-null p95, certified finite-sample bound,
+  or MC-free null theorem is claimed.  The U(1) factor is NOT identified with a
+  physical gauge field.
   Discrete-time (retained R1 boundaries untouched).  No new axiom/primitive/
   measure/weight; r untouched.
 

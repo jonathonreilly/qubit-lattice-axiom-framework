@@ -303,6 +303,24 @@ eliminate admission; it formally exposes the conditional chain. It
 introduces no new repo-wide tag, no new "cosmological backdrop class",
 no new "FRW landing tier", and no new theorem class.
 
+## Downstream Source-Boundary Firewall
+
+This open gate may not be cited downstream as a retained derivation of any of
+the following:
+
+- C1, C2, or C3;
+- FRW dynamics;
+- entropy conservation or adiabatic expansion;
+- observational cosmology parameters;
+- parent theorem status.
+
+C1-C3 also may not be moved into a registry, admission file, or premise file
+by citing this packet. Such a move requires a separate source note, runner,
+review, and independent audit. Future use must separately prove or explicitly
+admit the cosmological principle, adiabatic expansion / entropy conservation,
+matter and radiation EOS labels, FRW dynamics, observational-parameter
+bridges, and any parent-status closure.
+
 ## Verification
 
 Run:
@@ -314,6 +332,6 @@ PYTHONPATH=scripts python3 scripts/frontier_frw_adiabatic_expansion_cosmological
 Expected:
 
 ```text
-TOTAL: PASS=48 FAIL=0
+TOTAL: PASS=57 FAIL=0
 VERDICT: open gate passes; FRW + adiabatic backdrop decomposition is recorded as an unresolved C1-C3 premise boundary. No new admissions are introduced; no row's effective status is changed.
 ```

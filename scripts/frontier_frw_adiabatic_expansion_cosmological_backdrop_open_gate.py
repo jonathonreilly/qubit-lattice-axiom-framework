@@ -246,6 +246,35 @@ def part5_admission_boundary_recorded() -> None:
         )
 
 
+def part6_downstream_source_boundary_firewall() -> None:
+    print("\n== Part 6: downstream source-boundary firewall ==")
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    note_normalized = " ".join(note.split())
+    required = [
+        "Downstream Source-Boundary Firewall",
+        "may not be cited downstream as a retained derivation",
+        "C1-C3 also may not be moved into a registry, admission file, or premise file",
+        "Future use must separately prove or explicitly admit",
+    ]
+    for phrase in required:
+        check(
+            f"source contains downstream firewall phrase: {phrase}",
+            phrase in note_normalized,
+        )
+    blocked_targets = [
+        "C1, C2, or C3",
+        "FRW dynamics",
+        "entropy conservation or adiabatic expansion",
+        "observational cosmology parameters",
+        "parent theorem status",
+    ]
+    for phrase in blocked_targets:
+        check(
+            f"firewall blocks downstream retained use for: {phrase}",
+            phrase in note_normalized,
+        )
+
+
 def part6_result(fw_set: set[str], supplied_set: set[str]) -> None:
     print("\n== Result ==")
     print("Framework-derivable / conditional-on-retained-chain ingredients:")
@@ -269,6 +298,7 @@ def main() -> int:
     part3_no_audit_data_touch()
     part4_no_lattice_or_fit_inputs()
     part5_admission_boundary_recorded()
+    part6_downstream_source_boundary_firewall()
     part6_result(fw_set, admitted_set)
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:

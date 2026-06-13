@@ -1,0 +1,19 @@
+loop: frw-backdrop-open-gate-firewall-20260613
+started: "2026-06-13"
+base: origin/main@704017fe6
+branch: physics-loop/frw-backdrop-open-gate-firewall-20260613
+target_claim_id: frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28
+actual_current_surface_status: open
+target_status: source_side_firewall
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_results_edited: false
+repo_authority_surfaces_edited: false
+files_touched:
+  - docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md
+  - scripts/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.py
+  - logs/runner-cache/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.txt
+  - .claude/science/physics-loops/frw-backdrop-open-gate-firewall-20260613/*
+runner_result: "TOTAL: PASS=57 FAIL=0"
+next_exact_action: "Submit PR for reviewer extraction and independent re-audit if needed."
+stop_condition: "PR opened and verified; no audit verdict applied."

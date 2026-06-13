@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d3_checkerboard_step1_parity_lemma_2026_06_12.py
+runner_sha256: 98b76450d68461d1be1ab982f0c4f9d1494688c608710b7c0272a2a816bba6c2
+timeout_sec: 3000
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+PASS: ANCHOR reproduction: periodic cubic NN degree and parity split
+PASS: anti-fabrication: generated step-1 couplings are nonzero
+PASS: T1a h_oo diagonality on odd sublattice
+PASS: T1b path table: diag=6, d2=2 has 2 paths, d2=4 has 1 path
+PASS: T1b closed form diag prime equals mu - 6 t^2 / mu
+PASS: T1b signed coefficient table for d2=2 and d2=4 shells
+PASS: T1b no generated couplings beyond measured d2=2 and d2=4 shells
+PASS: T1b L=8 vs L=6 wraparound agreement for step-1 shell data
+PASS: T1c algebraic d=3 parity lemma for |d|_inf <= 4
+PASS: T1c operational next-checkerboard kept-to-decimated block is zero
+PASS: T1d E-covariance: mu denominator shifts to mu - E at E=0.3
+PASS: T1e retained-site resolvent is preserved by step-1 Schur complement
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

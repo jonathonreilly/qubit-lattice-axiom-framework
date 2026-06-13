@@ -18,16 +18,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 212 |
+| **retained** | 211 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 870 |
-| _retained_pending_chain_ | 19 |
+| **retained_bounded** | 868 |
+| _retained_pending_chain_ | 20 |
 | open_gate | 38 |
-| unaudited | 1513 |
+| unaudited | 1514 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 20 |
-| `audited_clean` | 1296 |
-| `audited_conditional` | 23 |
+| `audit_in_progress` | 19 |
+| `audited_clean` | 1295 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1830 |
+| `unaudited` | 1831 |
 
 | claim_type | count |
 |---|---:|
@@ -85,7 +85,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 856 |
 | `leaf` | 1372 |
 
-- **Retained pending chain closure:** 19
+- **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
 
 ### Runner classification (static heuristic)
@@ -142,8 +142,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1018,7 +1017,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_three_flux_holonomy_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1462,6 +1460,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `pmns_graph_first_axis_alignment_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13985,6 +13984,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing step is a direct finite-dimensional identity: T_sigma permutes the single-bit-flip basis vectors X_mu, and its V_1 block is exactly the corresponding 3 by 3 permutation matrix. The runner source genuinely constructs the shifts, basis vectors, factor-permutation matrices, restrictions, and invariant Hermitian projections; it does not merely print constants or import a contested premise. The cited authorities in the packet are marked retained, and the source remains within the bounded bridge scope rather than claiming active-sector assignment or numerical PMNS values.
 - **auditor confidence:** high
 
+### `pmns_graph_first_axis_alignment_note`
+
+- **Note:** [`PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md`](../../docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited scope is the bounded graph-first claim that the hw=1 cube-shift selector has three coordinate-axis minima with residual Z_2 stabilizer and that the selected-axis residual action yields the active aligned Hermitian core form.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260613T224921Z-pmns_graph_first_axis_alignment_`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Pushing the selected graph axis and its residual Z2 stabilizer onto the active Hermitian triplet lane gives the residual law P_23 H P_23 = H, hence the aligned core form.  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / A; J2: second / audited_conditional / bounded_theorem / A; J3: second / audited_conditional / bounded_theorem / A; J4: second / audited_conditional / bounded_theorem / A; J5: second / audited_conditional / bounded_theorem / A. Majority rationale: J1: The selector minimum and residual-stabilizer algebra close, and the bridge authority supports identifying the residual action with P_23 on V_1. But an independent Hermitian 3x3 check gives P_23 H P_23 = H as [[a,z,z],[z*,c,d],[z*,d,c]] with z complex and d real, so the displayed real four-parameter symmetric core needs an additional real-structure, phase-gauge, or CP premise not supplied in the packet. | J2: The selector minima, residual stabilizer, and bridge from the graph-side residual Z2 to P23 action on V1 close as finite algebraic statements from the restricted packet. The contested last step does not close as written: P23 H P23 = H for a general Hermitian 3x3 matrix leaves a five-real-parameter family [[a,z,z],[z*,c,d],[z*,d,c]] with d real, while the note states the real-symmetric four-parameter special case [[a,b,b],[b,c,d],[b,d,c]] witho... | J3: A direct check with a general Hermitian 3x3 matrix shows that P23 H P23 = H gives the five-real-parameter form [[a,x,x],[x*,c,d],[x*,d,c]], with x complex and d real. The displayed four-real-parameter real-symmetric core follows only after an extra real-structure, CP, or phase-gauge premise, and the runner only checks a preconstructed real aligned core. The bridge from graph-axis residual Z2 to P23 is supported, but the final normal-form reduc... | J4: The independent P23 calculation gives a five-real-parameter Hermitian invariant family with a generally complex coupling between the fixed axis and the swapped pair. The displayed real-symmetric four-parameter core follows only after an additional real-structure, CP, or phase-gauge premise, and the runner checks a preconstructed real core rather than deriving that reduction. | J5: The axis-minimum and residual-stabilizer statements close as finite algebra, and the supplied bridge note supports the identification of the selected-axis residual action with P_23 on V_1. The remaining load-bearing step is algebraic, but for a general Hermitian 3x3 matrix the constraint P_23 H P_23 = H allows a complex off-axis parameter, giving a five-real-parameter form rather than the displayed real-symmetric four-parameter core. The runne...
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / A; J2: second / audited_conditional / bounded_theorem / A; J3: second / audited_conditional / bounded_theorem / A; J4: second / audited_conditional / bounded_theorem / A; J5: second / audited_conditional / bounded_theorem / A. Majority rationale: J1: The selector minimum and residual-stabilizer algebra close, and the bridge authority supports identifying the residual action with P_23 on V_1. But an independent Hermitian 3x3 check gives P_23 H P_23 = H as [[a,z,z],[z*,c,d],[z*,d,c]] with z complex and d real, so the displayed real four-parameter symmetric core needs an additional real-structure, phase-gauge, or CP premise not supplied in the packet. | J2: The selector minima, residual stabilizer, and bridge from the graph-side residual Z2 to P23 action on V1 close as finite algebraic statements from the restricted packet. The contested last step does not close as written: P23 H P23 = H for a general Hermitian 3x3 matrix leaves a five-real-parameter family [[a,z,z],[z*,c,d],[z*,d,c]] with d real, while the note states the real-symmetric four-parameter special case [[a,b,b],[b,c,d],[b,d,c]] witho... | J3: A direct check with a general Hermitian 3x3 matrix shows that P23 H P23 = H gives the five-real-parameter form [[a,x,x],[x*,c,d],[x*,d,c]], with x complex and d real. The displayed four-real-parameter real-symmetric core follows only after an extra real-structure, CP, or phase-gauge premise, and the runner only checks a preconstructed real aligned core. The bridge from graph-axis residual Z2 to P23 is supported, but the final normal-form reduc... | J4: The independent P23 calculation gives a five-real-parameter Hermitian invariant family with a generally complex coupling between the fixed axis and the swapped pair. The displayed real-symmetric four-parameter core follows only after an additional real-structure, CP, or phase-gauge premise, and the runner checks a preconstructed real core rather than deriving that reduction. | J5: The axis-minimum and residual-stabilizer statements close as finite algebra, and the supplied bridge note supports the identification of the selected-axis residual action with P_23 on V_1. The remaining load-bearing step is algebraic, but for a general Hermitian 3x3 matrix the constraint P_23 H P_23 = H allows a complex off-axis parameter, giving a five-real-parameter form rather than the displayed real-symmetric four-parameter core. The runne...
+- **auditor confidence:** judicial
+
 ### `pmns_graph_first_cycle_frame_support_note`
 
 - **Note:** [`PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md`](../../docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md)
@@ -14062,19 +14074,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The finite matrix identities: conjugation by C sends (c_1,c_2,c_3) to (c_2,c_3,c_1), I_3 has forward-cycle coefficients (0,0,0), and S(A)=P_23 A^dagger P_23 has fixed locus c_1=conjugate(c_3) with c_2 real.  _(class `A`)_
 - **chain closes:** True — The bounded claim closes over the explicitly displayed finite matrices and maps with no direct dependencies. It does not close, and does not claim to close, any physical PMNS bridge or primitive derivation.
 - **rationale:** The source narrows the row to exactly three finite matrix identities and explicitly excludes the physical carrier, observable law, identity-block interpretation, graph-first swap derivation, PMNS value selection, angle prediction, physical mixing law, and derivation from primitives. The runner source defines the displayed matrices and computes the finite matrix maps; its load-bearing checks are A-class algebraic checks, while the remaining PASS lines are source-firewall text checks. No B/C/D physical, dependency, or comparator step is being ratified. The clean verdict applies only to the bounded raw-matrix scope.
-- **auditor confidence:** high
-
-### `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26`
-
-- **Note:** [`PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded composition bridge only: given the retained graph-first antiunitary sibling and retained-grade free-point identity decoration under the retained channel-value law parent, the two parent auditor-flagged algebraic premises are supplied in the restricted dependency chain and the remaining checks reduce to finite 3x3 matrix algebra. This does not audit or promote the broader physical PMNS spectrum, species interpretation, dm_leptogenesis selector, or continuum numeric claims.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given the retained antiunitary sibling and the retained-grade free-point identity sibling, the parent's two flagged premises are both supplied and the remaining cyclic-covariance, zero-cycle-coefficient, and swap-conjugation examples are direct 3x3 algebra.  _(class `A`)_
-- **chain closes:** True — The antiunitary dependency is audited_clean and retained; the free-point dependency is audited_decoration under the retained channel-value parent, which is retained-grade under the decoration policy. The primary runner reconstructs the finite matrix equalities and reports PASS=6 FAIL=0 without importing a physical spectrum or tuned comparator.
-- **rationale:** The audited claim is a narrow bounded composition statement, not a new PMNS physics theorem. Its two load-bearing imported premises are retained-grade in the restricted one-hop packet, and the local runner checks only explicit 3x3 algebra: P_23 A_fwd^dagger P_23 coefficient reversal, the free-point A_act=I_3 identity, zero forward-cycle coefficients on I_3, cyclic covariance, and P_23-fixed identity behavior. The no-go discipline gate finds no negative wall being ratified by this verdict; the prior bridge-target wording is used only to bound the positive composition repair. Residual risk is downstream scope drift: future citations must not treat this bridge as a physical PMNS spectrum, species, selector, or continuum-numeric closure.
 - **auditor confidence:** high
 
 ### `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16`

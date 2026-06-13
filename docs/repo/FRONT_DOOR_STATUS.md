@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1438 |
-| Retained-grade rows, including boxed decorations | 1341 |
+| Applied audit verdicts | 1437 |
+| Retained-grade rows, including boxed decorations | 1339 |
 | Retained positive theorems | 214 |
-| Retained no-go rows | 205 |
-| Retained bounded rows | 877 |
+| Retained no-go rows | 204 |
+| Retained bounded rows | 876 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 38 |
-| Unaudited rows | 1507 |
+| Unaudited rows | 1509 |
 | Retained-pending-chain rows | 17 |
 | Audited conditional rows | 22 |
 | Audited renaming rows | 32 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1533 |
-| Ready rows | 81 |
+| Total pending rows | 1534 |
+| Ready rows | 82 |
 | Cycle-break targets | 20 |
-| Critical pending | 353 |
+| Critical pending | 352 |
 | High pending | 261 |
 | Medium pending | 438 |
-| Leaf pending | 481 |
+| Leaf pending | 483 |
 
 Next ready rows by queue order:
 
-- [`record_function_finite_sector_algebra_2026-06-05`](../../docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md) - critical; audit_in_progress
 - [`magnitude_temporal_factor_is_count_not_rate_2026-06-06`](../../docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md) - critical; audit_in_progress
 - [`multisite_pauli_group_theorem_note_2026-05-02`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md) - critical; audit_in_progress
 - [`tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
 - [`sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06`](../../docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md) - critical; audit_in_progress
 - [`pmns_graph_first_axis_alignment_note`](../../docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md) - critical; audit_in_progress
+- [`koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30`](../../docs/KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY_BOUNDED_NOTE_2026-05-30.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -91,7 +91,7 @@ Top load-bearing rows by graph score:
 - `minimal_axioms` - critical; 1590 descendants; score 134.636
 - `three_generation_observable_theorem_note` - critical; 1356 descendants; score 64.406
 - `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
-- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
+- `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
 - `plaquette_self_consistency_note` - critical; 1358 descendants; score 51.408
 - `key_terminology` - critical; 1396 descendants; score 50.448
 - `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837

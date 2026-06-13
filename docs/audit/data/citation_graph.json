@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "record_function_finite_sector_algebra_2026-06-05"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "pmns_graph_first_axis_alignment_note"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
         "record_function_finite_sector_algebra_2026-06-05",
         "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
         "multisite_pauli_group_theorem_note_2026-05-02",
         "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
         "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
-        "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06"
+        "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
+        "pmns_graph_first_axis_alignment_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0c78a35213456dcef70a31827d1d604ae69e050a172b94b1069be7252fc102fd",
+      "note_hash": "db2bc408f8578d0ce5f3015cf38f7e67354bf80f792bfd5db67ea98068460a52",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

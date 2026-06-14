@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 861 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1521 |
+| unaudited | 1520 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 27 |
+| ~~audited_conditional~~ | 28 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1301 |
-| `audited_conditional` | 27 |
+| `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1838 |
+| `unaudited` | 1837 |
 
 | claim_type | count |
 |---|---:|
@@ -1442,6 +1442,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_upper_bound_dependency_edge_repair_note_2026-06-08` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -7472,6 +7473,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The inverse-dimension adjacent bond follows directly from the cited Schur/Peter-Weyl character convolution identity, and the finite packet explicitly supplies boundary0 as the trivial-channel unit vector rather than an all-label counit. The runner and helper sources compute the finite two- and three-word Perron rereads on that bounded branch, while the open full-rim boundary problem is explicitly not imported.
 - **rationale:** The bounded claim closes as an algebraic finite-packet reread: the matrix-element adjacent contraction is the cited Schur identity with the 1/d_lambda factor, and the trivial-slice readout is exactly the supplied unit-vector boundary on the finite packet. The runner source does real finite operator construction and Perron solves through included helpers; the hard-coded expected values are used as regression assertions, not as construction inputs. The 0.5934 comparator is fenced to distance reporting and does not drive the branch selection or computation. The clean verdict is only for the stated finite packet and does not promote the open full eta_beta^env or physical 3D Wilson environment closure.
 - **auditor confidence:** medium
+
+### `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure formal finite-dimensional linear-algebra reduction for abstract `(S, eta, K)` on an orthonormal class-sector basis; no physical beta=6 Wilson/Haar identification is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-000535-1492fcb55d-gauge_vacuum_plaquette_beta6`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given arbitrary abstract operators `(S, eta, K)`, define `z_(p,q) = <chi_(p,q), S^(L_perp-1) eta>`, `rho_(p,q) = z_(p,q)/z_(0,0)`, `v = sum z_(p,q) chi_(p,q)`, and `Z(W) = <K(W), v>`, so the stated coefficient and evaluation relations follow by finite-dimensional linear algebra.  _(class `A`)_
+- **chain closes:** False — The `z`, `v`, and `Z(W)` identities close by orthonormal-basis expansion. The normalized ratio `rho_(p,q) = z_(p,q)/z_(0,0)` does not close under the stated arbitrary-operator hypotheses because `z_(0,0)` may vanish.
+- **rationale:** The 2026-05-28 narrowing successfully removes the physical beta=6 Wilson/Haar bridge from the audited load-bearing claim. The remaining formal algebra is class A, but the statement is still too broad as written because it defines normalized coefficients for arbitrary `S` and `eta` without assuming `z_(0,0) != 0`. The runner checks finite positive witness instances where the normalization exists, but that does not close the arbitrary formal lemma.
+- **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`
 

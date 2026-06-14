@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1495 |
-| Retained-grade rows, including boxed decorations | 1350 |
+| Applied audit verdicts | 1496 |
+| Retained-grade rows, including boxed decorations | 1351 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 887 |
+| Retained bounded rows | 888 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1471 |
+| Unaudited rows | 1470 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 42 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1476 |
-| Ready rows | 34 |
+| Total pending rows | 1475 |
+| Ready rows | 33 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
 | Medium pending | 429 |
-| Leaf pending | 462 |
+| Leaf pending | 461 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06`](../../docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12`](../../docs/DET_PHASE_FEW_FREQUENCY_LAW_REFUTED_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12`](../../docs/DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07`](../../docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md) - medium; unaudited
 - [`flavor_detr_default_full_exercise_note_2026-05-30`](../../docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md) - medium; unaudited
-- [`free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - leaf; unaudited
+- [`free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
+- [`g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 601 |
 | High nodes | 473 |
-| Medium nodes | 906 |
-| Leaf nodes | 1450 |
+| Medium nodes | 904 |
+| Leaf nodes | 1452 |
 
 Top load-bearing rows by graph score:
 

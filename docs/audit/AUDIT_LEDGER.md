@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 887 |
+| **retained_bounded** | 888 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1471 |
+| unaudited | 1470 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1333 |
+| `audited_clean` | 1334 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1788 |
+| `unaudited` | 1787 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 867 |
-| `leaf` | 1361 |
+| `medium` | 865 |
+| `leaf` | 1363 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -116,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1388 | 39.44 | `audited_clean` | **retained** |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1307 | 38.85 | `audited_clean` | **retained_no_go** |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1285 | 38.83 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1374 | 36.92 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1375 | 36.93 | `audited_clean` | **retained** |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 36.80 | `unaudited` | unaudited |
 | 19 | `three_generation_structure_note` | bounded_theorem | critical | 1304 | 35.85 | `audited_clean` | **retained_bounded** |
 | 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1264 | 35.30 | `unaudited` | unaudited |
@@ -340,6 +340,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `delta_magnitude_reduces_to_massless_gravity_scale_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4634,6 +4635,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** As mu^2 -> 0, the q=0 monopole |Vq(0)|=G/mu^2 diverges while the corner term |Vq(Delta k)|=G/(8+mu^2) tends to G/8, so the delta magnitude is carried by the gravity mediator IR scale rather than fixed as a flavor value.  _(class `A`)_
 - **chain closes:** True — The displayed formulas give delta_ij=(-G/mu^2+G/(8+mu^2))/N, so its leading magnitude diverges with the zero-mode IR regulator while the corner contribution is finite. Independently, eps((pi,-pi,0)) and permutations equals 8, C+C^2=J-I for the 3-cycle, and the real single-hop second-order matrix has a real I plus J-I form.
 - **rationale:** The load-bearing content is algebraic and closes over the supplied delta/Vq form, retained bounded mediator and K-real cone inputs, and the accepted scale-reference primitive. The runner source performs actual finite checks rather than merely printing constants, and an independent check reproduces the IR limit, corner eps=8, C+C^2=J-I, and real single-hop K-real form. The note does not claim the physical magnitude value, full complex-hopping K-reality, r/Q, or an unsupplied hierarchy window, so the named open surfaces remain outside the audited closure.
+- **auditor confidence:** high
+
+### `delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded sign theorem: on the retained mediator surfaces and the periodic hw=1 corner density-kernel bridge, delta is negative and K_C3 is negative on the explicit nonresonant branch; no physical magnitude or branch-realization claim is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-023642-01d2d0caaf-delta_sign_fixed_negative_by`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By the periodic density-kernel bridge, the retained hw=1 corner pairs have delta_ij = (-G/mu^2 + G/(8+mu^2))/N < 0, and K_C3 = t^2 * delta / (eps_gap * (eps_gap + delta)) has the same sign as delta on eps_gap > 0 and eps_gap + delta > 0.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade bridge supplies the finite-volume delta_ij formula, and the sign follows algebraically for G>0, mu^2>0, N>0, eps(Delta k)=8. The second-order expression independently reduces to t^2(1/eps_gap - 1/(eps_gap + delta)), so the K_C3 sign follows under the stated branch inequalities.
+- **rationale:** The load-bearing result is an algebraic closure over retained-grade inputs rather than a new fitted value or renaming. The runner source performs nontrivial lattice and finite C^8 checks, and its outputs match the stated finite-surface and branch claims, but the clean verdict rests on the independently checked sign algebra. The theorem is correctly bounded: it does not assert the physical size of delta or that the realized branch satisfies eps_gap + delta > 0.
 - **auditor confidence:** high
 
 ### `dense_prune_guard_seed_note`

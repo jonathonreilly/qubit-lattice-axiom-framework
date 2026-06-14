@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 258,
-    "leaf": 462,
+    "leaf": 461,
     "medium": 429
   },
   "cycle_break_target_count": 20,
@@ -18118,33 +18118,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "staggered_self_consistent_two_body_note_2026-04-11",
-        "wilson_two_body_open_refined_note_2026-04-11",
-        "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/delta_sign_from_retained_mediator_runner.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18267,6 +18240,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/flavor_detR_default_full_exercise_2026_05_30.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py",
       "transitive_descendants": 16
     },
     {
@@ -31351,30 +31348,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44912,6 +44885,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 34,
-  "total_pending": 1476
+  "ready_count": 33,
+  "total_pending": 1475
 }

@@ -11965,6 +11965,14 @@
       "to": "erosion_rate_table_no_tested_closed_form_bounded_theorem_note_2026-06-12"
     },
     {
+      "from": "erosion_geometric_rate_closed_form_bounded_theorem_note_2026-06-12",
+      "to": "erosion_exact_recurrence_path_product_threshold_obstruction_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "erosion_geometric_rate_closed_form_bounded_theorem_note_2026-06-12",
+      "to": "erosion_rate_table_no_tested_closed_form_bounded_theorem_note_2026-06-12"
+    },
+    {
       "from": "erosion_rate_table_no_tested_closed_form_bounded_theorem_note_2026-06-12",
       "to": "record_erosion_branch_vs_ensemble_persistence_bounded_theorem_note_2026-06-12"
     },
@@ -14165,6 +14173,30 @@
       "to": "plaquette_self_consistency_note"
     },
     {
+      "from": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
+      "to": "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
+      "to": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+    },
+    {
       "from": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
       "to": "gauge_vacuum_plaquette_reduction_existence_theorem_note"
     },
@@ -16217,6 +16249,18 @@
       "to": "asymmetry_persistence_mass_scaling_note"
     },
     {
+      "from": "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
+      "to": "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
+      "to": "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
+      "to": "realized_state_primitive"
+    },
+    {
       "from": "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08",
       "to": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06"
     },
@@ -17711,6 +17755,10 @@
     {
       "from": "hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29",
       "to": "g_bare_derivation_note"
+    },
+    {
+      "from": "hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29",
+      "to": "minimal_axioms"
     },
     {
       "from": "hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29",
@@ -35229,6 +35277,18 @@
       "to": "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27"
     },
     {
+      "from": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
+      "to": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
+      "from": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
+      "to": "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "strc_lo_collinearity_theorem_note_2026-04-19",
       "to": "ckm_atlas_axiom_closure_note"
     },
@@ -51131,6 +51191,10 @@
     {
       "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "teleportation_resource_from_poisson_note"
     },
     {
       "from": "repo.repo_organization",
@@ -68423,6 +68487,21 @@
       "runner_path": "scripts/frontier_erosion_exact_recurrence_path_product_2026_06_12.py",
       "title": "The Erosion Recurrence Derived Exactly: the Correlator Is a Closed Path-Product c\u2080\u00b7\u220f(1\u2212\u03b5\u00b2)/(1+s\u2c7c\u03b5p\u208d\u2c7c\u208b\u2081\u208e)\u00b2, and the Threshold Indicator Locates the Checked Single-Ratio Obstruction (Bounded)"
     },
+    "erosion_geometric_rate_closed_form_bounded_theorem_note_2026-06-12": {
+      "claim_id": "erosion_geometric_rate_closed_form_bounded_theorem_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "erosion_exact_recurrence_path_product_threshold_obstruction_bounded_theorem_note_2026-06-12",
+        "erosion_rate_table_no_tested_closed_form_bounded_theorem_note_2026-06-12"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "98bbbe0bcac6e109e5dc1fd1bcf7900df42b3d9e4ba14bd3430b5a5ff8cc095f",
+      "path": "docs/EROSION_GEOMETRIC_RATE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_erosion_rate_closed_form_2026_06_12.py",
+      "title": "Uniform-Sign Erosion Rate Closed Form for the Landed Path-Product Recurrence (Bounded)"
+    },
     "erosion_rate_table_no_tested_closed_form_bounded_theorem_note_2026-06-12": {
       "claim_id": "erosion_rate_table_no_tested_closed_form_bounded_theorem_note_2026-06-12",
       "claim_type_author_hint": "bounded_theorem",
@@ -71052,7 +71131,7 @@
     "g_bare_structural_normalization_theorem_note_2026-04-18": {
       "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (bounded support plus normalization-obstruction",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "g_bare_derivation_note",
@@ -71061,10 +71140,10 @@
         "three_generation_observable_theorem_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6bd0697450b63318460df822ee56000aaaaf781701c4cbb497598342b5a36747",
+      "note_hash": "94f464b4a008cb9556010cb87ea71737cbf0725c18889c103c7bcaa19a9efb17",
       "path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_g_bare_structural_normalization.py",
-      "title": "G_bare Structural Normalization: Cl(3) -> End(V) -> su(3) -> Wilson Action Chain"
+      "title": "G_bare Structural Normalization Boundary: Cl(3) -> End(V) -> su(3) -> Wilson Action Chain"
     },
     "g_bare_two_ward_closure_note_2026-04-18": {
       "claim_id": "g_bare_two_ward_closure_note_2026-04-18",
@@ -73510,6 +73589,32 @@
       "runner_path": "scripts/gauge_vacuum_plaquette_strip_word_deep_ladder_product_axis_bounded_2026_06_12.py",
       "title": "Gauge-Vacuum Plaquette Strip-Word Deep Ladder Product Axis Bounded Note"
     },
+    "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12": {
+      "claim_id": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+        "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+        "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
+        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+      ],
+      "helper_runner_paths": [
+        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+        "scripts/gauge_vacuum_plaquette_strip_word_deep_ladder_product_axis_bounded_2026_06_12.py",
+        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+        "scripts/gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_2026_06_12.py",
+        "scripts/su3_fundamental_fusion_cg_b4.py"
+      ],
+      "note_hash": "83701317fdb9ae87d0f42d1b981077bf9337c4e9cbf6a273d7faafbb4f047531",
+      "path": "docs/GAUGE_VACUUM_PLAQUETTE_SU3_CG_LIBRARY_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_2026_06_12.py",
+      "title": "Gauge-Vacuum Plaquette SU3 CG Library Window Displacement Bounded Note"
+    },
     "gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06": {
       "claim_id": "gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06",
       "claim_type_author_hint": null,
@@ -75670,6 +75775,22 @@
       "runner_path": "scripts/frontier_harmonic_depth_hankel_rank_2026_06_12.py",
       "title": "The Harmonic-Depth Mechanism Located in Numerical Trajectory Rank (Window/Threshold-Relative): Censored Lower Bounds at Window 64, K=6 Smallest at Windows 64/128, Coupled-Gap Counts Identical (Bounded)"
     },
+    "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12": {
+      "claim_id": "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
+        "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
+        "realized_state_primitive"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d67b1e057edd401064da026bbe613b9d0568f9cb620a95b1adf1558e98fb0241",
+      "path": "docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_depth_weight_distribution_2026_06_12.py",
+      "title": "Harmonic Depth Weight-Distribution Ordering: Bounded L=3 Realized-State Note"
+    },
     "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
       "claim_id": "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08",
       "claim_type_author_hint": "bounded_theorem",
@@ -77118,12 +77239,13 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "g_bare_derivation_note",
+        "minimal_axioms",
         "staggered_dirac_realization_gate_note_2026-05-03"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "5708b03f218f00e460f2f643af302db224173bbd2137587a67ab811d00859427",
+      "note_hash": "fd69c445d911aac4dc0e9d2a6c727574b2a95d13dc4da5999ff8f6c2e240c4cb",
       "path": "docs/HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md",
       "runner_path": "scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py",
       "title": "Lane 5 `(C1)` A2 Action-Unit Metrology Obstruction Note"
@@ -80839,17 +80961,17 @@
     },
     "koide_mru_weight_class_obstruction_theorem_note_2026-04-19": {
       "claim_id": "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "koide_dweh_cyclic_compression_note_2026-04-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4d19a98dcea604e65063eed6bafde3329f57d14c879b6f1904151ad944363d1b",
+      "note_hash": "f3f93eaa3096a444d7cbfd055a67343709720c5c8a283521ed90d2aa51c07917",
       "path": "docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_koide_mru_weight_class_obstruction_theorem.py",
-      "title": "Koide MRU Weight-Class Obstruction Theorem"
+      "title": "Koide MRU Weight-Class Obstruction Boundary"
     },
     "koide_native_dimensionless_note_2026-04-24": {
       "claim_id": "koide_native_dimensionless_note_2026-04-24",
@@ -98218,10 +98340,11 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "grown_transfer_basin_targeted_repair_note_2026-06-04"
+        "grown_transfer_basin_targeted_repair_note_2026-06-04",
+        "teleportation_resource_from_poisson_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "baf6766bccdce37e9a6ac1260f57860ae213779064017dd32be4033037598854",
+      "note_hash": "d12cbd7bb16d0df40b3a52db8eddf7b53740c0e85476febf257750dac7774378",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -103238,6 +103361,22 @@
       "path": "docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md",
       "runner_path": "scripts/audit_companion_static_source_readout_i1_dep_resolution_2026_06_04.py",
       "title": "Static-Source Readout I1 Accepted-Premise Bridge: Dep-Resolution Hygiene Companion"
+    },
+    "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12": {
+      "claim_id": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c312a60f1c5e6e3eb717fbc3e7c8788cab7eb674441c565d25e212eb9e1fa353",
+      "path": "docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py",
+      "title": "W8a Statistics Atom Reduces To Product Form On The Retained Gleason/Busch Surface"
     },
     "strc_lo_collinearity_theorem_note_2026-04-19": {
       "claim_id": "strc_lo_collinearity_theorem_note_2026-04-19",
@@ -112953,27 +113092,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1180,
+      "bounded_theorem": 1185,
       "decoration": 1,
       "meta": 279,
       "no_go": 169,
-      "none": 1513,
+      "none": 1512,
       "open_gate": 94,
       "positive_theorem": 194
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1596,
+      "bounded_theorem": 1601,
       "decoration": 1,
       "meta": 279,
       "no_go": 285,
       "none": 483,
       "open_gate": 170,
-      "positive_theorem": 616
+      "positive_theorem": 615
     },
-    "edge_count": 12882,
-    "leaf_count": 1108,
-    "node_count": 3430,
+    "edge_count": 12898,
+    "leaf_count": 1109,
+    "node_count": 3434,
     "root_count": 1063,
-    "runners_with_path": 3010
+    "runners_with_path": 3014
   }
 }

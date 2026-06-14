@@ -9468,6 +9468,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_erosion_exact_recurrence_path_product_2026_06_12.py"
     },
+    "erosion_geometric_rate_closed_form_bounded_theorem_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 25,
+        "B": 1,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_erosion_rate_closed_form_2026_06_12.py"
+    },
     "erosion_rate_table_no_tested_closed_form_bounded_theorem_note_2026-06-12": {
       "assert_count": 1,
       "counts": {
@@ -11560,8 +11572,8 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 36,
+        "B": 1,
+        "C": 33,
         "D": 0
       },
       "decoration_candidate": false,
@@ -13056,6 +13068,18 @@
       "dominant_class": "D",
       "runner": "scripts/gauge_vacuum_plaquette_strip_word_deep_ladder_product_axis_bounded_2026_06_12.py"
     },
+    "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 11,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_2026_06_12.py"
+    },
     "gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06": {
       "assert_count": 1,
       "counts": {
@@ -14472,6 +14496,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_harmonic_depth_hankel_rank_2026_06_12.py"
     },
+    "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 7,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_depth_weight_distribution_2026_06_12.py"
+    },
     "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
       "assert_count": 1,
       "counts": {
@@ -15424,7 +15460,7 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 14,
         "D": 0
       },
@@ -17680,7 +17716,7 @@
       "assert_count": 0,
       "counts": {
         "A": 28,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0
       },
@@ -30647,6 +30683,18 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/audit_companion_static_source_readout_i1_dep_resolution_2026_06_04.py"
+    },
+    "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 24,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py"
     },
     "strc_lo_collinearity_theorem_note_2026-04-19": {
       "assert_count": 1,
@@ -48784,6 +48832,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_depth_weight_distribution_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 7,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_det_phase_capture_vs_order_2026_06_12.py": {
       "assert_count": 1,
       "claims": [
@@ -52720,6 +52783,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_erosion_rate_closed_form_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "erosion_geometric_rate_closed_form_bounded_theorem_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 25,
+        "B": 1,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_erosion_rate_table_no_closed_form_2026_06_12.py": {
       "assert_count": 1,
       "claims": [
@@ -53554,8 +53632,8 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 36,
+        "B": 1,
+        "C": 33,
         "D": 0
       },
       "decoration_candidate": false,
@@ -56178,7 +56256,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 14,
         "D": 0
       },
@@ -57774,7 +57852,7 @@
       ],
       "counts": {
         "A": 28,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0
       },
@@ -66696,6 +66774,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 24,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_strc_lo_collinearity_theorem.py": {
       "assert_count": 1,
       "claims": [
@@ -72094,6 +72187,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 11,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py": {
@@ -79434,16 +79542,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 544,
+    "decoration_candidates": 545,
     "dominant_class_distribution": {
-      "A": 419,
+      "A": 421,
       "B": 472,
-      "C": 1140,
+      "C": 1142,
       "D": 399,
       "none": 455
     },
-    "runners_classified": 2885,
-    "runners_with_C": 1539,
-    "runners_with_D": 912
+    "runners_classified": 2889,
+    "runners_with_C": 1542,
+    "runners_with_D": 914
   }
 }

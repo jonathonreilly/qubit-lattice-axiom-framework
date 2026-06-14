@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 861 |
+| **retained_bounded** | 862 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1520 |
+| unaudited | 1519 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1301 |
+| `audited_clean` | 1302 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1837 |
+| `unaudited` | 1836 |
 
 | claim_type | count |
 |---|---:|
@@ -1409,6 +1409,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -20152,6 +20153,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Matching the Wilson small-a coefficient beta g_bare^2/(4 N_c) to the unordered-plane continuum Yang-Mills coefficient 1/2 gives beta = 2 N_c / g_bare^2.  _(class `A`)_
 - **chain closes:** True — The trace expansion gives Tr X^2 = a^4 g_bare^2 F^a F^a/2 and therefore plaquette deficit a^4 g_bare^2 F^a F^a/(4 N_c). The continuum 1/4 F_{mu nu}F_{mu nu} term contributes coefficient 1/2 over unordered planes, so the stated matching follows without needing g_bare=1 or Wilson surface selection.
 - **rationale:** The load-bearing mathematics is a direct algebraic trace expansion and coefficient match under the theorem's explicitly supplied Wilson-action and trace-normalization hypotheses. Independent checking confirms the factors of 1/2 and 1/(4 N_c), including the unordered-plane conversion in the continuum action. The note's boundaries exclude action-surface selection, alternative lattice actions, physical g_bare selection, and beta=6 except under the additional N_c=3, g_bare^2=1 specialization.
+- **auditor confidence:** high
+
+### `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`
+
+- **Note:** [`WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md`](../../docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Gauge-only SU(3) Wilson one-link weight/kernel: non-negative character coefficients for all irreps and beta>=0, hence PSD convolution/Gram kernel; no fermion, mixed OS, or full interacting RP closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-000855-6e73d2a15c-wilson_su3_gauge_transfer_ke`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Expanding w(V)=exp((beta/(2N_c))(chi_box+chi_boxbar)) gives c_lambda(beta)=sum_{n>=0}(beta/(2N_c))^n m_lambda^{(n)}/n!, with m_lambda^{(n)} non-negative SU(3) tensor-product multiplicities, so c_lambda(beta)>=0 for beta>=0.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from the representation-ring expansion of tensor powers of 3 plus 3bar and Schur/Peter-Weyl convolution diagonalization. The cited authorities used for convolution/factorization are retained-grade, and no external numerical or framework-point input is load-bearing.
+- **rationale:** The load-bearing proof is a standard algebraic closure: (chi_3+chi_3bar)^n is the character of (3 plus 3bar) tensor-power n, so its irreducible multiplicities are non-negative integers, and the beta>=0 exponential has non-negative scalar weights. Independently checking the normalization gives convolution eigenvalues c_lambda/d_lambda, so c_lambda>=0 is exactly the needed PSD condition. The runner is not the proof of the all-irrep theorem, but it gives non-vacuous exact and numerical checks with a negative control and no forbidden imports.
 - **auditor confidence:** high
 
 ### `wilson_test_mass_continuum_note_2026-04-11`

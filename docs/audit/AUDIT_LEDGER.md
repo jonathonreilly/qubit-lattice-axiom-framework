@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 864 |
+| **retained_bounded** | 865 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1514 |
+| unaudited | 1513 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1305 |
+| `audited_clean` | 1306 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1831 |
+| `unaudited` | 1830 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 593 |
-| `high` | 467 |
-| `medium` | 856 |
+| `high` | 468 |
+| `medium` | 855 |
 | `leaf` | 1372 |
 
 - **Retained pending chain closure:** 20
@@ -673,6 +673,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `i1_native_quadratic_static_source_normalization_bridge_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -9374,6 +9375,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The four single-projector identities P_T1 Gamma_1 P_X Gamma_1 P_T1 give diag(1,0,0), diag(0,1,0), diag(0,0,1), and zero for X=O0,(1,1,0),(1,0,1),(0,1,1), followed by linearity in W.  _(class `A`)_
 - **chain closes:** True — The direct dependencies supply the Gamma_1/T_1 retained surface and generation triplet basis. In the fixed-taste T_1 basis, Gamma_1 flips (1,0,0) to O0, (0,1,0) to (1,1,0), and (0,0,1) to (1,0,1); the remaining T_2 state (0,1,1) has no T_1 preimage under a Gamma_1 hop. Orthogonal diagonal projectors and linearity then force the affine diagonal formula.
 - **rationale:** Second clean pass confirms the narrowed finite-matrix structural theorem. The result is only the affine projector/bit-flip identity on the retained carrier and retained generation/species surface; it does not derive charged-lepton masses, weight positivity, weight normalization, weak-axis selection, or a retained primitive fixing the three intermediate weights. One robustness PASS is informational, but the load-bearing single-hop/projector identities are independently checked and sufficient.
+- **auditor confidence:** high
+
+### `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`
+
+- **Note:** [`HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow repair of the parent atomic finite-box dependency chain: source the scalar -Delta_lat stencil and Coulomb kernel from the retained Z^3 lattice Green authority, and disambiguate that scalar operator from the staggered Dirac-square surface without claiming continuum, eV, helium-cache, or finite-Rydberg closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-002720-ec0cf9d014-hydrogen_helium_atomic_latti`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the retained lattice Green function asymptote G(r) -> 1/(4 pi |r|), the defined source equation (-Delta_lat)V_lat = -4 pi g delta gives V_lat = -4 pi g G(r) -> -g/|r|, with the scalar stencil sourced from the nearest-neighbor graph Laplacian rather than the staggered Dirac square.  _(class `A`)_
+- **chain closes:** True — The cited Green authority supplies the stencil and 1/(4 pi r) normalization, and the Coulomb kernel follows by direct algebra from the stated source normalization. The staggered comparison also closes as a finite matrix counterexample using the supplied D construction: H_Dirac^2 has diagonal 3/2, no nearest-neighbor entries, and distance-2 entries, unlike the scalar graph Laplacian.
+- **rationale:** The load-bearing work is algebraic closure over retained-grade inputs: the retained Green authority gives the exact lattice stencil and leading 1/(4 pi r), and multiplying by -4 pi g gives the parent -g/r kernel. Independent matrix-entry checking confirms the stated staggered-square disagreement with the scalar Laplacian. The runner source performs real stencil, normalization, and finite-matrix computations rather than merely printing constants, though several D-labeled checks are boundary/provenance assertions. The note explicitly does not claim kinetic uniqueness from the axioms, continuum-limit closure, helium energy runs, absolute eV predictions, or a finite continuum Rydberg theorem.
 - **auditor confidence:** high
 
 ### `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`

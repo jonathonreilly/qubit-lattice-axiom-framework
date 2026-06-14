@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
         "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
         "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12",
         "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05",
         "signed_gravity_aps_locked_source_action_proposal_note",
-        "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04"
+        "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
+        "gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9118c27bdba53581af945e0d070ba9ef5a47f59ebb467c98ac08aa5ca3f4d33d",
+      "note_hash": "00eeac3dd2f2a81e95784d0a1462fe70cee0793bdee102721d260838a2ee43cf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

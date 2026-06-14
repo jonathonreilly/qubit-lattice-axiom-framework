@@ -152,12 +152,12 @@
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 317,
-    "open_gate": 39,
+    "open_gate": 40,
     "retained": 211,
     "retained_bounded": 880,
     "retained_no_go": 208,
     "retained_pending_chain": 20,
-    "unaudited": 1483
+    "unaudited": 1482
   },
   "retained_pending_chain_count": 20,
   "retained_pending_chain_examples": [

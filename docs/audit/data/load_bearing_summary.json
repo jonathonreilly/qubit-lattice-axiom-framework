@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 601,
     "high": 473,
-    "leaf": 1444,
-    "medium": 912
+    "leaf": 1445,
+    "medium": 911
   },
   "flagship_signal_used": false,
   "node_count": 3430,
@@ -43,8 +43,8 @@
     {
       "claim_id": "plaquette_self_consistency_note",
       "criticality": "critical",
-      "load_bearing_score": 51.408,
-      "transitive_descendants": 1358
+      "load_bearing_score": 51.409,
+      "transitive_descendants": 1359
     },
     {
       "claim_id": "key_terminology",

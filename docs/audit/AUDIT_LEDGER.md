@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 890 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1467 |
+| unaudited | 1466 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1336 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1784 |
+| `unaudited` | 1783 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 873 |
-| `leaf` | 1355 |
+| `medium` | 872 |
+| `leaf` | 1356 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1356 | 64.41 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1279 | 62.82 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1358 | 51.41 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1359 | 51.41 | `audited_clean` | **retained_bounded** |
 | 6 | `key_terminology` | meta | critical | 1396 | 50.45 | `unaudited` | meta |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1292 | 49.84 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1262 | 44.80 | `unaudited` | unaudited |
@@ -1483,6 +1483,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5843,6 +5844,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Since H_oo - E I = (mu - E)I, the Schur complement gives mu' = mu - 2t^2/(mu - E) and t' = t^2/(mu - E), hence mu' - E = (mu - E)(1 - 2h^2) and h' = h^2/(1 - 2h^2).  _(class `A`)_
 - **chain closes:** True — The independent Schur-complement calculation gives the stated diagonal and nearest-neighbor effective parameters with the correct signs and factors. The singular gate mu = E and the displayed-map pole at h^2 = 1/2 are excluded by the stated domain/chart.
 - **rationale:** The load-bearing step is a direct algebraic closure, not a definition, renaming, tuned numerical match, or external comparator. The runner source genuinely constructs finite-ring Hamiltonians, performs the Schur complement, and checks the formula, singular gate, threshold covariance, length diagnostic, sign quotient, and chart boundary without importing a contested premise. No cited authority or open bridge is needed for this bounded free-chain statement.
+- **auditor confidence:** high
+
+### `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07`
+
+- **Note:** [`EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md`](../../docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional template showing that, if the continuous scalar energy, lattice rest-gap readout, and recorded-energy source density m|psi|^2 are supplied, the inertial/source ratio is algebraically one and packet-width independent.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-024835-20c4fb6498-ep_record_stiffness_conditio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the supplied-context assumptions, the same supplied stiffness m appears in the inertial rest gap and in the recorded-energy source integral, giving ratio one with no sigma dependence.  _(class `A`)_
+- **chain closes:** True — The displayed algebra closes inside the supplied template: V''(phi0)=m^2, E^2(0)=m^2, and the normalized integral of m|psi|^2 is m. It does not derive the continuous energy/action context, mass scale, or gravitational source/shared-coupling bridge from the cited framework authorities.
+- **rationale:** The runner performs symbolic algebra and source-boundary checks consistent with the note, and an independent check of the second derivative, p=0 dispersion, Gaussian normalization, and ratio confirms the template math. The result is not clean because the continuous local energy/action context and the shared recorded-energy gravitational source coefficient are explicitly supplied, not derived. The Equivalence Principle authority is a meta demotion with the EP gap open, and the Broad Gravity authority is bounded algebra over supplied weak-field inputs, so no retained WEP or source/readout bridge is imported.
+- **open / conditional deps cited:**
+  - `EQUIVALENCE_PRINCIPLE_NOTE.md`
+  - `BROAD_GRAVITY_DERIVATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `equivalence_principle_harness_note`

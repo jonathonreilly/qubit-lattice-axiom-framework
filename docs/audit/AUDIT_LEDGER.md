@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 893 |
+| **retained_bounded** | 894 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1459 |
+| unaudited | 1458 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1340 |
+| `audited_clean` | 1341 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1776 |
+| `unaudited` | 1775 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 598 |
 | `high` | 462 |
-| `medium` | 867 |
-| `leaf` | 1361 |
+| `medium` | 865 |
+| `leaf` | 1363 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -671,6 +671,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `half_plane_chart_equivalence_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `hard_geometry_gravity_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
+| `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -9426,6 +9427,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** This note records the local hard-geometry pilot that asked whether a  _(class `D`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 2 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified D-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the exact finite L=3, NC=3, tau=0.35, T=256, supplied-seed realized-state computation of centered determinant-phase Hankel ranks at windows 64/128 and thresholds 1e-5, 1e-6, 1e-7, plus gated coupled-gap counts.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-031353-ea462243c6-harmonic_depth_hankel_rank_m`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Default-threshold numerical trajectory ranks are window-64 {K=3: >=64, K=4: >=64, K=5: 34, K=6: 28} and window-128 {K=3: 71, K=4: 84, K=5: 36, K=6: 35}, while coupled site-0/1 gap counts are identical at 3 each.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the finite color-diagonal nearest-neighbor Hamiltonian, generated occupied projectors, time evolution, polar determinant phase increments, Hankel SVD ranks, and coupled spectral-gap weights directly from the supplied finite datum. The hard-coded anchor constants are comparator checks, but the audited rank and gap tables are computed rather than printed or imported.
+- **rationale:** Within the explicitly bounded scope, the load-bearing numerical claims close from first-principles finite computation over the supplied realized states and thresholds. The runner does contain expected anchor values for prior ceilings, but those are not the contested rank-ordering or identical-gap-count premise and do not supply the table values. The claim does not assert a state-selection rule, genericity result, or unbounded range law, so the realized-state primitive limits are respected.
 - **auditor confidence:** high
 
 ### `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17`

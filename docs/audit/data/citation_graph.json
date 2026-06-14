@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gate_b_dynamics_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gate_b_operator_cauchy_note_2026-05-10"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gate_b_dynamics_note",
         "gate_b_operator_cauchy_note_2026-05-10",
         "gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12",
         "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07",
         "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
         "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
-        "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16"
+        "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
+        "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "23928f36e74673563a45825526f2036738771753e4a4930ae002a700edcb91f6",
+      "note_hash": "ac897e34866e504307a44491fdd43ace5f4e057687c6a5ad8e15b572287d5a46",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 211 |
-| **retained_no_go** | 208 |
+| **retained_no_go** | 209 |
 | **retained_bounded** | 892 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1462 |
+| unaudited | 1461 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1338 |
+| `audited_clean` | 1339 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1779 |
+| `unaudited` | 1778 |
 
 | claim_type | count |
 |---|---:|
@@ -79,10 +79,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 593 |
-| `high` | 467 |
-| `medium` | 871 |
-| `leaf` | 1357 |
+| `critical` | 598 |
+| `high` | 462 |
+| `medium` | 865 |
+| `leaf` | 1363 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -101,30 +101,30 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1590 | 134.64 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1356 | 64.41 | `audited_clean` | **retained** |
-| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1279 | 62.82 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1422 | 60.98 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1357 | 64.41 | `audited_clean` | **retained** |
+| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1280 | 62.82 | `unaudited` | unaudited |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1359 | 51.41 | `audited_clean` | **retained_bounded** |
-| 6 | `key_terminology` | meta | critical | 1396 | 50.45 | `unaudited` | meta |
-| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1292 | 49.84 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1262 | 44.80 | `unaudited` | unaudited |
-| 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1262 | 43.80 | `unaudited` | unaudited |
-| 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1262 | 43.30 | `unaudited` | unaudited |
-| 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1262 | 42.80 | `audited_clean` | **retained_bounded** |
-| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1274 | 41.82 | `unaudited` | unaudited |
-| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1346 | 40.90 | `audited_failed` | ~~audited_failed~~ |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1388 | 39.44 | `audited_clean` | **retained** |
-| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1307 | 38.85 | `audited_clean` | **retained_no_go** |
-| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1285 | 38.83 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1374 | 36.92 | `audited_clean` | **retained** |
-| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 36.80 | `unaudited` | unaudited |
-| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1304 | 35.85 | `audited_clean` | **retained_bounded** |
-| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1264 | 35.30 | `unaudited` | unaudited |
-| 21 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 35.30 | `unaudited` | unaudited |
-| 22 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 283 | 34.65 | `unaudited` | unaudited |
-| 23 | `minimal_axioms_2026-04-11` | meta | critical | 1266 | 32.81 | `unaudited` | meta |
-| 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 32.80 | `unaudited` | unaudited |
-| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1262 | 32.30 | `unaudited` | unaudited |
+| 6 | `key_terminology` | meta | critical | 1397 | 50.45 | `unaudited` | meta |
+| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1293 | 49.84 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1263 | 44.80 | `unaudited` | unaudited |
+| 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1263 | 43.80 | `unaudited` | unaudited |
+| 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1263 | 43.30 | `unaudited` | unaudited |
+| 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1263 | 42.80 | `audited_clean` | **retained_bounded** |
+| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1275 | 41.82 | `unaudited` | unaudited |
+| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1347 | 40.90 | `audited_failed` | ~~audited_failed~~ |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1389 | 39.44 | `audited_clean` | **retained** |
+| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1308 | 38.85 | `audited_clean` | **retained_no_go** |
+| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1286 | 38.83 | `audited_clean` | **retained_bounded** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1375 | 36.93 | `audited_clean` | **retained** |
+| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 36.80 | `unaudited` | unaudited |
+| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1305 | 35.85 | `audited_clean` | **retained_bounded** |
+| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1265 | 35.31 | `unaudited` | unaudited |
+| 21 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 35.30 | `unaudited` | unaudited |
+| 22 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 284 | 34.66 | `unaudited` | unaudited |
+| 23 | `minimal_axioms_2026-04-11` | meta | critical | 1267 | 32.81 | `unaudited` | meta |
+| 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 32.80 | `unaudited` | unaudited |
+| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1263 | 32.30 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -558,6 +558,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_nonlabel_connectivity_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_connectivity_v3_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gate_b_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_poisson_self_gravity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_strong_field_observable_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -7776,6 +7777,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Both the label-grown control family and the geometry-sector candidate family satisfy the zero/neutral, antisymmetry, nonzero signal, sign-orientation, and charge-linearity PASS/FAIL checks on the retained-bounded grown row.  _(class `C`)_
 - **chain closes:** True — The cited grown-distance-law authority is retained_bounded and supplies the bounded grown row. The primary runner and included helper source instantiate the grown geometry, source field, propagation, detector centroid, and transfer checks directly rather than replaying hard-coded expected values.
 - **rationale:** The load-bearing evidence is the completed runner output with PASS=14 FAIL=0, supported by source code that actually computes the quantities under test. The only one-hop cited authority is retained_bounded and is used narrowly to identify the grown-row construction and parameters. The claim remains bounded to this seed-0 finite-runner row and does not establish a family-wide replacement or general geometry-sector theory.
+- **auditor confidence:** high
+
+### `gate_b_operator_cauchy_note_2026-05-10`
+
+- **Note:** [`GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md`](../../docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded null that the stated operator-Cauchy bridge fails the Gate B connectivity-tolerance resolution and ensemble gates, and is method-mismatched to the finite-box restricted strong-field closure row.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-448d5cbfee-gate_b_operator_cauchy_note_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Both tested Cauchy axes fail: the resolution-refinement and ensemble-refinement increment sequences have low R^2 and are non-monotone, while the restricted strong-field row has no continuum-refinement axis for this method.  _(class `C`)_
+- **chain closes:** True — The runner source computes the two observable-vector refinement sequences from the Gate B harness and the displayed fits reproduce the reported failing gates. The conclusion is clean only in the note's bounded scope: tested axes, chosen observable basis, and finite-box method mismatch, not a universal Gate B continuum no-go.
+- **rationale:** The cited authorities are retained-grade, and the primary runner is not a print-only or expected-value stub; it instantiates the tested harness and computes the reported increments. Independent recomputation from the packet's displayed increment tables reproduces Part 1 p=2.7869, R^2=0.5998 with non-monotonicity, and Part 2 r=-0.4675, R^2=0.1798 with non-monotonicity. Since both configured Cauchy gates fail and the strong-field closure row is an algebraic finite-box theorem rather than a Cauchy-limit target, the bounded no-go closes on its own terms.
 - **auditor confidence:** high
 
 ### `gate_b_poisson_self_gravity_note`

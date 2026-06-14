@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1504 |
-| Retained-grade rows, including boxed decorations | 1355 |
+| Applied audit verdicts | 1505 |
+| Retained-grade rows, including boxed decorations | 1356 |
 | Retained positive theorems | 211 |
-| Retained no-go rows | 208 |
+| Retained no-go rows | 209 |
 | Retained bounded rows | 892 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1462 |
+| Unaudited rows | 1461 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 46 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1467 |
-| Ready rows | 25 |
+| Total pending rows | 1466 |
+| Ready rows | 24 |
 | Cycle-break targets | 20 |
-| Critical pending | 327 |
-| High pending | 258 |
+| Critical pending | 331 |
+| High pending | 254 |
 | Medium pending | 429 |
-| Leaf pending | 453 |
+| Leaf pending | 452 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gate_b_operator_cauchy_note_2026-05-10`](../../docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_TOP_DOWN_INTEGRAL_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07`](../../docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12`](../../docs/HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
-- [`koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md) - leaf; unaudited
+- [`koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md) - medium; unaudited
+- [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,18 +81,18 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3430 |
-| Critical nodes | 601 |
-| High nodes | 473 |
-| Medium nodes | 910 |
-| Leaf nodes | 1446 |
+| Critical nodes | 606 |
+| High nodes | 468 |
+| Medium nodes | 904 |
+| Leaf nodes | 1452 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1590 descendants; score 134.636
-- `three_generation_observable_theorem_note` - critical; 1356 descendants; score 64.406
-- `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
-- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
+- `three_generation_observable_theorem_note` - critical; 1357 descendants; score 64.407
+- `observable_principle_from_axiom_note` - critical; 1280 descendants; score 62.823
+- `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
 - `plaquette_self_consistency_note` - critical; 1359 descendants; score 51.409
-- `key_terminology` - critical; 1396 descendants; score 50.448
-- `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1262 descendants; score 44.803
+- `key_terminology` - critical; 1397 descendants; score 50.449
+- `minimal_axioms_2026-05-03` - critical; 1293 descendants; score 49.838
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1263 descendants; score 44.804

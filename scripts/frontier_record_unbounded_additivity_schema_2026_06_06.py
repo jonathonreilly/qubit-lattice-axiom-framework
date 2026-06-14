@@ -6,8 +6,9 @@ record collections and durable realized outcomes. This runner checks the
 exact algebraic consequence relevant to the "bounded vs unbounded" question:
 
 * every fixed finite prefix is bounded by its fixed length;
-* the schema over arbitrary finite disjoint collections has no intrinsic
-  finite cap once nonzero produced records are supplied;
+* the schema over arbitrary supplied finite disjoint collections has no
+  intrinsic finite cap once nonzero records are supplied as theorem
+  hypotheses;
 * post-record counts are realized information, not a probability law.
 """
 
@@ -79,9 +80,10 @@ def frequencies(counts: dict[str, int]) -> dict[str, float]:
 
 def main() -> int:
     print("Record unbounded finite-additivity schema")
-    print("actual_current_surface_status: conditional-support")
+    print("actual_current_surface_status: source_side_reaudit_candidate")
     print("trace_class: upstream_support")
     print("reachability_to_target: supports")
+    print("theorem_scope: supplied_readout_context_and_supplied_nonzero_records")
     print("proposal_allowed: false")
     print("audit_required_before_effective_retained: true")
     print()
@@ -136,7 +138,7 @@ def main() -> int:
     print("\nD. audit-lane classifier consequences")
     gate_status = {
         "fixed_finite_prefix": "exact",
-        "arbitrary_finite_prefix_schema": "conditional_on_nonzero_disjoint_records",
+        "arbitrary_finite_prefix_schema": "theorem_with_supplied_nonzero_disjoint_records",
         "production_kernel": "open",
         "probability_law": "open",
         "iid_typicality": "open",
@@ -144,7 +146,7 @@ def main() -> int:
         "dial_selection": "open",
     }
     check("fixed finite prefix additivity is exact", gate_status["fixed_finite_prefix"] == "exact")
-    check("unbounded schema is not a production claim", gate_status["arbitrary_finite_prefix_schema"] == "conditional_on_nonzero_disjoint_records")
+    check("unbounded schema is a supplied-record theorem, not a production claim", gate_status["arbitrary_finite_prefix_schema"] == "theorem_with_supplied_nonzero_disjoint_records")
     check("production kernel remains open", gate_status["production_kernel"] == "open")
     check("probability law remains open", gate_status["probability_law"] == "open")
     check("IID typicality remains open", gate_status["iid_typicality"] == "open")
@@ -156,9 +158,9 @@ def main() -> int:
     if PASS > 0 and FAIL == 0:
         print(
             "VERDICT: Record finite additivity gives exact finite-prefix "
-            "readout and a conditional unbounded finite-collection schema. "
-            "The unbounded lift needs supplied nonzero disjoint records; it "
-            "does not derive production, probability, IID, rates, or a dial."
+            "readout and an unbounded finite-collection schema over supplied "
+            "nonzero disjoint records. It does not derive production, "
+            "probability, IID, rates, or a dial."
         )
         return 0
     print("VERDICT: record unbounded-additivity schema failed; do not use this artifact.")

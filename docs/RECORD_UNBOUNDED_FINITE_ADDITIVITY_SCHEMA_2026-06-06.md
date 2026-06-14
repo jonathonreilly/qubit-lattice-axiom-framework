@@ -2,12 +2,12 @@
 
 Date: 2026-06-06
 
-Status: conditional-support
+Status: source-side re-audit candidate; theorem with explicit supplied-record hypotheses
 
-actual_current_surface_status: conditional-support
+actual_current_surface_status: source_side_reaudit_candidate
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: "Exact finite-additivity schema over arbitrary finite pairwise-disjoint record collections, conditional on supplied nonzero produced records."
+theorem_surface_status: "Exact finite-additivity schema over arbitrary supplied finite pairwise-disjoint record collections in a supplied Record readout context."
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
@@ -17,9 +17,11 @@ bare_retained_allowed: false
 
 ## Summary
 
-The 2026-06-05 minimal axiom memo states Record as durable registration of the
-realized outcome, with scalar readout `I` finitely additive over finite
-pairwise-disjoint record collections and `I(empty)=0`.
+The 2026-06-05 minimal axiom memo
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) states Record
+as durable registration of the realized outcome, with scalar readout `I`
+finitely additive over finite pairwise-disjoint record collections and
+`I(empty)=0`.
 
 This is not bounded in the sense of a fixed global cap. For every fixed finite
 prefix length `N`, the readout of `N` unit records is bounded by `N`. But the
@@ -32,6 +34,10 @@ I(R_n) = n
 ```
 
 has no intrinsic finite upper bound as `n` ranges over finite integers.
+The quantifier is theorem-style: for each supplied finite pairwise-disjoint
+nonzero record collection in a supplied Record readout context, the readout is
+fixed by finite additivity. The theorem does not assert that the framework
+produces any particular record collection.
 
 This is the precise "bounded vs unbounded" split:
 
@@ -41,19 +47,25 @@ This is the precise "bounded vs unbounded" split:
 
 ## What This Derives
 
-From Lattice plus Record, with supplied nonzero pairwise-disjoint produced
-records:
+From Lattice plus Record, with a supplied Record readout context and supplied
+nonzero pairwise-disjoint records:
 
 1. finite additivity gives exact readout on each finite collection;
 2. `Z^3` supplies arbitrarily large finite index sets;
-3. no finite global bound follows across all finite disjoint collections;
+3. no finite global bound follows across the schema of all supplied finite
+   disjoint collections;
 4. each finite prefix remains an exact finite object, not an actually completed
    infinite history.
 
 No new axiom is needed for this principle. It is a consequence of finite
-additivity plus arbitrary finite collection size. The conditional part is the
-existence/production of nonzero records, which Record explicitly does not
-supply.
+additivity plus arbitrary finite collection size. Existence/production of a
+particular nonzero record collection is a theorem hypothesis, not a conclusion:
+Record explicitly does not supply a production law.
+
+## Dependencies
+
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) supplies the
+  Lattice site set and the Record finite-additivity/readout statement.
 
 ## Dynamics Implication
 

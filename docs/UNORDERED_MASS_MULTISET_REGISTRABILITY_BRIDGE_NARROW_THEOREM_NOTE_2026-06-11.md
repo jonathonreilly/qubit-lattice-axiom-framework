@@ -81,16 +81,16 @@ registrable class used by the unaudited precedent note named under
 Dependencies; the present note re-derives every leg it uses, so that note is
 context, not load-bearing.)
 
-**Premise (P-dep, named explicitly).** A registrable readout's per-record
-contribution is a function of the per-record **registered** datum — the
-`K`/CPT orbit of the realized central sector together with the supplied
-monitored central value `lambda_k` — and of nothing else. Justification: by
-(No-within-sector-data) and the record ontology, nothing sits behind the
-record for a readout to depend on; a "readout" depending directly on the
-unregistered configuration parameter `delta` (rather than through the
-registered sector data) is a pre-record reconstruction, not a record
-functional. P-dep is a reading of the Record boundary, not an extra import;
-it is nevertheless named here so a hostile auditor can attack it directly.
+**Premise (P-dep, supplied registrability-class boundary).** This theorem is
+scoped to readouts whose per-record contribution is a function of the
+per-record **registered** datum — the `K`/CPT orbit of the realized central
+sector together with the supplied monitored central value `lambda_k` — and of
+nothing else. The Record axiom alone does not derive that every physically
+interesting readout is in this P-dep class. A "readout" depending directly on
+the unregistered configuration parameter `delta` (rather than through the
+registered sector data) is outside this theorem's registrability class and is
+a pre-record reconstruction in the sense tested by the hostile candidates
+below.
 
 ## Theorem (unordered-mass-multiset registrability bridge)
 
@@ -224,14 +224,12 @@ settings, and nothing in B1–B3 selects among them.
   Record registrability constraints — is **not** proved here; the theorem
   operates within that class. This is the same standing residual carried by
   the registrable-readout precedent note.
-- **(W-dep) P-dep is a named premise.** The reading "per-record contributions
-  depend only on the registered datum" is grounded in the Record boundary's
-  no-within-sector-data clause and the record ontology (and is consonant with
-  the `realized_state` primitive's pointwise-evaluation discipline), but it
-  is stated as an explicit premise so the audit lane can stress it. A reader
-  who rejects P-dep must exhibit a record functional depending on unregistered
-  configuration data — which is the realist slip the framework's record
-  ontology excludes.
+- **(W-dep) P-dep is a supplied registrability-class premise.** This branch no
+  longer asks the audit lane to derive P-dep from the Record axiom alone. The
+  theorem says: within the supplied P-dep readout class, the registrable
+  content factors through the orbit-resolved unordered multiset. A future row
+  may try to derive P-dep as the only admissible physical readout class, but
+  that stronger claim is outside this note.
 - **(W-orbit-type) Orbit-type resolution is NOT erased.** `K`/CPT erases
   within-orbit order and orientation, not the singlet-vs-doublet orbit-type
   distinction: the singlet orbit-class readout is registrable (runner L6/L7),
@@ -264,12 +262,11 @@ scalars suffice to reconstruct the orbit-resolved unordered multiset (B2);
 and consequently all registrable content is invariant under
 `delta -> -delta` (B3). The hostile order/sign-sensitive candidates each
 violate a named clause, checked numerically. What is NOT proved: that the
-physical readout context is of this class (W-ctx), that P-dep is the only
-admissible reading of the Record boundary (W-dep — named premise), any
+physical readout context is of this supplied P-dep class (W-ctx/W-dep), any
 registry change, any `theta` statement, and any magnitude. A hostile reviewer
-should attack P-dep first, then the L2 range argument (W-range), then the
-claim that the orbit-resolved multiset (rather than the bare one) is the
-right bridge resolution (W-orbit-type).
+should attack the supplied P-dep scope first, then the L2 range argument
+(W-range), then the claim that the orbit-resolved multiset (rather than the
+bare one) is the right bridge resolution (W-orbit-type).
 
 ## What this note does NOT claim
 
@@ -307,8 +304,9 @@ re-verified in this note's runner):
   content needed here is re-derived in L5).
 - `REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`
   (`realized_state_primitive`, approved axiom-premise node) — pointwise-
-  evaluation discipline consonant with P-dep; not load-bearing (P-dep is
-  grounded in the Record boundary text and named as an explicit premise).
+  evaluation discipline gives context for why unregistered configuration
+  data are not automatically record data; not load-bearing, because P-dep is
+  now explicitly supplied as this theorem's registrability-class premise.
 - `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`
   (not a ledger row; synthesis context) — downstream context for what the
   mass multiset feeds; no content consumed.

@@ -2,10 +2,10 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / read-only audit companion
-**Claim type:** positive_theorem
-**Status:** exact-support source-side for measure/weight subdivision and
-finite normalization certificate semantics; audit_required_before_effective_retained=true;
-bare_retained_allowed=false.
+**Claim type:** bounded_theorem
+**Status:** bounded source-side re-audit candidate for the finite supplied-weight
+normalization lemma and measure/weight subdivision certificate semantics;
+audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
 **Cached log:**
@@ -20,8 +20,8 @@ with cache
 ## Result
 
 This block subdivides the `measure_weight_normalization` sub-bucket from the
-selector/dial subdivision and adds the finite normalization certificate
-interface:
+selector/dial subdivision and adds exactly one bounded theorem surface: the
+finite supplied-weight normalization certificate interface
 
 ```text
 supplied finite carrier
@@ -30,7 +30,8 @@ supplied finite carrier
   => normalized measure under that supplied weight rule
 ```
 
-Normalized measure is not selected dial.
+Normalized measure is not selected dial. This note does not claim a
+framework-derived measure/weight rule.
 
 On the current ledger snapshot:
 
@@ -38,11 +39,11 @@ On the current ledger snapshot:
 |---|---:|
 | `source_measure_or_rn_bridge` | 16 |
 | `trace_normalization_reference` | 10 |
-| `character_path_channel_weight` | 12 |
-| `selector_tangent_readout_weight` | 11 |
-| `generic_measure_weight_import` | 11 |
+| `character_path_channel_weight` | 14 |
+| `selector_tangent_readout_weight` | 13 |
+| `generic_measure_weight_import` | 14 |
 
-Total: `60` rows.
+Total: `67` rows.
 
 ## Meaning
 
@@ -70,7 +71,7 @@ measure. It cannot certify that this measure is physically selected.
 actual_current_surface_status: exact-support
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: "measure/weight rows are subdivided and finite supplied weights can be normalized, but normalization is not selector authority"
+bounded_surface_status: "finite supplied weights on a supplied finite carrier can be normalized when the exact total is positive; measure/weight row subdivision is read-only classifier context"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
@@ -84,6 +85,8 @@ bare_retained_allowed: false
 - Does not edit `docs/audit/data`.
 - Does not apply or predict audit verdicts.
 - Does not promote any row.
+- Does not claim a positive framework theorem deriving a measure, weight rule,
+  or selected dial.
 - Does not derive a prior, measure, source unit, trace state, or weight rule
   from Record.
 - Does not select or force a generation/Koide dial location.
@@ -105,7 +108,7 @@ The runner verifies:
 - the selector/dial helper source used to obtain the bucket is included in the
   packet;
 - bounded ledger-row export exists for the selected measure/weight rows;
-- the current `measure_weight_normalization` row count is `60`;
+- the current `measure_weight_normalization` row count is `67`;
 - lane counts match the current 2026-06-13 snapshot;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;

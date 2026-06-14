@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/multisite_pauli_group_check.py
-runner_sha256: 534cce783b7f19ac8d45d1be387f0ff1033149287654446605f8ff37f831f135
+runner_sha256: 14f9c72d940ffe9f8ab43afde3aac8b5a99bb195177ad8c6d6a4c2895edf5317
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.91
+elapsed_sec: 2.99
 status: ok
 ----- stdout -----
 ========================================================================
@@ -119,6 +119,12 @@ TEST 11: abelianization P_N/[P_N,P_N] is elementary-abelian of
   Test 9  (alt 2N+1 = site-Paulis + one Y):          PASS
   Test 10 (no 2N subset reaches full):               PASS
   Test 11 (abelianization rank 2N+1 lower bound):    PASS
+
+------------------------------------------------------------------------
+TEST 12: source note is narrowed to stipulated H=(C^2)^tensor N
+------------------------------------------------------------------------
+  narrowed source-scope guard: PASS
+
   OVERALL: PASS
 
 ----- stderr -----

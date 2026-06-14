@@ -1,0 +1,13 @@
+loop: multisite-pauli-stipulated-hilbert-scope-20260614
+target_claim_id: multisite_pauli_group_theorem_note_2026-05-02
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: stipulated_hilbert_scope_narrow
+files_touched:
+  - docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md
+  - scripts/multisite_pauli_group_check.py
+  - logs/runner-cache/multisite_pauli_group_check.txt
+status: ready_for_review
+next_exact_action: reviewer/auditor re-audits the stipulated-H theorem boundary
+stop_condition: PR opened for review

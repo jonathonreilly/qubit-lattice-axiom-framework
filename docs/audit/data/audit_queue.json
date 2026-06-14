@@ -3,7 +3,7 @@
     "critical": 327,
     "high": 258,
     "leaf": 496,
-    "medium": 430
+    "medium": 429
   },
   "cycle_break_target_count": 20,
   "cycle_break_targets": [
@@ -18118,34 +18118,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
-        "flavor_native_double_shift_corner_coupling_note_2026-05-30",
-        "flavor_block_count_native_via_jcs_note_2026-05-30"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.459,
-      "note_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/cl3_chiral_body_diagonal_source.py",
-      "transitive_descendants": 21
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18312,15 +18284,15 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.748,
       "note_path": "docs/WITHIN_SECTOR_ESS_ADEQUACY_CONCLUSION_SURVIVES_BOUNDED_THEOREM_NOTE_2026-06-12.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_within_sector_ess_adequacy_2026_06_12.py",
-      "transitive_descendants": 2
+      "transitive_descendants": 18
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45844,6 +45816,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 60,
-  "total_pending": 1511
+  "ready_count": 59,
+  "total_pending": 1510
 }

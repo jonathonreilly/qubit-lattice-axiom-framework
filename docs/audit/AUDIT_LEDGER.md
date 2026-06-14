@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 867 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1506 |
+| unaudited | 1505 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 31 |
+| ~~audited_conditional~~ | 32 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1309 |
-| `audited_conditional` | 31 |
+| `audited_conditional` | 32 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1823 |
+| `unaudited` | 1822 |
 
 | claim_type | count |
 |---|---:|
@@ -1448,6 +1448,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_upper_bound_dependency_edge_repair_note_2026-06-08` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3609,6 +3610,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The separator, non-equivalence for opposite Schur scalars, and idempotent factorisation follow algebraically from the retained central pseudoscalar identity/split plus Schur's lemma and Artin-Wedderburn. No physical bridge, lattice carrier, fitted input, or external comparator is used.
 - **rationale:** The mathematical chain is internally correct and closes from the retained one-hop authority plus standard finite-dimensional complex representation theory. The primary runner performs exact symbolic Pauli/idempotent/intertwiner checks and reports PASS=42, FAIL=0, with no helper opacity. Under the rubric, however, every load-bearing step is class A, there are zero D checks, and the note reduces to an algebraic consequence of a single retained upstream split theorem rather than a new independent first-principles computation.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04`
+
+- **Note:** [`CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md`](../../docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow algebraic axis-vs-h no-go on V=R^3: real-symmetric anticommuting H forces the singlet axis (1,1,1), while C3-symmetric real-symmetric cube operators do not select the free doublet h.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-a982d1e7c7-cl3_chiral_body_diagonal_axi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Every C3-equivariant native operator on V is circulant and has scalar doublet content, so C3-symmetric cube data cannot prefer a doublet direction h; selecting h is a C3-orbit-breaking import.  _(class `A`)_
+- **chain closes:** False — The anticommuting block calculation and the real-symmetric circulant/Reynolds calculation close the narrower axis-vs-h statement. As written, however, the Schur step is too broad: the real C3 commutant on the doublet is C, not just scalars, and J_cs is a non-scalar native C3-equivariant complex structure.
+- **rationale:** Independent block decomposition confirms that {H,Gamma_chi}=0 over real symmetric H leaves only singlet-doublet blocks, so the axis is forced and h is the free two-real-dimensional datum. The off-body-diagonal orbit, diagonal-anisotropy obstruction, and staggered/J_cs commuting-side checks also support the narrow conclusion. But the note states that every C3-equivariant native operator has a scalar doublet block and includes J_cs in that sentence; this is mathematically false unless narrowed to real-symmetric/Hermitian mass operators.
 - **auditor confidence:** high
 
 ### `cl3_color_automorphism_theorem`

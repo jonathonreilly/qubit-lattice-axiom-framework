@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 863 |
+| **retained_bounded** | 864 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1517 |
+| unaudited | 1516 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1303 |
+| `audited_clean` | 1304 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1834 |
+| `unaudited` | 1833 |
 
 | claim_type | count |
 |---|---:|
@@ -879,6 +879,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_two_stage_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `minimal_absorbing_horizon_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_bidirectional_trapping_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -12303,6 +12304,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The finite-range iterated-commutator lemma derives v_LR := 2·e·q·W·R, and inserting H_hop support data q=2, R=1, W=|m|+2d gives v_LR <= 4·e·(|m|+2d).  _(class `A`)_
 - **chain closes:** True — The ledger-scoped theorem closes by finite-dimensional support counting, operator-norm algebra, and the in-note LR tail estimate over retained-grade or accepted-premise inputs. The exact reconstructed H=-log(T)/a_tau locality and quasilocal tail-composition discussion is explicitly not ratified as proved and is outside the unconditional F1-F4 surface. The load-bearing step is analytic algebra over existing support-family inputs, so class A is more accurate than class C, though the runner includes nontrivial finite-matrix checks.
 - **rationale:** The ledger-scoped theorem closes by finite-dimensional support counting, operator-norm algebra, and the in-note LR tail estimate over retained-grade or accepted-premise inputs. The exact reconstructed H=-log(T)/a_tau locality and quasilocal tail-composition discussion is explicitly not ratified as proved and is outside the unconditional F1-F4 surface. The load-bearing step is analytic algebra over existing support-family inputs, so class A is more accurate than class C, though the runner includes nontrivial finite-matrix checks.
+- **auditor confidence:** high
+
+### `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite graph/count statement that a 6-NN no-diagonal lattice update has a one-edge-per-tick reachability front, fixing the tick-per-edge ratio but not physical metre/second scale.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-001720-3b1dadf38f-min_time_step_tied_to_the_la`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the local 6-NN no-diagonal update, one tick reaches exactly graph-distance 1, so the record tick and one nearest-neighbor lattice edge define the same elementary causal step while only the absolute physical scale remains supplied.  _(class `A`)_
+- **chain closes:** True — The independent check is direct: the 6 nearest-neighbor offsets have Euclidean norm 1, the 26-neighbor alternative has 26 offsets with maximum norm sqrt(3), and the 6-NN graph front on Z^3 advances one L1 edge per tick. The cited clock/rate authorities support the stated boundary that records give counts/order but not an absolute physical clock scale.
+- **rationale:** The load-bearing result is a finite graph reachability/algebraic closure from the retained nearest-neighbor causal-bound theorem plus the stated 6-NN no-diagonal lattice substrate. The runner source performs actual BFS and a bounded dispersion-gradient check rather than merely printing constants, and the core one-edge-per-tick result can be verified independently by enumerating the lattice offsets and L1 graph distance. The retained_no_go clock-rate authority and retained normalization gate support the scale boundary; under the prompt's primitive registry, the scale-reference primitive is an approved units premise and not a bounded-status import. The clean verdict is only for the graph/count ratio and its scale/no-go split, not for deriving any absolute physical metre/second value.
 - **auditor confidence:** high
 
 ### `minimal_absorbing_horizon_probe_note`

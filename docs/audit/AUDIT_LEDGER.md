@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 864 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1515 |
+| unaudited | 1514 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_conditional~~ | 29 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1305 |
-| `audited_conditional` | 28 |
+| `audited_conditional` | 29 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1832 |
+| `unaudited` | 1831 |
 
 | claim_type | count |
 |---|---:|
@@ -1452,6 +1452,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -9594,6 +9595,25 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Kernel-generic absorption occurs under any nonzero field for gamma > 0, while only the localized 1/r gravity field produces the TOWARD -> AWAY deflection crossover.  _(class `C`)_
 - **chain closes:** False — The live runner supports the gravity-specific crossover and gamma=0.5 escape suppression, but it contradicts the source's stronger detector-escape claim for any gamma > 0: several nonzero-field rows at gamma=0.1 or 0.2 still have escape ratios above 1.
 - **rationale:** Issue: the source conflates link-level imaginary-action damping with the detector escape observable. The factor exp(-k gamma L f) is below 1 for f > 0 and gamma > 0, but the runner's detector escape ratios are still above 1 for UNIFORM f=0.005 at gamma=0.1 and 0.2, UNIFORM f=0.01 at gamma=0.1 and 0.2, and GRAVITY at gamma=0.1 and 0.2. Why this blocks: the retained separation claim says kernel-generic absorption occurs under any nonzero field at gamma > 0, but the measured observable used by the note only shows suppression at sufficiently large gamma in this setup. Repair target: distinguish local per-link attenuation from total detector escape, or add a theorem/runner proving a thresholded escape-suppression criterion across gamma and field families. Claim boundary until fixed: safely claim only that gamma=0.5 suppresses detector escape for the tested nonzero fields, and that the 1/r gravity field uniquely shows the tested TOWARD -> AWAY centroid crossover by gamma=0.2.
+- **auditor confidence:** high
+
+### `kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional 1D/per-axis algebraic band theorem for a strict radius-1 translation-covariant unitary 2-band tick with K/CPT-paired spectrum and nonzero band winding; OS0 c_t/c_s identification is not audited as closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-002350-cd3fe95184-kinetic_isotropy_from_strict`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A nonzero-winding paired band is surjective on the quasi-energy circle, so the real degree-1 trace attains both +2 and -2; with the unitarity bound this forces beta = 0 and |gamma| = 1, hence the spectrum is e^{+-i(k+phi)} and |v| = 1.  _(class `A`)_
+- **chain closes:** False — The algebraic implication from P1-P4 to omega(k)=+-(k+phi) closes. The full kinetic-isotropy chain does not close from the restricted packet because the realized strict unitary CPT-paired winding tick and the B-W OS0 Wick/readout bridge remain named conditional premises rather than retained derivations.
+- **rationale:** The independent math check supports the core trace argument: P3 makes the 2-band spectrum paired, the trace is a real degree-1 Laurent polynomial, winding forces both trace endpoints, and unitarity then uniquely gives beta = 0 and |gamma| = 1. The runner source performs real symbolic and numerical algebra checks rather than merely printing constants, and it uses no external comparator. However, the packet still imports P1/P2/P3/P4 as readings or realization premises, and the registered kinetic-isotropy primitive grants only OS0 c_t = c_s, not the strict unitary tick, tick-level CPT pairing, winding carrier identification, or B-W bridge.
+- **open / conditional deps cited:**
+  - `LATTICE_NN_LIGHT_CONE_NOTE.md`
+  - `SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`
+  - `CPT_EXACT_NOTE.md`
+  - `KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md`
 - **auditor confidence:** high
 
 ### `kinetic_isotropy_primitive_irreducibility_support_2026-06-09`

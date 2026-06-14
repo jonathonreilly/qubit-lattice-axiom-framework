@@ -51078,7 +51078,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "kinetic_isotropy_primitive_irreducibility_support_2026-06-09"
+      "to": "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09"
     },
     {
       "from": "repo.front_door_status",
@@ -98185,7 +98185,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
+        "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
         "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
@@ -98195,7 +98195,7 @@
         "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b838989fff48e0d17def8cc4f0729c05c7e5d0ad42e620d014a3fb47acfc024a",
+      "note_hash": "9118c27bdba53581af945e0d070ba9ef5a47f59ebb467c98ac08aa5ca3f4d33d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

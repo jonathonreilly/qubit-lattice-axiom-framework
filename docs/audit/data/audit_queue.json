@@ -3,7 +3,7 @@
     "critical": 327,
     "high": 258,
     "leaf": 435,
-    "medium": 426
+    "medium": 425
   },
   "cycle_break_target_count": 20,
   "cycle_break_targets": [
@@ -18113,33 +18113,6 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 90
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_ward_identity_derivation_theorem",
-        "charged_lepton_two_higgs_canonical_reduction_note",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "sm_relativistic_dof_count_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py",
-      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44124,6 +44097,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 4,
-  "total_pending": 1446
+  "ready_count": 3,
+  "total_pending": 1445
 }

@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_gamma5_factor_bridge_no_go_note_2026-06-06"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
         "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
         "koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12",
         "koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12",
         "koide_pointer_record_degeneracy_d3_note_2026-05-31",
         "lepton_block_d12_prime_matching_no_go_note_2026-05-10",
-        "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12"
+        "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12",
+        "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "81d8bfbc869123af04b736fb08cfd0d517353edfb3b5d7314ed64a9f56ec60c9",
+      "note_hash": "76142184ed782731a385fb4b0fde0d3e1c555e8af62aed3089c179b447b4dc5e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

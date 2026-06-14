@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """Lane 5 (C1) A2 action-unit metrology obstruction verifier.
 
-The A2 route asks whether the retained dimensionless lattice inputs
+The A2 route asks whether the supplied dimensionless lattice inputs
 g_bare = 1, beta = 6, the plaquette/u0 surface, and the minimal APBC
 hierarchy block pin an absolute action quantum on P_A H_cell.
 
 They do not. The checks below keep those dimensionless inputs fixed while
 showing that a one-parameter family of (S_dim, kappa) readings gives the same
 Hilbert phases and lattice weights. A physical clock/source/action metrology
-map remains an open import.
+map remains an open import. The source note must not claim that g_bare is
+retained; it treats g_bare = 1 as a supplied parent-gate boundary.
 """
 
 from __future__ import annotations
@@ -16,6 +17,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import cmath
 import math
+from pathlib import Path
 
 from canonical_plaquette_surface import (
     CANONICAL_ALPHA_BARE,
@@ -27,6 +29,8 @@ from canonical_plaquette_surface import (
 
 
 TOL = 1.0e-12
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md"
 
 
 @dataclass
@@ -148,6 +152,35 @@ def main() -> int:
         "Tr([X,P])=0 for finite matrices but Tr(i*kappa*I_4)=4i*kappa",
     )
 
+    note_text = NOTE_PATH.read_text()
+    required_boundary_phrases = [
+        "supplied `g_bare = 1` parent gate",
+        "neither input is treated here as retained authority",
+        "does **not** claim retained `g_bare`",
+        "registered Tier-A derivation target `AC_phi_lambda`",
+        "does **not** close that gate",
+    ]
+    for phrase in required_boundary_phrases:
+        record(
+            checks,
+            f"source boundary phrase present: {phrase}",
+            phrase in note_text,
+            "mechanical guard against g_bare/source-status overclaim",
+        )
+
+    forbidden_boundary_phrases = [" ".join(parts) for parts in [
+        ("Can", "retained", "g_bare", "=", "1"),
+        ("retained", "`g_bare`", "packet"),
+        ("retained", "dimensionless", "lattice", "normalizations"),
+    ]]
+    for phrase in forbidden_boundary_phrases:
+        record(
+            checks,
+            f"source boundary phrase absent: {phrase}",
+            phrase not in note_text,
+            "old overclaim wording must stay absent",
+        )
+
     print("=" * 78)
     print("Lane 5 (C1) A2 action-unit metrology obstruction verifier")
     print("=" * 78)
@@ -161,7 +194,7 @@ def main() -> int:
     print(f"TOTAL: PASS={passed}, FAIL={failed}")
     if failed == 0:
         print(
-            "Conclusion: retained g_bare, plaquette/u0, APBC, and c_cell data "
+            "Conclusion: supplied g_bare, plaquette/u0, APBC, and c_cell data "
             "are dimensionless. They do not pin a dimensional kappa on P_A H_cell; "
             "A2 needs an additional clock/source/action metrology theorem."
         )

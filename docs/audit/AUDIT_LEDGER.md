@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 209 |
+| **retained** | 210 |
 | **retained_no_go** | 205 |
 | **retained_bounded** | 864 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1516 |
+| unaudited | 1515 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1304 |
+| `audited_clean` | 1305 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1833 |
+| `unaudited` | 1832 |
 
 | claim_type | count |
 |---|---:|
@@ -688,6 +688,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_sign_core_packet_gate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `kinetic_isotropy_primitive_irreducibility_support_2026-06-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9594,6 +9595,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** False — The live runner supports the gravity-specific crossover and gamma=0.5 escape suppression, but it contradicts the source's stronger detector-escape claim for any gamma > 0: several nonzero-field rows at gamma=0.1 or 0.2 still have escape ratios above 1.
 - **rationale:** Issue: the source conflates link-level imaginary-action damping with the detector escape observable. The factor exp(-k gamma L f) is below 1 for f > 0 and gamma > 0, but the runner's detector escape ratios are still above 1 for UNIFORM f=0.005 at gamma=0.1 and 0.2, UNIFORM f=0.01 at gamma=0.1 and 0.2, and GRAVITY at gamma=0.1 and 0.2. Why this blocks: the retained separation claim says kernel-generic absorption occurs under any nonzero field at gamma > 0, but the measured observable used by the note only shows suppression at sufficiently large gamma in this setup. Repair target: distinguish local per-link attenuation from total detector escape, or add a theorem/runner proving a thresholded escape-suppression criterion across gamma and field families. Claim boundary until fixed: safely claim only that gamma=0.5 suppresses detector escape for the tested nonzero fields, and that the 1/r gravity field uniquely shows the tested TOWARD -> AWAY centroid crossover by gamma=0.2.
 - **auditor confidence:** high
+
+### `kinetic_isotropy_primitive_irreducibility_support_2026-06-09`
+
+- **Note:** [`KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md`](../../docs/KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Model-family non-fixation: within the provided free Euclidean lattice scalar witness family, the listed current structures leave xi=c_t/c_s undetermined, supporting the registered kinetic-isotropy primitive as explicit.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-002029-b8c62c0813-kinetic_isotropy_primitive_i`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Two witness realizations with xi=1 and xi=2.5 both satisfy the shared positive-transfer/RP, H>=0, single-clock product, and six-nearest-neighbor reachability checks while disagreeing on c_t=c_s.  _(class `C`)_
+- **chain closes:** True — The runner source computes the xi-family rather than merely printing expected values, and the independent checks of arccosh positivity, L1 versus L2 front ratios, signed-permutation orbits, and the Pauli anticommutator rank agree. The closure is limited to the stated witness-family non-fixation scope, not to a universal theorem about all future dynamics.
+- **rationale:** The primitive-registry carve-out applies to the kinetic-isotropy and scale-reference primitive authorities, and the other non-meta cited authorities are retained-grade under the packet labels. The load-bearing step is a computed two-model witness showing that the listed structures are xi-blind, not a definition, renaming, or external numerical comparator. The verdict does not promote c_t=c_s as derived and does not supply Lorentz closure, dynamics, absolute scale, or downstream empirical content.
+- **auditor confidence:** medium
 
 ### `klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26`
 

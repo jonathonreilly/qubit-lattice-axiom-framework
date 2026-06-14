@@ -51078,11 +51078,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+      "to": "kinetic_isotropy_primitive_irreducibility_support_2026-06-09"
     },
     {
       "from": "repo.front_door_status",
-      "to": "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
+      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
@@ -98185,8 +98185,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
         "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
         "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12",
@@ -98195,7 +98195,7 @@
         "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bf99c1c607734742bd3e4592dc9e75256f3623709e0422393f51151a61a7bf34",
+      "note_hash": "b838989fff48e0d17def8cc4f0729c05c7e5d0ad42e620d014a3fb47acfc024a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

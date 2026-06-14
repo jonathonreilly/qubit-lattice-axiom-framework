@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 327,
-    "high": 260,
+    "high": 259,
     "leaf": 496,
     "medium": 438
   },
@@ -9880,30 +9880,34 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
+      "claim_id": "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
         "kinetic_isotropy_primitive",
-        "minimal_axioms",
-        "scale_reference_primitive",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
+        "lattice_nn_light_cone_note",
+        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
         "single_clock_uniqueness_scope_boundary_2026-06-06",
+        "cpt_exact_note",
+        "record_clock_rate_normalization_gate_2026-06-06",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
         "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
       ],
-      "direct_in_degree": 8,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.807,
-      "note_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md",
+      "load_bearing_score": 6.7,
+      "note_path": "docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/kinetic_isotropy_primitive_irreducibility_support_2026_06_09.py",
-      "transitive_descendants": 13
+      "runner_path": "scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py",
+      "transitive_descendants": 12
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17445,39 +17449,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_hierarchy_delta0_route_inventory_synthesis_2026_06_11.py",
-      "transitive_descendants": 12
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kinetic_isotropy_primitive",
-        "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
-        "lattice_nn_light_cone_note",
-        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
-        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
-        "single_clock_uniqueness_scope_boundary_2026-06-06",
-        "cpt_exact_note",
-        "record_clock_rate_normalization_gate_2026-06-06",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.7,
-      "note_path": "docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py",
       "transitive_descendants": 12
     },
     {
@@ -46134,5 +46105,5 @@
     }
   ],
   "ready_count": 67,
-  "total_pending": 1521
+  "total_pending": 1520
 }

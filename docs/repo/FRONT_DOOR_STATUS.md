@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1523 |
-| Retained-grade rows, including boxed decorations | 1367 |
+| Applied audit verdicts | 1524 |
+| Retained-grade rows, including boxed decorations | 1368 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 902 |
+| Retained bounded rows | 903 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1443 |
+| Unaudited rows | 1442 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 51 |
 | Audited renaming rows | 32 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1448 |
-| Ready rows | 6 |
+| Total pending rows | 1447 |
+| Ready rows | 5 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
-| Medium pending | 428 |
+| Medium pending | 427 |
 | Leaf pending | 435 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12`](../../docs/RD_FIXEDNESS_IS_ARROW_INVARIANT_ON_THE_RETAINED_FLOW_FAMILY_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`record_prerecord_instrument_kernel_gate_2026-06-06`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md) - medium; unaudited
 - [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
 - [`teleportation_native_transport_theory_note`](../../docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md) - medium; unaudited
@@ -81,8 +80,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 601 |
 | High nodes | 473 |
-| Medium nodes | 901 |
-| Leaf nodes | 1455 |
+| Medium nodes | 900 |
+| Leaf nodes | 1456 |
 
 Top load-bearing rows by graph score:
 

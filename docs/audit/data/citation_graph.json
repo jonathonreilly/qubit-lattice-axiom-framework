@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12"
     },
     {
@@ -98182,7 +98178,6 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12",
         "rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12",
         "record_prerecord_instrument_kernel_gate_2026-06-06",
         "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
@@ -98190,7 +98185,7 @@
         "transfer_trace_correspondence_fixes_kernel_normalization_on_retained_surface_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "99331f6c217f7bff6bffb4c02340a4ff4a73ed55e38467d773ade80fd14184e2",
+      "note_hash": "ef0903bbcbb83033d3efbc0745d0014789f694103c1c591c278a8949bbfa825d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -112935,8 +112930,8 @@
       "open_gate": 170,
       "positive_theorem": 616
     },
-    "edge_count": 12875,
-    "leaf_count": 1105,
+    "edge_count": 12874,
+    "leaf_count": 1106,
     "node_count": 3430,
     "root_count": 1064,
     "runners_with_path": 3010

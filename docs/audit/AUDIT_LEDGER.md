@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 870 |
+| **retained_bounded** | 871 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1500 |
+| unaudited | 1499 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1312 |
+| `audited_clean` | 1313 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1817 |
+| `unaudited` | 1816 |
 
 | claim_type | count |
 |---|---:|
@@ -1423,6 +1423,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -20467,6 +20468,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the clean attractive subset of the fixed G=5, mu^2=0.22 open-boundary Wilson two-orbital sweep, all 25 configurations are ATTRACT and CLEAN and the global fit is |a_mut| ~ d^-3.669 with R^2=0.9896.  _(class `C`)_
 - **chain closes:** True — The runner recomputes all 25 configurations and asserts the aggregate counts, global exponent/R^2, per-side exponents, and steeper-than-Newton fixed-surface check against the note's quoted values. The note's screening addendum correctly prevents reading this as a screening-independent universality class.
 - **rationale:** The bounded claim closes because the live runner and SHA-pinned cache reproduce the 25-run fixed-surface sweep and assert every quoted fit used by the note. The note explicitly labels the fit as post-selected on clean attractive rows and narrows interpretation with the later screening addendum, so no hidden universal Newton-law or screening-independent claim is being retained. Residual risk is limited to future misuse outside fixed G=5, mu^2=0.22 or outside the declared post-selected methodology.
+- **auditor confidence:** high
+
+### `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`WITHIN_SECTOR_ESS_ADEQUACY_CONCLUSION_SURVIVES_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/WITHIN_SECTOR_ESS_ADEQUACY_CONCLUSION_SURVIVES_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite L=3, k=3 prefix-sector ESS adequacy for seeds 4242@9, 99@7, and 7@4, with ESS >= 8 and a fixed seeded 300-draw permutation-null p95 diagnostic for delta = |ch2| - |ch1|^4.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-011046-d4a50e0aeb-within_sector_ess_adequacy_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With ESS = (sum w)^2/sum w^2 and ESS >= 8, 16/24 sectors survive, seed 7 is untested, and the two surviving seeded records stay below their fixed 300-draw permutation-null p95 diagnostics.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the finite operator system, branch weights, sector moments, ESS values, and permutation-null diagnostics directly rather than reading the contested numbers from another note. Independent arithmetic checks on the displayed table support the 16/24 adequacy count and the two record-versus-null inequalities within the stated finite diagnostic scope.
+- **rationale:** The load-bearing result is a bounded first-principles finite computation, not a renaming or external comparator match. The hard-coded constants fix the experiment, seeds, depths, ESS threshold, and null draw count; the adequacy pattern, weighted records, and p95 diagnostics are computed from the finite branch data. The conclusion is clean only in the stated bounded sense: it does not prove an all-permutations null theorem or a broader unseeded within-sector claim.
 - **auditor confidence:** high
 
 ### `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`

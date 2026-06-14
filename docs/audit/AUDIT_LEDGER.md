@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 881 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1479 |
+| unaudited | 1478 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1327 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1796 |
+| `unaudited` | 1795 |
 
 | claim_type | count |
 |---|---:|
@@ -1465,6 +1465,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1714,6 +1715,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
   - `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`
   - `LEPTON_PHASE_MODULUS_SEPARATION_NO_GO_2026-06-06.md`
+- **auditor confidence:** high
+
+### `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`
+
+- **Note:** [`ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite-dimensional decomposition of the AC_phi_lambda species bridge into vacuous naming, record-determined sector-to-pattern registration given a supplied readout context, surviving carrier-locus residual, and bounded color/generation contrast.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-021420-359803d435-acphilambda_species_bridge_r`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied central-sector context {P_k}, the realized records fix iota(k)=tr(P_k M)/tr(P_k) uniquely for a nondegenerate pattern, while the delta -> -delta counterfactual changes the assignment, so the realized-state primitive classifies the assignment as registered data rather than derivation output.  _(class `A`)_
+- **chain closes:** False — The displayed finite algebra checks close conditionally, and an independent route verifies the key eigenvalue, permutation, Hamming-weight, Wilson-staircase, and counterfactual identities. The audit-grade chain still depends on non-retained/meta or open support for the readout-context methodology and contrast/support surfaces, so the conclusion is not clean from retained-grade inputs alone.
+- **rationale:** The runner source performs real finite-dimensional algebra rather than printing constants, and no PDG/comparator value or tuned scale enters. The realized-state primitive is correctly treated as an approved primitive and is not a bounded-status source. However, the decomposition relies on the Record-outcome observable principle as a meta/proposed methodology and on registry/open or unaudited support surfaces for parts of the relocation and contrast, so audited_clean is blocked by dependency status rather than by a math failure.
+- **open / conditional deps cited:**
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+  - `RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`
+  - `ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md`
+  - `FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md`
+  - `COLOR_EINSELECTION_POINTER_FRAME_FORK_IS_A_UNISTOCHASTIC_IRREDUCIBILITY_CRITERION_NARROW_THEOREM_NOTE_2026-06-09.md`
 - **auditor confidence:** high
 
 ### `action_crossover_note`

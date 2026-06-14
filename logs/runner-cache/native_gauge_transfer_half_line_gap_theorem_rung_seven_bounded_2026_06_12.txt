@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_half_line_gap_theorem_rung_seven_bounded_2026_06_12.py
+runner_sha256: ae82b26ba4998665761a40ea521581962df4445f77a9957d6752478b62374278
+timeout_sec: 540
+exit_code: 0
+elapsed_sec: 7.16
+status: ok
+----- stdout -----
+Native gauge-transfer half-line gap rung-seven bounded attempt runner
+MODE_MAX=120
+Finite diagnostics are not promoted to half-line proof constants.
+
+PASS: note declares independent audit-lane status authority
+PASS: note explicitly does not prove or assemble the half-line theorem
+PASS: note links primary runner and cache
+PASS: note states no new imports or fitted selector
+PASS: note quotes the exact rung-six missing lemma
+PASS: note quotes the rung-six saddle structure
+PASS: note quotes the large-beta limit as characterization, not uniform bound
+PASS: note restates rung-five trajectory and certificate scope
+PASS: one-hop authorities are markdown links
+PASS: note does not write an audit-status token
+PASS: note avoids overreach phrases
+PASS: negative-claim discipline gate is visible and demoted
+PASS: dimension function remains exact six-neighbor harmonic on samples
+      checked boundary and interior samples
+PASS: small finite true-ratio diagnostic decreases after beta=2
+      beta=2: 0.392271233009, beta=4: 0.293114186118, beta=8: 0.237819602431, beta=12: 0.222271387294
+PASS: small finite ratio derivative diagnostic is negative at sampled beta
+      beta=4: d=-3.321092e-02, beta=8: d=-6.003828e-03, beta=12: d=-2.539845e-03
+PASS: normalized finite-block operator derivative is sign-indefinite
+      min=-7.710298e-03, max=1.281317e-02
+PASS: Wilson saddle residual diagnostic is visible and nonzero
+      beta*(true/saddle-1)=-0.145075, -0.354759, -0.320467, -1.422196, -2.526420, -2.284545, -2.458928
+PASS: finite reduced-operator falsifiers react to wrong structure
+      correct=0.203758341733, saddle2=0.273042774766, j1/5=0.172664616936
+PASS: note verification section names the expected runner total
+
+TOTAL: PASS=19, FAIL=0
+
+----- stderr -----
+

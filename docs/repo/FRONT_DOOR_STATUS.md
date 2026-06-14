@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1448 |
-| Retained-grade rows, including boxed decorations | 1320 |
+| Applied audit verdicts | 1449 |
+| Retained-grade rows, including boxed decorations | 1321 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 205 |
-| Retained bounded rows | 862 |
+| Retained bounded rows | 863 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1518 |
+| Unaudited rows | 1517 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1523 |
-| Ready rows | 65 |
+| Total pending rows | 1522 |
+| Ready rows | 66 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 260 |
-| Medium pending | 440 |
+| Medium pending | 439 |
 | Leaf pending | 496 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gate_b_connectivity_tolerance_note`](../../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md) - medium; unaudited
 - [`min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`](../../docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
 - [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
 - [`free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12`](../../docs/FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05`](../../docs/KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md) - medium; unaudited
 - [`signed_gravity_aps_locked_source_action_proposal_note`](../../docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md) - medium; unaudited
+- [`cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04`](../../docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

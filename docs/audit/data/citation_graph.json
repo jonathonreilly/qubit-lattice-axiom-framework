@@ -51078,10 +51078,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
         "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
         "gate_b_connectivity_tolerance_note",
         "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30"
+        "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
+        "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "aa4ac8c11f80ba731f211f39f13dccc56d8b6c4d709220188f743f314e1eef24",
+      "note_hash": "0d1300b3f41834eca994049a71f1a4eb8d84ffb83fdff44d404edc004073c44b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

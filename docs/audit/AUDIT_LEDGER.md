@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 876 |
+| **retained_bounded** | 877 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1494 |
+| unaudited | 1493 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1318 |
+| `audited_clean` | 1319 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1811 |
+| `unaudited` | 1810 |
 
 | claim_type | count |
 |---|---:|
@@ -325,6 +325,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4362,6 +4363,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The finite-Harper flux-response curvature sign-change boundary is bisection-located to 1e-3 at the three sampled (m,T) instances, with q=32 size probes and each sampled mu* strictly between |m| and sqrt(m^2+16).  _(class `C`)_
 - **chain closes:** True — The runner constructs the finite Harper matrices and zero-field spectra, computes chi from the spectra, and uses sign-preserving bisection rather than importing the displayed roots. Independent arithmetic confirms the bisection widths imply <=1e-3 midpoint localization, the two stated monotone orderings hold, and all three roots lie strictly between |m| and sqrt(m^2+16).
 - **rationale:** The load-bearing step is a first-principles finite numerical computation from the stated lattice operator, not a renaming, comparator match, or cross-note value import. The sole cited authority is retained_bounded, and the present note keeps the conclusion bounded to sampled finite-field instances. The explicit open landmark-identification language is not used as a premise for a stronger identification; the audited claim is only strict between-ness and non-anchoring at the sampled points.
+- **auditor confidence:** high
+
+### `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D2_TRUNCATED_FLOW_FROZEN_RATIO_ACCUMULATED_BUDGET_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D2_TRUNCATED_FLOW_FROZEN_RATIO_ACCUMULATED_BUDGET_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite d=2, E=0, free quadratic checkerboard Schur trajectory on L=16 with d2={4,8} truncation for four steps, plus the stated L=12/L=16 retained-block resolvent-budget stability probe.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-012720-62a0bbdf48-d2_truncated_flow_frozen_rat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From step 2 onward on the scoped L=16 truncated trajectory the next kept/drop block has H_kd = 0, so the Schur tail vanishes and the kept diag and c4 couplings remain invariant.  _(class `C`)_
+- **chain closes:** True — Within the finite scoped trajectory, the runner constructs the Hamiltonian and Schur complements directly and computes the zero H_kd blocks, frozen c4/diag ratio, truncation-error ordering, and retained-block budgets. The algebraic implication H_kd=0 => zero Schur tail closes the invariance step; the 3.21e-2 ceiling and 1% factor are labeled regression/stability gates, not derived universal constants.
+- **rationale:** The packet has no cited upstream authorities and no external comparator inputs. The runner source is not a print-only certificate: it builds the finite lattice operator, applies exact checkerboard Schur steps, truncates by the stated shells, and computes the displayed trajectory, errors, H_kd norms, identity control, and resolvent-budget values. An independent finite-matrix recomputation confirms the load-bearing L=16 numbers and budget values. The clean verdict is only for the finite scoped trajectory and stability probe, not for a validated RG flow or all-L theorem.
 - **auditor confidence:** high
 
 ### `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12`

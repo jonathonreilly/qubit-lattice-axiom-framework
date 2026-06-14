@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_records_objectivity_conditional_note_2026-05-31"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_taste_cube_cyclic_source_descent_note_2026-04-18"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_records_objectivity_conditional_note_2026-05-31",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
         "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12",
         "post_record_measure_weight_normalization_subdivision_2026-06-06",
         "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
         "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
-        "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
+        "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
+        "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "aeadbf014e4414b2ae74f5f3f421a447936461b4cc36e526f6c1cf1c9f8a0716",
+      "note_hash": "094ca889cedc50f418b0ed1226fec7a58970003d48e0ca376e0f8baac3685f55",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -112941,7 +112941,7 @@
       "positive_theorem": 616
     },
     "edge_count": 12876,
-    "leaf_count": 1111,
+    "leaf_count": 1110,
     "node_count": 3430,
     "root_count": 1064,
     "runners_with_path": 3010

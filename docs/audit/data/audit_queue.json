@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 258,
-    "leaf": 477,
+    "leaf": 476,
     "medium": 429
   },
   "cycle_break_target_count": 20,
@@ -18118,30 +18118,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_realization_gate_note_2026-05-03"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_taste_cube_cyclic_source_descent.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18260,6 +18236,39 @@
       "ready": true,
       "runner_path": "scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py",
       "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "realized_state_primitive",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
+        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py",
+      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -31343,39 +31352,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "realized_state_primitive",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
-        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
-        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
-        "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
-        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45292,6 +45268,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 47,
-  "total_pending": 1491
+  "ready_count": 46,
+  "total_pending": 1490
 }

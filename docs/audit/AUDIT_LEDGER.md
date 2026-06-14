@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 879 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1486 |
+| unaudited | 1485 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1324 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1803 |
+| `unaudited` | 1802 |
 
 | claim_type | count |
 |---|---:|
@@ -1479,6 +1479,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_taste_cube_cyclic_source_descent_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -11090,6 +11091,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The signed-eigenvalue Q=2/3 readout belongs to the Gamma_chi-commuting C3 circulant H=aI+bC+bbar C^2, while any nonzero Gamma_chi-anticommuting Hermitian H has spectrum {-lambda,0,+lambda} and no nonzero circulant lies in that anticommuting class.  _(class `A`)_
 - **chain closes:** True — Gamma_chi is an invertible circulant, so any circulant H commutes with Gamma_chi; imposing anticommutation as well gives 2H Gamma_chi=0 and hence H=0. A Gamma_chi-anticommuting Hermitian operator is off-diagonal between the + and - Gamma_chi subspaces, giving the odd-dimensional spectrum {-lambda,0,+lambda}, so its eigenvalue-readout denominator vanishes rather than producing the Brannen Q=2/3 value.
 - **rationale:** The derivation is class-A algebra over retained-grade inputs plus direct symbolic identities; no empirical comparator or fitted value is used as a proof input. The no-go is correctly scoped to the proposed identification of signed eigenvalue readout with same-factor Gamma_chi chirality, and the note leaves multi-factor chirality, readout selection, and r=1/2 dynamics open. The N1-N8 guard passes for this narrow route-demarcation claim.
+- **auditor confidence:** high
+
+### `koide_taste_cube_cyclic_source_descent_note_2026-04-18`
+
+- **Note:** [`KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional C3 taste-cube averaging and Schur-compatible T1 reduction descend to the same three Hermitian cyclic response channels B0,B1,B2, conditional on the physical staggered-Dirac carrier parent.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-015026-275a0339cf-koide_taste_cube_cyclic_sour`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because T1 is invariant under U, P1 A8(X) P1 = A3(P1 X P1), and a U-covariant Schur-compatible parent has S(M) commuting with C, so the charged-sector response lies in span_R{B0,B1,B2}.  _(class `A`)_
+- **chain closes:** True — The internal matrix-algebra chain closes: the projector-average identity, orbit-channel reductions, cyclic-basis normalizations, and Schur covariance all follow from the stated finite-dimensional setup. The physical interpretation remains conditional on the cited staggered-Dirac realization authority.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the stated C8/T1/C3 data, not a renaming or tuned numerical match. An independent normalization check gives Gram diag(3,6,6) for B0,B1,B2 and confirms the stated 1/3, 1/6, factor-3 orbit-channel, and sign conventions. However, the one-hop cited authority docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md is explicitly marked unaudited/bounded and carries open residuals, so the row cannot receive audited_clean under the dependency rule.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `koide_three_measures_three_observables_note_2026-05-31`

@@ -51193,10 +51193,6 @@
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
-      "from": "repo.front_door_status",
-      "to": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
-    },
-    {
       "from": "repo.repo_organization",
       "to": "key_terminology"
     },
@@ -98340,11 +98336,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
+        "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ed5b813447267a6648447bb0f532f8589a425a88a168cf4d9df75e812897b4e3",
+      "note_hash": "fc0b1a0ad4f9d48396197b27f858c80307e9a97725336344266ca4ad92c6e677",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113109,8 +113104,8 @@
       "open_gate": 170,
       "positive_theorem": 615
     },
-    "edge_count": 12898,
-    "leaf_count": 1108,
+    "edge_count": 12897,
+    "leaf_count": 1109,
     "node_count": 3434,
     "root_count": 1063,
     "runners_with_path": 3014

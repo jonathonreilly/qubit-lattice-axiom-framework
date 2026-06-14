@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 906 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1444 |
+| unaudited | 1443 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1355 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1761 |
+| `unaudited` | 1760 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 598 |
 | `high` | 462 |
-| `medium` | 864 |
-| `leaf` | 1368 |
+| `medium` | 861 |
+| `leaf` | 1371 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -1536,6 +1536,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -18706,6 +18707,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using K = U Sigma V^dag, unitary block conjugation reduces M = [[alpha I,K],[-K^dag,alpha I]] to direct two-by-two blocks [[alpha,sigma_i],[-sigma_i,alpha]], so det(M)=prod_i(alpha^2+sigma_i^2)>0 for alpha>0.  _(class `A`)_
 - **chain closes:** True — The algebra closes independently of the runner: with W=diag(U,V), W^dag M W has off-diagonal Sigma and -Sigma, and a permutation of basis exposes the 2x2 block direct sum. Each factor alpha^2+sigma_i^2 is strictly positive because alpha>0 and sigma_i>=0.
 - **rationale:** The determinant formula is a standard finite-dimensional algebraic identity once the balanced eps decomposition and supplied alpha I diagonal surface are assumed. The note explicitly does not claim that M_W = r d I is framework-forced, does not cover the standard Wilson nearest-neighbour Laplacian, and does not assert parent-row reflection positivity or Wilson-sector sign-problem closure. On that scoped supplied surface, no open dependency or hidden bridge theorem is imported. The runner source performs actual finite-matrix construction and factorisation checks, but the clean verdict rests on the independent SVD/block determinant argument.
+- **auditor confidence:** high
+
+### `statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`
+
+- **Note:** [`STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the algebraic reduction that, on the retained Gleason/Busch Born surface, a supplied product-form joint instance yields multiplicative weights and the stated agreement-conditioning flow; the product-form premise itself was not audited as derived.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-163724-d968432376-statistics_atom_reduces_to_p`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For two registrations carried by a product instance sigma tensor sigma, the Born trace on P_j tensor P_k factors as Tr(sigma P_j) Tr(sigma P_k), so agreement conditioning gives x -> x^2 and r -> 2r^2.  _(class `A`)_
+- **chain closes:** False — The trace-factorization and ratio algebra close from the cited retained-grade Born surface once the product-form instance is supplied. The missing step is a retained-grade derivation or accepted premise that repeated registrations are in fact carried by product-form instances sigma tensor sigma.
+- **rationale:** The cited Gleason authority is retained, the Busch authority is retained_bounded and therefore retained-grade under the rubric, and the minimal-axiom memo is an accepted premise. The runner source performs real symbolic trace and conditioning checks rather than merely printing constants, and an independent algebra check agrees with the displayed identities. However the source note explicitly names, and does not discharge, the product-form/independence premise needed to turn repeated registrations into sigma tensor sigma instances. That open bridge prevents a clean closure of the statistics atom itself.
 - **auditor confidence:** high
 
 ### `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26`

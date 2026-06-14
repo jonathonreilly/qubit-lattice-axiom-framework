@@ -126,7 +126,10 @@ def spatial_pair(
     eta0[index[(0, 0)]] = 1.0
     boundary = matrix_exponential_symmetric(jmat, tau_boundary) @ eta0
     amplitude = np.linalg.matrix_power(transfer, DEPTH) @ boundary
-    rho = amplitude / amplitude[index[(0, 0)]]
+    normalizer = amplitude[index[(0, 0)]]
+    if abs(normalizer) <= 1.0e-14:
+        raise ValueError("normalized rho requires z_(0,0) != 0")
+    rho = amplitude / normalizer
     return transfer, boundary, amplitude, rho
 
 
@@ -262,6 +265,8 @@ def main() -> int:
     rho_a_swap = float(np.max(np.abs(swap @ rho_a - rho_a)))
     rho_b_swap = float(np.max(np.abs(swap @ rho_b - rho_b)))
     rho_gap = float(np.max(np.abs(rho_a - rho_b)))
+    z00_a = float(amp_a[index[(0, 0)]])
+    z00_b = float(amp_b[index[(0, 0)]])
     rho00_a = float(rho_a[index[(0, 0)]])
     rho00_b = float(rho_b[index[(0, 0)]])
 
@@ -322,6 +327,13 @@ def main() -> int:
         and "eta_6(e)" in eval_reduction_note
         and "v_6 = sum_(p,q) z_(p,q)^env(6) chi_(p,q)" in eval_reduction_note,
         detail="the right-hand beta-side datum is common across all three sample points once the premise identities are supplied",
+        bucket="SUPPORT",
+    )
+    check(
+        "the formal reduction note restricts normalized rho to the nonzero-normalizer locus",
+        "`z_(0,0) != 0`" in eval_reduction_note
+        and "`z_(0,0)^env(6) != 0`" in eval_reduction_note,
+        detail="normalized rho is not asserted for arbitrary zero-normalizer data",
         bucket="SUPPORT",
     )
     check(
@@ -402,6 +414,11 @@ def main() -> int:
         and abs(rho00_a - 1.0) < 1.0e-12
         and abs(rho00_b - 1.0) < 1.0e-12,
         detail=f"rho-gap={rho_gap:.3e} on the same listed finite structural surface",
+    )
+    check(
+        "the finite witness normalizers are nonzero before rho normalization",
+        abs(z00_a) > 1.0e-12 and abs(z00_b) > 1.0e-12,
+        detail=f"z00_A={z00_a:.12e}, z00_B={z00_b:.12e}",
     )
     check(
         "the same universal left operator sends those two admissible normalized beta-side vectors to different normalized three-sample triples",

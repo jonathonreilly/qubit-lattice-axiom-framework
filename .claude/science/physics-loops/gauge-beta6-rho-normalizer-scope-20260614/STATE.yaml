@@ -1,0 +1,24 @@
+loop_slug: gauge-beta6-rho-normalizer-scope-20260614
+goal: "Repair the gauge beta=6 seam-reduction audited conditional by restricting normalized rho to z_(0,0) != 0."
+target_claim_id: gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17
+target_status: proposed_promoted_after_independent_audit
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+branch: physics-loop/gauge-beta6-rho-normalizer-scope-20260614
+base: origin/main@88183eb6401ec7709f44ddee3ea48cda9ccb7ebe
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md
+  - scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.txt
+runner:
+  command: "PYTHONPATH=scripts python3 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py"
+  result: "TOTAL: PASS=15, FAIL=0"
+open_imports:
+  - "Independent audit must decide whether the formal algebraic scope is now closed."
+no_go_routes:
+  - "Do not assert normalized rho for zero-normalizer abstract data."
+  - "Do not claim beta=6 Wilson/Haar physical-stack closure."
+  - "Do not edit audit verdict/status authority files."
+next_exact_action: "Open PR for reviewer extraction and independent audit rerun."
+stop_condition: "Source note, runner guard, cache, loop pack, and PR are complete."

@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gate_b_dynamics_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gate_b_operator_cauchy_note_2026-05-10"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
         "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
         "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
         "flavor_detr_default_full_exercise_note_2026-05-30",
         "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
         "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
-        "gate_b_dynamics_note"
+        "gate_b_dynamics_note",
+        "gate_b_operator_cauchy_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "409b0e1e1edde1bf479d10785a5be21c6a1a6452bd0b0b31a96dcf40f4a04a44",
+      "note_hash": "2fe38562ac140c6647c6380b53f2cbc61e8b5fc3aeee7d9b15898c987fd5f86a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

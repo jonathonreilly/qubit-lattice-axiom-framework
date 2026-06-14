@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 878 |
+| **retained_bounded** | 879 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1492 |
+| unaudited | 1491 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1320 |
+| `audited_clean` | 1321 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1809 |
+| `unaudited` | 1808 |
 
 | claim_type | count |
 |---|---:|
@@ -102,29 +102,29 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1590 | 134.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1357 | 64.41 | `audited_clean` | **retained** |
-| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1279 | 62.82 | `unaudited` | unaudited |
+| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1280 | 62.82 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1358 | 51.41 | `audited_clean` | **retained_bounded** |
-| 6 | `key_terminology` | meta | critical | 1396 | 50.45 | `unaudited` | meta |
-| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1292 | 49.84 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1262 | 44.80 | `unaudited` | unaudited |
-| 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1262 | 43.80 | `unaudited` | unaudited |
-| 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1262 | 43.30 | `unaudited` | unaudited |
-| 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1262 | 42.80 | `audited_clean` | **retained_bounded** |
-| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1274 | 41.82 | `unaudited` | unaudited |
-| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1346 | 40.90 | `audited_failed` | ~~audited_failed~~ |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1359 | 51.41 | `audited_clean` | **retained_bounded** |
+| 6 | `key_terminology` | meta | critical | 1397 | 50.45 | `unaudited` | meta |
+| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1293 | 49.84 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1263 | 44.80 | `unaudited` | unaudited |
+| 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1263 | 43.80 | `unaudited` | unaudited |
+| 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1263 | 43.30 | `unaudited` | unaudited |
+| 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1263 | 42.80 | `audited_clean` | **retained_bounded** |
+| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1275 | 41.82 | `unaudited` | unaudited |
+| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1347 | 40.90 | `audited_failed` | ~~audited_failed~~ |
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1389 | 39.44 | `audited_clean` | **retained** |
-| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1307 | 38.85 | `audited_clean` | **retained_no_go** |
-| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1285 | 38.83 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1374 | 36.92 | `audited_clean` | **retained** |
-| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 36.80 | `unaudited` | unaudited |
-| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1304 | 35.85 | `audited_clean` | **retained_bounded** |
-| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1264 | 35.30 | `unaudited` | unaudited |
-| 21 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 35.30 | `unaudited` | unaudited |
+| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1308 | 38.85 | `audited_clean` | **retained_no_go** |
+| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1286 | 38.83 | `audited_clean` | **retained_bounded** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1375 | 36.93 | `audited_clean` | **retained** |
+| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 36.80 | `unaudited` | unaudited |
+| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1305 | 35.85 | `audited_clean` | **retained_bounded** |
+| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1265 | 35.31 | `unaudited` | unaudited |
+| 21 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 35.30 | `unaudited` | unaudited |
 | 22 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 283 | 34.65 | `unaudited` | unaudited |
-| 23 | `minimal_axioms_2026-04-11` | meta | critical | 1266 | 32.81 | `unaudited` | meta |
-| 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 32.80 | `unaudited` | unaudited |
-| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1262 | 32.30 | `unaudited` | unaudited |
+| 23 | `minimal_axioms_2026-04-11` | meta | critical | 1267 | 32.81 | `unaudited` | meta |
+| 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 32.80 | `unaudited` | unaudited |
+| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1263 | 32.30 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -328,6 +328,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4403,6 +4404,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because the odd-parity sublattice has no internal nearest-neighbor bonds, h_oo = μI and the step-1 Schur complement gives diag′ = μ − 6t²/μ, face-diagonal entries −2t²/μ, axial entries −t²/μ, and no other generated couplings; the parity lemma follows from d_i² ≡ d_i mod 2.  _(class `C`)_
 - **chain closes:** True — Manual path counting independently gives six two-step returns, two common odd neighbors for face diagonals, one for axial distance two, and no other two-step endpoints; the Schur denominator (E−μ) supplies the stated negative signs and μ−E covariance. The parity lemma is the integer identity d_i²−d_i even, summed over three coordinates.
 - **rationale:** The cited Minimal Axioms authority is explicitly flagged as an accepted axiom premise, and the claim uses only its cubic Z^3 nearest-neighbor adjacency within the note's bounded free one-orbital setup. The runner source constructs the lattice Hamiltonian, parity blocks, Schur complement, path-count matrix, E-shift check, and retained resolvent check rather than merely printing pass lines. An independent two-step path count confirms the displayed coefficients, signs, absence of beyond-shell couplings, and parity-preservation statement.
+- **auditor confidence:** high
+
+### `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D3_STEP2_RANGE_GROWTH_PERIOD_CLASS_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D3_STEP2_RANGE_GROWTH_PERIOD_CLASS_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** d=3 free E=0 finite periodic boxes L=8,10,12,14 with t=1, mu=5: step-2 shell range growth, L=12/14 near-shell convergence, L=8 box limitation, and even-d2 truncation behavior of the next-checkerboard block.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-013317-bbdb6c901d-d3_step2_range_growth_period`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** After the step-2 Schur complement, truncating to even d2 shells leaves the next-checkerboard H_kd zero for L=8,12 but nonzero for L=10,14, because the K-chart periods (L/2,L,L/2) determine whether minimal-vector d2 parity tracks chart parity.  _(class `C`)_
+- **chain closes:** True — The runner builds the finite torus Hamiltonian, derives the step-1 closed form by the diagonal eliminated block and two-hop path counts, then computes the step-2 Schur complement and shell/truncation tables. An independent parity check confirms that when all K-periods are even, d2 parity equals chart-parity difference for opposite checkerboards; when L/2 is odd this parity protection is not well-defined, and the L=10,14 nonzero survivors are finite Schur-complement outputs rather than asserted constants.
+- **rationale:** The runner source performs actual finite-matrix computation from the declared free nearest-neighbor Hamiltonian and Schur complements; the contested shell values and H_kd_after values are not hard-coded expected outputs. The numeric gates in the source note match the completed runner output, including 0.312% L=12/14 near-shell drift, the disclosed 8% L=8 box delta, and the L=10/14 post-truncation failures above 0.5. The clean verdict is for the bounded finite-box scope above, not for an asymptotic or all-L amplitude theorem beyond the tested representatives.
 - **auditor confidence:** high
 
 ### `d3_upper_bound_import_scope_gate_note_2026-06-06`

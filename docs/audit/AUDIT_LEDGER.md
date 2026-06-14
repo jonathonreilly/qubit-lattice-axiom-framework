@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 880 |
+| **retained_bounded** | 881 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1482 |
+| unaudited | 1481 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1326 |
+| `audited_clean` | 1327 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1799 |
+| `unaudited` | 1798 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 594 |
-| `high` | 466 |
+| `critical` | 593 |
+| `high` | 467 |
 | `medium` | 865 |
 | `leaf` | 1363 |
 
@@ -121,7 +121,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `three_generation_structure_note` | bounded_theorem | critical | 1305 | 35.85 | `audited_clean` | **retained_bounded** |
 | 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1265 | 35.31 | `unaudited` | unaudited |
 | 21 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 35.30 | `unaudited` | unaudited |
-| 22 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 284 | 34.66 | `unaudited` | unaudited |
+| 22 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 283 | 34.65 | `unaudited` | unaudited |
 | 23 | `minimal_axioms_2026-04-11` | meta | critical | 1267 | 32.81 | `unaudited` | meta |
 | 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 32.80 | `unaudited` | unaudited |
 | 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1263 | 32.30 | `unaudited` | unaudited |
@@ -1265,6 +1265,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structured_mirror_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `structureless_dag_gravity_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18270,6 +18271,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The safe read is that structureless causal DAGs can show TOWARD rows, and when they do the source-strength response stays close to linear on this pocket.  _(class `C`)_
 - **chain closes:** True — The runner directly constructs the stated random DAG pocket, propagates with the stated valley-linear field and kernel, and reports the TOWARD counts, local power-law fits, and no-field controls. No external dependency or graph-universality claim is needed for the narrowed harness-level statement.
 - **rationale:** The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed.
+- **auditor confidence:** high
+
+### `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28`
+
+- **Note:** [`SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md`](../../docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic anchor: given the Wilson beta convention, the fine-structure convention, the assumed SU(2)_L lattice coupling g_2^2 = 1/4 at d = 3, and SU(2) dimension N = 2, the note derives alpha_2|_lattice = 1/(16 pi), 1/alpha_2|_lattice = 16 pi, and beta_W|_lattice = 16.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-020344-7fc3d0c72f-su2_weak_alpha_lattice_one_o`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substitute the assumed input g_2^2|_lattice = 1/4 into alpha = g^2/(4 pi) to get alpha_2|_lattice = 1/(16 pi), and substitute N = 2 and g_2^2|_lattice = 1/4 into beta_W = 2N/g_bare^2 to get beta_W|_lattice = 16.  _(class `A`)_
+- **chain closes:** True — The scoped theorem closes as exact algebra over the four named inputs. It does not derive the coupling input or the two textbook conventions, but the note correctly scopes those as assumptions/admissions rather than derived content.
+- **rationale:** The load-bearing step is a genuine class-A algebraic substitution, not a definition, renaming, external comparator, or tuned numerical match. The cited one-hop authorities are retained-grade for the scoped use: the coupling row supplies the formal assumed input g_2^2 = 1/(d+1), and the native gauge closure supplies SU(2) structure/dimension once SU(2)_L is fixed. Independent arithmetic confirms alpha_2 = (1/4)/(4 pi) = 1/(16 pi), its reciprocal is 16 pi, and beta_W = 2*2/(1/4) = 16.
 - **auditor confidence:** high
 
 ### `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`

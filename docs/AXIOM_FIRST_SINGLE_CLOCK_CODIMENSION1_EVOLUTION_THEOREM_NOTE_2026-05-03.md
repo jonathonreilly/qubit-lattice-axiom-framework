@@ -307,7 +307,7 @@ still-live axis-selection premise:
   derived the registration direction, the blocked time unit, or the
   exclusion of independent commuting transfer factors from the current
   retained axiom surface. The follow-up source
-  [`SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`](SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md)
+  `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`
   narrows the route: Record durability, anomaly/chirality labels, and
   the native exchange-symmetric staggered surface transport with the
   axis and therefore do not derive B-AXIS. A future positive supplier

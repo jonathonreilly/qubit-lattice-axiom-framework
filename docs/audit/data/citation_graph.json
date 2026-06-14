@@ -1686,10 +1686,6 @@
     },
     {
       "from": "axiom_first_lattice_noether_theorem_note_2026-04-29",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
-    },
-    {
-      "from": "axiom_first_lattice_noether_theorem_note_2026-04-29",
       "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
     },
     {
@@ -1839,10 +1835,6 @@
     {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
       "to": "single_clock_uniqueness_scope_boundary_2026-06-06"
-    },
-    {
-      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "to": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11"
     },
     {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
@@ -16338,23 +16330,7 @@
     },
     {
       "from": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
-      "to": "hierarchy_delta0_blocking_single_mode_decimation_probe_note_2026-06-11"
-    },
-    {
-      "from": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
-      "to": "hierarchy_delta0_ratio_normalized_alpha_s_per_decoupling_reduction_note_2026-06-11"
-    },
-    {
-      "from": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
       "to": "hierarchy_formula_honest_status_note_2026-05-10"
-    },
-    {
-      "from": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
-      "to": "hierarchy_delta0_s1prime_taste_region_kernel_share_probe_note_2026-06-11"
-    },
-    {
-      "from": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
-      "to": "hierarchy_delta0_b4_attachment_observable_enumeration_note_2026-06-11"
     },
     {
       "from": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
@@ -54956,14 +54932,13 @@
         "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
         "minimal_axioms",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_realization_gate_note_2026-05-03",
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "96b2a4b2e246bfac0335cb07f3fb25dc928ab2671016609b564cbe77bf046e60",
+      "note_hash": "968ae20cd48804057f96ce3e9e20a3969fcb8fe205a745bcd23ae5e7e09d16fb",
       "path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3"
@@ -55114,14 +55089,13 @@
         "axiom_first_spectrum_condition_theorem_note_2026-04-29",
         "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
         "single_clock_uniqueness_scope_boundary_2026-06-06",
-        "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
         "kinetic_isotropy_primitive",
         "emergent_lorentz_invariance_note",
         "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
         "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4cb52b05a0654b4ed27af6d4e78cb72af8ef4dfbabd5246b8e45e935bb24cb81",
+      "note_hash": "31de8a0a337c3212b2ba4a86f821b416f5d91fd35cac3d810750bb8968e66ad7",
       "path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
       "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3"
@@ -75879,14 +75853,10 @@
       "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
       "deps": [
-        "hierarchy_delta0_blocking_single_mode_decimation_probe_note_2026-06-11",
-        "hierarchy_delta0_ratio_normalized_alpha_s_per_decoupling_reduction_note_2026-06-11",
-        "hierarchy_formula_honest_status_note_2026-05-10",
-        "hierarchy_delta0_s1prime_taste_region_kernel_share_probe_note_2026-06-11",
-        "hierarchy_delta0_b4_attachment_observable_enumeration_note_2026-06-11"
+        "hierarchy_formula_honest_status_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d189933c024b2eaf1dcb56a7165132758f8d1202f8ad2cd8087a7fe677a3f001",
+      "note_hash": "d635689f515269090e5566e7ae947376293bd9bb5493460b8a4459f386fa1601",
       "path": "docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md",
       "runner_path": "scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py",
       "title": "Hierarchy Alpha_LM Magnitude Delta-Zero Open Gate"
@@ -98339,7 +98309,7 @@
         "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fc0b1a0ad4f9d48396197b27f858c80307e9a97725336344266ca4ad92c6e677",
+      "note_hash": "64749d672cdd48b32d22848d21e671bc7aa41aefcc2a58bb5c607db1920ebdb5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113104,8 +113074,8 @@
       "open_gate": 170,
       "positive_theorem": 615
     },
-    "edge_count": 12897,
-    "leaf_count": 1109,
+    "edge_count": 12891,
+    "leaf_count": 1110,
     "node_count": 3434,
     "root_count": 1063,
     "runners_with_path": 3014

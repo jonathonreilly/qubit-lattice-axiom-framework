@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 865 |
+| **retained_bounded** | 866 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1513 |
+| unaudited | 1512 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1306 |
+| `audited_clean` | 1307 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1830 |
+| `unaudited` | 1829 |
 
 | claim_type | count |
 |---|---:|
@@ -570,6 +570,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -7780,6 +7781,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** If the diagonal hierarchy truncated exactly at finite order, finite Taylor support would make K(t) a global polynomial, so P(t)=K'(t)/N_plaq would be a polynomial with a finite limit at infinity and hence constant, contradicting P(0)=0 and lim P(t)=1.  _(class `A`)_
 - **chain closes:** True — The cited retained_bounded lemma note supplies the endpoint identities, global finite-Taylor-support-to-polynomial implication, and polynomial-growth lemma; the retained reduction note is redundant context for the same endpoint behavior. Under that scoped notion of truncation, the contradiction is elementary and no beta=6 closure or external comparator is used.
 - **rationale:** The proof is class A algebra over retained-grade inputs: finite truncation implies polynomial K, bounded endpoint behavior makes K' constant, and the two endpoint values contradict constancy. The runner's four theorem checks are hard-coded algebraic assertions rather than independent theorem computation, and its three Bessel computations are only support, so the runner is not the source of closure. The no-go discipline gate passes only for the narrow diagonal finite-Taylor/polynomial-generator obstruction; nonpolynomial hierarchy solutions and broader generating representations remain explicitly outside the audited scope.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_INTERNAL_LINK_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_INTERNAL_LINK_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite beta=6 two-strip class-channel internal-link convention on tensor B_4/MODE_MAX=80 and source NMAX=7/MODE_MAX=200: the internal channel weight is D_lambda, not d_lambda D_lambda.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-003011-7d5b9cba2f-gauge_vacuum_plaquette_inter`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The connected shared-link Haar contraction multiplies the central coefficient d_lambda D_lambda by 1/d_lambda, giving D_lambda delta_(lambda,mu) chi_lambda(AB).  _(class `A`)_
+- **chain closes:** True — The cited Schur convolution identity supplies the inverse-dimension factor for the connected trace, and the finite packet authority supplies the normalized central coefficient d_lambda D_lambda. Multiplying them gives the claimed D_lambda coefficient within the stated finite scalar class-channel scope.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained or retained_bounded one-hop inputs, not a new definition or numerical match. The displayed normalization chain is consistent: central boundary coefficient d_lambda D_lambda, connected Haar factor 1/d_lambda, derived internal coefficient D_lambda. The runner source checks the exact small-channel dimension factors and reproduces the finite dimension-stripped branch; the hard-coded readout constants are branch-regression checks, not the load-bearing derivation. The source explicitly excludes the full 3D environment, slab limit, L_perp limit, analytic P(6), repinning, and future non-class 6j/intertwiner normalization object.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_local_environment_factorization_theorem_note`

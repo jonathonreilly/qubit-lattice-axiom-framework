@@ -51078,11 +51078,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+      "to": "gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12"
     },
     {
       "from": "repo.front_door_status",
-      "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
+      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
@@ -51106,7 +51106,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12"
+      "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
     },
     {
       "from": "repo.repo_organization",
@@ -98185,17 +98185,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
         "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
         "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12",
         "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05",
         "signed_gravity_aps_locked_source_action_proposal_note",
         "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
-        "gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12"
+        "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "00eeac3dd2f2a81e95784d0a1462fe70cee0793bdee102721d260838a2ee43cf",
+      "note_hash": "ba2e8824619a35c70e8c173a4fce79cad6531962a545f77eb129e384e76589cc",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1526 |
+| Applied audit verdicts | 1527 |
 | Retained-grade rows, including boxed decorations | 1368 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 903 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1440 |
+| Unaudited rows | 1439 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 53 |
+| Audited conditional rows | 54 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 20 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1445 |
-| Ready rows | 3 |
+| Total pending rows | 1444 |
+| Ready rows | 2 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
-| Medium pending | 425 |
+| Medium pending | 424 |
 | Leaf pending | 435 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`teleportation_native_transport_theory_note`](../../docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md) - medium; unaudited
 - [`transfer_trace_correspondence_fixes_kernel_normalization_on_retained_surface_bounded_note_2026-06-12`](../../docs/TRANSFER_TRACE_CORRESPONDENCE_FIXES_KERNEL_NORMALIZATION_ON_RETAINED_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
@@ -78,16 +77,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 601 |
 | High nodes | 473 |
-| Medium nodes | 898 |
-| Leaf nodes | 1458 |
+| Medium nodes | 897 |
+| Leaf nodes | 1459 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1590 descendants; score 134.636
-- `three_generation_observable_theorem_note` - critical; 1357 descendants; score 64.407
-- `observable_principle_from_axiom_note` - critical; 1280 descendants; score 62.823
-- `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
-- `plaquette_self_consistency_note` - critical; 1359 descendants; score 51.409
-- `key_terminology` - critical; 1397 descendants; score 50.449
-- `minimal_axioms_2026-05-03` - critical; 1293 descendants; score 49.838
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1263 descendants; score 44.804
+- `three_generation_observable_theorem_note` - critical; 1356 descendants; score 64.406
+- `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
+- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
+- `plaquette_self_consistency_note` - critical; 1358 descendants; score 51.408
+- `key_terminology` - critical; 1396 descendants; score 50.448
+- `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1262 descendants; score 44.803

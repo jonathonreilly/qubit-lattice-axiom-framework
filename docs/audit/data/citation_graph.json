@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "teleportation_native_transport_theory_note"
     },
     {
@@ -98170,12 +98166,11 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
         "teleportation_native_transport_theory_note",
         "transfer_trace_correspondence_fixes_kernel_normalization_on_retained_surface_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "add6591cf810a4a5079cb40e101533275dae163ec58bf741cbb272ba9db9d0bf",
+      "note_hash": "0a66bd6a3185d469770795f9384dbd150cbda946689526d11cbe08e372c58b90",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -112920,8 +112915,8 @@
       "open_gate": 170,
       "positive_theorem": 616
     },
-    "edge_count": 12872,
-    "leaf_count": 1108,
+    "edge_count": 12871,
+    "leaf_count": 1109,
     "node_count": 3430,
     "root_count": 1064,
     "runners_with_path": 3010

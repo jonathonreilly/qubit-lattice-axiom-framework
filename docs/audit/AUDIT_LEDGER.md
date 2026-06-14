@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 901 |
+| **retained_bounded** | 902 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1444 |
+| unaudited | 1443 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1350 |
+| `audited_clean` | 1351 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1761 |
+| `unaudited` | 1760 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 864 |
-| `leaf` | 1364 |
+| `medium` | 862 |
+| `leaf` | 1366 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -1120,6 +1120,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `record_axiom_audit_application_map_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -16261,6 +16262,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of the Hilbert-Schmidt projection onto the identity line is alpha = <I_color, M_color>_HS / <I_color, I_color>_HS = Tr_color M_color / N_c, giving rho_singlet = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].  _(class `A`)_
 - **chain closes:** True — The conclusion follows from ordinary finite-dimensional orthogonal projection and the supplied SU(N_c) generator normalization. The note explicitly does not identify this projection fraction with kappa_EW or any physical matching rule.
 - **rationale:** The load-bearing step is a direct Hilbert-Schmidt projection identity, not a definition, renaming, external comparator, or tuned numerical match. The only cited authority needed for P4 supplies the SU(N_c) normalization convention and is provided as retained-grade decoration under the rubric. The runner source performs exact rational arithmetic for the identity, traceless-generator witnesses, normalization checks, sum rule, trace-zero iff zero-singlet condition, and non-claim boundary, with no helper imports and no hard-coded contested physical coefficient.
+- **auditor confidence:** high
+
+### `rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12`
+
+- **Note:** [`RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md`](../../docs/RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the supplied singlet/doublet two-sector surface with p_d/p_s=2r, sector re-pinching is idempotent and agreement-conditioned independent double registration sends x to x^2, equivalently r to 2r^2, while leaving independence of repeated registration as an undischarged statistics atom.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-040120-2797401309-rd_bridge_anatomy_agreement_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If a second registration of the same partition composes independently on the bookkeeping and the retained cases are conditioned on agreement, then p_i' = p_i^2/(p_s^2 + p_d^2).  _(class `A`)_
+- **chain closes:** True — The projector algebra gives D(D(M))=D(M), and the independent product bookkeeping conditioned on agreement gives p_i^2/Z, so the ratio map is x'=(p_d/p_s)^2 and hence r'=2r^2. The Record axiom is used only for its non-supply boundary, so the statistics atom is named but not consumed.
+- **rationale:** The load-bearing math is a direct algebraic identity over the supplied projectors and two-sector bookkeeping; independent recomputation confirms the factors, normalization, ratio conversion, inverse map, and fixed points. The cited map authorities are retained_bounded, and the Minimal Axioms authority is explicitly flagged as an accepted axiom premise; no non-retained dependency is needed for the bounded claim. The runner source performs genuine symbolic checks plus citation/firewall text checks rather than merely printing constants. The physical R-D adoption, probability rule, occupancy selection, and statistics atom discharge are explicitly outside the audited scope.
 - **auditor confidence:** high
 
 ### `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`

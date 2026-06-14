@@ -3,7 +3,7 @@
     "critical": 327,
     "high": 258,
     "leaf": 435,
-    "medium": 429
+    "medium": 428
   },
   "cycle_break_target_count": 20,
   "cycle_break_targets": [
@@ -18113,32 +18113,6 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 90
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_rd_bridge_anatomy_agreement_conditioning_2026_06_12.py",
-      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44201,6 +44175,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 7,
-  "total_pending": 1449
+  "ready_count": 6,
+  "total_pending": 1448
 }

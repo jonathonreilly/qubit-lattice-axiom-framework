@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_pointer_record_degeneracy_d3_note_2026-05-31"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12",
         "koide_pointer_record_degeneracy_d3_note_2026-05-31",
         "lepton_block_d12_prime_matching_no_go_note_2026-05-10",
         "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12",
         "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08",
         "observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13",
-        "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12"
+        "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
+        "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27"
       ],
       "helper_runner_paths": [],
-      "note_hash": "50500bb20fe0ca6f386d5d5a8ccb0930fc88e476e081e964df24894dbda3648d",
+      "note_hash": "d2ce7ef355601f7e5ab840e4a0141d8fce115ee4caaaca748c66f3017bd6f338",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

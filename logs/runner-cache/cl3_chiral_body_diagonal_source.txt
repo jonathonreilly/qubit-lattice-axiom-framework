@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_chiral_body_diagonal_source.py
-runner_sha256: 69a47b83ddd079a4f18dd18a01321f015732181674a58d786764eaf548bb008d
+runner_sha256: d258edc0074fc19fa507cd1616a9f299186ab047a33b5655ef20b06cb161d236
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 [PASS] Gamma_chi eigenvalues {+1,-1,-1}  :: eigs=[np.float64(-1.0), np.float64(-1.0), np.float64(1.0)]
@@ -104,9 +104,11 @@ status: ok
 [PASS] FORCED: the singlet axis (1,1,1) is native (cube body-diagonal = triplet singlet)
 [PASS] NOT FORCED: the doublet h is C3-orbit-valued; native C3-symmetry leaves it isotropic
 [PASS] POSIT FLAG: selecting a single off-diagonal / axis-ordering to fix h breaks C3 = an import
+[PASS] source N2 scopes scalar doublet block to real-symmetric/Hermitian mass operators
+[PASS] source N2 separates J_cs as non-scalar antisymmetric complex structure
 
 ========================================================================
-SCORECARD: PASS=37 FAIL=0
+SCORECARD: PASS=39 FAIL=0
 ========================================================================
 
 ----- stderr -----

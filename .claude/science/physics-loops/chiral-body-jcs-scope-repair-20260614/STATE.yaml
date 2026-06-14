@@ -1,0 +1,23 @@
+loop_slug: chiral-body-jcs-scope-repair-20260614
+goal: "Repair the chiral-body N2 audited conditional by separating real-symmetric/Hermitian mass operators from J_cs."
+target_claim_id: cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04
+target_status: proposed_promoted_after_independent_audit
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+branch: physics-loop/chiral-body-jcs-scope-repair-20260614
+base: origin/main@88183eb6401ec7709f44ddee3ea48cda9ccb7ebe
+files_touched:
+  - docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md
+  - scripts/cl3_chiral_body_diagonal_source.py
+  - logs/runner-cache/cl3_chiral_body_diagonal_source.txt
+runner:
+  command: "python3 scripts/cl3_chiral_body_diagonal_source.py"
+  result: "SCORECARD: PASS=39 FAIL=0"
+open_imports:
+  - "Independent audit must decide whether this source-scope correction closes the row."
+no_go_routes:
+  - "Do not state that all C3-equivariant native operators have scalar doublet block."
+  - "Do not treat J_cs as a real-symmetric/Hermitian mass operator."
+next_exact_action: "Open PR for reviewer extraction and independent audit rerun."
+stop_condition: "Source scope repair, runner guard, cache, loop pack, and PR are complete."

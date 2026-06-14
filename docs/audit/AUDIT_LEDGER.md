@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 879 |
+| **retained_bounded** | 880 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1485 |
+| unaudited | 1484 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1324 |
+| `audited_clean` | 1325 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1802 |
+| `unaudited` | 1801 |
 
 | claim_type | count |
 |---|---:|
@@ -862,6 +862,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -12233,6 +12234,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — Within the stated scope and accepted standard lattice normalization, the Taylor expansion, parity-even no-odd-power conclusion, O_h invariance, Planck suppression estimate, and corrected normalized cubic-harmonic identity close from the provided note and runner. Experimental-bound comparisons are treated as contextual bounded-status checks rather than independently audited external facts.
 - **rationale:** The load-bearing step is not a definition or tuned numerical match: the runner implements the standard lattice dispersion, expands it, computes the Planck-scale coefficient, constructs the O_h/cubic angular structure, and verifies the corrected normalized spherical-harmonic identity. No upstream cited authority is non-retained or open, and no helper import is missing from the restricted packet. The clean verdict is limited to the bounded derivation from the cubic lattice plus standard kinetic normalization, not to an independent audit of real-world experimental bounds or the broader physical premise that nature uses this lattice.
 - **auditor confidence:** medium
+
+### `lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`LP_IDENTIFICATION_FAILS_OFF_M0_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/LP_IDENTIFICATION_FAILS_OFF_M0_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Staggered d=2 Harper cell with q=24, Ly=2, finite B=2π/24, for sampled (m,T)=(0.2,0.2),(0.2,0.4),(0.5,0.2),(0.5,0.4); audits only the measured separation from the intraband det-Hessian LP kernel, not a corrected two-band orbital formula or the strict B→0 limit.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-015259-c2daf91bf2-lp_identification_fails_off_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At the sampled finite masses and temperatures, the finite-B Harper boundary and staggered intraband LP sign-change roots differ by 0.042401, 0.046160, 0.201038, and 0.199405, exceeding the 2e-2 identification tolerance.  _(class `C`)_
+- **chain closes:** True — The runner constructs and diagonalizes the finite Harper Hamiltonian, computes the zero-field reference and LP det-Hessian sign-change roots, and checks folding, Hermiticity, wrapping, m→0 reduction, brackets, quadrature doubling, and regression values. Independent checks of the chain-rule Hessian and alternate quadrature spot computations support the displayed finite-B table within the stated bounded scope.
+- **rationale:** There are no cited upstream authorities and no open imported dependency in the restricted packet. The source does not merely print constants: the runner recomputes the finite-field and LP roots from the specified model, with the hard-coded deviation table serving as a regression gate after recomputation. The clean verdict applies only to the bounded measured finite-B/sample statement, because the note explicitly excludes the corrected two-band orbital formula and strict B→0 limit.
+- **auditor confidence:** high
 
 ### `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`
 

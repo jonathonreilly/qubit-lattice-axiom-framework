@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3292 |
-| Applied audit verdicts | 1525 |
-| Retained-grade rows, including boxed decorations | 1370 |
+| Applied audit verdicts | 1526 |
+| Retained-grade rows, including boxed decorations | 1371 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 905 |
+| Retained bounded rows | 906 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1445 |
+| Unaudited rows | 1444 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 51 |
 | Audited renaming rows | 31 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1450 |
-| Ready rows | 3 |
+| Total pending rows | 1449 |
+| Ready rows | 2 |
 | Cycle-break targets | 20 |
 | Critical pending | 331 |
 | High pending | 254 |
-| Medium pending | 426 |
+| Medium pending | 425 |
 | Leaf pending | 439 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12`](../../docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
@@ -78,8 +77,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3434 |
 | Critical nodes | 606 |
 | High nodes | 468 |
-| Medium nodes | 904 |
-| Leaf nodes | 1456 |
+| Medium nodes | 903 |
+| Leaf nodes | 1457 |
 
 Top load-bearing rows by graph score:
 
@@ -87,7 +86,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1359 descendants; score 64.409
 - `observable_principle_from_axiom_note` - critical; 1282 descendants; score 62.825
 - `graph_first_su3_integration_note` - critical; 1425 descendants; score 60.978
-- `plaquette_self_consistency_note` - critical; 1363 descendants; score 51.414
+- `plaquette_self_consistency_note` - critical; 1362 descendants; score 51.413
 - `key_terminology` - critical; 1399 descendants; score 50.451
 - `minimal_axioms_2026-05-03` - critical; 1295 descendants; score 49.840
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1265 descendants; score 44.806

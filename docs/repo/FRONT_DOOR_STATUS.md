@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1483 |
+| Applied audit verdicts | 1484 |
 | Retained-grade rows, including boxed decorations | 1343 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 880 |
 | Boxed decorations under retained parents | 44 |
-| Open gates | 39 |
-| Unaudited rows | 1483 |
+| Open gates | 40 |
+| Unaudited rows | 1482 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 38 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1488 |
-| Ready rows | 45 |
+| Total pending rows | 1487 |
+| Ready rows | 44 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
 | Medium pending | 429 |
-| Leaf pending | 474 |
+| Leaf pending | 473 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26`](../../docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md) - medium; unaudited
 - [`su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28`](../../docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
 - [`su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11`](../../docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md) - medium; unaudited
 - [`acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`](../../docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md) - medium; unaudited
 - [`carrier_orbit_invariance_note_2026-05-03`](../../docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md) - medium; unaudited
-- [`clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08`](../../docs/CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md) - leaf; unaudited
+- [`clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08`](../../docs/CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
+- [`d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12`](../../docs/D2_SIGN_BOUNDARY_MASS_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

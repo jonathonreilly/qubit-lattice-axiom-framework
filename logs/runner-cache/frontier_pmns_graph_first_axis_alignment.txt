@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_graph_first_axis_alignment.py
-runner_sha256: 6b6dc25654137abc5c93d0ac746f7b0151e4e77dfdb450f9c8bef35f16f33441
+runner_sha256: 2509c6bc60cdc44963e864e171ab2e7ef023d3bcc68fde48c6f15e1094b77536
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -38,13 +38,16 @@ PART 2: EACH SELECTED AXIS HAS EXACT RESIDUAL Z2 STABILIZER
 ========================================================================================
 PART 3: THE RESIDUAL Z2 FORCES THE ACTIVE HERMITIAN CORE LAW
 ========================================================================================
-  [PASS] The full complex aligned core is Hermitian
+  [PASS] The aligned core is Hermitian
   [PASS] The aligned core is exactly P23-invariant  (residual=0.00e+00)
   [PASS] Residual Z2 invariance forces d2=d3  (d2-d3=0.00e+00)
-  [PASS] Residual Z2 invariance forces r12=r31  (r12-r31=0.00e+00)
-  [PASS] Residual Z2 invariance does NOT force the fixed-axis coupling real  (Im(z)=0.190000)
-  [PASS] The old real four-parameter core is recovered only by the specialization Im(z)=0
-  [INFO] The active aligned Hermitian lane has exact form [[a,z,z],[z*,c,d],[z*,d,c]]  (r23=0.170000, triangle_phase=0.000000)
+  [PASS] Residual Z2 invariance forces H12=H13 as complex entries
+  [PASS] Hermiticity forces the lower-block off-axis entry H23 to be real  (Im(H23)=0.00e+00)
+  [PASS] The old real aligned core is the Im(z)=0 slice
+  [PASS] The P23 Reynolds projection of a generic Hermitian matrix has the same normal form  (residual=0.00e+00)
+  [PASS] The repaired normal form permits a genuine complex off-axis parameter  (Im(z)=0.450000)
+  [INFO] The active aligned Hermitian lane has exact form [[a,z,z],[z*,c,d],[z*,d,c]]
+  [INFO] The old real four-parameter core is only the Im(z)=0 slice  (r12=0.290689, r23=0.170000, r31=0.290689)
 
 ========================================================================================
 PART 4: THIS ROUTE DERIVES ALIGNMENT, BUT NOT VALUES OR ACTIVE-SECTOR CHOICE
@@ -60,14 +63,13 @@ RESULT
   Positive graph-first result:
     - the hw=1 cube selector derives a weak-axis choice
     - the selected axis carries residual Z2
-    - that residual Z2 forces the aligned active Hermitian core
-    - the core keeps the complex off-axis coupling allowed by Hermiticity
+    - that residual Z2 forces the full aligned active Hermitian normal form
 
   Boundary:
     - this route does not fix the aligned-core values
     - this route does not fix whether the active sector is neutrino or charged-lepton
 
-PASS=18  FAIL=0
+PASS=20  FAIL=0
 
 ----- stderr -----
 

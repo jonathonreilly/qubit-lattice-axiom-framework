@@ -262,6 +262,8 @@ def main() -> int:
     rho_a_swap = float(np.max(np.abs(swap @ rho_a - rho_a)))
     rho_b_swap = float(np.max(np.abs(swap @ rho_b - rho_b)))
     rho_gap = float(np.max(np.abs(rho_a - rho_b)))
+    z00_a = float(amp_a[index[(0, 0)]])
+    z00_b = float(amp_b[index[(0, 0)]])
     rho00_a = float(rho_a[index[(0, 0)]])
     rho00_b = float(rho_b[index[(0, 0)]])
 
@@ -339,6 +341,14 @@ def main() -> int:
         bucket="SUPPORT",
     )
     check(
+        "the beta=6 seam-reduction note gates normalized rho on a nonzero denominator",
+        "`z_(0,0) != 0`" in eval_reduction_note
+        and "normalized `rho` statement" in eval_reduction_note
+        and "unnormalized coefficient\nlaw" in eval_reduction_note,
+        detail="the formal algebraic lemma no longer divides by an arbitrary zero coefficient",
+        bucket="SUPPORT",
+    )
+    check(
         "the exact radical three-sample map and current-stack constraint notes already fix the first symmetric sample operator and show it does not collapse below three",
         "exact radical-form three-sample matrix" in radical_note
         and "there is no further universal linear collapse below" in radical_note
@@ -409,6 +419,11 @@ def main() -> int:
         and abs(rho00_a - 1.0) < 1.0e-12
         and abs(rho00_b - 1.0) < 1.0e-12,
         detail=f"rho-gap={rho_gap:.3e} on the same listed finite structural surface",
+    )
+    check(
+        "the two explicit normalized witnesses have nonzero z_(0,0) denominators",
+        abs(z00_a) > 1.0e-12 and abs(z00_b) > 1.0e-12,
+        detail=f"z00_A={z00_a:.12f}, z00_B={z00_b:.12f}",
     )
     check(
         "the same universal left operator sends those two admissible normalized beta-side vectors to different normalized three-sample triples",

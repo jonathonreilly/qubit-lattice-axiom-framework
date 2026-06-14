@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py
-runner_sha256: 58fe1f92c37420f054b488d9f1cf0be8c6eeb55413e7b50d1ed6f400896128e0
+runner_sha256: 429c2ae0a02a0ff6a1ae633c4ce61c85d9fb8c56b38bcf3f9e635e080e7496f4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 ============================================================================
@@ -40,7 +40,9 @@ plus ONE twist datum -- no sign axiom
 ----------------------------------------------------------------------------
 [T3] quantized labels + the proposal's branch conditions
 ----------------------------------------------------------------------------
-  [PASS] [T3] label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, 0.7, 0.9} matches exactly (chi quantized; branch conditions fail exactly at a = 0 and a = 1/2)
+  [PASS] [T3] label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, 0.7, 0.9} matches exactly for Lambda in Z+1/2 (chi quantized; branch conditions fail exactly at a = 0 and a = 1/2)
+  [PASS] [T3] integer spectral cutoffs are excluded counterexamples for the positive-twist +1 label branch
+  [PASS] [T3] integer spectral cutoffs are excluded counterexamples for the negative-twist -1 label branch
   [PASS] [T3] a = 0 (untwisted): h_delta = 1, label undefined (gap branch condition fails)
   [PASS] [T3] a = 1/2: spectrum reflection-symmetric, eta_delta = 0, label undefined
 
@@ -65,7 +67,7 @@ plus ONE twist datum -- no sign axiom
   [PASS] [F] (F3) a = 0 carries no label (h_delta = 1): consistent with the retained eta_APS = 0 bulk-vanishing row -- a nonzero label REQUIRES the twist datum
 
 ============================================================================
-TOTAL: PASS=28 FAIL=0
+TOTAL: PASS=30 FAIL=0
 ============================================================================
 
 ----- stderr -----

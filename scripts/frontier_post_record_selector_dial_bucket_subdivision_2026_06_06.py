@@ -58,9 +58,9 @@ STABILITY_RE = re.compile(r"\b(stable|stability|flow|arrow|dynamics|thermaliz|at
 GENERIC_SELECTOR_RE = re.compile(r"\b(selector|selects|selected|dial|invariance|symmetry|target|rule)\b", re.IGNORECASE)
 
 EXPECTED_SUBCOUNTS = {
-    "koide_or_generation_selector": 119,
-    "stability_or_dynamics_selector": 128,
-    "measure_weight_normalization": 60,
+    "koide_or_generation_selector": 117,
+    "stability_or_dynamics_selector": 136,
+    "measure_weight_normalization": 67,
     "generic_selector_rule": 2,
 }
 EXPECTED_SELECTOR_ROWS = sum(EXPECTED_SUBCOUNTS.values())
@@ -179,7 +179,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md",
         [
-            "selector_or_dial_needed` | 309",
+            "selector_or_dial_needed` | 322",
             "read-only scanner",
             "audit ledger hash is unchanged",
         ],

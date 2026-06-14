@@ -17,8 +17,9 @@ Verifies, in exact finite dimensions:
        counting asymmetries eta = +/-2; labels chi_{+/-} = +/-1; the
        orientation-image eta flip on a random unitary conjugate.
   [T3] quantized label table on the spectrally-truncated twisted tower
-       with the proposal's branch conditions (gap failure at a = 0;
-       eta = 0 at a = 1/2; chi = -1 on (1/2, 1)).
+       for Lambda in Z+1/2, with the proposal's branch conditions (gap
+       failure at a = 0; eta = 0 at a = 1/2; chi = -1 on (1/2, 1)).
+       Integer-cutoff counterexamples are checked outside the theorem scope.
   [T4] coexistence: D_tot Hermitian; [D_gen, C3] = 0; {D_gen-part,
        Gamma_prod} = 0; [D_bdy-part, Gamma_prod] = 0; [N, eps] = 0;
        {e4, eps} = 0; {e1, eps} = 0.
@@ -177,14 +178,26 @@ def main() -> int:
              0.5: "UNDEF(eta=0)", 0.7: "-1", 0.9: "-1",
              -0.1: "-1", -0.3: "-1"}
     ok_all = True
-    for aa, expect in table.items():
-        got = label(tower_spectral(aa, lam_max))
-        if got != expect:
-            ok_all = False
-            print(f"    MISMATCH a={aa}: got {got}, expect {expect}")
+    for cutoff in (4.5, 9.5, lam_max):
+        for aa, expect in table.items():
+            got = label(tower_spectral(aa, cutoff))
+            if got != expect:
+                ok_all = False
+                print(f"    MISMATCH Lambda={cutoff}, a={aa}: got {got}, expect {expect}")
     check("T3", "label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, "
-                "0.7, 0.9} matches exactly (chi quantized; branch "
-                "conditions fail exactly at a = 0 and a = 1/2)", ok_all)
+                "0.7, 0.9} matches exactly for Lambda in Z+1/2 "
+                "(chi quantized; branch conditions fail exactly at a = 0 "
+                "and a = 1/2)", ok_all)
+    integer_counter = all(label(tower_spectral(aa, cutoff)) != "+1"
+                          for cutoff in (4.0, 9.0, 20.0)
+                          for aa in (0.1, 0.3, 0.49))
+    check("T3", "integer spectral cutoffs are excluded counterexamples for "
+                "the positive-twist +1 label branch", integer_counter)
+    neg_integer_counter = all(label(tower_spectral(aa, cutoff)) != "-1"
+                              for cutoff in (4.0, 9.0, 20.0)
+                              for aa in (-0.1, -0.3))
+    check("T3", "integer spectral cutoffs are excluded counterexamples for "
+                "the negative-twist -1 label branch", neg_integer_counter)
     e0, h0 = eta_h(tower_spectral(0.0, lam_max))
     check("T3", "a = 0 (untwisted): h_delta = 1, label undefined "
                 "(gap branch condition fails)", h0 == 1)

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1468 |
-| Retained-grade rows, including boxed decorations | 1332 |
+| Applied audit verdicts | 1469 |
+| Retained-grade rows, including boxed decorations | 1333 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 872 |
+| Retained bounded rows | 873 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1498 |
+| Unaudited rows | 1497 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 34 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1503 |
-| Ready rows | 53 |
+| Total pending rows | 1502 |
+| Ready rows | 52 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
 | Medium pending | 429 |
-| Leaf pending | 489 |
+| Leaf pending | 488 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02`](../../docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md) - medium; unaudited
 - [`spin_statistics_fs_admission_located_exercise_note_2026-06-06`](../../docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md) - medium; unaudited
 - [`d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12`](../../docs/D2_SIGN_BOUNDARY_BISECTION_BETWEEN_LANDMARKS_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12`](../../docs/D2_TRUNCATED_FLOW_FROZEN_RATIO_ACCUMULATED_BUDGET_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12`](../../docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
-- [`d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12`](../../docs/D3_STEP2_RANGE_GROWTH_PERIOD_CLASS_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
+- [`d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12`](../../docs/D3_STEP2_RANGE_GROWTH_PERIOD_CLASS_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

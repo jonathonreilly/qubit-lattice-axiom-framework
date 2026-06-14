@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 868 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1504 |
+| unaudited | 1503 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1310 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1821 |
+| `unaudited` | 1820 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 858 |
-| `leaf` | 1370 |
+| `medium` | 859 |
+| `leaf` | 1369 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -1452,6 +1452,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_upper_bound_dependency_edge_repair_note_2026-06-08` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5488,6 +5489,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On seed 42, the primary runner's matter-coupled growth rule produces a grown graph with higher effective dimension and much higher peak shell-bin density than the uniform-growth control.  _(class `C`)_
 - **chain closes:** True — The included runner source actually constructs both graphs, evolves the matter field for the coupled case, applies the |psi|^2-biased parent selection, and computes the reported shell-volume and density metrics. The cached output supports the narrowed qualitative claim on this seed.
 - **rationale:** The narrowed load-bearing claim is not the broader multi-seed or gravitational-closure story; it is the single-seed primary-runner comparison. The runner does not merely print constants or import the contested conclusion: it computes the grown graph and control from fixed rules and reports d_eff = 1.64 versus 1.55 and peak shell-bin density about 72 versus 11. The broader companion-runner claims are explicitly scoped as support diagnostics and are not needed for this audited claim.
+- **auditor confidence:** high
+
+### `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`
+
+- **Note:** [`EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional algebra only: assuming the stated one-loop velocity RG and structural O_h/canonical-time premises, the packet verifies attractive speed-difference flow and one-scalar gate reduction, while leaving the physical RG derivation, power-divergent coefficient, anomalous dimension, and LV-bound sufficiency open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-005907-709e699007-emergent_lorentz_interacting`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied one-loop velocity RG, d(v_F-v_b)/dl = -(C_F + C_B N_f) alpha (v_F-v_b), while O_h makes the spatial split one scalar and canonical time fixes c_t, so the Collins gate reduces to one conditional IR-attractive scalar.  _(class `A`)_
+- **chain closes:** False — The algebraic consequences close under the supplied equations, but the restricted packet does not derive the one-loop velocity RG, the spatial-only power-divergent mixing theorem, or the physical fixed-point gamma/coefficient needed for naturalness closure.
+- **rationale:** The runner source performs real checks for the conditional algebra: the 2x2 RG matrix has eigenvalues 0 and -(C_F+C_B N_f)alpha, O_h invariance forces symmetric spatial tensors to multiples of delta_ij, and unitary Stone evolution preserves equal-time CAR. Independent inspection agrees with those algebraic checks. However the load-bearing RG form, the Collins power-divergent regeneration structure, and the physical gamma/coefficient are admitted supplied inputs or explicitly named open work, so the packet cannot be clean beyond conditional open-gate support.
 - **auditor confidence:** high
 
 ### `emergent_lorentz_invariance_note`

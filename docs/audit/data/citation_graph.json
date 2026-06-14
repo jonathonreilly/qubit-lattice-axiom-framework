@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12",
         "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
         "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
         "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
         "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
         "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12",
-        "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12"
+        "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12",
+        "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4d457b3306f0c09c1724ca052ea69ae7a99ea4ac66a7f1e71f86a0b6a8c8bc10",
+      "note_hash": "9456bc28d8f9204e7e0e4c1778129c68beb10a432dc4c4966a6b60aa535adf26",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

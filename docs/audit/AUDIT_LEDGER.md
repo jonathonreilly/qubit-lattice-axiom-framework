@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 892 |
+| **retained_bounded** | 893 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1461 |
+| unaudited | 1460 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1339 |
+| `audited_clean` | 1340 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1778 |
+| `unaudited` | 1777 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 598 |
 | `high` | 462 |
-| `medium` | 865 |
-| `leaf` | 1363 |
+| `medium` | 867 |
+| `leaf` | 1361 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -613,6 +613,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -8599,6 +8600,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Riccati recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k, together with induction, proves every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).  _(class `A`)_
 - **chain closes:** True — The recurrence follows algebraically from the stated Bessel derivative identities and the Riccati equation, and the sign induction is valid because all summands in the convolution share the same nonzero sign. The cited parent is retained_no_go, and no open upstream premise is needed for the narrow U(1) coefficient theorem beyond the stated U(1) normalization and standard Bessel calculus.
 - **rationale:** The proof is a genuine algebraic closure: parity follows from evenness of I_0, while density and sign alternation follow from the explicit Riccati coefficient recurrence and a correct strong induction. The runner source performs exact symbolic and rational checks rather than merely printing constants, though its finite-order checks are only corroborative because the note supplies the all-order induction. The cached runner summary line reports THEOREM PASS=7 while the note expected PASS=8, but the source and stdout show no failing theorem check and this count mismatch is not load-bearing.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_WINDOW_TOP_DOWN_INTEGRAL_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_TOP_DOWN_INTEGRAL_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite beta=6 W52 packet at tensor B4/NMAX=4/MODE_MAX=80 and source NMAX=7/MODE_MAX=200: the one-word reverse anchor and trivial-window W44 k=2 gates pass, while the fundamental-window displacement is withheld pending the named external-label Clebsch/Racah contraction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-030717-f231ae1f64-gauge_vacuum_plaquette_windo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A fundamental window link with external B4 labels requires normalized Hom(V_a x V_3, V_c) and Hom(V_b x V_3bar, V_d) maps plus their four-corner Racah contraction, which the one-word anchor, W44 trivial channel, and W48/W50 unit invariant checks do not supply, so the fundamental displacement is not reported.  _(class `A`)_
+- **chain closes:** True — The finite algebra checks close: T = D M D M^T D is direct matrix multiplication, the T1/T2 Gram and E1/E8 coefficients match by exact index sums, and the B4 support counts independently give 56 x 56 = 3136 nonzero support entries. The note does not convert that support into a displacement and correctly leaves the uncomputed Clebsch/Racah contraction as the residual.
+- **rationale:** All cited one-hop authorities in the restricted packet are retained-grade or retained-bounded, and the open full-environment targets in upstream notes are not load-bearing for this finite W52 gate. The runner source performs substantive finite matrix, invariant, symmetry, and support checks, while the W44 anchor comparisons are cross-note finite-anchor checks rather than a tuned external comparator. The no-go discipline is narrow: it names one remaining contraction and explicitly does not claim a zero displacement or exhaustion of direct magnetic-index routes.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12`

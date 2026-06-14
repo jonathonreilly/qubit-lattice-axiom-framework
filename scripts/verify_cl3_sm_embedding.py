@@ -16,7 +16,7 @@ STRUCTURE OF THE PROOF:
   F. Hypercharge Y: eigenvalues +1/3 (6D symmetric block) and -1 (2D antisymmetric block)
   G. Abstract taste-cube S3 action: C^8 = 4A_1+2E; hw=1 triplet is a Z3 orbit
   H. SU(3)_c from symmetric-base commutant of SU(2)_weak: T_F = 1/2, [SU(3),SU(2)]=0
-  I. N_c = 3 from dim(Z^3); R_conn = 8/9 from Fierz; sqrt(9/8) EW correction
+  I. N_c = 3 from dim(Z^3); f_adj,dim = 8/9 from Fierz; conditional sqrt(9/8)
   J. L-sector determinant support: det(H_L) >= 0 from Kramers degeneracy on chiral sector
 
 All checks print PASS/FAIL.
@@ -539,9 +539,9 @@ ok_H &= check(f"  [SU(3)_c, Y] = 0",
 check("Section H", ok_H)
 
 # ---------------------------------------------------------------------------
-# Section I: N_c = 3 from dim(Z^3); R_conn = 8/9; sqrt(9/8) EW correction
+# Section I: N_c = 3 from dim(Z^3); adjoint dimension fraction = 8/9
 # ---------------------------------------------------------------------------
-section("I: N_c=3 from dim(Z^3); R_conn=(N_c^2-1)/N_c^2=8/9; sqrt(9/8)")
+section("I: N_c=3 from dim(Z^3); adjoint dimension fraction=(N_c^2-1)/N_c^2=8/9")
 
 ok_I = True
 
@@ -553,9 +553,9 @@ ok_I &= check(f"  hw=1 triplet has |hw1| = N_c = 3",
 ok_I &= check(f"  SU(3) adjoint dim = N_c^2-1 = {N_c**2-1}",
               N_c**2 - 1 == 8)
 
-R_conn = (N_c**2 - 1) / N_c**2
-ok_I &= check(f"  R_conn = (N_c^2-1)/N_c^2 = {R_conn:.6f} = 8/9",
-              np.isclose(R_conn, 8/9))
+f_adj_dim = (N_c**2 - 1) / N_c**2
+ok_I &= check(f"  f_adj,dim = (N_c^2-1)/N_c^2 = {f_adj_dim:.6f} = 8/9",
+              np.isclose(f_adj_dim, 8/9))
 
 # Fierz identity for SU(3): sum_a T^a_ij T^a_kl = (1/2) delta_il delta_kj - (1/(2N_c)) delta_ij delta_kl
 Fierz_lhs = sum(np.einsum('ij,kl->ijkl', T3[a], T3[a]) for a in range(8))
@@ -569,13 +569,40 @@ fierz_err = np.max(np.abs(Fierz_lhs - Fierz_rhs))
 ok_I &= check(f"  Fierz: sum_a T^a_ij T^a_kl = delta/2 - delta/(2N_c)",
               fierz_err < EPS, f"max err {fierz_err:.1e}")
 
-# R_conn from Fierz: singlet channel = 1/N_c^2, adjoint = (N_c^2-1)/N_c^2
-R_fierz = 1 - 1/N_c**2
-ok_I &= check(f"  R_conn from Fierz = {R_fierz:.6f} = (N_c^2-1)/N_c^2",
-              np.isclose(R_fierz, 8/9))
+# Keep the identity-channel convention explicit.  With Tr(T^a T^b)=1/2
+# delta_ab, the identity element compatible with the half-normalized
+# completeness relation is I/sqrt(2N_c), not I/sqrt(N_c).  The latter is the
+# Hilbert-Schmidt unit vector used for full End(C^N) dimension counting.
+I3 = np.eye(N_c, dtype=complex)
+T0_hs = I3 / np.sqrt(N_c)
+T0_tf = I3 / np.sqrt(2 * N_c)
+ok_I &= check("  Identity convention: Tr[(I/sqrt(N_c))^2] = 1",
+              np.isclose(np.trace(T0_hs @ T0_hs).real, 1.0))
+ok_I &= check("  Identity convention: Tr[(I/sqrt(2N_c))^2] = 1/2",
+              np.isclose(np.trace(T0_tf @ T0_tf).real, 0.5))
 
-sqrt_corr = np.sqrt(1/R_conn)
-ok_I &= check(f"  EW correction sqrt(1/R_conn) = sqrt(9/8) = {sqrt_corr:.6f}",
+identity_tf = np.einsum('ij,kl->ijkl', T0_tf, T0_tf)
+identity_tf_rhs = np.zeros((3, 3, 3, 3), dtype=complex)
+for i, j, k, l in iproduct(range(3), repeat=4):
+    identity_tf_rhs[i, j, k, l] = (1 / (2 * N_c)) * (i == j) * (k == l)
+ok_I &= check("  T_F=1/2 identity completion uses I/sqrt(2N_c), giving 1/(2N_c)",
+              np.max(np.abs(identity_tf - identity_tf_rhs)) < EPS)
+
+L_adjoint = [np.sqrt(2) * T for T in T3]
+complete_hs_lhs = np.einsum('ij,kl->ijkl', T0_hs, T0_hs) + sum(
+    np.einsum('ij,kl->ijkl', L, L) for L in L_adjoint
+)
+complete_hs_rhs = np.zeros((3, 3, 3, 3), dtype=complex)
+for i, j, k, l in iproduct(range(3), repeat=4):
+    complete_hs_rhs[i, j, k, l] = (i == l) * (k == j)
+ok_I &= check("  Hilbert-Schmidt basis {I/sqrt(N_c), sqrt(2)T^a} completes End(C^N)",
+              np.max(np.abs(complete_hs_lhs - complete_hs_rhs)) < EPS)
+
+ok_I &= check("  Adjoint representation-dimension fraction = 1 - singlet dimension fraction",
+              np.isclose(f_adj_dim, 1 - 1 / N_c**2))
+
+sqrt_corr = np.sqrt(1 / f_adj_dim)
+ok_I &= check(f"  Conditional connected-trace specialization sqrt(1/f_adj,dim) = sqrt(9/8) = {sqrt_corr:.6f}",
               np.isclose(sqrt_corr, np.sqrt(9/8)))
 
 check("Section I", ok_I)
@@ -669,12 +696,12 @@ Finite Cl(3)/taste-cube support packet — algebraic checks complete.
   F. Y operator: +1/3 on 6D symmetric block, -1 on 2D antisymmetric block. Traceless.
   G. S3 on C^8 = 4A1+2E; hw=1 triplet is a Z3-related three-state orbit.
   H. SU(3)_c on symmetric base: T_F=1/2; [SU(3),SU(2)]=0; [SU(3),Y]=0.
-  I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz verified.
+  I. N_c=3 from Z^3; f_adj,dim=8/9; identity-channel convention repaired; Fierz verified.
   J. L-sector determinant support: det(H_L)>=0 forced by Kramers degeneracy T^2<0 on L-sector.
 
 Support targets sharpened by this packet:
   1. g2^2=1/(d+1): algebraic — dim(Cl+(3)) = d+1, not direction counting.
   2. g_Y^2=1/(d+2): algebraic — omega extends Cl+(3) by exactly 1 central element.
-  3. R_conn=8/9: N_c=3 forced by Z^3 + SU(3) Fierz identity.
+  3. f_adj,dim=8/9: N_c=3 forced by Z^3 + SU(3) Fierz/channel dimension identity.
   4. L-sector determinant support: Kramers degeneracy from Cl+(3) quaternionic structure on chiral sector.
 """)

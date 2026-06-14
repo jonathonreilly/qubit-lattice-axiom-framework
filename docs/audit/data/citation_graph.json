@@ -51190,11 +51190,27 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
       "to": "teleportation_resource_from_poisson_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -98340,11 +98356,15 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "teleportation_resource_from_poisson_note"
+        "teleportation_resource_from_poisson_note",
+        "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
+        "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
+        "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d12cbd7bb16d0df40b3a52db8eddf7b53740c0e85476febf257750dac7774378",
+      "note_hash": "de1b7e919d4a3f4b5a90307b3c60cbed0b421528411256fcf2b8905db145be44",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113109,8 +113129,8 @@
       "open_gate": 170,
       "positive_theorem": 615
     },
-    "edge_count": 12898,
-    "leaf_count": 1109,
+    "edge_count": 12902,
+    "leaf_count": 1106,
     "node_count": 3434,
     "root_count": 1063,
     "runners_with_path": 3014

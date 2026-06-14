@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 904 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1448 |
+| unaudited | 1447 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1353 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1765 |
+| `unaudited` | 1764 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 598 |
 | `high` | 462 |
-| `medium` | 862 |
-| `leaf` | 1370 |
+| `medium` | 867 |
+| `leaf` | 1365 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1359 | 64.41 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1282 | 62.83 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1425 | 60.98 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1362 | 51.41 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1363 | 51.41 | `audited_clean` | **retained_bounded** |
 | 6 | `key_terminology` | meta | critical | 1399 | 50.45 | `unaudited` | meta |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1295 | 49.84 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1265 | 44.81 | `unaudited` | unaudited |
@@ -1512,6 +1512,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10910,6 +10911,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Stationarity forces rho_plus^2 = rho_perp^2, and the fixed-energy constraint then gives rho_plus^2 = rho_perp^2 = E_tot/2.  _(class `A`)_
 - **chain closes:** True — Independently parameterizing t = rho_plus^2/E_tot gives L = log(E_tot)/1 + 0.5 log(t(1-t)) up to the same constant normalization, whose only interior critical point is t = 1/2 and whose boundary limit is -infinity. Substituting t = 1/2 into the stated definition gives kappa = 2.
 - **rationale:** The source note explicitly limits the claim to a formal reduced two-variable carrier and withdraws the physical SO(2), charged-lepton, and operator-side bridges. The displayed Lagrange equations, constraint substitution, boundary behavior, and weighted-negative-control algebra are correct under that scope. The runner performs real in-packet symbolic and numeric checks rather than importing external data or hard-coding a contested physical premise.
+- **auditor confidence:** high
+
+### `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the algebraic obstruction on the unreduced C3 cyclic 3x3 carrier and the conditional reduced-carrier calculation assuming an external scalar-lane SO(2) quotient; not audited as a derivation of the physical quotient bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-162441-eb67d124db-koide_mru_weight_class_obstr`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The unreduced carrier has det(alpha P_+ + beta P_perp)=alpha beta^2 and hence weights (1,2), while an admitted SO(2)-quotient two-slot carrier has det diag(rho_+,rho_perp)=rho_+ rho_perp and therefore equal weights giving E_+=E_perp and kappa=2.  _(class `A`)_
+- **chain closes:** False — The internal determinant, projection-rank, norm, and constrained-stationary-point algebra closes. The chain to an unconditional charged-lepton MRU route does not close because the restricted packet does not derive the scalar-lane SO(2) quotient or equivalently the cos(3 arg b) decoupling bridge.
+- **rationale:** The displayed quantitative identities check out independently: the cyclic-basis norms give E_+=3a^2 and E_perp=6|b|^2, the weighted log problem gives kappa=2mu/nu, and the unreduced determinant has rank weights (1,2). The reduced two-slot determinant calculation is also correct, but it is explicitly conditional on replacing the ordered doublet coordinates by the SO(2)-orbit radius. The cited retained cyclic-compression authority supplies the three-channel cyclic carrier, not the physical quotient theorem, so the queued bounded theorem remains conditional rather than clean.
 - **auditor confidence:** high
 
 ### `koide_native_dimensionless_note_2026-04-24`

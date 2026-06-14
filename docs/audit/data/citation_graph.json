@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
         "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "gate_b_dynamics_note",
         "gate_b_operator_cauchy_note_2026-05-10",
         "gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12",
         "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07",
-        "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12"
+        "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
+        "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "aa874f26e7e408213acf2501346c04daf63ed2b5deb7ab5af19191cfac0a8bdb",
+      "note_hash": "b4a14d3590f22509ffbac64e29247abbeabbaa7ccb1cc726e8353c2b73f8a209",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 892 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1464 |
+| unaudited | 1463 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1338 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1781 |
+| `unaudited` | 1780 |
 
 | claim_type | count |
 |---|---:|
@@ -116,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1389 | 39.44 | `audited_clean` | **retained** |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1307 | 38.85 | `audited_clean` | **retained_no_go** |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1285 | 38.83 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1375 | 36.93 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1374 | 36.92 | `audited_clean` | **retained** |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 36.80 | `unaudited` | unaudited |
 | 19 | `three_generation_structure_note` | bounded_theorem | critical | 1304 | 35.85 | `audited_clean` | **retained_bounded** |
 | 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1264 | 35.30 | `unaudited` | unaudited |
@@ -1487,6 +1487,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7318,6 +7319,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The C3-invariant K-odd Hermitian operator space is exactly span{A}, and A commutes with S, so the A-current/emergent-time route cannot supply a T-odd non-commuting selector for delta=0.  _(class `A`)_
 - **chain closes:** True — The finite circulant algebra closes the claim: K-real C3-invariant monitors are span_R{I,S}, H-Hbar=2 Im(b) A, [S,A]=0, and the K-odd invariant Hermitian subspace is one-dimensional. The cited retained-grade inputs supply only the scoped emergent-time parity and nonnegative clock-generator comparison; no global no-go against C3-breaking T-odd sources is claimed.
 - **rationale:** The runner source genuinely constructs the C3 matrices and checks the advertised finite identities rather than printing constants, and the restricted packet includes no opaque helper dependency. An independent symbolic circulant check confirms the characteristic polynomials, the delta-direction identity, [S,A]=0, and the span{A} K-odd classification. The no-go discipline gate is satisfied because the conclusion is explicitly scoped to the A-current/emergent-time route and leaves C3-breaking T-odd sources open.
+- **auditor confidence:** high
+
+### `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic bounded-interval evaluation of g_2(v=246 GeV) from the admitted u_0 interval, retained b_2, retained SU(2) lattice-alpha anchor, retained tadpole identity, and admitted one-loop RGE/log input.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-025741-0dc11c5f21-g_2_v_bounded_interval_narro`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substitute 1/alpha_2^tadpole = 16*pi*u_0^2 into the admitted one-loop RGE to obtain 1/alpha_2(v) = 16*pi*u_0^2 - (b_2/(2*pi))*L, then invert to g_2(v) and use monotonicity in u_0 for the endpoint reversal.  _(class `A`)_
+- **chain closes:** False — The algebraic substitution and endpoint arithmetic close on their stated assumptions, and independent numeric checks reproduce the displayed interval and sensitivity estimates. The retained-grade chain does not close unconditionally because X1, X6, and X7 remain unretired named external admissions rather than derived or registered retained inputs in the restricted packet.
+- **rationale:** The load-bearing step is a genuine class-A algebraic closure over the stated inputs; the runner computes the symbolic expressions rather than merely printing constants, and the displayed S10/S11 endpoint forms, interval width, midpoint, no-improvement counterfactual, and L-sensitivity check out independently. The four markdown-linked authorities are retained-grade or retained_bounded in the packet. However, the theorem still imports the u_0 literature interval, the scale-log value, and the one-loop RGE form as named external admissions, so the audit can ratify only the conditional implication, not a closed retained derivation of g_2(v).
 - **auditor confidence:** high
 
 ### `g_bare_canonical_convention_narrow_theorem_note_2026-05-02`

@@ -22,7 +22,11 @@ selected axis onto the active Hermitian triplet lane forces the aligned law
 
 and therefore the active aligned Hermitian core
 
-`H = [[a,b,b],[b,c,d],[b,d,c]]`.
+`H = [[a,z,z],[z*,c,r],[z*,r,c]]`, with `a,c,r in R` and
+`z in C`. This is the full five-real-parameter residual-`Z_2`
+Hermitian normal form in the selected-axis basis. The older real-symmetric
+four-parameter subfamily is only the specialization `Im(z)=0`; it is not
+derived by the residual symmetry alone.
 
 ## Theorem
 
@@ -35,7 +39,7 @@ On the graph-first `hw=1` route:
 3. residual `Z_2` invariance on the active Hermitian triplet lane forces
    `P_23 H P_23 = H`,
 4. hence the active aligned Hermitian core is exactly
-   `[[a,b,b],[b,c,d],[b,d,c]]`.
+   `[[a,z,z],[z*,c,r],[z*,r,c]]`, with `a,c,r in R` and `z in C`.
 
 ## What This Gives
 
@@ -50,7 +54,7 @@ This is a real positive native law:
 
 This route does **not** by itself determine:
 
-- the aligned-core values `(a,b,c,d)`,
+- the aligned-core values `(a,c,r,z)`,
 - which lepton sector carries the active block,
 - the full off-seed microscopic value law.
 
@@ -80,13 +84,16 @@ open.
 PYTHONPATH=scripts python3 scripts/frontier_pmns_graph_first_axis_alignment.py
 ```
 
-Last run (2026-05-10): `PASS=16 FAIL=0` on the present worktree. The
+Last run (2026-06-14): `PASS=24 FAIL=0` on the present worktree. The
 runner exercises class A finite-dimensional algebra: construction of
 the normalized cube-shift selector on the `hw=1` triplet, axis-minimum
 identification, residual `Z_2` stabilizer verification on each
 selected axis, the swap action on the active Hermitian triplet lane,
 and explicit construction of the aligned core
-`H = [[a,b,b],[b,c,d],[b,d,c]]` consistent with `P_23 H P_23 = H`.
+`H = [[a,z,z],[z*,c,r],[z*,r,c]]` consistent with `P_23 H P_23 = H`.
+The runner also includes a source-scope firewall checking that the note
+states the complex five-real-parameter normal form and does not present the
+old real-only subfamily as the derived theorem.
 
 ## Audit dependency repair links
 
@@ -127,11 +134,10 @@ One-hop authority candidates cited:
   fixing axis `3` and swapping axes `1, 2` has, in the ordered basis
   `(X_3, X_1, X_2)`, the canonical form
   `M(a,b,c,d) = [[a,d,d*],[d*,b,c],[d*,c,b]]` with `a, b, c in R` and
-  `d in C`. This is a one-hop authority on the canonical form for the
-  residual-`Z_2`-invariant Hermitian core, of which the present note's
-  aligned form `[[a,b,b],[b,c,d],[b,d,c]]` is the special case
-  `d in R`. This supplies cited one-hop support on the canonical normal
-  form while independent audit decides chain impact.
+  `d in C`. Up to the selected-axis basis relabeling, this is the same
+  five-real-parameter canonical form used by the present note's aligned
+  core. This supplies cited one-hop support on the canonical normal form
+  while independent audit decides chain impact.
 - [`SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md)
   — audit row:
   `site_phase_cube_shift_intertwiner_note`. Sibling source authority on
@@ -175,20 +181,25 @@ feedback as `missing_bridge_theorem`:
 
 The independent 2026-05-05 audit on the previous note revision
 recorded this row as conditional with load-bearing-step class A and
-`chain_closes=False`, observing that the algebraic implication from
-imposed `P_23` invariance to `H = [[a,b,b],[b,c,d],[b,d,c]]` closes,
-but that the missing step is the bridge justifying why the selected
-graph axis must be pushed onto the active Hermitian triplet lane as a
-required residual invariance condition rather than an additional
-premise. The runner
+`chain_closes=False`. Later panel feedback narrowed the remaining local
+repair target: the selector minimum, residual stabilizer, and graph-axis to
+`P_23` bridge close as finite algebra, but the displayed real-symmetric
+four-parameter core was too narrow. For a general Hermitian `3 x 3` matrix,
+`P_23 H P_23 = H` gives the five-real-parameter form
+`[[a,z,z],[z*,c,r],[z*,r,c]]` with `a,c,r in R` and `z in C`.
+This revision makes that complex normal form the theorem statement and
+keeps any real-symmetric specialization outside the derived claim. The runner
 `scripts/frontier_pmns_graph_first_axis_alignment.py` is registered
-with `runner_check_breakdown = {A: 16, B: 0, C: 0, D: 0,
-total_pass: 16}` and performs only internal algebraic and
-finite-construction checks (`PASS=16 FAIL=0` on 2026-05-10): defining
-the selector, sampling and identifying the axis minima, verifying the
-residual swap, and checking a preconstructed aligned Hermitian core.
-It does not derive the graph-to-active-Hermitian-lane bridge from an
-axiom or cited source authority. The cite chain above wires the
+with `runner_check_breakdown = {A: 24, B: 0, C: 0, D: 0,
+total_pass: 24}` and performs only internal algebraic and
+finite-construction checks. The previous runner (`PASS=16 FAIL=0` on
+2026-05-10) defined the selector, sampled and identified the axis minima,
+verified the residual swap, and checked a preconstructed aligned Hermitian
+core. The current runner revision (`PASS=24 FAIL=0` on 2026-06-14) also
+checks Hermiticity, equality of the swapped off-axis entries, reality of the
+swapped-pair coupling, allowance of a complex off-axis parameter, and a
+source firewall against reverting to the old real-only theorem statement.
+It does not by itself update the audit verdict. The cite chain above wires the
 `Z_2`-`hw=1` parametrization authority, the cube-shift intertwiner
 support, the graph-first selector derivation, and the cycle-frame
 support, and explicitly registers the missing-bridge-theorem target
@@ -198,15 +209,9 @@ this addendum does not request promotion.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation) plus class D
-(open-target registration). It does not change any algebraic content,
-runner output, or load-bearing step classification. It records the
-upstream authority candidates the prior feedback requested, the runner
-that exercises the conditional axis-alignment derivation, and the
-missing-bridge-theorem target named by the prior feedback notes. It
-mirrors the live cite-chain
-pattern used by the
-`PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md` cluster
-(commit `44da750e2`) and the
-`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md` cluster
-(commit `8e84f0c23`). Vocabulary is repo-canonical only.
+This rigorization is a class A finite-algebra source correction plus a
+runner/source-scope firewall. It broadens the theorem from the old real-only
+special case to the full complex Hermitian normal form forced by
+`P_23 H P_23 = H`, without adding a new axiom, a CP premise, a phase-gauge
+premise, or a numerical fit. Independent audit owns any verdict or effective
+status change.

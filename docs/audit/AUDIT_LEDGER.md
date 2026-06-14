@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 885 |
+| **retained_bounded** | 886 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1473 |
+| unaudited | 1472 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1331 |
+| `audited_clean` | 1332 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1790 |
+| `unaudited` | 1789 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 870 |
-| `leaf` | 1358 |
+| `medium` | 867 |
+| `leaf` | 1361 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -333,6 +333,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4541,6 +4542,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** After the step-2 Schur complement, truncating to even d2 shells leaves the next-checkerboard H_kd zero for L=8,12 but nonzero for L=10,14, because the K-chart periods (L/2,L,L/2) determine whether minimal-vector d2 parity tracks chart parity.  _(class `C`)_
 - **chain closes:** True — The runner builds the finite torus Hamiltonian, derives the step-1 closed form by the diagonal eliminated block and two-hop path counts, then computes the step-2 Schur complement and shell/truncation tables. An independent parity check confirms that when all K-periods are even, d2 parity equals chart-parity difference for opposite checkerboards; when L/2 is odd this parity protection is not well-defined, and the L=10,14 nonzero survivors are finite Schur-complement outputs rather than asserted constants.
 - **rationale:** The runner source performs actual finite-matrix computation from the declared free nearest-neighbor Hamiltonian and Schur complements; the contested shell values and H_kd_after values are not hard-coded expected outputs. The numeric gates in the source note match the completed runner output, including 0.312% L=12/14 near-shell drift, the disclosed 8% L=8 box delta, and the L=10/14 post-truncation failures above 0.5. The clean verdict is for the bounded finite-box scope above, not for an asymptotic or all-L amplitude theorem beyond the tested representatives.
+- **auditor confidence:** high
+
+### `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D3_TRUNCATED_CLOSURE_RECURS_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D3_TRUNCATED_CLOSURE_RECURS_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite L=8 and L=12, d=3 cubic lattice, E=0 free checkerboard decimation with the even-d² {2,4} truncation, through three truncated steps, including the stated retained-block Schur/resolvent budgets and no asymptotic flow claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-023238-a1c852cb6a-d3_truncated_closure_recurs_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** After projecting the step-1 retained operator to the even-d² {2,4} stencil, that stencil has zero kept-to-decimated block by parity, so the Schur correction vanishes on later truncated steps and the landed couplings recur unchanged.  _(class `C`)_
+- **chain closes:** True — The supplied runner constructs the finite cubic Laplacian, performs the checkerboard Schur step, projects to the d²=0,2,4 stencil, and verifies zero truncated H_kd and recurrence. Independently, H_dd=6I at step 1 gives correction coefficients 1, 1/3, and 1/6 on shells d²=0,2,4, yielding diag=5, c2=-1/3, c4=-1/6; those displacements preserve checkerboard parity, so later H_kd=0 exactly.
+- **rationale:** The load-bearing closure is not just a printed PASS line: the runner computes the Schur complement from the finite lattice operator rather than importing another note, and the parity argument independently forces the later Schur updates to vanish after truncation. The hard-coded expected constants are used as gates, but the same constants follow by direct shell counting from the initial Laplacian: per kept row the step-1 correction has squared RMS 1 + 12/9 + 6/36 = 5/2, giving the reported 1.58113883008419 budget, with zero later correction. No cited authority or open bridge is needed within the stated finite-L bounded scope.
 - **auditor confidence:** high
 
 ### `d3_upper_bound_import_scope_gate_note_2026-06-06`

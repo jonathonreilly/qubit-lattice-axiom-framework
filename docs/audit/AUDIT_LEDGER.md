@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 898 |
+| **retained_bounded** | 899 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1448 |
+| unaudited | 1447 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1347 |
+| `audited_clean` | 1348 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1765 |
+| `unaudited` | 1764 |
 
 | claim_type | count |
 |---|---:|
@@ -972,6 +972,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -13974,6 +13975,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The route's P1 derivation requires identifying the framework scalar generator W with Tr K and then using log(ρ_A ⊗ ρ_B) = log ρ_A ⊗ I + I ⊗ log ρ_B, so the Tomita-Gibbs route imports the additive-log/P1 content rather than deriving it.  _(class `A`)_
 - **chain closes:** True — The scoped no-go closes: the presented forward derivation of P1 explicitly depends on the underived W = Tr K identification plus the tensor-product log identity. The runner verifies the algebraic factorization, modular-Hamiltonian additivity, F_p contrast, and spectral Cauchy step; it does not establish a positive derivation of P1.
 - **rationale:** The load-bearing obstruction is an algebraic proof-dependency check, not a numerical match or external comparator. The runner source performs actual symbolic/numerical algebra checks and source/ledger bookkeeping checks; it does not merely print constants or import a contested value. The no-go discipline gate passes for the scoped boundary: the packet enumerates more than five attack routes, collapses the walls to the identification-plus-Cauchy residual, scans hidden assumptions, and keeps the claim narrower than global impossibility of P1.
+- **auditor confidence:** high
+
+### `observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_EXACT_ADDITIVITY_ZERO_OFFSET_REPAIR_NOTE_2026-06-13.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_EXACT_ADDITIVITY_ZERO_OFFSET_REPAIR_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the algebraic zero-offset repair: under the stated exact additive composition law on positive scalars, c log r+b is exact-additive only for b=0, while b != 0 belongs to a distinct shifted law.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-034919-656bfd5015-observable_principle_p1_exac`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For W_b(r)=c log r+b, W_b(r_1 r_2)-W_b(r_1)-W_b(r_2)=-b, so exact additivity for all positive r_1,r_2 forces b=0.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by direct algebra from the stated functional form and exact-additivity hypothesis. This does not derive P1 or the physical exact-additivity premise, which the source note correctly leaves outside scope.
+- **rationale:** The load-bearing step is a genuine algebraic identity: expanding the exact-additivity defect gives -b, and the unit argument gives the same result. The runner source actually computes symbolic defects, a symbolic solve, shifted-law separation, rational witnesses, and source guardrails rather than merely printing expected status. The cited parent is retained_bounded and is used only as boundary context; the audited claim does not rely on closing P1.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31`

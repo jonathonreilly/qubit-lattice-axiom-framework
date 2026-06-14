@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 210 |
-| **retained_no_go** | 206 |
+| **retained_no_go** | 207 |
 | **retained_bounded** | 879 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1491 |
+| unaudited | 1490 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1321 |
+| `audited_clean` | 1322 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1808 |
+| `unaudited` | 1807 |
 
 | claim_type | count |
 |---|---:|
@@ -494,6 +494,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_zdet_fermionic_statistics_admission_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -6739,6 +6740,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the supplied path r(t)=tanh(t)^4, dr/dt=4 tanh(t)^3 sech(t)^2>0 for finite t>0, so r=1/2 is crossed as a transit value rather than selected as an attractor.  _(class `A`)_
 - **chain closes:** True — The retained Koide lightcone authority supplies Q=2/3 iff r=1/2 on the stated positive C3-circulant line, and the map/path claims reduce to direct algebra and calculus. The physical/native arrow-selection bridge is not closed, but the note explicitly excludes that broader claim from scope.
 - **rationale:** The load-bearing math is a genuine algebraic/calculus closure over the supplied maps and path: the inverse identities, fixed points, derivatives, monotonicity, endpoint limits, and r=1/2 crossing all check independently. The runner source performs actual symbolic and numerical checks rather than merely printing pass constants, and it does not import the contested native-beta premise as a derived result. The verdict is clean only for the narrowed bounded route-pruning statement; it does not promote r(t)=tanh(t)^4 to a framework-native beta law or decide the physical arrow.
+- **auditor confidence:** high
+
+### `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`
+
+- **Note:** [`FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Under the explicit formal finite-carrier hypotheses F1-F3, the tracial/product/modular reference route selects dimension weighting (1,2), not the equal-block weighting that would give Q=2/3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-09f3681280-flavor_tracial_reference_doe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For rho=I_3/3 on the finite C3 carrier, Tr(rho e0):Tr(rho e1)=1/3:2/3=1:2, so the tracial/product/modular route gives r=1 and Q=1 rather than the equal-block r=1/2, Q=2/3 point.  _(class `A`)_
+- **chain closes:** True — The chain closes as a narrow route-pruning theorem: exact finite matrix algebra gives ranks 1 and 2 for e0 and e1, the trace weights those blocks by dimension, and the retained cited authorities supply the Q=1/3+(2/3)r coordinate and endpoint dictionary. No physical generation bridge, flavor-sector identification, measured-mass readout, or absolute obstruction to Q=2/3 is claimed.
+- **rationale:** The load-bearing step is an algebraic closure over the supplied finite C3 carrier and retained Q-coordinate inputs, not a tuned numerical match or definition substitution. An independent exact check confirms C^3=I, e0/e1 are orthogonal projectors of ranks 1 and 2, Tr((I/3)e0)=1/3, Tr((I/3)e1)=2/3, and the Q endpoints r=1 -> Q=1 and r=1/2 -> Q=2/3. The runner source materially computes these finite facts and uses no external comparator. The no-go discipline gate is satisfied only in the narrow route-pruning sense: non-tracial, chiral, finite-gap, and explicit block-measure routes remain open.
 - **auditor confidence:** high
 
 ### `flavor_value_campaign_capstone_four_channel_2026-05-31`

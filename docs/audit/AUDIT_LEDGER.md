@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 884 |
+| **retained_bounded** | 885 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1474 |
+| unaudited | 1473 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1330 |
+| `audited_clean` | 1331 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1791 |
+| `unaudited` | 1790 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 869 |
-| `leaf` | 1359 |
+| `medium` | 870 |
+| `leaf` | 1358 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1590 | 134.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1356 | 64.41 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1279 | 62.82 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1422 | 60.98 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1358 | 51.41 | `audited_clean` | **retained_bounded** |
 | 6 | `key_terminology` | meta | critical | 1396 | 50.45 | `unaudited` | meta |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1292 | 49.84 | `unaudited` | meta |
@@ -328,6 +328,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_sign_boundary_tracks_landau_peierls_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d2_soft_band_truncation_also_closes_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4475,6 +4476,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The full finite-field sign boundary eps*(T) and the Landau-Peierls curvature-determinant sign-change root mu_LP(T) agree within 2e-2 at each sampled T in {0.2, 0.3, 0.4}.  _(class `C`)_
 - **chain closes:** True — The runner constructs the q=24 Harper finite-field spectrum, the zero-field square-band spectrum, and the LP curvature-determinant integrand directly, then independently brackets and bisects the two sign roots. The reported deviations are all below 2e-2, and the displayed square-band Hessian determinant and Fermi-slope sign conventions check internally.
 - **rationale:** The load-bearing numerical agreement is produced by an actual spectral/quadrature computation rather than by hard-coded target roots or a cross-note import. The source note's displayed identities are consistent: for eps=-2t(cos kx+cos ky), eps_xx eps_yy - eps_xy^2 = 4t^2 cos kx cos ky, and f'(0,T) has the stated negative sign. The clean verdict is bounded to the disclosed sampled temperatures and finite B=2*pi/24 comparison; it does not establish a continuum-B or all-temperature theorem.
+- **auditor confidence:** high
+
+### `d2_soft_band_truncation_also_closes_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D2_SOFT_BAND_TRUNCATION_ALSO_CLOSES_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D2_SOFT_BAND_TRUNCATION_ALSO_CLOSES_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-L, E=0, free d=2 checkerboard Schur pipeline at L=16 and L=32, comparing hard {4,8} and soft {4,8,16,20} even-d2 truncations for post-truncation H_kd closure and measured three-step resolvent budgets.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-022943-b589c661e4-d2_soft_band_truncation_also`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The parity identity dx^2 + dy^2 == dx + dy mod 2 implies every kept even-d2 shell connects only same-checkerboard-color sites, so hard {4,8} and soft {4,8,16,20} truncations force H_kd = 0; the measured finite-L budgets then satisfy soft < hard at L=16 and L=32.  _(class `A`)_
+- **chain closes:** True — The mod-2 parity lemma is a direct algebraic identity: n^2 == n mod 2, so even d2 displacements preserve checkerboard color and cannot appear in the kept-to-decimated block. The runner source also performs actual dense finite-lattice Schur complements and resolvent-error computations, not constant printing, and the reported step-error sums give soft budgets below hard at both audited L values.
+- **rationale:** All cited authorities in the restricted packet are retained_bounded, which is retained-grade for this bounded theorem. Independent parity checking closes the H_kd=0 statement for any even-d2 kept band in the stated finite synthetic checkerboard charts, and the runner's wraparound and balance gates cover the L=16/32 cases. The budget comparison is a finite first-principles matrix computation from the free operator; the stdout arithmetic confirms hard=0.6298691173532 vs soft=0.5240050200688 at L=16 and hard=0.7195551544226 vs soft=0.6298619963486 at L=32. No external comparator, tuned empirical input, or unsupported open dependency is used for the scoped claim.
 - **auditor confidence:** high
 
 ### `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1492 |
-| Retained-grade rows, including boxed decorations | 1347 |
+| Applied audit verdicts | 1493 |
+| Retained-grade rows, including boxed decorations | 1348 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 884 |
+| Retained bounded rows | 885 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1474 |
+| Unaudited rows | 1473 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 42 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1479 |
-| Ready rows | 37 |
+| Total pending rows | 1478 |
+| Ready rows | 36 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
 | Medium pending | 429 |
-| Leaf pending | 465 |
+| Leaf pending | 464 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`d2_soft_band_truncation_also_closes_bounded_theorem_note_2026-06-12`](../../docs/D2_SOFT_BAND_TRUNCATION_ALSO_CLOSES_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12`](../../docs/D3_TRUNCATED_CLOSURE_RECURS_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`](../../docs/D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06`](../../docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12`](../../docs/DET_PHASE_FEW_FREQUENCY_LAW_REFUTED_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12`](../../docs/DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
-- [`dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
+- [`dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
+- [`ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07`](../../docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,15 +83,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 601 |
 | High nodes | 473 |
-| Medium nodes | 908 |
-| Leaf nodes | 1448 |
+| Medium nodes | 909 |
+| Leaf nodes | 1447 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1590 descendants; score 134.636
 - `three_generation_observable_theorem_note` - critical; 1356 descendants; score 64.406
 - `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
-- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
+- `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
 - `plaquette_self_consistency_note` - critical; 1358 descendants; score 51.408
 - `key_terminology` - critical; 1396 descendants; score 50.448
 - `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837

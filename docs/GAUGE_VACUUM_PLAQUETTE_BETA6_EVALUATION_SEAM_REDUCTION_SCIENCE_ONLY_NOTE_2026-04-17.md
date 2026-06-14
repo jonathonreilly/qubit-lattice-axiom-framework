@@ -9,10 +9,11 @@ not set or predict an audit outcome.
 **Status:** purely formal finite-dimensional linear-algebra lemma —
 GIVEN abstract operators `(S, η, K)` on the class-sector space with the
 stated abstract hypotheses, the coefficient relations `z`, `ρ`, `Z(W)`
-follow by linear algebra. The note makes **no claim** that these abstract
-objects ARE the physical β=6 Wilson/Haar kernel/rim; that physical
-identification depends on four unsupplied authorities and is explicitly
-out of scope.
+follow by linear algebra, with normalized `ρ` defined only on the
+nonzero-normalizer locus `z_(0,0) != 0`. The note makes **no claim** that
+these abstract objects ARE the physical β=6 Wilson/Haar kernel/rim; that
+physical identification depends on four unsupplied authorities and is
+explicitly out of scope.
 **Runner:** `scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py`
 
 ## 2026-05-28 Further narrowing (purely formal algebraic lemma)
@@ -38,10 +39,14 @@ narrowing only began. The load-bearing content is hereby scoped as a
   finite-dimensional class-sector inner-product space with orthonormal
   class basis `{χ_(p,q)}`. Let `S` be **any** linear operator on `H`, `η ∈ H`
   **any** vector, and `K(·)` **any** linear evaluation functional. Define
-  `z_(p,q) = ⟨χ_(p,q), S^{L⊥−1} η⟩`, `ρ_(p,q) = z_(p,q)/z_(0,0)`,
-  `v = Σ z_(p,q) χ_(p,q)`, `Z(W) = ⟨K(W), v⟩`. Then the relations in
-  Theorem 1 / Corollaries 1–2 below hold **by elementary linear algebra**.
-  This is true for arbitrary abstract `(S, η, K)`; it carries **no**
+  `z_(p,q) = ⟨χ_(p,q), S^{L⊥−1} η⟩` and
+  `v = Σ z_(p,q) χ_(p,q)`. When `z_(0,0) != 0`, define the normalized
+  coefficients `ρ_(p,q) = z_(p,q)/z_(0,0)`. Finally define
+  `Z(W) = ⟨K(W), v⟩`. Then the relations in Theorem 1 /
+  Corollaries 1–2 below hold **by elementary linear algebra**; normalized
+  `ρ` statements are restricted to the stated nonzero-normalizer locus.
+  This is true for arbitrary abstract `(S, η, K)` satisfying
+  `z_(0,0) != 0` whenever normalized `ρ` is invoked; it carries **no**
   Wilson/Haar, β=6, or plaquette content and is conditional on nothing
   beyond the abstract hypotheses just stated.
 - **Out of scope (the physical identification — NOT claimed here):** that the
@@ -254,7 +259,7 @@ Then the boundary coefficients are exactly
 `z_(p,q)^env(6)
  = <chi_(p,q), (S_6^env)^(L_perp-1) eta_6(e)>`,
 
-and therefore
+and, on the nonzero-normalizer locus `z_(0,0)^env(6) != 0`, therefore
 
 `rho_(p,q)(6)
  = z_(p,q)^env(6) / z_(0,0)^env(6)`.
@@ -293,7 +298,9 @@ From the full-slice rim-lift integral premise:
 From the exact kernel/rim compression premise:
 
 - once `K_6^env` and `B_6` are explicit, `S_6^env`, `eta_6`,
-  `rho_(p,q)(6)`, and the downstream plaquette PF data follow canonically.
+  `rho_(p,q)(6)` on the nonzero-normalizer locus
+  `z_(0,0)^env(6) != 0`, and the downstream plaquette PF data follow
+  canonically.
 
 From the exact compressed rim-evaluation premise:
 
@@ -390,7 +397,7 @@ statement is:
 
 - explicit closed-form matrix elements of `K_6^env`
 - explicit closed-form matrix elements of `B_6(W)`
-- explicit coefficients `rho_(p,q)(6)`
+- explicit coefficients `rho_(p,q)(6)` when `z_(0,0)^env(6) != 0`
 - explicit framework-point plaquette PF data
 - analytic closure of canonical `P(6)`
 
@@ -418,7 +425,7 @@ python3 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_e
 
 Expected summary:
 
-- `THEOREM PASS=5 SUPPORT=5 FAIL=0`
+- `TOTAL: PASS=15 FAIL=0`
 
 ## Audit dependency repair links
 

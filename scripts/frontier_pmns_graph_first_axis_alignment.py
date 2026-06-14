@@ -16,16 +16,15 @@ Answer:
 
   and therefore
 
-      H = [[a,b,b],[b,c,d],[b,d,c]].
+      H = [[a,z,z],[z*,c,r],[z*,r,c]],   a,c,r in R and z in C.
 
   This is a real positive law from the graph-first route, but it still does not
-  fix the values `(a,b,c,d)` or the active sector.
+  fix the values `(a,c,r,z)` or the active sector.
 """
 
 from __future__ import annotations
 
-import itertools
-import math
+from pathlib import Path
 import sys
 
 import numpy as np
@@ -90,18 +89,18 @@ def simplex_grid(step: float = 0.05) -> list[np.ndarray]:
     return pts
 
 
-def aligned_core(a: float, b: float, c: float, d: float) -> np.ndarray:
+def aligned_core(a: float, c: float, r: float, z: complex) -> np.ndarray:
     return np.array(
         [
-            [a, b, b],
-            [b, c, d],
-            [b, d, c],
+            [a, z, z],
+            [np.conj(z), c, r],
+            [np.conj(z), r, c],
         ],
         dtype=complex,
     )
 
 
-def canonical_coords(h: np.ndarray) -> tuple[float, float, float, float, float, float, float]:
+def canonical_coords(h: np.ndarray) -> tuple[float, float, float, float, float, float]:
     return (
         float(np.real(h[0, 0])),
         float(np.real(h[1, 1])),
@@ -109,7 +108,6 @@ def canonical_coords(h: np.ndarray) -> tuple[float, float, float, float, float, 
         float(np.abs(h[0, 1])),
         float(np.abs(h[1, 2])),
         float(np.abs(h[2, 0])),
-        float(np.angle(h[0, 1] * h[1, 2] * h[2, 0])),
     )
 
 
@@ -166,16 +164,29 @@ def part3_residual_z2_forces_the_active_hermitian_core() -> None:
     print("PART 3: THE RESIDUAL Z2 FORCES THE ACTIVE HERMITIAN CORE LAW")
     print("=" * 88)
 
-    h = aligned_core(1.10, 0.26, 0.81, 0.17)
+    z = 0.26 + 0.19j
+    h = aligned_core(1.10, 0.81, 0.17, z)
     resid = np.linalg.norm(P23 @ h @ P23 - h)
-    d1, d2, d3, r12, r23, r31, phi = canonical_coords(h)
+    d1, d2, d3, r12, r23, r31 = canonical_coords(h)
 
+    check("The aligned core is Hermitian", np.allclose(h, h.conj().T, atol=1e-12))
     check("The aligned core is exactly P23-invariant", resid < 1e-12, f"residual={resid:.2e}")
     check("Residual Z2 invariance forces d2=d3", abs(d2 - d3) < 1e-12, f"d2-d3={d2-d3:.2e}")
-    check("Residual Z2 invariance forces r12=r31", abs(r12 - r31) < 1e-12, f"r12-r31={r12-r31:.2e}")
-    check("Residual Z2 invariance forces the triangle phase to vanish on the aligned Hermitian core", abs(phi) < 1e-12,
-          f"phi={phi:.2e}")
-    print(f"  [INFO] The active aligned Hermitian lane has exact form [[a,b,b],[b,c,d],[b,d,c]]  (r23={r23:.6f})")
+    check("Residual Z2 invariance forces |H12|=|H31|", abs(r12 - r31) < 1e-12,
+          f"|H12|-|H31|={r12-r31:.2e}")
+    check("Residual Z2 invariance forces H12=H13", abs(h[0, 1] - h[0, 2]) < 1e-12)
+    check("Hermiticity forces the lower off-axis entries to be conjugates",
+          abs(h[1, 0] - np.conj(h[0, 1])) < 1e-12 and abs(h[2, 0] - np.conj(h[0, 2])) < 1e-12)
+    check("The swapped-pair coupling H23 is real", abs(np.imag(h[1, 2])) < 1e-12, f"Im(H23)={np.imag(h[1, 2]):.2e}")
+    check("P23 invariance allows a genuinely complex off-axis parameter", abs(np.imag(z)) > 1e-12,
+          f"z={z.real:.6f}+{z.imag:.6f}i")
+    check("The valid aligned Hermitian core need not be real-symmetric",
+          not np.allclose(h, h.T, atol=1e-12))
+    print(
+        "  [INFO] The active aligned Hermitian lane has exact form "
+        "[[a,z,z],[z*,c,r],[z*,r,c]] with a,c,r real and z complex "
+        f"(r={r23:.6f})"
+    )
 
 
 def part4_this_route_derives_alignment_but_not_values_or_sector_choice() -> None:
@@ -183,8 +194,8 @@ def part4_this_route_derives_alignment_but_not_values_or_sector_choice() -> None
     print("PART 4: THIS ROUTE DERIVES ALIGNMENT, BUT NOT VALUES OR ACTIVE-SECTOR CHOICE")
     print("=" * 88)
 
-    h1 = aligned_core(1.10, 0.26, 0.81, 0.17)
-    h2 = aligned_core(0.93, 0.11, 1.04, 0.39)
+    h1 = aligned_core(1.10, 0.81, 0.17, 0.26 + 0.19j)
+    h2 = aligned_core(0.93, 1.04, 0.39, 0.11 - 0.07j)
     sigma = np.block([[np.zeros((3, 3), dtype=complex), np.eye(3)], [np.eye(3), np.zeros((3, 3), dtype=complex)]])
     pair_nu = np.block([[h1, np.zeros((3, 3), dtype=complex)], [np.zeros((3, 3), dtype=complex), np.diag([0.1, 0.2, 0.3])]])
     pair_e = sigma @ pair_nu @ sigma
@@ -193,6 +204,23 @@ def part4_this_route_derives_alignment_but_not_values_or_sector_choice() -> None
     check("Exact sector exchange still flips which lepton sector carries the active aligned block", np.linalg.norm(pair_e - sigma @ pair_nu @ sigma) < 1e-12)
     print("  [INFO] The graph-first route fixes alignment but not the aligned-core values")
     print("  [INFO] It does not by itself fix whether the active block sits on E_nu or E_e")
+
+
+def part5_source_scope_firewall() -> None:
+    print("\n" + "=" * 88)
+    print("PART 5: SOURCE-SCOPE FIREWALL")
+    print("=" * 88)
+
+    repo = Path(__file__).resolve().parents[1]
+    note = (repo / "docs" / "PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md").read_text(encoding="utf-8")
+    old_real_core = "[[a,b,b]" + ",[b,c,d],[b,d,c]]"
+
+    check("The note states the complex aligned Hermitian normal form",
+          "[[a,z,z],[z*,c,r],[z*,r,c]]" in note and "z in C" in note)
+    check("The note states the five-real-parameter scope",
+          "five-real-parameter" in note)
+    check("The old real-only core is not presented as the derived theorem",
+          old_real_core not in note)
 
 
 def main() -> int:
@@ -209,6 +237,7 @@ def main() -> int:
     part2_selected_axis_carries_residual_z2_stabilizer()
     part3_residual_z2_forces_the_active_hermitian_core()
     part4_this_route_derives_alignment_but_not_values_or_sector_choice()
+    part5_source_scope_firewall()
 
     print("\n" + "=" * 88)
     print("RESULT")
@@ -216,7 +245,8 @@ def main() -> int:
     print("  Positive graph-first result:")
     print("    - the hw=1 cube selector derives a weak-axis choice")
     print("    - the selected axis carries residual Z2")
-    print("    - that residual Z2 forces the aligned active Hermitian core")
+    print("    - that residual Z2 forces the aligned active Hermitian normal form")
+    print("    - the normal form allows a complex off-axis parameter")
     print()
     print("  Boundary:")
     print("    - this route does not fix the aligned-core values")

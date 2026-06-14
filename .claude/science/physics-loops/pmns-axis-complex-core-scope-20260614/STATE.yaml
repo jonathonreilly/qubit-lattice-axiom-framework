@@ -1,0 +1,23 @@
+loop_slug: pmns-axis-complex-core-scope-20260614
+goal: "Repair pmns_graph_first_axis_alignment_note audited_conditional by replacing the unsupported real-only aligned core with the full complex residual-Z2 Hermitian normal form."
+target_claim_id: pmns_graph_first_axis_alignment_note
+target_status: proposed_promoted_after_independent_audit
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+branch: physics-loop/pmns-axis-complex-core-scope-20260614
+base: origin/main@88183eb6401ec7709f44ddee3ea48cda9ccb7ebe
+files_touched:
+  - docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md
+  - scripts/frontier_pmns_graph_first_axis_alignment.py
+  - logs/runner-cache/frontier_pmns_graph_first_axis_alignment.txt
+open_imports:
+  - "Independent audit must decide whether the revised source closes the row and propagates through downstream chains."
+no_go_routes:
+  - "Do not add a new CP, real-structure, or phase-gauge premise to recover the old real-only four-parameter subfamily."
+  - "Do not retag the audit ledger or publication effective-status surfaces in this science PR."
+runner:
+  command: "PYTHONPATH=scripts python3 scripts/frontier_pmns_graph_first_axis_alignment.py"
+  result: "PASS=24 FAIL=0"
+next_exact_action: "Open PR for reviewer extraction and independent audit rerun."
+stop_condition: "Source repair, runner cache, loop pack, and PR are complete."

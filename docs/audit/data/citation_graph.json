@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "post_record_measure_weight_normalization_subdivision_2026-06-06"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "carrier_orbit_invariance_note_2026-05-03"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12",
         "post_record_measure_weight_normalization_subdivision_2026-06-06",
         "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
         "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
         "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
         "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
-        "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11"
+        "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
+        "carrier_orbit_invariance_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9f83954ceb6ccf38799984444b0756dbc7d34cc24194a786ec3b17971cb3543b",
+      "note_hash": "0ae7c961bfcff64fc06dbf7e9aef1e5cd62e2e92954d54fa309c89fd0e5b562d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -112941,7 +112941,7 @@
       "positive_theorem": 616
     },
     "edge_count": 12876,
-    "leaf_count": 1109,
+    "leaf_count": 1108,
     "node_count": 3430,
     "root_count": 1064,
     "runners_with_path": 3010

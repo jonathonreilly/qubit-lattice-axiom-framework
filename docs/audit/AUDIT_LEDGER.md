@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1484 |
+| unaudited | 1483 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 37 |
+| ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1325 |
-| `audited_conditional` | 37 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1801 |
+| `unaudited` | 1800 |
 
 | claim_type | count |
 |---|---:|
@@ -1485,6 +1485,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `post_record_measure_weight_normalization_subdivision_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -14966,6 +14967,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** supplied dial domain + supplied flow, score, or thermal rule + supplied stability predicate + exact finite/algebraic check => stable-setting support under that supplied rule  _(class `E`)_
 - **chain closes:** False — The packet closes only by stipulating the supplied stable-setting interface and checking ledger/slice bookkeeping. The missing theorem step is an independent derivation from the Record/framework baseline that the stable-setting support relation follows rather than being a definition.
 - **rationale:** The displayed quantitative inventory is internally consistent: 18+3+4+14+19=58, the helper totals 58+36=94 and 105+94+45+2=246, and the toy score, flow, and thermal examples check algebraically. But the load-bearing implication is the introduction of a certificate semantics: complete supplied evidence is labeled stable-setting support, while selected-dial status is separately blocked. The helper chain performs regex ledger bucketing and compares against hard-coded expected counts; it is cross-note/bookkeeping verification, not first-principles physics computation from the axiom baseline.
+- **auditor confidence:** high
+
+### `post_record_measure_weight_normalization_subdivision_2026-06-06`
+
+- **Note:** [`POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the finite supplied-weight normalization lemma and the read-only current-ledger subdivision of 60 measure_weight_normalization rows into five regex-defined lanes; no measure, prior, selector, Born law, dynamics, or dial selection is audited as derived from Record.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-015720-aadc214848-post_record_measure_weight_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supplied finite carrier plus supplied nonnegative weights with exact positive total gives a normalized measure under that supplied weight rule, while the normalized measure is not selected-dial authority.  _(class `A`)_
+- **chain closes:** False — The finite normalization algebra closes for supplied weights: p_i=w_i/T is nonnegative and sums to one when T>0. The queued positive-theorem chain does not close from the restricted packet because the carrier, weight rule, selector authority, and current ledger-bucketing authority are imported rather than derived from a cited axiom or retained bridge.
+- **rationale:** The runner’s finite normalization checks are mathematically sound, including the 1,3 -> 1/4,3/4 example, the unit-sum check, and zero/negative rejection. The row-count portion is a cross-note/current-ledger verification using regex classifiers, hard-coded expected counts, and a slice export, not a first-principles derivation from Record. The source note correctly blocks selector authority, Born law, production dynamics, and Record-derived measure/prior claims, but those blocks also show the positive theorem remains conditional on supplied measure/weight data and ledger classification inputs.
 - **auditor confidence:** high
 
 ### `post_record_model_selection_firewall_2026-06-06`

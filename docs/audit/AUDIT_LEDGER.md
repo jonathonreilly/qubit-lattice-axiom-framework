@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 903 |
+| **retained_bounded** | 904 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1439 |
+| unaudited | 1438 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1352 |
+| `audited_clean` | 1353 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1756 |
+| `unaudited` | 1755 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 858 |
-| `leaf` | 1370 |
+| `medium` | 857 |
+| `leaf` | 1371 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -1366,6 +1366,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `transfer_trace_correspondence_fixes_kernel_normalization_on_retained_surface_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `translation_abelian_composition_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -20010,6 +20011,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** After proving Re w >= m^2 - sinh^2 eta > 0 and |E_d(p)| <= C_d(eta,m) on the shifted strip, the proof shifts the p_mu contour to Im p_mu = -eta sgn(z_mu) and obtains |h(z)| <= a_tau^{-1} C_d(eta,m) e^{-eta ||z||_inf}.  _(class `A`)_
 - **chain closes:** True — The exponential bound follows by standard strip analyticity and contour shifting from the retained two-step symbol and normalization inputs. The support-family translation uses the retained tensor-product hopping convention, and the range-4 nonzero coefficients are independently supported by direct quadrature from the same symbol rather than by a hidden finite-range premise.
 - **rationale:** All cited authorities in the restricted packet are retained-grade or decoration under retained-grade status. The load-bearing analytic estimate closes from the displayed symbol, and the runner source performs substantive strip, Fourier-kernel, tail, truncation, and falsification checks rather than printing constants. The scoped negative is not an absolute locality no-go: it only rules out diameter <= 2 finite range on the free bilinear two-step sector, while explicitly preserving the proved quasilocal route and leaving gauged/interacting locality open.
+- **auditor confidence:** high
+
+### `transfer_trace_correspondence_fixes_kernel_normalization_on_retained_surface_bounded_note_2026-06-12`
+
+- **Note:** [`TRANSFER_TRACE_CORRESPONDENCE_FIXES_KERNEL_NORMALIZATION_ON_RETAINED_SURFACE_BOUNDED_NOTE_2026-06-12.md`](../../docs/TRANSFER_TRACE_CORRESPONDENCE_FIXES_KERNEL_NORMALIZATION_ON_RETAINED_SURFACE_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Retained free staggered 1+1d U=1 two-step blocked surface with the canonical pair Berezin measure; no occupancy-cell, r-selection, corner/generation extension, or physical-time claim was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-041422-13629c7787-transfer_trace_correspondenc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Rescaling the Berezin quadratic kernel by lambda != 1 multiplies the Berezin side by lambda^k, and equality with the already fixed operator trace over lambda > 0 forces lambda = 1.  _(class `A`)_
+- **chain closes:** True — The retained transfer authority fixes the operator trace Tr Gamma(t)=det(1+t), and the retained canonical Berezin authority supplies Z_F[M]=det(M). For the anti-periodic trace matrix, M -> lambda M gives det(lambda M)=lambda^rank(M)det(M); with nonzero operator trace and lambda > 0, equality forces lambda=1.
+- **rationale:** The load-bearing step is an algebraic determinant-scaling closure over two retained-grade inputs: the retained two-step transfer trace and the retained canonical Berezin determinant measure. The runner source performs finite Fock-space trace checks and a genuine exterior-algebra Berezin expansion rather than merely printing constants or substituting determinants for the Berezin integral. The note's boundary language keeps the result on the retained free staggered surface and explicitly leaves the corner/generation extension and occupancy binary open.
 - **auditor confidence:** high
 
 ### `translation_abelian_composition_theorem_note_2026-05-02`

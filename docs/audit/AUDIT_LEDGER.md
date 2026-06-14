@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 210 |
 | **retained_bounded** | 897 |
 | _retained_pending_chain_ | 20 |
-| open_gate | 40 |
-| unaudited | 1451 |
+| open_gate | 41 |
+| unaudited | 1450 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1345 |
+| `audited_clean` | 1346 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1768 |
+| `unaudited` | 1767 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 864 |
-| `leaf` | 1364 |
+| `medium` | 865 |
+| `leaf` | 1363 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -858,6 +858,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_finite_path_explanation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_long_path_test_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lepton_block_d12_prime_matching_no_go_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -12330,6 +12331,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** At H=0.25, the T_phys=7.5 kubo_true fit gives slope -1.4356 on b in {3,4,5,6}, essentially matching the retained T_phys=15 slope near -1.43 while the finite-path formula predicts -1.7336 at T_phys=7.5.  _(class `C`)_
 - **chain closes:** True — The primary runner recomputes the T_phys=7.5 kubo_true values from the DAG/Kubo propagator and the helper source does not hard-code the contested short-path slope. The T_phys=15 comparison slope is supplied by a retained_no_go cited authority, and no open positive layer-weighted bridge is needed to falsify the surrogate prediction.
 - **rationale:** Independent recomputation of the displayed finite-path formula slopes gives -1.7336, -1.4188, and -1.0776 for L_eff=5, 10, and 30, matching the packet. Independently fitting the stdout T_phys=7.5, H=0.25 kubo_true values gives slope -1.4356 with R2=0.9985, also matching the packet. The runner source instantiates the lattice/DAG propagation and first-order Kubo calculation rather than reading the contested value from another note. The audited conclusion is limited to falsifying this finite-path surrogate's regime-transition prediction, not deriving the unknown positive mechanism for the observed slope.
+- **auditor confidence:** high
+
+### `lepton_block_d12_prime_matching_no_go_note_2026-05-10`
+
+- **Note:** [`LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited only the current-source-surface gate that YT-style lepton matching requires an additional physical lepton scalar/operator bridge; no lepton Yukawa prediction or permanent no-go was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-034126-076b8b55f7-lepton_block_d12_prime_match`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current cited sources define the quark/Q_L scalar-singlet operator and a color channel-fraction theorem, but do not define a physical lepton-composite scalar bridge, so the formal lepton hypercharge algebra cannot be promoted to a Ward-identity matching result.  _(class `A`)_
+- **chain closes:** True — The YT Ward authority supplies H_unit only on the Q_L block, while the Yukawa color-projection authority is explicitly only an SU(3) channel-fraction result. Within the restricted packet, no cited authority supplies the lepton scalar bridge needed to identify the formal unit tensor with a physical lepton operator.
+- **rationale:** The clean result is for the scoped open-gate claim, not for an absolute no-go or a lepton Yukawa theorem. The displayed algebra y_t = g_s/sqrt(6) and conditional y_tau = g_1/sqrt(2) is internally consistent, and the restricted authorities do not provide the missing lepton-operator identification. The runner mostly verifies algebra and source-boundary text; its hard-coded boundary PASS lines are not independently load-bearing, but the packet text itself supports the narrow gate.
 - **auditor confidence:** high
 
 ### `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26`

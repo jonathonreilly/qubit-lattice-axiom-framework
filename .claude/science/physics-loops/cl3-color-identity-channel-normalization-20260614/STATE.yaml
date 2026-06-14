@@ -1,0 +1,13 @@
+loop: cl3-color-identity-channel-normalization-20260614
+target_claim_id: cl3_color_automorphism_theorem
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: identity_channel_normalization_repair
+files_touched:
+  - docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md
+  - scripts/verify_cl3_sm_embedding.py
+  - logs/runner-cache/verify_cl3_sm_embedding.txt
+status: ready_for_review
+next_exact_action: reviewer/auditor re-audits the repaired identity-channel convention
+stop_condition: PR opened for review

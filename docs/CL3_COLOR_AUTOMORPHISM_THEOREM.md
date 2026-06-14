@@ -1,4 +1,4 @@
-# Cl(3) Color Structure Theorem: SU(3)_c on the Symmetric Base + R_conn Derivation
+# Cl(3) Color Structure Theorem: SU(3)_c on the Symmetric Base + Adjoint Channel Fraction
 
 **Date:** 2026-04-19 (originally); 2026-05-04 (audited_renaming scope-narrow)
 **Status:** algebraic SU(3) embedding + Fierz channel-count theorem on the 3D symmetric base subspace of the taste cube. **The identification of this 3D base with physical SM color is a separate retained-bridge requirement, not part of this theorem's load-bearing scope.**
@@ -48,15 +48,16 @@ following are exact algebraic facts about the tensor-product carrier
 5. The Fierz identity for SU(3) gives:
    `∑_a T^a_{ij} T^a_{kl} = (1/2)δᵢₗδₖⱼ − (1/2N_c)δᵢⱼδₖₗ`
 
-6. From the Fierz identity, the algebraic channel-count ratio on
-   `End(ℂ^{N_c})` is:
-   `R_conn = (N_c² − 1)/N_c² = 8/9`
+6. From the Fierz identity and the `1 ⊕ adjoint` decomposition of
+   `End(ℂ^{N_c})`, the algebraic representation-dimension fraction is:
+   `f_adj,dim = (N_c² − 1)/N_c² = 8/9`.
    This is an **exact channel-count fraction on the 3D symmetric base
-   carrier**. Reading it as a physical EW-color coupling factor requires
-   the bridge below; the EW alpha-level factor is tracked as
-   `K_EW(kappa_EW)=1/(8/9+kappa_EW/9)` with `sqrt(9/8)` the
-   connected-trace specialization `kappa_EW=0`, not an unconditional
-   consequence of this algebra alone.
+   carrier**. Reading it as a physical connected color-trace fraction or as
+   a physical EW-color coupling factor requires a separate bridge; the EW
+   alpha-level factor is tracked as
+   `K_EW(kappa_EW)=1/(8/9+kappa_EW/9)` with `sqrt(9/8)` only the
+   conditional connected-trace specialization `kappa_EW=0`, not an
+   unconditional consequence of this algebra alone.
 
 ## Physical-identification bridge (deferred to a separate theorem)
 
@@ -74,9 +75,10 @@ either:
   carried by SM quark fields), or
 - Cite an existing retained authority that supplies the bridge.
 
-Until that bridge is on the retained-grade surface, the corollary "`R_conn = 8/9`
-is the physical color-trace ratio" must be read as **conditional on the
-bridge**, not as a direct consequence of this note's algebra.
+Until that bridge is on the retained-grade surface, the corollary
+"`f_adj,dim = 8/9` is the physical `R_conn` color-trace ratio" must be read as
+**conditional on the bridge**, not as a direct consequence of this note's
+algebra.
 
 The closest current retained-bounded gauge surface is
 [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md)
@@ -135,7 +137,7 @@ so `[T^a_{8D}, Y] = 0` by the same structure.
 The Standard Model gauge group structure `SU(3)_c × SU(2)_L × U(1)_Y` emerges
 algebraically from the tensor product decomposition of the taste cube.
 
-### D. R_conn from the SU(N_c) Algebra
+### D. Adjoint channel-count fraction from the SU(N_c) algebra
 
 The Fierz completeness relation for SU(N_c) with `T_F = 1/2` (summing over the
 `N_c²-1` traceless generators):
@@ -144,28 +146,40 @@ The Fierz completeness relation for SU(N_c) with `T_F = 1/2` (summing over the
 ∑_{a=1}^{N_c²-1} (T^a)_{ij} (T^a)_{kl} = (1/2)δᵢₗδₖⱼ − (1/(2N_c))δᵢⱼδₖₗ
 ```
 
-Including the identity channel `T^0 = I/√N_c` with weight `(1/(2N_c))δᵢⱼδₖₗ`,
-the full completeness relation on `End(ℂ^{N_c})` is:
+The identity-channel convention is kept separate from the `T_F=1/2` generator
+convention:
+
+- In the Hilbert-Schmidt orthonormal basis for the full matrix algebra,
+  `L^0 = I/√N_c` and `L^a = √2 T^a`. Then
+  `∑_{A=0}^{N_c²-1} L^A_{ij} L^A_{kl} = δᵢₗδₖⱼ`, and the singlet basis vector
+  has Hilbert-space dimension fraction `1/N_c²`.
+- In the half-normalized generator convention `Tr(T^a T^b)=1/2 δ^{ab}`, the
+  identity element compatible with the half-completeness term
+  `(1/(2N_c))δᵢⱼδₖₗ` is `T^0 = I/√(2N_c)`, not `I/√N_c`.
+
+Thus the audited channel-count statement is the representation-dimension
+fraction on `End(ℂ^{N_c})`:
 
 ```
 singlet channel:  weight = 1/N_c²  of the N_c²-dimensional matrix algebra
 adjoint channel:  weight = (N_c²−1)/N_c²
 ```
 
-`R_conn` is the fraction of a quark bilinear propagated by the adjoint (non-singlet,
-color-connected) channel:
+The exact algebraic adjoint dimension fraction is:
 
 ```
-R_conn = (N_c²−1)/N_c²  [leading order in 1/N_c]
+f_adj,dim = (N_c²−1)/N_c²
 ```
 
-For `N_c = 3`: `R_conn = 8/9`. Subleading topology corrections are
-`O(1/N_c^4) ~ 1.2%` at `N_c=3` (bounded in `RCONN_DERIVED_NOTE.md`).
+For `N_c = 3`: `f_adj,dim = 8/9`. Interpreting this dimension fraction as an
+actual connected/dynamical color-trace fraction is outside this theorem unless
+a separate equal-population, ergodicity, or matching bridge is supplied.
 
 **EW-color coefficient boundary:**
 
 The Ward-identity derivation of `y_t = g_bare/√(2N_c)` produces a ratio of EW
-and color traces. The SU(N_c) algebra fixes the channel fraction, but the EW
+and color traces. The SU(N_c) algebra fixes the representation-dimension
+fraction, but a physical trace ratio still needs its own bridge. The EW
 normalization lane now carries the explicit coefficient
 `K_EW(kappa_EW)=1/(8/9+kappa_EW/9)`. The coupling factor `sqrt(9/8)` is the
 connected-trace specialization `kappa_EW=0`, not a consequence of this
@@ -184,7 +198,8 @@ algebraic support note by itself.
 | `[SU(3)_c, Y] = 0` | max err < 10⁻¹⁷ |
 | `N_c = 3`, adjoint dim = 8 | exact |
 | Fierz identity | max err < 10⁻¹⁶ |
-| `F_adj = 8/9` | exact Fierz/channel-count fraction |
+| identity-channel convention | `I/√N_c` for Hilbert-Schmidt full basis; `I/√(2N_c)` for `T_F=1/2` half-completeness |
+| `f_adj,dim = 8/9` | exact Fierz/channel-count dimension fraction |
 | `K_EW(0)=9/8` | conditional connected-trace specialization |
 
 ---
@@ -203,21 +218,25 @@ is now grounded in the explicit Gell-Mann embedding verified here.
 
 ### YT_EW_COLOR_PROJECTION_THEOREM.md
 
-The exact `8/9` channel fraction used there is confirmed here via the SU(3)
-Fierz identity. The EW physical readout coefficient is separately bounded by
+The exact algebraic `8/9` representation-dimension fraction used there is
+confirmed here via the SU(3) Fierz identity. Any physical connected-trace
+reading and the EW physical readout coefficient are separately bounded by
 [`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md).
 
 ### RCONN_DERIVED_NOTE.md
 
-`R_conn = 8/9 = (N_c²−1)/N_c²` is confirmed as following from SU(3) structure
+The algebraic dimension fraction
+`f_adj,dim = 8/9 = (N_c²−1)/N_c²` follows from SU(3) structure
 constants alone, with `N_c = 3` forced by the spatial dimension of Z³.
+A later physical use as `R_conn` must supply its own trace-population bridge.
 
 ---
 
 ## What This Theorem Sharpens
 
-- **R_conn = 8/9 blocker**: algebraic origin — adjoint fraction of SU(N_c) matrix algebra;
-  leading-order value exact, O(1/N_c^4) corrections bounded in `RCONN_DERIVED_NOTE.md`
+- **8/9 channel-count blocker**: algebraic origin — adjoint representation
+  dimension fraction of the SU(N_c) matrix algebra; physical `R_conn` use
+  remains bridge-dependent
 - **EW-color correction**: reduced to `K_EW(kappa_EW)`; the `sqrt(9/8)`
   coupling factor is only the `kappa_EW=0` specialization
 - **[SU(3), SU(2)] = 0**: exact from tensor product structure of taste cube

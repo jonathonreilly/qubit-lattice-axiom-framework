@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 258,
-    "leaf": 486,
+    "leaf": 485,
     "medium": 429
   },
   "cycle_break_target_count": 20,
@@ -18118,30 +18118,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/D2_SIGN_BOUNDARY_BISECTION_BETWEEN_LANDMARKS_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_d2_sign_boundary_bisection_2026_06_12.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18229,6 +18205,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
+        "axiom_first_spin_statistics_theorem_note_2026-04-29",
+        "fermion_parity_z2_grading_theorem_note_2026-05-02",
+        "minimal_axioms",
+        "scale_reference_primitive"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py",
       "transitive_descendants": 17
     },
     {
@@ -31348,34 +31352,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
-        "fermion_parity_z2_grading_theorem_note_2026-05-02",
-        "minimal_axioms",
-        "scale_reference_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -31685,6 +31661,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_clifford_gamma_species_corner_decoupling.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12",
+        "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/D2_SIGN_BOUNDARY_MASS_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_d2_sign_boundary_mass_collapse_2026_06_12.py",
       "transitive_descendants": 0
     },
     {
@@ -37138,31 +37139,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_cubic_coxeter_edge_lengths_from_matter_correlation_decay_2026_06_10.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12",
-        "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/D2_SIGN_BOUNDARY_MASS_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_d2_sign_boundary_mass_collapse_2026_06_12.py",
       "transitive_descendants": 0
     },
     {
@@ -45523,5 +45499,5 @@
     }
   ],
   "ready_count": 51,
-  "total_pending": 1500
+  "total_pending": 1499
 }

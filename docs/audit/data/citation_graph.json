@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "spin_statistics_fs_admission_located_exercise_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
         "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12",
         "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12",
         "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12",
         "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12",
         "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02",
-        "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
+        "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
+        "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5980c2be17156991762b1c9bf514299051ee07fad50d0fb3aafb91e1efc48661",
+      "note_hash": "85805af02c956e1c2e4dd8521dbca90cb9cead2456f9bed0f12e547a01e34184",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1471 |
-| Retained-grade rows, including boxed decorations | 1335 |
+| Applied audit verdicts | 1472 |
+| Retained-grade rows, including boxed decorations | 1336 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 875 |
+| Retained bounded rows | 876 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1495 |
+| Unaudited rows | 1494 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 34 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1500 |
+| Total pending rows | 1499 |
 | Ready rows | 51 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
 | Medium pending | 429 |
-| Leaf pending | 486 |
+| Leaf pending | 485 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12`](../../docs/D2_SIGN_BOUNDARY_BISECTION_BETWEEN_LANDMARKS_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12`](../../docs/D2_TRUNCATED_FLOW_FROZEN_RATIO_ACCUMULATED_BUDGET_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12`](../../docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12`](../../docs/D3_STEP2_RANGE_GROWTH_PERIOD_CLASS_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
+- [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - medium; unaudited
 - [`g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06`](../../docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
-- [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - leaf; unaudited
+- [`interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`](../../docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 601 |
 | High nodes | 473 |
-| Medium nodes | 903 |
-| Leaf nodes | 1453 |
+| Medium nodes | 904 |
+| Leaf nodes | 1452 |
 
 Top load-bearing rows by graph score:
 

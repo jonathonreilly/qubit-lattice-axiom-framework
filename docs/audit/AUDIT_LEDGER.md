@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 875 |
+| **retained_bounded** | 876 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1495 |
+| unaudited | 1494 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1317 |
+| `audited_clean` | 1318 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1812 |
+| `unaudited` | 1811 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 864 |
-| `leaf` | 1364 |
+| `medium` | 865 |
+| `leaf` | 1363 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -324,6 +324,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cyclic_projector_compression_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4348,6 +4349,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The plaquette-field susceptibility χ(q)=2[Ω(B_q)-Ω(0)]/B_q² with B_q=2π/q, q∈{16,24,32}, Richardson-extrapolates to negative χ on the sampled μ_ch grid {0.0,0.5,1.0,1.5} and positive χ at μ_ch=2.0 for both sampled masses and temperatures.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the Harper Hamiltonian, the independent folded B=0 spectrum, the grand-potential integral, χ normalization, and the B² Richardson extrapolation directly rather than importing or hard-coding the asserted signs. The audited conclusion follows for the sampled grid only.
 - **rationale:** The load-bearing signs are produced by first-principles spectral computation inside the runner, not by a numerical table copied from the note or another authority. The formula inventory checks out on the restricted packet: χ=2ΔΩ/B² is the Ω″ normalization, the q=24,32 Richardson formula cancels a leading B² error term, and the B=0/gauge-origin controls test the relevant normalizations. All asserted sampled signs are resolved with margins far above the stated eps floors, and there are no cited non-retained dependencies or external comparator inputs. The clean verdict is limited to the bounded sampled-grid claim.
+- **auditor confidence:** high
+
+### `d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D2_SIGN_BOUNDARY_BISECTION_BETWEEN_LANDMARKS_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D2_SIGN_BOUNDARY_BISECTION_BETWEEN_LANDMARKS_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Sampled finite-q sign-boundary roots at q=24 for (m,T)=(0.2,0.2),(0.5,0.2),(0.2,0.4), with quadrature doubling gates, q=32 size probes, fixed ordering checks, and strict between-landmarks inequalities; no continuum or landmark-identification claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-012405-67fb9fe741-d2_sign_boundary_bisection_b`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-Harper flux-response curvature sign-change boundary is bisection-located to 1e-3 at the three sampled (m,T) instances, with q=32 size probes and each sampled mu* strictly between |m| and sqrt(m^2+16).  _(class `C`)_
+- **chain closes:** True — The runner constructs the finite Harper matrices and zero-field spectra, computes chi from the spectra, and uses sign-preserving bisection rather than importing the displayed roots. Independent arithmetic confirms the bisection widths imply <=1e-3 midpoint localization, the two stated monotone orderings hold, and all three roots lie strictly between |m| and sqrt(m^2+16).
+- **rationale:** The load-bearing step is a first-principles finite numerical computation from the stated lattice operator, not a renaming, comparator match, or cross-note value import. The sole cited authority is retained_bounded, and the present note keeps the conclusion bounded to sampled finite-field instances. The explicit open landmark-identification language is not used as a premise for a stronger identification; the audited claim is only strict between-ness and non-anchoring at the sampled points.
 - **auditor confidence:** high
 
 ### `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12`

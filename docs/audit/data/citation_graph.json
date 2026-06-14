@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_detr_default_full_exercise_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12",
         "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
         "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
         "det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12",
         "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
         "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
-        "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07"
+        "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+        "flavor_detr_default_full_exercise_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "66616697b1334733adb5be2ff271b2931c1997c83f55b32d91eaea93ec14dc56",
+      "note_hash": "3d3042cfe6c9d152443514e491920333e2aa2a4fc6577bbcf21baf40183e5b7b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

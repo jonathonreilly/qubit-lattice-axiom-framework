@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 869 |
+| **retained_bounded** | 870 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1502 |
+| unaudited | 1501 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1311 |
+| `audited_clean` | 1312 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1819 |
+| `unaudited` | 1818 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 860 |
-| `leaf` | 1368 |
+| `medium` | 861 |
+| `leaf` | 1367 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -857,6 +857,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -12103,6 +12104,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since dim_C(M_2(C))=4 and finite tensor-product dimensions multiply, dim_C(M_2(C)^tensor d)=4^d, so at the bounded parameter d=4 the dimension is 4^4=256 and the reciprocal is 1/256.  _(class `A`)_
 - **chain closes:** True — The theorem closes by basis counting and tensor-product dimension multiplicativity over finite-dimensional complex vector spaces. The only physics-sensitive quantity, d=4, is an explicit bounded parameter rather than an output.
 - **rationale:** The row is a class-A algebraic bookkeeping theorem and does not import PDG values, mass-scale observations, or a physical dimension derivation. The cached runner reports PASS=14, FAIL=0 under SHA f8e6d0d9e6a6b88a48b3cea28cf0b4f73536762df53a0784c240c0dcf71a5e20, including explicit tensor basis/rank checks at d=4. Clean status is bounded by the claim_type: downstream effective status should be retained_bounded, not an unbounded derivation of the lepton scale or d=4.
+- **auditor confidence:** high
+
+### `magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`
+
+- **Note:** [`MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formula-local boundary: within the supplied alpha_bare slot and exponent-16 count, substituting 2π for 4π produces exactly the 2^16 gap; no physical readout, convention, dressing, or hierarchy value gate is closed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-010459-f242d73965-magnitude_4pi_is_native_coup`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied hierarchy-formula slot alpha_bare = g_bare^2/(4π) and exponent 16, replacing the coupling normalization 4π with a Gaussian 2π changes the factor by ((1/(2π))/(1/(4π)))^16 = 2^16.  _(class `A`)_
+- **chain closes:** True — The load-bearing arithmetic is exact, and the cited 4π geometry and count-16 authorities are retained-grade within the packet. The open I1/I2/I3/P3 and minimal-block readout residuals are explicitly outside the audited scope.
+- **rationale:** The claim closes as a bounded, formula-local algebraic objection removal: (2π)^-16/(4π)^-16 = 2^16, independently of observed M_Pl, v, PDG values, fitted u0, or value matching. The packet’s retained-grade sources support the native 4π geometry and exponent-count context, while the runner source verifies it is not smuggling in an observed-value PASS condition. This verdict does not promote the physical coupling/readout/dressing chain.
 - **auditor confidence:** high
 
 ### `magnitude_reads_minimal_record_block_2026-06-06`

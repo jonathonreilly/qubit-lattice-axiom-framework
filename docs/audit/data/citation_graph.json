@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "post_record_measure_weight_normalization_subdivision_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02",
         "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
         "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
         "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
         "koide_records_objectivity_conditional_note_2026-05-31",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
-        "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12"
+        "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12",
+        "post_record_measure_weight_normalization_subdivision_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c1be0dc4970b240e3fc9b7aedd4a01a6198e316164e20d96f019844bf50abf76",
+      "note_hash": "416ecd4fae6ecfe5ea4d9acc728a74f10bf2990331149e637e8872e94674d839",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

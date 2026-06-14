@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1499 |
+| Applied audit verdicts | 1500 |
 | Retained-grade rows, including boxed decorations | 1353 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 890 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1467 |
+| Unaudited rows | 1466 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 43 |
+| Audited conditional rows | 44 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 20 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1472 |
-| Ready rows | 30 |
+| Total pending rows | 1471 |
+| Ready rows | 29 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
 | Medium pending | 429 |
-| Leaf pending | 458 |
+| Leaf pending | 457 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07`](../../docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md) - medium; unaudited
 - [`flavor_detr_default_full_exercise_note_2026-05-30`](../../docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md) - medium; unaudited
 - [`free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`gate_b_dynamics_note`](../../docs/GATE_B_DYNAMICS_NOTE.md) - medium; unaudited
 - [`gate_b_operator_cauchy_note_2026-05-10`](../../docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_TOP_DOWN_INTEGRAL_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_TOP_DOWN_INTEGRAL_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07`](../../docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 601 |
 | High nodes | 473 |
-| Medium nodes | 912 |
-| Leaf nodes | 1444 |
+| Medium nodes | 911 |
+| Leaf nodes | 1445 |
 
 Top load-bearing rows by graph score:
 
@@ -92,7 +92,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1356 descendants; score 64.406
 - `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
 - `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
-- `plaquette_self_consistency_note` - critical; 1358 descendants; score 51.408
+- `plaquette_self_consistency_note` - critical; 1359 descendants; score 51.409
 - `key_terminology` - critical; 1396 descendants; score 50.448
 - `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1262 descendants; score 44.803

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1451 |
+| Applied audit verdicts | 1452 |
 | Retained-grade rows, including boxed decorations | 1323 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 205 |
 | Retained bounded rows | 864 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1515 |
+| Unaudited rows | 1514 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 28 |
+| Audited conditional rows | 29 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 20 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1520 |
-| Ready rows | 67 |
+| Total pending rows | 1519 |
+| Ready rows | 66 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
-| High pending | 259 |
+| High pending | 258 |
 | Medium pending | 438 |
 | Leaf pending | 496 |
 
 Next ready rows by queue order:
 
-- [`kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09`](../../docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
 - [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05`](../../docs/KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md) - medium; unaudited
 - [`signed_gravity_aps_locked_source_action_proposal_note`](../../docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md) - medium; unaudited
 - [`cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04`](../../docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
+- [`gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_INTERNAL_LINK_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

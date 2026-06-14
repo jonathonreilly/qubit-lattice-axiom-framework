@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1474 |
-| Retained-grade rows, including boxed decorations | 1338 |
+| Applied audit verdicts | 1475 |
+| Retained-grade rows, including boxed decorations | 1339 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 878 |
+| Retained bounded rows | 879 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1492 |
+| Unaudited rows | 1491 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 34 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1497 |
+| Total pending rows | 1496 |
 | Ready rows | 50 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
 | Medium pending | 429 |
-| Leaf pending | 483 |
+| Leaf pending | 482 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12`](../../docs/D3_STEP2_RANGE_GROWTH_PERIOD_CLASS_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
 - [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - medium; unaudited
 - [`g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06`](../../docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
 - [`interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`](../../docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`koide_records_objectivity_conditional_note_2026-05-31`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md) - medium; unaudited
-- [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - leaf; unaudited
+- [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - medium; unaudited
+- [`lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12`](../../docs/LP_IDENTIFICATION_FAILS_OFF_M0_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -90,9 +90,9 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1590 descendants; score 134.636
 - `three_generation_observable_theorem_note` - critical; 1357 descendants; score 64.407
-- `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
+- `observable_principle_from_axiom_note` - critical; 1280 descendants; score 62.823
 - `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
-- `plaquette_self_consistency_note` - critical; 1358 descendants; score 51.408
-- `key_terminology` - critical; 1396 descendants; score 50.448
-- `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1262 descendants; score 44.803
+- `plaquette_self_consistency_note` - critical; 1359 descendants; score 51.409
+- `key_terminology` - critical; 1397 descendants; score 50.449
+- `minimal_axioms_2026-05-03` - critical; 1293 descendants; score 49.838
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1263 descendants; score 44.804

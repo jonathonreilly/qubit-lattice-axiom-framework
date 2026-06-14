@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py
-runner_sha256: adc704cf54e36e5460b6db1d8a6dc695899899574f7d930be6ebfee01ddea486
+runner_sha256: 20613cbfe38df1821440a1eb1a45c8bca61b5971bdce435ffa54c45c909ae364
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.74
+elapsed_sec: 0.73
 status: ok
 ----- stdout -----
 Gauge-vacuum plaquette word-count theta identification
@@ -139,10 +139,11 @@ PASS: note delegates status to the independent audit lane
 PASS: note names this primary runner as a plain-text pointer
 PASS: note displays the audited theta^2 secondary scale
 PASS: note keeps scratch-packet context non-authoritative without stale temp paths
+PASS: note displays the corrected theta^2 secondary scale
 Named residuals: finite dominant-weight box; finite Bessel mode support; finite word count; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning; all-k rigorous tail remainder remains a named finite-packet target.
 PASS: runner names residuals without claiming them retired
 
-TOTAL: PASS=23, FAIL=0
+TOTAL: PASS=24, FAIL=0
 
 ----- stderr -----
 

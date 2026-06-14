@@ -1,0 +1,23 @@
+loop_slug: gauge-theta-secondary-scale-repair-20260614
+goal: "Repair theta^2 displayed secondary scale in the gauge word-count theta asymptotic row."
+target_claim_id: gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12
+target_status: proposed_promoted_after_independent_audit
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+branch: physics-loop/gauge-theta-secondary-scale-repair-20260614
+base: origin/main@88183eb6401ec7709f44ddee3ea48cda9ccb7ebe
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md
+  - scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py
+  - logs/runner-cache/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.txt
+runner:
+  command: "PYTHONPATH=scripts python3 scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py"
+  result: "TOTAL: PASS=23, FAIL=0"
+open_imports:
+  - "Independent audit must decide whether this numeric source correction closes the row."
+no_go_routes:
+  - "Do not alter audit status authority files."
+  - "Do not add new physical beta=6 or all-k closure claims."
+next_exact_action: "Open PR for reviewer extraction and independent audit rerun."
+stop_condition: "Source numeric repair, runner guard, cache, loop pack, and PR are complete."

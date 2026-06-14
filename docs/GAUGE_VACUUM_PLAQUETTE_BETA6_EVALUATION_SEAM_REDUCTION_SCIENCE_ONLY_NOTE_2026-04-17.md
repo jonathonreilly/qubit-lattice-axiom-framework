@@ -8,9 +8,8 @@ if-premises-then-algebra lemma per audit path (b)).
 not set or predict an audit outcome.
 **Status:** purely formal finite-dimensional linear-algebra lemma —
 GIVEN abstract operators `(S, η, K)` on the class-sector space with the
-stated abstract hypotheses, the coefficient relations `z` and `Z(W)`
-follow by linear algebra, and the normalized coefficients `ρ` are defined on
-the subcase `z_(0,0) != 0`. The note makes **no claim** that these abstract
+stated abstract hypotheses, the coefficient relations `z`, `ρ`, `Z(W)`
+follow by linear algebra. The note makes **no claim** that these abstract
 objects ARE the physical β=6 Wilson/Haar kernel/rim; that physical
 identification depends on four unsupplied authorities and is explicitly
 out of scope.
@@ -40,13 +39,12 @@ narrowing only began. The load-bearing content is hereby scoped as a
   class basis `{χ_(p,q)}`. Let `S` be **any** linear operator on `H`, `η ∈ H`
   **any** vector, and `K(·)` **any** linear evaluation functional. Define
   `z_(p,q) = ⟨χ_(p,q), S^{L⊥−1} η⟩`, `v = Σ z_(p,q) χ_(p,q)`, and
-  `Z(W) = ⟨K(W), v⟩`. When `z_(0,0) != 0`, define the normalized coefficients
-  `ρ_(p,q) = z_(p,q)/z_(0,0)`. Then the relations in Theorem 1 /
-  Corollaries 1–2 below hold **by elementary linear algebra** on that stated
-  domain. This is true for arbitrary abstract `(S, η, K)` satisfying the
-  nonzero-denominator condition wherever normalized `ρ` is used; it carries **no**
-  Wilson/Haar, β=6, or plaquette content and is conditional on nothing
-  beyond the abstract hypotheses just stated.
+  `Z(W) = ⟨K(W), v⟩`. When the normalization denominator is nonzero,
+  `z_(0,0) != 0`, also define `ρ_(p,q) = z_(p,q)/z_(0,0)`. Then the
+  relations in Theorem 1 / Corollaries 1–2 below hold **by elementary
+  linear algebra**. This is true for arbitrary abstract `(S, η, K)` with
+  the stated nonzero-denominator hypothesis whenever normalized `ρ` is used;
+  it carries **no** Wilson/Haar, β=6, or plaquette content.
 - **Out of scope (the physical identification — NOT claimed here):** that the
   abstract `S` equals the compressed β=6 Wilson/Haar environment kernel
   `S_6^env = P_cls K_6^env P_cls`, that `η` equals the β=6 rim lift
@@ -257,10 +255,16 @@ Then the boundary coefficients are exactly
 `z_(p,q)^env(6)
  = <chi_(p,q), (S_6^env)^(L_perp-1) eta_6(e)>`,
 
-and, when `z_(0,0)^env(6) != 0`,
+and therefore
 
 `rho_(p,q)(6)
  = z_(p,q)^env(6) / z_(0,0)^env(6)`.
+
+The normalized `rho` statement is part of this corollary only on the
+nonzero-denominator branch `z_(0,0)^env(6) != 0`. If that denominator
+vanishes for a supplied integral instance, the unnormalized coefficient
+law for `z_(p,q)^env(6)` remains meaningful, but the normalized `rho`
+readout is not asserted.
 
 Under the premise that `K_6^env` and `B_6(W)` are supplied as exact
 Wilson/Haar integrals, the remaining explicit `beta = 6` problem is
@@ -296,8 +300,7 @@ From the full-slice rim-lift integral premise:
 From the exact kernel/rim compression premise:
 
 - once `K_6^env` and `B_6` are explicit, `S_6^env`, `eta_6`,
-  `z_(p,q)^env(6)`, and, on the nonzero-denominator subcase,
-  `rho_(p,q)(6)` and the downstream plaquette PF data follow canonically.
+  `rho_(p,q)(6)`, and the downstream plaquette PF data follow canonically.
 
 From the exact compressed rim-evaluation premise:
 
@@ -334,10 +337,6 @@ Then the framework-point boundary coefficients satisfy the exact reduction law
 
 so every `z_(p,q)^env(6)` is determined entirely by the matrix elements
 `S_((p,q),(r,s))(6)` and `b_(r,s)(e;6)`.
-
-If `z_(0,0)^env(6) != 0`, the normalized coefficients are then
-
-`rho_(p,q)(6) = z_(p,q)^env(6) / z_(0,0)^env(6)`.
 
 Because `K_6^env` and `B_6(W)` are supplied as premise Wilson/Haar
 integrals in this conditional theorem, those class-sector matrix

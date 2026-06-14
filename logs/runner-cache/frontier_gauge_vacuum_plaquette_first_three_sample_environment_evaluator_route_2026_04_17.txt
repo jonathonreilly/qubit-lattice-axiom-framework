@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py
-runner_sha256: 4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265
+runner_sha256: 461a6e0522a5e577a002399ce0f13e368784662496ff5bbbddcf04f731069d48
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.33
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 ========================================================================================================
@@ -36,6 +36,8 @@ PASS: [SUPPORT] the formal rho lemma states the nonzero z_(0,0) domain condition
       normalized rho is only asserted on the nonzero-denominator domain
 PASS: [SUPPORT] the compressed rim-functional uniqueness note already fixes the left boundary functional as the unique universal Peter-Weyl evaluation functional
       sample dependence is already fixed on the left side before any beta=6 environment evaluation
+PASS: [SUPPORT] the beta=6 seam-reduction note gates normalized rho on a nonzero denominator
+      the formal algebraic lemma no longer divides by an arbitrary zero coefficient
 PASS: [SUPPORT] the exact radical three-sample map and current-stack constraint notes already fix the first symmetric sample operator and show it does not collapse below three
       the first witness-sector route is already explicit and irreducible
 PASS: [SUPPORT] the spatial-environment underdetermination note records that the listed structural surface does not force unique explicit beta=6 environment data
@@ -54,12 +56,14 @@ PASS: [THEOREM] the explicit row-operator implementation reproduces direct chara
       max direct-evaluation error=2.399e-13
 PASS: [THEOREM] the listed finite structural surface admits distinct positive self-adjoint conjugation-symmetric beta-side witnesses
       rho-gap=6.085e-02 on the same listed finite structural surface
+PASS: [THEOREM] the two explicit normalized witnesses have nonzero z_(0,0) denominators
+      z00_A=1.107936170738, z00_B=1.067866909781
 PASS: [THEOREM] the same universal left operator sends those two admissible normalized beta-side vectors to different normalized three-sample triples
       Zhat_A=(W_A=0.391559848076, W_B=0.978403222300, W_C=1.236249349907); Zhat_B=(W_A=0.513135271950, W_B=1.013927484720, W_C=1.246066522164)
 PASS: [THEOREM] therefore the listed finite structural surface does not determine Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C): even the normalized triple is not unique on that surface
       the formal route is one common beta-side vector hit by a fixed three-row operator, and the listed finite surface does not determine that vector
 
-TOTAL: PASS=14, FAIL=0
+TOTAL: PASS=16, FAIL=0
 
 ----- stderr -----
 

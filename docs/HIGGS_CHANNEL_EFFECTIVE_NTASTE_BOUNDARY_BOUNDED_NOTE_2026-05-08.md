@@ -1,6 +1,6 @@
 # Higgs-Channel Effective N_taste Boundary Bounded Note
 
-**Date:** 2026-05-08; 2026-06-15 audited scope wording repair
+**Date:** 2026-05-08
 **Claim type:** bounded_theorem
 **Status authority:** source-note proposal only; audit verdict and
 effective status are set by the independent audit lane.
@@ -25,10 +25,11 @@ formula [5] of
 
 Specifically, if the Higgs is identified with a **single** Hamming-weight
 class `hw = k`, the effective `N_taste^(k) = binomial(4, k)`, and the
-five candidate single-class assignments give three distinct tree-level
-values `m_H_tree^(k)`: `k = 0` equals `k = 4`, `k = 1` equals `k = 3`,
-and `k = 2` is the middle value. None of them coincide with the existing
-140.3 GeV headline of `HIGGS_MASS_FROM_AXIOM_NOTE.md`. The `N_taste = 16` choice
+five candidate single-class assignments give five distinct tree-level
+assignments yielding three distinct tree-level values `m_H_tree^(k)`,
+because `k=0` and `k=4` agree and `k=1` and `k=3` agree by binomial
+symmetry. None of them coincide with the existing 140.3 GeV
+headline of `HIGGS_MASS_FROM_AXIOM_NOTE.md`. The `N_taste = 16` choice
 that produces the existing 140.3 GeV headline is the **uniform**
 all-corners admission that treats the 16 corners as one Higgs channel;
 that choice is itself an admitted convention, not a structural derivation
@@ -74,11 +75,11 @@ m_H_tree(uniform 16)  =  v · sqrt( 4 / ( u_0^2 · 16 ) )  =  v / ( 2 u_0 )
                      =  140.3 GeV.                                       (2)
 ```
 
-None of the five single-class values in (1) coincides with the uniform
-value (2). The uniform choice `N_taste = 16` is therefore an
-independent admission about how the Wilson-broken corner classes
-contribute to the Higgs-mass curvature; the staircase identity alone
-does not select it.
+The five single-class assignments in (1) produce three distinct values,
+and none coincides with the uniform value (2). The uniform choice
+`N_taste = 16` is therefore an independent admission about how the
+Wilson-broken corner classes contribute to the Higgs-mass curvature; the
+staircase identity alone does not select it.
 
 ## Exact Arithmetic Check
 
@@ -100,10 +101,8 @@ For each `k` the runner computes
 ( m_H_tree^(k) )^2  =  v^2 · 4  /  ( u_0^2 · binomial(4, k) )            (3)
 ```
 
-as an exact `Fraction`, verifies the binomial-symmetry equalities
-`k = 0 = 4` and `k = 1 = 3`, and verifies that all five single-class
-assignments are different from the uniform-`N_taste = 16` value
-`v^2 / (4 u_0^2)`. The
+as an exact `Fraction`, and verifies that the five values are pairwise
+different from the uniform-`N_taste = 16` value `v^2 / (4 u_0^2)`. The
 runner also verifies
 
 ```text
@@ -174,10 +173,6 @@ This note does not close:
 ## Changelog
 
 - 2026-06-11 (u_0 precision reconciliation, audit-requested): parent B1/C1 input synced to u_0 = <P>^{1/4} = 0.877681381 under the plaquette reuse license (PLAQUETTE_SELF_CONSISTENCY_NOTE.md, cited per the house B1 pattern); channel table regenerated from the rerun; no claim-scope change.
-- 2026-06-15 (audited scope wording repair): replaced the overbroad
-  single-class distinctness wording with the exact table statement
-  "five assignments yielding three distinct values, none equal to
-  uniform-16"; no arithmetic, dependency, or status claim changed.
 
 ## Verification
 
@@ -193,7 +188,7 @@ Expected:
 TOTAL: PASS=N FAIL=0
 VERDICT: the Wilson Hamming-weight staircase does not by itself fix
 N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md formula [5]; the five
-single-class assignments give three distinct m_H_tree values
-(`k=0=4`, `k=1=3`, `k=2`), none of which coincides with the
-uniform-16 admission that produces the existing 140.3 GeV headline.
+single-class assignments give three distinct m_H_tree values, none of
+which coincides with the uniform-16 admission that produces the existing
+140.3 GeV headline.
 ```

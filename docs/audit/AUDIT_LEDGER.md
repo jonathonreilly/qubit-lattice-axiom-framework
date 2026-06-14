@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 862 |
+| **retained_bounded** | 863 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1518 |
+| unaudited | 1517 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1302 |
+| `audited_clean` | 1303 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1835 |
+| `unaudited` | 1834 |
 
 | claim_type | count |
 |---|---:|
@@ -514,6 +514,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_complex_action_falsifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_grown_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -6981,6 +6982,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The chain closes at the finite bounded scope because the one-hop Gate B grown joint-package dependency is retained_bounded, the runner deterministically constructs the named row and gamma sweep, and independent arithmetic reproduces the reported escape suppression. It does not close any broader complex-action branch or physical-probability interpretation.
 - **rationale:** Clean only at the narrow bounded scope. The runner constants match the source: H=0.5, PW=8, NL=25, DRIFT=0.2, RESTORE=0.7, seeds 0..3, gammas 0 through 0.5, source_strength=5e-5, and source_z=3.0. The gamma=0 guardrail is definitional within the same deterministic row and propagation formula, not an independent Born revalidation. P_det is unnormalized, but the source relies on escape(gamma)=P_det(gamma)/P_det(0), so the large raw detector weights do not break the scoped claim. Independent arithmetic on the cached aggregate output reproduces the rounded escape ratios and sharp suppression; negative delta_z is consistent with the source at positive z and the note's away-from-mass-side read. The verdict does not ratify a complex-action theory, a generated-family bridge, package-transfer closure, or normalized physical probability.
 - **auditor confidence:** high
+
+### `gate_b_connectivity_tolerance_note`
+
+- **Note:** [`GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md`](../../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Gate B replay for the listed layered graph architectures under the specified valley-linear propagation law and mass-side detector-window gain metric.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-001446-1738c2de05-gate_b_connectivity_toleranc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The jitter sweep on fixed connectivity is the cleanest tolerance check, and the architecture comparison shows that recomputed/generated connectivity gives mixed response.  _(class `C`)_
+- **chain closes:** True — Within the bounded replay, the runner constructs the graph families, propagates amplitudes under the explicit S = L(1-f) rule, normalizes detector probabilities, and computes the table entries rather than printing constants. The conclusion closes only for the finite parameter and architecture suite shown, not as a Gate B dynamics theorem.
+- **rationale:** The runner source implements the load-bearing computation directly from the stated finite setup: positions, connectivity, field, barrier, propagation, detector probabilities, mass-window gain, and local scaling fit. The source note's tables match the completed runner output, and no helper runner or cited authority is missing from the load-bearing numerical path. The note also keeps the scope bounded by explicitly denying Gate B closure and universal F~M constants.
+- **auditor confidence:** medium
 
 ### `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17`
 

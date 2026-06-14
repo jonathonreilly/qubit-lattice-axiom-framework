@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3292 |
-| Applied audit verdicts | 1523 |
+| Applied audit verdicts | 1524 |
 | Retained-grade rows, including boxed decorations | 1369 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 904 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1447 |
+| Unaudited rows | 1446 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 50 |
+| Audited conditional rows | 51 |
 | Audited renaming rows | 31 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 20 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1452 |
-| Ready rows | 5 |
+| Total pending rows | 1451 |
+| Ready rows | 4 |
 | Cycle-break targets | 20 |
 | Critical pending | 331 |
 | High pending | 254 |
-| Medium pending | 428 |
+| Medium pending | 427 |
 | Leaf pending | 439 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_SU3_CG_LIBRARY_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12`](../../docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited

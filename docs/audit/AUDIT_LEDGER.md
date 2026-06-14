@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 210 |
+| **retained** | 211 |
 | **retained_no_go** | 208 |
 | **retained_bounded** | 879 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1488 |
+| unaudited | 1487 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1323 |
+| `audited_clean` | 1324 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1805 |
+| `unaudited` | 1804 |
 
 | claim_type | count |
 |---|---:|
@@ -695,6 +695,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9767,6 +9768,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since H_hop[U] is anti-Hermitian, lambda_j(U) is real and E_j[U]=arcsinh(sqrt(m^2+lambda_j(U)^2)) >= arcsinh(m)>0, hence Delta_T^matter >= arcsinh(m)/a_tau uniformly in U and volume.  _(class `A`)_
 - **chain closes:** True — The per-background dispersion and anti-Hermitian-hop spectrum are supplied by the cited authorities; the inequality follows from real lambda_j, sqrt(m^2+lambda_j^2)>=m, and monotonicity of arcsinh. No cited input proves the full pure-gauge/coupled gap, and the note does not claim it.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs in the restricted packet, not a definition or tuned numerical match. The runner source constructs random staggered SU(3) spatial hops, checks anti-Hermiticity, the arcsinh(m) floor, the transfer-eigenvalue cap, and a non-anti-Hermitian control; it does not hard-code the contested bound. The beta=6 pure-gauge/coupling issue remains an open gate by the note's own scope, so it is not part of the closed theorem.
+- **auditor confidence:** high
+
+### `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`
+
+- **Note:** [`INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md`](../../docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the finite Hamming-cube structure theorem that delta is the occupation-number second difference, vanishes for the axis-separable free single-hop sector, is the symmetric pair-count coefficient for a native two-body term, and gives K_off=t^2*U/[eps*(eps+U)] with sign lock only for eps>0 and eps+U>0; no mediator-derived value of delta is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-014517-642e59c796-interaction_asymmetry_delta_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because H=eps*N+t*sum_mu X_mu factorizes as a sum of commuting per-axis Hamiltonians, the free spectrum is an additive sumset so E(hw) is affine and delta=E_2-2E_1+E_0 vanishes, while the first nonzero occupation curvature is the pair-count coefficient w_pair.  _(class `A`)_
+- **chain closes:** True — The factorization follows from commuting tensor-factor one-axis Hamiltonians, giving an additive per-axis spectrum with zero discrete curvature. The pair-count curvature, Schur denominator formula, C3 off-diagonal equality, and product-to-sum face-diagonal identity are direct algebraic consequences of the stated operators and do not require the open mediator value.
+- **rationale:** The runner source performs actual finite-matrix and algebraic checks rather than merely printing constants, and its 13 PASS rows match the source claims within the scoped theorem. An independent algebra check gives per-axis eigenvalue additivity, second difference zero for affine/one-body terms, second difference +1 for C(hw,2), and K_off=t^2(1/eps-1/(eps+U)). The cited retained_bounded two-body mediator notes are used only to name an open future value route, not as a load-bearing closure for this structure theorem.
 - **auditor confidence:** high
 
 ### `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27`

@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
         "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
         "koide_records_objectivity_conditional_note_2026-05-31",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
         "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12",
         "post_record_measure_weight_normalization_subdivision_2026-06-06",
-        "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"
+        "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
+        "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "695138b45e059884a992e307e030f36afe42566fe01b75b9ccc63e0cc4bcc718",
+      "note_hash": "4712ad84fc8a93b3a71aa63678df7e05a02f7cdcfd6e72dfc2513268ec82c47a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

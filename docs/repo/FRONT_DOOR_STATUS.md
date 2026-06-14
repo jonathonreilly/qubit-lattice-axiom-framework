@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1527 |
-| Retained-grade rows, including boxed decorations | 1368 |
+| Applied audit verdicts | 1528 |
+| Retained-grade rows, including boxed decorations | 1369 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 903 |
+| Retained bounded rows | 904 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1439 |
+| Unaudited rows | 1438 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 54 |
 | Audited renaming rows | 32 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1444 |
-| Ready rows | 2 |
+| Total pending rows | 1443 |
+| Ready rows | 1 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
-| Medium pending | 424 |
+| Medium pending | 423 |
 | Leaf pending | 435 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`transfer_trace_correspondence_fixes_kernel_normalization_on_retained_surface_bounded_note_2026-06-12`](../../docs/TRANSFER_TRACE_CORRESPONDENCE_FIXES_KERNEL_NORMALIZATION_ON_RETAINED_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -77,8 +76,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 601 |
 | High nodes | 473 |
-| Medium nodes | 897 |
-| Leaf nodes | 1459 |
+| Medium nodes | 896 |
+| Leaf nodes | 1460 |
 
 Top load-bearing rows by graph score:
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 882 |
+| **retained_bounded** | 883 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1476 |
+| unaudited | 1475 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1328 |
+| `audited_clean` | 1329 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1793 |
+| `unaudited` | 1792 |
 
 | claim_type | count |
 |---|---:|
@@ -326,6 +326,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4447,6 +4448,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The finite-Harper flux-response curvature sign-change boundary is bisection-located to 1e-3 at the three sampled (m,T) instances, with q=32 size probes and each sampled mu* strictly between |m| and sqrt(m^2+16).  _(class `C`)_
 - **chain closes:** True — The runner constructs the finite Harper matrices and zero-field spectra, computes chi from the spectra, and uses sign-preserving bisection rather than importing the displayed roots. Independent arithmetic confirms the bisection widths imply <=1e-3 midpoint localization, the two stated monotone orderings hold, and all three roots lie strictly between |m| and sqrt(m^2+16).
 - **rationale:** The load-bearing step is a first-principles finite numerical computation from the stated lattice operator, not a renaming, comparator match, or cross-note value import. The sole cited authority is retained_bounded, and the present note keeps the conclusion bounded to sampled finite-field instances. The explicit open landmark-identification language is not used as a premise for a stronger identification; the audited claim is only strict between-ness and non-anchoring at the sampled points.
+- **auditor confidence:** high
+
+### `d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D2_SIGN_BOUNDARY_MASS_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D2_SIGN_BOUNDARY_MASS_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Sampled finite-lattice d=2 staggered square-lattice sign-boundary collapse at q=24, GL=160 for T=0.2 and m in {0.2,0.35,0.5,0.8}, with m=0, T-direction, quadrature, endpoint-recompute, and q=32 spot controls; no continuum or interpretive epsilon-curve claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-022404-9a85a98de5-d2_sign_boundary_mass_collap`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Bisection-located boundaries at T=0.2 across m in {0.2, 0.35, 0.5, 0.8} give eps*_m = sqrt(mu*^2 - m^2) with relative spread 1.45% < 2%, with the monotone residual m-trend separately disclosed.  _(class `C`)_
+- **chain closes:** True — The runner constructs the Harper matrices, spectra, grand potentials, chi values, sign brackets, bisection roots, eps values, and spread directly rather than importing the contested numbers. Independent arithmetic from the reported roots verifies eps=sqrt(mu*^2-m^2), mean_eps=1.681175930933, relative_spread=0.0144923716, and the m=0 anchor relative deviation, while the upstream open landmark/interpretive questions are outside this scoped claim.
+- **rationale:** The load-bearing step is a first-principles finite numerical computation in the runner, not a definition, renaming, external comparator, or numerical match to an imported calibrated value. The runner source contains no hard-coded expected collapse values and no helper imports; it computes the spectra and gates the brackets, spread, monotone trend, quadrature doubling, endpoint recomputation, and q=32 spot probe. Both cited authorities are retained_bounded, and the claim stays within sampled bounded scope rather than using their named open identifications.
 - **auditor confidence:** high
 
 ### `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12`

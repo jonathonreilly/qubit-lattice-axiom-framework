@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08",
         "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12",
         "d2_sign_boundary_tracks_landau_peierls_bounded_theorem_note_2026-06-12",
         "d2_soft_band_truncation_also_closes_bounded_theorem_note_2026-06-12",
         "d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12",
         "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
-        "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06"
+        "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
+        "det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4b1832583ddb10a943e4c02aff39097bc35e6eaae4c4172ee24e4734dee08624",
+      "note_hash": "6b3b87f138f87cee051f14641d6034984c5e1a067b94edccb917bad963a13fa5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

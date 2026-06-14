@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 895 |
+| **retained_bounded** | 896 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1453 |
+| unaudited | 1452 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1343 |
+| `audited_clean` | 1344 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1770 |
+| `unaudited` | 1769 |
 
 | claim_type | count |
 |---|---:|
@@ -772,6 +772,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_octahedral_overconstrains_value_bit_narrow_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11046,6 +11047,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With J_i = sigma_i/2 and K_i = B_i = i sigma_i/2, the Pauli commutators give [J,J]=i epsilon J, [J,K]=i epsilon K, and [K,K]=-i epsilon J, so the single-site bivectors realize the Lorentzian so(3,1) generator algebra.  _(class `A`)_
 - **chain closes:** True — The scoped algebraic claim closes by direct Pauli matrix identities and standard representation theory: B_i=(1/2)gamma_j gamma_k=i sigma_i/2 has the required non-compact commutator sign, while a Hermitian boost gives the compact sign. The note does not claim to derive the faithful matter selection, chirality, or the physical (3,1) signature.
 - **rationale:** Independent checking of the signs and factors confirms the Pauli/Clifford algebra used in the load-bearing step. The cited authorities supplied in the packet are retained-grade for the Pauli spin action, bivector identification, Cl(3)->Cl(3,1) sign branch framing, and no on-site anticommuting gamma0. Some runner PASS lines are qualitative or hard-coded, but the verdict does not rely on those lines: the load-bearing closure is a direct algebraic identity and the residual selections are explicitly outside the claim boundary.
+- **auditor confidence:** high
+
+### `koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the narrow supplied-map relation: on the two-cell rho-map surface with phi(r)=2r^2 and the stated exclusions of r=0 and infinity, R-D realizes the OO cell, OO is phi-stationary pointwise, and law-level equivalence fails by psi(r)=r^2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-033058-98ddce01a9-koide_oo_rd_premise_relation`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Solving the supplied flow gives Fix(phi) = {0, 1/2} plus the projective point infinity; after the stated side-condition exclusions only r = 1/2 remains, while the counterexample flow psi(r)=r^2 selects r = 1 and leaves OO's r = 1/2 nonstationary.  _(class `A`)_
+- **chain closes:** True — The fixed-point equations reduce to r(2r-1)=0 for phi and r(r-1)=0 for psi, with the projective endpoint fixed under s=1/r. Applying the stated exclusions and the retained rho-map gives r=1/2 <-> Z_d=pi/g for phi, while psi leaves r=1 and makes OO's r=1/2 nonstationary.
+- **rationale:** The load-bearing work is algebraic fixed-point computation and set subtraction over retained_bounded inputs: the supplied map/fixed-point authority and the retained two-cell rho-map authority. The runner source genuinely computes the fixed points, projective conjugates, rho-map conversion, and counterexample checks rather than merely printing pass constants. The result is clean only at the stated bounded scope: it does not adopt either proposed premise and does not derive the supplied map as the physical records flow.
 - **auditor confidence:** high
 
 ### `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`

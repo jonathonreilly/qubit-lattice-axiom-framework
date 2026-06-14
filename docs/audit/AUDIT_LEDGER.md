@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 897 |
+| **retained_bounded** | 898 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1450 |
+| unaudited | 1449 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1346 |
+| `audited_clean` | 1347 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1767 |
+| `unaudited` | 1766 |
 
 | claim_type | count |
 |---|---:|
@@ -102,29 +102,29 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1590 | 134.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1357 | 64.41 | `audited_clean` | **retained** |
-| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1280 | 62.82 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1359 | 51.41 | `audited_clean` | **retained_bounded** |
-| 6 | `key_terminology` | meta | critical | 1397 | 50.45 | `unaudited` | meta |
-| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1293 | 49.84 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1263 | 44.80 | `unaudited` | unaudited |
-| 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1263 | 43.80 | `unaudited` | unaudited |
-| 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1263 | 43.30 | `unaudited` | unaudited |
-| 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1263 | 42.80 | `audited_clean` | **retained_bounded** |
-| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1275 | 41.82 | `unaudited` | unaudited |
-| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1347 | 40.90 | `audited_failed` | ~~audited_failed~~ |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1389 | 39.44 | `audited_clean` | **retained** |
-| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1308 | 38.85 | `audited_clean` | **retained_no_go** |
-| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1286 | 38.83 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1375 | 36.93 | `audited_clean` | **retained** |
-| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 36.80 | `unaudited` | unaudited |
-| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1305 | 35.85 | `audited_clean` | **retained_bounded** |
-| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1265 | 35.31 | `unaudited` | unaudited |
-| 21 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 35.30 | `unaudited` | unaudited |
+| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1279 | 62.82 | `unaudited` | unaudited |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1422 | 60.98 | `audited_clean` | **retained** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1358 | 51.41 | `audited_clean` | **retained_bounded** |
+| 6 | `key_terminology` | meta | critical | 1396 | 50.45 | `unaudited` | meta |
+| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1292 | 49.84 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1262 | 44.80 | `unaudited` | unaudited |
+| 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1262 | 43.80 | `unaudited` | unaudited |
+| 10 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1262 | 43.30 | `unaudited` | unaudited |
+| 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1262 | 42.80 | `audited_clean` | **retained_bounded** |
+| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1274 | 41.82 | `unaudited` | unaudited |
+| 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1346 | 40.90 | `audited_failed` | ~~audited_failed~~ |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1388 | 39.44 | `audited_clean` | **retained** |
+| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1307 | 38.85 | `audited_clean` | **retained_no_go** |
+| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1285 | 38.83 | `audited_clean` | **retained_bounded** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1374 | 36.92 | `audited_clean` | **retained** |
+| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 36.80 | `unaudited` | unaudited |
+| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1304 | 35.85 | `audited_clean` | **retained_bounded** |
+| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1264 | 35.30 | `unaudited` | unaudited |
+| 21 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 35.30 | `unaudited` | unaudited |
 | 22 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 283 | 34.65 | `unaudited` | unaudited |
-| 23 | `minimal_axioms_2026-04-11` | meta | critical | 1267 | 32.81 | `unaudited` | meta |
-| 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 1263 | 32.80 | `unaudited` | unaudited |
-| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1263 | 32.30 | `unaudited` | unaudited |
+| 23 | `minimal_axioms_2026-04-11` | meta | critical | 1266 | 32.81 | `unaudited` | meta |
+| 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 32.80 | `unaudited` | unaudited |
+| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1262 | 32.30 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -882,6 +882,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lp_two_band_exact_completion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -12699,6 +12700,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** At the sampled finite masses and temperatures, the finite-B Harper boundary and staggered intraband LP sign-change roots differ by 0.042401, 0.046160, 0.201038, and 0.199405, exceeding the 2e-2 identification tolerance.  _(class `C`)_
 - **chain closes:** True — The runner constructs and diagonalizes the finite Harper Hamiltonian, computes the zero-field reference and LP det-Hessian sign-change roots, and checks folding, Hermiticity, wrapping, m→0 reduction, brackets, quadrature doubling, and regression values. Independent checks of the chain-rule Hessian and alternate quadrature spot computations support the displayed finite-B table within the stated bounded scope.
 - **rationale:** There are no cited upstream authorities and no open imported dependency in the restricted packet. The source does not merely print constants: the runner recomputes the finite-field and LP roots from the specified model, with the hard-coded deviation table serving as a regression gate after recomputation. The clean verdict applies only to the bounded measured finite-B/sample statement, because the note explicitly excludes the corrected two-band orbital formula and strict B→0 limit.
+- **auditor confidence:** high
+
+### `lp_two_band_exact_completion_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Q=24, Ly=2 staggered Harper one-particle cell at T=0.2, mu=1.7086, B=1e-3 finite-difference reference, masses m=0,0.2,0.3,0.5, and fixed 2e-2 tolerance; not a continuum, flux-quantized, strict B->0, or boundary-root theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-034344-03efbdd95e-lp_two_band_exact_completion`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-dimensional calculation expands the Peierls phase as H(B)=H0+B H1+B^2 H2+O(B^3) and evaluates the grand-potential curvature with the full two-band sum, including interband H1 matrix elements.  _(class `C`)_
+- **chain closes:** True — A manual Taylor/Frechet check of Tr g(H(B)) gives the same normalization used in the runner: 2 Tr g'(H0)H2 plus the divided-difference H1 term with diagonal limit g''. The completed cache shows all sampled mass gates below 2e-2, and the provided source computes the matrix spectra and PT sums rather than reading expected chi values from another note.
+- **rationale:** The load-bearing step is a first-principles finite-matrix computation from the stated Harper cell: the runner constructs H(+B), H(0), H(-B), H1, and H2 and compares the finite-difference response with the full second-order divided-difference PT sum. Expected chi values are not hard-coded; the predecessor deviations are printed as retained bounded provenance and are not used as the proof of the new PT agreement. The finite-B and non-flux-quantized caveats are disclosed, so the conclusion does not overclaim a strict B->0, flux-quantized, continuum, or boundary-root result.
 - **auditor confidence:** high
 
 ### `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`

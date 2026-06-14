@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_gamma5_factor_bridge_no_go_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12",
         "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07",
         "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
         "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
         "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
         "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
-        "koide_gamma5_factor_bridge_no_go_note_2026-06-06"
+        "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
+        "koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "abc0a45808e805b4f554c70ba131467dd68a031e29266cc8beca32c63a69dd24",
+      "note_hash": "cce8fcc38385db767667cb4a8167774af7dc57c794edc9546e915b44f3ec4698",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

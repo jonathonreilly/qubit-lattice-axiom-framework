@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 893 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1460 |
+| unaudited | 1459 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1340 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1777 |
+| `unaudited` | 1776 |
 
 | claim_type | count |
 |---|---:|
@@ -1494,6 +1494,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -9110,6 +9111,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the narrowed scope, the runner stdout matches the note's signs and classifications for every ratified row. The z=2, z=4, z=6, and z=7 dense rows are explicitly outside the audited scope and are not ratified here.
 - **rationale:** The scoped claim is an algebraic sign-interpretation over runner-computed observables, and the supplied runner computes the relevant rows rather than printing fixed classifications. No one-hop authorities are listed, so no dependency-retention blocker is available inside the restricted packet. Clean status applies only to the narrowed z=3 and z=5 dense rows plus the other printed runner rows; the broader z=2..6 dense table is not part of this verdict.
 - **auditor confidence:** medium
+
+### `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic support that, after assuming H->H+phi and the Fermat/eikonal identification n=k/k0 for a fixed-energy axis-lattice scalar packet, the small-k response has form n=1-c phi and the geometric phi=a/r ray calculation has 1/b scaling.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-031059-280cbfb58f-gravity_premise4_refractive_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied field shift and eikonal reading, fixed-energy lattice dispersion lambda_axis(k)+phi=E gives n(phi)=k(phi)/k(0)=sqrt(1-phi/E)+O(E,phi)=1-phi/(2E)+...  _(class `A`)_
+- **chain closes:** False — The lattice dispersion algebra and 1/b integral close, but the restricted packet does not derive the physical Fermat/eikonal bridge n=k/k0 or fully establish H->H+phi from the cited authorities. Those are explicit supplied bridges, so retained status does not propagate through them.
+- **rationale:** The runner performs real algebraic and numerical checks of the arccos dispersion map, small-k expansion, Fermat-action algebra, and 1/b integral, with source/status checks for the comparison authorities. Independent math agrees with the displayed small-k relation and the 1/b magnitude scaling, but these only follow after the note assumes the eikonal identification of local wavenumber ratio with Fermat index. The packet itself repeatedly states that this physical bridge and the Newtonian normalization remain outside the retained derivation, so the queued bounded theorem is conditional rather than clean.
+- **auditor confidence:** high
 
 ### `gravity_sign_audit_2026-04-10`
 

@@ -1,7 +1,7 @@
 {
   "criticality_counts": {
-    "critical": 606,
-    "high": 468,
+    "critical": 601,
+    "high": 473,
     "leaf": 1451,
     "medium": 905
   },
@@ -145,8 +145,8 @@
     {
       "claim_id": "koide_circulant_character_derivation_note_2026-04-18",
       "criticality": "critical",
-      "load_bearing_score": 34.655,
-      "transitive_descendants": 284
+      "load_bearing_score": 34.65,
+      "transitive_descendants": 283
     },
     {
       "claim_id": "minimal_axioms_2026-04-11",

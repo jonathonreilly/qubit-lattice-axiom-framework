@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1511 |
-| Retained-grade rows, including boxed decorations | 1358 |
+| Applied audit verdicts | 1512 |
+| Retained-grade rows, including boxed decorations | 1359 |
 | Retained positive theorems | 211 |
-| Retained no-go rows | 209 |
+| Retained no-go rows | 210 |
 | Retained bounded rows | 894 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1455 |
+| Unaudited rows | 1454 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 49 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1460 |
-| Ready rows | 18 |
+| Total pending rows | 1459 |
+| Ready rows | 17 |
 | Cycle-break targets | 20 |
-| Critical pending | 331 |
-| High pending | 254 |
+| Critical pending | 327 |
+| High pending | 258 |
 | Medium pending | 429 |
-| Leaf pending | 446 |
+| Leaf pending | 445 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
 - [`koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12`](../../docs/KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12`](../../docs/KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`koide_pointer_record_degeneracy_d3_note_2026-05-31`](../../docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md) - medium; unaudited
 - [`lepton_block_d12_prime_matching_no_go_note_2026-05-10`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md) - medium; unaudited
 - [`lp_two_band_exact_completion_bounded_theorem_note_2026-06-12`](../../docs/LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
-- [`min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08`](../../docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
+- [`min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08`](../../docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13`](../../docs/OBSERVABLE_PRINCIPLE_P1_EXACT_ADDITIVITY_ZERO_OFFSET_REPAIR_NOTE_2026-06-13.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3430 |
-| Critical nodes | 606 |
-| High nodes | 468 |
+| Critical nodes | 601 |
+| High nodes | 473 |
 | Medium nodes | 905 |
 | Leaf nodes | 1451 |
 

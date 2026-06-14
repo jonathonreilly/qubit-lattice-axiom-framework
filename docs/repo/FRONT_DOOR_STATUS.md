@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1455 |
+| Applied audit verdicts | 1456 |
 | Retained-grade rows, including boxed decorations | 1325 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 205 |
 | Retained bounded rows | 866 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1511 |
+| Unaudited rows | 1510 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 29 |
+| Audited conditional rows | 30 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 20 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1516 |
-| Ready rows | 64 |
+| Total pending rows | 1515 |
+| Ready rows | 63 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
-| High pending | 259 |
+| High pending | 258 |
 | Medium pending | 434 |
 | Leaf pending | 496 |
 
 Next ready rows by queue order:
 
-- [`gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
 - [`free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12`](../../docs/FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`signed_gravity_aps_locked_source_action_proposal_note`](../../docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md) - medium; unaudited
 - [`cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04`](../../docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -92,7 +92,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1356 descendants; score 64.406
 - `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
 - `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
-- `plaquette_self_consistency_note` - critical; 1358 descendants; score 51.408
+- `plaquette_self_consistency_note` - critical; 1359 descendants; score 51.409
 - `key_terminology` - critical; 1396 descendants; score 50.448
 - `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1262 descendants; score 44.803

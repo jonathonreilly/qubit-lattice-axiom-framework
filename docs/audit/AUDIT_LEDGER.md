@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 867 |
+| **retained_bounded** | 868 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1505 |
+| unaudited | 1504 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1309 |
+| `audited_clean` | 1310 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1822 |
+| `unaudited` | 1821 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 857 |
-| `leaf` | 1371 |
+| `medium` | 858 |
+| `leaf` | 1370 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -579,6 +579,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7971,6 +7972,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner computes rho_(p,q)(6)=c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) on 0<=p,q<=4 by both a Bessel-determinant formula and direct SU(3) Weyl torus integration, with max absolute disagreement 4.136e-15.  _(class `C`)_
 - **chain closes:** True — The restricted packet defines the target integral and normalization, and the runner source actually computes the coefficients by two independent implementations rather than importing or hard-coding the tabulated values. The broader residual-environment and full tensor-transfer identifications are explicitly outside this claim's scope.
 - **rationale:** The load-bearing finite coefficient table is produced from the stated SU(3) Wilson integral by implemented Bessel-determinant and Weyl-integration computations, with no cited open dependency and no hard-coded expected rho values. The structural checks over the resulting finite diagonal operator are algebraic or numerical consequences of the computed table. The clean boundary is only the bounded single-link coefficient computation and finite-box structural gates, not the parent residual-environment identification, all-weight closure, or analytic P(6).
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite beta=6 construction on tensor NMAX=4, tensor MODE_MAX=80, followed by source-sector NMAX=7, MODE_MAX=200 one/two/three-word matrix-element readouts; no physical 3D environment eta, untruncated limit, L_perp limit, analytic P(6), or canonical repinning is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-005519-a2cea726ca-gauge_vacuum_plaquette_rim_b`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The constructed finite rim-boundary vector is eta_constructed := tensor_word * e_(0,0), and the matrix-element ladder readout replaces the old unit-vector boundary on unmarked word slots by this eta_constructed.  _(class `C`)_
+- **chain closes:** True — Within the bounded scope, the retained finite tensor-word packet supplies tensor_word and e_(0,0), and the retained source Perron machinery supplies the rho-input readout. The primary runner and an independent recomputation from the displayed formulas reproduce the eta support and the constructed-eta two/three-word P values, while the physical boundary-character problem remains explicitly out of scope.
+- **rationale:** The load-bearing computation is not a mere printout or comparator fit: the runner constructs eta by matrix-vector multiplication, solves the finite multiword Perron problems, and feeds the resulting rho vectors into the source-sector solve. Hard-coded numerical constants are used for baseline reproduction and fenced distance reporting, not to set the constructed-eta results. The open physical rim-boundary and untruncated tensor-transfer identifications are named residuals and are not imported into the finite claim.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`

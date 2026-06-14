@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 905 |
+| **retained_bounded** | 906 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1445 |
+| unaudited | 1444 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1354 |
+| `audited_clean` | 1355 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1762 |
+| `unaudited` | 1761 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 598 |
 | `high` | 462 |
-| `medium` | 865 |
-| `leaf` | 1367 |
+| `medium` | 864 |
+| `leaf` | 1368 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1359 | 64.41 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1282 | 62.83 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1425 | 60.98 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1363 | 51.41 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1362 | 51.41 | `audited_clean` | **retained_bounded** |
 | 6 | `key_terminology` | meta | critical | 1399 | 50.45 | `unaudited` | meta |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1295 | 49.84 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1265 | 44.81 | `unaudited` | unaudited |
@@ -673,6 +673,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hard_geometry_gravity_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -9416,6 +9417,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Default-threshold numerical trajectory ranks are window-64 {K=3: >=64, K=4: >=64, K=5: 34, K=6: 28} and window-128 {K=3: 71, K=4: 84, K=5: 36, K=6: 35}, while coupled site-0/1 gap counts are identical at 3 each.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite color-diagonal nearest-neighbor Hamiltonian, generated occupied projectors, time evolution, polar determinant phase increments, Hankel SVD ranks, and coupled spectral-gap weights directly from the supplied finite datum. The hard-coded anchor constants are comparator checks, but the audited rank and gap tables are computed rather than printed or imported.
 - **rationale:** Within the explicitly bounded scope, the load-bearing numerical claims close from first-principles finite computation over the supplied realized states and thresholds. The runner does contain expected anchor values for prior ceilings, but those are not the contested rank-ordering or identical-gap-count premise and do not supply the table values. The claim does not assert a state-selection rule, genericity result, or unbounded range law, so the realized-state primitive limits are respected.
+- **auditor confidence:** high
+
+### `harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite L=3 one-body gauge-link system for the four supplied realized states K=3 seed 391, K=4 seed 99, K=5 seed 99, and K=6 seed 466; only the three-tone coupling-weight concentration ordering and cyclic-null comparison are audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-163442-0e04ef7bad-harmonic_depth_weight_distri`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each realized state, the eigenbasis-pair weights w_g are aggregated over the three coupled gaps, and the resulting concentration order K=6 -> K=5 -> K=3 -> K=4 matches the order-4 det-phase capture order.  _(class `C`)_
+- **chain closes:** True — The runner source instantiates the finite L=3 Hamiltonian, seeded occupied subspaces, phase trajectory, Hankel summaries, and eigenbasis-pair coupling weights rather than merely printing constants. Independent arithmetic from the displayed weights verifies the shares, participation ratios, entropies, gap-second moments, cyclic-null values, and all stated orderings.
+- **rationale:** The load-bearing numerical step is a finite first-principles computation on the scoped realized states, with retained-bounded upstream depth/rank anchors and the realized-state primitive used only for pointwise evaluation. The hard-coded frozen tables in the runner act as regression checks after computed records are built, not as the sole source of the quantities. No external comparator, tuned empirical scale, renaming, or widened causal/generative interpretation is needed for the bounded claim as stated.
 - **auditor confidence:** high
 
 ### `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17`

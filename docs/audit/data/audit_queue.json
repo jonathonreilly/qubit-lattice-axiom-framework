@@ -3,7 +3,7 @@
     "critical": 331,
     "high": 254,
     "leaf": 439,
-    "medium": 426
+    "medium": 425
   },
   "cycle_break_target_count": 20,
   "cycle_break_targets": [
@@ -18113,32 +18113,6 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 90
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
-        "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
-        "realized_state_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_depth_weight_distribution_2026_06_12.py",
-      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44249,6 +44223,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 3,
-  "total_pending": 1450
+  "ready_count": 2,
+  "total_pending": 1449
 }

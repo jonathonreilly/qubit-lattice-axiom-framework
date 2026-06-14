@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 906 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1443 |
+| unaudited | 1442 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1355 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1760 |
+| `unaudited` | 1759 |
 
 | claim_type | count |
 |---|---:|
@@ -85,7 +85,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `leaf` | 1372 |
 
 - **Retained pending chain closure:** 20
-- **Citation cycles detected:** 20
+- **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
 
@@ -1493,6 +1493,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_upper_bound_dependency_edge_repair_note_2026-06-08` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2498,6 +2499,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The action-derived two-step monodromy has eigenvalues e^{±2E(p)} with E(p)=arcsinh(sqrt(m^2+sin^2 p)); selecting the decaying channel gives t1^(2)(p)=e^{-2E(p)}, so Gamma(t1^(2))=tensor_p diag(1,e^{-2E(p)})=B^dag B is positive Hermitian.  _(class `C`)_
 - **chain closes:** True — Independently, T_odd T_even has determinant 1 and trace 2+4(m^2+sin^2 p)=2 cosh(2E), giving eigenvalues e^{±2E}; the one-step characteristic equation has non-real roots for sin(p)!=0 and one negative root at sin(p)=0. The finite diagonal Gamma construction then gives a positive B^dag B factorization from the positive decaying eigenvalues.
 - **rationale:** The load-bearing free-case derivation is a first-principles finite-matrix computation from the stated staggered action, not a fitted numerical match or renaming. The displayed trace/determinant identities, exceptional one-step eigenvalues, spectral projectors, and finite exterior/Gamma positivity all check algebraically. The runner's C7 parent-source guard is a non-load-bearing cross-note/source-wiring check and was not used for the free-case closure.
+- **auditor confidence:** high
+
+### `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`
+
+- **Note:** [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Axis-conditional single-clock codimension-1 unitary evolution: given one supplied blocked time step, one declared evolution axis/transfer construction, and no independent commuting clock factor, the retained transfer inputs give a unique finite-dimensional Stone generator and codimension-1 equal-time tensor slices; free-sector propagation is only the retained_bounded R-FBQL quasilocal LR envelope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-wave1-20260614-axiom_first_single_clock-001`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By (R-STONE) applied to `(T_hat^2/M_T, 2a_tau)`, the supplied transfer data determine the unique self-adjoint generator and one-parameter unitary group, while the no-second-clock conclusion is conditional on the declared (B-AXIS) N2/N4/N5 premises.  _(class `A`)_
+- **chain closes:** False — The retained and retained_bounded inputs close the Stone, equal-time tensor, Cl(3), and free-sector quasilocal propagation clauses, but the packet does not derive (B-AXIS). The missing step is a retained supplier for axis/transfer-construction uniqueness and exclusion of independent commuting clock factors.
+- **rationale:** The runner source performs substantive finite-matrix and staggered-intertwiner checks rather than merely printing constants, and its PASS=45 output supports the stated boundary repairs. The cited mathematical inputs are retained, retained_bounded, retained_no_go, or accepted framework premises, and the old B-RANGE finite-range premise has been retired. However, the theorem still imports (B-AXIS) as a declared live premise, and the two-clock comparator confirms that premise is non-vacuous and load-bearing. Therefore the audit cannot be clean until B-AXIS is supplied by a retained bridge or the scope is kept explicitly conditional.
+- **open / conditional deps cited:**
+  - `B-AXIS (declared premise; no retained supplier path provided)`
 - **auditor confidence:** high
 
 ### `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05`

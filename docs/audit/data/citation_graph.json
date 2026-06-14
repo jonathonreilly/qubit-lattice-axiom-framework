@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "teleportation_resource_from_poisson_note"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "spin_statistics_fs_admission_located_exercise_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "teleportation_resource_from_poisson_note",
         "within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12",
         "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
         "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
         "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
-        "spin_statistics_fs_admission_located_exercise_note_2026-06-06"
+        "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
+        "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c75f1249f70040ba2ce2b8e0f00dd272146480dc88c48e90805ff13ee99fc88c",
+      "note_hash": "f71e9bde7dcb34039fdf8d916bece8ac683ba9b41644f3a13a8aabfd364120e3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

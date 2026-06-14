@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 894 |
+| **retained_bounded** | 895 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1454 |
+| unaudited | 1453 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1342 |
+| `audited_clean` | 1343 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1771 |
+| `unaudited` | 1770 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 866 |
-| `leaf` | 1362 |
+| `medium` | 864 |
+| `leaf` | 1364 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -768,6 +768,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_octahedral_overconstrains_value_bit_narrow_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -10993,6 +10994,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Solving the defined real Z3 commutant/idempotent equations and substituting z=0, selected=1, c=0, and eta_Z3=2/9 into the route laws yields Q=2/3, no native spectator projector, and delta_open=2/9.  _(class `A`)_
 - **chain closes:** True — The displayed identities independently reduce to exact finite algebra under the note's own definitions. No cited authorities, fitted data, external comparators, or physical bridge identifications are used.
 - **rationale:** The source is explicitly scoped to a bounded defined route object, and the claimed consequences are algebraic identities inside that object. Independent formula checks confirm the zero-source Q calculation, the real Z3 commutant and idempotents, the absence of commuting real rank-one projectors, the based endpoint c=0, the finite sum eta_Z3=2/9, and delta_open=2/9. The runner source computes the load-bearing symbolic quantities directly with no helper imports, calibrated constants, or physical target import; its prose-only boundary checks do not carry the algebraic conclusion.
+- **auditor confidence:** high
+
+### `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12`
+
+- **Note:** [`KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md`](../../docs/KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded retained-corner-measure negative: the Berezin det(M) surface leaves the doublet-block kernel normalization free; the stated rho-map arithmetic maps that freedom to the two Z_d/r cells without selecting either, while transfer-level selection remains out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-032821-f9996aea98-koide_occupancy_kernel_coeff`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Rescaling the doublet block M_d -> lambda M_d preserves the retained single-pair/Berezin/C3 structures while changing the determinant factor by lambda^rank, so the retained measure does not fix the block coefficient.  _(class `A`)_
+- **chain closes:** True — The determinant scaling follows directly from multilinearity of det(lambda M_d)=lambda^n det(M_d), and scalar rescaling preserves the stated algebraic structures. The transfer/time-slicing route is not closed, but the source note treats it as an explicit live prerequisite rather than as a derived determination.
+- **rationale:** The load-bearing step is a genuine algebraic identity over retained-grade inputs: substep1 supplies arbitrary-kernel Berezin det(M), and the source exhibits a family of allowed lambda-rescalings with different determinant weights. The substep2 material is used only to preserve the no-physical-identification boundary and name the transfer prerequisite, not to close that route. The occupancy-cell computation is scoped as rho-map bookkeeping and correctly gives r in {1, 1/2} with no selector.
 - **auditor confidence:** high
 
 ### `koide_octahedral_overconstrains_value_bit_narrow_note_2026-06-02`

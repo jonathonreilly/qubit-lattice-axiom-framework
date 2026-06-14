@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_records_objectivity_conditional_note_2026-05-31"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12",
         "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12",
         "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12",
         "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02",
         "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
         "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
-        "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
+        "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
+        "koide_records_objectivity_conditional_note_2026-05-31"
       ],
       "helper_runner_paths": [],
-      "note_hash": "968d837227efa32b339c7eac31fd8f02904ea7bf033f87beb7b3da26fbf01b2b",
+      "note_hash": "e121db80a20989ca1fd56687c0c198e563cb8e3a121da0d23c59720ba75c40f4",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

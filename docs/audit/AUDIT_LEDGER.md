@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 889 |
+| **retained_bounded** | 890 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1469 |
+| unaudited | 1468 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1335 |
+| `audited_clean` | 1336 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1786 |
+| `unaudited` | 1785 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 867 |
-| `leaf` | 1361 |
+| `medium` | 873 |
+| `leaf` | 1355 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -343,6 +343,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4675,6 +4676,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The sparse order-3 gap-sum alias set, 7 of 256 finite-DFT bins, captures only 0.33-0.85 of the increment spectral power across the tested states, with the worst state below one half, so the order-3 state-independent spectral law is refuted under the stated convention.  _(class `C`)_
 - **chain closes:** True — The runner constructs the 9-mode ring Hamiltonian, seeded Slater projectors, time-evolved polar determinant phases, increments, FFT power, and sparse order-3 alias bins from the stated finite data. An independent check reproduces direct bins [0,43,213], seven order-3 bins, capture range 0.331-0.854, full support at the stated floor, and min singular value about 0.0110; the K-domain exclusion follows from rank(P_AB) <= min(K,9-K).
 - **rationale:** The conclusion is a bounded finite counterexample under the note's own alias convention: the predicted order-3 bin set is sparse and fails to carry even half the spectral power for at least one tested admissible state. The runner source performs the relevant finite computation rather than importing a contested premise or printing constants, and the key alias arithmetic and numerical gates independently check out. No cited non-retained authority, external comparator, tuned empirical input, or hidden primitive is needed; higher-order laws and analytic phase/winding closure are explicitly outside scope.
+- **auditor confidence:** high
+
+### `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free-sector L=3 supplied state family for det-phase increment capture by exact-tone least-squares projection over orders o=1..8, with tau=0.35, T=256, K in {3,4,5,6}, and K=5 seeds 4242 and 99.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-024220-b445f376ed-det_phase_harmonic_depth_sta`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With the predicted exact-tone sets W_o, the K=6 state reaches capture >=0.99 at o*=4 while the K=3 and K=4 states do not reach 0.99 through o=8, so the tested family has mixed state-dependent harmonic depth and no state-independent 0.99 capture depth <=8.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the finite L=3 unitary route, seeded rank projectors, exact tone sets, det-phase increments, and least-squares projections rather than importing the contested result. An independent direct raw-tone least-squares recomputation matches the W_o sizes, capture table, ceilings, and o*=4 saturation for K=6.
+- **rationale:** The cited realized-state primitive is an approved premise in the packet and is used only for pointwise evaluation of supplied state data, not as a selector, weighting rule, or genericity claim. The load-bearing numeric pattern is computed from the scoped finite state family and exact-tone projection, with no external comparator or tuned empirical import. The source claim is bounded to the tested family, and the independent math check confirms the displayed capture entries and stated saturation/non-saturation conclusions.
 - **auditor confidence:** high
 
 ### `diamond_signal_budget_hardening_note`

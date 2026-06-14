@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 258,
-    "leaf": 460,
+    "leaf": 459,
     "medium": 429
   },
   "cycle_break_target_count": 20,
@@ -18118,30 +18118,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "realized_state_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_det_phase_capture_vs_order_2026_06_12.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18269,6 +18245,45 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gate_b_dynamics_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_connectivity_tolerance_note",
+        "evolving_network_prototype_v4_note",
+        "evolving_network_prototype_v5_note",
+        "gate_b_farfield_note",
+        "evolving_network_prototype_v6_note",
+        "gate_b_v6_nearfield_comparator_note",
+        "gate_b_grown_distance_law_note",
+        "gate_b_grown_joint_package_note",
+        "gate_b_nonlabel_connectivity_v3_note",
+        "gate_b_h025_farfield_note",
+        "gate_b_h025_distance_law_note",
+        "gate_b_h025_joint_package_note",
+        "gate_b_weak_connectivity_note",
+        "gate_b_nonlabel_connectivity_v2_note",
+        "gate_b_no_restore_farfield_note",
+        "gate_b_no_restore_joint_package_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/GATE_B_DYNAMICS_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_connectivity_tolerance.py",
       "transitive_descendants": 16
     },
     {
@@ -31353,45 +31368,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_dynamics_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_connectivity_tolerance_note",
-        "evolving_network_prototype_v4_note",
-        "evolving_network_prototype_v5_note",
-        "gate_b_farfield_note",
-        "evolving_network_prototype_v6_note",
-        "gate_b_v6_nearfield_comparator_note",
-        "gate_b_grown_distance_law_note",
-        "gate_b_grown_joint_package_note",
-        "gate_b_nonlabel_connectivity_v3_note",
-        "gate_b_h025_farfield_note",
-        "gate_b_h025_distance_law_note",
-        "gate_b_h025_joint_package_note",
-        "gate_b_weak_connectivity_note",
-        "gate_b_nonlabel_connectivity_v2_note",
-        "gate_b_no_restore_farfield_note",
-        "gate_b_no_restore_joint_package_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GATE_B_DYNAMICS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gate_b_connectivity_tolerance.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44863,6 +44839,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 32,
-  "total_pending": 1474
+  "ready_count": 31,
+  "total_pending": 1473
 }

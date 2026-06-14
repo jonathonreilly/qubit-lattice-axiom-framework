@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1450 |
-| Retained-grade rows, including boxed decorations | 1322 |
-| Retained positive theorems | 209 |
+| Applied audit verdicts | 1451 |
+| Retained-grade rows, including boxed decorations | 1323 |
+| Retained positive theorems | 210 |
 | Retained no-go rows | 205 |
 | Retained bounded rows | 864 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1516 |
+| Unaudited rows | 1515 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 32 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1521 |
+| Total pending rows | 1520 |
 | Ready rows | 67 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
-| High pending | 260 |
+| High pending | 259 |
 | Medium pending | 438 |
 | Leaf pending | 496 |
 
 Next ready rows by queue order:
 
-- [`kinetic_isotropy_primitive_irreducibility_support_2026-06-09`](../../docs/KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md) - high; unaudited
+- [`kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09`](../../docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
 - [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited

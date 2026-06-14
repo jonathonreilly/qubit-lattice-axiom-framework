@@ -76,12 +76,12 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 601 |
 | High nodes | 473 |
-| Medium nodes | 896 |
-| Leaf nodes | 1460 |
+| Medium nodes | 895 |
+| Leaf nodes | 1461 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1590 descendants; score 134.636
+- `minimal_axioms` - critical; 1589 descendants; score 134.635
 - `three_generation_observable_theorem_note` - critical; 1356 descendants; score 64.406
 - `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
 - `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975

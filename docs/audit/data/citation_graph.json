@@ -51078,11 +51078,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+      "to": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "repo.front_door_status",
-      "to": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
@@ -98185,8 +98185,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
         "gate_b_connectivity_tolerance_note",
         "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
@@ -98195,7 +98195,7 @@
         "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ffa4c648e83b54c8cf8ba263c965fb1b2969a4466200a5cc8e5580e20653f9fb",
+      "note_hash": "e8f9b980384b9e4ac6afabd029ca597161fad6eb0b19c11e99c1a47b5488288a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

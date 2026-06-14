@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
         "det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12",
         "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
         "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
         "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
         "flavor_detr_default_full_exercise_note_2026-05-30",
-        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
+        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
+        "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "88b5b7dc447c4673e52b4aac1dfbb302396a71e16c8c2195abd30375a99ad4fe",
+      "note_hash": "bb34075a7b6a30ee07a6c5559c1d640770e3cfb79cdc702d7d33112301a9281b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

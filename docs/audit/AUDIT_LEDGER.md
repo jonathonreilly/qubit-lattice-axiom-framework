@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 867 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1509 |
+| unaudited | 1508 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
 | ~~audited_conditional~~ | 30 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -63,10 +63,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1308 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 47 |
-| `audited_failed` | 27 |
+| `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1826 |
+| `unaudited` | 1825 |
 
 | claim_type | count |
 |---|---:|
@@ -1528,6 +1528,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
+| `free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
@@ -6871,6 +6872,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For G^-1(p)=m^2+sum_mu(2 sin(p_mu/2))^2, qhat_mu V^mu(p,q)=G^-1(p+q)-G^-1(p) with qhat_mu=2 sin(q_mu/2) and V^mu=2 sin(p_mu+q_mu/2).  _(class `A`)_
 - **chain closes:** True — Per component, [2 sin((p_mu+q_mu)/2)]^2-[2 sin(p_mu/2)]^2=4 sin(q_mu/2) sin(p_mu+q_mu/2)=qhat_mu V^mu, and the mass term cancels. The naive residual sign follows by subtracting the point-split identity from qhat dot V_naive.
 - **rationale:** The load-bearing identity is a direct trigonometric algebraic closure over the definitions stated in the packet, not a renaming or tuned numerical match. The runner source genuinely samples random momenta and computes both the Ward residual and the naive-current seagull residual, rather than printing hard-coded pass values. The source note's scope is narrow and its guardrails explicitly exclude full stress-tensor, cubic-seagull, Belinfante, diffeomorphism, and gravity-sign closure.
+- **auditor confidence:** high
+
+### `free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 staggered two-step one-particle transfer in d spatial dimensions, including the dispersion E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), even-offset kernel support, and the stated exponential l_inf/l1 kernel bound for m>0.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-004153-978df8533a-free_staggered_two_step_disp`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The dimension-dependent reduction is the claim that the folded phase matrices satisfy the Clifford relations so H_hop(k)^2 = -(sum_mu sin^2 k_mu) I, and the rate bound is then claimed from shifting p_mu* to p_mu* - i eta sign(z_mu*) in the Fourier integral.  _(class `A`)_
+- **chain closes:** False — The Clifford/two-step dispersion algebra closes under an independent bit-sign check and gives the displayed eigenvalues. The contour proof does not close as written: with the stated kernel convention exp(i p.z), the shift p -> p - i eta sign(z) gives exp(+eta |z|), not the claimed decaying factor.
+- **rationale:** The primary runner performs genuine finite-dimensional checks for the Clifford algebra, scalar hop square, and finite-torus two-step spectra, and it is not just printing constants. However, runner PASS does not repair the source proof's contour-shift sign error, because the finite-block numerical bound check does not verify the analytic sign convention in the displayed derivation. Since the all-direction exponential kernel bound is part of the audited theorem, the chain does not close as written even though the dispersion subclaim itself is supported.
 - **auditor confidence:** high
 
 ### `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28`

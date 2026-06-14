@@ -3,7 +3,7 @@
     "critical": 327,
     "high": 258,
     "leaf": 496,
-    "medium": 433
+    "medium": 432
   },
   "cycle_break_target_count": 20,
   "cycle_break_targets": [
@@ -18118,31 +18118,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.524,
-      "note_path": "docs/FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/free_staggered_two_step_dispersion_d_dimensional_2026_06_12.py",
-      "transitive_descendants": 22
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -18304,7 +18279,7 @@
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
         "plaquette_self_consistency_note"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
@@ -18313,12 +18288,12 @@
         "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
         "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
       ],
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.748,
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RUNG_FOUR_DEEP_RIM_BOUNDED_NOTE_2026-06-12.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_2026_06_12.py",
-      "transitive_descendants": 2
+      "transitive_descendants": 18
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45923,6 +45898,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 63,
-  "total_pending": 1514
+  "ready_count": 62,
+  "total_pending": 1513
 }

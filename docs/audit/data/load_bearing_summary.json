@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 601,
     "high": 473,
-    "leaf": 1452,
-    "medium": 904
+    "leaf": 1450,
+    "medium": 906
   },
   "flagship_signal_used": false,
   "node_count": 3430,
@@ -97,8 +97,8 @@
     {
       "claim_id": "native_gauge_closure_note",
       "criticality": "critical",
-      "load_bearing_score": 39.44,
-      "transitive_descendants": 1388
+      "load_bearing_score": 39.441,
+      "transitive_descendants": 1389
     },
     {
       "claim_id": "yt_ew_color_projection_theorem",

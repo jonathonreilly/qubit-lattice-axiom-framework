@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 903 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1442 |
+| unaudited | 1441 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1352 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1759 |
+| `unaudited` | 1758 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 861 |
-| `leaf` | 1367 |
+| `medium` | 860 |
+| `leaf` | 1368 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -1526,6 +1526,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `post_record_measure_weight_normalization_subdivision_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -16406,6 +16407,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The classifier defines separate gates: post-record information, stochastic production kernels, Born/IID probability-origin bridges, Markov generators, clock intervals, and physical rate/unit normalizations.  _(class `E`)_
 - **chain closes:** True — The restricted packet supports the classifier as a definition-level bookkeeping artifact: the code directly defines the premise bundles, levels, missing-premise lists, and blocked-claim lists, and the displayed kernel checks are elementary matrix facts. It does not close a first-principles dynamics derivation, but it does close the stated non-derivational classifier claim.
 - **rationale:** The runner source genuinely computes the displayed stochasticity, determinant, generator, and exp(Qt) checks for the two-state examples, including det(P_lazy)=1/2, det(P_swap)=-1, det(P_reset)=0, Q with off-diagonal log(2)/2, and exp(Q*1)=P_lazy. The actual load-bearing classifier levels and gates are introduced by the code and note as definitions of what premises license which claims. Because the chain is a premise taxonomy rather than a derivation from cited retained inputs or a first-principles framework computation, the appropriate class is E and the verdict is audited_renaming.
+- **auditor confidence:** high
+
+### `record_prerecord_instrument_kernel_gate_2026-06-06`
+
+- **Note:** [`RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite one-qubit supplied-context gate: using retained-bounded canonical projective/Lueders trace authority and supplied Z/X projective readout contexts, the displayed rho gives the stated probability vectors and realized outcomes give one-hot record/count updates.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-040608-ad26e556d7-record_prerecord_instrument_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied projective readout context, the pre-record density matrix is mapped to future-record probabilities by p_r = Tr(P_r rho), while a realized outcome is written as a one-hot post-record atom/count update rather than as the probability vector.  _(class `A`)_
+- **chain closes:** True — The displayed finite algebra checks: p_Z=(2/3,1/3), p_X=(1/2+sqrt(2)/3,1/2-sqrt(2)/3), and the realized atom/count updates are typed separately from ensemble expectations. The result closes only under the supplied readout context and cited projective trace authority; it does not derive the readout context, Born/probability authority from Record, physical generator, or clock/rate normalization.
+- **rationale:** The load-bearing math is an algebraic identity over supplied inputs, not a first-principles derivation of a physical production kernel. The retained-bounded LSP and Lueders authorities support the projective trace calculation, and the accepted Minimal Axioms premise is used within its stated bounds. However the readout context remains explicitly supplied and not selected or derived by the restricted packet, so the row is conditional rather than clean as a bare record-production theorem.
 - **auditor confidence:** high
 
 ### `record_production_interface_principle_2026-06-06`

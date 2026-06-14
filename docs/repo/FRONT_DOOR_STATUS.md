@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1525 |
+| Applied audit verdicts | 1526 |
 | Retained-grade rows, including boxed decorations | 1368 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 903 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1441 |
+| Unaudited rows | 1440 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 52 |
+| Audited conditional rows | 53 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 20 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1446 |
-| Ready rows | 4 |
+| Total pending rows | 1445 |
+| Ready rows | 3 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
-| Medium pending | 426 |
+| Medium pending | 425 |
 | Leaf pending | 435 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
 - [`teleportation_native_transport_theory_note`](../../docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md) - medium; unaudited
 - [`transfer_trace_correspondence_fixes_kernel_normalization_on_retained_surface_bounded_note_2026-06-12`](../../docs/TRANSFER_TRACE_CORRESPONDENCE_FIXES_KERNEL_NORMALIZATION_ON_RETAINED_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 
@@ -79,8 +78,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 601 |
 | High nodes | 473 |
-| Medium nodes | 899 |
-| Leaf nodes | 1457 |
+| Medium nodes | 898 |
+| Leaf nodes | 1458 |
 
 Top load-bearing rows by graph score:
 

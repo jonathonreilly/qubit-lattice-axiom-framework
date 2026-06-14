@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 874 |
+| **retained_bounded** | 875 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1496 |
+| unaudited | 1495 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1316 |
+| `audited_clean` | 1317 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1813 |
+| `unaudited` | 1812 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 863 |
-| `leaf` | 1365 |
+| `medium` | 864 |
+| `leaf` | 1364 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -101,9 +101,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1590 | 134.64 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1356 | 64.41 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1357 | 64.41 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1279 | 62.82 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1422 | 60.98 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1358 | 51.41 | `audited_clean` | **retained_bounded** |
 | 6 | `key_terminology` | meta | critical | 1396 | 50.45 | `unaudited` | meta |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1292 | 49.84 | `unaudited` | meta |
@@ -113,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1262 | 42.80 | `audited_clean` | **retained_bounded** |
 | 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1274 | 41.82 | `unaudited` | unaudited |
 | 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1346 | 40.90 | `audited_failed` | ~~audited_failed~~ |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1388 | 39.44 | `audited_clean` | **retained** |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1389 | 39.44 | `audited_clean` | **retained** |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1307 | 38.85 | `audited_clean` | **retained_no_go** |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1285 | 38.83 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1374 | 36.92 | `audited_clean` | **retained** |
@@ -1198,6 +1198,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `spin_statistics_fs_admission_located_exercise_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `stable_post_record_dial_location_certificate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_3d_self_gravity_sign_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -17224,6 +17225,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The finite-dimensional identities Tr([a,a†]) = 0 while Tr(I_H) = D rule out CCR for D >= 1, and the CAR relations give {a†,a†} = 2(a†)^2 = 0 plus n^2 = a†aa†a = n.  _(class `A`)_
 - **chain closes:** True — The algebraic statements follow from cyclic trace, explicit 2x2 CAR matrices, and same-mode CAR identities. The abstract Cl(3) dimension match is supplied by retained-grade one-hop authorities, and no physical per-site Hilbert-space identification is used.
 - **rationale:** (C1)-(P2) are finite-dimensional trace, matrix, and CAR algebra identities, and the runner source genuinely instantiates symbolic matrices and the concrete CAR carrier. The only load-bearing upstream use is the abstract Cl(3) dimension-2 readout; the supplied authorities are retained-grade, including the decoration-under retained parent. The source explicitly excludes the physical lattice identification and open staggered-Dirac bridge, so the audited narrow scope closes.
+- **auditor confidence:** high
+
+### `spin_statistics_fs_admission_located_exercise_note_2026-06-06`
+
+- **Note:** [`SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md`](../../docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow location certificate: Cl(3) does not provide an inner Z2 CAR grading, an order-two exchange route admits both +1 and -1 phases, and Record does not supply a within-sector exchange-sign datum once the central parity label is in place; no CAR or global spin-statistics closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-012206-5f63a28789-spin_statistics_fs_admission`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained central Z2 parity grading is common to the boson/CAR frames, while the cross-site exchange sign is within-sector data and Record supplies no within-sector data; Cl(3) and Hom(Z2,U(1)) supply no selector for the sign.  _(class `A`)_
+- **chain closes:** True — The Cl(3) obstruction follows by expanding a general 2x2 operator in the Pauli basis, and Hom(Z2,U(1)) is exactly the two roots ±1. The Record conclusion follows only for the narrowed boundary statement because the packet leaves multi-loop and continuum routes open.
+- **rationale:** The load-bearing mathematics is elementary algebra over the provided Pauli, parity, topology, and Record inputs, not a numerical match or definition substitution. The runner genuinely computes the Pauli obstruction and Hom dichotomy, while the remaining checks are scope guards preventing an overclaim. The clean verdict applies only to the bounded location result, not to a global no-go against future spin-statistics routes.
 - **auditor confidence:** high
 
 ### `stable_post_record_dial_location_certificate_2026-06-06`

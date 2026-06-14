@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3292 |
-| Applied audit verdicts | 1522 |
+| Applied audit verdicts | 1523 |
 | Retained-grade rows, including boxed decorations | 1369 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 904 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1448 |
+| Unaudited rows | 1447 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 49 |
+| Audited conditional rows | 50 |
 | Audited renaming rows | 31 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 20 |
@@ -33,22 +33,21 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1453 |
-| Ready rows | 6 |
+| Total pending rows | 1452 |
+| Ready rows | 5 |
 | Cycle-break targets | 20 |
-| Critical pending | 332 |
+| Critical pending | 331 |
 | High pending | 254 |
-| Medium pending | 425 |
-| Leaf pending | 442 |
+| Medium pending | 428 |
+| Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`koide_mru_weight_class_obstruction_theorem_note_2026-04-19`](../../docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_SU3_CG_LIBRARY_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
-- [`harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12`](../../docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
-- [`statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_SU3_CG_LIBRARY_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12`](../../docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,8 +80,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3434 |
 | Critical nodes | 606 |
 | High nodes | 468 |
-| Medium nodes | 901 |
-| Leaf nodes | 1459 |
+| Medium nodes | 906 |
+| Leaf nodes | 1454 |
 
 Top load-bearing rows by graph score:
 
@@ -90,7 +89,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1359 descendants; score 64.409
 - `observable_principle_from_axiom_note` - critical; 1282 descendants; score 62.825
 - `graph_first_su3_integration_note` - critical; 1425 descendants; score 60.978
-- `plaquette_self_consistency_note` - critical; 1362 descendants; score 51.413
+- `plaquette_self_consistency_note` - critical; 1363 descendants; score 51.414
 - `key_terminology` - critical; 1399 descendants; score 50.451
 - `minimal_axioms_2026-05-03` - critical; 1295 descendants; score 49.840
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1265 descendants; score 44.806

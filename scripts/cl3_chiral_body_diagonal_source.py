@@ -26,6 +26,8 @@ Retained pillars verified live on origin/main ledger (2026-06-04):
 
 NO new imports, NO unapproved premises. Positing an axis or h is FLAGGED as a posit.
 """
+from pathlib import Path
+
 import numpy as np
 import itertools
 
@@ -474,6 +476,16 @@ check("NOT FORCED: the doublet h is C3-orbit-valued; native C3-symmetry leaves i
       True)
 check("POSIT FLAG: selecting a single off-diagonal / axis-ordering to fix h breaks C3 = an import",
       True)
+
+note_path = Path(__file__).resolve().parents[1] / "docs" / "CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md"
+note_text = note_path.read_text(encoding="utf-8")
+check("source N2 scopes scalar doublet block to real-symmetric/Hermitian mass operators",
+      "C₃-equivariant real-symmetric/Hermitian mass operator" in note_text
+      and "C₃-symmetric real-symmetric/Hermitian mass content" in note_text)
+check("source N2 separates J_cs as non-scalar antisymmetric complex structure",
+      "J_cs=(C−C²)/√3" in note_text
+      and "non-scalar real\n     antisymmetric complex structure" in note_text
+      and "not a source for a real\n     doublet direction h" in note_text)
 
 print("\n" + "="*72)
 print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")

@@ -276,3 +276,9 @@ The remaining repair path is to prove the native preparation/readout theorem
 for this retained-axis last-taste carrier. Until that lands, the small-surface
 positive numbers in the table are bounded diagnostics plus finite
 operator-algebra support, not a physical deterministic resource derivation.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [teleportation_operator_consistent_end_to_end_note](TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md)

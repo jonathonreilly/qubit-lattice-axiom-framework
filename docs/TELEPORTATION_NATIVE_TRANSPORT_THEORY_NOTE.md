@@ -311,3 +311,12 @@ T3 (causal record section), T4 (loop holonomy bookkeeping), T5 (branch
 records as gauge data), and T6 (preparation curvature) of this note
 require physical content beyond the RALA algebra and are *not* resolved by
 the RALA theorem; they remain open in their own gates.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [teleportation_3d1_causal_record_channel_note](TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md)
+- [teleportation_3d_initial_ramp_probe_note](TELEPORTATION_3D_INITIAL_RAMP_PROBE_NOTE.md)
+- [teleportation_bell_measurement_circuit_note](TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md)
+- [teleportation_logical_readout_audit](TELEPORTATION_LOGICAL_READOUT_AUDIT.md)

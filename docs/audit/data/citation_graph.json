@@ -501,6 +501,10 @@
       "to": "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02"
     },
     {
+      "from": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
+      "to": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
+    },
+    {
       "from": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
@@ -547,6 +551,18 @@
     {
       "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
       "to": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
+    },
+    {
+      "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
+      "to": "acphilambda_hw_complementation_equivariance_support_note_2026-06-09"
+    },
+    {
+      "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
+      "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
+    },
+    {
+      "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
+      "to": "color_einselection_pointer_frame_fork_is_a_unistochastic_irreducibility_criterion_narrow_theorem_note_2026-06-09"
     },
     {
       "from": "action_architecture_matrix_note",
@@ -4479,6 +4495,22 @@
     {
       "from": "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06",
       "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
+    },
+    {
+      "from": "carrier_orbit_invariance_note_2026-05-03",
+      "to": "s3_time_bilinear_tensor_primitive_note"
+    },
+    {
+      "from": "carrier_orbit_invariance_note_2026-05-03",
+      "to": "s3_time_tensor_primitive_prototype_note"
+    },
+    {
+      "from": "carrier_orbit_invariance_note_2026-05-03",
+      "to": "s3_time_constructed_support_tensor_primitive_note"
+    },
+    {
+      "from": "carrier_orbit_invariance_note_2026-05-03",
+      "to": "dm_neutrino_weak_even_swap_reduction_theorem_note_2026-04-15"
     },
     {
       "from": "car_from_positivity_neutrality_note_2026-06-02",
@@ -35965,6 +35997,22 @@
       "to": "teleportation_retained_axis_operator_algebra_closure_note"
     },
     {
+      "from": "teleportation_native_transport_theory_note",
+      "to": "teleportation_3d1_causal_record_channel_note"
+    },
+    {
+      "from": "teleportation_native_transport_theory_note",
+      "to": "teleportation_3d_initial_ramp_probe_note"
+    },
+    {
+      "from": "teleportation_native_transport_theory_note",
+      "to": "teleportation_bell_measurement_circuit_note"
+    },
+    {
+      "from": "teleportation_native_transport_theory_note",
+      "to": "teleportation_logical_readout_audit"
+    },
+    {
       "from": "teleportation_preparation_readout_probe_note",
       "to": "teleportation_resource_from_poisson_note"
     },
@@ -36019,6 +36067,10 @@
     {
       "from": "teleportation_resource_from_poisson_note",
       "to": "teleportation_apparatus_dynamics_closure_note"
+    },
+    {
+      "from": "teleportation_resource_from_poisson_note",
+      "to": "teleportation_operator_consistent_end_to_end_note"
     },
     {
       "from": "teleportation_retention_theorem_attack_note",
@@ -51973,10 +52025,11 @@
         "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
         "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
         "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02"
+        "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
+        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c63102ae2328982a0c146e51b0b8b0127b30572a0724b11f6ddee8b6b01b00b0",
+      "note_hash": "e0123fbf5fc6613c371d70b846ef4dfee606e4aaac83b575a54857aa5e5833fd",
       "path": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py",
       "title": "AC_\u03c6\u03bb Sub-Admission (i): the Occupancy Selection's Value Face Reduces to Realized-State Registration; the Measure-Side Realization Survives as the Named Frontier"
@@ -52011,10 +52064,13 @@
         "three_generation_observable_theorem_note",
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
-        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
+        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
+        "acphilambda_hw_complementation_equivariance_support_note_2026-06-09",
+        "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+        "color_einselection_pointer_frame_fork_is_a_unistochastic_irreducibility_criterion_narrow_theorem_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ed3ed82f5563f5378a0d80bca85d7c7330e26c445b7abf361a656c5002eba732",
+      "note_hash": "1aae07bffca11e419da2527c685caf7048992bf729a7482829a9d6f01687888d",
       "path": "docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_acphilambda_species_bridge_realized_state_2026_06_11.py",
       "title": "AC_phi_lambda Sub-Admission (iii): Species-Bridge Decomposition Under the Realized-State Primitive"
@@ -57051,9 +57107,14 @@
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
-      "deps": [],
+      "deps": [
+        "s3_time_bilinear_tensor_primitive_note",
+        "s3_time_tensor_primitive_prototype_note",
+        "s3_time_constructed_support_tensor_primitive_note",
+        "dm_neutrino_weak_even_swap_reduction_theorem_note_2026-04-15"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "6570f7bf9aa38f5b79b13d206fcf76f3647cf621b7455d472052e13e9bd3cfa5",
+      "note_hash": "e8459e5124ff50e44d94a1bedb91c705c603d7568a0dfee70f98dc00ca1198fa",
       "path": "docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_carrier_orbit_invariance.py",
       "title": "Carrier Orbit Invariance \u2014 Stretch Attempt with Partial Structural Insight"
@@ -98160,7 +98221,7 @@
         "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7432c0ec60c19df3eadfc796f9306935d142fb7dc797557a09f252139fd58658",
+      "note_hash": "baf6766bccdce37e9a6ac1260f57860ae213779064017dd32be4033037598854",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -104580,10 +104641,14 @@
       "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
       "deps": [
-        "teleportation_retained_axis_operator_algebra_closure_note"
+        "teleportation_retained_axis_operator_algebra_closure_note",
+        "teleportation_3d1_causal_record_channel_note",
+        "teleportation_3d_initial_ramp_probe_note",
+        "teleportation_bell_measurement_circuit_note",
+        "teleportation_logical_readout_audit"
       ],
       "helper_runner_paths": [],
-      "note_hash": "078a6042e82a4e903e78445f38f350d4296343d4d4f62c0a9ce41eccfc0fe30c",
+      "note_hash": "bdae4ea5015fe882e3b246a6e05de73e972546dbcc06cb7e517c5d19b194fe64",
       "path": "docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md",
       "runner_path": "scripts/frontier_teleportation_transport_invariants.py",
       "title": "Native Teleportation Transport Theory Note"
@@ -104814,12 +104879,13 @@
         "teleportation_poisson_resource_sweep_note",
         "teleportation_resource_fidelity_note",
         "teleportation_measurement_record_note",
-        "teleportation_apparatus_dynamics_closure_note"
+        "teleportation_apparatus_dynamics_closure_note",
+        "teleportation_operator_consistent_end_to_end_note"
       ],
       "helper_runner_paths": [
         "scripts/frontier_bell_inequality.py"
       ],
-      "note_hash": "3daee337bc508ce68df4254d8a99b58d1f1cab421b0588325448b4b344a98028",
+      "note_hash": "2ffeb5cf55829018e2f6fcdde51475d38e854de2c000fd217bb4e3fab88298e5",
       "path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
       "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
       "title": "Teleportation Resource From Poisson/CHSH: First Audit"
@@ -111976,7 +112042,6 @@
     "breakthrough_direction_memo_2026-04-10",
     "broad_gravity_derivation_note",
     "c3_symmetry_preserved_interpretation_note_2026-05-17",
-    "carrier_orbit_invariance_note_2026-05-03",
     "causal_escape_window_note",
     "causal_propagating_field_live_packet_note_2026-06-05",
     "central_band_born_dense_sweep_note",
@@ -112905,10 +112970,10 @@
       "open_gate": 170,
       "positive_theorem": 616
     },
-    "edge_count": 12869,
-    "leaf_count": 1111,
+    "edge_count": 12882,
+    "leaf_count": 1108,
     "node_count": 3430,
-    "root_count": 1064,
+    "root_count": 1063,
     "runners_with_path": 3010
   }
 }

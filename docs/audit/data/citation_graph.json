@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_detr_default_full_exercise_note_2026-05-30"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
         "flavor_detr_default_full_exercise_note_2026-05-30",
         "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
         "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "gate_b_dynamics_note",
         "gate_b_operator_cauchy_note_2026-05-10",
-        "gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12"
+        "gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12",
+        "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "667aeff83417080238867e375efe1168d8d55ead71ec67f5111f66208e72523b",
+      "note_hash": "8d3ab6f5b2a89c0f4f3ddba17a675da73d3c195c1061246672ce49aabb106d7c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

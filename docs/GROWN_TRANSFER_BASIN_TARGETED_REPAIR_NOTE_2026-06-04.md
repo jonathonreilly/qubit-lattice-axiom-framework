@@ -38,6 +38,7 @@ The current runners now share the same predicate functions:
 
 ## Current Runner Packet
 
+- **Primary runner:** [`scripts/grown_transfer_basin_live_packet.py`](../scripts/grown_transfer_basin_live_packet.py)
 - [`scripts/GROWN_TRANSFER_BASIN_SWEEP.py`](../scripts/GROWN_TRANSFER_BASIN_SWEEP.py)
 - [`scripts/GROWN_TRANSFER_BASIN_TARGETED.py`](../scripts/GROWN_TRANSFER_BASIN_TARGETED.py)
 - [`logs/runner-cache/GROWN_TRANSFER_BASIN_SWEEP.txt`](../logs/runner-cache/GROWN_TRANSFER_BASIN_SWEEP.txt)

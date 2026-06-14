@@ -6,6 +6,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import GROWN_TRANSFER_BASIN_SWEEP as _sweep_packet_source
+import GROWN_TRANSFER_BASIN_TARGETED as _targeted_packet_source
 import runner_cache as rc
 
 
@@ -13,6 +15,7 @@ AUDIT_TIMEOUT_SEC = 120
 ROOT = Path(__file__).resolve().parents[1]
 PASS_COUNT = 0
 FAIL_COUNT = 0
+PACKET_SOURCE_MODULES = (_sweep_packet_source, _targeted_packet_source)
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:

@@ -1,0 +1,24 @@
+loop_slug: higgs-ntaste-three-distinct-scope-20260614
+goal: "Repair the Higgs effective N_taste audited conditional by correcting the overbroad five-distinct-values wording."
+target_claim_id: higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08
+target_status: proposed_promoted_after_independent_audit
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+branch: physics-loop/higgs-ntaste-three-distinct-scope-20260614
+base: origin/main@88183eb6401ec7709f44ddee3ea48cda9ccb7ebe
+files_touched:
+  - docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md
+  - scripts/frontier_higgs_channel_effective_ntaste_boundary.py
+  - logs/runner-cache/frontier_higgs_channel_effective_ntaste_boundary.txt
+runner:
+  command: "PYTHONPATH=scripts python3 scripts/frontier_higgs_channel_effective_ntaste_boundary.py"
+  result: "TOTAL: PASS=95, FAIL=0"
+open_imports:
+  - "Independent audit must decide whether this scope correction closes the row."
+no_go_routes:
+  - "Do not claim five pairwise-distinct single-class values."
+  - "Do not derive or select the uniform N_taste=16 Higgs assignment."
+  - "Do not retag audit or publication authority files in this source PR."
+next_exact_action: "Open PR for reviewer extraction and independent audit rerun."
+stop_condition: "Source wording, runner verdict, cache, loop pack, and PR are complete."

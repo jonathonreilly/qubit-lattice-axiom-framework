@@ -43,8 +43,8 @@
     {
       "claim_id": "plaquette_self_consistency_note",
       "criticality": "critical",
-      "load_bearing_score": 51.409,
-      "transitive_descendants": 1359
+      "load_bearing_score": 51.408,
+      "transitive_descendants": 1358
     },
     {
       "claim_id": "key_terminology",

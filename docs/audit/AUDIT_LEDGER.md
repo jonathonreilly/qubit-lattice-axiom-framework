@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 873 |
+| **retained_bounded** | 874 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1497 |
+| unaudited | 1496 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1315 |
+| `audited_clean` | 1316 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1814 |
+| `unaudited` | 1813 |
 
 | claim_type | count |
 |---|---:|
@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1356 | 64.41 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1279 | 62.82 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1422 | 60.98 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1359 | 51.41 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1358 | 51.41 | `audited_clean` | **retained_bounded** |
 | 6 | `key_terminology` | meta | critical | 1396 | 50.45 | `unaudited` | meta |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1292 | 49.84 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1262 | 44.80 | `unaudited` | unaudited |
@@ -709,6 +709,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_carrier_locus_decomposition_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_wilson_target_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9955,6 +9956,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The remaining non-native content is localized to the scoped matter operator M, specified as the first-order cross-site-anticommuting fermionic chiral staggered operator, while the hw=1 locus labels follow from S3-invariant Hamming-shell/parity facts and leave only a Z2 Hodge-orientation bit.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the algebraic checks close from retained-grade inputs: the corner spectra, S3 shell labels, qubit-ladder statistics distinction, parity/range relation, and Pfaffian orientation sign are finite algebraic facts. The fermionic first-order matter-frame selection is not closed, but the source note explicitly treats it as the localized import rather than as a derived conclusion.
 - **rationale:** The displayed quantitative identities independently check: staggered zeros occur at all eight corners, the Wilson term has only the hw=0 zero, S3 shell sizes are 1+3+3+1, the pair (epsilon parity, orbit size) uniquely labels hw=1, nearest-neighbor hops flip epsilon parity, and Pf([[0,beta],[-beta,0]])=beta with orientation flip changing the sign. The runner source mostly computes these finite facts directly; one runner line about gauge_wilson_isotropy being the wrong wall is narrative, but that wall-scope distinction is supported by the cited retained no-go’s plaquette-coefficient scope and is not a hidden numerical derivation. The clean verdict is only for the bounded decomposition, not for deriving the matter operator M or selecting the residual Hodge sign.
+- **auditor confidence:** high
+
+### `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02`
+
+- **Note:** [`KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md`](../../docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-algebra audit that the supplied tracial standard-form R[Z_3] carrier has trivial modular data and therefore does not itself select the channel-counting r=1/2 scoring weight; the remaining r=1/2 selector is an external non-tracial density/dynamics input.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-011914-4ff067db38-koide_carrier_scoring_needs_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the supplied carrier state is the normalized trace, its GNS Tomita-Takesaki modular operator is Delta=1, so the carrier's own modular/density weight is uniform per direction (r=1), while r=1/2 requires a non-uniform density ratio w0/w1=1/2, equivalently a nonzero Gibbs gap.  _(class `A`)_
+- **chain closes:** True — The restricted packet closes the finite algebra: trace GNS gives Delta=1, the trace density is uniform so w0/w1=1 and Q=1, and the channel target w0/w1=1/2 is a non-uniform density witness rather than carrier-tracial data. The listed kinematic alternatives either give direction-counting, leave a free ratio, or import the channel ratio as an input.
+- **rationale:** The load-bearing work is class A finite algebra over the supplied retained-grade carrier and standard tracial modular theory, not an empirical comparator or tuned numerical match. The runner source performs actual finite matrix checks for the trace, Tomita operator, density ratio, representation invariant subspace test, number-operator alternatives, Kahler prefactor dependence, and N-scaling. The note explicitly preserves the physical residual: it does not derive r=1/2, but cleanly shows that the tracial carrier and tested kinematic routes do not supply it.
 - **auditor confidence:** high
 
 ### `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`

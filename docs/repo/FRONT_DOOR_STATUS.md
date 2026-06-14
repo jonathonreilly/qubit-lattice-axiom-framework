@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1510 |
+| Applied audit verdicts | 1511 |
 | Retained-grade rows, including boxed decorations | 1358 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 209 |
 | Retained bounded rows | 894 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1456 |
+| Unaudited rows | 1455 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 48 |
+| Audited conditional rows | 49 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 20 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1461 |
-| Ready rows | 19 |
+| Total pending rows | 1460 |
+| Ready rows | 18 |
 | Cycle-break targets | 20 |
 | Critical pending | 331 |
 | High pending | 254 |
 | Medium pending | 429 |
-| Leaf pending | 447 |
+| Leaf pending | 446 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md) - medium; unaudited
 - [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
 - [`koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12`](../../docs/KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12`](../../docs/KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`koide_pointer_record_degeneracy_d3_note_2026-05-31`](../../docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md) - medium; unaudited
 - [`lepton_block_d12_prime_matching_no_go_note_2026-05-10`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md) - medium; unaudited
-- [`lp_two_band_exact_completion_bounded_theorem_note_2026-06-12`](../../docs/LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
+- [`lp_two_band_exact_completion_bounded_theorem_note_2026-06-12`](../../docs/LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08`](../../docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 606 |
 | High nodes | 468 |
-| Medium nodes | 904 |
-| Leaf nodes | 1452 |
+| Medium nodes | 905 |
+| Leaf nodes | 1451 |
 
 Top load-bearing rows by graph score:
 

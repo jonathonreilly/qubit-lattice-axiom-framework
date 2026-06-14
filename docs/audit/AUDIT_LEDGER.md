@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 894 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1456 |
+| unaudited | 1455 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 49 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1341 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 49 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1773 |
+| `unaudited` | 1772 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 598 |
 | `high` | 462 |
-| `medium` | 865 |
-| `leaf` | 1363 |
+| `medium` | 866 |
+| `leaf` | 1362 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -1502,6 +1502,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10714,6 +10715,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With J_i = σ_i/2 ≠ 0, K_i = 0 makes [K_i,K_j] = 0 while the so(3,1) or so(4) bracket requires [K_i,K_j] = ± i ε_ijk J_k, so K=0 is not a completion.  _(class `A`)_
 - **chain closes:** True — The retained merger supplies the operator-frame spatial rotation generators J_i=σ_i/2, and the Lie-bracket contradiction for K=0 is immediate. The chain does not close full matter faithfulness; the missing step is the matter-field-index attachment bridge, which the note explicitly disclaims.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: for any off-diagonal pair, ε_ijk J_k is nonzero, so K=0 cannot satisfy either sign of the [K,K] bracket. An independent algebra check also gives the listed same-carrier completions K_i=aJ_i with a^2=-1 for so(3,1) and a^2=+1 for so(4). The runner's section E uses hard-coded scope assertions, so those are not treated as proof; the clean verdict rests on the bracket algebra and the cited operator-frame merger only.
+- **auditor confidence:** high
+
+### `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`
+
+- **Note:** [`KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite C3 algebraic localization: Q is phase-independent, the clock character gives multiplicity (1,1,1), native circulant R^3 has no nonzero C3-equivariant Γχ-anticommuting operator, and a separate chirality factor admits the algebraic L-R escape; no physical r=1/2 derivation was audited as closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-032218-33aef33d01-koide_first_order_selector_i`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The selector between the first-order/holomorphic r=1/2 reading and the second-order/modulus r=1 reading is a chiral L-R coupling M(b)⊗σ+ across a separate chirality factor: within R^3 the C3-equivariant Γχ-anticommuting intersection is zero, while on R^3⊗C^2 such a factor-crossing anticommuting operator exists.  _(class `A`)_
+- **chain closes:** False — The finite matrix identities close, but the queued positive theorem does not: the packet lacks a retained bridge showing AC_phi_lambda supplies the physical M(b)⊗σ+ coupling and lacks a retained readout rule mapping first-order/chiral coupling to the physical r weighting. The cited authorities explicitly leave those gates open.
+- **rationale:** The runner source genuinely checks the displayed finite C3 identities, and an independent algebra check confirms the sums, character multiplicities, Γχ intersection, tensor-factor anticommutation, and Fourier eigenvector rigidity. However, the physical selector claim depends on an unaudited staggered-Dirac realization authority and on a missing bridge from the algebraic L-R coupling to the physical branch/r-weighting rule. The Berry authority is retained only as bounded finite support and expressly does not derive branch selection, so the positive theorem cannot be marked clean.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md`
+  - `KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`
 - **auditor confidence:** high
 
 ### `koide_fisher_rao_spherical_reorganization_note_2026-06-01`

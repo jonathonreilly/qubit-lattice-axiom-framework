@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 331,
     "high": 254,
-    "leaf": 447,
+    "leaf": 446,
     "medium": 429
   },
   "cycle_break_target_count": 20,
@@ -18118,34 +18118,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_berry_monopole_bridge_reduction_note_2026-05-31",
-        "staggered_dirac_realization_gate_note_2026-05-03",
-        "minimal_axioms",
-        "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -18276,6 +18248,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_lepton_block_d12_prime_matching.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_lp_two_band_exact_2026_06_12.py",
       "transitive_descendants": 16
     },
     {
@@ -31360,30 +31356,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_lp_two_band_exact_2026_06_12.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44511,6 +44483,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 19,
-  "total_pending": 1461
+  "ready_count": 18,
+  "total_pending": 1460
 }

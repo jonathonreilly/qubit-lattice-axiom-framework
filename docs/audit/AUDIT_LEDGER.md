@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 883 |
+| **retained_bounded** | 884 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1475 |
+| unaudited | 1474 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1329 |
+| `audited_clean` | 1330 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1792 |
+| `unaudited` | 1791 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 870 |
-| `leaf` | 1358 |
+| `medium` | 869 |
+| `leaf` | 1359 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -327,6 +327,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d2_sign_boundary_tracks_landau_peierls_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4461,6 +4462,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Bisection-located boundaries at T=0.2 across m in {0.2, 0.35, 0.5, 0.8} give eps*_m = sqrt(mu*^2 - m^2) with relative spread 1.45% < 2%, with the monotone residual m-trend separately disclosed.  _(class `C`)_
 - **chain closes:** True — The runner constructs the Harper matrices, spectra, grand potentials, chi values, sign brackets, bisection roots, eps values, and spread directly rather than importing the contested numbers. Independent arithmetic from the reported roots verifies eps=sqrt(mu*^2-m^2), mean_eps=1.681175930933, relative_spread=0.0144923716, and the m=0 anchor relative deviation, while the upstream open landmark/interpretive questions are outside this scoped claim.
 - **rationale:** The load-bearing step is a first-principles finite numerical computation in the runner, not a definition, renaming, external comparator, or numerical match to an imported calibrated value. The runner source contains no hard-coded expected collapse values and no helper imports; it computes the spectra and gates the brackets, spread, monotone trend, quadrature doubling, endpoint recomputation, and q=32 spot probe. Both cited authorities are retained_bounded, and the claim stays within sampled bounded scope rather than using their named open identifications.
+- **auditor confidence:** high
+
+### `d2_sign_boundary_tracks_landau_peierls_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D2_SIGN_BOUNDARY_TRACKS_LANDAU_PEIERLS_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D2_SIGN_BOUNDARY_TRACKS_LANDAU_PEIERLS_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** m=0 square-lattice tight-binding model at T=0.2, 0.3, 0.4; finite-field boundary at B=2*pi/24 compared with the B -> 0 Landau-Peierls curvature-determinant root within tolerance 2e-2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-022638-2a153bc5ec-d2_sign_boundary_tracks_land`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The full finite-field sign boundary eps*(T) and the Landau-Peierls curvature-determinant sign-change root mu_LP(T) agree within 2e-2 at each sampled T in {0.2, 0.3, 0.4}.  _(class `C`)_
+- **chain closes:** True — The runner constructs the q=24 Harper finite-field spectrum, the zero-field square-band spectrum, and the LP curvature-determinant integrand directly, then independently brackets and bisects the two sign roots. The reported deviations are all below 2e-2, and the displayed square-band Hessian determinant and Fermi-slope sign conventions check internally.
+- **rationale:** The load-bearing numerical agreement is produced by an actual spectral/quadrature computation rather than by hard-coded target roots or a cross-note import. The source note's displayed identities are consistent: for eps=-2t(cos kx+cos ky), eps_xx eps_yy - eps_xy^2 = 4t^2 cos kx cos ky, and f'(0,T) has the stated negative sign. The clean verdict is bounded to the disclosed sampled temperatures and finite B=2*pi/24 comparison; it does not establish a continuum-B or all-temperature theorem.
 - **auditor confidence:** high
 
 ### `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12`

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1487 |
+| Applied audit verdicts | 1488 |
 | Retained-grade rows, including boxed decorations | 1344 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 881 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1479 |
+| Unaudited rows | 1478 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 40 |
+| Audited conditional rows | 41 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 20 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1484 |
-| Ready rows | 42 |
+| Total pending rows | 1483 |
+| Ready rows | 41 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
 | Medium pending | 429 |
-| Leaf pending | 470 |
+| Leaf pending | 469 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`](../../docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md) - medium; unaudited
 - [`carrier_orbit_invariance_note_2026-05-03`](../../docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md) - medium; unaudited
 - [`clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08`](../../docs/CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12`](../../docs/D2_SIGN_BOUNDARY_MASS_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_sign_boundary_tracks_landau_peierls_bounded_theorem_note_2026-06-12`](../../docs/D2_SIGN_BOUNDARY_TRACKS_LANDAU_PEIERLS_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`d2_soft_band_truncation_also_closes_bounded_theorem_note_2026-06-12`](../../docs/D2_SOFT_BAND_TRUNCATION_ALSO_CLOSES_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
-- [`d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12`](../../docs/D3_TRUNCATED_CLOSURE_RECURS_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
+- [`d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12`](../../docs/D3_TRUNCATED_CLOSURE_RECURS_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`](../../docs/D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1519 |
-| Retained-grade rows, including boxed decorations | 1364 |
+| Applied audit verdicts | 1520 |
+| Retained-grade rows, including boxed decorations | 1365 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 899 |
+| Retained bounded rows | 900 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1447 |
+| Unaudited rows | 1446 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 50 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1452 |
-| Ready rows | 10 |
+| Total pending rows | 1451 |
+| Ready rows | 9 |
 | Cycle-break targets | 20 |
 | Critical pending | 327 |
 | High pending | 258 |
 | Medium pending | 429 |
-| Leaf pending | 438 |
+| Leaf pending | 437 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12`](../../docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md) - medium; unaudited
 - [`rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md) - medium; unaudited
 - [`rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12`](../../docs/RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12`](../../docs/RD_FIXEDNESS_IS_ARROW_INVARIANT_ON_THE_RETAINED_FLOW_FAMILY_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`record_prerecord_instrument_kernel_gate_2026-06-06`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md) - medium; unaudited
-- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - leaf; unaudited
+- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
+- [`teleportation_native_transport_theory_note`](../../docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -90,9 +90,9 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1590 descendants; score 134.636
 - `three_generation_observable_theorem_note` - critical; 1357 descendants; score 64.407
-- `observable_principle_from_axiom_note` - critical; 1279 descendants; score 62.822
-- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
-- `plaquette_self_consistency_note` - critical; 1358 descendants; score 51.408
-- `key_terminology` - critical; 1396 descendants; score 50.448
-- `minimal_axioms_2026-05-03` - critical; 1292 descendants; score 49.837
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1262 descendants; score 44.803
+- `observable_principle_from_axiom_note` - critical; 1280 descendants; score 62.823
+- `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
+- `plaquette_self_consistency_note` - critical; 1359 descendants; score 51.409
+- `key_terminology` - critical; 1397 descendants; score 50.449
+- `minimal_axioms_2026-05-03` - critical; 1293 descendants; score 49.838
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1263 descendants; score 44.804

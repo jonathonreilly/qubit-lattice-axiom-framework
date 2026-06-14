@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
         "gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "teleportation_resource_from_poisson_note",
         "within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12",
         "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
-        "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12"
+        "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
+        "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "204349a3459d20559a046bc549f518ae1e3bf5dea89374f6185841deb57a3776",
+      "note_hash": "3e0716108f27830e36a8e380026627896ca8dbb315f7b606bacc1d60b9db684e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3288 |
-| Applied audit verdicts | 1505 |
-| Retained-grade rows, including boxed decorations | 1356 |
+| Applied audit verdicts | 1506 |
+| Retained-grade rows, including boxed decorations | 1357 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 209 |
-| Retained bounded rows | 892 |
+| Retained bounded rows | 893 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1461 |
+| Unaudited rows | 1460 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 46 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1466 |
-| Ready rows | 24 |
+| Total pending rows | 1465 |
+| Ready rows | 23 |
 | Cycle-break targets | 20 |
 | Critical pending | 331 |
 | High pending | 254 |
 | Medium pending | 429 |
-| Leaf pending | 452 |
+| Leaf pending | 451 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_TOP_DOWN_INTEGRAL_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07`](../../docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12`](../../docs/HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md) - medium; unaudited
-- [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - leaf; unaudited
+- [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
+- [`koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12`](../../docs/KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3430 |
 | Critical nodes | 606 |
 | High nodes | 468 |
-| Medium nodes | 904 |
-| Leaf nodes | 1452 |
+| Medium nodes | 906 |
+| Leaf nodes | 1450 |
 
 Top load-bearing rows by graph score:
 

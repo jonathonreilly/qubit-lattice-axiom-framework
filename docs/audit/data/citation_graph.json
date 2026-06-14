@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "record_prerecord_instrument_kernel_gate_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13",
         "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
         "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
         "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08",
         "rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12",
         "rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12",
-        "record_prerecord_instrument_kernel_gate_2026-06-06"
+        "record_prerecord_instrument_kernel_gate_2026-06-06",
+        "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6983292b5eb4a072e744441077bffd12f98d630a1d2a550cb5e3936ab19ef7bd",
+      "note_hash": "191b4ee3f9b0d5f99718673428a4da2dc5de8c4fe8f826bdf2b1dd40d7f05613",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 866 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1512 |
+| unaudited | 1511 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
 | ~~audited_conditional~~ | 29 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -63,10 +63,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1307 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 47 |
-| `audited_failed` | 26 |
+| `audited_failed` | 27 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1829 |
+| `unaudited` | 1828 |
 
 | claim_type | count |
 |---|---:|
@@ -1544,6 +1544,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ckm_down_type_scale_convention_support_note_2026-04-22` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -20335,6 +20336,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given lambda^2 = alpha_s/n_pair and A^2 = n_pair/n_color, substitution forces A^2 lambda^2 = alpha_s/n_color, |V_cb|^2 = alpha_s^2/(n_pair n_color), and |V_ub|_0^2 = alpha_s^3(rho^2+eta^2)/(n_pair^2 n_color).  _(class `A`)_
 - **chain closes:** True — Inside the stated scope, every asserted identity follows by direct symbolic substitution from the hypotheses. The runner checks only class-A algebra and reports PASS=22, FAIL=0, matching the note's deliberately narrow claim boundary.
 - **rationale:** The scoped theorem is not claiming the input identities, a physical observable bridge, or numerical agreement; it only claims algebraic consequences conditional on explicit hypotheses. Those consequences close exactly by substitution, including the n_pair cancellation and the count-substituted forms. No hidden dependency is needed for this narrow claim because the upstream CKM/CP claims are excluded rather than consumed as authority.
+- **auditor confidence:** high
+
+### `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`
+
+- **Note:** [`work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Diagnostic finite-box runner readouts for the hydrogen level ratios and r0, the helium Hartree finite-box row, and the one-parameter Jastrow/VMC ratio only; no continuum-limit, absolute-eV, exact-helium, general multi-electron, or retained atomic-authority claim was audited.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-003249-9b346c527f-work_history.atomic.hydrogen`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The companion runners instantiate the finite-box scalar graph-Laplacian Coulomb operators, with the helium Hartree runner using the product-state formula E_var = 2 epsilon - E_J and the Jastrow runner using a VMC local-energy estimator, to produce the quoted hydrogen/helium readouts.  _(class `C`)_
+- **chain closes:** False — The packet closes source/cache visibility and the hydrogen finite-box readouts, but the helium Hartree energy formula does not close as the stated product-state expectation. With V_H solved from the one-electron density rho, the pair Coulomb integral is sum rho V_H, while the runner defines E_J = 0.5 sum rho V_H and subtracts only that half in E_var = 2 epsilon - E_J, so the quoted Hartree ratio and Jastrow-improvement baseline are not verified on their own terms.
+- **rationale:** The primary packet verifier and helper caches are present and SHA-pinned, so this is not a compute-required or runner-artifact case. The independent formula check finds a load-bearing factor-of-two error in the helium Hartree Coulomb-energy normalization. Because the source claim includes the helium Hartree upper-bound row and the Jastrow improvement relative to that baseline, the narrowed bounded claim does not close even under its diagnostic finite-box scope.
 - **auditor confidence:** high
 
 ### `work_history.ckm.cabibbo_bound_note`

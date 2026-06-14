@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 327,
-    "high": 258,
+    "high": 259,
     "leaf": 496,
-    "medium": 436
+    "medium": 434
   },
   "cycle_break_target_count": 20,
   "cycle_break_targets": [
@@ -9880,6 +9880,40 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+        "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+        "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
+        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+        "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py"
+      ],
+      "load_bearing_score": 6.892,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py",
+      "transitive_descendants": 20
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "a3_route5_no_proper_quotient_sharpened_obstruction_note_2026-05-08_r5",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18118,37 +18152,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "minimal_axioms",
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_atomic_hydrogen_lattice_companion.py",
-        "scripts/frontier_atomic_helium_hartree_companion.py",
-        "scripts/frontier_atomic_helium_jastrow_companion.py",
-        "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py"
-      ],
-      "load_bearing_score": 6.2,
-      "note_path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py",
-      "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18276,40 +18279,6 @@
       "ready": true,
       "runner_path": "scripts/cl3_chiral_body_diagonal_source.py",
       "transitive_descendants": 21
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
-        "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
-        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
-        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
-        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
-        "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
-        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
-        "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py"
-      ],
-      "load_bearing_score": 4.322,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py",
-      "transitive_descendants": 4
     },
     {
       "audit_independence_required": "any_non_self",
@@ -46013,6 +45982,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 65,
-  "total_pending": 1517
+  "ready_count": 64,
+  "total_pending": 1516
 }

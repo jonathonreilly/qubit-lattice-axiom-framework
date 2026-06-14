@@ -51190,10 +51190,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
@@ -98356,7 +98352,6 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "teleportation_resource_from_poisson_note",
         "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
@@ -98364,7 +98359,7 @@
         "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "de1b7e919d4a3f4b5a90307b3c60cbed0b421528411256fcf2b8905db145be44",
+      "note_hash": "462f74541f87fd24ce26d4929bc8a536f500b1ea97ce5807f40ea18514e2a8fd",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113129,7 +113124,7 @@
       "open_gate": 170,
       "positive_theorem": 615
     },
-    "edge_count": 12902,
+    "edge_count": 12901,
     "leaf_count": 1106,
     "node_count": 3434,
     "root_count": 1063,

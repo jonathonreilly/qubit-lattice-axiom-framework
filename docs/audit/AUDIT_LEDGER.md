@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 904 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1447 |
+| unaudited | 1446 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1353 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1764 |
+| `unaudited` | 1763 |
 
 | claim_type | count |
 |---|---:|
@@ -1535,6 +1535,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -19464,6 +19465,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For an arbitrary supplied physical two-qubit resource density matrix rho_RB, the fixed Bell-basis measurement with fixed Bob Pauli correction induces a Pauli channel whose weights are the Bell-basis diagonal overlaps p_g=<beta_g|rho_RB|beta_g>; hence the identity entanglement fidelity is p_00=<Phi+|rho_RB|Phi+> and the qubit average fidelity is F_avg=(1+2 p_00)/3, giving the fixed-protocol threshold p_00>1/2 for beating 2/3.  _(class `C`)_
 - **chain closes:** True — Within the stated fixed protocol, the note supplies the algebraic channel reduction and the completed runner independently implements the same three-qubit protocol, exact Choi average fidelity, threshold brackets, no-record Bob diagnostics, and trace-preservation checks. The reported formula error is numerical roundoff scale and all acceptance gates pass. The broader native resource-preparation and non-ideal operational questions are explicitly outside scope rather than hidden premises for this bounded theorem.
 - **rationale:** The claim is narrowly bounded and does not overstate beyond the fixed supplied-resource protocol. The load-bearing formula and threshold follow from the stated teleportation-channel derivation and are corroborated by the completed runner across representative resource families and arbitrary random density matrices. No external comparator, tuned numerical match, unsupported physical identification, or unclosed dependency is needed for the scoped conclusion.
+- **auditor confidence:** high
+
+### `teleportation_resource_from_poisson_note`
+
+- **Note:** [`TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Bounded offline extraction of a retained-axis logical two-qubit Bell resource on 1D N=8 and 2D 4x4 Poisson/CHSH cases, with native preparation/readout and apparatus realization left open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-162808-afbae02ff9-teleportation_resource_from_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Poisson/CHSH small-surface ground states, after tracing cells and spectator tastes, contain a high-fidelity retained-axis logical Bell resource relative to the null case under the last-taste-bit identification.  _(class `C`)_
+- **chain closes:** False — The runner and helper sources genuinely compute finite Hamiltonian ground states, trace to the retained logical bits, and check resource diagnostics; RALA supplies retained-bounded finite operator algebra. The chain does not close to a physical deterministic teleportation resource because no native preparation/readout or apparatus theorem realizes the offline retained-axis carrier.
+- **rationale:** The primary and helper code instantiate the finite lattice Hamiltonian, diagonalize it, reduce the state to the retained logical qubits, and compute the reported Bell/resource diagnostics rather than merely printing constants. The retained-axis algebra authority is retained_bounded and supports the finite logical-carrier convention. However, the source note explicitly preserves the native preparation/readout and apparatus theorem as an open bridge, and the operator-consistent end-to-end authority is meta/conditional support rather than retained closure.
+- **open / conditional deps cited:**
+  - `TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md`
 - **auditor confidence:** high
 
 ### `teleportation_retained_axis_operator_algebra_closure_note`

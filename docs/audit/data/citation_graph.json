@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "d2_sign_boundary_tracks_landau_peierls_bounded_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
         "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
         "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
         "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
         "carrier_orbit_invariance_note_2026-05-03",
         "clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08",
-        "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12"
+        "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12",
+        "d2_sign_boundary_tracks_landau_peierls_bounded_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c5ad069248972ac7af362bd68f2a63f0f5a98f913c8a4f73a07da44b6e0b94c3",
+      "note_hash": "33d251d46479a793bc768f25f2779dc366b1319b5880c1d1f321385354021207",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -112941,7 +112941,7 @@
       "positive_theorem": 616
     },
     "edge_count": 12876,
-    "leaf_count": 1106,
+    "leaf_count": 1105,
     "node_count": 3430,
     "root_count": 1064,
     "runners_with_path": 3010

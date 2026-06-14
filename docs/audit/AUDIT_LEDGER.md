@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 881 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 40 |
-| unaudited | 1481 |
+| unaudited | 1480 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1327 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1798 |
+| `unaudited` | 1797 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 593 |
 | `high` | 467 |
-| `medium` | 865 |
-| `leaf` | 1363 |
+| `medium` | 864 |
+| `leaf` | 1364 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 20
@@ -1496,6 +1496,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -18297,6 +18298,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substitute N_W = (N_color + 1) * N_gen, n_S^complex_components = 2, T(F) = 1/2, and C_2(adj SU(2)) = N_pair into the stated one-loop beta formula to obtain b_2 = (11/3) N_pair - (1/3)(N_color + 1)N_gen - 1/6.  _(class `A`)_
 - **chain closes:** True — Given the scoped inputs, the closed form and framework value follow by direct rational arithmetic. The cited one-hop authorities in the packet are retained-grade or retained_bounded, and the runner confirms the algebra symbolically.
 - **rationale:** The load-bearing step is a genuine algebraic identity check over the stated inputs, not a renaming, numerical fit, or comparator match. The runner source actually constructs the symbolic expression from the stated beta formula and performs exact sympy simplifications plus rational framework substitution. No missing helper source or hard-coded-only pass path is present.
+- **auditor confidence:** high
+
+### `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional fixed-lattice SU(3) Wilson-axis reduction: if no second-order bulk critical point occurs for 0 < beta <= 6 and the standard Wilson gap/correlation-length setting is supplied, then m(6) > 0.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260614-020652-fa7fcff55b-su3_beta6_gap_bulk_criticali`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In infinite volume the gap is m(beta)=1/xi(beta), so a zero gap at or before beta=6 is exactly a divergent correlation length on that Wilson axis.  _(class `A`)_
+- **chain closes:** False — The conditional implication is coherent, but the restricted packet does not prove the no-second-order-bulk-critical-point premise. It also does not supply a retained Wilson transfer-matrix/strong-coupling positive-gap bridge that reaches beta=6.
+- **rationale:** The source note correctly firewall-labels the result as an open-gate conditional reduction rather than an unconditional beta=6 gap theorem. The runner computes bounded SU(3) one-plaquette, strong-coupling diagnostic, positive-kernel toy, guardrail, and comparator-label checks, but it does not prove the no-critical-point premise or derive the Wilson transfer-matrix gap bridge from the provided authorities. The minimal axiom and primitive material grants no Wilson action, coupling convention, transfer matrix, physical scale import, or all-coupling confinement theorem. Therefore the audited claim remains conditional on an explicit missing physics bridge.
 - **auditor confidence:** high
 
 ### `su3_bridge_pr525_flaw_fix_note_2026-05-05`

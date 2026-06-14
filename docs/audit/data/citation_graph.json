@@ -51082,10 +51082,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05"
     },
     {
@@ -51107,6 +51103,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -98186,16 +98186,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12",
         "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05",
         "signed_gravity_aps_locked_source_action_proposal_note",
         "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
         "gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12",
         "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
-        "gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12"
+        "gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12",
+        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "562dcbe66dbbaa0d9ea4ce59218357094f44b1e4c490286a63165b1f16b284ee",
+      "note_hash": "29ff2b8e74202764b299b6b88eb3b1d311fddc14331d59fcdc2725b7d738423f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

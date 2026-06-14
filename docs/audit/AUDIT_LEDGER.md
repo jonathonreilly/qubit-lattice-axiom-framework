@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 210 |
-| **retained_no_go** | 205 |
+| **retained_no_go** | 206 |
 | **retained_bounded** | 867 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 39 |
-| unaudited | 1508 |
+| unaudited | 1507 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1308 |
+| `audited_clean` | 1309 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1825 |
+| `unaudited` | 1824 |
 
 | claim_type | count |
 |---|---:|
@@ -115,7 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1346 | 40.90 | `audited_failed` | ~~audited_failed~~ |
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1388 | 39.44 | `audited_clean` | **retained** |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 1307 | 38.85 | `audited_clean` | **retained_no_go** |
-| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1286 | 38.83 | `audited_clean` | **retained_bounded** |
+| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1285 | 38.83 | `audited_clean` | **retained_bounded** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1375 | 36.93 | `audited_clean` | **retained** |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1262 | 36.80 | `unaudited` | unaudited |
 | 19 | `three_generation_structure_note` | bounded_theorem | critical | 1304 | 35.85 | `audited_clean` | **retained_bounded** |
@@ -717,6 +717,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dkd_berry_spectator_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -10036,6 +10037,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For each listed alpha_i = q_i*pi with q_i a nonzero rational, any rational c satisfying c*alpha_i = 2/9 would make pi = 2/(9*c*q_i) rational, so no such rational c exists; c=0 gives 0 != 2/9.  _(class `A`)_
 - **chain closes:** True — Within the bounded six-value scope, the proof needs only q_i != 0, rational arithmetic, and pi irrational/transcendental: a rational multiple of pi cannot equal the nonzero rational 2/9. The retained three-generation dependency supplies the d=3 positional value used in the listed coefficients, and the retained no-go is only positional for the bridge residual rather than a forcing input.
 - **rationale:** The audited result is a class-A separation theorem over six stated rational multiples of pi, and the independent calculation closes by the elementary fact Q*pi intersects Q only at 0. The cached runner computes the exact rational/pi forms and no-rational-solution checks with PASS=146, FAIL=0 under SHA 73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275. No-go discipline is satisfied only because the verdict is bounded: it does not ratify an exhaustive native-unit list, a radian-bridge closure, or the broader Koide/Brannen programme. A non-load-bearing admitted-context sentence about arbitrary polynomials in pi is broader than needed; the clean audit relies only on the correct linear q*pi case.
+- **auditor confidence:** high
+
+### `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05`
+
+- **Note:** [`KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md`](../../docs/KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded algebraic route-pruning on the current A_min C3-circulant matrix surface: the tested Dirac/L-R coupling class is sign-blind and Berry-flat and therefore does not derive the signed-root r=1/2 branch; physical readout-to-branch selection remains open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-4d9818d50a-koide_dirac_mass_forces_r_on`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the current A_min C3-circulant matrix surface, D^2 = diag(MM†, M†M) makes the Dirac readout singular-value/sign-blind, while M(b)⊗σ_+ has b-independent Fourier generation modes and hence a flat generation bundle.  _(class `A`)_
+- **chain closes:** True — The determinant sign, D^2 block identity, fixed Fourier eigenbasis, and signed-vs-singular Koide contrast follow from the supplied matrix algebra and retained one-hop authorities. The chain closes only for the narrowed algebraic wall, not for any physical branch-selection theorem.
+- **rationale:** Independent algebra checks confirm det([[0,M],[M†,0]]) = -|det M|^2 for three generations, D^2 is the singular-value block square, and M as a polynomial in the cyclic shift has b-independent Fourier generation eigenvectors. The no-go discipline gate passes only because the note is explicitly bounded: Weyl readout, signed Hermitian readout, off-generation/corner realizations, and READOUT_TO_BRANCH_SELECTION_BRIDGE remain open. No external comparator, tuned value, or physical mass bridge is used as a proof input.
 - **auditor confidence:** high
 
 ### `koide_dkd_berry_spectator_note_2026-05-31`

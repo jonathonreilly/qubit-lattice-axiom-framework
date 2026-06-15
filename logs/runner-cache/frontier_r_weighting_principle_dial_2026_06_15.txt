@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/frontier_r_weighting_principle_dial_2026_06_15.py
+runner_sha256: a4303e4bcea21b097054fb2f6d37457aed213f2c82e7cf74f0552831d4f9a1b2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: cyclic shift has order three
+PASS: singlet projector is the +2 eigenspace
+PASS: doublet projector is the -1 eigenspace
+PASS: projectors are complete and orthogonal with ranks 1 and 2
+PASS: dimension weighting computes r=1 and Q=1
+PASS: equal-sector weighting computes r=1/2 and Q=2/3
+PASS: the two weighting principles give different r
+PASS: dimension state realizes the declared block weights
+PASS: equal-sector state realizes the declared block weights
+PASS: record map conserves both block weights on random states
+PASS: non-block-diagonal unitary control changes a block weight
+PASS: firewall keeps r=1 and r=1/2 as valid map outputs
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

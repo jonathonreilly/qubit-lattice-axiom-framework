@@ -1,0 +1,16 @@
+loop_id: flavor-carrier-layer-a-split-20260615
+branch: physics-loop/flavor-carrier-layer-a-split-20260615
+base: origin/main
+status: review_pr_ready
+artifact_role: conditional_split_repair
+target_parent: docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md
+split_note: docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md
+split_runner: scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py
+audit_scope:
+  mode: source_repair_only
+  applies_audit_verdicts: false
+  edits_audit_ledgers: false
+repair_summary:
+  - split clean Layer-A momentum-carrier theorem into its own bounded note
+  - added finite translation/BZ runner with TOTAL PASS=10 FAIL=0
+  - left hw=1 physical locus bridge conditional in parent packet

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 914 |
+| **retained_bounded** | 915 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1511 |
+| unaudited | 1510 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1348 |
+| `audited_clean` | 1349 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1828 |
+| `unaudited` | 1827 |
 
 | claim_type | count |
 |---|---:|
@@ -100,7 +100,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1009 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
@@ -1107,6 +1107,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15663,6 +15664,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The axiom's "qubit" reading selects k = 1 via the standard QI definition of a qubit as the minimal faithful complex irreducible M_2(C)-module.  _(class `F`)_
 - **chain closes:** True — The conclusion follows if the word "qubit" in the accepted Quantum axiom is read with the asserted standard QI meaning. The algebraic multiplicity statement for M_2(C) is standard and the minimal faithful case is indeed one copy.
 - **rationale:** The mathematical classification V ~= rho_std^{oplus k} supports that the minimal faithful M_2(C)-module has k = 1, and the cited axiom is an accepted premise. However, the load-bearing move is not a first-principles derivation from the operator algebra alone; it is the semantic identification of the axiom term "qubit" with the minimal two-dimensional carrier. Under the rubric, merely re-reading an accepted premise's wording or asserting an identity between an existing axiom term and a formal multiplicity selection is class F rather than clean class C.
+- **auditor confidence:** high
+
+### `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04`
+
+- **Note:** [`QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md`](../../docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under the stated unitary qubit-link connection convention and a Pauli frame on C^2, the connection algebra has u(2)=su(2)⊕u(1) form and a single qubit fiber has no faithful native su(3) color algebra.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-213923-9258a6ca09-qubit_link_u2_connection_alg`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Conditioned on a unitary C^2-to-C^2 link convention, the anti-Hermitian endomorphism algebra is span_R{iI_2,iσ_1,iσ_2,iσ_3}=u(2)=su(2)⊕u(1), whose real dimension 4 is too small for a faithful 8-dimensional su(3) embedding.  _(class `A`)_
+- **chain closes:** True — The cited retained/accepted inputs supply the C^2 qubit carrier and Pauli su(2) action; the remaining step is standard finite-dimensional matrix Lie algebra. The link-connection convention is part of the bounded claim scope, not an unscoped conclusion.
+- **rationale:** The runner source performs actual finite-dimensional Pauli, rank, centrality, Casimir, and firewall checks rather than merely printing pass lines. Independent inspection gives the same algebra: u(2) has real basis iI_2 and iσ_i, decomposes into central u(1) plus traceless su(2), and cannot contain a faithful 8-real-dimensional su(3) subalgebra. The result remains bounded to the stated unitary link-connection convention and does not derive electroweak physics or color.
 - **auditor confidence:** high
 
 ### `r_base_group_theory_derivation_theorem_note_2026-04-24`

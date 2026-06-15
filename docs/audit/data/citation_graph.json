@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
         "action_normalization_note",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
         "su3_adjoint_casimir_theorem_note_2026-05-02",
         "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
-        "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10"
+        "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
+        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cfcb211a37802345d2e2be329a6852c45f68568eae1fe9fa7ba708085b2d3dcb",
+      "note_hash": "4b4e5d13b730384b96ebb122b3864973b59741bab8bff48166c662e6b02a9d4f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

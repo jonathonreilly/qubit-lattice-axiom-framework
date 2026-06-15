@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py
+runner_sha256: 1d6f28633e8b5ba3b760af2ec03a1b18b55003923f3ba6b0218207f099db7c87
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
 === Pre-record qubit surface ===
 [PASS] Q1 pre-record state is normalized
 [PASS] Q2 density matrix has trace one
@@ -56,3 +64,6 @@
 === Scorecard ===
 PASS=29 FAIL=0
 FINDING: pre-record qubits carry predictive weights; record events write one realized label; post-record dynamics acts on information tokens/counts. Probabilities re-enter as predictive or ensemble states, not as the individual durable record.
+
+----- stderr -----
+

@@ -1,0 +1,24 @@
+loop: record-firewall-runner-registration-20260615
+status: ready_for_review
+goal: "Make the Record classicalization dynamics firewall note audit-runnable by registering its existing exact runner and repairing corrupt runner-cache artifacts."
+target_status: bounded-support
+base: origin/main@c5a380aa801a160348c02afd7d84e0b6a64e0807
+branch: physics-loop/record-firewall-runner-registration-20260615
+current_surface_status: bounded_theorem source note; audit verdict remains independent
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: record_classicalization_dynamics_firewall_2026-06-05
+target_blocker_text: "Generated audit graph had runner_path null for the note and cached_runner_output reported corrupt caches for both cited runners."
+files_touched:
+  - docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md
+  - logs/runner-cache/frontier_record_typing_firewall_exact_2026_06_05.txt
+  - logs/runner-cache/frontier_record_classicalization_dynamics_firewall_2026_06_05.txt
+  - .claude/science/physics-loops/record-firewall-runner-registration-20260615/
+verification:
+  - "python3 docs/audit/scripts/build_citation_graph.py"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_record_typing_firewall_exact_2026_06_05.py"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+pr_status: branch_package_ready
+next_exact_action: "Open PR and let the independent audit/review lane regenerate audit outputs."
+stop_condition: "PR opened with source note/caches/loop pack only; generated audit outputs restored before commit."

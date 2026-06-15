@@ -1,0 +1,22 @@
+loop: mirror-chokepoint-runner-registration-20260615
+status: ready_for_review
+goal: "Register the mirror chokepoint note's existing load-bearing primary runner for audit extraction."
+target_status: bounded-support
+base: origin/main@c5a380aa801a160348c02afd7d84e0b6a64e0807
+branch: physics-loop/mirror-chokepoint-runner-registration-20260615
+current_surface_status: retained_bounded in generated audit state; source note remains bounded finite diagnostic
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: mirror_chokepoint_note
+target_blocker_text: "The retained-bounded mirror row had runner_path null because the load-bearing runner label used parenthesized text not recognized by the parser."
+files_touched:
+  - docs/MIRROR_CHOKEPOINT_NOTE.md
+  - .claude/science/physics-loops/mirror-chokepoint-runner-registration-20260615/
+verification:
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/mirror_chokepoint_joint.py"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/mirror_chokepoint_note_certificate_runner_2026_05_09.py"
+  - "python3 docs/audit/scripts/build_citation_graph.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+pr_status: branch_package_ready
+next_exact_action: "Open PR and let the independent audit/review lane regenerate generated audit state."
+stop_condition: "PR opened with source note and loop pack only; generated outputs restored."

@@ -445,9 +445,12 @@ APS bridge audit:
 APS-locked source action proposal:
 
 - [`../scripts/signed_gravity_aps_locked_source_action_proposal.py`](../scripts/signed_gravity_aps_locked_source_action_proposal.py)
-  and
-  [`SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md`](SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md)
-  define the smallest action that would close the APS source/response gap:
+  and `SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md` define the
+  smallest action that would close the APS source/response gap. The note name is
+  intentionally not a markdown link here: this backlog lists a downstream
+  artifact, while the proposal cites the APS/Wald/Gauss bridge audit as its
+  source lineage. Making the backlog depend on the proposal would invert that
+  direction and recreate a source-graph cycle.
 
   ```text
   S_int[Phi,psi,Y] = - chi_eta(Y) M_phys sum_x |psi_x|^2 Phi_x

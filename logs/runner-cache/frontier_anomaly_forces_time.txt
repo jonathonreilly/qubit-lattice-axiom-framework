@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time.py
-runner_sha256: 321253fbdf50f88dc03aabf0bf50dd86dc705d2a646535c166fec41a8967e5ec
+runner_sha256: c7458bca0787097110a92ecb9da1992efc0bc56fa5d2469962ec444b782394b4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.75
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 ========================================================================
@@ -12,7 +12,7 @@ bounded theorem runner: computed content vs declared imports
 ========================================================================
 
 Declared imports (never computed here): P-ABJ, P-HY, P-COMP, P-REC,
-B-AXIS, and the cited single-clock theorem clauses. See the paired note.
+and B-AXIS. See the paired note.
 
 ========================================================================
 STEP 0: ABELIAN EIGENVALUE SURFACE (recompute cited construction)
@@ -219,26 +219,24 @@ STEP 5: LATTICE INDEX MECHANISM (2D Wilson/overlap, U(1) flux)
   implication for the 4D chiral gauge theory remains P-ABJ (declared).
 
 ========================================================================
-STEP 6: COMPOSITION WITH SINGLE-CLOCK CODIMENSION-1 EVOLUTION
+STEP 6: COMPOSITION WITH LOCAL B-AXIS CLOCK PREMISE
 ========================================================================
 
-  Imported license (cited internal theorem, class B input):
-  AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03
-    unique-generator clause: exactly one generator H of a strongly
-         continuous one-parameter unitary group U(t) = exp(-itH) on H_phys;
-    axis-conditional clause: under B-AXIS, exactly one admitted
-         axis/transfer construction and no second commuting clock factor.
-  NON-CIRCULARITY: B-AXIS is inherited from the cited single-clock
-  source and contains no anomaly input; this note never defines time
-  via the anomaly.
+  Declared bounded premise (class B input):
+    B-AXIS = one supplied blocked time step, one declared evolution
+    axis/transfer construction, and no admitted independent commuting
+    transfer factor as a second clock.
+  NON-CIRCULARITY: B-AXIS contains no anomaly input; this note never
+  defines time via the anomaly. The single-clock note remains provenance
+  context in prose only, not a runner input or citation-graph dependency.
 
-  [PASS][B] source sync: anomaly note consumes B-AXIS, not the withdrawn unique-RP-axis claim  (SC cap is axis-conditional in the paired source note)
-  [PASS][B] source sync: cited single-clock note declares axis selection as a premise  (no new axis-selection theorem is introduced here)
-  [PASS][B] imported d_t <= 1 (single-clock clauses) intersected with computed odd set gives {1}  (lower bound computed in Steps 1-4; upper bound imported from SC conditional on B-AXIS)
+  [PASS][B] source sync: anomaly note declares B-AXIS locally, not the withdrawn unique-RP-axis claim  (cap is conditional on B-AXIS in this bounded source note)
+  [PASS][B] source sync: no markdown dependency edge to the single-clock note remains  (plain-code provenance references do not enter the citation graph)
+  [PASS][B] declared B-AXIS d_t <= 1 cap intersected with computed odd set gives {1}  (lower bound computed in Steps 1-4; upper bound is local declared B-AXIS)
   [PASS][B] conclusion: d_t = 1, total dimension 3 + 1 = 4, signature (3,1)
 
   Corroborating dispersion check (cross-reference Craig-Weinstein 2009 /
-  Tegmark 1997; NOT load-bearing — the exclusion above is by the single-clock clauses):
+  Tegmark 1997; NOT load-bearing — the exclusion above is by B-AXIS):
   [PASS][A] d_t = 2: codim-1 slice evolution has exponentially growing modes  (242/2401 integer modes have omega_2^2 < 0 (corroborating))
   [PASS][A] d_t = 1: all slice modes oscillatory (omega^2 = k^2 >= 0)  (standard hyperbolic Cauchy behaviour (corroborating))
 
@@ -267,10 +265,10 @@ CLASS BREAKDOWN: A=47 B=4 C=36 D=0
 TOTAL: PASS=87 FAIL=0
 ========================================================================
 
-VERDICT: bounded anomaly/single-clock bridge verified. Computed: exact
+VERDICT: bounded anomaly/B-AXIS bridge verified. Computed: exact
 anomaly arithmetic, Clifford parity law, staggered grading, lattice
 index mechanism, and both falsification legs. Imported (declared):
-P-ABJ, P-HY, P-COMP, P-REC, B-AXIS, and single-clock theorem clauses.
+P-ABJ, P-HY, P-COMP, P-REC, and B-AXIS.
 Conclusion within the declared boundary: d_t = 1, spacetime signature (3,1).
 
 ----- stderr -----

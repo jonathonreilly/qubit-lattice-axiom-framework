@@ -51474,7 +51474,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_color_automorphism_theorem"
+      "to": "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
     },
     {
       "from": "repo.front_door_status",
@@ -98990,7 +98990,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "cl3_color_automorphism_theorem",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
         "lorentz_kernel_positive_closure_note",
@@ -99000,7 +99000,7 @@
         "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bbdbb09cc35f620934ed1b8417509f2c6e3c4acc1d9acedc62680da6c29f0e14",
+      "note_hash": "23e45e57b2aa36f6ccf87acbf484c050a4eae9e79496f5beb566e0e401fc721b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

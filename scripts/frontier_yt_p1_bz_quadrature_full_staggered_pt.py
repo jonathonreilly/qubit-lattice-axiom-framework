@@ -6,15 +6,17 @@ continuum subtraction).
 
 Status
 ------
-Retained full-staggered-PT 4D BZ quadrature of the four canonical-surface
-BZ integrals that feed the Rep-A/Rep-B three-channel decomposition
+Source-side full-staggered-PT 4D BZ quadrature certificate for the four
+canonical-surface BZ integrals that feed the Rep-A/Rep-B three-channel
+decomposition
 
     Delta_R^ratio = (alpha_LM / (4 pi)) * [ C_F * Delta_1
                                           + C_A * Delta_2
                                           + T_F n_f * Delta_3 ]
 
 on the retained Cl(3) x Z^3 Wilson-plaquette + 1-link staggered-Dirac
-tadpole-improved canonical surface. Tightens the prior schematic-integrand
+tadpole-improved canonical surface. Independent audit owns any retained
+effect for this runner's output. Tightens the prior schematic-integrand
 ~25% per-channel systematic to ~5% per-channel systematic by upgrading:
 
   (i)   the staggered fermion propagator from squared-magnitude form
@@ -322,7 +324,7 @@ def integrate_I_v_scalar_full(N: int, m_sq: float = M_SQ_IR) -> float:
     Upgrade over schematic: explicit continuum subtraction (MSbar
     prescription) rather than ad-hoc taste division alone; proper
     kinematic form factor with full Kawamoto-Smit point-split cos^2.
-    The N_TASTE division is retained (literature-standard staggered
+    The N_TASTE division is kept (literature-standard staggered
     matching convention). Grid convergence expected at ~1% (vs prior
     schematic ~3% at N=48).
     """
@@ -399,7 +401,7 @@ def integrate_I_SE_gluonic_full(N: int, m_sq: float = M_SQ_IR) -> float:
     no taste structure). The integral directly gives the
     per-color-channel matching coefficient.
 
-    Upgrade over schematic: explicit gauge-link cos^2 factor retained;
+    Upgrade over schematic: explicit gauge-link cos^2 factor kept;
     tadpole improvement u_0^2 applied consistently; the continuum
     subtraction captures the same UV-log structure as before but with
     proper kinematic normalization. Grid convergence excellent at
@@ -454,7 +456,7 @@ def integrate_I_SE_fermion_full(N: int, m_sq: float = M_SQ_IR) -> float:
         contribution to beta_0)
 
     Upgrade over schematic: the full gauge-link cos^2 kinematic factor
-    is now retained; the N_TASTE^2 normalization is kept from the
+    is now explicit; the N_TASTE^2 normalization is kept from the
     schematic (correct per-flavor convention); the continuum
     subtraction properly captures the MSbar UV-log structure.
     """
@@ -1033,7 +1035,7 @@ def main() -> int:
     print("  KEY OUTCOME: full staggered-PT confirms the master assembly's")
     print("  -3.27% central within the tightened ~1% band, and the prior")
     print("  schematic's -3.29% within 2 sigma. The three-channel partial")
-    print("  cancellation structure is retained: C_F and T_F n_f channels")
+    print("  cancellation structure is preserved: C_F and T_F n_f channels")
     print("  positive, C_A channel dominantly negative.")
     print()
 

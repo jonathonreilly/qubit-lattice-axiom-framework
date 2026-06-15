@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1482 |
+| Applied audit verdicts | 1483 |
 | Retained-grade rows, including boxed decorations | 1379 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 915 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1510 |
+| Unaudited rows | 1509 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 18 |
+| Audited conditional rows | 19 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1512 |
-| Ready rows | 77 |
+| Total pending rows | 1511 |
+| Ready rows | 76 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
-| High pending | 284 |
+| High pending | 283 |
 | Medium pending | 466 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`action_normalization_note`](../../docs/ACTION_NORMALIZATION_NOTE.md) - high; unaudited
 - [`two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05`](../../docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md) - high; unaudited
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
 - [`wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08`](../../docs/WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - high; unaudited
 - [`tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10`](../../docs/TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md) - high; unaudited
 - [`registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`](../../docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md) - high; unaudited
+- [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,12 +62,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 159 |
-| high | `unaudited` | 159 |
+| high | `unaudited` | 158 |
 | medium | `unaudited` | 98 |
 | critical | `open_gate` | 3 |
+| high | `audited_conditional` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
-| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
 | critical | `audited_renaming` | 1 |
@@ -94,5 +94,5 @@ Top load-bearing rows by graph score:
 - `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
 - `plaquette_self_consistency_note` - critical; 1008 descendants; score 51.479
 - `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
-- `key_terminology` - critical; 1119 descendants; score 47.629
+- `key_terminology` - critical; 1120 descendants; score 47.631
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 890 descendants; score 45.299

@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 906 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1448 |
+| Unaudited rows | 1447 |
 | Retained-pending-chain rows | 19 |
 | Audited conditional rows | 51 |
 | Audited renaming rows | 31 |
@@ -38,17 +38,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Cycle-break targets | 19 |
 | Critical pending | 333 |
 | High pending | 254 |
-| Medium pending | 424 |
-| Leaf pending | 442 |
+| Medium pending | 427 |
+| Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; unaudited
+- [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; audit_in_progress
 - [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - critical; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_SYMMETRIZED_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
-- [`gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOWED_BOND_DEEP_LIMIT_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
-- [`product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12`](../../docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_SYMMETRIZED_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOWED_BOND_DEEP_LIMIT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12`](../../docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,16 +81,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3437 |
 | Critical nodes | 606 |
 | High nodes | 468 |
-| Medium nodes | 899 |
-| Leaf nodes | 1464 |
+| Medium nodes | 902 |
+| Leaf nodes | 1461 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1591 descendants; score 136.137
+- `minimal_axioms` - critical; 1592 descendants; score 136.138
 - `three_generation_observable_theorem_note` - critical; 1352 descendants; score 64.402
 - `observable_principle_from_axiom_note` - critical; 1275 descendants; score 62.817
 - `graph_first_su3_integration_note` - critical; 1419 descendants; score 60.972
-- `plaquette_self_consistency_note` - critical; 1359 descendants; score 51.909
+- `plaquette_self_consistency_note` - critical; 1360 descendants; score 51.910
 - `key_terminology` - critical; 1393 descendants; score 50.445
 - `minimal_axioms_2026-05-03` - critical; 1289 descendants; score 49.833
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1258 descendants; score 44.798

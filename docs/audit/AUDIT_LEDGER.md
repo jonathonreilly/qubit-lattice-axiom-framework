@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 212 |
+| **retained** | 213 |
 | **retained_no_go** | 206 |
 | **retained_bounded** | 909 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
 | unaudited | 1526 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 29 |
@@ -58,8 +57,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 1337 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 1338 |
 | `audited_conditional` | 12 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 25 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `quark_route2_exact_time_coupling_note_2026-04-19` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1100,6 +1098,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `quark_route2_exact_time_coupling_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -15387,6 +15386,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The exact carrier and exact endpoint algebra do not yet fix the readout map uniquely; the missing entry is beta_E / alpha_E.  _(class `A`)_
 - **chain closes:** True — The source note and cached runner exhibit an explicit one-parameter reduced family P(rho_E). The two exact maps P(0) and P(21/4) agree on the shell E normalization but differ on the center E lift, so the stated carrier/endpoint constraints do not uniquely determine rho_E.
 - **rationale:** The audited claim is a narrowly scoped no-go/obstruction, not a positive derivation of the target Route-2 readout theorem. The runner’s 11 completed PASS checks are algebraic consistency and non-uniqueness checks: it verifies the restricted carrier columns, the endpoint-ratio identities, the live mismatch to the target chain, and the explicit non-unique reduced family after granting T-side candidates. Because the obstruction follows by exact algebra from the displayed family and does not depend on timeout, tuned comparator matching, or a hidden physical readout bridge, the scoped no-go closes.
+- **auditor confidence:** high
+
+### `quark_route2_exact_time_coupling_note_2026-04-19`
+
+- **Note:** [`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](../../docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The audited claim is the restricted Route-2 result that an exact conditional family Xi_P(t;c) exists for any supplied admissible P_R, and that the retained readout-map non-uniqueness induces a current-carrier time-coupling obstruction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-201020-d13b40fb82-quark_route2_exact_time_coup`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For P(rho_E) = [[1,0,rho_E,0],[0,-2,0,2]], the E-shell column is independent of rho_E while the E-center column carries the factor 1 + rho_E/6, so rho_E=0 and rho_E=21/4 give different Xi_P on the same nonzero slice backbone.  _(class `A`)_
+- **chain closes:** True — The supplied retained_no_go readout authority gives the restricted carrier columns and the non-unique reduced readout family. Direct multiplication gives identical E-shell readout and different E-center readout, and tensoring with exp(-t Lambda_R)u_* preserves the ambiguity because the slice factor is nonzero.
+- **rationale:** The primary runner actually constructs the Schur DtN slice backbone and checks the transfer/semigroup properties rather than merely printing constants. The load-bearing obstruction is algebraic over the retained readout-map no-go: P(rho_E) maps E-shell to the same vector and E-center to 1 + rho_E/6, so two admissible maps produce distinct time-coupled tensors on the same backbone. The clean scope is narrow: it establishes non-uniqueness on the current restricted readout-driven carrier, not an absolute impossibility of a future theorem deriving the missing readout entry.
 - **auditor confidence:** high
 
 ### `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28`

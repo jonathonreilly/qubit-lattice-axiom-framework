@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py
-runner_sha256: cfc3daed1a3e91e155f9d4d4fec23fa323c072a3a579d762f63da487163572de
+runner_sha256: 48edf8c8d72fc2c643f9a10bb4d92df6c2420d98d25dd24bca52e1f8e4aa5cf0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 31.04
+elapsed_sec: 11.53
 status: ok
 ----- stdout -----
 ========================================================================================

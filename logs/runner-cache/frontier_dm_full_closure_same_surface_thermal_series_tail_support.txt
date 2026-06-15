@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py
-runner_sha256: adc3651c6c053516bd80c8b8af54ea5fc0926272b667adc076ae6e777d0e8bc4
+runner_sha256: 1524f80f3aa133bc9f8850770d0208b82e0d03d3b08857f9eba407e6ea988cb6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 53.85
+elapsed_sec: 19.69
 status: ok
 ----- stdout -----
 ========================================================================================

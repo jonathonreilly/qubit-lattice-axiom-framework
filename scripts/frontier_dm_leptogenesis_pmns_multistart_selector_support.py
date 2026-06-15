@@ -31,6 +31,8 @@ from scipy.optimize import differential_evolution
 
 import frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem as stat
 
+AUDIT_TIMEOUT_SEC = 600
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 

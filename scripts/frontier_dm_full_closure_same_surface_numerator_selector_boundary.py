@@ -50,6 +50,8 @@ from dm_full_closure_minimal_reduced_cycle_extension_map_common import (
 )
 from dm_full_closure_same_surface_thermal_support_common import certified_same_surface_ratio_bounds
 
+AUDIT_TIMEOUT_SEC = 120
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 

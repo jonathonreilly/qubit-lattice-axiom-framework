@@ -35,6 +35,8 @@ import frontier_dm_leptogenesis_pmns_multistart_selector_support as selector
 import frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem as stat
 from frontier_dm_leptogenesis_pmns_projector_interface import canonical_h
 
+AUDIT_TIMEOUT_SEC = 120
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 

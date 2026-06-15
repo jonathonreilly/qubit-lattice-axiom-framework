@@ -23,6 +23,8 @@ except ImportError:
     print("ERROR: scipy required. pip install scipy")
     sys.exit(1)
 
+AUDIT_TIMEOUT_SEC = 120
+
 
 # ===========================================================================
 # Poisson solver (from self_consistent_field_equation)

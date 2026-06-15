@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_confinement_string_tension.py
-runner_sha256: db7c178dfd194026d61d06c5f29644b3ad9ac3ba033b89ea11caf74412b8add8
+runner_sha256: 1a269662a53dfecc2596e5154aab16c4bd1913d0d8dc7f7ea2ef08849adec7fc
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 69.20
+elapsed_sec: 47.92
 status: ok
 ----- stdout -----
 ========================================================================
@@ -79,5 +79,6 @@ SUMMARY: PASS=30  FAIL=0
 
 All checks passed. SU(3) confinement with √σ ≈ 440 MeV
 is a structural + bounded prediction of the Cl(3)/Z³ framework.
+
 ----- stderr -----
 

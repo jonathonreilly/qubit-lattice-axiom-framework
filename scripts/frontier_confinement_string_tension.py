@@ -40,6 +40,8 @@ from canonical_plaquette_surface import CANONICAL_ALPHA_BARE, CANONICAL_ALPHA_S_
 
 np.set_printoptions(precision=10, linewidth=120, suppress=True)
 
+AUDIT_TIMEOUT_SEC = 600
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 

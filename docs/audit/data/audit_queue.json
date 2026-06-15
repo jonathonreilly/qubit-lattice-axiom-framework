@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 288,
+    "critical": 287,
     "high": 287,
     "leaf": 482,
     "medium": 466
@@ -8,33 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-      "claim_scope": "Under the fixed triplet-block Hilbert-Schmidt form on the retained algebraic su(3) embedding in V=C^8, the invariant form is unique up to scalar and no real scalar dilation c != +/-1 preserves both the trace Gram and quadratic Casimir.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "physical_lattice_necessity_note",
-        "cl3_color_automorphism_theorem",
-        "graph_first_su3_integration_note",
-        "su3_casimir_fundamental_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 29,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 26.785,
-      "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_hs_rigidity_narrow.py",
-      "transitive_descendants": 311
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -45778,6 +45751,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 83,
-  "total_pending": 1523
+  "ready_count": 82,
+  "total_pending": 1522
 }

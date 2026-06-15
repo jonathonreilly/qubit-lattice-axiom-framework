@@ -249,7 +249,7 @@ check("A", "retained finite-sector identity recomputed: I(A u B) = I(A) + I(B) o
 # capacity bound |I(A)| <= K*M (triangle), unit normalization M = 1 (schema)
 K_demo, M_demo = 5, sp.Integer(1)
 unit_sum = sum(sp.Integer(1) for _ in range(7))
-check("A", "Lemma C capacity bound: |sum_{i in A} v_i| <= K*M by finite additivity + triangle inequality; retained unit-record schema has M = 1 by normalization (I(R_7) = 7 recomputed)", bool(unit_sum == 7) and all(abs(sum(v_data[: k + 1])) <= (k + 1) * max(abs(x) for x in v_data) for k in range(4)), "I(R_7)=7")
+check("A", "Lemma C capacity bound: |sum_{i in A} v_i| <= K*M by finite additivity + triangle inequality; conditional supplied-record unit schema has M = 1 by normalization (I(R_7) = 7 recomputed)", bool(unit_sum == 7) and all(abs(sum(v_data[: k + 1])) <= (k + 1) * max(abs(x) for x in v_data) for k in range(4)), "I(R_7)=7")
 
 # e-fold increment identity on the family
 incr = sp.simplify((g(p, sp.exp(u + 1)) - g(p, sp.exp(u))) - sp.exp(p * u) * (sp.exp(p) - 1) / p)

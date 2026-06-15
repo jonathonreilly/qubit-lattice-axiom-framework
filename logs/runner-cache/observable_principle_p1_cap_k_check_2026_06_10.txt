@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/observable_principle_p1_cap_k_check_2026_06_10.py
-runner_sha256: 278121c031578eed0e2200485e179f9d85f78ba275ce6bac4fbf1e790955e372
+runner_sha256: f29b9b1443586cf13d70b7314520b561e3cfbab7b13bb5cb2dd803e966d30239
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 11.76
+elapsed_sec: 10.26
 status: ok
 ----- stdout -----
 == T1: Lemma C and the selection chain (BR-note facts recomputed, not cited blind) ==
   [PASS][A] retained finite-sector identity recomputed: I(A u B) = I(A) + I(B) on all 81 ordered disjoint pairs of a 4-sector model  -- pairs=81
-  [PASS][A] Lemma C capacity bound: |sum_{i in A} v_i| <= K*M by finite additivity + triangle inequality; retained unit-record schema has M = 1 by normalization (I(R_7) = 7 recomputed)  -- I(R_7)=7
+  [PASS][A] Lemma C capacity bound: |sum_{i in A} v_i| <= K*M by finite additivity + triangle inequality; conditional supplied-record unit schema has M = 1 by normalization (I(R_7) = 7 recomputed)  -- I(R_7)=7
   [PASS][A] e-fold increment identity: g_p(e^{u+1}) - g_p(e^u) = e^{pu}(e^p - 1)/p exactly; p -> 0 member has constant increment 1
   [PASS][A] (BR-int) point-selection recomputed: increments unbounded for p in {1, 2, 1/2, -1/2, -1} (limits = oo), constant for p = 0 — pass set on {s*g_p} exactly {p = 0}
   [PASS][A] class-escape spot check: W = log z + (1/10) cos(log z) has e-fold increments <= 1 + 2/10 ((BR-int) holds) yet additive residual at (e, e) is (1/10)(cos 2 - 2 cos 1) != 0 — no additive-identity instance is entailed (Lemma-R screen)  -- res(e,e)=-0.149675

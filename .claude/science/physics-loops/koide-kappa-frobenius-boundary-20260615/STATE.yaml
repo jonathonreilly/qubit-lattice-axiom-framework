@@ -1,0 +1,18 @@
+loop_id: koide-kappa-frobenius-boundary-20260615
+branch: physics-loop/koide-kappa-frobenius-boundary-20260615
+base: origin/main
+status: review_pr_ready
+artifact_role: bounded_support_repair
+target_note: docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md
+target_runner: scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py
+audit_scope:
+  mode: source_repair_only
+  applies_audit_verdicts: false
+  edits_audit_ledgers: false
+repair_summary:
+  - corrected Herm_circ(d) sign-slot parity formula
+  - demoted unsupported retained/canonical-measure closure language
+  - kept block-total Frobenius theorem as finite bounded algebraic support
+  - moved PDG charged-lepton data to a non-load-bearing diagnostic
+remaining_bridge:
+  - derive scalar-lane SO(2) quotient or canonical block-total measure principle from retained inputs

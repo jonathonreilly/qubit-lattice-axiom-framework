@@ -8,6 +8,25 @@
 
 ---
 
+## Formula-inventory repair (2026-06-14)
+
+The strict audit pass found one displayed normalization mismatch in the
+identity-channel paragraph below. The adjoint SU(`N_c`) generators use
+`Tr(T^a T^b) = (1/2)δ^{ab}`. In that same `T_F = 1/2` convention, the
+trace-normalized identity generator is
+
+```text
+T^0 = I / sqrt(2 N_c),
+```
+
+so `(T^0)_{ij}(T^0)_{kl} = δ_ij δ_kl / (2 N_c)`. If one instead uses the
+Hilbert-Schmidt unit identity `S = I / sqrt(N_c)`, then
+`S_ij S_kl = δ_ij δ_kl / N_c` and the same completeness term is
+`(1/2) S_ij S_kl`. This note now uses the trace-normalized `T^0`
+convention in the completeness formula and keeps the channel-count fraction
+as the dimension ratio `dim(sl_N) / dim(M_N) = (N_c^2 - 1) / N_c^2`.
+The physical-color and EW-readout bridges remain outside this row.
+
 ## Audit-driven scope narrowing (2026-05-04)
 
 The 2026-05-04 audit verdict was `audited_renaming`: the algebraic content was
@@ -144,8 +163,24 @@ The Fierz completeness relation for SU(N_c) with `T_F = 1/2` (summing over the
 ∑_{a=1}^{N_c²-1} (T^a)_{ij} (T^a)_{kl} = (1/2)δᵢₗδₖⱼ − (1/(2N_c))δᵢⱼδₖₗ
 ```
 
-Including the identity channel `T^0 = I/√N_c` with weight `(1/(2N_c))δᵢⱼδₖₗ`,
-the full completeness relation on `End(ℂ^{N_c})` is:
+Including the identity channel in the same `T_F = 1/2` convention requires the
+trace-normalized generator `T^0 = I/√(2N_c)`. Its contribution is
+
+```text
+(T^0)ᵢⱼ (T^0)ₖₗ = (1/(2N_c)) δᵢⱼδₖₗ.
+```
+
+Equivalently, with the Hilbert-Schmidt unit identity `S = I/√N_c`, the
+identity term is `(1/2) Sᵢⱼ Sₖₗ`. Thus the full `U(N_c)` completeness
+relation in the `T_F = 1/2` convention is:
+
+```text
+∑_{A=0}^{N_c²-1} (T^A)ᵢⱼ (T^A)ₖₗ = (1/2)δᵢₗδₖⱼ,
+```
+
+where `A=0` is the trace-normalized identity above. The channel-count
+fractions are then purely the dimensions of the singlet and adjoint
+subspaces of `End(ℂ^{N_c})`:
 
 ```
 singlet channel:  weight = 1/N_c²  of the N_c²-dimensional matrix algebra

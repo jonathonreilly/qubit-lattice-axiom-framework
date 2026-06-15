@@ -574,6 +574,35 @@ R_fierz = 1 - 1/N_c**2
 ok_I &= check(f"  R_conn from Fierz = {R_fierz:.6f} = (N_c^2-1)/N_c^2",
               np.isclose(R_fierz, 8/9))
 
+# Identity-channel normalization in the same T_F = 1/2 convention.
+# The trace-normalized U(N) identity generator is T^0 = I/sqrt(2N_c).
+T0_tf = np.eye(N_c, dtype=complex) / np.sqrt(2 * N_c)
+T0_hs = np.eye(N_c, dtype=complex) / np.sqrt(N_c)
+T0_tf_outer = np.einsum('ij,kl->ijkl', T0_tf, T0_tf)
+T0_hs_outer = np.einsum('ij,kl->ijkl', T0_hs, T0_hs)
+T0_tf_rhs = np.zeros((N_c, N_c, N_c, N_c), dtype=complex)
+T0_hs_rhs = np.zeros((N_c, N_c, N_c, N_c), dtype=complex)
+Full_uN_rhs = np.zeros((N_c, N_c, N_c, N_c), dtype=complex)
+for i, j, k, l in iproduct(range(N_c), repeat=4):
+    T0_tf_rhs[i, j, k, l] = (1 / (2 * N_c)) * (i == j) * (k == l)
+    T0_hs_rhs[i, j, k, l] = (1 / N_c) * (i == j) * (k == l)
+    Full_uN_rhs[i, j, k, l] = 0.5 * (i == l) * (k == j)
+t0_tf_trace = np.trace(T0_tf @ T0_tf).real
+t0_tf_err = np.max(np.abs(T0_tf_outer - T0_tf_rhs))
+t0_hs_trace = np.trace(T0_hs @ T0_hs).real
+t0_hs_err = np.max(np.abs(T0_hs_outer - T0_hs_rhs))
+full_uN_err = np.max(np.abs(Fierz_lhs + T0_tf_outer - Full_uN_rhs))
+ok_I &= check("  identity generator T^0 = I/sqrt(2N_c) has Tr(T^0 T^0)=1/2",
+              abs(t0_tf_trace - 0.5) < EPS,
+              f"trace={t0_tf_trace:.6f}")
+ok_I &= check("  T^0 channel contributes delta_ij delta_kl/(2N_c)",
+              t0_tf_err < EPS, f"max err {t0_tf_err:.1e}")
+ok_I &= check("  HS unit S=I/sqrt(N_c) contributes delta_ij delta_kl/N_c",
+              abs(t0_hs_trace - 1.0) < EPS and t0_hs_err < EPS,
+              f"Tr(S^2)={t0_hs_trace:.6f}, max err {t0_hs_err:.1e}")
+ok_I &= check("  SU(N) Fierz plus T^0 gives full U(N) completeness with T_F=1/2",
+              full_uN_err < EPS, f"max err {full_uN_err:.1e}")
+
 sqrt_corr = np.sqrt(1/R_conn)
 ok_I &= check(f"  EW correction sqrt(1/R_conn) = sqrt(9/8) = {sqrt_corr:.6f}",
               np.isclose(sqrt_corr, np.sqrt(9/8)))
@@ -669,7 +698,7 @@ Finite Cl(3)/taste-cube support packet — algebraic checks complete.
   F. Y operator: +1/3 on 6D symmetric block, -1 on 2D antisymmetric block. Traceless.
   G. S3 on C^8 = 4A1+2E; hw=1 triplet is a Z3-related three-state orbit.
   H. SU(3)_c on symmetric base: T_F=1/2; [SU(3),SU(2)]=0; [SU(3),Y]=0.
-  I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz verified.
+  I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz + identity channel verified.
   J. L-sector determinant support: det(H_L)>=0 forced by Kramers degeneracy T^2<0 on L-sector.
 
 Support targets sharpened by this packet:

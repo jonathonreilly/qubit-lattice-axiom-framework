@@ -51474,7 +51474,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_route2_exact_time_coupling_note_2026-04-19"
+      "to": "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
     },
     {
       "from": "repo.front_door_status",
@@ -98990,7 +98990,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "quark_route2_exact_time_coupling_note_2026-04-19",
+        "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
         "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
         "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
@@ -99000,7 +99000,7 @@
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f3df880c0854d52b4019072d2e95a492d16f3080a041c485c25f6e8a5903730e",
+      "note_hash": "088b31a314a7d32784ab530a11ba5ee962defcd5b18c022abcab52361559fa24",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

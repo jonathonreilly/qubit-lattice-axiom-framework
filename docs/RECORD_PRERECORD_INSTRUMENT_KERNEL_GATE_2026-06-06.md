@@ -1,13 +1,41 @@
-# Record Pre-Record Instrument Kernel Gate
+# Record Pre-Record Instrument Kernel Gate Under Supplied Readout Context
 
 Date: 2026-06-06
 
 Status: bounded-support
-**Claim type:** bounded_theorem / bounded support under supplied readout context
+**Claim type:** bounded_theorem / bounded finite algebra under supplied readout context
 **Status authority:** independent audit lane only. This source note records
 finite algebra under cited bounded projective/Lueders authorities and a
 supplied readout context; it does not set an audit verdict or downstream
 effective status.
+
+## 2026-06-15 audit-boundary repair: supplied-context finite algebra only
+
+This row is a finite supplied-context kernel theorem, not a physical
+production-generator theorem. The load-bearing claim is exactly:
+
+```text
+one-qubit state
++ cited bounded projective/Lueders instrument authority
++ supplied readout context
+-> probability vector over possible future record atoms,
+```
+
+followed by the separate realized-outcome typing step:
+
+```text
+chosen outcome -> one-hot post-record atom/count update.
+```
+
+The readout context and the physical production generator are row-local
+supplied inputs. They are not derived, selected, or promoted here. Any
+downstream theorem that needs an endogenous physical readout context,
+apparatus dynamics, Markov generator, or rate/clock normalization must cite a
+separate retained authority; it cannot cite this row for more than the finite
+supplied-context algebra above.
+
+No new axiom, Tier-A admission, measurement primitive, probability axiom,
+arbitrary readout principle, or audit-status change is introduced.
 
 ## 2026-06-12 audit firewall: no retained production-kernel promotion
 

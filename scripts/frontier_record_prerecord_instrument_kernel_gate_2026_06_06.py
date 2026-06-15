@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pre-record instrument to record-production kernel gate.
+"""Pre-record supplied-context instrument to record-production kernel gate.
 
 This stacked block makes the pre-record/post-record split operational:
 
@@ -63,8 +63,8 @@ def read_doc(path: str) -> str:
 
 
 def main() -> int:
-    print("Record pre-record instrument kernel gate")
-    print("source boundary: bounded support under cited projective readout authorities and a supplied readout context")
+    print("Record pre-record supplied-context instrument kernel gate")
+    print("source boundary: bounded finite algebra under cited projective readout authorities and a supplied readout context")
     print("status authority: independent audit lane only")
     print()
 
@@ -97,10 +97,17 @@ def main() -> int:
     flat_note = " ".join(note.split())
     check(
         "source note has no-retained-production-kernel audit firewall",
-        "**Claim type:** bounded_theorem / bounded support under supplied readout context" in note
+        "**Claim type:** bounded_theorem / bounded finite algebra under supplied readout context" in note
         and "## 2026-06-12 audit firewall: no retained production-kernel promotion" in note
         and "actual_current_surface_status" not in note
         and "bare_retained_allowed" not in note,
+    )
+    check(
+        "source note has supplied-context-only audit boundary",
+        "2026-06-15 audit-boundary repair: supplied-context finite algebra only" in note
+        and "not a physical\nproduction-generator theorem" in note
+        and "row-local\nsupplied inputs" in note
+        and "separate retained authority" in note,
     )
     check(
         "source note says no further repair is needed only for supplied-context finite algebra",
@@ -112,6 +119,12 @@ def main() -> int:
         "does not promote the packet to bare retained status" in flat_note
         and "remain outside the Record axiom and outside this finite gate" in flat_note
         and "No new axiom, Tier-A admission, arbitrary measurement primitive, or audit status" in flat_note,
+    )
+    check(
+        "source note blocks downstream over-citation as generator/readout authority",
+        "cannot cite this row for more than the finite supplied-context algebra above" in flat_note
+        and "endogenous physical readout context" in flat_note
+        and "apparatus dynamics, Markov generator, or rate/clock normalization" in flat_note,
     )
 
     print("\nB. one-qubit state and projective instruments")

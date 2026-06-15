@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 207 |
 | **retained_bounded** | 919 |
 | _retained_pending_chain_ | 4 |
-| open_gate | 39 |
-| unaudited | 1503 |
+| open_gate | 40 |
+| unaudited | 1502 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1353 |
+| `audited_clean` | 1354 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1820 |
+| `unaudited` | 1819 |
 
 | claim_type | count |
 |---|---:|
@@ -102,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1009 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1397 | 60.95 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
@@ -110,9 +110,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 814 | 43.67 | `audited_clean` | **retained_bounded** |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 903 | 42.32 | `unaudited` | unaudited |
-| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
+| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 987 | 41.45 | `audited_clean` | **retained_bounded** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 876 | 39.78 | `unaudited` | unaudited |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1363 | 39.41 | `audited_clean` | **retained** |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 38.66 | `unaudited` | unaudited |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 966 | 38.42 | `audited_clean` | **retained_bounded** |
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 749 | 38.05 | `audited_clean` | **retained_no_go** |
@@ -668,6 +668,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9250,6 +9251,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For fixed positive alpha != 1 and nonzero C, if N_species(R) != N_species(R') then C * alpha^(N_species(R)) != C * alpha^(N_species(R')).  _(class `A`)_
 - **chain closes:** True — The algebra closes because the ratio of two bridge outputs is alpha^(N_R-N_R'), which cannot equal 1 for positive alpha != 1 and N_R != N_R'; the nonzero prefactor cancels. This audits only the bounded conditional obstruction, not B1/B2 as derived regulator physics.
 - **rationale:** The source note’s actual no-go is restricted to the abstract exponent-difference step, and that step is a valid algebraic closure over the stated fixed-alpha, fixed-prefactor assumptions. The runner source computes that algebra and separately checks or hard-codes witness/boundary data; it does not derive B1/B2, but the note explicitly keeps those packets non-load-bearing. The N1-N8 no-go discipline is satisfied for the bounded reading because O1/O2/O3 remain named residual routes rather than being claimed impossible.
+- **auditor confidence:** high
+
+### `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`
+
+- **Note:** [`HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the delta-zero open-gate bookkeeping: the provided block-observable formulas do not natively supply alpha_bare, and the alpha_s-per-taste attachment-observable identification remains named but underived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-220631-dae16dbd82-hierarchy_alpha_lm_magnitude`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The checked block determinant/condensate forms are u_0-only, while the alpha_LM^16 magnitude carries alpha_bare^16 only by algebraic relabeling, leaving the transport source open.  _(class `A`)_
+- **chain closes:** True — For the scoped open-gate claim, the chain closes: the determinant algebra gives u_0-degree 16 with no alpha_bare symbol, and u_0^16 alpha_s^16 = alpha_LM^16 is an identity. The missing step is explicitly left open, namely an attachment-observable transport rule supplying alpha_s per taste decoupling.
+- **rationale:** The load-bearing step is a narrow algebraic symbol-support check, not a claimed first-principles closure of the hierarchy formula. Independent checks confirm alpha_bare^16 = (4 pi)^-16, the alpha_bare/alpha_LM/alpha_s progression, determinant u_0-degree 16, and the reduced product u_0^16 alpha_s^16 = alpha_LM^16. The source avoids a global no-go by naming the B4 attachment-observable identification gap and leaving outside-K1-K8 and beyond-mean-field routes open. Context-only downstream probes are not upgraded to load-bearing dependency authority in this verdict.
 - **auditor confidence:** high
 
 ### `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26`

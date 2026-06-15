@@ -1,13 +1,28 @@
 # Hierarchy Dimensional Compression Note
 
-**Type:** bounded_theorem
-**Status:** bounded_theorem (proposed; audit lane ratifies)
+**Type:** open_gate / conditional-support
+**Claim type:** open_gate / conditional D=4 arithmetic support
+**Status:** conditional D=4 arithmetic support (source proposal; audit lane ratifies effective status)
 **Status authority:** independent audit lane only; effective status is
 pipeline-derived from the audit ledger. The status line above is the
-source-note proposal and is not an audit-ratified retained status.
+source-note proposal and is not an audit-ratified retained or bounded-theorem
+status.
 **Date:** 2026-04-13 (created); 2026-05-16 (rescoped to retire the
 observation-comparison load-bearing step flagged by the 2026-05-05 audit).
 **Script:** `scripts/frontier_hierarchy_dimensional_compression.py`
+
+## 2026-06-12 audit firewall: D=4 readout bridge still open
+
+The current source claim is conditional support for D=4 arithmetic only. The
+runner checks the framework-internal condensate-density ratio, the D=4 versus
+D=16 separation, and the algebraic identity `1/D = 4/2^D` at `D = 4`.
+
+This note does not derive the D=4 readout / effective-potential-density bridge
+that would place the compression factor in the physical VEV formula with
+sign, placement, and normalization. It also does not derive the staggered
+taste count `N_taste = 2^D` from primitives. Those remain the open bridge
+targets named below. No new axiom, Tier-A admission, observed target, or audit
+status is introduced here.
 
 ## 0. Audit context — what this note still claims, and what it does not
 
@@ -87,8 +102,9 @@ Dirac condensate-density residual.
 - **Not a sign / placement theorem.** The exact sign and placement of
   the (1/4) compression in the full physical formula remain open;
   see Section 5 below.
-- **Not a retained-grade status proposal.** This is a bounded source
-  note proposal; the independent audit lane ratifies status.
+- **Not a retained- or bounded-theorem status proposal.** This is conditional
+  D=4 arithmetic support; the independent audit lane ratifies effective
+  status.
 
 ## 3. Numerical inputs (intra-framework only)
 
@@ -248,7 +264,7 @@ Verifies, using only intra-framework arithmetic, that:
    Those quantities are printed as `external context` for reader
    transparency and are explicitly excluded from PASS gates.
 
-Expected scorecard: `5 pass, 0 fail out of 5`.
+Expected scorecard: `7 pass, 0 fail out of 7`.
 
 ### 7.1 Scorecard sync (2026-06-11)
 
@@ -268,12 +284,17 @@ source scorecard is synced to `5`. Gate-by-gate check against
 5. `PASS conditions are free of observed-target imports` — this gate
    checks that `v_obs`, `v_pred`, and `C_obs` are introduced only after
    all PASS gates, in the external-context block.
+6. `source note demotes stale bounded-theorem proposal to conditional support`
+   — current source metadata no longer proposes a bounded theorem.
+7. `source note leaves D=4 readout bridge open` — the note names the
+   effective-potential-density bridge and staggered-taste realization gate as
+   open targets.
 
 ```yaml
 claim_id: hierarchy_dimensional_compression_note
 note_path: docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md
 runner_path: scripts/frontier_hierarchy_dimensional_compression.py
-proposed_claim_type: bounded_theorem
+proposed_claim_type: open_gate / conditional-support
 proposed_load_bearing_step_class: B
 status_authority: independent audit lane only
 audit_required_before_effective_status_change: true
@@ -295,7 +316,8 @@ admitted_context_inputs:
 
 forbidden_imports_used: false
 observed_target_used_in_pass_conditions: false
-proposal_allowed: true
+proposal_allowed: false
+proposal_allowed_reason: "D=4 arithmetic support is source-ready, but the D=4 readout / effective-potential-density bridge and staggered-taste realization gate remain open."
 ```
 
 ## 8. Changelog
@@ -307,3 +329,6 @@ proposal_allowed: true
   effective-potential-density bridge check, leaving the future proof
   obligation scoped to the determinant/effective-potential-density to
   physical-VEV map with exponent, sign, placement, and normalization.
+- **2026-06-12 audit firewall.** Demoted the stale bounded-theorem proposal
+  wording to conditional D=4 arithmetic support and made the D=4 readout /
+  effective-potential-density bridge an explicit open target.

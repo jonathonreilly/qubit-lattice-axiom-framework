@@ -81,6 +81,19 @@ surface").
   P-KIN and P-SD remain declared premises, and BlockT1 remains a
   bounded upstream input until the statistics-frame selection bridge is
   retained.
+- **2026-06-12 (kinetic supply-line sync).** Current main now contains
+  a sharper source-side supply line for this note's former B2/B3
+  residuals. `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`
+  proves a two-flux-class collapse on the licensed nearest-neighbor
+  bilinear surface and discharges P-SD as an absorbing-frame theorem on
+  the flux-`-1` branch; it leaves exactly the P-FLUX bit
+  `phi = -1` as the P-KIN residual. `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`
+  then composes the retained `(Z)` geometry certificate with the FSB-K
+  thermal row as a conditional selector for that bit. This sync does
+  not change this row's current audit status and does not claim
+  retained closure: the kinetic-class and P-FLUX supplier rows are
+  still audit-owned, and the P-FLUX selection is conditional on FSB-K's
+  audit grade.
 - **2026-06-06.** Cocycle/gauge-class uniqueness repair (necessity +
   classification; superseded in form by Lemmas 2 and 4 below).
 - **2026-05-07.** Original substep-2 note.
@@ -121,6 +134,39 @@ realization-gate note consumes as its R2 authority.
 | B2 | P-KIN: the naive-Dirac kinetic form `D = Σ_μ γ_μ ⊗ ∂_μ` on nearest-neighbor `Z³` links is a declared premise; non-nearest-neighbor or non-Dirac kinetic operators are not excluded here | Theorem 2 quantifies over phase systems *within* this class only |
 | B3 | P-SD: compatibility with the single-mode measure is implemented by a *site-local unitary* diagonalization `T(x)`; alternatives that bypass spin diagonalization (e.g. the 2-component naive operator) are excluded by premise, not derivation — the gate note's runner exhibits that alternative explicitly (its check 18) | the scalarization condition (4) is the P-SD premise in equation form |
 | B4 | Finite tori carry extra holonomy data: signs around non-contractible cycles (PBC/APBC and wrap-sign conventions) are boundary convention data, not local phase law; likewise lattice-axis permutation is coordinate-label gauge | Theorem 2(ii) is stated on simply connected regions |
+
+### 3.1 2026-06-12 kinetic supply-line status
+
+The B2/B3 boundary is now sharper than the original declared-premise
+wording:
+
+| former boundary | current source-side supplier | current honest status |
+|---|---|---|
+| P-SD site-local absorbing frame | `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`; runner cache `staggered_dirac_kinetic_class_forcing_check_2026_06_10.txt` (`TOTAL: PASS=27 FAIL=0`) | discharged as a theorem on the flux-`-1` branch, pending independent audit of that supplier |
+| P-KIN broad kinetic-class declaration | same kinetic-class forcing note | reduced to exactly two licensed frame classes, `K0` with flux `+1` and `K1` with flux `-1`; the surviving residual is the one-bit P-FLUX selector |
+| P-FLUX selector `phi = -1` | `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`; runner cache `p_flux_selection_via_fsb_k_check_2026_06_11.txt` (`TOTAL: PASS=16 FAIL=0`) | conditional on FSB-K's audit grade, using the retained `(Z)` kernel-geometry certificate; no selection is performed at current grades |
+
+Re-audit should therefore treat this row's B2/B3 residual as a
+source-side cascade:
+
+```text
+kinetic-class forcing
+  -> P-SD discharged on K1
+  -> P-KIN reduced to P-FLUX
+  -> P-FLUX conditionally selected by FSB-K + retained Z
+```
+
+Source-only sync verifier:
+`scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py`;
+cache:
+`logs/runner-cache/staggered_dirac_kinetic_supply_line_sync_2026_06_12.txt`.
+
+This row remains a bounded theorem unless that cascade is accepted by
+the independent audit lane. The local Kawamoto-Smit phase-forcing proof
+below still states its theorem under the P-KIN/P-SD class because that
+is the exact local hypothesis; the supply-line section records the
+current route for retiring those hypotheses, not a branch-local status
+promotion.
 
 ## 4. Setup
 
@@ -356,11 +402,12 @@ as the PASS lines.
 
 - The realization gate itself (carried by the gate note's bounded
   synthesis and its residual list).
-- Derivation of the kinetic class from Lattice + Quantum alone: P-KIN and P-SD are
-  declared premises (B2, B3). Excluding non-nearest-neighbor kinetic
-  operators or 2-component realizations that bypass spin
-  diagonalization is open; the gate note exposes the 2-component
-  alternative concretely.
+- Derivation of the kinetic class from Lattice + Quantum alone: the
+  2026-06-12 supply line narrows this residual but does not remove it
+  at this row's current grade. P-SD is discharged as a source theorem
+  on the `K1` branch, and P-KIN is reduced to the P-FLUX bit
+  `phi = -1`; the bit-selection route is conditional on FSB-K plus the
+  retained `(Z)` certificate and remains audit-owned.
 - The substep-1 statistics-selection/exhaustiveness residual (B1):
   the former U4/per-site-identification boundary is discharged in the
   substep-1 note, but Grassmann-vs-hard-core-boson selection remains

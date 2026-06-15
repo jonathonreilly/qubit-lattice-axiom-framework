@@ -87,7 +87,8 @@ observable was a different (Kubo) object.
 - **(T5, control)** no field coupling (`n=1`) gives zero deflection.
 - **(T6)** the geometric deflection slope is `−1` (`1/b`), distinct from the Kubo
   observable packet's dipole-suppressed scaling. The Kubo packet is included
-  as a comparison authority, not as a retained dependency.
+  as a retained-bounded comparison authority for object separation, not as a
+  dependency that supplies the physical Fermat bridge.
 
 `TOTAL: PASS=9 FAIL=0`.
 
@@ -113,17 +114,30 @@ observable was a different (Kubo) object.
   supplied eikonal/dispersion boundary.
 - The field-in-Hamiltonian (`H→H+φ`) input is retained_bounded
   `self_consistency_forces_poisson`.
-- The exterior `φ_eff=a/r` source potential is retained_bounded `finite_rank_source_to_metric`.
+- The exterior `φ_eff=a/r` source potential is retained_bounded
+  [`FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md`](FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md).
 - Uses the import-free `G₀→1/(4π r)` and complements the Kubo-vs-geometric distinction
-  (companions `lattice_greens_1_over_r_from_heat_kernel_resolvent`,
-  `lensing_exponent_is_dipole_crossover`, this session).
+  (companions
+  [`LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md`](LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md)
+  and
+  [`LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md)).
 
 | Packet | Current audit status in ledger | Role here |
 | --- | --- | --- |
 | `self_consistency_forces_poisson_note` | retained_bounded | Supplies the field-shift/Hamiltonian-response context. |
 | `finite_rank_source_to_metric_theorem_note` | retained_bounded | Supplies the exterior `phi_eff=a/r` source-potential packet. |
-| `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | audited_conditional at this ledger snapshot | Support-only heat-kernel route toward `1/(4πr)`. |
-| `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | unaudited at this ledger snapshot | Comparison-only Kubo-vs-geometric distinction for T6. |
+| `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | retained_bounded | Support-only heat-kernel route toward `1/(4πr)`. |
+| `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | retained_bounded | Comparison-only Kubo-vs-geometric distinction for T6; it does not supply the Fermat/eikonal bridge. |
+
+## 2026-06-12 audit-status sync
+
+The comparison/status table above is synchronized with the current audit
+ledger: the Kubo/dipole crossover packet and the lattice Green support packet
+now both audit as retained_bounded. This strengthens the object-separation
+claim in T6: the geometric Fermat ray deflection and the Kubo susceptibility
+are certified as different bounded objects. It does **not** promote the full
+premise (4) bridge, because the physical/eikonal reading `n=k/k_0` and the
+Newtonian normalization remain outside this bounded support packet.
 
 ## Boundary / Honest-Auditor Read
 

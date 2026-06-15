@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
-runner_sha256: ed59a70f5eb48df3687ec708c9e4522d8eef39d2fac7344db9726f3e3c5c169c
+runner_sha256: 02ce4bcce08cd981f00e93c11e45e63eae76886149be675f7ea43ef1da0f5694
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.27
+elapsed_sec: 4.27
 status: ok
 ----- stdout -----
 
@@ -24,7 +24,7 @@ PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md co
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: Does not derive a selector, tangent metric, Hessian
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `selector_tangent_readout_weight` | 8
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `selector_tangent_readout_weight` | 11
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: selector/tangent readout-weight rows need a supplied readout/tangent bridge
 PASS scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py exists
 PASS scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py contains: def measure_rows
@@ -58,20 +58,23 @@ PASS negative supplied weights are rejected
 ------------------------------------------------------------------------------
 Selector/tangent row checks
 ------------------------------------------------------------------------------
-PASS selector/tangent row count is current snapshot :: 8
+PASS selector/tangent row count is current snapshot :: 11
 PASS representative row present: dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16
 PASS representative row present: teleportation_preparation_readout_probe_note
 PASS representative row present: yt_exact_hessian_selector_uniqueness_note
-PASS audit ledger hash is unchanged :: 61339ea0132d46103e9aa6bbeee835a5f2232254671eb104b4fc99593a6e4699
+PASS audit ledger hash is unchanged :: c4964a58b7c9459991e0f6a9c4908526ba4a238a40e4a4b1df51d3f9ddde12c7
 
 Selector/tangent/readout rows:
+  alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26 | effective unaudited | bounded_theorem | docs/ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md
   dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16 | effective retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md
   hierarchy_bosonic_bilinear_selector_note | effective unaudited | bounded_theorem | docs/HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md
+  hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_note_2026-06-11 | effective unaudited | bounded_theorem | docs/HIERARCHY_DELTA0_S1_EXACT_ONE_LINK_STRONG_COUPLING_PROBE_NOTE_2026-06-11.md
+  hierarchy_formula_honest_status_note_2026-05-10 | effective unaudited | bounded_theorem | docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
   higgs_taste_singlet_projection_bounded_note_2026-05-09 | effective unaudited | bounded_theorem | docs/HIGGS_TASTE_SINGLET_PROJECTION_BOUNDED_NOTE_2026-05-09.md
   lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05 | effective retained_bounded | bounded_theorem | docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md
-  magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06 | effective unaudited | bounded_theorem | docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md
   observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05 | effective unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md
   teleportation_preparation_readout_probe_note | effective unaudited | bounded_theorem | docs/TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md
+  theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11 | effective audited_conditional | bounded_theorem | docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
   yt_exact_hessian_selector_uniqueness_note | effective unaudited | bounded_theorem | docs/YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md
 
 ------------------------------------------------------------------------------
@@ -90,7 +93,7 @@ PASS production dynamics derived flag is false
 PASS Record-derived physical arrow flag is false
 
 SUMMARY: PASS=56 FAIL=0
-SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=8
+SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=11
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
 SELECTOR_AUTHORITY_DERIVED=FALSE

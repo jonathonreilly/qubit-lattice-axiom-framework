@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/frontier_corner_fork_resolution_layer_record_dynamics_2026_06_12.py
+runner_sha256: ab1ed5297a5c048a24273f58fb3c60a5621006cc20ca13ad54cfc6ecb6210fd1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
+SCOPE:
+supplied free U=1 corner-axis class; three decoupled 1+1d staggered channels; L_s=2.
+NOT claimed: branch selection, fixed r, OO adoption, R-D adoption, physical realization of the orbit factor.
+No cache regeneration; audit lane remains the status authority.
+[PASS] symbolic K identity lambda_2(delta)=lambda_1(-delta): sympy trigsimp(expand_trig(lambda_1(-delta)-lambda_2(delta))) == 0
+[PASS] Y1a Z_ch doublet-swap invariance exact: D0*D1*D2 is unchanged by D1 <-> D2
+[PASS] Y1c log-additivity exact over channel factors: expand_log(log(D0*D1*D2)) = logD0 + logD1 + logD2
+[PASS] Y2a Z_orb doublet-swap invariance exact: D0*sqrt(D1*D2) is unchanged by D1 <-> D2
+[PASS] Y2b log-additivity exact over singlet/orbit factors: expand_log(log(D0*sqrt(D1*D2))) = logD0 + 1/2(logD1+logD2)
+
+NUMERIC WITNESSES:
+witness-1: a=1, B=0.25, delta=0.222222222222, domain=True, lambdas=[1.487705042694724 0.660712456267754 0.851582501037522]
+witness-1: momenta=[1.570796326794897 4.71238898038469 ], max dispersion residual=6.661e-16
+witness-1: D=[1.139842669564131 1.279890600049486 1.240561406354874], D_orb=1.260072570440994e+00
+witness-1: Z_ch=1.809822679793650e+00, Z_orb=1.436284482536000e+00, relative_gap=2.063949145008172e-01
+witness-2: a=1.2, B=0.2, delta=-0.333333333333, domain=True, lambdas=[1.577982778525895 1.124352178500658 0.897665042973446]
+witness-2: momenta=[1.570796326794897 4.71238898038469 ], max dispersion residual=6.661e-16
+witness-2: D=[1.129765129762728 1.190707208408137 1.231495207102941], D_orb=1.210929486063307e+00
+witness-2: Z_ch=1.656631346821679e+00, Z_orb=1.368065907955826e+00, relative_gap=1.741880831963484e-01
+[PASS] 1 positivity domain a > 2B > 0 at both points: witness-1: a=1.0, B=0.25, a-2B=0.5; witness-2: a=1.2, B=0.2, a-2B=0.8
+[PASS] 1 lambda_k(delta) all positive at both points: witness-1: min_lambda=6.607124562677544e-01; witness-2: min_lambda=8.976650429734463e-01
+[PASS] 2 retained two-step dispersion residual: witness-1: max_abs_residual=6.661e-16; witness-2: max_abs_residual=6.661e-16
+[PASS] Y1b Z_ch(delta)=Z_ch(-delta) at both points: witness-1: abs_diff=2.220e-16; witness-2: abs_diff=0.000e+00
+[PASS] Y1c numeric log-additivity over channel factors: witness-1: residual=1.110e-16; witness-2: residual=1.110e-16
+[PASS] Y2a Z_orb(delta)=Z_orb(-delta) at both points: witness-1: abs_diff=0.000e+00; witness-2: abs_diff=0.000e+00
+[PASS] Y2b numeric log-additivity over singlet/orbit factors: witness-1: residual=5.551e-17; witness-2: residual=5.551e-17
+[PASS] Y3 positive branch values: witness-1: Z_ch=1.809823e+00, Z_orb=1.436284e+00; witness-2: Z_ch=1.656631e+00, Z_orb=1.368066e+00
+[PASS] Y3 Z_ch != Z_orb at both domain points: witness-1: relative_gap=2.063949e-01; witness-2: relative_gap=1.741881e-01
+[PASS] Y3 structural admissible branch set is BOTH branches: assembled from Y1/Y2 booleans: {'per-channel': True, 'per-K-orbit': True}
+[PASS] Y4 negative control registration layer cannot select: branch values differ while both satisfy additivity and K/CPT orbit-constancy
+[PASS] B dep RP phrase present: '2-step blocked transfer matrix': docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md contains the real phrase
+[PASS] B dep RP phrase present: 'free fermion-sector two-step positivity factor': docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md contains the real phrase
+[PASS] B dep registrability phrase present: 'finitely additive over finite': docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md contains the real phrase
+[PASS] B dep registrability phrase present: 'constant on `K`/CPT': docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md contains the real phrase
+[PASS] B note firewall sentences present: required firewall fragments found in note
+[PASS] B closing language absent: forbidden branch-selection/fork-closure phrases absent
+[PASS] B link inventory exactly two load-bearing links: links=[('`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`', 'AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md'), ('`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`', 'REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md')]
+[PASS] B context companions are backticked only: wave companions, occupancy note, and R-D chain are context tokens, not markdown links
+[PASS] B No-promotion statement present: No-promotion statement and status authority sentence found
+
+SUMMARY:
+PASS=25 FAIL=0
+Result: both fork branches are registrable and generically unequal; the fork is registration-blind, leaving branch discrimination to record dynamics.
+
+----- stderr -----
+

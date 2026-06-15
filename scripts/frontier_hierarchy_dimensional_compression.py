@@ -25,10 +25,13 @@ deeper effective-potential-density bridge remains open.
 from __future__ import annotations
 
 import math
+from pathlib import Path
 import sys
 
 import numpy as np
 
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md"
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -96,6 +99,27 @@ def build_dirac_4d_apbc(Ls: int, Lt: int, u0: float, mass: float = 0.0):
 def condensate_density(Ls: int, Lt: int, u0: float, mass: float) -> float:
     D = build_dirac_4d_apbc(Ls, Lt, u0, mass)
     return float(np.trace(np.linalg.inv(D)).real / (Ls**3 * Lt))
+
+
+def check_source_firewall() -> None:
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    flat = " ".join(note.split())
+    check(
+        "source note demotes stale bounded-theorem proposal to conditional support",
+        "**Type:** open_gate / conditional-support" in note
+        and "**Claim type:** open_gate / conditional D=4 arithmetic support" in note
+        and "proposed_claim_type: open_gate / conditional-support" in note
+        and "proposal_allowed: false" in note
+        and "**Type:** bounded_theorem" not in note
+        and "proposed_claim_type: bounded_theorem" not in note,
+    )
+    check(
+        "source note leaves D=4 readout bridge open",
+        "## 2026-06-12 audit firewall: D=4 readout bridge still open" in note
+        and "does not derive the D=4 readout / effective-potential-density bridge" in flat
+        and "does not derive the staggered taste count" in flat
+        and "No new axiom, Tier-A admission, observed target, or audit status" in flat,
+    )
 
 
 def main() -> None:
@@ -189,6 +213,7 @@ def main() -> None:
         True,
         "v_obs, v_pred, C_obs are not referenced before this point",
     )
+    check_source_firewall()
 
     # ---- External context block (NOT load-bearing) ----
     print("\n" + "-" * 78)

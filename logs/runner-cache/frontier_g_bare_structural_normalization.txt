@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_structural_normalization.py
-runner_sha256: 012c6d47f31c15f41c45a91f34a0d6c6df2060bc5ef193068249174bba4cb3f9
+runner_sha256: e074e185ed7e21dde1ee692204191f2db6e14979a8e04fdd4807d4f772fa6f27
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.33
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ==============================================================================
-G_BARE STRUCTURAL NORMALIZATION BOUNDED SUPPORT
-Cl(3) -> End(V) -> su(3) -> admitted Wilson action rigidity chain
+G_BARE STRUCTURAL NORMALIZATION BOUNDARY
+Cl(3) -> End(V) -> su(3) -> admitted Wilson action relation
 ==============================================================================
 
 ==============================================================================
@@ -78,14 +78,18 @@ SECTION C: Wilson plaquette coefficient rigidity (Claim 3)
   [PASS] beta = 2 N_c / g^2 matching at g^2 = 1.0: beta = 6.0  (beta * g^2 = 6.000000 = 2 N_c = 6, err = 0.00e+00)
   [PASS] beta = 2 N_c / g^2 matching at g^2 = 1.5: beta = 4.0  (beta * g^2 = 6.000000 = 2 N_c = 6, err = 0.00e+00)
   [PASS] beta = 2 N_c / g^2 matching at g^2 = 2.0: beta = 3.0  (beta * g^2 = 6.000000 = 2 N_c = 6, err = 0.00e+00)
-  [PASS] Canonical g = 1 (Cl(3) rigidity) -> beta = 2 N_c = 6.0  (beta = 6.0)
+  [PASS] residual action multiplier rho=g^2=0.25: beta=2N_c/rho satisfies matching  (beta=24.000000, beta*rho=6.000000)
+  [PASS] residual action multiplier rho=g^2=1.0: beta=2N_c/rho satisfies matching  (beta=6.000000, beta*rho=6.000000)
+  [PASS] residual action multiplier rho=g^2=4.0: beta=2N_c/rho satisfies matching  (beta=1.500000, beta*rho=6.000000)
+  [PASS] [BOUNDED] multiple rho values preserve the same canonical generator Gram  (beta family=[24.0, 6.0, 1.5]; Gram is still Tr(T_a T_b)=delta_ab/2)
+  [PASS] [BOUNDED] unrescaled-coordinate convention rho=1 gives beta=6  (beta=6.0)
   [PASS] Rescaled T -> 0.5 T has non-canonical Gram (forbidden by Claim 2)
   [PASS] Rescaled T -> 2.0 T has non-canonical Gram (forbidden by Claim 2)
 
   [BOUNDED] Alternative action forms (Symanzik, improved, etc.)
-  would change the leading a^4 coefficient by a known factor.
-  The canonical Wilson action is used here as an admitted
-  action-form input; alternatives are outside the scope of this runner.
+  and alternative physical rho values remain outside this runner.
+  The canonical Wilson action and rho=1 convention are used only
+  as admitted surface inputs when beta=6 is consumed downstream.
   [PASS] [BOUNDED] Wilson action form is admitted here (not derived from Cl(3))  (admitted lattice-QFT action-form input)
 
 ==============================================================================
@@ -96,31 +100,45 @@ SECTION D: End-to-end integration (no circularity)
   [PASS] Step 3: Killing-form rigidity forces Tr(T_a T_b) = delta_ab/2
   [PASS] Step 4: scalar dilation violates the canonical trace Gram  (checked directly from the Claim 2 trace form)
   [PASS] Step 5: Wilson plaquette matching gives beta = 2 N_c / g^2  (verified in Section C)
-  [PASS] Step 6: Canonical g = 1 -> beta = 2 N_c = 6
+  [PASS] [BOUNDED] Step 6: rho remains a separate action multiplier, not a generator dilation  (rho=1 -> beta=6.0; rho=4 -> beta=1.5)
 
   Circularity audit:
   - Steps 1-3 use only Cl(3) axioms, graph-selector inputs, Lie-algebra rigidity.
   - Step 4 directly checks that scalar dilation changes the fixed trace Gram.
   - Step 5 uses canonical generator normalization from step 3; no β input.
-  - Step 6 derives g = 1 from Claims 1 + 2 + step 4, not as input.
-  - Final beta = 6 is derived inside the admitted Wilson-action scope, not asserted.
+  - Step 6 keeps rho = g^2 symbolic; rho=1 is not derived.
+  - beta = 6 appears only after the unrescaled rho=1 convention is supplied.
   [PASS] No circular usage of beta = 6 or g = 1 as input  (all computed derivation checks are forward-only)
+
+==============================================================================
+SECTION E: Source-note boundary discipline
+==============================================================================
+  [PASS] source note contains corrected boundary phrase: 'facts **do not** derive the physical'
+  [PASS] source note contains corrected boundary phrase: 'residual positive action multiplier'
+  [PASS] source note contains corrected boundary phrase: 'unrescaled-coordinate convention'
+  [PASS] source note contains corrected boundary phrase: 'not a positive derivation of a physical bare coupling'
+  [PASS] source note contains corrected boundary phrase: 'physical action-coefficient normalization'
+  [PASS] source note omits old overclaim phrase: 'canonical connection has g = 1 by Cl(3) rigidity'
+  [PASS] source note omits old overclaim phrase: 'derives g = 1 from the absence'
+  [PASS] source note omits old overclaim phrase: 'upgrades that input from a'
+  [PASS] source note omits old overclaim phrase: 'g_bare = 1 is fixed by the Cl(3) generator structure'
 
 ==============================================================================
 SUMMARY
 ==============================================================================
-  EXACT   : PASS = 59,   FAIL = 0
-  BOUNDED : PASS = 2, FAIL = 0
-  TOTAL   : PASS = 61, FAIL = 0
+  EXACT   : PASS = 69,   FAIL = 0
+  BOUNDED : PASS = 5, FAIL = 0
+  TOTAL   : PASS = 74, FAIL = 0
 
   All exact checks passed.
   Claims 1, 2 pass as exact structural-support checks.
-  Claim 3 passes only within the admitted Wilson plaquette action form.
+  Claim 3 passes only as a Wilson coefficient relation plus
+  no-generator-dilation boundary; it does not derive rho=g^2=1.
 
-  Conclusion: g_bare = 1 <=> beta = 6 is bounded structural
-  normalization support, not a dynamical fixation. The residual
-  open premise is the choice of Wilson action form itself, not a
-  hidden continuous coupling parameter.
+  Conclusion: the Cl(3) trace-Gram structure fixes the canonical
+  generator basis and blocks scalar generator dilation. The residual
+  open premises are the Wilson action form and the physical action
+  coefficient rho=g^2; beta=6 follows only when rho=1 is supplied.
 
 ----- stderr -----
 

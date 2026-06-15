@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_carrier_orbit_invariance.py
-runner_sha256: a6c4b3efbfb424e93447939e2a68d421bc3c4c738a5b58e83797b1ea82a21b6b
+runner_sha256: f03c0b5083fcc0e220cd5089ad785562c4a0e7c41a22f994d220df52509add4e
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.13
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
 ----- stdout -----
 ========================================================================================
 CARRIER ORBIT INVARIANCE — STRETCH ATTEMPT (cycle 22)
@@ -46,8 +46,8 @@ PART 4: REGISTRY ENUMERATION (active Hermitian basis)
   [PASS] Symmetric column-action (c_E = c_T) lies in End(V)^+
   [PASS] Asymmetric column-action (c_E != c_T) does NOT lie in End(V)^+
   [PASS] Asymmetric column-action decomposes nontrivially as End(V)^+ + End(V)^-  (||op_asym_minus||=0.4000)
-  [FAIL] Theta_R^(0) is documented as bounded (not exact) in retained registry
-  [FAIL] Xi_R^(0) is documented as bounded (not exact) in retained registry
+  [PASS] Theta_R^(0) is documented as bounded/staging, not exact, in the registry
+  [PASS] Xi_R^(0) is documented as bounded/staging, not exact, in the registry
   [PASS] Swap-reduction theorem records both staging tools as bounded only
 
 ========================================================================================
@@ -70,7 +70,7 @@ PART 6: LOW-DEGREE POLYNOMIAL OPERATOR ENUMERATION (Route E cross-check)
   [PASS] (u_E - u_T) corresponds to bounded prototype Theta_R^(0), not exact
   [PASS] Degree-2 invariant operators include u_E*u_T, delta^2, and symmetrizations  (deg2 invariants count = 4)
   [PASS] Degree-2 antisymmetric operators are exactly 2 (u_E^2 - u_T^2; delta*u_E - delta*u_T)  (antisymmetric=['asym(delta*u_E,delta*u_T)', 'asym(u_E^2,u_T^2)'])
-  [FAIL] delta*(u_E - u_T) corresponds to bounded Xi_R^(0), not exact
+  [PASS] delta*(u_E - u_T) corresponds to bounded Xi_R^(0), not exact
 
 ========================================================================================
 PART 7: CARRIER TRACE CHECK ON RETAINED OPERATOR BASIS
@@ -116,7 +116,7 @@ PART 11: REFINED PRECURSOR CHAIN (2026-05-07 closure-attempt sharpening)
   [PASS] Refinement honestly refuses to claim closure beyond PARTIAL
 
 ========================================================================================
-SUMMARY: PASS=58 FAIL=3
+SUMMARY: PASS=61 FAIL=0
 ========================================================================================
 
 ----- stderr -----

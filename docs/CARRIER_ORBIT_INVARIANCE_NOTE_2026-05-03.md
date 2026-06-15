@@ -388,3 +388,12 @@ verifies:
 - Carrier-level swap-symmetry check on the active Hermitian basis.
 - Low-degree polynomial operator enumeration (Route E cross-check).
 - Named obstructions on registry closure.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [s3_time_bilinear_tensor_primitive_note](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)
+- [s3_time_tensor_primitive_prototype_note](S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md)
+- [s3_time_constructed_support_tensor_primitive_note](S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md)
+- [dm_neutrino_weak_even_swap_reduction_theorem_note_2026-04-15](DM_NEUTRINO_WEAK_EVEN_SWAP_REDUCTION_THEOREM_NOTE_2026-04-15.md)

@@ -11,20 +11,20 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3241 |
-| Applied audit verdicts | 1447 |
-| Retained-grade rows, including boxed decorations | 1311 |
-| Retained positive theorems | 214 |
-| Retained no-go rows | 206 |
-| Retained bounded rows | 847 |
+| Ledger rows | 3292 |
+| Applied audit verdicts | 1527 |
+| Retained-grade rows, including boxed decorations | 1371 |
+| Retained positive theorems | 211 |
+| Retained no-go rows | 210 |
+| Retained bounded rows | 906 |
 | Boxed decorations under retained parents | 44 |
-| Open gates | 39 |
-| Unaudited rows | 1474 |
-| Retained-pending-chain rows | 18 |
-| Audited conditional rows | 36 |
-| Audited renaming rows | 33 |
-| Audited numerical-match rows | 13 |
-| Citation cycles detected | 4 |
+| Open gates | 41 |
+| Unaudited rows | 1443 |
+| Retained-pending-chain rows | 20 |
+| Audited conditional rows | 52 |
+| Audited renaming rows | 31 |
+| Audited numerical-match rows | 14 |
+| Citation cycles detected | 20 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -33,45 +33,39 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1477 |
-| Ready rows | 73 |
-| Cycle-break targets | 4 |
-| Critical pending | 283 |
-| High pending | 291 |
-| Medium pending | 435 |
-| Leaf pending | 468 |
+| Total pending rows | 1448 |
+| Ready rows | 1 |
+| Cycle-break targets | 20 |
+| Critical pending | 331 |
+| High pending | 254 |
+| Medium pending | 424 |
+| Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
-- [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - critical; unaudited
-- [`koide_moment_ratio_uniformity_theorem_note_2026-04-19`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md) - critical; audit_in_progress
-- [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
-- [`observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md) - high; unaudited
-- [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
-- [`su3_adjoint_casimir_theorem_note_2026-05-02`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md) - high; unaudited
+- [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **428**.
+- Non-retained-grade cited rows in publication tables: **430**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| high | `unaudited` | 161 |
-| critical | `unaudited` | 160 |
-| medium | `unaudited` | 95 |
+| critical | `unaudited` | 173 |
+| high | `unaudited` | 146 |
+| medium | `unaudited` | 94 |
+| critical | `open_gate` | 3 |
+| critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
-| critical | `open_gate` | 2 |
+| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| critical | `audited_failed` | 1 |
 | critical | `audited_renaming` | 1 |
-| high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
-| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 
@@ -79,19 +73,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3383 |
-| Critical nodes | 521 |
-| High nodes | 514 |
-| Medium nodes | 910 |
-| Leaf nodes | 1438 |
+| Citation-graph nodes | 3434 |
+| Critical nodes | 606 |
+| High nodes | 468 |
+| Medium nodes | 899 |
+| Leaf nodes | 1461 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1565 descendants; score 132.613
-- `three_generation_observable_theorem_note` - critical; 1037 descendants; score 64.020
-- `graph_first_su3_integration_note` - critical; 1396 descendants; score 60.948
-- `observable_principle_from_axiom_note` - critical; 887 descendants; score 59.294
-- `key_terminology` - critical; 1282 descendants; score 50.325
-- `minimal_axioms_2026-05-03` - critical; 1073 descendants; score 49.569
-- `plaquette_self_consistency_note` - critical; 971 descendants; score 46.425
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 928 descendants; score 44.360
+- `minimal_axioms` - critical; 1592 descendants; score 135.638
+- `three_generation_observable_theorem_note` - critical; 1359 descendants; score 64.409
+- `observable_principle_from_axiom_note` - critical; 1282 descendants; score 62.825
+- `graph_first_su3_integration_note` - critical; 1425 descendants; score 60.978
+- `plaquette_self_consistency_note` - critical; 1362 descendants; score 51.413
+- `key_terminology` - critical; 1399 descendants; score 50.451
+- `minimal_axioms_2026-05-03` - critical; 1295 descendants; score 49.840
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1265 descendants; score 44.806

@@ -1,0 +1,143 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_width_reduction_map_derived_coupled_lift_bounded_2026_06_12.py
+runner_sha256: 704d19f257e8c12f13719541045c7a014a2b1146e3a9bff06706ad56d431db45
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette width-reduction map derived coupled lift runner
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+No new imports: repo-internal finite packet quantities only.
+
+================================================================================================================
+Part 1: width-one anchors
+================================================================================================================
+P_inf(width1 pair support) = 0.615191992185898
+P_trivial_source = 0.422531739647131
+theta(width1) = 0.263745855973467
+PASS: width-one pair-support source limit matches declared anchor
+      delta=3.331e-16
+PASS: width-one theta matches declared anchor
+      delta=2.776e-16
+PASS: trivial source readout stays below the width-one pair-support readout
+      P_triv=0.422531739647131
+
+================================================================================================================
+Part 2: 625-box reduction gates
+================================================================================================================
+pair layer dimension = 625
+PASS: width-two pair layer has 625 states
+perron: control: stationary finite tensor-word rail
+PASS: G1 perron: factorized t reduction reproduces width-one t
+      max_diff=5.551e-17
+PASS: G1 perron: factorized tensor reduction reproduces width-one tensor_word
+      max_diff=2.220e-16
+perron/character: t00=2.199834585240698e-01; theta_closed=1.332788071751081e-02; max |D_eff_norm-D|=4.140054e-01; max normalized t shift=4.491850e-01
+PASS: G2 perron/character: direct 625 contraction matches closed effective t
+      max_diff=1.694e-21
+PASS: G2 perron/character: effective t is nonnegative and finite
+      min=0.000e+00
+PASS: G2 perron/character: effective t is conjugation-symmetric
+      max_error=3.469e-18
+perron/matrix_element: t00=2.199834585240698e-01; theta_closed=7.694855519982092e-03; max |D_eff_norm-D|=4.196896e-01; max normalized t shift=4.714259e-01
+PASS: G2 perron/matrix_element: direct 625 contraction matches closed effective t
+      max_diff=8.674e-19
+PASS: G2 perron/matrix_element: effective t is nonnegative and finite
+      min=0.000e+00
+PASS: G2 perron/matrix_element: effective t is conjugation-symmetric
+      max_error=1.735e-18
+haar_wilson_sum: primary: Wilson channel coefficients d_lambda D_lambda
+PASS: G1 haar_wilson_sum: factorized t reduction reproduces width-one t
+      max_diff=1.110e-16
+PASS: G1 haar_wilson_sum: factorized tensor reduction reproduces width-one tensor_word
+      max_diff=2.220e-16
+haar_wilson_sum/character: t00=6.059672610196630e-02; theta_closed=4.463326775291033e-02; max |D_eff_norm-D|=3.269096e-01; max normalized t shift=1.430126e-01
+PASS: G2 haar_wilson_sum/character: direct 625 contraction matches closed effective t
+      max_diff=1.355e-20
+PASS: G2 haar_wilson_sum/character: effective t is nonnegative and finite
+      min=0.000e+00
+PASS: G2 haar_wilson_sum/character: effective t is conjugation-symmetric
+      max_error=5.421e-20
+haar_wilson_sum/matrix_element: t00=6.059672610196630e-02; theta_closed=2.576902915195543e-02; max |D_eff_norm-D|=3.906577e-01; max normalized t shift=3.578316e-01
+PASS: G2 haar_wilson_sum/matrix_element: direct 625 contraction matches closed effective t
+      max_diff=2.602e-18
+PASS: G2 haar_wilson_sum/matrix_element: effective t is nonnegative and finite
+      min=0.000e+00
+PASS: G2 haar_wilson_sum/matrix_element: effective t is conjugation-symmetric
+      max_error=4.066e-20
+
+================================================================================================================
+Part 3: licensed branch and shared-link control
+================================================================================================================
+licensed reduction: haar_wilson_sum
+licensed intra-layer bond: matrix_element
+control character theta_closed = 4.463326775291033e-02
+primary matrix theta_closed = 2.576902915195543e-02
+PASS: matrix-element and character controls are numerically distinct
+      delta=1.886e-02
+PASS: primary effective D is the derived normalized D^4 row on the Haar/matrix branch
+      D_eff(1,0)=3.187405744484777e-02, D(1,0)^4=3.187405744484778e-02
+PASS: primary measured rho10 decay ratio is the fundamental-trivial t contact ratio
+      theta_closed=2.576902915195543e-02
+
+================================================================================================================
+Part 4: coupled width-two measurement
+================================================================================================================
+k | P_coupled | |P-P_triv| | rho10 | rho11
+----------------------------------------------------------------------------------------------------------------
+ 1 | 0.426273870885 | 3.742131237484e-03 | 1.194800515979e-01 | 2.639320760715e-02
+ 2 | 0.422570803110 | 3.906346247684e-05 | 1.236426471429e-03 | 2.450751953018e-04
+ 3 | 0.422532680942 | 9.412947893361e-07 | 2.987285766962e-05 | 2.281264400444e-06
+ 4 | 0.422531763709 | 2.406169874458e-08 | 7.644438265554e-07 | 2.123501142819e-08
+ 5 | 0.422531740266 | 6.193087709327e-10 | 1.968325927044e-08 | 1.976648173320e-10
+ 6 | 0.422531739663 | 1.595568122070e-11 | 5.071710630994e-10 | 1.839950976390e-12
+ 7 | 0.422531739648 | 4.114486529261e-13 | 1.306916041917e-11 | 1.712707218823e-14
+ 8 | 0.422531739647 | 1.104671909502e-14 | 3.367791238301e-13 | 1.594263138013e-16
+ 9 | 0.422531739647 | 3.330669073875e-16 | 8.678469444247e-15 | 1.484010182997e-18
+10 | 0.422531739647 | 0.000000000000e+00 | 2.236357321031e-16 | 1.381381887801e-20
+11 | 0.422531739647 | 0.000000000000e+00 | 5.762875699985e-18 | 1.285850961002e-22
+12 | 0.422531739647 | 0.000000000000e+00 | 1.485037119120e-19 | 1.196926576577e-24
+rho10 measured theta ratio k8/k7 = 2.576899456648947e-02
+P-error measured theta ratio err7/err6 = 2.578696874391160e-02
+PASS: coupled matrix branch converges to the trivial source limit by k=12
+      err12=0.000e+00
+PASS: measured rho10 theta agrees with the closed effective t-ratio
+      rho_ratio=2.576899456648947e-02, closed=2.576902915195543e-02
+PASS: measured P-error theta tracks the closed effective t-ratio before roundoff
+      err_ratio=2.578696874391160e-02, closed=2.576902915195543e-02
+
+================================================================================================================
+Part 5: fenced comparator distances
+================================================================================================================
+Plaquette reuse license: comparator is used only as comparison/reuse context.
+```text
+P_inf(width1) = 0.615191992185898
+P_inf(width2 coupled, haar/matrix reduction) = 0.422531739647131
+0.5934 fenced comparator = 0.593400000000000
+|P_inf(width1) - 0.5934| = 0.021791992185898
+|P_inf(width2 coupled) - 0.5934| = 0.170868260352869
+signed_displacement_from_width1_in_gap_units = 8.840873789567695
+absolute_distance_closure_fraction = -6.840873789567696
+theta(width2 coupled measured) = 2.576899456648947e-02
+theta(width2 coupled closed_t_ratio) = 2.576902915195543e-02
+```
+PASS: coupled width-two limit is not a bounded lift toward the fenced comparator
+      width1_gap=2.179e-02, width2_gap=1.709e-01
+PASS: reported signed gap units record the overshoot rather than a tuned match
+      signed_gap_units=8.840874, distance_closure=-6.840874
+
+================================================================================================================
+Part 6: note hygiene
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note uses markdown links for one-hop authorities
+PASS: note keeps context pointers as repo filenames without load-bearing links
+PASS: note includes a visible no-go discipline gate for the bounded negative
+Named residuals: finite dominant-weight box; finite Bessel mode support; finite width-two pair layer; no all-weight width-reduction theorem; no physical 3D unmarked spatial Wilson environment computation; no width-to-infinity slab; no slab-stacking to 3D; no L_perp limit; no analytic P(6); no repinning.
+PASS: runner names residuals without claiming them retired
+
+TOTAL: PASS=33, FAIL=0
+
+----- stderr -----
+

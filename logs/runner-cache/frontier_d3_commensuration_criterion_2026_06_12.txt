@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d3_commensuration_criterion_2026_06_12.py
+runner_sha256: 529b5252f5a2f2c7e9dd49eba735ec3c0b96feb9430180e71a45853ba99ffce1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.24
+status: ok
+----- stdout -----
+d=3 truncation commensuration criterion at E=0
+parameters: d=3, t=1.0, mu=5.0, L_values=(8, 10, 12, 14, 16, 18)
+K-chart periods after synthetic step 2 are (L/2, L, L/2).
+S0 anchors
+PASS: S0 wave-8 anchor L=8 protection holds :: L=8 max_abs_after=0.000e+00, tol=1.0e-14
+PASS: S0 wave-8 anchor L=12 protection holds :: L=12 max_abs_after=0.000e+00, tol=1.0e-14
+PASS: S0 wave-8 anchor L=10 failure magnitude :: L=10 max_abs_after=7.4832497863019298e-01, anchor=0.748, tol=1.0e-02
+PASS: S0 wave-8 anchor L=14 failure magnitude :: L=14 max_abs_after=7.4732149222164002e-01, anchor=0.747, tol=1.0e-02
+PASS: S0 anti-fabrication next-checkerboard H_kd before truncation is nonzero at every L :: min_fixed_before=7.4728589243652488e-01, nonzero_tol=1.0e-12
+PASS: S0 landed step-1 dense Schur anchor matches closed form :: L=8, max_abs_error=0.000e+00, tol=1.0e-12
+PASS: S0 landed step-1 eliminated block is diagonal :: L=8, max_offdiag=0.000e+00, tol=1.0e-12
+S1 parity-correspondence finite check
+  L=8: pairs=4096, mismatches=0, holds=True; first_mismatch=None
+  L=10: pairs=15625, mismatches=5700, holds=False; first_mismatch left=(0, 0, 0), right=(0, 0, 3), minimal_delta=(0, 0, -2), d2_parity=0, chart_delta_parity=1
+  L=12: pairs=46656, mismatches=0, holds=True; first_mismatch=None
+  L=14: pairs=117649, mismatches=43512, holds=False; first_mismatch left=(0, 0, 0), right=(0, 0, 5), minimal_delta=(0, 0, -2), d2_parity=0, chart_delta_parity=1
+  L=16: pairs=262144, mismatches=0, holds=True; first_mismatch=None
+  L=18: pairs=531441, mismatches=197640, holds=False; first_mismatch left=(0, 0, 0), right=(0, 0, 5), minimal_delta=(0, 0, -4), d2_parity=0, chart_delta_parity=1
+PASS: S1 correspondence holds for L=8,12,16 :: protected_L_values=(8,12,16)
+PASS: S1 correspondence fails for L=10,14,18 :: unprotected_L_values=(10,14,18)
+PASS: S1 correspondence equals all-K-periods-even on the grid :: K_periods=(L/2,L,L/2), grid=(8,10,12,14,16,18)
+PASS: S1 correspondence-holds iff H_kd_after is below the fixed protection tolerance on the grid :: fixed protection tolerance=1.0e-14
+S2 dichotomy table after even-d^2 truncation:
+  L   K-periods       all_periods_even  parity_holds  H_kd_before        H_kd_after
+   8  (4, 8, 4)       True              True          7.5322071744240682e-01  0.0000000000000000e+00
+  10  (5, 10, 5)      False             False         7.4832497863019309e-01  7.4832497863019298e-01
+  12  (6, 12, 6)      True              True          7.4747736396794551e-01  0.0000000000000000e+00
+  14  (7, 14, 7)      False             False         7.4732149222164002e-01  7.4732149222164002e-01
+  16  (8, 16, 8)      True              True          7.4729172444226410e-01  0.0000000000000000e+00
+  18  (9, 18, 9)      False             False         7.4728589243652488e-01  7.4728589243652488e-01
+PASS: S2 out-of-sample L=16 prediction: protection holds :: L=16 max_abs_after=0.000e+00, tol=1.0e-14
+PASS: S2 out-of-sample L=18 prediction: protection fails :: L=18 max_abs_after=7.4728589243652488e-01, threshold=1.0e-01
+PASS: S2 protected branch L=8,12,16 holds at 1e-14 :: L8=0.000e+00, L12=0.000e+00, L16=0.000e+00, tol=1.0e-14
+PASS: S2 unprotected branch L=10,14,18 fails above 0.1 :: L10=7.483e-01, L14=7.473e-01, L18=7.473e-01, threshold=1.0e-01
+S3 note hygiene
+PASS: canonical claim type is present and noncanonical Type front matter is absent :: bounded_theorem with single claim-type field
+PASS: status authority and no-promotion statements are present :: audit status remains independent
+PASS: step-2 dichotomy and step-1 parity dependencies are linked :: dependency graph receives both structural anchors
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

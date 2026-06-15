@@ -1,13 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py
-runner_sha256: 9a1b892cde8055ffa1ad1e8e299de17a67fe0d059d769697adb49b89a5c60054
+runner_sha256: ea66b417c7a519d7f64ee85a0b8248b24b4f44321ad76cec321120f3d83e3b5b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 === Bare alpha_3 / alpha_em formal assumed-input identity theorem ===
 PASS: source file exists: docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md
+PASS: archived audited-failed wrapper exists: archive_unlanded/framework-bare-alpha-assumed-input-salvage-2026-04-30/FRAMEWORK_BARE_ALPHA_3_ALPHA_EM_DIMENSION_FIXED_RATIO_SUPPORT_NOTE_2026-04-25.md
 PASS: note status is bounded formal identity theorem only
 PASS: note declares formal hypotheses H1-H4
 PASS: note states exact load-bearing theorem
@@ -16,14 +17,25 @@ PASS: note blocks minimal-stack promotion
 PASS: note blocks low-energy phenomenology
 PASS: note records current 2026-04-30 source authority
 PASS: status boundary forbids bare retained
-PASS: forbidden overclaim absent: support corollary on a retained EW-normalization surface
-PASS: forbidden overclaim absent: retained EW normalization lane remains the authoritative route
-PASS: forbidden overclaim absent: candidate retained-grade support corollary on the retained EW surface
-PASS: forbidden overclaim absent: Retained derivation theorem on main
-PASS: forbidden overclaim absent: three independent retained inputs
-PASS: forbidden overclaim absent: independent retained structural routes
-PASS: forbidden overclaim absent: **Status:** retained
-PASS: forbidden overclaim absent: physical use is closed by this row
+PASS: archived failed wrapper points at canonical repair packet
+PASS: archived failed wrapper is non-authority conditional algebra only
+PASS: archived failed wrapper reproduction matches current runner verdict
+PASS: forbidden overclaim absent from canonical note: support corollary on a retained EW-normalization surface
+PASS: forbidden overclaim absent from archived wrapper: support corollary on a retained EW-normalization surface
+PASS: forbidden overclaim absent from canonical note: retained EW normalization lane remains the authoritative route
+PASS: forbidden overclaim absent from archived wrapper: retained EW normalization lane remains the authoritative route
+PASS: forbidden overclaim absent from canonical note: candidate retained-grade support corollary on the retained EW surface
+PASS: forbidden overclaim absent from archived wrapper: candidate retained-grade support corollary on the retained EW surface
+PASS: forbidden overclaim absent from canonical note: Retained derivation theorem on main
+PASS: forbidden overclaim absent from archived wrapper: Retained derivation theorem on main
+PASS: forbidden overclaim absent from canonical note: three independent retained inputs
+PASS: forbidden overclaim absent from archived wrapper: three independent retained inputs
+PASS: forbidden overclaim absent from canonical note: independent retained structural routes
+PASS: forbidden overclaim absent from archived wrapper: independent retained structural routes
+PASS: forbidden overclaim absent from canonical note: **Status:** retained
+PASS: forbidden overclaim absent from archived wrapper: **Status:** retained
+PASS: forbidden overclaim absent from canonical note: physical use is closed by this row
+PASS: forbidden overclaim absent from archived wrapper: physical use is closed by this row
 PASS: input d fixed to 3 :: actual=3, expected=3
 PASS: H2 formal hypothesis: g3^2 = 1 :: actual=1, expected=1
 PASS: H3 formal hypothesis: g2^2 = 1/(d+1) :: actual=1/4, expected=1/4
@@ -51,7 +63,7 @@ PASS: dimension fingerprint d=4 :: ratio=11
 PASS: dimension fingerprint d=5 :: ratio=13
 PASS: integer 9 uniquely maps to d=3 in checked range
 PASS: fingerprint sequence odd integers
-TOTAL: PASS=44, FAIL=0
+TOTAL: PASS=56, FAIL=0
 VERDICT: FORMAL ASSUMED-INPUT IDENTITY THEOREM VERIFIED
 
 ----- stderr -----

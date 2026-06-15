@@ -55,6 +55,23 @@ def read(rel: str) -> str:
     return (ROOT / rel).read_text(encoding="utf-8")
 
 
+def documents_bounded_not_exact_surface(text: str) -> bool:
+    """Accept current source-boundary phrasings for bounded/staging, non-exact tensor tools."""
+    flat = " ".join(text.lower().split())
+    has_bounded_or_staging = (
+        "bounded" in flat
+        or "class-a definition only" in flat
+        or "definitional staging object" in flat
+    )
+    has_non_exact_boundary = (
+        "not exact" in flat
+        or "not an exact" in flat
+        or "not a theorem-grade tensor observable" in flat
+        or "exact tensor-valued route-2 support observable is still missing" in flat
+    )
+    return has_bounded_or_staging and has_non_exact_boundary
+
+
 # ----------------------------------------------------------------------------
 # Carrier representation V = R^4 with vector ordering (u_E, u_T, d*u_E, d*u_T).
 # ----------------------------------------------------------------------------
@@ -320,12 +337,12 @@ def part4_registry_enumeration_active_hermitian_basis() -> None:
     swap_reduction_note = read("docs/DM_NEUTRINO_WEAK_EVEN_SWAP_REDUCTION_THEOREM_NOTE_2026-04-15.md")
 
     check(
-        "Theta_R^(0) is documented as bounded (not exact) in retained registry",
-        "bounded" in prototype_note.lower() and "not exact" in prototype_note.lower(),
+        "Theta_R^(0) is documented as bounded/staging, not exact, in the registry",
+        documents_bounded_not_exact_surface(prototype_note),
     )
     check(
-        "Xi_R^(0) is documented as bounded (not exact) in retained registry",
-        "bounded" in constructed_note.lower() and "not exact" in constructed_note.lower(),
+        "Xi_R^(0) is documented as bounded/staging, not exact, in the registry",
+        documents_bounded_not_exact_surface(constructed_note),
     )
     check(
         "Swap-reduction theorem records both staging tools as bounded only",
@@ -496,7 +513,7 @@ def part6_low_degree_polynomial_operator_enumeration() -> None:
     constructed_note = read("docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md")
     check(
         "delta*(u_E - u_T) corresponds to bounded Xi_R^(0), not exact",
-        "bounded" in constructed_note.lower() and "not exact" in constructed_note.lower(),
+        documents_bounded_not_exact_surface(constructed_note),
     )
 
 

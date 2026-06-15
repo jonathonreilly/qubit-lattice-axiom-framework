@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_single_clock_codimension1_evolution_check.py
-runner_sha256: 8a2d5f1f6168df7f7090937f3d2e87ff0174503a84e0eb0e0ce427cc82ccbefd
+runner_sha256: 51d040b47b2c84dcf0cdc144c1bf2c822cda573c3dacf8685ff1730057455bb9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.92
+elapsed_sec: 0.93
 status: ok
 ----- stdout -----
 ========================================================================
@@ -91,14 +91,15 @@ exact time-space exchange symmetry shows the axis itself is a premise
   [PASS] [D] note declares the axis premise (B-AXIS) (premise declared with N2/N4/N5 clauses)
   [PASS] [D] note withdraws the old S3 unique-RP-axis claim (withdrawal recorded in scope and changelog)
   [PASS] [D] claim stays transfer- and tau-relative (scope-boundary compliant) (G-SCOPE compliance wording present)
-  [PASS] [D] claim_type is bounded_theorem (no positive_theorem over-claim) (yaml handoff checked)
-  [PASS] [D] proposal firewall: B-AXIS open means proposal_allowed is false (no retained-grade proposal while B-AXIS is declared)
+  [PASS] [D] claim_type is bounded_theorem (no positive_theorem over-claim) (canonical bounded claim type checked)
+  [PASS] [D] proposal firewall: B-AXIS remains a declared blocker (no retained-grade proposal while B-AXIS is declared)
   [PASS] [D] spatial-clustering clause not consumed (cluster L2 is conditional) (S2'(b) demoted to conditional remark)
   [PASS] [D] note retires B-RANGE from current scope (S2'(c) now uses the retained free-sector quasilocal supplier)
   [PASS] [D] note cites the free-bilinear quasilocal LR bridge as propagation supplier (free U=1 exact-log sector and finite quasilocal lightcone named)
+  [PASS] [D] 2026-06-12 firewall: B-RANGE retired, B-AXIS remains the live blocker (axis-selection no-go route wired without retained promotion)
 
 ========================================================================
-TOTAL: PASS=44 FAIL=0
+TOTAL: PASS=45 FAIL=0
 ========================================================================
 
 ----- stderr -----

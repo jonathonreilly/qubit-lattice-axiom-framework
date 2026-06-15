@@ -32,7 +32,8 @@ which is b^-2). So the lattice DOES give 1/b geometric lensing via the geodesic,
       = 2a/b -> 1/b lensing (alpha*b -> const).
   T5  CONTROL (teeth): no field coupling (n=1, c=0) gives ZERO deflection.
   T6  DISTINCT from the Kubo observable: the geometric ray deflection (full-path integral
-      of grad phi) is 1/b, whereas the dipole-suppressed Kubo susceptibility (#3191) is b^-2.
+      of grad phi) is 1/b, whereas the retained-bounded dipole-suppressed Kubo
+      susceptibility packet is a different bounded object.
 
 The phi->Newtonian-potential normalization c=1/(2E) (equivalently G_Newton) is a registered/
 observed scale (G3); only the refractive-index FORM n=1-c*phi and the 1/b deflection FORM are
@@ -166,9 +167,13 @@ if KUBO_RUNNER.exists() and KUBO_CACHE.exists():
           kubo_header.get("runner_sha256") == sha256(KUBO_RUNNER))
 else:
     check("KUBO comparison cache is SHA-fresh", False)
-check("KUBO comparison packet status is exposed as unaudited",
-      rows.get("lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07", {}).get("effective_status") == "unaudited"
-      and "unaudited at this ledger snapshot" in note_text)
+check("AUTH lattice Green support is retained_bounded",
+      rows.get("lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07", {}).get("effective_status") == "retained_bounded"
+      and "`lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | retained_bounded" in note_text)
+check("KUBO comparison packet status is exposed as retained_bounded comparison-only authority",
+      rows.get("lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07", {}).get("effective_status") == "retained_bounded"
+      and "`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | retained_bounded" in note_text
+      and "does not supply the Fermat/eikonal bridge" in note_text)
 check("SOURCE no full premise-4 promotion",
       "does not by itself promote clean-chain premise" in note_text
       and "not a full retained" in note_text

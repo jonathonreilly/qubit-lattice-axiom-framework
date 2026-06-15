@@ -252,3 +252,11 @@ operator class from the bosonic qubit substrate) would move sub-admission
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency. The independent audit lane is the single
 status authority.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [acphilambda_hw_complementation_equivariance_support_note_2026-06-09](ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md)
+- [flavor_carrier_from_axioms_momentum_forced_2026-05-31](FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md)
+- [color_einselection_pointer_frame_fork_is_a_unistochastic_irreducibility_criterion_narrow_theorem_note_2026-06-09](COLOR_EINSELECTION_POINTER_FRAME_FORK_IS_A_UNISTOCHASTIC_IRREDUCIBILITY_CRITERION_NARROW_THEOREM_NOTE_2026-06-09.md)

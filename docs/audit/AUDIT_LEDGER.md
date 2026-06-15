@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 912 |
+| **retained_bounded** | 913 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
 | unaudited | 1515 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 1343 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 1344 |
 | `audited_conditional` | 15 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 26 |
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -675,6 +673,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -9223,6 +9222,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Conditional on the Matsubara free-energy density formula, expand Delta f(L_t,m) at small m and evaluate the APBC sums to obtain A_2=1/(8u_0^2), A_4=1/(7u_0^2), A_inf=1/(4 sqrt(3)u_0^2), and C_inf^(4D)=(3/4)^(1/8).  _(class `A`)_
 - **chain closes:** True — Within the narrowed scope, the chain closes: the cited free-energy formula supplies the only load-bearing input, and the endpoint formulas follow by Taylor expansion and elementary APBC sums. The dimension-4 physical insertion theorem remains open but is explicitly outside the audited algebraic scope.
 - **rationale:** The load-bearing step is a genuine algebraic consequence of the cited Matsubara free-energy density formula, whose provided authority is marked as retained-grade decoration under a retained parent. The runner source actually computes the small-m coefficient and endpoint expressions rather than merely printing constants, though the Part 4 checks are external comparator checks against C_obs and are not used to close the in-scope algebra. Because the note explicitly excludes Bridge 2 from the theorem scope and does not claim physical insertion closure, that open bridge does not prevent the bounded algebraic claim from closing.
+- **auditor confidence:** high
+
+### `hierarchy_formula_honest_status_note_2026-05-10`
+
+- **Note:** [`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded T1 structural-support theorem: naive d=4 species count, matching u_0-degree 16 of the 2^4 APBC block determinant, exact (7/8)^(1/4) selector, K/sensitivity arithmetic over B1, with D1/C1 only as declared readout appendices and not formula or EW-VEV closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-211137-303c8ce6ab-hierarchy_formula_honest_sta`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the minimal 2^4 all-antiperiodic eta-phase block, det(u_0 D + m) = (m^2 + 4 u_0^2)^8, so at m = 0 the determinant u_0-degree is exactly 16, matching the naive d=4 species count.  _(class `C`)_
+- **chain closes:** True — For the narrowed T1/D1/C1 scope, the species count, determinant degree, selector, and sensitivity claims close from local algebra and the retained one-hop authorities; C1 is arithmetic over B1 plus the scale-reference ruler. This does not close the physical hierarchy formula, B3/B4 transport, or B5 observable identification.
+- **rationale:** The restricted packet and runner source support the narrowed claim: an independent shift-operator check gives D^2 = -4I on the 2^4 all-APBC block, hence the determinant formula and u_0-degree 16, while the naive zero set and eta/zeta selector are exact algebra. The K value, C1 readout, elasticities, resolution window, and falsification factors also check by direct logarithmic/arithmetic calculation, and PDG appears only in quarantined comparator/anti-tuning roles. The plaquette value is retained_bounded and used only as the B1 reuse input, and the scale-reference primitive contributes only the dimensionful ruler. The clean verdict applies only to bounded structural support plus declared-input readout; B3/B4/B5 remain open outside the clean scope.
 - **auditor confidence:** high
 
 ### `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10`

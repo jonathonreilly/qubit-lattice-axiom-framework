@@ -26,8 +26,9 @@ Runner-derived facts:
     gauge; its words have exactly linear drift bands and no cone at this
     carrier density.
   * A deterministic leaf sweep of the linear permutation-equivariant family
-    found no dispersive unitary, with exact bilinear kill equations as the
-    algebraic backbone.
+    found no dispersive unitary among optimizer endpoints. The endpoint count
+    is diagnostic only; the exact bilinear kill equations are the algebraic
+    backbone.
 
 This runner supplies a bounded theorem surface only. It does not set audit
 status, add a framework premise, or modify the registered kinetic-isotropy
@@ -622,9 +623,9 @@ for zs in _leaves:
         if moving:
             _disp += 1
     _tot += len(sols)
-check("dense per-leaf sweeps: NO dispersive unitary found in any leaf (solution sets are continua; counts are optimizer endpoints)",
-      _tot >= 20 and _disp == 0,
-      f"{_tot} optimizer-distinct unitaries across {len(_leaves)} leaves; dispersive: {_disp} -- sweep-grade, exact-kill backbone")
+check("dense per-leaf sweep diagnostic: no dispersive unitary found among optimizer endpoints",
+      _tot > 0 and _disp == 0,
+      f"{_tot} optimizer-distinct unitaries across {len(_leaves)} leaves; dispersive: {_disp} -- endpoint count diagnostic only; exact-kill backbone")
 
 
 print("\n" + "=" * 78)

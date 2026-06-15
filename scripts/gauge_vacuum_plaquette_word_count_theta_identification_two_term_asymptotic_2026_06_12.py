@@ -46,6 +46,8 @@ ADJOINT = (1, 1)
 SYM20 = (2, 0)
 SYM02 = (0, 2)
 TARGET_THETA = 0.263745855973467
+DISPLAYED_THETA_SQUARED_PREFIX = "theta^2 = 0.069561876543"
+STALE_THETA_SQUARED_PREFIX = "theta^2 = 0.0695618585"
 KMAX = 20
 
 NOTE_PATH = (
@@ -447,6 +449,11 @@ def main() -> int:
             "note names this primary runner as a plain-text pointer",
             "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py"
             in text,
+        )
+        check(
+            "note displays the audited theta^2 secondary scale",
+            DISPLAYED_THETA_SQUARED_PREFIX in text
+            and STALE_THETA_SQUARED_PREFIX not in text,
         )
         check(
             "note keeps scratch-packet context non-authoritative without stale temp paths",

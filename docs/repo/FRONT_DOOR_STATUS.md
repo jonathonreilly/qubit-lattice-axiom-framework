@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1517 |
-| Retained-grade rows, including boxed decorations | 1400 |
+| Applied audit verdicts | 1518 |
+| Retained-grade rows, including boxed decorations | 1401 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 209 |
-| Retained bounded rows | 928 |
+| Retained bounded rows | 929 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 40 |
-| Unaudited rows | 1475 |
+| Unaudited rows | 1474 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 30 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1477 |
-| Ready rows | 61 |
+| Total pending rows | 1476 |
+| Ready rows | 60 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
-| High pending | 272 |
-| Medium pending | 443 |
+| High pending | 273 |
+| Medium pending | 441 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`pmns_tm2_residual_consequence_bounded_note_2026-05-26`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md) - medium; unaudited
+- [`s3_time_primitive_chain_note`](../../docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md) - high; unaudited
 - [`observable_principle_p1_p2_from_qubit_trace_note_2026-05-20`](../../docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md) - medium; unaudited
 - [`hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16`](../../docs/HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING_BOUNDED_NOTATION_EQUIVALENCE_NOTE_2026-05-16.md) - medium; unaudited
 - [`koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02`](../../docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 - [`work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md) - medium; unaudited
 - [`lattice_3d_inverse_square_kernel_helper_note_2026-04-04`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) - medium; unaudited
 - [`free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12`](../../docs/FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
-- [`s3_time_primitive_chain_note`](../../docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md) - medium; unaudited
+- [`r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08`](../../docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
-| High nodes | 514 |
-| Medium nodes | 928 |
+| High nodes | 515 |
+| Medium nodes | 927 |
 | Leaf nodes | 1470 |
 
 Top load-bearing rows by graph score:

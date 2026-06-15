@@ -15,14 +15,14 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 358 | 21.49 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/su3_casimir_fundamental_check.py` |
+| 1 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | audit_in_progress | critical | 358 | 21.49 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/su3_casimir_fundamental_check.py` |
 | 2 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | positive_theorem | unaudited | critical | 314 | 14.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_quark_antiquark_color_singlet_check.py` |
 | 3 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | unaudited | critical | 285 | 15.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_mass_status_audit.py` |
 | 4 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | unaudited | critical | 262 | 22.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
 | 5 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | critical | 261 | 14.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_u0_plaquette_quartic_derivation.py` |
 | 6 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 258 | 13.52 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_clifford_chirality_dimension_narrow.py` |
 | 7 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | critical | 257 | 13.51 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py` |
-| 8 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | unaudited | critical | 238 | 20.40 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_mru_weight_class_obstruction_theorem.py` |
+| 8 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | unaudited | critical | 239 | 20.91 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_mru_weight_class_obstruction_theorem.py` |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1080 | 44.58 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
 | 10 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 1058 | 15.55 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py` |
 | 11 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 927 | 20.36 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_lattice_noether_check.py` |

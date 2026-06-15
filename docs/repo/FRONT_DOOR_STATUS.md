@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 910 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1520 |
+| Unaudited rows | 1519 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 14 |
 | Audited renaming rows | 29 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; audit_in_progress
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
 - [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited

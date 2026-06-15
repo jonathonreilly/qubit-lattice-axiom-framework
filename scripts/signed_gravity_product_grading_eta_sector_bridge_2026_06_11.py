@@ -17,8 +17,10 @@ Verifies, in exact finite dimensions:
        counting asymmetries eta = +/-2; labels chi_{+/-} = +/-1; the
        orientation-image eta flip on a random unitary conjugate.
   [T3] quantized label table on the spectrally-truncated twisted tower
+       for the exact half-integer cutoff family Lambda in Z>=0+1/2,
        with the proposal's branch conditions (gap failure at a = 0;
-       eta = 0 at a = 1/2; chi = -1 on (1/2, 1)).
+       eta = 0 at a = 1/2; chi = -1 on (1/2, 1)), the exact floor
+       formula, and explicit non-half-integer counterexample cutoffs.
   [T4] coexistence: D_tot Hermitian; [D_gen, C3] = 0; {D_gen-part,
        Gamma_prod} = 0; [D_bdy-part, Gamma_prod] = 0; [N, eps] = 0;
        {e4, eps} = 0; {e1, eps} = 0.
@@ -71,6 +73,11 @@ def tower_spectral(a: float, lam_max: float) -> np.ndarray:
     n = np.arange(-int(lam_max + 2), int(lam_max + 2) + 1)
     lam = n + a
     return lam[np.abs(lam) <= lam_max]
+
+
+def eta_formula_positive(a: float, lam_max: float) -> int:
+    """Closed-form eta for a in (0, 1/2) on the spectral cutoff."""
+    return int(np.floor(lam_max - a) + 1 - np.floor(lam_max + a))
 
 
 def label(lam: np.ndarray) -> str:
@@ -171,47 +178,57 @@ def main() -> int:
           e_img == -e_orig, f"{e_orig:+d} -> {e_img:+d}")
 
     # =======================================================================
-    section("[T3] quantized labels + the proposal's branch conditions")
+    section("[T3] half-integer-cutoff labels + the proposal's branch conditions")
     # =======================================================================
     table = {0.0: "UNDEF(gap)", 0.1: "+1", 0.3: "+1", 0.49: "+1",
              0.5: "UNDEF(eta=0)", 0.7: "-1", 0.9: "-1",
              -0.1: "-1", -0.3: "-1"}
     ok_all = True
-    half_integer_cutoffs = [5.5, 20.5, 37.5]
-    for cutoff in half_integer_cutoffs:
-        for aa, expect in table.items():
-            got = label(tower_spectral(aa, cutoff))
-            if got != expect:
-                ok_all = False
-                print(
-                    f"    MISMATCH Lambda={cutoff}, a={aa}: "
-                    f"got {got}, expect {expect}"
-                )
-    check("T3", "label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, "
-                "0.7, 0.9} matches for Lambda in Z+1/2 (chi quantized; "
-                "branch conditions fail exactly at a = 0 and a = 1/2)",
-          ok_all)
-    counterexamples = [
-        (20.0, 0.3, "UNDEF(eta=0)"),
-        (20.25, 0.3, "UNDEF(eta=0)"),
-        (20.75, 0.3, "UNDEF(eta=0)"),
-    ]
-    counter_ok = True
-    counter_details = []
-    for cutoff, aa, expect in counterexamples:
-        got = label(tower_spectral(aa, cutoff))
-        counter_details.append(f"Lambda={cutoff}, a={aa}: {got}")
+    for aa, expect in table.items():
+        got = label(tower_spectral(aa, lam_max))
         if got != expect:
-            counter_ok = False
-    check("T3", "non-half-integer spectral cutoffs are excluded by explicit "
-                "counterexamples",
-          counter_ok, "; ".join(counter_details))
+            ok_all = False
+            print(f"    MISMATCH a={aa}: got {got}, expect {expect}")
+    check("T3", "label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, "
+                "0.7, 0.9} at Lambda = 20.5 matches exactly (chi "
+                "quantized; branch conditions fail exactly at a = 0 "
+                "and a = 1/2)", ok_all)
     e0, h0 = eta_h(tower_spectral(0.0, lam_max))
     check("T3", "a = 0 (untwisted): h_delta = 1, label undefined "
                 "(gap branch condition fails)", h0 == 1)
     e5, h5 = eta_h(tower_spectral(0.5, lam_max))
     check("T3", "a = 1/2: spectrum reflection-symmetric, eta_delta = 0, "
                 "label undefined", e5 == 0 and h5 == 0)
+    formula_ok = True
+    for LL in (0.5, 1.5, 2.5, 20.5, 20.25, 20.75):
+        for aa in (0.1, 0.3, 0.49):
+            e_direct, _ = eta_h(tower_spectral(aa, LL))
+            if e_direct != eta_formula_positive(aa, LL):
+                formula_ok = False
+                print(f"    FLOOR MISMATCH Lambda={LL}, a={aa}: "
+                      f"direct={e_direct}, formula={eta_formula_positive(aa, LL)}")
+    check("T3", "closed floor formula eta=floor(Lambda-a)+1-floor(Lambda+a) "
+                "matches direct spectral counts on tested cutoffs",
+          formula_ok)
+    half_integer_ok = True
+    for LL in (0.5, 1.5, 2.5, 7.5, 20.5):
+        for aa in (0.1, 0.25, 0.49):
+            ep, hp = eta_h(tower_spectral(aa, LL))
+            en, hn = eta_h(tower_spectral(-aa, LL))
+            half_integer_ok = half_integer_ok and ep == 1 and hp == 0 and en == -1 and hn == 0
+    check("T3", "uniform half-integer cutoff family Lambda in Z>=0+1/2 "
+                "gives chi=+1 on (0,1/2) and chi=-1 on (-1/2,0) "
+                "for sampled twists",
+          half_integer_ok)
+    counterexamples_ok = (
+        eta_h(tower_spectral(0.30, 20.25))[0] == 0
+        and eta_h(tower_spectral(0.30, 20.75))[0] == 0
+        and eta_h(tower_spectral(-0.30, 20.25))[0] == 0
+        and eta_h(tower_spectral(-0.30, 20.75))[0] == 0
+    )
+    check("T3", "non-half-integer cutoffs Lambda=20.25 and 20.75 are "
+                "excluded by explicit counterexamples at |a|=0.30",
+          counterexamples_ok)
 
     # =======================================================================
     section("[T4] coexistence with the Koide-side anticommutation "

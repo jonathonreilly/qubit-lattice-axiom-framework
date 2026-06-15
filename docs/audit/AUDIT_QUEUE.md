@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1452
+**Total pending:** 1451
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 5
 
 By criticality:
-- `critical`: 332
+- `critical`: 331
 - `high`: 254
 - `medium`: 427
 - `leaf`: 439
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | audit_in_progress | critical | 263 | 11.54 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py` |
+| 1 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | unaudited | critical | 259 | 17.02 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
 | 2 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | unaudited | critical | 1322 | 18.87 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_rescaling_conditional_algebra_check.py` |
 | 3 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | unaudited | critical | 1321 | 16.37 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_constraint_surface_check.py` |
 | 4 | `g_bare_derivation_note` | positive_theorem | unaudited | critical | 1318 | 23.36 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_derivation.py` |

@@ -1,0 +1,19 @@
+loop_slug: koide-mru-unreduced-obstruction-20260615
+target_claim_id: koide_mru_weight_class_obstruction_theorem_note_2026-04-19
+mode: source_side_audit_unlock
+current_branch: codex/koide-mru-unreduced-obstruction-20260615
+base_ref: origin/main
+actual_current_surface_status: no-go
+claim_boundary: "Unreduced 3x3 determinant carrier obstruction only; reduced SO(2) quotient material is context-only."
+audit_owned_surfaces_touched: false
+files_touched:
+  - docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md
+  - scripts/frontier_koide_mru_weight_class_obstruction_theorem.py
+  - logs/runner-cache/frontier_koide_mru_weight_class_obstruction_theorem.txt
+next_exact_action: "Reviewer/auditor should re-audit the row as a bounded unreduced obstruction, not as a conditional positive MRU quotient route."
+remaining_blocker: "A separate positive MRU quotient route still needs an independently audited scalar-lane SO(2) quotient or cos(3 arg b) decoupling theorem."
+verification:
+  direct_runner: "PASS: PYTHONPATH=scripts python3 scripts/frontier_koide_mru_weight_class_obstruction_theorem.py"
+  targeted_cache_refresh: "PASS: PYTHONPATH=scripts python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_mru_weight_class_obstruction_theorem.py --force --allow-non-main --push-mode none"
+  pr_diff_cache_check: "PASS: PYTHONPATH=scripts python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --allow-non-main"
+  full_queue_cache_check: "BLOCKED on unrelated main cache: scripts/kinetic_isotropy_3d_simultaneous_tick_2026_06_10.py; repair is PR #4013."

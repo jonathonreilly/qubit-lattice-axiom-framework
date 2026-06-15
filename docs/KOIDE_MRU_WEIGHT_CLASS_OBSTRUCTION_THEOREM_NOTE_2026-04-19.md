@@ -1,6 +1,6 @@
-# Koide MRU Weight-Class Obstruction Boundary
+# Koide MRU Unreduced Weight-Class Obstruction Boundary
 
-**Date:** 2026-04-19 (source-boundary correction 2026-06-12)
+**Date:** 2026-04-19 (source-boundary correction 2026-06-12; unreduced-scope correction 2026-06-15)
 **Lane:** Charged-lepton Koide / MRU
 **Claim type:** bounded_theorem
 **Status:** source proposal; independent audit required.
@@ -10,12 +10,15 @@ registry, ledger, queue, or publication-status surfaces.
 **Primary runner:** `scripts/frontier_koide_mru_weight_class_obstruction_theorem.py`
 **Runner cache:** `logs/runner-cache/frontier_koide_mru_weight_class_obstruction_theorem.txt`
 
+**Audited theorem scope:** unreduced carrier obstruction only.
+
 **Source boundary:** the exact unreduced `3 x 3` determinant carrier counts
-weights `(1,2)` and therefore cannot force MRU by itself. The reduced
-two-slot calculation is kept here only as a conditional route: **if** an
-independent theorem supplies the scalar-lane `SO(2)` quotient, then the
-reduced carrier has equal weights and lands at `kappa = 2`. This note does
-not derive that physical quotient bridge.
+weights `(1,2)` and therefore cannot force MRU by itself. This is the theorem
+claimed by this source. The reduced two-slot calculation is kept only as
+non-load-bearing future-route context: **if** an independent theorem supplies
+the scalar-lane `SO(2)` quotient, then the reduced carrier has equal weights
+and lands at `kappa = 2`. That context is not part of the theorem claim. This
+note does not derive that physical quotient bridge.
 
 **No-promotion statement:** independent audit/review owns claim status. This
 source does not promote the row and does not assert that the scalar
@@ -61,10 +64,13 @@ So:
 
   carries weights `(1,2)` and lands at `kappa = 1`.
 
-That obstruction remains exact.
+That obstruction remains exact. It is the whole bounded theorem asserted here:
+on the unreduced `3 x 3` isotypic-scalar determinant carrier, the
+log-volume/determinant law selects `kappa = 1`, not MRU.
 
-The resolution is not to dispute that calculation. The conditional route is
-to supply the carrier reduction the old theorem said was missing:
+The rest of this note records a non-load-bearing future route, not a theorem
+claim. A later positive route would have to supply the carrier reduction the
+old theorem said was missing:
 
 ```text
 (r_0, r_1, r_2)  ->  (rho_+, rho_perp)
@@ -85,6 +91,8 @@ det diag(rho_+, rho_perp) = rho_+ rho_perp,
 ```
 
 so the same log-volume law is equal-weight automatically and lands at MRU.
+That reduced-carrier paragraph is conditional context only; the unreduced
+obstruction theorem does not consume it.
 The missing science is the physical quotient theorem itself, equivalently the
 decoupling of the `cos(3 arg b)` channel on the charged-lepton scalar lane.
 
@@ -205,7 +213,7 @@ That is the exact obstruction:
 
 ---
 
-## 4. The conditional missing object: supplied SO(2) quotient route
+## 4. Non-load-bearing context: supplied SO(2) quotient route
 
 The missing object identified above was:
 
@@ -214,8 +222,10 @@ an independently audited 1:1 real-isotype measure, or an equivalent canonical re
 two-slot (+, perp) carrier before applying the log-volume / extremal law.
 ```
 
-This source does not derive that object. It records the exact algebra that
-would become available after an independently audited bridge supplies it.
+This source does not derive that object. Sections 4 and 5 record only the
+exact algebra that would become available after an independently audited
+bridge supplies it. They are not part of the theorem claim and are not used
+to prove the unreduced obstruction.
 
 The non-trivial real doublet
 
@@ -267,11 +277,12 @@ rho_perp^2 = E_perp.
 
 This is the two-slot real-isotype carrier the earlier theorem said would be
 sufficient. The carrier is not derived here as the physical charged-lepton
-lane.
+lane, and this branch does not ask audit to treat it as a load-bearing
+premise of the bounded theorem.
 
 ---
 
-## 5. Conditional resolution on the reduced carrier
+## 5. Non-load-bearing context: reduced-carrier resolution
 
 Apply the same log-volume / extremal law on the reduced carrier
 
@@ -311,21 +322,27 @@ In other words:
 > the obstruction remains exact on the unreduced carrier; it would no longer
 > block the route after an independent bridge supplies the reduced carrier.
 
+This is a future-route sanity check only. The theorem audited from this source
+is still the unreduced obstruction of Section 3.
+
 ---
 
 ## 6. Scientific consequence
 
-The theorem should now be read in two layers:
+The theorem should now be read as one closed negative layer plus one explicit
+future-route context layer:
 
 1. **negative layer:** unreduced determinant multiplicities alone do not force
-   MRU;
-2. **conditional support layer:** if the scalar charged-lepton lane is
-   independently shown to live on the real-isotype quotient, then there are
-   only two slots and the log-volume law is exactly the MRU leaf.
+   MRU. This is the theorem claim;
+2. **context layer:** if the scalar charged-lepton lane is independently
+   shown to live on the real-isotype quotient, then there are only two slots
+   and the log-volume law is exactly the MRU leaf. This is not part of the
+   theorem claim.
 
-So the weight-class obstruction has been converted into a precise blocker:
-derive the quotient/`cos(3 arg b)` decoupling bridge, or keep this row as
-conditional support.
+So the weight-class obstruction row should no longer be read as a conditional
+positive MRU derivation. It is a bounded unreduced no-go: derive the
+quotient/`cos(3 arg b)` decoupling bridge in a separate upstream theorem, or
+do not use this row as a positive MRU carrier.
 
 ---
 
@@ -335,11 +352,12 @@ conditional support.
 PYTHONPATH=scripts python3 scripts/frontier_koide_mru_weight_class_obstruction_theorem.py
 ```
 
-The runner now certifies both:
+The runner now certifies:
 
-1. the old obstruction on the unreduced `3 x 3` carrier, and
-2. the conditional real-isotype quotient algebra that would resolve it once
-   the physical quotient bridge is supplied.
+1. the obstruction on the unreduced `3 x 3` carrier, which is the theorem
+   claim, and
+2. context-only checks of the real-isotype quotient algebra that would become
+   relevant only after a separate physical quotient bridge is supplied.
 
 ## 8. Source-boundary perimeter
 
@@ -353,8 +371,8 @@ from the physical carrier-identification step:
 | Weighted family `S_{mu,nu} = mu log E_+ + nu log E_perp` has unique stationary leaf `kappa = 2 mu / nu` (Section 2) | direct algebra |
 | `rank(P_+) = 1`, `rank(P_perp) = 2`, and `det(alpha P_+ + beta P_perp) = alpha beta^2` (Section 3) | unreduced obstruction |
 | Unreduced weights `(1, 2)` land at `kappa = 1` (Section 3) | unreduced obstruction |
-| `r_1^2 + r_2^2` is `SO(2)`-orbit invariant on `V_perp = span_R{B_1, B_2}` (Section 4) | conditional quotient support |
-| Reduced determinant `det diag(rho_+, rho_perp) = rho_+ rho_perp` and equal-weight extremum at `rho_+^2 = rho_perp^2 = E_tot/2` (Section 5) | conditional quotient support |
+| `r_1^2 + r_2^2` is `SO(2)`-orbit invariant on `V_perp = span_R{B_1, B_2}` (Section 4) | non-load-bearing future-route context |
+| Reduced determinant `det diag(rho_+, rho_perp) = rho_+ rho_perp` and equal-weight extremum at `rho_+^2 = rho_perp^2 = E_tot/2` (Section 5) | non-load-bearing future-route context |
 
 What stays open is exactly the load-bearing carrier-identification step:
 
@@ -368,12 +386,12 @@ What stays open is exactly the load-bearing carrier-identification step:
    invariant `r_1^2 + r_2^2` rather than the ordered pair
    `(r_1, r_2)`, from an independently audited framework input.
 
-Until (1)/(2) is supplied, the algebraic result of this note is
-exactly the conditional statement: *given* the `SO(2)`-quotient
-carrier, the unreduced `(1, 2)` obstruction is converted into the
-equal-weight reduced determinant, which lands at `kappa = 2`. That is
-a correct conditional theorem on the admitted reduced carrier; it is
-not a first-principles closure of the operator-side `kappa = 2` lane.
+Until (1)/(2) is supplied elsewhere, the load-bearing algebraic result of
+this note is exactly the unreduced obstruction: the determinant weights are
+`(1, 2)` and land at `kappa = 1`. The conditional reduced-carrier paragraph
+is only a correct context calculation on an admitted future carrier; it is
+not a theorem claimed here and not a first-principles closure of the
+operator-side `kappa = 2` lane.
 The companion `KOIDE_MRU_DEMOTION_NOTE_2026-04-20` documents
 (Section 1.2) that spectrum-native scalar observables on
 `Herm_circ(3)` are **not** `SO(2)`-invariant in general — `tr(H^3)`
@@ -384,7 +402,7 @@ principle on this branch.
 
 ## 9. Path A future work
 
-To promote this row beyond conditional support, the missing work is:
+To promote a separate positive MRU quotient route, the missing work is:
 
 1. an independently audited upstream theorem that derives the scalar-lane `SO(2)`
    quotient from the repository's axioms rather than defining it
@@ -392,6 +410,9 @@ To promote this row beyond conditional support, the missing work is:
 2. equivalently, an independently audited upstream theorem that decouples the
    `cos(3 arg b)` channel of `Herm_circ(3)` scalar observables on the
    physical charged-lepton lane.
+
+Those tasks are not prerequisites for the bounded theorem claimed here,
+because that theorem is the unreduced obstruction.
 
 Per the demotion note already on main, the `kappa = 2` operator-side
 gate does **not** depend on supplying (1)/(2): two independent
@@ -408,6 +429,7 @@ This note does **not**:
 - modify the parent row's audit-ledger entry;
 - derive the scalar-lane `SO(2)` quotient of the non-trivial real
   doublet from independently audited upstream inputs;
+- use the conditional reduced-carrier calculation as a load-bearing premise;
 - override the `KOIDE_MRU_DEMOTION_NOTE_2026-04-20` reclassification
   of this row's MRU route as supplementary / alternative-framing
   support;
@@ -429,17 +451,18 @@ block to the two-slot reduced carrier `(rho_+, rho_⊥)`) remains a definitional
 reduction, not a derivation from independently audited primitives. No
 independently audited replacement currently exists for that primitive.
 
-**13-14 downstream rows have load-bearing dependence on the κ=2μ/ν formula
-proved here** (the BAE-probe family + the koide-A1-probe family). Those
-chains stay conditional until the carrier-identification primitive is
-derived as an independently audited theorem from `Cl(3)/Z3` axioms.
+Historical downstream rows in the BAE-probe family and the koide-A1-probe
+family used this note as positive MRU carrier support. Under the present
+unreduced-scope correction, those consumers must not treat this row as a
+positive `kappa = 2` derivation. They either need a separate independently
+audited carrier-identification primitive from `Cl(3)/Z3` axioms, or they
+must cite this row only for the unreduced determinant obstruction.
 
 **Dispatch parent candidate:** If a future independent review evaluates
 whether this row is a non-chain-closing alias/decorative handle, the nearest
 independently audited sibling candidate is
 [`KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md`](KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md)
-if the κ=2μ/ν formula can be presented as a corollary of the cyclic
-compression theorem; otherwise this is a genuine science backlog item
-("derive the carrier-identification primitive that closes MRU") rather
-than a hygiene fix. This is source-side routing context only; it does
-not assert an audit or effective-status outcome.
+for the cyclic-carrier setup only. Any future positive MRU quotient route is
+a genuine science backlog item ("derive the carrier-identification primitive
+that closes MRU") rather than a hygiene fix. This is source-side routing
+context only; it does not assert an audit or effective-status outcome.

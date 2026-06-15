@@ -45,9 +45,10 @@ table, or a tuned scale):
               overlap operator; spectral asymmetry Tr[sign(H_W)]/2) and equals
               s*q with one global sign s. Conjugate-charge pairing
               cancels the index exactly (vector-like falsification leg).
-  STEP 6  [B] Composition with the cited single-clock codimension-1
-              evolution theorem in its current axis-conditional form:
-              under the declared B-AXIS premise, d_t <= 1 is imported, then
+  STEP 6  [B] Composition with the local declared B-AXIS premise:
+              one supplied blocked time step, one declared evolution
+              axis/transfer construction, and no admitted independent
+              commuting transfer factor as a second clock gives d_t <= 1;
               {odd positives} ∩ {<=1} = {1}. Plus a corroborating [A]
               dispersion check that a second time direction admits
               exponentially growing codimension-1 slice modes while
@@ -68,13 +69,11 @@ What is IMPORTED (declared in the note, never computed here):
           SU(2)-singlet.
   P-REC   the staggered epsilon grading is realized as the Clifford
           chirality on the irreducible emergent Dirac factor.
-  B-AXIS  inherited from the cited single-clock theorem: one supplied
-          blocked time step, one declared evolution axis/transfer
-          construction, and no admitted independent commuting transfer
-          factor as a second clock.
-  single-clock theorem clauses
-          the cited internal theorem supplies d_t <= 1 conditional on
-          B-AXIS. It does not derive B-AXIS here.
+  B-AXIS  one supplied blocked time step, one declared evolution
+          axis/transfer construction, and no admitted independent
+          commuting transfer factor as a second clock. This is a declared
+          premise of the bounded theorem here, not an upstream markdown
+          dependency edge.
 
 Every check line is tagged with its rubric class:
   [A] algebraic identity on cited inputs
@@ -784,54 +783,51 @@ def step5_index():
 
 
 # ----------------------------------------------------------------------------
-# STEP 6: composition with the single-clock theorem
+# STEP 6: composition with the local B-AXIS premise
 # ----------------------------------------------------------------------------
 def step6_single_clock():
     print("\n" + "=" * 72)
-    print("STEP 6: COMPOSITION WITH SINGLE-CLOCK CODIMENSION-1 EVOLUTION")
+    print("STEP 6: COMPOSITION WITH LOCAL B-AXIS CLOCK PREMISE")
     print("=" * 72)
     print()
-    print("  Imported license (cited internal theorem, class B input):")
-    print("  AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03")
-    print("    unique-generator clause: exactly one generator H of a strongly")
-    print("         continuous one-parameter unitary group U(t) = exp(-itH) on H_phys;")
-    print("    axis-conditional clause: under B-AXIS, exactly one admitted")
-    print("         axis/transfer construction and no second commuting clock factor.")
-    print("  NON-CIRCULARITY: B-AXIS is inherited from the cited single-clock")
-    print("  source and contains no anomaly input; this note never defines time")
-    print("  via the anomaly.")
+    print("  Declared bounded premise (class B input):")
+    print("    B-AXIS = one supplied blocked time step, one declared evolution")
+    print("    axis/transfer construction, and no admitted independent commuting")
+    print("    transfer factor as a second clock.")
+    print("  NON-CIRCULARITY: B-AXIS contains no anomaly input; this note never")
+    print("  defines time via the anomaly. The single-clock note remains provenance")
+    print("  context in prose only, not a runner input or citation-graph dependency.")
     print()
     note_text = (ROOT / "docs/ANOMALY_FORCES_TIME_THEOREM.md").read_text(encoding="utf-8")
-    sc_text = (
-        ROOT / "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md"
-    ).read_text(encoding="utf-8")
     stale_phrase = "unique RP-admissible reflection axis"
     check(
-        "source sync: anomaly note consumes B-AXIS, not the withdrawn unique-RP-axis claim",
-        "B-AXIS" in note_text and stale_phrase not in note_text,
+        "source sync: anomaly note declares B-AXIS locally, not the withdrawn unique-RP-axis claim",
+        "B-AXIS" in note_text
+        and "declared boundary" in note_text
+        and stale_phrase not in note_text,
         "B",
-        "SC cap is axis-conditional in the paired source note",
+        "cap is conditional on B-AXIS in this bounded source note",
     )
     check(
-        "source sync: cited single-clock note declares axis selection as a premise",
-        "(B-AXIS)" in sc_text and "axis selection is a premise" in sc_text,
+        "source sync: no markdown dependency edge to the single-clock note remains",
+        "](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)" not in note_text,
         "B",
-        "no new axis-selection theorem is introduced here",
+        "plain-code provenance references do not enter the citation graph",
     )
     odd_set = set(dt for dt in range(1, 100) if (3 + dt) % 2 == 0)
     cap_set = set(dt for dt in range(0, 100) if dt <= 1)
     inter = sorted(odd_set & cap_set)
     check(
-        "imported d_t <= 1 (single-clock clauses) intersected with computed odd set gives {1}",
+        "declared B-AXIS d_t <= 1 cap intersected with computed odd set gives {1}",
         inter == [1],
         "B",
-        "lower bound computed in Steps 1-4; upper bound imported from SC conditional on B-AXIS",
+        "lower bound computed in Steps 1-4; upper bound is local declared B-AXIS",
     )
     check("conclusion: d_t = 1, total dimension 3 + 1 = 4, signature (3,1)", 3 + inter[0] == 4, "B")
     print()
     # corroborating dispersion check (not load-bearing)
     print("  Corroborating dispersion check (cross-reference Craig-Weinstein 2009 /")
-    print("  Tegmark 1997; NOT load-bearing — the exclusion above is by the single-clock clauses):")
+    print("  Tegmark 1997; NOT load-bearing — the exclusion above is by B-AXIS):")
     modes = range(-3, 4)
     growth_2t = 0
     total_2t = 0
@@ -905,7 +901,7 @@ def main():
     print("=" * 72)
     print()
     print("Declared imports (never computed here): P-ABJ, P-HY, P-COMP, P-REC,")
-    print("B-AXIS, and the cited single-clock theorem clauses. See the paired note.")
+    print("and B-AXIS. See the paired note.")
 
     step0_abelian_surface()
     step1_lh_anomalous()
@@ -928,10 +924,10 @@ def main():
         print("\nFAILED checks present; bridge NOT verified.")
         sys.exit(1)
     print(
-        "\nVERDICT: bounded anomaly/single-clock bridge verified. Computed: exact"
+        "\nVERDICT: bounded anomaly/B-AXIS bridge verified. Computed: exact"
         "\nanomaly arithmetic, Clifford parity law, staggered grading, lattice"
         "\nindex mechanism, and both falsification legs. Imported (declared):"
-        "\nP-ABJ, P-HY, P-COMP, P-REC, B-AXIS, and single-clock theorem clauses."
+        "\nP-ABJ, P-HY, P-COMP, P-REC, and B-AXIS."
         "\nConclusion within the declared boundary: d_t = 1, spacetime signature (3,1)."
     )
     sys.exit(0)

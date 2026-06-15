@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 290,
+    "critical": 289,
     "high": 287,
     "leaf": 482,
     "medium": 466
@@ -8,30 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "su3_casimir_fundamental_theorem_note_2026-05-02",
-      "claim_scope": "Algebraic K1-K3 only: on the cited algebraic V_3 fundamental with Gell-Mann normalization, the SU(3)_c quadratic Casimir is central and equals (4/3) I_3; physical-quark readouts are not audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "cl3_color_automorphism_theorem"
-      ],
-      "direct_in_degree": 18,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 21.488,
-      "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/su3_casimir_fundamental_check.py",
-      "transitive_descendants": 358
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -55,6 +31,33 @@
       "ready": true,
       "runner_path": "scripts/cl3_quark_antiquark_color_singlet_check.py",
       "transitive_descendants": 314
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "physical_lattice_necessity_note",
+        "cl3_color_automorphism_theorem",
+        "graph_first_su3_integration_note",
+        "su3_casimir_fundamental_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 28,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 26.281,
+      "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_g_bare_hs_rigidity_narrow.py",
+      "transitive_descendants": 310
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6011,33 +6014,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_yt_p3_k2_integrals.py",
       "transitive_descendants": 312
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "physical_lattice_necessity_note",
-        "cl3_color_automorphism_theorem",
-        "graph_first_su3_integration_note",
-        "su3_casimir_fundamental_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 28,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 26.281,
-      "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_g_bare_hs_rigidity_narrow.py",
-      "transitive_descendants": 310
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -45827,5 +45803,5 @@
     }
   ],
   "ready_count": 84,
-  "total_pending": 1525
+  "total_pending": 1524
 }

@@ -8,6 +8,10 @@ defaults and the `build_family / barrier_metrics / no_barrier_distance
 / fit_power` helpers used by downstream tail-statistics notes.
 **Status authority:** independent audit lane only. This wrapper note
 is audit-lane infrastructure for the corresponding helper module.
+**Runner:**
+[`scripts/lattice_3d_inverse_square_kernel.py`](../scripts/lattice_3d_inverse_square_kernel.py)
+**Runner cache:**
+[`logs/runner-cache/lattice_3d_inverse_square_kernel.txt`](../logs/runner-cache/lattice_3d_inverse_square_kernel.txt)
 **Primary runner / module:** `scripts/lattice_3d_inverse_square_kernel.py`
 
 ## Purpose

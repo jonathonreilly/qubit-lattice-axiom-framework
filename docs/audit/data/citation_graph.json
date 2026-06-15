@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
         "lorentz_kernel_positive_closure_note",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
         "quark_route2_exact_time_coupling_note_2026-04-19",
         "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
-        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "88e0b3f7405ea69d697de317eb84d495e9aa8af8824e79ecf5da8de09431e2c7",
+      "note_hash": "fe28d9431d7ea03f4b9ea78ebd689fdf393b2c94a334d93d2c53afabc291efe3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

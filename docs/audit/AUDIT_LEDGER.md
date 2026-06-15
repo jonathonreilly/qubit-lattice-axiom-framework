@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 907 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1533 |
+| unaudited | 1532 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 9 |
+| ~~audited_conditional~~ | 10 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1334 |
-| `audited_conditional` | 9 |
+| `audited_conditional` | 10 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1850 |
+| `unaudited` | 1849 |
 
 | claim_type | count |
 |---|---:|
@@ -1470,6 +1470,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2388,6 +2389,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The action-derived two-step monodromy has eigenvalues e^{±2E(p)} with E(p)=arcsinh(sqrt(m^2+sin^2 p)); selecting the decaying channel gives t1^(2)(p)=e^{-2E(p)}, so Gamma(t1^(2))=tensor_p diag(1,e^{-2E(p)})=B^dag B is positive Hermitian.  _(class `C`)_
 - **chain closes:** True — Independently, T_odd T_even has determinant 1 and trace 2+4(m^2+sin^2 p)=2 cosh(2E), giving eigenvalues e^{±2E}; the one-step characteristic equation has non-real roots for sin(p)!=0 and one negative root at sin(p)=0. The finite diagonal Gamma construction then gives a positive B^dag B factorization from the positive decaying eigenvalues.
 - **rationale:** The load-bearing free-case derivation is a first-principles finite-matrix computation from the stated staggered action, not a fitted numerical match or renaming. The displayed trace/determinant identities, exceptional one-step eigenvalues, spectral projectors, and finite exterior/Gamma positivity all check algebraically. The runner's C7 parent-source guard is a non-load-bearing cross-note/source-wiring check and was not used for the free-case closure.
+- **auditor confidence:** high
+
+### `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`
+
+- **Note:** [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional on the declared B-AXIS premise, the retained two-step transfer data give a finite-block single Stone generator/unitary group and codimension-1 equal-time `M_2(C)` tensor slices; finite propagation is supplied only on the free `U=1` bilinear exact-log sector, and axis selection/no-second-clock is not derived.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-192600-31bccff961-axiom_first_single_clock_cod`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By (R-STONE) applied to the normalized positive two-step transfer `(T_hat^2/M_T, 2a_tau)`, with (B-AXIS) fixing the time step, evolution axis, and no-second-clock exclusion, the note obtains the unique self-adjoint generator and one-parameter unitary group, while (R-ET/R-CL3) and (R-FBQL) supply the codimension-1 equal-time algebra and free-sector quasilocal propagation.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional Stone, equal-time tensor, Cl(3) split, and free-sector quasilocal LR steps close relative to their retained or retained_bounded inputs, and the exchange-symmetry identity is internally consistent. The chain does not close from retained inputs alone because B-AXIS.1-.3 remain declared premises rather than approved primitives or retained theorems.
+- **rationale:** Issue: The source correctly scopes the result to B-AXIS, but B-AXIS.1-.3 are not discharged by any provided authority. Why this blocks: retained Stone uniqueness is transfer- and tau-relative, and the two-clock comparator plus the time-space exchange certificate show the excluded alternatives are mathematically live rather than vacuous. Repair target: add a retained supplier for the registration direction/blocked time unit and for excluding independent commuting transfer factors, or keep all downstream uses explicitly axis-premised. Claim boundary until fixed: given B-AXIS, the finite-block Stone and codimension-1 algebraic clauses close, and R-FBQL supplies only free `U=1` quasilocal propagation.
 - **auditor confidence:** high
 
 ### `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05`

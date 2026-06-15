@@ -851,6 +851,7 @@ directly rather than this gate alias").
 citation-graph dependency):**
 
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  (plain-text registry handle, not a citation-graph dependency)
   — parent-identity gate alias and registered Tier-A derivation target
   `AC_φλ`, previously recorded as the carrier route for the residual
   `KS-phase-form` input. This parent alias is not retained authority and

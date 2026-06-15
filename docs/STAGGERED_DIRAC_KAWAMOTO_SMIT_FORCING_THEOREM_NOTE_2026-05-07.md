@@ -138,7 +138,12 @@ realization-gate note consumes as its R2 authority.
 ### 3.1 2026-06-12 kinetic supply-line status
 
 The B2/B3 boundary is now sharper than the original declared-premise
-wording:
+wording. This subsection is **not** a load-bearing dependency edge for
+the theorem in this row: it is a source-side roadmap for future premise
+retirement. The claim audited here remains only the local iff/gauge-class
+theorem under the supplied `P-KIN` and `P-SD` hypotheses stated in B2/B3.
+Independent audit of the supplier rows is not required to audit this
+bounded local theorem on its supplied kinetic surface.
 
 | former boundary | current source-side supplier | current honest status |
 |---|---|---|
@@ -146,8 +151,8 @@ wording:
 | P-KIN broad kinetic-class declaration | same kinetic-class forcing note | reduced to exactly two licensed frame classes, `K0` with flux `+1` and `K1` with flux `-1`; the surviving residual is the one-bit P-FLUX selector |
 | P-FLUX selector `phi = -1` | `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`; runner cache `p_flux_selection_via_fsb_k_check_2026_06_11.txt` (`TOTAL: PASS=16 FAIL=0`) | conditional on FSB-K's audit grade, using the retained `(Z)` kernel-geometry certificate; no selection is performed at current grades |
 
-Re-audit should therefore treat this row's B2/B3 residual as a
-source-side cascade:
+Future stronger re-audit that wants to retire `P-KIN/P-SD` should treat
+this row's B2/B3 residual as a source-side cascade:
 
 ```text
 kinetic-class forcing
@@ -161,12 +166,13 @@ Source-only sync verifier:
 cache:
 `logs/runner-cache/staggered_dirac_kinetic_supply_line_sync_2026_06_12.txt`.
 
-This row remains a bounded theorem unless that cascade is accepted by
-the independent audit lane. The local Kawamoto-Smit phase-forcing proof
-below still states its theorem under the P-KIN/P-SD class because that
-is the exact local hypothesis; the supply-line section records the
-current route for retiring those hypotheses, not a branch-local status
-promotion.
+This row remains a bounded theorem on supplied `P-KIN/P-SD` unless that
+cascade is accepted by the independent audit lane. The local
+Kawamoto-Smit phase-forcing proof below still states its theorem under
+the `P-KIN/P-SD` class because that is the exact local hypothesis. The
+supply-line section records the current route for retiring those
+hypotheses, not a branch-local status promotion and not a dependency
+required for this row's bounded local closure.
 
 ## 4. Setup
 

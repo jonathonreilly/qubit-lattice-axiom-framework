@@ -5,7 +5,8 @@ Scope-aware rule:
   - `claim_type` is auditor-owned and determines which retained-grade bucket
     a clean audit may enter.
   - clean theorem/no-go/bounded rows become retained-grade only when every
-    one-hop dependency is already retained-grade or an accepted premise.
+    one-hop dependency is already retained-grade, metadata context, or an
+    accepted premise.
     Axiom/approved-primitive premises satisfy without bounding. Tier-A
     derivation-target premises bound otherwise clean dependents to
     retained_bounded until the target is retired.
@@ -80,14 +81,13 @@ def is_retained_grade(status: str | None) -> bool:
 
 
 def is_chain_satisfying_status(status: str | None) -> bool:
-    """True when a dependency is stable enough for theorem chain closure.
+    """Statuses that may satisfy a one-hop dependency for clean rows.
 
-    Metadata rows are non-claim infrastructure, not retained-grade claims.
-    They should not promote decorations, but they also should not strand an
-    audited-clean theorem behind glossary/front-door links. This mirrors the
-    audit-queue readiness rule.
+    Metadata rows are stable audit context, not theorem evidence: they can
+    satisfy a citation edge for chain closure, but they must not make a
+    decoration parent retained-grade or become retained-grade themselves.
     """
-    return is_retained_grade(status) or status == "meta"
+    return status == "meta" or is_retained_grade(status)
 
 
 def archived_failed_is_retained_no_go(row: dict) -> bool:

@@ -5,6 +5,9 @@
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
 registry, ledger, queue, or publication-status surfaces.
+**Actual source scope:** conditional bounded theorem on a supplied finite
+readout context, with P-dep as an explicit row-local premise. Record supplies
+additivity and the realized-outcome orbit; it does not by itself derive P-dep.
 **Primary runner:**
 [`scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py`](../scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py)
 (SCORECARD: `TOTAL: PASS=15 FAIL=0`; cached:
@@ -68,7 +71,7 @@ Elementary facts on this surface, each verified in the runner:
 - **(F3)** `lambda_{sigma(k)}(-delta) = lambda_k(delta)` — the flip permutes
   the per-sector values within `K`/CPT label orbits.
 
-## The Record boundary used (and only this)
+## The Record boundary and P-dep premise
 
 From [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md):
 
@@ -311,7 +314,8 @@ Load-bearing:
   used as the retained framework premises quoted above.
 - P-dep — explicit conditional premise stated in this note. It is not a
   retained theorem, not a new axiom, and not an approved primitive premise
-  node; it is exposed so the audited conditional scope can name it directly.
+  node, and not supplied by Record alone; it is exposed so the audited
+  conditional scope can name it directly.
 
 Context, **not** load-bearing (each leg used from these is re-derived or
 re-verified in this note's runner):

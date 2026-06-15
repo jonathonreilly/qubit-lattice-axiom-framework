@@ -57,9 +57,10 @@ transport rule that supplies the same constant-ratio coupling-power magnitude.
 
 ## Sharpening record (2026-06-11 / 2026-06-12; gate unchanged, still open)
 
-Two downstream probes (one-hop authorities for this sharpening only;
-citation direction downstream -> this gate) sharpened the obstruction
-surface without closing it:
+Two downstream probes (one-hop authorities for their own sharpening
+rows only; citation direction downstream -> this gate) sharpened the
+obstruction surface without closing it. They are recorded here as
+plain-text context handles rather than citation-graph dependencies:
 
 - `HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`
   — exact single taste-mode decimation on the minimal `2^4` block
@@ -95,7 +96,8 @@ directly.  The relevant block observable is the minimal-block
 determinant/decimation observable of
 [`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
 and
-`HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`:
+`HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`
+(context handle, not a citation-graph dependency):
 
 ```text
 det(u_0 D + m) = (m^2 + 4 u_0^2)^8,

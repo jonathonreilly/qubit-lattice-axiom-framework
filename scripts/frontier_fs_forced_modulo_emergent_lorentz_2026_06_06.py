@@ -11,16 +11,19 @@ import/principle/axiom beyond the approved Planck scale-reference primitive; onl
 conclude a new principle is needed if genuinely forced.
 
 REFINED VERDICT.  The current route does not require a new principle beyond Planck.  It
-reclassifies from "irreducible admission" to "FORCED-MODULO emergent-Lorentz + R"
--- conditional on a framework TARGET (emergent Lorentz) + a buildable
-reconstruction R, not on a new axiom.  The 4-link forcing chain:
+reclassifies from "irreducible admission" to "FORCED-MODULO realization-gate
+identification + emergent-Lorentz + R" -- conditional on the Link-B
+realization-gate identification, a framework TARGET (emergent Lorentz), and a
+buildable reconstruction R, not on a new axiom.  The 4-link forcing chain:
 
   LINK A  qubit carries spin-1/2          : RETAINED (per_site_su2_spin_half); and
           the rotation su(2) S_i=sigma_i/2 ARE the Clifford Spin(3) bivector gens
           (internal_external_su2_merger, retained_bounded).
-  LINK B  algebra-3 = spatial-3           : RETAINED at the DISCRETE level (O_h acts
-          on Cl(3) by the vector rep; qubit = 2D spinor, 2pi=-1; cl3_oh_cubic_lift).
-          OPEN only at the CONTINUOUS level = the emergent-Lorentz gap (= LINK C).
+  LINK B  algebra-3 = spatial-3           : ABSTRACT O_h/Cl(3) vector-rep support
+          only (O_h acts on the abstract Cl(3) triple; qubit = 2D spinor,
+          2pi=-1; cl3_oh_cubic_lift).  The external identification of the
+          abstract Clifford-3 with the spatial Z^3 lattice-3 remains conditional
+          on the staggered/Kahler-Dirac realization gate (2026-06-08 correction).
   LINK C  emergent Lorentz                : framework TARGET / bounded-conditional
           (emergent_lorentz_invariance retained_bounded), NOT a new axiom.
   LINK D  spin-statistics theorem         : comparator; the ENGINE is rigorous --
@@ -28,10 +31,11 @@ reconstruction R, not on a new axiom.  The 4-link forcing chain:
           below / trivial field; Streater-Wightman, Pauli).  So spin-1/2 + Lorentz
           + positivity => fermionic FORCED; the hard-core SPIN-0 boson is excluded.
 
-  The single residual = the CONTINUUM upgrade of B (= C) + the OS->Wightman
-  reconstruction R (free_field_os_wightman_reconstruction, unaudited), which must
-  deliver the boost-spinor + the antiparticle sign WITHOUT presupposing the
-  fermionic branch (currently circular).  Both are buildable science, not axioms.
+  The residual = the LINK-B realization-gate identification + LINK-C emergent
+  Lorentz continuum upgrade + the OS->Wightman reconstruction R
+  (free_field_os_wightman_reconstruction, unaudited), which must deliver the
+  boost-spinor + the antiparticle sign WITHOUT presupposing the fermionic branch
+  (currently circular).  These are buildable science, not axioms.
 
 REFUTED: the last un-refuted static opening (multi-loop graph-braid cocycle) is
 ALSO statistics-blind -- both boson and fermion satisfy the multi-loop cocycle, so
@@ -76,14 +80,14 @@ def block2_links():
     print("\n[BLOCK 2] The 4-link forcing chain + repo status (no new axiom)")
     links = {
         "A qubit spin-1/2":        ("RETAINED", "per_site_su2_spin_half; = Clifford Spin(3) bivectors (internal_external_su2_merger)"),
-        "B algebra-3=spatial-3":   ("RETAINED (discrete)", "O_h vector rep on Cl(3); qubit=2D spinor 2pi=-1; continuum upgrade = LINK C"),
+        "B abstract O_h/Cl3":      ("SUPPORTED; external identification conditional", "O_h vector rep on abstract Cl(3); algebra-3=spatial-3 remains realization-gate residual"),
         "C emergent Lorentz":      ("TARGET / bounded-conditional", "emergent_lorentz_invariance retained_bounded; NOT a new axiom"),
         "D spin-statistics thm":   ("comparator (engine rigorous)", "spin-1/2-bosonic inconsistent; Dirac-Kahler evaded"),
     }
     for k, (st, d) in links.items():
         print(f"      LINK {k:24s} | {st:28s} | {d}")
-    check("LINK A retained; LINK B retained at discrete level (not the residual)", True)
-    check("residual = LINK C continuum upgrade + the reconstruction R (both buildable, NOT axioms)",
+    check("LINK A retained; LINK B abstract O_h/Cl3 support is tight but external-spacetime identification remains residual", True)
+    check("residual = LINK-B realization gate + LINK-C continuum upgrade + reconstruction R (buildable, NOT axioms)",
           True, "R = free_field_os_wightman_reconstruction (unaudited; currently circular)")
     return True
 
@@ -120,8 +124,8 @@ def block4_cheapest_principle():
 def block5_owner_bottom_line():
     print("\n[BLOCK 5] Owner bottom line")
     check("the current FS route does not need a new principle beyond Planck", True,
-          "it rides on emergent Lorentz (a TARGET) + R (buildable reconstruction)")
-    check("reclassify FS: 'forced-modulo emergent-Lorentz + R' (conditional on a target), NOT a free admission",
+          "it rides on realization-gate identification + emergent Lorentz (a TARGET) + R (buildable reconstruction)")
+    check("reclassify FS: 'forced-modulo realization gate + emergent-Lorentz + R' (conditional on residual/target surfaces), NOT a free admission",
           True)
     check("if a principle were ever forced, it is graded-locality/parity-superselection, not Record itself",
           True)

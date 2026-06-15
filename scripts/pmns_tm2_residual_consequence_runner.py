@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bounded verifier for the conditional PMNS TM2 algebra lemma."""
+"""Bounded verifier for the stipulated-hypothesis PMNS TM2 algebra lemma."""
 
 from __future__ import annotations
 
@@ -78,7 +78,7 @@ def implied_cos_delta(s13_sq: float) -> float:
 
 def main() -> int:
     print("=" * 72)
-    print("PMNS TM2 RESIDUAL CONSEQUENCE -- BOUNDED ALGEBRA CHECK")
+    print("PMNS TM2 RESIDUAL CONSEQUENCE -- STIPULATED-HYPOTHESIS BOUNDED ALGEBRA CHECK")
     print("=" * 72)
 
     check(
@@ -142,9 +142,9 @@ def main() -> int:
     print("=" * 72)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:
-        print("VERDICT: conditional TM2 algebraic consequence FAILED.")
+        print("VERDICT: stipulated-hypothesis TM2 algebraic consequence FAILED.")
         return 1
-    print("VERDICT: conditional TM2 algebraic consequence holds.")
+    print("VERDICT: stipulated-hypothesis TM2 algebraic consequence holds.")
     return 0
 
 

@@ -4,6 +4,10 @@
 Companion runner for
 docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md
 
+Claim boundary: this runner checks the finite algebraic consequences under the
+supplied readout context and the explicit P-dep premise. It does not derive
+P-dep from Record alone and does not edit or predict audit status.
+
 Supplied surface (3x3, tiny memory): the Hermitian circulant
 
     H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T,   a, B real, B != 0,
@@ -54,6 +58,11 @@ from __future__ import annotations
 from pathlib import Path
 
 import numpy as np
+
+print(
+    "Claim boundary: finite algebra under supplied context + explicit P-dep; "
+    "P-dep is not derived from Record alone."
+)
 
 TOL = 1e-10
 PASS = 0

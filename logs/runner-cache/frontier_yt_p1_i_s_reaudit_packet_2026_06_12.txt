@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
-runner_sha256: d096bb472132ca14807b2824c6fa0221b2f135bf593ca53abea799e111e2a81b
+runner_sha256: 7e088fce76e512daa40658cd708e1b998d896f6d976dda708cec316108d17d10
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -36,12 +36,14 @@ BLOCK 2: source-note status boundary
   [PASS] native BZ candidate section present
   [PASS] independent audit firewall present
   [PASS] no audit verdict update claimed
-  [PASS] no promotion claimed by bridge
+  [PASS] native path does not use supplied bracket as load-bearing
   [PASS] upper end not proved
+  [PASS] native candidate replacement gate explicit
   [PASS] master theorem not modified
-  [PASS] old proposed_retained marker absent from citation note
+  [PASS] old proposed-retained marker absent from citation note
   [PASS] citation note remains bounded theorem
-  [PASS] citation note remains conditional arithmetic
+  [PASS] citation note keeps legacy conditional arithmetic
+  [PASS] citation note names native arithmetic bridge
 
 ========================================================================
 BLOCK 3: prior symbolic reduction and color authority
@@ -78,30 +80,33 @@ BLOCK 5: native full-staggered BZ candidate
   I_v_scalar candidate       = 3.902000
   5% systematic scalar band  = [3.706900, 4.097100]
   P1 native candidate        = 3.7538%
+  P1 native 5% band          = [3.5661%, 3.9415%]
   Delta_R full staggered-PT  = -3.769%
   [PASS] BZ cache records clean execution
   [PASS] BZ cache records PASS=45 FAIL=0
   [PASS] BZ cache gives I_v_scalar near 3.902
   [PASS] 5% scalar systematic overlaps I_S = 4
-  [PASS] native P1 candidate near low cited endpoint
+  [PASS] native P1 candidate equals framework-native arithmetic bridge
+  [PASS] native P1 systematic band recorded
   [PASS] BZ cache gives negative Delta_R three-channel assembly
   [PASS] note records native lower-end candidate
-  [PASS] note says native candidate does not prove upper end
+  [PASS] note records native P1 central value
+  [PASS] note records native P1 systematic band
+  [PASS] note says native candidate removes bracket import for native path
 
 ========================================================================
 BLOCK 6: audit/status firewall
 ========================================================================
-  [PASS] citation note says bracket is not framework-native
-  [PASS] citation note says bracket is not audit-closed
+  [PASS] citation note says legacy bracket is not retained by default
   [PASS] citation note keeps master obstruction unchanged
-  [PASS] new bridge calls BZ surface a candidate
+  [PASS] new bridge calls BZ surface a native candidate
   [PASS] new bridge requires separate BZ audit
-  [PASS] new bridge does not treat old BZ wording as authority
+  [PASS] new bridge does not treat literature bracket as native authority
   [PASS] bridge keeps BZ candidate under separate audit
   [PASS] this runner does not edit audit ledger  (source/cache verifier only)
 
 ========================================================================
-SUMMARY: PASS=55  FAIL=0
+SUMMARY: PASS=59  FAIL=0
 ========================================================================
 
 RESULT:

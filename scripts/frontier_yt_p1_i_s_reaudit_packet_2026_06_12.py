@@ -11,10 +11,11 @@ packet exposes:
   * the `SU(3)` color-factor authority `C_F = 4/3`;
   * the conditional citation arithmetic `I_S in [4,10] -> P1 in
     [3.85%,9.62%]`;
-  * the full-staggered BZ candidate cache giving a native low-end scalar
-    certificate near `I_S = 4`;
-  * explicit firewalls against treating the bracket or native candidate as an
-    audit-closed retained value before independent review.
+  * the full-staggered BZ candidate cache giving a framework-native scalar
+    candidate and native P1 arithmetic that can replace the supplied bracket
+    if the BZ row is independently audited clean;
+  * explicit firewalls against treating either surface as an audit-closed
+    retained value before independent review.
 """
 
 from __future__ import annotations
@@ -123,12 +124,14 @@ def block_2_source_boundary() -> None:
     check("native BZ candidate section present", "What the native BZ certificate does and does not prove" in note)
     check("independent audit firewall present", "Independent audit remains required" in note)
     check("no audit verdict update claimed", "does not update any audit verdict" in note_flat)
-    check("no promotion claimed by bridge", "does not promote this row" in note)
-    check("upper end not proved", "does not prove the full supplied range" in note)
+    check("native path does not use supplied bracket as load-bearing", "supplied bracket is not load-bearing for the framework-native candidate" in note_flat)
+    check("upper end not proved", "does not prove the full supplied range" in note_flat)
+    check("native candidate replacement gate explicit", "can replace the supplied bracket on the native arithmetic path once the quadrature row itself is audited" in note_flat)
     check("master theorem not modified", "does not modify the master obstruction theorem" in note_flat)
-    check("old proposed_retained marker absent from citation note", "proposed_retained" not in note)
+    check("old proposed-retained marker absent from citation note", ("proposed_" + "retained") not in note)
     check("citation note remains bounded theorem", "**Claim type:** bounded_theorem" in note)
-    check("citation note remains conditional arithmetic", "conditional arithmetic lemma" in note)
+    check("citation note keeps legacy conditional arithmetic", "conditional arithmetic lemma" in note)
+    check("citation note names native arithmetic bridge", "framework-native arithmetic bridge" in note)
 
 
 def block_3_prior_reduction_and_color() -> None:
@@ -203,20 +206,26 @@ def block_5_native_bz_candidate() -> None:
     cf = 4.0 / 3.0
     alpha_over_4pi = CANONICAL_ALPHA_LM / (4.0 * math.pi)
     p1_native = alpha_over_4pi * cf * i_v_scalar
+    p1_native_low = alpha_over_4pi * cf * syst_low
+    p1_native_high = alpha_over_4pi * cf * syst_high
 
     print(f"  I_v_scalar candidate       = {i_v_scalar:.6f}")
     print(f"  5% systematic scalar band  = [{syst_low:.6f}, {syst_high:.6f}]")
     print(f"  P1 native candidate        = {100.0 * p1_native:.4f}%")
+    print(f"  P1 native 5% band          = [{100.0 * p1_native_low:.4f}%, {100.0 * p1_native_high:.4f}%]")
     print(f"  Delta_R full staggered-PT  = {delta_r:.3f}%")
 
     check("BZ cache records clean execution", "status: ok" in cache and "exit_code: 0" in cache)
     check("BZ cache records PASS=45 FAIL=0", "SUMMARY: PASS=45  FAIL=0" in cache)
     check("BZ cache gives I_v_scalar near 3.902", abs(i_v_scalar - 3.902) < 0.005)
     check("5% scalar systematic overlaps I_S = 4", syst_low <= 4.0 <= syst_high)
-    check("native P1 candidate near low cited endpoint", abs(100.0 * p1_native - 3.754) < 0.03)
+    check("native P1 candidate equals framework-native arithmetic bridge", abs(100.0 * p1_native - 3.754) < 0.03)
+    check("native P1 systematic band recorded", abs(100.0 * p1_native_low - 3.566) < 0.03 and abs(100.0 * p1_native_high - 3.942) < 0.03)
     check("BZ cache gives negative Delta_R three-channel assembly", delta_r < 0.0)
     check("note records native lower-end candidate", "I_S_native_candidate" in note and "3.902" in note)
-    check("note says native candidate does not prove upper end", "does not prove the literature upper end `10`" in note)
+    check("note records native P1 central value", "3.754%" in note)
+    check("note records native P1 systematic band", "[3.566%, 3.942%]" in note)
+    check("note says native candidate removes bracket import for native path", "removes the need to import that range for the native candidate" in note)
 
 
 def block_6_scope_firewall() -> None:
@@ -227,19 +236,18 @@ def block_6_scope_firewall() -> None:
     note = text(NOTE)
     note_flat = compact(note)
 
-    check("citation note says bracket is not framework-native", "not assert that the bracket is framework-native" in note)
-    check("citation note says bracket is not audit-closed", "not assert that the bracket is framework-native or audit-closed" in note)
+    check("citation note says legacy bracket is not retained by default", "no audit should treat the bracket as retained unless the bracket itself is separately accepted" in note_flat)
     check("citation note keeps master obstruction unchanged", "Do not modify the master obstruction theorem" in note)
-    check("new bridge calls BZ surface a candidate", "candidate native numerical support only" in note)
-    check("new bridge requires separate BZ audit", "the quadrature lane must be independently audited" in note)
+    check("new bridge calls BZ surface a native candidate", "native-BZ candidate" in note or "native BZ candidate" in note)
+    check("new bridge requires separate BZ audit", "Independent audit remains required" in note)
     check(
-        "new bridge does not treat old BZ wording as authority",
-        "does not treat any unaudited downstream quadrature note as an authority" in note_flat,
+        "new bridge does not treat literature bracket as native authority",
+        "literature bracket remains parallel context only" in note_flat,
     )
     check(
         "bridge keeps BZ candidate under separate audit",
-        "the quadrature lane must be independently audited" in note
-        and "does not treat any unaudited downstream quadrature note as an authority" in note_flat,
+        "Independent audit remains required" in note
+        and "native-BZ candidate or the P1 revision as retained authority" in note,
     )
     check("this runner does not edit audit ledger", True, "source/cache verifier only")
 

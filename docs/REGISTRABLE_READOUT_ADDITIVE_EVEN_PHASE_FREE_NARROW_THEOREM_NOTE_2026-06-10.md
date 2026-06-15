@@ -11,14 +11,15 @@ or predict an audit outcome and does not edit the audit-lane-owned Tier-A
 registry, ledger, queue, or publication-status surfaces.
 **Primary runner:**
 [`scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py`](../scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py)
-(SCORECARD: PASS=30, FAIL=0; cached:
+(SCORECARD: PASS=31, FAIL=0; cached:
 [`logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt`](../logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt))
 
 ## Boundary
 
 This note proves one narrow structural theorem about scalar readouts in a
-supplied readout context satisfying the **Record** constraints, and applies it
-to the two registrability bridges
+supplied readout context satisfying the **Record** constraints **and** a
+stipulated determinant-character/group-homomorphic phase-readout class, and
+applies that narrowed theorem to the two registrability bridges
 named open by
 [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md).
 
@@ -26,8 +27,10 @@ It does **not** retire either Tier-A admission, edit
 `docs/audit/data/tier_a_admissions.json`, remove bounded status from any
 consumer, derive `|delta| = 2/9`, supply the global `Cl(3)/Z^3 -> PL S^3 x R`
 identification, close strong-CP premise 1 ("no bare `theta` slot"), or change
-the Record axiom boundary. It supplies a registrability structure theorem and
-its two direct consequences, with the surviving residuals named explicitly.
+the Record axiom boundary. It supplies a determinant-character registrability
+structure theorem and its two direct consequences, with the surviving residuals
+named explicitly. It does not prove that every Record-registrable physical
+readout belongs to this homomorphic class.
 
 ## The Record boundary used (and only this)
 
@@ -43,19 +46,25 @@ central-sector decomposition and a fixed `K`/CPT conjugation:
 It supplies **no** readout context, decomposition, `K`/CPT structure,
 sector-generation rule, weighting, normalization, probability, modulus rule,
 log-det, source/action, scale, or observable identification. The theorem below
-uses only (Additivity) and (Orbit); it adds nothing.
+uses (Additivity) and (Orbit), plus the explicit narrowed hypothesis that the
+phase-sensitive part of the readout is a determinant character/group
+homomorphism over the sector-factored phase data.
 
 ## The theorem
 
-> **Theorem (registrable readout is additive-plus-even, hence phase-free).**
+> **Theorem (homomorphic registrable phase readout is additive-plus-even,
+> hence phase-free).**
 > Let a scalar readout be *Record-registrable*: a scalar assigned to records
 > that is (i) finitely additive over pairwise-disjoint records [(Additivity)]
 > and (ii) constant on `K`/CPT orbits of the realized central sector [(Orbit)].
-> Then on a finite central-sector decomposition its additive per-sector
-> **phase** contribution is identically zero. Equivalently, the phase index of
-> a multiplicative determinant character `chi_k(z) = exp(i k arg z)` must be
-> `k = 0`; phase-free modulus/log-modulus data is the determinant-class datum
-> that can survive these constraints.
+> Add the narrowed readout-class hypothesis that any phase-sensitive
+> determinant datum is represented by a group-homomorphic/determinant-character
+> phase functional, equivalently by a per-sector additive phase index such as
+> `chi_k(z) = exp(i k arg z)`. Then on a finite central-sector decomposition
+> this homomorphic per-sector **phase** contribution is identically zero.
+> Equivalently, the phase index of the multiplicative determinant character
+> must be `k = 0`; phase-free modulus/log-modulus data is the determinant-class
+> datum that can survive these constraints.
 
 ### Proof (each leg checked in the runner)
 
@@ -71,10 +80,11 @@ I(e_2) + c`. (Additivity) is exactly `I(e_1 cup e_2) = I(e_1) + I(e_2)`, which
 forces `c = 0`. Iterating over the finite family, a registrable readout equals
 `sum_j I(e_j)`; there is no cross-sector / interference content.
 
-**T3 — the determinant phase is in the additive class.** For a sector-factored
-configuration `det = prod_j z_j`, so `arg det = sum_j arg(z_j)` (mod `2 pi`):
-the determinant phase is a per-sector sum, hence a registrable readout's phase
-part is an additive `R`-valued functional `g` of the per-sector phase data.
+**T3 — the determinant-character phase is in the stipulated additive class.**
+For a sector-factored configuration `det = prod_j z_j`, so
+`arg det = sum_j arg(z_j)` (mod `2 pi`): within the narrowed
+determinant-character/group-homomorphic readout class, the phase part is an
+additive `R`-valued functional `g` of the per-sector phase data.
 
 **T4 — an additive functional is odd (no regularity needed).** For any
 `R`-valued additive `g` on an abelian group, `g(0) = g(0) + g(0)` gives
@@ -86,19 +96,20 @@ Cauchy/Hamel pathology of additive functions is irrelevant here.
 orbits; `K`/CPT acts on the central characters as complex conjugation, sending
 `arg z` to `-arg z`. So the phase functional is also **even**: `g(-t) = g(t)`.
 Even (`g(-t) = g(t)`) together with odd (T4: `g(-t) = -g(t)`) gives
-`g(t) = -g(t)`, hence `g(t) = 0` for every `t`. The per-sector phase
-contribution of any registrable readout vanishes; equivalently the
+`g(t) = -g(t)`, hence `g(t) = 0` for every `t`. The homomorphic per-sector
+phase contribution vanishes; equivalently the
 determinant-character phase index is `k = 0`.
 
 **T6 — the hostile guard is threaded.** `K`/CPT-evenness *alone* does **not**
 erase phase: `cos(arg z)` is `K`-even (`cos(-theta) = cos(theta)`) yet
-phase-dependent. The theorem does not use evenness alone. `cos(arg z)` is
-excluded because it is **not sector-additive** —
-`cos(arg(z_1 z_2)) != cos(arg z_1) + cos(arg z_2)` — so (Additivity) removes it
-before evenness is even invoked. It is precisely the **intersection**
-additive ∩ even that is the modulus class; additivity alone admits the odd
-phase-sum, evenness alone admits `cos(arg z)`, and their intersection is
-phase-free.
+phase-dependent. This theorem does not classify such non-homomorphic phase
+readouts. `cos(arg z)` is outside the stipulated determinant-character/group
+homomorphism class because
+`cos(arg(z_1 z_2)) != cos(arg z_1) + cos(arg z_2)`. Record additivity alone is
+not used to rule out every possible non-multiplicative phase observable; those
+remain outside this theorem's claim surface. The proven statement is only that
+the **homomorphic** additive phase character intersected with `K`/CPT-evenness
+is phase-free.
 
 **T7 — the surviving datum is modulus-type.** `log|z|` is additive
 (`log|z_1 z_2| = log|z_1| + log|z_2|`) and `K`-even (`|conj z| = |z|`), so it
@@ -110,22 +121,24 @@ therefore `k = 0`; modulus/log-modulus data is the surviving phase-free class.
 The named-open bridge in the Tier-A K/CPT note asks that the physical
 `arg det(M_u M_d)` contribution used by
 [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) be **exhausted by
-the determinant-class registrable readout**, with no phase-sensitive
-non-multiplicative or action-level datum remaining relevant to that premise.
+the determinant-class registrable readout**. This repair handles that
+determinant-character surface; any non-multiplicative or action-level phase
+datum remains outside this theorem unless separately bridged.
 
 `arg det(M_u M_d) = arg det M_u + arg det M_d` is the additive sector-phase sum
-(T3, T8 in the runner). By T5 its registrable content is zero: on the
-Record-registrable surface the determinant **phase** is exhausted by the
-`k = 0` (modulus) character, and no separately-registrable non-multiplicative
-phase datum survives (T2 removes interference content; T6 removes `K`-even
-non-additive functions like `cos(arg)` as non-registrable). The
-multiplicative determinant-character class is therefore exhaustive for the
-registrable mass-surface **phase** readout.
+(T3, T8 in the runner). By T5 its determinant-character registrable content is
+zero: on the Record-registrable plus homomorphic-readout surface the determinant
+**phase** is exhausted by the `k = 0` (modulus) character. Separately proposed
+non-multiplicative or action-level phase data is not classified by this theorem
+and would need its own retained readout bridge. The multiplicative
+determinant-character class is therefore phase-free; exhaustiveness for the
+physical mass-surface readout remains exactly the standing modeling premise
+named below.
 
-This **discharges the determinant-phase content of the positive-real
-mass-orientation premise on the registrable surface**. It does so from the
-Record boundary plus the cited determinant/readout surfaces, threading the
-hostile guard.
+This **discharges the determinant-character phase content of the positive-real
+mass-orientation premise on the narrowed registrable/homomorphic surface**. It
+does so from the Record boundary plus the stipulated determinant-character
+readout class, threading the hostile guard.
 
 **What Consequence A does NOT close** (carried, not erased):
 
@@ -135,9 +148,10 @@ hostile guard.
   [`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md).
   This note addresses only the mass-orientation **phase**, not premise 1.
 - **The standing modeling identification** — that the physical mass-surface
-  readout context satisfies the Record registrability constraints — is
-  unchanged. The theorem removes the phase freedom *within* that constrained
-  class; it does not prove the physical readout must be registrable. That
+  readout context satisfies the Record registrability constraints and belongs
+  to the determinant-character/homomorphic readout class — is unchanged. The
+  theorem removes the phase freedom *within* that constrained class; it does
+  not prove the physical readout must be registrable or homomorphic. That
   identification remains the strong-CP / AC_phi_lambda modeling premise.
 
 ## Consequence B — AC_phi_lambda unordered-multiset registrability (blocker (b-i))
@@ -196,22 +210,23 @@ odd datum they care about.
 ## Net
 
 ```text
-Record boundary (Additivity + K/CPT orbit)
-  => registrable readout = additive over sectors AND K/CPT-even
-  => per-sector phase contribution = 0   (additivity forces odd; even forces zero)
-  => (a) det-class phase character k=0 EXHAUSTS the registrable arg det(M_u M_d)
+Record boundary (Additivity + K/CPT orbit) + stipulated homomorphic phase class
+  => determinant-character readout = additive over sectors AND K/CPT-even
+  => homomorphic per-sector phase contribution = 0   (additivity forces odd; even forces zero)
+  => (a) det-class phase character k=0 on the narrowed arg det(M_u M_d) surface
   => (b-i) delta-sign unregistrable; species surface = unordered multiset; |delta| atom
 
 new axioms: 0     new primitives: 0     new admissions: 0     new imports: 0
-residuals named: strong-CP premise 1 (separate); standing readout-context premise;
+residuals named: strong-CP premise 1 (separate); standing homomorphic readout-context premise;
                  |delta| magnitude (R-eta); R2 PL/ABSS global bridge (external-math LIVE)
 ```
 
 ## No-Go / Bounded-Wall Discipline Gate (N1–N8)
 
-This note is a conditional positive theorem with a named external-math residual
-(R2). The discipline gate is applied to the residual claim "R2 remains an
-import-required wall, off the Record layer."
+This note is a narrowed bounded theorem with a named external-math residual
+(R2) and a standing homomorphic-readout hypothesis. The discipline gate is
+applied to the residual claim "R2 remains an import-required wall, off the
+Record layer."
 
 ### N1 — Alternative route enumeration (≥5) for the R2 residual
 
@@ -229,9 +244,10 @@ Six routes named; the residual is correctly bounded, not a premature no-go.
 ### N2 — Wall-independence audit
 
 The surviving walls are independent: (W1) strong-CP premise 1 (action-surface
-admissibility of a bare `theta` slot); (W2) the standing readout-context
-identification (physical readout satisfies the Record registrability
-constraints); (W3) the `|delta|`
+admissibility of a bare `theta` slot); (W2) the standing homomorphic
+readout-context identification (physical readout satisfies the Record
+registrability constraints and determinant-character/homomorphic phase class);
+(W3) the `|delta|`
 magnitude via R-eta; (W4) R2 the global PL/ABSS identification. None follows from
 another: W1 is about the gauge action, W2 about modeling the readout, W3 about a
 dimensionless readout identification, W4 about manifold topology. The theorem
@@ -241,11 +257,13 @@ freedom) that previously rode along with W2.
 ### N3 — Hidden-wall scan
 
 Load-bearing premises are explicit: (Additivity) and (Orbit) from Record; the
+stipulated determinant-character/group-homomorphic phase-readout class; the
 sector-factoring of `det`; the AC_phi_lambda circulant form (consumed from the
 Tier-A note's L2). No "we assume", "by construction", "naturally", or
 "registered" smuggles a hidden admission: each use of "registrable" is the
-explicit Record (Additivity)+(Orbit) data, and each external-math name
-(Perelman/Moise/van Kampen) is flagged as the open R2 route, not assumed.
+explicit Record (Additivity)+(Orbit) data, the homomorphic phase class is named
+as an explicit hypothesis, and each external-math name (Perelman/Moise/van
+Kampen) is flagged as the open R2 route, not assumed.
 
 ### N4 — Residual matching
 
@@ -257,13 +275,13 @@ No witness is repurposed.
 
 ### N5 — Rhetoric audit
 
-"The determinant phase is unregistrable" is verified at the per-sector
-resolution (T3–T5) and the product-determinant resolution (T8); it is **not**
-claimed at any non-additive functional resolution (T6 shows such functions are
-excluded by additivity, not registered-as-zero). "Reduces to the magnitude-only
-atom" is the sign/orientation removal only; the magnitude is explicitly left
-open. "Off this layer" for R2 is the category claim (topology vs. readout
-class), checked as a boundary witness (T10).
+"The determinant-character phase is unregistrable" is verified at the
+per-sector resolution (T3–T5) and the product-determinant resolution (T8) under
+the homomorphic readout-class hypothesis; it is **not** claimed for arbitrary
+non-multiplicative phase functionals (T6 leaves such functions outside scope).
+"Reduces to the magnitude-only atom" is the sign/orientation removal only; the
+magnitude is explicitly left open. "Off this layer" for R2 is the category claim
+(topology vs. readout class), checked as a boundary witness (T10).
 
 ### N6 — Partial-closure path scan
 
@@ -276,15 +294,14 @@ enacted or predicted here.
 
 ### N7 — Steelman
 
-Strongest objection: "additivity over sectors is itself an extra modeling
-assumption; a physical readout might be non-additive (like `cos(arg)`), in which
-case the phase is not erased." Response: additivity is **not** added here — it is
-the Record axiom's (Additivity) clause, applied to the orthogonal central
-idempotents that the axiom itself names as the decomposition. A non-additive
-readout is simply not Record-registrable; admitting one would be adopting a new
-readout primitive, which the no-new-primitive rule forbids. So the steelman
-reduces to "drop the Record additivity clause", which is out of scope. The
-theorem is correctly conditional on the Record-registrable class.
+Strongest objection: "Record additivity over disjoint records does not by itself
+force every physical phase observable to be a determinant character; a physical
+readout might be non-homomorphic, like `cos(arg)`." Response: accepted. This
+repair narrows the theorem to the determinant-character/group-homomorphic phase
+class and leaves non-homomorphic phase readouts outside scope. A consumer that
+needs such a readout excluded must supply a separate retained readout bridge.
+The theorem is correctly conditional on the Record-registrable **and
+homomorphic** readout class.
 
 ### N8 — Cross-cycle echo
 
@@ -303,7 +320,8 @@ similar wall was retired by a mechanism overlooked here.
   `Cl(3)/Z^3 -> PL S^3 x R` (R2) identification.
 - It does **not** close strong-CP premise 1 ("no bare `theta` slot").
 - It does **not** prove the physical readout context *must* satisfy the Record
-  registrability constraints; it removes phase freedom *within* that class.
+  registrability constraints or the determinant-character/homomorphic phase
+  class; it removes phase freedom *within* that narrowed class.
 - It introduces **no** new axiom, primitive, admission, normalization,
   probability rule, comparator, or audit verdict, and consumes no PDG / fitted /
   measured / lattice-MC value.

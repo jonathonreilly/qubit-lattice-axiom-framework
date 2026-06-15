@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py
-runner_sha256: c2dcad0620509b90c3f15192510e6a5de121511c87f309ae5e12bc164a98c9f3
+runner_sha256: f6e013ad02e66cdb533ad5d31c063bfb7186aec6d6ab1356c1d9896d233c6a58
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.66
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 ========================================================================================
-SHARED-CORE REGISTRABILITY THEOREM: additive-over-sectors + K/CPT-even => phase-free
+HOMOMORPHIC REGISTRABILITY THEOREM: additive-over-sectors + K/CPT-even => phase-free
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -24,7 +24,7 @@ T2 - finite additivity over disjoint sectors => SUM of per-sector contributions
   [PASS] registrable readout on the full decomposition = sum_j I(sector_j), no interference -- iterating additivity over the disjoint central family
 
 ----------------------------------------------------------------------------------------
-T3 - determinant phase = SUM of per-sector phases (additive class)
+T3 - determinant-character phase = SUM of per-sector phases (stipulated additive class)
 ----------------------------------------------------------------------------------------
   [PASS] arg det(diag z) = sum_j arg(z_j)  (mod 2pi) -- residual mod 2pi = 0.00e+00
 
@@ -38,14 +38,14 @@ T4 - an additive R-valued functional is ODD (no regularity needed)
 T5 - K/CPT-even INTERSECT additive => phase functional is ZERO
 ----------------------------------------------------------------------------------------
   [PASS] even (g(-t)=g(t)) AND odd (g(-t)=-g(t)) => g(t) = 0 -- solve gt = -gt -> [0]
-  [PASS] => the per-sector PHASE contribution of any registrable readout vanishes -- determinant phase character k = 0 DERIVED, not assumed
+  [PASS] => the homomorphic per-sector PHASE contribution vanishes -- determinant phase character k = 0 DERIVED, not assumed
 
 ----------------------------------------------------------------------------------------
-T6 - HOSTILE GUARD: cos(arg z) is K-even but NOT additive (excluded by additivity)
+T6 - HOSTILE GUARD: cos(arg z) is K-even but outside the homomorphic class
 ----------------------------------------------------------------------------------------
   [PASS] cos(arg z) is K/CPT-even: cos(-theta) - cos(theta) = 0
   [PASS] cos(arg z) is NOT sector-additive: cos(a1+a2) - (cos a1 + cos a2) != 0 -- gap = -cos(a1) - cos(a2) + cos(a1 + a2)
-  [PASS] cos additivity fails on 6/6 random phase pairs (excluded by ADDITIVITY, not evenness) -- 6/6 fail
+  [PASS] cos additivity fails on 6/6 random phase pairs (outside homomorphic scope, not erased by Record alone) -- 6/6 fail
 
 ----------------------------------------------------------------------------------------
 T7 - surviving registrable det-class datum is modulus-type (k = 0)
@@ -58,7 +58,7 @@ T7 - surviving registrable det-class datum is modulus-type (k = 0)
 T8 - strong-CP application: arg det(M_u M_d) registrable content is zero
 ----------------------------------------------------------------------------------------
   [PASS] arg det(M_u M_d) = arg det M_u + arg det M_d (additive, mod 2pi) -- residual mod 2pi = -4.44e-16
-  [PASS] => by T5 the registrable arg det(M_u M_d) = 0 (phase exhausted on registrable surface) -- discharges the mass-orientation PHASE content within the registrable readout
+  [PASS] => by T5 the homomorphic registrable arg det(M_u M_d) phase character has k=0 -- discharges determinant-character phase content within the narrowed readout class
 
 ----------------------------------------------------------------------------------------
 T9 - AC_phi_lambda application: conj(H)=H(-delta); symmetric=even, sin-line=odd
@@ -78,11 +78,11 @@ T10 - boundary witnesses (what the theorem does NOT close)
   [PASS] R2 / PL-ABSS global bridge is OFF this layer (manifold topology, not Record) -- Cl(3)/Z^3 -> PL S^3 x R needs Perelman/Moise/van Kampen; external-math LIVE
   [PASS] |delta| MAGNITUDE (2/9) still needs R-eta readout id + R2 (NOT supplied here) -- this theorem removes the SIGN as extra content, not the magnitude
   [PASS] strong-CP premise 1 ('no bare theta slot') is a SEPARATE surviving premise -- RP-no-go'd distinctly; this bridge addresses ONLY mass-orientation phase
-  [PASS] standing modeling premise unchanged: physical readout satisfies Record constraints -- theorem removes phase freedom WITHIN that constrained class
+  [PASS] standing modeling premise unchanged: physical readout satisfies Record plus homomorphic-readout constraints -- theorem removes phase freedom only WITHIN the determinant-character class
+  [PASS] non-homomorphic phase readouts are outside scope, not ruled out by Record alone -- e.g. K-even cos(arg z) needs a separate readout bridge if used
 
 ========================================================================================
-SCORECARD: PASS=30 FAIL=0
+SCORECARD: PASS=31 FAIL=0
 ========================================================================================
 
 ----- stderr -----
-

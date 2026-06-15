@@ -1,8 +1,10 @@
-# Lorentz Kernel Positive Closure Note
+# Lorentz Kernel Native Finite-Matrix Closure Note
 
 **Date:** 2026-04-25
-**Status:** proposed_retained derived corollary on the boost-covariance lane
-**Runner:** `scripts/frontier_lorentz_kernel_positive_closure.py` (PASS=41, FAIL=0)
+**Claim type:** bounded_theorem
+**Status:** source-side re-audit candidate; no audit verdict or
+effective-status change is asserted here.
+**Runner:** `scripts/frontier_lorentz_kernel_positive_closure.py` (PASS=43, FAIL=0)
 **Inputs:** [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
 [LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md](LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md),
 [LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md](LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md)
@@ -10,11 +12,11 @@
 
 ## Scope
 
-This note closes only the fixed-`H_lat` boost-covariance kernel question.
+This note closes only the finite fixed-`H_lat` boost-covariance kernel question.
 It does not close the separate gravity-card directional-measure kernel
-problem. The word "positive" is a status call: this lane has a positive
-derived closure. It is not a claim that the kernel matrix is
-positive-definite.
+problem. The word "positive" in historical references to this lane means
+"derived rather than no-go"; it is not a claim that the kernel matrix is
+positive-definite and is not an audit-status declaration.
 
 A rejected predecessor attempted to add four new primitives. This version
 does not. It uses only:
@@ -22,7 +24,9 @@ does not. It uses only:
 - the retained lattice Hamiltonian `H_lat` from the emergent-Lorentz
   dispersion theorem, with momentum-space spectrum
   `E_lat(p) = sqrt(m^2 + (4/a^2) sum_i sin^2(p_i a/2))`;
-- standard quantum mechanics: Stone's theorem for self-adjoint generators.
+- finite-dimensional matrix spectral calculus on the framework's finite
+  lattice Hamiltonian matrices. Stone's theorem is cited only as parallel
+  continuum context, not as a load-bearing import.
 
 ## Theorem
 
@@ -39,12 +43,40 @@ The per-step lattice propagator is therefore
 U(a) = exp(-i a H_lat).
 ```
 
-**Proof.** Stone's theorem states that a self-adjoint operator `H`
-generates a unique strongly continuous one-parameter unitary group
-`U(t) = exp(-i t H)`. Applying this to the retained self-adjoint
-`H_lat` gives the stated unitary propagator. The 1+1D and 3+1D
-boost-covariance theorems operate on this fixed `H_lat` surface, so the
-per-step kernel on that lane is `U(a)`. No additional primitive is used.
+**Finite-matrix proof.** On every finite lattice used by the framework
+runner, `H_lat` is a finite Hermitian matrix. The finite spectral theorem
+gives a unitary diagonalization
+
+```text
+H_lat = V diag(E_j) V^dagger,    E_j in R.
+```
+
+Define
+
+```text
+U(t) = V diag(exp(-i t E_j)) V^dagger.
+```
+
+Then `U(t)^dagger U(t)=I`, `U(0)=I`, and
+`U(t+s)=U(t)U(s)` follow entrywise from the scalar identities for
+`exp(-itE_j)`. Differentiating the diagonal expression gives
+
+```text
+dU/dt = -i H_lat U(t),    U(0)=I.
+```
+
+Conversely, any finite matrix path `W(t)` solving the same equation with
+`W(0)=I` becomes, in the eigenbasis of `H_lat`, the entrywise scalar system
+`dY_jk/dt = -i E_j Y_jk` with initial data `Y_jk(0)=delta_jk`; elementary
+scalar uniqueness gives `Y_jk(t)=exp(-itE_j) delta_jk`. Hence `W(t)=U(t)`.
+The 1+1D and 3+1D boost-covariance theorems operate on this fixed `H_lat`
+surface, so the per-step kernel on that finite lane is `U(a)`. No additional
+primitive or textbook import is used.
+
+Stone's theorem says the analogous statement in the general strongly
+continuous Hilbert-space setting; it is referenced as confirmation that this
+finite framework proof has the expected continuum analogue, not as an input to
+the audited chain.
 
 ## What The Runner Verifies
 
@@ -60,8 +92,9 @@ FFT-transformed to position space. It inherits the expected properties:
 - eigenvalue phases recover `E_lat(p)` to `3.2e-14`;
 - the Klein-Gordon continuum limit is recovered with the expected
   `(a^2/12) p^4` lattice correction;
-- parity, time-reflection, translation invariance, identity, inverse, and
-  group law all hold to machine precision.
+- parity, time-reflection, translation invariance, identity, inverse, group
+  law, spectral reconstruction, and finite generator equation all hold to
+  machine precision.
 
 ### 2. Directional-Measure Diagnostic
 
@@ -106,13 +139,13 @@ The runner also compares the nearest-neighbor dispersion to a tree-level
 Symanzik-improved dispersion. Both converge to the same continuum
 Klein-Gordon dispersion. The improved scheme converges faster, but it does
 not change the fixed-`H_lat` theorem: given a chosen self-adjoint
-Hamiltonian, Stone fixes its unitary propagator.
+Hamiltonian matrix, finite spectral calculus fixes its unitary propagator.
 
 ## Two Lanes, Two Statuses
 
 | Lane | Kernel status | Mechanism |
 | --- | --- | --- |
-| boost-covariance | positively closed | Stone theorem on retained `H_lat` |
+| boost-covariance | finite fixed-`H_lat` kernel closed | native finite spectral calculus on retained `H_lat` |
 | gravity-card directional measure | still open / Phase 3 no-go applies | separate empirical directional measure |
 
 The two lanes are formally distinct. This note closes the first and leaves
@@ -125,25 +158,29 @@ the second unchanged.
 - It does not assert uniqueness across all possible lattice actions or all
   conceivable kernels.
 - It does not turn the finite optimization into a global analytic no-go.
-  The analytic closure is Stone uniqueness for the retained `H_lat`; the
+  The analytic closure is finite spectral-calculus uniqueness for the retained
+  finite `H_lat` matrices; the
   optimization is a diagnostic guardrail for the directional candidate.
+- It does not import Stone's theorem as a load-bearing theorem. Stone is
+  parallel continuum context only.
 
 ## Verification
 
 ```bash
 python3 scripts/frontier_lorentz_kernel_positive_closure.py
-# PASS=41  FAIL=0
+# PASS=43  FAIL=0
 ```
 
-The 41 checks cover unitarity, dispersion recovery, continuum correction,
-discrete symmetries, Stone group law, diagnostic directional-family
-non-match, directional non-unitarity, scheme universality, and the lane
-status split.
+The 43 checks cover unitarity, dispersion recovery, continuum correction,
+discrete symmetries, finite spectral reconstruction, finite generator
+equation, group law, diagnostic directional-family non-match, directional
+non-unitarity, scheme universality, and the lane status split.
 
 ## Safe Public Wording
 
 > On the fixed `H_lat` boost-covariance lane, the per-step propagator is
-> uniquely `U(a) = exp(-i a H_lat)` by Stone's theorem. This is a derived
-> corollary of the retained lattice Hamiltonian, not a new primitive. The
-> separate gravity-card directional-measure kernel remains open and is not
-> closed by this theorem.
+> uniquely `U(a) = exp(-i a H_lat)` by finite-dimensional spectral calculus
+> on the retained lattice Hamiltonian matrix. This is a derived corollary, not
+> a new primitive or an imported textbook assumption. Stone's theorem is only
+> the parallel continuum reference. The separate gravity-card
+> directional-measure kernel remains open and is not closed by this theorem.

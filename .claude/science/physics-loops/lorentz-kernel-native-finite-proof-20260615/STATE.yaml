@@ -1,0 +1,23 @@
+loop_slug: lorentz-kernel-native-finite-proof-20260615
+branch: physics-loop/lorentz-kernel-native-finite-proof-20260615
+base: origin/main@fc08b0519
+target_claim_id: lorentz_kernel_positive_closure_note
+mode: source_repair
+actual_current_surface_status: unaudited
+branch_status: bounded-support source-side audit-prep
+proposal_allowed: false
+audit_required_before_effective_status_change: true
+active_route: "replace load-bearing Stone-theorem import with native finite-dimensional spectral/exponential proof on framework H_lat matrices"
+files_touched:
+  - docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md
+  - scripts/frontier_lorentz_kernel_positive_closure.py
+  - logs/runner-cache/frontier_lorentz_kernel_positive_closure.txt
+remaining_blockers:
+  - "Independent audit still must determine the row's status."
+  - "The separate gravity-card directional-measure kernel remains open/out of scope."
+verification:
+  - "python3 -m py_compile scripts/frontier_lorentz_kernel_positive_closure.py"
+  - "python3 scripts/frontier_lorentz_kernel_positive_closure.py -> PASS=43 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_lorentz_kernel_positive_closure.py --allow-non-main --check-only -> fresh 1, stale 0, missing 0"
+next_exact_action: "Reviewer/auditor should audit the fixed-H_lat finite kernel theorem without treating Stone's theorem as a load-bearing import."
+stop_condition: "Ready PR opened with native finite-matrix proof and no audit/status surfaces edited."

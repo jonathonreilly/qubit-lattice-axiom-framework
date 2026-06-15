@@ -10,8 +10,7 @@
   "cycle_examples": [],
   "cycles_detected": 0,
   "effective_status_counts": {
-    "audit_in_progress": 1,
-    "audited_conditional": 11,
+    "audited_conditional": 12,
     "audited_numerical_match": 13,
     "audited_renaming": 29,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,

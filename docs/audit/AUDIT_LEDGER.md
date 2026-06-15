@@ -24,11 +24,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
 | unaudited | 1527 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 11 |
+| ~~audited_conditional~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -58,9 +57,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
+| `audit_in_progress` | 5 |
 | `audited_clean` | 1337 |
-| `audited_conditional` | 11 |
+| `audited_conditional` | 12 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
@@ -118,7 +117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 749 | 38.05 | `audited_clean` | **retained_no_go** |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 739 | 37.03 | `unaudited` | unaudited |
 | 19 | `cpt_exact_note` | positive_theorem | critical | 1077 | 36.57 | `audited_clean` | **retained** |
-| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 894 | 36.31 | `audit_in_progress` | audit_in_progress |
+| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 894 | 36.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 21 | `three_generation_structure_note` | bounded_theorem | critical | 1088 | 35.59 | `audited_clean` | **retained_bounded** |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 736 | 35.53 | `unaudited` | unaudited |
 | 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 332 | 34.88 | `unaudited` | unaudited |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1482,6 +1480,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -17335,6 +17334,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner directly evaluates the three layered DAG-derived configurations and reproduces the load-bearing 6/6 score surface, TOWARD forces, N-stability, Born linearity, forward-depth fraction, and state-family robustness. The small norm-row roundoff difference remains at machine precision and does not affect the bounded compatibility claim.
 - **rationale:** The source note is narrowly framed as a compatibility control, not a proof of truly directed DAG Hamiltonian transport. The current runner gives 6/6 on all three configurations, with TOWARD force, 14/14 N-stability, machine-clean norm/Born behavior, forward-depth fraction 0.1266, and 3/3 state families. Residual risk is limited to the symmetrized-adjacency scope boundary, which the note states explicitly.
 - **auditor confidence:** high
+
+### `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07`
+
+- **Note:** [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](../../docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** BZ-corner Hamming-weight decomposition and inherited hw=1 M_3(C) support, as written with the claimed even/odd Hamming-weight sublattice/chirality identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260615T200633Z-staggered_dirac_bz_corner_forcin`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** None  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / A; J2: second / audited_conditional / bounded_theorem / A; J3: second / audited_conditional / bounded_theorem / A; J4: second / audited_conditional / bounded_theorem / A; J5: second / audited_conditional / bounded_theorem / A. Majority rationale: J1: The 1+3+3+1 Hamming count, distinct hw=1 translation characters, C3 cycle, and inherited M_3(C)/no-proper-quotient algebra are finite class-A checks over the supplied cube. But the source and runner also assert that position-space K-S sublattice/chirality parity corresponds to even/odd Hamming weight; the restricted packet only supplies epsilon as position-space parity, and the site-phase bridge makes the corresponding phase operators shift BZ... | J2: The finite {0,1}^3 Hamming-count and the hw=1 translation-character/C3 algebraic support close as class-A finite algebra over the cited retained inputs. However the source and runner also include the sublattice/chirality grading claim that even/odd Hamming weight corresponds to position-space sublattice parity; the restricted site-phase bridge instead says site-phase multiplication shifts BZ-corner labels by xor operations, so this identificat... | J3: The finite cube algebra itself checks out independently: {0,1}^3 has Hamming counts 1+3+3+1, the hw=1 translation characters are the three distinct sign triples, the C3 coordinate cycle is a genuine 3-cycle, and the cited projector-plus-cycle algebra generates M_3(C). The non-clean issue is the source's extra sublattice/chirality identification: the provided K-S authority supplies position-space epsilon parity, while the provided site-phase br... | J4: The finite cube arithmetic itself closes: {0,1}^3 has binomial Hamming counts 1+3+3+1, the hw=1 corners have the three distinct translation characters, and diagonal projectors plus a 3-cycle generate M_3(C). However, the source also asserts a sublattice/chirality grading by even/odd Hamming weight. In the restricted packet, the K-S note supplies position-space epsilon parity, while the site-phase bridge states that phase multiplication shifts... | J5: The finite cube arithmetic itself checks independently: {0,1}^3 has 8 corners, binomial Hamming multiplicities 1+3+3+1, hw=1 translation characters {(-1,+1,+1),(+1,-1,+1),(+1,+1,-1)}, and the C3 coordinate cycle closes the retained M_3(C) algebraic setup. The source also makes the quantitative chirality/sublattice-parity identification 'hw even = sublattice A, hw odd = sublattice B' from Block 03; the provided K-S authority supplies position-s...
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / A; J2: second / audited_conditional / bounded_theorem / A; J3: second / audited_conditional / bounded_theorem / A; J4: second / audited_conditional / bounded_theorem / A; J5: second / audited_conditional / bounded_theorem / A. Majority rationale: J1: The 1+3+3+1 Hamming count, distinct hw=1 translation characters, C3 cycle, and inherited M_3(C)/no-proper-quotient algebra are finite class-A checks over the supplied cube. But the source and runner also assert that position-space K-S sublattice/chirality parity corresponds to even/odd Hamming weight; the restricted packet only supplies epsilon as position-space parity, and the site-phase bridge makes the corresponding phase operators shift BZ... | J2: The finite {0,1}^3 Hamming-count and the hw=1 translation-character/C3 algebraic support close as class-A finite algebra over the cited retained inputs. However the source and runner also include the sublattice/chirality grading claim that even/odd Hamming weight corresponds to position-space sublattice parity; the restricted site-phase bridge instead says site-phase multiplication shifts BZ-corner labels by xor operations, so this identificat... | J3: The finite cube algebra itself checks out independently: {0,1}^3 has Hamming counts 1+3+3+1, the hw=1 translation characters are the three distinct sign triples, the C3 coordinate cycle is a genuine 3-cycle, and the cited projector-plus-cycle algebra generates M_3(C). The non-clean issue is the source's extra sublattice/chirality identification: the provided K-S authority supplies position-space epsilon parity, while the provided site-phase br... | J4: The finite cube arithmetic itself closes: {0,1}^3 has binomial Hamming counts 1+3+3+1, the hw=1 corners have the three distinct translation characters, and diagonal projectors plus a 3-cycle generate M_3(C). However, the source also asserts a sublattice/chirality grading by even/odd Hamming weight. In the restricted packet, the K-S note supplies position-space epsilon parity, while the site-phase bridge states that phase multiplication shifts... | J5: The finite cube arithmetic itself checks independently: {0,1}^3 has 8 corners, binomial Hamming multiplicities 1+3+3+1, hw=1 translation characters {(-1,+1,+1),(+1,-1,+1),(+1,+1,-1)}, and the C3 coordinate cycle closes the retained M_3(C) algebraic setup. The source also makes the quantitative chirality/sublattice-parity identification 'hw even = sublattice A, hw odd = sublattice B' from Block 03; the provided K-S authority supplies position-s...
+- **auditor confidence:** judicial
 
 ### `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06`
 

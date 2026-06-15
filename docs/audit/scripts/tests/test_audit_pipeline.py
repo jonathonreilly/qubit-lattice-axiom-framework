@@ -2556,5 +2556,29 @@ class RepairMissingDependencyEdgesTest(unittest.TestCase):
         self.assertEqual(note_a.count("](NOTE_B.md)"), 1)
 
 
+class SanitizeLegacyAuditArtifactsTest(unittest.TestCase):
+    def test_canonicalizes_decoration_parent_filename_stem(self):
+        m = _import("sanitize_legacy_audit_artifacts")
+        ledger = {
+            "rows": {
+                "cl3_complexification_split_narrow_theorem_note_2026-05-10": {
+                    "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+                    "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+                },
+                "staggered_jw_decoration": {
+                    "claim_id": "staggered_jw_decoration",
+                    "decoration_parent_claim_id": "CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10",
+                },
+            }
+        }
+
+        m.canonicalize_decoration_parent_ids(ledger)
+
+        self.assertEqual(
+            ledger["rows"]["staggered_jw_decoration"]["decoration_parent_claim_id"],
+            "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

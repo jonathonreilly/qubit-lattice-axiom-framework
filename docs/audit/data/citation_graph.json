@@ -51250,10 +51250,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12"
     },
     {
@@ -98471,12 +98467,11 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
         "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
         "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "aab99d44089fb6eeef33d1693e7f25e6c51495264478d7e117aa9178fe3bc9f8",
+      "note_hash": "0c74bcad944db7653c3429ccd0a9e0003cff17b20419887401d6a32cfc9e5ca9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113241,8 +113236,8 @@
       "open_gate": 170,
       "positive_theorem": 615
     },
-    "edge_count": 12914,
-    "leaf_count": 1109,
+    "edge_count": 12913,
+    "leaf_count": 1110,
     "node_count": 3437,
     "root_count": 1063,
     "runners_with_path": 3017

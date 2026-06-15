@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 909 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1524 |
+| unaudited | 1523 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 12 |
+| ~~audited_conditional~~ | 13 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1340 |
-| `audited_conditional` | 12 |
+| `audited_conditional` | 13 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1841 |
+| `unaudited` | 1840 |
 
 | claim_type | count |
 |---|---:|
@@ -1486,6 +1486,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -20654,6 +20655,23 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **rationale:** The displayed formulas independently check: P_+ and P_- are complementary projections, P_+ - P_- = sigma_z, d log R_h / d h_x at h=0 equals epsilon_x, and the smooth log-odds composition condition reconstructs the exponential RN family. The runner genuinely computes those finite algebraic checks and performs dependency/boundary string checks, with no external comparator or tuned numerical input. However, the headline equality between the Y_T source record and the Pauli readout is the load-bearing move, and the restricted packet does not derive that bridge from the cited authorities; it assigns the same signed label to two compatible concepts.
 - **open / conditional deps cited:**
   - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
+- **auditor confidence:** high
+
+### `yt_p1_i_s_lattice_pt_citation_note_2026-04-17`
+
+- **Note:** [`YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the restricted-packet arithmetic bridge from supplied/imported I_S values and alpha_LM to the quoted P1 percentages; not the literature bracket, the native BZ quadrature derivation, or any master-obstruction budget revision.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-203047-1d98b4c3d7-yt_p1_i_s_lattice_pt_citatio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Assuming the supplied input I_S in [4,10], the note substitutes P1 = (alpha_LM/(4*pi)) * C_F * I_S to obtain P1 in [3.85%, 9.62%], and similarly maps the native candidate I_S = 3.902217 to P1_native = 3.754% if the BZ row is independently audited clean.  _(class `B`)_
+- **chain closes:** False — The numerical substitution is correct, but the chain to retained P1 authority does not close from this packet. The missing step is independent retained authority for the I_S input path, especially the native BZ quadrature row, plus closed authority for the canonical alpha_LM value rather than the hard-coded admitted plaquette reuse.
+- **rationale:** Issue: the runner and note correctly check arithmetic, but the load-bearing inputs are supplied or imported: the literature bracket is explicitly not retained, the native BZ value is explicitly pending independent audit, and alpha_LM comes through a helper hard-coding the admitted plaquette value 0.5934. Why this blocks: a conditional substitution cannot promote the P1 value or replace the packaged reference without a retained input theorem for I_S on the exact operator/scheme. Repair target: audit and wire the native full-staggered BZ quadrature row, and separately close or explicitly premise the canonical alpha_LM carrier. Claim boundary until fixed: the row supports only conditional arithmetic from stated inputs to P1 percentages.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`
+  - `YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`
 - **auditor confidence:** high
 
 ### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`

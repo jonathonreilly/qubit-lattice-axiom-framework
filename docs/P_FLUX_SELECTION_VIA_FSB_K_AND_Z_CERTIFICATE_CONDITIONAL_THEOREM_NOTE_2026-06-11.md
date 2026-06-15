@@ -1,18 +1,21 @@
-# P-FLUX Selection via FSB-K and the (Z) Certificate — `φ = −1` Conditional on FSB-K Grade (Conditional Theorem)
+# P-FLUX Selection via FSB-K and the (Z) Certificate — `φ = −1` at Retained FSB-K Grade
 
 **Date:** 2026-06-11
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
-**Scope note:** honest conditional composer of the P-FLUX supply
-line; as of the 2026-06-12 source-sync the (Z) geometry leg is
-retained, and the conclusion is conditional only on FSB-K reaching
-retained grade with its realized-kernel quantifier and FSB-CL intact.
-**Claim scope:** **IF** (C1) the re-scoped axiom-first fermionic
+**Scope note:** honest bounded composer of the P-FLUX supply line;
+as of the 2026-06-14 source-sync both the (Z) geometry leg and FSB-K
+stand at retained grade (`retained` / `retained_bounded`), so this row
+consumes FSB-K at its retained-bounded grade. The only remaining scope
+boundary is that the selection is **within** the licensed two-class
+kinetic surface; wholesale retirement of P-KIN still requires that
+surface row's audit grade.
+**Claim scope:** **GIVEN** (C1) the re-scoped axiom-first fermionic
 Stefan-Boltzmann row FSB-K
 (`axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`:
 for **every** realized-class kinetic kernel satisfying hypothesis (Z),
 `g_eff(T) := u(T)/[(7/8)(π²/30)T⁴]` has a finite `T → 0` plateau
-`= Σ |det V_jb|⁻¹`, Corollary FSB-CL) stands at retained grade with
+`= Σ |det V_jb|⁻¹`, Corollary FSB-CL) stands at retained-bounded grade with
 its quantifier and FSB-CL intact, **USING** the retained (Z)-certificate row
 (`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`:
 Theorem Z-K1 — the flux-`(−1)` Kawamoto-Smit realized kernel satisfies
@@ -28,9 +31,11 @@ normalization; `≈ 1 = 8/2³` per site at unit hopping; recomputed
 in-runner from both kernels with FSB-K's own mode-sum method) and
 **violated by K0** (`g_eff ∝ T⁻²`, Sommerfeld `u/T²` plateau — no
 finite `T⁴` bookkeeping exists), hence **`φ = −1` is selected: B-Z2
-supplied, B-BIT retired — conditional on FSB-K's audit grade.**
-As of 2026-06-12 FSB-K is unaudited and the (Z) certificate is
-retained: this note **performs no selection at current grades**.
+supplied, B-BIT retired within the licensed two-class surface at
+FSB-K's retained-bounded grade.** As of 2026-06-14 FSB-K is
+`retained_bounded` and the (Z) certificate is `retained`; this row now
+performs the within-surface selection at current grades, while leaving
+P-KIN wholesale retirement to the independent kinetic-surface audit.
 Falsification legs: dropping the (CL) clause restores the
 retained-surface tie (the carrier battery ties TRUE/TRUE, count
 `3 = 3`, recomputed); dropping the (Z) certificate leaves FSB-K's
@@ -48,16 +53,22 @@ status are set only by the independent audit lane.
 **Cache:** [`logs/runner-cache/p_flux_selection_via_fsb_k_check_2026_06_11.txt`](../logs/runner-cache/p_flux_selection_via_fsb_k_check_2026_06_11.txt)
 (`TOTAL: PASS=16 FAIL=0`, deterministic, runtime well under one
 minute)
-**Authority role:** source-note proposal composing the open FSB-K
-row with the retained (Z) certificate into the conditional selection
-of the P-FLUX bit. It is the
+**Authority role:** source-note proposal composing the retained-bounded
+FSB-K row with the retained (Z) certificate into the within-surface
+selection of the P-FLUX bit. It is the
 downstream consumer that FSB-K's boundary B-3 names ("composed by a
 downstream consumer") and the supplier shape the finite-species-
-density no-go's §7/N6 pins. It changes no existing row's status and
-performs no selection at current grades.
+density no-go's §7/N6 pins. It changes no existing row's status.
 
 ## 0. Changelog
 
+- **2026-06-14.** Source-sync against current `main`: FSB-K now stands
+  at `retained_bounded` with the realized-kernel quantifier and
+  Corollary FSB-CL intact, while the `(Z)` certificate remains
+  retained. This note now consumes both as current retained-grade
+  authorities and states the resulting within-surface selection at
+  current grades. The kinetic-class surface boundary B-C0 remains
+  explicit.
 - **2026-06-12.** Source-sync against current `main`: the
   `(Z)` certificate is now audited retained, and FSB-K no longer has
   the old U4 row as a load-bearing dependency. This note now records
@@ -88,22 +99,22 @@ for every (Z)-kernel; the (Z) certificate now computes which licensed
 kernel satisfies (Z). Does the composition select the bit — and at
 exactly what grade, under exactly which conditions?
 
-**Method.** Compose, do not assert: (i) verify FSB-K's open
-condition content and the retained (Z)-certificate's geometry content
+**Method.** Compose, do not assert: (i) verify FSB-K's retained-grade
+content and the retained (Z)-certificate's geometry content
 textually, and verify the (Z) interface matches verbatim across them
 (no quantifier gap); (ii) recompute the
 composed conclusion self-contained — both kernels rebuilt, FSB-K's
 own mode-sum method applied to both, the (Z)-side decision data
 recomputed, and the full pipeline run label-free (geometry + thermal
 data in, selected kernel out, flux read off the output); (iii)
-declare the condition structure precisely (which row must retain;
-what happens at `audited_conditional`; what collapses the chain);
+declare the grade structure precisely (which retained rows are consumed;
+what future invalidation would collapse; what surface caveat remains);
 (iv) attack the composition with both falsification legs and certify
 turn-1 inversion-guard compliance. Honesty anchor: the runner checks
-TODAY's ledger grades on every run and the note performs no selection
-at current grades.
+TODAY's ledger grades on every run and the note states that the
+within-surface selection is active at current grades.
 
-## 2. The conditional theorem
+## 2. The bounded theorem
 
 ### 2.1 Named condition and retained geometry leg
 
@@ -113,7 +124,7 @@ at current grades.
   `retained_no_go`, or decoration under a retained parent) with its
   re-scoped quantifier ("for **every** kinetic kernel in the realized
   class" satisfying (Z)) and Corollary FSB-CL (the conditional
-  finiteness clause) intact. Current status: **unaudited** (runner
+  finiteness clause) intact. Current status: **retained_bounded** (runner
   check 1). Its one-mode surface now routes through the current
   minimal axiom memo and the retained tensor-product Fock bridge, not
   the old U4 qubit-reframe row.
@@ -130,9 +141,9 @@ per-dof currency `7/240` and the requirement's normative reading,
 §2.3), the tensor-product Fock bridge (`retained`; the probe
 surface), and the axiom premise node.
 
-### 2.2 Theorem SEL-C (the conditional selection)
+### 2.2 Theorem SEL-R (the retained-grade within-surface selection)
 
-**IF C1, using the retained (Z)-certificate, THEN, within the licensed two-class kinetic surface
+**Since C1 is retained-grade, using the retained (Z)-certificate, within the licensed two-class kinetic surface
 (`K0` = uniform plaquette flux `+1`; `K1` = uniform flux `−1`,
 Kawamoto-Smit class; representatives re-derived self-contained):**
 
@@ -159,8 +170,10 @@ Kawamoto-Smit class; representatives re-derived self-contained):**
   — by that note's own named candidate route ("a dynamical/spectral
    principle requiring point-like zero sets (relativistic cones)").
 
-**The conclusion holds at FSB-K's eventual grade and is conditional
-on FSB-K reaching retained grade — nothing is selected today.**
+**The conclusion holds at FSB-K's current retained-bounded grade.**
+This is still a within-surface selection; it does not by itself prove
+the kinetic-class forcing row's surface assumptions or retire P-KIN
+wholesale.
 ∎
 
 ### 2.3 The requirement's normative force (declared, not smuggled)
@@ -184,22 +197,21 @@ axiom-forced.
 
 ### 2.4 Grade semantics (what happens at each outcome)
 
-- **C1 retained-grade:** SEL-C's conclusion stands at C1's grade;
+- **Current state: C1 retained-grade.** SEL-R's conclusion stands at C1's grade;
   B-Z2 supplied; B-BIT retired within the surface.
-- **C1 `audited_conditional` (repair class `dependency_not_retained`):**
-  the selection stands conditionally with the unresolved upstream
-  conditions and **resolves by cascade** when those upstreams retain —
-  the standing owner method; acceptable, not a defect.
-- **C1 `audited_failed` or `audited_renaming` (content defect):** the
+- **Future invalidation of C1 to `audited_failed` or `audited_renaming`
+  (content defect):** the
   composition **collapses**; B-Z2 reopens exactly as the parents left
   it; nothing in this note rescues the selection.
-- **Today (C1 unaudited, Z certificate retained):** no selection. The
+- **Future invalidation of C1 to `audited_conditional`
+  (`dependency_not_retained`):** the row reverts to a conditional
+  composer and resolves by cascade if those upstreams retain. The
   runner re-checks the grades on every run, so this row self-reports
-  when C1 moves.
+  if C1 moves.
 
 **Scope condition (boundary B-C0, not a named condition):** the
 two-class surface is the kinetic-class forcing row's scope (that row
-is unaudited); SEL-C selects WITHIN the surface. Retiring P-KIN
+is unaudited); SEL-R selects WITHIN the surface. Retiring P-KIN
 wholesale ("the kinetic term is the Kawamoto-Smit class, full stop")
 additionally requires that row's grade.
 
@@ -207,7 +219,7 @@ additionally requires that row's grade.
 
 | ID | Boundary | Where it bites |
 |---|---|---|
-| B-C1 | FSB-K is unaudited as of 2026-06-12 while the (Z) certificate is retained; the conclusion is conditional and this note performs no selection at current grades | check 1, §2.4 |
+| B-C1 | FSB-K is retained-bounded as of 2026-06-14 and the (Z) certificate is retained; the within-surface conclusion is active at current grades, but future C1 invalidation would collapse/reconditionalize the composition | check 1, §2.4 |
 | B-C0 | The licensed two-class surface is the (unaudited) kinetic-class forcing row's scope; the selection is within-surface only | check 11 |
 | B-P | `u(T)` is the half-filled free-Fermi probe in the retained SB row's own integrand (hypothesis-satisfiability currency); thermal equilibrium of the realized dynamics is derived nowhere in the chain (inherits FSB-K's B-1 and the parents' B-F3) | checks 6-7 |
 | B-R | (REQ)'s normative force is the parents' B-Z2 reading anchored in the retained SB bridge (§2.3); it is consumed at the chain's grade, not claimed axiom-forced | checks 10, 12 |
@@ -230,9 +242,9 @@ Load-bearing (markdown links):
    requirement's normative anchor (§2.3); its supplied-inventory
    hypothesis text is re-verified (check 12).
 4. [`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`](AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md)
-   — **unaudited; named condition C1.** License used: its theorem
-   FSB-K and Corollary FSB-CL as the CONDITIONAL supplier of the (CL)
-   clause, consumed as a named condition, never as a truth input; its
+   — **retained_bounded; named supplier C1.** License used: its theorem
+   FSB-K and Corollary FSB-CL as the retained-bounded supplier of the (CL)
+   clause; its
    quantifier, branch-blindness, and B-3 composition clause are
    string-verified (check 2) and its conclusion is recomputed
    in-runner on this runner's own constructions (checks 6-8).
@@ -301,9 +313,9 @@ selected kernel at the end, check 9).
 under one minute. 16 checks in four sections:
 
 - **[A]** (4 checks) today's ledger grades recorded honestly (C1
-  unaudited, Z certificate retained, surface row unaudited, SB bridge
+  retained_bounded, Z certificate retained, surface row unaudited, SB bridge
   retained_bounded, Fock bridge retained;
-  own-note "performs no selection at current grades"); C1
+  own-note "within-surface selection is active at current grades"); C1
   load-bearing content strings (quantifier, FSB-CL, branch-blindness,
   B-3 composition clause); retained Z content strings (Z-K1, Z-K0, cone
   data); the verbatim (Z) interface match plus the `g_eff` formula
@@ -317,7 +329,7 @@ under one minute. 16 checks in four sections:
   comparator's `T^{−3/2}` divergence (CL strictly stronger than
   point-likeness); the end-to-end label-free pipeline whose selected
   kernel has computed flux `−1`.
-- **[C]** (4 checks) the conditional assembly: conclusion = the
+- **[C]** (4 checks) the retained-grade assembly: conclusion = the
   wave-3 note's §7 formulation 2 / N6 target (textual); retires =
   the kinetic-class note's B-BIT by its own named route (textual);
   the retained currency anchor (`7/240` exact, `427/4`
@@ -330,7 +342,7 @@ under one minute. 16 checks in four sections:
   20/8; guard strings; own-note declaration).
 
 Five `RESIDUAL (declared-open): ...` lines mark boundaries B-C1, B-P,
-B-C0, B-G, and the C1 cascade clause at the points where they are
+B-C0, B-G, and the future-C1-invalidation clause at the points where they are
 load-bearing.
 
 Runner check classes per the audit rubric: checks 5-9, 14-15 are
@@ -341,12 +353,11 @@ substance of a composer row) with class (A) arithmetic.
 
 ## 7. What this does NOT close
 
-- **The selection itself, today.** FSB-K is still unaudited, so nothing
-  is selected at current grades (B-C1). For `φ = −1` to become
-  effective on this composed path the audit lane must audit FSB-K
-  (C1) to retained grade; for the wholesale retirement of P-KIN beyond
-  the within-surface selection, the kinetic-class forcing row must
-  also land at an adequate grade (B-C0).
+- **P-KIN wholesale retirement.** The within-surface selection is now
+  active at FSB-K's retained-bounded grade. For the wholesale
+  retirement of P-KIN beyond the within-surface selection, the
+  kinetic-class forcing row must still land at an adequate grade
+  (B-C0).
 - Thermal equilibrium / KMS of the realized dynamics (B-P) — nowhere
   in this chain.
 - The normative status of (REQ) beyond the parents' B-Z2 reading
@@ -359,20 +370,20 @@ substance of a composer row) with class (A) arithmetic.
 ## 8. What this supports (downstream citable text)
 
 - The kinetic-class forcing note's B-BIT row can cite this note as:
-  "B-BIT retires conditionally: IF
+  "B-BIT retires within surface: since
   `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`
-  stands at retained grade, using the retained
+  stands at retained-bounded grade, using the retained
   `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`
   geometry leg, the finite-species-density requirement selects
   `φ = −1` within the two-class surface
   (`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`,
-  Theorem SEL-C)."
+  Theorem SEL-R)."
 - The finite-species-density no-go's B-Z2 boundary can cite this note
   as the named missing row, supplied at chain grade (its §7
   formulation 2; its N6 promotion executed).
 - The audit lane gains a one-row work order with a declared payoff:
-  audit of FSB-K converts SEL-C from conditional to effective on this
-  path at FSB-K's grade, subject to the kinetic-class surface scope.
+  audit of this row can now review an active retained-grade
+  within-surface selection, subject to the kinetic-class surface scope.
 
 ## 9. Command
 
@@ -384,12 +395,14 @@ Expected deterministic summary:
 
 ```text
 TOTAL: PASS=16 FAIL=0
-VERDICT: CONDITIONAL selection, composed honestly: IF the FSB-K row (C1)
-         stands at retained grade, THEN using the retained (Z)-certificate
-         geometry leg, within the licensed two-class kinetic surface the
-         finite-species-density requirement (CL) selects K1 and rejects K0.
-         TODAY C1 is unaudited and the Z certificate is retained: this note
-         performs no selection at current grades. Dropping (CL) restores the
+VERDICT: RETAINED-GRADE within-surface selection, composed honestly:
+         since the FSB-K row (C1) stands at retained-bounded grade,
+         using the retained (Z)-certificate geometry leg, within the
+         licensed two-class kinetic surface the finite-species-density
+         requirement (CL) selects K1 and rejects K0.
+         TODAY C1 is retained-bounded and the Z certificate is retained:
+         this note performs the within-surface selection at current
+         grades. Dropping (CL) restores the
          retained-surface tie; dropping the retained Z geometry leg leaves
          the hypothesis unverified and the selection collapses. Nothing is
          forced from the matched-3=3 count: the selection consumes
@@ -402,7 +415,7 @@ Exit code 0 iff `FAIL=0`.
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "Honest conditional composer of the P-FLUX supply line. IF C1 (FSB-K retained at retained grade with its realized-kernel-class quantifier and Corollary FSB-CL intact) stands, THEN using the retained (Z)-certificate row with Theorems Z-K1/Z-K0 intact, within the licensed two-class kinetic surface the finite-species-density requirement (CL) -- boundary B-Z2 of the P-FLUX no-gos, in the retained SB bridge row's own per-dof currency -- is satisfied by K1 (g_eff plateau ~ 8 = sum |det V|^-1 per cell central-difference, ~ 1 = 8/2^3 per site unit-hopping, recomputed with FSB-K's own mode-sum method) and violated by K0 (g_eff ~ T^-2, Sommerfeld u/T^2 plateau), hence phi = -1 is selected: B-Z2 supplied, B-BIT retired, conditional on C1 and at C1's grade. As of 2026-06-12 C1 is unaudited and the Z certificate is retained, so no selection is performed at current grades. At audited_conditional (dependency_not_retained) for C1 the selection stands and resolves by cascade; at audited_failed/audited_renaming of C1 the composition collapses and B-Z2 reopens. The two-class surface is scope (B-C0, kinetic-class row unaudited). Falsification: dropping (CL) restores the retained-surface carrier tie (TRUE/TRUE, 3 = 3, recomputed); dropping the retained Z geometry leg leaves the hypothesis unverified and FSB-K-minus-(Z) is false as a universal (comparator T^-3/2). Turn-1 inversion guards certified: the selection consumes thermal/spectral data only (counts 8/8/8 vs 20/68/140, cone speeds, |det V|, g_eff ratios; kernel-global readouts 8/4 vs 20/8, never 3); the flux is read off the selected kernel, never input."
+claim_scope: "Honest retained-grade composer of the P-FLUX supply line. Since C1 (FSB-K retained_bounded with its realized-kernel-class quantifier and Corollary FSB-CL intact) stands, using the retained (Z)-certificate row with Theorems Z-K1/Z-K0 intact, within the licensed two-class kinetic surface the finite-species-density requirement (CL) -- boundary B-Z2 of the P-FLUX no-gos, in the retained SB bridge row's own per-dof currency -- is satisfied by K1 (g_eff plateau ~ 8 = sum |det V|^-1 per cell central-difference, ~ 1 = 8/2^3 per site unit-hopping, recomputed with FSB-K's own mode-sum method) and violated by K0 (g_eff ~ T^-2, Sommerfeld u/T^2 plateau), hence phi = -1 is selected: B-Z2 supplied, B-BIT retired within the licensed surface at C1's grade. As of 2026-06-14 C1 is retained_bounded and the Z certificate is retained, so the within-surface selection is active at current grades. If C1 is later invalidated to audited_conditional, the selection reverts to conditional cascade; if C1 is later invalidated to audited_failed/audited_renaming, the composition collapses and B-Z2 reopens. The two-class surface is scope (B-C0, kinetic-class row unaudited). Falsification: dropping (CL) restores the retained-surface carrier tie (TRUE/TRUE, 3 = 3, recomputed); dropping the retained Z geometry leg leaves the hypothesis unverified and FSB-K-minus-(Z) is false as a universal (comparator T^-3/2). Turn-1 inversion guards certified: the selection consumes thermal/spectral data only (counts 8/8/8 vs 20/68/140, cone speeds, |det V|, g_eff ratios; kernel-global readouts 8/4 vs 20/8, never 3); the flux is read off the selected kernel, never input."
 upstream_dependencies:
   - minimal_axioms
   - tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25
@@ -415,8 +428,8 @@ source_sets_audit_outcome: false
 ```
 
 This note is the composition point and nothing else: the geometry leg is
-now a retained input and the thermal leg (C1) remains the sole open
-condition consumed at its grade. The discriminating computations are
-reproduced self-contained, and the conclusion `φ = −1` is stated
-**conditional on C1 reaching retained grade** — the honest ceiling until
-the independent FSB-K audit lands.
+now a retained input and the thermal leg (C1) is retained_bounded and
+consumed at its grade. The discriminating computations are reproduced
+self-contained, and the conclusion `φ = −1` is stated within the licensed
+two-class surface — the honest ceiling until the independent kinetic-class
+audit lands.

@@ -850,7 +850,8 @@ directly rather than this gate alias").
 **Registered Tier-A carrier route (load-bearing admitted target, not
 retained authority):**
 
-- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  (plain-text registry handle, not a citation-graph dependency)
   — parent-identity gate alias and registered Tier-A derivation target
   `AC_φλ`, consumed here only as the carrier route for the residual
   `KS-phase-form` input. This is not retained authority and does not

@@ -210,7 +210,8 @@ that memo's "Open Gates And Admissions Outside The Axioms" section:
   this surface is admitted under named open-gate input until that gate
   closes.
   Canonical parent note:
-  [`staggered_dirac_realization_gate_note_2026-05-03`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md),
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  (plain-text registry handle, not a citation-graph dependency),
   the registered Tier-A derivation target `AC_phi_lambda` (display
   `AC_φλ`). This note consumes that admitted staggered carrier; it
   does not close the gate.

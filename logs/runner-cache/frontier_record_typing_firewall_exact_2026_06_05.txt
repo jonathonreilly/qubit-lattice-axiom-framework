@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_typing_firewall_exact_2026_06_05.py
+runner_sha256: f950f00771744ce1459bba085bf17de0c80ca985c76af55c5443b212562f7364
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 === Record readout context ===
 [PASS] C1 central-sector set is finite
 [PASS] C2 fixed K/CPT action is an involution
@@ -50,3 +58,6 @@
 === Scorecard ===
 PASS=27 FAIL=0
 FINDING: from the Record axiom plus a supplied finite readout context, a realized record is an orbit/atom. A probability is a separate normalized state on the event algebra. Record supplies the former and explicitly not the latter.
+
+----- stderr -----
+

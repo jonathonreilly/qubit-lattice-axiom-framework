@@ -1,0 +1,13 @@
+slug: bare-alpha-archive-reaudit-firewall-20260615
+status: ready_for_review
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25
+target_blocker_text: "archived row remains audited_failed while current source is a narrowed formal supplied-hypothesis identity"
+files_touched:
+  - archive_unlanded/framework-bare-alpha-assumed-input-salvage-2026-04-30/FRAMEWORK_BARE_ALPHA_3_ALPHA_EM_DIMENSION_FIXED_RATIO_SUPPORT_NOTE_2026-04-25.md
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: reviewer extracts archived-row handoff; auditor re-runs row manually if archived failed rows remain outside automatic hash invalidation

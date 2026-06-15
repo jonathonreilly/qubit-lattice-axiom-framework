@@ -2,6 +2,8 @@
 
 **Date:** 2026-06-04
 **Status:** bounded-support repair packet; independent audit required before any effective status change
+**Runner:** [`scripts/grown_transfer_basin_live_packet.py`](../scripts/grown_transfer_basin_live_packet.py)
+**Runner cache:** [`logs/runner-cache/grown_transfer_basin_live_packet.txt`](../logs/runner-cache/grown_transfer_basin_live_packet.txt)
 
 ## Scope
 

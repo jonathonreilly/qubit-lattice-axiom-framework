@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
-runner_sha256: 4907809e309d81ee4edd03c5653ee74d425e7b31ebd49c888a6f6061fb5893bb
+runner_sha256: daf39ca517b867cb1446aa4482fade533dfcb7cbd5c8c3729485833153aa171a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.66
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -16,14 +16,20 @@ SECTION 0: Source-boundary checks
 
   [PASS (D)] section0_2026_06_07_boundary_present
          source note carries the implementation-input retargeting section
+  [PASS (D)] section0_2026_06_12_status_certificate_present
+         source note carries a machine-checkable current-surface firewall
   [PASS (D)] section0_imports_are_implementation_inputs
          canonical plaquette and Ward target are not proof authorities for this row
+  [PASS (D)] section0_top_claim_scope_is_finite_grid_only
+         opening claim scope no longer states continuum uniqueness as the row claim
   [PASS (D)] section0_continuum_claims_excluded
          finite grid diagnostic only
   [PASS (D)] section0_runner_count_updated
          note scorecard matches source-boundary runner
   [PASS (D)] section0_no_retained_input_overclaim
          old retained-input wording removed
+  [PASS (D)] section0_no_new_axiom_or_ledger_status
+         source firewall does not alter audit authority
 
 ==============================================================================
 SECTION 1: Imported numeric inputs
@@ -236,9 +242,9 @@ SECTION 8: SCORECARD
 
   Elapsed: 0.4s
 
-  Counts: 28 PASS, 0 FAIL
+  Counts: 31 PASS, 0 FAIL
 
-  All 28 checks passed.
+  All 31 checks passed.
 
 ----- stderr -----
 

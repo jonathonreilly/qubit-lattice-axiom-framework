@@ -1,0 +1,31 @@
+loop_slug: remaining-conditional-input-firewalls-20260612
+updated_utc: "2026-06-15T00:00:00Z"
+branch: physics-loop/remaining-conditional-input-firewalls-20260612
+base: origin/main
+pr: 3765
+mode: source_side_audit_unlock
+target_status: bounded-support
+actual_current_surface_status: conditional-support
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+summary: >
+  Narrow refresh of PR #3765 after SM I12 was split to PR #3787. This branch
+  now carries only the YT boundary BC-transfer finite-grid diagnostic source
+  firewall and refreshed runner cache.
+target:
+  claim_id: yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17
+  note: docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md
+  runner: scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
+  cache: logs/runner-cache/frontier_yt_boundary_bc_transfer_uniqueness.txt
+  movement: narrows the claim to finite-grid diagnostics under explicit imported implementation inputs
+validation:
+  focused_runner: "Counts: 31 PASS, 0 FAIL"
+  cache_refresh: "1 stale runner refreshed successfully"
+  explicit_runner_cache_check: "1 runner considered; 1 fresh; 0 stale; 0 missing"
+  diff_check: clean
+  conflict_scan: clean
+remaining_blockers:
+  - canonical plaquette constants are implementation inputs, not retained proof authority here
+  - Ward target is an implementation input, not a retained physical BC-transfer theorem here
+  - two-loop SM RGE normalization, threshold scales, and EW initial conditions remain imported implementation inputs
+next_exact_action: "Commit, force-push PR #3765, and comment with validation."

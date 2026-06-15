@@ -29,6 +29,8 @@ import numpy as np
 
 np.set_printoptions(precision=10, linewidth=120, suppress=True)
 
+AUDIT_TIMEOUT_SEC = 120
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 N_C = 3

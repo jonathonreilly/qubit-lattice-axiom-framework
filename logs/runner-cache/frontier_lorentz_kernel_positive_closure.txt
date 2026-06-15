@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_kernel_positive_closure.py
-runner_sha256: 87d3b110b489689654e346ae99257ea23f794d6ce3da3dd1d948ada88586552f
+runner_sha256: 0852e577e206c11abd190ae8da12b8b822689757ff276c26d5268e3f7925dc46
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 31.90
+elapsed_sec: 22.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -140,5 +140,6 @@ All checks passed. Kernel question positively closed as
 derived corollary of retained H_lat + standard QM (Stone's theorem).
 No new primitives introduced. Directional measure excluded by real
 numerical verifier (best-fit residual bounded away from zero).
+
 ----- stderr -----
 

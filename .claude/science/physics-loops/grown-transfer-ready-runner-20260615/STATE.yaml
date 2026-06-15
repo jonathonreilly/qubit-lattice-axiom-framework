@@ -1,0 +1,28 @@
+loop: grown-transfer-ready-runner-20260615
+goal: "Attach the existing live packet verifier to the ready grown-transfer audit row."
+target_status: "bounded-support"
+actual_current_surface_status: "bounded-support"
+trace_class: "direct_blocker_closure"
+target_claim_id: "grown_transfer_basin_targeted_repair_note_2026-06-04"
+reachability_to_target: "supports"
+cycle_count: 1
+active_route: "Register current primary runner and refresh its cache."
+files_touched:
+  - "docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md"
+  - "logs/runner-cache/grown_transfer_basin_live_packet.txt"
+  - ".claude/science/physics-loops/grown-transfer-ready-runner-20260615/"
+verification:
+  - "parser extraction returned scripts/grown_transfer_basin_live_packet.py"
+  - "PYTHONPATH=scripts python3 scripts/grown_transfer_basin_live_packet.py"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh scripts/grown_transfer_basin_live_packet.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+local_measurement:
+  ledger_runner_path_after_regeneration: "scripts/grown_transfer_basin_live_packet.py"
+  helper_runner_paths_after_regeneration:
+    - "scripts/runner_cache.py"
+  hard_invalidations: 0
+  audit_lint_errors: 0
+pr_status: "ready_to_open"
+next_exact_action: "Open PR; reviewer/auditor can audit the ready row with the current packet verifier."
+stop_condition: "PR opened for review."

@@ -1,0 +1,18 @@
+loop_slug: signed-gravity-source-boundary-bridge-20260615
+current_goal: "Make the signed-gravity APS-locked source-action row audit-ready as an explicit source-boundary packet by wiring the executable APS/Wald/Gauss bridge audit into the row runner."
+target_status: no-go
+actual_current_surface_status: conditional-support
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: aps_wald_gauss_bridge_source_bundle
+files_touched:
+  - docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md
+  - scripts/signed_gravity_aps_locked_source_action_proposal.py
+  - logs/runner-cache/signed_gravity_aps_locked_source_action_proposal.txt
+open_imports:
+  - "A future retained theorem could still derive a new chiral grading/source principle."
+  - "The inserted source-action ansatz remains conditional until derived."
+review_findings: []
+pr_status: pending
+next_exact_action: "Open a review PR and ask reviewer/audit lane to judge the row as source-boundary/no-go support rather than a clean positive derivation."
+stop_condition: "Branch PR is open with runner/cache verification and no audit verdict edits."

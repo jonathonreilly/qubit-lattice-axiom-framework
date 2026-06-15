@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1465 |
+| Applied audit verdicts | 1466 |
 | Retained-grade rows, including boxed decorations | 1373 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 909 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1524 |
+| Unaudited rows | 1523 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 12 |
+| Audited conditional rows | 13 |
 | Audited renaming rows | 29 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1529 |
-| Ready rows | 87 |
+| Total pending rows | 1528 |
+| Ready rows | 86 |
 | Cycle-break targets | 0 |
-| Critical pending | 294 |
+| Critical pending | 293 |
 | High pending | 287 |
 | Medium pending | 466 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`yt_p1_i_s_lattice_pt_citation_note_2026-04-17`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) - critical; unaudited
 - [`higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08`](../../docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md) - critical; unaudited
 - [`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`axiom_first_kms_condition_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`](../../docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) - critical; unaudited
 - [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited
+- [`u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17`](../../docs/U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

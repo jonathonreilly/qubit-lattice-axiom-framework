@@ -1,0 +1,21 @@
+loop: pmns-residual-direct-axis-bridge-20260615
+status: pr_ready
+goal: "Remove the conditional PMNS axis-alignment dependency from the residual antiunitary row."
+target_status: best-honest-status
+actual_current_surface_status: proposed_promoted
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16
+blocked_dependency_removed: pmns_graph_first_axis_alignment_note
+replacement_dependency: pmns_graph_axis_to_active_lane_bridge_note
+files_touched:
+  - docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py"
+  - "bash docs/audit/scripts/run_pipeline.sh (simulation only; generated outputs restored)"
+pipeline_delta:
+  retained_pending_chain: "20 -> 19"
+  audit_queue_ready: "1 -> 2"
+next_exact_action: "Independent audit should inspect whether the direct axis-to-active bridge is sufficient for this residual antiunitary row."
+bare_retained_allowed: false

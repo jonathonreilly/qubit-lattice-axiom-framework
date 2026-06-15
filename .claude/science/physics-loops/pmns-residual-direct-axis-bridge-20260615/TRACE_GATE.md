@@ -1,0 +1,7 @@
+trace_class: direct_blocker_closure
+target_claim_id: pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16
+target_blocker_text: "chain_waiting_on:pmns_graph_first_axis_alignment_note"
+source_of_blocker_text: audit_ledger
+reachability_to_target: closes
+artifact_role: theorem
+next_trace_action: "Independent audit should evaluate the direct bridge dependency set."

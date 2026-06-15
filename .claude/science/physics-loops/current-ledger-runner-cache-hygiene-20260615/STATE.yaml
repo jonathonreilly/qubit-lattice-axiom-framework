@@ -1,0 +1,27 @@
+goal: "Keep the current ledger/audit-unblock source boundary aligned without editing audit verdicts."
+target_status: "bounded-support"
+actual_current_surface_status: "bounded-support"
+trace_class: "methodology"
+reachability_to_target: "supports"
+target_claim_id: null
+branch: "physics-loop/current-ledger-runner-cache-hygiene-20260615"
+base: "origin/main@fc08b0519"
+files_touched:
+  - "docs/repo/ROOT_FILE_GUIDE.md"
+  - "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md"
+  - "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md"
+  - ".claude/science/physics-loops/current-ledger-runner-cache-hygiene-20260615/"
+open_imports:
+  - "No scientific claim status changes are made here."
+  - "Independent audit still owns all row verdicts."
+verification:
+  diff_check: "git diff --check origin/main...HEAD passed."
+  generated_authority_guard: "No docs/audit, publication effective-status, lane registry, active review queue, front-door status, status board, or README changes."
+  py_compile: "Observable-principle, p-flux, and kinetic-isotropy touched-area scripts compile; they are unchanged from current main after conflict resolution."
+  p1_br_runner: "python3 scripts/observable_principle_p1_br_license_check_2026_06_10.py: TOTAL PASS=31 FAIL=0."
+  p1_cap_k_runner: "python3 scripts/observable_principle_p1_cap_k_check_2026_06_10.py: TOTAL PASS=31 FAIL=0."
+  branch_cache_check: "python3 scripts/precompute_audit_runners.py --all --check-only --allow-non-main: 2892 fresh, 0 stale, 0 missing."
+  current_main_cache_diagnostic: "Disposable origin/main pipeline/precompute reports 2914 fresh, 0 stale, 0 missing."
+  generated_audit_outputs_committed: false
+next_exact_action: "Reviewer can extract the source-boundary wording if desired; independent audit/review owns row status."
+stop_condition: "Source-boundary wording and root guide hygiene are current without generated audit edits."

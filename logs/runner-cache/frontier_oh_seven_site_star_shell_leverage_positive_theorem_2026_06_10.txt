@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_oh_seven_site_star_shell_leverage_positive_theorem_2026_06_10.py
+runner_sha256: 3bc0522cad7db7669ee7c8e6a3ef07bcfc991a6ed6c41172fc05fdc8e193e50a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+O_h SEVEN-SITE-STAR SHELL-LEVERAGE POSITIVE THEOREM
+================================================================================
+[PASS] L1 (multiplicity-free A1+E+T1): the 6-arm O_h rep splits into mutually orthogonal equivariant idempotents of ranks (A1,E,T1)=(1,2,3) summing to I
+       ranks={'A1': 1, 'E': 2, 'T1': 3}; orthogonal idempotents=True; sum=I True; commute with G True
+[PASS] L2 (per-arm weights = dim/6): the per-arm isotypic projector diagonal is exactly (A1,E,T1)=(1/6,1/3,1/2)=dim/6, identical on every arm (multiplicity-free transitive perm rep)
+       per-arm weights = {A1:0.166667, E:0.333333, T1:0.500000} = (1/6,1/3,1/2); arm-uniform=True
+[PASS] L3 (shell leverage kappa = 3/2): kappa := P_T1(arm)/P_E(arm) = (1/2)/(1/3) = 3/2 = dim(T1)/dim(E), and kappa^2 = 9/4 (per-arm weight ratios A1:E:T1 = 1:2:3 = the irrep dimensions)
+       kappa = 1.500000 = 3/2 = dim(T1)/dim(E) = 1.5; kappa^2 = 2.250000 = 9/4
+[PASS] L4 (Hom_Oh(E,T1)=0): E and T1 are inequivalent irreps, so the Reynolds intertwiner average(P_T1 . g . P_E) = 0 exactly; the equivariant commutant is 3-dimensional (one independent scalar on each of A1, E, T1) -- equivariance imposes NO relation between the E and T1 scales
+       ||average(P_T1 g P_E)|| = 0.0e+00 -> Hom_Oh(E,T1)=0; independent E,T scales
+[PASS] L5 (structural / box-independent): the projectors are pure O_h group averages -- NO dynamics, Green's function, or embedding-box input -- so kappa = 3/2 is an exact constant of the star geometry, invariant under arm relabeling, independent of any embedding box size (this is what distinguishes it from a dynamical readout functional)
+       A1 weight invariant under arm relabeling; projectors are group averages, box-free
+
+TOTAL: PASS=5 FAIL=0
+VERDICT (positive theorem): on the framework's 7-site octahedral star, the 6-arm O_h rep is
+multiplicity-free A1g(+)Eg(+)T1u with exact per-arm isotypic weights (1/6, 1/3, 1/2); hence the
+shell leverage kappa = P_T1/P_E = dim(T1)/dim(E) = 3/2 (kappa^2 = 9/4), and Hom_Oh(E,T1)=0 leaves
+the E and T1 equivariant scales independent. These are exact, unconditional, box-independent
+representation-theory constants of the support star. SCOPE: a standalone structural lemma only --
+it does NOT derive any Route-2 readout entry / rho_E=21/4 (that needs the covariance bridge
+q_E/q_T = kappa^2, which this structure does NOT supply -- see the companion no-go). No PDG/
+fitted value; no axiom or admission.
+
+----- stderr -----
+

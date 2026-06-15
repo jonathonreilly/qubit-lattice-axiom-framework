@@ -20,10 +20,13 @@ from __future__ import annotations
 
 import sys
 from fractions import Fraction
+from pathlib import Path
 
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md"
 
 
 def check(name: str, cond: bool, detail: str = "") -> bool:
@@ -42,6 +45,21 @@ def check(name: str, cond: bool, detail: str = "") -> bool:
 
 
 def main() -> int:
+    note_text = NOTE.read_text()
+    normalized_note = " ".join(note_text.split())
+    boundary_markers = [
+        "conditional-support / bounded algebraic surface only",
+        "the Wilson matching relation `beta = 2 N_c / g_bare^2`",
+        "the local Wilson coefficient surface `beta = 6` at `N_c = 3`",
+        "It may not cite this row as a retained derivation",
+        "remains a bounded conditional support surface",
+    ]
+    for marker in boundary_markers:
+        check(
+            f"source boundary marker present: {marker[:54]}",
+            marker in normalized_note,
+        )
+
     N_c = Fraction(3)
     beta_local = Fraction(2) * N_c
     check(
@@ -67,7 +85,9 @@ def main() -> int:
 
     print(
         "INFO scoped inputs: CN and WM are assumed by this bounded slice; "
-        "dependency closure is owned by the audit pipeline."
+        "dependency closure is owned by the audit pipeline. The source "
+        "firewall forbids treating this row as retained Wilson matching or "
+        "a beta=6 derivation."
     )
 
     print(f"SUMMARY: PASS = {PASS}, FAIL = {FAIL}")

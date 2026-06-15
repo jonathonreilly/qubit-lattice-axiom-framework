@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py
-runner_sha256: 8d603a62452fb808ac6098c60c4b5542fce2335bfd9279dbc9f372f8fc6dcb49
+runner_sha256: a29277386e481164ed8cfb374f2b74c922b07aa39fc64b6d471ae21ca6669b8a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================
-DM eta conditional support from supplied N_sites · v premise
+DM eta conditional support from local P_DM_ETA input packet
 ========================================================================
 
 Section 1: chain authority audits
@@ -17,9 +17,13 @@ Section 1: chain authority audits
 [PASS] Note type is conditional / support
 [PASS] Old bare bounded support claim-type header is absent
 [PASS] Note status authority is independent audit lane only
-[PASS] Note records conditional support over supplied premise packet
+[PASS] Note records conditional support over the P_DM_ETA input packet
+[PASS] Note records 2026-06-12 P5 retained-input repair
 [PASS] Note records 2026-06-07 source-boundary repair
-[PASS] Note records supplied P_DM_ETA packet
+[PASS] Note records P_DM_ETA packet
+[PASS] P_DM_ETA records P5 as retained_bounded finite-inventory authority
+[PASS] Source cites retained_bounded SM finite-inventory authority for P5
+[PASS] Source no longer says g_* = 106.75 is supplied as P5
 [PASS] Note records corrected exact central R ratio 1643/300
 [PASS] Old central R display 5.4811 is absent
 [PASS] Note omits source-side status control phrase: source-note proposal only
@@ -94,7 +98,7 @@ Section 7: cross-check vs ETA_188 structural decomposition
 [PASS] g_S = 43/11 (CMB DOF today)
 [PASS] C_sph = 28/79 (sphaleron conversion)
 
-Section 8: note-text records named premise packet P1-P7
+Section 8: note-text records named local input packet P1-P7
 ------------------------------------------------------------------------
 [PASS] Note records named premise P1 freeze-out-bypass identity
 [PASS] Note records named premise P2 structural mass candidate
@@ -108,6 +112,7 @@ Section 9: note-text records audit-companion vs load-bearing classification
 ------------------------------------------------------------------------
 [PASS] Note lists R_base authority under load-bearing dependencies
 [PASS] Note lists eta_188 authority under load-bearing dependencies
+[PASS] Note lists retained_bounded SM_RELATIVISTIC_DOF authority under load-bearing dependencies
 [PASS] Note lists DM_ETA_FREEZEOUT_BYPASS as audit-companion (not retained)
 [PASS] Note lists DM_ETA_NSITES_V_LIFT as audit-companion (not retained)
 [PASS] Note lists HIGGS_MASS_FROM_AXIOM as audit-companion (not retained)
@@ -125,7 +130,7 @@ Section 10: status discipline
 [PASS] Note does NOT use bare 'proposed_retained' or 'retained:' status language
 
 ========================================================================
-TOTAL: PASS=84 FAIL=0
+TOTAL: PASS=89 FAIL=0
 VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
 
 ----- stderr -----

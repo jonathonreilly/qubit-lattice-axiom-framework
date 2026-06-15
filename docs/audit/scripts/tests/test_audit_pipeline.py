@@ -598,6 +598,40 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
             "bounded_by_tier_a_admitted_derivation_target",
         )
 
+    def test_metadata_dependencies_satisfy_clean_chain_without_bounding(self):
+        """Metadata rows are stable audit-governance inputs. They satisfy a
+        clean theorem's dependency chain without turning the theorem into
+        retained_pending_chain and without imposing Tier-A boundedness."""
+        m = _import("compute_effective_status")
+        rows = {
+            "key_terminology": {
+                "claim_id": "key_terminology",
+                "deps": [],
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+            },
+            "bounded_child": {
+                "claim_id": "bounded_child",
+                "deps": ["key_terminology"],
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+            },
+            "positive_child": {
+                "claim_id": "positive_child",
+                "deps": ["key_terminology"],
+                "audit_status": "audited_clean",
+                "claim_type": "positive_theorem",
+            },
+        }
+        new_rows, _cycles = m.compute_effective(rows)
+        self.assertEqual(new_rows["key_terminology"]["effective_status"], "meta")
+        self.assertEqual(
+            new_rows["bounded_child"]["effective_status"], "retained_bounded"
+        )
+        self.assertEqual(
+            new_rows["positive_child"]["effective_status"], "retained"
+        )
+
     def test_criticality_bump_soft_reset_propagates_as_retained(self):
         """A row in the criticality-bump soft-reset state (audit_in_progress
         + awaiting_cross_confirmation + first_audit on file) keeps its
@@ -829,6 +863,29 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
             self.assertNotIn(stale, post)
 
 
+class SanitizeLegacyAuditArtifactsTest(unittest.TestCase):
+    def test_bare_uppercase_decoration_parent_stem_canonicalizes(self):
+        m = _import("sanitize_legacy_audit_artifacts")
+        ledger = {
+            "rows": {
+                "cl3_complexification_split_narrow_theorem_note_2026-05-10": {
+                    "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+                    "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+                },
+                "decoration_child": {
+                    "claim_id": "decoration_child",
+                    "note_path": "docs/DECORATION_CHILD.md",
+                    "decoration_parent_claim_id": "CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10",
+                },
+            }
+        }
+        m.canonicalize_decoration_parent_ids(ledger)
+        self.assertEqual(
+            ledger["rows"]["decoration_child"]["decoration_parent_claim_id"],
+            "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        )
+
+
 class ComputeAuditorReliabilityTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
@@ -1055,6 +1112,36 @@ class AuditLintTest(unittest.TestCase):
             rc = m.main()
         self.assertEqual(rc, 1)
         self.assertIn("stale timestamp key", buf.getvalue())
+
+    def test_retained_grade_row_may_depend_on_metadata(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "key_terminology": {
+                "claim_id": "key_terminology",
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+                "effective_status": "meta",
+            },
+            "clean_bounded": {
+                "claim_id": "clean_bounded",
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+                "claim_scope": "bounded theorem whose only dep is metadata",
+                "effective_status": "retained_bounded",
+                "deps": ["key_terminology"],
+                "auditor": "unit-test-auditor",
+                "auditor_family": "codex-gpt-5.5",
+                "criticality": "leaf",
+                "load_bearing_step_class": "A",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 0, buf.getvalue())
 
 
 class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):

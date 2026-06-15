@@ -10,15 +10,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-      "claim_scope": null,
+      "claim_scope": "Under the fixed triplet-block Hilbert-Schmidt form on the retained algebraic su(3) embedding in V=C^8, the invariant form is unique up to scalar and no real scalar dilation c != +/-1 preserves both the trace Gram and quadratic Casimir.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "physical_lattice_necessity_note",
         "cl3_color_automorphism_theorem",
@@ -26,11 +26,11 @@
         "su3_casimir_fundamental_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 29,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 26.785,
       "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_g_bare_hs_rigidity_narrow.py",
       "transitive_descendants": 311
@@ -8207,15 +8207,15 @@
         "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.937,
+      "load_bearing_score": 14.443,
       "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py",
-      "transitive_descendants": 244
+      "transitive_descendants": 245
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

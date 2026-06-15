@@ -1,0 +1,24 @@
+loop_slug: koide-first-order-selector-boundary-20260615
+branch: physics-loop/koide-first-order-selector-boundary-20260615
+base: origin/main@fc08b0519
+target_claim_id: koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05
+mode: source_repair
+actual_current_surface_status: audited_conditional
+branch_status: bounded-support source-side re-audit candidate
+proposal_allowed: false
+audit_required_before_effective_status_change: true
+active_route: "remove the positive physical-selector overclaim; retain exact finite C3 localization/no-go and separate-factor escape algebra"
+files_touched:
+  - docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md
+  - scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py
+  - logs/runner-cache/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.txt
+remaining_blockers:
+  - "No retained bridge supplies AC_phi_lambda -> physical M(b) x sigma_+ coupling."
+  - "No retained readout rule maps first-order/chiral coupling to the physical r weighting."
+  - "This branch does not derive Koide r=1/2 or move audit status."
+verification:
+  - "python3 -m py_compile scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py"
+  - "python3 scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py -> 10 PASS, 0 FAIL"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py --allow-non-main --check-only -> fresh 1, stale 0, missing 0"
+next_exact_action: "Reviewer/auditor should re-audit this row as bounded algebraic localization and no-go demarcation, not as a positive theorem deriving the physical Koide r=1/2 branch."
+stop_condition: "Ready PR opened with source boundary repaired and no audit/status surfaces edited."

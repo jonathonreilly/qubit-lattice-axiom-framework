@@ -785,17 +785,15 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   partition with per-site `(χ_x, χ̄_x)` generators, per-site Fock
   dim 2, and the Berezin determinant readout. Load-bearing for the
   Step 1-3 variational derivation of (5). Added 2026-05-24 rewire
-  repair (replaces gate-alias dep per
-  `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
-  line 33 endorsement).
+  repair, replacing the old gate-alias dependency per the
+  gate-closure synthesis endorsement.
 
 The historical parent-identity alias
-`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is no longer
+for the staggered-Dirac realization gate is no longer
 cited as retained one-hop authority for the finite-Grassmann algebra;
 that algebra is supplied by the substep-1 narrow theorem above, per the
-rewire endorsement in
-`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
-line 33. The gate alias is cited below only as the registered Tier-A
+rewire endorsement in the gate-closure synthesis note. The gate alias
+is cited below only as the registered Tier-A
 carrier route for the residual `KS-phase-form` structural admission,
 not as retained authority and not as closure of that residual. The
 chain-pending JW bridge
@@ -814,14 +812,13 @@ anticommutation `(G1)-(G3)`, Berezin integration rules, per-site Fock
 dim 2 — the entire algebraic surface used by the Step 1-3 variational
 derivation of (5)) is supplied by the retained substep-1 Grassmann narrow theorem
 listed below; the historical parent-identity gate alias
-`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is not cited as
+for the staggered-Dirac realization gate is not cited as
 retained one-hop authority for that finite-Grassmann algebra. It is
 cited below only as the registered Tier-A carrier route for the
-residual `KS-phase-form` input, per the explicit rewire endorsement in
-`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
-line 33 ("downstream rows with substep-specific needs should cite the
+residual `KS-phase-form` input, per the explicit rewire endorsement
+that downstream rows with substep-specific needs should cite the
 relevant `STAGGERED_DIRAC_SUBSTEP{1,2,3,4}_*` retained theorems
-directly rather than this gate alias").
+directly rather than this gate alias.
 
 **Load-bearing one-hop dep (retained):**
 
@@ -850,8 +847,7 @@ directly rather than this gate alias").
 **Registered Tier-A carrier route (historical context, not a current
 citation-graph dependency):**
 
-- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-  (plain-text registry handle, not a citation-graph dependency)
+- The staggered-Dirac realization gate's canonical parent note
   — parent-identity gate alias and registered Tier-A derivation target
   `AC_φλ`, previously recorded as the carrier route for the residual
   `KS-phase-form` input. This parent alias is not retained authority and
@@ -967,7 +963,7 @@ unregistered conditional blocker.
    above) consumes the staggered-Dirac realization complex; it is
    substep-2 content of that complex.
 3. **The registered target is retained as plain-text context only.**
-   The canonical parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+   The canonical staggered-Dirac realization parent
    remains the registered Tier-A derivation target `AC_φλ` in the
    admission registry (`docs/audit/data/tier_a_admissions.json`), but
    this Noether row no longer uses a markdown edge to that parent alias

@@ -152,6 +152,14 @@ check("SOURCE note names the 2026-06-08 audit-targeted boundary repair",
       "2026-06-08 Audit-Targeted Boundary Repair" in note_text)
 check("SOURCE note states Fermat n=k/k0 remains supplied eikonal bridge",
       "not as a new" in note_text and "retained physical bridge" in note_text)
+check("SOURCE note states bounded conditional algebra hypotheses explicitly",
+      "bounded **conditional algebra packet**" in note_text
+      and "Hypotheses for T1-T6" in note_text
+      and "assume the fixed-energy eikonal/Fermat" in note_text)
+check("SOURCE note leaves Hamiltonian-shift and Fermat physical bridges open",
+      "does not derive either as a new" in note_text
+      and "physical Hamiltonian-shift bridge" in note_text
+      and "full physical Fermat/eikonal bridge" in note_text)
 check("SOURCE note contains exact arccos lattice relation",
       "k(phi)=arccos(1 - (E - phi)/2)" in note_text
       or "k(φ)=arccos(1−(E−φ)/2)" in note_text)

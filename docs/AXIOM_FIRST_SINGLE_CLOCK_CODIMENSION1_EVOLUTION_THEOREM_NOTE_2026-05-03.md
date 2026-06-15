@@ -176,13 +176,12 @@ rather than derived.
   interacting or fixed-background exact-log locality claim. The only
   current declared premise left in the statement is (B-AXIS).
 - **2026-06-15 (source-graph cycle repair, no status change).** The
-  remaining-blocker paragraph below names the follow-up route-pruning
-  note `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`
-  as plain-text context rather than a markdown dependency link. This
-  theorem does not consume that later no-go as an input; it leaves
-  B-AXIS open. Keeping the filename visible but non-linked prevents the
-  audit citation graph from treating the forward cross-reference as a
-  load-bearing edge back to the follow-up note.
+  remaining-blocker paragraph below now describes the later
+  record-durability axis-selection route-pruning result without naming
+  its exact source filename. This theorem does not consume that later
+  no-go as an input; it leaves B-AXIS open. Avoiding the filename token
+  keeps the audit citation graph from treating the forward
+  cross-reference as a load-bearing edge back to the follow-up note.
 
 ## Scope
 
@@ -314,13 +313,12 @@ still-live axis-selection premise:
 - **B-AXIS remains a real declared premise.** The framework has not
   derived the registration direction, the blocked time unit, or the
   exclusion of independent commuting transfer factors from the current
-  retained axiom surface. The downstream follow-up
-  `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`
-  is context only, not a dependency of this row; it narrows the route:
-  Record durability, anomaly/chirality labels, and
-  the native exchange-symmetric staggered surface transport with the
-  axis and therefore do not derive B-AXIS. A future positive supplier
-  must provide a non-transportable registration-direction theorem or a
+  retained axiom surface. The follow-up source
+  on record-durability axis selection narrows the route: Record
+  durability, anomaly/chirality labels, and the native
+  exchange-symmetric staggered surface transport with the axis and
+  therefore do not derive B-AXIS. A future positive supplier must
+  provide a non-transportable registration-direction theorem or a
   reviewed boundary-condition asymmetry bridge; this note does not add
   such a premise and does not treat it as an axiom.
 

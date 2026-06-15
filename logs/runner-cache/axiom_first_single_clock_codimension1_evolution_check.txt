@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_single_clock_codimension1_evolution_check.py
-runner_sha256: 51d040b47b2c84dcf0cdc144c1bf2c822cda573c3dacf8685ff1730057455bb9
+runner_sha256: 13a30eeec6542db83fe1a42e3df46dacc345d7ce7c9597490daf7ade798aa89f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.93
+elapsed_sec: 0.89
 status: ok
 ----- stdout -----
 ========================================================================
@@ -96,7 +96,7 @@ exact time-space exchange symmetry shows the axis itself is a premise
   [PASS] [D] spatial-clustering clause not consumed (cluster L2 is conditional) (S2'(b) demoted to conditional remark)
   [PASS] [D] note retires B-RANGE from current scope (S2'(c) now uses the retained free-sector quasilocal supplier)
   [PASS] [D] note cites the free-bilinear quasilocal LR bridge as propagation supplier (free U=1 exact-log sector and finite quasilocal lightcone named)
-  [PASS] [D] 2026-06-12 firewall: B-RANGE retired, B-AXIS remains the live blocker (axis-selection no-go route wired without retained promotion)
+  [PASS] [D] 2026-06-12 firewall: B-RANGE retired, B-AXIS remains the live blocker (axis-selection route-pruning context wired without retained promotion)
 
 ========================================================================
 TOTAL: PASS=45 FAIL=0

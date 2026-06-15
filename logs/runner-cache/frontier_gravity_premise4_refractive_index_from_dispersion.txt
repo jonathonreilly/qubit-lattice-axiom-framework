@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py
-runner_sha256: 52f8c81b09f939894b8467be3519a2bb1992515b0fb43a08d14165da85d0b221
+runner_sha256: f43ec1e7b0345fbb09fb7724c6f83f8bd924c1b4cd4a0c3a7b97a56f45d0ab71
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.04
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 PASS T1 exact axis-lattice map: k(phi)=arccos(1-(E-phi)/2)
@@ -18,6 +18,8 @@ PASS T5 CONTROL: no field coupling (n=1) -> zero deflection (teeth)
 PASS T6 geometric deflection slope = -1 (1/b), distinct from Kubo b^-2 (#3191)
 PASS SOURCE note names the 2026-06-08 audit-targeted boundary repair
 PASS SOURCE note states Fermat n=k/k0 remains supplied eikonal bridge
+PASS SOURCE note states bounded conditional algebra hypotheses explicitly
+PASS SOURCE note leaves Hamiltonian-shift and Fermat physical bridges open
 PASS SOURCE note contains exact arccos lattice relation
 PASS AUTH self_consistency_forces_poisson is retained_bounded
 PASS AUTH finite_rank_source_to_metric is retained_bounded
@@ -27,7 +29,6 @@ PASS AUTH lattice Green support is retained_bounded
 PASS KUBO comparison packet status is exposed as retained_bounded comparison-only authority
 PASS SOURCE no full premise-4 promotion
 
-TOTAL: PASS=20 FAIL=0
+TOTAL: PASS=22 FAIL=0
 
 ----- stderr -----
-

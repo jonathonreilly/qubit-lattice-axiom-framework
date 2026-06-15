@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
-runner_sha256: 8b986b46d4c5a58a1352987d36950346693a1a268471f97577fce5e5e9a4570d
+runner_sha256: 40944a4ab41af5842195efeaede8c02f04bce92997cb0c71c36a079e490f57a7
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -13,6 +13,7 @@ PASS: source contains boundary phrase: Supplied premise packet (not axioms)
 PASS: source contains boundary phrase: P1 proton rest mass
 PASS: source contains boundary phrase: P2 present-day CMB temperature
 PASS: source contains boundary phrase: P3 critical-density unit
+PASS: source contains boundary phrase: 2026-06-12 P3 critical-density unit decomposition
 PASS: source contains boundary phrase: P4 Cyburt conversion convention
 PASS: source contains boundary phrase: does not derive P1-P4
 PASS: source contains boundary phrase: not registry accepted premises
@@ -36,21 +37,22 @@ PASS: factor numerically equals 0.24359... (standard) (factor = 0.243588)
 PASS: present-day n_gamma is approximately 410 photons / cm^3 (standard textbook) (n_gamma = 410.5008 per cm^3)
 
 == Part 3: recover Cyburt+ 2016 coefficient by deterministic arithmetic ==
-PASS: coefficient within 0.2% of published Cyburt+ 2016 value 3.6515e-3 (coeff = 3.656085e-03 vs Cyburt+2016 = 3.651500e-03)
+PASS: coefficient within 0.2% of published Cyburt+ 2016 value 3.6515e-3 (coeff = 3.655420e-03 vs Cyburt+2016 = 3.651500e-03)
 
 == Part 4: named premise packet remains imported on this row ==
 PASS: P1 proton rest mass admitted as textbook import (not derived here) (m_p = 1.6726219236e-24 g)
 PASS: P2 CMB temperature admitted as textbook import (not derived here) (T_CMB = 2.725 K)
-PASS: P3 critical-density unit admitted as textbook import (not derived here) (rho_crit/h^2 = 1.878e-29 g/cm^3)
+PASS: P3 critical-density unit computed from admitted H_100 and G (rho_crit/h^2 = 1.878342e-29 g/cm^3)
+PASS: P3 formula is rho_crit/h^2 = 3 H_100^2 / (8 pi G) with SI-to-cgs conversion (H100=100.0 km/s/Mpc, G=6.674300e-11 SI)
 PASS: P4 Cyburt convention / residual normalization admitted as combined import (S_Cyburt = 1.0 for the raw unit-conversion baseline)
 
 == Part 5: retention scorecard ==
-PASS: source says one factor out of five is analytic rather than empirical
-PASS: source keeps the remaining four components imported as P1-P4
+PASS: source says critical-density unit is formula-expanded instead of black-boxed
+PASS: source keeps four admitted premise classes P1-P4
 PASS: bridge does not promote the parent cosmology cascade row
 
-TOTAL: PASS=29 FAIL=0
-VERDICT: bounded admission bridge passes; the textbook coefficient 3.6515e-3 decomposes into one analytic factor (2 zeta(3)/pi^2 from the Planck distribution) and four imported premises (P1 m_p, P2 T_CMB, P3 rho_crit/h^2, P4 Cyburt convention / residual normalization), recovered to within 0.13% of the Cyburt+ 2016 published value.
+TOTAL: PASS=31 FAIL=0
+VERDICT: bounded admission bridge passes; the textbook coefficient 3.6515e-3 decomposes into one analytic factor (2 zeta(3)/pi^2 from the Planck distribution) and four imported premises (P1 m_p, P2 T_CMB, P3 H_100/G critical-density unit, P4 Cyburt convention / residual normalization), recovered to within 0.13% of the Cyburt+ 2016 published value.
 
 ----- stderr -----
 

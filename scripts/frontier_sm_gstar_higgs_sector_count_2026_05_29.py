@@ -66,6 +66,9 @@ ROOT = Path(__file__).resolve().parent.parent
 NOTE_PATH = (
     ROOT / "docs" / "SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md"
 )
+HUNIT_NO_GO_PATH = (
+    ROOT / "docs" / "HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md"
+)
 
 PASS = 0
 FAIL = 0
@@ -309,6 +312,19 @@ def section_2hdm_exclusion() -> None:
         "Under the bridge, `g_* = 106.75` follows" in text
         and "remaining missing step" in text,
     )
+    check("H_unit representation no-go note exists", HUNIT_NO_GO_PATH.exists())
+    no_go_text = HUNIT_NO_GO_PATH.read_text(encoding="utf-8") if HUNIT_NO_GO_PATH.exists() else ""
+    check(
+        "H_unit direct full-doublet bridge is marked representation-forbidden",
+        "Hom_SU(2)(1, 2) = 0" in no_go_text
+        and "does not close R-HIGGS positively" in no_go_text
+        and "not merely missing" in text,
+    )
+    check(
+        "SM note preserves the viable route after the H_unit no-go",
+        "separate retained-grade or accepted-premise authority" in text
+        and "`g_* = 106.75` Higgs-sector count conditional" in text,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -319,6 +335,7 @@ def section_note_checks() -> None:
 
     cited = [
         "YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
+        "HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md",
         "YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md",
         "CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md",
         "DM_NEUTRINO_TWO_HIGGS_MINIMALITY_THEOREM_NOTE_2026-04-15.md",

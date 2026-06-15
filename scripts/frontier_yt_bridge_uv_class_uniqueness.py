@@ -28,6 +28,10 @@ from scipy.integrate import solve_ivp
 
 np.set_printoptions(precision=10, linewidth=120)
 
+# Broad scan runner. Declare the completed cache budget explicitly so audit
+# execution does not fall back to the legacy 120 s default.
+AUDIT_TIMEOUT_SEC = 600
+
 PASS = 0
 FAIL = 0
 

@@ -160,13 +160,26 @@ def check_w51_named_gap_markers() -> None:
     flat = " ".join(text.split())
     required_links = [
         "[`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)",
+    ]
+    forbidden_dependency_links = [
         "[`HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md)",
         "[`HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md)",
         "[`HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md)",
         "[`HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md)",
     ]
+    required_context_handles = [
+        "`HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`",
+        "`HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`",
+        "`HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md`",
+        "`HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md`",
+        "plain-text context handles rather than citation-graph dependencies",
+    ]
     for marker in required_links:
         check(f"one-hop authority link present: {marker}", marker in text)
+    for marker in forbidden_dependency_links:
+        check(f"downstream probe is not a one-hop authority link: {marker}", marker not in text)
+    for marker in required_context_handles:
+        check(f"context handle present: {marker}", marker in text)
     required_markers = [
         "two exact match-window cells",
         "supplier-chain identity itself, not a mechanism",

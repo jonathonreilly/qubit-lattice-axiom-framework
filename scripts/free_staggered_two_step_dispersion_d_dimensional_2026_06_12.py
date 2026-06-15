@@ -167,10 +167,12 @@ def test_note_guardrails() -> None:
         "TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md" in text,
         "arcsinh(m)/(2d)" in text,
         "sharp anisotropic" in text and "open" in text,
+        "p_mu* + i eta sign(z_mu*)" in text and "exp(-eta |z_mu*|)" in text,
+        "p_mu* - i eta sign(z_mu*)" not in text,
         all(token not in text for token in forbidden_tokens),
     ]
     check(
-        "source note has audit-authority guardrail, one-hop links, positive-rate boundary, and no status/stale-LR tokens",
+        "source note has audit-authority guardrail, one-hop links, positive-rate/sign boundary, and no status/stale-LR tokens",
         all(checks),
         f"{sum(checks)}/{len(checks)} text guards satisfied",
     )

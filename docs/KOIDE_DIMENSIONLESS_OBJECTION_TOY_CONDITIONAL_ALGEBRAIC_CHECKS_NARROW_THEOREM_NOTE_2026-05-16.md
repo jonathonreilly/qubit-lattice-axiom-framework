@@ -27,7 +27,7 @@ is `IF [admitted carrier / admitted scalar] THEN [algebraic identity]`,
 where the antecedent is a stated admission, not a retained-framework
 derivation.
 **Primary runner:** [`scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py`](../scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py)
-**Cached log:** [`logs/runner-cache/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.txt`](../logs/runner-cache/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.txt) (PASS=33 FAIL=0)
+**Cached log:** [`logs/runner-cache/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.txt`](../logs/runner-cache/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.txt) (PASS=35 FAIL=0)
 
 ## 2026-06-12 audit firewall: in-toy algebra only
 

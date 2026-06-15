@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py
-runner_sha256: 10b7850afd5856e98aaf267fec603af34021447c73968c16b50695d212f5ad23
+runner_sha256: 98c57bb196eea34d6d034f7b4381ba243f21b6ddb423d82e7af34e86404911f8
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.40
@@ -71,10 +71,15 @@ PASS: kernel slope times two-link dressing equals alpha_s value
 W51 named-gap markers
 ================================================================================
 PASS: one-hop authority link present: [`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
-PASS: one-hop authority link present: [`HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md)
-PASS: one-hop authority link present: [`HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md)
-PASS: one-hop authority link present: [`HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md)
-PASS: one-hop authority link present: [`HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md)
+PASS: downstream probe is not a one-hop authority link: [`HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md)
+PASS: downstream probe is not a one-hop authority link: [`HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md)
+PASS: downstream probe is not a one-hop authority link: [`HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md)
+PASS: downstream probe is not a one-hop authority link: [`HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md)
+PASS: context handle present: `HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`
+PASS: context handle present: `HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`
+PASS: context handle present: `HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md`
+PASS: context handle present: `HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md`
+PASS: context handle present: plain-text context handles rather than citation-graph dependencies
 PASS: W51 marker present: two exact match-window cells
 PASS: W51 marker present: supplier-chain identity itself, not a mechanism
 PASS: W51 marker present: bookkeeping equivalence of the reduced target
@@ -104,7 +109,7 @@ PASS: note records Block04 mean-field feedback pruning without claiming closure
 PASS: note leaves three surviving route families after mean-field pruning
 
 VERDICT: hierarchy alpha_LM magnitude delta-zero open-gate checks pass.
-TOTAL: PASS=64, FAIL=0
+TOTAL: PASS=69, FAIL=0
 
 ----- stderr -----
 

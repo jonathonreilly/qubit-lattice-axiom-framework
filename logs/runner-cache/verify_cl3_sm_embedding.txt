@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/verify_cl3_sm_embedding.py
-runner_sha256: 0bda55dd983412bbdc1767e6d0d82e0a7b6e8fd9a3ff71404d8cdfc1fa5eaae1
+runner_sha256: c4e016929e5444bbca9d0c7b7c9ce0d7784980c9f10512927199744d821c5cd5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -123,6 +123,10 @@ status: ok
   [PASS]   R_conn = (N_c^2-1)/N_c^2 = 0.888889 = 8/9
   [PASS]   Fierz: sum_a T^a_ij T^a_kl = delta/2 - delta/(2N_c)  (max err 5.6e-17)
   [PASS]   R_conn from Fierz = 0.888889 = (N_c^2-1)/N_c^2
+  [PASS]   identity generator T^0 = I/sqrt(2N_c) has Tr(T^0 T^0)=1/2  (trace=0.500000)
+  [PASS]   T^0 channel contributes delta_ij delta_kl/(2N_c)  (max err 5.6e-17)
+  [PASS]   HS unit S=I/sqrt(N_c) contributes delta_ij delta_kl/N_c  (Tr(S^2)=1.000000, max err 1.1e-16)
+  [PASS]   SU(N) Fierz plus T^0 gives full U(N) completeness with T_F=1/2  (max err 1.1e-16)
   [PASS]   EW correction sqrt(1/R_conn) = sqrt(9/8) = 1.060660
   [PASS] Section I
 
@@ -143,7 +147,7 @@ status: ok
   [PASS] Section J
 
 ==============================================================
-  SUMMARY  [PASS=95, FAIL=0]
+  SUMMARY  [PASS=99, FAIL=0]
 ==============================================================
 
 Finite Cl(3)/taste-cube support packet — algebraic checks complete.
@@ -160,7 +164,7 @@ Finite Cl(3)/taste-cube support packet — algebraic checks complete.
   F. Y operator: +1/3 on 6D symmetric block, -1 on 2D antisymmetric block. Traceless.
   G. S3 on C^8 = 4A1+2E; hw=1 triplet is a Z3-related three-state orbit.
   H. SU(3)_c on symmetric base: T_F=1/2; [SU(3),SU(2)]=0; [SU(3),Y]=0.
-  I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz verified.
+  I. N_c=3 from Z^3; R_conn=8/9; sqrt(9/8) EW correction; Fierz + identity channel verified.
   J. L-sector determinant support: det(H_L)>=0 forced by Kramers degeneracy T^2<0 on L-sector.
 
 Support targets sharpened by this packet:

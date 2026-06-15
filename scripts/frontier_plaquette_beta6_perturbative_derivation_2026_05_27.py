@@ -174,6 +174,25 @@ def test_source_boundary_manifest() -> None:
         and "no retained/effective-bounded bridge,\nnew axiom, external comparator authority, or audit status" in body,
         "source repair remains demotion-only",
     )
+    check(
+        "note explicitly elects admitted-input diagnostic option",
+        "## 2026-06-15 audit-boundary repair: second option elected" in body
+        and "keep the row as\nan admitted-input runner-local diagnostic only" in body
+        and "not a retained or\neffective-bounded authority" in body,
+        "auditor's second repair option is source-locked",
+    )
+    check(
+        "note blocks downstream reuse of admitted beta=6 inputs",
+        "cannot cite this row for anything beyond the runner-local\ndiagnostic over the supplied packet" in body
+        and "Downstream rows that need a beta=6 Wilson/Haar plaquette value" in body,
+        "downstream authority must come from a separate retained/effective-bounded row",
+    )
+    check(
+        "note keeps non-perturbative routes open",
+        "does not rule out strong-coupling,\ntransfer-matrix, Wigner-Racah, Borel-conformal, Monte Carlo" in body
+        and "non-perturbative route" in body,
+        "finite perturbative route only",
+    )
 
 
 def test_one_loop_value() -> None:

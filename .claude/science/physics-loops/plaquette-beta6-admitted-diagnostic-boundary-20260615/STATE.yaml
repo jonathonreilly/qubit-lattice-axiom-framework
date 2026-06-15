@@ -1,0 +1,17 @@
+loop: plaquette-beta6-admitted-diagnostic-boundary-20260615
+goal: "Unlock the plaquette beta=6 perturbative diagnostic row by explicitly electing admitted-input runner-local diagnostic scope."
+target_claim_id: plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md
+  - scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
+  - logs/runner-cache/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.txt
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py"
+  - "python3 -m py_compile scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+next_exact_action: "Independent audit should re-audit the row from the ready queue; branch does not edit audit verdicts."
+stop_condition: "PR opened for review-loop extraction."

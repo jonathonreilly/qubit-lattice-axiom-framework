@@ -22,6 +22,31 @@ the audit pipeline after independent review.
 **Runner:** [`scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py`](../scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py)
 **Cached log:** [`logs/runner-cache/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.txt`](../logs/runner-cache/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.txt) (`TOTAL: PASS=28, FAIL=0`)
 
+## 2026-06-15 audit-boundary repair: second option elected
+
+This row explicitly elects the auditor's second repair option: keep the row as
+an admitted-input runner-local diagnostic only. It is not a retained or
+effective-bounded authority for the NSPT coefficient packet, beta=6 Wilson
+normalization, MC comparator, F2 comparator, or the actual beta=6 plaquette
+surface.
+
+The only load-bearing statement is the conditional runner-local diagnostic:
+given the four supplied inputs in `I_PT`, the tested finite
+weak-coupling/tadpole/Pade envelope stays in the `0.91` band and does not hit
+the admitted MC comparator. That conditional negative result prunes this
+finite perturbative route only. It does not rule out strong-coupling,
+transfer-matrix, Wigner-Racah, Borel-conformal, Monte Carlo, or any other
+non-perturbative route, and it does not license the admitted numbers for
+downstream use.
+
+Downstream rows that need a beta=6 Wilson/Haar plaquette value, an NSPT packet,
+or a Monte Carlo comparator must cite separate retained or effective-bounded
+authority. They cannot cite this row for anything beyond the runner-local
+diagnostic over the supplied packet.
+
+No new axiom, primitive, comparator authority, imported value, or audit-status
+change is introduced.
+
 ## 2026-06-12 Audit-Named Demotion
 
 The audit-named repair target was:

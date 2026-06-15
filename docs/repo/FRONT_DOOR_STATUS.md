@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1456 |
+| Applied audit verdicts | 1457 |
 | Retained-grade rows, including boxed decorations | 1368 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 907 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 38 |
-| Unaudited rows | 1533 |
+| Unaudited rows | 1532 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 9 |
+| Audited conditional rows | 10 |
 | Audited renaming rows | 29 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1538 |
-| Ready rows | 90 |
+| Total pending rows | 1537 |
+| Ready rows | 89 |
 | Cycle-break targets | 0 |
-| Critical pending | 303 |
+| Critical pending | 302 |
 | High pending | 287 |
 | Medium pending | 466 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`lorentz_kernel_positive_closure_note`](../../docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md) - critical; unaudited
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 - [`staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07`](../../docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`yt_p1_i_s_lattice_pt_citation_note_2026-04-17`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) - critical; unaudited
 - [`higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08`](../../docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md) - critical; unaudited
 - [`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
+- [`axiom_first_kms_condition_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

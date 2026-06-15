@@ -1,6 +1,9 @@
 # `Σm_ν` Structural Functional Form on Cosmology Bounded Surface — Support Note (4F-α)
 
 **Date:** 2026-04-28
+**Claim type:** positive_theorem
+**Runner:** [`scripts/frontier_neutrino_lane4_4f_sigma_m_nu_functional_form.py`](../scripts/frontier_neutrino_lane4_4f_sigma_m_nu_functional_form.py)
+**Runner cache:** [`logs/runner-cache/frontier_neutrino_lane4_4f_sigma_m_nu_functional_form.txt`](../logs/runner-cache/frontier_neutrino_lane4_4f_sigma_m_nu_functional_form.txt)
 **Status:** support / branch-local **stretch-attempt** note on
 `frontier/neutrino-sigma-mnu-cosmology-20260428`. Cycle 2 of the
 neutrino-sigma-mnu-cosmology loop. **Result: structural functional

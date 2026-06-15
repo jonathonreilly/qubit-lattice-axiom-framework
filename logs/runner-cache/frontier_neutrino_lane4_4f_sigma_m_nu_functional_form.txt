@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_neutrino_lane4_4f_sigma_m_nu_functional_form.py
+runner_sha256: dbf838c491e0527edb251a5fc7f7a48cb4ae96117a797f450994065ae80317de
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+========================================================================
+Lane 4F Sigma m_nu Structural Functional Form — Verifier
+========================================================================
+[PASS] check 1_symbolic_forward_identity: Sigma m_nu = Cnu*h**2*(-L - ODM - Ob - R + 1)
+[PASS] check 2_symbolic_inverse_consistency: (alpha-2), (alpha-3), (alpha-4) consistent
+[PASS] check 3_self_consistent_roundtrip: target Sigma m_nu=0.06 eV, back-solved L=0.6847, Omega_m,0=0.3152; forward-evaluated Sigma m_nu=0.060000 eV; residual=9.16e-16 eV
+[PASS] check 4_limiting_cases: case (a) Sm=0 when matter exactly accounted; case (b) Sm = O(h^2) -> 0 as h -> 0
+------------------------------------------------------------------------
+TOTAL: PASS=4, FAIL=0
+PASSED: 4/4
+
+----- stderr -----
+

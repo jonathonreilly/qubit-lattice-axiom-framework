@@ -466,3 +466,18 @@ for the cyclic-carrier setup only. Any future positive MRU quotient route is
 a genuine science backlog item ("derive the carrier-identification bridge
 that closes MRU") rather than a hygiene fix. This is source-side routing
 context only; it does not assert an audit or effective-status outcome.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This source-side update is a re-audit packet, not an audit verdict. The
+unreduced `3 x 3` weight obstruction remains the current framework-native
+closure: the determinant weights are `(1,2)` and therefore the unreduced
+carrier lands at `kappa = 1`, not MRU. The reduced two-slot calculation is
+kept only as a conditional consequence map.
+
+The exact residual is unchanged and singular: a later theorem must derive
+the scalar-lane `SO(2)` quotient, equivalently prove that the
+`cos(3 arg b)` channel decouples on the physical charged-lepton scalar lane.
+Until that theorem exists, this row should be re-audited only as an
+unreduced obstruction plus conditional quotient algebra. No new axiom,
+admission, observed value, or status promotion is introduced by this repair.

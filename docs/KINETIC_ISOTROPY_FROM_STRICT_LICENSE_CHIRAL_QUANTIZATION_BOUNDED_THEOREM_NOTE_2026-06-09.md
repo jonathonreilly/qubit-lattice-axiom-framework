@@ -312,3 +312,16 @@ winding cell" and "winding is impossible in continuous time."
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency or of the kinetic-isotropy primitive. The
 independent audit lane is the only status authority.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This source update asks for re-audit of the theorem at its narrowest honest
+surface: a strict radius-1, unitary, K/CPT-paired, nonzero-winding
+single-particle tick has exactly unit real-time band velocity. The runner
+checks that algebra and the premise-drop witnesses.
+
+The row does not retire the kinetic-isotropy primitive by itself. The open
+inputs remain P1-P4 as realized-tick/carrier readings plus the B-W bridge
+that identifies the real-time cone slope with the OS0 Euclidean kinetic-form
+ratio. Re-audit should keep the band theorem and the OS0 bridge separate.
+This repair adds no new primitive, axiom, or audit status claim.

@@ -139,3 +139,15 @@ an oversight), and (ii) the **V_sel narrowing** (its form + 32 are derived on th
 retained graph-shift surface; only the φ-space identification is admitted). The neutrino
 mass-scale lane's precise frontier is thereby: the observable-principle readout for the
 `m·I` baseline + the graph-shift↔Dirac-Higgs φ-space bridge.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This packet is re-opened as exact algebra over named admissions. The useful
+content is the Schur substitution, coefficient bookkeeping, determinant-domain
+mismatch, and control checks.
+
+The open bridge set remains explicit: derive the `mI` physical readout,
+derive graph-shift-to-Dirac-Higgs transport in phi-space, and keep the
+ADM-2 `g` input comparator-scoped unless a framework-native `g` theorem is
+provided. This repair adds no dark-matter mass readout axiom, no measured
+`g` promotion, and no audit status claim.

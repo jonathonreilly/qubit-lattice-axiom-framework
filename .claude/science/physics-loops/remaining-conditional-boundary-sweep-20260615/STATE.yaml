@@ -1,0 +1,46 @@
+loop: remaining-conditional-boundary-sweep-20260615
+mode: run
+objective: "Unlock the remaining uncovered audited-conditional rows for source-side re-audit without editing audit verdict outputs."
+target_status: best-honest-status
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: source_boundary_sweep
+files_touched:
+  - docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md
+  - docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md
+  - docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md
+  - docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md
+  - docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md
+  - docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md
+  - docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md
+  - docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md
+  - docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md
+  - docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  - docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md
+  - docs/GATE_B_DYNAMICS_NOTE.md
+  - docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md
+  - scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py
+  - logs/runner-cache/min_time_step_is_planck_time_from_scale_reference_primitive_runner.txt
+open_imports:
+  - "Koide MRU: physical SO(2) quotient / cos(3 arg b) decoupling."
+  - "Higgs mass: scalar normalization / nonperturbative lattice-to-physical pole matching."
+  - "Hierarchy compression: D=4 readout / effective-potential-density insertion map."
+  - "Kinetic isotropy: realized strict unitary winding tick plus B-W OS0 bridge."
+  - "Signed gravity: APS-locked source-action origin."
+  - "Emergent Lorentz: framework-native interacting one-loop RG and physical anomalous dimension."
+  - "Teleportation: native preparation/readout apparatus."
+  - "Koide records: equal-block measure and records/objectivity selector."
+  - "SU3 beta6: no second-order bulk critical point / transfer gap bridge."
+  - "DM neutrino: mI readout, graph-shift transport, comparator g boundary."
+  - "EP stiffness: continuous energy/action context and shared source coefficient."
+  - "Gate B: I_GateB source/action/readout/genericity inputs."
+  - "Planck time: physical-c normalization remains explicit, not dynamically derived."
+verification:
+  - "All 13 named runners passed."
+  - "Planck-time runner/cache refreshed after dependency-state repair."
+  - "Local audit pipeline completed; simulated re-audit required hash changes: 13; all 13 target rows ready=true."
+  - "Generated audit/publication/front-door files restored before commit."
+next_exact_action: "Independent reviewer/auditor should audit the 13 ready rows from the source packets, with special attention to the Planck-time dependency-state change."
+stop_condition: "PR opened with source-only audit unlocks and no generated audit verdict files."

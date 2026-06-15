@@ -1,0 +1,17 @@
+loop: record-prerecord-supplied-context-boundary-20260615
+goal: "Unlock the Record pre-record instrument kernel row by locking the claim to supplied-context finite algebra."
+target_claim_id: record_prerecord_instrument_kernel_gate_2026-06-06
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md
+  - scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py
+  - logs/runner-cache/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.txt
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py"
+  - "python3 -m py_compile scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+next_exact_action: "Independent audit should re-audit the row from the ready queue; branch does not edit audit verdicts."
+stop_condition: "PR opened for review-loop extraction."

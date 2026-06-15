@@ -1,6 +1,6 @@
 # Hierarchy Alpha_LM Magnitude Delta-Zero Open Gate
 
-**Date:** 2026-05-30 (2026-06-12: downstream Block04 mean-field feedback probe recorded as context-only pruning)
+**Date:** 2026-05-30 (2026-06-12: downstream Block04 mean-field feedback probe recorded as context-only pruning; 2026-06-15 source-graph cycle repair)
 **Claim type:** open_gate
 **Status:** source note; downstream status is decided by independent review.
 **Status authority:** independent audit lane only. This source note does
@@ -61,12 +61,12 @@ Two downstream probes (one-hop authorities for this sharpening only;
 citation direction downstream -> this gate) sharpened the obstruction
 surface without closing it:
 
-- [`HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md)
+- `HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`
   — exact single taste-mode decimation on the minimal `2^4` block
   carries `m +- 2i u_0` per mode (magnitude `2 u_0` at `m = 0`) with
   exactly zero induced coupling shift on kept modes; the bare per-mode
   conversion target is `N = alpha_LM/(2 u_0) = 1/(8 pi u_0^2)`.
-- [`HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md)
+- `HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`
   — over a declared dressed/undressed ratio normalization the per-mode
   factor is `u_0` and the gate's open content reduces exactly to ONE
   unsupplied transport rule: one factor
@@ -95,7 +95,7 @@ directly.  The relevant block observable is the minimal-block
 determinant/decimation observable of
 [`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
 and
-[`HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md):
+`HIERARCHY_DELTA0_BLOCKING_SINGLE_MODE_DECIMATION_PROBE_NOTE_2026-06-11.md`:
 
 ```text
 det(u_0 D + m) = (m^2 + 4 u_0^2)^8,
@@ -119,11 +119,11 @@ u_0^16 x alpha_s^16 = alpha_bare^16 x u_0^-16 = alpha_LM^16.
 ```
 
 So, over the declared ratio normalization of
-[`HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md),
+`HIERARCHY_DELTA0_RATIO_NORMALIZED_ALPHA_S_PER_DECOUPLING_REDUCTION_NOTE_2026-06-11.md`,
 the determinant side supplies `u_0^16`; the missing per-taste transport
 factor is `alpha_s = alpha_bare/u_0^2`, not a fresh numerical value.
 The value chain is also sharper than the original note:
-[`HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md)
+`HIERARCHY_DELTA0_S1PRIME_TASTE_REGION_KERNEL_SHARE_PROBE_NOTE_2026-06-11.md`
 computes a per-taste `d = 3` IR-kernel slope `1/(4 pi)`, hence the
 `alpha_bare` value at `g_bare = 1`, and the B1 plaquette license
 supplies the `u_0^-2` value used in `alpha_s`.  Composed as values:
@@ -136,7 +136,7 @@ supplies the `u_0^-2` value used in `alpha_s`.  Composed as values:
 
 That composition still does not identify the block observable in which
 one decoupling taste contributes this factor multiplicatively.
-[`HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md`](HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md)
+`HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md`
 executes the declared K1-K8 candidate-readout enumeration and finds no
 non-definitional candidate readout carrying the required factor.  The
 two exact match-window cells in that enumeration are the supplier-chain

@@ -1,0 +1,23 @@
+loop: lattice-inverse-square-helper-runner-20260615
+status: ready_for_review
+goal: "Register and cache the 3D inverse-square kernel helper module for audit packet extraction."
+target_status: bounded-support
+base: origin/main@c5a380aa801a160348c02afd7d84e0b6a64e0807
+branch: physics-loop/lattice-inverse-square-helper-runner-20260615
+current_surface_status: audited_renaming in generated audit state; source note remains bounded helper-module wrapper
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: lattice_3d_inverse_square_kernel_helper_note_2026-04-04
+target_blocker_text: "The helper wrapper row had runner_path null and no cache for the primary helper module."
+files_touched:
+  - docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md
+  - logs/runner-cache/lattice_3d_inverse_square_kernel.txt
+  - .claude/science/physics-loops/lattice-inverse-square-helper-runner-20260615/
+verification:
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh scripts/lattice_3d_inverse_square_kernel.py"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/lattice_3d_inverse_square_kernel.py"
+  - "python3 docs/audit/scripts/build_citation_graph.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+pr_status: branch_package_ready
+next_exact_action: "Open PR and let independent audit/review regenerate generated outputs."
+stop_condition: "PR opened with source note, cache, and loop pack only."

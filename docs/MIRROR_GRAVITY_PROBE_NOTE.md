@@ -13,6 +13,8 @@ dependency citations.
 **Claim type:** bounded_theorem
 **Primary runner (load-bearing):** [`scripts/mirror_gravity_fixed_anchor.py`](../scripts/mirror_gravity_fixed_anchor.py)
 **Primary runner registered cache (load-bearing):** [`logs/runner-cache/mirror_gravity_fixed_anchor.txt`](../logs/runner-cache/mirror_gravity_fixed_anchor.txt)
+**Runner:** [`scripts/mirror_gravity_fixed_anchor.py`](../scripts/mirror_gravity_fixed_anchor.py)
+**Runner cache:** [`logs/runner-cache/mirror_gravity_fixed_anchor.txt`](../logs/runner-cache/mirror_gravity_fixed_anchor.txt)
 
 **Review repair perimeter (2026-05-01 generated-audit context):**
 Generated-audit context before this narrowing identified this chain-closure

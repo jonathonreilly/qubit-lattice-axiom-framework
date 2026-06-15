@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 927 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1481 |
+| unaudited | 1480 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -31,6 +31,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
+| `decoration_under_cl3_color_automorphism_theorem` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -61,20 +62,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1367 |
 | `audited_conditional` | 26 |
-| `audited_decoration` | 46 |
+| `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1798 |
+| `unaudited` | 1797 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1665 |
-| `decoration` | 47 |
+| `decoration` | 48 |
 | `meta` | 325 |
 | `no_go` | 340 |
 | `open_gate` | 151 |
-| `positive_theorem` | 783 |
+| `positive_theorem` | 782 |
 
 | criticality | count |
 |---|---:|
@@ -1540,6 +1541,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` |
 | `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
+| `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
 | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
@@ -8672,6 +8674,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For any dominant weight (p,q), V_(p,q) occurs in Sym^p(3) tensor Sym^q(3bar) inside V^{tensor(p+q)} as the Cartan highest-weight component.  _(class `A`)_
 - **chain closes:** True — The tensor-power expansion of chi_V^n has nonnegative irreducible multiplicities, and the Cartan product gives a positive n=p+q contribution for every (p,q). The formal convolution statement is restricted to the algebraic dual of finite-character tests and does not assert analytic closure.
 - **rationale:** The all-weight positivity follows from finite-dimensional SU(3) representation algebra: chi_V^n is a tensor-power character with nonnegative multiplicities, and the Cartan highest-weight component supplies the strict positive witness. The runner checks arithmetic consequences and packet markers rather than independently decomposing tensor powers, so runner PASS is supporting evidence, not the sole basis for the verdict. The formal distribution dictionary is explicitly algebraic/formal and does not overclaim L2, continuity, positivity, or bounded-operator closure.
+- **auditor confidence:** high
+
+### `gellmann_completeness_theorem_note_2026-05-02`
+
+- **Note:** [`GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic corollary that the parent-supplied Gell-Mann generators form an R-basis for traceless Hermitian 3x3 matrices and close under commutator; no physical SU(3)_c, gluon, or QCD-vertex identification is audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-233020-8c6a0f717d-gellmann_completeness_theore`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The R-span of 8 linearly independent Gell-Mann generators in the 8-dimensional real space of traceless Hermitian 3x3 matrices is the full space.  _(class `A`)_
+- **chain closes:** True — The cited parent supplies the Hermitian traceless Gell-Mann generators with Tr[T^a T^b]=(1/2)δ^{ab}; the admitted dimension count gives an 8-dimensional traceless-Hermitian space, so the basis, projection formula, and no-extra-generator statements follow by linear algebra. Commutator closure and the sign f^{abc}=-2i Tr[[T^a,T^b]T^c] follow from trace orthogonality and cyclicity.
+- **rationale:** The load-bearing math is correct as an exact algebraic consequence of the parent Gell-Mann basis data plus standard dimension and trace-inner-product facts. Independent formula checks confirm the normalization c_a=2Tr[MT^a], the commutator projection sign, the d-symbol anticommutator convention, and the standard SU(3) Casimir side values in the T_F=1/2 convention. The runner hard-codes standard Gell-Mann matrices and performs class-A algebraic consistency checks; it does not add first-principles framework content or an external comparator. Because the claim reduces to one upstream parent plus standard mathematics and the physical bridge is explicitly out of scope, this is algebraic decoration rather than an independent positive-theorem surface.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `generation_axiom_boundary_note`

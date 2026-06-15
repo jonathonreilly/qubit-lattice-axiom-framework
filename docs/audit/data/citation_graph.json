@@ -51474,15 +51474,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gellmann_completeness_theorem_note_2026-05-02"
     },
     {
       "from": "repo.front_door_status",
       "to": "color_generation_independent_z3_structures_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19"
     },
     {
       "from": "repo.front_door_status",
@@ -98990,9 +98990,9 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19",
         "gellmann_completeness_theorem_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
+        "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19",
         "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08",
         "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
         "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
@@ -99000,7 +99000,7 @@
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3a914db44216b5106b7303d2b39f7c5829b02f9811f33ff6dbd67ad866a08304",
+      "note_hash": "f1033e05d33527fa78225708de3e5d6eb1100ded5de4592a4116143060f0b9ae",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

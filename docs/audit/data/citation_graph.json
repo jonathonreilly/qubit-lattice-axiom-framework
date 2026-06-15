@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
     },
     {
@@ -51498,11 +51494,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "action_normalization_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04"
+      "to": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
         "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
         "hierarchy_dimensional_compression_note",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
         "action_normalization_note",
-        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04"
+        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e78416ae325fc189f4003cf4e653f32864c38775618ae5be43a4de1814ea7744",
+      "note_hash": "b5eabead9f30edba5925da3f87b8e5f310494cec34111b792ed9547f800050c8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

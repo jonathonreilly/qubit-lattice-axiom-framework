@@ -19,7 +19,11 @@ actually consumes, P2 phase-blindness is eliminated rather than admitted.
 2026-06-10 boundary-declaration repair: the readout-identification bridge
 premise is declared as the explicit Boundary, Theorem 1 is restated as a
 five-input chain (T1-a..T1-e), and the runner residual-checks the Theorem-2
-observable map; see Changelog.
+observable map; see Changelog. 2026-06-15 independence check: the companion
+no-go
+[OBSERVABLE_PRINCIPLE_T1D_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-15.md](OBSERVABLE_PRINCIPLE_T1D_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-15.md)
+proves that current Record finite additivity does not derive T1-d; it
+supports this row's conditional boundary rather than promoting the row.
 **Type:** bounded_theorem (finite-algebra `log|det(D+J)|` generator on
 the runner block, using Record-backed finite scalar additivity, the
 positive-source-cone P2 elimination on the consumed finite real source surface,

@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_t1d_record_independence_no_go_2026_06_15.py
+runner_sha256: 991f0509e462b37b03de8012b06d4745250ff03452764d66118cd8e1c2f32349
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+=== 1. Current axiom boundary text ===
+[PASS] Record axiom states finite scalar additivity
+[PASS] Record axiom says it does not supply readout context
+[PASS] Record axiom says it does not supply sector-generation rule
+[PASS] minimal axioms warn observable parent is not the axiom note
+[PASS] parent note declares T1-d as a bridge premise
+[PASS] parent note says T1-d is not derivable from minimal_axioms
+
+=== 2. Additive supplied-context family ===
+[PASS] I_lambda additive under disjoint union for lambda=0
+       lhs=3.401197381662155, rhs=3.401197381662155
+[PASS] I_lambda additive under disjoint union for lambda=0.25
+       lhs=4.026197381662156, rhs=4.026197381662156
+[PASS] I_lambda additive under disjoint union for lambda=-2
+       lhs=-1.598802618337845, rhs=-1.598802618337844
+[PASS] I_lambda additive under disjoint union for lambda=3.14159
+       lhs=11.255179015636639, rhs=11.255179015636639
+
+=== 3. Same determinant, different additive readout ===
+[PASS] two records have identical determinant-like Z
+[PASS] lambda != 0 readout separates records with the same Z
+       I(2,0)=0.693147180559945, I(2,1)=1.193147180559945
+[PASS] no function f(Z) can represent I_lambda when same Z has two values
+       would require f(2)=log(2) and f(2)=log(2)+lambda
+
+=== 4. Determinant-only log is an extra quotient/selection ===
+[PASS] lambda=0 recovers the determinant-only logarithmic readout
+       I_0=3.401197381662155, log(Z)=3.401197381662155
+[PASS] quotienting the q coordinate restores factorization through Z
+       this quotient is exactly the extra readout-identification bridge
+
+=== 5. Scope conclusion ===
+[PASS] Record additivity is compatible with non-determinant supplied coordinates
+       therefore T1-d is independent of the current axiom text
+[PASS] the no-go does not challenge the conditional log-det theorem under T1-d
+       it only blocks deriving T1-d from Record alone
+
+========================================================================
+TOTAL: PASS=17 FAIL=0
+========================================================================
+
+----- stderr -----
+

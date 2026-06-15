@@ -19,10 +19,13 @@ hence **opposite** spectral asymmetries and the derived label pair
 `chi_+/- = +/- sign(eta_delta(A(a)))`; (T3) with the repo's counting
 regulator `eta_delta = #{lambda > delta} - #{lambda < -delta}` on the
 spectrally-truncated twisted tower `spec(A(a)) = {n + a : |n + a| <=
-Lambda}`, the labels are **quantized**: `chi = +1` for `a in (0, 1/2)`,
-`chi = -1` for `a in (-1/2, 0)`, and the proposal's branch conditions
-fail exactly where they should (`a = 0`: gap fails, `h_delta = 1`;
-`a = +/-1/2`: `eta_delta = 0`); (T4) the **same** total Dirac
+Lambda}` with **half-integer spectral cutoff** `Lambda in Z + 1/2`, the
+labels are **quantized**: `chi = +1` for `a in (0, 1/2)`, `chi = -1`
+for `a in (-1/2, 0)`, and the proposal's branch conditions fail exactly
+where they should (`a = 0`: gap fails, `h_delta = 1`; `a = +/-1/2`:
+`eta_delta = 0`). No quantized-label claim is made for arbitrary
+non-half-integer cutoffs; the runner checks excluded counterexample
+cutoffs. (T4) the **same** total Dirac
 simultaneously satisfies the Koide-side anticommutation
 `{D_gen-part, Gamma_prod} = 0` with the product grading
 `Gamma_prod = G (x) I (x) eps`, while `[D_bdy-part, Gamma_prod] = 0`
@@ -94,9 +97,11 @@ truncation (index truncation manufactures a spurious label at
   (admitted-context, as in the retained complexification-split row).
 - **Boundary factor.** `H_Y = C^{N_Y}` carrying the twisted-tower
   boundary operator `A(a) := diag(n + a)` over `{n in Z : |n + a| <=
-  Lambda}` — the finite **spectral** truncation of the
-  holonomy-twisted boundary circle operator. `a` is the twist datum
-  (named input).
+  Lambda}` with `Lambda in Z + 1/2` — the finite **spectral**
+  truncation of the holonomy-twisted boundary circle operator used for
+  the quantized-label table. `a` is the twist datum (named input).
+  Other fractional or integer cutoffs are outside T3's quantized-label
+  claim unless a separate fractional-cutoff condition is proved.
 - **Generation factor.** `H_gen = R^3` with the `C_3`-equivariant
   antisymmetric Dirac block `D_gen` (`[D_gen, C_3] = 0`) and the
   site-swap grading `G` (`G^2 = I`, `{D_gen, G} = 0`) — the L4-form
@@ -153,8 +158,9 @@ with (T1), `-A(a)` is exactly the orientation image of `A(a)`
 regulator). The factor 2 is the sector dimension and drops out of the
 sign.
 
-**(T3) Quantized labels and branch conditions.** On the
-spectrally-truncated twisted tower (generic `Lambda`, e.g. half-integer):
+**(T3) Quantized labels and branch conditions for half-integer spectral
+cutoffs.** On the spectrally-truncated twisted tower with
+`Lambda in Z + 1/2`:
 
 ```text
     a in (0, 1/2)   : h_delta = 0, eta_delta = +1  -> chi = +1
@@ -205,15 +211,18 @@ sign follows. For the orientation image: if `B' = -U B U^dag` then
 `spec(B') = -spec(B)` and the counting `eta` flips exactly. ∎
 
 **(T3).** Spectral truncation keeps `lambda = n + a` with `|n + a| <=
-Lambda`. For `a in (0, 1/2)` and generic `Lambda`: positives are `n >=
-0` with `n <= Lambda - a` (`floor(Lambda - a) + 1` values), negatives
-are `n <= -1` with `n >= -Lambda - a` (`floor(Lambda + a)` values);
-for half-integer `Lambda` both floors equal `Lambda - 1/2`, so
-`eta_delta = +1`. The map `a -> -a` flips the spectrum, giving `-1`.
-At `a = 0` the `n = 0` eigenvalue sits in the `delta`-window
-(`h_delta = 1`). At `a = 1/2` the spectrum is `{..., -3/2, -1/2, 1/2,
-3/2, ...}`, symmetric under reflection, so `eta_delta = 0`. (The
-runner checks every case, plus the index-truncation falsifier.) ∎
+Lambda`. Let `Lambda = M + 1/2`, `M in Z_{\ge 0}`. For
+`a in (0, 1/2)`, positives are `n = 0,...,M` (`M+1` values), while
+negatives are `n = -1,...,-M` (`M` values), so `eta_delta = +1`. The
+map `a -> -a` flips the spectrum, giving `eta_delta = -1` for
+`a in (-1/2, 0)`. At `a = 0` the `n = 0` eigenvalue sits in the
+`delta`-window (`h_delta = 1`). At `a = 1/2` the spectrum is
+`{..., -3/2, -1/2, 1/2, 3/2, ...}`, symmetric under reflection, so
+`eta_delta = 0`. This proof is explicitly for the half-integer cutoff
+family; for example an integer cutoff gives `eta_delta = 0` for
+`a in (0, 1/2)` and is not in the theorem scope. (The runner checks the
+intended family, excluded fractional/integer counterexamples, and the
+index-truncation falsifier.) ∎
 
 **(T4).** Factor-wise: `(D_gen (x) N)(G (x) eps) + (G (x) eps)(D_gen
 (x) N) = (D_gen G) (x) (N eps) + (G D_gen) (x) (eps N) = (D_gen G +

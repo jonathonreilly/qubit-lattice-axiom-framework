@@ -1,0 +1,21 @@
+slug: pflux-fsbk-grade-sync-20260615
+date: 2026-06-15
+branch: codex/pflux-fsbk-grade-sync-20260615
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11
+target_blocker_text: "dependency_not_retained: audit FSB-K to retained grade with the realized-kernel quantifier and Corollary FSB-CL intact, then re-audit this composer for cascade closure."
+current_action: source-side grade sync complete; package PR for independent review/audit
+files_touched:
+  - docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md
+  - scripts/p_flux_selection_via_fsb_k_check_2026_06_11.py
+  - logs/runner-cache/p_flux_selection_via_fsb_k_check_2026_06_11.txt
+open_imports:
+  - kinetic-class two-surface row remains unaudited; this composition selects within that surface only
+  - thermal equilibrium/KMS remains outside this chain
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: open review PR and let reviewer/audit lane decide composer row status
+stop_condition: PR opened with source, runner, cache, and handoff pack

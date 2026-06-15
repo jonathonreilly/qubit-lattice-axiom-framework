@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """P-FLUX selection via FSB-K + the retained (Z) certificate — phi = -1
-conditional on the FSB-K grade (composer runner).
+at current FSB-K retained-bounded grade (composer runner).
 
 Companion to
 docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md
 
-The honest conditional composed here:
+The honest bounded composition checked here:
 
-  IF  C1: the FSB-K row (axiom_first_fermionic_stefan_boltzmann_
+  USING C1: the FSB-K row (axiom_first_fermionic_stefan_boltzmann_
           narrow_theorem_note_2026-05-26, re-scoped 2026-06-12:
           quantifier on the realized kernel class, hypothesis (Z)
-          explicit) stands at retained grade with its quantifier and
+          explicit) is audited_clean / retained_bounded with its quantifier and
           Corollary FSB-CL intact,
   USING   the retained (Z)-certificate row (staggered_kernel_satisfies_
           z_point_cone_certificate_narrow_theorem_note_2026-06-11:
@@ -24,14 +24,16 @@ The honest conditional composed here:
        in the central-difference normalization = sum |det V|^-1;
        equivalently ~ 1 = 8/2^3 per site at unit hopping) and VIOLATED
        by K0 (g_eff ~ T^-2, Sommerfeld), hence phi = -1 is selected:
-       B-Z2 supplied, B-BIT retired -- CONDITIONAL on C1's grade.
+       B-Z2 supplied, B-BIT retired at C1's current grade. This
+       runner does not set the composer row's audit verdict.
 
 What this runner verifies:
 
   [A] chain inventory and honesty about TODAY's grades: the FSB-K
-      condition is OPEN as of 2026-06-12, the (Z)-certificate row is
-      retained, and the retained currency/surface anchors are at their
-      stated grades. The FSB-K row no longer carries the old U4 row as
+      thermal leg is audited_clean / retained_bounded, the
+      (Z)-certificate row is retained, and the retained
+      currency/surface anchors are at their stated grades. The FSB-K
+      row no longer carries the old U4 row as
       a load-bearing dependency; the load-bearing content is string-
       verified (quantifier, FSB-CL, branch-blindness; Z-K1/Z-K0); the
       (Z) interface matches verbatim across FSB-K and the retained
@@ -50,16 +52,16 @@ What this runner verifies:
       strictly stronger than bare point-likeness); and the end-to-end
       LABEL-FREE pipeline: geometry + thermal data in, selected kernel
       out, its computed flux = -1.
-  [C] the conditional assembly: the conclusion is exactly the named
+  [C] the grade-synced bounded assembly: the conclusion is exactly the named
       missing row of the finite-species-density no-go (its section-7
       formulation 2 and N6 promotion target), it retires exactly the
       kinetic-class note's B-BIT by that note's own named route
       ('point-like zero sets (relativistic cones)'), the retained SB
       bridge supplies the currency (7/240 exact; 427/4 branch-
-      independent), and the note's condition structure (C1 as the sole
-      open condition, retained Z geometry, cascade at audited_
-      conditional, collapse at audited_failed/renaming, surface scope
-      B-C0) is declared in the note text.
+      independent), and the note's grade structure (C1
+      retained_bounded, retained Z geometry, regression cascade,
+      collapse at audited_failed/renaming, surface scope B-C0) is
+      declared in the note text.
   [D] falsification legs and inversion-guard compliance: dropping (CL)
       restores the retained-surface tie (carrier battery recomputed:
       cube TRUE/TRUE, M_3(C) dim 9/9, count 3 = 3 -- selects nothing);
@@ -362,7 +364,7 @@ def carrier_data(h, L, sites, idx):
 
 def main():
     print("=" * 72)
-    print("[A] the named chain: today's grades (honesty), FSB-K condition")
+    print("[A] the named chain: today's grades (honesty), FSB-K current")
     print("    content, and the (Z) interface match")
     print("=" * 72)
 
@@ -383,23 +385,24 @@ def main():
                         "CERTIFICATE_CONDITIONAL_THEOREM_NOTE_"
                         "2026-06-11.md")
     no_old_u4_risk = "known u4 risk" not in own_txt and "recorded u4" not in own_txt
-    report(st_c1 == "unaudited"
+    report(st_c1 == "retained_bounded"
            and retained_grade(st_c2)
            and st_kc == "unaudited"
            and st_sd in (None, "unaudited")
            and st_sb == "retained_bounded" and st_tb == "retained"
            and no_old_u4_risk
-           and "C1 is unaudited and the Z certificate is retained" in own_txt
-           and "performs no selection at current grades" in own_txt,
-           f"[A] today's grades (as of 2026-06-12), recorded honestly: "
+           and "C1 retained_bounded, Z certificate retained" in own_txt
+           and "composer verdict remains audit-owned" in own_txt
+           and "This note does not set this composer row's audit verdict" in own_txt,
+           f"[A] today's grades (as of 2026-06-15), recorded honestly: "
            f"C1 (FSB-K) = {st_c1}; retained Z certificate = {st_c2}; the "
            f"kinetic-class surface row = {st_kc}; the finite-species-"
            f"density no-go = "
            f"{'absent-from-ledger' if st_sd is None else st_sd}; the "
            f"retained anchors: SB bridge = {st_sb}, Fock bridge = "
-           f"{st_tb}; the old U4 row is not load-bearing -- C1 is the "
-           f"sole open condition and this note 'performs no "
-           f"selection at current grades'")
+           f"{st_tb}; the old U4 row is not load-bearing -- C1 is "
+           f"retained_bounded and this note leaves the composer verdict "
+           f"audit-owned")
 
     fsb_txt = note_text("docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_"
                         "NARROW_THEOREM_NOTE_2026-05-26.md")
@@ -445,9 +448,10 @@ def main():
            "cone data to 8 x 1/8 = 1 per site (unit hopping, V = 2I) "
            "= 8 per cell (central-difference, V = I) -- no quantifier "
            "gap in the composition")
-    residual("C1 is OPEN as of 2026-06-12 while the Z certificate is "
-             "retained; the composed selection is conditional and "
-             "performs nothing at current grades (boundary B-C1)")
+    print("GRADE-GUARD: C1 is retained_bounded as of 2026-06-15 while "
+          "the Z certificate is retained; the source-side selection is "
+          "active at current grades, but this runner does not set the "
+          "composer row's audit verdict (boundary B-C1).")
 
     print()
     print("=" * 72)
@@ -563,8 +567,8 @@ def main():
 
     print()
     print("=" * 72)
-    print("[C] the conditional assembly: B-Z2 supplied, B-BIT retired,")
-    print("    conditional on C1, using retained Z geometry")
+    print("[C] the bounded assembly: B-Z2 supplied, B-BIT retired,")
+    print("    using retained-bounded C1 and retained Z geometry")
     print("=" * 72)
 
     sd_txt = note_text("docs/P_FLUX_FINITE_SPECIES_DENSITY_FROM_"
@@ -611,7 +615,8 @@ def main():
            "candidate route ('a dynamical/spectral principle requiring "
            "point-like zero sets (relativistic cones)', its section "
            "7), which is exactly the (Z)+(CL) principle composed "
-           "here; B-BIT retires CONDITIONALLY on C1, using the retained "
+           "here; B-BIT retires at current FSB-K retained_bounded grade, "
+           "using the retained "
            "Z geometry, within the "
            "licensed two-class surface")
 
@@ -637,23 +642,27 @@ def main():
            "realized kernel with that retained finite-g_eff "
            "bookkeeping, the exact content of B-Z2")
 
-    report("C1 (FSB-K retained" in own_txt
+    report("C1 (FSB-K retained-bounded" in own_txt
            and "Retained geometry leg" in own_txt
-           and "Z certificate is retained" in own_txt
+           and "Z certificate retained" in own_txt
+           and "source-side" in own_txt
+           and "selection is active at current grades" in own_txt
+           and "composer verdict remains audit-owned" in own_txt
+           and "If C1 is later reclassified" in own_txt
            and "resolves by cascade" in own_txt
            and "collapses" in own_txt
            and "boundary B-C0" in own_txt
-           and "conditional on C1 reaching retained grade" in own_txt,
-           "[C] the condition structure is declared in the note text: "
-           "C1 (FSB-K retained, quantifier + FSB-CL intact) is the sole "
-           "open condition, and the retained Z geometry carries Z-K1 + "
-           "Z-K0; at audited_conditional from dependency_not_retained "
-           "the selection stands conditionally and 'resolves by cascade' "
-           "(standing owner method); at audited_failed / audited_renaming "
-           "of C1 the composition 'collapses' and B-Z2 reopens; "
-           "the two-class surface itself is scope (boundary B-C0) -- "
-           "the conclusion is 'conditional on C1 reaching retained grade', "
-           "nothing more")
+           and "independent re-audit remains required" in own_txt,
+           "[C] the grade structure is declared in the note text: C1 "
+           "(FSB-K retained-bounded, quantifier + FSB-CL intact) is the "
+           "current thermal leg, and the retained Z geometry carries "
+           "Z-K1 + Z-K0; if C1 later regresses to audited_conditional "
+           "from dependency_not_retained, the selection becomes "
+           "conditional and 'resolves by cascade' (standing owner "
+           "method); at audited_failed / audited_renaming of C1 the "
+           "composition 'collapses' and B-Z2 reopens; the two-class "
+           "surface itself is scope (boundary B-C0); independent "
+           "re-audit remains required for this composer row")
     residual("the licensed two-class surface is the kinetic-class "
              "forcing row's scope (unaudited); this composition "
              "selects WITHIN the surface; retiring P-KIN wholesale "
@@ -723,16 +732,16 @@ def main():
     residual("finite grids: eigensolver L in {4, 8, 12} (PBC, 4 | L "
              "wrap convention), symbol grids L in {64, 128} licensed "
              "by the closed-form ties of check 5 (boundary B-G)")
-    residual("at audited_conditional grade of C1 the selection "
-             "stands conditionally and resolves by cascade; this "
-             "runner re-checks the grades on every run, so the row "
-             "self-reports when the conditions move (boundary B-C1)")
+    print("GRADE-GUARD: if C1 later regresses to audited_conditional, "
+          "the selection becomes conditional and resolves by cascade; "
+          "this runner re-checks the grades on every run, so the row "
+          "self-reports if the upstream grade moves (boundary B-C1).")
 
     print()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
-        print("VERDICT: CONDITIONAL selection, composed honestly: IF the "
-              "FSB-K row (C1) stands at retained grade, THEN")
+        print("VERDICT: BOUNDED source-side selection at current grades: "
+              "the FSB-K row (C1) is retained_bounded;")
         print("         using the retained (Z)-certificate geometry leg, "
               "within the licensed two-class kinetic surface the")
         print("         finite-species-density")
@@ -741,11 +750,10 @@ def main():
         print("         (g_eff plateau ~ 8 = sum |det V|^-1 per cell; "
               "~ 1 = 8/2^3 per site at unit hopping) and violated by")
         print("         K0 (g_eff ~ T^-2, Sommerfeld), hence phi = -1 "
-              "is selected: B-Z2 supplied, B-BIT retired, conditional")
-        print("         on C1's grade. TODAY C1 is unaudited and the Z "
-              "certificate is retained: this")
-        print("         note performs no selection at current grades. "
-              "Dropping (CL) restores the retained-surface tie;")
+              "is selected: B-Z2 supplied, B-BIT retired")
+        print("         at C1's current grade. This runner does not set "
+              "the composer row's audit verdict.")
+        print("         Dropping (CL) restores the retained-surface tie;")
         print("         dropping the retained Z geometry leaves the "
               "hypothesis unverified and the selection collapses. "
               "Nothing is forced from")

@@ -76,6 +76,8 @@ RESOURCE_NOTE = ROOT / "docs" / "TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md"
 RALA_NOTE = ROOT / "docs" / "TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md"
 PREP_READOUT_NOTE = ROOT / "docs" / "TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md"
 OPERATOR_END_TO_END_NOTE = ROOT / "docs" / "TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
+MICROSCOPIC_CLOSURE_NOTE = ROOT / "docs" / "TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md"
+APPARATUS_DYNAMICS_NOTE = ROOT / "docs" / "TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md"
 LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 RALA_REQUIRED_SNIPPETS = (
     "RALA(a) = { O_logical",
@@ -177,11 +179,17 @@ def source_status_firewall_certificate() -> dict[str, object]:
     note_flat = " ".join(note_text.split())
     prep_text = PREP_READOUT_NOTE.read_text(encoding="utf-8")
     op_text = OPERATOR_END_TO_END_NOTE.read_text(encoding="utf-8")
+    micro_text = MICROSCOPIC_CLOSURE_NOTE.read_text(encoding="utf-8")
+    apparatus_text = APPARATUS_DYNAMICS_NOTE.read_text(encoding="utf-8")
     required_note_snippets = (
         "2026-06-12 Native Preparation/Readout Hard Residual",
         "The live blocker is still a native preparation/readout and apparatus theorem",
         "No retained-grade proposal or status promotion is made here",
         "row remains an open gate for a physical deterministic resource",
+        "2026-06-15 Native Apparatus Candidate Bridge",
+        "TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md",
+        "TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md",
+        "concrete bridge path, not a retained teleportation theorem and not an audit verdict",
     )
     missing = [snippet for snippet in required_note_snippets if snippet not in note_flat]
     if missing:
@@ -190,11 +198,45 @@ def source_status_firewall_certificate() -> dict[str, object]:
         raise RuntimeError("preparation/readout probe no longer states the hard residual")
     if "physical apparatus derivation" not in op_text.lower():
         raise RuntimeError("operator-consistent end-to-end note no longer firewalls prep/readout")
+    micro_lower = micro_text.lower()
+    microscopic_snippets = (
+        "native retained-axis `cl(3)/z^3` stabilizers close",
+        "stabilizer-controlled transducer hamiltonian terms commute",
+        "thermodynamic bath bound drives record overlap to zero",
+        "native taste-apparatus ledger theorem covers controlled generators",
+        "resource preparation and retained readout/correction scaling remain bounded",
+    )
+    missing_micro = [
+        snippet for snippet in microscopic_snippets if snippet not in micro_lower
+    ]
+    if missing_micro:
+        raise RuntimeError(
+            f"microscopic closure candidate no longer states expected gates: {missing_micro}"
+        )
+    apparatus_lower = apparatus_text.lower()
+    apparatus_snippets = (
+        "retarded field front derives eikonal carrier",
+        "bell transducer is finite-strength unitary, not projection",
+        "finite spin bath decoheres records irreversibly when traced",
+        "apparatus energy and ledgers are branch independent",
+        "microscopic `cl(3)/z^3` apparatus hamiltonian",
+    )
+    missing_apparatus = [
+        snippet for snippet in apparatus_snippets if snippet not in apparatus_lower
+    ]
+    if missing_apparatus:
+        raise RuntimeError(
+            f"apparatus dynamics candidate no longer states expected gates: {missing_apparatus}"
+        )
     return {
         "path": RESOURCE_NOTE,
         "prep_probe": PREP_READOUT_NOTE,
         "operator_end_to_end": OPERATOR_END_TO_END_NOTE,
-        "snippet_count": len(required_note_snippets),
+        "microscopic_closure": MICROSCOPIC_CLOSURE_NOTE,
+        "apparatus_dynamics": APPARATUS_DYNAMICS_NOTE,
+        "snippet_count": len(required_note_snippets)
+        + len(microscopic_snippets)
+        + len(apparatus_snippets),
     }
 
 
@@ -369,9 +411,13 @@ def bell_overlap_spectrum(rho: np.ndarray) -> tuple[tuple[float, str], ...]:
     return tuple(overlaps)
 
 
-def best_bell_overlap(rho: np.ndarray) -> tuple[float, str]:
+def best_bell_overlap(rho: np.ndarray, tolerance: float = 1e-12) -> tuple[float, str]:
     overlaps = bell_overlap_spectrum(rho)
-    return max(overlaps, key=lambda item: item[0])
+    best = max(overlap for overlap, _label in overlaps)
+    for overlap, label in overlaps:
+        if abs(overlap - best) <= tolerance:
+            return overlap, label
+    raise AssertionError("unreachable: Bell-overlap spectrum is empty")
 
 
 def bell_overlap_ties(rho: np.ndarray, tolerance: float = 1e-12) -> tuple[str, ...]:
@@ -436,11 +482,14 @@ def standard_teleportation_stats(
         fidelity = float(np.real(input_state.conj() @ output @ input_state))
         fidelities.append(fidelity)
 
+    max_trace_error = float(np.max(trace_errors))
+    if max_trace_error <= 1e-12:
+        max_trace_error = 0.0
     return {
         "mean": float(np.mean(fidelities)),
         "min": float(np.min(fidelities)),
         "max": float(np.max(fidelities)),
-        "max_trace_error": float(np.max(trace_errors)),
+        "max_trace_error": max_trace_error,
     }
 
 
@@ -650,7 +699,7 @@ def main() -> int:
     print(
         "Source firewall: "
         f"{Path(firewall['path']).relative_to(ROOT)} "
-        f"prep/readout hard residual PASS "
+        f"prep/readout hard residual + native apparatus bridge candidates PASS "
         f"required_snippets={firewall['snippet_count']}"
     )
     print("Last-taste carrier checks:")

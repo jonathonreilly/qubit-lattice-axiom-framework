@@ -1,0 +1,22 @@
+loop: koide-p1-finite-boundary-20260615
+date: 2026-06-15
+branch: physics-loop/koide-p1-finite-boundary-20260615
+base: origin/main
+mode: bounded-support audit-unblock
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: koide_p1_collapses_frame_residuals_note_2026-06-01
+active_route: narrow conditional Koide P1 row to finite carrier-frame diagnostics
+hard_residual: retained spin-statistics/OS/GL(F) and faithful-matter-carrier bridges remain open
+files_touched:
+  - docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md
+  - scripts/frontier_koide_p1_collapses_frame_residuals.py
+  - logs/runner-cache/frontier_koide_p1_collapses_frame_residuals.txt
+open_imports:
+  - continuum spin-statistics supplier
+  - OS/Wightman or lattice replacement supplier
+  - GL(F) supplier
+  - faithful matter carrier/readout bridge
+pr_status: pending
+next_exact_action: commit, push, and open review PR

@@ -34,19 +34,15 @@ Numerically exhibit the framework's `g_bare = 1` derivation chain end to end:
 Honest scoping
 --------------
 
-This runner certifies two new positive_theorem candidates:
+This runner certifies the parent bounded source surface plus two bounded
+dependency surfaces:
 
-  - Rescaling-freedom removal: under the canonical Cl(3) connection
-    normalization Tr(T_a T_b) = delta_ab / 2, the continuum-gauge-theory
-    rescaling freedom A -> c * A is removed, in the precise sense that the
-    rescaling shifts the Wilson coefficient beta = 2 N_c / g^2 by c^2 rather
-    than altering an independent g_bare.
-  - Constraint-vs-convention: g_bare = 1 is the unique value compatible with
-    the framework's canonical Cl(3) connection normalization. The honest
-    convention layer is the canonical normalization itself (carried by
-    cl3_color_automorphism_theorem), not g_bare. Once that normalization is
-    fixed, g_bare = 1 is a structural constraint, not a separate convention
-    choice.
+  - Rescaling conditional algebra: assuming canonical Cl(3) connection
+    normalization and scoped Wilson matching, a rescaling A -> c * A routes
+    into the matched Wilson coefficient beta by c^2.
+  - Constraint-vs-convention algebra: assuming canonical normalization,
+    scoped Wilson matching, N_c = 3, and the local beta = 6 surface,
+    g_bare^2 = 1 on the positive branch.
 
 This runner does NOT close:
 
@@ -544,61 +540,66 @@ def section_F_no_circular_input(T_triplet, N_c: int = 3):
 
 
 # ---------------------------------------------------------------------------
-# Section G: ledger visibility for the new theorem rows
+# Section G: source-packet boundary for the parent and dependency rows
 # ---------------------------------------------------------------------------
 
-def section_G_ledger_visibility():
-    section("SECTION G: ledger visibility for the new theorem rows")
+def section_G_source_packet_boundary():
+    section("SECTION G: source-packet boundary for bounded parent re-audit")
 
-    import json
+    root = Path(__file__).resolve().parent.parent
+    parent = root / "docs" / "G_BARE_DERIVATION_NOTE.md"
+    rescaling = root / "docs" / "G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md"
+    constraint = root / "docs" / "G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md"
 
-    LEDGER = Path(__file__).resolve().parent.parent / "docs" / "audit" / "data" / "audit_ledger.json"
-    if not LEDGER.exists():
+    for label, path in (
+        ("parent note", parent),
+        ("rescaling dependency note", rescaling),
+        ("constraint dependency note", constraint),
+    ):
         check(
-            "audit ledger present",
-            False,
-            f"missing: {LEDGER}",
+            f"{label} exists in source packet",
+            path.exists(),
+            str(path.relative_to(root)) if path.exists() else str(path),
             kind="BOUNDED",
         )
+
+    if not (parent.exists() and rescaling.exists() and constraint.exists()):
         return
 
-    rows = json.loads(LEDGER.read_text())["rows"]
+    parent_text = parent.read_text(encoding="utf-8")
+    rescaling_text = rescaling.read_text(encoding="utf-8")
+    constraint_text = constraint.read_text(encoding="utf-8")
 
-    rescaling_id = "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
-    constraint_id = "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
-    cl3_color_id = "cl3_color_automorphism_theorem"
+    parent_markers = [
+        "**Claim type:** bounded_theorem",
+        "open main gate",
+        "parent re-audit required",
+        "canonical normalization itself remains the admitted",
+        "retained-status",
+    ]
+    for marker in parent_markers:
+        check(
+            f"parent boundary marker present: {marker}",
+            marker in parent_text,
+            "source-side claim boundary, not ledger status",
+            kind="BOUNDED",
+        )
 
-    # cl3_color_automorphism_theorem is the declared one-hop dependency for
-    # the rescaling candidate.
-    check(
-        f"declared dep '{cl3_color_id}' present in audit ledger",
-        cl3_color_id in rows,
-        f"effective_status = {rows.get(cl3_color_id, {}).get('effective_status', 'missing')}",
-        kind="BOUNDED",
-    )
-
-    # The new theorem rows are seeded by the audit pipeline AFTER this PR
-    # lands and the pipeline is rerun. We check OPTIMISTICALLY: if they are
-    # present, classify them; if absent, mark as bounded (re-seed required).
-    for cid in (rescaling_id, constraint_id):
-        if cid in rows:
-            row = rows[cid]
-            deps = row.get("deps", [])
-            check(
-                f"new row '{cid}' seeded with deps = {deps}",
-                row.get("audit_status") == "unaudited"
-                and row.get("effective_status") == "unaudited",
-                f"audit_status = {row.get('audit_status', 'missing')}; "
-                f"effective_status = {row.get('effective_status', 'missing')}",
-                kind="BOUNDED",
-            )
-        else:
-            check(
-                f"new row '{cid}' will be seeded by next audit-pipeline run",
-                True,
-                "rerun docs/audit/scripts/run_pipeline.sh after PR lands",
-                kind="BOUNDED",
-            )
+    dep_markers = [
+        (rescaling_text, "rescaling source is bounded", "**Claim type:** bounded_theorem"),
+        (rescaling_text, "rescaling names scoped WM", "explicit scoped assumption"),
+        (rescaling_text, "rescaling forbids downstream promotion", "does not promote any downstream"),
+        (constraint_text, "constraint source is bounded", "**Claim type:** bounded_theorem"),
+        (constraint_text, "constraint names beta scoped input", "**beta=6** is an explicit scoped input"),
+        (constraint_text, "constraint forbids retained derivation citation", "retained derivation"),
+    ]
+    for text, label, marker in dep_markers:
+        check(
+            label,
+            marker in text,
+            marker,
+            kind="BOUNDED",
+        )
 
 
 # ---------------------------------------------------------------------------
@@ -620,7 +621,7 @@ def main() -> int:
     section_D_rescaling_freedom(T_triplet, N_c=3)
     section_E_constraint_vs_convention(N_c=3)
     section_F_no_circular_input(T_triplet, N_c=3)
-    section_G_ledger_visibility()
+    section_G_source_packet_boundary()
 
     # Summary
     print("\n" + "=" * 88)
@@ -630,7 +631,7 @@ def main() -> int:
     print(f"  BOUNDED : PASS = {BOUNDED_PASS}, FAIL = {BOUNDED_FAIL}")
     print(f"  TOTAL   : PASS = {PASS + BOUNDED_PASS}, FAIL = {FAIL + BOUNDED_FAIL}")
     print()
-    if FAIL == 0:
+    if FAIL == 0 and BOUNDED_FAIL == 0:
         print("  All exact checks passed.")
         print("  The Cl(3) -> End(V) -> su(3) -> Wilson action chain derives g_bare = 1")
         print("  under the canonical Cl(3) connection normalization Tr(T_a T_b) = delta_ab/2,")
@@ -639,10 +640,12 @@ def main() -> int:
         print("  Rescaling A -> c * A shifts the matched beta by c^2, NOT g_bare.")
         print("  Therefore g_bare = 1 is queued as a structural constraint candidate")
         print("  relative to the canonical normalization, not an independent free convention.")
-    else:
+    elif FAIL:
         print(f"  {FAIL} exact check(s) failed; investigate before using this candidate.")
+    else:
+        print(f"  {BOUNDED_FAIL} bounded/source-boundary check(s) failed; repair source packet guard.")
 
-    return 0 if FAIL == 0 else 1
+    return 0 if FAIL == 0 and BOUNDED_FAIL == 0 else 1
 
 
 if __name__ == "__main__":

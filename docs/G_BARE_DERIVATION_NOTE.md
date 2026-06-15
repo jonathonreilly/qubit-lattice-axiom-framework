@@ -3,7 +3,7 @@
 **Date:** 2026-04-12
 **Branch:** `claude/youthful-neumann`
 **Lane:** DM relic mapping (Objection 1 from CODEX_DM_RESPONSE.md)
-**Claim type:** positive_theorem
+**Claim type:** bounded_theorem
 **Script:** `scripts/frontier_g_bare_derivation.py`
 
 > **Parent dependency-chain gate:**
@@ -181,12 +181,14 @@ diagnostic is not the parent re-audit surface.
 python3 scripts/frontier_g_bare_derivation.py
 ```
 
-Expected summary on the current parent re-audit surface:
+Expected summary on the current parent re-audit surface: all exact algebra
+and source-boundary checks pass. The exact count may change as the source
+packet guard is updated, but no runner `FAIL` line is expected.
 
 ```
-EXACT   : PASS = 51, FAIL = 0
-BOUNDED : PASS = 4, FAIL = 0
-TOTAL   : PASS = 55, FAIL = 0
+EXACT   : FAIL = 0
+BOUNDED : FAIL = 0
+TOTAL   : FAIL = 0
 ```
 
 ---

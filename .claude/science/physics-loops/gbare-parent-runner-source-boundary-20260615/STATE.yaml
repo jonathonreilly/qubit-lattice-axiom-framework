@@ -1,0 +1,22 @@
+loop: gbare-parent-runner-source-boundary-20260615
+date: 2026-06-15
+branch: physics-loop/gbare-parent-runner-source-boundary-20260615
+target_claim_id: g_bare_derivation_note
+target_note: docs/G_BARE_DERIVATION_NOTE.md
+target_runner: scripts/frontier_g_bare_derivation.py
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+current_step: source-boundary/runner repair complete; verification and PR pending
+files_touched:
+  - docs/G_BARE_DERIVATION_NOTE.md
+  - scripts/frontier_g_bare_derivation.py
+  - logs/runner-cache/frontier_g_bare_derivation.txt
+imports_retired:
+  - stale runner dependency on generated ledger audit/effective status
+remaining_boundary:
+  - parent remains bounded on canonical normalization, scoped Wilson matching, N_c=3, beta=6, and dependency closure
+  - independent audit/review still decides status
+next_exact_action: run checks, commit, push, open PR

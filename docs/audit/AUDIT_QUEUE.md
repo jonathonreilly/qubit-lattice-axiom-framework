@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | unaudited | critical | 881 | 15.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_source_domain_bridge_no_go.py` |
+| 1 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | audit_in_progress | critical | 882 | 16.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_source_domain_bridge_no_go.py` |
 | 2 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | unaudited | critical | 680 | 16.91 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py` |
 | 3 | `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08` | bounded_theorem | unaudited | critical | 642 | 17.33 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_channel_effective_ntaste_boundary.py` |
 | 4 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | unaudited | critical | 513 | 19.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_rescaling_conditional_algebra_check.py` |

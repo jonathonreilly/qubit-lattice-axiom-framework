@@ -1,0 +1,18 @@
+loop: hierarchy-formula-boundary-unblock-20260615
+status: source_repair_pr_open_pending
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: source-boundary repair for hierarchy honest-status row
+files_touched:
+  - docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
+  - scripts/frontier_hierarchy_formula_honest_status.py
+  - logs/runner-cache/frontier_hierarchy_formula_honest_status.txt
+open_gates:
+  - B3 substrate/regulator selection remains open
+  - B4 alpha_LM^16 coupling-power transport remains open
+  - B5 observable identification remains open
+audit_data_edited: false
+next_exact_action: independent reviewer/auditor decides whether narrowed T1 is re-auditable
+stop_condition: PR opened with passing local verification

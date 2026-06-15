@@ -4,14 +4,14 @@
     docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
     (2026-06-11 theorem/boundary-input restructure)
 
-Claim under check (theorem T1 of the note, plus declared map D1 and
-bounded corollary C1):
+Claim under check (theorem T1 of the note, plus declared map appendix
+D1 and bounded readout appendix C1):
 
     T1 (load-bearing, computed here from local algebra — NOT hard-coded):
       (i)   naive symbol zero set on the even-L momentum torus is
             {0, pi}^d -> exactly 2^d species; 16 at d = 4 with Hamming
             staircase (1,4,6,4,1); 4 / 8 / 32 at d = 2 / 3 / 5
-            (regulator- and dimension-conditional exponent data);
+            (regulator- and dimension-conditional surface data);
       (ii)  on the minimal 2^4 all-antiperiodic mean-field block,
             det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color; at m = 0 the
             magnitude is (2 u_0)^16 = 4^8 u_0^16 — u_0-degree exactly
@@ -25,15 +25,21 @@ bounded corollary C1):
             alpha_LM^16 = alpha_bare^16 u_0^(-16); the magnitude is
             carried by alpha_bare^16 = (4 pi)^(-16), NOT by the
             determinant power u_0^16 = 0.124;
-      (v)   sensitivity algebra dln v_cand/dln <P> = -4 and
-            dln v_cand/dln M_Pl = +1 exactly (fd-verified).
+      (v)   sensitivity algebra of the declared map dln v_cand/dln <P>
+            = -4 and dln v_cand/dln M_Pl = +1 exactly (fd-verified).
 
-    D1 (declared candidate map, NOT an observable identification):
+      B3 (substrate/regulator selection) and B4 (coupling-power
+      transport) are open formula-closure gates, not load-bearing
+      authorities for T1 and not derived by this runner.
+
+    D1 (declared candidate map appendix, NOT formula closure and NOT an
+    observable identification):
       v_cand := M_Pl x (7/8)^(1/4) x alpha_LM^16  over the declared
       anchor B2 (M_Pl = 1.2209e19 GeV, Planck-lane import).
 
-    C1 (bounded numeric corollary over declared inputs B1/B2):
-      v_cand = 246.282818290129 GeV.  NOT an EW VEV prediction.
+    C1 (bounded numeric readout appendix over declared inputs/open gates):
+      v_cand = 246.282818290129 GeV.  NOT formula closure and NOT an EW
+      VEV prediction.
 
 Falsification legs (baseline-relative; would FAIL if the declared
 structure were softer than claimed):
@@ -43,8 +49,9 @@ structure were softer than claimed):
         by x 2.19e8.  The integer N cannot move within input resolution.
     F2  coupling-power displacement: the determinant's own u_0^16 gives
         NO hierarchy (x 5.94e15); alpha_bare^16 and alpha_s(v)^16
-        displace by x 0.124 and x 8.0651 = u_0^(-16).  B4 is
-        load-bearing and declared.
+        displace by x 0.124 and x 8.0651 = u_0^(-16).  This identifies
+        B4 as the open transport gate rather than accepting it as a
+        premise.
     F3  selector displacement: removing (7/8)^(1/4) displaces by
         +3.39 %, two orders above the B1 resolution window.
     F4  anti-tuning: the plaquette value that would reproduce the PDG
@@ -316,7 +323,7 @@ def section_c():
 # ---------------------------------------------------------------------------
 def section_a():
     print("\n--- [A] T1.iv/T1.v + D1/C1 readout algebra over declared "
-          "boundary inputs ---")
+          "inputs and open formula-closure gates ---")
 
     # A1: suppression constant K and its log decomposition.
     k_const = APBC * ALPHA_LM ** 16
@@ -386,9 +393,9 @@ def section_a():
     r_bare = (ALPHA_BARE ** 16) / (ALPHA_LM ** 16)
     r_sv = (ALPHA_S_V ** 16) / (ALPHA_LM ** 16)
     check("A", "F2 coupling displacement: determinant power u_0^16 -> "
-               "x 5.94e15 (NO hierarchy; B4 load-bearing), "
-               "alpha_bare^16 -> x 0.1240, alpha_s(v)^16 -> x 8.0651 "
-               "= u_0^(-16) exactly",
+               "x 5.94e15 (NO hierarchy; B4 remains the open transport "
+               "gate), alpha_bare^16 -> x 0.1240, alpha_s(v)^16 -> "
+               "x 8.0651 = u_0^(-16) exactly",
           abs(r_det / 5.9447e15 - 1.0) < 1e-3
           and abs(r_bare - U_0 ** 16) < 1e-12
           and abs(r_sv - U_0 ** -16) < 1e-9,
@@ -503,7 +510,7 @@ def section_b():
         "not an ew vev prediction",
         "fenced comparator appendix",
         "zero continuous knobs",
-        "declared boundary inputs",
+        "open formula-closure gates",
     ]
     forbidden = [
         "regulator-independent derivation",
@@ -512,6 +519,8 @@ def section_b():
         "within 1 % of v_obs",
         "within 1% of v_obs",
         "tuned to land",
+        "b4 is load-bearing",
+        "declared admission tuple",
     ]
     req_missing = [t for t in required if t not in lowered]
     forb_hit = [t for t in forbidden if t in lowered]
@@ -563,9 +572,9 @@ def section_d():
 def main() -> int:
     print("=" * 78)
     print(" frontier_hierarchy_formula_honest_status.py")
-    print(" (2026-06-11 restructure: T1 computed from local algebra;")
-    print("  D1 declared candidate map; C1 bounded readout; regulator-")
-    print("  conditional exponent per the standing no-go; comparators fenced)")
+    print(" (2026-06-15 boundary repair: T1 structural support from local")
+    print("  algebra; D1/C1 appendices over open B3/B4/B5 gates;")
+    print("  comparators fenced)")
     print(" Parent note: docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_"
           "2026-05-10.md")
     print("=" * 78)

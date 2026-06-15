@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_formula_honest_status.py
-runner_sha256: 7c0aa446464bf126f69c134d1678b15d2df0819aa72f9cadb84f0161a5612554
+runner_sha256: 74aa368435f792a891f30e7a8cb63a89cd46dba3bfc686f5a3d0922d4799154e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ==============================================================================
  frontier_hierarchy_formula_honest_status.py
- (2026-06-11 restructure: T1 computed from local algebra;
-  D1 declared candidate map; C1 bounded readout; regulator-
-  conditional exponent per the standing no-go; comparators fenced)
+ (2026-06-15 boundary repair: T1 structural support from local
+  algebra; D1/C1 appendices over open B3/B4/B5 gates;
+  comparators fenced)
  Parent note: docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
 ==============================================================================
 
@@ -23,14 +23,14 @@ status: ok
   [PASS][C] det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color; at m = 0 |det| = 4^8 u_0^16; exact u_0-degree from a two-point ratio equals the species count 16  (exact at rational (u_0, m) test points)
   [PASS][C] selector: eta(4)/zeta(4) = 1 - 2^(1-4) = 7/8 exact (Fraction algebra); bracketed series interval contains 7/8  (ratio in [0.87499987, 0.87500013], width 2.6e-07)
 
---- [A] T1.iv/T1.v + D1/C1 readout algebra over declared boundary inputs ---
+--- [A] T1.iv/T1.v + D1/C1 readout algebra over declared inputs and open formula-closure gates ---
   [PASS][A] K = (7/8)^(1/4) alpha_LM^16 = 2.017224e-17 (zero continuous knobs beyond B1); log decomposition 16 log10(1/alpha_LM) - (1/4) log10(7/8) matches  (K = 2.017223509625e-17, orders = 16.695246)
   [PASS][A] identity (S): alpha_LM^16 = alpha_bare^16 u_0^(-16); magnitude carried by alpha_bare^16 = (4 pi)^(-16) ~ 2.6e-18 while |log10 u_0^16| < 1 — the determinant power supplies no hierarchy  (alpha_bare^16 = 2.5861e-18, u_0^16 = 0.12399)
   [PASS][A] C1 readout: v_cand = M_Pl x K = 246.282818290129 GeV (matches the note's published constant)  (v_cand = 246.282818290129 GeV)
   [PASS][A] elasticities: dln v_cand/dln <P> = -4 (fd-verified) and dln v_cand/dln M_Pl = +1 (exact linearity)  (fd elasticity = -3.999999996)
   [PASS][A] B1 resolution window: 4-d.p. plaquette license induces +/- 0.0337 % on v_cand  (window = 0.03370 %)
   [PASS][A] F1 exponent displacement: N = 15 -> x 11.029, N = 17 -> x 0.09067, N = 8 (Z^3 spatial-only) -> x 2.19e8; every unit of N displaces >> the B1 window  (x 11.0293 / x 0.090668 / x 2.1896e+08)
-  [PASS][A] F2 coupling displacement: determinant power u_0^16 -> x 5.94e15 (NO hierarchy; B4 load-bearing), alpha_bare^16 -> x 0.1240, alpha_s(v)^16 -> x 8.0651 = u_0^(-16) exactly  (x 5.9448e+15 / x 0.12399 / x 8.06510)
+  [PASS][A] F2 coupling displacement: determinant power u_0^16 -> x 5.94e15 (NO hierarchy; B4 remains the open transport gate), alpha_bare^16 -> x 0.1240, alpha_s(v)^16 -> x 8.0651 = u_0^(-16) exactly  (x 5.9448e+15 / x 0.12399 / x 8.06510)
   [PASS][A] F3 selector displacement: removing (7/8)^(1/4) -> x 1.033946 (+3.39 %), two orders above the B1 window  (x 1.0339463)
   [PASS][A] F4 anti-tuning: <P>_needed - 0.5934 = +3.78e-5 < the 4-d.p. half-step 5e-5 (the licensed grid cannot encode a tuned target; 0.5934 IS the rounding of <P>_needed); M_Pl_needed shift = 6.2x the B2 half-step (residual attributable to the Planck anchor)  (<P>_needed = 0.5934378, M_Pl_needed = 1.220589e+19, B2 steps = 6.23)
 

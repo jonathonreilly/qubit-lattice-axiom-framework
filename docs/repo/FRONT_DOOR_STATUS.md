@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1453 |
-| Retained-grade rows, including boxed decorations | 1366 |
+| Applied audit verdicts | 1454 |
+| Retained-grade rows, including boxed decorations | 1367 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 905 |
+| Retained bounded rows | 906 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 38 |
 | Unaudited rows | 1535 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1541 |
-| Ready rows | 78 |
+| Total pending rows | 1540 |
+| Ready rows | 92 |
 | Cycle-break targets | 0 |
-| Critical pending | 306 |
+| Critical pending | 305 |
 | High pending | 287 |
 | Medium pending | 466 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`cl3_color_automorphism_theorem`](../../docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md) - critical; audit_in_progress
+- [`g_bare_constraint_vs_convention_theorem_note_2026-05-03`](../../docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`lorentz_kernel_positive_closure_note`](../../docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md) - critical; unaudited
@@ -57,7 +57,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **435**.
+- Non-retained-grade cited rows in publication tables: **434**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -68,7 +68,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |

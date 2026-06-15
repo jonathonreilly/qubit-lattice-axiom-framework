@@ -51474,7 +51474,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+      "to": "observable_principle_from_axiom_note"
     },
     {
       "from": "repo.front_door_status",
@@ -98990,7 +98990,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "observable_principle_from_axiom_note",
         "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
         "quark_route2_exact_time_coupling_note_2026-04-19",
         "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
@@ -99000,7 +99000,7 @@
         "su3_casimir_fundamental_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d0582a7772972fac39f17cd4a05e779d3b936dde15331ab72a20d0899c5f2391",
+      "note_hash": "c1e0b6a38db3f015c26406287e0825fe7accbd81c4e797b9b405d662d8b496b7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

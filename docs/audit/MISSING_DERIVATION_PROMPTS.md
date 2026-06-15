@@ -2430,7 +2430,7 @@ _6 rows in this category._
 
 ### `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08`
 
-**Note:** [docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md](docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md)  |  **Descendants:** 1269  |  **Class:** A
+**Note:** [docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md](docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md)  |  **Descendants:** 1263  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md.
@@ -2606,12 +2606,12 @@ drive.
 
 Auditor judged that the chain needs a new theorem for a physical carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge. To close: derive the missing bridge from retained primitives so the audited claim no longer asserts it.
 
-_29 rows in this category._
+_33 rows in this category._
 
 
 ### `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`
 
-**Note:** [docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md](docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)  |  **Descendants:** 1305  |  **Class:** A
+**Note:** [docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md](docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)  |  **Descendants:** 1299  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md.
@@ -2640,7 +2640,7 @@ drive.
 
 ### `multisite_pauli_group_theorem_note_2026-05-02`
 
-**Note:** [docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md](docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md)  |  **Descendants:** 1268  |  **Class:** A
+**Note:** [docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md](docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md)  |  **Descendants:** 1262  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md.
@@ -2669,7 +2669,7 @@ drive.
 
 ### `pmns_tm2_residual_consequence_bounded_note_2026-05-26`
 
-**Note:** [docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md](docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md)  |  **Descendants:** 1265  |  **Class:** A
+**Note:** [docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md](docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md)  |  **Descendants:** 1259  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md.
@@ -2698,7 +2698,7 @@ drive.
 
 ### `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02`
 
-**Note:** [docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md](docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md)  |  **Descendants:** 283  |  **Class:** B
+**Note:** [docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md](docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md)  |  **Descendants:** 284  |  **Class:** B
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md.
@@ -2725,9 +2725,38 @@ drive.
 ```
 
 
+### `hierarchy_formula_honest_status_note_2026-05-10`
+
+**Note:** [docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md](docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)  |  **Descendants:** 259  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: Audited the T1 structural algebra and C1 numeric readout over the declared plaquette, scale-reference, regulator-selection, and coupling-power inputs; no EW VEV prediction or B5 observable-identification closure was audited.
+
+Auditor's verdict_rationale:
+The runner source performs substantive exact finite algebra for the zero set, 2^4 eta-phase operator, characteristic polynomial, determinant scaling, and eta/zeta selector, and an independent arithmetic check confirms the displayed constants and sensitivity factors. The scale-reference primitive should not be treated as a bounded Planck import, and the retained plaquette reuse note is a retained-grade bounded input. However, the formula/readout still depends on explicit declared open selections: B3 fixes the regulator surface and B4 supplies the alpha_LM^16 coupling-power choice beyond the determinant's u0^16 degree; B5 remains needed for any EW observable identification. Therefore the row is conditionally valid as a bounded structural/readout statement, not clean closure of the hierarchy or VEV.
+
+Auditor-quoted load-bearing step:
+Over declared B1/B3 with B4 declared, the local algebra computes the naive d=4 species count N=16, the 2^4 all-APBC determinant u0-degree 16, the exact selector (7/8)^(1/4), and hence the bounded K and v_cand readout algebra.
+
+Auditor's repair target (canonical class + action):
+missing_bridge_theorem: cheapest repair is a retained bridge deriving the B4 alpha_LM^16 coupling-power transport and a retained B3 regulator/substrate selection; B5 is only required if upgrading C1 into an EW VEV claim.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
 ### `hierarchy_dimensional_compression_note`
 
-**Note:** [docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md](docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)  |  **Descendants:** 243  |  **Class:** B
+**Note:** [docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md](docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)  |  **Descendants:** 244  |  **Class:** B
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md.
@@ -2746,6 +2775,35 @@ Under the admitted per-determinant geometric-mean readout with N_taste = 2^D = 1
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: provide and audit the D=4 readout/effective-potential-density bridge deriving exponent, inverse/direct placement, sign, and normalization, with retained support for N_taste = 2^D in D = 4.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`
+
+**Note:** [docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md](docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 238  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Audited the algebraic obstruction on the unreduced C3 cyclic 3x3 carrier and the conditional reduced-carrier calculation assuming an external scalar-lane SO(2) quotient; not audited as a derivation of the physical quotient bridge.
+
+Auditor's verdict_rationale:
+The displayed quantitative identities check out independently: the cyclic-basis norms give E_+=3a^2 and E_perp=6|b|^2, the weighted log problem gives kappa=2mu/nu, and the unreduced determinant has rank weights (1,2). The reduced two-slot determinant calculation is also correct, but it is explicitly conditional on replacing the ordered doublet coordinates by the SO(2)-orbit radius. The cited retained cyclic-compression authority supplies the three-channel cyclic carrier, not the physical quotient theorem, so the queued bounded theorem remains conditional rather than clean.
+
+Auditor-quoted load-bearing step:
+The unreduced carrier has det(alpha P_+ + beta P_perp)=alpha beta^2 and hence weights (1,2), while an admitted SO(2)-quotient two-slot carrier has det diag(rho_+,rho_perp)=rho_+ rho_perp and therefore equal weights giving E_+=E_perp and kappa=2.
+
+Auditor's repair target (canonical class + action):
+missing_bridge_theorem: supply an independently audited theorem that the charged-lepton scalar lane factors through the SO(2) quotient, equivalently decouples the cos(3 arg b) channel, then re-audit the row.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -2891,6 +2949,35 @@ Given the supplied one-loop velocity RG, d(v_F-v_b)/dl = -(C_F + C_B N_f) alpha 
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: cheapest repair is a retained one-hop derivation or approved retained authority for the interacting one-loop velocity RG plus the spatial-only power-divergent mixing coefficient and physical fixed-point anomalous dimension.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `teleportation_resource_from_poisson_note`
+
+**Note:** [docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md](docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)  |  **Descendants:** 2  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: open_gate
+- load_bearing_step_class: C
+- claim_scope: Bounded offline extraction of a retained-axis logical two-qubit Bell resource on 1D N=8 and 2D 4x4 Poisson/CHSH cases, with native preparation/readout and apparatus realization left open.
+
+Auditor's verdict_rationale:
+The primary and helper code instantiate the finite lattice Hamiltonian, diagonalize it, reduce the state to the retained logical qubits, and compute the reported Bell/resource diagnostics rather than merely printing constants. The retained-axis algebra authority is retained_bounded and supports the finite logical-carrier convention. However, the source note explicitly preserves the native preparation/readout and apparatus theorem as an open bridge, and the operator-consistent end-to-end authority is meta/conditional support rather than retained closure.
+
+Auditor-quoted load-bearing step:
+The Poisson/CHSH small-surface ground states, after tracing cells and spectator tastes, contain a high-fidelity retained-axis logical Bell resource relative to the null case under the last-taste-bit identification.
+
+Auditor's repair target (canonical class + action):
+missing_bridge_theorem: prove the native preparation/readout and apparatus theorem for the retained-axis last-taste carrier, then rerun the bounded Poisson resource checks with that bridge included in the restricted packet.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -3384,6 +3471,35 @@ Under the named EWSB-field-content bridge, one complex SU(2)_L doublet contribut
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: derive or explicitly accept the bridge from retained_bounded H_unit scalar-singlet structure to one complex SU(2)_L EWSB doublet in the thermal census.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`
+
+**Note:** [docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md](docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md)  |  **Descendants:** 0  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Audited the algebraic reduction that, on the retained Gleason/Busch Born surface, a supplied product-form joint instance yields multiplicative weights and the stated agreement-conditioning flow; the product-form premise itself was not audited as derived.
+
+Auditor's verdict_rationale:
+The cited Gleason authority is retained, the Busch authority is retained_bounded and therefore retained-grade under the rubric, and the minimal-axiom memo is an accepted premise. The runner source performs real symbolic trace and conditioning checks rather than merely printing constants, and an independent algebra check agrees with the displayed identities. However the source note explicitly names, and does not discharge, the product-form/independence premise needed to turn repeated registrations into sigma tensor sigma instances. That open bridge prevents a clean closure of the statistics atom itself.
+
+Auditor-quoted load-bearing step:
+For two registrations carried by a product instance sigma tensor sigma, the Born trace on P_j tensor P_k factors as Tr(sigma P_j) Tr(sigma P_k), so agreement conditioning gives x -> x^2 and r -> 2r^2.
+
+Auditor's repair target (canonical class + action):
+missing_bridge_theorem: supply a retained-grade derivation or explicitly accepted bounded premise that repeated registrations are carried by product-form joint instances sigma tensor sigma.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

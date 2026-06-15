@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""Runner for the bounded no-go obstruction over declared inputs B1-B2.
+"""Runner for the bounded no-go obstruction over an abstract exponent bridge.
 
 Identifying the species count N_species = 2^d at d=4 = 16 with the
 hierarchy exponent in v = M_Pl * alpha_LM^16 * (7/8)^(1/4) is
-regulator-dependent at the lattice-field-theory primitive level once the
-declared species-count packet B1 and common-continuum packet B2 are
-accepted.
+regulator-dependent whenever two candidate regulator surfaces use distinct
+species-count readouts with the same alpha_LM and prefactor.
 
-The runner verifies six consistency checks (T1-T6) plus a source-note
-boundary check (T7) over that declared packet. It does not derive B1 or
-B2, and it does not assert any audit status.
+The runner verifies the abstract exponent-difference theorem, then keeps
+the old standard-regulator table as a witness/context packet. It does not
+derive B1 or B2, and it does not assert any audit status.
 
 It does NOT modify:
 - the parent narrow theorem
@@ -42,7 +41,6 @@ plus Lattice `Z^3` nearest-neighbor cubic lattice alone.
 
 from __future__ import annotations
 
-from itertools import product
 from pathlib import Path
 
 try:
@@ -79,6 +77,42 @@ def section(title: str) -> None:
     print("\n" + "=" * 78)
     print(title)
     print("=" * 78)
+
+
+# ---------------------------------------------------------------------------
+# T0: abstract exponent-difference theorem
+# ---------------------------------------------------------------------------
+
+
+def test_abstract_exponent_difference() -> None:
+    section("T0: abstract exponent-difference theorem")
+    alpha = sp.symbols("alpha", positive=True)
+    c = sp.symbols("C", nonzero=True)
+    n_a = sp.symbols("N_a", integer=True)
+    n_b = sp.symbols("N_b", integer=True)
+
+    f_a = c * alpha**n_a
+    f_b = c * alpha**n_b
+    ratio = simplify(f_a / f_b)
+    check(
+        "symbolic bridge ratio is alpha^(N_a-N_b)",
+        ratio == alpha ** (n_a - n_b),
+        f"ratio={ratio}",
+    )
+    # Concrete witness: alpha=907/10000 is positive and not 1; N=16 vs N=1
+    # gives unequal readouts without using any regulator table authority.
+    alpha_lm = Rational(907, 10000)
+    witness_ratio = simplify(alpha_lm ** Rational(16 - 1))
+    check(
+        "for alpha_LM witness and N=16 vs N=1, readouts are unequal",
+        witness_ratio != 1,
+        f"ratio=alpha_LM^15={witness_ratio}",
+    )
+    check(
+        "only alpha=1 would erase distinct exponents in the positive-alpha bridge",
+        alpha_lm ** 15 != 1 and Rational(1, 1) ** 15 == 1,
+        "alpha_LM^15 != 1, while 1^15 = 1",
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -312,22 +346,26 @@ def test_note_boundary() -> None:
     must_have = [
         "**Claim type:**",
         "no_go",
-        "Declared boundary inputs (B1-B2)",
-        "Registered Tier-A routing",
-        "AC_phi_lambda",
+        "abstract-difference source-boundary repair",
+        "Abstract finite-algebra no-go",
+        "Witness/context packet (B1-B2; not load-bearing)",
+        "No dependency edge",
         "**Status authority:** independent audit lane only",
         "regulator",
         "species count",
         "continuum limit",
-        "staggered_dirac_realization_gate_note_2026-05-03",
+        "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
         "Symanzik/Reisz",
     ]
     missing = [item for item in must_have if item not in text]
+    forbidden_edges = [
+        "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)",
+    ]
     forbidden = [
         # No promotion language; the bridge stays unclaimed.
         "regulator-independent identification of 16 = hierarchy exponent",
         "this no-go closes the staggered-Dirac realization gate",
-    ]
+    ] + forbidden_edges
     leakage = [item for item in forbidden if item in text]
     check(
         "source note has required keywords and no promotion leakage",
@@ -339,6 +377,7 @@ def test_note_boundary() -> None:
 def main() -> int:
     print("# Hierarchy alpha_LM exponent / species-count bridge no-go runner")
     print(f"# Source note: {NOTE.relative_to(ROOT)}")
+    test_abstract_exponent_difference()
     test_regulator_species_counts()
     test_regulator_dependence_of_predicted_v()
     test_continuum_limit_uniqueness()

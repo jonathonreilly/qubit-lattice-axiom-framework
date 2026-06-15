@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 915 |
+| **retained_bounded** | 916 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1509 |
+| unaudited | 1508 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1349 |
+| `audited_clean` | 1350 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1826 |
+| `unaudited` | 1825 |
 
 | claim_type | count |
 |---|---:|
@@ -1362,6 +1362,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `transfer_trace_correspondence_fixes_kernel_normalization_on_retained_surface_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `translation_abelian_composition_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
@@ -19418,6 +19419,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The strongest retained quantitative result from this pilot is: LN+|y|+collapse at N=25: purity=0.7075; LN+|y|+collapse at N=100: purity=0.8835.  _(class `C`)_
 - **chain closes:** True — For the narrowed bounded scope, the live runner reproduces the note's finite-run purity values and negative fitted alpha. The chain does not close for any asymptotic theorem beyond the tested/fitted range or for a uniform collapse-over-LN improvement claim.
 - **rationale:** The retained claim is only the bounded numerical output of the specified runner configuration. No declared ledger dependencies are needed for that scoped finite-run statement, and the operational helper imports are implementation code rather than cited retained claims. The runner has no assert/PASS checks, so the clean verdict rests on direct live reproduction of the reported output, not on a formal assertion harness. The source prose that adding collapse gives a small finite-N improvement over LN+|y| alone should not be treated as retained, since N=40 has LN+|y|+collapse purity 0.7655 versus LN+|y| purity 0.7636.
+- **auditor confidence:** high
+
+### `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05`
+
+- **Note:** [`TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md`](../../docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite four-qubit endpoint Gauss-law model with explicit U(1)/SU(2) endpoint generators and bounded link-dressing conventions.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-214534-d20143ee50-two_endpoint_gauss_law_invar`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the stated four-qubit endpoint model, the bare, A-dressed half-link, and fully dressed Wilson-type line have endpoint invariance counts 0, 1, and 2, with U(1) commutant dimension 36 and the analogous SU(2) bare-versus-double-singlet boundary.  _(class `A`)_
+- **chain closes:** True — The U(1) commutators close by charge cancellation: bare has nonzero endpoint charges at both ends, half-dressed cancels only at A, and fully dressed cancels at both. Independently, each two-qubit endpoint has Gauss-sector multiplicities 1,2,1, so the joint commutant dimension is (1^2+2^2+1^2)^2 = 36; SU(2) closure follows from the total-spin singlet projector commuting with endpoint total spin.
+- **rationale:** The claim is explicitly bounded to the finite model whose carrier and endpoint generators are stated in the note, so those conventions are scope assumptions rather than hidden derivations from the framework axioms. The runner performs genuine finite matrix commutator and rank checks, and an independent charge-sector count reproduces the nontrivial U(1) dimension 36 without using the runner implementation path. The five remaining runner passes are source-scope firewall checks, and the cited retained-bounded U(2) connection note is not used to enlarge the claim beyond this endpoint-algebra statement.
 - **auditor confidence:** high
 
 ### `two_field_retarded_family_closure_note_2026-04-10`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1483 |
-| Retained-grade rows, including boxed decorations | 1379 |
+| Applied audit verdicts | 1484 |
+| Retained-grade rows, including boxed decorations | 1380 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 915 |
+| Retained bounded rows | 916 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1509 |
+| Unaudited rows | 1508 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 19 |
 | Audited renaming rows | 30 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1511 |
-| Ready rows | 76 |
+| Total pending rows | 1510 |
+| Ready rows | 77 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
-| High pending | 283 |
+| High pending | 282 |
 | Medium pending | 466 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05`](../../docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md) - high; unaudited
+- [`record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md) - high; unaudited
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
 - [`wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08`](../../docs/WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
 - [`su3_adjoint_casimir_theorem_note_2026-05-02`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md) - high; unaudited

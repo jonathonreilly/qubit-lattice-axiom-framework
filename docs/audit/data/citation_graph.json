@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "action_normalization_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "action_normalization_note",
         "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
         "su3_adjoint_casimir_theorem_note_2026-05-02",
         "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
         "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
-        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+        "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d1a59cc90a04f0c8feba81510fe285df96d458df2493138f2205dab98554d108",
+      "note_hash": "5b0797c69698c80250691971e5d75a0be5dd7d9f3b04da4e9784ec83190d13b2",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -1,6 +1,6 @@
 # Higgs-Channel Effective N_taste Boundary Bounded Note
 
-**Date:** 2026-05-08
+**Date:** 2026-05-08; 2026-06-15 audited scope wording repair
 **Claim type:** bounded_theorem
 **Status authority:** source-note proposal only; audit verdict and
 effective status are set by the independent audit lane.
@@ -25,8 +25,9 @@ formula [5] of
 
 Specifically, if the Higgs is identified with a **single** Hamming-weight
 class `hw = k`, the effective `N_taste^(k) = binomial(4, k)`, and the
-five candidate single-class assignments give five distinct tree-level
-values `m_H_tree^(k)`. None of them coincide with the existing 140.3 GeV
+five candidate single-class assignments give three distinct tree-level
+values `m_H_tree^(k)` (with the binomial degeneracies `k=0,4` and
+`k=1,3`). None of them coincide with the existing 140.3 GeV
 headline of `HIGGS_MASS_FROM_AXIOM_NOTE.md`. The `N_taste = 16` choice
 that produces the existing 140.3 GeV headline is the **uniform**
 all-corners admission that treats the 16 corners as one Higgs channel;
@@ -171,6 +172,10 @@ This note does not close:
 ## Changelog
 
 - 2026-06-11 (u_0 precision reconciliation, audit-requested): parent B1/C1 input synced to u_0 = <P>^{1/4} = 0.877681381 under the plaquette reuse license (PLAQUETTE_SELF_CONSISTENCY_NOTE.md, cited per the house B1 pattern); channel table regenerated from the rerun; no claim-scope change.
+- 2026-06-15 (audited scope wording repair): replaced the overbroad
+  single-class distinctness wording with the exact table statement
+  "five assignments yielding three distinct values, none equal to
+  uniform-16"; no arithmetic, dependency, or status claim changed.
 
 ## Verification
 
@@ -186,7 +191,7 @@ Expected:
 TOTAL: PASS=N FAIL=0
 VERDICT: the Wilson Hamming-weight staircase does not by itself fix
 N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md formula [5]; the five
-single-class assignments give five distinct m_H_tree values, none of
+single-class assignments give three distinct m_H_tree values, none of
 which coincides with the uniform-16 admission that produces the
 existing 140.3 GeV headline.
 ```

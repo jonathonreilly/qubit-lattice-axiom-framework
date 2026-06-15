@@ -1,0 +1,184 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.py
+runner_sha256: 061e2860f9ccf2a825780d8618dff973aca05a9988e6b3e8ec8445f9b1d5d3ec
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 154.48
+status: ok
+----- stdout -----
+PERSISTENT RECORD SIDEBIT / REFINEMENT AUDIT PACKET
+
+============================================================================================
+Source-note boundaries
+============================================================================================
+[PASS] PERSISTENT_RECORD_SIDEBIT_NOTE.md exists  [docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md]
+[PASS] PERSISTENT_RECORD_SIDEBIT_NOTE.md marker: **Claim type:** bounded_theorem
+[PASS] PERSISTENT_RECORD_SIDEBIT_NOTE.md marker: node-label on raw purity
+[PASS] PERSISTENT_RECORD_SIDEBIT_NOTE.md marker: Independent audit still owns any status movement
+[PASS] PERSISTENT_RECORD_SIDEBIT_NOTE.md marker: scripts/audit_companion_persistent_record_sidebit_refineme
+[PASS] PERSISTENT_RECORD_SIDEBIT_NOTE.md forbidden absent: does beat the node-label baseline
+[PASS] PERSISTENT_RECORD_SIDEBIT_NOTE.md forbidden absent: beats node-label outright
+[PASS] PERSISTENT_RECORD_SIDEBIT_NOTE.md forbidden absent: new raw decoherence winner
+[PASS] PERSISTENT_RECORD_SIDEBIT_NOTE.md forbidden absent: asymptotic closure
+[PASS] PERSISTENT_RECORD_REFINEMENT_NOTE.md exists  [docs/PERSISTENT_RECORD_REFINEMENT_NOTE.md]
+[PASS] PERSISTENT_RECORD_REFINEMENT_NOTE.md marker: **Claim type:** bounded_theorem
+[PASS] PERSISTENT_RECORD_REFINEMENT_NOTE.md marker: it still does **not** beat the node-label baseline
+[PASS] PERSISTENT_RECORD_REFINEMENT_NOTE.md marker: scripts/audit_companion_persistent_record_sidebit_refineme
+[PASS] PERSISTENT_RECORD_REFINEMENT_NOTE.md forbidden absent: does beat the node-label baseline
+[PASS] PERSISTENT_RECORD_REFINEMENT_NOTE.md forbidden absent: beats node-label outright
+[PASS] PERSISTENT_RECORD_REFINEMENT_NOTE.md forbidden absent: new raw decoherence winner
+[PASS] PERSISTENT_RECORD_REFINEMENT_NOTE.md forbidden absent: asymptotic closure
+
+============================================================================================
+Run matched comparison: sidebit
+============================================================================================
+$ /usr/local/bin/python3 /private/tmp/persistent-record-packet-runners-20260615/scripts/persistent_record_matched_compare.py --seeds 2 --gamma 1.0 --methods node,pr_trace,pr_soft,pr_side_trace,pr_side_soft
+======================================================================================
+PERSISTENT RECORD MATCHED COMPARISON
+  Same generated DAGs, same seeds, same barrier setup, same k band
+  N sweep: [8, 12, 18]  seeds=2  k_band=[3.0, 5.0, 7.0]
+  Persistent kernel gammas: [1.0]
+======================================================================================
+
+           N        node    pr_trace       pr_g1  pr_side_trace  pr_side_g1
+  ------------------------------------------------------------------------
+           8      0.7971      0.8317      0.8672      0.8323      0.8644
+          12      0.5128      0.5349      0.6099      0.5284      0.5698
+          18      0.7121      0.7511      0.7314      0.7699      0.7287
+
+Environment counts (mean distinct detector env sectors)
+  node: 8:7.5, 12:13.0, 18:15.0
+  pr_trace: 8:8.5, 12:30.0, 18:91.5
+  pr_g1: 8:8.5, 12:30.0, 18:91.5
+  pr_side_trace: 8:9.5, 12:37.5, 18:123.0
+  pr_side_g1: 8:9.5, 12:37.5, 18:123.0
+
+Fit summary
+  node: (1-pur) ~ 0.104 * N^+0.432
+  pr_trace: (1-pur) ~ 0.0811 * N^+0.483
+  pr_g1: (1-pur) ~ 0.0278 * N^+0.869
+  pr_side_trace: (1-pur) ~ 0.0999 * N^+0.390
+  pr_side_g1: (1-pur) ~ 0.03 * N^+0.855
+
+[PASS] sidebit exits 0  [returncode=0]
+
+============================================================================================
+Check table: sidebit
+============================================================================================
+[PASS] sidebit has expected N rows  [[8, 12, 18]]
+[PASS] sidebit N=8 column count
+[PASS] sidebit N=8 node  [observed=0.7971 expected=0.7971 tol=0.0025]
+[PASS] sidebit N=8 pr_trace  [observed=0.8317 expected=0.8317 tol=0.0025]
+[PASS] sidebit N=8 pr_g1  [observed=0.8672 expected=0.8672 tol=0.0025]
+[PASS] sidebit N=8 pr_side_trace  [observed=0.8323 expected=0.8323 tol=0.0025]
+[PASS] sidebit N=8 pr_side_g1  [observed=0.8644 expected=0.8644 tol=0.0025]
+[PASS] sidebit N=12 column count
+[PASS] sidebit N=12 node  [observed=0.5128 expected=0.5128 tol=0.0025]
+[PASS] sidebit N=12 pr_trace  [observed=0.5349 expected=0.5349 tol=0.0025]
+[PASS] sidebit N=12 pr_g1  [observed=0.6099 expected=0.6099 tol=0.0025]
+[PASS] sidebit N=12 pr_side_trace  [observed=0.5284 expected=0.5284 tol=0.0025]
+[PASS] sidebit N=12 pr_side_g1  [observed=0.5698 expected=0.5698 tol=0.0025]
+[PASS] sidebit N=18 column count
+[PASS] sidebit N=18 node  [observed=0.7121 expected=0.7121 tol=0.0025]
+[PASS] sidebit N=18 pr_trace  [observed=0.7511 expected=0.7511 tol=0.0025]
+[PASS] sidebit N=18 pr_g1  [observed=0.7314 expected=0.7314 tol=0.0025]
+[PASS] sidebit N=18 pr_side_trace  [observed=0.7699 expected=0.7699 tol=0.0025]
+[PASS] sidebit N=18 pr_side_g1  [observed=0.7287 expected=0.7287 tol=0.0025]
+
+============================================================================================
+Side-bit bounded conclusions
+============================================================================================
+[PASS] N=12 side-bit soft improves persistent soft
+[PASS] N=12 side-bit soft remains behind node-label
+[PASS] N=18 side-bit soft improves persistent soft
+[PASS] N=18 side-bit soft remains behind node-label
+[PASS] N=18 trace does not uniformly improve
+
+============================================================================================
+Run matched comparison: side_packet_entry_refinement
+============================================================================================
+$ /usr/local/bin/python3 /private/tmp/persistent-record-packet-runners-20260615/scripts/persistent_record_matched_compare.py --seeds 2 --gamma 1.0,1.5,2.0 --methods node,pr_side_packet_trace,pr_side_packet_soft,pr_side_packet_entry_trace,pr_side_packet_entry_soft
+======================================================================================
+PERSISTENT RECORD MATCHED COMPARISON
+  Same generated DAGs, same seeds, same barrier setup, same k band
+  N sweep: [8, 12, 18]  seeds=2  k_band=[3.0, 5.0, 7.0]
+  Persistent kernel gammas: [1.0, 1.5, 2.0]
+======================================================================================
+
+           N        node  pr_side_packet_trace  pr_side_packet_g1  pr_side_packet_g1.5  pr_side_packet_g2  pr_side_packet_entry_trace  pr_side_packet_entry_g1  pr_side_packet_entry_g1.5  pr_side_packet_entry_g2
+  ------------------------------------------------------------------------------------------------------------------------
+           8      0.7971      0.8323      0.8643      0.8445      0.8368      0.8323      0.8645      0.8445      0.8368
+          12      0.5128      0.5284      0.5634      0.5484      0.5403      0.5284      0.5627      0.5483      0.5404
+          18      0.7121      0.7630      0.7217      0.7387      0.7490      0.7630      0.7213      0.7386      0.7490
+
+Environment counts (mean distinct detector env sectors)
+  node: 8:7.5, 12:13.0, 18:15.0
+  pr_side_packet_trace: 8:9.5, 12:37.5, 18:134.0
+  pr_side_packet_g1: 8:9.5, 12:37.5, 18:134.0
+  pr_side_packet_g1.5: 8:9.5, 12:37.5, 18:134.0
+  pr_side_packet_g2: 8:9.5, 12:37.5, 18:134.0
+  pr_side_packet_entry_trace: 8:9.5, 12:37.5, 18:134.0
+  pr_side_packet_entry_g1: 8:9.5, 12:37.5, 18:134.0
+  pr_side_packet_entry_g1.5: 8:9.5, 12:37.5, 18:134.0
+  pr_side_packet_entry_g2: 8:9.5, 12:37.5, 18:134.0
+
+Fit summary
+  node: (1-pur) ~ 0.104 * N^+0.432
+  pr_side_packet_trace: (1-pur) ~ 0.0921 * N^+0.426
+  pr_side_packet_g1: (1-pur) ~ 0.0282 * N^+0.886
+  pr_side_packet_g1.5: (1-pur) ~ 0.0538 * N^+0.640
+  pr_side_packet_g2: (1-pur) ~ 0.0711 * N^+0.531
+  pr_side_packet_entry_trace: (1-pur) ~ 0.0921 * N^+0.426
+  pr_side_packet_entry_g1: (1-pur) ~ 0.0279 * N^+0.890
+  pr_side_packet_entry_g1.5: (1-pur) ~ 0.0537 * N^+0.641
+  pr_side_packet_entry_g2: (1-pur) ~ 0.0711 * N^+0.531
+
+[PASS] side_packet_entry_refinement exits 0  [returncode=0]
+
+============================================================================================
+Check table: refinement
+============================================================================================
+[PASS] refinement has expected N rows  [[8, 12, 18]]
+[PASS] refinement N=8 column count
+[PASS] refinement N=8 node  [observed=0.7971 expected=0.7971 tol=0.0005]
+[PASS] refinement N=8 pr_side_packet_trace  [observed=0.8323 expected=0.8323 tol=0.0005]
+[PASS] refinement N=8 pr_side_packet_g1  [observed=0.8643 expected=0.8643 tol=0.0005]
+[PASS] refinement N=8 pr_side_packet_g1.5  [observed=0.8445 expected=0.8445 tol=0.0005]
+[PASS] refinement N=8 pr_side_packet_g2  [observed=0.8368 expected=0.8368 tol=0.0005]
+[PASS] refinement N=8 pr_side_packet_entry_trace  [observed=0.8323 expected=0.8323 tol=0.0005]
+[PASS] refinement N=8 pr_side_packet_entry_g1  [observed=0.8645 expected=0.8645 tol=0.0005]
+[PASS] refinement N=8 pr_side_packet_entry_g1.5  [observed=0.8445 expected=0.8445 tol=0.0005]
+[PASS] refinement N=8 pr_side_packet_entry_g2  [observed=0.8368 expected=0.8368 tol=0.0005]
+[PASS] refinement N=12 column count
+[PASS] refinement N=12 node  [observed=0.5128 expected=0.5128 tol=0.0005]
+[PASS] refinement N=12 pr_side_packet_trace  [observed=0.5284 expected=0.5284 tol=0.0005]
+[PASS] refinement N=12 pr_side_packet_g1  [observed=0.5634 expected=0.5634 tol=0.0005]
+[PASS] refinement N=12 pr_side_packet_g1.5  [observed=0.5484 expected=0.5484 tol=0.0005]
+[PASS] refinement N=12 pr_side_packet_g2  [observed=0.5403 expected=0.5403 tol=0.0005]
+[PASS] refinement N=12 pr_side_packet_entry_trace  [observed=0.5284 expected=0.5284 tol=0.0005]
+[PASS] refinement N=12 pr_side_packet_entry_g1  [observed=0.5627 expected=0.5627 tol=0.0005]
+[PASS] refinement N=12 pr_side_packet_entry_g1.5  [observed=0.5483 expected=0.5483 tol=0.0005]
+[PASS] refinement N=12 pr_side_packet_entry_g2  [observed=0.5404 expected=0.5404 tol=0.0005]
+[PASS] refinement N=18 column count
+[PASS] refinement N=18 node  [observed=0.7121 expected=0.7121 tol=0.0005]
+[PASS] refinement N=18 pr_side_packet_trace  [observed=0.7630 expected=0.7630 tol=0.0005]
+[PASS] refinement N=18 pr_side_packet_g1  [observed=0.7217 expected=0.7217 tol=0.0005]
+[PASS] refinement N=18 pr_side_packet_g1.5  [observed=0.7387 expected=0.7387 tol=0.0005]
+[PASS] refinement N=18 pr_side_packet_g2  [observed=0.7490 expected=0.7490 tol=0.0005]
+[PASS] refinement N=18 pr_side_packet_entry_trace  [observed=0.7630 expected=0.7630 tol=0.0005]
+[PASS] refinement N=18 pr_side_packet_entry_g1  [observed=0.7213 expected=0.7213 tol=0.0005]
+[PASS] refinement N=18 pr_side_packet_entry_g1.5  [observed=0.7386 expected=0.7386 tol=0.0005]
+[PASS] refinement N=18 pr_side_packet_entry_g2  [observed=0.7490 expected=0.7490 tol=0.0005]
+
+============================================================================================
+Refinement bounded conclusions
+============================================================================================
+[PASS] N=18 side+packet+entry g1 beats side+packet g1 slightly
+[PASS] N=18 side+packet+entry g1 remains behind node-label
+[PASS] N=18 gamma 1.5 worsens against gamma 1.0
+[PASS] N=18 gamma 2.0 worsens against gamma 1.0
+
+TOTAL: PASS=78 FAIL=0
+
+----- stderr -----
+

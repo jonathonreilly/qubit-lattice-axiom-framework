@@ -3,6 +3,8 @@
 **Date:** 2026-04-03  
 **Status:** bounded refinement tested
 **Claim type:** bounded_theorem
+**Runner:** [`scripts/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.py`](../scripts/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.py)
+**Runner cache:** [`logs/runner-cache/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.txt`](../logs/runner-cache/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.txt)
 
 **Audit-conditional perimeter (2026-05-08):**
 The current generated audit ledger records this row `audited_conditional` with
@@ -24,9 +26,9 @@ but the third-decimal drift across reruns is documented inline (e.g.
 side-bit `gamma=1.0` at N=12 reads ~0.5685–0.5698 across runs). The
 side-bit runner stdout from
 [`scripts/persistent_record_overlap_kernel.py --side-bit`](../scripts/persistent_record_overlap_kernel.py)
-is the registered re-derivation harness; a future runner-cache deposit
-of the side-bit row would close the missing-stdout gap and is the
-prescribed repair path.
+is included through the registered audit companion runner/cache above,
+which invokes the matched-comparison harness on the side-bit method
+surface. Independent audit still owns any status movement.
 
 ## Purpose
 

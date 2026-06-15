@@ -452,6 +452,15 @@ def main() -> int:
         and "re-derived in this note" in note_plain,
         detail="no unaudited dependency is load-bearing for this runner's checks",
     )
+    check(
+        "BOUNDARY: 2026-06-13 post-audit repair quarantines W2 and the theta_eff action-level reduction",
+        "post-audit conditional repair boundary" in note_plain
+        and "w2 physical-registrability identification is explicitly quarantined" in note_plain
+        and "theta_eff vacuum-weight premise" in note_plain
+        and "does not prove that no orientation-sensitive vacuum-weight datum beyond arg det(m_u m_d) can appear outside the supplied gaussian selected surface"
+        in note_plain,
+        detail="source-side conditional support only; no audit status promotion is asserted",
+    )
 
     # ------------------------------------------------------------------
     print("\n" + "=" * 78)

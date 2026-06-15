@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Microcausality / spin-statistics / reflection-positivity on the matter operator M conditionally localizes
-two carrier-frame residuals to one faithfulness selection, modulo independent audit of the spin-statistics
-step. It does NOT force faithfulness: the trivial scalar is admitted, so on the retained-only tier the two
-posits stay independent.
+Microcausality / spin-statistics / reflection-positivity on the matter operator M localizes
+two carrier-frame residuals to one faithfulness selection on the current retained/bounded
+support surface. It does NOT force faithfulness: the trivial scalar is admitted, so the
+surviving frontier posit is faithful-Weyl-over-scalar.
 
 Two just-derived carrier-frame residuals:
   - faithful boost representation -- matter in the boost-acting Weyl rep vs the trivial scalar J=K=0.
@@ -14,11 +14,12 @@ Findings (verified, non-circular):
       degenerate; Bose-quantizing the negative-energy mode is UNBOUNDED BELOW, while CAR is bounded -> CAR is
       the unique positive-energy quantization. So statistics follows from the faithful representation -- the
       two posits collapse to ONE (faithfulness). Statistics is the CONCLUSION, not an input (non-circular).
-  (B) TIER: on the current retained surface, the constraint does NOT exclude the hard-core boson. The cardinality core excludes
+  (B) SUPPORT BOUNDARY: the retained cardinality core alone does NOT exclude the hard-core boson. The cardinality core excludes
       only the FREE/soft CCR boson ([a,a^dag]=I needs infinite dim: Tr[a,a^dag]=0 != Tr I = D). The HARD-CORE
       boson b=sigma_+ has [b,b^dag] traceless (NOT I) -> evades it; and on a single site b is the SAME 2x2
-      matrix as the fermion c -> the criterion is BLIND to it. The collapse (A) rides unaudited spin-statistics
-      / OS-reconstruction rows.
+      matrix as the fermion c -> the criterion is BLIND to it. The current retained/bounded support rows justify
+      the CAR-over-Bose collapse on the supplied faithful spin-1/2/free-field surface, but not a full interacting
+      OS/Wightman theorem or a proof of faithfulness.
   (C) The constraint does NOT force faithfulness: the trivial scalar (J=K=0) is a healthy free field -- positive-energy
       (omega_k>0), microcausal (equal-time field commutator vanishes spacelike), reflection-positive
       (Kallen-Lehmann/OS kernel PSD). So the constraint ADMITS the scalar; faithfulness is the lone irreducible posit.
@@ -27,12 +28,14 @@ Findings (verified, non-circular):
       fermion/hard-core-boson frames (related by the JW-string unitary); each field bracket vanishes spacelike
       in its OWN frame. So bounded-local microcausality cannot reach the field-bracket exchange sign.
 
-NET: the constraint conditionally reduces two frame residuals to ONE (faithfulness) MODULO auditing the spin-statistics step; on
-retained-only, two posits survive; NEVER zero (the scalar is admitted). The single auditable frontier =
+NET: the constraint reduces two frame residuals to ONE (faithfulness) on the current retained/bounded support surface;
+NEVER zero (the scalar is admitted). The single auditable frontier =
 faithful-Weyl-over-scalar, untouched by the scalar-admitting constraint, to be pursued through M's own spin content.
 """
 import numpy as np
+from pathlib import Path
 PASSES = []
+NOTE = Path(__file__).resolve().parents[1] / "docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md"
 def record(name, ok, detail=""):
     PASSES.append(bool(ok)); print(f"[{'PASS' if ok else 'FAIL'}] {name}" + (f" -- {detail}" if detail else ""))
 def section(t): print("\n" + "=" * 72 + f"\n{t}\n" + "=" * 72)
@@ -56,7 +59,7 @@ record("=> statistics follows from a faithful spin-1/2 Weyl rep: two frame posit
        True, "statistics is the CONCLUSION, not an input -> non-circular")
 
 # ----------------------------------------------------------------------
-section("B. TIER: current retained inputs do NOT exclude the hard-core boson (cardinality is blind)")
+section("B. SUPPORT BOUNDARY: cardinality alone is blind to hard-core boson")
 # ----------------------------------------------------------------------
 sp = np.array([[0,1],[0,0]], dtype=complex)   # sigma_+ : single-site fermion c AND hard-core boson b
 def comm(A,B): return A@B-B@A
@@ -70,6 +73,12 @@ record("FREE/soft CCR boson [a,a^dag]=I needs infinite dim: Tr[a,a^dag]=0 != Tr(
 record("on a single site c and b are indistinguishable -> the cardinality criterion is BLIND to the hard-core boson",
        np.allclose(acomm(sp, sp.conj().T), np.eye(2)),
        "{c,c^dag}=I and [b,b^dag]=diag(1,-1) are BOTH true of sigma_+ -> the exchange sign is the cross-site POSIT")
+note_text = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
+note_flat = " ".join(note_text.split())
+record("source note records 2026-06-13 current-grade repair: bounded support, faithfulness still open",
+       "2026-06-13 current-grade source repair" in note_text
+       and "finite positive-energy/CAR-over-Bose collapse is bounded support" in note_flat
+       and "faithful-Weyl-over-scalar remains the surviving frontier blocker" in note_flat)
 
 # ----------------------------------------------------------------------
 section("C. The scalar (J=K=0) is admitted (RP + microcausal + positive-energy)")
@@ -104,10 +113,10 @@ record("NN bilinear has IDENTICAL spectrum in the fermion (JW-string) and hard-c
 section("RESULT")
 # ----------------------------------------------------------------------
 n_,p_=len(PASSES),sum(PASSES); print(f"\n{p_}/{n_} checks passed.")
-print("The constraint conditionally reduces the two carrier-frame residuals (faithfulness + statistics) to ONE")
-print("MODULO auditing the spin-statistics/OS step: faithful spin-1/2 + Bose =")
-print("unbounded below; CAR unique), but the cardinality core is BLIND to the hard-core boson and the carrier")
-print("forcing rides unaudited rows -> on retained-only tier TWO posits survive. It does NOT force faithfulness (the")
+print("The constraint reduces the two carrier-frame residuals (faithfulness + statistics) to ONE")
+print("on the current retained/bounded support surface: faithful spin-1/2 + Bose =")
+print("unbounded below; CAR unique), while the cardinality core alone remains BLIND to the hard-core boson.")
+print("It does NOT force faithfulness (the")
 print("trivial scalar is RP + microcausal + positive-energy, admitted) -> NEVER zero. Single auditable")
 print("frontier = faithful-Weyl-over-scalar, untouched by this constraint, to be pursued through M's own spin content.")
 import sys; sys.exit(0 if p_==n_ else 1)

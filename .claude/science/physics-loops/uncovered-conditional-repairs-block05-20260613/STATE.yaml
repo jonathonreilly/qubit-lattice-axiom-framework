@@ -1,0 +1,58 @@
+loop_slug: uncovered-conditional-repairs-block05-20260613
+updated_utc: "2026-06-15T00:00:00Z"
+branch: physics-loop/uncovered-conditional-repairs-block05-20260613
+base: origin/main
+pr: 3825
+mode: source_side_audit_unlock
+target_status: conditional-support
+actual_current_surface_status: conditional-support
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+summary: >
+  Narrow refresh of the older block05 PR after latest main/audit movement.
+  The branch now keeps only three still-relevant conditional repair targets:
+  AC_phi_lambda R-eta readout narrowing, Koide P1 carrier-frame residual
+  localization, and theta P2 determinant-readout exhaustion bridge.
+targets:
+  - claim_id: ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11
+    status: conditional-support
+    movement: narrows sub-admission ii to the named A_R-eta atom without retiring it
+    runner: scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py
+    cache: logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt
+  - claim_id: KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01
+    status: bounded-support
+    movement: collapses statistics behind the supplied faithful spin-1/2/free-field surface, leaving faithfulness open
+    runner: scripts/frontier_koide_p1_collapses_frame_residuals.py
+    cache: logs/runner-cache/frontier_koide_p1_collapses_frame_residuals.txt
+  - claim_id: THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11
+    status: conditional-support
+    movement: supplies the determinant-readout bridge while quarantining W2 and supplied action-surface premises
+    runner: scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
+    cache: logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt
+files_touched:
+  - docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md
+  - docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py
+  - scripts/frontier_koide_p1_collapses_frame_residuals.py
+  - scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
+  - logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt
+  - logs/runner-cache/frontier_koide_p1_collapses_frame_residuals.txt
+  - logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt
+  - .claude/science/physics-loops/uncovered-conditional-repairs-block05-20260613/
+validation:
+  focused_runners:
+    acphilambda_r_eta: "TOTAL: PASS=50 FAIL=0"
+    koide_p1: "11/11 checks passed"
+    theta_p2: "TOTAL: PASS=36 FAIL=0"
+  pr_diff_runner_cache_check: "0 stale caches reported for PR diff against origin/main"
+  explicit_runner_cache_check: "3 runners considered; 3 fresh; 0 stale; 0 missing"
+  diff_check: clean
+  conflict_scan: clean
+review_loop_disposition: pass_for_source_side_packaging
+remaining_blockers:
+  - independent audit/review must decide any effective retained movement
+  - A_R-eta remains admitted; h-class and h-unit are not derived here
+  - faithful-Weyl-over-scalar remains open in Koide P1
+  - W2 physical registrability and action-surface premises remain supplied for theta P2
+next_exact_action: "Commit, force-push PR #3825, and comment with validation."

@@ -8,7 +8,7 @@ set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
 registry, ledger, queue, or publication-status surfaces.
 **Primary runner:**
 [`scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py`](../scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py)
-(TOTAL: PASS=35 FAIL=0; cached:
+(TOTAL: PASS=36 FAIL=0; cached:
 [`logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt`](../logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt))
 
 ---
@@ -29,6 +29,34 @@ residuals named explicitly in the Boundary section. The word "exhaust" below
 is used only in the audit lane's own technical sense — a proved factorization
 statement about a constrained readout class — never as a claim about a search
 space.
+
+## 2026-06-13 post-audit conditional repair boundary
+
+This repair keeps the algebraic bridge useful but quarantines the exact
+conditional surfaces named by audit:
+
+- The **W2 physical-registrability identification is explicitly
+  quarantined**. The theorem proves that, once the physical determinant
+  readout is inside the Record-registrable class of the supplied context, all
+  phase-sensitive content is killed. It does not derive that the physical
+  readout enters that class.
+- The **finite Gaussian determinant-phase lemma is internal to the supplied
+  selected surface**. On the bilinear Grassmann/Gaussian surface used by the
+  strong-CP packet, the vacuum-weight mass entry is `det(D + M)`, and the
+  orientation-sensitive scalar of that determinant entry is its phase. Under
+  the `theta_eff` vacuum-weight premise and the supplied mass-surface
+  reduction, the mass-orientation datum consumed by this bridge is
+  `arg det(M_u M_d)`.
+- The bridge **does not prove that no orientation-sensitive vacuum-weight
+  datum beyond `arg det(M_u M_d)` can appear outside the supplied Gaussian
+  selected surface**. Broader fermion actions, source/insertion observables,
+  non-registrable readouts, and non-per-plaquette gauge classes remain
+  explicitly outside this theorem.
+- Therefore this note is source-side **conditional support** for the named
+  determinant-readout bridge, not a source-side status promotion. Any
+  movement from conditional to retained is audit-lane work after W2 and the
+  action-level reduction are separately retained or accepted as explicit
+  bounded premises.
 
 ## Statement
 

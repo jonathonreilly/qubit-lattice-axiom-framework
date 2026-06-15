@@ -11,7 +11,26 @@ reconstruction rows, force faithfulness, or set an audit verdict.
 `scripts/frontier_koide_p1_collapses_frame_residuals.py`
 with cache
 `logs/runner-cache/frontier_koide_p1_collapses_frame_residuals.txt`
-(10/10 checks).
+(11/11 checks).
+
+## 2026-06-13 current-grade source repair
+
+The original note described the spin-statistics/OS leg as unaudited. On the
+current audit ledger, the directly cited spin-statistics, reflection
+positivity, free-Dirac, CPT, no-forcing, and `GL(F)` support rows are retained
+or retained_bounded. The honest current reading is therefore:
+
+- the finite positive-energy/CAR-over-Bose collapse is bounded support on the
+  supplied faithful spin-1/2/free-field surface;
+- the collapse does **not** force the faithful representation itself, because
+  the scalar branch remains positive-energy, microcausal in its own frame, and
+  reflection-positive;
+- the result is not an unbounded interacting-field spin-statistics theorem and
+  does not close the framework matter-operator identification by itself.
+
+Thus the statistics residual can be treated as bounded-localized behind the
+faithfulness posit on the cited retained/bounded support surface, while
+faithful-Weyl-over-scalar remains the surviving frontier blocker.
 
 ## The convergence
 
@@ -40,19 +59,17 @@ quantization** of the faithful spin-½ rep (runner §A). Statistics is the
 the faithful-representation posit, conditionally collapsing those two frame
 posits to **one (faithfulness)**.
 
-**(B) But the collapse is tier-conditional — the current retained surface does not
-exclude the hard-core boson.** The retained cardinality core
+**(B) What the retained/bounded support does and does not reach.** The retained cardinality core
 (`spin_statistics_cardinality_pauli_exclusion`) excludes only the **free/soft CCR**
 boson (`[a,a†]=I` needs infinite dimension: `Tr[a,a†]=0 ≠ Tr(I)=D`). The
 **hard-core** boson `b=σ_+` has `[b,b†]` traceless (≠ I), so it **evades** that
 argument; and on a single site `b` is literally the *same* 2×2 matrix as the
 fermion `c` (both `σ_+`, both `(·)²=0`) — the criterion is **blind** to it
-(runner §B). The carrier-level forcing of CAR-over-hard-core-boson therefore rides
-**unaudited** rows (`axiom_first_spin_statistics_theorem`,
-`free_field_os_wightman_reconstruction`, `free_sector_spin_statistics_level1` —
-all unaudited on the live ledger). So the collapse is real modulo independent
-audit, but not retained-load-bearing; on the retained-only tier the two posits
-stay independent.
+(runner §B). The current retained/bounded support rows now justify the
+CAR-over-Bose collapse on the supplied faithful spin-1/2/free-field surface,
+but not as a Record-native proof of the faithful representation or as a full
+interacting-field OS/Wightman theorem. The finite collapse is therefore
+bounded support behind the faithfulness posit, not zero residuals.
 
 **(C) Microcausality/reflection positivity does not force faithfulness — the scalar is admitted.**
 The trivial scalar `J=K=0` is a healthy free field: **positive-energy**
@@ -76,22 +93,17 @@ unitary-relabel statement is used.
 
 ## Net and the next path
 
-The carrier frame goes from **two posits to one (faithfulness)** conditionally,
-modulo auditing the spin-statistics / OS-reconstruction step (currently
-unaudited). On the retained-only tier, two posits remain. The
+The carrier frame goes from **two posits to one (faithfulness)** on the
+current retained/bounded support surface. The
 microcausality/reflection-positivity constraint **never reaches zero**: the
 scalar is admitted, so faithfulness is the single
 irreducible frame posit no microcausality / RP / positive-energy constraint on a
 single matter field excludes.
 
-Two concrete fronts: **(1)** **audit** the matter-2-point exchange-sign
-forcing — ratify `axiom_first_spin_statistics_theorem` S2 and
-`free_field_os_wightman_reconstruction` (closing its open lattice↔continuum and
-`1+1d → 4D` gates) — which would make the conditional collapse reusable after
-independent audit; **(2)** the **single auditable frontier** then becomes
-*faithful-Weyl-over-scalar*, untouched by the same constraint that admits the
-scalar, to be pursued through M's own spin content / the `so(3,1)`
-carrier-assignment, not through microcausality.
+The concrete remaining front is now **faithful-Weyl-over-scalar**: the same
+constraint that admits the scalar cannot decide it, so the next attack must
+run through M's own spin content / the `so(3,1)` carrier-assignment, not
+through microcausality or RP alone.
 
 ## Non-circularity
 

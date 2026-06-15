@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_p1_collapses_frame_residuals.py
-runner_sha256: 0631d5da37de778a0a3e662d428693fc7a8926ad09fff74fcaa7b92af2be9a74
+runner_sha256: 59b55c1a196cfb8c50c7500d79258fe7f41f74300a3d5ca708ca5809fc547ba5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 
@@ -15,11 +15,12 @@ A. CONDITIONAL COLLAPSE: faithful spin-1/2 + Bose = unbounded below; CAR bounded
 [PASS] => statistics follows from a faithful spin-1/2 Weyl rep: two frame posits conditionally collapse to ONE -- statistics is the CONCLUSION, not an input -> non-circular
 
 ========================================================================
-B. TIER: current retained inputs do NOT exclude the hard-core boson (cardinality is blind)
+B. SUPPORT BOUNDARY: cardinality alone is blind to hard-core boson
 ========================================================================
 [PASS] single-site fermion c and hard-core boson b are the SAME 2x2 matrix (sigma_+); b^2 = c^2 = 0
 [PASS] FREE/soft CCR boson [a,a^dag]=I needs infinite dim: Tr[a,a^dag]=0 != Tr(I)=D (cardinality core) -- Tr[b,b^dag] = 0.0 != D = 2 -> [b,b^dag] != I -> hard-core boson EVADES the cardinality argument
 [PASS] on a single site c and b are indistinguishable -> the cardinality criterion is BLIND to the hard-core boson -- {c,c^dag}=I and [b,b^dag]=diag(1,-1) are BOTH true of sigma_+ -> the exchange sign is the cross-site POSIT
+[PASS] source note records 2026-06-13 current-grade repair: bounded support, faithfulness still open
 
 ========================================================================
 C. The scalar (J=K=0) is admitted (RP + microcausal + positive-energy)
@@ -37,11 +38,11 @@ D. Honest relabel: NN bilinear SPECTRUM identical across frames (JW unitary) -- 
 RESULT
 ========================================================================
 
-10/10 checks passed.
-The constraint conditionally reduces the two carrier-frame residuals (faithfulness + statistics) to ONE
-MODULO auditing the spin-statistics/OS step: faithful spin-1/2 + Bose =
-unbounded below; CAR unique), but the cardinality core is BLIND to the hard-core boson and the carrier
-forcing rides unaudited rows -> on retained-only tier TWO posits survive. It does NOT force faithfulness (the
+11/11 checks passed.
+The constraint reduces the two carrier-frame residuals (faithfulness + statistics) to ONE
+on the current retained/bounded support surface: faithful spin-1/2 + Bose =
+unbounded below; CAR unique), while the cardinality core alone remains BLIND to the hard-core boson.
+It does NOT force faithfulness (the
 trivial scalar is RP + microcausal + positive-energy, admitted) -> NEVER zero. Single auditable
 frontier = faithful-Weyl-over-scalar, untouched by this constraint, to be pursued through M's own spin content.
 

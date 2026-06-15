@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_kms_condition_theorem_note_2026-05-01"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
         "quark_route2_exact_time_coupling_note_2026-04-19",
         "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
         "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "axiom_first_kms_condition_theorem_note_2026-05-01"
+        "axiom_first_kms_condition_theorem_note_2026-05-01",
+        "su3_casimir_fundamental_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0ff5b56356d8cacd2fbb3d383a22b3d3377909bb000030cef3af0c2179b163b0",
+      "note_hash": "60ec64a24fb52ffa75753012ec7722d16a35ac095afb182ab4629b5ca2a66538",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

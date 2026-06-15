@@ -1,6 +1,9 @@
 # Wide-Family `h = 0.125` Bridge Reopen Audit — Reduced-Family Fixed `h = 0.125` Negatives (Binding)
 
 **Date:** 2026-04-06 (scope narrowed 2026-05-17 per audited_conditional `runner_artifact_issue` repair: binding scope is the reduced/fixed-family `h = 0.125` bounded negatives already carried by retained dependencies; the wider `phys_w = 4` continuation is out of scope without a separately registered retained note/log/runner)
+**Claim type:** bounded_theorem
+**Runner:** [`scripts/audit_companion_wide_family_h0125_inheritance_packet_2026_06_15.py`](../scripts/audit_companion_wide_family_h0125_inheritance_packet_2026_06_15.py)
+**Runner cache:** [`logs/runner-cache/audit_companion_wide_family_h0125_inheritance_packet_2026_06_15.txt`](../logs/runner-cache/audit_companion_wide_family_h0125_inheritance_packet_2026_06_15.txt)
 **Status:** bounded fixed/reduced-family `h = 0.125` weak-field-closure
 negatives, inherited from the retained dependencies named below; the
 wider `phys_w = 4` continuation reopen path is **out-of-binding-scope**

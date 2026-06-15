@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_wide_family_h0125_inheritance_packet_2026_06_15.py
+runner_sha256: f81729fb97141b66164df8169b7e0bfe694978b9f3064627deec05c2e2eceeea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+WIDE-FAMILY H=0.125 INHERITANCE AUDIT PACKET
+
+========================================================================================
+Source-note boundaries
+========================================================================================
+[PASS] note marker: **Claim type:** bounded_theorem
+[PASS] note marker: fixed/reduced-family `h = 0.125` bounded negatives
+[PASS] note marker: does not add a new fixed/reduced-family result
+[PASS] note marker: wider `phys_w = 4` family continuation
+[PASS] note marker: out-of-binding-scope
+[PASS] note marker: Promoting that wider-family reopen requires a separately regis
+[PASS] note marker: scripts/audit_companion_wide_family_h0125_inheritance_packet_2
+[PASS] note marker: LATTICE_3D_L2_NUMPY_H0125_BRIDGE_NOTE.md
+[PASS] note marker: H2T_H0125_NARROW_BRIDGE_NOTE.md
+[PASS] forbidden overclaim absent: wider `phys_w = 4` continuation is load-bearing
+[PASS] forbidden overclaim absent: clean Newtonian mass-law closure
+[PASS] forbidden overclaim absent: continuum-limit theorem
+
+========================================================================================
+Dependency notes
+========================================================================================
+[PASS] LATTICE_3D_L2_NUMPY_H0125_BRIDGE_NOTE.md exists  [docs/LATTICE_3D_L2_NUMPY_H0125_BRIDGE_NOTE.md]
+[PASS] LATTICE_3D_L2_NUMPY_H0125_BRIDGE_NOTE.md records h=0.125
+[PASS] LATTICE_3D_L2_NUMPY_H0125_BRIDGE_NOTE.md keeps F~M near 0.50 negative
+[PASS] LATTICE_3D_L2_NUMPY_H0125_BRIDGE_NOTE.md forbids promotion
+[PASS] H2T_H0125_NARROW_BRIDGE_NOTE.md exists  [docs/H2T_H0125_NARROW_BRIDGE_NOTE.md]
+[PASS] H2T_H0125_NARROW_BRIDGE_NOTE.md records h=0.125
+[PASS] H2T_H0125_NARROW_BRIDGE_NOTE.md keeps F~M near 0.50 negative
+[PASS] H2T_H0125_NARROW_BRIDGE_NOTE.md forbids promotion
+
+========================================================================================
+Dependency runner caches
+========================================================================================
+[PASS] scripts/lattice_3d_l2_numpy_h0125_bridge.py cache exists  [logs/runner-cache/lattice_3d_l2_numpy_h0125_bridge.txt]
+[PASS] scripts/lattice_3d_l2_numpy_h0125_bridge.py cache is SHA-fresh  [fresh]
+[PASS] scripts/lattice_3d_l2_numpy_h0125_bridge.py cache header parses
+[PASS] scripts/lattice_3d_l2_numpy_h0125_bridge.py cache exits ok  [{'runner_path': 'scripts/lattice_3d_l2_numpy_h0125_bridge.py', 'runner_sha256': '25c516a8f6d613f9eb335fd6504dd1ff2b1e3eb78ae6b305f1f3d12dfcb99cc6', 'status': 'ok', 'exit_code': '0'}]
+[PASS] scripts/lattice_3d_l2_numpy_h0125_bridge.py cache header names runner  [scripts/lattice_3d_l2_numpy_h0125_bridge.py]
+[PASS] scripts/lattice_3d_l2_numpy_h0125_bridge.py cache contains h=0.125 row
+[PASS] scripts/lattice_3d_l2_numpy_h0125_bridge.py cache contains TOWARD h=0.125 signal
+[PASS] scripts/lattice_3d_l2_numpy_h0125_bridge.py cache contains F~M alpha about 0.50
+[PASS] scripts/lattice_3d_l2_numpy_h0125_bridge.py cache contains machine-clean Born scale
+[PASS] scripts/lattice_3d_l2_numpy_h0125_audit.py cache exists  [logs/runner-cache/lattice_3d_l2_numpy_h0125_audit.txt]
+[PASS] scripts/lattice_3d_l2_numpy_h0125_audit.py cache is SHA-fresh  [fresh]
+[PASS] scripts/lattice_3d_l2_numpy_h0125_audit.py cache header parses
+[PASS] scripts/lattice_3d_l2_numpy_h0125_audit.py cache exits ok  [{'runner_path': 'scripts/lattice_3d_l2_numpy_h0125_audit.py', 'runner_sha256': '4b9c6ad309cb6559952b59ea5f944a3fff250902727f8e207944dd949336c619', 'status': 'ok', 'exit_code': '0'}]
+[PASS] scripts/lattice_3d_l2_numpy_h0125_audit.py cache header names runner  [scripts/lattice_3d_l2_numpy_h0125_audit.py]
+[PASS] scripts/lattice_3d_l2_numpy_h0125_audit.py cache contains h=0.125 row
+[PASS] scripts/lattice_3d_l2_numpy_h0125_audit.py cache contains TOWARD h=0.125 signal
+[PASS] scripts/lattice_3d_l2_numpy_h0125_audit.py cache contains F~M alpha about 0.50
+[PASS] scripts/lattice_3d_l2_numpy_h0125_audit.py cache contains machine-clean Born scale
+
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

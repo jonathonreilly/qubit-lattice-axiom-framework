@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_kms_condition_theorem_note_2026-05-01"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_kms_condition_theorem_note_2026-05-01",
         "su3_casimir_fundamental_theorem_note_2026-05-02",
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "hierarchy_formula_honest_status_note_2026-05-10",
         "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
-        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05"
+        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+        "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "76380684a9d24d4eeec3c1107cac01174d191e605184e1fd2ac14aa7930560e9",
+      "note_hash": "b22d39c3821ce2563b8b83aeb1770dcba2ae221f85a2abb02563397754ce782b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

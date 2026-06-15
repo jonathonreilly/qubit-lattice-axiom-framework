@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 927 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1479 |
+| unaudited | 1478 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 26 |
+| ~~audited_conditional~~ | 27 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1368 |
-| `audited_conditional` | 26 |
+| `audited_conditional` | 27 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1796 |
+| `unaudited` | 1795 |
 
 | claim_type | count |
 |---|---:|
@@ -1506,6 +1506,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `color_generation_independent_z3_structures_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -4028,6 +4029,22 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within the restricted packet, the runner source and inlined load-bearing helper code instantiate the lattice operators, finite-rank support construction, shell averaging, least-squares harmonic projection, and finite-difference metric residual checks. The conclusion is bounded to this numerical helper workflow and does not claim a physical derivation of the projection map or full GR closure.
 - **rationale:** The load-bearing computation is not just a printed constant: the runner constructs phi grids from the supplied finite-rank/O_h machinery, fits a/r from shell averages, evaluates finite-difference Einstein-tensor residuals, and records three passing bounded checks. The upstream finite-rank helper authority is retained_bounded, and the source note explicitly limits the claim to a helper-module residual result rather than a full physical theorem. The numerical parameters in the helper are selected inputs, but the audited claim is only that this bounded module performs and reports the stated coarse-graining/residual calculation on that finite family.
 - **auditor confidence:** medium
+
+### `color_generation_independent_z3_structures_2026-06-05`
+
+- **Note:** [`COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Algebraic comparison of the Z3 character of the scalar omega I_3 action on the 3D color carrier with the cyclic permutation action on the hw=1 three-state orbit.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-233736-01d350c7e1-color_generation_independent`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The color Z3 character is (3, 3 omega, 3 omega^2) while the generation Z3 character is (3, 0, 0), so the two Z3 representations are inequivalent.  _(class `A`)_
+- **chain closes:** False — The finite representation-theory inequivalence closes from the stated carriers. The advertised SM color/generation independence does not close because the cited color authority defers the physical SM color bridge and the cited generation authority explicitly does not identify the hw=1 labels with physical families.
+- **rationale:** The runner source genuinely computes the two order-3 matrices, their characters, multiplicities, and Schur-rank obstruction; the algebraic inequivalence checks are correct. However, both one-hop authorities are retained_bounded with explicit scope limits: the color note does not derive the physical SM color carrier, and the generation note does not derive physical-family identification. Therefore the abstract Z3 inequivalence is retained-grade algebra, but the source's stronger SM color x generation reading still imports missing bridge theorems.
+- **open / conditional deps cited:**
+  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
+  - `CL3_TASTE_GENERATION_THEOREM.md`
+- **auditor confidence:** high
 
 ### `complex_action_note`
 

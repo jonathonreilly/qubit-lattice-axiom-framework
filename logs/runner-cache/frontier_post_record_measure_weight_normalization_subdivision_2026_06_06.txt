@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
-runner_sha256: a1c3d42e047959816ced65a0b9866b488594980d618015ba4fcd1f18bbaafb08
+runner_sha256: 8497fd16eb3289d67c4523792ee978e0c4969e704195c3e18793722343d1fa4c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.01
+elapsed_sec: 1.36
 status: ok
 ----- stdout -----
 
@@ -11,17 +11,23 @@ status: ok
 Source-anchor checks
 ------------------------------------------------------------------------------
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: **Claim type:** bounded_theorem
-PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: finite supplied-weight normalization lemma
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Normalized measure is not selected dial.
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: 2026-06-15 Scope Correction
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: read-only/meta subdivision certificate
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: finite supplied-weight normalization lemma
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: The packet is not a positive theorem from Record
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Diagnostic row export
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: not a fixed theorem premise
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: not an audit-result update
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Finite normalization can certify
-PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Record-to-carrier/weight/normalization bridge remains outside this row
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Does not use a fixed ledger-row count as theorem content
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: outputs/post_record_measure_weight_normalization_slice_2026_06_07.json
+PASS source note is retagged as read-only meta certificate, not positive theorem
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization` | 67
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization` |
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure/weight/normalization rows
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
 PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py exists
@@ -50,15 +56,16 @@ PASS selector rule is still needed for selected dial readiness
 ------------------------------------------------------------------------------
 Measure/weight row checks
 ------------------------------------------------------------------------------
-PASS measure/weight row count is current snapshot :: 67
-PASS measure lane counts match expected :: Counter({'source_measure_or_rn_bridge': 16, 'character_path_channel_weight': 14, 'generic_measure_weight_import': 14, 'selector_tangent_readout_weight': 13, 'trace_normalization_reference': 10})
+PASS measure/weight live row count is nonempty :: 67
+PASS measure lane keys match the live diagnostic split :: Counter({'source_measure_or_rn_bridge': 16, 'character_path_channel_weight': 14, 'generic_measure_weight_import': 14, 'selector_tangent_readout_weight': 13, 'trace_normalization_reference': 10})
+PASS row count is diagnostic, not theorem premise :: live=67
 PASS measure lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 16, 'character_path_channel_weight': 14, 'generic_measure_weight_import': 14, 'selector_tangent_readout_weight': 13, 'trace_normalization_reference': 10})
 PASS representative row present in character_path_channel_weight :: architecture_note_directional_measure
 PASS representative row present in generic_measure_weight_import :: born_scattering_comparison_note
 PASS representative row present in selector_tangent_readout_weight :: yt_exact_hessian_selector_uniqueness_note
 PASS representative row present in source_measure_or_rn_bridge :: source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30
 PASS representative row present in trace_normalization_reference :: pre_record_reference_state_tracial_derivation_note_2026-05-20
-PASS audit ledger hash is unchanged :: a2de3b7512118d206d90efce05be59ac8d4dc25e22244067248414c5348b09e9
+PASS audit ledger hash is unchanged :: afea0ff85df2e5e86f231c49ca15a293100f8cdefcc5cded7436e9d38d5f1462
 
 Measure/weight lane counts:
   character_path_channel_weight: 14
@@ -129,14 +136,13 @@ Measure/weight lane counts:
 
 
 ------------------------------------------------------------------------------
-Bounded ledger-row export checks
+Diagnostic ledger-row export checks
 ------------------------------------------------------------------------------
-PASS bounded measure/weight row export exists :: outputs/post_record_measure_weight_normalization_slice_2026_06_07.json
+PASS diagnostic measure/weight row export exists :: outputs/post_record_measure_weight_normalization_slice_2026_06_07.json
 PASS slice export is for the measure/weight bucket
-PASS slice export records current ledger sha :: a2de3b7512118d206d90efce05be59ac8d4dc25e22244067248414c5348b09e9
-PASS slice export row count matches current split :: 67
-PASS slice export lane counts match current split :: {'character_path_channel_weight': 14, 'generic_measure_weight_import': 14, 'selector_tangent_readout_weight': 13, 'source_measure_or_rn_bridge': 16, 'trace_normalization_reference': 10}
-PASS slice export rows match independently enumerated regex split
+PASS slice export is diagnostic, not a theorem premise :: slice_sha=afea0ff85df2e5e86f231c49ca15a293100f8cdefcc5cded7436e9d38d5f1462, live_sha=afea0ff85df2e5e86f231c49ca15a293100f8cdefcc5cded7436e9d38d5f1462
+PASS slice export records a well-formed measure/weight split :: {'character_path_channel_weight': 14, 'generic_measure_weight_import': 14, 'selector_tangent_readout_weight': 13, 'source_measure_or_rn_bridge': 16, 'trace_normalization_reference': 10}
+PASS live runner recomputes current rows instead of trusting historical export :: slice_rows=67, live_rows=67
 
 ------------------------------------------------------------------------------
 Firewall flags
@@ -151,7 +157,7 @@ PASS Record-derived measure/prior flag is false
 PASS Record-derived Born law flag is false
 PASS production dynamics derived flag is false
 
-SUMMARY: PASS=56 FAIL=0
+SUMMARY: PASS=62 FAIL=0
 MEASURE_WEIGHT_NORMALIZATION_ROWS=67
 CHARACTER_PATH_CHANNEL_WEIGHT_ROWS=14
 GENERIC_MEASURE_WEIGHT_IMPORT_ROWS=14

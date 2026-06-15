@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 302,
+    "critical": 301,
     "high": 287,
     "leaf": 482,
     "medium": 466
@@ -10,29 +10,38 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "lorentz_kernel_positive_closure_note",
-      "claim_scope": "On the fixed retained H_lat boost-covariance surface, the canonical one-parameter unitary evolution is U(t)=exp(-i t H_lat), with per-step value U(a); the gravity-card directional-measure kernel remains outside this closure.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
+        "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
         "emergent_lorentz_invariance_note",
-        "lorentz_boost_covariance_2d_theorem_note",
-        "lorentz_boost_covariance_3plus1d_theorem_note"
+        "lorentz_kernel_positive_closure_note",
+        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "minimal_axioms"
       ],
-      "direct_in_degree": 12,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 19.834,
-      "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
-      "queue_reason": "audit_in_progress",
+      "direct_in_degree": 19,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
+        "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py"
+      ],
+      "load_bearing_score": 23.323,
+      "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_lorentz_kernel_positive_closure.py",
-      "transitive_descendants": 912
+      "runner_path": "scripts/axiom_first_microcausality_check.py",
+      "transitive_descendants": 905
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -566,41 +575,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_yt_vertex_power_operator_counting_lemma.py",
       "transitive_descendants": 906
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
-        "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
-        "emergent_lorentz_invariance_note",
-        "lorentz_kernel_positive_closure_note",
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 19,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
-        "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py"
-      ],
-      "load_bearing_score": 23.323,
-      "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/axiom_first_microcausality_check.py",
-      "transitive_descendants": 905
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -46165,5 +46139,5 @@
     }
   ],
   "ready_count": 89,
-  "total_pending": 1537
+  "total_pending": 1536
 }

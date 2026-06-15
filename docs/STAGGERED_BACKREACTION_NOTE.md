@@ -3,6 +3,8 @@
 **Date:** 2026-04-10  
 **Status:** bounded - bounded or caveated result note
 **Claim type:** bounded_theorem
+**Runner:** [`scripts/frontier_staggered_backreaction_prototype.py`](../scripts/frontier_staggered_backreaction_prototype.py)
+**Runner cache:** [`logs/runner-cache/frontier_staggered_backreaction_prototype.txt`](../logs/runner-cache/frontier_staggered_backreaction_prototype.txt)
 
 **Audit-conditional perimeter (2026-05-03):**
 The current generated audit ledger records this row `audited_conditional` with

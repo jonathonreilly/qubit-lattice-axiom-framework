@@ -313,12 +313,12 @@ still-live axis-selection premise:
 - **B-AXIS remains a real declared premise.** The framework has not
   derived the registration direction, the blocked time unit, or the
   exclusion of independent commuting transfer factors from the current
-  retained axiom surface. The follow-up source
-  on record-durability axis selection narrows the route: Record
-  durability, anomaly/chirality labels, and the native
-  exchange-symmetric staggered surface transport with the axis and
-  therefore do not derive B-AXIS. A future positive supplier must
-  provide a non-transportable registration-direction theorem or a
+  retained axiom surface. The follow-up source note
+  `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`
+  narrows the route: Record durability, anomaly/chirality labels, and
+  the native exchange-symmetric staggered surface transport with the
+  axis and therefore do not derive B-AXIS. A future positive supplier
+  must provide a non-transportable registration-direction theorem or a
   reviewed boundary-condition asymmetry bridge; this note does not add
   such a premise and does not treat it as an axiom.
 

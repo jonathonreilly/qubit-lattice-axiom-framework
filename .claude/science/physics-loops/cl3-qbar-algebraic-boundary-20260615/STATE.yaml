@@ -1,0 +1,28 @@
+loop_slug: cl3-qbar-algebraic-boundary-20260615
+date: 2026-06-15
+mode: source_repair_block
+branch: physics-loop/cl3-qbar-algebraic-boundary-20260615
+base: origin/main
+target_claim_id: cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02
+goal: "Repair the audited conditional q-qbar color-singlet row by removing the unsupported physical quark-color bridge from the load-bearing scope."
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_blocker_text: "missing_bridge_theorem: add or cite a retained bridge from the framework symmetric-base SU(3) carrier to physical quark color, or explicitly rescope the note to abstract SU(3) algebraic decoration."
+route_taken: "rescope_to_abstract_su3_algebraic_decoration"
+files_touched:
+  - docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md
+  - scripts/cl3_quark_antiquark_color_singlet_check.py
+  - logs/runner-cache/cl3_quark_antiquark_color_singlet_check.txt
+open_imports:
+  - "No physical SM-color or quark/antiquark carrier bridge is supplied."
+  - "No meson existence, confinement, or asymptotic-state theorem is claimed."
+checks:
+  - "python3 scripts/cl3_quark_antiquark_color_singlet_check.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/cl3_quark_antiquark_color_singlet_check.py --force --push-mode none"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/cl3_quark_antiquark_color_singlet_check.py --check-only"
+  - "python3 docs/audit/scripts/audit_lint.py --strict"
+  - "git diff --check"
+review_disposition: "local mechanical preflight pass; formal review/audit remains external"
+next_exact_action: "Open review PR for this algebraic-scope source repair."
+stop_condition: "This block stops at PR handoff; independent reviewer/auditor decides row movement."

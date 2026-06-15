@@ -2,8 +2,7 @@
 
 **Date:** 2026-06-04
 **Status:** bounded-support repair packet; independent audit required before any effective status change
-**Primary runner:** [`scripts/grown_transfer_basin_live_packet.py`](../scripts/grown_transfer_basin_live_packet.py)
-(`PASS=5 FAIL=0`; cache-backed verifier for the two slow replay runners)
+**Primary runner:** [`scripts/GROWN_TRANSFER_BASIN_TARGETED.py`](../scripts/GROWN_TRANSFER_BASIN_TARGETED.py)
 
 ## Scope
 
@@ -11,6 +10,10 @@ This note repairs the executable support surface for the legacy
 `grown_transfer_basin_note` blocker. It does not unarchive the old note, edit
 the audit ledger, or assert an audit-ratified status. It supplies a current,
 SHA-pinned runner packet for re-audit.
+
+The primary runner imports the sweep runner that computes the row predicates,
+so audit packet construction can expose the full executable chain without
+making the broader sweep the audited claim.
 
 The repaired claim is finite and narrow:
 
@@ -41,7 +44,7 @@ The current runners now share the same predicate functions:
 ## Current Runner Packet
 
 - [`scripts/grown_transfer_basin_live_packet.py`](../scripts/grown_transfer_basin_live_packet.py)
-  is the audit-facing live packet verifier. It checks the current note
+  is the cache-backed live packet verifier (`PASS=5 FAIL=0`). It checks the current note
   wording and the fresh cached stdout for the two slow replay runners below,
   while explicitly keeping the scope at finite-row support rather than a
   graph-ladder theorem.

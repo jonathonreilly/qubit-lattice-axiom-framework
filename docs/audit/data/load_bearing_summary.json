@@ -19,14 +19,14 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 136.642,
-      "transitive_descendants": 1597
+      "load_bearing_score": 136.641,
+      "transitive_descendants": 1596
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
       "criticality": "critical",
-      "load_bearing_score": 64.48,
-      "transitive_descendants": 1009
+      "load_bearing_score": 64.479,
+      "transitive_descendants": 1008
     },
     {
       "claim_id": "observable_principle_from_axiom_note",

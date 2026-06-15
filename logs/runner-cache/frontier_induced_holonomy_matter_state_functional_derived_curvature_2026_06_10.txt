@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_induced_holonomy_matter_state_functional_derived_curvature_2026_06_10.py
+runner_sha256: 4146947196ce1be7de543385d536600c0035258d47820733991fed892ef41ee0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
 ==============================================================================
 Part 1  (H1) poles: sea/sea-orbit -> C = 0 exactly; off-sea: C > 0, filling-dep.
 ==============================================================================
@@ -46,3 +54,6 @@ SCOPE: the matter sector supplies gauge-covariant link
   native-plaquette retained_no_go (different object).  No new axiom/primitive/
   measure/weight; r untouched; QUANTUM no-edge-DOF respected (derived data).
   Audit lane grades.
+
+----- stderr -----
+

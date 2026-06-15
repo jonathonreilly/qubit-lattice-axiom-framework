@@ -38,9 +38,12 @@ full physical premise (4) bridge. Instead it:
   [`LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md)
   packet rather than as a retained authority.
 
-Thus this note is a bounded support packet for the refractive-index form and
-geometric `1/b` calculation. It does not by itself promote clean-chain premise
-(4) to retained status.
+Thus this note is a bounded **conditional algebra packet** for the
+refractive-index form and geometric `1/b` calculation. Its theorem hypotheses
+include the supplied Hamiltonian-shift packet and the supplied fixed-energy
+eikonal/Fermat reading `n = k/k_0`; it does not derive either as a new
+physical bridge and does not by itself promote clean-chain premise (4) to
+retained status.
 
 The clean-chain note
 [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md)
@@ -73,7 +76,12 @@ import-free potential `φ = a/r` (companion
 lattice **does** produce `1/b` geometric lensing via the geodesic; the `−1.43`
 observable was a different (Kubo) object.
 
-## Theorem (bounded, runner-verified)
+## Theorem (bounded conditional algebra, runner-verified)
+
+Hypotheses for T1-T6: use the retained-bounded field-shift context
+`H -> H + phi` named above, and assume the fixed-energy eikonal/Fermat
+identification `n = k(phi)/k(0)` for this scalar dispersion packet. Under
+those hypotheses:
 
 - **(T1)** dispersion shift: on `λ(k)=6−2Σ_μ cos k_μ`, solving `λ(k)+φ=E` gives
   exact axis relation `k(φ)=arccos(1−(E−φ)/2)` and
@@ -94,10 +102,12 @@ observable was a different (Kubo) object.
 
 ## What This Supplies / Does Not Claim
 
-- **Supports** clean-chain premise (4): the weak-field response form `n = 1−cφ`
-  is obtained from the supplied Hamiltonian shift and fixed-energy lattice
-  dispersion in the bounded eikonal packet. This is not a full retained
-  derivation of the physical Fermat bridge.
+- **Supports** clean-chain premise (4) conditionally: the weak-field response
+  form `n = 1−cφ` is obtained from the supplied Hamiltonian shift and
+  fixed-energy lattice dispersion after the eikonal/Fermat identification
+  `n = k/k_0` is assumed. This is not a full retained derivation of the
+  physical Fermat bridge or of the Hamiltonian-shift physical interpretation.
+  Boundary sentence: this is not a full retained derivation of the physical Fermat bridge.
 - **Resolves a framing point:** the genuine *geometric* (geodesic) lensing of `φ=1/r`
   is the standard `1/b`; the `−1.43` was the dipole-suppressed *Kubo* observable, a
   different object (#3191).
@@ -141,14 +151,15 @@ Newtonian normalization remain outside this bounded support packet.
 
 ## Boundary / Honest-Auditor Read
 
-The content is bounded dispersion support for a refractive-index response: a
-test particle at fixed energy in the supplied field-shift packet has
+The content is bounded conditional dispersion algebra for a refractive-index
+response: a test particle at fixed energy in the supplied field-shift packet has
 `λ(k)+φ=E`; on the exact axis lattice dispersion this gives
 `k(φ)=arccos(1−(E−φ)/2)`, whose small-`k` weak-field limit gives
 `n=k(φ)/k(0)=1−φ/(2E)+...`. The runner verifies the exact lattice map and its
 small-`k` limit (T1), the Fermat action algebra after the `n=k/k0` reading is
-supplied (T2), the metric-form match (T3), the `1/b` geometric deflection
-(T4), the no-coupling control (T5), and the comparison-only distinction from
-the Kubo packet (T6). The `G_Newton` normalization stays registered, and the
-full physical Fermat/eikonal bridge, premise (3), and nonlinear/strong-field
-regime remain open.
+supplied (T2), the metric-form match under the same supplied reading (T3), the
+`1/b` geometric deflection (T4), the no-coupling control (T5), and the
+comparison-only distinction from the Kubo packet (T6). The `G_Newton`
+normalization stays registered, and the physical Hamiltonian-shift bridge,
+the full physical Fermat/eikonal bridge, premise (3), and nonlinear/strong-
+field regime remain open.

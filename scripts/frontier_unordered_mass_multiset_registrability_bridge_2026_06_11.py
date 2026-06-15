@@ -49,11 +49,15 @@ for every sampled parameter set and delta.
 """
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 
 TOL = 1e-10
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md"
 
 
 def check(name: str, ok: bool) -> None:
@@ -333,6 +337,16 @@ for a, B in PARAM_SETS:
         ok &= np.allclose(sp_p, sp_m, atol=1e-9)
 check("D1 boundary points sin(3 delta)=0: cos(3 delta)=+/-1 exactly, "
       "registrable family flip-equal, G4 hostile vanishes there", ok)
+
+# ---------------------------------------------------------- source boundary --
+note_text = NOTE.read_text(encoding="utf-8")
+check("S1 note makes P-dep an explicit conditional premise",
+      "Conditional premise (P-dep, named explicitly)" in note_text
+      and "assuming P-dep" in note_text
+      and "does **not** claim that P-dep is derived from Record alone" in note_text)
+check("S2 note states registrability does not close if P-dep is rejected",
+      "rejecting P-dep leaves the finite algebra below intact but blocks the" in note_text
+      and "registrability conclusion" in note_text)
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 if FAIL:

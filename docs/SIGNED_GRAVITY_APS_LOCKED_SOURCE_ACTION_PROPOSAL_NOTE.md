@@ -514,3 +514,16 @@ The axiom extension treats `chi_eta M_phys rho` as an eta-polarized source
 line on gapped APS boundary sectors and imposes hard gap admissibility. It is
 coherent as a controlled candidate, but it is not a retained theorem or a
 physical signed-gravity claim.
+
+## 2026-06-15 audit-unlock residual certificate
+
+The local finite variation and sign-table harness is useful only after the
+cross term `S_int = - chi_eta M_phys <rho, Phi>` is inserted. This packet
+does not derive that term.
+
+The exact frontier target is a framework-native derivation of the canonical
+orientation section/source principle that forces the APS-locked
+`chi_eta rho Phi` source action and protects the eta sector. Until that is
+proved, this row should be re-audited as an open-gate source-action proposal
+with a passing conditional harness, not as a source-action theorem. No new
+axiom or admitted source principle is added here.

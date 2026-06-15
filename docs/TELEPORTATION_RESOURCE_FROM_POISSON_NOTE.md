@@ -317,3 +317,16 @@ operator-algebra support, not a physical deterministic resource derivation.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [teleportation_operator_consistent_end_to_end_note](TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md)
+
+## 2026-06-15 audit-unlock residual certificate
+
+This row is re-opened as finite-carrier resource support only. The useful
+closed content is the explicit finite Hamiltonian diagonalization and logical
+two-qubit Bell/resource diagnostic computed by the runner and helpers.
+
+The live blocker is not the finite diagonalization. A later theorem must
+derive native preparation and readout apparatus for the logical qubits, plus
+the framework-native transport from the Poisson-like source to an operational
+teleportation resource. Until then this row should not be read as an
+apparatus-level teleportation theorem. No new apparatus axiom, observed
+protocol, or audit status is introduced by this repair.

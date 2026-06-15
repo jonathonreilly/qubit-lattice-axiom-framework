@@ -220,3 +220,16 @@ projector, equal-time CAR, Reisz power-counting). No fitted / PDG / lattice-MC /
 **No-promotion statement:** this note does **not** promote, demote, or set the audit
 status of the no-go, the emergent-Lorentz notes, or any upstream row. The audit lane
 is the only status authority.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This re-audit packet preserves the useful model algebra but refuses the
+stronger interacting-Lorentz closure. The runner checks the supplied RG
+matrix, the `O_h` one-scalar reduction, and canonical-time bookkeeping.
+
+The unresolved bridge is the source of those supplied continuum inputs in
+this framework: an audit-clean one-loop velocity RG authority, a
+spatial-only power-divergent mixing theorem, and the physical anomalous
+dimension/sufficiency bound. Without those, this row remains conditional
+support only. This repair introduces no custodial symmetry, observed bound,
+new axiom, or status promotion.

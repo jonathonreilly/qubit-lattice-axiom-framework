@@ -145,3 +145,17 @@ positive.
 The open item is exactly the proof of that no-critical-point premise. Comparator
 evidence can motivate the premise, but it does not turn the conditional result
 into an unconditional one.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This row is re-opened only as a conditional reduction. The runner supplies
+bounded one-plaquette, strong-coupling, positive-kernel toy, and comparator
+guardrail checks; those are diagnostics, not a proof of the physical Wilson
+axis gap.
+
+The exact missing object is a framework-native theorem ruling out a
+second-order bulk critical point on the relevant 4D SU(3) Wilson axis up to
+`beta = 6`, or an equivalent transfer-matrix/gap bridge with the same scope.
+Until that theorem exists, this packet remains an open-gate reduction and
+does not claim a beta=6 gap. No new lattice fact, external simulation result,
+or audit status is introduced here.

@@ -93,3 +93,15 @@ The runner verifies:
 **No-promotion statement:** this note does not change any audit status and does
 not close the equivalence-principle gap. It records a conditional support
 template for later dynamics/mass work.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This row is a conditional equivalence-principle stiffness template, not a
+closed shared-coupling theorem. The runner-checked content is the symbolic
+second derivative, p=0 dispersion, Gaussian normalization, and ratio algebra
+inside the supplied continuous context.
+
+The live blocker is the framework-native origin of that context: a derivation
+of the continuous local energy/action functional, inertial rest-gap readout,
+and shared gravitational source coefficient from the record framework. This
+repair introduces none of those as axioms or admitted retained facts.

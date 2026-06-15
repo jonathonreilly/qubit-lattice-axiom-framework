@@ -8,19 +8,40 @@
 **Original arithmetic runner:** `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`
 
 This is a conditional citation/support layer on top of the prior P1 symbolic
-decomposition. After the 2026-06-11 audit, its load-bearing claim is narrowed
-to a **conditional arithmetic lemma**: given a supplied bracket
+decomposition. After the 2026-06-11 audit, its legacy citation claim is
+narrowed to a **conditional arithmetic lemma**: given a supplied bracket
 `I_S in [4, 10]` for the closest tadpole-improved staggered scalar-density
 analogue, the associated P1 contribution is recomputed at
-`α_LM = 0.0907` and compared to the packaged `1.92%` nominal. This row does
-not assert that the bracket is framework-native or audit-closed for the exact
-`Cl(3) x Z^3` `H_unit` operator.
+`α_LM = 0.0907` and compared to the packaged `1.92%` nominal.
 
-The later canonical numerical science lane is
+The source-side repair surface for re-audit is more precise: the supplied
+bracket is not load-bearing for the framework-native candidate. The native
+quadrature row
+`docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md` computes
+`I_S_native = 3.902217` on the exact `Cl(3) x Z^3` `H_unit` surface. If that
+quadrature row is independently audited clean, this row can be read as the
+native arithmetic bridge
+
+```
+    P1_native = (alpha_LM / (4 pi)) * C_F * I_S_native
+              = 3.754% central
+              = [3.566%, 3.942%] under the quadrature row's 5% scalar
+                systematic band.
+```
+
+The literature bracket remains parallel context only. It is not needed for the
+native candidate arithmetic, and no audit should treat the bracket as retained
+unless the bracket itself is separately accepted.
+
+The canonical numerical science lane is
 `docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`, which
 performs a full-staggered BZ quadrature on the retained surface and must be
-audited on its own. This older citation row should be treated only as a
-conditional arithmetic and literature-context witness.
+audited on its own. This citation row should be treated as:
+
+- a conditional arithmetic/literature-context witness for the supplied
+  `I_S in [4,10]` bracket; and
+- a framework-native arithmetic bridge from the independently audited BZ
+  candidate value to `P1_native`.
 
 ## Authority notice
 
@@ -37,9 +58,9 @@ and it does **not** promote the retention status of the prior P1 sub-theorems:
    `logs/retained/yt_p1_i1_lattice_pt_symbolic_2026-04-17.log`)
   that established `I_1 = I_S` on the retained conserved-current surface.
 
-It is explicitly **not** a framework-native 1-loop BZ integration of `I_S` on the `Cl(3) × Z^3`
-action and **not** a retained proof of the supplied bracket. What this note
-adds is narrower:
+This citation row is not itself the framework-native 1-loop BZ integration of
+`I_S` on the `Cl(3) x Z^3` action, and its legacy literature bracket is not a
+retained proof of that value. What the citation surface adds is narrower:
 
 1. identify the specific BZ integral `I_S` that, via the retained `I_1 = I_S` reduction, is the
    single 1-loop matching primitive entering the `C_F` channel of `Δ_R`;
@@ -51,7 +72,10 @@ adds is narrower:
 4. compare to the packaged `delta_PT = α_LM · C_F / (2π) ≃ 1.92%` nominal (which implicitly
    assumes the standard fundamental-Yukawa value `I_S = 2` in the `α/(4π)` convention);
 5. mark clearly whether the P1 budget carried on the obstruction theorem is revised up, down,
-   or left unchanged, and if so by how much.
+   or left unchanged, and if so by how much;
+6. in the 2026-06-15 repair section, expose the separate native-BZ row as the
+   candidate framework-native supplier and compute the corresponding
+   `P1_native` arithmetic without importing the literature bracket.
 
 Read it together with:
 
@@ -126,8 +150,9 @@ No claim is made here that the bracket constitutes a framework-native derivation
 of `I_S` on the `Cl(3) × Z^3` action. The packaged `1.92%` remains a defensible
 standard-fundamental reference point under the `I_S = 2` assumption. A canonical
 positive numerical result must come from a framework-native 1-loop BZ integration
-on the retained action, such as the separate full-staggered quadrature lane; this
-row only preserves the conditional arithmetic map.
+on the retained action, such as the separate full-staggered quadrature lane. The
+2026-06-15 repair below records the arithmetic bridge that can consume that
+lane after independent audit.
 
 ## 1. Retained foundations
 
@@ -431,12 +456,13 @@ P1 budget line; closing it requires a framework-native BZ integration.
   Sharpe 1987; Ishizuka–Shizawa 1994).
 - Un-improved analogue `I_S_unimpr ∈ [10, 20]` (same references).
 
-**Not provided in this note (would be the next retention level):**
+**Not provided by the legacy citation surface:**
 
 - A framework-native 1-loop BZ evaluation of `I_S` on the retained `Cl(3) × Z^3`
   canonical action with the exact composite-`H_unit` bilinear. The separate
   full-staggered quadrature lane is the proper candidate for that positive
-  numerical authority; this row remains conditional.
+  numerical authority; this row remains conditional unless and until that lane
+  is independently audited.
 - Closure of the `C_A` channel (`I_2`) and `T_F n_f` channel (`I_3`) of `Δ_R`. These
   remain OPEN P1 sub-gaps.
 - The revised P1 value's propagation into any publication-surface table. No publication-
@@ -487,7 +513,7 @@ quadrature note as an authority before independent review.
 | `I_1 = I_S` reduction | `scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`; `logs/retained/yt_p1_i1_lattice_pt_symbolic_2026-04-17.log` | 21/21 symbolic checks: `I_1 = I_S - I_V`, `I_V = 0` on the conserved-current surface, hence `I_1 = I_S` | structural input exposed for audit; this bridge does not recertify its ledger status |
 | `C_F` color factor | `docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`; `scripts/frontier_yt_p1_color_factor_retention.py`; `logs/runner-cache/frontier_yt_p1_color_factor_retention.txt` | exact `SU(3)` identities `C_F = 4/3`, `C_A = 3`, `T_F n_f = 3`, plus the three-channel decomposition | algebraic authority exposed for audit; per-channel integrals remain separate inputs |
 | conditional citation arithmetic | this note; `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`; `logs/runner-cache/frontier_yt_p1_i_s_lattice_pt_citation.txt` | supplied `I_S in [4,10]` maps to `P1 in [3.85%,9.62%]`, central `5.77%`, and `I_S = 2` maps back to the packaged `1.92%` reference | conditional arithmetic only; the bracket remains supplied unless accepted by audit or replaced by a native derivation |
-| native BZ lower-end certificate candidate | `docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`; `scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py`; `logs/runner-cache/frontier_yt_p1_bz_quadrature_full_staggered_pt.txt` | full staggered-PT cache computes `I_v_scalar = +3.902` with a quoted 5% systematic envelope and `I_v_gauge = 0`; the scalar value overlaps the lower end `I_S = 4` within that systematic | candidate native numerical support only; the quadrature lane must be independently audited before it can replace the supplied bracket |
+| native BZ arithmetic candidate | `docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`; `scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py`; `logs/runner-cache/frontier_yt_p1_bz_quadrature_full_staggered_pt.txt` | full staggered-PT cache computes `I_v_scalar = +3.902217` with a quoted 5% systematic envelope and `I_v_gauge = 0`; this gives `P1_native = 3.754%` central and `[3.566%,3.942%]` under the scalar systematic | framework-native candidate arithmetic; if the quadrature lane is independently audited clean, this value replaces the supplied bracket as the load-bearing input for the native surface |
 
 ### 8.2 What the native BZ certificate does and does not prove
 
@@ -500,23 +526,26 @@ number near the low end of the cited bracket:
 ```
 
 Thus the native candidate is compatible with the low endpoint `I_S = 4` of the
-supplied bracket at the stated systematic level. In the same normalization,
-using the canonical `alpha_LM` and `C_F = 4/3`,
+supplied bracket at the stated systematic level. More importantly, it is a
+framework-native number on the exact `Cl(3) x Z^3` `H_unit` quadrature surface,
+so it can replace the supplied bracket on the native arithmetic path once the
+quadrature row itself is audited. In the same normalization, using the
+canonical `alpha_LM` and `C_F = 4/3`,
 
 ```
     P1_native_candidate
-      = (alpha_LM / (4 pi)) * C_F * 3.902
-      = 3.75%   (central, before the quadrature lane is audited)
+      = (alpha_LM / (4 pi)) * C_F * 3.902217
+      = 3.754%   (central, before the quadrature lane is audited)
+      = [3.566%, 3.942%] under the quadrature row's 5% scalar systematic
 ```
 
 This is useful because it checks the scale and operator family against a
 framework-native full-staggered BZ computation rather than leaving the row as
-pure citation arithmetic. It still does not prove the full supplied range
-`I_S in [4,10]`, does not prove the literature upper end `10`, and does not
-authorize replacing this row's conditional boundary with an audit-clean native
-P1 value. The only proposed movement is that re-audit now has the complete
-one-hop packet needed to decide whether the missing dependency edge is closed
-or whether the separate full-staggered BZ lane must be audited first.
+pure citation arithmetic. The native path does not prove the full supplied
+range `I_S in [4,10]` and does not prove the literature upper end `10`; it
+removes the need to import that range for the native candidate. The only
+remaining gate is independent audit of the quadrature row and this arithmetic
+bridge.
 
 ### 8.3 Re-audit verifier
 
@@ -528,15 +557,14 @@ restricted packet above. Its PASS lines intentionally certify only:
   native-BZ candidate surfaces;
 - exact recovery of `I_1 = I_S`, `C_F = 4/3`, and the conditional
   `P1 in [3.85%,9.62%]` arithmetic;
-- extraction of `I_v_scalar = +3.902` and `Delta_R = -3.769%` from the native
-  full-staggered cache;
+- extraction of `I_v_scalar = +3.902217`, `P1_native = 3.754%`, and
+  `Delta_R = -3.769%` from the native full-staggered cache;
 - explicit firewalls that this note does not claim audit closure, does not
-  prove the upper end of the supplied bracket, and does not modify the master
-  obstruction theorem.
+  prove or import the upper end of the supplied bracket for the native path,
+  and does not modify the master obstruction theorem.
 
 Independent audit remains required before this row or any downstream consumer
-may treat the bracket, the native-BZ candidate, or the P1 revision as retained
-authority.
+may treat the native-BZ candidate or the P1 revision as retained authority.
 
 ## 9. Validation
 

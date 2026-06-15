@@ -120,7 +120,6 @@
   ],
   "cycles_detected": 19,
   "effective_status_counts": {
-    "audit_in_progress": 1,
     "audited_conditional": 51,
     "audited_failed": 3,
     "audited_numerical_match": 14,
@@ -157,11 +156,12 @@
     "retained": 211,
     "retained_bounded": 906,
     "retained_no_go": 210,
-    "retained_pending_chain": 19,
+    "retained_pending_chain": 20,
     "unaudited": 1447
   },
-  "retained_pending_chain_count": 19,
+  "retained_pending_chain_count": 20,
   "retained_pending_chain_examples": [
+    "axiom_first_cpt_theorem_stretch_note_2026-04-29",
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",

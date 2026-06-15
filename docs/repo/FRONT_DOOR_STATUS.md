@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3295 |
-| Applied audit verdicts | 1525 |
+| Applied audit verdicts | 1526 |
 | Retained-grade rows, including boxed decorations | 1371 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 210 |
@@ -20,7 +20,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
 | Unaudited rows | 1447 |
-| Retained-pending-chain rows | 19 |
+| Retained-pending-chain rows | 20 |
 | Audited conditional rows | 51 |
 | Audited renaming rows | 31 |
 | Audited numerical-match rows | 14 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1453 |
-| Ready rows | 6 |
+| Total pending rows | 1452 |
+| Ready rows | 5 |
 | Cycle-break targets | 19 |
-| Critical pending | 333 |
+| Critical pending | 332 |
 | High pending | 254 |
 | Medium pending | 427 |
 | Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; audit_in_progress
 - [`hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`](../../docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) - critical; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_SYMMETRIZED_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited

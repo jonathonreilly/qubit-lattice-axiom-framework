@@ -40,17 +40,19 @@ orientation antisymmetry, and the exact coefficient-support current envelope.
 That abstract row is the retained authority for the general identities.
 
 With that authority split out, this note's remaining role is carrier-specific
-and explicitly bounded: on the supplied staggered/Kawamoto-Smit exhibit, it
-checks that the onsite U(1) variation is a nearest-neighbour bilateral current,
-that the physical sign is fixed by `d rho/dt + div j = 0`, and that site-mixing
-generators remain outside the onsite/internal theorem. The staggered carrier
-and physical density/readout bridge are not derived here.
+and explicitly bounded: on the finite staggered/Kawamoto-Smit exhibit
+constructed in this note and runner, it checks that the onsite U(1) variation
+is a nearest-neighbour bilateral current, that the number-current sign is fixed
+by `d rho/dt + div j = 0`, and that site-mixing generators remain outside the
+onsite/internal theorem. The broad physical claim that this finite exhibit is
+the framework's realized matter kinetic is a downstream realization-gate bridge,
+not a load-bearing input to this row.
 
 ## Claim
 
 > **Claim (onsite/internal lattice Noether, sign-fixed by continuity).** Let
 > `H = sum_{x,y} c_{xy} a_x^dag a_y` be any number-conserving bilinear lattice
-> Hamiltonian on a finite site set (the admitted free staggered carrier is the
+> Hamiltonian on a finite site set (the finite free staggered carrier is the
 > exhibit; the statement holds for an arbitrary bilinear). Let `T` be an
 > **onsite/internal** symmetry generator, meaning `T` acts site-locally,
 > `T_{(x,c1)(y,c2)} = delta_{xy} t_{c1 c2}` for a single-site internal matrix
@@ -62,7 +64,7 @@ and physical density/readout bridge are not derived here.
 >   the Hamiltonian coefficients: the bond current between `p` and `q` uses only
 >   `c_pq` and `c_qp`, and vanishes when both coefficients vanish. Thus an
 >   all-to-all bilinear has an all-to-all current envelope; a finite-range
->   bilinear has a finite-range current envelope; and the admitted staggered
+>   bilinear has a finite-range current envelope; and the finite staggered
 >   nearest-neighbour carrier has a nearest-neighbour bond current. On that
 >   staggered carrier the physical Hermitian outflow current is, with the sign
 >   fixed below,
@@ -117,18 +119,19 @@ conventional on the supplied exhibit.
 - The current support is not automatically nearest-neighbour for an arbitrary
   bilinear. What closes generally is the **support envelope**: the U(1) current
   has support only where `c_pq` or `c_qp` is nonzero. Nearest-neighbour locality
-  is claimed only for the admitted staggered nearest-neighbour carrier, or more
+  is claimed only for the finite staggered nearest-neighbour carrier, or more
   generally finite-range locality for finite-range coefficient support. For a
   site-mixing generator the variation `delta chi_x` reaches beyond nearest
   neighbours and this note does **not** claim a local current for that branch.
   The two-site translation case is left as a named open item (Part D),
   consistent with the parent's own Step 4b/Step 5 treatment of the staggered
   shift.
-- This note does not derive the admitted staggered/Grassmann carrier, the
-  Kawamoto-Smit phase form, the physical density/readout bridge, or anomaly
-  cancellation. Those remain the same admitted/open items the parent already
-  carries. The retained abstract bilinear theorem supplies only the carrier-free
-  finite matrix-unit identities; it does not supply the staggered exhibit.
+- This note constructs only a finite staggered/Kawamoto-Smit exhibit for the
+  carrier-specific current check. It does not derive the broad physical
+  realization/readout bridge, anomaly cancellation, or the claim that this
+  exhibit is the realized matter kinetic. The retained abstract bilinear
+  theorem supplies only the carrier-free finite matrix-unit identities; it does
+  not supply that physical realization bridge.
 
 ## 1. Setup: the number-conserving bilinear algebra
 
@@ -210,7 +213,7 @@ specialization of the support-envelope theorem.
 
 ## 4. Sign fixed by the continuity equation (staggered exhibit)
 
-On the admitted free staggered carrier the runner (Part C) builds the
+On the finite free staggered carrier the runner (Part C) builds the
 number-conserving Hamiltonian `H = sum_{ij} (iM)_{ij} a_i^dag a_j` (Hermitian,
 since the staggered `M` is real antisymmetric so `iM` is Hermitian) on an exact
 finite fermionic Fock space, and verifies:
@@ -303,9 +306,11 @@ narrow theorem.
 action, per-site qubit carrier); (2) the retained abstract bilinear continuity
 theorem for the matrix-unit identities; (3) the finite-Grassmann/operator
 carrier (per-site `(chi_x, chibar_x)`, Fock dim 2, Berezin readout) from the
-retained substep-1 narrow theorem; (4) the admitted staggered Kawamoto-Smit
-carrier (open gate, named); (5) the physical number density
-`rho_x = chibar_x chi_x` as the U(1) charge density on that supplied exhibit.
+retained substep-1 narrow theorem; (4) the finite staggered Kawamoto-Smit
+nearest-neighbour exhibit constructed in this note and runner; (5) the onsite
+U(1) number-density operator `rho_x = chibar_x chi_x` on that finite CAR
+exhibit. The physical realization/readout identification of this exhibit is
+downstream and is not consumed here.
 No PDG, fitted, measured, lattice-MC, `beta = 6`, or `g_bare` value is consumed
 as a derivation input; the staggered carrier mass is an arbitrary positive
 bookkeeping constant.
@@ -325,6 +330,7 @@ surface, or any other row. The audit lane is the only status authority.
 
 ## Audit dependency repair links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+No load-bearing broad-gate dependency is recorded here. The prior
+staggered-realization parent link has been removed because the onsite/internal
+Noether theorem reconstructs the finite bilinear carrier/exhibit it needs and
+delegates only to retained abstract bilinear and substep-1 authorities.

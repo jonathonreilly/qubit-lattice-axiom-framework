@@ -1,0 +1,21 @@
+slug: staggered-realization-edge-decouple-20260615
+status: pr_ready
+target_status: audit_unblock
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+branch: physics-loop/staggered-realization-edge-decouple-20260615
+base: origin/main
+files_touched:
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md
+  - docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md
+  - docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md
+  - scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
+  - scripts/frontier_koide_taste_cube_cyclic_source_descent.py
+diagnostic_pipeline_effect:
+  audited_conditional: "27 -> 24"
+  audit_ready: "47 -> 50"
+  cycles: 0
+generated_audit_outputs_committed: false
+next_exact_action: "Open PR for reviewer/auditor handoff."
+stop_condition: "PR opened; independent audit/review decides verdicts."

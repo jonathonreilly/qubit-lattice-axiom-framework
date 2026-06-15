@@ -3,6 +3,10 @@
 **Date:** 2026-04-22
 **Claim type:** no_go
 **Status:** bounded negative attempt record for four named physical-bridge mechanisms; not a global no-go and not a retained-primitive proposal.
+**Runner:**
+[`scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py`](../scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py)
+**Runner cache:**
+[`logs/runner-cache/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.txt`](../logs/runner-cache/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.txt)
 **References:**
 - `origin/review/scalar-selector-cycle1-theorems`: KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS,
   KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE, KOIDE_Q_DELTA_CLOSURE_PACKAGE_README

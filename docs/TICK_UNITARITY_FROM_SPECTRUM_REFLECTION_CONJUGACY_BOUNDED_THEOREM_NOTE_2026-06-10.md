@@ -18,12 +18,17 @@ set, predict, promote, or demote any audit outcome.
 ## What this closes (relative to block01 and the dichotomy cycle)
 
 In the kinetic-isotropy retirement chain, block01
-([`KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md))
+(`KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md`)
 named **(P2) "unitarity of the realized one-tick update"** as a bare
 conditional reading, and the site-license dichotomy cycle
-([`STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md`](STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md))
+(`STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md`)
 discharged P3 and reduced P4 while still **assuming** the unitary tick in its
 setting. P2 is the surviving dynamical premise of the chain.
+
+These two references name the surrounding retirement chain and downstream
+consumers; they are not load-bearing authorities for the finite-dimensional
+characterization proved here. They are recorded as plain filenames so the
+source graph keeps the audit direction honest.
 
 This note replaces the bare unitarity postulate with an **exact
 characterization**: inside the physical-envelope class (invertible
@@ -181,12 +186,13 @@ note's own N7 steelman door; it does not contradict the support.
 - [CPT_EXACT_NOTE.md](CPT_EXACT_NOTE.md) — the retained `Theta_H`-odd
   Hamiltonian-sector identities (C-type `eps H eps = -H`; CPT-type
   `[Theta, H] = 0`); retained scope per its 2026-05-19 narrowing.
-- [KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md](KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md)
-  — block01: names P2, and its Part C/E2 witnesses are reused here; landed but
-  unaudited, so conditionality is inherited.
-- [STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md](STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md)
-  — the consumer: its "unitary tick" hypothesis is what this note grounds;
-  landed but unaudited, so conditionality is inherited.
+- `KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md`
+  — context source: it names P2, and its Part C/E2 witnesses are restated
+  here as hostile witnesses. This is not an upstream theorem premise for the
+  characterization.
+- `STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md`
+  — downstream consumer: its "unitary tick" hypothesis is what this note
+  grounds if this note later passes independent audit.
 - [KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
   — the target primitive of the retirement chain.
 - [KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md](KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md)

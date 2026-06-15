@@ -1,0 +1,25 @@
+loop: gravity-conditional-runner-sync-20260615
+status: ready_for_review
+goal: "Synchronize the gravity full-self-consistency runner with the narrowed conditional source note, then register and cache it for audit."
+target_status: bounded-support
+base: origin/main@c5a380aa801a160348c02afd7d84e0b6a64e0807
+branch: physics-loop/gravity-conditional-runner-sync-20260615
+current_surface_status: retained_bounded in generated audit state; source note is conditional bounded theorem
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: gravity_full_self_consistency_note
+target_blocker_text: "The critical retained-bounded row had runner_path null, no runner-cache artifact, and a live runner whose stdout still used pre-narrowing full-framework language."
+files_touched:
+  - docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md
+  - scripts/frontier_gravity_full_self_consistency.py
+  - logs/runner-cache/frontier_gravity_full_self_consistency.txt
+  - .claude/science/physics-loops/gravity-conditional-runner-sync-20260615/
+verification:
+  - "python3 -m py_compile scripts/frontier_gravity_full_self_consistency.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_gravity_full_self_consistency.py"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_gravity_full_self_consistency.py"
+  - "python3 docs/audit/scripts/build_citation_graph.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+pr_status: branch_package_ready
+next_exact_action: "Open PR and let the independent audit/review lane regenerate generated audit state."
+stop_condition: "PR opened with source note, runner, cache, and loop pack only."

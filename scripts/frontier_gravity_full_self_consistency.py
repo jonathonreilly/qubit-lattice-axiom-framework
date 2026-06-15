@@ -1,44 +1,36 @@
 #!/usr/bin/env python3
 """
-Full Self-Consistency Forces Poisson on the ENTIRE Framework Surface
-====================================================================
+Conditional Closure Identity Forces Poisson Downstream of A2
+============================================================
 
 CONTEXT:
-  The narrowed Poisson uniqueness theorem (frontier_gravity_poisson_derived.py)
-  proves Poisson is unique WITHIN the TI + self-adjoint + nearest-neighbor
-  operator class.  Codex's blocker: "only closes the narrowed TI + SA + NN
-  family.  The full self-consistency => Poisson step on the full framework
-  surface is still bounded."
+  The source note is a bounded conditional theorem.  It does not derive the
+  closure identification
 
-  The question: could a NON-nearest-neighbor operator L arise from the
-  framework's self-consistency loop?
+      A2: L^{-1} = G_0
 
-THE ARGUMENT (operator-level, not restricted to any class):
-  1. The Hamiltonian is H = -Delta_lat (NN hopping on Z^3).
-     This is the lattice structure, not an assumption about L.
+  from the Cl(3)-on-Z^3 axiom.  Instead it checks the exact downstream algebra:
+  if A2 is stipulated, then L = G_0^{-1} = H = -Delta_lat, and the nearest-
+  neighbor / translation-invariant / self-adjoint structure follows from that
+  identity.
+
+THE CONDITIONAL ARGUMENT:
+  1. The lattice Hamiltonian is H = -Delta_lat (NN hopping on Z^3).
   2. The propagator Green's function is G_0 = H^{-1}.
-  3. Self-consistency requires L^{-1} = G_0 (the field's Green's function
-     must equal the propagator's Green's function).
-  4. Therefore L = G_0^{-1} = H = -Delta_lat.
+  3. Stipulate A2: L^{-1} = G_0.
+  4. Then L = G_0^{-1} = H = -Delta_lat.
 
-  This does NOT assume L is NN.  It PROVES L = H, which happens to be NN
-  because the lattice has NN connectivity.  The NN restriction on L is a
-  CONSEQUENCE, not an assumption.
-
-  The argument is STRONGER than the narrowed uniqueness theorem: it does
-  not search over operator families.  It directly identifies L with H via
-  operator inversion.
+  This proves an exact class-A implication downstream of A2.  It is not an
+  axiom-first derivation of A2.
 
 CHECKS:
-  CHECK 1 (EXACT): G_0^{-1} = H algebraically (operator identity)
-  CHECK 2 (EXACT): H is nearest-neighbor (sparsity structure of H)
-  CHECK 3 (EXACT): L = G_0^{-1} is forced to be NN (consequence of 1+2)
-  CHECK 4 (EXACT): Self-consistency loop closure -- the full cycle
-    H -> G_0 -> rho -> L phi = -rho -> L = H is self-contained
-  CHECK 5 (EXACT): Non-NN perturbations break self-consistency
-    (adding NNN terms to L creates nonzero mismatch)
-  CHECK 6 (EXACT): The argument does not depend on translation invariance
-    or self-adjointness as ASSUMPTIONS -- these are CONSEQUENCES of L = H
+  CHECK 1 (EXACT GIVEN A2): G_0^{-1} = H algebraically.
+  CHECK 2 (EXACT GIVEN A2): H is nearest-neighbor.
+  CHECK 3 (EXACT GIVEN A2): L = H is TI and self-adjoint.
+  CHECK 4 (EXACT GIVEN A2): the Green-function identity closes when L = H.
+  CHECK 5 (EXACT GIVEN A2): non-NN perturbations violate the stipulated
+    closure identity.
+  CHECK 6 (EXACT GIVEN A2): dense inverse check confirms G_0^{-1} = H.
 
 PStack experiment: frontier-gravity-full-self-consistency
 """
@@ -136,11 +128,11 @@ def check_inverse_identity():
 
     G_0 = H^{-1}  =>  G_0^{-1} = H.
 
-    This is the key step: if self-consistency requires L^{-1} = G_0,
+    This is the key step: if stipulated A2 supplies L^{-1} = G_0,
     then L = G_0^{-1} = H = -Delta_lat.
 
-    No restriction on L is imposed.  The identity L = H is forced by
-    the self-consistency condition and the definition of G_0.
+    No restriction on L is imposed downstream of A2.  The identity L = H is
+    forced by A2 and the definition of G_0.  This check does not derive A2.
 
     We verify: H @ G_0 = I (on each column) and G_0^{-1} = H (on a
     dense subblock).
@@ -150,10 +142,10 @@ def check_inverse_identity():
     print("CHECK 1: G_0^{-1} = H (OPERATOR IDENTITY)")
     print("=" * 78)
     print()
-    print("  If self-consistency requires L^{-1} = G_0, then:")
+    print("  If stipulated A2 supplies L^{-1} = G_0, then:")
     print("    L = G_0^{-1} = H = -Delta_lat.")
     print("  This is an algebraic identity.  L is DETERMINED, not chosen.")
-    print("  No restriction to NN operators is imposed on L.")
+    print("  No restriction to NN operators is imposed downstream of A2.")
     print()
 
     N = 12
@@ -189,9 +181,9 @@ def check_inverse_identity():
     print()
     print("  INTERPRETATION: Since H @ G_0 = I to machine precision,")
     print("  we have G_0^{-1} = H = -Delta_lat.")
-    print("  If self-consistency requires L^{-1} = G_0, then L = G_0^{-1} = H.")
+    print("  If stipulated A2 supplies L^{-1} = G_0, then L = G_0^{-1} = H.")
     print("  This is not a search over operator families.")
-    print("  It is a direct algebraic determination of L.")
+    print("  It is a direct algebraic determination of L conditional on A2.")
 
     log_check(
         "G_0^{-1} = H = -Delta_lat (algebraic identity)",
@@ -213,8 +205,8 @@ def check_H_is_nn(A, M):
     the same site or nearest neighbors on Z^3.  This is the sparsity
     structure of the graph Laplacian.
 
-    The point: L = G_0^{-1} = H is forced to be NN.  But this is a
-    CONSEQUENCE of L = H, not an assumption imposed on L.
+    The point: conditional on A2, L = G_0^{-1} = H is forced to be NN.
+    This is a consequence of L = H, not an assumption imposed on L.
     """
     print()
     print("=" * 78)
@@ -264,8 +256,8 @@ def check_H_is_nn(A, M):
     print(f"  Maximum Manhattan distance of nonzero entry: {max_dist}")
     print()
     print("  INTERPRETATION: H has nonzeros ONLY on diagonal and NN sites.")
-    print("  Since L = G_0^{-1} = H, the operator L is necessarily NN.")
-    print("  The NN restriction on L is derived, not assumed.")
+    print("  Since A2 gives L = G_0^{-1} = H, the operator L is necessarily NN.")
+    print("  The NN restriction on L is derived from A2, not assumed.")
 
     log_check(
         "H = -Delta_lat has only diagonal and NN entries",
@@ -284,15 +276,14 @@ def check_H_is_nn(A, M):
 def check_ti_and_sa(A, M):
     """
     The narrowed uniqueness theorem assumed TI + SA + NN.
-    The full self-consistency argument shows L = H, which is automatically:
+    The conditional A2 argument shows L = H, which is automatically:
       - NN (CHECK 2)
       - Self-adjoint (H is symmetric)
       - Translation-invariant (H has the same stencil at every interior site)
 
     These are CONSEQUENCES of L = H, not assumptions on L.
-    The full framework surface does not need to be restricted to the
-    TI + SA + NN class; the self-consistency condition forces L into
-    this class automatically.
+    Downstream of stipulated A2, the argument does not need to restrict L to
+    the TI + SA + NN class; A2 determines L in this class automatically.
     """
     print()
     print("=" * 78)
@@ -300,7 +291,7 @@ def check_ti_and_sa(A, M):
     print("=" * 78)
     print()
     print("  The narrowed theorem assumed TI + SA + NN as restrictions on L.")
-    print("  The full argument shows L = H = -Delta_lat, which is")
+    print("  The conditional A2 argument shows L = H = -Delta_lat, which is")
     print("  automatically TI, SA, and NN.  These are consequences.")
     print()
 
@@ -370,7 +361,7 @@ def check_ti_and_sa(A, M):
     print("  INTERPRETATION: The narrowed theorem's assumptions (TI, SA, NN)")
     print("  are not restrictions on the search space for L.")
     print("  They are properties that L = H automatically possesses.")
-    print("  The full self-consistency argument does not need them as inputs.")
+    print("  The conditional A2 argument does not need them as inputs.")
 
 
 # ===========================================================================
@@ -379,7 +370,7 @@ def check_ti_and_sa(A, M):
 
 def check_loop_closure():
     """
-    THE FULL SELF-CONSISTENCY LOOP:
+    THE CONDITIONAL CLOSURE CHECK:
 
       propagator -> density -> field -> propagator
 
@@ -387,21 +378,20 @@ def check_loop_closure():
       1. Propagator: G_0 = H^{-1} = (-Delta)^{-1}    (from lattice structure)
       2. Density: rho(x) = G_0(x, x_0)^2 / Z          (localized source at x_0)
       3. Field: L phi = -rho  =>  phi = -L^{-1} rho
-      4. Self-consistency: the potential phi must reproduce the propagator
-         that generated rho.  At leading order this means L^{-1} = G_0.
+      4. Stipulated closure A2 identifies L^{-1} with G_0.
 
-    The loop closes if and only if L = G_0^{-1} = H.
+    Given A2, the Green-function identity closes if and only if
+    L = G_0^{-1} = H.
 
     We verify: starting from H, compute G_0, compute rho, solve for phi
     using L = H, and confirm the resulting phi is the Green's function
     of H (i.e., the loop is self-consistent).
 
-    Then we show: if L != H (e.g., L = H + epsilon * NNN), the loop
-    does NOT close (the resulting phi is NOT the Green's function of L).
+    Then we show: if L != H (e.g., L = H + epsilon * NNN), A2 is violated.
     """
     print()
     print("=" * 78)
-    print("CHECK 4: SELF-CONSISTENCY LOOP CLOSURE")
+    print("CHECK 4: STIPULATED CLOSURE IDENTITY")
     print("=" * 78)
     print()
 
@@ -445,7 +435,7 @@ def check_loop_closure():
     print()
     print("  INTERPRETATION: When L = H, the field's Green's function")
     print("  IS the propagator's Green's function.  The loop closes exactly.")
-    print("  L = H is not a choice -- it is the unique operator for which")
+    print("  Conditional on A2, L = H is the unique operator for which")
     print("  L^{-1} = G_0.")
 
     log_check(
@@ -465,22 +455,22 @@ def check_loop_closure():
 def check_nnn_breaks_consistency():
     """
     If L were allowed to have next-nearest-neighbor (NNN) terms, the
-    self-consistency loop would NOT close.
+    stipulated closure identity would NOT hold.
 
     We construct L_eps = H + eps * H_NNN, where H_NNN couples
     next-nearest-neighbor sites (diagonal neighbors on Z^3).
     Then L_eps^{-1} != G_0 = H^{-1}, and the mismatch is nonzero.
 
-    This demonstrates that the NN structure of L is not just "natural"
-    but is FORCED: any NNN contamination in L breaks the self-consistency.
+    This demonstrates that, once A2 is stipulated, any NNN contamination in L
+    violates the closure identity.
     """
     print()
     print("=" * 78)
-    print("CHECK 5: NON-NN PERTURBATIONS BREAK SELF-CONSISTENCY")
+    print("CHECK 5: NON-NN PERTURBATIONS VIOLATE A2")
     print("=" * 78)
     print()
     print("  If L had NNN terms, L^{-1} != G_0 = H^{-1}.")
-    print("  The self-consistency loop would not close.")
+    print("  The stipulated closure identity A2 would fail.")
     print()
 
     N = 12
@@ -544,7 +534,7 @@ def check_nnn_breaks_consistency():
     print(f"  Lattice: {N}^3, interior: {M}^3 = {n}")
     print(f"  NNN coupling: face-diagonal neighbors ({len(nnn_shifts)} directions)")
     print()
-    print(f"  {'epsilon':>10s} {'||L_eps^{-1} - G_0|| / ||G_0||':>35s} {'Self-consistent?':>17s}")
+    print(f"  {'epsilon':>10s} {'||L_eps^{-1} - G_0|| / ||G_0||':>35s} {'A2 holds?':>17s}")
     print("  " + "-" * 65)
 
     eps_values = [0.0, 0.001, 0.01, 0.05, 0.1, 0.2, 0.5]
@@ -572,7 +562,7 @@ def check_nnn_breaks_consistency():
     # All eps > 0 should give nonzero mismatch
     all_broken = all(m > 1e-4 for m in mismatches[1:])
     log_check(
-        "All eps > 0 (L != H): nonzero mismatch (NOT self-consistent)",
+        "All eps > 0 (L != H): nonzero mismatch (violates A2)",
         all_broken,
         exact=True,
         detail=f"min nonzero-eps mismatch = {min(mismatches[1:]):.2e}"
@@ -589,10 +579,10 @@ def check_nnn_breaks_consistency():
     )
 
     print()
-    print("  INTERPRETATION: ANY non-NN contamination in L breaks the")
-    print("  self-consistency condition L^{-1} = G_0 = H^{-1}.")
-    print("  The NN structure of L is not an assumption -- it is forced")
-    print("  by the requirement L = G_0^{-1} = H.")
+    print("  INTERPRETATION: ANY non-NN contamination in L violates")
+    print("  the stipulated closure identity L^{-1} = G_0 = H^{-1}.")
+    print("  The NN structure of L is not an assumption -- it follows")
+    print("  from A2 plus L = G_0^{-1} = H.")
 
 
 # ===========================================================================
@@ -606,7 +596,7 @@ def check_dense_inverse():
     and verify G_0^{-1} = H entry-by-entry.
 
     This is the most direct possible verification of the operator identity
-    L = G_0^{-1} = H.
+    L = G_0^{-1} = H, conditional on A2.
     """
     print()
     print("=" * 78)
@@ -648,7 +638,7 @@ def check_dense_inverse():
     print()
     print("  INTERPRETATION: G_0 is a DENSE matrix (long-range Green's function).")
     print("  But G_0^{-1} = H is SPARSE (nearest-neighbor only).")
-    print("  The self-consistency condition L^{-1} = G_0 forces L = G_0^{-1} = H,")
+    print("  The stipulated identity L^{-1} = G_0 gives L = G_0^{-1} = H,")
     print("  which is NN.  The NN structure of L is derived from the fact that")
     print("  the inverse of the long-range propagator is the short-range Hamiltonian.")
 
@@ -678,12 +668,12 @@ def check_dense_inverse():
 
 def check_argument_structure():
     """
-    Verify the logical structure of the full self-consistency argument.
+    Verify the logical structure of the conditional closure argument.
 
     The chain:
       1. Lattice Z^3 has NN connectivity  =>  H = -Delta_lat (NN)
       2. Propagator: G_0 = H^{-1}  (definition)
-      3. Self-consistency: L^{-1} = G_0  (physical requirement)
+      3. Stipulated A2: L^{-1} = G_0
       4. Therefore: L = G_0^{-1} = H = -Delta_lat  (algebra)
 
     Versus the narrowed theorem:
@@ -691,7 +681,7 @@ def check_argument_structure():
       2. Within this class, show Poisson is unique
       3. Conclude L = -Delta
 
-    The full argument does not use step 1 of the narrowed theorem.
+    The conditional argument does not use step 1 of the narrowed theorem.
     It derives TI + SA + NN as consequences, not assumptions.
     """
     print()
@@ -705,29 +695,29 @@ def check_argument_structure():
     print("    Output: Poisson is unique WITHIN the restricted class")
     print("    Gap: Could L be outside the TI + SA + NN class?")
     print()
-    print("  FULL SELF-CONSISTENCY ARGUMENT (this script):")
+    print("  CONDITIONAL A2 ARGUMENT (this script):")
     print("    Input: H = -Delta (from lattice structure)")
     print("    Input: G_0 = H^{-1} (propagator definition)")
-    print("    Input: Self-consistency requires L^{-1} = G_0")
+    print("    Input: stipulated A2, L^{-1} = G_0")
     print("    Output: L = G_0^{-1} = H = -Delta")
     print("    No restriction on L is imposed.")
     print("    TI, SA, NN are CONSEQUENCES of L = H.")
     print()
-    print("  WHY THE FULL ARGUMENT CLOSES THE GAP:")
+    print("  WHAT THE CONDITIONAL ARGUMENT CLOSES:")
     print("    The narrowed theorem asks: 'Is Poisson unique in a class?'")
-    print("    The full argument asks: 'What is L?' and answers: 'L = H.'")
-    print("    There is no class to restrict to.  L is determined uniquely")
-    print("    by the self-consistency condition and the lattice structure.")
+    print("    This conditional check asks: 'If A2 holds, what is L?'")
+    print("    It answers: 'L = H.'  There is no class to restrict to")
+    print("    downstream of the stipulated closure identity.")
     print()
     print("  THE KEY INSIGHT:")
     print("    The propagator G_0 on Z^3 has a unique inverse: H = -Delta.")
-    print("    Self-consistency L^{-1} = G_0 determines L = G_0^{-1} = H.")
-    print("    This is not a search.  It is an algebraic identity.")
+    print("    Stipulated A2 determines L = G_0^{-1} = H.")
+    print("    This is not a search.  It is a conditional algebraic identity.")
 
     # This check is structural -- it passes if all previous checks passed
     all_prev = (FAIL_COUNT == 0)
     log_check(
-        "All previous checks support the full self-consistency argument",
+        "All previous checks support the conditional A2 algebra",
         all_prev,
         exact=True,
         detail=f"PASS={PASS_COUNT}, FAIL={FAIL_COUNT} at this point"
@@ -742,24 +732,23 @@ def main():
     t_start = time.time()
 
     print("=" * 78)
-    print("FULL SELF-CONSISTENCY FORCES POISSON")
-    print("(on the ENTIRE framework surface, not just the NN class)")
+    print("CONDITIONAL CLOSURE IDENTITY DETERMINES POISSON")
+    print("(downstream of stipulated A2: L^{-1} = G_0)")
     print("=" * 78)
     print()
-    print("CODEX BLOCKER: The narrowed Poisson uniqueness theorem closes")
-    print("only the TI + SA + NN family.  Could a non-NN operator arise")
-    print("from the framework's self-consistency loop?")
+    print("SCOPE: This runner checks the exact algebra downstream of")
+    print("stipulated closure identity A2. It does not derive A2 from")
+    print("the Cl(3)-on-Z^3 axiom.")
     print()
-    print("ANSWER: No.  The self-consistency condition L^{-1} = G_0")
-    print("forces L = G_0^{-1} = H = -Delta_lat.  This is an algebraic")
-    print("identity that does not restrict L to any class.  It determines")
-    print("L uniquely.  The NN structure of L is a consequence, not an")
-    print("assumption.")
+    print("CONDITIONAL ANSWER: If A2 supplies L^{-1} = G_0, then")
+    print("L = G_0^{-1} = H = -Delta_lat.  This is an algebraic")
+    print("identity downstream of A2.  The NN structure of L is a")
+    print("consequence, not an assumption.")
     print()
     print("THE CHAIN:")
     print("  (1) Z^3 has NN connectivity  =>  H = -Delta_lat")
     print("  (2) Propagator: G_0 = H^{-1}")
-    print("  (3) Self-consistency: L^{-1} = G_0  (field Green's fn =")
+    print("  (3) Stipulated A2: L^{-1} = G_0  (field Green's fn =")
     print("      propagator Green's fn)")
     print("  (4) Therefore: L = G_0^{-1} = H = -Delta_lat  (Poisson)")
     print()
@@ -783,50 +772,46 @@ def main():
     dt = time.time() - t_start
     print()
     print("=" * 78)
-    print("SYNTHESIS: FULL SELF-CONSISTENCY ARGUMENT")
+    print("SYNTHESIS: CONDITIONAL A2 ALGEBRA")
     print("=" * 78)
     print()
-    print("The Poisson equation is derived on the FULL framework surface:")
+    print("Conditional on A2, the Poisson operator follows exactly:")
     print()
     print("  Step 1: Z^3 lattice structure  =>  H = -Delta_lat (NN hopping)")
     print("  Step 2: Propagator definition   =>  G_0 = H^{-1}")
-    print("  Step 3: Self-consistency         =>  L^{-1} = G_0")
+    print("  Step 3: stipulated A2            =>  L^{-1} = G_0")
     print("  Step 4: Algebra                  =>  L = G_0^{-1} = H = -Delta")
     print()
-    print("No restriction on L is imposed at any step.")
+    print("No restriction on L is imposed downstream of A2.")
     print("The properties of L (NN, TI, SA) are CONSEQUENCES of L = H.")
     print()
-    print("This resolves Codex's blocker: the full self-consistency condition")
-    print("does not merely select Poisson from the NN class.  It FORCES the")
-    print("field operator to equal the Hamiltonian, which IS the Laplacian,")
-    print("which IS nearest-neighbor.  A non-NN operator CANNOT arise from")
-    print("the self-consistency loop because L = G_0^{-1} = H, and H is NN")
-    print("by the lattice structure.")
+    print("This resolves the downstream operator-class question conditional on A2:")
+    print("the closure identity does not merely select Poisson from the NN class.")
+    print("It identifies the field operator with the Hamiltonian, which is the")
+    print("graph Laplacian and is nearest-neighbor by lattice structure.")
     print()
     print("RELATION TO THE NARROWED THEOREM:")
     print("  The narrowed theorem proves: 'Within TI+SA+NN, only Poisson works.'")
-    print("  The full argument proves:    'L = H = -Delta, period.'")
-    print("  The full argument subsumes the narrowed theorem.")
+    print("  This runner proves:          'Given A2, L = H = -Delta.'")
+    print("  It does not derive A2 itself.")
     print()
     print("REMAINING HONEST CAVEAT:")
-    print("  The self-consistency condition 'L^{-1} = G_0' is the statement")
+    print("  The closure condition 'L^{-1} = G_0' is the statement")
     print("  that the field's Green's function equals the propagator's Green's")
-    print("  function.  This is a physically motivated requirement, not an")
-    print("  axiom.  The AXIOM is 'Cl(3) on Z^3'.  The CLOSURE CONDITION is")
-    print("  self-consistency.  The DERIVED RESULT is L = -Delta (Poisson).")
+    print("  function.  This runner stipulates that identity as A2 and checks")
+    print("  the downstream algebra.  It does not derive A2 from the axiom.")
     print()
 
     # Status
     total = PASS_COUNT + FAIL_COUNT
-    print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}  BOUNDED={BOUNDED_COUNT}  "
-          f"(of {total} checks)")
+    print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}  CONDITIONAL_ALGEBRA_CHECKS={total}")
     print(f"Runtime: {dt:.1f}s")
 
     if FAIL_COUNT > 0:
         print("\nWARNING: Some checks failed. See above for details.")
         sys.exit(1)
     else:
-        print("\nAll checks passed (all EXACT, zero BOUNDED).")
+        print("\nAll checks passed (exact conditional algebra downstream of A2).")
         sys.exit(0)
 
 

@@ -11,6 +11,10 @@ not an unconditional derivation.
 **Date:** 2026-04-14 (audit-narrowing refresh: 2026-05-10)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
+**Runner:**
+[`scripts/frontier_gravity_full_self_consistency.py`](../scripts/frontier_gravity_full_self_consistency.py)
+**Runner cache:**
+[`logs/runner-cache/frontier_gravity_full_self_consistency.txt`](../logs/runner-cache/frontier_gravity_full_self_consistency.txt)
 
 ## Status
 

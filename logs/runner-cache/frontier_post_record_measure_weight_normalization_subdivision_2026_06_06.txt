@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
-runner_sha256: 0dbb6228031d4b5d5d0b8dfe99a1fd327be32b4a44054f8803a56a6bbd7472d0
+runner_sha256: a1c3d42e047959816ced65a0b9866b488594980d618015ba4fcd1f18bbaafb08
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.28
+elapsed_sec: 1.01
 status: ok
 ----- stdout -----
 
@@ -11,14 +11,17 @@ status: ok
 Source-anchor checks
 ------------------------------------------------------------------------------
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: **Claim type:** bounded_theorem
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: finite supplied-weight normalization lemma
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Normalized measure is not selected dial.
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Finite normalization can certify
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Record-to-carrier/weight/normalization bridge remains outside this row
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Does not select or force a generation/Koide dial location
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: outputs/post_record_measure_weight_normalization_slice_2026_06_07.json
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization` | 60
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization` | 67
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure/weight/normalization rows
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
 PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py exists
@@ -47,20 +50,20 @@ PASS selector rule is still needed for selected dial readiness
 ------------------------------------------------------------------------------
 Measure/weight row checks
 ------------------------------------------------------------------------------
-PASS measure/weight row count is current snapshot :: 60
-PASS measure lane counts match expected :: Counter({'source_measure_or_rn_bridge': 16, 'character_path_channel_weight': 12, 'selector_tangent_readout_weight': 11, 'generic_measure_weight_import': 11, 'trace_normalization_reference': 10})
-PASS measure lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 16, 'character_path_channel_weight': 12, 'selector_tangent_readout_weight': 11, 'generic_measure_weight_import': 11, 'trace_normalization_reference': 10})
+PASS measure/weight row count is current snapshot :: 67
+PASS measure lane counts match expected :: Counter({'source_measure_or_rn_bridge': 16, 'character_path_channel_weight': 14, 'generic_measure_weight_import': 14, 'selector_tangent_readout_weight': 13, 'trace_normalization_reference': 10})
+PASS measure lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 16, 'character_path_channel_weight': 14, 'generic_measure_weight_import': 14, 'selector_tangent_readout_weight': 13, 'trace_normalization_reference': 10})
 PASS representative row present in character_path_channel_weight :: architecture_note_directional_measure
 PASS representative row present in generic_measure_weight_import :: born_scattering_comparison_note
 PASS representative row present in selector_tangent_readout_weight :: yt_exact_hessian_selector_uniqueness_note
 PASS representative row present in source_measure_or_rn_bridge :: source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30
 PASS representative row present in trace_normalization_reference :: pre_record_reference_state_tracial_derivation_note_2026-05-20
-PASS audit ledger hash is unchanged :: c4964a58b7c9459991e0f6a9c4908526ba4a238a40e4a4b1df51d3f9ddde12c7
+PASS audit ledger hash is unchanged :: a2de3b7512118d206d90efce05be59ac8d4dc25e22244067248414c5348b09e9
 
 Measure/weight lane counts:
-  character_path_channel_weight: 12
-  generic_measure_weight_import: 11
-  selector_tangent_readout_weight: 11
+  character_path_channel_weight: 14
+  generic_measure_weight_import: 14
+  selector_tangent_readout_weight: 13
   source_measure_or_rn_bridge: 16
   trace_normalization_reference: 10
 
@@ -69,36 +72,36 @@ Measure/weight lane counts:
   architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
   closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c | unaudited | unaudited | bounded_theorem | docs/CLOSURE_C_L1_PER_GRAPH_CASIMIR_NOTE_2026-05-10_cL1c.md
   continuum_limit_note | audited_clean | retained_bounded | bounded_theorem | docs/CONTINUUM_LIMIT_NOTE.md
-  dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md
+  dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md
+  gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md
+  gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_TWO_STRIP_ENVIRONMENT_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-12.md
   hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26 | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_ALPHA_BARE_FOUR_PI_CONTINUUM_MEASURE_CONTENT_ATTRIBUTION_BOUNDED_NOTE_2026-05-26.md
   koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological | unaudited | unaudited | bounded_theorem | docs/KOIDE_S_L1_TOPOLOGICAL_CHERN_SIMONS_NOTE_2026-05-08_probeS_L1_topological.md
   koide_v_l1_quartic_casimir_beta2_note_2026-05-08_probev_l1_quartic | unaudited | unaudited | bounded_theorem | docs/KOIDE_V_L1_QUARTIC_CASIMIR_BETA2_NOTE_2026-05-08_probeV_L1_quartic.md
-  quark_route2_e_center_lift_measured_calibration_narrow_theorem_note_2026-06-10 | unaudited | unaudited | bounded_theorem | docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md
-  reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06 | audited_conditional | audited_conditional | bounded_theorem | docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
 
 [generic_measure_weight_import]
   born_scattering_comparison_note | unaudited | unaudited | bounded_theorem | docs/BORN_SCATTERING_COMPARISON_NOTE.md
   central_band_born_dense_sweep_note | audited_clean | retained_bounded | bounded_theorem | docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md
+  erosion_rate_table_no_tested_closed_form_bounded_theorem_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/EROSION_RATE_TABLE_NO_TESTED_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md
+  harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md
   kcpt_orbit_clause_kinvariant_surface_equivalence_narrow_theorem_note_2026-06-10 | unaudited | unaudited | bounded_theorem | docs/KCPT_ORBIT_CLAUSE_KINVARIANT_SURFACE_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-06-10.md
   koide_aps_block_by_block_forcing_note_2026-04-21 | audited_clean | retained_bounded | bounded_theorem | docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md
   linear_response_second_order_kubo_note | audited_clean | retained_pending_chain | bounded_theorem | docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md
-  magnitude_temporal_factor_is_count_not_rate_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md
   massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28 | audited_clean | retained_bounded | bounded_theorem | docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md
+  no_recovery_intermediate_budget_efficiency_bounded_theorem_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/NO_RECOVERY_INTERMEDIATE_BUDGET_EFFICIENCY_BOUNDED_THEOREM_NOTE_2026-06-12.md
   staggered_dirac_exercise_honest_reassessment_note_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/STAGGERED_DIRAC_EXERCISE_HONEST_REASSESSMENT_NOTE_2026-06-06.md
-  theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10 | unaudited | unaudited | bounded_theorem | docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md
-  tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09 | audited_clean | retained_bounded | bounded_theorem | docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md
 
 [selector_tangent_readout_weight]
   alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26 | unaudited | unaudited | bounded_theorem | docs/ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md
   dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md
   hierarchy_bosonic_bilinear_selector_note | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md
   hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_DELTA0_S1_EXACT_ONE_LINK_STRONG_COUPLING_PROBE_NOTE_2026-06-11.md
-  hierarchy_formula_honest_status_note_2026-05-10 | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
+  hierarchy_formula_honest_status_note_2026-05-10 | audited_conditional | audited_conditional | bounded_theorem | docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
   higgs_taste_singlet_projection_bounded_note_2026-05-09 | unaudited | unaudited | bounded_theorem | docs/HIGGS_TASTE_SINGLET_PROJECTION_BOUNDED_NOTE_2026-05-09.md
   lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md
   observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md
-  teleportation_preparation_readout_probe_note | unaudited | unaudited | bounded_theorem | docs/TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md
-  theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11 | audited_conditional | audited_conditional | bounded_theorem | docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  spin_statistics_fs_admission_located_exercise_note_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md
+  strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md
 
 [source_measure_or_rn_bridge]
   higgs_x_s4b_combined_higgs_ewsb_g2_note_2026-05-08_probex_s4b_combined | unaudited | unaudited | bounded_theorem | docs/HIGGS_X_S4B_COMBINED_HIGGS_EWSB_G2_NOTE_2026-05-08_probeX_S4b_combined.md
@@ -114,12 +117,12 @@ Measure/weight lane counts:
 
 [trace_normalization_reference]
   busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
-  gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_bounded_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md
   gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17 | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md
   gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md
   hierarchy_delta0_b4_attachment_observable_enumeration_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md
   inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20 | audited_clean | retained_bounded | bounded_theorem | docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md
   magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md
+  magnitude_temporal_factor_is_count_not_rate_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md
   observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21 | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_PRE_RECORD_TRACIAL_ROUTE_NARROW_NOTE_2026-05-21.md
   pre_record_reference_state_tracial_derivation_note_2026-05-20 | audited_clean | retained_bounded | bounded_theorem | docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md
   r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08 | audited_clean | retained_pending_chain | bounded_theorem | docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md
@@ -130,9 +133,9 @@ Bounded ledger-row export checks
 ------------------------------------------------------------------------------
 PASS bounded measure/weight row export exists :: outputs/post_record_measure_weight_normalization_slice_2026_06_07.json
 PASS slice export is for the measure/weight bucket
-PASS slice export records current ledger sha :: c4964a58b7c9459991e0f6a9c4908526ba4a238a40e4a4b1df51d3f9ddde12c7
-PASS slice export row count matches current split :: 60
-PASS slice export lane counts match current split :: {'character_path_channel_weight': 12, 'generic_measure_weight_import': 11, 'selector_tangent_readout_weight': 11, 'source_measure_or_rn_bridge': 16, 'trace_normalization_reference': 10}
+PASS slice export records current ledger sha :: a2de3b7512118d206d90efce05be59ac8d4dc25e22244067248414c5348b09e9
+PASS slice export row count matches current split :: 67
+PASS slice export lane counts match current split :: {'character_path_channel_weight': 14, 'generic_measure_weight_import': 14, 'selector_tangent_readout_weight': 13, 'source_measure_or_rn_bridge': 16, 'trace_normalization_reference': 10}
 PASS slice export rows match independently enumerated regex split
 
 ------------------------------------------------------------------------------
@@ -148,11 +151,11 @@ PASS Record-derived measure/prior flag is false
 PASS Record-derived Born law flag is false
 PASS production dynamics derived flag is false
 
-SUMMARY: PASS=53 FAIL=0
-MEASURE_WEIGHT_NORMALIZATION_ROWS=60
-CHARACTER_PATH_CHANNEL_WEIGHT_ROWS=12
-GENERIC_MEASURE_WEIGHT_IMPORT_ROWS=11
-SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=11
+SUMMARY: PASS=56 FAIL=0
+MEASURE_WEIGHT_NORMALIZATION_ROWS=67
+CHARACTER_PATH_CHANNEL_WEIGHT_ROWS=14
+GENERIC_MEASURE_WEIGHT_IMPORT_ROWS=14
+SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=13
 SOURCE_MEASURE_OR_RN_BRIDGE_ROWS=16
 TRACE_NORMALIZATION_REFERENCE_ROWS=10
 AUDIT_LEDGER_WRITTEN=FALSE

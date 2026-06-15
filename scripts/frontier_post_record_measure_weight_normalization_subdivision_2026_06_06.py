@@ -46,9 +46,9 @@ SELECTOR_TANGENT_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "character_path_channel_weight": 12,
-    "generic_measure_weight_import": 11,
-    "selector_tangent_readout_weight": 11,
+    "character_path_channel_weight": 14,
+    "generic_measure_weight_import": 14,
+    "selector_tangent_readout_weight": 13,
     "source_measure_or_rn_bridge": 16,
     "trace_normalization_reference": 10,
 }
@@ -109,9 +109,12 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
+            "**Claim type:** bounded_theorem",
+            "finite supplied-weight normalization lemma",
             "measure_weight_normalization",
             "Normalized measure is not selected dial.",
             "Finite normalization can certify",
+            "Record-to-carrier/weight/normalization bridge remains outside this row",
             "Does not select or force a generation/Koide dial location",
             "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
             "outputs/post_record_measure_weight_normalization_slice_2026_06_07.json",
@@ -120,7 +123,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "measure_weight_normalization` | 60",
+            "measure_weight_normalization` | 67",
             "measure/weight/normalization rows",
             "Does not turn stable settings into selected dials.",
         ],

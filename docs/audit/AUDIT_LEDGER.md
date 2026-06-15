@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 918 |
+| **retained_bounded** | 919 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1504 |
+| unaudited | 1503 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1352 |
+| `audited_clean` | 1353 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1821 |
+| `unaudited` | 1820 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 533 |
-| `high` | 509 |
-| `medium` | 888 |
+| `high` | 508 |
+| `medium` | 889 |
 | `leaf` | 1381 |
 
 - **Retained pending chain closure:** 4
@@ -1285,6 +1285,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `su3_adjoint_casimir_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -18309,6 +18310,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substitute N_W = (N_color + 1) * N_gen, n_S^complex_components = 2, T(F) = 1/2, and C_2(adj SU(2)) = N_pair into the stated one-loop beta formula to obtain b_2 = (11/3) N_pair - (1/3)(N_color + 1)N_gen - 1/6.  _(class `A`)_
 - **chain closes:** True — Given the scoped inputs, the closed form and framework value follow by direct rational arithmetic. The cited one-hop authorities in the packet are retained-grade or retained_bounded, and the runner confirms the algebra symbolically.
 - **rationale:** The load-bearing step is a genuine algebraic identity check over the stated inputs, not a renaming, numerical fit, or comparator match. The runner source actually constructs the symbolic expression from the stated beta formula and performs exact sympy simplifications plus rational framework substitution. No missing helper source or hard-coded-only pass path is present.
+- **auditor confidence:** high
+
+### `su3_adjoint_casimir_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Purely algebraic SU(3) statement in Gell-Mann normalization: the adjoint generators T_adj^a = -i f^{abc} satisfy C2(adj)=3 I_8 and C2(adj)/C2(fund)=9/4, with physical gluon and QCD readouts excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-220243-8bcc98dfe7-su3_adjoint_casimir_theorem_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The load-bearing step is the trace identity Tr[T_adj^a T_adj^b] = sum_{c,d} f^{acd} f^{bcd} = N delta^{ab} = 3 delta^{ab}, which fixes the adjoint Casimir eigenvalue by tracing C2(adj).  _(class `A`)_
+- **chain closes:** True — The chain closes for the bounded algebraic scope: the retained-bounded cited authority supplies SU(3) with Tr(T^a T^b)=1/2 delta^{ab} and f^{abc}, and standard adjoint/Jacobi algebra gives the adjoint representation. The SU(3) trace identity gives C_A=3, centrality plus irreducibility/direct scalarity gives C2(adj)=c I_8, and the trace fixes c=3 without using the deferred physical-color bridge.
+- **rationale:** The cited authority is retained_bounded and is used only for the algebraic SU(3) normalization; its open physical-color identification is not load-bearing for this scoped claim. Independent factor checks give Hermitian T_adj=-i f, Tr(T_adj^a T_adj^b)=sum f^{acd}f^{bcd}=3 delta^{ab}, Tr C2=8*3, C2(fund)=4/3, and ratio 9/4. The runner computes f from lambda/2 and builds the adjoint matrices rather than merely printing constants; the hard-coded expected values are comparison targets, not the derivation source.
 - **auditor confidence:** high
 
 ### `su3_bridge_pr525_flaw_fix_note_2026-05-05`

@@ -47,11 +47,12 @@ free staggered Dirac operator built in Parts C and D is an admitted-carrier
 exhibit only (no measured input); its mass is an arbitrary positive bookkeeping
 constant.
 
-2026-06-07 boundary repair: the paired source note now cites the retained
-abstract bilinear continuity theorem as the authority for the carrier-free
-matrix-unit identities. This runner keeps the replay as a guardrail and checks
-that the source note does not promote the supplied staggered/Kawamoto-Smit
-exhibit into a derived carrier/readout theorem.
+2026-06-15 boundary repair: the paired source note cites retained authorities
+only for the carrier-free matrix-unit identities and retained finite-Grassmann
+surface. This runner keeps the replay as a guardrail and checks that the
+source note does not promote the supplied staggered/Kawamoto-Smit exhibit into
+a derived carrier/readout theorem or create a markdown dependency edge to the
+conditional realization gate.
 
 Each check prints [PASS]/[FAIL]; the script prints a final
 'TOTAL: N PASS / 0 FAIL' line and exits nonzero on any failure.
@@ -529,14 +530,18 @@ def main() -> int:
     ).read_text()
     required_terms = [
         "2026-06-07 authority split",
+        "Dependency-Graph Firewall",
         "AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06",
         "physical density/readout bridge are not derived here",
         "supplied staggered/Kawamoto-Smit exhibit",
+        "no markdown link",
+        "row-local supplied exhibit",
     ]
     banned_terms = [
         "derives the admitted staggered",
         "derives the Kawamoto-Smit",
         "framework-native staggered carrier",
+        "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)",
     ]
     boundary_ok = all(term in note for term in required_terms) and not any(
         term in note for term in banned_terms

@@ -2,6 +2,9 @@
 
 **Date:** 2026-04-03  
 **Status:** bounded refinement stack explored
+**Claim type:** bounded_theorem
+**Runner:** [`scripts/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.py`](../scripts/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.py)
+**Runner cache:** [`logs/runner-cache/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.txt`](../logs/runner-cache/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.txt)
 
 ## Purpose
 

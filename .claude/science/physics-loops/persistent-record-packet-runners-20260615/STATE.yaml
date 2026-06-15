@@ -1,0 +1,23 @@
+loop: persistent-record-packet-runners-20260615
+goal: "Register correct bounded CLI runner packets for persistent-record side-bit and refinement rows."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+target_claim_id: "persistent_record_sidebit_note + persistent_record_refinement_note"
+target_blocker_text: "Both audited clean retained_bounded rows had runner_path null; the default matched-compare cache did not exercise the quoted side-bit/refinement method surfaces."
+source_of_blocker_text: audit_ledger
+reachability_to_target: closes
+artifact_role: runner_certificate
+files_touched:
+  - docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md
+  - docs/PERSISTENT_RECORD_REFINEMENT_NOTE.md
+  - scripts/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.py
+  - logs/runner-cache/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.txt
+verification:
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh --tail-chars 8000 scripts/audit_companion_persistent_record_sidebit_refinement_packet_2026_06_15.py"
+  - "python3 docs/audit/scripts/build_citation_graph.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+pipeline_result: "pass; hard invalidations 0; audit_lint errors 0; local ready count 3"
+pr_status: pending
+next_exact_action: "Open review PR against main."
+stop_condition: "Review PR opened."

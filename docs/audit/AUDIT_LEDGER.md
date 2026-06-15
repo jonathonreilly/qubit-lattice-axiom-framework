@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 906 |
+| **retained_bounded** | 907 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1445 |
+| unaudited | 1444 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1356 |
+| `audited_clean` | 1357 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1762 |
+| `unaudited` | 1761 |
 
 | claim_type | count |
 |---|---:|
@@ -610,6 +610,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_susceptibility_flow_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -8529,6 +8530,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Differentiating the retained implicit reduction law P_L(beta)=P_1plaq(beta_eff,L(beta)) gives chi_L(beta)=chi_1plaq(beta_eff,L(beta))*beta_eff,L'(beta), hence beta_eff,L'(beta)=chi_L(beta)/chi_1plaq(beta_eff,L(beta)).  _(class `A`)_
 - **chain closes:** True — The scoped theorem follows by algebraic differentiation and integration of retained inputs plus the susceptibility definitions. The explicit closed form for chi_L(beta) and beta=6 closure are explicitly outside the audited claim scope.
 - **rationale:** The load-bearing step is a genuine algebraic consequence of the retained implicit reduction theorem and the positivity of the one-plaquette susceptibility. The mixed-cumulant authority supplies the retained beta^5 onset coefficient, whose differentiation gives the stated beta^4 susceptibility coefficient. The runner's theorem checks are algebraic/imported-coefficient checks; its canonical plaquette inverse checks use a hard-coded support value but are non-load-bearing for this bounded theorem.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SYMMETRIZED_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SYMMETRIZED_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite beta=6 B4/MODE_MAX=80 conjugate-symmetrized SU(3) k=2 window readout, using source NMAX=7/MODE_MAX=200 and adding fundamental plus antifundamental branch bonds at equal Wilson coefficient.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-114307-0e41fa4b7c-gauge_vacuum_plaquette_symme`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The two orientation branch bonds are added linearly as B_sym = B_0 + (c_fund(6)/c_0(6)) B_f + (c_antifund(6)/c_0(6)) B_fbar, and the finite W44 k=2 Perron/source readout gives P = 0.443437364621406 with displacement -5.933469587874829e-03.  _(class `C`)_
+- **chain closes:** True — The retained bounded inputs supply the finite Wilson coefficients, SU(3) fusion/CG construction, adjacent inverse-dimension bond, and source Perron readout surface. The runner source computes the new antifundamental branch, verifies the 56^2 support, 1/9 projector factor, conjugation relation, and then performs the finite direct power solve; full physical rim/slab and adjoint-channel questions are explicitly outside the audited scope.
+- **rationale:** The load-bearing number is not imported from an external comparator or tuned scale; it is produced by an explicit finite matrix/Perron computation from retained bounded packet ingredients. Independent checks of the displayed normalizations agree with the packet data: c_fund/c_0 = 3 a_(1,0), c_(1,1)/c_0 = 8 a_(1,1), the B4 branch support is 56 x 56 = 3136, and the phase-insensitive singlet-projector factor reduces to 1/9. The note’s open residuals are not used to promote the result beyond this finite bounded surface.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`

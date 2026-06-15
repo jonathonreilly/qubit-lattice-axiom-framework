@@ -51474,7 +51474,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+      "to": "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26"
     },
     {
       "from": "repo.front_door_status",
@@ -51498,11 +51498,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_route2_exact_time_coupling_note_2026-04-19"
+      "to": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07"
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
+      "to": "quark_route2_exact_time_coupling_note_2026-04-19"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26",
         "cl3_color_automorphism_theorem",
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
         "lorentz_kernel_positive_closure_note",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "quark_route2_exact_time_coupling_note_2026-04-19",
-        "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
+        "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+        "quark_route2_exact_time_coupling_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "31034b6094ddd44d490c51e0f4a7b9cdee2b7b6c58abe9f3424bb85b517ec14e",
+      "note_hash": "11c30c5a02b641dc0fde9b65442a03c93363b86e12bc9ecb13474dfac88c5845",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 905 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1537 |
+| unaudited | 1536 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 7 |
+| ~~audited_conditional~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1332 |
-| `audited_conditional` | 7 |
+| `audited_conditional` | 8 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1854 |
+| `unaudited` | 1853 |
 
 | claim_type | count |
 |---|---:|
@@ -102,22 +102,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1009 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1032 | 50.51 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1120 | 47.63 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 891 | 45.30 | `unaudited` | unaudited |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 890 | 45.30 | `unaudited` | unaudited |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
-| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 815 | 43.67 | `audited_clean` | **retained_bounded** |
+| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 814 | 43.67 | `audited_clean` | **retained_bounded** |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 903 | 42.32 | `unaudited` | unaudited |
 | 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.95 | `unaudited` | unaudited |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 877 | 39.78 | `unaudited` | unaudited |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 876 | 39.78 | `unaudited` | unaudited |
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 38.66 | `unaudited` | unaudited |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 967 | 38.42 | `audited_clean` | **retained_bounded** |
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 739 | 37.03 | `unaudited` | unaudited |
 | 19 | `cpt_exact_note` | positive_theorem | critical | 1077 | 36.57 | `audited_clean` | **retained** |
-| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 894 | 35.81 | `unaudited` | unaudited |
+| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 894 | 36.31 | `unaudited` | unaudited |
 | 21 | `three_generation_structure_note` | bounded_theorem | critical | 1088 | 35.59 | `audited_clean` | **retained_bounded** |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 736 | 35.53 | `unaudited` | unaudited |
 | 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 332 | 34.88 | `unaudited` | unaudited |
@@ -1467,6 +1467,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2004,6 +2005,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The stated four primitives admit the seven listed distinct kernels, all passing the primitive checks while producing different transverse moments, so w(theta) is not uniquely determined on that surface.  _(class `C`)_
 - **chain closes:** True — The runner constructs multiple admissible angular kernels, checks the primitive properties, and computes distinct second and fourth transverse moments. The no-go is correctly bounded because it does not rule out adding a higher-order isotropy, Lagrangian, or observable-matching axiom.
 - **rationale:** The load-bearing negative result is an explicit counterexample family, not a definition, renaming, or tuned numerical match. The supplied retained-grade authorities support the routing clarification that the boost lane is on the staggered/Laplacian carrier rather than the directional-measure kernel. Some runner checks are narrative summaries, but the computed witness family and fixed-carrier checks are sufficient for the bounded audited scope.
+- **auditor confidence:** high
+
+### `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded conditional bridge from the supplied ABJ premise, LH/RH anomaly arithmetic, and a valid Clifford chirality carrier to d_t in the positive odd integers; not a derivation of ABJ or d_t=1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-190026-eec3cd037a-anomaly_forces_time_abj_inco`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** (B4) The SU(2)-singlet RH completion is chirally distinct from LH doublets, so a chirality operator gamma_5 satisfying gamma_5^2=I and anticommuting with all gamma_mu must exist on the carrying spacetime representation.  _(class `B`)_
+- **chain closes:** False — The rational anomaly arithmetic and parity step check out if the quoted hypercharge content and gamma_5 premise are supplied. The restricted one-hop packet does not supply those inputs: NATIVE_GAUGE_CLOSURE_NOTE explicitly excludes the U(1)_Y/matter-completion surface, and the staggered authority proves a bounded Kawamoto-Smit phase carrier rather than the required spacetime gamma_5 bridge.
+- **rationale:** Independent arithmetic agrees with the displayed anomaly traces and cancellations: the LH traces are 0, -16/9, 1/3, 0, 2, and the stated RH charges cancel them in the usual signed convention. But the cited NATIVE_GAUGE_CLOSURE_NOTE says it excludes the abelian eigenvalue surface, anomaly-complete U(1)_Y, and matter-completion labels that B1/B3 claim it supplies; the runner hard-codes these charges rather than verifying them from that authority. The packet also does not close the bridge from gauge left/right distinction or staggered epsilon anticommutation to a gamma_5 operator satisfying the full spacetime Clifford anticommutation premise. Therefore the theorem remains conditional on missing upstream dependency/bridge content.
+- **open / conditional deps cited:**
+  - `NATIVE_GAUGE_CLOSURE_NOTE.md`
+  - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
 - **auditor confidence:** high
 
 ### `architecture_note_directional_measure`

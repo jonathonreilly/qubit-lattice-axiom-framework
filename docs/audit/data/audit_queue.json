@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 283,
+    "critical": 282,
     "high": 287,
     "leaf": 482,
     "medium": 466
@@ -8,33 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-      "claim_scope": "Two algebraic bridges only: the structural free-naive d=4 Brillouin-zone taste count and the Berezin/tadpole-mean-field W(J) curvature form under the explicit mean-field block; no physical Higgs-mass claim or full non-mean-field spectrum is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
-        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
-        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.511,
-      "note_path": "docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py",
-      "transitive_descendants": 257
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -8206,15 +8179,15 @@
         "higgs_mass_from_axiom_note",
         "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.524,
+      "load_bearing_score": 11.785,
       "note_path": "docs/WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_wilson_vtaste_extremum_leading_order_in_r.py",
-      "transitive_descendants": 22
+      "transitive_descendants": 38
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -45650,6 +45623,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 81,
-  "total_pending": 1518
+  "ready_count": 80,
+  "total_pending": 1517
 }

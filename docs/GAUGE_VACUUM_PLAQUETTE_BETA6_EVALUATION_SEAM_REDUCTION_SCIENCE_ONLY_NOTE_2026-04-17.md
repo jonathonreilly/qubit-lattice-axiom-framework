@@ -37,7 +37,8 @@ narrowing only began. The load-bearing content is hereby scoped as a
 - **In scope (formal lemma, unconditional on any physics):** Let `H` be the
   finite-dimensional class-sector inner-product space with orthonormal
   class basis `{χ_(p,q)}`. Let `S` be **any** linear operator on `H`, `η ∈ H`
-  **any** vector, and `K(·)` **any** linear evaluation functional. Define
+  **any** vector for which the coefficient below has `z_(0,0) != 0`, and
+  `K(·)` **any** linear evaluation functional. Define
   `z_(p,q) = ⟨χ_(p,q), S^{L⊥−1} η⟩`, `ρ_(p,q) = z_(p,q)/z_(0,0)`,
   `v = Σ z_(p,q) χ_(p,q)`, `Z(W) = ⟨K(W), v⟩`. Then the relations in
   Theorem 1 / Corollaries 1–2 below hold **by elementary linear algebra**.
@@ -254,7 +255,7 @@ Then the boundary coefficients are exactly
 `z_(p,q)^env(6)
  = <chi_(p,q), (S_6^env)^(L_perp-1) eta_6(e)>`,
 
-and therefore
+When `z_(0,0)^env(6) != 0`, the normalized coefficients are
 
 `rho_(p,q)(6)
  = z_(p,q)^env(6) / z_(0,0)^env(6)`.

@@ -522,6 +522,28 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
         new_rows, _cycles = m.compute_effective(rows)
         self.assertEqual(new_rows["child"]["effective_status"], "retained_pending_chain")
 
+    def test_clean_with_metadata_dep_is_retained(self):
+        """Metadata links are non-claim infrastructure and should not strand
+        audited-clean theorem rows in retained_pending_chain."""
+        m = _import("compute_effective_status")
+        rows = {
+            "glossary": {
+                "claim_id": "glossary",
+                "deps": [],
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+            },
+            "child": {
+                "claim_id": "child",
+                "deps": ["glossary"],
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+            },
+        }
+        new_rows, _cycles = m.compute_effective(rows)
+        self.assertEqual(new_rows["glossary"]["effective_status"], "meta")
+        self.assertEqual(new_rows["child"]["effective_status"], "retained_bounded")
+
     def test_axiom_and_primitive_premises_do_not_bound_positive_theorem(self):
         """Axioms and explicitly approved framework primitives satisfy chain
         closure without forcing retained_bounded. Tier-A derivation targets are
@@ -983,6 +1005,38 @@ class AuditLintTest(unittest.TestCase):
             m.main()
         self.assertIn("legacy", buf.getvalue())
         self.assertIn("codex-current", buf.getvalue())
+
+    def test_lint_allows_retained_row_with_metadata_dep(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "glossary": {
+                "claim_id": "glossary",
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+                "effective_status": "meta",
+                "criticality": "leaf",
+            },
+            "bounded_child": {
+                "claim_id": "bounded_child",
+                "deps": ["glossary"],
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+                "claim_scope": "bounded theorem with glossary link",
+                "effective_status": "retained_bounded",
+                "auditor": "synthetic-auditor",
+                "auditor_family": "codex-gpt-5.5",
+                "criticality": "leaf",
+                "load_bearing_step_class": "A",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 0)
+        self.assertNotIn("bounded_child: effective_status", buf.getvalue())
 
     def test_stale_top_level_timestamp_errors(self):
         m = _import("audit_lint")

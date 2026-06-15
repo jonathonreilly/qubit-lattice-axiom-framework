@@ -89,6 +89,13 @@ def is_retained_grade(status):
     if isinstance(status, str) and status.startswith("decoration_under_"):
         return True
     return False
+
+
+def is_chain_satisfying_status(status):
+    """Mirror compute_effective_status.is_chain_satisfying_status."""
+    return is_retained_grade(status) or status == "meta"
+
+
 ALLOWED_EFFECTIVE_STATUSES = {
     "retained",
     "retained_no_go",
@@ -709,9 +716,9 @@ def main() -> int:
                 )
 
     # Effective-status propagation sanity. A retained-grade row's deps must
-    # themselves be retained-grade or accepted premises. Open gates and
-    # retained_pending_chain are explicit blockers, not support for downstream
-    # theorem retention. Axioms can satisfy a dep without bounding the row.
+    # themselves be retained-grade, metadata, or accepted premises. Open gates
+    # and retained_pending_chain are explicit blockers, not support for
+    # downstream theorem retention. Axioms can satisfy a dep without bounding the row.
     # Tier-A derivation targets can satisfy a dep only at the bounded tier until
     # the target is retired by a retained derivation. Convention rows listed in
     # the Tier-A registry are not accepted premises.
@@ -719,7 +726,7 @@ def main() -> int:
     # decoration_status() only assigns that status when the parent is itself
     # retained-grade.
     # Must stay in sync with compute_effective_status.py's clean_status
-    # (both go through premise_nodes / is_retained_grade).
+    # (both go through premise_nodes / is_chain_satisfying_status).
     for cid, row in rows.items():
         if row.get("effective_status") in RETAINED_GRADES:
             for d in row.get("deps", []):
@@ -735,7 +742,7 @@ def main() -> int:
                 if premise_nodes.is_accepted_premise_dep(d):
                     continue
                 d_eff = rows.get(d, {}).get("effective_status")
-                if not is_retained_grade(d_eff):
+                if not is_chain_satisfying_status(d_eff):
                     errors.append(
                         f"{cid}: effective_status={row.get('effective_status')!r} but dep {d!r} "
                         f"has effective_status={d_eff!r}"

@@ -79,6 +79,17 @@ def is_retained_grade(status: str | None) -> bool:
     return False
 
 
+def is_chain_satisfying_status(status: str | None) -> bool:
+    """True when a dependency is stable enough for theorem chain closure.
+
+    Metadata rows are non-claim infrastructure, not retained-grade claims.
+    They should not promote decorations, but they also should not strand an
+    audited-clean theorem behind glossary/front-door links. This mirrors the
+    audit-queue readiness rule.
+    """
+    return is_retained_grade(status) or status == "meta"
+
+
 def archived_failed_is_retained_no_go(row: dict) -> bool:
     if row.get("audit_status") != "audited_failed":
         return False
@@ -114,7 +125,7 @@ def clean_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
     has_tier_a_derivation_target = False
     for dep_id in sorted(row.get("deps", [])):
         dep_status = dep_effective.get(dep_id, "unaudited")
-        if is_retained_grade(dep_status):
+        if is_chain_satisfying_status(dep_status):
             continue
         if premise_nodes.is_axiom_premise(dep_id):
             continue

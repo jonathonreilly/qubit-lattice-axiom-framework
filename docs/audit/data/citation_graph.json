@@ -51474,7 +51474,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17"
+      "to": "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
     },
     {
       "from": "repo.front_door_status",
@@ -98990,7 +98990,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
+        "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
         "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
         "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
@@ -99000,7 +99000,7 @@
         "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0e768f3304538e5b7892a96d39143a655735bea84f596db9033dce55fa8cf659",
+      "note_hash": "ea8553d1069bd88f312de5973da4181d9a30fc9f6fbef1964226112b7b952295",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

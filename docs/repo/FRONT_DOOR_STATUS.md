@@ -12,9 +12,9 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1462 |
-| Retained-grade rows, including boxed decorations | 1371 |
-| Retained positive theorems | 212 |
+| Applied audit verdicts | 1463 |
+| Retained-grade rows, including boxed decorations | 1372 |
+| Retained positive theorems | 213 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 909 |
 | Boxed decorations under retained parents | 44 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1532 |
-| Ready rows | 86 |
+| Total pending rows | 1531 |
+| Ready rows | 88 |
 | Cycle-break targets | 0 |
-| Critical pending | 297 |
+| Critical pending | 296 |
 | High pending | 287 |
 | Medium pending | 466 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`quark_route2_exact_time_coupling_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) - critical; audit_in_progress
+- [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
 - [`yt_p1_i_s_lattice_pt_citation_note_2026-04-17`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) - critical; unaudited
 - [`higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08`](../../docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md) - critical; unaudited
 - [`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
@@ -57,7 +57,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **433**.
+- Non-retained-grade cited rows in publication tables: **432**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -68,11 +68,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
+| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

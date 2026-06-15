@@ -1,13 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/multisite_pauli_group_check.py
-runner_sha256: 5b711a97b80d13eebc3455bba7e6717db6486d281703af3df39919e9397c3958
+runner_sha256: d3da66e0ea4da019a4c7a4f97c3b15eed030df0858829315d686bc7727d7df44
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.98
+elapsed_sec: 2.93
 status: ok
 ----- stdout -----
 ========================================================================
-MULTI-SITE PAULI GROUP P_N: ORDER 4^{N+1}, MINIMAL GENERATORS 2N+1
+STIPULATED MULTI-SITE PAULI GROUP P_N: ORDER 4^{N+1}, MINIMAL GENERATORS 2N+1
+Finite algebra on H_N=(C^2)^{tensor N}; no framework Fock-space bridge is asserted.
 ========================================================================
 
   Generating P_1 on 1-site Hilbert (dim = 2)...

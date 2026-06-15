@@ -57,9 +57,9 @@ bare_retained_allowed: false
 
 ## 1. The pin, quoted exactly
 
-The parent note
-[`GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`](GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md)
-declares, in §6:
+The parent context note
+`GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`
+declares, in its reconstruction-identification boundary:
 
 > **Reconstruction-identification bridge (declared).** The theorem produces
 > `GL(F)` for the OS-reconstructed operator theory of the retained measure.
@@ -288,18 +288,18 @@ Load-bearing (markdown links):
    for the §2 (I-4) observation that the retained set's sole
    dynamics-bearing object is itself action-constructed, so the dynamical
    sub-clause collapses into (I-4). No gauge-sector content is consumed.
-6. [`GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`](GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md)
-   — bounded theorem, unaudited. License used: the declared
-   reconstruction-identification bridge that this note decomposes. The
-   construction facts needed for the decomposition are recomputed by this
-   runner, not imported blind.
-7. [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+6. [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md)
    — bounded theorem, unaudited. License used: the `GL(F)` predicate
    definition; no conditional-selection conclusion is imported.
 
 Plain-text pointers (NOT load-bearing as ledger rows; in-flight content
 recomputed in-runner where load-bearing):
 
+- `GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`
+  — parent context whose declared reconstruction-identification bridge is
+  decomposed here. This is intentionally plain text: every construction fact
+  needed for the decomposition is recomputed in this note's runner, so the
+  bridge note should be auditable without depending on its target.
 - `GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md` —
   **unmerged**, branch
   `claude/science-fix/gl-f-multiloop-cocycle-no-go-20260610`, commit
@@ -433,7 +433,6 @@ upstream_dependencies:
   - fermion_parity_z2_grading_theorem_note_2026-05-02
   - fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10
   - axiom_first_reflection_positivity_theorem_note_2026-04-29
-  - gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10
   - staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10
 admitted_context_inputs:
   - finite-dimensional exact rational linear algebra (kernels, ranks, solves, LDL/PSD certificates)

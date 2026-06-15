@@ -7,9 +7,15 @@
 reconstruction of a single-pair Grassmann/Berezin matter measure with a
 Theta-symmetric reflection-positive quadratic kernel. The theorem constructs
 canonical reconstructed fields satisfying `GL(F)` on the reconstructed
-operator theory. It is conditional on the supplied Berezin/RP action surface
-and on the declared identification of the framework matter operators with the
-OS-reconstructed operators.
+operator theory. It remains conditional on the supplied Berezin/RP
+matter-functional/action surface. The separate reconstruction-identification
+residual is routed through
+[`GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md`](GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md):
+that companion decomposes the identification into carrier, parity,
+operator-dictionary, and matter-functional clauses and proves the first three
+on the same finite surfaces. Therefore this note no longer leaves an
+unstructured operator-identification bridge; the named remaining pin is the
+matter-functional/action-surface clause.
 **Status authority:** independent audit lane only. This source note does not
 set, predict, promote, or demote any audit outcome.
 **Primary runner:**
@@ -92,12 +98,15 @@ integrand class carries the sign.
 
 ## Boundaries
 
-- This note does not derive the Berezin action surface, reflection
-  positivity, the kernel class, or the physical identification of the
-  framework matter operators with the OS-reconstructed operators.
-- The reconstruction-identification bridge is explicit: the runner matches
-  the qubit-net dimension and parity pattern, but the identification itself
-  remains a review/audit target.
+- This note does not derive the Berezin/RP matter-functional/action surface
+  from the baseline axioms alone. It consumes the retained-grade
+  Grassmann/Berezin, determinant, and RP surfaces named below and remains
+  conditional on that surface being the framework matter functional.
+- The reconstruction-identification bridge is no longer an unstructured
+  residual of this note. The companion
+  [`GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md`](GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md)
+  is the explicit one-hop source for the carrier/parity/dictionary clauses;
+  it leaves only the matter-functional/action-surface clause named above.
 - This note supplies no new framework premise, primitive, controlled-data
   action, accepted-premise admission, empirical input, probability rule,
   weighting rule, or audit verdict.
@@ -123,11 +132,13 @@ defines `GL(F)` and shows that, within the explicit
 Grassmann/CAR class is selected conditionally on `GL(F)`. That earlier note
 does not supply `GL(F)`.
 
-This note supplies a conditional source for `GL(F)` on a different surface:
-the Berezin/RP action surface plus OS reconstruction. The two statements fit
-together only with their boundaries intact. The discriminator remains
-conditional; this note's supplier claim remains conditional on the action
-surface and reconstruction-identification bridge.
+This note supplies a source for `GL(F)` on the Berezin/RP action surface plus
+OS reconstruction. The two statements fit together only with their boundaries
+intact. The discriminator remains conditional where it consumes `GL(F)` as a
+predicate. This note's supplier claim is conditional on the
+matter-functional/action-surface clause and on independent audit of the
+identification-decomposition companion named above; it does not claim a
+statistics-forcing theorem from the baseline axioms alone.
 
 ## Runner Checks
 
@@ -176,6 +187,11 @@ The runner independently checks:
   and
   [FERMION_PARITY_PAULI_TENSOR_INVOLUTION_NARROW_THEOREM_NOTE_2026-05-10.md](FERMION_PARITY_PAULI_TENSOR_INVOLUTION_NARROW_THEOREM_NOTE_2026-05-10.md)
   supply the parity comparison target.
+- [GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md](GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md)
+  supplies the reconstruction-identification decomposition: carrier, parity,
+  and operator-dictionary clauses are finite theorems given the same
+  matter-functional surface; the remaining residual is exactly the named
+  matter-functional/action-surface clause.
 - [STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md)
   supplies the definition and conditional role of `GL(F)`.
 

@@ -1,0 +1,17 @@
+loop: glf-berezin-rp-bridge-20260615
+target_status: conditional-support
+active_route: acyclic source-graph bridge repair
+files_touched:
+  - docs/GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md
+  - docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md
+open_imports:
+  - matter-functional/action-surface clause
+runner_status:
+  gl_f_berezin_rp_reconstruction_check_2026_06_10.py: PASS=44 FAIL=0
+  gl_f_identification_bridge_check_2026_06_11.py: PASS=36 FAIL=0
+pipeline_simulation:
+  cycles: 0
+  cycle_break_targets: 0
+  ready_count: 43
+  generated_outputs_committed: false
+next_exact_action: "Open source-only PR for review/audit queueing."

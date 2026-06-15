@@ -94,6 +94,7 @@ Expected: TOTAL: PASS=31 FAIL=0
 from __future__ import annotations
 
 import itertools
+import json
 import os
 import re
 
@@ -462,25 +463,26 @@ check("B", "the note declares (REG-tau) as a supplied clock-window clause of the
 # ===========================================================================
 print("== T12: ledger grades, firewall strings, honest scope ==")
 
-ledger = read(os.path.join(REPO, "docs", "audit", "AUDIT_LEDGER.md"))
+with open(os.path.join(REPO, "docs", "audit", "data", "audit_ledger.json"), "r", encoding="utf-8") as fh:
+    ledger_rows = json.load(fh)["rows"]
 rows = {
-    "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "**retained_bounded**",
-    "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "**retained_bounded**",
-    "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "**retained**",
-    "post_record_clock_rate_interface_2026-06-06": "**retained_no_go**",
-    "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06": "**retained_no_go**",
-    "record_function_finite_sector_algebra_2026-06-05": "**retained**",
-    "record_unbounded_finite_additivity_schema_2026-06-06": "**retained**",
-    "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "**retained_no_go**",
-    "observable_principle_record_scalar_map_no_go_note_2026-06-05": "**retained_no_go**",
-    "post_record_count_probability_firewall_2026-06-06": "**retained_no_go**",
+    "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded",
+    "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "retained_bounded",
+    "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+    "post_record_clock_rate_interface_2026-06-06": "retained_no_go",
+    "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06": "retained_no_go",
+    "record_function_finite_sector_algebra_2026-06-05": "retained",
+    "record_unbounded_finite_additivity_schema_2026-06-06": "audited_conditional",
+    "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "retained_no_go",
+    "observable_principle_record_scalar_map_no_go_note_2026-06-05": "retained_no_go",
+    "post_record_count_probability_firewall_2026-06-06": "retained_no_go",
 }
 bad_rows = []
 for rid, want in rows.items():
-    line = next((ln for ln in ledger.splitlines() if f"`{rid}`" in ln and ln.strip().startswith("|")), "")
-    if want not in line:
-        bad_rows.append(rid)
-check("B", "cited rows present in the audit ledger at the cited effective statuses (one-hop presence check, 10 rows)", not bad_rows, f"mismatches={bad_rows}")
+    got = ledger_rows.get(rid, {}).get("effective_status")
+    if got != want:
+        bad_rows.append((rid, got, want))
+check("B", "cited rows present in the audit ledger at their current effective statuses (one-hop presence check, 10 rows)", not bad_rows, f"mismatches={bad_rows}")
 
 required = [
     "Status authority:",

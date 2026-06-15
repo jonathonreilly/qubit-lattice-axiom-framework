@@ -1,11 +1,17 @@
 # Post-Record Measure/Weight/Normalization Subdivision
 
 **Date:** 2026-06-06
-**Type:** exact support / read-only audit companion
-**Claim type:** positive_theorem
+**Type:** bounded theorem / read-only audit companion
+**Claim type:** bounded_theorem
 **Status:** exact-support source-side for measure/weight subdivision and
 finite normalization certificate semantics; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
+**Claim scope:** finite supplied-weight normalization lemma plus read-only
+measure/weight subdivision certificate. Given a supplied finite carrier,
+supplied nonnegative weights, and exact positive total, the weights normalize
+to a probability measure under that supplied rule. This row does not derive
+the carrier, weights, reference measure, selector, or physical normalization
+authority from Record.
 **Primary runner:**
 [`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
 **Cached log:**
@@ -31,6 +37,8 @@ supplied finite carrier
 ```
 
 Normalized measure is not selected dial.
+Finite supplied-weight normalization is the entire theorem scope; the
+Record-to-carrier/weight/normalization bridge remains outside this row.
 
 On the current ledger snapshot:
 
@@ -38,11 +46,11 @@ On the current ledger snapshot:
 |---|---:|
 | `source_measure_or_rn_bridge` | 16 |
 | `trace_normalization_reference` | 10 |
-| `character_path_channel_weight` | 12 |
-| `selector_tangent_readout_weight` | 11 |
-| `generic_measure_weight_import` | 11 |
+| `character_path_channel_weight` | 14 |
+| `selector_tangent_readout_weight` | 13 |
+| `generic_measure_weight_import` | 14 |
 
-Total: `60` rows.
+Total: `67` rows.
 
 ## Meaning
 
@@ -62,7 +70,8 @@ This block separates those imports:
   bridge is named.
 
 Finite normalization can certify that supplied weights define a normalized
-measure. It cannot certify that this measure is physically selected.
+measure. It cannot certify that this measure is physically selected, and it
+does not derive the supplied weights or carrier from Record.
 
 ## Status certificate
 
@@ -105,8 +114,8 @@ The runner verifies:
 - the selector/dial helper source used to obtain the bucket is included in the
   packet;
 - bounded ledger-row export exists for the selected measure/weight rows;
-- the current `measure_weight_normalization` row count is `60`;
-- lane counts match the current 2026-06-13 snapshot;
+- the current `measure_weight_normalization` row count is `67`;
+- lane counts match the current 2026-06-15 snapshot;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;
 - no audit verdict, audit-data write, retained/promoted claim, normalized-measure

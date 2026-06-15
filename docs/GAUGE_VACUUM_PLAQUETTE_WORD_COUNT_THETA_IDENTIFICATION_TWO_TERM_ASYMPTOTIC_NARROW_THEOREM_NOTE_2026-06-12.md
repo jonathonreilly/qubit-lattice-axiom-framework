@@ -261,7 +261,7 @@ theta alpha = 0.127269601426283 < theta.
 
 The runner also displays the `gamma` channel scale
 `theta gamma = 0.106772973260081`; source second order has scale
-`theta^2 = 0.0695618585...`, also smaller than `theta`.
+`theta^2 = 0.069561876543...`, also smaller than `theta`.
 
 ## Measured Envelope
 

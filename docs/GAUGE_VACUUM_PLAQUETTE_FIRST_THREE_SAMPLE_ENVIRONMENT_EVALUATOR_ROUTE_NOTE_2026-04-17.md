@@ -336,4 +336,4 @@ python3 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_e
 
 Expected summary:
 
-- `TOTAL: PASS=13, FAIL=0`
+- `TOTAL: PASS=14, FAIL=0`

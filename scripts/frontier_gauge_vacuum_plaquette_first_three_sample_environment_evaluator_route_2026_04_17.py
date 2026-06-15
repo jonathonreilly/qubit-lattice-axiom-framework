@@ -325,6 +325,13 @@ def main() -> int:
         bucket="SUPPORT",
     )
     check(
+        "the formal rho lemma states the nonzero z_(0,0) domain condition",
+        "z_(0,0) != 0" in eval_reduction_note
+        and "z_(0,0)^env(6) != 0" in eval_reduction_note,
+        detail="normalized rho is only asserted on the nonzero-denominator domain",
+        bucket="SUPPORT",
+    )
+    check(
         "the compressed rim-functional uniqueness note already fixes the left boundary functional as the unique universal Peter-Weyl evaluation functional",
         "universal Peter-Weyl evaluation functional" in uniqueness_note
         and "the retained left boundary functional is unique" in uniqueness_note,

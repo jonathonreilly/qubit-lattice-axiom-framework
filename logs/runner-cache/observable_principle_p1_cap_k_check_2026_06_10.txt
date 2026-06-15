@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_p1_cap_k_check_2026_06_10.py
+runner_sha256: 278121c031578eed0e2200485e179f9d85f78ba275ce6bac4fbf1e790955e372
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 11.76
+status: ok
+----- stdout -----
 == T1: Lemma C and the selection chain (BR-note facts recomputed, not cited blind) ==
   [PASS][A] retained finite-sector identity recomputed: I(A u B) = I(A) + I(B) on all 81 ordered disjoint pairs of a 4-sector model  -- pairs=81
   [PASS][A] Lemma C capacity bound: |sum_{i in A} v_i| <= K*M by finite additivity + triangle inequality; retained unit-record schema has M = 1 by normalization (I(R_7) = 7 recomputed)  -- I(R_7)=7
@@ -38,8 +46,11 @@
   [PASS][B] the clock is supplied, never derived from counts: the retained_no_go clock/rate interface states 'Without the supplied `tau`, the same record history supports many inequivalent rates' — present verbatim
   [PASS][B] the note declares (REG-tau) as a supplied clock-window clause of the realization class (not derived); the retained single-clock Stone row licenses only that 'evolve for t given (T, tau)' is well-defined — the window value stays declared
 == T12: ledger grades, firewall strings, honest scope ==
-  [PASS][B] cited rows present in the audit ledger at the cited effective statuses (one-hop presence check, 10 rows)  -- mismatches=[]
+  [PASS][B] cited rows present in the audit ledger at their current effective statuses (one-hop presence check, 10 rows)  -- mismatches=[]
   [PASS][B] note honest-scope and firewall-compliance strings present  -- missing=[]
   [PASS][B] forbidden closure/promotion strings absent  -- found=[]
 
 TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

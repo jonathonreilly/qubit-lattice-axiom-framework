@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_chiral_body_diagonal_source.py
-runner_sha256: 69a47b83ddd079a4f18dd18a01321f015732181674a58d786764eaf548bb008d
+runner_sha256: 8ce9e331b9ab07a3b0be913414da59b84e47d37679802e24226cd8ccb26410b0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 [PASS] Gamma_chi eigenvalues {+1,-1,-1}  :: eigs=[np.float64(-1.0), np.float64(-1.0), np.float64(1.0)]
@@ -96,6 +96,9 @@ status: ok
 [PASS] J_cs = (C - C^2)/sqrt3 equals the normalized staggered double-shift operator  :: the genuine KS staggered hop on the triplet IS the native complex structure J_cs (up to sign)
 [PASS] J_cs is C3-equivariant ([J_cs, C]=0)
 [PASS] J_cs COMMUTES with Gamma_chi (block-count route stays on the C3-equivariant side)  :: ||[J_cs,Gamma]||=4.4240e-17
+[PASS] J_cs is the nonscalar antisymmetric complex structure, not a scalar doublet mass block  :: doublet block=
+[[-0. -1.]
+ [ 1.  0.]]
 [PASS] J_cs eigenvalues {0, +i, -i} (singlet real, doublet one complex line)  :: eigs=[ 0.+1.j  0.-1.j -0.+0.j]
 [PASS] CONCLUSION: chiral/anticommuting route (needs off-C3 import) is DISTINCT from the native C3-equivariant J_cs block-count route — the native object reaches Q=2/3 via a reality-structure MEASURE choice, not via an anticommuting operator
 [PASS] Reynolds-average over C3 of ANY symmetric seed -> isotropic doublet block (no h)  :: doublet block of C3-average=
@@ -106,7 +109,7 @@ status: ok
 [PASS] POSIT FLAG: selecting a single off-diagonal / axis-ordering to fix h breaks C3 = an import
 
 ========================================================================
-SCORECARD: PASS=37 FAIL=0
+SCORECARD: PASS=38 FAIL=0
 ========================================================================
 
 ----- stderr -----

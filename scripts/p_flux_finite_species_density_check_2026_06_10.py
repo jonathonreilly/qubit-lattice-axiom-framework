@@ -23,7 +23,7 @@ extensive-zero-set branch and how.
 
 Outcome computed here:
 
-  1. NO RETAINED SUPPLIER: every retained-grade row in the enumerated
+  1. NO RETAINED SUPPLIER: every current row in the enumerated
      determinant/Matsubara/heat-kernel candidate set is staggered-scoped
      (Matsubara decomposition family: fixed Z^4 APBC L_s=2 mean-field
      staggered block, gapped on its own surface so its normalization
@@ -36,7 +36,10 @@ Outcome computed here:
      retained-pending real-diagonal candidate is hypothesis-conditional
      ("For invertible real antisymmetric D") and is not treated as
      retained-grade.  The
-     thermal g* rows are supplied-inventory-conditional; the retained
+     thermal g* inventory row is currently unaudited; the axiom-first
+     fermionic SB, Greens, and GL(F) discriminator rows are now
+     retained_bounded but still scoped/conditional rather than suppliers
+     of B-Z2 for the realized matter kernel; the retained
      Lorentz/isotropy rows are descriptive of BOTH given carriers
      (staggered sin^2 and bosonic graph-Laplacian), normative of
      neither.  No retained third-law/vacuum-entropy row exists.
@@ -499,20 +502,16 @@ def main():
                         "note_2026-05-02")
     dec2 = status(rows, "hierarchy_matsubara_free_energy_density_narrow_"
                         "theorem_note_2026-05-16")
-    unaud = ["hierarchy_matsubara_determinant_ratio_narrow_theorem_note_"
-             "2026-05-10",
-             "hierarchy_matsubara_quartic_coefficient_ratio_narrow_theorem_"
-             "note_2026-05-10",
-             "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_"
-             "invariant_dynamics_narrow_theorem_note_2026-06-08",
-             "hierarchy_heat_kernel_d4_compression_bounded_theorem_note_"
-             "2026-05-10",
-             "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_"
-             "note_2026-06-07",
-             "staggered_dirac_substep1_statistics_gl_f_conditional_"
-             "discriminator_bounded_theorem_note_2026-06-10"]
-    ok_unaud = all(status(rows, r) == "unaudited" for r in unaud)
-    report(ok_fam and ok_unaud
+    status_expect = {
+        "hierarchy_matsubara_determinant_ratio_narrow_theorem_note_2026-05-10": "unaudited",
+        "hierarchy_matsubara_quartic_coefficient_ratio_narrow_theorem_note_2026-05-10": "unaudited",
+        "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08": "unaudited",
+        "hierarchy_heat_kernel_d4_compression_bounded_theorem_note_2026-05-10": "unaudited",
+        "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07": "retained_bounded",
+        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "retained_bounded",
+    }
+    ok_related = all(status(rows, r) == s for r, s in status_expect.items())
+    report(ok_fam and ok_related
            and str(dec1).startswith("decoration_under")
            and str(dec2).startswith("decoration_under"),
            "[B] ledger sweep of the determinant/Matsubara/heat-kernel "
@@ -521,8 +520,9 @@ def main():
            "real-diagonal candidate; decomposition parent retained_"
            "bounded with the determinant + free-energy decorations "
            "under it); the "
-           "ratio/quartic, heat-kernel-CLT/d4/Greens, and GL(F)-Berezin "
-           "discriminator rows are unaudited and cannot supply")
+           "ratio/quartic and heat-kernel-CLT/d4 rows are unaudited, while "
+           "the Greens and GL(F)-Berezin discriminator rows are retained_bounded "
+           "but remain scope/condition limited and do not supply B-Z2")
 
     det_txt = note_text("docs/HIERARCHY_MATSUBARA_DETERMINANT_NARROW_"
                         "THEOREM_NOTE_2026-05-02.md")
@@ -697,8 +697,8 @@ def main():
     st_ax = status(rows, "axiom_first_fermionic_stefan_boltzmann_narrow_"
                          "theorem_note_2026-05-26")
     gstar = 28 + (7.0 / 8.0) * 90
-    report(st_sb == "retained_bounded" and st_inv == "audited_conditional"
-           and st_ax == "unaudited"
+    report(st_sb == "retained_bounded" and st_inv == "unaudited"
+           and st_ax == "retained_bounded"
            and "relativistic, effectively massless thermal degree of "
                "freedom" in sb_txt
            and "It does not derive the Standard Model particle inventory"
@@ -706,9 +706,10 @@ def main():
            and abs(gstar - 427.0 / 4.0) < 1e-12,
            "[C] the retained SB row binds 'a relativistic, effectively "
            "massless thermal degree of freedom' and 'does not derive "
-           "the Standard Model particle inventory'; the inventory row "
-           "is SUPPLIED (audited_conditional); the axiom-first SB rows "
-           "are unaudited; the g* arithmetic 28 + (7/8)*90 = 427/4 is "
+           "the Standard Model particle inventory'; the supplied-inventory "
+           "row is currently unaudited; the axiom-first fermionic SB row is "
+           "retained_bounded but does not derive the realized matter-kernel "
+           "inventory; the g* arithmetic 28 + (7/8)*90 = 427/4 is "
            "branch-independent — no retained row applies the T^4 form "
            "to the REALIZED matter kernel")
 

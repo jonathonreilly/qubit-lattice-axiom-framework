@@ -1,9 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/frontier_unraveled_record_step_distribution_nondegenerate_2026_06_10.py
+runner_sha256: ae5cfde7d80d9565b24b9095ce2e636fa639f9b404dfffbc69577bcacaa25e75
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 107.49
+status: ok
+----- stdout -----
 ==============================================================================
 Part 1  (U1) exact outcome tree: completeness; weights; mean-consistency
 ==============================================================================
   [PASS] I-B Kraus completeness K+†K+ + K-†K- = I exactly
   [PASS] I-A Kraus completeness K+†K+ + K-†K- = I exactly
-  [PASS] the depth-5 outcome tree's exact Born weights sum to 1  (32 branches; |sum-1| = 4.4e-16)
+  [PASS] the depth-5 outcome tree's exact Born weights sum to 1  (32 branches; |sum-1| = 6.7e-16)
   [PASS] UNRAVELING CONSISTENCY: Born-weighted average of conditional states = the deterministic channel EXACTLY
 ==============================================================================
 Part 2  (U2) domain guards; non-degenerate spread on the generic full-rank domain
@@ -27,7 +35,7 @@ Part 3  (U3) the CLT route's FOUR residuals: stationarity, centrality, edge-iden
 Part 4  (U4) covariance split (trajectory-level re-exhibit; regime reconciliation)
 ==============================================================================
   [PASS] the conjugate-representation lift, pinned: G(Gamma psi) = g G(psi) g† exactly
-  [PASS] I-B COVARIANCE, exact: E[dU](g.psi) = g E[dU](psi) g† -- the color-blind unraveling's noise is gauge-covariant  (dev 8.7e-16)
+  [PASS] I-B COVARIANCE, exact: E[dU](g.psi) = g E[dU](psi) g† -- the color-blind unraveling's noise is gauge-covariant  (dev 8.6e-16)
   [PASS] I-A breaks covariance at order 1 (anchored to ITS frame -- the {P_r} datum; the frame-naming boundary)  (dev 0.195)
   [PASS] the color-blind orientation increments are non-degenerate at finite eps (weak-record regime; no tension with projective full-strength erasure)  (I-B spread 0.1231)
 ==============================================================================
@@ -48,3 +56,6 @@ SCOPE: conditional Born-weighted unraveling of the named weak instruments. On
   (no MC); all spreads/variances are instance-labeled. No new axiom/primitive
   or Record-supplied measure/weight/probability rule; r untouched. Audit lane
   grades.
+
+----- stderr -----
+

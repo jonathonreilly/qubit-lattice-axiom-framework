@@ -488,7 +488,7 @@ def main() -> int:
     banner("frontier_higgs_channel_effective_ntaste_boundary.py")
     print(" Bounded boundary statement: the Wilson Hamming-weight staircase")
     print(" does not by itself fix N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md")
-    print(" formula [5]; the five single-class assignments give five")
+    print(" formula [5]; the five single-class assignments give three")
     print(" distinct m_H_tree values, none matching the uniform-16 admission")
     print(" that produces the existing 140.3 GeV headline.")
 
@@ -510,7 +510,7 @@ def main() -> int:
         print()
         print(" VERDICT: the Wilson Hamming-weight staircase does not by itself")
         print(" fix N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md formula [5]; the")
-        print(" five single-class assignments give five distinct m_H_tree")
+        print(" five single-class assignments give three distinct m_H_tree")
         print(" values, none of which coincides with the uniform-16 admission")
         print(" that produces the existing 140.3 GeV headline.")
     return 0 if FAIL == 0 else 1

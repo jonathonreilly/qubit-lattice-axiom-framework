@@ -177,14 +177,35 @@ def main() -> int:
              0.5: "UNDEF(eta=0)", 0.7: "-1", 0.9: "-1",
              -0.1: "-1", -0.3: "-1"}
     ok_all = True
-    for aa, expect in table.items():
-        got = label(tower_spectral(aa, lam_max))
-        if got != expect:
-            ok_all = False
-            print(f"    MISMATCH a={aa}: got {got}, expect {expect}")
+    half_integer_cutoffs = [5.5, 20.5, 37.5]
+    for cutoff in half_integer_cutoffs:
+        for aa, expect in table.items():
+            got = label(tower_spectral(aa, cutoff))
+            if got != expect:
+                ok_all = False
+                print(
+                    f"    MISMATCH Lambda={cutoff}, a={aa}: "
+                    f"got {got}, expect {expect}"
+                )
     check("T3", "label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, "
-                "0.7, 0.9} matches exactly (chi quantized; branch "
-                "conditions fail exactly at a = 0 and a = 1/2)", ok_all)
+                "0.7, 0.9} matches for Lambda in Z+1/2 (chi quantized; "
+                "branch conditions fail exactly at a = 0 and a = 1/2)",
+          ok_all)
+    counterexamples = [
+        (20.0, 0.3, "UNDEF(eta=0)"),
+        (20.25, 0.3, "UNDEF(eta=0)"),
+        (20.75, 0.3, "UNDEF(eta=0)"),
+    ]
+    counter_ok = True
+    counter_details = []
+    for cutoff, aa, expect in counterexamples:
+        got = label(tower_spectral(aa, cutoff))
+        counter_details.append(f"Lambda={cutoff}, a={aa}: {got}")
+        if got != expect:
+            counter_ok = False
+    check("T3", "non-half-integer spectral cutoffs are excluded by explicit "
+                "counterexamples",
+          counter_ok, "; ".join(counter_details))
     e0, h0 = eta_h(tower_spectral(0.0, lam_max))
     check("T3", "a = 0 (untwisted): h_delta = 1, label undefined "
                 "(gap branch condition fails)", h0 == 1)

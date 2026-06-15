@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_higgs_channel_effective_ntaste_boundary.py
-runner_sha256: 7b7f6ee106c06ce09c053e2e1d7ee8acecd410809d4a193a40fedad275bd2c83
+runner_sha256: ae3c534a193ae3779ad833d4779cb4fcc7e476a958f4aafc3910275154d15c87
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -12,7 +12,7 @@ status: ok
 ========================================================================================
  Bounded boundary statement: the Wilson Hamming-weight staircase
  does not by itself fix N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md
- formula [5]; the five single-class assignments give five
+ formula [5]; the five single-class assignments give three
  distinct m_H_tree values, none matching the uniform-16 admission
  that produces the existing 140.3 GeV headline.
 
@@ -151,7 +151,7 @@ status: ok
 
  VERDICT: the Wilson Hamming-weight staircase does not by itself
  fix N_taste in HIGGS_MASS_FROM_AXIOM_NOTE.md formula [5]; the
- five single-class assignments give five distinct m_H_tree
+ five single-class assignments give three distinct m_H_tree
  values, none of which coincides with the uniform-16 admission
  that produces the existing 140.3 GeV headline.
 

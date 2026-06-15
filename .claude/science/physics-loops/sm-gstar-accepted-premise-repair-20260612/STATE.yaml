@@ -1,0 +1,31 @@
+loop_slug: sm-gstar-accepted-premise-repair-20260612
+updated_utc: "2026-06-15T00:00:00Z"
+branch: physics-loop/sm-gstar-accepted-premise-repair-20260612
+base: origin/main
+pr: 3787
+mode: source_side_audit_unlock
+target_status: bounded-support
+actual_current_surface_status: conditional-support
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+summary: >
+  Narrow refresh of PR #3787 after latest main resolved or moved the Higgs-side
+  context. This branch now keeps only the still-current audited-conditional
+  I12 nu_R thermal-exclusion row and records the accepted physical inputs at
+  the point of use without adding axioms or audit verdicts.
+target:
+  claim_id: sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29
+  note: docs/SM_GSTAR_I12_NUR_THERMAL_EXCLUSION_BOUNDED_NOTE_2026-05-29.md
+  runner: scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py
+  cache: logs/runner-cache/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.txt
+  movement: separates P-MNU admitted small-neutrino-mass observation from P-THERM accepted thermalization comparator
+validation:
+  focused_runner: "RESULT: PASS=68 FAIL=0"
+  explicit_runner_cache_check: "1 runner considered; 1 fresh; 0 stale; 0 missing"
+  diff_check: clean
+  conflict_scan: clean
+remaining_blockers:
+  - empirical small m_nu is admitted, not derived here
+  - Gamma_nu_R ~ y_nu^2 T versus H is an accepted thermal comparator, not a retained theorem here
+  - independent audit/review owns any effective-status change
+next_exact_action: "Commit, force-push PR #3787, and comment with validation."

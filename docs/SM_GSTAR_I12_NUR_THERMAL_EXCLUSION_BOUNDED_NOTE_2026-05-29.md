@@ -61,6 +61,32 @@ mass, and therefore does **not** fully derive I12 from first principles; it
 **partially resolves** I12, conditioned on that admitted observation. The
 overall `g_*` census stays a `bounded_theorem`.
 
+## 0. 2026-06-12 accepted-input register
+
+The 2026-06-12 re-audit blocker asks whether the source has a separate retained
+bridge for the empirical small-`m_nu` admission and for the
+`Gamma_nu_R ~ y_nu^2 T` thermalization comparator. This repair does not add a
+new axiom and does not claim a retained framework derivation of either input.
+It records the two accepted inputs at the exact point of use so independent
+audit can judge the bounded source claim cleanly:
+
+- **P-MNU (admitted observation):** the neutrino mass entering the comparator
+  is empirically small (atmospheric scale `~0.05 eV` and sub-eV cosmological
+  scale). This is an admitted observation used to set the tiny Dirac Yukawa
+  scale, not a framework derivation of neutrino mass.
+- **P-THERM (accepted thermalization comparator):** the right-handed neutrino
+  equilibration estimate uses the standard high-temperature order-of-magnitude
+  relation `Gamma_nu_R ~ y_nu^2 T` and compares it to
+  `H ~ 1.66 sqrt(g_*) T^2 / M_Pl`. This is an accepted comparator for the
+  bounded census diagnostic, not a fitted selector and not a retained theorem
+  about all possible nonthermal histories.
+
+With P-MNU and P-THERM separated, the source claim is bounded and conditional
+on accepted physical inputs: the branch-independent exclusion of a thermalized
+light `nu_R` follows for the framework census, while a bare framework-native
+promotion would still require retained derivations or explicitly retained
+bridges for those inputs.
+
 ## 1. The `nu_R` equilibration channel
 
 The right-handed neutrino `nu_R = (1,1)_0` is a **complete gauge singlet**: it
@@ -306,7 +332,8 @@ that partially resolves one census fork. The no-go discipline boundary is:
   at the exact point of use. This note follows that pattern: I12 is **partially
   resolved** (conditioned on empirical small `m_nu`), **not** derived from first
   principles, and future work must still derive or retire the small-`m_nu`
-  import.
+  import. The 2026-06-12 P-MNU / P-THERM register labels both accepted inputs
+  before the arithmetic is used downstream.
 
 ## 7. Trace gate
 
@@ -320,21 +347,26 @@ artifact_role: theorem
 The blocker (carried by the sibling R-MATTER note and the census note) is that
 the `nu_R` thermal exclusion was an **assumed** boundary condition. This note
 **partially resolves** it: the exclusion is shown to follow from the empirical
-small `m_nu` across **both** branches of the framework's `retained_no_go`
-Dirac/seesaw fork. It is `partially_resolves` — **not** `resolves` — because the
-small `m_nu` is an admitted empirical observation, not a framework derivation;
-a full resolution would derive small `m_nu` from framework primitives (the
-neutrino-mass lane remains open). The `g_* = 106.75` census thus has its
-sharpest residual converted from "assumed `nu_R` exclusion" to "`nu_R` exclusion
-conditioned on the empirical small `m_nu`, branch-independent."
+small `m_nu` (P-MNU) and the accepted thermalization comparator (P-THERM) across
+**both** branches of the framework's `retained_no_go` Dirac/seesaw fork. It is
+`partially_resolves` — **not** `resolves` — because P-MNU and P-THERM are
+accepted inputs for this bounded census diagnostic, not retained framework
+derivations; a full resolution would derive small `m_nu` and the applicable
+thermalization bridge from framework primitives (the neutrino-mass lane remains
+open). The `g_* = 106.75` census thus has its sharpest residual converted from
+"assumed `nu_R` exclusion" to "`nu_R` exclusion conditioned on P-MNU and
+P-THERM, branch-independent."
 
 ## 8. Honest status and scope (the ceiling)
 
 This note is a `bounded_theorem`. It does **not**:
 
 - derive the small neutrino mass (the small `m_nu` is an **admitted empirical
-  observation** / comparator, not a framework output; this is the conditioning
-  input);
+  observation** / comparator, P-MNU, not a framework output; this is the
+  conditioning input);
+- derive the `Gamma_nu_R ~ y_nu^2 T` thermalization estimate as a retained
+  framework theorem (it is the accepted P-THERM comparator for this bounded
+  diagnostic);
 - fully derive I12 from first principles (it **partially resolves** I12,
   conditioned on the admitted small `m_nu`);
 - pick the Dirac-vs-seesaw neutrino-mass branch (that fork is the
@@ -356,11 +388,12 @@ branch the Yukawa implied by the empirical small `m_nu` (`y_nu ~ 10^-12`) keeps
 **only** route to `g_* = 112` is a thermalizing Dirac Yukawa
 (`y_nu >= y_thr`, with `y_nu ~ O(1)` as a stronger steelman), excluded by the
 sub-eV empirical neutrino mass. Therefore `g_* = 106.75` is **robust
-across both admitted branches, conditioned on the empirical small `m_nu`**, and
-I12 is **partially resolved**. The honest ceiling: this converts "`nu_R`
-exclusion (assumed boundary condition)" into "`nu_R` exclusion follows from
-small `m_nu` across both framework branches"; it does **not** fully derive I12,
-because it uses the empirical `m_nu`.
+across both admitted branches, conditioned on P-MNU and P-THERM**, and I12 is
+**partially resolved**. The honest ceiling: this converts "`nu_R` exclusion
+(assumed boundary condition)" into "`nu_R` exclusion follows from the accepted
+small-`m_nu` observation plus the accepted thermalization comparator across
+both framework branches"; it does **not** fully derive I12, because it uses
+accepted inputs.
 
 ## 9. Counterfactual pass (run before authoring)
 
@@ -392,8 +425,8 @@ exercised before authoring.
 
 **Counterfactual conclusion.** The `nu_R` exclusion (`g_* = 106.75`) is robust
 across both admitted neutrino-mass branches and across the relevant census
-temperatures, conditioned on the empirical small `m_nu`. The only routes to
-`g_* = 112` are excluded by data (thermalizing Yukawa, including the
+temperatures, conditioned on P-MNU and P-THERM. The only routes to `g_* = 112`
+are excluded by data (thermalizing Yukawa, including the
 large-Yukawa steelman) or require an admitted extension (non-thermal
 production). This confirms the honest claim type is
 **bounded_theorem** and that I12 is **partially resolved**, not fully derived.
@@ -430,8 +463,9 @@ arithmetic and order-of-magnitude floats for the equilibration estimate:
 6. **Note / authority cross-checks + ledger status:** the Dirac/seesaw no-go is
    `retained_no_go`, the relativistic-dof import is `retained_bounded`, the
    `Sum m_nu` functional-form theorem is `retained`; the note carries the fork,
-   the branch-independence, the empirical-observation naming, the steelman +
-   rebuttal, and the partial-resolution ceiling.
+   the branch-independence, the P-MNU admitted-observation naming, the P-THERM
+   thermalization-comparator naming, the steelman + rebuttal, and the
+   partial-resolution ceiling.
 7. **No-overclaim / forbidden-import / vocabulary scan:** no bare `retained` /
    `promoted` status line, no claim to derive small `m_nu`, no lattice / fitted /
    PDG load-bearing import, no new repo vocabulary or meta-framing.
@@ -441,15 +475,16 @@ Target: `PASS=N FAIL=0` with `N >= 45`.
 ## 11. Assumptions and imports ledger
 
 - The small neutrino mass `m_nu` is an **admitted empirical observation**
-  (atmospheric `~ 0.05 eV`, cosmological sub-eV), used as a **comparator** that
-  conditions the result, **not** as a framework derivation input and **not**
-  derived here.
+  (P-MNU: atmospheric `~ 0.05 eV`, cosmological sub-eV), used as a
+  **comparator** that conditions the result, **not** as a framework derivation
+  input and **not** derived here.
 - No PDG numerical comparator is consumed as a **proof** input; the empirical
   `m_nu` enters only as the named conditioning observation, and the dof counts
   are framework / representation-theory quantities.
-- The Planck mass `M_Pl` and the radiation-era Hubble prefactor `1.66` are
-  standard physical constants used in an order-of-magnitude equilibration
-  estimate, not fitted selectors.
+- The Planck mass `M_Pl`, the radiation-era Hubble prefactor `1.66`, and
+  `Gamma_nu_R ~ y_nu^2 T` are the accepted P-THERM order-of-magnitude
+  equilibration comparator, not fitted selectors and not retained derivations
+  of all possible thermal histories.
 - No literature numerical bound is consumed as a derivation input; the
   right-handed-Dirac-neutrino decoupling parametrics are mentioned only as an
   order-of-magnitude comparator.
@@ -517,10 +552,13 @@ proposed_claim_scope: |
   Yukawa y_nu >= y_thr, which gives m_nu = y_nu <H> >= 2 keV even at the most
   lenient threshold (and ~174 GeV for y_nu ~ O(1)), excluded by the sub-eV
   empirical neutrino mass. Therefore g_* = 106.75 is robust across BOTH admitted
-  branches, conditioned on the empirical small m_nu. The smallness of m_nu is an
-  ADMITTED EMPIRICAL OBSERVATION (comparator), NOT a framework derivation: this
-  note does NOT derive small m_nu and does NOT fully derive I12 from first
-  principles; it PARTIALLY RESOLVES I12 (conditioned on small m_nu). Does NOT
+  branches, conditioned on P-MNU and P-THERM. P-MNU records the smallness of
+  m_nu as an ADMITTED EMPIRICAL OBSERVATION (comparator), NOT a framework
+  derivation; P-THERM records Gamma ~ y^2 T versus H as the accepted
+  thermalization comparator. This note does NOT derive small m_nu, does NOT
+  derive P-THERM as a retained framework theorem, and does NOT fully derive I12
+  from first principles; it PARTIALLY RESOLVES I12 (conditioned on P-MNU and
+  P-THERM). Does NOT
   pick the Dirac vs seesaw branch (retained no-go; the strength is
   branch-independence), does NOT promote/demote any cited authority, does NOT
   close any downstream cosmology row. The overall g_* census stays
@@ -537,13 +575,14 @@ notes_for_re_audit_if_any: |
   retained (cited for context only, not a derivation of the small m_nu value).
   The native Dirac lane notes (neutrino_mass_reduction_to_dirac_note,
   neutrino_dirac_two_higgs_canonical_reduction_note) read unaudited. The argument
-  is conditioned on the empirical small m_nu (admitted observation), and any
+  is conditioned on P-MNU (empirical small m_nu, admitted observation) and
+  P-THERM (Gamma ~ y^2 T versus H, accepted thermalization comparator), and any
   dependency-retention issue belongs to independent audit bookkeeping; this
   source note does not predict the audit outcome. The equilibration estimate is
   order-of-magnitude with >= 4-9 decades of margin, so it is insensitive to
   O(1)-O(100) prefactor choices. The Gamma ~ y^2 T form is the standard
-  right-handed-Dirac-neutrino decoupling parametric, used as a comparator, not as
-  a derivation input.
+  right-handed-Dirac-neutrino decoupling parametric, used as a comparator, not
+  as a retained derivation input.
 ```
 
 ## 14. Author tone and audit boundary
@@ -555,10 +594,10 @@ its Dirac Yukawa, and across **both** branches of the framework's
 `retained_no_go` Dirac/seesaw fork — light Dirac (small Yukawa keeps
 `Gamma << H`) and heavy Majorana (not a light dof) — `nu_R` is excluded from the
 high-`T` light-relativistic census, conditioned on the **admitted empirical**
-small neutrino mass. The only route to `g_* = 112` is a thermalizing Dirac
-Yukawa (`y_nu >= y_thr`) excluded by that empirical observation. It is not a
-synthesis, introduces no
+small neutrino mass and P-THERM as the accepted thermalization comparator. The
+only route to `g_* = 112` is a thermalizing Dirac Yukawa (`y_nu >= y_thr`)
+excluded by that empirical observation. It is not a synthesis, introduces no
 repo vocabulary, promotes no other note's status, does **not** derive the small
-neutrino mass, does **not** pick the Dirac/Majorana branch, and claims no full
-derivation of `g_*` or of I12. The audit lane is the authority on effective
-status.
+neutrino mass, does **not** derive the comparator as retained, does **not** pick
+the Dirac/Majorana branch, and claims no full derivation of `g_*` or of I12. The
+audit lane is the authority on effective status.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py
-runner_sha256: f6fe920a6569a4e9eeb3b736cd6bd0a068a0be159e1f4498ab2fa24b4cb70fae
+runner_sha256: ab4cd1d324a48fc0d8d196efb67ae337cb4994cf83df7f69884fc8cf955a98e7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 
@@ -74,6 +74,8 @@ status: ok
   [PASS] note engages the retained Dirac/seesaw no-go
   [PASS] note states branch-independence (both branches -> exclusion)
   [PASS] note names small m_nu as an ADMITTED EMPIRICAL observation (not derived)
+  [PASS] note registers P-MNU as the separate admitted small-m_nu input
+  [PASS] note registers P-THERM as the separate accepted thermalization comparator
   [PASS] note records the steelman (N7) FOR g_* = 112 and its rebuttal
   [PASS] note states the honest ceiling: I12 partially-resolved (conditioned on small m_nu)
   [PASS] note states it does NOT fully derive I12 from first principles
@@ -108,10 +110,10 @@ status: ok
 ----------------------------------------------------------------------------------------
 SCORECARD
 ----------------------------------------------------------------------------------------
-  PASS = 66
+  PASS = 68
   FAIL = 0
 
-RESULT: PASS=66 FAIL=0
+RESULT: PASS=68 FAIL=0
 
 ----- stderr -----
 

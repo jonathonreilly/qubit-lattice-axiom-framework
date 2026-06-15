@@ -490,6 +490,17 @@ check(
     and ("small" in NOTE_TEXT.lower()),
 )
 check(
+    "note registers P-MNU as the separate admitted small-m_nu input",
+    "P-MNU (admitted observation)" in NOTE_TEXT
+    and "not a framework derivation of neutrino mass" in NOTE_TEXT,
+)
+check(
+    "note registers P-THERM as the separate accepted thermalization comparator",
+    "P-THERM (accepted thermalization comparator)" in NOTE_TEXT
+    and "Gamma_nu_R ~ y_nu^2 T" in NOTE_TEXT
+    and "not a retained theorem" in NOTE_TEXT,
+)
+check(
     "note records the steelman (N7) FOR g_* = 112 and its rebuttal",
     "steelman" in NOTE_TEXT.lower() and "rebut" in NOTE_TEXT.lower(),
 )

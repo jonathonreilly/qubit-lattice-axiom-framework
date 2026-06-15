@@ -1,37 +1,40 @@
-# Hierarchy Formula `v_cand = M_Pl x (7/8)^(1/4) x alpha_LM^16` — Structural Theorem over Declared Boundary Inputs, with Regulator-Conditional Exponent and Bounded VEV Readout
+# Hierarchy Formula `v_cand = M_Pl x (7/8)^(1/4) x alpha_LM^16` — Structural Support Theorem with Open B3/B4 Formula-Closure Gates
 
 **Date:** 2026-05-10 (originally, as the package-level honest-status
 packet); 2026-06-11 (theorem/boundary-input restructure — see changelog
+below); 2026-06-15 (audit-unblock boundary sharpening — see changelog
 below)
 **Claim type:** bounded_theorem
-**Claim scope:** one load-bearing structural theorem (T1), one declared
-candidate map (D1), one bounded numeric corollary (C1), the preserved
-package-level status correction of the canonical chain row, and a
-fenced class-D comparator appendix.
-(T1, load-bearing) Over the declared boundary inputs B1/B3 (with the
-coupling-power selection B4 declared, not derived), in exact or
-error-bracketed arithmetic recomputed from local algebra by the registered
-runner: (i) the naive lattice Dirac symbol on the even-`L` momentum
-torus has zero set `{0, pi}^d`, hence exactly `2^d` species — `16` at
-`d = 4`, Hamming staircase `(1,4,6,4,1)`, and `4 / 8 / 32` at
-`d = 2 / 3 / 5` (the exponent is regulator- and dimension-conditional
-data, not a regulator-independent integer); (ii) on the minimal `2^4`
-all-antiperiodic mean-field block, `det(u_0 D + m) = (m^2 + 4 u_0^2)^8`
-per color, so at `m = 0` the determinant magnitude is
-`(2 u_0)^16 = 4^8 u_0^16` — `u_0`-degree exactly equal to the species
-count `16`; (iii) the selector `(7/8)^(1/4)` is the exact closed form
-`g(4) = (eta(4)/zeta(4))^(1/4) = (1 - 2^(1-4))^(1/4)`; (iv) the
-dimensionless suppression constant
-`K := (7/8)^(1/4) alpha_LM^16 = 2.017224e-17` has zero continuous knobs
-beyond the licensed plaquette B1, and the algebraic identity (S)
+**Claim scope:** one load-bearing structural-support theorem (T1), one
+declared candidate-map appendix (D1), one bounded numeric readout
+appendix (C1), the preserved package-level status correction of the
+canonical chain row, and a fenced class-D comparator appendix.
+(T1, load-bearing) In exact or error-bracketed arithmetic recomputed
+from local algebra by the registered runner: (i) the naive lattice
+Dirac symbol on the even-`L` momentum torus has zero set `{0, pi}^d`,
+hence exactly `2^d` species — `16` at `d = 4`, Hamming staircase
+`(1,4,6,4,1)`, and `4 / 8 / 32` at `d = 2 / 3 / 5` (dimension- and
+regulator-surface conditional data, not a regulator-independent
+integer); (ii) on the minimal `2^4` all-antiperiodic mean-field block,
+`det(u_0 D + m) = (m^2 + 4 u_0^2)^8` per color, so at `m = 0` the
+determinant magnitude is `(2 u_0)^16 = 4^8 u_0^16` — `u_0`-degree
+exactly equal to the naive-surface species count `16`; (iii) the
+selector `(7/8)^(1/4)` is the exact closed form
+`g(4) = (eta(4)/zeta(4))^(1/4) = (1 - 2^(1-4))^(1/4)`; (iv) after the
+symbol `alpha_LM := alpha_bare/u_0` is declared over B1, the arithmetic
+constant `K := (7/8)^(1/4) alpha_LM^16 = 2.017224e-17` has zero
+continuous knobs beyond B1, and the algebraic identity (S)
 `alpha_LM^16 = alpha_bare^16 u_0^(-16)` shows its magnitude is supplied
 by `alpha_bare^16 = (4 pi)^(-16)`, not by the determinant power
-`u_0^16 = 0.124`; (v) the sensitivity algebra is
+`u_0^16 = 0.124`; (v) the sensitivity algebra of the declared map is
 `dln v_cand / dln <P> = -4` and `dln v_cand / dln M_Pl = +1` exactly.
-(D1, declared candidate map) `v_cand := M_Pl x (7/8)^(1/4) x
-alpha_LM^16` over the declared anchor B2. NOT an observable
-identification (that is B5, declared).
-(C1, bounded corollary) At the declared inputs,
+B3 (substrate/regulator selection) and B4 (coupling-power transport)
+are open formula-closure gates, not load-bearing authorities for T1 and
+not derived by this row.
+(D1, declared candidate map appendix) `v_cand := M_Pl x (7/8)^(1/4) x
+alpha_LM^16` over the declared anchor B2. NOT a derived formula closure
+and NOT an observable identification (that is B5, declared/open).
+(C1, bounded readout appendix) At the declared inputs,
 `v_cand = 246.282818290129 GeV`. NOT an EW VEV prediction.
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome.
@@ -43,6 +46,32 @@ anti-tuning certificates and four falsification legs, self-scans the
 parent note and its own source for overclaim/back-propagation tokens,
 and quarantines all PDG comparators in a terminal class-D section.
 Deterministic, stdlib-only, well under one minute.
+
+## Changelog — audit-unblock boundary sharpening (2026-06-15)
+
+The independent audit correctly flagged that a row cannot be treated as
+unconditional hierarchy-formula closure while B3 (substrate/regulator
+selection) and B4 (coupling-power transport) are declared rather than
+derived. This repair narrows the auditable claim surface without
+discarding the useful science:
+
+1. **T1 is now the load-bearing target.** The exact native content is
+   the species-count/determinant-degree/selector/arithmetic/sensitivity
+   support theorem recomputed by the runner. It is framework-native
+   support for the hierarchy lane, not a proof of the physical
+   hierarchy formula by itself.
+2. **B3 and B4 are formula-closure gates, not authorities.** The
+   staggered/naive four-direction substrate choice and the
+   `u_0^16 -> alpha_LM^16` transport remain open residuals. The note no
+   longer asks audit to accept them as declared load-bearing premises
+   for the theorem row.
+3. **D1/C1 stay fenced.** The candidate map and the `246.282818... GeV`
+   readout remain useful bounded appendices over declared inputs, but
+   they are not proposed as EW-VEV prediction, B3/B4 closure, or a
+   status upgrade for downstream rows.
+
+No audit ledger, generated queue, status summary, or verdict file is
+edited by this source repair.
 
 ## Changelog — why this note was repaired (2026-06-11)
 
@@ -129,28 +158,32 @@ scope. Nothing else in this note changed.
 
 ## What this note is and is NOT
 
-**This note proves** (T1) the structural skeleton of the hierarchy
-formula by local algebra over declared inputs: the exponent `16` is the
-computed naive-operator species count (regulator-conditional, B3); the
-minimal-block determinant carries exactly the matching `u_0`-degree
-`16`; the selector `(7/8)^(1/4)` is exact Riemann-Dirichlet algebra;
-and the resulting suppression constant `K = 2.017224e-17` is a
-zero-continuous-knob number of the declared surface with computed
+**This note proves** (T1) the structural support skeleton of the
+hierarchy lane by local algebra: the naive four-direction surface has
+computed species count `16`; the minimal-block determinant carries
+exactly the matching `u_0`-degree `16`; the selector `(7/8)^(1/4)` is
+exact Riemann-Dirichlet algebra; and, after the B1 symbol
+`alpha_LM := alpha_bare/u_0` is declared, the arithmetic constant
+`K = 2.017224e-17` is a zero-continuous-knob number with computed
 sensitivity algebra.
 
 **This note does NOT derive the electroweak scale.** The map from `K`
 to a dimension-1 readout requires the declared anchor B2 (`M_Pl`,
-Planck-lane import), the declared coupling-power selection B4 (the
-determinant supplies `u_0^16`, not `alpha_LM^16`; the magnitude is
-carried by `(4 pi)^(-16)`, whose transport source is an open gate), and
-the declared EWSB observable identification B5. C1 is therefore a
-bounded numeric readout — NOT an EW VEV prediction — and the PDG
-comparison lives exclusively in the fenced class-D appendix.
+Planck-lane import), the open substrate/regulator selection B3, the open
+coupling-power transport B4 (the determinant supplies `u_0^16`, not
+`alpha_LM^16`; the magnitude is carried by `(4 pi)^(-16)`, whose
+transport source is still an open gate), and the declared/open EWSB
+observable identification B5. C1 is therefore a bounded numeric readout
+appendix — NOT formula closure and NOT an EW VEV prediction — and the
+PDG comparison lives exclusively in the fenced class-D appendix.
 
-## Declared boundary inputs (B1-B5) and candidate map D1
+## Boundary inputs, open formula-closure gates, and candidate map D1
 
-T1 is a theorem **over** these declared inputs. None of them is claimed
-as derived by this note.
+B1 supplies the licensed dimensionless surface used by T1. B2 supplies
+only the dimensionful ruler for D1/C1. B3-B5 are open formula-closure
+gates: they may be used to display the declared candidate map, but they
+are not load-bearing authorities for T1 and are not claimed as derived
+by this note.
 
 - **B1 (licensed reuse number).** `<P> = 0.5934`, hence
   `u_0 = <P>^(1/4) = 0.877681381`, `alpha_bare = 1/(4 pi)`,
@@ -177,10 +210,10 @@ as derived by this note.
   theorem content T1 (including `K = 2.017224e-17`) consumes B2
   nowhere — only the dimension-1 readout C1 does; (ii) per the
   primitive's own policy, consuming the ruler does not by itself
-  upgrade C1 toward `retained_bounded`. This note does not derive
+  change C1's audit grade. This note does not derive
   `M_Pl`; elasticity `+1`: every relative shift in `M_Pl` passes
   through to `v_cand` unchanged. This was P1 of the 2026-05-10 packet.
-- **B3 (declared regulator selection; regulator-conditional exponent).**
+- **B3 (open substrate/regulator selection; regulator-conditional exponent).**
   The exponent is `N = 16 = 2^4`, the naive-operator Brillouin-zone
   corner species count on the four-direction (`Z^3 + t`) surface,
   proven exactly by the retained parent narrow theorem
@@ -199,7 +232,7 @@ as derived by this note.
   2026-05-10 packet (the four-direction surface is the
   Wick-rotated reading; the framework's spatial substrate is `Z^3`, and
   the runner computes the `d = 3` count `8` as a falsification leg).
-- **B4 (declared coupling-power selection).** The minimal-block
+- **B4 (open coupling-power transport gate).** The minimal-block
   determinant carries `u_0^16` (T1.ii; recomputed). The formula's
   suppression is `alpha_LM^16 = alpha_bare^16 u_0^(-16)` (identity (S),
   computed): the substitution `u_0^16 -> alpha_LM^16` is an algebraic
@@ -210,7 +243,7 @@ as derived by this note.
   magnitude is the named open gate
   `HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md`
   (file-pointer context; audited open_gate). This was P3.
-- **B5 (declared observable identification).** The identification of
+- **B5 (declared/open observable identification).** The identification of
   the map's dimension-1 output with the SM electroweak VEV (composite
   Higgs / taste-condensate convention). Not framework-proven; the
   conditional observable-principle row
@@ -227,9 +260,10 @@ as derived by this note.
   computed suppression constant `K`. The theorem content of this note
   is T1; D1 adds a name over B2, and the note says so.
 
-## Theorem T1 (load-bearing; recomputed by the runner)
+## Theorem T1 (load-bearing structural support; recomputed by the runner)
 
-Over B1/B3 (B4 declared), with exact arithmetic where stated:
+With exact arithmetic where stated, and with B3/B4 fenced as open
+formula-closure gates rather than accepted authorities:
 
 1. **Species count (regulator- and dimension-conditional data).** The
    naive central-difference symbol on the even-`L` momentum torus
@@ -281,7 +315,7 @@ Over B1/B3 (B4 declared), with exact arithmetic where stated:
 | --- | --- | --- | --- |
 | S1 | `<P> = 0.5934`, `u_0`, `alpha_bare = 1/(4 pi)`, `alpha_LM` | licensed boundary input | [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) reuse license (B1) |
 | S2 | `2^d` species; `16` at `d = 4`; staircase `(1,4,6,4,1)` | (C) recomputed from the symbol zero set | [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md) + runner |
-| S3 | regulator-conditionality of the exponent (boundary narrowing only) | declared boundary (B3) | [`HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) |
+| S3 | regulator-conditionality of the exponent (boundary narrowing only) | open formula-closure gate (B3) | [`HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) |
 | S4 | `det(u_0 D + m) = (m^2 + 4 u_0^2)^8`; `u_0`-degree `16` at `m = 0` | (C) first-principles compute on the minimal block | this note + registered runner (exact arithmetic) |
 | S5 | `(7/8)^(1/4) = g(4)` exact | (A) exact algebra + bracketed series | [`HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md) + runner |
 | S6 | `K = 2.017224e-17`; identity (S); sensitivity algebra | (A) exact/verified arithmetic over B1 | this note + registered runner |
@@ -289,11 +323,13 @@ Over B1/B3 (B4 declared), with exact arithmetic where stated:
 | S8 | `v_cand = 246.282818290129 GeV` | (A) exact arithmetic over B1/B2 | corollary C1 below |
 | S9 | comparison to PDG `v_obs` | (D) fenced comparator | comparator appendix only; never load-bearing |
 
-The load-bearing claim surface is S1-S6 (theorem T1 over declared
-boundaries). S7 is a declared map; S8 is corollary C1; S9 lives
-exclusively in the fenced comparator appendix.
+The load-bearing claim surface is S1, S2, S4, S5, and S6, plus S3 only
+as a boundary-narrowing warning inherited from the regulator-dependence
+no-go. S7 is a declared map; S8 is bounded readout appendix C1; S9
+lives exclusively in the fenced comparator appendix. B3 and B4 are open
+formula-closure gates, not load-bearing authorities for T1.
 
-## Corollary C1 (bounded numeric readout)
+## Appendix C1 (bounded numeric readout over open gates)
 
 Substituting B1 and B2 into D1:
 
@@ -301,14 +337,13 @@ Substituting B1 and B2 into D1:
            = 246.282818290129 GeV
         (zero free parameters GIVEN the declared inputs)
 
-**This is NOT an EW VEV prediction.** It is the anchored readout of the
-computed suppression constant `K` under the declared B2/B3/B4/B5
-boundaries. Downstream rows that consume a `v` value (the Higgs-note B2
-insensitivity certificate, the alpha_s scale label, the
-observable-principle readout) may cite C1 as a bounded readout with the
-declared admission tuple `(B2 anchor, B3 regulator selection, B4
-coupling-power selection, B5 observable identification)` — not as a
-derived VEV.
+**This is NOT an EW VEV prediction and NOT formula closure.** It is the
+anchored readout of the computed suppression constant `K` after the open
+B3/B4/B5 gates are supplied as declared context. Downstream rows that
+consume a `v` value (the Higgs-note B2 insensitivity certificate, the
+alpha_s scale label, the observable-principle readout) may cite C1 only
+as a bounded declared-input readout appendix with open gates, not as a
+derived VEV and not as retained support for B3/B4/B5.
 
 ## Sensitivity and anti-tuning certificates
 
@@ -317,11 +352,12 @@ input scale:
 
 - **Zero continuous knobs, declared.** Given T1, the readout is the
   parameter-free function `v_cand = M_Pl (7/8)^(1/4)
-  (alpha_bare / <P>^(1/4))^16` of the declared inputs `(<P>, M_Pl)`.
-  The structural content is discrete and exact: the integer `N = 16`
-  (B3), the rationals `7/8` and `1/4`, and `alpha_bare = 1/(4 pi)`.
-  `<P>` is fixed upstream by the plaquette lane at `beta = 6` under the
-  B1 license, not by any fit to an EW number; `M_Pl` is fixed by the
+  (alpha_bare / <P>^(1/4))^16` of the declared display inputs
+  `(<P>, M_Pl)`. The structural content is discrete and exact after the
+  open B3/B4 gates are supplied as context: the integer `N = 16`, the
+  rationals `7/8` and `1/4`, and `alpha_bare = 1/(4 pi)`. `<P>` is
+  fixed upstream by the plaquette lane at `beta = 6` under the B1
+  license, not by any fit to an EW number; `M_Pl` is fixed by the
   Planck lane (B2).
 - **Elasticities, computed.** `dln v_cand / dln <P> = -4` (a `1 %`
   shift in `<P>` moves `v_cand` by `-4 %`) and
@@ -354,8 +390,8 @@ input scale:
     `N` displaces by `>= 3` orders of magnitude more than the B1
     resolution window.
   - F2 coupling power: replacing `alpha_LM^16` by the determinant's own
-    `u_0^16 -> x 5.94e15` (no hierarchy at all — B4 is load-bearing
-    and declared); by `alpha_bare^16 -> x 0.1240` (readout `30.54
+    `u_0^16 -> x 5.94e15` (no hierarchy at all — this is the B4 open
+    transport gate); by `alpha_bare^16 -> x 0.1240` (readout `30.54
     GeV`); by `alpha_s(v)^16 = (alpha_bare/u_0^2)^16 -> x 8.0651
     = u_0^(-16)` (readout `1986.3 GeV`).
   - F3 selector: removing `(7/8)^(1/4) -> x 1.033946` (`+3.39 %`,
@@ -391,16 +427,15 @@ No PASS rests on agreement with a PDG number.
 The canonical chain row `COMPLETE_PREDICTION_CHAIN_2026_04_15.md`
 (file-pointer context) ships the formula with a "Hierarchy theorem
 (taste determinant) DERIVED" label. That label remains demoted by this
-row to **bounded numerical match / bounded readout with declared
-boundaries; closure path open**. The 2026-05-10 packet's four
-load-bearing P1-P4 pins map onto the declared boundary inputs of this
-restructure as follows:
+row to **bounded structural support plus bounded declared-input readout;
+closure path open**. The 2026-05-10 packet's four load-bearing P1-P4
+pins map onto the ruler/input plus open-gate surfaces as follows:
 
 | 2026-05-10 pin | Now declared as | Status |
 | --- | --- | --- |
 | P1 `M_Pl` import | B2 (external UV anchor) | open; Planck-lane authority |
-| P2 Wick rotation / 4D taste counting | B3 (regulator selection; regulator-conditional per the standing no-go) | open; substrate gate |
-| P3 `u_0^16 -> alpha_LM^16` substitution | B4 (coupling-power selection; identity (S) computed; magnitude gate open) | open; delta-zero open gate |
+| P2 Wick rotation / 4D taste counting | B3 (open substrate/regulator selection; regulator-conditional per the standing no-go) | open; substrate gate |
+| P3 `u_0^16 -> alpha_LM^16` substitution | B4 (open coupling-power transport; identity (S) computed; magnitude gate open) | open; delta-zero open gate |
 | P4 EWSB observable identification | B5 (declared identification) | open; observable-principle surface |
 
 None of B2-B5 is closed by this restructure. What changed is that the
@@ -455,10 +490,10 @@ This note does **not** claim:
   (it is sub-resolution in B1 and attributable in B2; both directions
   are stated).
 
-The honest ceiling for this row is bounded: T1 is exact computed
-structure over the declared B1/B3 surface, and B2-B5 are real open work
-owned by the Planck, substrate-gate, transport, and
-observable-identification lanes.
+The honest ceiling for this row is bounded structural support: T1 is
+exact computed structure over the B1/native algebra surface, while
+B2-B5 are real open work owned by the Planck, substrate-gate,
+transport, and observable-identification lanes.
 
 ## Re-audit triggers
 
@@ -469,7 +504,7 @@ closes; if the plaquette lane re-licenses `<P>` at different precision
 or if the Planck lane shifts `M_Pl` (elasticity `+1` passes any shift
 through to C1).
 
-## Dependencies (one-hop, load-bearing)
+## Dependencies (one-hop for T1 plus boundary policing)
 
 - [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
   — B1 reuse license for `<P> = 0.5934` (consumed at S1/S6/S8).
@@ -480,9 +515,10 @@ through to C1).
   — retained narrow theorem for `(7/8)^(1/4) = g(4)` with integer-`d`
   uniqueness (S5; also recomputed by the runner).
 - [`HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md)
-  — B3 boundary-narrowing citation (S3): the exponent identification is
+  — B3 boundary-policing citation (S3): the exponent identification is
   regulator-dependent; consumed as a restriction on what this note may
-  claim, never as positive support.
+  claim, never as positive formula support and never as a closure of
+  the substrate gate.
 
 Context file pointers (backticked throughout; deliberately omitted from
 the citation graph as non-load-bearing):

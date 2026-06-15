@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "color_generation_independent_z3_structures_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "color_generation_independent_z3_structures_2026-06-05",
         "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19",
         "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08",
         "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
         "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
         "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-        "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
+        "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
+        "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e9d62ccf9c33c4f62eaa8e2823dc0f26426acb80e0808bbe09efb9125606a9fd",
+      "note_hash": "03b330ea8df96435963b3543707723a5f5f12e02041f3eae13cd3450e485d52a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1514 |
-| Retained-grade rows, including boxed decorations | 1398 |
+| Applied audit verdicts | 1515 |
+| Retained-grade rows, including boxed decorations | 1399 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 209 |
-| Retained bounded rows | 927 |
+| Retained bounded rows | 928 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 40 |
-| Unaudited rows | 1478 |
+| Unaudited rows | 1477 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 27 |
 | Audited renaming rows | 30 |
@@ -33,37 +33,37 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1480 |
-| Ready rows | 63 |
+| Total pending rows | 1479 |
+| Ready rows | 62 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 446 |
+| Medium pending | 445 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08`](../../docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16`](../../docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`pmns_tm2_residual_consequence_bounded_note_2026-05-26`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md) - medium; unaudited
 - [`observable_principle_p1_p2_from_qubit_trace_note_2026-05-20`](../../docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md) - medium; unaudited
+- [`hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16`](../../docs/HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING_BOUNDED_NOTATION_EQUIVALENCE_NOTE_2026-05-16.md) - medium; unaudited
 - [`work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md) - medium; unaudited
 - [`lattice_3d_inverse_square_kernel_helper_note_2026-04-04`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) - medium; unaudited
-- [`hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16`](../../docs/HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING_BOUNDED_NOTATION_EQUIVALENCE_NOTE_2026-05-16.md) - medium; unaudited
+- [`koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02`](../../docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **427**.
+- Non-retained-grade cited rows in publication tables: **426**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 159 |
 | high | `unaudited` | 158 |
-| medium | `unaudited` | 90 |
+| medium | `unaudited` | 89 |
 | critical | `open_gate` | 3 |
 | high | `audited_conditional` | 3 |
 | medium | `audited_conditional` | 3 |
@@ -93,6 +93,6 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
 - `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
 - `plaquette_self_consistency_note` - critical; 1008 descendants; score 51.479
-- `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
+- `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 50.513
 - `key_terminology` - critical; 1120 descendants; score 47.631
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 890 descendants; score 45.299
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 891 descendants; score 45.301

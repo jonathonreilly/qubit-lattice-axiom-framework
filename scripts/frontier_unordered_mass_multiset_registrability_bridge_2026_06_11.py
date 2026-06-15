@@ -41,6 +41,8 @@ Checked legs (each PASS/FAIL):
       lambda_i + lambda_j + lambda_i*lambda_j -- violates additivity
   G6  hostile within-orbit order probe f(k, x) = [k == 1] * x -- violates the
       per-record orbit-constancy identity r_k(delta) = r_{sigma(k)}(-delta)
+  H1  source-scope hygiene: the paired note names P-dep as an explicit
+      conditional premise and does not claim Record derives it
 
 Prints one line per check and a final `TOTAL: PASS=N FAIL=0` scorecard.
 No randomness-dependent acceptance: violations must be witnessed for EVERY
@@ -49,11 +51,17 @@ for every sampled parameter set and delta.
 """
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 
 TOL = 1e-10
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / (
+    "UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md"
+)
 
 
 def check(name: str, ok: bool) -> None:
@@ -333,6 +341,26 @@ for a, B in PARAM_SETS:
         ok &= np.allclose(sp_p, sp_m, atol=1e-9)
 check("D1 boundary points sin(3 delta)=0: cos(3 delta)=+/-1 exactly, "
       "registrable family flip-equal, G4 hostile vanishes there", ok)
+
+# ---------------------------------------------------------- source scope ----
+note = NOTE.read_text(encoding="utf-8")
+required_markers = [
+    "conditional on the supplied P-dep premise",
+    "explicit conditional premise",
+    "does **not** derive P-dep from the Record axiom",
+    "not a new axiom",
+    "not an approved primitive premise",
+]
+forbidden_markers = [
+    "P-dep is a reading of the Record boundary, not an extra import",
+    "grounded in the Record boundary",
+    "P-dep is the only admissible reading of the Record boundary",
+    "realist slip",
+]
+ok = all(marker in note for marker in required_markers)
+ok &= not any(marker in note for marker in forbidden_markers)
+check("H1 source scope: P-dep explicit conditional premise, not Record-derived",
+      ok)
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 if FAIL:

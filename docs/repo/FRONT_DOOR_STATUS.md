@@ -12,10 +12,10 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1463 |
-| Retained-grade rows, including boxed decorations | 1372 |
+| Applied audit verdicts | 1464 |
+| Retained-grade rows, including boxed decorations | 1373 |
 | Retained positive theorems | 213 |
-| Retained no-go rows | 206 |
+| Retained no-go rows | 207 |
 | Retained bounded rows | 909 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 38 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1531 |
+| Total pending rows | 1530 |
 | Ready rows | 88 |
 | Cycle-break targets | 0 |
-| Critical pending | 296 |
+| Critical pending | 295 |
 | High pending | 287 |
 | Medium pending | 466 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`quark_route2_source_domain_bridge_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - critical; audit_in_progress
+- [`s3_time_theta_to_slice_coupling_note`](../../docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) - critical; unaudited
 - [`yt_p1_i_s_lattice_pt_citation_note_2026-04-17`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) - critical; unaudited
 - [`higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08`](../../docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md) - critical; unaudited
 - [`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) - critical; unaudited

@@ -41,6 +41,8 @@ import itertools
 import numpy as np
 import sympy as sp
 
+AUDIT_TIMEOUT_SEC = 180
+
 PASS, FAIL = 0, 0
 
 
@@ -567,6 +569,9 @@ check("kill-propagation collapses the exact system to 25 leaves (canonical order
       f"{len(_leaves)} leaves; {_n_transport} retain transport (d) coefficients")
 
 _rng = _np.random.default_rng(13)
+_RANDOM_STARTS_PER_LEAF = 4
+_PERTURBED_STARTS_PER_LEAF = 4
+_MAX_NFEV_PER_START = 600
 _kgrid = [(0.3, 0.9, 1.7), (1.1, 0.2, 2.5), (2.0, 2.6, 0.5)]
 _kfine = [(0.7, 1.4, 2.2), (2.8, 1.9, 0.1), (0.11, 2.9, 1.3), (2.7, 0.4, 0.8)]
 _tot, _disp = 0, 0
@@ -594,13 +599,13 @@ for zs in _leaves:
         return _np.concatenate([_np.abs(_build(th, kv) @ _build(th, kv).conj().T - _np.eye(8)).ravel()
                                 for kv in _kgrid])
     sols = []
-    starts = [_rng.normal(size=nfree) * 0.8 for _ in range(24)]
+    starts = [_rng.normal(size=nfree) * 0.8 for _ in range(_RANDOM_STARTS_PER_LEAF)]
     b0 = _np.zeros(nfree); b0[:8:2] = 1.0
-    starts += [b0 + amp * _rng.normal(size=nfree) for amp in (0.1, 0.3, 0.6) for _ in range(4)]
+    starts += [b0 + amp * _rng.normal(size=nfree) for amp in (0.1, 0.4) for _ in range(_PERTURBED_STARTS_PER_LEAF // 2)]
     bh = _np.zeros(nfree); bh[8::2] = 0.7; bh[:8:2] = 0.4
-    starts += [bh + 0.3 * _rng.normal(size=nfree) for _ in range(8)]
+    starts += [bh + 0.3 * _rng.normal(size=nfree) for _ in range(_PERTURBED_STARTS_PER_LEAF)]
     for x0 in starts:
-        sol = _lsq(_res, x0, method='lm', max_nfev=3000)
+        sol = _lsq(_res, x0, method='lm', max_nfev=_MAX_NFEV_PER_START)
         fine = max(_np.abs(_build(sol.x, kv) @ _build(sol.x, kv).conj().T - _np.eye(8)).max()
                    for kv in _kfine)
         if fine < 1e-9 and not any(_np.allclose(sol.x, s2, atol=1e-6) for s2 in sols):

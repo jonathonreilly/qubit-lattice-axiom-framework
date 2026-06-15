@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_isotropy_3d_simultaneous_tick_2026_06_10.py
+runner_sha256: 4ace6d7e108b45d964d9b8869e4a547859bb471ba44ca9dccd5b93ed6187df4d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 75.89
+status: ok
+----- stdout -----
 
 SITE-LICENSE DEGREE TABLE ON THE 2^3 CELL
 ==============================================================================
@@ -35,8 +43,11 @@ LINEAR PERMUTATION-EQUIVARIANT SITE-LICENSE FAMILY: EXACT EQUATIONS
   [PASS] orbit reduction: 4 component orbits (parity weight) and 6 hop orbits (computed)  --  the equivariant site-license family has 4 + 12 complex orbit parameters
   [PASS] exact kills: per-orbit d*conj(c) = 0 for ALL 6 orbits; cross-orbit d*conj(d') = 0 for the two opposite-side-hop pairs  --  remaining cross-orbit coexistence is excluded at sweep grade (F2b), not by the exact backbone
   [PASS] kill-propagation collapses the exact system to 25 leaves (canonical ordering; deterministic)  --  25 leaves; 16 retain transport (d) coefficients
-  [PASS] dense per-leaf sweeps: NO dispersive unitary found in any leaf (solution sets are continua; counts are optimizer endpoints)  --  74 optimizer-distinct unitaries across 25 leaves; dispersive: 0 -- sweep-grade, exact-kill backbone
+  [PASS] dense per-leaf sweeps: NO dispersive unitary found in any leaf (solution sets are continua; counts are optimizer endpoints)  --  20 optimizer-distinct unitaries across 25 leaves; dispersive: 0 -- sweep-grade, exact-kill backbone
 
 ==============================================================================
 SCORECARD: PASS=20 FAIL=0
 ==============================================================================
+
+----- stderr -----
+

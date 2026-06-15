@@ -23,11 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 910 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1521 |
+| unaudited | 1520 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 29 |
 | ~~audited_conditional~~ | 14 |
+| ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,10 +62,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1341 |
 | `audited_conditional` | 14 |
 | `audited_decoration` | 46 |
-| `audited_failed` | 25 |
+| `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1838 |
+| `unaudited` | 1837 |
 
 | claim_type | count |
 |---|---:|
@@ -1536,6 +1537,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `axiom_first_kms_condition_theorem_note_2026-05-01` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -2322,6 +2324,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** In each conical zero window, replace |E_b(p_j+q)| by |V_jb q| with O(T^5) absolute error and evaluate ∫ d^3q/(2π)^3 |V_jb q| n_F(|V_jb q|/T) = |det V_jb|^-1 (7/8)(π^2/30) T^4.  _(class `A`)_
 - **chain closes:** True — The theorem follows from the explicit kernel-geometry hypothesis (Z), compactness/gap off the zero windows, the determinant Jacobian for the tangent cone, and the retained 7/8 Fermi integral. The open items named in the note are boundaries of scope, not missing steps in the conditional theorem.
 - **rationale:** The coefficient check closes independently: Γ(4)η(4)=7π^4/120 and the phase-space factor gives 7π^2/240=(7/8)(π^2/30), while the linear change of variables contributes exactly |det V|^-1. The O(T^5) replacement bound follows from the quadratic cone error and exponential Lipschitz decay of x n_F(x/T); the falsification exponents T^2 and T^(5/2) follow by codim-1 and quadratic rescaling. The runner source performs actual finite-kernel spectral, zero-set, quadrature, and mode-sum computations rather than merely printing constants, and the cited non-retained axiom memo is explicitly an accepted premise while the other dependencies are retained-grade.
+- **auditor confidence:** high
+
+### `axiom_first_kms_condition_theorem_note_2026-05-01`
+
+- **Note:** [`AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md`](../../docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-dimensional KMS identity, strip analyticity, path-integral trace correspondence, and claimed uniqueness for the RP/spectrum reconstructed transfer-matrix Hilbert space at beta_th = L_tau a_tau.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-204521-18f133e217-axiom_first_kms_condition_th`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note identifies the periodic transfer trace with the Gibbs trace by taking T = exp(-a_tau H), beta_th = L_tau a_tau, so Z_beta = tr(exp(-beta_th H)) = tr(T^{L_tau}), and then proves F(t+i beta_th)=G(t) by finite-dimensional cyclicity.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional cyclic-trace KMS identity closes for a supplied bounded H and beta. The claimed RP/spectrum bridge does not close as written because the provided current spectrum authority defines the positive transfer object as the two-step T := T_hat^2 with H = -(1/(2 a_tau)) log(T/M_T), not the source note's single-step normalization.
+- **rationale:** Issue: the source's load-bearing normalization T = exp(-a_tau H) and beta_th = L_tau a_tau contradict the provided spectrum authority, which says the positive RP object is T := T_hat^2 advancing two lattice steps and H = -(1/(2 a_tau)) log(T/M_T). Why this blocks: Z = tr(T^{L_tau}) = tr(exp(-beta_th H)) and the single-slice path-integral correspondence do not follow as written, and the runner only checks a generic single-step model that hard-codes the stale normalization. Repair target: add a blocked-time KMS bridge or rescope beta_th/time-period/operator claims to the two-step transfer matrix. Claim boundary until fixed: the finite-dimensional Gibbs KMS cyclic-trace identity itself is valid for a supplied bounded H and beta.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-04-11.md`
+  - `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06`

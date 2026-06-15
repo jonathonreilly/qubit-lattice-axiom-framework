@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 291,
+    "critical": 290,
     "high": 287,
     "leaf": 482,
     "medium": 466
@@ -8,34 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_kms_condition_theorem_note_2026-05-01",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms_2026-04-11",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.074,
-      "note_path": "docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_kms_condition_check.py",
-      "transitive_descendants": 380
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -202,15 +174,15 @@
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained_bounded",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.006,
+      "load_bearing_score": 13.511,
       "note_path": "docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py",
-      "transitive_descendants": 256
+      "transitive_descendants": 257
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -45854,6 +45826,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 85,
-  "total_pending": 1526
+  "ready_count": 84,
+  "total_pending": 1525
 }

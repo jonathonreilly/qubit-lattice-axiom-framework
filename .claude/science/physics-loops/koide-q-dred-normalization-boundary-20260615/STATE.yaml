@@ -1,0 +1,20 @@
+slug: koide-q-dred-normalization-boundary-20260615
+goal: "Fix post-audit Koide reduced-observable issue by isolating the D_red normalization freedom."
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+target_claim_id: koide_q_reduced_observable_restriction_theorem_2026-04-22
+active_route: "Can the reduced two-slot determinant algebra derive D_red = I_2?"
+result: "No. D_red = c I_2 gives the same normalized law after source-coordinate rescaling for every c > 0."
+files_touched:
+  - docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md
+  - docs/KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md
+  - scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py
+  - logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt
+open_imports:
+  - "Positive repair still needs physical response-unit bridge or approved normalization premise fixing c = 1."
+review_status: pending_external_review
+pr_status: pending
+next_exact_action: "Run focused checks, commit, push, and open a review PR."
+

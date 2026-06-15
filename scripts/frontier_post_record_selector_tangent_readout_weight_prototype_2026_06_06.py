@@ -16,7 +16,7 @@ LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
 MEASURE_RUNNER = ROOT / "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
 PASS = 0
 FAIL = 0
-EXPECTED_ROWS = 8
+EXPECTED_ROWS = 11
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -100,7 +100,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
-            "`selector_tangent_readout_weight` | 8",
+            "`selector_tangent_readout_weight` | 11",
             "selector/tangent readout-weight rows need a supplied readout/tangent bridge",
         ],
     )

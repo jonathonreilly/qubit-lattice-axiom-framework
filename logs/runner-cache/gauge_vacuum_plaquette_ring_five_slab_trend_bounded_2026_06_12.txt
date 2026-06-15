@@ -1,0 +1,201 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_ring_five_slab_trend_bounded_2026_06_12.py
+runner_sha256: cedcfd71a34aa41d90e1263d59eda508499bce5249f68dd20c89692cafc1a2eb
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 9.49
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette ring N=5 finite-trend bounded diagnostic
+N=5 memory estimate before packet build or solve:
+  state space = 25^5 = 9765625
+  one vector = 74.506 MiB (78.125 MB decimal)
+  three vectors = 223.517 MiB
+  five vectors = 372.529 MiB
+  eigsh basis at ncv=24 = 1.746 GiB
+  dense transfer storage would be 693.889 TiB
+  solver choice = deterministic power iteration, matrix-free
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80
+source NMAX=7, source MODE_MAX=200
+primary internal-link reading: derived dimension-stripped D_lambda
+
+================================================================================================================
+Part 1: finite packet and N=5 state-space gates
+================================================================================================================
+one-word state count = 25
+N=5 ring state count = 9765625
+fusion table shape = (25, 25, 25)
+dimension-stripped pair factor min/max = 1.000000000000000 / 1.697455815865860
+PASS: one-word packet has 25 states
+PASS: ring N=5 state space has 25^5 = 9765625 states
+PASS: N=5 dense transfer is not materialized
+PASS: N=5 power working estimate stays in a few-vector range
+      five_vectors=372.529 MiB, eigsh_ncv24=1.746 GiB
+PASS: fusion table is finite and nonnegative
+PASS: dimension-stripped internal factor is finite and positive
+
+================================================================================================================
+Part 2: simple-ring power solves
+================================================================================================================
+
+ring_N3_simple_cycle:
+  units = 3, active_edges = (0, 1, 2)
+  dimension = 15625
+  vector bytes = 122.070 KiB
+  dense transfer storage would be 1.819 GiB
+  solver = deterministic-power-matrix-free
+  iterations = 20, matvec_calls = 21
+  internal factor min/max = 1.000000000000000 / 4.890974918740656
+  convergence trace:
+    iter | eigenvalue | residual_inf | residual_l2 | relative_delta
+       1 | 0.041516464722110 | 1.641e-01 | 6.653e-01 | n/a
+       2 | 11.047464719922129 | 1.110e-01 | 3.571e-01 | 9.962e-01
+       3 | 11.060599041169413 | 1.878e-02 | 6.125e-02 | 1.187e-03
+       4 | 11.061020126784305 | 5.573e-03 | 1.512e-02 | 3.807e-05
+       5 | 11.061046115116515 | 1.652e-03 | 3.893e-03 | 2.350e-06
+      10 | 11.061047963603130 | 2.057e-06 | 4.529e-06 | 3.148e-12
+      20 | 11.061047963605635 | 2.790e-12 | 6.141e-12 | 3.212e-16
+  eigenvalue = 11.061047963605635
+  final residual_inf = 2.790e-12
+  final residual_l2 = 6.141e-12
+  psi_min = 8.554e-67
+  marginal spread = 9.992e-16
+  conjugation residual = 1.110e-16
+  rho(1,0) = 0.706140932689393
+  rho(1,1) = 0.240890371746946
+  rho min/max = 6.579e-25 / 1.000e+00
+  P = 0.443670871217023
+  u0 = 0.816141062604744
+  alpha_s(alpha_bare=1) = 1.501307111378476
+PASS: ring_N3_simple_cycle residual_inf is small
+PASS: ring_N3_simple_cycle residual_l2 is small
+PASS: ring_N3_simple_cycle Perron vector is nonnegative up to tolerance
+PASS: ring_N3_simple_cycle rho is admissible on B4
+PASS: ring_N3_simple_cycle translation marginals agree
+
+ring_N4_simple_cycle:
+  units = 4, active_edges = (0, 1, 2, 3)
+  dimension = 390625
+  vector bytes = 2.980 MiB
+  dense transfer storage would be 1.110 TiB
+  solver = deterministic-power-matrix-free
+  iterations = 23, matvec_calls = 24
+  internal factor min/max = 1.000000000000000 / 8.302213821070376
+  convergence trace:
+    iter | eigenvalue | residual_inf | residual_l2 | relative_delta
+       1 | 0.014443185834063 | 1.135e-01 | 5.937e-01 | n/a
+       2 | 25.906867711811554 | 5.771e-01 | 2.106e+00 | 9.994e-01
+       3 | 26.121182285737468 | 1.403e-01 | 5.513e-01 | 8.205e-03
+       4 | 26.136009866187226 | 3.795e-02 | 1.523e-01 | 5.673e-04
+       5 | 26.137146533236514 | 1.056e-02 | 4.293e-02 | 4.349e-05
+      10 | 26.137245198856757 | 2.011e-05 | 8.681e-05 | 1.677e-10
+      20 | 26.137245199263820 | 8.793e-11 | 3.937e-10 | 1.359e-16
+      23 | 26.137245199263816 | 2.193e-12 | 9.836e-12 | 1.359e-16
+  eigenvalue = 26.137245199263816
+  final residual_inf = 2.193e-12
+  final residual_l2 = 9.836e-12
+  psi_min = 6.432e-89
+  marginal spread = 1.138e-15
+  conjugation residual = 1.110e-16
+  rho(1,0) = 0.711524433459604
+  rho(1,1) = 0.239885439681919
+  rho min/max = 5.760e-25 / 1.000e+00
+  P = 0.443819912885700
+  u0 = 0.816209595222888
+  alpha_s(alpha_bare=1) = 1.501055009006506
+PASS: ring_N4_simple_cycle residual_inf is small
+PASS: ring_N4_simple_cycle residual_l2 is small
+PASS: ring_N4_simple_cycle Perron vector is nonnegative up to tolerance
+PASS: ring_N4_simple_cycle rho is admissible on B4
+PASS: ring_N4_simple_cycle translation marginals agree
+
+ring_N5_simple_cycle:
+  units = 5, active_edges = (0, 1, 2, 3, 4)
+  dimension = 9765625
+  vector bytes = 74.506 MiB
+  dense transfer storage would be 693.889 TiB
+  solver = deterministic-power-matrix-free
+  iterations = 20, matvec_calls = 21
+  internal factor min/max = 1.000000000000000 / 14.092641135137832
+  convergence trace:
+    iter | eigenvalue | residual_inf | residual_l2 | relative_delta
+       1 | 0.004998847183138 | 5.533e-02 | 5.175e-01 | n/a
+       2 | 57.119470714114030 | 4.625e-01 | 3.570e+00 | 9.999e-01
+       3 | 57.376342939038231 | 7.160e-02 | 5.728e-01 | 4.477e-03
+       4 | 57.383051780572259 | 1.278e-02 | 1.002e-01 | 1.169e-04
+       5 | 57.383258506056421 | 2.349e-03 | 1.842e-02 | 3.603e-06
+      10 | 57.383265849933395 | 1.868e-06 | 1.045e-05 | 6.840e-13
+      20 | 57.383265849935952 | 1.942e-12 | 1.019e-11 | 1.238e-16
+  eigenvalue = 57.383265849935952
+  final residual_inf = 1.942e-12
+  final residual_l2 = 1.019e-11
+  psi_min = 6.545e-111
+  marginal spread = 5.040e-14
+  conjugation residual = 2.776e-17
+  rho(1,0) = 0.708705386538277
+  rho(1,1) = 0.240221325991754
+  rho min/max = 6.163e-25 / 1.000e+00
+  P = 0.443741696435695
+  u0 = 0.816173631741584
+  alpha_s(alpha_bare=1) = 1.501187295448990
+PASS: ring_N5_simple_cycle residual_inf is small
+PASS: ring_N5_simple_cycle residual_l2 is small
+PASS: ring_N5_simple_cycle Perron vector is nonnegative up to tolerance
+PASS: ring_N5_simple_cycle rho is admissible on B4
+PASS: ring_N5_simple_cycle translation marginals agree
+PASS: N=3 anchor is reproduced by the shared power path
+      delta=1.610e-14
+PASS: N=4 anchor is reproduced by the shared power path
+      delta=4.441e-15
+
+================================================================================================================
+Part 3: one-link cut to open N=5 matvec gate
+================================================================================================================
+probe constant: max |T_cut_ring5 v - T_open5 v| = 0.000e+00; relative = 0.000e+00
+probe centered_ramp: max |T_cut_ring5 v - T_open5 v| = 0.000e+00; relative = 0.000e+00
+probe mod13_centered: max |T_cut_ring5 v - T_open5 v| = 0.000e+00; relative = 0.000e+00
+PASS: cut-ring N=5 and open-chain N=5 matvecs agree on deterministic probes
+
+================================================================================================================
+Part 4: ring ladder measurement and fenced comparator distances
+================================================================================================================
+Plaquette reuse license: comparator numbers are comparison context only.
+```text
+simple-ring ladder:
+N=3 simple ring    | N=3 | P=0.443670871217023 | increment=baseline | |P-0.5934|=0.149729128782977 | distance_to_open4_low=+0.006765991539280 | distance_to_open4_high=+0.005397614201569
+N=4 simple ring    | N=4 | P=0.443819912885700 | increment=+0.000149041668676 | |P-0.5934|=0.149580087114300 | distance_to_open4_low=+0.006915033207957 | distance_to_open4_high=+0.005546655870246
+N=5 simple ring    | N=5 | P=0.443741696435695 | increment=-0.000078216450005 | |P-0.5934|=0.149658303564305 | distance_to_open4_low=+0.006836816757952 | distance_to_open4_high=+0.005468439420241
+
+increment N=3->4 = +0.000149041668676
+increment N=4->5 = -0.000078216450005
+|increment N=4->5| / |increment N=3->4| = 0.524795855410589
+open-chain four-strip context interval = [0.436904879677743, 0.438273257015454]
+```
+finite trend answer: the N=3 to N=4 rise does not continue at N=5; the next finite increment flips sign and has smaller magnitude.
+non_load_bearing_geometric_diagnostic: the simple-ring sample shows a damped two-increment oscillation over N=3,4,5, not a monotone rise.
+PASS: simple-ring N=3 to N=4 finite increment is positive
+PASS: simple-ring N=4 to N=5 finite increment is negative
+PASS: simple-ring N=4 to N=5 absolute increment is smaller
+PASS: N=5 ring remains above N=3 ring
+PASS: ring N=3,4,5 readouts sit above the open-chain four-strip context interval
+PASS: ring readouts remain inside the source anchor interval
+      P_triv=0.422531739600, P_ring5=0.443741696436, P_loc=0.452407159000
+
+================================================================================================================
+Part 5: note hygiene and named residuals
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note keeps runner and cache as plain-text pointers
+PASS: note keeps durable context pointers as backticked non-links
+PASS: note uses markdown links for one-hop authorities
+PASS: note avoids overreach closure language
+PASS: note avoids audit-status labels for claims
+Named residuals: transverse-topology underdetermination in the cited geometry notes; finite simple ring widths N=3,4,5; finite B4 weight box; finite Bessel support; scalar class-channel internal-link contraction; future all-link 6j/intertwiner normalization; full rim eta evaluation; strip-depth direction; wider slab limit; 3D stack; L_perp limit; analytic P(6); no repinning.
+PASS: runner names residuals without retiring them
+
+TOTAL: PASS=37, FAIL=0
+
+----- stderr -----
+

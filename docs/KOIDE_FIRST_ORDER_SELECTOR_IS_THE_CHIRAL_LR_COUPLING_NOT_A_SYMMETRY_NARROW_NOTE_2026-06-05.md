@@ -6,9 +6,12 @@
 gate for the Koide magnitude `r = |b|²/a²` and **corrects two premature walls**. The selector between the
 first-order/holomorphic reading (`r=1/2`) and the second-order/modulus reading (`r=1`) is **exactly a chiral
 left-right coupling** `M(b)⊗σ₊` across the chirality factor — not a continuous symmetry and not a static
-complex structure. Within the generation factor `R³` it is **structurally forbidden** (C₃-equivariance ⟺
-commutes-with-Γ_χ ⟺ second-order); the framework supplies the chiral **grading** `ε` (#2685) but **not** the
-chiral **coupling**, whose action term is the gated `AC_φλ` corner realization.
+complex structure. Within the native generation factor `R³` it is **structurally forbidden** because a
+`C₃`-equivariant operator is circulant and therefore commutes with `Γ_χ`, while the only
+`C₃`-equivariant `Γ_χ`-anticommuting operator is zero. The converse is not claimed: operators can preserve
+the singlet/doublet split and commute with `Γ_χ` without being `C₃`-equivariant. The framework supplies the
+chiral **grading** `ε` (#2685) but **not** the chiral **coupling**, whose action term is the gated `AC_φλ`
+corner realization.
 **Claim scope:** this is **not a derivation of `r = 1/2`**. It localizes the open atom to one dynamics gate
 and corrects prior framing. Two corrections: (i) the **U(1)_b/C³=I incompatibility is a red herring** — `Q`
 is δ-independent, so the (1,1)-vs-(1,2) count is a **functional choice**, not a quotient by a continuous
@@ -45,7 +48,10 @@ The real selector is the **order** of the generation determinant:
 - **Within `R³` the first-order reading is structurally forbidden.** The generation chirality grading
   `Γ_χ=(2/3)(I+C+C²)−I` is itself **circulant**, so every C₃-equivariant (circulant) operator **commutes**
   with `Γ_χ`. The only C₃-equivariant `Γ_χ`-anticommuting operator is `0` (`comm(C)∩anticomm(Γ_χ)={0}`,
-  runner (3)). C₃-equivariance ⟺ commutes-with-`Γ_χ` ⟺ **second-order** ⟺ `r=1`. (This is the bounded
+  runner (3)). This is a forward/native-circulant implication, not a global equivalence: commuting with
+  `Γ_χ` only says the singlet and doublet subspaces are preserved, and it does not by itself imply
+  `C₃`-equivariance. The native C₃-equivariant mass therefore stays on the **second-order**/`r=1` branch.
+  (This is the bounded
   support identity [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](./KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md);
   the native circulant mass is correspondingly **Berry-flat** — b-independent Fourier eigenvectors, runner (5)
   — so it lands on the second-order/`r=1` branch, *derived* not assumed, per
@@ -69,9 +75,9 @@ The real selector is the **order** of the generation determinant:
 |---|---|
 | `Q=(1+2r)/3` δ-independent → U(1)_b red herring | exact (runner (1)) |
 | discrete Z₃-character index → (1,1) → r=1/2, C³=I respected | exact (runner (2)) |
-| within `R³`: C₃-equivariance ⟺ second-order ⟺ r=1 | exact (runner (3),(5)); cited no-go |
+| native circulant `R³` family: C₃-equivariance forces second-order/Berry-flat branch ⇒ `r=1`; converse not claimed outside that family | exact (runner (3),(3c),(5)); cited no-go |
 | factor-crossing L-R coupling `M(b)⊗σ₊` = the first-order escape | exact (runner (4)) |
-| framework supplies grading `ε`, not the coupling | the gate (AC_φλ corner realization) |
+| framework supplies grading `ε`, not the coupling | open gate (AC_φλ corner realization; no retained bridge supplied here) |
 | **derive r=1/2** | **open — gated on the corner-mass L-R coupling** |
 
 The contribution is to **name the selector precisely** (a chiral L-R coupling, not a symmetry, not a static
@@ -94,9 +100,21 @@ This is exactly the gate, not a closure.
 ## Forbidden-import / reprove-and-cite discipline
 
 - Every identity (δ-independence, clock-character multiplicity, `comm(C)∩anticomm(Γ_χ)={0}`, the `R³⊗C²`
-  escape, Fourier Berry-flatness) is **reproven** from the C₃ primitive in the runner (sympy, 8/8 exact).
+  escape, the non-converse counterexample, Fourier Berry-flatness) is **reproven** from the C₃ primitive in
+  the runner (sympy exact).
 - McKean-Singer / Dolbeault index, Coleman-Weinberg, and the Berry-phase comparators are non-derivation
   context only. No PDG values; `r=1/2` is named only as the target this note does **not** derive.
+
+## 2026-06-12 audit-scope repair
+
+This repair removes the overbroad shorthand `C₃-equivariance ⟺ commutes-with-Γ_χ`. The only retained-side
+claim used here is the narrower native-family statement: for circulant generation masses, C₃-equivariance
+forces commutation with `Γ_χ`, and the C₃-equivariant/`Γ_χ`-anticommuting intersection is zero.
+The converse is **not** claimed in the full endomorphism algebra; the runner exhibits a non-circulant
+counterexample.
+
+This repair does **not** supply a retained bridge from `AC_φλ` to the physical `M(b)⊗σ₊` coupling or to the
+physical `r`-weighting. Those remain the load-bearing open gates for any positive `r=1/2` derivation.
 
 ## Dependencies (citation-graph visible)
 

@@ -81,8 +81,10 @@ The runner also constructs an explicit `4 x 4` massive Dirac Hamiltonian and
 checks:
 
 - the single-particle spectrum is `{+E, +E, -E, -E}`;
+- the Hamiltonian eigenspinor columns are orthonormal;
 - in the orthonormal spectral-projector convention,
   `sum_s(u_s u_s^dag + v_s v_s^dag) = I_4`;
+- the positive- and negative-energy projectors are orthogonal and idempotent;
 - in the `2E`-normalized spinor convention, the unweighted sum is `2E I_4`,
   while the field-normalized sum `(1/(2E)) sum_s(u_s u_s^dag + v_s v_s^dag) = I_4`;
 - the Bose-sign combination `sum_s(u_s u_s^dag - v_s v_s^dag)` is not `I_4`;
@@ -114,4 +116,4 @@ anticommutator is canonical after the normalization convention is included.
 python3 scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py
 ```
 
-Expected: `TOTAL: PASS=9 FAIL=0`.
+Expected: `TOTAL: PASS=12 FAIL=0`.

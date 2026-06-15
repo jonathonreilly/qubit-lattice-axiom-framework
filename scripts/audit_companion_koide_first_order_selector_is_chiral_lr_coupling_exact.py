@@ -28,7 +28,8 @@ chk("(2b) discrete Z3 character index -> multiplicity (1,1,1) -> block (singlet,
     mult==(1,1,1))
 
 # (3) WITHIN-R3 NO-GO: Gamma_chi=(2/3)J-I (J=I+C+C^2) is CIRCULANT -> every C3-equivariant (circulant) H COMMUTES
-#     with Gamma_chi -> comm(C) cap anticomm(Gamma_chi) = {0} -> only second-order (commuting) structure -> r=1.
+#     with Gamma_chi -> comm(C) cap anticomm(Gamma_chi) = {0} -> only second-order (commuting) native structure -> r=1.
+#     The converse is false in the full matrix algebra: preserving the singlet/doublet split is weaker than C3-equivariance.
 J=eye(3)+C+C*C; Gam=Rational(2,3)*J-eye(3)
 chk("(3a) Gamma_chi=(2/3)(I+C+C^2)-I is circulant with eigenvalues {+1,-1,-1} (generation chirality grading)",
     simplify(Gam*C-C*Gam)==zeros(3,3) and sorted(Gam.eigenvals().keys(),key=lambda z:sp.re(z))==[-1,1])
@@ -38,6 +39,10 @@ anti=H*Gam+Gam*H                                    # require anticommute -> {H,
 sol=sp.solve([anti[i,j] for i in range(3) for j in range(3)],[a,p,q],dict=True)
 chk("(3b) comm(C) cap anticomm(Gamma_chi) = {0}: the ONLY C3-equivariant Gamma_chi-anticommuting operator is 0 -> within R^3, first-order is FORBIDDEN -> r=1",
     sol==[{a:0,p:0,q:0}] or all(s[a]==0 and s[p]==0 and s[q]==0 for s in sol))
+Pe=eye(3)-Rational(1,3)*J
+K=Pe*Matrix([[1,0,0],[0,0,0],[0,0,-1]])*Pe
+chk("(3c) converse guard: an operator can commute with Gamma_chi while failing C3-equivariance, so the source may claim only the forward/native-circulant implication",
+    simplify(K*Gam-Gam*K)==zeros(3,3) and simplify(K*C-C*K)!=zeros(3,3))
 
 # (4) THE ESCAPE (factor-crossing): on R^3 (x) C^2, I3(x)sx is C3-equivariant AND Gamma_chi-anticommuting;
 #     the L-R coupling M(b)(x)sigma_+ wires the chirality factor to the b-dependent mass.
@@ -59,7 +64,16 @@ from pathlib import Path
 NOTE=Path(__file__).resolve().parent.parent/"docs"/"KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md"
 if NOTE.exists():
     tt=NOTE.read_text()
-    toks=["**Type:** narrow_theorem","red herring","not a derivation of `r = 1/2`","L-R coupling","grading","Independent audit required"]
+    toks=[
+        "**Type:** narrow_theorem",
+        "red herring",
+        "not a derivation of `r = 1/2`",
+        "L-R coupling",
+        "grading",
+        "The converse is **not** claimed",
+        "no retained bridge supplied here",
+        "Independent audit required",
+    ]
     chk("(6) source note keeps the localization/correction/no-derivation boundary", all(k in tt for k in toks))
 else:
     chk("(6) source note present", False)
@@ -70,8 +84,9 @@ print("\n%d PASS, %d FAIL"%(P,F))
 if F: raise SystemExit(1)
 print("\nBLOCK-1 SYNTHESIS verified: (1) U(1)_b is a RED HERRING (Q delta-independent; count=functional choice).\n"
       "(2) the DISCRETE Z3-character index gives (1,1)->r=1/2, C^3=I respected (so an index CAN select the block\n"
-      "balance; #2743's 'index' is realized as the discrete clock grading). (3) WITHIN R^3, C3-equivariance\n"
-      "<=> commutes-with-Gamma_chi <=> second-order -> r=1 (comm(C) cap anticomm(Gamma_chi)={0}). (4) the escape\n"
+      "balance; #2743's 'index' is realized as the discrete clock grading). (3) WITHIN R^3, C3-equivariant/native\n"
+      "circulant mass implies the second-order/Berry-flat branch -> r=1, and comm(C) cap anticomm(Gamma_chi)={0};\n"
+      "the converse commutes-with-Gamma_chi=>C3-equivariant is false and is not claimed. (4) the escape\n"
       "is the factor-crossing L-R coupling M(b)(x)sigma_+ (exists in the algebra). (5) the native mass is Berry-flat\n"
       "-> second-order/r=1. NET: the r=1/2 selector is EXACTLY the chiral L-R coupling; the framework supplies the\n"
       "grading eps but NOT the coupling -> gated on the AC_phi_lambda corner realization. NOT a derivation of r=1/2.")

@@ -98,6 +98,45 @@ apparatus Hamiltonian, durable endogenous records, or a native detector path.
 It only routes the finite logical-operator selection through a retained-bounded
 source instead of leaving it as an unregistered convention.
 
+## 2026-06-12 Native Preparation/Readout Hard Residual
+
+The finite operator algebra is no longer the live blocker: RALA supplies
+the retained-axis `Z_axis`, `X_axis`, Bell projectors, and ideal logical
+teleportation closure on the finite audited surfaces. The live blocker
+is operational.
+
+What this packet can currently say:
+
+- the Poisson/CHSH small-surface ground states, after tracing cells and
+  spectator tastes, contain a high-fidelity retained-axis logical Bell
+  resource relative to the null case;
+- the retained-axis operator convention is finite-algebraic and
+  retained-bounded;
+- the standard teleportation channel algebra closes for a supplied
+  logical resource.
+
+What it still does not derive:
+
+- a native preparation Hamiltonian or schedule that produces the
+  Poisson resource without offline diagonalization;
+- a physical detector/readout path for the retained-axis logical bit
+  and Bell record;
+- endogenous durable records or apparatus dynamics that implement the
+  ideal logical operations.
+
+The adjacent preparation/readout probe and operator-consistent
+end-to-end artifacts are therefore support-only. They narrow the target
+but do not replace the missing native preparation/readout theorem. This
+row remains an open gate for a physical deterministic resource, not a
+retained teleportation-resource theorem.
+
+Source-surface summary: this remains an open gate. The packet partially closes
+the direct blocker by preserving bounded offline Poisson/CHSH extraction
+diagnostics and retained-bounded finite retained-axis logical operator algebra.
+The live blocker is still a native preparation/readout and apparatus theorem.
+No retained-grade proposal or status promotion is made here; the independent
+audit lane remains the only authority for effective status.
+
 ## Script
 
 New runner:
@@ -237,3 +276,9 @@ The remaining repair path is to prove the native preparation/readout theorem
 for this retained-axis last-taste carrier. Until that lands, the small-surface
 positive numbers in the table are bounded diagnostics plus finite
 operator-algebra support, not a physical deterministic resource derivation.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [teleportation_operator_consistent_end_to_end_note](TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md)

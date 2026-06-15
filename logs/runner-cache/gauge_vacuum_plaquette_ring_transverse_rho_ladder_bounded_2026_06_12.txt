@@ -1,0 +1,325 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_ring_transverse_rho_ladder_bounded_2026_06_12.py
+runner_sha256: 9000eacbe28ccbfcfe94407b0ed39d3019dcb6b782d3b2f6f199d4182642aac4
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.10
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette ring transverse rho ladder
+Status authority: independent audit lane only. This source runner does not set, predict, promote, or demote any audit outcome.
+No new imports: repo-internal finite packet quantities only.
+beta=6.0, tensor NMAX=4, tensor MODE_MAX=80
+source NMAX=7, source MODE_MAX=200
+primary internal-link reading: derived dimension-stripped D_lambda
+
+================================================================================================================
+Part 1: finite packet and state-space gates
+================================================================================================================
+one-word state count = 25
+N=4 ring state count = 390625
+N=4 dense transfer storage would be 1.110 TiB
+fusion table shape = (25, 25, 25)
+dimension-stripped pair factor min/max = 1.000000000000000 / 1.697455815865860
+PASS: one-word packet has 25 states
+PASS: ring N=4 state space has 25^4 = 390625 states
+PASS: ring N=4 dense transfer is not materialized
+PASS: fusion table is finite and nonnegative
+PASS: dimension-stripped internal factor is finite and positive
+
+================================================================================================================
+Part 2: open-chain anchors
+================================================================================================================
+
+open_N1_word:
+  topology = word/no internal link
+  units = 1, active_edges = ()
+  dimension = 25
+  dense transfer storage would be 4.883 KiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 1.000000000000000
+  eigenvalue = 1.012369912747822
+  Perron residual = 1.110e-16
+  psi_min = 1.985e-23
+  marginal spread = 0.000e+00
+  conjugation residual = 3.469e-18
+  rho(1,0) = 0.378514922317117
+  rho(1,1) = 0.171042019091802
+  rho min/max = 2.287e-23 / 1.000e+00
+  P = 0.434215413259920
+  u0 = 0.811757498147861
+  alpha_s(alpha_bare=1) = 1.517565281370676
+PASS: open_N1_word Perron residual is small
+PASS: open_N1_word rho is admissible on B4
+
+open_N2_chain:
+  topology = open chain
+  units = 2, active_edges = (0,)
+  dimension = 625
+  dense transfer storage would be 2.980 MiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 1.697455815865860
+  eigenvalue = 2.135111708649122
+  Perron residual = 4.441e-16
+  psi_min = -9.630e-35
+  marginal spread = 1.388e-16
+  conjugation residual = 1.110e-16
+  rho(1,0) = 0.573562917034962
+  rho(1,1) = 0.204646875517536
+  rho min/max = 4.405e-24 / 1.000e+00
+  P = 0.439904783618900
+  u0 = 0.814403574488747
+  alpha_s(alpha_bare=1) = 1.507719867658089
+PASS: open_N2_chain Perron residual is small
+PASS: open_N2_chain rho is admissible on B4
+
+open_N3_chain:
+  topology = open chain
+  units = 3, active_edges = (0, 1)
+  dimension = 15625
+  dense transfer storage would be 1.819 GiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 2.881356246816831
+  eigenvalue = 5.015948012281475
+  Perron residual = 8.882e-16
+  psi_min = -0.000e+00
+  marginal spread = 4.876e-01
+  conjugation residual = 2.776e-17
+  rho(1,0) = 0.469564971869026
+  rho(1,1) = 0.200666996037837
+  rho min/max = 3.648e-24 / 1.000e+00
+  P = 0.436904879677743
+  u0 = 0.813011565722019
+  alpha_s(alpha_bare=1) = 1.512887213540179
+PASS: open_N3_chain Perron residual is small
+PASS: open_N3_chain rho is admissible on B4
+
+open_N4_chain:
+  topology = open chain
+  units = 4, active_edges = (0, 1, 2)
+  dimension = 390625
+  dense transfer storage would be 1.110 TiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 4.890974918740656
+  eigenvalue = 11.029722455357629
+  Perron residual = 8.882e-16
+  psi_min = -3.673e-40
+  marginal spread = 2.489e-01
+  conjugation residual = 1.110e-16
+  rho(1,0) = 0.516765488421587
+  rho(1,1) = 0.202499597996785
+  rho min/max = 3.993e-24 / 1.000e+00
+  P = 0.438273257015453
+  u0 = 0.813647403409428
+  alpha_s(alpha_bare=1) = 1.510523597956060
+PASS: open_N4_chain Perron residual is small
+PASS: open_N4_chain rho is admissible on B4
+PASS: word anchor reproduces the landed one-word value
+      delta=5.551e-17
+PASS: open N=2 chain reproduces the landed two-strip dimension-stripped value
+      delta=1.665e-16
+PASS: open N=3 chain reproduces the landed three-strip dimension-stripped value
+      delta=4.996e-16
+
+================================================================================================================
+Part 3: ring solves
+================================================================================================================
+
+ring_N2_doubled_edge:
+  topology = two-node doubled-edge ring
+  units = 2, active_edges = (0, 1)
+  dimension = 625
+  dense transfer storage would be 2.980 MiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 2.881356246816831
+  eigenvalue = 5.536956173690301
+  Perron residual = 8.882e-16
+  psi_min = 2.351e-38
+  marginal spread = 5.551e-16
+  conjugation residual = 1.110e-16
+  rho(1,0) = 0.726012528790230
+  rho(1,1) = 0.239343780988132
+  rho min/max = 4.962e-25 / 1.000e+00
+  P = 0.444222385798573
+  u0 = 0.816394574868299
+  alpha_s(alpha_bare=1) = 1.500374864441449
+PASS: ring_N2_doubled_edge Perron residual is small
+PASS: ring_N2_doubled_edge Perron vector is nonnegative up to tolerance
+PASS: ring_N2_doubled_edge rho is admissible on B4
+PASS: ring_N2_doubled_edge translation marginals agree
+
+ring_N3_simple_cycle:
+  topology = simple transverse ring
+  units = 3, active_edges = (0, 1, 2)
+  dimension = 15625
+  dense transfer storage would be 1.819 GiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 4.890974918740656
+  eigenvalue = 11.061047963605636
+  Perron residual = 8.882e-16
+  psi_min = -3.009e-36
+  marginal spread = 9.992e-16
+  conjugation residual = 1.110e-16
+  rho(1,0) = 0.706140932688793
+  rho(1,1) = 0.240890371746918
+  rho min/max = 6.580e-25 / 1.000e+00
+  P = 0.443670871217007
+  u0 = 0.816141062604737
+  alpha_s(alpha_bare=1) = 1.501307111378503
+PASS: ring_N3_simple_cycle Perron residual is small
+PASS: ring_N3_simple_cycle Perron vector is nonnegative up to tolerance
+PASS: ring_N3_simple_cycle rho is admissible on B4
+PASS: ring_N3_simple_cycle translation marginals agree
+
+ring_N4_simple_cycle:
+  topology = simple transverse ring
+  units = 4, active_edges = (0, 1, 2, 3)
+  dimension = 390625
+  dense transfer storage would be 1.110 TiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 8.302213821070376
+  eigenvalue = 26.137245199263820
+  Perron residual = 4.441e-15
+  psi_min = -1.505e-35
+  marginal spread = 1.305e-15
+  conjugation residual = 1.110e-16
+  rho(1,0) = 0.711524433459755
+  rho(1,1) = 0.239885439681920
+  rho min/max = 5.754e-25 / 1.000e+00
+  P = 0.443819912885704
+  u0 = 0.816209595222890
+  alpha_s(alpha_bare=1) = 1.501055009006499
+PASS: ring_N4_simple_cycle Perron residual is small
+PASS: ring_N4_simple_cycle Perron vector is nonnegative up to tolerance
+PASS: ring_N4_simple_cycle rho is admissible on B4
+PASS: ring_N4_simple_cycle translation marginals agree
+PASS: N=2 ring is a doubled-edge multigraph and is reported separately
+PASS: N=4 ring solve is matrix-free at 390625 states
+
+================================================================================================================
+Part 4: cut gates
+================================================================================================================
+
+ring_N2_cut_edge0:
+  topology = cut doubled-edge ring
+  units = 2, active_edges = (1,)
+  dimension = 625
+  dense transfer storage would be 2.980 MiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 1.697455815865860
+  eigenvalue = 2.135111708649122
+  Perron residual = 4.441e-16
+  psi_min = -9.630e-35
+  marginal spread = 1.388e-16
+  conjugation residual = 1.110e-16
+  rho(1,0) = 0.573562917034962
+  rho(1,1) = 0.204646875517536
+  rho min/max = 4.405e-24 / 1.000e+00
+  P = 0.439904783618900
+  u0 = 0.814403574488747
+  alpha_s(alpha_bare=1) = 1.507719867658089
+
+ring_N2_cut_edge1:
+  topology = cut doubled-edge ring
+  units = 2, active_edges = (0,)
+  dimension = 625
+  dense transfer storage would be 2.980 MiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 1.697455815865860
+  eigenvalue = 2.135111708649122
+  Perron residual = 4.441e-16
+  psi_min = -9.630e-35
+  marginal spread = 1.388e-16
+  conjugation residual = 1.110e-16
+  rho(1,0) = 0.573562917034962
+  rho(1,1) = 0.204646875517536
+  rho min/max = 4.405e-24 / 1.000e+00
+  P = 0.439904783618900
+  u0 = 0.814403574488747
+  alpha_s(alpha_bare=1) = 1.507719867658089
+
+ring_N3_cut_closing_edge:
+  topology = cut simple ring
+  units = 3, active_edges = (0, 1)
+  dimension = 15625
+  dense transfer storage would be 1.819 GiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 2.881356246816831
+  eigenvalue = 5.015948012281475
+  Perron residual = 8.882e-16
+  psi_min = -0.000e+00
+  marginal spread = 4.876e-01
+  conjugation residual = 2.776e-17
+  rho(1,0) = 0.469564971869026
+  rho(1,1) = 0.200666996037837
+  rho min/max = 3.648e-24 / 1.000e+00
+  P = 0.436904879677743
+  u0 = 0.813011565722019
+  alpha_s(alpha_bare=1) = 1.512887213540179
+
+ring_N4_cut_closing_edge:
+  topology = cut simple ring
+  units = 4, active_edges = (0, 1, 2)
+  dimension = 390625
+  dense transfer storage would be 1.110 TiB
+  solver = eigsh-matrix-free
+  internal factor min/max = 1.000000000000000 / 4.890974918740656
+  eigenvalue = 11.029722455357629
+  Perron residual = 8.882e-16
+  psi_min = -3.673e-40
+  marginal spread = 2.489e-01
+  conjugation residual = 1.110e-16
+  rho(1,0) = 0.516765488421587
+  rho(1,1) = 0.202499597996785
+  rho min/max = 3.993e-24 / 1.000e+00
+  P = 0.438273257015453
+  u0 = 0.813647403409428
+  alpha_s(alpha_bare=1) = 1.510523597956060
+PASS: cutting either N=2 doubled ring edge reproduces open N=2 rho and P
+PASS: cutting the N=3 closing ring link reproduces open N=3 rho and P
+PASS: cutting the N=4 closing ring link reproduces the open N=4 rho and P
+
+================================================================================================================
+Part 5: ladder measurement and fenced comparator distances
+================================================================================================================
+Plaquette reuse license: comparator is used only as comparison/reuse context.
+```text
+open-chain ladder:
+open_N1_word           | N=1 | links=0 | P=0.434215413259920 | increment=baseline | |P-0.5934|=0.159184586740080
+open_N2_chain          | N=2 | links=1 | P=0.439904783618900 | increment=+0.005689370358980 | |P-0.5934|=0.153495216381100
+open_N3_chain          | N=3 | links=2 | P=0.436904879677743 | increment=-0.002999903941157 | |P-0.5934|=0.156495120322257
+open_N4_chain          | N=4 | links=3 | P=0.438273257015453 | increment=+0.001368377337710 | |P-0.5934|=0.155126742984547
+
+ring diagnostic and simple-ring ladder:
+ring_N2_doubled_edge   | N=2 | links=2 | P=0.444222385798573 | increment=baseline | |P-0.5934|=0.149177614201427
+ring_N3_simple_cycle   | N=3 | links=3 | P=0.443670871217007 | increment=-0.000551514581566 | |P-0.5934|=0.149729128782993
+ring_N4_simple_cycle   | N=4 | links=4 | P=0.443819912885704 | increment=+0.000149041668697 | |P-0.5934|=0.149580087114296
+```
+open increments = ['+0.005689370358980', '-0.002999903941157', '+0.001368377337710']
+ring doubled-edge N2 -> simple C3 increment = -0.000551514581566
+simple-ring C3 -> C4 increment = +0.000149041668697
+non_load_bearing_geometric_diagnostic: simple-ring N=3 to N=4 has a positive finite increment.
+monotone_read: the simple-ring sample has one positive increment; including the doubled-edge N=2 diagnostic is not monotone.
+PASS: open-chain finite ladder keeps the previously observed parity oscillation
+PASS: simple-ring N=3 to N=4 finite increment is positive
+PASS: including doubled-edge N=2 does not give a monotone ring sequence
+PASS: ring readouts remain inside the source anchor interval
+      P_triv=0.422531739600, P_ring3=0.443670871217, P_ring4=0.443819912886, P_loc=0.452407159000
+
+================================================================================================================
+Part 6: note hygiene
+================================================================================================================
+PASS: note delegates status to the independent audit lane
+PASS: note records topology underdetermination rather than selecting a closed loop
+PASS: note uses markdown links for one-hop authorities
+PASS: note keeps durable context pointers as backticked non-links
+PASS: note records finite bracket caution without extrapolating a width limit
+PASS: note avoids overreach closure language
+PASS: note avoids audit-status labels for claims
+Named residuals: transverse-topology underdetermination in the cited geometry notes; finite ring widths N=3 and N=4; doubled-edge N=2 multigraph diagnostic; finite B4 weight box; finite Bessel support; scalar class-channel internal-link contraction; future all-link 6j/intertwiner normalization; full rim eta evaluation; strip-depth direction; wider slab limit; 3D stack; L_perp limit; analytic P(6); no repinning.
+PASS: runner names residuals without retiring them
+
+TOTAL: PASS=45, FAIL=0
+
+----- stderr -----
+

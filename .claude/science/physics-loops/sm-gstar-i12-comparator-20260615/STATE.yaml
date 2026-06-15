@@ -1,0 +1,25 @@
+loop_slug: sm-gstar-i12-comparator-20260615
+goal: "Supply a separate comparator bridge for the SM gstar I12 conditional audit blocker."
+target_status: bounded-support
+runtime_mode: resume
+cycle_count: 1
+active_route: "I12 empirical/thermal comparator bridge"
+hard_residual: "framework-native derivation of small neutrino mass"
+branch: physics-loop/sm-gstar-i12-comparator-20260615
+base: origin/main
+lock_mode: degraded
+lock_note: "Shared lock script failed earlier on /Users/jonreilly permissions; clean worktree used instead."
+files_touched:
+  - docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md
+  - docs/SM_GSTAR_I12_NUR_THERMAL_EXCLUSION_BOUNDED_NOTE_2026-05-29.md
+  - scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
+  - logs/runner-cache/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.txt
+  - .claude/science/physics-loops/sm-gstar-i12-comparator-20260615/
+open_imports:
+  - "small m_nu empirical comparator"
+  - "Gamma ~ y_nu^2 T thermalization comparator"
+trace_gate: direct_blocker_closure_partial
+review_disposition: "mechanical preflight only; independent reviewer/audit required"
+pr_status: pending
+next_exact_action: "Run check-only, audit_lint strict, diff check, then commit/push/open PR."
+stop_condition: "Block closed after PR creation; continue campaign if another uncovered repair target remains."

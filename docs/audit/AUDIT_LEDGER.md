@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 925 |
+| **retained_bounded** | 926 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1485 |
+| unaudited | 1484 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1363 |
+| `audited_clean` | 1364 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1802 |
+| `unaudited` | 1801 |
 
 | claim_type | count |
 |---|---:|
@@ -365,6 +365,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_continuum_limit_velocity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_current_bank_quantitative_mapping_note_2026-04-21` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_dple_abcc_no_go_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5057,6 +5058,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** theorem on the open DM gate; it cannot derive the A-BCC axiom  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 3 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic SU(3) 3 x 3bar singlet/octet channel-weight bridge: the raw 64:1 squared color-coupling ratio folds with 1:8 multiplicities to the declared same-carrier formula s_vis=(8 s_1+s_8)/9, excluding physical-color identification and downstream DM closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-231814-6d2d291a42-dm_full_closure_64_to_1_chan`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The multiplicity-folded weights w_1=(1/9)(4/3)^2=16/81 and w_8=(8/9)(1/6)^2=2/81 have ratio 8, so (w_1 s_1+w_8 s_8)/(w_1+w_8)=(8 s_1+s_8)/9.  _(class `A`)_
+- **chain closes:** True — The cited SU(3) carrier input supplies the 1+8 decomposition and normalization; the channel scalars follow from standard Casimir algebra, giving -4/3 and +1/6, and the rational folding arithmetic is exact. The note preserves the physical-color deferral and does not use observational constants, endpoint selection, or parent-state claims.
+- **rationale:** The load-bearing step is a finite algebraic identity over the provided SU(3) carrier and Sommerfeld notation, not a tuned numerical match or a new definition. Independent checking via the Casimir relation T_q.T_qbar=(C_R-2C_F)/2 verifies the singlet and octet signs and factors, and the weights reduce exactly to 16/81 and 2/81. The runner source actually constructs Gell-Mann generators, projectors, and exact rational weights; its weaker textual boundary checks are not needed for the algebraic closure. The clean verdict applies only to the stated bounded algebraic bridge, not to physical SM-color identification or the downstream parent theorem.
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16`

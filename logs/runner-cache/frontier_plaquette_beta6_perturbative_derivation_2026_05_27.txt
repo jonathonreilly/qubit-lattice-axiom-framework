@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: a75e73b7d0f4c78b2056055aba621f4e6c81ad3430270cb9a5dbc96574c8a468
+runner_sha256: e1c48d3511bc2dac59d649382997a5133065f357121b78e0c63d7f3d79829451
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.46
 status: ok
 ----- stdout -----
 Plaquette beta=6 perturbative-derivation admitted-input diagnostic runner
@@ -23,6 +23,12 @@ PASS: note excludes actual beta=6 surface and non-perturbative route claims
       diagnostic remains conditional and finite-route only
 PASS: note firewalls retained beta=6 surface claim after demotion
       source repair remains demotion-only
+PASS: note explicitly elects admitted-input diagnostic option
+      auditor's second repair option is source-locked
+PASS: note blocks downstream reuse of admitted beta=6 inputs
+      downstream authority must come from a separate retained/effective-bounded row
+PASS: note keeps non-perturbative routes open
+      finite perturbative route only
 
 ==============================================================================
 C1: admitted beta=6 Wilson-gauge constants
@@ -266,7 +272,7 @@ PASS: admitted MC comparator 0.5934 enters only as comparator (not derivation in
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
 PASS: note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-      length = 16657 chars
+      length = 17921 chars
 PASS: note declares Status authority: independent audit lane only
       audit-lane authority pattern present
 PASS: note declares no new axioms / no new primitives
@@ -274,7 +280,7 @@ PASS: note declares no new axioms / no new primitives
 PASS: note declares admitted MC comparator 0.5934 as comparator only
       admitted comparator pattern present
 
-TOTAL: PASS=29, FAIL=0
+TOTAL: PASS=32, FAIL=0
 
 ----- stderr -----
 

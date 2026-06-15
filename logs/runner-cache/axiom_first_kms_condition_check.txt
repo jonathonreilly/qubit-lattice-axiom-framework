@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_kms_condition_check.py
-runner_sha256: c373c9009966dd65ba8bbc896ce5bee1fcd13481a6e44ba3e4b7af5c26cc05ac
+runner_sha256: 0c153a9199d94f7b98474f91da5284c2e7b85411d70fe05e664f311fd4aef4a6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
@@ -59,22 +59,26 @@ the same KMS-symmetric value as F(t).
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 3: equilibrium uniqueness — Gibbs is the unique alpha_t-
-        invariant KMS state at beta_th
+TEST 3: equilibrium uniqueness — finite matrix-unit KMS equations
 ------------------------------------------------------------------------
-Diagonal cyclic identity: rho_nn / rho_mm = exp(-beta_th(E_n - E_m))
-forces rho = exp(-beta_th H) / Z up to overall normalization.
+For A=|i><j| and B=|j><i|, KMS at t=0 forces
+  p_j = exp(beta_th(E_i - E_j)) p_i.
+Inside a degenerate energy block this forces equal weights.
 
-  max | consistent_rho - gibbs_rho | = 0.000e+00
+  degenerate test spectrum          = [0.  1.  1.  2.5 4.  4. ]
+  Gibbs matrix-unit max residual    = 1.110e-16
+  non-scalar degenerate-block resid = 2.488e-01
   STATUS: PASS
 
 ------------------------------------------------------------------------
 TEST 4: path-integral correspondence
         Z = tr T^{L_tau} = tr exp(-beta_th H)
+        tr(T^{L_tau-j} O T^j) = tr(T^{L_tau} O)
 ------------------------------------------------------------------------
   tr T^6              = 1.0010345889
   tr exp(-beta_th H)     = 1.0010345889
   | difference |         = 4.441e-16
+  max slice cyclicity residual = 1.688e-16
   STATUS: PASS
 
 ------------------------------------------------------------------------

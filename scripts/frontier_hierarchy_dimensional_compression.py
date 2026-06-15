@@ -31,7 +31,12 @@ import sys
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTE_PATH = ROOT / "docs" / "HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md"
+PARENT_NOTE_PATH = ROOT / "docs" / "HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md"
+COMPANION_NOTE_PATH = (
+    ROOT
+    / "docs"
+    / "HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md"
+)
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -102,23 +107,35 @@ def condensate_density(Ls: int, Lt: int, u0: float, mass: float) -> float:
 
 
 def check_source_firewall() -> None:
-    note = NOTE_PATH.read_text(encoding="utf-8")
-    flat = " ".join(note.split())
+    parent = PARENT_NOTE_PATH.read_text(encoding="utf-8")
+    companion = COMPANION_NOTE_PATH.read_text(encoding="utf-8")
+    parent_flat = " ".join(parent.split())
+    companion_flat = " ".join(companion.split())
     check(
-        "source note demotes stale bounded-theorem proposal to conditional support",
-        "**Type:** open_gate / conditional-support" in note
-        and "**Claim type:** open_gate / conditional D=4 arithmetic support" in note
-        and "proposed_claim_type: open_gate / conditional-support" in note
-        and "proposal_allowed: false" in note
-        and "**Type:** bounded_theorem" not in note
-        and "proposed_claim_type: bounded_theorem" not in note,
+        "source notes preserve parent conditional-support and companion numerical-diagnostic scope",
+        "**Type:** open_gate / conditional-support" in parent
+        and "**Claim type:** open_gate / conditional D=4 arithmetic support" in parent
+        and "proposed_claim_type: open_gate / conditional-support" in parent
+        and "proposal_allowed: false" in parent
+        and "**Type:** bounded_theorem" not in parent
+        and "proposed_claim_type: bounded_theorem" not in parent
+        and "Hierarchy Dimensional Compression Audited-Scope Narrowing Bounded Note" in companion
+        and "**Claim type:** bounded_theorem" in companion
+        and "does not propose a status promotion" in companion_flat
+        and "bounded numerical-diagnostic support note" in companion_flat
+        and "not a derivation of the dimension-4 bridge" in companion_flat,
     )
     check(
-        "source note leaves D=4 readout bridge open",
-        "## 2026-06-12 audit firewall: D=4 readout bridge still open" in note
-        and "does not derive the D=4 readout / effective-potential-density bridge" in flat
-        and "does not derive the staggered taste count" in flat
-        and "No new axiom, Tier-A admission, observed target, or audit status" in flat,
+        "source notes leave D=4 readout/effective-potential bridge open",
+        "## 2026-06-12 audit firewall: D=4 readout bridge still open" in parent
+        and "does not derive the D=4 readout / effective-potential-density bridge" in parent_flat
+        and "retained bounded taste-count authorities" in parent_flat
+        and "No new axiom, Tier-A admission, observed target, or audit status" in parent_flat
+        and "effective-potential-density bridge" in companion
+        and "sign and the placement of the correction" in companion_flat
+        and "does not derive the effective-potential-density bridge" in companion_flat
+        and "selected by best-match-to-`C_obs`" in companion
+        and "SCORECARD: 7 pass, 0 fail out of 7" in companion,
     )
 
 

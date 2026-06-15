@@ -971,9 +971,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_failed",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_failed",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1194,9 +1194,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "no_go",
-      "actual_effective_status": "retained_no_go",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1327,6 +1327,53 @@
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/work_history/yt/YT_UNBOUNDED_PROGRAM_NOTE.md",
       "runner_path": null,
+      "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "retained_bounded",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Fresh-context provenance re-audit: the current clean verdict is Claude-only but recorded as cross_family without non-Claude confirmation. Re-audit the bounded claim and dependency chain under current auditor-independence requirements.",
+      "blocked_by_group_ids": [],
+      "claim_id": "linear_response_second_order_kubo_note",
+      "deps": [
+        "linear_response_true_kubo_note",
+        "minimal_axioms_2026-05-03"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_pending_chain",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this audit-provenance review as evidence",
+        "PR-submitted audit verdicts",
+        "PR #441 review text or PR discussion as evidence",
+        "legacy weak-independence audit rationales as evidence",
+        "prior assistant discussion",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 12,
+      "group_id": "claude_only_clean_needs_non_claude_confirmation",
+      "group_order": 4,
+      "helper_runner_paths": [
+        "scripts/global_coherence_off_scaffold.py",
+        "scripts/independent_generators_heldout.py",
+        "scripts/universality_classifier.py"
+      ],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md",
+      "runner_path": "scripts/linear_response_second_order_kubo.py",
       "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"
@@ -1464,7 +1511,7 @@
     {
       "actual_audit_status": "audited_decoration",
       "actual_claim_type": "decoration",
-      "actual_effective_status": "retained_pending_chain",
+      "actual_effective_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -2460,63 +2507,6 @@
       "resolution_manifest_date": "2026-05-23",
       "resolution_reason": "bounded_terminal_after_reaudit",
       "runner_path": "scripts/audit_companion_hermitian_lift_theta_h_pk_bounded_exact_2026_05_17.py",
-      "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_pending_chain",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Fresh-context provenance re-audit: the current clean verdict is Claude-only but recorded as cross_family without non-Claude confirmation. Re-audit the bounded claim and dependency chain under current auditor-independence requirements.",
-      "blocked_by_group_ids": [],
-      "claim_id": "linear_response_second_order_kubo_note",
-      "deps": [
-        "linear_response_true_kubo_note",
-        "minimal_axioms_2026-05-03"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_pending_chain",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this audit-provenance review as evidence",
-        "PR-submitted audit verdicts",
-        "PR #441 review text or PR discussion as evidence",
-        "legacy weak-independence audit rationales as evidence",
-        "prior assistant discussion",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 12,
-      "group_id": "claude_only_clean_needs_non_claude_confirmation",
-      "group_order": 4,
-      "helper_runner_paths": [
-        "scripts/global_coherence_off_scaffold.py",
-        "scripts/independent_generators_heldout.py",
-        "scripts/universality_classifier.py"
-      ],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md",
-      "resolution_evidence": {
-        "audit_date": "2026-05-23T18:20:01.804656+00:00",
-        "audit_status": "audited_clean",
-        "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T181743Z-fb17a8f8-linear_response_second_o-01",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "bounded_theorem",
-        "independence": "fresh_context"
-      },
-      "resolution_manifest_date": "2026-05-23",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/linear_response_second_order_kubo.py",
       "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved"

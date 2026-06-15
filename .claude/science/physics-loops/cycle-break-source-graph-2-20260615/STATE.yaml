@@ -1,0 +1,29 @@
+loop: cycle-break-source-graph-2-20260615
+goal: "Remove source-side citation cycles that block audit queue progress without editing audit verdicts."
+target_status: "bounded-support"
+actual_current_surface_status: "bounded-support"
+trace_class: "methodology"
+reachability_to_target: "supports"
+cycle_count: 1
+active_route: "Convert non-load-bearing downstream/back-reference markdown links to plain filename references."
+files_touched:
+  - "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md"
+  - "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+  - "docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md"
+  - ".claude/science/physics-loops/cycle-break-source-graph-2-20260615/"
+open_imports: []
+no_go_routes: []
+review_findings: "Local source-graph review passed: edits only remove markdown dependency edges for text already described as follow-up, downstream, context-only, or non-retained authority."
+verification:
+  - "python3 docs/audit/scripts/build_citation_graph.py"
+  - "python3 docs/audit/scripts/build_cycle_inventory.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh (twice)"
+local_measurement:
+  before_cycle_break_targets: 20
+  after_cycle_break_targets: 0
+  ready_count_after_pipeline: 2
+  hard_invalidations: 0
+  audit_lint_errors: 0
+pr_status: "ready_to_open"
+next_exact_action: "Open PR for source-only cycle-break repair; reviewer/auditor can regenerate audit outputs after landing."
+stop_condition: "PR opened for review."

@@ -847,8 +847,9 @@ directly rather than this gate alias.
 **Registered Tier-A carrier route (historical context, not a current
 citation-graph dependency):**
 
-- The staggered-Dirac realization gate's canonical parent note
-  — parent-identity gate alias and registered Tier-A derivation target
+- The staggered-Dirac realization gate's canonical parent note,
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, is the
+  parent-identity gate alias and registered Tier-A derivation target
   `AC_φλ`, previously recorded as the carrier route for the residual
   `KS-phase-form` input. This parent alias is not retained authority and
   does not close the gate. The current source graph follows the explicit

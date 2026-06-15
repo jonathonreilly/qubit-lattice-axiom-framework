@@ -1,0 +1,31 @@
+loop: anomaly-runner-registration-20260615
+goal: "Register existing direct anomaly verifiers as primary runners for two high-impact pending anomaly notes."
+target_status: "bounded-support"
+actual_current_surface_status: "bounded-support"
+trace_class: "direct_blocker_closure"
+reachability_to_target: "supports"
+cycle_count: 1
+active_route: "Add Runner/Runner cache labels and provide fresh SU(3) cache."
+target_claims:
+  - "su2_witten_z2_anomaly_theorem_note_2026-04-24"
+  - "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24"
+files_touched:
+  - "docs/SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md"
+  - "docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md"
+  - "logs/runner-cache/frontier_su3_cubic_anomaly_cancellation.txt"
+  - ".claude/science/physics-loops/anomaly-runner-registration-20260615/"
+verification:
+  - "parser extraction returns both scripts"
+  - "cached_runner_output.py --check-only scripts/frontier_su2_witten_z2_anomaly.py"
+  - "cached_runner_output.py --refresh scripts/frontier_su3_cubic_anomaly_cancellation.py"
+  - "cached_runner_output.py --check-only scripts/frontier_su3_cubic_anomaly_cancellation.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+local_measurement:
+  su2_runner_path_after_regeneration: "scripts/frontier_su2_witten_z2_anomaly.py"
+  su3_runner_path_after_regeneration: "scripts/frontier_su3_cubic_anomaly_cancellation.py"
+  hard_invalidations: 0
+  audit_lint_errors: 0
+pr_status: "ready_to_open"
+next_exact_action: "Open PR; reviewer/auditor can regenerate audit outputs after landing."
+stop_condition: "PR opened for review."

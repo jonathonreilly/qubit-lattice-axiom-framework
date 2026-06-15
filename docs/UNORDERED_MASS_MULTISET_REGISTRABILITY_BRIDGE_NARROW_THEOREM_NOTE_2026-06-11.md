@@ -5,6 +5,9 @@
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
 registry, ledger, queue, or publication-status surfaces.
+**Actual source scope:** conditional bounded theorem on a supplied finite
+readout context, with P-dep as an explicit row-local premise. Record supplies
+additivity and the realized-outcome orbit; it does not by itself derive P-dep.
 **Primary runner:**
 [`scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py`](../scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py)
 (SCORECARD: `TOTAL: PASS=14 FAIL=0`; cached:
@@ -25,8 +28,8 @@ It does **not** enact any registry reduction, edit
 consume the staggered-Dirac gate's authority (the gate's own retention drains
 in the audit lane, separately), or touch the occupancy dial `r` (see the
 explicit firewall statement below). It proves the bridge theorem on the
-supplied finite surface and states the composition with the korbit
-orientation lemma as a consequence available to the gated lane.
+supplied finite surface conditional on P-dep and states the composition with
+the korbit orientation lemma as a consequence available to the gated lane.
 
 ## Setting: the supplied readout context (G1 — all of it is input)
 
@@ -59,7 +62,7 @@ Elementary facts on this surface, each verified in the runner:
 - **(F3)** `lambda_{sigma(k)}(-delta) = lambda_k(delta)` — the flip permutes
   the per-sector values within `K`/CPT label orbits.
 
-## The Record boundary used (and only this)
+## The Record boundary and P-dep premise
 
 From [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md):
 
@@ -81,7 +84,7 @@ registrable class used by the unaudited precedent note named under
 Dependencies; the present note re-derives every leg it uses, so that note is
 context, not load-bearing.)
 
-**Premise (P-dep, named explicitly).** A registrable readout's per-record
+**Conditional premise (P-dep, named explicitly).** A registrable readout's per-record
 contribution is a function of the per-record **registered** datum — the
 `K`/CPT orbit of the realized central sector together with the supplied
 monitored central value `lambda_k` — and of nothing else. Justification: by
@@ -89,12 +92,15 @@ monitored central value `lambda_k` — and of nothing else. Justification: by
 record for a readout to depend on; a "readout" depending directly on the
 unregistered configuration parameter `delta` (rather than through the
 registered sector data) is a pre-record reconstruction, not a record
-functional. P-dep is a reading of the Record boundary, not an extra import;
-it is nevertheless named here so a hostile auditor can attack it directly.
+functional. The Record axiom alone does not prove this dependence restriction;
+P-dep is therefore part of this row's conditional premise surface, not a new
+axiom, primitive, or retained bridge. A hostile auditor should treat rejection
+of P-dep as rejection of the factorization claim B1, while the finite algebraic
+identities F1-F3 and the additivity/orbit hostile witnesses remain checkable.
 
 ## Theorem (unordered-mass-multiset registrability bridge)
 
-In the supplied context above, with `M(delta)` denoting the **orbit-resolved
+In the supplied context above, and assuming P-dep, with `M(delta)` denoting the **orbit-resolved
 unordered multiset** of per-orbit sector invariants
 `M(delta) = {{ ([k], lambda_k(delta)) : k in Lambda }}` (`[k]` the `K`/CPT
 label orbit, so within-orbit order is erased by construction):
@@ -224,14 +230,13 @@ settings, and nothing in B1–B3 selects among them.
   Record registrability constraints — is **not** proved here; the theorem
   operates within that class. This is the same standing residual carried by
   the registrable-readout precedent note.
-- **(W-dep) P-dep is a named premise.** The reading "per-record contributions
-  depend only on the registered datum" is grounded in the Record boundary's
-  no-within-sector-data clause and the record ontology (and is consonant with
-  the `realized_state` primitive's pointwise-evaluation discipline), but it
-  is stated as an explicit premise so the audit lane can stress it. A reader
-  who rejects P-dep must exhibit a record functional depending on unregistered
-  configuration data — which is the realist slip the framework's record
-  ontology excludes.
+- **(W-dep) P-dep is a conditional premise, not a derived Record theorem.**
+  The reading "per-record contributions depend only on the registered datum"
+  is compatible with the Record boundary's no-within-sector-data clause and
+  the record ontology, but this note does not prove that dependence
+  restriction uniquely from the axiom text. A reader who rejects P-dep rejects
+  B1's universal factorization conclusion; this row should then be read only
+  as finite algebra over a supplied P-dep registrable class.
 - **(W-orbit-type) Orbit-type resolution is NOT erased.** `K`/CPT erases
   within-orbit order and orientation, not the singlet-vs-doublet orbit-type
   distinction: the singlet orbit-class readout is registrable (runner L6/L7),
@@ -257,15 +262,17 @@ settings, and nothing in B1–B3 selects among them.
 ## Honest-auditor-read
 
 What is actually proved: on a supplied 3x3 circulant readout context with
-Fourier sectors and conjugation-`K`, the Record axiom's additivity and
-orbit-constancy clauses force every registrable scalar to be a sum of
+Fourier sectors and conjugation-`K`, Record additivity, realized-outcome
+orbit-constancy, and the explicit P-dep premise force every registrable scalar
+to be a sum of
 orbit-class functions of the per-sector central values (B1); registrable
 scalars suffice to reconstruct the orbit-resolved unordered multiset (B2);
 and consequently all registrable content is invariant under
 `delta -> -delta` (B3). The hostile order/sign-sensitive candidates each
 violate a named clause, checked numerically. What is NOT proved: that the
-physical readout context is of this class (W-ctx), that P-dep is the only
-admissible reading of the Record boundary (W-dep — named premise), any
+physical readout context is of this class (W-ctx), that P-dep follows from the
+Record axiom rather than from this row's conditional premise surface (W-dep),
+any
 registry change, any `theta` statement, and any magnitude. A hostile reviewer
 should attack P-dep first, then the L2 range argument (W-range), then the
 claim that the orbit-resolved multiset (rather than the bare one) is the
@@ -279,6 +286,8 @@ right bridge resolution (W-orbit-type).
   PL/ABSS bridge.
 - It does **not** prove the physical readout context must satisfy the Record
   registrability constraints.
+- It does **not** derive P-dep from Record alone; P-dep is an explicit
+  row-local conditional premise.
 - It does **not** force, derive, or constrain `r` (firewall above).
 - It introduces **no** new axiom, primitive, admission, normalization,
   probability rule, comparator, or framing import, and consumes no PDG /
@@ -292,7 +301,10 @@ Load-bearing:
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
   (`minimal_axioms`, effective_status: `meta`, approved axiom-premise node) —
   the Record axiom clauses (Additivity), (Orbit), (No-within-sector-data):
-  the only theorem premises beyond the supplied context.
+  the only axiom premises beyond the supplied context.
+- P-dep — explicit row-local conditional premise that per-record contributions
+  depend only on the registered datum. This is not an axiom, not an approved
+  primitive, not a retained bridge, and not supplied by Record alone.
 
 Context, **not** load-bearing (each leg used from these is re-derived or
 re-verified in this note's runner):

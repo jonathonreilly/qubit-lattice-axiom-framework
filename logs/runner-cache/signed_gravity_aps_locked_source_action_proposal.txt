@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/signed_gravity_aps_locked_source_action_proposal.py
-runner_sha256: d6f3a58356427bc839207595081cb84e2f22eddc1d8183766a1fe4e4d26d49ef
+runner_sha256: c4dee5d027ab164fa3780df07422a23bf72cbe904fcaa450d278aef9128706be
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.14
@@ -17,6 +17,10 @@ SIGNED GRAVITY APS-LOCKED SOURCE ACTION PROPOSAL
 [PASS] manifest records determinant-line host is not canonical source selection
 [PASS] manifest preserves open gate and no-new-axiom boundary
 [PASS] 2026-06-12 firewall keeps source-action origin as the live blocker
+[PASS] 2026-06-15 bundle cites executable APS/Wald/Gauss bridge audit surfaces
+[PASS] bridge audit note records not-derived final tag and source-neutral eta
+[PASS] bridge audit script separates retained positive source from inserted locked table
+[PASS] bridge audit cache is fresh enough for the packet and confirms the negative bridge verdict
 
 [PASS] APS boundary eta supplies +/- sectors and null control
 
@@ -53,7 +57,7 @@ OPEN PROOF OBLIGATIONS
      masses with opposite active signs
   4. lift the scalar active monopole action without claiming full tensor GR
 
-SUMMARY: PASS=17 FAIL=0
+SUMMARY: PASS=21 FAIL=0
 FINAL_TAG: APS_LOCKED_SOURCE_ACTION_CONDITIONAL_CANDIDATE
 
 ----- stderr -----

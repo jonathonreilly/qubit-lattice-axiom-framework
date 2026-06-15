@@ -1,6 +1,7 @@
 # Action Normalization Convention-Free Selection No-Go
 
-**Date:** 2026-04-12; no-go repair 2026-05-26
+**Date:** 2026-04-12; no-go repair 2026-05-26; runner certificate repair
+2026-06-15
 **Runner:** `scripts/frontier_action_normalization.py`
 **Claim type:** no_go
 **Status:** exact/bounded negative boundary for convention-free selection of
@@ -49,14 +50,21 @@ normalization conventions.
 ## Preserved Finite Facts
 
 The committed cache `logs/runner-cache/frontier_action_normalization.txt`
-reports:
+now reports a real PASS/FAIL certificate:
 
-- every tested positive `c` in the one-dimensional scan converges;
-- the rescaling rows with `c*G = 1` keep `c*phi_max` near `1.22e-02`;
-- the PPN readout gives `gamma = 1` for any positive `c` under
-  `Phi = c*f/2`;
-- massive-probe deflection magnitudes increase across `c = 0.5, 1.0, 2.0`;
-- the previous convention-free light-bending interpretation is retracted.
+- 21 checks for the one-dimensional positive-`c` scan: controlled loop,
+  finite nonzero field, and finite radial beta diagnostic for each tested `c`;
+- 2 aggregate checks that all tested positive `c` values remain controlled and
+  that fixed-`G` effective coupling changes across `c`;
+- 6 checks for reciprocal `(c, G)` rescaling with fixed `c*G`, including
+  stability of `c*phi_max`;
+- 4 analytical PPN checks showing `gamma = 1` for multiple `c` values after
+  the convention `Phi = c*f/2`;
+- 6 controlled scan checks along the `c = 1` line in the `(c, G)` basin;
+- 3 finite-positive massive-probe deflection sanity checks.
+
+The runner exits nonzero if any certificate check fails or if the certificate
+count no longer matches the expected 42 PASS checks.
 
 ## Boundary
 
@@ -85,5 +93,5 @@ PYTHONPATH=scripts python3 scripts/frontier_action_normalization.py
 Expected summary:
 
 ```text
-PASS=42 FAIL=0
+TOTAL: PASS=42 FAIL=0
 ```

@@ -1,0 +1,16 @@
+loop_id: action-normalization-runner-certificate-20260615
+branch: physics-loop/action-normalization-runner-certificate-20260615
+base: origin/main
+status: review_pr_ready
+artifact_role: post_audit_runner_artifact_repair
+target_note: docs/ACTION_NORMALIZATION_NOTE.md
+target_runner: scripts/frontier_action_normalization.py
+audit_scope:
+  mode: source_repair_only
+  applies_audit_verdicts: false
+  edits_audit_ledgers: false
+repair_summary:
+  - added real PASS/FAIL certificate to action-normalization runner
+  - aligned note verification summary with enforced TOTAL output
+  - kept narrowed no-go science unchanged
+expected_result: "TOTAL: PASS=42 FAIL=0"

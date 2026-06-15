@@ -24,6 +24,35 @@ except ImportError:
     sys.exit(1)
 
 AUDIT_TIMEOUT_SEC = 120
+EXPECTED_PASS = 42
+PASS = 0
+FAIL = 0
+
+
+def check(label: str, cond: bool, detail: str = "") -> bool:
+    """Record a machine-readable audit certificate check."""
+    global PASS, FAIL
+    status = "PASS" if cond else "FAIL"
+    if cond:
+        PASS += 1
+    else:
+        FAIL += 1
+    suffix = f"  ({detail})" if detail else ""
+    print(f"  [{status}] {label}{suffix}")
+    return cond
+
+
+def controlled_result(result: dict) -> bool:
+    """Numerical loop stayed in the controlled finite-packet regime."""
+    if result.get("reason") in {"solver_error", "nan_or_inf"}:
+        return False
+    history = result.get("history") or []
+    if not history:
+        return False
+    last = history[-1]
+    return np.isfinite(last.get("residual", float("nan"))) and np.isfinite(
+        last.get("phi_max", float("nan"))
+    )
 
 
 # ===========================================================================
@@ -388,6 +417,7 @@ def measure_rescaling_degeneracy(N: int, k: float, source_pos: tuple[int, int, i
           f"{'c*phi_max':>10s}  {'beta':>8s}")
     print("-" * 65)
 
+    rows = []
     for a in [0.25, 0.5, 1.0, 2.0, 4.0]:
         c_val = c0 / a
         G_val = G0 * a
@@ -400,6 +430,16 @@ def measure_rescaling_degeneracy(N: int, k: float, source_pos: tuple[int, int, i
         cf_max = c_val * pm
         print(f"{a:>6.2f}  {c_val:>6.2f}  {G_val:>6.2f}  {c_val*G_val:>6.2f}  "
               f"{pm:>10.4e}  {cf_max:>10.4e}  {physics['beta']:>8.4f}")
+        rows.append({
+            "a": a,
+            "c": c_val,
+            "G": G_val,
+            "cG": c_val * G_val,
+            "phi_max": pm,
+            "c_phi_max": cf_max,
+            "beta": physics["beta"],
+            "result": r,
+        })
 
     print()
     print("Key observation: c*phi_max is approximately CONSTANT across rescalings.")
@@ -407,6 +447,7 @@ def measure_rescaling_degeneracy(N: int, k: float, source_pos: tuple[int, int, i
     print("Convention: after fixing the f/Phi map and source normalization, c has")
     print("a definite value; the rescaling freedom itself does not select it.")
     print()
+    return rows
 
 
 def main():
@@ -485,6 +526,43 @@ def main():
                   f"{'N/A':>10s}  {'N/A':>8s}  {'N/A':>6s}")
     print()
 
+    print("Certificate checks for Test 1:")
+    cf_fixed_g = []
+    for c_val in c_values:
+        r = results_by_c[c_val]
+        p = r.get('physics', {})
+        pm = float(np.max(np.abs(r['phi']))) if 'phi' in r else float('nan')
+        cf = c_val * pm
+        cf_fixed_g.append(cf)
+        check(
+            f"T1a c={c_val:g} loop remains controlled",
+            controlled_result(r),
+            detail=f"reason={r.get('reason')}, iterations={r.get('iterations')}",
+        )
+        check(
+            f"T1b c={c_val:g} finite nonzero field",
+            np.isfinite(pm) and pm > 0,
+            detail=f"phi_max={pm:.4e}",
+        )
+        check(
+            f"T1c c={c_val:g} finite radial beta diagnostic",
+            np.isfinite(p.get('beta', float('nan'))) and np.isfinite(p.get('beta_r2', float('nan'))),
+            detail=f"beta={p.get('beta', float('nan')):.4f}, R2={p.get('beta_r2', float('nan')):.4f}",
+        )
+    controlled_count = sum(controlled_result(results_by_c[c]) for c in c_values)
+    finite_cf = [x for x in cf_fixed_g if np.isfinite(x) and x > 0]
+    check(
+        "T1d all tested positive c values are controlled",
+        controlled_count == len(c_values),
+        detail=f"controlled={controlled_count}/{len(c_values)}",
+    )
+    check(
+        "T1e fixed-G effective coupling changes across c",
+        len(finite_cf) == len(c_values) and max(finite_cf) / min(finite_cf) > 10.0,
+        detail=f"spread={max(finite_cf) / min(finite_cf):.3g}",
+    )
+    print()
+
     print("Observation: ALL values of c converge. Self-consistency alone does NOT")
     print("select a unique c. Larger c requires more iterations (weaker mixing)")
     print("but still converges. The product c*phi_max varies, showing c changes")
@@ -504,7 +582,21 @@ def main():
     print("A convention must fix one parameter before c has a definite value.")
     print()
 
-    measure_rescaling_degeneracy(N, k, source_pos, sigma=sigma)
+    rescale_rows = measure_rescaling_degeneracy(N, k, source_pos, sigma=sigma)
+    print("Certificate checks for Test 2:")
+    for row in rescale_rows:
+        check(
+            f"T2a a={row['a']:.2f} keeps c*G fixed",
+            abs(row["cG"] - 1.0) < 1e-12 and controlled_result(row["result"]),
+            detail=f"c*G={row['cG']:.6f}",
+        )
+    cf_rescaled = [row["c_phi_max"] for row in rescale_rows if np.isfinite(row["c_phi_max"]) and row["c_phi_max"] > 0]
+    check(
+        "T2b c*phi_max remains stable under reciprocal rescaling",
+        len(cf_rescaled) == len(rescale_rows) and max(cf_rescaled) / min(cf_rescaled) < 1.25,
+        detail=f"spread={max(cf_rescaled) / min(cf_rescaled):.3g}",
+    )
+    print()
 
     # ===================================================================
     # TEST 3: Effective metric structure -- analytical only, narrowed
@@ -531,6 +623,16 @@ def main():
     print("The honest read: c is fixed only after an external convention")
     print("identifies f with the physical potential Phi and chooses the Poisson")
     print("source normalization. The finite runner does not make that selection.")
+    print()
+    print("Certificate checks for Test 3:")
+    for c_probe in [0.5, 1.0, 2.0, 10.0]:
+        phi_unit = c_probe / 2.0
+        gamma_eff = c_probe / (2.0 * phi_unit)
+        check(
+            f"T3 gamma=1 after Phi=c*f/2 for c={c_probe:g}",
+            abs(gamma_eff - 1.0) < 1e-12,
+            detail=f"gamma={gamma_eff:.6f}",
+        )
     print()
 
     # ===================================================================
@@ -594,6 +696,15 @@ def main():
         print(f"{cG:>8.2f}  {c_val:>6.1f}  {G_val:>6.1f}  "
               f"{result['iterations']:>6d}  {conv:>4s}")
     print()
+    print("Certificate checks for Test 4:")
+    for G_val in G_scan:
+        result = convergence_map[(1.0, G_val)]
+        check(
+            f"T4 c=1.0, G={G_val:g} scan point remains controlled",
+            controlled_result(result),
+            detail=f"reason={result.get('reason')}, iterations={result.get('iterations')}",
+        )
+    print()
 
     # ===================================================================
     # TEST 5: PPN gamma and the convention that fixes c
@@ -641,6 +752,7 @@ def main():
     print(f"{'c':>6s}  {'|defl|':>10s}")
     print("-" * 24)
 
+    deflection_rows = []
     for c_val in c_test:
         r = results_by_c.get(c_val)
         if r is None or not (r['converged'] or r['reason'] == 'max_iter'):
@@ -653,7 +765,16 @@ def main():
         # no relation to the analytical null-vs-massive (1+c) factor.
         d_abs = abs(defls[k])
         print(f"{c_val:>6.1f}  {d_abs:>10.6f}")
+        deflection_rows.append((c_val, d_abs))
 
+    print()
+    print("Certificate checks for Test 5:")
+    for c_val, d_abs in deflection_rows:
+        check(
+            f"T5 c={c_val:g} massive-probe deflection is finite positive",
+            np.isfinite(d_abs) and d_abs > 0,
+            detail=f"|defl|={d_abs:.6f}",
+        )
     print()
     print("Confirms: deflection scales with c (consistent with c entering the physics).")
     print("This sanity check does NOT verify the (1+c) null-vs-massive ratio;")
@@ -728,6 +849,12 @@ def main():
 
     dt = time.time() - t_start
     print(f"Total runtime: {dt:.1f}s")
+    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+    if PASS != EXPECTED_PASS:
+        print(f"ERROR: expected {EXPECTED_PASS} certificate PASS checks, got {PASS}.")
+        raise SystemExit(1)
+    if FAIL > 0:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

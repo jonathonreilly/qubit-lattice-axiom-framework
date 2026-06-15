@@ -26,6 +26,8 @@ from math import erf, sqrt
 import numpy as np
 from scipy.integrate import solve_ivp
 
+AUDIT_TIMEOUT_SEC = 600
+
 np.set_printoptions(precision=10, linewidth=120)
 
 PASS = 0

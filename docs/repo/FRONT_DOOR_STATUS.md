@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1491 |
+| Applied audit verdicts | 1492 |
 | Retained-grade rows, including boxed decorations | 1384 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 920 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1501 |
+| Unaudited rows | 1500 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 19 |
+| Audited conditional rows | 20 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 0 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1503 |
-| Ready rows | 73 |
+| Total pending rows | 1502 |
+| Ready rows | 72 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
-| High pending | 276 |
+| High pending | 275 |
 | Medium pending | 465 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
-- [`registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`](../../docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md) - high; unaudited
 - [`kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09`](../../docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - high; unaudited
+- [`registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`](../../docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 - [`dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md) - medium; unaudited
 - [`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md) - medium; unaudited
+- [`dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

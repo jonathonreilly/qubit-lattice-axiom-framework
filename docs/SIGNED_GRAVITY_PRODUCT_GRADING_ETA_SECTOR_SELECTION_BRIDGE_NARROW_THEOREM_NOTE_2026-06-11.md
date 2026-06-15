@@ -18,10 +18,11 @@ block of the sector-selection form `I (x) A(a) (x) eps`, the
 hence **opposite** spectral asymmetries and the derived label pair
 `chi_+/- = +/- sign(eta_delta(A(a)))`; (T3) with the repo's counting
 regulator `eta_delta = #{lambda > delta} - #{lambda < -delta}` on the
-spectrally-truncated twisted tower `spec(A(a)) = {n + a : |n + a| <=
-Lambda}`, the labels are **quantized**: `chi = +1` for `a in (0, 1/2)`,
-`chi = -1` for `a in (-1/2, 0)`, and the proposal's branch conditions
-fail exactly where they should (`a = 0`: gap fails, `h_delta = 1`;
+half-integer spectrally-truncated twisted tower
+`spec(A(a)) = {n + a : |n + a| <= Lambda}`, `Lambda = M + 1/2`, the
+labels are **quantized**: `chi = +1` for `a in (0, 1/2)`, `chi = -1`
+for `a in (-1/2, 0)`, and the proposal's branch conditions fail
+exactly where they should (`a = 0`: gap fails, `h_delta = 1`;
 `a = +/-1/2`: `eta_delta = 0`); (T4) the **same** total Dirac
 simultaneously satisfies the Koide-side anticommutation
 `{D_gen-part, Gamma_prod} = 0` with the product grading
@@ -94,9 +95,10 @@ truncation (index truncation manufactures a spurious label at
   (admitted-context, as in the retained complexification-split row).
 - **Boundary factor.** `H_Y = C^{N_Y}` carrying the twisted-tower
   boundary operator `A(a) := diag(n + a)` over `{n in Z : |n + a| <=
-  Lambda}` — the finite **spectral** truncation of the
-  holonomy-twisted boundary circle operator. `a` is the twist datum
-  (named input).
+  Lambda}`, with the theorem's label table scoped to half-integer
+  cutoffs `Lambda = M + 1/2` — the finite **spectral** truncation of
+  the holonomy-twisted boundary circle operator used by the runner.
+  `a` is the twist datum (named input).
 - **Generation factor.** `H_gen = R^3` with the `C_3`-equivariant
   antisymmetric Dirac block `D_gen` (`[D_gen, C_3] = 0`) and the
   site-swap grading `G` (`G^2 = I`, `{D_gen, G} = 0`) — the L4-form
@@ -154,7 +156,8 @@ regulator). The factor 2 is the sector dimension and drops out of the
 sign.
 
 **(T3) Quantized labels and branch conditions.** On the
-spectrally-truncated twisted tower (generic `Lambda`, e.g. half-integer):
+spectrally-truncated twisted tower with half-integer cutoff
+`Lambda = M + 1/2`:
 
 ```text
     a in (0, 1/2)   : h_delta = 0, eta_delta = +1  -> chi = +1
@@ -205,15 +208,18 @@ sign follows. For the orientation image: if `B' = -U B U^dag` then
 `spec(B') = -spec(B)` and the counting `eta` flips exactly. ∎
 
 **(T3).** Spectral truncation keeps `lambda = n + a` with `|n + a| <=
-Lambda`. For `a in (0, 1/2)` and generic `Lambda`: positives are `n >=
-0` with `n <= Lambda - a` (`floor(Lambda - a) + 1` values), negatives
-are `n <= -1` with `n >= -Lambda - a` (`floor(Lambda + a)` values);
-for half-integer `Lambda` both floors equal `Lambda - 1/2`, so
-`eta_delta = +1`. The map `a -> -a` flips the spectrum, giving `-1`.
-At `a = 0` the `n = 0` eigenvalue sits in the `delta`-window
-(`h_delta = 1`). At `a = 1/2` the spectrum is `{..., -3/2, -1/2, 1/2,
-3/2, ...}`, symmetric under reflection, so `eta_delta = 0`. (The
-runner checks every case, plus the index-truncation falsifier.) ∎
+Lambda`. For `a in (0, 1/2)`, positives are `n >= 0` with
+`n <= Lambda - a` (`floor(Lambda - a) + 1` values), and negatives are
+`n <= -1` with `n >= -Lambda - a` (`floor(Lambda + a)` values). This
+note's label table is the half-integer subcase: when
+`Lambda = M + 1/2`, both floors equal `M`, so `eta_delta = +1`.
+The map `a -> -a` flips the spectrum, giving `-1`. At `a = 0` the
+`n = 0` eigenvalue sits in the `delta`-window (`h_delta = 1`). At
+`a = 1/2` the spectrum is `{..., -3/2, -1/2, 1/2, 3/2, ...}`,
+symmetric under reflection, so `eta_delta = 0`. The theorem does not
+assert this label table for arbitrary non-half-integer cutoffs; those
+cutoffs require their own fractional-window condition. (The runner
+checks the half-integer case, plus the index-truncation falsifier.) ∎
 
 **(T4).** Factor-wise: `(D_gen (x) N)(G (x) eps) + (G (x) eps)(D_gen
 (x) N) = (D_gen G) (x) (N eps) + (G D_gen) (x) (eps N) = (D_gen G +
@@ -302,10 +308,11 @@ Primary runner
    `eps = +/-1` sectors has `eta_delta = +/-2` (opposite), labels
    `chi_+/- = +/-1`; the orientation-image `eta` flip on a random
    unitary conjugate.
-4. **[T3]** the label table over `a in {0, +/-0.1, +/-0.3, 0.49,
-   0.5, 0.7, 0.9}` with exact branch-condition behavior (gap failure
-   at `a = 0` with `h_delta = 1`; `eta_delta = 0` at `a = 1/2`;
-   `chi = -1` for `a in (1/2, 1)` i.e. `a - 1 in (-1/2, 0)`).
+4. **[T3]** the half-integer-cutoff (`Lambda = 20.5`) label table over
+   `a in {0, +/-0.1, +/-0.3, 0.49, 0.5, 0.7, 0.9}` with exact
+   branch-condition behavior (gap failure at `a = 0` with
+   `h_delta = 1`; `eta_delta = 0` at `a = 1/2`; `chi = -1` for
+   `a in (1/2, 1)` i.e. `a - 1 in (-1/2, 0)`).
 5. **[T4]** Hermiticity of `D_tot`; `[D_gen, C_3] = 0`;
    `{D_gen-part, Gamma_prod} = 0`; `[D_bdy-part, Gamma_prod] = 0`;
    `[N, eps] = 0`, `{e_4, eps} = 0`, `{e_1, eps} = 0`.

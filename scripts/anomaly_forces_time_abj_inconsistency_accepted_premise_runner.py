@@ -3,7 +3,7 @@
 
 The runner checks only:
 
-1. exact rational anomaly-trace arithmetic for the retained graph-first
+1. exact rational anomaly-trace arithmetic for the bounded supplier chain's
    LH SM content (Q_L = (2,3)_{+1/3} plus L_L = (2,1)_{-1});
 2. the supplied (P1) accepted-premise packet entry (ABJ result for chiral
    gauge theories) is recorded in the source note;
@@ -75,12 +75,29 @@ def part0_source_firewall() -> None:
         "**Status authority:** independent audit lane only",
         "**Type:** bounded_theorem",
         "NO NEW ADMISSIONS",
-        "does **not** derive",
+        "does **not**",
+        "derive (P1)",
         "no new repo-wide theory class",
         RUNNER_PATH,
+        "NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23",
+        "LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17",
+        "HYPERCHARGE_IDENTIFICATION_NOTE",
+        "SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10",
+        "CHIRALITY_SEPARATE_FACTOR_DIRAC_MASS_ALGEBRA_SUPPORT_BOUNDED_NOTE_2026-06-08",
+        "ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026-06-10",
+        "It is no longer cited for `U(1)_Y`, LH hypercharge, or RH matter",
+        "does not by itself supply the spacetime `gamma_5` operator",
     ]
     for phrase in required_phrases:
         check(f"source note contains boundary phrase: {phrase}", phrase in note)
+
+    forbidden_boundary_regressions = [
+        "per retained\n      NATIVE_GAUGE_CLOSURE_NOTE",
+        "match retained NATIVE_GAUGE_CLOSURE_NOTE",
+        "NATIVE_GAUGE_CLOSURE_NOTE, the SU(2)-singlet completion",
+    ]
+    for phrase in forbidden_boundary_regressions:
+        check(f"source note avoids stale authority claim: {phrase!r}", phrase not in note)
 
     # Forbidden phrases: these are phrases that, if present as *load-bearing
     # inputs*, would break the bridge. They are constructed via concatenation
@@ -100,8 +117,8 @@ def part0_source_firewall() -> None:
     # parent text must contain the admission-(i) prose this bridge formalizes
     parent = PARENT_NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "parent ANOMALY_FORCES_TIME_THEOREM names admission (i) as bare external admission",
-        "admission (i)" in parent and "ABJ" in parent,
+        "parent ANOMALY_FORCES_TIME_THEOREM names P-ABJ as the external ABJ premise",
+        "P-ABJ" in parent and "Declared premise (external)" in parent and "ABJ" in parent,
     )
 
 
@@ -236,10 +253,10 @@ def part3_sm_cancellation() -> None:
         str(n_lh_su2_doublets),
     )
 
-    # Explicit SM hypercharge values match retained NATIVE_GAUGE_CLOSURE_NOTE values
+    # Explicit SM hypercharge values match the bounded RH algebraic supplier tuple.
     expected = (Fraction(4, 3), Fraction(-2, 3), Fraction(-2, 1), Fraction(0, 1))
     check(
-        "RH SM hypercharges (4/3, -2/3, -2, 0) match retained NATIVE_GAUGE_CLOSURE_NOTE",
+        "RH SM hypercharges (4/3, -2/3, -2, 0) match the named bounded algebraic supplier tuple",
         (y1, y2, y3, y4) == expected,
     )
 
@@ -405,8 +422,8 @@ def part5_dt_parity() -> None:
     # Verify the parent theorem cites admission (iv) for the final pin.
     parent = PARENT_NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "parent ANOMALY_FORCES_TIME_THEOREM names admission (iv) (single-clock) for d_t > 1 exclusion",
-        "admission (iv)" in parent and "single-clock" in parent,
+        "parent ANOMALY_FORCES_TIME_THEOREM routes the d_t=1 pin to the single-clock/B-AXIS lane",
+        "single-clock" in parent and "B-AXIS" in parent,
     )
 
 

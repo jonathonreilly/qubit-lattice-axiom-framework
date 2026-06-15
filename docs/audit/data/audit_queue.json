@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 280,
-    "high": 274,
+    "high": 273,
     "leaf": 482,
     "medium": 465
   },
@@ -7987,34 +7987,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
-        "minimal_axioms",
-        "strong_cp_theta_zero_note",
-        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.644,
-      "note_path": "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py",
-      "transitive_descendants": 24
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16966,15 +16938,15 @@
         "cl3_color_automorphism_theorem",
         "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.2,
+      "load_bearing_score": 9.728,
       "note_path": "docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py",
-      "transitive_descendants": 51
+      "transitive_descendants": 52
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45206,6 +45178,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 71,
-  "total_pending": 1501
+  "ready_count": 70,
+  "total_pending": 1500
 }

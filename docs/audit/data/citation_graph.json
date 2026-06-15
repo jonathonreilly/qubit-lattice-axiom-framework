@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09",
         "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
-        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
+        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
+        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5d4949a7116d3967b59e9bfb4ca5ccf231756090f9894f47ecbf1d3742c7d580",
+      "note_hash": "7c42635f39766c067e46a8d114f3a20a48d0723315fbdd7ad5e60dc8e4063ae7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

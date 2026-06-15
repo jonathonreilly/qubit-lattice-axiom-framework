@@ -230,3 +230,61 @@ promoted to axiom or primitive class):
     The `no_go_portfolio` lists are unchanged (verified rows only); the new
     `sharpening_sources` fields list landed source notes whose audit status
     is set only by the audit lane.
+
+Proposed premise-boundary classification (no axiom, primitive, or Tier-A
+change; nothing added to or removed from any premise registry):
+
+- **2026-06-15 -- PROPOSED (session draft): the past hypothesis is a scope
+  condition, not a premise.** This entry is a *proposal only* and is **not in
+  force**. It records **no** approval: the session does not record, infer, or
+  speak for owner approval, and merging this PR is not itself an approval --
+  approval is the owner's to state directly to the review/audit agent when
+  asked, and that agent records it. Independent Codex confirmation is separately
+  required. The
+  thermodynamic past hypothesis -- the low-entropy *magnitude* of the initial
+  boundary ("why the boundary was so atypically special"; Penrose
+  ~1-in-10^(10^123)) -- is proposed to be classified as the framework's
+  **scope / domain-of-applicability condition**, not as a premise in any of the
+  three categories (axiom, primitive, Tier-A). It is the residual named in
+  `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`
+  and the input carved out of the realized-state primitive (2026-06-11 entry
+  above, "Past-hypothesis classification").
+  - **Rationale (physics/logic, not an audit finding).** The arrow's
+    *direction* (record formation), the boundary's *existence* (record
+    durability = append-only well-foundedness), and the *time-axis* are derived
+    separately; the only residual is the low-entropy magnitude, which is
+    (i) *content* -- a measure-relative atypicality value, not a units
+    convention (scale-reference) or a structural graining ratio
+    (kinetic-isotropy), so not a primitive; (ii) *contingent* -- the
+    time-symmetric microdynamics is equally consistent with a high-entropy past
+    (Loschmidt), so not an axiom/law; (iii) *provably non-retirable* -- needed
+    identically by every time-symmetric theory (CM/QM/QFT/GR) and underivable
+    from time-symmetric microdynamics, so not a Tier-A derivation target (which
+    must be retirable). An input that can never be discharged is not a premise
+    the chain rests *on*; it is the antecedent the relevant claims are scoped
+    *by* -- results that use it are honest conditionals ("given a low-entropy
+    past, X"), in the standard laws-versus-initial-conditions sense. A scope
+    condition creates no derivation debt (Tier-A's bounding mechanism), so it
+    does not bound dependents.
+  - **What the independent Codex auditor must confirm before this is in force**
+    (these are confirmation requirements, not session findings): (i) the
+    low-entropy magnitude is absent from both premise registries
+    (`axiom_premise_nodes.json`, `tier_a_admissions.json`) and is cited by no
+    retained/shipped row as a dependency -- the bounds-nothing basis; (ii)
+    recording this classification is a mechanical no-op -- registries
+    byte-unchanged, the full effective-status computation identical
+    before/after, nothing entering limbo; (iii) the scope is bound to the
+    magnitude *alone* -- the derived direction / existence / time-axis stay
+    unconditional and acquire no conditional tag (over-scoping would silently
+    weaken clean results); and (iv) no typicality / measure / specialness
+    assumption is laundered in under the "scope" label (the realized-state
+    primitive's counterfactual test continues to police that boundary).
+  - **Machinery (proposed).** The three premise categories are unchanged and the
+    past hypothesis is outside all three by construction (this generalizes the
+    realized-state primitive's existing carve-out). No registry row, no
+    `canonical_id`, no `premise_nodes.py` / `compute_effective_status` / schema
+    change; the audited source notes (arrow, existence reduction, realized-state)
+    and the machine registries are left byte-unchanged by this classification.
+    Optional future hardening (separate, not in this change): a one-line audit
+    lint warning if any retained row ever cites the low-entropy magnitude as an
+    upstream dependency.

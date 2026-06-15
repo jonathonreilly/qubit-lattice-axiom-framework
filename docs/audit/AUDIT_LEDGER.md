@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 921 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1495 |
+| unaudited | 1494 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1356 |
-| `audited_conditional` | 23 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1812 |
+| `unaudited` | 1811 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 533 |
-| `high` | 510 |
-| `medium` | 887 |
+| `high` | 509 |
+| `medium` | 888 |
 | `leaf` | 1381 |
 
 - **Retained pending chain closure:** 4
@@ -1505,6 +1505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `one_parameter_reduced_shell_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `scalar_trace_tensor_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -16471,6 +16472,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The note records the current scalar-KG rerun state: frontier_scalar_kg_16card_v2.py returns 13/16 with C12-C14 failing, while frontier_scalar_kg_full_suite.py returns 28/38 applicable measures and 20 N/A, so scalar KG is a bounded reference architecture rather than a literal 16/16 axiom-derived closure.  _(class `C`)_
 - **chain closes:** True — The note's measured rerun claims close against the current scripts, and its safe interpretation matches the runner outputs.
 - **rationale:** The current primary runner reproduces the note's 13/16 result and the named C12-C14 failures, and the secondary full-suite runner reproduces the stated 28/38 applicable score with 20 N/A measures. The note does not promote scalar KG as an axiom-derived theorem; it explicitly frames the lane as a reference architecture/ceiling test and preserves the strict-card failures. Residual risk is limited to the bounded/reference status and the usual runner-output formatting, not the claim boundary being audited.
+
+### `scalar_trace_tensor_no_go_note`
+
+- **Note:** [`SCALAR_TRACE_TENSOR_NO_GO_NOTE.md`](../../docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional diagnostic on the imported O_h and finite-rank source classes: scalar shell/Schur-data-factoring completions cannot distinguish the listed vector-shift, traceless-shear, and mixed probes whose tensorial Einstein residual channels are active.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-223749-22a3b5153f-scalar_trace_tensor_no_go_no`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If the scalar boundary action is unchanged across scalar, vector, tensor, and mixed probes while the tensorial Einstein residual channels differ, any completion that factors only through the current scalar shell trace / Schur data must assign the same output to metrics with different tensorial channels.  _(class `A`)_
+- **chain closes:** False — The algebraic implication closes over the imported scalar-invariance and tensor-residual facts. The restricted packet does not include the full load-bearing helper implementations needed to independently verify the imported scalar functional, probe families, and Einstein-residual computation.
+- **rationale:** The runner performs real equality and threshold checks, and the reported scalar-action invariances and residual lower bounds satisfy those checks. However, the primary computation is delegated through _frontier_loader to dynamic helper modules, especially scripts/frontier_tensorial_einstein_regge_completion.py, whose full load-bearing implementation is not present in the restricted helper-runner packet. The result is therefore a valid conditional diagnostic given the imported authorities, not a self-contained retained no-go or first-principles compute from the framework baseline.
+- **auditor confidence:** high
 
 ### `schur_covariance_inheritance_narrow_theorem_note_2026-05-02`
 

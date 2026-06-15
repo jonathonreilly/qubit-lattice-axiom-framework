@@ -44,7 +44,7 @@ cone slope into OS0 `c_t/c_s` remains the separately named bridge B-W.
 The 2026-06-15 source repair narrows the old P1/P2/P3/P4 conditional blob
 without claiming retained status:
 
-- [`SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md`](SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- `SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md`
   supplies a candidate exact all-finite-period site-license theorem. If
   independently audited clean, it discharges the larger-periodicity part of
   P1/P4 for one-component site-licensed ticks: every dispersive licensed
@@ -63,6 +63,10 @@ named realization readings that connect the strict tick packet to the
 framework's realized matter carrier. This note still does not retire the
 kinetic-isotropy primitive, does not add a new axiom, and does not set any
 audit verdict.
+They are also not load-bearing authorities for this kinetic note. In the
+source graph, the all-period site-license note is the downstream consumer of
+this note's monomial/winding-budget lemma, so this note records that candidate
+by plain filename rather than by a dependency edge.
 
 ## Premises, with provenance (each graded honestly)
 
@@ -304,7 +308,7 @@ winding cell" and "winding is impossible in continuous time."
 - [KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md](KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md) — the independence surface this sharpens.
 - [SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md](SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md) — the two-coefficient counting (Part F).
 - [PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md](PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md) — the strict-reading precedent (NOT a premise; cited for the reading only, since its D2 consumes the target primitive).
-- [SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md](SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md) — source-side candidate discharge for the finite-period P1/P4 licensed-tick dichotomy residual.
+- `SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md` — non-dependency source-side candidate discharge for the finite-period P1/P4 licensed-tick dichotomy residual. It consumes this note's monomial/winding-budget lemma when read as an all-period bridge, so it must not be represented as an upstream authority of this note.
 - [TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md](TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md) — source-side candidate discharge reducing the bare P2/P3 tick readings to spectrum-reflection transport plus the channel envelope.
 - [RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md](RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md) — the `phi` offset class (retained).
 - [MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md](MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md) — the consequence-map row (`audited_renaming`).

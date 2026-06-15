@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 905 |
+| **retained_bounded** | 906 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
 | unaudited | 1535 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 29 |
@@ -58,8 +57,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 1332 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 1333 |
 | `audited_conditional` | 8 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 25 |
@@ -110,7 +109,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 815 | 43.67 | `audited_clean` | **retained_bounded** |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 903 | 42.32 | `unaudited` | unaudited |
-| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.95 | `audit_in_progress` | audit_in_progress |
+| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.95 | `audited_clean` | **retained_bounded** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 877 | 39.78 | `unaudited` | unaudited |
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 38.66 | `unaudited` | unaudited |
@@ -130,7 +129,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `cl3_color_automorphism_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -275,6 +273,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_color_automorphism_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -3553,6 +3552,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The mathematical chain is internally correct and closes from the retained one-hop authority plus standard finite-dimensional complex representation theory. The primary runner performs exact symbolic Pauli/idempotent/intertwiner checks and reports PASS=42, FAIL=0, with no helper opacity. Under the rubric, however, every load-bearing step is class A, there are zero D checks, and the note reduces to an algebraic consequence of a single retained upstream split theorem rather than a new independent first-principles computation.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
+
+### `cl3_color_automorphism_theorem`
+
+- **Note:** [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](../../docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260615T191415Z-cl3_color_automorphism_theorem`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** None  _(class `A`)_
+- **chain closes:** True — Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / A; J2: first / audited_clean / bounded_theorem / A; J3: first / audited_clean / bounded_theorem / A; J4: first / audited_clean / bounded_theorem / A; J5: first / audited_clean / bounded_theorem / A. Majority rationale: J1: The decisive step is the SU(N_c) Fierz/completeness and dimension-count identity on an already specified 3D carrier: singlet weight 1/N_c^2 and adjoint weight (N_c^2-1)/N_c^2, giving 8/9 at N_c=3. Independent formula checks confirm the trace normalization T^0=I/sqrt(2N_c), the Fierz signs/factors, the tensor-product commutators, and the channel-count ratio. Because the audited scope explicitly excludes physical SM-color identification and the... | J2: The applyable tuple is the first audit's: the load-bearing step is a finite-dimensional SU(3) algebra/Fierz completeness calculation on an explicitly chosen 3D carrier, so class A is more precise than class C. Independent formula checks preserve the stated T_F=1/2 normalization, T^0=I/sqrt(2N_c), the Fierz signs and factors, the 1/N_c^2 singlet and (N_c^2-1)/N_c^2 adjoint weights, and the 8/9 value at N_c=3. The clean verdict is bounded becaus... | J3: The decisive step is the SU(N_c) Fierz/completeness algebra on an already specified 3D carrier: the singlet channel has dimension weight 1/N_c^2 and the adjoint channel has weight (N_c^2-1)/N_c^2=8/9 at N_c=3. Independent formula inventory checks the trace normalization, T^0 identity normalization, tensor-factor commutators, Y projector/eigenvalue arithmetic, and K_EW(kappa_EW) boundary; no runner/source mismatch blocks the bounded algebraic c... | J4: The restricted claim closes as finite-dimensional algebra: a 3D symmetric carrier supports the standard trace-normalized su(3) generators, tensor product structure gives the commutators, and SU(N) completeness gives the singlet/adjoint channel dimensions 1 and N_c^2-1, hence 8/9 at N_c=3. Formula inventory does not expose a sign, factor, or normalization defect in the load-bearing scope; T^0=I/sqrt(2N_c), the 1/(2N_c) term, and K_EW(kappa_EW)=... | J5: The applyable tuple is the first audit's: within the narrowed scope, the proof closes as finite-dimensional algebra on an already selected 3D carrier. Independent formula checks confirm the SU(N) Fierz factors, T^0=I/sqrt(2N_c) normalization, singlet/adjoin dimension fractions, projector ranks, trace of Y, and tensor-factor commutators. The physical color and EW readout bridges are explicitly excluded, so they do not make this bounded algebrai...
+- **rationale:** Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / A; J2: first / audited_clean / bounded_theorem / A; J3: first / audited_clean / bounded_theorem / A; J4: first / audited_clean / bounded_theorem / A; J5: first / audited_clean / bounded_theorem / A. Majority rationale: J1: The decisive step is the SU(N_c) Fierz/completeness and dimension-count identity on an already specified 3D carrier: singlet weight 1/N_c^2 and adjoint weight (N_c^2-1)/N_c^2, giving 8/9 at N_c=3. Independent formula checks confirm the trace normalization T^0=I/sqrt(2N_c), the Fierz signs/factors, the tensor-product commutators, and the channel-count ratio. Because the audited scope explicitly excludes physical SM-color identification and the... | J2: The applyable tuple is the first audit's: the load-bearing step is a finite-dimensional SU(3) algebra/Fierz completeness calculation on an explicitly chosen 3D carrier, so class A is more precise than class C. Independent formula checks preserve the stated T_F=1/2 normalization, T^0=I/sqrt(2N_c), the Fierz signs and factors, the 1/N_c^2 singlet and (N_c^2-1)/N_c^2 adjoint weights, and the 8/9 value at N_c=3. The clean verdict is bounded becaus... | J3: The decisive step is the SU(N_c) Fierz/completeness algebra on an already specified 3D carrier: the singlet channel has dimension weight 1/N_c^2 and the adjoint channel has weight (N_c^2-1)/N_c^2=8/9 at N_c=3. Independent formula inventory checks the trace normalization, T^0 identity normalization, tensor-factor commutators, Y projector/eigenvalue arithmetic, and K_EW(kappa_EW) boundary; no runner/source mismatch blocks the bounded algebraic c... | J4: The restricted claim closes as finite-dimensional algebra: a 3D symmetric carrier supports the standard trace-normalized su(3) generators, tensor product structure gives the commutators, and SU(N) completeness gives the singlet/adjoint channel dimensions 1 and N_c^2-1, hence 8/9 at N_c=3. Formula inventory does not expose a sign, factor, or normalization defect in the load-bearing scope; T^0=I/sqrt(2N_c), the 1/(2N_c) term, and K_EW(kappa_EW)=... | J5: The applyable tuple is the first audit's: within the narrowed scope, the proof closes as finite-dimensional algebra on an already selected 3D carrier. Independent formula checks confirm the SU(N) Fierz factors, T^0=I/sqrt(2N_c) normalization, singlet/adjoin dimension fractions, projector ranks, trace of Y, and tensor-factor commutators. The physical color and EW readout bridges are explicitly excluded, so they do not make this bounded algebrai...
+- **auditor confidence:** judicial
 
 ### `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 

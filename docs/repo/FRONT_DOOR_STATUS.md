@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1484 |
+| Applied audit verdicts | 1485 |
 | Retained-grade rows, including boxed decorations | 1380 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 916 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1508 |
+| Unaudited rows | 1507 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 19 |
 | Audited renaming rows | 30 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1510 |
-| Ready rows | 77 |
+| Total pending rows | 1509 |
+| Ready rows | 76 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
-| High pending | 282 |
+| High pending | 281 |
 | Medium pending | 466 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md) - high; unaudited
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
 - [`wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08`](../../docs/WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
 - [`su3_adjoint_casimir_theorem_note_2026-05-02`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10`](../../docs/TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md) - high; unaudited
 - [`registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`](../../docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
+- [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

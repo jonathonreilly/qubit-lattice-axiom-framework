@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 916 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1507 |
+| unaudited | 1506 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
 | ~~audited_conditional~~ | 19 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,10 +62,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1350 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 46 |
-| `audited_failed` | 27 |
+| `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1824 |
+| `unaudited` | 1823 |
 
 | claim_type | count |
 |---|---:|
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1120 | 47.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 890 | 45.30 | `unaudited` | unaudited |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 814 | 43.67 | `audited_clean` | **retained_bounded** |
@@ -1550,6 +1550,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `axiom_first_kms_condition_theorem_note_2026-05-01` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -3747,6 +3748,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **rationale:** Issue: the algebraic SU(3) decomposition and projector formulas are correct, but the cited authority explicitly defers the bridge to physical SM color/quark carrier. Why this blocks: the source note's q/qbar and SU(3)_c wording relies on that carrier identification; the runner only verifies finite SU(3) matrix identities after N_c = 3 is assumed. Repair target: add a retained bridge theorem identifying the framework's 3D symmetric base with physical quark color, or rescope this row as an abstract algebraic decoration of CL3_COLOR_AUTOMORPHISM_THEOREM. Claim boundary until fixed: 3 ⊗ 3̄ = 1 ⊕ 8 with a unique trace singlet for the algebraic SU(3) carrier.
 - **open / conditional deps cited:**
   - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
+- **auditor confidence:** high
+
+### `cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic audit of the explicit symmetric-base Gell-Mann su(3) embedding in C^8 and its commutation with the fiber SU(2), with no physical SU(3)_c identification.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-215259-1f9b8353a6-cl3_su3_symmetric_base_commu`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The operators are defined as T^a_8D = U_base^dag diag(lambda^a/2,0) U_base tensor I_2, so the su(3) bracket is inherited from the 3D Gell-Mann block and [T^a_8D,Jf_i]=0 follows from [A tensor I, I tensor B]=0.  _(class `A`)_
+- **chain closes:** False — The intended embedding and commutant proof are exact algebra, but the source as written contains displayed normalization defects. In particular the opening full-8D trace formula and the C3 structure-constant extraction formula do not match the defined operators and standard Gell-Mann normalization.
+- **rationale:** Issue: the opening claim states Tr[T^a_8D T^b_8D] = (1/2) delta_ab, but T^a_8D = M^a_4 tensor I_2 gives Tr_8 = 2 Tr_4(M^a_4 M^b_4) = delta_ab; C3 also states f = (2/i) Tr([lambda^a,lambda^b] lambda^c), which is 8 times the standard f for unhalved Gell-Mann matrices. Why this blocks: these are displayed quantitative identities in the audited packet, and strict formula inventory does not permit a clean verdict when the source and runner use different normalizations. Repair target: replace the headline trace with the single-block formula Tr_4(M^a_4 M^b_4) = (1/2) delta_ab or the full trace Tr_8 = delta_ab, and define f using lambda/2 generators or f = (1/(4i)) Tr([lambda^a,lambda^b] lambda^c). Claim boundary until fixed: the local embedding and tensor-product commutant proof are supported, but the note is not clean as written.
 - **auditor confidence:** high
 
 ### `cl3_taste_generation_theorem`

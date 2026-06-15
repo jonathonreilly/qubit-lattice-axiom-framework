@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/plaquette_marked_slice_bulk_average_translation_bridge_2026_06_12.py
+runner_sha256: 3f9abbe7c4d827ab5472188cbab3446b36203288817b636b449460371f2f202e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: L=2 periodic Wilson plaquette count is 6 L^4 -- count=96
+PASS: spatial-spatial class count is 3 L^4 -- count=48
+PASS: spatial-temporal class count is 3 L^4 -- count=48
+PASS: class split is disjoint and exhaustive
+PASS: translations plus spatial cubic permutations cover every spatial plaquette -- orbit=48
+PASS: translations plus spatial cubic permutations cover every temporal plaquette -- orbit=48
+PASS: 4-axis permutations plus translations cover all plaquettes from one spatial mark -- orbit=96
+PASS: a time-space axis swap maps the marked spatial plaquette to temporal class -- ((0, 0, 0, 0), 1, 2) -> ((0, 0, 0, 0), 0, 2)
+PASS: common Wilson coefficient is preserved under the time-space swap -- accepted surface uses one beta coefficient for all six orientations
+PASS: a split beta_s/beta_t surface would not be preserved by that swap -- the equality uses the accepted common-coefficient surface
+PASS: class weights are exactly one half each
+PASS: if E_spatial = E_temporal, all-plaquette average equals marked spatial
+PASS: without across-class equality, all average is the named split -- <P>_all = (E_spatial + E_temporal)/2 on symmetric L^4 counts
+PASS: note delegates audit status to independent audit lane
+PASS: note contains the finite-L within-class theorem
+PASS: note contains the accepted-surface across-class theorem
+PASS: note avoids banned overreach phrases
+TOTAL: PASS=17, FAIL=0
+
+----- stderr -----
+

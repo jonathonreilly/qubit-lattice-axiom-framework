@@ -1,0 +1,28 @@
+loop_slug: bz-corner-hamming-boundary-20260615
+date: 2026-06-15
+mode: source_repair_block
+branch: physics-loop/bz-corner-hamming-boundary-20260615
+base: origin/main
+target_claim_id: staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07
+goal: "Repair the audited conditional BZ-corner row by removing the unsupported Hamming-parity-to-position-space sublattice/chirality bridge."
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_blocker_text: "missing_bridge_theorem: either add a one-hop bridge proving the BZ-corner Hamming-parity chirality/sublattice identification, or narrow the note and runner to the closed Hamming-count plus hw=1 M_3(C) algebraic support."
+route_taken: "narrow_to_closed_hamming_count_plus_hw1_m3_support"
+files_touched:
+  - docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md
+  - scripts/probe_bz_corner_decomposition.py
+  - logs/runner-cache/probe_bz_corner_decomposition.txt
+open_imports:
+  - "No bridge is supplied from Hamming parity to position-space sublattice/chirality."
+  - "Physical SM-generation reading remains outside this block."
+checks:
+  - "python3 scripts/probe_bz_corner_decomposition.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/probe_bz_corner_decomposition.py --force --push-mode none"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/probe_bz_corner_decomposition.py --check-only"
+  - "python3 docs/audit/scripts/audit_lint.py --strict"
+  - "git diff --check"
+review_disposition: "local mechanical preflight pass; formal review/audit remains external"
+next_exact_action: "Open review PR for this bounded-support source repair."
+stop_condition: "This block stops at PR handoff; independent reviewer/auditor decides row movement."

@@ -1,8 +1,8 @@
 """Block 04: BZ-corner Hamming-weight decomposition verification.
 
-Verifies that the 8 BZ corners of staggered-Dirac on Z^3 APBC decompose
-uniquely by Hamming weight as 1+3+3+1, and that the hw=1 triplet has
-the M_3(C) translation character support structure.
+Verifies that the 8 BZ corners on the supplied staggered Z^3 BZ-corner
+surface decompose uniquely by Hamming weight as 1+3+3+1, and that the
+hw=1 triplet has the M_3(C) translation character support structure.
 
 Companion: docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md
 Loop: staggered-dirac-realization-gate-20260507
@@ -11,13 +11,15 @@ Block: 04
 from __future__ import annotations
 
 from collections import defaultdict
+from pathlib import Path
 from typing import List, Tuple
 
-import sympy as sp
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md"
 
 
 def enumerate_bz_corners() -> List[Tuple[int, int, int]]:
-    """Enumerate all 8 BZ corners of staggered fermion on Z^3 APBC.
+    """Enumerate all 8 corners on the supplied staggered Z^3 BZ-corner surface.
 
     Each corner is labeled by binary (n_1, n_2, n_3) with k_μ = n_μ · π.
     """
@@ -53,8 +55,22 @@ def main() -> int:
     print("=" * 72)
     print()
 
+    note_text = NOTE.read_text(encoding="utf-8")
+    normalized_note = " ".join(note_text.replace("**", "").split()).lower()
+    source_boundary_phrases = [
+        "hamming-parity boundary repair",
+        "does not identify hamming-weight parity with position-space sublattice parity or chirality",
+        "any such bridge remains a separate theorem",
+        "verification that hamming parity is not treated as a position-space sublattice/chirality claim",
+    ]
+    source_boundary = all(phrase in normalized_note for phrase in source_boundary_phrases)
+    print("Source boundary check:")
+    print("  Hamming parity is not used as a position-space sublattice/chirality bridge")
+    print(f"  {'PASS' if source_boundary else 'FAIL'}")
+    print()
+
     corners = enumerate_bz_corners()
-    print(f"Total BZ corners: {len(corners)} (= 2^3 on staggered Z^3 APBC)")
+    print(f"Total BZ corners: {len(corners)} (= 2^3 on supplied staggered Z^3 BZ-corner surface)")
     print()
 
     # Group by Hamming weight
@@ -132,25 +148,15 @@ def main() -> int:
     print("  full M_3(C) support per THREE_GENERATION_OBSERVABLE_THEOREM_NOTE")
     print()
 
-    # Sublattice parity check
-    print("Sublattice parity (chirality grading):")
-    print("  hw even (sublattice A): hw=0 (1 corner) + hw=2 (3 corners) = 4")
-    print("  hw odd (sublattice B):  hw=1 (3 corners) + hw=3 (1 corner) = 4")
-    sublattice_A_count = sum(1 for hw in (0, 2) for n in by_hw[hw])
-    sublattice_B_count = sum(1 for hw in (1, 3) for n in by_hw[hw])
-    sublattice_balanced = sublattice_A_count == sublattice_B_count == 4
-    print(f"  A: {sublattice_A_count}, B: {sublattice_B_count}, balanced: {'PASS' if sublattice_balanced else 'FAIL'}")
-    print()
-
     # Overall verdict
-    all_checks = [decomp_matches, chars_match, distinct, c3_is_3cycle, sublattice_balanced]
+    all_checks = [source_boundary, decomp_matches, chars_match, distinct, c3_is_3cycle]
     n_pass = sum(all_checks)
     n_total = len(all_checks)
 
     print(f"SUMMARY: PASS={n_pass} FAIL={n_total - n_pass} (out of {n_total} structural checks)")
     print()
-    print("Bounded theorem (T3) — BZ-corner algebraic triplet support — verified.")
-    print("Staggered-Dirac on Z^3 APBC has unique 1+3+3+1 BZ-corner")
+    print("Bounded source support (T3) — BZ-corner algebraic triplet support — verified.")
+    print("Supplied staggered Z^3 BZ-corner surface has unique 1+3+3+1 BZ-corner")
     print("decomposition by Hamming weight; hw=1 triplet has M_3(C)")
     print("algebraic support matching THREE_GENERATION_OBSERVABLE_THEOREM.")
 

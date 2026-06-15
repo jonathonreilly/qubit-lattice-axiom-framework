@@ -310,15 +310,29 @@ log("SECTION 0: Source-boundary checks")
 log("=" * 78)
 log()
 note_text = NOTE.read_text(encoding="utf-8")
+note_flat = " ".join(note_text.split())
 check(
     "section0_2026_06_07_boundary_present",
     "2026-06-07 Implementation-Input Boundary Retargeting" in note_text,
     "source note carries the implementation-input retargeting section",
 )
 check(
+    "section0_2026_06_12_status_certificate_present",
+    "2026-06-12 Current-Surface Status Certificate" in note_text
+    and "actual_current_surface_status: conditional-support" in note_text
+    and "bare_retained_allowed: false" in note_text,
+    "source note carries a machine-checkable current-surface firewall",
+)
+check(
     "section0_imports_are_implementation_inputs",
     "visible implementation inputs rather than retained proof authorities" in note_text,
     "canonical plaquette and Ward target are not proof authorities for this row",
+)
+check(
+    "section0_top_claim_scope_is_finite_grid_only",
+    "Claim scope:** a bounded finite-grid diagnostic" in note_text
+    and "does not promote those finite diagnostics to a" in note_text,
+    "opening claim scope no longer states continuum uniqueness as the row claim",
 )
 check(
     "section0_continuum_claims_excluded",
@@ -327,13 +341,18 @@ check(
 )
 check(
     "section0_runner_count_updated",
-    "Counts: 28 PASS, 0 FAIL" in note_text,
+    "Counts: 31 PASS, 0 FAIL" in note_text,
     "note scorecard matches source-boundary runner",
 )
 check(
     "section0_no_retained_input_overclaim",
     "cited as retained inputs" not in note_text,
     "old retained-input wording removed",
+)
+check(
+    "section0_no_new_axiom_or_ledger_status",
+    "No new axiom, retained bridge, or ledger status is introduced here" in note_flat,
+    "source firewall does not alter audit authority",
 )
 log()
 

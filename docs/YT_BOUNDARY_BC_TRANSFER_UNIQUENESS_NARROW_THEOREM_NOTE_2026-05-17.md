@@ -1,16 +1,17 @@
 # yt Boundary BC-Transfer Finite-Grid Diagnostic (Backward-RGE)
 
-**Date:** 2026-05-17
+**Date:** 2026-05-17; 2026-06-12 current-surface input-firewall repair
 **Type:** bounded_theorem
-**Claim scope:** the standalone numerical-mathematical statement that the
-backward-RGE map `y_t(v) -> y_t(M_Pl)` used in the BC-transfer step of the
-parent `yt_boundary_theorem` (claim iv) is well-defined, smooth, strictly
-monotone, locally Lipschitz with a finite numerical constant, free of
-Landau-pole obstruction on the segment `[ln v, ln M_Pl]` for SM-physical
-initial data in the scan interval `y_t(v) in [0.5, 1.2]`, and therefore
-admits a UNIQUE root of the lattice Ward boundary condition
-`y_t(M_Pl) = g_lattice / sqrt(6) = 0.43577` in that interval at
-`y_t(v) = X* = 0.97267 +/- 1e-10`.
+**Claim scope:** a bounded finite-grid diagnostic of the coded backward-RGE map
+`Phi : y_t(v) -> y_t(M_Pl)` used in the BC-transfer step of the parent
+`yt_boundary_theorem` (claim iv). For the runner's explicit implementation
+inputs, the companion runner checks finite sampled trajectories, positive
+forward differences on its 33-point `X` grid, finite observed grid slopes,
+stable bracketed `brentq` roots near `X* = 0.97267`, root stability under
+integrator-step refinement, and an extension-scan onset above the working
+interval. This source note does not promote those finite diagnostics to a
+continuum strict-monotonicity theorem, an exact unique-root theorem, or a
+physical BC-transfer authority.
 
 The scan interval `[0.5, 1.2]` is chosen physically: it is strictly below
 the SM-EFT Yukawa Landau-pole-like onset, which the runner locates
@@ -20,20 +21,42 @@ bounded; the trajectory `y_t(t)` does NOT exceed its initial value within
 the asymptotically-free `-8 g_3^2` and EW gauge terms balance the
 self-coupling `9/2 y_t^2` in this regime).
 
-This is a numerical narrow well-definedness theorem about the **mathematical
-device** asserted in claim (iv) of `YT_BOUNDARY_THEOREM.md`. It does NOT
-re-derive Options A / B / C in the parent and it does NOT claim that the SM
-EFT is physical at `M_Pl`. It establishes the strictly weaker but
-prerequisite fact that the backward-extrapolation root-finder used to
-implement Option A in `frontier_yt_boundary_consistency.py` has a unique
-solution. The unique-root claim is what makes "the BC transfer selects a
-unique trajectory" in claim (iv) a mathematically defensible statement
-rather than an implicit assumption.
+This is a finite diagnostic about the **mathematical device** asserted in
+claim (iv) of `YT_BOUNDARY_THEOREM.md`. It does NOT re-derive Options A / B /
+C in the parent and it does NOT claim that the SM EFT is physical at `M_Pl`.
+It establishes the strictly weaker prerequisite that the
+backward-extrapolation root-finder used to implement Option A in
+`frontier_yt_boundary_consistency.py` has a stable bracketed root under the
+runner's finite checks and imported implementation inputs.
 
 **Status authority:** independent audit lane only.
 
 **Primary runner:** [`scripts/frontier_yt_boundary_bc_transfer_uniqueness.py`](./../scripts/frontier_yt_boundary_bc_transfer_uniqueness.py)
 **Cache:** `logs/runner-cache/frontier_yt_boundary_bc_transfer_uniqueness.txt`
+
+## 2026-06-12 Current-Surface Status Certificate
+
+```yaml
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: finite-grid RGE diagnostic under imported implementation inputs
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: >
+  The row still depends on visible implementation inputs: canonical plaquette
+  constants, the Ward target, two-loop SM RGE normalization, threshold scales,
+  and EW initial conditions. No retained source in this packet derives those
+  inputs as framework-native authorities.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+This certificate is intentionally not an audit result. It is a source-side
+firewall: downstream use must preserve the imported-input condition unless a
+separate retained or accepted-premise bridge supplies those inputs. No new
+axiom, retained bridge, or ledger status is introduced here.
 
 ## 2026-06-07 Implementation-Input Boundary Retargeting
 
@@ -132,7 +155,7 @@ No PDG observable value is consumed by the load-bearing pass/fail checks. The ru
 
 ## Runner Evidence
 
-The runner performs 28 pass/fail checks:
+The runner performs 31 pass/fail checks:
 
 - setup and imported-input consistency checks;
 - finite trajectory checks on a coarse `X` grid;
@@ -145,7 +168,7 @@ The runner performs 28 pass/fail checks:
 Expected result:
 
 ```text
-Counts: 28 PASS, 0 FAIL
+Counts: 31 PASS, 0 FAIL
 ```
 
 ## Audit Graph Hygiene

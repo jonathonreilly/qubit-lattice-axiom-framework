@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 929 |
+| **retained_bounded** | 930 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1473 |
+| unaudited | 1472 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1372 |
+| `audited_clean` | 1373 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1790 |
+| `unaudited` | 1789 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 533 |
-| `high` | 509 |
-| `medium` | 888 |
+| `high` | 508 |
+| `medium` | 889 |
 | `leaf` | 1381 |
 
 - **Retained pending chain closure:** 4
@@ -982,6 +982,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_p2_from_qubit_trace_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13934,6 +13935,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Every exponent-fixing selector in the tested family reduces to one of (Add)/(Loc)/(Pot), which are equivalent on smooth W with W(0)=0, while the normalized-gradient selector is exponent-blind and selects no p.  _(class `A`)_
 - **chain closes:** True — The calculus lemma Add iff Loc iff Pot follows directly from vanishing mixed derivatives on a convex domain, and independent symbolic checks confirm the displayed derivative identities for log Z, Z^p, and the normalized gradient. The closure is only for the enumerated selector family; it does not rule out a future genuinely new non-additive exponent selector or close the physical det-readout bridge.
 - **rationale:** The runner source performs real symbolic algebra rather than printing canned passes, and the load-bearing identities were independently checked by a route not sharing the runner implementation path. The proof is a class A algebraic/calculus closure over finite-matrix inputs, not a numerical comparator or definition substitution. The no-go discipline gate is satisfied because the packet scopes the result to the tested selector families, collapses the wall to exponent-fixing additivity, and explicitly leaves hypothetical outside selectors open.
+- **auditor confidence:** high
+
+### `observable_principle_p1_p2_from_qubit_trace_note_2026-05-20`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-region qubit-trace W_qubit for self-adjoint H,J: P1 additivity under an explicitly independent tensor-product Hamiltonian/source split and P2 phase-blindness from positive trace; no audit closure of the Grassmann/log-det bridge or parent observable-principle row.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-235618-ddfa323ddd-observable_principle_p1_p2_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For an independent split, exp(-((H1+J1)⊗I + I⊗(H2+J2))) = exp(-(H1+J1))⊗exp(-(H2+J2)) and Tr(A⊗B)=Tr(A)Tr(B), while self-adjoint H+J makes Tr(exp(-(H+J))) strictly positive.  _(class `A`)_
+- **chain closes:** True — The P1 identity follows exactly from commuting tensor-factor exponentials plus the ordinary matrix trace tensor identity, with the zero-source baselines factorizing the same way. The P2 phase-blindness side follows from the spectral theorem: exp(-(H+J)) is positive definite, so Z[J] is a positive real and |Z[J]|=Z[J].
+- **rationale:** The audited bounded core is standard finite-dimensional operator algebra over the accepted qubit premise and retained tensor-locality input. Independent manual checking confirms the signs, tensor ordering, trace normalization, and baseline subtraction; the runner source performs real symbolic and randomized checks rather than hard-coding the contested conclusion. The open Grassmann/Berezin and staggered-Dirac bridge is explicitly outside this clean scope, so no parent log|det| retag follows from this verdict alone.
 - **auditor confidence:** high
 
 ### `observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28`

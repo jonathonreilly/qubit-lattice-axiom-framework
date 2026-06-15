@@ -1,4 +1,4 @@
-# PMNS TM2 Residual Consequence -- Bounded Algebra Note
+# PMNS TM2 Residual Consequence -- Stipulated-Hypothesis Bounded Algebra Note
 
 **Date:** 2026-05-26
 **Claim type:** bounded_theorem
@@ -8,10 +8,10 @@ effective status are set by the independent audit lane.
 
 ## Scope
 
-This note lands only the algebraic consequence that was supported by
-the submitted runner. It does **not** claim that the framework has
-already derived the needed PMNS residual conditions. It is a reusable
-conditional lemma:
+This note lands only the algebraic implication supported by the submitted
+runner. The residual statements below are theorem hypotheses, not upstream
+framework conclusions and not hidden dependencies. It does **not** claim that
+the framework has already derived the needed PMNS residual conditions.
 
 > If a PMNS matrix satisfies a trimaximal second-column residual and a
 > mu-tau modulus residual, then the leading-order TM2 sum rule and
@@ -19,9 +19,11 @@ conditional lemma:
 > `c12*s12*s13 != 0`, the maximal-CP consequence also follows.
 
 The upstream identification of those residuals with retained
-framework physics remains separate.
+framework physics remains separate. Any downstream use as a framework PMNS
+prediction must cite retained residual-derivation authorities; this bounded
+row only certifies the finite algebra once those hypotheses are stipulated.
 
-## Assumptions
+## Stipulated Hypotheses
 
 Let `U` be a unitary PMNS matrix in the standard three-angle,
 one-Dirac-phase parametrization, and assume:
@@ -41,7 +43,8 @@ one-Dirac-phase parametrization, and assume:
    TM2 sum rule this excludes the phase-degenerate endpoints, including
    `sin(theta_13) = 0` and `sin^2(theta_13) = 2/3`.
 
-These are assumptions of this bounded algebra note, not conclusions.
+These are stipulated hypotheses of this bounded algebra theorem, not
+conclusions and not framework-derived residual authorities.
 
 ## Claim
 
@@ -51,6 +54,9 @@ Under the assumptions above:
 2. `3 sin^2(theta_12) cos^2(theta_13) = 1`.
 3. If `c12*s12*s13 != 0`, then `cos(delta_CP) = 0`, so
    `delta_CP` lies in `{pi/2, 3pi/2}` modulo `2pi`.
+
+The audited claim surface is only this implication from the stipulated
+hypotheses. The note does not assert that the hypotheses hold in the framework.
 
 ## Proof
 
@@ -132,6 +138,8 @@ This note does **not**:
 - derive the trimaximal or mu-tau residuals from the framework;
 - identify which retained framework rows may serve as upstream
   authorities for those residuals;
+- allow downstream PMNS-prediction rows to cite this algebraic implication
+  without separately closing the residual hypotheses;
 - predict a numerical value of `theta_13`;
 - provide sub-leading corrections;
 - use empirical PMNS fits as derivation input;
@@ -147,5 +155,5 @@ Expected:
 
 ```text
 TOTAL: PASS=22 FAIL=0
-VERDICT: conditional TM2 algebraic consequence holds.
+VERDICT: stipulated-hypothesis TM2 algebraic consequence holds.
 ```

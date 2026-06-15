@@ -49,7 +49,7 @@ The kinematic-primitive attack class is exhausted at 31+ vectors with high confi
 | R2_claim | Kinematic-primitive attack class exhausted (R2's source note) | upstream proposal: PR #709 / [`A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md`](A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md) |
 | KS | Kawamoto-Smit phase forcing on Z³ APBC | upstream bounded-theorem candidate: [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) |
 | BlockT3 | hw=1 BZ-corner triplet has M_3(C) algebra; C_3[111] cyclic | upstream authority: [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) |
-| SC | Single-clock codimension-1 evolution; uniqueness of temporal RP axis | upstream authority: [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) |
+| SC | Axis-conditional single-clock codimension-1 evolution under B-AXIS; temporal-axis selection is a premise, not derived from RP uniqueness | upstream conditional source: [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) |
 | LR | Lieb-Robinson microcausality; v_LR = 2erJ | upstream authority: [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) |
 | CPT | CPT exact preservation in framework | upstream proposal: [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md) |
 

@@ -1,0 +1,27 @@
+loop_slug: single-clock-baxis-firewall-20260615
+branch: physics-loop/single-clock-baxis-firewall-20260615
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03
+target_blocker_text: "missing_bridge_theorem: supply a retained B-AXIS theorem covering N2/N4/N5, or keep this row and all consumers explicitly premise-conditional."
+artifact_role: downstream_firewall_runner
+files_touched:
+  - docs/A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md
+  - docs/A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md
+  - docs/PLANCK_ORIENTATION_PRINCIPLE_BOUNDED_NOTE_2026-05-10_planckP3.md
+  - docs/STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md
+  - scripts/single_clock_baxis_downstream_firewall_2026_06_15.py
+  - logs/runner-cache/single_clock_baxis_downstream_firewall_2026_06_15.txt
+open_imports:
+  - b_axis_supplier_N2_N4_N5
+no_go_routes:
+  - unique_rp_axis_selection_not_available
+  - retained_single_clock_status_not_available
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_status: local_source_checks_passed_reviewer_loop_pending
+pr_status: pending
+next_exact_action: "Commit, push, and open review PR."

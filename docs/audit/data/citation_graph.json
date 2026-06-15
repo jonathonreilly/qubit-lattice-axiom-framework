@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16"
     },
     {
@@ -51491,6 +51487,10 @@
     {
       "from": "repo.front_door_status",
       "to": "multisite_pauli_group_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19"
     },
     {
       "from": "repo.front_door_status",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
         "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
         "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
         "multisite_pauli_group_theorem_note_2026-05-02",
+        "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
         "gellmann_completeness_theorem_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
         "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ea8553d1069bd88f312de5973da4181d9a30fc9f6fbef1964226112b7b952295",
+      "note_hash": "55582c15ec13f9d1680c9908c03221bdbcd62f4e49d46e5cc4352575f41fed97",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

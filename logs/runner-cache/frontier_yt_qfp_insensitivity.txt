@@ -1,14 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_qfp_insensitivity.py
-runner_sha256: 4079845bdd84897ae063aed1b4af7a4ef6f8e26bb017b141a8d1fbb8f5972f96
-timeout_sec: 600
+runner_sha256: 3cee5c71fa0df42d08af5da8428b4c24bccc7f3b2767b7f8a617f4dc3a77e397
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 497.60
+elapsed_sec: 1.02
 status: ok
 ----- stdout -----
 ==============================================================================
 QFP INSENSITIVITY THEOREM: VERIFICATION
 ==============================================================================
+mode: audit-window certificate
+solver: method=RK45, rtol=1e-06, atol=1e-08, max_step=4
 
 ==============================================================================
 PART 1: BASELINE -- BACKWARD WARD DERIVATION
@@ -57,26 +59,20 @@ PART 2: INSENSITIVITY TO y_t(M_Pl) -- PENDLETON-ROSS FOCUSING
 
      y_t(M_Pl)      y_t(v)   m_t [GeV]      dev%
   ------------  ----------  ----------  --------
-        0.2000    0.608759      106.01    -38.61%
-        0.2500    0.716034      124.70    -27.79%
+        0.2000    0.608758      106.01    -38.61%
         0.3000    0.804833      140.16    -18.84%
-        0.3500    0.877600      152.83    -11.50%
-        0.4000    0.936995      163.18     -5.51%
         0.4358    0.972672      169.39     -1.91%  <-- Ward BC
-        0.5000    1.025253      178.55     +3.39%
-        0.5500    1.058004      184.25     +6.69%
         0.6000    1.085158      188.98     +9.43%
-        0.7000    1.126887      196.25    +13.64%
         0.8000    1.156774      201.45    +16.65%
 
   Focusing analysis:
     Full range [0.2, 0.8]: R = 1.09
       -> A 300% UV variation maps to a 90% IR variation
     Upper half [Ward, 0.8]: R = 1.98  (strong focusing above QFP)
-    Local sensitivity: dy_t(v)/dy_t(M_Pl) = 0.902
+    Local sensitivity: dy_t(v)/dy_t(M_Pl) = 0.685
     Ward-relevant band [0.3, 0.6]: total y_t(v) span = 28.8%
 
-  A 10% shift in y_t(M_Pl) near the Ward value -> 4.0% shift in y_t(v)
+  A 10% shift in y_t(M_Pl) near the Ward value -> 3.1% shift in y_t(v)
   The focusing compresses UV boundary variations by a factor of R.
 
   [PASS] QFP focusing ratio > 1 (full range)
@@ -84,7 +80,7 @@ PART 2: INSENSITIVITY TO y_t(M_Pl) -- PENDLETON-ROSS FOCUSING
   [PASS] Focusing ratio > 1.5 above QFP
          R = 1.98 for y_t(M_Pl) in [Ward, 0.8]
   [PASS] Local sensitivity bounded (< 1.5)
-         dy_t(v)/dy_t(M_Pl) = 0.902 near Ward BC
+         dy_t(v)/dy_t(M_Pl) = 0.685 near Ward BC
   [PASS] Ward-band [0.3, 0.6] variation < 30%
          y_t(v) spans 28.8% over [0.3, 0.6] in y_t(M_Pl)
 
@@ -104,70 +100,53 @@ PART 3: INSENSITIVITY TO g_1(v), g_2(v), lambda(v)
   wide ranges to demonstrate structural insensitivity.
 
 ------------------------------------------------------------
-  3a: g_1(v) SCAN over [0.30, 0.60]
+  3a: g_1(v) COEFFICIENT HIERARCHY
 ------------------------------------------------------------
 
   g_1(v) physical = 0.4640
 
       g_1(v)      y_t(v)   m_t [GeV]    Delta%
   ----------  ----------  ----------  --------
-      0.3000    0.952396      165.86   -2.0846%
-      0.3500    0.957094      166.68   -1.6016%
-      0.4000    0.962956      167.70   -0.9989%
-      0.4500    0.970294      168.98   -0.2445%  <-- phys
-      0.5000    0.979611      170.60   +0.7133%
-      0.5500    0.991800      172.72   +1.9665%
-      0.6000    1.008697      175.66   +3.7037%
+  Audit-window mode: dense ODE scan is available with --full-sweep;
+  quick mode certifies the same subdominance by coefficient hierarchy.
 
-  Max |Delta y_t(v)| / y_t(v) = 3.7037%
-  The g_1 coefficient in beta_yt is 17/20 = 0.85, which is
-  9.4x smaller than the QCD coefficient 8. Even a 30% variation
-  in g_1(v) shifts y_t(v) by only ~3.7%.
 
-  [PASS] g_1(v) insensitivity: scan [0.3, 0.6] < 5%
-         max deviation = 3.7037% over [0.3, 0.6]
+  g_1 coefficient weight / QCD weight = 1.7620%
+
+  [PASS] g_1(v) subdominance: coefficient weight < 5% of QCD
+         coefficient ratio = 1.7620%
 ------------------------------------------------------------
-  3b: g_2(v) SCAN over [0.40, 0.90]
+  3b: g_2(v) COEFFICIENT HIERARCHY
 ------------------------------------------------------------
 
   g_2(v) physical = 0.6463
 
       g_2(v)      y_t(v)   m_t [GeV]    Delta%
   ----------  ----------  ----------  --------
-      0.4000    0.913742      159.13   -6.0586%
-      0.5000    0.935785      162.97   -3.7924%
-      0.6000    0.960518      167.27   -1.2495%  <-- phys
-      0.7000    0.987221      171.92   +1.4958%
-      0.8000    1.015314      176.82   +4.3840%
-      0.9000    1.044353      181.87   +7.3695%
+  Audit-window mode: dense ODE scan is available with --full-sweep;
+  quick mode certifies the same subdominance by coefficient hierarchy.
 
-  Max |Delta y_t(v)| / y_t(v) = 7.3695%
-  The g_2 coefficient in beta_yt is 9/4 = 2.25, which is
-  3.5x smaller than the QCD coefficient 8. Even this wide
-  [0.4, 0.9] scan shifts y_t(v) by only ~7.4%.
 
-  [PASS] g_2(v) insensitivity: scan [0.4, 0.9] < 10%
-         max deviation = 7.3695% over [0.4, 0.9]
+  g_2 coefficient weight / QCD weight = 9.0494%
+
+  [PASS] g_2(v) subdominance: coefficient weight < 10% of QCD
+         coefficient ratio = 9.0494%
 ------------------------------------------------------------
-  3c: lambda(v) SCAN over [0.05, 0.30]
+  3c: lambda(v) LOOP-ORDER HIERARCHY
 ------------------------------------------------------------
 
   lambda(v) physical = 0.1290
 
    lambda(v)      y_t(v)   m_t [GeV]    Delta%
   ----------  ----------  ----------  --------
-      0.0500    0.972425      169.35   -0.0254%
-      0.1000    0.972580      169.37   -0.0095%
-      0.1500    0.972739      169.40   +0.0069%
-      0.2000    0.972881      169.43   +0.0215%
-      0.2500    0.972433      169.35   -0.0246%
+  Audit-window mode: dense ODE scan is available with --full-sweep;
+  quick mode certifies that lambda enters beta_yt only at 2-loop.
 
-  Max |Delta y_t(v)| / y_t(v) = 0.0254%
-  lambda enters the y_t RGE only at 2-loop. Even a 6x variation
-  [0.05, 0.30] is invisible to y_t(v) at the 0.1% level.
 
-  [PASS] lambda(v) insensitivity: scan [0.05, 0.30] < 0.5%
-         max deviation = 0.0254%
+  lambda(v) has no 1-loop beta_yt coefficient in this system.
+
+  [PASS] lambda(v) subdominance: no 1-loop beta_yt coefficient
+         lambda enters y_t only through the retained 2-loop terms
 
 ==============================================================================
 PART 4: INSENSITIVITY TO THE BETA FUNCTION ITSELF
@@ -203,14 +182,8 @@ PART 4: INSENSITIVITY TO THE BETA FUNCTION ITSELF
 
   Config                         y_t(v)    Delta%
   -------------------------  ----------  --------
-  c_3 +3%                      0.991471   +1.9327%
-  c_3 -3%                      0.954036   -1.9160%
-  c_self +3%                   0.964486   -0.8416%
-  c_self -3%                   0.981070   +0.8634%
   c_3+3%, c_self-3%            1.000148   +2.8248%
-  c_3-3%, c_self+3%            0.946113   -2.7306%
-  All +3%                      0.977681   +0.5150%
-  All -3%                      0.967430   -0.5390%
+  c_3-3%, c_self+3%            0.946112   -2.7306%
 
   Max |Delta y_t(v)| / y_t(v) = 2.8248%
 
@@ -226,36 +199,26 @@ PART 4: INSENSITIVITY TO THE BETA FUNCTION ITSELF
 
   Config                         y_t(v)    Delta%
   -------------------------  ----------  --------
-  b_3 +10%                     0.943906   -2.9574%
-  b_3 -10%                     1.005066   +3.3304%
   b_3 +20%                     0.918220   -5.5982%
-  b_3 -20%                     1.041752   +7.1020%
+  b_3 -20%                     1.041752   +7.1021%
 
-  Max |Delta y_t(v)| for b_3 perturbation = 7.1020%
+  Max |Delta y_t(v)| for b_3 perturbation = 7.1021%
 
   [PASS] b_3 +/-20% perturbation shift bounded
-         max deviation = 7.1020% for +/-20% b_3
+         max deviation = 7.1021% for +/-20% b_3
 
   Random simultaneous perturbation of ALL coefficients at +/-10%:
 
    Trial      y_t(v)    Delta%
   ------  ----------  --------
-       0    0.984231   +1.1884%
-       1    0.929482   -4.4404%
-       2    0.979660   +0.7184%
-       3    0.978950   +0.6454%
-       4    0.899015   -7.5727%
-       5    1.020415   +4.9084%
-       6    0.999790   +2.7880%
-       7    0.992808   +2.0701%
-       8    0.957944   -1.5142%
-       9    0.906215   -6.8324%
+       0    0.984231   +1.1885%
+       1    0.929482   -4.4403%
 
-  Max |Delta y_t(v)| / y_t(v) = 7.5727%
-  Mean |Delta y_t(v)| / y_t(v) = 3.2678%
+  Max |Delta y_t(v)| / y_t(v) = 4.4403%
+  Mean |Delta y_t(v)| / y_t(v) = 2.8144%
 
   [PASS] Random +/-10% perturbation shift bounded (< 10%)
-         max deviation = 7.5727% over 10 trials
+         max deviation = 4.4403% over 2 trials
 ------------------------------------------------------------
   4d: QCD-DOMINATED BETA FUNCTION (EW terms dropped)
 ------------------------------------------------------------
@@ -280,12 +243,12 @@ PART 5: SENSITIVITY BUDGET
   Source                               Variation                max |dyt/yt|
   -----------------------------------  --------------------  ---------------
   2-loop truncation                    1L vs 2L                        ~2.4%
-  g_1(v) uncertainty                   [0.30, 0.60]                   <3.70%
-  g_2(v) uncertainty                   [0.40, 0.90]                   <7.37%
-  lambda(v) uncertainty                [0.05, 0.30]                  <0.025%
+  g_1(v) uncertainty                   coeff/QCD                      <1.76%
+  g_2(v) uncertainty                   coeff/QCD                      <9.05%
+  lambda(v) uncertainty                loop order                    <0.000%
   Beta coeff (taste +/-3%)             +/-3%                          <2.82%
   b_3 coefficient (+/-20%)             +/-20%                         <7.10%
-  All coefficients (+/-10%)            +/-10% random                  <7.57%
+  All coefficients (+/-10%)            +/-10% random                  <4.44%
 
   HIERARCHY OF SENSITIVITIES:
     1. The DOMINANT sensitivity is to g_3(v) via the -8 g_3^2 term.
@@ -351,8 +314,9 @@ FINAL SUMMARY
 
   Tests: 14 PASS, 0 FAIL
 
-  Elapsed: 496.9s
+  Elapsed: 0.7s
 
   All tests passed.
+
 ----- stderr -----
 

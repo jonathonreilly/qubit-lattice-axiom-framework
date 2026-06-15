@@ -27,8 +27,9 @@ Theorem (class A finite-dimensional algebra):
 
 This runner exercises only finite-dimensional algebra; it does not
 derive the carrier or the axis-stabilizer-equals-P_23 step.  Those are
-imported from cited one-hop authorities (PMNS_GRAPH_FIRST_AXIS_-
-ALIGNMENT_NOTE.md and Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md).
+imported from cited one-hop authorities
+(PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md and
+Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md).
 """
 
 from __future__ import annotations

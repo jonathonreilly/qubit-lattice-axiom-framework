@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py
-runner_sha256: 80b4bb71f370671eccca6eb514e1b82897ad03b783ac532a6cb0a9b996921b18
+runner_sha256: 8948772662cc83a37d36b15c2ba44dd820f13078bc050bbd498cd8984142ed99
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.14

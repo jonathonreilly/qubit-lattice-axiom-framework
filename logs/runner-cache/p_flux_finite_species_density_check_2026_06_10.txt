@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/p_flux_finite_species_density_check_2026_06_10.py
+runner_sha256: 6f17ca5f68fa997eb93b6d40e9d73bddc851f52c73f7713351e7f09106088e72
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.91
+status: ok
+----- stdout -----
 ========================================================================
 [A] branch construction, zero-set geometry, closed-form
     spectrum licenses, comparator
@@ -12,7 +20,7 @@
 [B] route A: the determinant/Matsubara family — supplier
     sweep and degeneracy certificates
 ========================================================================
-[PASS]  6. [B] ledger sweep of the determinant/Matsubara/heat-kernel candidate set: expected statuses match the note (retained-grade rows plus one retained-pending real-diagonal candidate; decomposition parent retained_bounded with the determinant + free-energy decorations under it); the ratio/quartic, heat-kernel-CLT/d4/Greens, and GL(F)-Berezin discriminator rows are unaudited and cannot supply
+[PASS]  6. [B] ledger sweep of the determinant/Matsubara/heat-kernel candidate set: expected statuses match the note (retained-grade rows plus one retained-pending real-diagonal candidate; decomposition parent retained_bounded with the determinant + free-energy decorations under it); the ratio/quartic and heat-kernel-CLT/d4 rows are unaudited, while the Greens and GL(F)-Berezin discriminator rows are retained_bounded but remain scope/condition limited and do not supply B-Z2
 [PASS]  7. [B] textual + algebraic: the Matsubara family is scoped to the 'minimal spatial APBC block' of the 'staggered Dirac' operator (staggered-grounded => circular as a selector, same class as RP), and on its own surface min_omega (3 + sin^2 omega) = 3 > 0 — its normalization clause ln|det(D + m)| - ln|det(D)| NEVER meets a zero mode and is silent off its block
 [PASS]  8. [B] the Delta-f clause det(D) != 0 on the licensed PBC surface: FAILS on BOTH branches at 4|L (kernels 20/8 at L=4, 140/8 at L=12); at L=6 it holds on K1 only (kernels 24/0) — L-graded wrap-convention data, quantified over volumes by NO retained row
 [PASS]  9. [B] under APBC (the retained family's own convention): K0 kernel (0,0,96) at L=4,8,12 — resonance re-entry at L=12 — K1 kernel (0,0,0); near-zero density persists only on K0 (|E|<0.5 counts: K0 48,144 vs K1 0,0 at L=8,12): real det-currency separators, consumed by NO retained row
@@ -26,7 +34,7 @@ RESIDUAL (declared-open): the determinant-currency separators computed here (van
 [C] routes B/C: thermal (Stefan-Boltzmann currency) and
     isotropy certificates; entropy kill
 ========================================================================
-[PASS] 14. [C] the retained SB row binds 'a relativistic, effectively massless thermal degree of freedom' and 'does not derive the Standard Model particle inventory'; the inventory row is SUPPLIED (audited_conditional); the axiom-first SB rows are unaudited; the g* arithmetic 28 + (7/8)*90 = 427/4 is branch-independent — no retained row applies the T^4 form to the REALIZED matter kernel
+[PASS] 14. [C] the retained SB row binds 'a relativistic, effectively massless thermal degree of freedom' and 'does not derive the Standard Model particle inventory'; the supplied-inventory row is currently unaudited; the axiom-first fermionic SB row is retained_bounded but does not derive the realized matter-kernel inventory; the g* arithmetic 28 + (7/8)*90 = 427/4 is branch-independent — no retained row applies the T^4 form to the REALIZED matter kernel
 [PASS] 15. [C] WHICH retained-currency object bites (computed, L=128 symbol grid, T=0.05..0.4): g_eff(T) := u(T)/[(7/8)(pi^2/30) T^4] — K1 has a FINITE plateau 0.979 ~ 1 = 8 species / v^3 (T-halving ratio 0.95); K0 DIVERGES like T^-2 (g_eff 323, 81, 20.4, 5.0; ratios 3.97, 3.99); the point-zero comparator diverges like T^-1.5 (ratios 2.78, 2.72) — finite g_eff is 'finite massless species density' in the retained SB row's own per-dof currency
 [PASS] 16. [C] K0's massless sector is a Fermi surface in the thermal currency: u(T)/T^2 plateaus at 0.232,0.234,0.235,0.232 (Sommerfeld T^2 law; the T^4 Stefan-Boltzmann form fails structurally, not numerically)
 [PASS] 17. [C] route C honestly killed BOTH ways: the zero-point entropy density N_0 ln2 / V -> 0 on BOTH branches (K0: 0.217,0.092,0.056; K1: 0.0866,0.0108,0.0032 at L=4,8,12) — no 'nonvanishing T->0 entropy density' exists even on K0 — and no third-law/vacuum-entropy row exists at any grade (record-reset entropy ledger unaudited)
@@ -57,3 +65,6 @@ VERDICT: B-Z2 ('the massless species density is finite') has NO retained supplie
          statement binding the REALIZED matter kernel with bounded g_eff (equivalently bounded det-vanishing
          order per volume; equivalently ker = carrier with conical dispersion). Any of these, at retained grade,
          selects phi = -1 immediately given the certificates above.
+
+----- stderr -----
+

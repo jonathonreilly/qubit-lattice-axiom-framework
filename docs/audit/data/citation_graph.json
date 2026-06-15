@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_dimensional_compression_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "hierarchy_formula_honest_status_note_2026-05-10",
         "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
         "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
-        "hierarchy_dimensional_compression_note"
+        "hierarchy_dimensional_compression_note",
+        "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7fcf320c43103a26a2bb0cd8a9945cfb7ee46242c2c244f17bd02b8f7e86b38d",
+      "note_hash": "3128f9da8207089141da34dbb35059a499cfafa04b9259f5b7e3f94cbafe2335",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -1,0 +1,25 @@
+slug: signed-gravity-halfinteger-cutoff-20260615
+goal: "Repair the signed-gravity product-grading eta-sector row's overbroad T3 cutoff theorem."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+target_claim_id: signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11
+active_route: "Narrow T3 to the exact half-integer cutoff family and add excluded non-half-integer counterexample checks."
+hard_residual: "The twist datum, eta-sector dynamical superselection, and source action S_int remain open named inputs."
+files_touched:
+  - docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md
+  - scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py
+  - logs/runner-cache/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.txt
+open_imports:
+  - existence of twisted gapped boundary data
+  - eta-sector dynamical superselection
+  - signed-gravity source action S_int
+no_go_routes:
+  - "Arbitrary cutoff Lambda does not uniformly quantize the interval; non-half-integer cutoffs have explicit counterexamples."
+verification:
+  - "python3 scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py -> TOTAL: PASS=31 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py --tail-chars 12000 -> refreshed"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py -> fresh"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py --check-only --allow-non-main -> fresh"
+next_exact_action: "Reviewer should re-audit the row against the narrowed T3 cutoff theorem."
+stop_condition: "PR opened for review; no audit data edited."

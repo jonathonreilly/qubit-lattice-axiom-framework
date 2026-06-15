@@ -178,8 +178,10 @@ channel is the backward-time solution, as in the one-axis construction.
 ## Rate Bound and Axis Scale
 
 For `z != 0`, choose an axis `mu*` with `|z_mu*| = ||z||_inf` and shift only
-`p_mu*` to `p_mu* - i eta sign(z_mu*)`, with `0 < eta < arcsinh(m)`, while
-the transverse momenta remain real.  On the shifted strip,
+`p_mu*` to `p_mu* + i eta sign(z_mu*)`, with `0 < eta < arcsinh(m)`, while
+the transverse momenta remain real.  This is the sign compatible with the
+Fourier convention `exp(i p.z)`: the shifted exponential contributes
+`exp(-eta |z_mu*|)` on the selected axis.  On the shifted strip,
 
 ```text
     Re(m^2 + sum_mu sin^2 p_mu) >= m^2 - sinh^2 eta > 0,

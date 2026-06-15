@@ -1,9 +1,12 @@
 # Wilson Test-Mass / Finite-L Distance-Law Companion
 
 **Date:** 2026-04-11 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: finite-L distance-law table is the binding evidence; the L→∞ continuum extrapolation becomes a diagnostic-only readout)
+**Claim type:** bounded_theorem
 **Status:** bounded companion on the Wilson lane
 **Scope:** same-convention open-boundary Wilson runners only; finite-L
 distance-law table is the binding evidence
+**Runner:** [`scripts/audit_companion_wilson_test_mass_continuum_finite_l_packet_2026_06_15.py`](../scripts/audit_companion_wilson_test_mass_continuum_finite_l_packet_2026_06_15.py)
+**Runner cache:** [`logs/runner-cache/audit_companion_wilson_test_mass_continuum_finite_l_packet_2026_06_15.txt`](../logs/runner-cache/audit_companion_wilson_test_mass_continuum_finite_l_packet_2026_06_15.txt)
 
 ## Scope narrowing (2026-05-17 audited_conditional repair)
 
@@ -176,7 +179,7 @@ replace the primary staggered bounded story.
 The safe retained reading is:
 
 > On the low-screening open-Wilson surface, the **test-mass** and
-> **continuum-limit** companions support a Newton-compatible distance law and
+> **finite-L distance-law** companions support a Newton-compatible distance law and
 > exact source-mass scaling within the shared Wilson convention, while full
 > both-masses closure remains open.
 

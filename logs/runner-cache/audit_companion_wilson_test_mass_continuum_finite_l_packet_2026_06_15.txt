@@ -1,0 +1,111 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_wilson_test_mass_continuum_finite_l_packet_2026_06_15.py
+runner_sha256: dd2a1039286952844c25454f09bc1fcf689077fbea4d4cc5440265d4fd1e5f18
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+WILSON TEST-MASS / FINITE-L DISTANCE-LAW AUDIT PACKET
+
+========================================================================================
+Part 0: source-note boundaries
+========================================================================================
+[PASS] source note exists  [docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md]
+[PASS] note contains marker: **Claim type:** bounded_theorem
+[PASS] note contains marker: finite-L distance-law table is the binding evidence
+[PASS] note contains marker: continuum extrapolation becomes a diagnostic-only readout
+[PASS] note contains marker: Diagnostic-only (out of audited scope)
+[PASS] note contains marker: not as a retained
+[PASS] note contains marker: continuum-limit fact
+[PASS] note contains marker: does **not** promote
+[PASS] note contains marker: as a retained repo truth
+[PASS] note contains marker: both-masses closure is still open
+[PASS] note contains marker: action-reaction remains unresolved
+[PASS] note contains marker: same-convention Wilson result, not a global architecture claim
+[PASS] note contains marker: scripts/audit_companion_wilson_test_mass_continuum_finite_l_pa
+[PASS] forbidden overclaim absent: full Newton closure is retained
+[PASS] forbidden overclaim absent: action-reaction is closed
+[PASS] forbidden overclaim absent: both-masses closure is closed
+[PASS] forbidden overclaim absent: architecture-independent Newton closure is closed
+
+========================================================================================
+Part 1: supporting source runners compile
+========================================================================================
+[PASS] scripts/frontier_test_mass_limit.py exists
+[PASS] scripts/frontier_test_mass_limit.py py_compile
+[PASS] scripts/frontier_perturbative_mass_law.py exists
+[PASS] scripts/frontier_perturbative_mass_law.py py_compile
+[PASS] scripts/frontier_continuum_limit.py exists
+[PASS] scripts/frontier_continuum_limit.py py_compile
+[PASS] scripts/frontier_newton_systematic.py exists
+[PASS] scripts/frontier_newton_systematic.py py_compile
+
+========================================================================================
+Part 2: completed fast/cache-backed subclaims
+========================================================================================
+[PASS] scripts/frontier_test_mass_limit.py cache exists  [logs/runner-cache/frontier_test_mass_limit.txt]
+[PASS] scripts/frontier_test_mass_limit.py cache is SHA-fresh  [fresh]
+[PASS] scripts/frontier_test_mass_limit.py cache header names runner  [scripts/frontier_test_mass_limit.py]
+[PASS] scripts/frontier_test_mass_limit.py cache header SHA matches source
+[PASS] test-mass cache exited cleanly
+[PASS] test-mass source-mass exponent recorded
+[PASS] test-mass inward acceleration recorded
+[PASS] scripts/frontier_perturbative_mass_law.py cache exists  [logs/runner-cache/frontier_perturbative_mass_law.txt]
+[PASS] scripts/frontier_perturbative_mass_law.py cache is SHA-fresh  [fresh]
+[PASS] scripts/frontier_perturbative_mass_law.py cache header names runner  [scripts/frontier_perturbative_mass_law.py]
+[PASS] scripts/frontier_perturbative_mass_law.py cache header SHA matches source
+[PASS] perturbative cache exited cleanly
+[PASS] perturbative exact mass exponent recorded
+[PASS] perturbative first-order boundary recorded
+
+========================================================================================
+Part 3: finite-L distance-law table
+========================================================================================
+[PASS] note table has expected L rows  [[12, 15, 18, 20, 22, 25]]
+[PASS] note table L=12 alpha/R2 matches rounded retained row  [observed=(-1.827, 0.9991) expected=(-1.827, 0.9991)]
+[PASS] note table L=15 alpha/R2 matches rounded retained row  [observed=(-1.932, 0.9993) expected=(-1.932, 0.9993)]
+[PASS] note table L=18 alpha/R2 matches rounded retained row  [observed=(-1.973, 0.9997) expected=(-1.973, 0.9997)]
+[PASS] note table L=20 alpha/R2 matches rounded retained row  [observed=(-1.965, 0.9999) expected=(-1.965, 0.9999)]
+[PASS] note table L=22 alpha/R2 matches rounded retained row  [observed=(-1.982, 0.9999) expected=(-1.982, 0.9999)]
+[PASS] note table L=25 alpha/R2 matches rounded retained row  [observed=(-2.002, 0.9999) expected=(-2.002, 0.9999)]
+[PASS] scripts/frontier_continuum_limit.py cache exists  [logs/runner-cache/frontier_continuum_limit.txt]
+[PASS] scripts/frontier_continuum_limit.py cache is SHA-fresh  [fresh]
+[PASS] scripts/frontier_continuum_limit.py cache header names runner  [scripts/frontier_continuum_limit.py]
+[PASS] scripts/frontier_continuum_limit.py cache header SHA matches source
+[PASS] continuum cache completed under long timeout
+[PASS] continuum cache has all finite-L summary rows  [[12, 15, 18, 20, 22, 25]]
+[PASS] cache L=12 alpha rounds to source-note table  [cache=-1.8274 note=-1.827]
+[PASS] cache L=12 R2 rounds to source-note table  [cache=0.999091 note=0.9991]
+[PASS] cache L=15 alpha rounds to source-note table  [cache=-1.9324 note=-1.932]
+[PASS] cache L=15 R2 rounds to source-note table  [cache=0.999280 note=0.9993]
+[PASS] cache L=18 alpha rounds to source-note table  [cache=-1.9734 note=-1.973]
+[PASS] cache L=18 R2 rounds to source-note table  [cache=0.999655 note=0.9997]
+[PASS] cache L=20 alpha rounds to source-note table  [cache=-1.9649 note=-1.965]
+[PASS] cache L=20 R2 rounds to source-note table  [cache=0.999899 note=0.9999]
+[PASS] cache L=22 alpha rounds to source-note table  [cache=-1.9819 note=-1.982]
+[PASS] cache L=22 R2 rounds to source-note table  [cache=0.999922 note=0.9999]
+[PASS] cache L=25 alpha rounds to source-note table  [cache=-2.0023 note=-2.002]
+[PASS] cache L=25 R2 rounds to source-note table  [cache=0.999889 note=0.9999]
+[PASS] largest L finite table is near inverse square
+
+========================================================================================
+Part 4: diagnostic/firewall checks
+========================================================================================
+[PASS] scripts/frontier_newton_systematic.py cache exists  [logs/runner-cache/frontier_newton_systematic.txt]
+[PASS] scripts/frontier_newton_systematic.py cache is SHA-fresh  [fresh]
+[PASS] scripts/frontier_newton_systematic.py cache header names runner  [scripts/frontier_newton_systematic.py]
+[PASS] scripts/frontier_newton_systematic.py cache header SHA matches source
+[PASS] systematic cache is treated as nonbinding support if compute-limited  [timeout]
+[PASS] systematic source boundary forbids global normalization verdict
+[PASS] diagnostic firewall marker present: extrapolation model selection
+[PASS] diagnostic firewall marker present: independently
+[PASS] diagnostic firewall marker present: justified in this note
+[PASS] diagnostic firewall marker present: out of audited scope
+[PASS] diagnostic firewall marker present: diagnostic-only readout
+[PASS] diagnostic firewall marker present: Promoting that extrapolation to a continuum- limit fact re
+
+TOTAL: PASS=77 FAIL=0
+
+----- stderr -----
+

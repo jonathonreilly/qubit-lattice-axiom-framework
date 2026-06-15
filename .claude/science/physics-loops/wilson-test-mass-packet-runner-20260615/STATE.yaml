@@ -1,0 +1,29 @@
+loop: wilson-test-mass-packet-runner-20260615
+goal: "Register a substantive runner packet for the audited Wilson test-mass / finite-L distance-law row."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+target_claim_id: wilson_test_mass_continuum_note_2026-04-11
+target_blocker_text: "The row was audited clean but had runner_path null, leaving the audit packet without the named Wilson runner evidence."
+source_of_blocker_text: audit_ledger
+reachability_to_target: closes
+artifact_role: runner_certificate
+files_touched:
+  - docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md
+  - scripts/audit_companion_wilson_test_mass_continuum_finite_l_packet_2026_06_15.py
+  - logs/runner-cache/audit_companion_wilson_test_mass_continuum_finite_l_packet_2026_06_15.txt
+  - logs/runner-cache/frontier_continuum_limit.txt
+open_imports:
+  - "Full Newton, both-masses, action-reaction, architecture-independent closure remain outside this bounded companion."
+  - "The L -> infinity extrapolation remains diagnostic-only until separately justified."
+no_go_routes: []
+verification:
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh --timeout-sec 600 --tail-chars 12000 scripts/frontier_continuum_limit.py"
+  - "PYTHONPATH=scripts python3 scripts/audit_companion_wilson_test_mass_continuum_finite_l_packet_2026_06_15.py"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh --tail-chars 6000 scripts/audit_companion_wilson_test_mass_continuum_finite_l_packet_2026_06_15.py"
+  - "python3 docs/audit/scripts/build_citation_graph.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+pipeline_result: "pass; hard invalidations 0; audit_lint errors 0; local ready count 2"
+pr_status: pending
+next_exact_action: "Open review PR against main."
+stop_condition: "Review PR opened."

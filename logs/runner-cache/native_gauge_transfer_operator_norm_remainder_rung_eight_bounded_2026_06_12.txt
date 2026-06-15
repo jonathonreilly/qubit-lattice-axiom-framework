@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py
+runner_sha256: 1aa6155472434410ee8bf878677abb5d44bc7f84032301a0908566bba576c3cd
+timeout_sec: 540
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+Native gauge-transfer operator-norm remainder rung-eight bounded runner
+No fitted K is promoted; finite numerical rows are witnesses only.
+
+PASS: note declares canonical bounded theorem claim type
+PASS: note carries the required status-authority block
+PASS: note restates the operator-remainder target forms
+      checked six quote markers
+PASS: L sample is explicitly non-authority
+PASS: one-hop authorities are markdown links
+      checked authority-link forms
+PASS: runner and cache are portable markdown links
+PASS: note and runner avoid branch-local temp references
+PASS: note avoids audit-status predictions and overreach phrases
+      scanned banned fragment set
+geometric_saddle_bound_rows
+  beta= 25 max_resid=4.513628109023e-02 sqrt_beta_resid=2.256814054511e-01 K_geom=1.597000000000e+03
+  beta= 50 max_resid=3.116924581794e-02 sqrt_beta_resid=2.203998508234e-01 K_geom=1.597000000000e+03
+  beta=100 max_resid=2.138001110412e-02 sqrt_beta_resid=2.138001110412e-01 K_geom=1.597000000000e+03
+  beta=200 max_resid=1.491108481562e-02 sqrt_beta_resid=2.108745837594e-01 K_geom=1.597000000000e+03
+PASS: derived K_geom(a) bounds the saddle-profile residual on the witness grid
+      a=4.0, K_geom=1.597000000000e+03
+PASS: K_geom formula is present in the note
+wrong_saddle_constant_scaled_residuals
+  beta= 25 wrong_constant_sqrt_beta_resid=4.042940147987e-01
+  beta= 50 wrong_constant_sqrt_beta_resid=5.104180336971e-01
+  beta=100 wrong_constant_sqrt_beta_resid=7.389038635834e-01
+  beta=200 wrong_constant_sqrt_beta_resid=1.081310276044e+00
+PASS: wrong saddle constant does not show the same O(beta^-1/2) structure
+      first=4.042940e-01, last=1.081310e+00
+saddle_tail_bound_rows
+  beta= 25 max_tail=3.554952097112e-09 K_tail_sad=1.658937335399e-04
+  beta= 50 max_tail=1.220889291020e-08 K_tail_sad=1.658937335399e-04
+  beta=100 max_tail=1.724237143769e-08 K_tail_sad=1.658937335399e-04
+  beta=200 max_tail=3.780993012905e-08 K_tail_sad=1.658937335399e-04
+PASS: derived K_tail_sad(a) bounds the scanned saddle multiplier tail
+      a=4.0, K_tail_sad=1.658937335399e-04
+PASS: K_tail_sad formula is present in the note
+PASS: character authority states the six-neighbor source recurrence
+finite_packet_semigroup_rows
+  shell= 2 symmetry_err=0.000e+00 lambda_max_J=0.649184419321 ||exp(25(J-I))||=0.000155263091
+  shell= 4 symmetry_err=0.000e+00 lambda_max_J=0.834698682486 ||exp(25(J-I))||=0.016042193438
+  shell= 8 symmetry_err=0.000e+00 lambda_max_J=0.938737197658 ||exp(25(J-I))||=0.216195960389
+  shell=12 symmetry_err=0.000e+00 lambda_max_J=0.968496918282 ||exp(25(J-I))||=0.454945775002
+PASS: finite packet J compressions are symmetric
+PASS: finite packet J compressions have top eigenvalue at most one
+PASS: scaled semigroup exp((beta/2)(J-I)) is contractive on witness packets
+PASS: semigroup contraction statement is present in the note
+ratio_perturbation_rows
+  epsilon=0.010 worst_delta=1.205864444444e-02 formula_bound=1.205864444444e-02
+  epsilon=0.050 worst_delta=6.283188421053e-02 formula_bound=6.283188421053e-02
+  epsilon=0.100 worst_delta=1.326450888889e-01 formula_bound=1.326450888889e-01
+PASS: ratio perturbation formula bounds the Weyl worst-case rows
+PASS: ratio bound is below one under the stated epsilon gate
+      epsilon_gate=(1-L)/3, L_plus_bound=0.632513415727
+PASS: perturbation-transfer formula is present in the note
+PASS: note names the missing Wilson-to-saddle estimate instead of declaring K
+PASS: note states that R(beta), K, and beta_0 are not assembled
+PASS: negative-claim discipline gate is included
+PASS: runner and cache paths are named in the note
+
+TOTAL: PASS=25, FAIL=0
+
+----- stderr -----
+

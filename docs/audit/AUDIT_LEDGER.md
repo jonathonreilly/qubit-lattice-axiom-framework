@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 928 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1477 |
+| unaudited | 1476 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 27 |
+| ~~audited_conditional~~ | 28 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1369 |
-| `audited_conditional` | 27 |
+| `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1794 |
+| `unaudited` | 1793 |
 
 | claim_type | count |
 |---|---:|
@@ -1513,6 +1513,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7755,6 +7756,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cached runner completes and matches the source frozen result: exact grid and no-restore label-NN are 12/12 TOWARD with F~M=1.00, while no-restore KNN+floor is 0/12 with F~M=0.00. Current ledger deps are retained-bounded; older dependency-status prose in the source is historical and not status authority.
 - **rationale:** The row closes as a bounded finite-harness certificate. The runner constructs the three families, swaps the connectivity rule, propagates amplitudes, and computes the centroid/F~M readout rather than merely printing constants. The verdict is limited to sharpening the connectivity bottleneck on this declared comparison; it does not ratify primitive-to-gravity readout or full Gate-B package survival.
 - **auditor confidence:** medium
+
+### `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08`
+
+- **Note:** [`GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md`](../../docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional algebraic support for the factorwise su(3)+su(2)+u(1) carrier algebra and the open-gate claim that four tested discriminators do not select the gauging.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-234330-d2a23e8366-gauge_algebra_supplied_carri`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied C^3(base) x C^2(fiber) carrier, su(3) x I and I x su(2) commute and, with central u(1), give the candidate su(N_c)+su(2)+u(1) algebra, while the four tested discriminators do not close the gauging selection.  _(class `A`)_
+- **chain closes:** False — The finite algebra checks close over the supplied carrier: the dimensions, commutators, and irreducible commutants are consistent. The chain does not close from retained inputs because the carrier, physical-color assignment, factorwise symmetry selection, and gauging/chirality bridge remain supplied or open.
+- **rationale:** Issue: the packet verifies a factorwise algebraic subalgebra only after C^3 x C^2 carrier, weak-axis/fiber split, link-connection/Gauss conventions, and MR_color are supplied or left residual. Why this blocks: the checks show consistency and non-selection by the four stated lenses, but they do not close a retained carrier or gauging-selection bridge, nor make the dim-12 subalgebra unique against u(6). Repair target: supply a retained bridge deriving or admitting MR_color, the factorwise carrier/gauge-selection principle, and chiral su(2)_L. Claim boundary until fixed: conditional algebraic support on the supplied carrier and a four-discriminator open gate.
+- **open / conditional deps cited:**
+  - `COLOR_SU3_MATTER_REALIZATION_RESIDUAL_MAP_2026-06-05.md`
+  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
+  - `QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md`
+  - `TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md`
+- **auditor confidence:** high
 
 ### `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02`
 

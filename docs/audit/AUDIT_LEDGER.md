@@ -19,12 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 206 |
+| **retained_no_go** | 207 |
 | **retained_bounded** | 909 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
 | unaudited | 1525 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 29 |
@@ -58,8 +57,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 1338 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 1339 |
 | `audited_conditional` | 12 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 25 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1101,6 +1099,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_time_coupling_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -15402,6 +15401,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The supplied retained_no_go readout authority gives the restricted carrier columns and the non-unique reduced readout family. Direct multiplication gives identical E-shell readout and different E-center readout, and tensoring with exp(-t Lambda_R)u_* preserves the ambiguity because the slice factor is nonzero.
 - **rationale:** The primary runner actually constructs the Schur DtN slice backbone and checks the transfer/semigroup properties rather than merely printing constants. The load-bearing obstruction is algebraic over the retained readout-map no-go: P(rho_E) maps E-shell to the same vector and E-center to 1 + rho_E/6, so two admissible maps produce distinct time-coupled tensors on the same backbone. The clean scope is narrow: it establishes non-uniqueness on the current restricted readout-driven carrier, not an absolute impossibility of a future theorem deriving the missing readout entry.
 - **auditor confidence:** high
+
+### `quark_route2_source_domain_bridge_no_go_note_2026-04-28`
+
+- **Note:** [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](../../docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded current-bank no-go over the supplied Route-2/readout/R_conn authority packet and finite typed-edge inventory: the packet does not derive the typed bridge `R_conn -> gamma_T(center)/gamma_E(center) = -R_conn`, while that bridge would algebraically force `beta_E/alpha_E = 21/4`.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-7a52804b01-quark_route2_source_domain_b`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** In the current typed-edge inventory there is no path from `su3_R_conn_8_9` to `route2_center_TE_minus_8_9` or `route2_rho_E_21_4`; adding exactly that bridge creates the algebraic path to `rho_E = 21/4`.  _(class `A`)_
+- **chain closes:** True — The rational algebra independently checks: `(-2)(5/6)/(-8/9)=15/8` and `6(15/8-1)=21/4`. The finite graph check also closes: `su3_R_conn_8_9` has no outgoing current-bank edge to the Route-2 endpoint domain unless the explicitly missing bridge is added.
+- **rationale:** The load-bearing result is not a first-principles physics derivation; it is a finite typed-graph absence check plus exact rational endpoint algebra over retained-grade cited inputs. The no-go is properly scoped to the current quoted/derived authority bank and does not claim that no future source-domain bridge or alternate primitive can exist. The cited R_conn authority itself withholds the physical connected-trace selector, but this note uses only the exact SU(3) `8/9` color-support scalar as the source-domain node and then proves the missing typed promotion to Route-2 endpoint syntax.
+- **auditor confidence:** medium
 
 ### `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28`
 

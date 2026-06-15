@@ -1,0 +1,11 @@
+loop: toy-event-cache-unblock-20260615
+status: ready_for_review
+started_from: origin/main@e3a2faafc6f3191cdcc7132933f9e134978f6b97
+active_route: targeted_runner_cache_refresh
+target_runner: toy_event_physics.py
+target_cache: logs/runner-cache/toy_event_physics.txt
+result: canonical_timeout_cache_written
+audit_data_modified: false
+next_exact_action: "Reviewer can land the cache refresh; auditor remains responsible for any verdict."
+stop_condition: "The missing cache is fresh; the only remaining full-ledger cache blocker is kinetic_isotropy_3d_simultaneous_tick_2026_06_10.py, already covered by PR #3991."
+

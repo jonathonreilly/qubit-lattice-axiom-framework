@@ -1,0 +1,459 @@
+===== runner cache v1 =====
+runner: toy_event_physics.py
+runner_sha256: 46f44f7fa60181d87cc7001d30baaf3995f054bd905a515e21fda6730a69e59f
+timeout_sec: 120
+exit_code: -9
+elapsed_sec: 120.01
+status: timeout
+----- stdout -----
+DISCRETE EVENT-NETWORK TOY MODEL
+
+1) Stationary-action geodesics from the shared local rule
+target y | free action | distorted action | free path y-seq | distorted path y-seq
+---------+-------------+------------------+-----------------+----------------------
+      -6 |      13.657 |            8.212 | [-2, -2, -2, -2, -3, -4, -5, -5, -5, -5, -5, -5, -6] | [-2, -2, -2, -2, -2, -2, -2, -2, -2, -3, -4, -5, -6]
+      -2 |      12.000 |            7.544 | [-2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2] | [-2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2]
+       2 |      13.657 |            9.122 | [-2, -2, -2, -2, -1, 0, 1, 1, 1, 1, 1, 1, 2] | [-2, -2, -2, -2, -2, -2, -2, -2, -2, -1, 0, 1, 2]
+
+Interpretation:
+- These paths minimize local action increments while causal order still comes from the same local-delay rule that defines the async DAG.
+- The source row is recentered to the emergent field centroid at y ~= -2.161, so we are testing bending toward the mass-like pattern rather than toward a fixed global down direction.
+- The action now comes from a proper-time-style deficit computed from the same local delay field, so there is no separate attraction knob.
+- In the distorted region that deficit is smaller, so off-center paths stay close to the centroid longer before peeling away.
+- That is closer to an attractive gravity-like limit, though the specific extremal principle is still assumed rather than derived.
+
+2) Emergent persistent pattern and derived field
+seed size = 1; selected seed = (5, -7); selected rule = S[3]/B[1, 2, 3]; late-orbit sizes = [1, 8, 11, 24, 27, 55, 26, 60, 50, 76]; persistent nodes = 6; occupancy mean = 0.750; support sum = 1.250; density = 0.500; area = 12
+node      | occup. | support | derived field
+----------+--------+---------+--------------
+(10, -6)   |  0.750 |   0.125 |     0.290285
+(10, -3)   |  0.750 |   0.250 |     0.490909
+(11, -2)   |  0.750 |   0.250 |     0.391461
+(8, -2)    |  0.000 |   0.000 |     0.214774
+(0, -2)    |  0.000 |   0.000 |     0.000000
+effective field centroid ~= (7.957, -2.161)
+
+Interpretation:
+- A minimal one-node disturbance and its local self-maintenance rule are now selected together by searching all interior one-node seeds against a compact rule family.
+- The persistent pattern is defined by late-time occupancy of the selected rule's repeating orbit rather than a hand-picked snapshot.
+- The chosen pattern is the most localized stable non-boundary component under transparent criteria: high occupancy, high density, strong internal support, and small area.
+- The slowing field is then the equilibrium of that persistent pattern under local neighbor averaging, so mass-like sourcing comes from the pattern's own self-maintained structure.
+- The effective field centroid can drift away from the pattern's geometric center, which is a nice sign that boundaries and environment matter to what counts as mass-like load.
+
+3) Emergent causal order from positive local delays
+y  | free arrival | distorted arrival
+---+--------------+------------------
+-6 |       13.657 |           13.698
+-5 |       13.243 |           14.113
+-2 |       12.000 |           13.475
+ 1 |       13.243 |           13.862
+ 4 |       14.485 |           14.779
+
+Interpretation:
+- No global step counter is used here; causal order is inferred from positive local delays.
+- The emergent mass-like pattern reshapes causal order asymmetrically across the boundary detectors.
+
+4) Two-slit event network with and without durable path records
+coherent histories
+y  | probability
+---+------------
+-10 |     0.0430
+-9 |     0.1471
+-8 |     0.0805
+-7 |     0.0348
+-6 |     0.0130
+-5 |     0.0040
+-4 |     0.0029
+-3 |     0.0047
+-2 |     0.0220
+-1 |     0.1181
+ 0 |     0.0598
+ 1 |     0.1181
+ 2 |     0.0220
+ 3 |     0.0047
+ 4 |     0.0029
+ 5 |     0.0040
+ 6 |     0.0130
+ 7 |     0.0348
+ 8 |     0.0805
+ 9 |     0.1471
+10 |     0.0430
+
+durable path record created
+y  | probability
+---+------------
+-10 |     0.0514
+-9 |     0.1756
+-8 |     0.0961
+-7 |     0.0415
+-6 |     0.0155
+-5 |     0.0048
+-4 |     0.0034
+-3 |     0.0049
+-2 |     0.0173
+-1 |     0.0717
+ 0 |     0.0357
+ 1 |     0.0717
+ 2 |     0.0173
+ 3 |     0.0049
+ 4 |     0.0034
+ 5 |     0.0048
+ 6 |     0.0155
+ 7 |     0.0415
+ 8 |     0.0961
+ 9 |     0.1756
+10 |     0.0514
+
+positive weights only (no phase cancellation)
+y  | probability
+---+------------
+-10 |     0.1249
+-9 |     0.1637
+-8 |     0.0662
+-7 |     0.0206
+-6 |     0.0055
+-5 |     0.0012
+-4 |     0.0005
+-3 |     0.0013
+-2 |     0.0083
+-1 |     0.0588
+ 0 |     0.0980
+ 1 |     0.0588
+ 2 |     0.0083
+ 3 |     0.0013
+ 4 |     0.0005
+ 5 |     0.0012
+ 6 |     0.0055
+ 7 |     0.0206
+ 8 |     0.0662
+ 9 |     0.1637
+10 |     0.1249
+
+Interpretation:
+- Interference appears only when alternative histories combine before scoring.
+- Durable records remove cross-branch interference even with no conscious observer.
+- The remaining structure in each record sector is single-slit diffraction from local paths.
+- Positive-only weights cannot reproduce destructive interference dips.
+
+5) Continuous phase shift pressure test
+phase(rad) | center probability
+-----------+-------------------
+    0.000 |            1.0000
+    0.785 |            0.8536
+    1.571 |            0.5000
+    2.356 |            0.1464
+    3.142 |            0.0000
+    3.927 |            0.1464
+    4.712 |            0.5000
+    5.498 |            0.8536
+    6.283 |            1.0000
+
+Interpretation:
+- Complex phases let a local phase shifter smoothly tune detection rates.
+- This is one reason positive real weights are too weak for quantum behavior.
+
+6) Born-rule pressure test
+p-rule | before -> after under Hadamard mixing
+------+--------------------------------------
+     1 | sample 1:   1.0000 ->   1.4142
+       | sample 2:   1.4142 ->   1.4142
+       | sample 3:   3.8172 ->   3.6180
+     2 | sample 1:   1.0000 ->   1.0000
+       | sample 2:   1.0000 ->   1.0000
+       | sample 3:   7.5000 ->   7.5000
+     4 | sample 1:   1.0000 ->   0.5000
+       | sample 2:   0.5000 ->   0.5000
+       | sample 3:  31.2500 ->  40.6250
+
+Interpretation:
+- If amplitudes evolve by reversible linear mixing, the 2-norm is singled out.
+- That does not derive the square rule from nothing, but it constrains the cheat.
+
+7) Local symmetry pressure test
+candidate local scalar                  | max boost drift
+----------------------------------------+----------------
+coordinate delay dt                      |       1.525000
+euclidean norm sqrt(dt^2 + dx^2)         |       2.404578
+retained update sqrt(dt^2 - dx^2)        |       0.000000
+spent delay dt - sqrt(dt^2 - dx^2)       |       1.525000
+
+Interpretation:
+- If local neighborhoods admit a universal signal speed and boost-like frame mixing, the retained update sqrt(dt^2 - dx^2) is the stable scalar.
+- The action we use is then interpreted as spent delay: coordinate delay minus retained update.
+- That does not fully derive the rule, but it narrows the remaining assumption to the accounting step rather than the invariant itself.
+
+8) Robustness sweep across shapes, boundaries, and rule families
+scenario    | family   | search   | rule              | nodes | center gap | arrival span | status
+------------+----------+----------+-------------------+-------+------------+--------------+--------
+rect-hard   | compact  | primary  | S[1, 3]/B[1, 3]   |     8 |      0.185 |        2.107 | survives
+rect-wrap   | compact  | fallback | S[2, 3]/B[3, 4]   |     4 |      0.188 |        1.133 | survives
+taper-hard  | compact  | primary  | S[3, 4]/B[1, 3]   |    10 |      0.100 |        1.266 | survives
+taper-wrap  | compact  | fallback | S[2, 3]/B[3, 4]   |     4 |      0.174 |        1.270 | survives
+skew-hard   | compact  | fallback | S[2, 3]/B[3, 4]   |     4 |      0.182 |        1.162 | survives
+skew-wrap   | compact  | fallback | S[3, 4]/B[1, 3]   |     7 |      0.117 |        0.547 | survives
+rect-hard   | extended | primary  | S[1, 3]/B[1, 3]   |     8 |      0.185 |        2.107 | survives
+rect-wrap   | extended | primary  | S[1, 2, 3]/B[1, 3] |    14 |      0.177 |        1.366 | survives
+taper-hard  | extended | primary  | S[3, 4]/B[1, 3]   |    10 |      0.100 |        1.266 | survives
+taper-wrap  | extended | fallback | S[2, 3]/B[3, 4]   |     4 |      0.174 |        1.270 | survives
+skew-hard   | extended | fallback | S[2, 3]/B[3, 4]   |     4 |      0.182 |        1.162 | survives
+skew-wrap   | extended | fallback | S[3, 4]/B[1, 3]   |     7 |      0.117 |        0.547 | survives
+
+family   | survives | mixed | fragile | no pattern | avg breadth | avg nodes | avg gap | avg span | dominant rule
+---------+----------+-------+---------+------------+-------------+-----------+---------+----------+-------------------
+compact  |        6 |     0 |       0 |          0 |        4.00 |      6.17 |   0.158 |    1.247 | S[2, 3]/B[3, 4]
+extended |        6 |     0 |       0 |          0 |        4.17 |      7.83 |   0.156 |    1.286 | S[3, 4]/B[1, 3]
+
+no non-surviving scenarios under current sweep
+
+Interpretation:
+- Each scenario varies graph shape, vertical boundary treatment, or the searched local rule family while keeping the same ontology.
+- `center gap` measures whether the action-favored path stays focused near the emergent field centroid instead of peeling away immediately.
+- `arrival span` measures how non-uniform the induced boundary delay shifts are across the far edge.
+- In this run, 12 scenarios were `survives`, 0 were `mixed`, and 0 produced no compact persistent pattern under the sweep budget.
+- The staged search rescued 7 scenarios that the primary point-seed search did not solve on its own.
+- The family table adds an explanatory layer: average selected-rule breadth, average persistent-node count, and the dominant winning rule signature.
+- With the minimal compact subset, both families now survive all six scenarios; `extended` still produces the larger average boundary-delay span (1.286 vs 1.247), while `compact` keeps the slightly larger average center gap (0.158 vs 0.156).
+- There are no non-surviving cases in this sweep, so within the current budget the remaining question is no longer `does the compact family fail?` but `how small can the compact family stay while preserving the hard-topology winners?`.
+- This does not prove universality, but it starts separating structural behavior from single-geometry artifacts.
+
+9) Minimal compact subset that preserves the hard-topology winners
+setup              | rule              | center gap | arrival span | status
+-------------------+-------------------+------------+--------------+--------
+legacy reduced    | S[2, 3]/B[3]      |      0.081 |        0.314 | mixed
+four-option repair | S[3, 4]/B[1, 3]   |      0.117 |        0.547 | survives
+minimal three     | S[3, 4]/B[1, 3]   |      0.117 |        0.547 | survives
+compact full      | S[3, 4]/B[1, 3]   |      0.117 |        0.547 | survives
+
+Interpretation:
+- The legacy reduced family is shown only as a diagnosis baseline; the current compact sweep uses the minimal surviving subset.
+- In `skew-wrap`, the legacy reduced family picked S[2, 3]/B[3] and stayed `mixed`, while the repaired four-option family upgrades to S[3, 4]/B[1, 3] and lands `survives`.
+- The minimal three-option family and the full compact family converge on the same hard-case winner, S[3, 4]/B[1, 3], so we do not need the full compact palette to keep that behavior.
+- Under the full compact family, the hard-topology winners are skew-hard -> S[2, 3]/B[3], skew-wrap -> S[3, 4]/B[1, 3].
+- Preserving those hard-topology winners first repairs the compact family to [3], [1, 3], [2, 3], [3, 4].
+- Exhaustive minimization inside that repaired family then shrinks it further to [1, 3], [2, 3], [3, 4] while still surviving all six sweep scenarios.
+- That is the current compact sweep family, so we can proceed with a genuinely minimal reduced subset instead of treating motif omission as a blocker.
+
+10) One-by-one ablation of the minimal compact subset
+remove option | survives | mixed | fragile | no pattern | failed scenarios
+--------------+----------+-------+---------+------------+------------------------------
+[1, 3]        |        5 |     1 |       0 |          0 | skew-wrap:mixed
+[2, 3]        |        5 |     1 |       0 |          0 | taper-wrap:mixed
+[3, 4]        |        2 |     1 |       0 |          3 | rect-wrap:no pattern, taper-hard:no pattern, taper-wrap:no pattern, skew-wrap:mixed
+
+Interpretation:
+- This asks the sharper question: once the compact family is minimal, which surviving-count options are actually indispensable?
+- Removing `[1, 3]` breaks `skew-wrap` first (skew-wrap:mixed), so that motif is carrying the hardest wrapped skew case.
+- Removing `[2, 3]` breaks `taper-wrap` first (taper-wrap:mixed), so that motif is doing important work for the wrapped tapered geometry.
+- Removing `[3, 4]` is the most damaging ablation (rect-wrap:no pattern, taper-hard:no pattern, taper-wrap:no pattern, skew-wrap:mixed), which makes it look like the strongest structural motif in the current compact family.
+- In other words, the current compact family is no longer just small; within the current sweep it is irreducible.
+
+11) Mechanism ablation of the load-bearing assumptions
+mechanism               | survives | mixed | fragile | no pattern | avg gap | avg span | failed scenarios
+------------------------+----------+-------+---------+------------+---------+----------+------------------------------
+baseline                 |        6 |     0 |       0 |          0 |   0.158 |    1.247 | -
+coordinate-delay action  |        5 |     0 |       1 |          0 |   0.222 |    1.245 | taper-wrap:fragile
+link-length action       |        6 |     0 |       0 |          0 |   0.414 |    1.358 | -
+support-only field       |        5 |     0 |       1 |          0 |   0.236 |    0.886 | skew-wrap:fragile
+no field                 |        0 |     0 |       6 |          0 |   0.414 |    0.000 | rect-hard:fragile, rect-wrap:fragile, taper-hard:fragile, taper-wrap:fragile, skew-hard:fragile, skew-wrap:fragile
+
+Interpretation:
+- This tests the deeper question behind the toy theory: which assumptions in the dynamics are actually carrying the gravity-like behavior, and which are still underconstrained?
+- The baseline survives all six compact-family scenarios with average gap 0.158 and average span 1.247.
+- Replacing spent-delay action with plain coordinate delay weakens the model enough to break taper-wrap:fragile, so the action accounting is doing some real work.
+- Replacing relaxed field propagation with raw local support weakens the hardest wrapped skew case (skew-wrap:fragile), which is strong evidence that field relaxation is load-bearing.
+- Removing the field entirely collapses the whole effect (rect-hard:fragile, rect-wrap:fragile, taper-hard:fragile, taper-wrap:fragile, skew-hard:fragile, skew-wrap:fragile), so the delay field is definitely not decorative.
+- The uncomfortable result is that bare link-length action still survives the current sweep, which means the present robustness metric does not yet uniquely single out the proper-time-style action.
+- That last point is probably the clearest sign of where we still need to go before calling this a genuinely strong toy-theory result: we need a sharper discriminator that rewards the intended action rule and rejects cruder substitutes.
+
+12) Action-response discriminator for the chosen geodesics
+mechanism               | survives | min response | min wrapped | failed scenarios
+------------------------+----------+--------------+-------------+------------------------------
+baseline                 |        6 |        2.000 |       2.000 | -
+coordinate-delay action  |        5 |        0.000 |       0.000 | taper-wrap:fragile
+link-length action       |        6 |        0.000 |       0.000 | -
+support-only field       |        5 |        0.000 |       0.000 | skew-wrap:fragile
+no field                 |        0 |        0.000 |       0.000 | rect-hard:fragile, rect-wrap:fragile, taper-hard:fragile, taper-wrap:fragile, skew-hard:fragile, skew-wrap:fragile
+
+Interpretation:
+- This adds the missing check: if the field really matters to the action rule, the distorted geodesic should move relative to the free geodesic instead of merely inheriting good center-gap scores from geometry alone.
+- The baseline is the only tested mechanism that both survives all six scenarios and keeps a strictly positive minimum wrapped-case response (2.000).
+- Coordinate-delay action fails this discriminator because it breaks taper-wrap:fragile and also drops to zero wrapped-case response in at least one scenario.
+- Bare link-length action also fails: it survives the old sweep, but its minimum response is 0.000, which means the chosen paths are not reacting to the field at all.
+- Support-only field propagation still bends paths, but it does not survive the hard wrapped skew case (skew-wrap:fragile), so field relaxation remains part of the load-bearing structure.
+- That is a meaningful upgrade in where we stand: among the named alternatives we tested here, the intended spent-delay action with relaxed field propagation is the only one that survives both robustness and field-response.
+
+13) Parameterized retained-weight action family sweep
+retained w | survives | mixed | fragile | avg gap | avg span | min response | min wrapped
+-----------+----------+-------+---------+---------+----------+--------------+------------
+      0.00 |        5 |     0 |       1 |   0.222 |    1.245 |        0.000 |      0.000
+      0.25 |        6 |     0 |       0 |   0.217 |    1.358 |        0.000 |      0.000
+      0.50 |        6 |     0 |       0 |   0.277 |    1.358 |        0.000 |      0.000
+      0.75 |        6 |     0 |       0 |   0.275 |    1.358 |        0.500 |      0.500
+      1.00 |        6 |     0 |       0 |   0.158 |    1.247 |        2.000 |      2.000
+
+Interpretation:
+- This widens the action search from a few named formulas to a one-parameter family: action = delay - w * retained_update, with field relaxation held fixed.
+- Under the combined robustness-plus-response benchmark, the surviving retained-weight window narrows to the high end of the tested family: w = 0.75, 1.00.
+- Within that window, the strongest wrapped-case path response occurs at w = 1.00 with minimum wrapped response 2.000.
+- So the broader family sweep does not yet prove that the exact spent-delay coefficient must be 1.0, but it does push us away from the low-weight half of the family and toward the proper-time-style end.
+
+14) Cross-pack benchmark for the retained-weight family
+pack   | retained w | survives | mixed | fragile | min response | min wrapped | pass
+-------+------------+----------+-------+---------+--------------+-------------+-----
+base   |       0.00 |        5 |     0 |       1 |        0.000 |       0.000 | no
+base   |       0.25 |        6 |     0 |       0 |        0.000 |       0.000 | no
+base   |       0.50 |        6 |     0 |       0 |        0.000 |       0.000 | no
+base   |       0.75 |        6 |     0 |       0 |        0.500 |       0.500 | yes
+base   |       1.00 |        6 |     0 |       0 |        2.000 |       2.000 | yes
+large  |       0.00 |        4 |     0 |       0 |        0.000 |       0.000 | no
+large  |       0.25 |        4 |     0 |       0 |        3.500 |       3.500 | yes
+large  |       0.50 |        4 |     0 |       0 |        3.500 |       3.500 | yes
+large  |       0.75 |        4 |     0 |       0 |        2.500 |       2.500 | yes
+large  |       1.00 |        4 |     0 |       0 |        2.000 |       2.000 | yes
+mirror |       0.00 |        2 |     0 |       1 |        0.000 |       0.000 | no
+mirror |       0.25 |        3 |     0 |       0 |        0.000 |       0.000 | no
+mirror |       0.50 |        3 |     0 |       0 |        0.000 |       0.000 | no
+mirror |       0.75 |        3 |     0 |       0 |        0.000 |       3.500 | yes
+mirror |       1.00 |        3 |     0 |       0 |        2.500 |       3.500 | yes
+
+Interpretation:
+- This broadens the benchmark beyond the original six-scenario sweep by checking the same retained-weight family on larger and mirrored packs as well.
+- Across the tested packs, the retained weights that pass every pack-level benchmark are w = 0.75, w = 1.00.
+- The strongest pack-level response in the current grid occurs for pack `large` at w = 0.50, with minimum wrapped response 3.500.
+- This is encouraging but still not a full derivation: the benchmark keeps narrowing us toward the high-retained-update end, but it has not yet collapsed the family to a single exact coefficient.
+
+15) High-end proper-time consistency benchmark
+retained w | survives | min margin | min wrapped | pass | worst case
+-----------+----------+------------+-------------+------+------------------------
+      0.75 |       13 |     -2.112 |      -1.601 |   no | mirror:rect-hard-large
+      0.80 |       13 |     -1.606 |      -1.401 |   no | mirror:rect-hard-large
+      0.85 |       13 |     -1.241 |      -1.083 |   no | mirror:rect-hard-large
+      0.90 |       13 |     -0.712 |      -0.567 |   no | mirror:rect-hard-large
+      0.95 |       13 |     -0.250 |      -0.052 |   no | mirror:rect-hard-large
+      1.00 |       13 |      0.265 |       0.461 |  yes | mirror:rect-hard-large
+
+Interpretation:
+- This is a sharper high-end zoom: for every pack and every off-center boundary target, it asks whether the distorted geodesic saves more action than the extra coordinate delay it willingly spends in the field.
+- A positive margin here means the path choice is being driven by full retained-update leverage rather than by a weaker partial weighting that still bends the path but never quite dominates the extra delay.
+- In the tested high-end grid, the retained weights that keep that margin positive across every surviving pack and wrapped case are w = 1.00.
+- The strongest minimum margin in this grid occurs at w = 1.00, with worst case `mirror:rect-hard-large` and minimum margin 0.265.
+- This still is not a first-principles derivation, but it is the first benchmark in this toy model that singles out the exact spent-delay point within a tested retained-weight family.
+
+16) Critical-weight decomposition of the w = 1 crossing
+pack   | scenario         | target y | critical w* | margin@1 | delay penalty | retained
+-------+------------------+----------+-------------+----------+---------------+---------
+mirror | rect-hard-large  |        1 |       0.974 |    0.265 |         5.013 |  10.290
+mirror | rect-hard-large  |        2 |       0.967 |    0.347 |         5.118 |  10.583
+mirror | rect-hard-large  |       -1 |       0.959 |    0.416 |         4.848 |  10.111
+mirror | rect-hard-large  |        3 |       0.958 |    0.456 |         5.169 |  10.794
+large  | skew-wrap-large  |        2 |       0.955 |    0.464 |         4.925 |  10.314
+large  | skew-wrap-large  |        1 |       0.953 |    0.461 |         4.634 |   9.728
+
+Interpretation:
+- For a fixed distorted path, the proper-time consistency margin is linear in the retained weight: margin(w) = w * retained_total - 2 * delay_penalty.
+- That means each off-center target carries a calculable critical weight w* = 2 * delay_penalty / retained_total, above which that path finally pays for the extra coordinate delay it spends in the field.
+- In the current run the largest observed threshold is w* = 0.974 at `mirror:rect-hard-large` targeting y = 1, with margin@1 = 0.265.
+- That does not derive the spent-delay rule from deeper symmetry yet, but it does explain the empirical crossing: the hardest cases need a coefficient just under 1, which is why 0.95 still fails while 1.00 passes.
+- So the model is now doing something stronger than brute-force search: it is exposing a specific accounting identity that controls where the retained-weight family changes sign.
+
+17) Active-branch scan of the hardest crossing case
+weight | rule              | source y | worst target | min margin | active w*
+-------+-------------------+----------+--------------+------------+----------
+  0.75 | S[3, 4]/B[1, 3]   |        0 |           -1 |     -2.112 |    0.959
+  0.80 | S[3, 4]/B[1, 3]   |        0 |           -1 |     -1.606 |    0.959
+  0.85 | S[3, 4]/B[1, 3]   |        0 |            2 |     -1.241 |    0.967
+  0.90 | S[3, 4]/B[1, 3]   |        0 |            2 |     -0.712 |    0.967
+  0.95 | S[3, 4]/B[1, 3]   |        0 |            1 |     -0.250 |    0.974
+  1.00 | S[3, 4]/B[1, 3]   |        0 |            1 |      0.265 |    0.974
+
+Interpretation:
+- The global benchmark is not one fixed line in w; it is the lower envelope of the active rule-and-path branches selected by the search.
+- In the hardest case, the same branch `S[3, 4]/B[1, 3]` remains active across the scanned weights, so the sign change is a single linear crossing.
+- At the top end of the scan, the active branch carries critical weight w* = 0.974; that is why the margin is still negative at 0.95 but positive at 1.00.
+- This is the more rigorous picture: the toy model’s retained-weight benchmark is piecewise linear in w because the optimizer can switch motifs, sources, and paths as w changes.
+
+18) Why the current selector prefers the rescue motif
+weight | fallback rule     | gap/span   | status   | rescue rule       | gap/span   | status   | final rule         | switched
+-------+-------------------+------------+----------+-------------------+------------+----------+--------------------+---------
+  0.75 | S[2, 3]/B[3, 4]   | 0.292/1.847 | survives | S[3, 4]/B[1, 3]   | 0.285/3.245 | survives | S[3, 4]/B[1, 3]    | yes
+  0.80 | S[2, 3]/B[3, 4]   | 0.273/1.847 | survives | S[3, 4]/B[1, 3]   | 0.269/3.245 | survives | S[3, 4]/B[1, 3]    | yes
+  0.85 | S[2, 3]/B[3, 4]   | 0.254/1.847 | survives | S[3, 4]/B[1, 3]   | 0.254/3.245 | survives | S[3, 4]/B[1, 3]    | yes
+  0.90 | S[2, 3]/B[3, 4]   | 0.235/1.847 | survives | S[3, 4]/B[1, 3]   | 0.238/3.245 | survives | S[3, 4]/B[1, 3]    | yes
+  0.95 | S[2, 3]/B[3, 4]   | 0.215/1.847 | survives | S[3, 4]/B[1, 3]   | 0.220/3.245 | survives | S[3, 4]/B[1, 3]    | yes
+  1.00 | S[2, 3]/B[3, 4]   | 0.196/1.847 | survives | S[3, 4]/B[1, 3]   | 0.200/3.245 | survives | S[3, 4]/B[1, 3]    | yes
+
+Interpretation:
+- This separates the search stages. The fallback scan keeps proposing one compact motif, while the rescue stage evaluates a small winner-rule palette by the same quality key the current always-compare selector uses.
+- On the current hardest case, the rescue motif `S[3, 4]/B[1, 3]` wins the quality comparison at every scanned weight, even though the fallback motif `S[2, 3]/B[3, 4]` also stays `survives` throughout.
+- At w = 0.75, the fallback branch has the slightly larger center gap (0.292 vs 0.285), but the rescue branch carries much larger arrival span (3.245 vs 1.847), so the total quality key already favors rescue (3.530 vs 2.138).
+- By w = 1.00, the rescue branch also edges ahead in center gap (0.200 vs 0.196) while keeping the same span advantage, so the preference is even cleaner (3.445 vs 2.042).
+- So the selector is not maximizing proper-time consistency by itself. It is maximizing a hand-chosen robustness quality, and on the current hardest case that quality prefers the rescue motif from the start.
+
+19) Frozen-branch competition on the hardest case
+weight | branch         | rule              | center gap | arrival span | status   | min margin
+-------+----------------+-------------------+------------+--------------+----------+-----------
+  0.75 | fallback-fixed | S[2, 3]/B[3, 4]   |      0.292 |        1.847 | survives |    -0.236
+  0.75 | rescue-fixed   | S[3, 4]/B[1, 3]   |      0.285 |        3.245 | survives |    -2.112
+  0.80 | fallback-fixed | S[2, 3]/B[3, 4]   |      0.273 |        1.847 | survives |     0.041
+  0.80 | rescue-fixed   | S[3, 4]/B[1, 3]   |      0.269 |        3.245 | survives |    -1.606
+  0.85 | fallback-fixed | S[2, 3]/B[3, 4]   |      0.254 |        1.847 | survives |     0.391
+  0.85 | rescue-fixed   | S[3, 4]/B[1, 3]   |      0.254 |        3.245 | survives |    -1.241
+  0.90 | fallback-fixed | S[2, 3]/B[3, 4]   |      0.235 |        1.847 | survives |     0.741
+  0.90 | rescue-fixed   | S[3, 4]/B[1, 3]   |      0.238 |        3.245 | survives |    -0.712
+  0.95 | fallback-fixed | S[2, 3]/B[3, 4]   |      0.215 |        1.847 | survives |     1.092
+  0.95 | rescue-fixed   | S[3, 4]/B[1, 3]   |      0.220 |        3.245 | survives |    -0.250
+  1.00 | fallback-fixed | S[2, 3]/B[3, 4]   |      0.196 |        1.847 | survives |     1.442
+  1.00 | rescue-fixed   | S[3, 4]/B[1, 3]   |      0.200 |        3.245 | survives |     0.265
+
+Interpretation:
+- This removes one more layer of heuristic freedom: the two competing persistent patterns are frozen, and only the action weight w is varied.
+- That means any crossover we still see is coming from the dynamics and robustness metrics, not from the search rediscovering different patterns at each weight.
+- The frozen fallback branch `S[2, 3]/B[3, 4]` becomes proper-time-consistent earlier, with minimum margin rising from -0.236 to 1.442 and turning positive by w = 0.80.
+- The frozen rescue branch `S[3, 4]/B[1, 3]` keeps the much larger arrival span (3.245 vs 1.847) and only becomes proper-time-consistent near the top end, at w = 1.00.
+- Both frozen branches remain `survives`/`survives` under the present sweep criteria, so the current selector is not choosing between 'working' and 'failing' physics here. It is choosing between an earlier proper-time win and a stronger delay-distortion signature.
+- So the hardest current case exposes a sharper tension than before: the selected branch is not the earliest proper-time winner, but the branch that looks strongest under the present robustness quality key.
+
+20) Geometric meaning of center-gap collapse
+branch         | rule              | source y start->end | stable paths | center action | side avg     | gap
+---------------+-------------------+---------------------+--------------+---------------+--------------+-----------
+fallback-fixed | S[2, 3]/B[3, 4]   |   0->0              | no           | 5.664->4.047 | 5.956->4.243  | 0.292->0.196
+rescue-fixed   | S[3, 4]/B[1, 3]   |   0->0              | no           | 5.394->2.943 | 5.678->3.144  | 0.285->0.200
+
+Interpretation:
+- This asks the geometric question directly: does center-gap collapse come from path shapes changing, from the source row shifting, or from the action contrast between fixed center and side routes collapsing?
+- On the old branch, the source row stays at y = 0 and the comparison paths remain different from w = 0.75 to w = 1.00.
+- Its center action falls from 5.664 to 4.047, while the side average falls from 5.956 to 4.243. That changes the gap from 0.292 to 0.196.
+- The rescue branch keeps the same source row at y = 0, changes path shape as w rises, and ends with gap 0.200.
+- So the current selector is not responding to a source-row jump. It is comparing two fixed-source branches whose final action contrast and delay-distortion trade off differently (0.196 vs 0.200 in final gap).
+- The geometry diagnostic now points to the same issue as the frozen-branch comparison: the selector is sensitive to how much path contrast survives together with the broader boundary-delay signal, not just to proper-time margin.
+
+21) Alternative focus metrics on the frozen hard-case branches
+weight | action gap f/r | geom gap f/r | stiffness f/r | action winner | geom winner | stiffness winner
+-------+----------------+--------------+---------------+---------------+-------------+-----------------
+  0.75 | 0.292/0.285 | 0.304/0.101 | 0.957/2.815 | fallback      | fallback    | rescue
+  0.80 | 0.273/0.269 | 0.282/0.101 | 0.971/2.661 | fallback      | fallback    | rescue
+  0.85 | 0.254/0.254 | 0.282/0.101 | 0.902/2.508 | fallback      | fallback    | rescue
+  0.90 | 0.235/0.238 | 0.337/0.101 | 0.696/2.354 | rescue        | fallback    | rescue
+  0.95 | 0.215/0.220 | 0.337/0.329 | 0.638/0.669 | rescue        | fallback    | rescue
+  1.00 | 0.196/0.200 | 0.337/0.329 | 0.580/0.608 | rescue        | fallback    | rescue
+
+Interpretation:
+- This asks whether the hard-case ranking is specific to the current action-gap focus metric or whether it survives under more geometric observables.
+- Under raw action-gap, the ranking flips across the scan: `fallback` wins at w = 0.75 (0.292/0.285), but `rescue` wins by w = 1.00 (0.196/0.200).
+- Under pure geometric focus gap, the fallback branch wins throughout (0.304/0.101 at the start, unchanged in winner at the end).
+- The stiffness ratio, which measures action-gap per unit geometric separation, favors the rescue branch throughout and captures the fact that no single focus observable is emerging as uniquely canonical here.
+- So `center gap` is not a neutral physical truth of the toy model. It is one particular focusing observable, and metric choice materially changes which branch looks best.
+
+22) Legacy gated selector versus current always-compare selection
+weight | fallback status/quality | rescue status/quality | legacy gated       | current compare    | differs
+-------+-------------------------+-----------------------+--------------------+--------------------+--------
+  0.75 | survives/2.138   | survives/3.530 | S[1, 3]/B[1, 3]    | S[3, 4]/B[1, 3]    | yes
+  0.80 | survives/2.120   | survives/3.514 | S[1, 3]/B[1, 3]    | S[3, 4]/B[1, 3]    | yes
+  0.85 | survives/2.101   | survives/3.498 | S[1, 3]/B[1, 3]    | S[3, 4]/B[1, 3]    | yes
+  0.90 | survives/2.081   | survives/3.483 | S[1, 3]/B[1, 3]    | S[3, 4]/B[1, 3]    | yes
+  0.95 | survives/2.062   | survives/3.465 | S[1, 3]/B[1, 3]    | S[3, 4]/B[1, 3]    | yes
+  1.00 | survives/2.042   | survives/3.445 | S[1, 3]/B[1, 3]    | S[3, 4]/B[1, 3]    | yes
+
+
+----- stderr -----
+

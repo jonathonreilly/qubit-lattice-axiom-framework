@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 908 |
+| **retained_bounded** | 909 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1443 |
+| unaudited | 1442 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 1358 |
+| `audited_clean` | 1359 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1760 |
+| `unaudited` | 1759 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 598 |
 | `high` | 462 |
-| `medium` | 862 |
-| `leaf` | 1373 |
+| `medium` | 861 |
+| `leaf` | 1374 |
 
 - **Retained pending chain closure:** 20
 - **Citation cycles detected:** 19
@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1352 | 64.40 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1275 | 62.82 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1419 | 60.97 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1360 | 51.91 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1359 | 51.91 | `audited_clean` | **retained_bounded** |
 | 6 | `key_terminology` | meta | critical | 1393 | 50.45 | `unaudited` | meta |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1289 | 49.83 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1258 | 44.80 | `unaudited` | unaudited |
@@ -1093,6 +1093,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15787,6 +15788,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Net verdict: design-note records three candidate primitives; none is a clean single-primitive closure on the existing physical Cl(3)/Z^3 inputs.  _(class `A`)_
 - **chain closes:** True — The restricted packet supports the scoped open-gate claim: the note repeatedly disclaims theorem or primitive promotion, treats the three proposals as candidate imports, and states the same net no-closure conclusion in the comparative table, net design conclusion, and honest verdict. No direct ledger dependencies are listed, and the sibling probes are expressly contextual rather than load-bearing dependencies.
 - **rationale:** The audited claim is not that SM LH/RH content has been derived, but that the note honestly records three candidate substrate-side primitives and preserves the open-gate boundary. Within that scope the chain closes: P-LH-1 is conditional on importing NCG algebra/order-one structure, P-LH-2 is identified as circular/minimality-failing, and P-LH-3 is identified as insufficient alone. The runner output is consistent with this scoped status and reports 53 passing structural/procedural checks with no external comparator or numerical tuning.
+- **auditor confidence:** high
+
+### `product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12`
+
+- **Note:** [`PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md`](../../docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given a supplied two-outcome partition and the bounded premise of outcome-level factorization, the note audits the algebraic x -> x^2 agreement-conditioned flow, a non-product witness with factorized partition weights, and invariance under frame motion commuting with the partition.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-115220-dc9013faa5-product_form_premise_weakens`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Assuming only m(j,k)=p_j p_k on the two-outcome partition, agreement conditioning gives q_i=p_i^2/(p_s^2+p_d^2), hence the quotient odds coordinate obeys x'=q_s/q_d=x^2.  _(class `A`)_
+- **chain closes:** True — The L1 flow is a direct normalization identity from the four outcome weights, L2 gives an explicit positive trace-one non-product state whose partition weights factor, and L3 is cyclicity of trace plus commutation with the projectors. The note does not attempt to discharge outcome-level independence, select a cell, fix r, or promote the quoted unraveling context.
+- **rationale:** The load-bearing mathematics is algebraic over the supplied partition and bounded outcome-factorization premise. Independent checks of the displayed identities confirm the agreement-conditioning normalization, the L2 density-matrix positivity and factorized partition weights, the non-product covariance witness, and the L3 frame invariance. The cited authorities are retained-grade or accepted axiom-premise material, and the unaudited unraveling quotes are explicitly scoped as non-load-bearing context.
 - **auditor confidence:** high
 
 ### `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22`

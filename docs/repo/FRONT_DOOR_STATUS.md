@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3295 |
-| Applied audit verdicts | 1530 |
-| Retained-grade rows, including boxed decorations | 1374 |
+| Applied audit verdicts | 1531 |
+| Retained-grade rows, including boxed decorations | 1375 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 211 |
-| Retained bounded rows | 908 |
+| Retained bounded rows | 909 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1443 |
+| Unaudited rows | 1442 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 52 |
 | Audited renaming rows | 31 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1448 |
-| Ready rows | 2 |
+| Total pending rows | 1447 |
+| Ready rows | 1 |
 | Cycle-break targets | 19 |
 | Critical pending | 330 |
 | High pending | 254 |
-| Medium pending | 425 |
+| Medium pending | 424 |
 | Leaf pending | 439 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12`](../../docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -77,8 +76,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3437 |
 | Critical nodes | 606 |
 | High nodes | 468 |
-| Medium nodes | 901 |
-| Leaf nodes | 1462 |
+| Medium nodes | 900 |
+| Leaf nodes | 1463 |
 
 Top load-bearing rows by graph score:
 
@@ -86,7 +85,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1352 descendants; score 64.402
 - `observable_principle_from_axiom_note` - critical; 1275 descendants; score 62.817
 - `graph_first_su3_integration_note` - critical; 1419 descendants; score 60.972
-- `plaquette_self_consistency_note` - critical; 1360 descendants; score 51.910
+- `plaquette_self_consistency_note` - critical; 1359 descendants; score 51.909
 - `key_terminology` - critical; 1393 descendants; score 50.445
 - `minimal_axioms_2026-05-03` - critical; 1289 descendants; score 49.833
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 1258 descendants; score 44.798

@@ -3,7 +3,7 @@
     "critical": 330,
     "high": 254,
     "leaf": 439,
-    "medium": 425
+    "medium": 424
   },
   "cycle_break_target_count": 19,
   "cycle_break_targets": [
@@ -18052,32 +18052,6 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 90
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_product_form_weakens_to_outcome_factorization_2026_06_12.py",
-      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44162,6 +44136,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 2,
-  "total_pending": 1448
+  "ready_count": 1,
+  "total_pending": 1447
 }

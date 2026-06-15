@@ -1,0 +1,15 @@
+slug: complete-chain-runner-path-20260615
+date: 2026-06-15
+goal: "Normalize complete-chain source-note runner paths so audit extraction cannot fall back to stale bare filenames."
+target_status: methodology
+actual_current_surface_status: bounded-support
+trace_class: methodology
+reachability_to_target: supports
+active_route: source path normalization
+files_touched:
+  - docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md
+verification:
+  - "rg --pcre2 -n '(?<!scripts/)frontier_[a-z0-9_]+\\.py' docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md || true -> no matches"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_complete_prediction_chain.py -> fresh"
+next_exact_action: "Reviewer can land source path normalization; generated audit data should be refreshed by the normal audit/review pipeline."
+stop_condition: "Source references normalized without editing generated audit data."

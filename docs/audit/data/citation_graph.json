@@ -51474,7 +51474,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "pmns_tm2_residual_consequence_bounded_note_2026-05-26"
+      "to": "s3_time_primitive_chain_note"
     },
     {
       "from": "repo.front_door_status",
@@ -51502,7 +51502,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "s3_time_primitive_chain_note"
+      "to": "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
+        "s3_time_primitive_chain_note",
         "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
         "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
         "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
         "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12",
-        "s3_time_primitive_chain_note"
+        "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ad45deb1d9d348e7a9035e39271c4d6f45fc58ef09d5458abab23393999cfc45",
+      "note_hash": "a9e7201043e45fb4bbef7eaef1bcc4c943fee5ad194d1da3ff99a99e664a5152",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

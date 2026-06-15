@@ -1,0 +1,36 @@
+loop: g2-rge-scale-bridge-20260615
+branch: physics-loop/g2-rge-scale-bridge-20260615
+base: origin/main
+base_commit: 64b29ef583e6a4df20466b550c9072bcf39a6caf
+started_utc: 2026-06-15
+mode: run
+target_status: bounded-support
+active_route: retire_g2_x6_x7_external_imports
+target_claim_id: g_2_v_bounded_interval_narrow_theorem_note_2026-05-17
+current_goal: >
+  Replace the row-local external scale-log and one-loop inverse-alpha
+  admissions in the g2 bounded-interval row with a framework-local bridge,
+  while leaving the SU(2) tadpole interval import explicitly open.
+files_touched:
+  - docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md
+  - docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md
+  - scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
+  - scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py
+  - .claude/science/physics-loops/g2-rge-scale-bridge-20260615/
+open_imports:
+  - X1: literature interval u_0(SU(2)) in [0.96, 0.98]
+retired_or_reframed_imports:
+  - X6: ln(M_Pl/v_cand) scale log computed from the scale primitive and hierarchy candidate map.
+  - X7: integrated inverse-alpha one-loop equation derived by calculus from the one-loop coefficient convention.
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: theorem
+review_status: pending_review
+audit_status: not_run_by_this_branch
+next_exact_action: >
+  Reviewer/auditor should inspect the bridge note and runners, then
+  re-audit the new bridge row and the g2 row. X1 remains an explicit open
+  residual.
+stop_condition: >
+  Branch is ready for review once runners pass, generated audit outputs are
+  restored, and the PR is open.

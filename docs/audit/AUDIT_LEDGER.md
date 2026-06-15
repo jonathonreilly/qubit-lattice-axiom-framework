@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 916 |
+| **retained_bounded** | 917 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1506 |
+| unaudited | 1505 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1350 |
+| `audited_clean` | 1351 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1823 |
+| `unaudited` | 1822 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 533 |
-| `high` | 508 |
-| `medium` | 889 |
+| `high` | 509 |
+| `medium` | 888 |
 | `leaf` | 1381 |
 
 - **Retained pending chain closure:** 4
@@ -1456,6 +1456,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -20722,6 +20723,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the clean attractive subset of the fixed G=5, mu^2=0.22 open-boundary Wilson two-orbital sweep, all 25 configurations are ATTRACT and CLEAN and the global fit is |a_mut| ~ d^-3.669 with R^2=0.9896.  _(class `C`)_
 - **chain closes:** True — The runner recomputes all 25 configurations and asserts the aggregate counts, global exponent/R^2, per-side exponents, and steeper-than-Newton fixed-surface check against the note's quoted values. The note's screening addendum correctly prevents reading this as a screening-independent universality class.
 - **rationale:** The bounded claim closes because the live runner and SHA-pinned cache reproduce the 25-run fixed-surface sweep and assert every quoted fit used by the note. The note explicitly labels the fit as post-selected on clean attractive rows and narrows interpretation with the later screening addendum, so no hidden universal Newton-law or screening-independent claim is being retained. Residual risk is limited to future misuse outside fixed G=5, mu^2=0.22 or outside the declared post-selected methodology.
+- **auditor confidence:** high
+
+### `wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08`
+
+- **Note:** [`WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md`](../../docs/WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-sum algebra for the Wilson-corrected tree-level V_taste^W: exact stationary point m = -4r and leading small-r curvature -4/u_0^2 + 12 r^2/u_0^4 + O(r^4), with r and u_0 carried symbolically.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-215611-45287b9635-wilson_vtaste_extremum_leadi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At m = -4r, the shifts are 2r(k-2), so the k and 4-k terms cancel exactly in dV^W/dm, and the curvature expansion uses Σ binomial(4,k)(k-2)^2 = 16 to give the +12 r^2/u_0^4 coefficient.  _(class `A`)_
+- **chain closes:** True — The result follows from the retained-bounded upstream V_taste^W formula, the retained-bounded binomial staircase, and standard finite-sum calculus. The independent check confirms the derivative-pair cancellation, derivative signs, prefactors, Taylor coefficient, centered moment 16, and 5x ratio against the m=0 coefficient.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the cited finite-sum inputs, not a definition, comparator match, or imported physical readout. The runner source performs exact Fraction arithmetic for the moments, derivative cancellation, r=0 limit, and small-r coefficient extraction; it does not hard-code a PDG value or a contested physical premise. The cited load-bearing authorities in the restricted packet are retained_bounded, and the claim stays within a bounded theorem scope rather than closing the Higgs-pole or +12% gap chain.
 - **auditor confidence:** high
 
 ### `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12`

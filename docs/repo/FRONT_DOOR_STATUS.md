@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1486 |
-| Retained-grade rows, including boxed decorations | 1380 |
+| Applied audit verdicts | 1487 |
+| Retained-grade rows, including boxed decorations | 1381 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 916 |
+| Retained bounded rows | 917 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1506 |
+| Unaudited rows | 1505 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 19 |
 | Audited renaming rows | 30 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1508 |
+| Total pending rows | 1507 |
 | Ready rows | 75 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 280 |
-| Medium pending | 466 |
+| Medium pending | 465 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08`](../../docs/WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
+- [`pmns_graph_first_axis_alignment_note`](../../docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md) - high; unaudited
 - [`su3_adjoint_casimir_theorem_note_2026-05-02`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md) - high; unaudited
 - [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - high; unaudited
 - [`tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10`](../../docs/TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md) - high; unaudited
 - [`registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`](../../docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md) - high; unaudited
+- [`wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
-- [`pmns_graph_first_axis_alignment_note`](../../docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,8 +62,8 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 159 |
-| high | `unaudited` | 158 |
-| medium | `unaudited` | 98 |
+| high | `unaudited` | 159 |
+| medium | `unaudited` | 97 |
 | critical | `open_gate` | 3 |
 | high | `audited_conditional` | 3 |
 | critical | `audited_conditional` | 2 |
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
-| High nodes | 514 |
-| Medium nodes | 928 |
+| High nodes | 515 |
+| Medium nodes | 927 |
 | Leaf nodes | 1470 |
 
 Top load-bearing rows by graph score:

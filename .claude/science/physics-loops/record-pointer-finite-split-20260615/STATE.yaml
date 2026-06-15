@@ -1,0 +1,27 @@
+loop_slug: record-pointer-finite-split-20260615
+branch: physics-loop/record-pointer-finite-split-20260615
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: finite_controlled_coupling_split
+target_claim_id: record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05
+target_blocker_text: "Split the clean finite controlled-coupling example from the over-broad equivalence, then re-audit a narrowed theorem with explicit record-forming coupling and persistence hypotheses."
+files_touched:
+  - docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md
+  - docs/RECORD_POINTER_CONTROLLED_COUPLING_FINITE_EXAMPLE_BOUNDED_THEOREM_NOTE_2026-06-15.md
+  - scripts/record_pointer_controlled_coupling_finite_example_2026_06_15.py
+  - logs/runner-cache/record_pointer_controlled_coupling_finite_example_2026_06_15.txt
+open_imports:
+  - quantum_Darwinism_record_convention
+  - explicit_finite_carrier_choice
+no_go_routes:
+  - broad_objective_record_formation_iff_pointer_non_demolition_equivalence_not_claimed
+  - transfer_class_consequence_not_claimed
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_status: local_source_checks_passed_reviewer_loop_pending
+pr_status: pending
+next_exact_action: "Run final checks, commit, push, and open review PR."
+stop_condition: "Science block closed by PR; continue to next audit unlock afterward."

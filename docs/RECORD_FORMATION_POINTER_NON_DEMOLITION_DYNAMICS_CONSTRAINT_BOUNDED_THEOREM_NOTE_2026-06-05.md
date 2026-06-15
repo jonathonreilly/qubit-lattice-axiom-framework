@@ -7,11 +7,21 @@
 **Date:** 2026-06-05
 **Type:** bounded theorem
 **Claim type:** bounded_theorem
-**Status:** source note awaiting independent audit handling.
+**Status:** source-side demotion/split packet. The original broad equivalence
+claim is no longer current source authority. The clean finite
+controlled-coupling example is split out in
+[`RECORD_POINTER_CONTROLLED_COUPLING_FINITE_EXAMPLE_BOUNDED_THEOREM_NOTE_2026-06-15.md`](RECORD_POINTER_CONTROLLED_COUPLING_FINITE_EXAMPLE_BOUNDED_THEOREM_NOTE_2026-06-15.md).
 **Primary runner:**
 [`scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py`](../scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py)
 **Cached log:**
 [`logs/runner-cache/frontier_record_formation_dynamics_constraint_2026_06_05.txt`](../logs/runner-cache/frontier_record_formation_dynamics_constraint_2026_06_05.txt)
+
+**Source split (2026-06-15).** This revision separates the clean finite
+controlled-coupling example from the over-broad equivalence statement. This
+parent remains a historical/conditional packet for the larger idea. The new
+split note proves only explicit record-forming sufficiency and persistence for
+`H_rec(g) = g sigma_z(S) sum_k sigma_x(E_k)` at `t = pi/(4g)`, with no
+necessity/equivalence claim.
 
 This is the **temporal/formation** companion to the timeless gauge-structure
 boundary in
@@ -38,7 +48,9 @@ Condition on the following explicit finite model:
   disjoint fragments each certify the same pointer value (Darwinism plateau /
   redundancy `R_delta`), and **persistent** when stable under further `U` steps.
 
-In that model the following hold.
+In the original broad packet, the following stronger statements were attempted.
+After the 2026-06-15 source split they are not current source authority unless
+independently narrowed and re-reviewed:
 
 1. **Equivalence (the central result).** Additive + redundant + persistent +
    objective record formation by a local evolution is **equivalent to
@@ -114,12 +126,13 @@ themselves assert that a record is such an imprint. The constraint is forced
 - It does not identify the gauge-invariant algebra of the companion timeless
   note with physical observables, nor does it enlarge that result.
 
-The safe downstream use is only the bounded finite-model statement: under the
-stated quantum-Darwinism record conventions, additive + redundant + persistent
-+ objective record formation by a local evolution is equivalent to
-pointer-non-demolition `[H_int, Pi_S] = 0`, which forces a conserved pointer and
-locality on the transfer step, and the framework's reflection-positive
-number-conserving OS transfer lies in that class.
+The safe downstream use of this parent is only historical context plus the
+boundary it exposes. The safe positive source theorem is now the split finite
+example: under the stated quantum-Darwinism record conventions, the explicit
+controlled coupling `H_rec(g) = g sigma_z(S) sum_k sigma_x(E_k)` forms
+redundant persistent pointer records at `t = pi/(4g)`. The broad equivalence
+and transfer-class consequence remain open unless separately narrowed and
+re-reviewed.
 
 ## Beyond the Timeless Gauge-Structure Boundary
 
@@ -131,7 +144,13 @@ the structural corollary, obtained from the same Record axiom by passing from
 the timeless additivity to its quantum-Darwinism (redundant-imprint)
 realization.
 
-## Runner Certificate
+## Historical Runner Certificate
+
+The original runner remains useful as a diagnostic for why the broader route was
+tempting, but this parent section is not current authority for the equivalence,
+necessity, or transfer-class consequence listed above. Current positive support
+for a finite theorem lives in the split runner
+`scripts/record_pointer_controlled_coupling_finite_example_2026_06_15.py`.
 
 The runner verifies, on the explicit `S + E_1..E_4` model (numpy, exact dense
 operators, peak RSS ~36 MB):

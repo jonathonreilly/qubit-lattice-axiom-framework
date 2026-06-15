@@ -1,0 +1,22 @@
+loop: dm-neutrino-weak-vector-runner-20260615
+status: ready_for_review
+goal: "Register and cache the exact DM neutrino weak-vector theorem runner so the critical retained-bounded row has an auditable packet."
+target_status: bounded-support
+base: origin/main@c5a380aa801a160348c02afd7d84e0b6a64e0807
+branch: physics-loop/dm-neutrino-weak-vector-runner-20260615
+current_surface_status: retained_bounded in generated audit state; source note remains bounded support theorem
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: dm_neutrino_weak_vector_theorem_note_2026-04-15
+target_blocker_text: "The critical retained-bounded source row had runner_path null and no logs/runner-cache artifact for its exact theorem runner."
+files_touched:
+  - docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md
+  - logs/runner-cache/frontier_dm_neutrino_weak_vector_theorem.txt
+  - .claude/science/physics-loops/dm-neutrino-weak-vector-runner-20260615/
+verification:
+  - "python3 docs/audit/scripts/build_citation_graph.py"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_dm_neutrino_weak_vector_theorem.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+pr_status: branch_package_ready
+next_exact_action: "Open PR and let the independent audit/review lane regenerate generated audit state."
+stop_condition: "PR opened with only source note, cache, and loop pack committed."

@@ -1,0 +1,17 @@
+loop: ks-bounded-surface-hygiene-20260615
+status: ready_for_review
+target_claim_id: staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+branch: codex/ks-bounded-surface-hygiene-20260615
+files_touched:
+  - docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
+  - scripts/probe_kawamoto_smit_phase_forcing.py
+  - logs/runner-cache/probe_kawamoto_smit_phase_forcing.txt
+open_imports:
+  - P-KIN/P-SD are still declared local premises, not derived.
+  - Full staggered-realization statistics selection remains downstream context.
+next_exact_action: reviewer/auditor re-audits the bounded local theorem surface
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

@@ -5,10 +5,6 @@ claim_type_author_hint: bounded_theorem
 
 # Qubit-Link U(2) Connection Algebra (Bounded Theorem)
 
-> **Key terms used in this doc** are indexed A-Z at
-> [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the
-> canonical source-of-truth doc.
-
 **Date:** 2026-06-04
 **Type:** bounded theorem
 **Status:** source note awaiting independent audit handling.

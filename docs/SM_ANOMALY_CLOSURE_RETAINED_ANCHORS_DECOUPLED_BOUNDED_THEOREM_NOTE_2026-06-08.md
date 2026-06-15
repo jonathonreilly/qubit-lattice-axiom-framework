@@ -1,9 +1,5 @@
 # SM One-Generation Anomaly Closure From Retained Anchors — Decoupled From `anomaly_forces_time` (Bounded Theorem)
 
-> **Key terms used in this doc** are indexed A-Z at
-> [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the
-> canonical source-of-truth doc.
-
 **Date:** 2026-06-08
 **Type:** bounded theorem
 **Claim type:** bounded_theorem

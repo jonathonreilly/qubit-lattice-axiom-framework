@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1510 |
-| Retained-grade rows, including boxed decorations | 1395 |
-| Retained positive theorems | 215 |
+| Applied audit verdicts | 1511 |
+| Retained-grade rows, including boxed decorations | 1396 |
+| Retained positive theorems | 216 |
 | Retained no-go rows | 209 |
 | Retained bounded rows | 927 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1482 |
+| Unaudited rows | 1481 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 26 |
 | Audited renaming rows | 30 |
@@ -33,19 +33,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1484 |
+| Total pending rows | 1483 |
 | Ready rows | 65 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 450 |
+| Medium pending | 449 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md) - medium; unaudited
 - [`gellmann_completeness_theorem_note_2026-05-02`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
+- [`gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08`](../../docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16`](../../docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`pmns_tm2_residual_consequence_bounded_note_2026-05-26`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md) - medium; unaudited

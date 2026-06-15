@@ -9,7 +9,7 @@ source-note proposal and is not an audit-ratified retained or bounded-theorem
 status.
 **Date:** 2026-04-13 (created); 2026-05-16 (rescoped to retire the
 observation-comparison load-bearing step flagged by the 2026-05-05 audit).
-**Script:** `scripts/frontier_hierarchy_dimensional_compression.py`
+**Script:** `scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py`
 
 ## 2026-06-12 audit firewall: D=4 readout bridge still open
 
@@ -19,10 +19,11 @@ D=16 separation, and the algebraic identity `1/D = 4/2^D` at `D = 4`.
 
 This note does not derive the D=4 readout / effective-potential-density bridge
 that would place the compression factor in the physical VEV formula with
-sign, placement, and normalization. It also does not derive the staggered
-taste count `N_taste = 2^D` from primitives. Those remain the open bridge
-targets named below. No new axiom, Tier-A admission, observed target, or audit
-status is introduced here.
+sign, placement, and normalization. The old source edge to the unaudited
+staggered-realization gate is no longer load-bearing here: the D=4 taste-count
+input is now routed through retained bounded taste-count authorities named
+below. No new axiom, Tier-A admission, observed target, or audit status is
+introduced here.
 
 ## 0. Audit context — what this note still claims, and what it does not
 
@@ -53,7 +54,8 @@ not used in any PASS condition.
 >       /  cond(L_t = 2,  L_s = 2, u_0 = 0.9, m = 1e-2)
 > ```
 >
-> on the operator built in `scripts/frontier_hierarchy_dimensional_compression.py`.
+> on the operator built in
+> `scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py`.
 > Then:
 >
 > (i) **D=4 compression formula.** Under the per-determinant
@@ -74,11 +76,11 @@ not used in any PASS condition.
 >     theorem would have to pick between by structural means.
 > (iv) **D=4 vs general D structural identity.** The (1/4) exponent
 >     decomposes as `1/D = 4 / 2^D` at `D = 4`, which is an
->     algebraic identity tied to the staggered taste count
->     `N_taste = 2^D`; the same identity fails at `D ∈ {1, 2, 3, 5,
->     6, 8}` (verified explicitly in the runner). The (1/4) is
->     therefore D=4-specific under the inherited per-determinant
->     readout, not an interchangeable choice.
+>     algebraic identity tied to the retained bounded D=4 taste-count
+>     surface `N_taste = 2^D`; the same identity fails at
+>     `D ∈ {1, 2, 3, 5, 6, 8}` (verified explicitly in the runner).
+>     The (1/4) is therefore D=4-specific under the inherited
+>     per-determinant readout, not an interchangeable choice.
 
 The (1/4) derivation itself is the heat-kernel D=4 sister bounded
 theorem note (2026-05-10); this note inherits that derivation and
@@ -154,9 +156,16 @@ bounded-support to retained-grade; none are claimed in this note.
    `v ∝ |det|^(1/(N_taste · L_t))` reading is recast as a D=4
    dimensional-analysis statement by the 2026-05-10 heat-kernel sister
    note but is not derived from primitives there.
-3. **Staggered-Dirac realization gate.** The `N_taste = 2^D` count
-   in `D = 4` inherits from the open realization-gate note
-   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md).
+3. **Taste-count authority.** The old open realization-gate pointer is
+   replaced, for this packet's D=4 arithmetic support, by retained bounded
+   one-hop authorities:
+   [`HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+   for the naive `N_taste = 2^D = 16` count and mean-field `W(J)` form, and
+   [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md)
+   for the `2^4 = 16` BZ-corner/Hamming-staircase combinatorics. The
+   `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` remains only a
+   broader physical-realization context pointer, not this note's
+   load-bearing taste-count dependency.
 4. **Continuum-limit corrections.** Sub-leading Seeley-DeWitt
    coefficients modify the (7/8) prefactor at sub-leading orders in a
    continuum-limit reading; at the minimal block the (1/4) is bounded
@@ -205,44 +214,52 @@ unregistered conditional blocker.
    separated, and the identity `1/D = 4/2^D` holds at `D = 4` and fails
    at the tested neighboring dimensions. This standalone arithmetic
    does not consume carrier naming.
-2. **What the carrier admission carries.** The carrier-consuming parts
-   are the per-determinant readout naming the arithmetic as a VEV or
-   effective-potential-density readout, and the realization claim
-   `N_taste = 2^D = 16` in `D = 4`. Those are the admitted context
-   inputs declared in this note, separate from the arithmetic itself.
-3. **The admission is a registered Tier-A target.** The canonical
-   parent
-   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-   is the registered Tier-A derivation target `AC_phi_lambda` in
-   `docs/audit/data/tier_a_admissions.json`. This note routes the
-   carrier naming into that registered target; it does not close the
-   gate.
+2. **What the remaining admission carries.** The carrier-consuming part
+   still open here is the per-determinant readout naming the arithmetic as a
+   VEV or effective-potential-density readout. The `N_taste = 2^D = 16` D=4
+   count is no longer admitted through the open realization gate in this
+   packet; it is consumed from the retained bounded taste-count authorities
+   cited above, while the physical realization of the full carrier remains
+   outside this note.
+3. **The remaining Tier-A target is context only.** The canonical
+   `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` remains the
+   registered Tier-A derivation target `AC_phi_lambda` in
+   `docs/audit/data/tier_a_admissions.json`, but this note no longer uses it
+   as the D=4 taste-count authority. The unresolved target here is the
+   determinant/effective-potential-density readout map, not the finite
+   `2^4 = 16` count.
 4. **Routing boundary.** This section records the carrier route only.
    It does not supply the per-determinant readout bridge, does not
-   derive `N_taste = 2^D`, and does not assert an audit outcome.
+   assert full physical-carrier realization, and does not assert an audit
+   outcome.
 
-## 6. Dependencies
+## 6. Graph-visible retained dependencies and context pointers
+
+Graph-visible retained one-hop dependencies for the taste-count repair:
+
+- [`HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+  — retained bounded D=4 `N_taste = 2^D = 16` and mean-field `W(J)` bridge.
+- [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md)
+  — retained bounded `2^4 = 16` BZ-corner/Hamming-staircase combinatorics.
+
+Non-load-bearing context pointers, intentionally left as backticked plain
+text rather than graph-visible dependency edges:
 
 - `HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md`
-  — sister bounded theorem note deriving the D=4 (1/4) compression
-  exponent via heat-kernel + zeta-regularized free-energy density
-  reading; provides the (1/4) used here as a structural admission.
+  — sister note that motivated the D=4 (1/4) compression exponent, but is
+  unaudited in the current ledger and is not a closure authority here.
 - `HIERARCHY_MATSUBARA_DETERMINANT_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`
-  — sister narrow theorem deriving the (7/8) factor as an exact
-  rational determinant identity.
+  — sister determinant-ratio note whose D=4 readout remains an admission.
 - `HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`
-  — companion narrowing note from 2026-05-10 isolating prior
-  within-scope arithmetic from the open effective-potential-density
-  bridge.
+  — prior narrowing note isolating arithmetic from the open
+  effective-potential-density bridge.
 - `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`
-  — sibling endpoint algebra note.
-- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-  — open realization gate for `N_taste = 2^D` structural origin.
+  — sibling endpoint algebra note; not a physical VEV insertion bridge.
 
 ## 7. Verification
 
 ```bash
-PYTHONPATH=scripts python3 scripts/frontier_hierarchy_dimensional_compression.py
+PYTHONPATH=scripts python3 scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py
 ```
 
 Verifies, using only intra-framework arithmetic, that:
@@ -263,14 +280,20 @@ Verifies, using only intra-framework arithmetic, that:
    `v_pred`, and `C_obs` are introduced only after the PASS-gate block.
    Those quantities are printed as `external context` for reader
    transparency and are explicitly excluded from PASS gates.
+6. The source firewall records the packet as conditional D=4 arithmetic
+   support, not a bounded-theorem status proposal.
+7. The source firewall leaves the D=4 readout / effective-potential-density
+   bridge open while consuming retained bounded taste-count authorities.
+8. The live ledger reports the two taste-count one-hop authorities as
+   retained-grade.
 
-Expected scorecard: `7 pass, 0 fail out of 7`.
+Expected scorecard: `8 pass, 0 fail out of 8`.
 
-### 7.1 Scorecard sync (2026-06-11)
+### 7.1 Scorecard sync (2026-06-15)
 
-The fifth PASS gate genuinely remains in the current runner, so the
-source scorecard is synced to `5`. Gate-by-gate check against
-`scripts/frontier_hierarchy_dimensional_compression.py`:
+The current runner has eight PASS gates after the taste-authority repair.
+Gate-by-gate check against
+`scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py`:
 
 1. `D=4 inverse compression R^(-1/4) reproduces by independent routes`
    — current runner computes `R**(-0.25)` and `exp(-log(R)/4)` and
@@ -286,38 +309,40 @@ source scorecard is synced to `5`. Gate-by-gate check against
    all PASS gates, in the external-context block.
 6. `source note demotes stale bounded-theorem proposal to conditional support`
    — current source metadata no longer proposes a bounded theorem.
-7. `source note leaves D=4 readout bridge open` — the note names the
-   effective-potential-density bridge and staggered-taste realization gate as
-   open targets.
+7. `source note leaves D=4 readout bridge open while consuming retained
+   taste-count authority` — the note names the effective-potential-density
+   bridge as open and records the retained bounded taste-count authorities.
+8. `taste-count one-hop authorities are retained-grade in the live ledger` —
+   the runner checks the effective statuses of the Higgs lattice taste-count
+   bridge and the Wilson BZ-corner staircase row.
 
 ```yaml
 claim_id: hierarchy_dimensional_compression_note
 note_path: docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md
-runner_path: scripts/frontier_hierarchy_dimensional_compression.py
+runner_path: scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py
 proposed_claim_type: open_gate / conditional-support
 proposed_load_bearing_step_class: B
 status_authority: independent audit lane only
 audit_required_before_effective_status_change: true
 
-declared_one_hop_deps:
+graph_visible_one_hop_deps:
+  - higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05
+  - wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08
+context_pointers_not_dependency_edges:
   - hierarchy_heat_kernel_d4_compression_bounded_theorem_note_2026-05-10
   - hierarchy_matsubara_determinant_ratio_narrow_theorem_note_2026-05-10
   - hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10
   - hierarchy_effective_potential_endpoint_note
-  - staggered_dirac_realization_gate_note_2026-05-03
 
 admitted_context_inputs:
   - per-determinant geometric-mean readout
     v(L_t) ∝ |det(D, L_t, m=0)|^(1/(N_taste · L_t)) with
-    N_taste = 2^D = 16 in D = 4 (inherited from 2026-05-10
-    heat-kernel sister bounded theorem note)
-  - staggered taste count N_taste = 2^D in D = 4 (inherits from
-    open realization gate)
+    N_taste = 2^D = 16 in D = 4
 
 forbidden_imports_used: false
 observed_target_used_in_pass_conditions: false
 proposal_allowed: false
-proposal_allowed_reason: "D=4 arithmetic support is source-ready, but the D=4 readout / effective-potential-density bridge and staggered-taste realization gate remain open."
+proposal_allowed_reason: "D=4 arithmetic support is source-ready and the finite taste-count authority is retained-bounded, but the D=4 readout / effective-potential-density bridge remains open."
 ```
 
 ## 8. Changelog
@@ -332,3 +357,7 @@ proposal_allowed_reason: "D=4 arithmetic support is source-ready, but the D=4 re
 - **2026-06-12 audit firewall.** Demoted the stale bounded-theorem proposal
   wording to conditional D=4 arithmetic support and made the D=4 readout /
   effective-potential-density bridge an explicit open target.
+- **2026-06-15 taste-authority repair.** Replaced the stale load-bearing
+  citation edge to the unaudited staggered-realization gate with retained
+  bounded taste-count authorities. The D=4 readout / effective-potential-density
+  bridge remains open.

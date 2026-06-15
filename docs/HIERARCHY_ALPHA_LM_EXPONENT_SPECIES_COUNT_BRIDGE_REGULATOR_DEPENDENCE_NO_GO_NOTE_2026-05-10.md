@@ -109,7 +109,9 @@ framework authority. It does not claim:
   `v = M_Pl * alpha_LM^16 * (7/8)^(1/4)` itself is invalid (the formula
   is a separate derivation track with its own gate inputs);
 - that the staggered-Dirac realization gate is closed (it remains open;
-  see [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md));
+  the context handle is
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, not a
+  citation-graph dependency of this no-go);
 - that any specific framework lane is retracted, demoted, or closed by
   this no-go;
 - that the repo baseline Quantum one-qubit operator algebra plus Lattice
@@ -249,8 +251,8 @@ lattice-action-uniform primitives alone.
 
 ## 7. Registered Tier-A routing for the staggered-Dirac carrier
 
-The open
-[`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+The open context handle
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 already names "the framework forces the Grassmann staggered-Dirac
 realization" as an open gate, not closed by the repo baseline physical
 Quantum one-qubit operator algebra plus Lattice `Z^3`
@@ -275,12 +277,14 @@ and
    naive/staggered-Dirac carrier rather than as a regulator-uniform QFT
    identity. It carries no derivation of B1, no derivation of B2, and no
    status change for this no-go note.
-3. **The admission is a registered Tier-A target.** The canonical parent
-   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-   is registered as the Tier-A derivation target `AC_phi_lambda` in
-   [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json).
-   This note routes the carrier naming into that registered target; it
-   does not close the gate and does not edit the registry file.
+3. **The admission is a registered Tier-A target, but not a
+   load-bearing dependency here.** The canonical parent
+   `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the
+   registered Tier-A derivation target `AC_phi_lambda` in the audit
+   registry. This note records that carrier naming as context only; it
+   does not consume the open gate as a one-hop authority, close the
+   gate, edit the registry file, or make `AC_phi_lambda` part of the
+   obstruction arithmetic.
 4. **No status assertion.** This section makes the narrow re-audit case
    only. The audit lane is the sole authority for audit status and
    effective status; this note asserts no `effective_status` and
@@ -291,8 +295,8 @@ and
 | Authority | Role |
 |---|---|
 | [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md) | one-hop authority for the naive `2^d` count and the `d = 4` value `16` |
-| [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) | canonical parent for the carrier naming routed to `AC_phi_lambda` |
-| [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json) | machine registry for the `AC_phi_lambda` Tier-A target |
+| `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` | plain-text context handle for the open carrier naming routed to `AC_phi_lambda`; not a citation-graph dependency |
+| `docs/audit/data/tier_a_admissions.json` | plain-text context handle for the machine registry entry; not a citation-graph dependency |
 
 The naive narrow theorem is cited because the numerical coincidence
 `16 = 2^4` originates there; this no-go does **not** modify that
@@ -429,6 +433,8 @@ status_authority: independent audit lane only
 
 declared_one_hop_deps:
   - naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10
+
+non_load_bearing_context_handles:
   - staggered_dirac_realization_gate_note_2026-05-03
   - docs/audit/data/tier_a_admissions.json
 

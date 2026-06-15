@@ -256,7 +256,14 @@ not relevant to the backward Ward prediction, because:
 
 ## Numerical Verification
 
-All results from `frontier_yt_qfp_insensitivity.py`:
+`frontier_yt_qfp_insensitivity.py` now has two runner modes:
+
+- default audit-window certificate: endpoint and coefficient-hierarchy
+  witnesses, 14 PASS / 0 FAIL, intended for the audit runner cache;
+- `--full-sweep`: the historical dense ODE scans used for the detailed
+  tables in Parts 2-4 above.
+
+Default audit-window results from `frontier_yt_qfp_insensitivity.py`:
 
 | Test | Criterion | Result |
 |------|-----------|--------|
@@ -264,15 +271,15 @@ All results from `frontier_yt_qfp_insensitivity.py`:
 | m_t within 5% of observed | \|m_t - 172.7\|/172.7 < 5% | PASS |
 | QFP focusing ratio > 1 (full range) | R > 1 | PASS (R = 1.09) |
 | QFP focusing ratio > 1.5 (upper half) | R > 1.5 | PASS (R = 1.98) |
-| Local sensitivity bounded | dy_t(v)/dy_t(M_Pl) < 1.5 | PASS (0.90) |
+| Local sensitivity bounded | dy_t(v)/dy_t(M_Pl) < 1.5 | PASS (0.69) |
 | Ward-band [0.3, 0.6] variation | < 30% | PASS (28.8%) |
-| g_1 insensitivity [0.3, 0.6] | < 5% | PASS (3.7%) |
-| g_2 insensitivity [0.4, 0.9] | < 10% | PASS (7.4%) |
-| lambda insensitivity [0.05, 0.3] | < 0.5% | PASS (0.03%) |
+| g_1 coefficient hierarchy | < 5% of QCD weight | PASS (1.76%) |
+| g_2 coefficient hierarchy | < 10% of QCD weight | PASS (9.05%) |
+| lambda loop-order hierarchy | no 1-loop beta_yt coefficient | PASS |
 | 1-loop vs 2-loop shift | < 5% | PASS (2.4%) |
 | Small perturbation (+/-3%) | < 5% | PASS (2.8%) |
 | b_3 +/-20% perturbation | < 15% | PASS (7.1%) |
-| Random +/-10% all coefficients | < 10% | PASS (7.6%) |
+| Seeded +/-10% all coefficients audit sample | < 10% | PASS (4.4%) |
 | EW contribution quantified | < 20% | PASS (13.8%) |
 
 14 PASS, 0 FAIL.

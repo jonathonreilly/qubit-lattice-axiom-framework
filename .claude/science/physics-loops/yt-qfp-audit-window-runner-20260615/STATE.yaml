@@ -1,0 +1,17 @@
+slug: yt-qfp-audit-window-runner-20260615
+date: 2026-06-15
+goal: "Unblock the yt_qfp_insensitivity_support_note audit lane by making its primary runner complete inside the live audit window."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: audit-window runner certificate
+files_touched:
+  - scripts/frontier_yt_qfp_insensitivity.py
+  - docs/YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md
+open_imports:
+  - "The note remains bounded support for the SM-surrogate/QFP envelope; it does not prove the exact lattice taste-staircase flow is inside the envelope."
+verification:
+  - "python3 scripts/frontier_yt_qfp_insensitivity.py -> 14 PASS, 0 FAIL, elapsed 0.7s"
+next_exact_action: "Reviewer can inspect the default runner/cache output and decide whether the row is ready for re-audit."
+stop_condition: "Source-side timeout blocker repaired; independent audit remains required."

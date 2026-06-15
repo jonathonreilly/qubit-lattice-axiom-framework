@@ -151,6 +151,16 @@ def main() -> int:
     check("S3 support note identifies hw=1 as A_1 + E", "hw = 1" in s3_text and "A_1 + E" in s3_text)
     check("block01 free-matrix no-go is compatible", "does not fix" in free_text and "Y_u" in free_text and "Y_d" in free_text)
     check("new note forbids retained mass closure", "not claim retained" in new_text and "`m_b`" in new_text)
+    check(
+        "new note routes carrier through retained-bounded three-generation authority",
+        "Carrier authority:" in new_text
+        and "retained-bounded `hw=1` triplet" in new_text
+        and "[`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md)" in new_text,
+    )
+    check(
+        "new note has no direct markdown dependency edge to the unaudited realization gate",
+        "(STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)" not in new_text,
+    )
 
     print()
     print("B. S3 permutation representation on the generation triplet")

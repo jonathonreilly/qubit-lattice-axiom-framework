@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "multisite_pauli_group_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
         "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
-        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02"
+        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
+        "multisite_pauli_group_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7c42635f39766c067e46a8d114f3a20a48d0723315fbdd7ad5e60dc8e4063ae7",
+      "note_hash": "99edff4d05d015a12a5da4fedd8cededb085f4cc439d9eae79d812dc4fc4002c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

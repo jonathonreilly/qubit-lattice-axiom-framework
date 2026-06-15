@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 920 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1498 |
+| unaudited | 1497 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
 | ~~audited_conditional~~ | 22 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,10 +62,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1355 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 46 |
-| `audited_failed` | 28 |
+| `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1815 |
+| `unaudited` | 1814 |
 
 | claim_type | count |
 |---|---:|
@@ -99,8 +99,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1009 | 64.48 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1596 | 136.64 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
@@ -1563,6 +1563,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
+| `grown_transfer_basin_targeted_repair_note_2026-06-04` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
@@ -9017,6 +9018,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The review-safe conclusion is to promote the frontier-delay proxy only and keep dynamic propagation as a static-control failure, not as a transport or cosmology statement.  _(class `C`)_
 - **chain closes:** True — The live runner recomputes the growing-frontier graph distances from the seed graph, reproduces the 3.000 -> 22.000 frontier-delay increase and positive slopes, and separately recomputes the weak, non-monotone visibility-drop table against a static graph control. The source note keeps the conclusion inside that computed graph-distance/static-control boundary.
 - **rationale:** The load-bearing computation is current with the live runner: frontier delay grows from 3.000 to 22.000 with frontier/RMS/width slopes +0.9325, +0.5981, and +0.2129, while the dynamic-propagation visibility drops are small and non-monotone across n_layers = 10, 15, 20. The runner constructs these quantities from graph snapshots, generated DAGs, propagation amplitudes, and frozen controls rather than hard-coding the contested conclusion. The source note's final claim is exactly the bounded safe read supported by the computation: retain graph-distance expansion and freeze dynamic-propagation repair as a no-go, with no transport, cosmology, unitarity, or field-theory extension.
+- **auditor confidence:** high
+
+### `grown_transfer_basin_targeted_repair_note_2026-06-04`
+
+- **Note:** [`GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite row packet for the declared H=0.5, K=5.0, BETA=0.8, NL=25, PW=8 setup over seeds 0-2 and the stated drift/restore rows, requiring signed-source and complex-action predicates on the same row.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-222516-0e4b07d7ad-grown_transfer_basin_targete`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The row values are recomputed by `_score_row(drift, restore)`, which builds the grown geometry through `scripts/gate_b_grown_joint_package.py`, propagates the signed-source and complex-action amplitudes, and applies the shared predicates.  _(class `C`)_
+- **chain closes:** False — The displayed predicate arithmetic is internally consistent with the printed row values. However `_score_row` calls `grow()` from `gate_b_grown_joint_package.py`, where the generated geometry uses `PW = 10`, while the audited note declares `PW = 8`; the stated finite claim is therefore not the computed finite claim.
+- **rationale:** Issue: the audited scope fixes `PW = 8`, but the load-bearing geometry generator fixes `PW = 10`, and the sweep runner's local `PW = 8` is not threaded into `grow()`. Why this blocks: the runner stdout verifies predicates for a different grown geometry than the note declares, so the bounded theorem is not established as written. Repair target: make `PW` an explicit shared parameter in the sweep and grow helper, or revise the note scope to the actually computed `PW = 10`, then refresh the SHA-pinned caches. Claim boundary until fixed: the packet supports only the runner-defined geometry, not the stated `PW = 8` row claim.
 - **auditor confidence:** high
 
 ### `grown_wavefield_companion_note`

@@ -7,6 +7,10 @@ modules consumed by the runner
 `scripts/frontier_one_parameter_reduced_shell_law.py`.
 **Status authority:** independent audit lane only. This wrapper note is
 audit-lane infrastructure for the corresponding helper modules.
+**Runner:**
+[`scripts/frontier_one_parameter_reduced_shell_law.py`](../scripts/frontier_one_parameter_reduced_shell_law.py)
+**Runner cache:**
+[`logs/runner-cache/frontier_one_parameter_reduced_shell_law.txt`](../logs/runner-cache/frontier_one_parameter_reduced_shell_law.txt)
 
 ## Purpose
 

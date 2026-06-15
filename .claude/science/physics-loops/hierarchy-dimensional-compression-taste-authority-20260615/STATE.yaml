@@ -1,0 +1,24 @@
+goal: "Repair hierarchy_dimensional_compression_note by replacing a stale unaudited taste-count dependency with retained bounded taste-count authorities."
+target_status: "audit-unblock"
+actual_current_surface_status: "open"
+trace_class: "direct_blocker_closure"
+reachability_to_target: "partially_closes"
+target_claim_id: "hierarchy_dimensional_compression_note"
+branch: "physics-loop/hierarchy-dimensional-compression-taste-authority-20260615"
+base: "origin/main"
+files_touched:
+  - "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md"
+  - "scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py"
+  - "logs/runner-cache/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.txt"
+  - ".claude/science/physics-loops/hierarchy-dimensional-compression-taste-authority-20260615/"
+open_imports:
+  - "The D=4 readout / effective-potential-density bridge remains open."
+  - "Independent audit must decide whether the repaired open-gate packet is clean at its narrowed scope."
+verification:
+  direct_runner: "SCORECARD: 8 pass, 0 fail out of 8"
+  cache_check: "new row-specific runner cache fresh"
+  audit_pipeline: "bash docs/audit/scripts/run_pipeline.sh passed with existing notices only; generated target row ready as unaudited with two retained taste-count deps."
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict passed with existing notices only."
+  generated_audit_outputs_committed: false
+next_exact_action: "Open PR; reviewer/audit loop can re-audit hierarchy_dimensional_compression_note."
+stop_condition: "The stale unaudited realization-gate edge is removed from this row; the remaining readout bridge is explicitly preserved as open."

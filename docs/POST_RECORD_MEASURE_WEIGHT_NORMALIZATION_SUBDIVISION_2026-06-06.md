@@ -1,11 +1,11 @@
 # Post-Record Measure/Weight/Normalization Subdivision
 
 **Date:** 2026-06-06
-**Type:** exact support / read-only audit companion
-**Claim type:** positive_theorem
-**Status:** exact-support source-side for measure/weight subdivision and
-finite normalization certificate semantics; audit_required_before_effective_retained=true;
-bare_retained_allowed=false.
+**Type:** bounded theorem / read-only subdivision certificate
+**Claim type:** bounded_theorem
+**Status:** bounded source-side support for a supplied finite-weight
+normalization lemma plus a read-only measure/weight subdivision certificate;
+audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
 **Cached log:**
@@ -20,8 +20,8 @@ with cache
 ## Result
 
 This block subdivides the `measure_weight_normalization` sub-bucket from the
-selector/dial subdivision and adds the finite normalization certificate
-interface:
+selector/dial subdivision and adds the finite supplied-weight normalization
+certificate interface:
 
 ```text
 supplied finite carrier
@@ -32,7 +32,13 @@ supplied finite carrier
 
 Normalized measure is not selected dial.
 
-On the current ledger snapshot:
+This is **not** a positive theorem from Record. The positive finite statement
+is only: if a finite carrier and nonnegative weights with positive total are
+already supplied, then division by the total gives a normalized finite
+measure. The row-classification portion is a read-only ledger subdivision
+certificate for the current snapshot, not a first-principles theorem.
+
+On the frozen 2026-06-07 exported ledger slice:
 
 | Measure/weight lane | Rows |
 |---|---:|
@@ -67,10 +73,10 @@ measure. It cannot certify that this measure is physically selected.
 ## Status certificate
 
 ```yaml
-actual_current_surface_status: exact-support
+actual_current_surface_status: bounded-support
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: "measure/weight rows are subdivided and finite supplied weights can be normalized, but normalization is not selector authority"
+conditional_surface_status: "finite supplied weights can be normalized and measure/weight rows are subdivided read-only; neither Record nor this note derives the weights, prior, selector, Born law, or production rule"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
@@ -105,10 +111,10 @@ The runner verifies:
 - the selector/dial helper source used to obtain the bucket is included in the
   packet;
 - bounded ledger-row export exists for the selected measure/weight rows;
-- the current `measure_weight_normalization` row count is `60`;
-- lane counts match the current 2026-06-13 snapshot;
+- the frozen `measure_weight_normalization` row count is `60`;
+- lane counts match the frozen 2026-06-07 exported snapshot;
 - representative rows are present in each lane;
-- the audit ledger hash is unchanged after the scan;
+- the audit ledger hash is unchanged after the optional live-ledger drift scan;
 - no audit verdict, audit-data write, retained/promoted claim, normalized-measure
   selector, generation/Koide dial selection, stable-setting dial selection,
   production-dynamics derivation, or Born-law derivation flag is set.

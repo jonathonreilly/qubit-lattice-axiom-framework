@@ -68,6 +68,11 @@ Its role is narrower: expose the one-hop support packets and exact finite-set
 composition so the upper-bound wrapper is auditable without a load-bearing
 textbook-import edge.
 
+It is deliberately **not** queued as a positive dimension-selection theorem.
+The theorem surface is the bounded source-graph repair plus the exact
+finite-set intersections displayed below; the parent dimension-selection
+theorem remains a separate audit target under its own scope.
+
 ## Runner Certificate
 
 The runner verifies:
@@ -88,10 +93,10 @@ SUMMARY: PASS=48 FAIL=0
 ## Status Certificate
 
 ```yaml
-actual_current_surface_status: exact-support
+actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-conditional_surface_status: "dependency-edge repair for the dimension upper-bound wrapper"
+conditional_surface_status: "bounded source-graph repair for the dimension upper-bound wrapper; not the parent dimension-selection theorem"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false

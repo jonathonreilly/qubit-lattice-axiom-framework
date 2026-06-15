@@ -105,6 +105,14 @@ def source_anchor_checks() -> None:
         and "bare_retained_allowed: false" in repair,
     )
     report(
+        "repair note is bounded source-graph scope, not parent theorem scope",
+        "not** queued as a positive dimension-selection theorem" in repair
+        and "bounded source-graph repair" in repair
+        and "actual_current_surface_status: bounded-support" in repair
+        and "parent dimension-selection" in repair
+        and "separate audit target" in repair,
+    )
+    report(
         "wrapper has 2026-06-08 repair section",
         "2026-06-08 dependency-edge source repair" in wrapper
         and "one-hop bounded support packets" in flat(wrapper),

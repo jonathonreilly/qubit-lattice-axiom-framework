@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 920 |
+| **retained_bounded** | 921 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1497 |
+| unaudited | 1496 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1355 |
+| `audited_clean` | 1356 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1814 |
+| `unaudited` | 1813 |
 
 | claim_type | count |
 |---|---:|
@@ -977,6 +977,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `omega_lambda_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ordered_lattice_packet_reidentification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -13794,6 +13795,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The dependency supplies b=-n_color a and b=-1 as retained-bounded inputs, and the source note explicitly treats SHIFT and NEUTRAL_BRANCH as hypotheses/conventions rather than derived physics. Within that narrowed scope, the anomaly cancellations are exact algebraic identities.
 - **rationale:** The theorem is narrow enough to avoid claiming a derivation of the branch, n_color=3, chirality, or SM identification. The runner hard-codes the SHIFT completion, but that is not a defect for this scoped claim because the note states it is checking a fixed algebraic completion under imposed SHIFT/branch assumptions. No external comparator or first-principles physics bridge is needed for the bounded theorem as written.
 - **auditor confidence:** high
+
+### `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`
+
+- **Note:** [`ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded helper-umbrella audit for the five named helper modules consumed by `scripts/frontier_one_parameter_reduced_shell_law.py` on the reduced R=4 sewing-shell surface.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-222902-e0c885b0d4-one_parameter_reduced_shell_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner-checked content is exact lattice arithmetic on seven point-Green columns, with the helpers supplying the input operators and the parent law following by linearity from identical normalized columns.  _(class `C`)_
+- **chain closes:** True — The primary runner source loads the five named helpers and computes the normalized point-column charge, radial, orbit-mode, shell-mean, and family agreement checks rather than merely printing constants. Given unit charge and identical normalized profiles for the basis columns, the one-parameter reduced law follows by linearity within the stated reduced surface.
+- **rationale:** The runner cache reports 7/7 passes, and the included source shows actual finite-lattice Green-column, sewing-shell, radial-average, and family-comparison computations. The constant `c_aniso` is computed from the reduced data, not imported as an expected value. The clean verdict is limited to the note's bounded helper-wrapper scope and does not promote the helpers to framework derivations or close the parent tensorial 3+1 blocker.
+- **auditor confidence:** medium
 
 ### `ordered_lattice_packet_reidentification_note`
 

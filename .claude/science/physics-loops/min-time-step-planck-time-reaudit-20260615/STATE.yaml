@@ -1,0 +1,24 @@
+goal: "Repair the audited-conditional Planck-time minimum-step row after its tick/edge companion became retained_bounded."
+target_status: "bounded-support re-audit"
+actual_current_surface_status: "proposed_promoted"
+trace_class: "direct_blocker_closure"
+reachability_to_target: "closes"
+target_claim_id: "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08"
+branch: "physics-loop/min-time-step-planck-time-reaudit-20260615"
+base: "origin/main"
+files_touched:
+  - "docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md"
+  - "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py"
+  - "logs/runner-cache/min_time_step_is_planck_time_from_scale_reference_primitive_runner.txt"
+  - ".claude/science/physics-loops/min-time-step-planck-time-reaudit-20260615/"
+open_imports:
+  - "Independent audit must decide whether explicit physical-c unit normalization is acceptable on this bounded theorem surface."
+  - "No audit verdicts or generated ledger outputs are edited by this PR."
+verification:
+  direct_runner: "TOTAL: PASS=14 FAIL=0"
+  cache_refresh: "1 runner refreshed; ok=1; timeout=0; nonzero_exit=0."
+  audit_pipeline: "bash docs/audit/scripts/run_pipeline.sh passed with existing notices only; re-audit required: 1; ready rows: 2."
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict passed with existing notices only."
+  generated_audit_outputs_committed: false
+next_exact_action: "Open PR for reviewer/audit-loop extraction."
+stop_condition: "Source hash change queues the repaired row for independent re-audit; no direct ledger retag."

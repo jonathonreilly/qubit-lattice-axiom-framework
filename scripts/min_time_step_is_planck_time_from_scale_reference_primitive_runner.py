@@ -6,7 +6,7 @@ checks the source packet needed for re-audit:
 
 * the registered scale-reference primitive exists;
 * the one-tick-one-edge companion packet and cache are present, and its current
-  ledger status is exposed rather than silently upgraded;
+  retained-bounded ledger status is exposed rather than silently assumed;
 * the physical-c normalization used by this row is explicit; and
 * with those supplied inputs, l_P / c equals t_P at the note's stated
   tolerance.
@@ -93,7 +93,7 @@ def main() -> int:
         scale_node.get("note", ""),
     )
 
-    section("A2. companion tick/edge packet exposed without status upgrade")
+    section("A2. companion tick/edge packet exposed as retained-bounded")
     ledger = json.loads(AUDIT_LEDGER.read_text(encoding="utf-8"))
     companion_row = ledger.get("rows", {}).get(COMPANION_ID, {})
     companion_cache_fields = cache_header(COMPANION_CACHE) if COMPANION_CACHE.exists() else {}
@@ -116,14 +116,14 @@ def main() -> int:
         "finite BFS/cone verifier marker",
     )
     check(
-        "current ledger keeps companion boundary visible",
-        companion_row.get("audit_status") == "audited_renaming"
-        and companion_row.get("effective_status") == "audited_renaming",
+        "current ledger exposes companion as retained-bounded authority",
+        companion_row.get("audit_status") == "audited_clean"
+        and companion_row.get("effective_status") == "retained_bounded",
         f"audit status {companion_row.get('audit_status')}; effective status {companion_row.get('effective_status')}",
     )
     check(
-        "source note does not call the companion retained",
-        "Current audit status for that companion is `audited_renaming`, not retained." in note_text,
+        "source note records the companion's retained-bounded status",
+        "Current audit status for that companion is `audited_clean`, with effective\n   status `retained_bounded`." in note_text,
         "boundary text present",
     )
 
@@ -147,13 +147,12 @@ def main() -> int:
         f"rel_err={rel_err:.3e}, tol={REL_TOL:.1e}",
     )
 
-    section("A4. conditional minimality boundary")
+    section("A4. bounded-support minimality boundary")
     check(
-        "source note is narrowed to conditional-support boundary",
-        "**Scope:** conditional-support boundary packet" in note_text
-        and "does not itself derive the record/update" in note_text
-        and "physical time\ncoordinate" in note_text,
-        "no unconditional positive theorem claim",
+        "source note is updated to bounded-support re-audit scope",
+        "**Scope:** bounded-support re-audit packet" in note_text
+        and "does not\nderive the physical value of `c`" in note_text,
+        "no physical-c derivation claim",
     )
     check(
         "no new axiom/admission/primitive is introduced",
@@ -161,10 +160,10 @@ def main() -> int:
         "uses existing scale-reference primitive and companion packet",
     )
     check(
-        "safe conclusion is conditional on the tick/time bridge",
-        "If the companion one-tick-one-edge row is" in note_text
-        and "accepted as the physical time-coordinate bridge" in note_text,
-        "explicit conditional wording",
+        "safe conclusion consumes the retained companion and explicit c conversion",
+        "The companion one-tick-one-edge row is now\n`retained_bounded`" in note_text
+        and "with the explicit SI `c` normalization this gives" in note_text,
+        "retained companion plus unit conversion",
     )
 
     print()

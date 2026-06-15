@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 920 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1501 |
+| unaudited | 1500 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 19 |
+| ~~audited_conditional~~ | 20 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1355 |
-| `audited_conditional` | 19 |
+| `audited_conditional` | 20 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1818 |
+| `unaudited` | 1817 |
 
 | claim_type | count |
 |---|---:|
@@ -1504,6 +1504,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -20701,6 +20702,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given the Hamming-weight Wilson shift 2rk and uniform staggered imaginary part ±2iu_0, each class contributes log((2rk+m)^2+4u_0^2), so V_taste^W(m)=-(1/2)Σ_k binomial(4,k)log((2rk+m)^2+4u_0^2).  _(class `A`)_
 - **chain closes:** True — The cited retained-bounded staircase note supplies the binomial multiplicities and Wilson shifts, while the retained-bounded Higgs parent supplies the uniform ±2iu_0 staggered spectrum. From those inputs the potential, derivatives, r=0 limit, and +60 r^2/u_0^4 coefficient follow by direct calculus and binomial moments.
 - **rationale:** The load-bearing mathematics is an algebraic closure over retained-bounded inputs, not a definition, comparator match, or tuned numerical readout. Independent differentiation of the displayed V_taste^W gives equations (2) and (3), and expanding f(x)=(x-u_0^2)/(x+u_0^2)^2 with Σ binomial(4,k)k^2=80 gives the stated +60 r^2/u_0^4 leading correction. The note explicitly confines itself to the symmetric-point bounded formula and does not claim the Wilson-shifted extremum, physical Higgs mass, Wilson coefficient, u_0 value, or +12% gap closure.
+- **auditor confidence:** high
+
+### `wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08`
+
+- **Note:** [`WILSON_M_H_TREE_AT_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Leading-order Wilson correction to the parent per-channel curvature scale at the Wilson-shifted extremum, under the uniform-N_taste=16 admission and symbolic Wilson coefficient r.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-221423-290ed2d380-wilson_m_h_tree_at_extremum_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Dividing the upstream Wilson-shifted total curvature magnitude 4/u_0^2 - 12 r^2/u_0^4 + O(r^4) by the uniform N_taste = 16 channel count gives (m_H_tree^W/v)^2 = (1/(4 u_0^2))(1 - 3 r^2/u_0^2) + O(r^4).  _(class `A`)_
+- **chain closes:** False — The local algebra from the cited extremum curvature to the displayed leading-order factor is correct. The chain does not close unconditionally because the Higgs-channel uniform N_taste=16 admission and the parent curvature-to-mass readout are explicitly non-derived boundary inputs in the restricted packet.
+- **rationale:** Issue: the Wilson r^2 coefficient, sign, square-root Taylor coefficient, and displayed matching numerics check out, but the result is a conditional curvature-scale calculation rather than a derived Higgs-pole mass. Why this blocks: the source imports the uniform-N_taste=16 channel admission and the parent D1 readout, both explicitly scoped as non-derived/open identifications. Repair target: derive or registry-admit the Higgs-channel readout and Wilson-coefficient normalization, then re-audit the same algebra with the physical scope separated from the diagnostic curvature scale. Claim boundary until fixed: the note supports the stated leading-order bounded formula under those admissions, not a closure of the Higgs mass gap.
+- **open / conditional deps cited:**
+  - `HIGGS_MASS_FROM_AXIOM_NOTE.md`
+  - `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`
 - **auditor confidence:** high
 
 ### `wilson_mu2_distance_sweep_note_2026-04-11`

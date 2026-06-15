@@ -51474,15 +51474,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08"
     },
     {
       "from": "repo.front_door_status",
       "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09"
     },
     {
       "from": "repo.front_door_status",
@@ -98990,9 +98990,9 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
         "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08",
         "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+        "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
@@ -99000,7 +99000,7 @@
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8a104053c94062b785605e0f0c5618a58763765cc2a20c9aa0710a330a620750",
+      "note_hash": "7121ff94b427b57511722ecf88f18f026d535d2fdee7ceda77450016167fc9de",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

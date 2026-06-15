@@ -2836,9 +2836,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_conditional",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_conditional",
       "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
       "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
       "expected_current_audit_status": "audited_clean",

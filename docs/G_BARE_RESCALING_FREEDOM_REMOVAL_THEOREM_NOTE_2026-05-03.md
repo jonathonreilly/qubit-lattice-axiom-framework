@@ -1,6 +1,7 @@
 # g_bare Rescaling Conditional Algebra Lemma
 
-**Date:** 2026-05-03. Repair narrowing: 2026-05-25.
+**Date:** 2026-05-03. Repair narrowing: 2026-05-25. Dependency-edge
+scope repair: 2026-06-15.
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Source status:** repair candidate for independent audit. This note does
@@ -32,7 +33,9 @@ Here:
   `Tr(T_a T_b) = delta_ab / 2`, supplied by the retained CL3 color algebra
   authority [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md).
 - **WM** is the scoped Wilson matching relation
-  `beta = 2 N_c / g_bare^2`.
+  `beta = 2 N_c / g_bare^2`. It is an accepted/supplied premise of
+  this bounded lemma unless and until a separate retained Wilson
+  action-surface theorem supplies it.
 - The Wilson action surface and the matching relation are scoped inputs to
   this lemma, not retained conclusions proved here.
 
@@ -60,6 +63,22 @@ Here:
 
 This is a class-A algebraic implication over the listed inputs.
 
+## 1a. Dependency-Edge Repair Boundary
+
+The audit-named missing edge is the Wilson action-surface rescaling rule.
+This note does not derive that rule from WM alone and does not ask the
+reader to infer it as a retained consequence. Instead, the rule
+`beta_new = c^2 beta_old` is a declared accepted/scoped premise of this
+bounded algebraic slice, paired with the explicitly checked canonical Gram
+rescaling. A future unconditioned rescaling-freedom-removal theorem must
+cite a retained Wilson action-surface rescaling authority; this row by
+itself remains only the conditional implication
+
+```text
+accepted Wilson action-surface rescaling + retained CN
+  =>  Gram -> c^2 Gram and beta -> c^2 beta.
+```
+
 ## 2. What Is Not Claimed
 
 This repair intentionally removes the stronger claims that caused the audit
@@ -74,7 +93,9 @@ blocker. The note does not claim:
 
 The only load-bearing retained authority cited by this note is the CL3 color
 algebra authority for the trace-normalized SU(3) carrier. Wilson matching is
-an explicit scoped assumption of the lemma.
+an explicit scoped assumption of the lemma, and the Wilson action-surface
+rescaling rule is an accepted/scoped premise rather than a retained conclusion
+proved here.
 
 ## 3. Runner Slice
 

@@ -1,0 +1,30 @@
+loop: gbare-dependency-edge-boundary-20260615
+date: 2026-06-15
+branch: physics-loop/gbare-dependency-edge-boundary-20260615
+target_claim_ids:
+  - g_bare_rescaling_freedom_removal_theorem_note_2026-05-03
+  - g_bare_constraint_vs_convention_theorem_note_2026-05-03
+target_notes:
+  - docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
+  - docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md
+target_runners:
+  - scripts/frontier_g_bare_rescaling_conditional_algebra_check.py
+  - scripts/frontier_g_bare_constraint_surface_check.py
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+current_step: source-edge boundary repair complete; verification and PR pending
+files_touched:
+  - docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
+  - docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md
+  - scripts/frontier_g_bare_rescaling_conditional_algebra_check.py
+  - scripts/frontier_g_bare_constraint_surface_check.py
+  - logs/runner-cache/frontier_g_bare_rescaling_conditional_algebra_check.txt
+  - logs/runner-cache/frontier_g_bare_constraint_surface_check.txt
+remaining_boundary:
+  - Wilson matching remains an accepted/scoped premise here
+  - beta=6 remains an accepted/scoped premise here
+  - Wilson action-surface rescaling remains an accepted/scoped premise here
+next_exact_action: run lint/cache checks, commit, push, and open PR

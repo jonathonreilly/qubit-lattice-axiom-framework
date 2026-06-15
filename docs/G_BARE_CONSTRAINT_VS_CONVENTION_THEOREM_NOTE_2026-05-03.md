@@ -1,6 +1,7 @@
 # g_bare Conditional Algebra Corollary
 
-**Date:** 2026-05-03. Repair narrowing: 2026-05-25.
+**Date:** 2026-05-03. Repair narrowing: 2026-05-25. Dependency-edge
+scope repair: 2026-06-15.
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Actual current-surface status:** conditional-support / bounded algebraic
@@ -29,7 +30,9 @@ Here:
   `Tr(T_a T_b) = delta_ab / 2`, supplied by the retained CL3 color algebra
   authority [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md).
 - **WM** is the Wilson matching relation
-  `beta = 2 N_c / g_bare^2`.
+  `beta = 2 N_c / g_bare^2`. It is an accepted/supplied premise of
+  this bounded corollary unless and until a separate retained Wilson
+  matching theorem is registered.
 - **beta=6** is an explicit scoped input to this corollary, not derived here.
 
 ### Current-surface firewall
@@ -67,6 +70,20 @@ surface, or the broader `g_bare` derivation.
 
 This is a class-A algebraic implication over the listed inputs.
 
+## 1a. Dependency-Edge Repair Boundary
+
+The audit-named missing edge is intentionally not hidden in this note.
+This source does **not** supply retained-grade authority for the Wilson
+matching relation or the scoped `beta = 6` action surface. Both are
+declared accepted/scoped premises for the local algebraic calculator above. A
+future unconditioned `g_bare = 1` theorem must cite a separate retained
+Wilson matching / beta-surface authority; this row by itself remains only
+the conditional implication
+
+```text
+accepted WM + accepted beta=6 + retained N_c=3  =>  g_bare^2 = 1.
+```
+
 ## 2. What Is Not Claimed
 
 This repair intentionally removes the stronger claims that caused the audit
@@ -83,7 +100,8 @@ blocker. The note does not claim:
 
 The only load-bearing retained authority cited by this note is the CL3 color
 algebra authority for the trace-normalized SU(3) carrier. The Wilson matching
-relation and `beta=6` are explicit scoped assumptions of the corollary.
+relation and `beta=6` are explicit accepted/scoped assumptions of the
+corollary.
 
 ## 3. Runner Slice
 

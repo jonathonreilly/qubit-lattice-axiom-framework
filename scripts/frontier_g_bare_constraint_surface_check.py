@@ -59,6 +59,15 @@ def main() -> int:
             f"source boundary marker present: {marker[:54]}",
             marker in normalized_note,
         )
+    check(
+        "source declares Wilson matching as accepted/supplied premise",
+        "accepted/supplied premise" in normalized_note
+        and "separate retained Wilson matching theorem" in normalized_note,
+    )
+    check(
+        "source declares beta=6 as accepted/scoped assumption",
+        "`beta = 6`" in note_text and "accepted/scoped premises" in normalized_note,
+    )
 
     N_c = Fraction(3)
     beta_local = Fraction(2) * N_c

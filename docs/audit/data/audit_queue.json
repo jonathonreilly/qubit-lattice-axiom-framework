@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 280,
-    "high": 277,
+    "high": 276,
     "leaf": 482,
     "medium": 465
   },
@@ -7992,32 +7992,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cpt_exact_note",
-        "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
-        "kinetic_isotropy_primitive"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.358,
-      "note_path": "docs/TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/tick_unitarity_from_spectrum_reflection_conjugacy_2026_06_10.py",
-      "transitive_descendants": 28
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -8069,6 +8043,40 @@
       "ready": true,
       "runner_path": "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py",
       "transitive_descendants": 24
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "kinetic_isotropy_primitive",
+        "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
+        "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
+        "lattice_nn_light_cone_note",
+        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+        "single_clock_uniqueness_scope_boundary_2026-06-06",
+        "cpt_exact_note",
+        "record_clock_rate_normalization_gate_2026-06-06",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.959,
+      "note_path": "docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py",
+      "transitive_descendants": 10
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16566,40 +16574,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kinetic_isotropy_primitive",
-        "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
-        "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
-        "lattice_nn_light_cone_note",
-        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
-        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
-        "single_clock_uniqueness_scope_boundary_2026-06-06",
-        "cpt_exact_note",
-        "record_clock_rate_normalization_gate_2026-06-06",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.959,
-      "note_path": "docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py",
-      "transitive_descendants": 10
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "signed_gravity_source_action_escape_hatch_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -16994,7 +16968,7 @@
       "deps": [
         "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
@@ -17002,12 +16976,12 @@
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "load_bearing_score": 10.2,
+      "load_bearing_score": 10.728,
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py",
-      "transitive_descendants": 51
+      "transitive_descendants": 52
     },
     {
       "audit_independence_required": "any_non_self",
@@ -32159,6 +32133,36 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05",
+        "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
+        "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+        "single_clock_uniqueness_scope_boundary_2026-06-06",
+        "minimal_axioms",
+        "kinetic_isotropy_primitive",
+        "kinetic_isotropy_primitive_irreducibility_support_2026-06-09"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/stack_spectral_transcription_weak_registration_2026_06_11.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -43668,36 +43672,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05",
-        "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
-        "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
-        "single_clock_uniqueness_scope_boundary_2026-06-06",
-        "minimal_axioms",
-        "kinetic_isotropy_primitive",
-        "kinetic_isotropy_primitive_irreducibility_support_2026-06-09"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/stack_spectral_transcription_weak_registration_2026_06_11.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "staggered_chirality_selector_enumerator_narrow_theorem_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -45294,6 +45268,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 72,
-  "total_pending": 1504
+  "ready_count": 73,
+  "total_pending": 1503
 }

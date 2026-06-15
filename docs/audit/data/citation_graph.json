@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
         "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
         "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08",
         "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
-        "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
+        "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "60bfeb48cb7e3a48021053cf3fd4f9e79d4d149df03f51ef141b44a2dadd5351",
+      "note_hash": "8a104053c94062b785605e0f0c5618a58763765cc2a20c9aa0710a330a620750",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

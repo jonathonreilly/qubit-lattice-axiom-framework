@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 919 |
+| **retained_bounded** | 920 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1502 |
+| unaudited | 1501 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1354 |
+| `audited_clean` | 1355 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1819 |
+| `unaudited` | 1818 |
 
 | claim_type | count |
 |---|---:|
@@ -1358,6 +1358,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-26` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -19369,6 +19370,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At BZ corners p_mu in {0, pi}, m(p)=sum_mu(1-cos p_mu)=2 hw(p), so the eight corners split as 1+3+3+1 and hw=1 is exactly the threefold lightest nonzero-mass orbit, with the M_3(C)/no-proper-quotient part imported from the direct audited dependency.  _(class `A`)_
 - **chain closes:** True — Independent exact enumeration gives 8 corners, degeneracies [1,3,3,1], masses 0,2,4,6 by Hamming weight, and hw=1 as the unique lightest nonzero orbit. The admitted staggered-Dirac/Wilson surface is present in the Tier-A registry, and the direct dependency's scoped algebra result supplies only the finite C^3/M_3(C) no-proper-quotient statement without importing physical-species or SM-generation claims.
 - **rationale:** The spectral calculation is a finite algebraic identity on the explicitly admitted bounded surface, not a tuned numerical comparator or a physical-generation identification. The runner's math checks agree with an independent exact enumeration, while its source-firewall checks confirm the note excludes no-rooting, physical lattice necessity, CKM, chirality, and new-axiom claims. The no-go/wall discipline gate does not expose an inflated wall set: there is a single registered Tier-A admitted surface, the no-proper-quotient residual exactly matches the direct dependency's audited scope, and all broader negative/physical claims are explicitly out of scope.
+- **auditor confidence:** high
+
+### `tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10`
+
+- **Note:** [`TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md`](../../docs/TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional characterization: an invertible contraction admits an isometric or anti-isometric spectrum-reflection conjugacy iff it is unitary; applied to the realized strict tick only conditional on the stated C-reading transport and N-reading envelope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-220948-a596f30407-tick_unitarity_from_spectrum`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The inverse-conjugacy relation gives ||T^{-1}|| = ||T|| <= 1, so ||x|| = ||T^{-1}Tx|| <= ||Tx|| <= ||x|| for every x, making T an isometry and hence unitary in finite dimension.  _(class `A`)_
+- **chain closes:** True — The finite-dimensional theorem closes by operator-norm algebra, and the converse follows from the spectral theorem for unitaries. The strict-tick transport and channel envelope are explicitly scoped as named premises, not derived outputs.
+- **rationale:** The load-bearing step is a genuine algebraic closure, not a renaming or numerical match. The runner source performs substantive finite-matrix norm, witness, transport, and scope checks rather than hard-coding the conclusion, and the analytic norm-chain proof independently verifies the key implication. The clean result is bounded to the stated hypotheses and does not derive the C-reading or N-reading themselves.
 - **auditor confidence:** high
 
 ### `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`

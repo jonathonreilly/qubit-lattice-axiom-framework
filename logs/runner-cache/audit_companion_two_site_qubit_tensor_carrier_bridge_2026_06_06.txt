@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_two_site_qubit_tensor_carrier_bridge_2026_06_06.py
-runner_sha256: acdf8c96a23514ad899b02f01a694e9ae333b25219318267840427c095a6d8f9
+runner_sha256: 2b058f23aa3e5352efa25dd549929acacc620586bd8488051a3ec86d2b054c0d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.30
+elapsed_sec: 0.41
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,7 +11,6 @@ Two-site qubit tensor-carrier bridge
 surface: generated C^2 tensor C^2 / M_2(C) tensor M_2(C)
 ========================================================================================
 [PASS] dependency cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02 effective_status is retained (got='retained')
-[PASS] dependency multisite_pauli_group_theorem_note_2026-05-02 effective_status is retained (got='retained')
 [PASS] dependency tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25 effective_status is retained (got='retained')
 [PASS] dependency tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03 effective_status is retained_no_go (got='retained_no_go')
 [PASS] dim_C H_x = 2
@@ -27,7 +26,7 @@ surface: generated C^2 tensor C^2 / M_2(C) tensor M_2(C)
 [PASS] generated complex two-qubit surface is locally tomographic by dimension count
 [PASS] retained no-go boundary visible: locality alone is not the proof route
 ========================================================================================
-SUMMARY: TWO-SITE QUBIT TENSOR BRIDGE PASS=16 FAIL=0
+SUMMARY: TWO-SITE QUBIT TENSOR BRIDGE PASS=15 FAIL=0
 ========================================================================================
 
 ----- stderr -----

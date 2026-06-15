@@ -1,12 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_local_tomography_from_complex_structure_exact.py
-runner_sha256: c8be5d062fcbd9b3c3936d964c8385b9b3dbe2ba1be115b0630a2e6f683cc735
+runner_sha256: 847aa7ae305156f61a6a307ebc94cb83860cb0f030dfb8784f73d7329b7c5783
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
-PASS - M0 two-site tensor-carrier bridge is present and names generated M_4(C)
+PASS - M0 dependency cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02 effective_status is retained
+PASS - M0 dependency tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25 effective_status is retained
+PASS - M0 dependency tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03 effective_status is retained_no_go
 PASS - M0b retained no-go boundary remains visible: locality alone is not the proof route
 PASS - M1 dim_R(M_n(C)_sa) = n^2 = dim_C(M_n(C)) for n=2,3,4
 PASS - M1b M = H1 + i H2 with H1,H2 self-adjoint
@@ -16,8 +18,8 @@ PASS - M4 shared scalar i: (iI2) tensor I2 = I2 tensor (iI2) = iI4
 PASS - M5 Pauli products span M_4(C): 16 products, rank 16
 PASS - M6 sigma1 sigma2 sigma3 = i I2
 
-9 PASS, 0 FAIL
-Result: on the generated ordinary shared-scalar complex two-site tensor carrier, complex matrix products are locally tomographic by dimension count. The carrier route is supplied by the bridge note; this runner does not derive tensor composition from locality alone.
+11 PASS, 0 FAIL
+Result: on the generated ordinary shared-scalar complex two-site tensor carrier, complex matrix products are locally tomographic by dimension count. The carrier route is supplied by retained direct finite-block inputs; this runner does not derive tensor composition from locality alone.
 
 ----- stderr -----
 

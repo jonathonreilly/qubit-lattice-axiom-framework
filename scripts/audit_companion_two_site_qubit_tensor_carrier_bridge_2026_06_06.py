@@ -39,7 +39,6 @@ def check_dependency_statuses() -> None:
     rows = ledger_rows()
     expected = {
         "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
-        "multisite_pauli_group_theorem_note_2026-05-02": "retained",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained",
         "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "retained_no_go",
     }

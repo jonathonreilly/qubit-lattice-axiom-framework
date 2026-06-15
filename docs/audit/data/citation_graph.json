@@ -51474,7 +51474,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08"
+      "to": "pmns_graph_first_axis_alignment_note"
     },
     {
       "from": "repo.front_door_status",
@@ -51494,15 +51494,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
       "to": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "pmns_graph_first_axis_alignment_note"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
+        "pmns_graph_first_axis_alignment_note",
         "su3_adjoint_casimir_theorem_note_2026-05-02",
         "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
         "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
         "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+        "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
-        "pmns_graph_first_axis_alignment_note"
+        "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f97ebe07042d9a84d5550c8d3b78672dd1ee2d6b9b45fcad7f69623d919fb266",
+      "note_hash": "15133eda6a2646d911d3664a1839d4742fb1bf557ced37df406badec865f7793",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

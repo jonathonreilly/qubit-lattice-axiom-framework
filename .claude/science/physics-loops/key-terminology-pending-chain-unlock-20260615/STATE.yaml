@@ -1,0 +1,26 @@
+loop: key-terminology-pending-chain-unlock-20260615
+mode: run
+objective: "Remove non-load-bearing KEY_TERMINOLOGY citation edges that strand audited-clean rows at retained_pending_chain."
+target_status: best-honest-status
+actual_current_surface_status: methodology
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: source_metadata_edge_repair
+files_touched:
+  - docs/GRAVITY_SIGN_BOTTOM_IS_LEADING_ORDER_DECOUPLES_FROM_LV_REAL_BOTTOM_IS_EMERGENT_METRIC_NARROW_THEOREM_NOTE_2026-06-08.md
+  - docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md
+  - docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md
+  - docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md
+  - docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md
+  - docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md
+  - docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md
+open_imports: []
+verification:
+  - "All seven named runners passed before and after edit."
+  - "rg confirmed no KEY_TERMINOLOGY/key_terminology link remains in the seven notes."
+  - "Local audit pipeline completed; simulated re-audit required hash changes: 7."
+  - "Local retained_pending_chain count: 20 -> 13; ready queue: 1 -> 8."
+  - "Generated audit/publication/front-door files restored before commit."
+next_exact_action: "Independent audit should re-audit the seven ready source rows; after real_diagonal_source... lands clean, observable_principle_from_axiom_note should have one fewer blocker."
+stop_condition: "PR opened with source-only metadata-edge repair."

@@ -1,9 +1,5 @@
 # Conditional Order Separation for Gravity-Sign LV Corrections
 
-> **Key terms used in this doc** are indexed A-Z at
-> [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the
-> canonical source-of-truth doc.
-
 **Date:** 2026-06-08
 **Type:** bounded conditional order-counting theorem
 **Claim type:** bounded_theorem

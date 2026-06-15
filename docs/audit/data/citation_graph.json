@@ -51474,7 +51474,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lorentz_kernel_positive_closure_note"
+      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
     },
     {
       "from": "repo.front_door_status",
@@ -98990,7 +98990,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "lorentz_kernel_positive_closure_note",
+        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
         "quark_route2_exact_time_coupling_note_2026-04-19",
@@ -99000,7 +99000,7 @@
         "axiom_first_kms_condition_theorem_note_2026-05-01"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bd6c85add4b93c6d6cf59823cf11d892bb96911da51760f01680dc18cb596139",
+      "note_hash": "43fe4d62c9b8751fda8e82a60c60e653ff04c1e3e0f55de99164ac5c3380be5f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

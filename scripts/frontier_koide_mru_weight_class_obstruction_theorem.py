@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Frontier runner - Koide MRU weight-class obstruction and quotient resolution.
+Frontier runner - Koide MRU unreduced-carrier weight-class obstruction.
 
 Companion to
 `docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`.
@@ -10,15 +10,16 @@ What this runner certifies:
          kappa = 2 mu / nu.
      In particular, the unreduced determinant carrier has weights (1,2) and
      lands at kappa = 1.
-  2. If the scalar charged-lepton lane is supplied as an SO(2)-quotient of
-     the real doublet, then the two-slot carrier (rho_+, rho_perp) is the
-     exact quotient algebra.
-  3. On that supplied reduced carrier, the same log-volume law is
-     automatically equal-weight and lands at MRU:
+  2. The reduced SO(2)-quotient algebra is kept as a non-claim appendix:
+     if an independent future theorem supplies that physical quotient, then
+     the two-slot carrier (rho_+, rho_perp) has the displayed algebra.
+  3. On that separately supplied reduced carrier, the same log-volume law
+     would be equal-weight and land at MRU:
          E_+ = E_perp <=> kappa = 2.
 
 It does not derive the physical SO(2)-quotient bridge or decouple the
-cos(3 arg b) channel.
+cos(3 arg b) channel, and it does not claim the reduced carrier as a theorem
+of this note.
 """
 
 from __future__ import annotations
@@ -90,7 +91,7 @@ def part1_unreduced_obstruction() -> None:
 
 
 def part2_exact_quotient() -> None:
-    print("\n=== Part 2: conditional SO(2)-quotient algebra ===")
+    print("\n=== Part 2: non-claim appendix: SO(2)-quotient algebra ===")
     r0, r1, r2, theta = sp.symbols("r0 r1 r2 theta", real=True)
     r1p = sp.cos(theta) * r1 - sp.sin(theta) * r2
     r2p = sp.sin(theta) * r1 + sp.cos(theta) * r2
@@ -113,7 +114,7 @@ def part2_exact_quotient() -> None:
 
 
 def part3_reduced_resolution() -> None:
-    print("\n=== Part 3: reduced-carrier resolution ===")
+    print("\n=== Part 3: non-claim appendix: reduced-carrier calculation ===")
     rho_p, rho_perp, e_tot, lam = sp.symbols("rho_p rho_perp e_tot lam", positive=True, real=True)
     lagrangian = sp.log(rho_p) + sp.log(rho_perp) - lam * (rho_p**2 + rho_perp**2 - e_tot)
     sol = sp.solve(
@@ -145,7 +146,7 @@ def part3_reduced_resolution() -> None:
 
 
 def part4_resolution_summary() -> None:
-    print("\n=== Part 4: obstruction plus resolution ===")
+    print("\n=== Part 4: obstruction plus non-claim appendix ===")
     alpha, beta = sp.symbols("alpha beta", positive=True, real=True)
     d_reduced = sp.diag(alpha, beta)
     check("Reduced two-slot carrier has det = alpha beta", sp.simplify(d_reduced.det() - alpha * beta) == 0)
@@ -161,12 +162,14 @@ def part5_source_boundary() -> None:
     required = [
         "**Claim type:** bounded_theorem",
         "**Status authority:** independent audit lane.",
+        "**2026-06-15 scope lock:**",
         "**No-promotion statement:**",
-        "This source does not derive that object",
-        "conditional support",
+        "the re-audit target is only the exact unreduced",
+        "not part of the theorem claim",
+        "non-claim future-route appendix",
         "cos(3 arg b)",
         "**not** derive the physical quotient bridge",
-        "physical quotient bridge is supplied",
+        "not a theorem claim of this note",
     ]
     for token in required:
         check(f"source note contains boundary phrase: {token!r}", token in text)
@@ -192,10 +195,10 @@ def main() -> int:
 
     print("\nInterpretation:")
     print("  The old obstruction is still exact on the unreduced 3x3 carrier.")
-    print("  The quotient calculation is conditional: if an independently audited bridge supplies")
-    print("  the SO(2) quotient, the non-trivial real doublet reduces to one scalar")
-    print("  slot rho_perp. After that supplied reduction, the standard log-volume")
-    print("  law is the equal-weight MRU law automatically.")
+    print("  The quotient calculation is a non-claim appendix: if an independently")
+    print("  audited bridge supplies the SO(2) quotient, the non-trivial real")
+    print("  doublet reduces to one scalar slot rho_perp. After that separate")
+    print("  bridge, the standard log-volume law is the equal-weight MRU law.")
     print("  The missing science remains the physical quotient / cos(3 arg b)")
     print("  decoupling bridge.")
     print(f"\nclassified_pass={PASS} fail={FAIL}")

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_mru_weight_class_obstruction_theorem.py
-runner_sha256: cce4518610583d3659ba351c89a92c4e6bbdc6575be417f3f8b914fafe7c5f3a
+runner_sha256: db7de14ba6500b622b0077398a7314587c6efb984e3ca9e42f0603da29f902e5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 
@@ -20,33 +20,35 @@ status: ok
 [A] PASS: det(alpha P_+ + beta P_perp) = alpha beta^2
 [A] PASS: Unreduced weight pair (1,2) lands at kappa = 1
 
-=== Part 2: conditional SO(2)-quotient algebra ===
+=== Part 2: non-claim appendix: SO(2)-quotient algebra ===
 [A] PASS: The doublet block power is SO(2)-orbit invariant
 [A] PASS: If the scalar lane quotients the ordered pair, the radius is invariant
 [A] PASS: Reduced carrier coordinates satisfy rho_+^2 = E_+
 [A] PASS: Reduced carrier coordinates satisfy rho_perp^2 = E_perp
 [A] PASS: On the quotient carrier kappa = 2 E_+ / E_perp
 
-=== Part 3: reduced-carrier resolution ===
+=== Part 3: non-claim appendix: reduced-carrier calculation ===
 [A] PASS: Reduced carrier has a unique positive log-volume stationary point  (sol=[{lam: 1/e_tot, rho_p: sqrt(2)*sqrt(e_tot)/2, rho_perp: sqrt(2)*sqrt(e_tot)/2}])
 [A] PASS: Reduced stationary point is rho_+ = rho_perp = sqrt(E_tot/2)
 [A] PASS: The reduced stationary point is exactly E_+ = E_perp
 [A] PASS: Pullback gives a^2 = 2 |b|^2
 [A] PASS: So the reduced carrier lands at kappa = 2
 
-=== Part 4: obstruction plus resolution ===
+=== Part 4: obstruction plus non-claim appendix ===
 [A] PASS: Reduced two-slot carrier has det = alpha beta
 [A] PASS: On the reduced carrier log|det| = log alpha + log beta
 
 === Part 5: source-boundary discipline ===
 [A] PASS: source note contains boundary phrase: '**Claim type:** bounded_theorem'
 [A] PASS: source note contains boundary phrase: '**Status authority:** independent audit lane.'
+[A] PASS: source note contains boundary phrase: '**2026-06-15 scope lock:**'
 [A] PASS: source note contains boundary phrase: '**No-promotion statement:**'
-[A] PASS: source note contains boundary phrase: 'This source does not derive that object'
-[A] PASS: source note contains boundary phrase: 'conditional support'
+[A] PASS: source note contains boundary phrase: 'the re-audit target is only the exact unreduced'
+[A] PASS: source note contains boundary phrase: 'not part of the theorem claim'
+[A] PASS: source note contains boundary phrase: 'non-claim future-route appendix'
 [A] PASS: source note contains boundary phrase: 'cos(3 arg b)'
 [A] PASS: source note contains boundary phrase: '**not** derive the physical quotient bridge'
-[A] PASS: source note contains boundary phrase: 'physical quotient bridge is supplied'
+[A] PASS: source note contains boundary phrase: 'not a theorem claim of this note'
 [A] PASS: source note omits old overclaim phrase #1
 [A] PASS: source note omits old overclaim phrase #2
 [A] PASS: source note omits old overclaim phrase #3
@@ -56,14 +58,14 @@ status: ok
 
 Interpretation:
   The old obstruction is still exact on the unreduced 3x3 carrier.
-  The quotient calculation is conditional: if an independently audited bridge supplies
-  the SO(2) quotient, the non-trivial real doublet reduces to one scalar
-  slot rho_perp. After that supplied reduction, the standard log-volume
-  law is the equal-weight MRU law automatically.
+  The quotient calculation is a non-claim appendix: if an independently
+  audited bridge supplies the SO(2) quotient, the non-trivial real
+  doublet reduces to one scalar slot rho_perp. After that separate
+  bridge, the standard log-volume law is the equal-weight MRU law.
   The missing science remains the physical quotient / cos(3 arg b)
   decoupling bridge.
 
-classified_pass=35 fail=0
+classified_pass=37 fail=0
 
 ----- stderr -----
 

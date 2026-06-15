@@ -1,0 +1,17 @@
+slug: koide-mru-obstruction-scope-20260615
+date: 2026-06-15
+goal: "Repair the audited_conditional Koide MRU row by scoping the claim to the exact unreduced-carrier obstruction accepted by audit."
+target_status: bounded-support
+actual_current_surface_status: proposed_promoted
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: source-scope repair
+files_touched:
+  - docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md
+  - scripts/frontier_koide_mru_weight_class_obstruction_theorem.py
+  - logs/runner-cache/frontier_koide_mru_weight_class_obstruction_theorem.txt
+verification:
+  - "python3 scripts/frontier_koide_mru_weight_class_obstruction_theorem.py -> classified_pass=37 fail=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_mru_weight_class_obstruction_theorem.py --check-only --allow-non-main -> fresh"
+next_exact_action: "Reviewer/auditor should re-audit the row as the exact unreduced-carrier obstruction only."
+stop_condition: "Conditional SO(2) quotient route is removed from the current theorem claim."

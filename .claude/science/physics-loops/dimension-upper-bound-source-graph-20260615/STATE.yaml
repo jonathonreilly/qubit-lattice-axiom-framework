@@ -1,0 +1,18 @@
+loop_slug: dimension-upper-bound-source-graph-20260615
+current_goal: "Repair the dimension upper-bound dependency-edge row by narrowing it from theorem-queue language to a bounded source-graph repair."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: source_graph_repair_scope_correction
+files_touched:
+  - docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md
+  - scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py
+  - logs/runner-cache/dimension_upper_bound_dependency_edge_repair_2026_06_08.txt
+open_imports:
+  - "Parent dimension-selection theorem remains audit-owned and is not proved by this repair."
+  - "Full Bertrand closed-orbit theorem and atomic stability remain bounded support/context, not newly derived here."
+review_findings: []
+pr_status: pending
+next_exact_action: "Open a review PR and ask reviewer/audit lane to re-audit this as source-graph repair, not a positive theorem."
+stop_condition: "Branch PR is open with runner/cache verification and no audit verdict edits."

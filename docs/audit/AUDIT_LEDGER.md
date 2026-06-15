@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 214 |
+| **retained** | 215 |
 | **retained_no_go** | 209 |
 | **retained_bounded** | 926 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1484 |
+| unaudited | 1483 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1364 |
+| `audited_clean` | 1365 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1801 |
+| `unaudited` | 1800 |
 
 | claim_type | count |
 |---|---:|
@@ -580,6 +580,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -8083,6 +8084,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** `F = [[1,a,0],[1,b,c],[1,d,e]]` with `Delta = a c - a e + b e - c d != 0`, so the displayed `Delta`-denominator matrix gives the exact inverse reconstruction map `a = F^{-1} Z`.  _(class `A`)_
 - **chain closes:** True — Independent recomputation from low-representation SU(3) character formulas gives the displayed radical matrix, `det(F)=Delta≈-10.81032169397061`, `c>0`, `e<0`, and the displayed inverse multiplies `F` to the identity. The beta-side values `Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C)` are explicitly outside the audited closure.
 - **rationale:** The reconstruction claim is a genuine algebraic refinement of the retained three-sample reconstruction theorem, not a numerical fit or a definition substitution. The displayed radical entries reduce from the named holonomies by standard half-angle identities, the inverse formula is the general inverse of the displayed `3 x 3` matrix, and the no-collapse corollary is exactly the linear-algebra consequence of invertibility. The conditional beta=6 seam authority is cited only to delimit the still-open evaluation problem, not as a premise for the radical reconstruction.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Adjoint-only first-symmetric retained positive completion of the named W_A, W_B, W_C local Wilson triple, with a^loc_(0,0) and a^loc_(1,0) fixed and only the adjoint coordinate repaired.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-232131-0be51e41e8-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Along a(t) = (a^loc_(0,0), a^loc_(1,0), a^loc_(1,1) + t), cone membership is equivalent to t >= -a^loc_(1,1), with unique minimum t = -a^loc_(1,1).  _(class `A`)_
+- **chain closes:** True — The retained parent supplies F, Z^loc, the reconstructed coordinates, and the coordinatewise cone-membership criterion. Since a^loc_(0,0)>0, a^loc_(1,0)>0, and a^loc_(1,1)<0, the adjoint-only half-line closes algebraically at t=-a^loc_(1,1), and F a^min gives the stated Z^min values.
+- **rationale:** The cited parent is supplied as retained_no_go and fixes the local Wilson triple, radical sample matrix, inverse reconstruction coordinates, and cone-membership test. The primary/helper sources compute those inputs rather than merely printing constants, and an independent direct 3x3 numerical inversion from the displayed radicals and parent Z^loc reproduces a^loc, r_min, Z^min, and the stated signs/directions. The clean scope is only the adjoint-only minimal completion; it does not audit realization by the true beta=6 spatial environment or any global minimization outside that half-line.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`

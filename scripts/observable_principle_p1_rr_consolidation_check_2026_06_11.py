@@ -641,7 +641,7 @@ ledger = read(os.path.join(REPO, "docs", "audit", "AUDIT_LEDGER.md"))
 rows = {
     "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "**retained_bounded**",
     "record_function_finite_sector_algebra_2026-06-05": "**retained**",
-    "record_unbounded_finite_additivity_schema_2026-06-06": "**retained**",
+    "record_unbounded_finite_additivity_schema_2026-06-06": "~~audited_conditional~~",
     "post_record_clock_rate_interface_2026-06-06": "**retained_no_go**",
     "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "**retained_no_go**",
     "observable_principle_record_scalar_map_no_go_note_2026-06-05": "**retained_no_go**",

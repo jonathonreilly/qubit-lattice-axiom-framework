@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py
-runner_sha256: 054d6d67aec1683728750d2f1c83be0e597d7e05214579899282ff48d6444b5c
+runner_sha256: b5940762e750d0a2f7b8d1ef05502857edf00dee12c6da7a4cc0d3b3f0403a89
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.77
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 == T1: the consolidation equivalence — exhaustive finite-model verification ==

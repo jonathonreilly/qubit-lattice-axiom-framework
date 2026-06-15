@@ -1,0 +1,30 @@
+slug: record-unbounded-supplied-premise-20260615
+goal: "Repair the Record unbounded finite-additivity row by making all downstream uses conditional on supplied nonzero disjoint records."
+target_status: bounded-support
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+target_claim_id: record_unbounded_finite_additivity_schema_2026-06-06
+active_route: "Keep the exact finite-additivity algebra but firewall the unbounded lift and downstream capacity consumers to the supplied-record premise."
+hard_residual: "Record does not derive produced records, supplied readout context, production dynamics, rate, probability, dial selection, or unbounded availability."
+files_touched:
+  - docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md
+  - scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py
+  - docs/OBSERVABLE_PRINCIPLE_P1_REGISTRATION_REALIZATION_PIN_CONSOLIDATION_NARROW_THEOREM_NOTE_2026-06-11.md
+  - scripts/observable_principle_p1_cap_k_check_2026_06_10.py
+  - scripts/observable_principle_p1_br_license_check_2026_06_10.py
+  - scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py
+open_imports:
+  - arbitrarily large finite nonzero produced record collections
+  - supplied readout context
+  - record-production dynamics and rate/capacity law
+no_go_routes:
+  - "Treating the unbounded Record schema as bare retained authority for produced records is rejected."
+verification:
+  - "python3 scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py -> SCORECARD: PASS=35 FAIL=0"
+  - "python3 scripts/observable_principle_p1_cap_k_check_2026_06_10.py -> TOTAL: PASS=31 FAIL=0"
+  - "python3 scripts/observable_principle_p1_br_license_check_2026_06_10.py -> TOTAL: PASS=31 FAIL=0"
+  - "python3 scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py -> TOTAL: PASS=30 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --check-only <four modified runners> -> fresh"
+  - "python3 scripts/precompute_audit_runners.py --runners <four modified runners> --check-only --allow-non-main -> fresh"
+next_exact_action: "Reviewer should re-audit the Record row and downstream consumers for supplied-premise hygiene."
+stop_condition: "PR opened for review; no audit data edited."

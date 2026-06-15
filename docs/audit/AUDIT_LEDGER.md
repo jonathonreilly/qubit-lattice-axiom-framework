@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 215 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 926 |
+| **retained_bounded** | 927 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1483 |
+| unaudited | 1482 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1365 |
+| `audited_clean` | 1366 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1800 |
+| `unaudited` | 1799 |
 
 | claim_type | count |
 |---|---:|
@@ -939,6 +939,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moving_source_cross_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `multisite_pauli_group_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -13281,6 +13282,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The centered quadrupole keeps the centroid essentially pinned but opens a real width/tidal channel, and the width response grows with quadrupole separation.  _(class `C`)_
 - **chain closes:** True — The live probe reproduces the frozen controls and finite quadrupole rows: same-site and neutral controls are zero, the dipole mainly shifts centroid, and the centered quadrupoles give near-zero centroid change with positive width response at a = 1.0 and a = 2.0. The source explicitly excludes full tensor gravity and a general multipole theory.
 - **rationale:** The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration.
+- **auditor confidence:** high
+
+### `multisite_pauli_group_theorem_note_2026-05-02`
+
+- **Note:** [`MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the stipulated finite tensor product H_N = (C^2)^{⊗N}, the sitewise Pauli-generated group has order 4^{N+1}, scalar center Z_4, quotient (Z_2 x Z_2)^N, element orders dividing 4, and minimal generator count 2N+1; no physical Fock-carrier identification is audited or used.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-232434-1fb3ad634f-multisite_pauli_group_theore`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Every element has a unique global phase in {±1, ±i} times one of four Pauli-sector choices at each site, and [P_N,P_N] = {±I_N}, giving |P_N| = 4·4^N and abelianization rank 2N+1.  _(class `A`)_
+- **chain closes:** True — The theorem closes by exact Pauli normal-form algebra on the stipulated tensor product. The cited Cl(3) note is retained-grade algebraic context only, and its excluded physical carrier bridge is not imported.
+- **rationale:** Manual normal-form checking confirms the global Z_4 phase is shared across all sites, while the N tensor Pauli sectors contribute 4^N independent cosets. The center, quotient, central extension, and g^4 = I_N follow from the same normal form and local Pauli commutation signs. The minimal generator count closes because the commutator subgroup is exactly {±I_N}, so the abelianization is elementary abelian of order 2^{2N+1}; this gives a generator-type-independent lower bound matched by {X_x,Z_x} plus one global phase. The runner source performs genuine finite matrix/group enumeration for its checked cases and does not import an external comparator or tuned value.
 - **auditor confidence:** high
 
 ### `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`

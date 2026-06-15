@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "multisite_pauli_group_theorem_note_2026-05-02"
     },
     {
@@ -51490,6 +51486,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08"
     },
     {
@@ -51498,11 +51498,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
+      "to": "pmns_tm2_residual_consequence_bounded_note_2026-05-26"
     },
     {
       "from": "repo.front_door_status",
-      "to": "pmns_tm2_residual_consequence_bounded_note_2026-05-26"
+      "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
         "multisite_pauli_group_theorem_note_2026-05-02",
         "gellmann_completeness_theorem_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
+        "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19",
         "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08",
         "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
-        "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-        "pmns_tm2_residual_consequence_bounded_note_2026-05-26"
+        "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
+        "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0f4d8cf514744849f1ca526e72a2bbcfe5d065ed6f52d9eca78bfb81607853e2",
+      "note_hash": "5bac3239cb4e8f650b60a58f042e81d7b8fc98590bfe9d58e27dd4c61e00a543",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

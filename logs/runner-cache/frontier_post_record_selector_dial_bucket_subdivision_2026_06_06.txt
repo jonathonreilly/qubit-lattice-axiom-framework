@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
-runner_sha256: dcd08de468cfcecacd80afe3d7d0126b4a1dff4a52ba5d2fcec16085bb0d5cc6
+runner_sha256: 19eae8985c58f50248a8579f5a10a90311dbf192c462cff13c07d4959efda581
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.30
+elapsed_sec: 1.06
 status: ok
 ----- stdout -----
 
@@ -17,7 +17,7 @@ PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: k
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md exists
-PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: selector_or_dial_needed` | 309
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: selector_or_dial_needed` | 322
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: read-only scanner
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: audit ledger hash is unchanged
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
@@ -28,20 +28,20 @@ PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: 
 ------------------------------------------------------------------------------
 Selector/dial subdivision checks
 ------------------------------------------------------------------------------
-PASS selector/dial row count is current snapshot :: 309
-PASS sub-bucket counts sum to selector count :: Counter({'stability_or_dynamics_selector': 128, 'koide_or_generation_selector': 119, 'measure_weight_normalization': 60, 'generic_selector_rule': 2})
-PASS expected sub-bucket counts match :: Counter({'stability_or_dynamics_selector': 128, 'koide_or_generation_selector': 119, 'measure_weight_normalization': 60, 'generic_selector_rule': 2})
+PASS selector/dial row count is current snapshot :: 322
+PASS sub-bucket counts sum to selector count :: Counter({'stability_or_dynamics_selector': 136, 'koide_or_generation_selector': 117, 'measure_weight_normalization': 67, 'generic_selector_rule': 2})
+PASS expected sub-bucket counts match :: Counter({'stability_or_dynamics_selector': 136, 'koide_or_generation_selector': 117, 'measure_weight_normalization': 67, 'generic_selector_rule': 2})
 PASS representative row present in koide_or_generation_selector :: charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02
 PASS representative row present in stability_or_dynamics_selector :: a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1
 PASS representative row present in measure_weight_normalization :: architecture_note_directional_measure
 PASS representative row present in generic_selector_rule :: gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20
-PASS audit ledger hash is unchanged :: c4964a58b7c9459991e0f6a9c4908526ba4a238a40e4a4b1df51d3f9ddde12c7
+PASS audit ledger hash is unchanged :: a2de3b7512118d206d90efce05be59ac8d4dc25e22244067248414c5348b09e9
 
 Selector/dial sub-bucket counts:
   generic_selector_rule: 2
-  koide_or_generation_selector: 119
-  measure_weight_normalization: 60
-  stability_or_dynamics_selector: 128
+  koide_or_generation_selector: 117
+  measure_weight_normalization: 67
+  stability_or_dynamics_selector: 136
 
 [generic_selector_rule]
   gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20 | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md
@@ -69,13 +69,13 @@ Selector/dial sub-bucket counts:
 
 [stability_or_dynamics_selector]
   a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1 | unaudited | unaudited | bounded_theorem | docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md
-  acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11 | audited_clean | retained_bounded | bounded_theorem | docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
+  acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
   acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11 | audited_conditional | audited_conditional | bounded_theorem | docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
-  acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11 | audited_conditional | audited_conditional | bounded_theorem | docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md
   arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md
   axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26 | audited_clean | retained_bounded | bounded_theorem | docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md
   bell_inequality_derived_note | audited_clean | retained_bounded | bounded_theorem | docs/BELL_INEQUALITY_DERIVED_NOTE.md
   beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04 | unaudited | unaudited | bounded_theorem | docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md
+  born_lane_comparison_note | audited_clean | retained_bounded | bounded_theorem | docs/BORN_LANE_COMPARISON_NOTE.md
 
 
 ------------------------------------------------------------------------------
@@ -89,10 +89,10 @@ PASS generation/Koide dial selected flag is false
 PASS Record-derived measure/prior flag is false
 
 SUMMARY: PASS=28 FAIL=0
-SELECTOR_DIAL_ROWS=309
-KOIDE_OR_GENERATION_SELECTOR_ROWS=119
-STABILITY_OR_DYNAMICS_SELECTOR_ROWS=128
-MEASURE_WEIGHT_NORMALIZATION_ROWS=60
+SELECTOR_DIAL_ROWS=322
+KOIDE_OR_GENERATION_SELECTOR_ROWS=117
+STABILITY_OR_DYNAMICS_SELECTOR_ROWS=136
+MEASURE_WEIGHT_NORMALIZATION_ROWS=67
 GENERIC_SELECTOR_RULE_ROWS=2
 AUDIT_LEDGER_WRITTEN=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE

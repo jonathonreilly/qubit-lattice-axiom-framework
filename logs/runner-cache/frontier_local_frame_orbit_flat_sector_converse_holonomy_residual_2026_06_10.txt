@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_local_frame_orbit_flat_sector_converse_holonomy_residual_2026_06_10.py
+runner_sha256: 5b969552b76a95a7765d7b3fb4909b2640070c6e0a23360457455e5d5f00dd4c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 11.02
+status: ok
+----- stdout -----
 ==============================================================================
 Part 1  (R1) local fusion (instrument covariance + cyclicity)
 ==============================================================================
@@ -36,3 +44,6 @@ SCOPE: the runner verifies the finite-surface local fusion, flat-sector
   selection non-dissolution described in the paired source note. It does not
   derive gauge dynamics, a pointer-frame selector, a probability law, or any
   completeness claim for holonomy. No audit grade is authored here.
+
+----- stderr -----
+

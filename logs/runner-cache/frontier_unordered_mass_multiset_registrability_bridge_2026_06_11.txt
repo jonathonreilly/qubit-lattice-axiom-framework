@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py
-runner_sha256: e8d0ac88eabe1f6941674da52a39b14a86d55a63e06aadc34ce7709b8152f2c3
+runner_sha256: 892b1dc9b62b80be67edbe3dcb2e05e4c2cce07a8d605b2e4b84ecfde7fa967a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 PASS L1 flip identity conj(H(delta)) == H(-delta)
@@ -20,7 +20,8 @@ PASS G4 hostile sin(3 delta) assigns two values to one K/CPT outcome: violates O
 PASS G5 hostile cross-term I(rec1 u rec2)=l1+l2+l1*l2 violates ADDITIVITY
 PASS G6 hostile within-orbit order probe f(k,x)=[k==1]x violates per-record ORBIT-CONSTANCY r_k(d)=r_{sigma(k)}(-d)
 PASS D1 boundary points sin(3 delta)=0: cos(3 delta)=+/-1 exactly, registrable family flip-equal, G4 hostile vanishes there
-TOTAL: PASS=14 FAIL=0
+PASS H1 source scope: P-dep explicit conditional premise, not Record-derived
+TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----
 

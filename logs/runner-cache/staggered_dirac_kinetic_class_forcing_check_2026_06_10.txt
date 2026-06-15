@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py
+runner_sha256: 6a74a016eb59e56518146014a78c3438e74b7187825cbbd279948bcf16514ed8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.38
+status: ok
+----- stdout -----
 ========================================================================
 staggered-Dirac kinetic-class forcing check  (2026-06-10)
 ========================================================================
@@ -48,3 +56,6 @@ VERDICT: Two-flux-class theorem (two-flux-class collapse) and Absorbing-frame th
          the finite instantiation; the flux(+1) countermodel
          certifies that the final one-bit kinetic-order
          selector is NOT forced by the specified constraint set.
+
+----- stderr -----
+

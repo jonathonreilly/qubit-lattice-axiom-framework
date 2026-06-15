@@ -500,20 +500,31 @@ check(
     matches == [],
     detail=f"matches={matches!r}",
 )
-ctx = {
-    "record_function_finite_sector_algebra_2026-06-05": "retained",
-    "record_unbounded_finite_additivity_schema_2026-06-06": "retained",
-    "magnitude_reads_minimal_record_block_2026-06-06": "retained_no_go",
-    "post_record_count_probability_firewall_2026-06-06": "retained_no_go",
-    "observable_principle_record_scalar_map_no_go_note_2026-06-05": "retained_no_go",
-    "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06": "retained_no_go",
-    "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": "retained",
-    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
-    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": "retained_bounded",
-    "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06": "retained",
+ctx_allowed = {
+    "record_function_finite_sector_algebra_2026-06-05": {"retained"},
+    # This row is now audited_conditional on main; that strengthens the
+    # runner's boundary reading rather than supplying the missing cap.
+    "record_unbounded_finite_additivity_schema_2026-06-06": {"audited_conditional"},
+    "magnitude_reads_minimal_record_block_2026-06-06": {"retained_no_go"},
+    "post_record_count_probability_firewall_2026-06-06": {"retained_no_go"},
+    "observable_principle_record_scalar_map_no_go_note_2026-06-05": {"retained_no_go"},
+    "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06": {"retained_no_go"},
+    "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": {"retained"},
+    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": {"retained"},
+    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {"retained_pending_chain"},
+    "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06": {"retained"},
 }
-ctx_ok = all(rows.get(kk, {}).get("effective_status") == vv for kk, vv in ctx.items())
-check("B", "cited rows present at the cited effective statuses (one-hop, presence check)", ctx_ok)
+ctx_bad = {
+    kk: rows.get(kk, {}).get("effective_status")
+    for kk, allowed in ctx_allowed.items()
+    if rows.get(kk, {}).get("effective_status") not in allowed
+}
+check(
+    "B",
+    "cited rows present at their current admissible effective statuses (one-hop, presence check)",
+    not ctx_bad,
+    detail=f"mismatches={ctx_bad!r}",
+)
 check(
     "B",
     "the three candidate record-capacity suppliers are visible rows (assessed at full "

@@ -479,6 +479,42 @@ def runner_timeout_for(runner_path: str, default_sec: int) -> int:
     return rc.runner_timeout_for(runner_path, default_sec=default_sec)
 
 
+def canonical_runner_path(runner_path: str | Path) -> str:
+    """Map legacy runner references to checked-out repo-local runners.
+
+    Historical ledger rows may carry bare script names or absolute paths from
+    temporary worktrees. For audit prompt rendering, use the current checkout's
+    ``scripts/<basename>.py`` when it exists; truly absent historical runners
+    remain missing.
+    """
+    raw = str(runner_path).strip()
+    if not raw:
+        return raw
+    raw_path = Path(raw)
+    basename = raw_path.name
+
+    candidates: list[str] = []
+    if raw_path.is_absolute():
+        if basename.endswith(".py"):
+            candidates.append(f"scripts/{basename}")
+    elif raw.startswith("scripts/"):
+        candidates.append(raw)
+    else:
+        candidates.extend([raw, f"scripts/{raw}"])
+    if basename.endswith(".py"):
+        candidates.append(f"scripts/{basename}")
+
+    seen: set[str] = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        p = REPO_ROOT / candidate
+        if p.exists():
+            return p.relative_to(REPO_ROOT).as_posix()
+    return raw
+
+
 def find_cached_runner_output(runner_path: str) -> str | None:
     """Return cached runner stdout via the SHA-pinned cache layout
     (`logs/runner-cache/<stem>.txt`). Returns None if no cache exists or
@@ -488,6 +524,7 @@ def find_cached_runner_output(runner_path: str) -> str | None:
     """
     if not runner_path:
         return None
+    runner_path = canonical_runner_path(runner_path)
     return rc.cache_excerpt_for_audit(runner_path)
 
 
@@ -501,6 +538,7 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
     """
     if not runner_path:
         return ""
+    runner_path = canonical_runner_path(runner_path)
     if use_cache:
         cached = find_cached_runner_output(runner_path)
         if cached:

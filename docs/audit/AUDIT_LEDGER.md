@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 921 |
+| **retained_bounded** | 922 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1492 |
+| unaudited | 1491 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1357 |
+| `audited_clean` | 1358 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1809 |
+| `unaudited` | 1808 |
 
 | claim_type | count |
 |---|---:|
@@ -563,6 +563,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_bridge_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7797,6 +7798,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The inverse-dimension adjacent bond follows directly from the cited Schur/Peter-Weyl character convolution identity, and the finite packet explicitly supplies boundary0 as the trivial-channel unit vector rather than an all-label counit. The runner and helper sources compute the finite two- and three-word Perron rereads on that bounded branch, while the open full-rim boundary problem is explicitly not imported.
 - **rationale:** The bounded claim closes as an algebraic finite-packet reread: the matrix-element adjacent contraction is the cited Schur identity with the 1/d_lambda factor, and the trivial-slice readout is exactly the supplied unit-vector boundary on the finite packet. The runner source does real finite operator construction and Perron solves through included helpers; the hard-coded expected values are used as regression assertions, not as construction inputs. The 0.5934 comparator is fenced to distance reporting and does not drive the branch selection or computation. The clean verdict is only for the stated finite packet and does not promote the open full eta_beta^env or physical 3D Wilson environment closure.
 - **auditor confidence:** medium
+
+### `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Purely formal finite-dimensional linear-algebra lemma for arbitrary abstract (S, eta, K); no beta=6 Wilson/Haar physical identification is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-224840-69dee0971d-gauge_vacuum_plaquette_beta6`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For finite-dimensional H with orthonormal class basis, the vector S^(L_perp-1) eta has coefficients z_(p,q)=<chi_(p,q),S^(L_perp-1)eta>, hence v=sum z_(p,q) chi_(p,q), Z(W)=<K(W),v>, and rho_(p,q)=z_(p,q)/z_(0,0) on the nonzero-denominator subcase.  _(class `A`)_
+- **chain closes:** True — For the audited formal scope, the result follows from orthonormal-basis expansion, finite matrix-vector propagation, and division by a stipulated nonzero denominator. The beta=6 physical bridge is expressly outside the load-bearing claim.
+- **rationale:** The 2026-05-28 narrowing makes the retained claim a formal algebraic lemma, not a physical Wilson/Haar reduction. In that scope the displayed coefficient, vector, evaluation, and normalization relations close by elementary finite-dimensional linear algebra, and an independent finite random-matrix check confirms the same identities without using the runner path. The cited plaquette notes and the named beta=6 physical authorities are context for a future application, not premises needed for this formal result.
+- **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`
 

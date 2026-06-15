@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.py
 runner_sha256: d86e4662b7d43f888464a8b340c7f7ff975f553e9e320581c8dd9d87cb689563
-timeout_sec: 180
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.74
+elapsed_sec: 3.08
 status: ok
 ----- stdout -----
 ========================================================================

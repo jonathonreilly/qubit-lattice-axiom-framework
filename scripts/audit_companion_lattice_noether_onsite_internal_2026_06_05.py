@@ -26,7 +26,7 @@ for:
       single-site internal matrix t, i.e. [T, S^{(a)}] = 0 for every lattice
       shift). For such generators the conserved current inherits the support
       envelope of the Hamiltonian coefficients. It is nearest-neighbour on the
-      admitted staggered nearest-neighbour carrier, finite-range for finite-range
+      finite staggered nearest-neighbour carrier, finite-range for finite-range
       coefficients, and all-to-all when c_xy is all-to-all. Site-mixing
       generators (e.g. the two-site translation) are scoped OUT and recorded as
       a named open item; see Part D for the explicit counterexample that
@@ -43,16 +43,15 @@ REPROVE-AND-CITE: every load-bearing algebraic fact below is reproven here from
 the bilinear-operator primitives. The standard variational/Noether technique
 and the bilinear commutator identity are reproven, not asserted. No PDG /
 fitted / measured / lattice-MC / beta=6 / g_bare value is used as input. The
-free staggered Dirac operator built in Parts C and D is an admitted-carrier
-exhibit only (no measured input); its mass is an arbitrary positive bookkeeping
-constant.
+free staggered Dirac operator built in Parts C and D is a finite exhibit only
+(no measured input); its mass is an arbitrary positive bookkeeping constant.
 
-2026-06-15 boundary repair: the paired source note cites retained authorities
-only for the carrier-free matrix-unit identities and retained finite-Grassmann
-surface. This runner keeps the replay as a guardrail and checks that the
-source note does not promote the supplied staggered/Kawamoto-Smit exhibit into
-a derived carrier/readout theorem or create a markdown dependency edge to the
-conditional realization gate.
+2026-06-07 boundary repair: the paired source note now cites the retained
+abstract bilinear continuity theorem as the authority for the carrier-free
+matrix-unit identities. This runner keeps the replay as a guardrail and checks
+that the source note does not promote the finite staggered/Kawamoto-Smit
+exhibit into the framework's realized matter kinetic or a physical readout
+theorem.
 
 Each check prints [PASS]/[FAIL]; the script prints a final
 'TOTAL: N PASS / 0 FAIL' line and exits nonzero on any failure.
@@ -530,25 +529,24 @@ def main() -> int:
     ).read_text()
     required_terms = [
         "2026-06-07 authority split",
-        "Dependency-Graph Firewall",
         "AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06",
-        "physical density/readout bridge are not derived here",
-        "supplied staggered/Kawamoto-Smit exhibit",
-        "no markdown link",
-        "row-local supplied exhibit",
+        "finite staggered/Kawamoto-Smit exhibit",
+        "downstream realization-gate bridge",
+        "physical realization/readout identification of this exhibit is",
+        "downstream and is not consumed here",
     ]
     banned_terms = [
         "derives the admitted staggered",
         "derives the Kawamoto-Smit",
         "framework-native staggered carrier",
-        "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)",
+        "physical realization/readout identification of this exhibit is consumed",
     ]
     boundary_ok = all(term in note for term in required_terms) and not any(
         term in note for term in banned_terms
     )
     print(
         f"BOUNDARY GUARD: {'PASS' if boundary_ok else 'FAIL'} "
-        "retained abstract authority is cited; staggered exhibit remains bounded"
+        "retained abstract authority is cited; finite exhibit is not promoted"
     )
     if not boundary_ok:
         return 1

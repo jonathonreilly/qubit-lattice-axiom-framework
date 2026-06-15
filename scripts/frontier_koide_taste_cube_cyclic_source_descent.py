@@ -6,7 +6,7 @@ Koide taste-cube cyclic-source descent runner
 STATUS: constructive bounded reduction theorem on the full 8-corner carrier
 
 Question:
-  If we work on the physical taste cube C^8 first, rather than assuming the
+  If we work on the finite taste cube C^8 first, rather than assuming the
   bare T_1 / hw=1 triplet is already the whole charged-lepton story, what
   exact response target survives after:
 
@@ -433,7 +433,7 @@ def main() -> int:
 
     print()
     print("Interpretation:")
-    print("  The physical taste cube does not force us back to a vague Hermitian")
+    print("  The finite taste cube does not force us back to a vague Hermitian")
     print("  source-response target. Exact C_3[111] averaging and a Schur-compatible")
     print("  charged-sector reduction collapse the full 8-corner Hermitian source")
     print("  responses to the same three cyclic channels already identified on T_1.")

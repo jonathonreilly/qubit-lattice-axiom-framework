@@ -43,8 +43,8 @@
     {
       "claim_id": "plaquette_self_consistency_note",
       "criticality": "critical",
-      "load_bearing_score": 51.479,
-      "transitive_descendants": 1008
+      "load_bearing_score": 51.477,
+      "transitive_descendants": 1007
     },
     {
       "claim_id": "minimal_axioms_2026-05-03",

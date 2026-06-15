@@ -58,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 1344 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 1345 |
 | `audited_conditional` | 15 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 26 |
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1397 | 60.95 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 890 | 45.30 | `unaudited` | unaudited |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -1364,6 +1363,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
+| `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `unification_basin_failure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -19338,6 +19338,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under the old identity-coupling convention, both attractive and repulsive signs remain stable on the tested graph families, so consistency does not select the sign at these parameters.  _(class `D`)_
 - **chain closes:** True — The current runner compares both signs across the three registered families and reports comparable norm drift, bounded energy, stable Phi, comparable spectra, and non-sign-selective force proxies. The conclusion is bounded to the retired identity-coupling convention and tested parameter surface.
 - **rationale:** The negative-control claim closes from the source note and current runner output. It does not claim final sign selection for the corrected parity-coupled scalar channel, and the note states that boundary. Residual risk is only if downstream readers apply this old-convention result to the corrected-coupling lane.
+- **auditor confidence:** high
+
+### `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The bounded algebraic implication u_0 = <P>^{1/4} from the local hypotheses P1 four-link plaquette structure and P2 unit-mean tadpole rescaling principle; no derivation of P2 or numerical plaquette value is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-211525-0d6ec33eaa-u0_plaquette_quartic_derivat`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Substituting the four-link loop length L = 4 into the unit-mean condition gives <P>/u_0^4 = 1, hence u_0^4 = <P> and the unique positive solution u_0 = <P>^{1/4}.  _(class `A`)_
+- **chain closes:** True — The algebra closes over the stated hypotheses: scalar link rescaling factors as u_0^{-4}, trace and expectation preserve the scalar factor, and positivity selects the unique fourth root. The external unit-mean principle P2 remains outside the audited closure and is not derived here.
+- **rationale:** The load-bearing step is elementary algebra rather than a definition or numerical match: independently, (U_1/u_0)(U_2/u_0)(U_3/u_0)(U_4/u_0)=U_p/u_0^4, so the normalized mean is <P>/u_0^4 and unit mean forces the fourth root. The displayed loop-length, free-action, inverse, and monotonicity formulas are consistent with the same calculation. Q-C5 is only a conditional algebraic substitution into the separately stated vertex-power map, not evidence for that map. This clean verdict is bounded to the implication from P1 and P2 and does not audit or retire P2 itself.
 - **auditor confidence:** high
 
 ### `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17`

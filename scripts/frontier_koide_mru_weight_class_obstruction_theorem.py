@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """
-Frontier runner - Koide MRU weight-class obstruction and quotient resolution.
+Frontier runner - Koide MRU unreduced weight-class obstruction.
 
 Companion to
 `docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`.
 
-What this runner certifies:
+What this runner certifies as load-bearing theorem algebra:
   1. On the unreduced carrier, every weighted block-log-volume leaf satisfies
          kappa = 2 mu / nu.
      In particular, the unreduced determinant carrier has weights (1,2) and
      lands at kappa = 1.
+
+What it checks only as non-load-bearing future-route context:
   2. If the scalar charged-lepton lane is supplied as an SO(2)-quotient of
      the real doublet, then the two-slot carrier (rho_+, rho_perp) is the
      exact quotient algebra.
@@ -18,7 +20,8 @@ What this runner certifies:
          E_+ = E_perp <=> kappa = 2.
 
 It does not derive the physical SO(2)-quotient bridge or decouple the
-cos(3 arg b) channel.
+cos(3 arg b) channel, and it does not use the reduced-carrier calculation as
+part of the bounded theorem claim.
 """
 
 from __future__ import annotations
@@ -89,8 +92,8 @@ def part1_unreduced_obstruction() -> None:
     check("Unreduced weight pair (1,2) lands at kappa = 1", sp.simplify(2 * sp.Integer(1) / sp.Integer(2) - 1) == 0)
 
 
-def part2_exact_quotient() -> None:
-    print("\n=== Part 2: conditional SO(2)-quotient algebra ===")
+def part2_context_quotient() -> None:
+    print("\n=== Part 2: context-only SO(2)-quotient algebra ===")
     r0, r1, r2, theta = sp.symbols("r0 r1 r2 theta", real=True)
     r1p = sp.cos(theta) * r1 - sp.sin(theta) * r2
     r2p = sp.sin(theta) * r1 + sp.cos(theta) * r2
@@ -99,21 +102,21 @@ def part2_exact_quotient() -> None:
     e_perp = sp.simplify((r1**2 + r2**2) / 6)
     e_perp_rot = sp.simplify((r1p**2 + r2p**2) / 6)
 
-    check("The doublet block power is SO(2)-orbit invariant", sp.simplify(e_perp_rot - e_perp) == 0)
-    check("If the scalar lane quotients the ordered pair, the radius is invariant", sp.simplify(sp.expand(r1p**2 + r2p**2 - (r1**2 + r2**2))) == 0)
+    check("The doublet block power is SO(2)-orbit invariant", sp.simplify(e_perp_rot - e_perp) == 0, cls="C")
+    check("If the scalar lane quotients the ordered pair, the radius is invariant", sp.simplify(sp.expand(r1p**2 + r2p**2 - (r1**2 + r2**2))) == 0, cls="C")
 
     rho_p, rho_perp = sp.symbols("rho_p rho_perp", positive=True, real=True)
-    check("Reduced carrier coordinates satisfy rho_+^2 = E_+", sp.simplify(rho_p**2 - e_plus).subs(rho_p, sp.sqrt(e_plus)) == 0)
-    check("Reduced carrier coordinates satisfy rho_perp^2 = E_perp", sp.simplify(rho_perp**2 - e_perp).subs(rho_perp, sp.sqrt(e_perp)) == 0)
+    check("Reduced carrier coordinates satisfy rho_+^2 = E_+", sp.simplify(rho_p**2 - e_plus).subs(rho_p, sp.sqrt(e_plus)) == 0, cls="C")
+    check("Reduced carrier coordinates satisfy rho_perp^2 = E_perp", sp.simplify(rho_perp**2 - e_perp).subs(rho_perp, sp.sqrt(e_perp)) == 0, cls="C")
 
     a, x, y = sp.symbols("a x y", positive=True, real=True)
     e_plus_ab = 3 * a**2
     e_perp_ab = 6 * (x**2 + y**2)
-    check("On the quotient carrier kappa = 2 E_+ / E_perp", sp.simplify(a**2 / (x**2 + y**2) - 2 * e_plus_ab / e_perp_ab) == 0)
+    check("On the quotient carrier kappa = 2 E_+ / E_perp", sp.simplify(a**2 / (x**2 + y**2) - 2 * e_plus_ab / e_perp_ab) == 0, cls="C")
 
 
-def part3_reduced_resolution() -> None:
-    print("\n=== Part 3: reduced-carrier resolution ===")
+def part3_context_reduced_resolution() -> None:
+    print("\n=== Part 3: context-only reduced-carrier resolution ===")
     rho_p, rho_perp, e_tot, lam = sp.symbols("rho_p rho_perp e_tot lam", positive=True, real=True)
     lagrangian = sp.log(rho_p) + sp.log(rho_perp) - lam * (rho_p**2 + rho_perp**2 - e_tot)
     sol = sp.solve(
@@ -125,33 +128,36 @@ def part3_reduced_resolution() -> None:
         [rho_p, rho_perp, lam],
         dict=True,
     )
-    check("Reduced carrier has a unique positive log-volume stationary point", len(sol) == 1, f"sol={sol}")
+    check("Reduced carrier has a unique positive log-volume stationary point", len(sol) == 1, f"sol={sol}", cls="C")
     stationary = sol[0]
     check(
         "Reduced stationary point is rho_+ = rho_perp = sqrt(E_tot/2)",
         sp.simplify(stationary[rho_p] - sp.sqrt(e_tot / 2)) == 0
         and sp.simplify(stationary[rho_perp] - sp.sqrt(e_tot / 2)) == 0,
+        cls="C",
     )
 
     e_plus, e_perp = sp.symbols("e_plus e_perp", positive=True, real=True)
     check(
         "The reduced stationary point is exactly E_+ = E_perp",
         sp.simplify((rho_p**2 - rho_perp**2).subs({rho_p: sp.sqrt(e_plus), rho_perp: sp.sqrt(e_perp)}) - (e_plus - e_perp)) == 0,
+        cls="C",
     )
 
     a, b_abs_sq = sp.symbols("a b_abs_sq", positive=True, real=True)
-    check("Pullback gives a^2 = 2 |b|^2", sp.simplify((3 * a**2 - 6 * b_abs_sq) / 3 - (a**2 - 2 * b_abs_sq)) == 0)
-    check("So the reduced carrier lands at kappa = 2", sp.simplify((a**2 / b_abs_sq).subs(a**2, 2 * b_abs_sq) - 2) == 0)
+    check("Pullback gives a^2 = 2 |b|^2", sp.simplify((3 * a**2 - 6 * b_abs_sq) / 3 - (a**2 - 2 * b_abs_sq)) == 0, cls="C")
+    check("So the reduced carrier lands at kappa = 2", sp.simplify((a**2 / b_abs_sq).subs(a**2, 2 * b_abs_sq) - 2) == 0, cls="C")
 
 
-def part4_resolution_summary() -> None:
-    print("\n=== Part 4: obstruction plus resolution ===")
+def part4_context_summary() -> None:
+    print("\n=== Part 4: context-only reduced determinant check ===")
     alpha, beta = sp.symbols("alpha beta", positive=True, real=True)
     d_reduced = sp.diag(alpha, beta)
-    check("Reduced two-slot carrier has det = alpha beta", sp.simplify(d_reduced.det() - alpha * beta) == 0)
+    check("Reduced two-slot carrier has det = alpha beta", sp.simplify(d_reduced.det() - alpha * beta) == 0, cls="C")
     check(
         "On the reduced carrier log|det| = log alpha + log beta",
         sp.expand_log(sp.log(d_reduced.det()), force=True) == sp.log(alpha) + sp.log(beta),
+        cls="C",
     )
 
 
@@ -161,12 +167,14 @@ def part5_source_boundary() -> None:
     required = [
         "**Claim type:** bounded_theorem",
         "**Status authority:** independent audit lane.",
+        "**Claim scope:** unreduced carrier obstruction only.",
         "**No-promotion statement:**",
         "This source does not derive that object",
-        "conditional support",
+        "non-load-bearing future-route context",
+        "not part of the theorem claim",
         "cos(3 arg b)",
         "**not** derive the physical quotient bridge",
-        "physical quotient bridge is supplied",
+        "use the conditional reduced-carrier calculation as a load-bearing premise",
     ]
     for token in required:
         check(f"source note contains boundary phrase: {token!r}", token in text)
@@ -185,19 +193,22 @@ def part5_source_boundary() -> None:
 def main() -> int:
     part0_weight_classification()
     part1_unreduced_obstruction()
-    part2_exact_quotient()
-    part3_reduced_resolution()
-    part4_resolution_summary()
+    part2_context_quotient()
+    part3_context_reduced_resolution()
+    part4_context_summary()
     part5_source_boundary()
 
     print("\nInterpretation:")
-    print("  The old obstruction is still exact on the unreduced 3x3 carrier.")
-    print("  The quotient calculation is conditional: if an independently audited bridge supplies")
-    print("  the SO(2) quotient, the non-trivial real doublet reduces to one scalar")
-    print("  slot rho_perp. After that supplied reduction, the standard log-volume")
-    print("  law is the equal-weight MRU law automatically.")
-    print("  The missing science remains the physical quotient / cos(3 arg b)")
-    print("  decoupling bridge.")
+    print("  The bounded theorem is the unreduced 3x3 obstruction: determinant")
+    print("  weights (1,2) select kappa = 1, so the unreduced determinant")
+    print("  carrier cannot force MRU.")
+    print("  The quotient calculation is context only: if an independent")
+    print("  upstream bridge supplies the SO(2) quotient, the non-trivial real")
+    print("  doublet reduces to one scalar slot rho_perp and the standard")
+    print("  log-volume law becomes the equal-weight MRU law.")
+    print("  This runner does not use that context as a load-bearing premise.")
+    print("  The remaining positive-route science is still the physical quotient")
+    print("  / cos(3 arg b) decoupling bridge.")
     print(f"\nclassified_pass={PASS} fail={FAIL}")
     return 0 if FAIL == 0 else 1
 

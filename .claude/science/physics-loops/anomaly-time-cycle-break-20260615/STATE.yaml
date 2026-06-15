@@ -1,0 +1,24 @@
+loop: anomaly-time-cycle-break-20260615
+goal: "Break the uncovered audit cycle edge from anomaly_forces_time_theorem without changing audit verdicts."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+target_claim_id: anomaly_forces_time_theorem
+active_route: "Localize the upper-bound input to the already declared B-AXIS premise."
+files_touched:
+  - docs/ANOMALY_FORCES_TIME_THEOREM.md
+  - scripts/frontier_anomaly_forces_time.py
+  - logs/runner-cache/frontier_anomaly_forces_time.txt
+open_imports:
+  - P-ABJ
+  - P-HY
+  - P-COMP
+  - P-REC
+  - B-AXIS
+remaining_blocker: "The theorem remains conditional on B-AXIS and the staggered/Kawamoto-Smit source surface; this PR only removes the source-graph cycle edge."
+verification:
+  runner: "PASS=87 FAIL=0"
+  pipeline: "cycles detected reduced from 20 to 19; ready count stayed 1; audit_lint OK/no errors"
+pr_status: pending
+next_exact_action: "Commit, push, and open review PR."
+stop_condition: "PR opened and verified."

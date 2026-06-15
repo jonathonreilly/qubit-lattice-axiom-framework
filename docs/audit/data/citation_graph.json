@@ -51246,7 +51246,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10"
+      "to": "hierarchy_formula_honest_status_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
@@ -98474,14 +98474,14 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+        "hierarchy_formula_honest_status_note_2026-05-10",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
         "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
         "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "949a524cb38d817a76b56bf9b04051a279e601f106638d84be75bea05d4b0412",
+      "note_hash": "15ebae5a77370d669ca4863da695129319278dcc6afc15c7c62ce8e81017c932",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

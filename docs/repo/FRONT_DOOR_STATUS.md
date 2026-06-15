@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3295 |
-| Applied audit verdicts | 1527 |
+| Applied audit verdicts | 1528 |
 | Retained-grade rows, including boxed decorations | 1372 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 211 |
 | Retained bounded rows | 906 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1446 |
+| Unaudited rows | 1445 |
 | Retained-pending-chain rows | 20 |
-| Audited conditional rows | 51 |
+| Audited conditional rows | 52 |
 | Audited renaming rows | 31 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 19 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1451 |
-| Ready rows | 5 |
+| Total pending rows | 1450 |
+| Ready rows | 4 |
 | Cycle-break targets | 19 |
-| Critical pending | 331 |
+| Critical pending | 330 |
 | High pending | 254 |
 | Medium pending | 427 |
 | Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_SYMMETRIZED_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOWED_BOND_DEEP_LIMIT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited

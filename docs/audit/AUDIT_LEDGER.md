@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 906 |
 | _retained_pending_chain_ | 20 |
 | open_gate | 41 |
-| unaudited | 1446 |
+| unaudited | 1445 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1356 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1763 |
+| `unaudited` | 1762 |
 
 | claim_type | count |
 |---|---:|
@@ -1509,6 +1509,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gl_f_from_berezin_rp_reconstruction_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9528,6 +9529,24 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Conditional on the Matsubara free-energy density formula, expand Delta f(L_t,m) at small m and evaluate the APBC sums to obtain A_2=1/(8u_0^2), A_4=1/(7u_0^2), A_inf=1/(4 sqrt(3)u_0^2), and C_inf^(4D)=(3/4)^(1/8).  _(class `A`)_
 - **chain closes:** True — Within the narrowed scope, the chain closes: the cited free-energy formula supplies the only load-bearing input, and the endpoint formulas follow by Taylor expansion and elementary APBC sums. The dimension-4 physical insertion theorem remains open but is explicitly outside the audited algebraic scope.
 - **rationale:** The load-bearing step is a genuine algebraic consequence of the cited Matsubara free-energy density formula, whose provided authority is marked as retained-grade decoration under a retained parent. The runner source actually computes the small-m coefficient and endpoint expressions rather than merely printing constants, though the Part 4 checks are external comparator checks against C_obs and are not used to close the in-scope algebra. Because the note explicitly excludes Bridge 2 from the theorem scope and does not claim physical insertion closure, that open bridge does not prevent the bounded algebraic claim from closing.
+- **auditor confidence:** high
+
+### `hierarchy_formula_honest_status_note_2026-05-10`
+
+- **Note:** [`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the T1 structural algebra and C1 numeric readout over the declared plaquette, scale-reference, regulator-selection, and coupling-power inputs; no EW VEV prediction or B5 observable-identification closure was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-113728-5fcea1dd77-hierarchy_formula_honest_sta`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Over declared B1/B3 with B4 declared, the local algebra computes the naive d=4 species count N=16, the 2^4 all-APBC determinant u0-degree 16, the exact selector (7/8)^(1/4), and hence the bounded K and v_cand readout algebra.  _(class `C`)_
+- **chain closes:** False — The local species-count, determinant-degree, selector, sensitivity, and numeric arithmetic close over the declared inputs. The full hierarchy/VEV interpretation still requires the declared B3 regulator/substrate selection, B4 alpha_LM^16 coupling-power transport, and B5 observable-identification bridge, none of which is closed by this restricted packet.
+- **rationale:** The runner source performs substantive exact finite algebra for the zero set, 2^4 eta-phase operator, characteristic polynomial, determinant scaling, and eta/zeta selector, and an independent arithmetic check confirms the displayed constants and sensitivity factors. The scale-reference primitive should not be treated as a bounded Planck import, and the retained plaquette reuse note is a retained-grade bounded input. However, the formula/readout still depends on explicit declared open selections: B3 fixes the regulator surface and B4 supplies the alpha_LM^16 coupling-power choice beyond the determinant's u0^16 degree; B5 remains needed for any EW observable identification. Therefore the row is conditionally valid as a bounded structural/readout statement, not clean closure of the hierarchy or VEV.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md`
+  - `HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md`
+  - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
 - **auditor confidence:** high
 
 ### `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10`

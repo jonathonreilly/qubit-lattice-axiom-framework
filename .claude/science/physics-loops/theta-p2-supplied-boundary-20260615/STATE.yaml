@@ -1,0 +1,17 @@
+loop: theta-p2-supplied-boundary-20260615
+date: 2026-06-15
+branch: physics-loop/theta-p2-supplied-boundary-20260615
+base: origin/main
+mode: bounded-support audit-unblock
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11
+active_route: quarantine W2/action-level supplied premises while preserving finite determinant algebra
+hard_residual: physical W2 registrability and physical action-level arg-det reduction remain unproved
+files_touched:
+  - docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
+  - logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt
+pr_status: pending
+next_exact_action: commit, push, and open review PR

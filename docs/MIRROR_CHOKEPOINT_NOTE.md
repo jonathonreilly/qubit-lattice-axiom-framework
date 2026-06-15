@@ -4,6 +4,9 @@
 **Status:** bounded finite mirror chokepoint diagnostic on the strict default `NPL_HALF=25` `connect_radius=4.0` card at `N=15` and `N=25` only; not a single-surface family theorem and not an asymptotic claim. The dense `NPL_HALF=60` `connect_radius=5.0` boundary card retention through `N=100` is covered by the separate retained boundary-fit note (see [`docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md`](MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md)) and is not part of this note's retained scope.
 **Claim type:** bounded_theorem
 
+**Runner:** [`scripts/mirror_chokepoint_joint.py`](../scripts/mirror_chokepoint_joint.py)
+**Runner cache:** [`logs/runner-cache/mirror_chokepoint_joint.txt`](../logs/runner-cache/mirror_chokepoint_joint.txt)
+
 **Primary runner (load-bearing):** [`scripts/mirror_chokepoint_joint.py`](../scripts/mirror_chokepoint_joint.py) — registered strict-default scan runner for the `NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0` card.
 **Primary runner registered cache (load-bearing):** [`logs/runner-cache/mirror_chokepoint_joint.txt`](../logs/runner-cache/mirror_chokepoint_joint.txt) — registered cached stdout (`exit_code=0`, `status=ok`) from which the bounded `N=15`/`N=25` rows below are read directly, and which records `FAIL` for `N=40, 60, 80, 100` on this card.
 **Certificate runner (load-bearing):** [`scripts/mirror_chokepoint_note_certificate_runner_2026_05_09.py`](../scripts/mirror_chokepoint_note_certificate_runner_2026_05_09.py) — registered assertion-gated certificate runner that mechanically verifies the bounded `N=15`/`N=25` table values against the strict joint cache, the strict-card header (`NPL_HALF=25`, `k=5.0`, 16 seeds), and the `N=40/60/80/100` FAIL markers; exits zero on PASS.

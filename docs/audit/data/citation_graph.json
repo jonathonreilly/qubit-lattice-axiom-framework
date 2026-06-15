@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_dimensional_compression_note"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "su3_adjoint_casimir_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
         "hierarchy_dimensional_compression_note",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
         "action_normalization_note",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
-        "su3_adjoint_casimir_theorem_note_2026-05-02"
+        "su3_adjoint_casimir_theorem_note_2026-05-02",
+        "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "63365de2e4e3dc28e49d524d9af61c32a45099f5b1ec482a9382f399b15a9451",
+      "note_hash": "75787b8b146d9791071e0b45ff7a12689450eec73e7ff60b3c1de50c6ea344d7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

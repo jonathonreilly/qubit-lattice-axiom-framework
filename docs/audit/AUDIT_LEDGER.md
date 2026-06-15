@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 914 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1513 |
+| unaudited | 1512 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 16 |
+| ~~audited_conditional~~ | 17 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1348 |
-| `audited_conditional` | 16 |
+| `audited_conditional` | 17 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1830 |
+| `unaudited` | 1829 |
 
 | claim_type | count |
 |---|---:|
@@ -1486,6 +1486,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9211,6 +9212,22 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The massless staggered chirality operator anticommutes with the Hermitian staggered Dirac matrix on the stated finite bulk surface, pairing every nonzero eigenvalue lambda with -lambda so sum sign(lambda)=0; separately, 2^(1-d)=1/(2d)=1-eta(d)/zeta(d) is equivalent to 2^(d-2)=d and has the unique integer solution d=4.  _(class `A`)_
 - **chain closes:** True — Manual check: anticommutation {Gamma5,D}=0 implies +/- eigenvalue pairing, and the stated L_t=2,4 spectra have nonzero uniform |lambda|^2, so the signed eta sum vanishes. The rational identity check reduces A=B=C to 2^(d-2)=d, with d=2,3 nonzero residuals and monotonic positivity for d>=5. The no-go discipline gate does not block because the verdict ratifies only this exact bare-bulk obstruction and leaves the five alternative APS routes open.
 - **rationale:** The row closes as a bounded scoping theorem, not as an APS no-go. The exact finite bulk surface has +/- spectral pairing, so the bare APS eta signed sum is zero and cannot supply eta_APS/2=1/8 there. The 1/8 rational identities are not independent witnesses because their equality reduces to the already retained d=4 integer-alignment theorem. The source's N1-N8 discipline is adequate for the audited scope: Wilson/domain-wall mass, nontrivial gauge backgrounds, boundary geometry, spectral flow, and residue corrections are explicitly left open rather than foreclosed.
+- **auditor confidence:** high
+
+### `hierarchy_dimensional_compression_note`
+
+- **Note:** [`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the finite arithmetic on the computed condensate-density ratio R: inverse-root compression candidates R^(-1/4) and R^(-1/16), their numerical separation, the D=4 identity 1/D = 4/2^D, and the retained-bounded taste-count citations.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-213235-500f64ccd1-hierarchy_dimensional_compre`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the per-determinant geometric-mean readout with N_taste = 2^D = 16 at D = 4, the condensate-density residual is read as the inverse compression R^(-1/D) = R^(-1/4), distinct from the naive D=16 reading R^(-1/16), with 1/D = 4/2^D holding only at D = 4 among the tested dimensions.  _(class `A`)_
+- **chain closes:** False — The displayed arithmetic closes: independent recomputation from R = 1.1546901938 gives R^(-1/4) = 0.9646807905, R^(-1/16) = 0.9910507799, and a 2.6608% separation, while 1/D = 4/2^D holds at D=4 and fails at D={1,2,3,5,6,8}. The chain does not close as a VEV or effective-potential-density readout because the determinant-to-physical-readout map, including sign, placement, exponent, and normalization, is explicitly left open.
+- **rationale:** Issue: the runner and note verify the intra-framework arithmetic, but the step naming R^(-1/4) as the D=4 compression readout still rests on the admitted per-determinant/effective-potential-density bridge. Why this blocks: the retained taste-count authorities supply N_taste=16 and BZ-corner combinatorics, but they do not derive the physical VEV insertion map. Repair target: provide a retained bridge deriving the determinant or effective-potential-density coefficient readout with exponent, inverse/direct placement, sign, and normalization relative to Lt=2. Claim boundary until fixed: conditional D=4 arithmetic support only, with no retained VEV-readout theorem or observation-comparison closure.
+- **open / conditional deps cited:**
+  - `HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md`
+  - `HIERARCHY_MATSUBARA_DETERMINANT_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`

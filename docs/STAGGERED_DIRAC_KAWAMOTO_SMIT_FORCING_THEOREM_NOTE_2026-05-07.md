@@ -2,20 +2,22 @@
 
 **Date:** 2026-05-07; 2026-06-06 cocycle/gauge-class uniqueness repair;
 2026-06-10 science-fix (iff + premise honesty + forcing certificate —
-see §0 changelog); 2026-06-11 substep-1 boundary sync
+see §0 changelog); 2026-06-11 substep-1 boundary sync; 2026-06-15
+bounded-surface hygiene repair
 **Type:** bounded_theorem
-**Claim scope:** Within the declared kinetic class — the naive-Dirac
-kinetic form on nearest-neighbor `Z³` links (premise P-KIN) made
-compatible with the single-mode Grassmann matter measure by a
-site-local unitary spin diagonalization (premise P-SD) — a
-nearest-neighbor phase system `η` admits a site-local unitary
-scalarization IF AND ONLY IF it satisfies the Clifford `−1` plaquette
-cocycle, and on simply connected regions of `Z³` the solutions form
-EXACTLY ONE local gauge class: the class of the Kawamoto-Smit
-representative `η_1 = 1, η_2(x) = (−1)^{x_1}, η_3(x) = (−1)^{x_1+x_2}`.
-This is bounded forcing of the Kawamoto-Smit gauge class under the
-declared premises (boundaries B1–B4 below), not an unconditional
-derivation of the kinetic class itself from Lattice + Quantum alone.
+**Claim scope:** On the supplied local kinetic-scalarization surface —
+the naive-Dirac kinetic form on nearest-neighbor `Z³` links (premise
+P-KIN) together with a site-local unitary scalarization hypothesis
+(premise P-SD) — a nearest-neighbor phase system `η` admits a
+site-local unitary scalarization IF AND ONLY IF it satisfies the
+Clifford `−1` plaquette cocycle, and on simply connected regions of
+`Z³` the solutions form EXACTLY ONE local gauge class: the class of the
+Kawamoto-Smit representative `η_1 = 1, η_2(x) = (−1)^{x_1}, η_3(x) =
+(−1)^{x_1+x_2}`. This is bounded forcing of the Kawamoto-Smit gauge
+class under the declared local premises (boundaries B2–B4 below), not
+an unconditional derivation of the kinetic class itself from Lattice +
+Quantum alone. The substep-1 single-mode/statistics surface is
+downstream realization context, not a premise of this local theorem.
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome; audit verdict and effective status
 are set only by the independent audit lane.
@@ -30,6 +32,14 @@ surface").
 
 ## 0. Changelog
 
+- **2026-06-15 (bounded-surface hygiene repair).** The theorem surface
+  is made proof-exact: Lemmas 2--4 use the supplied local
+  `P-KIN/P-SD` scalarization surface, the Pauli/Clifford input, and
+  the `Z³` box topology. The substep-1 Grassmann/statistics packet is
+  retained as downstream realization context for gate consumers, but
+  it is no longer listed as a theorem premise or a load-bearing
+  dependency for the local Kawamoto-Smit gauge-class result. No
+  kinetic-class derivation or status promotion is claimed.
 - **2026-06-10 (science-fix, this revision).** Four defects repaired:
   1. *(High — missing sufficiency.)* The 2026-06-06 revision proved
      only necessity (any scalarization forces the `−1` cocycle) plus
@@ -78,9 +88,9 @@ surface").
   residual: the hard-core-boson frame remains outside the
   two-candidate comparison. This note's B1 language is synchronized to
   that current boundary. No kinetic-class derivation is added here:
-  P-KIN and P-SD remain declared premises, and BlockT1 remains a
-  bounded upstream input until the statistics-frame selection bridge is
-  retained.
+  P-KIN and P-SD remain declared premises. The 2026-06-15 hygiene
+  repair below further narrows B1 from theorem premise to downstream
+  realization context.
 - **2026-06-12 (kinetic supply-line sync).** Current main now contains
   a sharper source-side supply line for this note's former B2/B3
   residuals. `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`
@@ -100,11 +110,9 @@ surface").
 
 ## 1. Question
 
-Given the substep-1 result — the matter measure is the single-mode
-Grassmann partition with `(χ_x, χ̄_x)` per site, on the two-candidate
-finite-generator surface — and the declared kinetic class (P-KIN +
-P-SD), is the staggered kinetic operator's phase structure forced to be
-the Kawamoto-Smit law, and in exactly what sense "forced"?
+On the supplied local kinetic-scalarization surface (P-KIN + P-SD), is
+the staggered kinetic operator's phase structure forced to be the
+Kawamoto-Smit law, and in exactly what sense "forced"?
 
 ## 2. Answer (bounded)
 
@@ -130,9 +138,9 @@ realization-gate note consumes as its R2 authority.
 
 | ID | Boundary | Where it bites |
 |---|---|---|
-| B1 | Substep-1 input is the *two-candidate* Grassmann-vs-bosonic narrow theorem. The former U4/per-site-identification boundary is now discharged there, but the statistics-selection/exhaustiveness boundary is still open because the hard-core-boson frame lies outside the two-candidate comparison | the single-mode premise BlockT1 is bounded, not unconditional |
+| B1 | Downstream realization context: the substep-1 single-mode/statistics surface motivates why gate consumers want P-SD, but it is not a premise of Lemmas 2--4 or Theorem 2 in this row | does not bite inside the local Kawamoto-Smit proof; remains a downstream gate-residual context |
 | B2 | P-KIN: the naive-Dirac kinetic form `D = Σ_μ γ_μ ⊗ ∂_μ` on nearest-neighbor `Z³` links is a declared premise; non-nearest-neighbor or non-Dirac kinetic operators are not excluded here | Theorem 2 quantifies over phase systems *within* this class only |
-| B3 | P-SD: compatibility with the single-mode measure is implemented by a *site-local unitary* diagonalization `T(x)`; alternatives that bypass spin diagonalization (e.g. the 2-component naive operator) are excluded by premise, not derivation — the gate note's runner exhibits that alternative explicitly (its check 18) | the scalarization condition (4) is the P-SD premise in equation form |
+| B3 | P-SD: a *site-local unitary* scalarization `T(x)` is supplied; alternatives that bypass spin diagonalization (for example a 2-component naive operator) are outside this local theorem unless separately mapped into P-SD | the scalarization condition (4) is the P-SD premise in equation form |
 | B4 | Finite tori carry extra holonomy data: signs around non-contractible cycles (PBC/APBC and wrap-sign conventions) are boundary convention data, not local phase law; likewise lattice-axis permutation is coordinate-label gauge | Theorem 2(ii) is stated on simply connected regions |
 
 ### 3.1 2026-06-12 kinetic supply-line status
@@ -182,7 +190,6 @@ required for this row's bounded local closure.
 |---|---|---|
 | Quantum | one-qubit local algebra, equivalently `M_2(C) ~= Cl(3,0)`, with Pauli realization per site | accepted axiom premise |
 | Lattice | `Z³` nearest-neighbor lattice | accepted axiom premise |
-| BlockT1 | Matter measure is single-mode Grassmann `(χ_x, χ̄_x)` per site, on the two-candidate surface | bounded upstream input per [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md): U4/per-site identification is closed there, but the statistics-selection/exhaustiveness residual remains open (B1) |
 | U2 | Per-site faithful Cl(3) irrep of dim 2; central pseudoscalar `ω = γ₁γ₂γ₃` | per [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) |
 | F1 | Z₂ fermion-parity grading | per [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) |
 | BPG | `Z³` nearest-neighbor graph is bipartite | admissible standard math (graph theory) |
@@ -195,6 +202,11 @@ NR premise ("retained no-rooting irreducibility") is removed: it was
 cited via a script outside the one-hop packet and was load-bearing
 nowhere in the derivation.
 
+The substep-1 single-mode/statistics packet is downstream context for
+staggered-realization consumers. It is not used in Lemmas 2--4: once
+P-SD is supplied, the proof is the local Pauli/lattice transport
+calculation below.
+
 ### 4.2 Forbidden imports
 
 - NO PDG values, NO lattice MC values, NO fitted coefficients
@@ -203,11 +215,9 @@ nowhere in the derivation.
 ### 4.3 The scalarization condition
 
 Under P-KIN the kinetic operator is `D = Σ_μ γ_μ ⊗ ∂_μ` with `∂_μ` the
-symmetric lattice difference; under BlockT1 the per-site dim-2 module
-carries a single fermion mode (`a = σ_+`, `a† = σ_−`, `n = (I − σ_3)/2`
-per F1), not a 2-component spinor, so the spin structure must be
-absorbed into local phases. P-SD implements this by a unitary `T(x)`
-per site, `χ(x) := T(x) ψ(x)`, with the **scalarization condition**
+symmetric lattice difference. P-SD supplies the site-local unitary
+scalarization map `T(x)` per site, `χ(x) := T(x) ψ(x)`, with the
+**scalarization condition**
 
 ```
 T†(x) γ_μ T(x + μ̂) = η_μ(x) · I_2                                       (4)
@@ -313,8 +323,8 @@ containing the Kawamoto-Smit representative `η^0`. ∎
 
 ### Theorem 2 (Kawamoto-Smit phase forcing — bounded)
 
-**On Quantum + Lattice + BlockT1 (B1) + U2 + F1 + BPG, within the declared
-kinetic class P-KIN (B2) + P-SD (B3):**
+**On Quantum + Lattice + U2 + F1 + BPG, within the declared kinetic
+class P-KIN (B2) + P-SD (B3):**
 
 **(i)** A nearest-neighbor phase system `η` (`Z₂`- or `U(1)`-valued)
 admits a site-local unitary scalarization (4) **if and only if** it
@@ -400,9 +410,10 @@ not an instantiate-and-check script:
   transform scalarizes; recovery returns the same real representative
   `η^0`), exact sympy.
 
-The runner prints `RESIDUAL (declared-open): ...` lines for B1, B2/B3,
-and B4 so the audit lane sees the bounded boundary in the same stdout
-as the PASS lines.
+The runner prints the declared-open P-KIN/P-SD and B4 residuals, plus a
+`CONTEXT (not theorem premise): ...` line for the substep-1
+single-mode/statistics surface, so the bounded local theorem is not
+mistaken for an unconditional realization-gate closure.
 
 ## 7. What this does NOT close
 
@@ -414,10 +425,10 @@ as the PASS lines.
   on the `K1` branch, and P-KIN is reduced to the P-FLUX bit
   `phi = -1`; the bit-selection route is conditional on FSB-K plus the
   retained `(Z)` certificate and remains audit-owned.
-- The substep-1 statistics-selection/exhaustiveness residual (B1):
-  the former U4/per-site-identification boundary is discharged in the
-  substep-1 note, but Grassmann-vs-hard-core-boson selection remains
-  open beyond the two-candidate surface.
+- The substep-1 statistics-selection/exhaustiveness residual (B1) for
+  downstream gate consumers. It is not part of this local theorem's
+  proof, but it still blocks any claim that the full staggered
+  realization gate is unconditionally closed.
 - Rooting / taste reduction: the previous revision's NR claim
   ("retained no-rooting irreducibility" of the Kawamoto-Smit
   realization on `C^8`) is withdrawn from this note's premise set and
@@ -444,8 +455,9 @@ as the PASS lines.
 - Parent gate (consumes this note as R2; file-path context only, not a
   one-hop authority for this row):
   `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-- Substep-1 Grassmann narrow theorem (BlockT1, B1):
-  [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- Substep-1 Grassmann/statistics packet (downstream context only, not a
+  theorem premise for this row): the retained two-candidate
+  single-mode note from 2026-05-16
 - Historical substep-1 source packet:
   `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
 - Per-site uniqueness (U2):
@@ -470,9 +482,9 @@ sections A–E as described in §6, including
 `scalarizable set == Z2 gauge orbit of eta^0`,
 three GF(2) certificates with `nullity(d1) = |V|-1`,
 14 falsification rejections, the Z2 gauge recovery, and the U(1)
-generalization check; three `RESIDUAL (declared-open): ...` lines
-(B2/B3 kinetic-class premises, B1 substep-1 surface, B4 holonomy);
-then exactly:
+generalization check; two `RESIDUAL (declared-open): ...` lines
+(B2/B3 kinetic-class premises and B4 holonomy) plus one
+`CONTEXT (not theorem premise): ...` line for B1; then exactly:
 
 ```text
 TOTAL: PASS=47 FAIL=0

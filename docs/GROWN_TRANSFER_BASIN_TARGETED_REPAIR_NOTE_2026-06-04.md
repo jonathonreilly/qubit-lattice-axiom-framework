@@ -10,6 +10,12 @@ This note repairs the executable support surface for the legacy
 the audit ledger, or assert an audit-ratified status. It supplies a current,
 SHA-pinned runner packet for re-audit.
 
+**Primary runner:** [`scripts/GROWN_TRANSFER_BASIN_TARGETED.py`](../scripts/GROWN_TRANSFER_BASIN_TARGETED.py)
+
+The primary runner imports the sweep runner that computes the row predicates,
+so audit packet construction can expose the full executable chain without
+making the broader sweep the audited claim.
+
 The repaired claim is finite and narrow:
 
 - fixed `H = 0.5`, `K = 5.0`, `BETA = 0.8`, `NL = 25`, `PW = 8`

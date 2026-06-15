@@ -1,0 +1,16 @@
+goal: "Register the grown-transfer targeted repair runner so the ready audit row has an executable packet."
+target_status: "audit-unblock"
+actual_current_surface_status: "bounded-support"
+trace_class: "direct_blocker_closure"
+reachability_to_target: "closes"
+target_claim_id: "grown_transfer_basin_targeted_repair_note_2026-06-04"
+branch: "physics-loop/grown-transfer-runner-registration-20260615"
+base: "origin/main"
+files_touched:
+  - "docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md"
+  - ".claude/science/physics-loops/grown-transfer-runner-registration-20260615/"
+open_imports:
+  - "The finite grown-row packet remains bounded support and still needs independent audit."
+  - "No family-wide growth rule, graph-ladder transfer theorem, or geometry-generic claim is asserted."
+next_exact_action: "Have the reviewer/auditor re-run the audit queue after this runner registration lands."
+stop_condition: "Primary runner is discovered by the citation graph, caches are fresh, and audit generated files are not committed."

@@ -84,6 +84,7 @@ Expected: TOTAL: PASS=30 FAIL=0
 from __future__ import annotations
 
 import itertools
+import json
 import os
 import re
 from dataclasses import dataclass
@@ -637,27 +638,28 @@ check("B", "record-formation wall: the retained_no_go's claim ('does **not** hol
 canon = read(os.path.join(REPO, "docs", "RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md"))
 check("B", "canonical-proposal no-dynamics guardrail: 'it disclaims the decoherence *process* that produces it' present verbatim in the proposal note; RR is a declared realization clause, not a derivation forcing record formation on any partition", ("disclaims the decoherence *process* that produces it" in norm_ws(canon)) and ("declared" in note_ws))
 
-ledger = read(os.path.join(REPO, "docs", "audit", "AUDIT_LEDGER.md"))
+with open(os.path.join(REPO, "docs", "audit", "data", "audit_ledger.json"), "r", encoding="utf-8") as fh:
+    ledger_rows = json.load(fh)["rows"]
 rows = {
-    "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "**retained_bounded**",
-    "record_function_finite_sector_algebra_2026-06-05": "**retained**",
-    "record_unbounded_finite_additivity_schema_2026-06-06": "**retained**",
-    "post_record_clock_rate_interface_2026-06-06": "**retained_no_go**",
-    "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "**retained_no_go**",
-    "observable_principle_record_scalar_map_no_go_note_2026-06-05": "**retained_no_go**",
-    "post_record_count_probability_firewall_2026-06-06": "**retained_no_go**",
-    "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "**retained**",
+    "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded",
+    "record_function_finite_sector_algebra_2026-06-05": "retained",
+    "record_unbounded_finite_additivity_schema_2026-06-06": "audited_conditional",
+    "post_record_clock_rate_interface_2026-06-06": "retained_no_go",
+    "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "retained_no_go",
+    "observable_principle_record_scalar_map_no_go_note_2026-06-05": "retained_no_go",
+    "post_record_count_probability_firewall_2026-06-06": "retained_no_go",
+    "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "retained",
 }
 bad_rows = []
 for rid, want in rows.items():
-    line = next((ln for ln in ledger.splitlines() if f"`{rid}`" in ln and ln.strip().startswith("|")), "")
-    if want not in line:
-        bad_rows.append(rid)
+    got = ledger_rows.get(rid, {}).get("effective_status")
+    if got != want:
+        bad_rows.append((rid, got, want))
 capk_note = read(os.path.join(REPO, "docs", "OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md"))
 capk_ws = norm_ws(capk_note)
 capk_ok = all(s in capk_ws for s in ["REG-dyn", "REG-tau", "REG-thr", "REG-site", "(CAP-real) remains declared",
                                      "It is the association between the T1-d scalar readout increment and the registered collection"])
-check("B", "cited rows present in the audit ledger at the cited effective statuses (8 rows); the CAP-K source note is on disk with its four (REG) clause labels, '(CAP-real) remains declared', and the association sentence quoted in this note; the BR-license and canonical-proposal notes are consumed as unaudited sources (presence + wording only, no grade asserted)", (not bad_rows) and capk_ok, f"mismatches={bad_rows}")
+check("B", "cited rows present in the audit ledger at the cited effective statuses (8 rows; unbounded Record audited_conditional); the CAP-K source note is on disk with its four (REG) clause labels, '(CAP-real) remains declared', and the association sentence quoted in this note; the BR-license and canonical-proposal notes are consumed as unaudited sources (presence + wording only, no grade asserted)", (not bad_rows) and capk_ok, f"mismatches={bad_rows}")
 
 required = [
     "Status authority:",

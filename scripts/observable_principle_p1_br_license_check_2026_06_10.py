@@ -11,7 +11,8 @@ reduced the P1 license demand to the single clause
 
 and named the next hunt target: a retained finite-resolution/record-capacity
 adjacent structure. This runner verifies the hunt outcome over the retained
-record/measurement surface:
+record/measurement surface, with the unbounded Record schema consumed only as
+an audited-conditional supplied-record premise:
 
   POSITIVE (narrow lemmas, all reproven exactly here):
   - Lemma W (second demand reduction, BR => BR-int): the per-e-fold
@@ -31,8 +32,8 @@ record/measurement surface:
     recomputed on all 81 ordered disjoint subset pairs of a 4-sector model)
     with per-sector magnitude cap |v_i| <= M (CAP-M) and per-e-fold sector
     count cap <= K (CAP-K), THEN sup|W(ez) - W(z)| <= K*M: (BR-int) holds
-    and p = 0 is selected. In the retained unit-record schema CAP-M holds
-    with M = 1 by the schema's own normalization.
+    and p = 0 is selected. In the conditional supplied-record unit schema
+    CAP-M holds with M = 1 by the schema's own normalization.
 
   NEGATIVE (the no-go; computed witnesses, sub-clause by sub-clause):
   - (CAP-M) for general sector data has NO retained supplier: the retained
@@ -41,7 +42,7 @@ record/measurement surface:
     W_Q = (z^2-1)/2 registered as a SINGLE sector per e-fold (K = 1)
     satisfies the algebra verbatim with unbounded response.
   - (CAP-K) — the registration-RATE clause — has NO retained supplier and
-    is the exact gap: the retained unbounded finite-additivity schema
+    is the exact gap: the conditional unbounded finite-additivity schema
     affirmatively licenses arbitrary finite collections (I(R_n) = n, no
     cap); the witness assignment of 4^k UNIT records to e-fold k (M = 1,
     every prefix an exact finite collection, sum = (4^{K+1}-1)/3) is fully
@@ -346,9 +347,9 @@ check(
 unit_records = [sp.Integer(1)] * 7
 check(
     "A",
-    "unit-record normalization: in the retained unbounded-additivity schema every unit datum "
+    "unit-record normalization: in the conditional unbounded-additivity schema every unit datum "
     "is exactly 1, so (CAP-M) holds there with M = 1 by normalization (I(R_7) = 7 recomputed); "
-    "the open content is the realization clause + the rate cap (CAP-K)",
+    "the open content is the supplied-record realization clause + the rate cap (CAP-K)",
     sum(unit_records) == 7 and all(d == 1 for d in unit_records),
 )
 
@@ -521,7 +522,7 @@ ctx_bad = {
 }
 check(
     "B",
-    "cited rows present at their current admissible effective statuses (one-hop, presence check)",
+    "cited rows present at their current admissible effective statuses; unbounded Record is audited_conditional and local tomography is retained_pending_chain in the live ledger",
     not ctx_bad,
     detail=f"mismatches={ctx_bad!r}",
 )

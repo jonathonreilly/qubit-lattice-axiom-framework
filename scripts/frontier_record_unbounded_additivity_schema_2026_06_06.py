@@ -14,11 +14,14 @@ exact algebraic consequence relevant to the "bounded vs unbounded" question:
 from __future__ import annotations
 
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Iterable
 
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -150,6 +153,15 @@ def main() -> int:
     check("IID typicality remains open", gate_status["iid_typicality"] == "open")
     check("clock/rate remains open", gate_status["clock_rate"] == "open")
     check("dial selection remains open", gate_status["dial_selection"] == "open")
+
+    print("\nE. supplied-record premise firewall")
+    note = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note.split())
+    check("source note states bounded theorem / conditional-support status", "**Claim type:** bounded_theorem" in note and "actual_current_surface_status: conditional-support" in note)
+    check("source note has supplied-record premise firewall", "2026-06-15 Supplied-Record Premise Firewall" in note)
+    check("downstream citation rule is explicit", "conditional_on_supplied_nonzero_disjoint_records_and_readout_context" in note)
+    check("source note says Record does not supply producer/readout/unbounded availability", "does not supply the producer" in note_flat and "availability of arbitrarily many nonzero records" in note_flat)
+    check("downstream retained-authority firewall is explicit", "must not cite this row as retained authority" in note_flat)
 
     print()
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")

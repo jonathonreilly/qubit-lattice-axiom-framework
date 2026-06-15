@@ -2,6 +2,7 @@
 
 Date: 2026-06-06
 
+**Claim type:** bounded_theorem
 Status: conditional-support
 
 actual_current_surface_status: conditional-support
@@ -55,6 +56,26 @@ additivity plus arbitrary finite collection size. The conditional part is the
 existence/production of nonzero records, which Record explicitly does not
 supply.
 
+## 2026-06-15 Supplied-Record Premise Firewall
+
+Independent audit correctly kept this row conditional: the algebraic
+finite-additivity schema is exact, but the unbounded lift requires arbitrarily
+large finite collections of nonzero produced records in a supplied readout
+context. The Record axiom supplies durable registration and finite additivity
+after records exist; it does not supply the producer, the readout context, or
+the availability of arbitrarily many nonzero records.
+
+Downstream uses must therefore cite this row as:
+
+```text
+conditional_on_supplied_nonzero_disjoint_records_and_readout_context
+```
+
+They may use the fixed finite-prefix identities and the conditional
+`I(R_n)=n` arithmetic, but they must not cite this row as retained authority
+for record production, unbounded availability, probability, rate, dial
+selection, or capacity without carrying the supplied-record premise.
+
 ## Dynamics Implication
 
 The pre/post split becomes operational:
@@ -102,6 +123,8 @@ clock/rate, or stable dial setting.
   dynamics.
 - Does not select or force a Koide/generation dial location.
 - Does not update repo-wide audit data or effective status.
+- Downstream uses must remain conditional on supplied nonzero disjoint records
+  and a supplied readout context.
 
 ## Runner
 
@@ -126,3 +149,5 @@ The runner checks:
 - post-record integral counts versus normalized frequencies;
 - that production kernel, probability law, IID typicality, clock/rate, and
   dial selection remain open gates.
+- that downstream uses must not treat the unbounded lift as bare retained
+  authority without the supplied-record premise.

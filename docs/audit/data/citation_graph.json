@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_formula_honest_status_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
         "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
         "axiom_first_kms_condition_theorem_note_2026-05-01",
         "su3_casimir_fundamental_theorem_note_2026-05-02",
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
-        "hierarchy_formula_honest_status_note_2026-05-10"
+        "hierarchy_formula_honest_status_note_2026-05-10",
+        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6105fb7c822e89f0b790bd7c2e819be7745ac88065c9cdbcaea8eb1ea13a133c",
+      "note_hash": "731664d0b67c035f5d4397e682f0f7673a5b2e7749a8dc8c6b634f1081140838",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

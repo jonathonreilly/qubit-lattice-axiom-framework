@@ -437,6 +437,11 @@ check("J_cs is C3-equivariant ([J_cs, C]=0)", np.allclose(Jcs@C - C@Jcs, 0))
 check("J_cs COMMUTES with Gamma_chi (block-count route stays on the C3-equivariant side)",
       np.allclose(Gamma@Jcs - Jcs@Gamma, 0),
       f"||[J_cs,Gamma]||={np.linalg.norm(Gamma@Jcs-Jcs@Gamma):.4e}")
+jcs_doublet_block = doublet_block(Jcs)
+check("J_cs is the nonscalar antisymmetric complex structure, not a scalar doublet mass block",
+      np.allclose(Jcs.T, -Jcs)
+      and not np.allclose(jcs_doublet_block, np.trace(jcs_doublet_block) / 2.0 * np.eye(2)),
+      f"doublet block=\n{np.round(jcs_doublet_block,6)}")
 evj = np.linalg.eigvals(Jcs)
 check("J_cs eigenvalues {0, +i, -i} (singlet real, doublet one complex line)",
       np.allclose(sorted(np.round(evj.imag,6)), [-1,0,1]) and np.allclose(evj.real,0,atol=1e-9),

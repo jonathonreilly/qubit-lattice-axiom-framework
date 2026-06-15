@@ -16,10 +16,14 @@ Answer:
 
   and therefore
 
-      H = [[a,b,b],[b,c,d],[b,d,c]].
+      H = [[a,z,z],[z*,c,d],[z*,d,c]],  a,c,d in R, z in C.
+
+  The real four-parameter core [[a,b,b],[b,c,d],[b,d,c]] is only the
+  real/CP/phase-gauge specialization z=b in R; unitary P_23 invariance alone
+  does not force Im(z)=0.
 
   This is a real positive law from the graph-first route, but it still does not
-  fix the values `(a,b,c,d)` or the active sector.
+  fix the values `(a,z,c,d)` or the active sector.
 """
 
 from __future__ import annotations
@@ -90,15 +94,19 @@ def simplex_grid(step: float = 0.05) -> list[np.ndarray]:
     return pts
 
 
-def aligned_core(a: float, b: float, c: float, d: float) -> np.ndarray:
+def p23_hermitian_core(a: float, z: complex, c: float, d: float) -> np.ndarray:
     return np.array(
         [
-            [a, b, b],
-            [b, c, d],
-            [b, d, c],
+            [a, z, z],
+            [np.conjugate(z), c, d],
+            [np.conjugate(z), d, c],
         ],
         dtype=complex,
     )
+
+
+def real_aligned_core(a: float, b: float, c: float, d: float) -> np.ndarray:
+    return p23_hermitian_core(a, complex(b, 0.0), c, d)
 
 
 def canonical_coords(h: np.ndarray) -> tuple[float, float, float, float, float, float, float]:
@@ -166,16 +174,19 @@ def part3_residual_z2_forces_the_active_hermitian_core() -> None:
     print("PART 3: THE RESIDUAL Z2 FORCES THE ACTIVE HERMITIAN CORE LAW")
     print("=" * 88)
 
-    h = aligned_core(1.10, 0.26, 0.81, 0.17)
+    h = p23_hermitian_core(1.10, 0.26 + 0.19j, 0.81, 0.17)
     resid = np.linalg.norm(P23 @ h @ P23 - h)
     d1, d2, d3, r12, r23, r31, phi = canonical_coords(h)
 
+    check("The full complex aligned core is Hermitian", np.allclose(h, h.conj().T, atol=1e-12))
     check("The aligned core is exactly P23-invariant", resid < 1e-12, f"residual={resid:.2e}")
     check("Residual Z2 invariance forces d2=d3", abs(d2 - d3) < 1e-12, f"d2-d3={d2-d3:.2e}")
     check("Residual Z2 invariance forces r12=r31", abs(r12 - r31) < 1e-12, f"r12-r31={r12-r31:.2e}")
-    check("Residual Z2 invariance forces the triangle phase to vanish on the aligned Hermitian core", abs(phi) < 1e-12,
-          f"phi={phi:.2e}")
-    print(f"  [INFO] The active aligned Hermitian lane has exact form [[a,b,b],[b,c,d],[b,d,c]]  (r23={r23:.6f})")
+    check("Residual Z2 invariance does NOT force the fixed-axis coupling real", abs(np.imag(h[0, 1])) > 1e-12,
+          f"Im(z)={np.imag(h[0, 1]):.6f}")
+    check("The old real four-parameter core is recovered only by the specialization Im(z)=0",
+          np.allclose(real_aligned_core(1.10, 0.26, 0.81, 0.17), p23_hermitian_core(1.10, 0.26 + 0.0j, 0.81, 0.17)))
+    print(f"  [INFO] The active aligned Hermitian lane has exact form [[a,z,z],[z*,c,d],[z*,d,c]]  (r23={r23:.6f}, triangle_phase={phi:.6f})")
 
 
 def part4_this_route_derives_alignment_but_not_values_or_sector_choice() -> None:
@@ -183,8 +194,8 @@ def part4_this_route_derives_alignment_but_not_values_or_sector_choice() -> None
     print("PART 4: THIS ROUTE DERIVES ALIGNMENT, BUT NOT VALUES OR ACTIVE-SECTOR CHOICE")
     print("=" * 88)
 
-    h1 = aligned_core(1.10, 0.26, 0.81, 0.17)
-    h2 = aligned_core(0.93, 0.11, 1.04, 0.39)
+    h1 = p23_hermitian_core(1.10, 0.26 + 0.19j, 0.81, 0.17)
+    h2 = p23_hermitian_core(0.93, 0.11 - 0.07j, 1.04, 0.39)
     sigma = np.block([[np.zeros((3, 3), dtype=complex), np.eye(3)], [np.eye(3), np.zeros((3, 3), dtype=complex)]])
     pair_nu = np.block([[h1, np.zeros((3, 3), dtype=complex)], [np.zeros((3, 3), dtype=complex), np.diag([0.1, 0.2, 0.3])]])
     pair_e = sigma @ pair_nu @ sigma
@@ -217,6 +228,7 @@ def main() -> int:
     print("    - the hw=1 cube selector derives a weak-axis choice")
     print("    - the selected axis carries residual Z2")
     print("    - that residual Z2 forces the aligned active Hermitian core")
+    print("    - the core keeps the complex off-axis coupling allowed by Hermiticity")
     print()
     print("  Boundary:")
     print("    - this route does not fix the aligned-core values")

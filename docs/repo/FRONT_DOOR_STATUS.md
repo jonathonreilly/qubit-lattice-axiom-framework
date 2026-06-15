@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1498 |
+| Applied audit verdicts | 1499 |
 | Retained-grade rows, including boxed decorations | 1385 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 921 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1494 |
+| Unaudited rows | 1493 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 24 |
+| Audited conditional rows | 25 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1496 |
-| Ready rows | 68 |
+| Total pending rows | 1495 |
+| Ready rows | 67 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 273 |
-| Medium pending | 461 |
+| Medium pending | 460 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md) - medium; unaudited
 - [`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md) - medium; unaudited
 - [`dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`multisite_pauli_group_theorem_note_2026-05-02`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`gellmann_completeness_theorem_note_2026-05-02`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
+- [`gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08`](../../docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -64,14 +64,14 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `unaudited` | 159 |
 | high | `unaudited` | 158 |
 | medium | `unaudited` | 95 |
-| high | `audited_conditional` | 4 |
 | critical | `open_gate` | 3 |
+| high | `audited_conditional` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| medium | `audited_conditional` | 2 |
 | critical | `audited_renaming` | 1 |
-| medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
@@ -82,13 +82,13 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
-| High nodes | 515 |
-| Medium nodes | 927 |
+| High nodes | 514 |
+| Medium nodes | 928 |
 | Leaf nodes | 1470 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1596 descendants; score 136.641
+- `minimal_axioms` - critical; 1597 descendants; score 136.642
 - `three_generation_observable_theorem_note` - critical; 1008 descendants; score 64.479
 - `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
 - `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950

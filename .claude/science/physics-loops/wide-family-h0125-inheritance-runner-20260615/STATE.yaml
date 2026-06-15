@@ -1,0 +1,22 @@
+loop: wide-family-h0125-inheritance-runner-20260615
+goal: "Register an inheritance runner packet for the narrowed wide-family h=0.125 reopen-audit row."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+target_claim_id: wide_family_h0125_bridge_reopen_audit
+target_blocker_text: "Audited clean retained_bounded row had runner_path null because the narrowed binding evidence is inherited from retained h=0.125 dependency rows."
+source_of_blocker_text: audit_ledger
+reachability_to_target: closes
+artifact_role: runner_certificate
+files_touched:
+  - docs/WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md
+  - scripts/audit_companion_wide_family_h0125_inheritance_packet_2026_06_15.py
+  - logs/runner-cache/audit_companion_wide_family_h0125_inheritance_packet_2026_06_15.txt
+verification:
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh scripts/audit_companion_wide_family_h0125_inheritance_packet_2026_06_15.py"
+  - "python3 docs/audit/scripts/build_citation_graph.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+pipeline_result: "pass; hard invalidations 0; audit_lint errors 0; local ready count 2"
+pr_status: pending
+next_exact_action: "Open review PR against main."
+stop_condition: "Review PR opened."

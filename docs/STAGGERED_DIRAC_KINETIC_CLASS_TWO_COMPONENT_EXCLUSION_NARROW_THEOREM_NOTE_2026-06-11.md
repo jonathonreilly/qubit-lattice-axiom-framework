@@ -8,13 +8,16 @@
 matter-statistics clause (the matter measure is the single-mode
 Grassmann partition: one pair `(χ_x, χ̄_x)` per site on the dim-2
 per-site Cl(3) module, consumed at its declared grade), the
-2-component naive-Dirac kinetic alternative exhibited by
-realization-gate runner check 18 is EXCLUDED: realizing it as a
+2-component naive-Dirac kinetic alternative
+`D_2c = sum_mu sigma_mu tensor nabla_mu`, reconstructed in this note and
+in its runner on the periodic `4^3` torus, is EXCLUDED: realizing it as a
 Grassmann quadratic form needs two Grassmann pairs per site, two
 fermion modes per site generate the CAR(2) algebra ≅ `M_4(C)`
 (dim 16), and there is no unital (indeed no nonzero) *-embedding of
-`M_4(C)` into the per-site algebra `M_2(C)` (dim 4). The realization
-gate's residual #1 (kinetic-class premise) thereby NARROWS from
+`M_4(C)` into the per-site algebra `M_2(C)` (dim 4). The broad
+realization gate is a downstream consumer of this narrow result, not a
+load-bearing supplier for the result's proof. Its residual #1
+(kinetic-class premise) thereby NARROWS from
 "rival open" to "rival excluded, bounded on substep-1's declared
 surface". It does NOT vanish: non-nearest-neighbor and other
 one-mode-per-site-compatible kinetic forms remain unexcluded, the
@@ -33,9 +36,11 @@ minute)
 **Authority role:** narrow theorem formalizing the exclusion route that
 the realization gate note's §5 residual 1 currently states in prose
 ("the exclusion of that alternative currently routes through the
-substep-1 single-mode surface"). It narrows that residual; it does not
-change any existing row's status and it carries no hierarchy-lane
-content (§6 non-conflation warning).
+substep-1 single-mode surface"). The proof is self-contained on the
+finite rival operator reconstructed here; the realization gate is a
+consumer/context pointer. This note narrows that residual; it does not
+change any existing row's status and it carries no hierarchy-lane content
+(§6 non-conflation warning).
 
 ## 0. Changelog
 
@@ -44,6 +49,11 @@ content (§6 non-conflation warning).
   `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (§5 residual 1
   and its runner's check 18) and the current (2026-06-10/11) substep-1
   surface.
+- **2026-06-15.** Source-edge repair: the broad realization-gate parent
+  is no longer a load-bearing markdown dependency. This note now states
+  the 2-component rival directly and keeps the gate note as a
+  non-load-bearing consumer/context pointer. The theorem, runner, and
+  boundaries are unchanged.
 
 ## 1. Question
 
@@ -122,12 +132,6 @@ Load-bearing markdown-link upstream dependencies:
   accepted axiom premise: Quantum = one qubit per site
   (`A_x ≅ M_2(C) ≅ Cl(3,0)`), Lattice = `Z^3` with nearest-neighbor
   cubic adjacency. Axiom premise nodes chain-satisfy without bounding.
-- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-  — the consumer gate (2026-06-09/10 bounded synthesis): supplies the
-  target object (§5 residual 1, the kinetic-class premise) and the
-  rival's exact construction (its runner's check 18, which this note's
-  runner reproduces verbatim: `D_2c = Σ_μ σ_μ ⊗ ∇_μ`,
-  `∇_μ = (T_μ − T_μ^T)/2`, kernel dim 16 on the periodic 4³ torus).
 - [`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md)
   — substep-1 block theorem (2026-06-11 surface): supplies the
   matter-statistics clause consumed as this theorem's premise — the
@@ -146,6 +150,9 @@ Plain-text (non-load-bearing) reader pointers, written without markdown
 links so the citation-graph builder does not parse them as upstream
 dependency edges:
 
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` — downstream
+  consumer/context only. Its check-18 rival is the same finite operator
+  reconstructed here, but the proof below does not import that note.
 - `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`
   — sibling/consistency twin: its absorbing-frame theorem step (i)
   computes the same CAR(2) → `M_4(C)` dim-16 fact on the

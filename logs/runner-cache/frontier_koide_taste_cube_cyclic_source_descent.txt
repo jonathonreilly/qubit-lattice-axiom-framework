@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_taste_cube_cyclic_source_descent.py
-runner_sha256: 12ecd413fa7919443e5f723a1487209676680d86de90002ae7a032d3ad319f5b
+runner_sha256: 01ed6f3189c0015169b45d2749d31bc9ff451c05e0784472abcc70360a6ca08f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -39,7 +39,7 @@ PART 4: any Schur-compatible full-cube response factors through r0, r1, r2
   [PASS] [NUMERIC] The response law ReTr(S(M) P1 A8(X) P1) factors exactly through r0, r1, r2  (M0/X0: coord=0.0e+00, fact=3.6e-15; M0/X1: coord=0.0e+00, fact=0.0e+00; M0/X2: coord=1.1e-16, fact=7.1e-15; M0/X3: coord=1.1e-16, fact=3.6e-15; ...)
 
 Interpretation:
-  The physical taste cube does not force us back to a vague Hermitian
+  The finite taste cube does not force us back to a vague Hermitian
   source-response target. Exact C_3[111] averaging and a Schur-compatible
   charged-sector reduction collapse the full 8-corner Hermitian source
   responses to the same three cyclic channels already identified on T_1.

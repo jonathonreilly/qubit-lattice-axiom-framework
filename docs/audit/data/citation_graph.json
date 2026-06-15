@@ -51474,11 +51474,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
+      "to": "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02"
+      "to": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07"
     },
     {
       "from": "repo.front_door_status",
@@ -98990,8 +98990,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "su3_casimir_fundamental_theorem_note_2026-05-02",
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
+        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
         "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
         "hierarchy_formula_honest_status_note_2026-05-10",
         "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
@@ -99000,7 +99000,7 @@
         "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "583f27678fd7b55f65f35e80c2a006fdae715ac5c429c7d2f95fc66010775493",
+      "note_hash": "2c7cda834f930930212b7da63c4cbab4ab612147456fbd47e6b0bd8ce362d878",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 212 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 907 |
+| **retained_bounded** | 908 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
 | unaudited | 1530 |
-| audit_in_progress | 1 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 29 |
@@ -58,8 +57,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 1335 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 1336 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 25 |
@@ -130,7 +129,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -187,6 +185,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2340,6 +2339,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Because the finite anti-Hermitian staggered Dirac matrix anticommutes with epsilon, D^dag D commutes with epsilon and D bijects the positive-eigenvalue epsilon=+ and epsilon=- subspaces, so Tr(epsilon exp(-t D^dag D)) equals n_+ - n_- and is t-independent/integer-valued.  _(class `A`)_
 - **chain closes:** True — The core identity closes by finite-dimensional linear algebra: even periodicity makes epsilon flip on every nearest-neighbor hop, anti-Hermiticity gives a normal D, and D pairs all nonzero D^dag D eigenspaces across epsilon signs. The gauge-invariance and explicit-background checks are direct finite matrix/U(1) computations in the supplied runner source.
 - **rationale:** The cited minimal-axiom authority is explicitly flagged as an accepted axiom premise, and the retained cited authorities are not used for any open SME/anomaly identification. The runner source actually constructs the finite matrices, U(1) links, heat kernels, spectra, plaquettes, and Polyakov loops; it does not hard-code the contested trace values or compare to an external calibrated source. The source note is correctly narrowed to bounded finite trace support, with observed index zero and no claimed ABJ/cohomology/continuum bridge.
+- **auditor confidence:** high
+
+### `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`
+
+- **Note:** [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Equal-time tensor-factor locality on the one-site lattice algebra, finite-range LR bounds for finite-range support carriers, the free U=1 bilinear exact-log quasilocal LR envelope, and only the conditional same-sector continuum scaling corollary; gauged/interacting exact-log locality and full Wightman microcausality are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-194246-6b1e98132a-axiom_first_microcausality_l`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Step 2: the finite-range bridge supplies the overlap-weight LR velocity v_LR = 2 e q W R, and the free-bilinear quasilocal LR bridge supplies ||[alpha_t(O_x), O_y]|| <= 2||O_x||||O_y|| exp(-mu d_1(x,y) + 4 W_mu |t|).  _(class `A`)_
+- **chain closes:** True — M1 closes by ordinary tensor-factor algebra, M2a/M2b are direct applications of retained-bounded LR bridge authorities with matching constants, and M3 is only the algebraic scaling consequence under its explicitly supplied same-sector Lorentz-slope premise.
+- **rationale:** The finite-range LR constant independently checks from the iterated-commutator series tail: with a = 2qW|t| and n0 >= D/R, the exponential envelope has v_LR = 2e q W R. The quasilocal exact-log leg closes through the cited finite W_mu weighted-path argument, with the conservative 4 W_mu factor still valid. The helper runners compute the free exact-log kernel, weighted overlaps, finite-matrix commutator envelopes, and falsification controls rather than merely printing constants. The clean verdict is limited to the stated bounded sectors and does not promote the gauged/interacting exact-log frontier or full continuum QFT microcausality.
 - **auditor confidence:** high
 
 ### `axiom_first_reeh_schlieder_theorem_note_2026-05-01`

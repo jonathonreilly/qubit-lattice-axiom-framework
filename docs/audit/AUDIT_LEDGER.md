@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 914 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1514 |
+| unaudited | 1513 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 15 |
+| ~~audited_conditional~~ | 16 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1348 |
-| `audited_conditional` | 15 |
+| `audited_conditional` | 16 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1831 |
+| `unaudited` | 1830 |
 
 | claim_type | count |
 |---|---:|
@@ -1487,6 +1487,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10535,6 +10536,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For H = a I + b C + bbar C^2, the orthogonal projections give E_+(H)=3a^2 and E_perp(H)=6|b|^2, so the equal-weight constrained log functional is extremized at E_+=E_perp, equivalently kappa=2, while the clock action rho(C^k)=omega^k C^k gives the stated d=3 irrep-count uniqueness.  _(class `A`)_
 - **chain closes:** True — T1-T3 close by direct matrix algebra: tr(C)=tr(C^2)=0, C is unitary, the trace line is Frobenius-orthogonal to the {C,C^2} block, and log E_+ + log E_perp on a fixed positive sum is maximized at equality. T4 closes from the retained cited authority defining the nontrivial clock action rho(M)=Omega^{-1}MOmega, proving rho(C^k)=omega^k C^k and the trivial/doublet/sign count.
 - **rationale:** The restricted packet supplies a retained bridge for the clock-action convention that previously would have been the only serious missing premise. Independent formula inventory finds the displayed factors and signs consistent: ||aI||_F^2=3a^2, the two off-identity circulant modes contribute 3|b|^2 each with zero cross trace, the equal-weight log optimum is E_+=E_perp, and the d=2..6 multiplicity table matches 1, floor((d-1)/2), and the even-d sign line. The note explicitly excludes the F1-vs-F3 canonical-weighting selection and physical charged-lepton identification, so the open derivation gap is not load-bearing for this narrowed algebraic theorem.
+- **auditor confidence:** high
+
+### `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the claim that block-total Frobenius energies on `Herm_circ(3)` provide the 1:1 MRU real-isotype measure and close operator-side `kappa = 2`, including the stated `d = 3` uniqueness.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-212851-31e3ab575c-koide_kappa_block_total_frob`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The block-total law `S_block(H) = log E_+ + log E_perp` at fixed `E_+ + E_perp` extremizes at `E_+ = E_perp`, hence `3 a^2 = 6 |b|^2` and `kappa = a^2/|b|^2 = 2`, with the `(1,1)` weights justified as one scalar per real isotype.  _(class `A`)_
+- **chain closes:** False — The Frobenius formulas and equal-weight extremum close algebraically for a stipulated block-total law. The cited authorities do not derive the physical SO(2) quotient or canonical scalar-lane 1:1 measure, so the claimed no-residue operator-side closure imports an extra bridge.
+- **rationale:** Issue: The local `E_+`, `E_perp`, and equal-weight extremum are valid algebra, but the note elevates the chosen block-total law to the canonical physical scalar-lane measure using an SO(2)-quotient bridge that both cited authorities explicitly withhold; the proof sketch also writes the sign multiplicity as `d mod 2` where the table and algebra require even-parity sign. Why this blocks: Without the carrier-identification or canonical-measure theorem, the conclusion that the operator-side measure choice is resolved and closes `kappa = 2` does not follow from the cited retained-bounded inputs. Repair target: Add an independently audited theorem deriving the scalar-lane SO(2) quotient or canonical block-total extremal principle from retained inputs, and correct the displayed all-`d` sign-multiplicity formula. Claim boundary until fixed: The packet supports the bounded algebra that the stipulated block-total law on `Herm_circ(3)` has its equal-weight extremum at `kappa = 2`.
+- **open / conditional deps cited:**
+  - `KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`
+  - `KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`
 - **auditor confidence:** high
 
 ### `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`

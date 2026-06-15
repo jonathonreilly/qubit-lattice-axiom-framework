@@ -1,8 +1,8 @@
-# W8a Statistics Atom Reduces To Product Form On The Retained Gleason/Busch Surface
+# W8a Statistics Atom Reduces To Product Form Under A Supplied Product Instance
 
 **Date:** 2026-06-12
-**Claim type:** bounded_theorem
-**Status:** source proposal; independent audit required.
+**Claim type:** bounded_theorem / bounded support under a supplied product-form joint instance
+**Status:** source proposal under supplied product-form joint instance; independent audit required.
 **Status authority:** independent audit lane. This source note does not set,
 predict, promote, or demote any audit outcome and does not edit audit-owned
 registry, ledger, queue, or publication-status surfaces. The
@@ -11,14 +11,21 @@ audit verdict.
 **Primary runner:** `scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py`
 **Runner cache:** `logs/runner-cache/frontier_statistics_atom_reduces_to_product_form_2026_06_12.txt`
 
-## Boundary
+## 2026-06-15 audit-boundary repair: product-form is a supplied bounded premise
 
-This note proves K1-K4 on the retained Gleason/Busch surface:
+This repair makes the non-retained input explicit. The retained
+Gleason/Busch surface supplies the one-copy Born form. It does **not** supply
+physical independence, iid repetition, or a product-form joint registration
+law. The product object `sigma tensor sigma` is therefore a row-local supplied
+bounded premise, not a retained theorem and not an axiom.
+
+The source claim is correspondingly narrow:
 
 - K1 restates the retained Born form on the supplied two-outcome partition.
-- K2 derives product composition after the registered pair is carried by the
+- K2 derives product weights after the registered pair is **supplied** as the
   product instance `sigma tensor sigma`.
-- K3 rederives the agreement-conditioned sharpening flow.
+- K3 rederives the agreement-conditioned sharpening flow under that supplied
+  product instance.
 - K4 reduces the wave-8a statistics atom to one named premise: repeated
   registrations are carried by product-form instances of the registered
   surface.
@@ -28,8 +35,14 @@ iid/product composition as a physical fact, does not adopt R-D, does not select
 an occupancy cell, does not fix `r`, and does not import probability beyond the
 retained Gleason/Busch surface. The Born form here is the cited retained
 authority, not a new rule. For firewall clarity: the product-form premise is
-named, not discharged; R-D stays proposed; no occupancy cell is selected; `r`
-is never fixed; the occupancy binary stays open.
+the supplied bounded premise for this row; it is named, not derived or
+retained. R-D stays proposed; no occupancy cell is selected; `r` is never
+fixed; the occupancy binary stays open.
+
+## Boundary
+
+This note proves K1-K4 only in the bounded setting above: retained one-copy
+Born authority plus a supplied product-form joint instance.
 
 ## The Retained Surface
 
@@ -71,9 +84,10 @@ For a partition `{P_s, P_d}` with `P_s + P_d = I`, the retained form gives
 `p_s + p_d = Tr(sigma) = 1`. Positivity of `sigma` and of the projectors gives
 `p_s, p_d in [0,1]`.
 
-**K2 — product composition derived.** For two registrations carried by a
-product instance `sigma tensor sigma` on the joint lattice, with the product
-partition `{P_j tensor P_k}`, the same Born form on the joint algebra gives
+**K2 — product composition from the supplied joint instance.** For two
+registrations carried by a supplied product instance `sigma tensor sigma` on
+the joint lattice, with the product partition `{P_j tensor P_k}`, the same
+Born form on the joint algebra gives
 
 ```text
 m(P_j tensor P_k)
@@ -82,8 +96,9 @@ m(P_j tensor P_k)
   = p_j p_k.
 ```
 
-Thus multiplicative composition is no longer a premise once the product-form
-instance has been named: it is the retained Born form evaluated on the product.
+Thus multiplicative weights are no longer an additional algebraic premise
+*after* the product-form joint instance has been supplied: they are the retained
+Born form evaluated on that supplied product object.
 The runner verifies the trace-tensor lemma symbolically on the supplied
 two-sector surface with generic `sigma`. **[check K2]**
 
@@ -95,7 +110,8 @@ p_i' = p_i^2 / (p_s^2 + p_d^2).
 ```
 
 For the outcome ratio `x = p_d / p_s`, this sends `x` to `x^2`. With
-`x = 2r`, the retained wave-8a records-flow coordinate obeys
+`x = 2r`, the bounded wave-8a records-flow coordinate obeys, under the
+supplied product-form joint instance,
 `r -> 2r^2`; its inverse direction is `r -> sqrt(r/2)`, the thermalizing map.
 The wave-8a G2 identification is reproven inline here as this ratio
 calculation. **[check K3]**
@@ -114,8 +130,9 @@ stationarity/independence residual of the unraveling lane, especially
 `UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md`
 and
 `UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md`.
-Everything else in the R-D bridge is derived on retained authority once that
-premise is supplied. **[check K4]**
+Everything else in this row's R-D algebraic reduction is derived from retained
+Born authority once that premise is supplied. The physical product-form premise
+itself remains open outside this bounded row. **[check K4]**
 
 The runner also checks a correlated joint-state witness:
 `rho_corr = p_s P_s tensor P_s + p_d P_d tensor P_d`. It has the same one-copy
@@ -127,7 +144,7 @@ the control showing that the product-form premise does real work.
 
 After this note, the occupancy lane's open content is:
 
-- the product-form premise, named with the record-stack
+- the product-form premise, named as a supplied bounded premise with the record-stack
   stationarity/independence home above;
 - the outcome dictionary, the wave-9 tri-guise binary;
 - the durability-to-weight coupling.
@@ -137,7 +154,7 @@ Each item is named; none is selected here. The route remains live.
 ## Does Not
 
 - This does not assert iid/product composition as a physical fact.
-- This does not discharge the product-form premise.
+- This does not discharge, retain, or physically select the product-form premise.
 - This does not adopt R-D or any R-D bridge premise.
 - This does not select the wave-9 tri-guise outcome dictionary.
 - This does not select any occupancy cell and does not fix `r`.

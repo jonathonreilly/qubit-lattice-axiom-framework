@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Verify the W8a statistics-atom reduction to the product-form premise.
+"""Verify the W8a statistics-atom reduction under a supplied product instance.
 
 The runner has two jobs:
 
-* symbolic algebra for K1-K4 on the retained Gleason/Busch two-sector surface;
+* symbolic algebra for K1-K4 on the retained Gleason/Busch one-copy surface
+  plus a supplied product-form joint instance;
 * textual firewall checks for the companion bounded note.
 
 It writes no files, invokes no git command, and uses no network.
@@ -193,11 +194,11 @@ def symbolic_checks() -> dict[str, bool]:
 
     born_retained = all([k1_2d_sum, k1_3d_sum])
     product_form = all(k2_cells) and k2_complete
-    retained_flow = ratio_map and r_map and inverse_ok
+    bounded_flow = ratio_map and r_map and inverse_ok
     non_retained_only_product = product_form and corr_nonfactor and corr_identity
-    k4_assembly = born_retained and product_form and retained_flow and non_retained_only_product
+    k4_assembly = born_retained and product_form and bounded_flow and non_retained_only_product
     check(
-        "K4 reduction assembly: retained Born form plus product form gives retained flow",
+        "K4 reduction assembly: retained Born form plus supplied product form gives bounded flow",
         k4_assembly,
         "non-retained ingredient isolated as the product-form instance premise",
     )
@@ -205,7 +206,7 @@ def symbolic_checks() -> dict[str, bool]:
     return {
         "k1": born_retained,
         "k2": product_form,
-        "k3": retained_flow,
+        "k3": bounded_flow,
         "k4": k4_assembly,
     }
 
@@ -268,7 +269,8 @@ def textual_checks() -> None:
     )
 
     firewall_phrases = [
-        "the product-form premise is named, not discharged",
+        "the product-form premise is the supplied bounded premise for this row",
+        "it is named, not derived or retained",
         "does not assert",
         "the occupancy binary stays open",
         "R-D stays proposed",
@@ -336,9 +338,18 @@ def textual_checks() -> None:
     )
     check("B12 No-promotion statement present", no_promotion in note_n)
 
-    check("B13 Date and bounded_theorem claim type present", "**Date:** 2026-06-12" in note and "**Claim type:** bounded_theorem" in note)
+    check(
+        "B13 Date and supplied-product bounded_theorem claim type present",
+        "**Date:** 2026-06-12" in note
+        and "**Claim type:** bounded_theorem / bounded support under a supplied product-form joint instance" in note,
+    )
     check("B14 K1-K4 check tags present", all(tag in note for tag in ["[check K1]", "[check K2]", "[check K3]", "[check K4]"]))
     check("B15 product-form premise is named but not discharged", "That premise is named, not discharged." in note)
+    check(
+        "B16 source does not call the product-form premise retained",
+        "product-form premise is retained" not in note_n
+        and "retained product-form premise" not in note_n,
+    )
 
 
 def print_stat_and_summary(results: dict[str, bool]) -> None:
@@ -356,7 +367,7 @@ def print_stat_and_summary(results: dict[str, bool]) -> None:
     print("SUMMARY:")
     print(
         "K1-K4 verified symbolically; note firewall, dependency links, "
-        "backticked context, and No-promotion statement verified."
+        "supplied-product boundary, backticked context, and No-promotion statement verified."
     )
     print(
         "The only non-retained ingredient isolated by the computation is the "

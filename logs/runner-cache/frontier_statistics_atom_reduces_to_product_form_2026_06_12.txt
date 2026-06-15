@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py
-runner_sha256: 6ed0dc1d3df6fdbca3dfdacd48683be2480114cad101b8947ea8f6aab70f6b4a
+runner_sha256: d6f45dbe1c6a72ad17119f17acfb8111b501c9e7d2a340099e7b98f436d9615f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 W8a statistics atom reduction runner
@@ -28,7 +28,7 @@ PASS: K4 structural witness: correlated joint weights do not factor
       w_sd=0, product p_s p_d=p_d*p_s
 PASS: K4 structural witness: agreement conditioning is identity
       conditioned=(p_s/(p_d + p_s), p_d/(p_d + p_s))
-PASS: K4 reduction assembly: retained Born form plus product form gives retained flow
+PASS: K4 reduction assembly: retained Born form plus supplied product form gives bounded flow
       non-retained ingredient isolated as the product-form instance premise
 
 ========================================================================================
@@ -48,22 +48,23 @@ PASS: B10 markdown link inventory is exactly the three requested dependencies
 PASS: B11 context and companion names are backticked only
       missing=[]; linked=[]
 PASS: B12 No-promotion statement present
-PASS: B13 Date and bounded_theorem claim type present
+PASS: B13 Date and supplied-product bounded_theorem claim type present
 PASS: B14 K1-K4 check tags present
 PASS: B15 product-form premise is named but not discharged
+PASS: B16 source does not call the product-form premise retained
 
 ========================================================================================
 git diff --stat
 ========================================================================================
 (computed without invoking git, per the no-git rule)
- docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md | 169 +
- scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py | 379 +
- 2 files changed, 548 insertions(+)
+ docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md | 186 +
+ scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py | 390 +
+ 2 files changed, 576 insertions(+)
 
 SUMMARY:
-K1-K4 verified symbolically; note firewall, dependency links, backticked context, and No-promotion statement verified.
+K1-K4 verified symbolically; note firewall, dependency links, supplied-product boundary, backticked context, and No-promotion statement verified.
 The only non-retained ingredient isolated by the computation is the named product-form instance premise.
-TOTAL: PASS=25 FAIL=0
+TOTAL: PASS=26 FAIL=0
 CHAIN: {'k1': True, 'k2': True, 'k3': True, 'k4': True}
 
 ----- stderr -----

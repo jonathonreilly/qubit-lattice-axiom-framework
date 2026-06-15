@@ -1,0 +1,18 @@
+loop: statistics-product-form-boundary-20260615
+goal: "Unlock the audited-conditional statistics-product row by making the product-form joint instance an explicit supplied bounded premise."
+target_claim_id: statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md
+  - scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py
+  - logs/runner-cache/frontier_statistics_atom_reduces_to_product_form_2026_06_12.txt
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py"
+  - "python3 -m py_compile scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only"
+  - "git diff --check"
+next_exact_action: "Independent audit should re-audit the row from the ready queue; branch does not edit audit verdicts."
+stop_condition: "PR opened for review-loop extraction."

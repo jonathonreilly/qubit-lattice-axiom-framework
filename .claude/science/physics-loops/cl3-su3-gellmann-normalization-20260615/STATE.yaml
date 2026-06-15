@@ -1,0 +1,16 @@
+loop_id: cl3-su3-gellmann-normalization-20260615
+branch: physics-loop/cl3-su3-gellmann-normalization-20260615
+base: origin/main
+status: review_pr_ready
+artifact_role: post_audit_formula_repair
+target_note: docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md
+target_runner: scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py
+audit_scope:
+  mode: source_repair_only
+  applies_audit_verdicts: false
+  edits_audit_ledgers: false
+repair_summary:
+  - corrected 8D trace normalization from one-half delta to delta
+  - corrected structure-constant trace formula to use t=lambda/2
+  - added full 64-pair 8D Gram check to runner
+expected_result: "TOTAL: PASS=110, FAIL=0"

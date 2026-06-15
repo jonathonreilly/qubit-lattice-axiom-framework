@@ -20850,11 +20850,21 @@
     "primary_runner": "scripts/frontier_wolfenstein_lambda_a_structural_identities.py"
   },
   "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18": {
-    "helper_runner_paths": [],
-    "helper_runners": [],
+    "helper_runner_paths": [
+      "scripts/frontier_atomic_hydrogen_lattice_companion.py",
+      "scripts/frontier_atomic_helium_hartree_companion.py",
+      "scripts/frontier_atomic_helium_jastrow_companion.py",
+      "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py"
+    ],
+    "helper_runners": [
+      "frontier_atomic_hydrogen_lattice_companion",
+      "frontier_atomic_helium_hartree_companion",
+      "frontier_atomic_helium_jastrow_companion",
+      "frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier"
+    ],
     "is_pending": true,
-    "primary_basename": "frontier_atomic_hydrogen_lattice_companion",
-    "primary_runner": "scripts/frontier_atomic_hydrogen_lattice_companion.py"
+    "primary_basename": "frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12",
+    "primary_runner": "scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py"
   },
   "work_history.ckm.cabibbo_bound_note": {
     "helper_runner_paths": [],

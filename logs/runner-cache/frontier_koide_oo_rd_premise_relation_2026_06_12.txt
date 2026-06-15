@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_oo_rd_premise_relation_2026_06_12.py
+runner_sha256: dbc811b37e10c0c9dd4f1b8ad6c6d43ab9b48696cd6d07a7d115857b8ceb3970
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+========================================================================
+Orbit-occupancy / records-flow durability premise relation on the current checked surface
+========================================================================
+
+--- A-class: theorem checks
+[PASS] (01) Fix(phi) for phi(r) = 2 r^2 over the reals is exactly {0, 1/2}  [computed=[0, 1/2]]
+[PASS] (02) under s = 1/r, phi conjugates to s -> s^2/2 and s = 0 is fixed  [conjugated=s**2/2]
+[PASS] (03) r = 0 forces the exactly degenerate spectrum [a, a, a] in the B -> 0 limit  [limit=[a, a, a]]
+[PASS] (04) r -> infinity forces a -> 0 at fixed doublet content, but positive channel weights require a > 0; trace sum(lambda_k)=3a  [trace_difference=0]
+[PASS] (05) {0, 1/2, infinity} minus the two side-condition exclusions is exactly {1/2}  [admissible={1/2}]
+[PASS] (06) r = 1/2 <-> rho = 1 <-> Z_d = pi/g under r = 1/(2 rho), rho = (pi/g)/Z_d  [rho=[1], Z_d=[pi/g]]
+[PASS] (07) orbit-occupancy's realized value is phi-stationary: phi(1/2) = 1/2 exactly
+[PASS] (08) Fix(psi) for psi(r) = r^2 is {0, 1}, plus infinity by the same projective conjugation  [finite=[0, 1], conjugated=s**2]
+[PASS] (09) under psi the same exclusions leave {1}, the sector cell, not orbit-occupancy's r = 1/2 count  [admissible={1}]
+[PASS] (10) orbit-occupancy's realized value is not psi-stationary: psi(1/2) = 1/4 != 1/2
+[PASS] (11) net relation assembled: records-flow durability => orbit-occupancy realization under phi + side conditions; orbit-occupancy => phi-stationarity; law-equivalence fails via psi
+
+--- B-class: note consistency checks
+[PASS] (12) note quotes both premise statements verbatim
+[PASS] (13) note carries supplied-flow boundary, proposed/NOT adopted language, Status authority, and No-promotion statement
+[PASS] (14) context notes are backticked only; the note's .md link inventory is exactly the two load-bearing dependencies and both resolve  [links=['FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md', 'KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md']]
+
+SUMMARY: PASS=14 FAIL=0
+
+----- stderr -----
+

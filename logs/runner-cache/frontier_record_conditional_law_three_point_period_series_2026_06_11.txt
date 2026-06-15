@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py
-runner_sha256: b52c4cdc8236a2fa02edfad1c7434fb2b28887ab603a9c46d232be921045740a
+runner_sha256: f38f825b244b635d02ec89ab483ab864bd1b79d2ffbed422b7b57b386c4ad6f6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 48.46
+elapsed_sec: 47.12
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -20,7 +20,7 @@ Part 1  L = 3 baseline SET (both #3554 events) and L = 4 set (#3555 seeds)
    L=4 seed 4242: d9 global 0.399 | 0.609/0.638/0.690 min-gain 0.0286 | gap +0.217
   [PASS] L=4 seed 99: rank guard  (min-sv 0.0014)
    L=4 seed 99: d8 global 0.572 | 0.597/0.665/0.784 min-gain 0.0677 | gap +0.076
-  [PASS] L=4 set reproduces #3555: UNIFORMLY CLEAR gains (min-gain > 0.02 every seed) and all-tested seeded-null positivity  (min-gains ['0.030', '0.029', '0.068']; gaps ['+0.193', '+0.217', '+0.076'])
+  [PASS] L=4 set reproduces #3555: UNIFORMLY CLEAR gains (min-gain > 0.02 every seed) and all-tested fixed sampled-null clearing  (min-gains ['0.030', '0.029', '0.068']; gaps ['+0.193', '+0.217', '+0.076'])
 ==============================================================================
 Part 2  L = 5 (15 modes, 32768-dim; expm_multiply action): SIX seeds
 ==============================================================================
@@ -38,20 +38,22 @@ Part 2  L = 5 (15 modes, 32768-dim; expm_multiply action): SIX seeds
    L=5 seed 20260611: d7 global 0.635 | 0.648/0.653/0.714 min-gain 0.0049 | gap -0.030
   [PASS] (G1) L=4's UNIFORM CLARITY DOES NOT PERSIST: at L=5 the min-gain ledger has 4/6 clear (> 0.01) and 2/6 MARGINAL (< 0.01) -- no systematic period strengthening of the conditioning gains (the honest three-point finding)  (min-gains ['0.0142', '0.0430', '0.0509', '0.0050', '0.0281', '0.0049'])
   [PASS] (G1b, panel-required) #3555's LITERAL criterion -- strict monotonicity (min-gain > 0) -- PERSISTS 6/6 at L=5: only the gain MAGNITUDE fails to grow (the weakening is of 'clarity', not of monotonicity)
-  [PASS] (G2) SEEDED-NULL POSITIVITY DROPS FROM ALL-TESTED TO TYPICAL at L=5: 5/6 positive; the failing seed's event DISCLOSED (a seeded-null diagnostic failure, NOT a monotonicity failure -- its min-gain is positive)  (gaps ['+0.076', '+0.236', '+0.095', '+0.095', '+0.126', '-0.030']; non-clearing seed [20260611])
+  [PASS] (G2) SAMPLED-NULL CLEARING DROPS FROM ALL-TESTED TO TYPICAL at L=5: 5/6 clear; the failing seed's event DISCLOSED (a sampled-null failure, NOT a monotonicity failure -- its min-gain is positive)  (gaps ['+0.076', '+0.236', '+0.095', '+0.095', '+0.126', '-0.030']; non-clearing seed [20260611])
 ==============================================================================
 Part 3  (G3) the three-point gap series: NO period trend
 ==============================================================================
   [PASS] the gap medians fluctuate with NO monotone period trend (the #3555 'comparable-or-larger, not doubled' verdict extends: at three points there is no growth law; gap magnitudes are event/seed-dominated)  (medians L=3/4/5: +0.139 / +0.193 / +0.095)
+  [PASS] source note declares fixed 300-permutation sampled-null scope
+  [PASS] source note forbids exhaustive or MC-free null theorem
 ==============================================================================
-TOTAL: PASS=17 FAIL=0
+TOTAL: PASS=19 FAIL=0
 ==============================================================================
 SCOPE: extends the period series to three points (L = 3, 4, 5 rings; uniform
   expm_multiply machinery -- no dense step unitary anywhere; measured peak
   footprint ~2.5 GB, single-run safe, panels serialize).  THE MIN-GAIN LEDGER
   replaces the monotone/stall dichotomy.  (G1) #3555's STRICT monotonicity
   persists 6/6 at L=5; the gain MAGNITUDE does not (4/6 clear, 2/6 marginal):
-  no systematic strengthening.  (G2) seeded-null positivity drops from all-tested to
+  no systematic strengthening.  (G2) sampled-null clearing drops from all-tested to
   5/6 (failing seed disclosed).  (G3) gap medians {~0.14, ~0.19, ~0.09}:
   trendless.  THREE-POINT VERDICT: the record-conditional structure is
   event/seed-dominated at accessible periods -- period scans at these sizes

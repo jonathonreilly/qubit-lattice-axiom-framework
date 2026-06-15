@@ -3,17 +3,23 @@
 Date: 2026-06-06
 
 Status: bounded-support
+**Claim type:** bounded_theorem / bounded support under supplied readout context
+**Status authority:** independent audit lane only. This source note records
+finite algebra under cited bounded projective/Lueders authorities and a
+supplied readout context; it does not set an audit verdict or downstream
+effective status.
 
-actual_current_surface_status: bounded-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "exact finite algebra under cited retained-bounded projective readout authorities and a supplied readout context"
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: true_for_bounded_support_only
-proposal_allowed_reason: "The projective instrument and trace-normalized branch are supplied by cited bounded projective/Lueders authorities; the readout context remains supplied and no bare retained status is claimed."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
+## 2026-06-12 audit firewall: no retained production-kernel promotion
+
+No further repair is needed for the stated supplied-context finite algebra:
+with cited bounded projective/Lueders authorities and a supplied readout
+context, the runner verifies the one-qubit probability-to-record typing.
+
+This does not promote the packet to bare retained status. The readout context,
+probability/Born-rule authority, physical production generator, and clock/rate
+normalization remain outside the Record axiom and outside this finite gate.
+No new axiom, Tier-A admission, arbitrary measurement primitive, or audit
+status is introduced here.
 
 ## Summary
 
@@ -58,7 +64,7 @@ logs/runner-cache/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.tx
 Scorecard:
 
 ```text
-PASS=33 FAIL=0
+PASS=36 FAIL=0
 ```
 
 ## Authority Repair

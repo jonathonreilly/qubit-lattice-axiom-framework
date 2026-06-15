@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/frontier_reta_conversion_carrier_class_elimination_2026_06_12.py
+runner_sha256: 8f5591a888718d0c60e29b37fb722d13d3d14f1abe1d735794a1e26bfb63727a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.80
+status: ok
+----- stdout -----
+========================================================================================
+R-ETA CONVERSION-FACTOR CARRIER-CLASS ELIMINATION -- BOUNDED CHECKS
+========================================================================================
+
+----------------------------------------------------------------------------------------
+R1: multiplicative determinant characters force k = 0
+----------------------------------------------------------------------------------------
+  [PASS] linear coefficient of sin(k phi) is k, so invariance for all phi forces k = 0 -- coefficient=k, solve -> [0]
+  [PASS] sample nonzero phase indices {1,-1,2,1/2} break the K-invariance identity -- broken={'1': True, '-1': True, '2': True, '1/2': True}
+
+----------------------------------------------------------------------------------------
+R2a: elementary symmetric data for the supplied circulant
+----------------------------------------------------------------------------------------
+  [PASS] e1 and e2 are delta-independent; e3 = a^3 - 3aB^2 + 2B^3 cos(3 delta) -- e1=3*a, e2=-3*B**2 + 3*a**2, e3=2*B**3*cos(3*delta) - 3*B**2*a + a**3
+  [PASS] coefficient 3 comes from the three-cycle phase product, not a chosen multiplier -- (exp(i delta))^3 = exp(3 i delta)
+
+----------------------------------------------------------------------------------------
+R2b: cos(3 delta) is strictly monotone on the fundamental domain
+----------------------------------------------------------------------------------------
+  [PASS] d/delta cos(3 delta) = -3 sin(3 delta) -- derivative=-3*sin(3*delta)
+  [PASS] derivative is negative on sampled points in (0, pi/3), matching sin(3 delta)>0 -- samples=[0.05, 0.2, 0.6, 0.9971975511965976]
+
+----------------------------------------------------------------------------------------
+R2c: inversion recovers |delta| on the fundamental domain
+----------------------------------------------------------------------------------------
+  [PASS] inversion argument reduces exactly to cos(3 delta) -- argument=cos(3*delta)
+  [PASS] arccos((e3 - a^3 + 3aB^2)/(2B^3))/3 recovers delta at two domain points -- errors=[0.0, 0.0]
+
+----------------------------------------------------------------------------------------
+R2d: equal symmetric data blocks generic conversion carriers
+----------------------------------------------------------------------------------------
+  [PASS] sampled pairs have equal e3 and equal cos(3 delta) at fixed (a,B)=(1,1/4) -- pairs delta' = 2*pi/3 - delta
+  [PASS] for c = pi, cos(3 c delta) differs across equal-symmetric-data pairs -- gaps=['0.788102', '0.857934', '0.530865', '0.235962']
+  [PASS] integer guard: c = 2 is a Chebyshev composite of cos(3 delta), not a new carrier coefficient -- c=2 gaps=['0', '2.86e-15', '1.72e-15', '8.88e-16']
+
+----------------------------------------------------------------------------------------
+R3: radian-bridge citation scope is honest
+----------------------------------------------------------------------------------------
+  [PASS] radian-bridge note pins the periodic-source bin as q*pi -- every such phase is of the form `q*pi` with `q in Q`
+  [PASS] radian-bridge note keeps 2/9 outside the retained periodic phase-source bin -- scope-honest: periodic bin ruled out; rational witness retained
+
+----------------------------------------------------------------------------------------
+R4: det-sign pi packaging routes through the determinant-phase carrier
+----------------------------------------------------------------------------------------
+  [PASS] standard exp(i*pi*eta) packaging uses a determinant-phase carrier
+  [PASS] R1's k = 0 result removes retained det-phase support for a pi conversion carrier
+
+----------------------------------------------------------------------------------------
+Conclusion assembly and negative-control boundary
+----------------------------------------------------------------------------------------
+  [PASS] assembled primitive carrier-compatible c-set within retained classes is {1} -- c_set={1}
+  [PASS] negative control: a hypothetical cos(3*pi*delta) carrier is outside symmetric data -- equal e3 pairs separate it
+  [PASS] negative control: the same hypothetical is not additive over phase composition -- gap=-cos(3*pi*x) - cos(3*pi*y) + cos(pi*(3*x + 3*y))
+  [PASS] boundary is conditional: future readout contexts remain open
+
+----------------------------------------------------------------------------------------
+B-checks: dependency greps and note hygiene
+----------------------------------------------------------------------------------------
+  [PASS] registrability dependency states finite additivity and K/CPT orbit constancy
+  [PASS] registrability dependency states determinant phase index k = 0
+  [PASS] fixed-locus dependency contains the retained L_3(1,2)=2/9 line
+  [PASS] firewall present: does not derive R-eta
+  [PASS] firewall present: future readout contexts openness
+  [PASS] firewall present: the occupancy dial untouched
+  [PASS] closing-language terms absent from the note -- forbidden=[]
+  [PASS] markdown link inventory is exactly the three dependency links -- links=['[`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)', '[`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)', '[`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)']
+  [PASS] companion notes are present as backticked context names
+  [PASS] No-promotion statement present
+  [PASS] standard status-authority line present
+
+========================================================================================
+SUMMARY: PASS=30 FAIL=0
+git diff --stat: not run (the spec forbids git commands)
+========================================================================================
+
+----- stderr -----
+

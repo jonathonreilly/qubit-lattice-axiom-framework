@@ -273,6 +273,13 @@ def part2_canonical_full_cube_source_channels() -> None:
         compress_t1_sp(qb) == c**2,
     )
     check(
+        "Non-Hermitian oriented channels are complex-cyclic, not real Hermitian responses",
+        compress_t1_sp(qf) == c
+        and compress_t1_sp(qf) != compress_t1_sp(qf).H
+        and compress_t1_sp(qb) == c**2
+        and compress_t1_sp(qb) != compress_t1_sp(qb).H,
+    )
+    check(
         "Hermitian full-cube orbit combinations descend to B1 and B2",
         compress_t1_sp(q1) == b1 and compress_t1_sp(q2) == b2,
     )

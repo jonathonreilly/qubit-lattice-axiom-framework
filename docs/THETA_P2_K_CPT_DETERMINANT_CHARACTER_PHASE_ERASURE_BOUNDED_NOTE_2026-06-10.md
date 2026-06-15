@@ -6,7 +6,9 @@ so the strong-CP mass-orientation route stands on the theta surface alone,
 with no dependency on the `AC_phi_lambda` staggered gate) (2026-06-12: the
 determinant-readout bridge named open here is now cited from
 `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
-and wired below as a load-bearing dependency)
+and from the dedicated mass-determinant-channel bridge
+`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`;
+both are wired below as load-bearing dependencies)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome and does not edit the audit-lane-owned Tier-A registry.
@@ -67,7 +69,8 @@ contribution used by
 [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) is exhausted by
 this determinant-class registrable readout, and that no phase-sensitive
 non-multiplicative or action-level datum remains relevant to that premise.
-The needed source theorem is cited here as the candidate bridge:
+The broad Record-registrability source theorem is cited here as the candidate
+bridge:
 [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
 (Consequence A there): a Record-registrable scalar readout is finitely
 additive over pairwise-disjoint records and constant on `K`/CPT orbits;
@@ -81,6 +84,18 @@ action-level bare-`theta` slot is strong-CP premise 1 — a separate
 action-surface premise tracked by the per-plaquette license route, not part of
 the mass-orientation premise.
 
+The dedicated mass-determinant-channel specialization is
+[`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md):
+under a supplied determinant-channel interface with independent-block
+determinant multiplication and K/CPT orbit registration, the only registered
+continuous determinant phase character is `k = 0`; K-even nonmultiplicative
+phase probes such as `cos(arg det)` are outside that determinant-channel block
+law.
+
+This wiring does not set `theta_gauge = 0`, does not derive the real-positive
+Wilson action surface, and does not eliminate action-level or gauge-theta
+residuals.
+
 What remains conditional, exactly as named in the bridge note: the standing
 modeling premise that the physical mass-surface readout context satisfies the
 Record registrability constraints remains an explicit condition of the
@@ -93,9 +108,10 @@ audit lane and is not asserted here.
 
 The only supported consequence is a candidate route for future Tier-A
 registry review: the determinant lemma composed with the determinant-readout
-bridge cited above may help remove the positive-real mass-orientation
-condition of the strong-CP selected surface only after that bridge is
-retained; registry handling stays with the audit lane.
+bridges cited above may help remove the positive-real mass-orientation
+condition of the strong-CP selected surface only after independent review/audit
+accepts the determinant-readout bridge surface being used; registry handling
+stays with the audit lane.
 
 No new axiom, primitive, admission, normalization, probability rule,
 comparator, or audit verdict is introduced here.
@@ -112,6 +128,9 @@ comparator, or audit verdict is introduced here.
   registrable readouts are additive plus `K`/CPT-orbit-constant, hence
   phase-free, so the multiplicative determinant-character family exhausts the
   registrable `arg det(M_u M_d)` content.
+- [`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+  for the dedicated mass-determinant-channel bridge under independent-block
+  determinant multiplication and K/CPT orbit registration.
 
 The `AC_phi_lambda` orientation lemma that previously shared a note with
 this lemma remains in

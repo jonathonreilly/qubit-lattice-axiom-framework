@@ -1,7 +1,7 @@
 # Koide Records Objectivity Conditional: Equal-Block Metric Plus Objectivity Gives r=1/2
 
 **Date:** 2026-05-31
-**Claim type:** bounded_theorem
+**Claim type:** open_gate / conditional-support certificate
 **Claim boundary:** conditional algebraic selection of `r=1/2` from two named inputs:
 equal-block metric and records/objectivity maximization. The note does not derive those
 inputs from the framework baseline and does not set an audit verdict.
@@ -10,6 +10,21 @@ inputs from the framework baseline and does not set an audit verdict.
 with cache
 `logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt`
 (13/13 checks passed).
+
+## 2026-06-12 audit firewall: conditional certificate only
+
+The audited missing bridge is exactly the point of this note: neither the
+equal-block sector measure nor the records/objectivity selector is derived
+here. The 2026-06-05 Record axiom supplies durable realized-outcome
+registration and finite additivity after a readout context is supplied; it
+explicitly does not supply weighting, normalization, probability, measurement
+dynamics, readout context selection, or an occupancy rule.
+
+Accordingly this source row is not a `bounded_theorem` or a Record-axiom
+derivation of Koide. It is a conditional algebra certificate: **if** the
+equal-block `(1,1)` metric and records/objectivity selector are supplied, then
+the runner-checked extremum gives `r=1/2` and `Q=2/3`. This firewall introduces
+no new axiom, no Tier-A admission, and no audit-status change.
 
 ## 2026-06-07 Record-Era Source Boundary
 

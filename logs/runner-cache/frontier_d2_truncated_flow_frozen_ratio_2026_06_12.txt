@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d2_truncated_flow_frozen_ratio_2026_06_12.py
+runner_sha256: 2673c48dc9cd2585ca5b783b040f06f1e0d3c18a5aee0cc99481230e4db44a48
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+# V2: iterating the truncated d=2 flow with accumulated measured budgets
+SCOPE: finite-L, E=0, free quadratic; measured-budget truncated trajectory, NOT a validated RG flow; follow-on: error-controlled fixed-point search.
+STATUS: pipeline-derived; audit lane grades.
+CONVENTION: h0=(5.0)I plus nearest-neighbor -1.0; checkerboard Schur steps=4; truncation shells d2=[4, 8].
+
+V2a truncated flow trajectory on L=16:
+  k=2: diag= 4.1808654050695724e+00 c4=-2.0091324676949374e-01 c8= 0.0000000000000000e+00 c4/diag=-4.8055420900628205e-02 c8/diag= 0.0000000000000000e+00 (counts: c4=128, c8=0; spreads: diag=0.000e+00, c4=8.327e-17, c8=0.000e+00)
+  k=3: diag= 4.1808654050695724e+00 c4=-2.0091324676949382e-01 c8= 0.0000000000000000e+00 c4/diag=-4.8055420900628226e-02 c8/diag= 0.0000000000000000e+00 (counts: c4=64, c8=0; spreads: diag=0.000e+00, c4=0.000e+00, c8=0.000e+00)
+  k=4: diag= 4.1808654050695724e+00 c4=-2.0091324676949382e-01 c8= 0.0000000000000000e+00 c4/diag=-4.8055420900628226e-02 c8/diag= 0.0000000000000000e+00 (counts: c4=32, c8=0; spreads: diag=0.000e+00, c4=0.000e+00, c8=0.000e+00)
+
+V2b per-step dropped-tail truncation errors on L=16:
+  k=1: ||h_k_trunc - h_k_full||_max =  4.0000000000000002e-01
+  k=2: ||h_k_trunc - h_k_full||_max =  9.5672974652139930e-03
+  k=3: ||h_k_trunc - h_k_full||_max =  0.0000000000000000e+00
+  k=4: ||h_k_trunc - h_k_full||_max =  0.0000000000000000e+00
+  true size ordering: k1 > k2 > k3 = k4
+
+V2c accumulated resolvent budget at E=0:
+  L=16 retained-block max difference =  3.2012460829562564e-02; retained-site diagonal max difference =  1.3752525017171752e-02
+  L=12 retained-block max difference =  3.2015496915859233e-02; retained-site diagonal max difference =  1.3757182843246618e-02
+  L=12/L=16 retained-block ratio =  1.0000948407656891e+00; true factor =  1.0100000000000000e+00
+
+V2d c4/diag ratio drift on L=16:
+  true drift pattern: k2 = k3 = k4
+  next-step kept/drop block max norms:
+    after k=2: ||H_kd||_max =  0.0000000000000000e+00
+    after k=3: ||H_kd||_max =  0.0000000000000000e+00
+    after k=4: ||H_kd||_max =  0.0000000000000000e+00
+
+V2e control:
+  identity truncation max difference from exact steps =  0.0000000000000000e+00
+
+PASS: finite-lattice shell probe L=16: d2={4,8} shell components are below L/2
+PASS: finite-lattice shell probe L=12: d2={4,8} shell components are below L/2
+PASS: size probe after 4 checkerboard steps: L=16 retains 16 sites and L=12 retains 9 sites
+PASS: per-step truncation errors: k1 > k2 and k3 = k4 = 0 exactly (the post-step-2 closure makes later drops empty -- fixed-pattern gate)
+PASS: L=16 accumulated retained-block resolvent budget 3.2012460829562564e-02 <= regression ceiling 3.2099999999999997e-02
+PASS: L=12 vs L=16 retained-block budget ratio 1.0000948407656891e+00 is within true factor 1.0100000000000000e+00
+PASS: V2d the truncated flow's c4/diag ratio FREEZES: identical at steps 2,3,4 (equality 1e-12) -- the truncated map reaches a fixed coupling ratio immediately
+PASS: post-step-2 closure: the next checkerboard kept/drop block H_kd is zero at steps 2,3,4
+PASS: identity truncation reproduces fully exact checkerboard steps within 1e-12 (max 0.000e+00)
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

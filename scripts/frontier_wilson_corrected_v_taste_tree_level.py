@@ -340,9 +340,24 @@ def part8_leading_r_expansion():
     # Multiply by 1/4:
     #   d^2V^W/dm^2 |_{m=0} = -4/u_0^2 + 60 r^2 / u_0^4 + O(r^4)
     #
-    # The note and runner both use the corrected coefficient 60. The
-    # 40-coefficient approximation below is retained only as a negative
-    # numerical guard against regression to the stale comment text.
+    # Recheck (x - u_0^2) / (x + u_0^2)^2 expansion at x=0 by Taylor:
+    #   f(x) = (x - u_0^2) (x + u_0^2)^{-2}
+    #   f(0) = -u_0^2 · u_0^{-4} = -1/u_0^2
+    #   f'(x) = (x + u_0^2)^{-2} + (x - u_0^2) · (-2) (x + u_0^2)^{-3}
+    #         = (x + u_0^2)^{-3} [(x + u_0^2) - 2(x - u_0^2)]
+    #         = (x + u_0^2)^{-3} [- x + 3 u_0^2]
+    #   f'(0) = u_0^{-6} · 3 u_0^2 = 3 / u_0^4
+    # So leading expansion:  f(x) = -1/u_0^2 + (3/u_0^4) x + O(x^2)
+    # With x = r^2 k^2:
+    #   term_k = -1/u_0^2 + 3 r^2 k^2 / u_0^4 + O(r^4)
+    # Sum over k weighted by binomial(4,k):
+    #   sum = (Σ binomial(4,k)) · (-1/u_0^2) + 3 (Σ binomial(4,k) k^2) r^2 / u_0^4
+    #       = 16 · (-1/u_0^2) + 3 · 80 · r^2 / u_0^4
+    #       = -16/u_0^2 + 240 r^2 / u_0^4
+    # Multiply by 1/4: d^2V^W/dm^2 = -4/u_0^2 + 60 r^2 / u_0^4 + O(r^4)
+    #
+    # The leading-order coefficient is 60. The 40-coefficient expression
+    # remains below only as a rejected comparator and stale-text guard.
     expected_leading_coeff = 60  # revised: from the (3/u_0^4) Taylor expansion
     # Use word boundaries to avoid false positives like "240 r^2/u_0^4"
     # matching "40 r^2/u_0^4" as a substring.

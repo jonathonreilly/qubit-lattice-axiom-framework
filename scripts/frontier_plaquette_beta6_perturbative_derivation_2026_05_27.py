@@ -166,6 +166,14 @@ def test_source_boundary_manifest() -> None:
         and "exact Wigner-Racah" in body,
         "diagnostic remains conditional and finite-route only",
     )
+    check(
+        "note firewalls retained beta=6 surface claim after demotion",
+        "## 2026-06-12 audit firewall: no retained beta=6 surface claim" in body
+        and "do not derive the actual `beta = 6`\nplaquette" in body
+        and "do not\nlicense any downstream beta=6 Wilson/Haar surface claim" in body
+        and "no retained/effective-bounded bridge,\nnew axiom, external comparator authority, or audit status" in body,
+        "source repair remains demotion-only",
+    )
 
 
 def test_one_loop_value() -> None:

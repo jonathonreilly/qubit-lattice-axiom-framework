@@ -10,9 +10,13 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from itertools import product
+from pathlib import Path
 
 import numpy as np
 
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md"
 
 Array = np.ndarray
 Frame = tuple[int, int]
@@ -73,6 +77,37 @@ def fidelity_pure(rho: Array, psi: Array) -> float:
 def conjugate(frame: Frame, rho: Array) -> Array:
     p = pauli(frame)
     return p @ rho @ p.conj().T
+
+
+def check_source_scope_firewall() -> list[Check]:
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    flat_note = " ".join(note.split())
+    return [
+        Check(
+            "source status is open-gate / bounded algebraic support only",
+            "**Claim type:** open_gate" in flat_note
+            and "**Status:** open-gate / bounded algebraic support only; no framework promotion"
+            in flat_note
+            and "does not promote teleportation beyond open-gate support" in flat_note
+            and "No audit ledger row is retagged by this source note" in flat_note,
+            "no retained physical-teleportation status claimed",
+        ),
+        Check(
+            "T1-T6 are transport premises, not new axioms",
+            "## Candidate Transport Premises (not axioms)" in note
+            and "## New Candidate Axioms" not in note
+            and "not new axioms" in flat_note
+            and "do not change the repo axiom count" in flat_note,
+            "premise firewall present",
+        ),
+        Check(
+            "source firewall keeps T1/T2 bounded and T3-T6 open",
+            "T1/T2 may be cited only as bounded algebraic support through RALA" in note
+            and "T3-T6 remain supplied/open premises" in note
+            and "physical implementation remains unclosed" in note,
+            "physical bridges remain named open targets",
+        ),
+    ]
 
 
 def check_connection_group() -> Check:
@@ -208,6 +243,7 @@ def check_hidden_branch_dephasing() -> Check:
 
 def run_checks() -> list[Check]:
     return [
+        *check_source_scope_firewall(),
         check_connection_group(),
         check_multihop_composition(),
         check_missing_record_twirl(),
@@ -225,8 +261,11 @@ def main() -> int:
         status = "PASS" if check.passed else "FAIL"
         print(f"{status}  {check.name}: {check.metric}")
 
-    all_pass = all(check.passed for check in checks)
+    pass_count = sum(1 for check in checks if check.passed)
+    fail_count = len(checks) - pass_count
+    all_pass = fail_count == 0
     print()
+    print(f"TOTAL: PASS={pass_count}, FAIL={fail_count}")
     print(f"Planning transport theory consistency: {'PASS' if all_pass else 'FAIL'}")
     print("Nature-grade unconditional closure: HOLD")
     print(

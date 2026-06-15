@@ -1,17 +1,33 @@
 # Interacting Emergent Lorentz Conditional Algebra: Supplied One-Loop Velocity Attractor and One-Scalar Gate Boundary
 
 **Date:** 2026-06-06
-**Claim type:** bounded_theorem
-**Type:** bounded_theorem
+**Claim type:** open_gate / conditional-support packet
+**Type:** conditional-support
 **Status authority:** independent audit lane only. This source note does not set
-or predict an audit outcome. The `bounded_theorem` label is a source-side
-claim-boundary declaration, not an audit verdict.
+or predict an audit outcome. The label above is a source-side claim-boundary
+declaration, not an audit verdict.
 **Primary runner:**
 [`scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py`](../scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py)
 **Cached runner output:**
 [`logs/runner-cache/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.txt`](../logs/runner-cache/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.txt)
 
 ---
+
+## 2026-06-12 audit firewall: no bounded-theorem promotion
+
+The audited blocker is real: this note does not derive the interacting
+one-loop velocity RG, the spatial-only power-divergent mixing theorem, the
+physical fixed-point anomalous dimension, or the coefficient needed to compare
+against Lorentz-violation bounds from retained framework primitives. Those
+inputs remain supplied model/literature-context inputs in this packet.
+
+Therefore the actual source status is **conditional-support / open gate**, not
+`bounded_theorem` or retained-grade interacting Lorentz closure. The useful
+content retained here is the runner-checked algebraic consequence: once the
+specified one-loop packet is supplied, the speed-difference mode is
+IR-attractive, the `O_h` spatial split is one scalar, and canonical time
+reduces the Collins gate to one conditional scalar. No new axiom, primitive,
+Tier-A admission, or audit status change is introduced.
 
 ## 2026-06-09 surface-scope update
 

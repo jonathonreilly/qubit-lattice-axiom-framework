@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/signed_gravity_aps_locked_source_action_proposal.py
-runner_sha256: 9d349764acd1ddf5b45ff044e13d77c5117e570a50f611849b44714398ecfa32
+runner_sha256: d6f3a58356427bc839207595081cb84e2f22eddc1d8183766a1fe4e4d26d49ef
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -16,6 +16,7 @@ SIGNED GRAVITY APS-LOCKED SOURCE ACTION PROPOSAL
 [PASS] manifest records retained APS/Wald/Gauss source basis cannot span signed source
 [PASS] manifest records determinant-line host is not canonical source selection
 [PASS] manifest preserves open gate and no-new-axiom boundary
+[PASS] 2026-06-12 firewall keeps source-action origin as the live blocker
 
 [PASS] APS boundary eta supplies +/- sectors and null control
 
@@ -52,7 +53,7 @@ OPEN PROOF OBLIGATIONS
      masses with opposite active signs
   4. lift the scalar active monopole action without claiming full tensor GR
 
-SUMMARY: PASS=16 FAIL=0
+SUMMARY: PASS=17 FAIL=0
 FINAL_TAG: APS_LOCKED_SOURCE_ACTION_CONDITIONAL_CANDIDATE
 
 ----- stderr -----

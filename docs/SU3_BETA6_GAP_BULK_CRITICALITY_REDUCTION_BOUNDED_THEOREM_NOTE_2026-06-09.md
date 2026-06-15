@@ -1,13 +1,29 @@
-# SU(3) Beta=6 Lattice-Units Gap Reduction Diagnostic
+# SU(3) Beta=6 Lattice-Units Gap Conditional Reduction Diagnostic
 
 **Date:** 2026-06-09
-**Claim type:** bounded_theorem / conditional fixed-lattice reduction
+**Claim type:** open_gate / conditional fixed-lattice reduction
 **Status authority:** independent audit lane only. This source note writes no
 audit verdict and does not retag any ledger row.
 **Primary runner:**
 [`scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py`](../scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py)
 **Runner cache:**
 [`logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt`](../logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt)
+
+## 2026-06-12 audit firewall: reduction, not beta=6 gap theorem
+
+The audited missing bridge is the actual physics wall: this packet does not
+prove the no-second-order-bulk-critical-point premise on the 4D `SU(3)`
+fundamental-Wilson axis through `beta=6`, nor does it supply a retained
+small-beta transfer-matrix/positive-gap bridge all the way to that point. It
+also does not make the framework's Lattice axiom supply a Wilson action,
+coupling convention, transfer matrix, or all-coupling confinement theorem.
+
+The source status is therefore **open-gate conditional reduction**. The
+runner-checked content is useful but narrow: if the named no-critical-point
+premise and standard fixed-lattice Wilson/gap setting are supplied, then a
+zero lattice-units gap at `beta=6` would require a divergent correlation
+length, so the supplied premise implies a positive fixed-lattice gap. This
+firewall adds no new axiom, no Tier-A admission, and no audit-status change.
 
 ## Summary
 

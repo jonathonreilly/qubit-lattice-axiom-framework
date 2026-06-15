@@ -592,13 +592,15 @@ def block_D_discipline() -> None:
     record("D", "claim stays transfer- and tau-relative (scope-boundary compliant)",
            "transfer-relative" in text and ("τ-relative" in text or "tau-relative" in text),
            "G-SCOPE compliance wording present")
+    flat_text = " ".join(text.split())
     record("D", "claim_type is bounded_theorem (no positive_theorem over-claim)",
-           "proposed_claim_type: bounded_theorem" in text
+           "Claim type bounded" in text
            and "positive_theorem grade" not in text,
-           "yaml handoff checked")
-    record("D", "proposal firewall: B-AXIS open means proposal_allowed is false",
-           "proposal_allowed: false" in text
-           and "B-AXIS remains declared" in text,
+           "canonical bounded claim type checked")
+    record("D", "proposal firewall: B-AXIS remains a declared blocker",
+           "not a retained-grade proposal" in flat_text
+           and "B-AXIS" in text
+           and "remains declared" in text,
            "no retained-grade proposal while B-AXIS is declared")
     record("D", "spatial-clustering clause not consumed (cluster L2 is conditional)",
            "L2 spatial clustering is consumed nowhere" in text
@@ -613,6 +615,13 @@ def block_D_discipline() -> None:
            and "R-FBQL" in text
            and "0 < d μ < η < arcsinh(m)" in text,
            "free U=1 exact-log sector and finite quasilocal lightcone named")
+    record("D", "2026-06-12 firewall: B-RANGE retired, B-AXIS remains the live blocker",
+           "2026-06-12 Remaining-Blocker Source Firewall" in text
+           and "B-AXIS as the live" in text
+           and "SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md" in text
+           and "do not derive B-AXIS" in text
+           and "No retained-grade proposal or status promotion is made here" in text,
+           "axis-selection no-go route wired without retained promotion")
 
 
 # -------------------------------------------------------------------

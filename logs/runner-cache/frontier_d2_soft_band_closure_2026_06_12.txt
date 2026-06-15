@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d2_soft_band_closure_2026_06_12.py
+runner_sha256: f680acc4405a70f269aee44799a3fd3f3ffb131cc4115eb1d8daf4606d9c97dc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+U2 measurements L=16
+  hard step_errors: 2.978846473729e-01 2.118671817368e-01 1.201172882435e-01
+  hard H_kd max: 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00
+  hard budget: 6.298691173532e-01
+  hard step 1 generated tail: d2=1:max=4.000000e-01:n=480, d2=5:max=4.000000e-01:n=832, d2=9:max=4.000000e-01:n=416, d2=25:max=4.000000e-01:n=928, d2=37:max=4.000000e-01:n=576, d2=49:max=4.000000e-01:n=288, d2=50:max=4.000000e-01:n=704, d2=53:max=4.000000e-01:n=448
+  hard step 2 generated tail: d2=10:max=4.434972e-01:n=256, d2=16:max=4.434972e-01:n=128, d2=18:max=4.434972e-01:n=64, d2=26:max=4.434972e-01:n=192, d2=34:max=4.434972e-01:n=64, d2=50:max=2.496301e-01:n=192, d2=58:max=2.496301e-01:n=64, d2=64:max=2.496301e-01:n=64
+  hard step 3 generated tail: d2=2:max=4.440747e-01:n=64, d2=10:max=4.440747e-01:n=64, d2=16:max=2.509164e-01:n=64, d2=26:max=2.509164e-01:n=64, d2=50:max=3.549889e-03:n=64, d2=64:max=3.549889e-03:n=32, d2=36:max=2.885456e-03:n=64, d2=1:max=9.118682e-04:n=96
+  soft step_errors: 2.978846473729e-01 1.415238114381e-01 8.459656125783e-02
+  soft H_kd max: 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00
+  soft budget: 5.240050200688e-01
+  soft step 1 generated tail: d2=1:max=4.000000e-01:n=480, d2=5:max=4.000000e-01:n=832, d2=9:max=4.000000e-01:n=416, d2=25:max=4.000000e-01:n=928, d2=37:max=4.000000e-01:n=576, d2=49:max=4.000000e-01:n=288, d2=50:max=4.000000e-01:n=704, d2=53:max=4.000000e-01:n=448
+  soft step 2 generated tail: d2=10:max=4.434972e-01:n=256, d2=18:max=4.434972e-01:n=64, d2=26:max=4.434972e-01:n=192, d2=34:max=4.434972e-01:n=64, d2=50:max=2.496301e-01:n=192, d2=58:max=2.496301e-01:n=64, d2=64:max=2.496301e-01:n=64, d2=1:max=5.538083e-02:n=224
+  soft step 3 generated tail: d2=2:max=4.440747e-01:n=64, d2=10:max=4.440747e-01:n=64, d2=26:max=2.509164e-01:n=64, d2=50:max=3.549889e-03:n=64, d2=64:max=3.549889e-03:n=32, d2=36:max=2.885456e-03:n=64, d2=1:max=9.118682e-04:n=96, d2=9:max=9.118682e-04:n=64
+  identity budget: 0.000000000000e+00
+U2 measurements L=32
+  hard step_errors: 2.978818739496e-01 2.118650366051e-01 2.098082438679e-01
+  hard H_kd max: 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00
+  hard budget: 7.195551544226e-01
+  hard step 1 generated tail: d2=1:max=4.000000e-01:n=1984, d2=5:max=4.000000e-01:n=3712, d2=9:max=4.000000e-01:n=1856, d2=169:max=4.000000e-01:n=3136, d2=197:max=4.000000e-01:n=2176, d2=225:max=4.000000e-01:n=2496, d2=226:max=4.000000e-01:n=2048, d2=229:max=4.000000e-01:n=1920
+  hard step 2 generated tail: d2=50:max=4.434972e-01:n=1408, d2=64:max=4.434972e-01:n=512, d2=82:max=4.434972e-01:n=896, d2=98:max=4.434972e-01:n=128, d2=130:max=4.434972e-01:n=768, d2=226:max=2.496301e-01:n=896, d2=256:max=2.496301e-01:n=256, d2=274:max=2.496301e-01:n=128
+  hard step 3 generated tail: d2=10:max=4.440747e-01:n=512, d2=16:max=4.440747e-01:n=256, d2=18:max=4.440747e-01:n=128, d2=26:max=4.440747e-01:n=384, d2=34:max=4.440747e-01:n=128, d2=50:max=2.509164e-01:n=384, d2=64:max=2.509164e-01:n=256, d2=82:max=2.509164e-01:n=384
+  soft step_errors: 2.978818739496e-01 2.118650366051e-01 1.201150857939e-01
+  soft H_kd max: 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00
+  soft budget: 6.298619963486e-01
+  soft step 1 generated tail: d2=1:max=4.000000e-01:n=1984, d2=5:max=4.000000e-01:n=3712, d2=9:max=4.000000e-01:n=1856, d2=169:max=4.000000e-01:n=3136, d2=197:max=4.000000e-01:n=2176, d2=225:max=4.000000e-01:n=2496, d2=226:max=4.000000e-01:n=2048, d2=229:max=4.000000e-01:n=1920
+  soft step 2 generated tail: d2=50:max=4.434972e-01:n=1408, d2=64:max=4.434972e-01:n=512, d2=82:max=4.434972e-01:n=896, d2=98:max=4.434972e-01:n=128, d2=130:max=4.434972e-01:n=768, d2=226:max=2.496301e-01:n=896, d2=256:max=2.496301e-01:n=256, d2=274:max=2.496301e-01:n=128
+  soft step 3 generated tail: d2=10:max=4.440747e-01:n=512, d2=18:max=4.440747e-01:n=128, d2=26:max=4.440747e-01:n=384, d2=34:max=4.440747e-01:n=128, d2=50:max=2.509164e-01:n=384, d2=64:max=2.509164e-01:n=256, d2=82:max=2.509164e-01:n=384, d2=58:max=2.509164e-01:n=128
+  identity budget: 0.000000000000e+00
+PASS: wraparound probe L=16: soft-band vectors do not alias
+PASS: size probe L=16: checkerboard charts stay balanced through 3 steps
+PASS: wraparound probe L=32: soft-band vectors do not alias
+PASS: size probe L=32: checkerboard charts stay balanced through 3 steps
+PASS: U2a parity lemma verified (hard band): even-d2 shells preserve checkerboard color (dx^2+dy^2 = dx+dy mod 2) so truncated H_kd = 0 by algebra, L=16/32
+PASS: U2a parity lemma verified (soft band {4,8,16,20}): even-d2 truncation forces H_kd = 0 by the same algebra, L=16/32
+PASS: U2b fixed-instance ordering at L=32: soft budget < hard budget (no generic claim; ties exist at some larger compatible L per the panel scan)
+PASS: U2b fixed-instance ordering at L=16: soft budget < hard budget
+PASS: U2c hard L-scaling: exactly one measured ordering is selected
+PASS: U2c hard L-scaling: L=16 budget < L=32 budget
+PASS: U2c soft L-scaling: exactly one measured ordering is selected
+PASS: U2c soft L-scaling: L=16 budget < L=32 budget
+PASS: U2d identity truncation reproduces exact at L=32
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

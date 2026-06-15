@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3295 |
-| Applied audit verdicts | 1528 |
-| Retained-grade rows, including boxed decorations | 1372 |
+| Applied audit verdicts | 1529 |
+| Retained-grade rows, including boxed decorations | 1373 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 211 |
-| Retained bounded rows | 906 |
+| Retained bounded rows | 907 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 41 |
-| Unaudited rows | 1445 |
+| Unaudited rows | 1444 |
 | Retained-pending-chain rows | 20 |
 | Audited conditional rows | 52 |
 | Audited renaming rows | 31 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1450 |
-| Ready rows | 4 |
+| Total pending rows | 1449 |
+| Ready rows | 3 |
 | Cycle-break targets | 19 |
 | Critical pending | 330 |
 | High pending | 254 |
-| Medium pending | 427 |
+| Medium pending | 426 |
 | Leaf pending | 439 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_SYMMETRIZED_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOWED_BOND_DEEP_LIMIT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12`](../../docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 

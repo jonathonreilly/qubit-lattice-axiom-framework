@@ -1,0 +1,19 @@
+loop_slug: teleportation-native-apparatus-bridge-20260615
+current_goal: "Partially close the teleportation_resource_from_poisson native preparation/readout blocker by wiring existing native apparatus candidate packets into the audited source row."
+target_status: bounded-support
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: native_apparatus_candidate_bridge
+files_touched:
+  - docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md
+  - scripts/frontier_teleportation_resource_from_poisson.py
+  - logs/runner-cache/frontier_teleportation_resource_from_poisson.txt
+open_imports:
+  - "Independent audit must accept TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md and TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md as usable one-hop authorities."
+  - "Resource preparation is still offline diagonalization on small surfaces."
+  - "Uniqueness from the sole framework axioms and continuum detector scaling remain open."
+review_findings: []
+pr_status: pending
+next_exact_action: "Open a review PR and ask reviewer/audit lane to judge whether the native apparatus packets partially discharge the blocker."
+stop_condition: "Branch PR is open with runner/cache verification and no audit verdict edits."

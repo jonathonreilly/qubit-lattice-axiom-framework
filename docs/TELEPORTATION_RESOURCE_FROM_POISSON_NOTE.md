@@ -15,8 +15,11 @@ small-surface (`1D N=8`, `2D 4x4`) bounded extraction. The finite algebraic
 selection of the last-taste retained axis is routed through the retained-bounded
 RALA source
 [`TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md`](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md).
-The native preparation/readout theorem realizing that retained-axis carrier as
-a physical deterministic teleportation apparatus remains open.
+The full native preparation/readout theorem realizing that retained-axis
+carrier as a physical deterministic teleportation apparatus remains open, but
+the 2026-06-15 source repair below now points the apparatus/readout mechanism
+part of that theorem to explicit bounded candidate packets rather than leaving
+it as a bare placeholder.
 
 It does not claim matter teleportation, charge transfer, mass transfer, or
 faster-than-light transport. The only audited object is a quantum state
@@ -137,6 +140,36 @@ The live blocker is still a native preparation/readout and apparatus theorem.
 No retained-grade proposal or status promotion is made here; the independent
 audit lane remains the only authority for effective status.
 
+## 2026-06-15 Native Apparatus Candidate Bridge
+
+The 2026-06-15 source repair narrows the operational blocker without claiming
+retained status:
+
+- [`TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md`](TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md)
+  supplies a bounded candidate for the retained-axis Bell-record transducer:
+  native `Cl(3)/Z^3` stabilizers close, stabilizer-controlled Hamiltonian
+  terms commute, finite-time evolution writes the Bell codewords, a
+  pointer-plus-bath overlap bound suppresses record coherences exponentially,
+  and the native taste-apparatus generator class commutes with the conserved
+  support ledgers.
+- [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md)
+  supplies a bounded coupled-dynamics candidate: a local retarded field front
+  gives the eikonal record carrier, a finite-strength Bell transducer replaces
+  a projective measurement placeholder, a finite spin bath decoheres the
+  record, Bob's pre-delivery state is input-independent, and the checked
+  apparatus ledger is branch independent.
+
+Together these packets partially discharge the old "native
+preparation/readout and apparatus theorem" blocker on its apparatus/readout
+side. They do **not** yet prove the full deterministic resource theorem: the
+Poisson resource is still obtained by offline diagonalization on small
+surfaces, the apparatus class is not uniquely forced from the sole framework
+axioms, the bath is a bounded explicit family rather than a continuum detector
+theorem, and independent audit has not accepted these packets as one-hop
+authorities. This row therefore remains a source-side open gate with a
+concrete bridge path, not a retained teleportation theorem and not an audit
+verdict.
+
 ## Script
 
 New runner:
@@ -219,8 +252,10 @@ Still open before promotion:
 
 - Harden beyond the two small default surfaces.
 - Check mass, coupling, dimension, boundary, and degeneracy sensitivity.
-- Add a native preparation/readout story for the retained-axis logical resource,
-  not only an offline ground-state extraction.
+- Complete the native preparation/resource-production story for the
+  retained-axis logical resource, not only an offline ground-state extraction.
+  The 2026-06-15 microscopic/apparatus candidates narrow the readout/apparatus
+  side but do not close resource preparation or uniqueness.
 - Separate deterministic traced extraction from diagnostic postselection.
 - Keep the claim restricted to quantum state teleportation.
 

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_isotropy_3d_simultaneous_tick_2026_06_10.py
+runner_sha256: 9aa3ee2349230efab8cafd44b347c28da1ec3e99bc5a647e5253c80f53658d4b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.00
+status: ok
+----- stdout -----
 
 SITE-LICENSE DEGREE TABLE ON THE 2^3 CELL
 ==============================================================================
@@ -40,3 +48,4 @@ LINEAR PERMUTATION-EQUIVARIANT SITE-LICENSE FAMILY: EXACT EQUATIONS
 ==============================================================================
 SCORECARD: PASS=20 FAIL=0
 ==============================================================================
+----- stderr -----

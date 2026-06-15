@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1517
+**Total pending:** 1516
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 80
 
 By criticality:
-- `critical`: 282
+- `critical`: 281
 - `high`: 287
 - `medium`: 466
 - `leaf`: 482
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | audit_in_progress | critical | 239 | 20.91 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_mru_weight_class_obstruction_theorem.py` |
+| 1 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | positive_theorem | unaudited | critical | 237 | 24.39 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py` |
 | 2 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1080 | 44.58 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
 | 3 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 1058 | 15.55 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py` |
 | 4 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 927 | 20.36 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_lattice_noether_check.py` |

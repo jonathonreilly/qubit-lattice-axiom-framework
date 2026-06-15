@@ -110,7 +110,8 @@ import os
 
 import numpy as np
 from scipy import sparse
-from scipy.sparse.linalg import eigsh, spsolve
+from scipy.signal import fftconvolve
+from scipy.sparse.linalg import eigsh
 
 
 # ---------------------------------------------------------------------------
@@ -153,14 +154,14 @@ def solve_single_particle(T: sparse.csr_matrix,
 
 def solve_poisson(N: int, rho: np.ndarray, T: sparse.csr_matrix,
                   g_em: float) -> np.ndarray:
-    """(-Δ_Z³) V_H = 4π g_EM ρ  (same Green's function kernel)."""
-    rhs = 4.0 * np.pi * g_em * rho
-    try:
-        return spsolve(T.tocsc(), rhs)
-    except Exception:
-        from scipy.sparse.linalg import cg
-        V, _ = cg(T, rhs, maxiter=2000, tol=1e-8)
-        return V
+    """Direct finite-box Hartree potential with the same kernel as V_ee."""
+    _ = T
+    rho_3d = rho.reshape(N, N, N)
+    offsets = np.arange(-(N - 1), N, dtype=float)
+    dx, dy, dz = np.meshgrid(offsets, offsets, offsets, indexing="ij")
+    r = np.sqrt(dx * dx + dy * dy + dz * dz)
+    kernel = g_em / np.maximum(r, 0.5)
+    return fftconvolve(rho_3d, kernel, mode="same").reshape(-1)
 
 
 def run_hartree_scf(N: int, g_nuc: float, g_em: float,
@@ -188,7 +189,7 @@ def run_hartree_scf(N: int, g_nuc: float, g_em: float,
         phi, rho = phi_new, rho_new
 
     eps = float(evals[0])
-    E_J = 0.5 * float(np.sum(rho * V_H))
+    E_J = float(np.sum(rho * V_H))
     E_var = 2.0 * eps - E_J
 
     # He⁺ reference
@@ -530,7 +531,7 @@ def run_experiment() -> None:
         ),
         (
             "jastrow_hartree_baseline_pin",
-            abs(ratio_hartree - 1.39784) < 5e-5,
+            abs(ratio_hartree - 1.41501) < 5e-5,
             f"ratio_hartree={ratio_hartree:.5f}",
         ),
         (
@@ -540,7 +541,7 @@ def run_experiment() -> None:
         ),
         (
             "jastrow_ratio_pin",
-            abs(ratio_jastrow - 1.43572) < 5e-5,
+            abs(ratio_jastrow - 1.43653) < 5e-5,
             f"ratio_jastrow={ratio_jastrow:.5f}",
         ),
         (

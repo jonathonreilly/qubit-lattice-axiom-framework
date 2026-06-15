@@ -13,7 +13,7 @@ hydrogen scalar `Z^3` graph-Laplacian Coulomb runner readouts
 (`E_2/E_1 ≈ 0.25857` vs `0.25`, `E_3/E_1 ≈ 0.11132` vs `0.11111`,
 emergent length `r_0 = 2/g`), the helium Hartree upper-bound row at the
 declared finite-box parameters, and the one-parameter Jastrow/VMC
-`|E(He)|/|E(He^+)|` improvement to `1.4357`. The note **does NOT**
+`|E(He)|/|E(He^+)|` improvement to `1.4365`. The note **does NOT**
 claim continuum-limit, absolute-eV, exact-helium, multi-electron, or
 retained atomic derivation-chain authority. The quoted readouts are now
 pinned against preserved runner source plus cached stdout certificates under
@@ -45,7 +45,7 @@ retained lattice kinetic and Coulomb-kernel authority notes in the
 restricted packet." This is a **diagnostic companion / work-history
 note** that **does not propagate** as a flagship authority: the
 quoted numerical readouts (`E_2/E_1 = 0.25857`, helium `|E(He)| /
-|E(He^+)| = 1.3424` and Jastrow `1.4357`, etc.) now have SHA-pinned
+|E(He^+)| = 1.4310` and Jastrow `1.4365`, etc.) now have SHA-pinned
 cache certificates under `logs/runner-cache/`, and the narrowed
 lattice-kinetic and Coulomb-kernel authority notes are cited below as
 restricted-packet one-hop dependencies. The remaining audit question is
@@ -153,19 +153,19 @@ def solve_hamiltonian(N: int, g: float, n_eig: int = 20):
     return evals[idx], evecs[:, idx]
 ```
 
-The helium Hartree runner adds the Poisson solver for the Hartree
-potential (same Z³ Green's function kernel, two-body form):
+The helium Hartree runner adds the finite-box direct convolution for the
+Hartree potential (same regularized Z³ Coulomb kernel as the two-body
+term):
 
 ```python
 def solve_poisson_for_hartree(N, rho, T, g_em):
-    """Solve (-Δ_Z³) V_H = 4π × g_EM × ρ for the Hartree potential.
+    """Build V_H(r)=Σ_r' rho(r') g_EM/max(|r-r'|, 0.5) by convolution.
 
-    V_H(r) = g_EM ∫ ρ(r') / |r-r'| dr'  (same Z³ Green's function as V_nuc)
-    Taking (-Δ) of both sides and using (-Δ) G(r) = δ(r):
-        (-Δ) V_H = g_EM × 4π × ρ
+    The function name is kept for packet compatibility with the previous
+    audit surface, but the computation is now the direct finite-box Coulomb
+    kernel used by V_nuc and V_ee.
     """
-    rhs = 4.0 * np.pi * g_em * rho
-    return spsolve(T.tocsc(), rhs)
+    ...
 
 
 def helium_variational_scf(N, g_nuc, g_em, max_iter=60, tol=1e-6, mix=0.5):
@@ -174,7 +174,7 @@ def helium_variational_scf(N, g_nuc, g_em, max_iter=60, tol=1e-6, mix=0.5):
     not imported from standard QM.
     """
     # SCF loop: solve (T + V_nuc + V_H[φ]) φ = ε φ ; rebuild ρ=φ²; iterate.
-    # Returns E_var = 2ε - E_J  (DERIVED from product-state ansatz)
+    # Returns E_var = 2ε - E_pair  (DERIVED from product-state ansatz)
     ...
 ```
 
@@ -247,13 +247,13 @@ SUMMARY: HELIUM HARTREE COMPANION
   ──────────────────────────────────────────────────────────────
               E(He²⁺)/E₀     0.0000     0.0000      n/a  [id]
                E(He⁺)/E₀    -3.7908    -4.0000    +5.23%  [cmp]
-                E(He)/E₀    -5.0888        n/a      n/a  [bound]
-        |E(He)|/|E(He⁺)|     1.3424     1.4240    -5.73%  [cmp]
-                 IE₁/IE₂     0.3424     0.4240   -19.24%  [cmp]
+                E(He)/E₀    -5.4247        n/a      n/a  [bound]
+        |E(He)|/|E(He⁺)|     1.4310     1.4240    +0.49%  [cmp]
+                 IE₁/IE₂     0.4310     0.4240    +1.66%  [cmp]
 
   CHECKPOINTS:
-  |E(He)|/|E(He⁺)| = 1.3424  vs Hartree ~1.424  (full CI 1.452)
-  IE₁/IE₂           = 0.3424  vs Hartree ~0.424
+  |E(He)|/|E(He⁺)| = 1.4310  vs Hartree ~1.424  (full CI 1.452)
+  IE₁/IE₂           = 0.4310  vs Hartree ~0.424
 ```
 
 Log file preserved at `logs/2026-05-18-atomic_helium_hartree_companion.txt`;
@@ -266,19 +266,19 @@ runner-cache certificate:
 STEP 2: Jastrow VMC scan over r_J (correlation length)
   Fixed: cusp coefficient a = g_EM × r_J / 4 → u'(0) = g_EM/4 = 0.1250
     r_J         E_VMC           ±    |E|/|E(He⁺)|    vs Hartree
-    0.5     -0.336010  ± 0.001764         1.42157        -1.70%
-    1.0     -0.337108  ± 0.001548         1.42621        -2.03%
-    2.0     -0.338696  ± 0.001192         1.43293        -2.51%
-    3.0     -0.339355  ± 0.001017         1.43572        -2.71%
-    4.0     -0.338308  ± 0.001043         1.43129        -2.39%
-    6.0     -0.336073  ± 0.001403         1.42183        -1.72%
+    0.5     -0.336083  ± 0.001799         1.42188        -0.49%
+    1.0     -0.337044  ± 0.001580         1.42594        -0.77%
+    2.0     -0.338789  ± 0.001176         1.43333        -1.29%
+    3.0     -0.339546  ± 0.000950         1.43653        -1.52%
+    4.0     -0.338456  ± 0.000957         1.43192        -1.20%
+    6.0     -0.336410  ± 0.001302         1.42326        -0.58%
 
-  Optimal r_J = 3.0  →  E_VMC = -0.339355 ± 0.001017
+  Optimal r_J = 3.0  →  E_VMC = -0.339546 ± 0.000950
 
 SUMMARY: HELIUM JASTROW COMPANION
                     Method    |E(He)|/|E(He⁺)|    Target  Notes
-         Hartree (product)             1.39784    1.4240   separable ansatz
-           Jastrow (r_J=3)             1.43572       n/a   cusp corr. from Z³ kernel
+         Hartree (product)             1.41501    1.4240   separable ansatz
+           Jastrow (r_J=3)             1.43653       n/a   cusp corr. from Z³ kernel
                    Full CI             1.45200    1.4520   exact (historical)
 ```
 
@@ -295,10 +295,10 @@ runner-cache certificate:
 | `E_5/E_1 = 0.03857 vs 0.04000` | hydrogen lattice companion | `E_5/E₁ = 0.03857  (target: 0.04000,  err: -3.57%)  [PASS]` |
 | Emergent length `r_0 = 2/g`, measured `2.00` | hydrogen lattice companion | `Emergent Bohr radius: r₀ = 2/g = 2.0  (measured: 2.00 lattice units)  [PASS]` |
 | `E(He⁺)/E₀ = -3.7908 vs -4` | helium Hartree companion | `E(He⁺)/E₀ = -3.7908     -4.0000    +5.23%` |
-| `|E(He)|/|E(He⁺)| = 1.3424` | helium Hartree companion | `|E(He)|/|E(He⁺)| = 1.3424  (Hartree target ~1.424)` |
-| `IE_1/IE_2 = 0.3424` | helium Hartree companion | `IE₁/IE₂ = 0.3424` |
-| Jastrow VMC `|E(He)|/|E(He⁺)| = 1.4357` | helium Jastrow companion | `Optimal r_J = 3.0  →  Jastrow (r_J=3)  1.43572` |
-| Hartree baseline at N=20: `1.3978` | helium Jastrow companion | `Hartree (product)  1.39784  ... ` |
+| `|E(He)|/|E(He⁺)| = 1.4310` | helium Hartree companion | `|E(He)|/|E(He⁺)| = 1.4310  (Hartree target ~1.424)` |
+| `IE_1/IE_2 = 0.4310` | helium Hartree companion | `IE₁/IE₂ = 0.4310` |
+| Jastrow VMC `|E(He)|/|E(He⁺)| = 1.4365` | helium Jastrow companion | `Optimal r_J = 3.0  →  Jastrow (r_J=3)  1.43653` |
+| Hartree baseline at N=20: `1.4150` | helium Jastrow companion | `Hartree (product)  1.41501  ... ` |
 
 This pin-table addresses the audit-stated repair sub-target as a
 **restricted-packet visibility** repair: it inlines the runner source
@@ -383,14 +383,14 @@ two-electron Hamiltonian on the same kernel. At `N = 30`, `g_EM = 0.5`,
 `g_nuc = 1.0`, it gives:
 
 - `E(He^+) / E_0 = -3.7908` vs continuum `-4`
-- `|E(He)| / |E(He^+)| = 1.3424`
-- `IE_1 / IE_2 = 0.3424`
+- `|E(He)| / |E(He^+)| = 1.4310`
+- `IE_1 / IE_2 = 0.4310`
 
 The Jastrow/VMC companion then improves the helium ratio from the Hartree
 baseline toward the known continuum / FCI checkpoint:
 
-- Hartree baseline at `N = 20`: `|E(He)| / |E(He^+)| = 1.3978`
-- one-parameter Jastrow optimum: `1.4357`
+- Hartree baseline at `N = 20`: `|E(He)| / |E(He^+)| = 1.4150`
+- one-parameter Jastrow optimum: `1.4365`
 - historical full-CI / experiment checkpoint: `1.452`
 
 Interpretation:

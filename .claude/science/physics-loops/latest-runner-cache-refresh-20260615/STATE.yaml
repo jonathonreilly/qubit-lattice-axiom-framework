@@ -1,0 +1,13 @@
+loop: latest-runner-cache-refresh-20260615
+status: ready_for_review
+started_from: origin/main@544b9184f18a256fb89db849a6e3941bac7304c9
+active_route: targeted_runner_cache_refresh
+target_runners:
+  - scripts/frontier_pmns_graph_first_axis_alignment.py
+  - scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py
+  - scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py
+result: three_caches_refreshed_successfully
+audit_data_modified: false
+next_exact_action: "Reviewer can land the cache refresh; auditor remains responsible for verdicts."
+stop_condition: "The three newly stale caches are fresh; older stale blockers remain covered by PR #4005 and PR #3991."
+

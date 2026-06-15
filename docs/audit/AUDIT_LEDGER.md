@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 928 |
+| **retained_bounded** | 929 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1475 |
+| unaudited | 1474 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1370 |
+| `audited_clean` | 1371 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1792 |
+| `unaudited` | 1791 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 533 |
-| `high` | 508 |
-| `medium` | 889 |
+| `high` | 509 |
+| `medium` | 888 |
 | `leaf` | 1381 |
 
 - **Retained pending chain closure:** 4
@@ -1058,6 +1058,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_three_flux_holonomy_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `poisson_3d_self_field_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
@@ -15018,6 +15019,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The electron row, third column, and first column stochastic sums with mu-tau equality give |U_e1|^2 = 2/3 - s^2, |U_mu3|^2 = |U_tau3|^2 = (1 - s^2)/2, and |U_mu1|^2 = |U_tau1|^2 = 1/6 + s^2/2.  _(class `A`)_
 - **chain closes:** True — Within the stated hypotheses, the stochastic row and column equations uniquely fix all displayed entries. This does not derive the residual assumptions or a value of sin^2(theta_13), but those are outside the audited conditional scope.
 - **rationale:** The displayed matrix follows by solving the stochastic row/column equations under the TM2 second-column and mu-tau equality hypotheses. Independent algebra verifies all displayed coefficients, sample values, denominator statements, double stochasticity, mu-tau equality, and nonnegativity on 0 <= s^2 <= 2/3. The runner's 41 PASS checks are class-A corroboration and partly encode the displayed formula, so the clean verdict rests on the manual algebra within the note's explicitly conditional scope.
+- **auditor confidence:** high
+
+### `pmns_tm2_residual_consequence_bounded_note_2026-05-26`
+
+- **Note:** [`PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded if-then algebra: a standard-parametrized unitary PMNS matrix satisfying trimaximal second-column and column-3 mu-tau modulus residuals implies TM2, sin^2(theta_23)=1/2, and cos(delta_CP)=0 on c12*s12*s13 != 0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-234937-8b64b8ebc0-pmns_tm2_residual_consequenc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the TM2 sum rule, c12^2 + s12^2*s13^2 = 2/3, so Eq. (3) reduces to 2*c12*s12*s13*cos(delta_CP)=0 and the nonsingular chamber gives cos(delta_CP)=0.  _(class `A`)_
+- **chain closes:** True — The chain closes for the stated bounded implication: the residuals are explicit theorem hypotheses, and all three conclusions follow by standard PMNS algebra without external numerical input. The upstream derivation of those residuals is outside the audited scope and is not used.
+- **rationale:** The load-bearing computation is exact algebra in the standard PMNS parametrization: |U_e2|^2 gives the TM2 sum rule, |U_mu3|^2=|U_tau3|^2 gives sin^2(theta_23)=1/2, and the theta_23=pi/4 second-column equation cancels to the phase divisor times cos(delta_CP). An independent sign and factor check of U_mu2=c12*c23 - s12*s23*s13*exp(i*delta) confirms the minus sign and the 1/2 factor used in Eq. (3), and the endpoint s13^2=2/3 is correctly outside the nonsingular chamber. The verdict is clean only for the bounded if-then algebra; the note does not derive the residual hypotheses as framework PMNS predictions.
 - **auditor confidence:** high
 
 ### `pmns_twisted_flux_transfer_holonomy_boundary_note`

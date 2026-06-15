@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1481 |
-| Retained-grade rows, including boxed decorations | 1378 |
+| Applied audit verdicts | 1482 |
+| Retained-grade rows, including boxed decorations | 1379 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 914 |
+| Retained bounded rows | 915 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1511 |
+| Unaudited rows | 1510 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 18 |
 | Audited renaming rows | 30 |
@@ -33,18 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1513 |
+| Total pending rows | 1512 |
 | Ready rows | 77 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
-| High pending | 285 |
+| High pending | 284 |
 | Medium pending | 466 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04`](../../docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md) - high; unaudited
 - [`action_normalization_note`](../../docs/ACTION_NORMALIZATION_NOTE.md) - high; unaudited
+- [`two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05`](../../docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md) - high; unaudited
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
 - [`wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08`](../../docs/WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md) - high; unaudited
 - [`su3_adjoint_casimir_theorem_note_2026-05-02`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md) - high; unaudited
@@ -89,7 +89,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1597 descendants; score 136.642
-- `three_generation_observable_theorem_note` - critical; 1008 descendants; score 64.479
+- `three_generation_observable_theorem_note` - critical; 1009 descendants; score 64.480
 - `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
 - `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
 - `plaquette_self_consistency_note` - critical; 1008 descendants; score 51.479

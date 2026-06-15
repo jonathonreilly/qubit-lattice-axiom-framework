@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_abcc_basin_enumeration_completeness.py
-runner_sha256: cb0d1b2f7c2a5ffdc7b7b5d4f9af3e395ea50de047ba43e182da85c9281d023d
+runner_sha256: df97aa11c456a35fc45c875f5b87422ac92ccf21b5e0c346ccbe87308fa3ff31
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 409.70
+elapsed_sec: 194.18
 status: ok
 ----- stdout -----
 ========================================================================
@@ -96,5 +96,6 @@ Grid N per axis:    15  (N^3 = 3375 seeds / sigma)
   [PASS] Exhaustiveness certificate holds at stated (R, N, tolerance, L)  (R=50.0, N^3=3375, tol=0.15, half_min_sep=0.169, L=0.770)
 
 TOTAL: PASS=30  FAIL=0
+
 ----- stderr -----
 

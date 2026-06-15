@@ -32,6 +32,8 @@ from dm_full_closure_same_surface_thermal_support_common import (
 from dm_full_closure_minimal_reduced_cycle_extension_map_common import omega_b_from_eta
 from dm_leptogenesis_exact_common import ETA_OBS
 
+AUDIT_TIMEOUT_SEC = 120
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 SUPPORT_COUNT = 0

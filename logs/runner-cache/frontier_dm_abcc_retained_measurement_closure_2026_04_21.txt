@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_abcc_retained_measurement_closure_2026_04_21.py
-runner_sha256: cff7ffc0656747dec9b11b8609dbbe87539bfd2d8602e9b021dc7f040e260d49
+runner_sha256: 2cf6b8341ae0351a396da11271f92057f3b77a745e9e9a33205a3d78b0161564
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 69.40
+elapsed_sec: 43.69
 status: ok
 ----- stdout -----
 DM A-BCC retained measurement closure theorem
@@ -39,5 +39,6 @@ Part 4: Closure-grade statement
 TOTAL: PASS=15 FAIL=0
 STATUS: ALL PASS — retained-measurement A-BCC closure verified
 ========================================================================
+
 ----- stderr -----
 

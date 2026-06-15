@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_self_consistency.py
-runner_sha256: 3cc83f932cd6341c66064102439766563d714acdca2004c956dba6e14f946dff
+runner_sha256: c9d33b5d43b3f8f6d6fd39d90e58db70fab45172323a6e0fecd2137b7a08d25f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 29.95
+elapsed_sec: 32.82
 status: ok
 ----- stdout -----
 ========================================================================
@@ -23,10 +23,10 @@ BOUNDED: <P>(beta=6, SU(3), 4D) ~= 0.5934 is treated here as a
 === Part 2: multi-volume MC at beta = 6 ===
 
   Running L = 4 (4^4 sites)...
-    <P> = 0.621085 +/- 0.001231  (acc = 0.38, 3.4s)
+    <P> = 0.621085 +/- 0.001231  (acc = 0.38, 3.8s)
   [PASS] [BOUNDED] L=4 plaquette consistent with canonical reference  (<P> = 0.6211, ref = 0.5934, rel = +4.67%)
   Running L = 6 (6^4 sites)...
-    <P> = 0.611159 +/- 0.000875  (acc = 0.38, 14.5s)
+    <P> = 0.611159 +/- 0.000875  (acc = 0.38, 16.3s)
   [PASS] [BOUNDED] L=6 plaquette consistent with canonical reference  (<P> = 0.6112, ref = 0.5934, rel = +2.99%)
   [PASS] [BOUNDED] larger symmetric volume moves toward the canonical plaquette value  (|Delta|_L4 = 0.0277, |Delta|_L6 = 0.0178)
 

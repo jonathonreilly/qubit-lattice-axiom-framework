@@ -257,7 +257,6 @@ def main() -> int:
         )
 
     # (T2 8D) Tr_8[T^a_8D T^b_8D] = delta_{ab} (factor 2 from fiber I_2 trace).
-    # Use symbolic for diagonal, numeric matrix product for off-diagonal sweep.
     for a in range(8):
         tr_diag = simplify((T8[a] * T8[a]).trace())
         check(
@@ -265,6 +264,18 @@ def main() -> int:
             tr_diag == 1,
             f"got {tr_diag}",
         )
+    fail_count_norm_8d = 0
+    for a in range(8):
+        for b in range(8):
+            tr = simplify((T8[a] * T8[b]).trace())
+            expected = 1 if a == b else 0
+            if tr != expected:
+                fail_count_norm_8d += 1
+    check(
+        "(T2 8D) Tr_8[T^a_8D T^b_8D] = delta_{ab} on all 64 pairs",
+        fail_count_norm_8d == 0,
+        f"fails = {fail_count_norm_8d}",
+    )
 
     # =========================================================================
     section("Part 5: Lie algebra closure: [T^a_8D, T^b_8D] = i f^{abc} T^c_8D")
@@ -307,7 +318,9 @@ def main() -> int:
     sigmas_np = [s1n, s2n, s3n]
     Jf_np = [np.kron(I4_np, sigmas_np[i] / 2) for i in range(3)]
 
-    # Compute structure constants f^{abc} = 2/i * Tr([T3^a, T3^b] T3^c).
+    # Compute structure constants f^{abc} = (2/i) * Tr([T3^a, T3^b] T3^c).
+    # Since the trace is imaginary on this Hermitian basis, this is
+    # equivalently 2 * Im Tr([T3^a, T3^b] T3^c).
     f_abc = np.zeros((8, 8, 8), dtype=float)
     for a in range(8):
         for b in range(8):
@@ -499,7 +512,7 @@ def main() -> int:
     print("    M^a_4 = U_base^dag * diag(lambda^a/2, 0) * U_base Hermitian, traceless (sympy)")
     print("    Block structure: sym 3x3 block of M^a_4 = lambda^a/2; antisym (3,3) = 0; no mixing (sympy)")
     print("    T^a_8D = M^a_4 (x) I_2 Hermitian, traceless (sympy)")
-    print("    Tr_8[T^a_8D T^a_8D] = 1 (sympy diagonal)")
+    print("    Tr_8[T^a_8D T^b_8D] = delta_{ab} (sympy, all 64 pairs)")
     print("    Lie algebra closure [T^a_8D, T^b_8D] = i sum_c f^{abc} T^c_8D (64 pairs, numpy)")
     print("    9 known Gell-Mann structure constants f^{abc} reproduced (numpy)")
     print("    Jacobi identity on all 512 triples (numpy)")

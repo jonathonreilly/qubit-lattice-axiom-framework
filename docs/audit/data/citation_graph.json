@@ -1514,10 +1514,6 @@
     },
     {
       "from": "axiom_first_cpt_theorem_stretch_note_2026-04-29",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
-    },
-    {
-      "from": "axiom_first_cpt_theorem_stretch_note_2026-04-29",
       "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
     },
     {
@@ -14205,6 +14201,30 @@
       "to": "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
     },
     {
+      "from": "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
+      "to": "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
+      "to": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+    },
+    {
       "from": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
       "to": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
     },
@@ -14451,6 +14471,34 @@
     {
       "from": "gauge_vacuum_plaquette_width_two_ladder_structural_lift_bounded_note_2026-06-12",
       "to": "gauge_vacuum_plaquette_rim_depth_ladder_deep_rim_limit_bounded_note_2026-06-12"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
+      "to": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
+      "to": "su3_fusion_engine_pr1_theorem_note_2026-05-03"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
+      "to": "plaquette_self_consistency_note"
     },
     {
       "from": "gauge_vacuum_plaquette_window_clebsch_insertion_displacement_bounded_note_2026-06-12",
@@ -16331,10 +16379,6 @@
     {
       "from": "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
       "to": "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
     },
     {
       "from": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
@@ -30283,6 +30327,18 @@
     {
       "from": "primordial_spectrum_note",
       "to": "emergent_geometry_growth_note_2026-04-10"
+    },
+    {
+      "from": "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+      "to": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
+      "from": "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+      "to": "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+      "to": "minimal_axioms"
     },
     {
       "from": "propagator_family_unification_note",
@@ -54797,14 +54853,13 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms",
-        "staggered_dirac_realization_gate_note_2026-05-03",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
         "assumption_derivation_ledger"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bdd418099d0df9c93d71b2397bb73759f323a0af64a969abcc1ceace93434f85",
+      "note_hash": "63a946e6dc6f8001b969894aa94d7bca382a6c45957bfa8c3e2307cb4d5c1187",
       "path": "docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_cpt_check.py",
       "title": "Axiom-First CPT Theorem (Stretch Attempt) on Cl(3) \u2297 Z^3"
@@ -73641,6 +73696,33 @@
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py",
       "title": "Gauge-Vacuum Plaquette Susceptibility-Flow Finite Packet"
     },
+    "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12": {
+      "claim_id": "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+        "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+        "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
+        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+      ],
+      "helper_runner_paths": [
+        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+        "scripts/gauge_vacuum_plaquette_strip_word_deep_ladder_product_axis_bounded_2026_06_12.py",
+        "scripts/gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_2026_06_12.py",
+        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+        "scripts/gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_2026_06_12.py",
+        "scripts/su3_fundamental_fusion_cg_b4.py"
+      ],
+      "note_hash": "82707e6c0d4ace45e8b458abeca677d369c6269c4839eb286e7adeee34919f7e",
+      "path": "docs/GAUGE_VACUUM_PLAQUETTE_SYMMETRIZED_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_2026_06_12.py",
+      "title": "Gauge-Vacuum Plaquette Symmetrized Window Displacement Bounded Note"
+    },
     "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": {
       "claim_id": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -73938,6 +74020,31 @@
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_TOP_DOWN_INTEGRAL_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md",
       "runner_path": "scripts/gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_2026_06_12.py",
       "title": "Gauge-Vacuum Plaquette Window Top-Down Integral Displacement Bounded Note"
+    },
+    "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12": {
+      "claim_id": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
+        "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+        "su3_fusion_engine_pr1_theorem_note_2026-05-03",
+        "plaquette_self_consistency_note"
+      ],
+      "helper_runner_paths": [
+        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+        "scripts/frontier_su3_fusion_engine.py",
+        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
+      ],
+      "note_hash": "dee5eee4d5b9dfb55ccfca2020c54b98abf11014d95cb5edbed2a784a48e7792",
+      "path": "docs/GAUGE_VACUUM_PLAQUETTE_WINDOWED_BOND_DEEP_LIMIT_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_2026_06_12.py",
+      "title": "Gauge-Vacuum Plaquette Windowed-Bond Deep Limit Bounded Note"
     },
     "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12": {
       "claim_id": "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12",
@@ -75864,11 +75971,10 @@
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
       "deps": [
-        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_realization_gate_note_2026-05-03"
+        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "db15eaa833c3be60b21c3a7f578703909e95823676f3a8e34f23133d6e0395fd",
+      "note_hash": "180912b470e8ccda54bd77a866b0a9de420ba84520284cbb7ea11b22f14de947",
       "path": "docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md",
       "runner_path": "scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py",
       "title": "Hierarchy alpha_LM Exponent / Species-Count Bridge \u2014 Regulator-Dependence No-Go Note (Derivation-Source No-Go Only; Substrate-Imposed Closure Routes O1\u2013O3 Named)"
@@ -93189,6 +93295,22 @@
       "runner_path": "scripts/frontier_primordial_spectrum.py",
       "title": "Primordial Power Spectrum from Graph Growth"
     },
+    "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": {
+      "claim_id": "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d96e050aece1aa076d096a8fbb51a50abfbaaefa3fc21c23f520004bd38d9ef3",
+      "path": "docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_product_form_weakens_to_outcome_factorization_2026_06_12.py",
+      "title": "Product-Form Premise Weakens to Outcome-Level Factorization"
+    },
     "propagator_family_unification_note": {
       "claim_id": "propagator_family_unification_note",
       "claim_type_author_hint": null,
@@ -98339,7 +98461,7 @@
         "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fc0b1a0ad4f9d48396197b27f858c80307e9a97725336344266ca4ad92c6e677",
+      "note_hash": "64749d672cdd48b32d22848d21e671bc7aa41aefcc2a58bb5c607db1920ebdb5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113087,7 +113209,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1185,
+      "bounded_theorem": 1188,
       "decoration": 1,
       "meta": 279,
       "no_go": 169,
@@ -113096,7 +113218,7 @@
       "positive_theorem": 194
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1601,
+      "bounded_theorem": 1604,
       "decoration": 1,
       "meta": 279,
       "no_go": 285,
@@ -113104,10 +113226,10 @@
       "open_gate": 170,
       "positive_theorem": 615
     },
-    "edge_count": 12897,
-    "leaf_count": 1109,
-    "node_count": 3434,
+    "edge_count": 12911,
+    "leaf_count": 1112,
+    "node_count": 3437,
     "root_count": 1063,
-    "runners_with_path": 3014
+    "runners_with_path": 3017
   }
 }

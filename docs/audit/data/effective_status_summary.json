@@ -1,6 +1,6 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1653,
+    "bounded_theorem": 1656,
     "decoration": 48,
     "meta": 325,
     "no_go": 336,
@@ -118,9 +118,9 @@
       "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
     ]
   ],
-  "cycles_detected": 20,
+  "cycles_detected": 19,
   "effective_status_counts": {
-    "audited_conditional": 52,
+    "audited_conditional": 51,
     "audited_failed": 3,
     "audited_numerical_match": 14,
     "audited_renaming": 31,
@@ -156,12 +156,11 @@
     "retained": 211,
     "retained_bounded": 906,
     "retained_no_go": 210,
-    "retained_pending_chain": 20,
-    "unaudited": 1443
+    "retained_pending_chain": 19,
+    "unaudited": 1448
   },
-  "retained_pending_chain_count": 20,
+  "retained_pending_chain_count": 19,
   "retained_pending_chain_examples": [
-    "axiom_first_cpt_theorem_stretch_note_2026-04-29",
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",

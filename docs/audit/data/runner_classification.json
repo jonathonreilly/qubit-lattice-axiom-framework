@@ -1204,12 +1204,12 @@
       "assert_count": 2,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "B",
       "runner": "scripts/axiom_first_cpt_check.py"
     },
     "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": {
@@ -13104,6 +13104,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py"
     },
+    "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_2026_06_12.py"
+    },
     "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": {
       "assert_count": 1,
       "counts": {
@@ -13259,6 +13271,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_2026_06_12.py"
+    },
+    "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 19,
+        "D": 8
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_2026_06_12.py"
     },
     "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12": {
       "assert_count": 1,
@@ -14561,7 +14585,7 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 4,
+        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,
@@ -25763,6 +25787,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/frontier_primordial_spectrum.py"
+    },
+    "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 18,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_product_form_weakens_to_outcome_factorization_2026_06_12.py"
     },
     "publication.ci3_z3.figure_plan": {
       "assert_count": 1,
@@ -40136,12 +40172,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/axiom_first_first_law_bh_mechanics_check.py": {
@@ -55309,7 +55345,7 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 4,
+        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,
@@ -63416,6 +63452,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/frontier_product_form_weakens_to_outcome_factorization_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 18,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_qcd_beta_3_pure_gauge_vs_full_sm_narrow_exact_2026_06_02.py": {
@@ -72204,6 +72255,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py": {
       "assert_count": 1,
       "claims": [
@@ -72364,6 +72430,21 @@
         "B": 1,
         "C": 13,
         "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 19,
+        "D": 8
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -79542,16 +79623,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 545,
+    "decoration_candidates": 546,
     "dominant_class_distribution": {
-      "A": 421,
-      "B": 472,
-      "C": 1142,
+      "A": 422,
+      "B": 473,
+      "C": 1143,
       "D": 399,
       "none": 455
     },
-    "runners_classified": 2889,
-    "runners_with_C": 1542,
-    "runners_with_D": 914
+    "runners_classified": 2892,
+    "runners_with_C": 1544,
+    "runners_with_D": 916
   }
 }

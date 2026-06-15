@@ -6,14 +6,17 @@ identities from the deferred SU(3) Wilson-plaquette gauge-sector lift);
 2026-06-11 (audit-failed repair: corrected composition — the ε sign
 field is carried inside the map, landing at `M^*` — plus non-degenerate
 runner blocks with explicit boundary conventions; axiom surface rebased
-on [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)).
+on [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md));
+2026-06-12 (explicit-carrier rescope: the in-block theorem is a
+self-contained finite-KS-matrix result, with the staggered realization
+gate named only as non-load-bearing downstream context).
 **Status:** source-note proposal — author-declared `bounded_theorem`;
 effective status set only by the independent audit lane.
 **Claim type:** bounded_theorem
 **Loop:** `axiom-first-foundations`
 **Cycle:** 4 (Route R4 — stretch attempt)
 **Runner:** [`scripts/axiom_first_cpt_check.py`](../scripts/axiom_first_cpt_check.py)
-(`TOTAL: PASS=114 FAIL=0`, deterministic, runtime a few seconds)
+(`TOTAL: PASS=119 FAIL=0`, deterministic, runtime a few seconds)
 **Runner cache:** [`logs/runner-cache/axiom_first_cpt_check.txt`](../logs/runner-cache/axiom_first_cpt_check.txt)
 
 ## Authority disclaimer
@@ -79,14 +82,48 @@ route):
    artifact of the defective composition (F-A): under the corrected
    map the 1D time-circle identity closes **exactly** (runner
    [DIAG]). The Wilson-FERMION-term wall diagnostic stands unchanged
-   (residual 1.0; pure staggered is the admitted carrier).
+   (residual 1.0; pure staggered is the explicit carrier family).
 5. **Axiom-surface rebase.** Citations move from the superseded
    `MINIMAL_AXIOMS_2026-05-03.md` to the current registered premise
    node [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
    (its "Open Gates And Admissions Outside The Axioms" section lists
    the staggered-Dirac/`AC_phi_lambda` (display `AC_φλ`) realization
    gate and the `g_bare = 1` convention handling consumed here as
-   named admitted inputs).
+   context surfaces; the 2026-06-12 rescope below removes the
+   realization gate as a load-bearing dependency of the in-block
+   finite-matrix theorem).
+
+## Explicit-carrier dependency-edge rescope (2026-06-12)
+
+The audit-conditional blocker after the 2026-06-11 repair was not the
+finite-matrix CPT algebra: the runner and the audit both found the
+corrected `Theta_CPT M Theta_CPT^{-1} = M^*` chain to close on the
+pure staggered kernel. The blocker was the dependency edge to the
+unaudited staggered-Dirac realization gate, which is needed only if this
+row claims that the framework has already selected the pure staggered
+carrier as the physical matter operator.
+
+This revision therefore narrows the load-bearing object to the explicit
+finite KS carrier family defined in this note:
+
+```text
+Lambda = prod_mu Z_{L_mu},  L_mu even,
+M = m I + M_KS,
+(M_KS)_{x,x+mu} = +(1/2) eta_mu(x) wrap(x,x+mu),
+(M_KS)_{x,x-mu} = -(1/2) eta_mu(x) wrap(x,x-mu),
+eta_mu(x) = (-1)^(x_0 + ... + x_{mu-1}).
+```
+
+The theorem below is a bounded finite-matrix theorem about this
+explicit family. It does not assert that Quantum + Lattice derive or
+select this carrier. The staggered-Dirac realization gate remains
+non-load-bearing downstream context for framework identification only;
+there is intentionally no markdown dependency edge to that gate in this
+source note. If a downstream row needs the statement "the framework
+matter operator is this KS carrier", that downstream row still depends
+on the realization-gate audit. If it needs only the finite-matrix CPT
+identity once the KS family is supplied explicitly, this note supplies
+that algebra directly.
 
 The scope split of 2026-05-10 (fermion sector in-block; SU(3)
 Wilson-plaquette gauge-sector lift deferred) is unchanged.
@@ -109,12 +146,13 @@ This 2026-05-10 repair takes path (a) and rebases the hypothesis set:
   `MINIMAL_AXIOMS_2026-05-03.md` (historical; the 2026-06-11 revision
   rebases again onto the current memo). Only
   `A1` (Cl(3) per-site algebra) and `A2` (`Z^3` substrate) are framework
-  axioms here. The Grassmann staggered-Dirac action is admitted as a
-  named open-gate input under `admitted_context_inputs`. The proof is a
-  bounded fermion-sector CPT identity on the admitted staggered carrier.
+  axioms here. The finite KS carrier is now an explicit local matrix
+  family defined in this note, not a consumed open-gate dependency. The
+  proof is a bounded fermion-sector CPT identity on that supplied
+  finite matrix family.
 - **(R2) Scope split.** The in-block result is split explicitly into
-  - **(I) Fermion-sector identities (CPT1)–(CPT5) on the admitted
-    staggered carrier**: closed in-block to machine precision on the
+  - **(I) Fermion-sector identities (CPT1)–(CPT5) on the explicit
+    finite KS carrier**: closed in-block to machine precision on the
     `2³` pure-staggered runner blocks at masses `0.3` and `0.5` (runner
     `axiom_first_cpt_check.py`). This is the bounded fermion-sector
     theorem this note proposes for audit. *(2026-06-11 annotation:
@@ -132,7 +170,7 @@ This 2026-05-10 repair takes path (a) and rebases the hypothesis set:
 - **(R3) Action-invariance scope narrowing.** The action-invariance
   identity (CPT3) of the original note was stated for the full
   canonical action `S = S_F + S_G`. After the split it is restated for
-  `S_F` only on the admitted staggered carrier; the `S_F + S_G`
+  `S_F` only on the explicit finite KS carrier; the `S_F + S_G`
   invariance is conditional on path (II) closing and is recorded in
   Honest status as an admitted-context corollary, not an in-block
   theorem.
@@ -144,11 +182,8 @@ a "CPT-even" assumption when restricting the scalar observable
 generator `W` to depend only on `|Z|` rather than on the fermionic phase
 of `Z`. This note proposes a bounded fermion-sector identity that is
 the natural in-block step toward discharging that assumption: it
-constructs an explicit antiunitary involution `Θ_CPT` on the **admitted
-canonical staggered Grassmann action** (named open gate per the current
-axiom memo
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md),
-"Open Gates And Admissions Outside The Axioms") and
+constructs an explicit antiunitary involution `Θ_CPT` on the **explicit
+finite KS Grassmann kernel family** defined here and
 verifies, both algebraically and numerically on non-degenerate
 pure-staggered blocks, that
 
@@ -156,11 +191,10 @@ pure-staggered blocks, that
     Θ_CPT  M  Θ_CPT^{-1}   =   M^*                                    (1)
 ```
 
-where `M` is the staggered Dirac operator (no Wilson fermion term;
-canonical normalization is admitted as a separate named input — see
-"Hypothesis set used"). The in-block conclusion is then a bounded
-fermion-sector CPT identity (CPT1)–(CPT5) on the admitted staggered
-carrier.
+where `M` is the explicit KS matrix (no Wilson fermion term). The
+in-block conclusion is then a bounded
+fermion-sector CPT identity (CPT1)–(CPT5) on the explicit KS carrier
+family.
 
 **Out of scope (post-split).** Discharge of the OBSERVABLE_PRINCIPLE
 "CPT-even" premise on the **full canonical action** `S_F + S_G` (i.e.
@@ -170,30 +204,29 @@ SU(3) Wilson-plaquette CPT lift named in (R2)(II); when that gate
 closes, the discharge of the "CPT-even" premise lifts to the full
 canonical action by composition.
 
-## Hypothesis set used (post-split 2026-05-10; rebased 2026-06-11)
+## Hypothesis set used (post-split 2026-05-10; rebased 2026-06-11; rescope 2026-06-12)
 
-The proof uses the framework baseline inputs recorded on the current
-axiom surface
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md), plus
-two **named admitted inputs** corresponding to open gates listed in
-that memo's "Open Gates And Admissions Outside The Axioms" section:
+The proof is stated over the current framework baseline
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) plus
+the explicit finite KS carrier family below. The in-block theorem has
+no load-bearing dependency on the staggered-Dirac realization gate.
 
-**Framework baseline inputs (current):**
+**Framework baseline context (current):**
 
-- **Quantum (one qubit per site / `Cl(3)` local algebra)** (legacy
-  alias: `A1`). Used via the staggered phases `η_μ(x), ε(x)` and the
-  1-component staggered charge conjugation `C : χ_x ↦ ε(x) χ̄_x^T`,
-  `χ̄_x ↦ -ε(x) χ_x^T` (corrected construction §1; no separate
-  C̄-matrix enters the 1-component carrier).
-- **Lattice (`Z^3` substrate)** (legacy alias: `A2`) with periodic /
-  APBC wrap signs per direction on the finite block `Λ`. Used via the
-  bond-centered reflections `r(x)_μ = L_μ - 1 - x_μ` (corrected
-  construction §2; boundary convention explicit).
+- **Quantum (one qubit per site / `Cl(3)` local algebra)** supplies only
+  the onsite algebraic backdrop. It does not supply the Grassmann
+  carrier, the KS phases, charge conjugation, or any framework
+  selection of this finite matrix family.
+- **Lattice (`Z^3`)** supplies only the site/adjacency backdrop. The
+  finite even block, periodic/APBC wrap signs, and bond-centered
+  reflection convention used by this theorem are supplied explicitly as
+  part of the finite-KS carrier/boundary data below.
 
-**Admitted context inputs (open gates per current axiom memo):**
+**Explicit supplied finite-KS carrier (load-bearing for this row):**
 
-- **`staggered_dirac_realization_gate`.** The Grassmann partition with
-  pure staggered Dirac action
+- **Pure KS finite matrix family.** On the finite even block
+  `Λ = Π_μ Z_{L_μ}`, with per-direction periodic or antiperiodic wrap
+  signs, define
 
   ```text
       S_F[χ̄, χ]  =  Σ_{x,y}  χ̄_x  M_xy  χ_y,
@@ -203,17 +236,19 @@ that memo's "Open Gates And Admissions Outside The Axioms" section:
 
   `M_KS` is real and antisymmetric; `M = m + M_KS` is therefore real
   with `M^† = M^T = -M_KS + m`. There is **no Wilson fermion term**.
-  Per [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
-  ("Open Gates And Admissions Outside The Axioms": the
-  staggered-Dirac/finite-Grassmann realization and `AC_phi_lambda`,
-  display `AC_φλ`),
-  this surface is admitted under named open-gate input until that gate
-  closes.
-  Canonical parent note:
-  [`staggered_dirac_realization_gate_note_2026-05-03`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md),
-  the registered Tier-A derivation target `AC_phi_lambda` (display
-  `AC_φλ`). This note consumes that admitted staggered carrier; it
-  does not close the gate.
+  This explicit family is the only carrier input consumed by the
+  finite-matrix CPT theorem. The source note intentionally does not
+  claim that this row derives the physical staggered realization from
+  the framework baseline.
+
+**Non-load-bearing context inputs:**
+
+- The staggered-Dirac realization gate remains the downstream framework
+  identification surface for rows that need to know that the physical
+  matter operator is this KS carrier. That gate is named here only as
+  context and is not a load-bearing dependency of the finite-matrix CPT
+  theorem. No markdown dependency edge to that gate is present in this
+  source note.
 
 - **`g_bare_canonical_normalization_gate`** (only for the Wilson
   plaquette structural observation; **not** load-bearing for the
@@ -238,8 +273,8 @@ that memo's "Open Gates And Admissions Outside The Axioms" section:
 
 Work on the finite 4D block `Λ = Z_{L_0} × Z_{L_1} × Z_{L_2} ×
 Z_{L_3}` (all `L_μ` even), KS phases `η_μ(x) = (-1)^{x_0+…+x_{μ-1}}`,
-per-direction periodic or antiperiodic wrap signs, and the admitted
-1-component staggered carrier `M = m·I + M_KS` (real; `M_KS`
+per-direction periodic or antiperiodic wrap signs, and the explicit
+1-component KS carrier `M = m·I + M_KS` (real; `M_KS`
 antisymmetric). Write `Θ_CPT = C · Θ_PT · K` with:
 
 ### 1. Charge conjugation `C` (carries the ε sign field)
@@ -349,13 +384,10 @@ an in-block theorem of this note.
 
 ## Statement (post-split 2026-05-10; corrected 2026-06-11)
 
-Under the Quantum (`Cl(3)` local algebra) and Lattice (`Z^3`
-substrate) baseline (legacy aliases `A1`/`A2`) of
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) plus the
-named admitted `staggered_dirac_realization_gate` input (see
-"Hypothesis set used"), on the finite block `Λ = Π_μ Z_{L_μ}` (all
-`L_μ` even, any per-direction periodic/antiperiodic wrap signs), the
-in-block bounded fermion-sector theorem is:
+Under the explicit finite KS carrier family defined in "Hypothesis set
+used", on the finite block `Λ = Π_μ Z_{L_μ}` (all `L_μ` even, any
+per-direction periodic/antiperiodic wrap signs), the in-block bounded
+fermion-sector theorem is:
 
 **(CPT1) Existence.** The antiunitary operator
 `Θ_CPT = (E Σ_PT R_b) K = C · Θ_PT · K`
@@ -367,7 +399,7 @@ defined by (2), (4) is an involution: `Θ_CPT² = id`.
     Θ_CPT  M  Θ_CPT^{-1}   =   M^*                                    (10)
 ```
 
-for `M` the admitted staggered Dirac operator (no Wilson fermion term).
+for `M` the explicit KS matrix (no Wilson fermion term).
 
 **(CPT3) Fermion-sector action invariance** (scope-narrowed, post-split).
 
@@ -398,18 +430,18 @@ full ensemble is conditional on the deferred (R2)(II) gate.
 
 ## Honest status (corrected 2026-06-11)
 
-**Bounded fermion-sector theorem on the admitted staggered carrier;
+**Bounded fermion-sector theorem on the explicit finite KS carrier;
 SU(3) Wilson-plaquette gauge-sector lift deferred.**
 
-(CPT1)–(CPT5) on the **fermion sector** of the admitted staggered
+(CPT1)–(CPT5) on the **fermion sector** of the explicit finite KS
 carrier (pure staggered, no Wilson fermion term) are closed in-block
 to exact zero residual on four **non-degenerate** runner blocks —
 `2⁴` all-antiperiodic, `4⁴` periodic, `4⁴` APBC-time, `4×2×4×2`
 mixed — at masses `0.3` and `0.5`, with nonzero KS hopping asserted
 on every block (`max |M_KS| ∈ {0.5, 1.0}`), per the rewritten runner
-(`TOTAL: PASS=114 FAIL=0`).
+(`TOTAL: PASS=119 FAIL=0`).
 
-**What is closed in-block (admitted staggered carrier).**
+**What is closed in-block (explicit finite KS carrier).**
 
 | Identity | Status | Residual on the non-degenerate blocks |
 |----------|--------|---------------------------------------|
@@ -439,9 +471,9 @@ boundary convention is load-bearing).
   a parity wall.
 - Staggered + Wilson *fermion* term: `ε`-Hermiticity residual `1.0`
   (non-zero). The Wilson fermion term breaks the `ε`-as-`γ_5` chain.
-  This is **not** in scope: the admitted staggered-Dirac realization
-  gate uses pure staggered. (The Wilson term in the deferred (R2)(II)
-  gate is a gauge-sector plaquette, not a fermion Wilson term.)
+  This is **not** in scope: this row's explicit finite KS carrier is
+  pure staggered. (The Wilson term in the deferred (R2)(II) gate is a
+  gauge-sector plaquette, not a fermion Wilson term.)
 
 **What is *not* closed in-block (deferred upstream gate).**
 
@@ -456,21 +488,19 @@ boundary convention is load-bearing).
   OBSERVABLE_PRINCIPLE "CPT-even" premise on the full canonical
   action all lift conditionally on this gate closing.
 
-**Promotion path.** When the deferred (R2)(II) Wilson-plaquette
-gauge-sector CPT lift closes upstream and the named admitted
-`staggered_dirac_realization_gate` closes per
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md), this
-row becomes eligible for retagging by the independent audit lane.
+**Promotion path.** This row's finite-matrix CPT theorem no longer
+waits on the full staggered realization gate for its in-block algebra.
+Rows that need framework identification of the KS carrier still wait on
+that separate gate. The full-action CPT application still waits on the
+deferred (R2)(II) Wilson-plaquette gauge-sector lift. Retagging and
+downstream propagation remain audit-lane decisions.
 
-## Registered Tier-A routing (2026-06-11 #2; audit-requested repair)
+## Non-load-bearing realization-gate context (2026-06-12)
 
-The admitted `staggered_dirac_realization_gate` context input used by
-this note routes into the registered Tier-A derivation target
-`AC_phi_lambda` in docs/audit/data/tier_a_admissions.json, with
-canonical parent STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md.
-This routing follows the same packet-registration move used in
-PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md and the current
-CL3_TASTE_GENERATION_THEOREM.md dependency-edge treatment.
+The realization gate, canonical parent filename
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, is relevant only
+for downstream framework identification of the KS carrier. This CPT
+packet does not consume that authority as a source dependency.
 
 1. **The algebra is standalone.** The load-bearing in-block algebra is
    the finite-matrix package (CPT1)–(CPT4): ε-Hermiticity, the
@@ -479,21 +509,15 @@ CL3_TASTE_GENERATION_THEOREM.md dependency-edge treatment.
    these identities with explicit matrices on non-degenerate staggered
    blocks and falsification legs for the missing sign field, wrong
    sign field, and wrong boundary convention.
-2. **What the carrier admission carries.** The carrier admission
-   carries only the identification of `M = m + M_KS` as the framework
-   matter operator on the admitted pure-staggered Grassmann surface.
-   It does not supply, and this note does not claim, the finite-matrix
-   identities listed in point 1.
-3. **The admission is a registered Tier-A target.** The canonical
-   parent STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md is the
-   registered Tier-A derivation target `AC_phi_lambda` (display
-   `AC_φλ`) in docs/audit/data/tier_a_admissions.json. This note routes
-   its admitted carrier input into that registered target; it does not
-   close the gate. Under the published chain rule in
-   docs/audit/scripts/compute_effective_status.py, registered Tier-A
-   admissions are handled by the audit pipeline as bounded admissions
-   rather than unregistered conditional blockers.
-4. **No status assertion.** This section records the routing case only.
+2. **What the realization gate would carry.** The realization gate
+   carries the separate identification of `M = m + M_KS` as the
+   framework matter operator on the physical pure-staggered Grassmann
+   surface. It does not supply, and this note does not claim, the
+   finite-matrix identities listed in point 1.
+3. **No dependency edge.** The gate is deliberately not linked in
+   markdown form from this source note. Future framework-identification
+   consumers may cite the gate directly; this row does not.
+4. **No status assertion.** This section records the source boundary only.
    Status authority: independent audit lane only. The note asserts no
    `effective_status` and predicts no audit outcome.
 
@@ -515,7 +539,7 @@ gate.
 
 C3. *Reuse for any fermion-sector neutral-current / Theta_CPT-odd lane.*
 Any future lane that needs to assert "the fermion-sector ensemble
-on the admitted staggered carrier has zero expectation of a
+on the explicit KS carrier has zero expectation of a
 Theta_CPT-odd local observable" can cite (CPT5). The bridge from
 CP-odd (in the C·P sense) to Theta_CPT-odd is not supplied here; lanes
 needing the CP-odd form require that separate bridge. The full-ensemble
@@ -523,12 +547,16 @@ version is conditional on (R2)(II).
 
 ## Changelog
 
-- 2026-06-11 #2: Added the registered Tier-A routing section that
-  packet-registers the admitted `staggered_dirac_realization_gate`
-  carrier input against `AC_phi_lambda` without making an audit-status
-  assertion, and narrowed (CPT5) plus corollary C3 from CP-odd
-  observables to Theta_CPT-odd fermion-sector observables with the
-  missing CP-odd-to-Theta_CPT-odd bridge stated as separate.
+- 2026-06-12: Rescoped the in-block theorem to the explicit finite KS
+  matrix family and moved the staggered realization gate to
+  non-load-bearing context only; removed the markdown dependency edge
+  to the gate and added runner guards for the source boundary.
+- 2026-06-11 #2: Added an earlier Tier-A routing discussion for the
+  then-admitted `staggered_dirac_realization_gate` carrier input and
+  narrowed (CPT5) plus corollary C3 from CP-odd observables to
+  Theta_CPT-odd fermion-sector observables. The 2026-06-12 rescope
+  supersedes the routing discussion by making the gate non-load-bearing
+  context for this row.
 
 ## Citations
 

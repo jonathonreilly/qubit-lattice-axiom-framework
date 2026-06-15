@@ -95,6 +95,7 @@ from __future__ import annotations
 
 import sys
 from itertools import product
+from pathlib import Path
 
 import numpy as np
 
@@ -176,6 +177,23 @@ def main() -> int:
     print("(2026-06-11 audit-failed repair: eps sign field carried inside the")
     print(" map; bond-centered boundary convention; nonzero KS hopping)")
     print("=" * 76)
+
+    section("[SRC] source-boundary guard -- explicit KS carrier, no gate dependency")
+    note_path = Path("docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md")
+    note = note_path.read_text()
+    check("SRC", "source note carries the 2026-06-12 explicit-carrier rescope",
+          "explicit-carrier rescope" in note)
+    check("SRC", "finite-matrix theorem is over the explicit KS carrier family",
+          "explicit finite KS carrier" in note and "explicit KS matrix" in note)
+    check("SRC", "framework baseline does not smuggle the KS carrier",
+          "does not supply the Grassmann" in note
+          and "finite even block, periodic/APBC wrap signs" in note
+          and "finite-KS carrier/boundary data below" in note)
+    check("SRC", "staggered realization gate is non-load-bearing context only",
+          "non-load-bearing downstream context" in note
+          and "No markdown dependency edge to that gate is present" in note)
+    check("SRC", "source note has no markdown dependency edge to the realization gate",
+          "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)" not in note)
 
     blocks = [
         ("2^4 all-APBC", (2, 2, 2, 2), (1, 1, 1, 1)),
@@ -313,8 +331,8 @@ def main() -> int:
     E_w = sign_diag(sites_w, eps)
     r_eps_w = resid(E_w @ M_w @ E_w - M_w.T)
     check("DIAG", "staggered + Wilson FERMION term: eps-Hermiticity residual "
-                  "NON-zero (the wall is real; pure staggered is the admitted "
-                  "carrier; expected, out of scope)",
+                  "NON-zero (the wall is real; pure staggered is the explicit "
+                  "carrier family here; expected, out of scope)",
           r_eps_w > 0.4, f"residual = {r_eps_w:.3f}")
 
     print()

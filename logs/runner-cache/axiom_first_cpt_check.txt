@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_cpt_check.py
-runner_sha256: c73307ecd338a6986dd1e3dd44fbcc601bb55e0c9e89015364230c98f58661a3
+runner_sha256: 6250e19761525a77826dd92b7537f72c4d54d0cc5d0d4503c7fae79239070f52
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 ============================================================================
@@ -11,6 +11,15 @@ AXIOM-FIRST CPT CHECK -- corrected non-degenerate construction
 (2026-06-11 audit-failed repair: eps sign field carried inside the
  map; bond-centered boundary convention; nonzero KS hopping)
 ============================================================================
+
+----------------------------------------------------------------------------
+[SRC] source-boundary guard -- explicit KS carrier, no gate dependency
+----------------------------------------------------------------------------
+  [PASS] [SRC] source note carries the 2026-06-12 explicit-carrier rescope
+  [PASS] [SRC] finite-matrix theorem is over the explicit KS carrier family
+  [PASS] [SRC] framework baseline does not smuggle the KS carrier
+  [PASS] [SRC] staggered realization gate is non-load-bearing context only
+  [PASS] [SRC] source note has no markdown dependency edge to the realization gate
 
 ----------------------------------------------------------------------------
 [DEG] degeneracy witness -- why the old runner was vacuous (F-B)
@@ -164,10 +173,10 @@ block 4x2x4x2 mixed-APBC, m = 0.5  (N = 64)
 [DIAG] diagnostics revisited under the corrected construction
 ----------------------------------------------------------------------------
   [PASS] [DIAG] 1D time circle: the CORRECTED map closes exactly (the old 1D residual 1.0 was an artifact of the defective composition, not a parity wall)  (residual = 0.000)
-  [PASS] [DIAG] staggered + Wilson FERMION term: eps-Hermiticity residual NON-zero (the wall is real; pure staggered is the admitted carrier; expected, out of scope)  (residual = 1.000)
+  [PASS] [DIAG] staggered + Wilson FERMION term: eps-Hermiticity residual NON-zero (the wall is real; pure staggered is the explicit carrier family here; expected, out of scope)  (residual = 1.000)
 
 ============================================================================
-TOTAL: PASS=114 FAIL=0
+TOTAL: PASS=119 FAIL=0
 ============================================================================
 
 ----- stderr -----

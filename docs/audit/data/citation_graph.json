@@ -51246,10 +51246,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_formula_honest_status_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
@@ -98474,14 +98470,13 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_formula_honest_status_note_2026-05-10",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
         "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
         "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "15ebae5a77370d669ca4863da695129319278dcc6afc15c7c62ce8e81017c932",
+      "note_hash": "aab99d44089fb6eeef33d1693e7f25e6c51495264478d7e117aa9178fe3bc9f8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113246,7 +113241,7 @@
       "open_gate": 170,
       "positive_theorem": 615
     },
-    "edge_count": 12915,
+    "edge_count": 12914,
     "leaf_count": 1109,
     "node_count": 3437,
     "root_count": 1063,

@@ -51474,7 +51474,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
+      "to": "one_parameter_reduced_shell_law_note"
     },
     {
       "from": "repo.front_door_status",
@@ -51483,6 +51483,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "scalar_trace_tensor_no_go_note"
     },
     {
       "from": "repo.front_door_status",
@@ -51499,10 +51503,6 @@
     {
       "from": "repo.front_door_status",
       "to": "multisite_pauli_group_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "gellmann_completeness_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
+        "one_parameter_reduced_shell_law_note",
         "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
+        "scalar_trace_tensor_no_go_note",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
         "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
         "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
-        "multisite_pauli_group_theorem_note_2026-05-02",
-        "gellmann_completeness_theorem_note_2026-05-02"
+        "multisite_pauli_group_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ee445a582c833b778605712fd186362a4fa92c0eb7a7dd7b77265615ee0cfb63",
+      "note_hash": "a0acd5f8987b934e5d727d8eea898c367e72fdfe8b4ce3e933f452d67951adb1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

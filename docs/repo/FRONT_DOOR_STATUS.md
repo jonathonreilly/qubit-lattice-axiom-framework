@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1496 |
+| Applied audit verdicts | 1497 |
 | Retained-grade rows, including boxed decorations | 1385 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 921 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1496 |
+| Unaudited rows | 1495 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 22 |
+| Audited conditional rows | 23 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 0 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1498 |
-| Ready rows | 70 |
+| Total pending rows | 1497 |
+| Ready rows | 69 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
-| High pending | 273 |
-| Medium pending | 463 |
+| High pending | 274 |
+| Medium pending | 461 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`one_parameter_reduced_shell_law_note`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md) - medium; unaudited
+- [`scalar_trace_tensor_no_go_note`](../../docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md) - high; unaudited
 - [`dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md) - medium; unaudited
-- [`scalar_trace_tensor_no_go_note`](../../docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md) - medium; unaudited
 - [`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md) - medium; unaudited
 - [`dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md) - medium; unaudited
 - [`dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`](../../docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 - [`multisite_pauli_group_theorem_note_2026-05-02`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`gellmann_completeness_theorem_note_2026-05-02`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,10 +62,10 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 159 |
-| high | `unaudited` | 158 |
-| medium | `unaudited` | 97 |
+| high | `unaudited` | 159 |
+| medium | `unaudited` | 95 |
+| high | `audited_conditional` | 4 |
 | critical | `open_gate` | 3 |
-| high | `audited_conditional` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_numerical_match` | 2 |
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
-| High nodes | 514 |
-| Medium nodes | 928 |
+| High nodes | 516 |
+| Medium nodes | 926 |
 | Leaf nodes | 1470 |
 
 Top load-bearing rows by graph score:

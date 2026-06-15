@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 921 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1496 |
+| unaudited | 1495 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1356 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1813 |
+| `unaudited` | 1812 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 533 |
-| `high` | 508 |
-| `medium` | 889 |
+| `high` | 510 |
+| `medium` | 887 |
 | `leaf` | 1381 |
 
 - **Retained pending chain closure:** 4
@@ -1503,6 +1503,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `one_parameter_reduced_shell_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -13808,6 +13809,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The primary runner source loads the five named helpers and computes the normalized point-column charge, radial, orbit-mode, shell-mean, and family agreement checks rather than merely printing constants. Given unit charge and identical normalized profiles for the basis columns, the one-parameter reduced law follows by linearity within the stated reduced surface.
 - **rationale:** The runner cache reports 7/7 passes, and the included source shows actual finite-lattice Green-column, sewing-shell, radial-average, and family-comparison computations. The constant `c_aniso` is computed from the reduced data, not imported as an expected value. The clean verdict is limited to the note's bounded helper-wrapper scope and does not promote the helpers to framework derivations or close the parent tensorial 3+1 blocker.
 - **auditor confidence:** medium
+
+### `one_parameter_reduced_shell_law_note`
+
+- **Note:** [`ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded witness that, on the imported R=4 reduced-shell helper surface, the seven unit point-Green columns and two checked source families obey the one-parameter reduced law with c_aniso = 0.081435402995901.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-223440-cc825926bb-one_parameter_reduced_shell_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By linearity of the exterior projector, lattice Laplacian, and Green solve, identical normalized seven point-Green columns imply sigma_red(Q) = Q * (k_rad + c_aniso * m_orb) with A_aniso = c_aniso * Q.  _(class `A`)_
+- **chain closes:** False — The algebraic linearity step closes only if the five imported frontier helpers are accepted as the stated linear operators and source constructors. The packet supplies an umbrella wrapper and loader, but not the helper sources or retained derivations needed to independently audit those inputs.
+- **rationale:** Issue: the load-bearing equality is an algebraic consequence of identical normalized columns only after accepting the five frontier helper modules as the exterior projector, shell-mean operator, source-family constructors, sewing-shell projection, and radial DtN kernel; the restricted packet includes only an umbrella wrapper and _frontier_loader.py, not those helper sources or retained derivations. Why this blocks: the runner PASS output verifies consistency of opaque imported operators, not an independently auditable operator chain, and the supplied packet cannot independently validate c_aniso beyond those imports. Repair target: include or audit scripts/frontier_star_shell_projector.py, scripts/frontier_same_source_metric_ansatz_scan.py, scripts/frontier_coarse_grained_exterior_law.py, scripts/frontier_sewing_shell_source.py, and scripts/frontier_radial_shell_matching_law.py, or replace them with retained source notes; until then the safe boundary is a conditional bounded witness on the imported reduced-shell surface.
+- **open / conditional deps cited:**
+  - `ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md`
+- **auditor confidence:** high
 
 ### `ordered_lattice_packet_reidentification_note`
 

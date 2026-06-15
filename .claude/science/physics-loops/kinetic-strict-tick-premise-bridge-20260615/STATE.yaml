@@ -1,0 +1,24 @@
+slug: kinetic-strict-tick-premise-bridge-20260615
+goal: "Reduce the audited conditional kinetic-isotropy row's P1/P2/P3/P4 premise blob to exact source-side candidate theorem packets without claiming primitive retirement."
+target_status: bounded-support
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+target_claim_id: kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09
+active_route: "Wire all-period site-license and spectrum-reflection tick-unitarity packets into the audited kinetic row."
+hard_residual: "B-W Wick/readout bridge from real-time cone slope to OS0 c_t/c_s, plus independent audit of the cited candidate packets and their named readings."
+files_touched:
+  - docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md
+  - scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py
+  - logs/runner-cache/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.txt
+open_imports:
+  - B-W OS0 Wick/readout identification bridge
+  - independent audit of SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - independent audit of TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md
+  - realized matter-carrier reading connecting the strict tick packet to the framework carrier
+no_go_routes: []
+verification:
+  - "python3 scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py -> PASS=33 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py -> fresh"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py --check-only --allow-non-main -> fresh"
+next_exact_action: "Reviewer should audit whether the two cited premise-discharge candidate packets can be consumed as one-hop authorities, then separately attack B-W."
+stop_condition: "PR opened for review; no audit verdicts edited."

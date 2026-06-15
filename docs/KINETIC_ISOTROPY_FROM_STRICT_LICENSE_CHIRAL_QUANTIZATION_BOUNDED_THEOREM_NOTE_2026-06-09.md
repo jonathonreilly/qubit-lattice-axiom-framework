@@ -8,7 +8,7 @@ free single-particle band velocity; not a primitive retirement)
 set, predict, promote, or demote any audit outcome.
 **Primary runner:**
 [`scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py`](../scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py)
-(SCORECARD: PASS=29, FAIL=0; cached:
+(SCORECARD: PASS=33, FAIL=0; cached:
 [`logs/runner-cache/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.txt`](../logs/runner-cache/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.txt))
 
 ---
@@ -39,10 +39,36 @@ unitarity of the tick, K/CPT pairing of the tick spectrum, and the chiral
 (band-winding) structure of the realized carrier. Translating the real-time
 cone slope into OS0 `c_t/c_s` remains the separately named bridge B-W.
 
+## 2026-06-15 premise-discharge bridge candidates
+
+The 2026-06-15 source repair narrows the old P1/P2/P3/P4 conditional blob
+without claiming retained status:
+
+- [`SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md`](SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+  supplies a candidate exact all-finite-period site-license theorem. If
+  independently audited clean, it discharges the larger-periodicity part of
+  P1/P4 for one-component site-licensed ticks: every dispersive licensed
+  unitary tick is flat-or-saturating, with no tunable third cell and no
+  finite-period mass-hosting cell.
+- [`TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md`](TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+  supplies a candidate exact theorem reducing the bare unitary-tick reading
+  P2, and the tick-level P3 pairing, to two narrower named readings:
+  spectrum-reflection transport of the retained CPT identities plus the
+  channel-envelope contraction.
+
+These packets are source-side audit candidates, not status authorities. If
+they pass independent audit, this row's remaining live physics residual is
+not the internal band theorem: it is the B-W Wick/readout bridge plus the
+named realization readings that connect the strict tick packet to the
+framework's realized matter carrier. This note still does not retire the
+kinetic-isotropy primitive, does not add a new axiom, and does not set any
+audit verdict.
+
 ## Premises, with provenance (each graded honestly)
 
 - **(P1) Strictness of the realized tick** — a retained source note plus a
-  realized-tick reading. The retained reachability note
+  realized-tick reading, now with an exact finite-period discharge candidate.
+  The retained reachability note
   ([`LATTICE_NN_LIGHT_CONE_NOTE.md`](LATTICE_NN_LIGHT_CONE_NOTE.md)) defines
   R-locality with *"no arguments outside the listed dependency set"* (its
   hypothesis-side locality definition); asserting the framework's realized
@@ -50,7 +76,9 @@ cone slope into OS0 `c_t/c_s` remains the separately named bridge B-W.
   the realized tick — the same strict reading the landed per-plaquette
   enumeration
   ([`PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md`](PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md))
-  uses at the gauge level.
+  uses at the gauge level. The all-period site-license theorem cited above
+  removes the larger-periodicity escape for one-component licensed ticks, if
+  the audit lane accepts it.
 - **(P2) The unitary-tick reading** — named conditional. The retained Stone
   theorem
   ([`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md))
@@ -61,7 +89,9 @@ cone slope into OS0 `c_t/c_s` remains the separately named bridge B-W.
   `e^{-i a_tau H}` violates P1 for every nonzero hopping (distance-2 amplitude
   `-(a kappa)^2/8 + O(kappa^4)`, exact, plus numeric ring check), so under P1
   the unitary reading forces a strict quantum-cellular-automaton tick, not a
-  Stone exponential.
+  Stone exponential. The spectrum-reflection conjugacy theorem cited above
+  reduces the bare unitarity reading to tick-level CPT transport plus the
+  channel-envelope contraction, if independently audited clean.
 - **(P3) K/CPT pairing of the TICK spectrum** — named conditional reading.
   The retained [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md) constrains the
   continuous-time staggered Hamiltonian; the `omega <-> -omega` quasi-energy
@@ -70,14 +100,18 @@ cone slope into OS0 `c_t/c_s` remains the separately named bridge B-W.
   reading. P3 is provably load-bearing: runner Part E2 exhibits
   `U(k) = S_+ C(theta)` — radius-1, unitary, COMPLEX trace, det-winding 1 —
   whose winding branch has continuously tunable velocity (range
-  `[0.087, 0.913]` at `theta = 0.6`).
+  `[0.087, 0.913]` at `theta = 0.6`). The spectrum-reflection conjugacy
+  theorem supplies the paired quasi-energy corollary once its two named
+  readings are granted.
 - **(P4) Nonzero band winding (genuine chirality)** — named realization
   premise. The realized carrier's band wraps the quasi-energy circle once per
   Brillouin zone — the discrete-time form of the framework's chirality
   surface (the `gamma_5`/epsilon selector machinery; the staggered carrier).
   Runner Part D5 shows winding is IMPOSSIBLE in continuous time (for any real
   periodic band, `(1/2pi) Int E'(k) dk = 0`): chirality in this sense is a
-  tick-native structure.
+  tick-native structure. The all-period site-license theorem removes the
+  finite-period tunable/mass-hosting licensed-tick alternative, but the
+  realized-carrier identification remains a named reading until audited.
 - **(B-W) The OS0 identification bridge** — named, not computed by this note.
   The theorem below quantizes the real-time cone slope. Identifying that slope
   with the OS0 Euclidean kinetic-form ratio `c_t/c_s` is an additional
@@ -180,10 +214,10 @@ decisions belong to the audit lane.
 ## What this note does NOT claim
 
 - **No primitive retirement or registry action.** The theorem does not prove
-  the OS0 `c_t = c_s` primitive by itself. That consequence remains
-  conditional on the P1/P2/P3 readings, the P4 realization identification
-  (exhibited at the brickwork level — tying it to the landed staggered surface
-  is named next work), and the B-W bridge. The primitive registry is
+  the OS0 `c_t = c_s` primitive by itself. Even after the two premise-discharge
+  candidates above are independently audited, that consequence remains
+  conditional on the candidate packets' own named readings, the P4 realized
+  carrier identification, and the B-W bridge. The primitive registry is
   owner/audit territory.
 - **1D / per-axis scope.** In 3D a chiral (Weyl) component is 2-component per
   cell; 2x2 blocks can mix (the split-step witness exists, G1) and the
@@ -220,12 +254,13 @@ winding cell" and "winding is impossible in continuous time."
   violates P1. (4) non-unitary tick — RULED OUT BY PREMISE, witnessed
   (Part A). (5) k-dependent band basis evading the trace argument — RULED
   OUT: trace and determinant are basis-independent.
-- **N2 wall independence:** the conditional set is collapsed to P1/P2/P3/P4
-  plus B-W for the OS0 consequence. No one of P1/P2/P3/P4 closes another:
-  each has an explicit witness satisfying the other three and breaking the
-  conclusion (A: drop P2; C: drop P1; E2: drop P3; E1/D6a: drop P4). B-W is
-  not a band-theorem premise; it is only the named bridge for any OS0
-  `c_t/c_s` consequence.
+- **N2 wall independence:** the pre-repair conditional set was P1/P2/P3/P4
+  plus B-W for the OS0 consequence. The 2026-06-15 source repair routes
+  P1/P4 and P2/P3 through explicit candidate packets, but no one of the four
+  structural premises closes another: each has an explicit witness satisfying
+  the other three and breaking the conclusion (A: drop P2; C: drop P1; E2:
+  drop P3; E1/D6a: drop P4). B-W is not a band-theorem premise; it is only the
+  named bridge for any OS0 `c_t/c_s` consequence.
 - **N3 hidden-wall scan:** "translation-covariant" is consumed (Bloch
   decomposition) — provenance: the Lattice axiom's standard translation
   action. "2-band cell" — provenance: the qubit/one-Grassmann-per-site
@@ -269,6 +304,8 @@ winding cell" and "winding is impossible in continuous time."
 - [KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md](KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md) — the independence surface this sharpens.
 - [SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md](SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md) — the two-coefficient counting (Part F).
 - [PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md](PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md) — the strict-reading precedent (NOT a premise; cited for the reading only, since its D2 consumes the target primitive).
+- [SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md](SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md) — source-side candidate discharge for the finite-period P1/P4 licensed-tick dichotomy residual.
+- [TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md](TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md) — source-side candidate discharge reducing the bare P2/P3 tick readings to spectrum-reflection transport plus the channel envelope.
 - [RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md](RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md) — the `phi` offset class (retained).
 - [MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md](MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md) — the consequence-map row (`audited_renaming`).
 

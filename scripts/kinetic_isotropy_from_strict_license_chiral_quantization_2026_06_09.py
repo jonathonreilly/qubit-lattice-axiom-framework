@@ -42,20 +42,26 @@ EVERY PREMISE GETS A HOSTILE WITNESS (wall-independence):
                           continuously tunable group velocity.
 
 WHAT THIS DOES NOT CLAIM.  No audit status is set or predicted.  The checked
-band theorem is conditional on P1-P4 readings; any OS0 c_t/c_s consequence
-additionally needs the named Wick/readout bridge.  Scope is 1D/per-axis only (3D Weyl 2x2
-blocks are a named open); matter sector only; free single-particle dispersion
-only (radiative/interacting orders are the velocity-RG row).  No new axiom,
-no new primitive, no Tier-A admission.
+band theorem is conditional on the cited source-side premise-discharge
+packets passing independent audit, their own named readings, and the named
+Wick/readout bridge.  Scope is 1D/per-axis only (3D Weyl 2x2 blocks are a
+named open); matter sector only; free single-particle dispersion only
+(radiative/interacting orders are the velocity-RG row).  No new axiom, no new
+primitive, no Tier-A admission.
 
 Run: python3 scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py
 """
 from __future__ import annotations
+from pathlib import Path
 import sys
 import numpy as np
 import sympy as sp
 
 PASS, FAIL = 0, 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md"
+SITE_LICENSE_NOTE = ROOT / "docs" / "SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md"
+TICK_UNITARITY_NOTE = ROOT / "docs" / "TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md"
 
 
 def check(label, ok, detail=""):
@@ -67,6 +73,14 @@ def check(label, ok, detail=""):
     else:
         FAIL += 1; tag = "FAIL"
     print(f"  [{tag}] {label}" + (f"  --  {detail}" if detail else ""))
+
+
+def text(path: Path) -> str:
+    return path.read_text(encoding="utf-8")
+
+
+def flat(path: Path) -> str:
+    return " ".join(text(path).split())
 
 
 k = sp.symbols('k', real=True)
@@ -473,6 +487,46 @@ check("G1 named open: 2-component blocks evade the scalar monomial lemma (split-
 check("G2 positive-transfer ticks and unitary ticks are distinct objects (P2 is a named reading)",
       all(0 < t < 1 for t in tvals),
       "any OS0 c_t/c_s consequence additionally uses the named first-order Wick/readout bridge")
+
+
+print("\nPART H -- source-side premise-discharge wiring and status firewall")
+print("=" * 78)
+target_text = text(NOTE_PATH)
+target_flat = flat(NOTE_PATH)
+site_flat = flat(SITE_LICENSE_NOTE)
+unitarity_flat = flat(TICK_UNITARITY_NOTE)
+
+check("H1 target note wires both 2026-06-15 premise-discharge candidate packets",
+      "## 2026-06-15 premise-discharge bridge candidates" in target_text
+      and "SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md" in target_text
+      and "TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md" in target_text,
+      "P1/P4 and P2/P3 now have explicit source packets for re-audit")
+
+check("H2 all-period site-license packet states the finite-period flat-or-saturating discharge without status overreach",
+      "discharges that residual" in site_flat
+      and "every finite period" in site_flat
+      and "No third cell at any period" in site_flat
+      and "It does not derive unitarity or the license" in site_flat
+      and "does not set audit status" in site_flat,
+      "candidate packet narrows P1/P4 but keeps license/unitarity as named readings")
+
+check("H3 tick-unitarity packet reduces P2/P3 to spectrum-reflection transport plus channel envelope",
+      "a spectrum-reflection conjugacy exists for T" in unitarity_flat
+      and "<=>" in unitarity_flat
+      and "T is unitary" in unitarity_flat
+      and "The bare reading \"the tick is unitary\"" in unitarity_flat
+      and "retired into two narrower named readings" in unitarity_flat
+      and "the C-reading) or the channel envelope (the N-reading); both are named readings" in unitarity_flat
+      and "does not compute the B-W bridge" in unitarity_flat,
+      "candidate packet narrows P2/P3 without bundling OS0 c_t/c_s")
+
+check("H4 target source keeps primitive retirement, B-W, and audit authority firewalled",
+      "These packets are source-side audit candidates, not status authorities" in target_flat
+      and "B-W Wick/readout bridge" in target_flat
+      and "does not retire the kinetic-isotropy primitive" in target_flat
+      and "does not set any audit verdict" in target_flat
+      and "No primitive retirement or registry action" in target_text,
+      "repair is source-side wiring only, not a retained-status claim")
 
 
 print("\n" + "=" * 78)

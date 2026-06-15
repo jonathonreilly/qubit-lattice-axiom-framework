@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 904 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 38 |
-| Unaudited rows | 1538 |
+| Unaudited rows | 1537 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 7 |
 | Audited renaming rows | 29 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`](../../docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) - critical; unaudited
+- [`staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`](../../docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) - critical; audit_in_progress
 - [`cl3_color_automorphism_theorem`](../../docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md) - critical; unaudited
 - [`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
@@ -87,11 +87,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1596 descendants; score 136.641
-- `three_generation_observable_theorem_note` - critical; 1008 descendants; score 64.479
-- `graph_first_su3_integration_note` - critical; 1397 descendants; score 60.949
-- `observable_principle_from_axiom_note` - critical; 899 descendants; score 59.314
-- `plaquette_self_consistency_note` - critical; 1007 descendants; score 51.477
-- `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 49.511
-- `key_terminology` - critical; 1119 descendants; score 46.629
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 890 descendants; score 44.299
+- `minimal_axioms` - critical; 1597 descendants; score 136.642
+- `three_generation_observable_theorem_note` - critical; 1009 descendants; score 64.480
+- `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
+- `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
+- `plaquette_self_consistency_note` - critical; 1008 descendants; score 51.479
+- `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 50.513
+- `key_terminology` - critical; 1120 descendants; score 47.631
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 891 descendants; score 45.301

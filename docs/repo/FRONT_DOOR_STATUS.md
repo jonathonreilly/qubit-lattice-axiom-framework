@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1512 |
-| Retained-grade rows, including boxed decorations | 1397 |
-| Retained positive theorems | 216 |
+| Applied audit verdicts | 1513 |
+| Retained-grade rows, including boxed decorations | 1398 |
+| Retained positive theorems | 217 |
 | Retained no-go rows | 209 |
 | Retained bounded rows | 927 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 40 |
-| Unaudited rows | 1480 |
+| Unaudited rows | 1479 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 26 |
 | Audited renaming rows | 30 |
@@ -33,37 +33,37 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1482 |
+| Total pending rows | 1481 |
 | Ready rows | 64 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 448 |
+| Medium pending | 447 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
+- [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08`](../../docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16`](../../docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`pmns_tm2_residual_consequence_bounded_note_2026-05-26`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md) - medium; unaudited
+- [`observable_principle_p1_p2_from_qubit_trace_note_2026-05-20`](../../docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md) - medium; unaudited
 - [`work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md) - medium; unaudited
 - [`lattice_3d_inverse_square_kernel_helper_note_2026-04-04`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) - medium; unaudited
-- [`observable_principle_p1_p2_from_qubit_trace_note_2026-05-20`](../../docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **428**.
+- Non-retained-grade cited rows in publication tables: **427**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 159 |
 | high | `unaudited` | 158 |
-| medium | `unaudited` | 91 |
+| medium | `unaudited` | 90 |
 | critical | `open_gate` | 3 |
 | high | `audited_conditional` | 3 |
 | medium | `audited_conditional` | 3 |

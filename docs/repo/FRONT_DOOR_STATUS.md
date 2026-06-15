@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1480 |
+| Applied audit verdicts | 1481 |
 | Retained-grade rows, including boxed decorations | 1378 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 914 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1512 |
+| Unaudited rows | 1511 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 17 |
+| Audited conditional rows | 18 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1514 |
-| Ready rows | 78 |
+| Total pending rows | 1513 |
+| Ready rows | 77 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
-| High pending | 286 |
+| High pending | 285 |
 | Medium pending | 466 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
 - [`qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04`](../../docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md) - high; unaudited
 - [`action_normalization_note`](../../docs/ACTION_NORMALIZATION_NOTE.md) - high; unaudited
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`su3_adjoint_casimir_theorem_note_2026-05-02`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md) - high; unaudited
 - [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - high; unaudited
 - [`tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10`](../../docs/TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md) - high; unaudited
+- [`registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`](../../docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

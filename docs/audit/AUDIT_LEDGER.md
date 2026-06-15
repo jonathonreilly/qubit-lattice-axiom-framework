@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 914 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1512 |
+| unaudited | 1511 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 17 |
+| ~~audited_conditional~~ | 18 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1348 |
-| `audited_conditional` | 17 |
+| `audited_conditional` | 18 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1829 |
+| `unaudited` | 1828 |
 
 | claim_type | count |
 |---|---:|
@@ -1484,6 +1484,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6216,6 +6217,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** If a physical charge U(1) acts as a scalar on the generation triplet, it commutes with C and cannot orient the generation doublet or select the det_C reading.  _(class `A`)_
 - **chain closes:** True — The scalar action is central, so [iI,C]=0 and it supplies no orientation of the generation doublet. Independently, (exp(i alpha)C)^3=exp(3i alpha)I, so order three allows only alpha=0,2pi/3,4pi/3 modulo 2pi.
 - **rationale:** The load-bearing route-pruning statement is a direct algebraic identity about scalar matrices and the C3 order condition, not a definition substitution or numerical fit. The runner source actually computes the spectral endpoint, commutator, and order-three rephasing obstruction, while the charged-sector and neutrino values are correctly bounded as empirical comparators rather than promoted to selectors. The packet explicitly does not claim that physical Standard Model gauge U(1) actions are generation-scalar or that a physical det_C/det_R selector has been derived.
+- **auditor confidence:** high
+
+### `flavor_carrier_from_axioms_momentum_forced_2026-05-31`
+
+- **Note:** [`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the two-layer claim that the carrier type is forced to the momentum/BZ factor, while the hw=1 locus is only a staggered/KS chirality-gate import and r=1/2 remains separate.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-213503-5735f9aeeb-flavor_carrier_from_axioms_m`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Singling out the hw=1 C3 triplet requires the staggered/Kawamoto-Smit first-order chiral operator, i.e. single-mode Grassmann fermionization plus {epsilon,D}=0, and the note then identifies that import with the recurring generation-ID/Koide chirality gate family.  _(class `B`)_
+- **chain closes:** False — The Layer-A Fourier/spectral carrier-type argument and the displayed finite formulas check out on the restricted packet. The full queued claim does not close because the hw=1 locus and its identification with the physical generation chirality gate are imported rather than derived by the cited authorities.
+- **rationale:** Issue: Layer A's momentum-carrier computation, the naive/Wilson counterfactuals, delta=2/9, and Q=1/3+(2/3)r check independently, but the locus reduction rests on the staggered/KS chiral operator import and a cross-note gate identification. Why this blocks: the staggered authority is explicitly bounded by P-KIN/P-SD and does not close the single-mode Grassmann or physical species bridge, while the generation-ID bridge authority explicitly leaves physical identification and the r pin open. Repair target: prove or audit a direct theorem forcing the hw=1 chiral operator/locus from baseline and connecting it to the physical generation bridge. Claim boundary until fixed: momentum-vs-position carrier type is supported, but hw=1 locus and 'not a new input' remain conditional gate alignment.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
+  - `KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`
 - **auditor confidence:** high
 
 ### `flavor_carrier_not_derived_two_inputs_2026-05-31`

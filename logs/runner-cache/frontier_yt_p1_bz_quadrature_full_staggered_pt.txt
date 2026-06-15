@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py
-runner_sha256: 4bfd983a5f5344b01e7396a719633204b4d3ce9c6fa8884ed6b6d23217667ce1
+runner_sha256: b68967c3634fbd5c88c3959b6a92a0c915afa5f40bb4a5afcdd42d7c0c58ad40
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 13.74
+elapsed_sec: 5.86
 status: ok
 ----- stdout -----
 ========================================================================
@@ -141,7 +141,7 @@ DEFINITIVE RESULT (full staggered-PT):
   KEY OUTCOME: full staggered-PT confirms the master assembly's
   -3.27% central within the tightened ~1% band, and the prior
   schematic's -3.29% within 2 sigma. The three-channel partial
-  cancellation structure is retained: C_F and T_F n_f channels
+  cancellation structure is preserved: C_F and T_F n_f channels
   positive, C_A channel dominantly negative.
 
 

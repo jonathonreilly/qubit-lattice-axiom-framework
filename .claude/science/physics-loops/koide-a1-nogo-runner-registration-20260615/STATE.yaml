@@ -1,0 +1,21 @@
+loop: koide-a1-nogo-runner-registration-20260615
+status: ready_for_review
+goal: "Register the existing Koide A1 physical-bridge no-go runner as the primary audit runner."
+target_status: bounded-support
+base: origin/main@c5a380aa801a160348c02afd7d84e0b6a64e0807
+branch: physics-loop/koide-a1-nogo-runner-registration-20260615
+current_surface_status: retained_no_go in generated audit state; source note remains bounded no-go attempt record
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: koide_a1_physical_bridge_attempt_2026-04-22
+target_blocker_text: "The retained no-go row had runner_path null even though a fresh executable no-go runner and cache already existed."
+files_touched:
+  - docs/KOIDE_A1_PHYSICAL_BRIDGE_ATTEMPT_2026-04-22.md
+  - .claude/science/physics-loops/koide-a1-nogo-runner-registration-20260615/
+verification:
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py"
+  - "python3 docs/audit/scripts/build_citation_graph.py"
+  - "PYTHONPATH=scripts bash docs/audit/scripts/run_pipeline.sh"
+pr_status: branch_package_ready
+next_exact_action: "Open PR and let the independent audit/review lane regenerate generated audit state."
+stop_condition: "PR opened with source note and loop pack only; generated audit outputs restored."

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 207 |
+| **retained_no_go** | 208 |
 | **retained_bounded** | 921 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1493 |
+| unaudited | 1492 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1356 |
+| `audited_clean` | 1357 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1810 |
+| `unaudited` | 1809 |
 
 | claim_type | count |
 |---|---:|
@@ -100,12 +100,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1009 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1120 | 47.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 890 | 45.30 | `unaudited` | unaudited |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 814 | 43.67 | `audited_clean` | **retained_bounded** |
@@ -115,11 +115,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 38.66 | `unaudited` | unaudited |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 966 | 38.42 | `audited_clean` | **retained_bounded** |
-| 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
+| 17 | `yt_ew_color_projection_theorem` | no_go | critical | 749 | 38.05 | `audited_clean` | **retained_no_go** |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 739 | 37.03 | `unaudited` | unaudited |
-| 19 | `cpt_exact_note` | positive_theorem | critical | 1076 | 36.57 | `audited_clean` | **retained** |
+| 19 | `cpt_exact_note` | positive_theorem | critical | 1077 | 36.57 | `audited_clean` | **retained** |
 | 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 893 | 35.80 | `audited_conditional` | ~~audited_conditional~~ |
-| 21 | `three_generation_structure_note` | bounded_theorem | critical | 1087 | 35.59 | `audited_clean` | **retained_bounded** |
+| 21 | `three_generation_structure_note` | bounded_theorem | critical | 1088 | 35.59 | `audited_clean` | **retained_bounded** |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 736 | 35.53 | `unaudited` | unaudited |
 | 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 332 | 34.88 | `unaudited` | unaudited |
 | 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 817 | 33.18 | `unaudited` | unaudited |
@@ -597,6 +597,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -8318,6 +8319,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner constructs S_packet = exp(ETA J) D_packet exp(ETA J), eta_packet = exp(ETA J / 2) e_(0,0), and z_packet = S_packet^DEPTH eta_packet, then verifies the finite positivity, symmetry, normalization, and Perron-overlap properties.  _(class `C`)_
 - **chain closes:** True — Within the narrowed finite scope, the runner source genuinely constructs the recurrence matrix, transfer witness, boundary vector, and boundary-amplitude sequence, then checks the claimed finite properties. The full Wilson-environment transfer identity is explicitly outside the audited claim scope.
 - **rationale:** The source note’s load-bearing claim is only the existence and verification of one finite constructed witness packet, and the provided runner actually computes that packet rather than importing or printing contested constants. The cited upstream authority is retained_bounded, and the open full Wilson-environment bridge is not used as a premise for this bounded claim. The conclusion therefore closes on its own finite terms while preserving the stated exclusions.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite structural-surface no-go only: on the runner's finite class-sector witness surface, the listed positivity, self-adjointness, conjugation-swap symmetry, positive symmetric boundary, and normalization constraints do not force a unique normalized beta-side vector or induced three-sample triple.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-c3de1e828a-gauge_vacuum_plaquette_spati`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner exhibits two distinct admissible witnesses satisfying the listed positivity, self-adjointness, conjugation-symmetry, and positive-symmetric-boundary surface with rho_A != rho_B, so that surface alone does not determine unique beta=6 spatial-environment data.  _(class `C`)_
+- **chain closes:** True — The constructive counterexample closes the scoped claim: S=EDE is positive self-adjoint and swap-symmetric for both parameter choices, the boundary vectors are positive and swap-symmetric, and the resulting normalized rho vectors and three-sample readouts differ. The full beta=6 Wilson-parent/factorization collapse question is expressly outside the audited scope.
+- **rationale:** The load-bearing finite counterexample is computed rather than imported: the runner constructs the recurrence, transfer witnesses, boundary vectors, normalized rho vectors, and sample operator, then reports a nonzero rho gap and triple gap. An independent algebraic check of the construction supports the structural conditions: the transfer has EDE form with positive diagonal D, the recurrence and damping commute with the swap, and positivity of the boundary follows from exponentiating a nonnegative connected recurrence. The N1-N8 no-go gate passes only because the claim is narrowed to the finite listed surface and explicitly leaves the stronger full-stack beta=6 route open.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_spectral_measure_theorem_note`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1499 |
-| Retained-grade rows, including boxed decorations | 1385 |
+| Applied audit verdicts | 1500 |
+| Retained-grade rows, including boxed decorations | 1386 |
 | Retained positive theorems | 213 |
-| Retained no-go rows | 207 |
+| Retained no-go rows | 208 |
 | Retained bounded rows | 921 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 40 |
-| Unaudited rows | 1493 |
+| Unaudited rows | 1492 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 25 |
 | Audited renaming rows | 30 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1495 |
+| Total pending rows | 1494 |
 | Ready rows | 67 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 273 |
-| Medium pending | 460 |
+| Medium pending | 459 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md) - medium; unaudited
+- [`gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md) - medium; unaudited
 - [`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md) - medium; unaudited
 - [`dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md) - medium; unaudited
 - [`dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`](../../docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
@@ -89,10 +89,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1597 descendants; score 136.642
-- `three_generation_observable_theorem_note` - critical; 1008 descendants; score 64.479
+- `three_generation_observable_theorem_note` - critical; 1009 descendants; score 64.480
 - `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
 - `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
-- `plaquette_self_consistency_note` - critical; 1007 descendants; score 51.477
+- `plaquette_self_consistency_note` - critical; 1008 descendants; score 51.479
 - `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
-- `key_terminology` - critical; 1119 descendants; score 47.629
+- `key_terminology` - critical; 1120 descendants; score 47.631
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 890 descendants; score 45.299

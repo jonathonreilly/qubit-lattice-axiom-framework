@@ -206,3 +206,16 @@ all effective status.
   - docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md
   - docs/LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02.md
   - Cycles 1-10 prior PRs: #254-270
+
+## 2026-06-15 audit-unlock residual certificate
+
+This packet remains a source correction for the parent Higgs note. The
+auditable positive content is the diagnostic lattice-curvature arithmetic and
+the one-hop obstruction routing above. It is not a Higgs-pole derivation.
+
+The single live science target is the scalar-normalization / nonperturbative
+lattice-to-physical matching theorem that would identify the diagnostic
+curvature with `(m_H/v)^2` in a specified scheme. Re-audit should therefore
+separate the closed diagnostic support from the open physical pole bridge.
+This repair adds no new axiom, scheme choice, external mass value, or audit
+status prediction.

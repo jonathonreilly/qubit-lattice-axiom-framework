@@ -130,3 +130,15 @@ selector as the missing work.
 **N8 - Cross-cycle echo.** The residual is the same one tracked by the block-weight
 frontier, readout demarcation, and D3 pointer-degeneracy notes. This note records a
 conditional route rather than duplicating that residual as a closure.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This row remains a non-circular conditional selector calculation. The algebra
+showing which weight choices land at `Q = 2/3` versus `Q = 1` is the
+auditable content.
+
+The open science is the selector itself: a framework-native derivation or
+approved admission of the equal-block `(1,1)` sector measure and the
+records/objectivity maximization principle that chooses it. Re-audit should
+not treat the conditional equal-weight input as derived. This repair adds no
+new selection axiom, measure, observed lepton input, or status promotion.

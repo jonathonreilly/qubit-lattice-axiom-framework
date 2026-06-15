@@ -361,3 +361,16 @@ proposal_allowed_reason: "D=4 arithmetic support is source-ready and the finite 
   citation edge to the unaudited staggered-realization gate with retained
   bounded taste-count authorities. The D=4 readout / effective-potential-density
   bridge remains open.
+
+## 2026-06-15 audit-unlock residual certificate
+
+This row is re-opened only as conditional D=4 arithmetic support. The
+runner-checked facts are the condensate-density ratio, the distinct
+`D = 4` versus `D = 16` compression candidates, and the identity
+`1/D = 4/2^D` at `D = 4`.
+
+The remaining blocker is not arithmetic: a later theorem must derive the
+D=4 readout / effective-potential-density insertion map, including exponent,
+sign, placement, normalization, and the framework-native `N_taste = 2^D`
+carrier realization. No observed VEV, new axiom, or status promotion is
+introduced by this repair.

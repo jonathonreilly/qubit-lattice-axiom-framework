@@ -437,3 +437,15 @@ So the clean hierarchy is now:
   the label-connectivity family
 - restore still matters if the goal is to preserve the broader lattice-like
   interference / decoherence package
+
+## 2026-06-15 audit-unlock residual certificate
+
+This source update re-opens the row as a dynamics-harness packet, not a Gate-B
+foundation theorem. The runner's graph-family propagation and
+connectivity-tolerance checks remain useful diagnostics.
+
+The live blocker is the three-part `I_GateB` input set: the valley-linear
+source/action rule, propagation and readout semantics, and genericity or
+exhaustiveness of the tested family. Until those are derived or approved,
+the harness cannot establish Gate-B dynamics as framework-native. This repair
+adds no Gate-B axiom, family-genericity assumption, or audit status.

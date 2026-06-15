@@ -22,6 +22,31 @@ Therefore this source row is **conditional-support**, not a retained R-HIGGS
 closure and not an accepted one-Higgs axiom. No new axiom, Tier-A admission,
 2HDM/SUSY import, or audit-status change is introduced here.
 
+## 2026-06-15 representation no-go: do not bridge the full doublet directly from `H_unit`
+
+The follow-up route audit
+[`HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md`](HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md)
+closes one false repair path. On the current authority surface, `H_unit` is an
+`SU(2)_L` scalar singlet on the `Q_L=(2,3)` block, while the high-temperature
+EWSB census object is a full complex fundamental doublet. The exact
+representation fact
+
+```text
+Hom_SU(2)(trivial, fundamental) = 0
+```
+
+means `H_unit` scalar-singlet uniqueness cannot by itself derive the full
+one-complex-doublet thermal field content. It can support scalar/radial or
+neutral-ray statements only after a separate one-doublet carrier surface has
+already been supplied.
+
+This does **not** close R-HIGGS positively. It sharpens the remaining viable
+route: either supply a separate retained-grade or accepted-premise authority
+for the one-complex-`SU(2)_L` thermal EWSB doublet field content, or keep the
+`g_* = 106.75` Higgs-sector count conditional on that named bridge. The direct
+route "derive the full thermal doublet from `H_unit` singlet uniqueness" is
+now marked as representation-forbidden, not merely missing.
+
 ## Purpose
 
 The framework-structure `g_*` census note

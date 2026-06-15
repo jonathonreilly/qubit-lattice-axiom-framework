@@ -1,0 +1,29 @@
+loop: hunit-ewsb-doublet-no-go-20260615
+current_goal: >
+  Close the false direct bridge route from H_unit scalar-singlet uniqueness to
+  a full one-complex SU(2)_L EWSB thermal doublet for the SM g-star Higgs
+  conditional row.
+target_status: no-go / exact-support boundary
+runtime_mode: source-side audit-unblock
+cycle_count: 1
+active_route: representation equivariance obstruction
+hard_residual: >
+  A positive R-HIGGS closure still needs a separate retained-grade or accepted
+  premise authority for the one-complex SU(2)_L thermal EWSB doublet field
+  content.
+files_touched:
+  - docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md
+  - scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py
+  - logs/runner-cache/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.txt
+  - docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md
+  - scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
+  - logs/runner-cache/frontier_sm_gstar_higgs_sector_count_2026_05_29.txt
+open_imports:
+  - one-complex SU(2)_L EWSB thermal doublet field-content authority
+no_go_routes:
+  - direct H_unit scalar-singlet to full SU(2)_L fundamental doublet bridge
+trace_gate: direct blocker route pruning for sm_gstar_higgs_sector_count_stretch_note_2026-05-29
+review_findings: local self-review pass; independent reviewer/audit still required
+pr_status: ready to open
+next_exact_action: open review PR
+stop_condition: coherent source-side no-go block packaged

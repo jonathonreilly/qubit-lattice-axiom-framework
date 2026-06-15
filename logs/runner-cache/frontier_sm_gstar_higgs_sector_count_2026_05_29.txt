@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
-runner_sha256: ceedbda75e648f4cd857694ebacf70f7bfec3ca90f8753d37d8d61abb7c6dcad
+runner_sha256: e1197baf32e7f9698a81267981b55f9b3da06abd50d166d65fa2cbb43f2cc413
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -40,9 +40,13 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] note names the missing H_unit -> EWSB-doublet bridge instead of claiming closure
   [PASS] note states no new retained bridge for H_unit, one-Higgs/Z3, or 2HDM support
   [PASS] note states g_* = 106.75 only under the named EWSB-field-content bridge
+  [PASS] H_unit representation no-go note exists
+  [PASS] H_unit direct full-doublet bridge is marked representation-forbidden
+  [PASS] SM note preserves the viable route after the H_unit no-go
 
 [4] note + authority cross-checks
   [PASS] authority exists: YT_WARD_IDENTITY_DERIVATION_THEOREM.md
+  [PASS] authority exists: HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md
   [PASS] authority exists: YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md
   [PASS] authority exists: CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md
   [PASS] authority exists: DM_NEUTRINO_TWO_HIGGS_MINIMALITY_THEOREM_NOTE_2026-04-15.md
@@ -74,7 +78,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] no new-vocabulary token: 'algebraic universality'
 
 ==============================================================================
-PASS=54 FAIL=0
+PASS=58 FAIL=0
 ==============================================================================
 
 ----- stderr -----

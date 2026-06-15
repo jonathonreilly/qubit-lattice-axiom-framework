@@ -25,6 +25,26 @@ input is now routed through retained bounded taste-count authorities named
 below. No new axiom, Tier-A admission, observed target, or audit status is
 introduced here.
 
+## 2026-06-15 source-side bridge candidate
+
+The bounded bridge note
+[`HIERARCHY_D4_EFFECTIVE_POTENTIAL_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-15.md`](HIERARCHY_D4_EFFECTIVE_POTENTIAL_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-15.md)
+proves the finite D=4 effective-potential-density readout map under the
+explicit premise `rho_* = A(L_t) v(L_t)^4`. That source bridge fixes:
+
+- exponent: the readout is a fourth root because `rho_*` is a D=4 density and
+  `v` has mass dimension one;
+- placement: `v_b/v_a = (A_a/A_b)^(1/4)`, so larger effective-potential
+  coefficient means smaller readout scale;
+- sign: since `A_4 > A_2`, the `L_t=4` endpoint compresses downward;
+- normalization: the common `u_0` factor cancels exactly, giving
+  `(7/8)^(1/4)` for `L_t=4` versus `L_t=2` and `(3/4)^(1/8)` for
+  `L_t -> infinity` versus `L_t=2`.
+
+This bridge does not promote the row or close the full hierarchy theorem.
+Independent review/audit must decide whether the bounded premise is accepted as
+the physical electroweak insertion map.
+
 ## 0. Audit context — what this note still claims, and what it does not
 
 The 2026-05-05 audit pass returned `audited_numerical_match` with the
@@ -152,6 +172,10 @@ bounded-support to retained-grade; none are claimed in this note.
    theorem
    `HIERARCHY_MATSUBARA_DETERMINANT_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`
    names this as its single remaining named admission).
+   The 2026-06-15 bounded bridge candidate above supplies the finite
+   source-side readout map and fixes the algebraic sign, placement, exponent,
+   and normalization under its explicit D=4 density premise. It is not an
+   audit-ratified retained derivation of the physical electroweak insertion map.
 2. **Per-determinant readout admission.** The
    `v ∝ |det|^(1/(N_taste · L_t))` reading is recast as a D=4
    dimensional-analysis statement by the 2026-05-10 heat-kernel sister
@@ -256,6 +280,13 @@ text rather than graph-visible dependency edges:
 - `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`
   — sibling endpoint algebra note; not a physical VEV insertion bridge.
 
+Source-side bridge candidate for independent review:
+
+- [`HIERARCHY_D4_EFFECTIVE_POTENTIAL_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-15.md`](HIERARCHY_D4_EFFECTIVE_POTENTIAL_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-15.md)
+  — source-side bounded bridge fixing the D=4 readout map's exponent, sign,
+  placement, and normalization under an explicit effective-potential-density
+  premise; independent audit owns any status movement.
+
 ## 7. Verification
 
 ```bash
@@ -333,6 +364,8 @@ context_pointers_not_dependency_edges:
   - hierarchy_matsubara_determinant_ratio_narrow_theorem_note_2026-05-10
   - hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10
   - hierarchy_effective_potential_endpoint_note
+source_side_bridge_candidates:
+  - hierarchy_d4_effective_potential_readout_bridge_bounded_theorem_note_2026-06-15
 
 admitted_context_inputs:
   - per-determinant geometric-mean readout
@@ -361,6 +394,11 @@ proposal_allowed_reason: "D=4 arithmetic support is source-ready and the finite 
   citation edge to the unaudited staggered-realization gate with retained
   bounded taste-count authorities. The D=4 readout / effective-potential-density
   bridge remains open.
+- **2026-06-15 D=4 readout bridge candidate.** Added a bounded source-side
+  bridge note and runner proving the D=4 effective-potential-density readout
+  map's exponent, sign, placement, and normalization under the explicit
+  `rho_* = A(L_t) v(L_t)^4` premise. This does not apply any audit verdict or
+  status movement.
 
 ## 2026-06-15 audit-unlock residual certificate
 

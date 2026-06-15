@@ -1,0 +1,28 @@
+loop_slug: hierarchy-d4-readout-bridge-20260615
+branch: physics-loop/hierarchy-d4-readout-bridge-20260615
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: hierarchy_dimensional_compression_note
+target_blocker_text: "missing_bridge_theorem: derive and audit the D=4 determinant/effective-potential-density readout bridge fixing exponent, sign, placement, and normalization before promoting beyond conditional arithmetic support."
+artifact_role: theorem_and_runner_certificate
+files_touched:
+  - docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md
+  - docs/HIERARCHY_D4_EFFECTIVE_POTENTIAL_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-15.md
+  - scripts/hierarchy_d4_effective_potential_readout_bridge_2026_06_15.py
+  - scripts/frontier_hierarchy_effective_potential_endpoint.py
+  - logs/runner-cache/hierarchy_d4_effective_potential_readout_bridge_2026_06_15.txt
+  - logs/runner-cache/frontier_hierarchy_effective_potential_endpoint.txt
+open_imports:
+  - physical_electroweak_insertion_acceptance
+  - endpoint_selection
+no_go_routes:
+  - observed_vev_matching_not_load_bearing
+  - retained_status_not_claimed
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_status: local_source_checks_passed_reviewer_loop_pending
+pr_status: pending
+next_exact_action: "Run final hygiene checks, commit, push, and open review PR."

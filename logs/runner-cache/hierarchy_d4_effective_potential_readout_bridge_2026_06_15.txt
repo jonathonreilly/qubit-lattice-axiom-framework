@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/hierarchy_d4_effective_potential_readout_bridge_2026_06_15.py
+runner_sha256: 4ac2ac11279327c35242673ccc61178e8a44e574c7bdd3b8215363534ede33ca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.03
+status: ok
+----- stdout -----
+Hierarchy D=4 effective-potential readout bridge
+========================================================================
+  A_2   = 0.154320987654
+  A_4   = 0.176366843034
+  A_inf = 0.178194527528
+  v_4/v_2     = 0.967168210134
+  v_inf/v_2   = 0.964678629960
+  [PASS] A_2 endpoint formula
+  [PASS] A_4 endpoint formula
+  [PASS] A_inf endpoint formula
+  [PASS] A_4/A_2 = 8/7
+  [PASS] A_inf/A_2 = 2/sqrt(3)
+  [PASS] D=4 readout uses fourth root
+  [PASS] v_4/v_2 = (7/8)^(1/4)
+  [PASS] v_inf/v_2 = (3/4)^(1/8)
+  [PASS] sign is downward compression for L_t=4
+  [PASS] sign is downward compression for L_t->inf
+  [PASS] inverse placement: larger A gives smaller v
+  [PASS] u0 normalization cancels in endpoint ratio ([0.967168210134, 0.967168210134, 0.967168210134, 0.967168210134])
+  [PASS] runner has no observed-target or alpha load-bearing input
+  [PASS] bridge note leaves audit/status movement to independent review
+  [PASS] parent note links the bridge without claiming closure
+SUMMARY: PASS=15 FAIL=0
+
+----- stderr -----
+

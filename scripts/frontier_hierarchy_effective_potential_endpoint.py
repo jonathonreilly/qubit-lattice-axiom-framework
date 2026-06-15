@@ -18,7 +18,7 @@ The key exact endpoint formulas are:
 
 so the full temporal-averaging correction on a dimension-4 potential density is
 
-    C_inf = (A_2 / A_inf)^(-1/4) = (sqrt(3) / 2)^(1/4) = (3/4)^(1/8)
+    C_inf = (A_2 / A_inf)^(1/4) = (sqrt(3) / 2)^(1/4) = (3/4)^(1/8)
 
 This is the exact version of the earlier numerical compression argument.
 """

@@ -1,6 +1,7 @@
 # Quark Route-2 Source-Domain Bridge No-Go
 
-**Date:** 2026-04-28 (audit-status note added 2026-05-10)
+**Date:** 2026-04-28 (audit-status note added 2026-05-10; packet-sync
+repair 2026-06-15)
 
 **Status:** bounded current-bank typed-edge no-go on the configured Route-2
 support / SU(3) connected-color bank, with the underlying typed-edge
@@ -89,6 +90,22 @@ deterministic sentence-level assertion sweep. It does not claim coverage of
 authorities outside that bank. Quote anchoring certifies that the inventory
 edges have current-file provenance; it does not certify the truth of those
 authority notes, and it is not an audit-status change.
+
+## Restricted-packet synchronization (2026-06-15)
+
+The current runner authority bank is the full five-file packet:
+
+- `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`;
+- `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`;
+- `QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`;
+- `QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`;
+- `RCONN_DERIVED_NOTE.md`.
+
+The runner parses this source note's named dependencies, unions them with
+the configured edge authorities, quote-checks all current and derived
+inventory edges against the packet, and sentence-sweeps the bank for
+undispositioned Route-2 / `R_conn` assertions. The expected terminal
+scorecard is now `TOTAL: PASS=104, FAIL=0`.
 
 ## 1. Question
 
@@ -284,7 +301,7 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no
 Expected result:
 
 ```text
-TOTAL: PASS=33, FAIL=0
+TOTAL: PASS=104, FAIL=0
 VERDICT: current Route-2 + SU(3) support has no typed R_conn
 source-domain bridge. Adding that bridge would force rho_E=21/4,
 but without it the up-type scalar law remains open.

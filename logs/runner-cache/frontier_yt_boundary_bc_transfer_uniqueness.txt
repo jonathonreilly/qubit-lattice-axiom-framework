@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
-runner_sha256: 4907809e309d81ee4edd03c5653ee74d425e7b31ebd49c888a6f6061fb5893bb
+runner_sha256: e5125c78a9df88b37d605100b5891dcf96706350cd7a91a2ac5a93a23e6208d1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.77
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -20,6 +20,8 @@ SECTION 0: Source-boundary checks
          canonical plaquette and Ward target are not proof authorities for this row
   [PASS (D)] section0_continuum_claims_excluded
          finite grid diagnostic only
+  [PASS (D)] section0_accepted_premise_inputs_enumerated
+         plaquette, Ward target, RGE, thresholds, and EW initial conditions are enumerated
   [PASS (D)] section0_runner_count_updated
          note scorecard matches source-boundary runner
   [PASS (D)] section0_no_retained_input_overclaim
@@ -236,9 +238,9 @@ SECTION 8: SCORECARD
 
   Elapsed: 0.4s
 
-  Counts: 28 PASS, 0 FAIL
+  Counts: 29 PASS, 0 FAIL
 
-  All 28 checks passed.
+  All 29 checks passed.
 
 ----- stderr -----
 

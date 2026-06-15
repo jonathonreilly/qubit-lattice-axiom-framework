@@ -684,6 +684,10 @@ def main() -> int:
         str(dependency_files),
     )
     check(
+        "source note expected transcript is synchronized to the current runner count",
+        "TOTAL: PASS=104, FAIL=0" in new_text,
+    )
+    check(
         "authority bank is edge authorities plus dependency-linked Route-2 authorities",
         bank_files
         == (

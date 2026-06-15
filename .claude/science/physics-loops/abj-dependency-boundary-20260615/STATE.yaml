@@ -1,0 +1,24 @@
+loop_slug: abj-dependency-boundary-20260615
+goal: "Repair ABJ audited-conditional dependency boundaries without editing audit results."
+target_status: bounded-support
+runtime_mode: resume
+cycle_count: 1
+active_route: "ABJ dependency-edge repair"
+hard_residual: "spacetime gamma5 carrier bridge"
+branch: physics-loop/abj-dependency-boundary-20260615
+base: origin/main
+lock_mode: degraded
+lock_note: "scripts/automation_lock.py status failed in shared checkout with permission denied on /Users/jonreilly; clean worktree used instead."
+files_touched:
+  - docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+  - scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py
+  - logs/runner-cache/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.txt
+  - .claude/science/physics-loops/abj-dependency-boundary-20260615/
+open_imports:
+  - "P1 ABJ anomaly-to-inconsistency external premise"
+  - "spacetime gamma5 carrier bridge via adjacency-rank route"
+trace_gate: direct_blocker_closure_partial
+review_disposition: "mechanical preflight only; independent reviewer/audit required"
+pr_status: pending
+next_exact_action: "Run precompute check-only, audit_lint strict, diff check, then commit/push/open PR."
+stop_condition: "Block closed after PR creation; continue campaign by selecting the next uncovered audit blocker."

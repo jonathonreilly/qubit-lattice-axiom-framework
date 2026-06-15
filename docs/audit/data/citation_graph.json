@@ -51246,10 +51246,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10"
     },
     {
@@ -98478,7 +98474,6 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
@@ -98486,7 +98481,7 @@
         "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "889e429b78eb9f3fc1c57ed65e9657428bdf1d08780f48953f2475652edcb257",
+      "note_hash": "e4571219a99319d2abd80d94884885f98c735253ac8879e45e07dbf6bb0d194e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113251,7 +113246,7 @@
       "open_gate": 170,
       "positive_theorem": 615
     },
-    "edge_count": 12916,
+    "edge_count": 12915,
     "leaf_count": 1109,
     "node_count": 3437,
     "root_count": 1063,

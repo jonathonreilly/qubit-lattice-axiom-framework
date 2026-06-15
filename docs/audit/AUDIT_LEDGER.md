@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 916 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1508 |
+| unaudited | 1507 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
 | ~~audited_conditional~~ | 19 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,10 +62,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1350 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 46 |
-| `audited_failed` | 26 |
+| `audited_failed` | 27 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1825 |
+| `unaudited` | 1824 |
 
 | claim_type | count |
 |---|---:|
@@ -1562,6 +1562,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `shapiro_diamond_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
@@ -15861,6 +15862,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Record excludes measurement/decoherence dynamics and the Lattice/Quantum/Record baseline fixes neither dynamics nor state, so baseline-consistent no-record witnesses such as H=0, decoupled H, and energy eigenstates defeat unconditional record-formation forcing.  _(class `A`)_
 - **chain closes:** True — The cited axiom memo explicitly excludes dynamics and state selection, and the displayed witnesses are exact countermodels to unconditional forcing. The conclusion is only the narrow no-go against baseline-only unconditional record formation, not a claim that records never form.
 - **rationale:** The load-bearing step is an algebraic/logical closure over the accepted minimal-axiom premise plus exact finite-dimensional unitary witness checks. The runner source computes coherence preservation for H=0 and decoupled dynamics, verifies stationarity for an eigenstate, and treats the coupled decoherence case only as non-load-bearing contrast. The no-go passes the N1-N8 discipline gate because it is scoped to unconditional forcing from the baseline and explicitly leaves conditional record-production models open.
+- **auditor confidence:** high
+
+### `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`
+
+- **Note:** [`RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite S+E qubit claim that redundant objective persistent pointer records are equivalent to pointer-nondemolition, with conserved-pointer/locality transfer-class consequences.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-214807-2a7cd01560-record_formation_pointer_non`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Additive + redundant + persistent + objective record formation by a local evolution is equivalent to pointer-non-demolition [H_int, Pi_S] = 0.  _(class `C`)_
+- **chain closes:** False — The Heisenberg equation closes the necessity of commutation for all-state pointer-population conservation, and the runner supports one controlled non-demolition recording construction. It does not close the stated iff, because [H_int,Pi_S]=0 alone does not imply redundant fragment record formation or persistence of completed fragments under the same coupling.
+- **rationale:** Issue: the sufficiency half of the stated equivalence is broader than the math and runner: [H_int,Pi_S]=0 freezes pointer populations, but by itself does not make any fragment carry a record, as H_int=0 or a commuting interaction with the environment in an eigenstate has no redundant imprint. Why this blocks: the runner verifies one controlled sigma_z tensor sum sigma_x construction at a chosen recording time and a Heisenberg persistence lemma, not the claimed iff for arbitrary local non-demolition H_int; the persistence demonstration also uses an idle fresh-fragment chain rather than repeated action of the same coupling on completed fragments. Repair target: state and prove the additional coupling, nonzero strength, recording-time, and fresh-fragment or decoupling hypotheses, and separately cite or prove the actual framework OS transfer membership. Claim boundary until fixed: the finite controlled-coupling example and the necessity of commutation for all-state pointer-population conservation remain supported.
 - **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`

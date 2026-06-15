@@ -3,7 +3,7 @@
     "critical": 280,
     "high": 273,
     "leaf": 482,
-    "medium": 461
+    "medium": 460
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16759,35 +16759,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
-        "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
-        "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
-        "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py",
-        "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
-        "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py"
-      ],
-      "load_bearing_score": 10.544,
-      "note_path": "docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py",
-      "transitive_descendants": 65
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -16955,15 +16926,15 @@
         "cl3_color_automorphism_theorem",
         "cl3_taste_generation_theorem"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 5.629,
+      "load_bearing_score": 9.672,
       "note_path": "docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/color_generation_z3_identification_no_go_2026_06_05.py",
-      "transitive_descendants": 34
+      "transitive_descendants": 50
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45068,6 +45039,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 68,
-  "total_pending": 1496
+  "ready_count": 67,
+  "total_pending": 1495
 }

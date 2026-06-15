@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 921 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 40 |
-| unaudited | 1494 |
+| unaudited | 1493 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1356 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1811 |
+| `unaudited` | 1810 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 533 |
-| `high` | 509 |
-| `medium` | 888 |
+| `high` | 508 |
+| `medium` | 889 |
 | `leaf` | 1381 |
 
 - **Retained pending chain closure:** 4
@@ -99,7 +99,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1596 | 136.64 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
@@ -1493,6 +1493,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5168,6 +5169,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **open / conditional deps cited:**
   - `DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`
 - **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Sampled multistart runner diagnostic on the runner's fixed native N_e seed surface: seven converged constrained solves from eight generated starts cluster into two branch levels with S_rel about 0.240906701 and 1.110657539, gap about 0.869750838, and low-branch eta_0/eta_obs = 1; no certified-global enumeration or selector authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260615-224036-1a22979939-dm_leptogenesis_pmns_multist`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the sampled multistart starts, the constrained scan recovers a low-action and high-action stationary pair with a finite action gap, and the low branch gives eta/eta_obs = 1.  _(class `C`)_
+- **chain closes:** False — The primary runner genuinely computes the sampled constrained solves and the displayed action gap is internally consistent, but the restricted packet does not close the fixed native N_e seed surface or the eta/eta_obs transport/readout normalization from the stated axiom. The equality eta/eta_obs = 1 is imposed as the constrained closure surface, so the packet supports a runner-defined diagnostic but not an axiom-derived selector statement.
+- **rationale:** Issue: the narrowed sampled-start branch diagnostic is computed, but it relies on runner-defined seed-surface, transport, and eta_obs normalization inputs that are not closed by the no-authority restricted packet or by the listed primitives. Why this blocks: a numerical constrained solve on those inputs does not by itself establish that the fixed surface and readout are native consequences of Cl(3) on Z^3. Repair target: cite and retain the seed-surface and transport/readout bridge theorems, or narrow the note to a purely runner-defined constrained optimization diagnostic. Claim boundary until fixed: the cached runner supports the two-branch sampled diagnostic and action gap on its tested starts only.
+- **auditor confidence:** medium
 
 ### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
 

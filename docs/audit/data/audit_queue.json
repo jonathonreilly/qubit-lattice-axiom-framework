@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 333,
+    "critical": 332,
     "high": 254,
     "leaf": 439,
     "medium": 427
@@ -424,34 +424,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_cpt_theorem_stretch_note_2026-04-29",
-      "claim_scope": "Bounded finite-matrix CPT theorem for the explicitly supplied pure staggered KS carrier M=mI+M_KS on even finite 4D blocks with periodic/APBC wrap signs and bond-centered reflection; excludes derivation/selection of this carrier as the physical framework operator and excludes the SU(3) gauge/full-action lift.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "assumption_derivation_ledger"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.304,
-      "note_path": "docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_cpt_check.py",
-      "transitive_descendants": 1263
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -44315,6 +44287,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 6,
-  "total_pending": 1453
+  "ready_count": 5,
+  "total_pending": 1452
 }

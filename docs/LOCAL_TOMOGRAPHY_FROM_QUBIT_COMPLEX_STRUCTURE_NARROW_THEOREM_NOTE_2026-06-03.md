@@ -2,10 +2,11 @@
 
 **Date:** 2026-06-03
 **Date of tensor-carrier dependency repair:** 2026-06-06
+**Date of direct retained-route repair:** 2026-06-15
 **Claim type:** bounded_theorem
 **Claim boundary:** finite-dimensional algebra check on the generated
-ordinary two-site complex qubit tensor surface supplied by
-[`TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md).
+ordinary two-site complex qubit tensor surface supplied directly by the
+retained per-site and finite-block tensor-product authorities.
 The check proves that this `M_4(C)` composite is locally tomographic by
 self-adjoint dimension count. This note does not derive tensor composition
 from operational locality alone, does not add a new axiom or primitive, and
@@ -25,10 +26,13 @@ with cache
 Let each site carry the complex one-qubit operator algebra named by the
 Quantum axiom in
 [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md):
-`A_x ~= M_2(C)`. By the two-site tensor-carrier bridge
-[`TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md),
-the retained finite-block tensor-product surface specializes at distinct
-sites `x != y` to
+`A_x ~= M_2(C)`. The retained per-site dimension theorem
+[`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)
+supplies the two-dimensional complex site carrier and Pauli realization, and
+the retained finite-block tensor-product bridge
+[`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
+supplies `H_Lambda = tensor_{z in Lambda} C^2_z` with tensor-factor
+embeddings. For distinct sites `x != y`, this specializes directly to
 
 ```text
 C = A_x tensor_C A_y ~= M_4(C),
@@ -103,8 +107,7 @@ tomographic.
 - A shared-scalar check that the ordinary complex tensor product has one
   global `i`, not two independent local imaginary units.
 - A source-side dependency route from the local-tomography algebra check to
-  the retained finite-block tensor-product authorities, via the two-site
-  tensor-carrier bridge.
+  retained per-site and finite-block tensor-product authorities.
 
 ## What This Does Not Claim
 
@@ -123,21 +126,23 @@ tomographic.
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) for the
   Quantum axiom's one-site algebra only. This axiom dependency must not be
   treated as a source of bounded status.
-- [`TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
-  for the ordinary generated two-site `M_2(C) tensor_C M_2(C) ~= M_4(C)`
-  carrier.
+- [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)
+  for the per-site `C^2` carrier and Pauli realization.
+- [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
+  for the retained finite-block tensor product and tensor-factor embeddings.
 - [`TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md`](TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md)
   for the negative boundary that locality alone does not force this composite.
 
 The ordinary shared-scalar complex tensor product/minimal generated composite
-is routed through the bridge note above, not through a new axiom.
+is routed through those retained finite-block authorities, not through a new
+axiom.
 
 ## Validation
 
 The primary runner verifies, at exact sympy precision:
 
-1. the two-site tensor-carrier bridge is present and names the generated
-   `M_4(C)` carrier;
+1. the direct retained dependencies have the expected current effective
+   statuses;
 2. the retained tensor-composition no-go boundary remains visible;
 3. `dim_R(M_n(C)_sa) = n^2 = dim_C(M_n(C))` for `n = 2, 3, 4`;
 4. the Cartesian split `M = H_1 + i H_2` with `H_1,H_2` self-adjoint;

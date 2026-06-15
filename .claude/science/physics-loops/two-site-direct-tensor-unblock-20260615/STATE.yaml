@@ -1,0 +1,27 @@
+loop: two-site-direct-tensor-unblock-20260615
+status: pr_ready
+goal: "Remove the conditional multisite-Pauli dependency from the two-site tensor/local-tomography audit chain."
+target_status: best-honest-status
+actual_current_surface_status: proposed_promoted
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_ids:
+  - two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06
+  - local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03
+blocked_dependency_removed: multisite_pauli_group_theorem_note_2026-05-02
+files_touched:
+  - docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/audit_companion_two_site_qubit_tensor_carrier_bridge_2026_06_06.py
+  - logs/runner-cache/audit_companion_two_site_qubit_tensor_carrier_bridge_2026_06_06.txt
+  - docs/LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md
+  - scripts/audit_companion_local_tomography_from_complex_structure_exact.py
+  - logs/runner-cache/audit_companion_local_tomography_from_complex_structure_exact.txt
+verification:
+  - "python3 scripts/audit_companion_two_site_qubit_tensor_carrier_bridge_2026_06_06.py"
+  - "python3 scripts/audit_companion_local_tomography_from_complex_structure_exact.py"
+  - "bash docs/audit/scripts/run_pipeline.sh (simulation only; generated outputs restored)"
+pipeline_delta:
+  retained_pending_chain: "20 -> 18"
+  audit_queue_ready: "1 -> 3"
+next_exact_action: "Reviewer extracts or adjusts the direct retained-route repair; auditor independently re-audits the two changed rows."
+bare_retained_allowed: false

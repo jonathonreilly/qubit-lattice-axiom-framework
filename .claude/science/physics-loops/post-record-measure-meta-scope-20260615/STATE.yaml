@@ -1,0 +1,25 @@
+slug: post-record-measure-meta-scope-20260615
+goal: "Repair the audited conditional post-record measure/weight row by removing the overbroad positive-theorem framing from Record."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+target_claim_id: post_record_measure_weight_normalization_subdivision_2026-06-06
+active_route: "Retag the packet as a read-only/meta subdivision certificate plus a finite supplied-weight normalization lemma."
+hard_residual: "A clean positive theorem still needs a retained bridge deriving the carrier or weight/normalization authority from framework-native sources."
+files_touched:
+  - docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt
+open_imports:
+  - Record-derived carrier authority
+  - Record-derived weight/normalization authority
+  - Record-derived measure/prior or Born-law authority
+no_go_routes:
+  - "Treating the live audit-row count as theorem content is rejected; the runner now treats the JSON export as a historical diagnostic only."
+verification:
+  - "python3 scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py -> PASS=62 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py --tail-chars 12000 -> refreshed"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py -> fresh"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py --allow-non-main -> fresh"
+next_exact_action: "Reviewer should confirm the row is now audit-ready as a bounded-support meta certificate; separate future work can derive carrier or weight authority."
+stop_condition: "PR opened for review; no audit data edited."

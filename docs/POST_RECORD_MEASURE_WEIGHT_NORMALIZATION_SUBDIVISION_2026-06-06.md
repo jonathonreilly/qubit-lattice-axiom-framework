@@ -1,16 +1,17 @@
 # Post-Record Measure/Weight/Normalization Subdivision
 
 **Date:** 2026-06-06
-**Type:** exact support / read-only audit companion
-**Claim type:** positive_theorem
-**Status:** exact-support source-side for measure/weight subdivision and
-finite normalization certificate semantics; audit_required_before_effective_retained=true;
-bare_retained_allowed=false.
+**Type:** finite supplied-weight normalization lemma / read-only meta
+subdivision certificate
+**Claim type:** read_only_meta_certificate
+**Status:** bounded-support source-side for measure/weight subdivision and
+finite supplied-weight normalization certificate semantics;
+audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt)
-**Bounded row export:**
+**Historical diagnostic row export:**
 [`outputs/post_record_measure_weight_normalization_slice_2026_06_07.json`](../outputs/post_record_measure_weight_normalization_slice_2026_06_07.json)
 **Load-bearing upstream helper:**
 [`scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py`](../scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py)
@@ -32,7 +33,31 @@ supplied finite carrier
 
 Normalized measure is not selected dial.
 
-On the current ledger snapshot:
+## 2026-06-15 Scope Correction
+
+Independent audit correctly found that the row is too broad if queued as a
+positive theorem from Record. The finite normalization algebra is exact, and
+the current ledger subdivision is useful, but the row-count scan is a
+read-only current-ledger/meta certificate and the normalization lemma consumes
+supplied nonnegative weights. It does not derive those weights, a carrier, a
+measure/prior, a Born law, production dynamics, or selector authority from the
+Record axiom.
+
+This revision therefore takes the auditor's second repair route and retags the
+source packet as a **read-only/meta subdivision certificate** plus the narrow
+finite supplied-weight normalization lemma:
+
+```text
+supplied finite carrier + supplied nonnegative weights + positive total
+  => normalized finite measure under that supplied weight rule.
+```
+
+The packet is not a positive theorem from Record. Any clean positive theorem
+would require a separate retained bridge deriving the carrier or
+weight/normalization authority.
+The ledger row-count subdivision is diagnostic and read-only; it is not a fixed theorem premise for Record, and it is not an audit-result update.
+
+On the historical 2026-06-13 source snapshot, the paired export recorded:
 
 | Measure/weight lane | Rows |
 |---|---:|
@@ -43,6 +68,11 @@ On the current ledger snapshot:
 | `generic_measure_weight_import` | 11 |
 
 Total: `60` rows.
+
+The runner recomputes the live ledger split at runtime. If later audit work
+adds or changes rows, the live count printed by the runner supersedes this
+historical export for diagnostic purposes without changing the finite
+normalization lemma.
 
 ## Meaning
 
@@ -67,7 +97,7 @@ measure. It cannot certify that this measure is physically selected.
 ## Status certificate
 
 ```yaml
-actual_current_surface_status: exact-support
+actual_current_surface_status: bounded-support
 trace_class: upstream_support
 reachability_to_target: supports
 conditional_surface_status: "measure/weight rows are subdivided and finite supplied weights can be normalized, but normalization is not selector authority"
@@ -88,6 +118,7 @@ bare_retained_allowed: false
   from Record.
 - Does not select or force a generation/Koide dial location.
 - Does not turn normalized measures or weights into selected dials.
+- Does not use a fixed ledger-row count as theorem content.
 - Does not derive production dynamics, a kernel, Hamiltonian, instrument,
   clock/rate, physical arrow, or Born law from Record.
 
@@ -97,6 +128,8 @@ The runner verifies:
 
 - source anchors in this note, the selector/dial subdivision, the evidence
   ladder, and source-measure notes;
+- this note is classified as a read-only/meta subdivision certificate, not a
+  positive theorem from Record;
 - finite supplied nonnegative weights normalize exactly when total weight is
   positive;
 - zero-total weights are rejected;
@@ -104,9 +137,9 @@ The runner verifies:
   authority;
 - the selector/dial helper source used to obtain the bucket is included in the
   packet;
-- bounded ledger-row export exists for the selected measure/weight rows;
-- the current `measure_weight_normalization` row count is `60`;
-- lane counts match the current 2026-06-13 snapshot;
+- bounded ledger-row export exists as a historical diagnostic snapshot;
+- the live `measure_weight_normalization` row count and lane counts are
+  recomputed at runtime and are not treated as theorem premises;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;
 - no audit verdict, audit-data write, retained/promoted claim, normalized-measure

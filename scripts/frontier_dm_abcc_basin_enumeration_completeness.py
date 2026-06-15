@@ -54,6 +54,8 @@ from typing import List, Tuple
 import numpy as np
 from scipy.optimize import minimize
 
+AUDIT_TIMEOUT_SEC = 600
+
 
 # ---------------------------------------------------------------------------
 # PASS / FAIL bookkeeping

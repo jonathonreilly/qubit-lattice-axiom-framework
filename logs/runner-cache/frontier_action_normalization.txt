@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_action_normalization.py
-runner_sha256: a846e7a4794c0d6503117c9a074272b47f048f41823ef6edeb46e97f0870f5f6
+runner_sha256: 57267ef97454145ed8028c4c88680661648db69a3876ccedfaab407dcda85447
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 42.42
+elapsed_sec: 40.54
 status: ok
 ----- stdout -----
 ================================================================================
@@ -250,7 +250,7 @@ table previously printed in this runner (defl(k)/defl(5k)) compared two
 massive probe momenta and had no analytical relation to the (1+c)
 null-vs-massive ratio. That table has been removed.
 
-Total runtime: 42.2s
+Total runtime: 40.3s
 
 ----- stderr -----
 

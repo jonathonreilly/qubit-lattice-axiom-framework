@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | unaudited | critical | 262 | 22.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
+| 1 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | audit_in_progress | critical | 262 | 22.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
 | 2 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | critical | 261 | 14.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_u0_plaquette_quartic_derivation.py` |
 | 3 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 258 | 13.52 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_clifford_chirality_dimension_narrow.py` |
 | 4 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | critical | 257 | 13.51 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py` |

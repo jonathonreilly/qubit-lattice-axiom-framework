@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 912 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 39 |
-| Unaudited rows | 1516 |
+| Unaudited rows | 1515 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 15 |
 | Audited renaming rows | 30 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited
+- [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17`](../../docs/U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; audit_in_progress
 - [`clifford_chirality_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`](../../docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
@@ -91,7 +91,7 @@ Top load-bearing rows by graph score:
 - `minimal_axioms` - critical; 1597 descendants; score 136.642
 - `three_generation_observable_theorem_note` - critical; 1008 descendants; score 64.479
 - `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
-- `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
+- `graph_first_su3_integration_note` - critical; 1397 descendants; score 60.949
 - `plaquette_self_consistency_note` - critical; 1008 descendants; score 51.479
 - `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
 - `key_terminology` - critical; 1119 descendants; score 47.629

@@ -17,9 +17,11 @@ substitution implication: given
   (X5) Retained tadpole-improvement vertex-power identity
        alpha_2^tadpole = alpha_bare / u_0^2
        (ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM retained).
-  (X6) Lattice scale identified with M_Pl, ln(M_Pl/v) = L (named admission;
-       EW_COUPLING_DERIVATION_NOTE Part 1.2 uses L = 38.44 at v = 246 GeV).
-  (X7) Standard one-loop RGE form (named external QFT admission).
+  (X6) Framework scale-log bridge supplies ln(M_Pl/v_cand) = L_cand
+       and licenses the rounded exact-symbolic surrogate L = 38.44.
+  (X7) Framework inverse-alpha integration bridge supplies the
+       integrated one-loop running law from the already-isolated
+       one-loop coefficient convention.
 
 the bounded interval
 
@@ -27,8 +29,8 @@ the bounded interval
     g_lo = sqrt( 4 pi / (16 pi u_hi^2 - (b_2 / (2 pi)) * L) ),
     g_hi = sqrt( 4 pi / (16 pi u_lo^2 - (b_2 / (2 pi)) * L) ),
 
-follows from substituting the inputs into the admitted one-loop running
-equation
+follows from substituting the inputs into the bridged one-loop
+inverse-alpha equation
 
   1/alpha_2(v)  =  1/alpha_2^tadpole |_lattice  -  (b_2 / (2 pi)) * ln(M_Pl / v)
                 =  16 pi u_0^2  -  (b_2 / (2 pi)) * L
@@ -109,8 +111,8 @@ def main() -> int:
     print("  (X3) Cl(3) bivector -> SU(2)           ... retained")
     print("  (X4) 1/alpha_2^bare |_lattice = 16 pi  ... retained_bounded one-hop anchor")
     print("  (X5) alpha_2^tadpole = alpha_bare/u_0^2 ... retained")
-    print("  (X6) ln(M_Pl/v) = 38.44                ... NAMED EXTERNAL ADMISSION")
-    print("  (X7) one-loop RGE form                 ... NAMED EXTERNAL ADMISSION")
+    print("  (X6) ln(M_Pl/v_cand) = 38.442..., L=38.44 rounded ... framework bridge")
+    print("  (X7) one-loop inverse-alpha integration ... framework bridge")
     print("=" * 88)
 
     # ------------------------------------------------------------------
@@ -135,9 +137,11 @@ def main() -> int:
         "(X4) source note states the coupling input is not rederived here",
         "not independently derive the anchor's assumed coupling input" in note_text,
     )
+    bridge_name = "SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md"
+    check("(X6/X7) source note cites the framework-local scale/RGE bridge", bridge_name in note_text)
     check(
-        "(X7) source note registers the one-loop RGE as a named admission",
-        "**(X7) Named 1-loop RGE admission.**" in note_text,
+        "(X7) source note no longer registers one-loop RGE as a row-local named admission",
+        "**(X7) Named 1-loop RGE admission.**" not in note_text,
     )
 
     # ------------------------------------------------------------------
@@ -148,7 +152,7 @@ def main() -> int:
     L = Symbol("L", positive=True, real=True)
     print(f"  symbolic u_0 = {u0}")
     print(f"  symbolic b_2 = {b2}")
-    print(f"  symbolic L = ln(M_Pl/v) = {L}")
+    print(f"  symbolic L = ln(M_Pl/v_cand) rounded bridge readout = {L}")
 
     # ------------------------------------------------------------------
     section("Part 2: lattice-scale bare alpha and tadpole-improved 1/alpha")
@@ -179,12 +183,13 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------
-    section("Part 3: 1-loop running from M_Pl to v (named RGE admission, b>0 = asymptotic freedom)")
+    section("Part 3: 1-loop running from M_Pl to v_cand (bridged inverse-alpha law, b>0 = asymptotic freedom)")
     # ------------------------------------------------------------------
-    # 1/alpha_2(v) = 1/alpha_2^tadpole|_lattice - (b_2/(2 pi)) * ln(M_Pl/v)
+    # 1/alpha_2(v_cand) =
+    #   1/alpha_2^tadpole|_lattice - (b_2/(2 pi)) * ln(M_Pl/v_cand)
     inv_alpha_v_sym = one_over_alpha_tadpole_lattice - (b2 / (2 * pi)) * L
     check(
-        "(P1) 1/alpha_2(v) = 16 pi u_0^2 - (b_2/(2 pi)) * L (X7 RGE substitution)",
+        "(P1) 1/alpha_2(v_cand) = 16 pi u_0^2 - (b_2/(2 pi)) * L (X7 bridge substitution)",
         simplify(
             inv_alpha_v_sym - (16 * pi * u0 ** 2 - (b2 / (2 * pi)) * L)
         )
@@ -225,8 +230,9 @@ def main() -> int:
     u_lo = Rational(96, 100)
     u_hi = Rational(98, 100)
     b2_val = Rational(19, 6)
-    # L_val = 38.44 expressed as exact rational (named admission per
-    # EW_COUPLING_DERIVATION_NOTE Part 1.2 stating ln(M_Pl/v) = 38.44).
+    # L_val = 38.44 expressed as exact rational. The 2026-06-15
+    # scale/RGE bridge proves this is the rounded readout of
+    # ln(M_Pl/v_cand)=38.442224515... from the hierarchy candidate map.
     L_val = Rational(3844, 100)
     print(f"  u_lo = {u_lo} = {float(u_lo)}")
     print(f"  u_hi = {u_hi} = {float(u_hi)}")
@@ -267,7 +273,7 @@ def main() -> int:
     #   g_hi = g_2(v) at u_0 = u_lo = 0.96
     g_lo = g2_at_uhi_num
     g_hi = g2_at_ulo_num
-    print(f"  RESULT: g_2(v=246 GeV) in [g_lo, g_hi]")
+    print(f"  RESULT: g_2(v_cand approx 246.28 GeV) in [g_lo, g_hi]")
     print(f"          g_lo = {g_lo}")
     print(f"          g_hi = {g_hi}")
     print(f"          width = {Numeric(g_hi - g_lo, 30)}")
@@ -342,7 +348,7 @@ def main() -> int:
     )
 
     # (C4) Counterfactual interval u_0 in [1.0, 1.0] (no improvement):
-    # at u_0 = 1, 1/alpha_2(v) = 16 pi - (19/(12 pi))*38.44.
+    # at u_0 = 1, 1/alpha_2(v_cand) = 16 pi - (19/(12 pi))*38.44.
     inv_alpha_unimp = inv_alpha_v_sym.subs(
         {u0: Rational(1), b2: b2_val, L: L_val}
     )
@@ -359,9 +365,9 @@ def main() -> int:
     # ------------------------------------------------------------------
     # The runner does NOT consume:
     #   - PDG observed g_2(v) = 0.646
-    #   - PDG observed v = 246 GeV as a free derivation input (only as
-    #     the conventional EW scale at which the named ln(M_Pl/v) is
-    #     evaluated)
+    #   - PDG observed v = 246 GeV as a free derivation input. The
+    #     scale log is supplied by the framework hierarchy candidate
+    #     bridge and rounded to 38.44 for exact-symbolic evaluation.
     #   - any fitted selector for u_0
     # The literature u_0 interval [0.96, 0.98] enters as a NAMED EXTERNAL
     # ADMISSION (Trottier hep-lat/9803024; Munster strong-coupling series).
@@ -378,7 +384,7 @@ def main() -> int:
     # ------------------------------------------------------------------
     print(f"  PASS = {PASS}")
     print(f"  FAIL = {FAIL}")
-    print(f"  g_2(v=246 GeV) in [{Numeric(g_lo,15)}, {Numeric(g_hi,15)}]")
+    print(f"  g_2(v_cand approx 246.28 GeV) in [{Numeric(g_lo,15)}, {Numeric(g_hi,15)}]")
     print(f"  interval width = {Numeric(g_hi - g_lo, 15)}")
     print(f"  PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

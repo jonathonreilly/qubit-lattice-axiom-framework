@@ -12,14 +12,17 @@ one-hop lattice-alpha anchor `1/α_2^bare |_lattice = 16π` and
 `β_W = 16` from
 `SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28`,
 (X5) the retained tadpole-improvement vertex-power identity
-`α_2^tadpole = α_2^bare / u_0²`, (X6) the named external admission
-`ln(M_Pl / v) = 38.44` at `v = 246 GeV`, and (X7) the named external
-1-loop running equation `1/α_2(v) = 1/α_2(M_Pl) - (b_2/(2π))L`, the
-SU(2)_L coupling at the electroweak scale admits the bounded interval
+`α_2^tadpole = α_2^bare / u_0²`, and (X6/X7) the framework-local
+inverse-alpha/scale-log bridge
+`SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15`,
+which supplies the integrated one-loop inverse-alpha law and computes
+`ln(M_Pl / v_cand) = 38.442224515...` from the hierarchy candidate map
+with the exact-symbolic surrogate `L = 3844/100`, the SU(2)_L coupling
+at the electroweak-scale candidate readout admits the bounded interval
 
 ```text
-g_2(v = 246 GeV)  ∈  [g_lo, g_hi]
-                  ≈  [0.65939, 0.68283],                                  (G1)
+g_2(v_cand ≈ 246.28 GeV)  ∈  [g_lo, g_hi]
+                           ≈  [0.65939, 0.68283],                         (G1)
 ```
 
 with exact-symbolic endpoints
@@ -34,8 +37,8 @@ The reversal `(u_lo, u_hi) → (g_hi, g_lo)` is forced by the monotonicity
 identity `d/du_0 [1/α_2(v)] = 32 π u_0 > 0` (the running curve at `v` is
 strictly increasing in `u_0`, so `g_2(v)` is strictly decreasing in
 `u_0`). This is purely a statement about substituting the named external
-admission interval `(X1)`, the named admission scale ratio `(X6)`, and
-the named 1-loop RGE admission `(X7)` together with the four retained /
+admission interval `(X1)` and the framework-local scale/RGE bridge
+`(X6/X7)` together with the four retained /
 retained_bounded inputs `(X2)–(X5)`. No new axiom, no new selector,
 no PDG comparator, no fitted selector, and no derivation of the literature
 `u_0(SU(2))` value or the lattice-scale coupling input inside the
@@ -75,7 +78,34 @@ not independently derive the anchor's assumed coupling input
 `g_2² |_lattice = 1/(d+1)=1/4`. The remaining non-framework premises are
 registered explicitly as named admissions: `(X1)` the `u_0(SU(2))`
 interval, `(X6)` the scale ratio `L = 38.44`, and `(X7)` the standard
-one-loop RGE form. This row remains bounded over those admissions.
+one-loop RGE form. The 2026-06-15 repair below retires `(X6)` and
+`(X7)` as separate external admissions by proving the scale-log
+arithmetic and integrated inverse-alpha law in a framework-local bridge.
+This row remains bounded over `(X1)`.
+
+## 2026-06-15 framework-local scale/RGE bridge repair
+
+Per the current audit blocker, the row previously treated
+`ln(M_Pl/v) = 38.44` and the one-loop inverse-alpha running equation as
+named external admissions. The new bridge
+[`SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md`](SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md)
+does two narrow things:
+
+1. It derives
+   `1/alpha(mu_IR) = 1/alpha(mu_UV) - (b/(2 pi)) ln(mu_UV/mu_IR)` by
+   calculus from the already-isolated one-loop coefficient convention
+   and `alpha = g^2/(4 pi)`.
+2. It computes the scale logarithm from the framework scale-reference
+   primitive and the hierarchy candidate map:
+   `v_cand = M_Pl * (7/8)^(1/4) * alpha_LM^16`, hence
+   `ln(M_Pl/v_cand) = 38.442224515...`; the exact-symbolic surrogate
+   `3844/100 = 38.44` used by this runner is a rounded readout of that
+   framework value.
+
+This repair does **not** derive the SU(2) tadpole interval `(X1)` and
+does **not** promote the hierarchy candidate readout to an observed-EW
+VEV theorem. It only removes the duplicate "imported textbook math"
+status for the integrated RGE algebra and scale-log arithmetic.
 
 ## Statement
 
@@ -93,8 +123,9 @@ g_2(v)      :=  sqrt( 4 π α_2(v) )
 Identity `(R1)` is the substitution of the retained_bounded one-hop
 lattice-alpha anchor `1 / α_2^bare |_lattice = 16 π` and the retained
 tadpole vertex-power identity `α_2^tadpole = α_2^bare / u_0²` into the
-named 1-loop running admission `1/α(v) = 1/α(M_Pl) - (b/(2 π)) ·
-ln(M_Pl/v)` at `b_2 > 0` (asymptotic-freedom convention).
+framework-local inverse-alpha bridge
+`1/α(v) = 1/α(M_Pl) - (b/(2 π)) · ln(M_Pl/v_cand)` at `b_2 > 0`
+(asymptotic-freedom convention).
 
 Assume the following named retained/admitted inputs:
 
@@ -178,38 +209,44 @@ Source: [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-1
 identity (T1) at `u_0² in the denominator`. The G = SU(2)
 specialization is the application here.
 
-**(X6) Named admission `ln(M_Pl / v) = 38.44` at `v = 246 GeV`**
-(named external-mathematics admission). The Planck-scale-to-EW-scale
-log ratio used in 1-loop SM running is the standard
+**(X6) Framework scale-log bridge.** The Planck-scale-to-candidate-EW
+scale log ratio is supplied by the framework-local bridge
 
 ```text
-L  :=  ln(M_Pl / v)  =  ln(1.22 · 10^19 GeV / 246 GeV)  ≈  38.44,         (X6)
+L_cand := ln(M_Pl / v_cand)
+        = -ln((7/8)^(1/4) alpha_LM^16)
+        = 38.442224515...,                                                (X6)
 ```
 
 with the rational approximation `L = 3844/100` used for exact-symbolic
-runner verification. This is admitted as a named scale-ratio fact, not
-a framework derivation; the framework's retained `v = 246.28 GeV`
-(downstream of the hierarchy theorem) and `M_Pl` (UV cutoff for the
-physical Cl(3) on Z³ baseline) together fix `L` to within the cited
-admission tolerance.
+runner verification. Source:
+[`SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md`](SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md).
+That bridge consumes the approved scale-reference primitive and the
+hierarchy candidate map, not an observed EW value. The hierarchy
+candidate's physical VEV identification remains scoped by the hierarchy
+lane; this row consumes only the dimensionless scale-log arithmetic.
 
-**(X7) Named 1-loop RGE admission.** The standard one-loop running form
-for a gauge coupling with coefficient `b_2 > 0` in the asymptotic-freedom
-sign convention is admitted as external QFT mathematics:
+**(X7) Framework-local inverse-alpha integration bridge.** Given the
+one-loop coefficient convention and `alpha = g^2/(4 pi)`, the bridge
+derives by calculus
 
 ```text
-1 / α_2(v)  =  1 / α_2(M_Pl)  -  (b_2 / (2 π)) · ln(M_Pl / v).            (X7)
+1 / α_2(v_cand)  =  1 / α_2(M_Pl)
+                   - (b_2 / (2 π)) · ln(M_Pl / v_cand).                  (X7)
 ```
 
-The coefficient value `b_2 = 19/6` is supplied by `(X2)`; `(X7)` is the
-textbook RGE form into which `(X2)` is substituted. This note does not
-derive the RGE form inside the framework.
+Source:
+[`SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md`](SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md).
+The coefficient value `b_2 = 19/6` is supplied by `(X2)`. This row does
+not derive continuum perturbative QFT from Cl(3); it consumes the
+already-isolated one-loop coefficient convention and proves the
+inverse-alpha integration step.
 
-Then the SU(2)_L coupling at the electroweak scale is the bounded
+Then the SU(2)_L coupling at the electroweak-scale candidate readout is the bounded
 interval
 
 ```text
-g_2(v = 246 GeV)  ∈  [g_lo, g_hi],                                        (G1)
+g_2(v_cand ≈ 246.28 GeV)  ∈  [g_lo, g_hi],                                (G1)
 g_lo  =  sqrt( 4 π / (16 π u_hi² - (b_2 / (2 π)) · L) ),                  (G2)
 g_hi  =  sqrt( 4 π / (16 π u_lo² - (b_2 / (2 π)) · L) ),                  (G3)
 ```
@@ -261,15 +298,15 @@ load-bearing on the running calculation; it appears here only to record
 the lattice action coefficient in canonical form and is already packaged
 inside the retained_bounded one-hop anchor.
 
-**Step 2 (1-loop running from M_Pl to v).** Apply the named RGE admission
-`(X7)` at `b_2 > 0`:
+**Step 2 (1-loop running from M_Pl to v_cand).** Apply the inverse-alpha
+bridge `(X7)` at `b_2 > 0`:
 
 ```text
-1 / α_2(v)  =  1 / α_2(M_Pl)  -  (b_2 / (2 π)) · ln(M_Pl / v).            (S3)
+1 / α_2(v_cand)  =  1 / α_2(M_Pl)  -  (b_2 / (2 π)) · ln(M_Pl / v_cand).  (S3)
 ```
 
 Substituting `(S2)` for `1 / α_2(M_Pl) ≡ 1 / α_2^tadpole |_lattice` and
-`(X6)` for `ln(M_Pl/v) = L`:
+`(X6)` for the rounded bridge log `ln(M_Pl/v_cand) = L`:
 
 ```text
 1 / α_2(v)  =  16 π u_0²  -  (b_2 / (2 π)) · L.                            (S4)
@@ -352,16 +389,18 @@ the displayed 14-digit values `(G4)`, `(G5)`. ∎
 (C5) Tolerance to L: a ±0.01 shift in L (i.e. L = 38.43 or L = 38.45)
      shifts the bounded interval endpoints by ~0.00006, well within the
      u_0-driven interval width (C1). This confirms the dominant
-     sensitivity is to the literature u_0 admission, not to the named
-     scale ratio admission.
+     sensitivity is to the literature u_0 admission, not to the rounded
+     bridge scale-log readout.
 ```
 
 All five corollaries follow algebraically from `(R1)`–`(R3)` and `(G1)`–`(G3)`.
 
 ## What this claims
 
-- The closed-form `(R1)`–`(R3)` for `g_2(v)` parametric in
-  `(u_0, b_2, L)`, under the named inputs `(X1)`–`(X7)`.
+- The closed-form `(R1)`–`(R3)` for `g_2(v_cand)` parametric in
+  `(u_0, b_2, L)`, under the named literature input `(X1)`, the
+  retained/retained_bounded inputs `(X2)`–`(X5)`, and the framework
+  bridge `(X6/X7)`.
 - The bounded interval `(G1)` with explicit endpoints `(G2)`–`(G3)` and
   the decimal readouts `(G4)`–`(G5)`, at the framework instance
   `(u_lo, u_hi, b_2, L) = (96/100, 98/100, 19/6, 3844/100)`.
@@ -370,7 +409,9 @@ All five corollaries follow algebraically from `(R1)`–`(R3)` and `(G1)`–`(G3
 - The five derivable corollaries `(C1)`–`(C5)`.
 
 All eight conclusions (R1, R2, R3, G1, G2, G3, M1, C1–C5) follow
-algebraically from the named inputs `(X1)`–`(X7)`.
+algebraically from `(X1)`–`(X7)` as now wired: one remaining named
+literature import, four retained/retained_bounded inputs, and one
+framework-local scale/RGE bridge.
 
 ## What this does NOT claim
 
@@ -381,29 +422,31 @@ algebraically from the named inputs `(X1)`–`(X7)`.
   remains the open R1 residual recorded by `EW_COUPLING_DERIVATION_NOTE`
   Part 3 and `G_WEAK_FROM_FRAMEWORK_STRETCH_ATTEMPT_NOTE_2026-05-03`
   residual R1.
-- Does **not** derive `ln(M_Pl / v) = 38.44`. This scale ratio is
-  admitted as a NAMED EXTERNAL ADMISSION; the framework's retained
-  `v = 246.28 GeV` and standard `M_Pl` together fix this ratio within
-  the cited tolerance.
+- Does **not** derive the full physical electroweak VEV identification.
+  The bridge computes `ln(M_Pl/v_cand)` from the hierarchy candidate map
+  and proves that `38.44` is the rounded readout of that dimensionless
+  framework quantity. The hierarchy lane's observable-identification
+  gates remain scoped there.
 - Does **not** derive native `SU(2)_L`, the lattice-alpha anchor
   `1/α_2^bare |_lattice = 16π`, the Wilson coefficient `β_W = 16`, the
   tadpole-improvement vertex-power identity `α^tadpole = α^bare/u_0²`,
-  or the 1-loop RGE form. These enter as `(X3)`, `(X4)`, `(X5)`, and
-  `(X7)` respectively.
+  or continuum perturbative QFT from Cl(3) alone. These enter as
+  `(X3)`, `(X4)`, `(X5)`, and the already-isolated one-loop convention
+  consumed by `(X7)` respectively.
 - Does **not** derive the assumed coupling input inside the one-hop
   anchor, `g_2² |_lattice = 1/(d+1)=1/4`; this row consumes the audited
   bounded anchor conclusion `(X4a)` rather than re-proving that input.
 - Does **not** consume any PDG observed `g_2(v)` value, lattice
   numerical Monte Carlo value, fitted selector, or admitted unit
-  convention beyond the named external admissions `(X1)`, `(X6)`, and
-  `(X7)`, plus the conventions already isolated inside the one-hop
-  anchor `(X4)`.
+  convention beyond the remaining named `u_0(SU(2))` interval `(X1)`
+  and the conventions already isolated inside the one-hop anchor `(X4)`
+  and scale/RGE bridge `(X6/X7)`.
 - Does **not** assert a single point value for `g_2(v)`; only the
   bounded interval `(G1)`. A precise value would require closing the R1
   residual (framework-internal derivation of `u_0(SU(2))` numerical).
 - Does **not** assert any closure of the `EW_COUPLING_DERIVATION_NOTE`
   Part 3 BOUNDED status; it provides only the bounded-interval narrow
-  rescope conditional on the named external admission.
+  rescope conditional on the remaining named `u_0(SU(2))` admission.
 - Does **not** consume the Lüscher–Mackenzie tadpole convention as a
   primitive; only the cited retained vertex-power identity (X5) on
   abstract `(α_bare, u_0) ∈ R^+ × R^+`.
@@ -428,9 +471,10 @@ inheriting:
 
 1. The four retained / retained_bounded inputs `(X2)`–`(X5)` as cited
    load-bearing upstreams, with `(X4)` now the audited one-hop anchor.
-2. The three named external admissions `(X1)` (literature `u_0` interval),
-   `(X6)` (scale ratio), and `(X7)` (the 1-loop RGE form) as explicit
-   imports.
+2. The remaining named external admission `(X1)` (literature `u_0`
+   interval) as the only row-local imported numerical input; `(X6)` and
+   `(X7)` are now supplied by the 2026-06-15 framework-local
+   scale/RGE bridge.
 
 The parent's BOUNDED status is unchanged by this narrow theorem; the
 narrow theorem only provides a Pattern A bounded-interval rescope of
@@ -458,6 +502,14 @@ Markdown-link upstream (load-bearing):
   — retained; supplies `(X5)` the abstract vertex-power identity
   `α^tadpole = α^bare / u_0²` on positive reals.
 
+Framework-local bridge:
+
+- [`SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md`](SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md)
+  — supplies `(X6)` the rounded scale log `L = 3844/100` as a readout
+  of `ln(M_Pl/v_cand) = 38.442224515...`, and `(X7)` the integrated
+  inverse-alpha one-loop equation by calculus from the already-isolated
+  coefficient convention.
+
 Named external admissions (not ledger dependencies):
 
 - `(X1)` Literature `u_0(SU(2)) ∈ [0.96, 0.98]`. Two references:
@@ -465,14 +517,6 @@ Named external admissions (not ledger dependencies):
   A Foundation for Modern Particle Physics*, SU(2) strong-coupling
   expansion sections. Treated as named external-mathematics / literature
   import, NOT a framework derivation.
-- `(X6)` Named admission `ln(M_Pl / v) = 38.44` at `v = 246 GeV`,
-  consistent with the retained `v = 246.28 GeV` and the standard
-  `M_Pl ≈ 1.22 · 10^19 GeV`. Treated as a named scale-ratio fact, not a
-  framework derivation.
-- `(X7)` Named 1-loop RGE admission
-  `1/α_2(v) = 1/α_2(M_Pl) - (b_2/(2π)) ln(M_Pl/v)`, treated as standard
-  external QFT mathematics; only the coefficient `b_2 = 19/6` is supplied
-  by the retained_bounded `(X2)` row.
 
 ## Forbidden imports check
 
@@ -484,7 +528,7 @@ Named external admissions (not ledger dependencies):
   `[0.96, 0.98]` is a NAMED EXTERNAL ADMISSION explicitly classified as
   such.
 - No admitted unit conventions load-bearing on the claim beyond the
-  named external admissions `(X6)` and `(X7)` plus the conventions already
+  framework-local scale/RGE bridge `(X6/X7)` plus the conventions already
   isolated inside the retained_bounded one-hop anchor `(X4)`.
 - No same-surface family arguments.
 - No staggered-Dirac realization input.
@@ -513,8 +557,8 @@ sympy `Rational` / `simplify` / `Numeric` arithmetic:
 
 1. Source-packet repair checks: the note cites the retained_bounded SU2
    lattice-alpha anchor, does not leave YT/G_BARE as load-bearing markdown
-   edges, states that the coupling input is not rederived here, and registers
-   `(X7)` as a named RGE admission.
+   edges, states that the coupling input is not rederived here, and consumes
+   the 2026-06-15 framework-local scale/RGE bridge for `(X6/X7)`.
 2. `(X4)` one-hop lattice-alpha anchor: `1 / α_2^bare |_lattice = 16π`;
    Wilson `β_W = 16` is recorded as an anchor corollary, not independently
    load-bearing on the interval calculation.
@@ -537,7 +581,7 @@ sympy `Rational` / `simplify` / `Numeric` arithmetic:
    counterfactual `u_0 = 1`, and the running surface's lower-bound
    sanity (g_lo > 0.6).
 
-Expected output: `PASS=23 FAIL=0`.
+Expected output: `PASS=24 FAIL=0`.
 
 ## Open derivation gap
 
@@ -549,15 +593,12 @@ Expected output: `PASS=23 FAIL=0`.
     - an SU(2) Monte Carlo evaluation of `u_0(SU(2))`, or
     - a framework-native non-perturbative matching for SU(2) that does
       not import an observed `g_2(v)` value.
-- The named scale-ratio admission `(X6)` `ln(M_Pl / v) = 38.44` is
-  admitted as a named external admission; the framework's retained
-  `v = 246.28 GeV` plus standard `M_Pl` fix this ratio within
-  the cited tolerance but the precision-controlled form would be a
-  separate row.
-- The 1-loop running equation `(X7)` is admitted as named external QFT
-  mathematics; framework-internal derivation of the RGE form beyond the
-  retained_bounded closed-form `b_2 = 19/6` coefficient substitution
-  remains out of scope.
+- The scale-ratio and inverse-alpha integration imports `(X6/X7)` are
+  no longer row-local external admissions; they are supplied by the
+  framework-local 2026-06-15 bridge. That bridge still does not derive
+  continuum perturbative QFT from Cl(3) alone; it proves the calculus
+  integration and the scale-log arithmetic over already-isolated
+  authority surfaces.
 
 ## Cross-references
 

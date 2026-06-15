@@ -75,12 +75,13 @@ def main() -> int:
     print("=" * 72)
 
     note = read(NOTE)
-    check("note names diagnostic work-history scope",
-          "diagnostic work-history numerics only" in note)
+    check("note names diagnostic finite-box work-history scope",
+          "diagnostic finite-box work-history numerics only" in note)
     note_flat = " ".join(note.replace("*", "").split())
     check("note states no retained atomic authority",
-          "does NOT claim retained bounded authority" in note_flat
-          and "does not propagate as retained authority" in note_flat)
+          "does NOT claim continuum-limit" in note_flat
+          and "retained atomic derivation-chain authority" in note_flat
+          and "does not propagate as a flagship authority" in note_flat)
     check("note no longer says readouts are not pinned",
           "not pinned against a cached runner stdout" not in note)
     check("note names this packet verifier",
@@ -126,19 +127,21 @@ def main() -> int:
         ],
         HARTREE_RUNNER: [
             "E(He",
-            "1.34244",
+            "1.43102",
             "IE",
-            "0.3424",
+            "0.4310",
+            "E_pair",
         ],
         JASTROW_RUNNER: [
-            "1.43572",
+            "1.41501",
+            "1.43653",
             "Jastrow",
             "Full CI",
         ],
         DEPENDENCY_RUNNER: [
             "PASS=28",
             "FAIL=0",
-            "All checks PASSED",
+            "All checks passed",
         ],
     }
 

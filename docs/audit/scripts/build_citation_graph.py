@@ -95,6 +95,16 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/frontier_atomic_helium_jastrow_companion.py",
         "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
     ],
+    # This wrapper row exists specifically to expose helpers loaded through
+    # `_frontier_loader.load_frontier(...)`; AST import discovery cannot see
+    # those dynamic loads, but the helpers are one-hop packet sources.
+    "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13": [
+        "scripts/frontier_star_shell_projector.py",
+        "scripts/frontier_same_source_metric_ansatz_scan.py",
+        "scripts/frontier_coarse_grained_exterior_law.py",
+        "scripts/frontier_sewing_shell_source.py",
+        "scripts/frontier_radial_shell_matching_law.py",
+    ],
 }
 
 

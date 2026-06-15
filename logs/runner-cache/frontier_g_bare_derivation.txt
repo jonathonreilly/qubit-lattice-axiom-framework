@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_derivation.py
-runner_sha256: 7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7
+runner_sha256: f8b1a4ffa59a17879016b018b9389312e218bb244a583c0acdb05ccbdb4c35c0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -99,18 +99,29 @@ SECTION F: end-to-end derivation chain (no circular use of g_bare = 1)
   [PASS] no circular use of g_bare = 1 or beta = 6 as input in the chain  (forward-only relative to canonical normalization and Wilson matching)
 
 ========================================================================================
-SECTION G: ledger visibility for the new theorem rows
+SECTION G: source-packet boundary for bounded parent re-audit
 ========================================================================================
-  [PASS] [BOUNDED] declared dep 'cl3_color_automorphism_theorem' present in audit ledger  (effective_status = retained)
-  [FAIL] [BOUNDED] new row 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03' seeded with deps = ['cl3_color_automorphism_theorem']  (audit_status = audited_clean; effective_status = retained_bounded)
-  [FAIL] [BOUNDED] new row 'g_bare_constraint_vs_convention_theorem_note_2026-05-03' seeded with deps = ['cl3_color_automorphism_theorem']  (audit_status = audited_clean; effective_status = retained_bounded)
+  [PASS] [BOUNDED] parent note exists in source packet  (docs/G_BARE_DERIVATION_NOTE.md)
+  [PASS] [BOUNDED] rescaling dependency note exists in source packet  (docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+  [PASS] [BOUNDED] constraint dependency note exists in source packet  (docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md)
+  [PASS] [BOUNDED] parent boundary marker present: **Claim type:** bounded_theorem  (source-side claim boundary, not ledger status)
+  [PASS] [BOUNDED] parent boundary marker present: open main gate  (source-side claim boundary, not ledger status)
+  [PASS] [BOUNDED] parent boundary marker present: parent re-audit required  (source-side claim boundary, not ledger status)
+  [PASS] [BOUNDED] parent boundary marker present: canonical normalization itself remains the admitted  (source-side claim boundary, not ledger status)
+  [PASS] [BOUNDED] parent boundary marker present: retained-status  (source-side claim boundary, not ledger status)
+  [PASS] [BOUNDED] rescaling source is bounded  (**Claim type:** bounded_theorem)
+  [PASS] [BOUNDED] rescaling names scoped WM  (explicit scoped assumption)
+  [PASS] [BOUNDED] rescaling forbids downstream promotion  (does not promote any downstream)
+  [PASS] [BOUNDED] constraint source is bounded  (**Claim type:** bounded_theorem)
+  [PASS] [BOUNDED] constraint names beta scoped input  (**beta=6** is an explicit scoped input)
+  [PASS] [BOUNDED] constraint forbids retained derivation citation  (retained derivation)
 
 ========================================================================================
 SUMMARY
 ========================================================================================
   EXACT   : PASS = 51,   FAIL = 0
-  BOUNDED : PASS = 2, FAIL = 2
-  TOTAL   : PASS = 53, FAIL = 2
+  BOUNDED : PASS = 15, FAIL = 0
+  TOTAL   : PASS = 66, FAIL = 0
 
   All exact checks passed.
   The Cl(3) -> End(V) -> su(3) -> Wilson action chain derives g_bare = 1

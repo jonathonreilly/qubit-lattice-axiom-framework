@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su3_adjoint_casimir_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
         "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
         "hierarchy_dimensional_compression_note",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
         "action_normalization_note",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
-        "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08"
+        "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
+        "su3_adjoint_casimir_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4ba0ce2bf4582a0a610e232c999daeb6a047a814a4cb4f22d3b1d3bf55ea4b58",
+      "note_hash": "253fcc20501b1944585e98ea8326bfb1377accfb0ddaa8dfec39064dbaf9d7b0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

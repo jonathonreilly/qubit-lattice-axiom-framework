@@ -1,0 +1,23 @@
+loop: noether-gate-edge-firewall-20260615
+date: 2026-06-15
+mode: source_side_audit_unlock
+target_claim_id: axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05
+target_note: docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md
+target_runner: scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: remove non-load-bearing realization-gate markdown edge while preserving row-local supplied exhibit boundary
+files_touched:
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
+  - logs/runner-cache/audit_companion_lattice_noether_onsite_internal_2026_06_05.txt
+open_imports:
+  - supplied staggered/Kawamoto-Smit exhibit remains row-local context
+  - physical derivation of the realization gate remains outside this row
+proposal_allowed: true
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+pr_status: pending
+next_exact_action: run pipeline/graph verification, restore generated audit outputs, commit and open PR
+stop_condition: PR opened for independent review

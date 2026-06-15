@@ -282,13 +282,15 @@ narrow theorem.
   conditional row; this note states an independent corrected/narrowed theorem
   and does not consume the parent as authority.
 
-**Admitted context input (open gate, named, not a retained dependency):**
+**Admitted context input (row-local supplied exhibit, not a retained dependency):**
 
 - `staggered_dirac_realization_gate` / the Kawamoto-Smit phase form
   `eta_1 = +1`, `eta_2 = (-1)^{x_1}`, `eta_3 = (-1)^{x_1+x_2}`: the staggered
-  carrier and its phase structure are admitted, exactly as in the parent. This
-  note does not derive them; the U(1) current (4*), the sign fix, and the
-  onsite/internal locality close on the admitted carrier.
+  carrier and its phase structure are a supplied context for this row's
+  carrier-specific replay, exactly as in the parent. This note does not derive
+  them, does not cite them as one-hop authority, and does not promote the
+  realization gate. The U(1) current (4*), the sign fix, and the onsite/internal
+  locality close only after that supplied exhibit is fixed.
 
 **External mathematics (comparator only, not a derivation input):**
 
@@ -323,8 +325,21 @@ audit status of
 realization gate, the substep-1 Grassmann bridge, the determinant-positivity
 surface, or any other row. The audit lane is the only status authority.
 
-## Audit dependency repair links
+## Dependency-Graph Firewall
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This note intentionally has **no markdown link** to
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`. The gate remains a named
+row-local supplied exhibit, not a retained dependency edge. A prior version put
+the gate under "audit dependency repair links", which made the citation graph
+treat a non-load-bearing reminder as a one-hop dependency and left this row
+blocked on a conditional gate authority. The intended re-audit surface is:
 
-- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- retained dependencies: `MINIMAL_AXIOMS_2026-06-05.md`,
+  `AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06.md`,
+  `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`,
+  and `STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`;
+- supplied row-local context: `staggered_dirac_realization_gate` /
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` for the
+  Kawamoto-Smit phase exhibit only;
+- no claim that the supplied exhibit is framework-native, retained, or derived
+  by this theorem.

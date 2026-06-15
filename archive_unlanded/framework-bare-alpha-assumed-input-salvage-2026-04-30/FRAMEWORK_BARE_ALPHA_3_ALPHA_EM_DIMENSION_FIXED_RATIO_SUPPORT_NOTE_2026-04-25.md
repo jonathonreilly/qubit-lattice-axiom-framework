@@ -26,6 +26,26 @@ conditional algebra lemma over explicit bookkeeping assumptions.
 
 That is the whole purpose of this repaired archived note.
 
+## 2026-06-15 re-audit handoff
+
+This archived path remains the audited row path, but the science surface to
+audit is now the narrowed formal assumed-input theorem in the canonical repair
+packet. The old failed reading required retained EW-normalization authority and
+minimal-stack package authority; this wrapper no longer asks for either.
+
+For re-audit, the load-bearing statement is only:
+
+```text
+H1-H4 imply alpha_3(bare) / alpha_em(bare) = 2d + 3,
+so the d = 3 specialization is 9, with
+sin^2(theta_W)(bare) = 4/9.
+```
+
+The row still does not derive H1-H4, does not establish the EW-normalization
+lane, does not promote the `Cl(3) -> SM` support packet, and does not make a
+low-energy coupling prediction. The repair is a source-boundary demotion to
+formal supplied-hypothesis algebra, not a route to retained package authority.
+
 ## Conditional assumptions
 
 Assume only the following dimension-indexed bare bookkeeping inputs:

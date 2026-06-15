@@ -4,14 +4,14 @@
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set,
 predict, or assert an audit verdict and does not claim package-status promotion.
-**Primary exact runner:**
+**Runner:**
 [`scripts/frontier_record_typing_firewall_exact_2026_06_05.py`](../scripts/frontier_record_typing_firewall_exact_2026_06_05.py)
-with cache
+**Runner cache:**
 [`logs/runner-cache/frontier_record_typing_firewall_exact_2026_06_05.txt`](../logs/runner-cache/frontier_record_typing_firewall_exact_2026_06_05.txt).
 
 **Supporting dynamics runner:**
 [`scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py`](../scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py)
-with cache
+**Supporting dynamics cache:**
 [`logs/runner-cache/frontier_record_classicalization_dynamics_firewall_2026_06_05.txt`](../logs/runner-cache/frontier_record_classicalization_dynamics_firewall_2026_06_05.txt).
 
 ---

@@ -42,9 +42,10 @@ For the stated conditional setup, the runner establishes the following bounded
 4. **Linear permutation-equivariant boundary.** Orbit reduction gives four
    component orbits and six hop orbits. The exact polynomial unitarity
    equations contain the per-orbit and opposite-side-hop bilinear kills used by
-   the branch pass. The deterministic leaf sweep found no dispersive unitary in
-   any leaf. This is a sweep-grade boundary on that linear equivariant family,
-   with the exact kill structure as the algebraic backbone.
+   the branch pass. The deterministic leaf sweep found no dispersive unitary
+   among optimizer endpoints. The endpoint count is diagnostic rather than a
+   coverage threshold; the sweep-grade boundary is the absence of a dispersive
+   witness, with the exact kill structure as the algebraic backbone.
 5. **Quantized drift witnesses.** Site-allowed single-axis shifts, mixed
    four-cycles, and staircase cycles are unitary and dispersive. Their bands
    are monomial roots, so the slopes are rational winding-per-cycle-length
@@ -134,7 +135,9 @@ PYTHONHASHSEED=0 python3 scripts/kinetic_isotropy_3d_simultaneous_tick_2026_06_1
 ```
 
 Expected scorecard: `PASS=20 FAIL=0`. The full permutation-equivariant leaf
-sweep is intentionally heavier than the local symbolic checks.
+sweep is intentionally heavier than the local symbolic checks. Its
+optimizer-distinct endpoint count is a diagnostic detail that may vary across
+fresh runs; the pass/fail boundary is whether a dispersive endpoint is found.
 
 ## Dependencies
 

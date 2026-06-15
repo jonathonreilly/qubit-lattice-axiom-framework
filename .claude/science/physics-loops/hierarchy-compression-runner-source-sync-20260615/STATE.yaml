@@ -1,0 +1,23 @@
+loop: hierarchy-compression-runner-source-sync-20260615
+date: 2026-06-15
+mode: source_side_audit_hygiene
+target_claim_id: hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10
+target_note: docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md
+target_runner: scripts/frontier_hierarchy_dimensional_compression.py
+actual_current_surface_status: numerical-match
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: align runner source-firewall with companion note and cache scorecard
+files_touched:
+  - docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md
+  - scripts/frontier_hierarchy_dimensional_compression.py
+  - logs/runner-cache/frontier_hierarchy_dimensional_compression.txt
+open_imports:
+  - D=4 effective-potential-density/readout bridge remains open
+  - C_obs comparison remains external diagnostic context
+proposal_allowed: true
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+pr_status: pending
+next_exact_action: verify, restore generated audit outputs if any, commit and open PR
+stop_condition: PR opened for independent review

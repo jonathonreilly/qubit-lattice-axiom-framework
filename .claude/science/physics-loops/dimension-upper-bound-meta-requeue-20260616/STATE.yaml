@@ -1,0 +1,14 @@
+loop: dimension-upper-bound-meta-requeue-20260616
+mode: source_repair
+target_claim_id: dimension_upper_bound_dependency_edge_repair_note_2026-06-08
+target_status: meta dependency-edge certificate
+actual_current_surface_status: meta
+branch: physics-loop/dimension-upper-bound-meta-requeue-20260616
+base: origin/main@ba46f7843d538e48b25d2de109d58125e82269cc
+current_block: post-audit meta requeue source repair
+files_touched:
+  - docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md
+  - scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py
+  - logs/runner-cache/dimension_upper_bound_dependency_edge_repair_2026_06_08.txt
+audit_boundary: no audit ledger, queue, publication, or status-surface edits
+next_exact_action: reviewer/audit can requeue this source as meta and audit any parent theorem separately

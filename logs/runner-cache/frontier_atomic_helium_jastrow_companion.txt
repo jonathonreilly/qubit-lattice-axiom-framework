@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_helium_jastrow_companion.py
-runner_sha256: 9590fa24f044688d04a0f49fa52a94f981871e2b8ad388ef1a7fc22ae01d9372
+runner_sha256: b85c0aced6748656ab98a4387707cc0bbac08725b66089a91dec54757cb7de4a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 15.28
+elapsed_sec: 18.10
 status: ok
 ----- stdout -----
 ========================================================================
@@ -28,6 +28,7 @@ STEP 1: Hartree baseline at N=20
   E(He⁺)   = -0.236366
   E_Hartree = -0.334459
   |E(He)|/|E(He⁺)| = 1.41501  (Hartree target ~1.424)
+  Hartree normalization: E_pair = ΣρV_H[ρ] for one-electron ρ=|φ|².
   Compute timing: omitted from audit cache for deterministic replay.
 
 ────────────────────────────────────────────────────────────
@@ -98,10 +99,11 @@ SUMMARY: HELIUM JASTROW COMPANION
 AUDIT CHECK SUMMARY
 PASS: jastrow_fixed_seed_declared -- run_vmc called with seed=42 for each r_J
 PASS: jastrow_hartree_baseline_pin -- ratio_hartree=1.41501
+PASS: jastrow_inherits_repaired_hartree_normalization -- baseline uses one-electron density E_pair=ΣρV_H[ρ]
 PASS: jastrow_best_rj_pin -- best_r_J=3.0
 PASS: jastrow_ratio_pin -- ratio_jastrow=1.43653
 PASS: jastrow_improves_over_hartree -- hartree=1.41501, jastrow=1.43653
-TOTAL: PASS=5, FAIL=0
+TOTAL: PASS=6, FAIL=0
 
 ----- stderr -----
 

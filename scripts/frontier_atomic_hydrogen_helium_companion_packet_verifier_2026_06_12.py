@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Restricted-packet verifier for the hydrogen/helium atomic companion row.
 
-The active audit blocker is a runner-artifact issue: the diagnostic
-work-history note needs full hydrogen, helium Hartree, and helium Jastrow
-runner sources plus completed runner-cache certificates visible in the
-restricted packet.
+The active post-audit blocker is the helium Hartree Coulomb-normalization
+surface.  The diagnostic work-history note needs full hydrogen, helium
+Hartree, and helium Jastrow runner sources plus completed runner-cache
+certificates visible in the restricted packet, and the Hartree runner must
+show which density convention its pair integral uses.
 
 This runner checks packet visibility and source/cache consistency only. It
 does not promote the atomic lane, prove continuum control, derive absolute
@@ -97,11 +98,15 @@ def main() -> int:
             "def solve_poisson_for_hartree",
             "def helium_variational_scf",
             "E_var = 2",
+            "pair_integral_normalization_certificate",
+            "one-electron density",
+            "quarter_total_density_form",
         ],
         JASTROW_RUNNER: [
             "def make_jastrow",
             "def local_energy",
             "g_EM/4",
+            "repaired one-electron-density convention",
         ],
         DEPENDENCY_RUNNER: [
             "C.staggered.square_is_not_minus_laplacian",
@@ -131,12 +136,15 @@ def main() -> int:
             "IE",
             "0.4310",
             "E_pair",
+            "pair_norm_direct_ratio=1.000000",
+            "hartree_total_density_conversion_guard",
         ],
         JASTROW_RUNNER: [
             "1.41501",
             "1.43653",
             "Jastrow",
             "Full CI",
+            "jastrow_inherits_repaired_hartree_normalization",
         ],
         DEPENDENCY_RUNNER: [
             "PASS=28",

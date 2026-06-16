@@ -1,0 +1,33 @@
+loop: atomic-helium-hartree-normalization-20260616
+branch: physics-loop/atomic-helium-hartree-normalization-20260616
+base: origin/main
+base_commit: 88142255a
+target_claim_id: work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: hartree_pair_integral_normalization_repair
+blocker: "Correct the helium Hartree Coulomb-integral normalization, rerun the Hartree and Jastrow baselines, and have a second auditor re-check the non-load-bearing finite-Rydberg/d=3-selection prose is quarantined outside the scoped claim."
+files_touched:
+  - docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md
+  - scripts/frontier_atomic_helium_hartree_companion.py
+  - scripts/frontier_atomic_helium_jastrow_companion.py
+  - scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py
+  - logs/runner-cache/frontier_atomic_helium_hartree_companion.txt
+  - logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt
+  - logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt
+open_imports:
+  - finite_box_to_continuum_control
+  - exact_helium_beyond_product_plus_one_parameter_jastrow
+  - absolute_ev_electron_mass_lane
+review_findings:
+  disposition: pass
+  notes: "Local source-side review found no status promotion and no audit-ledger edits. Independent reviewer/auditor still owns verdict movement."
+verification:
+  - "python3 scripts/frontier_atomic_helium_hartree_companion.py"
+  - "python3 scripts/frontier_atomic_helium_jastrow_companion.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_atomic_helium_hartree_companion.py,scripts/frontier_atomic_helium_jastrow_companion.py,scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py --check-only --push-mode none --allow-non-main"
+  - "python3 docs/audit/scripts/audit_lint.py --strict"
+next_exact_action: "Open PR for reviewer extraction; do not edit audit results."
+stop_condition: "Science block packaged as source-side repair PR."

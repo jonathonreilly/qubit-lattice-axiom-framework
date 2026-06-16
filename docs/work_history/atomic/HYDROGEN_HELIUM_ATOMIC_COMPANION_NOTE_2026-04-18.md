@@ -4,7 +4,9 @@
 work-history numerics only, not retained bounded authority, per audit
 verdict boundary instruction; 2026-06-12: restricted packet verifier added
 for the hydrogen, helium Hartree, helium Jastrow, and dependency-repair
-source/cache artifacts).
+source/cache artifacts; 2026-06-16: helium Hartree Coulomb-integral
+normalization made explicit and guarded by a direct pair-integral runner
+certificate).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing; synced 2026-06-12 to the
 audit-named finite-box boundary):** the load-bearing content of this
@@ -63,6 +65,29 @@ readouts are present in those caches; and that the lattice-kinetic /
 Coulomb-kernel dependency repair verifier cache is present and passing. This
 is a restricted-packet visibility repair only. Independent review and audit
 own whether it resolves the runner-artifact conditional verdict.
+
+**2026-06-16 Hartree Coulomb normalization repair:** the helium Hartree
+runner now states and checks the density convention used in the product-state
+upper-bound row:
+
+```text
+rho(r) = |phi(r)|^2, sum_r rho(r) = 1
+V_H[rho](r) = sum_r' rho(r') g_EM / max(|r-r'|, 0.5)
+E_pair = sum_r rho(r) V_H[rho](r)
+       = sum_{r,r'} rho(r) rho(r') g_EM / max(|r-r'|, 0.5)
+E_var = 2 epsilon - E_pair
+```
+
+Here `rho` is a one-electron density, so `E_pair` is already the single
+electron-electron pair expectation in the separable state
+`phi(r_1) phi(r_2)`. The total-density formula with `n=2rho` has a different
+normalization: the same one-pair integral is
+`(1/4) sum_r n(r) V_H[n](r)`, while `(1/2) sum_r n(r) V_H[n](r)` counts twice
+the one pair represented by this companion. The regenerated Hartree cache
+contains a brute-force small-grid certificate
+`pair_norm_direct_ratio=1.000000` and
+`hartree_total_density_conversion_guard`, and the Jastrow cache explicitly
+inherits this repaired Hartree baseline.
 
 ## Runner source + cache excerpt (load-bearing for restricted packet, inlined 2026-05-18)
 
@@ -174,6 +199,7 @@ def helium_variational_scf(N, g_nuc, g_em, max_iter=60, tol=1e-6, mix=0.5):
     not imported from standard QM.
     """
     # SCF loop: solve (T + V_nuc + V_H[φ]) φ = ε φ ; rebuild ρ=φ²; iterate.
+    # ρ is one-electron normalized. E_pair=ΣρV_H[ρ] is the single e-e pair.
     # Returns E_var = 2ε - E_pair  (DERIVED from product-state ansatz)
     ...
 ```
@@ -254,6 +280,18 @@ SUMMARY: HELIUM HARTREE COMPANION
   CHECKPOINTS:
   |E(He)|/|E(He⁺)| = 1.4310  vs Hartree ~1.424  (full CI 1.452)
   IE₁/IE₂           = 0.4310  vs Hartree ~0.424
+
+  Normalization guard (small-grid direct certificate):
+    pair_norm_direct_ratio=1.000000
+    one_density_pair=0.254497562082
+    direct_pair=0.254497562082
+    quarter_total_density_form=0.254497562082
+    half_total_to_pair=2.000000
+
+AUDIT CHECK SUMMARY
+PASS: hartree_pair_integral_direct_normalization -- pair_norm_direct_ratio=1.000000
+PASS: hartree_total_density_conversion_guard -- quarter_total=0.254497562082, half_total_to_pair=2.000000
+TOTAL: PASS=8, FAIL=0
 ```
 
 Log file preserved at `logs/2026-05-18-atomic_helium_hartree_companion.txt`;
@@ -280,6 +318,10 @@ SUMMARY: HELIUM JASTROW COMPANION
          Hartree (product)             1.41501    1.4240   separable ansatz
            Jastrow (r_J=3)             1.43653       n/a   cusp corr. from Z³ kernel
                    Full CI             1.45200    1.4520   exact (historical)
+
+AUDIT CHECK SUMMARY
+PASS: jastrow_inherits_repaired_hartree_normalization -- baseline uses one-electron density E_pair=ΣρV_H[ρ]
+TOTAL: PASS=6, FAIL=0
 ```
 
 Log file preserved at `logs/2026-05-18-atomic_helium_jastrow_companion.txt`;
@@ -297,8 +339,10 @@ runner-cache certificate:
 | `E(He⁺)/E₀ = -3.7908 vs -4` | helium Hartree companion | `E(He⁺)/E₀ = -3.7908     -4.0000    +5.23%` |
 | `|E(He)|/|E(He⁺)| = 1.4310` | helium Hartree companion | `|E(He)|/|E(He⁺)| = 1.4310  (Hartree target ~1.424)` |
 | `IE_1/IE_2 = 0.4310` | helium Hartree companion | `IE₁/IE₂ = 0.4310` |
+| Hartree pair normalization | helium Hartree companion | `pair_norm_direct_ratio=1.000000`; `hartree_total_density_conversion_guard` |
 | Jastrow VMC `|E(He)|/|E(He⁺)| = 1.4365` | helium Jastrow companion | `Optimal r_J = 3.0  →  Jastrow (r_J=3)  1.43653` |
 | Hartree baseline at N=20: `1.4150` | helium Jastrow companion | `Hartree (product)  1.41501  ... ` |
+| Jastrow/Hartree inheritance | helium Jastrow companion | `jastrow_inherits_repaired_hartree_normalization` |
 
 This pin-table addresses the audit-stated repair sub-target as a
 **restricted-packet visibility** repair: it inlines the runner source
@@ -467,8 +511,8 @@ Regenerated runner totals:
 | Runner | Cache total |
 |---|---|
 | `scripts/frontier_atomic_hydrogen_lattice_companion.py` | `TOTAL: PASS=6, FAIL=0` |
-| `scripts/frontier_atomic_helium_hartree_companion.py` | `TOTAL: PASS=6, FAIL=0` |
-| `scripts/frontier_atomic_helium_jastrow_companion.py` | `TOTAL: PASS=5, FAIL=0` |
+| `scripts/frontier_atomic_helium_hartree_companion.py` | `TOTAL: PASS=8, FAIL=0` |
+| `scripts/frontier_atomic_helium_jastrow_companion.py` | `TOTAL: PASS=6, FAIL=0` |
 | `scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py` | `TOTAL: PASS=28, FAIL=0` |
 
 Scope sync: this note is to be read only under the narrowed diagnostic
@@ -477,7 +521,36 @@ continuum-limit closure, absolute-eV spectroscopy, exact helium, a general
 multi-electron extension, or a retained atomic derivation-chain authority.
 Independent audit decides whether the repaired packet is sufficient.
 
-## Citation chain and audit-stated repair path (2026-05-10; cache and packet repair 2026-06-12)
+## Hartree Coulomb-normalization repair (2026-06-16)
+
+Latest audit-named repair target:
+
+`Correct the helium Hartree Coulomb-integral normalization, rerun the Hartree and Jastrow baselines, and have a second auditor re-check the non-load-bearing finite-Rydberg/d=3-selection prose is quarantined outside the scoped claim.`
+
+Source-side repair:
+
+- the Hartree runner now defines `rho=|phi|^2` as a one-electron density and
+  records `E_pair=sum rho V_H[rho]` as the single product-state
+  electron-electron pair integral;
+- a brute-force small-grid direct summation certifies the convolution
+  convention with `pair_norm_direct_ratio=1.000000`;
+- the total-density conversion is checked explicitly:
+  `(1/4) sum n V_H[n]` equals the one-pair integral for `n=2rho`, while the
+  usual `(1/2) sum n V_H[n]` expression counts two such pairs on this
+  two-electron product-state surface;
+- the Hartree and Jastrow runner caches were regenerated after the repair, and
+  the Jastrow runner now pins that its baseline inherits the repaired Hartree
+  normalization;
+- the finite-Rydberg / d=3-selection language remains quarantined in the
+  rejected-isoelectronic and future-reopen sections rather than the scoped
+  finite-box claim.
+
+This is still a diagnostic finite-box work-history companion. The edit repairs
+the audited source defect and cache evidence; it does not claim exact helium,
+continuum closure, absolute-eV spectroscopy, retained atomic authority, or any
+source-authored status lift; no status lift is claimed.
+
+## Citation chain and audit-stated repair path (2026-05-10; cache and packet repair 2026-06-12; normalization repair 2026-06-16)
 
 The audit verdict (2026-05-05, see top of note) flags two missing
 items: the preserved runner source plus completed stdout/cached
@@ -491,7 +564,7 @@ authority chain on this row currently stands as follows.
 | Helium Hartree companion runner | [`scripts/frontier_atomic_helium_hartree_companion.py`](../../../scripts/frontier_atomic_helium_hartree_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_helium_hartree_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_hartree_companion.txt) | product-state upper bound only |
 | Helium Jastrow / VMC companion runner | [`scripts/frontier_atomic_helium_jastrow_companion.py`](../../../scripts/frontier_atomic_helium_jastrow_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt) | one-parameter VMC companion only |
 | Lattice-kinetic / Coulomb-kernel dependency repair verifier | [`docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md`](../../HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md), [`scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py`](../../../scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py) | verifier cache [`logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt`](../../../logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt), `PASS=28 FAIL=0` | later review decides whether this dependency repair is sufficient |
-| Restricted-packet source/cache verifier | [`scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py`](../../../scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py) | verifier cache [`logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt`](../../../logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt), `PASS=60 FAIL=0` | confirms source/cache visibility only; no status lift |
+| Restricted-packet source/cache verifier | [`scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py`](../../../scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py) | verifier cache [`logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt`](../../../logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt), `PASS=69 FAIL=0` | confirms source/cache visibility only, plus the Hartree normalization guard; no status lift |
 | One-hop retained lattice kinetic operator / graph Hamiltonian | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) and current baseline [`MINIMAL_AXIOMS_2026-06-05.md`](../../MINIMAL_AXIOMS_2026-06-05.md) | named in the 2026-06-02 dependency repair note and checked by the verifier | scalar graph-Laplacian surface only |
 | One-hop retained Coulomb-kernel route on `Z^3` | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) | four-line `G(r) -> 1/(4 pi |r|)` to `V(r)=-g/|r|` arithmetic recorded in the 2026-06-02 repair note and checked by the verifier | Maradudin/asymptotic bridge scope only |
 | Live retained EW normalization lane (used as boundary disclaimer only) | retained on `main` per "Upstream Surfaces Used Here" | retained | this companion stays in dimensionless / coupling-relative units |
@@ -509,11 +582,11 @@ unsupported "unique from Cl(3)" and finite-continuum-Rydberg framings.
 Independent review and audit must decide whether those repairs are
 sufficient; this note remains a diagnostic work-history companion and
 does not propagate as retained authority. The acknowledged residuals are
-not missing runner source or missing cache certificates anymore; they are
-finite-box / continuum control beyond the displayed boxes, exact helium
-beyond product-state plus one-parameter Jastrow, absolute-eV scale via the
-electron-mass lane, and independent audit review of the narrowed dependency
-repair.
+not missing runner source, missing cache certificates, or an unguarded
+Hartree pair-integral convention anymore; they are finite-box / continuum
+control beyond the displayed boxes, exact helium beyond product-state plus
+one-parameter Jastrow, absolute-eV scale via the electron-mass lane, and
+independent audit review of the narrowed dependency repair.
 
 This rigorization edit only sharpens the conditional perimeter and
 registers the cited authority chain; it does not set audit status or

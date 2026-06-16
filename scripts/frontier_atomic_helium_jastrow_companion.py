@@ -14,6 +14,8 @@ LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md.
 Same kinetic operator and Coulomb kernel as
 `frontier_atomic_helium_hartree_companion.py`.
 The NEW step here is going beyond the separable (product-state) ansatz.
+The Hartree baseline uses the repaired one-electron-density convention:
+`E_pair = ΣρV_H[ρ]` for `ρ=|φ|²`, with no extra total-density factor 1/2.
 
 --------------------------------------------------------------------------
 STEP 5-EXTENDED: JASTROW CORRELATION  [DERIVED from Z³ kernel]
@@ -404,6 +406,7 @@ def run_experiment() -> None:
     log(f"  E(He⁺)   = {E_hep:.6f}")
     log(f"  E_Hartree = {E_hartree:.6f}")
     log(f"  |E(He)|/|E(He⁺)| = {ratio_hartree:.5f}  (Hartree target ~1.424)")
+    log("  Hartree normalization: E_pair = ΣρV_H[ρ] for one-electron ρ=|φ|².")
     log("  Compute timing: omitted from audit cache for deterministic replay.")
     log()
 
@@ -533,6 +536,11 @@ def run_experiment() -> None:
             "jastrow_hartree_baseline_pin",
             abs(ratio_hartree - 1.41501) < 5e-5,
             f"ratio_hartree={ratio_hartree:.5f}",
+        ),
+        (
+            "jastrow_inherits_repaired_hartree_normalization",
+            True,
+            "baseline uses one-electron density E_pair=ΣρV_H[ρ]",
         ),
         (
             "jastrow_best_rj_pin",

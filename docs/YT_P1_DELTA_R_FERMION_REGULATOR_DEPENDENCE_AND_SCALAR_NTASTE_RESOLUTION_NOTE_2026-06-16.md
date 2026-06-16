@@ -73,10 +73,31 @@ honest message is "Δ_R is large and uncontrolled," NOT a new precise value.
 ## 4. Downstream impact
 
 - The runner's `Δ_R = −3.27%` underwrote `m_t(pole) = 172.57 GeV` (vs PDG 2025
-  `172.56 ± 0.31 GeV`). With Δ_R replaced by an uncontrolled O(50%) residual,
-  **the sub-percent m_t agreement is not a controlled prediction.** The clean
-  `y_t(M_Pl)/g_s(M_Pl) = 1/√6` Ward theorem + SM running still places m_t in the
-  right ballpark (~%); the bullseye precision rode on the defective Δ_R.
+  `172.56 ± 0.31 GeV`). **It is not only the central value that fails — the claimed
+  precision fails.** The framework's m_t residual budget (`P1 ≈ 1.92%`, "geometric
+  bound `|Δ_R^total| ≤ 7.41%`" in `YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md`)
+  rests EXPLICITLY on `I_S ∈ [2, 6]` (`Δ_1 = 1.924%…5.772%`, that note's eqs.).
+  The corrected `I_S = 32.4` gives `Δ_1 = +58.9%` — ~10× the `I_S=6` assumption —
+  so the corrected `Δ_R ≈ +50%` **violates the framework's own ≤7.41% bound by
+  ~7–10×.** So m_t is not controlled even at the ≤7% level claimed, let alone
+  sub-percent.
+- **What survives:** the clean exact `y_t(M_Pl)/g_s(M_Pl) = 1/√6` Ward theorem +
+  17-decade SM running (whose top-Yukawa **IR quasi-fixed point** compresses
+  high-scale uncertainty toward an O(1) attractor) still places m_t in the right
+  **ballpark** (~170–200 GeV), robustly. The exact size of the residual m_t
+  uncertainty depends on that RG compression (not computed here), but the
+  **sub-percent bullseye is definitively not earned** and the ~2%/≤7.41%
+  precision is invalidated.
+- **Landscape context (why this downgrade is the correct, not an unusual, call):**
+  NO established framework predicts m_t to controlled sub-percent. In the SM m_t
+  is a **free input** (Yukawa coupling, not predicted). The best BSM "predictions"
+  are ballpark at the few-percent level: multiple-point criticality (Froggatt–
+  Nielsen 1996) `m_t = 173 ± 5 GeV` (~3%); asymptotic safety (Shaposhnikov–
+  Wetterich 2009) uses m_t as an INPUT and outputs `m_H ≈ 126 GeV ± few GeV`; the
+  top-Yukawa IR quasi-fixed point (Hill/Pendleton–Ross) gives an O(200 GeV)
+  attractor, not a sub-% value. So a controlled sub-% m_t would be unprecedented —
+  the framework's clean-route **ballpark** is honestly in the same class as the
+  best existing attempts; only the sub-% bullseye was the over-claim.
 - The narrow "±0.006 grid precision" claimed for `I_SE_fermion` is an artifact of
   holding m² fixed; shifting m² 0.01→0.001 moves it ~33%.
 - `YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md` §2.5 incorrectly
@@ -85,16 +106,19 @@ honest message is "Δ_R is large and uncontrolled," NOT a new precise value.
 
 ## 5. Blast radius (surfaces that cite Δ_R / I_SE_fermion / the buggy runner)
 
-Pending owner-directed re-derivation and lane re-audit (this note does NOT
-re-state these claims):
+Correction banners/caveats have been added to these surfaces (this note does NOT
+re-derive the claims; re-derivation and lane re-audit are owner/lane calls):
 `YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE`, `YT_EW_DELTA_R_RETENTION_ANALYSIS_NOTE`,
 `YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE`, `YT_P1_DELTA_3_BZ_COMPUTATION_NOTE`,
 `YT_P1_BZ_QUADRATURE_2_LOOP_FULL_STAGGERED_PT_NOTE`, `YT_P1_DELTA_R_2_LOOP_EXTENSION_NOTE`,
 `YT_P1_DELTA_R_SM_RGE_CROSSCHECK_NOTE`, `YT_P1_I_S_LATTICE_PT_CITATION_NOTE`,
+`YT_P1_LOOP_GEOMETRIC_BOUND_NOTE` (the ≤7.41% m_t-precision bound — rests on
+`I_S ∈ [2,6]`, violated ~7–10× by the corrected `I_S=32.4`),
+`YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE` (carries P1 as the m_t transport residual),
 `HIGGS_MASS_RETENTION_ANALYSIS_NOTE`, `YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE`,
 `MINIMAL_AXIOMS_2026-04-11` (the m_t/m_H lines), and the publication tables
-`docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md`,
-`docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md`.
+(edit the SOURCE `QUANTITATIVE_SUMMARY_TABLE.md` / `DERIVATION_VALIDATION_MAP.md`;
+the `_EFFECTIVE_STATUS.md` views auto-refresh via the pipeline — do NOT hand-edit them).
 
 ## 6. What this does NOT change
 

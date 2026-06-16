@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "record_prerecord_instrument_kernel_gate_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "s3_time_tensor_build_memo"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
         "koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15",
         "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08",
         "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12",
         "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
         "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
         "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26",
-        "record_prerecord_instrument_kernel_gate_2026-06-06"
+        "record_prerecord_instrument_kernel_gate_2026-06-06",
+        "s3_time_tensor_build_memo"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7d26c20945e5340d7f51d69757cad31dc66464c700a2aa36ad652b850e7483d1",
+      "note_hash": "f31acbb3c86b228c89884ea21f29b063359a21eccfde42973deb4a1b66e9308a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

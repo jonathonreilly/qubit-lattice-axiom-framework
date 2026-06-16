@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 951 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1417 |
+| unaudited | 1416 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
-| ~~audited_renaming~~ | 31 |
+| ~~audited_renaming~~ | 32 |
 | ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -65,8 +65,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 14 |
-| `audited_renaming` | 31 |
-| `unaudited` | 1734 |
+| `audited_renaming` | 32 |
+| `unaudited` | 1733 |
 
 | claim_type | count |
 |---|---:|
@@ -1687,6 +1687,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -11911,6 +11912,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** C3 leaves r free, S3 axis-permutation symmetry forces eigenvalue multiplicities {1,2}, there is no intermediate C3 < G < S3 subgroup, and the 1D singlet and 2D doublet cannot be swapped by a unitary isomorphism.  _(class `A`)_
 - **chain closes:** True — Fourier diagonalization gives Q=(3a^2+6|b|^2)/(3a)^2=(1+2r)/3, and the Frobenius channel split is E+=3a^2 and E_perp=6|b|^2. The S3-invariant form alpha I+beta(J-I) has a twofold eigenvalue degeneracy; Lagrange's theorem gives no strict subgroup between C3 and S3; and dimensions 1 and 2 block a unitary singlet/doublet swap.
 - **rationale:** The load-bearing math is finite matrix and group algebra, with no external comparator, fitted input, or definitional renaming. The no-go is narrow: it closes only the listed unitary C3/S3 symmetry-protection routes and explicitly leaves dynamical, variational, nonunitary, and extra-structure routes open. The BAE campaign citation is contextual rather than load-bearing on this audited scope.
+- **auditor confidence:** high
+
+### `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15`
+
+- **Note:** [`KOIDE_R_IS_THE_WEIGHTING_PRINCIPLE_DIAL_RECORD_DYNAMICS_WEIGHTING_BLIND_BOUNDED_THEOREM_NOTE_2026-06-15.md`](../../docs/KOIDE_R_IS_THE_WEIGHTING_PRINCIPLE_DIAL_RECORD_DYNAMICS_WEIGHTING_BLIND_BOUNDED_THEOREM_NOTE_2026-06-15.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the supplied two-sector C3 record algebra, the mapping from declared singlet/doublet weights to the advertised r and Q values, and conservation of those block weights under the two-sector record map.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-031352-ec91acdd09-koide_r_is_the_weighting_pri`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The registered Koide-block parameter is identified with the sector-weight ratio `r = w_doublet/(2 w_singlet)`.  _(class `F`)_
+- **chain closes:** False — The projector identities, rank counts, Q arithmetic, density-state block traces, and D_S block-weight conservation check out as finite-dimensional algebra. The missing step is an independent bridge deriving the Koide-block r readout from sector weights rather than identifying r with that ratio by stipulation.
+- **rationale:** Issue: the finite-dimensional projector algebra and D_S block-weight conservation are correct, but the theorem’s load-bearing move identifies the already-named Koide r with the sector-weight ratio. Why this blocks: the runner defines `r_from_weights` as `w_doublet/(2*w_singlet)` and then verifies arithmetic, so it does not derive the r/readout bridge from the cited authorities. Repair target: supply a retained bridge deriving the Koide-block r from the sector-weighted density/readout, or present this note explicitly as a definition of the weighting dial. Claim boundary until fixed: dimension and equal-sector weights map to the advertised r,Q values under the stipulated formula, and D_S preserves those weights.
 - **auditor confidence:** high
 
 ### `koide_readout_channel_map_note_2026-05-31`

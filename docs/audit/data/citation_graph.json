@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "s3_time_tensor_build_memo"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "s3_time_tensor_build_memo",
         "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
         "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
         "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
         "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
         "stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11",
         "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
-        "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
+        "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
+        "universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2bcc6769d70e36a19651530f3b1e39796fa696234906b3082f1d5139b8fefe92",
+      "note_hash": "935afe902bbf8636867dd362e3e2303b4bb5669c2eb7caf08f92278f187df52e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

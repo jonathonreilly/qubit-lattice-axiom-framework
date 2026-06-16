@@ -1,0 +1,22 @@
+loop_slug: hierarchy-alpha-t1-scope-20260616
+goal: "Repair the hierarchy alpha-LM dim-trans conditional by narrowing the source packet to the exact T1 notation equivalence."
+target_status: exact-support
+origin_main: "104d31220 audit: reconstructed h quasilocal from analytic dispersion mi clean"
+branch: physics-loop/hierarchy-alpha-t1-scope-20260616
+claim_id: hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16
+audit_blocker: "The algebraic identity closes, but the broader substrate/status boundary consumed open or bounded surfaces. Cheapest repair: scope strictly to T1 algebraic notation equivalence."
+active_route: source_scope_narrowing
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING_BOUNDED_NOTATION_EQUIVALENCE_NOTE_2026-05-16.md
+  - scripts/frontier_hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence.py
+  - logs/runner-cache/frontier_hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence.txt
+  - .claude/science/physics-loops/hierarchy-alpha-t1-scope-20260616/
+open_imports:
+  - "No substrate derivation of alpha_LM."
+  - "No substrate derivation of N=16."
+  - "No plaquette, taste-count, staggered-gate, or electroweak-readout closure."
+  - "No physical hierarchy mechanism."
+next_exact_action: "Reviewer can extract the exact T1 notation-equivalence repair and queue the row for independent re-audit."

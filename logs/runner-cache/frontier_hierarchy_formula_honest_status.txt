@@ -1,15 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_formula_honest_status.py
-runner_sha256: 74aa368435f792a891f30e7a8cb63a89cd46dba3bfc686f5a3d0922d4799154e
+runner_sha256: 9bcacb75a5c9d8ead19099f28503e145c73cffcf49293173684e2bd5d40ac992
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
  frontier_hierarchy_formula_honest_status.py
- (2026-06-15 boundary repair: T1 structural support from local
-  algebra; D1/C1 appendices over open B3/B4/B5 gates;
+ (2026-06-16 B3 split: T1 structural support from local
+  algebra; B3a kinetic substrate sourced to the primitive;
+  D1/C1 appendices over open B3b/B4/B5 gates;
   comparators fenced)
  Parent note: docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
 ==============================================================================
@@ -40,8 +41,10 @@ status: ok
   [PASS][B] naive 2^d species-count parent theorem on disk with the exact-count claim
   [PASS][B] joint fourth-root theorem on disk: (7/8)^(1/4) closed form and integer-d uniqueness at s = 4
   [PASS][B] regulator-dependence no-go on disk: identification is regulator-dependent (Wilson: 1, twisted-mass: 2, staggered: 4, domain-wall: 1, overlap: 1)
+  [PASS][B] B3a kinetic substrate is sourced to registered kinetic_isotropy_primitive with c_t = c_s / OS0 hypercubic-form scope only
+  [PASS][B] parent note splits B3a kinetic substrate from B3b regulator/species realization and keeps B4 open
   [PASS][B] staggered-Dirac realization gate on disk and referenced as backticked context (no markdown-link edge)
-  [PASS][B] all markdown-linked note citations resolve on disk  (links = ['HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md', 'HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md', 'NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md', 'PLAQUETTE_SELF_CONSISTENCY_NOTE.md'])
+  [PASS][B] all markdown-linked note citations resolve on disk  (links = ['HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md', 'HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md', 'KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md', 'NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md', 'PLAQUETTE_SELF_CONSISTENCY_NOTE.md'])
   [PASS][B] parent-note hygiene: required declarations present and forbidden overclaim tokens absent  (missing = [], hit = [])
   [PASS][B] runner self-scan: PDG VEV literal appears exactly once in the runner source (the class-D constant definition)  (occurrences = 1)
 
@@ -50,8 +53,8 @@ status: ok
   [PASS][D] comparator framing: deviation < B1 window (0.0337 %) AND deviation > B2 window (0.0041 %) — sub-resolution in the plaquette license, attributable in the Planck anchor  (|dev| = 2.551e-04, B1 = 3.370e-04, B2 = 4.095e-05)
 
 ==============================================================================
- Breakdown: A=9 B=9 C=7 D=2
- TOTAL: PASS=27 FAIL=0
+ Breakdown: A=9 B=11 C=7 D=2
+ TOTAL: PASS=29 FAIL=0
 ==============================================================================
 
 ----- stderr -----

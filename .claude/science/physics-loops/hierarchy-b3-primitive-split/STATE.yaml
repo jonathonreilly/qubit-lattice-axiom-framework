@@ -1,0 +1,26 @@
+loop: hierarchy-b3-primitive-split
+date: 2026-06-16
+branch: physics-loop/hierarchy-b3-primitive-split-20260616
+base: origin/main
+goal: "Repair the hierarchy audited-conditional B3 blocker by splitting the kinetic substrate supplied by kinetic_isotropy_primitive from the still-open regulator/species realization gate."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Hierarchy formula closure still requires B3b regulator/species realization, B4 coupling-power transport, and B5 if the C1 readout is upgraded to an EW VEV claim."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: hierarchy_formula_honest_status_note_2026-05-10
+audit_blocker: "missing_bridge_theorem: cheapest repair is a retained bridge deriving the B4 alpha_LM^16 coupling-power transport and a retained B3 regulator/substrate selection; B5 is only required if upgrading C1 into an EW VEV claim."
+files_touched:
+  - docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
+  - scripts/frontier_hierarchy_formula_honest_status.py
+  - logs/runner-cache/frontier_hierarchy_formula_honest_status.txt
+open_imports:
+  - B3b regulator/species realization for the hierarchy exponent
+  - B4 attachment-observable identification for alpha_LM^16 transport
+  - B5 observable identification if C1 is upgraded to an EW VEV claim
+review_findings: []
+pr_status: pending
+next_exact_action: "Run checks, commit, push, open PR, and ask review/audit to inspect the B3a primitive split separately from the remaining B3b/B4 gates."
+stop_condition: "Coherent source repair PR opened; continue scanning remaining conditionals if requested."

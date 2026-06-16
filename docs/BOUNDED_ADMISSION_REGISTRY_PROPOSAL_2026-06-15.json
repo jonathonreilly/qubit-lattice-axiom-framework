@@ -165,7 +165,8 @@
       "retirability": "open_target",
       "leverage": {
         "rows_bound_estimate": 238,
-        "reviewed_rows_bound": 254
+        "reviewed_rows_bound": 254,
+        "genuine_shell_rows": 3
       },
       "bound_row_ids": [
         "one_parameter_reduced_shell_law_note",
@@ -177,7 +178,7 @@
         "O_h helper",
         "frontier helper module"
       ],
-      "classification_status": "first_pass (high reproof leverage) | REVIEWED 2026-06-15: 254 rows (top cluster). Its science core (shell-localization identity) is DERIVED in PR #4123; needs a shell-vs-GR split -- the shell-bounded subset retargets to #4123 (retarget PR in flight), the GR/tensor + Maradudin-lattice-Green rows stay bounded."
+      "classification_status": "first_pass (high reproof leverage) | REVIEWED 2026-06-15: 254 rows (top cluster). Its science core (shell-localization identity) is DERIVED in PR #4123; needs a shell-vs-GR split -- the shell-bounded subset retargets to #4123 (retarget PR in flight), the GR/tensor + Maradudin-lattice-Green rows stay bounded. || CORRECTION 2026-06-16: the dedup count 254 is OVER-ASSIGNED. A conservative shell-vs-GR classification found only 3 rows genuinely rest on the shell-helper surface (retargeted to #4123 in PR #4125 for re-audit); the other 251 are 35 GR-tensor + 8 Maradudin-lattice-Green + 208 diverse-other, belonging in new atoms / the diverse tail. Genuine shell-helper count = 3, NOT 254."
     },
     {
       "admission_id": "color_su3_carrier",
@@ -408,5 +409,6 @@
   ],
   "_bound_row_ids_map": "docs/BOUNDED_ADMISSION_BOUND_ROW_IDS_MAP_2026-06-16.json -- per-atom bound_row_ids from the careful line-by-line review of all 921 rows (606 canonical + the multi-row MISC groups).",
   "_diverse_tail": "The careful review found ~315 rows do NOT map to a canonical atom; ~268 are effectively-unique one-offs (gravity probes, DM searches, network/teleportation experiments, GR-lattice notes) bounded on their own specific residuals. The bounded register does NOT cleanly reduce to a few atoms -- a third of it is a diverse long tail that will NOT cluster-drain. (Corrects the 67->11 minimize optimism.)",
-  "_review_note": "Per-atom leverage REVIEWED 2026-06-15 by the careful line-by-line pass (real counts), replacing the keyword-scan estimates. Notable: imported_literature_series collapsed 369->19 (most import rows have a specific physics atom); helper_frontier 254 is the top cluster."
+  "_review_note": "Per-atom leverage REVIEWED 2026-06-15 by the careful line-by-line pass (real counts), replacing the keyword-scan estimates. Notable: imported_literature_series collapsed 369->19 (most import rows have a specific physics atom); helper_frontier 254 is the top cluster.",
+  "_dedup_count_caveat": "IMPORTANT: the per-atom reviewed counts OVER-ASSIGN to the big buckets. The dedup agents tended to dump diverse rows into the largest atom: helper_frontier got 254 but a conservative shell-classification found only 3 genuinely rest on its surface (35 GR-tensor + 8 Maradudin + 208 unrelated). Treat the big-cluster counts as UPPER BOUNDS pending per-cluster shell-classification-style refinement (as done for helper_frontier). Consequence: the diverse unclustered tail is substantially LARGER than first recorded, and candidate new atoms gr_tensor_completion (~35) and lattice_green_asymptotic_maradudin (~8) are warranted."
 }

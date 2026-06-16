@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
         "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12",
         "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08",
         "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
         "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
         "record_unbounded_finite_additivity_schema_2026-06-06",
-        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
+        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
+        "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4a6a0fcadf50b83be591c8f4ffe4e3d0ab07d10e74674e03d88a0b8a77ad5a59",
+      "note_hash": "07b1b49b3e4b41ca687187e4dc59d8d70786fcea896bd94c74231f7601d5dfa1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

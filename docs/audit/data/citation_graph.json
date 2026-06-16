@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08",
         "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
         "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
         "koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15",
         "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08",
         "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12",
         "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
-        "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27"
+        "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
+        "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0a73f33900b37cf9fa4e55a884c2adc435829c2da1776805e9199003637ba42b",
+      "note_hash": "83e57b3296e130b8599ce187890ccd62ab117398a31da853a42262eb12d7cb42",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

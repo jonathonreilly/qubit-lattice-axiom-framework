@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 946 |
+| **retained_bounded** | 947 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1433 |
+| unaudited | 1432 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1395 |
+| `audited_clean` | 1396 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1750 |
+| `unaudited` | 1749 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 902 |
-| `leaf` | 1368 |
+| `medium` | 904 |
+| `leaf` | 1366 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1009 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1120 | 47.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 890 | 45.30 | `unaudited` | unaudited |
@@ -113,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 903 | 42.32 | `unaudited` | unaudited |
 | 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 987 | 41.45 | `audited_clean` | **retained_bounded** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 876 | 39.78 | `unaudited` | unaudited |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1363 | 39.41 | `audited_clean` | **retained** |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 38.66 | `unaudited` | unaudited |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 966 | 38.42 | `audited_clean` | **retained_bounded** |
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
@@ -1416,6 +1416,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_conformal_mode_sign_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -20644,6 +20645,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner-defined metric-weighted 10x10 finite-BZ matrix at N=6 has exactly one eigenvalue below -1e-4, ev=-0.0099, whose eigenvector has trace/conformal overlap 0.49 and tested yz-TT overlap 0.000.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the staggered finite-BZ operator, stress vertices, BZ sums, metric weights, and eigenanalysis rather than printing fixed expected constants. An independent re-evaluation of the displayed finite definitions reproduces the quoted numerical pattern: trace probe 0.029517, N=6 lowest eigenvalue -0.009936 with one negative mode, N=4 lowest eigenvalue -0.049580, and a positive runner-defined transverse block.
 - **rationale:** The audited claim is explicitly finite and runner-defined, not a continuum GR, Ward-identity, two-DOF, scalar-tensor, or cosmological-constant theorem. The load-bearing computation is class C: it instantiates the finite matrix from the supplied operator algebra and produces numbers not imported from another note or external calibration. The cited authorities are retained-grade context and are not used to smuggle in any stronger open identification. Within the bounded finite scope, the theorem follows from the supplied runner and independently checked arithmetic.
+- **auditor confidence:** high
+
+### `universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_CUBIC_DIFFEO_WARD_FINITE_LATTICE_SCALING_SUPPORT_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_FINITE_LATTICE_SCALING_SUPPORT_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-lattice scaling contrast for the supplied conserved coupling and sqrt(g) measure in the stated cubic diffeomorphism-Ward diagnostic, limited to the runner's L=6,8,10 setup and naive C1 control.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-021156-ac4309af58-universal_gr_cubic_diffeo_wa`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the supplied conserved D(P_eff)+sqrt(g) coupling, the normalized cubic Ward residual decreases over L=6,8,10 while the naive C1 control does not show that decreasing trend and the naive/conserved gap widens.  _(class `C`)_
+- **chain closes:** True — The cited upstream authorities are retained_bounded and supply the conserved-operator context and cubic-Ward boundary. The runner source constructs the finite lattice operators, determinant derivative, cross-term residual, and naive control rather than merely printing constants; the reported k powers and naive/conserved ratios also check arithmetically from the quoted numbers.
+- **rationale:** The audited claim is narrowly finite-lattice and does not assert the continuum limit, Einstein-Hilbert normalization, G_Newton, uniqueness, or all-order diffeomorphism invariance. The runner implements the displayed D[h] coefficients, sqrt(g)/densitized-inverse-vielbein structure, lattice diffeomorphism variation, and a2*a3 cross-term extraction, then computes new finite-matrix numbers not imported from another note or external comparator. Independent arithmetic checks confirm the quoted k=2pi/L values, fitted powers, monotone conserved trend, naive flat/growing trend, and widening gap.
 - **auditor confidence:** high
 
 ### `universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08`

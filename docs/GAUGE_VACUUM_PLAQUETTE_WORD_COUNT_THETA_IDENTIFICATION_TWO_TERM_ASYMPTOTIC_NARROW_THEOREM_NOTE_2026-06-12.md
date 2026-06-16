@@ -317,8 +317,12 @@ TOTAL: PASS=23, FAIL=0
 Regenerate the cache:
 
 ```bash
-python3 -c "import sys; sys.path.insert(0,'scripts'); from runner_cache import execute_runner, write_cache, runner_timeout_for; rp='scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py'; res=execute_runner(rp, runner_timeout_for(rp)); print(write_cache(rp, res))"
+PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py
 ```
+
+The expected scorecard was synced on 2026-06-16 to the paired runner/cache.
+This does not close the all-`k` finite-packet tail-remainder theorem; that
+residual remains listed below.
 
 ## Named Residuals
 

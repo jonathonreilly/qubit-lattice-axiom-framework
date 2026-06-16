@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_observable_principle_from_axiom.py
-runner_sha256: 74d6b303e1d89edcf23058cd123384d9443e13b57689d5fa7e89119d867645db
+runner_sha256: ed60d623198785d933063a0b4db2907738061425e84efe5bb40eb0b9607e455a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 Hierarchy observable principle with declared finite readout boundary
@@ -87,7 +87,7 @@ PART 3: UNIFORM SCALAR SOURCE GIVES THE EXACT HIERARCHY GENERATOR
   [PASS] uniform-source log|det| generator matches the exact Matsubara formula (u0 = 0.9 and 1.17)
          max absolute generator error = 2.64e-14
   [PASS] spec(D) equals the exact multiset {+-i u0 sqrt(3 + sin^2 omega)} x4 per mode
-         max eigenvalue multiset error = 1.51e-14
+         max eigenvalue multiset error = 1.24e-14
   [PASS] pair-product determinant identity: log|det(D+jI)| = 4 sum_w log(j^2 + u0^2(3+sin^2 w))
          max pair-product identity error = 2.13e-14
   [PASS] the scalar generator is exactly bosonic/sign-blind: W(j) = W(-j)
@@ -196,7 +196,14 @@ PART 8: DET-POSITIVITY LEMMA FACTS L1/L2 RECOMPUTED ON THE RUNNER BLOCKS
   readout-identification bridge premise (the Boundary, T1-d).
 
 ==============================================================================
-SCORECARD: 37 pass, 0 fail out of 37
+PART 9: T1-D READOUT-INDEPENDENCE GUARDRAIL
+==============================================================================
+  [PASS] parent cites the T1-d determinant-readout independence no-go
+  [PASS] parent still declares T1-d as a Boundary, not an axiom-derived theorem
+  [PASS] companion no-go states the determinant-only quotient is not Record-derived
+
+==============================================================================
+SCORECARD: 40 pass, 0 fail out of 40
 ==============================================================================
 
 ----- stderr -----

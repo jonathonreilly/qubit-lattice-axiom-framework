@@ -1,0 +1,28 @@
+loop_slug: observable-record-readout-bridge-20260616
+branch: physics-loop/observable-record-readout-bridge-20260616
+base: origin/main@30e1bf5a0
+target_claim_id: observable_principle_from_axiom_note
+target_status: no-go
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+reachability_to_target: prunes
+active_route: T1-d determinant-readout independence no-go
+summary: >
+  Exact source-side no-go showing that Record additivity plus determinant
+  block factorization does not derive the determinant-only readout quotient
+  or the source-blocks-to-records clause in T1-d.
+files_touched:
+  - docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md
+  - docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  - scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py
+  - scripts/frontier_hierarchy_observable_principle_from_axiom.py
+  - logs/runner-cache/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.txt
+  - logs/runner-cache/frontier_hierarchy_observable_principle_from_axiom.txt
+open_imports:
+  - T1-d remains an explicit bridge premise for positive observable-principle use.
+  - A future positive route would need an approved readout-context theorem or primitive.
+review_disposition: self_review_pass_independent_reviewer_pending
+pr_status: opened
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4134
+next_exact_action: reviewer/auditor review of PR #4134; then continue to next audit-unlock target
+stop_condition: PR #4134 opened

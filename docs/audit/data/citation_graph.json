@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
     },
     {
@@ -98966,11 +98962,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08",
         "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ca0d571717ff08c13d20df47916d009732d820a13b0296e0722e61c8bede8e8a",
+      "note_hash": "ffb4d626e260f5ceb545241ebceb6f1320c59eb4f118cbdf69d52d029c0ebb9a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113750,8 +113745,8 @@
       "open_gate": 170,
       "positive_theorem": 612
     },
-    "edge_count": 12969,
-    "leaf_count": 1111,
+    "edge_count": 12968,
+    "leaf_count": 1112,
     "node_count": 3453,
     "root_count": 1066,
     "runners_with_path": 3039

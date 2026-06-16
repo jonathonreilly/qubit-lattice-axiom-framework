@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 959 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1401 |
+| unaudited | 1400 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1410 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1718 |
+| `unaudited` | 1717 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 894 |
-| `leaf` | 1376 |
+| `medium` | 890 |
+| `leaf` | 1380 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1397 | 60.95 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1120 | 47.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 890 | 45.30 | `unaudited` | unaudited |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 814 | 43.67 | `audited_clean` | **retained_bounded** |
@@ -118,7 +118,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 966 | 38.42 | `audited_clean` | **retained_bounded** |
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 739 | 37.03 | `unaudited` | unaudited |
-| 19 | `cpt_exact_note` | positive_theorem | critical | 1077 | 36.57 | `audited_clean` | **retained** |
+| 19 | `cpt_exact_note` | positive_theorem | critical | 1076 | 36.57 | `audited_clean` | **retained** |
 | 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 893 | 35.80 | `audited_conditional` | ~~audited_conditional~~ |
 | 21 | `three_generation_structure_note` | bounded_theorem | critical | 1087 | 35.59 | `audited_clean` | **retained_bounded** |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 736 | 35.53 | `unaudited` | unaudited |
@@ -1598,6 +1598,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -21468,6 +21469,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator results are explicitly negative.  _(class `C`)_
 - **chain closes:** True — The primary runner actually constructs the declared grown-DAG families, computes the five battery conditions, fits the two-property rule, runs LOO, and evaluates the hard-coded held-out predictions; its stdout matches the note's load-bearing in-family numbers. The broader universal/simple-classifier-exhaustion theorem is not audited as part of this narrowed scope and is explicitly disclaimed or bounded by the cited authorities.
 - **rationale:** The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim.
+- **auditor confidence:** high
+
+### `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional on the supplied 3x3 circulant readout context and explicit P-dep, Record-additive orbit-constant scalar readouts factor through the orbit-resolved unordered mass multiset M(delta), which is invariant under delta -> -delta.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-041725-40fb69bb0c-unordered_mass_multiset_regi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By P-dep, each contribution has the form r_k=f(k,lambda_k(delta)); Orbit plus lambda_{sigma(k)}(-delta)=lambda_k(delta) forces f(k,x)=f(sigma(k),x), so R(total)=sum_k f([k],lambda_k(delta)) factors through M(delta).  _(class `A`)_
+- **chain closes:** True — Within the stated conditional scope, the finite algebra closes: manual eigenvalue checks give sigma(k)=-k mod 3, lambda_{sigma(k)}(-delta)=lambda_k(delta), e3=a^3-3aB^2+2B^3 cos(3 delta), and Newton-Girard reconstruction plus the singlet readout recovers M(delta). The result does not close as an unconditional Record consequence because P-dep is not derived or approved.
+- **rationale:** Issue: B1's factorization depends on explicit P-dep, which is not derived from Record and is not an approved primitive. Why this blocks: the finite algebra and runner verify orbit covariance, sign-erasure, and Newton-Girard exactness, but without P-dep additive orbit-even readouts using unregistered supplied-context data are not excluded. Repair target: prove P-dep from retained readout structure or register and audit it as an allowed premise. Claim boundary until fixed: the theorem is valid only conditional on supplied context plus P-dep, with no registry reduction or |delta| value.
+- **open / conditional deps cited:**
+  - `P-dep (explicit conditional premise; no source note path supplied)`
 - **auditor confidence:** high
 
 ### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`

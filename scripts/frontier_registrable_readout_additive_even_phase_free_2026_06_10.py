@@ -1,18 +1,23 @@
 #!/usr/bin/env python3
 """Shared-core registrability theorem: homomorphic determinant phase + K/CPT-even => phase-free.
 
-This runner DERIVES (does not assert) the registrable-readout structure that the
-two Tier-A registrability bridges ask for:
+This runner checks the conditional algebra inside a supplied
+Record-registrable determinant-character / unordered-multiset readout context.
+It does not derive the physical strong-CP mass readout or AC_phi_lambda species
+readout identification.
 
-  (a) the strong-CP determinant-readout bridge -- show the physical
-      arg det(M_u M_d) contribution is exhausted by the determinant-class
-      registrable readout (phase character k = 0), threading the hostile guard
-      "K/CPT evenness alone is not phase erasure" (cos phase counterexamples);
+The two Tier-A registrability bridges can use this only after a separate
+physical-readout theorem supplies the missing identification:
 
-  (b-i) the AC_phi_lambda unordered-multiset registrability bridge -- show the
+  (a) the strong-CP determinant-readout algebra -- show that, on the supplied
+      determinant-character/log-character surface, the homomorphic phase
+      character has k = 0, threading the hostile guard "K/CPT evenness alone is
+      not phase erasure" (cos phase counterexamples);
+
+  (b-i) the AC_phi_lambda unordered-multiset algebra -- show the supplied
         delta -> -delta sign flip is the K/CPT conjugation, so the registrable
-        species surface is the unordered eigenvalue multiset (symmetric
-        functions), reducing the admission to the magnitude-only atom |delta|.
+        unordered-multiset surface carries the symmetric functions while the
+        orientation sign is not scalar orbit content.
 
 Record axiom boundary used:
   * finite scalar additivity I over finite pairwise-disjoint record collections,
@@ -49,19 +54,20 @@ The theorem chain (each leg is checked, several symbolically):
   T7  the surviving registrable det-class datum is modulus-type: log|z| is both
       homomorphic-additive and K-even, i.e. exactly the phase-free (k = 0)
       character.
-  T8  strong-CP application: arg det(M_u M_d) = arg det M_u + arg det M_d is the
-      additive sector-phase sum; by T5 its registrable content is zero. The
-      multiplicative determinant-character class is exhaustive for the
-      registrable phase readout.
-  T9  AC_phi_lambda application: conj(H(delta)) = H(-delta); the elementary
+  T8  strong-CP supplied-surface algebra: arg det(M_u M_d) = arg det M_u +
+      arg det M_d is the additive sector-phase sum; by T5 its homomorphic
+      supplied-surface content is zero. This is not a physical readout
+      identification.
+  T9  AC_phi_lambda supplied-surface algebra: conj(H(delta)) = H(-delta); the elementary
       symmetric polynomials e1,e2,e3 are EVEN in delta (registrable, unordered
       multiset); the orientation-odd line ~ sin(3 delta) is not scalar on the
-      K/CPT orbit. => unordered-multiset registrability; admission -> |delta|
-      atom.
+      K/CPT orbit.
   T10 boundary witnesses (what the theorem does NOT close): broader
       Record-additive K-even phase readouts such as sum cos remain outside this
       theorem; the |delta| MAGNITUDE and single-summand readout still need
       R-eta + R2; strong-CP premise 1 is separate.
+  T11 source-boundary guard: the paired source note must retain the post-audit
+      firewall language and must not claim bridge discharge/closure.
 
 It does not read or write the Tier-A registry, audit ledger, queue, or any
 generated audit surface; it sets no audit status.
@@ -69,12 +75,18 @@ generated audit surface; it sets no audit status.
 from __future__ import annotations
 
 import itertools
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
 
 PASS = 0
 FAIL = 0
+NOTE_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "docs"
+    / "REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
+)
 
 
 def check(label: str, ok: bool, detail: str = "") -> bool:
@@ -96,7 +108,7 @@ def section(title: str) -> None:
 
 def main() -> int:
     print("=" * 88)
-    print("SHARED-CORE REGISTRABILITY THEOREM: homomorphic determinant phase + K/CPT-even => phase-free")
+    print("SHARED-CORE REGISTRABILITY THEOREM: supplied homomorphic phase + K/CPT-even => phase-free")
     print("=" * 88)
 
     # ------------------------------------------------------------------
@@ -228,10 +240,10 @@ def main() -> int:
     even_logmod = sp.simplify(sp.log(sp.Abs(sp.conjugate(rr * sp.exp(sp.I * th)))) - sp.log(rr))
     check("log|z| K-even: log|conj z| - log|z| = 0", sp.simplify(even_logmod) == 0)
     check("=> determinant-class phase index is k=0; modulus/log-modulus data survives",
-          True, detail="multiplicative phase character k=0 is exhaustive on the homomorphism surface")
+          True, detail="k=0 is the surviving phase character on the supplied homomorphism surface")
 
     # ------------------------------------------------------------------
-    section("T8 - strong-CP application: arg det(M_u M_d) registrable content is zero")
+    section("T8 - strong-CP supplied-surface algebra: arg det(M_u M_d) homomorphic content is zero")
     # arg det(M_u M_d) = arg det M_u + arg det M_d -> additive sector-phase sum.
     Mu = np.diag([rng.uniform(0.3, 4) * np.exp(1j * rng.uniform(-np.pi, np.pi)) for _ in range(3)])
     Md = np.diag([rng.uniform(0.3, 4) * np.exp(1j * rng.uniform(-np.pi, np.pi)) for _ in range(3)])
@@ -240,11 +252,11 @@ def main() -> int:
     wrap2 = ((lhs - rhs + np.pi) % (2 * np.pi)) - np.pi
     check("arg det(M_u M_d) = arg det M_u + arg det M_d (additive, mod 2pi)", abs(wrap2) < 1e-9,
           detail=f"residual mod 2pi = {wrap2:.2e}")
-    check("=> by T5 the homomorphic registrable arg det(M_u M_d) = 0",
-          True, detail="discharges the mass-orientation PHASE content within the homomorphism readout")
+    check("=> by T5 the supplied homomorphic arg det(M_u M_d) content = 0",
+          True, detail="conditional algebra only; physical mass-readout identification remains open")
 
     # ------------------------------------------------------------------
-    section("T9 - AC_phi_lambda application: conj(H)=H(-delta); symmetric=even, sin-line=odd")
+    section("T9 - AC_phi_lambda supplied-surface algebra: conj(H)=H(-delta); symmetric=even, sin-line=odd")
     delta, a, B = sp.symbols("delta a B", real=True)
     H = sp.Matrix([
         [a, B * sp.exp(sp.I * delta), B * sp.exp(-sp.I * delta)],
@@ -270,8 +282,8 @@ def main() -> int:
     odd_line = sp.sin(3 * delta)
     check("orientation-odd line sin(3 delta) is K-ODD (flips under delta->-delta)",
           sp.simplify(odd_line.subs(delta, -delta) + odd_line) == 0)
-    check("orientation sign is not scalar K/CPT orbit content; unordered multiset survives",
-          True, detail="Consequence B uses Orbit directly, not Record=>phase-group additivity")
+    check("orientation sign is not scalar K/CPT orbit content on the supplied orbit surface",
+          True, detail="conditional unordered-multiset algebra; physical species readout identification remains open")
 
     # ------------------------------------------------------------------
     section("T10 - boundary witnesses (what the theorem does NOT close)")
@@ -285,6 +297,26 @@ def main() -> int:
           True, detail="theorem removes phase freedom WITHIN that constrained class")
     check("standing homomorphism premise unchanged: determinant phase readout is in log-character class",
           True, detail="not derived from Record; no new axiom or audit status is asserted")
+
+    # ------------------------------------------------------------------
+    section("T11 - post-audit source-boundary guard")
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    required_phrases = [
+        "post-audit source firewall removes bridge-discharge language",
+        "does **not** discharge, close, or exhaust the physical",
+        "This is a conditional algebraic implication, not a bridge discharge.",
+        "physical-readout bridge would need; it does not by itself reduce",
+    ]
+    for phrase in required_phrases:
+        check(f"source note carries boundary phrase: {phrase}", phrase in note_text)
+    banned_phrases = [
+        "This **discharges the determinant-phase content",
+        "This **closes the unordered-multiset",
+        "EXHAUSTS the registrable arg det(M_u M_d)",
+        "admission -> |delta| atom",
+    ]
+    for phrase in banned_phrases:
+        check(f"source/runner closure phrase absent: {phrase}", phrase not in note_text)
 
     # ------------------------------------------------------------------
     print("\n" + "=" * 88)

@@ -13,16 +13,29 @@
 
 - **Do NOT cite warning:** Do NOT cite the numerical results, tables, or threshold values in the original content below as live framework claims. The runners referenced in this note have been superseded or are no longer reproducible at the time of audit. If a future investigation revisits this physics, treat it as starting from scratch rather than as continuation of a 'closed no-go'.
 
-## Artifact chain
+## Boundary clarification (2026-06-16)
 
-- [`scripts/distance_law_wide_continuum.py`](../scripts/distance_law_wide_continuum.py)
+This archived packet is historical / diagnostic and retired as evidence. It is
+not a live authority for a far-field `alpha ~ -1.5` steepening law, a
+near-Newton grown-geometry `alpha = -0.96` closure, a universal distance-law
+claim, or any reconciliation between those incompatible old readings.
+
+Current distance-law evidence lives in separate runner-backed notes, including
+[`docs/DISTANCE_LAW_3D_64_CLOSURE_NOTE_2026-04-11.md`](../../docs/DISTANCE_LAW_3D_64_CLOSURE_NOTE_2026-04-11.md),
+[`docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`](../../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md),
+and the Gate B grown-distance notes where relevant. This archived note does not
+add support to those rows and must not be listed as live distance-law evidence.
+
+## Historical artifact chain (retracted)
+
+- [`scripts/distance_law_wide_continuum.py`](../../scripts/distance_law_wide_continuum.py)
 
 ## Question
 
 What is the distance exponent for gravitational deflection in the 3D
 path-sum model?
 
-## Results
+## Historical results (retracted)
 
 ### W=20 (initial test)
 
@@ -53,7 +66,7 @@ was a near-field artifact (sources at b=8-16 are only 3-6 beam sigmas away).
 
 Still steepening at b=35. The asymptotic value may be -2.0.
 
-## Physical interpretation
+## Historical physical interpretation (retracted)
 
 The Newtonian prediction for a point particle deflected by 1/r potential is
 delta ~ 1/b (alpha = -1). Our model gives alpha ~ -1.5, steeper.
@@ -66,7 +79,7 @@ The finite beam length (L=30) also contributes: the truncated integral over
 the source region gives a correction factor that steepens the effective
 distance law at large b.
 
-## What this means
+## Historical interpretation boundary (retracted)
 
 The model does NOT reproduce the Newtonian 1/b distance law. The distance
 exponent is a genuine prediction of the 1/L^(d-1) kernel choice: steeper
@@ -77,7 +90,7 @@ For publication: this is analogous to extra-dimensional gravity models
 due to the extra-dimensional volume factor. Here, the "extra" steepening
 comes from the kernel, not from extra dimensions.
 
-## Grown geometry result (best measurement)
+## Historical grown-geometry result (retracted)
 
 On grown geometry (NL=40, W=12, 3 seeds, source centered):
 - alpha(all b, 5-10) = **-0.96** — nearest to Newtonian of any test
@@ -85,11 +98,11 @@ On grown geometry (NL=40, W=12, 3 seeds, source centered):
   that steepen the exponent on regular lattices (-1.1 to -1.2)
 - All 5 impact parameters TOWARD, 3 seeds each
 
-### Artifact chain
+### Historical grown-geometry artifact chain (retracted)
 - [`scripts/distance_law_grown_geometry.py`](../scripts/distance_law_grown_geometry.py)
 - [`logs/2026-04-06-distance-law-grown-geometry.txt`](../logs/2026-04-06-distance-law-grown-geometry.txt)
 
-## Honest conclusion
+## Historical conclusion (retracted)
 
 The model produces a distance law of approximately 1/b with calculable
 wave-optics corrections. The grown geometry gives the cleanest measurement

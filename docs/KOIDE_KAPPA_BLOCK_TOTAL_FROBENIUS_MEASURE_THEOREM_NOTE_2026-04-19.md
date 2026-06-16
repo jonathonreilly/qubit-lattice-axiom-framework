@@ -2,28 +2,29 @@
 
 **Date:** 2026-04-19
 **Lane:** Charged-lepton Koide / MRU
-**Status:** proposed_retained positive theorem on the operator-side 1:1
-real-isotype measure. The block-total Frobenius-squared functional
+**Status:** bounded algebraic support; independent audit owns any effective
+status. The block-total Frobenius-squared functional
 `E_I := || pi_I(H) ||_F^2` on `Herm_circ(d)` assigns one scalar slot per
 real isotype independent of block real dimension. At `d = 3` this
 realizes the 1:1 measure named by the MRU weight-class obstruction
 theorem; `d = 3` is the unique dimension where the real-irrep
-multiplicity pattern is `(1 trivial + 1 doublet)`. Independent second
-closure route for operator-side `kappa = 2`.
+multiplicity pattern is `(1 trivial + 1 doublet)`. This source note does
+not derive the physical scalar-lane `SO(2)` quotient or select the
+canonical extremal principle.
 
-**Measure choice resolved (no residue).** The prior "canonical-convention
-caveat" on block-total vs determinant-carrier is now discharged by the
-**MRU real-isotype quotient closure** (see
+**2026-06-16 post-audit boundary repair.** The local Frobenius algebra and
+`d = 3` uniqueness calculation remain executable support. The source no
+longer claims that the measure choice is resolved or that the scalar
+charged-lepton lane has been shown to quotient the internal `SO(2)` frame.
+The companion notes
 `KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`,
-`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`): the
-scalar charged-lepton lane quotients the internal `SO(2)` frame of the
-real doublet to a single scalar radius `rho_perp^2 = E_perp`, so the
-physical carrier is two-slot `(rho_+, rho_perp)`, not three-slot. On the
-reduced carrier, `det diag(rho_+, rho_perp) = rho_+ rho_perp` is automatically
-equal-weight, so the block-total form and the determinant carrier **agree**
-once the physical reduction is applied. The MRU law follows as the
-equal-weight extremum on the quotient carrier, which is the geometrically
-unique carrier for the scalar lane — there is no remaining choice.
+`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`) are
+bounded formal/context authorities, not a retained physical quotient bridge.
+If a later independently audited theorem supplies that scalar-lane quotient,
+then this block-total algebra gives the equal-weight reduced-carrier route to
+`kappa = 2`; until then it is bounded support only. This repair also corrects
+the all-`d` sign-multiplicity formula below: the sign irrep occurs for even
+`d`, not for `d mod 2 = 1`.
 
 **Primary runner:** `scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py`
 
@@ -33,8 +34,9 @@ unique carrier for the scalar lane — there is no remaining choice.
 
 The MRU weight-class obstruction theorem classified block-log-volume
 laws by weights `(mu, nu)` on the two real isotypes of `Herm_circ(3)`
-and pinned the missing object as a retained **1:1 real-isotype
-measure** on the non-trivial doublet block.
+and pinned the missing object as a **1:1 real-isotype measure** on the
+non-trivial doublet block, conditional on the physical scalar-lane
+quotient/measure principle.
 
 This note exhibits the measure explicitly:
 
@@ -70,22 +72,23 @@ one. This makes `mult(rho, Herm_circ(3)) = (1, 1)` the
 Frobenius-reciprocity-native measure at `d = 3`, which is the target
 `1:1` measure of the MRU obstruction theorem.
 
-**Closure positioning.** Combined with the companion
-spectrum-operator bridge theorem
-(`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19`), the
-operator-side `kappa = 2` gate now has **two independent closure
-routes**:
+**Bounded positioning.** Combined with the companion spectrum-operator
+bridge theorem (`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19`),
+this row gives a second exact algebraic route that would land at
+operator-side `kappa = 2` if the scalar-lane quotient/measure principle is
+independently supplied:
 
 1. **Bridge route.** Operator-side `kappa = 2` inherited from
    spectrum-side Koide `Q = 2/3` via the retained cyclic-compression
    bridge, with exact zero residual.
-2. **Block-total Frobenius route (this theorem).** Operator-side
-   `kappa = 2` is the equal-weight extremum of `log E_+ + log E_perp`
-   under the multiplicity-native 1:1 measure, realized by the retained
-   Frobenius functional on `Herm_circ(3)` with `d = 3` uniqueness.
+2. **Block-total Frobenius route (this theorem).** The equal-weight extremum
+   of `log E_+ + log E_perp` gives `kappa = 2` under the
+   multiplicity-native 1:1 measure on `Herm_circ(3)` with `d = 3`
+   uniqueness.
 
-Both routes accept spectrum-side closure as sufficient; both are
-independent of the retained `log|det|` law which lands at `kappa = 1`.
+This source row does not assert that the physical operator-side gate has two
+retained closure routes. It supplies the block-total algebra and leaves the
+canonical scalar-lane measure/quotient as the open bridge.
 
 ---
 
@@ -191,8 +194,8 @@ the counts for d = 2..6 (T7, T8).
 `a_0 in R`, `b_k in C` for `1 <= k < d/2`, and (if d even)
 `b_{d/2} in R`. These correspond respectively to the trivial, doublet,
 and sign real irreps. Hence `(trivial, doublets, sign)` multiplicities
-are `(1, floor((d-1)/2), d mod 2)`. This equals `(1, 1, 0)` iff
-`floor((d-1)/2) = 1` and `d odd`, i.e. `d = 3`.
+are `(1, floor((d-1)/2), 1 if d is even else 0)`. This equals
+`(1, 1, 0)` iff `floor((d-1)/2) = 1` and `d` is odd, i.e. `d = 3`.
 
 QED.
 
@@ -201,34 +204,35 @@ QED.
 ## 3. Implication for the Koide closure stack
 
 The MRU weight-class obstruction theorem identified the missing object
-as a retained 1:1 real-isotype measure. This theorem exhibits it
-explicitly as the block-total Frobenius-squared functional, with `d = 3`
+as a 1:1 real-isotype measure on the reduced scalar lane. This theorem
+exhibits the exact block-total Frobenius-squared functional, with `d = 3`
 uniqueness, and identifies the weight count as Frobenius-reciprocity
-multiplicity.
+multiplicity. It does not by itself prove that the physical charged-lepton
+scalar lane must use that reduced carrier or extremal principle.
 
-Combined with the bridge theorem (operator-side `kappa = 2` is a direct
-corollary of spectrum-side Koide `Q = 2/3`), the operator-side gate
-has two retained closure routes:
+With an independently supplied physical quotient/measure theorem, the
+block-total route would have the following relationship to the bridge route:
 
 | Route | Mechanism | Residue |
 |---|---|---|
 | Bridge | Cyclic-compression Fourier dictionary, exact identity `a_0^2 - 2|z|^2 = 3(a^2 - 2|b|^2)` | none (inherited from spectrum side) |
 | Block-total Frobenius | Multiplicity-weighted log-law extremum at `E_+ = E_perp` | naturality of multiplicity weighting vs. dimensional weighting |
 
-Both routes are retained functionals on the branch. Both accept
-spectrum-side closure as the load-bearing input. The operator-side
-framing is no longer missing; it is present in two distinct forms.
+Only the algebra in the second row is claimed here. The operator-side
+framing remains open until the physical quotient/measure selection is
+derived or explicitly accepted by the audit-owned authority surface.
 
 ---
 
 ## 4. Residue (minor, single-named)
 
 The block-total Frobenius measure realizes the target weights `(1, 1)`
-from Frobenius reciprocity. The remaining choice is between two
-retained natural log-laws on `Herm_circ(3)`:
+from Frobenius reciprocity. The remaining open choice is between two natural
+log-laws on `Herm_circ(3)`:
 
 1. **Block-total log-law** `log E_+ + log E_perp`, weights `(1, 1)`,
-   extremum at `kappa = 2`. This is MRU's target. Realized here.
+   extremum at `kappa = 2`. This is MRU's target formal route. Realized here
+   as algebraic support.
 2. **Det log-law** `log|det(alpha P_+ + beta P_perp)|` on the unreduced
    3x3 circulant, weights `(1, 2)`, extremum at `kappa = 1`. This is
    the retained `log|det|` law flagged as the obstruction.
@@ -238,9 +242,9 @@ residue is: which is the canonical extremal principle? The block-total
 route prefers multiplicity weighting (one scalar per real isotype); the
 det route prefers rank/dimensional weighting.
 
-This residue is minor and equivalent in scale to MRU-as-observable-
-principle; it does not cost a full axiom, only a choice of extremal
-convention among two retained functionals.
+This residue is not discharged by this note. Resolving it requires a retained
+or explicitly accepted scalar-lane quotient/canonical-measure theorem, not
+just the local Frobenius calculation.
 
 ---
 
@@ -293,7 +297,8 @@ No hard-coded True; all PASSes keyed to substantive computations.
 ## 7. Cross-references
 
 - `docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`
-  — the obstruction theorem this note positively closes.
+  — the obstruction theorem whose named formal 1:1 candidate this note
+  supplies algebraically.
 - `docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`
   — MRU as a d = 3 theorem.
 - `docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`
@@ -311,10 +316,10 @@ No hard-coded True; all PASSes keyed to substantive computations.
   (that is the single load-bearing input for the charged-lepton cone
   normalization; the closure comes from Berry + Brannen on the
   spectrum side).
-- This theorem shows the operator-side 1:1 measure is a retained
-  functional, but the choice between block-total log-law and det
-  log-law is a minor structural residue (two natural retained laws,
-  extremum at different `kappa`). Both are realized on the branch.
+- This theorem shows that the block-total Frobenius functional supplies the
+  exact formal 1:1 measure on `Herm_circ(3)`. It does not prove that this is
+  the physical scalar-lane measure or that the choice between block-total
+  log-law and det log-law has been resolved.
 - The theorem is stated at `d = 3` with dimension uniqueness verified
   symbolically on d = 2..6.
 - Numerical verification uses PDG charged-lepton masses as an input to

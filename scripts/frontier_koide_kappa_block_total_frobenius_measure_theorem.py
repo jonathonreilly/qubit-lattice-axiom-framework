@@ -38,6 +38,10 @@ Runner tasks:
   T8  Multiplicity pattern at d=2,3,4,5,6 — d=3 is unique for (1,1)
   T9  PDG charged-lepton Koide realizes E_+ = E_perp at machine precision
   T10 Block-total law (1,1) differs from log|det| law (1,2) by factor 2
+
+Boundary.  This runner verifies the finite `Herm_circ(d)` Frobenius algebra
+and `d=3` multiplicity pattern. It does not derive the physical scalar-lane
+SO(2) quotient or select the canonical charged-lepton extremal principle.
 """
 
 from __future__ import annotations

@@ -60,6 +60,7 @@ def parse_script_imports(script_path: Path) -> set[str]:
       from .X import Y  (relative inside scripts/)
       from X import Y, import X (bare PYTHONPATH-style — common because
         runners in this repo are invoked with `PYTHONPATH=scripts ...`)
+      load_frontier("module_name", "X.py") dynamic loader calls
 
     Returns a set of script basenames (without .py) that exist in scripts/.
     Third-party libraries are excluded by the final scripts/<name>.py
@@ -96,6 +97,27 @@ def parse_script_imports(script_path: Path) -> set[str]:
                 else:
                     # import X [as Y]  (bare PYTHONPATH-style)
                     helpers.add(alias.name.split(".")[0])
+        elif isinstance(node, ast.Call):
+            func_name = ""
+            if isinstance(node.func, ast.Name):
+                func_name = node.func.id
+            elif isinstance(node.func, ast.Attribute):
+                func_name = node.func.attr
+            if func_name != "load_frontier":
+                continue
+
+            filename_node = None
+            if len(node.args) >= 2:
+                filename_node = node.args[1]
+            else:
+                for kw in node.keywords:
+                    if kw.arg == "filename":
+                        filename_node = kw.value
+                        break
+            if isinstance(filename_node, ast.Constant) and isinstance(filename_node.value, str):
+                helper_path = Path(filename_node.value)
+                if helper_path.suffix == ".py":
+                    helpers.add(helper_path.stem)
 
     # Keep only those that exist as scripts/<name>.py
     return {h for h in helpers if (SCRIPTS_DIR / f"{h}.py").exists()}
@@ -228,7 +250,7 @@ def main() -> int:
     # Save output
     output_path = AUDIT_DATA / "audit_packet_script_deps.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(json.dumps(deps_by_claim, indent=2, sort_keys=True))
+    output_path.write_text(json.dumps(deps_by_claim, indent=2, sort_keys=True) + "\n")
     print(f"Wrote {output_path.relative_to(REPO_ROOT)}")
     print()
 

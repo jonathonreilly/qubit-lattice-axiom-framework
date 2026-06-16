@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/record_pointer_controlled_coupling_finite_example_2026_06_15.py
+runner_sha256: 059c971ad1a516bc00931c6c2d20d9f09c7dd5393b0a64fe54cef52944f04a16
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+Finite controlled-coupling record-formation split
+  [PASS] F1 initial pointer entropy is nontrivial  (H(Pi_S)=0.550300)
+  [PASS] F2 no fragment initially carries pointer information
+  [PASS] F3 g=0.5: controlled Hamiltonian commutes with pointer  (||[H,Pi_S]||=0.00e+00)
+  [PASS] F4 g=0.5: pointer populations are preserved
+  [PASS] F5 g=0.5: every singleton fragment carries the full pointer record  (infos=[0.5503, 0.5503, 0.5503])
+  [PASS] F6 g=0.5: conditional fragment states are orthogonal  (Tr(rho_F|0 rho_F|1)=2.78e-17)
+  [PASS] F3 g=1: controlled Hamiltonian commutes with pointer  (||[H,Pi_S]||=0.00e+00)
+  [PASS] F4 g=1: pointer populations are preserved
+  [PASS] F5 g=1: every singleton fragment carries the full pointer record  (infos=[0.5503, 0.5503, 0.5503])
+  [PASS] F6 g=1: conditional fragment states are orthogonal  (Tr(rho_F|0 rho_F|1)=2.78e-17)
+  [PASS] F3 g=2: controlled Hamiltonian commutes with pointer  (||[H,Pi_S]||=0.00e+00)
+  [PASS] F4 g=2: pointer populations are preserved
+  [PASS] F5 g=2: every singleton fragment carries the full pointer record  (infos=[0.5503, 0.5503, 0.5503])
+  [PASS] F6 g=2: conditional fragment states are orthogonal  (Tr(rho_F|0 rho_F|1)=2.78e-17)
+  [PASS] F7 finished fragment persists under later local controlled recording  (E1 before=0.550300, after=0.550300)
+  [PASS] F8 later fragment also reaches the same pointer record  (E2 after=0.550300)
+  [PASS] F9 demolition control fails the pointer commutant condition
+  [PASS] F10 demolition control changes pointer populations  (initial=[0.872587, 0.127413], final=[0.5, 0.5])
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

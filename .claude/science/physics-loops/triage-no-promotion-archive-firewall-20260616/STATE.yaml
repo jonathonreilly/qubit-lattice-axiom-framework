@@ -13,5 +13,5 @@ open_imports:
   - "No reproducible triage manifest is supplied."
   - "The old dirty/untracked stack is not reconstructed."
 review_findings: "Local self-review: pass for demotion/firewall scope."
-pr_status: "pending"
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4109"
 next_exact_action: "Open PR for reviewer extraction, then let audit decide whether the archived triage row can be re-audited as retired process history."

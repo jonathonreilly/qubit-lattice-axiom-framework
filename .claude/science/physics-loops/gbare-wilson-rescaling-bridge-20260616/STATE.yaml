@@ -1,0 +1,17 @@
+loop: gbare-wilson-rescaling-bridge-20260616
+status: ready_for_review
+branch: physics-loop/gbare-wilson-rescaling-bridge-20260616
+base: origin/main
+target_status: exact-support
+actual_current_surface_status: exact-support
+claim_block:
+  - docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md
+  - scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py
+consumer_repairs:
+  - docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
+  - docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md
+remaining_blockers:
+  - Wilson action-surface selection is not derived here.
+  - The local beta=6 surface remains a scoped input for the constraint corollary.
+  - Independent audit must decide effective status.
+next_exact_action: "Reviewer should extract the source theorem/runner and decide whether to re-audit the two g_bare consumers."

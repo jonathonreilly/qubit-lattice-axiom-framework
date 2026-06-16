@@ -8,12 +8,12 @@ frontier_g_bare_derivation.py runner used by retained upstream rows. It checks
 only the repaired constraint-vs-convention surface:
 
   CN: canonical trace normalization.
-  WM: scoped Wilson matching relation beta = 2 N_c / g_bare^2.
+  WM: Wilson small-a matching relation beta = 2 N_c / g_bare^2.
   B6: explicit local Wilson surface N_c = 3, beta = 2 N_c = 6.
 
 It does not derive beta = 6 from the one-qubit operator algebra plus Z^3
-spatial substrate, does not prove the Wilson matching relation from retained
-dependencies, and does not apply an audit verdict.
+spatial substrate, does not prove Wilson action-surface selection, and does
+not apply an audit verdict.
 """
 
 from __future__ import annotations
@@ -27,6 +27,7 @@ PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md"
+WM_NOTE = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
 
 
 def check(name: str, cond: bool, detail: str = "") -> bool:
@@ -49,16 +50,26 @@ def main() -> int:
     normalized_note = " ".join(note_text.split())
     boundary_markers = [
         "conditional-support / bounded algebraic surface only",
-        "the Wilson matching relation `beta = 2 N_c / g_bare^2`",
+        "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md",
         "the local Wilson coefficient surface `beta = 6` at `N_c = 3`",
-        "It may not cite this row as a retained derivation",
-        "remains a bounded conditional support surface",
+        "It may not cite this row as a retained derivation of the Wilson action form",
+        "conditional on that beta input",
     ]
     for marker in boundary_markers:
         check(
             f"source boundary marker present: {marker[:54]}",
             marker in normalized_note,
         )
+    wm_text = WM_NOTE.read_text(encoding="utf-8")
+    wm_flat = " ".join(wm_text.split())
+    check(
+        "Wilson small-a theorem contains beta = 2 N_c / g_bare^2",
+        "beta = 2 N_c / g_bare^2" in wm_text,
+    )
+    check(
+        "Wilson small-a theorem keeps action-surface selection outside scope",
+        "does not derive that the framework must select the Wilson action surface" in wm_flat,
+    )
 
     N_c = Fraction(3)
     beta_local = Fraction(2) * N_c
@@ -84,10 +95,10 @@ def main() -> int:
         )
 
     print(
-        "INFO scoped inputs: CN and WM are assumed by this bounded slice; "
-        "dependency closure is owned by the audit pipeline. The source "
-        "firewall forbids treating this row as retained Wilson matching or "
-        "a beta=6 derivation."
+        "INFO scoped inputs: CN and WM are sourced by cited bounded surfaces; "
+        "beta=6 remains the explicit local input. Dependency closure is owned "
+        "by the audit pipeline. The source firewall forbids treating this row "
+        "as a beta=6 derivation."
     )
 
     print(f"SUMMARY: PASS = {PASS}, FAIL = {FAIL}")

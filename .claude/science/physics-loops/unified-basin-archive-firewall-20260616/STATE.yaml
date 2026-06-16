@@ -13,5 +13,5 @@ open_imports:
   - "No unified runner is added for both coupling surfaces."
   - "Signed-source salvage remains separate metadata unless a retained-generator runner lands."
 review_findings: "Local self-review: pass for demotion/firewall scope."
-pr_status: "pending"
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4108"
 next_exact_action: "Open PR for reviewer extraction, then let audit decide whether the archived unified-basin row can be re-audited as retired evidence."

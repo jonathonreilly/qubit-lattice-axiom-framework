@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_reduced_a2_spectral_domination_rung_eleven_bounded_2026_06_12.py
+runner_sha256: 3f4879a213b07eea0a97fb8bb323d8599aa7a504ab1a9e0350d4a53207a2c4f7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 13.79
+status: ok
+----- stdout -----
+beta  shell   c_J        c_D        c_J-c_D     c_D/c_J   l1/l0
+  15    16   0.811415   0.702465   0.108950   0.86573  0.21634
+  30    21   0.834363   0.779367   0.054996   0.93409  0.20481
+  60    28   0.847469   0.819819   0.027651   0.96737  0.19925
+ 120    37   0.854701   0.840331   0.014369   0.98319  0.19650
+ 180    45   0.857260   0.847168   0.010093   0.98823  0.19559
+PASS: c_D < c_J on the tested grid (margin strictly positive)
+      margins = [0.10895, 0.054996, 0.027651, 0.014369, 0.010093]
+PASS: the margin c_J - c_D shrinks monotonically with beta
+      margins decreasing: [0.10895, 0.054996, 0.027651, 0.014369, 0.010093]
+PASS: c_D/c_J climbs monotonically toward 1 (leading coefficients near-equal)
+      ratios = [0.86573, 0.93409, 0.96737, 0.98319, 0.98823]
+PASS: beta*(c_J-c_D) stays O(1), consistent with equal leading coefficients
+      beta*(c_J-c_D) = [1.634, 1.65, 1.659, 1.724, 1.817] (positive witnessed products)
+PASS: margin>0 => d/dbeta log(l1/l0) ~ -(c_J-c_D)/beta < 0 (decrease supported)
+      the ratio decreases (consistent with the measured trajectory), but ever more slowly
+PASS: H_spec uniform-margin domination is NOT established (shrinking finite margin)
+      the leading c_J, c_D are near-equal; uniform strictness is a delicate subleading question
+PASS: anti-fab: c_J, c_D are spectral witnesses (no fit, no closure constant)
+      computed from eigh of the finite operator; no curve_fit/target value used
+PASS: falsifier present: the comparison depends on the exact J normalization
+      J = six-neighbor average /6; a wrong normalization rescales Delta_J vs Delta_D
+
+TOTAL: PASS=8, FAIL=0
+
+----- stderr -----
+

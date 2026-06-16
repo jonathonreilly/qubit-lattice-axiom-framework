@@ -81,13 +81,17 @@ honest message is "Δ_R is large and uncontrolled," NOT a new precise value.
   so the corrected `Δ_R ≈ +50%` **violates the framework's own ≤7.41% bound by
   ~7–10×.** So m_t is not controlled even at the ≤7% level claimed, let alone
   sub-percent.
-- **What survives:** the clean exact `y_t(M_Pl)/g_s(M_Pl) = 1/√6` Ward theorem +
-  17-decade SM running (whose top-Yukawa **IR quasi-fixed point** compresses
-  high-scale uncertainty toward an O(1) attractor) still places m_t in the right
-  **ballpark** (~170–200 GeV), robustly. The exact size of the residual m_t
-  uncertainty depends on that RG compression (not computed here), but the
-  **sub-percent bullseye is definitively not earned** and the ~2%/≤7.41%
-  precision is invalidated.
+- **What survives — quantified (`scripts/corrections/yt_p1_mt_compression_memsafe.py`,
+  a memory-safe SM-RGE integration):** the clean exact `y_t/g_s = 1/√6` boundary
+  with `g_s = g_LM` runs 17 decades down and reproduces `m_t ≈ 169 GeV` (1-loop,
+  no pole conversion). Perturbing the boundary by Δ_R: the top-Yukawa **IR
+  quasi-fixed point CAPS m_t from above at ~193 GeV** (so it cannot run away —
+  the genuine ballpark protection), but does **NOT pin** it. The compression is
+  WEAK: `d ln m_t / d Δ_R ≈ 0.42`, so the uncontrolled ±50% matching maps m_t to
+  roughly **[113, 193] GeV** (asymmetric, tens-of-%). Net: the fixed point
+  protects the *ceiling*, not the *precision*. m_t is in the right ballpark but
+  uncontrolled at the tens-of-% level; the **sub-percent bullseye is definitively
+  not earned** and the ~2%/≤7.41% precision is invalidated.
 - **Landscape context (why this downgrade is the correct, not an unusual, call):**
   NO established framework predicts m_t to controlled sub-percent. In the SM m_t
   is a **free input** (Yukawa coupling, not predicted). The best BSM "predictions"

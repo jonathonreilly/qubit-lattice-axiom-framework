@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py
-runner_sha256: cb60722f62a44beb6612108403a2afa4c1a61850caa6626745825508c2414660
+runner_sha256: b4549363515a148993578d466358a2e5a10db61558aabeda5dd1684ce7e676a5
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 19.74
+elapsed_sec: 18.43
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -15,7 +15,7 @@ Framework convention:
 
 Question:
   Does the current broad multistart constrained scan recover a stable
-  low-action selector branch on the fixed native N_e seed surface?
+  low-action selector branch on the fixed runner-defined N_e seed surface?
 
 ========================================================================================
 PART 1: ENUMERATE THE CLOSURE STATIONARY BRANCHES
@@ -51,13 +51,13 @@ RESULT
 ========================================================================================
   Broad multistart support result:
     - the current broad multistart constrained scan resolves two dominant
-      stationary closure branches on the fixed native N_e seed surface
+      stationary closure branches on the fixed runner-defined N_e seed surface
     - the low branch is separated from the higher dominant branch by a
       finite action gap
     - that branch gives exact eta/eta_obs = 1 on the favored column
-    - the later certified-global theorem sharpens the exact reduced-surface
-      stationary set to three branches and proves the same low branch is
-      the lower branch seen in the stronger reduced-surface support pass
+    - a later reduced-surface support pass, outside this runner's binding
+      scope, reports a three-branch sampled surface and the same low branch
+      within that stronger support packet
 
   This is support for the reduced-surface selector story, not a live
   theorem-grade closure statement by itself.

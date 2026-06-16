@@ -1,0 +1,21 @@
+loop_slug: dm-pmns-multistart-scope-language-20260616
+branch: physics-loop/dm-pmns-multistart-scope-language-20260616
+base: origin/main
+target_claim_id: dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: demotion
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle_count: 1
+files_touched:
+  - docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md
+  - scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py
+  - logs/runner-cache/frontier_dm_leptogenesis_pmns_multistart_selector_support.txt
+open_imports:
+  - "The fixed N_e seed surface and eta/eta_obs transport/readout remain runner-defined inputs."
+review_disposition: pass
+next_exact_action: "Independent audit should re-check the narrowed sampled-diagnostic scope."
+stop_condition: "Source-language scope repair PR opened."

@@ -7,14 +7,14 @@ Framework convention:
 
 Purpose:
   Record the current broad multistart constrained-scan support for the
-  PMNS-assisted N_e selector on the fixed native seed surface.
+  PMNS-assisted N_e selector on the fixed runner-defined seed surface.
 
 Method on the exact refreshed branch:
-  1. generate many exact closure starts on the fixed native N_e seed surface;
+  1. generate many closure starts on the fixed runner-defined N_e seed surface;
   2. solve the constrained effective-action stationary problem from each start;
   3. cluster all converged stationary points into closure branches;
-  4. verify there is one unique lowest-action branch and a finite gap to the
-     next branch.
+  4. verify that, within the recovered sampled branches, one lowest-action
+     branch is separated by a finite gap to the next branch.
 
 This is support for the reduced-surface selector structure, not a live theorem-
 grade closure claim.
@@ -205,7 +205,7 @@ def main() -> int:
     print()
     print("Question:")
     print("  Does the current broad multistart constrained scan recover a stable")
-    print("  low-action selector branch on the fixed native N_e seed surface?")
+    print("  low-action selector branch on the fixed runner-defined N_e seed surface?")
 
     i_star, branches = part1_enumerate_stationary_branches()
     _ = i_star
@@ -216,13 +216,13 @@ def main() -> int:
     print("=" * 88)
     print("  Broad multistart support result:")
     print("    - the current broad multistart constrained scan resolves two dominant")
-    print("      stationary closure branches on the fixed native N_e seed surface")
+    print("      stationary closure branches on the fixed runner-defined N_e seed surface")
     print("    - the low branch is separated from the higher dominant branch by a")
     print("      finite action gap")
     print("    - that branch gives exact eta/eta_obs = 1 on the favored column")
-    print("    - the later certified-global theorem sharpens the exact reduced-surface")
-    print("      stationary set to three branches and proves the same low branch is")
-    print("      the lower branch seen in the stronger reduced-surface support pass")
+    print("    - a later reduced-surface support pass, outside this runner's binding")
+    print("      scope, reports a three-branch sampled surface and the same low branch")
+    print("      within that stronger support packet")
     print()
     print("  This is support for the reduced-surface selector story, not a live")
     print("  theorem-grade closure statement by itself.")

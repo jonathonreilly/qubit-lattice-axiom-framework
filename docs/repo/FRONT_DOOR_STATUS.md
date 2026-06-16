@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1523 |
+| Applied audit verdicts | 1524 |
 | Retained-grade rows, including boxed decorations | 1402 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 209 |
 | Retained bounded rows | 930 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1469 |
+| Unaudited rows | 1468 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 31 |
+| Audited conditional rows | 32 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 13 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1471 |
-| Ready rows | 56 |
+| Total pending rows | 1470 |
+| Ready rows | 55 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 437 |
+| Medium pending | 436 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md) - medium; unaudited
 - [`lattice_3d_inverse_square_kernel_helper_note_2026-04-04`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) - medium; unaudited
 - [`free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12`](../../docs/FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08`](../../docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`record_unbounded_finite_additivity_schema_2026-06-06`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md) - medium; unaudited
 - [`quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md) - medium; unaudited
+- [`universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,9 +82,9 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
-| High nodes | 515 |
-| Medium nodes | 927 |
-| Leaf nodes | 1470 |
+| High nodes | 514 |
+| Medium nodes | 929 |
+| Leaf nodes | 1469 |
 
 Top load-bearing rows by graph score:
 

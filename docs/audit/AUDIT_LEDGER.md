@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 949 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1429 |
+| unaudited | 1428 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 45 |
+| ~~audited_conditional~~ | 46 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1398 |
-| `audited_conditional` | 45 |
+| `audited_conditional` | 46 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1746 |
+| `unaudited` | 1745 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 509 |
-| `medium` | 907 |
-| `leaf` | 1362 |
+| `medium` | 905 |
+| `leaf` | 1364 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -1542,6 +1542,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5601,6 +5602,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The kinetic staggered operator D_kin vanishes on the hw=1 generation corners, so the projected generation-sector D block is zero/non-invertible and outside the det-uniqueness X1 domain requiring invertible real anti-Hermitian D.  _(class `C`)_
 - **chain closes:** True — The cited det-uniqueness authority applies only to invertible real anti-Hermitian D with real-symmetric source J, while an independent Fourier action check gives D_kin e_k proportional to sin(k_mu) terms that vanish at k_mu in {0, pi}. The bridge authority explicitly firewalles the mI determinant surfaces as scalar-baseline diagnostics, so they do not reopen the det-uniqueness route.
 - **rationale:** The runner source genuinely constructs the finite staggered kinetic operator and checks the corner projection, non-invertibility, off-corner control, and scalar-baseline diagnostics rather than merely printing expected values. The load-bearing corner-vanishing also checks independently from the finite-difference Fourier action using sin(0)=sin(pi)=0. Both cited authorities are retained-grade, and the no-go is properly scoped to the det-uniqueness route, not to all possible future readout derivations.
+- **auditor confidence:** high
+
+### `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Schur-substitution claim `y_nu^eff=g^2/64` under ADM-1 readout, ADM-2 physical-`g` comparator, and ADM-3 graph-shift-to-Dirac-Higgs phi-space identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-022510-11e3f345fe-dm_neutrino_schur_suppressio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given ADM-1 (`j=g/sqrt2`) and ADM-2 (`g` the physical coupling), and with `m_perp=32` derived on the retained graph-shift surface modulo ADM-3, `y_nu^eff = j^2/m = (g/sqrt2)^2/32 = g^2/64`.  _(class `A`)_
+- **chain closes:** False — The finite algebraic substitution closes, but the retained-input-to-physical-coefficient chain does not: ADM-1, ADM-2, and ADM-3 remain unclosed admissions.
+- **rationale:** Issue: the runner verifies the Schur algebra, graph-shift curvature, Frobenius ratio, determinant-domain mismatch, and source firewalls, but it does not derive the physical readout, physical coupling, or phi-space transport. Why this blocks: `g^2/64` as a physical coefficient still depends on explicit bridge/comparator inputs not closed by the restricted packet. Repair target: retained bridge theorems for the `mI` readout and graph-shift-to-Dirac-Higgs curvature transport, plus a framework-native coupling theorem if ADM-2 is to be retired. Claim boundary until fixed: exact bounded algebra over the three named admissions.
+- **open / conditional deps cited:**
+  - `DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
+  - `DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md`
+  - `DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md`
+  - `DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md`
 - **auditor confidence:** high
 
 ### `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17`

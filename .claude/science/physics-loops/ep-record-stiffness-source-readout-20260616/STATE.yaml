@@ -18,6 +18,6 @@ open_imports:
   - "Inertial rest-gap readout from Record or retained dynamics."
   - "Shared coefficient identity between inertial rest-gap m and gravitational source coefficient."
 review_status: "local checks pass; independent reviewer/auditor still required"
-pr_status: pending
-next_exact_action: "Run protected-file guard, commit, push, and open review PR."
-stop_condition: "PR opened or branch handoff written if GitHub is unavailable."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4071"
+next_exact_action: "Reviewer should inspect PR #4071; next science target is the EP shared coefficient identity or a different audited conditional."
+stop_condition: "PR opened; campaign can pivot to next audit-unblock target."

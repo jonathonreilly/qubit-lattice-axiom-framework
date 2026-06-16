@@ -11,6 +11,8 @@ This branch adds a post-audit EP record-stiffness repair:
 
 The parent row remains an open-gate conditional template.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4071
+
 ## Verification
 
 - `python3 scripts/frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16.py`

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py
-runner_sha256: 8259db9012b948e923bf1f01f4d646067871c251d7af9092f6af922f5523b521
+runner_sha256: aa6605a2fb578890cf8490773615566253d6f4e08b9b0c6425b61a3e3a994615
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================
@@ -22,6 +22,8 @@ Section 1: chain authority audits
 [PASS] Note records 2026-06-16 post-audit residual certificate
 [PASS] Post-audit certificate keeps P1-P4 and P6-P7 as live residuals
 [PASS] Post-audit certificate keeps eta_obs comparator-only
+[PASS] Note records 2026-06-16 BBN coefficient precision repair
+[PASS] BBN precision repair uses precise local P3 factor
 [PASS] Note records 2026-06-07 source-boundary repair
 [PASS] Note records P_DM_ETA packet
 [PASS] P_DM_ETA records P5 as retained_bounded finite-inventory authority
@@ -68,31 +70,31 @@ Section 4: freeze-out-bypass identity arithmetic (M0)
 [PASS] alpha_LM = (1/(4π))/u_0 ≈ 0.09067  --  computed 0.090668
 [PASS] R(central) = (31/9) * 1.59 = 1643/300 exactly  --  computed 1643/300
 [PASS] R(central) float ≈ 5.4767  --  computed 5.4767
-[PASS] C(central) ≈ 4.108e-17 GeV^-2  --  computed 4.1077e-17
+[PASS] C(central) ≈ 4.106e-17 GeV^-2  --  computed 4.1060e-17
 
 Section 5: central evaluation eta_pred(central)
 ------------------------------------------------------------------------
-[PASS] eta_pred(central) ≈ 6.38e-10  --  computed 6.3783e-10
-[PASS] Central deviation ≈ +4.22% vs eta_obs  --  computed +4.220%
+[PASS] eta_pred(central) ≈ 6.38e-10  --  computed 6.3756e-10
+[PASS] Central deviation ≈ +4.18% vs eta_obs  --  computed +4.177%
 
 Section 6: bounded band over (x_F, S_vis/S_dark) rectangle
 ------------------------------------------------------------------------
-[PASS] grid (M0) (22.0, 1.7) -> 5.25e-10  --  computed 5.250e-10
-[PASS] grid (M0) (22.0, 1.59) -> 5.61e-10  --  computed 5.613e-10
-[PASS] grid (M0) (22.0, 1.4) -> 6.38e-10  --  computed 6.375e-10
-[PASS] grid (M0) (25.0, 1.7) -> 5.97e-10  --  computed 5.966e-10
-[PASS] grid (M0) (25.0, 1.59) -> 6.38e-10  --  computed 6.378e-10
-[PASS] grid (M0) (25.0, 1.4) -> 7.24e-10  --  computed 7.244e-10
-[PASS] grid (M0) (28.0, 1.59) -> 7.14e-10  --  computed 7.144e-10
-[PASS] grid (M0) (28.0, 1.4) -> 8.11e-10  --  computed 8.113e-10
-[PASS] Bounded band low corner (x_F=22, S=1.7) ≈ 5.25e-10  --  computed 5.250e-10
-[PASS] Bounded band high corner (x_F=28, S=1.4) ≈ 8.10e-10  --  computed 8.113e-10
+[PASS] grid (M0) (22.0, 1.7) -> 5.25e-10  --  computed 5.248e-10
+[PASS] grid (M0) (22.0, 1.59) -> 5.61e-10  --  computed 5.611e-10
+[PASS] grid (M0) (22.0, 1.4) -> 6.37e-10  --  computed 6.372e-10
+[PASS] grid (M0) (25.0, 1.7) -> 5.96e-10  --  computed 5.963e-10
+[PASS] grid (M0) (25.0, 1.59) -> 6.38e-10  --  computed 6.376e-10
+[PASS] grid (M0) (25.0, 1.4) -> 7.24e-10  --  computed 7.241e-10
+[PASS] grid (M0) (28.0, 1.59) -> 7.14e-10  --  computed 7.141e-10
+[PASS] grid (M0) (28.0, 1.4) -> 8.11e-10  --  computed 8.110e-10
+[PASS] Bounded band low corner (x_F=22, S=1.7) ≈ 5.25e-10  --  computed 5.248e-10
+[PASS] Bounded band high corner (x_F=28, S=1.4) ≈ 8.11e-10  --  computed 8.110e-10
 [PASS] Note records direct lower band 5.25e-10
 [PASS] Note records direct upper band 8.11e-10
 [PASS] Note records inherited audit-companion interval as context only
 [PASS] Bracketing (direct fixed-alpha band): low <= eta_obs <= high
-[PASS] (M0) low corner equals (22, 1.7) ≈ 5.25e-10  --  computed 5.250e-10
-[PASS] (M0) high corner equals (28, 1.4) ≈ 8.11e-10  --  computed 8.113e-10
+[PASS] (M0) low corner equals (22, 1.7) ≈ 5.25e-10  --  computed 5.248e-10
+[PASS] (M0) high corner equals (28, 1.4) ≈ 8.11e-10  --  computed 8.110e-10
 
 Section 7: cross-check vs ETA_188 structural decomposition
 ------------------------------------------------------------------------
@@ -133,8 +135,8 @@ Section 10: status discipline
 [PASS] Note does NOT use bare 'proposed_retained' or 'retained:' status language
 
 ========================================================================
-TOTAL: PASS=92 FAIL=0
-VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
+TOTAL: PASS=94 FAIL=0
+VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.18% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
 
 ----- stderr -----
 

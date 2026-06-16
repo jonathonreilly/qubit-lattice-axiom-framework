@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_record_dial_boundary_2026_06_16.py
+runner_sha256: 9547a28c015b0b70082c5417b62c3a3be0536832992fd999acae9322a0a214e9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+Section A - SO(2) quotient energies
+[PASS] A1 doublet radius is invariant under SO(2) rotation
+       rotated radius = x**2 + y**2
+[PASS] A2 E_perp = 6(x^2+y^2) is SO(2)-invariant
+       E_perp(rotated) = 6*x**2 + 6*y**2
+[PASS] A3 E_+ = 3a^2 is independent of the doublet phase
+       E_+ = 3*a**2
+
+Section B - dim^s log-law family
+[PASS] B1 the whole S_s family factors through quotient variables
+       S_s = log(E_+) + 2^s log(E_perp) depends only on invariant arguments
+[PASS] B2 Lagrange ratio is X/Y = mu/nu = 2^(-s)
+       X/Y = 2**(-s)
+[PASS] B3 operator ratio kappa(s) = 2 X/Y = 2^(1-s)
+       kappa(s) = 2**(1 - s)
+[PASS] B4 amplitude ratio r(s)=|b|^2/a^2 = 2^(s-1)
+       r(s) = 2**(s - 1)
+[PASS] B5 stationarity equations imply X+Y=T with X/Y fixed, not s fixed
+       the constraint sets scale after the supplied s chooses the ratio
+
+Section C - endpoints and non-uniqueness
+[PASS] C1 block-count endpoint s=0 gives kappa=2
+[PASS] C2 dimension/Born endpoint s=1 gives kappa=1
+[PASS] C3 an interior weighting gives a distinct admissible quotient law
+       kappa(1/2) = sqrt(2)
+[PASS] C4 kappa(s) varies with s, so SO(2) invariance alone cannot select an endpoint
+       d kappa/ds = -2**(1 - s)*log(2)
+
+Section D - source boundary guards
+[PASS] D1 Record axiom supplies finite scalar additivity
+[PASS] D2 Record axiom explicitly withholds weighting and normalization
+[PASS] D3 parent Koide note withholds canonical physical scalar-measure closure
+[PASS] D4 parent Koide all-d sign multiplicity is even-parity, not d mod 2
+[PASS] D5 generation dial note records r(s)=2^(s-1) and leaves position s open
+[PASS] D6 one-bit synthesis identifies block-count vs dimension as the residual
+[PASS] D7 this note is scoped as boundary, not physical closure
+
+Section E - conclusion
+[PASS] E1 exact boundary: SO(2)+Record allows the family but does not pick block-count
+       all prior checks establish invariance, endpoint map, and Record non-selector boundary
+
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

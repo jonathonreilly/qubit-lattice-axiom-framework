@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1578 |
-| Retained-grade rows, including boxed decorations | 1433 |
+| Applied audit verdicts | 1579 |
+| Retained-grade rows, including boxed decorations | 1434 |
 | Retained positive theorems | 221 |
 | Retained no-go rows | 214 |
-| Retained bounded rows | 953 |
+| Retained bounded rows | 954 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1414 |
+| Unaudited rows | 1413 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 52 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1416 |
-| Ready rows | 14 |
+| Total pending rows | 1415 |
+| Ready rows | 13 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
 | Medium pending | 430 |
-| Leaf pending | 434 |
+| Leaf pending | 433 |
 
 Next ready rows by queue order:
 
-- [`native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md) - medium; unaudited
 - [`pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26`](../../docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - medium; unaudited
 - [`record_prerecord_instrument_kernel_gate_2026-06-06`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md) - medium; unaudited
 - [`s3_time_tensor_build_memo`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md) - medium; unaudited
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`](../../docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
-- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - leaf; unaudited
+- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
+- [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
 | High nodes | 514 |
-| Medium nodes | 938 |
-| Leaf nodes | 1460 |
+| Medium nodes | 939 |
+| Leaf nodes | 1459 |
 
 Top load-bearing rows by graph score:
 
@@ -93,6 +93,6 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
 - `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
 - `plaquette_self_consistency_note` - critical; 1007 descendants; score 51.477
-- `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
+- `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 50.513
 - `key_terminology` - critical; 1120 descendants; score 47.631
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 890 descendants; score 45.299
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 891 descendants; score 45.301

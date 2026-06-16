@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1575 |
+| Applied audit verdicts | 1576 |
 | Retained-grade rows, including boxed decorations | 1431 |
 | Retained positive theorems | 221 |
 | Retained no-go rows | 214 |
 | Retained bounded rows | 951 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1417 |
+| Unaudited rows | 1416 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 52 |
-| Audited renaming rows | 31 |
+| Audited renaming rows | 32 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
 
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1419 |
-| Ready rows | 17 |
+| Total pending rows | 1418 |
+| Ready rows | 16 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
 | Medium pending | 430 |
-| Leaf pending | 437 |
+| Leaf pending | 436 |
 
 Next ready rows by queue order:
 
-- [`koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15`](../../docs/KOIDE_R_IS_THE_WEIGHTING_PRINCIPLE_DIAL_RECORD_DYNAMICS_WEIGHTING_BLIND_BOUNDED_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
 - [`min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08`](../../docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md) - medium; unaudited
 - [`pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26`](../../docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - medium; unaudited
 - [`record_prerecord_instrument_kernel_gate_2026-06-06`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md) - medium; unaudited
-- [`s3_time_tensor_build_memo`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md) - leaf; unaudited
+- [`s3_time_tensor_build_memo`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md) - medium; unaudited
+- [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

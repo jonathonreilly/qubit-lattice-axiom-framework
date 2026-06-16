@@ -162,7 +162,7 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_generation_equivariant_ward_de
 Expected result:
 
 ```text
-TOTAL: PASS=44, FAIL=0
+TOTAL: PASS=46, FAIL=0
 VERDICT: S_3-equivariant Ward operators cannot stratify three quark
 generation Yukawa eigenvalues without a new source/readout primitive.
 ```

@@ -1,0 +1,17 @@
+loop_slug: quark-ward-pass46-sync-20260616
+goal: "Repair the quark generation equivariant Ward audited conditional by syncing the stale source verification total to the current runner/cache."
+target_status: bounded-support
+origin_main: "6bb1352cd audit: universal gr cubic diffeo ward operator telescope boun clean"
+branch: physics-loop/quark-ward-pass46-sync-20260616
+claim_id: quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28
+audit_blocker: "runner_artifact_issue: update the source note Verification expected total from PASS=44 to PASS=46, or otherwise reconcile the runner/source certificate."
+active_route: runner_certificate_sync
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md
+  - .claude/science/physics-loops/quark-ward-pass46-sync-20260616/
+open_imports:
+  - "No source/readout/symmetry-breaking primitive for Lane 3 target 3C is supplied here."
+next_exact_action: "Reviewer can extract the certificate sync and queue the row for independent re-audit."

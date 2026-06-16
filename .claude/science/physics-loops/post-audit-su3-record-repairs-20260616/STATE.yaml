@@ -1,0 +1,30 @@
+loop_slug: post-audit-su3-record-repairs-20260616
+branch: physics-loop/post-audit-su3-record-repairs-20260616
+base: origin/main
+started_at: "2026-06-16"
+mode: run
+target_status: best-honest-status
+cycle_count: 1
+active_route: source-side post-audit repair
+hard_residuals:
+  - su3_dabc C2 cubic coefficient was wrong inside the algebraic perimeter.
+  - record_unbounded finite-additivity schema still depends on supplied nonzero produced records and supplied readout context.
+files_touched:
+  - docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md
+  - scripts/su3_dabc_symmetric_check.py
+  - logs/runner-cache/su3_dabc_symmetric_check.txt
+  - docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md
+  - scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py
+  - logs/runner-cache/frontier_record_unbounded_additivity_schema_2026_06_06.txt
+open_imports:
+  - physical-color bridge remains outside the su3_dabc algebraic theorem.
+  - record production/readout-context/unbounded nonzero availability remains outside Record.
+trace_gate_classification:
+  su3_dabc: direct_blocker_closure
+  record_unbounded: demotion / upstream_support
+review_findings:
+  disposition: local pass
+  notes: "No review-loop verdict applied; source-side checks pass and this PR is for reviewer extraction."
+pr_status: pending push
+next_exact_action: commit, push, and open PR
+stop_condition: PR opened for review

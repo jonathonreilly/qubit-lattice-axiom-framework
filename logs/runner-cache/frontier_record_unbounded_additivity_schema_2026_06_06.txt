@@ -1,12 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py
-runner_sha256: f627ca2a5b9d24ff0a2625b474fffd8c774ca6df026db846783109284227e8f1
+runner_sha256: 6e515a6d8f9169c9289cd6bd2b47fb35afe7cbd56e4cd759d0ddfd82410cb644
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Record unbounded finite-additivity schema
+claim_type_author_hint: open_gate
 actual_current_surface_status: conditional-support
 trace_class: upstream_support
 reachability_to_target: supports
@@ -52,13 +53,15 @@ D. audit-lane classifier consequences
 [PASS] dial selection remains open
 
 E. supplied-record premise firewall
-[PASS] source note states bounded theorem / conditional-support status
+[PASS] source note states open_gate / conditional-support status
+[PASS] source note has post-audit claim-type repair
 [PASS] source note has supplied-record premise firewall
 [PASS] downstream citation rule is explicit
 [PASS] source note says Record does not supply producer/readout/unbounded availability
+[PASS] source note says Record does not supply normalization/lower-bound bridge
 [PASS] downstream retained-authority firewall is explicit
 
-SCORECARD: PASS=35 FAIL=0
+SCORECARD: PASS=37 FAIL=0
 VERDICT: Record finite additivity gives exact finite-prefix readout and a conditional unbounded finite-collection schema. The unbounded lift needs supplied nonzero disjoint records; it does not derive production, probability, IID, rates, or a dial.
 
 ----- stderr -----

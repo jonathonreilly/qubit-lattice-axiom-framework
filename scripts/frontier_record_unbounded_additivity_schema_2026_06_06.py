@@ -82,6 +82,7 @@ def frequencies(counts: dict[str, int]) -> dict[str, float]:
 
 def main() -> int:
     print("Record unbounded finite-additivity schema")
+    print("claim_type_author_hint: open_gate")
     print("actual_current_surface_status: conditional-support")
     print("trace_class: upstream_support")
     print("reachability_to_target: supports")
@@ -157,10 +158,12 @@ def main() -> int:
     print("\nE. supplied-record premise firewall")
     note = NOTE.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
-    check("source note states bounded theorem / conditional-support status", "**Claim type:** bounded_theorem" in note and "actual_current_surface_status: conditional-support" in note)
+    check("source note states open_gate / conditional-support status", "**Claim type:** open_gate" in note and "actual_current_surface_status: conditional-support" in note)
+    check("source note has post-audit claim-type repair", "2026-06-16 Post-Audit Claim-Type Repair" in note)
     check("source note has supplied-record premise firewall", "2026-06-15 Supplied-Record Premise Firewall" in note)
     check("downstream citation rule is explicit", "conditional_on_supplied_nonzero_disjoint_records_and_readout_context" in note)
     check("source note says Record does not supply producer/readout/unbounded availability", "does not supply the producer" in note_flat and "availability of arbitrarily many nonzero records" in note_flat)
+    check("source note says Record does not supply normalization/lower-bound bridge", "unit normalization or a positive lower bound" in note_flat)
     check("downstream retained-authority firewall is explicit", "must not cite this row as retained authority" in note_flat)
 
     print()

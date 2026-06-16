@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/su3_dabc_symmetric_check.py
-runner_sha256: 6b37f7cdf2ecd218a1009ea0d0e60062f6412beeec8547d54904bec0830b3dae
+runner_sha256: 2cbb677929a05003c1629d5a8946ae0b15100326050ea862e362c416f265a6a5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================
@@ -48,6 +48,13 @@ TEST 6: f^{abc} antisymmetric in (a, b); d^{abc} symmetric in (a, b)
   max |d^{abc} - d^{bac}| = 0.000e+00  (should be 0)
   STATUS: PASS
 
+------------------------------------------------------------------------
+TEST 7: d^{abc} T^a T^b T^c = (10/9) I_3
+------------------------------------------------------------------------
+  Tr(C_3)/3 = 1.111111111111 + 0.000e+00i
+  max ||d^{abc} T^a T^b T^c - (10/9) I_3|| = 8.308e-16
+  STATUS: PASS
+
 ========================================================================
   Test 1 ({T^a, T^b} decomposition):              PASS
   Test 2 (d^{abc} totally symmetric):              PASS
@@ -55,6 +62,7 @@ TEST 6: f^{abc} antisymmetric in (a, b); d^{abc} symmetric in (a, b)
   Test 4 (reference values match):                  PASS
   Test 5 (combined T^a T^b identity):               PASS
   Test 6 (f anti-sym, d sym in (a,b)):              PASS
+  Test 7 (cubic d-Casimir scalar 10/9):             PASS
   OVERALL: PASS
 
 ----- stderr -----

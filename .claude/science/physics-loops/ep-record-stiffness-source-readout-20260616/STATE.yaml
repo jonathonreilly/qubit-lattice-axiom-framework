@@ -1,0 +1,23 @@
+loop_slug: ep-record-stiffness-source-readout-20260616
+goal: "Repair the EP record-stiffness conditional boundary by splitting the weak-field source/readout interface from the still-supplied shared coefficient."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07
+target_blocker_text: "derive or cite retained framework-native bridges for the continuous local energy/action functional, inertial rest-gap readout, and shared recorded-energy gravitational source coefficient."
+active_route: "Cite and check the retained-bounded weak-field source-response bridge for |psi|^2 source readout and source-coupling form; leave coefficient equality and continuous action open."
+files_touched:
+  - docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md
+  - docs/EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md
+  - scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py
+  - scripts/frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16.py
+  - logs/runner-cache/frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16.txt
+open_imports:
+  - "Continuous local energy/action functional V(phi)."
+  - "Inertial rest-gap readout from Record or retained dynamics."
+  - "Shared coefficient identity between inertial rest-gap m and gravitational source coefficient."
+review_status: "local checks pass; independent reviewer/auditor still required"
+pr_status: pending
+next_exact_action: "Run protected-file guard, commit, push, and open review PR."
+stop_condition: "PR opened or branch handoff written if GitHub is unavailable."

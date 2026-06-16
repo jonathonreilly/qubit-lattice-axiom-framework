@@ -88,6 +88,9 @@ def main() -> int:
         "does not derive",
         "packet-width",
         "No new\naxiom, Tier-A admission, WEP closure, or audit-status change",
+        "2026-06-16 weak-field source/readout interface split",
+        "EP-S3a",
+        "EP-S3b",
     ]
     check(
         "source note keeps the open-gate conditional boundary",

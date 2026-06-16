@@ -9,5 +9,7 @@
    maximization.
 5. Replace DM eta supplied P1/P2 with retained framework-native bridge
    authority.
+6. Derive a gauge carrier/gauging-selection principle that picks the dim-12
+   subalgebra against `u(6)` without importing `MR_color`.
 
 This PR handles the immediate source-boundary cleanup only.

@@ -21,12 +21,16 @@ files_touched:
   - docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
   - scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
   - logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt
+  - docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md
+  - scripts/gauge_algebra_supplied_carrier_2026_06_08.py
+  - logs/runner-cache/gauge_algebra_supplied_carrier_2026_06_08.txt
 open_imports:
   - GL(F) matter-functional clause I-4
   - FS realization/Lorentz/reconstruction R chain
   - DM eta P1-P4 and P6-P7 packet
   - Koide equal-block metric and objectivity selector
   - Post-record carrier and weight/measure authority
+  - Gauge carrier/gauging-selection principle and chiral weak coupling surface
 trace_gate: direct_blocker_closure
 review_disposition: pass
 pr_status: pending

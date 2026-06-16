@@ -16,3 +16,5 @@ Rows:
 - Koide records: records both selector inputs as supplied.
 - Post-record measure: splits meta subdivision from finite supplied-weight
   normalization.
+- Gauge algebra: states the conditional boundary for supplied carrier/gauging
+  inputs and no uniqueness of the dim-12 subalgebra against `u(6)`.

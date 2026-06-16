@@ -14,5 +14,7 @@ Open imports kept explicit:
   maximization selector remain supplied inputs.
 - Post-record measure: finite carrier and nonnegative weights are supplied;
   normalization is not selector authority.
+- Gauge algebra: `C^3(base) x C^2(fiber)` carrier, weak-axis/fiber split,
+  Gauss/link rules, `MR_color`, and chiral `su(2)_L` remain supplied/open.
 
 Textbook/literature items are comparator context only in this block.

@@ -1,6 +1,7 @@
 # Action Normalization Convention-Free Selection No-Go
 
-**Date:** 2026-04-12; no-go repair 2026-05-26
+**Date:** 2026-04-12; no-go repair 2026-05-26; runner certificate repair
+2026-06-16
 **Runner:** `scripts/frontier_action_normalization.py`
 **Claim type:** no_go
 **Status:** exact/bounded negative boundary for convention-free selection of
@@ -49,7 +50,7 @@ normalization conventions.
 ## Preserved Finite Facts
 
 The committed cache `logs/runner-cache/frontier_action_normalization.txt`
-reports:
+and the current runner's structured certificate report:
 
 - every tested positive `c` in the one-dimensional scan converges;
 - the rescaling rows with `c*G = 1` keep `c*phi_max` near `1.22e-02`;
@@ -85,5 +86,9 @@ PYTHONPATH=scripts python3 scripts/frontier_action_normalization.py
 Expected summary:
 
 ```text
-PASS=42 FAIL=0
+PASS=16 FAIL=0
 ```
+
+The structured certificate is a runner-artifact repair only. It does not add an
+audit verdict, does not select a convention-free value of `c`, and does not
+promote the row beyond the narrowed no-go boundary.

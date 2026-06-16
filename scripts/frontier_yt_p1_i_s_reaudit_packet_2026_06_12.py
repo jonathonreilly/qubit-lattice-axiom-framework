@@ -33,6 +33,8 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md"
 COLOR_NOTE = ROOT / "docs" / "YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md"
 BZ_NOTE = ROOT / "docs" / "YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md"
+CANONICAL_CERT_NOTE = ROOT / "docs" / "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
+PLAQUETTE_NOTE = ROOT / "docs" / "PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
 MASTER_NOTE = ROOT / "docs" / "YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md"
 
 SYMBOLIC_RUNNER = ROOT / "scripts" / "frontier_yt_p1_i1_lattice_pt_symbolic.py"
@@ -94,6 +96,8 @@ def block_1_packet_presence() -> None:
         NOTE,
         COLOR_NOTE,
         BZ_NOTE,
+        CANONICAL_CERT_NOTE,
+        PLAQUETTE_NOTE,
         MASTER_NOTE,
         SYMBOLIC_RUNNER,
         COLOR_RUNNER,
@@ -132,6 +136,9 @@ def block_2_source_boundary() -> None:
     check("citation note remains bounded theorem", "**Claim type:** bounded_theorem" in note)
     check("citation note keeps legacy conditional arithmetic", "conditional arithmetic lemma" in note)
     check("citation note names native arithmetic bridge", "framework-native arithmetic bridge" in note)
+    check("citation note links native BZ row as markdown dependency", "](YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md)" in note)
+    check("citation note links canonical alpha certificate", "](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)" in note)
+    check("citation note links parent plaquette surface", "](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)" in note)
 
 
 def block_3_prior_reduction_and_color() -> None:
@@ -152,6 +159,26 @@ def block_3_prior_reduction_and_color() -> None:
     check("color cache states C_A = 3", "C_A = 3" in color)
     check("color cache states T_F * n_f = 3", "T_F * n_f" in color and "= 3" in color)
     check("color cache states exact three-channel decomposition", "Three-channel decomposition matches" in color)
+
+
+def block_3b_canonical_alpha_certificate() -> None:
+    print("\n" + "=" * 72)
+    print("BLOCK 3b: canonical alpha/plaquette value certificate")
+    print("=" * 72)
+
+    cert = text(CANONICAL_CERT_NOTE)
+    cert_flat = compact(cert)
+    bz = text(BZ_NOTE)
+    p1 = text(NOTE)
+
+    check("canonical certificate exists", CANONICAL_CERT_NOTE.exists())
+    check("canonical certificate is bounded theorem", "**Claim type:** bounded_theorem" in cert)
+    check("canonical certificate says no new axiom", "No new axiom" in cert)
+    check("canonical certificate says parent plaquette is not derived", "does not derive the Wilson plaquette value" in cert_flat)
+    check("canonical certificate links plaquette parent", "](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)" in cert)
+    check("canonical certificate displays alpha_LM/(4pi)", "alpha_LM/(4pi)" in cert)
+    check("BZ note links canonical certificate", "](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)" in bz)
+    check("P1 note consumes canonical certificate only after audit", "canonical alpha/plaquette value certificate" in p1 and "independently audited clean" in p1)
 
 
 def block_4_conditional_arithmetic() -> None:
@@ -263,6 +290,7 @@ def main() -> int:
         block_1_packet_presence()
         block_2_source_boundary()
         block_3_prior_reduction_and_color()
+        block_3b_canonical_alpha_certificate()
         block_4_conditional_arithmetic()
         block_5_native_bz_candidate()
         block_6_scope_firewall()

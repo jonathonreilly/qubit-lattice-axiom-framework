@@ -1,0 +1,24 @@
+loop_slug: yt-p1-native-bz-deps-20260616
+branch: physics-loop/yt-p1-native-bz-deps-20260616
+base_ref: origin/main
+base_commit: 9e5a74bd5
+goal: "Repair the YT P1 I_S post-audit blocker by exposing the native BZ and canonical alpha/plaquette dependency edges."
+target_claim_id: yt_p1_i_s_lattice_pt_citation_note_2026-04-17
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "YT P1 I_S can be re-audited after the native BZ row and canonical alpha certificate are independently audited."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md
+  - scripts/frontier_canonical_plaquette_alpha_lm_value_certificate_2026_06_16.py
+  - logs/runner-cache/frontier_canonical_plaquette_alpha_lm_value_certificate_2026_06_16.txt
+  - docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md
+  - docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md
+  - scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
+  - logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt
+open_imports:
+  - "Native full-staggered BZ quadrature row still requires independent audit."
+  - "Canonical alpha certificate consumes the scoped plaquette reuse value; it does not derive the plaquette itself."
+next_exact_action: "Open PR and let review/audit evaluate the new dependency chain."
+stop_condition: "Block closed as source-side dependency-edge repair PR."

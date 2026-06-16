@@ -17,10 +17,13 @@ analogue, the associated P1 contribution is recomputed at
 The source-side repair surface for re-audit is more precise: the supplied
 bracket is not load-bearing for the framework-native candidate. The native
 quadrature row
-`docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md` computes
+[`YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`](YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md)
+computes
 `I_S_native = 3.902217` on the exact `Cl(3) x Z^3` `H_unit` surface. If that
-quadrature row is independently audited clean, this row can be read as the
-native arithmetic bridge
+quadrature row and the canonical alpha/plaquette value certificate
+[`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)
+are independently audited clean with retained-grade dependency closure, this
+row can be read as the native arithmetic bridge
 
 ```
     P1_native = (alpha_LM / (4 pi)) * C_F * I_S_native
@@ -34,9 +37,14 @@ native candidate arithmetic, and no audit should treat the bracket as retained
 unless the bracket itself is separately accepted.
 
 The canonical numerical science lane is
-`docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`, which
-performs a full-staggered BZ quadrature on the retained surface and must be
-audited on its own. This citation row should be treated as:
+[`YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`](YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md),
+which performs a full-staggered BZ quadrature on the canonical surface and
+must be audited on its own. The canonical arithmetic constants are exposed
+through
+[`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md),
+which depends on
+[`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md).
+This citation row should be treated as:
 
 - a conditional arithmetic/literature-context witness for the supplied
   `I_S in [4,10]` bracket; and
@@ -46,12 +54,12 @@ audited on its own. This citation row should be treated as:
 ## Authority notice
 
 This note is a **conditional citation-and-bound arithmetic** layer. It does **not** modify the master obstruction theorem
-`docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`,
+[`YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`](YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md),
 and it does **not** promote the retention status of the prior P1 sub-theorems:
 
-- `docs/YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md`
+- [`YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md`](YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md)
   (no algebraic shortcut);
-- `docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`
+- [`YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`](YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md)
   (retained `Δ_R = C_F · I_1 + C_A · I_2 + T_F n_f · I_3`);
 - the prior P1 symbolic reduction note / runner chain
   (`scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py` +
@@ -73,17 +81,20 @@ retained proof of that value. What the citation surface adds is narrower:
    assumes the standard fundamental-Yukawa value `I_S = 2` in the `α/(4π)` convention);
 5. mark clearly whether the P1 budget carried on the obstruction theorem is revised up, down,
    or left unchanged, and if so by how much;
-6. in the 2026-06-15 repair section, expose the separate native-BZ row as the
+6. in the 2026-06-16 dependency-edge repair, expose the separate native-BZ row as the
    candidate framework-native supplier and compute the corresponding
    `P1_native` arithmetic without importing the literature bracket.
 
 Read it together with:
 
-- `docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md` (retained `C_F`/`C_A`/`T_F n_f` decomposition)
-- `docs/YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md` (no-algebraic-shortcut)
-- `docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md` (retained exact tree-level identity `y_t_bare = g_bare / sqrt(2 N_c)`)
-- `docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md` (subordinate `delta_PT = 1.92%` support discussion)
-- `docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md` (master primitive-tracking theorem; not modified by this note)
+- [`YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`](YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md) (native BZ quadrature candidate; independently audited on its own row)
+- [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) (canonical arithmetic certificate for `P`, `u_0`, `alpha_LM`, and `alpha_LM/(4pi)`)
+- [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) (parent plaquette reuse surface)
+- [`YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`](YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md) (retained `C_F`/`C_A`/`T_F n_f` decomposition)
+- [`YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md`](YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md) (no-algebraic-shortcut)
+- [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) (retained exact tree-level identity `y_t_bare = g_bare / sqrt(2 N_c)`)
+- [`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md) (subordinate `delta_PT = 1.92%` support discussion)
+- [`YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`](YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md) (master primitive-tracking theorem; not modified by this note)
 - `scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py` and
   `logs/retained/yt_p1_i1_lattice_pt_symbolic_2026-04-17.log` (retained symbolic
   `I_1 = I_S − I_V` reduction; `I_V = 0` on the conserved-current surface)
@@ -150,9 +161,10 @@ No claim is made here that the bracket constitutes a framework-native derivation
 of `I_S` on the `Cl(3) × Z^3` action. The packaged `1.92%` remains a defensible
 standard-fundamental reference point under the `I_S = 2` assumption. A canonical
 positive numerical result must come from a framework-native 1-loop BZ integration
-on the retained action, such as the separate full-staggered quadrature lane. The
-2026-06-15 repair below records the arithmetic bridge that can consume that
-lane after independent audit.
+on the canonical action, such as the separate full-staggered quadrature lane.
+The 2026-06-16 dependency-edge repair records the arithmetic bridge that can
+consume that lane and the canonical alpha/plaquette certificate after
+independent audit.
 
 ## 1. Retained foundations
 

@@ -1,5 +1,18 @@
 # y_t Quasi-Fixed-Point Insensitivity Support Note
 
+> ⚠ **SCOPE CLARIFICATION (2026-06-16) — the focusing is real but does NOT control
+> the corrected P1/Δ_R matching error.** This note's QFP focusing is correct
+> (`frontier_yt_qfp_insensitivity.py`: baseline `m_t = 169.4 GeV` MS̄, local
+> sensitivity `dy_t(v)/dy_t(M_Pl) = 0.90`, focusing `R ≈ 2`). But it is **only
+> ~2×**, and its "insensitivity PASS" uses an assumed `y_t(M_Pl)` band `[0.3, 0.6]`
+> (≈±15–30%) **predicated on the small ~2% P1 matching that has since been found
+> defective**. The corrected matching is `Δ_R ≈ +50%` (scalar `/N_TASTE`
+> double-count + IR-regulator-dependent fermion channel; see
+> `YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md`),
+> which takes `y_t(M_Pl) ∈ [0.22, 0.65]` and `m_t(pole) ∈ ~[114, 197] GeV`. So the
+> focusing protects the m_t **ceiling** (~197 GeV) but NOT its **precision**; this
+> note does not establish a controlled m_t.
+
 **Date:** 2026-04-14
 **Status:** bounded support
 **Script:** `scripts/frontier_yt_qfp_insensitivity.py`

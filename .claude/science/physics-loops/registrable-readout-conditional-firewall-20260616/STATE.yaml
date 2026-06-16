@@ -1,0 +1,19 @@
+loop: registrable-readout-conditional-firewall-20260616
+mode: source_repair
+target_claim_id: registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10
+target_status: bounded-support
+actual_current_surface_status: conditional-support
+branch: physics-loop/registrable-readout-conditional-firewall-20260616
+base: origin/main@ba46f7843d538e48b25d2de109d58125e82269cc
+current_block: post-audit source firewall
+files_touched:
+  - docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md
+  - scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py
+  - logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt
+open_imports:
+  - physical strong-CP mass-phase readout equals the supplied determinant-character/log-character Record surface
+  - physical AC_phi_lambda species readout equals the supplied unordered-multiset Record surface
+  - R-eta magnitude chain for |delta|
+  - R2 PL/ABSS global bridge
+audit_boundary: no audit ledger, queue, publication, Tier-A registry, or status-surface edits
+next_exact_action: reviewer can audit whether the narrowed source now matches the conditional algebra the runner verifies

@@ -1,6 +1,6 @@
 # Registrable Determinant-Character Readout Is Additive-Plus-Even Hence Phase-Free — Narrow Bounded Theorem
 
-**Date:** 2026-06-10 (2026-06-12: two boundary-naming citations — the |delta|-magnitude chain note and the hw-complementation support note — are demoted from dependency links to context; both are cited only to name what this note does NOT close, and the sin(3 delta) / symmetric-function facts used by Consequence B are verified directly in the primary runner.)
+**Date:** 2026-06-10 (2026-06-12: two boundary-naming citations — the |delta|-magnitude chain note and the hw-complementation support note — are demoted from dependency links to context; both are cited only to name what this note does NOT close, and the sin(3 delta) / symmetric-function facts used by Conditional Implication B are verified directly in the primary runner. 2026-06-16: post-audit source firewall removes bridge-discharge language and scopes both downstream uses as conditional algebra inside the supplied readout context.)
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status:** source-side claim-boundary declaration only — a narrow conditional
@@ -12,7 +12,7 @@ or predict an audit outcome and does not edit the audit-lane-owned Tier-A
 registry, ledger, queue, or publication-status surfaces.
 **Primary runner:**
 [`scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py`](../scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py)
-(latest local run: SCORECARD: PASS=38, FAIL=0; previous cached log:
+(latest local run: SCORECARD: PASS=46, FAIL=0; paired cached log:
 [`logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt`](../logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt))
 
 ## Boundary
@@ -20,9 +20,11 @@ registry, ledger, queue, or publication-status surfaces.
 This note proves one narrow structural theorem about scalar readouts in a
 supplied readout context satisfying the **Record** constraints plus an explicit
 determinant-character / log-character homomorphism boundary for the
-phase-bearing determinant component, and applies it to the two registrability bridges
-named open by
+phase-bearing determinant component. It records the conditional algebra that
+the two registrability bridges named open by
 [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md).
+would be able to use if a separate physical-readout theorem supplies the
+missing identification.
 
 It does **not** retire either Tier-A admission, edit
 `docs/audit/data/tier_a_admissions.json`, remove bounded status from any
@@ -30,8 +32,10 @@ consumer, derive `|delta| = 2/9`, supply the global `Cl(3)/Z^3 -> PL S^3 x R`
 identification, close strong-CP premise 1 ("no bare `theta` slot"), or change
 the Record axiom boundary. It does **not** derive phase-group additivity from
 Record finite additivity. It supplies a registrability structure theorem on the
-explicit determinant-character / log-character homomorphism surface and its two
-direct consequences, with the surviving residuals named explicitly.
+explicit determinant-character / log-character homomorphism surface and two
+conditional downstream implications, with the surviving residuals named
+explicitly. It does **not** discharge, close, or exhaust the physical
+strong-CP mass phase or AC_phi_lambda species readout bridges.
 
 ## The Record boundary and the extra homomorphism boundary
 
@@ -129,32 +133,33 @@ determinant-class phase index is therefore `k = 0`; modulus/log-modulus data is
 the surviving phase-free class within the determinant-character /
 log-character boundary.
 
-## Consequence A — strong-CP determinant-readout bridge (blocker (a))
+## Conditional Implication A — strong-CP determinant-readout algebra (blocker (a))
 
 The named-open bridge in the Tier-A K/CPT note asks that the physical
 `arg det(M_u M_d)` contribution used by
-[`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) be **exhausted by
-the determinant-class registrable readout**, with no phase-sensitive
+[`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) be represented
+by the determinant-class registrable readout, with no phase-sensitive
 non-multiplicative or action-level datum remaining relevant to that premise.
+This note does not prove that physical identification.
 
 `arg det(M_u M_d) = arg det M_u + arg det M_d` is the additive sector-phase sum
 (T3, T8 in the runner). By T5 its determinant-character / log-character
 homomorphic registrable content is zero: on that Record-compatible
-homomorphism surface the determinant **phase** is exhausted by the `k = 0`
+homomorphism surface the determinant **phase** vanishes by the `k = 0`
 (modulus) character. Broader K-even record-additive phase functions, including
 per-sector `sum cos(theta_j)`, are not ruled out by Record; they are outside
 this homomorphism theorem. The
-multiplicative determinant-character class is therefore exhaustive for the
-registrable mass-surface **phase** readout only under the explicit
+multiplicative determinant-character class is therefore phase-free for the
+supplied determinant-character **phase** readout only under the explicit
 determinant-character / log-character boundary.
 
-This **discharges the determinant-phase content of the positive-real
-mass-orientation premise on the determinant-character registrable surface**. It
-does so from the Record boundary plus the explicit determinant-character /
-log-character readout boundary and the cited determinant/readout surfaces,
-threading the hostile guard.
+This is a conditional algebraic implication, not a bridge discharge. To use it
+as a strong-CP source-side bridge input, a separate retained theorem still has to
+identify the physical mass-orientation readout with this supplied
+Record-registrable determinant-character / log-character surface and rule out
+additional action-level orientation-sensitive data.
 
-**What Consequence A does NOT close** (carried, not erased):
+**What Conditional Implication A does NOT close** (carried, not erased):
 
 - **Strong-CP premise 1**, "no bare `theta` slot is admissible", is a *separate*
   action-surface premise. It was shown not derivable from retained reflection
@@ -169,11 +174,13 @@ threading the hostile guard.
   readout must be registrable or homomorphic in this sense. That
   identification remains the strong-CP / AC_phi_lambda modeling premise.
 
-## Consequence B — AC_phi_lambda unordered-multiset registrability (blocker (b-i))
+## Conditional Implication B — AC_phi_lambda unordered-multiset algebra (blocker (b-i))
 
-The same Tier-A note's Registry Consequence asks for the **unordered-multiset
+The same Tier-A note's registry consequence asks for the **unordered-multiset
 registrability bridge** before the orientation lemma can reduce AC_phi_lambda to
 a magnitude-only atom.
+This note does not prove that the physical species readout is exactly that
+unordered-multiset surface.
 
 For the AC_phi_lambda Hermitian circulant
 `H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T`, the runner verifies
@@ -184,17 +191,18 @@ conjugation. The elementary symmetric polynomials are all **even** in `delta`
 multiset is `K`-even and Record-registrable as orbit data. The sign of `delta`
 lives only in the orientation-odd `sin(3 delta)` line, which is `K`-**odd** and
 therefore not a scalar on the realized `K`/CPT orbit unless it is collapsed to
-zero or to the unordered orbit. This consequence uses the Orbit clause directly;
-it does not require pretending that every K-even phase function is
-determinant-character additive.
+zero or to the unordered orbit. This conditional implication uses the Orbit
+clause directly; it does not require pretending that every K-even phase
+function is determinant-character additive.
 
-Hence the Record-registrable species surface is exactly the unordered mass
-multiset (the symmetric functions), and the sign / orientation of `delta` is
-not extra scalar orbit content. This **closes the unordered-multiset
-registrability bridge** and reduces AC_phi_lambda to the magnitude-only atom
-`|delta|`, exactly the reduction the orientation lemma was waiting on.
+Hence, inside the supplied Record-registrable unordered-multiset context, the
+surviving scalar species data is the unordered mass multiset (the symmetric
+functions), and the sign / orientation of `delta` is not extra scalar orbit
+content. This conditionally isolates the sign-erasure algebra that a later
+physical-readout bridge would need; it does not by itself reduce the physical
+AC_phi_lambda admission to the magnitude-only atom `|delta|`.
 
-**What Consequence B does NOT close** (carried, not erased):
+**What Conditional Implication B does NOT close** (carried, not erased):
 
 - The `|delta|` **magnitude** value (`2/9`) and its single-summand readout still
   depend on the named readout identification **R-eta** of
@@ -209,11 +217,11 @@ registrability bridge** and reduces AC_phi_lambda to the magnitude-only atom
   provably requiring the PL Poincaré conjecture (Perelman), TOP = PL in
   dimension 3 (Moise), and van Kampen `pi_1 = 0`. These are standard external
   mathematics, named LIVE there, **not** on the framework surface, and **not** a
-  question of what Record registers. The unordered-multiset registrability
-  reduction here is independent of R2: it asks only whether the
-  already-computed symmetric data is the registrable surface, which is a Record
-  question. R2 therefore remains a separate import-required wall (see the no-go
-  discipline section), not addressed by this note.
+  question of what Record registers. The unordered-multiset algebra here is
+  independent of R2: it asks only whether the already-computed symmetric data is
+  invariant on the supplied orbit surface. R2 therefore remains a separate
+  import-required wall (see the no-go discipline section), not addressed by this
+  note.
 
 ## Why these two bridges share one Record layer
 
@@ -233,9 +241,10 @@ alone supplies phase-group additivity.
 Record boundary (Additivity + K/CPT orbit)
   + determinant-character / log-character homomorphism boundary for phase readout
   => homomorphic determinant phase contribution = 0   (homomorphism forces odd; even forces zero)
-  => (a) det-class phase character k=0 EXHAUSTS the registrable arg det(M_u M_d)
-     only on the explicit homomorphism surface
-  => (b-i) delta-sign not scalar orbit content; species surface = unordered multiset; |delta| atom
+  => (a) det-class phase character k=0 on the supplied homomorphism surface;
+     physical arg det(M_u M_d) identification still open
+  => (b-i) delta-sign is not scalar orbit content on the supplied unordered
+     multiset surface; physical AC_phi_lambda readout identification still open
 
 new axioms: 0     new primitives: 0     new admissions: 0     new imports: 0
 residuals named: strong-CP premise 1 (separate); standing readout-context /
@@ -253,12 +262,12 @@ import-required wall, off the Record layer."
 
 | route | what it would attempt | result | marker |
 |---|---|---|---|
-| Record-registrability closes R2 | derive the global PL `S^3` identification from what Record registers | FAILS: R2 is manifold topology, not a readout-class question; Record supplies no geometry | RULED OUT (category mismatch) |
+| Record-registrability supplies R2 | derive the global PL `S^3` identification from what Record registers | FAILS: R2 is manifold topology, not a readout-class question; Record supplies no geometry | RULED OUT (category mismatch) |
 | Finite-R cone-cap → global PL | identify the compactification with `PL S^3` from finite caps | FAILS: Euler characteristic blind among closed orientable 3-manifolds | RULED OUT BY PRIOR (`KOIDE_APS_C3_FIXED_LOCUS_...` D2) |
 | Local ABSS prerequisites ⇒ global | upgrade the local Morse-Bott/spin/lift checks to the global identification | FAILS: local checks are conditional on the ambient already being `PL S^3 x R` | RULED OUT BY PRIOR (same note, Part C) |
 | Replace R2 with a new geometric primitive | adopt the `PL S^3` ambient as a framework primitive | INFEASIBLE: no-new-primitive rule; this would be an unapproved primitive | RULED OUT (policy) |
 | Import Perelman/Moise/van Kampen as derivation steps | use the external theorems to close R2 inside the framework | NOT a closure: these are external math; they may be a named open / disclosed comparator, never a derivation step on the framework surface | ATTEMPTED → bounded (import-required) |
-| Unordered-multiset bridge avoids R2 | show (b-i) does not route through R2 at all | SUCCEEDS: (b-i) is closed here independently of R2; R2 is load-bearing only for the magnitude / single-summand readout | ATTEMPTED → (b-i) closed, R2 isolated |
+| Unordered-multiset algebra avoids R2 | show the supplied-orbit sign-erasure calculation does not route through R2 | SUCCEEDS only as conditional algebra: R2 is not used in the symmetric-function parity check; physical readout identification remains open | ATTEMPTED -> conditional algebra isolated, R2 still open |
 
 Six routes named; the residual is correctly bounded, not a premature no-go.
 
@@ -267,12 +276,13 @@ Six routes named; the residual is correctly bounded, not a premature no-go.
 The surviving walls are independent: (W1) strong-CP premise 1 (action-surface
 admissibility of a bare `theta` slot); (W2) the standing readout-context
 identification (physical readout satisfies the Record registrability
-constraints); (W3) the `|delta|`
+constraints and the determinant-character / unordered-multiset surfaces);
+(W3) the `|delta|`
 magnitude via R-eta; (W4) R2 the global PL/ABSS identification. None follows from
 another: W1 is about the gauge action, W2 about modeling the readout, W3 about a
 dimensionless readout identification, W4 about manifold topology. The theorem
-collapses none of them into another; it removes a *fifth* item (phase/sign
-freedom) that previously rode along with W2.
+collapses none of them into another; it removes phase/sign freedom only inside
+the supplied readout class.
 
 ### N3 — Hidden-wall scan
 
@@ -295,18 +305,22 @@ No witness is repurposed.
 
 ### N5 — Rhetoric audit
 
-"The determinant phase is unregistrable" is verified only at the
+"The homomorphic determinant phase is zero on the supplied readout surface" is verified only at the
 determinant-character / log-character homomorphism resolution (T3–T5) and the
 product-determinant resolution (T8); it is **not** claimed for arbitrary
 Record-additive K-even phase functions (T6 keeps `sum cos(theta_j)` as the
 guard). "Reduces to the magnitude-only atom" is the sign/orientation removal
-only; the magnitude is explicitly left open. "Off this layer" for R2 is the
-category claim (topology vs. readout class), checked as a boundary witness
-(T10).
+only inside the supplied unordered-multiset context; the physical readout
+identification and magnitude are explicitly left open. "Off this layer" for R2
+is the category claim (topology vs. readout class), checked as a boundary
+witness (T10).
 
 ### N6 — Partial-closure path scan
 
-No new axiom or primitive is proposed. The legitimate closure path for R2 is to
+No new axiom or primitive is proposed. The legitimate closure path for the
+physical-readout wall is a separate retained theorem identifying the strong-CP
+mass phase and AC_phi_lambda species data with the supplied Record-registrable
+surfaces used here. The legitimate closure path for R2 is to
 **derive or audit** the global identification on the framework surface (the
 external-math content), exactly as `KOIDE_APS_C3_FIXED_LOCUS_...` records it
 LIVE. The AC_phi_lambda convention-class reclassification (the Y0 precedent) is
@@ -332,7 +346,7 @@ The Record reclassification (Record moved from Tier-A to an approved axiom node)
 retired a wall by an owner governance decision plus the minimality policy, not by
 a new axiom. That is the template the AC_phi_lambda convention-class move would
 follow — but only **after** this theory chain lands and the audit lane acts. This
-note prepares that path (Consequence B) without enacting it. No structurally
+note records conditional algebra for that path without enacting it. No structurally
 similar wall was retired by a mechanism overlooked here.
 
 ## What this note does NOT claim
@@ -357,28 +371,31 @@ similar wall was retired by a mechanism overlooked here.
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — the Record
   axiom boundary (finite record additivity and `K`/CPT orbit invariance).
 - [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
-  — the two named-open registrability bridges this note addresses, and the
-  AC_phi_lambda circulant form (L2) consumed in Consequence B.
+  — the two named-open registrability bridges that motivate the conditional
+  algebra here, and the AC_phi_lambda circulant form (L2) consumed in
+  Conditional Implication B.
 - [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) — the
   selected-surface strong-CP premise whose mass-orientation phase content
-  Consequence A discharges on the registrable surface.
+  Conditional Implication A bounds only after a separate physical-readout
+  identification is supplied.
 - [`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)
-  — the distinct premise-1 no-go, cited to scope what Consequence A does NOT
-  close.
+  — the distinct premise-1 no-go, cited to scope what Conditional Implication A
+  does NOT close.
 - [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   — where R2 (the global PL/ABSS bridge) is named open; cited to bound
-  Consequence B.
+  Conditional Implication B.
 
 Context (not load-bearing: cited only to name boundaries; no content is consumed):
 
 - `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md` — names
-  the still-open `|delta|` magnitude chain (R-eta) that Consequence B explicitly does
-  NOT close; the theorem and both consequences consume no content from it.
+  the still-open `|delta|` magnitude chain (R-eta) that Conditional Implication B explicitly does
+  NOT close; the theorem and both conditional implications consume no content
+  from it.
 - `ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md` —
   corroborating context for the orientation-odd `sin(3 delta)` line; the
-  symmetric-function evenness and `sin(3 delta)` K-oddness used by Consequence B are
-  verified directly in this note's primary runner, so no content is consumed from the
-  support note.
+  symmetric-function evenness and `sin(3 delta)` K-oddness used by Conditional
+  Implication B are verified directly in this note's primary runner, so no
+  content is consumed from the support note.
 
 **No-promotion statement:** this note does not promote, demote, or set the audit
 status of any dependency. The independent audit lane is the only status

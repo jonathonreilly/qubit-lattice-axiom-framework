@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12",
         "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
         "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
         "pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26",
         "record_prerecord_instrument_kernel_gate_2026-06-06",
         "s3_time_tensor_build_memo",
         "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
-        "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08"
+        "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
+        "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "828fc534203be72db94077de0adfca166ecf9107f105aa5cb707512e3a629b38",
+      "note_hash": "4844801a6bff6c87240e71086c00c1d5f7673199fe06f10e0529d3ef9d6d79d6",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

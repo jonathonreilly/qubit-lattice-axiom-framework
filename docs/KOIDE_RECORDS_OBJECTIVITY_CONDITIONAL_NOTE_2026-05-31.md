@@ -142,3 +142,20 @@ approved admission of the equal-block `(1,1)` sector measure and the
 records/objectivity maximization principle that chooses it. Re-audit should
 not treat the conditional equal-weight input as derived. This repair adds no
 new selection axiom, measure, observed lepton input, or status promotion.
+
+## 2026-06-16 Post-Audit Source Boundary
+
+The latest audit result confirms that the algebraic extremum is correct and
+that the two selector inputs remain supplied. This note therefore stays a
+conditional algebra certificate only:
+
+```text
+supplied equal-block (1,1) metric
+  + supplied records/objectivity maximization selector
+  => r = 1/2 and Q = 2/3.
+```
+
+It does not derive equal-block weighting from Record, does not derive the
+objectivity selector from dephasing, and does not turn normalized records into
+a physical measure. The usable repair path is separate source science: derive
+one or both selector inputs, or explicitly admit them outside this note.

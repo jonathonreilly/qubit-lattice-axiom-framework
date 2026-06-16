@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 r"""
-FS stress-test: the fermion sign is "forced-modulo emergent-Lorentz + R", not a baseline admission if R closes
+FS stress-test: conditional route map for "forced-modulo emergent-Lorentz + R"
 =====================================================================================================================
 
 Output of the repo's /exercise skill (5-subagent fan-out + literature) run as a
@@ -10,11 +10,12 @@ an irreducible admission".  HARD CONSTRAINT (owner): introduce NO new
 import/principle/axiom beyond the approved Planck scale-reference primitive; only
 conclude a new principle is needed if genuinely forced.
 
-REFINED VERDICT.  The current route does not require a new principle beyond Planck.  It
-reclassifies from "irreducible admission" to "FORCED-MODULO realization-gate
-identification + emergent-Lorentz + R" -- conditional on the Link-B
+REFINED ROUTE MAP.  The current route does not add a new principle beyond
+Planck.  It proposes a conditional "FORCED-MODULO realization-gate
+identification + emergent-Lorentz + R" route -- conditional on the Link-B
 realization-gate identification, a framework TARGET (emergent Lorentz), and a
-buildable reconstruction R, not on a new axiom.  The 4-link forcing chain:
+buildable reconstruction R.  This runner does not derive those residuals or
+close FS.  The 4-link route map:
 
   LINK A  qubit carries spin-1/2          : RETAINED (per_site_su2_spin_half); and
           the rotation su(2) S_i=sigma_i/2 ARE the Clifford Spin(3) bivector gens
@@ -37,7 +38,7 @@ buildable reconstruction R, not on a new axiom.  The 4-link forcing chain:
   boost-spinor + the antiparticle sign WITHOUT presupposing the fermionic branch
   (currently circular).  These are buildable science, not axioms.
 
-REFUTED: the last un-refuted static opening (multi-loop graph-braid cocycle) is
+REFUTED STATIC OPENING: the last un-refuted static opening (multi-loop graph-braid cocycle) is
 ALSO statistics-blind -- both boson and fermion satisfy the multi-loop cocycle, so
 the hard-core boson is not frustrated out.  (theta-graph: beta1 free, no torsion.)
 
@@ -51,10 +52,13 @@ No new axiom invented.
 Run: python3 scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py
 """
 
-import sys
 import numpy as np
+from pathlib import Path
+import sys
 
 PASS, FAIL = [], []
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md"
 
 
 def check(name, cond, detail=""):
@@ -71,8 +75,8 @@ def block1_engine():
     check("spin-1/2 CAR Hamiltonian is bounded below (>=0)", np.min(np.diag(H_fermion)) >= 0)
     check("spin-1/2 CCR attempt is UNBOUNDED below (has -E): inconsistent (Streater-Wightman)",
           np.min(np.diag(H_boson_attempt)) < 0)
-    check("=> spin-1/2 + Lorentz + positivity => fermionic FORCED; spin-0 hard-core boson excluded",
-          True, "the engine is rigorous (comparator: Pauli 1940; Streater-Wightman)")
+    check("comparator engine: spin-1/2 + Lorentz + positivity forces fermionic sign",
+          True, "Pauli/Streater-Wightman comparator; Lorentz/positivity are not derived here")
     return True
 
 
@@ -87,7 +91,7 @@ def block2_links():
     for k, (st, d) in links.items():
         print(f"      LINK {k:24s} | {st:28s} | {d}")
     check("LINK A retained; LINK B abstract O_h/Cl3 support is tight but external-spacetime identification remains residual", True)
-    check("residual = LINK-B realization gate + LINK-C continuum upgrade + reconstruction R (buildable, NOT axioms)",
+    check("residual = LINK-B realization gate + LINK-C continuum upgrade + reconstruction R (not derived by this runner)",
           True, "R = free_field_os_wightman_reconstruction (unaudited; currently circular)")
     return True
 
@@ -123,9 +127,9 @@ def block4_cheapest_principle():
 
 def block5_owner_bottom_line():
     print("\n[BLOCK 5] Owner bottom line")
-    check("the current FS route does not need a new principle beyond Planck", True,
-          "it rides on realization-gate identification + emergent Lorentz (a TARGET) + R (buildable reconstruction)")
-    check("reclassify FS: 'forced-modulo realization gate + emergent-Lorentz + R' (conditional on residual/target surfaces), NOT a free admission",
+    check("the current FS route adds no new axiom beyond the existing Planck primitive", True,
+          "it remains conditional on realization-gate identification + emergent Lorentz + R")
+    check("route map only: 'forced-modulo realization gate + emergent-Lorentz + R' is conditional, not closure",
           True)
     check("if a principle were ever forced, it is graded-locality/parity-superselection, not Record itself",
           True)
@@ -135,8 +139,19 @@ def block5_owner_bottom_line():
 
 def main():
     print("=" * 92)
-    print("FS stress-test: 'forced-modulo emergent-Lorentz + R', NOT a free admission needing a new principle")
+    print("FS stress-test: conditional 'forced-modulo emergent-Lorentz + R' route map")
     print("=" * 92)
+    note_text = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    check("note has 2026-06-16 post-audit scope firewall",
+          "2026-06-16 Post-Audit Scope Firewall" in note_text)
+    check("note says runner does not derive realization/Lorentz/R residuals",
+          "derive the external Clifford-to-spacetime identification" in note_flat
+          and "OS-to-Wightman reconstruction" in note_flat
+          and "from the framework baseline" in note_flat)
+    check("note declares route map/stress-test, not FS closure or new axiom",
+          "conditional route map and finite stress-test, not closure of FS" in note_flat
+          and "not a new axiom" in note_flat)
     block1_engine()
     block2_links()
     block3_multiloop_refuted()

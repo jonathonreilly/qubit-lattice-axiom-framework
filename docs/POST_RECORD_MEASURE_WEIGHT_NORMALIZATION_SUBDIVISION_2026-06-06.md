@@ -4,8 +4,9 @@
 **Type:** finite supplied-weight normalization lemma / read-only meta
 subdivision certificate
 **Claim type:** meta
-**Status:** bounded-support source-side for measure/weight subdivision and
-finite supplied-weight normalization certificate semantics;
+**Status:** read-only meta / conditional-support source-side for
+measure/weight subdivision and finite supplied-weight normalization certificate
+semantics;
 audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
@@ -74,6 +75,22 @@ adds or changes rows, the live count printed by the runner supersedes this
 diagnostic export for validation purposes without changing the finite
 normalization lemma.
 
+## 2026-06-16 Post-Audit Retag Boundary
+
+The latest audit result correctly blocks a bounded-theorem reading. This source
+packet is now explicitly split into two non-promoting pieces:
+
+1. a read-only current-ledger subdivision diagnostic for
+   `measure_weight_normalization` rows; and
+2. an exact finite lemma saying supplied nonnegative weights with positive
+   total normalize to a finite measure under that supplied rule.
+
+Neither piece is a Record-derived theorem selecting a carrier, prior, measure,
+Born law, normalization authority, or physical dial. A future positive theorem
+must be a separate source artifact deriving the carrier and weight/measure
+authority; this packet only tells the audit/review machinery where that work is
+missing.
+
 ## Meaning
 
 The Record axiom can type realized post-record information. It does not derive
@@ -97,7 +114,7 @@ measure. It cannot certify that this measure is physically selected.
 ## Status certificate
 
 ```yaml
-actual_current_surface_status: bounded-support
+actual_current_surface_status: conditional-support
 trace_class: upstream_support
 reachability_to_target: supports
 conditional_surface_status: "measure/weight rows are subdivided and finite supplied weights can be normalized, but normalization is not selector authority"

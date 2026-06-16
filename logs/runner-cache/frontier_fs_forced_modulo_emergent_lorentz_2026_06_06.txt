@@ -1,19 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py
-runner_sha256: fc1bcfaa69d8ef9d5cdae6bf9e54c41edf7ee44c369b366fdcb6fa5dfc098bd3
+runner_sha256: fcfce48c3eb68b9c6b3b0daf6e29c96347104cc872dded1b231112e11fcc91e1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ============================================================================================
-FS stress-test: 'forced-modulo emergent-Lorentz + R', NOT a free admission needing a new principle
+FS stress-test: conditional 'forced-modulo emergent-Lorentz + R' route map
 ============================================================================================
+  [PASS] note has 2026-06-16 post-audit scope firewall
+  [PASS] note says runner does not derive realization/Lorentz/R residuals
+  [PASS] note declares route map/stress-test, not FS closure or new axiom
 
 [BLOCK 1] The spin-statistics ENGINE: spin-1/2 bosonic is inconsistent
   [PASS] spin-1/2 CAR Hamiltonian is bounded below (>=0)
   [PASS] spin-1/2 CCR attempt is UNBOUNDED below (has -E): inconsistent (Streater-Wightman)
-  [PASS] => spin-1/2 + Lorentz + positivity => fermionic FORCED; spin-0 hard-core boson excluded  --  the engine is rigorous (comparator: Pauli 1940; Streater-Wightman)
+  [PASS] comparator engine: spin-1/2 + Lorentz + positivity forces fermionic sign  --  Pauli/Streater-Wightman comparator; Lorentz/positivity are not derived here
 
 [BLOCK 2] The 4-link forcing chain + repo status (no new axiom)
       LINK A qubit spin-1/2         | RETAINED                     | per_site_su2_spin_half; = Clifford Spin(3) bivectors (internal_external_su2_merger)
@@ -21,7 +24,7 @@ FS stress-test: 'forced-modulo emergent-Lorentz + R', NOT a free admission needi
       LINK C emergent Lorentz       | TARGET / bounded-conditional | emergent_lorentz_invariance retained_bounded; NOT a new axiom
       LINK D spin-statistics thm    | comparator (engine rigorous) | spin-1/2-bosonic inconsistent; Dirac-Kahler evaded
   [PASS] LINK A retained; LINK B abstract O_h/Cl3 support is tight but external-spacetime identification remains residual
-  [PASS] residual = LINK-B realization gate + LINK-C continuum upgrade + reconstruction R (buildable, NOT axioms)  --  R = free_field_os_wightman_reconstruction (unaudited; currently circular)
+  [PASS] residual = LINK-B realization gate + LINK-C continuum upgrade + reconstruction R (not derived by this runner)  --  R = free_field_os_wightman_reconstruction (unaudited; currently circular)
 
 [BLOCK 3] The last static opening (multi-loop graph-braid) is REFUTED (statistics-blind)
   [PASS] HCB (boson) survives the multi-loop cocycle
@@ -34,13 +37,13 @@ FS stress-test: 'forced-modulo emergent-Lorentz + R', NOT a free admission needi
   [PASS] NOT currently forced: the continuum/R route remains open => do not invoke it prematurely
 
 [BLOCK 5] Owner bottom line
-  [PASS] the current FS route does not need a new principle beyond Planck  --  it rides on realization-gate identification + emergent Lorentz (a TARGET) + R (buildable reconstruction)
-  [PASS] reclassify FS: 'forced-modulo realization gate + emergent-Lorentz + R' (conditional on residual/target surfaces), NOT a free admission
+  [PASS] the current FS route adds no new axiom beyond the existing Planck primitive  --  it remains conditional on realization-gate identification + emergent Lorentz + R
+  [PASS] route map only: 'forced-modulo realization gate + emergent-Lorentz + R' is conditional, not closure
   [PASS] if a principle were ever forced, it is graded-locality/parity-superselection, not Record itself
   [PASS] no new axiom invented; all four FS no-gos remain concordant for the STATIC baseline only
 
 ============================================================================================
-SCORECARD:  PASS = 15   FAIL = 0
+SCORECARD:  PASS = 18   FAIL = 0
 ============================================================================================
 
 ----- stderr -----

@@ -443,3 +443,18 @@ Its only function is to provide a citeable one-hop authority for the
 shell-averaging plus radial-harmonic projection construction so
 downstream notes register the import cleanly instead of carrying it as
 a `SourceFileLoader` runner import without a wrapper.
+
+## Retarget: shell-helper surface now derived from primitives (2026-06-16)
+
+The exterior / shell-localization helper surface this note rests on (shell-mean
+profile equality, exterior projector `Pi_R^ext`, sewing-band shell source
+`sigma_R = H Pi_R^ext`, radial-DtN kernel, one-parameter reduced-shell law) is
+now **derived from framework primitives** -- the `Z^3` nearest-neighbor Laplacian
+and the cubic `O_h` symmetry -- in
+`docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md`
+(runner-verified `PASS=14`), replacing the imported `_frontier_loader` helper
+surface. This note's shell-localization residual is therefore resolved; it
+**awaits independent re-audit** (`bounded -> retained`). No audit status is
+asserted here -- the re-audit is the lane's call. Any non-shell residual (a
+GR / tensor completion or the lattice-Green `1/r` Maradudin asymptotic) is out
+of scope and unaffected.

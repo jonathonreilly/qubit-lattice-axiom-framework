@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/scalar_trace_tensor_helper_packet_2026_06_16.py
+runner_sha256: bc579d505f71c5b300e8ed2a9ba197cb194258484316918404aa3293107430ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Scalar-trace tensor helper source/cache packet
+========================================================================
+[PASS] primary no-go runner has static import: import frontier_tensorial_einstein_regge_completion as tcomp
+[PASS] primary no-go runner has static import: import frontier_same_source_metric_ansatz_scan as same_source
+[PASS] primary no-go runner has static import: import frontier_coarse_grained_exterior_law as coarse
+
+tensorial Einstein/Regge completion probes
+[PASS] scripts/frontier_tensorial_einstein_regge_completion.py exists
+[PASS] scripts/frontier_tensorial_einstein_regge_completion.py has substantive source -- lines=304
+[PASS] scripts/frontier_tensorial_einstein_regge_completion.py exposes `def probe_family`
+[PASS] scripts/frontier_tensorial_einstein_regge_completion.py exposes `def ricci_and_einstein`
+[PASS] scripts/frontier_tensorial_einstein_regge_completion.py exposes `def scalar_bridge_action`
+    sha256=14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536
+[PASS] tensorial Einstein/Regge completion probes cache exists -- logs/runner-cache/frontier_tensorial_einstein_regge_completion.txt
+[PASS] tensorial Einstein/Regge completion probes cache names helper runner -- scripts/frontier_tensorial_einstein_regge_completion.py
+[PASS] tensorial Einstein/Regge completion probes cache is SHA-fresh -- 14301f71a9b2
+[PASS] tensorial Einstein/Regge completion probes cache exited cleanly -- status=ok exit=0
+[PASS] tensorial Einstein/Regge completion probes cache output is passing
+
+same-source local O_h source family
+[PASS] scripts/frontier_same_source_metric_ansatz_scan.py exists
+[PASS] scripts/frontier_same_source_metric_ansatz_scan.py has substantive source -- lines=335
+[PASS] scripts/frontier_same_source_metric_ansatz_scan.py exposes `def build_best_phi_grid`
+[PASS] scripts/frontier_same_source_metric_ansatz_scan.py exposes `def residual_norm`
+[PASS] scripts/frontier_same_source_metric_ansatz_scan.py exposes `def positivity_ok`
+    sha256=cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94
+[PASS] same-source local O_h source family cache exists -- logs/runner-cache/frontier_same_source_metric_ansatz_scan.txt
+[PASS] same-source local O_h source family cache names helper runner -- scripts/frontier_same_source_metric_ansatz_scan.py
+[PASS] same-source local O_h source family cache is SHA-fresh -- cc0e24b12c6e
+[PASS] same-source local O_h source family cache exited cleanly -- status=ok exit=0
+[PASS] same-source local O_h source family cache output is passing
+
+coarse-grained finite-rank exterior law
+[PASS] scripts/frontier_coarse_grained_exterior_law.py exists
+[PASS] scripts/frontier_coarse_grained_exterior_law.py has substantive source -- lines=247
+[PASS] scripts/frontier_coarse_grained_exterior_law.py exposes `def build_finite_rank_phi_grid`
+[PASS] scripts/frontier_coarse_grained_exterior_law.py exposes `def residual_at_radius`
+[PASS] scripts/frontier_coarse_grained_exterior_law.py exposes `def shell_data`
+    sha256=5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02
+[PASS] coarse-grained finite-rank exterior law cache exists -- logs/runner-cache/frontier_coarse_grained_exterior_law.txt
+[PASS] coarse-grained finite-rank exterior law cache names helper runner -- scripts/frontier_coarse_grained_exterior_law.py
+[PASS] coarse-grained finite-rank exterior law cache is SHA-fresh -- 5d8fe1c6d541
+[PASS] coarse-grained finite-rank exterior law cache exited cleanly -- status=ok exit=0
+[PASS] coarse-grained finite-rank exterior law cache output is passing
+
+========================================================================
+SUMMARY: PASS=33 FAIL=0 TOTAL=33
+
+----- stderr -----
+

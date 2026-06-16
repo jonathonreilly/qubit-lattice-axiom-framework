@@ -11,6 +11,8 @@ This branch adds a post-audit Gate B repair that splits `GB-S1`:
 
 `GB-S2` and `GB-S3` remain open. The parent Gate B row remains an open gate.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4070
+
 ## Verification
 
 - `python3 scripts/gate_b_weak_field_source_action_interface_2026_06_16.py`

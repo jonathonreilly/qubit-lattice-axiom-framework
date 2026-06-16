@@ -68,6 +68,22 @@ source graph, the all-period site-license note is the downstream consumer of
 this note's monomial/winding-budget lemma, so this note records that candidate
 by plain filename rather than by a dependency edge.
 
+## 2026-06-16 B-W interface no-go
+
+[`KINETIC_BW_OS0_IDENTIFICATION_BRIDGE_INTERFACE_NO_GO_NOTE_2026-06-16.md`](KINETIC_BW_OS0_IDENTIFICATION_BRIDGE_INTERFACE_NO_GO_NOTE_2026-06-16.md)
+sharpens the remaining B-W residual. It proves that the unit real-time band
+slope checked here does not, by itself, determine the OS0 Euclidean
+kinetic-form coefficient: positive Euclidean transfer envelopes
+`E_E(k)=r |omega(k)|` with different `r > 0` preserve the same saturated
+unitary band theorem but infer different OS0 slopes. Therefore B-W cannot be
+treated as an automatic conventionless consequence of `|v|=1`; a retained
+closure must derive the specific readout/normalization rule `E_E(k)=|omega(k)|`
+in the same tick/edge units, or keep the primitive-retirement consequence
+conditional on that bridge.
+
+This is a negative route-pruning artifact, not a primitive retirement and not
+an audit verdict.
+
 ## Premises, with provenance (each graded honestly)
 
 - **(P1) Strictness of the realized tick** — a retained source note plus a
@@ -121,7 +137,10 @@ by plain filename rather than by a dependency edge.
   with the OS0 Euclidean kinetic-form ratio `c_t/c_s` is an additional
   first-order Wick/readout bridge. The runner's own G2 keeps the two one-tick
   objects (positive transfer vs unitary) distinct, so B-W is not bundled into
-  the band theorem.
+  the band theorem. The 2026-06-16 B-W interface no-go proves this distinction
+  is load-bearing: unit real-time slope permits `E_E(k)=r |omega(k)|` transfer
+  envelopes with arbitrary positive `r` unless the B-W readout rule fixes
+  `r=1`.
 
 ## The theorem (1D / per-axis, exact, runner Parts B-D)
 
@@ -310,6 +329,7 @@ winding cell" and "winding is impossible in continuous time."
 - [PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md](PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md) — the strict-reading precedent (NOT a premise; cited for the reading only, since its D2 consumes the target primitive).
 - `SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md` — non-dependency source-side candidate discharge for the finite-period P1/P4 licensed-tick dichotomy residual. It consumes this note's monomial/winding-budget lemma when read as an all-period bridge, so it must not be represented as an upstream authority of this note.
 - [TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md](TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md) — source-side candidate discharge reducing the bare P2/P3 tick readings to spectrum-reflection transport plus the channel envelope.
+- [KINETIC_BW_OS0_IDENTIFICATION_BRIDGE_INTERFACE_NO_GO_NOTE_2026-06-16.md](KINETIC_BW_OS0_IDENTIFICATION_BRIDGE_INTERFACE_NO_GO_NOTE_2026-06-16.md) — negative route-pruning packet: B-W is not automatic from unit real-time slope; a retained closure must derive the `r=1` OS0 readout/normalization rule.
 - [RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md](RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md) — the `phi` offset class (retained).
 - [MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md](MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md) — the consequence-map row (`audited_renaming`).
 

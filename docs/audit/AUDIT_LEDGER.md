@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 218 |
+| **retained** | 219 |
 | **retained_no_go** | 213 |
 | **retained_bounded** | 945 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1437 |
+| unaudited | 1436 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1392 |
+| `audited_clean` | 1393 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1754 |
+| `unaudited` | 1753 |
 
 | claim_type | count |
 |---|---:|
@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1120 | 47.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 890 | 45.30 | `unaudited` | unaudited |
@@ -1325,6 +1325,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
@@ -19247,6 +19248,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner computes rather than imports the SU(3) plaquette bound inputs, enumerates the Z^4 plaquette adjacency constants, and solves the analytic η_bound threshold. The standard KP criterion then supplies analyticity and exponential clustering below the threshold, so the bounded floor claim closes within its stated scope.
 - **rationale:** Independent checks of the displayed constants give Δ=20, ηcrit=1/(21e(1+e))≈0.004711, β0≈ln(1+ηcrit)=0.00470, and β0/6≈0.078%. The runner source is not a print-only certificate: it enumerates the plaquette graph, evaluates the SU(3) class-function calibration, and uses the analytic Hoeffding/Jensen η_bound for the floor. The supplied upstream authority is retained_bounded, which is retained-grade for this bounded theorem, and the note leaves the remaining (β0,6] interval open rather than consuming it as closed evidence.
 - **auditor confidence:** medium
+
+### `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`
+
+- **Note:** [`SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Algebraic K1-K3 quadratic Casimir on the cited 3D symmetric base carrier V_3 with Gell-Mann normalization Tr[T^aT^b]=(1/2)delta^{ab}; no physical SM color identification audited or consumed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-015813-8ed76e0027-su3_casimir_fundamental_alge`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Centrality follows because i f^{abc}(T^aT^c+T^cT^a) is an antisymmetric-symmetric contraction, and then Schur plus Tr[C_2]=8·(1/2)=4=3c_2(3) gives c_2(3)=4/3.  _(class `A`)_
+- **chain closes:** True — The cited retained-bounded authority supplies the algebraic SU(3) fundamental action on V_3 and the trace normalization. The proof then closes by standard Lie-algebra antisymmetry, Schur's lemma, and exact trace arithmetic; the cited authority's deferred physical-color bridge is outside this claim scope.
+- **rationale:** The load-bearing math is a genuine algebraic closure over the cited SU(3) fundamental embedding: the centrality contraction has the correct antisymmetry/symmetry structure, and the independent trace route gives 3c_2=4. The runner instantiates the Gell-Mann generators and verifies Hermiticity, normalization, closure, scalar Casimir behavior, and the 4/3 value, but the clean verdict does not rely on stdout alone. No PDG, fitted value, calibrated scale, or physical-quark readout enters the audited claim.
+- **auditor confidence:** high
 
 ### `su3_casimir_fundamental_theorem_note_2026-05-02`
 

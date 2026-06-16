@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
         "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
         "su3_dabc_symmetric_theorem_note_2026-05-02",
         "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
         "universal_gr_3plus1_constraint_multiplier_structure_derived_fiber_metric_bounded_theorem_note_2026-06-09",
         "universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08",
         "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
-        "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28"
+        "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
+        "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e488a1d266d6ce31e49f3f41fc2e332ed322c2fca20374ee61df25406c98bfe0",
+      "note_hash": "67b20402887a69f0261768b65bebcb4b9d63117e699e79cc3ece64a79538540f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113781,7 +113781,7 @@
       "positive_theorem": 612
     },
     "edge_count": 12975,
-    "leaf_count": 1111,
+    "leaf_count": 1110,
     "node_count": 3453,
     "root_count": 1066,
     "runners_with_path": 3039

@@ -401,14 +401,13 @@ def main() -> int:
     info("  - axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29: "
          "retained (positive_theorem) -- U2 chirality-aware uniqueness")
     info("  - axiom_first_spin_statistics_theorem_note_2026-04-29: "
-         "audited_conditional (bounded_theorem, 2026-06-10 re-scope) -- "
+         "retained_bounded (bounded_theorem) -- "
          "consumed ONLY for the S2' CCR/free-boson exclusion")
     info("  - staggered_dirac_substep1_grassmann_forcing_bridge_narrow_"
-         "theorem_note_2026-05-16: positive_theorem (2026-06-10 U4-discharge "
-         "upgrade, re-audit pending; prior grade retained_bounded)")
+         "theorem_note_2026-05-16: retained (positive_theorem)")
     info("  - staggered_dirac_substep1_statistics_gl_f_conditional_"
-         "discriminator_bounded_theorem_note_2026-06-10: bounded_theorem, "
-         "unaudited -- GL(F) conditional selection (T2 wiring)")
+         "discriminator_bounded_theorem_note_2026-06-10: retained_bounded -- "
+         "GL(F) conditional selection (T2 wiring)")
     info("  - staggered_dirac_substep1_statistics_agnostic_no_forcing_note_"
          "2026-05-25: retained_no_go -- the unconditional-forcing refutation")
     info("  - GL(F) supplier candidates: Berezin-RP reconstruction derivation "

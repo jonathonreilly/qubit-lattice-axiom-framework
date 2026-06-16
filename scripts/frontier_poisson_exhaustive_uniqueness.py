@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Exhaustive Poisson uniqueness: L_alpha parametric family + anisotropy + non-local.
+"""Finite-grid Poisson candidate enumeration: L_alpha samples + variants.
 
-Upgrades the self-consistency result from "preferred among 5 tested operators"
-to "unique among all local symmetric operators" by testing:
+Narrows the old "preferred among 5 tested operators" story to the bounded
+runner surface actually computed here:
 
-Part 1: Parametric family L_alpha = (-nabla^2)^alpha for alpha in [0.25, 3.0]
+Part 1: sampled family L_alpha = (-nabla^2)^alpha for alpha in [0.25, 3.0]
          using spectral decomposition L_alpha = sum lambda_i^alpha |v_i><v_i|.
-         Prediction: only alpha = 1 gives attractive gravity with beta ~ 1.
+         Diagnostic: beta varies monotonically over the sampled alpha list.
 
 Part 2: Anisotropic Laplacians with different directional weights.
          Prediction: rescaled axes still give 1/r Green's function.
@@ -16,6 +16,9 @@ Part 3: Non-local operators (next-nearest-neighbor, exponential coupling).
 
 Part 4: Higher-order stencils (4th/6th-order accurate discrete Laplacians).
          Should all converge to same result (all approximate same operator).
+
+Boundary: this runner does not prove continuum alpha=1 uniqueness, does not
+interpolate alpha, and does not exhaust all local symmetric operators.
 
 PStack experiment: poisson-exhaustive-uniqueness
 """
@@ -728,13 +731,12 @@ def main():
     t_start = time.time()
 
     print("=" * 90)
-    print("EXHAUSTIVE POISSON UNIQUENESS: PARAMETRIC L_alpha FAMILY")
+    print("FINITE-GRID POISSON CANDIDATE ENUMERATION")
     print("=" * 90)
     print()
-    print("Goal: upgrade 'preferred among 5 tested operators' to 'unique among")
-    print("all local symmetric operators' by testing the continuous parametric")
-    print("family L_alpha = (-nabla^2)^alpha plus anisotropic, non-local, and")
-    print("higher-order discretizations.")
+    print("Goal: bounded N=16 diagnostic over an explicitly enumerated sampled")
+    print("candidate set: fractional L_alpha rows plus anisotropic, non-local,")
+    print("and higher-order finite-difference rows.")
     print()
 
     N = 16
@@ -834,8 +836,9 @@ def main():
         print(f"  Beta varies monotonically with alpha (confirmed by the table above).")
         print(f"  On this N={N} grid, the zero-crossing of beta(alpha)-1 occurs near")
         print(f"  alpha~{best_alpha:.1f} due to finite-size bias (all betas are inflated).")
-        print(f"  Key structural result: beta(alpha) is monotonically decreasing,")
-        print(f"  so there is a UNIQUE alpha giving beta=1, regardless of finite-size shift.")
+        print(f"  Bounded diagnostic result: beta(alpha) is monotonically decreasing")
+        print(f"  on the sampled alpha list. Continuum alpha=1 uniqueness remains")
+        print(f"  outside this runner and requires a separate bridge.")
 
     # ==================================================================
     # PART 2: Anisotropic Laplacians
@@ -1007,7 +1010,7 @@ def main():
     # ==================================================================
     print()
     print("=" * 90)
-    print("GRAND SUMMARY: POISSON UNIQUENESS")
+    print("GRAND SUMMARY: FINITE POISSON CANDIDATE DIAGNOSTIC")
     print("=" * 90)
     print()
 
@@ -1017,7 +1020,7 @@ def main():
     physical = [r for r in all_results
                 if r['converged'] and r['attractive'] and r['monotonic']]
 
-    print(f"Total operators tested: {total_tested}")
+    print(f"Total runner rows tested: {total_tested}")
     print(f"Converged + attractive + monotonic: {len(physical)}")
     print()
 
@@ -1057,13 +1060,11 @@ def main():
     print("-" * 90)
     print("CONCLUSION:")
     print()
-    print("1. SPECTRAL UNIQUENESS: Among L_alpha = (-nabla^2)^alpha, beta varies")
-    print("   monotonically with alpha. There exists a UNIQUE alpha giving beta=1.")
+    print("1. SAMPLED SPECTRAL DIAGNOSTIC: Among the sampled")
+    print("   L_alpha = (-nabla^2)^alpha rows, beta varies monotonically with alpha.")
     print("   On this finite grid (N=16), the crossing occurs near alpha~1.5 due to")
-    print("   finite-size bias inflating all beta values. The theoretical argument")
-    print("   (inverse Laplacian Green's function ~ 1/r in 3D) places the crossing")
-    print("   at alpha=1 in the continuum limit. The monotonicity of beta(alpha)")
-    print("   guarantees uniqueness regardless of finite-size shift.")
+    print("   finite-size bias inflating all beta values. A continuum alpha=1")
+    print("   selection theorem is not supplied by this runner.")
     print()
     print("2. CONNECTIVITY MATCHING: non-local operators (NNN, long-range) diverge")
     print("   in self-consistent iteration. The field equation must match the")
@@ -1072,9 +1073,8 @@ def main():
     print("3. ROBUSTNESS: the result is stable under anisotropic weights and")
     print("   higher-order stencils (all approximate the same operator, nabla^2).")
     print()
-    print("This upgrades the claim from 'preferred among 5 ad-hoc operators'")
-    print("to 'unique minimum in the continuous family L_alpha, with matching")
-    print("connectivity constraint ruling out non-local alternatives.'")
+    print("This supports only the finite-grid candidate-enumeration claim in the")
+    print("source note. It is not a continuum Poisson uniqueness theorem.")
 
     dt = time.time() - t_start
     print(f"\nTotal runtime: {dt:.0f}s ({dt/60:.1f} min)")
@@ -1087,11 +1087,9 @@ def main():
     print("SAFE CLAIMS")
     print("=" * 90)
     print()
-    print("1. In the one-parameter family L_alpha = (-nabla^2)^alpha, the mass")
-    print("   exponent beta varies monotonically with alpha. Sub-Laplacians")
-    print("   (alpha<1) give beta>1, super-Laplacians (alpha>1) give beta<1.")
-    print("   The zero-crossing (beta=1) is unique by monotonicity. On a finite")
-    print("   N=16 grid the crossing is near alpha~1.5 due to finite-size bias.")
+    print("1. In the sampled L_alpha = (-nabla^2)^alpha rows, the mass exponent")
+    print("   beta varies monotonically with alpha. On the finite N=16 grid the")
+    print("   closest sampled crossing is near alpha~1.5 due to finite-size bias.")
     print()
     print("2. The self-consistent fixed point is robust to anisotropic weights")
     print("   and higher-order finite-difference stencils (beta spread < 0.02).")
@@ -1100,9 +1098,9 @@ def main():
     print("   consistent iteration, confirming the field equation must match")
     print("   the propagator's nearest-neighbor connectivity.")
     print()
-    print("4. Combined: Poisson is unique as the alpha=1 minimum of |beta-1| in")
-    print("   the fractional family, AND the field operator's connectivity must")
-    print("   match the propagator's graph structure.")
+    print("4. Combined: within the explicit finite candidate set, the standard")
+    print("   nearest-neighbor Poisson row is the bounded baseline and the sampled")
+    print("   alternatives expose the finite-grid behavior described in the note.")
     print()
 
 

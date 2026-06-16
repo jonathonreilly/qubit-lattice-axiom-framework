@@ -103,7 +103,7 @@ identities at exact symbolic precision on a small finite block.
 
 ## Cited authorities (one hop)
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) —
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) —
   current public framework memo. Supplies:
   - **Axiom 1 (one-qubit operator algebra):** per-site algebra
     `A_x ≅ M_2(C)`, equivalently `Cl(3,0)` as a real algebra. Used to
@@ -373,7 +373,7 @@ and the identities (T1)-(T4) verified by direct entrywise comparison.
 
 Load-bearing markdown-link upstream (single one-hop dependency):
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) —
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) —
   current public framework memo supplying the one-qubit per-site
   dim-two factor and the `Z^3` lattice with cubic translation
   structure.

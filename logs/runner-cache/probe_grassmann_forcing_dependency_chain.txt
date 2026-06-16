@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/probe_grassmann_forcing_dependency_chain.py
-runner_sha256: bb35da95a17bd87f36ef792c7515593bcf7575af8879538c440416008256d86d
+runner_sha256: f316b7d6530583524914160384cd35608ffad47a754d30956e4f0d8ab4d43cf1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 
@@ -49,9 +49,9 @@ status: ok
 [INFO] declared grades of the consumed chain (printed, not asserted):
 [INFO]   - cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02: retained (positive_theorem) -- per-site dim-2 readout
 [INFO]   - axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29: retained (positive_theorem) -- U2 chirality-aware uniqueness
-[INFO]   - axiom_first_spin_statistics_theorem_note_2026-04-29: audited_conditional (bounded_theorem, 2026-06-10 re-scope) -- consumed ONLY for the S2' CCR/free-boson exclusion
-[INFO]   - staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16: positive_theorem (2026-06-10 U4-discharge upgrade, re-audit pending; prior grade retained_bounded)
-[INFO]   - staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10: bounded_theorem, unaudited -- GL(F) conditional selection (T2 wiring)
+[INFO]   - axiom_first_spin_statistics_theorem_note_2026-04-29: retained_bounded (bounded_theorem) -- consumed ONLY for the S2' CCR/free-boson exclusion
+[INFO]   - staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16: retained (positive_theorem)
+[INFO]   - staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10: retained_bounded -- GL(F) conditional selection (T2 wiring)
 [INFO]   - staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25: retained_no_go -- the unconditional-forcing refutation
 [INFO]   - GL(F) supplier candidates: Berezin-RP reconstruction derivation (source landed, bounded_theorem, unaudited); multi-loop cocycle route closed as no-go (plain-text open-branch pointer until its own review-loop pass lands or rejects it); Tier-A FS admission NOT registered
 

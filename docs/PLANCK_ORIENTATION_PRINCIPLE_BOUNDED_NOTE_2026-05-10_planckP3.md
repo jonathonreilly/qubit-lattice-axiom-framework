@@ -153,7 +153,7 @@ Until that gate closes, this orientation principle is `bounded_theorem`.
 | ID | Statement | Class |
 |---|---|---|
 | RP | Action-level temporal-axis sign rule `eta_t(theta x) = - eta_t(x)`, `eta_i(theta x) = + eta_i(x)` | cited support from `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29` (`proposed_retained`, audit-pending) |
-| SC | Temporal direction is the unique RP-admissible reflection axis on the staggered-Dirac action | cited support from `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03` Step 4 (`proposed_retained`, audit-pending; PR 418) |
+| SC | Axis-conditional single-clock cap under B-AXIS: one supplied blocked time step, one declared evolution axis/transfer construction, and no admitted independent commuting transfer factor | conditional source boundary from `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03`; temporal-axis selection is not derived from RP uniqueness |
 | LR | Forward-time `alpha_t(O) = e^{itH} O e^{-itH}` with `v_LR < infty`; `H = -log(T)/a_tau` | cited support from `AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01` (`proposed_retained`, audit-pending) |
 | AT | Definite 3+1 time direction with single-clock structure | per `ANOMALY_FORCES_TIME_THEOREM` (bounded_theorem on main; admission (i) is open ABJ-on-lattice) |
 | EVCELL | `H_cell = tensor_a C^2_a ~= Lambda^* span(t, x, y, z)` (Boolean coframe register) | branch context per `PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25` |

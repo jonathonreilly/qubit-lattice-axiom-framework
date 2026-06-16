@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/single_clock_baxis_downstream_firewall_2026_06_15.py
+runner_sha256: 1cb6c56ee2d0d65e55186ce3e6b6f815248907ea188fd10f8ca7ac35368ed2dd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+Single-clock downstream B-AXIS firewall
+========================================================================
+  [PASS] A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md names B-AXIS
+  [PASS] A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md marks single-clock conditional
+  [PASS] A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md names B-AXIS
+  [PASS] A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md marks single-clock conditional
+  [PASS] PLANCK_ORIENTATION_PRINCIPLE_BOUNDED_NOTE_2026-05-10_planckP3.md names B-AXIS
+  [PASS] PLANCK_ORIENTATION_PRINCIPLE_BOUNDED_NOTE_2026-05-10_planckP3.md marks single-clock conditional
+  [PASS] STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md names B-AXIS
+  [PASS] STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md marks single-clock conditional
+  [PASS] stale phrase absent: Single-clock codimension-1 evolution; uniqueness
+  [PASS] stale phrase absent: Temporal direction is the unique RP-admissible r
+  [PASS] stale phrase absent: unique RP-admissible reflection axis induces a p
+  [PASS] stale phrase absent: temporal direction τ is the **unique** lattice d
+  [PASS] stale phrase absent: no spatial axis admits RP
+  [PASS] stale phrase absent: (S3) of the single-clock theorem produces a NEGA
+  [PASS] stale phrase absent: retained per [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENS
+  [PASS] stale phrase absent: proposed_retained`, audit-pending; PR 418
+SUMMARY: PASS=16 FAIL=0
+
+----- stderr -----
+

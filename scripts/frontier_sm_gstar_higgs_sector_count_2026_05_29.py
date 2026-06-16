@@ -17,9 +17,8 @@ The trap is conflating two distinct notions of "Higgs":
 
 This runner verifies, at exact rational precision via `fractions.Fraction`
 and with explicit linear algebra where a texture statement is load-bearing,
-that these are DIFFERENT objects and that, conditional on the named bridge from
-the Ward H_unit scalar-singlet structure to one complex EWSB doublet in the
-thermal census, the one-doublet count gives g_* = 106.75.
+that these are DIFFERENT objects and that, over the retained-bounded declared
+SM inventory premise, the one-doublet count gives g_* = 106.75.
 
 It does two distinct jobs:
 
@@ -41,8 +40,9 @@ It does two distinct jobs:
    q_H is a right-basis relabeling for Y_e Y_e^dag, hence gauge-redundant for
    PMNS. None of these add a thermalized scalar dof to the census.
 
-3. **Bridge-boundary checks.** The runner checks that the note names the
-   missing H_unit -> EWSB-doublet bridge and does not present the D17
+3. **Inventory-premise / bridge-boundary checks.** The runner checks that the
+   note consumes the retained-bounded SM declared-inventory premise, keeps the
+   H_unit -> EWSB-doublet derivation separate, and does not present D17
    scalar-singlet uniqueness as a closed retained proof of thermal field
    content.
 
@@ -54,6 +54,7 @@ assembled from framework structure here, not fitted.
 from __future__ import annotations
 
 from fractions import Fraction
+import json
 from pathlib import Path
 import re
 import sys
@@ -69,6 +70,8 @@ NOTE_PATH = (
 HUNIT_NO_GO_PATH = (
     ROOT / "docs" / "HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md"
 )
+SM_DOF_PATH = ROOT / "docs" / "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md"
+AUDIT_LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 PASS = 0
 FAIL = 0
@@ -265,10 +268,10 @@ def section_flavor_texture() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Section 3: the 2HDM boundary and the missing EWSB-field-content bridge.
+# Section 3: the retained-bounded inventory premise and native bridge boundary.
 # ---------------------------------------------------------------------------
 def section_2hdm_exclusion() -> None:
-    print("\n[3] 2HDM boundary and missing EWSB-field-content bridge")
+    print("\n[3] retained-bounded inventory premise and native bridge boundary")
 
     # A genuine 2HDM adds an INDEPENDENT complex doublet H_d with its own VEV v_d
     # (tan beta = v_u / v_d). That second doublet carries its own 4 scalar dof and
@@ -285,32 +288,32 @@ def section_2hdm_exclusion() -> None:
     )
 
     text = NOTE_PATH.read_text(encoding="utf-8")
+    sm_text = SM_DOF_PATH.read_text(encoding="utf-8") if SM_DOF_PATH.exists() else ""
     check(
-        "note claim type is open-gate conditional-support and has a 2026-06-12 R-HIGGS firewall",
-        "**Claim type:** open_gate / conditional-support note" in text
-        and "**Type:** open_gate / conditional support" in text
-        and "2026-06-12 audit firewall: R-HIGGS bridge still open" in text
-        and "No new axiom, Tier-A admission" in text,
+        "note claim type is bounded_theorem over retained-bounded declared inventory",
+        "**Claim type:** bounded_theorem" in text
+        and "2026-06-16 audit-unlock repair: retained-bounded inventory premise" in text
+        and "bounded theorem under that premise" in text
+        and "already retained-bounded declared-inventory authority" in text,
     )
     check(
-        "note names the missing H_unit -> EWSB-doublet bridge instead of claiming closure",
-        "does **not** derive the bridge from the" in text
-        and "`H_unit` scalar-singlet structure" in text
-        and "Without that bridge, R-HIGGS" in text
-        and "remains conditional" in text,
+        "SM DOF inventory note supplies the one-complex-doublet declared premise",
+        SM_DOF_PATH.exists()
+        and "complex Higgs doublet" in sm_text
+        and "4 real scalar components" in sm_text
+        and "retained-bounded declared-inventory premise" in text,
     )
     check(
-        "note states no new retained bridge for H_unit, one-Higgs/Z3, or 2HDM support",
-        "This repair takes the narrowing route" in text
-        and "It introduces no new retained or" in text
-        and "H_unit" in text
-        and "one-Higgs/Z3" in text
-        and "2HDM/SUSY" in text,
+        "note keeps H_unit -> EWSB doublet as separate native science, not load-bearing",
+        "does **not** derive `H_unit` as one complex" in text
+        and "native bridge as a separate science problem" in text
+        and "not as the proof input for the full thermal doublet" in text,
     )
     check(
-        "note states g_* = 106.75 only under the named EWSB-field-content bridge",
-        "Under the bridge, `g_* = 106.75` follows" in text
-        and "remaining missing step" in text,
+        "note states g_* = 106.75 under retained-bounded declared inventory",
+        "Under the retained-bounded declared inventory" in text
+        and "`g_* = 106.75` follows" in text
+        and "`H_unit -> full thermal EWSB doublet` derivation remains a separate open bridge" in text,
     )
     check("H_unit representation no-go note exists", HUNIT_NO_GO_PATH.exists())
     no_go_text = HUNIT_NO_GO_PATH.read_text(encoding="utf-8") if HUNIT_NO_GO_PATH.exists() else ""
@@ -321,9 +324,10 @@ def section_2hdm_exclusion() -> None:
         and "not merely missing" in text,
     )
     check(
-        "SM note preserves the viable route after the H_unit no-go",
-        "separate retained-grade or accepted-premise authority" in text
-        and "`g_* = 106.75` Higgs-sector count conditional" in text,
+        "SM note consumes accepted inventory premise without new axiom or audit verdict",
+        "does not add a new axiom" in text
+        and "audit-status change" in text
+        and "Independent audit should re-check" in text,
     )
 
 
@@ -364,8 +368,27 @@ def section_note_checks() -> None:
     check("note file exists", True)
     text = NOTE_PATH.read_text(encoding="utf-8")
 
+    if AUDIT_LEDGER_PATH.exists():
+        ledger = json.loads(AUDIT_LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+        sm_row = ledger.get("sm_relativistic_dof_count_import_note_2026-05-17", {})
+        check(
+            "audit ledger has SM DOF inventory retained_bounded",
+            sm_row.get("claim_type") == "bounded_theorem"
+            and sm_row.get("effective_status") == "retained_bounded",
+            f"claim_type={sm_row.get('claim_type')} effective_status={sm_row.get('effective_status')}",
+        )
+    else:
+        check("audit ledger exists for SM DOF status check", False, str(AUDIT_LEDGER_PATH))
+
     # Honest-outcome and load-bearing strings present in the note.
-    for token in ["106.75", "110.75", "open_gate / conditional support", "conditional-support note", "R-HIGGS", "H_unit"]:
+    for token in [
+        "106.75",
+        "110.75",
+        "bounded_theorem",
+        "retained-bounded declared-inventory premise",
+        "R-HIGGS",
+        "H_unit",
+    ]:
         check(f"note records load-bearing token: {token!r}", token in text)
 
     # Forbidden-import scan: these import strings are allowed ONLY inside the

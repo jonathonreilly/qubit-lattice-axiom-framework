@@ -2,9 +2,11 @@
 
 **Date:** 2026-04-26
 
-**Status:** proposed_retained - explicit strong derivation claim pending audit
-the exact tree-level gauge-boson mass spectrum and charge normalization
-forced by one `SU(2)_L` Higgs doublet of hypercharge `Y_H = 1/2`. It is a
+**Status:** standalone positive electroweak/Higgs theorem over the exact
+tree-level gauge-boson mass spectrum and charge normalization forced by one
+`SU(2)_L` Higgs doublet of hypercharge `Y_H = 1/2`. Status authority remains
+the independent audit lane; this source note does not hand-author audit
+movement. It is a
 structural guardrail for the lattice-scale EW normalization identities,
 the matching-rule conditional EW normalization package, and bounded `M_W`
 same-surface notes. It does not modify, promote, or close any Higgs-mass,

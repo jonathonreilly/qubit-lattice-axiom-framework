@@ -118,9 +118,9 @@ Three parts, each computed by the runner:
 | Lattice/Quantum | One qubit per site (`A_x ≅ M_2(ℂ) ≅ Cl(3,0)`) on the `Z³` substrate | accepted axiom premises per [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) |
 | U2 | `Cl(3)` per-site uniqueness (chirality-aware): faithful complex spinor irreps have dim 2 | retained per [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) |
 | U4 | Per-site Hilbert dim = 2 (chirality-independent) | retained per [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md) |
-| S2′ | Free-boson/CCR exclusion under the explicit CCR hypothesis | audited_conditional (bounded_theorem) per [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) (2026-06-10 re-scope); consumed ONLY for (S2′) |
-| D5 | U4-discharged two-candidate collapse | positive_theorem, re-audit pending (prior ledger grade retained_bounded) per [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) |
-| GL(F) wiring | Conditional discriminator: `{dim = 2} ∧ GL(F)` selects Grassmann/CAR in the explicit three-candidate list | bounded_theorem, unaudited, per [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md) |
+| S2′ | Free-boson/CCR exclusion under the explicit CCR hypothesis | retained_bounded per [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md); consumed ONLY for (S2′) |
+| D5 | U4-discharged two-candidate collapse | retained (positive_theorem) per [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) |
+| GL(F) wiring | Conditional discriminator: `{dim = 2} ∧ GL(F)` selects Grassmann/CAR in the explicit three-candidate list | retained_bounded per [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md) |
 | No-forcing boundary | Two-candidate surface is not statistics-exhaustive; no unconditional forcing | retained_no_go per [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) |
 
 Every T1/T2/T3 ingredient is additionally **recomputed** by the runner
@@ -240,7 +240,7 @@ current supplier chain, with grades (plain-text pointers; none of these
 is consumed as a load-bearing premise of T1–T3):
 
 1. `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`
-   — bounded_theorem, **unaudited** (markdown-linked in §3 for the T2
+   — retained_bounded (markdown-linked in §3 for the T2
    wiring): locates (B-stat) at the single predicate `GL(F)` and proves
    the conditional closure this note re-verifies.
 2. `GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md`
@@ -260,9 +260,9 @@ is consumed as a load-bearing premise of T1–T3):
    registry carries no FS row); admission would be a separate governance
    decision after audit and explicit user approval.
 
-Additional non-`GL(F)` grades this row's cascade waits on: the 05-16
-bridge re-audit (positive_theorem upgrade pending), and the 04-29 S2′ row
-(`audited_conditional`; its named repair is a retained one-hop dim-2
+Additional non-`GL(F)` grades this row's cascade now consumes as audited
+bounded/retained support: the 05-16 bridge row (`retained`) and the 04-29 S2′ row
+(`retained_bounded`; its named repair is a retained one-hop dim-2
 bridge — note that T1 here consumes the retained
 `cl3_per_site_hilbert_dim_two` row directly for exactly that readout, so
 this note's own chain does not inherit that gap).

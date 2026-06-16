@@ -1,11 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
-runner_sha256: 6ad046a0ff6710a90bd604411024f618c68a8623a9fd54fbd5d8c22f61d8339b
+runner_sha256: 6adb894627887de96caeb315348f4f72626538055dd9a42d11cda885e43e8974
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.73
+elapsed_sec: 0.64
 status: ok
 ----- stdout -----
+
+------------------------------------------------------------------------------
+B0 - source-boundary guards: W2/action-level premises quarantined
+------------------------------------------------------------------------------
+PASS: source note is supplied-boundary, not physical bridge closure
+PASS: W2 physical-registrability identification is quarantined
+PASS: action-level determinant datum is supplied, not derived
+PASS: physical/non-registrable/multi-plaquette exclusions remain non-claims
+PASS: source note expected scorecard matches runner count
 
 ------------------------------------------------------------------------------
 B1 - K/CPT orbit structure of the determinant datum (3x3 numeric)
@@ -55,7 +64,7 @@ PASS: kill table: additivity alone admits F6; orbit constancy alone admits F2/F3
 ------------------------------------------------------------------------------
 B5 - action-level composition (per-plaquette class) + named boundary
 ------------------------------------------------------------------------------
-PASS: per-plaquette (single-plane-summand) class: all dual-pair cross-plane mixed derivatives vanish  [composes with retained_bounded P1; no local F.Ftilde slot to host an orientation datum]
+PASS: per-plaquette (single-plane-summand) class: all dual-pair cross-plane mixed derivatives vanish  [composes with retained_bounded cross-plane absence; no local F.Ftilde slot to host an orientation datum]
 PASS: BOUNDARY: registrability of the physical readout (W2) is a standing premise, not derived here  [theorem is conditional on the Record-registrable class (additivity + orbit constancy)]
 PASS: BOUNDARY: strong-CP premise 1 ('no bare theta slot') is a SEPARATE action-surface premise  [RP no-go note keeps it open; this bridge addresses ONLY the mass-orientation datum]
 PASS: BOUNDARY: per-plaquette class is a licensed input (retained_bounded); multi-plaquette/clover reopens a cross-plane slot  [the action-level half is conditional on the supplied class]
@@ -63,7 +72,7 @@ PASS: BOUNDARY: fermion-source/insertion observables carry (D+M)^{-1} dependence
 PASS: BOUNDARY: prior additive+even core note is cited as prior statement (currently unaudited); its legs are re-derived self-contained here  [no unaudited dependency is load-bearing for this runner's checks]
 
 ==============================================================================
-TOTAL: PASS=35 FAIL=0
+TOTAL: PASS=40 FAIL=0
 ==============================================================================
 
 ----- stderr -----

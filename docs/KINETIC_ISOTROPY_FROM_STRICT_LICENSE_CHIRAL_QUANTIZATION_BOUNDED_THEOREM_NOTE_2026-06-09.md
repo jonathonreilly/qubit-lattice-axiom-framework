@@ -8,7 +8,7 @@ free single-particle band velocity; not a primitive retirement)
 set, predict, promote, or demote any audit outcome.
 **Primary runner:**
 [`scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py`](../scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py)
-(SCORECARD: PASS=33, FAIL=0; cached:
+(SCORECARD: PASS=36, FAIL=0; cached:
 [`logs/runner-cache/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.txt`](../logs/runner-cache/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.txt))
 
 ---
@@ -68,6 +68,30 @@ source graph, the all-period site-license note is the downstream consumer of
 this note's monomial/winding-budget lemma, so this note records that candidate
 by plain filename rather than by a dependency edge.
 
+## 2026-06-16 B-W bridge-chain source graph
+
+The current source graph now contains explicit bridge-chain packets for the
+old naked B-W residual. This note records them so re-audit has concrete
+upstream rows to inspect rather than a prose-only bridge name:
+
+- [`BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md`](BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+  computes the exact OS0 inverse map and reduces B-W to the named Wick-IR
+  cone-agreement premise; it also refutes the stronger full Wick-pairing
+  reading for strict ticks.
+- [`WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-06-11.md`](WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+  discharges Wick-IR in the bounded setting into sector alias uniqueness plus
+  the record-stack spectral reading.
+- [`REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md`](REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+  reconciles the exhibited realization-row candidates at the slope consumed by
+  W-IR and exposes the remaining unit/normalization premise.
+
+These are source-side audit candidates and bridge-chain dependencies, not
+status authorities. They do not by themselves retire the
+`kinetic_isotropy_primitive`; they move the residual from an unnamed B-W bridge
+to named rows: spectrum-reflection transport, channel envelope, site-license
+carrier, record-stack spectral reading, the dichotomy's periodicity scope, and
+the remaining realization/unit readings.
+
 ## Premises, with provenance (each graded honestly)
 
 - **(P1) Strictness of the realized tick** — a retained source note plus a
@@ -118,10 +142,10 @@ by plain filename rather than by a dependency edge.
   realized-carrier identification remains a named reading until audited.
 - **(B-W) The OS0 identification bridge** — named, not computed by this note.
   The theorem below quantizes the real-time cone slope. Identifying that slope
-  with the OS0 Euclidean kinetic-form ratio `c_t/c_s` is an additional
-  first-order Wick/readout bridge. The runner's own G2 keeps the two one-tick
-  objects (positive transfer vs unitary) distinct, so B-W is not bundled into
-  the band theorem.
+  with the OS0 Euclidean kinetic-form ratio `c_t/c_s` is an additional bridge
+  chain, now represented by the B-W/Wick-IR/realization rows named above. The
+  runner's own G2 keeps the two one-tick objects (positive transfer vs unitary)
+  distinct, so the bridge chain is not bundled into the band theorem.
 
 ## The theorem (1D / per-axis, exact, runner Parts B-D)
 
@@ -219,10 +243,11 @@ decisions belong to the audit lane.
 
 - **No primitive retirement or registry action.** The theorem does not prove
   the OS0 `c_t = c_s` primitive by itself. Even after the two premise-discharge
-  candidates above are independently audited, that consequence remains
-  conditional on the candidate packets' own named readings, the P4 realized
-  carrier identification, and the B-W bridge. The primitive registry is
-  owner/audit territory.
+  candidates above and the B-W bridge-chain packets are independently audited,
+  that consequence remains conditional on the candidate packets' own named
+  readings, the P4 realized carrier identification, the record-stack spectral
+  reading, and the realization/unit readings named in the bridge chain. The
+  primitive registry is owner/audit territory.
 - **1D / per-axis scope.** In 3D a chiral (Weyl) component is 2-component per
   cell; 2x2 blocks can mix (the split-step witness exists, G1) and the
   enumeration of strict 3D Weyl automata is a separate cycle. Quantization is

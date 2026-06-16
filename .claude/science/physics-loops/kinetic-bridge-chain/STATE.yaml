@@ -1,0 +1,27 @@
+loop: kinetic-bridge-chain
+date: 2026-06-16
+branch: physics-loop/kinetic-bridge-chain-20260616
+base: origin/main
+goal: "Repair the kinetic-isotropy audited-conditional source row by exposing the landed B-W/Wick-IR/realization bridge chain as concrete upstream source dependencies."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Band theorem remains conditional on named readings and upstream bridge-chain rows passing independent audit."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09
+audit_blocker: "missing_bridge_theorem: cheapest repair is to audit or add retained bridge theorems for the realized strict unitary K/CPT-paired winding carrier and for B-W, while keeping the algebraic band theorem scoped separately."
+files_touched:
+  - docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md
+  - scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py
+  - logs/runner-cache/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.txt
+open_imports:
+  - site-license carrier reading
+  - record-stack spectral reading
+  - realization/unit readings
+  - independent audit of upstream bridge-chain source rows
+review_findings: []
+pr_status: pending
+next_exact_action: "Commit, push, open PR, then update this state with the PR URL."
+stop_condition: "Stop this block after the coherent source repair PR is open and checks are green."

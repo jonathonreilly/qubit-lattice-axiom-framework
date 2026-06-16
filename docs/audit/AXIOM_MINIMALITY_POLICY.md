@@ -230,3 +230,51 @@ promoted to axiom or primitive class):
     The `no_go_portfolio` lists are unchanged (verified rows only); the new
     `sharpening_sources` fields list landed source notes whose audit status
     is set only by the audit lane.
+
+Approved scope classification (no axiom, primitive, or Tier-A change; nothing
+added to or removed from any premise registry):
+
+- **2026-06-16 -- past-hypothesis magnitude is a scope condition, not a
+  premise.** Owner approval recorded 2026-06-16. The thermodynamic past
+  hypothesis -- the low-entropy *magnitude* of the initial
+  boundary ("why the boundary was so atypically special"; Penrose
+  ~1-in-10^(10^123)) -- is classified as the framework's
+  **scope / domain-of-applicability condition**, not as a premise in any of the
+  three categories (axiom, primitive, Tier-A). It is the residual named in
+  `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`
+  and the input carved out of the realized-state primitive (2026-06-11 entry
+  above, "Past-hypothesis classification").
+  - **Rationale (physics/logic, not an audit finding).** The arrow's
+    *direction* (record formation), the boundary's *existence* (record
+    durability = append-only well-foundedness), and the *time-axis* are derived
+    separately; the only residual is the low-entropy magnitude, which is
+    (i) *content* -- a measure-relative atypicality value, not a units
+    convention (scale-reference) or a structural graining ratio
+    (kinetic-isotropy), so not a primitive; (ii) *contingent* -- the
+    time-symmetric microdynamics is equally consistent with a high-entropy past
+    (Loschmidt), so not an axiom/law; (iii) *provably non-retirable* -- needed
+    identically by every time-symmetric theory (CM/QM/QFT/GR) and underivable
+    from time-symmetric microdynamics, so not a Tier-A derivation target (which
+    must be retirable). An input that can never be discharged is not a premise
+    the chain rests *on*; it is the antecedent the relevant claims are scoped
+    *by* -- results that use it are honest conditionals ("given a low-entropy
+    past, X"), in the standard laws-versus-initial-conditions sense. A scope
+    condition creates no derivation debt (Tier-A's bounding mechanism), so it
+    does not bound dependents.
+  - **Guardrails.** The low-entropy magnitude must remain absent from both
+    premise registries (`axiom_premise_nodes.json`, `tier_a_admissions.json`)
+    and must not be cited by retained/shipped rows as a dependency. The scope
+    classification is bound to the magnitude *alone*: the derived direction,
+    boundary existence, and time-axis stay unconditional and acquire no
+    conditional tag. No typicality, measure, or specialness assumption is
+    laundered under the "scope" label; the realized-state primitive's
+    counterfactual test continues to police that boundary.
+  - **Machinery.** The three premise categories are unchanged and the
+    past hypothesis is outside all three by construction (this generalizes the
+    realized-state primitive's existing carve-out). No registry row, no
+    `canonical_id`, no `premise_nodes.py` / `compute_effective_status` / schema
+    change; the audited source notes (arrow, existence reduction, realized-state)
+    and the machine registries are left byte-unchanged by this classification.
+    Optional future hardening (separate, not in this change): a one-line audit
+    lint warning if any retained row ever cites the low-entropy magnitude as an
+    upstream dependency.

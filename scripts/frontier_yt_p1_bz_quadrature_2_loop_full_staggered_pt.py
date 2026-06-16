@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
 """
+=============================== CORRECTION (2026-06-16) =======================
+SAME DEFECT class as frontier_yt_p1_bz_quadrature_full_staggered_pt.py — see
+docs/YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md.
+A systemic static audit (2026-06-16) confirmed BOTH defects live in the 8D MC
+integrands: (1) /N_TASTE^n_taste on full-BZ^2 MC averages (spurious double-count;
+n_taste powers asserted, never derived); (2) double-power 1/D_psi^2 fermion lines
+(J_ll, J_Fl, J_Al) with only k=0 continuum subtraction -> IR-regulator-dependent.
+GOOD NEWS: the headline m_t is NOT moved by this — the runner correctly
+self-flags SCHEMATIC and the bound-clamp replaces the corrupt MC with the
+loop-geometric bound, so m_t is fed via the bound, not this integrand.
+DO NOT CITE the per-channel J_X envelopes (Block 5 / the note's Section 3 table,
+e.g. J_ll=+5.29e-2) as 2-loop matching coefficients — they are defective.
+==============================================================================
+
 Frontier runner: P1 BZ Quadrature 2-Loop Schematic 8D Monte Carlo
 (magnitude-envelope check on per-topology 2-loop BZ integrands;
 retention of Delta_R^{(2)} is via loop-geometric bound, NOT via MC).

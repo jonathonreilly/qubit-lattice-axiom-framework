@@ -7,6 +7,11 @@
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py`
 **Claim boundary:** runner-defined constrained optimization diagnostic only.
 
+**2026-06-16 source-language repair:** the fixed `N_e` seed surface,
+transport/readout normalization, and `eta/eta_obs` readout used here are
+runner-defined inputs of this sampled diagnostic. This row does not derive
+them from Tier-A premises and does not cite them as retained bridge coverage.
+
 ## Scope narrowing (2026-05-24 audited_conditional repair)
 
 The 2026-05-10 audit verdict on this row was `audited_conditional` with

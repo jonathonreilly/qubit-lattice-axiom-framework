@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_bw_os0_identification_bridge_interface_2026_06_16.py
+runner_sha256: 59ad495a7f31b3a36b83a89245c38dda4ec99975a561d6bd2dbd23a894cb39e2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+Kinetic B-W OS0 identification bridge interface no-go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+
+A. strict-unitary saturated tick
+[PASS] U(k) is exactly unitary
+[PASS] quasi-energy pair is omega <-> -omega -- [exp(I*k), exp(-I*k)]
+[PASS] real-time group velocity is one
+
+B. Euclidean transfer envelopes are not fixed by U(k)
+[PASS] T_r is a positive contraction for r=1/2 -- T(0.7)=0.704688
+[PASS] T_r is a positive contraction for r=1 -- T(0.7)=0.496585
+[PASS] T_r is a positive contraction for r=2 -- T(0.7)=0.246597
+[PASS] T_r is a positive contraction for r=3 -- T(0.7)=0.122456
+[PASS] same unitary slope permits different Euclidean slopes -- [1/2, 1, 2, 3]
+[PASS] only the supplied r=1 B-W rule gives OS0 ratio one
+
+C. positive transfer and unitary tick are distinct objects
+[PASS] T_r(k) cannot equal exp(i omega) at k=0.4 for r=1/2
+[PASS] T_r(k) cannot equal exp(i omega) at k=0.4 for r=1
+[PASS] T_r(k) cannot equal exp(i omega) at k=0.4 for r=2
+[PASS] no algebraic equality maps the positive envelope to the unitary phase
+
+D. conditional bridge map
+[PASS] if B-W supplies E_E(k)=|omega(k)| on k>=0, OS0 slope is one
+[PASS] without B-W normalization the OS0 slope remains a free positive r
+[PASS] free r changes the inferred c_t/c_s while preserving real-time unit slope
+
+E. source firewall checks
+[PASS] new note declares no_go claim type
+[PASS] new note carries the no-go discipline gate
+[PASS] new note states B-W is not automatic
+[PASS] new note forbids silent B-W identification
+[PASS] target kinetic note cites this B-W interface no-go
+[PASS] target kinetic note still keeps primitive retirement firewalled
+
+SCORECARD: PASS=22 FAIL=0
+VERDICT: B-W is not automatic from the unit real-time band slope. A separate OS0 Wick/readout normalization rule is still required; with the supplied r=1 rule the ratio becomes one.
+
+----- stderr -----
+

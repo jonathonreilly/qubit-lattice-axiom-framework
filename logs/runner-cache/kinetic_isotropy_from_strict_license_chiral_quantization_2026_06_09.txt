@@ -3,7 +3,7 @@ runner: scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06
 runner_sha256: 122b1ca9d227988f7fcbada32cc521ad7affe44964c7f5f5e8cc0f0137146ddb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.59
+elapsed_sec: 2.10
 status: ok
 ----- stdout -----
 

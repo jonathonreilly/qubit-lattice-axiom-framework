@@ -1,0 +1,20 @@
+loop_slug: g2v-u0-interval-reconcile-20260616
+branch: physics-loop/g2v-u0-interval-reconcile-20260616
+base_ref: origin/main
+base_commit: 9e5a74bd5
+goal: "Repair the post-audit g_2_v SU(2) u_0 interval contradiction."
+target_claim_id: g_2_v_bounded_interval_narrow_theorem_note_2026-05-17
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Conditional on the named u_0(SU(2)) interval [0.96,0.98]."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
+  - logs/runner-cache/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.txt
+open_imports:
+  - "No retained/Tier-A SU(2) u_0 value or interval authority is supplied in this branch."
+  - "u_0 = 0.988 is comparator-only and outside the certified interval."
+next_exact_action: "Open PR for review; future science can derive or accepted-premise-register SU(2) u_0."
+stop_condition: "Source contradiction repaired and PR opened."

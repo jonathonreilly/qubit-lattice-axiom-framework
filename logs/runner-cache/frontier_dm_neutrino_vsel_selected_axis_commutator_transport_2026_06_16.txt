@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_neutrino_vsel_selected_axis_commutator_transport_2026_06_16.py
+runner_sha256: b7a106e26cdc1de8b1575b53455fffbbb96e9132060263816a18a012f6d0dfbb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+========================================================================================
+DM-neutrino V_sel selected-axis commutator transport
+========================================================================================
+
+[1] Retained graph-shift selector surface
+PASS: graph shifts are commuting involutions
+PASS: V_graph = Tr H^4 - (1/8)(Tr H^2)^2 = 32 sum phi_i^2 phi_j^2
+      V_graph=32*phi1**2*phi2**2 + 32*phi1**2*phi3**2 + 32*phi2**2*phi3**2
+PASS: graph Hessian at e1 is diag(0,64,64); m_perp=32
+      Hess=Matrix([[0, 0, 0], [0, 64, 0], [0, 0, 64]])
+
+[2] Pure Dirac even-trace route remains blocked
+PASS: Gamma_i are Hermitian Clifford involutions on C^16
+PASS: M(phi)^2 = |phi|^2 I
+PASS: pure even trace invariant is radial, as in the retained no-go
+      pure_even=-16*phi1**4 - 32*phi1**2*phi2**2 - 32*phi1**2*phi3**2 - 16*phi2**4 - 32*phi2**2*phi3**2 - 16*phi3**4
+PASS: pure even trace Hessian does not match graph selector curvature
+      pure Hessian=Matrix([[-192, 0, 0], [0, -64, 0], [0, 0, -64]]), graph Hessian=Matrix([[0, 0, 0], [0, 64, 0], [0, 0, 64]])
+
+[3] Selected-axis commutator curvature bridge
+PASS: normalized selected-axis commutator norm tau([G1,M]^dag [G1,M]) = 4(phi2^2+phi3^2)
+      tau=4*phi2**2 + 4*phi3**2
+PASS: graph-trace-normalized V_axis = 8*tau = 32(phi2^2+phi3^2)
+      V_axis=32*phi2**2 + 32*phi3**2
+PASS: selected-axis commutator Hessian at e1 matches graph Hessian exactly
+      axis Hessian=Matrix([[0, 0, 0], [0, 64, 0], [0, 0, 64]])
+PASS: therefore selected-axis commutator curvature gives m_perp=32
+
+[4] Boundary and teeth
+PASS: without graph trace factor 8, curvature is not m_perp=32
+      no-factor Hessian=Matrix([[0, 0, 0], [0, 8, 0], [0, 0, 8]])
+PASS: averaging over axes removes the selector and fails the graph Hessian
+      axis-averaged Hessian=Matrix([[128/3, 0, 0], [0, 128/3, 0], [0, 0, 128/3]])
+PASS: curvature bridge is not a full potential equality
+      V_axis - V_graph = -32*phi1**2*phi2**2 - 32*phi1**2*phi3**2 - 32*phi2**2*phi3**2 + 32*phi2**2 + 32*phi3**2
+
+[5] Source firewalls
+PASS: note declares bounded support and independent audit authority
+PASS: note states pure even-trace no-go is not reopened
+PASS: note leaves ADM-1, ADM-2, and full physical identification open
+PASS: parent note cites this support bridge without status promotion
+PASS: no-go source remains present and scoped to pure even invariants
+PASS: no audit ledger or queue edit is claimed by the note
+PASS: runner output total is expected by note
+
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

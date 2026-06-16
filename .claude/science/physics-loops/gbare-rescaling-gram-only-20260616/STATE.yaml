@@ -1,0 +1,21 @@
+loop_slug: gbare-rescaling-gram-only-20260616
+branch: physics-loop/gbare-rescaling-gram-only-20260616
+base: origin/main
+target_claim_id: g_bare_rescaling_freedom_removal_theorem_note_2026-05-03
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: demotion
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle_count: 1
+files_touched:
+  - docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
+  - scripts/frontier_g_bare_rescaling_conditional_algebra_check.py
+  - logs/runner-cache/frontier_g_bare_rescaling_conditional_algebra_check.txt
+open_imports:
+  - "Wilson-action normalization/transformation theorem for beta routing remains open."
+review_disposition: pass
+next_exact_action: "Independent audit should re-check the narrowed Gram-only row."
+stop_condition: "Scope narrowed and PR ready."

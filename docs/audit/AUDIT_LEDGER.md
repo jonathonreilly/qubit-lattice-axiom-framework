@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 949 |
+| **retained_bounded** | 950 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1425 |
+| unaudited | 1424 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1398 |
+| `audited_clean` | 1399 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1742 |
+| `unaudited` | 1741 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 509 |
-| `medium` | 906 |
-| `leaf` | 1363 |
+| `medium` | 904 |
+| `leaf` | 1365 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1009 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 890 | 45.30 | `unaudited` | unaudited |
@@ -534,6 +534,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_complex_action_falsifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7638,6 +7639,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** "F_Htt^(0)(g_bare) = (1 / sqrt(6)) * 1 = 1 / sqrt(6)," with no gauge-coupling insertion at tree order.  _(class `A`)_
 - **chain closes:** True — The cited narrow overlap theorem supplies the normalized diagonal Wick-contractor identity and gauge-coupling independence for the operator definition; the source note only specializes it to N_iso=2, N_c=3 and a basis pair. The note explicitly excludes the broader Ward-identification step, so no unproved SM Yukawa readout is needed for the scoped claim.
 - **rationale:** The bounded theorem closes as exact algebra over the supplied narrow overlap authority plus the source note's tree-order no-gauge-insertion argument. There is no tuned numerical comparator, no hidden g_bare dependence in the stated tree-level operator matrix element, and no reliance on the terminal top-Yukawa Ward-identification row within the audited scope. Residual risk is only that downstream uses may overread the internal bare datum as a physical Standard Model top-Yukawa readout, which this note explicitly does not establish.
+- **auditor confidence:** high
+
+### `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28`
+
+- **Note:** [`G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md`](../../docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded proof-walk that the unbroken-Standard-Model supplied thermal inventory P1-P5, together with retained support for the finite counts and the 7/8 fermion thermal weight, gives g_* = 106.75 by exact rational arithmetic.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-024022-dbf8957899-g_star_sm_content_at_leptoge`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied P1-P5 inventory counts N_bosons = 28 and N_fermions = 90 plus the R6 thermal weight 7/8, g_* = 28 + (7/8) * 90 = 427/4 = 106.75.  _(class `A`)_
+- **chain closes:** True — The audited conclusion is explicitly conditional on the registered P1-P5 Standard Model inventory premise packet, not a derivation of that inventory. From those counts and the retained 7/8 thermal bridge, the bosonic total 28, fermionic total 90, and g_* = 427/4 arithmetic all check independently.
+- **rationale:** Issue checked: whether the note derives only the bounded arithmetic it claims, rather than smuggling in a Standard Model inventory derivation. Why this closes: P1-P5 are explicitly scoped as the supplied declared inventory boundary, and the one-hop retained or retained-bounded authorities supply only the named finite support inputs; the independent arithmetic gives 16 + 6 + 2 + 4 = 28, 72 + 12 + 6 = 90, and 28 + 7*90/8 = 427/4. Repair target: none for the bounded proof-walk; a separate unbounded SM-inventory derivation would be a different claim. Claim boundary until further work: this certifies the conditional g_* arithmetic only, not the physical derivation of the SM particle inventory or thermal regime.
 - **auditor confidence:** high
 
 ### `gate_b_complex_action_falsifier_note`

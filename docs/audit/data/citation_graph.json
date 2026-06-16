@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
         "gate_b_dynamics_note",
         "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17",
         "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05",
         "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07",
         "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08",
-        "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10"
+        "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
+        "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e314729de2557bbdb6aced2adb63c652ad8c1ee832d305247d30db7bc4b6296e",
+      "note_hash": "cfb051f4dff7c2cf74278dd669be107037627db330fec4f73b8ee56f4ac7843a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

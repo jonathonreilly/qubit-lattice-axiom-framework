@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1552 |
-| Retained-grade rows, including boxed decorations | 1418 |
+| Applied audit verdicts | 1553 |
+| Retained-grade rows, including boxed decorations | 1419 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 213 |
-| Retained bounded rows | 942 |
+| Retained bounded rows | 943 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1440 |
+| Unaudited rows | 1439 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 43 |
 | Audited renaming rows | 31 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1442 |
+| Total pending rows | 1441 |
 | Ready rows | 36 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
 | Medium pending | 430 |
-| Leaf pending | 460 |
+| Leaf pending | 459 |
 
 Next ready rows by queue order:
 
-- [`record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15`](../../docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
 - [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15`](../../docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
 - [`su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`su3_dabc_symmetric_theorem_note_2026-05-02`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06`](../../docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`universal_gr_3plus1_constraint_multiplier_structure_derived_fiber_metric_bounded_theorem_note_2026-06-09`](../../docs/UNIVERSAL_GR_3PLUS1_CONSTRAINT_MULTIPLIER_STRUCTURE_DERIVED_FIBER_METRIC_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
-- [`universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_FINITE_LATTICE_SCALING_SUPPORT_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
+- [`universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_FINITE_LATTICE_SCALING_SUPPORT_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
 | High nodes | 514 |
-| Medium nodes | 938 |
-| Leaf nodes | 1460 |
+| Medium nodes | 939 |
+| Leaf nodes | 1459 |
 
 Top load-bearing rows by graph score:
 
@@ -94,5 +94,5 @@ Top load-bearing rows by graph score:
 - `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
 - `plaquette_self_consistency_note` - critical; 1008 descendants; score 51.479
 - `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
-- `key_terminology` - critical; 1119 descendants; score 47.629
+- `key_terminology` - critical; 1120 descendants; score 47.631
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 890 descendants; score 45.299

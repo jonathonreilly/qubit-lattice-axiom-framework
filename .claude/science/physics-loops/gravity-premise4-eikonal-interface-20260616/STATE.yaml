@@ -1,0 +1,25 @@
+loop_slug: gravity-premise4-eikonal-interface-20260616
+target_claim_id: gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07
+target_status: bounded-support
+mode: source-side audit unblock
+started_from: origin/main@4e1ee7917
+active_route: fixed-energy eikonal index bridge
+audit_blocker: "missing_bridge_theorem: derive or cite a retained theorem for the additive Hamiltonian shift and the fixed-energy eikonal/Fermat identification n=k/k0, then re-audit the same algebraic packet."
+claim_state:
+  actual_current_surface_status: bounded-support
+  conditional_surface_status: null
+  proposal_allowed: false
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+artifacts:
+  - docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md
+  - scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py
+  - logs/runner-cache/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.txt
+  - docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py
+  - logs/runner-cache/frontier_gravity_premise4_refractive_index_from_dispersion.txt
+checks:
+  - "PYTHONPATH=scripts python3 scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py -> PASS=29 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py -> PASS=26 FAIL=0"
+next_exact_action: "Run audit/review on the PR; if accepted, re-audit the Premise (4) row against the new bridge and retained-bounded weak-field source-response authority."
+stop_condition: "Science block packaged as PR for independent reviewer/auditor."

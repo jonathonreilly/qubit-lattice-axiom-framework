@@ -4,24 +4,27 @@ Cross-checks the KMS condition for the Gibbs state on the
 finite-dim physical Hilbert space H_phys reconstructed from the
 RP transfer matrix on a finite Euclidean-time block.
 
-The script does not re-derive RP or the spectrum condition (those
-are retained support theorems on A_min — see
+The script does not re-derive RP or the spectrum condition (those are
+companion support surfaces over the framework baseline whose effective
+status is decided by the audit pipeline — see
 docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md and
 docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md).
 Instead, it constructs a small explicit Hermitian H >= 0 on a finite
-Hilbert space, builds T = exp(-a_tau H), and verifies the KMS strip
-identity by computing both sides in the eigenbasis of H (which is
-numerically stable for arbitrary z in the strip).
+Hilbert space, builds the positive two-step transfer block
+T = exp(-2 a_tau H), and verifies the KMS strip identity by computing
+both sides in the eigenbasis of H (which is numerically stable for
+arbitrary z in the strip).
 
 Tested identities (all on a generic finite-dim H >= 0):
 
   T1: KMS strip identity  F_{A,B}(t + i beta_th) = G_{A,B}(t)
       with F(z) := < A alpha_z(B) >_beta, G(t) := < alpha_t(B) A >_beta.
-  T2: strip-bound inequality | G_{A,B}(z) | <= ||A|| ||B||  (in
-      operator norm) on z = t + i s with s in [0, beta_th]; this uses
-      the trace-norm bound from the proof.
-  T3: equilibrium uniqueness via the diagonal cyclic identity.
-  T4: path-integral correspondence  Z = tr T^{L_tau} = tr exp(-beta_th H).
+  T2: finite-strip analyticity and the finite-block grown strip bound.
+  T3: equilibrium uniqueness via finite matrix-unit KMS equations,
+      including the degenerate-energy scalar-block condition.
+  T4: path-integral correspondence and native slice-insertion cyclicity:
+      with even raw L_tau and N_tau=L_tau/2 blocked steps,
+      tr(T^{N_tau-j} O T^j) = tr(T^{N_tau} O).
 
 These are all the structural content of the theorem note.
 """
@@ -114,6 +117,31 @@ def operator_norm(M: np.ndarray) -> float:
     return float(np.linalg.norm(M, ord=2))
 
 
+def spectral_matrix(eigvals: np.ndarray, V: np.ndarray, values: np.ndarray) -> np.ndarray:
+    """Return V diag(values) V^* for functions of H."""
+    return V @ np.diag(values) @ V.conj().T
+
+
+def normalized_gibbs_weights(eigvals: np.ndarray, beta_th: float) -> np.ndarray:
+    weights = np.exp(-beta_th * eigvals)
+    return weights / np.sum(weights)
+
+
+def kms_matrix_unit_ratio_residual(eigvals: np.ndarray, probs: np.ndarray, beta_th: float) -> float:
+    """Max residual of p_j = exp(beta(E_i-E_j)) p_i over matrix units.
+
+    This is the finite-dimensional KMS endpoint equation for
+    A = |i><j|, B = |j><i| in the eigenbasis of H.
+    """
+    max_resid = 0.0
+    for i, Ei in enumerate(eigvals):
+        for j, Ej in enumerate(eigvals):
+            lhs = probs[j]
+            rhs = np.exp(beta_th * (Ei - Ej)) * probs[i]
+            max_resid = max(max_resid, abs(lhs - rhs))
+    return float(max_resid)
+
+
 def main() -> None:
     print("=" * 72)
     print("AXIOM-FIRST KMS CONDITION CHECK")
@@ -122,17 +150,23 @@ def main() -> None:
     print("Setup:")
     print("  finite-dim H_phys (modeling RP-reconstructed physical Hilbert space)")
     print("  H = self-adjoint, H >= 0 (modeling spectrum condition SC1, SC2)")
-    print("  T = exp(-a_tau H), Gibbs at beta_th = L_tau a_tau")
+    print("  T = exp(-2 a_tau H), Gibbs at beta_th = L_tau a_tau")
+    print("  raw L_tau is even; N_tau = L_tau/2 blocked transfer factors")
     print()
 
     seed_H = 20260501
     dim = 8
     a_tau = 1.0
-    L_tau = 6
-    beta_th = L_tau * a_tau
+    a_blk = 2.0 * a_tau
+    L_tau = 12
+    assert L_tau % 2 == 0, "two-step blocked KMS check needs even raw L_tau"
+    N_tau = L_tau // 2
+    beta_th = N_tau * a_blk
     print(f"  dim(H_phys) = {dim}")
     print(f"  a_tau       = {a_tau}")
-    print(f"  L_tau       = {L_tau}")
+    print(f"  a_blk       = {a_blk}")
+    print(f"  raw L_tau   = {L_tau}")
+    print(f"  N_tau       = {N_tau}")
     print(f"  beta_th     = {beta_th}")
     print()
 
@@ -217,37 +251,56 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if bound_ok else 'FAIL'}")
     print()
 
-    # ----- Test 3: equilibrium uniqueness sketch -----
+    # ----- Test 3: equilibrium uniqueness by matrix units -----
     print("-" * 72)
-    print("TEST 3: equilibrium uniqueness — Gibbs is the unique alpha_t-")
-    print("        invariant KMS state at beta_th")
+    print("TEST 3: equilibrium uniqueness — finite matrix-unit KMS equations")
     print("-" * 72)
-    print("Diagonal cyclic identity: rho_nn / rho_mm = exp(-beta_th(E_n - E_m))")
-    print("forces rho = exp(-beta_th H) / Z up to overall normalization.")
+    print("For A=|i><j| and B=|j><i|, KMS at t=0 forces")
+    print("  p_j = exp(beta_th(E_i - E_j)) p_i.")
+    print("Inside a degenerate energy block this forces equal weights.")
     print()
-    consistent_rho_diag = np.exp(-beta_th * eigvals)
-    consistent_rho_diag /= consistent_rho_diag.sum()
-    gibbs_rho_diag = np.exp(-beta_th * eigvals)
-    gibbs_rho_diag /= gibbs_rho_diag.sum()
-    uniqueness_resid = float(np.max(np.abs(consistent_rho_diag - gibbs_rho_diag)))
-    print(f"  max | consistent_rho - gibbs_rho | = {uniqueness_resid:.3e}")
-    uniqueness_ok = uniqueness_resid < 1e-12
+
+    deg_eigvals = np.array([0.0, 1.0, 1.0, 2.5, 4.0, 4.0], dtype=float)
+    gibbs_probs = normalized_gibbs_weights(deg_eigvals, beta_th)
+    gibbs_ratio_resid = kms_matrix_unit_ratio_residual(deg_eigvals, gibbs_probs, beta_th)
+
+    distorted_probs = gibbs_probs.copy()
+    distorted_probs[1] *= 1.25
+    distorted_probs[2] *= 0.75
+    distorted_probs /= distorted_probs.sum()
+    distorted_ratio_resid = kms_matrix_unit_ratio_residual(deg_eigvals, distorted_probs, beta_th)
+
+    print(f"  degenerate test spectrum          = {deg_eigvals}")
+    print(f"  Gibbs matrix-unit max residual    = {gibbs_ratio_resid:.3e}")
+    print(f"  non-scalar degenerate-block resid = {distorted_ratio_resid:.3e}")
+    uniqueness_ok = gibbs_ratio_resid < 1e-12 and distorted_ratio_resid > 1e-4
     print(f"  STATUS: {'PASS' if uniqueness_ok else 'FAIL'}")
     print()
 
-    # ----- Test 4: path-integral correspondence sanity -----
+    # ----- Test 4: path-integral correspondence and slice cyclicity -----
     print("-" * 72)
     print("TEST 4: path-integral correspondence")
-    print("        Z = tr T^{L_tau} = tr exp(-beta_th H)")
+    print("        Z = tr T^{N_tau} = tr exp(-beta_th H)")
+    print("        tr(T^{N_tau-j} O T^j) = tr(T^{N_tau} O)")
     print("-" * 72)
-    # T = exp(-a_tau H) computed via eigenbasis
-    T_eigvals = np.exp(-a_tau * eigvals)
-    Z_trans = float(np.sum(T_eigvals ** L_tau))
+    # T = exp(-2 a_tau H) computed via eigenbasis. This is the current
+    # RP/spectrum two-step blocked transfer object T := T_hat^2.
+    T_eigvals = np.exp(-a_blk * eigvals)
+    T = spectral_matrix(eigvals, V, T_eigvals)
+    O = random_operator(seed_H + 450, dim)
+    T_power_L = np.linalg.matrix_power(T, N_tau)
+    Z_trans = float(np.sum(T_eigvals ** N_tau))
     Z_gibbs = float(np.sum(np.exp(-beta_th * eigvals)))
-    print(f"  tr T^{L_tau}              = {Z_trans:.10f}")
+    reference_num = np.trace(T_power_L @ O)
+    max_slice_resid = 0.0
+    for j in range(N_tau + 1):
+        lhs = np.trace(np.linalg.matrix_power(T, N_tau - j) @ O @ np.linalg.matrix_power(T, j))
+        max_slice_resid = max(max_slice_resid, abs(lhs - reference_num))
+    print(f"  tr T^{N_tau}              = {Z_trans:.10f}")
     print(f"  tr exp(-beta_th H)     = {Z_gibbs:.10f}")
     print(f"  | difference |         = {abs(Z_trans - Z_gibbs):.3e}")
-    pi_ok = abs(Z_trans - Z_gibbs) < 1e-10
+    print(f"  max slice cyclicity residual = {max_slice_resid:.3e}")
+    pi_ok = abs(Z_trans - Z_gibbs) < 1e-10 and max_slice_resid < 1e-10
     print(f"  STATUS: {'PASS' if pi_ok else 'FAIL'}")
     print()
 

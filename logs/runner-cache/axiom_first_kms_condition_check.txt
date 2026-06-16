@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_kms_condition_check.py
-runner_sha256: c373c9009966dd65ba8bbc896ce5bee1fcd13481a6e44ba3e4b7af5c26cc05ac
+runner_sha256: e44a992ec3c5db242bd4111790a24fd12267939a367bf432e92ce8c52d86a421
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 ========================================================================
@@ -13,16 +13,19 @@ AXIOM-FIRST KMS CONDITION CHECK
 Setup:
   finite-dim H_phys (modeling RP-reconstructed physical Hilbert space)
   H = self-adjoint, H >= 0 (modeling spectrum condition SC1, SC2)
-  T = exp(-a_tau H), Gibbs at beta_th = L_tau a_tau
+  T = exp(-2 a_tau H), Gibbs at beta_th = L_tau a_tau
+  raw L_tau is even; N_tau = L_tau/2 blocked transfer factors
 
   dim(H_phys) = 8
   a_tau       = 1.0
-  L_tau       = 6
-  beta_th     = 6.0
+  a_blk       = 2.0
+  raw L_tau   = 12
+  N_tau       = 6
+  beta_th     = 12.0
 
   spec(H)     = [-0.        1.147889  1.919212  2.073275  2.93824   3.510596  4.1677
   4.861641]
-  Z(beta_th)  = 1.001035
+  Z(beta_th)  = 1.000001
 
 ------------------------------------------------------------------------
 TEST 1: KMS identity  F_{A,B}(t + i beta_th) = G_{A,B}(t)
@@ -32,12 +35,12 @@ F is analytically continued through the strip 0 <= Im z <= beta_th.
 Computing both sides in the eigenbasis of H.
 Sweeping t in [-2, 2] across 9 grid points, 4 (A, B) pairs.
 
-  pair 0: max |F(t + i beta_th) - G(t)| over grid = 9.525e-15
-  pair 1: max |F(t + i beta_th) - G(t)| over grid = 1.564e-14
-  pair 2: max |F(t + i beta_th) - G(t)| over grid = 5.790e-15
-  pair 3: max |F(t + i beta_th) - G(t)| over grid = 1.322e-14
+  pair 0: max |F(t + i beta_th) - G(t)| over grid = 1.422e-14
+  pair 1: max |F(t + i beta_th) - G(t)| over grid = 3.323e-14
+  pair 2: max |F(t + i beta_th) - G(t)| over grid = 1.325e-14
+  pair 3: max |F(t + i beta_th) - G(t)| over grid = 2.088e-14
 
-  GLOBAL MAX KMS RESIDUAL = 1.564e-14
+  GLOBAL MAX KMS RESIDUAL = 3.323e-14
 
   STATUS: PASS
 
@@ -52,38 +55,42 @@ the same KMS-symmetric value as F(t).
   ||B||                              = 6.3688
   energy spread                      = 4.8616
   naive bound ||A|| ||B||            = 41.0205
-  worst-case strip bound ||A|| ||B|| exp(beta * spread) = 1.9112e+14
+  worst-case strip bound ||A|| ||B|| exp(beta * spread) = 8.9044e+26
 
-  max |G(z)| over strip grid = 4.4464e+12
-  ratio max|G| / grown_bound = 0.023265
+  max |G(z)| over strip grid = 2.0758e+25
+  ratio max|G| / grown_bound = 0.023312
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 3: equilibrium uniqueness — Gibbs is the unique alpha_t-
-        invariant KMS state at beta_th
+TEST 3: equilibrium uniqueness — finite matrix-unit KMS equations
 ------------------------------------------------------------------------
-Diagonal cyclic identity: rho_nn / rho_mm = exp(-beta_th(E_n - E_m))
-forces rho = exp(-beta_th H) / Z up to overall normalization.
+For A=|i><j| and B=|j><i|, KMS at t=0 forces
+  p_j = exp(beta_th(E_i - E_j)) p_i.
+Inside a degenerate energy block this forces equal weights.
 
-  max | consistent_rho - gibbs_rho | = 0.000e+00
+  degenerate test spectrum          = [0.  1.  1.  2.5 4.  4. ]
+  Gibbs matrix-unit max residual    = 1.110e-16
+  non-scalar degenerate-block resid = 2.500e-01
   STATUS: PASS
 
 ------------------------------------------------------------------------
 TEST 4: path-integral correspondence
-        Z = tr T^{L_tau} = tr exp(-beta_th H)
+        Z = tr T^{N_tau} = tr exp(-beta_th H)
+        tr(T^{N_tau-j} O T^j) = tr(T^{N_tau} O)
 ------------------------------------------------------------------------
-  tr T^6              = 1.0010345889
-  tr exp(-beta_th H)     = 1.0010345889
+  tr T^6              = 1.0000010418
+  tr exp(-beta_th H)     = 1.0000010418
   | difference |         = 4.441e-16
+  max slice cyclicity residual = 3.554e-16
   STATUS: PASS
 
 ------------------------------------------------------------------------
 TEST 5: detailed-balance corollary at z = i beta_th
         F(0 + i beta_th) = G(0) = < B A >_beta (a Hermitian-like ID)
 ------------------------------------------------------------------------
-  F(0 + i beta_th)    = (-1.3457857774934088-0.8934523782774934j)
-  G(0) = <BA>_beta_th = (-1.3457857774934099-0.893452378277491j)
-  | difference |     = 2.582e-15
+  F(0 + i beta_th)    = (-1.3477621022082642-0.8936381579570251j)
+  G(0) = <BA>_beta_th = (-1.3477621022082669-0.8936381579570195j)
+  | difference |     = 6.157e-15
   STATUS: PASS
 
 ========================================================================

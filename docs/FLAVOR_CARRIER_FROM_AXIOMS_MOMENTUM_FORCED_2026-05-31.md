@@ -6,6 +6,13 @@
 **Runner:** `scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py` (SCORECARD 8/8).
 **Source:** workflow `wf_de220c3f-291` — 6 axioms-up routes + 3-lens adversarial verification + synthesis (25 agents). Directive: derive the carrier from framework baseline up, ledger status set aside.
 
+**Post-audit split (2026-06-15).** The clean carrier-type theorem is
+now extracted as
+[`FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md`](FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md).
+This parent note remains the combined conditional packet for the physical
+`hw=1` locus bridge, the `r=1/2` input, and the readout-class input. The split
+does not apply an audit verdict; independent audit owns any status change.
+
 ## Question
 The carrier sub-claim is: the physical charged-lepton flavor observable lives on the intrinsic
 generation factor (the C₃ orbit of the hw=1 BZ corners, read as the intensive index density δ=2/9),

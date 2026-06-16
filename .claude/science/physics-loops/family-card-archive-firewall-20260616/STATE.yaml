@@ -13,5 +13,5 @@ open_imports:
   - "No recomputation of all nine properties for all three families."
   - "Family 3 distance alpha remains missing in the archived table."
 review_findings: "Local self-review: pass for demotion/firewall scope."
-pr_status: pending_creation
-next_exact_action: "Run checks, commit, push, open PR, then patch PR URL into this pack."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4103"
+next_exact_action: "Reviewer should inspect PR #4103 and decide whether the archived family-card row can be re-audited as retired evidence."

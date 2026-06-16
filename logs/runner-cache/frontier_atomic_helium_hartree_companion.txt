@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_helium_hartree_companion.py
-runner_sha256: 789cf620ba726783444da421eb8ca14373418ac49158563cb53af9ab0f46c052
+runner_sha256: 93bb64914080180a3c993889d22524a112191ce5cae95ba6ff6aa4ac995b0771
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.63
+elapsed_sec: 3.13
 status: ok
 ----- stdout -----
 ========================================================================
@@ -87,11 +87,20 @@ STEP 5: Variational energy decomposition
 ────────────────────────────────────────────────────────────
 
   From the product-state ansatz (DERIVED, not assumed):
+    ρ = |φ|² is a one-electron density with Σρ = 1
+    E_pair = Σρ V_H[ρ] = Σρ(r)ρ(r') g_EM/max(|r-r'|, 0.5)
     E_var = 2ε - E_pair
 
     2ε  = -0.21693  [two orbital energies, each includes V_H]
     E_pair = 0.12211   [one e-e pair integral; double-counting removed]
     E_var = -0.33904
+
+  Normalization guard (small-grid direct certificate):
+    pair_norm_direct_ratio=1.000000
+    one_density_pair=0.254497562082
+    direct_pair=0.254497562082
+    quarter_total_density_form=0.254497562082
+    half_total_to_pair=2.000000  [total-density 1/2 form counts two pairs here]
 
   Independent-electron limit (no e-e, same g_nuc):
     E_indep = 2 × E₁(He⁺) = -0.47384
@@ -154,7 +163,9 @@ PASS: hartree_helium_bound_product_state -- E_he=-0.339041, E_heplus=-0.236922
 PASS: hartree_ratio_pin -- ratio=1.43102
 PASS: hartree_ie_ratio_pin -- ratio_IE1_IE2=0.43102
 PASS: hartree_scf_converged -- iterations=11
-TOTAL: PASS=6, FAIL=0
+PASS: hartree_pair_integral_direct_normalization -- pair_norm_direct_ratio=1.000000
+PASS: hartree_total_density_conversion_guard -- quarter_total=0.254497562082, half_total_to_pair=2.000000
+TOTAL: PASS=8, FAIL=0
 
 ----- stderr -----
 

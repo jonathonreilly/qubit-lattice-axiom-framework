@@ -1,0 +1,20 @@
+loop: single-clock-kms-apbc-axis-boundary-20260616
+goal: "Prune the KMS/APBC-as-axis-supplier route for the single-clock B-AXIS audit blocker."
+target_status: no-go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: "KMS/APBC boundary-condition asymmetry supplier"
+files_touched:
+  - docs/SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md
+  - scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py
+  - logs/runner-cache/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.txt
+open_imports:
+  - "B-AXIS N2/N4/N5 remain open; this artifact does not derive them."
+review_disposition: pass
+review_scope: "Author self-check only; independent review/audit lane still required."
+checks:
+  - "python3 -m py_compile scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py"
+  - "python3 scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py -> SUMMARY: PASS=23 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py --check-only --allow-non-main -> fresh=1"
+next_exact_action: "Commit, push, and open the review PR."

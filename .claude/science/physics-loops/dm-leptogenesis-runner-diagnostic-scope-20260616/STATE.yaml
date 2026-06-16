@@ -1,0 +1,21 @@
+loop_slug: dm-leptogenesis-runner-diagnostic-scope-20260616
+goal: "Repair the DM leptogenesis PMNS multistart conditional by narrowing native/selector wording to a runner-defined diagnostic."
+target_status: bounded-support
+origin_main: "104d31220 audit: reconstructed h quasilocal from analytic dispersion mi clean"
+branch: physics-loop/dm-leptogenesis-runner-diagnostic-scope-20260616
+claim_id: dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16
+audit_blocker: "The diagnostic computes, but native seed-surface and eta/eta_obs readout language still implied unproved bridge closure."
+active_route: source_boundary_repair
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md
+  - scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py
+  - logs/runner-cache/frontier_dm_leptogenesis_pmns_multistart_selector_support.txt
+  - .claude/science/physics-loops/dm-leptogenesis-runner-diagnostic-scope-20260616/
+open_imports:
+  - "No native N_e seed-surface bridge."
+  - "No eta/eta_obs transport/readout normalization theorem."
+  - "No certified-global selector theorem."
+next_exact_action: "Reviewer can extract the source-boundary repair and queue the row for independent re-audit as a runner-defined sampled diagnostic."

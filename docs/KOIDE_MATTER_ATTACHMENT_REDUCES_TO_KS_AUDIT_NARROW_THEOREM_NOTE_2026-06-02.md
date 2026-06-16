@@ -4,9 +4,10 @@
 **Claim type:** bounded_theorem
 **Claim boundary:** bounded localization. The native single-component staggered
 operator and operator-frame merger do not by themselves force a matter-state
-spinor law; the only forcing route identified here runs through the unaudited
-Kawamoto-Smit reconstruction. This note does not apply that audit, promote
-Kawamoto-Smit, force matter attachment, or set an audit verdict.
+spinor law; the positive route isolated here runs through the separate
+Kawamoto-Smit reconstruction surface. This note does not apply or set any
+audit verdict, does not promote Kawamoto-Smit beyond its own audited scope, and
+does not force matter attachment on the current surface.
 **Primary runner:** [`scripts/frontier_koide_matter_attachment_reduces_to_ks.py`](../scripts/frontier_koide_matter_attachment_reduces_to_ks.py)
 ## Context
 
@@ -27,19 +28,19 @@ the Clifford `Spin(3)` bivector triple are the same operator triple on
 `C^2`, with `U(R)` acting by CONJUGATION on the gamma operators. This note
 asks the sharp question one level higher: does the native first-order real
 anti-Hermitian `D`, together with the merger and emergent Lorentz structure,
-force the matter-attachment without the unaudited Kawamoto-Smit
+force the matter-attachment without the separate Kawamoto-Smit
 reconstruction?
 
 ## Claim
 
-The matter-attachment is **not forced Kawamoto-Smit-free**. It **reduces to
-the Kawamoto-Smit audit**: the only route identified here that forces the on-site `C^2` to
-carry the matter spin-1/2 rides the unaudited
+The matter-attachment is **not forced Kawamoto-Smit-free**. It reduces to a
+separate Kawamoto-Smit/state-law bridge question: the route identified here that
+can carry an on-site `C^2` matter spin-1/2 reading goes through
 `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`, with an
 admitted-not-forced elementary fallback. Consequently faithfulness does NOT
 collapse to the `(3,1)` signature plus carrier-identification; the
-matter-attachment survives as a live pin whose only forcing route is the KS
-audit.
+matter-attachment survives as a live pin unless a KS-to-physical-state-law
+bridge or an elementary state-law theorem is supplied.
 
 Three facts, all verified by the runner and non-circular (the faithful rep
 and `Q = 2/3` are never assumed):
@@ -53,9 +54,13 @@ cited bounded authority; `H = iD`) is single-component scalar hopping on
 
 ```text
 D real antisymmetric  (H = iD Hermitian),
--D^2 = scalar lattice mass-shell {0, 4, 8, 12}   (no spinor structure),
+-D^2 = scalar lattice mass-shell {0, 1, 2, 3}    (normalized 1/2 hopping; no spinor structure),
 [H (x) I_2, I (x) sigma_i/2] = 0                  (spin-blind on the C^2).
 ```
+
+The older displayed `{0,4,8,12}` spectrum is the unscaled finite-difference
+convention. The runner now checks both conventions explicitly and uses the
+normalized convention in the statement above.
 
 So nothing in `D` itself attaches a spinor index to the on-site `C^2`.
 
@@ -90,11 +95,13 @@ Omega(x)^dag sigma_mu Omega(x + e_mu) = eta_mu(x) I,
 
 where `eta_mu(x)` is the staggered phase (a SCALAR). The matrix spinor
 generator `sigma_mu` becomes a scalar lattice phase. So the operator
-translating "spin-rotation `U(R)`" into the single-component "sign field"
-IS `Omega` -- the Kawamoto-Smit reconstruction
-(`staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`,
-**unaudited**; upstream `staggered_dirac_grassmann_forcing_theorem_note_2026-05-07`,
-**unaudited**). KS Step 4 runs in the OPPOSITE direction: the per-site
+translating a spinor kinetic frame into the single-component phase field is
+`Omega` -- the Kawamoto-Smit reconstruction
+(`staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`; upstream
+`staggered_dirac_grassmann_forcing_theorem_note_2026-05-07`). Those supplier
+rows carry their own bounded surfaces and audit-owned status; this note only
+uses them as the named bridge surface and does not broaden them. KS Step 4
+runs in the OPPOSITE direction: the per-site
 dim-2 carries a SINGLE Grassmann occupation mode, NOT a two-component
 matter spinor (spin diagonalized into local phases; the Dirac index rebuilt
 from the `(Z_2)^3` corner/taste cube).
@@ -107,8 +114,11 @@ through `Omega`. So the dynamics route to matter-spin-1/2 is not KS-free.
 
 ## What is landable, and what is not
 
-**Landable (this note):** the matter-attachment REDUCES TO AUDITING the
-Kawamoto-Smit reconstruction, with an explicit admitted-not-forced fallback.
+**Landable (this note):** the matter-attachment is not obtained from native
+`D` plus the operator-frame merger alone. The positive bridge surface isolated
+here is Kawamoto-Smit reconstruction, with an explicit admitted-not-forced
+elementary fallback and with the physical matter-state law still requiring its
+own bridge statement.
 
 **Not landable (false):** "the faithfulness value collapses to the `(3,1)`
 signature plus carrier-id." The clean-looking elementary route is
@@ -131,13 +141,16 @@ operator-frame  J = sigma/2   (adjoint, conjugation on gamma operators)
 and that upgrade is precisely what the Kawamoto-Smit reconstruction
 supplies.
 
-Two disjoint discharge routes, neither currently reusable as retained-grade:
+Two disjoint discharge routes, neither of which closes the current surface
+without a further state-law bridge:
 
-- **(B, the forcing route)** reconstruct the matter-spinor index from the
-  staggered corner/taste structure of the spin-blind single-component native
-  `D` = `staggered_dirac_kawamoto_smit_forcing` (**unaudited**; upstream
-  `staggered_dirac_grassmann_forcing` **unaudited**). The pin reduces to the
-  KS audit.
+- **(B, the bounded bridge route)** reconstruct the matter-spinor index from
+  the staggered corner/taste structure of the spin-blind single-component
+  native `D` = `staggered_dirac_kawamoto_smit_forcing`, together with the
+  upstream `staggered_dirac_grassmann_forcing` surface. This route is reusable
+  only at the suppliers' own bounded scopes and still needs a physical
+  matter-state spinor-law bridge before it can force the attachment on the
+  current surface.
 - **(A, the elementary route)** posit directly that the single-site
   excitation STATE index is the spatial-rotation spinor =
   **admitted-not-forced**, at the `per_site` C3 open scope-boundary, supplied
@@ -158,7 +171,7 @@ per-site site module.
 and
 [FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md).
 
-Non-load-bearing audit targets remain plain text:
+Separate supplier rows, not promoted by this note:
 `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` and
 `staggered_dirac_grassmann_forcing_theorem_note_2026-05-07`.
 
@@ -171,10 +184,10 @@ matrix facts. The reduction is stated as a localization, not a forcing.
 
 ## Next paths this opens
 
-- Audit `staggered_dirac_kawamoto_smit_forcing` (and upstream
-  `staggered_dirac_grassmann_forcing`). If they pass, Route B becomes
-  reusable modulo the merger and KS bounded tiers, and forces the
-  matter-attachment.
+- Supply a direct KS-to-physical-matter-state spinor-law bridge. The current
+  KS/Grassmann suppliers make Route B a bounded bridge surface, but they do
+  not by themselves identify the physical matter-state law required by the
+  attachment.
 - Derive a new retained state-level rotation-covariance theorem that
   promotes the merger's operator-frame conjugation covariance to a
   matter-STATE spinor transformation law -- a "fundamental-action" theorem

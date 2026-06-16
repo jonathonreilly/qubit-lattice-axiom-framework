@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_matter_attachment_reduces_to_ks.py
-runner_sha256: fa886fb0e963b0cc16e0c259ae0253cb49874ae8ad190a3b2b3bcbc06055c222
+runner_sha256: b66fa74bf555affb825c6cb5791f66fc329faba12b07b734a835fcb174efdd9f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 
@@ -11,7 +11,8 @@ status: ok
 A. Native first-order D: single-component on the lattice, spin-blind on C^2, scalar mass-shell
 ========================================================================
 [PASS] native D is single-component (one amplitude per SITE), real antisymmetric -> H=iD Hermitian -- no per-site spinor index in D
-[PASS] -D^2 is a SCALAR lattice mass-shell (no spinor structure) -- -D^2 spectrum = [-0.0, 1.0, 2.0, 3.0]
+[PASS] normalized -D^2 is the SCALAR lattice mass-shell {0,1,2,3} (no spinor structure) -- -D^2 spectrum = [-0.0, 1.0, 2.0, 3.0]
+[PASS] unscaled finite-difference convention gives {0,4,8,12} and is not the note's normalized D -- unscaled spectrum = [-0.0, 4.0, 8.0, 12.0]
 [PASS] native D is SPIN-BLIND on the C^2: [H (x) I_2, I (x) sigma_i/2] = 0
 
 ========================================================================
@@ -23,28 +24,27 @@ B. The merger is OPERATOR-FRAME (adjoint): U(R) rotates the gamma OPERATORS by c
 C. THE KS BRIDGE: Omega(x) diagonalizes the C^2 spinor AWAY into the staggered phase (= KS)
 ========================================================================
 [PASS] Omega(x)^dag sigma_mu Omega(x+e_mu) = eta_mu(x) I  (the spinor sigma_mu -> a SCALAR staggered phase) -- Omega = sigma_1^x1 sigma_2^x2 sigma_3^x3 is the KS reconstruction operator
-[PASS] => the C^2-spinor <-> single-component translator IS Omega = staggered_dirac_kawamoto_smit_forcing (unaudited) -- the matter-STATE spinor reading is supplied ONLY by KS; the native single-component D has no per-site spinor
+[BOUNDARY] KS supplies a bounded bridge surface, not a physical matter-state law in this packet -- Omega translates the kinetic-frame Pauli matrices into scalar staggered phases; a KS-to-physical-state-law bridge remains separate
 
 ========================================================================
-D. Disposition: matter-attachment REDUCES TO THE KS AUDIT (not forced KS-free)
+D. Scalar sign-field guard and current boundary
 ========================================================================
-[PASS] the native D rotation compensator is a single-component SCALAR sign field, NOT the C^2 spin -- U(R) (the C^2 spin) is not required to restore D's lattice-rotation invariance; a diagonal W in {+-1} suffices
-[PASS] the matter-attachment (matter-STATE spinor law) is the ADJOINT->FUNDAMENTAL upgrade = exactly what KS supplies -- merger proves operator-frame conjugation only; per_site C3 disclaims the matter-state law
-[PASS] cl3_to_cl31 (retained) forecloses borrowing the (3,1) Majorana R^4 boost spinor (per-site stays C^2)
-[PASS] => reduces-to-KS-audit: the ONLY forcing route rides unaudited KS; the elementary route is admitted-not-forced -- faithfulness does NOT collapse to (3,1)+carrier-id; the matter-attachment survives as a live pin
+[PASS] single-component scalar sign field W gauge-conjugates a KS phase representative without any C^2 spin action -- D_eta' = W D_eta W for a nontrivial W(x) in {+-1}
+[BOUNDARY] matter-state spinor law remains the missing bridge -- the runner proves spin-blind D, adjoint operator covariance, KS scalarization, and scalar sign-field gauge equivalence only
+[BOUNDARY] no (3,1)+carrier-id collapse is claimed -- borrowing a Majorana R^4 boost spinor for the per-site C^2 module remains outside this packet
 
 ========================================================================
 RESULT
 ========================================================================
 
-10/10 checks passed.
-The matter-attachment pin REDUCES TO THE KS AUDIT. The native single-component D is spin-blind on the
-C^2 (no per-site spinor); the merger gives only OPERATOR-FRAME (adjoint) covariance U(R)sigma U(R)^dag
-=R sigma, one level below the matter-STATE spinor law. The C^2-spin reading is supplied ONLY by the KS
-operator Omega(x), which converts sigma_mu -> the scalar staggered phase eta_mu (KS reconstruction,
-unaudited). So the only route FORCING matter-spin-1/2 rides KS; the elementary route (posit the
-state law) is admitted-not-forced; faithfulness does NOT collapse to the (3,1) signature. Next:
-audit staggered_dirac_kawamoto_smit_forcing, OR derive a state-level rotation-covariance theorem.
+7/7 checks passed.
+3 boundary lines recorded.
+The native single-component D is spin-blind on the C^2; the merger gives only OPERATOR-FRAME
+(adjoint) covariance U(R)sigma U(R)^dag = R sigma, one level below the matter-STATE spinor law.
+Omega(x) converts sigma_mu -> the scalar staggered phase eta_mu on the KS kinetic bridge surface,
+and a scalar sign field W gauge-conjugates KS representatives without any C^2 spin action.
+This is bounded localization only: a KS-to-physical-matter-state spinor-law bridge or an
+elementary state-law theorem is still required before matter attachment is forced.
 
 ----- stderr -----
 

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1591 |
+| Applied audit verdicts | 1592 |
 | Retained-grade rows, including boxed decorations | 1439 |
 | Retained positive theorems | 221 |
 | Retained no-go rows | 214 |
 | Retained bounded rows | 959 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1401 |
+| Unaudited rows | 1400 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 59 |
+| Audited conditional rows | 60 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1403 |
-| Ready rows | 1 |
+| Total pending rows | 1402 |
+| Ready rows | 0 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 424 |
+| Medium pending | 423 |
 | Leaf pending | 427 |
 
 Next ready rows by queue order:
 
-- [`unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- none
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -76,8 +76,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
 | High nodes | 514 |
-| Medium nodes | 933 |
-| Leaf nodes | 1465 |
+| Medium nodes | 929 |
+| Leaf nodes | 1469 |
 
 Top load-bearing rows by graph score:
 
@@ -87,5 +87,5 @@ Top load-bearing rows by graph score:
 - `graph_first_su3_integration_note` - critical; 1397 descendants; score 60.949
 - `plaquette_self_consistency_note` - critical; 1007 descendants; score 51.477
 - `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
-- `key_terminology` - critical; 1120 descendants; score 47.631
+- `key_terminology` - critical; 1119 descendants; score 47.629
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 890 descendants; score 45.299

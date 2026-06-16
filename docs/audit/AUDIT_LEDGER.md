@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 930 |
+| **retained_bounded** | 931 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1467 |
+| unaudited | 1466 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1373 |
+| `audited_clean` | 1374 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1784 |
+| `unaudited` | 1783 |
 
 | claim_type | count |
 |---|---:|
@@ -517,6 +517,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -7191,6 +7192,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For G^-1(p)=m^2+sum_mu(2 sin(p_mu/2))^2, qhat_mu V^mu(p,q)=G^-1(p+q)-G^-1(p) with qhat_mu=2 sin(q_mu/2) and V^mu=2 sin(p_mu+q_mu/2).  _(class `A`)_
 - **chain closes:** True — Per component, [2 sin((p_mu+q_mu)/2)]^2-[2 sin(p_mu/2)]^2=4 sin(q_mu/2) sin(p_mu+q_mu/2)=qhat_mu V^mu, and the mass term cancels. The naive residual sign follows by subtracting the point-split identity from qhat dot V_naive.
 - **rationale:** The load-bearing identity is a direct trigonometric algebraic closure over the definitions stated in the packet, not a renaming or tuned numerical match. The runner source genuinely samples random momenta and computes both the Ward residual and the naive-current seagull residual, rather than printing hard-coded pass values. The source note's scope is narrow and its guardrails explicitly exclude full stress-tensor, cubic-seagull, Belinfante, diffeomorphism, and gravity-sign closure.
+- **auditor confidence:** high
+
+### `free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 staggered two-step sector with m > 0 and even spatial periods: the d-dimensional folded-cell algebra gives E_d(p) = arcsinh(sqrt(m^2 + sum_mu sin^2 p_mu)), the even-offset support rule, and the stated positive exponential kernel bound; gauged/interacting locality and sharp non-axis anisotropic rates are out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-001737-8356cca151-free_staggered_two_step_disp`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The folded staggered phase matrices obey Gamma_mu^2 = I and Gamma_mu Gamma_nu + Gamma_nu Gamma_mu = 0, so H_hop(k)^2 = -(sum_mu sin^2 k_mu) I and every reduced momentum sector reduces to the one-axis 2 by 2 time-block algebra.  _(class `A`)_
+- **chain closes:** True — Both cited authorities are retained_bounded, which is retained-grade under the rubric, and they are used only for the one-axis two-step transfer algebra/normalization and quasilocal contour mechanism. The new d-dimensional step closes internally by the Gamma-matrix algebra and the note's self-contained strip estimate.
+- **rationale:** The load-bearing step is a genuine algebraic closure, not a definition or renaming: the staggered phase bookkeeping gives a Clifford family whose scalar square reduces the d-dimensional hop to the retained one-axis two-step eigenvalue calculation. The displayed signs, factors of 2, determinant/trace algebra, pi-periodicity support rule, contour-shift sign for exp(i p.z), and l_inf-to-l1 rate conversion are consistent. The runner source performs actual matrix, spectrum, and FFT checks rather than printing constants, and its finite d=2,d=3 computations support the general algebraic derivation without importing external comparators.
 - **auditor confidence:** high
 
 ### `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28`

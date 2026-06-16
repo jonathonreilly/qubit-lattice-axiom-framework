@@ -22,6 +22,6 @@ trace_gate_classification: negative_route_pruning
 review_findings:
   disposition: local pass
   notes: "No review-loop verdict applied; source-side checks pass and this PR is for reviewer extraction."
-pr_status: pending
-next_exact_action: run branch checks, commit, push, open PR
+pr_status: "opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4067"
+next_exact_action: reviewer extraction / independent audit handling
 stop_condition: PR opened for review

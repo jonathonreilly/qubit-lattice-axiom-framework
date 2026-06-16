@@ -1,6 +1,7 @@
 # Handoff
 
 Branch: `physics-loop/kinetic-bw-os0-interface-20260616`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4067
 
 This PR targets the highest-scoring conditional row not touched by an open PR:
 `kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09`.

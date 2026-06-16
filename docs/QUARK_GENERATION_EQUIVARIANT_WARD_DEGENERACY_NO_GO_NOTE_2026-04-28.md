@@ -58,7 +58,7 @@ Forbidden proof inputs:
 2. fitted Yukawa entries;
 3. hidden generation labels or projectors;
 4. CKM mixing data treated as mass-eigenvalue input;
-5. breaking `S_3` without naming the new source/readout primitive.
+5. breaking `S_3` without naming the source/readout/symmetry-breaking input.
 
 ## 3. Equivariant Ward Operators On `A_1 + E`
 
@@ -111,10 +111,10 @@ generation-uniform. It cannot even produce the `A_1/E` two-level split.
 A future retained 3C route may still exist, but it must add new theorem
 content. Examples:
 
-1. a source-domain primitive that breaks or orients the `E` doublet;
+1. a source-domain input that breaks or orients the `E` doublet;
 2. a physical readout functor that selects a basis inside the retained
    `M_3(C)` generation observable algebra;
-3. a reduced `C_3` or oriented-cycle primitive with a derived reflection
+3. a reduced `C_3` or oriented-cycle input with a derived reflection
    breaking source;
 4. a loop-normalization theorem that is not `S_3`-equivariant on the
    generation triplet.
@@ -131,7 +131,8 @@ two distinct generation eigenvalues, with a double degeneracy on the standard
 `E` subspace. If it is also diagonal in the generation basis, it is scalar.
 Therefore the retained `S_3` generation symmetry by itself cannot derive
 generation-stratified quark Yukawa Ward identities for `u,c,t` or `d,s,b`.
-Target 3C requires an additional source/readout/symmetry-breaking primitive.
+Target 3C requires an additional source/readout/symmetry-breaking input or
+bridge.
 
 ## 7. What This Retires
 
@@ -147,8 +148,8 @@ carrier cannot split all three.
 
 ## 8. What Remains Open
 
-Lane 3 remains open. The next 3C route must name the missing primitive that
-breaks, orients, or reads out the generation triplet without importing
+Lane 3 remains open. The next 3C route must name the missing input or bridge
+that breaks, orients, or reads out the generation triplet without importing
 observed quark masses or fitted Yukawa entries.
 
 ## 9. Verification
@@ -162,9 +163,9 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_generation_equivariant_ward_de
 Expected result:
 
 ```text
-TOTAL: PASS=44, FAIL=0
+TOTAL: PASS=46, FAIL=0
 VERDICT: S_3-equivariant Ward operators cannot stratify three quark
-generation Yukawa eigenvalues without a new source/readout primitive.
+generation Yukawa eigenvalues without an additional source/readout bridge.
 ```
 
 

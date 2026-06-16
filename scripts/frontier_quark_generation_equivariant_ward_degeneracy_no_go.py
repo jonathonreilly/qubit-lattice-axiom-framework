@@ -9,7 +9,7 @@ permutation representation A_1 + E, and that every S_3-equivariant Hermitian
 Ward endomorphism has commutant form a I + b J. Such an operator has one
 singlet eigenvalue and one doubly-degenerate E eigenvalue, so it cannot yield
 three generation-stratified Yukawa eigenvalues without an additional
-source/readout/symmetry-breaking primitive.
+source/readout/symmetry-breaking input or bridge.
 """
 
 from __future__ import annotations
@@ -232,7 +232,7 @@ def main() -> int:
     check("oriented C3 example commutes with the 3-cycle", commutator_norm(c3_example, cycle) < TOL)
     check("oriented C3 example breaks reflection", commutator_norm(c3_example, reflection) > 0.1)
     check("oriented C3 example can split three eigenvalues", distinct_eigenvalue_count(c3_eigs) == 3, str(c3_eigs))
-    check("therefore C3 splitting requires an extra orientation/reflection-breaking premise", "oriented-cycle primitive" in new_text)
+    check("therefore C3 splitting requires an extra orientation/reflection-breaking premise", "oriented-cycle input" in new_text)
 
     proof_inputs = {
         "S3_generation_action",
@@ -246,7 +246,7 @@ def main() -> int:
         "hidden_generation_projector",
     }
     check("forbidden proof inputs are absent", proof_inputs.isdisjoint(forbidden_inputs), str(sorted(proof_inputs)))
-    check("new note leaves future source/readout primitive open", "source/readout/symmetry-breaking primitive" in new_text)
+    check("new note leaves future source/readout input or bridge open", "source/readout/symmetry-breaking input or" in new_text)
     check("new note does not overclaim future no-go", "future retained 3C route may still exist" in new_text)
 
     print()
@@ -255,7 +255,7 @@ def main() -> int:
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     if FAIL_COUNT == 0:
         print("VERDICT: S_3-equivariant Ward operators cannot stratify three quark")
-        print("generation Yukawa eigenvalues without a new source/readout primitive.")
+        print("generation Yukawa eigenvalues without an additional source/readout bridge.")
         return 0
     print("VERDICT: generation-equivariant Ward no-go verifier has failing checks.")
     return 1

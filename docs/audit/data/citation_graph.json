@@ -51473,38 +51473,6 @@
       "to": "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
     },
     {
-      "from": "repo.front_door_status",
-      "to": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "teleportation_resource_from_poisson_note"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
-    },
-    {
       "from": "repo.repo_organization",
       "to": "key_terminology"
     },
@@ -98989,18 +98957,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [
-        "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
-        "teleportation_resource_from_poisson_note",
-        "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08",
-        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
-        "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
-        "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27",
-        "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
-        "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "8edd02f6cfae5dd9b49608151d08db1d219174134c9635d7c551dc7455ec2974",
+      "note_hash": "9e9bb9825a31205620c96ade5eed5f72ab5042129bf8fabe743a6fcec0caa204",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113484,6 +113443,7 @@
     "register_not_read_scope_correction_panel_verdict_2026-06-06",
     "reopened_lane_checklist",
     "replay_environment_note",
+    "repo.front_door_status",
     "repo.python_venv_setup",
     "repo_active_review_queue_note_2026-05-17",
     "repo_submission_consolidation_plan_2026-04-12",
@@ -113780,10 +113740,10 @@
       "open_gate": 170,
       "positive_theorem": 612
     },
-    "edge_count": 12975,
+    "edge_count": 12967,
     "leaf_count": 1113,
     "node_count": 3453,
-    "root_count": 1066,
+    "root_count": 1067,
     "runners_with_path": 3039
   }
 }

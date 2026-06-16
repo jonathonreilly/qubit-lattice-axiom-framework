@@ -12,18 +12,18 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1538 |
-| Retained-grade rows, including boxed decorations | 1410 |
-| Retained positive theorems | 218 |
-| Retained no-go rows | 211 |
-| Retained bounded rows | 936 |
+| Applied audit verdicts | 1592 |
+| Retained-grade rows, including boxed decorations | 1439 |
+| Retained positive theorems | 221 |
+| Retained no-go rows | 214 |
+| Retained bounded rows | 959 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1454 |
+| Unaudited rows | 1400 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 37 |
-| Audited renaming rows | 31 |
-| Audited numerical-match rows | 13 |
+| Audited conditional rows | 60 |
+| Audited renaming rows | 32 |
+| Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
@@ -33,24 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1456 |
-| Ready rows | 46 |
+| Total pending rows | 1402 |
+| Ready rows | 0 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 430 |
-| Leaf pending | 474 |
+| Medium pending | 423 |
+| Leaf pending | 427 |
 
 Next ready rows by queue order:
 
-- [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
-- [`universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_METRIC_REPARAMETRIZED_VERTEX_OPERATOR_LIFT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
-- [`brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15`](../../docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
-- [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - medium; unaudited
-- [`cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27`](../../docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md) - medium; unaudited
-- [`dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28`](../../docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
-- [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - medium; unaudited
-- [`gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11`](../../docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
+- none
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,16 +76,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
 | High nodes | 514 |
-| Medium nodes | 938 |
-| Leaf nodes | 1460 |
+| Medium nodes | 928 |
+| Leaf nodes | 1470 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1597 descendants; score 136.642
+- `minimal_axioms` - critical; 1596 descendants; score 136.641
 - `three_generation_observable_theorem_note` - critical; 1008 descendants; score 64.479
 - `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
-- `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
+- `graph_first_su3_integration_note` - critical; 1397 descendants; score 60.949
 - `plaquette_self_consistency_note` - critical; 1007 descendants; score 51.477
 - `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
-- `key_terminology` - critical; 1120 descendants; score 47.631
+- `key_terminology` - critical; 1119 descendants; score 47.629
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 890 descendants; score 45.299

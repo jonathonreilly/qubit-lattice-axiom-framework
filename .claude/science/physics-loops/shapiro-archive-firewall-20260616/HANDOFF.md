@@ -26,4 +26,4 @@ python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only
 python3 scripts/vocab_lint.py --report-only --report-path /tmp/shapiro-vocab-report.json archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_COMPLEX_INTERACTION_NOTE.md archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_DIAMOND_BRIDGE_NOTE.md archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_DIAMOND_FREQUENCY_BRIDGE_NOTE.md archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_FIVE_FAMILY_PORTABILITY_NOTE.md archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_SCALING_DIRECT_REPLAY_NOTE.md archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_SCALING_NOTE.md
 ```
 
-PR: TBD
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4102

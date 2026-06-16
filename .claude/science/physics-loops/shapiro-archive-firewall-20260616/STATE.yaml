@@ -21,6 +21,6 @@ open_imports:
   - "Diamond/NV phase-ramp and absolute-unit bridge inputs remain unrepaired here."
   - "Shapiro scaling sweeps are not recomputed from raw inputs here."
 review_findings: "Local self-review: pass for demotion/firewall scope; no retained-positive claim."
-pr_status: pending_creation
-next_exact_action: "Run checks, commit, push, open PR, then patch PR URL into this pack."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4102"
+next_exact_action: "Reviewer should inspect PR #4102 and decide whether the archived Shapiro rows can be re-audited as retired evidence."
 stop_condition: "Stop this block after PR handoff; campaign should pivot to next audit-unblock candidate."

@@ -1,7 +1,9 @@
 # PR Backlog
 
-PR not opened yet.
+PR opened:
 
-Expected title:
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4102
+
+Title:
 
 `[physics-loop][demotion] shapiro archive firewall`

@@ -79,9 +79,11 @@ def main() -> int:
         and "remains an explicit condition" in note_flat,
     )
     check(
-        "cited bridge note carries the Consequence A bridge content",
+        "cited bridge note carries the conditional Consequence A bridge content",
         "arg det(M_u M_d)" in bridge_flat
-        and "exhausted" in bridge_flat
+        and "physical mass-orientation readout" in bridge_flat
+        and "does not replace the missing bridge theorem with a Tier-A dependency edge"
+        in bridge_flat
         and "phase-free" in bridge_flat
         and "additive" in bridge_flat,
     )

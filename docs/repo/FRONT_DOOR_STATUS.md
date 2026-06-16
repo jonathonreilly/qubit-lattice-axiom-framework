@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1554 |
-| Retained-grade rows, including boxed decorations | 1420 |
+| Applied audit verdicts | 1555 |
+| Retained-grade rows, including boxed decorations | 1421 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 213 |
-| Retained bounded rows | 944 |
+| Retained bounded rows | 945 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1438 |
+| Unaudited rows | 1437 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 43 |
 | Audited renaming rows | 31 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1440 |
+| Total pending rows | 1439 |
 | Ready rows | 35 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
 | Medium pending | 430 |
-| Leaf pending | 458 |
+| Leaf pending | 457 |
 
 Next ready rows by queue order:
 
-- [`su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15`](../../docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
 - [`su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`su3_dabc_symmetric_theorem_note_2026-05-02`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06`](../../docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`universal_gr_3plus1_constraint_multiplier_structure_derived_fiber_metric_bounded_theorem_note_2026-06-09`](../../docs/UNIVERSAL_GR_3PLUS1_CONSTRAINT_MULTIPLIER_STRUCTURE_DERIVED_FIBER_METRIC_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_FINITE_LATTICE_SCALING_SUPPORT_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
-- [`bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28`](../../docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md) - leaf; unaudited
+- [`bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28`](../../docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md) - medium; unaudited
+- [`dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

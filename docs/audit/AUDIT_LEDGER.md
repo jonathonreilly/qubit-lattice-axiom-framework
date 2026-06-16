@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 944 |
+| **retained_bounded** | 945 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1438 |
+| unaudited | 1437 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1391 |
+| `audited_clean` | 1392 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1755 |
+| `unaudited` | 1754 |
 
 | claim_type | count |
 |---|---:|
@@ -1321,6 +1321,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -19180,6 +19181,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substitute N_W = (N_color + 1) * N_gen, n_S^complex_components = 2, T(F) = 1/2, and C_2(adj SU(2)) = N_pair into the stated one-loop beta formula to obtain b_2 = (11/3) N_pair - (1/3)(N_color + 1)N_gen - 1/6.  _(class `A`)_
 - **chain closes:** True — Given the scoped inputs, the closed form and framework value follow by direct rational arithmetic. The cited one-hop authorities in the packet are retained-grade or retained_bounded, and the runner confirms the algebra symbolically.
 - **rationale:** The load-bearing step is a genuine algebraic identity check over the stated inputs, not a renaming, numerical fit, or comparator match. The runner source actually constructs the symbolic expression from the stated beta formula and performs exact sympy simplifications plus rational framework substitution. No missing helper source or hard-coded-only pass path is present.
+- **auditor confidence:** high
+
+### `su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15`
+
+- **Note:** [`SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md`](../../docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic/calculus bridge proving the inverse-alpha one-loop propagation law and the rounded Planck-to-hierarchy-candidate scale log from the cited beta coefficient, alpha convention, scale primitive, and hierarchy candidate map.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-015513-6fd43aede4-su2_weak_one_loop_inverse_al`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bridge's work is d(1/alpha)/d ln(mu)=b/(2 pi) from dg/d ln(mu)=-b g^3/(16 pi^2), alpha=g^2/(4 pi), together with ln(M_Pl/v_cand)=ln(M_Pl/(M_Pl K))=-ln K for K=(7/8)^(1/4) alpha_LM^16.  _(class `A`)_
+- **chain closes:** True — The inverse-alpha sign and factor follow by direct differentiation and integration from UV to IR. Independently recomputing the candidate-map arithmetic gives K=2.017223509625105e-17, L_cand=38.44222451516312, v_cand=246.282818290129 GeV, and round(L_cand,2)=38.44.
+- **rationale:** The load-bearing steps are exact algebra/calculus over cited retained-grade or accepted-primitive inputs, and the supplied runner source actually checks the relevant sign, factor, log, and rounded-surrogate numerics. The scale-reference primitive is used only as the single dimensionful ruler and cancels out of the dimensionless log. The hierarchy authority's B3/B4/B5 gates are not closed here, but this bridge does not claim formula closure or an EW-VEV prediction; it only uses the declared candidate-map/readout surface for scale-log bookkeeping.
 - **auditor confidence:** high
 
 ### `su3_adjoint_casimir_theorem_note_2026-05-02`

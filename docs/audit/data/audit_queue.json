@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 280,
     "high": 272,
-    "leaf": 458,
+    "leaf": 457,
     "medium": 430
   },
   "cycle_break_target_count": 0,
@@ -16734,33 +16734,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
-        "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
-        "scale_reference_primitive",
-        "hierarchy_formula_honest_status_note_2026-05-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.17,
-      "note_path": "docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -16912,6 +16885,28 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.587,
+      "note_path": "docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py",
       "transitive_descendants": 16
     },
     {
@@ -30064,28 +30059,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -30166,6 +30139,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_max_record_entropy_sector_blind_2026_06_15.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+        "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
+        "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+        "native_gauge_closure_note",
+        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py",
       "transitive_descendants": 0
     },
     {
@@ -36374,34 +36375,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_fs_reconstruction_R_and_link_review_2026_06_06.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
-        "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
-        "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
-        "native_gauge_closure_note",
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py",
       "transitive_descendants": 0
     },
     {
@@ -43559,5 +43532,5 @@
     }
   ],
   "ready_count": 35,
-  "total_pending": 1440
+  "total_pending": 1439
 }

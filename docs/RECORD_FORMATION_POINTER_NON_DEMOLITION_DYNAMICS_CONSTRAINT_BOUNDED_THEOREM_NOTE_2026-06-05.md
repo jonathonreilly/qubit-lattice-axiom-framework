@@ -60,11 +60,15 @@ In that model the following hold.
    finished idle fragment keeps its record while later fragments record.
 
    The converse is **not** claimed. `[H_int, Pi_S] = 0` alone preserves pointer
-   populations, but it does not imply that any fragment is written: `H_int = 0`
-   or an environment-blind commuting Hamiltonian is pointer-non-demolishing and
-   forms no redundant record. The sufficiency result therefore includes the
-   nonzero controlled-copy form, the recording time, and the fresh-fragment or
-   decoupling hypotheses.
+   populations, but it does not imply that any fragment is written: `H_int = 0`,
+   an environment-blind commuting Hamiltonian, or a nonzero commuting
+   `sigma_z(S) sigma_z(E_1)` interaction with `E_1` initialized in a
+   `sigma_z` eigenstate is pointer-non-demolishing and forms no redundant
+   record. A coherent controlled-copy kick also is not persistent if the same
+   completed fragment is re-used: the runner shows that a second identical
+   kick can erase the record. The sufficiency result therefore includes the
+   nonzero controlled-copy form, the recording time, and the fresh-fragment,
+   idle-completed-fragment, or decoupling hypotheses.
 
 3. **Demolition and locality controls.** A pointer-demolition control with
    handle `sigma_x(S)` fails to carry the `Pi_S` record, collapses redundancy,
@@ -74,12 +78,13 @@ In that model the following hold.
    env-env coupling injects excess pairwise correlation
    `I(E_a:E_b) > H_S` and destroys the independent-copy structure.
 
-4. **Transfer-class consequence.** Any framework transfer step with a conserved
-   charge/pointer, for example a number-conserving reflection-positive OS
-   transfer `T = exp(-H)` with `[T, Q] = 0`, lies in the pointer-conserving
-   class. This is a necessary class constraint, not a proof that such a
-   transfer forms redundant records without the controlled-copy/record-channel
-   hypotheses above.
+4. **Transfer-class consequence.** Any downstream transfer step that has been
+   independently established to possess a conserved charge/pointer, for
+   example a number-conserving reflection-positive OS transfer `T = exp(-H)`
+   with `[T, Q] = 0`, lies in the pointer-conserving class. This row verifies
+   the finite algebraic membership condition in the runner; it does not cite or
+   prove that a physical framework OS transfer has the nontrivial
+   fragment-imprinting channel needed to form redundant records.
 
 This is **bounded** because the quantum-Darwinism identification of a *record*
 (a redundant, objective, persistent imprint of a system observable) is a model
@@ -100,9 +105,9 @@ pointer-conserving Hamiltonian writes fragments. The constraint is forced
 - The Heisenberg-equation pointer-conservation argument (item 1) is an
   elementary reproven-in-runner fact, not an import.
 - The nonzero controlled-copy interaction, the recording time
-  `t = pi/(4g)`, and the fresh-fragment or decoupling persistence condition are
-  explicit sufficient-construction hypotheses, not consequences of
-  `[H_int, Pi_S] = 0` alone.
+  `t = pi/(4g)`, and the fresh-fragment, idle-completed-fragment, or
+  decoupling persistence condition are explicit sufficient-construction
+  hypotheses, not consequences of `[H_int, Pi_S] = 0` alone.
 
 ## What This Does Not Claim
 
@@ -128,6 +133,9 @@ pointer-conserving Hamiltonian writes fragments. The constraint is forced
 - It does not claim that `[H_int, Pi_S] = 0` alone forms a redundant record.
   Nontrivial fragment imprinting and the fresh/idle fragment persistence
   condition are part of the sufficient construction.
+- It does not use OS-transfer membership as a record-formation proof. A
+  conserved-charge OS transfer is only in the pointer-conserving class; a
+  physical record channel still has to be supplied or proved separately.
 - It does not establish the lattice/continuum or interacting-field
   generalization; the theorem is on the explicit finite model.
 - It does not identify the gauge-invariant algebra of the companion timeless
@@ -159,7 +167,8 @@ operators, peak RSS ~36 MB):
 1. the explicit nonzero local controlled-copy coupling has
    `[H_int, Pi_S] = 0`, forms a full per-fragment record `H_S`, preserves the
    pointer populations, gives redundancy `R_delta = n` with a flat plateau, and
-   persists in the fresh-fragment/idle-finished-fragment chain;
+   persists in the fresh-fragment/idle-finished-fragment chain while
+   same-fragment coherent re-use can erase the record;
 2. the Record-axiom additivity holds and is *consistent* (the recovered pointer
    information saturates at `H_S`, no super-additivity) with all fragments
    objectively agreeing on one value;
@@ -171,7 +180,9 @@ operators, peak RSS ~36 MB):
    `||[H_int, Pi_S]||` grows;
 5. pointer-population preservation and necessity over random Hamiltonians via
    the Heisenberg equation (60/60 each), plus explicit commuting non-recording
-   counterexamples showing QND alone is not record-sufficient;
+   counterexamples (`H_int = 0`, system-only phase, and a nonzero
+   `sigma_z(S) sigma_z(E_1)` interaction with `E_1` in an eigenstate) showing
+   QND alone is not record-sufficient;
 6. the forced class: `[U, Pi_S] = 0` for non-demolition (not for the control),
    a nontrivial fragment-imprinting channel for sufficiency, and locality for
    independent redundant copies; a non-local env-env coupling injects excess
@@ -192,5 +203,5 @@ python3 scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
 Expected result:
 
 ```text
-SUMMARY: PASS=43 FAIL=0
+SUMMARY: PASS=46 FAIL=0
 ```

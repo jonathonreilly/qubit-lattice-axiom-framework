@@ -1,0 +1,18 @@
+loop: record-formation-qnd-boundary-20260616b
+target_claim_id: record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05
+target_status: best-honest-status
+actual_current_surface_status: audited_failed
+branch_status: bounded-support repair proposal
+base: origin/main@aa0a7f41d
+active_route: "repair failed broad QND-sufficiency reading by adding explicit counterexamples and persistence hypotheses"
+files_touched:
+  - docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md
+  - scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
+  - logs/runner-cache/frontier_record_formation_dynamics_constraint_2026_06_05.txt
+verification:
+  - "python3 scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py -> SUMMARY: PASS=46 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py -> pass"
+  - "git diff --check -> pass"
+  - "python3 docs/audit/scripts/audit_lint.py --strict -> fails on unrelated current-main retained note_hash drift; no audit outputs committed"
+next_exact_action: "reviewer should inspect the narrowed source repair and, if acceptable, send it through independent audit; no ledger status is changed by this branch"
+stop_condition: "coherent source repair PR opened"

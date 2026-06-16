@@ -1,0 +1,22 @@
+loop_slug: s3-time-tensor-memo-rescope-20260616
+branch: physics-loop/s3-time-tensor-memo-rescope-20260616
+base_ref: origin/main@d4d26301a
+target_claim_id: s3_time_tensor_build_memo
+target_status: best-honest-status
+actual_current_surface_status: audited_conditional
+cycle: 1
+active_route: rescope-to-bounded-conditional-family-obstruction-synthesis
+target_blocker_text: "missing_bridge_theorem: derive the E-channel readout entry and final dynamics identification, or re-scope this row to the retained conditional-family/obstruction claim."
+files_touched:
+  - docs/S3_TIME_TENSOR_BUILD_MEMO.md
+  - scripts/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py
+  - logs/runner-cache/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.txt
+imports_retired:
+  - "The memo no longer presents as a positive unique tensor/time build."
+imports_exposed:
+  - "Missing E-channel readout entry beta_E / alpha_E = 21/4 remains open."
+  - "Final Einstein/Regge dynamics identification remains open."
+review_disposition: pass_with_bounded_scope
+audit_required_before_effective_status_change: true
+next_exact_action: "Open PR and let the independent audit lane re-audit the bounded re-scope."
+

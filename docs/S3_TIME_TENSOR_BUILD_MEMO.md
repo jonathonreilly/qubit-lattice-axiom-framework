@@ -1,13 +1,33 @@
 # Route 2 Tensor Build Memo
 
-**Status:** support - route-2 tensor-build memo
+**Claim type:** bounded_theorem
+**Status:** bounded conditional-family / obstruction synthesis; source note narrowed for independent re-audit handling.
 **Date:** 2026-04-19  
 **Scope:** current Route-2 tensor/readout/time stack after the exact bilinear
 carrier and the readout/time-coupling theorem block
+**Primary verifier:** [`scripts/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py`](../scripts/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py)
+**Cached output:** [`logs/runner-cache/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.txt`](../logs/runner-cache/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.txt)
+
+## Audit-boundary repair
+
+This memo is not a positive theorem that derives a unique tensor/time build.
+It is a bounded synthesis of the retained Route-2 conditional-family and
+obstruction stack:
+
+- exact `K_R` / `Lambda_R` backbone,
+- restricted `P_R` readout reduction,
+- endpoint algebra showing the missing E-channel readout target
+  `beta_E / alpha_E = 21/4`,
+- exact conditional family `Xi_P(t ; c)` for supplied admissible `P_R`, and
+- readout-induced obstruction to a unique `Theta_R -> Lambda_R` coupling.
+
+It does **not** derive the missing E-channel readout entry, and it does
+**not** identify the package with Einstein/Regge tensor dynamics.
 
 ## Round verdict
 
-The Route-2 tensor carrier is no longer missing.
+The Route-2 tensor carrier is no longer the missing object in this narrowed
+conditional-family stack.
 
 The current exact stack already contains:
 
@@ -16,7 +36,7 @@ The current exact stack already contains:
 - exact transfer backbone `T_R = exp(-Lambda_R)`
 - exact bilinear carrier `K_R`
 
-The new readout/time block then pins down the remaining gap:
+The readout/time block then pins down the remaining gap:
 
 - the readout problem reduces exactly to the channelwise map `P_R`
 - the exact endpoint ratio chain still does not derive
@@ -65,7 +85,7 @@ The new readout/time block then pins down the remaining gap:
 - identify the exact carrier/readout/coupling package with Einstein/Regge
   tensor dynamics on the current restricted class
 
-## 3. What the new theorem block actually closed
+## 3. What the theorem block actually closed
 
 The new block did close several things cleanly:
 
@@ -77,7 +97,8 @@ The new block did close several things cleanly:
 4. exact proof that unresolved readout exactness induces the current
    time-coupling obstruction
 
-That is a real theorem-grade narrowing of the Route-2 target.
+That is a real theorem-grade narrowing of the Route-2 target, but not a
+closure of the unique tensor/time build.
 
 ## 4. Immediate next theorem
 
@@ -91,7 +112,35 @@ It should be:
 
 That is now the correct constructive target.
 
+## Source boundary
+
+Safe claim for this memo:
+
+> Given the cited Route-2 readout/time authorities, the current stack has an
+> exact `K_R` / `Lambda_R` backbone, exact restricted `P_R` reduction, exact
+> endpoint algebra, and an exact conditional family `Xi_P(t ; c)` for supplied
+> admissible `P_R`; the missing E-channel readout entry induces an obstruction
+> to a unique `Theta_R -> Lambda_R` time-coupling theorem.
+
+Unsafe claims not made here:
+
+- the current stack derives `beta_E / alpha_E = 21/4`;
+- the current stack selects a unique `P_R`;
+- the current stack closes the final Einstein/Regge dynamics identification.
+
 ## Upstream authorities (Route-2 theorem notes)
 
 - [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) — exact readout map / bilinear carrier `K_R`.
 - [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) — exact time-coupling slice backbone `Lambda_R`.
+
+## Validation
+
+Run:
+
+```bash
+PYTHONPATH=scripts python3 scripts/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py
+```
+
+Expected result:
+
+- `frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py`: `PASS=19 FAIL=0`

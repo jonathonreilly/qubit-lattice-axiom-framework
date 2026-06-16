@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 955 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1411 |
+| unaudited | 1410 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1406 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1728 |
+| `unaudited` | 1727 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 900 |
-| `leaf` | 1370 |
+| `medium` | 899 |
+| `leaf` | 1371 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -1579,6 +1579,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `post_record_measure_weight_normalization_subdivision_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `scalar_trace_tensor_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17065,6 +17066,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The classifier defines separate gates: post-record information, stochastic production kernels, Born/IID probability-origin bridges, Markov generators, clock intervals, and physical rate/unit normalizations.  _(class `E`)_
 - **chain closes:** True — The restricted packet supports the classifier as a definition-level bookkeeping artifact: the code directly defines the premise bundles, levels, missing-premise lists, and blocked-claim lists, and the displayed kernel checks are elementary matrix facts. It does not close a first-principles dynamics derivation, but it does close the stated non-derivational classifier claim.
 - **rationale:** The runner source genuinely computes the displayed stochasticity, determinant, generator, and exp(Qt) checks for the two-state examples, including det(P_lazy)=1/2, det(P_swap)=-1, det(P_reset)=0, Q with off-diagonal log(2)/2, and exp(Q*1)=P_lazy. The actual load-bearing classifier levels and gates are introduced by the code and note as definitions of what premises license which claims. Because the chain is a premise taxonomy rather than a derivation from cited retained inputs or a first-principles framework computation, the appropriate class is E and the verdict is audited_renaming.
+- **auditor confidence:** high
+
+### `record_prerecord_instrument_kernel_gate_2026-06-06`
+
+- **Note:** [`RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Supplied-context finite algebra only: a one-qubit rho plus retained-bounded projective/Lueders trace authority and a supplied Z/X readout context yields p_r = Tr(P_r rho), followed by realized one-hot record/count updates.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-033744-07fa1b546f-record_prerecord_instrument_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the cited projective/Lueders authority and a supplied readout context, the trace pairing p_r = Tr(P_r rho) gives the future-record probability vector, while a chosen outcome separately writes a one-hot post-record atom/count update.  _(class `A`)_
+- **chain closes:** False — The finite algebra itself closes under the stated supplied context, and an independent scalar check confirms the displayed rho, Z/X probabilities, normalization, and count updates. The packet is not clean as written because the source note reports Scorecard PASS=36 FAIL=0 while the completed SHA-pinned runner/cache reports PASS=38 FAIL=0; the missing step is artifact reconciliation, not a physics bridge.
+- **rationale:** Issue: the supplied-context algebra is correct, but the source note's displayed runner scorecard PASS=36 FAIL=0 conflicts with the completed runner/cache PASS=38 FAIL=0. Why this blocks: the strict formula and artifact inventory treats displayed quantitative scorecards and source-runner drift as not clean as written, even though the mismatch is non-load-bearing for the physics. Repair target: update the source scorecard or provide a reconciled cache/source pair, then re-audit the same supplied-context theorem. Claim boundary until fixed: bounded support for p_r = Tr(P_r rho) and one-hot realized record updates under cited retained-bounded projective/Lueders authority and supplied readout context.
 - **auditor confidence:** high
 
 ### `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15`

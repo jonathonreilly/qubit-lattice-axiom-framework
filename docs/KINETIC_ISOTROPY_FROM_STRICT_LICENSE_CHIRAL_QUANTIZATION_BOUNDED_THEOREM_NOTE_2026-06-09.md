@@ -71,22 +71,23 @@ by plain filename rather than by a dependency edge.
 ## 2026-06-16 B-W bridge-chain source graph
 
 The current source graph now contains explicit bridge-chain packets for the
-old naked B-W residual. This note records them so re-audit has concrete
-upstream rows to inspect rather than a prose-only bridge name:
+old naked B-W residual. This note records them so re-audit has concrete named
+rows to inspect rather than a prose-only bridge name:
 
-- [`BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md`](BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+- `docs/BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md`
   computes the exact OS0 inverse map and reduces B-W to the named Wick-IR
   cone-agreement premise; it also refutes the stronger full Wick-pairing
   reading for strict ticks.
-- [`WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-06-11.md`](WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- `docs/WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-06-11.md`
   discharges Wick-IR in the bounded setting into sector alias uniqueness plus
   the record-stack spectral reading.
-- [`REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md`](REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- `docs/REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md`
   reconciles the exhibited realization-row candidates at the slope consumed by
   W-IR and exposes the remaining unit/normalization premise.
 
-These are source-side audit candidates and bridge-chain dependencies, not
-status authorities. They do not by themselves retire the
+These are source-side audit candidates and downstream bridge-chain inspection
+rows, not proof inputs for this kinetic band theorem and not status
+authorities. They do not by themselves retire the
 `kinetic_isotropy_primitive`; they move the residual from an unnamed B-W bridge
 to named rows: spectrum-reflection transport, channel envelope, site-license
 carrier, record-stack spectral reading, the dichotomy's periodicity scope, and

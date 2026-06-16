@@ -1,5 +1,17 @@
 #!/usr/bin/env python3
 """
+=============================== CORRECTION (2026-06-16) =======================
+The I_S value (and any "below [4,10]" / "in-bracket" verdict) here is a
+/N_TASTE DOUBLE-COUNT artifact — see
+docs/YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md.
+The full-BZ (-π,π]^4 integral already covers the 16 taste corners; dividing by
+N_TASTE is spurious. Without the /16, I_S lands ~16× higher (≈32, not ~2), which
+INVERTS the "below-bracket" verdict. (Defect 2 — single-corner subtraction — is
+absent here: this is a single-power scalar density.) Treat the bracket verdict
+as void pending re-derivation. The [4,10] bracket is itself the framework's own
+erroneous single-link estimate, not a clean literature comparator.
+==============================================================================
+
 Native BZ certificate attempt for the P1 I_S bracket.
 
 This runner tests whether the repo's operational staggered-BZ scalar-density

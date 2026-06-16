@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Exact bounded-surface check for the g_bare rescaling algebra repair.
+"""Exact bounded-surface check for the g_bare Gram-scaling repair.
 
-This runner checks only the narrowed conditional lemma:
+This runner checks only the narrowed Gram-scaling lemma:
 
-  CN + scoped Wilson matching + rescaling by c
-    => Gram -> c^2 Gram and beta -> c^2 beta.
+  CN + rescaling by c => Gram -> c^2 Gram.
 
 It does not prove Wilson matching, does not derive the Wilson action surface,
+does not derive beta_new / beta_old under T_a -> c T_a,
 and does not apply an audit verdict.
 """
 
@@ -14,10 +14,13 @@ from __future__ import annotations
 
 import sys
 from fractions import Fraction
+from pathlib import Path
 
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md"
 
 
 def check(name: str, cond: bool, detail: str = "") -> bool:
@@ -47,16 +50,8 @@ def scale_gram(gram: list[list[Fraction]], c_squared: Fraction) -> list[list[Fra
 
 
 def main() -> int:
+    note_text = NOTE.read_text(encoding="utf-8")
     gram = canonical_gram()
-    n_c = Fraction(3)
-    g_bare_sq = Fraction(1)
-    beta_old = Fraction(2) * n_c / g_bare_sq
-
-    check(
-        "scoped WM gives beta_old = 2 N_c / g_bare^2 = 6 at the test point",
-        beta_old == Fraction(6),
-        f"beta_old = {beta_old}",
-    )
 
     for c_squared in [Fraction(1, 4), Fraction(2), Fraction(4), Fraction(9)]:
         scaled = scale_gram(gram, c_squared)
@@ -68,8 +63,6 @@ def main() -> int:
             for j in range(8)
             if i != j
         )
-        beta_new = c_squared * beta_old
-
         check(
             f"Gram scales by c^2 = {c_squared}",
             diag_ok and off_diag_ok,
@@ -80,18 +73,23 @@ def main() -> int:
             c_squared != 1 and expected_diag != Fraction(1, 2),
             "canonical diagonal is 1/2",
         )
-        check(
-            f"scoped WM routes rescaling into beta by c^2 = {c_squared}",
-            beta_new / beta_old == c_squared,
-            f"beta_new = {beta_new}; beta_new / beta_old = {beta_new / beta_old}",
-        )
+
+    check(
+        "note states beta routing is out of scope",
+        "this row is no longer a beta-routing" in note_text
+        and "does not derive any `beta_new / beta_old`" in note_text,
+    )
+    check(
+        "note states Wilson action normalization theorem remains separate",
+        "normalization theorem not supplied by this row" in note_text,
+    )
 
     print(f"SUMMARY: PASS = {PASS}, FAIL = {FAIL}")
     if FAIL:
         print("Conditional rescaling algebra check failed.")
         return 1
 
-    print("Conditional rescaling algebra check passed; no retained status is asserted.")
+    print("Gram-scaling algebra check passed; no retained status is asserted.")
     return 0
 
 

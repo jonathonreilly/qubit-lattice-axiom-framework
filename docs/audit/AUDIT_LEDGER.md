@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 945 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1436 |
+| unaudited | 1435 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1393 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1753 |
+| `unaudited` | 1752 |
 
 | claim_type | count |
 |---|---:|
@@ -1563,6 +1563,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -19312,6 +19313,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the all-trivial plaquette assignment, all link integrations are trivial, so the sector gives Z_singlet = c_(0,0)(6)^12 and normalized rho = delta_(0,0), and plugging that rho into T_src(6) yields P_trivial(6) = 0.4225317396.  _(class `C`)_
 - **chain closes:** True — The finite encoder combinatorics independently reproduce 12 encoded plaquettes, 24 links with two incidences each, 24 adjacency edges, and a 6/6 bipartition. The trivial-sector rank-one Perron calculation independently gives c_(0,0)(6)^12 = 2.759834e6, eigenvalue 3.4414403550, and P = 0.4225317396.
 - **rationale:** The narrowed theorem is explicitly bounded to the quotient encoder and trivial sector, so the deferred Wigner-intertwiner traces and Wilson-orientation identification are not load-bearing. The runner source performs real finite enumeration and a real source-sector Perron computation; the loose 0.4225 constant is used only as a post-computation Reference B comparison. All cited authorities in the restricted packet are retained-grade, and no external comparator or fitted scale is used for the audited conclusion.
+- **auditor confidence:** high
+
+### `su3_dabc_symmetric_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic SU(3) Gell-Mann-basis identities D1-D6 for T^a=lambda^a/2 with Tr(T^a T^b)=delta^{ab}/2, excluding physical-color/QCD readings; the stated algebraic corollary C2 was included in formula inventory.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-020131-3a785627ec-su3_dabc_symmetric_theorem_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Trace projection of {T^a,T^b} onto I_3 and the trace-orthonormal Gell-Mann basis gives {T^a,T^b}=(1/3)δ^{ab}I_3+d^{abc}T^c with d^{abc}=2Tr[{T^a,T^b}T^c].  _(class `A`)_
+- **chain closes:** False — D1-D6 close by class-A trace projection and direct SU(3) matrix algebra over the cited Gell-Mann normalization. However C2 is stated inside the algebraic perimeter and gives the cubic-Casimir scalar as 5/12 for N=3, while substituting N=3 into (N^2-1)(N^2-4)/(4N^2) and the standard d^{abc}T^aT^bT^c contraction gives 10/9.
+- **rationale:** The main d-symbol theorem D1-D6 is a genuine algebraic closure over the retained-bounded Gell-Mann-basis input, and the runner actually computes d and f from explicit matrices rather than only printing constants. The runner does not check the C2 cubic-Casimir scalar. Because that quantitative corollary is labeled within the audited algebraic perimeter and is wrong as written, the source cannot be audited_clean without narrowing or correction.
 - **auditor confidence:** high
 
 ### `su3_fusion_engine_pr1_theorem_note_2026-05-03`

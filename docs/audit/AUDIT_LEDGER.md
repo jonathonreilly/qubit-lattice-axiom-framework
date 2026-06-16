@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 938 |
+| **retained_bounded** | 939 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1451 |
+| unaudited | 1450 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1383 |
+| `audited_clean` | 1384 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1768 |
+| `unaudited` | 1767 |
 
 | claim_type | count |
 |---|---:|
@@ -717,6 +717,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
+| `i1_native_quadratic_static_source_normalization_bridge_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10220,6 +10221,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Cross-note chain assembly of three explicit inputs: retained/decorative structural ratio, retained/decorative SU(3) representation-to-matter convention, and retained_bounded alpha=1/3 normalization bridge with admitted GMN/electron readout; runner checks the resulting projector algebra and charge table but does not derive the imported inputs internally.  _(class `B`)_
 - **chain closes:** True — The bounded chain closes because every physical or readout convention needed for SM-Y matching is explicitly imported: the ratio is supplied by the LH-doublet traceless-ratio note, the Sym^2/Anti^2 to color triplet/singlet assignment is supplied by the LHCM matter-assignment note under a naming convention, and the absolute scale is supplied by the audited retained_bounded alpha bridge. The current source expressly excludes internal derivations of those inputs, GMN, full-spectrum hypercharge, and anomaly cancellation, so no additional hidden bridge is required for the narrowed claim.
 - **rationale:** Audited clean only as a bounded theorem. Boundary stress check found no unlisted load-bearing admission after narrowing: quark/lepton naming, Anti^2-as-L_L readout, alpha=1/3, GMN, T3(e_L), and Q(e_L) are all named or forwarded to audited dependencies. The source's broader title and SM-Y language are controlled by the retained-scope and not read as a derivation of physical hypercharge from the commutant alone. The decoration dependencies are not promoted to independent physics; they are used only as inherited chain inputs under the retained graph-first SU(3) surface. The stale runner prose saying alpha remains open is non-authoritative under the supplied current ledger metadata and does not break the chain.
+- **auditor confidence:** high
+
+### `i1_native_quadratic_static_source_normalization_bridge_2026-06-08`
+
+- **Note:** [`I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-lattice complete-square algebra for a supplied source-normalized quadratic action on the zero-mode-projected periodic Z^3 lattice, including the -g^2 s_1 s_2 G(r) cross term and use of the retained Green-kernel 1/(4 pi r) asymptotic.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-011152-44900ae887-i1_native_quadratic_static_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Completing the supplied quadratic action on the zero-mean finite lattice gives L phi_* = g^2 J and S_eff[J] = -(g^2/2)<J,L^+J>, hence the two-source cross term is -g^2 s_1 s_2 G(r).  _(class `A`)_
+- **chain closes:** True — On the zero-mean subspace, varying (1/(2g^2))<phi,L phi>-<J,phi> gives L phi_*=g^2 J, and substitution gives the stated effective action with the correct sign and factor. Bilinearity then gives the two-source cross term, while the large-r coefficient is supplied by the retained Green-kernel authority.
+- **rationale:** The audited scope is explicitly conditional on the supplied source-normalized quadratic action and does not claim to derive the physical source-coupling normalization or energy-readout bridge. An independent complete-square check verifies the sign, 1/2 factor, g^2 coupling dependence, zero-mode projection use, and the absence of an extra factor of two in the cross term. The runner source performs finite FFT/lattice algebra checks rather than merely printing constants; the retained Green authority supplies the 1/(4 pi r) asymptotic normalization.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

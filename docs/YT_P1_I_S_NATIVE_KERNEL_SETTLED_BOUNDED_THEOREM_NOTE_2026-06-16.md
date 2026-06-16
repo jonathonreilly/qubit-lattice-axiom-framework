@@ -68,3 +68,39 @@ Derived by a supervised workhorse worker (codex `gpt-5.5`); independently re-run
 and ledger-audited by the Opus-4.8 supervisor (PASS=9 reproduced; no smuggled
 `[4,10]`; the scalar-trace leg-count `Tr[(-i slash{s}/D_psi)^2] = -4/D_psi`
 checked by hand; the `D_psi^-2` form's wrong continuum power confirmed).
+
+## Deep-investigation correction (2026-06-16) -- the value is NOT settled
+
+A two-pronged audit (independent full re-derivation + literature/factor audit)
+found that the **kernel fork is settled** (`D_psi^-1 D_g^-1`, with no missing
+operator-tadpole/sail/seagull/measure diagram for the local `H_unit`), but the
+**final value `3.90` is NOT reliable**, for two reasons:
+
+1. **The `[4,10]` comparator is MIS-ATTRIBUTED.** The framework note labels
+   `[4,10]` "tadpole-improved Wilson + 1-link staggered," but the primary
+   sources (Lee-Sharpe hep-lat/0208018: unimproved `c_S = -29.4`, `|c_S|` up to
+   `38.1`; Bhattacharya-Gupta hep-lat/9710095, the cited paper: TI single-link
+   `39.1`) give `~29-39` for the single-link/plaquette staggered scalar in the
+   IDENTICAL convention. `[4,10]~6` is actually the **smeared-action** band
+   (HYP/Fat-7/asqtad). The framework uses Wilson-plaquette + single-link `D_psi`,
+   so the correct comparator is `~29-39`, not `[4,10]`.
+
+2. **The `/N_TASTE` division is CONTESTED (3.90 vs ~32).** The runner divides
+   the full-BZ integral by `N_TASTE=16` (-> `3.90`), but `D_psi_full`'s own
+   docstring says the 16-taste sum is ALREADY in the full-BZ extent and one must
+   NOT divide by `N_TASTE` (-> `~32`). The two audits split:
+   - *literature/factor audit:* the `/16` double-counts (the runner contradicts
+     its own docstring; no-division `~32` matches the single-link literature
+     `29-39`; the sibling `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY` note already
+     flags `N_taste=16` as an UNDERIVED admission) -> the correct value is `~32`.
+   - *independent re-derivation:* `3.90` is the correct *narrow* per-flavor
+     coefficient after taste projection + `Z_q` + tadpole -- a different object
+     from the full literature bilinear.
+
+**Status: the I_S value is UNRESOLVED** (`3.90` with `/N_TASTE`, `~32` without),
+pending a derivation of whether the per-flavor `H_unit` coefficient genuinely
+carries the `/N_TASTE` taste-projection given the full-BZ extent already covers
+the 16 corners. The evidence (the runner's own docstring + the single-link
+literature match at `~32` + the underived-admission flag) leans toward NO
+division (`~32`), but it is genuinely contested. **No P1 precision claim should
+rest on `I_S=3.90` until this is resolved.** The kernel-fork result stands.

@@ -1,22 +1,31 @@
 #!/usr/bin/env python3
 """
-Max-record-entropy is SECTOR-BLIND: it cannot derive the sector-dependent Koide dial.
+Max-record-entropy is SECTOR-BLIND inside a supplied separable C3 selector class.
 
 Class-A finite-dim exact checks. The make-or-break is the WEIGHT-LEAK ACID TEST: does
 maximizing the 2-sector (singlet|doublet) record entropy on the C3 generation space give a
-SECTOR-DEPENDENT r (firewall-OK) or pin r=1/2 UNIVERSALLY (a weight-leak that falsifies the
-registered quark/neutrino dial)? Result: the C3 isotype partition is gauge-UNIFORM (one shared
-M3(C) generation carrier; color/charge enter as a separable factor that cancels in the
-normalized record fractions), so max-record-entropy returns r=1/2 for EVERY sector. It is a
-sharper CHARACTERIZATION of the registered charged-lepton setting (the symmetric / max-uncertainty
-point), NOT a derivation of the dial.
+SECTOR-DEPENDENT r (firewall-OK) or pin r=1/2 UNIVERSALLY (a weight-leak against the
+registered quark/neutrino comparators)? Result: under the supplied hypothesis that every
+sector uses the same C3 isotype record partition and color/charge enter only as a separable
+factor that cancels in the normalized record fractions, max-record-entropy returns r=1/2 for
+every sector in that class. It is a sharper CHARACTERIZATION of the registered charged-lepton
+setting (the symmetric / max-uncertainty point), NOT a derivation of the dial and NOT a proof
+that all physical fermion sectors realize the supplied separable carrier.
 
 This runner does NOT force r=1/2 (it shows that forcing it universally = a weight-leak) and does
 NOT derive any sector's r. r and the sector weights are free / registered data.
 
 Prints "TOTAL: PASS=N FAIL=0".
 """
+from pathlib import Path
+
 import numpy as np
+
+NOTE_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "docs"
+    / "FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md"
+)
 
 PASS = 0
 FAIL = 0
@@ -46,7 +55,7 @@ def record_weights(r):
     return 1.0 / Z, 2.0 * r / Z
 
 
-# ---- C3 generation structure (one shared M3(C) carrier; retained THREE_GENERATION_OBSERVABLE) ----
+# ---- C3 generation structure (finite M3(C) carrier from cited generation theorems) ----
 w = np.exp(2j * np.pi / 3)
 C = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]], complex)  # cyclic shift = the [111] 3-fold
 # isotype projectors: P_s = trivial (+1 eigenvector (1,1,1)/sqrt3), P_d = the 2-dim doublet
@@ -62,7 +71,7 @@ check("P_s, P_d commute with C (isotype projectors of C3)",
 # ============================================================================
 # 1. SETUP (already landed, retained_bounded): S2(r) is maximized exactly at r=1/2.
 # ============================================================================
-print("\n[1] 2-sector record entropy S2(r) is maximized at r=1/2 (setup; retained siblings)")
+print("\n[1] 2-sector record entropy S2(r) is maximized at r=1/2 (setup; retained-bounded siblings)")
 rs = np.linspace(1e-4, 3.0, 400001)
 S = np.array([shannon2(*record_weights(r)) for r in rs])
 r_star = rs[int(np.argmax(S))]      # the COMPUTED max-entropy selector (used downstream, not hardcoded)
@@ -73,16 +82,16 @@ check("at r=1/2 the record weights are equal (w_s=w_d=1/2)", abs(ws - 0.5) < 1e-
 
 
 # ============================================================================
-# 2. THE MAKE-OR-BREAK: gauge-uniform color is SECTOR-BLIND to the generation record.
-#    Tensor a color factor (uniform over the gauge-uniform generation triplet), trace it out:
+# 2. THE MAKE-OR-BREAK: supplied separable color is SECTOR-BLIND to the generation record.
+#    Tensor a color factor (uniform over the supplied generation triplet), trace it out:
 #    the generation-record weights are UNCHANGED => max-entropy argmax stays r=1/2 for ALL sectors.
 # ============================================================================
-print("\n[2] MAKE-OR-BREAK weight-leak acid test: color cancels => argmax r=1/2 for every sector")
+print("\n[2] MAKE-OR-BREAK conditional test: separable color cancels => argmax r=1/2")
 
 
 def gen_record_weights_with_color(r, d_color):
     """Build rho_gen (block weights w_s,w_d at ratio r) tensor maximally-mixed color (dim d_color),
-    take the generation 2-sector record P_s|P_d (color uniform = gauge-uniform generations),
+    take the generation 2-sector record P_s|P_d (the supplied separable selector hypothesis),
     and return the GENERATION-marginal record weights."""
     w_s, w_d = record_weights(r)
     rho_gen = w_s * P_s + w_d * (P_d / 2.0)              # uniform within each block
@@ -96,7 +105,7 @@ for d_c, label in [(1, "lepton Nc=1"), (3, "quark Nc=3"), (2, "weak-doublet"), (
     # pick an arbitrary r; the generation-record weights must NOT depend on d_color
     w0 = record_weights(0.37)
     wc = gen_record_weights_with_color(0.37, d_c)
-    check(f"[{label}] color factor d={d_c} leaves generation record weights invariant",
+    check(f"[{label}] supplied separable factor d={d_c} leaves generation record weights invariant",
           abs(wc[0] - w0[0]) < 1e-12 and abs(wc[1] - w0[1]) < 1e-12)
 
 # argmax over r of the colored generation record entropy stays = the bare selector for every color dim
@@ -112,12 +121,12 @@ check("all color dims give the SAME selector (max-entropy is sector-blind, compu
       max(colored_selectors.values()) - min(colored_selectors.values()) < 2e-3)
 
 
-# NEGATIVE CONTROL: break gauge-uniformity. If the gauge rep acted with DIFFERENT multiplicity on
+# NEGATIVE CONTROL: break the supplied uniformity. If the gauge rep acted with DIFFERENT multiplicity on
 # the singlet vs the doublet (alpha_s != alpha_d), the cancellation fails and the argmax MOVES off the
-# bare selector to r = alpha_s/(2 alpha_d). This proves the sector-blindness HINGES on gauge-uniformity
-# (the retained THREE_GENERATION_OBSERVABLE input), not on the entropy functional alone.
+# bare selector to r = alpha_s/(2 alpha_d). This proves the sector-blindness hinges on the supplied
+# separable hypothesis, not on the entropy functional alone.
 def nonuniform_record_weights(r, alpha_s, alpha_d):
-    """Singlet/doublet block multiplicities alpha_s, alpha_d (gauge-uniform <=> alpha_s == alpha_d)."""
+    """Singlet/doublet block multiplicities alpha_s, alpha_d (uniform route <=> alpha_s == alpha_d)."""
     a_s = alpha_s * 1.0
     a_d = alpha_d * 2.0 * r
     Z = a_s + a_d
@@ -125,14 +134,14 @@ def nonuniform_record_weights(r, alpha_s, alpha_d):
 
 # uniform recovers the bare selector...
 S_u = np.array([shannon2(*nonuniform_record_weights(r, 1.0, 1.0)) for r in rs_coarse])
-check("CONTROL alpha_s=alpha_d (gauge-uniform): argmax recovers r_star=1/2",
+check("CONTROL alpha_s=alpha_d (supplied uniform route): argmax recovers r_star=1/2",
       abs(rs_coarse[int(np.argmax(S_u))] - r_star) < 2e-3)
 # ...non-uniform (alpha_s=3, alpha_d=1) SHIFTS the argmax to r = 3/2, proving the hinge.
 S_nu = np.array([shannon2(*nonuniform_record_weights(r, 3.0, 1.0)) for r in rs_coarse])
 r_nu = rs_coarse[int(np.argmax(S_nu))]
-check("CONTROL alpha_s=3,alpha_d=1 (gauge-NON-uniform): argmax shifts to r=3/2 (= alpha_s/2alpha_d)",
+check("CONTROL alpha_s=3,alpha_d=1 (non-uniform route): argmax shifts to r=3/2 (= alpha_s/2alpha_d)",
       abs(r_nu - 1.5) < 2e-3)
-check("CONTROL: the non-uniform argmax is NOT 1/2 (sector-blindness requires gauge-uniformity)",
+check("CONTROL: the non-uniform argmax is NOT 1/2 (sector-blindness requires supplied uniformity)",
       abs(r_nu - 0.5) > 0.5)
 
 
@@ -169,16 +178,16 @@ check("the two max-entropy readings give DIFFERENT r (1/2 != 1) => the reading i
 
 
 # ============================================================================
-# 5. Gauge-uniformity / degree-0 inertness: a color charge acts as a SCALAR on the
-#    generation index, commutes with C, leaves the isotype projector invariant.
+# 5. Supplied degree-0/inert gauge channel: a color charge acts as a SCALAR on the
+#    generation index, commutes with C, and leaves the isotype projector invariant.
 # ============================================================================
-print("\n[5] the gauge channel is a scalar on the generation index (degree-0 inert on r)")
+print("\n[5] conditional degree-0 gauge channel is scalar on the generation index")
 G = 1.7  # an arbitrary gauge Casimir eigenvalue
-Gop = G * np.eye(3, dtype=complex)  # gauge-uniform => scalar on the 3 generations
-check("gauge operator commutes with C (gauge-uniform generations)", np.allclose(Gop @ C, C @ Gop))
+Gop = G * np.eye(3, dtype=complex)  # supplied uniform route => scalar on the 3 generations
+check("supplied uniform gauge operator commutes with C", np.allclose(Gop @ C, C @ Gop))
 P0 = (np.eye(3, dtype=complex) + C + C @ C) / 3.0  # = P_s
 check("isotype projector P0=(I+C+C^2)/3 equals the singlet projector P_s", np.allclose(P0, P_s))
-check("gauge operator leaves the isotype projector invariant ([Gop,P0]=0)",
+check("supplied uniform gauge operator leaves the isotype projector invariant ([Gop,P0]=0)",
       np.allclose(Gop @ P0, P0 @ Gop))
 # discriminating control: a NON-uniform generation operator (diag 1,2,3) does NOT commute with C
 Gbad = np.diag([1.0, 2.0, 3.0]).astype(complex)
@@ -203,6 +212,22 @@ check("the four sector settings map to four DISTINCT Koide Q (free dial, none pr
       len(set(Qs)) == 4)
 check("max-entropy selector r_star matches ONLY the lepton setting, not the quark/dimension settings",
       abs(r_star - 0.5) < 1e-3 and min(abs(r_star - r) for r in [0.597, 0.773, 1.0]) > 1e-2)
+
+
+# ============================================================================
+# 7. Source-boundary guard: keep the note narrowed to the audited repair scope.
+# ============================================================================
+print("\n[7] source-boundary guard: conditional algebraic selector theorem, not physical bridge")
+note_text = NOTE_PATH.read_text(encoding="utf-8")
+check("source claim type uses canonical no_go vocabulary", "**Claim type:** no_go" in note_text)
+check("source names the supplied gauge-uniform separable selector hypothesis",
+      "supplied gauge-uniform separable selector hypothesis" in note_text)
+check("source says the separable carrier is not a retained physical bridge",
+      "not a retained physical bridge" in note_text)
+check("registered quark values are non-load-bearing comparators",
+      "non-load-bearing comparators" in note_text)
+check("source no longer claims retained gauge-uniformity",
+      "retained gauge-uniformity" not in note_text)
 
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

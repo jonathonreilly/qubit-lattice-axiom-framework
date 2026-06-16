@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 221 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 950 |
+| **retained_bounded** | 951 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1420 |
+| unaudited | 1419 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,29 +60,29 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1401 |
+| `audited_clean` | 1402 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1737 |
+| `unaudited` | 1736 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1666 |
+| `bounded_theorem` | 1667 |
 | `decoration` | 48 |
 | `meta` | 325 |
 | `no_go` | 341 |
 | `open_gate` | 151 |
-| `positive_theorem` | 780 |
+| `positive_theorem` | 779 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 901 |
-| `leaf` | 1369 |
+| `medium` | 899 |
+| `leaf` | 1371 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -100,7 +100,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1596 | 136.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1397 | 60.95 | `audited_clean` | **retained** |
@@ -668,6 +668,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `growing_graph_dynamic_propagation_replacement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -9584,6 +9585,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In the configured finite 1D test, identity gives well -> TOWARD and hill -> TOWARD as a negative control, while parity gives well -> TOWARD and hill -> AWAY, with lapse excluded from the bounded claim.  _(class `A`)_
 - **chain closes:** True — The one-hop dependency is retained_bounded for the displayed identity/parity/lapse operator-form algebra, and the present note narrows the audited claim to the identity/parity finite signs only. The runner output and an independent dense finite recomputation both reproduce the four stated signs with norm conservation and no lapse floor in the load-bearing path.
 - **rationale:** The scoped claim is a bounded finite diagnostic, not a derivation of physical gravity or of the coupling forms. The current runner exits 0 with PASS=17 FAIL=0 and its bounded accounting covers only identity/parity signs and norm checks; the lapse section is explicitly labelled open and outside PASS/FAIL. I independently rebuilt the 61-site dense Hamiltonians without importing the runner and checked both dense Crank-Nicolson and exact matrix-exponential evolution: identity well +1.504366/+1.503341, identity hill +1.562577/+1.561775, parity well +1.838085/+1.838024, parity hill -0.044294/-0.045776, all with unit norm and the expected sign. The dependency status is retained_bounded, so the bounded chain closes at the stated finite operator-form scope.
+- **auditor confidence:** high
+
+### `gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`GRAVITY_SIGN_BOTTOM_IS_LEADING_ORDER_DECOUPLES_FROM_LV_REAL_BOTTOM_IS_EMERGENT_METRIC_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/GRAVITY_SIGN_BOTTOM_IS_LEADING_ORDER_DECOUPLES_FROM_LV_REAL_BOTTOM_IS_EMERGENT_METRIC_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under the supplied nonzero c2 and finite O(k^4) cubic-anisotropy correction in the displayed TT-kernel model, the leading k->0 sign of omega^2/|k|^2 is sign(c2).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-030210-e37ae4cc33-gravity_sign_bottom_is_leadi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For finite alpha, omega^2(k)/|k|^2 = c2(1 + alpha A4(khat)|k|^2) tends to c2 as k -> 0, so the strict leading sign is sign(c2).  _(class `A`)_
+- **chain closes:** True — The quotient is exactly c2 times a factor that tends to 1 as |k|^2 -> 0 for finite alpha and bounded cubic harmonic A4. The closure is only for the conditional model; c2, the physical TT kernel, leading isotropy, the RP bridge, and an emergent metric remain outside scope.
+- **rationale:** The load-bearing step is a genuine class-A limit identity, independently checked by bounding A4: for unit khat, sum khat_i^4 lies in [1/3,1], so A4 lies in [-4/15,2/5] and alpha A4 |k|^2 vanishes. The runner source performs finite algebra/order checks consistent with that hand calculation, including the 6.667e-12 tiny-k error and 2.8 eps^2 relative scaling. The source note explicitly excludes the broader gravity-sign and bottom-relocation claims, and the listed N1-N8 guardrails keep the missing physical bridges outside the audited theorem scope.
 - **auditor confidence:** high
 
 ### `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`

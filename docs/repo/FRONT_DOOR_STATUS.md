@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1572 |
-| Retained-grade rows, including boxed decorations | 1430 |
+| Applied audit verdicts | 1573 |
+| Retained-grade rows, including boxed decorations | 1431 |
 | Retained positive theorems | 221 |
 | Retained no-go rows | 214 |
-| Retained bounded rows | 950 |
+| Retained bounded rows | 951 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1420 |
+| Unaudited rows | 1419 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 51 |
 | Audited renaming rows | 31 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1422 |
-| Ready rows | 20 |
+| Total pending rows | 1421 |
+| Ready rows | 19 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
 | Medium pending | 430 |
-| Leaf pending | 440 |
+| Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08`](../../docs/GRAVITY_SIGN_BOTTOM_IS_LEADING_ORDER_DECOUPLES_FROM_LV_REAL_BOTTOM_IS_EMERGENT_METRIC_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15`](../../docs/KOIDE_R_IS_THE_WEIGHTING_PRINCIPLE_DIAL_RECORD_DYNAMICS_WEIGHTING_BLIND_BOUNDED_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
 - [`min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08`](../../docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
-- [`plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md) - leaf; unaudited
+- [`plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md) - medium; unaudited
+- [`pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26`](../../docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,12 +83,12 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
 | High nodes | 514 |
-| Medium nodes | 940 |
-| Leaf nodes | 1458 |
+| Medium nodes | 938 |
+| Leaf nodes | 1460 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1597 descendants; score 136.642
+- `minimal_axioms` - critical; 1596 descendants; score 136.641
 - `three_generation_observable_theorem_note` - critical; 1008 descendants; score 64.479
 - `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
 - `graph_first_su3_integration_note` - critical; 1397 descendants; score 60.949

@@ -514,7 +514,8 @@ NOT promote any row.
   — the no-dynamics guardrail (Section 5).
 - [`RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md`](RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md),
   [`RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md`](RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md)
-  — the retained record surface inside Lemma C and the abstract model.
+  — the retained finite-sector record surface plus the conditional
+  supplied-record schema inside Lemma C and the abstract model.
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — Lattice,
   Quantum, Record.
 
@@ -531,7 +532,8 @@ record rows inside Lemma C and `M = 1` (recomputed); (7) ledger reads
 (presence/status checks only). Throughout: no probability law is
 constructed; no branch-to-scalar map is asserted; no readout is
 constructed, identified, or selected; RR remains declared and is never
-derived; records are never asserted to form.
+derived; records are never asserted to form; the unbounded-additivity schema
+is consumed only under supplied nonzero-record/readout-context conditions.
 
 **Forbidden-imports check:** no new framework axiom; no new repo
 vocabulary tag; no PDG/fitted/observed values; no literature constant;

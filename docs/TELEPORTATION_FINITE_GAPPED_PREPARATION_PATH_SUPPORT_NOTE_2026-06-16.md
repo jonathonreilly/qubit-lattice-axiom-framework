@@ -3,7 +3,7 @@
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Primary runner:** `scripts/teleportation_finite_gapped_preparation_path_support_2026_06_16.py`
-**Parent open gate:** [`TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md`](TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)
+**Parent open gate:** `docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md` (trace target, not a proof dependency of this support artifact)
 
 actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure

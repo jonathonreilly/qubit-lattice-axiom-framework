@@ -1,0 +1,18 @@
+loop_slug: record-prerecord-scorecard-repair-20260616
+branch: physics-loop/record-prerecord-scorecard-repair-20260616
+base_ref: origin/main
+base_commit: ba46f7843d538e48b25d2de109d58125e82269cc
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4077
+target_claim_id: record_prerecord_instrument_kernel_gate_2026-06-06
+target_status: source-artifact-repair
+actual_current_surface_status: conditional-support
+cycle: 1
+active_route: scorecard-cache-reconciliation
+target_blocker_text: "runner_artifact_issue: reconcile the source note scorecard with the completed runner/cache, currently source PASS=36 FAIL=0 versus runner PASS=38 FAIL=0, then rerun the same restricted audit."
+files_touched:
+  - docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md
+imports_retired: []
+imports_exposed: []
+review_disposition: pass
+audit_required_before_effective_status_change: true
+next_exact_action: "Reviewer should inspect PR #4077; independent audit can then re-audit the reconciled source/cache pair."

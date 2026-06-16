@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_action_normalization.py
-runner_sha256: 57267ef97454145ed8028c4c88680661648db69a3876ccedfaab407dcda85447
+runner_sha256: 23c1cd4a6a6cdd4b1a941c637731edb5a294954a17d5010fffcc626b824899d4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 40.54
+elapsed_sec: 48.83
 status: ok
 ----- stdout -----
 ================================================================================
@@ -250,7 +250,56 @@ table previously printed in this runner (defl(k)/defl(5k)) compared two
 massive probe momenta and had no analytical relation to the (1+c)
 null-vs-massive ratio. That table has been removed.
 
-Total runtime: 40.3s
+================================================================================
+ASSERTION CERTIFICATE
+================================================================================
+
+PASS: Test 1 c=0.1: self-consistency converges :: iterations=12, reason=converged
+PASS: Test 1 c=0.1: finite positive field scale :: phi_max=1.209515e-02
+PASS: Test 1 c=0.1: finite radial beta fit :: beta=1.279775, R2=0.924008
+PASS: Test 1 c=0.2: self-consistency converges :: iterations=12, reason=converged
+PASS: Test 1 c=0.2: finite positive field scale :: phi_max=1.209586e-02
+PASS: Test 1 c=0.2: finite radial beta fit :: beta=1.279818, R2=0.924016
+PASS: Test 1 c=0.5: self-consistency converges :: iterations=12, reason=converged
+PASS: Test 1 c=0.5: finite positive field scale :: phi_max=1.209805e-02
+PASS: Test 1 c=0.5: finite radial beta fit :: beta=1.279949, R2=0.924041
+PASS: Test 1 c=1: self-consistency converges :: iterations=12, reason=converged
+PASS: Test 1 c=1: finite positive field scale :: phi_max=1.210185e-02
+PASS: Test 1 c=1: finite radial beta fit :: beta=1.280175, R2=0.924083
+PASS: Test 1 c=2: self-consistency converges :: iterations=19, reason=converged
+PASS: Test 1 c=2: finite positive field scale :: phi_max=1.171856e-02
+PASS: Test 1 c=2: finite radial beta fit :: beta=1.280562, R2=0.924154
+PASS: Test 1 c=5: self-consistency converges :: iterations=34, reason=converged
+PASS: Test 1 c=5: finite positive field scale :: phi_max=1.079697e-02
+PASS: Test 1 c=5: finite radial beta fit :: beta=1.281599, R2=0.924329
+PASS: Test 1 c=10: self-consistency converges :: iterations=45, reason=converged
+PASS: Test 1 c=10: finite positive field scale :: phi_max=9.190927e-03
+PASS: Test 1 c=10: finite radial beta fit :: beta=1.282759, R2=0.924507
+PASS: Test 2 a=0.25: rescaled row is finite near-stationary :: iterations=40, reason=max_iter, residual=1.101785e-05
+PASS: Test 2 a=0.25: c*G remains fixed :: c=4, G=0.25, cG=1
+PASS: Test 2 a=0.25: c*phi_max finite positive :: c*phi_max=1.172836e-02
+PASS: Test 2 a=0.5: rescaled row is finite near-stationary :: iterations=29, reason=converged, residual=9.747578e-06
+PASS: Test 2 a=0.5: c*G remains fixed :: c=2, G=0.5, cG=1
+PASS: Test 2 a=0.5: c*phi_max finite positive :: c*phi_max=1.216176e-02
+PASS: Test 2 a=1: rescaled row is finite near-stationary :: iterations=18, reason=converged, residual=8.602009e-06
+PASS: Test 2 a=1: c*G remains fixed :: c=1, G=1, cG=1
+PASS: Test 2 a=1: c*phi_max finite positive :: c*phi_max=1.225223e-02
+PASS: Test 2 a=2: rescaled row is finite near-stationary :: iterations=20, reason=converged, residual=8.435008e-06
+PASS: Test 2 a=2: c*G remains fixed :: c=0.5, G=2, cG=1
+PASS: Test 2 a=2: c*phi_max finite positive :: c*phi_max=1.226247e-02
+PASS: Test 2 a=4: rescaled row is finite near-stationary :: iterations=22, reason=converged, residual=8.271246e-06
+PASS: Test 2 a=4: c*G remains fixed :: c=0.25, G=4, cG=1
+PASS: Test 2 a=4: c*phi_max finite positive :: c*phi_max=1.226749e-02
+PASS: Test 2 global: c*phi_max spread remains bounded under cG-preserving rescaling :: relative_spread=0.044429
+PASS: Test 4: convergence basin covers every configured (c,G) row :: rows=30, expected=30
+PASS: Test 5 c=0.5: massive-probe deflection magnitude is finite positive :: |defl|=2.897431e-04
+PASS: Test 5 c=1: massive-probe deflection magnitude is finite positive :: |defl|=6.953767e-04
+PASS: Test 5 c=2: massive-probe deflection magnitude is finite positive :: |defl|=1.751791e-03
+PASS: Test 5 global: massive-probe deflection increases across sampled c :: c=0.5:|defl|=2.897431e-04, c=1:|defl|=6.953767e-04, c=2:|defl|=1.751791e-03
+
+TOTAL: PASS=42, FAIL=0
+RUNNER CERTIFICATE: CLOSED
+Total runtime: 48.4s
 
 ----- stderr -----
 

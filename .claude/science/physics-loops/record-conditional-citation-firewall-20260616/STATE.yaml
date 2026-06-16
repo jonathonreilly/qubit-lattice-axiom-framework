@@ -15,5 +15,5 @@ open_imports:
   - "No record-production/existence theorem is supplied."
   - "P1 BR/CAP-real/CAP-K remain open outside declared realization classes."
 review_findings: "Local self-review: pass for citation-firewall scope."
-pr_status: "pending"
-next_exact_action: "Open review PR; reviewer/auditor decides whether the downstream P1 rows are now explicit enough about the conditional Record schema dependency."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4111"
+next_exact_action: "Reviewer/auditor decides whether the downstream P1 rows are now explicit enough about the conditional Record schema dependency."

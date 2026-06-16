@@ -1,0 +1,21 @@
+loop_slug: wilson-higgs-taylor-validity-20260616
+branch: physics-loop/wilson-higgs-taylor-validity-20260616
+base: origin/main
+target_claim_id: wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle_count: 1
+files_touched:
+  - scripts/frontier_wilson_m_h_tree_at_extremum_leading_order_in_r.py
+  - logs/runner-cache/frontier_wilson_m_h_tree_at_extremum_leading_order_in_r.txt
+open_imports:
+  - "Uniform-N_taste=16 Higgs-channel readout remains non-derived/admitted."
+  - "Wilson coefficient normalization remains non-derived/admitted."
+review_disposition: pass
+next_exact_action: "Reviewer/auditor should re-check the tightened perturbative-validity certificate."
+stop_condition: "Runner weakness repaired and PR ready."

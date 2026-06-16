@@ -59,6 +59,20 @@ gluon Hilbert space", or "Casimir on physical color reps" is
 explicitly listed as bounded out-of-scope / open future work
 dependent on the same physical-color bridge.
 
+**Post-audit repair (2026-06-16):** the 2026-06-16 audit correctly found
+that the previous C2 text put the cubic-Casimir scalar inside the algebraic
+perimeter but gave the wrong number. With this note's normalization
+`T^a = lambda^a/2`, `Tr[T^a T^b] = delta^{ab}/2`, and
+`d^{abc} = 2 Tr[{T^a,T^b}T^c]`, direct contraction gives
+
+```text
+d^{abc} T^a T^b T^c = 10/9 I_3.
+```
+
+The runner now checks this scalar directly. This repair changes only the
+algebraic C2 coefficient; it does not add a physical-color bridge or claim
+anything about physical SM color.
+
 ## Cited authorities (one hop)
 
 - [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md)
@@ -234,11 +248,17 @@ asserted here.
 C2. **Algebraic cubic Casimir from d.** The cubic Casimir
 C_3 := d^{abc} T^a T^b T^c is a third-order generator of Z(U(g)) for
 the abstract algebraic carrier. On the abstract fundamental V_3 it
-evaluates to a specific scalar (related to (N²−1)(N²−4)/(4N²) for
-SU(N), giving 5/12 for N=3 in standard normalization). Whether this
-algebraic carrier's V_3 coincides with physical SM color fundamentals
-is the responsibility of the physical-color bridge (out of scope; see
-below).
+evaluates to the scalar
+
+```text
+C_3 = 10/9 I_3.
+```
+
+This follows from the standard SU(N) normalization
+`d^{abc} T^a T^b T^c = ((N^2 - 1)(N^2 - 4)/(4N^2)) I_N`; for `N = 3`
+the coefficient is `40/36 = 10/9`. Whether this algebraic carrier's
+V_3 coincides with physical SM color fundamentals is the responsibility
+of the physical-color bridge (out of scope; see below).
 
 C3. **No d for SU(2).** SU(2)'s 3 Pauli generators have only
 antisymmetric ε^{abc}, no analog of d^{abc}. The existence of d^{abc}

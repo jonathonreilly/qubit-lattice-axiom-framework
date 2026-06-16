@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 932 |
+| **retained_bounded** | 933 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1464 |
+| unaudited | 1463 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1376 |
+| `audited_clean` | 1377 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1781 |
+| `unaudited` | 1780 |
 
 | claim_type | count |
 |---|---:|
@@ -1140,6 +1140,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_axiom_audit_application_map_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -16336,6 +16337,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The proof factors S + D as S^{1/2}(I+B)S^{1/2} with B real antisymmetric, giving det(S+D)=det(S)prod_k(1+lambda_k^2)>0, and then uses block determinant multiplicativity plus finite additivity/continuity to obtain W_c=c log det on R_{>0}.  _(class `A`)_
 - **chain closes:** True — The determinant-positivity and Neumann sign patch are exact finite-dimensional linear algebra, and the log statement is the standard continuous homomorphism from (R_{>0}, multiplication) to (R, addition). The Record axiom is used only for finite additivity; continuity and c=1 are explicit bounded conventions rather than derived axiom content.
 - **rationale:** The load-bearing determinant claim closes independently of the runner: conjugating by S^{-1/2} reduces the problem to I plus a real skew matrix, whose eigenvalues are zero or imaginary conjugate pairs, so each determinant factor is positive. The derivative patch also closes by Neumann invertibility and sign constancy of a real continuous determinant. The log-readout component is clean only within its stated bounded scope: Record supplies additivity, while determinant-only dependence, continuity on R_{>0}, and c=1 are explicit conventions, not hidden derived physics.
+- **auditor confidence:** high
+
+### `reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 staggered two-step sector with m>0: the reconstructed log-transfer Hamiltonian kernel from the cited dispersion is quasilocal; interacting/gauged log locality and exact Lieb-Robinson tail composition are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-002950-766b4f3dce-reconstructed_h_quasilocal_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the cited free staggered symbol E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)) is analytic in a positive complex strip for m>0, Paley-Wiener/Bernstein implies its Fourier kernel has an exponential tail.  _(class `A`)_
+- **chain closes:** True — The d-dimensional dispersion authority supplies the exact symbol and contour-rate bound, while the spectrum-condition authority supplies the blocked-time scalar normalization. Independently, along p_mu=i eta one gets R=m^2-sinh^2 eta, so the first R=0 obstruction is eta=arcsinh(m), and shifting the largest coordinate gives an l1 rate below arcsinh(m)/d.
+- **rationale:** Both cited authorities are retained-grade in the restricted packet, and the claim stays within their free-surface bounded scope. The runner source performs substantive internal checks of the spectral gap, radicand positivity, Fourier-kernel decay, and massless limiting behavior rather than just printing constants. The load-bearing analytic-to-exponential implication is standard mathematics applied to the cited dispersion; the open interacting and tail-composition targets are explicitly outside the audited scope.
 - **auditor confidence:** high
 
 ### `record_axiom_audit_application_map_2026-06-06`

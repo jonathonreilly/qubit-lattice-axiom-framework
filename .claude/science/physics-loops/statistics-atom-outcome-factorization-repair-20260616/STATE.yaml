@@ -1,0 +1,21 @@
+loop_slug: statistics-atom-outcome-factorization-repair-20260616
+target_claim_id: statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12
+mode: source_repair
+base_ref: origin/main
+base_commit: 251ad58fa
+status: pr_ready
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+blocked_audit_status_before_repair: audited_conditional
+blocker_source: audit_ledger
+blocker_text: "missing_bridge_theorem: cheapest repair is a retained or accepted bounded bridge proving that repeated registrations are represented by product-form joint states sigma tensor sigma; a second auditor should also re-check the implicit p_s>0 domain for the ratio coordinate."
+repair_summary: "Removed state-level product form as load-bearing by citing the retained-bounded product-to-outcome weakening theorem, and added an explicit finite-odds p_s>0/domain endpoint guard."
+files_touched:
+  - docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md
+  - scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py
+  - logs/runner-cache/frontier_statistics_atom_reduces_to_product_form_2026_06_12.txt
+remaining_blockers:
+  - "Physical outcome-level independence for repeated registrations is still open; this PR does not discharge it."
+  - "R-D, occupancy-cell selection, outcome dictionary, and durability-to-weight coupling remain outside this row."
+next_exact_action: "Hand to reviewer/audit lane for independent re-audit of the narrowed outcome-factorization reduction."

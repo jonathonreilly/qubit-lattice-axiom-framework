@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1588 |
-| Retained-grade rows, including boxed decorations | 1437 |
+| Applied audit verdicts | 1589 |
+| Retained-grade rows, including boxed decorations | 1438 |
 | Retained positive theorems | 221 |
 | Retained no-go rows | 214 |
-| Retained bounded rows | 957 |
+| Retained bounded rows | 958 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1404 |
+| Unaudited rows | 1403 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 58 |
 | Audited renaming rows | 32 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1406 |
-| Ready rows | 4 |
+| Total pending rows | 1405 |
+| Ready rows | 3 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 427 |
+| Medium pending | 426 |
 | Leaf pending | 427 |
 
 Next ready rows by queue order:
 
-- [`staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_EINSTEIN_HILBERT_CLOSURE_SYNTHESIS_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
@@ -79,16 +78,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
 | High nodes | 514 |
-| Medium nodes | 936 |
-| Leaf nodes | 1462 |
+| Medium nodes | 935 |
+| Leaf nodes | 1463 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1597 descendants; score 136.642
-- `three_generation_observable_theorem_note` - critical; 1009 descendants; score 64.480
-- `observable_principle_from_axiom_note` - critical; 900 descendants; score 63.315
-- `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
-- `plaquette_self_consistency_note` - critical; 1008 descendants; score 51.479
-- `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 50.513
+- `three_generation_observable_theorem_note` - critical; 1008 descendants; score 64.479
+- `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
+- `graph_first_su3_integration_note` - critical; 1397 descendants; score 60.949
+- `plaquette_self_consistency_note` - critical; 1007 descendants; score 51.477
+- `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
 - `key_terminology` - critical; 1120 descendants; score 47.631
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 891 descendants; score 45.301
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 890 descendants; score 45.299

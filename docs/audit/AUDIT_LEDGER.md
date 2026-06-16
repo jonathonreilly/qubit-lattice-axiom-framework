@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 939 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1449 |
+| unaudited | 1448 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1385 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1766 |
+| `unaudited` | 1765 |
 
 | claim_type | count |
 |---|---:|
@@ -1525,6 +1525,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `color_generation_independent_z3_structures_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_upper_bound_dependency_edge_repair_note_2026-06-08` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5193,6 +5194,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** theorem on the open DM gate; it cannot derive the A-BCC axiom  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 3 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28`
+
+- **Note:** [`DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md`](../../docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded arithmetic: given retained R_base, retained_bounded P5 g_*, and supplied P1-P4/P6-P7 including m_DM = 16v and alpha_X = alpha_LM, the M0 formula gives the stated eta_pred band bracketing eta_obs.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-011824-71b202f89f-dm_eta_bounded_prediction_fr`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substitute the supplied P_DM_ETA inputs into eta_pred = C(x_F, alpha_X, R) * (N_sites * v)^2 and evaluate the fixed-alpha rectangle to obtain eta_pred in [5.25e-10, 8.11e-10].  _(class `A`)_
+- **chain closes:** False — The numerical substitution closes over the supplied packet and the retained R_base/P5 inputs. The full dependency chain does not close because P1-P4 and P6-P7 remain explicit unretained supplied premises, especially the freeze-out-bypass identity, m_DM = N_sites * v, and the dark-coupling/Sommerfeld route.
+- **rationale:** Issue: the arithmetic band is correct under the local packet, but the packet contains supplied rather than retained-grade physics premises. Why this blocks: the runner verifies algebra and hard-coded packet values; it does not derive P1-P4/P6-P7 from retained authorities. Repair target: retain or explicitly accepted-premise-register the P1-P4/P6-P7 package, especially P1 and P2, then re-audit the same bounded arithmetic. Claim boundary until fixed: conditional bounded-support arithmetic only; (C2.eta) remains open.
+- **open / conditional deps cited:**
+  - `DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md`
+  - `DM_ETA_NSITES_V_STRUCTURAL_SUPPORT_LIFT_THEOREM_NOTE_2026-04-29.md`
+  - `HIGGS_MASS_FROM_AXIOM_NOTE.md`
+  - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
 - **auditor confidence:** high
 
 ### `dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`

@@ -1,5 +1,25 @@
 #!/usr/bin/env python3
 """
+=============================== CORRECTION (2026-06-16) =======================
+DEFECTS FOUND — see docs/YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_
+NTASTE_RESOLUTION_NOTE_2026-06-16.md and scripts/corrections/*_memsafe.py.
+
+ 1. SCALAR channel (integrate_I_v_scalar_full): the `/N_TASTE` below was a
+    DOUBLE-COUNT (the 16 tastes are the 16 full-BZ corners already integrated).
+    Corrected I_S = 32.4, not 3.90; Δ_1 = +58.9, not +1.8.  (Fixed below.)
+ 2. FERMION channel (integrate_I_SE_fermion_full): `F_g/D_psi^2` is log-divergent
+    at ALL 16 BZ doublers but the continuum term subtracts ONLY k=0, so the
+    result is IR-regulator-DEPENDENT (d(lat-cont)/d log m^2 -> -28), NOT a
+    matching constant.  I_SE_fermion≈0.996 / Δ_3≈1.328 are m^2=0.01 artifacts;
+    /N_TASTE^2 cannot fix it.  (Flagged below; needs full-doubler subtraction.)
+ 3. The "cited bracket" / "prior schematic" checks (Blocks 7-9) were reverse-
+    engineered to PASS the BUGGY values and will now FAIL honestly.
+
+NET: corrected Δ_R is an O(50%) UNCONTROLLED quantity (dominated by the
+non-perturbative single-link scalar channel), NOT the reported -3.27%. The
+m_t=172.57 bullseye rode on this defective -3.27%.  Δ_2 (C_A gluonic) is clean.
+==============================================================================
+
 Frontier runner: P1 BZ Quadrature Full Staggered-PT (4D grid quadrature with
 full staggered Feynman rules, proper vertex kinematic factors, and MSbar
 continuum subtraction).
@@ -344,9 +364,11 @@ def integrate_I_v_scalar_full(N: int, m_sq: float = M_SQ_IR) -> float:
     cont_integrand = 4.0 / (k2 * k2)
     cont_val = SIXTEEN_PI_SQ * cont_integrand.sum() * dk
 
-    # Per-physical-flavor matching coefficient: taste-averaged lattice
-    # artifact part plus continuum I_S^{CL} = 2 offset
-    lat_artifact = (lat_val - cont_val) / N_TASTE / (U_0 ** 2)
+    # CORRECTED 2026-06-16: the `/ N_TASTE` was a double-count (the 16 tastes are
+    # the 16 full-BZ corners already in the (-pi,pi]^4 extent; cf. D_psi_full
+    # docstring). Removed -> I_S ~ 32.4. NOTE: this is the UNIMPROVED single-link
+    # value, which is non-perturbative/uncontrolled (Lee-Sharpe hep-lat/0208018).
+    lat_artifact = (lat_val - cont_val) / (U_0 ** 2)
     framework = lat_artifact + 2.0
 
     return framework
@@ -471,10 +493,14 @@ def integrate_I_SE_fermion_full(N: int, m_sq: float = M_SQ_IR) -> float:
     lat_val = SIXTEEN_PI_SQ * lat_integrand.sum() * dk
     cont_val = SIXTEEN_PI_SQ * cont_integrand.sum() * dk
 
-    # Per-physical-flavor matching coefficient with double taste-averaging.
-    # No continuum offset: the (4/3) T_F n_f coefficient in Delta_3
-    # already absorbs the physical beta_0 structure; the BZ finite part
-    # gives the lattice-to-MSbar matching directly.
+    # DEFECT 2026-06-16 (NOT a valid matching constant): (lat_val - cont_val)
+    # here is IR-REGULATOR-DEPENDENT. F_g/D_psi^2 is log-divergent at all 16 BZ
+    # doublers (D_psi->0 at every corner) but `cont` subtracts only k=0, so
+    # d(lat-cont)/d log(m^2) -> -28 instead of 0. The value below is therefore an
+    # artifact of the arbitrary m_sq, and the /N_TASTE^2 divisor (a constant)
+    # cannot cancel an m^2-varying log. A correct value needs FULL 16-doubler
+    # subtraction + m^2->0 extrapolation (see scripts/corrections/*_memsafe.py
+    # and the resolution note). Left here only so the defect is reproducible.
     lat_artifact = (lat_val - cont_val) / (N_TASTE ** 2) / (U_0 ** 2)
     framework = lat_artifact
     return framework

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 945 |
+| **retained_bounded** | 946 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1434 |
+| unaudited | 1433 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1394 |
+| `audited_clean` | 1395 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1751 |
+| `unaudited` | 1750 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 900 |
-| `leaf` | 1370 |
+| `medium` | 902 |
+| `leaf` | 1368 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -1411,6 +1411,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `unification_basin_failure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `universal_gr_3plus1_constraint_multiplier_structure_derived_fiber_metric_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -20578,6 +20579,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given H_unit = (1 / sqrt(N_iso * N_c)) * I on the canonical pair basis, <basis pair (alpha_0,a_0)|H_unit|basis pair (alpha_0,a_0)> = 1 / sqrt(N_iso * N_c).  _(class `A`)_
 - **chain closes:** True — The scoped claim closes as finite-dimensional algebra: the diagonal identity operator contributes one unit on a normalized basis state and the prefactor gives 1/sqrt(N_iso*N_c). Gauge-coupling independence follows within the scope because no g_bare symbol or gauge-field operator appears in the stated H_unit definition.
 - **rationale:** The note explicitly states H_unit and the canonical pair-basis normalization as hypotheses, and it does not claim to derive that normalization from a physical residue, identify (N_iso,N_c) with Standard-Model content, or force a g_bare selection. Under that narrow scope, the overlap and absence of g_bare dependence are exact algebraic consequences rather than a renaming or tuned numerical match. The cached runner exits cleanly with PASS=19/FAIL=0; eighteen checks exercise the algebraic overlap/no-g_bare content, while one parent-ledger context check is non-load-bearing and not needed for closure. Residual risk is downstream over-citation outside this narrow theorem, not failure of the audited claim itself.
+- **auditor confidence:** high
+
+### `universal_gr_3plus1_constraint_multiplier_structure_derived_fiber_metric_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`UNIVERSAL_GR_3PLUS1_CONSTRAINT_MULTIPLIER_STRUCTURE_DERIVED_FIBER_METRIC_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/UNIVERSAL_GR_3PLUS1_CONSTRAINT_MULTIPLIER_STRUCTURE_DERIVED_FIBER_METRIC_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Target-operator algebra for the linearized EH operator: the 3+1 multiplier rows, lambda-one spatial kinetic signs, comparator potential signs, Hamiltonian transverse-trace constraint, TT degree count, and declared symmetric-stencil discrete TT dispersion are audited only as bounded target-operator structure, not as a framework-native derivation of the EH/Regge action.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-020826-ecd4fc8548-universal_gr_3plus1_constrai`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Computing the S(0,0) coefficient and omega=0 block of the linearized Einstein tensor gives the non-degenerate lambda-one spatial fiber metric K_trace:K_TT=-2:+1, the comparator signs V_TT=+k^2/2 and V_trace=-k^2/2, and G^{00}=+(k^2/2)(h_yy+h_zz).  _(class `A`)_
+- **chain closes:** True — The runner source builds the formal linearized Einstein tensor and checks the relevant coefficients, ranks, and stencil substitutions rather than merely printing constants; an independent momentum-space formula check reproduces the key G00, TT-response, V_TT, and V_trace factors. The open Einstein/Regge action-selection and edge-length bridge is explicitly outside the scoped claim.
+- **rationale:** The load-bearing result is an algebraic closure inside the supplied linearized EH target operator, with no fitted value, PDG comparator, or hidden numerical tuning. The cited no-go, gluing theorem, supermetric normal form, and R3 target-operator authority are retained-grade or retained-bounded; the kinetic-isotropy primitive is explicitly flagged as an approved premise and is used only for the declared discrete stencil normalization. The source preserves the bounded scope and does not claim the still-open framework-native derivation of the geometric action.
 - **auditor confidence:** high
 
 ### `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10`

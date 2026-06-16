@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1431 |
+| unaudited | 1430 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1397 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1748 |
+| `unaudited` | 1747 |
 
 | claim_type | count |
 |---|---:|
@@ -80,9 +80,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 533 |
-| `high` | 508 |
-| `medium` | 903 |
-| `leaf` | 1367 |
+| `high` | 509 |
+| `medium` | 907 |
+| `leaf` | 1362 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -1534,6 +1534,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_normalization_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `color_generation_independent_z3_structures_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_upper_bound_dependency_edge_repair_note_2026-06-08` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -2639,6 +2640,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the declared finite Poisson self-gravity G grid, the live runner certifies a positive baseline delta, first sub-unit escape at G=0.050, and TOWARD deflection through G=0.100.  _(class `C`)_
 - **chain closes:** True — The primary runner and helper source instantiate the finite lattice, external field, self-field iteration, propagation, escape ratio, and centroid delta rather than printing the contested output constants. An independent read of the displayed table confirms the bounded conclusions: escape remains above one through G=0.020, falls below one at G=0.050, and all listed deltas are positive.
 - **rationale:** The one-hop cited authority is marked retained_bounded, which is retained-grade for this bounded dependency check. The runner does not import or hard-code the stale G_crit ~= 0.011 premise; it computes the finite grid from the exposed Poisson helper and asserts only the live bounded facts. The source note’s displayed summary matches the supplied cache and stays within the stated boundary exclusions, so the chain closes for the bounded finite-grid claim only.
+- **auditor confidence:** high
+
+### `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28`
+
+- **Note:** [`BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md`](../../docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional admission bridge: arithmetic recovery of the Cyburt+ 2016 eta_10-to-Omega_b h^2 coefficient from the explicitly admitted P1-P4 constant/convention packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-021835-bc2c442d78-bbn_eta10_to_omega_b_h2_coef`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given P1-P4, Omega_b h^2 / eta_10 = n_gamma(T_CMB) * m_p * S_Cyburt / (rho_crit / h^2) * 1e-10, with n_gamma = (2 zeta(3) / pi^2) * (k_B T_CMB / hbar c)^3, recovers 3.6515e-3 to within 0.2%.  _(class `A`)_
+- **chain closes:** False — The arithmetic check gives about 3.6554e-3, within the stated 0.2% tolerance, so the bounded computation is locally reproducible. It does not close as a retained derivation because P1-P4, S_Cyburt, and auxiliary unit-conversion constants are admitted rather than derived or registered; the displayed Planck-integral derivation also has a missing 1/2 phase-space prefactor before it states the correct 2 zeta(3)/pi^2 result.
+- **rationale:** Issue: the source explicitly imports the P1-P4 premise packet and comparator coefficient rather than deriving them from retained authorities, and the analytic-factor derivation as displayed drops the 1/(2 pi^2) phase-space measure factor even though the final factor used is standard. Why this blocks: the runner verifies conditional arithmetic over admitted numerical constants and a published target, not a framework-internal derivation of the coefficient or of the residual normalization. Repair target: derive/register the P1-P4 and unit-conversion premise packet, specify the numerical S_Cyburt convention if exact equality is claimed, and fix the Planck-integral prefactor. Claim boundary until fixed: the row may state a bounded admission-bridge arithmetic check to 0.2%, not retained closure of the BBN coefficient.
 - **auditor confidence:** high
 
 ### `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10`

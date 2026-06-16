@@ -1,0 +1,20 @@
+loop: staggered-bz-corner-narrow-20260616
+target_claim_id: staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07
+target_status: best_honest_status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: safe source narrow
+files_touched:
+  - docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md
+  - scripts/probe_bz_corner_decomposition.py
+  - logs/runner-cache/probe_bz_corner_decomposition.txt
+open_imports:
+  - Physical species / SM-generation identification remains outside this row.
+  - BZ-corner Hamming parity to K-S position-space sublattice/chirality remains a separate bridge.
+audit_results_written: false
+audit_verdict_applied: false
+review_loop_run: false
+review_loop_disposition: reviewer_owned
+next_exact_action: Open review PR and let independent reviewer/audit lane decide the effective-status movement.
+stop_condition: PR created for source-side repair.

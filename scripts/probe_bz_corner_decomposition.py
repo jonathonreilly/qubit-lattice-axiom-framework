@@ -4,6 +4,10 @@ Verifies that the 8 BZ corners of staggered-Dirac on Z^3 APBC decompose
 uniquely by Hamming weight as 1+3+3+1, and that the hw=1 triplet has
 the M_3(C) translation character support structure.
 
+This runner deliberately does not verify, derive, or assert an
+identification between BZ-corner Hamming parity and K-S position-space
+sublattice/chirality grading.
+
 Companion: docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md
 Loop: staggered-dirac-realization-gate-20260507
 Block: 04
@@ -11,9 +15,13 @@ Block: 04
 from __future__ import annotations
 
 from collections import defaultdict
+from pathlib import Path
 from typing import List, Tuple
 
 import sympy as sp
+
+
+NOTE_PATH = Path("docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md")
 
 
 def enumerate_bz_corners() -> List[Tuple[int, int, int]]:
@@ -132,18 +140,34 @@ def main() -> int:
     print("  full M_3(C) support per THREE_GENERATION_OBSERVABLE_THEOREM_NOTE")
     print()
 
-    # Sublattice parity check
-    print("Sublattice parity (chirality grading):")
-    print("  hw even (sublattice A): hw=0 (1 corner) + hw=2 (3 corners) = 4")
-    print("  hw odd (sublattice B):  hw=1 (3 corners) + hw=3 (1 corner) = 4")
-    sublattice_A_count = sum(1 for hw in (0, 2) for n in by_hw[hw])
-    sublattice_B_count = sum(1 for hw in (1, 3) for n in by_hw[hw])
-    sublattice_balanced = sublattice_A_count == sublattice_B_count == 4
-    print(f"  A: {sublattice_A_count}, B: {sublattice_B_count}, balanced: {'PASS' if sublattice_balanced else 'FAIL'}")
+    # Source-scope firewall: the audited blocker was an unsupported
+    # Hamming-parity-to-chirality/sublattice identification.  Keep this
+    # runner locked to the finite BZ-corner algebraic surface.
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    required_boundary = (
+        "does not identify BZ-corner Hamming parity with the K-S position-space"
+        in note_text
+        and "any such parity-to-chirality identification is a separate bridge"
+        in note_text
+    )
+    forbidden_overclaims = [
+        "Sublattice A (chirality +)",
+        "Sublattice B (chirality",
+        "sublattice A: hw even",
+        "sublattice B: hw odd",
+        "Hamming-weight grading + sublattice parity",
+    ]
+    overclaims_absent = all(token not in note_text for token in forbidden_overclaims)
+    scope_firewall_ok = required_boundary and overclaims_absent
+    print("Source-scope firewall:")
+    print("  does not assert Hamming parity = K-S sublattice/chirality parity")
+    print(f"  boundary marker present: {'PASS' if required_boundary else 'FAIL'}")
+    print(f"  forbidden parity/chirality overclaims absent: {'PASS' if overclaims_absent else 'FAIL'}")
+    print(f"  firewall status: {'PASS' if scope_firewall_ok else 'FAIL'}")
     print()
 
     # Overall verdict
-    all_checks = [decomp_matches, chars_match, distinct, c3_is_3cycle, sublattice_balanced]
+    all_checks = [decomp_matches, chars_match, distinct, c3_is_3cycle, scope_firewall_ok]
     n_pass = sum(all_checks)
     n_total = len(all_checks)
 
@@ -153,6 +177,7 @@ def main() -> int:
     print("Staggered-Dirac on Z^3 APBC has unique 1+3+3+1 BZ-corner")
     print("decomposition by Hamming weight; hw=1 triplet has M_3(C)")
     print("algebraic support matching THREE_GENERATION_OBSERVABLE_THEOREM.")
+    print("CHIRALITY_SUBLATTICE_IDENTIFICATION_DERIVED=FALSE")
 
     return 0 if n_pass == n_total else 1
 

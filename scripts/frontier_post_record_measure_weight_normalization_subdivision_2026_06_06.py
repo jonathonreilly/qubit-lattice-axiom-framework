@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 from collections import Counter, defaultdict
-from fractions import Fraction
 from pathlib import Path
 import hashlib
 import json
@@ -88,21 +87,6 @@ def require_text(path: str, needles: list[str]) -> None:
         report(f"{path} contains: {needle}", needle in text)
 
 
-def normalize_weights(weights: dict[str, Fraction]) -> dict[str, Fraction] | None:
-    if any(weight < 0 for weight in weights.values()):
-        return None
-    total = sum(weights.values(), Fraction(0))
-    if total <= 0:
-        return None
-    return {key: value / total for key, value in weights.items()}
-
-
-def selected_dial_from_normalization(has_normalization: bool, has_selector_rule: bool) -> str:
-    if has_normalization and has_selector_rule:
-        return "conditional_selector_ready"
-    return "blocked_missing_selector"
-
-
 def source_anchor_checks() -> None:
     section("Source-anchor checks")
     note_text = read_rel("docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md")
@@ -113,13 +97,14 @@ def source_anchor_checks() -> None:
             "measure_weight_normalization",
             "Normalized measure is not selected dial.",
             "2026-06-15 Scope Correction",
+            "2026-06-16 Source Split",
             "read-only/meta subdivision certificate",
-            "finite supplied-weight normalization lemma",
+            "finite supplied-weight normalization lemma is split out",
             "The packet is not a positive theorem from Record",
+            "POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md",
             "Diagnostic row export",
             "not a fixed theorem premise",
             "not an audit-result update",
-            "Finite normalization can certify",
             "Does not select or force a generation/Koide dial location",
             "Does not use a fixed ledger-row count as theorem content",
             "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
@@ -129,7 +114,7 @@ def source_anchor_checks() -> None:
     report(
         "source note is retagged as read-only meta certificate, not positive theorem",
         "**Claim type:** meta" in note_text
-        and "**Status:** bounded-support source-side" in note_text
+        and "**Status:** meta source-side" in note_text
         and "actual_current_surface_status: bounded-support" in note_text
         and "positive theorem from Record" in note_flat
         and "**Claim type:** positive_theorem" not in note_text
@@ -167,22 +152,22 @@ def source_anchor_checks() -> None:
             "generating",
         ],
     )
-
-
-def certificate_checks() -> None:
-    section("Finite normalization certificate checks")
-    normalized = normalize_weights({"a": Fraction(1), "b": Fraction(3)})
-    report("positive finite supplied weights normalize", normalized == {"a": Fraction(1, 4), "b": Fraction(3, 4)}, str(normalized))
-    report("normalized weights sum to one", normalized is not None and sum(normalized.values(), Fraction(0)) == 1)
-    report("zero-total weights are rejected", normalize_weights({"a": Fraction(0), "b": Fraction(0)}) is None)
-    report("negative weights are rejected", normalize_weights({"a": Fraction(1), "b": Fraction(-1)}) is None)
-    report(
-        "normalization without selector does not select dial",
-        selected_dial_from_normalization(True, False) == "blocked_missing_selector",
+    require_text(
+        "docs/POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md",
+        [
+            "finite supplied-weight normalization lemma",
+            "**Claim type:** bounded_theorem",
+            "supplied finite carrier",
+            "does not derive the supplied carrier or weights",
+        ],
     )
-    report(
-        "selector rule is still needed for selected dial readiness",
-        selected_dial_from_normalization(True, True) == "conditional_selector_ready",
+    require_text(
+        "scripts/frontier_post_record_finite_supplied_weight_normalization_lemma_2026_06_16.py",
+        [
+            "def normalize_weights",
+            "selector rule remains separate",
+            "SUMMARY: PASS=",
+        ],
     )
 
 
@@ -343,7 +328,6 @@ def firewall_checks() -> None:
 
 def main() -> int:
     source_anchor_checks()
-    certificate_checks()
     rows, counts = row_checks()
     firewall_checks()
     print()

@@ -4,8 +4,8 @@
 **Type:** finite supplied-weight normalization lemma / read-only meta
 subdivision certificate
 **Claim type:** meta
-**Status:** bounded-support source-side for measure/weight subdivision and
-finite supplied-weight normalization certificate semantics;
+**Status:** meta source-side for read-only measure/weight subdivision
+certificate semantics;
 audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
@@ -21,8 +21,14 @@ with cache
 ## Result
 
 This block subdivides the `measure_weight_normalization` sub-bucket from the
-selector/dial subdivision and adds the finite normalization certificate
-interface:
+selector/dial subdivision. It does not itself carry the finite normalization
+lemma as a theorem row.
+
+The finite supplied-weight normalization lemma is split out to the companion
+source note
+[`POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md`](POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md)
+with runner
+[`scripts/frontier_post_record_finite_supplied_weight_normalization_lemma_2026_06_16.py`](../scripts/frontier_post_record_finite_supplied_weight_normalization_lemma_2026_06_16.py):
 
 ```text
 supplied finite carrier
@@ -56,6 +62,14 @@ The packet is not a positive theorem from Record. Any clean positive theorem
 would require a separate retained bridge deriving the carrier or
 weight/normalization authority.
 The ledger row-count subdivision is diagnostic and read-only; it is not a fixed theorem premise for Record, and it is not an audit-result update.
+
+## 2026-06-16 Source Split
+
+This source split implements the auditor's repair path: keep this note as the
+read-only/meta subdivision certificate and move the finite supplied-weight
+normalization lemma to the companion bounded-theorem source note. The companion
+lemma remains conditional on supplied carrier and supplied nonnegative weights;
+it does not derive those inputs from Record.
 
 On the current paired diagnostic export snapshot:
 
@@ -91,8 +105,9 @@ This block separates those imports:
 - generic measure-weight imports remain open until a more specific supplied
   bridge is named.
 
-Finite normalization can certify that supplied weights define a normalized
-measure. It cannot certify that this measure is physically selected.
+The companion finite normalization lemma can certify that supplied weights
+define a normalized measure. This meta subdivision note cannot certify that
+this measure is physically selected.
 
 ## Status certificate
 
@@ -118,6 +133,8 @@ bare_retained_allowed: false
   from Record.
 - Does not select or force a generation/Koide dial location.
 - Does not turn normalized measures or weights into selected dials.
+- Does not carry the finite supplied-weight normalization lemma as theorem
+  content; that lemma is split to the companion note.
 - Does not use a fixed ledger-row count as theorem content.
 - Does not derive production dynamics, a kernel, Hamiltonian, instrument,
   clock/rate, physical arrow, or Born law from Record.
@@ -130,11 +147,8 @@ The runner verifies:
   ladder, and source-measure notes;
 - this note is classified as a read-only/meta subdivision certificate, not a
   positive theorem from Record;
-- finite supplied nonnegative weights normalize exactly when total weight is
-  positive;
-- zero-total weights are rejected;
-- normalization without selector rule remains blocked for selected-dial
-  authority;
+- the finite supplied-weight normalization theorem has been split to its
+  companion note and runner;
 - the selector/dial helper source used to obtain the bucket is included in the
   packet;
 - bounded ledger-row export exists as a diagnostic snapshot;

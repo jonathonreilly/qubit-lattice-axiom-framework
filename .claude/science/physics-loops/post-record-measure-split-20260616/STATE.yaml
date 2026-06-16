@@ -1,0 +1,36 @@
+loop_slug: post-record-measure-split-20260616
+date: 2026-06-16
+branch: physics-loop/post-record-measure-split-20260616
+base: origin/main
+goal: "Split the post-record measure/weight meta subdivision from the finite supplied-weight normalization theorem content."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: "Finite supplied rational nonnegative weights on a supplied finite carrier normalize exactly when total weight is positive."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The source split fixes row-shape and theorem-carrier scope, but it does not derive the supplied carrier or weights from Record."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: source-side split of meta subdivision and finite supplied-weight lemma
+hard_residual: "No Record-native bridge derives the carrier or weights used by the finite normalization lemma."
+files_touched:
+  - docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+  - docs/POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md
+  - scripts/frontier_post_record_finite_supplied_weight_normalization_lemma_2026_06_16.py
+  - logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_finite_supplied_weight_normalization_lemma_2026_06_16.txt
+open_imports:
+  - supplied finite carrier
+  - supplied rational nonnegative weights
+  - selector or physical prior rule
+no_go_routes:
+  - "Do not use ledger row counts as theorem premises."
+  - "Do not infer selected dials from normalized finite weights."
+review_findings: "Local self-review: source-only repair; no audit-result surfaces edited; paired runners pass."
+pr_status: pending
+next_exact_action: "Run guard checks, commit, push, open review PR, and patch the PR URL into this pack."
+stop_condition: "PR opened or PR backlog recorded; then pivot to the next audited conditional unlock candidate."

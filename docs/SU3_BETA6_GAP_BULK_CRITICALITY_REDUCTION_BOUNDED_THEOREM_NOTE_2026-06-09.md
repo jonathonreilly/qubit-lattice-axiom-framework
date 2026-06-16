@@ -159,3 +159,22 @@ second-order bulk critical point on the relevant 4D SU(3) Wilson axis up to
 Until that theorem exists, this packet remains an open-gate reduction and
 does not claim a beta=6 gap. No new lattice fact, external simulation result,
 or audit status is introduced here.
+
+## 2026-06-16 transfer-kernel dependency-edge repair
+
+The latest audit also named the standard fixed-lattice Wilson
+transfer-matrix/gap setting as part of the restricted packet boundary. This
+source-side repair adds the already audited-clean, retained-bounded in-repo
+authorities that carry the Wilson transfer-kernel positivity/RP side:
+
+- [`WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md`](WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)
+  proves the SU(3) Wilson temporal-gauge transfer kernel is positive
+  semidefinite for `beta >= 0` as the gauge-kernel positivity half.
+- [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+  supplies the bounded Wilson-plaquette temporal-gauge RP bridge for the
+  gauge-half norm-square application.
+
+These dependencies close only the source-graph route to the Wilson
+transfer-kernel/RP setting used by the conditional reduction. They do not prove
+the no-second-order-bulk-critical-point premise, do not propagate a small-beta
+gap to `beta=6`, and do not turn this row into an unconditional gap theorem.

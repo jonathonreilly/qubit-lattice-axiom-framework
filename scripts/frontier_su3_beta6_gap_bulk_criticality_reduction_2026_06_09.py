@@ -80,6 +80,12 @@ def note_guardrails() -> tuple[bool, list[str]]:
         "Cited rather than reproven here",
         "turn the conditional result",
         "adds no new axiom, no Tier-A admission, and no audit-status change",
+        "2026-06-16 transfer-kernel dependency-edge repair",
+        "WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md",
+        "AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+        "close only the source-graph route to the Wilson",
+        "They do not prove",
+        "the no-second-order-bulk-critical-point premise",
     ]
     missing = [phrase for phrase in required if phrase not in text]
     forbidden = ["**Claim type:** bounded_theorem"]

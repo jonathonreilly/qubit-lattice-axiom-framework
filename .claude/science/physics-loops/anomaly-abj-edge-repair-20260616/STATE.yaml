@@ -31,6 +31,6 @@ no_go_routes:
   - "Do not claim this bridge derives d_t = 1."
   - "Do not edit audit result surfaces."
 review_findings: "Local self-review: source-only dependency-edge repair; runner now PASS=76 FAIL=0; no audit-result surfaces edited."
-pr_status: pending
-next_exact_action: "Run guard checks, commit, push, open review PR, then record the PR URL in this pack."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4114"
+next_exact_action: "Wait for review/audit extraction on PR #4114, then pivot to the next audit-unlock candidate."
 stop_condition: "PR opened or PR backlog recorded, then pivot to the next audit-unlock candidate."

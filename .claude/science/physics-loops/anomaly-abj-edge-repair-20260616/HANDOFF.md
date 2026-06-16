@@ -11,7 +11,7 @@ that shape and the exact rational anomaly arithmetic, and now passes
 
 No audit files are edited. Independent audit owns any status change.
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4114
 
-Next exact action after PR creation: patch this file and `STATE.yaml` with the
-PR URL, then push the metadata update.
+Next exact action: wait for review/audit extraction on PR #4114, then pivot to
+the next audit-unlock candidate.

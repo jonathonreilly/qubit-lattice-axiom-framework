@@ -13025,6 +13025,10 @@
       "to": "scale_reference_primitive"
     },
     {
+      "from": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
       "from": "fs_reconstruction_r_and_tight_link_review_note_2026-06-06",
       "to": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
     },
@@ -15491,6 +15495,10 @@
     {
       "from": "grown_transfer_basin_note",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+    },
+    {
+      "from": "grown_transfer_basin_targeted_repair_note_2026-06-04",
+      "to": "gate_b_grown_joint_package_note"
     },
     {
       "from": "grown_wavefield_failure_diagnosis_note",
@@ -70988,10 +70996,11 @@
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "fermion_parity_z2_grading_theorem_note_2026-05-02",
         "minimal_axioms",
-        "scale_reference_primitive"
+        "scale_reference_primitive",
+        "staggered_dirac_realization_gate_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2f70826b4763f17decdec5df807177be1bbc80110e6cb82ad5eb8d5f5c4e33d0",
+      "note_hash": "c1dde8efb250ae04501a6d18de58ccd7ed84c5dae292e29d6ca4670acc875c09",
       "path": "docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md",
       "runner_path": "scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py",
       "title": "FS Stress-Test: the Fermion Sign is Forced-Modulo Realization Gate + Emergent-Lorentz + R"
@@ -75681,12 +75690,14 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "gate_b_grown_joint_package_note"
+      ],
       "helper_runner_paths": [
         "scripts/GROWN_TRANSFER_BASIN_SWEEP.py",
         "scripts/gate_b_grown_joint_package.py"
       ],
-      "note_hash": "ff2fd7caf204fd390187052f83c0b34e3b497e51cfafe057de1e4f6ce30051e3",
+      "note_hash": "9c9848bafa9f8936ec3e37534c35bbb3ce34f121eb1f785b7c1437b803023298",
       "path": "docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md",
       "runner_path": "scripts/GROWN_TRANSFER_BASIN_TARGETED.py",
       "title": "Grown Transfer Basin Targeted Repair Note"
@@ -81250,7 +81261,7 @@
         "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a2ac18aade137f71653a8aa420d90b41306131e1147dafcb0da939ba501efa7c",
+      "note_hash": "78f0d3b7cabadc0f04af2db3cfc44fb06f422ea1a8dfe87f21405548a4fe2809",
       "path": "docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md",
       "runner_path": "scripts/frontier_koide_matter_attachment_reduces_to_ks.py",
       "title": "Matter-Attachment Reduces to the Kawamoto-Smit Audit"
@@ -98959,7 +98970,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "9e9bb9825a31205620c96ade5eed5f72ab5042129bf8fabe743a6fcec0caa204",
+      "note_hash": "06bb6262bbf708d7f085ba2075af1d7230ca9f2bb27b55d957debc993c3d7336",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -100092,9 +100103,14 @@
         "coarse_grained_exterior_law_helper_note_2026-04-14"
       ],
       "helper_runner_paths": [
-        "scripts/_frontier_loader.py"
+        "scripts/_frontier_loader.py",
+        "scripts/frontier_coarse_grained_exterior_law.py",
+        "scripts/frontier_microscopic_dirichlet_bridge_principle.py",
+        "scripts/frontier_oh_schur_boundary_action.py",
+        "scripts/frontier_same_source_metric_ansatz_scan.py",
+        "scripts/frontier_tensorial_einstein_regge_completion.py"
       ],
-      "note_hash": "da00887dcb2d49196ada4b8049f15aa2aade2028fdf94ef77045789303ed148f",
+      "note_hash": "925171aa515af71b238c05927477f04428b880da73da142624e39c0126800993",
       "path": "docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md",
       "runner_path": "scripts/frontier_scalar_trace_tensor_nogo.py",
       "title": "Scalar-Trace-Only Tensor Completion No-Go"
@@ -113117,7 +113133,6 @@
     "growing_graph_expansion_card_note",
     "growing_graph_frontier_expansion_proxy_note",
     "growing_graph_static_control_audit_note",
-    "grown_transfer_basin_targeted_repair_note_2026-06-04",
     "grown_wavefield_companion_note",
     "guard_reconciliation_note",
     "h0125_scalable_scout_note",
@@ -113740,10 +113755,10 @@
       "open_gate": 170,
       "positive_theorem": 612
     },
-    "edge_count": 12967,
+    "edge_count": 12969,
     "leaf_count": 1113,
     "node_count": 3453,
-    "root_count": 1067,
+    "root_count": 1066,
     "runners_with_path": 3039
   }
 }

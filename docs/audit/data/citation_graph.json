@@ -51474,15 +51474,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
     },
     {
       "from": "repo.front_door_status",
       "to": "teleportation_resource_from_poisson_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
@@ -51502,7 +51502,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08"
+      "to": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
         "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
         "teleportation_resource_from_poisson_note",
+        "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08",
         "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
         "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
         "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27",
         "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
-        "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08"
+        "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "08bcc6342c66c0c14c1853bac0ade1a64b85a52922a37be5e2baafbcda4e875b",
+      "note_hash": "8edd02f6cfae5dd9b49608151d08db1d219174134c9635d7c551dc7455ec2974",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

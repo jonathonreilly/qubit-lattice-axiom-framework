@@ -1,0 +1,23 @@
+loop_slug: gate-b-weak-field-interface-20260616
+goal: "Repair the post-audit Gate B conditional boundary by splitting GB-S1 into a bounded weak-field action interface and a remaining supplied runner scalar."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: gate_b_dynamics_note
+target_blocker_text: "GB-S1, GB-S2, and GB-S3 are not derived or approved by the restricted packet."
+active_route: "Derive only the linear S=L(1-phi) action-response interface from retained-bounded weak-field source-response authority; leave scalar normalization, readout, and connectivity open."
+files_touched:
+  - docs/GATE_B_DYNAMICS_NOTE.md
+  - docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
+  - scripts/gate_b_connectivity_tolerance.py
+  - scripts/gate_b_weak_field_source_action_interface_2026_06_16.py
+  - logs/runner-cache/gate_b_weak_field_source_action_interface_2026_06_16.txt
+open_imports:
+  - "Gate B finite-core scalar strength/(r+0.1), including regulator and normalization."
+  - "GB-S2 propagation/readout semantics."
+  - "GB-S3 generated-connectivity rule."
+review_status: "local checks pass; independent reviewer/auditor still required"
+pr_status: pending
+next_exact_action: "Run protected-file guard, commit, push, and open a review PR."
+stop_condition: "PR opened or branch handoff written if GitHub is unavailable."

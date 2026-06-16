@@ -69,8 +69,10 @@ def _source_boundary_checks() -> None:
         and "2026-06-12 audit firewall: source index, not dynamics closure" in text,
     )
     _check(
-        "GB-S1/GB-S2/GB-S3 remain supplied row-local ingredients",
-        "valley-linear source/action rule" in flat
+        "GB-S1 split is visible and GB-S1b/GB-S2/GB-S3 remain supplied",
+        "GB-S1a" in flat
+        and "GB-S1b" in flat
+        and "regularized scalar/normalization" in flat
         and "propagation/readout semantics" in flat
         and "generated-connectivity rule" in flat
         and "supplied row-local ingredients" in flat,

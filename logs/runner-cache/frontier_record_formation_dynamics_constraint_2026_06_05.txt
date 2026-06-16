@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
-runner_sha256: e6b7f43c093bc20f55d4364c194202f41d92a137eddc7aa49c58858076284e0f
+runner_sha256: 2b93f9bcff092228d5989d52ee5ab72858a8f7b4a6127742d92c82f52aae8c74
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -42,6 +42,7 @@ PASS non-demolition: classical plateau I(S:F) = H_S for all fragment sizes :: pl
 Part 4: PERSISTENCE under continued evolution
 ------------------------------------------------------------------------------
 PASS persistence (4a): non-demolition freezes system pointer populations for ALL times (recorded value never changes) :: pops stay [0.8824 0.1176]
+PASS persistence caveat: re-kicking the same coherent fragment can erase its record, so fresh/idle/decoupling is a real hypothesis :: I_once=0.5224, I_twice=1.78e-15
 PASS persistence (4b): in a fresh-fragment chain, an idle finished fragment keeps its full bit while later fragments record :: I(S:E_1) after each later record = [0.5224, 0.5224, 0.5224, 0.5224]
 PASS persistence (4b): redundancy accumulates to R = n_env along the chain :: final R = 4 of 4
 
@@ -74,7 +75,8 @@ Part 6c: QND alone is NOT record-sufficient
 ------------------------------------------------------------------------------
 PASS QND-alone counterexample: H=0 commutes with Pi_S but writes no fragment record :: max I=0.00e+00, R=0
 PASS QND-alone counterexample: system-only pointer phase commutes but does not imprint E :: max I=1.11e-16
-PASS sufficiency construction needs both QND and nonzero controlled S-to-E imprint :: controlled min I=0.5224; zero-coupling max I=0.00e+00
+PASS QND-alone counterexample: nonzero commuting S-E interaction with E in an eigenstate writes no fragment record :: ||H||=5.66, max I=1.11e-16
+PASS sufficiency construction needs both QND and nonzero controlled S-to-E imprint :: controlled min I=0.5224; zero max I=0.00e+00; eigenstate max I=1.11e-16
 
 ------------------------------------------------------------------------------
 Part 7: FORCED-CLASS structure -- conserved pointer + imprint + locality
@@ -86,11 +88,11 @@ PASS locality probe: non-local env-env gate still commutes with Pi_S
 PASS locality probe: non-local env-env coupling injects EXCESS pairwise correlation I(E_1:E_2) > H_S (fragments stop being independent copies) :: I(E_1:E_2) = 1.4776 > H_S=0.5224 (excess=0.9553)
 
 ------------------------------------------------------------------------------
-Part 8: does the framework's transfer matrix T lie in the class?
+Part 8: supplied conserved-charge transfer block class check
 ------------------------------------------------------------------------------
-PASS framework T: hopping (XX+YY) conserves total charge Q_total on the bond :: ||[H_T,Q_tot]||=0.00e+00
-PASS framework T: Euclidean transfer e^{-H} is positive (reflection-positive class) :: min eig = 0.3679
-PASS framework T: commutes with the conserved charge => lies in the forced class :: ||[T,Q_tot]||=0.00e+00
+PASS supplied transfer block: hopping (XX+YY) conserves total charge Q_total on the bond :: ||[H_T,Q_tot]||=0.00e+00
+PASS supplied transfer block: Euclidean transfer e^{-H} is positive (reflection-positive class) :: min eig = 0.3679
+PASS supplied transfer block: commutes with the conserved charge => lies in the forced class :: ||[T,Q_tot]||=0.00e+00
 
 ------------------------------------------------------------------------------
 Part 9: NOT pinned -- coupling strength / action magnitude / beta
@@ -104,6 +106,7 @@ PASS source-note firewall present: It does not derive a dynamics, an action, gau
 PASS source-note firewall present: It does not pin the coupling strength...
 PASS source-note firewall present: says **nothing** about `beta = 6`...
 PASS source-note firewall present: does not derive the quantum-Darwinism bridge...
+PASS source-note firewall present: does not use OS-transfer membership as a record-...
 PASS source-note firewall present: does not establish the lattice/continuum or inte...
 
 ------------------------------------------------------------------------------
@@ -126,7 +129,8 @@ GENUINE CONSTRAINT, with explicit scope:
       record: R_delta = n_env, plateau = H_S, finished idle fragments persist,
       and fragments objectively agree.
 
-    - QND-alone counterexamples (Part 6c): H=0 and a system-only pointer phase
+    - QND-alone counterexamples (Part 6c): H=0, a system-only pointer phase,
+      and a nonzero commuting S-E interaction with E held in an eigenstate
       conserve Pi_S but write no environment record.
 
     - Demolition controls (Parts 5-6): a noncommuting sigma_x(S) handle records
@@ -142,8 +146,9 @@ GENUINE CONSTRAINT, with explicit scope:
         gives conditional independence of fragments given the pointer (clean
         independent redundant copies); a non-local env-env coupling injects
         EXCESS pairwise correlation I(E_a:E_b) > H_S and destroys it,
-    (d) the framework's number-conserving reflection-positive OS transfer T
-        = e^{-H} with [T,Q]=0 supplies the conserved-charge part of this class.
+    (d) a supplied number-conserving reflection-positive OS-style transfer
+        block T = e^{-H} with [T,Q]=0 lies in the conserved-charge part of
+        this class.
 
   This ADDS a temporal/FORMATION constraint to the timeless #2667 corollary:
   #2667 fixes which ALGEBRA is observable (gauge-invariant) at fixed time;
@@ -163,6 +168,8 @@ HONEST LIMITS (no over-claim):
     H=0 is pointer-non-demolishing and writes no fragment. The sufficient
     record-forming construction uses the nonzero controlled-copy coupling,
     recording time, and fresh-fragment/idle-fragment persistence hypotheses.
+    The runner also shows that re-using the same coherent fragment can erase
+    the copy, so persistence is the fresh/idle/decoupled-fragment statement.
   - The pointer Pi_S is NOT an extra free input: einselection runs the other
     way -- given H, the pointer is whatever observable H conserves; given the
     demand for a persistent objective record, H must possess such a conserved
@@ -171,6 +178,8 @@ HONEST LIMITS (no over-claim):
     transfer-matrix magnitude, or beta=6. It isolates pointer conservation as
     the necessary form and tests one explicit local controlled-copy channel as
     a sufficient record-writing construction.
+  - It does NOT prove that a physical framework OS transfer writes records.
+    Part 8 checks only conserved-charge transfer-class membership.
   - Pointer non-demolition is necessary and sufficient for all-state pointer
     persistence; it is not by itself sufficient for record formation. The
     lattice/continuum and interacting generalization is NOT established here.
@@ -179,7 +188,7 @@ HONEST LIMITS (no over-claim):
     construction on the explicit system, given the Darwinism bridge.
 
 ==============================================================================
-SUMMARY: PASS=43 FAIL=0
+SUMMARY: PASS=46 FAIL=0
 ==============================================================================
 
 ----- stderr -----

@@ -54,7 +54,22 @@ a consequence of Record, that the determinant phase-bearing component lies in a
 determinant-character / log-character homomorphism class: for sector-factored
 multiplicative determinant data, the phase component is an `R`-valued group
 homomorphism of the per-sector phase variables. This is a modeling/readout
-surface restriction, not a new axiom and not a derived Record fact. Record
+surface restriction, not a new axiom and not a derived Record fact.
+
+This supplied determinant-character / log-character readout restriction is the
+**determinant-readout face of the AC_phi_lambda Tier-A admission**, not a free
+modeling stipulation. Per the Tier-A registry
+(`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23`), the mass-side K-real
+determinant orientation is *the same C_3 conjugate-symmetric object* as
+AC_phi_lambda sub-admission (i); this note therefore carries the readout
+restriction as a **declared dependency on the registered AC_phi_lambda Tier-A
+admission** ([`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)),
+the chain-satisfying accepted premise that bounds this note's consequences. It
+adds no new admission: the readout admission is already counted once, in
+AC_phi_lambda. This note does not predict the resulting audit status; status
+authority is the independent audit lane only.
+
+Record
 finite additivity alone still admits K-even phase-dependent functions such as
 `sum_j cos(theta_j)` over disjoint records; those functions are excluded only by
 the determinant-character / log-character homomorphism boundary.
@@ -359,6 +374,13 @@ similar wall was retired by a mechanism overlooked here.
 - [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
   — the two named-open registrability bridges this note addresses, and the
   AC_phi_lambda circulant form (L2) consumed in Consequence B.
+- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+  — the registered **AC_phi_lambda Tier-A admission**; the supplied
+  determinant-character / log-character readout restriction is its
+  determinant-readout face (registry basis: the mass-side K-real determinant
+  orientation is the same C_3 conjugate-symmetric object as AC_phi_lambda
+  sub-admission (i)). Carried as a declared, chain-satisfying Tier-A dependency
+  that bounds this note's consequences; it adds no new admission.
 - [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) — the
   selected-surface strong-CP premise whose mass-orientation phase content
   Consequence A discharges on the registrable surface.

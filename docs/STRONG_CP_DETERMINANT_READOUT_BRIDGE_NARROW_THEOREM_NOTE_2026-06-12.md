@@ -53,6 +53,18 @@ The Record axiom supplies the orbit/additivity discipline only after this
 readout interface is supplied. It does not supply the determinant channel by
 itself.
 
+This supplied determinant-channel readout interface is the **determinant-readout
+face of the AC_phi_lambda Tier-A admission**, not a free stipulation. Per the
+Tier-A registry (`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23`), the mass-side
+K-real determinant orientation is *the same C_3 conjugate-symmetric object* as
+AC_phi_lambda sub-admission (i); this note therefore carries the supplied
+interface as a **declared dependency on the registered AC_phi_lambda Tier-A
+admission** ([`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)),
+the chain-satisfying accepted premise that bounds it. It adds no new admission:
+the readout admission is already counted once, in AC_phi_lambda. It does not
+predict the resulting audit status; status authority is the independent audit
+lane only.
+
 ## Theorem
 
 Let the phase part of a determinant-channel readout be a continuous
@@ -133,6 +145,13 @@ registry, and does not claim the gauge/action theta residual is discharged.
   for the broader Record-registrable additive-plus-orbit bridge already cited
   by the theta P2/K-CPT row; this note is only the mass-determinant-channel
   specialization.
+- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+  the registered **AC_phi_lambda Tier-A admission**; the supplied
+  determinant-channel readout interface is its determinant-readout face
+  (registry basis: the mass-side K-real determinant orientation is the same C_3
+  conjugate-symmetric object as AC_phi_lambda sub-admission (i)). Carried as a
+  declared, chain-satisfying Tier-A dependency that bounds this note; it adds no
+  new admission.
 - [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) as the strong-CP selected-surface parent whose
   mass-side determinant readout is the target; this note does not promote it.
 

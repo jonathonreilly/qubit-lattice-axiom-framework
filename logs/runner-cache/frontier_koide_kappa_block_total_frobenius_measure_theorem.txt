@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py
-runner_sha256: c569fe3885e403925c612b5e4bcaaf75c06ac4fa5a9fc310b6d79ca54d7977b1
+runner_sha256: a71740b9584ff0f167d186a13248404d936dbdcb1d72ee70272ca8929243849d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.59
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 Section A — symbolic Herm_circ(3) isotype decomposition and block totals

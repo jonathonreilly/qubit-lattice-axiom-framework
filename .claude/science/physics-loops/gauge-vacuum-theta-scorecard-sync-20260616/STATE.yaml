@@ -1,0 +1,18 @@
+loop_slug: gauge-vacuum-theta-scorecard-sync-20260616
+target_claim_id: gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12
+target_status: bounded-support
+started_from: origin/main
+block_count: 1
+active_route: scorecard_sync
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md
+open_imports:
+  - all-k finite-packet tail-remainder theorem remains open
+claim_boundary: >
+  Sync the expected verification scorecard from PASS=22 to PASS=23 to match
+  the paired runner/cache. The measured k=2..20 finite-packet envelope remains
+  bounded support and the all-k remainder theorem remains unresolved.
+review_disposition: pass
+next_exact_action: >
+  Hand this PR to the reviewer so the independent audit lane can re-check the
+  source/cache-aligned bounded finite-packet row.

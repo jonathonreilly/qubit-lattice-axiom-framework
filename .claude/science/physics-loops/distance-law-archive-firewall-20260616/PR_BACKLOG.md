@@ -1,9 +1,8 @@
 # PR Backlog
 
-No PR opened yet.
+No backlog. PR opened:
 
-Intended PR:
-
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4098
 - title: `[physics-loop] distance law archive firewall demotion`
 - base: `main`
 - head: `physics-loop/distance-law-archive-firewall-20260616`

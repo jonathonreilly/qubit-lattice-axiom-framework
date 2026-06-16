@@ -14,6 +14,7 @@ files_touched:
   - scripts/distance_law_archive_firewall_2026_06_16.py
 open_imports: []
 review_findings: []
-pr_status: pending
-next_exact_action: run verification, commit, push, and open review PR
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4098
+next_exact_action: reviewer extracts or rejects the source-hygiene firewall
 stop_condition: coherent source-hygiene block packaged for reviewer

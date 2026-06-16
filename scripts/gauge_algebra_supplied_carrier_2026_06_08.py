@@ -28,12 +28,15 @@ symmetry algebra is su(3)+su(2)+u(1). The gauging selection remains open. No
 PDG/fitted value; exact numpy/sympy.
 """
 from __future__ import annotations
+from pathlib import Path
 import numpy as np
 import sympy as sp
 import itertools
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md"
 
 
 def check(name, cond, detail=""):
@@ -62,6 +65,15 @@ def gell_mann():
 def main() -> int:
     print("GAUGE ALGEBRA SUPPORT GIVEN A SUPPLIED CARRIER")
     print("=" * 64)
+    note_text = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    check(
+        "post-audit conditional boundary states supplied carrier/gauging inputs and no u(6) uniqueness",
+        "2026-06-16 Post-Audit Conditional Boundary" in note_text
+        and "do **not** prove that this dim-12 subalgebra is unique against the full `u(6)`" in note_flat
+        and "do not derive `MR_color`" in note_flat
+        and "supplied carrier + supplied weak-axis/fiber split + supplied Gauss/link rules" in note_flat,
+    )
     I2 = np.eye(2, dtype=complex)
     X = np.array([[0,1],[1,0]], complex); Y = np.array([[0,-1j],[1j,0]], complex); Z = np.array([[1,0],[0,-1]], complex)
     paulis = [X, Y, Z]

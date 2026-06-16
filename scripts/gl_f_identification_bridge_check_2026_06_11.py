@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""GL(F) reconstruction-identification bridge -- decomposition + discharge certificates.
+"""GL(F) reconstruction-identification bridge -- conditional decomposition checks.
 
 Companion runner for
 docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md
@@ -14,16 +14,18 @@ cited blind):
      reconstruction is a bridge."
 
 This runner certifies the decomposition of that bridge into four clauses and
-the discharge of three of them as exact finite theorems:
+the exact finite support for three kinematic clauses after the declared
+Berezin/RP OS functional is supplied.  It does not discharge the
+matter-functional clause or close the parent bridge.
 
   (I-1) carrier clause     -- physical Hilbert space = qubit net (C^2)^(x)N:
         per-site supplied DIRECTLY by the Quantum axiom (u4 row is
         audited_renaming: the axiom is the supplier); composite by the
-        retained tensor-product bridge; GNS dimension matches.   DISCHARGED.
+        retained tensor-product bridge; GNS dimension matches.   EXACT SUPPORT.
   (I-2) parity clause      -- the reconstructed grading F-hat is a WORD in the
         reconstructed fields, F-hat = prod_x (1 - 2 psi_x^dag psi_x), so EVERY
         intertwiner transports it onto the retained F = (x)sigma_3
-        automatically (number operators are dressing-invariant). DISCHARGED.
+        automatically (number operators are dressing-invariant). EXACT SUPPORT.
   (I-3) dictionary clause  -- the field dictionary is FORCED: the OS functional
         of the declared Berezin/RP measure has cyclic vacuum, its word values vanish on
         every anticommutator insertion (so GL(F) is a property of the
@@ -31,7 +33,7 @@ the discharge of three of them as exact finite theorems:
         words span the full matrix algebra (unique irrep / pure state), and
         the intertwiner onto the explicit qubit-net Jordan-Wigner realization
         is unique up to one scalar (exact Schur nullity-1 certificate) and
-        unitary after exact rational rescaling.                   DISCHARGED.
+        unitary after exact rational rescaling.                   EXACT SUPPORT.
   (I-4) matter-functional clause -- "the framework's physical matter
         correlation functional IS the declared Berezin/RP measure's OS
         functional."
@@ -50,9 +52,12 @@ dispersion recomputation. Standard library only, deterministic, < 5 min.
 from fractions import Fraction
 import itertools
 import math
+from pathlib import Path
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md"
 
 
 def check(tag, desc, ok, extra=""):
@@ -499,9 +504,23 @@ def main():
     one = Fraction(1)
 
     print("=" * 78)
-    print("GL(F) identification bridge -- decomposition + discharge certificates")
+    print("GL(F) identification bridge -- conditional decomposition checks")
     print("(2026-06-11; landed parent reconstruction recomputed here)")
     print("=" * 78)
+
+    note_text = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    check("S", "post-audit source status is conditional support / open gate, not theorem closure",
+          "**Claim type:** open_gate / conditional-support certificate" in note_text
+          and "actual_current_surface_status: conditional-support" in note_text
+          and "target_claim_type: open_gate" in note_text
+          and "proposal_allowed: false" in note_text)
+    check("S", "matter-functional clause I-4 remains explicitly not discharged",
+          "matter-functional clause (I-4) is not discharged" in note_flat
+          and "does not discharge that clause" in note_flat)
+    check("S", "source no longer asks audit to treat the parent bridge as closed",
+          "does not ask the audit lane to treat the parent bridge as closed" in note_flat
+          and "bare_retained_allowed: false" in note_text)
 
     # ------------------------------------------------------------------
     # [A] Retained suppliers, recomputed
@@ -688,7 +707,7 @@ def main():
     # [C] Discharge certificates
     # ------------------------------------------------------------------
     print()
-    print("--- [C] Discharge certificates (clauses I-1, I-2, I-3 become theorems) ---")
+    print("--- [C] Exact finite support (I-1, I-2, I-3 conditional on I-4) ---")
 
     for N in (2, 3):
         rec = R[N]

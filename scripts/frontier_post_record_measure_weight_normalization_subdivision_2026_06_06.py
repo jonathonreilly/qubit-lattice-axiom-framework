@@ -113,9 +113,12 @@ def source_anchor_checks() -> None:
             "measure_weight_normalization",
             "Normalized measure is not selected dial.",
             "2026-06-15 Scope Correction",
+            "2026-06-16 Post-Audit Retag Boundary",
             "read-only/meta subdivision certificate",
             "finite supplied-weight normalization lemma",
             "The packet is not a positive theorem from Record",
+            "read-only current-ledger subdivision diagnostic",
+            "supplied nonnegative weights",
             "Diagnostic row export",
             "not a fixed theorem premise",
             "not an audit-result update",
@@ -127,10 +130,10 @@ def source_anchor_checks() -> None:
         ],
     )
     report(
-        "source note is retagged as read-only meta certificate, not positive theorem",
+        "source note is retagged as read-only meta/conditional certificate, not positive theorem",
         "**Claim type:** meta" in note_text
-        and "**Status:** bounded-support source-side" in note_text
-        and "actual_current_surface_status: bounded-support" in note_text
+        and "**Status:** read-only meta / conditional-support source-side" in note_text
+        and "actual_current_surface_status: conditional-support" in note_text
         and "positive theorem from Record" in note_flat
         and "**Claim type:** positive_theorem" not in note_text
         and "actual_current_surface_status: exact-support" not in note_text,

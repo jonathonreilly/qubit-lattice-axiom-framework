@@ -12,6 +12,30 @@ verdict. Reclassifies (does not overturn the static reading of) the same-day
 
 ---
 
+## 2026-06-16 Post-Audit Scope Firewall
+
+Independent audit correctly treated this packet as conditional support rather
+than a bounded theorem. The finite runner remains useful as a stress-test: it
+checks a toy spin-1/2 CCR/CAR energy-sign witness, verifies that the multi-loop
+graph-braid opening is statistics-blind, and records the exact residual route.
+It does **not** derive the external Clifford-to-spacetime identification,
+emergent Lorentz/positivity/microcausality, or the OS-to-Wightman
+reconstruction `R` from the framework baseline.
+
+Accordingly the live source boundary is:
+
+```text
+spin-1/2 support + abstract O_h/Cl(3) support
+  + supplied realization gate + supplied/emergent Lorentz/positivity
+  + supplied reconstruction R
+  => fermionic sign forced by the comparator spin-statistics engine.
+```
+
+This is a conditional route map and finite stress-test, not closure of FS and
+not a new axiom. The static baseline remains open to the hard-core boson until
+the realization/Lorentz/`R` chain is derived or otherwise admitted by retained
+authority.
+
 ## Role
 
 The repo's `/exercise` skill (5-subagent fan-out + literature) run as a

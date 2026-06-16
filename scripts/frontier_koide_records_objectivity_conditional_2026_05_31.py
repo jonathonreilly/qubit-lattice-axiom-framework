@@ -100,6 +100,14 @@ def main():
            "durable realized-outcome registration and finite additivity" in note_flat
            and "does not supply weighting, normalization, probability" in note_flat
            and "no new axiom, no Tier-A admission, and no audit-status change" in note_flat)
+    record("F0.6 note records 2026-06-16 post-audit source boundary",
+           "2026-06-16 Post-Audit Source Boundary" in note_text
+           and "conditional algebra certificate only" in note_flat)
+    record("F0.7 post-audit boundary keeps both selector inputs supplied",
+           "supplied equal-block" in note_flat
+           and "supplied records/objectivity maximization selector" in note_flat
+           and "does not derive equal-block weighting from Record" in note_flat
+           and "does not derive the objectivity selector from dephasing" in note_flat)
 
     r, ws, wp, a2, lam, T = sp.symbols("r w_s w_p a2 lam T", positive=True)
     # at FIXED TOTAL energy (T=1), with E_perp/E_+ = 6|b|^2/3a^2 = 2r:

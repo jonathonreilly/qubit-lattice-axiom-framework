@@ -129,6 +129,7 @@ print("Section 1: chain authority audits")
 print("-" * 72)
 
 note_text = read_doc(NOTE_FNAME)
+note_flat = " ".join(note_text.split())
 audit("Note exists at expected path", len(note_text) > 0, NOTE_FNAME)
 audit(
     "Note claim type is canonical bounded_theorem",
@@ -155,6 +156,21 @@ audit(
 audit(
     "Note records 2026-06-12 P5 retained-input repair",
     "2026-06-12 P5 retained-input repair" in note_text,
+)
+audit(
+    "Note records 2026-06-16 post-audit residual certificate",
+    "2026-06-16 Post-Audit Residual Certificate" in note_text,
+)
+audit(
+    "Post-audit certificate keeps P1-P4 and P6-P7 as live residuals",
+    "remaining live residuals are exactly P1-P4 and P6-P7" in note_text
+    and "P1: freeze-out-bypass identity" in note_text
+    and "P7: Sommerfeld/dark-coupling route" in note_text,
+)
+audit(
+    "Post-audit certificate keeps eta_obs comparator-only",
+    "observed `eta_obs` value is a comparator for bracketing only" in note_flat
+    and "not a proof input" in note_flat,
 )
 audit(
     "Note records 2026-06-07 source-boundary repair",

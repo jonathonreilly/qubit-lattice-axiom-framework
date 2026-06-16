@@ -61,6 +61,26 @@ the gate. (A broader lens set was explored in an exploratory campaign, but only 
 runner-backed here; closing the selection as a *no-go* would require the full N1–N8 route
 enumeration with retained-authority failures, which this note does **not** assert.)
 
+## 2026-06-16 Post-Audit Conditional Boundary
+
+Independent audit correctly leaves this row conditional. The finite checks show
+that the supplied `C³(base) ⊗ C²(fiber)` carrier supports a commuting
+`su(3) ⊕ su(2) ⊕ u(1)` subalgebra and that four tested discriminators do not
+select the gauged subgroup. They do **not** prove that this dim-12 subalgebra is
+unique against the full `u(6)` carrier algebra, do not derive `MR_color`, and do
+not derive chiral `su(2)_L`.
+
+The repair boundary is therefore:
+
+```text
+supplied carrier + supplied weak-axis/fiber split + supplied Gauss/link rules
+  => conditional algebraic support for the candidate dim-12 subalgebra
+     and a four-discriminator open gate.
+```
+
+Any clean promotion requires a separate retained bridge deriving or admitting
+the carrier/gauge-selection principle and the chiral weak coupling surface.
+
 ## What is and is not claimed
 
 - **Is:** GIVEN the supplied carrier, the symmetry algebra is `su(N_c)⊕su(2)⊕u(1)` (dim 12 at

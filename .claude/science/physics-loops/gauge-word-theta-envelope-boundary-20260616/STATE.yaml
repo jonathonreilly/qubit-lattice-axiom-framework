@@ -1,0 +1,24 @@
+loop_slug: gauge-word-theta-envelope-boundary-20260616
+goal: "Repair the gauge word-count theta post-audit conditional by narrowing the source packet to the verified finite-packet measured envelope."
+target_status: bounded-support
+origin_main: "104d31220 audit: reconstructed h quasilocal from analytic dispersion mi clean"
+branch: physics-loop/gauge-word-theta-envelope-boundary-20260616
+claim_id: gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12
+audit_blocker: "Missing proof-grade all-k finite-packet tail/remainder bound for the dropped Neumann, source perturbation, gamma/source, and higher-order terms; source expected runner line was stale."
+active_route: source_boundary_repair
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md
+  - scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py
+  - logs/runner-cache/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.txt
+  - .claude/science/physics-loops/gauge-word-theta-envelope-boundary-20260616/
+open_imports:
+  - "Uniform all-k finite-packet tail/remainder theorem remains open."
+  - "No physical 3D unmarked spatial Wilson environment computation is supplied."
+  - "No all-weight/untruncated limit, L_perp limit, analytic P(6), or canonical repinning is supplied."
+post_audit_issues_fixed:
+  - "Updated the stale 22-pass expected final line to the current 23-pass runner output."
+  - "Demoted all-k asymptotic wording to measured finite-packet composition/envelope wording."
+next_exact_action: "Reviewer can extract the bounded-support source-boundary repair and send the row back for independent re-audit."

@@ -405,12 +405,12 @@ def main() -> int:
     check("source p1 finite-difference check is stable", sa.finite_difference_error < 5.0e-5, f"err={sa.finite_difference_error:.3e}")
     check("source sensitivity has the sign needed for P_k increasing to P_inf", sa.c_source > 0.0, f"C={sa.c_source:.15f}")
 
-    section("Part 6: composed asymptotic and measured envelope")
+    section("Part 6: source composition surface and measured envelope")
     rows = measured_rows(packet, source, sa.p_inf)
     c_hat = max(row["err"] / (td.theta ** int(row["k"])) for row in rows[1:])
     c_hat_row = max(rows[1:], key=lambda row: row["err"] / (td.theta ** int(row["k"])))
     print(
-        "Asymptotic surface: P_inf - P_k = "
+        "Finite-packet composition surface: P_inf - P_k = "
         "C_source * theta^(k-1) + 3*C_source*theta^(k-1)*alpha^k "
         "+ finite-packet smaller-scale remainder."
     )
@@ -434,7 +434,7 @@ def main() -> int:
             f"{err / (td.theta ** k):.12e} | {residual:.12e}"
         )
     check("measured envelope c_hat dominates k=2..20 without an added safety factor", all(row["err"] <= c_hat * (td.theta ** int(row["k"])) + 1.0e-18 for row in rows[1:]), f"c_hat={c_hat:.15f}")
-    check("asymptotic prefactor matches the measured tail window", abs(rows[17]["err"] / (td.theta ** 18) - sa.c_over_theta) < 5.0e-4, f"k=18 ratio={rows[17]['err'] / (td.theta ** 18):.12e}")
+    check("tail-window prefactor matches the measured finite packet", abs(rows[17]["err"] / (td.theta ** 18) - sa.c_over_theta) < 5.0e-4, f"k=18 ratio={rows[17]['err'] / (td.theta ** 18):.12e}")
     check("two-channel corrected residual is governed by a smaller displayed scale on k=5..15", max_two_channel_residual < 10.0, f"max residual/(theta*gamma)^k={max_two_channel_residual:.6e}")
 
     section("Part 7: note hygiene and residual boundary")

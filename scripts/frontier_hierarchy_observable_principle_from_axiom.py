@@ -1015,6 +1015,47 @@ def test_lemma_facts_recomputed_on_runner_blocks():
     )
 
 
+def test_t1d_independence_guardrail():
+    """Part 9 -- source guardrail for the T1-d independence no-go.
+
+    The parent row remains conditional on the readout-identification Boundary.
+    The 2026-06-16 companion no-go proves this is not a cosmetic caveat:
+    Record additivity plus determinant block factorization admits additive
+    source readouts that are not determinant-only.
+    """
+    print("\n" + "=" * 78)
+    print("PART 9: T1-D READOUT-INDEPENDENCE GUARDRAIL")
+    print("=" * 78)
+
+    repo = sys.path[0] if sys.path[0].endswith("scripts") else "scripts"
+    root = repo[:-len("scripts")] if repo.endswith("scripts") else "."
+    note_path = root + "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md"
+    no_go_path = (
+        root
+        + "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md"
+    )
+    with open(note_path, "r", encoding="utf-8") as handle:
+        parent = handle.read()
+    with open(no_go_path, "r", encoding="utf-8") as handle:
+        no_go = handle.read()
+
+    check(
+        "parent cites the T1-d determinant-readout independence no-go",
+        "OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md"
+        in parent,
+    )
+    check(
+        "parent still declares T1-d as a Boundary, not an axiom-derived theorem",
+        "Boundary (declared bridge premise, T1-d)" in parent
+        and "not a consequence of `minimal_axioms`" in parent,
+    )
+    check(
+        "companion no-go states the determinant-only quotient is not Record-derived",
+        "must not treat T1-d as Record-derived" in no_go
+        and "does not add a new axiom" in no_go,
+    )
+
+
 def main():
     print("Hierarchy observable principle with declared finite readout boundary")
     print("=" * 78)
@@ -1026,6 +1067,7 @@ def main():
     test_conditional_scope_shape()
     test_candidate_consistency_checks()
     test_lemma_facts_recomputed_on_runner_blocks()
+    test_t1d_independence_guardrail()
     print("\n" + "=" * 78)
     print(f"SCORECARD: {PASS_COUNT} pass, {FAIL_COUNT} fail out of {PASS_COUNT + FAIL_COUNT}")
     print("=" * 78)

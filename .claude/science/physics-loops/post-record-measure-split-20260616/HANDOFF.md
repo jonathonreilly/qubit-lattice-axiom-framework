@@ -12,7 +12,7 @@ carrier/weight derivation, Born-law, and production-dynamics claims firewalled.
 No audit files are edited. The reviewer should extract the science and decide
 whether this is the right repair path before any audit-system status change.
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4113
 
-Next exact action after PR creation: patch this file and `STATE.yaml` with the
-PR URL, then push the metadata update.
+Next exact action: wait for review/audit extraction on PR #4113, then pivot to
+the next audited conditional unlock candidate.

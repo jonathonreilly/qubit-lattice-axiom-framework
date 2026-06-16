@@ -31,6 +31,6 @@ no_go_routes:
   - "Do not use ledger row counts as theorem premises."
   - "Do not infer selected dials from normalized finite weights."
 review_findings: "Local self-review: source-only repair; no audit-result surfaces edited; paired runners pass."
-pr_status: pending
-next_exact_action: "Run guard checks, commit, push, open review PR, and patch the PR URL into this pack."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4113"
+next_exact_action: "Wait for review/audit extraction on PR #4113, then pivot to the next audited conditional unlock candidate."
 stop_condition: "PR opened or PR backlog recorded; then pivot to the next audited conditional unlock candidate."

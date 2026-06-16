@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 931 |
+| **retained_bounded** | 932 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1466 |
+| unaudited | 1465 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,22 +60,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1374 |
+| `audited_clean` | 1375 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1783 |
+| `unaudited` | 1782 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1665 |
+| `bounded_theorem` | 1666 |
 | `decoration` | 48 |
 | `meta` | 325 |
 | `no_go` | 340 |
 | `open_gate` | 151 |
-| `positive_theorem` | 782 |
+| `positive_theorem` | 781 |
 
 | criticality | count |
 |---|---:|
@@ -1129,6 +1129,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -16191,6 +16192,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Conditioned on a unitary C^2-to-C^2 link convention, the anti-Hermitian endomorphism algebra is span_R{iI_2,iσ_1,iσ_2,iσ_3}=u(2)=su(2)⊕u(1), whose real dimension 4 is too small for a faithful 8-dimensional su(3) embedding.  _(class `A`)_
 - **chain closes:** True — The cited retained/accepted inputs supply the C^2 qubit carrier and Pauli su(2) action; the remaining step is standard finite-dimensional matrix Lie algebra. The link-connection convention is part of the bounded claim scope, not an unscoped conclusion.
 - **rationale:** The runner source performs actual finite-dimensional Pauli, rank, centrality, Casimir, and firewall checks rather than merely printing pass lines. Independent inspection gives the same algebra: u(2) has real basis iI_2 and iσ_i, decomposes into central u(1) plus traceless su(2), and cannot contain a faithful 8-real-dimensional su(3) subalgebra. The result remains bounded to the stated unitary link-connection convention and does not derive electroweak physics or color.
+- **auditor confidence:** high
+
+### `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Target-continuum linearized Einstein tensor algebra only: gauge zero modes, the supplied TT-sample kinetic response, and a distinct conformal response under the runner's stated sign convention.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-002136-384c1154c5-r3_geometric_regge_lineariza`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the linearized Einstein tensor G_lin in momentum space, pure gauge modes are zero modes, the supplied TT sample has response G_lin(h_TT) = (1/2) k^2 h_TT, and the conformal direction is distinct from the TT response.  _(class `A`)_
+- **chain closes:** True — Direct algebra from the displayed runner formula cancels G_lin(k xi + xi k), reduces the transverse-traceless sample to (1/2) k^2 h, and gives G_lin(eta)=k k - k^2 eta, distinct from the TT response. This closes only for the target continuum operator and not for Regge second variation, metric emergence, or physical graviton closure.
+- **rationale:** The runner source implements the linearized Einstein tensor formula and performs nontrivial numerical checks rather than merely printing pass constants. Independent algebra verifies the gauge cancellation, the TT coefficient including the 1/2 factor, k^2=1.7^2=2.890, and the conformal max response scale. The source note's guardrails explicitly prevent using this as a Regge-action, edge-metric, continuum-limit, or physical-graviton theorem.
 - **auditor confidence:** high
 
 ### `r_base_group_theory_derivation_theorem_note_2026-04-24`

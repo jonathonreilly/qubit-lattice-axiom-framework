@@ -417,6 +417,15 @@ This subtraction **cancels the UV logarithm** between lattice and
 continuum at the same regulator, leaving the finite matching
 coefficient — the standard MSbar prescription at `μ = 1/a`.
 
+> **CORRECTION (2026-06-16):** the claim above is FALSE for the FERMION
+> channel. `4/(k²+m²)²` subtracts only the `k=0` doubler's log, but
+> `F_g/D_psi²` is log-divergent at all 16 BZ doublers. The fermion
+> `(lat−cont)` is therefore IR-regulator-DEPENDENT
+> (`d(lat−cont)/d log m² → −28`), not a finite matching coefficient. The
+> scalar and gluonic channels (single `1/D_psi` / `1/D_g²` whose extra
+> denominator is non-vanishing away from the origin) ARE clean. See
+> [YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md](YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md).
+
 ### 2.6 Grid-sweep at N ∈ {32, 48, 64}
 
 The full-PT runner evaluates each integral at three grid sizes to

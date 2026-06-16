@@ -1,3 +1,13 @@
+> ⚠ **CORRECTION (2026-06-16) — P1 / Δ_R chain defect.** This note belongs to the
+> P1 / Δ_R lattice-matching chain, which has two verified defects: the scalar
+> `I_v_scalar` `/N_TASTE=16` double-count (corrected `I_S = 32.4`, not 3.90) and
+> the IR-regulator-dependent fermion channel. Corrected **Δ_R ≈ +50% UNCONTROLLED**
+> (not −3.27%), which **violates the ≤7.41% m_t-residual geometric bound by ~7–10×**
+> (that bound rests on `I_S ∈ [2,6]`). Any `I_S` / `Δ_R` / m_t precision/bound claim
+> below is invalidated; m_t is **ballpark, not a controlled prediction**. Δ_2 (C_A
+> gluonic) is clean. See
+> [YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md](YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md).
+
 # P1 Loop-Expansion Geometric Tail Bound on the Lattice-to-MSbar Matching at M_Pl
 
 **Date:** 2026-04-17

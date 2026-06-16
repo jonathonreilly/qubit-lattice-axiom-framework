@@ -24,4 +24,4 @@ python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only
 python3 scripts/vocab_lint.py --report-only --report-path /tmp/stale-frames-vocab-report.json archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md
 ```
 
-PR: TBD
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4106

@@ -2,7 +2,7 @@
 
 Branch: `physics-loop/teleportation-finite-prep-path-20260616`
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4068
 
 Claim-state movement:
 
@@ -26,5 +26,7 @@ Remaining blockers:
 
 Exact next action:
 
-Run the full source-side checks, commit, push, open the PR, then update this
-file with the PR URL.
+Reviewer should inspect PR #4068. If the campaign continues, the next highest
+post-audit source repairs are BBN `eta10 -> Omega_b h^2` premise-packet
+retirement, DM Schur readout/normalization, and the SU3 beta6 no-critical-point
+blocker.

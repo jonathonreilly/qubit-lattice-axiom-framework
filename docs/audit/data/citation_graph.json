@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "teleportation_resource_from_poisson_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "teleportation_resource_from_poisson_note",
         "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08",
         "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
         "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
         "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27",
         "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
         "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
-        "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11"
+        "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11",
+        "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d80f00ac96a57ef227c7bf264b4ad9f2e7e5ca149e4e80e4682bb165c9c3e51d",
+      "note_hash": "0c127f9f2793729909d3478cdb82fba1f27c73b70b105999cefd6f63bf10058e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

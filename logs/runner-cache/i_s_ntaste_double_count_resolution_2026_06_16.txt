@@ -1,0 +1,37 @@
+N_TASTE scalar-density resolution runner
+u0=0.877681381199 plaquette=0.593400000000 N_TASTE=16
+IR regulator m^2=0.01
+
+[PASS] framework D_psi_full docstring says full BZ already contains the taste sum
+[PASS] framework implementation currently divides scalar finite part by N_TASTE
+[PASS] H_unit note defines scalar singlet without a taste-projector normalization
+[PASS] canonical u0 is the plaquette fourth root (u0=0.877681381199)
+
+Grid sweep:
+  N   local_cS_fullBZ  local_cS_/16   H_unit_fullBZ  H_unit_/16
+  16  -29.208223058  -14.834290854  +32.170410454  +3.885650653
+  32  -29.297356171  -14.839861673  +32.408675346  +3.900542209
+  64  -29.306638404  -14.840441813  +32.435465702  +3.902216606
+  96  -29.306990018  -14.840463789  +32.436706960  +3.902294185
+
+Literature comparison targets, not quadrature inputs:
+  Lee-Sharpe Table I unimproved scalar c_S: -29.3551
+  Bhattacharya-Gupta TI single-link scalar magnitude: 39.1
+
+[PASS] full-BZ no-division scalar reconstructs Lee-Sharpe c_S (computed=-29.306990018, target=-29.3551, |diff|=0.048110)
+[PASS] extra /N_TASTE scalar reconstruction is not literature-sized (computed=-14.840463789, |diff|=14.514636)
+[PASS] H_unit full-BZ coefficient is on the staggered scalar literature scale (I_S_fullBZ=32.436706960)
+[PASS] H_unit /N_TASTE coefficient is over-suppressed (I_S_/16=3.902294185)
+[PASS] H_unit grid convergence N=64 to N=96 below 0.02% (rel=0.003827%)
+
+LEE_SHARPE_RECONSTRUCTED_FULL_BZ_c_S: -29.306990017941
+LEE_SHARPE_RECONSTRUCTED_DIVIDED_c_S: -14.840463788858
+H_UNIT_I_S_FULL_BZ_NO_DIVISION: +32.436706960407
+H_UNIT_I_S_WITH_DIVISION: +3.902294185025
+H_UNIT_RATIO: 8.312214667
+P1_DIRECT_CF_OLD_DIVIDED: +3.754068%
+P1_DIRECT_CF_NEW_FULL_BZ: +31.204619%
+P1_DELTA1_CF_OLD_DIVIDED: +1.736042%
+P1_DELTA1_CF_NEW_FULL_BZ: +56.637144%
+VERDICT: NO_DIVISION
+TOTAL: PASS=9 FAIL=0

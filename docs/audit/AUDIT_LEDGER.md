@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 221 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 951 |
+| **retained_bounded** | 952 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1416 |
+| unaudited | 1415 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1402 |
+| `audited_clean` | 1403 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1733 |
+| `unaudited` | 1732 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 900 |
-| `leaf` | 1370 |
+| `medium` | 899 |
+| `leaf` | 1371 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -101,12 +101,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1009 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1120 | 47.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 890 | 45.30 | `unaudited` | unaudited |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 814 | 43.67 | `audited_clean` | **retained_bounded** |
@@ -118,7 +118,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 966 | 38.42 | `audited_clean` | **retained_bounded** |
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 739 | 37.03 | `unaudited` | unaudited |
-| 19 | `cpt_exact_note` | positive_theorem | critical | 1076 | 36.57 | `audited_clean` | **retained** |
+| 19 | `cpt_exact_note` | positive_theorem | critical | 1077 | 36.57 | `audited_clean` | **retained** |
 | 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 893 | 35.80 | `audited_conditional` | ~~audited_conditional~~ |
 | 21 | `three_generation_structure_note` | bounded_theorem | critical | 1087 | 35.59 | `audited_clean` | **retained_bounded** |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 736 | 35.53 | `unaudited` | unaudited |
@@ -941,6 +941,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_two_stage_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `minimal_absorbing_horizon_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_bidirectional_trapping_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -13677,6 +13678,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The finite-range iterated-commutator lemma derives v_LR := 2·e·q·W·R, and inserting H_hop support data q=2, R=1, W=|m|+2d gives v_LR <= 4·e·(|m|+2d).  _(class `A`)_
 - **chain closes:** True — The ledger-scoped theorem closes by finite-dimensional support counting, operator-norm algebra, and the in-note LR tail estimate over retained-grade or accepted-premise inputs. The exact reconstructed H=-log(T)/a_tau locality and quasilocal tail-composition discussion is explicitly not ratified as proved and is outside the unconditional F1-F4 surface. The load-bearing step is analytic algebra over existing support-family inputs, so class A is more accurate than class C, though the runner includes nontrivial finite-matrix checks.
 - **rationale:** The ledger-scoped theorem closes by finite-dimensional support counting, operator-norm algebra, and the in-note LR tail estimate over retained-grade or accepted-premise inputs. The exact reconstructed H=-log(T)/a_tau locality and quasilocal tail-composition discussion is explicitly not ratified as proved and is outside the unconditional F1-F4 surface. The load-bearing step is analytic algebra over existing support-family inputs, so class A is more accurate than class C, though the runner includes nontrivial finite-matrix checks.
+- **auditor confidence:** high
+
+### `min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded arithmetic closure that one approved scale reference plus the retained tick/edge bridge and exact SI c unit conversion identify the minimum tick as l_P/c = t_P, without deriving physical c.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-031701-c9e45d4e38-min_time_step_is_the_planck_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With the registered scale reference fixing the spatial lattice spacing and the retained one-tick-one-edge tie read through exact SI c, the minimum tick satisfies a_tau = a_s/c = l_P/c = t_P.  _(class `A`)_
+- **chain closes:** True — The registered scale-reference primitive is an accepted premise for the single dimensionful ruler, the companion tick/edge theorem is retained-grade, and the clock-rate no-go is respected by treating c as an explicit unit conversion rather than deriving it from records. Independently, 1.616255e-35 m / 299792458 m s^-1 = 5.391246366845e-44 s, matching the Planck-time identity within the stated tolerance.
+- **rationale:** The load-bearing step is algebraic closure over retained-grade or accepted-premise inputs, not a first-principles derivation of c or of the Planck scale. The runner mostly checks packet wiring and performs a self-consistent l_P/c arithmetic check, so stdout alone would not prove physics closure; however the restricted packet's scope is exactly that bounded unit-normalized arithmetic, and an independent dimensional/numeric check confirms it. The cited no-go is not contradicted because records supply the tick/edge count while the physical time unit is supplied by the explicit SI c normalization.
 - **auditor confidence:** high
 
 ### `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`

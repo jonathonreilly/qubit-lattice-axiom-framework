@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_finite_supplied_weight_normalization_lemma_2026_06_16.py
+runner_sha256: 83c19080308bcc358db143e4468113704db635087bf613e3eebe20947f819982
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Post-record finite supplied-weight normalization lemma
+========================================================================
+PASS source note contains: **Claim type:** bounded_theorem
+PASS source note contains: supplied finite carrier
+PASS source note contains: supplied rational nonnegative weights
+PASS source note contains: Normalized measure is not selector authority.
+PASS source note contains: does not derive the supplied carrier or weights
+PASS source note contains: Does not edit audit data.
+PASS source note contains: Does not select a generation, Koide, stable-setting, or physical dial.
+PASS positive finite supplied weights normalize exactly :: {'a': Fraction(1, 6), 'b': Fraction(1, 2), 'c': Fraction(1, 3)}
+PASS normalized weights sum to one
+PASS support keys are preserved
+PASS positive rescaling leaves normalized measure invariant :: {'a': Fraction(1, 6), 'b': Fraction(1, 2), 'c': Fraction(1, 3)}
+PASS zero-total weights are rejected
+PASS negative weights are rejected
+PASS empty carrier is rejected
+PASS selector rule remains separate from normalization
+PASS selector readiness requires separate selector rule
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS carrier/weight derivation flag is false
+PASS normalized measure selects dial flag is false
+PASS Born-law derivation flag is false
+PASS production-dynamics derivation flag is false
+
+SUMMARY: PASS=23 FAIL=0
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+NORMALIZED_MEASURE_SELECTS_DIAL=FALSE
+CARRIER_OR_WEIGHT_DERIVED=FALSE
+BORN_LAW_DERIVED=FALSE
+PRODUCTION_DYNAMICS_DERIVED=FALSE
+
+----- stderr -----
+

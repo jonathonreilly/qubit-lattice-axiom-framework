@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/color_generation_z3_identification_no_go_2026_06_05.py
-runner_sha256: 8fc53d5f9b89793c948fee0edc385b916871e3b9b87d0df76a863c8d8a88a4de
+runner_sha256: da277b9d7c977df8e07e5c6627b91a519ebcd9a6c57cec232a6f0325ba0e26f2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 ==============================================================================
 COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO  (derivation runner)
 ==============================================================================
 Premises: cited color and generation carrier provenance.
-Result: color-SU(3) and generation carriers cannot be identified
-        because their Z_3 characters are inequivalent.
+Result: the supplied color-carrier and generation-carrier Z_3 actions
+        cannot be identified because their characters are inequivalent.
 
 ==============================================================================
 STEP 1: NATIVE Z_3 CHARACTERS (color center scalar vs generation cycle)
@@ -62,14 +62,16 @@ CLASS-A ASSERTIONS
 
 ==============================================================================
 COLOR_GENERATION_Z3_IDENTIFICATION_NO_GO: PASS=21 FAIL=0
-VERDICT: NO-GO -- the color center scalar rep 3*chi_w (3, 3w, 3w^2)
+VERDICT: BOUNDED NO-GO -- the color center scalar rep 3*chi_w (3, 3w, 3w^2)
   and the generation regular rep chi_0+chi_w+chi_w2 (3, 0, 0) are
   INEQUIVALENT Z_3 representations: their characters differ at the
   non-identity elements (3w vs 0), chi_w multiplicity is 3 vs 1, and
   every Z_3 intertwiner has rank <= 1 (Schur), so no equivariant
-  isomorphism exists. Identifying internal color with
-  generation is a category error absent the named non-native import
-  'scalar-generation-action' (replace the derived axis cycle by w*I).
+  isomorphism exists. This is an abstract carrier no-identification
+  boundary only: physical SM color and generation labels still require
+  separate bridge theorems. Forcing an identification requires the named
+  non-native import 'scalar-generation-action' (replace the derived axis
+  cycle by w*I).
 ==============================================================================
 
 ----- stderr -----

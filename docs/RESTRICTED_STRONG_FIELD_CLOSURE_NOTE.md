@@ -380,3 +380,18 @@ license the Planck-unit astrophysical exponent
 
 This note preserves only a **restricted scalar strong-field** bounded theorem.
 It is not a full universal GR derivation.
+
+## Retarget: shell-helper surface now sourced by the lattice identity (2026-06-16)
+
+The exterior / shell-localization helper surface this note rests on (shell-mean
+profile equality, exterior projector `Pi_R^ext`, sewing-band shell source
+`sigma_R = H Pi_R^ext`, radial-DtN kernel, one-parameter reduced-shell law) is
+now represented by
+[`LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md`](LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md),
+which derives that shell identity from the Lattice axiom's `Z^3`
+nearest-neighbor adjacency plus the existing cubic `O_h` lift (runner-verified
+`TOTAL: PASS=14 FAIL=0`). This replaces the imported `_frontier_loader` helper
+surface for that shell content only. Independent re-audit must decide whether
+this row can move; no audit status, effective status, or `bounded -> retained`
+verdict is asserted here. Any non-shell residual (a GR / tensor completion or
+the lattice-Green `1/r` Maradudin asymptotic) is out of scope and unaffected.

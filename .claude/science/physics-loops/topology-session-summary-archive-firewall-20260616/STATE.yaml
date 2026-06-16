@@ -13,5 +13,5 @@ open_imports:
   - "No split live claim notes are supplied."
   - "No topology-pivot runner/log pair is promoted by this PR."
 review_findings: "Local self-review: pass for demotion/firewall scope."
-pr_status: "pending"
-next_exact_action: "Open PR for reviewer extraction, then let audit decide whether the archived topology summary can be re-audited as retired session history."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4110"
+next_exact_action: "Reviewer extracts or revises the source-side demotion; auditor decides whether the archived topology summary can be re-audited as retired session history."

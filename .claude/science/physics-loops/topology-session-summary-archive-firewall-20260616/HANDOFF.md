@@ -24,4 +24,4 @@ python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only
 python3 scripts/vocab_lint.py --report-only --report-path /tmp/topology-session-summary-vocab-report.json archive_unlanded/session-summary-stale-aggregates-2026-04-30/SESSION_SUMMARY_2026-04-01_TOPOLOGY.md
 ```
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4110

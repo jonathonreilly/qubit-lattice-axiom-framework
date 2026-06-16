@@ -92,8 +92,11 @@ logs/runner-cache/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.tx
 Scorecard:
 
 ```text
-PASS=36 FAIL=0
+PASS=38 FAIL=0
 ```
+
+The scorecard above is synchronized with the committed SHA-pinned cache at
+`logs/runner-cache/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.txt`.
 
 ## Authority Repair
 

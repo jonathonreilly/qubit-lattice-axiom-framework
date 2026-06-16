@@ -51474,15 +51474,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_unbounded_finite_additivity_schema_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02"
     },
     {
       "from": "repo.front_door_status",
       "to": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
     },
     {
       "from": "repo.front_door_status",
@@ -51502,7 +51502,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
+      "to": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "record_unbounded_finite_additivity_schema_2026-06-06",
         "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
         "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
+        "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
         "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
         "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08",
         "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
         "teleportation_resource_from_poisson_note",
-        "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
+        "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "23e2c32f012f31bd47c5cbe806132b7e28824634fda8644a4f16d921b556c0a0",
+      "note_hash": "2b418816f926b3e1286f419829148c7f1ea94d230c0036d5dcc9cbb29c20637d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

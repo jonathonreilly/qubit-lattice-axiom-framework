@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 218 |
-| **retained_no_go** | 210 |
+| **retained_no_go** | 211 |
 | **retained_bounded** | 933 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1461 |
+| unaudited | 1460 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1377 |
+| `audited_clean` | 1378 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1778 |
+| `unaudited` | 1777 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 896 |
-| `leaf` | 1374 |
+| `medium` | 897 |
+| `leaf` | 1373 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -276,6 +276,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_color_automorphism_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
@@ -3739,6 +3740,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 
 Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=2; ('second', 'audited_decoration', 'decoration', 'A')=3.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02`
+
+- **Note:** [`CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md`](../../docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the grade-1 R^3 subspace of the one-site Cl(3,0) carrier, no nonzero frame-free Spin(3)/Pin(3)-equivariant ambient Clifford grade-1 operation anticommutes with Gamma_chi=(2/3)J-I; frame-selected L4, lattice, momentum, dynamics, and sector-factorization routes are outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-bb35781c56-cl3_frame_free_ambient_chira`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The commutant calculation [M,L_k]=0 for the three so(3) generators gives M=cI_3, so every Spin(3)-equivariant grade-1 endomorphism is scalar and {cI_3,Gamma_chi}=2cGamma_chi vanishes only for c=0.  _(class `A`)_
+- **chain closes:** True — The narrow no-go follows from exact representation-theoretic scalarity of the real spin-1 commutant plus the explicit anticommutator with Gamma_chi. The cited retained/accepted inputs support the grade-1 test surface and L4 comparison without importing a physical species bridge.
+- **rationale:** The runner performs exact Sympy matrix checks rather than importing external comparators or tuned values, and the load-bearing Schur-scalarity step can be independently checked from irreducibility of the real SO(3) vector representation. Named Clifford operations reduce on grade-1 to scalar, commuting, or explicitly frame-chosen actions, none of which supplies a nonzero frame-free anticommuting source. The no-go discipline gate passes for the scoped claim because the note explicitly leaves frame-broken L4, lattice, momentum, dynamics, and sector-factorization routes open.
 - **auditor confidence:** high
 
 ### `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10`

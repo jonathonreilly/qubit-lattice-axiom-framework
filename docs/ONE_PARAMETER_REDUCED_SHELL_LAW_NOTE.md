@@ -2,7 +2,8 @@
 
 **Date:** 2026-04-13 (2026-05-18: claim_scope formalized as conditional
 bounded witness on the imported reduced-shell surface per audit
-verdict boundary instruction)
+verdict boundary instruction; 2026-06-16: source/cache packet repair for
+the five load-bearing helper modules)
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 tightening):** the load-bearing content
 of this note is **a conditional bounded witness on the imported
@@ -28,6 +29,8 @@ partially answered by the umbrella wrapper from PR #1520, but the
 wrapper itself is bounded, not retained.
 **Status authority:** independent audit lane only.
 **Script:** `scripts/frontier_one_parameter_reduced_shell_law.py`
+**Helper source/cache packet:** `scripts/one_parameter_shell_helper_packet_2026_06_16.py`
+**Helper packet cache:** `logs/runner-cache/one_parameter_shell_helper_packet_2026_06_16.txt`
 **Status:** Exact reduced-shell theorem plus bounded shell-stress interpretation
 
 ## Purpose
@@ -145,7 +148,7 @@ linearity-from-identical-normalized-columns argument plus the two
 exact source-family checks at cutoff `R = 4`.
 
 The runner `scripts/frontier_one_parameter_reduced_shell_law.py`
-imports five frontier helper modules via `_frontier_loader.load_frontier`:
+imports five frontier helper modules as static Python imports:
 
 - `frontier_star_shell_projector.py` — exterior projector and
   shell-mean operator.
@@ -198,6 +201,32 @@ and source families currently sit as runner-defined inputs rather than
 audit-clean retained authorities, matching the verdict's
 `missing_dependency_edge` flag.
 
+## 2026-06-16 source/cache packet repair
+
+The primary reduced-shell runner now exposes the five load-bearing helper
+modules as static imports rather than dynamic `_frontier_loader` imports:
+
+```python
+import frontier_star_shell_projector as star
+import frontier_same_source_metric_ansatz_scan as same_source
+import frontier_coarse_grained_exterior_law as coarse
+import frontier_sewing_shell_source as sew
+import frontier_radial_shell_matching_law as rad
+```
+
+The helper packet runner
+`scripts/one_parameter_shell_helper_packet_2026_06_16.py` checks:
+
+- the five helper source files exist and expose the exact functions consumed by
+  the reduced-shell runner;
+- the helper caches in `logs/runner-cache/` are present, SHA-fresh, exit
+  cleanly, and contain passing output;
+- the primary reduced-shell runner contains the five static imports above.
+
+This repairs the runner-packet artifact issue by making source and cache
+evidence explicit. It does not set an audit verdict and does not broaden the
+one-parameter law beyond the stated reduced-shell surface.
+
 ## Honest auditor read
 
 The 2026-05-05 audit recorded this row as `audited_conditional` with the
@@ -205,16 +234,12 @@ substantive observation that the runner produces six classified A-class
 PASS lines (plus one B-class summary) on the reduced shell calculation,
 but the load-bearing operators — exterior projector, lattice Laplacian
 encoded in the Green solve, source-family constructors, and the radial
-DtN shell kernel — are imported from frontier modules that the
-restricted packet does not certify as audit-clean retained authorities.
-The audit's repair target is either (a) wire those modules to retained
-authority notes, or (b) recognize that no retained authority currently
-exists, in which case the gap is a real `missing_bridge_theorem`. The
-explicit registration above implements path (a) by listing the five
-helper modules as open registration targets rather than asserting any
-already-retained authority. Effective status remains
-`audited_conditional`. The note's audit_status is unchanged by this
-addendum.
+DtN shell kernel — were imported from frontier modules that the
+restricted packet did not certify as audit-clean retained authorities.
+The 2026-06-16 repair implements the source/cache packet path for those
+five helpers while preserving the audit-owned status boundary. Effective
+status remains `audited_conditional` until independent re-audit decides
+otherwise. The note's audit_status is unchanged by this addendum.
 
 ## Scope of this rigorization
 

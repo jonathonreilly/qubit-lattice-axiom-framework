@@ -1,0 +1,22 @@
+loop_slug: one-parameter-shell-helper-packet-20260616
+date: 2026-06-16
+mode: source_side_repair
+base_ref: origin/main
+base_commit: ba46f7843d538e48b25d2de109d58125e82269cc
+branch: physics-loop/one-parameter-shell-helper-packet-20260616
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4050
+target_claim_id: one_parameter_reduced_shell_law_note
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+blocker_text: "runner_artifact_issue: include full source/cache for the five frontier helper imports or retained helper authority notes, then re-audit the reduced-shell algebra and c_aniso normalization."
+work_completed:
+  - rebuilt the PR branch from current origin/main
+  - kept only source/cache/loop-pack files; removed stale audit and front-door diffs
+  - made the primary runner use static imports for the five helper modules
+  - added a helper packet runner and cache that check source presence, function surface, SHA-fresh caches, clean exits, and PASS output
+open_imports:
+  - helper constructions are source/cache-certified for re-audit but not derived from framework axioms here
+audit_required_before_effective_status_change: true
+next_exact_action: "Reviewer should inspect PR #4050; independent audit should decide whether the source/cache packet satisfies the reduced-shell conditional blocker."
+stop_condition: "Stop this block after PR #4050 is source-only, cache-fresh, and pushed."

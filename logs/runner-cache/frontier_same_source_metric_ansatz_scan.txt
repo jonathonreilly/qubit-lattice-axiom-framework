@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_same_source_metric_ansatz_scan.py
 runner_sha256: cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94
-timeout_sec: 120
+timeout_sec: 240
 exit_code: 0
-elapsed_sec: 17.32
+elapsed_sec: 16.85
 status: ok
 ----- stdout -----
 Same-source nonlinear metric ansatz scan

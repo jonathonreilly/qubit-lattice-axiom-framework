@@ -26,7 +26,8 @@ a realization plus rate-cap package:
 
 ```text
 (CAP-real)  e-fold readout increments are realized by finite record collections;
-(CAP-M)     each unit record has bounded magnitude, M = 1 in the unit schema;
+(CAP-M)     each unit record has bounded magnitude, M = 1 inside the
+            conditional unit schema;
 (CAP-K)     each e-fold uses at most K disjoint record sectors.
 ```
 
@@ -67,8 +68,9 @@ K <= 2^N_reach.
 ```
 
 The bound contains no e-fold index, so it is uniform over e-folds. Combined
-with `(CAP-real)` and the unit-record `(CAP-M)`, Lemma C from the prior note
-gives `(BR-int)`, and the tested exponent family selects `p = 0`.
+with `(CAP-real)` and the unit-record `(CAP-M)` inside that conditional
+schema, Lemma C from the prior note gives `(BR-int)`, and the tested exponent
+family selects `p = 0`.
 
 ## Realization Class
 

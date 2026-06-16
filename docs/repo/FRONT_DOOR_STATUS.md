@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1592 |
+| Applied audit verdicts | 1588 |
 | Retained-grade rows, including boxed decorations | 1439 |
 | Retained positive theorems | 221 |
 | Retained no-go rows | 214 |
 | Retained bounded rows | 959 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1400 |
+| Unaudited rows | 1404 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 60 |
+| Audited conditional rows | 57 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,20 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1402 |
-| Ready rows | 0 |
+| Total pending rows | 1406 |
+| Ready rows | 4 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 423 |
-| Leaf pending | 427 |
+| Medium pending | 426 |
+| Leaf pending | 428 |
 
 Next ready rows by queue order:
 
-- none
+- [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
+- [`scalar_trace_tensor_no_go_note`](../../docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md) - medium; unaudited
+- [`koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02`](../../docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
+- [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -56,14 +59,14 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 |---|---|---:|
 | critical | `unaudited` | 159 |
 | high | `unaudited` | 158 |
-| medium | `unaudited` | 89 |
+| medium | `unaudited` | 90 |
 | critical | `open_gate` | 3 |
 | high | `audited_conditional` | 3 |
-| medium | `audited_conditional` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| medium | `audited_conditional` | 2 |
 | critical | `audited_renaming` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
@@ -82,10 +85,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1596 descendants; score 136.641
-- `three_generation_observable_theorem_note` - critical; 1008 descendants; score 64.479
+- `three_generation_observable_theorem_note` - critical; 1010 descendants; score 64.482
 - `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
-- `graph_first_su3_integration_note` - critical; 1397 descendants; score 60.949
+- `graph_first_su3_integration_note` - critical; 1399 descendants; score 60.951
 - `plaquette_self_consistency_note` - critical; 1007 descendants; score 51.477
-- `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
-- `key_terminology` - critical; 1119 descendants; score 47.629
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 890 descendants; score 45.299
+- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 50.514
+- `key_terminology` - critical; 1121 descendants; score 47.632
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 892 descendants; score 45.303

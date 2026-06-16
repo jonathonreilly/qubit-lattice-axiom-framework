@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_dabc_symmetric_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "su3_dabc_symmetric_theorem_note_2026-05-02",
         "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
         "universal_gr_3plus1_constraint_multiplier_structure_derived_fiber_metric_bounded_theorem_note_2026-06-09",
         "universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08",
         "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
         "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
         "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
-        "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07"
+        "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+        "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "07ff6f07de6907dc20b96482b758f57d997654889a4afe31a2fea26127b2eaf8",
+      "note_hash": "f4020149f2a1bb639d73a3dc38d0ca1d86c0c02460a49a1b6dc372ecca115269",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113781,7 +113781,7 @@
       "positive_theorem": 612
     },
     "edge_count": 12975,
-    "leaf_count": 1109,
+    "leaf_count": 1108,
     "node_count": 3453,
     "root_count": 1066,
     "runners_with_path": 3039

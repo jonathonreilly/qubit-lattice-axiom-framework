@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 956 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1407 |
+| unaudited | 1406 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 56 |
+| ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1407 |
-| `audited_conditional` | 56 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1724 |
+| `unaudited` | 1723 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 901 |
-| `leaf` | 1369 |
+| `medium` | 900 |
+| `leaf` | 1370 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -1586,6 +1586,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_time_tensor_build_memo` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `scalar_trace_tensor_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -18108,6 +18109,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Solving the SU(3)^2Y, Tr[Y], and Tr[Y^3] equations with fixed LH charges Y(Q_L)=1/3, Y(L_L)=-1 and the no-nu_R minimal RH singlet ansatz gives y_u+y_d=2/3, y_e=-2, y_u y_d=-8/9, discriminant 4, hence (Y(u_R),Y(d_R),Y(e_R))=(4/3,-2/3,-2), after which the anomaly sums vanish.  _(class `A`)_
 - **chain closes:** True — The central no-nu_R anomaly algebra closes by exact rational arithmetic independent of the runner implementation. However, the packet also claims the C3 nu_R caveat is runner-verified, while the runner's y4=1/2 example keeps y_u,y_d at SM values and checks only Tr[Y]; its U(1)_Y^3 trace is 15/2, so that auxiliary verification is not clean as written.
 - **rationale:** The load-bearing no-nu_R theorem is a genuine class-A algebraic closure over the stated retained inputs and explicit bounded ansatz. The runner source does compute the headline RH solution and anomaly cancellations, but its C3 scorecard item overstates what was verified: the printed non-SM nu_R example is not U(1)^3-anomaly-free with the fixed SM y_u,y_d values. Because the source says C1-C3 are verified in the runner and counts C3 in the PASS scorecard, the packet needs a runner/source repair before a clean verdict.
+- **auditor confidence:** high
+
+### `sm_gstar_higgs_sector_count_stretch_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional support for the R-HIGGS census row: downstream one-vs-two-doublet arithmetic and the flavor-sector-versus-Fock-space distinction, without deriving the H_unit to one-complex-SU(2)_L thermal EWSB doublet bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-035342-0637a52d9e-sm_gstar_higgs_sector_count_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the named EWSB-field-content bridge, one complex SU(2)_L doublet contributes 4 scalar dof so g_* = 28 + (7/8)*90 = 106.75, while the retained two-Higgs reduction is a Yukawa-texture statement adding no thermalized dof.  _(class `A`)_
+- **chain closes:** False — The conditional arithmetic closes: 24 + 4 bosons and 90 fermions give 427/4, while a second thermalized doublet shifts the count by exactly +4. The full R-HIGGS chain does not close because the restricted packet does not derive or accept the missing H_unit scalar-singlet to one complex SU(2)_L thermal EWSB doublet bridge.
+- **rationale:** The runner and independent arithmetic support the finite census calculations and the algebraic Yukawa-texture distinction: one complex doublet gives 4 real scalar dof, two independent doublets give 8, and the resulting g_* values are 427/4 and 443/4. However, the note explicitly keeps the key field-content identification conditional, and the retained representation no-go forbids deriving the full thermal doublet directly from H_unit singlet uniqueness. The row is therefore valid only as open-gate conditional support, not as audited clean closure of R-HIGGS.
 - **auditor confidence:** high
 
 ### `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29`

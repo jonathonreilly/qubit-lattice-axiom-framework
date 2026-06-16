@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
     },
     {
@@ -98990,7 +98986,6 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
         "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
         "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
         "stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11",
@@ -99000,7 +98995,7 @@
         "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cf62a1023966c58daa93b15b1b47a8503f5c4b7942ef82235c79914926e8a42e",
+      "note_hash": "7857df2ba60b819f1354bdedb36ede948be81b38991f72f5d20e56a2565e7f26",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113780,8 +113775,8 @@
       "open_gate": 170,
       "positive_theorem": 612
     },
-    "edge_count": 12975,
-    "leaf_count": 1105,
+    "edge_count": 12974,
+    "leaf_count": 1106,
     "node_count": 3453,
     "root_count": 1066,
     "runners_with_path": 3039

@@ -14,6 +14,7 @@ files_touched:
   - scripts/if_program_closing_archive_firewall_2026_06_16.py
 open_imports: []
 review_findings: []
-pr_status: pending
-next_exact_action: run verification, commit, push, and open review PR
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4099
+next_exact_action: reviewer/auditor evaluates source-side archive firewall PR
 stop_condition: coherent source-hygiene block packaged for reviewer

@@ -151,3 +151,35 @@ derive graph-shift-to-Dirac-Higgs transport in phi-space, and keep the
 ADM-2 `g` input comparator-scoped unless a framework-native `g` theorem is
 provided. This repair adds no dark-matter mass readout axiom, no measured
 `g` promotion, and no audit status claim.
+
+## 2026-06-16 selected-axis commutator transport support
+
+The source-side ADM-3 surface now has one additional bounded support bridge:
+
+[`DM_NEUTRINO_VSEL_SELECTED_AXIS_COMMUTATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-16.md`](DM_NEUTRINO_VSEL_SELECTED_AXIS_COMMUTATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+
+That note does **not** reopen the pure even-trace route blocked by
+[`DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md`](DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md).
+Instead, it proves a narrower curvature-only statement: once the weak axis
+`Gamma_1` is selected, the graph-trace-normalized Dirac commutator norm
+
+```text
+8 * tau_D([Gamma_1,M(phi)]^dag [Gamma_1,M(phi)])
+```
+
+has Hessian `diag(0,64,64)` at `e_1`, hence `m_perp=32`, matching the
+retained graph-shift `V_sel` curvature packet. The support is deliberately
+narrow: the selected axis and the graph trace normalization are load-bearing,
+the full graph-shift potential is not transported, and the physical
+matter-functional/readout interpretation is not supplied here.
+
+No retained-grade proposal or status promotion is made by this wire-up. The
+remaining Schur-row boundary is now sharper:
+
+- ADM-1 still needs the physical `mI` readout theorem for `j=g/sqrt(2)`;
+- ADM-2 still keeps `g` comparator-scoped unless a framework-native coupling
+  theorem is supplied;
+- ADM-3 has bounded support for the **curvature packet** through the
+  selected-axis commutator bridge, but full physical use of that selected-axis
+  commutator functional as the Dirac-Higgs phi-space transport surface remains
+  subject to independent review and audit.

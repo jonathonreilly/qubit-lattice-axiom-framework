@@ -142,15 +142,36 @@ two reference sources:
    Particle Physics, sections on SU(2) strong-coupling expansion.
 ```
 
-The interval `[0.96, 0.98]` brackets the weak-coupling-series value at
-β = 16 (`u_0 ≈ 0.988`) on its upper side and Monte Carlo strong-coupling
-fits on its lower side. Treated here as a named external-mathematics /
-literature import, NOT a framework derivation; the framework-internal
+The interval `[0.96, 0.98]` is the only load-bearing admission used in
+this bounded row. The weak-coupling-series readout at `β = 16`
+(`u_0 ≈ 0.988`) is **outside** that interval and is retained here only as
+non-load-bearing literature context. If a future source wants to consume
+`u_0 ≈ 0.988`, it must either widen/replace `(X1)` with a separately
+audited interval/value authority or create a separate comparator row. Treated
+here as a named external-mathematics / literature import, NOT a framework
+derivation; the framework-internal
 derivation of `u_0(SU(2))` (numerical value, not the structural
 `N_SU(2) = 2` dimensional readout already supplied by the unaudited
 sibling `U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17`)
 remains the open R1 residual recorded by `EW_COUPLING_DERIVATION_NOTE`
 Part 3.
+
+## 2026-06-16 u_0 interval/comparator reconciliation
+
+The 2026-06-16 post-audit repair corrects the source contradiction that
+previously said `[0.96, 0.98]` bracketed `u_0 ≈ 0.988`. It does not. The
+runner now checks:
+
+- `(X1)` is exactly the admitted interval `[96/100, 98/100]`;
+- `u_weak = 988/1000` lies strictly above `u_hi = 98/100`;
+- the associated weak-coupling comparator point gives
+  `g_2(v; u_0 = 0.988) < g_lo`, so it is not inside the certified
+  bounded interval;
+- neither the weak-coupling readout nor its `g_2` value is load-bearing.
+
+This repair improves source honesty but does not retire `(X1)`. The row
+remains conditional/bounded until a retained or accepted-premise SU(2)
+`u_0` authority is supplied and independently audited.
 
 **(X2) Retained `b_2 = 19/6`.** The SU(2)_L 1-loop β-coefficient is the
 retained_bounded closed form

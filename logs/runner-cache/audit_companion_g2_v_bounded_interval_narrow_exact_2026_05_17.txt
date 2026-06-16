@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
-runner_sha256: 2219639b46a7852feb93ae0843c409f3f858539b415561dbbee86074bbb847e1
+runner_sha256: 6ab1633d73c0372a14e8843fd54ea11a5a6592efbe7e75189195357b69e8b006
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -30,6 +30,9 @@ Part 0: source-packet dependency repair checks
   [PASS (A)] (X4) source note states the coupling input is not rederived here
   [PASS (A)] (X6/X7) source note cites the framework-local scale/RGE bridge
   [PASS (A)] (X7) source note no longer registers one-loop RGE as a row-local named admission
+  [PASS (A)] (X1) source note no longer claims [0.96,0.98] brackets 0.988
+  [PASS (A)] (X1) source note says 0.988 is outside the admitted interval
+  [PASS (A)] (X1) source note keeps 0.988 non-load-bearing
 
 ----------------------------------------------------------------------------------------
 Part 1: symbolic setup (positive real symbols)
@@ -83,6 +86,15 @@ Part 6: explicit bounded interval g_2(v) in [g_lo, g_hi]
   [PASS (A)] (I5) g_hi < 0.75 (loose physical sanity bound)  (g_hi = 0.6828343046)
 
 ----------------------------------------------------------------------------------------
+Part 6b: weak-coupling 0.988 comparator is outside X1
+----------------------------------------------------------------------------------------
+  weak-coupling comparator u_weak = 247/250 = 0.988
+  g_2(v) at u_weak = 0.988 (context only): 0.650546388470004875964435583584
+  [PASS (A)] (U1) weak-coupling readout 0.988 lies above the admitted upper endpoint 0.98  (u_weak - u_hi = 0.008000)
+  [PASS (A)] (U2) g_2 at u_weak is below g_lo, hence outside the certified interval  (g_2(u_weak) - g_lo = -0.00884644771670)
+  [PASS (A)] (U3) 0.988 comparator is not used as an endpoint  (load-bearing endpoints remain 96/100 and 98/100)
+
+----------------------------------------------------------------------------------------
 Part 7: corollaries
 ----------------------------------------------------------------------------------------
   [PASS (A)] (C1) interval width is finite and positive (well-formed bounded interval)  (width = 0.0234414683670046228081778140197)
@@ -102,11 +114,11 @@ Part 8: forbidden-import audit
 ----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
-  PASS = 24
+  PASS = 30
   FAIL = 0
   g_2(v_cand approx 246.28 GeV) in [0.659392836186702, 0.682834304553707]
   interval width = 0.0234414683670046
-  PASS=24 FAIL=0
+  PASS=30 FAIL=0
 
 ----- stderr -----
 

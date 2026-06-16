@@ -24,4 +24,4 @@ python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only
 python3 scripts/vocab_lint.py --report-only --report-path /tmp/h0125-vocab-report.json archive_unlanded/h0125-unverifiable-numerical-diagnostics-2026-04-30/README.md archive_unlanded/h0125-unverifiable-numerical-diagnostics-2026-04-30/H0125_FAILURE_DERIVATION.md
 ```
 
-PR: TBD
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4107

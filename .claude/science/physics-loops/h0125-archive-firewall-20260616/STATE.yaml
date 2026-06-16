@@ -14,5 +14,5 @@ open_imports:
   - "No repair runner is added for the old failure-diagnosis table."
   - "The current executable h=0.125 reduced-family lane remains separate."
 review_findings: "Local self-review: pass for demotion/firewall scope."
-pr_status: pending_creation
-next_exact_action: "Run checks, commit, push, open PR, then patch PR URL into this pack."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4107"
+next_exact_action: "Reviewer should inspect PR #4107 and decide whether the archived h0125 row can be re-audited as retired failed-diagnosis evidence."

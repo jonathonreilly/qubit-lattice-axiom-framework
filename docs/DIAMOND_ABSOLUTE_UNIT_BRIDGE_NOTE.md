@@ -5,12 +5,12 @@
 
 ## Artifact Chain
 
-- [`docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md)
-- [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
-- [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md)
-- [`docs/DIAMOND_SENSOR_PREDICTION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
-- [`archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md)
-- [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CAUSAL_FIELD_PORTABILITY_NOTE.md)
+- [`docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md`](DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md)
+- [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
+- [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](DIAMOND_SENSOR_PROTOCOL_NOTE.md)
+- [`docs/DIAMOND_SENSOR_PREDICTION_NOTE.md`](DIAMOND_SENSOR_PREDICTION_NOTE.md)
+- [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
+- [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](CAUSAL_FIELD_PORTABILITY_NOTE.md)
 
 ## Question
 
@@ -51,9 +51,9 @@ external calibration:
 
 The newest causal-field notes also help here:
 
-- [`archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md) shows the dynamic cone is a real
-  proxy observable
-- [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CAUSAL_FIELD_PORTABILITY_NOTE.md) shows the same observable is
+- [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md) shows the configured finite-cone cases are
+  structured proxy readouts, while the archived `0.45` table is stale
+- [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](CAUSAL_FIELD_PORTABILITY_NOTE.md) shows the same observable is
   family-selective, so it should be treated as a proxy lane, not an absolute
   calibration law
 

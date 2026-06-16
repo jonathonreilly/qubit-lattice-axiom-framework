@@ -76,7 +76,7 @@ def render_markdown() -> str:
     lines.append("- [`docs/SHAPIRO_COMPLEX_INTERACTION_NOTE.md`](../docs/SHAPIRO_COMPLEX_INTERACTION_NOTE.md)")
     lines.append("- [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](../docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)")
     lines.append("- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](../docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)")
-    lines.append("- [`docs/CAUSAL_PROPAGATING_FIELD_NOTE.md`](../docs/CAUSAL_PROPAGATING_FIELD_NOTE.md)")
+    lines.append("- [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)")
     lines.append("- [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)")
     lines.append("")
     lines.append("## Question")

@@ -92,7 +92,7 @@ The Shapiro phase lag is the canonical lab-facing prediction because:
 | Gravitomagnetic | gravitomagnetic_portable.py | 2026-04-06-gravitomagnetic-portable.txt | GRAVITOMAGNETIC_NOTE.md |
 | Causal escape | causal_escape_window.py | — | CAUSAL_ESCAPE_WINDOW_NOTE.md |
 | Boundary law | causal_escape_boundary_law.py | — | (in escape note) |
-| Causal cone | causal_propagating_field.py | — | CAUSAL_PROPAGATING_FIELD_NOTE.md |
+| Causal cone | causal_propagating_field.py | — | CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md |
 | Kernel vs gravity | complex_action_kernel_vs_gravity.py | 2026-04-06-kernel-vs-gravity.txt | KERNEL_VS_GRAVITY_NOTE.md |
 
 ## What should NOT be overclaimed

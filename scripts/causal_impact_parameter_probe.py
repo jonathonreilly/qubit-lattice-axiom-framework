@@ -294,7 +294,7 @@ def _render_note(
         "- [`scripts/causal_impact_parameter_probe.py`](../scripts/causal_impact_parameter_probe.py)",
         "- [`logs/2026-04-06-causal-impact-parameter-probe.txt`](../logs/2026-04-06-causal-impact-parameter-probe.txt)",
         "- causal-field context:",
-        "  - [`docs/CAUSAL_PROPAGATING_FIELD_NOTE.md`](../docs/CAUSAL_PROPAGATING_FIELD_NOTE.md)",
+        "  - [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)",
         "  - [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](../docs/CAUSAL_FIELD_PORTABILITY_NOTE.md)",
         "  - [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)",
         "",

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 220 |
+| **retained** | 221 |
 | **retained_no_go** | 214 |
 | **retained_bounded** | 950 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1422 |
+| unaudited | 1421 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1400 |
+| `audited_clean` | 1401 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1739 |
+| `unaudited` | 1738 |
 
 | claim_type | count |
 |---|---:|
@@ -633,6 +633,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9066,6 +9067,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Composing R_k = theta^(1-k) with the source perturbation gives P_inf - P_k = C_source theta^(k-1) + 3 C_source theta^(k-1) alpha^k + a remainder on smaller finite-packet scales.  _(class `C`)_
 - **chain closes:** False — The finite arithmetic and runner-computed packet quantities are internally consistent, including theta, theta*alpha, theta*gamma, and C_source/theta. The chain does not close as a theorem for the displayed asymptotic remainder because the proof-grade all-k finite-packet tail bound for the dropped Neumann and source-perturbation terms is explicitly left as a target.
 - **rationale:** The runner source is substantive: it builds the finite packet, reduced t-matrix, eigenvector approximations, rho ladder, and source perturbation rather than merely printing constants; hard-coded theta values are used as anchor checks, not construction inputs. The measured k=2..20 envelope is supported by the completed cache. However, the load-bearing theorem step requires a controlled remainder on smaller finite-packet scales, and the source note itself says the all-k rigorous tail-remainder closure remains open. Thus the finite measured subclaim is supported, but the queued two-term asymptotic theorem is conditional on that missing finite-packet remainder theorem.
+- **auditor confidence:** high
+
+### `gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`GAUGE_VACUUM_THREE_SAMPLE_RADICAL_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/GAUGE_VACUUM_THREE_SAMPLE_RADICAL_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The abstract three-sample radical reconstruction map, its pi/16 radical specialization/nondegeneracy and sign facts, and the statement that the beta=6 physical PF-seam application remains four-bridge-conditional.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-025051-51cb8af426-gauge_vacuum_three_sample_ra`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For F = [[1,a,0],[1,b,c],[1,d,e]] with Delta = a*c - a*e + b*e - c*d, det(F)=Delta and, when Delta != 0, the unique solution is alpha = Delta^(-1) adj(F) Z with the displayed entries.  _(class `A`)_
+- **chain closes:** True — The determinant and displayed inverse follow by direct cofactor expansion of the structured 3x3 matrix, and the radical specialization satisfies the stated character values, nonzero determinant, and c>0/e<0 checks. The beta=6 Wilson/Haar identification is explicitly scoped as conditional and is not used in the algebraic proof.
+- **rationale:** The load-bearing step is a finite-dimensional adjugate identity over the displayed radical field, not a definition, renaming, tuned numerical match, or external comparator. Independent cofactor checking verifies the determinant and numerator matrix, and a separate trig/radical evaluation confirms the pi/16 entries, signs, and nonzero determinant. The retained_bounded seam-reduction authority is used only to document the conditional beta=6 application; the scoped theorem does not consume the four open bridge premises.
+- **open / conditional deps cited:**
+  - `GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`
+  - `GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md`
 - **auditor confidence:** high
 
 ### `gauge_wilson_isotropy_boundary_note_2026-05-04`

@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17",
         "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05",
         "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07",
         "gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08",
         "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
         "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
         "koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15",
-        "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08"
+        "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08",
+        "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "02ce09cb3d2da0c76da5f0336f31522bd712c69a1d88a61c41c65e9601f9cf0d",
+      "note_hash": "6661c67c674ed714ae089e5037bc852212c63e433132777a7e221b92ec60b2f1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

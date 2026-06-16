@@ -1,0 +1,24 @@
+loop: kinetic-supply-sync-runner-20260616
+date: 2026-06-16
+mode: run
+target_status: best-honest-status
+active_route: post_audit_runner_drift_repair
+target_claim_ids:
+  - axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05
+  - staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11
+  - staggered_dirac_realization_gate_note_2026-05-03
+current_surface_status: conditional-support source-side readiness repair
+trace_gate: direct_blocker_closure
+reachability: supports re-audit of staggered/Kawamoto-Smit consumer rows by repairing the source-only verifier
+files_touched:
+  - scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py
+  - logs/runner-cache/staggered_dirac_kinetic_supply_line_sync_2026_06_12.txt
+open_imports:
+  - kinetic-class forcing row audit grade remains independent
+  - P-KIN wholesale retirement remains independent
+  - audit ledger status remains audit-owned
+verification:
+  - python3 scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py
+  - python3 scripts/cached_runner_output.py scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py --check-only
+next_exact_action: reviewer should inspect the narrow runner drift repair and decide whether to hand to audit/review
+stop_condition: one coherent post-audit runner repair PR opened

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py
-runner_sha256: a1af110adfeda9ef5be919dbeb03b3c21b5edcfc9e3bf8046ad994dcc2863cb0
+runner_sha256: 8ae0694e9a9722d66f508a8847ae4b3250caca449c9bae5501393707d3cf5cdb
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -65,7 +65,7 @@ BLOCK 3: target and supplier cache outputs
   [PASS] P-FLUX composer cache PASS=16 FAIL=0
   [PASS] P-FLUX composer records today's grade boundary
   [PASS] P-FLUX composer records retained Z geometry
-  [PASS] P-FLUX composer says no current selection
+  [PASS] P-FLUX composer says current selection is within-surface
   [PASS] FSB-K cache PASS=18 FAIL=0
   [PASS] FSB-K cache says phi not assumed or derived
   [PASS] Z cache PASS=18 FAIL=0

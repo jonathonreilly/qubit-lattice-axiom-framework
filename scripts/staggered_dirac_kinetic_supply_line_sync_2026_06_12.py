@@ -98,7 +98,11 @@ def block_target_notes() -> None:
     check("KS note has 2026-06-12 supply-line changelog", "2026-06-12 (kinetic supply-line sync)" in ks)
     check("KS note states P-SD discharged on K1", "P-SD discharged on K1" in ks or "P-SD is discharged" in ks)
     check("KS note states P-KIN reduced to P-FLUX", "P-KIN reduced to P-FLUX" in ks or "P-KIN is reduced to P-FLUX" in ks)
-    check("KS note keeps audit-owned boundary", "This row remains a bounded theorem unless that cascade is accepted" in ks)
+    check(
+        "KS note keeps audit-owned boundary",
+        "This row remains a bounded theorem on supplied `P-KIN/P-SD` unless that" in ks
+        and "cascade is accepted by the independent audit lane" in ks,
+    )
     check("KS note states FSB-K condition", "conditional on FSB-K" in ks)
     check("KS note exposes source-only sync verifier", "scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py" in ks)
 
@@ -141,9 +145,17 @@ def block_cache_outputs() -> None:
     check("kinetic supplier contains K0 countermodel", "countermodel K0" in kinetic_cache)
 
     check("P-FLUX composer cache PASS=16 FAIL=0", has_total(p_flux_cache, 16))
-    check("P-FLUX composer records today's grade boundary", "C1 (FSB-K) = unaudited" in p_flux_cache)
+    check(
+        "P-FLUX composer records today's grade boundary",
+        "C1 (FSB-K) = retained_bounded" in p_flux_cache
+        and "within-surface selection is active at current grades" in p_flux_cache,
+    )
     check("P-FLUX composer records retained Z geometry", "retained Z certificate = retained" in p_flux_cache)
-    check("P-FLUX composer says no current selection", "performs no selection at current grades" in p_flux_cache)
+    check(
+        "P-FLUX composer says current selection is within-surface",
+        "this note performs the within-surface selection at current grades" in p_flux_cache
+        and "retiring P-KIN wholesale additionally requires that row's grade" in p_flux_cache,
+    )
 
     check("FSB-K cache PASS=18 FAIL=0", has_total(fsb_cache, 18))
     check("FSB-K cache says phi not assumed or derived", "phi = -1 is neither" in fsb_cache)

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 220 |
-| **retained_no_go** | 213 |
+| **retained_no_go** | 214 |
 | **retained_bounded** | 950 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1423 |
+| unaudited | 1422 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1399 |
+| `audited_clean` | 1400 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1740 |
+| `unaudited` | 1739 |
 
 | claim_type | count |
 |---|---:|
@@ -80,9 +80,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 533 |
-| `high` | 509 |
-| `medium` | 906 |
-| `leaf` | 1363 |
+| `high` | 508 |
+| `medium` | 901 |
+| `leaf` | 1369 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -596,6 +596,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -8532,6 +8533,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cited retained authority reduces this sector to a 3 x 3 symmetric orbit-sampling inversion whenever F is invertible. Independent SU(3) character evaluation with the K-pairing dimension weights gives F_A2 = 0, |det(F)| = 10.8103216939706, and cond(F) = 1.95759880627947, so the stated inversion is valid.
 - **rationale:** The load-bearing step is a finite algebraic character-evaluation check over the retained upstream sampling-reduction theorem, not a new physical premise or numerical fit. The one cited authority is retained-grade in the packet, and the explicit determinant/conditioning values recompute independently from the stated holonomies and orbit basis. No external comparator or open bridge is imported. No runner source or stdout was available, so the verdict rests on the independent algebraic check rather than runner PASS output.
 - **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow finite-surface no-go plus formal E_3 factorization: the listed finite structural witness surface does not determine the normalized three-sample environment triple, without claiming exhaustiveness for the actual beta=6 Wilson/Haar stack.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-3c81b92068-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The listed finite structural surface admits two distinct positive conjugation-symmetric normalized beta-side witnesses whose images under the same fixed three-row operator E_3 give different normalized triples.  _(class `A`)_
+- **chain closes:** True — The formal factorization is elementary linear algebra once E_3 and the common beta-side vector are defined. Independently checking the SU(3) character rows gives rank(F)=3 and a nonzero perturbation of admissible positive symmetric finite witnesses changes the normalized sample triple, so the listed surface is non-unique on its own terms.
+- **rationale:** The load-bearing no-go is scoped to the runner-listed finite structural surface, not to the physical beta=6 Wilson/Haar current stack. The cited retained-grade inputs support the formal common-vector route and the fixed Peter-Weyl sample operator, while the finite witness construction supplies the required nonuniqueness. The N1-N8 stress test passes only at this narrowed scope: the strongest physical-stack steelman is explicitly preserved as the open exhaustiveness bridge, not counted as a failed route.
+- **auditor confidence:** medium
 
 ### `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17`
 

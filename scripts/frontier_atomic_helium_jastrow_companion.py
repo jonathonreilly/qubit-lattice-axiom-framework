@@ -14,6 +14,8 @@ LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md.
 Same kinetic operator and Coulomb kernel as
 `frontier_atomic_helium_hartree_companion.py`.
 The NEW step here is going beyond the separable (product-state) ansatz.
+The Hartree baseline uses the repaired one-electron-density convention:
+`E_pair = ΣρV_H[ρ]` for `ρ=|φ|²`, with no extra total-density factor 1/2.
 
 --------------------------------------------------------------------------
 STEP 5-EXTENDED: JASTROW CORRELATION  [DERIVED from Z³ kernel]
@@ -342,6 +344,7 @@ def run_vmc(phi_3d: np.ndarray, V_nuc_3d: np.ndarray,
         "accept_rate": n_accept / (n_warmup + n_meas),
         "r_J": r_J,
         "n_meas": len(E_arr),
+        "seed": seed,
     }
 
 
@@ -400,10 +403,13 @@ def run_experiment() -> None:
     E_hep = scf["E_hep"]
     E_hartree = scf["E_var"]
     ratio_hartree = abs(E_hartree) / abs(E_hep)
+    rho_norm = float(np.sum(scf["rho"]))
+    hartree_energy_residual = abs(E_hartree - (2.0 * scf["eps"] - scf["E_J"]))
 
     log(f"  E(He⁺)   = {E_hep:.6f}")
     log(f"  E_Hartree = {E_hartree:.6f}")
     log(f"  |E(He)|/|E(He⁺)| = {ratio_hartree:.5f}  (Hartree target ~1.424)")
+    log("  Hartree normalization: E_pair = ΣρV_H[ρ] for one-electron ρ=|φ|².")
     log("  Compute timing: omitted from audit cache for deterministic replay.")
     log()
 
@@ -526,13 +532,22 @@ def run_experiment() -> None:
     audit_checks = [
         (
             "jastrow_fixed_seed_declared",
-            True,
-            "run_vmc called with seed=42 for each r_J",
+            all(r["seed"] == 42 for r in results),
+            "seeds=" + ",".join(str(r["seed"]) for r in results),
         ),
         (
             "jastrow_hartree_baseline_pin",
             abs(ratio_hartree - 1.41501) < 5e-5,
             f"ratio_hartree={ratio_hartree:.5f}",
+        ),
+        (
+            "jastrow_inherits_repaired_hartree_normalization",
+            abs(rho_norm - 1.0) < 1e-12
+            and hartree_energy_residual < 1e-12
+            and scf["E_J"] > 0.0,
+            f"rho_norm={rho_norm:.12f}, "
+            f"E_var_identity_residual={hartree_energy_residual:.3e}, "
+            f"E_pair={scf['E_J']:.6f}",
         ),
         (
             "jastrow_best_rj_pin",

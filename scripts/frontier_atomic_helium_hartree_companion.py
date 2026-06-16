@@ -72,7 +72,17 @@ the lattice Hamiltonian surface. Mathematically it is the same variational
 structure used in standard atomic numerics; the point here is that it is
 applied to the already-retained lattice kinetic+kernel operator.
 
-Total energy from the variational ansatz:
+Density convention and total energy from the variational ansatz:
+
+    ρ(r) = |φ(r)|²,        Σ_r ρ(r) = 1        (one-electron density)
+    V_H[ρ](r) = Σ_r' ρ(r') g_EM / max(|r-r'|, 0.5)
+    E_pair = Σ_r ρ(r) V_H[ρ](r)
+           = Σ_{r,r'} ρ(r)ρ(r') g_EM / max(|r-r'|, 0.5)
+
+`E_pair` is already the single unordered electron-electron pair integral
+for the product state φ(r₁)φ(r₂).  The familiar total-density Hartree
+factor 1/2 is not applied to this one-density expression; if n=2ρ is used
+instead, the same one-pair integral is (1/4)Σ_r n(r)V_H[n](r).
 
     E_var = 2ε - E_pair
 
@@ -206,6 +216,53 @@ def solve_poisson_for_hartree(N: int, rho: np.ndarray,
 def hartree_energy(rho: np.ndarray, V_H: np.ndarray) -> float:
     """E_pair = sum_r rho(r) V_H(r), the one electron-electron pair integral."""
     return float(np.sum(rho * V_H))
+
+
+def direct_pair_integral(N: int, rho: np.ndarray, g_em: float) -> float:
+    """Brute-force one-pair Coulomb integral for small-grid normalization checks."""
+    coords = np.array(np.unravel_index(np.arange(N**3), (N, N, N))).T
+    total = 0.0
+    for a, ra in enumerate(coords):
+        for b, rb in enumerate(coords):
+            dist = float(np.linalg.norm(ra - rb))
+            total += rho[a] * rho[b] * g_em / max(dist, 0.5)
+    return float(total)
+
+
+def pair_integral_normalization_certificate() -> dict[str, float]:
+    """Certify the one-density Hartree convention against direct summation.
+
+    The audit-relevant point is the factor of two: this runner uses
+    ρ=|φ|² with Σρ=1, so ΣρV_H[ρ] is the one electron-pair energy.  If a
+    total density n=2ρ is used, the equivalent expression is
+    (1/4)Σ n V_H[n], while the common (1/2)Σ n V_H[n] total-density
+    Hartree functional counts twice the single pair represented here.
+    """
+    N = 4
+    g_em = 0.5
+    raw = np.arange(1, N**3 + 1, dtype=float)
+    rho = raw / np.sum(raw)
+    T = build_graph_laplacian(N)
+
+    V_one = solve_poisson_for_hartree(N, rho, T, g_em)
+    one_density_pair = hartree_energy(rho, V_one)
+    direct_pair = direct_pair_integral(N, rho, g_em)
+
+    n_total = 2.0 * rho
+    V_total = solve_poisson_for_hartree(N, n_total, T, g_em)
+    quarter_total_density_form = 0.25 * float(np.sum(n_total * V_total))
+    half_total_density_form = 0.5 * float(np.sum(n_total * V_total))
+
+    return {
+        "N": float(N),
+        "g_em": g_em,
+        "one_density_pair": one_density_pair,
+        "direct_pair": direct_pair,
+        "quarter_total_density_form": quarter_total_density_form,
+        "half_total_density_form": half_total_density_form,
+        "direct_ratio": one_density_pair / direct_pair,
+        "half_total_to_pair": half_total_density_form / one_density_pair,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -418,6 +475,7 @@ def run_experiment() -> None:
     log(f"  Building Laplacian ({N}³ = {N**3} sites) ...")
 
     he = helium_variational_scf(N, G_NUC, G_EM, max_iter=60, tol=1e-6, mix=0.5)
+    norm = pair_integral_normalization_certificate()
     log()
     log(f"  Variational result:")
     log(f"    SCF orbital energy: ε   = {he['eps']:.6f}")
@@ -473,11 +531,20 @@ def run_experiment() -> None:
     log("─" * 60)
     log()
     log("  From the product-state ansatz (DERIVED, not assumed):")
+    log("    ρ = |φ|² is a one-electron density with Σρ = 1")
+    log("    E_pair = Σρ V_H[ρ] = Σρ(r)ρ(r') g_EM/max(|r-r'|, 0.5)")
     log("    E_var = 2ε - E_pair")
     log()
     log(f"    2ε  = {2*he['eps']:.5f}  [two orbital energies, each includes V_H]")
     log(f"    E_pair = {he['E_J']:.5f}   [one e-e pair integral; double-counting removed]")
     log(f"    E_var = {he['E_var']:.5f}")
+    log()
+    log("  Normalization guard (small-grid direct certificate):")
+    log(f"    pair_norm_direct_ratio={norm['direct_ratio']:.6f}")
+    log(f"    one_density_pair={norm['one_density_pair']:.12f}")
+    log(f"    direct_pair={norm['direct_pair']:.12f}")
+    log(f"    quarter_total_density_form={norm['quarter_total_density_form']:.12f}")
+    log(f"    half_total_to_pair={norm['half_total_to_pair']:.6f}  [total-density 1/2 form counts two pairs here]")
     log()
     log("  Independent-electron limit (no e-e, same g_nuc):")
     log(f"    E_indep = 2 × E₁(He⁺) = {2*E_heplus:.5f}")
@@ -585,6 +652,18 @@ def run_experiment() -> None:
             "hartree_scf_converged",
             bool(he["converged"]),
             f"iterations={he['n_iter']}",
+        ),
+        (
+            "hartree_pair_integral_direct_normalization",
+            abs(norm["one_density_pair"] - norm["direct_pair"]) < 1e-12,
+            f"pair_norm_direct_ratio={norm['direct_ratio']:.6f}",
+        ),
+        (
+            "hartree_total_density_conversion_guard",
+            abs(norm["quarter_total_density_form"] - norm["one_density_pair"]) < 1e-12
+            and abs(norm["half_total_to_pair"] - 2.0) < 1e-12,
+            f"quarter_total={norm['quarter_total_density_form']:.12f}, "
+            f"half_total_to_pair={norm['half_total_to_pair']:.6f}",
         ),
     ]
     pass_count = 0

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1528 |
-| Retained-grade rows, including boxed decorations | 1405 |
+| Applied audit verdicts | 1529 |
+| Retained-grade rows, including boxed decorations | 1406 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 932 |
+| Retained bounded rows | 933 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1464 |
+| Unaudited rows | 1463 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 32 |
 | Audited renaming rows | 31 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1466 |
-| Ready rows | 54 |
+| Total pending rows | 1465 |
+| Ready rows | 53 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 432 |
+| Medium pending | 431 |
 | Leaf pending | 482 |
 
 Next ready rows by queue order:
 
-- [`reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06`](../../docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`record_unbounded_finite_additivity_schema_2026-06-06`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md) - medium; unaudited
+- [`cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02`](../../docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
 - [`quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md) - medium; unaudited
 - [`universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
 - [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
-- [`cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02`](../../docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
+- [`cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27`](../../docs/CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

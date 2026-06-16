@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1546 |
-| Retained-grade rows, including boxed decorations | 1414 |
+| Applied audit verdicts | 1547 |
+| Retained-grade rows, including boxed decorations | 1415 |
 | Retained positive theorems | 218 |
-| Retained no-go rows | 212 |
+| Retained no-go rows | 213 |
 | Retained bounded rows | 939 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1446 |
+| Unaudited rows | 1445 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 41 |
 | Audited renaming rows | 31 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1448 |
+| Total pending rows | 1447 |
 | Ready rows | 40 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
 | Medium pending | 430 |
-| Leaf pending | 466 |
+| Leaf pending | 465 |
 
 Next ready rows by queue order:
 
-- [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`koide_records_objectivity_conditional_note_2026-05-31`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md) - medium; unaudited
 - [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - medium; unaudited
 - [`p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28`](../../docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
 - [`post_record_measure_weight_normalization_subdivision_2026-06-06`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md) - medium; unaudited
 - [`record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15`](../../docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
-- [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
+- [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15`](../../docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

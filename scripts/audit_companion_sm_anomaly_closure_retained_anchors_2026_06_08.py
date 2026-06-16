@@ -85,7 +85,7 @@ def main() -> int:
     # A. RH hypercharge uniqueness from anomaly cancellation (no-nu_R sector).
     #    Unknowns y1=Y(u_R), y2=Y(d_R), y3=Y(e_R). LH content fixed (retained).
     #    (A2) SU(3)^2 Y : 2*YQL*? -> y1+y2 = 2*YQL = 2/3 ; (A1) Tr Y : 3(y1+y2)+y3 = 0 (LH TrY=0)
-    #    (A3) Tr Y^3 : 3(y1^3+y2^3)+y3^3 = -(LH Tr Y^3) = 16/9
+    #    (A3) Tr Y^3 : 3(y1^3+y2^3)+y3^3 = LH Tr Y^3 = -16/9 in all-left bookkeeping.
     # ----------------------------------------------------------------- #
     s = 2 * YQL                       # y1 + y2 from SU(3)^2 Y, = 2/3
     y3 = -3 * s                       # from Tr Y (LH Tr Y = 6*YQL+2*YLL = 0), so 3 s + y3 = 0
@@ -162,15 +162,24 @@ def main() -> int:
         trY(scaled) == 0 and trY3(scaled) == 0,
         f"lambda={lam}: Tr[Y]={trY(scaled)}, Tr[Y^3]={trY3(scaled)}",
     )
-    # C3. adding nu_R with free y4 reopens a 1-parameter family (neutrality y4=0 load-bearing only with nu_R).
-    y4 = F(1, 2)
-    y3_nu = -2 - y4                      # from (A1') with nu_R
-    f_nu = one_gen(Y1, Y2, y3_nu, y4)
+    # C3. adding nu_R with free t reopens a 1-parameter family
+    #     y_u=4/3+t, y_d=-2/3-t, y_e=-2-t, y_nu=t.
+    #     Neutrality t=0 is load-bearing only with nu_R.
+    t = F(1, 2)
+    y1_nu = F(4, 3) + t
+    y2_nu = F(-2, 3) - t
+    y3_nu = F(-2) - t
+    y4_nu = t
+    f_nu = one_gen(y1_nu, y2_nu, y3_nu, y4_nu)
+    nu_family_su3sq_y = 2 * YQL - y1_nu - y2_nu
     check(
         "C3 (admission): adding nu_R with free y4 reopens a 1-parameter anomaly-free family "
-        "(y4=1/2 example cancels Tr[Y]); neutrality y4=0 is load-bearing only when nu_R is included",
-        trY(f_nu) == 0,
-        f"y4={y4}, y3={y3_nu}: Tr[Y] = {trY(f_nu)} (non-SM but anomaly-free)",
+        "(y4=1/2 example cancels SU(3)^2Y, Tr[Y], and Tr[Y^3]); neutrality y4=0 is load-bearing only when nu_R is included",
+        nu_family_su3sq_y == 0 and trY(f_nu) == 0 and trY3(f_nu) == 0,
+        (
+            f"t={t}: (y_u,y_d,y_e,y_nu)=({y1_nu},{y2_nu},{y3_nu},{y4_nu}); "
+            f"SU(3)^2Y={nu_family_su3sq_y}, Tr[Y]={trY(f_nu)}, Tr[Y^3]={trY3(f_nu)}"
+        ),
     )
 
     print(f"\nSCORECARD PASS={PASS} FAIL={FAIL}")

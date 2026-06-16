@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py
-runner_sha256: 28180ea7b5b5bee24e1a61ecb67780e199f50b7265894dc0b7ed8763ae7b266c
+runner_sha256: d0d51fd9a3bb669f0c31d958b76c22eb66d4fe24de5d189c84dba05f8abe65ca
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.53
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ANOMALY-FORCES-TIME ABJ-INCONSISTENCY ACCEPTED-PREMISE BRIDGE
@@ -18,11 +18,27 @@ PASS: source note contains boundary phrase: NO NEW ADMISSIONS
 PASS: source note contains boundary phrase: does **not** derive
 PASS: source note contains boundary phrase: no new repo-wide theory class
 PASS: source note contains boundary phrase: scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py
+PASS: source note contains boundary phrase: hypercharge or matter-completion authority
+PASS: source note contains boundary phrase: ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10
+PASS: source note contains boundary phrase: SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10
+PASS: source note contains boundary phrase: STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06
+PASS: source note no longer says Kawamoto-Smit is audit-pending
 PASS: source note excludes forbidden literature-comparator phrase: observed value of d_t
 PASS: source note excludes forbidden literature-comparator phrase: fitted spacetime dimension
 PASS: source note excludes forbidden literature-comparator phrase: experimental d=4 input
 PASS: source note excludes forbidden literature-comparator phrase: Tegmark fit of d_t
-PASS: parent ANOMALY_FORCES_TIME_THEOREM names admission (i) as bare external admission
+PASS: parent ANOMALY_FORCES_TIME_THEOREM names P-ABJ as declared external premise
+
+== Part 0b: dependency surface ==
+PASS: dependency native_gauge_closure_note is retained-grade at current ledger surface (effective_status=retained, chain_closes=True)
+PASS: dependency lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17 is retained-grade at current ledger surface (effective_status=retained_bounded, chain_closes=True)
+PASS: dependency hypercharge_identification_note is retained-grade at current ledger surface (effective_status=retained_bounded, chain_closes=True)
+PASS: dependency one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10 is retained-grade at current ledger surface (effective_status=retained_bounded, chain_closes=True)
+PASS: dependency sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10 is retained-grade at current ledger surface (effective_status=retained_bounded, chain_closes=True)
+PASS: dependency no_per_site_chirality_theorem_note_2026-05-02 is retained-grade at current ledger surface (effective_status=retained_no_go, chain_closes=True)
+PASS: dependency staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07 is retained-grade at current ledger surface (effective_status=retained_bounded, chain_closes=True)
+PASS: dependency staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06 is retained-grade at current ledger surface (effective_status=retained_bounded, chain_closes=True)
+PASS: dependency clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10 is retained-grade at current ledger surface (effective_status=retained, chain_closes=True)
 
 == Part 1: LH anomaly traces (B1) ==
 PASS: Tr[Y] LH = 0 (accidental cancellation) (0)
@@ -45,7 +61,7 @@ PASS: Tr[SU(3)^2 Y]_full = 0 (LH+RH) (0)
 PASS: Tr[SU(2)^2 Y]_full = 0 (LH+RH) (0)
 PASS: Tr[SU(3)^3]_full = 0 (LH+RH) (0)
 PASS: Witten SU(2) count = 4 (even) -> trivial global anomaly (4)
-PASS: RH SM hypercharges (4/3, -2/3, -2, 0) match retained NATIVE_GAUGE_CLOSURE_NOTE
+PASS: RH hypercharges (4/3, -2/3, -2, 0) match retained-bounded completion/enumeration packets
 
 == Part 4: Clifford chirality / volume element (B4, B5) ==
 PASS: Cl(1) generators satisfy Clifford relations
@@ -75,7 +91,7 @@ PASS: d_t=4 even -> d=d_s+d_t=7 odd (chirality incompatible)
 PASS: d_t=5 odd -> d=d_s+d_t=8 even (chirality compatible)
 PASS: d_t=6 even -> d=d_s+d_t=9 odd (chirality incompatible)
 PASS: d_t=7 odd -> d=d_s+d_t=10 even (chirality compatible)
-PASS: parent ANOMALY_FORCES_TIME_THEOREM names admission (iv) (single-clock) for d_t > 1 exclusion
+PASS: parent ANOMALY_FORCES_TIME_THEOREM names B-AXIS/single-clock boundary for d_t > 1 exclusion
 
 == Part 6: sympy exact-rational replay ==
 PASS: sympy: Tr[Y]_full = 0 (0)
@@ -85,7 +101,7 @@ PASS: sympy: Tr[SU(3)^2 Y]_full = 0 (0)
 PASS: sympy: Tr[SU(3)^2 Y]_LH = 1/3
 PASS: sympy: Tr[SU(2)^2 Y]_LH = 0
 
-TOTAL: PASS=63 FAIL=0
+TOTAL: PASS=77 FAIL=0
 VERDICT: bounded ABJ-inconsistency accepted-premise bridge passes; LH-content anomaly + (P1) ABJ-inconsistency + named dependencies force d_t in {odd positives} by exact rational arithmetic.
 
 ----- stderr -----

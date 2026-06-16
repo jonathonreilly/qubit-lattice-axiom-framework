@@ -26,6 +26,7 @@ It deliberately does not use:
 
 from __future__ import annotations
 
+import json
 from fractions import Fraction
 from pathlib import Path
 from typing import Sequence
@@ -41,6 +42,31 @@ NOTE_PATH = (
     / "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md"
 )
 PARENT_NOTE_PATH = ROOT / "docs/ANOMALY_FORCES_TIME_THEOREM.md"
+LEDGER_PATH = ROOT / "docs/audit/data/audit_ledger.json"
+
+EXPECTED_DEPENDENCIES = {
+    "native_gauge_closure_note": {"retained"},
+    "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17": {
+        "retained_bounded",
+    },
+    "hypercharge_identification_note": {"retained_bounded"},
+    "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10": {
+        "retained_bounded",
+    },
+    "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": {
+        "retained_bounded",
+    },
+    "no_per_site_chirality_theorem_note_2026-05-02": {"retained_no_go"},
+    "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": {
+        "retained_bounded",
+    },
+    "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": {
+        "retained_bounded",
+    },
+    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": {
+        "retained",
+    },
+}
 
 PASS = 0
 FAIL = 0
@@ -68,6 +94,7 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
 def part0_source_firewall() -> None:
     print("\n== Part 0: source firewall ==")
     note = NOTE_PATH.read_text(encoding="utf-8")
+    note_flat = " ".join(note.split())
     required_phrases = [
         "Accepted Premises Registration",
         "(P1)",
@@ -78,9 +105,18 @@ def part0_source_firewall() -> None:
         "does **not** derive",
         "no new repo-wide theory class",
         RUNNER_PATH,
+        "hypercharge or matter-completion authority",
+        "ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10",
+        "SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10",
+        "STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06",
     ]
     for phrase in required_phrases:
         check(f"source note contains boundary phrase: {phrase}", phrase in note)
+    check(
+        "source note no longer says Kawamoto-Smit is audit-pending",
+        "audit-pending staggered" not in note_flat
+        and "This dependency is audit-pending" not in note_flat,
+    )
 
     # Forbidden phrases: these are phrases that, if present as *load-bearing
     # inputs*, would break the bridge. They are constructed via concatenation
@@ -100,9 +136,23 @@ def part0_source_firewall() -> None:
     # parent text must contain the admission-(i) prose this bridge formalizes
     parent = PARENT_NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "parent ANOMALY_FORCES_TIME_THEOREM names admission (i) as bare external admission",
-        "admission (i)" in parent and "ABJ" in parent,
+        "parent ANOMALY_FORCES_TIME_THEOREM names P-ABJ as declared external premise",
+        "P-ABJ" in parent
+        and "Declared premise (external)" in parent
+        and "ABJ" in parent,
     )
+
+    print("\n== Part 0b: dependency surface ==")
+    rows = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+    for claim_id, allowed_statuses in EXPECTED_DEPENDENCIES.items():
+        row = rows.get(claim_id)
+        effective = row.get("effective_status") if row else None
+        closes = row.get("chain_closes") if row else None
+        check(
+            f"dependency {claim_id} is retained-grade at current ledger surface",
+            row is not None and effective in allowed_statuses and closes is True,
+            f"effective_status={effective}, chain_closes={closes}",
+        )
 
 
 # ---------------------------------------------------------------------------
@@ -236,10 +286,12 @@ def part3_sm_cancellation() -> None:
         str(n_lh_su2_doublets),
     )
 
-    # Explicit SM hypercharge values match retained NATIVE_GAUGE_CLOSURE_NOTE values
+    # Explicit SM hypercharge values match the retained-bounded singlet-completion
+    # and hypercharge-enumeration packets; NATIVE_GAUGE_CLOSURE is deliberately
+    # not the hypercharge/matter-completion authority.
     expected = (Fraction(4, 3), Fraction(-2, 3), Fraction(-2, 1), Fraction(0, 1))
     check(
-        "RH SM hypercharges (4/3, -2/3, -2, 0) match retained NATIVE_GAUGE_CLOSURE_NOTE",
+        "RH hypercharges (4/3, -2/3, -2, 0) match retained-bounded completion/enumeration packets",
         (y1, y2, y3, y4) == expected,
     )
 
@@ -402,11 +454,11 @@ def part5_dt_parity() -> None:
             check(f"d_t={d_t} even -> d=d_s+d_t={d} odd (chirality incompatible)", not is_even)
 
     # The bridge stops at "d_t in {1, 3, 5, ...}", not at "d_t = 1".
-    # Verify the parent theorem cites admission (iv) for the final pin.
+    # Verify the parent theorem keeps the final pin behind the B-AXIS boundary.
     parent = PARENT_NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "parent ANOMALY_FORCES_TIME_THEOREM names admission (iv) (single-clock) for d_t > 1 exclusion",
-        "admission (iv)" in parent and "single-clock" in parent,
+        "parent ANOMALY_FORCES_TIME_THEOREM names B-AXIS/single-clock boundary for d_t > 1 exclusion",
+        "B-AXIS" in parent and "single-clock" in parent and "d_t <= 1" in parent,
     )
 
 

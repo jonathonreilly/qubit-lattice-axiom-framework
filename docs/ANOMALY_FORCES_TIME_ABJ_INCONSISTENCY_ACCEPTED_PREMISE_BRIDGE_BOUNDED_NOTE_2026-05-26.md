@@ -19,8 +19,9 @@ chiral gauge theories — together with the dependencies named in
 consequence holds:
 
 ```text
-(B1)  The retained graph-first SU(2) x SU(3) x U(1) gauge content with
-      left-handed fermion content (2, 3)_{+1/3} + (2, 1)_{-1} produces
+(B1)  The retained graph-first nonabelian carrier plus the retained-bounded
+      left-handed hypercharge/matter-assignment surface supplies the
+      left-handed fermion content (2, 3)_{+1/3} + (2, 1)_{-1}, which produces
       three nonzero perturbative anomaly traces:
         Tr[Y^3]         = -16/9   (nonzero)
         Tr[SU(3)^2 Y]   = +1/3    (nonzero)
@@ -30,16 +31,19 @@ consequence holds:
       to close as a unitary quantum field theory.
 
 (B3)  Cancellation of (B1) by additional SU(2)-singlet right-handed
-      content is required by (P1); per retained
-      NATIVE_GAUGE_CLOSURE_NOTE, the SU(2)-singlet completion with
-      hypercharges (y_1, y_2, y_3, y_4) = (4/3, -2/3, -2, 0) cancels
-      all three anomaly traces above by exact rational arithmetic.
+      content is required by (P1). The retained-bounded one-generation
+      anomaly-singlet completion and SM-hypercharge enumeration packets
+      supply the SU(2)-singlet completion with hypercharges
+      (y_1, y_2, y_3, y_4) = (4/3, -2/3, -2, 0), and exact rational
+      arithmetic then cancels all three anomaly traces above.
 
-(B4)  The SU(2)-singlet completion (B3) is chirally distinguished from
-      the LH doublets, so a chirality operator gamma_5 satisfying
+(B4)  The SU(2)-singlet completion (B3), together with the chiral
+      gauge-theory domain of (P1), requires a chirality operator gamma_5 satisfying
         gamma_5^2 = +I,   {gamma_5, gamma_mu} = 0
-      must exist on the spacetime representation that carries the
-      gauge-theory anomaly evaluation.
+      on the spacetime representation that carries the gauge-theory
+      anomaly evaluation. The framework routing is the retained-bounded
+      staggered chirality/Kawamoto-Smit carrier, not the per-site Cl(3)
+      carrier ruled out by the retained no-go.
 
 (B5)  By retained CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION (sister
       narrow theorem), gamma_5 existence forces total spacetime
@@ -89,20 +93,21 @@ named-premise form.
   external admission in named-premise form rather than deriving it.
 
 The single registered premise (P1) feeds step (B2) of the
-§"Proof-walk" table below. Steps (B1), (B3), (B5), and (B6) consume
-retained-grade framework content and exact rational arithmetic over
-`Q`. Step (B4) also depends on the audit-pending staggered
-Kawamoto-Smit chirality carrier named below, so the row remains a
-bounded candidate until independent audit resolves that dependency.
+§"Proof-walk" table below. Steps (B1), (B3), (B4), (B5), and (B6)
+consume retained or retained-bounded framework content plus exact
+rational arithmetic over `Q`. This 2026-06-16 dependency repair removes
+the former false load-bearing claim that `NATIVE_GAUGE_CLOSURE_NOTE`
+supplies anomaly-complete `U(1)_Y` or matter-completion data; that note
+is used only for the nonabelian carrier and `Z^3` spatial substrate.
 
 ## Proof-walk
 
 | Step | Statement | Load-bearing input | Lattice-action input? |
 |---|---|---|---|
-| (B1) | Three perturbative anomaly traces of the LH SM content are nonzero (`Tr[Y^3] = -16/9`, `Tr[SU(3)^2 Y] = 1/3`, `Tr[SU(3)^3] = 2`) | Retained graph-first LH content; exact rational arithmetic on the explicit `(2,3)_{+1/3} + (2,1)_{-1}` multiplets | no |
+| (B1) | Three perturbative anomaly traces of the LH SM content are nonzero (`Tr[Y^3] = -16/9`, `Tr[SU(3)^2 Y] = 1/3`, `Tr[SU(3)^3] = 2`) | Retained nonabelian carrier plus retained-bounded `HYPERCHARGE_IDENTIFICATION`, `LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION`, and exact rational arithmetic on the explicit `(2,3)_{+1/3} + (2,1)_{-1}` multiplets | no |
 | (B2) | A chiral gauge theory with nonzero anomaly traces fails to close as a unitary quantum field theory | (P1) accepted-premise packet entry | no |
-| (B3) | Adding SU(2)-singlet right-handed completion with `(y_1, y_2, y_3, y_4) = (4/3, -2/3, -2, 0)` cancels all three anomaly traces (full LH+RH content has `Tr[Y]=Tr[Y^3]=Tr[SU(3)^2 Y]=Tr[SU(3)^3]=Tr[SU(2)^2 Y]=0`) | Retained `NATIVE_GAUGE_CLOSURE_NOTE` (SM hypercharge completion); rational arithmetic | no |
-| (B4) | The SU(2)-singlet RH completion is chirally distinct from LH doublets, so a chirality operator `gamma_5` (involution, anticommuting with all Dirac matrices) must exist on the carrying spacetime representation | Retained `NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02` rules per-site Cl(3); audit-pending `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07` carries the staggered `{epsilon, D_staggered}=0` realization | no |
+| (B3) | Adding SU(2)-singlet right-handed completion with `(y_1, y_2, y_3, y_4) = (4/3, -2/3, -2, 0)` cancels all three anomaly traces (full LH+RH content has `Tr[Y]=Tr[Y^3]=Tr[SU(3)^2 Y]=Tr[SU(3)^3]=Tr[SU(2)^2 Y]=0`) | Retained-bounded `ONE_GENERATION_ANOMALY_SINGLET_COMPLETION` plus retained-bounded `SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION`; rational arithmetic | no |
+| (B4) | The SU(2)-singlet RH completion and the chiral gauge-theory domain of (P1) require a chirality operator `gamma_5` (involution, anticommuting with all Dirac matrices) on the carrying spacetime representation | Retained `NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02` rules out per-site Cl(3); retained-bounded `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06` and `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07` route the staggered `{epsilon, D_staggered}=0` carrier on the bounded kinetic surface | no |
 | (B5) | `gamma_5` involution + anticommutation forces total dimension `d = d_s + d_t` to be even | Retained `CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10` (sister narrow theorem) | no |
 | (B6) | With `d_s = 3` (Z^3 substrate), `d_t` must be a positive odd integer: `d_t in {1, 3, 5, ...}` | Retained `NATIVE_GAUGE_CLOSURE_NOTE` (Cl(3)/Z^3); subtraction in `Z` | no |
 
@@ -117,9 +122,8 @@ The bridge does **not** close `d_t = 1`. That final pin requires
 admission (iv) (single-clock codimension-1 evolution), which is
 outside this bridge.
 The bridge stops at `d_t in {odd positives}` — that is the maximal
-content derivable from (P1), the retained-grade dependencies, the
-audit-pending staggered chirality carrier, and the chirality +
-even-dimension argument.
+content derivable from (P1), the retained/retained-bounded dependency
+surface, and the chirality + even-dimension argument.
 
 ## Artifact checks
 
@@ -205,10 +209,23 @@ registered.
 ## Load-Bearing Dependencies
 
 - [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md)
-  — supplies the retained-grade graph-first `SU(2) x SU(3) x U(1)` gauge
-  content with LH content `(2, 3)_{+1/3} + (2, 1)_{-1}` and the
-  SU(2)-singlet right-handed completion with hypercharges
-  `(4/3, -2/3, -2, 0)` (used in steps (B1) and (B3)).
+  — supplies the retained graph-first nonabelian `SU(2) x SU(3)`
+  carrier and the `Z^3` spatial substrate. It is **not** used here as
+  the hypercharge or matter-completion authority; its own claim scope
+  excludes anomaly-complete `U(1)_Y` and matter-completion labels.
+- [`LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md`](LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+  — supplies the retained-bounded `(2,3) + (2,1)` left-handed block
+  decomposition on the graph-first substrate.
+- [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](HYPERCHARGE_IDENTIFICATION_NOTE.md)
+  — supplies the retained-bounded left-handed doubled-hypercharge
+  surface `(2,3)_{+1/3} + (2,1)_{-1}` under its explicit normalization
+  boundary.
+- [`ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md`](ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — supplies the retained-bounded SU(2)-singlet right-handed completion
+  readout `(4/3, -2/3, -2, 0)` under its named branch convention.
+- [`SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10.md`](SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — supplies the retained-bounded rational solution enumeration for
+  the right-handed hypercharge tuple under the displayed anomaly system.
 - [`CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md)
   — supplies the retained-grade narrow theorem that `gamma_5`
   existence forces `d = d_s + d_t` even (used in step (B5)).
@@ -219,11 +236,13 @@ registered.
   (used as the chirality-routing no-go in step (B4)).
 - [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
   — supplies the staggered chirality grading
-  `{epsilon, D_staggered} = 0` carrying the framework-internal
-  `gamma_5` realization (used as the chirality-existence positive
-  carrier in step (B4). This dependency is audit-pending, so this
-  bridge does not claim retained-grade downstream status before
-  independent audit.
+  `{epsilon, D_staggered} = 0` on the bounded Kawamoto-Smit kinetic
+  surface (used as the chirality-existence positive carrier in step
+  (B4)).
+- [`STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+  — supplies the retained-bounded scalar parity/chirality sign field
+  `epsilon(x)=(-1)^(x_1+x_2+x_3)` and edgewise anticommutation for
+  nearest-neighbor odd kinetic stencils.
 
 ## Non-Load-Bearing Context
 
@@ -275,9 +294,9 @@ This bridge does **not** close:
   (the proposed PR 402 companion was closed without merge);
 - the final pin `d_t = 1`, which requires admission (iv)
   (single-clock codimension-1 evolution) and is outside this bridge;
-- derivation of the chirality-grading realization on the staggered
-  lattice (carried separately by audit-pending
-  `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07`);
+- derivation of the full staggered-Dirac realization gate, physical
+  species-label bridge, or BZ-corner family identification; the bounded
+  chirality/Kawamoto-Smit carrier used here is narrower than those gates;
 - derivation of the Cl(3) per-site no-go (carried separately by
   retained `NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02`);
 - derivation of the SU(3)-fundamental anomaly coefficient `A(F)`
@@ -297,15 +316,13 @@ audit-readable named-premise form.
 
 ## NO NEW ADMISSIONS
 
-(P1) is the same admission already named in the parent theorem's
-`§"Claim scope"` prose ("admission (i), ABJ anomaly-to-inconsistency
-on the lattice, remains a bare external admission on current `main`")
-and tracked in the parent's `admission_routing_status` YAML block
-under `admission_id: i`. This bridge formalizes it in audit-readable
+(P1) is the same declared external premise now named in the parent
+theorem as `P-ABJ`: ABJ anomaly-to-inconsistency for chiral gauge
+theories. This bridge formalizes that premise in audit-readable
 named-premise form, mirroring the four prior accepted-premise bridges
-(hypercharge α=1/3, Planck Target-3 coframe response, Planck
-boundary/action-density, two-Ward H_unit residue). No new axiom,
-no new admission, and no new repo-wide theory class is introduced.
+(hypercharge alpha=1/3, Planck Target-3 coframe response, Planck
+boundary/action-density, two-Ward H_unit residue). No new axiom, no new
+admission, and no new repo-wide theory class is introduced.
 
 ## Verification
 

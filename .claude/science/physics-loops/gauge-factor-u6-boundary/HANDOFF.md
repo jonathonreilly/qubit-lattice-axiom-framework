@@ -2,6 +2,8 @@
 
 ## What Changed
 
+PR: <https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4115>
+
 This PR repairs the gauge-algebra supplied-carrier row by making the full
 `u(6)` boundary explicit.
 

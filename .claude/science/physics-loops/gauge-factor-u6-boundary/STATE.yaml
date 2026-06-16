@@ -24,6 +24,6 @@ open_imports:
   - supplied factor-locality/MR_color premise selecting factor-preserving algebra over full u(6)
   - gauging selection and chiral su(2)_L selection
 review_findings: []
-pr_status: pending
-next_exact_action: "Run py_compile, runner checks, protected-surface diff check, commit, push, and open the review PR."
-stop_condition: "Stop after this coherent source repair PR is opened; continue scanning later if requested."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4115"
+next_exact_action: "Reviewer should inspect PR #4115, then independent audit can re-check the original row if the source repair is accepted."
+stop_condition: "Coherent source repair PR opened; continue scanning later if requested."

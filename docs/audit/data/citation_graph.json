@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "post_record_measure_weight_normalization_subdivision_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
         "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
         "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11",
         "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
         "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
         "koide_records_objectivity_conditional_note_2026-05-31",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
-        "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28"
+        "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
+        "post_record_measure_weight_normalization_subdivision_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "03184d5b8307abd241e7bfd78ed7ddd3f7245f09954fee753d1941a490c84453",
+      "note_hash": "38c98d92c71b80145a60185233ef2e0b96a5551812fa68553968dda2c7f31078",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

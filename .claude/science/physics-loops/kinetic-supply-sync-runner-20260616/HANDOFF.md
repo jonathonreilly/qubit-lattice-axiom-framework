@@ -2,6 +2,8 @@
 
 ## What Changed
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4120
+
 Updated `scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py` so it no longer expects stale pre-06-14 P-FLUX state:
 
 - C1 is checked as `retained_bounded`;

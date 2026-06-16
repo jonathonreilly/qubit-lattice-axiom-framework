@@ -13,6 +13,7 @@ reachability: supports re-audit of staggered/Kawamoto-Smit consumer rows by repa
 files_touched:
   - scripts/staggered_dirac_kinetic_supply_line_sync_2026_06_12.py
   - logs/runner-cache/staggered_dirac_kinetic_supply_line_sync_2026_06_12.txt
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4120
 open_imports:
   - kinetic-class forcing row audit grade remains independent
   - P-KIN wholesale retirement remains independent

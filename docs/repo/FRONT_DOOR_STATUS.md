@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1540 |
-| Retained-grade rows, including boxed decorations | 1411 |
+| Applied audit verdicts | 1541 |
+| Retained-grade rows, including boxed decorations | 1412 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 211 |
-| Retained bounded rows | 937 |
+| Retained bounded rows | 938 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1452 |
+| Unaudited rows | 1451 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 38 |
 | Audited renaming rows | 31 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1454 |
+| Total pending rows | 1453 |
 | Ready rows | 45 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
 | Medium pending | 430 |
-| Leaf pending | 472 |
+| Leaf pending | 471 |
 
 Next ready rows by queue order:
 
-- [`brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15`](../../docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
 - [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - medium; unaudited
 - [`cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27`](../../docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md) - medium; unaudited
 - [`dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28`](../../docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
 - [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - medium; unaudited
 - [`gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11`](../../docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
-- [`koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
+- [`koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`koide_records_objectivity_conditional_note_2026-05-31`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

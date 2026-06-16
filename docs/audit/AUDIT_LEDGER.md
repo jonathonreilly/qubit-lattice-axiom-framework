@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 937 |
+| **retained_bounded** | 938 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1452 |
+| unaudited | 1451 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1382 |
+| `audited_clean` | 1383 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1769 |
+| `unaudited` | 1768 |
 
 | claim_type | count |
 |---|---:|
@@ -221,6 +221,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `boundary_law_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `branch_entanglement_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2955,6 +2956,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The exact finite-tree computation gives the printed weighted slack/rate tables and verifies R_b <= NFRAG - B_b, strict slack increase on eps=0.3/0.6/0.9, and the sampled near-projective rate trend.  _(class `C`)_
 - **chain closes:** True — The runner constructs the branch state vectors from CNOT broadcasts and weak Kraus factors, then computes weights, connected-correlator records, blanks, entropy, and slack without opaque helpers or hard-coded contested outputs. Independently, each branch reduces to two amplitudes A^k B^(N-k) and B^k A^(N-k), giving C=4p(1-p) and reproducing the displayed slack/rate and threshold tables.
 - **rationale:** The claim is bounded to a finite sampled model and does not rely on external comparator data or cross-note numerical imports. The runner source genuinely computes the finite model rather than merely printing expected values, and the independent combinatorial check confirms the load-bearing table entries, inequalities, controls, and trend values. The eps=1 statement is clean only in the scoped sense stated in the note: pointer-eigenstate/zero-record control, not an unscoped asymptotic or generic-state theorem.
+- **auditor confidence:** high
+
+### `brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15`
+
+- **Note:** [`BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md`](../../docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-010915-150119868e-brannen_circulant_is_forced_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Hermitian commutant of the supplied 3x3 cyclic shift C is exactly the three-real-dimensional set H = aI + bC + conj(b)C^T, with a real and b complex.  _(class `A`)_
+- **chain closes:** True — The algebra closes: the cyclic shift has distinct eigenvalues, so its complex commutant is span{I,C,C^2}; Hermiticity imposes the paired coefficients a in R and C^2 coefficient conj(b). Since S=C+C^2 is also a polynomial in C, every such H commutes with S.
+- **rationale:** The runner source performs an actual finite-dimensional commutator/nullspace computation and reconstructs the resulting basis as Brannen circulants, rather than merely printing expected constants. An independent algebraic check gives the same result from the centralizer of the cyclic shift and the Hermiticity condition, and the pointer non-demolition statement follows because S is a polynomial in C. The result uses only supplied C3 action, locality/displacement structure, Hermiticity, and supplied pointer data; it does not claim to select the action, pointer, r, delta, or any coupling value.
 - **auditor confidence:** high
 
 ### `brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31`

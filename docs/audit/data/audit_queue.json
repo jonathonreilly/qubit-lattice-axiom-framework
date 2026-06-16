@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 280,
     "high": 272,
-    "leaf": 472,
+    "leaf": 471,
     "medium": 430
   },
   "cycle_break_target_count": 0,
@@ -16734,30 +16734,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_einselection_2sector_modulo_kreality_2026-06-02"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.248,
-      "note_path": "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_brannen_circulant_forced_c3_covariant_form_2026_06_15.py",
-      "transitive_descendants": 18
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -16912,6 +16888,36 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
+        "three_generation_observable_theorem_note",
+        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+        "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.17,
+      "note_path": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_delta_phase_count_one_z2_orientation.py",
       "transitive_descendants": 17
     },
     {
@@ -30064,36 +30070,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
-        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
-        "three_generation_observable_theorem_note",
-        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
-        "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_delta_phase_count_one_z2_orientation.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_records_objectivity_conditional_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -30188,6 +30164,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+        "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_record_preservation_conserves_within_sector_measure_2026_06_15.py",
       "transitive_descendants": 1
     },
     {
@@ -33961,31 +33962,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_record_durability_coarse_preference_2026_06_09.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
-        "flavor_einselection_2sector_modulo_kreality_2026-06-02"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_record_preservation_conserves_within_sector_measure_2026_06_15.py",
       "transitive_descendants": 1
     },
     {
@@ -43925,5 +43901,5 @@
     }
   ],
   "ready_count": 45,
-  "total_pending": 1454
+  "total_pending": 1453
 }

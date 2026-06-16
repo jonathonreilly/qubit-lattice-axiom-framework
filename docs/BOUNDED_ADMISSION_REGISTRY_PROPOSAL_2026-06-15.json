@@ -10,7 +10,12 @@
     "convention": "a vacuous rescaling/labeling freedom; not an admission at all (no physical content). Recorded for completeness.",
     "floor": "non-retirable input (e.g. the Past Hypothesis scope condition; an external empirical value the axioms cannot reach). Recorded but OFF the chase-list -- do not run derivation effort against these."
   },
-  "_retirability_values": ["open_target", "no_go_proven", "non_retirable", "retired"],
+  "_retirability_values": [
+    "open_target",
+    "no_go_proven",
+    "non_retirable",
+    "retired"
+  ],
   "_lifecycle": "import --reprove from primitives--> RETIRED (leaves registry, row becomes retained/clean)  |  import --confirmed genuinely irreducible--> promoted to tier:A  |  any --proven non-retirable--> demoted to floor (e.g. Past Hypothesis)",
   "_conditional_to_bound_mechanism": "A row is audited_conditional when the import it rests on is not a recorded citable authority. Once an import is an atom in this registry, the auditor can CITE it, and the row lands retained_bounded (terminal). So this registry is also the systematic fix for the 25 audited_conditional keystones -- not row-by-row note-narrowing.",
   "_classification_status_legend": {
@@ -25,10 +30,18 @@
       "kind": "framework_derivation_target",
       "statement": "the generation / charged-lepton mass-pattern input: the C3-breaking phase delta (Koide phase) + the doublet reading/occupancy selection (r in {1, 1/2}) + the abstract-sector to physical-species bridge",
       "retirability": "open_target",
-      "leverage": { "rows_bound": 41 },
+      "leverage": {
+        "rows_bound": 41,
+        "reviewed_rows_bound": 21
+      },
       "bound_row_ids": "see tier_a_admissions.json (no_go_portfolio) + dedup pass",
       "derivation_state": "genuine irreducible framework atom; minimum form 2026-06-11 (three sub-admissions)",
-      "aliases": ["Koide pattern", "delta=2/9 readout", "r in {1,1/2} occupancy", "AC_phi_lambda"],
+      "aliases": [
+        "Koide pattern",
+        "delta=2/9 readout",
+        "r in {1,1/2} occupancy",
+        "AC_phi_lambda"
+      ],
       "source": "docs/audit/data/tier_a_admissions.json::staggered_dirac_realization_gate_note_2026-05-03",
       "classification_status": "verified (existing canonical Tier-A)"
     },
@@ -38,10 +51,18 @@
       "kind": "framework_derivation_target",
       "statement": "the QCD vacuum angle theta = 0 (strong-CP); theta_bar = theta_gauge + arg det(M_q); shared with the Standard Model",
       "retirability": "open_target",
-      "leverage": { "rows_bound": 20, "rows_bound_scan_estimate": 23 },
+      "leverage": {
+        "rows_bound": 20,
+        "rows_bound_scan_estimate": 23,
+        "reviewed_rows_bound": 6
+      },
       "bound_row_ids": "see tier_a_admissions.json (no_go_portfolio) + dedup pass",
       "derivation_state": "genuine irreducible atom; gauge-side residual in multi-plaquette/large-gauge-winding; mass-side on determinant-readout bridge",
-      "aliases": ["strong-CP", "vacuum angle", "arg det M"],
+      "aliases": [
+        "strong-CP",
+        "vacuum angle",
+        "arg det M"
+      ],
       "source": "docs/audit/data/tier_a_admissions.json::strong_cp_theta_zero_note",
       "classification_status": "verified (existing canonical Tier-A)"
     },
@@ -51,10 +72,21 @@
       "kind": "framework_derivation_target",
       "statement": "the time-axis label / per-axis Z2 boundary-condition asymmetry: WHICH lattice direction carries the emergent time / fermionic trace-closure",
       "retirability": "open_target",
-      "leverage": { "rows_bound": 1, "top_fanout": 925 },
-      "bound_row_ids": ["axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"],
+      "leverage": {
+        "rows_bound": 1,
+        "top_fanout": 925,
+        "reviewed_rows_bound": 3
+      },
+      "bound_row_ids": [
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+      ],
       "derivation_state": "single_clock_axis_selection no-go (2026-06-11) closed the natural routes (W-equivariant); its N6 says a derived registration-direction / per-axis BC-asymmetry bridge would retire it without a new axiom",
-      "aliases": ["B-AXIS", "tau-axis selection", "registration-direction bridge", "single-clock premise"],
+      "aliases": [
+        "B-AXIS",
+        "tau-axis selection",
+        "registration-direction bridge",
+        "single-clock premise"
+      ],
       "classification_status": "verified this session: BOUNDING ADMISSION (it is cited as a load-bearing dep by the single-clock keystone gating 925 descendants), NOT a scope condition. Corrects the agent-sort, which mis-labeled it scope/unbound. Tier A_candidate pending the primitive-vs-Tier-A finer sort (it is a selector = content, so not a content-free primitive)."
     },
     {
@@ -63,10 +95,22 @@
       "kind": "empirical_input",
       "statement": "the NUMBER beta=6 -- an external lattice-QCD empirical value. (Distinct from the Wilson matching relation beta = 2 N_c / g_bare^2, which is already a bounded theorem in WILSON_SMALL_A_MATCHING_BETA_GBARE.)",
       "retirability": "non_retirable",
-      "leverage": { "rows_bound_estimate": 0, "top_fanout": 963 },
-      "bound_row_ids": ["g_bare_constraint_vs_convention_theorem_note_2026-05-03", "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03", "yt_p1_i_s_lattice_pt_citation_note_2026-04-17", "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17"],
+      "leverage": {
+        "rows_bound_estimate": 0,
+        "top_fanout": 963,
+        "reviewed_rows_bound": 54
+      },
+      "bound_row_ids": [
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
+        "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17"
+      ],
       "derivation_state": "OFF the chase-list: the matching RELATION is already a bounded theorem; the NUMBER beta=6 is external lattice-QCD empirical and bounds nothing load-bearing (is_premise_bounds=scope). beta6_plaquette_campaign computable runway exhausted -- no primitives-reproof exists for the number.",
-      "aliases": ["beta=6 value", "plaquette coupling number"],
+      "aliases": [
+        "beta=6 value",
+        "plaquette coupling number"
+      ],
       "classification_status": "VERIFIED 2026-06-15: CHANGED import->floor. The first_pass bundled the derivable matching relation with the empirical number; the number is the floor and bounds nothing."
     },
     {
@@ -75,9 +119,22 @@
       "kind": "forbidden_import",
       "statement": "the staggered / Kogut-Susskind chiral operator class ({eps, D}=0, hw=1 BZ-corner chirality identification) imported as a chirality gate rather than forced from primitives",
       "retirability": "open_target",
-      "leverage": { "rows_bound_estimate": 104, "top_fanout": 893 },
-      "bound_row_ids": ["staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07", "flavor_carrier_from_axioms_momentum_forced_2026-05-31", "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08"],
-      "aliases": ["hw=1 chirality", "KS chiral operator", "BZ-corner identification", "N_taste=16 channel"],
+      "leverage": {
+        "rows_bound_estimate": 104,
+        "top_fanout": 893,
+        "reviewed_rows_bound": 57
+      },
+      "bound_row_ids": [
+        "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+        "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+        "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08"
+      ],
+      "aliases": [
+        "hw=1 chirality",
+        "KS chiral operator",
+        "BZ-corner identification",
+        "N_taste=16 channel"
+      ],
       "classification_status": "first_pass (high reproof leverage)"
     },
     {
@@ -86,10 +143,18 @@
       "kind": "forbidden_import",
       "statement": "imported strong-coupling / literature series brackets and supplied numeric inputs used as load-bearing values without native reproof",
       "retirability": "open_target",
-      "leverage": { "rows_bound_estimate": 369 },
+      "leverage": {
+        "rows_bound_estimate": 369,
+        "reviewed_rows_bound": 19
+      },
       "bound_row_ids": "pending full dedup pass (largest cluster)",
       "derivation_state": "reprove-and-cite discipline: literature series must be reproven from Haar primitives and cited only as comparator, never as derivation input",
-      "aliases": ["literature bracket", "strong-coupling series", "supplied I_S value", "0.5934 plaquette helper"],
+      "aliases": [
+        "literature bracket",
+        "strong-coupling series",
+        "supplied I_S value",
+        "0.5934 plaquette helper"
+      ],
       "classification_status": "first_pass (largest single reproof cluster -- split likely needed)"
     },
     {
@@ -98,10 +163,21 @@
       "kind": "forbidden_import",
       "statement": "computations delegated through _frontier_loader / helper modules (exterior projector, shell-mean, source constructors, sewing-shell, DtN kernel, O_h class, reduced-shell R=4) imported rather than built from primitives",
       "retirability": "open_target",
-      "leverage": { "rows_bound_estimate": 238 },
-      "bound_row_ids": ["one_parameter_reduced_shell_law_note", "scalar_trace_tensor_no_go_note"],
-      "aliases": ["_frontier_loader", "reduced-shell R=4", "O_h helper", "frontier helper module"],
-      "classification_status": "first_pass (high reproof leverage)"
+      "leverage": {
+        "rows_bound_estimate": 238,
+        "reviewed_rows_bound": 254
+      },
+      "bound_row_ids": [
+        "one_parameter_reduced_shell_law_note",
+        "scalar_trace_tensor_no_go_note"
+      ],
+      "aliases": [
+        "_frontier_loader",
+        "reduced-shell R=4",
+        "O_h helper",
+        "frontier helper module"
+      ],
+      "classification_status": "first_pass (high reproof leverage) | REVIEWED 2026-06-15: 254 rows (top cluster). Its science core (shell-localization identity) is DERIVED in PR #4123; needs a shell-vs-GR split -- the shell-bounded subset retargets to #4123 (retarget PR in flight), the GR/tensor + Maradudin-lattice-Green rows stay bounded."
     },
     {
       "admission_id": "color_su3_carrier",
@@ -109,9 +185,19 @@
       "kind": "forbidden_import",
       "statement": "identification of the Cl(3) SU(3) construct with the physical SM color / quark carrier (matter realization MR_color)",
       "retirability": "open_target",
-      "leverage": { "rows_bound_estimate": 112, "top_fanout": 314 },
-      "bound_row_ids": ["cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02"],
-      "aliases": ["MR_color", "SM color/quark carrier", "physical color identification"],
+      "leverage": {
+        "rows_bound_estimate": 112,
+        "top_fanout": 314,
+        "reviewed_rows_bound": 65
+      },
+      "bound_row_ids": [
+        "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02"
+      ],
+      "aliases": [
+        "MR_color",
+        "SM color/quark carrier",
+        "physical color identification"
+      ],
       "classification_status": "VERIFIED 2026-06-15: tier:import / open_target (resolves the sort's tier:A_new + non-retirable contradiction). The bound row rests only on ALGEBRAIC SU(3) (CL3_COLOR_AUTOMORPHISM); the physical color/quark-carrier identification (MR_color) is the residual import -- retirable in principle by deriving the quark/matter sector from the axioms. NOT a genuine tier:A."
     },
     {
@@ -120,9 +206,22 @@
       "kind": "forbidden_import",
       "statement": "the readout-identification boundary + determinant-character / log-character homomorphism that the Record axiom does not itself supply (det-positivity on the positive cone is a separate supplied premise)",
       "retirability": "open_target",
-      "leverage": { "rows_bound_estimate": 4, "top_fanout": 899 },
-      "bound_row_ids": ["observable_principle_from_axiom_note", "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10", "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11", "koide_q_reduced_observable_restriction_theorem_2026-04-22"],
-      "aliases": ["det-positivity readout", "determinant-character homomorphism", "readout-identification boundary"],
+      "leverage": {
+        "rows_bound_estimate": 4,
+        "top_fanout": 899,
+        "reviewed_rows_bound": 69
+      },
+      "bound_row_ids": [
+        "observable_principle_from_axiom_note",
+        "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+        "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
+        "koide_q_reduced_observable_restriction_theorem_2026-04-22"
+      ],
+      "aliases": [
+        "det-positivity readout",
+        "determinant-character homomorphism",
+        "readout-identification boundary"
+      ],
       "classification_status": "first_pass -- NOTE: observable_principle cites MINIMAL_AXIOMS (an accepted axiom), so PART of this may be an axiom-citation-gap (-> unbound, no admission) rather than an import. Needs the operational test to split the axiom-citation part from the genuinely-supplied readout-identification part."
     },
     {
@@ -131,8 +230,14 @@
       "kind": "vacuous_convention",
       "statement": "absolute hypercharge normalization (alpha=1/3); retained structure fixes ratios, the overall Y-scale is a Y<->g' rescaling convention with no physical content",
       "retirability": "non_retirable",
-      "leverage": { "rows_bound": 18 },
-      "aliases": ["Y0", "hypercharge normalization"],
+      "leverage": {
+        "rows_bound": 18,
+        "reviewed_rows_bound": 3
+      },
+      "aliases": [
+        "Y0",
+        "hypercharge normalization"
+      ],
       "source": "docs/audit/data/tier_a_admissions.json::hypercharge_identification_note",
       "classification_status": "verified (existing convention, not an admission)"
     },
@@ -142,8 +247,13 @@
       "kind": "vacuous_convention",
       "statement": "bare coupling g_bare = 1; a g_bare <-> beta rescaling convention, not a number to derive",
       "retirability": "non_retirable",
-      "leverage": { "rows_bound": 8 },
-      "aliases": ["g0", "bare coupling"],
+      "leverage": {
+        "rows_bound": 8
+      },
+      "aliases": [
+        "g0",
+        "bare coupling"
+      ],
       "source": "docs/audit/data/tier_a_admissions.json::g_bare_rigidity_theorem_note",
       "classification_status": "verified (existing convention, not an admission)"
     },
@@ -153,9 +263,20 @@
       "kind": "vacuous_convention",
       "statement": "the action/source-normalization coefficient c in S = L(1 - c*f), and the per-determinant / effective-potential-density readout convention -- fixed only after an external f/Phi map is supplied",
       "retirability": "non_retirable",
-      "leverage": { "rows_bound_estimate": 88, "top_fanout": 244 },
-      "bound_row_ids": ["action_normalization_note", "hierarchy_dimensional_compression_note"],
-      "aliases": ["coefficient c", "f/Phi map convention", "per-determinant density bridge"],
+      "leverage": {
+        "rows_bound_estimate": 88,
+        "top_fanout": 244,
+        "reviewed_rows_bound": 5
+      },
+      "bound_row_ids": [
+        "action_normalization_note",
+        "hierarchy_dimensional_compression_note"
+      ],
+      "aliases": [
+        "coefficient c",
+        "f/Phi map convention",
+        "per-determinant density bridge"
+      ],
       "classification_status": "first_pass (sort: vacuous_convention -- analogous to Y0/g_bare; the session can ship this one as a row-cite PR)"
     },
     {
@@ -164,10 +285,18 @@
       "kind": "scope_condition",
       "statement": "the low-entropy boundary MAGNITUDE (Penrose specialness) -- a scope / domain-of-applicability condition, NOT a premise; results that use it are honest conditionals ('given a low-entropy past, X')",
       "retirability": "non_retirable",
-      "leverage": { "rows_bound": 0 },
+      "leverage": {
+        "rows_bound": 0,
+        "reviewed_rows_bound": 1
+      },
       "bound_row_ids": [],
       "derivation_state": "PR #4046 proposes the scope-condition classification; provably non-retirable (Loschmidt); verified to bound 0 of 3311 rows",
-      "aliases": ["PH", "low-entropy past", "Penrose specialness", "arrow boundary"],
+      "aliases": [
+        "PH",
+        "low-entropy past",
+        "Penrose specialness",
+        "arrow boundary"
+      ],
       "classification_status": "verified this session (bound-check: bounds nothing -> off the chase-list entirely)"
     },
     {
@@ -176,9 +305,20 @@
       "kind": "empirical_input",
       "statement": "external empirical / comparator values the axioms cannot reach (PDG light-neutrino mass ~0.05 eV; g_* = 106.75; runner-defined seed-surface / eta_obs normalization)",
       "retirability": "non_retirable",
-      "leverage": { "rows_bound_estimate": 2, "top_fanout": 64 },
-      "bound_row_ids": ["dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16", "sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29"],
-      "aliases": ["PDG m_nu", "g_*", "empirical comparator"],
+      "leverage": {
+        "rows_bound_estimate": 2,
+        "top_fanout": 64,
+        "reviewed_rows_bound": 18
+      },
+      "bound_row_ids": [
+        "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
+        "sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29"
+      ],
+      "aliases": [
+        "PDG m_nu",
+        "g_*",
+        "empirical comparator"
+      ],
       "classification_status": "first_pass -- likely permanently non-retirable (an empirical neutrino mass is not derivable from the axioms); keep OFF the chase-list"
     },
     {
@@ -187,10 +327,20 @@
       "kind": "no_go",
       "statement": "the ABJ-anomaly premise + U(1)_Y / matter completion (abelian eigenvalue surface, anomaly-complete U(1)_Y, matter-completion labels)",
       "retirability": "no_go_proven",
-      "leverage": { "rows_bound": 1, "top_fanout": 1082 },
-      "bound_row_ids": ["anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26"],
+      "leverage": {
+        "rows_bound": 1,
+        "top_fanout": 1082,
+        "reviewed_rows_bound": 4
+      },
+      "bound_row_ids": [
+        "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26"
+      ],
       "derivation_state": "the cited NATIVE_GAUGE_CLOSURE_NOTE explicitly EXCLUDES the abelian surface / U(1)_Y completion this bridge needs -> cannot close clean; record in the no-go portfolio (terminal NOGO), do not chase",
-      "aliases": ["ABJ premise", "U(1)_Y completion", "abelian eigenvalue surface"],
+      "aliases": [
+        "ABJ premise",
+        "U(1)_Y completion",
+        "abelian eigenvalue surface"
+      ],
       "classification_status": "first_pass (sort: terminal no_go -- highest fanout, but it is a wall to RECORD, not a target to chase)"
     },
     {
@@ -199,11 +349,64 @@
       "kind": "forbidden_import",
       "statement": "the scalar-lane measure choice reaching kappa=2 (block-total Frobenius log-law vs det log-law) -- a structural choice between two natural functionals, NOT a withheld quotient",
       "retirability": "open_target",
-      "leverage": { "rows_bound_estimate": 40, "top_fanout": 237 },
-      "bound_row_ids": ["koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19"],
-      "aliases": ["SO(2)-quotient", "MRU scalar-lane measure", "kappa=2 elevation", "block-total Frobenius law"],
+      "leverage": {
+        "rows_bound_estimate": 40,
+        "top_fanout": 237,
+        "reviewed_rows_bound": 27
+      },
+      "bound_row_ids": [
+        "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19"
+      ],
+      "aliases": [
+        "SO(2)-quotient",
+        "MRU scalar-lane measure",
+        "kappa=2 elevation",
+        "block-total Frobenius law"
+      ],
       "derivation_state": "reproof_needs: derive why the charged-lepton scalar lane decouples the cos(3 arg b) channel (or the carrier reduction rho_perp^2=E_perp) so the multiplicity-weighted route is forced; overlaps the ac_phi_lambda Koide atom -- dedup pass to reconcile",
       "classification_status": "VERIFIED 2026-06-15: CHANGED floor(no_go)->import(open_target). NOT a no-go: the block-total Frobenius route is RETAINED (PASS=16) and reaches kappa=2 WITHOUT the withheld quotient -- so it is a tractable structural choice between two functionals, both retained."
+    },
+    {
+      "admission_id": "bounded_runner_gate_b_certificate",
+      "tier": "import",
+      "kind": "runner_gate",
+      "statement": "the gate-B runner-certificate condition shared by a cluster of bounded rows (surfaced as the largest coherent MISC group in the careful review)",
+      "retirability": "open_target",
+      "leverage": {
+        "reviewed_rows_bound": 22
+      },
+      "bound_row_ids": [
+        "gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17",
+        "gate_b_farfield_note",
+        "gate_b_grown_distance_law_note",
+        "gate_b_grown_joint_package_note",
+        "gate_b_grown_trapping_frontier_note",
+        "gate_b_grown_trapping_frontier_v2_note",
+        "gate_b_grown_trapping_frontier_v3_note",
+        "gate_b_grown_trapping_transport_note",
+        "gate_b_h025_distance_law_note",
+        "gate_b_h025_farfield_note",
+        "gate_b_h025_joint_package_note",
+        "gate_b_no_restore_farfield_note",
+        "gate_b_no_restore_joint_package_note",
+        "gate_b_nonlabel_connectivity_v1_distance_note",
+        "gate_b_nonlabel_connectivity_v1_h025_note",
+        "gate_b_nonlabel_connectivity_v1_joint_note",
+        "gate_b_nonlabel_connectivity_v1_note",
+        "gate_b_nonlabel_connectivity_v2_note",
+        "gate_b_nonlabel_connectivity_v3_note",
+        "gate_b_nonlabel_sign_grown_transfer_note",
+        "gate_b_v6_nearfield_comparator_note",
+        "gate_b_weak_connectivity_note"
+      ],
+      "aliases": [
+        "gate_b",
+        "runner gate-B certificate"
+      ],
+      "classification_status": "NEW 2026-06-15 from the careful dedup review: the one coherent atom the first-pass registry was missing (22 rows). Needs its own per-atom operational test before its tier is final."
     }
-  ]
+  ],
+  "_bound_row_ids_map": "docs/BOUNDED_ADMISSION_BOUND_ROW_IDS_MAP_2026-06-16.json -- per-atom bound_row_ids from the careful line-by-line review of all 921 rows (606 canonical + the multi-row MISC groups).",
+  "_diverse_tail": "The careful review found ~315 rows do NOT map to a canonical atom; ~268 are effectively-unique one-offs (gravity probes, DM searches, network/teleportation experiments, GR-lattice notes) bounded on their own specific residuals. The bounded register does NOT cleanly reduce to a few atoms -- a third of it is a diverse long tail that will NOT cluster-drain. (Corrects the 67->11 minimize optimism.)",
+  "_review_note": "Per-atom leverage REVIEWED 2026-06-15 by the careful line-by-line pass (real counts), replacing the keyword-scan estimates. Notable: imported_literature_series collapsed 369->19 (most import rows have a specific physics atom); helper_frontier 254 is the top cluster."
 }

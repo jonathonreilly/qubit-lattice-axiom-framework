@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 930 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1470 |
+| unaudited | 1469 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1373 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1787 |
+| `unaudited` | 1786 |
 
 | claim_type | count |
 |---|---:|
@@ -1518,6 +1518,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8718,6 +8719,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Route B reduces the finite k-word Perron/readout problem to the 25-channel matrix C_k^(1/2) G^(entrywise k) C_k^(1/2), with eta-weighted readout S_eta,k(a) = D_a sum_mu b_mu M(a,mu) L_eta(mu)^(k-1), validated against direct k=2, k=3, and Route A k=4.  _(class `C`)_
 - **chain closes:** True — The finite matrices, bond normalization, rank reduction, and source-sector composition are explicitly constructed from retained-grade finite inputs, and the runner source computes rather than imports the k=4/k=5 values. The physical 3D environment, untruncated limits, L_perp limit, analytic P(6), and repinning are explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a first-principles finite computation on the bounded packet, not a definition, renaming, tuned comparator match, or cross-note value import. The hard-coded P1/P2/P3 constants are used as prior-anchor gates; P4, P5, and the k=1..20 continuation are computed from the finite operators. An independent reconstruction of the finite coefficient, fusion, reduced-channel, and source-readout path matched the displayed P values including P4=0.603630724651 and P5=0.612857835719. The cited open physical tensor-transfer/Perron targets are named only as residuals and are not imported into this bounded claim.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite packet with tensor NMAX=4/MODE_MAX=80, source NMAX=7/MODE_MAX=200, same-label adjacent bond, and eta_inf boundary: theta identity, finite source perturbation constants, measured k=2..20 envelope, and the claimed two-term composed asymptotic surface.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-000630-ca03b57c7c-gauge_vacuum_plaquette_word_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Composing R_k = theta^(1-k) with the source perturbation gives P_inf - P_k = C_source theta^(k-1) + 3 C_source theta^(k-1) alpha^k + a remainder on smaller finite-packet scales.  _(class `C`)_
+- **chain closes:** False — The finite arithmetic and runner-computed packet quantities are internally consistent, including theta, theta*alpha, theta*gamma, and C_source/theta. The chain does not close as a theorem for the displayed asymptotic remainder because the proof-grade all-k finite-packet tail bound for the dropped Neumann and source-perturbation terms is explicitly left as a target.
+- **rationale:** The runner source is substantive: it builds the finite packet, reduced t-matrix, eigenvector approximations, rho ladder, and source perturbation rather than merely printing constants; hard-coded theta values are used as anchor checks, not construction inputs. The measured k=2..20 envelope is supported by the completed cache. However, the load-bearing theorem step requires a controlled remainder on smaller finite-packet scales, and the source note itself says the all-k rigorous tail-remainder closure remains open. Thus the finite measured subclaim is supported, but the queued two-term asymptotic theorem is conditional on that missing finite-packet remainder theorem.
 - **auditor confidence:** high
 
 ### `gauge_wilson_isotropy_boundary_note_2026-05-04`

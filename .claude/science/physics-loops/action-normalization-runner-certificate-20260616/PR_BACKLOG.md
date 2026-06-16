@@ -1,9 +1,5 @@
 # PR Backlog
 
-PR not opened yet at loop-pack creation time.
+PR opened:
 
-Expected command:
-
-```bash
-gh pr create --base main --head physics-loop/action-normalization-runner-certificate-20260616
-```
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4112

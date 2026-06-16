@@ -18,6 +18,7 @@ work_completed:
   - removed stale source docstrings that described the old null-ray/light-bending selector interpretation
   - aligned the note's expected summary to PASS=16 FAIL=0
   - refreshed the SHA-pinned runner cache through scripts/precompute_audit_runners.py
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4112
 open_imports:
   - no new framework axiom, observation, or external theorem imported by this repair
 audit_required_before_effective_status_change: true

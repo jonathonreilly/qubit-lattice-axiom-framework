@@ -15,7 +15,19 @@ Do NOT cite the numerical results, tables, or threshold values in the original c
 
 ---
 
-## What was retained
+## Boundary clarification (2026-06-16)
+
+This archived packet is historical / diagnostic and retired as evidence. It is
+not a live authority for IF/CL topology closure, dense-DAG no-go closure,
+modular/gap-controlled positives, large-`N` visibility behavior, or local
+emergence failure counts. Its safe role is planning/triage memory only: it
+records a suggested direction, not an audited program-closing result.
+
+Any future IF/CL topology claim needs explicit one-hop source notes, runners,
+and logs for the dense-uniform failure, modular-gap positive, large-`N`
+visibility caveat, and local-emergence attempts.
+
+## Historical retained-language section (retracted)
 
 The **influence-functional (IF)** formulation is still the retained
 reduced-description framework for decoherence in this repo.
@@ -29,7 +41,7 @@ What survived:
 
 The IF framework itself was **not** the bottleneck.
 
-## What closed on the old lane
+## Historical old-lane closure section (retracted)
 
 The original uniform-random / dense-connected DAG search is now cleanly
 diagnosed.
@@ -57,7 +69,7 @@ So the closed result is:
 - **the old local-architecture search on dense connected graph families is not
   the right frontier anymore**
 
-## What changed after the topology pivot
+## Historical topology-pivot section (retracted)
 
 Changing only the graph family changed the outcome.
 
@@ -86,7 +98,7 @@ So the current repo-facing claim is:
 
 - **the IF / CL route works when the topology preserves branch separation**
 
-## What remains open
+## Historical open-frontier section (planning/triage only)
 
 The remaining problem is no longer “find another bath.”
 It is:
@@ -113,7 +125,7 @@ That points to a sharper next frontier:
 That is a different class of test from the earlier connection-probability
 feedback sweeps.
 
-## Decision
+## Historical decision section (planning/triage only)
 
 Keep:
 

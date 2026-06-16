@@ -85,5 +85,6 @@ PYTHONPATH=scripts python3 scripts/frontier_action_normalization.py
 Expected summary:
 
 ```text
-PASS=42 FAIL=0
+TOTAL: PASS=42, FAIL=0
+VERDICT: CLOSED
 ```

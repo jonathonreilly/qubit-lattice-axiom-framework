@@ -1,0 +1,21 @@
+loop_slug: action-normalization-certificate-20260616
+branch: physics-loop/action-normalization-certificate-20260616
+base: origin/main
+target_claim_id: action_normalization_note
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: runner_certificate
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle_count: 1
+files_touched:
+  - docs/ACTION_NORMALIZATION_NOTE.md
+  - scripts/frontier_action_normalization.py
+  - logs/runner-cache/frontier_action_normalization.txt
+open_imports:
+  - "Independent re-audit must ratify whether the narrowed no-go can move from audited_conditional after this runner-artifact repair."
+review_disposition: pass
+next_exact_action: "Send PR to reviewer/auditor; no audit ledger edits are included."
+stop_condition: "Direct runner-artifact issue repaired and PR ready."

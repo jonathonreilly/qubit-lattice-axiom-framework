@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 949 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1427 |
+| unaudited | 1426 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1398 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1744 |
+| `unaudited` | 1743 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1666 |
 | `decoration` | 48 |
 | `meta` | 325 |
-| `no_go` | 340 |
+| `no_go` | 341 |
 | `open_gate` | 151 |
-| `positive_theorem` | 781 |
+| `positive_theorem` | 780 |
 
 | criticality | count |
 |---|---:|
@@ -1546,6 +1546,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6852,6 +6853,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Applying d log|f| = Re(df/f) to f = det M(j), Jacobi's formula gives ∂_x log|det M(j)| = Re Tr[M(j)^(-1) ∂M/∂j_x], and for M(j)=D+diag(j), ∂M/∂j_x=P_x.  _(class `A`)_
 - **chain closes:** True — The proof closes by standard finite-dimensional calculus: Jacobi's determinant formula, d log|f| = Re(df/f) for nonzero complex f, and the elementary derivative ∂(D+diag j)/∂j_x=P_x. The trace/projector identity Tr[A P_x]=A_xx is correct with the stated matrix convention.
 - **rationale:** The audited claim is narrow and finite-dimensional, with no dependence on the Record axiom or on the cited physics residuals. The displayed identities, absolute-value convention, real-part convention, projector normalization, and trace/index contraction are internally consistent. The runner performs genuine numerical sanity checks of the finite algebra rather than printing constants or importing the contested premise; it is corroborative but not needed for the proof closure.
+- **auditor confidence:** high
+
+### `flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15`
+
+- **Note:** [`FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md`](../../docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow audit of the algebraic sector-blindness of the C3 singlet|doublet max-weight-entropy selector under a gauge-uniform separable multiplicity, and its inability by itself to generate different sector r values.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-023215-d5c19589af-flavor_max_record_entropy_is`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because gauge/color enters as an identical separable multiplicity on the C3 singlet and doublet record weights, the normalized 2-sector entropy functional has the same argmax r=1/2 in every fermion sector.  _(class `A`)_
+- **chain closes:** False — The entropy maximizer and multiplicity cancellation are valid algebraic checks: equal 2-cell weights force r=1/2, and a common tensor-factor multiplicity cancels. The restricted cited authorities do not supply the needed bridge that every fermion sector uses the same gauge-uniform separable C3 record carrier; the quoted quark r values are also comparator data, not retained one-hop derivations.
+- **rationale:** The runner genuinely computes the finite algebra advertised, including the nonuniform-multiplicity control, so the core selector-blindness calculation is not a renaming. However, the source promotes that calculation to a sector-level no-go using a gauge-uniform fermion-sector tensor-factor premise that is not established by the provided generation-algebra authorities, which explicitly narrow away physical species semantics. Under the no-go gate, the clean closure is only the gauge-uniform two-sector selector route; sector-dependent record structure or weighting priors remain live as the note itself acknowledges.
+- **open / conditional deps cited:**
+  - `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`
+  - `THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`
 - **auditor confidence:** high
 
 ### `flavor_measure_positivity_agnostic_note_2026-05-31`

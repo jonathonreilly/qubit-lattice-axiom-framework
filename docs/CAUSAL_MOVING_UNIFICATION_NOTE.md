@@ -5,7 +5,7 @@
 
 ## Artifact Chain
 
-- [`archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md)
+- [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
 - [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CAUSAL_FIELD_PORTABILITY_NOTE.md)
 - [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
 - [`docs/MOVING_SOURCE_CROSS_FAMILY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MOVING_SOURCE_CROSS_FAMILY_NOTE.md)
@@ -13,18 +13,18 @@
 
 ## Question
 
-Do the retained causal propagating-field observable and the retained
+Do the live finite causal propagating-field observable and the retained
 moving-source directional observable belong to the same portable mechanism
 family, or do they only share a weaker causal-delay core?
 
 ## Comparison
 
-### Retained causal propagating-field observable
+### Live finite causal propagating-field observable
 
 The causal-field lane measures how the beam response changes when the field
 itself is restricted to a causal cone.
 
-Key retained facts:
+Key live bounded facts:
 
 - the exact-null control survives
 - the dynamic cone ratio is stable on the center family

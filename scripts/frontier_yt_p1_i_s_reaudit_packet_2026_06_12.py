@@ -11,9 +11,9 @@ packet exposes:
   * the `SU(3)` color-factor authority `C_F = 4/3`;
   * the conditional citation arithmetic `I_S in [4,10] -> P1 in
     [3.85%,9.62%]`;
-  * the full-staggered BZ candidate cache giving a framework-native scalar
-    candidate and native P1 arithmetic that can replace the supplied bracket
-    if the BZ row is independently audited clean;
+  * the corrected full-staggered BZ cache and the 2026-06-16 correction
+    surfaces that quarantine the earlier `I_S = 3.902` native-replacement
+    route;
   * explicit firewalls against treating either surface as an audit-closed
     retained value before independent review.
 """
@@ -36,6 +36,7 @@ BZ_NOTE = ROOT / "docs" / "YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18
 CANONICAL_CERT_NOTE = ROOT / "docs" / "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
 PLAQUETTE_NOTE = ROOT / "docs" / "PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
 MASTER_NOTE = ROOT / "docs" / "YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md"
+CORRECTION_NOTE = ROOT / "docs" / "YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md"
 
 SYMBOLIC_RUNNER = ROOT / "scripts" / "frontier_yt_p1_i1_lattice_pt_symbolic.py"
 COLOR_RUNNER = ROOT / "scripts" / "frontier_yt_p1_color_factor_retention.py"
@@ -46,6 +47,8 @@ SYMBOLIC_LOG = ROOT / "logs" / "retained" / "yt_p1_i1_lattice_pt_symbolic_2026-0
 COLOR_CACHE = ROOT / "logs" / "runner-cache" / "frontier_yt_p1_color_factor_retention.txt"
 CITATION_CACHE = ROOT / "logs" / "runner-cache" / "frontier_yt_p1_i_s_lattice_pt_citation.txt"
 BZ_CACHE = ROOT / "logs" / "runner-cache" / "frontier_yt_p1_bz_quadrature_full_staggered_pt.txt"
+CORRECTED_DELTA_CACHE = ROOT / "logs" / "runner-cache" / "yt_p1_delta_r_corrected_bound_memsafe.txt"
+FERMION_REGULATOR_CACHE = ROOT / "logs" / "runner-cache" / "yt_p1_fermion_regulator_verification_memsafe.txt"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -99,6 +102,7 @@ def block_1_packet_presence() -> None:
         CANONICAL_CERT_NOTE,
         PLAQUETTE_NOTE,
         MASTER_NOTE,
+        CORRECTION_NOTE,
         SYMBOLIC_RUNNER,
         COLOR_RUNNER,
         CITATION_RUNNER,
@@ -107,6 +111,8 @@ def block_1_packet_presence() -> None:
         COLOR_CACHE,
         CITATION_CACHE,
         BZ_CACHE,
+        CORRECTED_DELTA_CACHE,
+        FERMION_REGULATOR_CACHE,
     ]
     for path in required:
         check(
@@ -125,20 +131,23 @@ def block_2_source_boundary() -> None:
     note_flat = compact(note)
     check("re-audit bridge section present", "2026-06-12 restricted-packet re-audit bridge" in note)
     check("restricted packet table present", "Packet authorities exposed for re-audit" in note)
-    check("native BZ candidate section present", "What the native BZ certificate does and does not prove" in note)
+    check("native BZ quarantine section present", "Quarantine of the native BZ certificate" in note)
     check("independent audit firewall present", "Independent audit remains required" in note)
     check("no audit verdict update claimed", "does not update any audit verdict" in note_flat)
-    check("native path does not use supplied bracket as load-bearing", "supplied bracket is not load-bearing for the framework-native candidate" in note_flat)
-    check("upper end not proved", "does not prove the full supplied range" in note_flat)
-    check("native candidate replacement gate explicit", "can replace the supplied bracket on the native arithmetic path once the quadrature row itself is audited" in note_flat)
+    check("supplied bracket remains non-retained by default", "supplied bracket is not load-bearing" in note_flat)
+    check("upper end not proved", "does not prove or import the upper end" in note_flat)
+    check("obsolete native route is explicitly quarantined", "prior native-quadrature replacement route is now quarantined" in note_flat)
+    check("obsolete native cache is not a bracket replacement", "no audit should treat the obsolete `3.902` native-BZ cache as a replacement" in note_flat)
+    check("corrected native derivation gate explicit", "re-derived taste-normalized/full-doubler computation" in note_flat)
     check("master theorem not modified", "does not modify the master obstruction theorem" in note_flat)
     check("old proposed-retained marker absent from citation note", ("proposed_" + "retained") not in note)
     check("citation note remains bounded theorem", "**Claim type:** bounded_theorem" in note)
     check("citation note keeps legacy conditional arithmetic", "conditional arithmetic lemma" in note)
-    check("citation note names native arithmetic bridge", "framework-native arithmetic bridge" in note)
+    check("citation note names quarantine repair witness", "quarantine/repair witness" in note)
     check("citation note links native BZ row as markdown dependency", "](YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md)" in note)
     check("citation note links canonical alpha certificate", "](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)" in note)
     check("citation note links parent plaquette surface", "](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)" in note)
+    check("citation note links correction surface", "](YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md)" in note)
 
 
 def block_3_prior_reduction_and_color() -> None:
@@ -178,7 +187,11 @@ def block_3b_canonical_alpha_certificate() -> None:
     check("canonical certificate links plaquette parent", "](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)" in cert)
     check("canonical certificate displays alpha_LM/(4pi)", "alpha_LM/(4pi)" in cert)
     check("BZ note links canonical certificate", "](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)" in bz)
-    check("P1 note consumes canonical certificate only after audit", "canonical alpha/plaquette value certificate" in p1 and "independently audited clean" in p1)
+    check(
+        "P1 note names canonical alpha certificate",
+        "canonical arithmetic constants" in p1
+        and "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md" in p1,
+    )
 
 
 def block_4_conditional_arithmetic() -> None:
@@ -217,42 +230,50 @@ def block_4_conditional_arithmetic() -> None:
     check("central/standard revision factor is exactly 3", abs((p1_mid / p1_standard) - 3.0) < 1e-12)
 
 
-def block_5_native_bz_candidate() -> None:
+def block_5_native_bz_quarantine() -> None:
     print("\n" + "=" * 72)
-    print("BLOCK 5: native full-staggered BZ candidate")
+    print("BLOCK 5: corrected native full-staggered BZ quarantine")
     print("=" * 72)
 
     cache = text(BZ_CACHE)
     note = text(NOTE)
+    correction = text(CORRECTION_NOTE)
+    correction_flat = compact(correction)
+    corrected_delta = text(CORRECTED_DELTA_CACHE)
+    fermion_regulator = text(FERMION_REGULATOR_CACHE)
 
     i_v_scalar = require_float(r"I_v_scalar\s+= \+([0-9.]+) \+/-", cache, "I_v_scalar")
     delta_r = require_float(r"Delta_R full staggered-PT:\s+([-+0-9.]+) %", cache, "Delta_R")
-    syst_low = i_v_scalar * 0.95
-    syst_high = i_v_scalar * 1.05
+    corrected_i_s = require_float(
+        r"corrected I_S \(no /N_TASTE\) = ([0-9.]+)",
+        corrected_delta,
+        "corrected I_S",
+    )
 
-    cf = 4.0 / 3.0
-    alpha_over_4pi = CANONICAL_ALPHA_LM / (4.0 * math.pi)
-    p1_native = alpha_over_4pi * cf * i_v_scalar
-    p1_native_low = alpha_over_4pi * cf * syst_low
-    p1_native_high = alpha_over_4pi * cf * syst_high
-
-    print(f"  I_v_scalar candidate       = {i_v_scalar:.6f}")
-    print(f"  5% systematic scalar band  = [{syst_low:.6f}, {syst_high:.6f}]")
-    print(f"  P1 native candidate        = {100.0 * p1_native:.4f}%")
-    print(f"  P1 native 5% band          = [{100.0 * p1_native_low:.4f}%, {100.0 * p1_native_high:.4f}%]")
-    print(f"  Delta_R full staggered-PT  = {delta_r:.3f}%")
+    print(f"  corrected I_v_scalar cache = {i_v_scalar:.6f}")
+    print(f"  corrected Delta_R cache    = {delta_r:.3f}%")
+    print(f"  corrected scalar I_S scale = {corrected_i_s:.3f}")
 
     check("BZ cache records clean execution", "status: ok" in cache and "exit_code: 0" in cache)
-    check("BZ cache records PASS=45 FAIL=0", "SUMMARY: PASS=45  FAIL=0" in cache)
-    check("BZ cache gives I_v_scalar near 3.902", abs(i_v_scalar - 3.902) < 0.005)
-    check("5% scalar systematic overlaps I_S = 4", syst_low <= 4.0 <= syst_high)
-    check("native P1 candidate equals framework-native arithmetic bridge", abs(100.0 * p1_native - 3.754) < 0.03)
-    check("native P1 systematic band recorded", abs(100.0 * p1_native_low - 3.566) < 0.03 and abs(100.0 * p1_native_high - 3.942) < 0.03)
-    check("BZ cache gives negative Delta_R three-channel assembly", delta_r < 0.0)
-    check("note records native lower-end candidate", "I_S_native_candidate" in note and "3.902" in note)
-    check("note records native P1 central value", "3.754%" in note)
-    check("note records native P1 systematic band", "[3.566%, 3.942%]" in note)
-    check("note says native candidate removes bracket import for native path", "removes the need to import that range for the native candidate" in note)
+    check("BZ cache records PASS=44 FAIL=0", "SUMMARY: PASS=44  FAIL=0" in cache)
+    check("corrected BZ cache gives I_v_scalar near 32.435", abs(i_v_scalar - 32.435) < 0.005)
+    check("corrected BZ cache gives positive Delta_R diagnostic", delta_r > 0.0)
+    check("correction cache records clean execution", "status: ok" in corrected_delta and "exit_code: 0" in corrected_delta)
+    check("fermion regulator cache records clean execution", "status: ok" in fermion_regulator and "exit_code: 0" in fermion_regulator)
+    check("corrected scalar I_S is about 32.4, not 3.90", abs(corrected_i_s - 32.432) < 0.01)
+    check("corrected BZ cache marks old scalar bracket invalid", "corrected full-BZ = 32.435 is outside prior [3.0, 7.0]" in cache)
+    check("corrected BZ cache marks fermion channel as artifact", "not a matching constant" in cache)
+    check("correction note names /N_TASTE double-count", "/N_TASTE = 16" in correction and "double-count" in correction)
+    check("correction note records fermion regulator dependence", "IR-regulator-dependent" in correction or "regulator-dependent" in correction_flat)
+    check("corrected Delta_R cache records uncontrolled O(50%) bound", "O(50%) uncontrolled quantity" in corrected_delta)
+    check("fermion regulator cache records doubler-log disease", "15 unsubtracted doubler-logs" in fermion_regulator)
+    check("note records obsolete 3.902 quarantine", "obsolete `3.902` native-BZ cache" in note)
+    check("note records corrected scalar cache value", "corrected scalar cache value       =  32.435" in note)
+    check("note blocks P1_native arithmetic from obsolete value", "must not compute or advertise a `P1_native` number from `3.902`" in compact(note))
+    check("old native P1 central value absent", "3.754%" not in note)
+    check("old native P1 systematic band absent", "[3.566%, 3.942%]" not in note)
+    check("old native candidate variable absent", "I_S_native_candidate" not in note)
+    check("old bracket-import removal claim absent", "removes the need to import that range for the native candidate" not in note)
 
 
 def block_6_scope_firewall() -> None:
@@ -265,16 +286,16 @@ def block_6_scope_firewall() -> None:
 
     check("citation note says legacy bracket is not retained by default", "no audit should treat the bracket as retained unless the bracket itself is separately accepted" in note_flat)
     check("citation note keeps master obstruction unchanged", "Do not modify the master obstruction theorem" in note)
-    check("new bridge calls BZ surface a native candidate", "native-BZ candidate" in note or "native BZ candidate" in note)
-    check("new bridge requires separate BZ audit", "Independent audit remains required" in note)
+    check("new bridge quarantines obsolete BZ surface", "quarantined obsolete supplier" in note)
+    check("new bridge requires future native replacement audit", "Independent audit remains required" in note and "future native-BZ replacement" in note)
     check(
         "new bridge does not treat literature bracket as native authority",
         "literature bracket remains parallel context only" in note_flat,
     )
     check(
-        "bridge keeps BZ candidate under separate audit",
+        "bridge does not treat obsolete BZ candidate as retained authority",
         "Independent audit remains required" in note
-        and "native-BZ candidate or the P1 revision as retained authority" in note,
+        and "obsolete native-BZ cache as authority" in note,
     )
     check("this runner does not edit audit ledger", True, "source/cache verifier only")
 
@@ -292,7 +313,7 @@ def main() -> int:
         block_3_prior_reduction_and_color()
         block_3b_canonical_alpha_certificate()
         block_4_conditional_arithmetic()
-        block_5_native_bz_candidate()
+        block_5_native_bz_quarantine()
         block_6_scope_firewall()
     except Exception as exc:  # pragma: no cover - runner diagnostic path
         check("unexpected runner exception", False, repr(exc))
@@ -301,9 +322,10 @@ def main() -> int:
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     print("=" * 72)
     print("\nRESULT:")
-    print("  Restricted-packet re-audit bridge is complete iff FAIL=0.")
-    print("  This supports re-audit of the missing dependency edge only;")
-    print("  it does not promote the row or replace independent audit.")
+    print("  Restricted-packet quarantine bridge is complete iff FAIL=0.")
+    print("  This supports re-audit of the repaired dependency boundary only;")
+    print("  it does not promote the row, restore the obsolete native value,")
+    print("  or replace independent audit.")
 
     return 0 if FAIL_COUNT == 0 else 1
 

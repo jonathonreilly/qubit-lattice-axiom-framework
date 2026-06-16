@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 935 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1458 |
+| unaudited | 1457 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 34 |
+| ~~audited_conditional~~ | 35 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1380 |
-| `audited_conditional` | 34 |
+| `audited_conditional` | 35 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1775 |
+| `unaudited` | 1774 |
 
 | claim_type | count |
 |---|---:|
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1397 | 60.95 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
@@ -111,9 +111,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 814 | 43.67 | `audited_clean` | **retained_bounded** |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 903 | 42.32 | `unaudited` | unaudited |
-| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 987 | 41.45 | `audited_clean` | **retained_bounded** |
+| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 876 | 39.78 | `unaudited` | unaudited |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1363 | 39.41 | `audited_clean` | **retained** |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 38.66 | `unaudited` | unaudited |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 966 | 38.42 | `audited_clean` | **retained_bounded** |
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
@@ -1536,6 +1536,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `one_parameter_reduced_shell_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `scalar_trace_tensor_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -16095,6 +16096,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The three live endpoint ratios are nearest to the small rational candidates {5/6, -2, -8/9}, which then multiply to gamma_E(center)/gamma_E(shell)=15/8.  _(class `G`)_
 - **chain closes:** False — The algebra closes once the three rational legs are granted. The derivation does not close because the load-bearing identification of those legs, especially gamma_T(center)/gamma_E(center)=-8/9, is a nearest-rational match to live endpoint data rather than a first-principles Route-2 derivation.
 - **rationale:** The runner computes live endpoint ratios, scans a bounded low-rational grammar, and verifies that the nearest candidates are {5/6, -2, -8/9}; that is class G numerical matching, not a derivation from retained tensor machinery. The downstream multiplication to 15/8, r_E=21/4, and D_E=21/8 is exact conditional algebra. The cited retained no-go explicitly says the third leg -8/9 is equivalent to the missing E-center readout primitive and is not forced by the restricted Route-2 carrier class.
+- **auditor confidence:** high
+
+### `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`
+
+- **Note:** [`QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded representation-theoretic no-go: on the supplied retained-bounded hw=1 S3 generation carrier, S3-equivariant Hermitian Ward endomorphisms cannot split three generation eigenvalues, and generation-basis diagonal equivariant readouts are scalar.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-004740-f0658193a9-quark_generation_equivariant`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the three-point S3 permutation representation on the hw=1 triplet, every S3-equivariant Ward endomorphism lies in the commutant W = aI + bJ, giving one A1 eigenvalue a+3b and a doubly-degenerate E eigenvalue a.  _(class `A`)_
+- **chain closes:** True — The mathematical chain closes from the supplied hw=1 S3 carrier plus standard finite-group commutant algebra, without using quark masses, CKM data, or hidden projectors. The only blocker to a clean as-written verdict is a stale verification pass-count artifact, not a missing representation-theoretic step.
+- **rationale:** The load-bearing algebra is correct: the S3 action is 2-transitive on generation labels, so the commutant has diagonal/off-diagonal orbit form aI+bJ and therefore only an A1/E two-level spectrum. The no-go discipline check supports only this bounded route closure, not an absolute Lane 3 or quark-Yukawa no-go; the note leaves C3, oriented, readout, and symmetry-breaking primitives open. However the source Verification block expects TOTAL: PASS=44 while the supplied cached runner and runner source produce TOTAL: PASS=46, so the packet is quantitatively stale as written. Repair target: sync the expected runner certificate with the current runner output, then re-audit for clean bounded closure.
 - **auditor confidence:** high
 
 ### `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28`

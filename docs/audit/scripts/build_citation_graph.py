@@ -4,7 +4,7 @@
 Walks every .md file under docs/ (excluding docs/audit/), extracts:
   - claim_id (stable, derived from path)
   - title (first H1)
-  - optional Type: hint for auditor-owned claim_type
+  - optional Claim type: hint for auditor-owned claim_type
   - optional legacy Status-line migration hint for claim_type backfill
   - cited authorities (markdown links to other .md files in docs/)
   - primary runner script path
@@ -51,8 +51,12 @@ LEGACY_STATUS_LINE_RE = re.compile(
     r"^\s*(?:\*\*Status:?\*\*|Status:)\s*(.+)$",
     re.IGNORECASE | re.MULTILINE,
 )
+CLAIM_TYPE_LINE_RE = re.compile(
+    r"^\s*(?:\*\*Claim type:?\*\*|Claim type:)\s*(.+)$",
+    re.IGNORECASE | re.MULTILINE,
+)
 TYPE_LINE_RE = re.compile(
-    r"^\s*(?:\*\*(?:Type|Claim type):?\*\*|(?:Type|Claim type):)\s*(.+)$",
+    r"^\s*(?:\*\*Type:?\*\*|Type:)\s*(.+)$",
     re.IGNORECASE | re.MULTILINE,
 )
 CLAIM_TYPES = {
@@ -195,7 +199,7 @@ def normalize_claim_type(raw: str | None) -> str | None:
 
 
 def extract_claim_type_hint(body: str) -> tuple[str | None, str | None]:
-    m = TYPE_LINE_RE.search(body)
+    m = CLAIM_TYPE_LINE_RE.search(body) or TYPE_LINE_RE.search(body)
     if not m:
         return None, None
     raw = m.group(1).strip()

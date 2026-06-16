@@ -11,7 +11,7 @@ or `scripts/`.
   - license
 - `requirements.txt`
   - minimal environment dependency pin
-- `toy_event_physics.py`
+- `toy_event_physics.py` (top-level Python legacy artifact)
   - large legacy implementation artifact; not the primary navigation entrypoint
 - `ARCHITECTURE_OPTIONS.md`
   - historical architecture planning note

@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/frontier_radial_shell_matching_law.py
+runner_sha256: 0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+Radial shell matching law from exact sewing-shell source
+========================================================================
+exact local O_h family: Q=2.52683051, Q_rad=2.52683051, Q_aniso=3.747e-16, radial exterior max_rel=0.1124, rms_rel=0.0320, aniso_norm=4.1128e-03
+exact finite-rank family: Q=9.53220124, Q_rad=9.53220124, Q_aniso=-2.554e-15, radial exterior max_rel=0.1184, rms_rel=0.0321, aniso_norm=1.6094e-02
+[EXACT] PASS: the local O_h shell-radial source carries the full total charge
+    Q=2.52683051, Q_rad=2.52683051, Q_aniso=3.747e-16
+[EXACT] PASS: the finite-rank shell-radial source carries the full total charge
+    Q=9.53220124, Q_rad=9.53220124, Q_aniso=-2.554e-15
+[BOUNDED] PASS: the local O_h exterior is well approximated by the radial shell law
+    max_rel=0.1124, rms_rel=0.0320
+[BOUNDED] PASS: the finite-rank exterior is well approximated by the radial shell law
+    max_rel=0.1184, rms_rel=0.0321
+[BOUNDED] PASS: the radial shell law is uniformly robust across both exact source families
+    O_h max/rms=(0.1124, 0.0320), finite-rank max/rms=(0.1184, 0.0321)
+
+========================================================================
+SUMMARY
+========================================================================
+PASS=5 FAIL=0 TOTAL=5
+All checks passed.
+
+----- stderr -----
+

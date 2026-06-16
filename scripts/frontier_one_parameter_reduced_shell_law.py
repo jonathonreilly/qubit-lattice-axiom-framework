@@ -21,9 +21,13 @@ Bounded content:
 from __future__ import annotations
 
 from dataclasses import dataclass
-from _frontier_loader import load_frontier
 
 import numpy as np
+import frontier_coarse_grained_exterior_law as coarse
+import frontier_radial_shell_matching_law as rad
+import frontier_same_source_metric_ansatz_scan as same_source
+import frontier_sewing_shell_source as sew
+import frontier_star_shell_projector as star
 
 
 @dataclass
@@ -43,13 +47,6 @@ def record(name: str, ok: bool, detail: str, status: str = "EXACT") -> None:
     print(f"[{status}] {tag}: {name}")
     if detail:
         print(f"    {detail}")
-
-
-star = load_frontier("star_shell_projector", "frontier_star_shell_projector.py")
-same_source = load_frontier("same_source_metric", "frontier_same_source_metric_ansatz_scan.py")
-coarse = load_frontier("coarse_grained", "frontier_coarse_grained_exterior_law.py")
-sew = load_frontier("sewing_shell", "frontier_sewing_shell_source.py")
-rad = load_frontier("radial_shell", "frontier_radial_shell_matching_law.py")
 
 
 ACTIVE_ORBITS = [

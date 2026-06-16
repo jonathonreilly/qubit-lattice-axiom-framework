@@ -3,7 +3,7 @@
 **Date:** 2026-04-13 (2026-05-18: claim_scope formalized as conditional
 bounded witness on the imported reduced-shell surface per audit
 verdict boundary instruction; 2026-06-16: audit-packet helper-source
-repair recorded, with no status promotion)
+repair and source/cache packet recorded, with no status promotion)
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 tightening):** the load-bearing content
 of this note is **a conditional bounded witness on the imported
@@ -29,6 +29,8 @@ partially answered by the umbrella wrapper from PR #1520, but the
 wrapper itself is bounded, not retained.
 **Status authority:** independent audit lane only.
 **Script:** `scripts/frontier_one_parameter_reduced_shell_law.py`
+**Helper source/cache packet:** `scripts/one_parameter_shell_helper_packet_2026_06_16.py`
+**Helper packet cache:** `logs/runner-cache/one_parameter_shell_helper_packet_2026_06_16.txt`
 **Status:** Exact reduced-shell theorem plus bounded shell-stress interpretation
 
 ## Purpose
@@ -146,7 +148,7 @@ linearity-from-identical-normalized-columns argument plus the two
 exact source-family checks at cutoff `R = 4`.
 
 The runner `scripts/frontier_one_parameter_reduced_shell_law.py`
-imports five frontier helper modules via `_frontier_loader.load_frontier`:
+imports five frontier helper modules as static Python imports:
 
 - `frontier_star_shell_projector.py` — exterior projector and
   shell-mean operator.
@@ -160,6 +162,12 @@ imports five frontier helper modules via `_frontier_loader.load_frontier`:
   cutoff `R = 4`.
 - `frontier_radial_shell_matching_law.py` — radial shell kernel
   `k_rad` and the radial-shell average operator.
+
+The helper packet runner
+`scripts/one_parameter_shell_helper_packet_2026_06_16.py` checks that
+the five helper source files exist, expose the functions consumed by the
+primary runner, have fresh runner caches under `logs/runner-cache/`,
+exit cleanly, and report passing output.
 
 None of these helper modules currently has a dedicated retained
 audit-clean source note registered as a one-hop authority for this row.
@@ -206,24 +214,27 @@ substantive observation that the runner produces six classified A-class
 PASS lines (plus one B-class summary) on the reduced shell calculation,
 but the load-bearing operators — exterior projector, lattice Laplacian
 encoded in the Green solve, source-family constructors, and the radial
-DtN shell kernel — are imported from frontier modules that the
-restricted packet does not certify as audit-clean retained authorities.
+DtN shell kernel — are imported from frontier modules that were not yet
+visible as a complete source/cache packet and still are not certified as
+audit-clean retained authorities.
 The audit's repair target is either (a) wire those modules to retained
 authority notes, or (b) recognize that no retained authority currently
 exists, in which case the gap is a real `missing_bridge_theorem`. The
-explicit registration above implements path (a) by listing the five
-helper modules as open registration targets rather than asserting any
-already-retained authority. Effective status remains
-`audited_conditional`. The note's audit_status is unchanged by this
-addendum.
+explicit registration and helper packet above make the source/cache
+evidence inspectable while preserving the open authority question. The
+note's audit status remains independent-audit owned and is unchanged by
+this addendum.
 
 ## Scope of this rigorization
 
-This rigorization is class D (gap registration). It does not change any
-algebraic content, runner output, or load-bearing step classification.
-It registers the five frontier helper modules as open one-hop
-dependency targets matching the audit verdict's named missing
-dependency edges. Mirrors the live cite-chain pattern used by the
+This rigorization is class D (gap registration and packet repair). It
+does not change any algebraic content or load-bearing step
+classification. The primary runner output remains `PASS=7 FAIL=0`; the
+runner source now names the helper modules by static import and the
+helper packet adds source/cache freshness checks. This records the five
+frontier helper modules as open one-hop dependency targets matching the
+audit verdict's named missing dependency edges. Mirrors the live
+cite-chain pattern used by the
 `DM_NEUTRINO_SCHUR_SUPPRESSION_THEOREM_NOTE_2026-04-15.md` cluster
 (commit `02ad4fadd`).
 
@@ -235,11 +246,11 @@ the audit packet dependency resolver exposed only `_frontier_loader.py`
 for this runner, so the restricted packet still treated the five
 frontier helper modules as opaque dynamic imports.
 
-The resolver now parses `_frontier_loader.load_frontier(..., "*.py")`
-calls directly. For this row, the generated packet map
-`docs/audit/data/audit_packet_script_deps.json` now exposes the helper
-source chain used by
-`scripts/frontier_one_parameter_reduced_shell_law.py`, including:
+The resolver repair exposed the helper source chain for dynamic loader
+calls. This source/cache packet repair makes the same helper surface
+explicit in `scripts/frontier_one_parameter_reduced_shell_law.py` by
+static imports and adds fresh caches for the helper runners. For this
+row, the inspectable helper source chain includes:
 
 - `scripts/frontier_star_shell_projector.py`
 - `scripts/frontier_same_source_metric_ansatz_scan.py`

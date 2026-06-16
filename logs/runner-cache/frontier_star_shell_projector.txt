@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/frontier_star_shell_projector.py
+runner_sha256: 843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.16
+status: ok
+----- stdout -----
+Exact shell projector for star-supported sources
+========================================================================
+
+Star-support Green shell profiles:
+  source (0, 0, 0): max shell-profile diff from center = 0.000e+00
+  source (1, 0, 0): max shell-profile diff from center = 1.388e-17
+  source (-1, 0, 0): max shell-profile diff from center = 5.204e-18
+  source (0, 1, 0): max shell-profile diff from center = 6.939e-18
+  source (0, -1, 0): max shell-profile diff from center = 6.939e-18
+  source (0, 0, 1): max shell-profile diff from center = 1.041e-17
+  source (0, 0, -1): max shell-profile diff from center = 2.776e-17
+[EXACT] PASS: all seven star-support point Green functions share the same shell-mean profile
+    max basis shell-profile difference=2.776e-17
+
+Exact source families:
+  exact local O_h family: Q=2.52683051, max shell mismatch vs Q*K = 6.939e-17
+  exact finite-rank family: Q=9.53220124, max shell mismatch vs Q*K = 1.110e-16
+[EXACT] PASS: the exact local O_h family shell-averages are fixed exactly by total charge
+    max |<phi> - Q*K|=6.939e-17
+[EXACT] PASS: the broader exact finite-rank family shell-averages are fixed exactly by total charge
+    max |<phi> - Q*K|=1.110e-16
+[EXACT] PASS: the local O_h radial harmonic coefficient is fixed by the universal shell kernel
+    a(field)=0.06891296, a(Q*K)=0.06891296
+[EXACT] PASS: the finite-rank radial harmonic coefficient is fixed by the universal shell kernel
+    a(field)=0.25996685, a(Q*K)=0.25996685
+[BOUNDED] PASS: the charge-fixed shell kernel reproduces the same vacuum-close exterior for the local O_h family
+    direct=7.171e-04, coarse=4.560e-06, improvement=157.3x
+[BOUNDED] PASS: the charge-fixed shell kernel reproduces the same vacuum-close exterior for the finite-rank family
+    direct=2.793e-02, coarse=1.188e-05, improvement=2351.7x
+
+========================================================================
+SUMMARY
+========================================================================
+PASS=7 FAIL=0 TOTAL=7
+All checks passed.
+
+----- stderr -----
+

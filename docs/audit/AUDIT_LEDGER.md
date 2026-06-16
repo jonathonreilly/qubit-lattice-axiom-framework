@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 950 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1424 |
+| unaudited | 1423 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1399 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1741 |
+| `unaudited` | 1740 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 509 |
-| `medium` | 904 |
-| `leaf` | 1365 |
+| `medium` | 906 |
+| `leaf` | 1363 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -101,9 +101,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1009 | 64.48 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1397 | 60.95 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
@@ -111,9 +111,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 814 | 43.67 | `audited_clean` | **retained_bounded** |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 903 | 42.32 | `unaudited` | unaudited |
-| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
+| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 987 | 41.45 | `audited_clean` | **retained_bounded** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 876 | 39.78 | `unaudited` | unaudited |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1363 | 39.41 | `audited_clean` | **retained** |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 38.66 | `unaudited` | unaudited |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 966 | 38.42 | `audited_clean` | **retained_bounded** |
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
@@ -1552,6 +1552,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -7679,6 +7680,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the bounded replay, the runner constructs the graph families, propagates amplitudes under the explicit S = L(1-f) rule, normalizes detector probabilities, and computes the table entries rather than printing constants. The conclusion closes only for the finite parameter and architecture suite shown, not as a Gate B dynamics theorem.
 - **rationale:** The runner source implements the load-bearing computation directly from the stated finite setup: positions, connectivity, field, barrier, propagation, detector probabilities, mass-window gain, and local scaling fit. The source note's tables match the completed runner output, and no helper runner or cited authority is missing from the load-bearing numerical path. The note also keeps the scope bounded by explicitly denying Gate B closure and universal F~M constants.
 - **auditor confidence:** medium
+
+### `gate_b_dynamics_note`
+
+- **Note:** [`GATE_B_DYNAMICS_NOTE.md`](../../docs/GATE_B_DYNAMICS_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited docs/GATE_B_DYNAMICS_NOTE.md as a bounded generated-geometry source index/open gate over the supplied I_GateB packet and primary connectivity-tolerance replay, not as a Gate B dynamics or physical-gravity theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-024334-ca011a175f-gate_b_dynamics_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The load-bearing claim is only conditional on I_GateB: the named frozen runners compute sign, local F~M, distance-law, and non-gravity companion readouts for the declared rows, without promoting GB-S1/GB-S2/GB-S3 to retained premises.  _(class `B`)_
+- **chain closes:** False — The primary runner genuinely computes the connectivity-tolerance rows and checks the source-boundary wording, and the cited authorities support bounded finite-harness statements. The restricted packet does not derive the valley-linear source/action rule, propagation/readout semantics, or generated-connectivity rule from retained primitives.
+- **rationale:** Issue: the source note's positive numerical statements are explicitly conditional on the supplied I_GateB packet. Why this blocks: GB-S1, GB-S2, and GB-S3 are not derived or approved by the restricted packet, so the harness cannot establish framework-native Gate B dynamics or a physical gravity/readout bridge. Repair target: derive or explicitly admit the source/action, propagation/readout, and generated-connectivity rules before re-auditing as a dynamics theorem. Claim boundary until fixed: the row remains a bounded source index with useful generated-geometry diagnostics.
+- **auditor confidence:** high
 
 ### `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17`
 

@@ -28,6 +28,14 @@ import frontier_coarse_grained_exterior_law as coarse
 import frontier_same_source_metric_ansatz_scan as same_source
 import frontier_tensorial_einstein_regge_completion as tcomp
 
+
+# These are static imports on purpose. The audit packet can inspect ordinary
+# import edges, while the previous _frontier_loader dynamic imports made the
+# load-bearing scalar functional, probe-family, and Einstein-residual helpers
+# opaque in restricted helper-runner review.
+_LOAD_BEARING_HELPERS = (tcomp, same_source, coarse)
+
+
 @dataclass
 class Check:
     name: str

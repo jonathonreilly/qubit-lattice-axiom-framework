@@ -144,7 +144,9 @@ beyond the current scalar shell data.
 
 The companion runner `scripts/frontier_scalar_trace_tensor_nogo.py`
 loads its scalar boundary functional, probe families, and Einstein
-residual computations from three upstream modules as static Python imports:
+residual computations from three upstream modules as ordinary static
+Python imports, so the restricted audit helper packet can inspect the
+load-bearing source edges:
 
 | Imported module | Role in the no-go witness | Wrapper note |
 |---|---|---|
@@ -194,6 +196,14 @@ the construction of the scalar functional, the probe families, and the Einstein
 residual computation directly in the runner. The 2026-06-16 source/cache
 packet implements the source/cache path; independent re-audit must decide
 whether that is sufficient for the row's effective status.
+
+The re-audit packet also includes cached outputs for the helper runners
+where they are executable:
+
+- `logs/runner-cache/frontier_tensorial_einstein_regge_completion.txt`
+- `logs/runner-cache/frontier_same_source_metric_ansatz_scan.txt`
+- `logs/runner-cache/frontier_coarse_grained_exterior_law.txt`
+- `logs/runner-cache/frontier_scalar_trace_tensor_nogo.txt`
 
 ## Boundaries
 

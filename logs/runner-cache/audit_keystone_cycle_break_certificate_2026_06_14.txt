@@ -1,0 +1,12 @@
+PASS: graph is a DAG (zero non-trivial dependency cycles)
+PASS: spurious pointer edge ABSENT: axiom_first_lattice_noether_theore.. -> staggered_dirac_realization_gate_n..
+PASS: spurious pointer edge ABSENT: axiom_first_single_clock_codimensi.. -> single_clock_axis_selection_from_r..
+PASS: spurious pointer edge ABSENT: hierarchy_alpha_lm_magnitude_delta.. -> hierarchy_delta0_blocking_single_m..
+PASS: spurious pointer edge ABSENT: hierarchy_alpha_lm_magnitude_delta.. -> hierarchy_delta0_ratio_normalized_..
+PASS: spurious pointer edge ABSENT: hierarchy_alpha_lm_magnitude_delta.. -> hierarchy_delta0_s1prime_taste_reg..
+PASS: spurious pointer edge ABSENT: hierarchy_alpha_lm_magnitude_delta.. -> hierarchy_delta0_b4_attachment_obs..
+PASS: real synthesis dep PRESENT: staggered_dirac_realization_ga.. -> staggered_dirac_physical_species_d..
+PASS: real synthesis dep PRESENT: staggered_dirac_realization_ga.. -> staggered_dirac_substep4_labeling_..
+PASS: gate node still present in graph
+
+TOTAL: PASS=10 FAIL=0

@@ -2,7 +2,8 @@
 
 **Date:** 2026-04-14 (2026-05-18: claim_scope formalized as conditional
 diagnostic on the imported `O_h` and finite-rank classes per audit
-verdict boundary instruction).
+verdict boundary instruction; 2026-06-16: source/cache packet repair for
+the three load-bearing helper modules).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing content
 of this note is **a valid conditional diagnostic** ruling out scalar-
@@ -22,6 +23,8 @@ is partially answered by the helper-note wrappers added in PR #1520;
 making the no-go itself retained-grade requires those helper-note
 wrappers to themselves be retained, which remains separate open work.
 **Script:** `scripts/frontier_scalar_trace_tensor_nogo.py`
+**Helper source/cache packet:** `scripts/scalar_trace_tensor_helper_packet_2026_06_16.py`
+**Helper packet cache:** `logs/runner-cache/scalar_trace_tensor_helper_packet_2026_06_16.txt`
 **Status:** exact scalar-data degeneracy plus bounded tensor-channel witness
 
 **Status authority and audit hygiene (2026-05-10):**
@@ -30,13 +33,11 @@ algebraic implication itself is sound — a map that factors only through
 identical scalar boundary data cannot distinguish completions whose
 tensorial Einstein channels differ — but the runner delegates the
 construction of the boundary functional, the probe families, and the
-Einstein-residual computation to upstream `_frontier_loader` modules
-that are not listed here as cited authorities. Until the upstream
-modules listed in "Imported authorities" below are individually
-registered as audited dependencies, the no-go remains conditional on
-those imports being correct. Audit verdict and effective status are
-set by the independent audit lane only; nothing in this rigorization
-edit promotes status.
+Einstein-residual computation to upstream helper modules. The
+2026-06-16 repair makes those helper modules static imports and adds a
+source/cache packet runner for their current source files and cached outputs.
+Audit verdict and effective status are set by the independent audit lane only;
+nothing in this rigorization edit promotes status.
 
 ## Purpose
 
@@ -143,8 +144,7 @@ beyond the current scalar shell data.
 
 The companion runner `scripts/frontier_scalar_trace_tensor_nogo.py`
 loads its scalar boundary functional, probe families, and Einstein
-residual computations from three upstream modules via
-`_frontier_loader.load_frontier(...)`:
+residual computations from three upstream modules as static Python imports:
 
 | Imported module | Role in the no-go witness | Wrapper note |
 |---|---|---|
@@ -160,16 +160,40 @@ character of those wrappers, not a defect in the algebraic argument.
 Promoting any helper wrapper itself to a stronger upstream tier is a
 separate audit-lane question.
 
+## 2026-06-16 source/cache packet repair
+
+The primary no-go runner now exposes the three load-bearing helper modules as
+static imports rather than dynamic `_frontier_loader` imports:
+
+```python
+import frontier_tensorial_einstein_regge_completion as tcomp
+import frontier_same_source_metric_ansatz_scan as same_source
+import frontier_coarse_grained_exterior_law as coarse
+```
+
+The helper packet runner
+`scripts/scalar_trace_tensor_helper_packet_2026_06_16.py` checks:
+
+- the three helper source files exist and expose the exact functions consumed
+  by the no-go runner;
+- the helper caches in `logs/runner-cache/` are present, SHA-fresh, exit
+  cleanly, and contain passing output;
+- the primary no-go runner contains the three static imports above.
+
+This repairs the runner-packet artifact issue by making source and cache
+evidence explicit. It does not set an audit verdict and does not broaden the
+no-go beyond the stated scalar-functional/probe-family surface.
+
 ## Audit-aware repair path
 
 Per `audit_ledger.json`, `notes_for_re_audit_if_any` for
 `scalar_trace_tensor_no_go_note`: the cheapest path to a stronger audit
 verdict is to attach retained-grade cited notes for the three modules
-listed above, or to inline the construction of the scalar functional,
-the probe families, and the Einstein residual computation directly in
-the runner so it derives them from the accepted axiom rather than
-loading them. Either path makes the no-go self-contained from the
-axiom alone; the current note is conditional on those imports.
+listed above, include their full load-bearing source/cache packet, or inline
+the construction of the scalar functional, the probe families, and the Einstein
+residual computation directly in the runner. The 2026-06-16 source/cache
+packet implements the source/cache path; independent re-audit must decide
+whether that is sufficient for the row's effective status.
 
 ## Boundaries
 

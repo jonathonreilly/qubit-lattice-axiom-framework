@@ -1,0 +1,22 @@
+loop_slug: scalar-trace-helper-packet-20260616
+date: 2026-06-16
+mode: source_side_repair
+base_ref: origin/main
+base_commit: ba46f7843d538e48b25d2de109d58125e82269cc
+branch: physics-loop/scalar-trace-helper-packet-20260616
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4049
+target_claim_id: scalar_trace_tensor_no_go_note
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+blocker_text: "runner_artifact_issue: include full load-bearing source and cached outputs for scripts/frontier_tensorial_einstein_regge_completion.py, scripts/frontier_same_source_metric_ansatz_scan.py, and scripts/frontier_coarse_grained_exterior_law.py, or inline the scalar functional, probe-family, and Einstein-residual constructions directly in the no-go runner."
+work_completed:
+  - rebuilt the PR branch from current origin/main
+  - kept only source/cache/loop-pack files; removed stale audit and front-door diffs
+  - made the primary no-go runner use static imports for the three helper modules
+  - added a helper packet runner and cache that check source presence, function surface, SHA-fresh caches, clean exits, and PASS output
+open_imports:
+  - helper constructions are source/cache-certified for re-audit but not derived from framework axioms here
+audit_required_before_effective_status_change: true
+next_exact_action: "Reviewer should inspect PR #4049; independent audit should decide whether the source/cache packet satisfies the scalar-trace conditional blocker."
+stop_condition: "Stop this block after PR #4049 is source-only, cache-fresh, and pushed."

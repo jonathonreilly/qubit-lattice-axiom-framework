@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 940 |
+| **retained_bounded** | 941 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1443 |
+| unaudited | 1442 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1387 |
+| `audited_clean` | 1388 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1760 |
+| `unaudited` | 1759 |
 
 | claim_type | count |
 |---|---:|
@@ -819,6 +819,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_taste_cube_cyclic_source_descent_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_three_measures_three_observables_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_transport_gap_constant_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11790,6 +11791,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For real eigenvalues, Q(V) = (3a²+6|b|²)/(Σ|λ_k|)² and Σ|λ_k| ≥ Σλ_k = 3a, with equality exactly when no eigenvalue is negative; at r=1/2 this makes Q(S)=2/3 while Q(V) varies with θ once a sign flip occurs.  _(class `A`)_
 - **chain closes:** True — The displayed identities follow from the C3 root-of-unity/trigonometric sums, real-spectrum numerator equality |λ_k|²=λ_k², and the triangle inequality for the denominator. The r=1/2 specialization is explicitly a hypothesis, and the exact sample angles independently establish nonconstancy of Q(V).
 - **rationale:** The claim is a genuine algebraic closure over the restricted packet with no load-bearing cited authority or external comparator. Independent formula checking confirms the factors 3a, 3a²+6|b|², Q(S)=(1+2r)/3, the r=1/2 value 2/3, the closed equality window including θ=π/12, and the one-negative denominator 3a−2λ_min. The runner source actually computes the symbolic identities and exact samples rather than merely printing constants, and its PASS=30/FAIL=0 is consistent with the note.
+- **auditor confidence:** high
+
+### `koide_taste_cube_cyclic_source_descent_note_2026-04-18`
+
+- **Note:** [`KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C^8 taste-cube descent under the specified C_3[111] cycle: compression of the full average to T_1 equals T_1 cyclic averaging, the canonical orbit channels reduce to B0,B1,B2, and U-covariant Schur-compatible Hermitian responses factor through (r0,r1,r2); no physical lepton readout, microscopic source law, or Koide selector is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-013840-cac5a7f148-koide_taste_cube_cyclic_sour`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because T_1 is invariant under U, P_1 commutes with U and P_1 A_8(X) P_1 = A_3(P_1 X P_1) for every full-cube operator X; Schur covariance then keeps S(M) in the C-commutant.  _(class `A`)_
+- **chain closes:** True — The group-average identity follows from T_1 and W being invariant under U, so P_1 commutes with U and the compressed conjugation action is C. For a U-covariant block parent with invertible D, block covariance gives C(A-BD^{-1}B†)C^{-1}=A-BD^{-1}B†, and the Hermitian C-commutant has the stated real basis with trace norms 3,6,6.
+- **rationale:** The load-bearing mathematics is finite-dimensional algebra over structures defined in the packet, not a physical bridge or a fitted comparator. Independent orbit/commutant checks confirm the displayed signs and normalizations: Q0,Qf,Qb compress to I,C,C^2, B2=i(C-C^2) is Hermitian, and the reconstruction coefficients r0/3,r1/6,r2/6 follow from real trace norms 3,6,6. The runner source reconstructs the cycle, projector, matrix units, orbit channels, and Schur/factorization tests rather than importing another note; its random numeric Schur checks are illustrative, while the general step is supplied by the block-covariance argument. No cited authority or approved primitive is load-bearing, and the note explicitly scopes out the microscopic source law, selector, and physical readout.
 - **auditor confidence:** high
 
 ### `koide_three_measures_three_observables_note_2026-05-31`

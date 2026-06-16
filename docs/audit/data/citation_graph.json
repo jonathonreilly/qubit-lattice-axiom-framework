@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_records_objectivity_conditional_note_2026-05-31"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_taste_cube_cyclic_source_descent_note_2026-04-18"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su3_dabc_symmetric_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_records_objectivity_conditional_note_2026-05-31",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
         "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
         "post_record_measure_weight_normalization_subdivision_2026-06-06",
         "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
         "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
         "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
-        "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
+        "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
+        "su3_dabc_symmetric_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b2010ed602debce92458446afc2be6c33bbd423205a9ada0a4ae5b94904be3b9",
+      "note_hash": "cc5c42e97d1b87bd95059e8250f1ec7c1c62645ad9dce332f96831923d75df06",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

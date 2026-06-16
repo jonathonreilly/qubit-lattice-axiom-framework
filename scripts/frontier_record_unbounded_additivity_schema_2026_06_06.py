@@ -22,6 +22,8 @@ PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md"
+MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+HISTORY_MONOID = ROOT / "docs" / "RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -88,6 +90,8 @@ def main() -> int:
     print("reachability_to_target: supports")
     print("proposal_allowed: false")
     print("audit_required_before_effective_retained: true")
+    print("dependency_repair: minimal_axioms + record_history_monoid_unbounded_retention_2026-06-05")
+    print("retained_upgrade_blocked_until_history_monoid_audited: true")
     print()
 
     print("A. finite Record additivity checks")
@@ -140,7 +144,8 @@ def main() -> int:
     print("\nD. audit-lane classifier consequences")
     gate_status = {
         "fixed_finite_prefix": "exact",
-        "arbitrary_finite_prefix_schema": "conditional_on_nonzero_disjoint_records",
+        "arbitrary_finite_prefix_schema": "requires_record_history_monoid_and_nonzero_record_atom",
+        "record_history_monoid_parent": "external_dependency",
         "production_kernel": "open",
         "probability_law": "open",
         "iid_typicality": "open",
@@ -148,22 +153,48 @@ def main() -> int:
         "dial_selection": "open",
     }
     check("fixed finite prefix additivity is exact", gate_status["fixed_finite_prefix"] == "exact")
-    check("unbounded schema is not a production claim", gate_status["arbitrary_finite_prefix_schema"] == "conditional_on_nonzero_disjoint_records")
+    check(
+        "unbounded schema carries monoid dependency",
+        gate_status["arbitrary_finite_prefix_schema"] == "requires_record_history_monoid_and_nonzero_record_atom",
+    )
+    check("record-history monoid remains a separate dependency", gate_status["record_history_monoid_parent"] == "external_dependency")
+    check("unbounded schema is not a production claim", gate_status["production_kernel"] == "open")
     check("production kernel remains open", gate_status["production_kernel"] == "open")
     check("probability law remains open", gate_status["probability_law"] == "open")
     check("IID typicality remains open", gate_status["iid_typicality"] == "open")
     check("clock/rate remains open", gate_status["clock_rate"] == "open")
     check("dial selection remains open", gate_status["dial_selection"] == "open")
 
-    print("\nE. supplied-record premise firewall")
+    print("\nE. dependency-edge and supplied-context firewall")
     note = NOTE.read_text(encoding="utf-8")
+    minimal = MINIMAL_AXIOMS.read_text(encoding="utf-8")
+    history_monoid = HISTORY_MONOID.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
+    minimal_flat = " ".join(minimal.split())
+    history_flat = " ".join(history_monoid.split())
     check("source note states open_gate / conditional-support status", "**Claim type:** open_gate" in note and "actual_current_surface_status: conditional-support" in note)
     check("source note has post-audit claim-type repair", "2026-06-16 Post-Audit Claim-Type Repair" in note)
-    check("source note has supplied-record premise firewall", "2026-06-15 Supplied-Record Premise Firewall" in note)
-    check("downstream citation rule is explicit", "conditional_on_supplied_nonzero_disjoint_records_and_readout_context" in note)
-    check("source note says Record does not supply producer/readout/unbounded availability", "does not supply the producer" in note_flat and "availability of arbitrarily many nonzero records" in note_flat)
+    check("source note has dependency-edge firewall", "Dependency-Edge Repair And Supplied-Context Firewall" in note)
+    check("source note cites current minimal axiom memo", "MINIMAL_AXIOMS_2026-06-05.md" in note)
+    check("source note cites record-history monoid parent", "RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md" in note)
+    check("downstream citation rule is explicit", "requires_supplied_readout_context_and_record_history_monoid_support" in note)
+    check("minimal Record language supplies durable realized outcome", "A record is the durable registration of the realized outcome." in minimal)
+    check(
+        "minimal Record language withholds readout context and dynamics",
+        "A record supplies no readout context" in minimal_flat and "measurement/decoherence dynamics" in minimal_flat,
+    )
+    check(
+        "history monoid supplies arbitrary finite Z^3 slots",
+        "For every finite `N`" in history_flat and "Z^3" in history_flat,
+    )
+    check(
+        "history monoid does not claim record-production dynamics",
+        "Does not derive record-production dynamics" in history_flat
+        and "not a proof that physical record-production dynamics will realize every finite length" in history_flat,
+    )
+    check("source note says Record does not supply producer/readout/probability", "does not supply the producer" in note_flat and "probability weights" in note_flat)
     check("source note says Record does not supply normalization/lower-bound bridge", "unit normalization or a positive lower bound" in note_flat)
+    check("history parent must be independently audited", "must be independently audited" in note_flat)
     check("downstream retained-authority firewall is explicit", "must not cite this row as retained authority" in note_flat)
 
     print()
@@ -171,9 +202,10 @@ def main() -> int:
     if PASS > 0 and FAIL == 0:
         print(
             "VERDICT: Record finite additivity gives exact finite-prefix "
-            "readout and a conditional unbounded finite-collection schema. "
-            "The unbounded lift needs supplied nonzero disjoint records; it "
-            "does not derive production, probability, IID, rates, or a dial."
+            "readout. With record-history monoid support, the unbounded "
+            "finite-prefix schema is available after a readout context "
+            "supplies a nonzero realized record atom. This runner does not "
+            "derive production, probability, IID, rates, or a dial."
         )
         return 0
     print("VERDICT: record unbounded-additivity schema failed; do not use this artifact.")

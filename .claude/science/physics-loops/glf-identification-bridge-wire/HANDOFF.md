@@ -5,6 +5,8 @@
 This block wires the existing GL(F) identification bridge decomposition into
 the parent Berezin/RP reconstruction packet.
 
+Review PR: <https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4119>
+
 The repaired parent now states:
 
 - carrier, parity, and dictionary clauses are handled by the sibling bridge

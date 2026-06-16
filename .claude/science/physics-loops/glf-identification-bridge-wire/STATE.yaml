@@ -20,6 +20,6 @@ no_go_routes:
   - "Do not claim the physical matter functional is derived by this parent repair."
   - "Do not promote the parent row; audit remains the status authority."
 review_findings: "Local self-review: source-graph bridge wire-up only; no generated audit outputs touched."
-pr_status: pending
-next_exact_action: "Run checks, commit, push, and open reviewer PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4119"
+next_exact_action: "Reviewer extracts science; auditor re-evaluates the parent row with the identification bridge explicit."
 stop_condition: "Stop this block after PR creation; pivot if campaign continues."

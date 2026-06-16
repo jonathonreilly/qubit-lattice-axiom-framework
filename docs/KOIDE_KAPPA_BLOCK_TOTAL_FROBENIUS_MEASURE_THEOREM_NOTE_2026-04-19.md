@@ -20,7 +20,11 @@ for turning this bounded support into an unbounded closure route. The
 result proved here is narrower: if the scalar lane is carried by the
 block-total Frobenius slots `(E_+, E_perp)`, then the equal-weight
 extremum gives `kappa = 2`, and the finite `d = 3` multiplicity scan is
-framework-native.
+framework-native. The follow-up
+[`KOIDE_RECORD_DIAL_BOUNDARY_NOTE_2026-06-16.md`](KOIDE_RECORD_DIAL_BOUNDARY_NOTE_2026-06-16.md)
+sharpens the residue: Record finite additivity and `SO(2)` phase erasure
+leave the `dim^s` sector-weight position open. They do not select the
+block-count endpoint without an independent weighting rule.
 
 **Primary runner:** [`scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py`](../scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py)
 
@@ -310,6 +314,15 @@ The PDG line is printed as a comparator and does not increment PASS.
   — block democracy equivalent to MRU via block-total energies.
 - `docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`
   — operator-space lift of `sigma = 1/2`.
+- `docs/KOIDE_RECORD_DIAL_BOUNDARY_NOTE_2026-06-16.md`
+  — exact boundary showing that Record finite additivity plus `SO(2)`
+  phase erasure leaves the sector-weight position `s` open.
+- `docs/GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md`
+  — source-side dial theorem `r(s) = 2^(s-1)` with block-count and
+  dimension endpoints.
+- `docs/CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md`
+  — source-side synthesis identifying the remaining value as the
+  block-count vs dimension counting bit.
 
 ---
 
@@ -335,3 +348,6 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [koide_moment_ratio_uniformity_theorem_note_2026-04-19](KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)
 - [koide_mru_weight_class_obstruction_theorem_note_2026-04-19](KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
+- [koide_record_dial_boundary_note_2026-06-16](KOIDE_RECORD_DIAL_BOUNDARY_NOTE_2026-06-16.md)
+- [generation_weight_dial_structure_2026-06-05](GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md)
+- [charged_lepton_value_reduces_to_one_counting_bit_synthesis_note_2026-06-05](CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md)

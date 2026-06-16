@@ -1,0 +1,19 @@
+loop_slug: koide-record-dial-boundary-20260616
+objective: "Unlock the Koide block-total Frobenius audit lane with source-side science only."
+target_status: best-honest-status
+actual_current_surface_status: exact-support
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: record_so2_dial_boundary
+files_touched:
+  - docs/KOIDE_RECORD_DIAL_BOUNDARY_NOTE_2026-06-16.md
+  - docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md
+  - scripts/frontier_koide_record_dial_boundary_2026_06_16.py
+  - logs/runner-cache/frontier_koide_record_dial_boundary_2026_06_16.txt
+open_imports:
+  - "Physical endpoint selector s remains open."
+  - "No new weighting axiom is introduced."
+no_go_routes:
+  - "SO(2) quotient plus Record finite additivity alone does not select block-count."
+next_exact_action: "Hand PR to reviewer; independent audit may decide whether the parent row is now bounded/exact-support rather than conditional."
+stop_condition: "One coherent source-side repair block completed and PR opened."

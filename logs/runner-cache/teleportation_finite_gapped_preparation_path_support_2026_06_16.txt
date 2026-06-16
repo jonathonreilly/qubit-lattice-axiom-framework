@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/teleportation_finite_gapped_preparation_path_support_2026_06_16.py
+runner_sha256: 761e1a175e5c1b206b95623775de2d82b1d9abc2380a492f9913ec45f2450986
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+Teleportation finite preparation-path bounded-support runner
+Status: sampled finite-surface support only; independent audit grades.
+
+=== 1d_N8_last_taste_path ===
+[PASS] 1d_N8_last_taste_path: null Hamiltonian Hermitian
+[PASS] 1d_N8_last_taste_path: interaction Hamiltonian Hermitian
+[PASS] 1d_N8_last_taste_path: H(G=0) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=0 positive -- gap=0.585786437627
+[PASS] 1d_N8_last_taste_path: H(G=1e-06) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=1e-06 positive -- gap=0.585786224239
+[PASS] 1d_N8_last_taste_path: H(G=0.001) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=0.001 positive -- gap=0.585573117946
+[PASS] 1d_N8_last_taste_path: H(G=0.01) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=0.01 positive -- gap=0.583659415031
+[PASS] 1d_N8_last_taste_path: H(G=0.1) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=0.1 positive -- gap=0.565127543548
+[PASS] 1d_N8_last_taste_path: H(G=1) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=1 positive -- gap=0.432159008358
+[PASS] 1d_N8_last_taste_path: H(G=3) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=3 positive -- gap=0.321860601255
+[PASS] 1d_N8_last_taste_path: H(G=10) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=10 positive -- gap=0.263471706298
+[PASS] 1d_N8_last_taste_path: H(G=30) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=30 positive -- gap=0.227705569608
+[PASS] 1d_N8_last_taste_path: H(G=100) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=100 positive -- gap=0.145961376249
+[PASS] 1d_N8_last_taste_path: H(G=300) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=300 positive -- gap=0.0603042105246
+[PASS] 1d_N8_last_taste_path: H(G=600) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=600 positive -- gap=0.0309578258582
+[PASS] 1d_N8_last_taste_path: H(G=1000) equals affine path
+[PASS] 1d_N8_last_taste_path: sampled ground gap at G=1000 positive -- gap=0.0186832278321
+[PASS] 1d_N8_last_taste_path: minimum sampled gap clears finite-support floor -- min_gap=0.0186832278321 at G=1000
+[PASS] 1d_N8_last_taste_path: null endpoint is not a high-fidelity traced Bell resource -- Bell=0.5
+[PASS] 1d_N8_last_taste_path: target endpoint is a high-fidelity traced Bell resource -- Bell=0.997963462171
+[PASS] 1d_N8_last_taste_path: target endpoint has positive logical negativity -- negativity=0.497963462171
+[PASS] 1d_N8_last_taste_path: target endpoint has high ideal teleportation mean fidelity -- mean=0.998633169681
+
+=== 2d_4x4_last_taste_path ===
+[PASS] 2d_4x4_last_taste_path: null Hamiltonian Hermitian
+[PASS] 2d_4x4_last_taste_path: interaction Hamiltonian Hermitian
+[PASS] 2d_4x4_last_taste_path: H(G=0) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=0 positive -- gap=2
+[PASS] 2d_4x4_last_taste_path: H(G=1e-06) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=1e-06 positive -- gap=1.99999996875
+[PASS] 2d_4x4_last_taste_path: H(G=0.001) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=0.001 positive -- gap=1.99996875101
+[PASS] 2d_4x4_last_taste_path: H(G=0.01) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=0.01 positive -- gap=1.99968760055
+[PASS] 2d_4x4_last_taste_path: H(G=0.1) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=0.1 positive -- gap=1.9968850255
+[PASS] 2d_4x4_last_taste_path: H(G=1) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=1 positive -- gap=1.96972399843
+[PASS] 2d_4x4_last_taste_path: H(G=3) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=3 positive -- gap=1.91448732181
+[PASS] 2d_4x4_last_taste_path: H(G=10) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=10 positive -- gap=1.76265987118
+[PASS] 2d_4x4_last_taste_path: H(G=30) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=30 positive -- gap=1.50438732694
+[PASS] 2d_4x4_last_taste_path: H(G=100) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=100 positive -- gap=1.09792480073
+[PASS] 2d_4x4_last_taste_path: H(G=300) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=300 positive -- gap=0.647207715793
+[PASS] 2d_4x4_last_taste_path: H(G=600) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=600 positive -- gap=0.387587607406
+[PASS] 2d_4x4_last_taste_path: H(G=1000) equals affine path
+[PASS] 2d_4x4_last_taste_path: sampled ground gap at G=1000 positive -- gap=0.246378016628
+[PASS] 2d_4x4_last_taste_path: minimum sampled gap clears finite-support floor -- min_gap=0.246378016628 at G=1000
+[PASS] 2d_4x4_last_taste_path: null endpoint is not a high-fidelity traced Bell resource -- Bell=0.5
+[PASS] 2d_4x4_last_taste_path: target endpoint is a high-fidelity traced Bell resource -- Bell=0.970283099736
+[PASS] 2d_4x4_last_taste_path: target endpoint has positive logical negativity -- negativity=0.470283099736
+[PASS] 2d_4x4_last_taste_path: target endpoint has high ideal teleportation mean fidelity -- mean=0.980738307895
+
+[PASS] new support note contains firewall snippet: actual_current_surface_status: bounded-support
+[PASS] new support note contains firewall snippet: not a deterministic physical resource theorem
+[PASS] new support note contains firewall snippet: audit_required_before_effective_retained: true
+[PASS] new support note contains firewall snippet: No new axiom, primitive, approved premise, or apparatus theorem is introduced
+[PASS] new support note contains firewall snippet: sampled finite-surface support
+[PASS] new support note avoids bare status line `Status: retained`
+[PASS] new support note avoids bare status line `**Status:** retained`
+[PASS] new support note avoids bare status line `Status: promoted`
+[PASS] parent note records 2026-06-16 finite preparation-path support
+[PASS] parent note keeps apparatus/readout blocker open
+
+Sampled path summary
+  1d_N8_last_taste_path: n_sites=8, min_sampled_gap=0.0186832278321 at G=1000, ||W||_2=0.65625, target_Bell=0.997963462171, target_Ftel_mean=0.998633169681
+  2d_4x4_last_taste_path: n_sites=16, min_sampled_gap=0.246378016628 at G=1000, ||W||_2=0.268229166667, target_Bell=0.970283099736, target_Ftel_mean=0.980738307895
+
+TOTAL: PASS=76 FAIL=0
+VERDICT: bounded finite preparation-path support passes; physical apparatus/readout remains open.
+
+----- stderr -----
+

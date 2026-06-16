@@ -170,6 +170,34 @@ authorities. This row therefore remains a source-side open gate with a
 concrete bridge path, not a retained teleportation theorem and not an audit
 verdict.
 
+## 2026-06-16 Finite Preparation-Path Support
+
+The finite-resource side now has one additional bounded-support artifact:
+[`TELEPORTATION_FINITE_GAPPED_PREPARATION_PATH_SUPPORT_NOTE_2026-06-16.md`](TELEPORTATION_FINITE_GAPPED_PREPARATION_PATH_SUPPORT_NOTE_2026-06-16.md)
+and runner
+`scripts/teleportation_finite_gapped_preparation_path_support_2026_06_16.py`.
+
+That support runner checks, on the same `1D N=8` and `2D 4x4` audited
+surfaces, that the Poisson/CHSH two-particle Hamiltonian is an exactly affine
+finite path
+
+```text
+H(G) = H(0) + G W,  0 <= G <= 1000,
+```
+
+and that the sampled path grid has a positive finite ground-state gap while
+the `G=1000` endpoint remains the high-fidelity traced retained-axis Bell
+resource. This narrows the "offline diagonalization only" part of the blocker:
+the resource endpoint is not just an isolated diagonalization, but lies at the
+end of an explicit finite Hamiltonian path with sampled positive gap evidence.
+
+This does not close physical detector/readout, native apparatus dynamics,
+durable record formation, an analytic all-`G` gap lower bound, or any
+continuum/infinite-volume preparation theorem. The row therefore remains an
+open gate for a physical deterministic resource. The new artifact is bounded
+preparation-path support only; it introduces no new axiom, primitive,
+approved premise, or retained-grade proposal.
+
 ## Script
 
 New runner:

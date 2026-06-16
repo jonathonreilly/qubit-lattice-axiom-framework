@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py
+runner_sha256: e8253ce005303b7f4521a9f685328ca3f8b36a308040acaf0206288ed95d5203
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.23
+status: ok
+----- stdout -----
+single-clock KMS/APBC axis-supplier no-go
+========================================================================
+PASS: SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md contains 'KMS/APBC cannot discharge B-AXIS'
+PASS: SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md contains 'APBC on a supplied circle is axis-covariant'
+PASS: SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md contains 'Does not alter the axiom count'
+PASS: SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md contains 'actual_current_surface_status: no-go'
+PASS: SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md contains 'Five scoped routes were checked'
+PASS: SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md contains 'context only, not as a proof dependency'
+PASS: KMS note starts from supplied RP transfer
+PASS: KMS note names a supplied Euclidean time block
+PASS: KMS note APBC is already time-labelled
+PASS: scope note keeps N2 explicit
+PASS: scope note keeps N4 explicit
+PASS: scope note keeps N5 explicit
+PASS: prior axis no-go identifies BC-asymmetry pin
+PASS: spin/Berezin note is algebraic after generators are supplied
+PASS: W is orthogonal -- resid=0.00e+00
+PASS: periodic staggered surface is W-invariant -- resid=0.00e+00
+PASS: APBC on supplied tau transports exactly to APBC on supplied x1 -- resid=0.00e+00
+PASS: APBC(tau)/PBC(x1) breaks W only as a supplied asymmetric datum -- resid=16
+PASS: APBC on both exchanged axes restores W -- resid=0.00e+00
+PASS: tau-APBC removes the periodic zero-kernel witness on this block -- kernel_dim=0
+PASS: PBC surface keeps a zero-kernel witness on this block -- kernel_dim=16
+PASS: APBC cyclic shift has C^4=-I on a supplied circle
+PASS: PBC cyclic shift has C^4=I on a supplied circle
+PASS: APBC cyclic shift has C^6=-I on a supplied circle
+PASS: PBC cyclic shift has C^6=I on a supplied circle
+
+SUMMARY: PASS=25 FAIL=0
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+B_AXIS_DERIVED=FALSE
+BC_ASYMMETRY_SUPPLIED_BY_KMS_APBC=FALSE
+
+----- stderr -----
+

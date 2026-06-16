@@ -1,0 +1,25 @@
+loop_slug: hierarchy-d4-density-readout-bridge-20260616
+target_status: bounded-support
+active_route: fixed_positive_D4_density_coefficient_to_scale_map
+current_branch: physics-loop/hierarchy-d4-density-readout-bridge-20260616
+base_commit: 6a6c3db6375774f3243ae3d202938686f01a6c30
+status: review_pr_open
+cycle_count: 1
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_status_change: true
+files_touched:
+  - docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md
+  - docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md
+  - scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py
+  - scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py
+  - scripts/frontier_hierarchy_dimensional_compression.py
+  - logs/runner-cache/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.txt
+  - logs/runner-cache/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.txt
+  - logs/runner-cache/frontier_hierarchy_dimensional_compression.txt
+hard_residual: physical electroweak order-parameter/readout identification for the fixed D4 density map
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4133
+next_exact_action: reviewer/auditor evaluates the bridge PR; next science target is the physical electroweak order-parameter/readout theorem

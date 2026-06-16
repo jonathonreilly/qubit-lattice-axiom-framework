@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py
+runner_sha256: 79dbe31097b8fc9cd1416cf6dfebe44bd3f3336c5190c56e8466551a61b8deaf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+Hierarchy D=4 density-scale readout bridge verifier
+Status authority: independent audit lane only.
+No observed target value, fitted coefficient, textbook import, or new axiom is load-bearing.
+
+==============================================================================
+Fixed positive D=4 density algebra
+==============================================================================
+rho=5.000000; A_ref=2.000000; A_new=7.000000
+v_new/v_ref=0.731110445709025; (A_ref/A_new)^(1/4)=0.731110445709025
+PASS: fixed-density equation gives inverse fourth-root coefficient placement
+PASS: reference endpoint normalizes exactly to one
+PASS: larger coefficient gives downward scale compression
+      ratio=0.731110445709025
+PASS: smaller coefficient gives upward scale rescaling
+      ratio=1.189207115002721
+
+==============================================================================
+Exact endpoint applications
+==============================================================================
+A_2/A_4 = 7/8
+v_4/v_2 = (7/8)^(1/4) = 0.967168210133835
+direct fourth root (A_4/A_2)^(1/4) = 1.033946307914341
+PASS: L_t=4 endpoint uses inverse placement (7/8)^(1/4), not direct root
+PASS: L_t=4 exact base is the endpoint coefficient ratio A_2/A_4=7/8
+A_inf/A_2 = 2/sqrt(3) = 1.154700538379252
+v_inf/v_2 = (A_inf/A_2)^(-1/4) = 0.964678629960309
+PASS: temporal-average scalar endpoint has the same inverse-fourth-root placement
+PASS: temporal-average scalar endpoint compresses downward relative to L_t=2
+
+==============================================================================
+Dependency status checks
+==============================================================================
+PASS: dependency hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10 is retained-grade in live ledger
+      effective_status=retained
+PASS: dependency hierarchy_effective_potential_endpoint_note is retained-grade in live ledger
+      effective_status=retained_bounded
+PASS: dependency scalar_3plus1_temporal_ratio_note is retained-grade in live ledger
+      effective_status=retained
+
+==============================================================================
+Source boundary hygiene
+==============================================================================
+PASS: bridge note states theorem, boundary, dependencies, and expected scorecard
+      missing=[]; present_forbidden=[]
+PASS: parent dimensional-compression note wires bridge as source-side support but keeps physical VEV premise open
+
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -51473,10 +51473,6 @@
       "to": "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
     },
     {
-      "from": "repo.front_door_status",
-      "to": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
-    },
-    {
       "from": "repo.repo_organization",
       "to": "key_terminology"
     },
@@ -98961,11 +98957,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [
-        "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "ffb4d626e260f5ceb545241ebceb6f1320c59eb4f118cbdf69d52d029c0ebb9a",
+      "note_hash": "9e9bb9825a31205620c96ade5eed5f72ab5042129bf8fabe743a6fcec0caa204",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113449,6 +113443,7 @@
     "register_not_read_scope_correction_panel_verdict_2026-06-06",
     "reopened_lane_checklist",
     "replay_environment_note",
+    "repo.front_door_status",
     "repo.python_venv_setup",
     "repo_active_review_queue_note_2026-05-17",
     "repo_submission_consolidation_plan_2026-04-12",
@@ -113745,10 +113740,10 @@
       "open_gate": 170,
       "positive_theorem": 612
     },
-    "edge_count": 12968,
-    "leaf_count": 1112,
+    "edge_count": 12967,
+    "leaf_count": 1113,
     "node_count": 3453,
-    "root_count": 1066,
+    "root_count": 1067,
     "runners_with_path": 3039
   }
 }

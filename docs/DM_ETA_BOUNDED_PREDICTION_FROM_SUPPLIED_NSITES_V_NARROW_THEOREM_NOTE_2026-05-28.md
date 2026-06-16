@@ -54,6 +54,18 @@ Kolb-Turner prefactor, and P7 Sommerfeld/dark-coupling route remain
 supplied on this row. This repair does not close `(C2.eta)` and does not
 change any audit status.
 
+## 2026-06-16 BBN coefficient precision repair
+
+This source-side repair reconciles the P3 BBN coefficient convention in the
+note and runner. The local packet states
+`Omega_b h^2 = 3.6515e-3 * eta_10`, so the executable denominator now uses
+`3.6515e-3 * 1e10 = 3.6515e7` rather than the older rounded `3.65e7`
+audit-companion display. The rounded bounded band remains
+`[5.25e-10, 8.11e-10]`; the central value remains `6.38e-10` to the
+shown precision, with the precise central deviation updated from `+4.22%`
+to `+4.18%`. This is a coefficient-convention reconciliation only and does
+not change the admitted-premise boundary.
+
 ## 2026-06-07 Source-Boundary and Rounding Repair
 
 This repair makes the admission boundary executable in the source note. The
@@ -103,7 +115,7 @@ eta_pred in [5.25 x 10^-10,  8.11 x 10^-10]
 with central value
 
 ```text
-eta_pred(central) = 6.38 x 10^-10           (+4.22% vs eta_obs)
+eta_pred(central) = 6.38 x 10^-10           (+4.18% vs eta_obs)
 ```
 
 at the central point `(x_F = 25, S_vis/S_dark = 1.59, alpha_X = alpha_LM)`.
@@ -120,8 +132,9 @@ C   = K * x_F / (sqrt(g_*) * M_Pl * pi * alpha_X^2 * R * 3.6515e-3 * 1e10)
 with `m_DM = N_sites * v = 16 * v ~ 3940 GeV ~ 3.94 TeV`. The numerical
 factor `3.6515e-3 * 1e10` is the textbook BBN identity
 `Omega_b h^2 = 3.6515e-3 * eta_10` (per P3 below) re-expressed in
-`eta`-units; equivalently `3.65e7 * eta` as written in the audit-companion
-authority (P1).
+`eta`-units. The older audit-companion authority (P1) writes the rounded
+`3.65e7` display; this source row and runner use the precise local P3
+factor `3.6515e7`.
 
 This is a conditional support proof-walk that composes the cited algebraic
 ingredients under the local input packet into a bounded numerical band on
@@ -175,7 +188,7 @@ This row proves: **if** the retained `R_base = 31/9` and the retained
 structural ratio identity are composed with the local packet
 `P1`-`P7`, **then**
 `eta_pred in [5.25e-10, 8.11e-10]` brackets `eta_obs = 6.12e-10` at the
-central point `eta_pred(central) = 6.38e-10 (+4.22%)`. It does not
+central point `eta_pred(central) = 6.38e-10 (+4.18%)`. It does not
 claim to derive the remaining supplied entries `P1`, `P2`, `P3`, `P4`,
 `P6`, or `P7` from `Cl(3)` on `Z^3`.
 
@@ -227,15 +240,15 @@ Substituting into (M0):
 
 ```text
 C(central)
-  = (1.07e9 * 25) / (sqrt(106.75) * 1.2209e19 * pi * 0.09067^2 * 5.4767 * 3.65e7)
-  = 4.108e-17 GeV^-2.
+  = (1.07e9 * 25) / (sqrt(106.75) * 1.2209e19 * pi * 0.09067^2 * 5.4767 * 3.6515e7)
+  = 4.106e-17 GeV^-2.
 
 m_DM         = N_sites * v = 16 * 246.282818290129 GeV = 3940.5 GeV
 m_DM^2       = 1.553e7 GeV^2
 
 eta_pred(central) = C(central) * m_DM^2
-                  = 4.108e-17 * 1.553e7
-                  ~ 6.38e-10                # +4.22% vs eta_obs.
+                  = 4.106e-17 * 1.553e7
+                  ~ 6.38e-10                # +4.18% vs eta_obs.
 ```
 
 ## Bounded band over the supplied (x_F, S_vis/S_dark) rectangle
@@ -245,14 +258,14 @@ varying `(x_F, S_vis/S_dark)` over `[22, 28] x [1.4, 1.7]`:
 
 | `(x_F, S_vis/S_dark)` | `eta_pred` | dev vs `eta_obs` |
 |---|---:|---:|
-| (22, 1.7) — low-x_F / high-S | 5.25e-10 | -14.21% |
-| (22, 1.59) | 5.61e-10 | -8.29% |
-| (22, 1.4) | 6.38e-10 | +4.22% |
-| (25, 1.7) | 5.97e-10 | -2.52% |
-| **(25, 1.59) — central** | **6.38e-10** | **+4.22%** |
-| (25, 1.4) | 7.24e-10 | +18.36% |
-| (28, 1.59) | 7.14e-10 | +16.73% |
-| (28, 1.4) — high-x_F / low-S | 8.11e-10 | +32.6% |
+| (22, 1.7) — low-x_F / high-S | 5.25e-10 | -14.26% |
+| (22, 1.59) | 5.61e-10 | -8.32% |
+| (22, 1.4) | 6.37e-10 | +4.12% |
+| (25, 1.7) | 5.96e-10 | -2.56% |
+| **(25, 1.59) — central** | **6.38e-10** | **+4.18%** |
+| (25, 1.4) | 7.24e-10 | +18.32% |
+| (28, 1.59) | 7.14e-10 | +16.68% |
+| (28, 1.4) — high-x_F / low-S | 8.11e-10 | +32.51% |
 
 The direct fixed-`alpha_X = alpha_LM` bounded band on the supplied
 rectangle is
@@ -451,7 +464,7 @@ floating-point arithmetic elsewhere:
   `(x_F = 25, S_vis/S_dark = 1.59, alpha_X = alpha_LM)`;
 - the bounded band `eta_pred in [5.25e-10, 8.11e-10]` over
   `(x_F, S_vis/S_dark) in [22, 28] x [1.4, 1.7]`;
-- the central deviation `+4.22%` vs `eta_obs = 6.12e-10`;
+- the central deviation `+4.18%` vs `eta_obs = 6.12e-10`;
 - the falsifiable single-mass prediction `m_DM ~ 3.94 TeV`;
 - that the cross-check structural decomposition recorded in
   `ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md` is consistent
@@ -465,7 +478,7 @@ Expected:
 
 ```text
 TOTAL: PASS=89 FAIL=0
-VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
+VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.18% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
 ```
 
 ## Audit dependency repair links

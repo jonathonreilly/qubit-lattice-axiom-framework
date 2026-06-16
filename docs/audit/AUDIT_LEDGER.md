@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 957 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1405 |
+| unaudited | 1404 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 57 |
+| ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1408 |
-| `audited_conditional` | 57 |
+| `audited_conditional` | 58 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1722 |
+| `unaudited` | 1721 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 898 |
-| `leaf` | 1372 |
+| `medium` | 897 |
+| `leaf` | 1373 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -1589,6 +1589,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -18736,6 +18737,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Phi_alpha(p)-u=(1-alpha)(p-u), so for 0<alpha<1 the supplied equal-letter target u=(1/2,1/2) is a stationary attracting fixed point, and substituting s=0 in the supplied dial gives r=1/2 and Q=2/3.  _(class `A`)_
 - **chain closes:** True — The affine contraction identity follows by direct subtraction, and 0<alpha<1 gives attraction. Substitution into pi_s, r(s), and Q(s) gives (1/2,1/2), 1/2, and 2/3 at s=0, with the table's s=1 entries also checking algebraically.
 - **rationale:** The audited claim is deliberately bounded to stability under a supplied affine reset map and a supplied dial parametrization, not selection of that map or a physical dial value. Independent algebra confirms the contraction, stationarity, and displayed dial substitutions without using the runner implementation path. The runner contains many documentation and sibling-note string checks, but the source note's load-bearing mathematical claim closes from the displayed definitions and standard algebra.
+- **auditor confidence:** high
+
+### `stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite-dimensional single-fiber tick plus fresh-ancilla registration stack: its record covariance transcribes the tick band with O(eps^4) frequency protection, O(eps^2) damping deficit, and an overdamped infrared window, without deriving that realized physical stacks are of this class.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-040025-9d5c7027f9-stack_spectral_transcription`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The registered-sector transfer is exactly M(eps)=R(omega)·diag(1,cos 2 eps), giving r=sqrt(cos 2 eps) and cos(omega_eps)=cos(omega)(1+cos 2 eps)/(2 sqrt(cos 2 eps)).  _(class `A`)_
+- **chain closes:** False — The algebraic theorem closes for the explicitly constructed model. The broader chain does not close because the realized-stack-to-broadcast-registration identification remains the named record-production-dynamics residual, and one cited record-principle authority is meta/unaudited rather than retained-grade.
+- **rationale:** Independent algebra checks agree with the runner on the displacement identity, dephasing channel, eigenvalue formula, vanishing eps^2 term in g(eps), and omega_c(eps)~eps^2 window. The runner source performs actual finite-dimensional Pauli/register computations rather than printing constants or importing external comparators. The verdict is nevertheless conditional because the note’s physical use still depends on the open record-production-dynamics bridge that the realized stack is this class, and it cites the meta RECORD outcome-principle proposal as part of that residual framing.
+- **open / conditional deps cited:**
+  - `RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `staggered_3d_self_gravity_sign_note_2026-04-11`

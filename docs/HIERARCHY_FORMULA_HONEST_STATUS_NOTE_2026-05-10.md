@@ -3,7 +3,7 @@
 **Date:** 2026-05-10 (originally, as the package-level honest-status
 packet); 2026-06-11 (theorem/boundary-input restructure — see changelog
 below); 2026-06-15 (audit-unblock boundary sharpening — see changelog
-below)
+below); 2026-06-16 (B3 kinetic-substrate split — see changelog below)
 **Claim type:** bounded_theorem
 **Claim scope:** one load-bearing structural-support theorem (T1), one
 declared candidate-map appendix (D1), one bounded numeric readout
@@ -42,10 +42,40 @@ not set or predict an audit outcome.
 — recomputes T1 from local algebra (symbol zero set, eta-phase staggered
 operator on the `2^4` block in exact Fraction arithmetic, bracketed
 eta/zeta series), checks D1/C1 readout algebra with sensitivity and
-anti-tuning certificates and four falsification legs, self-scans the
-parent note and its own source for overclaim/back-propagation tokens,
-and quarantines all PDG comparators in a terminal class-D section.
+anti-tuning certificates and four falsification legs, checks the
+`kinetic_isotropy_primitive` B3a source split, self-scans the parent
+note and its own source for overclaim/back-propagation tokens, and
+quarantines all PDG comparators in a terminal class-D section.
 Deterministic, stdlib-only, well under one minute.
+
+## Changelog — B3 kinetic-substrate split (2026-06-16)
+
+The 2026-06-15 boundary sharpening left B3 as one combined
+"substrate/regulator selection" gate. The later framework surface now has a
+more precise authority split: the approved
+[`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+supplies the OS0 kinetic-form fact that the emergent tick is grained on
+the same footing as a spatial edge (`c_t = c_s`), equivalently that the
+Euclidean loop block is hypercubic in form. This is a registered
+framework primitive in `docs/audit/data/axiom_premise_nodes.json`, so it
+chain-satisfies as a premise and does not bound downstream rows.
+
+This repair therefore splits B3:
+
+- **B3a, kinetic substrate:** closed to the primitive's exact scope only:
+  the four-direction kinetic-form surface is allowed as a framework
+  graining premise. This adds no fourth spatial dimension, no new
+  dynamics, no mass/coupling/readout selector, and no observable
+  identification.
+- **B3b, regulator/species realization:** still open for hierarchy-formula
+  closure. The exponent `16` remains the naive/staggered four-direction
+  species surface, constrained by the retained regulator-dependence no-go
+  and by the still separately audited staggered-Dirac realization gate.
+
+B4 is unchanged and remains open: the determinant supplies `u_0^16`;
+the source of the `alpha_LM^16` coupling-power transport is still the
+B4 attachment-observable problem. This edit does not claim an EW VEV
+prediction, formula closure, or an audit verdict.
 
 ## Changelog — audit-unblock boundary sharpening (2026-06-15)
 
@@ -61,10 +91,11 @@ discarding the useful science:
    support for the hierarchy lane, not a proof of the physical
    hierarchy formula by itself.
 2. **B3 and B4 are formula-closure gates, not authorities.** The
-   staggered/naive four-direction substrate choice and the
-   `u_0^16 -> alpha_LM^16` transport remain open residuals. The note no
-   longer asks audit to accept them as declared load-bearing premises
-   for the theorem row.
+   four-direction kinetic substrate is now split off as B3a and sourced
+   to the later `kinetic_isotropy_primitive`; the regulator/species
+   realization part of B3 and the `u_0^16 -> alpha_LM^16` transport
+   remain open residuals. The note no longer asks audit to accept them
+   as declared load-bearing premises for the theorem row.
 3. **D1/C1 stay fenced.** The candidate map and the `246.282818... GeV`
    readout remain useful bounded appendices over declared inputs, but
    they are not proposed as EW-VEV prediction, B3/B4 closure, or a
@@ -213,25 +244,38 @@ by this note.
   change C1's audit grade. This note does not derive
   `M_Pl`; elasticity `+1`: every relative shift in `M_Pl` passes
   through to `v_cand` unchanged. This was P1 of the 2026-05-10 packet.
-- **B3 (open substrate/regulator selection; regulator-conditional exponent).**
-  The exponent is `N = 16 = 2^4`, the naive-operator Brillouin-zone
-  corner species count on the four-direction (`Z^3 + t`) surface,
-  proven exactly by the retained parent narrow theorem
+- **B3 (split kinetic substrate / regulator-species selection).**
+  **B3a, kinetic substrate:** the four-direction Euclidean regulator
+  form is now sourced to the approved
+  [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md):
+  the emergent tick is grained on the same footing as a spatial edge
+  (`c_t = c_s`), equivalently the OS0 loop block is hypercubic in
+  kinetic form. This primitive supplies only that structural graining
+  ratio. It does not supply a regulator, species identity, coupling,
+  readout bridge, dynamics, physical time metric, or observable
+  identification.
+
+  **B3b, regulator/species realization:** the exponent is
+  `N = 16 = 2^4`, the naive-operator Brillouin-zone corner species count
+  on the four-direction (`Z^3 + tau`) kinetic surface, proven exactly by
+  the retained parent narrow theorem
   [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md)
   and recomputed by the runner. Per the standing no-go
   [`HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md),
   the species-count/exponent identification is regulator-dependent
   (Wilson 1, twisted-mass 2, staggered after Kawamoto-Smit 4,
   domain-wall 1, overlap 1 — same SM continuum limit by Symanzik
-  improvement), so `N = 16` holds only on the substrate-imposed naive
-  reading; the substrate selection is owned by the open staggered-Dirac
-  realization gate (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`,
-  file-pointer context). The no-go is consumed here as a
-  boundary-narrowing citation only: it constrains what B3 may claim, it
-  supports no positive step of T1. This declaration subsumes P2 of the
-  2026-05-10 packet (the four-direction surface is the
-  Wick-rotated reading; the framework's spatial substrate is `Z^3`, and
-  the runner computes the `d = 3` count `8` as a falsification leg).
+  improvement), so `N = 16` is not a regulator-independent theorem.
+  The positive hierarchy use still needs the hierarchy-specific
+  regulator/species realization surface; the staggered-Dirac realization
+  gate (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`,
+  file-pointer context) remains the named source gate. The no-go is
+  consumed here as a boundary-narrowing citation only: it constrains
+  what B3b may claim, it supports no positive formula-closure step of
+  T1. This declaration subsumes P2 of the 2026-05-10 packet: the
+  four-direction kinetic-form surface is now sourced by B3a, while the
+  runner still computes the `d = 3` spatial-only count `8` as a
+  falsification leg for any attempt to omit the tick direction.
 - **B4 (open coupling-power transport gate).** The minimal-block
   determinant carries `u_0^16` (T1.ii; recomputed). The formula's
   suppression is `alpha_LM^16 = alpha_bare^16 u_0^(-16)` (identity (S),
@@ -315,7 +359,8 @@ formula-closure gates rather than accepted authorities:
 | --- | --- | --- | --- |
 | S1 | `<P> = 0.5934`, `u_0`, `alpha_bare = 1/(4 pi)`, `alpha_LM` | licensed boundary input | [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) reuse license (B1) |
 | S2 | `2^d` species; `16` at `d = 4`; staircase `(1,4,6,4,1)` | (C) recomputed from the symbol zero set | [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md) + runner |
-| S3 | regulator-conditionality of the exponent (boundary narrowing only) | open formula-closure gate (B3) | [`HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) |
+| S3a | four-direction kinetic-form substrate (`c_t = c_s`, OS0 hypercubic form) | approved framework primitive; no dimensionless dynamical content | [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) |
+| S3b | regulator-conditionality of the exponent (boundary narrowing only) | open formula-closure gate (B3b) | [`HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) |
 | S4 | `det(u_0 D + m) = (m^2 + 4 u_0^2)^8`; `u_0`-degree `16` at `m = 0` | (C) first-principles compute on the minimal block | this note + registered runner (exact arithmetic) |
 | S5 | `(7/8)^(1/4) = g(4)` exact | (A) exact algebra + bracketed series | [`HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md) + runner |
 | S6 | `K = 2.017224e-17`; identity (S); sensitivity algebra | (A) exact/verified arithmetic over B1 | this note + registered runner |
@@ -323,11 +368,12 @@ formula-closure gates rather than accepted authorities:
 | S8 | `v_cand = 246.282818290129 GeV` | (A) exact arithmetic over B1/B2 | corollary C1 below |
 | S9 | comparison to PDG `v_obs` | (D) fenced comparator | comparator appendix only; never load-bearing |
 
-The load-bearing claim surface is S1, S2, S4, S5, and S6, plus S3 only
-as a boundary-narrowing warning inherited from the regulator-dependence
-no-go. S7 is a declared map; S8 is bounded readout appendix C1; S9
+The load-bearing claim surface is S1, S2, S3a, S4, S5, and S6, plus
+S3b only as a boundary-narrowing warning inherited from the
+regulator-dependence no-go. S7 is a declared map; S8 is bounded readout
+appendix C1; S9
 lives exclusively in the fenced comparator appendix. B3 and B4 are open
-formula-closure gates, not load-bearing authorities for T1.
+formula-closure gates beyond the B3a kinetic-substrate primitive.
 
 ## Appendix C1 (bounded numeric readout over open gates)
 
@@ -499,10 +545,11 @@ transport, and observable-identification lanes.
 
 Re-audit if any of B2-B5 closes to retained status; if the
 staggered-Dirac realization gate or the delta-zero magnitude gate
-closes; if the plaquette lane re-licenses `<P>` at different precision
-(the B1 resolution window and the F4 certificate must be recomputed);
-or if the Planck lane shifts `M_Pl` (elasticity `+1` passes any shift
-through to C1).
+closes; if the `kinetic_isotropy_primitive` source path or scope changes
+(B3a must be rechecked); if the plaquette lane re-licenses `<P>` at
+different precision (the B1 resolution window and the F4 certificate
+must be recomputed); or if the Planck lane shifts `M_Pl` (elasticity
+`+1` passes any shift through to C1).
 
 ## Dependencies (one-hop for T1 plus boundary policing)
 
@@ -511,6 +558,11 @@ through to C1).
 - [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md)
   — retained parent narrow theorem for the `2^d` species count (S2;
   also recomputed by the runner).
+- [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+  — approved framework primitive for the B3a four-direction
+  kinetic-form substrate (`c_t = c_s`, OS0 hypercubic form). It supplies
+  no regulator/species realization, dynamics, coupling, readout, or
+  formula closure.
 - [`HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md)
   — retained narrow theorem for `(7/8)^(1/4) = g(4)` with integer-`d`
   uniqueness (S5; also recomputed by the runner).
@@ -551,6 +603,6 @@ Expected result (deterministic, pure Python stdlib, runtime well under
 one minute):
 
 ```text
-Breakdown: A=9 B=9 C=7 D=2
-TOTAL: PASS=27 FAIL=0
+Breakdown: A=9 B=11 C=7 D=2
+TOTAL: PASS=29 FAIL=0
 ```

@@ -2,7 +2,8 @@
 """Structural-theorem runner for the hierarchy/VEV lane row
 
     docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
-    (2026-06-11 theorem/boundary-input restructure)
+    (2026-06-11 theorem/boundary-input restructure;
+     2026-06-16 B3 kinetic-substrate split)
 
 Claim under check (theorem T1 of the note, plus declared map appendix
 D1 and bounded readout appendix C1):
@@ -28,9 +29,11 @@ D1 and bounded readout appendix C1):
       (v)   sensitivity algebra of the declared map dln v_cand/dln <P>
             = -4 and dln v_cand/dln M_Pl = +1 exactly (fd-verified).
 
-      B3 (substrate/regulator selection) and B4 (coupling-power
-      transport) are open formula-closure gates, not load-bearing
-      authorities for T1 and not derived by this runner.
+      B3 is split: B3a (four-direction kinetic-form substrate) is
+      supplied only to the scope of the registered kinetic-isotropy
+      primitive; B3b (regulator/species realization) remains open.
+      B4 (coupling-power transport) remains open. Neither B3b nor B4 is
+      derived by this runner.
 
     D1 (declared candidate map appendix, NOT formula closure and NOT an
     observable identification):
@@ -82,6 +85,7 @@ well under one minute.  Exit code 0 iff TOTAL: PASS=n FAIL=0.
 from __future__ import annotations
 
 import itertools
+import json
 import math
 import re
 import sys
@@ -90,6 +94,8 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = REPO_ROOT / "docs" / "HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md"
+KINETIC_PRIMITIVE_PATH = REPO_ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+AXIOM_PREMISE_NODES = REPO_ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import canonical_plaquette_surface as cps  # noqa: E402
@@ -125,7 +131,7 @@ ALPHA_LM = ALPHA_BARE / U_0          # = 0.090668
 ALPHA_S_V = ALPHA_BARE / U_0 ** 2    # canonical-surface alpha_s(v)
 M_PL = 1.2209e19                     # B2: declared Planck-lane anchor (GeV)
 M_PL_HALF_STEP_REL = 0.00005 / 1.2209  # B2 quoted-precision half-step (rel)
-N_EXPONENT = 16                      # B3: declared regulator selection
+N_EXPONENT = 16                      # B3b: declared regulator/species surface
 APBC = (7.0 / 8.0) ** 0.25           # selector, recomputed in [C]
 
 # Published constants of the note (reproducibility targets, class A).
@@ -471,7 +477,7 @@ def section_b():
           "(7/8)^(1/4)" in joint_text
           and "if and only if `s = 4`" in joint_text)
 
-    # B5: regulator-dependence no-go on disk; B3's declaration mirrors it.
+    # B5: regulator-dependence no-go on disk; B3b's declaration mirrors it.
     nogo = (REPO_ROOT / "docs" /
             "HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR"
             "_DEPENDENCE_NO_GO_NOTE_2026-05-10.md")
@@ -483,7 +489,32 @@ def section_b():
 
     note_text = NOTE_PATH.read_text()
 
-    # B6: the substrate gate is referenced as backticked context only
+    # B6: kinetic-isotropy primitive supplies only the B3a substrate split.
+    kinetic_text = (KINETIC_PRIMITIVE_PATH.read_text()
+                    if KINETIC_PRIMITIVE_PATH.exists() else "")
+    nodes = (json.loads(AXIOM_PREMISE_NODES.read_text())
+             if AXIOM_PREMISE_NODES.exists() else {"nodes": {}})
+    kinetic_node = nodes.get("nodes", {}).get("kinetic_isotropy_primitive", {})
+    check("B", "B3a kinetic substrate is sourced to registered "
+               "kinetic_isotropy_primitive with c_t = c_s / OS0 "
+               "hypercubic-form scope only",
+          kinetic_node.get("current_path")
+          == "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+          and "c_t = c_s" in kinetic_text
+          and "hypercubic-symmetric" in kinetic_text
+          and "no mass ratio" in kinetic_text
+          and "does not supply any dimensionless dynamical quantity" in kinetic_text)
+
+    # B7: the parent note preserves the split: B3a gets the primitive;
+    # B3b and B4 remain open.
+    check("B", "parent note splits B3a kinetic substrate from B3b "
+               "regulator/species realization and keeps B4 open",
+          "**B3a, kinetic substrate:**" in note_text
+          and "**B3b, regulator/species realization:**" in note_text
+          and "B4 is unchanged and remains open" in note_text
+          and "B4 attachment-observable problem" in note_text)
+
+    # B8: the substrate gate is referenced as backticked context only
     # (open gate; not a one-hop authority edge).
     gate_name = "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
     gate_on_disk = (REPO_ROOT / "docs" / gate_name).exists()
@@ -492,20 +523,23 @@ def section_b():
           gate_on_disk and gate_name in note_text
           and f"]({gate_name})" not in note_text)
 
-    # B7: every markdown-linked citation in the note resolves on disk.
+    # B9: every markdown-linked citation in the note resolves on disk.
     links = re.findall(r"\]\(([A-Za-z0-9_\-./]+\.md)\)", note_text)
     missing = [l for l in links
                if not (REPO_ROOT / "docs" / l).exists()
                and not (REPO_ROOT / l).exists()]
     check("B", "all markdown-linked note citations resolve on disk",
-          not missing and len(set(links)) == 4,
+          not missing and len(set(links)) == 5,
           f"links = {sorted(set(links))}" if not missing
           else f"missing: {missing}")
 
-    # B8: parent-note hygiene — required declarations present, forbidden
+    # B10: parent-note hygiene — required declarations present, forbidden
     # overclaim / back-propagation tokens absent.
     lowered = note_text.lower()
     required = [
+        "b3a, kinetic substrate",
+        "b3b, regulator/species realization",
+        "kinetic_isotropy_primitive",
         "regulator-conditional",
         "not an ew vev prediction",
         "fenced comparator appendix",
@@ -529,7 +563,7 @@ def section_b():
           not req_missing and not forb_hit,
           f"missing = {req_missing}, hit = {forb_hit}")
 
-    # B9: runner self-scan (no back-propagation): the PDG literal occurs
+    # B11: runner self-scan (no back-propagation): the PDG literal occurs
     # exactly once in this runner's source — the declared comparator
     # constant. Structural sections never touch it.
     src = Path(__file__).read_text()
@@ -572,8 +606,9 @@ def section_d():
 def main() -> int:
     print("=" * 78)
     print(" frontier_hierarchy_formula_honest_status.py")
-    print(" (2026-06-15 boundary repair: T1 structural support from local")
-    print("  algebra; D1/C1 appendices over open B3/B4/B5 gates;")
+    print(" (2026-06-16 B3 split: T1 structural support from local")
+    print("  algebra; B3a kinetic substrate sourced to the primitive;")
+    print("  D1/C1 appendices over open B3b/B4/B5 gates;")
     print("  comparators fenced)")
     print(" Parent note: docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_"
           "2026-05-10.md")

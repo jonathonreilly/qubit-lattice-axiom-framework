@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_gauge_vacuum_plaquette_adjacent_word_scorecard_freshness_2026_06_16.py
+runner_sha256: 5b54184797ce0d3603d010ff424770386eac6d9f2f4e272227c08c268beeac41
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.79
+status: ok
+----- stdout -----
+Gauge vacuum plaquette adjacent-word scorecard freshness companion
+==============================================================================
+PASS: companion is hygiene-only
+PASS: parent note remains on historical displayed scorecard
+PASS: cache is the current parent-runner all-pass scorecard
+      cache_scorecard=(28, 0)
+PASS: cache is for the adjacent-word parent runner
+PASS: parent runner exits successfully
+PASS: live parent runner emits the current all-pass scorecard
+      live_scorecard=(28, 0)
+PASS: Part R stationarity check is present
+PASS: Part R non-factorization guard is present
+PASS: Part R slice-proportionality check is present
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

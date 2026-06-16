@@ -2,6 +2,8 @@
 
 ## What Changed
 
+PR: <https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4116>
+
 This PR turns the kinetic row's vague B-W residual into an explicit source
 graph:
 

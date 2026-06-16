@@ -22,6 +22,6 @@ open_imports:
   - realization/unit readings
   - independent audit of upstream bridge-chain source rows
 review_findings: []
-pr_status: pending
-next_exact_action: "Commit, push, open PR, then update this state with the PR URL."
-stop_condition: "Stop this block after the coherent source repair PR is open and checks are green."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4116"
+next_exact_action: "Reviewer should inspect PR #4116, then independent audit can process the exposed upstream bridge-chain rows and re-check the kinetic row."
+stop_condition: "Coherent source repair PR opened; continue scanning later if requested."

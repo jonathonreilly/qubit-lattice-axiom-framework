@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_higgs_gauge_mass_diagonalization.py
-runner_sha256: be2d184fa751b98bfdfcfbbc98627afc74ed60b639bcfcd85d11bec09a084f10
+runner_sha256: 64bcbcc196ceaaf2f0770f089cc1e50b7279126d354cc3a2e6b5d304ee85dab0
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.70
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
 ----- stdout -----
 === EW Higgs gauge-mass diagonalization verifier ===
 
 === Authority surface and scope ===
 PASS: theorem note exists :: docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
 PASS: status extracted :: proposed_retained - explicit strong derivation claim pending audit the exact tree-level gauge-boson mass spectrum and charge normalization f
-FAIL: status is standalone EW/Higgs theorem
+PASS: status is scoped to one-doublet EW/Higgs gauge-mass theorem
 PASS: status limits theorem to tree-level gauge-boson spectrum
 PASS: status does not promote Higgs/top/CKM lanes
 PASS: primary runner is named in note
@@ -64,8 +64,8 @@ PASS: radial Higgs Hessian m_h^2 = 2 lambda v^2
 PASS: scalar cubic coefficient is lambda v
 PASS: scalar quartic coefficient is lambda/4
 
-TOTAL: PASS=45, FAIL=1
-VERDICT: FAIL
+TOTAL: PASS=46, FAIL=0
+VERDICT: CLOSED
 
 ----- stderr -----
 

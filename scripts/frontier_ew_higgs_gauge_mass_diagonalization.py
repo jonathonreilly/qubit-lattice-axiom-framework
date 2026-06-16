@@ -62,7 +62,11 @@ def audit_note_surface(audit: Audit) -> None:
     status = status_match.group(1).replace("\n", " ") if status_match else ""
 
     audit.check("status extracted", bool(status), status[:140])
-    audit.check("status is standalone EW/Higgs theorem", "standalone positive electroweak/Higgs theorem" in status)
+    audit.check(
+        "status is scoped to one-doublet EW/Higgs gauge-mass theorem",
+        "one `SU(2)_L` Higgs doublet" in status
+        and "tree-level gauge-boson mass spectrum and charge normalization" in status,
+    )
     audit.check("status limits theorem to tree-level gauge-boson spectrum", "tree-level gauge-boson mass spectrum" in status)
     audit.check("status does not promote Higgs/top/CKM lanes", "does not modify, promote, or close" in status)
     audit.check("primary runner is named in note", "frontier_ew_higgs_gauge_mass_diagonalization.py" in text)

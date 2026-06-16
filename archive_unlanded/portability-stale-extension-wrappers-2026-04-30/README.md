@@ -3,6 +3,14 @@
 **Archived:** 2026-04-30 (README added 2026-05-01)
 **Audit verdict:** audited_failed (terminal; ACCEPT)
 
+## 2026-06-16 archive firewall
+
+The files in this directory are historical / diagnostic and retired as
+evidence. They are safe as editorial portability worklists only. They are not
+retained cross-family package extensions, not retained three-family-card
+extensions, and not authority that the cited sign, distance-law, or
+complex-action dependencies are audit-clean.
+
 ## Why this is here
 
 `PORTABLE_PACKAGE_EXTENSION_NOTE.md` claimed a retained extension of

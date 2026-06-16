@@ -1,6 +1,7 @@
 # Handoff
 
 Branch: `physics-loop/post-audit-su3-record-repairs-20260616`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4066
 
 This PR repairs two post-audit source issues:
 

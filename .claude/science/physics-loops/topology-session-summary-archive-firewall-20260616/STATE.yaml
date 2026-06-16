@@ -1,0 +1,17 @@
+loop_slug: topology-session-summary-archive-firewall-20260616
+goal: "Retire the archived topology-pivot aggregate summary so broad gravity/decoherence architecture claims no longer read as live retained science."
+target_status: demotion
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: archive_failed_session_summary_firewall
+files_touched:
+  - archive_unlanded/session-summary-stale-aggregates-2026-04-30/SESSION_SUMMARY_2026-04-01_TOPOLOGY.md
+  - scripts/topology_session_summary_archive_firewall_2026_06_16.py
+open_imports:
+  - "No split live claim notes are supplied."
+  - "No topology-pivot runner/log pair is promoted by this PR."
+review_findings: "Local self-review: pass for demotion/firewall scope."
+pr_status: "pending"
+next_exact_action: "Open PR for reviewer extraction, then let audit decide whether the archived topology summary can be re-audited as retired session history."

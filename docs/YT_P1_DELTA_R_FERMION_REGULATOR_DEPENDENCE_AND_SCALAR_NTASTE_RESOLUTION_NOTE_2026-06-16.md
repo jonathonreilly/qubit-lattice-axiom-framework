@@ -176,3 +176,35 @@ the `_EFFECTIVE_STATUS.md` views auto-refresh via the pipeline — do NOT hand-e
 Reproduce: the two `scripts/corrections/*_memsafe.py` runners (single process,
 N≤48, peak RAM < ~700 MB). Do NOT run full-BZ quadratures across parallel
 processes — that is memory-unsafe.
+
+## 7. Static sibling scan (2026-06-16) — reviewed BZ defects stay in the m_t / Δ_R lane
+
+A static review scan of 11 prediction runners (spot-checked without running the
+large quadratures) found the same defect class in three more BZ-quadrature
+siblings, all in the P1/Δ_R → m_t lattice-matching lane. Each is now flagged
+in-file with a correction banner:
+
+- [`scripts/frontier_yt_p1_bz_quadrature_numerical.py`](../scripts/frontier_yt_p1_bz_quadrature_numerical.py)
+  — both defects, **not firewalled**
+  (feeds Δ_1 and Δ_3 of Δ_R); its Δ_R/m_t values are uncontrolled.
+- [`scripts/frontier_yt_p1_bz_quadrature_2_loop_full_staggered_pt.py`](../scripts/frontier_yt_p1_bz_quadrature_2_loop_full_staggered_pt.py)
+  — both defects in
+  code but **firewalled** (a bound-clamp replaces the corrupt MC with the
+  loop-geometric bound, so the headline m_t is unaffected). Its per-channel `J_X`
+  envelopes are defective and must not be cited as 2-loop matching coefficients.
+- [`scripts/yt_p1_i_s_native_bz_certificate_2026_06_11.py`](../scripts/yt_p1_i_s_native_bz_certificate_2026_06_11.py)
+  — D1 only; its "I_S below
+  [4,10]" verdict is itself a `/16` artifact (without it I_S ≈ 32, inverting it).
+
+**Not affected by this defect class in the reviewed set** (they use separate
+machinery):
+- **m_H** — all three Higgs runners are closed-form mean-field `v/(2u_0)`; no BZ
+  quadrature.
+- **m_τ / charged-lepton (Koide-sector) masses** — computed from `α_LM/(4π)·C_τ`,
+  BZ-independent; the BZ object is only a corroborating cross-check.
+- **α_bare / EW gauge convention** (3D Z³, single-power, correct subtraction) and
+  the RGE-based m_t/α_s runners (boundary-consistency, QFP) — no quadrature.
+
+**Conclusion: this scan found an m_t-lane lattice-matching defect, not a
+framework-wide precision collapse from this `/N_TASTE` / doubler bug.** m_H, the
+lepton/Koide masses, and the EW couplings carry their own separate caveats.

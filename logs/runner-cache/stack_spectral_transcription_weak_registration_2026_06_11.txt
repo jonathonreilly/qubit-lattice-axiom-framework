@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/stack_spectral_transcription_weak_registration_2026_06_11.py
-runner_sha256: 7302fbb70977db6931700325f46ed88650c3e0f942c8c93584936cf8f660b8b2
+runner_sha256: cdc4d80c0cc79336824eb8c4a6a1d29d13fa165e0d2c34c7a5bddaac74312242
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.84
+elapsed_sec: 0.85
 status: ok
 ----- stdout -----
 POINTER DISPLACEMENT AND BACKACTION CHANNEL (symbolic, exact)
@@ -45,7 +45,7 @@ HOSTILE WITNESSES
 
 SCOPE HONESTY: what is NOT proved here
 ==============================================================================
-  [PASS] Single-fiber exactly solvable model of the arrow-note class: the record-production-dynamics reading is NAMED, not derived  --  that the realized stack is of this class remains the production-dynamics row
+  [PASS] Single-fiber exactly solvable model of the arrow-note class: the realized-stack production bridge is NOT derived  --  that the realized stack is of this class remains outside this theorem
   [PASS] Faithful limit is an idealization: at strictly eps = 0 no records form (amplitude -> 0 with the window)  --  records and perfect transcription coexist only asymptotically; the tradeoff is soft, not erased
 
 ==============================================================================

@@ -1,11 +1,10 @@
 # Stack Spectral Transcription At Weak Registration: The Record-Stack Reading Mechanism
 
 **Date:** 2026-06-11
-**Claim type:** bounded_theorem (an exactly solvable record-production stack
-of the retained arrow-note class whose registered covariance transcribes the
-tick band, with closed-form fidelity/strength tradeoff; grounds the
-kinetic-isotropy chain's record-stack spectral reading and reduces its
-residual to the record-production-dynamics reading)
+**Claim type:** bounded_theorem (an exactly solvable constructed
+single-fiber record-production stack of the retained arrow-note class whose
+registered covariance transcribes the tick band, with closed-form
+fidelity/strength tradeoff)
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set, predict, promote, or demote any audit outcome.
@@ -16,26 +15,24 @@ set, predict, promote, or demote any audit outcome.
 
 ---
 
-## What this grounds
+## Constructed-model theorem boundary
 
-The kinetic-isotropy retirement chain's remaining ontology-level reading is
-the **record-stack spectral reading**: the layer data consumed by the OS
-reconstruction is the realized tick-generated record data — the
-one-spectrum identification in the scope-boundary note. Until now that
-reading was a named identification with a testability property but no
-constructed mechanism.
+This note proves a constructed-model theorem only.  Inside the retained
+arrow-note model class, it builds a single-fiber broadcast record stack and
+computes exactly how the stack covariance carries the tick band.  The theorem
+does **not** assert that the realized physical stack is this model class, and
+does not use any record-outcome proposal or kinetic-isotropy target row as a
+load-bearing premise.
 
 This note constructs the mechanism inside the framework's own
 record-production model class — the redundant-pointer-broadcast dynamics of
 the retained arrow surface
 ([`ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`](ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md),
 `retained_bounded`) — and computes, in closed form, exactly how faithfully a
-stack of records carries the band of the tick that wrote it. After this
-note, the residual is no longer "an unexplained spectral identification": it
-is the **record-production-dynamics reading** named by the canonical
-record-principle surface (outcome structure is supplied; production dynamics
-is the open row) plus a quantified faithful-limit idealization — both named,
-both strictly narrower.
+constructed stack of records carries the band of the tick that wrote it.
+This is useful context for later record-stack readings, but any step from the
+realized stack to this broadcast-registration class remains an external
+production-dynamics bridge, not part of this row's theorem.
 
 ## The model (the arrow-note class, with a registration-strength dial)
 
@@ -95,29 +92,25 @@ weakens. The tradeoff is **soft**: at `eps = 0.18` the band error is below
 `1e-3` while the record amplitude stays finite — any target fidelity is
 reachable at nonzero record strength.
 
-## What this does to the chain
+## What the constructed model supplies
 
 ```text
   before:  "the OS-consumed layer data IS the tick-generated record data"
            -- a named one-spectrum identification, testable but
            unconstructed.
-  after:   the identification's mechanism EXISTS and is exactly solvable in
-           the framework's own record-production class: stacks of durable,
-           monotonically accumulating records carry the tick band in their own
-           covariance, faithfully in the weak-registration limit, with
-           closed-form rates (eps^4 band fidelity, eps^2 strength,
-           eps^2-window).
-  residual: the record-production-dynamics reading -- that the realized
-           stack is of this class -- plus the faithful-limit idealization.
-           Both named; both strictly narrower than the bare identification.
+  after:   a mechanism EXISTS inside the constructed broadcast-registration
+           model: stacks of durable, monotonically accumulating records carry
+           the tick band in their own covariance, faithfully in the
+           weak-registration limit, with closed-form rates (eps^4 band
+           fidelity, eps^2 strength, eps^2-window).
+  residual: the physical production-dynamics bridge -- that the realized
+           stack belongs to this constructed class -- remains open and is not
+           a premise of this theorem.
 ```
 
-The kinetic-isotropy retirement residual now reads: C- and N-readings
-(spectrum-reflection transport + channel envelope), finite-period
-covariance (all-periods dichotomy), and **record-production-dynamics** in
-place of the bare record-stack spectral identification — every member now
-has a constructed mechanism or an exact theorem behind it, and none is a
-free spectral coincidence.
+Consequently, later chain work may cite this row for the internal
+constructed-model mechanism only.  It may not cite this row as a proof that
+the realized stack is a broadcast-registration stack.
 
 ## Hostile witnesses (wall-independence)
 
@@ -131,9 +124,7 @@ free spectral coincidence.
 ## What this does not do
 
 - It does not derive that the **realized** stack is of the broadcast class:
-  that is the record-production-dynamics row named by
-  [`RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`](RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md)),
-  inherited as the named residual.
+  that production-dynamics bridge remains outside this row.
 - It does not extend to the multi-fiber/field level (a separate row); the
   single fiber is the exactly solvable case, matching the per-fiber
   structure the chain's spectral steps consume.
@@ -157,27 +148,27 @@ free spectral coincidence.
 - A second-dynamics contamination that recovery fails to detect (would
   refute the stack-level one-spectrum testability).
 
-## Dependencies
+## Load-bearing dependencies
 
 - [ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md](ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md)
   — the model class and the monotone-accumulation surface
   (`retained_bounded`).
-- [RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md](RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md)
-  — the named record-production-dynamics residual this note reduces the
-  record-stack spectral reading to.
 - [TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md](TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md)
-  — the spectrum-reflection class the model tick instantiates; landed but
-  unaudited, conditionality inherited.
-- [SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md](SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md)
-  — the one-spectrum discipline; the second-dynamics witness is its
-  stack-level content.
-- [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)
-  — the Record axiom whose durability clause the construction realizes.
-- [KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
-  and
-  [KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md](KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md)
-  — the retirement chain's target and independence surface (this note
-  continues through the steelman door named there).
+  — the spectrum-reflection class the model tick instantiates
+  (`retained_bounded`).
+
+## Non-load-bearing context
+
+The construction realizes the durability and monotone-accumulation behavior
+expected of a record stack and gives a stack-level contamination witness for
+one-spectrum discipline.  The files `MINIMAL_AXIOMS_2026-06-05.md`,
+`RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`,
+`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`,
+`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`, and
+`KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md` are context
+only for why the constructed model is useful.  They are not premises for the
+closed-form displacement, dephasing, covariance-recovery, faithful-limit, or
+infrared-window theorem proved here.
 
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency or of the kinetic-isotropy primitive. The

@@ -1,0 +1,20 @@
+loop_slug: stack-spectral-constructed-model-repair-20260616
+target_claim_id: stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11
+mode: source_repair
+base_ref: origin/main
+base_commit: 1d66f4dfd
+status: pr_ready
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+blocked_audit_status_before_repair: audited_conditional
+blocker_source: audit_ledger
+blocker_text: "missing_bridge_theorem: prove or cite a retained record-production-dynamics theorem that the realized stack belongs to the specified broadcast registration class, or narrow the row to the constructed-model theorem only and remove the load-bearing meta dependency."
+repair_summary: "Narrowed the source theorem to the constructed single-fiber broadcast-registration model and removed markdown load-bearing links to the meta/open production-dynamics and kinetic-isotropy context."
+files_touched:
+  - docs/STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - scripts/stack_spectral_transcription_weak_registration_2026_06_11.py
+  - logs/runner-cache/stack_spectral_transcription_weak_registration_2026_06_11.txt
+remaining_blockers:
+  - "The realized-stack production-dynamics bridge remains open; this PR does not prove that physical records instantiate the constructed broadcast-registration class."
+next_exact_action: "Hand to review/audit lane for independent re-audit of the narrowed constructed-model theorem."

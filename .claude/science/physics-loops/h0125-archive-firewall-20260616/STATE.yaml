@@ -1,0 +1,18 @@
+loop_slug: h0125-archive-firewall-20260616
+goal: "Retire the archived h=0.125 failure diagnosis so stale inconsistent P_det/SNR rows no longer read as live retained science."
+target_status: demotion
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: archive_failed_packet_firewall_with_live_lane_pointer
+files_touched:
+  - archive_unlanded/h0125-unverifiable-numerical-diagnostics-2026-04-30/README.md
+  - archive_unlanded/h0125-unverifiable-numerical-diagnostics-2026-04-30/H0125_FAILURE_DERIVATION.md
+  - scripts/h0125_archive_firewall_2026_06_16.py
+open_imports:
+  - "No repair runner is added for the old failure-diagnosis table."
+  - "The current executable h=0.125 reduced-family lane remains separate."
+review_findings: "Local self-review: pass for demotion/firewall scope."
+pr_status: pending_creation
+next_exact_action: "Run checks, commit, push, open PR, then patch PR URL into this pack."

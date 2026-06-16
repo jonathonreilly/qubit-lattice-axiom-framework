@@ -5,13 +5,15 @@ finite-dim physical Hilbert space H_phys reconstructed from the
 RP transfer matrix on a finite Euclidean-time block.
 
 The script does not re-derive RP or the spectrum condition (those
-are retained support theorems on A_min — see
+are companion support surfaces on A_min whose effective status is
+decided by the audit pipeline — see
 docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md and
 docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md).
 Instead, it constructs a small explicit Hermitian H >= 0 on a finite
-Hilbert space, builds T = exp(-a_tau H), and verifies the KMS strip
-identity by computing both sides in the eigenbasis of H (which is
-numerically stable for arbitrary z in the strip).
+Hilbert space, builds the positive two-step transfer block
+T = exp(-2 a_tau H), and verifies the KMS strip identity by computing
+both sides in the eigenbasis of H (which is numerically stable for
+arbitrary z in the strip).
 
 Tested identities (all on a generic finite-dim H >= 0):
 
@@ -21,7 +23,8 @@ Tested identities (all on a generic finite-dim H >= 0):
   T3: equilibrium uniqueness via finite matrix-unit KMS equations,
       including the degenerate-energy scalar-block condition.
   T4: path-integral correspondence and native slice-insertion cyclicity:
-      tr(T^{L_tau-j} O T^j) = tr(T^{L_tau} O).
+      with even raw L_tau and N_tau=L_tau/2 blocked steps,
+      tr(T^{N_tau-j} O T^j) = tr(T^{N_tau} O).
 
 These are all the structural content of the theorem note.
 """
@@ -147,17 +150,23 @@ def main() -> None:
     print("Setup:")
     print("  finite-dim H_phys (modeling RP-reconstructed physical Hilbert space)")
     print("  H = self-adjoint, H >= 0 (modeling spectrum condition SC1, SC2)")
-    print("  T = exp(-a_tau H), Gibbs at beta_th = L_tau a_tau")
+    print("  T = exp(-2 a_tau H), Gibbs at beta_th = L_tau a_tau")
+    print("  raw L_tau is even; N_tau = L_tau/2 blocked transfer factors")
     print()
 
     seed_H = 20260501
     dim = 8
     a_tau = 1.0
-    L_tau = 6
-    beta_th = L_tau * a_tau
+    a_blk = 2.0 * a_tau
+    L_tau = 12
+    assert L_tau % 2 == 0, "two-step blocked KMS check needs even raw L_tau"
+    N_tau = L_tau // 2
+    beta_th = N_tau * a_blk
     print(f"  dim(H_phys) = {dim}")
     print(f"  a_tau       = {a_tau}")
-    print(f"  L_tau       = {L_tau}")
+    print(f"  a_blk       = {a_blk}")
+    print(f"  raw L_tau   = {L_tau}")
+    print(f"  N_tau       = {N_tau}")
     print(f"  beta_th     = {beta_th}")
     print()
 
@@ -271,22 +280,23 @@ def main() -> None:
     # ----- Test 4: path-integral correspondence and slice cyclicity -----
     print("-" * 72)
     print("TEST 4: path-integral correspondence")
-    print("        Z = tr T^{L_tau} = tr exp(-beta_th H)")
-    print("        tr(T^{L_tau-j} O T^j) = tr(T^{L_tau} O)")
+    print("        Z = tr T^{N_tau} = tr exp(-beta_th H)")
+    print("        tr(T^{N_tau-j} O T^j) = tr(T^{N_tau} O)")
     print("-" * 72)
-    # T = exp(-a_tau H) computed via eigenbasis
-    T_eigvals = np.exp(-a_tau * eigvals)
+    # T = exp(-2 a_tau H) computed via eigenbasis. This is the current
+    # RP/spectrum two-step blocked transfer object T := T_hat^2.
+    T_eigvals = np.exp(-a_blk * eigvals)
     T = spectral_matrix(eigvals, V, T_eigvals)
     O = random_operator(seed_H + 450, dim)
-    T_power_L = np.linalg.matrix_power(T, L_tau)
-    Z_trans = float(np.sum(T_eigvals ** L_tau))
+    T_power_L = np.linalg.matrix_power(T, N_tau)
+    Z_trans = float(np.sum(T_eigvals ** N_tau))
     Z_gibbs = float(np.sum(np.exp(-beta_th * eigvals)))
     reference_num = np.trace(T_power_L @ O)
     max_slice_resid = 0.0
-    for j in range(L_tau + 1):
-        lhs = np.trace(np.linalg.matrix_power(T, L_tau - j) @ O @ np.linalg.matrix_power(T, j))
+    for j in range(N_tau + 1):
+        lhs = np.trace(np.linalg.matrix_power(T, N_tau - j) @ O @ np.linalg.matrix_power(T, j))
         max_slice_resid = max(max_slice_resid, abs(lhs - reference_num))
-    print(f"  tr T^{L_tau}              = {Z_trans:.10f}")
+    print(f"  tr T^{N_tau}              = {Z_trans:.10f}")
     print(f"  tr exp(-beta_th H)     = {Z_gibbs:.10f}")
     print(f"  | difference |         = {abs(Z_trans - Z_gibbs):.3e}")
     print(f"  max slice cyclicity residual = {max_slice_resid:.3e}")

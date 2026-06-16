@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-01
 **Type:** positive_theorem
-**Claim scope:** the finite-temperature Gibbs state on the RP-reconstructed transfer-matrix Hilbert space H_phys satisfies the KMS condition (K1)-(K4) at inverse temperature β_th = L_τ·a_τ; equivalently, the periodic-Euclidean path integral on (Z/L_τ Z) × Z^3 equals the trace of T^{L_τ} and the strip identity F(t + iβ_th) = G(t) holds for all bounded operators.
+**Claim scope:** the finite-temperature Gibbs state on the RP-reconstructed two-step transfer-matrix Hilbert space H_phys satisfies the KMS condition (K1)-(K4) at inverse temperature β_th = L_τ·a_τ for even raw Euclidean time length L_τ; equivalently, with N_τ := L_τ/2 blocked time steps and T := T_hat^2, the periodic-Euclidean path integral on (Z/L_τ Z) × Z^3 equals the trace of T^{N_τ} and the strip identity F(t + iβ_th) = G(t) holds for all bounded operators.
 **Status:** awaiting independent audit. Under the scope-aware classification framework (audit-lane proposal #291), `effective_status` is computed by the audit pipeline.
 **Loop:** `24h-axiom-first-derivations-20260501`
 **Cycle:** 1 (Block 1)
@@ -15,9 +15,13 @@
 This note records, on the current `A_min`
 ([`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)), an axiom-first proof that the
 finite-temperature Gibbs state reconstructed from the reflection-
-positivity (RP) transfer matrix on a periodic Euclidean-time block
-satisfies the **Kubo-Martin-Schwinger (KMS) condition** at inverse
-temperature `β_th = L_τ · a_τ`. The companion artifacts are the
+positivity (RP) two-step transfer matrix on a periodic Euclidean-time
+block satisfies the **Kubo-Martin-Schwinger (KMS) condition** at
+inverse temperature `β_th = L_τ · a_τ` when the raw temporal length
+`L_τ` is even. The positive transfer object is `T := T_hat^2`; it
+advances one blocked time interval `a_blk := 2 a_τ`, so the number of
+blocked transfer factors is `N_τ := L_τ / 2`. The companion artifacts
+are the
 RP support note
 ([`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md))
 and the spectrum-condition support note
@@ -40,14 +44,16 @@ temperature.
 
 - **A1 — local algebra `Cl(3)`.** Used only via the structural
   identity that the staggered-Dirac fermion algebra acts on the same
-  finite physical Hilbert space `H_phys` reconstructed by RP.
+  finite physical Hilbert space `H_phys` reconstructed by the two-step
+  RP sector.
 - **A2 — substrate `Z^3`.** Used only as the spatial slice of the
-  finite block `Λ = (Z/L_τ Z) × (Z/L_s Z)^d_s` with periodic boundary
-  in *both* time and space. Periodicity in time is what makes the
-  transfer-matrix trace `Z = tr_{H_phys}(T^{L_τ})` finite-temperature.
+  finite block `Λ = (Z/L_τ Z) × (Z/L_s Z)^d_s` with even `L_τ` and
+  periodic boundary in *both* time and space. Periodicity in time is
+  what makes the blocked transfer-matrix trace
+  `Z = tr_{H_phys}(T^{N_τ})` finite-temperature.
 - **A3 — finite Grassmann partition.** Used only via the
-  reconstructed transfer matrix `T : H_phys → H_phys` from the RP
-  note (R3). For fermion observables we use the canonical
+  reconstructed two-step transfer matrix `T := T_hat^2 : H_phys → H_phys`
+  from the RP note (R3). For fermion observables we use the canonical
   fermion-boundary convention
   (anti-periodic in time, periodic in space, "APBC") which is the
   framework's accepted finite-temperature setup
@@ -60,13 +66,13 @@ temperature.
 ## Support-note inputs
 
 - **RP transfer matrix.** From the RP support note (R3),
-  `T : H_phys → H_phys` is Hermitian, positive, and has operator norm
-  `‖T‖ ≤ 1` on the canonical surface. Translation in Euclidean time
-  by one lattice unit is implemented by `T`.
+  `T := T_hat^2 : H_phys → H_phys` is Hermitian, positive, and has
+  operator norm `‖T‖ ≤ 1` on the canonical surface. It advances two
+  raw lattice time steps, i.e. one blocked interval `a_blk := 2 a_τ`.
 - **Spectrum condition.** From the spectrum-condition support
-  note (SC1, SC2), `H := -(1/a_τ) log(T / M_T)` is self-adjoint and
-  `H ≥ 0` on `H_phys`, with `M_T = ‖T‖_{op}`. Equivalently
-  `T = M_T · e^{-a_τ H}` with `H ≥ 0`.
+  note (SC1, SC2), `H := -(1/(2 a_τ)) log(T / M_T)` is self-adjoint
+  and `H ≥ 0` on `H_phys`, with `M_T = ‖T‖_{op}`. Equivalently
+  `T = M_T · e^{-2 a_τ H}` with `H ≥ 0`.
 - **Finite-dim physical Hilbert space.** From RP (R2), `H_phys` has
   finite dimension on any finite block `Λ`. This makes all traces
   finite and all operator products bounded.
@@ -76,7 +82,7 @@ temperature.
 - **Wick rotation:** standard convention. The reconstruction (R1)–(R4)
   of the RP note already pays for the Euclidean ↔ Lorentzian bridge
   by defining the analytic continuation of `T^n` to `e^{-itH}` for
-  `t > 0` via `T^n ↔ e^{-itH}` with `t = -i n a_τ`.
+  `t > 0` via `T^n ↔ e^{-itH}` with `t = -i n (2 a_τ)`.
 - **Cyclic-trace property** of finite-dimensional traces:
   `tr(AB) = tr(BA)` for any operators on a finite-dim Hilbert space.
   This is a basic linear-algebra fact, not an import.
@@ -84,18 +90,20 @@ temperature.
 ## Statement
 
 Let `Λ = (Z/L_τ Z) × (Z/L_s Z)^d_s` be the finite block with periodic
-boundary in both time and space, `T : H_phys → H_phys` be the
-RP-reconstructed transfer matrix, and `H := -(1/a_τ) log(T / M_T)`
-the reconstructed Hamiltonian (which is `≥ 0` after the constant
-`(1/a_τ) log M_T` shift; we absorb this shift into the zero of
-energy, equivalent to the standard convention `M_T = 1`).
+boundary in both time and space and even raw time length `L_τ`. Set
+`N_τ := L_τ / 2`. Let `T := T_hat^2 : H_phys → H_phys` be the
+RP-reconstructed two-step transfer matrix, and let
+`H := -(1/(2 a_τ)) log(T / M_T)` be the reconstructed Hamiltonian
+(which is `≥ 0` after the constant `(1/(2 a_τ)) log M_T` shift; we
+absorb this shift into the zero of energy, equivalent to the standard
+convention `M_T = 1`).
 
 Define the **finite-temperature Gibbs state** at inverse temperature
-`β_th := L_τ · a_τ` by
+`β_th := L_τ · a_τ = N_τ · (2 a_τ)` by
 
 ```text
     < O >_{β_th}  :=  (1 / Z_{β_th}) · tr_{H_phys}( e^{-β_th H} · O )      (1)
-    Z_{β_th}      :=  tr_{H_phys}( e^{-β_th H} )  =  tr_{H_phys}( T^{L_τ} )  (2)
+    Z_{β_th}      :=  tr_{H_phys}( e^{-β_th H} )  =  tr_{H_phys}( T^{N_τ} )  (2)
 ```
 
 for any operator `O` on `H_phys`. Define Heisenberg-picture time
@@ -111,8 +119,8 @@ Then on `A_min` plus the RP + spectrum-condition surface:
 
 **(K1) Path-integral ↔ Gibbs-state correspondence.** The Euclidean
 path-integral on `Λ` with periodic-boundary fields and APBC fermions
-equals the trace `Z = tr_{H_phys}(T^{L_τ})`, hence the path-integral
-expectation `<O>_{path}` of any operator `O` localized in a single
+equals the trace `Z = tr_{H_phys}(T^{N_τ})`, hence the path-integral
+expectation `<O>_{path}` of any operator `O` localized in a blocked
 Euclidean time slice equals the Gibbs expectation `<O>_{β_th}` of the
 corresponding `H_phys`-operator at inverse temperature
 `β_th = L_τ · a_τ`.
@@ -191,7 +199,7 @@ a finite trace:
 
 ```text
     Z  =  ∫_periodic  Dχ̄ Dχ DU  exp(-S)                                    (7)
-       =  tr_{H_phys}( T^{L_τ} )                                             (8)
+       =  tr_{H_phys}( T^{N_τ} )                                             (8)
 ```
 
 The equality (7)→(8) is the same Osterwalder–Seiler / Sharatchandra
@@ -199,37 +207,37 @@ factorisation that Steps 1–3 of the RP note used to establish (R1).
 Periodicity in `t` is what closes the trace; without it (open
 boundary) one would get a state-vector overlap rather than a trace.
 
-For an operator `O_j` localized in a single Euclidean time slice `j`,
-let `Ô` be the corresponding reference-slice operator on `H_phys` after
-the RP reconstruction. The transfer-matrix insertion has the finite
-form
+For an operator `O_k` localized on a blocked Euclidean time slice `k`,
+let `Ô` be the corresponding reference-block operator on `H_phys` after
+the RP reconstruction. The blocked transfer-matrix insertion has the
+finite form
 
 ```text
-    Num_j(O)  =  tr_{H_phys}( T^{L_τ-j} · Ô · T^j )                         (9)
+    Num_k(O)  =  tr_{H_phys}( T^{N_τ-k} · Ô · T^k )                         (9)
 ```
 
-where `0 <= j <= L_τ` and all powers are ordinary finite matrix powers.
-The case `j = 0` is the reference slice. For any `j`, cyclicity gives
+where `0 <= k <= N_τ` and all powers are ordinary finite matrix powers.
+The case `k = 0` is the reference block. For any `k`, cyclicity gives
 
 ```text
-    Num_j(O)
-      = tr( T^{L_τ-j} · Ô · T^j )
-      = tr( T^j · T^{L_τ-j} · Ô )
-      = tr( T^{L_τ} · Ô ).                                                (10)
+    Num_k(O)
+      = tr( T^{N_τ-k} · Ô · T^k )
+      = tr( T^k · T^{N_τ-k} · Ô )
+      = tr( T^{N_τ} · Ô ).                                                (10)
 ```
 
-Thus the single-slice expectation is independent of the slice label and
+Thus the blocked-slice expectation is independent of the block label and
 is exactly
 
 ```text
     < O >_{path}
-      = (1/Z) · tr( T^{L_τ} · Ô )
+      = (1/Z) · tr( T^{N_τ} · Ô )
       = (1/Z) · tr( e^{-β_th H} · Ô ),                                    (11)
 ```
 
-because `T = e^{-a_τ H}` and `β_th = L_τ a_τ`. No inverse transfer
-matrix, external KMS lemma, or continuum bookkeeping is used in this
-step. This proves (K1) for the finite-block single-slice observables
+because `T = e^{-2 a_τ H}` and `β_th = N_τ (2 a_τ) = L_τ a_τ`. No
+inverse transfer matrix, external KMS lemma, or continuum bookkeeping
+is used in this step. This proves (K1) for the finite-block blocked-slice observables
 needed by the downstream thermal-state rows. Multi-time ordered
 correlators keep their ordered product of transported insertions; the
 KMS strip identity for arbitrary bounded `A,B` is proved directly in
@@ -441,9 +449,10 @@ Stefan-Boltzmann block.
 RP + spectrum condition by Steps 1–5. The proof leans
 entirely on:
 
-- the RP transfer matrix `T` (already proved on `A_min`);
-- the spectrum condition `H ≥ 0` (already proved on
-  `A_min`);
+- the two-step RP transfer matrix `T := T_hat^2` supplied by the RP
+  support note;
+- the spectrum-condition Hamiltonian `H ≥ 0` supplied by the companion
+  spectrum-condition support note;
 - the cyclic-trace property of finite-dim traces (basic linear
   algebra, including the native slice-insertion and uniqueness
   matrix-unit calculations above);

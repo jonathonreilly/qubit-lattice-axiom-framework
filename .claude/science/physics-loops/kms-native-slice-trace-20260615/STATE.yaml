@@ -1,5 +1,5 @@
 loop: kms-native-slice-trace-20260615
-date: 2026-06-15
+date: 2026-06-16
 branch: physics-loop/kms-native-slice-trace-20260615
 target_claim_id: axiom_first_kms_condition_theorem_note_2026-05-01
 target_note: docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md
@@ -9,7 +9,7 @@ trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-current_step: source repair complete; verification and PR handoff pending
+current_step: post-audit two-step normalization repair complete; verification and PR update pending
 files_touched:
   - docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md
   - scripts/axiom_first_kms_condition_check.py
@@ -21,5 +21,10 @@ open_imports:
 imports_retired:
   - Bratteli-Robinson Lemma 5.3.4 no longer supplies K1 bookkeeping
   - Bratteli-Robinson Theorem 5.3.30 no longer supplies finite K4 uniqueness
-next_exact_action: run audit-lint/precompute checks, commit, push, and open review PR
-stop_condition: PR opened for reviewer/auditor extraction
+  - stale single-step KMS normalization no longer supplies the trace identity
+post_audit_repair:
+  blocker_source: audit_ledger
+  blocker_summary: source used T=exp(-a_tau H) and tr(T^L_tau), while current RP/spectrum authority uses T:=T_hat^2 and H=-(1/(2 a_tau)) log(T/M_T)
+  repair_summary: note and runner now use even raw L_tau, N_tau=L_tau/2, T=exp(-2 a_tau H), beta_th=N_tau*(2 a_tau)=L_tau*a_tau, and blocked-slice insertion
+next_exact_action: run diff checks, commit, force-with-lease push the rebased PR branch, and update PR #4024 body
+stop_condition: PR #4024 updated for reviewer/auditor extraction

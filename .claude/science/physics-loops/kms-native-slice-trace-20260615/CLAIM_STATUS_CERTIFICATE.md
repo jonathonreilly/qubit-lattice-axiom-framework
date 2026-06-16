@@ -13,3 +13,7 @@ bare_retained_allowed: false
 
 No new axiom is introduced. No audit verdict or effective-status field is
 changed by this branch.
+
+Post-audit repair note: this branch now matches the current two-step
+RP/spectrum normalization (`T:=T_hat^2`, `H=-(1/(2 a_tau)) log(T/M_T)`,
+`N_tau=L_tau/2`) and does not claim effective retained status.

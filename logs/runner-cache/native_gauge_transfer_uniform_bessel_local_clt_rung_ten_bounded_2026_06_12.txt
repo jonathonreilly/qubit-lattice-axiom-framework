@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_2026_06_12.py
+runner_sha256: 6090d177f6520f1cd18a10e154960651b361255df3181d0cc9e1d5a7657247db
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+UNIFORM BESSEL LOCAL-CLT SYMBOLIC FORMULAS
+P_1(a) = (a^4 - 6 a^2 + 3) / 24
+C(a) = exp(a^2/2) * [105 sqrt(2)/36864*(24/11)^(9/2) + 1/48 + 29/8 + sqrt(2*pi)*(60/(11*e))^(5/2)]
+C0_numeric_witness = 18.077834982215542
+
+PASS: P1 formula keeps the derived denominator 24
+      coefficient is stored from integer Fraction(1, 24), not Fraction.from_float
+PASS: P1(0) = 1/8
+PASS: P1(1) = -1/12
+PASS: P1(2) = -5/24
+PASS: derived C0 is finite and positive
+      C0=18.077834982215542
+PASS: C0 decomposes into the four derived Laplace/tail pieces
+      core_s8=0.134829630390, core_s6=0.020833333333, gaussian_tail=3.625000000000, actual_tail=14.297172018492
+PASS: note contains required status-authority line
+PASS: note declares bounded_theorem claim type
+PASS: note names the scalar honest outcome
+PASS: note keeps W85 as repo-native context, not a proof dependency
+PASS: note avoids forbidden overreach phrases
+      bad=[]
+PASS: note links the runner cache
+PASS: scipy.special.ive available for witness grid
+PASS: derived relative C(a)/t^2 bounds the witness grid
+      worst_ratio=6.888774e-03, t=2, k=0, a=0.000000000000, |R2|=3.113353e-02, bound=4.519459e+00
+PASS: derived all-a absolute scalar error bound covers the witness grid
+      worst_ratio=6.888774e-03, t=2, k=0, a=0.000000000000, abs_err=8.782606e-03, bound=1.274916e+00
+PASS: derived C0 is loose relative to empirical grid need
+      empirical_c0_needed=1.245341147732e-01, derived_C0=1.807783498222e+01, margin=145.164
+PASS: wrong scaling k=a*t visibly changes the Gaussian factor
+      a=1,t=64: wrong exp(-32)=1.266416554909e-14, correct exp(-1/2)=6.065306597126e-01
+PASS: omitting the s^4/(24t) term breaks P1 at a=0
+      omitted=0.000000000000, correct=0.125000000000
+PASS: wrong sign for the s^4/(24t) term breaks P1 at a=2
+      wrong_sign=0.208333333333, correct=-0.208333333333
+PASS: fixed-index next factor is negative on the active k=2*sqrt(t) row
+      fixed_factor=-0.998750000000, local_gaussian=0.135335283237
+TOTAL: PASS=20, FAIL=0
+
+----- stderr -----
+

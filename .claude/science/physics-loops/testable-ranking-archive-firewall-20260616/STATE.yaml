@@ -1,0 +1,19 @@
+loop_slug: testable-ranking-archive-firewall-20260616
+goal: "Fence stale archived testable-ranking wrappers so they no longer read as current retained maps."
+target_status: demotion
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: archive_failed_packet_firewall
+files_touched:
+  - archive_unlanded/testable-ranking-stale-wrappers-2026-04-30/README.md
+  - archive_unlanded/testable-ranking-stale-wrappers-2026-04-30/TESTABLE_PREDICTIONS_MAP_NOTE.md
+  - archive_unlanded/testable-ranking-stale-wrappers-2026-04-30/MOONSHOT_OTHER_TESTABLES_NOTE.md
+  - scripts/testable_ranking_archive_firewall_2026_06_16.py
+open_imports:
+  - "No mechanically regenerated audit-ledger ranking."
+  - "No audited-clean one-hop citation table for the listed testables."
+review_findings: "Local self-review: pass for demotion/firewall scope."
+pr_status: pending_creation
+next_exact_action: "Run checks, commit, push, open PR, then patch PR URL into this pack."

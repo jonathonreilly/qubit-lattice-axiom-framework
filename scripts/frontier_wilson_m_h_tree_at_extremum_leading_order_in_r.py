@@ -418,6 +418,44 @@ def part8_perturbative_validity():
         f"computed r_crit^2 = {float(r_critical_sq):.6f}, expected ≈ 0.507^2",
     )
 
+    # Audit repair: do not stop at square-root positivity. Compare the
+    # closed-form factor sqrt(1 - 3 r^2/u_0^2) with the truncated Taylor
+    # factor 1 - (3/2) r^2/u_0^2 used in the leading-order matching.
+    print()
+    print("  closed-form vs leading Taylor factor:")
+    comparison_rows = []
+    for r_test in [Fraction(1, 10), Fraction(235, 1000), Fraction(5, 10)]:
+        rsq_over_u0sq = (r_test * r_test) / (U_0 * U_0)
+        ratio_sq = Fraction(1) - 3 * rsq_over_u0sq
+        closed_factor = float(ratio_sq) ** 0.5
+        taylor_factor = float(Fraction(1) - Fraction(3, 2) * rsq_over_u0sq)
+        abs_err = abs(closed_factor - taylor_factor)
+        rel_err = abs_err / max(abs(closed_factor), 1.0e-15)
+        comparison_rows.append((r_test, closed_factor, taylor_factor, abs_err, rel_err))
+        print(
+            f"    r={float(r_test):.3f}: closed={closed_factor:.9f}, "
+            f"taylor={taylor_factor:.9f}, abs_err={abs_err:.3e}, rel_err={rel_err:.3e}"
+        )
+
+    r_small, _, _, _, rel_small = comparison_rows[0]
+    r_match, _, _, _, rel_match = comparison_rows[1]
+    r_edge, _, _, abs_edge, rel_edge = comparison_rows[2]
+    check(
+        "Taylor truncation agrees with closed form in the small-r control row",
+        rel_small < 5.0e-4,
+        f"r={float(r_small):.3f}, relative error={rel_small:.3e}",
+    )
+    check(
+        "Taylor truncation remains sub-percent at the displayed matching row",
+        rel_match < 1.0e-2,
+        f"r={float(r_match):.3f}, relative error={rel_match:.3e}",
+    )
+    check(
+        "Taylor truncation visibly breaks down near the validity edge",
+        abs_edge > 0.25 and rel_edge > 1.0,
+        f"r={float(r_edge):.3f}, absolute error={abs_edge:.3e}, relative error={rel_edge:.3e}",
+    )
+
 
 # ---------------------------------------------------------------------------
 # Part 9: Forbidden-import audit

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 221 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 954 |
+| **retained_bounded** | 955 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1412 |
+| unaudited | 1411 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1405 |
+| `audited_clean` | 1406 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1729 |
+| `unaudited` | 1728 |
 
 | claim_type | count |
 |---|---:|
@@ -102,29 +102,29 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1009 | 64.48 | `audited_clean` | **retained** |
-| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
+| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 900 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1032 | 50.51 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1120 | 47.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 891 | 45.30 | `unaudited` | unaudited |
-| 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
+| 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1081 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 815 | 43.67 | `audited_clean` | **retained_bounded** |
-| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 903 | 42.32 | `unaudited` | unaudited |
+| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 904 | 42.32 | `unaudited` | unaudited |
 | 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 877 | 39.78 | `unaudited` | unaudited |
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 38.66 | `unaudited` | unaudited |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 967 | 38.42 | `audited_clean` | **retained_bounded** |
-| 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
-| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 739 | 37.03 | `unaudited` | unaudited |
+| 17 | `yt_ew_color_projection_theorem` | no_go | critical | 749 | 38.05 | `audited_clean` | **retained_no_go** |
+| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 37.03 | `unaudited` | unaudited |
 | 19 | `cpt_exact_note` | positive_theorem | critical | 1077 | 36.57 | `audited_clean` | **retained** |
 | 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 894 | 35.81 | `audited_conditional` | ~~audited_conditional~~ |
 | 21 | `three_generation_structure_note` | bounded_theorem | critical | 1088 | 35.59 | `audited_clean` | **retained_bounded** |
-| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 736 | 35.53 | `unaudited` | unaudited |
+| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 35.53 | `unaudited` | unaudited |
 | 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 332 | 34.88 | `unaudited` | unaudited |
-| 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 817 | 33.18 | `unaudited` | unaudited |
-| 25 | `minimal_axioms_2026-04-11` | meta | critical | 797 | 33.14 | `unaudited` | meta |
+| 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 818 | 33.18 | `unaudited` | unaudited |
+| 25 | `minimal_axioms_2026-04-11` | meta | critical | 798 | 33.14 | `unaudited` | meta |
 
 
 ## Applied audits
@@ -1078,6 +1078,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_three_flux_holonomy_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15634,6 +15635,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The finite matrix identities: conjugation by C sends (c_1,c_2,c_3) to (c_2,c_3,c_1), I_3 has forward-cycle coefficients (0,0,0), and S(A)=P_23 A^dagger P_23 has fixed locus c_1=conjugate(c_3) with c_2 real.  _(class `A`)_
 - **chain closes:** True — The bounded claim closes over the explicitly displayed finite matrices and maps with no direct dependencies. It does not close, and does not claim to close, any physical PMNS bridge or primitive derivation.
 - **rationale:** The source narrows the row to exactly three finite matrix identities and explicitly excludes the physical carrier, observable law, identity-block interpretation, graph-first swap derivation, PMNS value selection, angle prediction, physical mixing law, and derivation from primitives. The runner source defines the displayed matrices and computes the finite matrix maps; its load-bearing checks are A-class algebraic checks, while the remaining PASS lines are source-firewall text checks. No B/C/D physical, dependency, or comparator step is being ratified. The clean verdict applies only to the bounded raw-matrix scope.
+- **auditor confidence:** high
+
+### `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded composition of the retained graph-first residual antiunitary theorem with the free-point identity-block sibling, plus direct 3x3 matrix algebra for the stated downstream identities.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-033337-2a9762c90c-pmns_oriented_cycle_two_pron`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The parent’s two admitted premises are supplied by the cited sibling authorities: B1 gives A_fwd = P_23 A_fwd^dagger P_23 and B2 gives A_act((1,1,1),(0,0,0),delta) = I_3, after which the remaining identities are direct 3x3 algebra.  _(class `A`)_
+- **chain closes:** True — The antiunitary sibling is marked retained, the free-point sibling is marked decoration under a retained parent, and the channel-value parent is marked retained. Independent matrix-unit multiplication gives P_23 A_fwd^dagger P_23 = bar(c_3)E_12 + bar(c_2)E_23 + bar(c_1)E_31, while substituting x=(1,1,1), y=(0,0,0) gives A_act=I_3 and zero forward-cycle coefficients.
+- **rationale:** The claim is a bounded algebraic composition over retained-grade one-hop authorities, not a numerical comparator or symbol renaming. The displayed P_23 conjugation, fixed-locus condition, free-point identity block, cyclic covariance of I_3, and zero channel coefficients all check by direct matrix algebra independent of the runner implementation. The runner source performs finite 3x3 computations and has no missing helper path in the packet; it does not introduce a tuned value or external observational check.
 - **auditor confidence:** high
 
 ### `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16`

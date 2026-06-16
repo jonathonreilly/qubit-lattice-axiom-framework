@@ -418,6 +418,21 @@ def part8_perturbative_validity():
         f"computed r_crit^2 = {float(r_critical_sq):.6f}, expected ≈ 0.507^2",
     )
 
+    # Small-x Taylor control: for x = 3 r^2/u_0^2,
+    # sqrt(1-x) = 1 - x/2 - x^2/8 - ... . In genuinely perturbative rows, the
+    # first-truncation error should be controlled by the next x^2/8 scale.
+    for r_test in (Fraction(1, 100), Fraction(5, 100), Fraction(1, 10)):
+        x = 3 * (r_test * r_test) / (U_0 * U_0)
+        closed_factor = float(Fraction(1) - x) ** 0.5
+        first_taylor = 1.0 - 0.5 * float(x)
+        next_term = 0.125 * float(x * x)
+        error = abs(closed_factor - first_taylor)
+        check(
+            f"r = {float(r_test):.3f}: closed sqrt agrees with first Taylor through O(x^2)",
+            error <= 1.02 * next_term,
+            f"x={float(x):.6e}, error={error:.6e}, next_term={next_term:.6e}",
+        )
+
     # Audit repair: do not stop at square-root positivity. Compare the
     # closed-form factor sqrt(1 - 3 r^2/u_0^2) with the truncated Taylor
     # factor 1 - (3/2) r^2/u_0^2 used in the leading-order matching.

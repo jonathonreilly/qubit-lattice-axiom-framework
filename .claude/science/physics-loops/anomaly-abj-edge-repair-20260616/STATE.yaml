@@ -1,0 +1,36 @@
+loop_slug: anomaly-abj-edge-repair-20260616
+date: 2026-06-16
+branch: physics-loop/anomaly-abj-edge-repair-20260616
+base: origin/main
+goal: "Repair the anomaly-forces-time ABJ bridge runner and source dependency edges after parent premise vocabulary changed."
+target_status: conditional-support
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: "Exact d_t odd lower-bound consequence over P-ABJ/P1, P-HY, P-COMP, P-REC, retained Clifford parity, and retained-bounded staggered chirality carrier."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The repair exposes accepted/declared premise edges; it does not derive P-ABJ, P-HY, P-COMP, P-REC, or B-AXIS."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: dependency-edge and runner-anchor repair
+hard_residual: "P-HY, P-COMP, P-REC, and P-ABJ remain declared premise edges rather than framework-native derivations."
+files_touched:
+  - docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+  - scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py
+  - logs/runner-cache/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.txt
+open_imports:
+  - P-ABJ/P1 anomaly-to-inconsistency premise
+  - P-HY hypercharge identification premise
+  - P-COMP opposite-chirality completion premise
+  - P-REC taste-reconstruction premise
+  - B-AXIS for the parent theorem's d_t = 1 cap
+no_go_routes:
+  - "Do not credit NATIVE_GAUGE_CLOSURE_NOTE with anomaly-complete U(1)_Y or RH completion."
+  - "Do not claim this bridge derives d_t = 1."
+  - "Do not edit audit result surfaces."
+review_findings: "Local self-review: source-only dependency-edge repair; runner now PASS=76 FAIL=0; no audit-result surfaces edited."
+pr_status: pending
+next_exact_action: "Run guard checks, commit, push, open review PR, then record the PR URL in this pack."
+stop_condition: "PR opened or PR backlog recorded, then pivot to the next audit-unlock candidate."

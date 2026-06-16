@@ -1,0 +1,18 @@
+loop_slug: dm-abcc-basin-archive-firewall-20260616
+branch: physics-loop/dm-abcc-basin-archive-firewall-20260616
+base: origin/main
+target_status: demotion
+cycle_count: 1
+active_route: DM A-BCC basin archive firewall
+target_claim_id: dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md
+  - scripts/dm_abcc_basin_archive_firewall_2026_06_16.py
+open_imports: []
+review_findings: []
+pr_status: pending
+next_exact_action: run verification, commit, push, and open review PR
+stop_condition: coherent source-hygiene block packaged for reviewer

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 942 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1441 |
+| unaudited | 1440 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 43 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1389 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1758 |
+| `unaudited` | 1757 |
 
 | claim_type | count |
 |---|---:|
@@ -115,7 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 876 | 39.78 | `unaudited` | unaudited |
 | 14 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 38.66 | `unaudited` | unaudited |
-| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 967 | 38.42 | `audited_clean` | **retained_bounded** |
+| 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 966 | 38.42 | `audited_clean` | **retained_bounded** |
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 739 | 37.03 | `unaudited` | unaudited |
 | 19 | `cpt_exact_note` | positive_theorem | critical | 1076 | 36.57 | `audited_clean` | **retained** |
@@ -1551,6 +1551,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `one_parameter_reduced_shell_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_measure_weight_normalization_subdivision_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15793,6 +15794,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** supplied dial domain + supplied flow, score, or thermal rule + supplied stability predicate + exact finite/algebraic check => stable-setting support under that supplied rule  _(class `E`)_
 - **chain closes:** False — The packet closes only by stipulating the supplied stable-setting interface and checking ledger/slice bookkeeping. The missing theorem step is an independent derivation from the Record/framework baseline that the stable-setting support relation follows rather than being a definition.
 - **rationale:** The displayed quantitative inventory is internally consistent: 18+3+4+14+19=58, the helper totals 58+36=94 and 105+94+45+2=246, and the toy score, flow, and thermal examples check algebraically. But the load-bearing implication is the introduction of a certificate semantics: complete supplied evidence is labeled stable-setting support, while selected-dial status is separately blocked. The helper chain performs regex ledger bucketing and compares against hard-coded expected counts; it is cross-note/bookkeeping verification, not first-principles physics computation from the axiom baseline.
+- **auditor confidence:** high
+
+### `post_record_measure_weight_normalization_subdivision_2026-06-06`
+
+- **Note:** [`POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Queued bounded-theorem audit of the finite supplied-weight normalization lemma and read-only diagnostic subdivision of measure_weight_normalization rows, with no derivation of measure, weight, or selector authority from Record.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-014527-279e56fd08-post_record_measure_weight_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supplied finite carrier plus supplied nonnegative weights with positive total imply the normalized finite measure under that supplied weight rule; normalized measure is not selected dial.  _(class `A`)_
+- **chain closes:** False — The finite algebra mu_i = w_i / sum_j w_j closes for supplied finite nonnegative weights with positive total, and the displayed lane counts arithmetically sum to 67. The queued bounded-theorem chain does not close as a Record-derived or retained theorem because the carrier, weights, measure/prior, normalization authority, and selector authority are supplied rather than derived.
+- **rationale:** Issue: the only mathematical closure is the finite supplied-weight normalization algebra, while the packet is queued as a bounded theorem but explicitly retags itself as a read-only/meta subdivision certificate. The runner's 62 passes are source-anchor, ledger/export, firewall, and finite-normalization checks; it recomputes a diagnostic row split but does not derive the supplied carrier, weights, measure, Born law, or selector authority. Why this blocks: the bounded theorem cannot be retained as a Record-derived closure from the restricted packet. Repair target: split the read-only meta subdivision from the theorem row, or add a retained bridge deriving the carrier and weight/normalization authority; claim boundary until fixed is only the supplied-weight finite normalization lemma plus diagnostic current-ledger split.
 - **auditor confidence:** high
 
 ### `post_record_model_selection_firewall_2026-06-06`

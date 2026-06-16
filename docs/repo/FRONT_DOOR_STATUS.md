@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1577 |
-| Retained-grade rows, including boxed decorations | 1432 |
+| Applied audit verdicts | 1578 |
+| Retained-grade rows, including boxed decorations | 1433 |
 | Retained positive theorems | 221 |
 | Retained no-go rows | 214 |
-| Retained bounded rows | 952 |
+| Retained bounded rows | 953 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1415 |
+| Unaudited rows | 1414 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 52 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1417 |
-| Ready rows | 15 |
+| Total pending rows | 1416 |
+| Ready rows | 14 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
 | Medium pending | 430 |
-| Leaf pending | 435 |
+| Leaf pending | 434 |
 
 Next ready rows by queue order:
 
-- [`native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md) - medium; unaudited
 - [`pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26`](../../docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - medium; unaudited
 - [`record_prerecord_instrument_kernel_gate_2026-06-06`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md) - medium; unaudited
 - [`s3_time_tensor_build_memo`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md) - medium; unaudited
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
-- [`sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`](../../docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
+- [`sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`](../../docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

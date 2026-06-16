@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
 """
+=============================== CORRECTION (2026-06-16) =======================
+The I_S value (and any "below [4,10]" / "in-bracket" verdict) here is a
+/N_TASTE double-count artifact; see
+docs/YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md.
+The full-BZ (-π,π]^4 integral already covers the 16 taste corners; dividing by
+N_TASTE is spurious. Without the /16, I_S lands ~16× higher (≈32, not ~2), which
+inverts the "below-bracket" verdict. (Defect 2 — single-corner subtraction — is
+absent here: this is a single-power scalar density.) Treat the bracket verdict
+as void pending re-derivation. The [4,10] bracket is itself the framework's own
+erroneous single-link estimate, not a clean literature comparator.
+This runner now reports the obsolete divided diagnostic and the corrected
+no-division implication, and exits nonzero only if that correction is not visible.
+==============================================================================
+
 Native BZ certificate attempt for the P1 I_S bracket.
 
 This runner tests whether the repo's operational staggered-BZ scalar-density
@@ -10,10 +24,16 @@ bracket constants below are the premise being tested.
 
 Operational in-repo scalar expression used:
 
-    I_scalar(N) = 2
+    Obsolete divided diagnostic:
+
+        I_scalar_old(N) = 2
         + (1 / (N_TASTE * u_0^2)) * 16 pi^2
           * < N_S(k) / [(D_psi(k) + m^2)(D_g(k) + m^2)]
               - 4 / (k^2 + m^2)^2 >_BZ
+
+    Corrected no-division implication:
+
+        I_scalar_corrected(N) = 2 + N_TASTE * (I_scalar_old(N) - 2)
 
 with:
 
@@ -86,8 +106,8 @@ def bz_axis(n: int) -> np.ndarray:
     return -PI + (np.arange(n, dtype=np.float64) + 0.5) * delta
 
 
-def scalar_bz_candidate(n: int, m_sq: float = M_SQ_IR) -> float:
-    """Memory-bounded 4D midpoint quadrature for the native scalar candidate."""
+def scalar_bz_candidate_obsolete_divided(n: int, m_sq: float = M_SQ_IR) -> float:
+    """Memory-bounded 4D midpoint quadrature for the obsolete divided diagnostic."""
     axis = bz_axis(n)
     k1, k2, k3 = np.meshgrid(axis, axis, axis, indexing="ij")
 
@@ -136,15 +156,15 @@ def richardson_last_two(values: dict[int, float]) -> tuple[float, float]:
 
 def print_table(values: dict[int, float], ns: Iterable[int]) -> None:
     previous = None
-    print("Grid sweep:")
+    print("Grid sweep for obsolete divided diagnostic:")
     for n in ns:
         value = values[n]
         if previous is None:
-            print(f"  N={n:2d}  I_scalar_native={value:.12f}  seed")
+            print(f"  N={n:2d}  I_scalar_old={value:.12f}  seed")
         else:
             diff = rel_change(value, previous)
             print(
-                f"  N={n:2d}  I_scalar_native={value:.12f}  "
+                f"  N={n:2d}  I_scalar_old={value:.12f}  "
                 f"delta_vs_prev={100.0 * diff:.4f}%"
             )
         previous = value
@@ -155,9 +175,10 @@ def main() -> int:
     print()
     print("Defining expression used:")
     print(
-        "  I_scalar(N) = 2 + (16*pi^2/(16*u0^2)) * "
+        "  I_scalar_old(N) = 2 + (16*pi^2/(16*u0^2)) * "
         "<N_S/((D_psi+m^2)(D_g+m^2)) - 4/(k^2+m^2)^2>_BZ"
     )
+    print("  I_scalar_corrected(N) = 2 + 16*(I_scalar_old(N) - 2)")
     print(
         "  Source: scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py:292-350"
     )
@@ -191,9 +212,10 @@ def main() -> int:
         "docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md:377-405",
     )
     check(
-        "operational native scalar expression is present in full-staggered runner",
+        "full-staggered runner now exposes the corrected no-division scalar expression",
         "def integrate_I_v_scalar_full" in full_runner
-        and "lat_artifact = (lat_val - cont_val) / N_TASTE / (U_0 ** 2)" in full_runner,
+        and "CORRECTED 2026-06-16" in full_runner
+        and "lat_artifact = (lat_val - cont_val) / (U_0 ** 2)" in full_runner,
         "scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py:292-350",
     )
     check(
@@ -207,15 +229,16 @@ def main() -> int:
         f"u0={U_0:.10f}, plaquette={PLAQUETTE:.4f}",
     )
 
-    values = {n: scalar_bz_candidate(n) for n in N_LIST}
+    values = {n: scalar_bz_candidate_obsolete_divided(n) for n in N_LIST}
     print_table(values, N_LIST)
     print()
 
     r16_32 = rel_change(values[32], values[16])
     r32_64 = rel_change(values[64], values[32])
     extrapolated, extrap_error = richardson_last_two(values)
-    delta1_native = 2.0 * extrapolated - 6.0
-    bracket_certified = BRACKET_LOW <= extrapolated <= BRACKET_HIGH
+    corrected_no_division = 2.0 + N_TASTE * (extrapolated - 2.0)
+    delta1_corrected = 2.0 * corrected_no_division - 6.0
+    bracket_certified = BRACKET_LOW <= corrected_no_division <= BRACKET_HIGH
 
     check(
         "post-coarse grid convergence N=16->32 and N=32->64 below 1%",
@@ -225,30 +248,31 @@ def main() -> int:
     check(
         "second-order extrapolation error is small relative to bracket gap",
         extrap_error < 0.01 and (BRACKET_LOW - extrapolated) > 10.0 * extrap_error,
-        f"I_inf={extrapolated:.12f}, err~{extrap_error:.12f}",
+        f"I_old_inf={extrapolated:.12f}, err~{extrap_error:.12f}",
     )
     check(
-        "falsifier guard: native scalar value is neither zero nor enormous",
+        "falsifier guard: obsolete divided diagnostic is finite",
         0.5 < abs(extrapolated) < 50.0,
-        f"|I_scalar_native|={abs(extrapolated):.6f}",
+        f"|I_scalar_old|={abs(extrapolated):.6f}",
     )
     check(
-        "bracket verdict is honest: native scalar candidate does NOT certify [4,10]",
-        bracket_certified is False,
-        f"I_scalar_native={extrapolated:.6f} is below {BRACKET_LOW}",
+        "corrected no-division scalar value invalidates the [4,10] bracket",
+        bracket_certified is False and corrected_no_division > BRACKET_HIGH,
+        f"I_scalar_corrected={corrected_no_division:.6f} is above {BRACKET_HIGH}",
     )
     check(
-        "induced Delta_1 diagnostic remains finite and non-vacuous",
-        -10.0 < delta1_native < 10.0,
-        f"Delta_1_native=2*I_scalar_native-6={delta1_native:.6f}",
+        "corrected Delta_1 diagnostic is large, not a precision closure",
+        delta1_corrected > 50.0,
+        f"Delta_1_corrected=2*I_scalar_corrected-6={delta1_corrected:.6f}",
     )
 
     print()
-    print(f"CONVERGED_I_SCALAR_NATIVE: {extrapolated:.12f}")
-    print(f"RESOLUTION_EXTRAPOLATION_ERROR: {extrap_error:.12f}")
-    print(f"INDUCED_DELTA_1_NATIVE: {delta1_native:.12f}")
+    print(f"CONVERGED_I_SCALAR_OLD_DIVIDED: {extrapolated:.12f}")
+    print(f"CORRECTED_I_SCALAR_NO_DIVISION: {corrected_no_division:.12f}")
+    print(f"RESOLUTION_EXTRAPOLATION_ERROR_OLD_DIVIDED: {extrap_error:.12f}")
+    print(f"INDUCED_DELTA_1_CORRECTED: {delta1_corrected:.12f}")
     print("BRACKET_UNDER_TEST: [4.000000, 10.000000]")
-    print("BRACKET_VERDICT: NOT_CERTIFIED")
+    print("BRACKET_VERDICT: VOID_DOUBLE_COUNT_ARTIFACT")
     print(f"TOTAL: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1
 

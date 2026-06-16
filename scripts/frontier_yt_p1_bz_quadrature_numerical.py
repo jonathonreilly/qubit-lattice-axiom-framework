@@ -1,5 +1,22 @@
 #!/usr/bin/env python3
 """
+=============================== CORRECTION (2026-06-16) =======================
+Same defect class as scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py;
+see
+docs/YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md.
+A static review scan found both defects here, and this runner is not firewalled:
+it feeds Δ_1 (C_F) and Δ_3 (T_F n_f) of Δ_R → m_t.
+  1. SCALAR /N_TASTE double-count: a full-BZ (-π,π]^4 integral (which already
+     covers the 16 taste corners) is divided by N_TASTE — spurious.
+  2. FERMION single/zero-corner continuum subtraction: the double-power
+     1/D_psi^2 integrand is log-divergent at all 16 BZ doublers but only k=0
+     (or none) is subtracted, so I_SE_fermion is IR-regulator-dependent, NOT a
+     matching constant.
+The Δ_R / m_t values from this runner are uncontrolled (corrected Δ_R is
+O(50%), not −3.27%). The historical status paragraph below is superseded for
+Δ_R/m_t use until the lane is re-derived.
+==============================================================================
+
 Frontier runner: P1 BZ Quadrature Numerical (4D grid quadrature of the four
 lattice-PT BZ integrals entering the Rep-A/Rep-B ratio correction).
 

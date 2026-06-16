@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
-runner_sha256: 40944a4ab41af5842195efeaede8c02f04bce92997cb0c71c36a079e490f57a7
+runner_sha256: fe716c94aa155eb626dec07159f8f84d953997fc63456230cfdc658ee60ca1a2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 BBN COEFFICIENT 3.6515e-3 ADMISSION BRIDGE
@@ -37,22 +37,26 @@ PASS: factor numerically equals 0.24359... (standard) (factor = 0.243588)
 PASS: present-day n_gamma is approximately 410 photons / cm^3 (standard textbook) (n_gamma = 410.5008 per cm^3)
 
 == Part 3: recover Cyburt+ 2016 coefficient by deterministic arithmetic ==
-PASS: coefficient within 0.2% of published Cyburt+ 2016 value 3.6515e-3 (coeff = 3.655420e-03 vs Cyburt+2016 = 3.651500e-03)
+PASS: raw S=1 coefficient within 0.2% of published Cyburt+ 2016 value 3.6515e-3 (raw_coeff = 3.655419801e-03 vs Cyburt+2016 = 3.651500000e-03)
+PASS: exact Cyburt residual factor is explicit and sub-percent (S_Cyburt_exact = 0.998927674264154)
+PASS: raw coefficient times admitted S_Cyburt residual equals comparator exactly (exact_coeff = 3.651500000e-03)
 
 == Part 4: named premise packet remains imported on this row ==
 PASS: P1 proton rest mass admitted as textbook import (not derived here) (m_p = 1.6726219236e-24 g)
 PASS: P2 CMB temperature admitted as textbook import (not derived here) (T_CMB = 2.725 K)
 PASS: P3 critical-density unit computed from admitted H_100 and G (rho_crit/h^2 = 1.878342e-29 g/cm^3)
 PASS: P3 formula is rho_crit/h^2 = 3 H_100^2 / (8 pi G) with SI-to-cgs conversion (H100=100.0 km/s/Mpc, G=6.674300e-11 SI)
-PASS: P4 Cyburt convention / residual normalization admitted as combined import (S_Cyburt = 1.0 for the raw unit-conversion baseline)
+PASS: P4 raw Cyburt convention baseline is S=1 (S_raw = 1.0 for the raw unit-conversion baseline)
+PASS: P4 exact Cyburt residual is admitted as a separate comparator convention (S_Cyburt_exact = 0.998927674264154)
 
 == Part 5: retention scorecard ==
 PASS: source says critical-density unit is formula-expanded instead of black-boxed
 PASS: source keeps four admitted premise classes P1-P4
+PASS: source records exact S_Cyburt residual as admitted comparator, not derivation
 PASS: bridge does not promote the parent cosmology cascade row
 
-TOTAL: PASS=31 FAIL=0
-VERDICT: bounded admission bridge passes; the textbook coefficient 3.6515e-3 decomposes into one analytic factor (2 zeta(3)/pi^2 from the Planck distribution) and four imported premises (P1 m_p, P2 T_CMB, P3 H_100/G critical-density unit, P4 Cyburt convention / residual normalization), recovered to within 0.13% of the Cyburt+ 2016 published value.
+TOTAL: PASS=35 FAIL=0
+VERDICT: bounded admission bridge passes; the textbook coefficient 3.6515e-3 is split into a raw unit-conversion baseline from one analytic factor (2 zeta(3)/pi^2 from the Planck distribution) and admitted physical premises (P1 m_p, P2 T_CMB, P3 H_100/G critical-density unit), plus explicit admitted P4 residual S_Cyburt_exact = 0.9989276742641543. The raw baseline is within 0.107% of the Cyburt+ 2016 published value; exact equality uses the admitted residual comparator.
 
 ----- stderr -----
 

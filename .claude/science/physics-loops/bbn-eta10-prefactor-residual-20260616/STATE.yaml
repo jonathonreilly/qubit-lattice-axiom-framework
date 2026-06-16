@@ -1,0 +1,25 @@
+loop_slug: bbn-eta10-prefactor-residual-20260616
+goal: "Fix post-audit source issues in BBN eta10 coefficient bridge without touching audit verdict files."
+target_status: bounded-support
+started_from: origin/main@9cd53edc1
+branch: physics-loop/bbn-eta10-prefactor-residual-20260616
+cycle_count: 1
+active_route: prefactor_and_residual_source_repair
+hard_residual: "P1-P4 physical/textbook premise packet remains admitted, not framework-native retained authority."
+files_touched:
+  - docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md
+  - scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
+  - logs/runner-cache/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.txt
+  - .claude/science/physics-loops/bbn-eta10-prefactor-residual-20260616/
+audit_files_touched: false
+open_imports:
+  - "Proton rest mass m_p."
+  - "Present-day CMB temperature T_CMB."
+  - "Newton constant G, H_100 convention, and metrology constants."
+  - "Cyburt comparator residual S_Cyburt_exact."
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_findings: "self-review pass; retained-grade proposal not allowed"
+pr_status: pending
+next_exact_action: "Run precompute/check/lint, commit, push, open PR, update handoff URL."
+stop_condition: "Post-audit derivation typo and residual ambiguity repaired; remaining premise retirement is a larger science target."

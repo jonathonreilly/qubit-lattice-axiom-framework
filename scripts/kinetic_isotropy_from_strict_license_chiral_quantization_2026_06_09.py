@@ -62,6 +62,9 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md"
 SITE_LICENSE_NOTE = ROOT / "docs" / "SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md"
 TICK_UNITARITY_NOTE = ROOT / "docs" / "TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md"
+BW_BRIDGE_NOTE = ROOT / "docs" / "BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md"
+WIR_NOTE = ROOT / "docs" / "WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-06-11.md"
+REALIZATION_NOTE = ROOT / "docs" / "REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md"
 
 
 def check(label, ok, detail=""):
@@ -495,6 +498,9 @@ target_text = text(NOTE_PATH)
 target_flat = flat(NOTE_PATH)
 site_flat = flat(SITE_LICENSE_NOTE)
 unitarity_flat = flat(TICK_UNITARITY_NOTE)
+bw_flat = flat(BW_BRIDGE_NOTE)
+wir_flat = flat(WIR_NOTE)
+realization_flat = flat(REALIZATION_NOTE)
 
 check("H1 target note wires both 2026-06-15 premise-discharge candidate packets",
       "## 2026-06-15 premise-discharge bridge candidates" in target_text
@@ -527,6 +533,31 @@ check("H4 target source keeps primitive retirement, B-W, and audit authority fir
       and "does not set any audit verdict" in target_flat
       and "No primitive retirement or registry action" in target_text,
       "repair is source-side wiring only, not a retained-status claim")
+
+check("H5 target source wires the B-W bridge-chain packets as explicit markdown dependencies",
+      "## 2026-06-16 B-W bridge-chain source graph" in target_text
+      and "BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md" in target_text
+      and "WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-06-11.md" in target_text
+      and "REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md" in target_text
+      and "source-side audit candidates and bridge-chain dependencies, not status authorities" in target_flat,
+      "re-audit now has concrete upstream rows for the old B-W residual")
+
+check("H6 B-W bridge packet reduces OS0 identification to W-IR while refuting full Wick pairing",
+      "B-W = (T1)-(T2) exact computation + (W-IR) one named premise" in bw_flat
+      and "The full pairing is refuted for strict ticks; W-IR is forced" in bw_flat
+      and "does not derive W-IR" in bw_flat
+      and "does not set audit status" in bw_flat,
+      "B-W is no longer a naked bridge, but its residual remains named")
+
+check("H7 WIR and realization packets expose the remaining readings without primitive retirement",
+      "discharges Wick-IR in the bounded setting" in target_flat
+      and "record-stack spectral reading" in wir_flat
+      and "Cone-agreement corollary" in wir_flat
+      and "In particular cone-point slopes agree" in wir_flat
+      and "selection doesn't move the OS0-consumed content" in realization_flat
+      and "does not promote, demote, or set the audit status" in wir_flat
+      and "does not promote, demote, or set the audit status" in realization_flat,
+      "bridge residual is now record-stack/realization/unit readings, not hidden OS0 prose")
 
 
 print("\n" + "=" * 78)

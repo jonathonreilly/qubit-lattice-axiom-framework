@@ -2,7 +2,7 @@
 
 Branch: `physics-loop/bbn-eta10-prefactor-residual-20260616`
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4069
 
 Claim-state movement:
 
@@ -15,3 +15,7 @@ Remaining blocker:
 
 Retire or register P1-P4 if trying to move beyond conditional admission
 arithmetic.
+
+Next campaign target:
+
+DM Schur readout/normalization or SU3 beta6 no-critical-point support.

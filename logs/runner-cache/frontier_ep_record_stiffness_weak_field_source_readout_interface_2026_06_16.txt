@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16.py
+runner_sha256: 5b20c6f187b0af0537564504b0e5fcf20fbe9598c721efdb864583a944f112a5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+EP RECORD-STIFFNESS WEAK-FIELD SOURCE/READOUT INTERFACE
+==============================================================================
+[PASS] interface note is bounded-support and not WEP closure
+[PASS] parent note references the weak-field source/readout split
+[PASS] note leaves continuous action and rest-gap context open
+[PASS] note forbids audit-status and axiom promotion
+[PASS] weak-field dependency contains Born-density source readout
+[PASS] weak-field dependency contains same-source test coupling
+[PASS] normalized source-readout integral is one
+       integral |psi|^2=1
+[PASS] recorded-energy source integral gives coefficient m without width dependence
+       integral m|psi|^2=m
+[PASS] supplied scalar dispersion has p=0 gap squared m^2
+       E2(0)=m**2
+[PASS] template ratio is one only when the shared coefficient is identified
+       m_grav/m_inert=1
+[PASS] shared source coefficient remains a real residual
+       lambda-scaled ratio=lambda
+[PASS] parent remains an open-gate conditional template after split
+==============================================================================
+TOTAL: PASS=12 FAIL=0
+VERDICT: partial source/readout support only. The weak-field bridge supports |psi|^2 as source readout and the same-source coupling form, while the continuous action, inertial rest-gap interpretation, and shared coefficient identity remain open.
+
+----- stderr -----
+

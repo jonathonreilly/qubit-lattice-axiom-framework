@@ -21,6 +21,23 @@ checks only that, once the supplied continuous context is granted, the same
 stiffness parameter appears in the inertial and recorded-source slots. No new
 axiom, Tier-A admission, WEP closure, or audit-status change is introduced.
 
+## 2026-06-16 weak-field source/readout interface split
+
+The post-audit source/readout repair
+[`EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md`](EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md)
+splits the gravitational-source side of the template:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `EP-S3a` | normalized `|psi|^2` source-readout and weak-field source-coupling form | bounded-support interface from the retained-bounded weak-field source-response bridge |
+| `EP-S3b` | identifying the gravitational source coefficient with the same `m` as the inertial rest gap | still supplied shared-coupling template data |
+
+This narrows one imported piece of the template without closing the EP gap.
+The continuous local energy/action functional, the inertial rest-gap readout
+from Record, and the coefficient identity `m_grav/m_inert = 1` remain open
+bridges. This split adds no new axiom, Tier-A admission, WEP closure, or
+audit-status change.
+
 ## Scope
 
 The rejected parent PR #2988 tried to derive an energy/curvature/mass bridge

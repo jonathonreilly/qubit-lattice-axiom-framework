@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py
+runner_sha256: f70178a8a17a1ecff920d2f92975fad23c1d4ce830a3d6be1a75cd8fa3d8ca62
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.65
+status: ok
+----- stdout -----
+=== 1. Source boundary text ===
+[PASS] parent row names D_red = I_2 as imported/admitted structure
+[PASS] parent row says physical identification remains open
+[PASS] parent row does not claim audit status movement
+
+=== 2. Split algebra with arbitrary positive baseline scale ===
+[PASS] split projectors are orthogonal and sum to I_2
+[PASS] split-preserving source is diag(k_+, k_perp)
+       K=Matrix([[k_plus, 0], [0, k_perp]])
+[PASS] W_c(K)=log det(cI+K)-log det(cI)=log(1+k_+/c)+log(1+k_perp/c)
+       W_c=log(1 + k_perp/c + k_plus/c + k_perp*k_plus/c**2)
+
+=== 3. Source-coordinate rescaling leaves normalized law unchanged ===
+[PASS] substitution u_i=k_i/c recovers the c=1 normalized law
+       W_c(cu)=log(u_perp*u_plus + u_perp + u_plus + 1)
+[PASS] zero-source derivative scale is 1/c in the plus slot
+       dW/dk_+=1/c
+[PASS] zero-source derivative scale is 1/c in the perp slot
+       dW/dk_perp=1/c
+[PASS] c=1 and c=2 give different derivative units when k is held fixed
+       c=1 -> 1, c=2 -> 1/2
+
+=== 4. Legendre dual also carries the same normalization freedom ===
+[PASS] dual stationary source has c-dependent scale in plus slot
+       k_+*=-c + 1/y1
+[PASS] dual stationary source has c-dependent scale in perp slot
+       k_perp*=-c + 1/y2
+
+=== 5. Conclusion ===
+[PASS] D_red = I_2 is a normalization bridge, not a consequence of split algebra alone
+       the family D_c=cI_2 satisfies the same reduced determinant shape for all c>0
+[PASS] positive repair must supply a physical response-unit theorem or approved premise
+       more determinant algebra cannot select c=1
+
+========================================================================
+TOTAL: PASS=14 FAIL=0
+========================================================================
+
+----- stderr -----
+

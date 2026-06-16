@@ -14,6 +14,14 @@ on the two-slot second-order carrier is only a plausible additive transplant.
 
 **Primary runner:** `scripts/frontier_koide_q_reduced_observable_restriction_theorem.py`
 
+**2026-06-15 post-audit normalization boundary:** the companion no-go
+[`KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md`](KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md)
+shows that the reduced two-slot determinant algebra does not derive
+`D_red = I_2`. For every `c > 0`, `D_red = c I_2` gives the same normalized
+law after rescaling source coordinates, while the zero-source response scale is
+`1/c`. Thus the audit-named `D_red = I_2` repair still requires a separate
+physical response-unit bridge or approved normalization premise.
+
 **Status authority and audit hygiene (2026-05-10):**
 The audit lane has classified this row `audited_conditional`
 (claim_type `bounded_theorem`, audit_date 2026-05-05, auditor
@@ -276,7 +284,9 @@ are already at `retained_bounded` effective status. The remaining two
 suppliers are at lower status and contribute to the bridge only
 conditionally on their independent audit retention.
 
-The combined load-bearing inference of the supplier chain is:
+The intended combined load-bearing inference of the supplier chain, if the
+candidate suppliers and the response-unit normalization bridge are later
+independently accepted, would be:
 
 > on the framework's accepted substrate, the physical local scalar
 > observables must read through the canonical descent `E_loc` to the
@@ -289,7 +299,10 @@ The combined load-bearing inference of the supplier chain is:
 > baseline `D_red = I_2` is therefore the framework-forced reading,
 > rather than a free admitted choice.
 
-That inference is the audit-named missing bridge for this row.
+That inference is the audit-named missing bridge for this row. It is not
+established by this note itself, and the 2026-06-15 normalization-freedom
+no-go above shows that the `D_red = I_2` part cannot be obtained from the
+reduced split algebra alone.
 
 This subsection does not promote this row's `audit_status` or the
 suppliers' status. Only the independent audit lane can do that. The

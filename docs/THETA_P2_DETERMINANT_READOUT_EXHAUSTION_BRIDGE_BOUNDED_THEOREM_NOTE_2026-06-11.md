@@ -1,6 +1,6 @@
-# Theta P2 Determinant-Readout Exhaustion Bridge
+# Theta P2 Determinant-Readout Supplied-Boundary Exhaustion
 
-**Date:** 2026-06-11
+**Date:** 2026-06-11 (supplied-boundary repair 2026-06-15)
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
@@ -8,7 +8,7 @@ set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
 registry, ledger, queue, or publication-status surfaces.
 **Primary runner:**
 [`scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py`](../scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py)
-(TOTAL: PASS=35 FAIL=0; cached:
+(TOTAL: PASS=40 FAIL=0; cached:
 [`logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt`](../logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt))
 
 ---
@@ -24,22 +24,47 @@ names the missing piece exactly:
 > determinant-character readout and that no phase-sensitive non-multiplicative
 > or action-level datum remains.
 
-This note supplies that bridge as a bounded theorem, with the surviving
-residuals named explicitly in the Boundary section. The word "exhaust" below
-is used only in the audit lane's own technical sense — a proved factorization
-statement about a constrained readout class — never as a claim about a search
-space.
+This note now states only the supplied-boundary theorem: within a supplied
+determinant readout context, a supplied W2 registrability premise, and the
+supplied Gaussian/per-plaquette action class, the finite algebra erases the
+phase. It does **not** derive the physical W2 identification or the
+action-level reduction from the framework. The word "exhaust" below is used
+only in the audit lane's own technical sense — a proved factorization statement
+about a constrained readout class — never as a claim about a search space.
+
+## 2026-06-15 Supplied-Boundary Repair
+
+The current audit verdict asked for a retained action-level bridge reducing
+`det(D+M)` to the supplied `arg det(M_u M_d)` datum under `theta_eff`, and for
+the W2 physical-registrability identification to be retained or explicitly
+quarantined. This repair takes the quarantine path.
+
+Load-bearing in this note:
+
+- finite determinant-orbit algebra;
+- Record-additivity plus multiplicative union data forcing the homomorphism
+  equation;
+- full finite solution-space/nullspace checks for phase erasure;
+- hostile-function witnesses;
+- per-plaquette supplied-class composition checks.
+
+Not load-bearing in this note:
+
+- the physical claim that the mass readout satisfies W2;
+- a framework derivation that the only physical action-level orientation datum
+  is `arg det(M_u M_d)`;
+- any multi-plaquette, source-insertion, or non-registrable readout exclusion.
 
 ## Statement
 
-**Theorem (determinant-readout exhaustion bridge).** Fix a supplied
+**Theorem (supplied determinant-readout exhaustion boundary).** Fix a supplied
 mass-surface readout context consisting of: a finite central-sector
 decomposition; the fixed `K`/CPT conjugation acting on the central determinant
 data by complex conjugation; a per-record determinant datum map `e -> z(e)`
 in `C^x` that is multiplicative over disjoint records
 (`z(e_1 cup e_2) = z(e_1) z(e_2)`), with the scalar readout a function of that
-datum, `I(e) = F(z(e))`. Conditional on the physical readout satisfying the
-Record registrability constraints (the standing premise W2), and — for part
+datum, `I(e) = F(z(e))`. Conditional on the supplied readout context satisfying
+the Record registrability constraints (the quarantined premise W2), and — for part
 (v) — on the supplied per-plaquette-plus-Gaussian-fermion action class:
 
 1. **(Orbit)** The `K`/CPT orbit of the datum `z = det(M_u M_d)` is
@@ -61,25 +86,26 @@ Record registrability constraints (the standing premise W2), and — for part
    constancy makes `g` even; even and odd force `g == 0`. So
    `F(z) = a(log|z|)` for an additive `a`, and the registrable phase content
    of `arg det(M_u M_d)` is exactly zero.
-4. **(Exhaustion)** Therefore the invariant (`k = 0`, modulus-class) members
+4. **(Supplied-class exhaustion)** Therefore the invariant (`k = 0`, modulus-class) members
    of the multiplicative determinant-character family exhaust the
-   Record-registrable readout content of the `arg det(M_u M_d)` datum: the
+   Record-registrable readout content of the supplied `arg det(M_u M_d)` datum: the
    `k = 0` conclusion of the determinant-character note is an instance of a
    law holding for *all* registrable readouts, not a restriction to the
    supplied character family. On the finite models in the runner this is
    verified as a complete solution-space computation (nullspace dimension
    count), not on a hand-picked family.
-5. **(Action-level entry characterization)** On the strong-CP selected
-   surface, the fermion integral is Gaussian and exact, so the entire
-   vacuum-weight dependence on the mass datum is the determinant
+5. **(Supplied action-level entry characterization)** On the supplied
+   strong-CP selected Gaussian surface, the fermion integral is exact, so the
+   admitted vacuum-weight dependence on the mass datum is the determinant
    `det(D + M)`; its orientation-sensitive part is `arg det`, which is the
    per-sector-additive phase datum of parts (2)-(4). The supplied
    per-plaquette gauge class contains no local cross-plane `F Ftilde` slot
    that could host an independent orientation-sensitive action-level datum
    (composition with the retained_bounded cross-plane note). Hence, within
    the supplied action class and the `theta_eff` vacuum-weight premise, the
-   only orientation-sensitive action-level entry of the mass datum is
-   `arg det(M_u M_d)` — and parts (2)-(4) erase it at registration. The
+   only orientation-sensitive action-level entry admitted by this supplied
+   action class is `arg det(M_u M_d)` — and parts (2)-(4) erase it at
+   registration. The
    pieces this part does **not** cover are named in the Boundary section.
 
 ## Setup and derivation
@@ -162,8 +188,8 @@ invariant (`k = 0`) multiplicative determinant characters, with the continuous
 members exactly `s log|z| <-> |z|^s`. The phase character index is `k = 0`
 for *every* registrable readout because the phase component is identically
 zero, not because the family was restricted to characters. This discharges
-the first half of the audit ask: the physical `arg det(M_u M_d)` contribution
-carries zero Record-registrable content, and the multiplicative
+the first half of the audit ask inside the quarantined supplied context: the
+supplied `arg det(M_u M_d)` datum carries zero Record-registrable content, and the multiplicative
 determinant-character readout (its `k = 0` members) is exhaustive for what a
 registrable readout can carry of the determinant datum.
 
@@ -199,8 +225,9 @@ mass-orientation datum enters the supplied action class:
   slot that could re-introduce the erased phase.
 
 Within the supplied class and the `theta_eff` vacuum-weight premise, the
-orientation-sensitive action-level entry of the mass datum is therefore
-`arg det(M_u M_d)` and nothing else — and that datum registers as zero phase.
+orientation-sensitive action-level entry admitted by the supplied mass datum is
+therefore `arg det(M_u M_d)` and nothing else inside that class — and that datum
+registers as zero phase.
 
 ## Hostile-guard section
 
@@ -235,29 +262,29 @@ Two structural points the table shows:
 
 This bridge is bounded. What survives, explicitly:
 
-- **W2 — the standing registrability identification.** The theorem is
-  conditional on the physical mass-surface readout context satisfying the
-  Record registrability constraints (additivity + orbit constancy). It
-  removes all phase freedom *within* that class; it does not prove the
-  physical readout must be registrable. This is the same standing modeling
-  premise carried by the prior registrability work, unchanged here.
+- **W2 — quarantined physical-registrability identification.** The theorem is
+  conditional on a supplied mass-surface readout context satisfying the Record
+  registrability constraints (additivity + orbit constancy). It removes all
+  phase freedom *within* that supplied class; it does not prove the physical
+  readout must be registrable. W2 is not derived, promoted, or smuggled by this
+  note.
 - **Strong-CP premise 1 ("no bare `theta` slot") is separate.** The
   gauge-action admissibility of a bare `theta` term is a distinct
   action-surface premise, shown not derivable from retained reflection
   positivity by
   [`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md).
   This note addresses only the mass-orientation datum.
-- **The supplied action class is licensed, not derived.** The per-plaquette
-  class enters through the retained_bounded unit-neighborhood license; part
-  (5) is conditional on that class. Multi-plaquette / clover terms with
-  cross-plane support reopen a local `F Ftilde` slot (named in the
-  cross-plane note) and are outside part (5). Global / multi-plaquette
-  topological winding data is likewise outside this note.
+- **The action-level determinant datum is supplied, not derived.** The
+  reduction from the physical fermion mass-orientation dependence to the
+  `theta_eff` datum `arg det(M_u M_d)` is a supplied premise of the bounded
+  action class. Part (5) checks the determinant/Gaussian and per-plaquette
+  composition inside that supplied class; it does not prove that no physical
+  datum outside the class can appear.
 - **Source/insertion observables.** Fermion-source correlators depend on
   `(D + M)^{-1}`, i.e. on more of `M` than `det(D + M)`. The bridge covers
-  the `arg det(M_u M_d)` contribution to `theta_eff` (the vacuum-weight
-  premise of the strong-CP note), not the full `M`-dependence of every
-  observable.
+  the supplied `arg det(M_u M_d)` contribution to `theta_eff` (the
+  vacuum-weight premise of the strong-CP note), not the full `M`-dependence of
+  every observable.
 - **The prior additive+even core note is currently unaudited.**
   `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
   states the additive+even core first; its live ledger status at this note's
@@ -356,12 +383,13 @@ retained_bounded strong-CP note's selected surface and checked only in
 miniature here, with source insertions explicitly excluded; (4) that the
 unaudited prior note is not load-bearing (all used legs re-derived and
 re-checked in this note's runner); (5) that no claim is made beyond the
-registrable class, the supplied context, and the supplied action class. The
-claim is a conditional bounded theorem: if those named premises hold, the
-physical `arg det(M_u M_d)` contribution is exhausted by the multiplicative
-determinant-character readout (its `k = 0` members), and no phase-sensitive
-non-multiplicative or action-level datum of the mass orientation remains
-within the stated surfaces.
+registrable class, the supplied context, and the supplied action class; (6) that
+W2 and the action-level `arg det` reduction are quarantined premises, not
+derived conclusions. The claim is a conditional bounded theorem: if those named
+premises hold, the supplied `arg det(M_u M_d)` datum is exhausted by the
+multiplicative determinant-character readout (its `k = 0` members), and no
+phase-sensitive non-multiplicative or supplied-class action-level datum of the
+mass orientation remains within the stated surfaces.
 
 ## Dependencies
 

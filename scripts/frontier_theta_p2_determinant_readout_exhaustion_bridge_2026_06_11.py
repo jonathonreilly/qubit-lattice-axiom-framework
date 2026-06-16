@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Determinant-readout exhaustion bridge: class-A finite-dimensional checks.
+"""Determinant-readout supplied-boundary exhaustion checks.
 
-Target: the missing bridge named by the audit-lane conditional verdict on
+Source-boundary target: the missing bridge named by the audit-lane conditional verdict on
 theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10:
 
     "retain a determinant-readout bridge proving that the physical
@@ -9,7 +9,8 @@ theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10:
      determinant-character readout and that no phase-sensitive
      non-multiplicative or action-level datum remains."
 
-This runner checks, on small complex matrices and finite abelian-group models
+This runner checks the source-boundary quarantine plus, on small complex
+matrices and finite abelian-group models
 (memory tiny, dims <= 16):
 
   B1  ORBIT: K/CPT acts on the determinant datum by complex conjugation, so
@@ -40,8 +41,9 @@ This runner checks, on small complex matrices and finite abelian-group models
       orbit constancy).  The kill table shows the intersection structure.
   B5  ACTION-LEVEL COMPOSITION + BOUNDARY: cross-plane mixed derivatives of a
       per-plaquette (single-plane-summand) action vanish for arbitrary
-      symbolic f (composition with the retained_bounded P1 note, not a
-      re-derivation of the license); named residual boundary witnesses.
+      symbolic f (composition with the retained_bounded cross-plane absence
+      note, not a re-derivation of the license); named residual boundary
+      witnesses.
 
 The runner sets no audit status and reads/writes no audit surface.
 """
@@ -90,6 +92,37 @@ def angles_equal_mod_2pi(a: float, b: float, tol: float = 1e-10) -> bool:
 
 def main() -> int:
     rng = np.random.default_rng(20260611)
+
+    # ------------------------------------------------------------------
+    section("B0 - source-boundary guards: W2/action-level premises quarantined")
+
+    note_text = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    check(
+        "source note is supplied-boundary, not physical bridge closure",
+        "Supplied-Boundary Repair" in note_text
+        and "It does **not** derive the physical W2 identification" in note_text
+        and "action-level reduction from the framework" in note_text,
+    )
+    check(
+        "W2 physical-registrability identification is quarantined",
+        "quarantined physical-registrability identification" in note_flat
+        and "W2 is not derived, promoted, or smuggled by this note" in note_flat,
+    )
+    check(
+        "action-level determinant datum is supplied, not derived",
+        "The action-level determinant datum is supplied, not derived" in note_text
+        and "it does not prove that no physical datum outside the class can appear" in note_flat,
+    )
+    check(
+        "physical/non-registrable/multi-plaquette exclusions remain non-claims",
+        "not load-bearing in this note" in note_flat.lower()
+        and "any multi-plaquette, source-insertion, or non-registrable readout exclusion" in note_text,
+    )
+    check(
+        "source note expected scorecard matches runner count",
+        "TOTAL: PASS=40 FAIL=0" in note_text,
+    )
 
     # ------------------------------------------------------------------
     section("B1 - K/CPT orbit structure of the determinant datum (3x3 numeric)")
@@ -396,7 +429,8 @@ def main() -> int:
     # ------------------------------------------------------------------
     section("B5 - action-level composition (per-plaquette class) + named boundary")
 
-    # Composition with the retained_bounded P1 note (not a re-derivation):
+    # Composition with the retained_bounded cross-plane absence note (not a
+    # re-derivation):
     # a per-plaquette action is a sum of single-plane summands, so every
     # cross-plane mixed derivative vanishes for arbitrary symbolic f.
     x01, x23, x02, x13, x03, x12 = sp.symbols("x01 x23 x02 x13 x03 x12", real=True)
@@ -411,7 +445,7 @@ def main() -> int:
     check(
         "per-plaquette (single-plane-summand) class: all dual-pair cross-plane mixed derivatives vanish",
         ok_cross,
-        detail="composes with retained_bounded P1; no local F.Ftilde slot to host an orientation datum",
+        detail="composes with retained_bounded cross-plane absence; no local F.Ftilde slot to host an orientation datum",
     )
 
     note_plain = (
@@ -422,7 +456,7 @@ def main() -> int:
     note_plain = " ".join(note_plain.split())
     check(
         "BOUNDARY: registrability of the physical readout (W2) is a standing premise, not derived here",
-        "standing registrability identification" in note_plain
+        "quarantined physical-registrability identification" in note_plain
         and "it does not prove the physical readout must be registrable" in note_plain,
         detail="theorem is conditional on the Record-registrable class (additivity + orbit constancy)",
     )
@@ -435,8 +469,8 @@ def main() -> int:
     )
     check(
         "BOUNDARY: per-plaquette class is a licensed input (retained_bounded); multi-plaquette/clover reopens a cross-plane slot",
-        "the supplied action class is licensed, not derived" in note_plain
-        and "multi-plaquette / clover terms" in note_plain,
+        "the action-level determinant datum is supplied, not derived" in note_plain
+        and "multi-plaquette" in note_plain,
         detail="the action-level half is conditional on the supplied class",
     )
     check(

@@ -22,7 +22,8 @@ Tests:
   (T5) Combined identity: T^a T^b = (1/2)(δ^{ab}/3 · I + (d^{abc} + i f^{abc}) T^c)
   (T6) Independence of d from f: f^{abc} is anti-symmetric and d^{abc} is
        symmetric — they live in orthogonal tensor decomposition
-  (T7) Cubic d-Casimir scalar is 10/9 I_3 in the same normalization
+  (T7) Abstract-fundamental cubic Casimir:
+       d^{abc} T^a T^b T^c = (10/9) I_3 and commutes with all T^a
 """
 from __future__ import annotations
 
@@ -199,9 +200,9 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if t6_ok else 'FAIL'}")
     print()
 
-    # ----- Test 7: cubic d-Casimir scalar in the same normalization -----
+    # ----- Test 7: abstract-fundamental cubic d-Casimir scalar -----
     print("-" * 72)
-    print("TEST 7: d^{abc} T^a T^b T^c = (10/9) I_3")
+    print("TEST 7: d^{abc} T^a T^b T^c = (10/9) I_3 on the abstract fundamental")
     print("-" * 72)
     cubic = sum(
         d[a, b, c] * (T[a] @ T[b] @ T[c])
@@ -211,10 +212,12 @@ def main() -> None:
     )
     cubic_target = (10.0 / 9.0) * I3
     cubic_dev = np.linalg.norm(cubic - cubic_target)
+    central_dev = max(np.linalg.norm(cubic @ gen - gen @ cubic) for gen in T)
     cubic_scalar = np.trace(cubic) / 3.0
-    print(f"  Tr(C_3)/3 = {cubic_scalar.real:.12f} + {cubic_scalar.imag:.3e}i")
-    print(f"  max ||d^{{abc}} T^a T^b T^c - (10/9) I_3|| = {cubic_dev:.3e}")
-    t7_ok = cubic_dev < 1e-10
+    print(f"  scalar Tr(C_3)/3 = {cubic_scalar.real:.12f} + {cubic_scalar.imag:.3e}i")
+    print(f"  max ||C_3 - (10/9) I_3|| = {cubic_dev:.3e}")
+    print(f"  max ||[C_3, T^a]|| = {central_dev:.3e}")
+    t7_ok = cubic_dev < 1e-10 and central_dev < 1e-10
     print(f"  STATUS: {'PASS' if t7_ok else 'FAIL'}")
     print()
 
@@ -225,7 +228,7 @@ def main() -> None:
     print(f"  Test 4 (reference values match):                  {'PASS' if t4_ok else 'FAIL'}")
     print(f"  Test 5 (combined T^a T^b identity):               {'PASS' if t5_ok else 'FAIL'}")
     print(f"  Test 6 (f anti-sym, d sym in (a,b)):              {'PASS' if t6_ok else 'FAIL'}")
-    print(f"  Test 7 (cubic d-Casimir scalar 10/9):             {'PASS' if t7_ok else 'FAIL'}")
+    print(f"  Test 7 (abstract-fundamental cubic Casimir):      {'PASS' if t7_ok else 'FAIL'}")
     all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok, t7_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     if not all_ok:

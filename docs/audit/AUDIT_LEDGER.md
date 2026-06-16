@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 948 |
+| **retained_bounded** | 949 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1430 |
+| unaudited | 1429 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1397 |
+| `audited_clean` | 1398 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1747 |
+| `unaudited` | 1746 |
 
 | claim_type | count |
 |---|---:|
@@ -268,6 +268,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `chsh_structural_bound_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -3617,6 +3618,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Landau identity S_op^2 = 4I - [Ã_0, Ã_1][B̃_0, B̃_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2√2.  _(class `A`)_
 - **chain closes:** True — The classical proof is a finite sign enumeration and the quantum proof is an exact operator identity plus standard norm inequalities under the stated tensor-product involution hypotheses. The runner source performs genuine symbolic and numerical checks rather than merely printing pass lines.
 - **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
+- **auditor confidence:** high
+
+### `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20`
+
+- **Note:** [`CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`](../../docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the retained two-site qubit tensor carrier C^2_x tensor C^2_y, any dichotomic self-adjoint local qubit observables satisfy the CHSH operator norm bound ||C|| <= 2sqrt(2), with the standard Pauli/Bell witness saturating it.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-022204-71ef85681c-chsh_tsirelson_lattice_qubit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Landau/Tsirelson identity C^2 = 4I - [A_1,A_2] tensor [B_1,B_2], together with ||[A_1,A_2]|| <= 2 and ||[B_1,B_2]|| <= 2, gives ||C||^2 <= 8.  _(class `A`)_
+- **chain closes:** True — Expanding C = A_1 tensor (B_1+B_2) + A_2 tensor (B_1-B_2) gives XY = -[B_1,B_2] and YX = [B_1,B_2], so the displayed negative-sign Landau identity is correct. The two-site tensor bridge supplies the ordinary M_2(C) tensor M_2(C) carrier and Bell state surface, and all non-axiom dependencies are retained-grade.
+- **rationale:** The proof is finite-dimensional operator algebra over the retained two-site tensor surface, not a tuned numerical match or definition substitution. Independent formula checks confirm the key signs, factors, and normalizations: X^2+Y^2 = 4I, XY = -[B_1,B_2], YX = [B_1,B_2], and the Pauli/Bell witness gives 2sqrt(2). The runner source substantively computes the Landau identity, the old wrong-sign negative control, commutator norms, spectrum, and Bell expectation. The tensor-composition no-go is respected because the claim routes through the retained tensor-carrier bridge rather than deriving tensor composition from locality alone.
 - **auditor confidence:** high
 
 ### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`

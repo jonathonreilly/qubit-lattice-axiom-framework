@@ -1,0 +1,29 @@
+loop: record-formation-pnd-split-20260616
+branch: physics-loop/record-formation-pnd-split-20260616
+base: origin/main
+target_claim_id: record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05
+target_status: bounded-support source repair
+current_cycle: 1
+active_route: split overbroad iff into pointer-conservation theorem plus controlled-copy sufficient construction
+audit_blocker_quoted: "Split the clean finite controlled-coupling example from the over-broad equivalence, then re-audit a narrowed theorem with explicit record-forming coupling and persistence hypotheses."
+files_touched:
+  - docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md
+  - scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
+  - logs/runner-cache/frontier_record_formation_dynamics_constraint_2026_06_05.txt
+open_imports:
+  - quantum-Darwinism record bridge remains an explicit bounded model convention
+  - nonzero controlled-copy coupling and recording time are sufficient-construction hypotheses
+  - fresh-fragment or decoupling persistence is a sufficient-construction hypothesis
+claim_boundary: "No claim that arbitrary pointer-non-demolition Hamiltonians form records; H=0 is named as a counterexample."
+checks:
+  - "python3 -m py_compile scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py"
+  - "python3 scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py"
+  - "python3 scripts/cached_runner_output.py scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py --refresh --timeout-sec 120"
+  - "python3 scripts/cached_runner_output.py scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py --check-only"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py --check-only"
+  - "python3 docs/audit/scripts/audit_lint.py --strict"
+  - "git diff --check"
+  - "git diff --name-only -- docs/audit docs/publication/ci3_z3 docs/repo/FRONT_DOOR_STATUS.md"
+review_disposition: pass-local
+audit_required_before_effective_status_change: true
+next_exact_action: "Commit, push, open review PR, then let independent audit own re-seeding and verdict."

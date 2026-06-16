@@ -1,0 +1,17 @@
+loop_slug: quark-generation-scorecard-sync-20260616
+target_claim_id: quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28
+target_status: bounded-support
+started_from: origin/main
+block_count: 1
+active_route: post_audit_runner_scorecard_sync
+files_touched:
+  - docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md
+open_imports: []
+claim_boundary: >
+  Sync only the stale expected runner certificate in the source note from
+  PASS=44 to PASS=46. The bounded representation-theoretic no-go is unchanged
+  and remains independent-audit owned.
+review_disposition: pass
+next_exact_action: >
+  Hand this PR to the reviewer so the audit lane can re-check the same bounded
+  no-go with source/cache output aligned.

@@ -1,0 +1,23 @@
+loop_slug: yt-p1-is-native-quarantine-20260616
+target_status: demotion
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+cycle_count: 1
+active_route: source-side quarantine of stale native-BZ replacement bridge
+hard_residual: corrected native P1 matching remains open and requires a new taste-normalized/full-doubler derivation
+files_touched:
+  - docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md
+  - scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
+  - logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt
+  - .claude/science/physics-loops/yt-p1-is-native-quarantine-20260616/
+open_imports:
+  - supplied literature bracket I_S in [4,10], conditional only
+  - corrected native scalar/fermion matching, not yet derived as controlled P1 input
+no_go_routes:
+  - consuming old I_S_native=3.902 as native replacement after the /N_TASTE correction
+trace_gate_classification: direct_blocker_closure
+review_findings: branch-local self-review only; reviewer/review-loop will handle integration
+pr_status: ready_to_open
+next_exact_action: commit, push, and open PR
+stop_condition: one coherent demotion/repair PR opened

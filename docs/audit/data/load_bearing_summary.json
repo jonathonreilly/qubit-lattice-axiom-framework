@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 541,
     "high": 514,
-    "leaf": 1455,
-    "medium": 943
+    "leaf": 1456,
+    "medium": 942
   },
   "flagship_signal_used": false,
   "node_count": 3453,
@@ -55,8 +55,8 @@
     {
       "claim_id": "key_terminology",
       "criticality": "critical",
-      "load_bearing_score": 47.631,
-      "transitive_descendants": 1120
+      "load_bearing_score": 47.629,
+      "transitive_descendants": 1119
     },
     {
       "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
@@ -85,8 +85,8 @@
     {
       "claim_id": "cl3_color_automorphism_theorem",
       "criticality": "critical",
-      "load_bearing_score": 41.448,
-      "transitive_descendants": 987
+      "load_bearing_score": 41.45,
+      "transitive_descendants": 988
     },
     {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
@@ -127,8 +127,8 @@
     {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
-      "load_bearing_score": 36.574,
-      "transitive_descendants": 1077
+      "load_bearing_score": 36.573,
+      "transitive_descendants": 1076
     },
     {
       "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",

@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
         "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
         "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15",
         "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
         "gate_b_dynamics_note",
         "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17",
-        "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05"
+        "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05",
+        "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8d729f3e4b826616b0c899ecbbf7986e653cb2afd70016d4e9dfef7dd3a10cfa",
+      "note_hash": "62058c123fab1f14fb76a3e2377e01872298d15065593ebd4406531005ffe237",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

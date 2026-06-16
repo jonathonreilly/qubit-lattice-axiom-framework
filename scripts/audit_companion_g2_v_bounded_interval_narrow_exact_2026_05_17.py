@@ -143,6 +143,18 @@ def main() -> int:
         "(X7) source note no longer registers one-loop RGE as a row-local named admission",
         "**(X7) Named 1-loop RGE admission.**" not in note_text,
     )
+    check(
+        "(X1) source note no longer claims [0.96,0.98] brackets 0.988",
+        "brackets the weak-coupling-series value" not in note_text,
+    )
+    check(
+        "(X1) source note says 0.988 is outside the admitted interval",
+        "`u_0 ≈ 0.988`) is **outside** that interval" in note_text,
+    )
+    check(
+        "(X1) source note keeps 0.988 non-load-bearing",
+        "non-load-bearing literature context" in note_text,
+    )
 
     # ------------------------------------------------------------------
     section("Part 1: symbolic setup (positive real symbols)")
@@ -306,6 +318,30 @@ def main() -> int:
         "(I5) g_hi < 0.75 (loose physical sanity bound)",
         bool(g_hi < Float("0.75")),
         detail=f"g_hi = {Numeric(g_hi, 10)}",
+    )
+
+    # ------------------------------------------------------------------
+    section("Part 6b: weak-coupling 0.988 comparator is outside X1")
+    # ------------------------------------------------------------------
+    u_weak = Rational(988, 1000)
+    g2_at_uweak_sym = g2_v_closed_form.subs({u0: u_weak, b2: b2_val, L: L_val})
+    g2_at_uweak_num = Numeric(g2_at_uweak_sym, 30)
+    print(f"  weak-coupling comparator u_weak = {u_weak} = {float(u_weak)}")
+    print(f"  g_2(v) at u_weak = 0.988 (context only): {g2_at_uweak_num}")
+    check(
+        "(U1) weak-coupling readout 0.988 lies above the admitted upper endpoint 0.98",
+        bool(u_weak > u_hi),
+        detail=f"u_weak - u_hi = {float(u_weak - u_hi):.6f}",
+    )
+    check(
+        "(U2) g_2 at u_weak is below g_lo, hence outside the certified interval",
+        bool(g2_at_uweak_num < g_lo),
+        detail=f"g_2(u_weak) - g_lo = {Numeric(g2_at_uweak_num - g_lo, 12)}",
+    )
+    check(
+        "(U3) 0.988 comparator is not used as an endpoint",
+        u_weak not in (u_lo, u_hi),
+        detail="load-bearing endpoints remain 96/100 and 98/100",
     )
 
     # ------------------------------------------------------------------

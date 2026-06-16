@@ -17,7 +17,7 @@ arithmetic elsewhere, the bounded prediction surface:
    (x_F = 25, S_vis/S_dark = 1.59, alpha_X = alpha_LM).
 5. Bounded band eta_pred in [5.25e-10, 8.11e-10] over
    (x_F, S_vis/S_dark) in [22, 28] x [1.4, 1.7].
-6. Central deviation +4.22% vs eta_obs = 6.12e-10.
+6. Central deviation +4.18% vs eta_obs = 6.12e-10.
 7. Falsifiable single-mass readout m_DM ≈ 3.94 TeV.
 8. Cross-check with ETA_188 structural decomposition consistency.
 9. Note-text recording of the named local packet P1-P7.
@@ -94,11 +94,11 @@ def read_doc(fname: str) -> str:
 
 def compute_C(x_F: float, alpha_X: float, R: float) -> float:
     """C from (M0):
-        C = K * x_F / (sqrt(g_*) * M_Pl * pi * alpha_X^2 * R * 3.65e7)
-    Uses the audit-companion convention 3.65e7 ≈ 1 / (BBN_COEFF * 1e-10)
+        C = K * x_F / (sqrt(g_*) * M_Pl * pi * alpha_X^2 * R * BBN_COEFF_OMEGAB * 1e10)
+    Uses the precise local P3 coefficient, not the rounded 3.65e7 display,
     so that eta_pred = C * m_DM^2 evaluates eta directly.
     """
-    bbn_factor = 3.65e7
+    bbn_factor = BBN_COEFF_OMEGAB * 1.0e10
     return (K_PREFACTOR * x_F) / (
         math.sqrt(G_STAR) * M_PL_GEV * math.pi * alpha_X ** 2 * R * bbn_factor
     )
@@ -171,6 +171,16 @@ audit(
     "Post-audit certificate keeps eta_obs comparator-only",
     "observed `eta_obs` value is a comparator for bracketing only" in note_flat
     and "not a proof input" in note_flat,
+)
+audit(
+    "Note records 2026-06-16 BBN coefficient precision repair",
+    "2026-06-16 BBN coefficient precision repair" in note_text,
+)
+audit(
+    "BBN precision repair uses precise local P3 factor",
+    "3.6515e-3 * 1e10 = 3.6515e7" in note_text
+    and "older rounded `3.65e7`" in note_flat
+    and "precise local P3 factor `3.6515e7`" in note_flat,
 )
 audit(
     "Note records 2026-06-07 source-boundary repair",
@@ -376,8 +386,8 @@ audit(
 
 C_central = compute_C(X_F_CENTRAL, CANONICAL_ALPHA_LM, R_central)
 audit(
-    "C(central) ≈ 4.108e-17 GeV^-2",
-    abs(C_central - 4.108e-17) < 1e-18,
+    "C(central) ≈ 4.106e-17 GeV^-2",
+    abs(C_central - 4.106e-17) < 1e-18,
     f"computed {C_central:.4e}",
 )
 
@@ -398,8 +408,8 @@ audit(
 )
 deviation_pct = 100.0 * (eta_central / ETA_OBS - 1.0)
 audit(
-    "Central deviation ≈ +4.22% vs eta_obs",
-    abs(deviation_pct - 4.22) < 0.5,
+    "Central deviation ≈ +4.18% vs eta_obs",
+    abs(deviation_pct - 4.18) < 0.5,
     f"computed {deviation_pct:+.3f}%",
 )
 
@@ -418,8 +428,8 @@ print("-" * 72)
 grid_points_m0 = [
     ((22.0, 1.7), 5.25e-10),
     ((22.0, 1.59), 5.61e-10),
-    ((22.0, 1.4), 6.38e-10),
-    ((25.0, 1.7), 5.97e-10),
+    ((22.0, 1.4), 6.37e-10),
+    ((25.0, 1.7), 5.96e-10),
     ((25.0, 1.59), 6.38e-10),
     ((25.0, 1.4), 7.24e-10),
     ((28.0, 1.59), 7.14e-10),
@@ -461,7 +471,7 @@ audit(
     f"computed {eta_low_corner:.3e}",
 )
 audit(
-    "Bounded band high corner (x_F=28, S=1.4) ≈ 8.10e-10",
+    "Bounded band high corner (x_F=28, S=1.4) ≈ 8.11e-10",
     abs(eta_high_corner - 8.11e-10) < 5e-11,
     f"computed {eta_high_corner:.3e}",
 )
@@ -648,7 +658,7 @@ if AUDIT_FAILS:
 else:
     print(
         "VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside "
-        "[5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; "
+        "[5.25e-10, 8.11e-10] with central +4.18% vs eta_obs; "
         "m_DM = 3.94 TeV is the supplied composed-product readout; "
         "(C2.eta) remains open."
     )

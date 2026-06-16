@@ -127,13 +127,29 @@ Safe current quantitative results (downstream consequences):
 - retained exact lattice-scale `y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)`
 - derived `y_t(v) = 0.9176`
 - derived `m_t(pole) = 172.57 GeV` (2-loop), `173.10 GeV` (3-loop)
+  > **CORRECTION (2026-06-16):** the **ballpark** is real and carried by the
+  > clean exact Ward theorem `y_t/g_s = 1/sqrt(6)` + SM running, but the
+  > **sub-percent agreement is NOT a controlled prediction**. It relied on the
+  > P1 lattice-matching residual `Δ_R ≈ −3.27%`, now found defective (scalar
+  > `/N_TASTE` double-count + IR-regulator-dependent fermion channel); the
+  > corrected `Δ_R` is an **O(50%) uncontrolled** quantity (non-perturbative
+  > single-link matching). See
+  > `YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md`.
+  > Honest status: m_t lands in the right ballpark (~%); the 172.57 bullseye is
+  > not earned.
 - Yukawa/top lane is carried by the retained exact lattice-scale Ward
   theorem plus standard lattice-matching / SM-running residuals on the
   primary route; the older `1.2147511%` / `0.75500635%` bridge budget
   remains an independent cross-check
+  > **CORRECTION (2026-06-16):** the "lattice-matching residual" on this lane
+  > (the P1 Δ_R channel) is the defective quantity above; treat the residual as
+  > uncontrolled pending re-derivation, not a small bridge budget.
 - derived `m_H = 119.8 GeV` (2-loop support route), `125.1 GeV`
   (framework-side 3-loop route), with vacuum-stability readout inherited
   from the current `y_t` lane
+  > **CORRECTION (2026-06-16):** m_H inherits the y_t lane, so it inherits the
+  > same uncontrolled lattice-matching residual — its sub-% precision is
+  > likewise not a controlled prediction (ballpark only).
 - derived vacuum-stability readout with inherited YT-lane precision caveat
 
 ## Mathematical Infrastructure Versus Physical Inputs

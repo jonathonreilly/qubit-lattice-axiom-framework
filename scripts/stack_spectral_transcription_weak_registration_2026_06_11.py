@@ -6,14 +6,12 @@ Stack spectral transcription at weak registration: the faithful limit
 Companion runner for
 docs/STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-11.md.
 
-CONTEXT.  The kinetic-isotropy retirement chain's remaining ontology-level
-reading is that the layer data consumed by the OS reconstruction is the
-realized tick-generated record data (the one-spectrum scope-boundary slot).
-This runner checks the theorem that grounds that reading constructively in
-the retained arrow note's own model class (redundant-pointer-broadcast record
-production): an exactly solvable registration stack whose covariance
+CONTEXT.  This runner checks a constructed-model theorem inside the retained
+arrow note's own model class (redundant-pointer-broadcast record production):
+an exactly solvable single-fiber registration stack whose covariance
 TRANSCRIBES the tick's band, with the fidelity/strength tradeoff computed in
-closed form.
+closed form.  It does not claim that the realized physical stack belongs to
+this broadcast-registration class.
 
 THE MODEL (the arrow-note class, with a registration-strength dial).
   One fiber: a K/CPT-symmetric two-level carrier with tick
@@ -49,14 +47,12 @@ THE THEOREM (closed form, verified against exact simulation).
        relative cone-slope error is ~ eps^4/(2 omega^2); window and error
        vanish together in the weak-registration limit.
 
-WHAT THIS GROUNDS.  The record-stack spectral reading's mechanism is
-CONSTRUCTED: a record stack of the arrow-note class carries the tick band in
-its own registered covariance, faithfully in the weak-registration limit,
-with the record-strength/fidelity tradeoff soft (polynomial) rather than
-obstructive.  The reading's residual shifts from "an unexplained spectral
-identification" to the record-production-dynamics reading named by the
-canonical record principle (outcome structure is supplied; PRODUCTION
-dynamics is the open row) plus the faithful-limit idealization -- both named.
+WHAT THIS GROUNDS.  A record stack of the arrow-note class carries the tick
+band in its own registered covariance, faithfully in the weak-registration
+limit, with the record-strength/fidelity tradeoff soft (polynomial) rather
+than obstructive.  Later chain work may cite this row for that internal
+constructed-model mechanism only; the physical production-dynamics bridge
+from realized records to this class remains outside the theorem.
 
 EVERY CLAIM GETS A HOSTILE WITNESS:
   strong registration -> eps = pi/4: cos 2 eps = 0, one-tick memory loss
@@ -70,12 +66,11 @@ EVERY CLAIM GETS A HOSTILE WITNESS:
                          the window is exhibited, not hidden.
 
 WHAT THIS DOES NOT CLAIM.  No audit status is set or predicted.  This is an
-exactly solvable single-fiber model of the SAME class as the retained arrow
-note -- it does not derive that the realized stack is of this class (the
-record-production-dynamics reading), and the multi-fiber/field-level
-extension is a separate row.  The registration strength eps is a model dial,
-not a framework constant.  No new axiom, no new primitive, no Tier-A
-admission.
+exactly solvable single-fiber model of the same class as the retained arrow
+note.  It does not derive that the realized stack is of this class, and the
+multi-fiber/field-level extension is a separate row.  The registration
+strength eps is a model dial, not a framework constant.  No new axiom, no new
+primitive, no Tier-A admission.
 
 Run: python3 scripts/stack_spectral_transcription_weak_registration_2026_06_11.py
 """
@@ -370,9 +365,9 @@ check("Second interleaved frequency SHIFTS the recovered band: contamination det
 # ----------------------------------------------------------------------------
 print("\nSCOPE HONESTY: what is NOT proved here")
 print("=" * 78)
-check("Single-fiber exactly solvable model of the arrow-note class: the record-production-dynamics reading is NAMED, not derived",
+check("Single-fiber exactly solvable model of the arrow-note class: the realized-stack production bridge is NOT derived",
       ok_dur and written_counts == [0, 3, 6, 9, 12],
-      "that the realized stack is of this class remains the production-dynamics row")
+      "that the realized stack is of this class remains outside this theorem")
 check("Faithful limit is an idealization: at strictly eps = 0 no records form (amplitude -> 0 with the window)",
       abs(stack_covariance(8, omega, 0.02)[1]) < 1e-2,
       "records and perfect transcription coexist only asymptotically; the tradeoff is soft, not erased")

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 942 |
+| **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1440 |
+| unaudited | 1439 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1389 |
+| `audited_clean` | 1390 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1757 |
+| `unaudited` | 1756 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 899 |
-| `leaf` | 1371 |
+| `medium` | 900 |
+| `leaf` | 1370 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1008 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1120 | 47.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 890 | 45.30 | `unaudited` | unaudited |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 814 | 43.67 | `audited_clean` | **retained_bounded** |
@@ -118,7 +118,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 966 | 38.42 | `audited_clean` | **retained_bounded** |
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 739 | 37.03 | `unaudited` | unaudited |
-| 19 | `cpt_exact_note` | positive_theorem | critical | 1076 | 36.57 | `audited_clean` | **retained** |
+| 19 | `cpt_exact_note` | positive_theorem | critical | 1077 | 36.57 | `audited_clean` | **retained** |
 | 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 893 | 35.80 | `audited_conditional` | ~~audited_conditional~~ |
 | 21 | `three_generation_structure_note` | bounded_theorem | critical | 1087 | 35.59 | `audited_clean` | **retained_bounded** |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 736 | 35.53 | `unaudited` | unaudited |
@@ -1158,6 +1158,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -16743,6 +16744,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The classifier defines separate gates: post-record information, stochastic production kernels, Born/IID probability-origin bridges, Markov generators, clock intervals, and physical rate/unit normalizations.  _(class `E`)_
 - **chain closes:** True — The restricted packet supports the classifier as a definition-level bookkeeping artifact: the code directly defines the premise bundles, levels, missing-premise lists, and blocked-claim lists, and the displayed kernel checks are elementary matrix facts. It does not close a first-principles dynamics derivation, but it does close the stated non-derivational classifier claim.
 - **rationale:** The runner source genuinely computes the displayed stochasticity, determinant, generator, and exp(Qt) checks for the two-state examples, including det(P_lazy)=1/2, det(P_swap)=-1, det(P_reset)=0, Q with off-diagonal log(2)/2, and exp(Q*1)=P_lazy. The actual load-bearing classifier levels and gates are introduced by the code and note as definitions of what premises license which claims. Because the chain is a premise taxonomy rather than a derivation from cited retained inputs or a first-principles framework computation, the appropriate class is E and the verdict is audited_renaming.
+- **auditor confidence:** high
+
+### `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15`
+
+- **Note:** [`RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md`](../../docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the supplied C3 pointer S=C+C^2 and the Stage-1 circulant record-preserving generator, singlet/doublet block weights are conserved under H-evolution and the two-sector record preserves doublet-internal coherence.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-014837-2b3fe24280-record_preservation_conserve`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since [H,S]=0, H commutes with the singlet/doublet spectral projectors of S, so U(t)=exp(-iHt) preserves tr(P_doublet rho) and the coarse record D_S leaves P_doublet rho P_doublet intact.  _(class `A`)_
+- **chain closes:** True — The cited Stage-1 authority supplies [H,S]=0 and the pointer authority supplies the two-sector decomposition. Spectral-projector algebra then gives [H,P_doublet]=0 and D_S(rho)'s doublet block equals the original doublet block, so the scoped conservation/preservation conclusion follows.
+- **rationale:** The load-bearing step is exact finite-dimensional algebra over retained-bounded inputs, not a definition, external comparator, or tuned numerical match. Independently, P_singlet=(S+I)/3 and P_doublet=(2I-S)/3, so [H,S]=0 implies [H,P_doublet]=0 and therefore conservation of Tr(P_doublet rho(t)); likewise D_S preserves P_doublet rho P_doublet by construction. The runner checks the relevant matrix identities, conservation behavior, contrasting non-record-preserving control, and record-map properties without hard-coding the conclusion as a fitted target. The clean verdict is only for the stated bounded scope and does not derive or select r, delta, a state, or a relaxation mechanism.
 - **auditor confidence:** high
 
 ### `record_production_interface_principle_2026-06-06`

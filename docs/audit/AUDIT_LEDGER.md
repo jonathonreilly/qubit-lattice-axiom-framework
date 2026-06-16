@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 218 |
-| **retained_no_go** | 212 |
+| **retained_no_go** | 213 |
 | **retained_bounded** | 939 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1446 |
+| unaudited | 1445 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1385 |
+| `audited_clean` | 1386 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1763 |
+| `unaudited` | 1762 |
 
 | claim_type | count |
 |---|---:|
@@ -714,6 +714,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10236,6 +10237,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** selector route; no `eta`, `Omega_Lambda`, or `H_0` numerical claim.  _(class `B`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 1 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified B-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`
+
+- **Note:** [`HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The audited claim is only the direct-route obstruction: H_unit as an SU(2)_L scalar singlet cannot itself equivariantly derive the full one-complex SU(2)_L EWSB doublet; neutral-ray use remains inside an already supplied doublet surface.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-49016d0a73-hunit_to_ewsb_doublet_repres`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** There is no nonzero SU(2)-equivariant linear map from the trivial representation carried by H_unit to the fundamental doublet: Hom_SU(2)(1,2)=0.  _(class `A`)_
+- **chain closes:** True — The Ward authority supplies H_unit as an isospin scalar, while the EW authority supplies the target fundamental doublet bookkeeping. For an equivariant T:C_triv->C^2, T is determined by v=T(1), and SU(2) invariance forces v=0, so the direct bridge is impossible on the stated scope.
+- **rationale:** The load-bearing step is exact representation algebra over the cited inputs, not a definition, renaming, fitted comparator, or tuned numerical match. An independent check gives the same obstruction: invariance under the Pauli generators, equivalently under diagonal SU(2) rotations plus off-diagonal generators, leaves no nonzero vector in the fundamental. The N1-N8 no-go discipline passes for the scoped direct-route no-go because the note explicitly leaves the supplied-doublet route, separate field-content authority, and conditional g_* bookkeeping open.
 - **auditor confidence:** high
 
 ### `hw1_second_order_return_shape_theorem_note`

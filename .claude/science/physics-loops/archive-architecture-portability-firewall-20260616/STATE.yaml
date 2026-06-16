@@ -1,0 +1,20 @@
+loop_slug: archive-architecture-portability-firewall-20260616
+branch: physics-loop/archive-architecture-portability-firewall-20260616
+base: origin/main
+target_status: demotion
+cycle_count: 1
+active_route: archived architecture-portability audit evidence firewall
+target_claim_id: work_history.repo.review_feedback.architecture_portability_audit_2026-04-11
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - archive_unlanded/work-history-unverifiable-portability-2026-04-30/ARCHITECTURE_PORTABILITY_AUDIT_2026-04-11.md
+  - docs/work_history/repo/LANE_STATUS_BOARD.md
+  - docs/work_history/POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md
+  - scripts/archive_architecture_portability_firewall_2026_06_16.py
+open_imports: []
+review_findings: []
+pr_status: pending
+next_exact_action: run verification, commit, push, and open review PR
+stop_condition: coherent source-hygiene block packaged for reviewer

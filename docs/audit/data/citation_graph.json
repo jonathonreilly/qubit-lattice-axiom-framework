@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
         "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
         "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12",
         "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08",
         "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
-        "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
+        "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
+        "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "74b9c142167db49dd2fb7b64599a820f16fa0e6568b96cf8e36fef28ff8ad690",
+      "note_hash": "b597725e541c3221e123556047bbc9a37650e7ae7ea0055f7859c52052a6998e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

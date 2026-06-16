@@ -74,3 +74,43 @@ confirmed used only as a printed comparison target, not a quadrature input; the
 taste-singlet operator structure checked). Investigation chain: kernel-fork
 settled (PR #4128) -> literature/factor audit + independent re-derivation flagged
 the `/N_TASTE` contradiction -> this empirical anchor resolves it.
+
+## Physics-panel spot-check correction (2026-06-16)
+
+A 5-physicist critical spot-check returned **5/5 sound_with_caveats**: the CORE
+is unanimously confirmed; four supporting claims were OVER-STATED and are
+corrected here.
+
+**CONFIRMED (5/5):** the `/N_TASTE=16` on a finished full-BZ staggered scalar
+integral is a spurious **double-count** (runner's own docstring agrees; standard
+staggered-PT has no post-integration `1/16`); the correct single-link coefficient
+is **O(tens), not O(units)** (3.90 is wrong); unimproved single-link 1-loop
+staggered matching is **large/uncontrolled** (Lee-Sharpe's own thesis). Central
+conclusion stands.
+
+**CORRECTIONS (per the panel):**
+1. The "reproduces Lee-Sharpe `c_S=-29.36` to **0.16%**" claim is DOWNGRADED.
+   4/5 found it semi-circular (IMPORTS Lee-Sharpe's own continuum-finite constant
+   and quadratures only the lattice part), computed with the **local kernel
+   (numerator=1)** not H_unit's `N_S`, and partly a tuned coincidence (round
+   `+2.0` for `2.048`; one gluon-exchange integrand for the full X+Y+T+Z sum;
+   one reviewer got the OPPOSITE SIGN). HONEST RESTATEMENT: it reproduces the
+   action-specific **lattice loop constant `c1_S` to ~0.3% and confirms the
+   full-BZ no-division CONVENTION as an order-unity scale check** -- NOT a
+   from-primitives literature reproduction of `c_S`.
+2. `I_S ~ 32` is a **scale/magnitude** check, not anchored to any published value.
+3. The `[4,10]` comparator is NOT "the smeared band." It is the framework's OWN
+   erroneous single-link tadpole-improved bracket (matches NO Lee-Sharpe scheme;
+   true smeared HYP/Fat-7/asqtad values are even SMALLER). The gap is a
+   normalization/quantity difference, not smeared-vs-single-link. The conclusion
+   ("`[4,10]` is the wrong comparator") survives; the reason given was wrong.
+4. The 1-loop correction is **~30-40%** (direct `Z_S`), not "~50%".
+5. CITATION FIX: "Bhattacharya-Gupta hep-lat/9710095 = 39.1" is wrong (that id is
+   a quark-mass review). The `~39` magnitude is real -- Lee-Sharpe hep-lat/0208018
+   Table IV S/P unimproved `38.1` -- cite that.
+6. The fermion `/N_TASTE^2` correct power is **rooting-dependent** (closed loop
+   taste factor is 4, or 1 after rooting -- NOT obviously 16); stays OPEN.
+
+Net: the no-division finding and "single-link matching is uncontrolled" survive;
+the `0.16%` literature-reproduction framing and the smeared characterization do
+not, and are corrected.

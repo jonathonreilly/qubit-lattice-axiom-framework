@@ -42,11 +42,12 @@ an audited-conditional supplied-record premise:
     W_Q = (z^2-1)/2 registered as a SINGLE sector per e-fold (K = 1)
     satisfies the algebra verbatim with unbounded response.
   - (CAP-K) — the registration-RATE clause — has NO retained supplier and
-    is the exact gap: the conditional unbounded finite-additivity schema
-    affirmatively licenses arbitrary finite collections (I(R_n) = n, no
-    cap); the witness assignment of 4^k UNIT records to e-fold k (M = 1,
-    every prefix an exact finite collection, sum = (4^{K+1}-1)/3) is fully
-    schema-compliant and violates (BR-int). The two sub-clauses fail
+    is the exact gap: under its supplied-record/readout-context premise, the
+    conditional unbounded finite-additivity schema permits arbitrary finite
+    collections (I(R_n) = n, no cap); the witness assignment of 4^k supplied
+    UNIT records to e-fold k (M = 1, every prefix an exact finite collection,
+    sum = (4^{K+1}-1)/3) is schema-compliant only under that premise and
+    violates (BR-int). The two sub-clauses fail
     independently (W_Q: K bounded, M unbounded; 4^k family: M = 1, K
     unbounded) — exactly parallel to the W_G/W_Q split of the (NU) note.
   - Route B (quantum): finite local dimension bounds the PER-REGISTER
@@ -512,7 +513,7 @@ ctx_allowed = {
     "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06": {"retained_no_go"},
     "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": {"retained"},
     "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": {"retained"},
-    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {"retained_pending_chain"},
+    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {"retained_pending_chain", "retained_bounded"},
     "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06": {"retained"},
 }
 ctx_bad = {
@@ -522,7 +523,7 @@ ctx_bad = {
 }
 check(
     "B",
-    "cited rows present at their current admissible effective statuses; unbounded Record is audited_conditional and local tomography is retained_pending_chain in the live ledger",
+    "cited rows present at their current admissible effective statuses; unbounded Record is audited_conditional and local tomography is retained_bounded or retained_pending_chain in the live ledger",
     not ctx_bad,
     detail=f"mismatches={ctx_bad!r}",
 )

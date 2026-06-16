@@ -2,6 +2,8 @@
 
 ## What Changed
 
+PR: <https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4117>
+
 This branch updates the hierarchy formula support row so B3 is no longer a single vague substrate/regulator gate.
 
 - B3a is now the four-direction kinetic-form substrate, sourced to the approved `kinetic_isotropy_primitive`.

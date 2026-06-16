@@ -21,6 +21,6 @@ open_imports:
   - B4 attachment-observable identification for alpha_LM^16 transport
   - B5 observable identification if C1 is upgraded to an EW VEV claim
 review_findings: []
-pr_status: pending
-next_exact_action: "Run checks, commit, push, open PR, and ask review/audit to inspect the B3a primitive split separately from the remaining B3b/B4 gates."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4117"
+next_exact_action: "Reviewer should inspect PR #4117, then independent audit can re-check whether B3a is separable from the remaining B3b/B4 hierarchy gates."
 stop_condition: "Coherent source repair PR opened; continue scanning remaining conditionals if requested."

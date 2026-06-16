@@ -2,7 +2,8 @@
 
 **Date:** 2026-04-13 (2026-05-18: claim_scope formalized as conditional
 bounded witness on the imported reduced-shell surface per audit
-verdict boundary instruction)
+verdict boundary instruction; 2026-06-16: audit-packet helper-source
+repair recorded, with no status promotion)
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 tightening):** the load-bearing content
 of this note is **a conditional bounded witness on the imported
@@ -225,3 +226,36 @@ dependency targets matching the audit verdict's named missing
 dependency edges. Mirrors the live cite-chain pattern used by the
 `DM_NEUTRINO_SCHUR_SUPPRESSION_THEOREM_NOTE_2026-04-15.md` cluster
 (commit `02ad4fadd`).
+
+## 2026-06-16 audit-packet helper-source repair
+
+The post-audit blocker on this row became narrower after the bounded
+umbrella wrapper was retained: the remaining mechanical issue was that
+the audit packet dependency resolver exposed only `_frontier_loader.py`
+for this runner, so the restricted packet still treated the five
+frontier helper modules as opaque dynamic imports.
+
+The resolver now parses `_frontier_loader.load_frontier(..., "*.py")`
+calls directly. For this row, the generated packet map
+`docs/audit/data/audit_packet_script_deps.json` now exposes the helper
+source chain used by
+`scripts/frontier_one_parameter_reduced_shell_law.py`, including:
+
+- `scripts/frontier_star_shell_projector.py`
+- `scripts/frontier_same_source_metric_ansatz_scan.py`
+- `scripts/frontier_coarse_grained_exterior_law.py`
+- `scripts/frontier_sewing_shell_source.py`
+- `scripts/frontier_radial_shell_matching_law.py`
+
+and the transitive helper sources reached through those modules:
+
+- `scripts/frontier_finite_rank_gravity_residual.py`
+- `scripts/frontier_flux_fixed_matching_theorem.py`
+
+This addendum is an audit-packet artifact repair only. It does not
+promote the theorem, assert a retained derivation of the helper
+operators, or alter the claim scope. A re-audit should now be able to
+inspect the actual helper sources rather than treating the reduced-shell
+operators as hidden runtime premises; the auditor still decides whether
+that closes the runner-artifact issue or leaves a genuine retained
+helper-authority gap.

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py
-runner_sha256: f627ca2a5b9d24ff0a2625b474fffd8c774ca6df026db846783109284227e8f1
+runner_sha256: e86438b835f9e83f0dd77c05154b08963dbcfc4877ba366d11ce2c8514d7cc6a
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -10,6 +10,7 @@ Record unbounded finite-additivity schema
 actual_current_surface_status: conditional-support
 trace_class: upstream_support
 reachability_to_target: supports
+dependency_repair: record_history_monoid_unbounded_retention_2026-06-05
 proposal_allowed: false
 audit_required_before_effective_retained: true
 
@@ -44,22 +45,27 @@ C. post-record information is not a probability law
 
 D. audit-lane classifier consequences
 [PASS] fixed finite prefix additivity is exact
-[PASS] unbounded schema is not a production claim
+[PASS] unbounded schema depends on record-history finite-prefix support
 [PASS] production kernel remains open
 [PASS] probability law remains open
 [PASS] IID typicality remains open
 [PASS] clock/rate remains open
 [PASS] dial selection remains open
 
-E. supplied-record premise firewall
+E. dependency-edge and source-boundary checks
 [PASS] source note states bounded theorem / conditional-support status
-[PASS] source note has supplied-record premise firewall
-[PASS] downstream citation rule is explicit
-[PASS] source note says Record does not supply producer/readout/unbounded availability
+[PASS] source note cites current minimal axiom memo
+[PASS] source note cites record-history monoid theorem
+[PASS] source note has dependency-edge repair section
+[PASS] minimal Record axiom is durable realized-outcome registration
+[PASS] minimal Record axiom excludes producer/readout dynamics
+[PASS] record-history monoid supplies arbitrary finite Z^3 slots
+[PASS] record-history monoid does not claim production dynamics
+[PASS] downstream citation rule carries the right boundary
 [PASS] downstream retained-authority firewall is explicit
 
-SCORECARD: PASS=35 FAIL=0
-VERDICT: Record finite additivity gives exact finite-prefix readout and a conditional unbounded finite-collection schema. The unbounded lift needs supplied nonzero disjoint records; it does not derive production, probability, IID, rates, or a dial.
+SCORECARD: PASS=40 FAIL=0
+VERDICT: Record finite additivity gives exact finite-prefix readout. Together with the record-history monoid, it gives an unbounded finite-prefix schema on Z^3 once a readout context supplies a nonzero realized record atom. It does not derive production, readout-context selection, probability, IID, rates, or a dial.
 
 ----- stderr -----
 

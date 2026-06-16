@@ -7,7 +7,8 @@ exact algebraic consequence relevant to the "bounded vs unbounded" question:
 
 * every fixed finite prefix is bounded by its fixed length;
 * the schema over arbitrary finite disjoint collections has no intrinsic
-  finite cap once nonzero produced records are supplied;
+  finite cap once a readout context supplies a nonzero realized record atom
+  and the record-history monoid supplies arbitrary finite slots on Z^3;
 * post-record counts are realized information, not a probability law.
 """
 
@@ -22,6 +23,8 @@ PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md"
+MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+HISTORY_MONOID = ROOT / "docs" / "RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -85,6 +88,7 @@ def main() -> int:
     print("actual_current_surface_status: conditional-support")
     print("trace_class: upstream_support")
     print("reachability_to_target: supports")
+    print("dependency_repair: record_history_monoid_unbounded_retention_2026-06-05")
     print("proposal_allowed: false")
     print("audit_required_before_effective_retained: true")
     print()
@@ -139,7 +143,7 @@ def main() -> int:
     print("\nD. audit-lane classifier consequences")
     gate_status = {
         "fixed_finite_prefix": "exact",
-        "arbitrary_finite_prefix_schema": "conditional_on_nonzero_disjoint_records",
+        "arbitrary_finite_prefix_schema": "requires_record_history_monoid_and_nonzero_record_atom",
         "production_kernel": "open",
         "probability_law": "open",
         "iid_typicality": "open",
@@ -147,30 +151,74 @@ def main() -> int:
         "dial_selection": "open",
     }
     check("fixed finite prefix additivity is exact", gate_status["fixed_finite_prefix"] == "exact")
-    check("unbounded schema is not a production claim", gate_status["arbitrary_finite_prefix_schema"] == "conditional_on_nonzero_disjoint_records")
+    check(
+        "unbounded schema depends on record-history finite-prefix support",
+        gate_status["arbitrary_finite_prefix_schema"] == "requires_record_history_monoid_and_nonzero_record_atom",
+    )
     check("production kernel remains open", gate_status["production_kernel"] == "open")
     check("probability law remains open", gate_status["probability_law"] == "open")
     check("IID typicality remains open", gate_status["iid_typicality"] == "open")
     check("clock/rate remains open", gate_status["clock_rate"] == "open")
     check("dial selection remains open", gate_status["dial_selection"] == "open")
 
-    print("\nE. supplied-record premise firewall")
+    print("\nE. dependency-edge and source-boundary checks")
     note = NOTE.read_text(encoding="utf-8")
+    minimal = MINIMAL_AXIOMS.read_text(encoding="utf-8")
+    history_monoid = HISTORY_MONOID.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
-    check("source note states bounded theorem / conditional-support status", "**Claim type:** bounded_theorem" in note and "actual_current_surface_status: conditional-support" in note)
-    check("source note has supplied-record premise firewall", "2026-06-15 Supplied-Record Premise Firewall" in note)
-    check("downstream citation rule is explicit", "conditional_on_supplied_nonzero_disjoint_records_and_readout_context" in note)
-    check("source note says Record does not supply producer/readout/unbounded availability", "does not supply the producer" in note_flat and "availability of arbitrarily many nonzero records" in note_flat)
-    check("downstream retained-authority firewall is explicit", "must not cite this row as retained authority" in note_flat)
+    minimal_flat = " ".join(minimal.split())
+    history_flat = " ".join(history_monoid.split())
+    history_plain = history_flat.replace("`", "").lower()
+    check(
+        "source note states bounded theorem / conditional-support status",
+        "**Claim type:** bounded_theorem" in note and "actual_current_surface_status: conditional-support" in note,
+    )
+    check("source note cites current minimal axiom memo", "MINIMAL_AXIOMS_2026-06-05.md" in note)
+    check("source note cites record-history monoid theorem", "RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md" in note)
+    check("source note has dependency-edge repair section", "## Dependency-Edge Repair" in note)
+    check(
+        "minimal Record axiom is durable realized-outcome registration",
+        "A record is the durable registration of the realized outcome" in minimal
+        and "For any finite pairwise-disjoint collection of records" in minimal,
+    )
+    check(
+        "minimal Record axiom excludes producer/readout dynamics",
+        "A record supplies no readout context" in minimal_flat
+        and "sector-generation rule" in minimal
+        and "measurement/decoherence dynamics" in minimal,
+    )
+    check(
+        "record-history monoid supplies arbitrary finite Z^3 slots",
+        "for every finite n" in history_plain
+        and "no fixed finite cap" in history_plain
+        and "distinct sites" in history_plain
+        and "z^3" in history_plain,
+    )
+    check(
+        "record-history monoid does not claim production dynamics",
+        "not a proof that physical record-production dynamics will realize every finite length" in history_flat,
+    )
+    check(
+        "downstream citation rule carries the right boundary",
+        "requires_supplied_readout_context_and_record_history_monoid_support" in note,
+    )
+    check(
+        "downstream retained-authority firewall is explicit",
+        "must not cite this row as retained authority" in note_flat
+        and "record production" in note_flat
+        and "readout-context selection" in note_flat,
+    )
 
     print()
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     if PASS > 0 and FAIL == 0:
         print(
             "VERDICT: Record finite additivity gives exact finite-prefix "
-            "readout and a conditional unbounded finite-collection schema. "
-            "The unbounded lift needs supplied nonzero disjoint records; it "
-            "does not derive production, probability, IID, rates, or a dial."
+            "readout. Together with the record-history monoid, it gives an "
+            "unbounded finite-prefix schema on Z^3 once a readout context "
+            "supplies a nonzero realized record atom. It does not derive "
+            "production, readout-context selection, probability, IID, rates, "
+            "or a dial."
         )
         return 0
     print("VERDICT: record unbounded-additivity schema failed; do not use this artifact.")

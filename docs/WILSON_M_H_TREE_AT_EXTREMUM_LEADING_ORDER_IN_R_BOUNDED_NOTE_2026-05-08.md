@@ -138,8 +138,10 @@ load-bearing).
 expansion (3) is valid when `(3/2)(r/u_0)^2 << 1`, i.e. `r/u_0 << 1`,
 or roughly `r < u_0 / sqrt(3) ≈ 0.51` at `u_0 = 0.8776`. At `r = O(u_0)`
 the expansion fails (the all-orders sum is needed). The runner exhibits
-the breakdown by direct comparison of the closed-form (2) with the
-leading-order (3) at `r ∈ {0.1, 0.235, 0.5, 0.8}`.
+the breakdown by checking the square-root argument near the boundary and by
+comparing the closed form `sqrt(1-x)` with the first Taylor truncation
+`1 - x/2` for small `x = 3r^2/u_0^2`, with the error controlled by the next
+`x^2/8` scale.
 
 ## Dependencies
 

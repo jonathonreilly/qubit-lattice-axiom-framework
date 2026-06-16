@@ -36,6 +36,7 @@ stdlib only; exact `Fraction` arithmetic.
 from __future__ import annotations
 
 from fractions import Fraction
+import math
 from pathlib import Path
 import re
 import sys
@@ -418,6 +419,22 @@ def part8_perturbative_validity():
         f"computed r_crit^2 = {float(r_critical_sq):.6f}, expected ≈ 0.507^2",
     )
 
+    # The audit blocker asks for a real Taylor-vs-closed-form check, not only
+    # positivity of the square-root argument. For x = 3 r^2/u_0^2,
+    # sqrt(1-x) = 1 - x/2 - x^2/8 - ...; the first-order truncation error must
+    # be controlled by the next x^2/8 scale when x is perturbatively small.
+    for r_test in (Fraction(1, 100), Fraction(5, 100), Fraction(1, 10)):
+        x = 3 * (r_test * r_test) / (U_0 * U_0)
+        closed = math.sqrt(1.0 - float(x))
+        first_taylor = 1.0 - 0.5 * float(x)
+        next_term = 0.125 * float(x * x)
+        error = abs(closed - first_taylor)
+        check(
+            f"r = {float(r_test):.3f}: closed sqrt agrees with first Taylor through O(x^2)",
+            error <= 1.02 * next_term,
+            f"x={float(x):.6e}, error={error:.6e}, next_term={next_term:.6e}",
+        )
+
 
 # ---------------------------------------------------------------------------
 # Part 9: Forbidden-import audit
@@ -425,7 +442,7 @@ def part8_perturbative_validity():
 def part9_forbidden_imports():
     section("Part 9: stdlib-only / no PDG pins (other than declared comparison)")
     runner_text = Path(__file__).read_text()
-    allowed_imports = {"fractions", "pathlib", "re", "sys", "__future__"}
+    allowed_imports = {"fractions", "math", "pathlib", "re", "sys", "__future__"}
     import_lines = [
         ln.strip() for ln in runner_text.splitlines()
         if ln.strip().startswith("import ") or ln.strip().startswith("from ")

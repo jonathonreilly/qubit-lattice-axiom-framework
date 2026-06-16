@@ -1,0 +1,22 @@
+loop_slug: wilson-mh-taylor-runner-repair-20260616
+target_claim_id: wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08
+target_status: bounded-support
+started_from: origin/main
+block_count: 1
+active_route: perturbative_taylor_runner_tightening
+files_touched:
+  - docs/WILSON_M_H_TREE_AT_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md
+  - scripts/frontier_wilson_m_h_tree_at_extremum_leading_order_in_r.py
+  - logs/runner-cache/frontier_wilson_m_h_tree_at_extremum_leading_order_in_r.txt
+open_imports:
+  - uniform-N_taste=16 Higgs-channel readout remains admitted
+  - Wilson coefficient normalization remains admitted/open
+claim_boundary: >
+  Add a runner check comparing the closed square-root form with the first
+  Taylor truncation for perturbatively small x = 3r^2/u_0^2. This tightens
+  the source artifact without deriving the Higgs-channel readout or Wilson
+  coefficient normalization.
+review_disposition: pass
+next_exact_action: >
+  Hand this PR to the reviewer so the independent audit lane can re-check the
+  same bounded formula with a stronger perturbative-validity runner check.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_m_h_tree_at_extremum_leading_order_in_r.py
-runner_sha256: 13508a1c6ba1129109d5d1f09f5751521497a7eb17b3e3d28fbbee4989342857
+runner_sha256: 49a140122a2a3c0db9d744a0b4372e04cf6aba57ab698a7f0f67977e2b10199a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -125,6 +125,9 @@ status: ok
   critical r^2 = u_0^2 / 3 = 0.256727
   critical r ≈ 0.506683
   [PASS] critical r at validity boundary ≈ 0.507 (where ratio_sq = 0)  (computed r_crit^2 = 0.256727, expected ≈ 0.507^2)
+  [PASS] r = 0.010: closed sqrt agrees with first Taylor through O(x^2)  (x=3.895184e-04, error=1.896927e-08, next_term=1.896558e-08)
+  [PASS] r = 0.050: closed sqrt agrees with first Taylor through O(x^2)  (x=9.737961e-03, error=1.191155e-05, next_term=1.185349e-05)
+  [PASS] r = 0.100: closed sqrt agrees with first Taylor through O(x^2)  (x=3.895184e-02, error=1.934419e-04, next_term=1.896558e-04)
 
 ----------------------------------------------------------------------------------------
  Part 9: stdlib-only / no PDG pins (other than declared comparison)
@@ -151,7 +154,7 @@ status: ok
   [PASS] matching value flagged as conditional on non-zero Wilson coefficient r
 
 ========================================================================================
- TOTAL: PASS=77, FAIL=0
+ TOTAL: PASS=80, FAIL=0
 ========================================================================================
 
  VERDICT: m_H_tree^W = (v / (2 u_0)) · sqrt(1 - 3 r^2 / u_0^2) at the

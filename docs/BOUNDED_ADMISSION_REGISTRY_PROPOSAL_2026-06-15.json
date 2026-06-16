@@ -178,7 +178,8 @@
         "O_h helper",
         "frontier helper module"
       ],
-      "classification_status": "first_pass (high reproof leverage) | REVIEWED 2026-06-15: 254 rows (top cluster). Its science core (shell-localization identity) is DERIVED in PR #4123; needs a shell-vs-GR split -- the shell-bounded subset retargets to #4123 (retarget PR in flight), the GR/tensor + Maradudin-lattice-Green rows stay bounded. || CORRECTION 2026-06-16: the dedup count 254 is OVER-ASSIGNED. A conservative shell-vs-GR classification found only 3 rows genuinely rest on the shell-helper surface (retargeted to #4123 in PR #4125 for re-audit); the other 251 are 35 GR-tensor + 8 Maradudin-lattice-Green + 208 diverse-other, belonging in new atoms / the diverse tail. Genuine shell-helper count = 3, NOT 254."
+      "classification_status": "first_pass (high reproof leverage) | REVIEWED 2026-06-15: 254 rows (top cluster). Its science core (shell-localization identity) is DERIVED in PR #4123; needs a shell-vs-GR split -- the shell-bounded subset retargets to #4123 (retarget PR in flight), the GR/tensor + Maradudin-lattice-Green rows stay bounded. || CORRECTION 2026-06-16: the dedup count 254 is OVER-ASSIGNED. A conservative shell-vs-GR classification found only 3 rows genuinely rest on the shell-helper surface (retargeted to #4123 in PR #4125 for re-audit); the other 251 are 35 GR-tensor + 8 Maradudin-lattice-Green + 208 diverse-other, belonging in new atoms / the diverse tail. Genuine shell-helper count = 3, NOT 254. || SOLVED + REMOVED from open backlog 2026-06-16: see _solved (genuine shell science derived #4123, refs cleaned #4125, awaiting re-audit).",
+      "open_backlog": false
     },
     {
       "admission_id": "color_su3_carrier",
@@ -410,5 +411,16 @@
   "_bound_row_ids_map": "docs/BOUNDED_ADMISSION_BOUND_ROW_IDS_MAP_2026-06-16.json -- per-atom bound_row_ids from the careful line-by-line review of all 921 rows (606 canonical + the multi-row MISC groups).",
   "_diverse_tail": "The careful review found ~315 rows do NOT map to a canonical atom; ~268 are effectively-unique one-offs (gravity probes, DM searches, network/teleportation experiments, GR-lattice notes) bounded on their own specific residuals. The bounded register does NOT cleanly reduce to a few atoms -- a third of it is a diverse long tail that will NOT cluster-drain. (Corrects the 67->11 minimize optimism.)",
   "_review_note": "Per-atom leverage REVIEWED 2026-06-15 by the careful line-by-line pass (real counts), replacing the keyword-scan estimates. Notable: imported_literature_series collapsed 369->19 (most import rows have a specific physics atom); helper_frontier 254 is the top cluster.",
-  "_dedup_count_caveat": "IMPORTANT: the per-atom reviewed counts OVER-ASSIGN to the big buckets. The dedup agents tended to dump diverse rows into the largest atom: helper_frontier got 254 but a conservative shell-classification found only 3 genuinely rest on its surface (35 GR-tensor + 8 Maradudin + 208 unrelated). Treat the big-cluster counts as UPPER BOUNDS pending per-cluster shell-classification-style refinement (as done for helper_frontier). Consequence: the diverse unclustered tail is substantially LARGER than first recorded, and candidate new atoms gr_tensor_completion (~35) and lattice_green_asymptotic_maradudin (~8) are warranted."
+  "_dedup_count_caveat": "IMPORTANT: the per-atom reviewed counts OVER-ASSIGN to the big buckets. The dedup agents tended to dump diverse rows into the largest atom: helper_frontier got 254 but a conservative shell-classification found only 3 genuinely rest on its surface (35 GR-tensor + 8 Maradudin + 208 unrelated). Treat the big-cluster counts as UPPER BOUNDS pending per-cluster shell-classification-style refinement (as done for helper_frontier). Consequence: the diverse unclustered tail is substantially LARGER than first recorded, and candidate new atoms gr_tensor_completion (~35) and lattice_green_asymptotic_maradudin (~8) are warranted.",
+  "_workflow": "NON-AUTHORITATIVE living backlog. Loop per atom: SOLVE (derive/reprove) -> CLEAN UP the individual row references (retarget the notes to cite the derivation) -> the lane RE-AUDITS them bounded->retained -> REMOVE the solved atom from the open backlog (logged in _solved). The registry empties as the campaign succeeds; it is never a pipeline authority.",
+  "_solved": [
+    {
+      "atom": "helper_frontier_module_surface (genuine science: the shell-localization identity)",
+      "solved_by": "PR #4123 -- lattice-Laplacian shell-localization identity derived from primitives (Z^3 Laplacian + O_h), runner-verified PASS=14",
+      "references_cleaned": "PR #4125 -- the 3 genuinely-shell-bounded notes retargeted to cite #4123",
+      "rows": 3,
+      "status": "awaiting independent lane re-audit (bounded->retained); REMOVED from the open backlog",
+      "note": "helper_frontier's '254' was ~82% over-assignment; its genuine residual was the 3-row shell-localization core, now solved. The over-assigned 251 (35 GR-tensor + 8 Maradudin-lattice-Green + 208 diverse) are NOT this atom and need reassignment to gr_tensor_completion / lattice_green_asymptotic / the diverse tail."
+    }
+  ]
 }

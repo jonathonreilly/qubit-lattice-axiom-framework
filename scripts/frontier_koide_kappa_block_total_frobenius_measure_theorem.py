@@ -5,8 +5,8 @@ Companion to
 `docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`.
 
 Claim.  The 1:1 real-isotype measure named by the MRU weight-class
-obstruction theorem is realized on `Herm_circ(d)` by the block-total
-Frobenius-squared functional
+obstruction theorem has a bounded algebraic candidate on `Herm_circ(d)`:
+the block-total Frobenius-squared functional
 
     E_I(H) := || pi_I(H) ||_F^2
 
@@ -19,10 +19,13 @@ real isotypes are the trivial scalars `a I` and the real doublet
     E_perp(H) = || b C + bbar C^2 ||_F^2 = 6 |b|^2.
 
 The functional assigns one scalar slot per real isotype independent of
-block real dimension.
+block real dimension.  This runner verifies the finite algebra; it does
+not derive the scalar-lane SO(2) quotient or prove that the block-total
+law is the canonical physical scalar measure.
 
 At `d = 3`, Frobenius reciprocity gives `Herm_circ(3) = 1 * trivial +
-1 * doublet` so the multiplicities are (1, 1), matching MRU exactly.
+1 * doublet` so the multiplicities are (1, 1), matching the MRU target
+when the block-total carrier is stipulated.
 `d = 3` is the unique dimension where the multiplicity pattern is
 (1, 1) (two real isotypes with multiplicity one each).
 
@@ -36,7 +39,8 @@ Runner tasks:
   T6  MRU E_+ = E_perp  equivalent to kappa := a^2/|b|^2 = 2
   T7  d=3 multiplicity pattern (1 trivial + 1 doublet) enumerated
   T8  Multiplicity pattern at d=2,3,4,5,6 — d=3 is unique for (1,1)
-  T9  PDG charged-lepton Koide realizes E_+ = E_perp at machine precision
+  T9  Synthetic numeric instance verifies the direct Frobenius formulas;
+      PDG charged-lepton data are printed only as a non-load-bearing comparator
   T10 Block-total law (1,1) differs from log|det| law (1,2) by factor 2
 """
 
@@ -254,28 +258,15 @@ check(
 )
 
 # ---------------------------------------------------------------------------
-# PDG realization
+# Synthetic numeric realization
 # ---------------------------------------------------------------------------
 
-print("\nSection C — PDG charged-lepton block totals")
+print("\nSection C — synthetic block-total Frobenius numeric check")
 
-m_e = 0.51099895000
-m_mu = 105.6583755
-m_tau = 1776.86
-v = np.array([math.sqrt(m_e), math.sqrt(m_mu), math.sqrt(m_tau)])
-
-w = np.exp(2j * np.pi / 3)
-a_num = float(np.sum(v) / 3.0)
-b_num = (v[0] + np.conj(w) * v[1] + w * v[2]) / 3.0
+a_num = 1.7
+b_num = 0.4 + 0.9j
 E_plus_num = 3 * a_num ** 2
 E_perp_num = 6 * abs(b_num) ** 2
-
-ratio = E_plus_num / E_perp_num
-check(
-    "T9a PDG E_+ / E_perp ~ 1 (MRU equipartition at charged-lepton data)",
-    abs(ratio - 1.0) < 3e-4,
-    detail=f"E_+/E_perp = {ratio:.6f}",
-)
 
 # Verify the block-total law via direct Frobenius evaluation on
 # pi_+(H) = a I, pi_perp(H) = b C + bbar C^2 computed from H.
@@ -287,15 +278,33 @@ pi_perp_num = H_num - pi_plus_num
 E_plus_direct = np.linalg.norm(pi_plus_num, "fro") ** 2
 E_perp_direct = np.linalg.norm(pi_perp_num, "fro") ** 2
 check(
-    "T9b direct Frobenius || pi_+(H) ||^2 = 3 a^2",
+    "T9a direct Frobenius || pi_+(H) ||^2 = 3 a^2 (synthetic)",
     abs(E_plus_direct - E_plus_num) < 1e-9,
     detail=f"direct = {E_plus_direct:.6f}, formula = {E_plus_num:.6f}",
 )
 check(
-    "T9c direct Frobenius || pi_perp(H) ||^2 = 6 |b|^2",
+    "T9b direct Frobenius || pi_perp(H) ||^2 = 6 |b|^2 (synthetic)",
     abs(E_perp_direct - E_perp_num) < 1e-9,
     detail=f"direct = {E_perp_direct:.6f}, formula = {E_perp_num:.6f}",
 )
+check(
+    "T9c synthetic ratio E_+ / E_perp matches closed formula",
+    abs((E_plus_direct / E_perp_direct) - (E_plus_num / E_perp_num)) < 1e-12,
+    detail=f"ratio = {E_plus_direct / E_perp_direct:.6f}",
+)
+
+# Non-load-bearing comparator only.  This is intentionally not a PASS gate:
+# observed masses should not prove the block-total algebra or the canonical
+# scalar-lane measure choice.
+m_e = 0.51099895000
+m_mu = 105.6583755
+m_tau = 1776.86
+v = np.array([math.sqrt(m_e), math.sqrt(m_mu), math.sqrt(m_tau)])
+w = np.exp(2j * np.pi / 3)
+a_pdg = float(np.sum(v) / 3.0)
+b_pdg = (v[0] + np.conj(w) * v[1] + w * v[2]) / 3.0
+pdg_ratio = (3 * a_pdg ** 2) / (6 * abs(b_pdg) ** 2)
+print(f"  [DIAG] PDG comparator E_+/E_perp = {pdg_ratio:.6f} (non-load-bearing)")
 
 # ---------------------------------------------------------------------------
 # T10 — det carrier law (1, 2) vs block-total law (1, 1) disagree off-solution

@@ -108,6 +108,28 @@ This converts the largest cost centers (the ~369 + ~238 import clusters) from
 *bounded* to *retained clean* in cluster-sized chunks instead of one row at a
 time.
 
+## Verification update (2026-06-15)
+
+The per-atom operational test (cited-as-dep bound-check + retirability) was run
+on the 10 `first_pass` atoms (see the JSON `_verification` field). It earned its
+keep -- **two atoms flipped**:
+
+- **`beta6_wilson_coupling` `import -> floor`.** The atom conflated the Wilson
+  matching *relation* (already a bounded theorem) with the *number* beta=6, an
+  external lattice-QCD empirical value that bounds nothing load-bearing. There
+  was never a primitives-reproof to win there -- it is **off the chase-list**.
+- **`koide_so2_quotient` `floor(no_go) -> import(open_target)`.** The block-total
+  Frobenius route is *retained* (PASS=16) and reaches kappa=2 *without* the
+  withheld quotient -- a tractable structural choice, not a wall.
+
+No atom was an axiom-citation-gap; **no genuine new tier:A** (Tier-A stays the
+canonical 2). Verified reproof backlog (all `hard`), by leverage:
+`imported_literature_series` (~369) > `helper_frontier_module_surface` (~238) >
+`staggered_ks_chirality_import` (~104) > `readout_determinant_identification` >
+`koide_so2_quotient`. **Top reproof target: `imported_literature_series`** (a
+framework-native 1-loop BZ integral for I_S, no no-go blocking it). A reproof
+worker is dispatched on it.
+
 ## Honesty / scope of this draft
 
 - **First pass.** `rows_bound` marked `_estimate` are approximate keyword-scan

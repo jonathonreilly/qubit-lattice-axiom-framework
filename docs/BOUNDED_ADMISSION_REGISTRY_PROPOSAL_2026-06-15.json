@@ -1,6 +1,7 @@
 {
   "_status": "PROPOSED -- design + first-pass population for owner approval. NOT wired into the audit pipeline and NOT placed in docs/audit/data/. The session records no approval and makes no audit determination; verdicts, the eventual schema wiring, and the auditor citing this registry are the owner's and the independent Codex auditor's. Approval is the owner's to state directly to the review agent when asked.",
   "schema_version": 0,
+  "_verification": "Per-atom operational test (cited-as-dep bound-check + retirability) run 2026-06-15 on the 10 first_pass atoms. TWO flipped: beta6_wilson_coupling import->floor (the atom conflated the Wilson matching relation -- already a bounded theorem -- with the NUMBER beta=6, an external lattice-QCD empirical value that bounds nothing load-bearing; off the chase-list), and koide_so2_quotient floor->import (the block-total Frobenius route is RETAINED at PASS=16 and reaches kappa=2 WITHOUT the withheld quotient, so it is a tractable structural choice, not a no-go). NO atom was an axiom-citation-gap; NO genuine new tier:A (Tier-A stays the canonical 2). Verified reproof backlog ranked by leverage: imported_literature_series (~369) > helper_frontier_module_surface (~238) > staggered_ks_chirality_import (~104) > readout_determinant_identification > koide_so2_quotient -- all 'hard'. Top target to start: imported_literature_series (largest cluster, well-posed native 1-loop BZ integral, no no-go).",
   "_purpose": "One deduplicated, atom-level catalog of every admission that BOUNDS at least one audit row. Generalizes docs/audit/data/tier_a_admissions.json, which folds in as the tier:A slice -- so the same underlying admission is recorded ONCE (not re-named row by row), ranked by leverage (rows bound x fanout), and tracked by retirability. Turns ~922 scattered row-local bounded_theorem residuals into a single leverage-ranked derivation/reproof backlog.",
   "_one_registry_not_two": "There are NOT two registries. This is the single bounded-admission catalog; 'Tier-A' is the top value of the `tier` field within it, not a separate file. On approval, tier_a_admissions.json folds in as the tier:A entries here.",
   "_tiers": {
@@ -58,15 +59,15 @@
     },
     {
       "admission_id": "beta6_wilson_coupling",
-      "tier": "import",
-      "kind": "forbidden_import",
-      "statement": "the strong-coupling plaquette value beta=6 and the Wilson matching relation beta = 2 N_c / g_bare^2, used from literature rather than reproven from Haar primitives",
-      "retirability": "open_target",
-      "leverage": { "rows_bound_estimate": 46, "top_fanout": 963 },
+      "tier": "floor",
+      "kind": "empirical_input",
+      "statement": "the NUMBER beta=6 -- an external lattice-QCD empirical value. (Distinct from the Wilson matching relation beta = 2 N_c / g_bare^2, which is already a bounded theorem in WILSON_SMALL_A_MATCHING_BETA_GBARE.)",
+      "retirability": "non_retirable",
+      "leverage": { "rows_bound_estimate": 0, "top_fanout": 963 },
       "bound_row_ids": ["g_bare_constraint_vs_convention_theorem_note_2026-05-03", "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03", "yt_p1_i_s_lattice_pt_citation_note_2026-04-17", "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17"],
-      "derivation_state": "beta6_plaquette_campaign_state -- computable runway exhausted; needs analytic-class proof or new dynamical input",
-      "aliases": ["Wilson matching", "beta=6 surface", "g_bare^2=1 corollary", "plaquette coupling"],
-      "classification_status": "first_pass (high reproof leverage)"
+      "derivation_state": "OFF the chase-list: the matching RELATION is already a bounded theorem; the NUMBER beta=6 is external lattice-QCD empirical and bounds nothing load-bearing (is_premise_bounds=scope). beta6_plaquette_campaign computable runway exhausted -- no primitives-reproof exists for the number.",
+      "aliases": ["beta=6 value", "plaquette coupling number"],
+      "classification_status": "VERIFIED 2026-06-15: CHANGED import->floor. The first_pass bundled the derivable matching relation with the empirical number; the number is the floor and bounds nothing."
     },
     {
       "admission_id": "staggered_ks_chirality_import",
@@ -111,7 +112,7 @@
       "leverage": { "rows_bound_estimate": 112, "top_fanout": 314 },
       "bound_row_ids": ["cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02"],
       "aliases": ["MR_color", "SM color/quark carrier", "physical color identification"],
-      "classification_status": "first_pass -- the agent-sort proposed tier:A_new but ALSO called it 'non-retirable', which contradicts tier:A (Tier-A must be retirable). Needs the operational retirability test before recording its tier."
+      "classification_status": "VERIFIED 2026-06-15: tier:import / open_target (resolves the sort's tier:A_new + non-retirable contradiction). The bound row rests only on ALGEBRAIC SU(3) (CL3_COLOR_AUTOMORPHISM); the physical color/quark-carrier identification (MR_color) is the residual import -- retirable in principle by deriving the quark/matter sector from the axioms. NOT a genuine tier:A."
     },
     {
       "admission_id": "readout_determinant_identification",
@@ -194,14 +195,15 @@
     },
     {
       "admission_id": "koide_so2_quotient",
-      "tier": "floor",
-      "kind": "no_go",
-      "statement": "the SO(2)-quotient bridge that elevates a chosen block-total Frobenius law to the canonical physical scalar-lane measure (kappa=2) -- both cited authorities explicitly withhold it",
-      "retirability": "no_go_proven",
+      "tier": "import",
+      "kind": "forbidden_import",
+      "statement": "the scalar-lane measure choice reaching kappa=2 (block-total Frobenius log-law vs det log-law) -- a structural choice between two natural functionals, NOT a withheld quotient",
+      "retirability": "open_target",
       "leverage": { "rows_bound_estimate": 40, "top_fanout": 237 },
       "bound_row_ids": ["koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19"],
-      "aliases": ["SO(2)-quotient", "MRU scalar-lane measure", "kappa=2 elevation"],
-      "classification_status": "first_pass (sort: no_go) -- overlaps the ac_phi_lambda Koide atom; the dedup pass should reconcile"
+      "aliases": ["SO(2)-quotient", "MRU scalar-lane measure", "kappa=2 elevation", "block-total Frobenius law"],
+      "derivation_state": "reproof_needs: derive why the charged-lepton scalar lane decouples the cos(3 arg b) channel (or the carrier reduction rho_perp^2=E_perp) so the multiplicity-weighted route is forced; overlaps the ac_phi_lambda Koide atom -- dedup pass to reconcile",
+      "classification_status": "VERIFIED 2026-06-15: CHANGED floor(no_go)->import(open_target). NOT a no-go: the block-total Frobenius route is RETAINED (PASS=16) and reaches kappa=2 WITHOUT the withheld quotient -- so it is a tractable structural choice between two functionals, both retained."
     }
   ]
 }

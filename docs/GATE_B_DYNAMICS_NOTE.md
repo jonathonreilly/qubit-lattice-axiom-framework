@@ -6,10 +6,28 @@ primitive-to-readout bridge
 **Claim type:** open_gate
 **Audit-scope narrow:** 2026-06-08
 
+## 2026-06-16 weak-field source/action interface split
+
+The post-audit source/action repair
+[`GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md`](GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md)
+splits `GB-S1` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S1a` | linear weak-field test-action form `S = L (1 - phi)` | bounded-support interface from the retained-bounded weak-field source-response bridge |
+| `GB-S1b` | runner scalar `phi_GB(x)=strength/(r(x,mass)+0.1)`, finite-core regulator, and normalization | still supplied Gate-B runner data |
+
+This narrows the earlier black-box boundary without closing Gate B. The parent
+Gate B row remains an open gate: it still does not derive a Gate B dynamics
+theorem, the runner-specific scalar normalization, `GB-S2`
+propagation/readout semantics, or `GB-S3` generated-connectivity rule from
+retained framework primitives. This split adds no new axiom, Tier-A admission,
+or audit-status change.
+
 ## 2026-06-12 audit firewall: source index, not dynamics closure
 
-The audited missing bridges remain `GB-S1`, `GB-S2`, and `GB-S3`: the
-valley-linear source/action rule, propagation/readout semantics, and
+The audited missing bridges remain `GB-S1b`, `GB-S2`, and `GB-S3`: the Gate B
+runner's regularized scalar/normalization, propagation/readout semantics, and
 generated-connectivity rule are supplied row-local ingredients. The primary
 connectivity replay and companion manifest verify finite generated-geometry
 behavior inside that supplied packet only.
@@ -51,7 +69,7 @@ index rather than as an independent primitive-to-physical-gravity bridge.
 
 | ID | Supplied ingredient | Row-local definition | Status boundary |
 |---|---|---|---|
-| `GB-S1` | valley-linear source/action rule | The runners use the scalar field `f(x) = strength/(r(x, mass)+0.1)` and the forward phase action `S = L(1 - f)` with the declared constants in the paired scripts. | Runner-supplied source/action rule for this packet only; not derived from retained primitives and not a new axiom. |
+| `GB-S1` | valley-linear source/action rule | The runners use the scalar field `f(x) = strength/(r(x, mass)+0.1)` and the forward phase action `S = L(1 - f)` with the declared constants in the paired scripts. | Split by the 2026-06-16 interface note: the linear `S=L(1-phi)` response form has bounded weak-field support (`GB-S1a`), but the Gate B scalar `strength/(r+0.1)`, regulator, and normalization remain supplied (`GB-S1b`). Not fully derived from retained primitives and not a new axiom. |
 | `GB-S2` | propagation/readout semantics | The runners use forward-layer path propagation, a central blocked barrier, detector-window mass gain, `TOWARD` sign, and local `F~M` log-slope readouts. | Runner-supplied operational readout for bounded numerical certificates; not a retained physical-gravity readout bridge. |
 | `GB-S3` | generated-connectivity rule | The positive generated-geometry rows use label/offset-preserving forward connectivity with drift/restore companions; KNN and non-label candidates are recorded as controls or bounded negatives where their sign/`F~M` package weakens. | Supplied generated-family rule for this packet only; not yet derived from a local retained growth primitive. |
 

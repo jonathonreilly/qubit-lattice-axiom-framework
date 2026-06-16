@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"
     },
     {
@@ -51503,6 +51499,10 @@
     {
       "from": "repo.front_door_status",
       "to": "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28"
     },
     {
       "from": "repo.repo_organization",
@@ -98990,17 +98990,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
         "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08",
         "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
         "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
         "teleportation_resource_from_poisson_note",
         "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
         "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
-        "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27"
+        "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27",
+        "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1aa42d8d3c3b81fec5542574eadf88875e0f8f94a0b03be36214dc643e8d479a",
+      "note_hash": "91264d6c8f30d5c0334f759d80341b344c7048d7df217df14ce247e917c9f6a3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

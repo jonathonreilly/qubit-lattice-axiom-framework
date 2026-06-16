@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1580 |
-| Retained-grade rows, including boxed decorations | 1434 |
+| Applied audit verdicts | 1581 |
+| Retained-grade rows, including boxed decorations | 1435 |
 | Retained positive theorems | 221 |
 | Retained no-go rows | 214 |
-| Retained bounded rows | 954 |
+| Retained bounded rows | 955 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1412 |
+| Unaudited rows | 1411 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 53 |
 | Audited renaming rows | 32 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1414 |
-| Ready rows | 12 |
+| Total pending rows | 1413 |
+| Ready rows | 11 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
 | Medium pending | 430 |
-| Leaf pending | 432 |
+| Leaf pending | 431 |
 
 Next ready rows by queue order:
 
-- [`pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26`](../../docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - medium; unaudited
 - [`record_prerecord_instrument_kernel_gate_2026-06-06`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md) - medium; unaudited
 - [`s3_time_tensor_build_memo`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md) - medium; unaudited
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`](../../docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
 - [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - medium; unaudited
-- [`stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11`](../../docs/STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
+- [`stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11`](../../docs/STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -90,9 +90,9 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1597 descendants; score 136.642
 - `three_generation_observable_theorem_note` - critical; 1009 descendants; score 64.480
-- `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
+- `observable_principle_from_axiom_note` - critical; 900 descendants; score 63.315
 - `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
-- `plaquette_self_consistency_note` - critical; 1007 descendants; score 51.477
+- `plaquette_self_consistency_note` - critical; 1008 descendants; score 51.479
 - `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 50.513
 - `key_terminology` - critical; 1120 descendants; score 47.631
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 891 descendants; score 45.301

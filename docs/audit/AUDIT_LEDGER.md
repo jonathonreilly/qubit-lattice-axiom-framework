@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 218 |
-| **retained_no_go** | 211 |
+| **retained_no_go** | 212 |
 | **retained_bounded** | 939 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1450 |
+| unaudited | 1449 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1384 |
+| `audited_clean` | 1385 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1767 |
+| `unaudited` | 1766 |
 
 | claim_type | count |
 |---|---:|
@@ -275,6 +275,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_color_automorphism_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -3719,6 +3720,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The anticommuting condition forces symmetric H to be purely singlet-doublet off-diagonal, while every C3-equivariant real self-adjoint native operator has a scalar doublet block and therefore cannot select a real doublet line h.  _(class `A`)_
 - **chain closes:** True — The L4 anticommuting family is exactly the two-dimensional singlet-doublet mixing space H=(1/3)(1 h^T+h 1^T), so the axis is the Gamma_chi singlet. Schur/circulant algebra gives scalar self-adjoint doublet blocks for C3-equivariant native operators, and the candidate C3-breaking structures either choose an orbit representative or commute/are diagonal rather than anticommuting.
 - **rationale:** All load-bearing cited authorities are retained-grade under the rubric, and the core step is finite linear algebra over the provided R, J, Gamma_chi, and native cube operators. Independent symbolic checks confirm the anticommuting-space dimension, the forced singlet axis, the scalar self-adjoint C3 doublet block, the off-diagonal C3 orbit, the staggered antisymmetric circulant/J_cs route, and the impossibility of a nonzero diagonal anticommuting operator. The no-go is properly narrow: it does not close the separate J_cs block-count route or any future mechanism that supplies the C3-breaking h from outside the scoped native C3-symmetric structures.
+- **auditor confidence:** high
+
+### `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27`
+
+- **Note:** [`CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md`](../../docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Same-link SU(3) Wilson-hop algebra only: <U_mu + U_mu^dagger> at O(g^2) gives a single C_F, so Step 5's same-link independent forward/backward 2 C_F source is foreclosed; no lattice-wide Wilson-action no-go is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-87797b584b-cl3_chiral_cube_wilson_hop_d`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The same-link expansion U_mu + U_mu^dagger = 2I - (g a)^2 A_mu^a A_mu^b T^a T^b + O(g^4), together with <A_mu^a A_mu^b> = delta^{ab}, gives 2I - (g a)^2 C_F I + O(g^4), one Casimir rather than 2 C_F.  _(class `A`)_
+- **chain closes:** True — For Hermitian X = g a A_mu^a T^a, exp(iX)+exp(-iX) has no odd powers and the O(g^2) term is exactly one -X^2. Contracting the single bilinear with delta^{ab} yields sum_a T^a T^a = C_F I, so obtaining 2 C_F requires changing the same-link inputs.
+- **rationale:** The load-bearing step is an algebraic identity over the stated Wilson-link parameterization and SU(3) normalization, and an independent manual check confirms the factor, sign, Casimir normalization, d*C_F alternative, and Fierz sandwich signs. The runner source constructs the generators and computes the Casimir/gauge-average path rather than merely printing constants, though several non-load-bearing alternative-read labels are policy classifications. The no-go discipline gate passes only at the narrow same-link resolution: the packet explicitly leaves the neighboring-edge/full-Wilson-action route and structural m_DM = N_sites*v route outside scope. The open physical-color bridge in the cited CL3 authority is not load-bearing for this same-link SU(3) algebraic fact.
 - **auditor confidence:** high
 
 ### `cl3_color_automorphism_theorem`

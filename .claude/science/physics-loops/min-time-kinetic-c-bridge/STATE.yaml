@@ -20,6 +20,6 @@ no_go_routes:
   - "Do not claim this row derives the physical value of c from Lorentz dynamics."
   - "Do not add a new time-coordinate or speed-of-light axiom."
 review_findings: "Local self-review: bounded-support only; no generated audit outputs touched."
-pr_status: pending
-next_exact_action: "Run checks, commit, push, and open reviewer PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4118"
+next_exact_action: "Reviewer extracts science and auditor re-evaluates the target row."
 stop_condition: "Stop this block after PR creation; pivot to the next post-audit repair if campaign continues."

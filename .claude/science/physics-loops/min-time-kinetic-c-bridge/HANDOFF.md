@@ -10,6 +10,8 @@ emergent-`c` bridge explicit:
 - exact SI `c = 299792458 m/s` is used only as a unit conversion;
 - the note still avoids deriving physical `c` from emergent Lorentz dynamics.
 
+Review PR: <https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4118>
+
 ## Reviewer Focus
 
 - Confirm that using the existing kinetic-isotropy primitive is the right

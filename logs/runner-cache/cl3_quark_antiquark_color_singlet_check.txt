@@ -1,21 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_quark_antiquark_color_singlet_check.py
-runner_sha256: 716020e65b4d57192d544132919dffa6644b5ad37554246358b8b0e4ae248c70
+runner_sha256: bc22bf3cf1f4091209b2afe53e34c0a94680f202673ae1b93dbae9146825a939
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================
-3 x 3bar = 1 + 8 ABSTRACT SU(3) TRACE-SINGLET CHECK
+3 x 3bar = 1 + 8 ALGEBRAIC SYMMETRIC-BASE SU(3) CHECK
 ========================================================================
 
-  N = 3 (abstract carrier dimension from CL3 color automorphism note)
-  3 x 3bar has dimension 9 = 9
-  physical SM-color/quark-carrier identification is not tested here
+  N = 3 (symmetric-base carrier dimension from CL3 color automorphism note)
+  End(C^3) has dimension 9 = 9
 
 ------------------------------------------------------------------------
-TEST 1: dim(3 x 3bar) = 1 + 8 = 9
+TEST 0: source note fences off physical SM-color / quark-carrier bridge
+------------------------------------------------------------------------
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 1: dim(End(C^3)) = dim(C.I_3) + dim(sl_3(C)) = 1 + 8 = 9
 ------------------------------------------------------------------------
   dim(trace singlet) + dim(adjoint complement) = 1 + 8 = 9
   STATUS: PASS
@@ -27,7 +31,7 @@ TEST 2: |trace⟩ = (1/sqrt(3)) sum_i |i ibar> is normalized
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 3: |trace> is annihilated by all 8 abstract SU(3) generators T^a x I + I x (-T^a)*
+TEST 3: |trace> is annihilated by all 8 algebraic SU(3) generators on 3 x 3bar
 ------------------------------------------------------------------------
   max ||T^a |trace>|| over 8 generators = 0.000e+00
   STATUS: PASS
@@ -40,17 +44,27 @@ TEST 4: Tr(P_trace) = 1 and P_trace^2 = P_trace
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 5: orthogonal complement of trace singlet in 3 x 3bar has dim 8
+TEST 5: traceless complement has dimension 8
 ------------------------------------------------------------------------
   rank(I - P_trace) = 8
+  rank(span of 8 Gell-Mann generators) = 8
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 6: commutant of all 8 generators is exactly the scalar line
+------------------------------------------------------------------------
+  dim commutant({T^a}) = 1
   STATUS: PASS
 
 ========================================================================
+  Test 0 (source boundary):            PASS
   Test 1 (dim 1 + 8 = 9):              PASS
-  Test 2 (trace singlet normalized):   PASS
+  Test 2 (trace vector normalized):    PASS
   Test 3 (SU(3)-invariance):           PASS
   Test 4 (trace projector valid):      PASS
-  Test 5 (octet rank = 8):             PASS
+  Test 5 (traceless rank = 8):         PASS
+  Test 6 (commutant dim = 1):          PASS
+  SUMMARY: PASS=7 FAIL=0
   OVERALL: PASS
 
 ----- stderr -----

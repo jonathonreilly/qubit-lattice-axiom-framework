@@ -12,9 +12,14 @@ from __future__ import annotations
 
 from collections import defaultdict
 from itertools import combinations
+from pathlib import Path
 from typing import List, Tuple
 
 import sympy as sp
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md"
 
 
 def enumerate_bz_corners() -> List[Tuple[int, int, int]]:
@@ -268,6 +273,30 @@ def main() -> int:
     print("  Boundary: no diagonal sublattice/chirality identification is claimed here.")
     print()
 
+    # Source-scope firewall: the post-audit defect was an unsupported
+    # Hamming-parity-to-chirality/sublattice identification. Keep the note
+    # locked to the finite BZ-corner algebraic surface.
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    required_boundary = (
+        "BZ-corner Hamming parity with the K-S" in note_text
+        and "parity-to-chirality identification is a separate bridge" in note_text
+    )
+    forbidden_overclaims = [
+        "Sublattice A (chirality +)",
+        "Sublattice B (chirality",
+        "sublattice A: hw even",
+        "sublattice B: hw odd",
+        "Hamming-weight grading + sublattice parity",
+    ]
+    overclaims_absent = all(token not in note_text for token in forbidden_overclaims)
+    source_scope_firewall_ok = required_boundary and overclaims_absent
+    print("Source-scope firewall:")
+    print("  does not assert Hamming parity = K-S sublattice/chirality parity")
+    print(f"  boundary marker present: {'PASS' if required_boundary else 'FAIL'}")
+    print(f"  forbidden parity/chirality overclaims absent: {'PASS' if overclaims_absent else 'FAIL'}")
+    print(f"  firewall status: {'PASS' if source_scope_firewall_ok else 'FAIL'}")
+    print()
+
     # Overall verdict
     all_checks = [
         decomp_matches,
@@ -285,6 +314,7 @@ def main() -> int:
         epsilon_flips_hw_parity,
         hw1_maps_to_hw2,
         hamming_parity_balanced,
+        source_scope_firewall_ok,
     ]
     n_pass = sum(all_checks)
     n_total = len(all_checks)
@@ -296,6 +326,7 @@ def main() -> int:
     print("decomposition by Hamming weight; hw=1 triplet has M_3(C)")
     print("algebraic support and no-proper-subspace closure. Epsilon/chirality")
     print("is fenced off: position-space epsilon complements BZ-corner bits.")
+    print("CHIRALITY_SUBLATTICE_IDENTIFICATION_DERIVED=FALSE")
 
     return 0 if n_pass == n_total else 1
 

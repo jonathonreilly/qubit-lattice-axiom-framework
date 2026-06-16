@@ -159,6 +159,12 @@ identify the physical mass-orientation readout with this supplied
 Record-registrable determinant-character / log-character surface and rule out
 additional action-level orientation-sensitive data.
 
+Registry tracking guard (context only): the Tier-A registry names the shared
+K-real mass-side structure between theta(b) and AC_phi_lambda(i), but it also
+states that the two move only after the determinant-readout / exhaustion bridge
+is closed, not by registry wording alone. This note therefore does not replace
+the missing bridge theorem with a Tier-A dependency edge.
+
 **What Conditional Implication A does NOT close** (carried, not erased):
 
 - **Strong-CP premise 1**, "no bare `theta` slot is admissible", is a *separate*

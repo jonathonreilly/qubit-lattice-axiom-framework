@@ -1,6 +1,8 @@
 # P1 BZ Quadrature Full Staggered-PT Note (4D Kawamoto–Smit Quadrature)
 
 **Date:** 2026-04-18
+**Claim type:** bounded_theorem
+**Type:** source-side bounded numerical quadrature certificate
 **Status:** source-side bounded numerical quadrature certificate; independent
 audit required before any retained effect. This note computes the **full
 staggered-PT 4D BZ quadrature** of the
@@ -49,6 +51,10 @@ modify them:
 - [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
   — Ward-identity tree-level theorem; the full-PT `I_v_gauge = 0` is
   consistent with it.
+- [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)
+  — canonical arithmetic certificate for `P = 0.5934`, `u_0`,
+  `alpha_LM`, and `alpha_LM/(4pi)`, downstream of
+  [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md).
 
 The note adds the framework-native ±0.45% `Δ_R` quadrature on top of the
 same literature-cited band. It does not set an audit verdict, claim retained
@@ -73,14 +79,14 @@ It does **not** modify:
   total residual systematic and P1/P2/P3 primitive decomposition are
   unchanged at the structural level);
 - the retained Ward-identity tree-level theorem
-  (`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`), which attaches no
+  ([`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)), which attaches no
   precision claim and is unaffected — the full-PT confirmation
   `I_v_gauge = 0` at grid-noise level reinforces `Z_V = 1`;
 - the retained Rep-A/Rep-B partial-cancellation sub-theorem
-  (`docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`),
+  ([`YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`](YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md)),
   whose three-channel decomposition is inherited verbatim;
 - the retained H_unit symbolic reduction
-  (`docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md`),
+  ([`YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md`](YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md)),
   whose Feynman rules (FR1, FR2) and envelope `|I_S^{framework}| ≤ 23.35`
   are retained; the full-PT `I_v_scalar = 3.90` sits well within the
   envelope;
@@ -137,7 +143,9 @@ tightening of the total Δ_R band.
 - **Conserved point-split staggered vector current (Z_V = 1):**
   [`scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`](../scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py) (21/21-PASS
   symbolic reduction).
-- **Canonical surface:** [`scripts/canonical_plaquette_surface.py`](../scripts/canonical_plaquette_surface.py) —
+- **Canonical alpha/plaquette arithmetic certificate:**
+  [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)
+  and [`scripts/canonical_plaquette_surface.py`](../scripts/canonical_plaquette_surface.py) —
   `⟨P⟩ = 0.5934`, `u_0 = 0.87768`, `α_LM = 0.09067`,
   `α_LM/(4π) = 0.00721`.
 

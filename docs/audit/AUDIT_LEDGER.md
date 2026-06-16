@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 951 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1418 |
+| unaudited | 1417 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1402 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1735 |
+| `unaudited` | 1734 |
 
 | claim_type | count |
 |---|---:|
@@ -100,7 +100,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1596 | 136.64 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
@@ -1563,6 +1563,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11120,6 +11121,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The finite algebra has explicit countermodels Q(0,1/4)=8/9, Q(0,-1/4)=8/15 and endpoint deltas 0, 1/9, and 1/3, so it does not force Q=2/3 and delta=2/9 without extra source/readout selection laws.  _(class `A`)_
 - **chain closes:** True — Independently simplifying gives Q(s,z)=2(1+s)/(3(1+s-z)), reproducing Q=2/3 for z=0 and the stated 8/9 and 8/15 traceless-background countermodels. The endpoint formula directly gives 2/9, 0, 1/9, and 1/3 for the listed cases, so the finite algebra alone leaves countermodels unless the named physical selection laws are added.
 - **rationale:** The load-bearing step is an exact algebraic countermodel check over the stated finite formulas, not a definition-only renaming or numerical fit. The runner source computes the Q and delta values with exact Fraction arithmetic, and an independent manual simplification reproduces the displayed values, signs, factors, and endpoint table entries. The no-go is scoped narrowly: it does not claim physical source/readout closure is impossible, only that the finite algebra by itself does not force it. There are no cited upstream dependencies or missing helper artifacts in the restricted packet.
+- **auditor confidence:** high
+
+### `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional algebraic identities `(T1)-(T9)` inside the admitted two-channel toy packet `A_TOY=(A1,A2,A3,A4,A5)`, with no retained-grade Koide, delta, or no-go propagation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-031023-ccac53bfa7-koide_dimensionless_objectio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under `(A1)-(A5)` the following identities hold exactly in `Q`.  _(class `A`)_
+- **chain closes:** True — The in-toy algebra closes exactly once `(A1)-(A5)` are admitted: independent simplification gives `Q(s,0)=2/3`, `Q(0,z)=2/[3(1-z)]`, the stated `Z` and projector identities, and the listed `delta` values. The closure is conditional only; the packet does not derive the toy carrier, endpoint selections, or `eta_APS=2/9` from retained authorities.
+- **rationale:** The load-bearing work is class `(A)`: exact rational algebra over explicitly stated toy inputs, not a first-principles framework computation. The runner source uses `Fraction` arithmetic for the displayed values and its output matches the source note; the universal `Q` claims also check by direct symbolic simplification rather than only by the runner samples. However, `(A1)-(A5)` are admitted local premises, not retained-grade inputs or registered primitives in the restricted packet, so the result cannot be audited clean beyond conditional algebraic support.
 - **auditor confidence:** high
 
 ### `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25`

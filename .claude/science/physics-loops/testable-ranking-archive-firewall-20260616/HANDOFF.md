@@ -23,4 +23,4 @@ python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only
 python3 scripts/vocab_lint.py --report-only --report-path /tmp/testable-ranking-vocab-report.json archive_unlanded/testable-ranking-stale-wrappers-2026-04-30/README.md archive_unlanded/testable-ranking-stale-wrappers-2026-04-30/TESTABLE_PREDICTIONS_MAP_NOTE.md archive_unlanded/testable-ranking-stale-wrappers-2026-04-30/MOONSHOT_OTHER_TESTABLES_NOTE.md
 ```
 
-PR: TBD
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4104

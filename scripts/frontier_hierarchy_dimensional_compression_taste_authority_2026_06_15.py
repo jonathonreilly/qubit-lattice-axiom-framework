@@ -6,10 +6,10 @@ Within-scope content (this runner's PASS gates):
   Pure intra-framework dimensional arithmetic on the staggered Dirac
   condensate-density ratio R. No PASS gate depends on the imported
   electroweak observation v_obs or the imported pre-selector value
-  v_pred. The (1/4) D=4 compression exponent is the structural
-  admission inherited from the 2026-05-10 heat-kernel + zeta-
-  regularized free-energy-density sister bounded theorem note
-  HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md.
+  v_pred. The (1/4) D=4 compression exponent and inverse placement are
+  now routed through the 2026-06-16 fixed-density coefficient-to-scale
+  bridge, while the physical VEV readout identification stays outside
+  this parent row.
 
 External-context block (printed, NOT PASS-load-bearing):
   v_pred = M_Pl * alpha_LM^16, v_obs = 246.22 GeV, and the residual
@@ -18,8 +18,9 @@ External-context block (printed, NOT PASS-load-bearing):
   interest; explicitly excluded from any PASS condition.
 
 This script does not derive the EW VEV from primitives. The within-
-scope load-bearing content is the five PASS conditions below; the
-deeper effective-potential-density bridge remains open.
+scope load-bearing content is the PASS-gated arithmetic below; the
+remaining open step is the physical order-parameter/readout
+identification.
 """
 
 from __future__ import annotations
@@ -118,9 +119,11 @@ def check_source_firewall() -> None:
         and "proposed_claim_type: bounded_theorem" not in note,
     )
     check(
-        "source note leaves D=4 readout bridge open while consuming retained taste-count authority",
-        "## 2026-06-12 audit firewall: D=4 readout bridge still open" in note
-        and "does not derive the D=4 readout / effective-potential-density bridge" in flat
+        "source note wires D=4 density-scale bridge while keeping physical VEV premise open",
+        "## 2026-06-16 bridge update: fixed-density map supplied, physical VEV premise still open" in note
+        and "HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md" in note
+        and "fixed-density coefficient-to-scale bridge" in flat
+        and "still does not identify the electroweak VEV" in flat
         and "D=4 taste-count input is now routed through retained bounded taste-count authorities" in flat
         and "No new axiom, Tier-A admission, observed target, or audit status" in flat,
     )
@@ -249,13 +252,12 @@ def main() -> None:
     print("  reader-level diagnostic, not an audit-load-bearing closure.")
 
     print("\nConclusion (within-scope):")
-    print("  Under the (1/4) D=4 reading derived in the 2026-05-10 heat-")
-    print("  kernel sister bounded theorem note, the staggered condensate-")
-    print("  density residual R compresses to R^(-1/4); this is a")
-    print("  quantitatively distinct candidate from the (1/16) reading;")
-    print("  and the (1/4) is D=4-specific under the inherited per-")
-    print("  determinant readout via the algebraic identity 1/D = 4/2^D")
-    print("  at D=4. No within-scope claim depends on the imported v_obs.")
+    print("  Under the 2026-06-16 fixed-density coefficient-to-scale bridge,")
+    print("  a positive endpoint coefficient ratio R maps to the inverse")
+    print("  fourth-root scale factor R^(-1/4) at D=4. The runner checks")
+    print("  that this candidate is quantitatively distinct from the D=16")
+    print("  direct-scale alternative and that no within-scope PASS gate")
+    print("  depends on the imported v_obs.")
 
     print("\n" + "=" * 78)
     print(f"SCORECARD: {PASS_COUNT} pass, {FAIL_COUNT} fail out of {PASS_COUNT + FAIL_COUNT}")

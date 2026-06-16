@@ -5,25 +5,30 @@
 **Status:** conditional D=4 arithmetic support (source proposal; audit lane ratifies effective status)
 **Status authority:** independent audit lane only; effective status is
 pipeline-derived from the audit ledger. The status line above is the
-source-note proposal and is not an audit-ratified retained or bounded-theorem
-status.
+source-note proposal and is not an audit-ratified effective status.
 **Date:** 2026-04-13 (created); 2026-05-16 (rescoped to retire the
 observation-comparison load-bearing step flagged by the 2026-05-05 audit).
 **Script:** `scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py`
 
-## 2026-06-12 audit firewall: D=4 readout bridge still open
+## 2026-06-16 bridge update: fixed-density map supplied, physical VEV premise still open
 
 The current source claim is conditional support for D=4 arithmetic only. The
 runner checks the framework-internal condensate-density ratio, the D=4 versus
 D=16 separation, and the algebraic identity `1/D = 4/2^D` at `D = 4`.
 
-This note does not derive the D=4 readout / effective-potential-density bridge
-that would place the compression factor in the physical VEV formula with
-sign, placement, and normalization. The old source edge to the unaudited
-staggered-realization gate is no longer load-bearing here: the D=4 taste-count
-input is now routed through retained bounded taste-count authorities named
-below. No new axiom, Tier-A admission, observed target, or audit status is
-introduced here.
+A new source-side bridge candidate,
+[`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md),
+proves the fixed-density coefficient-to-scale bridge: for a positive D=4
+density surface `rho_* = A(L) v(L)^4`, the endpoint scale ratio is
+`v(L) / v(L_ref) = (A_ref / A(L))^(1/4)`. That supplies the exponent,
+inverse/direct placement, sign, and normalization for the coefficient readout.
+It still does not identify the electroweak VEV with that fixed-density
+readout, select the physical order parameter, or promote this parent row.
+
+The old source edge to the unaudited staggered-realization gate is no longer
+load-bearing here: the D=4 taste-count input is now routed through retained
+bounded taste-count authorities named below. No new axiom, Tier-A admission,
+observed target, or audit status is introduced here.
 
 ## 0. Audit context — what this note still claims, and what it does not
 
@@ -58,12 +63,12 @@ not used in any PASS condition.
 > `scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py`.
 > Then:
 >
-> (i) **D=4 compression formula.** Under the per-determinant
->     geometric-mean readout `v ∝ |det|^(1/(N_taste · L_t))` with
->     `N_taste = 2^D = 16` in `D = 4` (the admission inherited from
->     the 2026-05-10 heat-kernel sister bounded theorem note), the
->     dimensional reading of the residual produces a compression
->     factor `R^(-1/D) = R^(-1/4)`.
+> (i) **D=4 compression formula.** Under the fixed positive D=4
+>     density-coefficient readout proved in
+>     `HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`,
+>     if `R` is the endpoint coefficient ratio relative to `L_t = 2`,
+>     then the scale readout is forced to be the inverse fourth-root
+>     compression `R^(-1/D) = R^(-1/4)` at `D = 4`.
 > (ii) **D=16 alternative.** A naive direct scale reading with the
 >     `(1/16)`-th root would give `R^(-1/16)`.
 > (iii) **Order-of-magnitude separation.** The two compression
@@ -79,13 +84,15 @@ not used in any PASS condition.
 >     algebraic identity tied to the retained bounded D=4 taste-count
 >     surface `N_taste = 2^D`; the same identity fails at
 >     `D ∈ {1, 2, 3, 5, 6, 8}` (verified explicitly in the runner).
->     The (1/4) is therefore D=4-specific under the inherited
->     per-determinant readout, not an interchangeable choice.
+>     The (1/4) is therefore D=4-specific under the fixed-density
+>     coefficient readout, not an interchangeable choice.
 
-The (1/4) derivation itself is the heat-kernel D=4 sister bounded
-theorem note (2026-05-10); this note inherits that derivation and
-records the consequent intra-framework arithmetic on the staggered
-Dirac condensate-density residual.
+The (1/4) exponent is supplied by the retained dimensional fourth-root
+theorem. The inverse placement, sign, and `L_t = 2` normalization are supplied
+by the 2026-06-16 fixed-density coefficient-to-scale bridge. This note records
+the consequent intra-framework arithmetic on the staggered Dirac
+condensate-density residual and still leaves the physical electroweak
+order-parameter identification outside scope.
 
 ## 2. What this note does NOT claim
 
@@ -94,15 +101,15 @@ Dirac condensate-density residual.
   open (the broader hierarchy chain `v_UV = M_Pl × α_LM^16 × (7/8)^(1/4)`
   is asserted elsewhere with its own open admissions).
 - **Not a derivation of the order parameter.** The identification of
-  the physical order parameter as a dimension-4 effective-potential
-  density is the admission inherited from the 2026-05-10 heat-kernel
-  sister note; this note does not re-derive it.
+  the physical order parameter as the fixed positive D=4 density used by the
+  bridge remains open; this note does not re-derive it.
 - **Not an observation-comparison closure.** The `C_obs = v_obs / v_pred`
   ratio is printed as context only. The within-scope load-bearing
   content is intra-framework dimensional arithmetic, not any claim
   that `R^(-1/4)` matches `C_obs`.
-- **Not a sign / placement theorem.** The exact sign and placement of
-  the (1/4) compression in the full physical formula remain open;
+- **Not a full physical insertion theorem.** The 2026-06-16 bridge fixes the
+  sign and placement for the fixed-density coefficient readout, but the full
+  physical formula still needs the electroweak order-parameter identification;
   see Section 5 below.
 - **Not a retained- or bounded-theorem status proposal.** This is conditional
   D=4 arithmetic support; the independent audit lane ratifies effective
@@ -146,16 +153,17 @@ interest, without that interest becoming a load-bearing audit input.
 The closure of these items would lift the broader hierarchy chain from
 bounded-support to retained-grade; none are claimed in this note.
 
-1. **Effective-potential-density bridge.** A retained derivation
-   showing how the `L_t > 2` block normalization enters the physical
-   VEV formula with explicit sign and placement (the parent narrow
-   theorem
-   `HIERARCHY_MATSUBARA_DETERMINANT_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`
-   names this as its single remaining named admission).
-2. **Per-determinant readout admission.** The
-   `v ∝ |det|^(1/(N_taste · L_t))` reading is recast as a D=4
-   dimensional-analysis statement by the 2026-05-10 heat-kernel sister
-   note but is not derived from primitives there.
+1. **Physical fixed-density/order-parameter bridge.** The source-side
+   coefficient-to-scale map is now supplied by
+   [`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md):
+   it fixes the exponent, inverse placement, sign, and `L_t = 2`
+   normalization for a positive D=4 density surface. What remains open is the
+   physical theorem identifying the electroweak VEV/order parameter with that
+   fixed-density readout and selecting the exact endpoint coefficient surface.
+2. **Absolute scale and legacy readout reconciliation.** The fixed-density
+   coefficient-to-scale bridge supplies only endpoint ratios. A separate
+   theorem is still needed to reconcile the absolute `L_t = 2` normalization
+   and any legacy determinant-readout language with the physical VEV map.
 3. **Taste-count authority.** The old open realization-gate pointer is
    replaced, for this packet's D=4 arithmetic support, by retained bounded
    one-hop authorities:
@@ -171,16 +179,17 @@ bounded-support to retained-grade; none are claimed in this note.
    continuum-limit reading; at the minimal block the (1/4) is bounded
    D=4-consistent.
 
-### 5.1 D=4 readout / effective-potential-density bridge check (2026-06-11)
+### 5.1 D=4 readout / effective-potential-density bridge check (2026-06-16)
 
-The load-bearing readout used by this note is the parent claim's
-`v ∝ |det|^(1/(N_taste · L_t))` with `N_taste = 2^D = 16` in `D = 4`.
-The bridge it would need is the Section 5 item 1 target above: a retained
-derivation showing how the `L_t > 2` block normalization enters the
-physical VEV formula with explicit sign and placement.
+The load-bearing coefficient-to-scale readout used by this note is now the
+fixed positive D=4 density map from the 2026-06-16 bridge:
+`rho_* = A(L) v(L)^4`, hence
+`v(L)/v(L_ref) = (A_ref/A(L))^(1/4)`.
 
-Current retained-row check: no retained row checked in this repair
-supplies that exact bridge at this scope.
+Current row check: the 2026-06-16 bridge supplies the source-side fixed-density
+coefficient-to-scale algebra, but it is a new source proposal pending
+independent audit. It still does not identify the electroweak VEV with the
+fixed-density readout.
 `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md` is retained-bounded
 for endpoint coefficient algebra, but its audited scope excludes the
 physical electroweak insertion map and its source text leaves Bridge 2
@@ -191,16 +200,15 @@ observable-level dimension-4 insertion.
 `HIGGS_MASS_FROM_AXIOM_NOTE.md` supplies a retained-bounded per-color
 determinant to `V_taste` symmetric-point curvature theorem, but it
 declares the EW VEV scale as boundary input B2 and D1 as a diagnostic
-definition; it does not derive this note's per-determinant `v(L_t)`
-readout or the `L_t` sign/placement bridge. The heat-kernel and
-Matsubara-ratio notes still name the D=4 readout as an admission in
+definition; it does not derive this note's physical fixed-density VEV
+readout or the physical order-parameter bridge. The heat-kernel and
+Matsubara-ratio notes still name the physical D=4 readout as an admission in
 their own current text and are unaudited in the current ledger.
 
-Future bridge note proof obligation: derive, from retained framework
-inputs, the map from the per-determinant or effective-potential-density
-coefficient on the `L_t > 2` block to the physical VEV readout,
-including the exponent, inverse/direct placement, sign, and
-normalization relative to the `L_t = 2` baseline.
+Future proof obligation after the 2026-06-16 source bridge: derive, from
+retained framework inputs, the physical electroweak order-parameter
+identification and endpoint selection that allow this fixed-density
+coefficient-to-scale map to be used as the physical VEV readout.
 
 ## Registered Tier-A routing (2026-06-11; audit-requested repair)
 
@@ -215,23 +223,23 @@ unregistered conditional blocker.
    at the tested neighboring dimensions. This standalone arithmetic
    does not consume carrier naming.
 2. **What the remaining admission carries.** The carrier-consuming part
-   still open here is the per-determinant readout naming the arithmetic as a
-   VEV or effective-potential-density readout. The `N_taste = 2^D = 16` D=4
-   count is no longer admitted through the open realization gate in this
-   packet; it is consumed from the retained bounded taste-count authorities
-   cited above, while the physical realization of the full carrier remains
-   outside this note.
+   still open here is the physical readout naming the arithmetic as a VEV or
+   effective-potential-density order-parameter readout. The fixed-density
+   coefficient-to-scale bridge is supplied by the 2026-06-16 source note, and
+   the `N_taste = 2^D = 16` D=4 count is no longer admitted through the open
+   realization gate in this packet; it is consumed from the retained bounded
+   taste-count authorities cited above, while the physical realization of the
+   full carrier remains outside this note.
 3. **The remaining Tier-A target is context only.** The canonical
    `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` remains the
    registered Tier-A derivation target `AC_phi_lambda` in
    `docs/audit/data/tier_a_admissions.json`, but this note no longer uses it
    as the D=4 taste-count authority. The unresolved target here is the
-   determinant/effective-potential-density readout map, not the finite
-   `2^4 = 16` count.
+   physical order-parameter/readout identification, not the finite `2^4 = 16`
+   count or the fixed-density coefficient-to-scale algebra.
 4. **Routing boundary.** This section records the carrier route only.
-   It does not supply the per-determinant readout bridge, does not
-   assert full physical-carrier realization, and does not assert an audit
-   outcome.
+   It does not assert full physical-carrier realization, physical VEV
+   insertion closure, or an audit outcome.
 
 ## 6. Graph-visible retained dependencies and context pointers
 
@@ -241,6 +249,10 @@ Graph-visible retained one-hop dependencies for the taste-count repair:
   — retained bounded D=4 `N_taste = 2^D = 16` and mean-field `W(J)` bridge.
 - [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md)
   — retained bounded `2^4 = 16` BZ-corner/Hamming-staircase combinatorics.
+- [`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+  — source-side fixed-density coefficient-to-scale bridge for exponent,
+  inverse/direct placement, sign, and `L_t = 2` normalization. This is a new
+  source proposal pending independent audit, not an audit-ratified status.
 
 Non-load-bearing context pointers, intentionally left as backticked plain
 text rather than graph-visible dependency edges:
@@ -272,7 +284,7 @@ Verifies, using only intra-framework arithmetic, that:
    not a single observable hidden as two.
 3. The structural identity `1/D = 4 / 2^D` holds at `D = 4` and FAILS
    at all of `D ∈ {1, 2, 3, 5, 6, 8}` (so the (1/4) reading is
-   D=4-specific under the inherited per-determinant readout, not an
+   D=4-specific under the fixed-density coefficient readout, not an
    interchangeable choice).
 4. The runner does NOT depend on the imported `v_obs`, `v_pred`, or
    `C_obs` in any load-bearing arithmetic gate.
@@ -282,8 +294,9 @@ Verifies, using only intra-framework arithmetic, that:
    transparency and are explicitly excluded from PASS gates.
 6. The source firewall records the packet as conditional D=4 arithmetic
    support, not a bounded-theorem status proposal.
-7. The source firewall leaves the D=4 readout / effective-potential-density
-   bridge open while consuming retained bounded taste-count authorities.
+7. The source firewall records that the D=4 fixed-density coefficient-to-scale
+   bridge is supplied as a source-side proposal while the physical VEV
+   identification remains open.
 8. The live ledger reports the two taste-count one-hop authorities as
    retained-grade.
 
@@ -309,9 +322,9 @@ Gate-by-gate check against
    all PASS gates, in the external-context block.
 6. `source note demotes stale bounded-theorem proposal to conditional support`
    — current source metadata no longer proposes a bounded theorem.
-7. `source note leaves D=4 readout bridge open while consuming retained
-   taste-count authority` — the note names the effective-potential-density
-   bridge as open and records the retained bounded taste-count authorities.
+7. `source note wires D=4 density-scale bridge while keeping physical VEV
+   premise open` — the note names the new source-side bridge and records the
+   remaining physical order-parameter/readout identification.
 8. `taste-count one-hop authorities are retained-grade in the live ledger` —
    the runner checks the effective statuses of the Higgs lattice taste-count
    bridge and the Wilson BZ-corner staircase row.
@@ -328,6 +341,7 @@ audit_required_before_effective_status_change: true
 graph_visible_one_hop_deps:
   - higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05
   - wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08
+  - hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16
 context_pointers_not_dependency_edges:
   - hierarchy_heat_kernel_d4_compression_bounded_theorem_note_2026-05-10
   - hierarchy_matsubara_determinant_ratio_narrow_theorem_note_2026-05-10
@@ -335,14 +349,13 @@ context_pointers_not_dependency_edges:
   - hierarchy_effective_potential_endpoint_note
 
 admitted_context_inputs:
-  - per-determinant geometric-mean readout
-    v(L_t) ∝ |det(D, L_t, m=0)|^(1/(N_taste · L_t)) with
-    N_taste = 2^D = 16 in D = 4
+  - physical electroweak order-parameter identification for the fixed
+    D=4 density readout remains open
 
 forbidden_imports_used: false
 observed_target_used_in_pass_conditions: false
 proposal_allowed: false
-proposal_allowed_reason: "D=4 arithmetic support is source-ready and the finite taste-count authority is retained-bounded, but the D=4 readout / effective-potential-density bridge remains open."
+proposal_allowed_reason: "D=4 arithmetic support and a source-side fixed-density coefficient-to-scale bridge are source-ready, but independent audit and the physical electroweak order-parameter/readout identification remain open."
 ```
 
 ## 8. Changelog
@@ -359,8 +372,14 @@ proposal_allowed_reason: "D=4 arithmetic support is source-ready and the finite 
   effective-potential-density bridge an explicit open target.
 - **2026-06-15 taste-authority repair.** Replaced the stale load-bearing
   citation edge to the unaudited staggered-realization gate with retained
-  bounded taste-count authorities. The D=4 readout / effective-potential-density
-  bridge remains open.
+  bounded taste-count authorities. At that revision, the D=4 readout /
+  effective-potential-density bridge was still the open target now addressed
+  by the 2026-06-16 source bridge.
+- **2026-06-16 D=4 density-scale bridge.** Added the source-side
+  fixed-density coefficient-to-scale bridge proving exponent, inverse/direct
+  placement, sign, and `L_t = 2` normalization. This leaves the physical
+  electroweak order-parameter/readout identification as the remaining open
+  target.
 
 ## 2026-06-15 audit-unlock residual certificate
 
@@ -369,8 +388,10 @@ runner-checked facts are the condensate-density ratio, the distinct
 `D = 4` versus `D = 16` compression candidates, and the identity
 `1/D = 4/2^D` at `D = 4`.
 
-The remaining blocker is not arithmetic: a later theorem must derive the
-D=4 readout / effective-potential-density insertion map, including exponent,
-sign, placement, normalization, and the framework-native `N_taste = 2^D`
-carrier realization. No observed VEV, new axiom, or status promotion is
-introduced by this repair.
+The remaining blocker is not the coefficient-to-scale arithmetic: the
+2026-06-16 bridge supplies exponent, inverse placement, sign, and
+normalization for the fixed-density readout. A later theorem must still derive
+the physical electroweak order-parameter/readout identification and any
+framework-native carrier realization needed to use that map as the physical
+VEV theorem. No observed VEV, new axiom, or status promotion is introduced by
+this repair.

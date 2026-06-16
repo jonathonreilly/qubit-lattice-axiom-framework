@@ -69,7 +69,7 @@ cited `I_S` overcounts the ratio correction.
   identity `y_t_bare² = g_bare²/(2 N_c)` at tree level from D16 + D17
   + D12 (SU(N_c) Fierz) + S2 (Lorentz Clifford). No NLO claim.
 - **P1 caveat this note closes:**
-  [`docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md`](YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md) §4.4 —
+  `docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md` §4.4 —
   "the net effect on the Ward ratio `y_t(M_Pl)/g_s(M_Pl)` at 1-loop
   depends on whether the Representation-A correction partially
   cancels it. This cancellation structure is not established." THIS

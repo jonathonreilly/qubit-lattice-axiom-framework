@@ -26,24 +26,28 @@ precision**.
 **Primary runner:** `scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py`
 **Log:** `logs/retained/yt_p1_bz_quadrature_full_staggered_pt_2026-04-18.log`
 
-## Inputs (cited authorities)
+## Inputs and Comparators
 
-This note is a layered numerical refinement on top of upstream
-P1-cluster authorities. The one-hop authorities below are the
-load-bearing inputs for the quadrature surface; this note does not
-modify them:
+This note is a layered numerical refinement on top of the P1-cluster
+surface. The load-bearing one-hop authorities for the quadrature are the
+three-channel ratio decomposition, the `H_unit` Feynman-rule surface, the
+Ward identity, and the canonical alpha/plaquette arithmetic certificate.
+Prior schematic/literature rows and downstream master assemblies are
+comparators or non-modification targets, not proof inputs for the
+framework-native quadrature; those rows are named as plain paths so the
+citation graph preserves the authority direction.
 
-- [`YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md`](YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md)
+- `docs/YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md`
   — schematic BZ quadrature this note refines (5x tightening over the
-  prior ±25% per-integral systematic).
-- [`YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md`](YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md)
+  prior ±25% per-integral systematic comparator).
+- `docs/YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md`
   — master `Δ_R` assembly theorem; literature-cited central is
-  unchanged.
+  unchanged (downstream roll-up comparator).
 - [`YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`](YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md)
   — three-channel decomposition inherited verbatim.
-- [`YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md),
-  [`YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md),
-  and [`YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md)
+- `docs/YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md`,
+  `docs/YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md`,
+  and `docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md`
   — per-channel cited literature ranges, cross-referenced but not
   revised here.
 - [`YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md`](YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md)
@@ -115,24 +119,24 @@ tightening of the total Δ_R band.
 
 ## Cross-references
 
-- **Prior schematic BZ quadrature:**
-  [`docs/YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md`](YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md) — schematic
+- **Prior schematic BZ quadrature comparator:**
+  `docs/YT_P1_BZ_QUADRATURE_NUMERICAL_NOTE_2026-04-18.md` — schematic
   integrand central −3.29% ± 2.31% (grid + 25% schematic systematic).
-- **Master Δ_R assembly:**
-  [`docs/YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md`](YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md) —
+- **Master Δ_R assembly comparator:**
+  `docs/YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md` —
   literature-cited central −3.27% with covariance-reduced 1σ band
   (−3.27 ± 2.32)% and operational P1 band [2.3%, 4.3%].
 - **Rep-A/Rep-B cancellation:**
   [`docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`](YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md) —
   three-channel decomposition `Δ_R = (α/(4π))[C_F Δ_1 + C_A Δ_2 + T_F n_f Δ_3]`.
-- **Δ_1 citation:**
-  [`docs/YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md) — cited
+- **Δ_1 citation comparator:**
+  `docs/YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md` — cited
   `I_v_scalar ∈ [3, 7]`.
-- **Δ_2 citation:**
-  [`docs/YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md) — cited
+- **Δ_2 citation comparator:**
+  `docs/YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md` — cited
   `I_SE_gluonic ∈ [1, 3]`.
-- **Δ_3 citation:**
-  [`docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md`](YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md) — cited
+- **Δ_3 citation comparator:**
+  `docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md` — cited
   `I_SE_fermion ∈ [0.5, 1.5]`.
 - **H_unit symbolic reduction:**
   [`docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md`](YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md)

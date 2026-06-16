@@ -54,7 +54,7 @@ This citation row should be treated as:
 ## Authority notice
 
 This note is a **conditional citation-and-bound arithmetic** layer. It does **not** modify the master obstruction theorem
-[`YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`](YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md),
+`docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`,
 and it does **not** promote the retention status of the prior P1 sub-theorems:
 
 - [`YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md`](YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md)
@@ -94,7 +94,7 @@ Read it together with:
 - [`YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md`](YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md) (no-algebraic-shortcut)
 - [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) (retained exact tree-level identity `y_t_bare = g_bare / sqrt(2 N_c)`)
 - [`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md) (subordinate `delta_PT = 1.92%` support discussion)
-- [`YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`](YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md) (master primitive-tracking theorem; not modified by this note)
+- `docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md` (master primitive-tracking theorem; not modified by this note; downstream/context reference, not a dependency of this arithmetic row)
 - `scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py` and
   `logs/retained/yt_p1_i1_lattice_pt_symbolic_2026-04-17.log` (retained symbolic
   `I_1 = I_S − I_V` reduction; `I_V = 0` on the conserved-current surface)

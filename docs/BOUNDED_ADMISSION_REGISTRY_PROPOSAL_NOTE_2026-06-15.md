@@ -1,0 +1,124 @@
+# Bounded Admission Registry -- Proposal
+
+**Date:** 2026-06-15
+**Status:** PROPOSAL for owner approval. NOT wired into the audit pipeline.
+The session records no approval, makes no audit determination, and changes no
+live audit data. Approval is the owner's to state directly to the review/audit
+agent; the schema wiring and any verdict effects are the owner's + the
+independent Codex auditor's.
+**Proposed artifact:** [`docs/BOUNDED_ADMISSION_REGISTRY_PROPOSAL_2026-06-15.json`](BOUNDED_ADMISSION_REGISTRY_PROPOSAL_2026-06-15.json)
+(first-pass populated draft; would eventually live at
+`docs/audit/data/bounded_admissions.json` once approved and wired).
+
+## The problem
+
+Bounded admissions are currently scattered across **922 `retained_bounded`
+rows**, each self-bound (`effective_status_reason: self`,
+`claim_type: bounded_theorem`) on a residual named in **its own note**. There
+is no atom-level index. Consequences:
+
+- **Duplication.** The same underlying admission (beta=6, the Wilson relation,
+  the Kogut-Susskind chirality import) is re-named and re-admitted note after
+  note. A keyword scan of the 922 rows shows they collapse onto a *handful* of
+  atom-families (approx: 369 imported-literature/empirical, 238 helper-module,
+  112 color, 104 KS-chirality, 88 convention, 46 beta6) -- the same atoms,
+  recorded dozens of times.
+- **No leverage view.** Nobody can see that deriving *one* atom would retire
+  *forty* rows, so derivation effort is not prioritized.
+- **No chase/floor separation.** Genuinely irreducible floors (the Past
+  Hypothesis) get chased forever while real targets sit unranked.
+
+## The structure: one registry, `tier` as a field
+
+There are **not** two registries. There is **one** bounded-admission catalog,
+and **"Tier-A" is the top value of its `tier` field** -- not a separate file.
+On approval, `tier_a_admissions.json` folds in as the `tier: A` entries.
+
+One entry per **deduplicated atom**:
+
+| field | meaning |
+| --- | --- |
+| `admission_id` | stable slug for the atom |
+| `statement` | the minimal atom, one line |
+| `tier` | `A` \| `import` \| `convention` \| `floor` |
+| `retirability` | `open_target` \| `no_go_proven` \| `non_retirable` \| `retired` |
+| `leverage` | `{rows_bound, top_fanout}` -- the priority order |
+| `bound_row_ids` | back-references (the dedup; the "go after these" list) |
+| `derivation_state` | pointer to the campaign / no-go |
+| `aliases` | so re-admissions COLLAPSE here, never duplicate |
+
+### What distinguishes the tiers (be clear)
+
+- **`tier: A`** -- a *confirmed genuine irreducible* framework derivation
+  target (the project reduces to it). Retired only by a real derivation or a
+  proven no-go. Kept tiny **by design**: something is promoted to `A` only
+  *after* attempts to reprove it away have failed. Today: `AC_phi_lambda`,
+  `theta`.
+- **`tier: import`** -- the bulk. A value/relation used from *outside*
+  (literature, hard-coded, helper module): a **debt**, retired by **reproving
+  it from primitives** (forbidden-import discipline), after which it leaves the
+  registry as `retained` (clean). Most "admissions" are really this -- homework,
+  not fundamental gaps.
+- **`tier: convention`** -- vacuous rescaling/labeling (Y0, g_bare). Not an
+  admission. Recorded for completeness.
+- **`tier: floor`** -- non-retirable: the Past Hypothesis scope condition; an
+  external empirical value the axioms cannot reach; a proven no-go. Recorded but
+  **off the chase-list**.
+
+### The lifecycle (entries flow; they are not static)
+
+```
+import --reprove from primitives--> RETIRED (leaves registry, row becomes retained/clean)   <- best
+       --confirmed irreducible-----> promoted to tier:A
+       --proven non-retirable------> demoted to floor (e.g. Past Hypothesis)
+```
+
+## Three payoffs
+
+1. **Dedup.** One atom, many rows pointing in via `bound_row_ids` + `aliases`.
+   No re-admitting; no running the beta=6 campaign forty times.
+2. **Leverage-ranked reproof/derivation backlog.** Sort by
+   `rows_bound x top_fanout` -> the hit-list. `tier: A` atoms get
+   **derivation campaigns**; `tier: import` atoms get **reproofs**
+   (show the primitives reproduce the imported value, then retire it);
+   `tier: floor` gets **left alone**.
+3. **Systematic `audited_conditional -> retained_bounded` conversion.** A row is
+   `audited_conditional` precisely when the import it rests on is not a recorded
+   citable authority. Make the import an atom here and the auditor can **cite
+   it** -> the row lands `retained_bounded` (terminal). This is the structural
+   fix for the 25 conditional keystones -- not row-by-row note-narrowing.
+
+## The reproof-worker campaign this enables
+
+The registry is the **backlog** for an import-reproof worker (codex / workhorse
+under supervision). The loop:
+
+1. Take the top `tier: import`, `retirability: open_target` atom by leverage
+   (e.g. `helper_frontier_module_surface` ~238 rows, or
+   `imported_literature_series` ~369 rows).
+2. Reprove the imported value/relation **from framework primitives** (Haar /
+   the three axioms), per the reprove-and-cite discipline (reprove in the
+   runner, cite the literature only as comparator).
+3. On a clean reproof, every row in that atom's `bound_row_ids` can re-audit
+   **bounded -> retained (clean)** -- the whole cluster retires at once.
+4. The worker ships PRs; the independent auditor re-lands the rows. No verdict
+   is written from a session.
+
+This converts the largest cost centers (the ~369 + ~238 import clusters) from
+*bounded* to *retained clean* in cluster-sized chunks instead of one row at a
+time.
+
+## Honesty / scope of this draft
+
+- **First pass.** `rows_bound` marked `_estimate` are approximate keyword-scan
+  counts; `bound_row_ids` are exact only for the conditional-bridge atoms.
+  The full dedup of all 922 rows is the reproof-worker's first job.
+- **Triage, not gospel.** Entries marked `classification_status: first_pass`
+  come from the agent-sort, which demonstrably mis-shelved **B-AXIS** (called it
+  a scope condition when it is a bounding admission gating 925 descendants -- now
+  corrected to `verified`) and labeled the **SM-color** bridge `tier:A` while
+  also calling it "non-retirable" (a contradiction). Every `first_pass` atom
+  needs the per-atom operational test (does it bound? is it retirable?) before
+  its tier is recorded.
+- **No live change.** This PR adds two proposal files in `docs/`; it does not
+  touch `docs/audit/data/`, any registry, the pipeline, or any audit verdict.

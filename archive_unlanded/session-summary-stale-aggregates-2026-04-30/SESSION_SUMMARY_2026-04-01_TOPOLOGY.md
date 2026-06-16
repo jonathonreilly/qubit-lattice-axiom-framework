@@ -16,7 +16,7 @@ This file is a retracted aggregate session summary. Future readers should consul
 
 This is the topology-pivot session note. Later higher-dimensional results are
 tracked separately in
-[HIGHER_DIMENSION_STATUS_2026-04-01.md](/Users/jonreilly/Projects/Physics/docs/HIGHER_DIMENSION_STATUS_2026-04-01.md).
+[HIGHER_DIMENSION_STATUS_2026-04-01.md](../../docs/HIGHER_DIMENSION_STATUS_2026-04-01.md).
 
 ## The architecture story
 
@@ -154,7 +154,7 @@ the right size and location**.
 - `scripts/caldeira_leggett_bath.py` — N=25 in purity sweep
 
 ### Documentation
-- `archive_unlanded/if-program-unverifiable-closing-2026-04-30/IF_PROGRAM_CLOSING_NOTE.md` — canonical closure
+- `archive_unlanded/if-program-unverifiable-closing-2026-04-30/IF_PROGRAM_CLOSING_NOTE.md` — historical planning/triage only; not canonical closure
 - `docs/DECOHERENCE_FAILURE_ANALYSIS.md` — updated with topology pivot
 - `docs/SESSION_SUMMARY_2026-04-01_TOPOLOGY.md` — this file
 

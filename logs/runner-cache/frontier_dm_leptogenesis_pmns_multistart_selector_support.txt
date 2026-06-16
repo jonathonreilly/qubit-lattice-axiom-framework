@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py
-runner_sha256: e4a78b05c2769ce949890c80dbc4908bc3b2240980d8c934e0b871f147616a3a
+runner_sha256: 3f98a3188109085e177e07aec7969d85563c585e09328b29cdf81a5a789521ad
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 17.40
+elapsed_sec: 20.43
 status: ok
 ----- stdout -----
 ========================================================================================

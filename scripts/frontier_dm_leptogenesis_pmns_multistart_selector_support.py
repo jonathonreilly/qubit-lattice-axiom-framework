@@ -7,11 +7,11 @@ Purpose:
   PMNS-assisted N_e diagnostic on the runner-defined fixed seed surface.
 
 Method on the exact refreshed branch:
-  1. generate exact closure starts on the runner-defined fixed N_e seed surface;
+  1. generate closure starts on the runner-defined fixed N_e seed surface;
   2. solve the constrained effective-action stationary problem from each start;
   3. cluster all converged stationary points into closure branches;
-  4. verify there is one unique lowest-action branch and a finite gap to the
-     next branch.
+  4. verify that, within the recovered sampled branches, one lowest-action
+     branch is separated by a finite gap to the next branch.
 
 This is support for a runner-defined reduced-surface diagnostic, not a live
 theorem-grade selector or native-readout closure claim.

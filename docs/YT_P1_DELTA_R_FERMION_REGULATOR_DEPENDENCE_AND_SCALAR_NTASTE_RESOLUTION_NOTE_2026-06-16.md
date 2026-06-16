@@ -1,0 +1,109 @@
+# YT P1 Δ_R — Fermion-Channel Regulator-Dependence + Scalar /N_TASTE Double-Count: Resolution Note (2026-06-16)
+
+Status: **correction proposal (working-tree finding; NOT an audit verdict).** This
+note documents two defects in the P1 / Δ_R lattice-matching computation and the
+honest corrected value. Audit re-classification of the affected rows is the
+lane's call, not this note's.
+
+Authority touched (the buggy surface):
+`scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py` and its note
+`docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`.
+
+---
+
+## 1. Summary
+
+The three-channel lattice-matching correction
+
+    Δ_R = (α_LM/4π) [ C_F·Δ_1 + C_A·Δ_2 + T_F n_f·Δ_3 ]
+
+was reported as **Δ_R = −3.27%** and used to land `m_t(pole) = 172.57 GeV`. Two
+of its three channels are defective:
+
+- **Δ_1 (C_F, scalar):** the scalar matching coefficient `I_v_scalar` divided a
+  full-BZ integral by `/N_TASTE = 16`. The 16 tastes ARE the 16 BZ corners
+  already covered by the full-BZ extent, so this is a **double-count**. Corrected
+  `I_S = 32.4` (not 3.90); the runner's own `D_psi_full` docstring already says
+  "do NOT divide by N_TASTE", contradicting the code.
+- **Δ_3 (T_F n_f, fermion):** the fermion-loop integrand `F_g/D_psi²` is
+  log-divergent at **all 16 BZ doublers** (`D_psi=Σsin²k_μ → 0` at each corner),
+  but the continuum subtraction `4/(k²+m²)²` removes **only the k=0 doubler**.
+  The result therefore **drifts with the IR regulator m²** and is NOT a matching
+  constant: `I_SE_fermion ≈ 0.996` and `Δ_3 ≈ 1.328` are artifacts of the
+  arbitrary `m²=0.01`. The `/N_TASTE²` divisor cannot fix this (a constant cannot
+  cancel an m²-varying log). The taste-power question (`/16` vs `/256`) is moot.
+
+**Δ_2 (C_A, gluonic) is clean and unchanged** (`D_g²` vanishes only at the
+origin; its single log is correctly subtracted).
+
+## 2. Verification (three independent methods, all memory-safe)
+
+1. **Analytic power-counting.** Near every corner `c∈{0,π}⁴`, `D_psi → (k−c)²`
+   and `F_g → w_c = #(zero components of c)`. The corner weights sum to
+   `Σ w_c = 32` (each of 4 slots is zero in 8 of 16 corners); origin weight 4.
+   So after single-corner subtraction
+       d(lat−cont)/d log m² → −(32 − 4) = **−28**   (a clean constant would give 0).
+2. **Numerics** (`scripts/corrections/yt_p1_fermion_regulator_verification_memsafe.py`,
+   N≤32, single process): fermion single-corner slope ≈ **−36** (→ −28 as m²→0);
+   scalar-control slope ≈ **−2.9** (≈0, clean); full-16-doubler subtraction
+   collapses the slope (the doublers ARE the disease).
+3. **Independent adversarial agent** (analytic only): confirmed 32/28, the −28
+   slope, the scalar-clean contrast, and that no "reduced-BZ" / "/256
+   compensation" / "schematic-only" defense rescues the runner.
+
+## 3. Corrected Δ_R (honest bound)
+
+`scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py` (memory-safe,
+N≤48, full-doubler subtraction + m²→0 extrapolation for the fermion channel):
+
+| channel | corrected | runner |
+|---|---|---|
+| Δ_1 = 2·I_S − 6 (I_S=32.4) | C_F channel **+56.6%** | +1.7% |
+| Δ_2 = −(5/3)·I_SE_gluonic   | C_A channel **−8.4%** (clean) | −8.4% |
+| Δ_3 (full-doubler, C_f≈19–23) | T_F n_f channel **+0.3%…+5.4%** | +2.9% |
+| **Δ_R** | **+49%…+54%** | **−3.27%** |
+
+**Δ_R is an O(50%) uncontrolled quantity dominated by the scalar C_F channel**,
+not the small −3.27% reported. Critically, that +56.6% scalar channel is the
+**unimproved single-link 1-loop value, which is non-perturbative / uncontrolled**
+(Lee–Sharpe hep-lat/0208018: unimproved staggered matching constants are O(tens)
+and untrustworthy at one loop; smearing exists precisely to fix this). So the
+honest message is "Δ_R is large and uncontrolled," NOT a new precise value.
+
+## 4. Downstream impact
+
+- The runner's `Δ_R = −3.27%` underwrote `m_t(pole) = 172.57 GeV` (vs PDG 2025
+  `172.56 ± 0.31 GeV`). With Δ_R replaced by an uncontrolled O(50%) residual,
+  **the sub-percent m_t agreement is not a controlled prediction.** The clean
+  `y_t(M_Pl)/g_s(M_Pl) = 1/√6` Ward theorem + SM running still places m_t in the
+  right ballpark (~%); the bullseye precision rode on the defective Δ_R.
+- The narrow "±0.006 grid precision" claimed for `I_SE_fermion` is an artifact of
+  holding m² fixed; shifting m² 0.01→0.001 moves it ~33%.
+- `YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md` §2.5 incorrectly
+  states the continuum subtraction "cancels the UV logarithm" for the fermion
+  channel — it cancels only the origin doubler's log.
+
+## 5. Blast radius (surfaces that cite Δ_R / I_SE_fermion / the buggy runner)
+
+Pending owner-directed re-derivation and lane re-audit (this note does NOT
+re-state these claims):
+`YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE`, `YT_EW_DELTA_R_RETENTION_ANALYSIS_NOTE`,
+`YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE`, `YT_P1_DELTA_3_BZ_COMPUTATION_NOTE`,
+`YT_P1_BZ_QUADRATURE_2_LOOP_FULL_STAGGERED_PT_NOTE`, `YT_P1_DELTA_R_2_LOOP_EXTENSION_NOTE`,
+`YT_P1_DELTA_R_SM_RGE_CROSSCHECK_NOTE`, `YT_P1_I_S_LATTICE_PT_CITATION_NOTE`,
+`HIGGS_MASS_RETENTION_ANALYSIS_NOTE`, `YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE`,
+`MINIMAL_AXIOMS_2026-04-11` (the m_t/m_H lines), and the publication tables
+`docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md`,
+`docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md`.
+
+## 6. What this does NOT change
+
+- The exact lattice-scale Ward theorem `y_t(M_Pl)/g_s(M_Pl) = 1/√6` (untouched).
+- The C_A gluonic channel Δ_2 (verified clean).
+- The qualitative existence of a finite fermion matching constant under proper
+  full-doubler subtraction (~19–23 in lat−cont units) — but it is non-perturbative
+  at single-link order, hence a bound, not a controlled result.
+
+Reproduce: the two `scripts/corrections/*_memsafe.py` runners (single process,
+N≤48, peak RAM < ~700 MB). Do NOT run full-BZ quadratures across parallel
+processes — that is memory-unsafe.

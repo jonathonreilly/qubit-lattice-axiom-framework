@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/gauge_gauging_selection_conjugation_independence_2026_06_16.py
+runner_sha256: 2b2efb7b8ff0720ec71055ab8a69d2041483f4fec257d477f80d309ab6702fe5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+GAUGE-SELECTION CONJUGATION INDEPENDENCE CERTIFICATE
+========================================================================
+[PASS] source note declares exact negative boundary and no status promotion
+[PASS] factorwise candidate is a closed dim-12 irreducible algebra on the supplied C^3 x C^2 carrier
+       dim=12; closure residual=8.20e-15; commutant_dim=1
+[PASS] non-factor-local conjugate has the same dimension, closure, and scalar commutant
+       dim=12; closure residual=7.65e-15; commutant_dim=1
+[PASS] factorwise and conjugate embeddings have the same one-dimensional center profile
+       center_dim factorwise=1; center_dim conjugate=1
+[PASS] conjugate embedding is distinct from the supplied factorwise split
+       combined_span_dim=21; max residual into factorwise span=0.965; original Schmidt ranks=[1]; conjugate max Schmidt rank=4
+[PASS] full u(6) has the same scalar-commutant irreducibility profile as the dim-12 candidate
+       dim u(6)=36; commutant_dim u(6)=1; commutant_dim dim-12=1
+[PASS] conjugation-invariant algebraic data cannot choose one dim-12 embedding
+       both embeddings have dim=12, closure residual <1e-10, scalar commutant; yet combined_span_dim=21
+[PASS] selection principle required: factorization/gauging input is not produced by Lattice + Quantum + Record
+
+SCORECARD PASS=8 FAIL=0
+runner_check_breakdown = {A: 8, B: 0, C: 0, D: 0, total_pass: 8}
+VERDICT: exact negative boundary / route-pruning support.  The finite witness proves that irreducibility, scalar commutant, closure, and conjugation-invariant carrier algebra data do not select the supplied factorwise su(3)+su(2)+u(1) embedding.  A factorization/gauging principle, MR_color bridge, and chiral su(2)_L bridge remain required.
+
+----- stderr -----
+

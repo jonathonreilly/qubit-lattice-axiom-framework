@@ -89,6 +89,20 @@ supplied carrier + supplied weak-axis/fiber split + supplied Gauss/link rules
 Any clean promotion requires a separate retained bridge deriving or admitting
 the carrier/gauge-selection principle and the chiral weak coupling surface.
 
+### 2026-06-16 Exact independence addendum
+
+[`GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md`](GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md)
+adds a narrow exact negative boundary for one tempting repair route. On the
+same supplied `C³(base) ⊗ C²(fiber)` carrier, a non-factor-local unitary
+conjugate of the factorwise `su(3) ⊕ su(2) ⊕ u(1)` algebra has the same
+dimension, closure, and scalar commutant while being a distinct embedding; the
+full `u(6)` carrier algebra also has scalar commutant. Therefore
+irreducibility, scalar-commutant/record-indistinguishability, or
+conjugation-invariant carrier algebra data cannot select the factorwise
+dim-12 gauging. This prunes that repair route only. It does **not** derive
+`MR_color`, the factorwise carrier/gauge-selection principle, or chiral
+`su(2)_L`, and it does not change this row's audit status.
+
 ## What is and is not claimed
 
 - **Is:** GIVEN the supplied carrier and its supplied factor-locality premise, the

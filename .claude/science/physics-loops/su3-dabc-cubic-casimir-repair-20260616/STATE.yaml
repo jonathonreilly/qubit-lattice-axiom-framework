@@ -1,0 +1,20 @@
+loop_slug: su3-dabc-cubic-casimir-repair-20260616
+target_claim_id: su3_dabc_symmetric_theorem_note_2026-05-02
+target_status: bounded-support
+started_from: origin/main
+block_count: 1
+active_route: cubic_casimir_scalar_repair
+files_touched:
+  - docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md
+  - scripts/su3_dabc_symmetric_check.py
+  - logs/runner-cache/su3_dabc_symmetric_check.txt
+open_imports:
+  - physical SM color identification remains out of scope
+claim_boundary: >
+  Correct the abstract-fundamental cubic Casimir scalar from 5/12 to 10/9 and
+  add a finite matrix runner check. This closes the C2 artifact/scalar issue
+  without claiming the abstract SU(3) carrier is physical SM color.
+review_disposition: pass
+next_exact_action: >
+  Hand this PR to the reviewer so the independent audit lane can re-check the
+  bounded algebraic theorem with C2 corrected and runner-backed.

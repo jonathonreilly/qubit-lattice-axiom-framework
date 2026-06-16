@@ -44,7 +44,8 @@ scope." This rigorization edit only sharpens the boundary of the
 conditional perimeter; nothing here promotes audit status. The
 supported content of this note is precisely the algebraic theorem
 on the Gell-Mann basis: (D1)–(D6) as derived by trace projection in
-the Gell-Mann basis with `Tr[T^a T^b] = (1/2) δ^{ab}`. The audit
+the Gell-Mann basis with `Tr[T^a T^b] = (1/2) δ^{ab}`, together with
+the runner-checked abstract-fundamental C2 scalar below. The audit
 perimeter is the algebraic content; the **physical identification**
 of this algebraic carrier with SM color (i.e. that this `T^a` is the
 gauge connection of the Standard Model gluon sector) is explicitly
@@ -235,10 +236,16 @@ C2. **Algebraic cubic Casimir from d.** The cubic Casimir
 C_3 := d^{abc} T^a T^b T^c is a third-order generator of Z(U(g)) for
 the abstract algebraic carrier. On the abstract fundamental V_3 it
 evaluates to a specific scalar (related to (N²−1)(N²−4)/(4N²) for
-SU(N), giving 5/12 for N=3 in standard normalization). Whether this
-algebraic carrier's V_3 coincides with physical SM color fundamentals
-is the responsibility of the physical-color bridge (out of scope; see
-below).
+SU(N), giving 10/9 for N=3 in the normalization `Tr[T^a T^b] =
+(1/2)δ^{ab}`). The paired runner now checks the finite matrix identity
+
+```text
+d^{abc} T^a T^b T^c = (10/9) I_3
+```
+
+and verifies that this operator commutes with all eight generators. Whether
+this algebraic carrier's V_3 coincides with physical SM color fundamentals is
+the responsibility of the physical-color bridge (out of scope; see below).
 
 C3. **No d for SU(2).** SU(2)'s 3 Pauli generators have only
 antisymmetric ε^{abc}, no analog of d^{abc}. The existence of d^{abc}
@@ -283,7 +290,8 @@ Bounded theorem on the abstract algebraic SU(3) symmetric structure constants,
 derived from a single cited one-hop dependency by elementary trace projection
 in the Gell-Mann basis. The runner exhibits the anticommutator decomposition,
 total symmetry, reality, agreement with 16 standard reference values, the
-combined T^a T^b identity, and the f-anti-sym / d-sym orthogonality — all at
+combined T^a T^b identity, the f-anti-sym / d-sym orthogonality, and the
+abstract-fundamental cubic scalar `d^{abc}T^aT^bT^c = (10/9)I_3` — all at
 machine precision.
 
 ```yaml

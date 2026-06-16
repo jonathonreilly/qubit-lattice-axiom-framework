@@ -1,8 +1,8 @@
 """Gauging-selection open gate: four tested discriminators are blind.
 
-CONTEXT: given the supplied carrier, the algebra su(N_c)+su(2)+u(1) is
-available as bounded support, and N_c=d is counterfactual support in a
-supplied Z^d family. What remains open is the GAUGING SELECTION -- which
+CONTEXT: given the supplied carrier and supplied factor-locality premise, the
+factor-preserving algebra su(N_c)+su(2)+u(1) is available as bounded support,
+and N_c=d is counterfactual support in a supplied Z^d family. What remains open is the GAUGING SELECTION -- which
 symmetry is dynamically gauged + the physical-color identification MR_color +
 the chiral su(2)_L. This runner verifies that four candidate discriminators are
 blind to the gauging selection. It does not assert a closed no-go.
@@ -170,8 +170,9 @@ def main() -> int:
         "complex while spatial rotation is real. So the gauging selection (which symmetry is gauged + the\n"
         "physical-color identification MR_color + chiral su(2)_L) is NOT closed by these four -- it is an OPEN\n"
         "GATE, not a proven irreducible no-go (closing it as a no-go would need the full N1-N8 route\n"
-        "enumeration with retained-authority failures, beyond these four checks). The algebra it sits on is\n"
-        "itself conditional on the SUPPLIED carrier. Audit lane sets the status."
+        "enumeration with retained-authority failures, beyond these four checks). The factor-preserving algebra it\n"
+        "sits on is itself conditional on the SUPPLIED carrier and factor-locality/MR_color premise. Audit lane\n"
+        "sets the status."
     )
     return 0 if FAIL == 0 else 1
 

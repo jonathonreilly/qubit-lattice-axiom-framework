@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1589 |
+| Applied audit verdicts | 1590 |
 | Retained-grade rows, including boxed decorations | 1438 |
 | Retained positive theorems | 221 |
 | Retained no-go rows | 214 |
 | Retained bounded rows | 958 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1403 |
+| Unaudited rows | 1402 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 58 |
+| Audited conditional rows | 59 |
 | Audited renaming rows | 32 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1405 |
-| Ready rows | 3 |
+| Total pending rows | 1404 |
+| Ready rows | 2 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 426 |
+| Medium pending | 425 |
 | Leaf pending | 427 |
 
 Next ready rows by queue order:
 
-- [`statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_EINSTEIN_HILBERT_CLOSURE_SYNTHESIS_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 
@@ -78,8 +77,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
 | High nodes | 514 |
-| Medium nodes | 935 |
-| Leaf nodes | 1463 |
+| Medium nodes | 934 |
+| Leaf nodes | 1464 |
 
 Top load-bearing rows by graph score:
 

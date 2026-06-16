@@ -51474,10 +51474,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
     },
     {
@@ -98974,13 +98970,12 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
         "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
         "universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08",
         "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6bebcc277ea6a10be1dc3aa7e013febf584311f69c040a21533d5e639e640c34",
+      "note_hash": "e3fc48a5c2a63d61d0cabc53e9b1a1b41fa41ddb4e189bc6cf6b35e7835f2979",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113760,8 +113755,8 @@
       "open_gate": 170,
       "positive_theorem": 612
     },
-    "edge_count": 12971,
-    "leaf_count": 1109,
+    "edge_count": 12970,
+    "leaf_count": 1110,
     "node_count": 3453,
     "root_count": 1066,
     "runners_with_path": 3039

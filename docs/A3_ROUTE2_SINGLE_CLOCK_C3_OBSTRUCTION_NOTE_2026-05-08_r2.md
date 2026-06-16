@@ -84,7 +84,7 @@ established by the prior W2 / L3a / substep4ac analyses.
 | RP | Reflection positivity (temporal-axis only) | upstream authority: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) |
 | SC | Spectrum condition H ≥ 0 | upstream authority: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md) |
 | LR | Lieb-Robinson microcausality v_LR = 2 e r J | upstream authority: [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) |
-| SCK | Single-clock codimension-1 evolution; uniqueness of temporal RP axis | upstream authority: [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) |
+| SCK | Axis-conditional single-clock codimension-1 evolution under B-AXIS; temporal-axis selection is a premise, not derived from RP uniqueness | upstream conditional source: [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) |
 | KMS | KMS condition; modular conjugation J via Tomita-Takesaki | upstream authority: [`AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md) |
 | BlockT3 | hw=1 BZ-corner triplet has M_3(C) algebra; C_3[111] cyclic | upstream authority: [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) and [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) |
 | C3_111 | C_3[111] cyclic permutation of coordinate axes | imported from Z³ point group; see [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) |
@@ -102,20 +102,22 @@ established by the prior W2 / L3a / substep4ac analyses.
 
 ### Attack vector 1: single-clock time-direction selects a spatial axis?
 
-**Hypothesis:** the single-clock theorem's selection of `τ` as the
-unique RP-admissible reflection axis induces a preferred spatial
-axis on `H_{hw=1}`.
+**Hypothesis:** the single-clock source supplies a derived temporal-axis
+selection that could induce a preferred spatial axis on `H_{hw=1}`.
 
-**Verdict: FAILS.** Per single-clock theorem (S3): the temporal
-direction τ is the **unique** lattice direction admitting RP.
-Spatial reflections θ_i (for `i = 1, 2, 3`) all fail RP on the
-staggered-Dirac action. The proof of (S3) treats x, y, z
-**symmetrically** — "no spatial reflection is RP" is itself a
-C_3[111]-invariant statement.
+**Verdict: FAILS / not an available premise.** The current single-clock
+source withdrew the claim that RP uniquely selects the temporal axis. It now
+supplies only an axis-conditional cap under B-AXIS: one supplied blocked time
+step, one declared evolution axis/transfer construction, and no admitted
+independent commuting transfer factor. Therefore this route cannot use
+single-clock as a derived spatial-axis selector. Conditional on B-AXIS, the
+single-clock cap is a count/clock boundary and remains symmetric with respect
+to the spatial `C_3[111]` action.
 
-The single-clock theorem's spatial-axis content is the negative
-statement "no spatial axis admits RP," which is C_3[111]-symmetric
-across the three spatial axes.
+The current single-clock source's relevant content is the exchange-
+symmetry certificate plus the declared B-AXIS premise, not a derived
+spatial-RP exclusion theorem. That content supplies no C_3[111]-
+breaking spatial-axis observable.
 
 ### Attack vector 2: Lieb-Robinson velocity is direction-dependent?
 

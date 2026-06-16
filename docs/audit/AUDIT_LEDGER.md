@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 221 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 958 |
+| **retained_bounded** | 959 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1402 |
+| unaudited | 1401 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 32 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1409 |
+| `audited_clean` | 1410 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1719 |
+| `unaudited` | 1718 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 533 |
 | `high` | 508 |
-| `medium` | 895 |
-| `leaf` | 1375 |
+| `medium` | 894 |
+| `leaf` | 1376 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 0
@@ -1434,6 +1434,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -21155,6 +21156,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** With G_trace=G_TT=G != 0 and omega^2=V/G, the derived opposite-signed pair V_trace=-k^2/2 and V_TT=+k^2/2 gives omega_trace^2 * omega_TT^2=(V_trace V_TT)/G^2<0.  _(class `A`)_
 - **chain closes:** True — Substitution gives V_trace V_TT=-k^4/4, so for k != 0 and G != 0 the product is negative and an overall sign change of the degenerate G squares out. The result is only this local comparator-gluing obstruction, not a global GR or finite-k stress-route no-go.
 - **rationale:** The load-bearing step is genuine class-A sign algebra over independent retained-grade inputs: retained degenerate trace=shear supermetric, retained finite quadratic gluing, and retained-bounded derived comparator signs. The primary runner performs real symbolic/algebraic checks for the local EH comparator and the gluing helper, with one cross-note guard for the retained cubic-Coxeter Regge/EH bridge; it does not use an external comparator or tuned scale. The no-go discipline gate passes because the conclusion is explicitly scoped to this degenerate-supermetric comparator-gluing model and leaves non-degenerate fiber metrics, 4D/timelike Regge dynamics, action orientation, and finite-k W/stress routes open.
+- **auditor confidence:** high
+
+### `universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_EINSTEIN_HILBERT_CLOSURE_SYNTHESIS_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_EINSTEIN_HILBERT_CLOSURE_SYNTHESIS_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-lattice synthesis diagnostic: on the runner-defined `L=6,8` cubic and quartic Ward cross terms, the supplied conserved `D(P_eff)+sqrt(g)` coupling decreases and outperforms the naive non-conserved control.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-041359-ded6817f98-universal_gr_einstein_hilber`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner recomputes the cubic and quartic finite-lattice Ward diagnostics and checks that the same supplied conserved coupling `D(P_eff) + sqrt(g)` beats the naive non-conserved control at both orders on `L=6,8`.  _(class `C`)_
+- **chain closes:** True — The included runner source constructs the finite lattice operators, diffeomorphism variation, log-det derivative, and cross-term extraction rather than hard-coding target residuals. The retained cubic and quartic authorities independently confirm the same L=6 to L=8 inequalities; no Einstein-Hilbert, all-order, continuum-coefficient, or `G_Newton` claim is needed for this bounded scope.
+- **rationale:** The load-bearing finite computation is class C: it instantiates Pauli/lattice shift operators and evaluates finite-matrix Ward residuals with no imported empirical comparator or tuned target value. An independent arithmetic pass from the one-hop retained cubic and quartic authority numbers confirms the conserved decrease and faster conserved-vs-naive improvement at both orders, and the T0 determinant sign check follows from `det(mI+i sigma.s)=m^2+|s|^2` versus the Hermitian comparator. The clean verdict applies only to the bounded finite-lattice diagnostic, not to Einstein-Hilbert identification, all-order diffeomorphism invariance, continuum coefficients, or gravitational-coupling magnitude.
 - **auditor confidence:** high
 
 ### `universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08`

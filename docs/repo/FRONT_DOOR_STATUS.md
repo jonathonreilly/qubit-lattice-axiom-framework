@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1590 |
-| Retained-grade rows, including boxed decorations | 1438 |
+| Applied audit verdicts | 1591 |
+| Retained-grade rows, including boxed decorations | 1439 |
 | Retained positive theorems | 221 |
 | Retained no-go rows | 214 |
-| Retained bounded rows | 958 |
+| Retained bounded rows | 959 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1402 |
+| Unaudited rows | 1401 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 59 |
 | Audited renaming rows | 32 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1404 |
-| Ready rows | 2 |
+| Total pending rows | 1403 |
+| Ready rows | 1 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
-| Medium pending | 425 |
+| Medium pending | 424 |
 | Leaf pending | 427 |
 
 Next ready rows by queue order:
 
-- [`universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_EINSTEIN_HILBERT_CLOSURE_SYNTHESIS_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
@@ -77,8 +76,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3453 |
 | Critical nodes | 541 |
 | High nodes | 514 |
-| Medium nodes | 934 |
-| Leaf nodes | 1464 |
+| Medium nodes | 933 |
+| Leaf nodes | 1465 |
 
 Top load-bearing rows by graph score:
 

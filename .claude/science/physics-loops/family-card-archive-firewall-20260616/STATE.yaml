@@ -1,0 +1,17 @@
+loop_slug: family-card-archive-firewall-20260616
+goal: "Fence the archived three-family card packet so its failed 9/9 claim cannot be read as live geometry-independence evidence."
+target_status: demotion
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: archive_failed_packet_firewall
+files_touched:
+  - archive_unlanded/family-card-incomplete-artifacts-2026-04-30/THREE_FAMILY_CARD_NOTE.md
+  - scripts/family_card_archive_firewall_2026_06_16.py
+open_imports:
+  - "No recomputation of all nine properties for all three families."
+  - "Family 3 distance alpha remains missing in the archived table."
+review_findings: "Local self-review: pass for demotion/firewall scope."
+pr_status: pending_creation
+next_exact_action: "Run checks, commit, push, open PR, then patch PR URL into this pack."

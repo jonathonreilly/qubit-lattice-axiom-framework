@@ -25,4 +25,4 @@ python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only
 python3 scripts/vocab_lint.py --report-only --report-path /tmp/portability-extension-vocab-report.json archive_unlanded/portability-stale-extension-wrappers-2026-04-30/README.md archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md
 ```
 
-PR: TBD
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4105

@@ -14,6 +14,10 @@ from total detector-escape suppression.
 - No complex-action theorem is claimed.
 - No new physics premise was introduced.
 
+## PR
+
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4100
+
 ## Verification
 
 Run:

@@ -1,0 +1,22 @@
+loop_slug: dm-full-endpoint-arithmetic-scope-20260616
+goal: "Repair the DM full-closure same-surface conditional by narrowing the source packet to endpoint non-overlap arithmetic."
+target_status: bounded-support
+origin_main: "104d31220 audit: reconstructed h quasilocal from analytic dispersion mi clean"
+branch: physics-loop/dm-full-endpoint-arithmetic-scope-20260616
+claim_id: dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16
+audit_blocker: "Selector-boundary theorem does not close; arithmetic over helper-defined endpoints and intervals does."
+active_route: source_scope_narrowing
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md
+  - scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py
+  - logs/runner-cache/frontier_dm_full_closure_same_surface_numerator_selector_boundary.txt
+  - .claude/science/physics-loops/dm-full-endpoint-arithmetic-scope-20260616/
+open_imports:
+  - "No selector theorem."
+  - "No no-selector theorem."
+  - "No helper-packet completeness theorem."
+  - "No independent retained authority for helper definitions in this row."
+next_exact_action: "Reviewer can extract the arithmetic-only source narrowing and queue the row for independent re-audit."

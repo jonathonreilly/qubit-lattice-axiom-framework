@@ -19,7 +19,12 @@ actually consumes, P2 phase-blindness is eliminated rather than admitted.
 2026-06-10 boundary-declaration repair: the readout-identification bridge
 premise is declared as the explicit Boundary, Theorem 1 is restated as a
 five-input chain (T1-a..T1-e), and the runner residual-checks the Theorem-2
-observable map; see Changelog.
+observable map; see Changelog. 2026-06-16 T1-d independence guardrail:
+[`OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md`](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md)
+proves that Record additivity plus determinant block factorization does not
+derive the determinant-only readout quotient or the source-blocks-to-records
+clause, so T1-d remains an explicit Boundary rather than axiom-derived
+content.
 **Type:** bounded_theorem (finite-algebra `log|det(D+J)|` generator on
 the runner block, using Record-backed finite scalar additivity, the
 positive-source-cone P2 elimination on the consumed finite real source surface,
@@ -34,7 +39,12 @@ hypothesis, not just the attainable block amplitudes), and independent
 disjoint source blocks register as disjoint records.* The axiom memo
 explicitly excludes source/action and physical-observable identification from
 Record content, so this identification is a premise of this note, declared and
-consumed as such — not a consequence of `minimal_axioms`.
+consumed as such — not a consequence of `minimal_axioms`. The 2026-06-16
+T1-d independence no-go gives the exact obstruction: continuous direct-sum
+additive finite source readouts such as `log det + epsilon Tr` obey Record-style
+additivity and determinant multiplicativity while failing to be functions of
+`det(D+J)` alone, and a source-disjoint assignment need not be record-disjoint
+without an additional readout-context bridge.
 **Headline (post-2026-06-10 boundary declaration):** *On finite scalar record
 readout surfaces, Record supplies P1 additivity over disjoint/independent
 record collections. On the finite real staggered source sector consumed here,
@@ -458,7 +468,11 @@ the positive-source-cone bridge as removing the phase premise on the consumed
 branch, and whether the single declared readout-identification Boundary
 (T1-d) is acceptable as the note's one bridge premise — it is genuinely not
 derivable from the axiom memo, which excludes source/action and
-physical-observable identification from Record content. The broader
+physical-observable identification from Record content. This non-derivability
+is now sharpened by
+[`OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md`](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md):
+Record-compatible additive source readouts need not be determinant-only, and
+source-disjoint blocks need not register as disjoint records. The broader
 `AC_phi_lambda`/Berezin determinant identification and off-sector
 phase-blindness questions stay out of scope. The
 older P1 question is closed only for the narrow finite scalar

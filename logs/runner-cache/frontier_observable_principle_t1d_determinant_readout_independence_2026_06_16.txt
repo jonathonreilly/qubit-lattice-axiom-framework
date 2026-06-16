@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py
+runner_sha256: 8b84527c3305968fdb63d7fe1a71e18e9e4b0d42db2474bdcac1570aa48ccc02
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+Observable-principle T1-d determinant-readout independence no-go
+==============================================================================
+== T1: additive continuous readout countermodel ==
+[PASS] W_epsilon is exactly direct-sum additive  -- W(A+B)-W(A)-W(B)=0 for symbolic epsilon
+[PASS] log det part is direct-sum additive
+[PASS] trace part is direct-sum additive
+[PASS] determinant multiplicativity is preserved  -- det(A+C)=60, det(A)det(C)=60
+[PASS] same determinant witness exists  -- det diag(4,1) = det diag(2,2) = 4
+[PASS] W_epsilon is not a function of determinant alone  -- W(diag(4,1))-W(diag(2,2)) = epsilon
+[PASS] countermodel is smooth on the positive source cone  -- dW/dx=epsilon + 1/x, dW/dy=epsilon + 1/y
+== T2: determinant-only quotient is the missing premise ==
+[PASS] once determinant-only is imposed, the log family is additive  -- c log(r1 r2)-c log(r1)-c log(r2)=0
+[PASS] determinant-only is independent from block additivity  -- the additive countermodel separates blocks with equal determinant
+[PASS] dimension-labelled additive readout is also not determinant-only  -- same determinant 4 but dimension contribution differs by -epsilon
+== T3: disjoint-source to disjoint-record clause is independent ==
+[PASS] source blocks can be disjoint  -- A={1, 2}, B={3, 4}
+[PASS] a non-injective source-to-record assignment is logically allowed unless ruled out by an extra bridge  -- A->r0, B->r0
+[PASS] therefore source-disjoint does not imply record-disjoint as pure logic  -- the missing implication is exactly the T1-d blocks-to-records clause
+== T4: source-note guardrails ==
+[PASS] parent still declares T1-d as a Boundary
+[PASS] parent says T1-d is not derivable from minimal_axioms
+[PASS] parent cites the new T1-d independence no-go
+[PASS] minimal axiom memo withholds source/action and physical-observable identification
+[PASS] new note forbids treating T1-d as Record-derived
+[PASS] new note carries a source-visible no-go discipline gate
+[PASS] new note does not claim an audit-ratified retained status
+==============================================================================
+TOTAL: PASS=20 FAIL=0
+==============================================================================
+
+----- stderr -----
+

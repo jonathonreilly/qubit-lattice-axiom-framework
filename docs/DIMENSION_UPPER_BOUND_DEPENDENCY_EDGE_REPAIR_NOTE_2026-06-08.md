@@ -8,7 +8,8 @@ direct_effective_status_change_allowed_from_this_note: false
 # Dimension Upper-Bound Dependency-Edge Repair Note
 
 **Date:** 2026-06-08
-**Type:** bounded source-graph repair / dependency-edge certificate
+**Claim type:** meta
+**Type:** meta / dependency-edge certificate
 **Primary runner:**
 [`scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py`](../scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py)
 **Cached runner output:**
@@ -30,10 +31,20 @@ Independent audit correctly found that this packet is too broad if queued as a
 positive theorem: the runner verifies citation surfaces, cached support
 packets, and exact finite-set intersections, but it is not a first-principles
 framework derivation of dimension selection. This revision therefore
-classifies the packet as a **bounded source-graph repair**, not a theorem-grade
-dimension-selection claim.
+classifies the packet as a **meta dependency-edge certificate**, not a
+theorem-grade dimension-selection claim.
 It is not a positive theorem; it is a dependency-edge certificate for a parent
 claim that remains audit-owned.
+
+## 2026-06-16 Meta Queue Correction
+
+This packet is source metadata for the dimension upper-bound wrapper. Its
+canonical claim type is `meta`: it verifies dependency-edge exposure, cached
+support packet citations, and finite-set composition. It does not assert a
+new positive theorem and should be requeued/audited only as a meta
+dependency-edge certificate. The separate parent dimension-selection theorem,
+if audited as positive science, must be a separate source row with the lower
+bound and native `d <= 3` upper edge as direct dependencies.
 
 The auditable claim is only:
 
@@ -100,7 +111,7 @@ The runner verifies:
 
 - this note cites the wrapper, the one-hop support packets, their runners, and
   their cached outputs;
-- this note is classified as a bounded source-graph repair, not a positive
+- this note is classified as a meta dependency-edge certificate, not a positive
   dimension-selection theorem;
 - the wrapper cites this repair note and the support packets;
 - the support packets preserve their bounded support firewalls;
@@ -110,7 +121,7 @@ The runner verifies:
 Expected output:
 
 ```text
-SUMMARY: PASS=48 FAIL=0
+SUMMARY: PASS=49 FAIL=0
 ```
 
 ## Status Certificate

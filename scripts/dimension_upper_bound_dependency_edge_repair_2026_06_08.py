@@ -105,14 +105,18 @@ def source_anchor_checks() -> None:
         and "bare_retained_allowed: false" in repair,
     )
     report(
-        "repair note is classified as bounded source-graph repair, not theorem queue",
+        "repair note is classified as meta dependency-edge certificate, not theorem queue",
         "claim_type_author_hint: meta" in repair
-        and "**Type:** bounded source-graph repair / dependency-edge certificate" in repair
+        and "**Claim type:** meta" in repair
+        and "**Type:** meta / dependency-edge certificate" in repair
+        and "canonical claim type is `meta`" in repair
         and "not a positive theorem" in flat(repair)
         and "not a theorem-grade dimension-selection claim" in flat(repair)
+        and "separate parent dimension-selection theorem" in repair
         and "prove the parent dimension-selection theorem" in repair
         and "actual_current_surface_status: bounded-support" in repair
-        and "claim_type_author_hint: bounded_theorem" not in repair,
+        and "claim_type_author_hint: bounded_theorem" not in repair
+        and "**Type:** bounded source-graph repair" not in repair,
     )
     report(
         "wrapper has 2026-06-08 repair section",

@@ -1,15 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/gl_f_identification_bridge_check_2026_06_11.py
-runner_sha256: d3e5500cc2a76429e50fba25c8ad4e4ce25677cc061748869d83010c8a31f2b2
+runner_sha256: db63cb339c74b2b5a3df46824b04f70b5fee4b205973cee3d039304dc5958e8d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.36
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ==============================================================================
-GL(F) identification bridge -- decomposition + discharge certificates
+GL(F) identification bridge -- conditional decomposition checks
 (2026-06-11; landed parent reconstruction recomputed here)
 ==============================================================================
+[S] PASS: post-audit source status is conditional support / open gate, not theorem closure
+[S] PASS: matter-functional clause I-4 remains explicitly not discharged
+[S] PASS: source no longer asks audit to treat the parent bridge as closed
 
 --- [A] Retained suppliers of the kinematic clauses (recomputed) ---
 [A] PASS: carrier clause (I-1), per-site: {I, sigma_1, i sigma_2, sigma_3} span M_2 (rank 4) and the commutant of the Pauli action on C^2 is exactly the scalars (Schur) -- C^2 is the irreducible carrier the Quantum axiom supplies DIRECTLY (the u4 row is audited_renaming: the axiom, not a derivation, is the per-site supplier)
@@ -29,7 +32,7 @@ GL(F) identification bridge -- decomposition + discharge certificates
 [B] PASS: N = 3: {psi_x, psi_y^dag} = (K^{-1})_xy I exactly -- the transfer kernel K is RECOVERED from the functional's anticommutator data (the dynamics-bearing object is functional-determined, not identification-dependent)
 [B] PASS: N = 3: F-hat (integrand grading pushed to the quotient) preserves the OS form, anticommutes with every field, AND equals the WORD prod_x (1 - 2 psi_x^dag psi_x) in the reconstructed fields exactly -- the reconstructed parity is a polynomial in the field multiplet, not extra structure
 
---- [C] Discharge certificates (clauses I-1, I-2, I-3 become theorems) ---
+--- [C] Exact finite support (I-1, I-2, I-3 conditional on I-4) ---
 [C] PASS: N = 2: CYCLICITY -- the 16 normal-ordered field words applied to the OS vacuum Omega span the full reconstructed space (exact rank = 2^N = 4); the functional's matrix elements over words exhaust the operator theory
 [C] PASS: N = 2: IRREDUCIBILITY -- the field words span the FULL matrix algebra M_{2^N} (exact rank 16 = 4^N): the GNS representation is the unique irreducible CAR_N representation and the OS state is pure
 [C] PASS: N = 2: FUNCTIONAL-LEVEL GL(F) -- every word-sandwiched value omega(w^dag ({psi_x, psi_y}) w') and omega(w^dag ({psi_x, psi_y^dag} - delta_xy I) w') vanishes exactly (all 16 x 16 word pairs, all x, y); combined with cyclicity, the exchange relations hold as OPERATOR IDENTITIES in EVERY realization of the functional with cyclic vacuum -- GL(F) is a property of the functional, invariant under the choice of identification
@@ -55,7 +58,7 @@ GL(F) identification bridge -- decomposition + discharge certificates
 [D] PASS: N = 3: PARITY ESCAPE -- an involution with unbalanced multiplicities (trace 2^N - 2 = 6) can never be unitarily aligned with F-hat (trace 0): conjugation preserves the trace, so the retained balanced-multiplicity fact (parity row (F4)) is load-bearing for the parity clause
 [D] PASS: N = 2: CYCLICITY ESCAPE -- restricting to the EVEN (parity-preserving) word subalgebra, the vacuum spans only dim 2^{N-1} = 2 < 2^N: the full-field cyclicity certificate in [C] is load-bearing for the operator-identity transport; a rival who consumes only the even observable subalgebra does not get the field dictionary forced (declared in the note's boundaries)
 
-TOTAL: PASS=36 FAIL=0
+TOTAL: PASS=39 FAIL=0
 
 ----- stderr -----
 

@@ -54,6 +54,25 @@ Kolb-Turner prefactor, and P7 Sommerfeld/dark-coupling route remain
 supplied on this row. This repair does not close `(C2.eta)` and does not
 change any audit status.
 
+## 2026-06-16 Post-Audit Residual Certificate
+
+Independent audit correctly leaves this row conditional after the P5 repair.
+The finite arithmetic and retained `R_base`/structural-ratio inputs are still
+useful, but the row is not a first-principles derivation of `eta` from the
+framework. The remaining live residuals are exactly P1-P4 and P6-P7:
+
+- P1: freeze-out-bypass identity `eta = C * m_DM^2`;
+- P2: composed mass surface `m_DM = N_sites * v = 16 * v`;
+- P3: BBN coefficient;
+- P4: freeze-out coefficient band;
+- P6: Kolb-Turner prefactor;
+- P7: Sommerfeld/dark-coupling route.
+
+The observed `eta_obs` value is a comparator for bracketing only. It is not a
+proof input, fitted target, or retained framework output on this row. A clean
+promotion requires retained bridge authority for the residual packet or an
+explicit accepted-premise registration outside this note.
+
 ## 2026-06-07 Source-Boundary and Rounding Repair
 
 This repair makes the admission boundary executable in the source note. The

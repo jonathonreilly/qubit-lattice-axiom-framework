@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py
-runner_sha256: a29277386e481164ed8cfb374f2b74c922b07aa39fc64b6d471ae21ca6669b8a
+runner_sha256: 8259db9012b948e923bf1f01f4d646067871c251d7af9092f6af922f5523b521
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================
@@ -19,6 +19,9 @@ Section 1: chain authority audits
 [PASS] Note status authority is independent audit lane only
 [PASS] Note records conditional support over the P_DM_ETA input packet
 [PASS] Note records 2026-06-12 P5 retained-input repair
+[PASS] Note records 2026-06-16 post-audit residual certificate
+[PASS] Post-audit certificate keeps P1-P4 and P6-P7 as live residuals
+[PASS] Post-audit certificate keeps eta_obs comparator-only
 [PASS] Note records 2026-06-07 source-boundary repair
 [PASS] Note records P_DM_ETA packet
 [PASS] P_DM_ETA records P5 as retained_bounded finite-inventory authority
@@ -130,7 +133,7 @@ Section 10: status discipline
 [PASS] Note does NOT use bare 'proposed_retained' or 'retained:' status language
 
 ========================================================================
-TOTAL: PASS=89 FAIL=0
+TOTAL: PASS=92 FAIL=0
 VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
 
 ----- stderr -----

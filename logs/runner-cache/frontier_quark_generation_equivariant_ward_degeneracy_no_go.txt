@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_generation_equivariant_ward_degeneracy_no_go.py
-runner_sha256: 27cdae0b97c9a149680b8e0be5b6e253800b0177c49862b28cd837aaa92b5426
+runner_sha256: b67212dc0251b2c233c7cc0e7de5819fc1e2d4b4536bf367be5a44f7d619bcbe
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -68,13 +68,14 @@ PASS: oriented C3 example breaks reflection
 PASS: oriented C3 example can split three eigenvalues -- [0.05717968 1.44282032 1.5       ]
 PASS: therefore C3 splitting requires an extra orientation/reflection-breaking premise
 PASS: forbidden proof inputs are absent -- ['Hermitian_Ward_endomorphism', 'S3_generation_action', 'commutant_linear_algebra', 'hw1_A1_plus_E_decomposition']
-PASS: new note leaves future source/readout primitive open
+PASS: new note leaves future source/readout input or bridge open
 PASS: new note does not overclaim future no-go
 
 Summary
 ------------------------------------------------------------------------
 TOTAL: PASS=46, FAIL=0
 VERDICT: S_3-equivariant Ward operators cannot stratify three quark
-generation Yukawa eigenvalues without a new source/readout primitive.
+generation Yukawa eigenvalues without an additional source/readout bridge.
 
 ----- stderr -----
+

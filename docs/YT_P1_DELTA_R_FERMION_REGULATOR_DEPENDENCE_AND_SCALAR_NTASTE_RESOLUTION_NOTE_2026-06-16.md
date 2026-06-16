@@ -21,6 +21,7 @@ Authority touched (the buggy surface):
 - [`scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py`](../scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py)
 - [`scripts/corrections/yt_p1_fermion_regulator_verification_memsafe.py`](../scripts/corrections/yt_p1_fermion_regulator_verification_memsafe.py)
 - [`scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py`](../scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py)
+- [`scripts/corrections/yt_p1_mt_compression_memsafe.py`](../scripts/corrections/yt_p1_mt_compression_memsafe.py)
 
 **Cached logs:**
 - [`logs/runner-cache/frontier_yt_p1_bz_quadrature_full_staggered_pt.txt`](../logs/runner-cache/frontier_yt_p1_bz_quadrature_full_staggered_pt.txt)
@@ -110,11 +111,25 @@ honest message is "Δ_R is large and uncontrolled," NOT a new precise value.
   so the corrected `Δ_R ≈ +50%` **violates the framework's own ≤7.41% bound by
   ~7–10×.** So m_t is not controlled even at the ≤7% level claimed, let alone
   sub-percent.
-- **What survives:** the clean exact `y_t(M_Pl)/g_s(M_Pl) = 1/√6` Ward theorem +
-  17-decade SM running (whose top-Yukawa **IR quasi-fixed point** compresses
-  high-scale uncertainty toward an O(1) attractor) still places m_t in the right
-  **ballpark** (~170–200 GeV), robustly. The exact size of the residual m_t
-  uncertainty depends on that RG compression (not computed here), but the
+- **What survives — quantified and cross-checked against the framework's QFP
+  script** ([`scripts/frontier_yt_qfp_insensitivity.py`](../scripts/frontier_yt_qfp_insensitivity.py);
+  [`scripts/corrections/yt_p1_mt_compression_memsafe.py`](../scripts/corrections/yt_p1_mt_compression_memsafe.py)
+  independently checks the compression range): the clean `y_t/g_s = 1/√6`
+  boundary with `g_s = √(4π·α_LM) = 1.068` (the framework's actual choice) gives
+  `y_t(M_Pl) = 0.4358`, runs 17 decades down to
+  `y_t(v) = 0.9727 → m_t = 169.4 GeV` (MS̄) → **`172.57 GeV` (pole, +1.9%
+  K-series)**, reproducing the headline. The top-Yukawa IR quasi-fixed point
+  focuses, but only **moderately** at this boundary: the framework's own runner
+  gives local sensitivity **`dy_t(v)/dy_t(M_Pl) = 0.685`** (a 10% boundary shift
+  gives about 3.1% in `y_t(v)`; upper-half focusing ratio `R ≈ 2`). That is real
+  but **far too weak to control the corrected matching**: `Δ_R ≈ ±50%` takes
+  `y_t(M_Pl) ∈ [0.22, 0.65]`, and the independent compression check gives
+  **`m_t(pole) ∈ ~[114, 197] GeV`** after the same +1.9% pole conversion
+  (asymmetric; the fixed point caps the ceiling near ~197 GeV but does not pin
+  the value). The framework's QFP "insensitivity PASS" used an assumed boundary
+  band `[0.3, 0.6]` (≈±15–30%) **predicated on the small buggy ~2% matching**; the
+  corrected ±50% matching exceeds it. Net: the fixed point protects the *ceiling*,
+  not the *precision*. m_t is uncontrolled across ~[114, 197] GeV; the
   **sub-percent bullseye is definitively not earned** and the ~2%/≤7.41%
   precision is invalidated.
 - **Landscape context (why this downgrade is the correct, not an unusual, call):**
@@ -144,6 +159,7 @@ re-derive the claims; re-derivation and lane re-audit are owner/lane calls):
 `YT_P1_LOOP_GEOMETRIC_BOUND_NOTE` (the ≤7.41% m_t-precision bound — rests on
 `I_S ∈ [2,6]`, violated ~7–10× by the corrected `I_S=32.4`),
 `YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE` (carries P1 as the m_t transport residual),
+`YT_QFP_INSENSITIVITY_SUPPORT_NOTE` (focusing real but ~2×; protects the m_t ceiling, not its precision),
 `HIGGS_MASS_RETENTION_ANALYSIS_NOTE`, `YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE`,
 `MINIMAL_AXIOMS_2026-04-11` (the m_t/m_H lines), and the publication tables
 (edit the SOURCE `QUANTITATIVE_SUMMARY_TABLE.md` / `DERIVATION_VALIDATION_MAP.md`;

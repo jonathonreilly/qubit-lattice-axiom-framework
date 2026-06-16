@@ -130,6 +130,31 @@ canonical 2). Verified reproof backlog (all `hard`), by leverage:
 framework-native 1-loop BZ integral for I_S, no no-go blocking it). A reproof
 worker is dispatched on it.
 
+## Careful line-by-line review population (2026-06-16)
+
+All 921 `retained_bounded` rows were read one at a time and assigned to their
+canonical atom (the `bound_row_ids` map in
+[`BOUNDED_ADMISSION_BOUND_ROW_IDS_MAP_2026-06-16.json`](BOUNDED_ADMISSION_BOUND_ROW_IDS_MAP_2026-06-16.json)).
+This **corrected the keyword-scan estimates and the 67->11 minimize optimism**:
+
+- **`imported_literature_series` collapsed 369 -> 19** -- the "import/literature"
+  keyword hits were almost all *specific* physics atoms (beta6, color, KS,
+  empirical), not a generic literature pile.
+- **`helper_frontier_module_surface` is the top cluster (254)**; its science core
+  (the shell-localization identity) is now DERIVED in PR #4123. It needs a
+  **shell-vs-GR split** -- the shell-bounded subset retargets to #4123 (separate
+  retarget PR), the GR/tensor + Maradudin-lattice-Green rows stay bounded.
+- **A new atom surfaced: `bounded_runner_gate_b_certificate` (22 rows)** -- the
+  one coherent cluster the first-pass registry was missing (added here).
+- **A large diverse tail: ~315 rows do not map to a canonical atom**, ~268 of
+  them effectively-unique one-offs (gravity/DM/network/teleportation probes). The
+  bounded register does **not** cleanly reduce to a few atoms; a third is a
+  diverse long tail that will not cluster-drain. This is the honest correction
+  the careful-review gate was protecting against.
+
+This updates per-atom leverage to the reviewed counts but edits NO row notes and
+asserts NO audit status -- it only records the back-reference map.
+
 ## Honesty / scope of this draft
 
 - **First pass.** `rows_bound` marked `_estimate` are approximate keyword-scan

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 934 |
+| **retained_bounded** | 935 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 41 |
-| unaudited | 1459 |
+| unaudited | 1458 |
 | meta | 317 |
 | ~~audited_numerical_match~~ | 13 |
 | ~~audited_renaming~~ | 31 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1379 |
+| `audited_clean` | 1380 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 13 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1776 |
+| `unaudited` | 1775 |
 
 | claim_type | count |
 |---|---:|
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1597 | 136.64 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1008 | 64.48 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 899 | 63.31 | `audited_conditional` | ~~audited_conditional~~ |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1398 | 60.95 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1397 | 60.95 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1007 | 51.48 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1031 | 50.51 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 47.63 | `unaudited` | meta |
@@ -111,9 +111,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1080 | 44.58 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 814 | 43.67 | `audited_clean` | **retained_bounded** |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 903 | 42.32 | `unaudited` | unaudited |
-| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
+| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 987 | 41.45 | `audited_clean` | **retained_bounded** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 876 | 39.78 | `unaudited` | unaudited |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1363 | 39.41 | `audited_clean` | **retained** |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 38.66 | `unaudited` | unaudited |
 | 16 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 966 | 38.42 | `audited_clean` | **retained_bounded** |
 | 17 | `yt_ew_color_projection_theorem` | no_go | critical | 748 | 38.05 | `audited_clean` | **retained_no_go** |
@@ -884,6 +884,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `literature_backmatch_live_scan_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
+| `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `local_zsym_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `localized_source_response_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_boost_covariance_2d_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12646,6 +12647,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** A published widefield diamond NV lock-in microscopy result with per-pixel I/Q readout and dynamic imaging is a credible retrospective analog/backmatch candidate, but not validation of the retained prediction.  _(class `D`)_
 - **chain closes:** True — The cited paper's abstract-level record supports the note's narrow factual predicates: widefield NV magnetometry, lock-in PL detection over multiple pixels, in-phase/quadrature image formation, and sub-second dynamic magnetic imaging. The note explicitly limits the conclusion to analog-platform resemblance and denies validation of the framework's target observables.
 - **rationale:** The external source check closes the bounded backmatch claim: the paper is in the same diamond NV lock-in/quadrature/dynamic-imaging measurement family described by the note. The note does not overclaim this as evidence for the retained gravitational or causal-field observables, and it correctly preserves the distinction between resemblance and validation. Residual risk is only that this is a single retrospective analog candidate, not a prediction test.
+- **auditor confidence:** high
+
+### `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03`
+
+- **Note:** [`LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md`](../../docs/LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebra check that the generated ordinary shared-scalar two-site complex qubit tensor product M_2(C) tensor_C M_2(C) ~= M_4(C) is locally tomographic by self-adjoint dimension count, with the real rebit tensor product as a contrast.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260616-004458-0e48c7ebd7-local_tomography_from_qubit_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** dim_R((M_2(C) tensor_C M_2(C))_sa) = dim_C(M_4(C)) = 16 = 4 * 4 = dim_R(M_2(C)_sa)^2.  _(class `A`)_
+- **chain closes:** True — The retained per-site and finite-block tensor-product authorities supply the complex two-dimensional factors and ordinary tensor-factor setting; standard finite-dimensional matrix algebra gives M_2(C) tensor_C M_2(C) ~= M_4(C). The retained no-go boundary is respected because the note does not derive this generated composite from operational locality alone.
+- **rationale:** The load-bearing step is an algebraic dimension identity over the explicitly scoped ordinary complex tensor product, not a definition substitution or numerical match. Independent checking confirms the Hermitian dimension formula n^2, the two-qubit equality 16 = 4 * 4, the shared-scalar i identity, the Pauli tensor-product basis count, and the rebit comparison 9 != 10. The Minimal Axioms citation is flagged as an accepted axiom premise, while the other load-bearing cited authorities are retained-grade in the packet.
 - **auditor confidence:** high
 
 ### `local_zsym_predictor_note`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3311 |
-| Applied audit verdicts | 1533 |
-| Retained-grade rows, including boxed decorations | 1408 |
+| Applied audit verdicts | 1534 |
+| Retained-grade rows, including boxed decorations | 1409 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 211 |
-| Retained bounded rows | 934 |
+| Retained bounded rows | 935 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 41 |
-| Unaudited rows | 1459 |
+| Unaudited rows | 1458 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 34 |
 | Audited renaming rows | 31 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1461 |
-| Ready rows | 50 |
+| Total pending rows | 1460 |
+| Ready rows | 49 |
 | Cycle-break targets | 0 |
 | Critical pending | 280 |
 | High pending | 272 |
 | Medium pending | 431 |
-| Leaf pending | 478 |
+| Leaf pending | 477 |
 
 Next ready rows by queue order:
 
-- [`local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03`](../../docs/LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md) - medium; unaudited
 - [`quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md) - medium; unaudited
 - [`universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`dimension_upper_bound_dependency_edge_repair_note_2026-06-08`](../../docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md) - medium; unaudited
 - [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
 - [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
 - [`brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15`](../../docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
-- [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - leaf; unaudited
+- [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - medium; unaudited
+- [`cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27`](../../docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -91,7 +91,7 @@ Top load-bearing rows by graph score:
 - `minimal_axioms` - critical; 1597 descendants; score 136.642
 - `three_generation_observable_theorem_note` - critical; 1008 descendants; score 64.479
 - `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
-- `graph_first_su3_integration_note` - critical; 1398 descendants; score 60.950
+- `graph_first_su3_integration_note` - critical; 1397 descendants; score 60.949
 - `plaquette_self_consistency_note` - critical; 1007 descendants; score 51.477
 - `minimal_axioms_2026-05-03` - critical; 1031 descendants; score 50.511
 - `key_terminology` - critical; 1119 descendants; score 47.629

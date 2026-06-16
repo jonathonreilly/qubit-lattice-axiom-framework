@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_action_normalization.py
-runner_sha256: 57267ef97454145ed8028c4c88680661648db69a3876ccedfaab407dcda85447
+runner_sha256: d2c95007b14e75c50a0c36d1dfcb17e935e989cf2a27afbc8b69927416444cfb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 40.54
+elapsed_sec: 42.56
 status: ok
 ----- stdout -----
 ================================================================================
@@ -250,7 +250,30 @@ table previously printed in this runner (defl(k)/defl(5k)) compared two
 massive probe momenta and had no analytical relation to the (1+c)
 null-vs-massive ratio. That table has been removed.
 
-Total runtime: 40.3s
+================================================================================
+STRUCTURED CERTIFICATE
+================================================================================
+
+[PASS] finite_scan_has_multiple_positive_c_values: tested 7 positive coefficients from 0.1 to 10.0
+[PASS] finite_scan_all_tested_c_converge: self-consistent loop converged for every c in the one-dimensional scan
+[PASS] finite_scan_c_phi_changes_with_c: c*phi_max spans ratio 75.99
+[PASS] convergence_does_not_select_unique_c: many convergent c values remain, so convergence is not a selector
+[PASS] rescaling_rows_all_solve: all fixed-cG rescaling rows produce finite fields
+[PASS] rescaling_rows_keep_cG_fixed: all rows use c*G=1 under (c,G)->(c/a,aG)
+[PASS] rescaling_keeps_c_phi_near_invariant: max relative spread of c*phi_max is 0.033
+[PASS] rescaling_changes_phi_itself: phi_max changes by ratio 16.74
+[PASS] ppn_gamma_unity_for_all_tested_c: Phi=c*f/2 gives gamma=1 for every tested positive c
+[PASS] ppn_gamma_does_not_select_c: the same PPN gamma value is obtained for multiple distinct c values
+[PASS] massive_probe_deflections_are_finite: finite massive-probe deflections: ['0.000290', '0.000695', '0.001752']
+[PASS] massive_probe_deflection_changes_with_c: deflection spread is 0.001462
+[PASS] massive_probe_deflection_is_monotone_on_test_values: deflection magnitude increases across c=0.5,1.0,2.0 in this scan
+[PASS] massive_probe_channel_is_not_null_ray_selector: only finite-k propagator deflections are computed; no null-ray channel is present
+[PASS] representative_conventions_are_distinct: S=L(1-f) and f=Phi conventions name different c representatives
+[PASS] finite_packet_has_no_convention_free_c: the packet exposes convention dependence and does not return a preferred c
+
+PASS=16 FAIL=0
+
+Total runtime: 42.3s
 
 ----- stderr -----
 

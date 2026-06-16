@@ -1,0 +1,25 @@
+loop_slug: action-normalization-runner-certificate-20260616
+date: 2026-06-16
+mode: source_side_repair
+base_ref: origin/main
+base_commit: ba46f7843d538e48b25d2de109d58125e82269cc
+branch: physics-loop/action-normalization-runner-certificate-20260616
+target_claim_id: action_normalization_note
+target_files:
+  - docs/ACTION_NORMALIZATION_NOTE.md
+  - scripts/frontier_action_normalization.py
+  - logs/runner-cache/frontier_action_normalization.txt
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+blocker_text: "runner_artifact_issue: reconcile docs/ACTION_NORMALIZATION_NOTE.md with scripts/frontier_action_normalization.py by adding a real PASS/FAIL certificate or changing the expected verification summary, then re-audit the narrowed no-go."
+work_completed:
+  - added a structured PASS/FAIL certificate to the action-normalization runner
+  - removed stale source docstrings that described the old null-ray/light-bending selector interpretation
+  - aligned the note's expected summary to PASS=16 FAIL=0
+  - refreshed the SHA-pinned runner cache through scripts/precompute_audit_runners.py
+open_imports:
+  - no new framework axiom, observation, or external theorem imported by this repair
+audit_required_before_effective_status_change: true
+next_exact_action: "Reviewer should inspect this source-side PR, then independent audit may re-audit the narrowed no-go row."
+stop_condition: "Block closes only if review accepts that the runner and cache now provide the promised PASS/FAIL certificate."

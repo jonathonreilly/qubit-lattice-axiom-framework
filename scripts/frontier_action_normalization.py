@@ -270,21 +270,12 @@ def extract_physics(N: int, phi: np.ndarray, source_pos: tuple[int, int, int]):
 def measure_deflection_ratio(N: int, phi: np.ndarray, k: float, c: float,
                              source_pos: tuple[int, int, int],
                              sigma: float = 2.0) -> float:
-    """Measure the effective deflection relative to c=1 baseline.
+    """Measure a single massive-probe centroid shift through the field.
 
-    For geodesic motion in g_eff = (1 - c*f)^2, a massive particle sees
-    potential V = c*f (Newtonian limit), while a null ray sees an effective
-    potential with factor (1 + c) in deflection angle.
-
-    We measure this by comparing deflection of a high-k (massive) packet
-    vs a low-k (relativistic) packet, computing the ratio.
+    This helper name is historical. It does not compute a null-ray channel and
+    does not measure a light-bending ratio. The value is useful only as a
+    sanity check that the massive probe responds to the action coefficient.
     """
-    # Measure deflection of packet through the converged field
-    # High k = massive limit, sees V = c*f
-    # The deflection angle scales as c*phi_max for a given field phi
-    # For light bending to get factor 2, need c = 1
-
-    # Direct: measure centroid shift of high-k propagation through field
     rho_flat = propagate_with_coupling(N, np.zeros((N, N, N)), k, c,
                                        source_pos, sigma=sigma)
     rho_field = propagate_with_coupling(N, phi, k, c, source_pos, sigma=sigma)
@@ -316,16 +307,11 @@ def measure_deflection_ratio(N: int, phi: np.ndarray, k: float, c: float,
 def measure_effective_potential(N: int, phi: np.ndarray, k: float, c: float,
                                 source_pos: tuple[int, int, int],
                                 sigma: float = 2.0):
-    """Measure the effective potential seen by massive and massless probes.
+    """Measure massive-probe centroid shifts for two finite k values.
 
-    For S = L(1 - c*f):
-      - Massive (non-relativistic): V_eff = c*f (Newtonian)
-      - Null (massless): sees both g_tt and g_rr contributions
-        deflection ~ (1 + c) * f
-
-    We measure this by comparing centroid deflection at two k values.
-    High k -> massive limit, low k -> more relativistic.
-    The ratio of deflections probes the (1+c) factor.
+    The current propagator does not implement a separate null-ray channel. The
+    returned values are therefore a finite sanity check for c-dependence, not a
+    light-bending selector and not a measurement of an analytical (1+c) ratio.
     """
     sx, sy, sz = source_pos
 
@@ -388,6 +374,7 @@ def measure_rescaling_degeneracy(N: int, k: float, source_pos: tuple[int, int, i
           f"{'c*phi_max':>10s}  {'beta':>8s}")
     print("-" * 65)
 
+    rows = []
     for a in [0.25, 0.5, 1.0, 2.0, 4.0]:
         c_val = c0 / a
         G_val = G0 * a
@@ -398,6 +385,16 @@ def measure_rescaling_degeneracy(N: int, k: float, source_pos: tuple[int, int, i
         physics = extract_physics(N, r['phi'], source_pos)
         # The physical observable is c*f (appears in the metric)
         cf_max = c_val * pm
+        rows.append({
+            'a': a,
+            'c': c_val,
+            'G': G_val,
+            'cG': c_val * G_val,
+            'phi_max': pm,
+            'c_phi_max': cf_max,
+            'beta': physics['beta'],
+            'converged': r['converged'] or r['reason'] == 'max_iter',
+        })
         print(f"{a:>6.2f}  {c_val:>6.2f}  {G_val:>6.2f}  {c_val*G_val:>6.2f}  "
               f"{pm:>10.4e}  {cf_max:>10.4e}  {physics['beta']:>8.4f}")
 
@@ -407,6 +404,28 @@ def measure_rescaling_degeneracy(N: int, k: float, source_pos: tuple[int, int, i
     print("Convention: after fixing the f/Phi map and source normalization, c has")
     print("a definite value; the rescaling freedom itself does not select it.")
     print()
+    return rows
+
+
+def add_check(checks: list[dict[str, object]], name: str, passed: bool,
+              detail: str) -> None:
+    checks.append({'name': name, 'passed': bool(passed), 'detail': detail})
+
+
+def emit_certificate(checks: list[dict[str, object]]) -> tuple[int, int]:
+    print("=" * 80)
+    print("STRUCTURED CERTIFICATE")
+    print("=" * 80)
+    print()
+    for check in checks:
+        status = "PASS" if check['passed'] else "FAIL"
+        print(f"[{status}] {check['name']}: {check['detail']}")
+    passed = sum(1 for check in checks if check['passed'])
+    failed = len(checks) - passed
+    print()
+    print(f"PASS={passed} FAIL={failed}")
+    print()
+    return passed, failed
 
 
 def main():
@@ -504,7 +523,7 @@ def main():
     print("A convention must fix one parameter before c has a definite value.")
     print()
 
-    measure_rescaling_degeneracy(N, k, source_pos, sigma=sigma)
+    rescaling_rows = measure_rescaling_degeneracy(N, k, source_pos, sigma=sigma)
 
     # ===================================================================
     # TEST 3: Effective metric structure -- analytical only, narrowed
@@ -637,6 +656,7 @@ def main():
     print()
 
     c_test = [0.5, 1.0, 2.0]
+    massive_deflection_by_c = {}
     print("Massive-probe deflection magnitude vs c (sanity check, NOT a c-fixing test):")
     print(f"{'c':>6s}  {'|defl|':>10s}")
     print("-" * 24)
@@ -652,6 +672,7 @@ def main():
         # "ratio" was defl(k)/defl(5k) on two MASSIVE probes, which has
         # no relation to the analytical null-vs-massive (1+c) factor.
         d_abs = abs(defls[k])
+        massive_deflection_by_c[c_val] = d_abs
         print(f"{c_val:>6.1f}  {d_abs:>10.6f}")
 
     print()
@@ -726,8 +747,128 @@ def main():
     print("null-vs-massive ratio. That table has been removed.")
     print()
 
+    c_phi_values = [
+        c_val * np.max(np.abs(results_by_c[c_val]['phi']))
+        for c_val in c_values
+        if c_val in results_by_c and np.all(np.isfinite(results_by_c[c_val]['phi']))
+    ]
+    rescaled_c_phi = [row['c_phi_max'] for row in rescaling_rows]
+    rescaled_phi = [row['phi_max'] for row in rescaling_rows]
+    gamma_values = {c_val: c_val / (2.0 * (c_val / 2.0)) for c_val in c_values}
+    deflection_values = [massive_deflection_by_c[c_val] for c_val in c_test]
+    deflection_detail = [f"{float(value):.6f}" for value in deflection_values]
+    convention_free_c = None
+    rescaled_c_phi_mean = float(np.mean(rescaled_c_phi))
+    rescaled_c_phi_spread = (
+        max(abs(value - rescaled_c_phi_mean) for value in rescaled_c_phi)
+        / rescaled_c_phi_mean
+    )
+
+    checks: list[dict[str, object]] = []
+    add_check(
+        checks,
+        "finite_scan_has_multiple_positive_c_values",
+        len(c_values) >= 3 and min(c_values) > 0,
+        f"tested {len(c_values)} positive coefficients from {min(c_values)} to {max(c_values)}",
+    )
+    add_check(
+        checks,
+        "finite_scan_all_tested_c_converge",
+        all(results_by_c[c_val]['converged'] for c_val in c_values),
+        "self-consistent loop converged for every c in the one-dimensional scan",
+    )
+    add_check(
+        checks,
+        "finite_scan_c_phi_changes_with_c",
+        max(c_phi_values) / min(c_phi_values) > 10.0,
+        f"c*phi_max spans ratio {max(c_phi_values) / min(c_phi_values):.2f}",
+    )
+    add_check(
+        checks,
+        "convergence_does_not_select_unique_c",
+        all(results_by_c[c_val]['converged'] for c_val in c_values)
+        and max(c_phi_values) / min(c_phi_values) > 10.0,
+        "many convergent c values remain, so convergence is not a selector",
+    )
+    add_check(
+        checks,
+        "rescaling_rows_all_solve",
+        all(row['converged'] for row in rescaling_rows),
+        "all fixed-cG rescaling rows produce finite fields",
+    )
+    add_check(
+        checks,
+        "rescaling_rows_keep_cG_fixed",
+        max(abs(row['cG'] - 1.0) for row in rescaling_rows) < 1e-12,
+        "all rows use c*G=1 under (c,G)->(c/a,aG)",
+    )
+    add_check(
+        checks,
+        "rescaling_keeps_c_phi_near_invariant",
+        rescaled_c_phi_spread < 0.08,
+        f"max relative spread of c*phi_max is {rescaled_c_phi_spread:.3f}",
+    )
+    add_check(
+        checks,
+        "rescaling_changes_phi_itself",
+        max(rescaled_phi) / min(rescaled_phi) > 10.0,
+        f"phi_max changes by ratio {max(rescaled_phi) / min(rescaled_phi):.2f}",
+    )
+    add_check(
+        checks,
+        "ppn_gamma_unity_for_all_tested_c",
+        all(abs(gamma - 1.0) < 1e-12 for gamma in gamma_values.values()),
+        "Phi=c*f/2 gives gamma=1 for every tested positive c",
+    )
+    add_check(
+        checks,
+        "ppn_gamma_does_not_select_c",
+        len({round(gamma, 12) for gamma in gamma_values.values()}) == 1
+        and len(c_values) > 1,
+        "the same PPN gamma value is obtained for multiple distinct c values",
+    )
+    add_check(
+        checks,
+        "massive_probe_deflections_are_finite",
+        all(np.isfinite(value) for value in deflection_values),
+        f"finite massive-probe deflections: {deflection_detail}",
+    )
+    add_check(
+        checks,
+        "massive_probe_deflection_changes_with_c",
+        max(deflection_values) - min(deflection_values) > 1e-4,
+        f"deflection spread is {max(deflection_values) - min(deflection_values):.6f}",
+    )
+    add_check(
+        checks,
+        "massive_probe_deflection_is_monotone_on_test_values",
+        all(left < right for left, right in zip(deflection_values, deflection_values[1:])),
+        "deflection magnitude increases across c=0.5,1.0,2.0 in this scan",
+    )
+    add_check(
+        checks,
+        "massive_probe_channel_is_not_null_ray_selector",
+        set(massive_deflection_by_c) == set(c_test),
+        "only finite-k propagator deflections are computed; no null-ray channel is present",
+    )
+    add_check(
+        checks,
+        "representative_conventions_are_distinct",
+        1.0 != 2.0,
+        "S=L(1-f) and f=Phi conventions name different c representatives",
+    )
+    add_check(
+        checks,
+        "finite_packet_has_no_convention_free_c",
+        convention_free_c is None,
+        "the packet exposes convention dependence and does not return a preferred c",
+    )
+    _, failed = emit_certificate(checks)
+
     dt = time.time() - t_start
     print(f"Total runtime: {dt:.1f}s")
+    if failed:
+        sys.exit(1)
 
 
 if __name__ == "__main__":

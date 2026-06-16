@@ -20,7 +20,7 @@ matter-functional/action-surface clause.
 set, predict, promote, or demote any audit outcome.
 **Primary runner:**
 [`scripts/gl_f_berezin_rp_reconstruction_check_2026_06_10.py`](../scripts/gl_f_berezin_rp_reconstruction_check_2026_06_10.py)
-(`TOTAL: PASS=44 FAIL=0`).
+(`TOTAL: PASS=48 FAIL=0`).
 **Runner cache:**
 [`logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt`](../logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt).
 
@@ -123,6 +123,45 @@ integrand class carries the sign.
   creation subalgebra gives the standard Fock/holomorphic model of the
   quotient.
 
+## 2026-06-16 Reconstruction-Identification Bridge Wire-Up
+
+Post-audit repair target:
+
+```text
+missing_bridge_theorem: close or explicitly register the Berezin/RP
+action-surface supplier and the framework matter-operator-to-OS-reconstructed-
+operator identification; the finite OS/CAR algebra itself looked sound on the
+restricted packet.
+```
+
+The sibling
+[`GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md`](GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md)
+now supplies the explicit reconstruction-identification bridge decomposition.
+It shows that the earlier "identify the framework matter operators with the
+OS-reconstructed operators" phrase is not one undischarged admission. It
+decomposes into four clauses:
+
+1. carrier clause: the GNS carrier matches the qubit tensor carrier;
+2. parity clause: the reconstructed parity is the field-word
+   `prod_x(1 - 2 psi_x^dag psi_x)` and is transported automatically;
+3. dictionary clause: cyclicity, irreducibility, and Schur nullity force the
+   field dictionary up to one GL(F)-immaterial unitary scalar;
+4. matter-functional clause: the framework physical matter correlations must
+   be the declared Berezin/RP OS functional.
+
+The bridge note and runner discharge clauses (1)-(3) as exact finite theorems
+on the declared Berezin/RP functional surface. The residual is now clause (4),
+which is co-extensive with this note's declared action-surface conditionality
+under the friendly read, and remains a single named matter-functional pin
+under the hostile read.
+
+This repair does not promote this row and does not add a new axiom,
+primitive, admitted premise, or audit verdict. It only changes the re-audit
+surface from "opaque reconstruction-identification bridge plus action
+surface" to "action-surface / matter-functional supplier remains; kinematic
+reconstruction-identification clauses are explicitly checked by the sibling
+bridge packet."
+
 ## Relation To The GL(F) Boundary
 
 The existing
@@ -156,6 +195,10 @@ The runner independently checks:
 - A staggered-kernel leg at `L_s = 4`, using the action-derived two-step
   transfer kernel, with the same reconstructed exchange relations within
   tolerance.
+- Source-graph bridge wire-up: the sibling reconstruction-identification
+  bridge packet exists, its runner cache is fresh and passing, and this note
+  records that only the matter-functional/action-surface clause remains
+  open.
 - Falsification legs: the commuting-nilpotent branch reconstructs the
   hard-core commuting frame; a Theta-asymmetric kernel breaks OS symmetry; an
   indefinite symmetric kernel gives a non-PSD OS Gram.
@@ -194,6 +237,10 @@ The runner independently checks:
   matter-functional/action-surface clause.
 - [STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md)
   supplies the definition and conditional role of `GL(F)`.
+- [GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md](GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md)
+  decomposes the reconstruction-identification bridge and discharges the
+  carrier, parity, and dictionary clauses as exact finite theorems; the
+  remaining matter-functional/action-surface clause is still named here.
 
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency. The independent audit lane is the only status

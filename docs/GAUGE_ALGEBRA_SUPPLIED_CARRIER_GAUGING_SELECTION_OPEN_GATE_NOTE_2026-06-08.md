@@ -26,14 +26,20 @@ separate non-axiom input or existing bounded/open authority:
 | the **link-connection convention** `qubit → u(2)` | [`QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md`](QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md) | bounded / pending-chain |
 | the **two-endpoint Gauss carrier / gauging principle** | [`TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md`](TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md) | unaudited model convention |
 
-## Bounded support — the algebra, GIVEN the carrier
+## Bounded support — the factor-preserving algebra, GIVEN the carrier
 
 **Given** the supplied `C³(base) ⊗ C²(fiber)` carrier, the runner verifies (exact, finite):
 `su(2) = Aut(M₂(ℂ))` closes on the fiber (`u(2) = su(2)⊕u(1)`); `su(3)` has no faithful irrep
 below dim 3, so color needs the 3-dim base; `su(3)⊗I` and `I⊗su(2)` **commute**, and with the
-central `u(1)` the symmetry algebra of this carrier is `su(N_c) ⊕ su(2) ⊕ u(1)` — at `d=3`,
-dim `8+3+1 = 12`. This is the symmetry algebra **of the supplied carrier**; it is **not**
-derived from the axioms (the carrier factorization above is supplied).
+central `u(1)` the **factor-preserving** algebra of this supplied carrier split is
+`su(N_c) ⊕ su(2) ⊕ u(1)` — at `d=3`, dim `8+3+1 = 12`.
+
+This is not the full internal algebra on the six-dimensional carrier. The unrestricted
+anti-Hermitian algebra on `C³⊗C² ≅ C⁶` is `u(6)` (dim 36). The runner now checks that the
+factor-preserving dim-12 algebra plus the 24 cross-factor tensors
+`su(3)⊗su(2)` spans the full `u(6)`. Thus the cut from `u(6)` to
+`su(3)⊕su(2)⊕u(1)` is exactly the supplied factor-locality / `MR_color`
+premise. It is **not** derived from the Lattice, Quantum, and Record axioms.
 
 ## Counterfactual support — `N_c = d`
 
@@ -48,12 +54,14 @@ dimension, addressing a "matched-pair coincidence" worry — **not** a from-axio
 
 ## The gauging-selection open gate
 
-The supplied carrier fixes a candidate symmetry **algebra** but does not fix the
-**gauging selection**: which symmetry is dynamically gauged, the physical-color
-identification `MR_color`, and the chiral `su(2)_L`. The discriminator runner tests **four**
-candidate discriminators and finds each blind to or circular with the selection: (1)
-maximality cannot distinguish the dim-12 algebra from the full `u(6)` (both irreducible →
-same commutant); (2) the anomaly `d`-tensor is a one-sided filter (`su(2)` `d_{abc}≡0`,
+The supplied carrier plus supplied factor-locality premise fixes a candidate
+factor-preserving **algebra** but does not fix the **gauging selection**:
+which symmetry is dynamically gauged, the physical-color identification
+`MR_color`, the chiral `su(2)_L`, or why cross-factor `u(6)` generators are
+dynamically absent. The discriminator runner tests **four** candidate
+discriminators and finds each blind to or circular with the selection: (1)
+maximality cannot distinguish the dim-12 factor-preserving algebra from the
+full `u(6)` (both irreducible → same commutant); (2) the anomaly `d`-tensor is a one-sided filter (`su(2)` `d_{abc}≡0`,
 `su(3)` `d_{abc}≠0`), never a selector; (3) the chirality grading `ε` commutes with the color
 generators (blind to the coupling chirality); (4) color is strictly complex (`3 ≠ 3̄`) while
 the spatial `so(3)` vector is real (color ≠ complexified spatial). These four do **not close**
@@ -63,11 +71,14 @@ enumeration with retained-authority failures, which this note does **not** asser
 
 ## What is and is not claimed
 
-- **Is:** GIVEN the supplied carrier, the symmetry algebra is `su(N_c)⊕su(2)⊕u(1)` (dim 12 at
-  `d=3`), with the factors commuting and acting irreducibly (bounded support); `N_c=d` holds
-  along an assumed `Z^d` family, consistent with the retained `d=3` graph-first result
-  (counterfactual support); the gauging selection is **not closed** by the four tested
-  discriminators (open gate).
+- **Is:** GIVEN the supplied carrier and its supplied factor-locality premise, the
+  factor-preserving algebra is `su(N_c)⊕su(2)⊕u(1)` (dim 12 at `d=3`), with
+  the factors commuting and acting irreducibly (bounded support); the full
+  unrestricted carrier algebra is `u(6)` and the missing `u(6)`-to-factorwise
+  selection is exposed rather than hidden; `N_c=d` holds along an assumed
+  `Z^d` family, consistent with the retained `d=3` graph-first result
+  (counterfactual support); the gauging selection is **not closed** by the four
+  tested discriminators (open gate).
 - **Is not:** does **not** claim the SM gauge algebra is *forced from the axioms* (the carrier
   is supplied); does **not** claim the gauging selection is an *irreducible admission / no-go*
   (it is an open gate, not a closed no-go, and no N1–N8 walk is asserted); does **not** derive
@@ -75,9 +86,11 @@ enumeration with retained-authority failures, which this note does **not** asser
 
 ## Boundaries (honest)
 
-- **Conditional algebra, not an axiom-level derivation.** Every algebra statement is
-  "given the supplied `C³⊗C²` carrier"; the carrier itself is the non-axiom
-  `MR_color`/graph-first realization.
+- **Conditional factor-preserving algebra, not an axiom-level derivation.** Every
+  factorwise algebra statement is "given the supplied `C³⊗C²` carrier and the
+  supplied factor-locality / `MR_color` premise"; the carrier itself is the
+  non-axiom `MR_color`/graph-first realization, and the full internal algebra
+  on the carrier is `u(6)`.
 - **Counterfactual support, not a theorem about `Z³`.** The `N_c=d` covariance lives in an
   assumed `Z^d` family; on the baseline `Z³` it only re-supports the retained `d=3` surface.
 - **Open gate, not a no-go.** The four discriminators are runner-backed support that the
@@ -85,8 +98,9 @@ enumeration with retained-authority failures, which this note does **not** asser
 
 ## Forbidden-imports check
 
-No PDG / fitted / literature value is consumed. The algebra (Aut `M₂`, the `su(3)` irrep
-dimension, the `[su(3),su(2)]=0` commutation, the `Sym^{d-1}(ℂ²)`/`gl(d)` commutant, the
-`d_{abc}` tensor, the `ε`/color commutator, the reality bilinear) is reproven in the runners
-from the qubit and lattice primitives. The Standard Model gauge group is named as the
-comparator target only.
+No PDG / fitted / literature value is consumed. The algebra (Aut `M₂`, the
+`su(3)` irrep dimension, the `[su(3),su(2)]=0` commutation, the full `u(6)`
+dimension and `su(3)⊗su(2)` complement, the `Sym^{d-1}(ℂ²)`/`gl(d)`
+commutant, the `d_{abc}` tensor, the `ε`/color commutator, the reality
+bilinear) is reproven in the runners from the qubit and lattice primitives.
+The Standard Model gauge group is named as the comparator target only.

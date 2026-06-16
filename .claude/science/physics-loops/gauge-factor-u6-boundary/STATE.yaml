@@ -1,0 +1,29 @@
+loop: gauge-factor-u6-boundary
+date: 2026-06-16
+branch: physics-loop/gauge-factor-u6-boundary-20260616
+base: origin/main
+goal: "Repair the post-audit gauge-algebra supplied-carrier row by exposing the full-u(6) boundary and narrowing the positive algebra to the factor-preserving supplied-carrier subalgebra."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Given supplied C^3(base) x C^2(fiber) carrier plus supplied factor-locality/MR_color premise, the factor-preserving algebra is su(3)+su(2)+u(1)."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08
+audit_blocker: "missing_bridge_theorem: supply a retained MR_color/carrier and gauging-selection bridge, including why the factorwise su(3)+su(2)+u(1) subalgebra rather than full u(6) is selected."
+files_touched:
+  - docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md
+  - scripts/gauge_algebra_supplied_carrier_2026_06_08.py
+  - scripts/gauging_selection_discriminator_open_gate_2026_06_08.py
+  - logs/runner-cache/gauge_algebra_supplied_carrier_2026_06_08.txt
+  - logs/runner-cache/gauging_selection_discriminator_open_gate_2026_06_08.txt
+  - logs/runner-cache/color_base_covariance_nc_equals_d_support_2026_06_08.txt
+open_imports:
+  - supplied C^3(base) x C^2(fiber) carrier
+  - supplied factor-locality/MR_color premise selecting factor-preserving algebra over full u(6)
+  - gauging selection and chiral su(2)_L selection
+review_findings: []
+pr_status: pending
+next_exact_action: "Run py_compile, runner checks, protected-surface diff check, commit, push, and open the review PR."
+stop_condition: "Stop after this coherent source repair PR is opened; continue scanning later if requested."

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
+runner_sha256: 1caf8f8d25f7a679ee19dc65519ac787260c08e933c8995b9da2697300a31655
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+SM GSTAR I12 EMPIRICAL THERMAL COMPARATOR BRIDGE
+PASS: note contains boundary phrase: admitted empirical small-neutrino-mass observation
+PASS: note contains boundary phrase: Gamma_nuR ~ y_nu^2 T
+PASS: note contains boundary phrase: H ~ 1.66 sqrt(g_*) T^2 / M_Pl
+PASS: note contains boundary phrase: not a framework-native derivation
+PASS: note contains boundary phrase: does not derive small neutrino mass
+PASS: note contains boundary phrase: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+PASS: note contains boundary phrase: `0.6 eV` edge remains more than three decades below it
+PASS: note contains boundary phrase: new axiom
+PASS: parent carries I12 phrase: empirical small `m_nu`
+PASS: parent carries I12 phrase: Gamma_nu_R  ~  y_nu^2  T
+PASS: parent carries I12 phrase: g_* = 106.75
+PASS: parent carries I12 phrase: g_* = 112
+PASS: 0.05 eV gives y_nu between 2e-13 and 4e-13 (2.874e-13)
+PASS: 0.1 eV gives y_nu between 5e-13 and 7e-13 (5.747e-13)
+PASS: 0.6 eV generous edge stays below 4e-12 (3.448e-12)
+PASS: T=100 GeV threshold is order 1e-8 (1.186e-08)
+PASS: threshold rises with temperature through 1e12 GeV
+PASS: T=1e9 GeV threshold is order 1e-5 (3.749e-05)
+PASS: T=1e12 GeV threshold is order 1e-3 (1.186e-03)
+PASS: 0.1 eV comparator gives Gamma/H << 1 at 100 GeV (2.349e-09)
+PASS: 0.6 eV generous edge still gives Gamma/H << 1 at 100 GeV (8.458e-08)
+PASS: 0.1 eV comparator is more than four decades below threshold (4.31)
+PASS: 0.6 eV generous edge is more than three decades below threshold (3.54)
+PASS: thermalization at 100 GeV implies m_nu above 1 keV (2.063e+03 eV)
+PASS: thermalization at 100 GeV is above 0.6 eV comparator by > 1000x
+PASS: note does not claim audit-retained status
+PASS: note keeps small mnu derivation excluded
+PASS: note denies new axiom
+TOTAL: PASS=28 FAIL=0
+VERDICT: bounded comparator bridge passes
+
+----- stderr -----
+

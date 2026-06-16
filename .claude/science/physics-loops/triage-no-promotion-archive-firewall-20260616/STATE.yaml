@@ -1,0 +1,17 @@
+loop_slug: triage-no-promotion-archive-firewall-20260616
+goal: "Retire the archived no-promotion triage memo so an unreproducible dirty-stack judgment no longer reads as live retained science."
+target_status: demotion
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: archive_failed_process_memo_firewall
+files_touched:
+  - archive_unlanded/process-triage-unreproducible-state-2026-04-30/TRIAGE_NO_PROMOTION_NOTE.md
+  - scripts/triage_no_promotion_archive_firewall_2026_06_16.py
+open_imports:
+  - "No reproducible triage manifest is supplied."
+  - "The old dirty/untracked stack is not reconstructed."
+review_findings: "Local self-review: pass for demotion/firewall scope."
+pr_status: "pending"
+next_exact_action: "Open PR for reviewer extraction, then let audit decide whether the archived triage row can be re-audited as retired process history."

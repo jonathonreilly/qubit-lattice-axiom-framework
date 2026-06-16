@@ -3,7 +3,7 @@ runner: scripts/frontier_teleportation_resource_from_poisson.py
 runner_sha256: 1b319e081c066147239237256908aef39755fcc01fd3255c1a873f517b43a978
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.59
 status: ok
 ----- stdout -----
 POISSON/CHSH TELEPORTATION RESOURCE AUDIT

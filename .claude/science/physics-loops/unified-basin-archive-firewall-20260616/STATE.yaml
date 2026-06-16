@@ -1,0 +1,17 @@
+loop_slug: unified-basin-archive-firewall-20260616
+goal: "Retire the archived unified-basin freeze packet so a failed two-surface wrapper no longer reads as live retained science."
+target_status: demotion
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: archive_failed_packet_firewall_with_split_surface_boundary
+files_touched:
+  - archive_unlanded/unified-basin-signed-source-salvage-2026-04-30/UNIFIED_BASIN_FREEZE_NOTE.md
+  - scripts/unified_basin_archive_firewall_2026_06_16.py
+open_imports:
+  - "No unified runner is added for both coupling surfaces."
+  - "Signed-source salvage remains separate metadata unless a retained-generator runner lands."
+review_findings: "Local self-review: pass for demotion/firewall scope."
+pr_status: "pending"
+next_exact_action: "Open PR for reviewer extraction, then let audit decide whether the archived unified-basin row can be re-audited as retired evidence."

@@ -1,8 +1,8 @@
-# W8a Statistics Atom Reduces To Product Form Under A Supplied Product Instance
+# W8a Statistics Atom Reduces To Outcome Factorization Under A Supplied Quotient Instance
 
 **Date:** 2026-06-12
-**Claim type:** bounded_theorem / bounded support under a supplied product-form joint instance
-**Status:** source proposal under supplied product-form joint instance; independent audit required.
+**Claim type:** bounded_theorem / bounded support under a supplied outcome-factorization instance
+**Status:** source proposal under supplied outcome-factorization instance; independent audit required.
 **Status authority:** independent audit lane. This source note does not set,
 predict, promote, or demote any audit outcome and does not edit audit-owned
 registry, ledger, queue, or publication-status surfaces. The
@@ -11,38 +11,56 @@ audit verdict.
 **Primary runner:** `scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py`
 **Runner cache:** `logs/runner-cache/frontier_statistics_atom_reduces_to_product_form_2026_06_12.txt`
 
-## 2026-06-15 audit-boundary repair: product-form is a supplied bounded premise
+## 2026-06-16 audit-boundary repair: product-form is not load-bearing
 
-This repair makes the non-retained input explicit. The retained
-Gleason/Busch surface supplies the one-copy Born form. It does **not** supply
-physical independence, iid repetition, or a product-form joint registration
-law. The product object `sigma tensor sigma` is therefore a row-local supplied
-bounded premise, not a retained theorem and not an axiom.
+The earlier source row used the product object `sigma tensor sigma` as the
+row-local supplied premise. That was stronger than the chain needs. The
+retained-bounded sibling
+`PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md`
+proves that agreement-conditioned flow consumes only the registered
+two-outcome weights
+
+```text
+m(j,k) = p_j p_k,   j,k in {s,d},
+```
+
+and does not require a full joint-state product representation. This note
+therefore removes `sigma tensor sigma` as a load-bearing premise. A product
+joint state remains a sufficient witness for factorization, but it is not the
+premise that this row asks future work to discharge.
+
+The retained Gleason/Busch surface supplies the one-copy Born form. It still
+does **not** supply physical independence, iid repetition, or the
+outcome-level factorization law. The remaining non-retained input is therefore
+the quotient registered-weight statement `m(j,k)=p_j p_k`, not a state-level
+product theorem and not an axiom.
 
 The source claim is correspondingly narrow:
 
 - K1 restates the retained Born form on the supplied two-outcome partition.
-- K2 derives product weights after the registered pair is **supplied** as the
-  product instance `sigma tensor sigma`.
+- K2 imports the retained-bounded weakening theorem and uses the supplied
+  outcome-level factorization premise `m(j,k)=p_j p_k`; the old
+  `sigma tensor sigma` product instance is retained only as an overstrong
+  sufficient example.
 - K3 rederives the agreement-conditioned sharpening flow under that supplied
-  product instance.
+  outcome-factorized quotient instance.
 - K4 reduces the wave-8a statistics atom to one named premise: repeated
-  registrations are carried by product-form instances of the registered
-  surface.
+  registrations factor on the registered two-outcome quotient.
 
-This note does **not** discharge the product-form premise, does not assert
-iid/product composition as a physical fact, does not adopt R-D, does not select
-an occupancy cell, does not fix `r`, and does not import probability beyond the
-retained Gleason/Busch surface. The Born form here is the cited retained
-authority, not a new rule. For firewall clarity: the product-form premise is
-the supplied bounded premise for this row; it is named, not derived or
-retained. R-D stays proposed; no occupancy cell is selected; `r` is never
-fixed; the occupancy binary stays open.
+This note does **not** discharge the outcome-factorization premise, does not
+assert iid/product composition as a physical fact, does not adopt R-D, does not
+select an occupancy cell, does not fix `r`, and does not import probability
+beyond the retained Gleason/Busch surface. The Born form here is the cited
+retained authority, not a new rule. For firewall clarity: the
+outcome-factorization premise is the supplied bounded premise for this row; it
+is named, not derived or retained. R-D stays proposed; no occupancy cell is
+selected; `r` is never fixed; the occupancy binary stays open.
 
 ## Boundary
 
 This note proves K1-K4 only in the bounded setting above: retained one-copy
-Born authority plus a supplied product-form joint instance.
+Born authority plus the retained-bounded product-to-outcome weakening plus a
+supplied outcome-factorized two-registration quotient.
 
 ## The Retained Surface
 
@@ -84,23 +102,21 @@ For a partition `{P_s, P_d}` with `P_s + P_d = I`, the retained form gives
 `p_s + p_d = Tr(sigma) = 1`. Positivity of `sigma` and of the projectors gives
 `p_s, p_d in [0,1]`.
 
-**K2 — product composition from the supplied joint instance.** For two
-registrations carried by a supplied product instance `sigma tensor sigma` on
-the joint lattice, with the product partition `{P_j tensor P_k}`, the same
-Born form on the joint algebra gives
+**K2 — outcome factorization, not state-product composition.** The retained
+product-to-outcome weakening theorem proves that the later flow consumes only
+the four registered weights `m(j,k)`. Supply the quotient-level premise
+`m(j,k)=p_j p_k` for `j,k in {s,d}`. Then the agreement cells are
 
 ```text
-m(P_j tensor P_k)
-  = Tr((sigma tensor sigma)(P_j tensor P_k))
-  = Tr(sigma P_j) Tr(sigma P_k)
-  = p_j p_k.
+m(s,s) = p_s^2,   m(s,d) = p_s p_d,
+m(d,s) = p_d p_s, m(d,d) = p_d^2.
 ```
 
-Thus multiplicative weights are no longer an additional algebraic premise
-*after* the product-form joint instance has been supplied: they are the retained
-Born form evaluated on that supplied product object.
-The runner verifies the trace-tensor lemma symbolically on the supplied
-two-sector surface with generic `sigma`. **[check K2]**
+If a full product state `sigma tensor sigma` is separately supplied, the Born
+trace-tensor identity gives the same four weights; that is a sufficient
+witness, not a load-bearing necessity. The runner verifies both the
+outcome-factorized algebra and the old product-state witness so the boundary
+is executable. **[check K2]**
 
 **K3 — the flow follows.** Agreement-conditioning the joint weights keeps the
 `(s,s)` and `(d,d)` cells and renormalizes:
@@ -109,20 +125,21 @@ two-sector surface with generic `sigma`. **[check K2]**
 p_i' = p_i^2 / (p_s^2 + p_d^2).
 ```
 
-For the outcome ratio `x = p_d / p_s`, this sends `x` to `x^2`. With
-`x = 2r`, the bounded wave-8a records-flow coordinate obeys, under the
-supplied product-form joint instance,
+On the finite odds chart `p_s > 0`, the outcome ratio `x = p_d / p_s` sends
+`x` to `x^2`. With `x = 2r`, the bounded wave-8a records-flow coordinate
+obeys, under the supplied outcome-factorized quotient instance,
 `r -> 2r^2`; its inverse direction is `r -> sqrt(r/2)`, the thermalizing map.
-The wave-8a G2 identification is reproven inline here as this ratio
-calculation. **[check K3]**
+The endpoint `p_d=0` is included as `x=0`; the endpoint `p_s=0` is outside this
+finite chart and is handled directly as the all-`d` fixed boundary. The wave-8a
+G2 identification is reproven inline here as this ratio calculation. **[check K3]**
 
 **K4 — the atom reduced.** The wave-8a statistics atom, "repeated registration
 composes independently on the weight bookkeeping," therefore reduces to the
-single product-form premise:
+single outcome-factorization premise:
 
 ```text
-repeated registrations are carried by product-form instances
-(sigma tensor sigma) of the registered surface.
+repeated registrations factor on the registered two-outcome quotient:
+m(j,k)=p_j p_k for j,k in {s,d}.
 ```
 
 That premise is named, not discharged. Its framework home is the record-stack
@@ -131,21 +148,22 @@ stationarity/independence residual of the unraveling lane, especially
 and
 `UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md`.
 Everything else in this row's R-D algebraic reduction is derived from retained
-Born authority once that premise is supplied. The physical product-form premise
-itself remains open outside this bounded row. **[check K4]**
+Born authority and the retained-bounded product-to-outcome weakening once that
+premise is supplied. The physical outcome-factorization premise itself remains
+open outside this bounded row. **[check K4]**
 
 The runner also checks a correlated joint-state witness:
 `rho_corr = p_s P_s tensor P_s + p_d P_d tensor P_d`. It has the same one-copy
 weights but `m(P_s tensor P_d) = 0 != p_s p_d` generically, and
 agreement-conditioning gives the identity update `p_i' = p_i`. This witness is
-the control showing that the product-form premise does real work.
+the control showing that the outcome-factorization premise does real work.
 
 ## Consequence
 
 After this note, the occupancy lane's open content is:
 
-- the product-form premise, named as a supplied bounded premise with the record-stack
-  stationarity/independence home above;
+- the outcome-factorization premise, named as a supplied bounded premise with
+  the record-stack stationarity/independence home above;
 - the outcome dictionary, the wave-9 tri-guise binary;
 - the durability-to-weight coupling.
 
@@ -154,7 +172,11 @@ Each item is named; none is selected here. The route remains live.
 ## Does Not
 
 - This does not assert iid/product composition as a physical fact.
-- This does not discharge, retain, or physically select the product-form premise.
+- This does not discharge, retain, or physically select the
+  outcome-factorization premise.
+- This does not require repeated registrations to be represented by
+  `sigma tensor sigma`; state-level product form is an overstrong sufficient
+  witness only.
 - This does not adopt R-D or any R-D bridge premise.
 - This does not select the wave-9 tri-guise outcome dictionary.
 - This does not select any occupancy cell and does not fix `r`.
@@ -177,6 +199,9 @@ and `KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE
 
 - [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
 - [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- [`PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md`](PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md)
+  — retained-bounded theorem proving that agreement-conditioned flow needs only
+  outcome-level factorization, not state-level product form.
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
 
 **No-promotion statement:** this note does not promote, demote, or set the

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Verify the W8a statistics-atom reduction under a supplied product instance.
+"""Verify the W8a statistics-atom reduction under supplied outcome factorization.
 
 The runner has two jobs:
 
 * symbolic algebra for K1-K4 on the retained Gleason/Busch one-copy surface
-  plus a supplied product-form joint instance;
+  plus the retained product-to-outcome weakening and a supplied
+  outcome-factorized joint quotient;
 * textual firewall checks for the companion bounded note.
 
 It writes no files, invokes no git command, and uses no network.
@@ -33,6 +34,10 @@ BUSCH = ROOT / "docs" / (
     "2026-06-05.md"
 )
 MINIMAL = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+PRODUCT_FORM = ROOT / "docs" / (
+    "PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_"
+    "2026-06-12.md"
+)
 
 PASS = 0
 FAIL = 0
@@ -127,11 +132,27 @@ def symbolic_checks() -> dict[str, bool]:
     B = sp.Matrix([[b0, b1], [b2, b3]])
     C = sp.Matrix([[c0, c1], [c2, c3]])
     D = sp.Matrix([[d0, d1], [d2, d3]])
+    m_outcome = {
+        ("s", "s"): ps**2,
+        ("s", "d"): ps * pd,
+        ("d", "s"): pd * ps,
+        ("d", "d"): pd**2,
+    }
+    outcome_complete = sp.simplify(sum(m_outcome.values()).subs(pd, 1 - ps) - 1) == 0
+    outcome_agree_cells = (
+        sp.simplify(m_outcome[("s", "s")] - ps**2) == 0
+        and sp.simplify(m_outcome[("d", "d")] - pd**2) == 0
+    )
+    check(
+        "K2 premise: supplied outcome factorization gives m(j,k)=p_j p_k without a joint-state product",
+        outcome_complete and outcome_agree_cells,
+        "normalized four weights sum to 1 after p_d=1-p_s",
+    )
     tensor_trace_lemma = sp.simplify(
         trace(kron(A, B) * kron(C, D)) - trace(A * C) * trace(B * D)
     ) == 0
     check(
-        "K2 lemma: Tr((A tensor B)(C tensor D)) factors",
+        "K2 witness: Tr((A tensor B)(C tensor D)) factors for the overstrong product-state example",
         tensor_trace_lemma,
     )
 
@@ -146,7 +167,7 @@ def symbolic_checks() -> dict[str, bool]:
             k2_cells.append(sp.simplify(born_joint - product_joint) == 0)
             joint_weights[(j, k)] = born_joint
     check(
-        "K2 core: sigma tensor sigma product partition gives p_j p_k",
+        "K2 witness: sigma tensor sigma product partition gives p_j p_k",
         all(k2_cells),
         ", ".join(f"{jk}={sp.simplify(val)}" for jk, val in joint_weights.items()),
     )
@@ -168,6 +189,13 @@ def symbolic_checks() -> dict[str, bool]:
         "K3b x=2r gives r -> 2r^2 and inverse sqrt(r/2)",
         r_map and inverse_ok,
         f"inverse={inverse}",
+    )
+    endpoint_s = sp.simplify(p_s_prime.subs({ps: 1, pd: 0}) - 1) == 0
+    endpoint_d = sp.simplify(p_d_prime.subs({ps: 0, pd: 1}) - 1) == 0
+    check(
+        "K3c finite-odds chart is explicit: p_s>0 for x=p_d/p_s; endpoints are fixed directly",
+        endpoint_s and endpoint_d,
+        "p_d=0 gives x=0 in chart; p_s=0 is the all-d fixed boundary outside the finite chart",
     )
 
     rho_corr = ps * kron(p_s_mat, p_s_mat) + pd * kron(p_d_mat, p_d_mat)
@@ -193,19 +221,20 @@ def symbolic_checks() -> dict[str, bool]:
     )
 
     born_retained = all([k1_2d_sum, k1_3d_sum])
-    product_form = all(k2_cells) and k2_complete
-    bounded_flow = ratio_map and r_map and inverse_ok
-    non_retained_only_product = product_form and corr_nonfactor and corr_identity
-    k4_assembly = born_retained and product_form and bounded_flow and non_retained_only_product
+    outcome_factorization = outcome_complete and outcome_agree_cells
+    product_witness = all(k2_cells) and k2_complete
+    bounded_flow = ratio_map and r_map and inverse_ok and endpoint_s and endpoint_d
+    non_retained_only_outcome = outcome_factorization and corr_nonfactor and corr_identity
+    k4_assembly = born_retained and outcome_factorization and product_witness and bounded_flow and non_retained_only_outcome
     check(
-        "K4 reduction assembly: retained Born form plus supplied product form gives bounded flow",
+        "K4 reduction assembly: retained Born form plus supplied outcome factorization gives bounded flow",
         k4_assembly,
-        "non-retained ingredient isolated as the product-form instance premise",
+        "non-retained ingredient isolated as the outcome-factorization premise",
     )
 
     return {
         "k1": born_retained,
-        "k2": product_form,
+        "k2": outcome_factorization,
         "k3": bounded_flow,
         "k4": k4_assembly,
     }
@@ -218,11 +247,13 @@ def textual_checks() -> None:
     gleason = GLEASON.read_text(encoding="utf-8")
     busch = BUSCH.read_text(encoding="utf-8")
     minimal = MINIMAL.read_text(encoding="utf-8")
+    product = PRODUCT_FORM.read_text(encoding="utf-8")
 
     note_n = normalize(note)
     gleason_n = normalize(gleason)
     busch_n = normalize(busch)
     minimal_n = normalize(minimal)
+    product_n = normalize(product)
 
     h_lambda_phrase = (
         "specific Hilbert space `H_Λ = ⊗_{x ∈ Λ} ℂ²` for finite `Λ ⊂ Z^3`"
@@ -267,14 +298,22 @@ def textual_checks() -> None:
         "B7 note quotes the MINIMAL_AXIOMS non-supply clause",
         minimal_phrase in note_n,
     )
+    check(
+        "B7b product-form weakening dependency proves outcome factorization is enough",
+        "Product-Form Premise Weakens to Outcome-Level Factorization" in product
+        and "strictly weaker than state-level product form" in product_n
+        and "outcome-level factorization" in note_n,
+    )
 
     firewall_phrases = [
-        "the product-form premise is the supplied bounded premise for this row",
+        "the outcome-factorization premise is the supplied bounded premise for this row",
         "it is named, not derived or retained",
         "does not assert",
         "the occupancy binary stays open",
         "R-D stays proposed",
         "`r` is never fixed",
+        "state-level product form is an overstrong sufficient witness only",
+        "finite odds chart `p_s > 0`",
     ]
     missing = [phrase for phrase in firewall_phrases if phrase not in note_n]
     check("B8 firewall sentences present", not missing, ", ".join(missing))
@@ -304,10 +343,11 @@ def textual_checks() -> None:
     expected_links = [
         "[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)",
         "[`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)",
+        "[`PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md`](PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md)",
         "[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)",
     ]
     check(
-        "B10 markdown link inventory is exactly the three requested dependencies",
+        "B10 markdown link inventory is exactly the four requested dependencies",
         links == expected_links,
         f"found={links}",
     )
@@ -339,16 +379,16 @@ def textual_checks() -> None:
     check("B12 No-promotion statement present", no_promotion in note_n)
 
     check(
-        "B13 Date and supplied-product bounded_theorem claim type present",
+        "B13 Date and supplied-outcome bounded_theorem claim type present",
         "**Date:** 2026-06-12" in note
-        and "**Claim type:** bounded_theorem / bounded support under a supplied product-form joint instance" in note,
+        and "**Claim type:** bounded_theorem / bounded support under a supplied outcome-factorization instance" in note,
     )
     check("B14 K1-K4 check tags present", all(tag in note for tag in ["[check K1]", "[check K2]", "[check K3]", "[check K4]"]))
-    check("B15 product-form premise is named but not discharged", "That premise is named, not discharged." in note)
+    check("B15 outcome-factorization premise is named but not discharged", "That premise is named, not discharged." in note)
     check(
-        "B16 source does not call the product-form premise retained",
-        "product-form premise is retained" not in note_n
-        and "retained product-form premise" not in note_n,
+        "B16 source does not call the outcome-factorization premise retained",
+        "outcome-factorization premise is retained" not in note_n
+        and "retained outcome-factorization premise" not in note_n,
     )
 
 
@@ -367,11 +407,11 @@ def print_stat_and_summary(results: dict[str, bool]) -> None:
     print("SUMMARY:")
     print(
         "K1-K4 verified symbolically; note firewall, dependency links, "
-        "supplied-product boundary, backticked context, and No-promotion statement verified."
+        "supplied-outcome-factorization boundary, backticked context, and No-promotion statement verified."
     )
     print(
         "The only non-retained ingredient isolated by the computation is the "
-        "named product-form instance premise."
+        "named outcome-factorization premise."
     )
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print(f"CHAIN: {results}")

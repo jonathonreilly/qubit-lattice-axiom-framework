@@ -584,16 +584,18 @@ def main() -> int:
            f"q[0]={quality[0]:.4f}=H_S, q[-1]={quality[-1]:.4f}")
 
     # -----------------------------------------------------------------------
-    section("Part 6b: NECESSITY + SUFFICIENCY of [H,Pi_S]=0 (random-H theorem)")
+    section("Part 6b: POINTER CONSERVATION iff [H,Pi_S]=0 (random-H theorem)")
     # -----------------------------------------------------------------------
-    # The load-bearing direction: persistence is not merely COMPATIBLE with
-    # [H,Pi_S]=0, it is EQUIVALENT to it. The clean statement is the Heisenberg
+    # The load-bearing necessity direction: persistence of the pointer value is
+    # not merely COMPATIBLE with [H,Pi_S]=0; all-state pointer-population
+    # conservation is EQUIVALENT to it. The clean statement is the Heisenberg
     # equation for the pointer populations P_k (spectral projectors of Pi_S):
     #     d/dt <P_k>_t |_{t=0} = i <[H, P_k]> ,
     # which vanishes for ALL states and ALL times  <=>  [H, P_k]=0  <=>
     # [H, Pi_S]=0. We certify both directions over RANDOM Hamiltonians (so the
     # result is about the COMMUTATION property, not the specific sigma_z(x)sigma_x
-    # operator used in the worked example).
+    # operator used in the worked example). This does NOT say QND alone writes a
+    # record; Part 6c gives commuting non-recording counterexamples.
     rng = np.random.default_rng(20260605)
 
     def rand_herm(m: int) -> np.ndarray:
@@ -611,9 +613,9 @@ def main() -> int:
         Hd = V_pi.conj().T @ H @ V_pi
         return V_pi @ (Hd * pop_mask) @ V_pi.conj().T
 
-    # SUFFICIENCY: ANY random H commuting with Pi_S conserves pointer populations
-    # for all sampled states & times.
-    suff_fail = 0
+    # PRESERVATION: ANY random H commuting with Pi_S conserves pointer
+    # populations for all sampled states & times.
+    preservation_fail = 0
     for _ in range(60):
         H = project_commutant(rand_herm(n))
         psi = rand_state(n_env)
@@ -621,10 +623,10 @@ def main() -> int:
         p0 = np.real(np.diag(partial_trace(density(psi), [0], n)))
         p1 = np.real(np.diag(partial_trace(density(unitary(H, t) @ psi), [0], n)))
         if not np.allclose(p0, p1, atol=1e-8):
-            suff_fail += 1
-    record("sufficiency: any random H with [H,Pi_S]=0 conserves the pointer "
+            preservation_fail += 1
+    record("preservation: any random H with [H,Pi_S]=0 conserves the pointer "
            "(it is the commutation property, not a special operator)",
-           suff_fail == 0, f"failures = {suff_fail}/60")
+           preservation_fail == 0, f"failures = {preservation_fail}/60")
 
     # NECESSITY: every random H with [H,Pi_S]!=0 admits a state instantaneously
     # moving a pointer population, via max|eig(i[H,P_0])| > 0.
@@ -646,7 +648,37 @@ def main() -> int:
            f"detected {nec_detect}/{nec_total} non-commuting samples")
 
     # -----------------------------------------------------------------------
-    section("Part 7: FORCED-CLASS structure -- conserved pointer + locality")
+    section("Part 6c: QND alone is NOT record-sufficient")
+    # -----------------------------------------------------------------------
+    # This is the post-audit repair: [H,Pi_S]=0 is necessary for persistent
+    # pointer values, but it is not sufficient to make fragments carry records.
+    # A record also needs a nontrivial imprint channel from S to the fragments.
+    H_zero = np.zeros_like(H_nd)
+    U_zero = unitary(H_zero, t_rec)
+    rho_zero = density(U_zero @ psi0)
+    info_zero = [holevo_pointer_info(rho_zero, 0, [k], n) for k in range(1, n)]
+    R_zero = redundancy_singletons(rho_zero, n_env, delta, H_S_initial)
+    record("QND-alone counterexample: H=0 commutes with Pi_S but writes no fragment record",
+           np.linalg.norm(comm(H_zero, Pi_S)) < 1e-12
+           and max(info_zero) < 1e-9 and R_zero == 0,
+           f"max I={max(info_zero):.2e}, R={R_zero}")
+
+    H_system_only = op(SZ, 0, n)
+    U_system_only = unitary(H_system_only, t_rec)
+    rho_system_only = density(U_system_only @ psi0)
+    info_system_only = [holevo_pointer_info(rho_system_only, 0, [k], n) for k in range(1, n)]
+    record("QND-alone counterexample: system-only pointer phase commutes but does not imprint E",
+           np.linalg.norm(comm(H_system_only, Pi_S)) < 1e-12
+           and max(info_system_only) < 1e-9,
+           f"max I={max(info_system_only):.2e}")
+
+    record("sufficiency construction needs both QND and nonzero controlled S-to-E imprint",
+           nd_comm_norm < 1e-12 and min(info_each) > H_S_initial - 1e-6
+           and max(info_zero) < 1e-9,
+           f"controlled min I={min(info_each):.4f}; zero-coupling max I={max(info_zero):.2e}")
+
+    # -----------------------------------------------------------------------
+    section("Part 7: FORCED-CLASS structure -- conserved pointer + imprint + locality")
     # -----------------------------------------------------------------------
     # (i) Conserved pointer: [H_int, Pi_S]=0 => Pi_S commutes with U => Pi_S
     #     is a constant of motion (Heisenberg). Verify U^dag Pi_S U = Pi_S.
@@ -777,11 +809,15 @@ def main() -> int:
 GENUINE CONSTRAINT, with explicit scope:
 
   On this explicit S + E_1..E_n model, additive + redundant + persistent +
-  objective record formation by a local evolution is EQUIVALENT to
-  pointer-non-demolition [H_int, Pi_S] = 0:
-    - [H,Pi_S]=0  =>  perfect redundant additive persistent objective record
-                      (Parts 1-4): R_delta = n_env, plateau = H_S, persistent,
-                      fragments objectively agree.
+  objective pointer record formation forces pointer-non-demolition, but QND
+  alone is not record-sufficient:
+    - [H,Pi_S]=0 plus the nonzero local controlled S-to-E imprint
+                      (Parts 1-4) gives a perfect redundant additive persistent
+                      objective record: R_delta = n_env, plateau = H_S,
+                      persistent, fragments objectively agree.
+    - [H,Pi_S]=0 alone has explicit non-recording counterexamples (Part 6c):
+                      H=0 and a system-only pointer phase conserve Pi_S but
+                      write no environment record.
     - [H,Pi_S]!=0 =>  record fails on every count (Part 5): records the WRONG
                       (non-pointer) observable, redundancy collapses, the
                       recorded value oscillates (non-persistent), no objective
@@ -790,30 +826,32 @@ GENUINE CONSTRAINT, with explicit scope:
       and a perfect objective record exists ONLY at the zero-commutator point.
     - NECESSITY is exact (Part 6b), not just illustrative: by the Heisenberg
       equation d<P_k>/dt = i<[H,P_k]>, the pointer populations are frozen for
-      ALL states and ALL times IFF [H,Pi_S]=0. Verified over random H (60/60
-      sufficiency, 60/60 necessity). So persistence <=> [H,Pi_S]=0 is a
-      THEOREM about the COMMUTATION property, not the special operator.
+      ALL states and ALL times IFF [H,Pi_S]=0. Verified over random H
+      (60/60 preservation, 60/60 necessity). This is a theorem about pointer
+      conservation, not a theorem that every QND Hamiltonian forms a record.
 
   Forced CLASS on U/T (Part 7-8):
     (a) a CONSERVED pointer/charge observable [U,Pi_S]=0 (preferred basis),
-    (b) LOCALITY: a sum of finite-range fragment couplings -- locality is what
+    (b) a nontrivial fragment-imprinting channel for sufficiency,
+    (c) LOCALITY: a sum of finite-range fragment couplings -- locality is what
         gives conditional independence of fragments given the pointer (clean
         independent redundant copies); a non-local env-env coupling injects
         EXCESS pairwise correlation I(E_a:E_b) > H_S and destroys it,
-    (c) the framework's number-conserving reflection-positive OS transfer T
-        = e^{-H} with [T,Q]=0 LIES IN this class.
+    (d) the framework's number-conserving reflection-positive OS transfer T
+        = e^{-H} with [T,Q]=0 supplies the conserved-charge part of this class.
 
   This ADDS a temporal/FORMATION constraint to the timeless #2667 corollary:
   #2667 fixes which ALGEBRA is observable (gauge-invariant) at fixed time;
   this fixes a FEATURE of the time step U/T that builds the record -- a
-  conserved pointer and locality.
+  conserved pointer, nontrivial fragment imprinting, and locality.
 
 HONEST LIMITS (no over-claim):
   - This is RELOCATION-RESISTANT but NOT a from-nothing derivation of dynamics.
-    The result is an EQUIVALENCE THEOREM on the explicit model, conditional on
-    modelling 'record' as a redundantly-imprinted, objective, persistent system
-    observable (the quantum-Darwinism bridge). That bridge is a supplied
-    bounded model identification: {Quantum, Lattice, Record} give the qubits, the locality,
+    The result is a finite-model necessity theorem plus a controlled-record
+    sufficiency construction, conditional on modelling 'record' as a
+    redundantly-imprinted, objective, persistent system observable (the
+    quantum-Darwinism bridge). That bridge is a supplied bounded model
+    identification: {Quantum, Lattice, Record} give the qubits, the locality,
     and the ADDITIVITY of the readout, but they do NOT by themselves assert
     that a record is a redundant imprint of a system observable. The constraint
     is forced GIVEN that bridge.
@@ -822,15 +860,18 @@ HONEST LIMITS (no over-claim):
     demand for a persistent objective record, H must possess such a conserved
     observable. (ii) is therefore self-consistency, not a second admission.
   - It does NOT derive the action, the coupling g (Part 9: any g works), the
-    transfer-matrix magnitude, or beta=6. Only the FORM [H,Pi_S]=0 + locality.
-  - 'Non-demolition is necessary AND sufficient for an objective persistent
-    record' is a THEOREM on this finite model (Part 6b makes necessity exact via
-    the Heisenberg equation); the lattice/continuum and interacting
-    generalization is NOT established here.
+    transfer-matrix magnitude, or beta=6. The bounded form constraint is:
+    conserved pointer + nontrivial fragment imprinting + locality.
+  - 'Non-demolition alone is necessary AND sufficient for an objective
+    persistent record' is NOT claimed. Non-demolition is the exact necessity
+    for persistent pointer populations; sufficiency also requires a nonzero
+    controlled imprint channel and the fresh/idle fragment persistence setup.
+    The lattice/continuum and interacting generalization is NOT established
+    here.
   - We do NOT claim 'derived the action' or 'derived the dynamics'. We claim a
-    structural FORM constraint (conserved pointer + locality) is forced by the
-    record-FORMATION requirements, on the explicit system, given the Darwinism
-    bridge.
+    structural FORM constraint (conserved pointer + nontrivial fragment
+    imprinting + locality) is forced by the record-FORMATION requirements, on
+    the explicit system, given the Darwinism bridge.
 """)
 
     print("=" * 78)

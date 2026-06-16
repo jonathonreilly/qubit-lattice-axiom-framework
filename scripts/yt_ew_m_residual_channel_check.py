@@ -9,7 +9,7 @@ This runner does NOT close M (which requires explicit framework EW
 Wilson-line construction). It does:
 
 (1) Verify the Fierz channel decomposition of Tr_color[G(x,y) G(y,x)] on
-    explicit random SU(N_c) backgrounds, for N_c = 2, 3, 4.
+    explicit complex matrix backgrounds for N_c = 2, 3.
 
 (2) Verify the CMT-style factorization: when the link variable U is
     written as u_0 · V with V trace-normalized, the propagator inherits
@@ -22,9 +22,9 @@ Wilson-line construction). It does:
     u_0-normalization improvement.
 
 Tests:
-  (T1) Fierz identity on random Hermitian matrices: Tr[M† M] = (1/N) |Tr M|² + 2 Σ_A |Tr[M t^A]|²
+  (T1) Fierz identity on random complex matrices: Tr[M† M] = (1/N) |Tr M|² + 2 Σ_A |Tr[M t^A]|²
   (T2) Adjoint channel fraction (N²-1)/N² exact for N = 2..5
-  (T3) Random SU(N) propagator-like matrices satisfy the channel decomposition
+  (T3) Random complex propagator-like matrices satisfy the channel decomposition
   (T4) Singlet content (1/N) |Tr G|² scales as Tr[G]² on identity background
   (T5) Adjoint content vanishes on color-diagonal G (proves: static CMT background
        has only singlet, no adjoint — confirming need for V fluctuations to
@@ -69,6 +69,20 @@ def random_traceless_hermitian(N: int, rng: np.random.Generator) -> list[np.ndar
     raise NotImplementedError(f"SU({N}) generator basis not supported in this stretch attempt")
 
 
+def random_su_n(N: int, rng: np.random.Generator) -> np.ndarray:
+    """Sample a Haar-distributed SU(N) matrix by QR with determinant repair."""
+
+    z = rng.standard_normal((N, N)) + 1j * rng.standard_normal((N, N))
+    q, r = np.linalg.qr(z)
+    diag = np.diag(r)
+    phases = np.where(np.abs(diag) > 0, diag / np.abs(diag), 1.0)
+    q = q * phases.conj()
+
+    # Multiplying one column by det(q)^* preserves unitarity and fixes det=1.
+    q[:, 0] *= np.linalg.det(q).conjugate()
+    return q
+
+
 def main() -> None:
     print("=" * 72)
     print("yt_ew M-RESIDUAL STRETCH ATTEMPT: FIERZ CHANNEL BOOKKEEPING UNDER CMT")
@@ -77,7 +91,7 @@ def main() -> None:
 
     rng = np.random.default_rng(42)
 
-    # ----- Test 1: Fierz identity on random Hermitian matrices for SU(2), SU(3) -----
+    # ----- Test 1: Fierz identity on random complex matrices for SU(2), SU(3) -----
     print("-" * 72)
     print("TEST 1: Fierz identity Tr[M† M] = (1/N) |Tr M|² + 2 Σ_A |Tr[M t^A]|²")
     print("-" * 72)
@@ -179,21 +193,24 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if t5_ok else 'FAIL'}")
     print()
 
-    # ----- Test 6: V-fluctuation generates adjoint content -----
+    # ----- Test 6: Haar SU(N) V-fluctuation generates adjoint content -----
     print("-" * 72)
-    print("TEST 6: Random SU(N) link V (Tr V = N → trace-normalized fluctuation)")
-    print("        generates non-trivial adjoint content C > 0")
+    print("TEST 6: Haar SU(N) link V generates non-trivial adjoint content")
+    print("        with unitarity and determinant-one residuals checked explicitly")
     print("-" * 72)
     print()
-    print("  N | mean(C/(S+C)) over 100 random V trials | expected (N²-1)/N²")
+    print("  N | mean(C/(S+C)) over 5000 Haar-SU(N) trials | expected (N²-1)/N²")
     print("  ---|----------------------------------------|------------------")
     t6_ok = True
     for N in [2, 3]:
         T = random_traceless_hermitian(N, rng)
         ratios = []
-        for trial in range(100):
-            # Generate random complex matrix (proxy for fluctuation propagator G_V)
-            V = rng.standard_normal((N, N)) + 1j * rng.standard_normal((N, N))
+        max_unitarity_dev = 0.0
+        max_det_dev = 0.0
+        for trial in range(5000):
+            V = random_su_n(N, rng)
+            max_unitarity_dev = max(max_unitarity_dev, np.linalg.norm(V.conj().T @ V - np.eye(N)))
+            max_det_dev = max(max_det_dev, abs(np.linalg.det(V) - 1))
             S = (1 / N) * abs(np.trace(V)) ** 2
             C = 2 * sum(abs(np.trace(V @ t)) ** 2 for t in T)
             if S + C > 0:
@@ -201,10 +218,11 @@ def main() -> None:
         mean_ratio = np.mean(ratios)
         expected = (N ** 2 - 1) / N ** 2
         print(f"  {N} | {mean_ratio:.4f}                                 | {expected:.4f}")
-        if abs(mean_ratio - expected) > 0.05:
+        print(f"      max ||V†V-I||={max_unitarity_dev:.2e}, max |det(V)-1|={max_det_dev:.2e}")
+        if abs(mean_ratio - expected) > 0.02:
             t6_ok = False
     print(f"  STATUS: {'PASS' if t6_ok else 'FAIL'}")
-    print(f"  ⇒ Random complex matrices statistically realize the (N²-1)/N² adjoint fraction.")
+    print(f"  ⇒ Haar SU(N) links statistically realize the (N²-1)/N² adjoint fraction.")
     print()
 
     # ----- Test 7: Numerical at N=3 — adjoint dominates at expected fraction -----
@@ -213,10 +231,14 @@ def main() -> None:
     print("-" * 72)
     print()
     T = gell_mann_su3()
-    n_trials = 1000
+    n_trials = 5000
     ratios = []
+    max_unitarity_dev = 0.0
+    max_det_dev = 0.0
     for trial in range(n_trials):
-        V = rng.standard_normal((3, 3)) + 1j * rng.standard_normal((3, 3))
+        V = random_su_n(3, rng)
+        max_unitarity_dev = max(max_unitarity_dev, np.linalg.norm(V.conj().T @ V - np.eye(3)))
+        max_det_dev = max(max_det_dev, abs(np.linalg.det(V) - 1))
         S = (1 / 3) * abs(np.trace(V)) ** 2
         C = 2 * sum(abs(np.trace(V @ t)) ** 2 for t in T)
         if S + C > 0:
@@ -224,11 +246,12 @@ def main() -> None:
     mean_ratio = np.mean(ratios)
     std_ratio = np.std(ratios) / np.sqrt(n_trials)
     expected = 8 / 9
-    print(f"  N=3 with {n_trials} random complex matrix trials:")
+    print(f"  N=3 with {n_trials} Haar-SU(3) link trials:")
     print(f"    mean(C/(S+C)) = {mean_ratio:.4f} ± {std_ratio:.4f}")
     print(f"    expected (N²-1)/N² = 8/9 = {expected:.4f}")
     print(f"    deviation = {abs(mean_ratio - expected):.4f}")
-    t7_ok = abs(mean_ratio - expected) < 0.02
+    print(f"    max ||V†V-I||={max_unitarity_dev:.2e}, max |det(V)-1|={max_det_dev:.2e}")
+    t7_ok = abs(mean_ratio - expected) < 0.01 and max_unitarity_dev < 1e-12 and max_det_dev < 1e-12
     print(f"  STATUS: {'PASS' if t7_ok else 'FAIL'}")
     print()
 
@@ -238,7 +261,7 @@ def main() -> None:
     print(f"  Test 3 (channel decomposition on random G):             {'PASS' if t3_ok else 'FAIL'}")
     print(f"  Test 4 (color-diagonal G has only singlet, no adjoint): {'PASS' if t4_ok else 'FAIL'}")
     print(f"  Test 5 (CMT u_0 factorization preserves S, C):          {'PASS' if t5_ok else 'FAIL'}")
-    print(f"  Test 6 (random V-fluctuation generates adjoint):        {'PASS' if t6_ok else 'FAIL'}")
+    print(f"  Test 6 (Haar SU(N) V-fluctuation generates adjoint):   {'PASS' if t6_ok else 'FAIL'}")
     print(f"  Test 7 (N=3 adjoint fraction = 8/9):                    {'PASS' if t7_ok else 'FAIL'}")
     all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok, t7_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")

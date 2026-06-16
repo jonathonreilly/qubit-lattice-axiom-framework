@@ -1,0 +1,22 @@
+loop_slug: sm-anomaly-nur-family-repair-20260616
+target_claim_id: sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08
+target_status: bounded-support
+started_from: origin/main
+block_count: 1
+active_route: nu_r_family_runner_repair
+files_touched:
+  - docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md
+  - scripts/audit_companion_sm_anomaly_closure_retained_anchors_2026_06_08.py
+  - logs/runner-cache/audit_companion_sm_anomaly_closure_retained_anchors_2026_06_08.txt
+open_imports:
+  - minimal RH completion remains an admitted premise
+  - nu_R branch selection remains admitted/open
+claim_boundary: >
+  Repair the C3 runner/source artifact issue by verifying the full admitted
+  nu_R one-parameter anomaly-free family member, including SU(3)^2Y, Tr[Y],
+  and Tr[Y^3]. The no-nu_R bounded theorem and its admitted-premise boundary
+  are unchanged.
+review_disposition: pass
+next_exact_action: >
+  Hand this PR to the reviewer so the independent audit lane can re-check the
+  same bounded theorem with the C3 scorecard no longer overstating its check.

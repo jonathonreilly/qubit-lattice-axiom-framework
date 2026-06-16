@@ -2,7 +2,7 @@
 
 Date: 2026-06-06
 
-**Claim type:** bounded_theorem
+**Claim type:** open_gate
 Status: conditional-support
 
 actual_current_surface_status: conditional-support
@@ -55,6 +55,21 @@ No new axiom is needed for this principle. It is a consequence of finite
 additivity plus arbitrary finite collection size. The conditional part is the
 existence/production of nonzero records, which Record explicitly does not
 supply.
+
+## 2026-06-16 Post-Audit Claim-Type Repair
+
+The 2026-06-16 audit correctly refused to treat the unbounded lift as a
+closed bounded theorem on the current authority surface. The finite-prefix
+arithmetic is exact once a finite family of disjoint unit-valued records is
+supplied, but the unbounded schema still carries a supplied-readout-context
+and supplied-produced-record premise.
+
+This source note is therefore an `open_gate` / conditional-support schema:
+it exposes the exact algebra available after records exist and names the
+missing bridge needed for a future positive theorem. It does not derive
+record production, unit normalization or a positive lower bound, the readout
+context, or arbitrarily large nonzero produced-record availability from the
+Record axiom.
 
 ## 2026-06-15 Supplied-Record Premise Firewall
 

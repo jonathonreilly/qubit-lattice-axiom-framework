@@ -74,6 +74,13 @@ if NOTE.exists():
         "grading",
         "The converse is **not** claimed",
         "no retained bridge supplied here",
+        "2026-06-13 bridge-scope firewall",
+        "not a retained bridge from",
+        "not a physical `r`-weighting derivation",
+        "not a proof that the framework supplies the first-order chiral coupling",
+        "commutes with Gamma_chi  does not imply  C3-equivariant",
+        "must not cite this packet as a retained derivation of",
+        "physical `M(b)⊗σ₊` tensor coupling",
         "not as a retained positive theorem deriving the physical",
         "Independent audit required",
     ]

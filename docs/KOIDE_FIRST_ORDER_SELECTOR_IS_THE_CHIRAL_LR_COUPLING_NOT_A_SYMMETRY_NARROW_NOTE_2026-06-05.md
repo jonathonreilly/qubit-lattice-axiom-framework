@@ -127,6 +127,29 @@ counterexample.
 This repair does **not** supply a retained bridge from `AC_φλ` to the physical `M(b)⊗σ₊` coupling or to the
 physical `r`-weighting. Those remain the load-bearing open gates for any positive `r=1/2` derivation.
 
+## 2026-06-13 bridge-scope firewall
+
+The phrase "`M(b)⊗σ₊` is the escape" is an algebraic localization statement
+inside the runner's `R³⊗C²` toy factor. It is not a retained bridge from
+`AC_φλ` to a framework action term, not a physical `r`-weighting derivation,
+and not a proof that the framework supplies the first-order chiral coupling.
+
+The only native-family implication used here is one-way:
+
+```text
+C3-equivariant circulant generation mass  =>  commutes with Gamma_chi
+```
+
+The converse is false and remains excluded:
+
+```text
+commutes with Gamma_chi  does not imply  C3-equivariant.
+```
+
+A downstream row must not cite this packet as a retained derivation of
+`r=1/2`, of the physical `M(b)⊗σ₊` tensor coupling, of an `AC_φλ` corner mass,
+or of the physical `r`-weighting. Those require a separate retained bridge.
+
 ## 2026-06-15 audit-boundary repair
 
 This repair removes the residual positive-selector reading that caused the

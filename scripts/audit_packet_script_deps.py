@@ -51,6 +51,36 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
 }
 
 
+def canonical_runner_path(runner_path: str | Path) -> str:
+    """Map legacy runner refs to checked-in ``scripts/<basename>.py`` files."""
+    raw = str(runner_path).strip()
+    if not raw:
+        return raw
+    raw_path = Path(raw)
+    basename = raw_path.name
+
+    candidates: list[str] = []
+    if raw_path.is_absolute():
+        if basename.endswith(".py"):
+            candidates.append(f"scripts/{basename}")
+    elif raw.startswith("scripts/"):
+        candidates.append(raw)
+    else:
+        candidates.extend([raw, f"scripts/{raw}"])
+    if basename.endswith(".py"):
+        candidates.append(f"scripts/{basename}")
+
+    seen: set[str] = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        p = REPO_ROOT / candidate
+        if p.exists():
+            return p.relative_to(REPO_ROOT).as_posix()
+    return raw
+
+
 def parse_script_imports(script_path: Path) -> set[str]:
     """Return the set of helper script names this script imports.
 
@@ -186,7 +216,7 @@ def main() -> int:
     helper_freq = defaultdict(int)
 
     for claim_id, row in rows.items():
-        runner_path = row.get("runner_path", "")
+        runner_path = canonical_runner_path(row.get("runner_path", ""))
         if not runner_path:
             claims_no_runner += 1
             continue

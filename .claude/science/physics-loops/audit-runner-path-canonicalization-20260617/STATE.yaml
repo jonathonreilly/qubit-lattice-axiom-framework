@@ -1,0 +1,13 @@
+goal: "Unblock audit runner-path failures without auditing or editing audit verdicts."
+status: exact-support
+branch: codex/audit-runner-path-canonicalization-20260617
+started_from: origin/main@53b951c6f
+active_route: "Canonicalize stale runner paths before audit prompt/source rendering."
+files_touched:
+  - scripts/codex_audit_runner.py
+  - scripts/audit_packet_script_deps.py
+  - scripts/audit_runner_path_canonicalization_guard_2026_06_17.py
+open_imports: []
+audit_actions_taken: none
+review_loop_disposition: reviewer_owned_not_run
+next_exact_action: "Reviewer can run the guard and then let audit-loop consume the canonicalized source packets."

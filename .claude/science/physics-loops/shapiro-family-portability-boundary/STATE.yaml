@@ -1,0 +1,21 @@
+loop_slug: shapiro-family-portability-boundary
+branch: codex/shapiro-family-portability-boundary-20260617
+base: origin/main@53b951c6f
+objective: source-side audit unlock for shapiro_family_portability_note
+mode: source_repair_pr
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: shapiro_family_portability_note
+target_blocker_text: "source note had proposed-retained wording, absolute stale paths, and failed archive bridge dependency despite a computed finite replay"
+audit_actions_performed: none
+review_loop_disposition: reviewer_owned_not_run
+files_touched:
+  - docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md
+  - scripts/shapiro_family_portability.py
+  - logs/runner-cache/shapiro_family_portability.txt
+remaining_blockers:
+  - Base Shapiro delay row must be accepted within bounded scope.
+  - This does not supply physical Shapiro-law, lab calibration, or uniqueness.
+next_exact_action: reviewer should inspect whether the bounded family-portability replay is ready for re-audit after the base Shapiro delay repair.
+stop_condition: coherent source PR opened for this block

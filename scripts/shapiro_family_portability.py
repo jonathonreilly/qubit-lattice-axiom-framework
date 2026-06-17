@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Discrete Shapiro delay: c-dependent phase lag across three grown families.
+"""Bounded Shapiro proxy: c-dependent phase lag across three grown families.
 
-This probe tests whether the retained c-dependent phase lag from the discrete
-Shapiro lane reproduces cleanly across the three portable grown families with
-the same seed-stable values.
+This probe tests whether the c-dependent proxy phase table from the discrete
+Shapiro lane reproduces across the three configured portable grown families
+with exact zero controls and small family spread.
 
 The observable is the detector-line phase of the overlap between the
 instantaneous field and the finite-c causal field. Zero control is exact by
 construction.
+
+This is a bounded finite replay, not a retained physical Shapiro theorem, not
+a unique causal discriminator, and not a diamond/NV calibration.
 """
 
 from __future__ import annotations
@@ -42,6 +45,8 @@ FAMILIES = [
     ("Fam3", 0.50, 0.90),
 ]
 SEEDS = [0, 1]
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "SHAPIRO_FAMILY_PORTABILITY_NOTE.md"
 
 
 @dataclass(frozen=True)
@@ -214,6 +219,7 @@ def _family_table() -> list[FamilySummary]:
 
 def _render_report() -> str:
     summaries = _family_table()
+    checks, checks_ok = _checks(summaries)
     lines: list[str] = []
     lines.append("=" * 79)
     lines.append("DISCRETE SHAPIRO DELAY: THREE-FAMILY PORTABILITY")
@@ -257,15 +263,55 @@ def _render_report() -> str:
     lines.append("")
     lines.append("SAFE READ")
     lines.append("  - exact zero-source control stays exact on all three families")
-    lines.append("  - the c-dependent phase lag is stable across families to sub-percent scale")
-    lines.append("  - this is a portability statement for the phase observable, not an absolute NV calibration")
-    lines.append("  - the cleanest retained readout is the phase lag itself; the static baseline is only the reference")
+    lines.append("  - the c-dependent proxy phase table is stable across families to sub-percent scale")
+    lines.append("  - this is a bounded portability statement for the proxy phase observable, not an absolute NV calibration")
+    lines.append("  - the static-cone no-go remains load-bearing; this is not a unique causal discriminator")
+    lines.append("")
+    lines.append("RUNNER CHECKS")
+    for label, ok in checks:
+        lines.append(f"  [{'PASS' if ok else 'FAIL'}] {label}")
     lines.append("")
     lines.append("NARROW CONCLUSION")
-    lines.append("  The Shapiro-style phase lag reproduces cleanly across the three portable grown families.")
-    lines.append("  It is a geometry-independent property of the propagator + action in this retained proxy.")
-    lines.append("  The claim remains proxy-level; absolute NV units still require external calibration.")
+    lines.append("  The Shapiro-style proxy phase table reproduces across the three configured portable grown families.")
+    lines.append("  This is a bounded finite replay inside the declared harness, not a retained physical Shapiro package.")
+    lines.append("  Absolute NV units, physical field speed, and uniqueness against static cone-shape effects remain outside this claim.")
+    lines.append("")
+    lines.append(f"ASSERTIONS: {'PASS' if checks_ok else 'FAIL'}")
     return "\n".join(lines)
+
+
+def _checks(summaries: list[FamilySummary]) -> tuple[list[tuple[str, bool]], bool]:
+    note = NOTE.read_text(encoding="utf-8")
+    phase_means = [[summary.phases[c][0] for summary in summaries] for c in C_VALUES]
+    max_spread = max(max(values) - min(values) for values in phase_means)
+    family_monotone = all(
+        all(a < b for a, b in zip([summary.phases[c][0] for c in C_VALUES], [summary.phases[c][0] for c in C_VALUES][1:]))
+        for summary in summaries
+    )
+    checks = [
+        ("exact zero-source control on all three families", max(summary.zero_max for summary in summaries) == 0.0),
+        ("family spread below 2.5e-4 rad at every finite c", max_spread <= 2.5e-4),
+        ("per-family mean phase increases monotonically as c decreases", family_monotone),
+        (
+            "source note is bounded and has no retained/proposed-retained wording",
+            "bounded finite cross-family replay" in note
+            and "proposed_retained" not in note
+            and "retained positive" not in note,
+        ),
+        (
+            "source note has no failed archived bridge dependency",
+            "archive_unlanded" not in note
+            and "SHAPIRO_COMPLEX_INTERACTION_NOTE" not in note
+            and "DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE" not in note,
+        ),
+        (
+            "source note excludes lab, physical-speed, and unique-causality claims",
+            "absolute NV calibration" in note
+            and "physical field-speed measurement" in note
+            and "unique causal-discriminator claim" in note,
+        ),
+    ]
+    return checks, all(ok for _label, ok in checks)
 
 
 def main() -> int:
@@ -281,7 +327,7 @@ def main() -> int:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(rendered + "\n", encoding="utf-8")
 
-    return 0
+    return 0 if "ASSERTIONS: PASS" in rendered else 1
 
 
 if __name__ == "__main__":

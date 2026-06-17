@@ -43,18 +43,23 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 PASS = 0
 FAIL = 0
+EXPECTED_BREAKDOWN = {"A": 0, "B": 6, "C": 40, "D": 0}
+CLASS_PASS = {"A": 0, "B": 0, "C": 0, "D": 0}
 
 
-def record(label: str, ok: bool, detail: str = "") -> None:
+def record(label: str, ok: bool, detail: str = "", cls: str = "C") -> None:
     global PASS, FAIL
+    if cls not in CLASS_PASS:
+        raise ValueError(f"unknown audit class {cls!r}")
     if ok:
         PASS += 1
+        CLASS_PASS[cls] += 1
         tag = "PASS"
     else:
         FAIL += 1
         tag = "FAIL"
     suffix = f" :: {detail}" if detail else ""
-    print(f"{tag} {label}{suffix}")
+    print(f"[{tag}] [{cls}] {label}{suffix}")
 
 
 def section(title: str) -> None:
@@ -826,10 +831,10 @@ def main() -> int:
             "does not use OS-transfer membership as a record-formation proof",
             "does not establish the lattice/continuum or interacting-field",
         ]:
-            record(f"source-note firewall present: {phrase[:48]}...", phrase in text)
+            record(f"source-note firewall present: {phrase[:48]}...", phrase in text, cls="B")
     else:
         record("source-note present (firewall checks skipped: note not found)", False,
-               "note file missing")
+               "note file missing", cls="B")
 
     # -----------------------------------------------------------------------
     section("VERDICT (honest)")
@@ -911,8 +916,20 @@ HONEST LIMITS (no over-claim):
 """)
 
     print("=" * 78)
+    print(
+        "runner_check_breakdown = "
+        f"{{A: {CLASS_PASS['A']}, B: {CLASS_PASS['B']}, C: {CLASS_PASS['C']}, "
+        f"D: {CLASS_PASS['D']}, total_pass: {PASS}}}"
+    )
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("=" * 78)
+    actual_breakdown = {key: CLASS_PASS[key] for key in EXPECTED_BREAKDOWN}
+    if actual_breakdown != EXPECTED_BREAKDOWN:
+        print(
+            f"ERROR: expected runner_check_breakdown {EXPECTED_BREAKDOWN}, "
+            f"got {actual_breakdown}."
+        )
+        return 1
     return 0 if FAIL == 0 else 1
 
 

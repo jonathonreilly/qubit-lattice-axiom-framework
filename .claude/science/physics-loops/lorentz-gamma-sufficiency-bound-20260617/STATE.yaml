@@ -1,0 +1,16 @@
+loop: lorentz-gamma-sufficiency-bound-20260617
+target: emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06
+mode: source-side audit unlock
+status: block packaged
+branch: physics-loop/lorentz-gamma-sufficiency-bound-20260617
+files_touched:
+  - docs/EMERGENT_LORENTZ_GAMMA_SUFFICIENCY_THRESHOLD_NO_GO_NOTE_2026-06-17.md
+  - scripts/frontier_emergent_lorentz_gamma_sufficiency_threshold_2026_06_17.py
+  - logs/runner-cache/frontier_emergent_lorentz_gamma_sufficiency_threshold_2026_06_17.txt
+  - .claude/science/physics-loops/lorentz-gamma-sufficiency-bound-20260617/
+open_imports:
+  - framework-specific one-loop velocity RG derivation
+  - spatial-only power-divergent mixing coefficient
+  - physical anomalous-dimension lower bound or custodial removal theorem
+claim_state_movement: "Prunes the route from gamma>0 attraction to physical LV sufficiency."
+next_exact_action: "Independent review/audit can decide whether to queue the new no-go and use it to narrow the parent blocker."

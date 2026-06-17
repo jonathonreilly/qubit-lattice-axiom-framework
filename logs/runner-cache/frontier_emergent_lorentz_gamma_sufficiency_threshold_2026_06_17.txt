@@ -1,0 +1,15 @@
+Emergent-Lorentz gamma sufficiency threshold obstruction
+[PASS] G1 threshold gamma is positive for 0 < epsilon/delta < 1 and 0 < mu/M < 1 -- gamma_*=0.750000
+[PASS] G2 threshold is exact: gamma_* lands exactly on epsilon -- delta_IR=1.000e-12
+[PASS] G3 any smaller positive gamma can fail the tolerance -- half-threshold residual=1.000e-06
+[PASS] G4 any larger gamma succeeds for the same fixed tolerance -- double-threshold residual=1.000e-24
+[PASS] G5 supplied one-loop flow remains attractive for arbitrarily small positive alpha -- alpha=0.187500, eigenvalues=(0.0,-0.375000)
+[PASS] G6 attractive-but-small example still fails the fixed tolerance -- positivity alone gives no lower bound
+[PASS] G7 no-positive-lower-bound obstruction at hierarchy ratio 0.001 -- gamma=1.000000 < gamma_*=4.000000
+[PASS] G7 no-positive-lower-bound obstruction at hierarchy ratio 1e-09 -- gamma=0.333333 < gamma_*=1.333333
+[PASS] G7 no-positive-lower-bound obstruction at hierarchy ratio 1e-30 -- gamma=0.100000 < gamma_*=0.400000
+[PASS] G8 deeper hierarchy lowers but does not remove the positive gamma threshold -- gamma_*(1e-18)=0.666667 < gamma_*(1e-6)=2.000000
+[PASS] G9 note records no audit-status change
+[PASS] G10 note names the exact parent blocker being pruned
+[PASS] G11 parent row still declares the sufficiency bound open
+TOTAL: PASS=13 FAIL=0

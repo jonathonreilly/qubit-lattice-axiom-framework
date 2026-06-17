@@ -1,0 +1,27 @@
+loop: yt-bz-quadrature-cache-sync-20260617
+branch: physics-loop/yt-bz-quadrature-cache-sync-20260617
+base: origin/main@d1ac4c902
+target_status: open
+actual_current_surface_status: open
+cycle_count: 1
+active_route: queued-runner cache sync
+target_claim_ids:
+  - yt_p1_bz_quadrature_numerical_note_2026-04-18
+  - yt_p1_bz_quadrature_2_loop_full_staggered_pt_note_2026-04-18
+files_touched:
+  - logs/runner-cache/frontier_yt_p1_bz_quadrature_numerical.txt
+  - logs/runner-cache/frontier_yt_p1_bz_quadrature_2_loop_full_staggered_pt.txt
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+verification:
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh scripts/frontier_yt_p1_bz_quadrature_numerical.py --timeout-sec 120
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh scripts/frontier_yt_p1_bz_quadrature_2_loop_full_staggered_pt.py --timeout-sec 120
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_yt_p1_bz_quadrature_numerical.py
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_yt_p1_bz_quadrature_2_loop_full_staggered_pt.py
+  - python3 -m py_compile scripts/frontier_yt_p1_bz_quadrature_numerical.py scripts/frontier_yt_p1_bz_quadrature_2_loop_full_staggered_pt.py
+  - git diff --check
+next_exact_action: Open review PR for the cache-sync artifact repair.

@@ -34,6 +34,11 @@ for the `g_bare` normalization chain.
   phenomenological coupling normalization.
 - [`docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md`](audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md)
   for the promotion-panel identification of the non-circular route.
+- [`GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md`](GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md)
+  supplies, on this stacked source branch, a finite root-`SU(2)` candidate
+  for the remaining scale-transport bridge. It is cited here as a source
+  proposal only; independent review/audit still decides whether it can be
+  consumed by the parent route.
 
 ## Claim
 
@@ -89,7 +94,10 @@ This is bounded support on the current surface.
 - The `AC_phi_lambda` species-label residual remains relevant to flavor-label
   identification, but it is not relevant to the `g_bare` trace normalization.
 - The per-site-to-gauge SU(2) normalization transport remains the actual
-  scale gate for `g_bare`.
+  scale gate for `g_bare`. On the stacked companion source branch, the
+  root-`SU(2)` scale-transport note supplies a finite candidate closure for
+  that subclaim, but the parent `g_bare` route remains unpromoted until
+  review/audit accepts the bridge and rechecks the downstream chain.
 
 This branch does not assert that the gate has closed. It narrows what must
 close for this lane.
@@ -142,7 +150,7 @@ The g_bare normalization campaign should separate three questions:
 | Question | Load-bearing for `g_bare`? | Current status |
 |---|---:|---|
 | Is the structural graph-first `V_3` gauge carrier separated from the full matter tensor trace? | yes | supplied as structural gauge context; not a physical-color claim |
-| Does the per-site spin-double-cover scale propagate to the gauge `su(3)` SU(2) sub-blocks on `V_3`? | yes | bounded/open as the trace-surface bridge |
+| Does the per-site spin-double-cover scale propagate to the gauge `su(3)` SU(2) sub-blocks on `V_3`? | yes | finite root-`SU(2)` candidate supplied on the stacked companion branch; parent still review/audit gated |
 | Is the graph-first `su(3)` physically named as SM color? | no for this trace-normalization claim | separate physical-color/EW bridge |
 | Which `hw=1` corner is assigned to which named generation label? | no | no-go in `A_min`, convention/dynamics/empirical input needed for flavor labels |
 
@@ -174,5 +182,5 @@ python3 scripts/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.py
 Expected summary:
 
 ```text
-TOTAL: PASS=84, FAIL=0
+TOTAL: PASS=85, FAIL=0
 ```

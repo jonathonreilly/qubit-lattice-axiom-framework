@@ -264,6 +264,7 @@ bridge_snippets = [
     "not a parent promotion",
     "narrower than full species-label closure and narrower than physical Standard Model color naming",
     "structural graph-first `su(3)` carrier on the selected-axis `V_3` surface",
+    "root-`SU(2)` scale-transport note supplies a finite candidate closure",
     "not load-bearing for this trace-normalization statement",
     "does not have to wait for a forced generation-label bijection",
     "or a physical-color naming theorem",

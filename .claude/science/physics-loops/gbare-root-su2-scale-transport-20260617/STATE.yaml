@@ -1,0 +1,23 @@
+loop: gbare-root-su2-scale-transport-20260617
+target: "Close the finite per-site-to-gauge SU(2) scale-transport subclaim for the g_bare trace-normalization route without promoting the parent claim."
+mode: run
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Root SU(2) subgroups in graph-first V3 gauge SU(3) carry the Pauli/2 scale."
+files_touched:
+  - docs/GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md
+  - scripts/gbare_root_su2_scale_transport_bridge_2026_06_17.py
+  - docs/STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md
+  - scripts/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.py
+  - logs/runner-cache/gbare_root_su2_scale_transport_bridge_2026_06_17.txt
+  - logs/runner-cache/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.txt
+open_imports:
+  - "Independent review/audit must decide whether this finite root-SU2 scale bridge is consumed by the parent Wilson/Ward g_bare chain."
+  - "The parent g_bare route still needs a downstream chain recheck; this block does not apply an audit verdict."
+no_go_routes:
+  - "Using species-label bijections or physical-color naming to fix N_F is not load-bearing for this trace-normalization subclaim."
+review_findings: "local self-review: demoted to bounded-support; no parent promotion claimed"
+pr_status: pending
+next_exact_action: "Run runners/cache checks, commit this stacked branch, push, and open a review PR against codex/gbare-v3-trace-source-unblock-20260617."
+stop_condition: "Stop only after PR handoff or if the finite algebra runner fails."

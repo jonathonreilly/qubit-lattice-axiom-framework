@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.py
-runner_sha256: 42f4f3c1419e24d07d83e5aa1af936b36f2618170b61c68f91dbbda0d4dc668f
+runner_sha256: 0fc0d4f7e61c68dea1c75bac074ab8baae2098520c4ff7cd6aff77e715c0271d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 
@@ -105,6 +105,7 @@ Part 6: branch-local note hygiene
   [PASS] bridge note contains: not a parent promotion
   [PASS] bridge note contains: narrower than full species-label closure and narrower than physical Standard Model color naming
   [PASS] bridge note contains: structural graph-first `su(3)` carrier on the selected-axis `V_3` surface
+  [PASS] bridge note contains: root-`SU(2)` scale-transport note supplies a finite candidate closure
   [PASS] bridge note contains: not load-bearing for this trace-normalization statement
   [PASS] bridge note contains: does not have to wait for a forced generation-label bijection
   [PASS] bridge note contains: or a physical-color naming theorem
@@ -116,7 +117,7 @@ Part 6: branch-local note hygiene
   [PASS] bridge note avoids banned phrase: full retained at this time
 
 ========================================================================================
-  TOTAL: PASS=84, FAIL=0
+  TOTAL: PASS=85, FAIL=0
 ========================================================================================
 
 ----- stderr -----

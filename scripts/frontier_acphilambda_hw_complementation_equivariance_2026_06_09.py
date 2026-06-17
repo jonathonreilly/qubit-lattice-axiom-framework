@@ -11,8 +11,9 @@ This runner checks only finite algebraic facts:
 
 Rigidity addendum (the classification is exhaustive on this finite surface):
 
-* R-A: all 48 invertible affine-Boolean relabelings of the corner cube
-  (S3 semidirect Z2^3) classify exactly as 3 frame rotations,
+* R-A: all 48 coordinate-permutation/bit-flip relabelings of the corner cube
+  (S3 semidirect Z2^3, x_i -> x_{pi(i)} xor f_i) classify exactly as
+  3 frame rotations,
   3 orientation transpositions, 6 triplet swaps (complementation composed
   with the former), or 36 grading-breaking maps that do not preserve the
   hw in {1,2} surface at all;
@@ -34,6 +35,7 @@ admission, or derive the physical species bridge.
 from __future__ import annotations
 
 import itertools
+from pathlib import Path
 
 import sympy as sp
 
@@ -129,7 +131,7 @@ def main() -> int:
         and sp.simplify(e3 - pe3) == 0,
     )
 
-    section("Rigidity R-A: classification of all 48 affine-Boolean relabelings")
+    section("Rigidity R-A: classification of all 48 coordinate-permutation/bit-flip relabelings")
     perms = list(itertools.permutations(range(3)))
     cyclic = [(0, 1, 2), (1, 2, 0), (2, 0, 1)]
     counts = {
@@ -153,7 +155,7 @@ def main() -> int:
             else:
                 counts["nonexistent"] += 1
     check(
-        "48 cube relabelings classify as 3+3+3+3 grading-preserving + 36 grading-breaking",
+        "48 coordinate-permutation/bit-flip cube relabelings classify as 3+3+3+3 grading-preserving + 36 grading-breaking",
         counts
         == {
             "frame": 3,
@@ -163,6 +165,16 @@ def main() -> int:
             "nonexistent": 36,
         },
         detail=str(counts),
+    )
+    note_text = Path("docs/ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md").read_text(
+        encoding="utf-8"
+    )
+    note_flat = " ".join(note_text.split())
+    check(
+        "source note scopes R-A to the order-48 coordinate-permutation/bit-flip universe",
+        "coordinate-permutation/bit-flip cube automorphism group" in note_flat
+        and "`x_i -> x_{pi(i)} xor f_i`" in note_flat
+        and "not the larger affine group `AGL(3,2)`" in note_flat,
     )
     check(
         "every grading-preserving relabeling is frame, orientation, or complementation-composed",

@@ -1,10 +1,8 @@
 # PR Backlog
 
-PR status: pending creation.
+PR status: opened.
 
-Recovery command if needed:
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4287
 
-```bash
-git push -u origin codex/record-additivity-self-contained-20260617
-gh pr create --base main --head codex/record-additivity-self-contained-20260617 --title "[physics-loop] record additivity self-contained exact-support" --body-file /tmp/record-additivity-self-contained-pr-body.md
-```
+No backlog action remains for this block unless GitHub metadata needs
+recovery.

@@ -12,3 +12,5 @@ probability, IID typicality, rates, and dial selection are not derived.
 Reviewer should inspect whether this is enough to re-open/re-audit the
 conditional row. This branch is not an audit verdict, ledger mutation, or
 status landing.
+
+Ready PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4287

@@ -1,0 +1,21 @@
+loop_slug: single-axiom-hilbert-runner-drift-20260617
+branch: codex/single-axiom-hilbert-runner-drift-20260617
+base: origin/main
+target_claim_id: single_axiom_hilbert_note
+target_note: docs/SINGLE_AXIOM_HILBERT_NOTE.md
+target_runner: scripts/frontier_single_axiom_hilbert.py
+audit_backlog_status_observed: audited_renaming
+cycle_count: 1
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: source_runner_drift_repair
+hard_residual: "The row remains definitional compression over admitted inputs; no retained derivation of local H, Born readout, or support-as-edges is claimed."
+files_touched:
+  - docs/SINGLE_AXIOM_HILBERT_NOTE.md
+  - scripts/frontier_single_axiom_hilbert.py
+  - logs/runner-cache/frontier_single_axiom_hilbert.txt
+review_loop_disposition: reviewer_owned_not_run
+audit_authority_changes: none
+next_exact_action: "Reviewer should run review-loop and decide whether this source/cache drift repair is sufficient for re-audit routing."
+stop_condition: "Coherent source-side repair PR opened."

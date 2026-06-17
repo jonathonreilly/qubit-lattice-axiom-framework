@@ -1,0 +1,21 @@
+loop: yt-flagship-boundary-contract-20260617
+goal: unlock the yt_flagship_boundary_note audit row without auditing or retagging
+target_status: exact-support
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/yt-flagship-boundary-contract-20260617
+cycle_count: 1
+active_route: source-side contract runner for a missing-runner audit blocker
+files_touched:
+  - docs/YT_FLAGSHIP_BOUNDARY_NOTE.md
+  - scripts/frontier_yt_flagship_boundary_contract.py
+  - logs/runner-cache/frontier_yt_flagship_boundary_contract.txt
+  - .claude/science/physics-loops/yt-flagship-boundary-contract-20260617/
+open_imports:
+  - standard lattice-to-continuum matching residual on the YT primary path
+  - standard SM RGE truncation and pole-mass conversion residuals
+  - no framework-internal continuum-limit theorem for the full YT UV-to-IR route
+trace_gate: direct_blocker_closure
+review_disposition: reviewer_owned_not_run
+audit_disposition: independent_audit_required
+next_exact_action: reviewer should run review-loop and decide whether this contract runner is enough to queue yt_flagship_boundary_note for audit
+stop_condition: coherent source-side PR opened

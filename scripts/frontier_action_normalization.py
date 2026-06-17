@@ -25,20 +25,25 @@ except ImportError:
 
 AUDIT_TIMEOUT_SEC = 120
 EXPECTED_PASS = 42
+EXPECTED_BREAKDOWN = {"A": 4, "B": 0, "C": 38, "D": 0}
 PASS = 0
 FAIL = 0
+CLASS_PASS = {"A": 0, "B": 0, "C": 0, "D": 0}
 
 
-def check(label: str, cond: bool, detail: str = "") -> bool:
+def check(label: str, cond: bool, detail: str = "", cls: str = "C") -> bool:
     """Record a machine-readable audit certificate check."""
     global PASS, FAIL
+    if cls not in CLASS_PASS:
+        raise ValueError(f"unknown audit class {cls!r}")
     status = "PASS" if cond else "FAIL"
     if cond:
         PASS += 1
+        CLASS_PASS[cls] += 1
     else:
         FAIL += 1
     suffix = f"  ({detail})" if detail else ""
-    print(f"  [{status}] {label}{suffix}")
+    print(f"  [{status}] [{cls}] {label}{suffix}")
     return cond
 
 
@@ -624,6 +629,7 @@ def main():
             f"T3 gamma=1 after Phi=c*f/2 for c={c_probe:g}",
             abs(gamma_eff - 1.0) < 1e-12,
             detail=f"gamma={gamma_eff:.6f}",
+            cls="A",
         )
     print()
 
@@ -841,9 +847,21 @@ def main():
 
     dt = time.time() - t_start
     print(f"Total runtime: {dt:.1f}s")
+    print(
+        "runner_check_breakdown = "
+        f"{{A: {CLASS_PASS['A']}, B: {CLASS_PASS['B']}, C: {CLASS_PASS['C']}, "
+        f"D: {CLASS_PASS['D']}, total_pass: {PASS}}}"
+    )
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if PASS != EXPECTED_PASS:
         print(f"ERROR: expected {EXPECTED_PASS} certificate PASS checks, got {PASS}.")
+        raise SystemExit(1)
+    actual_breakdown = {key: CLASS_PASS[key] for key in EXPECTED_BREAKDOWN}
+    if actual_breakdown != EXPECTED_BREAKDOWN:
+        print(
+            f"ERROR: expected runner_check_breakdown {EXPECTED_BREAKDOWN}, "
+            f"got {actual_breakdown}."
+        )
         raise SystemExit(1)
     if FAIL > 0:
         raise SystemExit(1)

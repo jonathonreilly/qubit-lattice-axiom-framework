@@ -1,0 +1,24 @@
+loop: record-formation-classified-runner-20260617
+branch: physics-loop/record-formation-classified-runner-20260617
+base: origin/main
+target_claim_id: record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: runner_artifact_visibility_for_narrowed_source
+open_imports:
+  - quantum-Darwinism record-as-redundant-imprint bridge remains a bounded model input
+  - arbitrary QND Hamiltonian implies record formation remains rejected
+  - physical OS transfer record-writing channel remains unproved
+files_touched:
+  - docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md
+  - scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
+  - logs/runner-cache/frontier_record_formation_dynamics_constraint_2026_06_05.txt
+verification:
+  - python3 scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
+  - python3 -m py_compile scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
+next_exact_action: open review PR
+stop_condition: PR opened for reviewer extraction; no audit or main landing by this agent

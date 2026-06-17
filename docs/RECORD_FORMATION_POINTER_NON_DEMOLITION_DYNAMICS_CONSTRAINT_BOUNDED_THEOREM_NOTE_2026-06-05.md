@@ -203,5 +203,6 @@ python3 scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
 Expected result:
 
 ```text
+runner_check_breakdown = {A: 0, B: 6, C: 40, D: 0, total_pass: 46}
 SUMMARY: PASS=46 FAIL=0
 ```

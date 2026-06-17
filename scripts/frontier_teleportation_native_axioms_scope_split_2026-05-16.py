@@ -34,6 +34,8 @@ from enum import Enum
 from pathlib import Path
 from typing import Iterable
 
+from teleportation_boundary_checks_2026_06_13 import teleportation_boundary_check_results
+
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARENT_NOTE = REPO_ROOT / "docs" / "TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md"
@@ -401,6 +403,10 @@ def main() -> int:
     all_checks.extend(structural_checks())
     all_checks.extend(bookkeeping_identity_checks(CitedEvidence()))
     all_checks.extend(split_disjointness_checks())
+    all_checks.extend(
+        Check(name, Verdict.PASS if ok else Verdict.FAIL, detail)
+        for name, ok, detail in teleportation_boundary_check_results(REPO_ROOT)
+    )
 
     print_table(all_checks)
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_taste_readout_operator_model.py
-runner_sha256: 64b4db7e402e4ea7c4a556a611922d17fba370dd4a71e9a1750bc6dd9e68499d
+runner_sha256: 69fde07391e2a34bfc1ddf75af625383056c416000557819bfec78e6644a48eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 TELEPORTATION TASTE READOUT/OPERATOR MODEL
@@ -147,6 +147,21 @@ Operational conditions for ignoring cells/spectators:
   In dim > 1, sublattice parity Z is xi_5 and contains spectator taste signs, so it is not a retained-bit-only logical Z. Use an axis logical Z for taste-only readout/correction.
   Bob pre-message input-independence is a separate no-signaling check. It does not imply Bob's marginal is I/2 and does not establish native readout operationality.
   Claim boundary: ordinary quantum state teleportation planning only; no matter, mass, charge, energy, object, or faster-than-light transport.
+
+Downstream boundary checks:
+  downstream teleportation boundary: teleportation_causal_channel_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_measurement_record_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_apparatus_dynamics_closure_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_dynamical_resource_generation_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_resource_fidelity_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_retained_axis_operator_algebra_closure_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_cross_encoding_maps_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_three_register_cross_encoding_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_no_signaling_audit has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_3d_operator_consistent_end_to_end_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_conclusion_boundary_note has audited bounded/status support: PASS (effective=audited_renaming, audit=audited_renaming)
+  downstream teleportation boundary: lane remains state-teleportation only with no-transfer boundary: PASS (checked conclusion boundary note)
+  downstream teleportation boundary: finite planning support is not nature-grade closure: PASS (planning closure and nature-grade hold are distinct)
 
 ----- stderr -----
 

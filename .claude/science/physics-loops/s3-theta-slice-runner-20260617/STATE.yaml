@@ -1,0 +1,24 @@
+loop_slug: s3-theta-slice-runner-20260617
+goal: "Add a primary runner for the critical S3 theta-to-slice open-gate row."
+target_status: exact-support
+branch: codex/s3-theta-slice-runner-20260617
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+mode: source_side_audit_unlock
+current_cycle: 1
+active_route: primary_runner_for_s3_theta_to_slice_coupling
+files_touched:
+  - docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+  - scripts/frontier_s3_time_theta_to_slice_coupling.py
+  - logs/runner-cache/frontier_s3_time_theta_to_slice_coupling.txt
+  - .claude/science/physics-loops/s3-theta-slice-runner-20260617/
+open_imports:
+  - "The upstream readout-map endpoint triple remains open; this branch does not derive it."
+claim_status:
+  actual_current_surface_status: exact-support
+  trace_class: direct_blocker_closure
+  reachability_to_target: supports
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+review_disposition: reviewer_owned_not_run
+next_exact_action: "Reviewer/auditor can use the new primary runner when auditing the S3 theta-to-slice row."
+stop_condition: "Coherent source-side audit-readiness PR opened."

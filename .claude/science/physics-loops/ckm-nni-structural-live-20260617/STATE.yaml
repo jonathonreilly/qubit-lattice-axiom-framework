@@ -1,0 +1,32 @@
+loop_slug: ckm-nni-structural-live-20260617
+goal: "Retire the historical/meta source edge for the Cabibbo work-history note by splitting the NNI structural identities into a live exact-support source."
+target_status: exact-support
+mode: source-side audit unlock
+branch: codex/ckm-nni-structural-live-20260617
+base: origin/main
+cycle_count: 1
+active_route: import-retirement structural split
+hard_residual: "The calibrated Cabibbo number still depends on imported quark masses, fitted NNI coefficients, and PDG comparators."
+files_touched:
+  - docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NOTE_2026-06-17.md
+  - docs/work_history/ckm/CABIBBO_BOUND_NOTE.md
+  - scripts/frontier_ckm_mass_basis_nni_structural_identities_2026_06_17.py
+  - logs/runner-cache/frontier_ckm_mass_basis_nni_structural_identities_2026_06_17.txt
+  - .claude/science/physics-loops/ckm-nni-structural-live-20260617/
+open_imports:
+  - quark masses in the calibrated Cabibbo runner
+  - fitted geometric NNI coefficients in the calibrated Cabibbo runner
+  - PDG CKM comparators in the calibrated Cabibbo runner
+trace_gate_classification: direct_blocker_closure
+review_loop_disposition: delegated_to_reviewer
+pr_status: pending
+verification:
+  structural_runner: "PASS=18 FAIL=0"
+  structural_cache: fresh
+  legacy_calibrated_cache: fresh
+  legacy_direct_run: "blocked locally before repo code by SciPy code-signing failure; unchanged runner cache was used as regression signal"
+  py_compile: pass
+  diff_check: pass
+  forbidden_status_paths: pass
+next_exact_action: "Commit, push, and open a ready PR."
+stop_condition: "Stop this block after a ready PR exists; continue the wider audit-unlock goal by selecting the next independent source-side opportunity."

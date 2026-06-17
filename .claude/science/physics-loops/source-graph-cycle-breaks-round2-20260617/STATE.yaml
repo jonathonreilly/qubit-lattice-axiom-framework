@@ -1,0 +1,16 @@
+loop_slug: source-graph-cycle-breaks-round2-20260617
+target: current source citation cycles in origin/main cycle_inventory
+branch: physics-loop/source-graph-cycle-breaks-round2-20260617
+base: origin/main@183e8d6b1
+mode: source_side_audit_unlock
+status: checkpoint_ready_for_pr
+actual_current_surface_status: methodology
+trace_class: methodology
+reachability_to_target: supports
+cycle_edges_demoted:
+  - cycle-0001: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE -> S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE
+  - cycles-0002-through-0006: QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE -> CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE
+audit_lane_owned_by: independent_audit
+review_loop_disposition: reviewer_owned_not_run
+next_exact_action: commit, push, open ready PR
+

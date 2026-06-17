@@ -46,10 +46,11 @@ the explicit class-A definition framing.
   close the `delta_A1`-decoupling, aligned-bright coordinate, or
   physical-primitive-bridge gaps (those remain open and explicitly
   named below).
-- [`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md)
+- `S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md`
   (`claim_type: bounded_theorem`, `intrinsic_status: unaudited`) — the
   related Route-2 tensor-primitive surface this note identified as a
-  conceptual sibling. Cited as related, not as authority closure.
+  conceptual sibling. Cited as related, not as authority closure; backticked
+  to avoid a non-load-bearing citation edge into cycle-0001.
 - [`S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md`](S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md)
   (`claim_type: bounded_theorem`, `audit_status: audited_conditional`,
   `effective_status: audited_conditional`) — the Route-2 transfer-matrix
@@ -143,11 +144,13 @@ bilinear carrier under named inputs; it is **not** a positive theorem
 that `K_R` is a physical tensor primitive on the support block.
 
 Related current surfaces include
-[`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md),
+`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md`,
 [`S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md`](S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md),
 [`OH_SCHUR_BOUNDARY_ACTION_NOTE.md`](OH_SCHUR_BOUNDARY_ACTION_NOTE.md),
 and the action-side sibling `S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md`
-(backticked to maintain the length-2-cycle break above).
+(backticked to maintain the length-2-cycle break above). The spacetime tensor
+primitive is also backticked here because it is a sibling pointer, not a
+load-bearing source for this note.
 This note does not treat those surfaces as retained-grade closure for the
 three upstream dependencies above; see "Audit boundary".
 

@@ -2,6 +2,13 @@
 
 **Status:** RETRACTED 2026-04-30 — audit failed; this file is archived under `archive_unlanded/raw-prompt-transcripts-2026-04-30/`. This file is a raw prompt transcript artifact, NOT a derivation. Treat no content here as framework claims. See `## Retraction` section.
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 ## Retraction
 
 - Date archived: 2026-04-30
@@ -678,4 +685,3 @@ The user explicitly asked to "push results" as part of Task 3 — this has not y
 If you need specific details from before compaction (like exact code snippets, error messages, or content you generated), read the full transcript at: /Users/jonreilly/.claude/projects/-Users-jonreilly-Projects-Physics--claude-worktrees-charming-stonebraker-7078d0/ebae4639-23f6-4620-a97e-4d374e8beaa6.jsonl
 Continue the conversation from where it left off without asking the user any further questions. Resume directly — do not acknowledge the summary, do not recap what was happening, do not preface with "I'll continue" or similar. Pick up the last task as if the break never happened.
 ```
-

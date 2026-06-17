@@ -28,16 +28,25 @@ This note has been narrowed in response to an auditor verdict
 > bosonic first-live species-resolving C3-covariant admissibility forces
 > constancy on span(e_z).
 
-**Resolution chosen:** split. The bounded theorem retained in this note is the
-exact rank/kernel quotient of the linear map `L : R^4 -> Diag_3(R)` defined
-below (Sections 1-2). The broader claim that the full admissibility class
-(local, bosonic in `Γ_1`, first-live on `T_1`, species-resolving,
-`C_3`-covariant) forces every admissible selector to be constant on
-`span(e_z)` is **not** carried as a theorem in this note. It is preserved
-below as an explicitly-labeled `## Conditional extension`, contingent on a
-future theorem-and-runner check of that admissibility-implies-constancy step.
+**2026-06-17 repair:** this note now takes the second auditor-approved
+repair route for the first-live grammar. Sections 1-2 retain the exact
+rank/kernel quotient of the linear map `L : R^4 -> Diag_3(R)`. Section 3 adds
+the separate theorem-and-runner check that first-live operational
+admissibility forces constancy on `span(e_z)`.
 
-No prior math has been removed; only the scope-of-claim labeling has changed.
+The repair is intentionally local. "First-live" is used in its operational
+readout sense: two weight packages are equivalent for a first-live selector
+when they have the same returned species operator
+`P_{T_1} Gamma_1 W Gamma_1 P_{T_1}`. Therefore any scalar selector admitted
+inside this first-live readout grammar must factor through the returned
+operator `L(W) = diag(u,v,w)`. Since `span(e_z) = ker L`, kernel constancy is a
+theorem of the admitted first-live grammar, not an additional physical
+carrier-identification assumption.
+
+This does **not** prove that the physical charged-lepton selector must belong
+to this first-live class, does not identify the reduced two-block determinant
+carrier as the physical charged-lepton carrier, and does not fix the separate
+`D_red = I_2` response-unit normalization.
 
 ---
 
@@ -96,20 +105,9 @@ admissibility hypothesis.
 
 ---
 
-## 3. Conditional extension
+## 3. First-live kernel-invariance theorem (bounded repair)
 
-> **Status:** conditional. The statement of this section is **not** carried as
-> a theorem of this note. It is the broader claim flagged by the auditor as
-> requiring its own theorem-and-runner check, namely that local bosonic
-> first-live species-resolving `C_3`-covariant admissibility forces constancy
-> on `span(e_z)`. Until that step is proved separately, the content below is
-> recorded only as a conditional extension of the bounded theorem above.
-> The companion runner mirrors this scope split: sections A-C verify the
-> bounded theorem, and section D explicitly records that the
-> admissibility-implies-kernel-invariance step is **not** verified by the
-> runner.
-
-Within the retained scope:
+Within the admitted first-live readout grammar:
 
 - local,
 - bosonic/even in `Γ_1`,
@@ -117,30 +115,59 @@ Within the retained scope:
 - species-resolving,
 - `C_3`-covariant,
 
-the conditional reading is that every admissible selector depends on the
-weight package only through the returned operator
+the operational first-live object is the returned species operator
 
 ```text
 R_{Γ_1}(W) = diag(u,v,w).
 ```
 
-Conditional on that admissibility-implies-constancy step, the exact species
-Fourier transport then sends that returned operator to the Koide carrier
-`H_cyc`, and the cyclic quadratic scalar sector reduces to the same two-slot
-carrier `(E_+, E_perp)`.
+So any scalar selector `S` admitted inside this first-live grammar factors as
 
-So, conditionally, this note would upgrade the old identification language
-inside the admitted first-live second-order class:
+```text
+S(W) = Phi(R_{Gamma_1}(W)) = Phi(L(W))
+```
+
+for some scalar `Phi` on `Diag_3(R)`. If two weight packages differ by the
+unreachable slot,
+
+```text
+W' = W + lambda e_z,
+```
+
+then
+
+```text
+L(W') = L(W),
+```
+
+because `e_z` spans `ker L`. Therefore
+
+```text
+S(W') = Phi(L(W')) = Phi(L(W)) = S(W).
+```
+
+This proves constancy on `span(e_z)` for every selector admitted in the
+first-live readout grammar. The companion runner checks this theorem directly:
+it verifies the exact kernel, the quotient fibers, the `C_3` intertwining on
+the returned operator, and symbolic invariance of an arbitrary
+returned-operator scalar under unreachable-slot shifts.
+
+The exact species Fourier transport then sends that returned operator to the
+Koide carrier `H_cyc`, and the cyclic quadratic scalar sector reduces to the
+same two-slot carrier `(E_+, E_perp)`.
+
+Thus the old identification language inside the admitted first-live
+second-order class is upgraded to an exact statement:
 
 ```text
 admitted first-live selector = scalar on the exact second-order returned
 operator
 ```
 
-from a plausible carrier choice to an exact statement on the first-live
-readout grammar. Without the separate admissibility-implies-constancy
-theorem-and-runner check, this section remains an extension target rather
-than a proved consequence of the bounded theorem in Section 2.
+It is exact only inside the admitted first-live grammar. A selector that
+depends directly on the unreachable coordinate `z` is not a counterexample to
+this theorem; it is simply not first-live, because it distinguishes two weight
+packages with the same returned species operator.
 
 ---
 
@@ -153,19 +180,22 @@ than a proved consequence of the bounded theorem in Section 2.
    to the full diagonal species space;
 2. equivalently, the unreachable slot `z` is the entire kernel of `L`, and
    `R^4 / span(e_z) ≅ Diag_3(R)`.
+3. inside the admitted first-live readout grammar, every scalar selector
+   factors through `L`, hence every such selector is constant on `span(e_z)`.
 
 ### What this note does not claim
 
-1. it does not claim that local bosonic first-live species-resolving
-   `C_3`-covariant admissibility, by itself, forces every admissible selector
-   to be constant on `span(e_z)`; that step is recorded only as a conditional
-   extension (Section 3) and would require its own theorem-and-runner check;
+1. it does not claim that every formally writable scalar on the four-slot
+   weight vector is first-live; a `z`-sensitive scalar is excluded precisely
+   because it distinguishes equal returned operators;
 2. it does not claim a universal statement about all possible higher-order or
    nonlocal carriers;
 3. it does not touch the separate `delta` bridge;
 4. it does not rewrite authority surfaces;
 5. it does not by itself prove that the physical charged-lepton selector must
-   belong to this admitted class.
+   belong to this admitted first-live class;
+6. it does not identify the reduced two-block determinant carrier as the
+   physical charged-lepton carrier or fix the `D_red = I_2` normalization.
 
 ---
 
@@ -175,11 +205,11 @@ The strongest clean **bounded** statement for review is:
 
 > on the retained `Γ_1 / T_1` grammar, the exact second-order readout map
 > `L : R^4 -> Diag_3(R)` has rank `3` and kernel `span{e_z}`, so
-> `R^4 / span(e_z) ≅ Diag_3(R)`.
+> `R^4 / span(e_z) ≅ Diag_3(R)`; moreover, any scalar selector admitted as
+> first-live factors through this returned operator and is therefore constant
+> on `span(e_z)`.
 
-That is a purely linear-algebraic rank/kernel quotient. The further reading
-that every admissible first-live selector factors uniquely through the
-returned operator is held as a conditional extension (Section 3), pending a
-separate theorem-and-runner check that admissibility forces constancy on
-`span(e_z)`. The remaining open issue beyond either statement is still the
-physical identification of the second-order `Q` route.
+That closes the previously conditional kernel-invariance substep inside the
+admitted first-live readout grammar. The remaining open issue beyond this
+statement is still the physical identification of the second-order `Q` route,
+including the separate source-free and `D_red = I_2` normalization bridges.

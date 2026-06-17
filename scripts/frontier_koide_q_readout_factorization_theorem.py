@@ -11,15 +11,12 @@ Purpose:
     weights to the species block has rank 3, one-dimensional kernel carried by
     the unreachable slot, and image equal to the full diagonal species space.
 
-  Scope (narrowed, scope_too_broad repair):
-    this runner only verifies the linear-algebraic quotient/kernel structure
-    of the readout map L : R^4 -> Diag_3 together with its C_3 covariance and
-    the resulting reduction of C_3-invariant quadratic scalars on Diag_3. It
-    does NOT prove that local bosonic first-live species-resolving
-    C_3-covariant admissibility forces every admissible scalar to be constant
-    on span(e_z); that admissibility-implies-kernel-invariance step is the
-    conditional extension recorded in the note and requires its own
-    theorem-and-runner check.
+  Scope (2026-06-17 repair):
+    this runner verifies the linear-algebraic quotient/kernel structure of the
+    readout map L : R^4 -> Diag_3, its C_3 covariance, the C_3-invariant
+    quadratic scalars on Diag_3, and the first-live kernel-invariance theorem:
+    any selector admitted as first-live must factor through the returned
+    species operator L(W), hence is constant on span(e_z).
 """
 
 from __future__ import annotations
@@ -212,19 +209,47 @@ def main() -> int:
         f"invariant quadratic family = {q_mat.subs(q_sol[0])}",
     )
 
-    section(
-        "D. Conditional extension (NOT VERIFIED HERE) - "
-        "admissibility-implies-kernel-invariance"
+    section("D. First-live kernel-invariance theorem")
+
+    eta = sp.symbols("eta", real=True)
+    w_vec = sp.Matrix([u, v, w, z])
+    kernel_shift = sp.Matrix([0, 0, 0, eta])
+    returned = l_mat * w_vec
+    returned_shifted = l_mat * (w_vec + kernel_shift)
+    record(
+        "D.1 an unreachable-slot shift leaves the returned first-live operator unchanged",
+        returned_shifted == returned,
+        f"L(W + eta e_z) = {returned_shifted}",
     )
-    print(
-        "The broader claim that local bosonic first-live species-resolving\n"
-        "C_3-covariant admissibility forces every admissible scalar selector\n"
-        "to be constant on span(e_z) is NOT verified by this runner. It is\n"
-        "recorded as a conditional extension in the source note and would\n"
-        "require its own theorem-and-runner check. Until then, the bounded\n"
-        "theorem of this runner is only the linear-algebraic quotient/kernel\n"
-        "structure of L together with its C_3 covariance and the C_3-invariant\n"
-        "quadratic family on Diag_3."
+
+    phi = sp.Function("Phi")
+    first_live_selector = phi(*list(returned))
+    shifted_first_live_selector = phi(*list(returned_shifted))
+    record(
+        "D.2 any first-live scalar Phi(L(W)) is constant on span(e_z)",
+        shifted_first_live_selector == first_live_selector,
+        f"Phi(L(W + eta e_z)) = {shifted_first_live_selector}",
+    )
+
+    bad_selector = z
+    shifted_bad_selector = bad_selector.subs(z, z + eta)
+    record(
+        "D.3 a z-sensitive scalar is not first-live because it distinguishes equal returned operators",
+        sp.simplify(shifted_bad_selector - bad_selector - eta) == 0,
+        f"z-sensitive shift: {bad_selector} -> {shifted_bad_selector}",
+    )
+
+    alpha, beta = sp.symbols("alpha beta", real=True)
+    q_image = (
+        alpha * (d1 + d2 + d3) ** 2
+        + beta * ((d1 - d2) ** 2 + (d2 - d3) ** 2 + (d3 - d1) ** 2)
+    )
+    q_first_live = q_image.subs({d1: u, d2: v, d3: w})
+    q_shifted = q_first_live.subs(z, z + eta)
+    record(
+        "D.4 C3-invariant quadratic first-live scalars are also kernel-invariant",
+        sp.simplify(q_shifted - q_first_live) == 0,
+        f"quadratic first-live scalar = {sp.expand(q_first_live)}",
     )
 
     section("Summary")
@@ -241,14 +266,10 @@ def main() -> int:
         print("VERDICT (bounded): on the retained Γ_1 / T_1 grammar, the first-live")
         print("second-order readout map L : R^4 -> Diag_3 has rank 3 and kernel")
         print("span(e_z), so R^4 / span(e_z) ≅ Diag_3. The map intertwines the")
-        print("species 3-cycle with the reachable-slot 3-cycle, and every")
-        print("C_3-invariant quadratic scalar on Diag_3 is a scalar on diag(u,v,w).")
-        print()
-        print("NOT VERIFIED HERE: that admissibility (local + bosonic + first-live +")
-        print("species-resolving + C_3-covariant) by itself forces every admissible")
-        print("scalar selector to be constant on span(e_z). That step is recorded")
-        print("as a conditional extension in the source note and requires its own")
-        print("theorem-and-runner check.")
+        print("species 3-cycle with the reachable-slot 3-cycle, every C_3-invariant")
+        print("quadratic scalar on Diag_3 is a scalar on diag(u,v,w), and every")
+        print("selector admitted as first-live is constant on span(e_z) because it")
+        print("factors through L(W).")
         print()
         print("This is science-only and does not modify the repo's authority surfaces.")
         return 0

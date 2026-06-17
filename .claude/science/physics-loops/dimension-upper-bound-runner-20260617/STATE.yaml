@@ -1,0 +1,20 @@
+loop: dimension-upper-bound-runner-20260617
+goal: unlock dimension_selection_upper_bound_textbook_import_note_2026-05-17 without auditing or retagging
+target_status: bounded-support
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/dimension-upper-bound-runner-20260617
+cycle_count: 1
+active_route: canonicalize primary-runner metadata for textbook-import scope certificate
+files_touched:
+  - docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
+  - logs/runner-cache/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.txt
+  - .claude/science/physics-loops/dimension-upper-bound-runner-20260617/
+open_imports:
+  - full Bertrand all-bounded-orbits theorem remains context only
+  - full atomic-stability/hydrogenic spectral theorem remains out of scope
+  - dimension-selection lane remains a self-consistency check, not a framework derivation from Cl(3) x Z3
+trace_gate: direct_blocker_closure
+review_disposition: reviewer_owned_not_run
+audit_disposition: independent_audit_required
+next_exact_action: reviewer should run review-loop and decide whether the canonical runner metadata queues the dimension upper-bound wrapper for audit
+stop_condition: coherent source-side PR opened

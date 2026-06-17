@@ -1,0 +1,18 @@
+loop_slug: shapiro-phase-lag-cache-sync-20260617
+branch: physics-loop/shapiro-phase-lag-cache-sync-20260617
+base_ref: origin/main
+base_commit: 0b29f3748217fd6ca0b8ca0521e35b8ef314729f
+mode: audit-unlock-cache-sync
+target_claim_ids:
+  - shapiro_delay_note
+  - shapiro_qa_retest_note
+target_status: unchanged
+active_route: runner_cache_sha_sync
+cycle_count: 1
+files_touched:
+  - logs/runner-cache/shapiro_phase_lag_probe.txt
+  - .claude/science/physics-loops/shapiro-phase-lag-cache-sync-20260617/
+trace_gate_classification: direct_blocker_closure
+review_findings: review-loop delegated to later Codex reviewer per user workflow
+pr_status: pending
+next_exact_action: push branch and open review PR

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/shapiro_phase_lag_probe.py
-runner_sha256: 71ca1969a1988c73be5588a373cca951daceb0c49e1c0bc342b70d111bff9edb
+runner_sha256: 5a86e298a954b35e9486fe03ded26125ffeb3778f2a19d0a4e62e67b2c69ee6f
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -18,7 +18,7 @@ status: ok
 - [`docs/SHAPIRO_COMPLEX_INTERACTION_NOTE.md`](../docs/SHAPIRO_COMPLEX_INTERACTION_NOTE.md)
 - [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](../docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
 - [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](../docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
-- [`docs/CAUSAL_PROPAGATING_FIELD_NOTE.md`](../docs/CAUSAL_PROPAGATING_FIELD_NOTE.md)
+- [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
 - [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
 
 ## Question

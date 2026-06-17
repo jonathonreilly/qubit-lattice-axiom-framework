@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/cubic_anisotropy_sections_so3_frame_2026_06_17.py
+runner_sha256: 2b24568861d6c1924555961938512d3a7ca8b4bad65ff1ffe068f7576e010e5b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+[REP] PASS: |O| cubic rotation group = 24  (24)
+[REP] PASS: O_h-invariant quadratic weights on spin-2 are 2-DIM (Frobenius + cubic harmonic)  (dim=2)
+[REP] PASS: SO(3)-invariant weights are 1-DIM (Frobenius only)  (dim=1)
+[REP] PASS: the SO(3)-invariant weight is the Frobenius identity (proportional to I_5)
+[REP] PASS: CONTRAST: O_h-invariant weights on the spin-1 vector block are 1-DIM = SO(3) (T1 irreducible, Schur-forced isotropic) -> cubic background does NOT section vector modes; the spin-2 sectioning is mode-SPECIFIC, not a tautology  (O=1, SO(3)=1)
+[REP] PASS: a 2nd O_h-invariant weight exists that is NOT proportional to identity (G_aniso)
+[SPLIT] PASS: G_aniso has exactly two distinct eigenvalues (the E vs T2 weight split)  (eigs={np.float64(-0.365148): 3, np.float64(0.547723): 2})
+[SPLIT] PASS: with multiplicities {2, 3} = (E=2) + (T2=3)  (mults=[2, 3])
+[SPLIT] PASS: G_aniso is traceless (orthogonal to Frobenius identity) -> genuinely anisotropic  (tr=1.11e-16)
+[FLAT] PASS: ISOTROPIC (Frobenius) complement energy is SO(3)-orbit-FLAT (reproduces retained thm)  (max orbit-var=2.66e-15)
+[FLAT] PASS: O_h-ANISOTROPIC (Frobenius+cubic) complement energy is NOT orbit-flat -> SECTIONS the gauge  (max orbit-var=0.8201 (>0))
+[FLAT] PASS: the anisotropic weight W is itself EXACTLY O_h-invariant (breaking is within the O_h class)
+[LATTICE] PASS: the cubic axis 4-tensor C_ijkl (=lattice l=4 anisotropy) gives a graviton weight whose anisotropic part IS the orbit-flat-breaking direction G_aniso  (||Gcub_dev - 1.0954 G_aniso||=1.84e-16)
+[LATTICE] PASS: the l=4 cubic harmonic is NONZERO on the active lattice shells (the c_aniso witness)  (H4={'(3,3,0)': -32.4, '(4,1,0)': 83.6, '(3,2,2)': -60.4, '(4,1,1)': 63.6})
+[LATTICE] PASS: lattice dispersion w(k)=6-2 sum cos(k_i) has its leading anisotropy in the same l=4 cubic-harmonic channel (quartic term proportional to sum k_i^4)  (Taylor: w = |k|^2 - (1/12) sum k_i^4 + O(k^6); sum k_i^4 = (3/5)|k|^4 + H4(k))
+
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

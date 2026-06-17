@@ -24,12 +24,31 @@ The transport itself remains local and unitary: coin then nearest-neighbor shift
 from __future__ import annotations
 
 import math
+from pathlib import Path
+import sys
 import time
 
 try:
     import numpy as np
 except ModuleNotFoundError as exc:
     raise SystemExit("numpy is required.") from exc
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md"
+
+SOURCE_BOUNDARY_REQUIRED_PHRASES = [
+    "Downstream source-boundary firewall",
+    "exploratory fixed-theta `g`-linearity diagnostic",
+    "theta sensitivity and k-achromatic closure remain open",
+    "framework-level mass-gravity theorem",
+    "equivalence-principle closure",
+    "`theta_m` flattening closure",
+    "k-achromatic closure",
+    "overload-bottleneck closure",
+    "physical gravitation value",
+    "do not use it to promote any audited row",
+]
 
 
 # ----------------------------------------------------------------------
@@ -306,6 +325,31 @@ def sweep_g(theta_m, strength, k0, g_values):
     return deflections, slope, intercept, r2
 
 
+def validate_source_boundary():
+    print("=" * 72)
+    print("6) SOURCE-BOUNDARY FIREWALL")
+    print("=" * 72)
+    if not NOTE_PATH.exists():
+        print(f"SOURCE-BOUNDARY: FAIL missing note {NOTE_PATH}")
+        return False
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    normalized_text = " ".join(text.split())
+    missing = [
+        phrase
+        for phrase in SOURCE_BOUNDARY_REQUIRED_PHRASES
+        if " ".join(phrase.split()) not in normalized_text
+    ]
+    if missing:
+        print("SOURCE-BOUNDARY: FAIL")
+        for phrase in missing:
+            print(f"  missing: {phrase}")
+        return False
+    print("SOURCE-BOUNDARY: PASS all required downstream-use guards present")
+    print("  Allowed: fixed-theta g-linearity toy diagnostic.")
+    print("  Forbidden: framework mass-gravity/EP/theta-flattening/k-achromatic closure.")
+    return True
+
+
 # ----------------------------------------------------------------------
 # Main experiment
 # ----------------------------------------------------------------------
@@ -422,6 +466,9 @@ def main():
     print(f"Split theta envelope exponent    = {alpha_theta_split:.3f} (R^2={r2_theta_split:.4f})")
     print(f"Baseline theta envelope CV       = {cv_theta_base:.4f}")
     print(f"Split theta envelope CV          = {cv_theta_split:.4f}")
+    print()
+
+    boundary_ok = validate_source_boundary()
 
     # Global verdict.
     print()
@@ -443,9 +490,12 @@ def main():
     print(f"Theta sensitivity reduced in split: {theta_reduction}")
     print(f"g control is linear-ish: {g_linear}")
     print(f"k-achromatic closure OK: {False}")
+    print(f"Source-boundary firewall OK: {boundary_ok}")
     print(f"*** {verdict} ***")
     print()
     print(f"Total runtime: {time.time() - t0:.1f}s")
+    if not boundary_ok:
+        sys.exit(1)
 
 
 if __name__ == "__main__":

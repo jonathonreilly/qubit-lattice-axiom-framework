@@ -1,0 +1,44 @@
+loop_slug: p2-native-sign-cell-runner-20260617
+branch: codex/p2-native-sign-cell-runner-20260617
+base: origin/main
+created_utc: 2026-06-17
+mode: source_side_audit_unlock
+target_claim_id: p2_wick_rotation_sign_epsilon_closure_narrow_theorem_note_2026-05-27
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: exact-runner-and-import-retirement
+hard_residual: >
+  The P2 sign-epsilon note should consume the current finite C-Sc/R-STONE
+  transfer bridge and directly check the two finite Clifford sign cells,
+  rather than carrying separate OS reconstruction or Cartan-Bott/Lawson
+  imports as load-bearing proof inputs.
+files_touched:
+  - docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md
+  - scripts/p2_wick_rotation_sign_epsilon_closure_runner_2026_05_27.py
+  - logs/runner-cache/p2_wick_rotation_sign_epsilon_closure_runner_2026_05_27.txt
+  - .claude/science/physics-loops/p2-native-sign-cell-runner-20260617/
+imports_retired:
+  - separate OS reconstruction textbook import for this finite transfer-to-unitary step
+  - Cartan-Bott/Lawson table import for the two n=4 sign cells
+open_imports:
+  - C-Sc transfer and single-axis premises at their independent audited scope
+  - C-RP positive Hermitian transfer matrix supply at its independent audited scope
+  - C-Aft chirality/ABJ/single-clock parent boundaries
+  - C-Ext binary sign-epsilon reduction at its independent audited scope
+review_findings: reviewer_owned_not_run
+pr_status: pending_push_and_create
+next_exact_action: >
+  Run branch-local checks, commit, push, and open a ready PR for reviewer
+  extraction. Do not rebase existing PRs, do not edit audit results, and do
+  not update repo-wide status surfaces.
+stop_condition: >
+  This block stops after its PR is opened and verified. The broader audit
+  unlock goal continues by selecting the next source-side blocker/import
+  retirement target.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

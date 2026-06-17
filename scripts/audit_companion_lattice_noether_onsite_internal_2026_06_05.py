@@ -527,6 +527,7 @@ def main() -> int:
         / "docs"
         / "AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md"
     ).read_text()
+    note_flat = " ".join(note.split())
     required_terms = [
         "2026-06-07 authority split",
         "AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06",
@@ -534,19 +535,22 @@ def main() -> int:
         "downstream realization-gate bridge",
         "physical realization/readout identification of this exhibit is",
         "downstream and is not consumed here",
+        "No load-bearing broad-gate dependency is recorded here",
+        "prior staggered-realization parent link has been removed",
     ]
     banned_terms = [
         "derives the admitted staggered",
         "derives the Kawamoto-Smit",
         "framework-native staggered carrier",
         "physical realization/readout identification of this exhibit is consumed",
+        "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)",
     ]
-    boundary_ok = all(term in note for term in required_terms) and not any(
-        term in note for term in banned_terms
+    boundary_ok = all(term in note_flat for term in required_terms) and not any(
+        term in note_flat for term in banned_terms
     )
     print(
         f"BOUNDARY GUARD: {'PASS' if boundary_ok else 'FAIL'} "
-        "retained abstract authority is cited; finite exhibit is not promoted"
+        "retained abstract authority is cited; finite exhibit is not promoted and no gate edge is present"
     )
     if not boundary_ok:
         return 1

@@ -1,0 +1,20 @@
+loop: lattice-inverse-square-helper-fidelity-20260617
+target_claim_id: lattice_3d_inverse_square_kernel_helper_note_2026-04-04
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: supports
+active_route: implementation_fidelity_packet
+hard_residual: "This does not derive an inverse-square kernel or tail law."
+files_touched:
+  - docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md
+  - scripts/lattice_3d_inverse_square_kernel_helper_fidelity_2026_06_17.py
+  - logs/runner-cache/lattice_3d_inverse_square_kernel_helper_fidelity_2026_06_17.txt
+open_imports:
+  - "Framework derivation of inverse-square kernel remains out of scope."
+  - "Downstream tail-statistics theorem remains out of scope."
+review_loop_disposition: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Commit, push, and open a ready PR for reviewer extraction."
+stop_condition: "PR opened or git/GitHub tooling failure."
+

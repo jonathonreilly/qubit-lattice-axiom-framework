@@ -1,0 +1,20 @@
+loop: koide-cone-support-boundary-20260617
+date: 2026-06-17
+branch: codex/koide-cone-support-boundary-20260617
+base: origin/main
+target_claim_id: charged_lepton_koide_cone_algebraic_equivalence_note
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+cycle_count: 1
+files_touched:
+  - docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md
+  - scripts/frontier_charged_lepton_observable_curvature.py
+  - logs/runner-cache/frontier_charged_lepton_observable_curvature.txt
+  - .claude/science/physics-loops/koide-cone-support-boundary-20260617/*
+review_loop_disposition: reviewer_owned_not_run
+audit_loop_run: false
+audit_or_ledger_edits: false
+next_exact_action: reviewer extracts or rejects the source-side support-boundary repair
+stop_condition: coherent source repair PR prepared

@@ -1,0 +1,22 @@
+loop_slug: statistics-product-instance-bridge-20260617
+goal: "Unlock the statistics product-form/outcome-factorization audit blocker with source-side science only."
+target_status: exact-support
+runtime_mode: goal_continuation
+cycle_count: 1
+active_route: "finite M_2(C) product-instance criterion plus quotient-cumulant criterion"
+hard_residual: "Physical repeated-registration independence / record-stack stationarity is still not derived."
+files_touched:
+  - docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_NOTE_2026-06-17.md
+  - scripts/frontier_statistics_product_instance_criterion_bridge_2026_06_17.py
+  - docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md
+  - scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py
+  - logs/runner-cache/frontier_statistics_product_instance_criterion_bridge_2026_06_17.txt
+  - logs/runner-cache/frontier_statistics_atom_reduces_to_product_form_2026_06_12.txt
+open_imports:
+  - "The physical law making repeated registrations satisfy the product-instance or quotient-factorization criterion."
+  - "Record-stack stationarity/independence theorem for this quotient."
+trace_gate_classification: direct_blocker_closure
+review_findings: "local self-check pass; formal review-loop delegated to Codex reviewer per user instruction"
+pr_status: pending
+next_exact_action: "Run cache refresh/checks, commit, push, and open a ready source-side PR."
+stop_condition: "Stop after PR creation and report; do not audit, retag, land, or refresh unrelated PRs."

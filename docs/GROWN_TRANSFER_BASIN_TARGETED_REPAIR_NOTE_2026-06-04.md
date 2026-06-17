@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-04
 **Status:** bounded-support repair packet; independent audit required before any effective status change
-**Primary runner:** [`scripts/GROWN_TRANSFER_BASIN_TARGETED.py`](../scripts/GROWN_TRANSFER_BASIN_TARGETED.py)
+**Primary runner:** [`scripts/grown_transfer_basin_live_packet.py`](../scripts/grown_transfer_basin_live_packet.py)
 
 ## Scope
 
@@ -11,9 +11,11 @@ This note repairs the executable support surface for the legacy
 the audit ledger, or assert an audit-ratified status. It supplies a current,
 SHA-pinned runner packet for re-audit.
 
-The primary runner imports the sweep runner that computes the row predicates,
-so audit packet construction can expose the full executable chain without
-making the broader sweep the audited claim.
+The primary runner imports both slow replay runners, checks their fresh
+cache-backed stdout, and keeps the audited scope at the finite row packet. This
+lets audit packet construction expose the full executable chain without making
+the broader sweep the audited claim or requiring the default queue runner to
+repeat the slow propagation replay.
 
 The grown-geometry helper is the same finite packet registered in
 [`GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](GATE_B_GROWN_JOINT_PACKAGE_NOTE.md);
@@ -68,17 +70,21 @@ The current runners now share the same predicate functions:
 ## Current Runner Packet
 
 - [`scripts/grown_transfer_basin_live_packet.py`](../scripts/grown_transfer_basin_live_packet.py)
-  is the cache-backed live packet verifier (`PASS=5 FAIL=0`). It checks the current note
-  wording and the fresh cached stdout for the two slow replay runners below,
-  while explicitly keeping the scope at finite-row support rather than a
-  graph-ladder theorem.
+  is the declared primary runner and cache-backed live packet verifier
+  (`PASS=5 FAIL=0`). It checks the current note wording and the fresh cached
+  stdout for the two slow replay runners below, while explicitly keeping the
+  scope at finite-row support rather than a graph-ladder theorem.
 - [`scripts/GROWN_TRANSFER_BASIN_SWEEP.py`](../scripts/GROWN_TRANSFER_BASIN_SWEEP.py)
 - [`scripts/GROWN_TRANSFER_BASIN_TARGETED.py`](../scripts/GROWN_TRANSFER_BASIN_TARGETED.py)
+- [`logs/runner-cache/grown_transfer_basin_live_packet.txt`](../logs/runner-cache/grown_transfer_basin_live_packet.txt)
 - [`logs/runner-cache/GROWN_TRANSFER_BASIN_SWEEP.txt`](../logs/runner-cache/GROWN_TRANSFER_BASIN_SWEEP.txt)
 - [`logs/runner-cache/GROWN_TRANSFER_BASIN_TARGETED.txt`](../logs/runner-cache/GROWN_TRANSFER_BASIN_TARGETED.txt)
 
-Both runners declare long audit timeouts because the 3-seed propagation replay
-is slow enough to timeout under the legacy 120-second default.
+The two replay runners declare long audit timeouts because the 3-seed
+propagation replay is slow enough to timeout under the legacy 120-second
+default. The live packet is intentionally the declared primary runner because
+it verifies the replay caches and imports the replay sources for packet
+construction.
 
 Both runner caches were regenerated after the `PW` reconciliation and
 away-sign predicate repair.

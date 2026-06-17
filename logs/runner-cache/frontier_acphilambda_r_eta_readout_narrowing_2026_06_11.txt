@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py
-runner_sha256: 5002c1d7c9ff280387cef0f7e45f56c149b68e07a73eb0b5e9b5b7e5c7d2d313
+runner_sha256: e355cbf6a80f2b34aa1fe8b03adbcaebada4d954fde630fa1f1088c3bc7e9260
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 
@@ -71,7 +71,7 @@ S7 - circularity guard: the cos3delta channel does NOT assume R-eta
 ========================================================================================
 [PASS] e3 derivation is symbolic in {a, B, delta} with NO density object, NO 2/9, NO L3 anywhere in the computation  [free symbols = {B, a, delta}]
 [PASS] the channel result is an IDENTITY in delta (holds for ALL delta), so it cannot have assumed any particular value of |delta|
-[PASS] the circulant form itself is consumed from the carrier/K-orbit context, which is independent of (and prior to) R-eta  [hostile guard (a) answered: no circularity]
+[PASS] the supplied circulant form and retained-bounded K-orbit algebra are upstream of (and independent of) R-eta; the physical readout context remains outside this proof  [hostile guard (a) answered: no circularity]
 
 ========================================================================================
 S8 - conditional value: |delta| = 2/9 EXACT conditional on the named atom
@@ -91,9 +91,11 @@ S9 - boundary witnesses + r-firewall
 [PASS] BOUNDED: future non-det readout contexts that might supply another dimensionless conversion factor are NOT foreclosed (the k=0 forcing is the det-class surface only)
 [PASS] NOT addressed here: sub-admission (i) occupancy selection, sub-admission (iii) species bridge, the R1b anchor, the R2 global PL/ABSS bridge, the carrier gate realization
 [PASS] no Tier-A registry edit, no audit status set, no admission retired; this is a source-side narrowing of WHAT sub-admission (ii) admits
+[PASS] SOURCE REFRESH: K-orbit dependency is routed as retained_bounded, not as a stale audited_conditional dependency
+[PASS] SOURCE REFRESH: no status promotion or registry/ledger edit is claimed
 
 ========================================================================================
-TOTAL: PASS=49 FAIL=0
+TOTAL: PASS=51 FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta_gbare_squared_rescaling_invariance.py
-runner_sha256: 533c62a2a50a80500c98c6ea5be1cb679eddd1b1f5a5764c11de20635ea2644e
+runner_sha256: 205496b2bc6a4502083ce5838f1fcca84276d317d5282f395726362b2145d8e7
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -11,25 +11,27 @@ frontier_beta_gbare_squared_rescaling_invariance.py
 ----------------------------------------------------------------------------------------
 note structure and repaired scope
 ----------------------------------------------------------------------------------------
-  [PASS] contains marker: Claim type:** bounded support note
+  [PASS] contains marker: Claim type:** bounded_theorem
   [PASS] contains marker: Type:** conditional / support
   [PASS] contains marker: explicitly conditional arithmetic lemma
   [PASS] contains marker: WM:  β = 2 N_c / g_bare²
   [PASS] contains marker: not imported from any Ward-route coupling-closure note
   [PASS] contains marker: BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_202
+  [PASS] contains marker: WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY
   [PASS] contains marker: G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03
+  [PASS] contains marker: coupling-coordinate WM route
+  [PASS] contains marker: not the fixed-component Wilson-action compensation law
   [PASS] contains marker: conditional bounded arithmetic lemma
   [PASS] contains marker: fractions.Fraction
-  [PASS] forbidden old authority/framing absent: Claim type:** bounded_theorem
   [PASS] forbidden old authority/framing absent: Type:** bounded_theorem
   [PASS] forbidden old authority/framing absent: Proposal allowed:
   [PASS] forbidden old authority/framing absent: source-note proposal only
   [PASS] forbidden old authority/framing absent: G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18
   [PASS] forbidden old authority/framing absent: carried by G_BARE_TWO_WARD_CLOSURE
-  [PASS] forbidden old authority/framing absent: supplies the Wilson small-`a` matching relation
   [PASS] forbidden old authority/framing absent: canonical `g_bare² = 1` value carried
   [PASS] forbidden old authority/framing absent: is a retained conclusion of this row
   [PASS] forbidden old authority/framing absent: Wilson matching is proved here
+  [PASS] forbidden old authority/framing absent: This row claims `beta -> c^2 beta` as fixed-component 
   [PASS] forbidden framing absent: continuum-limit class
   [PASS] forbidden framing absent: Wilson asymptotic universality
   [PASS] forbidden framing absent: lattice-realization-invariant
@@ -39,15 +41,16 @@ note structure and repaired scope
 dependency files and scoped authority checks
 ----------------------------------------------------------------------------------------
   [PASS] dependency exists: docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] dependency exists: docs/WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17.md
   [PASS] dependency exists: docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
   [PASS] abstract identity states pure polynomial algebra
   [PASS] abstract identity has no load-bearing dependencies
   [PASS] abstract identity proves beta(g/c,N)=c^2 beta(g,N)
   [PASS] abstract identity proves product invariance
-  [PASS] rescaling note explicitly treats Wilson matching as an input
-  [PASS] rescaling note does not claim to derive Wilson matching
-  [PASS] rescaling note carries T_a -> c T_a map
-  [PASS] rescaling note carries beta -> c^2 beta under scoped WM
+  [PASS] boundary note separates fixed-component compensation
+  [PASS] boundary note separates pure basis relabeling
+  [PASS] boundary note separates coupling-coordinate c^2 law
+  [PASS] Gram-only note is not consumed as beta-routing authority
 
 ----------------------------------------------------------------------------------------
 explicit Wilson-matching premise firewall
@@ -182,11 +185,12 @@ boundary clauses present
   [PASS] boundary clause present: any retention or promotion
   [PASS] boundary clause present: Ward-route coupling-closure theorem carries the Wilson matchin
   [PASS] boundary clause present: imported abstract polynomial identity
-  [PASS] boundary clause present: scoped generator-basis rescaling theorem
+  [PASS] boundary clause present: `c^2` beta law is the fixed-component Wilson-action
+  [PASS] boundary clause present: Wilson-action generator-rescaling boundary theorem
   [PASS] boundary clause present: canonical Cl(3) connection normalization
   [PASS] boundary clause present: parent theorem/status promotion
 
-TOTAL: PASS=154 FAIL=0
+TOTAL: PASS=158 FAIL=0
 VERDICT: conditional bounded arithmetic lemma passes; assuming WM,
 beta * g_bare^2 = 2 N_c is invariant under the scoped joint rescaling
 for c in {1/2, 1, 2, 3} at exact rational precision.

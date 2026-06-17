@@ -54,6 +54,26 @@ separate action-selection authority. If independent audit retains the new
 matching packet, this row's `WM` symbol has a direct source theorem rather
 than only a bare premise record.
 
+## 2026-06-17 Rescaling-Convention Split
+
+The old wording tied the algebraic `beta -> c^2 beta` identity to the phrase
+`T_a -> c T_a`. That phrase is under-specified for Wilson-action beta routing.
+The separate boundary theorem
+[`WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17.md`](WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17.md)
+now records the exact split:
+
+- fixed component field, same `g`, and `T_a -> c T_a`: the Wilson deficit
+  scales by `c^2`, so same-action compensation requires
+  `beta_new / beta_old = 1/c^2`;
+- pure basis relabeling `T_a -> c T_a`, `F^a -> F^a/c`: the plaquette
+  element and `beta` are unchanged;
+- coupling-coordinate WM route `g -> g/c` inside `beta(g)=2N_c/g^2`:
+  the naming law is `beta_new / beta_old = c^2`.
+
+This row consumes only the third, algebraic coupling-coordinate WM route. It
+does not claim that `beta -> c^2 beta` is the fixed-component Wilson-action
+compensation law.
+
 ## Claim
 
 This row is an explicitly conditional arithmetic lemma. It assumes the
@@ -73,12 +93,10 @@ Under `WM`, the product identity
 β · g_bare² = 2 N_c
 ```
 
-is ordinary algebra. Under the scoped generator-basis rescaling map
-`T_a -> c · T_a` (equivalently `A -> c · A`) discussed by
-[`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md),
-the matched coefficient transforms as `β -> c² · β` when `WM` is held as
-the action-surface premise. Pairing that map with
-`g_bare² -> g_bare² / c²` gives
+is ordinary algebra. Under the scoped coupling-coordinate WM route
+`g_bare -> g_bare / c`, equivalently `g_bare² -> g_bare² / c²`, the
+matched coefficient defined by `WM` transforms as `β -> c² · β`. Pairing
+those two coordinate changes gives
 
 ```text
 β'(c) · g_bare'²(c)
@@ -86,6 +104,11 @@ the action-surface premise. Pairing that map with
   = β · g_bare²
   = 2 N_c.
 ```
+
+The Wilson-action meaning of this route is bounded by
+[`WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17.md`](WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17.md):
+it is the coupling-coordinate WM naming law, not the fixed-component
+Wilson-action compensation law under `T_a -> c T_a`.
 
 The pure algebraic core is the already audited standalone identity in
 [`BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md`](BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md),
@@ -104,11 +127,13 @@ status row.
 | Explicit premise `WM: β = 2 N_c / g_bare²` | scoped Wilson action-surface assumption; not derived or imported as a retained theorem here |
 | [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) | source-side exact matching packet deriving `WM` inside the supplied standard Wilson plaquette action and canonical trace normalization; audit-owned until independently reviewed |
 | [`BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md`](BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) | retained pure polynomial-algebra identity for `β(g,N)=2N/g²`, `β(g/c,N)=c²β(g,N)`, and invariance of `β·g²` |
-| [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) | scoped generator-basis rescaling map; it also treats Wilson matching as an input rather than deriving it |
+| [`WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17.md`](WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17.md) | exact boundary separating fixed-component Wilson compensation (`1/c²`), pure basis relabeling (`1`), and the coupling-coordinate WM route (`c²`) |
+| [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) | Gram-only rescaling lemma; not consumed as beta-routing authority |
 
 The dependency structure is therefore: retained abstract algebra plus a
-scoped rescaling map, with `WM` declared as an explicit premise. No
-Ward-route coupling-closure result is used as authority for `WM`.
+scoped coupling-coordinate WM route, with `WM` declared as an explicit
+premise. No Ward-route coupling-closure result is used as authority for
+`WM`, and the Gram-only row is not used as beta-routing authority.
 
 ## Arithmetic Identity Table
 
@@ -148,7 +173,9 @@ this note does not establish, and does not claim to establish:
 - that a Ward-route coupling-closure theorem carries the Wilson matching
   premise;
 - a modification of the imported abstract polynomial identity;
-- a modification of the scoped generator-basis rescaling theorem;
+- a claim that the `c^2` beta law is the fixed-component Wilson-action
+  compensation law;
+- a modification of the Wilson-action generator-rescaling boundary theorem;
 - a new claim about canonical Cl(3) connection normalization
   `Tr(T_a T_b) = δ_ab / 2`;
 - any parent theorem/status promotion.

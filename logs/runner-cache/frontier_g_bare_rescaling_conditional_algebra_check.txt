@@ -3,7 +3,7 @@ runner: scripts/frontier_g_bare_rescaling_conditional_algebra_check.py
 runner_sha256: e3278aaeb983f97f05f1646b7f3cf3bbd6c862e9dbc193ef842f6008862a955b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.03
 status: ok
 ----- stdout -----
 [PASS] Gram scales by c^2 = 1/4 (new diagonal = 1/8)

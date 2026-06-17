@@ -14,6 +14,6 @@ open_imports:
   - "Boundary-holonomy convention remains outside this note."
 trace_gate_classification: direct_blocker_closure
 review_findings: "local self-check pass; formal review-loop delegated to reviewer per user instruction"
-pr_status: pending
-next_exact_action: "Run final checks, commit, push, and open a ready source-side PR."
+pr_status: "opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4286"
+next_exact_action: "Reviewer inspects PR #4286 and decides whether to extract the source-side repair for re-audit."
 stop_condition: "PR opened; do not audit, retag, land, or refresh unrelated PRs."

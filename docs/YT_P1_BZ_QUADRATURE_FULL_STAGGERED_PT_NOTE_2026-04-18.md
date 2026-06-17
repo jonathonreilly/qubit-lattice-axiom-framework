@@ -1,5 +1,16 @@
 # P1 BZ Quadrature Full Staggered-PT Note (4D Kawamoto–Smit Quadrature)
 
+> **CORRECTION (2026-06-16, source-boundary repair 2026-06-17):** the old
+> `I_v_scalar = +3.902`, `Delta_R = -3.77%`, and sub-half-percent precision
+> language below is historical and invalidated. The paired runner/cache now
+> remove the scalar `/N_TASTE` double-count and report corrected
+> `I_v_scalar = +32.435`, positive `Delta_R` diagnostic near `+51%`, and an
+> uncontrolled O(50%) P1 lane until the fermion all-doubler subtraction and
+> matching normalization are rederived. See
+> [YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md](YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md).
+> This note is therefore correction context, not a retained precision
+> `Delta_R` certificate.
+
 **Date:** 2026-04-18
 **Claim type:** bounded_theorem
 **Type:** source-side bounded numerical quadrature certificate

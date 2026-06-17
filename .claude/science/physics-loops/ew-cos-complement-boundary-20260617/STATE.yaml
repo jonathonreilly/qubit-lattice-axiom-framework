@@ -1,0 +1,27 @@
+loop_slug: ew-cos-complement-boundary-20260617
+goal: "Unlock audit progress for the EW cos^2(theta_W) complement bridge by repairing source-side overclaim and cache failure."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Could become a retained proposal only after dependency gates are independently retained and the YT_EW input role is resolved."
+hypothetical_axiom_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Demote stale retained framing and convert unaudited/meta dependency statuses from hard runner failures to explicit boundary gates."
+hard_residual: "The bridge still depends on unaudited/decorated/meta authorities and on historical YT_EW bare-coupling values that are no longer present as an unconditional retained source."
+files_touched:
+  - docs/EW_LATTICE_COS_SQ_THETA_W_COMPLEMENT_BRIDGE_THEOREM_NOTE_2026-04-26.md
+  - scripts/frontier_ew_lattice_cos_sq_theta_w_complement_bridge.py
+  - logs/runner-cache/frontier_ew_lattice_cos_sq_theta_w_complement_bridge.txt
+  - .claude/science/physics-loops/ew-cos-complement-boundary-20260617/
+open_imports:
+  - "WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES effective_status is unaudited."
+  - "LEFT_HANDED_CHARGE_MATCHING is decoration-scoped under graph-first SU3 rather than retained-grade for this reuse."
+  - "ONE_GENERATION_MATTER_CLOSURE effective_status is unaudited."
+  - "CKM_MAGNITUDES_STRUCTURAL_COUNTS effective_status is unaudited."
+  - "MINIMAL_AXIOMS_2026-04-11 is meta/superseded."
+  - "CKM_EW_LATTICE_A4_BRIDGE effective_status is unaudited."
+  - "Current YT_EW source is a kappa-family no-go/support surface; the old g_2^2 and g_Y^2 literals are bounded historical inputs here."
+review_loop_disposition: not_run_user_delegated
+pr_status: pending
+next_exact_action: "Run verification, commit, push, and open the review PR."
+stop_condition: "Science block packaged for reviewer extraction; active campaign should then pick the next uncovered audit unlock."

@@ -8,6 +8,8 @@ bounded `Omega_b -> R -> Omega_DM -> Omega_m -> Omega_Lambda` cascade.
 **Lane:** 5 — Hubble constant `H_0` derivation (sub-route 5A, advancing
 `(C2)` per the cosmic-history-ratio necessity no-go).
 **Workstream:** `hubble-h0-20260426`
+**Primary runner:** [`scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py`](../scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_hubble_lane5_eta_retirement_gate_source_packet.txt`](../logs/runner-cache/frontier_hubble_lane5_eta_retirement_gate_source_packet.txt)
 
 ---
 
@@ -221,13 +223,14 @@ must therefore either:
 
 ## 7. Boundary
 
-This is an audit / gate-identification artifact, not a theorem and not a
-runner-bearing cycle. It does not retire any input. It moves the lane
-state by isolating the precise gate so subsequent DM-lane work can
-target the right object.
+This is an audit / gate-identification artifact, not a theorem. It does
+not retire any input. It moves the lane state by isolating the precise
+gate so subsequent DM-lane work can target the right object.
 
-A runner is not authored: the audit is a structural review of existing
-retained material; no new symbolic or numerical claim is introduced.
+The attached source-packet runner makes the dependency anchors,
+single-gate inventory, and non-promotion boundary replayable for
+independent re-audit. It does not derive the missing right-sensitive
+selector law, retire `eta`, close `(C2)`, or apply an audit verdict.
 
 ## Audit dependency repair links
 

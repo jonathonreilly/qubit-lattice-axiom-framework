@@ -8,6 +8,8 @@ numerically, supplying the `(C1)` Lane 5 closure premise.
 **Lane:** 5 — Hubble constant `H_0` derivation (sub-route 5B/scale,
 advancing `(C1)` per the cosmic-history-ratio necessity no-go).
 **Workstream:** `hubble-h0-20260426`
+**Primary runner:** [`scripts/frontier_hubble_lane5_planck_c1_gate_source_packet.py`](../scripts/frontier_hubble_lane5_planck_c1_gate_source_packet.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_hubble_lane5_planck_c1_gate_source_packet.txt`](../logs/runner-cache/frontier_hubble_lane5_planck_c1_gate_source_packet.txt)
 
 ---
 
@@ -264,13 +266,16 @@ closure.
 
 ## 8. Boundary
 
-This is an audit / gate-identification artifact, not a theorem and not
-a runner-bearing cycle. It does not retire any input. It moves the lane
-state by isolating the precise gate on the `(C1)` side, completing the
-symmetric pair with Cycle 4's `(C2)` gate audit.
+This is an audit / gate-identification artifact, not a theorem. It does
+not retire any input. It moves the lane state by isolating the precise
+gate on the `(C1)` side, completing the symmetric pair with Cycle 4's
+`(C2)` gate audit.
 
-A runner is not authored: the audit is a structural review of existing
-retained material; no new symbolic or numerical claim is introduced.
+The attached source-packet runner makes the dependency anchors,
+single-gate inventory, and non-promotion boundary replayable for
+independent re-audit. It does not derive the metric-compatible primitive
+Clifford/CAR coframe response, retain `R_Lambda` numerically, close
+`(C1)`, or apply an audit verdict.
 
 ## Audit dependency repair links
 

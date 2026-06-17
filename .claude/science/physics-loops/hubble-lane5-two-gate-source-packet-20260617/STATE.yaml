@@ -1,0 +1,31 @@
+loop_slug: hubble-lane5-two-gate-source-packet-20260617
+goal: "Package the Hubble Lane 5 C2 eta-retirement gate and C1 Planck gate as replayable source-side runner packets for independent re-audit."
+target_status: exact-support
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+runtime_mode: source_packet
+cycle_count: 1
+active_route: exact_runner_source_packet
+hard_residual: "Lane 5 still needs a retained right-sensitive eta selector, a retained Planck coframe/action-unit derivation, and either C2 or C3 plus C1 for H0 closure."
+files_touched:
+  - docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md
+  - docs/HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md
+  - scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py
+  - scripts/frontier_hubble_lane5_planck_c1_gate_source_packet.py
+  - logs/runner-cache/frontier_hubble_lane5_eta_retirement_gate_source_packet.txt
+  - logs/runner-cache/frontier_hubble_lane5_planck_c1_gate_source_packet.txt
+open_imports:
+  - right_sensitive_eta_selector_law
+  - alpha_GUT_retirement_for_full_C2_numerics
+  - metric_compatible_primitive_Clifford_CAR_coframe_response
+  - natural_action_unit_metrology
+  - C2_or_C3_completion_for_full_H0_after_C1
+no_go_routes:
+  - existing_DM_PMNS_shortcut_routes_in_eta_gate_note
+  - existing_Planck_CAR_edge_shortcut_routes_in_C1_gate_note
+trace_gate_classification: direct_blocker_closure
+review_findings: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Run cached-output checks, graph extraction checks, commit, push, and open a ready review PR."
+stop_condition: "Stop this block after PR creation; do not audit, retag, merge, or refresh unrelated PRs against main."

@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/frontier_corner_transfer_fixed_gauge_background_2026_06_12.py
+runner_sha256: 0819995c541a7066b84a232a881ee5c6be76d24e57d8bf65cc18dc6acdb8e90e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.58
+status: ok
+----- stdout -----
+========================================================================================
+W13a fixed-gauge corner-transfer runner
+params = [(1.0, 0.25, 0.2222222222222222), (1.35, 0.31, -0.41)]
+L_s = 2; fixed random U(1) seeds = [2026061201, 2026061202]
+Fixed-background checks only.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+N1 -- channel decomposition and inherited two-step positivity
+----------------------------------------------------------------------------------------
+  [PASS] circulant eigenbasis diagonalizes C -- residual=7.328e-16
+  parameter point 0: lambdas=[1.48770504 0.66071246 0.8515825 ]
+  parameter point 1: lambdas=[1.91861491 1.27972014 0.85166495]
+  [PASS] N1-domain: all lambda_k(delta) > 0 at both parameter points
+  [PASS] N1a: mass/internal factor block-diagonalizes over circulant channels at fixed U
+  [PASS] N1b: every checked channel T_k^2[U] is positive Hermitian with B_k[U]^dag B_k[U] -- min manybody eig=3.183608e-03; worst BdagB residual=3.925e-17
+  [PASS] N1c: U=1 member recovers free wave-6 dispersion -- worst residual=2.082e-16
+
+----------------------------------------------------------------------------------------
+N2 -- fixed-background corner transfer
+----------------------------------------------------------------------------------------
+  [PASS] N2: T_corner^2[U] = tensor_k T_k^2[U] is positive Hermitian config-by-config (dim 64) -- min eig=1.054401e-06; BdagB residual=4.645e-17
+
+----------------------------------------------------------------------------------------
+N3 -- trace correspondence and Berezin normalization
+----------------------------------------------------------------------------------------
+  [PASS] N3a: Tr Gamma(t[U]) = det(1 + t[U]) per witness background -- worst residual=6.661e-16
+  [PASS] N3b: lambda=2 breaks the Berezin/trace equality per background -- gap=1.591495e+02
+  [PASS] N3b: lambda=1 is forced over lambda > 0 -- solve(lambda^6=1, lambda>0) -> [1]
+  [PASS] N3c: genuine two-pair Grassmann expansion equals det(1+t) for one channel -- residual=0.000e+00; self_check=True
+
+----------------------------------------------------------------------------------------
+N4 -- K/conjugated-background complement statement
+----------------------------------------------------------------------------------------
+  [PASS] N4a: t_k[U](delta) = t_sigma(k)[conj(U)](-delta) computed -- doublet swap residual=1.571e-16
+  [PASS] N4b: K-real Z_2 witness has exact hw-complement unitary equivalence and equal N=1,2 traces -- unitary residual=2.721e-20; trace residual=6.661e-16
+  [PASS] N4c: complex witness reading-1 at U equals reading-2 at conj(U) -- unitary residual=1.195e-16; trace residual=2.220e-16
+  [PASS] N4d-i: registrable trace data of the positive corner transfer are real -- Im Tr(T), Im Tr(T^2) below tolerance at the complex witness
+  [PASS] N4d-ii: background conjugation conjugates the transfer matrix -- T[conj U, -delta] = conj(T[U, -delta]) entrywise (1e-12)
+  [PASS] N4d-iii: hence same-U registrable-trace equivalence at EVERY background (theorem-backed condition) -- same-U trace gap=2.220e-16; real + conjugate => equal, with N4c
+
+----------------------------------------------------------------------------------------
+N5 -- assembly
+----------------------------------------------------------------------------------------
+  [PASS] N5: both interacting opens narrow to the U-INTEGRATED level, not beyond -- remaining object is the measure over backgrounds / gauge dynamics
+
+----------------------------------------------------------------------------------------
+B-checks -- source-note and dependency hygiene
+----------------------------------------------------------------------------------------
+  [PASS] engine grep: config-by-config phrase present
+  [PASS] engine grep: B[U]^dag B[U] two-step phrase present
+  [PASS] engine grep: fixed arbitrary SU(3)/U(1) temporal-gauge authority present
+  [PASS] substep1 grep: canonical Berezin determinant side present
+  [PASS] registrability grep: Record-registrable / phase-free class present
+  [PASS] firewall sentence: fixed background only
+  [PASS] firewall sentence: U-INTEGRATED level remains named open
+  [PASS] firewall sentence: no species reading, no occupancy cell, r never fixed, binary untouched
+  [PASS] closing language absent: no forbidden integrated-level closure strings
+  [PASS] link inventory exactly three markdown links -- count=3
+  [PASS] companions are backticked, not dependency-linked
+  [PASS] No-promotion statement present
+  [PASS] Berezin self-check flag is true
+
+SCORECARD: PASS=30 FAIL=0
+SUMMARY: fixed-background corner transfer checks complete; U-integrated gauge dynamics remains the named open.
+
+----- stderr -----
+

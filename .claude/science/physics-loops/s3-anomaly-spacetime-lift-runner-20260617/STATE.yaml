@@ -1,0 +1,25 @@
+loop_slug: s3-anomaly-spacetime-lift-runner-20260617
+goal: "Repair stale S3 anomaly spacetime-lift primary runner and cache."
+target_status: exact-support
+branch: codex/s3-anomaly-spacetime-lift-runner-20260617
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+mode: source_side_audit_unlock
+current_cycle: 1
+active_route: stale_runner_boundary_repair
+files_touched:
+  - docs/S3_ANOMALY_SPACETIME_LIFT_NOTE.md
+  - scripts/frontier_s3_anomaly_spacetime_lift.py
+  - logs/runner-cache/frontier_s3_anomaly_spacetime_lift.txt
+  - logs/runner-cache/frontier_s3_anomaly_spacetime_lift_downstream_fix.txt
+  - .claude/science/physics-loops/s3-anomaly-spacetime-lift-runner-20260617/
+open_imports:
+  - "Dynamics bridge from PL S3 x R to metric law remains open."
+claim_status:
+  actual_current_surface_status: exact-support
+  trace_class: direct_blocker_closure
+  reachability_to_target: supports
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+review_disposition: reviewer_owned_not_run
+next_exact_action: "Reviewer/auditor can inspect the repaired cache and use the primary runner for this critical open-gate row."
+stop_condition: "Coherent source-side audit-unlock PR opened."

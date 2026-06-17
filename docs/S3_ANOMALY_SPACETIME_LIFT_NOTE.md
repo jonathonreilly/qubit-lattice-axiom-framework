@@ -8,6 +8,7 @@ named missing dynamics theorem. **Not** a full-GR closure.
 [`FULL_GR_AXIOM_FIRST_PATHS_NOTE.md`](FULL_GR_AXIOM_FIRST_PATHS_NOTE.md)
 **Type:** open_gate (route-survey)
 **Status authority:** independent audit lane only.
+**Primary runner:** [`scripts/frontier_s3_anomaly_spacetime_lift.py`](../scripts/frontier_s3_anomaly_spacetime_lift.py)
 **Authority role:** identifies, but does not close, a candidate axiom-first
 GR-lift architecture. Names the missing dynamics-bridge primitive as the
 single open theorem target for this route.
@@ -181,8 +182,14 @@ The current ranking still stands:
 
 ## Runner result
 
-This row has no registered runner. The route ingredients live on the cited
-upstream authorities and are individually audited there:
+The primary runner is
+[`scripts/frontier_s3_anomaly_spacetime_lift.py`](../scripts/frontier_s3_anomaly_spacetime_lift.py).
+It checks that the current source-note boundary is a kinematic `open_gate`
+route survey, verifies the cited topology/time ingredients are present, and
+confirms that the dynamics bridge remains absent rather than silently promoted.
+
+The route ingredients live on the cited upstream authorities and are
+individually audited there:
 
 - PL `S^3` compactification — cited from
   [`S3_BOUNDARY_LINK_THEOREM_NOTE.md`](S3_BOUNDARY_LINK_THEOREM_NOTE.md)
@@ -195,7 +202,9 @@ upstream authorities and are individually audited there:
 - The atlas does not yet contain an exact dynamics bridge for this route;
   this is the sharp, currently-open blocker.
 
-This row claims **no** runner result of its own.
+The runner result supports only this note's scoped endpoint: kinematic
+background candidate plus named missing dynamics theorem. It does not claim a
+full GR closure or a unique metric/tensor dynamics theorem.
 
 ## Bottom line
 

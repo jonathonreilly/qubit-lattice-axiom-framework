@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_quark_antiquark_color_singlet_check.py
-runner_sha256: bc22bf3cf1f4091209b2afe53e34c0a94680f202673ae1b93dbae9146825a939
+runner_sha256: 184bd9164165ae755d16dd9ccbd02e9f41836dd87404370373033de671a57a3e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================

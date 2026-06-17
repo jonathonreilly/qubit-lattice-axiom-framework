@@ -1,0 +1,31 @@
+loop_slug: color-singlet-abstract-boundary-20260617
+date: 2026-06-17
+branch: physics-loop/color-singlet-abstract-boundary-20260617
+base: origin/main
+goal: >
+  Make the CL3 color-singlet tensor-product packet auditable as an abstract
+  SU(3) carrier decoration rather than a physical quark-color bridge.
+target_status: decoration
+actual_current_surface_status: bounded-support decoration
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: abstract_carrier_boundary_repair
+cycle_count: 1
+files_touched:
+  - docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md
+  - scripts/cl3_quark_antiquark_color_singlet_check.py
+  - logs/runner-cache/cl3_quark_antiquark_color_singlet_check.txt
+  - .claude/science/physics-loops/color-singlet-abstract-boundary-20260617/
+open_imports:
+  - Physical SM quark-color carrier identification remains a separate bridge.
+  - No meson, confinement, asymptotic-state, or physical octet claim is supplied here.
+verification:
+  - python3 scripts/cl3_quark_antiquark_color_singlet_check.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/cl3_quark_antiquark_color_singlet_check.py
+  - python3 -m py_compile scripts/cl3_quark_antiquark_color_singlet_check.py
+  - git diff --check
+review_loop_disposition: reviewer_owned_not_run
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4205
+next_exact_action: reviewer extraction and independent audit decision
+stop_condition: PR opened for reviewer extraction

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time.py
-runner_sha256: c7458bca0787097110a92ecb9da1992efc0bc56fa5d2469962ec444b782394b4
+runner_sha256: 03a6479726cba0fe0e2ef027beb0e31c5951783f8f7c271fe7a68150512cbe8d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.36
 status: ok
 ----- stdout -----
 ========================================================================
@@ -18,7 +18,7 @@ and B-AXIS. See the paired note.
 STEP 0: ABELIAN EIGENVALUE SURFACE (recompute cited construction)
 ========================================================================
 
-  Cited: NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23
+  Cited authority: GRAPH_FIRST_SU3_INTEGRATION_NOTE
   For each selected taste axis, the residual complementary-axis swap
   tau on C^8 gives Pi_+ rank 6, Pi_- rank 2, and
   Y_like = (1/3) Pi_+ - Pi_- with spectrum {+1/3 x6, -1 x2}.
@@ -36,6 +36,10 @@ STEP 0: ABELIAN EIGENVALUE SURFACE (recompute cited construction)
 
   P-HY (declared, not computed): identifying Y_like with the anomaly-
   relevant U(1) hypercharge of the emergent gauge theory.
+
+  [PASS][B] HY source edge: parent theorem cites GRAPH_FIRST_SU3_INTEGRATION_NOTE for HY-surface  (graph-first parent contains the gl(3)+gl(1) split and traceless u(1) spectrum)
+  [PASS][B] HY source edge: split-out abelian packaging is absent from parent theorem source text  (prevents this parent theorem from carrying the packaging as a source dependency)
+  [PASS][B] P-HY remains declared: physical hypercharge identification is not derived by STEP 0  (graph-first parent supplies the spectrum only; U(1)_Y remains a boundary)
 
 ========================================================================
 STEP 1: LEFT-HANDED CONTENT ALONE IS ANOMALOUS (exact rationals)
@@ -167,7 +171,7 @@ STEP 4: STAGGERED GRADING {epsilon, D_KS} = 0 ON Z^3 (exact integers)
   [PASS][C] {epsilon, D_KS} = 0 exactly on the open 4^3 box (64 sites)  (integer arithmetic, no floating point)
   [PASS][A] D_KS is antisymmetric (anti-Hermitian kinetic operator)
   [PASS][A] KS phases obey the Clifford -1 plaquette cocycle on every plaquette  (81 plaquette relations checked, 0 violations)
-  [PASS][C] spectrum of i*D_KS is symmetric about 0 (grading consequence)  (64 eigenvalues, max |E + E_mirror| = 1.44e-15)
+  [PASS][C] spectrum of i*D_KS is symmetric about 0 (grading consequence)  (64 eigenvalues, max |E + E_mirror| = 8.88e-16)
 
   [PASS][A] FALSIFICATION: the all-plus phase law violates the Clifford cocycle  (81/81 plaquette relations violated)
   [PASS][A] bipartite anticommutation alone is phase-blind (holds even for all-plus)  (so {eps, D} = 0 comes from bipartiteness; the PHASE CLASS is what the KS note forces)
@@ -261,8 +265,8 @@ STEP 7: COUNTERFACTUAL — CANCEL THE ANOMALY, LOSE THE FORCING
   falsification behaviour a genuine forcing theorem must show.
 
 ========================================================================
-CLASS BREAKDOWN: A=47 B=4 C=36 D=0
-TOTAL: PASS=87 FAIL=0
+CLASS BREAKDOWN: A=47 B=7 C=36 D=0
+TOTAL: PASS=90 FAIL=0
 ========================================================================
 
 VERDICT: bounded anomaly/B-AXIS bridge verified. Computed: exact

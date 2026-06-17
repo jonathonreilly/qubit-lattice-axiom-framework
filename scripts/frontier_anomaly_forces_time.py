@@ -9,9 +9,13 @@ claim_id:    anomaly_forces_time_theorem
 What this runner COMPUTES (no value below is copied from a fit, a PDG
 table, or a tuned scale):
 
-  STEP 0  [A] Recompute the cited abelian eigenvalue surface: for each
-              selected taste axis, the residual swap gives projector
-              ranks (6, 2) and Y_like spectrum {+1/3 x6, -1 x2}.
+  STEP 0  [A] Recompute the graph-first selected-axis abelian eigenvalue
+              surface: for each selected taste axis, the residual swap
+              gives projector ranks (6, 2) and Y_like spectrum
+              {+1/3 x6, -1 x2}. [B] Guard that the parent theorem cites
+              the graph-first parent for HY-surface authority and no
+              longer names the split-out abelian packaging as a source
+              dependency.
   STEP 1  [A] Exact rational anomaly traces of the left-handed content
               (2,3)_{+1/3} + (2,1)_{-1}: six conditions, three nonzero.
               The SU(3)^3 and Witten counts are computed from the rep
@@ -198,7 +202,7 @@ def step0_abelian_surface():
     print("STEP 0: ABELIAN EIGENVALUE SURFACE (recompute cited construction)")
     print("=" * 72)
     print()
-    print("  Cited: NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23")
+    print("  Cited authority: GRAPH_FIRST_SU3_INTEGRATION_NOTE")
     print("  For each selected taste axis, the residual complementary-axis swap")
     print("  tau on C^8 gives Pi_+ rank 6, Pi_- rank 2, and")
     print("  Y_like = (1/3) Pi_+ - Pi_- with spectrum {+1/3 x6, -1 x2}.")
@@ -237,6 +241,41 @@ def step0_abelian_surface():
     print()
     print("  P-HY (declared, not computed): identifying Y_like with the anomaly-")
     print("  relevant U(1) hypercharge of the emergent gauge theory.")
+    print()
+    note_text = (ROOT / "docs/ANOMALY_FORCES_TIME_THEOREM.md").read_text(encoding="utf-8")
+    old_split_slug = "_".join(
+        [
+            "NATIVE",
+            "GAUGE",
+            "LEFT",
+            "HANDED",
+            "ABELIAN",
+            "SURFACE",
+            "BOUNDED",
+            "NOTE",
+        ]
+    ) + "_2026-05-23"
+    check(
+        "HY source edge: parent theorem cites GRAPH_FIRST_SU3_INTEGRATION_NOTE for HY-surface",
+        "GRAPH_FIRST_SU3_INTEGRATION_NOTE.md" in note_text
+        and "selected-axis finite-cube construction" in note_text,
+        "B",
+        "graph-first parent contains the gl(3)+gl(1) split and traceless u(1) spectrum",
+    )
+    check(
+        "HY source edge: split-out abelian packaging is absent from parent theorem source text",
+        old_split_slug not in note_text,
+        "B",
+        "prevents this parent theorem from carrying the packaging as a source dependency",
+    )
+    check(
+        "P-HY remains declared: physical hypercharge identification is not derived by STEP 0",
+        "P-HY" in note_text
+        and "Declared premise" in note_text
+        and "does not claim anomaly-complete `U(1)_Y`" in note_text,
+        "B",
+        "graph-first parent supplies the spectrum only; U(1)_Y remains a boundary",
+    )
 
 
 # ----------------------------------------------------------------------------

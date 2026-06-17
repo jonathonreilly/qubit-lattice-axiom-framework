@@ -1,0 +1,38 @@
+loop_slug: anomaly-hy-parent-edge-20260617
+current_goal: >
+  Repair the anomaly-forces-time HY-surface source edge so the parent theorem
+  consumes the graph-first selected-axis parent construction and local
+  recomputation, not the split-out abelian-surface packaging.
+target_status: exact-support
+current_surface_status: exact-support
+branch: codex/anomaly-hy-parent-edge-20260617
+base: origin/main
+cycle_count: 1
+active_route: source-dependency edge repair
+hard_residual: >
+  The source theorem named the split-out abelian-surface packaging as the
+  HY-surface source even though the needed gl(3)+gl(1) split and traceless
+  u(1) spectrum live in the graph-first selected-axis parent construction
+  and are already recomputed by the anomaly runner.
+files_touched:
+  - docs/ANOMALY_FORCES_TIME_THEOREM.md
+  - scripts/frontier_anomaly_forces_time.py
+  - logs/runner-cache/frontier_anomaly_forces_time.txt
+  - .claude/science/physics-loops/anomaly-hy-parent-edge-20260617/
+open_imports:
+  - P-HY: physical hypercharge identification
+  - P-ABJ: external anomaly-to-inconsistency implication
+  - P-COMP: opposite-chirality SU(2)-singlet completion premise
+  - P-REC: staggered epsilon as emergent Clifford chirality
+  - B-AXIS: local one-clock cap
+no_go_routes:
+  - >
+    Treating the split-out abelian packaging as a load-bearing parent edge
+    does not add science; the source theorem can cite the graph-first parent
+    directly and keep the packaging out of the dependency surface.
+trace_gate: direct_blocker_closure
+review_loop_disposition: delegated_to_reviewer
+runner_result: "scripts/frontier_anomaly_forces_time.py: PASS=90 FAIL=0; cache fresh"
+pr_status: pending
+next_exact_action: "Run final checks, commit, push, and open a ready PR."
+stop_condition: "PR opened for reviewer; no audit verdict or main landing performed."

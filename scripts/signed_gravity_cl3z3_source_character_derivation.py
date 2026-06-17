@@ -13,7 +13,7 @@ Finite statement checked here:
 2. Z^3 locality supplies compact regions with disjoint sewing.
 3. The finite Grassmann Gaussian forces determinant-line functoriality:
    Det(D_1 direct-sum D_2) = Det(D_1) tensor Det(D_2).
-4. The retained scalar observable principle uses the determinant magnitude:
+4. The conditional T1-d scalar observable boundary uses the determinant magnitude:
    log|det| is additive and sign-blind.
 5. The remaining local real orientation functor of the APS boundary determinant
    line is sign(eta_delta(D_Y)).
@@ -285,7 +285,7 @@ def main() -> int:
     print("DERIVATION TARGET")
     print("  Cl(3)/Z^3 + finite Grassmann/staggered-Dirac dynamics force a local")
     print("  determinant line for compact source regions.  Its magnitude gives the")
-    print("  retained log|det| scalar norm; its real APS boundary orientation gives")
+    print("  conditional T1-d log|det| scalar norm; its real APS boundary orientation gives")
     print("  the unique local source character chi_eta.")
     print()
 

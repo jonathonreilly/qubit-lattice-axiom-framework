@@ -102,7 +102,7 @@ one normalized solution. The proof is also immediate algebraically:
 
 ## Theorem 2: Determinant Functor Split
 
-The result is compatible with the retained scalar observable principle.
+The result is compatible with the conditional T1-d scalar observable boundary.
 
 The determinant line carries two different pieces of structure:
 
@@ -111,7 +111,7 @@ The determinant line carries two different pieces of structure:
 Or(Det)   -> local real orientation character
 ```
 
-The retained scalar observable principle uses:
+The conditional T1-d scalar observable boundary uses:
 
 ```text
 W[J] = log|det(D+J)| - log|det D|.
@@ -218,7 +218,7 @@ the controls are correctly rejected.
 This is the current strongest version of the lane:
 
 - `chi_eta` is not a free coefficient inside the source-character grammar;
-- the retained `log|det|` magnitude generator and the signed orientation line
+- the conditional T1-d `log|det|` magnitude generator and the signed orientation line
   come from the same determinant-line structure;
 - positive inertia remains the norm, not the oriented sign;
 - locality rejects global product signs;

@@ -35,7 +35,7 @@ This is equivalent to the retained atlas's "real-irrep-block
 democracy" candidate primitive, made explicit as a max-entropy
 principle on character-space probabilities.
 
-The retained observable principle `W[J] = log|det(D+J)|` weights
+The conditional T1-d observable boundary `W[J] = log|det(D+J)|` weights
 per-EIGENVALUE (dimension-weighted). This new principle weights
 per-REAL-BLOCK (character-weighted). Both are natural; the
 difference is which coarse-graining is physical.
@@ -191,7 +191,7 @@ def main() -> int:
     print()
     print("  Max S → uniform block probability → A1.")
     print()
-    print("  The gap between retained log|det| (dim-weighted, gives Q=1/3)")
+    print("  The gap between conditional T1-d log|det| (dim-weighted, gives Q=1/3)")
     print("  and democracy (block-weighted, gives Q=2/3) IS the missing")
     print("  physical coarse-graining principle.")
     print()

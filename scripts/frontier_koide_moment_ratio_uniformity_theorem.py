@@ -81,7 +81,7 @@ def admit(label: str, detail: str) -> None:
     print(
         "      see: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md Section 1.2"
         " for the Path A failure proof showing this is NOT a corollary of"
-        " the retained observable principle on Herm_circ(3)."
+        " the conditional T1-d observable boundary on Herm_circ(3)."
     )
 
 
@@ -329,7 +329,7 @@ def main() -> int:
     print("  algebraic. The load-bearing step that turns those into MRU")
     print("  on the charged-lepton scalar lane is the SO(2)-quotient")
     print("  admission of Part 1, which the demotion note proves is NOT")
-    print("  a corollary of the retained observable principle on")
+    print("  a corollary of the conditional T1-d observable boundary on")
     print("  Herm_circ(3). This runner certifies the conditional algebra")
     print("  after the admission; it does NOT derive the admission. The")
     print("  retained closure routes for operator-side kappa = 2 (the")

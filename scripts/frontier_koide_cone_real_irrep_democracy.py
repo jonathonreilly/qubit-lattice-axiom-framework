@@ -255,14 +255,14 @@ def part1_cauchy_schwarz_midpoint():
     # Verdict on H-1: the CS midpoint sigma = 1/2 DOES coincide with Koide
     # at the level of sigma, and admits the symmetric functional
     # sigma (1 - sigma) as a toy maximiser. But this functional is NOT a
-    # retained object: the retained log|det| authority gives the
+    # retained object: the conditional T1-d log|det| boundary gives the
     # DIMENSION-WEIGHTED form, whose midpoint is sigma = 2/3, incompatible
     # with Koide. So H-1 succeeds as a mathematical observation but fails
     # derivability from retained authorities.
     check(
         "H-1 AUDIT: symmetric sigma (1 - sigma) is not a retained functional",
         True,
-        detail="retained log|det| is dimension-weighted; sigma = 1/2 requires equal-block weighting",
+        detail="conditional T1-d log|det| is dimension-weighted; sigma = 1/2 requires equal-block weighting",
         kind="AUDIT",
     )
 
@@ -376,12 +376,12 @@ def part2_character_entropy():
     # precisely the retained block-entropy if we take Plancherel
     # "power per irrep block" as the natural partition.
     #
-    # However: deriving "log(p_+) + log(p_-)" from retained log|det(D)|
+    # However: deriving "log(p_+) + log(p_-)" from conditional T1-d log|det(D)|
     # directly requires the *kernel* D to have structure (alpha, beta)
     # such that det D = alpha * beta. On the hw=1 triplet, D is a
     # 3x3 circulant with eigenvalues (alpha, beta, beta), so
     # det D = alpha * beta^2 and log det D = log alpha + 2 log beta.
-    # So the retained log|det| supplies the weighted form, NOT the
+    # So the conditional T1-d log|det| boundary supplies the weighted form, NOT the
     # unweighted form.
     #
     # Test the WEIGHTED variational principle: maximise log(p_+) + 2 log(p_-)
@@ -424,8 +424,8 @@ def part2_character_entropy():
     # "democratic across complex irreps" limit). The Koide value sigma = 1/2
     # requires an entropy where the trivial block is weighted EQUALLY to the
     # full nontrivial block (one log per REAL irrep), which is NOT the
-    # retained log|det| structure.
-    print("  H-2 status: retained log|det| gives sigma = 1/3 (complex-irrep democracy), NOT Koide sigma = 1/2.")
+    # conditional T1-d log|det| structure.
+    print("  H-2 status: conditional T1-d log|det| gives sigma = 1/3 (complex-irrep democracy), NOT Koide sigma = 1/2.")
     print("  H-2 Koide form requires ONE log per REAL irrep block (not per complex irrep).")
     print("  This is a non-retained weighting choice.")
 
@@ -648,12 +648,12 @@ def part5_verdict():
     # the arithmetic power-equality IS retained but is a restatement of
     # "a_0^2 = 2 |z|^2" (H-2 unweighted form), not an independent derivation.
     #
-    # H-2: PARTIAL with WRONG weighting. The retained log|det| supplies
+    # H-2: PARTIAL with WRONG weighting. The conditional T1-d log|det| supplies
     # block-log-volume log(alpha) + 2 log(beta) with weights (1, 2) matching
     # the COMPLEX irrep dimensions. Maximising this at fixed |v|^2 gives
     # sigma = 1/3, NOT Koide sigma = 1/2. The Koide form requires one log
     # PER REAL-IRREP-BLOCK (weights (1, 1) on the two real blocks),
-    # which is not the retained log|det| structure.
+    # which is not the conditional T1-d log|det| structure.
     #
     # H-3: FALSE. The Legendre transform of W[J] = log|det(D + J)| on the
     # hw=1 triplet has stationary points only on the b = 0 degenerate line
@@ -667,13 +667,13 @@ def part5_verdict():
     # Post-hoc PDG sanity: the retained "equal-power-per-real-irrep-block"
     # entropy (H-2 unweighted) gives sigma = 2/3, matching PDG Koide
     # Q_l = 0.66666... to 6e-6. But this entropy is not derivable from
-    # retained log|det|.
+    # conditional T1-d log|det|.
 
     # Check: is the "equal-power-per-real-irrep-block" entropy a retained
     # object obtainable from another retained authority?
     # - Plancherel (retained, from C_3 character theory): gives the SPLITTING
     #   |v|^2 = p_+ + p_-, so identifies p_+ and p_- as natural variables.
-    # - Observable-principle (retained): provides log|det|, which gives
+    # - Observable-principle (conditional T1-d): provides log|det|, which gives
     #   weighted log(p_+) + 2 log(p_-/2), not unweighted.
     # - Gap equation / stationarity: no retained principle asserts
     #   "equal power per real-irrep block" as a variational principle.
@@ -695,7 +695,7 @@ def part5_verdict():
     print("      Koide match = coincidental at sigma-value only")
     print()
     print("  H-2 max-entropy on character decomposition:")
-    print("      derivable from retained = PARTIAL (retained log|det| gives WRONG weighting)")
+    print("      derivable from retained sources = PARTIAL (conditional T1-d log|det| gives WRONG weighting)")
     print("      stationary of RETAINED (complex-irrep-weighted) entropy = sigma = 1/3, NOT Koide")
     print("      stationary of UNWEIGHTED (real-irrep-block) entropy = sigma = 1/2, IS Koide")
     print("      Koide match = YES if real-irrep-block democracy is retained; currently NOT retained")
@@ -722,7 +722,7 @@ def part5_verdict():
     print("  The ONLY candidate that selects the Koide 45 deg cone (sigma = 1/2)")
     print("  as a UNIQUE stationary point is H-2 with real-irrep-block-democracy")
     print("  weighting (one log per real-irrep block, NOT per complex irrep). The")
-    print("  retained observable-principle authority gives log|det(D)| = log alpha")
+    print("  conditional T1-d observable-principle boundary gives log|det(D)| = log alpha")
     print("  + 2 log beta, weighting by complex-irrep dimension and producing")
     print("  sigma = 1/3, NOT Koide. H-3 and H-4 are both FALSE: the Legendre")
     print("  midpoint of W[J] collapses to the a companion runner b = 0 null, and the")

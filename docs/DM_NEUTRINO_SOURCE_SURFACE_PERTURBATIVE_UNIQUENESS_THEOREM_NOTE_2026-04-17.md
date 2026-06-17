@@ -479,8 +479,8 @@ Expected: `PASS = 46, FAIL = 0`.
 
 ### What this note does NOT claim
 
-- **NOT retained Taylor convergence of W[J] at the closure point.**
- The retained axiom-native scalar generator `W[J] = log|det(D+J)|`
+- **NOT unconditional Taylor convergence of W[J] at the closure point.**
+ The conditional T1-d scalar generator `W[J] = log|det(D+J)|`
  does NOT have a Taylor-convergent expansion around `D = H_base` at
  the Basin 1 physical amplitude (`ρ ≈ 1.285`). The closure
  construction is independent of Taylor convergence; it uses direct

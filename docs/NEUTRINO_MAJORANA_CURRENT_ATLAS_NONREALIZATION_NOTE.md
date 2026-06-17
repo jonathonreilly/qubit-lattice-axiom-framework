@@ -50,7 +50,7 @@ different name. The next step remains to derive a genuinely new one.
 
 The current-atlas scan uses three exact repository-side facts.
 
-### 1. The retained observable principle is scalar and normal
+### 1. The conditional T1-d observable boundary is scalar and normal
 
 The atlas row
 
@@ -152,7 +152,7 @@ the neutrino Majorana lane.
 
 **Theorem (Current-atlas non-realization of the Majorana charge-`2`
 primitive).**
-Assume the current `main` derivation atlas, the retained observable principle,
+Assume the current `main` derivation atlas, the conditional T1-d observable boundary,
 and the retained one-generation matter closure. Then:
 
 1. the current atlas fixes the unique admissible local same-chirality

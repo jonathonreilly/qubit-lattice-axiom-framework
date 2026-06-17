@@ -51,7 +51,7 @@ determinant line:
 Det(D_Omega).
 ```
 
-The retained scalar observable principle uses the magnitude functor:
+The conditional T1-d scalar observable boundary uses the magnitude functor:
 
 ```text
 Det(D_Omega) -> |Det(D_Omega)| -> log |det|.
@@ -131,7 +131,7 @@ machine precision.
 
 ### 3. Magnitude And Orientation Split
 
-The retained observable principle already derives the positive scalar
+The conditional T1-d observable boundary supplies the positive scalar
 magnitude side:
 
 ```text
@@ -232,7 +232,7 @@ This narrows the previous source-character grammar premise at the finite
 determinant-line level:
 
 - the determinant line is forced by the finite Grassmann Gaussian;
-- `log|det|` supplies the positive scalar magnitude already retained;
+- `log|det|` supplies the positive scalar magnitude on the conditional T1-d boundary;
 - `Cl(3)` supplies boundary orientation reversal;
 - the APS boundary determinant orientation supplies the local real character;
 - `Z^3` locality and disjoint sewing force componentwise, not global-product,

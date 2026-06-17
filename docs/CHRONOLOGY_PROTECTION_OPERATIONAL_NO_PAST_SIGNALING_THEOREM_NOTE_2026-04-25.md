@@ -272,9 +272,10 @@ What is not proved:
 - no final measurement ontology
 - no blanket statement about all possible CTC toy models
 - no manuscript promotion or lane closure
-- no derivation of the cited single-clock surface itself; that authority is
-  imported from the existing time stack (`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03`,
-  currently `unaudited`)
+- no derivation of the cited single-clock surface itself; the upstream
+  single-clock source is currently axis-conditional on B-AXIS
+  (`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03`,
+  currently `audited_conditional`)
 
 ## Upstream-tier and admission inheritance (2026-05-17)
 
@@ -283,11 +284,12 @@ structure from
 [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
 (via the cited path through `ANOMALY_FORCES_TIME_THEOREM.md`).
 
-Per the 2026-05-17 ledger snapshot:
+The older 2026-05-17 ledger snapshot is superseded for the single-clock
+row by the current source/audit boundary:
 
 | Upstream | `claim_type` | `audit_status` | `effective_status` |
 |---|---|---|---|
-| `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | `positive_theorem` | `unaudited` | `unaudited` |
+| `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | `bounded_theorem` | `audited_conditional` | `audited_conditional` |
 | `cpt_exact_note` | `positive_theorem` | `audited_conditional` | `audited_conditional` |
 | `light_cone_framing_note` | `positive_theorem` | `unaudited` | `unaudited` |
 | `causal_field_canonical_chain_note` | `positive_theorem` | `unaudited` | `unaudited` |
@@ -296,12 +298,15 @@ Per the 2026-05-17 ledger snapshot:
 | `frontier_extension_lane_opening_note_2026-04-25` | `open_gate` | `unaudited` | `unaudited` |
 
 **Tier accounting:** the chronology proof's load-bearing dependency is
-the single-clock companion; that companion is `unaudited` and not
-`retained_bounded`. Earlier wording in this note ("retained single-clock
-surface", "retained single-clock framework surface", "retained
-single-clock Hilbert/local-data surface") **overstated** the upstream
-tier and has been corrected inline. The proof's own three-line
-trace-preservation argument is unaffected.
+the single-clock companion's axis-conditional boundary: one supplied
+blocked time step, one declared evolution axis/transfer construction,
+and no admitted independent commuting transfer factor. That companion
+does not derive B-AXIS and is not retained authority for temporal-axis
+selection. Earlier wording in this note ("retained single-clock surface",
+"retained single-clock framework surface", "retained single-clock
+Hilbert/local-data surface") **overstated** the upstream tier and has
+been corrected inline. The proof's own three-line trace-preservation
+argument is unaffected.
 
 **Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM`:** the
 upstream parent's recent `F-B` framing-fix
@@ -318,6 +323,7 @@ single-clock structure.
 
 The chronology proof does **not** import `d_t = 1`, the `(3, 1)`
 signature, or any other parent conclusion; it only imports the
+axis-conditional single-clock/local-data premise under B-AXIS and the
 single-clock evolution structure. Recording the admission-inheritance
 makes the upstream-route dependency explicit.
 

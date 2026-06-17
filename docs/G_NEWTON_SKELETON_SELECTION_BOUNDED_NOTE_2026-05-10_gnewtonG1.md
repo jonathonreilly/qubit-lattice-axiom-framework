@@ -197,10 +197,12 @@ reduces to `H` in the static sector. Step 4 concludes (K2)+(K3).
 
 By (R-SCC) S1, the reconstructed `H` from the canonical action via
 the (R-RP) factorisation is the **unique** generator of a
-strongly-continuous one-parameter unitary group on `H_phys`. By
-(R-SCC) S3, the temporal direction is the unique RP-admissible
-reflection axis on the staggered-Dirac action, so there is no second
-clock and no alternative `H'` arising from a different RP factorisation.
+strongly-continuous one-parameter unitary group on `H_phys`, relative
+to the supplied blocked time step and transfer. The current single-clock
+source withdraws the older S3 claim that RP uniquely selects the
+temporal axis: this skeleton-selection argument therefore consumes the
+B-AXIS boundary as a premise and does not derive the axis label or the
+no-second-clock exclusion from RP alone.
 
 By (R-SCC) S2, the equal-time local algebra on `Σ_t` is the
 mutually-commuting tensor product `A(Σ_t) = ⊗_{x ∈ Σ_t} Cl(3)_x`. The
@@ -230,7 +232,9 @@ The Wick-rotation correspondence
 `T^n = exp(-n a_τ H) ↔ U(t) = exp(-itH)` is faithful on the finite-dim
 `H_phys`
 ([`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-Step 1).
+Step 1), conditional on the single-clock row's B-AXIS boundary: the
+blocked time step, axis/transfer construction, and no-second-clock
+exclusion are supplied premises, not derived here.
 
 Consider the Euclidean / complex-action skeleton. The full Euclidean
 field equation arising from a quadratic action `S_E[φ] =

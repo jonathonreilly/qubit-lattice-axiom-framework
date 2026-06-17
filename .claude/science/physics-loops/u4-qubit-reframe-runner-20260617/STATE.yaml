@@ -1,0 +1,20 @@
+loop_slug: u4-qubit-reframe-runner-20260617
+goal: "Unlock audit readiness for u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20 with a current-axiom verifier."
+target_claim_id: u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/u4-qubit-reframe-runner-20260617
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+block_count: 1
+files_touched:
+  - docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md
+  - scripts/frontier_u4_qubit_reframe_closure.py
+  - logs/runner-cache/frontier_u4_qubit_reframe_closure.txt
+  - .claude/science/physics-loops/u4-qubit-reframe-runner-20260617/
+open_imports:
+  - "Independent audit must still decide whether this source-side alias-map can change any effective status."
+review_loop_disposition: reviewer_owned_not_run
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can run review-loop; audit tooling can then rebuild graph/queue and pick up the new primary runner."
+stop_condition: "Critical U4 source-side verifier packaged as a PR."

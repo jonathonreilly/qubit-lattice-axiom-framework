@@ -3,6 +3,8 @@
 This block creates a live exact-support source for the NNI algebraic identities
 T1-T4 and retargets the Cabibbo work-history note to that source.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4283
+
 What changed:
 
 - added a live structural identities note;

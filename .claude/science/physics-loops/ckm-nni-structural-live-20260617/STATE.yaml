@@ -19,7 +19,8 @@ open_imports:
   - PDG CKM comparators in the calibrated Cabibbo runner
 trace_gate_classification: direct_blocker_closure
 review_loop_disposition: delegated_to_reviewer
-pr_status: pending
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4283
 verification:
   structural_runner: "PASS=18 FAIL=0"
   structural_cache: fresh
@@ -28,5 +29,5 @@ verification:
   py_compile: pass
   diff_check: pass
   forbidden_status_paths: pass
-next_exact_action: "Commit, push, and open a ready PR."
+next_exact_action: "Reviewer can run review-loop/extraction on PR #4283; wider audit-unlock goal should continue with the next independent source-side blocker."
 stop_condition: "Stop this block after a ready PR exists; continue the wider audit-unlock goal by selecting the next independent source-side opportunity."

@@ -1,0 +1,21 @@
+loop_slug: gauge-matter-closure-gates-packet-20260617
+target: gauge_matter_closure_gates_2026-04-12
+branch: codex/gauge-matter-closure-gates-packet-20260617
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_loop_disposition: reviewer_owned_not_run
+files_touched:
+  - docs/GAUGE_MATTER_CLOSURE_GATES_2026-04-12.md
+  - scripts/frontier_gauge_matter_closure_gates_source_packet.py
+  - logs/runner-cache/frontier_gauge_matter_closure_gates_source_packet.txt
+  - .claude/science/physics-loops/gauge-matter-closure-gates-packet-20260617/
+commands_run:
+  - python3 scripts/frontier_gauge_matter_closure_gates_source_packet.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_gauge_matter_closure_gates_source_packet.py
+next_exact_action: reviewer should run review-loop; if accepted, independent audit can reclassify/route the old gates row using the primary runner/cache.
+stop_condition: coherent source-side PR opened; no audit verdict applied.

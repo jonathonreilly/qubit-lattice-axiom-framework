@@ -1,0 +1,22 @@
+loop_slug: causal-chain-live-firewall
+branch: codex/causal-chain-live-firewall-20260617
+base: origin/main@53b951c6f
+objective: source-side audit unblock for the unaudited causal_field_canonical_chain_note
+mode: source_repair_pr
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: causal_field_canonical_chain_note
+target_blocker_text: "canonical chain note had package-retained language, no primary runner, and did not expose the live causal packet/firewall cache as its audit-readable surface"
+audit_actions_performed: none
+review_loop_disposition: reviewer_owned_not_run
+files_touched:
+  - docs/CAUSAL_FIELD_CANONICAL_CHAIN_NOTE.md
+  - scripts/causal_field_live_packet_reference_firewall_2026_06_16.py
+  - logs/runner-cache/causal_field_live_packet_reference_firewall_2026_06_16.txt
+remaining_blockers:
+  - SHAPIRO_DELAY_NOTE.md remains unaudited and is not promoted here.
+  - No physical field-speed theorem or lab-calibrated diamond/NV prediction is supplied.
+  - Independent audit/reviewer must decide whether the narrowed map changes any ledger state.
+next_exact_action: reviewer should inspect the bounded-chain-map narrowing and decide whether to queue causal_field_canonical_chain_note for re-audit.
+stop_condition: coherent source PR opened for this block

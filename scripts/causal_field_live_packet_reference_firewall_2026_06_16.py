@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LIVE = "CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md"
+FIREWALL_CACHE = "logs/runner-cache/causal_field_live_packet_reference_firewall_2026_06_16.txt"
 ARCHIVE_LINK = "archive_unlanded/causal-field-stale-runners-2026-04-30/CAUSAL_PROPAGATING_FIELD_NOTE.md"
 
 LIVE_DOCS = [
@@ -76,6 +77,24 @@ def main() -> None:
     ]
     for phrase in forbidden:
         require(phrase not in reconciliation, f"reconciliation note still carries stale phrase: {phrase}")
+
+    chain = read("docs/CAUSAL_FIELD_CANONICAL_CHAIN_NOTE.md")
+    require("bounded chain map / source-firewall note" in chain, "canonical chain is not scoped as a bounded map")
+    require("No package-level retained" in chain, "canonical chain missing retained-status firewall")
+    require(FIREWALL_CACHE in chain, "canonical chain does not link this firewall cache")
+    require("causal_propagating_field_live_packet_note_2026-06-05" in chain, "canonical chain missing live-packet dependency link")
+    require("causal_field_portability_note" in chain, "canonical chain missing portability dependency link")
+
+    forbidden_chain = [
+        "proposed_retained package",
+        "retained phase curve",
+        "This is a good retained result",
+        "strongest retained claim",
+        "supports a physical field speed",
+        "The Shapiro phase is a unique causal discriminator",
+    ]
+    for phrase in forbidden_chain:
+        require(phrase not in chain, f"canonical chain still carries stale package phrase: {phrase}")
 
     diamond = read("docs/DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md")
     require("archived `0.45` table is stale" in diamond, "diamond bridge note does not mark archived 0.45 table stale")

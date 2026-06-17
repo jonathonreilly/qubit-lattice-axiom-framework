@@ -1,0 +1,39 @@
+loop_slug: diamond-ideal-lockin-boundary
+branch: codex/diamond-ideal-lockin-boundary-20260617
+base: origin/main@53b951c6f
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle: 1
+active_route: ideal lock-in detector map theorem
+hard_residual: Diamond/NV notes named a missing ideal-detector forward-model bridge from delayed driven source histories to lock-in X, Y, phi, controls, and widefield phase slope.
+files_touched:
+  - docs/DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md
+  - scripts/diamond_ideal_lockin_detector_theorem.py
+  - logs/runner-cache/diamond_ideal_lockin_detector_theorem.txt
+  - docs/DIAMOND_SENSOR_PREDICTION_NOTE.md
+  - docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md
+  - docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md
+  - docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md
+  - docs/DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md
+  - docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md
+  - scripts/diamond_sensor_prediction_probe.py
+  - scripts/diamond_sensor_protocol_probe.py
+  - scripts/diamond_phase_ramp_bridge_card.py
+  - scripts/diamond_signal_budget_hardening.py
+  - logs/runner-cache/diamond_sensor_prediction_probe.txt
+  - logs/runner-cache/diamond_sensor_protocol_probe.txt
+  - logs/runner-cache/diamond_phase_ramp_bridge_card.txt
+  - logs/runner-cache/diamond_signal_budget_hardening.txt
+imports_retired:
+  - textbook/unproved lock-in trigonometric identity as hidden bridge
+  - vague future ideal-detector-forward-model gap for X/Y/phi semantics
+open_imports:
+  - source-to-NV physical coupling map
+  - absolute NV transfer coefficient and noise floor
+  - source geometry tied to a lab setup
+review_loop_disposition: reviewer_owned_not_run
+audit_outputs_touched: false
+repo_authority_surfaces_touched: false
+pr_status: pending
+next_exact_action: run focused checks, commit, push, open PR
+stop_condition: PR opened for reviewer; goal remains active for future audit unlocks

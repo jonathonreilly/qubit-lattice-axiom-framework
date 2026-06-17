@@ -1,0 +1,22 @@
+loop: lorentz-os0-b4-replacement-20260617
+target_status: exact-support
+current_branch: physics-loop/lorentz-os0-b4-replacement-20260617
+base: origin/main
+target_claim_id: emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06
+active_route: os0_b4_replacement_bridge
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/EMERGENT_LORENTZ_OS0_B4_MARGINAL_VELOCITY_REPLACEMENT_BRIDGE_2026-06-17.md
+  - docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md
+  - scripts/frontier_emergent_lorentz_os0_b4_replacement_bridge_2026_06_17.py
+  - logs/runner-cache/frontier_emergent_lorentz_os0_b4_replacement_bridge_2026_06_17.txt
+open_imports:
+  - non_OS0_continuous_time_horn
+  - nonperturbative_B4_extension
+  - physical_LV_bound_comparison
+  - per_single_taste_or_taste_breaking_surface
+review_disposition: local_self_check_passed
+next_exact_action: commit, push, open review PR
+stop_condition: PR opened for reviewer/auditor extraction

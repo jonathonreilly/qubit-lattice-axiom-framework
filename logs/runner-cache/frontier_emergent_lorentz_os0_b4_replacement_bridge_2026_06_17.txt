@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_lorentz_os0_b4_replacement_bridge_2026_06_17.py
+runner_sha256: 1499c289646ce34edf9fe2ea14ed3cfac2e94a96704a226489007ac7ff01ff17
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Emergent Lorentz OS0 B4 replacement bridge verifier
+[PASS] spatial O_h plus fixed time leaves two diagonal marginal coefficients -- dim=2
+[PASS] B4 signed-permutation diagonal invariant space is one-dimensional -- dim=1
+[PASS] B4 theorem source contains all-orders perturbative protection
+[PASS] B4 theorem source keeps supplied-regulator boundary explicit
+[PASS] kinetic primitive supplies OS0 kinetic-form premise only
+[PASS] one-loop B4 predecessor is OS0 scoped
+[PASS] older interacting row remains conditional on supplied one-loop dynamics
+[PASS] older interacting row names continuous-time/non-isotropic surface boundary
+[PASS] new note declares exact support, not audit status
+[PASS] new note targets OS0 branch replacement rather than promotion
+[PASS] new note retires supplied RG inputs for OS0 marginal-protection branch
+[PASS] new note keeps non-OS0 and physical-bound gaps open
+[PASS] new note gives downstream citation rule
+[PASS] new note forbids bare retained Lorentz closure
+[PASS] bridge does not consume old supplied RG as proof input
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

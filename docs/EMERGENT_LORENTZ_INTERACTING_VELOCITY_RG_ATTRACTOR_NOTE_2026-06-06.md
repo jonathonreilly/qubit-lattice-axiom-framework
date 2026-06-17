@@ -29,6 +29,19 @@ IR-attractive, the `O_h` spatial split is one scalar, and canonical time
 reduces the Collins gate to one conditional scalar. No new axiom, primitive,
 Tier-A admission, or audit status change is introduced.
 
+## 2026-06-17 OS0 replacement bridge pointer
+
+Downstream rows that need only OS0 marginal velocity protection should not use
+this supplied one-loop RG packet as their authority. They should cite
+[`EMERGENT_LORENTZ_OS0_B4_MARGINAL_VELOCITY_REPLACEMENT_BRIDGE_2026-06-17.md`](EMERGENT_LORENTZ_OS0_B4_MARGINAL_VELOCITY_REPLACEMENT_BRIDGE_2026-06-17.md)
+instead. That bridge consumes the approved kinetic-isotropy primitive and the
+landed all-orders B4 marginal-protection theorem to bypass this row's supplied
+RG inputs on the OS0 branch.
+
+This pointer does not promote this row. The continuous-time/non-isotropic horn,
+physical fixed-point anomalous dimension, power-divergent coefficient, and
+physical Lorentz-violation bound comparison remain conditional here.
+
 ## 2026-06-09 surface-scope update
 
 Residual D below (the power-divergent UV regeneration of the marginal anisotropy)

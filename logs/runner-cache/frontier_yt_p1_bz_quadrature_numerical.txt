@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_bz_quadrature_numerical.py
-runner_sha256: 7d67b5acf4f1477f9300c4a9b64c2197fa4c1230bbb6767087c9d628f875d050
+runner_sha256: 17b9208e02275d84441c529605dba69573a4ab4c107c4424d8760ad6c587e83b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.92
+elapsed_sec: 1.80
 status: ok
 ----- stdout -----
 ========================================================================

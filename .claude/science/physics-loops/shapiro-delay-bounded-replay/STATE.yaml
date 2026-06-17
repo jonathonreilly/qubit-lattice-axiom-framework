@@ -1,0 +1,22 @@
+loop_slug: shapiro-delay-bounded-replay
+branch: codex/shapiro-delay-bounded-replay-20260617
+base: origin/main@53b951c6f
+objective: source-side audit unlock for shapiro_delay_note
+mode: source_repair_pr
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: shapiro_delay_note
+target_blocker_text: "runner was a hard-coded retained-language replay and source note cited failed archive bridge rows while promoting the phase lag"
+audit_actions_performed: none
+review_loop_disposition: reviewer_owned_not_run
+files_touched:
+  - docs/SHAPIRO_DELAY_NOTE.md
+  - scripts/shapiro_phase_lag_probe.py
+  - logs/runner-cache/shapiro_phase_lag_probe.txt
+remaining_blockers:
+  - This remains a finite proxy replay, not a physical Shapiro-law derivation.
+  - The static-cone discriminator no-go remains load-bearing.
+  - Diamond/NV calibration and frequency bridge rows remain separate targets.
+next_exact_action: reviewer should inspect whether the computed bounded replay is ready for re-audit as a bounded source packet.
+stop_condition: coherent source PR opened for this block

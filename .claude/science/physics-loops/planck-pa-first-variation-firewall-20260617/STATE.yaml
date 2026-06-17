@@ -1,0 +1,22 @@
+loop_slug: planck-pa-first-variation-firewall-20260617
+goal: source-side audit unlock for the Planck primitive P_A carrier renaming blocker
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: demote stale proposed-retained wording and expose exact action-source premise
+files_touched:
+  - docs/PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md
+  - docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md
+  - scripts/frontier_planck_link_local_first_variation_p_a_forcing.py
+  - scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py
+  - logs/runner-cache/frontier_planck_link_local_first_variation_p_a_forcing.txt
+  - logs/runner-cache/frontier_planck_primitive_clifford_majorana_edge_derivation.txt
+open_imports:
+  - action-source premise for the link-local staggered-Dirac / Grassmann surface
+  - upstream time/CPT/action authority acceptance by independent review/audit
+  - gravitational boundary/action-density bridge remains outside this block
+review_status: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: reviewer evaluates whether this source-side firewall makes the Planck parent re-auditable as bounded support over the named action-source bridge
+stop_condition: PR opened for reviewer-owned extraction

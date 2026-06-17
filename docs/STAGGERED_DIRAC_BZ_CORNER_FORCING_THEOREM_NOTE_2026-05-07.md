@@ -267,4 +267,7 @@ verification that the hw=1 triplet has distinct translation characters,
 that the translation projectors plus C_3[111] generate M_3(C), that no
 proper nonzero subspace preserves both structures, and that position-space
 epsilon complements BZ-corner bits instead of supplying a diagonal
-Hamming-parity chirality label.
+Hamming-parity chirality label. The closeout emits a classified class-A
+scorecard and `runner_check_breakdown = {A: 16, B: 0, C: 0, D: 0,
+total_pass: 16}` so audit tooling can see the finite-algebra checks without
+relying on the explanatory transcript.

@@ -1,0 +1,22 @@
+loop: bz-corner-classified-runner-20260617
+branch: physics-loop/bz-corner-classified-runner-20260617
+base: origin/main
+target_claim_id: staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: runner_artifact_and_source_visibility_repair
+open_imports:
+  - physical-species / SM-generation identification remains outside this block
+  - BZ-corner Hamming parity to position-space chirality/sublattice remains false/not claimed
+files_touched:
+  - docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md
+  - scripts/probe_bz_corner_decomposition.py
+  - logs/runner-cache/probe_bz_corner_decomposition.txt
+verification:
+  - python3 scripts/probe_bz_corner_decomposition.py
+  - python3 -m py_compile scripts/probe_bz_corner_decomposition.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/probe_bz_corner_decomposition.py
+next_exact_action: open review PR
+stop_condition: PR opened for reviewer extraction; no audit or main landing by this agent

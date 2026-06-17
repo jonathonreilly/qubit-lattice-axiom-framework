@@ -14,5 +14,7 @@ Reviewer should inspect the source science and decide whether this is enough
 to re-open/re-audit the conditional row. Do not treat this branch as an audit
 verdict, ledger mutation, or status landing.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4284
+
 Next exact action after PR: return to the current audit snapshot and pick the
 next uncovered conditional/compute blocker, not old PR freshness.

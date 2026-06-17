@@ -1,6 +1,8 @@
 # PR Backlog
 
-PR status: pending creation.
+PR status: open.
+
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4284
 
 If GitHub PR creation fails, recover with:
 

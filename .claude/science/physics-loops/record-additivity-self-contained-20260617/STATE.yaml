@@ -1,0 +1,19 @@
+loop_slug: record-additivity-self-contained-20260617
+goal: "Repair the audited_conditional record unbounded finite-additivity row by making the finite word/count and Z^3 arbitrary finite-slot proof self-contained."
+target_status: exact-support
+runtime_mode: goal_continuation
+cycle_count: 1
+active_route: "remove the record-history monoid parent as a load-bearing dependency while preserving supplied-context boundaries"
+hard_residual: "The row still does not derive record production, readout context, probability, rates, IID typicality, or a dial."
+files_touched:
+  - docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md
+  - scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py
+  - logs/runner-cache/frontier_record_unbounded_additivity_schema_2026_06_06.txt
+open_imports:
+  - "Supplied readout context remains an explicit premise."
+  - "Supplied nonzero realized records remain explicit premises."
+trace_gate_classification: direct_blocker_closure
+review_findings: "local self-check pass; formal review-loop delegated to reviewer per user instruction"
+pr_status: pending
+next_exact_action: "Run final checks, commit, push, and open a ready source-side PR."
+stop_condition: "PR opened; do not audit, retag, land, or refresh unrelated PRs."

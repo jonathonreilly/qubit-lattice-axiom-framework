@@ -8,31 +8,35 @@ Status: conditional-support
 actual_current_surface_status: conditional-support
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: "Exact finite-additivity schema over arbitrary finite pairwise-disjoint record collections, conditional on a supplied readout context, supplied nonzero realized record atom, and independently retained record-history monoid support."
+conditional_surface_status: "Exact finite-additivity schema over arbitrary finite pairwise-disjoint supplied record collections, conditional on a supplied readout context and supplied nonzero realized record atoms; finite word/count and Z^3 arbitrary finite-slot support is proved locally here."
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "This branch-local note supplies an audit-usable consequence of the approved Record axiom; it does not apply audit status or derive record production."
+proposal_allowed_reason: "This source note supplies an audit-usable consequence of the approved Lattice + Record axioms under supplied-context inputs; it does not apply audit status or derive record production."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 
 **Depends on:**
 
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
-- [`RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md`](RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md)
+
+Parallel context only, not a load-bearing dependency:
+`RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md`.
 
 ## Summary
 
 The 2026-06-05 minimal axiom memo states Record as durable registration of the
 realized outcome, with scalar readout `I` finitely additive over finite
-pairwise-disjoint record collections and `I(empty)=0`. The record-history
-monoid note supplies the separate finite-word/count surface and the `Z^3`
-finite-slot construction.
+pairwise-disjoint record collections and `I(empty)=0`. This note now proves
+the finite word/count surface and the `Z^3` arbitrary finite-slot construction
+directly, so no separate record-history monoid parent is load-bearing for this
+schema.
 
 This is not bounded in the sense of a fixed global cap. For every fixed finite
-prefix length `N`, the readout of `N` unit records is bounded by `N`. But the
-record-history monoid surface ranges over arbitrary finite words/counts. Once a
-readout context supplies a nonzero realized record atom, the family
+prefix length `N`, the readout of `N` unit records is bounded by `N`. But
+`Z^3` supplies finite disjoint slot lists of every finite length. Once a
+readout context supplies nonzero realized record atoms on those slots, the
+family
 
 ```text
 R_n = {n disjoint unit records}
@@ -49,21 +53,21 @@ This is the precise "bounded vs unbounded" split:
 
 ## What This Derives
 
-From Lattice, Record, and the record-history monoid support theorem, with a
-supplied readout context containing a nonzero realized record atom:
+From Lattice and Record, with a supplied readout context containing nonzero
+realized record atoms:
 
 1. finite additivity gives exact readout on each finite collection;
-2. the history-monoid construction supplies finite words/counts;
+2. finite words under concatenation and count vectors are ordinary finite
+   combinatorial objects, proved directly here;
 3. `Z^3` supplies arbitrarily large finite disjoint slot lists;
 4. no finite global bound follows across all finite disjoint collections;
 5. each finite prefix remains an exact finite object, not an actually completed
    infinite history.
 
 No new axiom is needed for this principle. It is a consequence of finite
-additivity plus arbitrary finite collection size, once the separate
-record-history monoid theorem is available. The conditional parts are the
-readout context, the existence/production of nonzero records, and the
-independent audit status of the monoid parent.
+additivity plus arbitrary finite collection size. The conditional parts are the
+readout context and the existence/production of nonzero records. The proof
+does not infer production from the existence of lattice slots.
 
 ## 2026-06-16 Post-Audit Claim-Type Repair
 
@@ -74,21 +78,33 @@ supplied, but the unbounded schema still carries a supplied-readout-context
 and supplied-produced-record premise.
 
 This source note remains an `open_gate` / conditional-support schema: it exposes
-the exact algebra available after records exist and wires the dependency to the
-separate record-history monoid parent. No retained-bounded upgrade follows from
-this source until that parent is independently audited or otherwise admitted by
-the audit lane. This row does not derive record production, unit normalization
-or a positive lower bound, the readout context, probability, rates, or dial
-selection.
+the exact algebra available after records exist and proves the finite
+word/count and finite-slot surface locally. No retained-bounded upgrade follows
+from this source unless the audit lane accepts the supplied-context boundary.
+This row does not derive record production, unit normalization or a positive
+lower bound, the readout context, probability, rates, or dial selection.
 
 ## Dependency-Edge Repair And Supplied-Context Firewall
 
 Independent audit correctly kept this row conditional: the algebraic
 finite-additivity schema is exact, but the unbounded lift requires arbitrarily
 large finite collections of nonzero realized records in a supplied readout
-context. The record-history monoid parent is the intended support for the
-finite-word/count and arbitrary finite-slot surface; it is not a producer and
-must be independently audited before it can carry a retained-bounded child.
+context. This source repair now supplies the finite-word/count and arbitrary
+finite-slot surface directly:
+
+- finite histories are finite words in the supplied record alphabet, with
+  associative concatenation and an empty-word identity;
+- forgetting order gives finite count vectors, and appending a realized atom
+  increments exactly one count;
+- for every finite `N`, the lattice sites `(0,0,0), ..., (N-1,0,0)` are
+  pairwise distinct;
+- therefore for every finite bound `B`, the supplied-context schema has a
+  finite collection of length `B+1` if the corresponding nonzero realized
+  records are supplied.
+
+The separate record-history monoid note is parallel context only. It is not a
+load-bearing dependency of this row's finite-additivity schema after this
+repair.
 
 The Record axiom supplies durable registration and finite additivity after
 records exist. It does not supply the producer, the readout context, probability
@@ -97,13 +113,13 @@ weights, or a physical rule that realizes arbitrarily many nonzero records.
 Downstream uses must therefore cite this row as:
 
 ```text
-requires_supplied_readout_context_and_record_history_monoid_support
+requires_supplied_readout_context_and_supplied_nonzero_records
 ```
 
 They may use the fixed finite-prefix identities and the conditional
 `I(R_n)=n` arithmetic, but they must not cite this row as retained authority
 for record production, probability, rate, dial selection, or capacity without
-carrying the supplied-context boundary and the record-history monoid dependency.
+carrying the supplied-context and supplied-record boundary.
 
 ## Dynamics Implication
 
@@ -132,10 +148,9 @@ clock/rate, or stable dial setting.
 - Audit lanes that need only durable realized records plus finite additive
   readout can route through the approved `minimal_axioms` Record surface rather
   than through old Tier-A admission language.
-- Rows that need arbitrary finite histories or unbounded count accumulation have
-  an explicit dependency edge to the record-history monoid parent.
-- Rows must not treat this dependency edge as a retained-bounded result until
-  the parent support is retained by the audit lane.
+- Rows that need arbitrary finite histories or unbounded count accumulation can
+  cite this row for the local finite word/count and `Z^3` arbitrary finite-slot
+  construction, while carrying the supplied-record boundary.
 - Rows that need production, probabilities, IID typicality, rates, reset cost,
   measurement dynamics, or dial selection must still expose those separate
   gates.
@@ -151,10 +166,9 @@ clock/rate, or stable dial setting.
   dynamics.
 - Does not select or force a Koide/generation dial location.
 - Does not update repo-wide audit data or effective status.
-- Does not promote the record-history monoid parent or this row to retained
-  status.
+- Does not promote this row to retained status.
 - Downstream uses must remain conditional on the supplied readout context and
-  the record-history monoid dependency.
+  supplied nonzero records.
 
 ## Runner
 
@@ -177,9 +191,9 @@ The runner checks:
 - fixed-prefix boundedness versus no global cap across arbitrary finite `n`;
 - the zero-record and finite-occupancy cap failure modes;
 - post-record integral counts versus normalized frequencies;
-- dependency-edge checks against the minimal axiom memo and record-history
-  monoid note;
+- dependency-edge checks against the minimal axiom memo plus local
+  finite-word/count and `Z^3` arbitrary finite-slot proof;
 - that production kernel, probability law, IID typicality, clock/rate, and
   dial selection remain open gates.
 - that downstream uses must not treat the unbounded lift as bare retained
-  authority without the supplied-context boundary and monoid dependency.
+  authority without the supplied-context and supplied-record boundary.

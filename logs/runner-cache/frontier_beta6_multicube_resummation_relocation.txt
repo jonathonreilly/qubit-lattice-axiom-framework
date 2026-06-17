@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_multicube_resummation_relocation.py
-runner_sha256: 1e1541f876aca1f6c83fbdec6f8f59e1cc3a198c9290f63f8da21677b4d3bb0b
+runner_sha256: a52a15f70c74296c21874711e3214bf328362dd0d8b33b12a31c228f9158da20
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.72
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 [PASS] kappa_2 = m![b^m]K = 1/18  |  got 1/18
@@ -17,9 +17,10 @@ status: ok
 [PASS] T=3 multiplicity truncation -> nearest root witness ~5.74 (below 6)  |  5.7390
 [PASS] root witness migrates monotonically 5.74 -> 8.205 as multiplicity tower fills  |  T3=5.739 T5=6.357 T8=7.385 T12=8.133 T20=8.205
 [PASS] high-truncation witness reaches the J-zero scale 8.2052 (> 6)  |  T20=8.2052
+[PASS] source note firewalls Euler normalization and open beta9/beta10 classifications
 [PASS] OPEN GATE: local K-built support is checked; full beta9/beta10 sector classification remains a source-runner target (NOT a closure)
 
-SCORECARD: PASS=12 FAIL=0
+SCORECARD: PASS=13 FAIL=0
 
 ----- stderr -----
 

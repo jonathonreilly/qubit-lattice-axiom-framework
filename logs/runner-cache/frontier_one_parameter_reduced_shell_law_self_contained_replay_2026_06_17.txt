@@ -1,6 +1,9 @@
-Exact one-parameter reduced sewing-shell law
+Self-contained one-parameter reduced sewing-shell replay
 ========================================================================
-source packet: self-contained 2026-06-17 finite-operator replay
+[BOUNDED] PASS: source note registers this self-contained replay runner without status promotion
+    frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py
+[BOUNDED] PASS: self-contained replay source has no frontier-loader or helper-module imports
+    forbidden loader/helper import strings absent
 c_aniso = 0.081435402995901
 max point-column charge difference from unity = 4.441e-16
 max point-column radial-profile difference = 1.110e-15
@@ -18,6 +21,8 @@ max family-vs-reference c_aniso difference = 4.163e-17
     max total-field difference = 2.602e-18, max anisotropic-field difference = 3.740e-18
 [EXACT] PASS: the anisotropic anchor amplitude obeys A_aniso = c_aniso * Q with one exact lattice constant
     c_aniso = 0.081435402995901
+[EXACT] PASS: self-contained c_aniso reproduces the registered reduced-shell constant
+    c_aniso = 0.081435402995901
 [EXACT] PASS: the exact local O_h and finite-rank source families satisfy the same one-parameter reduced shell law
     radial=5.551e-16, orbit=1.804e-16, shell=2.602e-18, aniso=1.952e-18, c_diff=4.163e-17
 [BOUNDED] PASS: on the reduced surface the sewing-shell law behaves like one isotropic shell density plus one cubic shear mode tied to total charge
@@ -26,5 +31,5 @@ max family-vs-reference c_aniso difference = 4.163e-17
 ========================================================================
 SUMMARY
 ========================================================================
-PASS=7 FAIL=0 TOTAL=7
+PASS=10 FAIL=0 TOTAL=10
 All checks passed.

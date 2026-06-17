@@ -31,6 +31,8 @@ wrapper itself is bounded, not retained.
 **Script:** `scripts/frontier_one_parameter_reduced_shell_law.py`
 **Helper source/cache packet:** `scripts/one_parameter_shell_helper_packet_2026_06_16.py`
 **Helper packet cache:** `logs/runner-cache/one_parameter_shell_helper_packet_2026_06_16.txt`
+**Self-contained replay:** `scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py`
+**Self-contained replay cache:** `logs/runner-cache/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.txt`
 **Status:** Exact reduced-shell theorem plus bounded shell-stress interpretation
 
 ## Purpose
@@ -147,8 +149,9 @@ promote this note or change the audited claim scope, which remains the
 linearity-from-identical-normalized-columns argument plus the two
 exact source-family checks at cutoff `R = 4`.
 
-The runner `scripts/frontier_one_parameter_reduced_shell_law.py`
-imports five frontier helper modules as static Python imports:
+Before the 2026-06-17 self-contained replay repair, the runner
+`scripts/frontier_one_parameter_reduced_shell_law.py` imported five frontier
+helper modules as static Python imports:
 
 - `frontier_star_shell_projector.py` — exterior projector and
   shell-mean operator.
@@ -163,10 +166,16 @@ imports five frontier helper modules as static Python imports:
 - `frontier_radial_shell_matching_law.py` — radial shell kernel
   `k_rad` and the radial-shell average operator.
 
+The current primary runner now uses the self-contained 2026-06-17 replay module
+for these finite operator/source constructions instead of importing the five
+helper modules directly. The list above remains the historical/provenance
+surface whose constructions are inlined by the replay, not a set of opaque
+load-bearing imports in the current primary runner.
+
 The helper packet runner
 `scripts/one_parameter_shell_helper_packet_2026_06_16.py` checks that
 the five helper source files exist, expose the functions consumed by the
-primary runner, have fresh runner caches under `logs/runner-cache/`,
+legacy helper-path runner, have fresh runner caches under `logs/runner-cache/`,
 exit cleanly, and report passing output.
 
 None of these helper modules currently has a dedicated retained
@@ -230,11 +239,9 @@ this addendum.
 This rigorization is class D (gap registration and packet repair). It
 does not change any algebraic content or load-bearing step
 classification. The primary runner output remains `PASS=7 FAIL=0`; the
-runner source now names the helper modules by static import and the
-helper packet adds source/cache freshness checks. This records the five
-frontier helper modules as open one-hop dependency targets matching the
-audit verdict's named missing dependency edges. Mirrors the live
-cite-chain pattern used by the
+helper packet records the five frontier helper modules as provenance and open
+one-hop dependency targets matching the audit verdict's named missing
+dependency edges. Mirrors the live cite-chain pattern used by the
 `DM_NEUTRINO_SCHUR_SUPPRESSION_THEOREM_NOTE_2026-04-15.md` cluster
 (commit `02ad4fadd`).
 
@@ -247,10 +254,10 @@ for this runner, so the restricted packet still treated the five
 frontier helper modules as opaque dynamic imports.
 
 The resolver repair exposed the helper source chain for dynamic loader
-calls. This source/cache packet repair makes the same helper surface
-explicit in `scripts/frontier_one_parameter_reduced_shell_law.py` by
-static imports and adds fresh caches for the helper runners. For this
-row, the inspectable helper source chain includes:
+calls. The 2026-06-16 source/cache packet repair made the same helper surface
+explicit through static imports and added fresh caches for the helper runners.
+The 2026-06-17 primary runner no longer consumes that helper-import route, but
+the provenance chain remains inspectable:
 
 - `scripts/frontier_star_shell_projector.py`
 - `scripts/frontier_same_source_metric_ansatz_scan.py`
@@ -270,3 +277,38 @@ inspect the actual helper sources rather than treating the reduced-shell
 operators as hidden runtime premises; the auditor still decides whether
 that closes the runner-artifact issue or leaves a genuine retained
 helper-authority gap.
+
+## 2026-06-17 self-contained reduced-shell replay
+
+The source packet now also includes
+[`scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py`](../scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py).
+This runner is a stronger audit-packet repair for the same blocker: it inlines
+the finite Dirichlet negative-Laplacian, star-support point-Green columns,
+local `O_h` source-family constructor, finite-rank source-family constructor,
+exterior projection, shell-source extraction, radial averaging, and shell-mean
+readout consumed by the primary theorem.
+
+The self-contained replay has no `_frontier_loader` dependency and no imports
+of the five contested helper modules. It independently recomputes the same
+seven point-column identities, the same two source-family checks, and the same
+registered reduced-shell constant
+`c_aniso = 0.081435402995901`.
+
+The primary runner `scripts/frontier_one_parameter_reduced_shell_law.py` now
+uses this self-contained replay module as its finite-operator source while
+preserving the original seven-check scorecard. This makes the audit packet's
+primary path inspectable without following the old helper-import route.
+
+This does not promote this row, does not add a new axiom or admission, and does
+not claim retained nonlinear gravity closure. It only removes the avoidable
+opaque-helper artifact from the re-audit packet: the remaining scientific
+boundary is still the bounded reduced `R = 4` shell surface plus the open
+nonlinear shell-stress / junction lift.
+
+Verification:
+
+```bash
+python3 scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py
+```
+
+Expected scorecard: `PASS=10 FAIL=0 TOTAL=10`.

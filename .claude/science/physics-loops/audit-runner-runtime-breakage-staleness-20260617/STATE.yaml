@@ -1,0 +1,22 @@
+loop_slug: audit-runner-runtime-breakage-staleness-20260617
+goal: "Show that runtime-failure runner breakage inventory rows are stale under current source/cache state."
+target_status: exact-support
+branch: codex/audit-runner-breakage-staleness-20260617
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+mode: source_side_audit_unlock
+current_cycle: 1
+active_route: runtime_breakage_inventory_cache_freshness_guard
+files_touched:
+  - scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py
+  - logs/runner-cache/audit_runner_runtime_breakage_staleness_guard_2026_06_17.txt
+  - .claude/science/physics-loops/audit-runner-runtime-breakage-staleness-20260617/
+open_imports: []
+claim_status:
+  actual_current_surface_status: exact-support
+  trace_class: methodology
+  reachability_to_target: supports
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+review_disposition: reviewer_owned_not_run
+next_exact_action: "Reviewer/auditor may run the guard or inspect its cache before discarding stale timeout/nonzero runner-breakage blockers."
+stop_condition: "Coherent PR opened; continue campaign on a different uncovered blocker if requested."

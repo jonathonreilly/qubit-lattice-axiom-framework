@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py
+runner_sha256: 032c60eda54b3970075436c094f20574f9e5c5816d9c1ac4295d5a175365bc07
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+runtime_breakage_staleness_guard_2026_06_17
+inventory: docs/audit/data/runner_breakage_inventory.json
+inventory_runner_timeout_sec: 60
+target_reasons: nonzero_exit, timeout
+target_entries: 39
+  nonzero_exit: 3
+  timeout: 36
+fresh_ok_entries: 39
+checked_runners:
+  - timeout: scripts/frontier_action_normalization.py: fresh ok logs/runner-cache/frontier_action_normalization.txt
+  - timeout: scripts/frontier_atomic_hydrogen_helium_probe.py: fresh ok logs/runner-cache/frontier_atomic_hydrogen_helium_probe.txt
+  - timeout: scripts/frontier_bell_inequality.py: fresh ok logs/runner-cache/frontier_bell_inequality.txt
+  - timeout: scripts/frontier_color_projection_mc.py: fresh ok logs/runner-cache/frontier_color_projection_mc.txt
+  - timeout: scripts/frontier_confinement_string_tension.py: fresh ok logs/runner-cache/frontier_confinement_string_tension.txt
+  - timeout: scripts/frontier_distance_law_definitive.py: fresh ok logs/runner-cache/frontier_distance_law_definitive.txt
+  - timeout: scripts/frontier_dm_abcc_basin_enumeration_completeness.py: fresh ok logs/runner-cache/frontier_dm_abcc_basin_enumeration_completeness.txt
+  - timeout: scripts/frontier_dm_abcc_retained_measurement_closure_2026_04_21.py: fresh ok logs/runner-cache/frontier_dm_abcc_retained_measurement_closure_2026_04_21.txt
+  - timeout: scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py: fresh ok logs/runner-cache/frontier_dm_full_closure_same_surface_numerator_selector_boundary.txt
+  - timeout: scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py: fresh ok logs/runner-cache/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.txt
+  - timeout: scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py: fresh ok logs/runner-cache/frontier_dm_full_closure_same_surface_thermal_series_tail_support.txt
+  - timeout: scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py: fresh ok logs/runner-cache/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.txt
+  - timeout: scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py: fresh ok logs/runner-cache/frontier_dm_leptogenesis_pmns_multistart_selector_support.txt
+  - timeout: scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py: fresh ok logs/runner-cache/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.txt
+  - timeout: scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py: fresh ok logs/runner-cache/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.txt
+  - timeout: scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py: fresh ok logs/runner-cache/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.txt
+  - timeout: scripts/frontier_dm_neutrino_source_surface_perturbative_uniqueness_theorem.py: fresh ok logs/runner-cache/frontier_dm_neutrino_source_surface_perturbative_uniqueness_theorem.txt
+  - timeout: scripts/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.py: fresh ok logs/runner-cache/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.txt
+  - timeout: scripts/frontier_dm_pns_attack_cascade.py: fresh ok logs/runner-cache/frontier_dm_pns_attack_cascade.txt
+  - timeout: scripts/frontier_dm_split2_dense_grid_lipschitz_dominance_support_2026_04_21.py: fresh ok logs/runner-cache/frontier_dm_split2_dense_grid_lipschitz_dominance_support_2026_04_21.txt
+  - timeout: scripts/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.py: fresh ok logs/runner-cache/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.txt
+  - timeout: scripts/frontier_frozen_stars_rigorous.py: fresh ok logs/runner-cache/frontier_frozen_stars_rigorous.txt
+  - timeout: scripts/frontier_g_bare_critical_feature_scan.py: fresh ok logs/runner-cache/frontier_g_bare_critical_feature_scan.txt
+  - timeout: scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_2026_04_20.py: fresh ok logs/runner-cache/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_2026_04_20.txt
+  - timeout: scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py: fresh ok logs/runner-cache/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.txt
+  - nonzero_exit: scripts/frontier_hierarchy_effective_potential_endpoint.py: fresh ok logs/runner-cache/frontier_hierarchy_effective_potential_endpoint.txt
+  - timeout: scripts/frontier_higgs_mass_derived.py: fresh ok logs/runner-cache/frontier_higgs_mass_derived.txt
+  - timeout: scripts/frontier_lorentz_kernel_positive_closure.py: fresh ok logs/runner-cache/frontier_lorentz_kernel_positive_closure.txt
+  - timeout: scripts/frontier_plaquette_self_consistency.py: fresh ok logs/runner-cache/frontier_plaquette_self_consistency.txt
+  - timeout: scripts/frontier_quark_e_channel_endpoint_quotient_law.py: fresh ok logs/runner-cache/frontier_quark_e_channel_endpoint_quotient_law.txt
+  - timeout: scripts/frontier_quark_endpoint_ratio_chain_law.py: fresh ok logs/runner-cache/frontier_quark_endpoint_ratio_chain_law.txt
+  - timeout: scripts/frontier_quark_route2_exact_time_coupling.py: fresh ok logs/runner-cache/frontier_quark_route2_exact_time_coupling.txt
+  - timeout: scripts/frontier_quark_up_amplitude_native_affine_no_go.py: fresh ok logs/runner-cache/frontier_quark_up_amplitude_native_affine_no_go.txt
+  - nonzero_exit: scripts/frontier_self_consistent_field_equation.py: fresh ok logs/runner-cache/frontier_self_consistent_field_equation.txt
+  - nonzero_exit: scripts/frontier_tensor_block_closure_test.py: fresh ok logs/runner-cache/frontier_tensor_block_closure_test.txt
+  - timeout: scripts/frontier_tensor_support_center_excess_law.py: fresh ok logs/runner-cache/frontier_tensor_support_center_excess_law.txt
+  - timeout: scripts/frontier_wilson_mu2_distance_sweep.py: fresh ok logs/runner-cache/frontier_wilson_mu2_distance_sweep.txt
+  - timeout: scripts/frontier_yt_bridge_uv_class_uniqueness.py: fresh ok logs/runner-cache/frontier_yt_bridge_uv_class_uniqueness.txt
+  - timeout: scripts/frontier_yt_qfp_insensitivity.py: fresh ok logs/runner-cache/frontier_yt_qfp_insensitivity.txt
+PASS: all timeout/nonzero_exit inventory entries have fresh status=ok caches on the current source tree.
+Scope note: missing_runner_file entries are intentionally out of scope for this guard; they are path-resolution issues, not runtime timeout/nonzero evidence.
+
+----- stderr -----
+

@@ -1,0 +1,21 @@
+loop: distance-law-finite-table-diagnostic-20260617
+goal: "Unlock the audited distance_law_definitive_note row by making the source claim match the finite-table diagnostic the runner actually supports."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Split original closure language into bounded finite-table diagnostic plus explicit estimator-selection blocker."
+files_touched:
+  - docs/DISTANCE_LAW_DEFINITIVE_NOTE.md
+  - scripts/frontier_distance_law_definitive.py
+  - scripts/distance_law_finite_table_diagnostic_firewall_2026_06_17.py
+  - logs/runner-cache/frontier_distance_law_definitive.txt
+  - logs/runner-cache/distance_law_finite_table_diagnostic_firewall_2026_06_17.txt
+review_loop_disposition: reviewer_owned_not_run
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+next_exact_action: "Reviewer should run review-loop/extract as needed, then the independent audit lane can re-audit the narrowed finite-table diagnostic surface."
+stop_condition: "Coherent source-side unblock PR opened."

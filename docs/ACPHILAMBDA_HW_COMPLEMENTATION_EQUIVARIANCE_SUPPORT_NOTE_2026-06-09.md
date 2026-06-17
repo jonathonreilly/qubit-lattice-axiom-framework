@@ -7,7 +7,7 @@
 or predict an audit outcome.
 **Primary runner:**
 [`scripts/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.py`](../scripts/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.py)
-(SCORECARD: PASS=17, FAIL=0; cached:
+(SCORECARD: PASS=18, FAIL=0; cached:
 [`logs/runner-cache/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.txt`](../logs/runner-cache/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.txt))
 
 ## Boundary
@@ -40,9 +40,12 @@ tested* invariants. This addendum upgrades that to an enumeration: on the
 finite surface itself, every available rescue move is **compensated or
 nonexistent**.
 
-- **(R-A) Relabelings.** The invertible affine-Boolean transformations of the
-  corner cube form the order-48 semidirect product
-  `S_3 semidirect (Z_2)^3`, and they classify exactly as: 3 frame rotations
+- **(R-A) Relabelings.** Here "relabeling" means the order-48
+  coordinate-permutation/bit-flip cube automorphism group
+  `S_3 semidirect (Z_2)^3`, acting by
+  `x_i -> x_{pi(i)} xor f_i` on the three BZ-corner labels. It is not the
+  larger affine group `AGL(3,2)` and not an arbitrary Boolean map. This
+  order-48 relabeling universe classifies exactly as: 3 frame rotations
   (`C_3`, already quotiented), 3 orientation transpositions (the stripped
   orientation convention; elementary symmetric readouts are invariant under
   the full `S_3`), 6 triplet swaps (complementation composed with the former
@@ -85,7 +88,8 @@ statements below are weakened.
 - The circulant determinant identity
   `e3 = a^3 - 3 a B^2 + 2 B^3 cos(3 delta)` is exact.
 - The elementary symmetric polynomials are invariant under slot permutation.
-- Rigidity R-A: the 48 affine-Boolean cube relabelings classify as
+- Rigidity R-A: the 48 coordinate-permutation/bit-flip cube relabelings
+  `x_i -> x_{pi(i)} xor f_i` classify as
   `3 + 3 + 3 + 3` grading-preserving (frame / orientation /
   complementation-composed) plus `36` grading-breaking; symmetric readouts
   are invariant under the full `S_3`.

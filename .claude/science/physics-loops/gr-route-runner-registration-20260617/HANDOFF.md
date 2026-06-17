@@ -5,6 +5,8 @@
 - `s3_anomaly_spacetime_lift_note`
 - `universal_gr_tensor_variational_candidate_note`
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4259
+
 ## What changed
 
 - `S3_ANOMALY_SPACETIME_LIFT_NOTE.md` now registers

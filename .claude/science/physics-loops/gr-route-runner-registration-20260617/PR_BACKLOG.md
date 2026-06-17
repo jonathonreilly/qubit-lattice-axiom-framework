@@ -1,6 +1,10 @@
 # PR Backlog
 
-Pending PR creation. Intended command:
+No PR backlog remains. Ready PR:
+
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4259
+
+Recovery command if the PR must be recreated:
 
 ```bash
 git push -u origin codex/gr-route-runner-registration-20260617

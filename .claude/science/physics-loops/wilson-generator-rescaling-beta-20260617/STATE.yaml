@@ -1,0 +1,20 @@
+loop_slug: wilson-generator-rescaling-beta-20260617
+target_claim_id: g_bare_rescaling_freedom_removal_theorem_note_2026-05-03
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+branch: physics-loop/wilson-generator-rescaling-beta-20260617
+files_touched:
+  - docs/WILSON_GENERATOR_RESCALING_BETA_BOOKKEEPING_BOUNDED_NOTE_2026-06-17.md
+  - scripts/wilson_generator_rescaling_beta_bookkeeping_2026_06_17.py
+  - docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
+open_imports:
+  - Wilson plaquette action surface remains supplied/contextual here.
+  - beta=6 and g_bare=1 are not derived.
+verification:
+  - "python3 scripts/wilson_generator_rescaling_beta_bookkeeping_2026_06_17.py -> SUMMARY: PASS=29 FAIL=0"
+  - "python3 scripts/frontier_g_bare_rescaling_conditional_algebra_check.py -> SUMMARY: PASS = 10, FAIL = 0"
+  - "python3 -m py_compile scripts/wilson_generator_rescaling_beta_bookkeeping_2026_06_17.py scripts/frontier_g_bare_rescaling_conditional_algebra_check.py -> pass"
+next_exact_action: "Commit, push, and open review PR."
+stop_condition: "PR opened for reviewer/auditor extraction."

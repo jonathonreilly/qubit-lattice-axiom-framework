@@ -37,6 +37,16 @@ Here:
   `T_a -> c T_a` are not used as load-bearing inputs to the narrowed claim.
   They remain open inputs for any future beta-routing theorem.
 
+**2026-06-17 companion bridge.** The separate bounded support note
+[`WILSON_GENERATOR_RESCALING_BETA_BOOKKEEPING_BOUNDED_NOTE_2026-06-17.md`](WILSON_GENERATOR_RESCALING_BETA_BOOKKEEPING_BOUNDED_NOTE_2026-06-17.md)
+now supplies the exact Wilson bookkeeping that this row deliberately did not:
+given a supplied Wilson quadratic surface and a named held-fixed convention,
+it derives the corresponding `beta_new / beta_old` law under
+`T_a -> c T_a`. This note's current load-bearing claim remains the narrower
+Gram-scaling lemma; the companion is available for any later review/audit
+route that wants to reopen the beta-routing surface without hiding a
+normalization convention.
+
 ## 1. The Narrowed Claim
 
 > **Lemma (canonical Gram scaling).**
@@ -109,3 +119,9 @@ color algebra authority linked in Section 0. Related rows such as
 `G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md` are reader
 context only and are intentionally not cited as load-bearing authorities
 here.
+
+The 2026-06-17 Wilson generator-rescaling bookkeeping companion is also
+reader/audit-repair context for this narrowed row, not a change to this row's
+effective status:
+
+- [`WILSON_GENERATOR_RESCALING_BETA_BOOKKEEPING_BOUNDED_NOTE_2026-06-17.md`](WILSON_GENERATOR_RESCALING_BETA_BOOKKEEPING_BOUNDED_NOTE_2026-06-17.md)

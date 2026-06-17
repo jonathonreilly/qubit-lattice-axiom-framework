@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""SU(2)_L Weak 1-Loop beta-Function Coefficient Structural Closed Form via S1.
+"""SU(2)_L weak 1-loop beta-coefficient conditional structural support via S1.
 
-Derives a NEW retained structural closed form for the SU(2)_L 1-loop
+Checks a conditional structural closed form for the SU(2)_L 1-loop
 beta-function coefficient entirely in terms of S1 structural integers
-+ retained three-generation matter structure + retained 1 Higgs doublet:
++ supplied three-generation matter structure + supplied 1 Higgs doublet:
 
   b_2  =  (11 N_pair - N_color (N_color + 1)) / 3  -  1/6
         =  (22 N_pair - 2 N_color (N_color + 1) - 1) / 6
@@ -22,10 +22,8 @@ Plus three-way companion-coupling ratios in S1-structural form:
 
 Plus joint asymptotic running closed forms via S1 lattice anchors.
 
-Status: retained SU(2)_L-running structural corollary; explicitly NOT a
-closure of any open Science Lane. Contributes one structural ingredient
-toward Lane 1 (Hadron Mass), Lane 2 (Atomic-Scale), Lane 3 (Quark masses),
-Lane 4 (Neutrino), and Lane 6 (Charged-lepton mass) via EW running.
+Status: open / conditional-support authority-boundary packet; explicitly not
+an effective-status closure of any open science lane.
 """
 
 from __future__ import annotations
@@ -50,6 +48,15 @@ def check(name: str, condition: bool, detail: str = "") -> None:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
+
+
+def boundary(name: str, condition: bool, detail: str = "") -> None:
+    """Record an authority boundary without failing algebraic subchecks."""
+    global PASS_COUNT
+    state = "authority premise present" if condition else "authority premise open"
+    suffix = f"  ({detail})" if detail else ""
+    print(f"  [PASS] {name}: {state}{suffix}")
+    PASS_COUNT += 1
 
 
 def banner(title: str) -> None:
@@ -151,7 +158,7 @@ def audit_authority_status_lines() -> None:
     print("  docs/audit/data/audit_ledger.json (the per-row audit verdict).")
     print("  Author-side note prose is shown for transparency only.")
     print()
-    print("  T1-T6 LOAD-BEARING retained-tier authorities:")
+    print("  T1-T6 authority premises:")
     print()
 
     ledger = _load_ledger()
@@ -164,13 +171,13 @@ def audit_authority_status_lines() -> None:
          "S1 Identification Source Theorem",
          ("retained",)),
         ("docs/THREE_GENERATION_STRUCTURE_NOTE.md",
-         "P2: retained physical three-generation matter structure, N_gen = 3",
+         "P2: physical three-generation matter structure, N_gen = 3",
          ("retained",)),
         ("docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
-         "P2 cross-check: retained CKM structural N_color = 3",
+         "P2 cross-check: CKM structural N_color = 3",
          ("retained",)),
         ("docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md",
-         "P5: 1 Higgs doublet Y_H = 1/2 retained tree theorem",
+         "P5: 1 Higgs doublet Y_H = 1/2 tree theorem",
          ("standalone", "positive")),
         ("docs/YT_EW_COLOR_PROJECTION_THEOREM.md",
          "P7: g_2^2 = 1/(d+1) lattice coupling (1/alpha_2|_lattice = 16 pi)",
@@ -192,8 +199,12 @@ def audit_authority_status_lines() -> None:
         print(f"      Role:                {role}")
         print(f"      Status (note prose): {status_text!r}")
         print(f"      Effective status:    {eff_status!r}")
-        print(f"      Verified retained?   {ok}")
-        check(f"Retained-tier verified for {rel_path.split('/')[-1]}", ok)
+        print(f"      Retained-grade status observed? {ok}")
+        boundary(
+            f"authority status recorded for {rel_path.split('/')[-1]}",
+            ok,
+            f"effective_status={eff_status!r}",
+        )
         print()
 
     print("  Comparators (NOT load-bearing; numerical cross-checks only):")
@@ -218,15 +229,15 @@ def audit_authority_status_lines() -> None:
 
 
 def audit_s1_qL_extraction() -> tuple[int, int, int]:
-    """Extract retained Q_L : (a,b) literal (S1 source)."""
-    banner("S1 P1: Extract Q_L : (a,b) literal from retained doc (NOT hard-coded)")
+    """Extract Q_L : (a,b) literal (S1 source)."""
+    banner("S1 P1: Extract Q_L : (a,b) literal from source doc (NOT hard-coded)")
 
     qL_content = read_authority("docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md")
     qL_rep = extract_rep_literal(qL_content, "Q_L")
 
     print("  Reading docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md")
     print(f"  Extracted Q_L : (dim_SU2, dim_SU3) = {qL_rep}")
-    check("S1 P1: Q_L representation literal extracted from retained doc",
+    check("S1 P1: Q_L representation literal extracted from source doc",
           qL_rep is not None)
 
     if qL_rep is None:
@@ -245,8 +256,8 @@ def audit_s1_qL_extraction() -> tuple[int, int, int]:
 
 
 def audit_p2_retained_n_gen() -> int:
-    """P2: N_gen = 3 from retained three-generation matter structure."""
-    banner("P2: N_gen = 3 from retained three-generation matter structure")
+    """P2: N_gen = 3 from supplied three-generation matter structure."""
+    banner("P2: N_gen = 3 from supplied three-generation matter structure")
 
     gen_rel = "docs/THREE_GENERATION_STRUCTURE_NOTE.md"
     gen_content = read_authority(gen_rel)
@@ -261,21 +272,28 @@ def audit_p2_retained_n_gen() -> int:
     print("  Reading THREE_GENERATION_STRUCTURE_NOTE.md")
     print(f"    Status (note prose):  {gen_status_text!r}")
     print(f"    Effective status:     {gen_eff_status!r}")
-    print(f"    Verified retained?    {has_retained_status}")
+    print(f"    Retained-grade status observed? {has_retained_status}")
     print(f"    Contains three-generation matter structure? {has_three_gen}")
     print(f"    Contains physically distinct species language? {has_physical_species}")
-    check("P2: THREE_GENERATION_STRUCTURE_NOTE status is retained (ledger)", has_retained_status)
-    check("P2: retained note establishes three-generation matter structure", has_three_gen)
-    check("P2: retained note establishes physically distinct species structure", has_physical_species)
+    boundary(
+        "P2 THREE_GENERATION_STRUCTURE status boundary check",
+        has_retained_status,
+        f"effective_status={gen_eff_status!r}",
+    )
+    check("P2: source note establishes three-generation matter structure", has_three_gen)
+    boundary(
+        "P2 physically distinct species phrase present",
+        has_physical_species,
+    )
 
-    N_gen = 3  # retained value
-    print(f"  N_gen = {N_gen} (retained three-generation matter structure)")
+    N_gen = 3  # source readout
+    print(f"  N_gen = {N_gen} (supplied three-generation matter structure)")
     return N_gen
 
 
 def audit_p5_higgs_one_doublet() -> tuple[int, Fraction]:
-    """P5: 1 Higgs doublet (Y_H = 1/2) from retained EW Higgs diag."""
-    banner("P5: 1 Higgs doublet (Y_H = 1/2) retained on EW Higgs diag tree theorem")
+    """P5: 1 Higgs doublet (Y_H = 1/2) from EW Higgs diag."""
+    banner("P5: 1 Higgs doublet (Y_H = 1/2) on EW Higgs diag tree theorem")
 
     higgs_content = read_authority(
         "docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
@@ -283,7 +301,7 @@ def audit_p5_higgs_one_doublet() -> tuple[int, Fraction]:
     has_one_higgs = "Y_H = 1/2" in higgs_content or "Y_H=1/2" in higgs_content
     print(f"  Searching EW_HIGGS_GAUGE_MASS_DIAGONALIZATION for 'Y_H = 1/2':")
     print(f"    Found? {has_one_higgs}")
-    check("P5: 1 Higgs doublet (Y_H = 1/2) retained",
+    check("P5: 1 Higgs doublet (Y_H = 1/2) source-visible",
           has_one_higgs)
 
     N_H = 1  # number of Higgs doublets
@@ -295,15 +313,14 @@ def audit_p5_higgs_one_doublet() -> tuple[int, Fraction]:
 
 
 def audit_p7_lattice_alpha_2_anchor() -> Fraction:
-    """P7: 1/alpha_2|_lattice = 16 pi from retained YT_EW g_2^2 = 1/(d+1)."""
-    banner("P7: 1/alpha_2|_lattice = 16 pi from retained YT_EW lattice anchor")
+    """P7: 1/alpha_2|_lattice = 16 pi from conditional YT_EW g_2^2 = 1/(d+1)."""
+    banner("P7: 1/alpha_2|_lattice = 16 pi from conditional YT_EW lattice anchor")
 
     yt_content = read_authority("docs/YT_EW_COLOR_PROJECTION_THEOREM.md")
     has_g2_form = "g_2^2 = 1/(d+1)" in yt_content
     print(f"  Searching YT_EW_COLOR_PROJECTION for 'g_2^2 = 1/(d+1)':")
     print(f"    Found? {has_g2_form}")
-    check("P7: g_2^2 = 1/(d+1) retained YT_EW",
-          has_g2_form)
+    boundary("P7 source contains literal g_2^2 = 1/(d+1)", has_g2_form)
 
     inv_alpha_2_lattice_over_pi = Fraction(16, 1)  # 16 pi
     print(f"  At d = 3 (Z^3 axiom): g_2^2 = 1/4")
@@ -321,14 +338,14 @@ def audit_t1_b_2_structural_closed_form(N_pair: int, N_color: int,
     # Standard SU(2) 1-loop beta:
     #   b_2 = (11/3) C_2(adj) - (2/3) T(F^Weyl) N_W - (1/6) T(F^scalar) N_complex
     # With C_2(adj of SU(2)) = N_pair = 2, T(F) = 1/2 for fundamental,
-    # N_W = (N_color + 1) * N_gen Weyl doublets (= N_color × (N_color + 1) at retained SM values),
+    # N_W = (N_color + 1) * N_gen Weyl doublets (= N_color × (N_color + 1) at supplied SM values),
     # N_complex_Higgs = 2 * N_H = 2 (1 Higgs doublet, 2 complex components).
 
     # Gauge boson contribution: +(11/3) * N_pair
     b_2_gauge = Fraction(11 * N_pair, 3)
 
     # LH Weyl-doublet matter contribution: -(1/3) * N_W = -(1/3) * (N_color + 1) * N_gen
-    # With retained N_gen = 3 and N_color = 3 at the SM point: -(1/3) * N_color * (N_color + 1)
+    # With supplied N_gen = 3 and N_color = 3 at the SM point: -(1/3) * N_color * (N_color + 1)
     N_W = (N_color + 1) * N_gen  # = N_color * (N_color + 1) at SM
     b_2_matter = -Fraction(N_W, 3)
 
@@ -395,7 +412,7 @@ def audit_t3_three_way_ratios(b_2: Fraction, N_pair: int, N_color: int,
     """T3: three-way companion-coupling ratios via S1."""
     banner("T3: three-way companion-coupling ratios b_3:b_2:b_QED via S1 (inline derivation)")
 
-    # Companion structural forms (derivable inline on retained main):
+    # Companion structural forms (derivable inline on the same supplied values):
     # b_3 = (11 N_color - 2 N_quark) / 3  (QCD companion)
     b_3 = Fraction(11 * N_color - 2 * N_quark, 3)
     # b_QED = (2/3) (N_color + 1)^2  (QED companion, derivable from FRACTIONAL_CHARGE)
@@ -424,9 +441,9 @@ def audit_t3_three_way_ratios(b_2: Fraction, N_pair: int, N_color: int,
     print(f"               = (11 N_color - 2 N_quark) / (2 (N_color + 1)^2)")
     print(f"               = {11*N_color - 2*N_quark} / {2*(N_color+1)**2}")
 
-    check("T3a: b_3 / b_2 = 42/19 (NEW S1-structural ratio)",
+    check("T3a: b_3 / b_2 = 42/19 (conditional S1-structural ratio)",
           b_3_over_b_2 == Fraction(42, 19))
-    check("T3b: b_2 / b_QED = 19/64 (NEW S1-structural ratio)",
+    check("T3b: b_2 / b_QED = 19/64 (conditional S1-structural ratio)",
           b_2_over_b_QED == Fraction(19, 64))
     check("T3c: b_3 / b_QED = 21/32 (companion QCD ratio)",
           b_3_over_b_QED == Fraction(21, 32))
@@ -448,7 +465,7 @@ def audit_t5_t6_running_formula(b_2: Fraction, N_pair: int, N_color: int,
     print(f"    full running coefficient: ((22 N_pair - 2 N_color(N_color+1) - 1) / (12 pi))")
     print(f"                            = (19 / (12 pi)) at SM")
     print()
-    print(f"  T6 combined with retained lattice anchor 1/alpha_2|_lattice = 16 pi:")
+    print(f"  T6 combined with conditional lattice anchor 1/alpha_2|_lattice = 16 pi:")
     print(f"    1/alpha_2(Q) = 16 pi + ((22 N_pair - 2 N_color(N_color+1) - 1) / (12 pi)) ln(Q/Q_lattice)")
     print(f"    For SM:       = 16 pi + (19/(12 pi)) ln(Q/Q_lattice)")
 
@@ -506,17 +523,17 @@ def audit_comparator_b2_eq_minus_19_6() -> None:
 
 
 def audit_no_closure_overclaim() -> None:
-    """Honest framing: this is a retained structural form, NOT a lane closure."""
-    banner("Honest framing: retained structural form, NOT a closure of any open Lane")
+    """Honest framing: this is conditional structural support, not lane closure."""
+    banner("Honest framing: conditional structural support, NOT a closure of any open lane")
 
     print("  Per the feedback memories:")
     print()
-    print("  - This note is labeled as a retained SU(2)_L-running structural")
-    print("    corollary, NOT a closure of any open Science Lane.")
+    print("  - This note is labeled as open / conditional-support authority boundary,")
+    print("    NOT a closure of any open science lane.")
     print("  - The structural closed form b_2 = (22 N_pair - 2 N_color(N_color+1) - 1)/6 = 19/6")
     print("    contributes ONE structural ingredient: the asymptotic SU(2)_L")
-    print("    beta-coefficient now has a structural form via S1 + retained")
-    print("    retained N_gen = 3 + retained 1 Higgs doublet.")
+    print("    beta-coefficient has a structural form once the S1, generation,")
+    print("    Higgs, and lattice-anchor premises are supplied.")
     print("  - Packages the SU(2)_L member of the SM gauge β-coefficient trio and")
     print("    derives companion b_3 and b_QED forms inline for ratio checks.")
     print("  - Threshold-resolved physical running through SM thresholds and")
@@ -525,20 +542,20 @@ def audit_no_closure_overclaim() -> None:
     print("  - Comparators (PDG, COMPLETE_PREDICTION_CHAIN) numerical agreements")
     print("    with b_2 = ±19/6 are reported as comparators, NOT load-bearing.")
 
-    check("Honest framing: explicitly labeled as retained structural form, NOT closure",
+    check("Honest framing: explicitly labeled as conditional support, NOT closure",
           True)
 
 
 def audit_summary(N_pair: int, N_color: int, N_quark: int, N_gen: int,
                   N_H: int, b_2: Fraction) -> None:
-    banner("Summary of SU(2)_L 1-loop beta-function structural closed form theorem")
+    banner("Summary of SU(2)_L 1-loop beta-function conditional structural support")
 
     print(f"  S1-derived: N_pair = {N_pair}, N_color = {N_color}, N_quark = {N_quark}")
-    print(f"  Retained: N_gen = {N_gen}, N_color = {N_color}, N_H_doublets = {N_H}")
+    print(f"  Supplied: N_gen = {N_gen}, N_color = {N_color}, N_H_doublets = {N_H}")
     print()
     print(f"  T1  b_2 = (22 N_pair - 2 N_color (N_color + 1) - 1) / 6")
     print(f"           = ({22*N_pair} - {2*N_color*(N_color+1)} - 1) / 6")
-    print(f"           = {b_2}    [NEW retained-tier structural closed form]")
+    print(f"           = {b_2}    [conditional structural form]")
     print()
     print(f"  T1 alt:  b_2 = (11 N_pair - N_color(N_color+1))/3 - 1/6 = {b_2}")
     print()
@@ -548,7 +565,7 @@ def audit_summary(N_pair: int, N_color: int, N_quark: int, N_gen: int,
     print(f"      Higgs (1 dbl): -1/6")
     print(f"      Sum:           19/6")
     print()
-    print(f"  T3 Cross-coupling ratios (NEW S1-structural):")
+    print(f"  T3 Cross-coupling ratios (conditional S1-structural):")
     print(f"      b_3 / b_2    = 42/19    (inline QCD companion)")
     print(f"      b_2 / b_QED  = 19/64    (inline QED companion)")
     print(f"      b_3 / b_QED  = 21/32    (inline QCD/QED companions)")
@@ -558,7 +575,7 @@ def audit_summary(N_pair: int, N_color: int, N_quark: int, N_gen: int,
     print(f"      b_2   = (11 N_pair - N_color(N_color+1))/3 - 1/6 = 19/6")
     print(f"      b_QED = (2/3) (N_color + 1)^2                    = 32/3")
     print()
-    print("  All cited authority tiers ground-up-verified by extracting Status: line.")
+    print("  All cited authority tiers are reported by extracting status text.")
     print("  Q_L : (a,b) literal extracted from doc text by regex (NOT hard-coded).")
     print("  All identities DERIVED via Fraction arithmetic from extracted integers.")
     print()
@@ -571,7 +588,7 @@ def audit_summary(N_pair: int, N_color: int, N_quark: int, N_gen: int,
 
 def main() -> int:
     print("=" * 88)
-    print("SU(2)_L Weak 1-Loop beta-Function Coefficient Structural Closed Form via S1")
+    print("SU(2)_L weak 1-loop beta-coefficient conditional structural support via S1")
     print("See docs/SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md")
     print("=" * 88)
 

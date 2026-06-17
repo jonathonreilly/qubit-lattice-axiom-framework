@@ -1,26 +1,41 @@
-# A² Closure Below W2 via Retained Quark-Doublet Identification Source Theorem
+# A² Below W2 Conditional Source-Route Boundary
 
 **Date:** 2026-04-25
 
-**Status:** proposed_retained CKM × Cl(3) closure theorem on proposed_retained-tier authorities.
+**Status:** open / conditional-support authority-boundary packet. Independent
+audit decides any future status; this source note does not set or predict an
+effective retained/promoted outcome.
 
-This note CLOSES `A² = N_pair/N_color = 2/3` BELOW W2 via a single
-**Identification Source Theorem (S1)** that derives BOTH `N_pair = 2` and
-`N_color = 3` from a SINGLE retained matter-content source on current `main`:
-the retained left-handed quark representation
-`Q_L : (2,3)_{+1/3}` (LEFT_HANDED_CHARGE_MATCHING_NOTE, "retained corollary")
-together with the retained right-handed quark representations
-`u_R : (1,3)_{+4/3}`, `d_R : (1,3)_{-2/3}` (ONE_GENERATION_MATTER_CLOSURE_NOTE,
-"retained").
+## 2026-06-17 audit-unlock boundary
 
-The (2,3) representation is the SAME single retained object that fixes:
+The old closure language below is historical and superseded by this boundary.
+The finite algebra still computes `A^2 = N_pair/N_color = 2/3` from the
+displayed representation literals when those literals are supplied. Current
+main does **not** provide retained-grade authority for every premise consumed by
+the proposed closure chain, and the `YT_EW` literal checks for the optional
+`sin^2(theta_W)=A^4` corroboration are not source-visible. Therefore the
+auditable content of this packet is conditional algebra plus an explicit
+authority-boundary map, not a closure theorem.
+
+This boundary packet preserves the finite source-route calculation
+`A² = N_pair/N_color = 2/3` below W2, but it does not claim closure. The route
+derives both `N_pair = 2` and `N_color = 3` from the displayed matter-content
+representation literals when those literals are supplied:
+`Q_L : (2,3)_{+1/3}` from `LEFT_HANDED_CHARGE_MATCHING_NOTE`, together with
+`u_R : (1,3)_{+4/3}`, `d_R : (1,3)_{-2/3}` from
+`ONE_GENERATION_MATTER_CLOSURE_NOTE`. The paired runner records the current
+authority status of each source as a boundary condition rather than treating
+the old source-note status prose as closure-grade authority.
+
+The `(2,3)` representation is the same single supplied object that fixes:
 
 - `N_pair := dim_SU2(Q_L)  = 2`  (the SU(2)_L doublet IS the up-down pair),
 - `N_color := dim_SU3(Q_L) = 3`  (the SU(3)_c triplet IS the color count).
 
-Therefore `A² = N_pair/N_color = 2/3` is DERIVED below W2 from a single
-retained source — not asserted via a gauge-dimension consistency equality
-nor a numerical coincidence.
+Therefore `A² = N_pair/N_color = 2/3` is conditionally derived below W2 from
+the supplied source literal, not asserted via a gauge-dimension consistency
+equality nor a numerical coincidence. Status elevation remains an audit
+question outside this source packet.
 
 ## Why The Source Theorem Is Load-Bearing
 
@@ -43,34 +58,33 @@ representation literal itself.
 **Primary runner:**
 `scripts/frontier_ckm_a_squared_below_w2_y_quantum_closure.py`
 
-## S1: Identification Source Theorem (NEW load-bearing route)
+## S1: Identification source route
 
-### Premises (all RETAINED on `main`)
+### Premises to inspect on `main`
 
 ```text
-(P1)  MINIMAL_AXIOMS_2026-04-11 retains as current consequence:
+(P1)  MINIMAL_AXIOMS_2026-04-11 supplies framework context:
       "exact native SU(2)" and "graph-first structural SU(3)".
-      These retain the SU(2)_L and SU(3)_c gauge structures within
-      the framework's accepted package.
+      Current authority status is recorded by the paired runner.
 
-(P2)  LEFT_HANDED_CHARGE_MATCHING_NOTE (Status: "retained corollary on
-      the current paper surface") retains the left-handed quark sector:
+(P2)  LEFT_HANDED_CHARGE_MATCHING_NOTE supplies the left-handed quark-sector
+      representation literal:
 
           Q_L : (2,3)_{+1/3}
 
       where (a, b) denotes (SU(2)_L rep dim, SU(3)_c rep dim) and the
-      subscript is hypercharge. This is RETAINED on main as the
-      canonical left-handed quark representation under the framework's
-      graph-first selected-axis surface.
+      subscript is hypercharge. The runner treats its current authority status
+      as a boundary condition.
 
-(P3)  ONE_GENERATION_MATTER_CLOSURE_NOTE (Status: "retained") retains
-      the right-handed quark sector:
+(P3)  ONE_GENERATION_MATTER_CLOSURE_NOTE supplies the right-handed quark-sector
+      representation literals:
 
           u_R : (1,3)_{+4/3}
           d_R : (1,3)_{-2/3}
 
-      These RETAIN the up-type and down-type right-handed quarks as
-      SU(2)_L singlets in the SU(3)_c triplet representation (color = 3).
+      These provide the right-handed-quark cross-check as SU(2)_L singlets in
+      the SU(3)_c triplet representation (color = 3), conditional on source
+      authority.
 ```
 
 ### Definitions (CKM structural integers, on the SM construction)
@@ -185,33 +199,31 @@ load-bearing.
 
 | Input | Authority on `main` | Tier | Role |
 | --- | --- | --- | --- |
-| `Q_L : (2,3)_{+1/3}` (left-handed quark rep) | [`LEFT_HANDED_CHARGE_MATCHING_NOTE.md`](LEFT_HANDED_CHARGE_MATCHING_NOTE.md) | **retained corollary** | **S1 SOURCE** (load-bearing) |
-| `u_R : (1,3)_{+4/3}`, `d_R : (1,3)_{-2/3}` (right-handed quark reps) | [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md) | **retained** | S1 corroboration on N_color |
-| Z³ spatial substrate; "exact native SU(2)"; "graph-first structural SU(3)" | [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) | **retained** framework primitive + consequences | gauge-structure context |
-| Bare `g_2² = 1/(d+1)`, `g_Y² = 1/(d+2)` | [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) | **retained** (DERIVED) | S5 EW–CKM bridge |
-| `(W2)` `A² = N_pair/N_color = 2/3` | [`WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md`](WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md) | **retained** | S3 consistency check |
-| `N_pair = 2`, `N_color = 3`; primitive `N_pair = N_color − 1` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) | **retained** | structural-counts package |
+| `Q_L : (2,3)_{+1/3}` (left-handed quark rep) | [`LEFT_HANDED_CHARGE_MATCHING_NOTE.md`](LEFT_HANDED_CHARGE_MATCHING_NOTE.md) | source literal; current authority status checked by runner | S1 source route |
+| `u_R : (1,3)_{+4/3}`, `d_R : (1,3)_{-2/3}` (right-handed quark reps) | [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md) | source literal; current authority status checked by runner | S1 corroboration on N_color |
+| Z³ spatial substrate; "exact native SU(2)"; "graph-first structural SU(3)" | [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) | context; current authority status checked by runner | gauge-structure context |
+| Bare `g_2² = 1/(d+1)`, `g_Y² = 1/(d+2)` | [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) | optional source-visible literal check | S5 EW-CKM corroboration |
+| `(W2)` `A² = N_pair/N_color = 2/3` | [`WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md`](WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md) | consistency target; current authority status checked by runner | S3 consistency check |
+| `N_pair = 2`, `N_color = 3`; primitive `N_pair = N_color - 1` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) | structural-counts reference; current authority status checked by runner | consistency reference |
 | Lie group rep theory: `dim(SU(N) fund) = N` | mathematical fact | external (math) | S4(i) corroboration only |
 | hw=1 Y spectrum (auxiliary) | [`CL3_TASTE_GENERATION_THEOREM.md`](CL3_TASTE_GENERATION_THEOREM.md) | **support-tier** (NOT load-bearing) | S6 |
 
-The S1 closure uses ONLY retained-tier authorities. No PDG observable
-enters as input. No support-tier inputs enter the load-bearing closure
-chain (S1+S2).
+The S1 source-route calculation uses no PDG observable as input. No
+support-tier input is promoted to closure authority by this packet.
 
 ## Derivation
 
 ### S1 derivation (Identification Source Theorem)
 
-`LEFT_HANDED_CHARGE_MATCHING_NOTE.md` (Status: "retained corollary on
-the current paper surface") explicitly retains:
+`LEFT_HANDED_CHARGE_MATCHING_NOTE.md` supplies:
 
 > `Q_L : (2,3)_{+1/3}`
 
-This is a retained statement of the matter content: the left-handed
-quark field transforms in the SU(2)_L fundamental (doublet) and the
-SU(3)_c fundamental (triplet) representations.
+This is the matter-content literal used by the conditional route: the
+left-handed quark field transforms in the SU(2)_L fundamental (doublet) and
+the SU(3)_c fundamental (triplet) representations.
 
-`ONE_GENERATION_MATTER_CLOSURE_NOTE.md` (Status: "retained") retains:
+`ONE_GENERATION_MATTER_CLOSURE_NOTE.md` supplies:
 
 > `u_R : (1,3)_{+4/3}`, `d_R : (1,3)_{-2/3}`
 

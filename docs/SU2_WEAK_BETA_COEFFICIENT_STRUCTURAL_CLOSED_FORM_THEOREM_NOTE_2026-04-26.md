@@ -1,13 +1,25 @@
-# SU(2)_L Weak 1-Loop β-Function Coefficient Structural Closed Form via S1: b_2 = 19/6
+# SU(2)_L Weak 1-Loop β-Function Conditional Structural Support via S1: b_2 = 19/6
 
 **Date:** 2026-04-26
 
-**Status:** proposed_retained SU(2)_L-running structural corollary on the recently-landed
-S1 Identification Source Theorem, the retained three-generation matter
-structure (`N_gen = 3`), and retained 1-Higgs-doublet EW content. This note
-derives a NEW retained structural closed form for the SU(2)_L 1-loop
-β-function coefficient entirely in terms of S1 structural integers +
-retained generation/Higgs content:
+**Status:** open / conditional-support authority-boundary packet. Independent
+audit decides any future status; this source note does not set or predict an
+effective retained/promoted outcome.
+
+## 2026-06-17 audit-unlock boundary
+
+The old closure/corollary language below is historical and superseded by this
+boundary. The finite one-loop algebra still checks the displayed formula for
+`b_2 = 19/6` when the S1, generation, Higgs, and lattice-coupling premises are
+supplied. Current main does **not** certify every one of those premises as
+retained-grade closure authority inside this packet, and at least one literal
+source check for the `YT_EW` lattice anchor remains open. The auditable content
+is conditional algebra plus an explicit authority-boundary map, not a retained
+SU(2)_L beta-coefficient closure theorem.
+
+The historical packet attempted to derive a structural closed form for the
+SU(2)_L 1-loop β-function coefficient entirely in terms of S1 structural
+integers + generation/Higgs content:
 
 ```text
 (C1)  b_2  =  (11 N_pair − N_color (N_color + 1)) / 3  −  1/6
@@ -23,16 +35,17 @@ b_2   =  (11 N_pair − N_color(N_color+1))/3 − 1/6  =  19/6   [SU(2)_L, this 
 b_QED =  (2/3) × (N_color + 1)²               =  32/3   [U(1)_em, inline companion form]
 ```
 
-Together these provide the asymptotic SM gauge β-function coefficient package
-via S1 + retained `N_gen = 3`, contributing to:
+Together these provide conditional support for the asymptotic SM gauge
+β-function coefficient package via S1 plus supplied generation/Higgs content,
+contributing to:
 - **Lane 1 (Hadron Mass Program)** via `b_3` (QCD running)
 - **Lane 2 (Atomic-Scale Program)** via `b_QED` (QED running)
 - **EW precision** via `b_2` (this note; weak-coupling running)
 - **GUT-scale unification questions** via the joint trio
 
-**Explicitly not a closure of any open Lane**: this is a NEW structural
-closed form for the asymptotic / above-all-thresholds SU(2)_L β-coefficient
-via S1 + 1-Higgs-doublet, NOT a derivation of any open-lane closure target.
+**Explicitly not a closure of any open Lane**: this is conditional structural
+support for the asymptotic / above-all-thresholds SU(2)_L β-coefficient via
+S1 + 1-Higgs-doublet content, not a derivation of any open-lane closure target.
 
 **Primary runner:**
 `scripts/frontier_su2_weak_beta_coefficient_structural_closed_form.py`
@@ -69,11 +82,11 @@ via S1 + 1-Higgs-doublet, NOT a derivation of any open-lane closure target.
                        =  1 / α_2(Q_0)  +  (19 / (12π)) × ln(Q / Q_0)         [SM]
 
 (C5)  Lattice-scale α_2 anchor `1/α_2|_lattice = 16π`:
-         Derivable on retained main from YT_EW retained `g_2² = 1/(d+1)`
+         Conditional on source-visible YT_EW `g_2² = 1/(d+1)`
          (with d = 3): `α_2(bare) = g_2²/(4π) = 1/(16π)` and hence
          `1/α_2|_lattice = 16π = 4π × N_pair²` (with N_pair = 2 = √(d+1) at
-         d = 3; see also retained EW-CKM trinity bridge for the
-         structural reading).
+         d = 3; see also the EW-CKM corroboration route for the structural
+         reading).
 
 (C6)  Combined asymptotic α_2 running closed form:
          1/α_2(Q)  =  16π  +  ((22 N_pair − 2 N_color(N_color+1) − 1) / (12π)) × ln(Q / Q_lattice)
@@ -91,19 +104,18 @@ via S1 + 1-Higgs-doublet, NOT a derivation of any open-lane closure target.
 This note explicitly:
 
 - **Does NOT claim** below-Wn closure for `b_2`. The structural closed
-  form `(11 N_pair − N_color(N_color + 1))/3 − 1/6` is a NEW retained-tier
-  algebraic re-expression of the standard SM `b_2 = 19/6` via the
-  freshly-landed S1 Identification Source Theorem, retained physical
-  `N_gen = 3`, and the standard SM one-Higgs-doublet content.
+  form `(11 N_pair − N_color(N_color + 1))/3 − 1/6` is conditional algebraic
+  support for the standard SM `b_2 = 19/6` via the S1 source route, supplied
+  physical `N_gen = 3`, and standard SM one-Higgs-doublet content.
 - **Does NOT claim** to close any open Science Lane. The structural
   closed forms (this note + inline QED and QCD companion forms) contribute
   to multiple lanes by providing structural forms for the gauge
   β-coefficients, but full lane closures (m_p, m_e, etc.) still depend on
   additional retained open-lane content.
-- **Does claim**: a NEW retained structural closed form for `b_2`
-  expressible as `(22 N_pair − 2 N_color(N_color + 1) − 1)/6` via S1
-  + retained `N_gen = 3` + retained one-Higgs-doublet content; the runner
-  derives companion `b_3` and `b_QED` forms inline for ratio checks.
+- **Does claim**: conditional structural support for `b_2` expressible as
+  `(22 N_pair − 2 N_color(N_color + 1) − 1)/6` via S1 + supplied
+  `N_gen = 3` + one-Higgs-doublet content; the runner derives companion `b_3`
+  and `b_QED` forms inline for ratio checks.
 
 Per the lessons in `feedback_retained_tier_purity_and_package_wiring.md`
 and `feedback_consistency_vs_derivation_below_w2.md`: this is a retained
@@ -166,7 +178,7 @@ On retained-tier authorities of current `main`:
         b_2  =  (11/3) × N_pair  −  (1/3) × N_W  −  1/6
             (using P5: N_S^complex = 2 components × T(F_H) = 1/2 → contrib 1/6)
 
-      Substituting P4 with retained N_gen = 3 = N_color at the SM point:
+      Substituting P4 with supplied N_gen = 3 = N_color at the SM point:
         b_2  =  (11/3) × N_pair  −  (1/3) × (N_color × (N_color + 1))  −  1/6
               =  (11 N_pair − N_color (N_color + 1)) / 3  −  1/6
               =  (22 N_pair − 2 N_color (N_color + 1) − 1) / 6.
@@ -299,7 +311,7 @@ b_2 (gauge boson + ghost contribution)  =  +(11/3) × C_2(adj of SU(2))
                                           =  22/3 ≈ 7.33      [for SM N_pair = 2]
 
 b_2 (LH SU(2) Weyl-doublet matter, via S1)  =  −(1/3) × N_W
-                                              =  −(1/3) × N_color × (N_color + 1)    [SM retained values N_gen=3, N_color=3]
+                                              =  −(1/3) × N_color × (N_color + 1)    [SM supplied values N_gen=3, N_color=3]
                                               =  −(N_color² + N_color) / 3
                                               =  −4              [for SM N_color = 3]
 
@@ -312,10 +324,10 @@ Total:  b_2  =  22/3 − 4 − 1/6  =  44/6 − 24/6 − 1/6  =  19/6 ≈ 3.17.
 
 From the inline companion forms (P6):
 - `b_3 = (11 N_color − 2 N_quark)/3 = 7` (QCD companion)
-- `b_QED = (2/3)(N_color + 1)² = 32/3` (QED, derivable inline from retained
-  `b_QED = (4/3) Σ N_c Q²` plus retained `Q_u = (N_color+1)/(2 N_color)`,
+- `b_QED = (2/3)(N_color + 1)² = 32/3` (QED, derivable inline from supplied
+  `b_QED = (4/3) Σ N_c Q²` plus supplied `Q_u = (N_color+1)/(2 N_color)`,
   `Q_d = (1−N_color)/(2 N_color)` from FRACTIONAL_CHARGE_DENOMINATOR and
-  retained `N_gen = 3`)
+  supplied `N_gen = 3`)
 
 ```text
 b_3 / b_2  =  ((11 N_color − 2 N_quark)/3) / ((22 N_pair − 2 N_color(N_color+1) − 1)/6)
@@ -339,7 +351,7 @@ Standard 1-loop running:
             =  1/α_2(Q_0)  +  (19 / (12π)) × ln(Q / Q_0)         [SM].
 ```
 
-Combined with retained lattice-scale anchor (P7: `1/α_2|_lattice = 16π = 4π × N_pair²`):
+Combined with conditional lattice-scale anchor (P7: `1/α_2|_lattice = 16π = 4π × N_pair²`):
 
 ```text
 1/α_2(Q)  =  16π  +  ((22 N_pair − 2 N_color(N_color+1) − 1) / (12π)) × ln(Q / Q_lattice)

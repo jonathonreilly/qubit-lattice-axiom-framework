@@ -8,6 +8,12 @@ Date: 2026-04-25
 **Status:** archived boundary repair - conditional algebra lemma only
 **Primary verifier:** `scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py`
 
+**Verification sync:** the committed verifier/cache pair now checks the
+narrowed formal-hypothesis packet and reports `TOTAL: PASS=56, FAIL=0` with
+`VERDICT: FORMAL ASSUMED-INPUT IDENTITY THEOREM VERIFIED`. This is a source
+artifact sync only; it does not make this archived wrapper a retained EW
+normalization authority.
+
 This file remains archived. It is not a live retained theorem, not
 retained-grade support authority, and not authority for an electroweak
 normalization lane.

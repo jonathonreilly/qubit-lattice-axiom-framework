@@ -114,3 +114,21 @@ claim direct low-energy phenomenology from the assumed-input identity. The
 values `9` and `4/9` are formal consequences inside this theorem; their
 physical use remains outside this row until a separate retained bridge supplies
 the coupling normalization.
+
+## 5. Verification Sync
+
+The committed verifier/cache pair is synchronized to the narrowed source
+boundary:
+
+```text
+scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py
+logs/runner-cache/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.txt
+runner_sha256: ea66b417c7a519d7f64ee85a0b8248b24b4f44321ad76cec321120f3d83e3b5b
+TOTAL: PASS=56, FAIL=0
+VERDICT: FORMAL ASSUMED-INPUT IDENTITY THEOREM VERIFIED
+```
+
+This sync changes no authority boundary. It exists so a source reviewer can see
+that the live verifier now checks the formal-hypothesis packet rather than an
+EW-normalization authority claim. Independent audit remains required before
+any effective-status change.

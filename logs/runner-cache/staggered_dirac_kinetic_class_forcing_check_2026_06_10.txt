@@ -1,14 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py
-runner_sha256: 6a74a016eb59e56518146014a78c3438e74b7187825cbbd279948bcf16514ed8
+runner_sha256: 03d4352fb6f85d592185a4a007bbad03a714b6319541738ab9dff9eb6b34e090
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.38
+elapsed_sec: 0.79
 status: ok
 ----- stdout -----
 ========================================================================
 staggered-Dirac kinetic-class forcing check  (2026-06-10)
 ========================================================================
+
+--- [S] source dependency guard: U4 renaming is provenance-only
+[PASS] [S]  1. source note carries no load-bearing U4 markdown/YAML dependency; U4 remains plain-text renaming provenance, while the C^2 no-spectator input is sourced from the minimal Quantum axiom, retained Cl(3) classification, and CAR(2) dimension check
 
 --- [A] Two-flux-class theorem: two-flux-class collapse on the licensed surface
 [PASS] [A]  1. lattice automorphisms: 24 proper cubic rotations generated (C4z, C3[111]); rotations act transitively on the 6 edge directions, translations on sites => |t| uniform on edges  |  |O| = 24, direction orbit size = 6
@@ -24,7 +27,7 @@ RESIDUAL (declared-open): Two-flux-class theorem is stated on simply connected r
 RESIDUAL (declared-open): surface scope: Q-conserving nearest-neighbor bilinears (adjacency-licensed kinetic surface).  Legs D3/D4 show NN and Q-conservation are load-bearing scope declarations, not derived exclusions.
 
 --- [B] Absorbing-frame theorem: P-SD discharged on the flux(-1) branch
-[PASS] [B] 10. no-spectator lemma: CAR(2) is exactly verified on C^4 and generates the full M_4(C) (dim 16, simple => unique faithful irrep has dim 4 > 2): the qubit-reframe-closed per-site C^2 carries NO 2-component spinor; site-local frame absorption (the P-SD scalarization) is the only site-local route  |  computed algebra dim = 16
+[PASS] [B] 10. no-spectator lemma: CAR(2) is exactly verified on C^4 and generates the full M_4(C) (dim 16, simple => unique faithful irrep has dim 4 > 2): the minimal-Quantum per-site C^2 carries NO 2-component spinor; site-local frame absorption (the P-SD scalarization) is the only site-local route  |  computed algebra dim = 16
 [PASS] [B] 11. existence: T(x) = s1^x1 s2^x2 s3^x3 absorbs the Cl(3) vector vertex site-locally: T(x)^dag sigma_mu T(x+mu) = eta^0_mu(x) I exactly (3^3 window, all directions, sympy)
 [PASS] [B] 12. rigidity: gamma anticommutation forces plaquette holonomy sigma_nu sigma_mu sigma_nu sigma_mu = -I for every pair: EVERY absorption of the Cl(3) hopping lands in the flux(-1) class K1; absorption into K0 (flux +1) is impossible (flux is frame-invariant, check [A]2)
 [PASS] [B] 13. uniqueness: any two absorbing frames with the same phases differ by S(x) with S(x+mu) = sigma_mu S(x) sigma_mu; the general solution is exactly S(x) = T(x) V T(x)^dag (4 complex parameters = one global frame V), i.e. T'(x) = T(x) V; with the U(1) gauge g(x) this is the full stabilizer T -> g(x) T V
@@ -50,7 +53,7 @@ RESIDUAL (declared-open): P-KIN residual: the one-bit flux selector phi = -1 (eq
 [PASS] [D] 27. full reduction: the 12-complex-parameter NN family {M_mu} under O-equivariance (C3, C2z) + reversed-edge Hermiticity collapses to M_mu = a I + i b sigma_mu (a, b real: the scalar ray and the Dirac ray, 2 real parameters); with [D]26 the single-mode constraint then leaves exactly the two rays a=0 (Cl(3) vector = K1) and b=0 (scalar = K0) -- the same two classes as Two-flux-class theorem  |  surviving real dimension = 2
 RESIDUAL (declared-open): the kinetic surface is the bilinear (quadratic) sector by the definition of 'kinetic term'; quartic and higher interaction terms are out of scope here.
 
-TOTAL: PASS=27 FAIL=0
+TOTAL: PASS=28 FAIL=0
 VERDICT: Two-flux-class theorem (two-flux-class collapse) and Absorbing-frame theorem
          (P-SD discharged on the flux(-1) branch) VERIFIED on
          the finite instantiation; the flux(+1) countermodel

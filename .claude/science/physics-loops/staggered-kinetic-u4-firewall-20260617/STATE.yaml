@@ -1,0 +1,18 @@
+loop_slug: staggered-kinetic-u4-firewall-20260617
+goal: "Unlock as much of the audit as possible with source-side repairs only."
+target_status: bounded-support
+cycle_count: 1
+active_route: "Remove the load-bearing U4 audited-renaming dependency from the staggered kinetic-class forcing row."
+hard_residual: "The kinetic-order selector phi = -1 remains open; this block only retires a source dependency blocker."
+files_touched:
+  - docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md
+  - scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py
+  - logs/runner-cache/staggered_dirac_kinetic_class_forcing_check_2026_06_10.txt
+open_imports:
+  - "No new imports. U4_CLOSES_UNDER_QUBIT_REFRAME is provenance-only after this block."
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Commit, push, and open a ready PR for reviewer extraction."
+stop_condition: "Stop after PR creation for this block, then rescan queue for the next independent unblock."

@@ -1,0 +1,21 @@
+loop_slug: shapiro-unique-discriminator-boundary
+branch: codex/shapiro-unique-discriminator-boundary-20260617
+base: origin/main@53b951c6f
+objective: source-side audit unlock for shapiro_unique_discriminator_v2_note
+mode: source_repair_pr
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: shapiro_unique_discriminator_v2_note
+target_blocker_text: "source note carried retained-chain/failed-archive dependencies and runner hand-entered constants instead of verifying the static-discriminator cache"
+audit_actions_performed: none
+review_loop_disposition: reviewer_owned_not_run
+files_touched:
+  - docs/SHAPIRO_UNIQUE_DISCRIMINATOR_V2_NOTE.md
+  - scripts/shapiro_unique_discriminator_v2.py
+  - logs/runner-cache/shapiro_unique_discriminator_v2.txt
+remaining_blockers:
+  - Base Shapiro delay and family-portability rows remain bounded proxy inputs.
+  - This does not supply a second observable or a unique causal discriminator.
+next_exact_action: reviewer should inspect whether the bounded cache-backed boundary verifier is ready for re-audit after related Shapiro source repairs.
+stop_condition: coherent source PR opened for this block

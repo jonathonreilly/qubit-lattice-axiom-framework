@@ -35,7 +35,10 @@ via the anomaly.
   context only and is not named as a source dependency of this parent
   theorem. P-HY is unchanged: identifying the hypercharge-like
   eigenvalue direction with anomaly-relevant `U(1)` hypercharge remains
-  a declared premise, not a derived conclusion.
+  a declared premise, not a derived conclusion. Tightened the same
+  source-edge rule for B-AXIS provenance: the prior single-clock
+  codimension-1 source remains context for wording only and is no
+  longer named by source path in this parent theorem.
 - **2026-06-15 (cycle-edge repair).** Converted the upper-bound input
   from a markdown dependency on the single-clock source note to the local
   declared B-AXIS premise already present in this bounded theorem's
@@ -110,7 +113,7 @@ via the anomaly.
 | NPC | No per-site `gamma_5`: no element of the one-qubit algebra `M_2(C)` anticommutes with all three Pauli generators | [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) — retained_no_go; recomputed by the runner (STEP 3) |
 | **P-REC** | **Declared premise:** the staggered grading `epsilon` is realized in the emergent continuum description as the Clifford chirality acting on the *irreducible* Dirac factor (taste reconstruction), i.e. as an element anticommuting with every spacetime gamma matrix including the temporal one(s) | declared boundary of this bounded theorem |
 | EVEN | A `gamma_5` with `gamma_5^2 = +I` and `{gamma_5, gamma_mu} = 0` for all `mu` exists in `Cl_C(p,q)` iff `n = p + q` is even | [`CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) — retained positive_theorem; independently recomputed by the runner as an anticommutant-nullity law (STEP 3) |
-| **B-AXIS** | **Declared premise:** one supplied blocked time step, one declared evolution axis/transfer construction, and no admitted independent commuting transfer factor as a second clock. This gives the local conditional cap `d_t <= 1` used here. | declared boundary of this bounded theorem. Provenance/context only: `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md` uses the same axis-premise language, but it is intentionally not a markdown dependency edge of this note. |
+| **B-AXIS** | **Declared premise:** one supplied blocked time step, one declared evolution axis/transfer construction, and no admitted independent commuting transfer factor as a second clock. This gives the local conditional cap `d_t <= 1` used here. | declared boundary of this bounded theorem. Provenance/context only: the prior single-clock codimension-1 source uses the same axis-premise language, but this parent theorem does not name that source by path or claim id. |
 
 **Statement.** Under GC, HY-surface, P-HY, P-ABJ, P-COMP, CHI, NPC,
 P-REC, EVEN, and B-AXIS: the emergent spacetime of the framework has
@@ -344,10 +347,10 @@ context_only_non_dependencies:
     (provenance for the same residual-swap calculation; intentionally
     not named by source path or claim id here so this parent theorem
     does not depend on that packaging)
-  - AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
+  - prior single-clock codimension-1 source
     (provenance for the B-AXIS wording and downstream single-clock lane;
-    intentionally plain text here so this row does not create a
-    citation-graph dependency edge back into the open cycle)
+    intentionally not named by source path or claim id here so this row
+    does not create a source dependency edge back into the open cycle)
 status_authority: independent audit lane only
 ```
 

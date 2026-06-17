@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time.py
-runner_sha256: 03a6479726cba0fe0e2ef027beb0e31c5951783f8f7c271fe7a68150512cbe8d
+runner_sha256: 7463158a3b1e3b66d113cb15ec9bda608a7925747d107329d32b77898c5eee00
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.36
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 ========================================================================
@@ -231,11 +231,11 @@ STEP 6: COMPOSITION WITH LOCAL B-AXIS CLOCK PREMISE
     axis/transfer construction, and no admitted independent commuting
     transfer factor as a second clock.
   NON-CIRCULARITY: B-AXIS contains no anomaly input; this note never
-  defines time via the anomaly. The single-clock note remains provenance
-  context in prose only, not a runner input or citation-graph dependency.
+  defines time via the anomaly. The prior single-clock source remains
+  provenance context only and is not named by source path or claim id.
 
   [PASS][B] source sync: anomaly note declares B-AXIS locally, not the withdrawn unique-RP-axis claim  (cap is conditional on B-AXIS in this bounded source note)
-  [PASS][B] source sync: no markdown dependency edge to the single-clock note remains  (plain-code provenance references do not enter the citation graph)
+  [PASS][B] source sync: no single-clock source slug remains in the parent theorem  (B-AXIS is local to this theorem; prior single-clock source is context only)
   [PASS][B] declared B-AXIS d_t <= 1 cap intersected with computed odd set gives {1}  (lower bound computed in Steps 1-4; upper bound is local declared B-AXIS)
   [PASS][B] conclusion: d_t = 1, total dimension 3 + 1 = 4, signature (3,1)
 

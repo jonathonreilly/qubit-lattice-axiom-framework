@@ -1,8 +1,9 @@
 loop_slug: anomaly-hy-parent-edge-20260617
 current_goal: >
-  Repair the anomaly-forces-time HY-surface source edge so the parent theorem
-  consumes the graph-first selected-axis parent construction and local
-  recomputation, not the split-out abelian-surface packaging.
+  Repair anomaly-forces-time source edges so the parent theorem consumes the
+  graph-first selected-axis parent construction for HY-surface and keeps
+  B-AXIS provenance local, without naming context-only packaging/source paths
+  as dependencies.
 target_status: exact-support
 current_surface_status: exact-support
 branch: codex/anomaly-hy-parent-edge-20260617
@@ -10,10 +11,12 @@ base: origin/main
 cycle_count: 1
 active_route: source-dependency edge repair
 hard_residual: >
-  The source theorem named the split-out abelian-surface packaging as the
-  HY-surface source even though the needed gl(3)+gl(1) split and traceless
-  u(1) spectrum live in the graph-first selected-axis parent construction
-  and are already recomputed by the anomaly runner.
+  The source theorem named context-only source packets in two places: the
+  split-out abelian-surface packaging for HY-surface, and the prior
+  single-clock codimension-1 source for B-AXIS wording. Both can look
+  load-bearing to source-dependency extraction even though the theorem's
+  actual HY algebra is supplied by the graph-first parent and B-AXIS is a
+  local declared premise.
 files_touched:
   - docs/ANOMALY_FORCES_TIME_THEOREM.md
   - scripts/frontier_anomaly_forces_time.py
@@ -30,6 +33,10 @@ no_go_routes:
     Treating the split-out abelian packaging as a load-bearing parent edge
     does not add science; the source theorem can cite the graph-first parent
     directly and keep the packaging out of the dependency surface.
+  - >
+    Treating the prior single-clock source as a load-bearing B-AXIS edge does
+    not add science; B-AXIS is declared locally in this parent theorem and the
+    prior note is wording provenance only.
 trace_gate: direct_blocker_closure
 review_loop_disposition: delegated_to_reviewer
 runner_result: "scripts/frontier_anomaly_forces_time.py: PASS=90 FAIL=0; cache fresh"

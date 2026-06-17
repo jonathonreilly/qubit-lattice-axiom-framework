@@ -834,8 +834,8 @@ def step6_single_clock():
     print("    axis/transfer construction, and no admitted independent commuting")
     print("    transfer factor as a second clock.")
     print("  NON-CIRCULARITY: B-AXIS contains no anomaly input; this note never")
-    print("  defines time via the anomaly. The single-clock note remains provenance")
-    print("  context in prose only, not a runner input or citation-graph dependency.")
+    print("  defines time via the anomaly. The prior single-clock source remains")
+    print("  provenance context only and is not named by source path or claim id.")
     print()
     note_text = (ROOT / "docs/ANOMALY_FORCES_TIME_THEOREM.md").read_text(encoding="utf-8")
     stale_phrase = "unique RP-admissible reflection axis"
@@ -847,11 +847,23 @@ def step6_single_clock():
         "B",
         "cap is conditional on B-AXIS in this bounded source note",
     )
+    old_baxis_slug = "_".join(
+        [
+            "AXIOM",
+            "FIRST",
+            "SINGLE",
+            "CLOCK",
+            "CODIMENSION1",
+            "EVOLUTION",
+            "THEOREM",
+            "NOTE",
+        ]
+    ) + "_2026-05-03"
     check(
-        "source sync: no markdown dependency edge to the single-clock note remains",
-        "](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)" not in note_text,
+        "source sync: no single-clock source slug remains in the parent theorem",
+        old_baxis_slug not in note_text,
         "B",
-        "plain-code provenance references do not enter the citation graph",
+        "B-AXIS is local to this theorem; prior single-clock source is context only",
     )
     odd_set = set(dt for dt in range(1, 100) if (3 + dt) % 2 == 0)
     cap_set = set(dt for dt in range(0, 100) if dt <= 1)

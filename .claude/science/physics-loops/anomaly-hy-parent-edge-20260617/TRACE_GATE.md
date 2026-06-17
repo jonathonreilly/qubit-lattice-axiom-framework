@@ -1,16 +1,17 @@
 trace_class: direct_blocker_closure
 target_claim_id: anomaly_forces_time_theorem
 target_blocker_text: >
-  The parent theorem source text named a split-out abelian-surface packaging as
-  the HY-surface source, even though the needed selected-axis finite-cube
-  algebra is in the graph-first parent and is recomputed locally.
+  The parent theorem source text named context-only packets as source text: a
+  split-out abelian-surface packaging for HY-surface and a prior single-clock
+  source for B-AXIS wording, even though the needed HY algebra is in the
+  graph-first parent and B-AXIS is local to this theorem.
 source_of_blocker_text: source_dependency_surface
 reachability_to_target: partially_closes
 artifact_role: runner_certificate
 next_trace_action: >
   Reviewer should confirm the source dependency extractor now sees the
-  graph-first parent as the HY-surface edge and does not keep a parent edge to
-  the split-out packaging.
+  graph-first parent as the HY-surface edge and does not keep parent edges to
+  context-only source packets.
 
 # Trace Notes
 

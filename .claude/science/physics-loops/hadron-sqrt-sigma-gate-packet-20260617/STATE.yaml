@@ -1,0 +1,20 @@
+loop: hadron-sqrt-sigma-gate-packet-20260617
+branch: codex/hadron-sqrt-sigma-gate-packet-20260617
+base: origin/main
+target_claim_id: hadron_lane1_sqrt_sigma_retention_gate_audit_support_note_2026-04-27
+target_status: re-audit-readiness
+actual_current_surface_status: support/open-gate; no retained promotion
+cycle_count: 1
+active_route: "Attach a primary source-packet runner to the Lane 1 sqrt(sigma) retention-gate note."
+hard_residual: "B2 dynamical screening and B5 framework-to-standard-QCD linkage remain open gates."
+files_touched:
+  - docs/HADRON_LANE1_SQRT_SIGMA_RETENTION_GATE_AUDIT_SUPPORT_NOTE_2026-04-27.md
+  - scripts/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.py
+  - logs/runner-cache/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.txt
+  - .claude/science/physics-loops/hadron-sqrt-sigma-gate-packet-20260617/
+open_blockers:
+  - "No proper N_f=2+1 dynamical lattice calculation at beta=6.0 is supplied."
+  - "No large-volume framework-side Wilson/Creutz/force-scale B5 validation is supplied."
+  - "This PR does not apply an audit verdict, edit the audit ledger, or land to main."
+next_action: "Reviewer extracts/lands source-side readiness if acceptable; independent audit decides the row."
+stop_condition: "Stop after ready PR creation."

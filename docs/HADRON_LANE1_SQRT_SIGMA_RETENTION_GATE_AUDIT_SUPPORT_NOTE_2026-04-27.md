@@ -9,6 +9,9 @@ must be tightened before `sqrt(sigma)` can move beyond bounded status.
 **Lane:** 1 — Hadron mass program (route 3E)
 **Source workstream:** `hadron-mass-program-20260427`
 
+**Primary runner:** [`scripts/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.py`](../scripts/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.txt`](../logs/runner-cache/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.txt)
+
 ---
 
 ## 0. Statement
@@ -265,9 +268,11 @@ not promote `sqrt(sigma)` from bounded to retained. It does not
 retire any input. It identifies the precise residual budget that
 the retention promotion must close.
 
-A runner is not authored: the audit is structural review of an
-existing bounded derivation; no new symbolic or numerical content
-is introduced.
+The primary source-packet runner records no audit verdict and makes no
+status promotion. It verifies the dependency links requested for
+re-audit, replays the Method-2 / rough-screening budget arithmetic, and
+checks that the B2 dynamical-screening and B5 framework-to-standard-QCD
+links remain explicit current-surface gates.
 
 ## Audit dependency repair links
 

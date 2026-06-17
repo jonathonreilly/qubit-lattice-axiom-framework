@@ -1,71 +1,80 @@
-# Cross-Sector Closure N_gen = N_color = 3 via Retained Three-Generation Structure and Retained Magnitudes Counts
+# Cross-Sector N_gen = N_color = 3 Conditional Authority Boundary
 
 **Date:** 2026-04-25
 
-**Status:** proposed_retained generation/color cross-sector numeric CLOSURE theorem
-grounded in **retained-tier** authorities on `main`. This note CLOSES the
-cross-sector identification `N_gen = N_color = 3` directly via two
-**retained-status** authorities (no support-tier promotion and no
-charged-lepton Koide promotion):
+**Status:** open / conditional-support authority-boundary packet. Independent
+audit decides any future status; this source note does not set or predict an
+effective retained/promoted outcome.
 
-1. `THREE_GENERATION_STRUCTURE_NOTE.md` — **status: retained** — canonical
-   main-branch note for the retained three-generation matter-structure row.
-   Establishes physical `N_gen = 3` on the retained surface.
+## 2026-06-17 audit-unlock boundary
 
-2. `CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md` — retained
-   theorem. Establishes `N_color = 3` (via retained `n_color = 3` in the
-   CKM magnitudes structural-counts package).
+The old closure language below is historical and superseded by this boundary.
+The finite equality `N_gen = N_color = 3` remains visible when the two integer
+readouts are supplied. Current main does **not** certify the whole dependency
+chain as retained-grade closure authority inside this packet, and the CL3 color
+/ taste readings are not used as closure authorities. The auditable content is
+therefore conditional equality support plus an explicit source-authority
+boundary, not a generation/color closure theorem.
 
-Both authorities are RETAINED on current main. Their independent retention
-of the value 3 closes the cross-sector identification by **direct
-numerical equality of two retained values**, without invoking any
-support-tier authority promotion.
+This note originally attempted to close the cross-sector identification
+`N_gen = N_color = 3` directly via two retained-status authorities. Under the
+current boundary, those old closure claims are superseded: the packet now
+records the finite equality and the exact authority assumptions that would be
+needed before any later status elevation.
 
-The headline closure:
+1. `THREE_GENERATION_STRUCTURE_NOTE.md` supplies the `N_gen = 3` readout used
+   by the conditional equality.
+
+2. `CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md` supplies the
+   `N_color = 3` readout used by the conditional equality.
+
+The paired runner inspects the current status text and ledger status for the
+sources, but this source note does not convert those readouts into retained
+closure authority.
+
+The conditional equality:
 
 ```text
-N_gen   =  3   [retained, THREE_GENERATION_STRUCTURE_NOTE]
-N_color =  3   [retained, CKM_MAGNITUDES_STRUCTURAL_COUNTS]
-N_gen   =  N_color  =  3      EXACTLY (direct retained equality).
+N_gen   =  3   [supplied by THREE_GENERATION_STRUCTURE_NOTE]
+N_color =  3   [supplied by CKM_MAGNITUDES_STRUCTURAL_COUNTS]
+N_gen   =  N_color  =  3      EXACTLY (conditional equality).
 ```
 
 **Auxiliary structural reading (NOT load-bearing for closure):**
 The CL3 support-tier theorems `CL3_COLOR_AUTOMORPHISM_THEOREM` and
 `CL3_TASTE_GENERATION_THEOREM` exhibit a **shared Z³ provenance motif**
 across the color and generation surfaces — both relate the value 3 to the
-3 independent coordinate axes of the retained Z³ spatial substrate. This
-reading is **explanatory only**: it is consistent with the retained
-closure but not load-bearing. The closure stands on the two retained-tier
-authorities above.
+3 independent coordinate axes of the framework spatial substrate. This
+reading is **explanatory only**: it is not load-bearing closure authority.
 
 **This note explicitly does NOT:**
 - Promote either CL3 support-tier theorem to retained.
 - Upgrade "generation candidates / generation-analogous structures" from
   the CL3 taste-generation note to physical `N_gen` (that upgrade was a
   prior reviewer-flagged overclaim now corrected).
-- Promote any Koide-bridge support-tier branch to retained Koide closure.
+- Promote any Koide-bridge support-tier branch to Koide closure.
 - Derive charged-lepton Koide, PMNS closure, or any mechanism beyond the
-  numeric equality `N_gen = N_color = 3` by direct retained equality.
+  numeric equality `N_gen = N_color = 3` by conditional equality.
 
-The closure is structurally minimal: it uses ONLY the retention of
-`N_gen = 3` and `N_color = 3` on current main, and the trivial fact that
-3 = 3.
+The conditional equality is structurally minimal: once `N_gen = 3` and
+`N_color = 3` are supplied, it uses only the trivial fact that 3 = 3.
 
 **Primary runner:**
 `scripts/frontier_ckm_koide_cross_sector_z3_closure.py`
 
 ## Statement
 
-On the **retained-tier** authority surface of current `main`:
+On the conditional source route:
 
 ```text
-(R1)  N_gen = 3.                                              [retained, THREE_GENERATION_STRUCTURE_NOTE]
-(R2)  N_color = 3.                                            [retained, CKM_MAGNITUDES_STRUCTURAL_COUNTS]
-(R3)  N_gen = N_color = 3.                                    [direct retained equality]
+(R1)  N_gen = 3.                                              [supplied by THREE_GENERATION_STRUCTURE_NOTE]
+(R2)  N_color = 3.                                            [supplied by CKM_MAGNITUDES_STRUCTURAL_COUNTS]
+(R3)  N_gen = N_color = 3.                                    [conditional equality]
 ```
 
-`(R1)`, `(R2)` are independently retained on main. `(R3)` is the closure of
-the cross-sector identification by trivial equality of two retained values.
+`(R3)` is the conditional cross-sector equality by trivial equality of two
+supplied values. This note does not certify the authority status of `(R1)` or
+`(R2)` beyond recording the runner-visible boundary.
 
 **Auxiliary reading (support-tier, not load-bearing):**
 
@@ -184,13 +193,12 @@ closure authorities (the prior version of this note, reviewer-flagged P0/P1).
 This note CLOSES the cross-sector identification by exhibiting that BOTH
 `N_gen = 3` AND `N_color = 3` are independently RETAINED on current main:
 
-- `THREE_GENERATION_STRUCTURE_NOTE.md` (status: retained) for `N_gen = 3`.
-- `CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md` (retained) for `N_color = 3`.
+- `THREE_GENERATION_STRUCTURE_NOTE.md` for the supplied `N_gen = 3` readout.
+- `CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md` for the supplied `N_color = 3` readout.
 
-By trivial arithmetic, `N_gen = N_color = 3`. The closure is structurally
-minimal and uses only retained-tier authorities — no support-tier
-promotion, no upgrade of "candidates" to physical, no over-promotion of
-prior support branches.
+By trivial arithmetic, `N_gen = N_color = 3`. The equality support is
+structurally minimal and does not promote support-tier authorities, upgrade
+"candidates" to physical, or over-promote prior support branches.
 
 ### What changed from the prior reviewer-flagged version
 
@@ -199,16 +207,16 @@ The prior version of this branch (now superseded) attempted to close
 as retained closure authorities and silently upgrading "generation
 candidates" to physical `N_gen`. The reviewer flagged four P0/P1 issues:
 
-- P0: Support-only CL3 notes promoted to retained authorities.
+- P0: Support-only CL3 notes treated as closure authorities.
 - P0: Generation candidates upgraded to physical N_gen without proof.
 - P1: Retained-input table including support notes and unmerged branches.
 - P1: Runner hard-coded the closure instead of verifying it.
 
-This rebuilt version uses **retained-tier authorities only** for the
-closure derivation chain. The CL3 support-tier theorems appear as auxiliary
+The current boundary version keeps the CL3 support-tier theorems as auxiliary
 structural reading (S1-S3), explicitly tagged as support-tier and explicitly
-not load-bearing. The runner now independently verifies that both retained
-authorities exist on main with their declared retained-tier status.
+not load-bearing. The runner independently records the status boundary for
+the two supplied integer readouts and checks the equality without hard-coding
+closure authority.
 
 ### What this does NOT promote
 
@@ -305,8 +313,8 @@ TOTAL: PASS=17, FAIL=0
 PASSED: 17/17
 ```
 
-The runner explicitly extracts the verbatim `Status:` line from each cited
-authority on disk and prints it as ground-truth proof:
+The runner explicitly extracts status text from each cited authority on disk
+and prints it as boundary evidence:
 
 ```text
 Extracted Status: 'retained'                                       [THREE_GENERATION_STRUCTURE_NOTE]
@@ -314,25 +322,23 @@ Extracted Status: 'retained structural-identity subtheorem ...'    [CKM_MAGNITUD
 Extracted Status: 'reviewed exact algebraic support theorem ...'   [CL3_COLOR / CL3_TASTE (support-tier)]
 ```
 
-Tier classification is by direct text containment of "retained" / "support"
-in the extracted Status text, not by assumption.
+Tier classification is reported for transparency only; audit decides whether
+that evidence is sufficient for any future status elevation.
 
-The runner uses Python's integer arithmetic and verifies BOTH retained
-authorities exist on main, BOTH are tier-tagged "retained", and the
-direct equality N_gen = N_color = 3 holds. It does NOT hard-code the
-closure; it independently verifies each retained value and then checks
-equality.
+The runner uses Python's integer arithmetic, verifies the source readouts exist,
+records their authority boundary, and checks `N_gen = N_color = 3`. It does
+not hard-code closure.
 
 ## Cross-References
 
-**Retained-tier authorities used in closure:**
+**Conditional source readouts used in equality support:**
 
 - [`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md)
-  -- status: retained; canonical authority for physical N_gen = 3.
+  -- source readout for physical N_gen = 3.
 - [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md)
-  -- retained authority for N_color = 3.
+  -- source readout for N_color = 3.
 - [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
-  -- framework primitives axiom 2 (Z³ spatial substrate); retained.
+  -- framework primitives axiom 2 (Z³ spatial substrate).
 
 **Support-tier auxiliary readings (NOT load-bearing for closure):**
 
@@ -345,6 +351,6 @@ equality.
 
 - Prior eight Koide-bridge support-tier branches on main and any pending
   unmerged Koide-bridge branches. They remain support-tier under this
-  closure; their conditional readings are numerically consistent with
-  R3 but are NOT promoted to retained by this note.
+  equality; their conditional readings are numerically consistent with
+  R3 but do not receive any status elevation from this note.
 - Cross-sector A²-Koide bridge SUPPORT_NOTE (remains support-tier).

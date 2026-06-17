@@ -1,0 +1,37 @@
+loop: ckm-su2-authority-boundary-20260617
+branch: physics-loop/ckm-su2-authority-boundary-20260617
+base: origin/main@d1ac4c902
+target_status: open
+actual_current_surface_status: open
+cycle_count: 1
+active_route: source authority-boundary repair
+target_claim_ids:
+  - ckm_a_squared_below_w2_y_quantum_closure_theorem_note_2026-04-25
+  - ckm_koide_cross_sector_z3_closure_theorem_note_2026-04-25
+  - su2_weak_beta_coefficient_structural_closed_form_theorem_note_2026-04-26
+files_touched:
+  - docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md
+  - docs/CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md
+  - docs/SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md
+  - scripts/frontier_ckm_a_squared_below_w2_y_quantum_closure.py
+  - scripts/frontier_ckm_koide_cross_sector_z3_closure.py
+  - scripts/frontier_su2_weak_beta_coefficient_structural_closed_form.py
+  - logs/runner-cache/frontier_ckm_a_squared_below_w2_y_quantum_closure.txt
+  - logs/runner-cache/frontier_ckm_koide_cross_sector_z3_closure.txt
+  - logs/runner-cache/frontier_su2_weak_beta_coefficient_structural_closed_form.txt
+open_imports:
+  - Several consumed authority rows are unaudited, meta, or non-closure-grade on current main.
+  - Optional YT_EW literal source checks are not source-visible in the form the old runners required.
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: demotion
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+verification:
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_ckm_a_squared_below_w2_y_quantum_closure.py
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_ckm_koide_cross_sector_z3_closure.py
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_su2_weak_beta_coefficient_structural_closed_form.py
+  - python3 -m py_compile scripts/frontier_ckm_a_squared_below_w2_y_quantum_closure.py scripts/frontier_ckm_koide_cross_sector_z3_closure.py scripts/frontier_su2_weak_beta_coefficient_structural_closed_form.py
+  - git diff --check
+next_exact_action: Open review PR for the CKM/SU2 authority-boundary repair.

@@ -14,6 +14,10 @@ registry, ledger, queue, or publication-status surfaces.
 [`scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py`](../scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py)
 (latest local run: SCORECARD: PASS=46, FAIL=0; paired cached log:
 [`logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt`](../logs/runner-cache/frontier_registrable_readout_additive_even_phase_free_2026_06_10.txt))
+**Scope guard runner:**
+[`scripts/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.py`](../scripts/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.py)
+(TOTAL: PASS=8, FAIL=0; cached:
+[`logs/runner-cache/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.txt`](../logs/runner-cache/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.txt))
 
 ## Boundary
 

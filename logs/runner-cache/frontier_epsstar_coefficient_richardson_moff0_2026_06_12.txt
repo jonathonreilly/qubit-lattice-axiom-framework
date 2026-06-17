@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/frontier_epsstar_coefficient_richardson_moff0_2026_06_12.py
+runner_sha256: b9b185b6758bfc35c0c588b1fe36054e69fcfd8e4dcb9ae200810e2a73488726
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 2.05
+status: ok
+----- stdout -----
+eps* coefficient Richardson/m!=0 finite Harper/PT verifier
+PT cell: Q=24, Ly=2, N=48, GL=20; surface_eta=0.050; richardson_etas=(0.08, 0.04, 0.02, 0.01)
+
+S0 ANCHORS
+T0_BRANCH mu0=1.515550712171 branch_final=(-1.421085471520e-14,+4.263256414561e-14) R0_prime=+2.557860549618e+02 C_T2_naive=+7.819617146790e+02
+ANCHOR_COEFF alpha_seagull=-9.266358431847 alpha_full_onepoint=+4.141818423703
+ANTI_FAB T=0.20 root=1.631150561591 interband_chi=-8.887936149151e-01 interband_H1_weight=+1.080520517733e-01
+PASS: S0 T=0 branch root reproduces landed mu*_0 region :: mu0=1.515550712171, frozen=1.515550712171, tol=1.00e-09
+PASS: S0 landed seagull alpha is reproduced :: alpha_seagull=-9.266358431847, frozen=-9.266358431847, tol=1.00e-09
+PASS: S0 landed one-point full alpha is reproduced :: alpha_onepoint=+4.141818423703, frozen=+4.141818423703, tol=1.00e-09
+PASS: S0 anti-fabrication: interband |H1| weight is nontrivial at the PT root :: interband_H1_weight=1.080521e-01, min=1.0e-02
+
+S1 GENUINE RICHARDSON
+ETA_SEQUENCE eta=0.080 chi=-2.680524318532e-01 chi_over_eta2=-4.188319247706e+01 alpha_eta=+0.496321835810
+ETA_SEQUENCE eta=0.040 chi=-1.270283322341e+00 chi_over_eta2=-7.939270764633e+02 alpha_eta=+9.408149684512
+ETA_SEQUENCE eta=0.020 chi=-1.973389391589e+00 chi_over_eta2=-4.933473478972e+03 alpha_eta=+58.462368057151
+ETA_SEQUENCE eta=0.010 chi=+8.556903931964e-01 chi_over_eta2=+8.556903931964e+03 alpha_eta=-101.400538430462
+RICHARDSON_FIT chi_over_eta2_extrap=+1.408325248641e+03 chi_over_eta2_slope=-3.347859777074e+05 alpha_full_extrap=-16.688856113481 alpha_eta2_slope=+3.967261835404e+03 max_abs_alpha_fit_residual=8.510840850052e+01 rms_alpha_fit_residual=5.725494626009e+01 max_abs_chi_over_eta2_fit_residual=7.182057281094e+03
+PASS: S1 Richardson uses the required fixed eta set :: etas=(0.08, 0.04, 0.02, 0.01)
+PASS: S1 genuine eta^2 extrapolated alpha is frozen :: alpha_extrap=-16.688856113481, frozen=-16.688856113481, tol=1.00e-09
+PASS: S1 eta^2 fit residual is below the frozen honest bound :: max_abs_alpha_fit_residual=8.510841e+01, bound=8.6e+01
+
+S2 HONEST COMPARISON
+LANDED_SLOPE_GRID T=0.100:mu=1.576146132255:mu2=2.484236630223 T=0.150:mu=1.618806032391:mu2=2.620532970507 T=0.200:mu=1.631150561591:mu2=2.660652154577 T=0.250:mu=1.645930351011:mu2=2.709086720380
+TRUTH_FIT mu*(T)^2 = c + d*T^2: c=2.487775722248 d_measured=+3.877078419950 max_abs_residual=4.552298380935e-02
+HONEST_COMPARISON alpha_full_extrap=-16.688856113481 alpha_kernel_extrap=-7.422497681634 onepoint_gap=2.647400037535e-01 extrap_gap=2.056593453343e+01 relative_gap=5.304492792203e+00
+PASS: S2 measured finite-T slope reproduces landed +3.877078419950 :: d_measured=+3.877078419950, frozen=+3.877078419950, tol=1.00e-09
+PASS: S2 measured relative gap is inside the frozen honest bound :: relative_gap=5.304493e+00, bound=5.40e+00
+PASS: S2 genuine eta^2 Richardson does not improve on the one-point estimate :: extrap_gap=2.056593e+01, onepoint_gap=2.647400e-01
+PASS: S2 m=0 extrapolated split honestly does not satisfy sign-flip inequalities :: alpha_seagull=-9.266358431847, alpha_kernel_extrap=-7.422497681634
+
+S3 m != 0 GENERALITY
+MASS_OFF_ZERO m=0.200 mu0=1.528582818440 alpha_seagull=-10.989261976026 alpha_kernel=+15.113333065709 alpha_full=+4.124071089683
+PASS: S3 m=0.2 kernel still flips the seagull sign :: alpha_seagull(m=0.2)=-10.989261976026, alpha_kernel(m=0.2)=+15.113333065709
+
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

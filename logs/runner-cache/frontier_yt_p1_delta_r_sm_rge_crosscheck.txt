@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_delta_r_sm_rge_crosscheck.py
-runner_sha256: 5f0734589451b493d1ca4929b3933d8ee4e2a54ad263f8bad028749661d3a500
+runner_sha256: 0182134fd3cc907c20165e598a5b83027a8b49fdaa2d163628d95dda3f1ba5d7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 ========================================================================
@@ -30,17 +30,17 @@ Block 3: Boundary conditions at v (framework primary chain).
   [PASS] g_s(v) = 1.139 (CMT: alpha_bare / u_0^2)  (g_s(v) = 1.139)
   [PASS] y_t(v) = 0.9176 (primary-chain post-color-projection)  (y_t(v) = 0.9176)
 
-Block 4: Retained central Delta_R at M_Pl (three-channel assembly).
+Block 4: Historical Delta_R comparator at M_Pl (three-channel assembly).
   [PASS] Delta_1 central = +2 (from Delta_1 BZ note)  (Delta_1 = 2.0)
   [PASS] Delta_2 central = -10/3 (from Delta_2 BZ note)  (Delta_2 = -3.333333)
   [PASS] Delta_3 central = +0.93 (from Delta_3 BZ note)  (Delta_3 = 0.93)
-  [PASS] Delta_R = -3.28 % from (D1, D2, D3) assembly  (Delta_R = -3.278 %)
+  [PASS] Historical Delta_R = -3.28 % from (D1, D2, D3) assembly  (Delta_R = -3.278 %)
 
-Block 5: Lattice Ward + Delta_R prediction at M_Pl (MSbar side).
+Block 5: Historical lattice Ward + Delta_R comparator at M_Pl (MSbar side).
          1/sqrt(6)                      = 0.408248
          1/sqrt(6) * (1 + Delta_R)      = 0.394866
   [PASS] Ward (1/sqrt(6)) = 0.4082  (1/sqrt(6) = 0.408248)
-  [PASS] Ward * (1 + Delta_R) = 0.3948 (MSbar prediction at M_Pl)  (prediction = 0.394866)
+  [PASS] Ward * (1 + historical Delta_R) = 0.3948 (MSbar comparator at M_Pl)  (prediction = 0.394866)
 
 Block 6: Backward SM MSbar 2-loop RGE integration v -> M_Pl.
          t_v  = ln(246.28) = 5.5065
@@ -66,7 +66,7 @@ Block 7: Backward SM 1-loop RGE (truncation cross-check).
 
 Block 8: Direct comparison (SM-RGE backward vs Ward + Delta_R).
          SM-RGE 2-loop y_t/g_s (M_Pl)   = 0.785098
-         Ward * (1 + Delta_R_central)   = 0.394866
+         Ward * (1 + Delta_R_historical)= 0.394866
          Difference (abs)               = +0.390233
          Difference / (1/sqrt(6))       = +95.587 %
          Implied Delta_R if RGE-backward = MSbar at M_Pl = +92.309 %
@@ -94,23 +94,24 @@ Block 11: Cross-check verdict.
          Summary:
          - Direct comparison of backward SM RGE y_t/g_s (M_Pl)
            against Ward * (1 + Delta_R) at M_Pl yields a ~2x gap.
-         - This gap is NOT a failure of Delta_R = -3.27 %.
+         - This gap is NOT, by itself, an RGE contradiction of
+           the historical Delta_R = -3.27 % comparator.
          - The framework's P2 matching theorem decomposes the
            full lattice -> SM jump at v as M = sqrt(8/9) *
            F_yt * sqrt(u_0) with F_yt from SM RGE running.
          - The 2-loop SM RGE backward integration reproduces
            M = 1.9734 to 0.1% and the decomposition
            2.1194 closes M to within the QFP 3% envelope + 1-loop truncation.
-         - Delta_R = -3.27 % at M_Pl remains an INDEPENDENT
-           scheme-conversion correction, orthogonal to the M
-           matching coefficient at v.
-         - The cross-check confirms the framework's partitioning
+         - The corrected current surface does not retain Delta_R
+           precision; this runner only preserves the bounded RGE
+           partitioning check around the historical comparator.
+         - The cross-check supports the framework's partitioning
            of lattice -> SM into (M_Pl scheme conversion) +
            (v-scale non-RGE matching) + (SM 2-loop RGE running).
 
-         VERDICT: CROSS-CHECK: CONSISTENT (non-trivially) with the retained framework.
+         VERDICT: BOUNDED-SUPPORT: RGE partitioning is internally consistent; Delta_R precision remains uncontrolled on the corrected P1 surface.
 
-  [PASS] Overall cross-check verdict: framework-consistent partitioning of lattice -> SM into three orthogonal pieces  (no contradiction between Delta_R = -3.27% and SM 2-loop RGE)
+  [PASS] Overall cross-check verdict: framework-consistent partitioning of lattice -> SM into three orthogonal pieces  (RGE partitioning support; no Delta_R precision certificate)
 
 Block 12: Safe claim boundary.
          - The runner does NOT claim the cross-check 'passes' in the
@@ -121,14 +122,15 @@ Block 12: Safe claim boundary.
            matching coefficient to 0.1% and its sqrt(8/9) * F_yt *
            sqrt(u_0) decomposition to within QFP 3% envelope.
          - The runner DOES claim that no RGE evidence contradicts
-           Delta_R = -3.27 % at M_Pl as the scheme-conversion
-           correction on the Ward ratio.
+           the historical Delta_R = -3.27 % comparator by itself.
+         - The runner DOES NOT claim current retained Delta_R
+           precision after the 2026-06-16 P1 correction.
          - The runner makes NO claim about a framework-native
            4D BZ quadrature of I_v_scalar, I_v_gauge, or I_SE.
 
 ========================================================================
   PASSED: 31
-  FAILED: 0
+  HARD ISSUES: 0
 ========================================================================
 
 ----- stderr -----

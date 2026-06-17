@@ -9,33 +9,27 @@
 > below is **ballpark, not a controlled prediction**, pending re-derivation.
 > Writeup + memory-safe reproducers:
 > [YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md](YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md).
+>
+> **2026-06-17 audit-boundary update.** This cross-check is now carried only as
+> bounded support for the SM-RGE partitioning/provenance calculation around the
+> historical comparator. It is not a retained-proposal or retained-status
+> certificate for `Delta_R` precision, and it does not repair the corrected P1
+> defect above.
 
 # P1 Δ_R SM-RGE Cross-Validation Note
 
 **Date:** 2026-04-18 (amended 2026-04-18 with canonical-central cross-reference)
-**Status:** Cross-validation of the proposed_retained `Δ_R` at `M_Pl` against a SECOND
-independent derivation: numerical backward integration of the SM MSbar
-2-loop RGE for `(g_1, g_2, g_s, y_t)` from `v` up to `M_Pl`, starting from
-the framework primary-chain boundary conditions at `v`. The cross-check was
-originally performed against the literature-cited central `Δ_R = −3.27 %`
-(from the three-channel Rep-A/Rep-B assembly with `Δ_1 = +2`, `Δ_2 = −10/3`,
-`Δ_3 = +0.93`). **The canonical retained Δ_R central has since been
-superseded to `Δ_R = −3.77 % ± 0.45 %`** from the full-staggered-PT BZ
-quadrature
-(`docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`); the
-cross-check verdict here is unchanged because **the SM-RGE backward
-integration is orthogonal to the M_Pl-scale scheme-conversion correction**
-— see §4.3 of this note, which explains why neither the literature-cited
-`−3.27 %` nor the canonical `−3.77 %` enters the SM-RGE backward integration
-on the retained factorization. **Verdict: CROSS-CHECK CONSISTENT
-(non-trivially) with the retained framework partitioning at both the
-literature-cited and canonical centrals.** The backward 2-loop SM RGE
-reproduces the framework matching coefficient `M = 1.9734` to 0.1 % and its
-retained decomposition `M = sqrt(8/9) · F_yt · sqrt(u_0)` to within the
-retained QFP 3 % envelope plus the 1-loop/2-loop truncation envelope. No
-RGE evidence contradicts the canonical `Δ_R = −3.77 % ± 0.45 %` (or the
-literature-cited `Δ_R = −3.27 %`) at `M_Pl` as the scheme-conversion
-correction on the Ward ratio.
+**Status (2026-06-17):** bounded-support / historical SM-RGE partitioning
+check. This note no longer proposes or asserts retained `Δ_R` precision. The
+backward 2-loop SM RGE calculation remains a deterministic provenance check
+for the factorized framework partitioning: it reproduces the framework
+matching coefficient `M = 1.9734` to 0.1 % and its
+`M = sqrt(8/9) · F_yt · sqrt(u_0)` decomposition to within the QFP/truncation
+envelope. The old direct comparison against the literature-cited
+`Δ_R = −3.27 %` and later `−3.77 % ± 0.45 %` central values is retained here
+only as historical context; after the 2026-06-16 correction, those `Δ_R`
+precision claims are uncontrolled and this cross-check is not a repair of
+that defect.
 
 **Primary runner:** `scripts/frontier_yt_p1_delta_r_sm_rge_crosscheck.py`
 **Log:** `logs/retained/yt_p1_delta_r_sm_rge_crosscheck_2026-04-18.log`
@@ -44,14 +38,13 @@ correction on the Ward ratio.
 
 ## Authority notice
 
-This note is a retained **cross-validation** of the retained central
-`Δ_R = −3.27 %` at `M_Pl`. It exercises a SECOND independent
-derivation chain (SM MSbar 2-loop RGE backward from `v` to `M_Pl`)
-against the FIRST derivation chain (three-channel Rep-A/Rep-B
-lattice-to-MSbar assembly at `M_Pl`). The two chains address
-SEPARATE physical pieces of the complete lattice → SM translation;
-this note documents the geometry of that separation and verifies
-that the two chains are mutually consistent on the retained surface.
+This note is a bounded-support **cross-validation/provenance** artifact for the
+SM-RGE partitioning calculation. It exercises a SECOND independent derivation
+chain (SM MSbar 2-loop RGE backward from `v` to `M_Pl`) against the historical
+three-channel Rep-A/Rep-B lattice-to-MSbar assembly at `M_Pl`. The two chains
+address separate physical pieces of the complete lattice → SM translation; this
+note documents that separation without certifying a current retained
+`Δ_R` central.
 
 This note does NOT modify:
 
@@ -90,7 +83,8 @@ against the Ward-identity-plus-scheme-conversion prediction at
 `M_Pl`. The cross-check uncovers the ORTHOGONAL geometry of the
 three framework correction pieces (scheme conversion at `M_Pl`;
 color projection at `v`; CMT endpoint at `v`; SM RGE running) and
-documents how they assemble into the retained observables.
+documents how they assemble into the historical transport calculation. It does
+not undo the 2026-06-16 corrected `Delta_R` defect.
 
 ---
 
@@ -628,10 +622,12 @@ the lattice side.
 
 ---
 
-## 7. Implication for Δ_R = −3.27 %
+## 7. Implication for the historical Δ_R comparator
 
-The cross-check does NOT narrow the `Δ_R` central value below
-`−3.27 %` or revise its range. It establishes:
+The cross-check does NOT narrow the `Δ_R` central value, repair the
+2026-06-16 P1 defect, or revise the corrected conclusion that `Δ_R` precision
+is uncontrolled. It establishes only the bounded-support RGE partitioning facts
+below.
 
 ### 7.1 What the cross-check confirms
 
@@ -639,20 +635,18 @@ The cross-check does NOT narrow the `Δ_R` central value below
   numerically well-behaved and reproduces standard SM
   extrapolation values of `g_s(M_Pl) ≈ 0.487` and
   `y_t(M_Pl) ≈ 0.382`;
-- The framework's retained M-decomposition identity closes at
-  2-loop to within `+7.4 %`, within the retained envelope;
+- The framework's inherited M-decomposition identity closes at
+  2-loop to within `+7.4 %`, within the QFP/truncation envelope;
 - The 1-loop/2-loop truncation on the ratio is `−4.8 %`, within
   the retained QFP 3 % + 2-loop envelope.
 
 ### 7.2 What the cross-check does NOT confirm
 
 - The naive direct comparison "SM-RGE-backward `y_t/g_s (M_Pl)` =
-  `1/sqrt(6) · (1 + Δ_R)`" FAILS by ~95 %. **This is not evidence
-  that Δ_R is wrong.** It is evidence that the two quantities
-  live in different orthogonal factors of the lattice → SM
-  translation. The framework accounts for the full gap via
-  `M = sqrt(8/9) · F_yt · sqrt(u_0)` at `v`, plus `Δ_R` at
-  `M_Pl`.
+  `1/sqrt(6) · (1 + Δ_R)`" differs by ~95 %. On the historical surface this
+  was interpreted as evidence that the two quantities live in different
+  orthogonal factors of the lattice → SM translation. On the corrected current
+  surface it is not a retained `Delta_R` precision certificate.
 
 ### 7.3 What remains open
 
@@ -670,43 +664,37 @@ The cross-check does NOT narrow the `Δ_R` central value below
 
 ## 8. Safe claim boundary
 
-This note claims:
+This note currently claims:
 
 > The 2-loop SM MSbar RGE backward integration from `v =
 > 246.28 GeV` to `M_Pl = 1.2209 × 10^19 GeV` with framework
 > primary-chain boundary conditions `(g_1, g_2, g_s, y_t)(v) =
 > (0.464, 0.648, 1.139, 0.9176)` yields `y_t/g_s (M_Pl) = 0.78510`
 > and running factors `F_yt = 2.3995`, `F_gs = 2.3384`. The
-> framework retained matching coefficient `M = 1.9734` is
-> reproduced to 0.1 % from the primary-chain v-scale values; its
-> retained decomposition `M = sqrt(8/9) · F_yt · sqrt(u_0)` closes
-> at 2-loop to `2.1194`, a `+7.4 %` residual within the retained
-> QFP 3 % envelope + 1-loop/2-loop truncation envelope. The naive
+> framework matching coefficient `M = 1.9734` is reproduced to 0.1 % from
+> the primary-chain v-scale values; its inherited decomposition
+> `M = sqrt(8/9) · F_yt · sqrt(u_0)` closes at 2-loop to `2.1194`, a
+> `+7.4 %` residual within the QFP/truncation envelope. The naive
 > direct comparison of `y_t/g_s (M_Pl)` from SM-RGE backward
 > integration against the Ward-plus-scheme prediction
 > `1/sqrt(6) · (1 + Δ_R = −3.27 %) = 0.3949` reveals a gap of
 > `+95.6 %` relative to `1/sqrt(6)`, which is the signature of
 > the orthogonal non-RGE matching pieces at `v` (color projection
 > `sqrt(8/9)`, CMT endpoint `sqrt(u_0)`) that the framework
-> accounts for separately from the `M_Pl`-scale scheme conversion.
-> No RGE evidence contradicts `Δ_R = −3.27 %` at `M_Pl` as the
-> scheme-conversion correction on the Ward ratio. The cross-check
-> confirms the framework's three-piece partitioning of the
-> lattice → SM translation into (`M_Pl`-scale scheme conversion
-> `Δ_R`) + (v-scale non-RGE matching `sqrt(8/9) · sqrt(u_0)`) +
-> (SM 2-loop RGE running `F_yt`, `F_gs`).
+> historically accounted for separately from the `M_Pl`-scale scheme
+> conversion. The cross-check supports the three-piece partitioning of the
+> lattice → SM translation into (`M_Pl`-scale scheme comparator) + (v-scale
+> non-RGE matching `sqrt(8/9) · sqrt(u_0)`) + (SM 2-loop RGE running `F_yt`,
+> `F_gs`). It does not certify current `Delta_R` precision.
 
 It does **NOT** claim:
 
 - that `y_t/g_s (M_Pl)` from backward SM RGE equals
   `1/sqrt(6) · (1 + Δ_R)` (they are orthogonal quantities);
-- that `Δ_R = −3.27 %` is the sole scheme-level correction in the
-  full lattice → SM translation (the translation also includes
-  `sqrt(8/9)` color projection and `sqrt(u_0)` CMT endpoint at
-  `v`);
-- that the retained envelope is a precision closure of M
-  (`+7.4 %` residual on the decomposition sits INSIDE the
-  retained envelope but is not a sub-% closure);
+- that the historical `Δ_R = −3.27 %` comparator is currently retained or
+  controlled after the 2026-06-16 P1 correction;
+- that the QFP/truncation envelope is a precision closure of M
+  (`+7.4 %` residual on the decomposition is not a sub-% closure);
 - any framework-native 4D BZ quadrature of `I_v_scalar`,
   `I_v_gauge`, `I_SE`;
 - modification of any publication-surface file (no publication-
@@ -714,17 +702,18 @@ It does **NOT** claim:
 
 ---
 
-## 9. What is retained vs. cited vs. open
+## 9. What is inherited vs. cited vs. open
 
-**Retained (framework-native, inherited from prior notes):**
+**Inherited framework/provenance inputs:**
 
 - SU(3) Casimirs `C_F = 4/3`, `C_A = 3`, `T_F = 1/2` (D7 + S1).
 - Canonical surface `α_LM = 0.0907`, `α_LM/(4π) = 0.00721`.
 - Three-channel decomposition
   `Δ_R = (α_LM/(4π)) · [C_F · Δ_1 + C_A · Δ_2 + T_F n_f · Δ_3]`
   (Rep-A/Rep-B cancellation theorem).
-- Central values `Δ_1 = +2`, `Δ_2 = −10/3`, `Δ_3 = +0.93`, giving
-  `Δ_R = −3.27 %` central (three Δ_i BZ notes).
+- Historical central values `Δ_1 = +2`, `Δ_2 = −10/3`, `Δ_3 = +0.93`,
+  giving `Δ_R = −3.27 %` as the comparator used by this cross-check; this is
+  not a current retained precision claim after the 2026-06-16 correction.
 - Framework matching coefficient `M = 1.9734` and its
   decomposition `M = sqrt(8/9) · F_yt · sqrt(u_0)` (P2 v-matching
   theorem).
@@ -746,8 +735,7 @@ It does **NOT** claim:
 - `F_yt^(2-loop) = 2.3995`, `F_gs^(2-loop) = 2.3384` running
   factors.
 - Decomposition check `sqrt(8/9) · F_yt · sqrt(u_0) = 2.1194`
-  closes `M_target = 1.9734` to `+7.4 %`, within retained
-  envelope.
+  closes `M_target = 1.9734` to `+7.4 %`, within the QFP/truncation envelope.
 - 1-loop truncation shift on `y_t/g_s (M_Pl)` is `−4.8 %`, at the
   edge of the retained QFP 3 % envelope.
 
@@ -765,18 +753,16 @@ It does **NOT** claim:
 ## 10. Validation
 
 The runner `scripts/frontier_yt_p1_delta_r_sm_rge_crosscheck.py`
-emits deterministic PASS/FAIL lines and is logged under
-`logs/retained/yt_p1_delta_r_sm_rge_crosscheck_2026-04-18.log`. The
-runner must return PASS on every check to keep this note on the
-retained surface.
+emits deterministic per-check PASS lines and a hard-issue count. The runner
+must return zero hard issues to keep this note audit-ready as bounded support.
 
 The runner verifies:
 
-- exact retention of `C_F = 4/3`, `C_A = 3`, `T_F = 1/2`, `n_f = 6`;
-- exact retention of canonical-surface `α_LM/(4π) = 0.00721`;
-- exact retention of primary-chain boundary conditions at `v`;
-- exact retention of `Δ_R^central = −3.28 %` from the three-
-  channel assembly `(Δ_1, Δ_2, Δ_3) = (+2, −10/3, +0.93)`;
+- exact reproduction of `C_F = 4/3`, `C_A = 3`, `T_F = 1/2`, `n_f = 6`;
+- exact reproduction of canonical-surface `α_LM/(4π) = 0.00721`;
+- exact reproduction of primary-chain boundary conditions at `v`;
+- historical reproduction of `Δ_R^central = −3.28 %` from the three-channel
+  assembly `(Δ_1, Δ_2, Δ_3) = (+2, −10/3, +0.93)`;
 - SM 1-loop beta coefficients `b_1, b_2, b_3` from group theory;
 - numerical 2-loop backward RGE integration from `v` to `M_Pl`
   yields finite well-defined couplings, with `g_s(M_Pl) ≈ 0.487`
@@ -793,7 +779,7 @@ The runner verifies:
   consistency);
 - the identity `y_t/g_s (M_Pl) = (y_t/g_s)(v) · F_gs/F_yt` holds
   to 0.1 %;
-- VERDICT: cross-check consistent (non-trivially) with the
-  retained framework.
+- VERDICT: bounded support for the RGE partitioning; no current `Delta_R`
+  precision certificate.
 
 Final runner log: **31/31 PASS**.

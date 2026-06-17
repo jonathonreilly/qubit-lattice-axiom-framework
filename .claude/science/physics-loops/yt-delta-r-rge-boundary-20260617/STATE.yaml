@@ -1,0 +1,23 @@
+loop_slug: yt-delta-r-rge-boundary-20260617
+branch: physics-loop/yt-delta-r-rge-boundary-20260617
+base_ref: origin/main
+base_commit: 88c296eea755962f7f5ba19d0879895ad8c7f742
+mode: audit-unlock-source-repair
+target_claim_id: yt_p1_delta_r_sm_rge_crosscheck_note_2026-04-18
+target_status: bounded-support
+active_route: source_boundary_and_runner_cache_hygiene
+cycle_count: 1
+runtime_budget: unbounded_user_goal
+files_touched:
+  - docs/YT_P1_DELTA_R_SM_RGE_CROSSCHECK_NOTE_2026-04-18.md
+  - scripts/frontier_yt_p1_delta_r_sm_rge_crosscheck.py
+  - logs/runner-cache/frontier_yt_p1_delta_r_sm_rge_crosscheck.txt
+  - .claude/science/physics-loops/yt-delta-r-rge-boundary-20260617/
+open_imports:
+  - Corrected P1 Delta_R precision remains uncontrolled after the 2026-06-16 scalar /N_TASTE and fermion-regulator defects.
+  - This block does not rederive the Delta_i BZ channels.
+trace_gate_classification: direct_blocker_closure
+review_findings: review-loop delegated to later Codex reviewer per user workflow
+pr_status: pending
+next_exact_action: push branch and open review PR
+stop_condition: coherent block packaged for reviewer

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""CKM Wolfenstein eta^2 inverse-square structural reading.
+"""CKM Wolfenstein eta^2 inverse-square bounded structural reading.
 
-Retained CKM-structure corollary on current main:
+Dependency-gated CKM-structure bounded support on current main:
 
   W1: eta^2 = 1/N_pair^2 - 1/N_color^2
       = 1/(dim_SU2(Q_L))^2 - 1/(dim_SU3(Q_L))^2
@@ -15,10 +15,14 @@ with companion exact identities
   W5: rho = 1/(N_pair N_color)
   W6: eta^2 = (N_color^2 - N_pair^2)/N_quark^2
 
-The runner extracts Q_L:(a,b) from retained docs by regex, verifies cited
-status lines from disk, derives the identities by exact Fraction arithmetic,
-and explicitly audits that W2 is a generic count-surface factorization rather
-than an SM-uniqueness claim.
+The runner extracts Q_L:(a,b) from current docs by regex, checks cited
+authority ledger statuses, derives the identities by exact Fraction
+arithmetic, and explicitly audits that W2 is a generic count-surface
+factorization rather than an SM-uniqueness claim.
+
+Current status: bounded support. Several cited authorities are unaudited,
+conditional, or decoration-scoped in the audit ledger, so this runner does
+not certify a retained theorem.
 """
 
 from __future__ import annotations
@@ -32,6 +36,7 @@ from pathlib import Path
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+BOUNDARY_COUNT = 0
 REPO_ROOT = Path(__file__).resolve().parents[1]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
@@ -45,6 +50,13 @@ def check(name: str, condition: bool, detail: str = "", cls: str = "D") -> None:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
+
+
+def boundary(name: str, detail: str = "") -> None:
+    global BOUNDARY_COUNT
+    suffix = f"  ({detail})" if detail else ""
+    print(f"  [BOUNDARY] {name}{suffix}")
+    BOUNDARY_COUNT += 1
 
 
 def banner(title: str) -> None:
@@ -80,6 +92,12 @@ def extract_status_line(content: str) -> str:
                 if text.lower().startswith(prefix.lower()):
                     return text[len(prefix):].strip()
     return ""
+
+
+def display_status_text(status_text: str) -> str:
+    if "proposed" in status_text.lower() and "retained" in status_text.lower():
+        return "<legacy proposal wording present; non-authoritative>"
+    return status_text
 
 
 _LEDGER_CACHE: dict | None = None
@@ -156,7 +174,7 @@ def audit_authority_status_lines() -> None:
          "A^2 structural identity",
          ("retained",)),
         ("docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
-         "rho and eta^2 retained package",
+         "rho and eta^2 CKM package",
          ("retained",)),
         ("docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
          "N_pair, N_color, N_quark counts",
@@ -168,24 +186,33 @@ def audit_authority_status_lines() -> None:
 
     for rel_path, role, _kws in authorities:
         content = read_authority(rel_path)
-        status_text = extract_status_line(content)
+        status_text = display_status_text(extract_status_line(content))
         eff_status = ledger_effective_status(rel_path, ledger)
-        ok = bool(content) and _retained_grade(eff_status)
+        present = bool(content)
+        retained = _retained_grade(eff_status)
         print(f"  [{rel_path.split('/')[-1]}]")
         print(f"    Role:                {role}")
         print(f"    Status (note prose): {status_text!r}")
         print(f"    Effective status:    {eff_status!r}")
-        print(f"    Verified retained?   {ok}")
-        check(f"Retained-tier verified for {rel_path.split('/')[-1]}", ok)
+        print(f"    File present?        {present}")
+        print(f"    Retained-grade now?  {retained}")
+        check(f"Authority file present for {rel_path.split('/')[-1]}", present)
+        if present and retained:
+            check(f"Current retained-grade dependency for {rel_path.split('/')[-1]}", True)
+        elif present:
+            boundary(
+                f"Dependency not retained-grade for {rel_path.split('/')[-1]}",
+                detail=f"effective_status={eff_status!r}; eta-gap reading remains bounded support",
+            )
         print()
 
 
 def audit_source_extraction() -> tuple[int, int, int]:
-    banner("S1 source extraction from retained matter-content literal")
+    banner("S1 source extraction from current matter-content literal")
 
     ql_content = read_authority("docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md")
     ql_rep = extract_rep_literal(ql_content, "Q_L")
-    check("Extract Q_L:(a,b) from retained doc", ql_rep is not None)
+    check("Extract Q_L:(a,b) from current doc", ql_rep is not None)
     if ql_rep is None:
         print("FATAL: could not extract Q_L literal.")
         sys.exit(1)
@@ -193,8 +220,8 @@ def audit_source_extraction() -> tuple[int, int, int]:
     ur_content = read_authority("docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md")
     ur_rep = extract_rep_literal(ur_content, "u_R")
     dr_rep = extract_rep_literal(ur_content, "d_R")
-    check("Extract u_R:(1,3) from retained doc", ur_rep is not None)
-    check("Extract d_R:(1,3) from retained doc", dr_rep is not None)
+    check("Extract u_R:(1,3) from current doc", ur_rep is not None)
+    check("Extract d_R:(1,3) from current doc", dr_rep is not None)
 
     n_pair, n_color = ql_rep
     n_quark = n_pair * n_color
@@ -210,7 +237,7 @@ def audit_source_extraction() -> tuple[int, int, int]:
 
 
 def audit_retained_ckm_package(n_pair: int, n_color: int, n_quark: int) -> tuple[Fraction, Fraction, Fraction]:
-    banner("Retained CKM package values")
+    banner("Bounded CKM package values")
 
     rho = Fraction(1, n_quark)
     eta_sq = Fraction(n_quark - 1, n_quark ** 2)
@@ -220,9 +247,9 @@ def audit_retained_ckm_package(n_pair: int, n_color: int, n_quark: int) -> tuple
     print(f"  eta^2 = ({n_quark}-1)/{n_quark}^2 = {eta_sq}")
     print(f"  A^2   = {n_pair}/{n_color} = {a_sq}")
 
-    check("Retained rho = 1/6", rho == Fraction(1, 6))
-    check("Retained eta^2 = 5/36", eta_sq == Fraction(5, 36))
-    check("Retained A^2 = 2/3", a_sq == Fraction(2, 3))
+    check("Bounded rho = 1/6", rho == Fraction(1, 6))
+    check("Bounded eta^2 = 5/36", eta_sq == Fraction(5, 36))
+    check("Bounded A^2 = 2/3", a_sq == Fraction(2, 3))
 
     return rho, eta_sq, a_sq
 
@@ -237,10 +264,10 @@ def audit_w1_inverse_square_gap(n_pair: int, n_color: int, eta_sq: Fraction) -> 
     print(f"  1/N_pair^2  = {inv_pair_sq}")
     print(f"  1/N_color^2 = {inv_color_sq}")
     print(f"  W1 value     = {eta_sq_w1}")
-    print(f"  Retained eta^2 = {eta_sq}")
+    print(f"  Bounded eta^2 = {eta_sq}")
 
     check("W1 gives 5/36", eta_sq_w1 == Fraction(5, 36))
-    check("W1 matches retained eta^2", eta_sq_w1 == eta_sq)
+    check("W1 matches bounded eta^2", eta_sq_w1 == eta_sq)
     return eta_sq_w1
 
 
@@ -327,10 +354,10 @@ def audit_w2_is_not_sm_unique() -> None:
 
 def audit_framing() -> None:
     banner("Framing audit")
-    print("  This theorem is a retained structural reading of eta^2 on the sourced")
-    print("  Q_L:(2,3) surface. It does not claim a new below-Wn closure.")
+    print("  This theorem is a bounded structural reading of eta^2 on the sourced")
+    print("  Q_L:(2,3) surface. It does not claim retained status or below-Wn closure.")
     print("  It also does not claim W2 is SM-unique.")
-    check("Framing remains within retained-reading scope", True)
+    check("Framing remains within bounded-support scope", True)
 
 
 def audit_summary(n_pair: int, n_color: int, n_quark: int,
@@ -352,7 +379,7 @@ def audit_summary(n_pair: int, n_color: int, n_quark: int,
 
 def main() -> int:
     print("=" * 88)
-    print("CKM Wolfenstein eta^2 inverse-square structural reading")
+    print("CKM Wolfenstein eta^2 inverse-square bounded structural reading")
     print("See docs/CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md")
     print("=" * 88)
 
@@ -370,7 +397,7 @@ def main() -> int:
 
     print()
     print("=" * 88)
-    print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
+    print(f"TOTAL: PASS={PASS_COUNT}, BOUNDARY={BOUNDARY_COUNT}, HARD_ISSUES={FAIL_COUNT}")
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1
 

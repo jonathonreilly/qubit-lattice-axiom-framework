@@ -1,0 +1,24 @@
+loop_slug: ckm-eta-inverse-gap-boundary-20260617
+goal: "Unlock audit progress for the CKM eta^2 inverse-square gap row by repairing source-side overclaim and runner/cache failure."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Retained proposal only after S1/CKM/Bernoulli dependencies are independently retained-grade."
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Demote stale retained framing and convert open dependency statuses to boundary gates."
+files_touched:
+  - docs/CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md
+  - scripts/frontier_ckm_wolfenstein_eta_inverse_square_gap.py
+  - logs/runner-cache/frontier_ckm_wolfenstein_eta_inverse_square_gap.txt
+  - .claude/science/physics-loops/ckm-eta-inverse-gap-boundary-20260617/
+open_imports:
+  - "LEFT_HANDED_CHARGE_MATCHING is decoration-scoped."
+  - "ONE_GENERATION_MATTER_CLOSURE is unaudited."
+  - "CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE is unaudited/conditional depending on main revision."
+  - "WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES is unaudited."
+  - "CKM_CP_PHASE_STRUCTURAL_IDENTITY is unaudited."
+  - "CKM_MAGNITUDES_STRUCTURAL_COUNTS is unaudited."
+  - "CKM_MULTI_PROJECTION_BERNOULLI_FAMILY is unaudited/conditional depending on main revision."
+review_loop_disposition: not_run_user_delegated
+pr_status: pending
+next_exact_action: "Commit, push, and open a review PR."

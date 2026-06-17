@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_certified_gap_rung_four_bounded_2026_06_12.py
+runner_sha256: 276351e60ef6d6c681818bebcbc7bcf7ba89526dd4a2bc29ca9aaa5f1042dc89
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 492.65
+status: ok
+----- stdout -----
+Native gauge-transfer certified gap rung-four bounded runner
+certified packet shell: 0<=p,q<=14 (225 states)
+COEFF_ORDER=80, M_ORDER=60, MODE_MAX=280
+HS deflation betas: 22
+
+PASS: exact SU(3) recurrence layers are integer and nonnegative
+      layers n=0..80, final states=3321
+PASS: leading coefficients reproduce rung-one/rung-two character recurrence
+      (1, 0): beta^1 coeff=1/6; (0, 1): beta^1 coeff=1/6; (1, 1): beta^2 coeff=1/36; (2, 0): beta^2 coeff=1/72; (4, 4): beta^8 coeff=1/967458816; (7, 0): beta^7 coeff=1/1410877440
+PASS: rung-one [0,1] coefficient-ratio checks reproduce the 2/3 bound
+      beta in {0,1/10,1/2,1} <= 2/3
+beta=    1 | upper=0.425322926519 | tail_radius=0.000000000022 | margin=0.574677073481 | certified=yes | block=trace | improvement_vs_r3=0.000000000299 | block_float=0.206555269239 | T25_float=0.206555269216
+beta=    2 | upper=0.903165127752 | tail_radius=0.000000018108 | margin=0.096834872248 | certified=yes | block=trace | improvement_vs_r3=0.000000482698 | block_float=0.392271233009 | T25_float=0.392271114800
+beta=    3 | upper=0.932262113427 | tail_radius=0.000001514256 | margin=0.067737886573 | certified=yes | block=trace | improvement_vs_r3=0.000032716406 | block_float=0.345443773067 | T25_float=0.345415482824
+beta=    4 | upper=0.770614016905 | tail_radius=0.000047520382 | margin=0.229385983095 | certified=yes | block=trace | improvement_vs_r3=0.000521205276 | block_float=0.293114186118 | T25_float=0.292336208066
+beta=117/25 | upper=0.682850428785 | tail_radius=0.000354793603 | margin=0.317149571215 | certified=yes | block=trace | improvement_vs_r3=0.002156584828 | block_float=0.275040401208 | T25_float=0.271980665416
+beta=    5 | upper=0.650581920096 | tail_radius=0.000879251580 | margin=0.349418079904 | certified=yes | block=trace | improvement_vs_r3=0.003958026287 | block_float=0.268774076646 | T25_float=0.263772599089
+beta=    6 | upper=0.578349810928 | tail_radius=0.012105999832 | margin=0.421650189072 | certified=yes | block=trace | improvement_vs_r3=0.020039756899 | block_float=0.254417647458 | T25_float=0.239144755129
+beta=    7 | upper=0.534543550803 | tail_radius=0.132621491318 | margin=0.465456449197 | certified=yes | block=trace | improvement_vs_r3=0.076001471619 | block_float=0.244781981906 | T25_float=0.213857656899
+beta=    8 | upper=0.506636535527 | tail_radius=1.162659297804 | margin=0.493363464473 | certified=yes | block=trace | improvement_vs_r3=0.223072335255 | block_float=0.237819627107 | T25_float=0.188430365174
+beta=    9 | upper=0.488408514518 | tail_radius=8.588295000284 | margin=0.511591485482 | certified=yes | block=trace | improvement_vs_r3=0.542241289458 | block_float=0.232539666935 | T25_float=0.164177107815
+beta=   10 | upper=0.477091133117 | tail_radius=55.446459431149 | margin=0.522908866883 | certified=yes | block=trace | improvement_vs_r3=n/a | block_float=0.228393501896 | T25_float=0.141948155987
+beta=   11 | upper=0.471684682651 | tail_radius=321.358675678728 | margin=0.528315317349 | certified=yes | block=trace | improvement_vs_r3=n/a | block_float=0.225049775770 | T25_float=0.122086250752
+beta=   12 | upper=0.472127555693 | tail_radius=1705.977749809605 | margin=0.527872444307 | certified=yes | block=trace | improvement_vs_r3=n/a | block_float=0.222295534544 | T25_float=0.104619686508
+beta=   14 | upper=0.495103555972 | tail_radius=40777.920480457040 | margin=0.504896444028 | certified=yes | block=trace | improvement_vs_r3=n/a | block_float=0.218024859894 | T25_float=0.076273145077
+beta=   16 | upper=0.558463006608 | tail_radius=810257.768952391227 | margin=0.441536993392 | certified=yes | block=trace | improvement_vs_r3=n/a | block_float=0.214866861570 | T25_float=0.055270398155
+beta=   18 | upper=0.676608455810 | tail_radius=13769192.470319529995 | margin=0.323391544190 | certified=yes | block=trace | improvement_vs_r3=n/a | block_float=0.212436720117 | T25_float=0.039902235911
+beta=   20 | upper=0.863200446467 | tail_radius=206420265.468981742859 | margin=0.136799553533 | certified=yes | block=trace | improvement_vs_r3=n/a | block_float=0.210508158633 | T25_float=0.028736857729
+beta=   21 | upper=0.986423897977 | tail_radius=769774020.574420928955 | margin=0.013576102023 | certified=yes | block=trace | improvement_vs_r3=n/a | block_float=0.209685153576 | T25_float=0.024370759589
+beta=   22 | upper=0.962964963029 | tail_radius=2810611326.690882205963 | margin=0.037035036971 | certified=yes | block=hs-deflation | improvement_vs_r3=n/a | block_float=0.208937991421 | T25_float=0.020660661849
+beta= 45/2 | upper=1.213174568154 | tail_radius=5332316365.757076263428 | margin=-0.213174568154 | certified=no | block=trace | improvement_vs_r3=n/a | block_float=0.208589329670 | T25_float=0.019020897766
+beta=   23 | upper=1.300701461804 | tail_radius=10072023432.437828063965 | margin=-0.300701461804 | certified=no | block=trace | improvement_vs_r3=n/a | block_float=0.208255603130 | T25_float=0.017510042494
+
+PASS: rung-three certified rows beta<=8 still certify under rung-four tail machinery
+      checked beta in {1,2,3,4,117/25,5,6,7,8}
+PASS: shared rows do not exceed rung-three printed upper bounds
+      compared against rung-three deliverable table decimals
+PASS: integer frontier advances past beta=8 and certifies beta=22
+      beta=22 margin=0.037035036971
+PASS: bisection probe at beta=45/2 reports the fixed-shell stop side
+      beta=45/2 margin=-0.213174568154
+PASS: next integer probe beta=23 is not certified by this fixed-shell bound
+      beta=23 margin=-0.300701461804
+PASS: old trace bracket plus sharp tail stops before beta=22
+      beta=21 trace+sharp margin=0.013576102023; beta=22 trace+sharp upper=1.131742093274
+PASS: path-count tail majorant is no larger than rung-three scalar tail on witnesses
+      exact path-count delta2 is <= rung-three scalar delta2 on witness rows
+PASS: finite outer-box true-operator tail witness is dominated by rung-four tail radius
+      finite outer boxes S in {22, 26}, beta in {20, 22}; min tail/true_op_tail=421.342956, min tail/weighted_fro=707909.995899; beta=22 S=26 true_op_tail=6.670602384455e+06, tail_radius=2.810611326691e+09, factor=421.342956
+PASS: exact characteristic-polynomial Sturm brackets still contain every float eigenvalue on the B_4 check block
+      beta=117/25 checked 25 Sturm intervals on B_4
+PASS: s=14 block float lambda_1 lies inside the exact deflation intervals on HS rows
+      checked 1 s=14 HS deflation intervals against float lambda_1
+PASS: T25 float diagnostics sit below certified full-operator uppers on certified rows
+      compared T25 float ratios against certified full upper rows
+PASS: note contains scope, status-authority, table, frontier, and runner markers
+      checked required note markers
+PASS: one-hop authorities are present as markdown links
+      checked authority-link forms
+PASS: note keeps scratch rung-three refs out of the dependency graph
+      scanned for branch-local scratch authority refs
+PASS: note avoids overreach phrases banned for this lane
+      scanned banned phrase set
+
+TOTAL: PASS=18, FAIL=0
+
+----- stderr -----
+

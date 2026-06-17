@@ -10,6 +10,18 @@ audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** closeout index / handoff map only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The runner checks fixed PR entries, summary strings, and firewall booleans; it
+does not derive a new physics result or instantiate post-record dynamics.
+
+This note may be cited as campaign bookkeeping for the six-PR dynamics stack.
+It may not be cited as a retained theorem, an audit verdict, a physical-arrow
+derivation, or a production-kernel/selector derivation.
+
 ## Result
 
 This branch indexes the six-PR post-record dynamics stack built at the end of

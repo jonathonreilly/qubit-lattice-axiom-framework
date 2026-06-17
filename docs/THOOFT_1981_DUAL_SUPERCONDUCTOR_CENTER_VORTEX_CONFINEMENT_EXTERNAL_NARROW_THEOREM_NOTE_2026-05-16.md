@@ -17,6 +17,20 @@ identification, hierarchy closure, scale ratio derivation, or
 **Runner:** [`scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py`](../scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py)
 **Cache:** [`logs/runner-cache/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.txt`](../logs/runner-cache/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.txt)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** external notation / published-context registration. Effective
+status is audit-derived; this source records only the claim boundary.
+
+The runner checks text presence and tautological symbolic forms; it does not
+verify the external confinement mechanisms or derive a framework confinement
+theorem.
+
+This note may be cited for vocabulary, bibliography, and future bridge targets.
+It may not be cited as retained framework support for monopole condensation,
+center-vortex condensation/percolation, Wilson-loop area law, hierarchy
+closure, or any `alpha_LM^16` substitution.
+
 ## 2026-06-07 Pure-Notation Source Boundary
 
 The load-bearing packet for this row is only the syntactic registration

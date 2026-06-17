@@ -17,6 +17,19 @@ bare_retained_allowed=false.
 with cache
 [`logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** supplied-stability classifier support. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The source checks table arithmetic and supplied score/flow/thermal examples,
+but the stable-setting semantics and ledger bucketing are introduced by the
+note and helper scripts rather than derived from baseline physics.
+
+This note may be cited for stable-setting discipline under supplied rules. It
+may not be cited as a retained selector, a derivation of the supplied flow or
+thermal rule, or a proof that a stable feature is the selected physical value.
+
 ## Result
 
 This block defines the stable-setting certificate interface for the
@@ -38,17 +51,17 @@ on a dial without forcing that location to be the selected physical value.
 ## Current row map
 
 On the current ledger snapshot, the upstream stability/dynamics subdivision has
-`58` `flow_or_thermal_stability` rows. This block classifies them as:
+`88` `flow_or_thermal_stability` rows. This block classifies them as:
 
 | Stable-setting lane | Rows |
 |---|---:|
-| `bounded_obstruction_or_no_selection` | 18 |
-| `flow_or_records_stable_feature` | 3 |
-| `generation_or_koide_stable_feature` | 4 |
-| `generic_stable_feature` | 14 |
-| `thermal_or_score_stable_feature` | 19 |
+| `bounded_obstruction_or_no_selection` | 21 |
+| `flow_or_records_stable_feature` | 10 |
+| `generation_or_koide_stable_feature` | 5 |
+| `generic_stable_feature` | 27 |
+| `thermal_or_score_stable_feature` | 25 |
 
-Total: `58` rows.
+Total: `88` rows.
 
 ## Meaning
 

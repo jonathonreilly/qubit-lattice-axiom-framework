@@ -5,6 +5,22 @@
 **Status:** source-side proposal — independent audit lane owns the verdict
 **Purpose:** Identify the framework's pre-record connected generating functional `W[J] := log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` as the standard finite-source cumulant generating functional applied to a given pre-record reference state, rather than ratifying it as a framework rule. The clean theorem scope is commuting bounded source families, with the noncommuting quantum ordering convention left explicit.
 
+## Source boundary (2026-06-12)
+
+**Boundary:** standard-object identification, not a framework-native derivation
+of the source functional. Effective status is audit-derived; this source
+records only the claim boundary.
+
+The derivative signs and normalization are internally consistent on the
+commuting-source scope, but the load-bearing move is the identification of
+framework `W[J]` with the standard cumulant generating functional while
+`rho_ref`, the probabilistic/state bridge, and noncommuting ordering remain
+supplied or out of scope.
+
+This note may be cited for the commuting-source cumulant identity and sign
+convention. It may not be cited as a retained derivation of `W[J]` from minimal
+axioms, of the reference state, or of the noncommuting source convention.
+
 ## Why this note exists
 
 The framework uses the pre-record connected generating functional `W[J]` whose `n`-th `J`-derivatives at `J = 0` are the connected `n`-point cumulants of observables under `ρ_ref`. The earlier ratification path (bundled in the closed PR #1658) proposed adding the explicit definition `W[J] := log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` as a load-bearing framework rule alongside k=1 / LSP-projective / PRR-local.

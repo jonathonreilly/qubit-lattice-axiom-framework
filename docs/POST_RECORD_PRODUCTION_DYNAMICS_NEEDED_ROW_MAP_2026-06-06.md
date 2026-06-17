@@ -10,6 +10,20 @@ audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_production_dynamics_needed_row_map_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_production_dynamics_needed_row_map_2026_06_06.txt)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** read-only row map / import taxonomy. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The runner checks source anchors, finite counts, lane labels, and firewall
+flags, but the production-dynamics import classes are a hard-coded map rather
+than a derivation from Record or retained physics primitives.
+
+This note may be cited for audit planning and missing-bridge classification. It
+may not be cited as a retained production-dynamics theorem, a derived physical
+arrow, or a bridge deriving kernels, preservation, readout, ordering,
+normalization, or generalization.
+
 ## Result
 
 This block maps the six current `production_dynamics_needed` rows from the

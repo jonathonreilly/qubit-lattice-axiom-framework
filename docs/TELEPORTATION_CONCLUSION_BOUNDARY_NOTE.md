@@ -4,6 +4,19 @@
 **Status:** planning closure / nature-grade HOLD
 **Runner:** `scripts/frontier_teleportation_conclusion_boundary.py`
 
+## Source boundary (2026-06-12)
+
+**Boundary:** planning/status boundary. Effective status is audit-derived; this
+source records only the claim boundary.
+
+The runner checks fixed selector, scaling, and hardware-status fields; it does
+not derive the boundary from the axiom surface or recompute the cited physics.
+
+This note may be cited to record what the teleportation planning lane has and
+has not closed. It may not be cited as a retained teleportation theorem,
+unconditional nature-grade closure, or a derivation of the three-clause
+selector from baseline axioms.
+
 ## Scope
 
 This artifact is the terminal boundary for the current native taste-qubit

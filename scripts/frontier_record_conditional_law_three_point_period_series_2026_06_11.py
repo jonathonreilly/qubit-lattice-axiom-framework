@@ -334,6 +334,34 @@ check(
     "does not claim an exhaustive permutation-null p95" in note_text
     and "Monte-Carlo-free null theorem" in note_text,
 )
+check(
+    "source note declares dependency-edge rescope repair",
+    "2026-06-13 dependency-edge rescope repair" in note_text
+    and "current source-positive is exactly the finite-runner-defined diagnostic" in note_words,
+)
+check(
+    "source note confines load-bearing inputs to runner-defined finite objects",
+    "Load-bearing inputs are confined to the finite objects instantiated by" in note_text
+    and "`K=5`, `K=7`, and `K=8`" in note_text
+    and "explicit sparse Fock evolution and SVD-polar determinant readout" in note_text,
+)
+check(
+    "source note makes inherited framework language non-load-bearing labels",
+    '"Born", "record", "instrument", "C^3 carrier", "hopping",' in note_text
+    and "not imported framework closures" in note_words,
+)
+check(
+    "source note forbids downstream retained-derivation citations",
+    "must not cite this packet as a retained derivation" in note_words
+    and "Born/readout chain" in note_text
+    and "framework-native `C^3` carrier" in note_text,
+)
+check(
+    "source note forbids selector/null and record-conditional overclaim",
+    "selector/null theorem beyond the code-defined sampled diagnostic" in note_words
+    and "record-conditional interpretation from approved premises" in note_words
+    and "large-period law" in note_words,
+)
 
 # ===========================================================================
 print("=" * 78)

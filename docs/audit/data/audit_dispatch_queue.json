@@ -971,9 +971,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1015,9 +1015,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1149,9 +1149,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "no_go",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1287,9 +1287,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1301,8 +1301,7 @@
       "blocked_by_group_ids": [],
       "claim_id": "linear_response_second_order_kubo_note",
       "deps": [
-        "linear_response_true_kubo_note",
-        "minimal_axioms_2026-05-03"
+        "linear_response_true_kubo_note"
       ],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",
@@ -1334,9 +1333,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_renaming",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audited_renaming",
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -2821,9 +2820,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
       "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
       "expected_current_audit_status": "audited_clean",
@@ -2836,9 +2835,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
       "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
       "expected_current_audit_status": "audited_clean",

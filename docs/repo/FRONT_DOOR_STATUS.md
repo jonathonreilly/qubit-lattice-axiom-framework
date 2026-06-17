@@ -11,20 +11,20 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3311 |
-| Applied audit verdicts | 1588 |
-| Retained-grade rows, including boxed decorations | 1439 |
-| Retained positive theorems | 221 |
-| Retained no-go rows | 214 |
-| Retained bounded rows | 959 |
-| Boxed decorations under retained parents | 45 |
-| Open gates | 41 |
-| Unaudited rows | 1404 |
-| Retained-pending-chain rows | 4 |
-| Audited conditional rows | 57 |
-| Audited renaming rows | 32 |
-| Audited numerical-match rows | 14 |
-| Citation cycles detected | 0 |
+| Ledger rows | 3375 |
+| Applied audit verdicts | 1412 |
+| Retained-grade rows, including boxed decorations | 1387 |
+| Retained positive theorems | 217 |
+| Retained no-go rows | 208 |
+| Retained bounded rows | 918 |
+| Boxed decorations under retained parents | 44 |
+| Open gates | 14 |
+| Unaudited rows | 1636 |
+| Retained-pending-chain rows | 3 |
+| Audited conditional rows | 7 |
+| Audited renaming rows | 2 |
+| Audited numerical-match rows | 4 |
+| Citation cycles detected | 6 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -33,42 +33,39 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1406 |
-| Ready rows | 4 |
-| Cycle-break targets | 0 |
-| Critical pending | 280 |
-| High pending | 272 |
-| Medium pending | 426 |
-| Leaf pending | 428 |
+| Total pending rows | 1641 |
+| Ready rows | 160 |
+| Cycle-break targets | 6 |
+| Critical pending | 332 |
+| High pending | 288 |
+| Medium pending | 463 |
+| Leaf pending | 558 |
 
 Next ready rows by queue order:
 
-- [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`scalar_trace_tensor_no_go_note`](../../docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md) - medium; unaudited
-- [`koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02`](../../docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
-- [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - leaf; unaudited
+- [`anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26`](../../docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - critical; unaudited
+- [`u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md) - critical; unaudited
+- [`wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`](../../docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) - critical; audit_in_progress
+- [`g_bare_constraint_vs_convention_theorem_note_2026-05-03`](../../docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
+- [`staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07`](../../docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) - critical; unaudited
+- [`observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - critical; unaudited
+- [`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
+- [`canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`](../../docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **426**.
+- Non-retained-grade cited rows in publication tables: **434**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 159 |
-| high | `unaudited` | 158 |
+| critical | `unaudited` | 180 |
+| high | `unaudited` | 159 |
 | medium | `unaudited` | 90 |
-| critical | `open_gate` | 3 |
-| high | `audited_conditional` | 3 |
-| critical | `audited_conditional` | 2 |
-| critical | `audited_numerical_match` | 2 |
-| high | `audited_numerical_match` | 2 |
-| high | `audited_renaming` | 2 |
-| medium | `audited_conditional` | 2 |
-| critical | `audited_renaming` | 1 |
-| medium | `audited_numerical_match` | 1 |
+| critical | `audited_numerical_match` | 3 |
+| critical | `open_gate` | 2 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 
@@ -76,19 +73,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3453 |
-| Critical nodes | 541 |
-| High nodes | 514 |
-| Medium nodes | 928 |
-| Leaf nodes | 1470 |
+| Citation-graph nodes | 3517 |
+| Critical nodes | 574 |
+| High nodes | 508 |
+| Medium nodes | 921 |
+| Leaf nodes | 1514 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1596 descendants; score 136.641
-- `three_generation_observable_theorem_note` - critical; 1010 descendants; score 64.482
-- `observable_principle_from_axiom_note` - critical; 899 descendants; score 63.314
-- `graph_first_su3_integration_note` - critical; 1399 descendants; score 60.951
-- `plaquette_self_consistency_note` - critical; 1007 descendants; score 51.477
-- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 50.514
-- `key_terminology` - critical; 1121 descendants; score 47.632
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 892 descendants; score 45.303
+- `minimal_axioms` - critical; 1634 descendants; score 142.675
+- `three_generation_observable_theorem_note` - critical; 1045 descendants; score 65.031
+- `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
+- `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
+- `plaquette_self_consistency_note` - critical; 1009 descendants; score 52.980
+- `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 50.006
+- `key_terminology` - critical; 1119 descendants; score 47.629
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 922 descendants; score 45.350

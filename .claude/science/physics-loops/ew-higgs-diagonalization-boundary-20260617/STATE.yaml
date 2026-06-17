@@ -1,0 +1,31 @@
+loop_slug: ew-higgs-diagonalization-boundary-20260617
+branch: codex/ew-higgs-diagonalization-boundary-20260617
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle: 1
+active_route: claim_boundary_repair
+hard_residual: >
+  The EW Higgs gauge-mass diagonalization note advertised a proposed-retained
+  strong derivation even though the EW gauge group, one Higgs doublet,
+  hypercharge, neutral vacuum, and covariant derivative are declared
+  electroweak inputs rather than framework-derived facts in this row.
+files_touched:
+  - docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
+  - scripts/frontier_ew_higgs_gauge_mass_diagonalization.py
+  - logs/runner-cache/frontier_ew_higgs_gauge_mass_diagonalization.txt
+open_imports:
+  - EW gauge group from minimal framework
+  - one-doublet Higgs carrier
+  - Y_H equals 1/2
+  - neutral vacuum and covariant derivative from minimal framework
+  - numerical values of g_2, g_1_GUT, v, and lambda
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_loop_disposition: reviewer_owned_not_run
+proposal_allowed: false
+bare_retained_allowed: false
+independent_audit_required_before_status_change: true
+pr_status: pending
+next_exact_action: refresh runner cache, run focused checks, commit, push, open PR
+stop_condition: PR opened for reviewer extraction

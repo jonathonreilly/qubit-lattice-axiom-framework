@@ -1,21 +1,28 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_higgs_gauge_mass_diagonalization.py
-runner_sha256: 64bcbcc196ceaaf2f0770f089cc1e50b7279126d354cc3a2e6b5d304ee85dab0
+runner_sha256: c28dd2cd6a2983c940cf1ba494af5db5196fc6ea0027da3751e5e61b718bd7ce
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 === EW Higgs gauge-mass diagonalization verifier ===
 
 === Authority surface and scope ===
 PASS: theorem note exists :: docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
-PASS: status extracted :: proposed_retained - explicit strong derivation claim pending audit the exact tree-level gauge-boson mass spectrum and charge normalization f
+PASS: status extracted :: bounded support theorem / exact symbolic verifier over a declared EW-Higgs input boundary. Given one `SU(2)_L` Higgs doublet of hypercharge 
+PASS: status is bounded support over declared EW-Higgs inputs
 PASS: status is scoped to one-doublet EW/Higgs gauge-mass theorem
 PASS: status limits theorem to tree-level gauge-boson spectrum
 PASS: status does not promote Higgs/top/CKM lanes
 PASS: primary runner is named in note
+PASS: claim-boundary section present
+PASS: EW gauge group is declared input
+PASS: Higgs hypercharge is declared input
+PASS: neutral vacuum is declared input
+PASS: covariant derivative is declared input
 PASS: what-this-does-not-claim section present
+PASS: minimal-framework derivation is not claimed
 PASS: no pole-mass derivation claimed
 PASS: bounded W mass lane not promoted
 PASS: package surface exists: docs/CANONICAL_HARNESS_INDEX.md
@@ -64,8 +71,8 @@ PASS: radial Higgs Hessian m_h^2 = 2 lambda v^2
 PASS: scalar cubic coefficient is lambda v
 PASS: scalar quartic coefficient is lambda/4
 
-TOTAL: PASS=46, FAIL=0
-VERDICT: CLOSED
+TOTAL: PASS=53, FAIL=0
+VERDICT: BOUNDED_SUPPORT
 
 ----- stderr -----
 

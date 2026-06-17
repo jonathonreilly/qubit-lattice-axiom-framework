@@ -1,0 +1,20 @@
+loop_slug: signed-gravity-product-source-activation-20260617
+target: signed_gravity_aps_locked_source_action_proposal_note
+mode: source_side_unlock
+status: branch_artifact_ready_for_review
+current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+branch: codex/signed-gravity-product-source-activation-20260617
+base: origin/main
+files_touched:
+  - docs/SIGNED_GRAVITY_PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION_NOTE_2026-06-17.md
+  - scripts/signed_gravity_product_grading_source_activation_obstruction_2026_06_17.py
+  - logs/runner-cache/signed_gravity_product_grading_source_activation_obstruction_2026_06_17.txt
+  - .claude/science/physics-loops/signed-gravity-product-source-activation-20260617/
+open_imports:
+  - source-line / section activation coefficient b=1
+  - twist datum realization
+  - eta-sector dynamics
+  - continuum/family/tensor/UV closure
+next_exact_action: "Run checks, commit, push, and open a ready PR."

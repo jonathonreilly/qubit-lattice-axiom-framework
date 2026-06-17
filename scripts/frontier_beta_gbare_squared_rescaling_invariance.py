@@ -14,7 +14,8 @@ joint rescaling beta -> c^2 beta and g_bare^2 -> g_bare^2 / c^2.
 The runner deliberately does not treat any Ward-route coupling-closure
 note as a Wilson-matching authority. The algebraic core is cross-checked
 against the already audited abstract polynomial identity note, while the
-generator-basis interpretation is bounded by the scoped rescaling note.
+generator-rescaling interpretation is bounded by the Wilson-action
+transformation boundary note.
 """
 
 from __future__ import annotations
@@ -29,6 +30,7 @@ DOCS = ROOT / "docs"
 NOTE_PATH = DOCS / "BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md"
 ABSTRACT_IDENTITY_PATH = DOCS / "BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md"
 RESCALING_PATH = DOCS / "G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md"
+BOUNDARY_PATH = DOCS / "WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17.md"
 
 PASS = 0
 FAIL = 0
@@ -68,13 +70,16 @@ def beta_from_wm(n_c: Fraction, g_bare_sq: Fraction) -> Fraction:
 def check_note_structure() -> None:
     section("note structure and repaired scope")
     required = [
-        "Claim type:** bounded support note",
+        "Claim type:** bounded_theorem",
         "Type:** conditional / support",
         "explicitly conditional arithmetic lemma",
         "WM:  β = 2 N_c / g_bare²",
         "not imported from any Ward-route coupling-closure note",
         "BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10",
+        "WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17",
         "G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03",
+        "coupling-coordinate WM route",
+        "not the fixed-component Wilson-action compensation law",
         "conditional bounded arithmetic lemma",
         "fractions.Fraction",
     ]
@@ -85,16 +90,15 @@ def check_note_structure() -> None:
         )
 
     forbidden = [
-        "Claim type:** bounded_theorem",
         "Type:** bounded_theorem",
         "Proposal allowed:",
         "source-note proposal only",
         "G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18",
         "carried by G_BARE_TWO_WARD_CLOSURE",
-        "supplies the Wilson small-`a` matching relation",
         "canonical `g_bare² = 1` value carried",
         "is a retained conclusion of this row",
         "Wilson matching is proved here",
+        "This row claims `beta -> c^2 beta` as fixed-component Wilson-action compensation",
     ]
     for marker in forbidden:
         check(
@@ -123,7 +127,7 @@ def check_note_structure() -> None:
 
 def check_dependencies_exist_and_are_scoped() -> None:
     section("dependency files and scoped authority checks")
-    for path in [ABSTRACT_IDENTITY_PATH, RESCALING_PATH]:
+    for path in [ABSTRACT_IDENTITY_PATH, BOUNDARY_PATH, RESCALING_PATH]:
         check(f"dependency exists: docs/{path.name}", path.exists())
 
     abstract = ABSTRACT_IDENTITY_PATH.read_text()
@@ -149,31 +153,29 @@ def check_dependencies_exist_and_are_scoped() -> None:
         or "beta * g^2" in abstract_norm,
     )
 
+    boundary = BOUNDARY_PATH.read_text()
+    boundary_norm = normalized(boundary)
+    check(
+        "boundary note separates fixed-component compensation",
+        "beta'_fixed / beta = 1 / c^2" in boundary
+        or "beta'_fixed / beta = 1 / c^2" in boundary_norm,
+    )
+    check(
+        "boundary note separates pure basis relabeling",
+        "beta'_basis = beta" in boundary,
+    )
+    check(
+        "boundary note separates coupling-coordinate c^2 law",
+        "beta'_WM / beta = c^2" in boundary
+        or "beta'_WM / beta = c^2" in boundary_norm,
+    )
+
     rescaling = RESCALING_PATH.read_text()
-    rescaling_norm = normalized(rescaling)
+    rescaling_flat = " ".join(rescaling.split())
     check(
-        "rescaling note explicitly treats Wilson matching as an input",
-        "WM** is the scoped Wilson matching relation" in rescaling
-        or "Wilson matching is an explicit scoped assumption" in rescaling
-        or "matching relation are scoped inputs" in rescaling,
-    )
-    check(
-        "rescaling note does not claim to derive Wilson matching",
-        "does not derive Wilson matching" in rescaling
-        or "not retained conclusions proved here" in rescaling,
-    )
-    check(
-        "rescaling note carries T_a -> c T_a map",
-        "T_a -> c" in rescaling
-        or "T_a → c" in rescaling
-        or "c * T_a" in rescaling
-        or "c T_a" in rescaling,
-    )
-    check(
-        "rescaling note carries beta -> c^2 beta under scoped WM",
-        "c^2 * beta" in rescaling_norm
-        or "c^2 beta" in rescaling_norm
-        or "c^2 * (2 N_c" in rescaling_norm,
+        "Gram-only note is not consumed as beta-routing authority",
+        "This note remains the Gram-only lemma" in rescaling_flat
+        and "should not be cited as a beta-routing authority" in rescaling_flat,
     )
 
 
@@ -196,7 +198,7 @@ def check_explicit_premise_firewall() -> None:
     )
     check(
         "physical interpretation remains conditional",
-        "physical Wilson-surface interpretation remains conditional on `WM`" in NOTE_FLAT,
+        "physical Wilson-surface interpretation remains conditional" in NOTE_FLAT,
     )
 
 
@@ -277,7 +279,8 @@ def check_boundary_clauses() -> None:
         "any retention or promotion",
         "Ward-route coupling-closure theorem carries the Wilson matching",
         "imported abstract polynomial identity",
-        "scoped generator-basis rescaling theorem",
+        "`c^2` beta law is the fixed-component Wilson-action",
+        "Wilson-action generator-rescaling boundary theorem",
         "canonical Cl(3) connection normalization",
         "parent theorem/status promotion",
     ]

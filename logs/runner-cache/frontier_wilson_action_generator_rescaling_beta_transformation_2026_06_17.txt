@@ -1,0 +1,175 @@
+===== runner cache v1 =====
+runner: scripts/frontier_wilson_action_generator_rescaling_beta_transformation_2026_06_17.py
+runner_sha256: 6cec54187ed1c0c3dc677b45b2c7b8f58d70534322eba1542f077ee4c472ec99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+WILSON ACTION GENERATOR-RESCALING BETA TRANSFORMATION BOUNDARY
+
+========================================================================================
+Part 0: source boundaries
+========================================================================================
+[PASS] source exists: docs/WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17.md
+[PASS] source exists: docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
+[PASS] source exists: docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md
+[PASS] source exists: docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md
+[PASS] note marker present: actual_current_surface_status: exact-support
+[PASS] note marker present: target_claim_id: g_bare_rescaling_freedom_removal_theorem_note_2
+[PASS] note marker present: beta'_fixed / beta = 1 / c^2
+[PASS] note marker present: beta'_basis = beta
+[PASS] note marker present: beta'_WM / beta = c^2
+[PASS] note marker present: no convention-free beta law
+[PASS] note marker present: Theorem A: Fixed-Component Generator Scaling
+[PASS] note marker present: Theorem B: Pure Basis Relabeling
+[PASS] note marker present: Theorem C: Coupling-Coordinate WM Naming Route
+[PASS] note marker present: audit_required_before_effective_retained: true
+[PASS] note marker present: bare_retained_allowed: false
+[PASS] forbidden overclaim absent: effective_status: retained
+[PASS] forbidden overclaim absent: audit_status: audited_clean
+[PASS] forbidden overclaim absent: Wilson plaquette action-surface selection from the framework axi
+[PASS] forbidden overclaim absent: g_bare = 1 is derived
+[PASS] forbidden overclaim absent: beta_new = c^2 beta_old follows from Wilson matching alone
+
+========================================================================================
+Part 1: matrix trace and deficit scaling
+========================================================================================
+[PASS] canonical SU(3) trace Gram is delta/2
+[PASS] T -> cT scales Gram by c^2
+[PASS] fixed components scale Tr(X^2) by c^2
+[PASS] basis relabel F -> F/c leaves X unchanged
+[PASS] basis relabel leaves Tr(X^2) unchanged
+
+========================================================================================
+Part 2: fixed-component beta compensation
+========================================================================================
+[PASS] old Wilson coefficient matches 1/2 for N=3, g2=1
+[PASS] fixed-component compensation beta/c^2 preserves action: c=1/2  [ratio=4]
+[PASS] c^2 beta is not fixed-component compensation for c=1/2  [wrong/old=1/16]
+[PASS] fixed-component compensation beta/c^2 preserves action: c=2  [ratio=1/4]
+[PASS] c^2 beta is not fixed-component compensation for c=2  [wrong/old=16]
+[PASS] fixed-component compensation beta/c^2 preserves action: c=3  [ratio=1/9]
+[PASS] c^2 beta is not fixed-component compensation for c=3  [wrong/old=81]
+[PASS] fixed-component compensation beta/c^2 preserves action: c=7/5  [ratio=25/49]
+[PASS] c^2 beta is not fixed-component compensation for c=7/5  [wrong/old=2401/625]
+[PASS] old Wilson coefficient matches 1/2 for N=3, g2=5/7
+[PASS] fixed-component compensation beta/c^2 preserves action: c=1/2  [ratio=4]
+[PASS] c^2 beta is not fixed-component compensation for c=1/2  [wrong/old=1/16]
+[PASS] fixed-component compensation beta/c^2 preserves action: c=2  [ratio=1/4]
+[PASS] c^2 beta is not fixed-component compensation for c=2  [wrong/old=16]
+[PASS] fixed-component compensation beta/c^2 preserves action: c=3  [ratio=1/9]
+[PASS] c^2 beta is not fixed-component compensation for c=3  [wrong/old=81]
+[PASS] fixed-component compensation beta/c^2 preserves action: c=7/5  [ratio=25/49]
+[PASS] c^2 beta is not fixed-component compensation for c=7/5  [wrong/old=2401/625]
+[PASS] old Wilson coefficient matches 1/2 for N=5, g2=11/13
+[PASS] fixed-component compensation beta/c^2 preserves action: c=1/2  [ratio=4]
+[PASS] c^2 beta is not fixed-component compensation for c=1/2  [wrong/old=1/16]
+[PASS] fixed-component compensation beta/c^2 preserves action: c=2  [ratio=1/4]
+[PASS] c^2 beta is not fixed-component compensation for c=2  [wrong/old=16]
+[PASS] fixed-component compensation beta/c^2 preserves action: c=3  [ratio=1/9]
+[PASS] c^2 beta is not fixed-component compensation for c=3  [wrong/old=81]
+[PASS] fixed-component compensation beta/c^2 preserves action: c=7/5  [ratio=25/49]
+[PASS] c^2 beta is not fixed-component compensation for c=7/5  [wrong/old=2401/625]
+
+========================================================================================
+Part 3: pure basis relabeling
+========================================================================================
+[PASS] basis relabel deficit ratio is one for c=1/2
+[PASS] basis relabel beta ratio is one for c=1/2
+[PASS] basis relabel deficit ratio is one for c=2
+[PASS] basis relabel beta ratio is one for c=2
+[PASS] basis relabel deficit ratio is one for c=3
+[PASS] basis relabel beta ratio is one for c=3
+[PASS] basis relabel deficit ratio is one for c=7/5
+[PASS] basis relabel beta ratio is one for c=7/5
+
+========================================================================================
+Part 4: coupling-coordinate WM route
+========================================================================================
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=1, c=1/2  [ratio=1/4]
+[PASS] WM product invariant on coupling-coordinate route: c=1/2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=1, c=2  [ratio=4]
+[PASS] WM product invariant on coupling-coordinate route: c=2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=1, c=3  [ratio=9]
+[PASS] WM product invariant on coupling-coordinate route: c=3
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=1, c=7/5  [ratio=49/25]
+[PASS] WM product invariant on coupling-coordinate route: c=7/5
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=5/7, c=1/2  [ratio=1/4]
+[PASS] WM product invariant on coupling-coordinate route: c=1/2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=5/7, c=2  [ratio=4]
+[PASS] WM product invariant on coupling-coordinate route: c=2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=5/7, c=3  [ratio=9]
+[PASS] WM product invariant on coupling-coordinate route: c=3
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=5/7, c=7/5  [ratio=49/25]
+[PASS] WM product invariant on coupling-coordinate route: c=7/5
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=11/13, c=1/2  [ratio=1/4]
+[PASS] WM product invariant on coupling-coordinate route: c=1/2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=11/13, c=2  [ratio=4]
+[PASS] WM product invariant on coupling-coordinate route: c=2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=11/13, c=3  [ratio=9]
+[PASS] WM product invariant on coupling-coordinate route: c=3
+[PASS] WM naming route beta(g/c)=c^2 beta: N=3, g2=11/13, c=7/5  [ratio=49/25]
+[PASS] WM product invariant on coupling-coordinate route: c=7/5
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=1, c=1/2  [ratio=1/4]
+[PASS] WM product invariant on coupling-coordinate route: c=1/2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=1, c=2  [ratio=4]
+[PASS] WM product invariant on coupling-coordinate route: c=2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=1, c=3  [ratio=9]
+[PASS] WM product invariant on coupling-coordinate route: c=3
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=1, c=7/5  [ratio=49/25]
+[PASS] WM product invariant on coupling-coordinate route: c=7/5
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=5/7, c=1/2  [ratio=1/4]
+[PASS] WM product invariant on coupling-coordinate route: c=1/2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=5/7, c=2  [ratio=4]
+[PASS] WM product invariant on coupling-coordinate route: c=2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=5/7, c=3  [ratio=9]
+[PASS] WM product invariant on coupling-coordinate route: c=3
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=5/7, c=7/5  [ratio=49/25]
+[PASS] WM product invariant on coupling-coordinate route: c=7/5
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=11/13, c=1/2  [ratio=1/4]
+[PASS] WM product invariant on coupling-coordinate route: c=1/2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=11/13, c=2  [ratio=4]
+[PASS] WM product invariant on coupling-coordinate route: c=2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=11/13, c=3  [ratio=9]
+[PASS] WM product invariant on coupling-coordinate route: c=3
+[PASS] WM naming route beta(g/c)=c^2 beta: N=5, g2=11/13, c=7/5  [ratio=49/25]
+[PASS] WM product invariant on coupling-coordinate route: c=7/5
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=1, c=1/2  [ratio=1/4]
+[PASS] WM product invariant on coupling-coordinate route: c=1/2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=1, c=2  [ratio=4]
+[PASS] WM product invariant on coupling-coordinate route: c=2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=1, c=3  [ratio=9]
+[PASS] WM product invariant on coupling-coordinate route: c=3
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=1, c=7/5  [ratio=49/25]
+[PASS] WM product invariant on coupling-coordinate route: c=7/5
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=5/7, c=1/2  [ratio=1/4]
+[PASS] WM product invariant on coupling-coordinate route: c=1/2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=5/7, c=2  [ratio=4]
+[PASS] WM product invariant on coupling-coordinate route: c=2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=5/7, c=3  [ratio=9]
+[PASS] WM product invariant on coupling-coordinate route: c=3
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=5/7, c=7/5  [ratio=49/25]
+[PASS] WM product invariant on coupling-coordinate route: c=7/5
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=11/13, c=1/2  [ratio=1/4]
+[PASS] WM product invariant on coupling-coordinate route: c=1/2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=11/13, c=2  [ratio=4]
+[PASS] WM product invariant on coupling-coordinate route: c=2
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=11/13, c=3  [ratio=9]
+[PASS] WM product invariant on coupling-coordinate route: c=3
+[PASS] WM naming route beta(g/c)=c^2 beta: N=7/2, g2=11/13, c=7/5  [ratio=49/25]
+[PASS] WM product invariant on coupling-coordinate route: c=7/5
+
+========================================================================================
+Part 5: downstream source wiring
+========================================================================================
+[PASS] Gram-only note cites boundary theorem
+[PASS] Gram-only note remains not beta-routing
+[PASS] beta arithmetic note cites boundary theorem
+[PASS] beta arithmetic note uses coupling-coordinate route
+[PASS] beta arithmetic note excludes fixed-component compensation
+
+TOTAL: PASS=137 FAIL=0
+
+----- stderr -----
+

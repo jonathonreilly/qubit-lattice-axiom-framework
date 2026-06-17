@@ -1,0 +1,23 @@
+loop_slug: gbare-wilson-rescale-law-20260617
+objective: "Unlock the g_bare rescaling conditional audit blocker with a source-side Wilson-action transformation boundary."
+branch: physics-loop/gbare-wilson-rescale-law-20260617
+base: origin/main
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: g_bare_rescaling_freedom_removal_theorem_note_2026-05-03
+target_blocker_text: "missing_bridge_theorem: add a Wilson-action normalization/transformation theorem deriving beta_new/beta_old under T_a -> c T_a, or narrow the row to the closed Gram-scaling lemma only."
+files_touched:
+  - docs/WILSON_ACTION_GENERATOR_RESCALING_BETA_TRANSFORMATION_BOUNDARY_NOTE_2026-06-17.md
+  - scripts/frontier_wilson_action_generator_rescaling_beta_transformation_2026_06_17.py
+  - docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
+  - docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md
+  - scripts/frontier_beta_gbare_squared_rescaling_invariance.py
+  - logs/runner-cache/frontier_wilson_action_generator_rescaling_beta_transformation_2026_06_17.txt
+open_imports:
+  - "Wilson plaquette action surface is supplied, not derived here."
+  - "No physical g_bare=1 or beta=6 value is derived."
+review_loop_disposition: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Run runners, cache output, commit, push, and open a review PR."
+stop_condition: "PR opened or PR_BACKLOG written if GitHub creation fails."

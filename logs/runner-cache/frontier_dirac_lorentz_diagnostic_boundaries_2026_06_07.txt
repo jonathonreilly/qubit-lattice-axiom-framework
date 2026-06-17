@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py
-runner_sha256: 2502a299f487582fe198d05914cb355ca004cd7199c5fa29be44a14e953ee4fa
+runner_sha256: 31c38ebafeb6429ce98f06fb455fa71d5757893dc09317ff107b4fc609a02cdd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 Dirac/Lorentz diagnostic salvage boundaries
@@ -28,8 +28,14 @@ n  ||K^n psi||/n!   ||H^n psi||/n!
        c2=0.999997, c4=-0.329185
 [PASS] runner is diagnostic only
        no Nelson theorem, unitary representation, or interacting naturalness claim is asserted
+[PASS] primitive registry re-check uses current non-isolated file
+       registry ids=['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
+[PASS] approved primitives are not load-bearing for this diagnostic scope
+       load-bearing premise is only minimal_axioms; primitive ids are checked as non-load-bearing
+[PASS] registered primitive caps do not supply the rejected Lorentz repairs
+       caps={'scale_reference_primitive': True, 'kinetic_isotropy_primitive': True, 'realized_state_primitive': True}
 ========================================================================
-TOTAL: 5 PASS / 0 FAIL
+TOTAL: 8 PASS / 0 FAIL
 
 ----- stderr -----
 

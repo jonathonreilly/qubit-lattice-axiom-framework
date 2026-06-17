@@ -62,6 +62,28 @@ The runner verifies:
   `E^2(p) = sum_i sin^2(p_i a)/a^2` has one quadratic speed coefficient and its
   first spatial anisotropy at the `p^4` term.
 
+## Primitive-registry firewall
+
+The 2026-06-13 source repair makes the audit caveat explicit rather than
+leaving it to inference. The runner loads the current non-isolated premise
+allowlist `docs/audit/data/axiom_premise_nodes.json` and checks that this
+diagnostic packet's load-bearing premise set is only `minimal_axioms`, used for
+the native spatial `Z^3`/one-site algebra surface.
+
+The approved primitives are re-checked but not used as load-bearing inputs:
+
+- `scale_reference_primitive` is units conversion only; no dimensionless scale
+  or `a/l_P` identification enters this packet.
+- `kinetic_isotropy_primitive` supplies only the structural OS0 kinetic-form
+  ratio; it does not supply a self-adjoint Hamiltonian, an interacting Lorentz
+  theorem, a radiative-naturalness theorem, or the rejected Nelson repair.
+- `realized_state_primitive` supplies only a pointwise realized-state interface;
+  no realized-state data, selection rule, probability measure, typicality
+  predicate, or state-contingent value enters this packet.
+
+Thus no registered primitive is load-bearing for the audited diagnostic scope.
+The open gates below remain open.
+
 ## Open gates
 
 - An actual self-adjointness repair still needs an analytic proof of the

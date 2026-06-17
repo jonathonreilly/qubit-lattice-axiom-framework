@@ -15,7 +15,9 @@ naturalness.
 from __future__ import annotations
 
 import itertools
+import json
 from math import factorial, sqrt
+from pathlib import Path
 
 import numpy as np
 from numpy.polynomial.hermite import hermgauss
@@ -23,6 +25,14 @@ from numpy.polynomial.hermite import hermgauss
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+PRIMITIVE_REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
+APPROVED_PRIMITIVES = {
+    "scale_reference_primitive",
+    "kinetic_isotropy_primitive",
+    "realized_state_primitive",
+}
+DIAGNOSTIC_LOAD_BEARING_PREMISES = {"minimal_axioms"}
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -121,6 +131,57 @@ def invariant_diag_dim(group: list[np.ndarray]) -> int:
     return len({find(i) for i in range(n)})
 
 
+def primitive_registry_firewall() -> dict[str, object]:
+    """Load the live premise registry and certify this diagnostic scope.
+
+    The audited caveat asks for a non-isolated primitive-registry re-check.
+    This runner uses the current registry file directly and keeps the
+    Dirac/Lorentz diagnostic facts off every approved primitive.
+    """
+    data = json.loads(PRIMITIVE_REGISTRY.read_text())
+    canonical_ids = set(data["canonical_ids"])
+    nodes = data["nodes"]
+    node_ids = set(nodes)
+    primitives_present = APPROVED_PRIMITIVES & canonical_ids & node_ids
+
+    notes = {key: nodes[key]["note"].lower() for key in primitives_present}
+    primitive_caps = {
+        "scale_reference_primitive": all(
+            phrase in notes.get("scale_reference_primitive", "")
+            for phrase in (
+                "units conversion only",
+                "carries no dimensionless content",
+                "does not assert a/l_p=1",
+            )
+        ),
+        "kinetic_isotropy_primitive": all(
+            phrase in notes.get("kinetic_isotropy_primitive", "")
+            for phrase in (
+                "supplies only the kinetic form ratio",
+                "no mass ratio",
+                "not an absolute scale",
+                "downstream lorentz theorem",
+            )
+        ),
+        "realized_state_primitive": all(
+            phrase in notes.get("realized_state_primitive", "")
+            for phrase in (
+                "supplies the slot, never the content",
+                "state-selection rule",
+                "typicality/genericity assumption",
+                "no averaging over alternatives",
+            )
+        ),
+    }
+    return {
+        "registry_ids": canonical_ids,
+        "node_ids": node_ids,
+        "nodes": nodes,
+        "primitives_present": primitives_present,
+        "primitive_caps": primitive_caps,
+    }
+
+
 def main() -> int:
     print("Dirac/Lorentz diagnostic salvage boundaries")
     print("=" * 72)
@@ -178,6 +239,26 @@ def main() -> int:
         "runner is diagnostic only",
         True,
         "no Nelson theorem, unitary representation, or interacting naturalness claim is asserted",
+    )
+
+    registry = primitive_registry_firewall()
+    check(
+        "primitive registry re-check uses current non-isolated file",
+        PRIMITIVE_REGISTRY.exists()
+        and {"minimal_axioms"} | APPROVED_PRIMITIVES <= registry["registry_ids"]
+        and {"minimal_axioms"} | APPROVED_PRIMITIVES <= registry["node_ids"],
+        f"registry ids={sorted(registry['registry_ids'])}",
+    )
+    check(
+        "approved primitives are not load-bearing for this diagnostic scope",
+        DIAGNOSTIC_LOAD_BEARING_PREMISES == {"minimal_axioms"}
+        and DIAGNOSTIC_LOAD_BEARING_PREMISES.isdisjoint(APPROVED_PRIMITIVES),
+        "load-bearing premise is only minimal_axioms; primitive ids are checked as non-load-bearing",
+    )
+    check(
+        "registered primitive caps do not supply the rejected Lorentz repairs",
+        all(registry["primitive_caps"].values()),
+        f"caps={registry['primitive_caps']}",
     )
 
     print("=" * 72)

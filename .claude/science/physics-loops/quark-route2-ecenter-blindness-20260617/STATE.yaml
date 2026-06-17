@@ -1,0 +1,36 @@
+loop_slug: quark-route2-ecenter-blindness-20260617
+goal: "Retire E-center-blind Route-2 endpoint repairs for the quark numerical-match rows."
+target_claim_ids:
+  - quark_endpoint_ratio_chain_law_note_2026-04-19
+  - quark_e_channel_endpoint_quotient_law_note_2026-04-19
+target_status: no-go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: "Exact rational endpoint-carrier blindness theorem."
+hard_residual: "A positive repair still needs an E-center lift/source-domain/readout primitive deriving -8/9 or 15/8."
+files_touched:
+  - docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md
+  - docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md
+  - docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md
+  - docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+  - scripts/frontier_quark_route2_e_center_blindness_no_go.py
+  - logs/runner-cache/frontier_quark_route2_e_center_blindness_no_go.txt
+open_imports:
+  - "No positive derivation of rho_E = 21/4 is supplied."
+  - "T-side candidates are granted as conditional premises for this negative boundary."
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_loop_disposition: "delegated to reviewer per user instruction; branch-local firewall applied"
+verification:
+  - "python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py: PASS=14 FAIL=0"
+  - "python3 scripts/cached_runner_output.py scripts/frontier_quark_route2_e_center_blindness_no_go.py --refresh: ok"
+  - "python3 scripts/cached_runner_output.py scripts/frontier_quark_route2_e_center_blindness_no_go.py --check-only: fresh"
+  - "python3 scripts/cached_runner_output.py scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py --check-only: fresh"
+  - "python3 -m py_compile scripts/frontier_quark_route2_e_center_blindness_no_go.py: pass"
+  - "git diff --check: pass"
+  - "generated audit/status surface scan: empty"
+pr_status: pending
+next_exact_action: "Commit, push, and open PR."
+stop_condition: "One coherent no-go/source-unblock PR opened."

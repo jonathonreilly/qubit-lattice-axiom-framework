@@ -228,6 +228,16 @@ Neither bridge is supplied by the current packet. The 2026-05-10
 scope-narrowing companion records that the audit explicitly accepts
 this scope.
 
+The companion
+`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md` sharpens this
+obstruction one step further. It proves by exact rational linear algebra that
+every E-center-blind endpoint repair is invariant under changing
+`rho_E = beta_E/alpha_E`: shell normalization, the two T-side endpoint
+candidates, channel preservation, and low-rational/naturality filters all see
+the same data for all `rho_E`. Thus any positive repair of the third chain leg
+must supply a genuine E-center lift, source-domain rule, or equivalent readout
+primitive; another endpoint-only rational scan cannot derive `-8/9`.
+
 The complementary single-quotient form
 `QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md`
 is independently audited at the same numerical-match grade; this chain

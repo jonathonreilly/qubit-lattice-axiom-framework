@@ -1,0 +1,21 @@
+loop_slug: gbare-derivation-ledger-boundary-20260617
+branch: physics-loop/gbare-derivation-ledger-boundary-20260617
+base_ref: origin/main
+base_commit: 0b29f3748217fd6ca0b8ca0521e35b8ef314729f
+mode: audit-unlock-source-repair
+target_claim_id: g_bare_derivation_note
+target_status: open
+active_route: runner_ledger_boundary_marker_repair
+cycle_count: 1
+files_touched:
+  - docs/G_BARE_DERIVATION_NOTE.md
+  - scripts/frontier_g_bare_derivation.py
+  - logs/runner-cache/frontier_g_bare_derivation.txt
+  - .claude/science/physics-loops/gbare-derivation-ledger-boundary-20260617/
+open_imports:
+  - Parent gate remains open until the two 2026-05-03 repair rows are independently retained with closed dependencies.
+  - Canonical Cl(3) connection normalization remains the admitted upstream convention layer.
+trace_gate_classification: direct_blocker_closure
+review_findings: review-loop delegated to later Codex reviewer per user workflow
+pr_status: pending
+next_exact_action: push branch and open review PR

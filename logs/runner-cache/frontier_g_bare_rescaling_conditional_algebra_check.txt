@@ -1,11 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_rescaling_conditional_algebra_check.py
-runner_sha256: e3278aaeb983f97f05f1646b7f3cf3bbd6c862e9dbc193ef842f6008862a955b
+runner_sha256: a827b55b1f311f32c000700754090da1b13317a775bc0425a459099a896ab57b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
+[PASS] consumer note exists (docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+[PASS] Wilson matching note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+[PASS] Wilson generator-rescaling bridge note exists (docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md)
+[PASS] note contains scoped bridge marker: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-
+[PASS] note contains scoped bridge marker: WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEORE
+[PASS] note contains scoped bridge marker: beta' = c^2 beta
+[PASS] note contains scoped bridge marker: g' T'_a = g T_a
+[PASS] note contains scoped bridge marker: does not select the Wilson action surface
+[PASS] note contains scoped bridge marker: does not select `beta = 6`
+[PASS] note contains scoped bridge marker: does not derive `g_bare = 1`
 [PASS] Gram scales by c^2 = 1/4 (new diagonal = 1/8)
 [PASS] nontrivial c^2 = 1/4 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
 [PASS] Gram scales by c^2 = 2 (new diagonal = 1)
@@ -14,10 +24,54 @@ status: ok
 [PASS] nontrivial c^2 = 4 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
 [PASS] Gram scales by c^2 = 9 (new diagonal = 9/2)
 [PASS] nontrivial c^2 = 9 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
-[PASS] note states beta routing is out of scope
-[PASS] note states Wilson action normalization theorem remains separate
-SUMMARY: PASS = 10, FAIL = 0
-Gram-scaling algebra check passed; no retained status is asserted.
-
+[PASS] Wilson matching product beta g^2 = 2 N_c for N=3, g^2=1 (beta=6)
+[PASS] beta scales by c^2 for N=3, g^2=1, c=1/3 (beta'=2/3; c^2 beta=2/3)
+[PASS] matched product invariant after compensating rescale c=1/3
+[PASS] beta scales by c^2 for N=3, g^2=1, c=1/2 (beta'=3/2; c^2 beta=3/2)
+[PASS] matched product invariant after compensating rescale c=1/2
+[PASS] beta scales by c^2 for N=3, g^2=1, c=2 (beta'=24; c^2 beta=24)
+[PASS] matched product invariant after compensating rescale c=2
+[PASS] beta scales by c^2 for N=3, g^2=1, c=5/2 (beta'=75/2; c^2 beta=75/2)
+[PASS] matched product invariant after compensating rescale c=5/2
+[PASS] beta scales by c^2 for N=3, g^2=1, c=3 (beta'=54; c^2 beta=54)
+[PASS] matched product invariant after compensating rescale c=3
+[PASS] Wilson matching product beta g^2 = 2 N_c for N=3, g^2=5/7 (beta=42/5)
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=1/3 (beta'=14/15; c^2 beta=14/15)
+[PASS] matched product invariant after compensating rescale c=1/3
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=1/2 (beta'=21/10; c^2 beta=21/10)
+[PASS] matched product invariant after compensating rescale c=1/2
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=2 (beta'=168/5; c^2 beta=168/5)
+[PASS] matched product invariant after compensating rescale c=2
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=5/2 (beta'=105/2; c^2 beta=105/2)
+[PASS] matched product invariant after compensating rescale c=5/2
+[PASS] beta scales by c^2 for N=3, g^2=5/7, c=3 (beta'=378/5; c^2 beta=378/5)
+[PASS] matched product invariant after compensating rescale c=3
+[PASS] Wilson matching product beta g^2 = 2 N_c for N=2, g^2=3/5 (beta=20/3)
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=1/3 (beta'=20/27; c^2 beta=20/27)
+[PASS] matched product invariant after compensating rescale c=1/3
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=1/2 (beta'=5/3; c^2 beta=5/3)
+[PASS] matched product invariant after compensating rescale c=1/2
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=2 (beta'=80/3; c^2 beta=80/3)
+[PASS] matched product invariant after compensating rescale c=2
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=5/2 (beta'=125/3; c^2 beta=125/3)
+[PASS] matched product invariant after compensating rescale c=5/2
+[PASS] beta scales by c^2 for N=2, g^2=3/5, c=3 (beta'=60; c^2 beta=60)
+[PASS] matched product invariant after compensating rescale c=3
+[PASS] Wilson matching product beta g^2 = 2 N_c for N=7/2, g^2=9/4 (beta=28/9)
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=1/3 (beta'=28/81; c^2 beta=28/81)
+[PASS] matched product invariant after compensating rescale c=1/3
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=1/2 (beta'=7/9; c^2 beta=7/9)
+[PASS] matched product invariant after compensating rescale c=1/2
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=2 (beta'=112/9; c^2 beta=112/9)
+[PASS] matched product invariant after compensating rescale c=2
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=5/2 (beta'=175/9; c^2 beta=175/9)
+[PASS] matched product invariant after compensating rescale c=5/2
+[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=3 (beta'=28; c^2 beta=28)
+[PASS] matched product invariant after compensating rescale c=3
+[PASS] forbidden overclaim absent: effective_status: retained
+[PASS] forbidden overclaim absent: audit_status: audited_clean
+[PASS] forbidden overclaim absent: Wilson action-surface selection is derived
+[PASS] forbidden overclaim absent: g_bare=1 is derived
+SUMMARY: PASS = 66, FAIL = 0
+Scoped g_bare rescaling bridge check passed; no retained status is asserted.
 ----- stderr -----
-

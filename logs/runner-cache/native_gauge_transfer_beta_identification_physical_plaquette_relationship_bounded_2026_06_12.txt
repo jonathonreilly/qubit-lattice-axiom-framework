@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_beta_identification_physical_plaquette_relationship_bounded_2026_06_12.py
+runner_sha256: 2fdb7c78f5c095e4782eed829dec808cf7876080bd2755c5b8eb0a638893807f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.62
+status: ok
+----- stdout -----
+Native transfer beta vs physical plaquette beta relationship verifier
+==============================================================================
+PASS: relationship note defines the native transfer operator and diagonal ratio without scratch dependencies
+PASS: character recurrence note fixes J as the plaquette source
+PASS: tensor-transfer note states the Wilson coefficient expansion with beta/3
+PASS: source-sector note distinguishes factorization from residual environment data
+PASS: plaquette note states the finite Wilson action and average plaquette object
+PASS: plaquette note fences the 0.5934 value as admitted comparison/reuse
+PASS: Wilson positivity note gives the equivalent beta/(2Nc) character argument
+PASS: exact SU(3) beta identification: beta/3 on ReTr equals beta/(2Nc) on chi+chibar :: (beta/3)*(1/2) = 1/6 = beta/(2Nc) with Nc=3
+PASS: exact half-slice identification: exp((beta/2)J) is half of exp((beta/3)ReTr) :: J coefficient beta/12 per half; two halves give 1/6
+PASS: native beta=6 spectral row is stable across finite shells :: B_8: 0.254417486638136, B_12: 0.254417647457575, B_16: 0.254417647457579
+PASS: native beta=6 row matches the recomputed finite spectral ratio :: lambda1/lambda0=0.254417647457579; lambda0=7.907437924080e+01
+PASS: native diagonal uses c_(p,q)/c_(0,0), not the plaquette local-link c/(d c00) :: max c/c00=1.298078395840; dim(1,1)=8
+PASS: native recurrence matrix is symmetric on the tested dominant-weight box :: symmetry error=0.000e+00
+PASS: fixed-lattice gap notes keep beta=6 gap claims separate from this native spectral row
+PASS: relationship note contains the required status-authority block
+PASS: relationship note states same coupling, different objects, and no physical mass-gap claim
+PASS: relationship note records the no-go discipline gate without overreach phrases
+TOTAL: PASS=17, FAIL=0
+
+----- stderr -----
+

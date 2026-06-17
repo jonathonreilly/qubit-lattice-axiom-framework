@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/frontier_capture_tail_exact_law_2026_06_12.py
+runner_sha256: 1968dfc2d1f4b79853bc5f6b728cba3c9c53d1daf46f89ff87703dc3f78d3140
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+==============================================================================
+Capture-deficit exact tail accounting: L=3 det-phase trajectory
+==============================================================================
+constants: L=3, NC=3, tau=0.35, T=256
+Hankel capture window=64, Fourier bins=256, full-tone zero tolerance=1.0e-13
+
+S0 anchors
+------------------------------------------------------------------------------
+  [PASS] ANCHOR: landed capture@order4/window64 frozen table is reproduced  (K3:0.898130088565, K4:0.777619557343, K5:0.899155545493, K6:0.994936516891)
+  [PASS] ANCHOR: landed coupled-gap count above 1e-8 remains exactly three per state  (K3:3, K4:3, K5:3, K6:3)
+  [PASS] ANCHOR: landed eigenpair gap inventory with no floor is still the frozen three-gap table  (K3:3, K4:3, K5:3, K6:3)
+  [PASS] ANCHOR: the no-floor coupled-gap SET is exactly (-3, 0, +3) for every state  (K3:(-3.0, 0.0, 3.0), K4:(-3.0, 0.0, 3.0), K5:(-3.0, 0.0, 3.0), K6:(-3.0, 0.0, 3.0))
+  [PASS] anti-fabrication: the full determinant-phase spectrum has more than three active tones  (K3:255, K4:255, K5:255, K6:255)
+  [PASS] anti-fabrication: full active tone counts reproduce the frozen no-floor spectrum  (K3:255, K4:255, K5:255, K6:255)
+  [PASS] ANCHOR: all 256 sampled Fourier bins are retained before tail projection  (K3:256, K4:256, K5:256, K6:256)
+
+S1 full-spectrum reconstruction
+------------------------------------------------------------------------------
+  K=3          active_tones=255/256 recon_err=8.882e-16
+  K=4          active_tones=255/256 recon_err=8.882e-16
+  K=5(seed=99) active_tones=255/256 recon_err=8.882e-16
+  K=6          active_tones=255/256 recon_err=1.332e-15
+  [PASS] S1: full tone sum reconstructs every centered phase-increment trajectory  (K3:8.882e-16, K4:8.882e-16, K5:8.882e-16, K6:1.332e-15)
+
+S2 capture from full spectrum
+------------------------------------------------------------------------------
+  K=3: capture_direct=0.8981300885645052 capture_from_spectrum=0.8981300885645042 deficit=0.1018699114354948
+  K=4: capture_direct=0.7776195573427411 capture_from_spectrum=0.7776195573427418 deficit=0.2223804426572589
+  K=5: capture_direct=0.8991555454934871 capture_from_spectrum=0.8991555454934869 deficit=0.1008444545065129
+  K=6: capture_direct=0.9949365168913127 capture_from_spectrum=0.9949365168913129 deficit=0.005063483108687317
+  [PASS] S2: full-spectrum Hankel projection reproduces landed capture values  (K3:0.898130088565, K4:0.777619557343, K5:0.899155545493, K6:0.994936516891)
+  [PASS] S2: capture deficits reproduce the frozen landed-complement table  (K3:0.101869911435, K4:0.222380442657, K5:0.100844454507, K6:0.00506348310869)
+
+S3 exact tail law
+------------------------------------------------------------------------------
+  K=3: tail_fraction=0.1018699114354958 tail_energy=2540.374701921678 total_hankel_energy=24937.43899571609 tail_law_error=9.853e-16
+  K=4: tail_fraction=0.2223804426572584 tail_energy=5342.316750929144 total_hankel_energy=24023.32096785568 tail_law_error=4.441e-16
+  K=5: tail_fraction=0.1008444545065131 tail_energy=2190.498061562594 total_hankel_energy=21721.55199095373 tail_law_error=2.220e-16
+  K=6: tail_fraction=0.005063483108687283 tail_energy=173.0983967979328 total_hankel_energy=34185.63725451212 tail_law_error=3.383e-17
+  [PASS] S3: Hankel-Frobenius tail fractions reproduce the frozen table  (K3:0.101869911435, K4:0.222380442657, K5:0.100844454507, K6:0.00506348310869)
+  [PASS] S3: deficit equals the order-4 Hankel-Frobenius tail fraction  (K3:9.853e-16, K4:4.441e-16, K5:2.220e-16, K6:3.383e-17)
+  [PASS] S3: retained tail energies are nonzero, so the deficit is not fabricated by zero mass  (K3:2540.37, K4:5342.32, K5:2190.5, K6:173.098)
+
+S4 depth ordering as tail arithmetic
+------------------------------------------------------------------------------
+  capture descending: (6, 5, 3, 4)
+  tail ascending:     (6, 5, 3, 4)
+  [PASS] S4: capture ordering reproduces the frozen landed depth order  (capture_order=(6, 5, 3, 4))
+  [PASS] S4: tail-mass ordering is the same arithmetic order K6,K5,K3,K4  (tail_order=(6, 5, 3, 4))
+==============================================================================
+TOTAL: PASS=15 FAIL=0
+==============================================================================
+SCOPE: exact finite one-body L=3 gauge-link system, realized seeds only.
+CLAIM TESTED: capture deficit is exactly the order-4 Hankel-Frobenius
+  tail fraction of the full sampled determinant-phase tone sum; the
+  depth ordering is the ascending tail-mass arithmetic on these states.
+
+----- stderr -----
+

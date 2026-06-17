@@ -1,0 +1,16 @@
+loop: koide-q-reduced-packet-verifier-20260617
+target_claim_id: koide_q_reduced_observable_restriction_theorem_2026-04-22
+mode: source_side_audit_unlock
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: restricted_packet_verifier
+blocker_text: "provide a retained theorem deriving the physical charged-lepton observable carrier/readout and D_red = I_2 normalization from retained upstream framework inputs"
+files_touched:
+  - docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md
+  - scripts/koide_q_reduced_reaudit_packet_verifier_2026_06_17.py
+  - logs/runner-cache/koide_q_reduced_reaudit_packet_verifier_2026_06_17.txt
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_action: "Reviewer can inspect the packet verifier and decide whether to requeue the parent row with the explicit boundary packet."

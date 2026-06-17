@@ -1,0 +1,29 @@
+loop_slug: koide-a1-fractional-topology-wrapper-20260617
+target: koide_a1_fractional_topology_no_go_synthesis_note_2026-04-24
+mode: source_side_audit_unlock
+status: pr_open
+actual_current_surface_status: no-go
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+target_blocker_text: "audit queue sees no primary runner for the five-probe fractional-topology no-go synthesis"
+source_of_blocker_text: audit_queue
+files_touched:
+  - docs/KOIDE_A1_FRACTIONAL_TOPOLOGY_NO_GO_SYNTHESIS_NOTE_2026-04-24.md
+  - scripts/frontier_koide_a1_fractional_topology_no_go_synthesis.py
+  - logs/runner-cache/frontier_koide_a1_fractional_topology_no_go_synthesis.txt
+  - .claude/science/physics-loops/koide-a1-fractional-topology-wrapper-20260617/
+open_imports:
+  - "Independent audit must decide whether the no-go synthesis is retained_no_go."
+  - "This PR does not derive the Koide A1 radian bridge; it verifies the five named obstruction probes as one packet."
+review_loop_disposition: reviewer_owned_not_run
+proposal_allowed: false
+proposal_allowed_reason: "The branch supplies auditable runner packaging for an unaudited no-go row; it does not self-ratify audit status."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4260
+next_exact_action: "Reviewer inspects PR #4260; independent audit can then decide whether the now-wired no-go packet can be audited."
+stop_condition: "PR opened and verified."

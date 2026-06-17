@@ -3,7 +3,7 @@ runner: scripts/emergent_metric_conformal_class_from_records_runner.py
 runner_sha256: fcbd66dd5793de942b486072d9e39e41b58f8d99e547b57a420fb4c685dda18f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.00
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -54,15 +54,15 @@ Causal-source packet reachability and status firewall
   [PASS] Lorentzian signature orientation firewall runner exists  | scripts/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.py
   [PASS] Lorentzian signature orientation firewall cache exists  | logs/runner-cache/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.txt
   [PASS] Lorentzian signature orientation firewall cache reports successful checks  | logs/runner-cache/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.txt
-  [FAIL] Lorentzian signature orientation firewall ledger status is retained_bounded  | wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07 -> unaudited
-  [PASS] current ledger exposes at least one non-retained causal-source input  | record_history_order_time_rate_firewall_2026-06-05:unaudited, reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06:unaudited
+  [PASS] Lorentzian signature orientation firewall ledger status is retained_bounded  | wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07 -> retained_bounded
+  [PASS] current ledger exposes at least one non-retained causal-source input  | record_history_order_time_rate_firewall_2026-06-05:unaudited
   [PASS] note status is no stronger than current causal-source packet  | conditional-support required until causal inputs are retained
 
 ==============================================================================
 Finite conformal-class algebra under the explicit packet
 ==============================================================================
-   finite LR-cone diagnostic v_LR = 0.6937; record-prefix order: True; signature sources retained-grade: False
-  [FAIL] explicit causal-source packet supplies the conditional inputs being assembled  | event order + finite cone diagnostic + retained-bounded signature anchors
+   finite LR-cone diagnostic v_LR = 0.6937; record-prefix order: True; signature sources retained-grade: True
+  [PASS] explicit causal-source packet supplies the conditional inputs being assembled  | event order + finite cone diagnostic + retained-bounded signature anchors
 
 ==============================================================================
 Conformal rigidity boundary: cone fixes class, not scale
@@ -76,10 +76,10 @@ Conformal rigidity boundary: cone fixes class, not scale
 Clock-rate boundary: conformal factor remains the retained no-go
 ==============================================================================
   [PASS] record count/order is invariant under monotone clock reparametrization  | same events/counts; different interval rates
-  [FAIL] emergent metric surface is conditional conformal class plus retained clock-rate scale no-go  | audit may promote only after causal-source inputs are retained or separately admitted
+  [PASS] emergent metric surface is conditional conformal class plus retained clock-rate scale no-go  | audit may promote only after causal-source inputs are retained or separately admitted
 
-runner_check_breakdown = {A: 49, B: 0, C: 0, D: 0, total_pass: 49}
-TOTAL: PASS=49 FAIL=3
+runner_check_breakdown = {A: 52, B: 0, C: 0, D: 0, total_pass: 52}
+TOTAL: PASS=52 FAIL=0
 
 ----- stderr -----
 

@@ -1,0 +1,39 @@
+loop: emergent-metric-cache-sync-20260617
+branch: physics-loop/emergent-metric-cache-sync-20260617
+base: origin/main@d1ac4c902
+target_status: conditional-support
+actual_current_surface_status: conditional-support
+cycle_count: 1
+active_route: stale-cache artifact repair
+target_claim_id: emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06
+files_touched:
+  - logs/runner-cache/emergent_metric_conformal_class_from_records_runner.txt
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/GOAL.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/STATE.yaml
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/ASSUMPTIONS_AND_IMPORTS.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/ROUTE_PORTFOLIO.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/OPPORTUNITY_QUEUE.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/NO_GO_LEDGER.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/LITERATURE_BRIDGES.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/ARTIFACT_PLAN.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/TRACE_GATE.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/CLAIM_STATUS_CERTIFICATE.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/REVIEW_HISTORY.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/HANDOFF.md
+  - .claude/science/physics-loops/emergent-metric-cache-sync-20260617/PR_BACKLOG.md
+open_imports:
+  - record-history/order source row remains unaudited in current ledger.
+  - HKM/Malament differentiable-manifold interface remains an assumption-gated bridge.
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+verification:
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh scripts/emergent_metric_conformal_class_from_records_runner.py --timeout-sec 120
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/emergent_metric_conformal_class_from_records_runner.py
+  - python3 -m py_compile scripts/emergent_metric_conformal_class_from_records_runner.py
+  - git diff --check
+next_exact_action: Open review PR for the cache-sync artifact repair.
+stop_condition: PR opened for review; independent audit remains required for any row status effect.

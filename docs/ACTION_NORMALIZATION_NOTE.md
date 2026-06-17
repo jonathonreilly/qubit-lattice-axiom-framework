@@ -93,5 +93,6 @@ PYTHONPATH=scripts python3 scripts/frontier_action_normalization.py
 Expected summary:
 
 ```text
+runner_check_breakdown = {A: 4, B: 0, C: 38, D: 0, total_pass: 42}
 TOTAL: PASS=42 FAIL=0
 ```

@@ -1,0 +1,24 @@
+loop: action-normalization-classified-runner-20260617
+branch: physics-loop/action-normalization-classified-runner-20260617
+base: origin/main
+target_claim_id: action_normalization_note
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: runner_artifact_repair
+open_imports:
+  - f/Phi physical-potential identification remains open
+  - Poisson source-normalization convention remains open
+  - null-ray/light-bending runner remains outside this packet
+files_touched:
+  - docs/ACTION_NORMALIZATION_NOTE.md
+  - scripts/frontier_action_normalization.py
+  - logs/runner-cache/frontier_action_normalization.txt
+verification:
+  - PYTHONPATH=scripts python3 scripts/frontier_action_normalization.py
+  - python3 -m py_compile scripts/frontier_action_normalization.py
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh scripts/frontier_action_normalization.py
+  - PYTHONPATH=scripts python3 scripts/cached_runner_output.py --check-only scripts/frontier_action_normalization.py
+next_exact_action: open review PR
+stop_condition: PR opened for reviewer extraction; no audit or main landing by this agent

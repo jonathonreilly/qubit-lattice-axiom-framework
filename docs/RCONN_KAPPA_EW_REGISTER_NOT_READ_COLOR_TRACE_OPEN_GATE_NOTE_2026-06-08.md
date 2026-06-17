@@ -1,6 +1,6 @@
 # Rconn Kappa EW Register-Not-Read Color-Trace Open Gate
 
-**Date:** 2026-06-08
+**Date:** 2026-06-08; 2026-06-13 downstream-use firewall
 **Claim type:** open_gate
 **Status authority:** independent audit lane only. This source note does not set,
 predict, or estimate any audit verdict. Effective status is pipeline-derived
@@ -22,6 +22,13 @@ previously too close together:
 
 The source surface therefore records a **route-demotion**, not a positive
 closure. It does not set, predict, or estimate any audit verdict.
+
+**2026-06-13 downstream-use firewall.** This row may be cited as exact
+Fierz trace/traceless algebra support and as a negative route-demotion for
+the register-not-read shortcut. It may **not** be cited as a derivation of
+`κ_EW = 0`, `R_conn = 8/9`, a physical EW-current readout, or a singlet-channel
+weighting rule. Any downstream positive use must supply a separate retained
+or approved physical readout/weighting bridge.
 
 The retained no-go [`RCONN_DERIVED_NOTE`](RCONN_DERIVED_NOTE.md) establishes
 the exact SU(`N_c`) Fierz adjoint fraction
@@ -194,6 +201,23 @@ It preserves the exact Fierz trace/traceless algebra and demotes the
 previously proposed register-not-read shortcut. The remaining open gate is a
 stronger non-axiom readout/weighting bridge, not a direct consequence of
 Record.
+
+## Downstream Citation Firewall
+
+Allowed citations:
+
+- exact Fierz singlet/adjoint decomposition;
+- `F_adj = (N_c^2 - 1)/N_c^2` and the `N_c = 3` specialization `8/9`;
+- the negative fact that register-not-read does not by itself select
+  `κ_EW = 0` on the current Record/axiom surface.
+
+Forbidden citations without a new independent bridge:
+
+- "`κ_EW = 0` follows from register-not-read";
+- "`R_conn = 8/9` is physically selected";
+- "the trace channel is unregistered with zero physical weight";
+- "Record supplies the missing EW-current readout context";
+- "this row closes the wider `κ_EW` gate."
 
 ## Command
 

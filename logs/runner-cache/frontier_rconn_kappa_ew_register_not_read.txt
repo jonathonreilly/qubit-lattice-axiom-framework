@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_rconn_kappa_ew_register_not_read.py
-runner_sha256: 85823fab886834f01e78fdb0b3779da12d5593af24b892d7735a52688e6510cd
+runner_sha256: 4f5ebe2e01fb0f0fda1afaf3478d71be3cd6878084fa4e91ba908b0b97a054e2
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -24,8 +24,10 @@ PASS: trivial_central_partition_is_identity_not_twirl Schur-compatible {I} parti
 PASS: kappa_EW_is_free_weight_not_count 8/9 count is fixed while kappa_EW changes the singlet weight
 PASS: Record_axiom_does_not_supply_weighting_or_context current axioms cannot close kappa_EW by themselves
 PASS: source_note_records_route_demoted_not_closed source surface matches repaired route boundary
+PASS: source_note_has_downstream_use_firewall route demotion cannot be reused as a selector theorem
+PASS: source_note_lists_forbidden_positive_reuses downstream citation firewall names the unsafe reuses
 
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=20 FAIL=0
 ROUTE-DEMOTION RESULT: the exact Fierz trace/traceless algebra and the 8/9 count survive, but register-not-read does not by itself select kappa_EW=0 on the current Record/axiom surface. The kappa_EW gate remains open for a future non-axiom readout theorem, convention, or approved admission; no audit verdict is applied here.
 
 ----- stderr -----

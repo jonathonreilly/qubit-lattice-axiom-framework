@@ -1,7 +1,7 @@
-# g_bare Rescaling Gram-Scaling Lemma
+# g_bare Rescaling Gram and Wilson-Beta Transformation Lemma
 
 **Date:** 2026-05-03. Repair narrowing: 2026-05-25; gram-only narrowing
-2026-06-16.
+2026-06-16; scoped Wilson-beta bridge wiring 2026-06-17.
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Source status:** repair candidate for independent audit. This note does
@@ -21,11 +21,17 @@ beta = 2 N_c / g_bare^2,
 which this row does not derive as a one-hop retained authority. The repaired
 source therefore takes the conservative route: it is no longer a theorem that
 removes all continuum rescaling freedom from retained first principles. The
-2026-06-16 repair narrows further: this row is no longer a beta-routing lemma.
-It is only the exact canonical-Gram scaling lemma
+2026-06-16 repair narrowed further to the exact canonical-Gram scaling lemma.
+The 2026-06-17 source update consumes the newly landed, scoped Wilson
+generator-rescaling bridge
+[`WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md`](WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md)
+for the beta-routing component named by the audit blocker. The resulting
+surface is:
 
 ```text
-CN + rescaling by c  =>  Gram -> c^2 Gram.
+CN + rescaling by c  =>  Gram -> c^2 Gram
+CN + supplied Wilson matching + compensating T'_a = c T_a, g' T'_a = g T_a
+  =>  beta' = c^2 beta.
 ```
 
 Here:
@@ -33,9 +39,15 @@ Here:
 - **CN** is the canonical trace normalization
   `Tr(T_a T_b) = delta_ab / 2`, supplied by the retained CL3 color algebra
   authority [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md).
-- **WM** and any transformation law for the Wilson action coefficient under
-  `T_a -> c T_a` are not used as load-bearing inputs to the narrowed claim.
-  They remain open inputs for any future beta-routing theorem.
+- **WM** is the supplied standard Wilson small-`a` matching relation
+  `beta = 2 N_c / g^2`, supplied by
+  [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
+- **WGT** is the scoped Wilson generator-rescaling beta transformation under
+  the compensating readout `g' T'_a = g T_a`, supplied by
+  [`WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md`](WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md).
+- Wilson action-surface selection, `beta = 6`, `g_bare = 1`, and any physical
+  bare-coupling selection remain outside this row; this row does not select
+  the Wilson action surface.
 
 ## 1. The Narrowed Claim
 
@@ -45,17 +57,23 @@ Here:
 > 1. `Tr(T_a T_b) = delta_ab / 2` on the canonical SU(3) triplet carrier.
 > 2. A scalar rescaling of the carrier/connection normalization by `c`,
 >    with `c^2 != 1`.
+> 3. For the Wilson-beta component only, the supplied standard Wilson
+>    small-`a` matching surface and compensating rescaling relation
+>    `T'_a = c T_a`, `g' T'_a = g T_a`.
 >
 > Then exact algebra gives
 >
 > ```text
 > Tr((c T_a)(c T_b)) = c^2 delta_ab / 2.
+> g'^2 = g^2 / c^2.
+> beta' = 2 N_c / g'^2 = c^2 (2 N_c / g^2) = c^2 beta.
 > ```
 >
 > Therefore a nontrivial scalar rescaling does not preserve the same
-> canonical trace-normalization surface. Whether and how that scale is routed
-> into Wilson `beta`, `g_bare`, or an action coefficient is a separate
-> normalization theorem not supplied by this row.
+> canonical trace-normalization surface, and on the supplied Wilson matching
+> surface it also changes the matched beta coefficient by `c^2`. This does not
+> select the Wilson action surface, does not select `beta = 6`, and does not
+> derive `g_bare = 1`.
 
 This is a class-A algebraic implication over the listed inputs.
 
@@ -66,15 +84,16 @@ blocker. The note does not claim:
 
 - that the Wilson plaquette action surface is uniquely selected from the
   framework baseline;
-- that Wilson matching is itself retained by this row;
-- that `beta_new / beta_old` follows under `T_a -> c T_a`;
+- that Wilson matching is itself derived by this row;
 - that all continuum rescaling freedom is removed from first principles;
 - that `g_bare = 1` follows;
 - that `G_BARE_DERIVATION_NOTE.md` is retained or promoted.
 
 The only load-bearing retained authority cited by this note is the CL3 color
-algebra authority for the trace-normalized SU(3) carrier. Wilson matching is
-not consumed by the narrowed lemma.
+algebra authority for the trace-normalized SU(3) carrier. The beta-transform
+component is load-bearing only inside the supplied Wilson matching surface
+and the landed WGT support note; it is not a standalone action-selection or
+coupling-selection theorem.
 
 ## 3. Runner Slice
 
@@ -84,7 +103,11 @@ It checks, using exact rational arithmetic:
 
 - for nontrivial `c^2` values, the Gram matrix scales by `c^2`;
 - nontrivial `c^2` values do not preserve the canonical Gram diagonal `1/2`;
-- the source note explicitly quarantines beta-routing as out of scope.
+- the source note cites WM and WGT as the scoped beta-routing bridge;
+- exact samples satisfy `beta' = c^2 beta` and
+  `beta' g'^2 = beta g^2 = 2 N_c`;
+- the source note still fences off Wilson action selection, `beta = 6`, and
+  `g_bare = 1`.
 
 The runner does not inspect audit-ledger status, audit queues, effective
 status, or dependency closure. Those are generated by the audit pipeline after
@@ -95,14 +118,18 @@ the source row is parsed.
 Audit status is set only by the independent audit lane. The intended
 source-side claim type is `bounded_theorem`: assuming canonical trace
 normalization CN, a scalar carrier/connection rescaling by `c` changes the
-canonical Gram by `c^2`. This row does not derive Wilson matching, does not
-prove action-surface uniqueness, does not derive any `beta_new / beta_old`
-law, and does not promote downstream `g_bare` claims.
+canonical Gram by `c^2`; assuming additionally the supplied Wilson matching
+surface and compensating generator/coupling rescaling, the Wilson matched
+coefficient transforms as `beta' = c^2 beta`. This row does not derive Wilson
+action-surface uniqueness, does not derive `beta = 6`, does not derive
+`g_bare = 1`, and does not promote downstream `g_bare` claims.
 
 ## 5. Cross-References
 
-The only load-bearing markdown citation in this note is the retained CL3
-color algebra authority linked in Section 0. Related rows such as
+The load-bearing markdown citations in this note are the retained CL3 color
+algebra authority linked in Section 0, the Wilson small-`a` matching theorem,
+and the Wilson generator-rescaling beta-transformation bridge. Related rows
+such as
 `G_BARE_DERIVATION_NOTE.md`,
 `G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`,
 `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`, and

@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Exact bounded-surface check for the g_bare Gram-scaling repair.
+"""Exact bounded-surface check for the g_bare rescaling bridge repair.
 
-This runner checks only the narrowed Gram-scaling lemma:
+This runner checks the narrowed source row:
 
   CN + rescaling by c => Gram -> c^2 Gram.
+  CN + supplied Wilson matching + compensating T'_a = c T_a, g' T'_a = g T_a
+      => beta' = c^2 beta.
 
-It does not prove Wilson matching, does not derive the Wilson action surface,
-does not derive beta_new / beta_old under T_a -> c T_a,
-and does not apply an audit verdict.
+It does not derive Wilson action-surface selection, beta=6, g_bare=1,
+or any audit verdict.
 """
 
 from __future__ import annotations
@@ -21,6 +22,8 @@ PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md"
+WM_NOTE = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
+WGT_NOTE = ROOT / "docs" / "WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md"
 
 
 def check(name: str, cond: bool, detail: str = "") -> bool:
@@ -49,9 +52,30 @@ def scale_gram(gram: list[list[Fraction]], c_squared: Fraction) -> list[list[Fra
     return [[c_squared * entry for entry in row] for row in gram]
 
 
+def beta(n_c: Fraction, g_squared: Fraction) -> Fraction:
+    return Fraction(2) * n_c / g_squared
+
+
 def main() -> int:
     note_text = NOTE.read_text(encoding="utf-8")
     gram = canonical_gram()
+
+    check("consumer note exists", NOTE.exists(), NOTE.relative_to(ROOT).as_posix())
+    check("Wilson matching note exists", WM_NOTE.exists(), WM_NOTE.relative_to(ROOT).as_posix())
+    check("Wilson generator-rescaling bridge note exists", WGT_NOTE.exists(), WGT_NOTE.relative_to(ROOT).as_posix())
+
+    required_markers = [
+        "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md",
+        "WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md",
+        "beta' = c^2 beta",
+        "g' T'_a = g T_a",
+        "does not select the Wilson action surface",
+        "does not select `beta = 6`",
+        "does not derive `g_bare = 1`",
+    ]
+    flat = " ".join(note_text.split())
+    for marker in required_markers:
+        check(f"note contains scoped bridge marker: {marker[:60]}", marker in note_text or marker in flat)
 
     for c_squared in [Fraction(1, 4), Fraction(2), Fraction(4), Fraction(9)]:
         scaled = scale_gram(gram, c_squared)
@@ -74,22 +98,47 @@ def main() -> int:
             "canonical diagonal is 1/2",
         )
 
-    check(
-        "note states beta routing is out of scope",
-        "this row is no longer a beta-routing" in note_text
-        and "does not derive any `beta_new / beta_old`" in note_text,
-    )
-    check(
-        "note states Wilson action normalization theorem remains separate",
-        "normalization theorem not supplied by this row" in note_text,
-    )
+    for n_c, g_squared in [
+        (Fraction(3), Fraction(1)),
+        (Fraction(3), Fraction(5, 7)),
+        (Fraction(2), Fraction(3, 5)),
+        (Fraction(7, 2), Fraction(9, 4)),
+    ]:
+        beta_old = beta(n_c, g_squared)
+        check(
+            f"Wilson matching product beta g^2 = 2 N_c for N={n_c}, g^2={g_squared}",
+            beta_old * g_squared == 2 * n_c,
+            f"beta={beta_old}",
+        )
+        for c in [Fraction(1, 3), Fraction(1, 2), Fraction(2), Fraction(5, 2), Fraction(3)]:
+            c_squared = c * c
+            g_squared_new = g_squared / c_squared
+            beta_new = beta(n_c, g_squared_new)
+            check(
+                f"beta scales by c^2 for N={n_c}, g^2={g_squared}, c={c}",
+                beta_new == c_squared * beta_old,
+                f"beta'={beta_new}; c^2 beta={c_squared * beta_old}",
+            )
+            check(
+                f"matched product invariant after compensating rescale c={c}",
+                beta_new * g_squared_new == beta_old * g_squared == 2 * n_c,
+            )
+
+    forbidden_markers = [
+        "effective_status: retained",
+        "audit_status: audited_clean",
+        "Wilson action-surface selection is derived",
+        "g_bare=1 is derived",
+    ]
+    for marker in forbidden_markers:
+        check(f"forbidden overclaim absent: {marker}", marker not in note_text)
 
     print(f"SUMMARY: PASS = {PASS}, FAIL = {FAIL}")
     if FAIL:
-        print("Conditional rescaling algebra check failed.")
+        print("Scoped g_bare rescaling bridge check failed.")
         return 1
 
-    print("Gram-scaling algebra check passed; no retained status is asserted.")
+    print("Scoped g_bare rescaling bridge check passed; no retained status is asserted.")
     return 0
 
 

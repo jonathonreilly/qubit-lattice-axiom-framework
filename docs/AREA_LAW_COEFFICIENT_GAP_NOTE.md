@@ -1,7 +1,19 @@
 # Area-Law Coefficient Gap Audit
 
 **Date:** 2026-04-25
-**Status:** audited_conditional Planck Target 2 audit / support note
+**Status:** source-packet support for Planck Target 2 re-audit; historical
+audited-conditional boundary preserved, but the independent audit lane remains
+authoritative.
+
+Primary runner: `scripts/frontier_area_law_coefficient_gap_source_packet.py`
+
+Primary cache: `logs/runner-cache/frontier_area_law_coefficient_gap_source_packet.txt`
+
+The runner checks the source-level authority packet for this synthesis: the
+action-side primitive `1/4` input, the simple-fiber Widom `1/6` no-go, the
+conditional primitive parity-gate positive carrier, and the exact remaining
+primitive-CAR edge premise. It does not assign an audit verdict or retained
+status.
 
 ## Cited authorities (one-hop deps)
 
@@ -258,7 +270,7 @@ two-orbital CAR / Laplacian-gated edge carrier." The two halves of that
 statement are now made explicit as imports, not assertions, and they trace to
 the named live authorities tabulated above.
 
-## What this PR is NOT
+## What this source packet is NOT
 
 This rigorization does **not**:
 

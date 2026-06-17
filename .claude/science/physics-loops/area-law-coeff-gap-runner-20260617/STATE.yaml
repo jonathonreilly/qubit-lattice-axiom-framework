@@ -1,0 +1,21 @@
+loop_slug: area-law-coeff-gap-runner-20260617
+target: area_law_coefficient_gap_note
+branch: codex/area-law-coeff-gap-runner-20260617
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_loop_disposition: reviewer_owned_not_run
+files_touched:
+  - docs/AREA_LAW_COEFFICIENT_GAP_NOTE.md
+  - scripts/frontier_area_law_coefficient_gap_source_packet.py
+  - logs/runner-cache/frontier_area_law_coefficient_gap_source_packet.txt
+  - .claude/science/physics-loops/area-law-coeff-gap-runner-20260617/
+commands_run:
+  - python3 scripts/frontier_area_law_coefficient_gap_source_packet.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_area_law_coefficient_gap_source_packet.py
+next_exact_action: reviewer should run review-loop, then queue independent re-audit of area_law_coefficient_gap_note if the source packet is accepted.
+stop_condition: coherent source-side PR opened; no audit verdict applied.

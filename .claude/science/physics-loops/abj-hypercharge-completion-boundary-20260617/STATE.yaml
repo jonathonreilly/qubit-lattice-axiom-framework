@@ -1,0 +1,24 @@
+loop_slug: abj-hypercharge-completion-boundary-20260617
+objective: "Unlock the ABJ audited-conditional blocker by source-side hypercharge/completion boundary work, without auditing or landing."
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: partially_closes
+active_route: "Route ABJ P-HY/P-COMP through an exact one-hop decoupling boundary and expose remaining admissions."
+target_claim_id: anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26
+target_blocker_text: "supply the one-hop authority that actually carries the U(1)_Y LH/RH hypercharge and matter-completion surface"
+files_touched:
+  - docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+  - docs/ABJ_HYPERCHARGE_COMPLETION_DECOUPLING_BOUNDARY_NOTE_2026-06-17.md
+  - scripts/frontier_abj_hypercharge_completion_decoupling_boundary_2026_06_17.py
+  - logs/runner-cache/frontier_abj_hypercharge_completion_decoupling_boundary_2026_06_17.txt
+  - .claude/science/physics-loops/abj-hypercharge-completion-boundary-20260617/
+open_imports:
+  - "P-HY: physical anomaly-relevant U(1)_Y identification for the bounded abelian surface."
+  - "P-COMP-min: minimal opposite-chirality SU(2)-singlet completion and vectorlike/mirror exclusion."
+  - "P-REC: taste-reconstruction / Dirac-factor bridge from staggered carrier to spacetime Clifford gamma5."
+  - "P-ABJ: ABJ anomaly-to-inconsistency accepted premise."
+review_loop_disposition: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Run the new runner, cache output, commit, push, and open a review PR."
+stop_condition: "One coherent source-side boundary block packaged as PR; goal remains active for later audit-unlock pivots."

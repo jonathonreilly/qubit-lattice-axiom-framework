@@ -126,6 +126,40 @@ dependency graph explicit for re-audit: the bridge can be checked as an
 exact conditional consequence over these named edges, but it is not a
 retained derivation of hypercharge, matter completion, P-ABJ, or P-REC.
 
+## P-HY/P-COMP decoupling boundary (2026-06-17)
+
+[`ABJ_HYPERCHARGE_COMPLETION_DECOUPLING_BOUNDARY_NOTE_2026-06-17.md`](ABJ_HYPERCHARGE_COMPLETION_DECOUPLING_BOUNDARY_NOTE_2026-06-17.md)
+is the one-hop source-side boundary for the hypercharge/completion half
+of this bridge. It verifies, by exact rational arithmetic, that the
+bounded left-handed `Y_like` surface plus declared P-HY and an admitted
+minimal `SU(2)`-singlet right-handed completion force the no-`nu_R`
+right-handed values
+
+```text
+Y(u_R)=+4/3,   Y(d_R)=-2/3,   Y(e_R)=-2,
+```
+
+and cancel the one-generation anomaly conditions exactly. It also proves
+the negative boundaries that are load-bearing for this row's honesty:
+adding a free-`Y` `nu_R` reopens a one-parameter anomaly-free family,
+vectorlike pairs preserve anomaly zeros, and common rescaling of all
+`Y` values preserves all anomaly-zero equations.
+
+Consequently, this bridge no longer routes hypercharge or completion
+authority through `NATIVE_GAUGE_CLOSURE_NOTE.md`. The current split is:
+
+| Edge | Exact role after the 2026-06-17 boundary | Remaining boundary |
+|---|---|---|
+| HY-surface | supplies `{+1/3 x6, -1 x2}` as a bounded finite eigenvalue surface | does not identify physical anomaly-relevant `U(1)_Y` |
+| P-HY | reads the bounded surface as anomaly-relevant `U(1)_Y` | declared premise; not derived here |
+| P-COMP-min | admits minimal opposite-chirality `SU(2)`-singlet completion | declared premise; vectorlike/mirror exclusion is not derived |
+| HYC boundary | forces RH hypercharge values and exact anomaly cancellation from HY-surface + P-HY + P-COMP-min | bounded support; independent audit decides later effective status |
+| neutral `nu_R` | anomaly-inert add-on at `Y=0` | neutrality is a branch selection if `nu_R` is included |
+
+This new boundary does not derive P-HY or P-COMP and does not change the
+P-REC or P-ABJ premise status. It only makes the P-HY/P-COMP arithmetic
+and residual assumptions explicit enough for independent re-audit.
+
 ## Proof-walk
 
 | Step | Statement | Load-bearing input | Lattice-action input? |

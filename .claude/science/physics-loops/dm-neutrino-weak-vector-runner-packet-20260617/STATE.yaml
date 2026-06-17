@@ -1,0 +1,19 @@
+loop: dm-neutrino-weak-vector-runner-packet-20260617
+branch: codex/dm-neutrino-weak-vector-runner-packet-20260617
+base: origin/main
+target_claim_id: dm_neutrino_weak_vector_theorem_note_2026-04-15
+target_status: runner-artifact repair
+actual_current_surface_status: bounded representation theorem; no coefficient/base-normalization closure
+cycle_count: 1
+active_route: "Expose the existing weak-vector theorem runner as the row primary runner and add a SHA-pinned cache."
+hard_residual: "Independent audit must still decide whether the bounded representation theorem is clean after runner artifact repair."
+files_touched:
+  - docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md
+  - logs/runner-cache/frontier_dm_neutrino_weak_vector_theorem.txt
+  - .claude/science/physics-loops/dm-neutrino-weak-vector-runner-packet-20260617/
+open_blockers:
+  - "This PR does not fix base normalization."
+  - "This PR does not fix the downstream second-order suppression law."
+  - "This PR does not apply an audit verdict, edit the audit ledger, or land to main."
+next_action: "Reviewer extracts/lands source-side runner metadata if acceptable; independent audit decides the row."
+stop_condition: "Stop after ready PR creation."

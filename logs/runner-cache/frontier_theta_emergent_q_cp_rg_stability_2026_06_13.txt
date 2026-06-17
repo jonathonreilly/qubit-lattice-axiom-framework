@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_theta_emergent_q_cp_rg_stability_2026_06_13.py
+runner_sha256: c3a0ecb9481f9b4e48cb4e84b69dad70520216e9193f13ad2968268787aefda7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.46
+status: ok
+----- stdout -----
+========================================================================
+Theta emergent-Q weighting half: reality of the measure is RG-stable
+========================================================================
+
+--- A. substrate weight real and conjugation-invariant (W[U*]=W[U])
+[PASS] (01) matter determinant det(D(U)+A) is REAL on the K-real site-diagonal section for every tested background (slogdet, finite-guarded, U(1) and SU(2))
+[PASS] (02) gauge action S = -beta sum_P Re Tr U_P is real and conjugation-even: Re Tr(U*) = Re Tr(U) gives S[U*] = S[U]
+[PASS] (03) corrected two-step det identity: D(U*) = conj(D(U)) entrywise and A* = A give D(U*)+A = (D(U)+A)*, so det(D(U*)+A) = conj det(D(U)+A); reality (eps(D+A)eps = (D+A)^dag) makes it equal det(D(U)+A). [No single similarity K gives K M K = D(U*)+A; the two arguments are distinct]
+[PASS] (04) the full weight W[U] = det(D(U)+A) exp(-S[U]) is real and conjugation-invariant: W[U*] = W[U] (computed, all backgrounds)
+RESIDUAL (declared-open): consumed premises: K-reality (A* = A; equivalently arg det M_matter = 0, the matter-sector reality the theta-bar mass side also consumes), SITE-DIAGONALITY of A (see A'), and a real per-plaquette gauge action. Reality of the per-plaquette action is supplied by the real-positive Wilson selector (WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25), itself an admitted path-integral convention (unaudited), not a framework-derived fact.
+
+--- A'. violation class: non-site-diagonal K-real A breaks it
+[PASS] (05) a K-real (A* = A) but NON-site-diagonal real coupling gives a COMPLEX / conjugation-non-invariant determinant: site-diagonality is an independent load-bearing premise, not a convenience  [|Im sign| = 0.408, |sU - sUc| = 0.816]
+
+--- B. any emergent sector functional Q is conjugation-odd
+[PASS] (06) any topological sector functional is odd under U -> U*: the 2D geometric charge satisfies Q[U*] = -Q[U] (conjugation/C-oddness, not genuine-CP-oddness)
+
+--- C. real conjugation-invariant measure + Q odd => Z_Q = Z_{-Q}
+[PASS] (07) on an explicit real conjugation-symmetric ensemble the sector weights pair: Z_Q = Z_{-Q} for every populated Q, and sum_Q Q Z_Q = 0  [<Q> = 0.00e+00, sectors -6..6]
+
+--- D. Z(theta) real and even; pinned to the CP-even set {0, pi}
+[PASS] (08) Z(theta) = sum_Q e^{i theta Q} Z_Q is REAL and EVEN in theta (dZ/dtheta|0 = 0): no CP-ODD weighting. Evenness pins theta to the CP-even SET {0, pi}; theta = pi is itself real/even and is NOT excluded here (interfaces with 06-07: reality gives theta in {0,pi} on this conditional surface, not theta = 0). The 0-vs-pi choice is the existence/dynamics half  [dZ/dtheta|0 = 0; theta=pi real = True]
+
+--- E. exact marginalization preserves reality + conj-symmetry
+[PASS] (09) GENUINE marginalization (exact sum over 3^6 fine configs): the real-local block map is conjugation-EQUIVARIANT (block(sigma c) = sigma'(block c)), and a real conjugation-symmetric fine weight marginalizes to a blocked weight W'[b] that is real and conjugation-symmetric (W'[sigma' b] = W'[b]), coarse sectors still paired Z'_q = Z'_{-q}
+[PASS] (10) the lemma is discriminating, not a tautology: (a) dropping REALITY (an imaginary i*theta*Q CP-odd term) makes the blocked weight COMPLEX; (b) dropping the FINE conjugation-symmetry (a real but conjugation-ODD term) makes the marginal real but conjugation-ASYMMETRIC. Each preserved property is contingent on the corresponding fine-weight hypothesis
+[PASS] (11) RG invariance assembled: under a conjugation-equivariant block map (the real-local class; verified equivariant in check 9) BOTH reality and conjugation-symmetry of the weight are preserved by exact marginalization, each shown load-bearing (check 10); iterating inside this blocking class preserves absence of an explicit CP-ODD theta weighting
+RESIDUAL (declared-open): the genuine computation is on a finite Z_3 spin model instantiating the general lemma (marginalizing a G-invariant real weight over a G-equivariant fibration preserves G-invariance and reality); the gauge/fermion content enters via checks 1-7 (real conj-invariant weight, conj-odd Q). The FERMION-MEASURE (Fujikawa/anomaly) Jacobian under coarse-graining -- the canonical radiative-theta route -- is covered only insofar as the matter weight stays real under blocking (marginal of reals), which rests on the det reality of checks 1,3 being preserved, a premised not separately RG-verified fact for the dressed fermion sector.
+
+--- F. interface pins and honest residuals
+[PASS] (12) interface pins: block06 names the emergent-Q bridge (weighting half conditionally supported here); the 06-07 theta boundary (reality does NOT force theta = 0) is cited -- reality forces theta into the CP-even set {0, pi} on this conditional surface, leaving 0-vs-pi to the existence/dynamics half
+RESIDUAL (declared-open): the EXISTENCE half of the bridge (does a nonvacuous Q emerge) remains open from block06; the 0-vs-pi choice within the CP-even set is part of that dynamics half, NOT settled here.
+RESIDUAL (declared-open): SPONTANEOUS CP violation is NOT excluded: the result is about the action/measure being real, not the realized vacuum.
+RESIDUAL (declared-open): substrate checks 1-7 run on a 3D lattice; the iθFF~ term and instanton sectors are 4D. The reality/conjugation mechanism is dimension-independent (the determinant reality and the Q-odd / Z_Q=Z_{-Q} pairing do not use d=3), but 4D staggered-flavor determinant reality is argued by that dimension-independence, not computed in 4D here.
+RESIDUAL (declared-open): 'theta unphysical' is scoped to the CP-ODD weighting: a real measure still has |theta|-dependent vacuum energy (06-07; Z(theta) is even, not constant). The mass-side arg det M / CKM phase is out of scope (this is the gauge-weighting side).
+
+TOTAL: PASS=12 FAIL=0
+VERDICT: this is a bounded conditional source for the weighting half of the emergent-Q bridge. The staggered substrate measure is REAL and conjugation-invariant on the K-real site-diagonal section (det real for every gauge background x real conj-even per-plaquette action), and exact marginalization under conjugation-equivariant blocking preserves reality + conjugation-symmetry (genuinely computed on a finite model, with CP-odd and non-equivariant breakers): inside this blocking class, no explicit CP-ODD theta weighting is generated (Z_Q = Z_{-Q}, theta pinned to the CP-even set {0, pi}). Residual: the EXISTENCE of an emergent Q, the 0-vs-pi choice, spontaneous CPV, and the dressed-fermion Jacobian under RG. Nothing retired; no audit status set.
+
+----- stderr -----
+

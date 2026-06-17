@@ -1,0 +1,16 @@
+loop: teleportation-offline-resource-scope-20260617
+target_claim_id: teleportation_resource_from_poisson_note
+status: ready_for_reviewer
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+branch: physics-loop/teleportation-offline-resource-scope-20260617
+files_touched:
+  - docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md
+  - scripts/frontier_teleportation_resource_from_poisson.py
+  - logs/runner-cache/frontier_teleportation_resource_from_poisson.txt
+  - .claude/science/physics-loops/teleportation-offline-resource-scope-20260617/
+review_loop: reviewer_owned_not_run
+audit_actions: none
+repo_wide_authority_edits: none
+next_action: reviewer extracts or revises the bounded source split

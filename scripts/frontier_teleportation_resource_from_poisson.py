@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-"""Poisson/CHSH to teleportation-resource audit.
+"""Poisson/CHSH to bounded retained-axis teleportation-resource support.
 
-Status: planning / first artifact. This script asks a narrow question:
+Status: bounded offline resource support. This script asks a narrow question:
 
     Does the existing Poisson-driven CHSH ground state already contain a
-    deterministic, high-fidelity encoded Bell pair usable as the resource for
-    ordinary quantum state teleportation?
+    deterministic traced high-fidelity encoded Bell pair usable as the logical
+    resource for ordinary quantum state teleportation on the stated finite
+    surfaces?
 
 It does not claim matter teleportation, charge transfer, mass transfer, or FTL
-transport. It only audits the two-species state produced by the existing
-`frontier_bell_inequality.py` machinery.
+transport, and it does not derive a physical deterministic preparation/readout
+apparatus. It checks the two-species state produced by the existing
+`frontier_bell_inequality.py` machinery after retained-axis logical reduction.
 """
 
 from __future__ import annotations
@@ -182,14 +184,18 @@ def source_status_firewall_certificate() -> dict[str, object]:
     micro_text = MICROSCOPIC_CLOSURE_NOTE.read_text(encoding="utf-8")
     apparatus_text = APPARATUS_DYNAMICS_NOTE.read_text(encoding="utf-8")
     required_note_snippets = (
-        "2026-06-12 Native Preparation/Readout Hard Residual",
-        "The live blocker is still a native preparation/readout and apparatus theorem",
-        "No retained-grade proposal or status promotion is made here",
-        "row remains an open gate for a physical deterministic resource",
+        "2026-06-12 Native Preparation/Readout Split",
+        "bounded offline retained-axis Bell-resource support",
+        "physical deterministic-resource theorem remains a separate open bridge",
+        "No new axiom, primitive, approved premise, or status claim",
         "2026-06-15 Native Apparatus Candidate Bridge",
         "TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md",
         "TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md",
-        "concrete bridge path, not a retained teleportation theorem and not an audit verdict",
+        "Scope Repair Boundary (2026-06-17)",
+        "not as a physical deterministic-resource theorem",
+        "2026-06-17 Bounded Offline Resource Scope Split",
+        "Physical deterministic teleportation apparatus, native resource production",
+        "downstream open bridges",
     )
     missing = [snippet for snippet in required_note_snippets if snippet not in note_flat]
     if missing:
@@ -670,8 +676,8 @@ def main() -> int:
     requested = set(args.case or [])
     cases = [case for case in DEFAULT_CASES if not requested or case.label in requested]
 
-    print("POISSON/CHSH TELEPORTATION RESOURCE AUDIT")
-    print("Status: planning / first artifact; quantum state teleportation resource only")
+    print("POISSON/CHSH TELEPORTATION RESOURCE SUPPORT")
+    print("Status: bounded offline retained-axis resource support; quantum state teleportation resource only")
     print("Extraction: trace cells/spectator tastes, keep the last KS taste bit per species")
     helper = helper_source_certificate()
     helper_path = Path(helper["path"])
@@ -699,7 +705,7 @@ def main() -> int:
     print(
         "Source firewall: "
         f"{Path(firewall['path']).relative_to(ROOT)} "
-        f"prep/readout hard residual + native apparatus bridge candidates PASS "
+        f"bounded offline scope + downstream apparatus bridge split PASS "
         f"required_snippets={firewall['snippet_count']}"
     )
     print("Last-taste carrier checks:")
@@ -746,19 +752,20 @@ def main() -> int:
     print("Conclusion:")
     if moved:
         print(
-            "  A traced deterministic high-fidelity Bell resource was found on at least "
-            "one Poisson case. This would need independent hardening before promotion."
+            "  A bounded traced high-fidelity Bell resource was found on at least "
+            "one Poisson case under the retained-axis logical reduction."
         )
     else:
         print(
-            "  Limitation remains open: the audited Poisson/CHSH ground states do not yet "
-            "provide a deterministic high-fidelity encoded Bell pair."
+            "  No selected Poisson case in this run provided a deterministic traced "
+            "high-fidelity encoded Bell pair."
         )
     print(
         "  CHSH violation in the full C^N x C^N state is not by itself a teleportation "
         "resource derivation."
     )
     print("  Postselected branches, when present, are diagnostics only in this artifact.")
+    print("  Physical deterministic apparatus/preparation remains a downstream bridge, not this row's claim.")
     return 0
 
 

@@ -1,0 +1,21 @@
+goal: plaquette-beta6-wilson-normalization-edge
+date: 2026-06-17
+branch: codex/plaquette-beta6-wilson-normalization-edge-20260617
+status: ready_for_reviewer
+audit_loop_run: false
+review_loop_run: false
+review_disposition: reviewer_owned_not_run
+main_landing: false
+audit_files_modified: false
+publication_status_files_modified: false
+front_door_modified: false
+claim_surface: runner-local-diagnostic
+direct_repair:
+  target: beta6_wilson_normalization_subwall
+  source_authority: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md
+remaining_walls:
+  - NSPT coefficient packet w_1..w_16
+  - MC comparator <P>_MC = 0.5934
+  - F2 scale comparator 0.0833 percent
+  - Wilson action-surface selection
+  - physical beta=6 / g_bare=1 selection

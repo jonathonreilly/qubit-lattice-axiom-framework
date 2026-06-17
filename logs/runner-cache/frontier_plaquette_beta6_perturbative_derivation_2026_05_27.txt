@@ -1,28 +1,22 @@
-===== runner cache v1 =====
-runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: e1c48d3511bc2dac59d649382997a5133065f357121b78e0c63d7f3d79829451
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.46
-status: ok
------ stdout -----
-Plaquette beta=6 perturbative-derivation admitted-input diagnostic runner
+Plaquette beta=6 perturbative-derivation repaired diagnostic runner
 (Pattern A; companion-note paired)
 
 
 ==============================================================================
-T0: admitted-input runner-local diagnostic license
+T0: repaired runner-local diagnostic license
 ==============================================================================
-PASS: note records 2026-06-12 audit-named demotion
-      demotion and admitted-input sections present
-PASS: note records admitted finite packet I_PT
-      packet names beta, coefficient list, MC comparator, and F2 comparator
-PASS: note licenses NSPT/beta/MC/F2 for this diagnostic only
-      all four admitted inputs carry the no-derivation/no-reuse license
+PASS: note records demotion plus 2026-06-17 Wilson edge repair
+      demotion section present
+PASS: note records Wilson small-a matching as an explicit dependency
+      Wilson coefficient relation is dependency-wired, not re-admitted
+PASS: note records repaired finite packet I_PT
+      packet names source-wired Wilson relation, beta specialization, coefficient list, MC comparator, and F2 comparator
+PASS: note licenses unresolved NSPT/MC/F2 inputs for this diagnostic only
+      remaining admitted inputs and alpha/beta boundaries carry no downstream license
 PASS: note excludes actual beta=6 surface and non-perturbative route claims
       diagnostic remains conditional and finite-route only
 PASS: note firewalls retained beta=6 surface claim after demotion
-      source repair remains demotion-only
+      source repair remains diagnostic-only after the Wilson edge is wired
 PASS: note explicitly elects admitted-input diagnostic option
       auditor's second repair option is source-locked
 PASS: note blocks downstream reuse of admitted beta=6 inputs
@@ -31,8 +25,14 @@ PASS: note keeps non-perturbative routes open
       finite perturbative route only
 
 ==============================================================================
-C1: admitted beta=6 Wilson-gauge constants
+C1: source-wired Wilson-normalization edge
 ==============================================================================
+PASS: Wilson theorem supplies beta = 2 N_c / g_bare^2
+      coefficient-matching identity is present in the retained-bounded source note
+PASS: Wilson theorem includes the beta=6 specialization only with supplied g_bare^2=1
+      specialization remains conditional on N_c=3 and g_bare^2=1
+PASS: Wilson theorem keeps action-surface and g_bare boundaries explicit
+      the dependency supplies coefficient matching, not physical surface selection
 PASS: supplied beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1
       beta = 6.0
 PASS: g_bare^2 = 2 N_c / beta = 1 at beta=6
@@ -272,7 +272,7 @@ PASS: admitted MC comparator 0.5934 enters only as comparator (not derivation in
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
 PASS: note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-      length = 17921 chars
+      length = 21065 chars
 PASS: note declares Status authority: independent audit lane only
       audit-lane authority pattern present
 PASS: note declares no new axioms / no new primitives
@@ -280,7 +280,4 @@ PASS: note declares no new axioms / no new primitives
 PASS: note declares admitted MC comparator 0.5934 as comparator only
       admitted comparator pattern present
 
-TOTAL: PASS=32, FAIL=0
-
------ stderr -----
-
+TOTAL: PASS=36, FAIL=0

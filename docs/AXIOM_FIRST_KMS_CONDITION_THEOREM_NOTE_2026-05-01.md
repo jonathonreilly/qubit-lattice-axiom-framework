@@ -9,6 +9,10 @@
 **Branch:** `physics-loop/24h-axiom-first-block01-kms-20260501`
 **Runner:** `scripts/axiom_first_kms_condition_check.py`
 **Log:** `outputs/axiom_first_kms_condition_check_2026-05-01.txt`
+**Artifact sync:** 2026-06-17 regenerated the referenced output log from
+the current two-step runner so the source packet no longer carries the
+legacy single-step `T^{L_tau}` wording. This does not assert an audit
+verdict or promote the row.
 
 ## Scope
 

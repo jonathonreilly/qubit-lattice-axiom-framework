@@ -1,0 +1,19 @@
+loop_slug: staggered-two-component-self-contained-20260617
+goal: "Repair the audited_conditional staggered two-component exclusion row by removing the unaudited realization-gate source dependency."
+target_status: exact-support
+runtime_mode: goal_continuation
+cycle_count: 1
+active_route: "self-contained D_2c construction and source-edge dependency firewall"
+hard_residual: "The result still consumes the substep-1 single-mode Grassmann surface at its declared bounded/conditional grade and does not derive the full kinetic class."
+files_touched:
+  - docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md
+  - scripts/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.py
+  - logs/runner-cache/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.txt
+open_imports:
+  - "Full kinetic-form derivation among one-mode-compatible candidates remains open."
+  - "Boundary-holonomy convention remains outside this note."
+trace_gate_classification: direct_blocker_closure
+review_findings: "local self-check pass; formal review-loop delegated to reviewer per user instruction"
+pr_status: pending
+next_exact_action: "Run final checks, commit, push, and open a ready source-side PR."
+stop_condition: "PR opened; do not audit, retag, land, or refresh unrelated PRs."

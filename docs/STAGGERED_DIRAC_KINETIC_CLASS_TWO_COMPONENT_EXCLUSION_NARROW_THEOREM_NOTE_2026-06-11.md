@@ -30,9 +30,8 @@ audit pipeline after independent review.
 audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.py`](../scripts/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.py)
-(`TOTAL: PASS=18 FAIL=0`, deterministic, numpy only — matching the
-realization-gate runner's dependency profile — runtime well under one
-minute)
+(`TOTAL: PASS=20 FAIL=0`, deterministic, numpy only, runtime well under
+one minute)
 **Authority role:** narrow theorem formalizing the exclusion route that
 the realization gate note's §5 residual 1 currently states in prose
 ("the exclusion of that alternative currently routes through the
@@ -106,10 +105,11 @@ substep-1's declared surface"?
 > packaging on the same site set escapes either.
 >
 > **(iii) Exclusion.** Therefore, within Quantum + Lattice + the
-> substep-1 single-mode surface, the 2-component naive kinetic
-> alternative of realization-gate check 18 is EXCLUDED: the declared
-> kinetic class's site-local spin-diagonalization premise loses its
-> named rival.
+> substep-1 single-mode surface, the self-contained 2-component naive
+> kinetic alternative `D_2c` is EXCLUDED. Downstream, the declared
+> kinetic class's site-local spin-diagonalization premise loses this
+> named representative rival, but the proof does not import the
+> realization gate as an authority.
 >
 > **(iv) Honest boundary (load-bearing for audit acceptance).** This
 > theorem does NOT close the kinetic-class residual. What remains open
@@ -227,9 +227,10 @@ map is injective, forcing `16 = dim M_4(C) ≤ dim M_2(C) = 4`. Computed:
 `16 > 4`. Contradiction — and the same argument excludes every nonzero
 *-homomorphism, unital or not. ∎ (theorem point (ii), per-site half)
 
-**Step 6 (class A; runner checks 10–13).** The rival is rebuilt exactly
-as gate check 18 builds it: kernel dim 16 by SVD on the periodic 4³
-torus; the kernel factorizes as `16 = 2 × 8` (every spinor-component ⊗
+**Step 6 (class A; runner checks 10–13).** The self-contained rival
+`D_2c = Σ_μ σ_μ ⊗ ∇_μ` is built directly from Pauli matrices and
+periodic shift-difference operators: kernel dim 16 by SVD on the
+periodic 4³ torus; the kernel factorizes as `16 = 2 × 8` (every spinor-component ⊗
 corner-plane-wave is an exact null vector); the commutant of the
 hopping matrices `{σ_μ}` is the scalars, so the spinor index is
 irreducibly 2-dimensional and no site-local basis change splits the
@@ -257,8 +258,8 @@ meanwhile the realized one-component staggered operator — rebuilt from
 the re-extracted Kawamoto-Smit scalarization phases, real antisymmetric,
 kernel dim 8 with spectral gap 1.0 — needs exactly one pair per site
 and survives on the same surface. Hence within Quantum + Lattice + the
-substep-1 single-mode surface, the 2-component naive rival of gate
-check 18 is excluded. ∎ (theorem point (iii))
+substep-1 single-mode surface, the self-contained 2-component naive
+rival `D_2c` is excluded. ∎ (theorem point (iii))
 
 **Step 9 (class A guard; runner check 18).** Non-conflation guard: the
 rival's 16 decomposes as `2 × 2³` (spinor components × `Z^3` corners, a
@@ -305,11 +306,11 @@ residual 1 narrows to exactly:
    are periodic-sector, as in the gate runner).
 
 What is no longer open: *given the substep-1 single-mode surface*, the
-2-component naive rival of check 18. The site-local
-spin-diagonalization premise of the declared kinetic class loses its
-named rival; the kinetic-class premise survives as the (still
-underived) selection of the kinetic form among one-mode-compatible
-candidates.
+self-contained 2-component naive rival `D_2c`. The site-local
+spin-diagonalization premise of the declared kinetic class loses this
+named representative rival; the kinetic-class premise survives as the
+(still underived) selection of the kinetic form among
+one-mode-compatible candidates.
 
 ## 6. What this note does NOT claim
 
@@ -352,9 +353,9 @@ Re-check this note if any of the following changes:
    supplier chain lands or is refuted, the statistics-agnostic
    no-forcing boundary is revised, or the forcing note / narrow
    companion is re-scoped. This note's premise surface moves with it.
-2. The realization gate's check 18 construction changes (a different
-   rival operator or instantiation): the rebuilt-rival consistency leg
-   (runner checks 10–11) is an interface to that exact construction.
+2. A downstream consumer uses a different rival operator or
+   instantiation: this note covers only the self-contained `D_2c`
+   operator defined in §1 and rebuilt by runner checks 10–13.
 3. A new one-mode-per-site-compatible kinetic rival is proposed: this
    note's exclusion does not cover it, and the §5 narrowing statement
    must be re-read against it.
@@ -367,9 +368,8 @@ Re-check this note if any of the following changes:
 
 Primary runner:
 [`scripts/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.py`](../scripts/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.py)
-— deterministic, numpy only (the realization-gate runner's dependency
-profile), no network, no randomness, runtime well under one minute.
-18 checks in four sections:
+— deterministic, numpy only, no network, no randomness, runtime well
+under one minute. 20 checks in five sections:
 
 - **[A] substep-1 single-mode surface (checks 1–4):** Cl(3) Pauli
   relations on the dim-2 module; single-mode CAR(1); CAR(1) generates
@@ -380,8 +380,8 @@ profile), no network, no randomness, runtime well under one minute.
   simplicity finite core (matrix units, 16 two-sided-ideal span checks,
   extraction identity); the no-embedding obstruction certificate
   (`16 > 4`).
-- **[C] the rival rebuilt (checks 10–14):** kernel dim 16 by SVD
-  (gate-check-18 construction reproduced); `16 = 2 × 8` kernel
+- **[C] the rival built directly (checks 10–14):** kernel dim 16 by SVD
+  for the self-contained `D_2c`; `16 = 2 × 8` kernel
   factorization; irreducible spinor index (scalar commutant of
   `{σ_μ}`); two indices per site at all 64 sites (two pairs per site
   required); the `|Λ| = 2` global aggregation leg (CAR(4) span 256 >
@@ -390,6 +390,9 @@ profile), no network, no randomness, runtime well under one minute.
   Kawamoto-Smit scalarization re-extracted at all 192 (site, μ) pairs;
   staggered kernel dim 8 with spectral gap 1.0; the exclusion
   composition certificate; the non-conflation guard.
+- **[E] source-edge firewall (checks 19–20):** the note has no
+  realization-gate markdown/YAML upstream dependency and preserves the
+  gate as downstream context only.
 
 Expected stdout includes the detail lines
 `computed CAR(1) span dim = 4`, `computed CAR(2) span dim = 16`,
@@ -405,8 +408,8 @@ convention); one `SCOPE-BOUNDARY (declared, not claimed): ...` line
 `WARNING (non-conflation, ...)` line; then exactly:
 
 ```text
-TOTAL: PASS=18 FAIL=0
-VERDICT: 2-component naive rival (realization-gate check 18)
+TOTAL: PASS=20 FAIL=0
+VERDICT: self-contained 2-component naive rival D_2c
          EXCLUDED within Quantum + Lattice + the substep-1
          single-mode surface (CAR dimension obstruction,
          computed); the kinetic-class residual NARROWS, it
@@ -423,17 +426,15 @@ Command:
 python3 scripts/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.py
 ```
 
-Baseline cross-check: the realization-gate synthesis runner
-(`python3 scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py`)
-must still report `TOTAL: PASS=31 FAIL=0` undisturbed; this note
-changes no existing file.
+Optional downstream cross-check: the realization-gate synthesis runner
+may still be run by reviewers as consumer context, but this note no
+longer imports that runner or note as a load-bearing dependency.
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "Narrow: on Quantum + Lattice plus the substep-1 single-mode Grassmann clause (consumed at its declared bounded/conditional grade), the 2-component naive-Dirac rival of realization-gate check 18 is excluded: it needs two Grassmann pairs per site (irreducible 2-dim spinor index, computed), two modes per site generate CAR(2) = M_4(C) (JW 4x4, span dim 16, simple), and no unital *-embedding M_4(C) -> M_2(C) exists (16 > 4, simplicity computed); no global JW-string escape (CAR(2N) dim 16^N > 4^N, toy computed). The gate's kinetic-class residual narrows (named rival removed); it does not vanish (non-NN / other one-mode-compatible kinetic forms, substep-1 support tier, boundary holonomy remain open). No hierarchy-exponent content: the rival's 3D kernel-16 and the 4D naive 2^4 = 16 are different surfaces, not bridged."
+claim_scope: "Narrow: on Quantum + Lattice plus the substep-1 single-mode Grassmann clause (consumed at its declared bounded/conditional grade), the self-contained 2-component naive-Dirac rival D_2c = sum_mu sigma_mu tensor nabla_mu on the periodic 4^3 torus is excluded: it needs two Grassmann pairs per site (irreducible 2-dim spinor index, computed), two modes per site generate CAR(2) = M_4(C) (JW 4x4, span dim 16, simple), and no unital *-embedding M_4(C) -> M_2(C) exists (16 > 4, simplicity computed); no global JW-string escape (CAR(2N) dim 16^N > 4^N, toy computed). Downstream, the kinetic-class residual loses this named representative rival; it does not vanish (non-NN / other one-mode-compatible kinetic forms, substep-1 support tier, boundary holonomy remain open). No hierarchy-exponent content: the rival's 3D kernel-16 and the 4D naive 2^4 = 16 are different surfaces, not bridged."
 upstream_dependencies:
   - minimal_axioms_2026-06-05
-  - staggered_dirac_realization_gate_note_2026-05-03
   - staggered_dirac_grassmann_forcing_theorem_note_2026-05-07
   - staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16
 admitted_context_inputs:

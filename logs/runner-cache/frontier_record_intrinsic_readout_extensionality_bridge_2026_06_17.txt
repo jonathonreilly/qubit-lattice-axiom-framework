@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_intrinsic_readout_extensionality_bridge_2026_06_17.py
+runner_sha256: b627348b6aee91016d2ad8360e4eb5e3421075b1335851cc7745768f9933cc69
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Record-intrinsic readout extensionality bridge
+source status: exact-support / narrow bridge; audit lane remains authority
+
+----------------------------------------------------------------------------------------
+A. Current Record axiom boundary
+----------------------------------------------------------------------------------------
+[PASS] Record defines a record as durable realized-outcome registration
+[PASS] Record defines realized outcome as K/CPT orbit in a supplied context
+[PASS] Record supplies finite scalar additivity and I(empty)=0
+[PASS] Record supplies no readout context or decomposition
+[PASS] Record supplies no within-sector data or occupancy rule
+[PASS] Record supplies no probability or measurement/decoherence dynamics
+
+----------------------------------------------------------------------------------------
+B. Extensionality on record objects
+----------------------------------------------------------------------------------------
+[PASS] two concrete presentations can have the same registered atom
+[PASS] record-intrinsic singleton readout is equal on same atom
+[PASS] hidden label probe distinguishes same atom and is not record-intrinsic
+[PASS] hidden sign probe distinguishes same atom and is not record-intrinsic
+[PASS] ambient-parameter probe distinguishes same atom and is not record-intrinsic
+[PASS] construction-seed probe distinguishes same atom and is not record-intrinsic
+[PASS] within-sector probe distinguishes same atom and is not record-intrinsic
+
+----------------------------------------------------------------------------------------
+C. Additivity gives P-dep factorization
+----------------------------------------------------------------------------------------
+[PASS] empty record collection reads zero
+[PASS] finite disjoint union readout splits additively
+[PASS] finite collection readout is the sum of singleton atom contributions
+[PASS] cross term would violate finite additivity
+[PASS] per-record contribution factors through the registered atom table
+[PASS] changing only hidden data leaves record-intrinsic total unchanged
+
+----------------------------------------------------------------------------------------
+D. What the bridge allows and forbids
+----------------------------------------------------------------------------------------
+[PASS] registered monitored values may be read when supplied as atom data
+[PASS] if monitored value is not registered, value-dependence fails extensionality
+[PASS] hidden diagnostics live on augmented objects, not on records
+[PASS] bridge does not derive the supplied readout context
+[PASS] bridge adds no axiom or primitive
+
+----------------------------------------------------------------------------------------
+E. AC_phi_lambda supplied-context interface
+----------------------------------------------------------------------------------------
+[PASS] AC_phi_lambda test matrix is Hermitian
+[PASS] entrywise conjugation flips delta
+[PASS] K/CPT label map is an involution with one fixed singlet
+[PASS] lambda covariance identifies doublet records across +/-delta
+[PASS] registered atoms for k=1 at +delta and k=2 at -delta agree
+[PASS] record-intrinsic contributions agree on that same atom
+[PASS] fixed-label order probe would distinguish the same orbit
+[PASS] total registered atom multiset is invariant under delta flip
+[PASS] sin(3 delta) is not scalar on the K/CPT orbit
+
+----------------------------------------------------------------------------------------
+F. Source-boundary guards
+----------------------------------------------------------------------------------------
+[PASS] note states independent audit authority and no status edit
+[PASS] note classifies hidden-context diagnostics outside record-intrinsic readouts
+[PASS] note links the unordered-mass P-dep interface without deriving physical readout context
+
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

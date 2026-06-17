@@ -5,8 +5,8 @@ Companion runner for
 docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md
 
 Claim boundary: this runner checks the finite algebraic consequences under the
-supplied readout context and the explicit P-dep premise. It does not derive
-P-dep from Record alone and does not edit or predict audit status.
+supplied readout context and the record-intrinsic P-dep bridge. It does not
+derive the physical readout context and does not edit or predict audit status.
 
 Supplied surface (3x3, tiny memory): the Hermitian circulant
 
@@ -45,8 +45,9 @@ Checked legs (each PASS/FAIL):
       lambda_i + lambda_j + lambda_i*lambda_j -- violates additivity
   G6  hostile within-orbit order probe f(k, x) = [k == 1] * x -- violates the
       per-record orbit-constancy identity r_k(delta) = r_{sigma(k)}(-delta)
-  H1  source-scope hygiene: the paired note names P-dep as an explicit
-      conditional premise and does not claim Record derives it
+  H1  source-scope hygiene: the paired note consumes the record-intrinsic
+      extensionality bridge for P-dep, does not add an axiom, and does not
+      derive the physical readout context
 
 Prints one line per check and a final `TOTAL: PASS=N FAIL=0` scorecard.
 No randomness-dependent acceptance: violations must be witnessed for EVERY
@@ -60,8 +61,8 @@ from pathlib import Path
 import numpy as np
 
 print(
-    "Claim boundary: finite algebra under supplied context + explicit P-dep; "
-    "P-dep is not derived from Record alone."
+    "Claim boundary: finite algebra under supplied context + record-intrinsic "
+    "P-dep bridge; physical readout context is still supplied."
 )
 
 TOL = 1e-10
@@ -70,6 +71,9 @@ FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / (
     "UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md"
+)
+PDEP_BRIDGE_NOTE = ROOT / "docs" / (
+    "RECORD_INTRINSIC_READOUT_EXTENSIONALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md"
 )
 
 
@@ -353,22 +357,34 @@ check("D1 boundary points sin(3 delta)=0: cos(3 delta)=+/-1 exactly, "
 
 # ---------------------------------------------------------- source scope ----
 note = NOTE.read_text(encoding="utf-8")
+bridge_note = PDEP_BRIDGE_NOTE.read_text(encoding="utf-8")
+note_flat = " ".join(note.split())
+bridge_flat = " ".join(bridge_note.split())
 required_markers = [
-    "conditional on the supplied P-dep premise",
-    "explicit conditional premise",
-    "does **not** derive P-dep from the Record axiom",
-    "not a new axiom",
-    "not an approved primitive premise",
+    "record-intrinsic P-dep bridge",
+    "RECORD_INTRINSIC_READOUT_EXTENSIONALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md",
+    "hidden-context-dependent diagnostics live on augmented supplied objects",
+    "It still does not derive the physical readout context.",
+    "not record-intrinsic scalar readouts",
+    "No new axiom, primitive, registry edit, or audit-status change",
+]
+bridge_required = [
+    "No new axiom is introduced.",
+    "a scalar that is actually a readout of the Record objects is a function on those registered atoms",
+    "not a record-intrinsic readout",
+    "does not prove that the physical species readout context",
 ]
 forbidden_markers = [
-    "P-dep is a reading of the Record boundary, not an extra import",
-    "grounded in the Record boundary",
+    "conditional on the supplied P-dep premise",
+    "if P-dep is accepted",
+    "does **not** derive P-dep from the Record axiom",
     "P-dep is the only admissible reading of the Record boundary",
     "realist slip",
 ]
-ok = all(marker in note for marker in required_markers)
-ok &= not any(marker in note for marker in forbidden_markers)
-check("H1 source scope: P-dep explicit conditional premise, not Record-derived",
+ok = all(marker in note_flat for marker in required_markers)
+ok &= all(marker in bridge_flat for marker in bridge_required)
+ok &= not any(marker in note_flat for marker in forbidden_markers)
+check("H1 source scope: record-intrinsic P-dep bridge is load-bearing; no axiom/status/readout-context promotion",
       ok)
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

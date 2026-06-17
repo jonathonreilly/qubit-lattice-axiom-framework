@@ -1,0 +1,23 @@
+loop: record-extensional-pdep-bridge
+branch: physics-loop/record-extensional-pdep-bridge-20260617
+target_status: exact-support
+current_status: ready_for_review_pr
+cycle_count: 1
+active_route: record-intrinsic extensionality bridge for P-dep
+target_claim_id: unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11
+files_touched:
+  - docs/RECORD_INTRINSIC_READOUT_EXTENSIONALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md
+  - scripts/frontier_record_intrinsic_readout_extensionality_bridge_2026_06_17.py
+  - logs/runner-cache/frontier_record_intrinsic_readout_extensionality_bridge_2026_06_17.txt
+  - docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py
+  - logs/runner-cache/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.txt
+open_imports:
+  - supplied finite AC_phi_lambda readout context
+  - physical species readout identification
+  - R-eta magnitude/value chain
+  - registry/audit-lane reduction decision
+trace_gate: direct_blocker_closure
+review_disposition: local_checks_passed_external_reviewer_owns_science_extraction
+next_exact_action: open ready PR for reviewer/auditor re-audit
+stop_condition: PR opened and effectiveness review reported to user

@@ -1,0 +1,24 @@
+loop_slug: su3-beta6-gap-packet-verifier-20260617
+goal: "Unlock the audited conditional SU3 beta=6 gap row with source-side bounded-support packaging, without auditing or retagging."
+target_status: bounded-support
+cycle_count: 1
+active_route: restricted_packet_verifier
+hard_residual: "Prove no second-order bulk critical point on the 4D SU(3) fundamental-Wilson axis on the remaining (beta_0, 6] window, or an equivalent gap bridge."
+files_touched:
+  - docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md
+  - scripts/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.py
+  - logs/runner-cache/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.txt
+  - .claude/science/physics-loops/su3-beta6-gap-packet-verifier-20260617/*
+open_imports:
+  - "No-second-order-bulk-criticality theorem on (beta_0, 6]."
+  - "Unconditional fixed-lattice beta=6 gap bridge with the same Wilson-axis scope."
+no_go_routes:
+  - "Do not claim the lower-edge analyticity floor proves beta=6."
+  - "Do not treat Monte Carlo crossover comparators as derivation inputs."
+  - "Do not treat gauge-kernel positivity alone as full interacting RP."
+trace_gate_classification: direct_blocker_closure
+trace_reachability: partially_closes
+review_disposition: reviewer_owned
+pr_status: ready_for_reviewer_pr
+next_exact_action: "Reviewer should run review-loop on the PR, then decide whether this source-side packet is enough to re-open the row for independent audit."
+stop_condition: "Current block complete when verifier/cache, loop pack, commit, push, and PR exist."

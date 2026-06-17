@@ -1,16 +1,64 @@
 # Axiom-First KMS Condition for the Reconstructed Gibbs State
 
-**Date:** 2026-05-01
-**Type:** positive_theorem
-**Claim scope:** the finite-temperature Gibbs state on the RP-reconstructed two-step transfer-matrix Hilbert space H_phys satisfies the KMS condition (K1)-(K4) at inverse temperature β_th = L_τ·a_τ for even raw Euclidean time length L_τ; equivalently, with N_τ := L_τ/2 blocked time steps and T := T_hat^2, the periodic-Euclidean path integral on (Z/L_τ Z) × Z^3 equals the trace of T^{N_τ} and the strip identity F(t + iβ_th) = G(t) holds for all bounded operators.
-**Status:** awaiting independent audit. Under the scope-aware classification framework (audit-lane proposal #291), `effective_status` is computed by the audit pipeline.
+**Date:** 2026-05-01; audit-boundary repair 2026-06-17
+**Type:** bounded_theorem / finite two-step transfer support
+**Claim scope:** the finite-temperature Gibbs state on the
+RP-reconstructed **two-step** transfer-matrix Hilbert space `H_phys`
+satisfies the finite-dimensional KMS condition (K1)-(K4) at inverse
+temperature `β_th = L_τ · a_τ` for even raw Euclidean time length `L_τ`.
+The transfer object is `T := T_hat^2`, one blocked step is
+`a_blk := 2 a_τ`, and `N_τ := L_τ / 2`. The periodic-Euclidean
+path-integral correspondence is claimed only for RP-reconstructed
+blocked-slice insertions whose transfer bookkeeping has the finite form
+`tr(T^{N_τ-k} O T^k)`. The KMS strip identity
+`F(t + i β_th) = G(t)` is then a finite matrix theorem for all bounded
+operators on the reconstructed `H_phys`; it is not a theorem about
+arbitrary raw-time path-integral insertions or continuum modular
+automorphisms.
+**Status authority:** independent audit lane only. This source note does
+not set, predict, promote, or demote any audit outcome; the
+`bounded_theorem` label is a source-side claim-boundary declaration, not
+an audit verdict.
 **Loop:** `24h-axiom-first-derivations-20260501`
 **Cycle:** 1 (Block 1)
 **Branch:** `physics-loop/24h-axiom-first-block01-kms-20260501`
 **Runner:** `scripts/axiom_first_kms_condition_check.py`
+**Runner cache:** `logs/runner-cache/axiom_first_kms_condition_check.txt`
 **Log:** `outputs/axiom_first_kms_condition_check_2026-05-01.txt`
 
 ## Scope
+
+## 2026-06-17 Audit-Boundary Repair
+
+The current audit blocker for this row asks for two source-side repairs:
+
+```text
+Re-audit after the source is rebased onto the current two-step
+RP/spectrum normalization and the path-integral insertion bookkeeping is
+proved or scoped to blocked observables.
+```
+
+This revision takes that repair path without changing audit data:
+
+1. **Two-step RP/spectrum normalization.** All transfer, Hamiltonian,
+   inverse-temperature, and gap language is tied to the blocked object
+   `T := T_hat^2`, the blocked interval `a_blk := 2 a_τ`, and
+   `β_th = N_τ a_blk = L_τ a_τ`. The source no longer reads as a
+   one-step transfer theorem.
+2. **Path-integral insertion scope.** The path-integral side is only the
+   finite blocked-slice insertion identity
+   `tr(T^{N_τ-k} O T^k) = tr(T^{N_τ} O)` for an operator `O` already
+   reconstructed on the two-step physical Hilbert space. Raw-time,
+   unblocked, nonlocal, continuum, or arbitrary composite path-integral
+   insertions are outside this theorem.
+3. **KMS algebra boundary.** After the blocked transfer trace is in hand,
+   (K2)-(K4) are finite-dimensional Gibbs/KMS matrix algebra for bounded
+   operators on `H_phys`. They do not depend on additional path-integral
+   insertion claims.
+4. **Downstream boundary.** Hawking/Unruh/Stefan-Boltzmann uses are context
+   and candidate consumers only. This row does not supply horizon
+   regularity, Rindler/Bisognano-Wichmann data, photon spectra, or
+   oscillator occupation derivations.
 
 This note records, on the current framework baseline
 ([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md))
@@ -28,14 +76,11 @@ RP support note
 and the spectrum-condition support note
 ([`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)).
 
-After independent audit, the package's thermal-state language can quote a
-source KMS theorem on the framework baseline plus RP/spectrum support
-instead of treating the
-periodic-Euclidean ↔ thermal-state correspondence as a background
-convention. The result also opens the bridge to Hawking
-temperature, Unruh temperature, Stefan-Boltzmann, and the Generalized
-Second Law (each of which uses KMS at a different framework horizon
-or vacuum state).
+After independent audit, package thermal-state language may quote this
+source only for the finite blocked-transfer KMS algebra and the
+blocked-slice trace identity above. Broader thermal applications still need
+their own horizon, wedge, oscillator, photon-spectrum, or continuum-limit
+bridges.
 
 To avoid notational collision with the gauge-coupling convention
 `β = 2 N_c / g_bare²`, we use `β_th` throughout for the thermal inverse
@@ -116,13 +161,14 @@ for any `A` on `H_phys` and any `t ∈ R`.
 
 Then on the framework baseline plus the RP + spectrum-condition surface:
 
-**(K1) Path-integral ↔ Gibbs-state correspondence.** The Euclidean
-path-integral on `Λ` with periodic-boundary fields and APBC fermions
-equals the trace `Z = tr_{H_phys}(T^{N_τ})`, hence the path-integral
-expectation `<O>_{path}` of any operator `O` localized in a blocked
-Euclidean time slice equals the Gibbs expectation `<O>_{β_th}` of the
-corresponding `H_phys`-operator at inverse temperature
-`β_th = L_τ · a_τ`.
+**(K1) Blocked path-integral ↔ Gibbs-state correspondence.** The
+two-step transfer packet on `Λ` with periodic-boundary fields and APBC
+fermions gives the trace `Z = tr_{H_phys}(T^{N_τ})`. For an observable
+already reconstructed as a bounded `H_phys`-operator `O` on a blocked
+Euclidean time slice, with insertion bookkeeping
+`tr(T^{N_τ-k} O T^k)`, cyclicity gives the Gibbs expectation
+`<O>_{β_th}` at inverse temperature `β_th = L_τ · a_τ`. This is not a
+claim about arbitrary raw-time or continuum path-integral insertions.
 
 **(K2) KMS condition.** For any two bounded operators `A, B` on
 `H_phys` and any real `t ∈ R`, the Gibbs expectation values
@@ -208,8 +254,10 @@ boundary) one would get a state-vector overlap rather than a trace.
 
 For an operator `O_k` localized on a blocked Euclidean time slice `k`,
 let `Ô` be the corresponding reference-block operator on `H_phys` after
-the RP reconstruction. The blocked transfer-matrix insertion has the
-finite form
+the RP reconstruction. This is the scoped insertion surface of this
+theorem: the observable must already be an RP-reconstructed bounded
+operator on the two-step Hilbert space. The blocked transfer-matrix
+insertion has the finite form
 
 ```text
     Num_k(O)  =  tr_{H_phys}( T^{N_τ-k} · Ô · T^k )                         (9)
@@ -236,11 +284,13 @@ is exactly
 
 because `T = e^{-2 a_τ H}` and `β_th = N_τ (2 a_τ) = L_τ a_τ`. No
 inverse transfer matrix, external KMS lemma, or continuum bookkeeping
-is used in this step. This proves (K1) for the finite-block blocked-slice observables
-needed by the downstream thermal-state rows. Multi-time ordered
-correlators keep their ordered product of transported insertions; the
-KMS strip identity for arbitrary bounded `A,B` is proved directly in
-Step 3.
+is used in this step. This proves (K1) only for finite-block
+blocked-slice observables whose RP insertion map has been supplied.
+Multi-time ordered correlators keep their ordered product of transported
+insertions and are not collapsed to a single local insertion by this row.
+The KMS strip identity for arbitrary bounded `A,B` on `H_phys` is proved
+directly in Step 3 and does not require a broader path-integral insertion
+claim.
 
 ### Step 2 — Setup of KMS strip
 
@@ -416,35 +466,26 @@ imports beyond the explicit Wick-rotation convention already used by
 the RP reconstruction. External KMS theorems are citations, not proof
 inputs for this finite-block result.
 
-## Corollaries (downstream tools)
+## Candidate Downstream Consumers
 
-C1. **Periodic-Euclidean ↔ thermal correspondence is a theorem on the
-framework baseline plus RP/spectrum support.** Any package note that quotes "the path integral with
-period `L_τ` in Euclidean time describes a thermal state at
-temperature `T = 1/(L_τ a_τ)`" can cite this note instead of
-treating it as a convention.
+C1. **Periodic-Euclidean ↔ blocked thermal correspondence.** A package note
+that has already supplied an RP-reconstructed two-step transfer packet and
+blocked observable insertion map may cite this note for the finite
+identity `Z = tr(T^{N_τ})`, the blocked-slice cyclicity identity, and the
+finite Gibbs/KMS algebra at `T_th = 1/(L_τ a_τ)`.
 
-C2. **Hawking temperature bridge.** The framework's discrete GR
-action on `S^3 × R` (UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE) plus
-a Killing horizon admits a Wick-rotated regular Euclidean section
-with period `2π/κ` (the standard Hawking-Gibbons argument). Combining
-that period with (K1)–(K2) yields `T_H = κ/(2π)` as a corollary on
-the framework GR action surface. This is the load-bearing input for
-the Hawking temperature block (Block 2 of this campaign).
+C2. **Hawking temperature candidate consumer.** A Hawking-temperature row
+would still need to derive or explicitly supply the regular Euclidean
+horizon period and the relevant framework GR action surface. This KMS row
+does not supply that horizon bridge.
 
-C3. **Unruh temperature bridge.** The framework's Lorentz kernel
-(LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE) admits Rindler wedge boost
-generators. The Bisognano-Wichmann-style argument gives a periodic
-Rindler-time identification, and (K1)–(K2) yields `T_U = a/(2π)`.
-This is the load-bearing input for the Unruh temperature block.
+C3. **Unruh temperature candidate consumer.** A Unruh-temperature row would
+still need its own Rindler wedge/boost or Bisognano-Wichmann-style bridge.
+This KMS row supplies no such wedge theorem.
 
-C4. **Stefan-Boltzmann bridge.** The Gibbs photon partition function
-on framework photon spectrum (gauge-field KK tower from
-VECTOR_GAUGE_FIELD_KK_TOWER_THEOREM_NOTE) plus the KMS-derived
-thermal occupation `n(E) = 1/(e^{β_th E} - 1)` (Planck distribution
-follows from KMS for harmonic oscillators) gives the
-Stefan-Boltzmann law. This is the load-bearing input for the
-Stefan-Boltzmann block.
+C4. **Stefan-Boltzmann candidate consumer.** A Stefan-Boltzmann row would
+still need its own oscillator/photon-spectrum and occupation-number
+bridge. This KMS row does not derive Planck occupation factors.
 
 ## Honest status
 
@@ -471,8 +512,8 @@ equality of `F_{A,B}(t + i β_th)` and `G_{A,B}(t)` on a small grid.
 **Honest claim-status fields:**
 
 ```yaml
-actual_current_surface_status: conditional-support
-conditional_surface_status: derived support theorem on the framework baseline + RP + spectrum condition
+actual_current_surface_status: bounded-support
+conditional_surface_status: finite KMS theorem on supplied two-step RP transfer + spectrum-condition surface; path-integral insertion correspondence scoped to RP-reconstructed blocked observables
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false

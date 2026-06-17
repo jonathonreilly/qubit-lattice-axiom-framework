@@ -30,7 +30,13 @@ These are all the structural content of the theorem note.
 """
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md"
 
 
 def hermitian_psd(seed: int, dim: int) -> np.ndarray:
@@ -142,6 +148,54 @@ def kms_matrix_unit_ratio_residual(eigvals: np.ndarray, probs: np.ndarray, beta_
     return float(max_resid)
 
 
+def source_firewall_checks() -> bool:
+    """Verify the source note exposes the audited two-step/blocked boundary."""
+
+    print("-" * 72)
+    print("TEST 0: source boundary firewall")
+    print("-" * 72)
+
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    flat = " ".join(note.split())
+    required = [
+        "**Type:** bounded_theorem / finite two-step transfer support",
+        "**Status authority:** independent audit lane only",
+        "2026-06-17 Audit-Boundary Repair",
+        "T := T_hat^2",
+        "a_blk := 2 a_τ",
+        "N_τ := L_τ / 2",
+        "path-integral correspondence is claimed only for RP-reconstructed blocked-slice insertions",
+        "tr(T^{N_τ-k} O T^k)",
+        "not a theorem about arbitrary raw-time path-integral insertions",
+        "This is not a claim about arbitrary raw-time or continuum path-integral insertions",
+        "bounded operators on the reconstructed `H_phys`",
+        "Hawking/Unruh/Stefan-Boltzmann uses are context and candidate consumers only",
+        "does not set, predict, promote, or demote any audit outcome",
+        "actual_current_surface_status: bounded-support",
+    ]
+    forbidden = [
+        "**Type:** positive_theorem",
+        "Any package note that quotes",
+        "This is the load-bearing input for the Hawking temperature block",
+        "This is the load-bearing input for the Unruh temperature block",
+        "This is the load-bearing input for the Stefan-Boltzmann block",
+    ]
+
+    ok = True
+    for phrase in required:
+        present = phrase in flat
+        ok = ok and present
+        print(f"  {'PASS' if present else 'FAIL'} required phrase: {phrase}")
+    for phrase in forbidden:
+        absent = phrase not in flat
+        ok = ok and absent
+        print(f"  {'PASS' if absent else 'FAIL'} forbidden phrase absent: {phrase}")
+
+    print(f"  STATUS: {'PASS' if ok else 'FAIL'}")
+    print()
+    return ok
+
+
 def main() -> None:
     print("=" * 72)
     print("AXIOM-FIRST KMS CONDITION CHECK")
@@ -178,6 +232,8 @@ def main() -> None:
     print(f"  spec(H)     = {eigvals.round(6)}")
     print(f"  Z(beta_th)  = {Z:.6f}")
     print()
+
+    boundary_ok = source_firewall_checks()
 
     # ----- Test 1: KMS identity F(t + i beta_th) = G(t) -----
     print("-" * 72)
@@ -326,13 +382,14 @@ def main() -> None:
     print("=" * 72)
     print("SUMMARY")
     print("=" * 72)
+    print(f"  Test 0 (source boundary firewall):       {'PASS' if boundary_ok else 'FAIL'}")
     print(f"  Test 1 (KMS identity strip endpoint):    {'PASS' if kms_ok else 'FAIL'}")
     print(f"  Test 2 (strip continuity / bound):       {'PASS' if bound_ok else 'FAIL'}")
     print(f"  Test 3 (equilibrium uniqueness):         {'PASS' if uniqueness_ok else 'FAIL'}")
     print(f"  Test 4 (path-integral correspondence):   {'PASS' if pi_ok else 'FAIL'}")
     print(f"  Test 5 (detailed-balance at i beta_th):  {'PASS' if db_ok else 'FAIL'}")
     print()
-    all_ok = kms_ok and bound_ok and uniqueness_ok and pi_ok and db_ok
+    all_ok = boundary_ok and kms_ok and bound_ok and uniqueness_ok and pi_ok and db_ok
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
     print("Note: this runner verifies the KMS theorem at the structural")

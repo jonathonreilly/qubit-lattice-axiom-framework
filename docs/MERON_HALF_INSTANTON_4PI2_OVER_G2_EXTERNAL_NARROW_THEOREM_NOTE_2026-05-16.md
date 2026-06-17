@@ -138,6 +138,23 @@ substrate with the 4D SU(2) gauge background, identify a framework
 observable with the meron sector, and verify the substrate-specific
 bridge.
 
+## Downstream Source-Boundary Firewall
+
+This packet may be cited only for the external half-action algebra and
+for the explicit boundary that the regulator/twist/patching
+construction is load-bearing. Later framework use must separately
+prove the regulator/twist/patching sector and the substrate/observable
+bridge before importing the `4 pi^2 / g^2` scale into a framework
+claim.
+
+Do not cite this packet as a framework substrate theorem, a finite-action
+singular meron theorem, a positive hierarchy bridge, closure of
+`alpha_LM^16`, closure of `v/M_Pl`, or closure of any framework
+observable. Those would require a separate framework-native note and
+runner that derive the regulator/twist/patching sector, identify the
+framework substrate and observable, and prove the relevant bridge
+without using this external packet as a hidden premise.
+
 ## External References
 
 - V. de Alfaro, S. Fubini, G. Furlan,
@@ -193,6 +210,12 @@ symbolic and numerical surrogates where needed):
 10. **T10**: boundary disclaimer — note does **not** claim
     `α_LM^16` closure or any hierarchy substitution (and does not
     claim `v/M_Pl = exp(-4π²/g²)`).
+11. **T11**: downstream source-boundary firewall — runner checks that
+    later framework use must separately prove the regulator/twist/patching
+    sector and the substrate/observable bridge, and that the packet is
+    not a framework substrate theorem, finite-action singular meron
+    theorem, positive hierarchy bridge, `alpha_LM^16` closure, or
+    `v/M_Pl` closure.
 
 Expected runner result: `PASS=N`, `FAIL=0`.
 

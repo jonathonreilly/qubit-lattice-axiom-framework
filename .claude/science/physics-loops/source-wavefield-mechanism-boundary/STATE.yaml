@@ -1,0 +1,29 @@
+loop_slug: source-wavefield-mechanism-boundary
+branch: codex/source-wavefield-mechanism-boundary-20260617
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle: 1
+active_route: import_retirement_by_boundary_demotion
+hard_residual: >
+  The mechanism note presented the source-depth phase-ramp scan as a
+  closure-language exact-family result even though its finite-speed update
+  rule and parameter envelope are runner-selected from the parent escalation
+  and are not derived from A_min.
+files_touched:
+  - docs/SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md
+  - scripts/source_resolved_wavefield_mechanism.py
+  - logs/runner-cache/source_resolved_wavefield_mechanism.txt
+open_imports:
+  - finite-speed wavefield update rule
+  - runner-selected wavefield parameter envelope
+  - continuum and experimental transfer interpretation
+trace_gate_classification: upstream_support
+reachability_to_target: supports
+review_loop_disposition: reviewer_owned_not_run
+proposal_allowed: false
+bare_retained_allowed: false
+independent_audit_required_before_status_change: true
+pr_status: pending
+next_exact_action: refresh runner cache, run checks, commit, push, open PR
+stop_condition: PR opened for reviewer extraction

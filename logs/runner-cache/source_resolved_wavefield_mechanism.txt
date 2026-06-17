@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/source_resolved_wavefield_mechanism.py
-runner_sha256: 5c2bcfc41b3c8d7992dc246e1420b24322694aaf8d31ab3a0445105f8d42e6dc
+runner_sha256: f0b7246144b10a3977f4db45acf318b02718df97c57340b38319acd521e02344
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 543.82
+elapsed_sec: 237.31
 status: ok
 ----- stdout -----
 ============================================================================================================
 SOURCE-RESOLVED WAVEFIELD MECHANISM
-  exact-lattice phase-ramp law as a source-depth mechanism
+  bounded exact-lattice phase-ramp probe as a source-depth mechanism
   comparison: instantaneous 1/r vs same-site vs finite-speed wavefield
 ============================================================================================================
 h=0.25, W=4, L=8, source_cluster=5 nodes
@@ -34,7 +34,7 @@ MECHANISM READ
   source-depth scaling of ramp slope: -2.77
   source-depth scaling of ramp span: -2.65
   the phase-ramp observable stays coherent while the source layer moves
-  this is a depth-mechanism probe, not a continuum theorem
+  this is a bounded depth-mechanism probe, not a continuum theorem or derived wavefield rule
 
 ----- stderr -----
 

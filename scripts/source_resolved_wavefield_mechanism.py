@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Wavefield mechanism probe on the retained larger exact family.
+"""Wavefield mechanism probe on the declared larger exact-lattice family.
 
 This probe keeps the exact-lattice wavefield lane but asks a more
 mechanistic question than the phase-ramp law alone:
@@ -10,7 +10,7 @@ mechanistic question than the phase-ramp law alone:
 
 The goal is not another law fit for its own sake.  The goal is to separate a
 true propagating-field mechanism from a mere source-strength rescaling by
-scanning the source layer while keeping the same retained exact family.
+scanning the source layer while keeping the same declared exact family.
 """
 
 from __future__ import annotations
@@ -157,7 +157,7 @@ def main() -> None:
 
     print("=" * 108)
     print("SOURCE-RESOLVED WAVEFIELD MECHANISM")
-    print("  exact-lattice phase-ramp law as a source-depth mechanism")
+    print("  bounded exact-lattice phase-ramp probe as a source-depth mechanism")
     print("  comparison: instantaneous 1/r vs same-site vs finite-speed wavefield")
     print("=" * 108)
     print(f"h={H}, W={PW}, L={NL_PHYS}, source_cluster={len(SOURCE_CLUSTER)} nodes")
@@ -291,7 +291,7 @@ def main() -> None:
     else:
         print("  source-depth scaling of ramp span: n/a")
     print("  the phase-ramp observable stays coherent while the source layer moves")
-    print("  this is a depth-mechanism probe, not a continuum theorem")
+    print("  this is a bounded depth-mechanism probe, not a continuum theorem or derived wavefield rule")
 
 
 if __name__ == "__main__":

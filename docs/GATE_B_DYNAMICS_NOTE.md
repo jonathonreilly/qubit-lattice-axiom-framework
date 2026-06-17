@@ -24,6 +24,15 @@ propagation/readout semantics, or `GB-S3` generated-connectivity rule from
 retained framework primitives. This split adds no new axiom, Tier-A admission,
 or audit-status change.
 
+## 2026-06-17 Gate-B context independence no-go
+
+[`GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md`](GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md)
+proves that the remaining supplied packet pieces are not hidden content of the
+current Lattice + Quantum + Record axiom surface. Two completions can share the
+same fixed `Z^3` nearest-neighbor lattice while assigning different Gate-B
+scalar normalizations/regulators, different propagation/readout windows, and
+different generated-connectivity rules. This does not refute the finite Gate B numerics; it says the current axioms cannot derive `GB-S1b`, `GB-S2`, or `GB-S3`. The row therefore stays an open-gate bounded generated-geometry source index until a separate local-growth/dynamics/readout theorem lands. This no-go adds no axiom, Tier-A admission, Gate B closure, or audit-status change.
+
 ## 2026-06-12 audit firewall: source index, not dynamics closure
 
 The audited missing bridges remain `GB-S1b`, `GB-S2`, and `GB-S3`: the Gate B

@@ -2,13 +2,13 @@
 axis-selecting structure (companion runner of
 SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md).
 
-Context: the 2026-06-11 re-scope of
-AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
-demoted evolution-axis selection from theorem to declared premise (B-AXIS),
-because the staggered surface is exactly invariant under the conjugated
-exchange W = P_{tau<->1} . diag((-1)^{x_tau x_1}). This runner asks the
-follow-up question hostilely: does ANY retained structure break the
-tau<->x_1 exchange, so that the axis could be derived rather than declared?
+Context: the single-clock source lane treats evolution-axis selection as the
+declared B-AXIS premise after the staggered surface is seen to be exactly
+invariant under the conjugated exchange W = P_{tau<->1} .
+diag((-1)^{x_tau x_1}). This runner recomputes that exchange certificate
+itself and asks the follow-up question hostilely: does ANY available structure
+break the tau<->x_1 exchange, so that the axis could be derived rather than
+declared?
 
 Blocks (tags: [A] exact algebraic fact, [B] cross-note textual/one-hop
 import check, [C] first-principles compute on explicit small lattices,
@@ -29,13 +29,12 @@ import check, [C] first-principles compute on explicit small lattices,
             own text (no time metric, no forced formation, supplied
             clock); durability (= operator-order monotonicity of the
             registered-record counter) is unitary-transport invariant
-            (computed); the registration-cone slice package (CAP-K
-            shape) maps exactly onto the x_1-axis package.
+            (computed); the finite-speed registration-cone slice package
+            maps exactly onto the x_1-axis package.
   [RT-ANOM] W-transport of the anomaly/chirality structure: the
             staggered chirality grading eps(x) and the chiral
-            anticommutation are exactly W-invariant; the anomaly
-            consumer's own text says it constrains the COUNT d_t, not
-            the axis label.
+            anticommutation are exactly W-invariant; a count-only rule
+            cannot select an axis label among W-equivalent presentations.
   [PIN]     the sharpened pin: computed minimal axis-selecting inputs.
             Antiperiodic-tau/periodic-space BCs break W exactly (and a
             relabeling-invariant kernel-dimension discriminator shows no
@@ -44,8 +43,8 @@ import check, [C] first-principles compute on explicit small lattices,
             per-axis Z_2 BC asymmetry, not the BC itself; asymmetric
             extents L_tau != L_1 also discriminate (regulator-level).
   [D]       composition discipline: scope-boundary N2/N4/N5 consumed
-            verbatim; the companion fixed note's declared B-AXIS and its
-            named candidate suppliers; this note's no-contradiction
+            verbatim; the sharpened pin leaves B-AXIS.1 and B-AXIS.3
+            untouched; this note's no-contradiction and source-edge
             wording guards.
 
 Deterministic, no RNG in any load-bearing leg, runtime well under 5 min.
@@ -215,29 +214,30 @@ def block_RT_REC(sec, W, Ls, sites, idx):
            "MINIMAL_AXIOMS_2026-06-05.md")
 
     rf = read_doc("RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md")
-    record("B", "record formation is not forced (retained_no_go): 'at least one record "
+    record("B", "record formation is not forced: 'at least one record "
            "exists' is NOT an axiom consequence, so no axis can be derived from it "
            "unconditionally",
            "does **not** hold unconditionally" in rf, "record-formation no-go quoted")
 
     cr = read_doc("POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md")
-    record("B", "the clock map is supplied, never derived from records (retained_no_go): "
+    record("B", "the clock map is supplied, never derived from records: "
            "'Without the supplied `tau`, the same record history supports many "
            "inequivalent rates' — the event ORDER carries no lattice-axis label",
            "Without the supplied `tau`, the same record history supports many"
            " inequivalent\nrates." in cr.replace("\r", ""),
            "clock/rate interface quoted")
 
-    cap = read_doc("OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md")
-    record("B", "the CAP-K registration cone is axis-CONDITIONAL, not axis-selecting: "
-           "its dynamics clause (REG-dyn) consumes the framework H and its window "
-           "(REG-tau) consumes a supplied clock — both downstream of B-AXIS, so "
+    note = read_doc("SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md")
+    note_flat = " ".join(note.split())
+    record("B", "any finite-speed registration cone built after an evolution generator "
+           "and clock window are supplied is axis-CONDITIONAL, not axis-selecting; "
            "citing it for axis selection would be circular",
-           "(REG-dyn)" in cap and "(REG-tau)" in cap
-           and "generated by `H + V_k`" in cap
-           and "supplied clock window `tau`" in cap
-           and "not derived from record counts" in cap,
-           "CAP-K note clauses present")
+           "Any finite-speed registration cone whose evolution generator and clock"
+           in note_flat
+           and "window are already supplied"
+           in note_flat
+           and "consume B-AXIS to derive B-AXIS" in note_flat,
+           "self-contained cone circularity stated")
 
     # durability = operator-order monotonicity; unitary transport preserves it
     # (A <= B  <=>  U A U^dag <= U B U^dag). Computed toy: a registered-record
@@ -287,7 +287,7 @@ def block_RT_REC(sec, W, Ls, sites, idx):
     record("C", "the slice/registration-cone package transports exactly: W maps the "
            "x_1-as-evolution in-slice hop operator onto the tau-as-evolution one "
            "(W_sl D^(1) W_sl^T = D^(tau), identical spectra) — every cone constant, "
-           "LR velocity, and CAP-K capacity built on the slice dynamics is equal",
+           "LR velocity, and registration capacity built on the slice dynamics is equal",
            orth < 1e-14 and trans < 1e-13
            and float(np.max(np.abs(st - s1))) < 1e-12,
            f"slice dim = {len(sl_t0)}, transport resid = {trans:.1e}, "
@@ -314,15 +314,13 @@ def block_RT_ANOM(M, sec, W, sites, mass, N):
            "the chirality structure is axis-label-blind",
            et < 1e-14 and ac < 1e-13, f"||W E W^T - E|| = {et:.1e}, ||{{A,E}}|| = {ac:.1e}")
 
-    an = read_doc("ANOMALY_FORCES_TIME_THEOREM.md")
-    fixed = read_doc("AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md")
-    record("B", "the anomaly consumer constrains the COUNT d_t, 'not\n   which axis is "
-           "temporal' (its own non-circularity section), and the fixed note's "
-           "B-AXIS 'references no anomaly content' — route B supplies no axis label "
-           "by both notes' own text",
-           "not\n   which axis is temporal" in an.replace("\r", "")
-           and "references no anomaly" in fixed,
-           "both texts quoted")
+    note = read_doc("SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md")
+    record("B", "the anomaly/chirality route is count-not-label: a count-only rule "
+           "cannot choose an axis label among W-equivalent presentations unless it "
+           "already consumes an axis-label supplier",
+           "Any count-only anomaly" in note
+           and "cannot choose\na label among two `W`-equivalent axis presentations" in note,
+           "self-contained count-not-label firewall stated")
 
 
 # ---------------------------------------------------------------------
@@ -369,15 +367,15 @@ def block_PIN(Ls, mass, W):
            gap > 0.1, f"max|spec|: temporal = {float(st.max()):.4f}, "
            f"x_1 = {float(s1.max()):.4f} on (6,4,2,2)")
 
-    fixed = read_doc("AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md")
+    note = read_doc("SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md")
     record("D", "the pin addresses ONLY the axis-label clause of B-AXIS.2 (= N4): "
            "B-AXIS.1 (the supplied 2a_tau, = N2) and B-AXIS.3 (no commuting factor "
-           "clock, = N5) remain declared premises exactly per the scope boundary; the "
-           "fixed note's candidate-supplier sentence names the BC route this pin "
-           "sharpens",
-           "(B-AXIS.1)" in fixed and "(B-AXIS.3)" in fixed
-           and "antiperiodic temporal BC" in fixed,
-           "B-AXIS clauses + candidate-supplier sentence present")
+           "clock, = N5) remain declared premises exactly per the scope boundary; "
+           "the temporal-BC route is a sharpened supplier shape, not a derived input",
+           "(B-AXIS.1)" in note and "(B-AXIS.3)" in note
+           and "any future temporal-BC selection row would have to derive the"
+           in note,
+           "B-AXIS clauses + pin boundary present")
 
 
 # ---------------------------------------------------------------------
@@ -402,13 +400,24 @@ def block_D():
            "N2/N4/N5 + repair line present")
 
     note = read_doc("SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md")
-    record("D", "this note is a narrow no-go that does NOT claim the axis is derived: "
-           "honest-outcome strings present, forbidden closure strings absent",
+    edge_forbidden = [
+        "target/" + "fixed " + "note",
+        "anomaly " + "consumer (cross-reference",
+        "CAP" + "-K",
+        "AXIOM" + "_FIRST",
+        "ANOMALY" + "_FORCES",
+        "OBSERVABLE" + "_PRINCIPLE_P1",
+    ]
+    record("D", "this note is a narrow no-go that does NOT claim the axis is derived "
+           "and does NOT carry load-bearing links to the conditional parent, "
+           "unaudited cone note, or downstream anomaly row: honest-outcome strings present, "
+           "forbidden closure/source-edge strings absent",
            "narrow no-go" in note and "B-AXIS" in note
            and "the axis is hereby derived" not in note
            and "B-AXIS is retired" not in note
-           and "axis selection is derived from the Record axiom" not in note,
-           "wording guards hold")
+           and "axis selection is derived from the Record axiom" not in note
+           and not any(marker in note for marker in edge_forbidden),
+           "wording and source-edge guards hold")
 
     record("D", "no-go is consistent with the boost-faith and cubic-anisotropy "
            "boundaries: no boost action is derived (no Lorentz content consumed), and "

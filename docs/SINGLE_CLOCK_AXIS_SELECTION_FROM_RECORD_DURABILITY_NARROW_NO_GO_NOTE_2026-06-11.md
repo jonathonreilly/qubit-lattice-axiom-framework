@@ -4,25 +4,23 @@
 **Type:** no_go (narrow axis-selection route pruning) + sharpened-pin
 support (computed minimal axis-selecting inputs)
 **Claim type:** no_go
-**Claim scope (narrow):** the single clause left open by the 2026-06-11
-hostile re-scope of
-[`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-— the **axis-label component of (B-AXIS.2)** (= scope-boundary clause N4):
-can the evolution axis be *derived* from some retained structure instead
-of declared? This note attacks the two live candidate routes hostilely
-and answers **no, with computed witnesses**: every retained candidate
-axis-anchoring structure — the OS/GNS reconstruction data, the
-record/durability surface, the registration cone, and the
-anomaly/chirality chain — is **exactly transported by the conjugated
-exchange `W = P_{τ↔1} ∘ diag((-1)^{x_τ x_1})`** onto an equivalent
-structure about the `x_1` axis (transport residuals exactly `0`,
-identical spectra, identical positivity status). The compensating
-positive content is the **sharpened pin**: the minimal axis-selecting
-input is computed to be a single per-axis `Z_2` datum — a
-boundary-condition asymmetry (antiperiodic-`τ`/periodic-space breaks `W`
-exactly; symmetric BCs restore it exactly) — or an equivalent declared
-registration-direction bridge tying the record event order to one
-lattice axis. (B-AXIS.1) and (B-AXIS.3) (= N2/N5) are untouched.
+**Claim scope (narrow):** the axis-label component of (B-AXIS.2)
+(= scope-boundary clause N4): can the evolution axis be *derived* from
+the available structures instead of declared? This note attacks the two
+live candidate routes hostilely and answers **no, with computed
+witnesses**: every candidate axis-anchoring structure enumerated here —
+the OS/GNS reconstruction data, the record/durability surface, the
+finite-speed registration-cone shape, and the anomaly/chirality chain —
+is **exactly transported by the conjugated exchange
+`W = P_{τ↔1} ∘ diag((-1)^{x_τ x_1})`** onto an equivalent structure about
+the `x_1` axis (transport residuals exactly `0`, identical spectra,
+identical positivity status). The compensating positive content is the
+**sharpened pin**: the minimal axis-selecting input is computed to be a
+single per-axis `Z_2` datum — a boundary-condition asymmetry
+(antiperiodic-`τ`/periodic-space breaks `W` exactly; symmetric BCs
+restore it exactly) — or an equivalent declared registration-direction
+bridge tying the record event order to one lattice axis. (B-AXIS.1) and
+(B-AXIS.3) (= N2/N5) are untouched.
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome; audit verdict and effective status
 are set only by the independent audit lane.
@@ -34,6 +32,12 @@ load-bearing leg, runtime well under 5 minutes).
 
 ## 0. Changelog
 
+- **2026-06-17** — source-graph auditability repair. The packet no
+  longer consumes the conditional parent single-clock source, the
+  unaudited finite-speed cone note, or the downstream anomaly row as
+  load-bearing inputs. The exchange certificate, cone transport,
+  count-not-label boundary, and B-AXIS clause discipline are recomputed
+  or stated self-containedly here. No science/status claim is promoted.
 - **2026-06-11** — initial note. Follow-up to the same-day re-scope that
   demoted axis selection from theorem (old S3) to declared premise
   (B-AXIS). Routes A (record/durability) and B (anomaly/chirality)
@@ -44,12 +48,12 @@ load-bearing leg, runtime well under 5 minutes).
 
 ## 1. Question, method, verdict
 
-The re-scoped evolution theorem proved (computed certificate, residual
-exactly `0`) that the staggered kinetic surface is invariant under the
-axis exchange `W`, so RP-admissibility alone cannot select the temporal
-axis; axis selection became the declared premise (B-AXIS). The standing
-owner method then demands the hunt: the governing no-gos state their own
-escape conditions — find the supplier.
+This packet recomputes the staggered kinetic exchange certificate
+(residual exactly `0`) directly in runner block [S]. Therefore
+RP-admissibility alone cannot select the temporal axis; axis selection is
+treated here as the declared premise (B-AXIS). The standing owner method
+then demands the hunt: the governing no-gos state their own escape
+conditions — find the supplier.
 
 Method: for each retained structure `D_τ` proposed as an axis anchor,
 compute its **W-transport** `D_1 := W D_τ W†` on explicit small lattices
@@ -70,10 +74,10 @@ is not derived here and is not supplied by any retained row.
 
 ## 2. Escape-clause mining: what the governing no-gos kill and leave open
 
-Quoted verbatim from the retained boundaries (one hop):
+Governing boundary clauses consumed by this packet (one hop):
 
 - **`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`**
-  (retained_no_go; the row whose clauses became B-AXIS.1–3). Kills:
+  (the row whose clauses became B-AXIS.1–3). Kills:
   "Stone uniqueness is transfer-relative and tau-relative.
   No-second-clock requires a separate axis/transfer uniqueness premise."
   Its named reopening inputs are its checklist clauses:
@@ -87,20 +91,20 @@ Quoted verbatim from the retained boundaries (one hop):
   supplies none from the retained surface; it sharpens what a supplier
   must contain.
 - **`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`**
-  (retained_no_go). Kills: deriving a physical boost action from the
+  Kills: deriving a physical boost action from the
   local `M_2(C)` algebra alone; leaves open "derive the
   matter-attachment selector from the framework, or explicitly admit
   it". Relevance here: no boost/Lorentz content may be consumed to
   break the exchange; this note consumes none.
 - **`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`**
-  (retained_no_go). Kills: SO(4)/continuum-isotropy wording from
+  Kills: SO(4)/continuum-isotropy wording from
   spatial-cubic checks; the salvage premise `c_t = c_s` is now supplied
   by the approved kinetic-isotropy primitive. Relevance: that premise
   makes the surface *more* exchange-symmetric, so it pushes **against**
   any kinetic-coefficient axis discriminator — consistent with this
   note's no-go direction, and no SO(4) wording is used here.
 - **`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`**
-  (retained_no_go). Kills: clock/rate derivation from record counts —
+  Kills: clock/rate derivation from record counts —
   "Without the supplied `tau`, the same record history supports many
   inequivalent rates." Leaves open: "a supplied clock can define rates
   for a record stream." Relevance: the post-record event ORDER is
@@ -111,14 +115,14 @@ Quoted verbatim from the retained boundaries (one hop):
 
 | Input | Where used | License |
 |---|---|---|
-| The exchange certificate `W M_KS W^T = M_KS` (residual 0) and the declared (B-AXIS.1–3) | the structure under attack; baseline recomputed in runner block [S] | [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) — bounded_theorem, same-lane re-scope; certificate recomputed, not cited blind |
-| N2/N4/N5 reopening clauses; transfer-/τ-relativity | Section 2; runner [D] verbatim checks | `SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md` — retained_no_go |
+| The exchange certificate `W M_KS W^T = M_KS` (residual 0) and the declared (B-AXIS.1–3) labels | the structure under attack; baseline recomputed in runner block [S] | Computed internally here; B-AXIS labels are target labels, not consumed theorem inputs |
+| N2/N4/N5 reopening clauses; transfer-/τ-relativity | Section 2; runner [D] verbatim checks | `SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md` |
 | Record axiom text: durable registration; supplies no "time metric" | route A; runner [RT-REC] | [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — approved axiom memo |
-| Record formation not unconditionally forced | route A ("at least one record exists" is not free) | [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) — retained_no_go |
-| Clock map supplied, never derived from counts | route A; the record-shaped pin | [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md) — retained_no_go |
-| (CAP-K) registration cone: (REG-dyn) consumes the framework `H`, (REG-tau) consumes a supplied window | route A circularity check | [`OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md`](OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md) — bounded_theorem (conditional realization class) |
-| Anomaly chain constrains the count `d_t`, "not which axis is temporal" | route B | [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) — bounded_theorem (downstream consumer; its own non-circularity text is the kill) |
-| Boost-faith and cubic-anisotropy boundaries | Section 2; runner [D] | both retained_no_go, cited above |
+| Record formation not unconditionally forced | route A ("at least one record exists" is not free) | [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) |
+| Clock map supplied, never derived from counts | route A; the record-shaped pin | [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md) |
+| Finite-speed registration-cone shape after an evolution generator and clock window are supplied | route A circularity check | Self-contained runner instantiation: the slice package transports exactly under `W`; any cone that consumes a supplied generator/window is not an axis supplier |
+| Count-only anomaly/chirality route | route B | Self-contained runner instantiation: chirality is `W`-invariant, and a count-only rule cannot choose a label among `W`-equivalent axes |
+| Boost-faith and cubic-anisotropy boundaries | Section 2; runner [D] | cited above |
 
 No fitted parameters, no observed values, no new axioms, no axiom-file
 edits.
@@ -156,8 +160,8 @@ computes it:
   has, the `x_1` construction has identically.
 
 So the `x_1` axis admits the *same* reflection structure, the *same*
-half-space algebra, the *same* OS kernel, and hence (by the fixed note's
-Step-3 conjugation argument, of which this is the one-particle computed
+half-space algebra, the *same* OS kernel, and hence (by the same
+Step-3-style conjugation argument, recomputed here as the one-particle
 instance) the same two-step blocked transfer and GNS reconstruction.
 The OS construction anchors nothing: it is built *after* the axis is
 chosen, and `W` transports the entire package.
@@ -167,8 +171,9 @@ chosen, and `W` transports the entire package.
 The Record axiom's durability clause is intrinsically ordered ("Durable
 means fixed once registered"). The hostile question: is "the axis along
 which records are durable" pinned to the transfer direction by any
-retained record row, so that B-AXIS would reduce to "at least one record
-exists"? Three kills, one computed and two textual, all at one hop:
+available record row, so that B-AXIS would reduce to "at least one
+record exists"? Three kills, one computed and two textual, all at one
+hop:
 
 1. **Durability is order-relative, and order is unitary-transport
    invariant (computed, class A).** "Fixed once registered, never
@@ -181,40 +186,38 @@ exists"? Three kills, one computed and two textual, all at one hop:
    structure. Durability cannot distinguish W-related axes.
 2. **The record rows are axis-blind by their own text (one hop).** The
    Record axiom supplies no "time metric" (verbatim exclusion);
-   record formation "does **not** hold unconditionally" (retained
-   no-go), so "at least one record exists" is itself a premise, and even
-   granting it, the clock/rate interface (retained_no_go) proves the
-   event order carries no metric and — a fortiori — no lattice-axis
-   label: "Without the supplied `tau`, the same record history supports
-   many inequivalent rates." The post-record surface supplies order,
-   counts, and prefixes; the association of that order with a lattice
-   axis is a *bridge*, never derived. The sharp-record Fisher row and
-   the sector-algebra rows are stated on abstract finite sample spaces
-   with no lattice axis anywhere in their hypotheses.
-3. **The CAP-K registration cone is axis-conditional, hence circular as
-   an axis supplier (textual + computed).** Its (REG-dyn) clause
-   consumes the framework hopping `H` — downstream of the
-   `(T̂², 2a_τ)` supply that B-AXIS declares — and its (REG-tau) clause
-   consumes a supplied clock window ("the clock map itself and the
-   window value are supplied"). Citing the cone to select the axis
-   would consume B-AXIS to derive B-AXIS. Moreover the cone construction
-   itself transports (computed): choosing axis `a` as evolution leaves
-   the in-slice hop operator `D^{(a)}`; the runner verifies
-   `W_sl D^{(1)} W_sl^T = D^{(τ)}` **exactly** (identical spectra), so
-   every Lieb-Robinson velocity, cone constant, and registration
-   capacity built on the slice dynamics is equal between the two axis
-   choices.
+   record formation "does **not** hold unconditionally", so "at least
+   one record exists" is itself a premise, and even granting it, the
+   clock/rate interface proves the event order carries no metric and —
+   a fortiori — no lattice-axis label: "Without the supplied `tau`, the
+   same record history supports many inequivalent rates." The
+   post-record surface supplies order, counts, and prefixes; the
+   association of that order with a lattice axis is a *bridge*, never
+   derived. The available finite-sample-space record rows have no
+   lattice axis in their hypotheses.
+3. **The finite-speed registration cone is axis-conditional, hence
+   circular as an axis supplier (self-contained + computed).** Any
+   finite-speed registration cone whose evolution generator and clock
+   window are already supplied consumes exactly the data it would need to
+   select. Citing such a cone to select the axis would consume B-AXIS to
+   derive B-AXIS. Moreover the
+   cone construction itself transports (computed): choosing axis `a` as
+   evolution leaves the in-slice hop operator `D^{(a)}`; the runner
+   verifies `W_sl D^{(1)} W_sl^T = D^{(τ)}` **exactly** (identical
+   spectra), so every Lieb-Robinson velocity, cone constant, and
+   registration capacity built on the slice dynamics is equal between
+   the two axis choices.
 
-### 4.3 Route B — anomaly/chirality is axis-label-blind (computed + the consumer's own text)
+### 4.3 Route B — anomaly/chirality is axis-label-blind (computed + count-not-label firewall)
 
 The staggered chirality grading `ε(x) = (-1)^{x_τ+x_1+x_2+x_3}` is
 exactly W-invariant (`W E W^T = E`, residual `0`) and the chiral
 anticommutation `{D_hop, ε} = 0` is preserved under transport — the
-chirality structure cannot tell the axes apart. And the anomaly
-consumer's own non-circularity section already states the kill: its
-steps "constrain only the *count* `d_t` (parity and positivity), not
-which axis is temporal"; the fixed note's B-AXIS "references no anomaly
-trace, no chirality content". Route B never had axis-label content.
+chirality structure cannot tell the axes apart. Any count-only anomaly
+rule can constrain a number of temporal directions, but it cannot choose
+a label among two `W`-equivalent axis presentations unless it already
+consumes an axis-label supplier. Route B never has axis-label content
+unless that supplier is inserted by hand.
 
 ## 5. The sharpened pin (computed minimal axis-selecting inputs)
 
@@ -231,11 +234,9 @@ What WOULD break the exchange? The runner computes the boundary:
   sector has **trivial kernel** while the periodic spatial sector has a
   32-dimensional kernel — a relabeling-invariant, so *no* exchange map
   of any kind can identify the sectors. Repo surfaces that already use
-  antiperiodic-`τ`/periodic-space conventions (e.g. the P2 trace-bridge
-  row, the `g_bare` obstruction row) carry exactly this datum — as a
-  *setup convention chosen after the axis*, not as a derivation of it;
-  a future "antiperiodic temporal BC selection row" (named as a
-  candidate supplier by the fixed note) would have to derive the
+  antiperiodic-`τ`/periodic-space conventions carry exactly this datum
+  as a *setup convention chosen after the axis*, not as a derivation of
+  it; any future temporal-BC selection row would have to derive the
   asymmetry, not assume it.
 - **(PIN-REG) — the record-shaped equivalent (declared bridge).** A
   supplied registration-direction bridge: "the realized record history's
@@ -260,9 +261,9 @@ given one per-axis `Z_2` BC-asymmetry datum or one declared
 registration-direction bridge* — the computed minimal supplier shape
 for any future axis-selection row.
 
-## 6. Consistency with retained no-gos (declared, checked)
+## 6. Consistency with governing no-gos (declared, checked)
 
-- **Scope boundary (retained_no_go):** consumed, not contradicted — its
+- **Scope boundary:** consumed, not contradicted — its
   N2/N4/N5 clauses are quoted verbatim and remain premises; this note
   prunes candidate N4 suppliers and sharpens the supplier shape, exactly
   the no-go's own discipline ("a separate axis/transfer uniqueness
@@ -290,8 +291,8 @@ staggered kinetic surface.
 |---|---|---|
 | OS/GNS reconstruction | Use RP positivity/GNS data to privilege `tau`. | ATTEMPTED: `W` transports the reflection, covariance, half-space kernel, spectra, and positivity status to `x_1`. |
 | Record durability | Use durable record order as the physical axis. | ATTEMPTED: durability is operator-order monotonicity, and unitary transport preserves it; Record supplies no time metric. |
-| CAP-K registration cone | Use finite-speed registration capacity as axis selector. | ATTEMPTED: the cone consumes `H` and a supplied clock window, so it is circular as an axis supplier; its slice package transports exactly. |
-| Anomaly/chirality | Use chirality/anomaly structure to identify the temporal axis. | ATTEMPTED: `epsilon(x)` and chiral anticommutation are `W`-invariant; the anomaly consumer constrains count, not axis label. |
+| Finite-speed registration cone | Use finite-speed registration capacity as axis selector. | ATTEMPTED: any such cone consumes an evolution generator and supplied clock window, so it is circular as an axis supplier; its slice package transports exactly. |
+| Anomaly/chirality | Use chirality/anomaly structure to identify the temporal axis. | ATTEMPTED: `epsilon(x)` and chiral anticommutation are `W`-invariant; a count-only rule constrains count, not axis label. |
 | BC-asymmetry / registration-direction supplier | Break `W` with an extra datum. | ATTEMPTED: succeeds if supplied, but the per-axis `Z_2` BC asymmetry or registration-direction bridge is not derived by any retained row named here. |
 
 **N2 — wall-independence audit.** The collapsed residual is one wall:
@@ -301,19 +302,20 @@ axis-label supply, not independent walls. B-AXIS.1 (`2a_tau`) and
 B-AXIS.3 (no commuting factor clock) remain outside this note's scope.
 
 **N3 — hidden-wall scan.** Hits on "by construction," "registered,"
-"canonical," and "standard" were classified. OS/GNS and CAP-K
-construction language is cited or computed; Record/registration language
-is bounded by the Record axiom, record-formation no-go, clock/rate
-interface, and CAP-K clauses; finite linear algebra and finite GNS/Schur
-uses are admitted methodology and additionally computed in-runner. The
+"canonical," and "standard" were classified. OS/GNS and finite-speed
+cone construction language is cited or computed; Record/registration
+language is bounded by the Record axiom, record-formation no-go, and
+clock/rate interface; finite linear algebra and finite GNS/Schur uses
+are admitted methodology and additionally computed in-runner. The
 BC-asymmetry and registration-direction requirements are explicit walls,
 not hidden assumptions.
 
 **N4 — residual matching.** The matched residual is only the axis-label
 part of scope-boundary N4. The record/rate no-go matches the absence of
-axis label in event order; the anomaly note matches count-not-label; the
-boost and cubic-anisotropy no-gos are guardrails against importing
-Lorentz/SO(4) content, not witnesses for the axis-label closure.
+axis label in event order; the anomaly/chirality route is
+count-not-label; the boost and cubic-anisotropy no-gos are guardrails
+against importing Lorentz/SO(4) content, not witnesses for the
+axis-label closure.
 
 **N5 — rhetoric audit.** "Underivable" means underivable from the
 retained record/anomaly/RP candidate structures enumerated here, on the
@@ -371,7 +373,7 @@ proposed_claim_type: no_go
 proposed_claim_scope: |
   Narrow no-go: on the staggered kinetic surface, every retained
   candidate axis-anchoring structure (OS/GNS reconstruction data,
-  record/durability rows, the CAP-K registration cone, the
+  record/durability rows, the finite-speed registration cone, the
   anomaly/chirality chain) is exactly transported by the conjugated
   exchange W = P_{tau<->1} diag((-1)^{x_tau x_1}) onto an equivalent
   x_1-axis structure (computed: transport residuals 0, identical
@@ -444,18 +446,17 @@ Z_2 datum (BC asymmetry) or an equivalent registration-direction bridge.
 [RT-REC] ROUTE A2: does record durability anchor the axis? (textual + computed: NO)
 ------------------------------------------------------------------------
   [PASS][B] Record axiom is axis-blind by its own text: a record supplies no 'time metric' (verbatim in the exclusion list)  -- MINIMAL_AXIOMS_2026-06-05.md
-  [PASS][B] record formation is not forced (retained_no_go): 'at least one record exists' is NOT an axiom consequence, so no axis can be derived from it unconditionally  -- record-formation no-go quoted
-  [PASS][B] the clock map is supplied, never derived from records (retained_no_go): 'Without the supplied `tau`, the same record history supports many inequivalent rates' — the event ORDER carries no lattice-axis label  -- clock/rate interface quoted
-  [PASS][B] the CAP-K registration cone is axis-CONDITIONAL, not axis-selecting: its dynamics clause (REG-dyn) consumes the framework H and its window (REG-tau) consumes a supplied clock — both downstream of B-AXIS, so citing it for axis selection would be circular  -- CAP-K note clauses present
+  [PASS][B] record formation is not forced: 'at least one record exists' is NOT an axiom consequence, so no axis can be derived from it unconditionally  -- record-formation no-go quoted
+  [PASS][B] the clock map is supplied, never derived from records: 'Without the supplied `tau`, the same record history supports many inequivalent rates' — the event ORDER carries no lattice-axis label  -- clock/rate interface quoted
+  [PASS][B] any finite-speed registration cone built after an evolution generator and clock window are supplied is axis-CONDITIONAL, not axis-selecting; citing it for axis selection would be circular  -- self-contained cone circularity stated
   [PASS][A] durability ('fixed once registered, never un-registered') is operator-order monotonicity of the record counter, and operator order is unitary-transport invariant: the conjugated counter is monotone with the same increment spectra — durability CANNOT distinguish W-related axes  -- monotone before/after = True/True, max increment-spec diff = 8.9e-16
-  [PASS][C] the slice/registration-cone package transports exactly: W maps the x_1-as-evolution in-slice hop operator onto the tau-as-evolution one (W_sl D^(1) W_sl^T = D^(tau), identical spectra) — every cone constant, LR velocity, and CAP-K capacity built on the slice dynamics is equal  -- slice dim = 16, transport resid = 0.0e+00, max |spec diff| = 0.0e+00
+  [PASS][C] the slice/registration-cone package transports exactly: W maps the x_1-as-evolution in-slice hop operator onto the tau-as-evolution one (W_sl D^(1) W_sl^T = D^(tau), identical spectra) — every cone constant, LR velocity, and registration capacity built on the slice dynamics is equal  -- slice dim = 16, transport resid = 0.0e+00, max |spec diff| = 0.0e+00
 
 ------------------------------------------------------------------------
 [RT-ANOM] ROUTE B: does the anomaly/chirality chain pick the axis? (NO: count, not label)
 ------------------------------------------------------------------------
   [PASS][C] the staggered chirality grading eps(x) = (-1)^{sum x_mu} is exactly W-invariant and the chiral anticommutation {D_hop, eps} = 0 is preserved: the chirality structure is axis-label-blind  -- ||W E W^T - E|| = 0.0e+00, ||{A,E}|| = 0.0e+00
-  [PASS][B] the anomaly consumer constrains the COUNT d_t, 'not
-   which axis is temporal' (its own non-circularity section), and the fixed note's B-AXIS 'references no anomaly content' — route B supplies no axis label by both notes' own text  -- both texts quoted
+  [PASS][B] the anomaly/chirality route is count-not-label: a count-only rule cannot choose an axis label among W-equivalent presentations unless it already consumes an axis-label supplier  -- self-contained count-not-label firewall stated
 
 ------------------------------------------------------------------------
 [PIN] THE SHARPENED PIN: what WOULD break the exchange (computed witnesses)
@@ -464,13 +465,13 @@ Z_2 datum (BC asymmetry) or an equivalent registration-direction bridge.
   [PASS][C] falsification leg: antiperiodic in BOTH tau and x_1 RESTORES the exact exchange symmetry — the axis-selecting datum is the BC ASYMMETRY between the axes, not the antiperiodic wrap itself  -- resid = 0.0e+00
   [PASS][C] relabeling-invariant discriminator: with antiperiodic-tau the temporal hop sector has TRIVIAL kernel while the periodic x_1 sector has a nonzero kernel — no exchange map of any kind (signed, conjugated, or otherwise) can identify the two sectors once the BC datum is supplied  -- dim ker: temporal(apbc) = 0, x_1(pbc) = 32
   [PASS][C] asymmetric extents L_tau != L_1 also discriminate (sector spectral radii differ) — but extents are finite-block regulator data, declared, not framework axioms; recorded as the weaker regulator-level datum  -- max|spec|: temporal = 1.7321, x_1 = 2.0000 on (6,4,2,2)
-  [PASS][D] the pin addresses ONLY the axis-label clause of B-AXIS.2 (= N4): B-AXIS.1 (the supplied 2a_tau, = N2) and B-AXIS.3 (no commuting factor clock, = N5) remain declared premises exactly per the scope boundary; the fixed note's candidate-supplier sentence names the BC route this pin sharpens  -- B-AXIS clauses + candidate-supplier sentence present
+  [PASS][D] the pin addresses ONLY the axis-label clause of B-AXIS.2 (= N4): B-AXIS.1 (the supplied 2a_tau, = N2) and B-AXIS.3 (no commuting factor clock, = N5) remain declared premises exactly per the scope boundary; the temporal-BC route is a sharpened supplier shape, not a derived input  -- B-AXIS clauses + pin boundary present
 
 ------------------------------------------------------------------------
 [D] COMPOSITION DISCIPLINE (scope boundary consumed, not contradicted)
 ------------------------------------------------------------------------
   [PASS][D] scope-boundary clauses consumed verbatim: N2 (time step), N4 (axis/transfer uniqueness), N5 (commuting factors), and 'Stone uniqueness is transfer-relative and tau-relative'  -- N2/N4/N5 + repair line present
-  [PASS][D] this note is a narrow no-go that does NOT claim the axis is derived: honest-outcome strings present, forbidden closure strings absent  -- wording guards hold
+  [PASS][D] this note is a narrow no-go that does NOT claim the axis is derived and does NOT carry load-bearing links to the conditional parent, unaudited cone note, or downstream anomaly row: honest-outcome strings present, forbidden closure/source-edge strings absent  -- wording and source-edge guards hold
   [PASS][D] no-go is consistent with the boost-faith and cubic-anisotropy boundaries: no boost action is derived (no Lorentz content consumed), and no SO(4) wording is used (the c_t = c_s primitive makes the surface MORE exchange-symmetric, which this note's direction respects)  -- one-hop boundary texts present
 
 ========================================================================
@@ -488,24 +489,14 @@ promote any row.
 
 ## 10. Citations
 
-- target/fixed note (bounded_theorem, same lane):
-  [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-- governing boundaries (retained_no_go):
+- governing boundaries:
   [`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`](SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md),
   [`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`](QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md),
   [`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`](SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md),
   [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md),
   [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md)
 - record surface consulted:
-  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md),
-  [`OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md`](OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md),
-  [`SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md`](SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md)
-- anomaly consumer (cross-reference; its own text is the route-B kill):
-  [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)
-- repo rows carrying the BC-asymmetry datum as a setup convention (not a
-  derivation):
-  [`P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md`](P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md),
-  [`G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md`](G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md)
+  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
 - standard external references (theorem-grade, no numerical input):
   Osterwalder-Schrader (1973) *Comm. Math. Phys.* 31, 83;
   Sharatchandra-Thun-Weisz (1981) *Nucl. Phys. B* 192, 205;

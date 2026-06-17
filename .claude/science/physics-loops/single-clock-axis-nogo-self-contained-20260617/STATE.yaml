@@ -1,0 +1,40 @@
+loop_slug: single-clock-axis-nogo-self-contained-20260617
+date: 2026-06-17
+branch: physics-loop/single-clock-axis-nogo-self-contained-20260617
+base: origin/main
+goal: >
+  Unlock auditability of the single-clock axis-selection no-go by making the
+  packet self-contained with respect to the exchange certificate, finite-speed
+  cone transport, count-not-label route, and B-AXIS pin discipline.
+target_status: no-go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: supports
+active_route: self_contained_source_graph_repair
+cycle_count: 1
+files_touched:
+  - docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md
+  - scripts/single_clock_axis_selection_check_2026_06_11.py
+  - logs/runner-cache/single_clock_axis_selection_check_2026_06_11.txt
+  - .claude/science/physics-loops/single-clock-axis-nogo-self-contained-20260617/
+open_imports:
+  - B-AXIS.1 supplied clock step remains declared.
+  - B-AXIS.3 no-commuting-factor-clock premise remains outside this note.
+  - The per-axis BC asymmetry or registration-direction bridge is exhibited as a supplier shape, not derived.
+no_go_routes:
+  - OS/GNS reconstruction axis anchor: W transports the reflection, kernel, spectra, and positivity status.
+  - Record durability axis anchor: operator-order durability is unitary-transport invariant.
+  - Finite-speed registration cone axis anchor: cone is downstream of supplied generator/window and its slice package transports exactly.
+  - Anomaly/chirality axis anchor: chirality is W-invariant and count-only rules cannot choose a W-equivalent label.
+verification:
+  - python3 scripts/single_clock_axis_selection_check_2026_06_11.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/single_clock_axis_selection_check_2026_06_11.py
+  - expected-output block equals live runner stdout
+  - python3 -m py_compile scripts/single_clock_axis_selection_check_2026_06_11.py
+  - source-edge grep for removed conditional/unready direct-file tokens
+  - git diff --check
+review_loop_disposition: reviewer_owned_not_run
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4204
+next_exact_action: reviewer extraction and independent audit decision
+stop_condition: PR opened for reviewer extraction

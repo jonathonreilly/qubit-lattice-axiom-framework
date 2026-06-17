@@ -1,4 +1,4 @@
-"""SU(3) quadratic Casimir on the fundamental triplet equals 4/3.
+"""SU(3) quadratic Casimir on the algebraic V_3 fundamental equals 4/3.
 
 By cl3_color_automorphism_theorem (cited), SU(3)_c acts on the framework's
 3-dim symmetric base subspace via the canonical Gell-Mann generators
@@ -11,11 +11,11 @@ is a scalar multiple of the identity on each irreducible representation
 
 For SU(3): C_2(3) = 8 / 6 = 4 / 3.
 
-This number is the universal "color charge squared" of a color-triplet
-quark, appearing in:
-  - one-gluon-exchange potential coefficient
-  - quark self-energy at one loop
-  - all hard-scattering color factors involving color triplets
+This runner checks only the algebraic K1-K3 surface: centrality/Schur
+scalar behavior and value 4/3 on the cited V_3 carrier. It does not
+identify V_3 with physical SM quark color and does not certify
+one-gluon-exchange, quark self-energy, hard-scattering, confinement, or
+other physical color-factor readouts.
 
 Tests:
   (T1) Gell-Mann anticommutation: {T^a, T^b} = (1/3) δ^{ab} I + d^{abc} T^c
@@ -51,7 +51,7 @@ def gell_mann_matrices() -> list[np.ndarray]:
 
 def main() -> None:
     print("=" * 72)
-    print("SU(3) QUADRATIC CASIMIR ON FUNDAMENTAL = 4/3")
+    print("SU(3) QUADRATIC CASIMIR ON ALGEBRAIC V_3 FUNDAMENTAL = 4/3")
     print("=" * 72)
     print()
 

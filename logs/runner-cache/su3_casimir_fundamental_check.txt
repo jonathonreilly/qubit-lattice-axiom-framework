@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/su3_casimir_fundamental_check.py
-runner_sha256: f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898
+runner_sha256: 779130b7152dd7745e5240f3004dda3a78865d826b535cff2f9849f6c3a4325f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================
-SU(3) QUADRATIC CASIMIR ON FUNDAMENTAL = 4/3
+SU(3) QUADRATIC CASIMIR ON ALGEBRAIC V_3 FUNDAMENTAL = 4/3
 ========================================================================
 
 ------------------------------------------------------------------------

@@ -1,0 +1,20 @@
+loop_slug: higgs-hierarchy-correction-runner-20260617
+goal: "Unlock audit readiness for higgs_mass_hierarchy_correction_note without auditing or editing audit data."
+target_claim_id: higgs_mass_hierarchy_correction_note
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/higgs-hierarchy-correction-runner-20260617
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+block_count: 1
+files_touched:
+  - docs/HIGGS_MASS_HIERARCHY_CORRECTION_NOTE.md
+  - scripts/frontier_higgs_mass_hierarchy_correction.py
+  - logs/runner-cache/frontier_higgs_mass_hierarchy_correction.txt
+  - .claude/science/physics-loops/higgs-hierarchy-correction-runner-20260617/
+open_imports:
+  - "This verifies only the hierarchy-correction negative result; Higgs mass precision closure remains in the separate Higgs/YT lane."
+review_loop_disposition: reviewer_owned_not_run
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can run review-loop; audit tooling can then rebuild graph/queue and pick up the new primary runner."
+stop_condition: "Coherent source-side verifier packaged as a PR."

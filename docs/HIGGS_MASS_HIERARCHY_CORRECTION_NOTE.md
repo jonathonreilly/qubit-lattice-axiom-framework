@@ -1,8 +1,11 @@
 # Higgs Mass: Hierarchy Correction Analysis (Negative Result)
 
 **Date:** 2026-04-14
-**Status:** bounded - bounded or caveated result note
-direction. No hierarchy correction chain reduces m_H from 140.3 toward 125.
+**Status:** bounded-support negative result. No hierarchy correction chain
+reduces m_H from 140.3 toward 125.
+
+**Script:** `scripts/frontier_higgs_mass_hierarchy_correction.py`
+(source-side negative-result verifier; PASS=15 FAIL=0 on current source)
 
 ---
 

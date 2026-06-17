@@ -6,6 +6,22 @@
 **Type:** planning / candidate theory artifact; not retained framework promotion
 **Companion runner:** `scripts/frontier_teleportation_axiom_closure_checks.py`
 
+## Source boundary (2026-06-12)
+
+**Boundary:** open-gate planning / renaming support only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The note's load-bearing content is a lane-status and principle-bundle
+definition, plus finite Bell-frame XOR and speed-one Manhattan accounting on
+the audited side-2 surface. This note may be cited only as planning/open-gate
+structure and bounded accounting. It may not be cited as native teleportation
+closure, resource-genesis closure, apparatus derivation, noise/scaling
+derivation, or a retained physical control theorem.
+
+Promotion beyond planning support requires retained-grade derivations of the
+resource, apparatus, causal-record, noise/leakage, scaling, and correction
+control surfaces.
+
 ## Abstract
 
 The note is valid as a planning / candidate theory artifact and planning /

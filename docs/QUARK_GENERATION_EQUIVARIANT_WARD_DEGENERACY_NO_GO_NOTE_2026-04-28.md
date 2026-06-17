@@ -163,12 +163,12 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_generation_equivariant_ward_de
 Expected result:
 
 ```text
-TOTAL: PASS=46, FAIL=0
+TOTAL: PASS=47, FAIL=0
 VERDICT: S_3-equivariant Ward operators cannot stratify three quark
 generation Yukawa eigenvalues without an additional source/readout bridge.
 ```
 
-This expected certificate was synced on 2026-06-16 to the current paired
+This expected certificate was synced on 2026-06-17 to the current paired
 runner/cache output. The theorem boundary is unchanged: this remains a bounded
 representation-theoretic no-go on the supplied `hw=1` `S_3` carrier, not a
 closure of quark Yukawa values or a no-go for every Lane 3 route.

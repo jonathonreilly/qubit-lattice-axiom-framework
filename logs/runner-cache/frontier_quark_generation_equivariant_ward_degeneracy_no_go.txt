@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_generation_equivariant_ward_degeneracy_no_go.py
-runner_sha256: b67212dc0251b2c233c7cc0e7de5819fc1e2d4b4536bf367be5a44f7d619bcbe
+runner_sha256: 3af7d7baef62d18db9cc1f175ff286dab76ce4f1e91882bfe13b63b48dc79722
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -23,6 +23,7 @@ PASS: block01 free-matrix no-go is compatible
 PASS: new note forbids retained mass closure
 PASS: new note routes carrier through retained-bounded three-generation authority
 PASS: new note has no direct markdown dependency edge to the unaudited realization gate
+PASS: new note does not state the realization gate as load-bearing
 
 B. S3 permutation representation on the generation triplet
 ------------------------------------------------------------------------
@@ -73,7 +74,7 @@ PASS: new note does not overclaim future no-go
 
 Summary
 ------------------------------------------------------------------------
-TOTAL: PASS=46, FAIL=0
+TOTAL: PASS=47, FAIL=0
 VERDICT: S_3-equivariant Ward operators cannot stratify three quark
 generation Yukawa eigenvalues without an additional source/readout bridge.
 

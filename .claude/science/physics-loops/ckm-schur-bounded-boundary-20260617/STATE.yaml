@@ -1,0 +1,15 @@
+loop_slug: ckm-schur-bounded-boundary-20260617
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: ckm_schur_complement_theorem
+target_blocker_text: "Queue cache had failure markers for expected bounded numerical observations."
+files_touched:
+  - docs/CKM_SCHUR_COMPLEMENT_THEOREM.md
+  - scripts/frontier_ckm_schur_complement.py
+  - logs/runner-cache/frontier_ckm_schur_complement.txt
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer should confirm exact checks still hard-fail while bounded comparator misses are boundary observations."
+

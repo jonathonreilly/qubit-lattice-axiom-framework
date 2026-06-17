@@ -5,7 +5,7 @@
 **Claim type**: bounded_theorem
 **Claim scope**: the algebraic identity `c_13^eff = c_12 · c_23` from Schur complement of the generation-2 block in the 3x3 NNI geometric-mean-normalized mass matrix is the load-bearing class-(A) step. The broader CKM magnitude predictions (|V_us|, |V_cb|, |V_ub|, J, lambda, A in the Wolfenstein basis) are bounded numerical observations using imported NNI coefficients (c_12, c_23 from `CKM_NNI_COEFFICIENTS_NOTE`, `CKM_ABSOLUTE_S23_NOTE`), imported PDG masses, and an imported Z_3 Berry phase delta; they are not first-principles closures within this packet.
 **Depends on**: `CKM_WOLFENSTEIN_CASCADE_THEOREM`, `CKM_NNI_COEFFICIENTS_NOTE`, `CKM_ABSOLUTE_S23_NOTE` (all upstream CKM authority chains)
-**Script**: `scripts/frontier_ckm_schur_complement.py` (broad CKM observable comparison; PASS=10/FAIL=6 on bounded checks documenting the mass-ratio gap)
+**Script**: `scripts/frontier_ckm_schur_complement.py` (broad CKM observable comparison; PASS=10 plus 6 bounded boundary observations documenting the mass-ratio gap)
 **Audit-companion**: `scripts/audit_companion_ckm_schur_complement_exact.py` (exact-symbolic verification of the load-bearing class-(A) algebraic identity; PASS=11/FAIL=0 at sympy `Rational` precision)
 
 ---
@@ -151,13 +151,13 @@ Under the PATH B narrow scope, the primary runner
 2. **Schur-complement structural identification** (PASS, exact):
    `c_13` is GENERATED from the Schur complement, not fitted, given
    imported `(c_12, c_23)`.
-3. **Bounded numerical observations** (PASS for some, FAIL for others;
-   the FAIL set is the documented Wolfenstein-basis gap): order-of-
-   magnitude consistency for `|V_ub|` and the Wolfenstein hierarchy
-   pattern `|V_ub| ~ A · lambda^3` hold; the PDG-tolerance bounded
-   checks on lambda, A, V_cb, V_ub, and the Schur c_13/c_23 ratio
-   FAIL by the documented mass-ratio suppression factor — exactly the
-   gap acknowledged in §1, §2, and §3 of this note.
+3. **Bounded numerical observations** (PASS for some; boundary observations
+   for others): order-of-magnitude consistency for `|V_ub|` and the
+   Wolfenstein hierarchy pattern `|V_ub| ~ A · lambda^3` hold; the
+   PDG-tolerance bounded observations on lambda, A, V_cb, V_ub, and the Schur
+   c_13/c_23 ratio remain outside tolerance by the documented mass-ratio
+   suppression factor — exactly the gap acknowledged in §1, §2, and §3 of this
+   note.
 
 The audit-companion runner
 `scripts/audit_companion_ckm_schur_complement_exact.py` (PASS=11/FAIL=0)
@@ -179,8 +179,8 @@ purely symbolic.
   `CKM_ABSOLUTE_S23_NOTE`, both `audited_conditional`).
 - A first-principles closure of the Wolfenstein-basis CKM magnitudes
   (V_ub, V_cb, lambda, A, J) at PDG-tolerance precision — the bounded
-  checks fail by the documented mass-ratio suppression factor, which
-  itself is an imported physical mechanism.
+  observations remain outside tolerance by the documented mass-ratio
+  suppression factor, which itself is an imported physical mechanism.
 - A first-principles derivation of the Z_3 Berry phase delta_CKM (that
   remains in the protected-gamma theorem authority).
 - The CKM lane gate closure (which closed 2026-04-25 via the

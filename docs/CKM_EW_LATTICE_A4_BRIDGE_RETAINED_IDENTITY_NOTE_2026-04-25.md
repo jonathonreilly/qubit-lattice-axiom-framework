@@ -1,21 +1,24 @@
-# CKM-EW Lattice A4 Bridge Retained Identity
+# CKM-EW Lattice A4 Bridge Boundary
 
 **Date:** 2026-04-25
 
-**Status:** proposed_retained EW-CKM lattice-scale identity theorem; companion
-corollary to the retained below-`W2` `A^2` source theorem.
+**Status (2026-06-17):** bounded-support EW-CKM lattice-scale bridge. The exact
+arithmetic identity `sin^2(theta_W)|_lattice = A^4 = 4/9` is preserved as a
+value-level bridge, but retained closure is dependency-gated on independent
+audit of the EW, Wolfenstein, CKM-counts, and below-`W2` source rows. This note
+does not itself apply an audit verdict or promote the bridge to retained status.
 
 **Primary runner:** `scripts/frontier_ckm_ew_lattice_a4_bridge.py`
 
 ## Purpose
 
-This note packages the lattice-scale EW-CKM corollary
+This note packages the lattice-scale EW-CKM bridge
 
 ```text
 sin^2(theta_W)|_lattice = A^4 = 4/9
 ```
 
-on the retained surface.
+on the bounded-support source surface.
 
 The companion theorem
 [`CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md`](CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md)
@@ -25,18 +28,18 @@ now separately grounds
 A^2 = N_pair/N_color = 2/3
 ```
 
-below `W2` from the retained quark-doublet source theorem. This note keeps the
+below `W2` from the companion quark-doublet source theorem. This note keeps the
 EW-CKM bridge itself isolated as the lattice-scale corollary.
 
-The retained identity packaged here is:
+The value-level identity packaged here is:
 
 ```text
 sin^2(theta_W)|_lattice = A^4 = 4/9.
 ```
 
-The left side is retained by the EW lattice-normalization lane. The right
-side is retained by the Wolfenstein `W2` lane. The equality is therefore a
-retained cross-surface lattice-scale identity.
+The left side is supplied by the EW lattice-normalization lane. The right side
+is supplied by the Wolfenstein `W2` lane. Retained closure requires those
+dependencies to be independently clean on the current audit surface.
 
 What is **not** claimed here is that the bridge note by itself re-derives
 `A^2` below `W2` solely from the retained existence of `SU(2)_L` and
@@ -51,21 +54,21 @@ is a retained consistency equality at the accepted values. The actual
 below-`W2` derivation now lives in the companion source theorem, not in this
 corollary note alone.
 
-## Retained Inputs
+## Inputs And Gates
 
 | Input | Authority | Status |
 | --- | --- | --- |
-| `g_2^2 = 1/(d+1)`, `g_Y^2 = 1/(d+2)`, `d=3` | [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) | retained lattice-scale EW bare-normalization identity; not the v-scale `K_EW(kappa_EW)` matching rule |
-| `A^2 = N_pair/N_color = 2/3` | [`WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md`](WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md) | retained CKM structural identity |
-| below-`W2` source theorem for `A^2 = N_pair/N_color = 2/3` | [`CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md`](CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md) | retained companion theorem |
-| `N_pair=2`, `N_color=3` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) | retained CKM structural-counts identity |
-| `SU(2)_L`, `SU(3)_c` retained gauge structures | [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) | retained framework/current-consequence surface |
+| `g_2^2 = 1/(d+1)`, `g_Y^2 = 1/(d+2)`, `d=3` | [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) | EW algebraic/support input; not the v-scale `K_EW(kappa_EW)` matching rule |
+| `A^2 = N_pair/N_color = 2/3` | [`WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md`](WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md) | dependency-gated CKM structural identity |
+| below-`W2` source theorem for `A^2 = N_pair/N_color = 2/3` | [`CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md`](CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md) | companion theorem; retained closure depends on audit |
+| `N_pair=2`, `N_color=3` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) | dependency-gated CKM structural-counts identity |
+| `SU(2)_L`, `SU(3)_c` gauge structures | [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) | framework/current-consequence surface |
 
 Support-tier CL3 taste-generation readings are not used.
 
-## Theorem 1: retained lattice-scale EW-CKM bridge
+## Theorem 1: bounded lattice-scale EW-CKM bridge
 
-On the retained EW lattice-normalization lane,
+On the EW lattice-normalization lane,
 
 ```text
 g_2^2 = 1/(d+1),
@@ -83,7 +86,7 @@ sin^2(theta_W)|_lattice
   = 4/9.
 ```
 
-On the retained CKM Wolfenstein lane,
+On the CKM Wolfenstein lane,
 
 ```text
 A^2 = 2/3,
@@ -101,12 +104,12 @@ Thus
 sin^2(theta_W)|_lattice = A^4 = 4/9.
 ```
 
-This is an exact retained identity at the lattice scale. It is not a claim
+This is an exact value-level identity at the lattice scale. It is not a claim
 about the low-energy physical value of `sin^2(theta_W)` at `M_Z`.
 
 ## Theorem 2: gauge-dimension consistency equality
 
-The retained gauge structures include `SU(2)_L` and `SU(3)_c`. Standard
+The framework gauge structures include `SU(2)_L` and `SU(3)_c`. Standard
 representation theory gives
 
 ```text
@@ -120,35 +123,37 @@ Therefore
 dim_fund(SU(2)) / dim_fund(SU(3)) = 2/3.
 ```
 
-Since retained `W2` gives
+Since `W2` gives
 
 ```text
 A^2 = 2/3,
 ```
 
-there is a retained equality
+there is a value-level equality
 
 ```text
 A^2 = dim_fund(SU(2)) / dim_fund(SU(3)) = 2/3.
 ```
 
-This is a consistency identity between retained structures. The actual
+This is a consistency identity between framework structures. The actual
 below-`W2` derivation of the Wolfenstein `A^2` law now comes from the
 companion quark-doublet source theorem; the equality in this note remains the
 gauge-dimension corollary.
 
 ## Claim Boundary
 
-What is retained here:
+What is certified here:
 
 - `sin^2(theta_W)|_lattice = A^4 = 4/9`;
-- `A^2 = dim_fund(SU(2))/dim_fund(SU(3)) = 2/3` as a retained consistency
+- `A^2 = dim_fund(SU(2))/dim_fund(SU(3)) = 2/3` as a value-level consistency
   equality;
-- the companion theorem closes `A^2` below `W2` on current `main`;
-- exact rational verification using retained EW and CKM authority files.
+- exact rational verification using EW and CKM source files.
 
-What is not retained here:
+What remains boundary-gated here:
 
+- retained closure of the EW-CKM bridge before independent audit of the
+  dependency rows;
+- proof that the companion theorem closes `A^2` below `W2` on current `main`;
 - an independent below-`W2` derivation inside this note alone;
 - a promotion of `CL3_TASTE_GENERATION_THEOREM` or any support-tier theorem;
 - a physical `M_Z` prediction for `sin^2(theta_W)`;
@@ -163,17 +168,17 @@ python3 scripts/frontier_ckm_ew_lattice_a4_bridge.py
 Expected result:
 
 ```text
-TOTAL: PASS=36, FAIL=0
-PASSED: 36/36
+TOTAL: PASS=32, HARD_ISSUES=0
+PASSED: 32/32
 ```
 
 ## Closeout Flags
 
 ```text
-CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY=TRUE
+CKM_EW_LATTICE_A4_BRIDGE_BOUNDED_SUPPORT=TRUE
 SIN2_THETA_W_LATTICE_EQUALS_A4=TRUE
 GAUGE_DIMENSION_RATIO_EQUALS_A2_CONSISTENCY=TRUE
-A2_BELOW_W2_DERIVATION_CLOSED=TRUE
+A2_BELOW_W2_DERIVATION_DEPENDENCY_GATED=TRUE
 SUPPORT_TIER_PROMOTION=FALSE
 KOIDE_CLOSURE=FALSE
 ```

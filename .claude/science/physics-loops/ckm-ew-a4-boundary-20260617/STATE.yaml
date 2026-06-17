@@ -1,0 +1,20 @@
+loop_slug: ckm-ew-a4-boundary-20260617
+branch: physics-loop/ckm-ew-a4-boundary-20260617
+base_ref: origin/main
+base_commit: 0b29f3748217fd6ca0b8ca0521e35b8ef314729f
+mode: audit-unlock-source-repair
+target_claim_id: ckm_ew_lattice_a4_bridge_retained_identity_note_2026-04-25
+target_status: bounded-support
+active_route: dependency_boundary_runner_repair
+cycle_count: 1
+files_touched:
+  - docs/CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md
+  - scripts/frontier_ckm_ew_lattice_a4_bridge.py
+  - logs/runner-cache/frontier_ckm_ew_lattice_a4_bridge.txt
+  - .claude/science/physics-loops/ckm-ew-a4-boundary-20260617/
+open_imports:
+  - EW, Wolfenstein, CKM-counts, and below-W2 source dependencies require independent audit before retained closure.
+trace_gate_classification: direct_blocker_closure
+review_findings: review-loop delegated to later Codex reviewer per user workflow
+pr_status: pending
+next_exact_action: push branch and open review PR

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_source_domain_bridge_no_go.py
-runner_sha256: 4a24f8253f2784ab9b64fdcc89d5022758bc5f7fc89c9f84aa3e64da9c3e90b1
+runner_sha256: fa295f82f64ee73b9ea6be4e48c6fd184cacbf55cbb911d25f2fd253d0bd8408
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 19.02
+elapsed_sec: 15.99
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -121,7 +121,7 @@ PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 3 is present in RCONN_DERIVE
 
 H. Exhaustiveness sweep over named authority bank
 ------------------------------------------------------------------------
-PASS: note dependency parser finds the closed authority-bank additions -- ('QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md', 'QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md', 'RCONN_DERIVED_NOTE.md')
+PASS: note dependency parser finds the closed authority-bank additions -- ('QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md', 'QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md', 'QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md', 'RCONN_DERIVED_NOTE.md', 'S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md')
 PASS: authority bank is edge authorities plus dependency-linked Route-2 authorities -- ('QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md', 'QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md', 'QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md', 'RCONN_DERIVED_NOTE.md', 'S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md')
 PASS: sweep found at least one candidate sentence -- 48
 PASS: all sweep candidate sentences are dispositioned -- candidates=48, anchored=19, exceptions=29

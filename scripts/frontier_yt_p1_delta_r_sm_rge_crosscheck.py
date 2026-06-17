@@ -4,22 +4,30 @@ Frontier runner: P1 Delta_R SM-RGE Cross-Validation.
 
 Status
 ------
-Cross-validation of the retained central
+Bounded-support / historical cross-validation of the old central
     Delta_R = -3.27 %
-at M_Pl from the retained three-channel Rep-A/Rep-B assembly
+at M_Pl from the three-channel Rep-A/Rep-B assembly
 (Delta_1 = +2, Delta_2 = -10/3, Delta_3 = +0.93) against a SECOND
 independent derivation: numerical backward integration of the SM
 MSbar 2-loop RGE from v up to M_Pl, starting from the framework
 primary-chain boundary conditions at v.
 
-The runner is deterministic and emits PASS/FAIL lines. It takes the
+This runner is deliberately not a current retained-status certificate for
+Delta_R precision. The 2026-06-16 P1 correction identifies a scalar
+/N_TASTE double-count and fermion-channel IR-regulator dependence, so the
+current surface carries Delta_R precision as uncontrolled. The useful
+surviving role of this runner is narrower: it checks that the SM-RGE
+backward integration and the framework matching-factor partition are
+internally consistent with the historical comparator.
+
+The runner is deterministic and emits per-check PASS lines. It takes the
 framework primary-chain inputs (v-scale couplings) as given and
 integrates the MSbar 2-loop RGE for (g_1, g_2, g_s, y_t) backward
 from v to M_Pl. The extracted y_t(M_Pl)/g_s(M_Pl) from the SM-RGE-only
 up-run is compared to the lattice Ward + Delta_R prediction at M_Pl.
 
-Authority notes (retained, unchanged by this runner)
-----------------------------------------------------
+Authority and provenance notes (unchanged by this runner)
+---------------------------------------------------------
   - docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md (tree-level identity)
   - docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md
     (three-channel decomposition)
@@ -81,7 +89,7 @@ def check(name: str, condition: bool, detail: str = "") -> None:
 
 
 # ---------------------------------------------------------------------------
-# Retained framework constants
+# Framework constants and historical comparator inputs
 # ---------------------------------------------------------------------------
 
 PI = math.pi
@@ -116,7 +124,10 @@ Y_T_V = 0.9176
 # Ward at M_Pl (lattice side, retained)
 WARD_RATIO = 1.0 / math.sqrt(6.0)          # 0.408248
 
-# Central Delta_R at M_Pl (from retained three-channel Rep-A/Rep-B assembly)
+# Historical Delta_R central at M_Pl from the three-channel Rep-A/Rep-B
+# assembly. This is retained here only as the comparator used by the
+# historical cross-check; the current source note explicitly demotes Delta_R
+# precision to uncontrolled after the 2026-06-16 P1 correction.
 # Delta_1 = +2, Delta_2 = -10/3, Delta_3 = +0.93
 DELTA_1 = 2.0
 DELTA_2 = -10.0 / 3.0
@@ -292,31 +303,31 @@ def main() -> int:
     print()
 
     # -----------------------------------------------------------------------
-    # Block 4: Retained Delta_R = -3.27 % central
+    # Block 4: historical Delta_R = -3.27 % central
     # -----------------------------------------------------------------------
-    print("Block 4: Retained central Delta_R at M_Pl (three-channel assembly).")
+    print("Block 4: Historical Delta_R comparator at M_Pl (three-channel assembly).")
     check("Delta_1 central = +2 (from Delta_1 BZ note)",
           abs(DELTA_1 - 2.0) < 1e-12, f"Delta_1 = {DELTA_1}")
     check("Delta_2 central = -10/3 (from Delta_2 BZ note)",
           abs(DELTA_2 + 10.0 / 3.0) < 1e-12, f"Delta_2 = {DELTA_2:.6f}")
     check("Delta_3 central = +0.93 (from Delta_3 BZ note)",
           abs(DELTA_3 - 0.93) < 1e-12, f"Delta_3 = {DELTA_3}")
-    check("Delta_R = -3.28 % from (D1, D2, D3) assembly",
+    check("Historical Delta_R = -3.28 % from (D1, D2, D3) assembly",
           abs(DELTA_R_CENTRAL + 0.0328) < 0.0001,
           f"Delta_R = {DELTA_R_CENTRAL * 100:+.3f} %")
     print()
 
     # -----------------------------------------------------------------------
-    # Block 5: Lattice Ward + Delta_R prediction at M_Pl (MSbar side)
+    # Block 5: Historical lattice Ward + Delta_R comparator at M_Pl (MSbar side)
     # -----------------------------------------------------------------------
-    print("Block 5: Lattice Ward + Delta_R prediction at M_Pl (MSbar side).")
+    print("Block 5: Historical lattice Ward + Delta_R comparator at M_Pl (MSbar side).")
     ward_plus_dR = WARD_RATIO * (1.0 + DELTA_R_CENTRAL)
     print(f"         1/sqrt(6)                      = {WARD_RATIO:.6f}")
     print(f"         1/sqrt(6) * (1 + Delta_R)      = {ward_plus_dR:.6f}")
     check("Ward (1/sqrt(6)) = 0.4082",
           abs(WARD_RATIO - 0.4082) < 1e-4,
           f"1/sqrt(6) = {WARD_RATIO:.6f}")
-    check("Ward * (1 + Delta_R) = 0.3948 (MSbar prediction at M_Pl)",
+    check("Ward * (1 + historical Delta_R) = 0.3948 (MSbar comparator at M_Pl)",
           abs(ward_plus_dR - 0.3948) < 1e-3,
           f"prediction = {ward_plus_dR:.6f}")
     print()
@@ -390,7 +401,7 @@ def main() -> int:
     diff_abs = ratio_Pl_2loop - ward_plus_dR
     diff_rel_to_ward = diff_abs / WARD_RATIO
     print(f"         SM-RGE 2-loop y_t/g_s (M_Pl)   = {ratio_Pl_2loop:.6f}")
-    print(f"         Ward * (1 + Delta_R_central)   = {ward_plus_dR:.6f}")
+    print(f"         Ward * (1 + Delta_R_historical)= {ward_plus_dR:.6f}")
     print(f"         Difference (abs)               = {diff_abs:+.6f}")
     print(f"         Difference / (1/sqrt(6))       ="
           f" {diff_rel_to_ward * 100:+.3f} %")
@@ -401,7 +412,7 @@ def main() -> int:
     # The direct comparison CANNOT pass because the SM-RGE-only backward
     # extraction and the Ward+Delta_R MSbar prediction at M_Pl are two
     # different quantities. The framework accounts for the gap via the
-    # retained matching coefficient M = 1.9734 which factorizes as
+    # matching coefficient M = 1.9734 which factorizes as
     #   M = sqrt(8/9) * F_yt * sqrt(u_0)
     # with non-RGE matching factors (color projection + CMT endpoint) that
     # do NOT appear in pure SM RGE. This is documented in Block 9 below.
@@ -469,14 +480,15 @@ def main() -> int:
     #
     # However: this "factoring out" cannot be done by undoing factors at v
     # alone because the factors are SCALE-dependent matching, not
-    # running. The scheme conversion Delta_R = -3.27% is a ONE-SHOT
-    # matching correction at M_Pl; the color-projection sqrt(8/9) is a
+    # running. The historical scheme conversion Delta_R = -3.27% was treated
+    # as a one-shot matching correction at M_Pl; the corrected current surface
+    # does not retain that precision. The color-projection sqrt(8/9) is a
     # ONE-SHOT channel-matching correction at v; the CMT endpoint is a
     # mean-field re-normalization at v. These three are ORTHOGONAL
     # pieces of the complete lattice -> SM translation.
     #
     # The honest interpretation of the cross-check:
-    #   Delta_R = -3.27% closes the SCHEME gap at M_Pl.
+    #   historical Delta_R = -3.27% was the tested scheme comparator at M_Pl.
     #   M = 1.9734 closes the total lattice -> SM gap at v.
     #   M decomposes as sqrt(8/9) * F_yt * sqrt(u_0).
     # There is NO residual degree of freedom for the cross-check to
@@ -517,21 +529,26 @@ def main() -> int:
     print("Block 11: Cross-check verdict.")
 
     # The verdict is nuanced. The strict "backward SM RGE == Ward * (1 + Delta_R)"
-    # comparison FAILS by a factor of ~2, but not because Delta_R is wrong;
+    # comparison differs by a factor of ~2, but that is not by itself an RGE
+    # contradiction of the historical Delta_R comparator;
     # rather because the framework's total lattice -> SM translation at v
     # requires non-RGE matching factors (color projection + CMT endpoint)
     # in addition to the scheme conversion at M_Pl. The framework M decomposition
     # IS reproduced by 2-loop SM RGE backward to well within the QFP envelope.
-    # Delta_R = -3.27% remains internally consistent on the retained surface
-    # as the M_Pl scheme-conversion correction.
+    # after the 2026-06-16 P1 correction, Delta_R precision remains
+    # uncontrolled on the current surface.
 
-    verdict = "CROSS-CHECK: CONSISTENT (non-trivially) with the retained framework."
+    verdict = (
+        "BOUNDED-SUPPORT: RGE partitioning is internally consistent; "
+        "Delta_R precision remains uncontrolled on the corrected P1 surface."
+    )
 
     print()
     print("         Summary:")
     print(f"         - Direct comparison of backward SM RGE y_t/g_s (M_Pl)")
     print(f"           against Ward * (1 + Delta_R) at M_Pl yields a ~2x gap.")
-    print(f"         - This gap is NOT a failure of Delta_R = -3.27 %.")
+    print(f"         - This gap is NOT, by itself, an RGE contradiction of")
+    print(f"           the historical Delta_R = -3.27 % comparator.")
     print(f"         - The framework's P2 matching theorem decomposes the")
     print(f"           full lattice -> SM jump at v as M = sqrt(8/9) *")
     print(f"           F_yt * sqrt(u_0) with F_yt from SM RGE running.")
@@ -539,10 +556,10 @@ def main() -> int:
     print(f"           M = {M_computed:.4f} to 0.1% and the decomposition")
     print(f"           {sqrt_8_9 * F_yt_rge_2loop * sqrt_u_0:.4f} closes M to"
           f" within the QFP 3% envelope + 1-loop truncation.")
-    print(f"         - Delta_R = -3.27 % at M_Pl remains an INDEPENDENT")
-    print(f"           scheme-conversion correction, orthogonal to the M")
-    print(f"           matching coefficient at v.")
-    print(f"         - The cross-check confirms the framework's partitioning")
+    print(f"         - The corrected current surface does not retain Delta_R")
+    print(f"           precision; this runner only preserves the bounded RGE")
+    print(f"           partitioning check around the historical comparator.")
+    print(f"         - The cross-check supports the framework's partitioning")
     print(f"           of lattice -> SM into (M_Pl scheme conversion) +")
     print(f"           (v-scale non-RGE matching) + (SM 2-loop RGE running).")
     print()
@@ -552,7 +569,7 @@ def main() -> int:
     check("Overall cross-check verdict: framework-consistent partitioning"
           " of lattice -> SM into three orthogonal pieces",
           True,
-          "no contradiction between Delta_R = -3.27% and SM 2-loop RGE")
+          "RGE partitioning support; no Delta_R precision certificate")
 
     # -----------------------------------------------------------------------
     # Block 12: Claim boundaries and safe envelope
@@ -567,8 +584,9 @@ def main() -> int:
     print(f"           matching coefficient to 0.1% and its sqrt(8/9) * F_yt *")
     print(f"           sqrt(u_0) decomposition to within QFP 3% envelope.")
     print(f"         - The runner DOES claim that no RGE evidence contradicts")
-    print(f"           Delta_R = -3.27 % at M_Pl as the scheme-conversion")
-    print(f"           correction on the Ward ratio.")
+    print(f"           the historical Delta_R = -3.27 % comparator by itself.")
+    print(f"         - The runner DOES NOT claim current retained Delta_R")
+    print(f"           precision after the 2026-06-16 P1 correction.")
     print(f"         - The runner makes NO claim about a framework-native")
     print(f"           4D BZ quadrature of I_v_scalar, I_v_gauge, or I_SE.")
 
@@ -578,7 +596,7 @@ def main() -> int:
     print()
     print("=" * 72)
     print(f"  PASSED: {PASS_COUNT}")
-    print(f"  FAILED: {FAIL_COUNT}")
+    print(f"  HARD ISSUES: {FAIL_COUNT}")
     print("=" * 72)
     return 0 if FAIL_COUNT == 0 else 1
 

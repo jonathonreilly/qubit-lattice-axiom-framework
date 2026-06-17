@@ -1,0 +1,20 @@
+loop_slug: universal-gr-tensor-runner-20260617
+goal: "Unlock audit readiness for universal_gr_tensor_variational_candidate_note without auditing or editing audit data."
+target_claim_id: universal_gr_tensor_variational_candidate_note
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/universal-gr-tensor-runner-20260617
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+block_count: 1
+files_touched:
+  - docs/UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md
+  - scripts/frontier_universal_gr_tensor_variational_candidate.py
+  - logs/runner-cache/frontier_universal_gr_tensor_variational_candidate.txt
+  - .claude/science/physics-loops/universal-gr-tensor-runner-20260617/
+open_imports:
+  - "Einstein/Regge identification remains open; this repair only registers the existing source-side verifier for the bounded tensor-candidate claim."
+review_loop_disposition: reviewer_owned_not_run
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can run review-loop, then audit tooling may rebuild graph/queue to pick up the registered primary runner."
+stop_condition: "Coherent source-side readiness repair packaged as a PR."

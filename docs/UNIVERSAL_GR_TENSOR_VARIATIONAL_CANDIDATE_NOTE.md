@@ -7,6 +7,9 @@
 **Purpose:** identify the first exact tensor-valued `3+1` variational candidate
 from the axiom-side observable principle and the exact `3+1` kinematic lift
 
+**Script:** `scripts/frontier_universal_gr_tensor_variational_candidate.py`
+(source-side verifier; PASS=6 FAIL=0 on current source)
+
 ## Verdict
 
 The direct universal route is still not closed, but it now has a concrete

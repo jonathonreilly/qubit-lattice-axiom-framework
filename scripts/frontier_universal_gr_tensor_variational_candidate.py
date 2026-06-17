@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit the direct-universal tensor variational candidate.
+"""Verify the direct-universal tensor variational candidate.
 
 This is not a closure proof. It checks that the current atlas now supplies:
 
@@ -117,7 +117,7 @@ def main() -> int:
         ),
     ]
 
-    print("UNIVERSAL GR TENSOR VARIATIONAL CANDIDATE AUDIT")
+    print("UNIVERSAL GR TENSOR VARIATIONAL CANDIDATE VERIFIER")
     print("=" * 78)
     for c in checks:
         tag = "PASS" if c.ok else "FAIL"

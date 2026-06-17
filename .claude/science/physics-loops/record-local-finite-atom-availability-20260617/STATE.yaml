@@ -1,0 +1,13 @@
+slug: record-local-finite-atom-availability-20260617
+branch: codex/record-finite-atom-availability-20260617
+date: 2026-06-17
+target_rows:
+  - record_unbounded_finite_additivity_schema_2026-06-06
+actual_current_surface_status: source-side candidate theorem plus parent dependency-edge repair
+audit_lane_touched: false
+review_loop_status: reviewer_owned_not_run
+new_axioms: false
+residual:
+  - production_or_realization_of_records
+  - physical_readout_context_selection
+  - independent_audit_retention_of_support_parents

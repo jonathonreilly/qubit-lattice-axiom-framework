@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_species_bridge_minimum_decomposition_2026_06_13.py
+runner_sha256: 7ffde6457a1fcf0cfe6383ff0e1e6e6c5cf8291e395f12b46683b3dc6335165c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+========================================================================
+Species bridge minimum decomposition: derived support + two vacuities
+========================================================================
+
+--- A. gate-note surface reconstruction
+[PASS] (01) staggered surface: D real antisymmetric, dim ker D = 8, exact corner basis, Hamming grading 1+3+3+1
+[PASS] (02) lattice C_3[111] rotation U_R (U_R^3 = I) preserves ker D; staggered chirality eps = diag((-1)^sum x) built
+
+--- B. derived support: hw=1 carrier is M_3(C) (gate-note clause)
+[PASS] (03) derived support reproduced: the hw=1 triplet is 3 orthogonal C_3-connected states; algebra(T_1,T_2,T_3,C_3)|hw=1 = M_3(C) (dim 9, scalar commutant => irreducible, no proper exact quotient). The carrier STRUCTURE is derived, not admitted  [algebra dim = 9, commutant dim = 1]
+
+--- C. within-triplet naming vacuity (landed labeling no-go)
+[PASS] (04) within-triplet naming is vacuous: the hw=1 states form a SINGLE C_3 orbit (C_3 is a 3-cycle), and a generic C_3-equivariant Hermitian equipartitions (diag = Tr/3), so no structure-derived functional separates the corners -- which corner is e/mu/tau is convention (labeling no-go reproduced)
+
+--- D. carrier-triplet vacuity: eps is a unitary C_3-intertwiner
+[PASS] (05) the staggered chirality eps satisfies eps D eps = -D (preserves ker D) and COMMUTES with the C_3 rotation U_R ([eps, U_R] = 0)
+[PASS] (06) eps maps the hw=1 triplet bijectively onto the hw=2 triplet (the (pi,pi,pi) corner shift hw_k <-> hw_(3-k))
+[PASS] (07) the two candidate carriers are UNITARILY EQUIVALENT as C_3-representations: hw=2 is also M_3(C) (dim 9, scalar commutant), and eps restricts to a unitary intertwiner EH with EH C_3|hw1 = C_3|hw2 EH (same orientation) -- the carrier-triplet choice supplies NO structural or numerical content  [hw2 algebra dim = 9, commutant = 1]
+
+--- E. the irreducible residual carries no tested C_3-grade content
+[PASS] (08) no C_3-EQUIVARIANT functional separates the corners: the corner-weight diagonal SEPARATES corners for a generic operator but is forced EQUAL once the operator is C_3-equivariant (orbit-averaged) -- the constancy is from orbit-averaging, not trivial invariance. The eps carrier-swap pulled back via the intertwiner is the IDENTITY (EH^dag EH = I), so carrier-vacuity is carried by check 7  [generic diag spread = 5.95, equivariant spread = 0.0e+00]
+[PASS] (09) each tested C_3-grade input-type is discharged by a computed witness: NUMBER -> the carrier is the rigid regular C_3-rep (3 fixed integer character triples (-1,1,1)/(1,-1,1)/(1,1,-1), no free modulus); SELECTOR -> unitary carrier-equivalence (7) + single orbit (4); ORDERING/WEIGHT -> equivariant equipartition (8). The bridge supplies none at this grade -- a pure interpretive identification of the same C_3-structural class as abstract-su(3) -> physical color
+
+--- F. interface pins and residuals
+[PASS] (10) interface pins: the labeling no-go's orbit-equivariance invariant (within-triplet naming) and the gate note's hw=1 M_3(C) algebraic clause (derived carrier structure) are present in the live notes
+RESIDUAL (declared-open): the abstract-sector -> physical-species interpretive identification itself is the irreducible residual of AC_phi_lambda(iii): contentless at the tested C_3-structural grade (this note), but still an interpretive bridge of the same C_3-grade class as the universal abstract->physical identification -- NOT derived away, only shown to carry no tested number/selector/structural choice.
+RESIDUAL (declared-open): the carrier-triplet vacuity consumes the staggered surface at the gate-note grade (the hw structure and U_R/eps operators); across-fermion-type alignment (CKM/PMNS) is a SEPARATE residual, not addressed here.
+RESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades (kinetic-class premise, spin-statistics support tier, boundary-holonomy convention).
+
+TOTAL: PASS=10 FAIL=0
+VERDICT: the species bridge AC_phi_lambda(iii) decomposes into derived support (the hw=1 carrier is M_3(C), irreducible, no proper quotient) + two vacuities (within-triplet naming: single C_3 orbit, equipartition; carrier-triplet choice: hw=1 and hw=2 unitarily equivalent via the chirality eps, a C_3-intertwiner) + one irreducible residual that is contentless at the tested C_3-structural grade (under the C_3 relabeling and eps carrier-swap symmetries tested here; supplies no tested number/selector/ordering/weight) -- the same C_3-grade class as the universal abstract->physical identification. The minimum form of AC_phi_lambda(iii) is a single C_3-grade contentless interpretive identification. Nothing retired; no audit status set.
+
+----- stderr -----
+

@@ -618,7 +618,7 @@ def block_D_discipline() -> None:
     record("D", "2026-06-12 firewall: B-RANGE retired, B-AXIS remains the live blocker",
            "2026-06-12 Remaining-Blocker Source Firewall" in text
            and "B-AXIS as the live" in text
-           and "record-durability axis selection" in text
+           and "record-durability axis-selection" in text
            and "do not derive B-AXIS" in text
            and "No retained-grade proposal or status promotion is made here" in text,
            "axis-selection route-pruning context wired without retained promotion")

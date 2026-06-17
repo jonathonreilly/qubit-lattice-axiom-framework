@@ -277,7 +277,7 @@ theta alpha = 0.127269601426283 < theta.
 
 The runner also displays the `gamma` channel scale
 `theta gamma = 0.106772973260081`; source second order has scale
-`theta^2 = 0.069561876543...`, also smaller than `theta`.
+`theta^2 = 0.069561876543177...`, also smaller than `theta`.
 
 ## Measured Envelope
 
@@ -311,7 +311,7 @@ python3 scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_
 Expected final line:
 
 ```text
-TOTAL: PASS=23, FAIL=0
+TOTAL: PASS=24, FAIL=0
 ```
 
 Regenerate the cache:

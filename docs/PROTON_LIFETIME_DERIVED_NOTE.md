@@ -1,5 +1,7 @@
 # Proton Lifetime Derived from Cl(3) on Z^3
 
+**Primary runner:** `scripts/frontier_proton_lifetime_derived.py`
+
 ## Status
 
 **Bounded prediction** -- sharp falsifiable.

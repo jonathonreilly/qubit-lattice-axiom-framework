@@ -1,0 +1,20 @@
+loop: proton-lifetime-runner-20260617
+goal: unlock proton_lifetime_derived_note without auditing or retagging
+target_status: bounded-support
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/proton-lifetime-runner-20260617
+cycle_count: 1
+active_route: register existing passing runner for a bounded/imported support prediction
+files_touched:
+  - docs/PROTON_LIFETIME_DERIVED_NOTE.md
+  - logs/runner-cache/frontier_proton_lifetime_derived.txt
+  - .claude/science/physics-loops/proton-lifetime-runner-20260617/
+open_imports:
+  - dimension-6 EFT decay formula
+  - alpha_GUT = 1/25
+  - QCD hadronic matrix elements not computed
+trace_gate: direct_blocker_closure
+review_disposition: reviewer_owned_not_run
+audit_disposition: independent_audit_required
+next_exact_action: reviewer should run review-loop and decide whether the runner registration queues proton_lifetime_derived_note for audit
+stop_condition: coherent source-side PR opened

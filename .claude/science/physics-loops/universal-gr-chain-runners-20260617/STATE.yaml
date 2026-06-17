@@ -1,0 +1,32 @@
+loop_slug: universal-gr-chain-runners-20260617
+goal: "Unlock audit readiness for Universal GR missing-runner source notes."
+target_claim_ids:
+  - universal_gr_lorentzian_signature_extension_note
+  - universal_gr_isotropic_glue_operator_note
+  - universal_gr_constraint_action_stationarity_note
+  - universal_gr_canonical_projector_connection_note
+  - universal_gr_curvature_localization_blocker_note
+  - universal_gr_block_constraint_interpretation_note
+  - universal_gr_tensor_action_blocker_note
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/universal-gr-chain-runners-20260617
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+block_count: 1
+files_touched:
+  - docs/UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md
+  - docs/UNIVERSAL_GR_ISOTROPIC_GLUE_OPERATOR_NOTE.md
+  - docs/UNIVERSAL_GR_CONSTRAINT_ACTION_STATIONARITY_NOTE.md
+  - docs/UNIVERSAL_GR_CANONICAL_PROJECTOR_CONNECTION_NOTE.md
+  - docs/UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md
+  - docs/UNIVERSAL_GR_BLOCK_CONSTRAINT_INTERPRETATION_NOTE.md
+  - docs/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md
+  - logs/runner-cache/frontier_universal_gr_*.txt
+  - .claude/science/physics-loops/universal-gr-chain-runners-20260617/
+open_imports:
+  - "Independent audit must still grade source claims, blocker boundaries, and conditional/renaming surfaces."
+review_loop_disposition: reviewer_owned_not_run
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can run review-loop; audit tooling can then rebuild graph/queue and pick up the registered runner paths."
+stop_condition: "Seven coherent Universal GR source-side runner registrations packaged as a PR."

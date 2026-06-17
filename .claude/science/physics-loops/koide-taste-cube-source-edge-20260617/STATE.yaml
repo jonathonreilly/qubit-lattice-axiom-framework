@@ -1,0 +1,35 @@
+loop_slug: koide-taste-cube-source-edge-20260617
+current_goal: >
+  Finish the Koide taste-cube cyclic-source descent source-edge repair by
+  removing a non-load-bearing broad realization-gate source slug from the note
+  and adding runner guards for the finite C^8/T1/C3 proof surface.
+target_status: exact-support
+current_surface_status: exact-support
+branch: codex/koide-taste-cube-source-edge-20260617
+base: origin/main
+cycle_count: 1
+active_route: source-dependency edge repair
+hard_residual: >
+  The finite descent theorem reconstructs the C^8 taste cube, T1 projector,
+  C3[111] cycle action, matrix-unit averaging, and Schur-compatible reduction
+  directly, but a context sentence still named the broad realization-gate
+  source path.
+files_touched:
+  - docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md
+  - scripts/frontier_koide_taste_cube_cyclic_source_descent.py
+  - logs/runner-cache/frontier_koide_taste_cube_cyclic_source_descent.txt
+  - .claude/science/physics-loops/koide-taste-cube-source-edge-20260617/
+open_imports:
+  - microscopic full-cube source law for the three cyclic responses
+  - selector law placing the responses on the Koide cone
+  - physical charged-lepton response/readout bridge
+no_go_routes:
+  - >
+    Treating the broad realization-gate parent as a proof input for this row
+    is unnecessary; the finite descent theorem is reconstructed locally.
+trace_gate: direct_blocker_closure
+review_loop_disposition: delegated_to_reviewer
+runner_result: "scripts/frontier_koide_taste_cube_cyclic_source_descent.py: PASS=19 FAIL=0; cache fresh"
+pr_status: pending
+next_exact_action: "Run final checks, commit, push, and open a ready PR."
+stop_condition: "PR opened for reviewer; no audit verdict or main landing performed."

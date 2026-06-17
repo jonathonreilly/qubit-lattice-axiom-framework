@@ -1,46 +1,52 @@
 # Propagator Family Unification Note
 
-**Date:** 2026-04-05  
-**Status:** narrow review-safe unification note for the proposed_retained wavefield,
-complex-action, and electrostatics scalar-sign-law lanes
+**Date:** 2026-04-05 (bounded scaffold bridge refresh: 2026-06-17)
+**Status:** bounded scaffold bridge / synthesis support; not an audit verdict
 
-**Status authority and audit hygiene (2026-05-10):**
-This is a cross-note synthesis with `claim_type = meta`. The audit lane has
-classified the note `audited_conditional`. Two reasons stand:
-(a) at least one cited authority
-(`claude_complex_action_grown_companion_note`) is itself
-`audited_conditional`, and another (`source_resolved_wavefield_mechanism_note`)
-is currently `unaudited`, so retained-grade support does not
-propagate through the synthesis; and
-(b) the note does not provide a bridge theorem proving the transport
-architectures are literally the same across lanes rather than only
-analogously described. This note therefore makes no load-bearing
-contribution and is not itself eligible for promotion until those
-upstream dependencies are first promoted to retained-grade and a
-narrow bridge theorem identifying the shared transport scaffold is
-added. The "Safe conclusion" below should be read as a status report
-on a propagator-family naming convention, not as a derivation. Audit
-verdict and effective status are set by the independent audit lane
-only; nothing in this rigorization edit promotes status.
+**Primary runner:** `scripts/propagator_family_scaffold_bridge.py`
+**Cached runner output:** [`logs/runner-cache/propagator_family_scaffold_bridge.txt`](../logs/runner-cache/propagator_family_scaffold_bridge.txt)
+
+**Status authority and audit hygiene (2026-06-17):**
+This note is now paired with a bounded scaffold bridge runner. The
+runner checks, from repository source, that the cited wavefield,
+complex-action, and electrostatics lanes use a common factorized
+edge-update scaffold: scalar fields are built outside the propagator,
+sampled at edge endpoints, and then enter the edge action or attenuation
+slot while the geometry-first path-sum prefactor remains separate.
+
+The bridge is intentionally narrow. It certifies source-level scaffold
+identity only; it is not a continuum theorem, not a full electromagnetism
+derivation, not a self-gravity derivation, and not a geometry-generic
+transfer theorem. The existing fixed-field runner
+[`scripts/FIXED_FIELD_FAMILY_UNIFICATION.py`](../scripts/FIXED_FIELD_FAMILY_UNIFICATION.py)
+continues to carry the stronger same-grown-row comparison between the
+signed-source and complex-action companions.
+
+Firewall summary: this is a bounded scaffold bridge; it is not a
+continuum theorem, not a full electromagnetism derivation, and the
+independent audit lane remains authoritative.
+
+Independent audit lane status remains authoritative. This source note
+does not retag itself, does not set an effective status, and does not
+claim retained-grade propagation before the upstream rows and this
+bounded bridge are independently audited.
 
 ## Artifact chain
 
-This note is a synthesis of `main` notes (mixed retained / audited_conditional / unaudited):
+This note is a synthesis of `main` notes plus the bounded scaffold bridge
+runner above:
 
-- [`docs/SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md`](SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md) — currently `unaudited`
-- [`docs/CLAUDE_COMPLEX_ACTION_CARRYOVER_NOTE.md`](CLAUDE_COMPLEX_ACTION_CARRYOVER_NOTE.md) — currently `retained_bounded`
-- [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) — currently `audited_conditional`
-- [`docs/ELECTROSTATICS_CARD_NOTE.md`](ELECTROSTATICS_CARD_NOTE.md) — currently `retained`
-- [`docs/ELECTROSTATICS_SUPERPOSITION_PROXY_NOTE.md`](ELECTROSTATICS_SUPERPOSITION_PROXY_NOTE.md) — currently `retained`
+- [`docs/SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md`](SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md) — runner-backed exact-lattice mechanism row; independent audit still required
+- [`docs/CLAUDE_COMPLEX_ACTION_CARRYOVER_NOTE.md`](CLAUDE_COMPLEX_ACTION_CARRYOVER_NOTE.md) — retained-bounded parent context
+- [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) — retained-bounded grown-row complex-action companion on the current audit surface
+- [`docs/ELECTROSTATICS_CARD_NOTE.md`](ELECTROSTATICS_CARD_NOTE.md) — retained scalar sign-law card on the current audit surface
+- [`docs/ELECTROSTATICS_SUPERPOSITION_PROXY_NOTE.md`](ELECTROSTATICS_SUPERPOSITION_PROXY_NOTE.md) — retained scalar superposition proxy on the current audit surface
+- [`scripts/FIXED_FIELD_FAMILY_UNIFICATION.py`](../scripts/FIXED_FIELD_FAMILY_UNIFICATION.py) — same-grown-row signed-source / complex-action comparison
+- [`scripts/propagator_family_scaffold_bridge.py`](../scripts/propagator_family_scaffold_bridge.py) — bounded source-level scaffold bridge for this synthesis
 
-Of the five cited authorities, two block retained-grade propagation
-through the synthesis: one is `audited_conditional` and one is
-`unaudited`. Statuses listed above are a snapshot at the time of this
-edit and may move as the audit lane progresses — the author of any
-future re-audit should confirm against `audit_ledger.json` rather than
-this static list. The links above are also corrected to relative repo
-paths (the original absolute `/Users/jonreilly/...` paths were a stale
-local layout from the original draft and pointed outside this checkout).
+Statuses listed above are source-facing context only. The author of any
+future re-audit should confirm current status against the audit ledger
+rather than this static prose.
 
 ## One-line read
 
@@ -132,7 +138,7 @@ Interpretation:
 
 ## What is actually unified
 
-The narrow unification is:
+The bounded scaffold bridge is:
 
 - same underlying path-sum / transport scaffold
 - same requirement for a null or zero-coupling reduction
@@ -140,8 +146,11 @@ The narrow unification is:
 - same review discipline: the promoted observable must survive the baseline
   check
 
-That is enough to say the project has a **propagator family**, not merely a set
-of unrelated cards.
+The runner-backed wording is deliberately "scaffold bridge", not a
+framework-wide operator-equality theorem. It is enough to justify using
+"propagator family" as an organizing and bounded bridge term once the
+upstream runner-backed rows pass independent audit; it is not enough to
+close continuum, geometry-generic, or physical-unification claims.
 
 ## What is not unified yet
 
@@ -162,35 +171,29 @@ taxonomy of existing results.
 
 The narrow review-safe statement is:
 
-- the cited wavefield, complex-action, and electrostatics results share an
-  analogous path-sum / transport scaffold at the descriptive level
-- the difference between them is captured by a scalar coupling attached at
-  the edge level, not by changes to the overall transport architecture
-- using these notes as a coordinated "propagator family" is an organizing
-  convention; treating the synthesis as a load-bearing bridge theorem is
-  not yet supported by the cited material
+- the cited wavefield, complex-action, and electrostatics runners share a
+  source-checked factorized edge-update scaffold
+- the difference between them is captured by scalar data attached at the
+  edge-action or edge-attenuation slot, not by replacing the path-sum
+  transport scaffold
+- the fixed-field runner gives the strongest same-row support for the
+  signed-source / complex-action pair
+- the synthesis remains bounded scaffold support until the remaining
+  upstream rows and this bridge pass independent audit
 
 That is the strongest unification description currently supported on
-`main`. It is a naming/organizing claim, not a derivation.
+`main`. It is bounded scaffold support, not a full unification theorem.
 
 ## Audit-aware repair path
 
 The audit lane's stated cheapest repair (see `audit_ledger.json`,
 `notes_for_re_audit_if_any` for `propagator_family_unification_note`):
 
-1. close or replace the non-retained dependencies — currently
-   `source_resolved_wavefield_mechanism_note` (`unaudited`) and
-   `claude_complex_action_grown_companion_note`
-   (`audited_conditional`) — with retained-grade authorities; only
-   then does retained-grade support propagate into this synthesis;
-2. then add a narrow bridge theorem identifying the shared transport
-   scaffold across lanes — explicitly establishing that the path-sum
-   transport rule is the same operator family in each lane, not merely
-   the same descriptive pattern;
-3. only after both steps is the synthesis itself eligible for re-audit at
+1. audit the runner-backed source-resolved wavefield mechanism dependency;
+2. audit the bounded scaffold bridge runner added here;
+3. only after those steps is the synthesis itself eligible for re-audit at
    anything stronger than `audited_conditional`.
 
 Until those steps land, this note must be cited only as a non-load-bearing
-organizing description, never as a bridge theorem and never as a chain
-closure for any descendant claim.
-
+bounded scaffold support, never as full chain closure for any descendant
+claim.

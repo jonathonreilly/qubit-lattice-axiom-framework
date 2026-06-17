@@ -128,6 +128,7 @@ defines_lepton_composite_bridge = (
     "lepton composite higgs" in combined
     or "lepton-composite scalar" in combined
     or "lepton composite scalar" in combined
+    or "lepton scalar bridge" in combined
 )
 
 check(

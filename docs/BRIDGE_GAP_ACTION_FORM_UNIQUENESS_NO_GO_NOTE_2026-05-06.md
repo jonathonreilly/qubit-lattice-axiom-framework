@@ -11,6 +11,8 @@ heat-kernel, Manton, or some other gauge action functional? — CANNOT
 be resolved. The framework's derived action is action-form ambiguous;
 distinct admissible actions (compatible with all current primitives)
 give distinct ⟨P⟩(6) values at finite β.
+**Script:** `scripts/frontier_bridge_gap_action_form_uniqueness_no_go.py`
+(source-side no-go verifier; PASS=14 FAIL=0 on current source)
 **Authority role:** no-go source proposal. Audit verdict and downstream
 status are set only by the independent audit lane.
 
@@ -91,7 +93,7 @@ Setting `(β/(4 N_c)) = 1/(2t) = (β_M / 2)` matches all three at leading
 order. At canonical `g_bare = 1, β = 6`:
 
 ```
-β_W = 6, t_HK = 1, β_M = 1/3.                                              (Step 1.1)
+β_W = 6, t_HK = 1, β_M = 1.                                                (Step 1.1)
 ```
 
 All three actions are consistent with A1+A2+canonical Tr-form +
@@ -114,7 +116,7 @@ These differences propagate to **distinct finite-β plaquette
 expectations**:
 
 ```
-⟨P⟩_W(β=6) ≠ ⟨P⟩_HK(t=1) ≠ ⟨P⟩_M(β=1/3) at finite β.                       (Step 2.1)
+⟨P⟩_W(β=6) ≠ ⟨P⟩_HK(t=1) ≠ ⟨P⟩_M(β=1) at finite β.                         (Step 2.1)
 ```
 
 In particular, single-plaquette evaluations:

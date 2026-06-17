@@ -1,0 +1,20 @@
+loop_slug: action-form-uniqueness-runner-20260617
+goal: "Unlock audit readiness for bridge_gap_action_form_uniqueness_no_go_note_2026-05-06 without auditing or editing audit data."
+target_claim_id: bridge_gap_action_form_uniqueness_no_go_note_2026-05-06
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/action-form-uniqueness-runner-20260617
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+block_count: 1
+files_touched:
+  - docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md
+  - scripts/frontier_bridge_gap_action_form_uniqueness_no_go.py
+  - logs/runner-cache/frontier_bridge_gap_action_form_uniqueness_no_go.txt
+  - .claude/science/physics-loops/action-form-uniqueness-runner-20260617/
+open_imports:
+  - "The later HK diffusion theorem gives a conditional route but leaves the gauge-link diffusion/generator realization open."
+review_loop_disposition: reviewer_owned_not_run
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can run review-loop; audit tooling can then rebuild graph/queue and pick up the new primary runner."
+stop_condition: "Coherent source-side no-go verifier packaged as a PR."

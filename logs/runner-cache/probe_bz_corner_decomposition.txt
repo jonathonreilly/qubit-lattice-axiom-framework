@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/probe_bz_corner_decomposition.py
-runner_sha256: 86cd6ef3a20799dc049bbea4cb951a2dcf4ef381eb27cde8a4afe80def9d6bf7
+runner_sha256: 509d3a1b105e7c3582cd1168c7ce48c41dffd251ec817ec923db97ba3dc59b5d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ========================================================================
@@ -79,6 +79,24 @@ Source-scope firewall:
   forbidden parity/chirality overclaims absent: PASS
   firewall status: PASS
 
+Classified audit-visible scorecard:
+  [PASS] [A] BZ-corner count is 1+3+3+1 by Hamming weight
+  [PASS] [A] hw=1 translation characters are the three separated sign triples
+  [PASS] [A] hw=1 joint translation characters are pairwise distinct
+  [PASS] [A] C3[111] acts as a genuine three-cycle on hw=1
+  [PASS] [A] translation-character projectors are idempotent
+  [PASS] [A] translation-character projectors are orthogonal
+  [PASS] [A] translation-character projectors are rank-one
+  [PASS] [A] translation-character projectors resolve I_3
+  [PASS] [A] projectors and C3 powers recover all nine matrix units
+  [PASS] [A] translations plus C3[111] generate M_3(C)
+  [PASS] [A] no proper nonzero subspace preserves D_3 projectors and C3
+  [PASS] [A] position-space epsilon complement action is involutive
+  [PASS] [A] position-space epsilon flips Hamming parity in d=3
+  [PASS] [A] position-space epsilon maps hw=1 to hw=2
+  [PASS] [A] Hamming even/odd corner counts are balanced
+  [PASS] [A] source note fences off chirality/sublattice overclaims
+runner_check_breakdown = {A: 16, B: 0, C: 0, D: 0, total_pass: 16}
 SUMMARY: PASS=16 FAIL=0 (out of 16 structural checks)
 
 Bounded theorem (T3) — BZ-corner algebraic triplet support — verified.

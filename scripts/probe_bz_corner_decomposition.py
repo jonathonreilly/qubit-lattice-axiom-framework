@@ -297,29 +297,38 @@ def main() -> int:
     print(f"  firewall status: {'PASS' if source_scope_firewall_ok else 'FAIL'}")
     print()
 
-    # Overall verdict
-    all_checks = [
-        decomp_matches,
-        chars_match,
-        distinct,
-        c3_is_3cycle,
-        projector_idempotent,
-        projector_orthogonal,
-        projector_rank1,
-        projectors_resolve_identity,
-        all_matrix_units_recovered,
-        full_m3_generated,
-        no_proper_subspace,
-        epsilon_involution,
-        epsilon_flips_hw_parity,
-        hw1_maps_to_hw2,
-        hamming_parity_balanced,
-        source_scope_firewall_ok,
+    # Emit a machine-readable class-A scorecard without changing the
+    # explanatory transcript above. These are all finite algebra/source-scope
+    # checks over the declared BZ-corner carrier.
+    classified_checks = [
+        ("BZ-corner count is 1+3+3+1 by Hamming weight", decomp_matches),
+        ("hw=1 translation characters are the three separated sign triples", chars_match),
+        ("hw=1 joint translation characters are pairwise distinct", distinct),
+        ("C3[111] acts as a genuine three-cycle on hw=1", c3_is_3cycle),
+        ("translation-character projectors are idempotent", projector_idempotent),
+        ("translation-character projectors are orthogonal", projector_orthogonal),
+        ("translation-character projectors are rank-one", projector_rank1),
+        ("translation-character projectors resolve I_3", projectors_resolve_identity),
+        ("projectors and C3 powers recover all nine matrix units", all_matrix_units_recovered),
+        ("translations plus C3[111] generate M_3(C)", full_m3_generated),
+        ("no proper nonzero subspace preserves D_3 projectors and C3", no_proper_subspace),
+        ("position-space epsilon complement action is involutive", epsilon_involution),
+        ("position-space epsilon flips Hamming parity in d=3", epsilon_flips_hw_parity),
+        ("position-space epsilon maps hw=1 to hw=2", hw1_maps_to_hw2),
+        ("Hamming even/odd corner counts are balanced", hamming_parity_balanced),
+        ("source note fences off chirality/sublattice overclaims", source_scope_firewall_ok),
     ]
-    n_pass = sum(all_checks)
-    n_total = len(all_checks)
+    n_pass = sum(ok for _, ok in classified_checks)
+    n_total = len(classified_checks)
+    n_fail = n_total - n_pass
 
-    print(f"SUMMARY: PASS={n_pass} FAIL={n_total - n_pass} (out of {n_total} structural checks)")
+    print("Classified audit-visible scorecard:")
+    for label, ok in classified_checks:
+        status = "PASS" if ok else "FAIL"
+        print(f"  [{status}] [A] {label}")
+
+    print(f"runner_check_breakdown = {{A: {n_pass}, B: 0, C: 0, D: 0, total_pass: {n_pass}}}")
+    print(f"SUMMARY: PASS={n_pass} FAIL={n_fail} (out of {n_total} structural checks)")
     print()
     print("Bounded theorem (T3) — BZ-corner algebraic triplet support — verified.")
     print("Staggered-Dirac on Z^3 APBC has unique 1+3+3+1 BZ-corner")

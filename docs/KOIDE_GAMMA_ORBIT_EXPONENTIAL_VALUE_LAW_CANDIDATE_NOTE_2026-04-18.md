@@ -5,6 +5,23 @@
 class on the `Gamma_i` / full-cube route  
 **Runner:** `scripts/frontier_koide_gamma_orbit_exponential_value_law_candidate.py`
 
+## Source boundary (2026-06-12)
+
+**Boundary:** numerical-match / calibrated witness only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The displayed charged-lepton agreement load-bears an imported neutrino-sector
+`H_*`, a selected small-root branch, an optimized `beta_*`, and PDG
+`sqrt(m)` amplitudes as comparators. This note may be cited only as a sharp
+calibrated witness family inside the exact one-clock semigroup class. It may
+not be cited as a retained value-law theorem, a derivation of `H_*`, a
+derivation of the branch, a derivation of `beta_*`, or a prediction of the
+charged-lepton mass direction without observational optimization.
+
+Promotion beyond numerical-match support requires deriving `H_*`, the branch,
+and `beta_*` from retained charged-lepton microscopic dynamics without fitting
+to PDG targets.
+
 ## Question
 
 After the exact full-cube orbit law, the remaining positive basis-free target
@@ -19,7 +36,8 @@ microscopic objects?
 
 ## Bottom line
 
-Yes. There is a sharp one-parameter witness family.
+As a calibrated numerical witness, yes. There is a sharp one-parameter witness
+family.
 
 Take the live Hermitian
 ```text

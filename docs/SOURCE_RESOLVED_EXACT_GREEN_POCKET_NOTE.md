@@ -19,6 +19,22 @@ Green-kernel choice and the calibration gain are runner-selected, not
 derived from the Quantum one-site local algebra or the Lattice `Z^3`
 baseline.
 
+## Source boundary (2026-06-12)
+
+**Boundary:** numerical-match / bounded support only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The load-bearing numerical pocket depends on runner-selected modeling inputs:
+the Green-like kernel form and parameters, the boundary-clipped source cluster,
+and the calibrated gain. This note may be cited only for the declared small
+exact-lattice family and its runner-backed table. It may not be cited as a
+derivation of the Green kernel, field dynamics, amplitude normalization,
+source geometry, continuum transfer, or size-transfer law.
+
+Promotion beyond numerical-match support requires a separate theorem deriving
+the kernel, parameters, source geometry, and gain from retained framework
+dynamics.
+
 ## Audit boundary (2026-05-10)
 
 The independent audit verdict on this row's prior active hash was

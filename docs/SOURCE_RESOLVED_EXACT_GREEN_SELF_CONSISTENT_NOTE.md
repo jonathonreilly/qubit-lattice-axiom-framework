@@ -4,6 +4,22 @@
 **Status:** bounded self-consistent refinement-positive on the compact exact
 lattice with explicit assertion wrapper
 
+## Source boundary (2026-06-12)
+
+**Boundary:** numerical-match / bounded calibrated pocket only. Effective
+status is audit-derived; this source records only the claim boundary.
+
+The frozen table depends on the selected compact lattice, selected source
+cluster, selected Green-like kernel, calibrated gain input, and a single
+self-consistency update. This note may be cited only for the bounded
+runner-backed pocket on that declared surface. It may not be cited as a
+derivation of the gain, field normalization, source geometry, fully converged
+self-consistent dynamics, continuum transfer, or physical amplitude.
+
+Promotion beyond numerical-match support requires deriving the calibration
+gain and field normalization from retained dynamics, and replacing the single
+update pocket with a theorem-grade self-consistent dynamics result.
+
 ## Artifact chain
 
 - [`scripts/source_resolved_exact_green_self_consistent.py`](../scripts/source_resolved_exact_green_self_consistent.py)
@@ -100,9 +116,9 @@ theory.
 - still, it is the smallest exact-lattice refinement of the Green pocket that
   preserves the hard gates cleanly
 
-## Branch verdict
+## Bounded numerical read
 
-Treat this as a real bounded positive:
+Treat this as a bounded calibrated pocket only:
 
 - exact zero-source reduction survives
 - weak-field sign survives

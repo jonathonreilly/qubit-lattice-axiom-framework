@@ -1,0 +1,21 @@
+loop_slug: hk-thermo-stretch-runner-20260617
+target: bridge_gap_hk_thermodynamic_stretch_note_2026-05-06
+branch: codex/hk-thermo-stretch-runner-20260617
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_loop_disposition: reviewer_owned_not_run
+files_touched:
+  - docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md
+  - scripts/frontier_hk_thermodynamic_stretch_source_packet.py
+  - logs/runner-cache/frontier_hk_thermodynamic_stretch_source_packet.txt
+  - .claude/science/physics-loops/hk-thermo-stretch-runner-20260617/
+commands_run:
+  - python3 scripts/frontier_hk_thermodynamic_stretch_source_packet.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_hk_thermodynamic_stretch_source_packet.py
+next_exact_action: reviewer should run review-loop, then queue independent re-audit of the HK thermodynamic stretch open-gate row if accepted.
+stop_condition: coherent source-side PR opened; no audit verdict applied.

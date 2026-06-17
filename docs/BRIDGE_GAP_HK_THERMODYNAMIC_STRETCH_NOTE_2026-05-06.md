@@ -12,6 +12,15 @@ input is still needed.
 **Authority role:** stretch-attempt source note. Audit verdict and
 downstream status are set only by the independent audit lane.
 
+Primary runner: `scripts/frontier_hk_thermodynamic_stretch_source_packet.py`
+
+Primary cache: `logs/runner-cache/frontier_hk_thermodynamic_stretch_source_packet.txt`
+
+The runner checks this note as a source-level open-gate packet: Block 01's
+`t(6)=1`, Block 02's exact single-plaquette `exp(-2/3)`, the Block 03
+multi-plaquette factorization/obstruction, and the later Block 06 finite-cube
+HK Perron comparator. It does not assign an audit verdict or retained status.
+
 ## Question
 
 Given Block 01's `t(6) = 1` and Block 02's exact closed-form for
@@ -228,9 +237,13 @@ heat-kernel expression. It does not derive a thermodynamic value.
 
 - A specific closed-form value for `⟨P⟩_HK(6)` in the thermodynamic
   limit. The factorization (T3.a) is exact but uncomputed.
-- An L_s=2 finite-cube computation analogous to the Wilson case, which
-  could be done via direct adaptation of `frontier_su3_cube_full_rho_perron_2026_05_04.py`
-  to HK weights. (Recommended next-cycle task.)
+- The L_s=2 finite-cube computation analogous to the Wilson case has now
+  been done in
+  [`BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md):
+  `P_cube_HK(L_s=2,t=1)=0.5223243151`. This closes Path A as a
+  finite-volume comparator only; Block 03's named obstruction stands because
+  the result remains fixed-volume and still needs an `L_s -> infinity`
+  cluster-decomposition / exponential-clustering estimate.
 - The cluster-decomposition / exponential-clustering estimate that
   bounds `|⟨P⟩_HK(6) - ⟨P⟩_HK,Λ_finite(6)|`.
 - Block 04's action-form uniqueness question — Wilson vs HK uniqueness
@@ -263,8 +276,10 @@ Both paths are next-cycle work, scoped beyond this stretch attempt's
 ## Cross-references
 
 - Predecessor (this loop): [`BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md) (Block 02)
+- Time-normalization predecessor: [`BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md) (Block 01)
 - Sister Wilson L_s=2: [`SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md`](SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md) (Wilson L_s=2 = 0.4291)
 - Wilson β⁶-completion freedom: [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md)
 - Existing cube Perron infra: [`scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py`](../scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py)
+- Completed Path A comparator: [`BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md)
 - Casimir retained: [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md)
 - Standard methodology: same as Block 01-02 (Drouffe-Zuber 1983 "Strong coupling and mean field methods in lattice gauge theories" Phys Rep 102 contains the heat-kernel multi-plaquette character expansion in detail)

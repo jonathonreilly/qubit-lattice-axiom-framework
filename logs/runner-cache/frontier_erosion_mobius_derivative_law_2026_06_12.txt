@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/frontier_erosion_mobius_derivative_law_2026_06_12.py
+runner_sha256: 28597d4274dafe15c9a1290c2f541d496999409fb05a9f5d3da6029b1f7e30c6
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 0.82
+status: ok
+----- stdout -----
+Erosion Moebius derivative chain-rule verification
+Recurrence: p_s=(p+s eps)/(1+s eps p), c_s=c*(1-eps^2)/(1+s eps p)^2
+==============================================================================
+S0 anchors first
+==============================================================================
+landed uniform anchor: eps=0.2, closed_rate=0.6666666666666667, frozen=0.6666666666666666
+PASS: S0 landed uniform rate at eps=0.2 is reproduced :: abs_err=1.110e-16, tol=1.0e-10
+landed alternating two-step anchor: eps=0.2, p0=0.0, product=1
+PASS: S0 landed alternating two-step c-product is 1 :: abs_err=0.000e+00, tol=1.0e-14
+anti-fabrication uniform lambda_max: eps=0.2, word=+, lambda_max=1.2
+PASS: S0 anti-fabrication: uniform-word lambda_max is strictly nontrivial :: lambda_max=1.2, strict_min=1.0
+==============================================================================
+I1 pointwise derivative identity
+==============================================================================
+sympy derivative residuals: plus=0, minus=0
+PASS: I1 sympy: c-factor equals f_s'(p) pointwise for s=+1 and s=-1 :: plus_residual=0, minus_residual=0
+==============================================================================
+I2 chain rule
+==============================================================================
+numeric chain grid: p0=-0.27, max_derivative_err=6.661e-16, max_action_err=3.331e-16
+PASS: I2 numeric: c_n/c_0 equals the matrix derivative of F_n on the fixed grid :: max_err=6.661e-16, tol=1.0e-12
+PASS: I2 numeric: recurrence composition matches the projective matrix action :: max_err=3.331e-16, tol=1.0e-12
+symbolic n=3 chain-rule sweep: fixed_triples=8, failures=0
+PASS: I2 sympy: n=3 chain rule closes for all fixed sign triples :: first_residual=0
+==============================================================================
+I3 matrix periodic-word rate law
+==============================================================================
+eps=0.1, word=++    : period_rate=0.6694214876033056, det/lambda^2=0.6694214876033056, err=0.000e+00
+eps=0.1, word=+-    : period_rate=1, det/lambda^2=1, err=0.000e+00
+eps=0.1, word=++-   : period_rate=0.8181818181818178, det/lambda^2=0.8181818181818187, err=8.882e-16
+eps=0.1, word=+--   : period_rate=0.8181818181818178, det/lambda^2=0.8181818181818187, err=8.882e-16
+eps=0.1, word=+++-  : period_rate=0.6694214876033053, det/lambda^2=0.6694214876033059, err=5.551e-16
+eps=0.1, word=++--  : period_rate=1, det/lambda^2=1, err=2.220e-16
+eps=0.1, word=+-++-+: period_rate=0.6694214876033051, det/lambda^2=0.6694214876033056, err=4.441e-16
+eps=0.2, word=++    : period_rate=0.4444444444444444, det/lambda^2=0.4444444444444445, err=1.110e-16
+eps=0.2, word=+-    : period_rate=1, det/lambda^2=1, err=0.000e+00
+eps=0.2, word=++-   : period_rate=0.6666666666666664, det/lambda^2=0.6666666666666667, err=3.331e-16
+eps=0.2, word=+--   : period_rate=0.6666666666666664, det/lambda^2=0.6666666666666667, err=3.331e-16
+eps=0.2, word=+++-  : period_rate=0.4444444444444443, det/lambda^2=0.4444444444444445, err=1.665e-16
+eps=0.2, word=++--  : period_rate=0.9999999999999997, det/lambda^2=1, err=3.331e-16
+eps=0.2, word=+-++-+: period_rate=0.4444444444444441, det/lambda^2=0.4444444444444445, err=4.441e-16
+eps=0.3, word=++    : period_rate=0.2899408284023668, det/lambda^2=0.289940828402367, err=1.110e-16
+eps=0.3, word=+-    : period_rate=1, det/lambda^2=1, err=4.441e-16
+eps=0.3, word=++-   : period_rate=0.5384615384615385, det/lambda^2=0.5384615384615387, err=1.110e-16
+eps=0.3, word=+--   : period_rate=0.5384615384615384, det/lambda^2=0.5384615384615382, err=2.220e-16
+eps=0.3, word=+++-  : period_rate=0.2899408284023668, det/lambda^2=0.2899408284023668, err=0.000e+00
+eps=0.3, word=++--  : period_rate=1, det/lambda^2=1, err=0.000e+00
+eps=0.3, word=+-++-+: period_rate=0.2899408284023669, det/lambda^2=0.2899408284023668, err=5.551e-17
+eps=0.4, word=++    : period_rate=0.1836734693877551, det/lambda^2=0.1836734693877551, err=0.000e+00
+eps=0.4, word=+-    : period_rate=1, det/lambda^2=1, err=0.000e+00
+eps=0.4, word=++-   : period_rate=0.4285714285714287, det/lambda^2=0.4285714285714285, err=1.110e-16
+eps=0.4, word=+--   : period_rate=0.4285714285714287, det/lambda^2=0.4285714285714285, err=1.665e-16
+eps=0.4, word=+++-  : period_rate=0.1836734693877552, det/lambda^2=0.183673469387755, err=1.943e-16
+eps=0.4, word=++--  : period_rate=1, det/lambda^2=1, err=2.220e-16
+eps=0.4, word=+-++-+: period_rate=0.1836734693877552, det/lambda^2=0.183673469387755, err=2.220e-16
+PASS: I3 numeric: periodic per-word erosion rate equals det(M_w)/lambda_max(M_w)^2 :: max_err=8.882e-16, worst=eps=0.1, word=++-, tol=1.0e-10
+==============================================================================
+I4 special cases recovered
+==============================================================================
+uniform T=1 matrix law max_err=3.331e-16
+PASS: I4 uniform T=1 gives det/lambda^2 = (1-eps)/(1+eps) :: max_err=3.331e-16, tol=1.0e-15
+alternating matrix residual: Matrix([[0, 0], [0, 0]]), numeric_rate_err=0.000e+00
+PASS: I4 alternating matrix identity M_- M_+ = (1-eps^2) I gives rate 1 :: entries_zero=True, numeric_err=0.000e+00
+==============================================================================
+I5 parabolic/edge-case census
+==============================================================================
+fixed-set census: parabolic_or_scalar_cases=8, hyperbolic_cases=20, min_hyperbolic_trace_gap=3.920e-02
+PASS: I5 fixed set contains the frozen scalar-edge cases and hyperbolic cases clear trace^2 > 4 det :: parabolic=8, hyperbolic=20, min_gap=3.920e-02
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

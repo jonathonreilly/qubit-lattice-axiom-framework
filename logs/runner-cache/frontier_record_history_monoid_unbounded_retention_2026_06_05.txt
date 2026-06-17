@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_history_monoid_unbounded_retention_2026_06_05.py
-runner_sha256: fc014048c8b7b2788a36754e87f16946875230f1e6395127f8a9f0c0c3729579
+runner_sha256: 4fa387b1789ecd5442b1502cd39a36d713a1fc23ec231225e449b4edb0373c37
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 [PASS] M1.1 empty word is the two-sided identity
@@ -31,12 +31,19 @@ status: ok
 [PASS] B7.1 constructed histories are finite at each finite N
 [PASS] B7.2 lengths are unbounded over finite N samples
 [PASS] B7.3 no single constructed history has infinite length
+[PASS] G8.1 source note declares bounded support, not positive closure
+[PASS] G8.2 source note records actual bounded-support status
+[PASS] G8.3 source note says production is not derived
+[PASS] G8.4 source note says readout context/alphabet are supplied
+[PASS] G8.5 source note keeps probability and IID outside the result
+[PASS] G8.6 source note blocks bare retained language
+[PASS] G8.7 source note names downstream additivity row without promoting it
 
 === Record history interpretation ===
 Finite record histories form an append-only free monoid; counts form N^O.
 Z^3 gives arbitrarily many distinct sites for any finite N, so no fixed finite cap is imposed by the framework carrier.
-This is unbounded finite retention, not completed infinity and not coherent qubit-state storage.
-SCORECARD PASS=25 FAIL=0
+This is bounded post-record support for unbounded finite retention, not production closure, completed infinity, or coherent qubit-state storage.
+SCORECARD PASS=32 FAIL=0
 
 ----- stderr -----
 

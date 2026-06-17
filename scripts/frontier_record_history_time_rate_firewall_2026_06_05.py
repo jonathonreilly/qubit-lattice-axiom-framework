@@ -128,11 +128,16 @@ def main() -> int:
     doc = Path("docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md")
     text = doc.read_text(encoding="utf-8")
     markers = [
+        "claim_type_author_hint: no_go",
+        "**Claim type:** no_go / bounded negative route-pruning certificate.",
         "actual_current_surface_status: bounded-support",
         "trace_class: negative_route_pruning",
         "conditional_surface_status:",
         "Does not derive physical time",
         "Does not select a generation/Koide dial setting.",
+        "This row is not a positive time/rate theorem.",
+        "It is not a production theorem",
+        "proposal_allowed_reason:",
         "audit_required_before_effective_retained: true",
     ]
     check("source note exists", doc.exists(), str(doc))

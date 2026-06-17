@@ -1,12 +1,14 @@
 ---
 claim_id: record_history_order_time_rate_firewall_2026-06-05
-claim_type_author_hint: bounded_support_map
+claim_type_author_hint: no_go
 ---
 
 # Record History Order Is Not A Time/Rate Metric
 
 **Date:** 2026-06-05
-**Claim type:** bounded support map and negative route-pruning certificate.
+**Claim type:** no_go / bounded negative route-pruning certificate.
+**Actual current-surface status:** bounded-support source proposal; independent
+audit required before any effective-status use.
 **Status authority:** independent audit lane only. This source note does not
 set an audit verdict, edit audit data, or assert package-status promotion.
 **Primary runner:**
@@ -23,9 +25,24 @@ with cache
 - [`ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`](ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md)
 - [`RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`](RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md)
 
+## 2026-06-17 source-boundary repair
+
+This row is not a positive time/rate theorem. Its source payload is negative
+route pruning: post-record word/count order and any supplied per-step kernel do
+not determine a physical time metric, continuous-time generator, transition
+rate, or clock normalization. A later dynamics theorem may still supply those
+bridges; this row only prevents downstream notes from importing them from
+record-history order alone.
+
+The parent
+[`RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md`](RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md)
+is consumed only as bounded post-record support. It is not a production theorem
+and does not turn this route-pruning row into a positive theorem. It is not a
+production theorem for this child row either. It is not a production theorem.
+
 ## Question
 
-Does unbounded retained record history supply physical time, rates, or a clock
+Does unbounded finite record history supply physical time, rates, or a clock
 normalization?
 
 No. A record history supplies ordered words and counts. A supplied instrument
@@ -42,7 +59,7 @@ record word w in O*
   -> requires clock map n |-> t_n for physical rates.
 ```
 
-## Result
+## Bounded result
 
 The record-history monoid gives exact post-record information dynamics:
 
@@ -123,7 +140,7 @@ The runner verifies:
 Expected result:
 
 ```text
-SCORECARD PASS=40 FAIL=0
+SCORECARD PASS=45 FAIL=0
 ```
 
 ```yaml
@@ -132,7 +149,10 @@ actual_current_surface_status: bounded-support
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 conditional_surface_status: "exact support for order/count/per-step-kernel facts; no physical time/rate closure"
+hypothetical_axiom_status: null
+admitted_observation_status: null
 proposal_allowed: false
+proposal_allowed_reason: "This row prunes time/rate imports from post-record order; it does not propose retained closure."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```

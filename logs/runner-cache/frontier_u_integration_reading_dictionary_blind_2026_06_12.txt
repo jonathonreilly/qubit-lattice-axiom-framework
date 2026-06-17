@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/frontier_u_integration_reading_dictionary_blind_2026_06_12.py
+runner_sha256: 8ff3f15d239e198252785c319aee4d7fff4eae848702081125678badb4f09fe3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.87
+status: ok
+----- stdout -----
+SYMBOLIC AND FIXED-BACKGROUND SURFACE CHECKS
+==============================================================================
+  [PASS] Supplied circulant eigenvector identity gives lambda_k = a + 2B cos(delta + 2 pi k/3)  --  sympy roots-of-unity check
+  [PASS] Positivity domain holds at both sampled parameter points  --  min lambda=0.660712456268
+  [PASS] Dispersion residual at U=1 is reproved from the supplied circulant class  --  max residual=1.554e-15
+  [PASS] Per-channel transfer operators are positive on the witness background scan  --  minimum eigenvalue=0.420114361051
+
+Q1 FACTORIZATION: MATTER-BLIND WEIGHTS
+==============================================================================
+  [PASS] Matter-blind weights are positive gauge-sector functions, independent of reading and dictionary scale  --  minimum sampled weight=0.5
+  [PASS] Witness integrand factorizes as w[U] times the matter trace datum  --  max residual=1.776e-15
+
+Q2 READING-BLIND TRACE DATA
+==============================================================================
+  pointwise scan primary: max same-U gap so far=0.000e+00
+  pointwise scan second-domain-point: max same-U gap so far=0.000e+00
+  [PASS] Trace-reality mechanism: reading-1 and reading-2 trace data agree pointwise at the same U  --  max gap=0.000e+00; max imaginary part=0.000e+00
+  [PASS] Pointwise scan includes real and complex U(1) witness backgrounds  --  complex phase samples counted=32
+  Q2b primary              uniform                  residual=0.000e+00
+  Q2b primary              plaquette-like           residual=0.000e+00
+  Q2b primary              seeded-positive-smooth   residual=0.000e+00
+  Q2b second-domain-point  uniform                  residual=0.000e+00
+  Q2b second-domain-point  plaquette-like           residual=0.000e+00
+  Q2b second-domain-point  seeded-positive-smooth   residual=0.000e+00
+  [PASS] Haar quadrature: reading integrals agree for all three matter-blind weights and both domain points  --  max residual=0.000e+00; N=128
+  Q2c negative control primary              matter-aware gap=1.168741e+00
+  Q2c negative control second-domain-point  matter-aware gap=1.451538e+00
+  [PASS] Negative control: a reading-dependent matter-aware weight can distinguish, so matter-blindness is load-bearing  --  minimum matter-aware gap=1.168741e+00
+
+Q3 DICTIONARY RESCALE AND U-INTEGRATION
+==============================================================================
+  [PASS] Dictionary rescale multiplies each per-background datum by rho^kappa with kappa independent of U  --  kappa=4; max extracted deviation=8.882e-16
+  Q3b primary              scale=0.73 uniform                  residual=1.332e-15
+  Q3b primary              scale=0.73 plaquette-like           residual=4.441e-16
+  Q3b primary              scale=0.73 seeded-positive-smooth   residual=2.220e-15
+  Q3b primary              scale=1.37 uniform                  residual=3.553e-15
+  Q3b primary              scale=1.37 plaquette-like           residual=0.000e+00
+  Q3b primary              scale=1.37 seeded-positive-smooth   residual=0.000e+00
+  Q3b second-domain-point  scale=0.73 uniform                  residual=8.882e-16
+  Q3b second-domain-point  scale=0.73 plaquette-like           residual=4.441e-16
+  Q3b second-domain-point  scale=0.73 seeded-positive-smooth   residual=1.332e-15
+  Q3b second-domain-point  scale=1.37 uniform                  residual=1.421e-14
+  Q3b second-domain-point  scale=1.37 plaquette-like           residual=3.553e-15
+  Q3b second-domain-point  scale=1.37 seeded-positive-smooth   residual=0.000e+00
+  [PASS] Dictionary rescale commutes with U-integration for all three matter-blind weights  --  max residual=1.421e-14
+  [PASS] Integrated objects per dictionary differ exactly by the fixed-background lambda-structure  --  ratio target=3.8416; max residual=2.665e-15
+
+Q4 ASSEMBLY
+==============================================================================
+  [PASS] Species bridge assembly: slot -> free -> fixed background -> U-integrated matter-blind vacuity chain is complete at supplied levels  --  non-naming content remains unregistrable on the tested surface
+  [PASS] Occupancy lane assembly returns underdetermination and names the remaining routes  --  opens: non-matter-blind couplings, other/future surfaces, outcome-independence, K-reality
+
+B-CHECKS: DEPENDENCIES AND FIREWALL TEXT
+==============================================================================
+  [PASS] Dependency grep: RP/P2 supplies config-by-config fixed-background phrase
+  [PASS] Dependency grep: Substep1 supplies det(M) and single-pair Grassmann phrases
+  [PASS] Dependency grep: registrability note supplies Additivity and Orbit/orbit-constant content
+  [PASS] Firewall sentences are present, including WALLS-MOVE next-path language
+  [PASS] No-promotion statement is present
+  [PASS] Markdown link inventory is exactly the three specified dependency links  --  link_count=3
+  [PASS] Context companions and S_G are backticked and not consumed
+  [PASS] Closing language is absent from the note
+  [PASS] Quadrature convergence check: N vs 2N residual is small  --  N=128, 2N=256, max residual=7.105e-15
+
+SUMMARY
+==============================================================================
+SUMMARY PASS=24 FAIL=0
+Computed residual maxima:
+  dispersion=1.554e-15
+  pointwise_reading_gap=0.000e+00
+  integrated_reading_gap=0.000e+00
+  matter_aware_negative_gap_min=1.168741e+00
+  dictionary_exponent_deviation=8.882e-16
+  dictionary_commutation=1.421e-14
+  dictionary_ratio=2.665e-15
+  quadrature_convergence=7.105e-15
+
+----- stderr -----
+

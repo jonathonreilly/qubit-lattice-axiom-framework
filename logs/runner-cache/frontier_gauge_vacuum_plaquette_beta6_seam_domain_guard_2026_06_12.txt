@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_beta6_seam_domain_guard_2026_06_12.py
+runner_sha256: 941bb1b672455887cf237cceaf3b2161eedaec3c4534070f643fac58d69f289a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: top status restricts normalized rho to z_(0,0) != 0
+PASS: formal lemma defines rho only on the nonzero-denominator domain
+PASS: zero denominator case keeps only unnormalized z and Z statements
+PASS: beta=6 normalized rho statement carries z_(0,0)^env(6) domain
+PASS: evaluation functional is typed separately from its Riesz vector
+PASS: compressed rim-evaluation theorem uses ell_W and k(W)
+PASS: legacy ambiguous <K(W), v> notation is absent
+PASS: remaining explicit-rho nonclosure is domain-qualified
+TOTAL: PASS=8, FAIL=0
+
+----- stderr -----
+

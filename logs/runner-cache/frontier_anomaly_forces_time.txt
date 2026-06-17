@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time.py
-runner_sha256: c7458bca0787097110a92ecb9da1992efc0bc56fa5d2469962ec444b782394b4
+runner_sha256: 52bc901baf1f16fa0ff2296bea20baed362c8e8e6896bf73327b9418c894533c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 ========================================================================
@@ -167,7 +167,7 @@ STEP 4: STAGGERED GRADING {epsilon, D_KS} = 0 ON Z^3 (exact integers)
   [PASS][C] {epsilon, D_KS} = 0 exactly on the open 4^3 box (64 sites)  (integer arithmetic, no floating point)
   [PASS][A] D_KS is antisymmetric (anti-Hermitian kinetic operator)
   [PASS][A] KS phases obey the Clifford -1 plaquette cocycle on every plaquette  (81 plaquette relations checked, 0 violations)
-  [PASS][C] spectrum of i*D_KS is symmetric about 0 (grading consequence)  (64 eigenvalues, max |E + E_mirror| = 1.44e-15)
+  [PASS][C] spectrum of i*D_KS is symmetric about 0 (grading consequence)  (64 eigenvalues, max |E + E_mirror| = 8.88e-16)
 
   [PASS][A] FALSIFICATION: the all-plus phase law violates the Clifford cocycle  (81/81 plaquette relations violated)
   [PASS][A] bipartite anticommutation alone is phase-blind (holds even for all-plus)  (so {eps, D} = 0 comes from bipartiteness; the PHASE CLASS is what the KS note forces)
@@ -232,6 +232,7 @@ STEP 6: COMPOSITION WITH LOCAL B-AXIS CLOCK PREMISE
 
   [PASS][B] source sync: anomaly note declares B-AXIS locally, not the withdrawn unique-RP-axis claim  (cap is conditional on B-AXIS in this bounded source note)
   [PASS][B] source sync: no markdown dependency edge to the single-clock note remains  (plain-code provenance references do not enter the citation graph)
+  [PASS][B] source sync: P-ABJ companion is plain-text provenance, not a child dependency edge  (P-ABJ remains an external declared premise; companion row is audited separately)
   [PASS][B] declared B-AXIS d_t <= 1 cap intersected with computed odd set gives {1}  (lower bound computed in Steps 1-4; upper bound is local declared B-AXIS)
   [PASS][B] conclusion: d_t = 1, total dimension 3 + 1 = 4, signature (3,1)
 
@@ -261,8 +262,8 @@ STEP 7: COUNTERFACTUAL — CANCEL THE ANOMALY, LOSE THE FORCING
   falsification behaviour a genuine forcing theorem must show.
 
 ========================================================================
-CLASS BREAKDOWN: A=47 B=4 C=36 D=0
-TOTAL: PASS=87 FAIL=0
+CLASS BREAKDOWN: A=47 B=5 C=36 D=0
+TOTAL: PASS=88 FAIL=0
 ========================================================================
 
 VERDICT: bounded anomaly/B-AXIS bridge verified. Computed: exact

@@ -36,6 +36,12 @@ below in "What remains open (load-bearing gaps)".
 
 A scope-narrowing companion already records the same boundary explicitly:
 `QUARK_CP_CARRIER_COMPLETION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`.
+A new exact-support companion,
+[`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`](QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md),
+repairs the slot-choice part of the old ansatz boundary under the fixed
+Schur-NNI-tree/Hermitian one-edge-extension assumptions: the `1-3` edge is the
+unique off-tree carrier slot and its phase is the unique cycle invariant. The
+fitted numerical values remain open.
 A complementary reduced-closure attempt with fewer free parameters is in
 `QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md`; that note
 continues to live as a separate bounded surface and is **not** load-bearing
@@ -169,7 +175,13 @@ none of which the present runner addresses:
    minimal admissible CP-carrier slot** beyond the Schur-NNI base, rather
    than choosing it by ansatz. Other carrier slots (different index pairs,
    different determinant-charge sectors, non-Hermitian completions) are
-   not ruled out by the present note.
+   not ruled out by the present note. The exact-support companion
+   [`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`](QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md)
+   now closes the fixed-Schur-NNI-tree/Hermitian one-edge version of this gap:
+   the `1-3` edge is the unique off-tree carrier slot and its phase is the
+   unique cycle invariant after tree gauge-fixing. It does not derive
+   `xi_u`, `xi_d`, and broader non-Hermitian or multi-carrier variants remain
+   outside that exact-support boundary.
 3. **Derive the comparator targets `(m_u/m_c, m_c/m_t, |V_us|, |V_cb|,
    |V_ub|, J)`** from framework primitives, or supply an audited bridge that
    maps the imported observational values onto framework-defined readouts.

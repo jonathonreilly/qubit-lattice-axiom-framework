@@ -1,0 +1,21 @@
+loop_slug: quark-cp-carrier-slot-minimality-20260617
+branch: codex/quark-cp-carrier-slot-minimality-20260617
+goal: "Unlock the quark CP numerical-match row by retiring the carrier-slot ansatz sub-blocker under a fixed-tree/Hermitian one-edge boundary."
+target_claim_id: quark_cp_carrier_completion_note_2026-04-18
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+hard_residual_attacked: "complex 1-3 carrier slot was asserted by ansatz"
+files_touched:
+  - docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md
+  - docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md
+  - scripts/frontier_quark_cp_carrier_slot_minimality_2026_06_17.py
+  - logs/runner-cache/frontier_quark_cp_carrier_slot_minimality_2026_06_17.txt
+  - .claude/science/physics-loops/quark-cp-carrier-slot-minimality-20260617/
+checks:
+  - "python3 scripts/frontier_quark_cp_carrier_slot_minimality_2026_06_17.py -> TOTAL: PASS=29 FAIL=0"
+  - "python3 scripts/frontier_quark_cp_carrier_completion.py -> TOTAL: PASS=11, FAIL=0"
+status: pr_ready_after_local_checks
+review_loop_disposition: reviewer_owned_not_run
+audit_required_before_effective_status: true
+next_exact_action: "Reviewer should extract or revise the exact-support slot theorem, then audit can re-check whether one parent sub-blocker is retired while xi_u/xi_d remain open."

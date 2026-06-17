@@ -1,0 +1,18 @@
+loop_slug: framework-bare-alpha-ew-boundary-20260617
+goal: "Make the archived framework bare-alpha packet visibly re-auditable by synchronizing the source notes with the current formal-identity verifier/cache."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: methodology
+reachability_to_target: supports
+active_route: source_verification_sync
+files_touched:
+  - docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md
+  - archive_unlanded/framework-bare-alpha-assumed-input-salvage-2026-04-30/FRAMEWORK_BARE_ALPHA_3_ALPHA_EM_DIMENSION_FIXED_RATIO_SUPPORT_NOTE_2026-04-25.md
+open_imports:
+  - "Physical EW-normalization bridge for the formal coupling hypotheses."
+  - "Any low-energy alpha or weak-angle transport."
+status_summary: "Source notes now state the current verifier/cache total for the narrowed formal-hypothesis identity theorem."
+review_loop_disposition: reviewer_owned_not_run
+audit_results_touched: false
+next_exact_action: "Reviewer can inspect the source sync and decide whether to extract it for re-audit routing."
+stop_condition: "PR opened for reviewer handoff."

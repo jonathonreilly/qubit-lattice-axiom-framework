@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_wilson_staggered_minimal_block_spectrum_bridge_2026_06_13.py
+runner_sha256: 03ba4fad7912a29328432d750c5172507ecbf1c53bf88050f36cbd50e9f76db4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Wilson plus staggered APBC minimal-block spectrum bridge
+
+Part 1: source note structure
+  [PASS] contains marker: Wilson Plus Staggered Minimal-Block Spectrum Bridge
+  [PASS] contains marker: Claim type:** bounded_theorem
+  [PASS] contains marker: O_Wstag(r,u_0) = direct_sum
+  [PASS] contains marker: lambda_n^+/- = 2 r hw(n) +/- 2 i u_0
+  [PASS] contains marker: multiplicity binomial(4,k)
+  [PASS] contains marker: V_taste^W(m)
+  [PASS] contains marker: does not derive the Wilson coefficient
+  [PASS] contains marker: WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md
+  [PASS] contains marker: HIGGS_MASS_FROM_AXIOM_NOTE.md
+
+Part 2: APBC corner multiplicities
+  [PASS] corner count is 2^4 = 16
+  [PASS] hw=0 multiplicity is binomial(4,0)  (got 1)
+  [PASS] hw=1 multiplicity is binomial(4,1)  (got 4)
+  [PASS] hw=2 multiplicity is binomial(4,2)  (got 6)
+  [PASS] hw=3 multiplicity is binomial(4,3)  (got 4)
+  [PASS] hw=4 multiplicity is binomial(4,4)  (got 1)
+
+Part 3: per-corner combined block spectrum
+  [PASS] hw=0: trace = 2*(2*r*hw)  (trace=0)
+  [PASS] hw=0: determinant = (2*r*hw)^2 + (2*u0)^2  (det=196/121)
+  [PASS] hw=0: charpoly lambda^2 - 2a lambda + a^2+b^2  (coeffs=(Fraction(0, 1), Fraction(196, 121)))
+  [PASS] hw=1: trace = 2*(2*r*hw)  (trace=12/5)
+  [PASS] hw=1: determinant = (2*r*hw)^2 + (2*u0)^2  (det=9256/3025)
+  [PASS] hw=1: charpoly lambda^2 - 2a lambda + a^2+b^2  (coeffs=(Fraction(-12, 5), Fraction(9256, 3025)))
+  [PASS] hw=2: trace = 2*(2*r*hw)  (trace=24/5)
+  [PASS] hw=2: determinant = (2*r*hw)^2 + (2*u0)^2  (det=22324/3025)
+  [PASS] hw=2: charpoly lambda^2 - 2a lambda + a^2+b^2  (coeffs=(Fraction(-24, 5), Fraction(22324, 3025)))
+  [PASS] hw=3: trace = 2*(2*r*hw)  (trace=36/5)
+  [PASS] hw=3: determinant = (2*r*hw)^2 + (2*u0)^2  (det=44104/3025)
+  [PASS] hw=3: charpoly lambda^2 - 2a lambda + a^2+b^2  (coeffs=(Fraction(-36, 5), Fraction(44104, 3025)))
+  [PASS] hw=4: trace = 2*(2*r*hw)  (trace=48/5)
+  [PASS] hw=4: determinant = (2*r*hw)^2 + (2*u0)^2  (det=74596/3025)
+  [PASS] hw=4: charpoly lambda^2 - 2a lambda + a^2+b^2  (coeffs=(Fraction(-48, 5), Fraction(74596, 3025)))
+
+Part 4: multiset grouping and determinant formula
+  [PASS] enumerated hw multiplicities match binomial grouping  ({0: 1, 1: 4, 2: 6, 3: 4, 4: 1})
+  [PASS] det(mI+O) product formula at m=0
+  [PASS] det(mI+O) product formula at m=1/3
+  [PASS] det(mI+O) product formula at m=-2/5
+  [PASS] half-log prefactor is the Wilson V_taste convention
+
+Part 5: r=0 reduction to unshifted staggered pair
+  [PASS] r=0 determinant has sixteen identical staggered-pair factors
+  [PASS] r=0 half-log coefficient reduces to -8 log(m^2+4u0^2)
+
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+

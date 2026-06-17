@@ -9,6 +9,9 @@ beyond the
 **Lane:** 5 — Hubble constant `H_0` derivation
 **Workstream:** `hubble-h0-20260426`
 
+**Primary runner:** [`scripts/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.py`](../scripts/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.txt`](../logs/runner-cache/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.txt)
+
 ---
 
 ## 0. Statement
@@ -244,10 +247,11 @@ retire any input; it classifies what retirement requires. External
 references are limited to the cited retained items and the standard
 dimensional analysis of `H_0` (textbook; admitted convention).
 
-A runner is not authored for this cycle: the no-go is a structural
-case-analysis on `A_min` and the retained cosmology stack, not a
-numerical claim. The proof's case structure (§2-§4) is verified by
-inspection rather than by sympy/numpy.
+The primary source-packet runner records no audit verdict and makes no
+status promotion. It verifies the dependency links requested for
+re-audit and mechanizes the C1/C2/C3 closure taxonomy as a finite
+case model: Lane 5 closure needs C1 plus one of C2 or C3. It does not
+retire any of those premises.
 
 ## Audit dependency repair links
 

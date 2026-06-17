@@ -1,0 +1,21 @@
+loop: hubble-lane5-cosmic-ratio-source-packet-20260617
+branch: codex/hubble-lane5-cosmic-ratio-source-packet-20260617
+base: origin/main
+target_claim_id: hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26
+target_status: re-audit-readiness
+actual_current_surface_status: support no-go/program-boundary note; no audit verdict
+cycle_count: 1
+active_route: "Attach a primary source-packet runner to the Lane 5 C1/C2/C3 no-go note."
+hard_residual: "Independent audit must still decide whether the no-go closes from the restricted source packet."
+files_touched:
+  - docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md
+  - scripts/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.py
+  - logs/runner-cache/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.txt
+  - .claude/science/physics-loops/hubble-lane5-cosmic-ratio-source-packet-20260617/
+open_blockers:
+  - "This PR does not close C1 absolute-scale work."
+  - "This PR does not close C2 cosmic-history-ratio retirement."
+  - "This PR does not construct a C3 direct-L route."
+  - "This PR does not apply an audit verdict, edit the audit ledger, or land to main."
+next_action: "Reviewer extracts/lands source-side readiness if acceptable; independent audit decides the row."
+stop_condition: "Stop after ready PR creation."

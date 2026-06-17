@@ -1,0 +1,29 @@
+loop_slug: su3-casimir-native-matrix-20260617
+branch: codex/su3-casimir-native-matrix-20260617
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle: 1
+active_route: textbook_import_retirement
+hard_residual: >
+  The SU(3) Casimir source note listed Schur's lemma and the SU(N)
+  fundamental Casimir formula as admitted-context inputs even though the
+  framework supplies the concrete V_3 Gell-Mann matrices. The proof can be
+  made native by multiplying those matrices directly.
+files_touched:
+  - docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md
+  - scripts/su3_casimir_fundamental_check.py
+  - logs/runner-cache/su3_casimir_fundamental_check.txt
+open_imports:
+  - physical SM quark color identification
+  - perturbative QCD color-factor readout
+  - downstream one-gluon exchange/self-energy/confinement interpretation
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_loop_disposition: reviewer_owned_not_run
+proposal_allowed: false
+bare_retained_allowed: false
+independent_audit_required_before_status_change: true
+pr_status: pending
+next_exact_action: refresh runner cache, run focused checks, commit, push, open PR
+stop_condition: PR opened for reviewer extraction

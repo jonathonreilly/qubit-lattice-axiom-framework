@@ -1,0 +1,131 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_readout_form_trace_vs_perron_bounded_2026_06_12.py
+runner_sha256: bd1c5a95ebca4c67aca33facbae2e1bacca967333dc4321e5e54108a61c89e00
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette finite-L_t trace readout versus Perron readout
+source NMAX=7, MODE_MAX=200, beta=6.0
+Status authority: independent audit lane only. This runner does not set or predict an audit outcome.
+
+====================================================================================================
+Gate 1: source operator and rho admissibility
+====================================================================================================
+PASS: source operator J is symmetric and conjugation-swap symmetric
+      J_sym=0.000e+00, J_swap=0.000e+00
+PASS: half-slice multiplier exp(3J) is symmetric positive in the source box
+      M_sym=2.220e-16, M_min_eig=2.495048457316e-01
+PASS: rho=1 rho is normalized nonnegative and symmetric
+      rho00=1.000000000000, min=1.000e+00, max=1.000e+00, swap=0.000e+00, T_sym=8.888e-17, min_eig=-4.659e-18
+PASS: rho=delta rho is normalized nonnegative and symmetric
+      rho00=1.000000000000, min=0.000e+00, max=1.000e+00, swap=0.000e+00, T_sym=8.508e-17, min_eig=-1.340e-15
+PASS: rho^tw rho is normalized nonnegative and symmetric
+      rho00=1.000000000000, min=0.000e+00, max=1.000e+00, swap=5.551e-17, T_sym=1.110e-16, min_eig=-1.811e-16
+rho^tw builder metadata: tw_eig=1.012369912748, rho10=0.378514922317, rho11=0.171042019092, available_min=2.287e-23, available_swap=5.551e-17, psi_residual=1.665e-16
+PASS: rho^tw landed builder Perron residual and conjugation symmetry are stable
+      residual=1.665e-16, swap=5.551e-17, available_min=2.287e-23
+
+====================================================================================================
+Gate 2: Perron anchor reproduction
+====================================================================================================
+PASS: rho=1 L_t -> inf readout reproduces landed anchor digits
+      R_inf=0.452407159044564, formatted=0.4524071590, anchor=0.4524071590, Perron_solver=0.452407159044564
+PASS: rho=1 Perron eigenvalue is positive and eigenvector sign is fixed
+      lambda0=3.812630482036766, psi_min=6.269e-12
+PASS: rho=delta L_t -> inf readout reproduces landed anchor digits
+      R_inf=0.422531739647131, formatted=0.4225317396, anchor=0.4225317396, Perron_solver=0.422531739647131
+PASS: rho=delta Perron eigenvalue is positive and eigenvector sign is fixed
+      lambda0=3.441440354984265, psi_min=2.700e-12
+PASS: rho^tw L_t -> inf readout reproduces landed anchor digits
+      R_inf=0.434215413259920, formatted=0.434215413260, anchor=0.434215413260, Perron_solver=0.434215413259920
+PASS: rho^tw Perron eigenvalue is positive and eigenvector sign is fixed
+      lambda0=3.577553737908293, psi_min=3.895e-12
+
+====================================================================================================
+Finite trace table: requested L_t values
+====================================================================================================
+rho | L_t | R_trace(L_t) | R_infinity | correction R(L_t)-R_inf | gap_abs^L_t
+----------------------------------------------------------------------------------------------------
+rho=1     |   2 | 0.452226106739933 | 0.452407159044564 | -1.810523046317791e-04 | 1.045e-03
+rho=1     |   4 | 0.452406983482971 | 0.452407159044564 | -1.755615933740629e-07 | 1.092e-06
+rho=1     |   8 | 0.452407159044373 | 0.452407159044564 | -1.911804048404520e-13 | 1.193e-12
+rho=1     |  16 | 0.452407159044564 | 0.452407159044564 | +0.000000000000000e+00 | 1.424e-24
+rho=1     |  32 | 0.452407159044564 | 0.452407159044564 | +0.000000000000000e+00 | 2.028e-48
+rho=1     |  64 | 0.452407159044564 | 0.452407159044564 | +0.000000000000000e+00 | 4.112e-96
+rho=delta |   2 | 0.422531739647131 | 0.422531739647131 | +0.000000000000000e+00 | 1.666e-31
+rho=delta |   4 | 0.422531739647131 | 0.422531739647131 | +0.000000000000000e+00 | 2.776e-62
+rho=delta |   8 | 0.422531739647131 | 0.422531739647131 | +0.000000000000000e+00 | 7.706e-124
+rho=delta |  16 | 0.422531739647131 | 0.422531739647131 | +0.000000000000000e+00 | 5.938e-247
+rho=delta |  32 | 0.422531739647131 | 0.422531739647131 | +0.000000000000000e+00 | 0.000e+00
+rho=delta |  64 | 0.422531739647131 | 0.422531739647131 | +0.000000000000000e+00 | 0.000e+00
+rho^tw    |   2 | 0.434188775481347 | 0.434215413259920 | -2.663777857242478e-05 | 1.782e-04
+rho^tw    |   4 | 0.434215408871765 | 0.434215413259920 | -4.388154783985243e-09 | 3.174e-08
+rho^tw    |   8 | 0.434215413259920 | 0.434215413259920 | -2.220446049250313e-16 | 1.007e-15
+rho^tw    |  16 | 0.434215413259920 | 0.434215413259920 | +0.000000000000000e+00 | 1.015e-30
+rho^tw    |  32 | 0.434215413259920 | 0.434215413259920 | +0.000000000000000e+00 | 1.030e-60
+rho^tw    |  64 | 0.434215413259920 | 0.434215413259920 | +0.000000000000000e+00 | 1.062e-120
+
+Spectral convergence rates:
+  rho=1    : lambda0=3.812630482036766, lambda1/lambda0=3.232915110912132e-02, max_subperron_abs=3.232915110912132e-02
+  rho=delta: lambda0=3.441440354984265, lambda1/lambda0=1.215755007559722e-16, max_subperron_abs=4.081804711979037e-16
+  rho^tw   : lambda0=3.577553737908293, lambda1/lambda0=1.334766448637066e-02, max_subperron_abs=1.334766448637066e-02
+
+====================================================================================================
+Accepted MC-surface L values: comparison-context table only
+====================================================================================================
+No fitting or L_t selection is performed here; these rows only report the finite trace reading at the geometry inputs named by the FSS context.
+rho | L_t | R_trace(L_t) | correction R(L_t)-R_inf
+------------------------------------------------------------------------------
+rho=1     |   3 | 0.452401658677682 | -5.500366882238428e-06
+rho=1     |   4 | 0.452406983482971 | -1.755615933740629e-07
+rho=1     |   5 | 0.452407153383189 | -5.661374979926137e-09
+rho=1     |   6 | 0.452407158861628 | -1.829360551930392e-10
+rho=1     |   8 | 0.452407159044373 | -1.911804048404520e-13
+rho=delta |   3 | 0.422531739647131 | +0.000000000000000e+00
+rho=delta |   4 | 0.422531739647131 | +0.000000000000000e+00
+rho=delta |   5 | 0.422531739647131 | +0.000000000000000e+00
+rho=delta |   6 | 0.422531739647131 | +0.000000000000000e+00
+rho=delta |   8 | 0.422531739647131 | +0.000000000000000e+00
+rho^tw    |   3 | 0.434215080260387 | -3.329995327261415e-07
+rho^tw    |   4 | 0.434215408871765 | -4.388154783985243e-09
+rho^tw    |   5 | 0.434215413201490 | -5.842976102954367e-11
+rho^tw    |   6 | 0.434215413259140 | -7.795986078917849e-13
+rho^tw    |   8 | 0.434215413259920 | -2.220446049250313e-16
+
+====================================================================================================
+Gate 3: cyclic trace and derivative-form diagnostics
+====================================================================================================
+rho=1    : max insertion-position residual <= 8.327e-16 so far
+rho=delta: max insertion-position residual <= 1.443e-15 so far
+rho^tw   : max insertion-position residual <= 1.443e-15 so far
+PASS: spectral formula matches direct finite traces for all reported L_t values
+      max|R_eigh-R_direct|=4.441e-16
+PASS: cyclic trace makes the raw J insertion independent of insertion position
+      max insertion-position residual=1.443e-15
+PASS: explicit-multiplier beta-derivative density equals the symmetrized raw J readout
+      max derivative-density residual=3.886e-16; D_beta prime and environment beta terms are not evaluated here
+
+====================================================================================================
+Gate 4: residual-scale question
+====================================================================================================
+max requested-set correction: 1.810523046317791e-04 at rho=1, L_t=2
+max accepted-MC-L correction: 5.500366882238428e-06 at rho=1, L_t=3
+PASS: no reported finite trace correction exceeds the panel-era residual scale 0.02
+      max=1.811e-04, scale=2.000e-02; statement is restricted to reported L_t values
+
+====================================================================================================
+Boundaries
+====================================================================================================
+Convention-consistent readout: Tr[J T_src(6)^L_t] / Tr[T_src(6)^L_t].
+Derivative diagnostic: (1/L_t) d/d beta log Tr[T_beta^L_t] restricted to the explicit exp(beta J/2) multipliers.
+Difference from the full beta derivative: the D_beta prime and any environment-beta contribution are named open terms, not computed here.
+Named open targets: identification theorem for readout versus per-plaquette f-prime; HF D_beta prime term; per-plaquette normalization; licensed L_t geometry input.
+PASS: source note states the finite bounded boundary and leaves physical targets open
+      missing=[]; forbidden_present=[]
+
+TOTAL: PASS=17, FAIL=0
+
+----- stderr -----
+

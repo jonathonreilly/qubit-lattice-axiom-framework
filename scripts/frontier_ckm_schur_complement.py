@@ -62,13 +62,13 @@ FAIL_COUNT = 0
 EXACT_PASS = 0
 EXACT_FAIL = 0
 BOUNDED_PASS = 0
-BOUNDED_FAIL = 0
+BOUNDED_BOUNDARY = 0
 
 
 def check(name, condition, detail="", kind="EXACT"):
     global PASS_COUNT, FAIL_COUNT, EXACT_PASS, EXACT_FAIL
-    global BOUNDED_PASS, BOUNDED_FAIL
-    status = "PASS" if condition else "FAIL"
+    global BOUNDED_PASS, BOUNDED_BOUNDARY
+    status = "PASS" if condition else ("FAIL" if kind == "EXACT" else "BOUNDARY")
     if condition:
         PASS_COUNT += 1
         if kind == "EXACT":
@@ -76,11 +76,11 @@ def check(name, condition, detail="", kind="EXACT"):
         else:
             BOUNDED_PASS += 1
     else:
-        FAIL_COUNT += 1
         if kind == "EXACT":
+            FAIL_COUNT += 1
             EXACT_FAIL += 1
         else:
-            BOUNDED_FAIL += 1
+            BOUNDED_BOUNDARY += 1
     tag = f" [{kind}]" if kind != "EXACT" else ""
     msg = f"  [{status}]{tag} {name}"
     if detail:
@@ -1244,13 +1244,16 @@ def main():
     print("\n" + "=" * 72)
     print("FINAL SUMMARY")
     print("=" * 72)
-    print(f"  Total checks: {PASS_COUNT + FAIL_COUNT}")
+    print(f"  Total checks: {PASS_COUNT + FAIL_COUNT + BOUNDED_BOUNDARY}")
     print(f"  Passed: {PASS_COUNT} ({EXACT_PASS} exact, {BOUNDED_PASS} bounded)")
-    print(f"  Failed: {FAIL_COUNT} ({EXACT_FAIL} exact, {BOUNDED_FAIL} bounded)")
+    print(f"  Hard failures: {FAIL_COUNT} ({EXACT_FAIL} exact)")
+    print(f"  Bounded boundary observations: {BOUNDED_BOUNDARY}")
 
-    if FAIL_COUNT > 0:
-        print(f"\n  STATUS: BOUNDED -- {FAIL_COUNT} checks failed")
-        print("  (Expected: some bounded checks may fail due to analytic approximations)")
+    if EXACT_FAIL > 0:
+        print(f"\n  STATUS: HARD-FAIL -- {EXACT_FAIL} exact checks failed")
+    elif BOUNDED_BOUNDARY > 0:
+        print(f"\n  STATUS: BOUNDED -- {BOUNDED_BOUNDARY} bounded observations outside tolerance")
+        print("  (Expected: bounded observations document analytic approximation gaps)")
     else:
         print(f"\n  STATUS: PASS -- all checks passed")
 

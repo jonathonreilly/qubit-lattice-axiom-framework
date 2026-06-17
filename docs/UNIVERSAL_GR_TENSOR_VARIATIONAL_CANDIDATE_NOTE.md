@@ -4,8 +4,25 @@
 **Date:** 2026-04-14  
 **Branch:** `codex/review-active`  
 **Role:** direct universal route / theorem step  
-**Purpose:** identify the first exact tensor-valued `3+1` variational candidate
-from the axiom-side observable principle and the exact `3+1` kinematic lift
+**Purpose:** identify the first formal tensor-valued `3+1` variational
+candidate from the axiom-side observable principle and the cited `3+1`
+kinematic lift surface
+**Status authority:** independent audit lane only.
+**Primary runner:** [`scripts/frontier_universal_gr_tensor_variational_candidate.py`](../scripts/frontier_universal_gr_tensor_variational_candidate.py)
+(`PASS=6 FAIL=0` on current main). The runner checks the finite Hessian
+symmetry and quadratic-form prototype and keeps the Einstein/Regge
+identification blocker in scope.
+
+## Audit boundary
+
+This row is a source-side route-candidate note, not an audit-ratified GR
+closure. Phrases below such as "exact scalar observable" and "exact `3+1`
+lift" refer to the formal construction on the cited source surfaces; they do
+not promote the imported observable-principle row, the `S^3`/anomaly lift row,
+or the quotient-kernel row beyond their independent audit status. The registered
+runner verifies that the Hessian candidate is well-defined and symmetric on a
+finite prototype and that the Einstein/Regge identification blocker remains
+open.
 
 ## Verdict
 

@@ -1,0 +1,41 @@
+loop_slug: gr-route-runner-registration-20260617
+branch: codex/gr-route-runner-registration-20260617
+base: origin/main
+created_utc: 2026-06-17
+mode: source_side_audit_unlock
+target_claim_ids:
+  - s3_anomaly_spacetime_lift_note
+  - universal_gr_tensor_variational_candidate_note
+target_status: open
+actual_current_surface_status: open
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: runner-registration-and-boundary-repair
+hard_residual: >
+  Two high-load GR route rows are queued as critical unaudited rows with blank
+  runner paths even though source runners exist. The S3/anomaly runner also
+  checked stale exact/closed wording rather than the current bounded/conditional
+  route boundary.
+files_touched:
+  - docs/S3_ANOMALY_SPACETIME_LIFT_NOTE.md
+  - docs/UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md
+  - scripts/frontier_s3_anomaly_spacetime_lift.py
+  - scripts/frontier_universal_gr_tensor_variational_candidate.py
+  - logs/runner-cache/frontier_s3_anomaly_spacetime_lift.txt
+  - logs/runner-cache/frontier_universal_gr_tensor_variational_candidate.txt
+  - .claude/science/physics-loops/gr-route-runner-registration-20260617/
+imports_retired: []
+open_imports:
+  - S3/anomaly route still inherits retained-bounded and audited-conditional S3 inputs
+  - anomaly-forced time still inherits upstream admission boundaries
+  - universal GR tensor candidate still depends on observable-principle, S3/anomaly lift, quotient-kernel, and curvature-localization surfaces
+review_findings: reviewer_owned_not_run
+pr_status: pending_push_and_create
+next_exact_action: >
+  Verify cache freshness, commit, push, and open a ready PR for reviewer
+  extraction. Do not edit generated audit ledgers or keep unrelated PRs fresh.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

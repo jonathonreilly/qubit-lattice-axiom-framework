@@ -371,7 +371,42 @@ This design-note does NOT claim:
   inflow from a 5D boundary) can close the gap. Other paths remain
   open.
 
-## 5. Forbidden imports respected
+## 5. Downstream source-boundary firewall
+
+Allowed downstream uses of this open-gate packet are limited to:
+
+- cite the note as a design map of three candidate substrate-side
+  primitives for the SM LH/RH content problem;
+- cite the exact Pauli-rep checks that P-LH-1, P-LH-2, P-LH-3 have
+  the recorded structural properties in their toy/source models;
+- cite the negative synthesis that no single candidate closes the
+  gap on the existing physical Cl(3)/Z^3 source-stack alone;
+- cite the follow-on open question: whether the Connes-Chamseddine
+  algebra, order-one condition, and KO-dim-6 real structure admit a
+  physical Cl(3)/Z^3-native derivation.
+
+Forbidden downstream uses without new retained bridge theorems:
+
+- do not cite this packet as a framework-derived SM LH/RH content theorem;
+- do not cite any candidate as an approved substrate primitive,
+  repo-wide axiom, primitive-list addition, retained surface, or status
+  promotion;
+- do not cite P-LH-1 as a framework-native order-one condition;
+- do not cite P-LH-3 as a framework-native KO-dim-6 real structure;
+- do not cite the Connes-Chamseddine derivation as imported into the
+  retained framework;
+- do not cite the P-LH-2 circular primitive as a derivation;
+- do not treat the motivating sibling probes as landed dependencies or
+  authority for this row.
+
+This row should be re-audited only after a source artifact supplies a
+framework-native derivation of the order-one condition, the KO-dim-6
+real structure, and the finite algebra `C ⊕ Cl⁺(3) ⊕ M_3(C)` from the
+physical Cl(3)/Z^3 baseline, or after a different explicitly approved
+primitive route closes the SM LH/RH content problem without importing
+those NCG structures.
+
+## 6. Forbidden imports respected
 
 - NO PDG observed values used as derivation input
 - NO lattice MC empirical measurements
@@ -381,7 +416,7 @@ This design-note does NOT claim:
 - NO HK + DHR appeal
 - NO same-surface family arguments
 
-## 6. Honest verdict
+## 7. Honest verdict
 
 **Net verdict: design-note records three candidate primitives. None
 is a clean single-primitive closure on the existing physical Cl(3)/Z^3 inputs.**

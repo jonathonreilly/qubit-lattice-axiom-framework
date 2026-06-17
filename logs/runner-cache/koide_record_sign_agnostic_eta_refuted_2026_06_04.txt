@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py
-runner_sha256: d36a6bacf2b17b0d482cce81ddd408fecb486e8f36917696ad2c2287504b51c4
+runner_sha256: 685db840f0c451c1ace8b31d068e808a6859f6b7b6956168162201e3f9c1b1df
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
@@ -15,8 +15,13 @@ PASS squaring_erases_single_sign
 PASS eta_count_does_not_fix_q :: eta=3 for both; q_a=0.3333, q_b=0.5000
 PASS charged_lepton_comparator_sign_homogeneous :: q_signed=q_unsigned=0.666661
 PASS r_half_maps_to_q_two_thirds
+PASS note_declares_open_gate
+PASS pdg_comparator_non_load_bearing
+PASS not_no_go_against_all_signed_readouts
+PASS future_route_requires_framework_native_readout
+PASS refutes_only_tested_shortcuts
 ========================================================================
-SCORECARD: PASS=5 FAIL=0
+SCORECARD: PASS=10 FAIL=0
 ========================================================================
 
 ----- stderr -----

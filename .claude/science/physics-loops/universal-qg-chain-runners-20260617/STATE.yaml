@@ -1,0 +1,26 @@
+loop_slug: universal-qg-chain-runners-20260617
+goal: "Unlock audit readiness for three critical Universal QG chain rows by registering existing source-side runners."
+target_claim_ids:
+  - universal_qg_canonical_refinement_net_note
+  - universal_qg_pl_weak_form_note
+  - universal_qg_smooth_gravitational_global_solution_class_note
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/universal-qg-chain-runners-20260617
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+block_count: 1
+files_touched:
+  - docs/UNIVERSAL_QG_CANONICAL_REFINEMENT_NET_NOTE.md
+  - docs/UNIVERSAL_QG_PL_WEAK_FORM_NOTE.md
+  - docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md
+  - logs/runner-cache/frontier_universal_qg_canonical_refinement_net.txt
+  - logs/runner-cache/frontier_universal_qg_pl_weak_form.txt
+  - logs/runner-cache/frontier_universal_qg_smooth_gravitational_global_solution_class.txt
+  - .claude/science/physics-loops/universal-qg-chain-runners-20260617/
+open_imports:
+  - "Independent audit must still grade the three source claims and dependency closure."
+review_loop_disposition: reviewer_owned_not_run
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can run review-loop; audit tooling can then rebuild graph/queue and pick up the registered runners."
+stop_condition: "Three coherent source-side runner registrations packaged as a PR."

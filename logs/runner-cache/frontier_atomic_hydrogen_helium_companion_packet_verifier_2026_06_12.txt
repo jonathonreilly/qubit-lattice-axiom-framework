@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py
-runner_sha256: 4fa2986c0a8af629e00e959a8b73f135cf35677c7340ea42ecdd4ca1dd66784e
-timeout_sec: 120
+runner_sha256: eb1884dcb8ab6523c72517c0a9fe37edf945bdddecd45dddc9a7b6fc9daa0cb5
+timeout_sec: 90
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Atomic hydrogen/helium companion packet verifier
@@ -27,6 +27,8 @@ PASS scripts/frontier_atomic_helium_jastrow_companion.py exists
 PASS scripts/frontier_atomic_helium_jastrow_companion.py contains 'def make_jastrow'
 PASS scripts/frontier_atomic_helium_jastrow_companion.py contains 'def local_energy'
 PASS scripts/frontier_atomic_helium_jastrow_companion.py contains 'g_EM/4'
+PASS scripts/frontier_atomic_helium_jastrow_companion.py contains 'supplied contact-slope family'
+PASS scripts/frontier_atomic_helium_jastrow_companion.py contains 'not a retained finite-box Kato theorem'
 PASS scripts/frontier_atomic_helium_jastrow_companion.py contains 'repaired one-electron-density convention'
 PASS scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py exists
 PASS scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py contains 'C.staggered.square_is_not_minus_laplacian'
@@ -57,12 +59,14 @@ PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt exists
 PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt records runner path -- runner=scripts/frontier_atomic_helium_jastrow_companion.py
 PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt exits zero -- exit_code=0
 PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt status ok -- status=ok
-PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt sha matches source -- cache=12dadccf8efcdbe4212d248cb7f3285befff91e5abc0496cf9a5c8c7cd5ba916, live=12dadccf8efcdbe4212d248cb7f3285befff91e5abc0496cf9a5c8c7cd5ba916
+PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt sha matches source -- cache=0c5e034d8dcf27103b6efe9cc8c7364fbaf41f9b6368b4f38a4a3b513bac7391, live=0c5e034d8dcf27103b6efe9cc8c7364fbaf41f9b6368b4f38a4a3b513bac7391
 PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt contains '1.41501'
 PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt contains '1.43653'
 PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt contains 'Jastrow'
 PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt contains 'Full CI'
 PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt contains 'jastrow_inherits_repaired_hartree_normalization'
+PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt contains 'cusp_guided_trial_ansatz_boundary'
+PASS logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt contains 'TOTAL: PASS=7, FAIL=0'
 PASS logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt exists
 PASS logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt records runner path -- runner=scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py
 PASS logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt exits zero -- exit_code=0
@@ -77,8 +81,10 @@ PASS note cites cache frontier_atomic_helium_jastrow_companion.txt
 PASS note cites cache frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt
 PASS note leaves status authority external
 PASS note says no status lift
+PASS note records Jastrow boundary repair
+PASS Jastrow source has no retained-cusp derivation phrasing
 ========================================================================
-TOTAL: PASS=69 FAIL=0
+TOTAL: PASS=75 FAIL=0
 Packet visibility is complete; audit/review owns status movement.
 
 ----- stderr -----

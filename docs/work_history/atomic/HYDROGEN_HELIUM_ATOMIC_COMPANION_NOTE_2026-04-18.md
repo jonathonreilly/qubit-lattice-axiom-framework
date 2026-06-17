@@ -6,7 +6,8 @@ verdict boundary instruction; 2026-06-12: restricted packet verifier added
 for the hydrogen, helium Hartree, helium Jastrow, and dependency-repair
 source/cache artifacts; 2026-06-16: helium Hartree Coulomb-integral
 normalization made explicit and guarded by a direct pair-integral runner
-certificate).
+certificate; 2026-06-17: Jastrow contact-slope language narrowed to a
+supplied finite-box trial-family boundary, not a retained cusp theorem).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing; synced 2026-06-12 to the
 audit-named finite-box boundary):** the load-bearing content of this
@@ -204,16 +205,17 @@ def helium_variational_scf(N, g_nuc, g_em, max_iter=60, tol=1e-6, mix=0.5):
     ...
 ```
 
-The helium Jastrow runner adds the cusp-correlated trial wavefunction
-plus VMC local-energy estimator (same lattice kinetic + Coulomb kernel):
+The helium Jastrow runner adds a supplied one-parameter correlation
+trial family plus VMC local-energy estimator on the same finite-box
+Hamiltonian. The contact-slope coefficient is ansatz guidance; this
+packet does not claim a retained finite-box Kato/cusp theorem:
 
 ```python
 def make_jastrow(g_em: float, r_J: float):
     """Return f_J(r) = exp(-(g_EM × r_J / 4) × exp(-r/r_J)).
 
-    Cusp condition (derived from Z³ kernel + self-adjointness of H₂):
-        df_J/dr|_{r=0} = (g_EM/4) × f_J(0)
-    Boundary condition:        f_J(r) → 1  as  r → ∞
+    Supplied contact slope:  df_J/dr|_{r=0} = (g_EM/4) × f_J(0)
+    Boundary condition:      f_J(r) → 1  as  r → ∞
     """
     a = g_em * r_J / 4.0
     return lambda r: float(np.exp(-a * np.exp(-r / r_J)))
@@ -316,12 +318,13 @@ STEP 2: Jastrow VMC scan over r_J (correlation length)
 SUMMARY: HELIUM JASTROW COMPANION
                     Method    |E(He)|/|E(He⁺)|    Target  Notes
          Hartree (product)             1.41501    1.4240   separable ansatz
-           Jastrow (r_J=3)             1.43653       n/a   cusp corr. from Z³ kernel
+           Jastrow (r_J=3)             1.43653       n/a   supplied one-parameter correlation
                    Full CI             1.45200    1.4520   exact (historical)
 
 AUDIT CHECK SUMMARY
 PASS: jastrow_inherits_repaired_hartree_normalization -- rho_norm=1.000000000000, E_var_identity_residual=0.000e+00, E_pair=0.127867
-TOTAL: PASS=6, FAIL=0
+PASS: cusp_guided_trial_ansatz_boundary -- supplied contact-slope family; not a retained finite-box Kato theorem
+TOTAL: PASS=7, FAIL=0
 ```
 
 Log file preserved at `logs/2026-05-18-atomic_helium_jastrow_companion.txt`;
@@ -342,7 +345,7 @@ runner-cache certificate:
 | Hartree pair normalization | helium Hartree companion | `pair_norm_direct_ratio=1.000000`; `hartree_total_density_conversion_guard` |
 | Jastrow VMC `|E(He)|/|E(He⁺)| = 1.4365` | helium Jastrow companion | `Optimal r_J = 3.0  →  Jastrow (r_J=3)  1.43653` |
 | Hartree baseline at N=20: `1.4150` | helium Jastrow companion | `Hartree (product)  1.41501  ... ` |
-| Jastrow/Hartree inheritance | helium Jastrow companion | `jastrow_inherits_repaired_hartree_normalization` |
+| Jastrow/Hartree inheritance and boundary | helium Jastrow companion | `jastrow_inherits_repaired_hartree_normalization`; `cusp_guided_trial_ansatz_boundary` |
 
 This pin-table addresses the audit-stated repair sub-target as a
 **restricted-packet visibility** repair: it inlines the runner source
@@ -512,7 +515,7 @@ Regenerated runner totals:
 |---|---|
 | `scripts/frontier_atomic_hydrogen_lattice_companion.py` | `TOTAL: PASS=6, FAIL=0` |
 | `scripts/frontier_atomic_helium_hartree_companion.py` | `TOTAL: PASS=8, FAIL=0` |
-| `scripts/frontier_atomic_helium_jastrow_companion.py` | `TOTAL: PASS=6, FAIL=0` |
+| `scripts/frontier_atomic_helium_jastrow_companion.py` | `TOTAL: PASS=7, FAIL=0` |
 | `scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py` | `TOTAL: PASS=28, FAIL=0` |
 
 Scope sync: this note is to be read only under the narrowed diagnostic
@@ -550,7 +553,34 @@ the audited source defect and cache evidence; it does not claim exact helium,
 continuum closure, absolute-eV spectroscopy, retained atomic authority, or any
 source-authored status lift; no status lift is claimed.
 
-## Citation chain and audit-stated repair path (2026-05-10; cache and packet repair 2026-06-12; normalization repair 2026-06-16)
+## Jastrow contact-slope boundary repair (2026-06-17)
+
+Latest source-side boundary repair:
+
+`Remove residual language that treated the Jastrow contact-slope condition as a
+framework-derived finite-box cusp/Kato theorem. Keep the replayable VMC
+companion, but classify the Jastrow factor as a supplied one-parameter trial
+family on the explicit finite-box Hamiltonian.`
+
+Source-side repair:
+
+- the Jastrow runner no longer says the contact-slope condition is derived
+  from the retained lattice Green kernel or self-adjointness;
+- the runner now states that the continuum contact calculation is ansatz
+  guidance only, not a retained finite-box Kato theorem or continuum-limit
+  claim;
+- the regenerated Jastrow cache preserves the same numeric readouts and adds
+  the audit check `cusp_guided_trial_ansatz_boundary`;
+- the packet verifier now guards both the source and cache against the old
+  hidden-derivation phrasing.
+
+Residual boundary: the companion still supports only finite-box replayable
+work-history numerics for a product-state baseline plus supplied
+one-parameter Jastrow family. Exact two-electron closure, a discrete cusp
+theorem, continuum/volume control, and absolute-eV spectroscopy remain outside
+this note.
+
+## Citation chain and audit-stated repair path (2026-05-10; cache and packet repair 2026-06-12; normalization repair 2026-06-16; Jastrow boundary repair 2026-06-17)
 
 The audit verdict (2026-05-05, see top of note) flags two missing
 items: the preserved runner source plus completed stdout/cached
@@ -564,7 +594,7 @@ authority chain on this row currently stands as follows.
 | Helium Hartree companion runner | [`scripts/frontier_atomic_helium_hartree_companion.py`](../../../scripts/frontier_atomic_helium_hartree_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_helium_hartree_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_hartree_companion.txt) | product-state upper bound only |
 | Helium Jastrow / VMC companion runner | [`scripts/frontier_atomic_helium_jastrow_companion.py`](../../../scripts/frontier_atomic_helium_jastrow_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt) | one-parameter VMC companion only |
 | Lattice-kinetic / Coulomb-kernel dependency repair verifier | [`docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md`](../../HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md), [`scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py`](../../../scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py) | verifier cache [`logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt`](../../../logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt), `PASS=28 FAIL=0` | later review decides whether this dependency repair is sufficient |
-| Restricted-packet source/cache verifier | [`scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py`](../../../scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py) | verifier cache [`logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt`](../../../logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt), `PASS=69 FAIL=0` | confirms source/cache visibility only, plus the Hartree normalization guard; no status lift |
+| Restricted-packet source/cache verifier | [`scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py`](../../../scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py) | verifier cache [`logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt`](../../../logs/runner-cache/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.txt), `PASS=75 FAIL=0` | confirms source/cache visibility only, plus Hartree normalization and Jastrow boundary guards; no status lift |
 | One-hop retained lattice kinetic operator / graph Hamiltonian | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) and current baseline [`MINIMAL_AXIOMS_2026-06-05.md`](../../MINIMAL_AXIOMS_2026-06-05.md) | named in the 2026-06-02 dependency repair note and checked by the verifier | scalar graph-Laplacian surface only |
 | One-hop retained Coulomb-kernel route on `Z^3` | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) | four-line `G(r) -> 1/(4 pi |r|)` to `V(r)=-g/|r|` arithmetic recorded in the 2026-06-02 repair note and checked by the verifier | Maradudin/asymptotic bridge scope only |
 | Live retained EW normalization lane (used as boundary disclaimer only) | retained on `main` per "Upstream Surfaces Used Here" | retained | this companion stays in dimensionless / coupling-relative units |

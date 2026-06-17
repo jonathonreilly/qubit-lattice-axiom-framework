@@ -18,15 +18,17 @@ The Hartree baseline uses the repaired one-electron-density convention:
 `E_pair = ΣρV_H[ρ]` for `ρ=|φ|²`, with no extra total-density factor 1/2.
 
 --------------------------------------------------------------------------
-STEP 5-EXTENDED: JASTROW CORRELATION  [DERIVED from Z³ kernel]
+STEP 5-EXTENDED: JASTROW CORRELATION  [SUPPLIED bounded ansatz]
 --------------------------------------------------------------------------
 The Hartree ansatz ψ(r₁,r₂) = φ(r₁)φ(r₂) is separable. The true
 ground state is not separable: near r₁ ≈ r₂, V_ee = g_EM/|r₁-r₂| → ∞,
-and the wavefunction must have a cusp to keep the local energy finite.
+and a short-range correlation factor is a natural variational test.
 
-CUSP CONDITION (derived from the same Z³ Green's function kernel):
+CUSP-MOTIVATED TRIAL SHAPE (not a retained cusp theorem):
 -----------------------------------------------------------------
-Near contact r₁₂ = r₁ - r₂ → 0, write the eigenvalue equation:
+The runner uses the standard contact-cusp calculation as ansatz guidance,
+not as a framework-retained derivation on the finite-box Z³ surface. In
+continuum coordinates, the formal near-contact eigenvalue equation is
 
     H₂ψ = Eψ
     (-Δ₁ - Δ₂ + V_nuc + g_EM/r₁₂) ψ = E ψ
@@ -41,12 +43,12 @@ In 3D spherical coordinates for r₁₂:
 
 At order 1/r₁₂:   -2 × (2/r₁₂) × ψ'(0) + g_EM/r₁₂ × ψ(0) = 0
 
-Therefore:   ψ'(0) = (g_EM/4) × ψ(0)   [KATO CUSP CONDITION]
+Therefore:   ψ'(0) = (g_EM/4) × ψ(0)   [continuum cusp heuristic]
 
-On the narrowed lattice Hamiltonian surface this follows from:
-    1. The kinetic operator -Δ_Z³ (scalar graph-Laplacian repair)
-    2. The interaction kernel g_EM/|r₁₂| (Z³ Green-kernel repair)
-    3. Self-adjointness of H₂ on l²(Z³×Z³)  (mathematical requirement)
+On this narrowed companion surface that continuum calculation is only a
+shape constraint for a one-parameter variational trial family. The runner
+does not claim a discrete finite-box Kato theorem, a continuum limit, or a
+retained derivation of the Jastrow factor from the lattice kernel.
 
 JASTROW ANSATZ:
 --------------
@@ -55,15 +57,15 @@ Enrich the product state by a correlation factor:
     ψ_J(r₁,r₂) = φ_H(r₁) × φ_H(r₂) × f_J(|r₁-r₂|)
 
 where φ_H is the Hartree orbital (from the SCF) and f_J is a
-correlation function satisfying the cusp condition.
+correlation function with the supplied contact-slope shape.
 
-Natural form (satisfies cusp + boundary conditions):
+Trial form (satisfies the supplied contact-slope and boundary conditions):
 
     f_J(r) = exp(u(r))
     u(r) = -(g_EM × r_J / 4) × exp(-r/r_J)
 
 This gives:
-    u'(0) = g_EM/4  ✓  [cusp condition, DERIVED above]
+    u'(0) = g_EM/4  ✓  [supplied contact-slope condition]
     u(∞) = 0        ✓  [no long-range correlation]
     f_J(∞) = 1      ✓  [uncorrelated at large separation]
 
@@ -94,14 +96,14 @@ COMPARISON (all dimensionless, coupling-independent):
                  | E/E(He⁺) | Method
   ───────────────────────────────────────────────────
   Separable      |  ~1.424  | Hartree (product state)
-  Jastrow        |  ~1.43+  | This script (+ cusp correlation)
+  Jastrow        |  ~1.43+  | This script (+ supplied correlation)
   Full CI        |   1.452  | Exact (not tractable on lattice)
   Experiment     |   1.452  | Target (same as full CI for ground state)
   ───────────────────────────────────────────────────
 
-The Jastrow correction captures a fraction of the correlation energy on
-the same lattice surface. This is a bounded companion, not a closure of
-the two-electron problem.
+The Jastrow correction captures a fraction of the correlation energy for
+this supplied one-parameter trial family on the same finite-box operator.
+This is a bounded companion, not a closure of the two-electron problem.
 
 ==========================================================================
 """
@@ -203,14 +205,14 @@ def run_hartree_scf(N: int, g_nuc: float, g_em: float,
 
 
 # ---------------------------------------------------------------------------
-# Jastrow factor (cusp condition derived from Z³ Green's function)
+# Jastrow factor (supplied cusp-guided finite-box trial family)
 # ---------------------------------------------------------------------------
 
 def make_jastrow(g_em: float, r_J: float):
     """Return f_J(r) = exp(-(g_EM × r_J / 4) × exp(-r/r_J)).
 
-    Cusp condition (derived):  df_J/dr|_{r=0} = (g_EM/4) × f_J(0)
-    Boundary condition:        f_J(r) → 1  as  r → ∞
+    Supplied contact slope:  df_J/dr|_{r=0} = (g_EM/4) × f_J(0)
+    Boundary condition:      f_J(r) → 1  as  r → ∞
     """
     a = g_em * r_J / 4.0
 
@@ -363,7 +365,7 @@ def log(msg: str = "") -> None:
 def run_experiment() -> None:
     log("=" * 72)
     log("HELIUM JASTROW COMPANION ON THE Cl(3)/Z³ SURFACE")
-    log("One-parameter correlation improvement on the retained two-electron kernel")
+    log("One-parameter correlation improvement on the explicit finite-box Hamiltonian")
     log("=" * 72)
     log()
 
@@ -372,10 +374,10 @@ def run_experiment() -> None:
     G_NUC = 2.0 * G_EM
     N = 20   # N=20 for tractable VMC; N=30 for reference Hartree
 
-    log("Cusp condition derivation:")
-    log("  Near r₁₂ → 0: -2Δ_rel ψ + (g_EM/r₁₂) ψ = finite")
-    log("  -2 × (2/r₁₂) × ψ'(0) + (g_EM/r₁₂) × ψ(0) = 0")
-    log(f"  → ψ'(0)/ψ(0) = g_EM/4 = {G_EM/4:.4f}  [DERIVED, same kernel as V_ee]")
+    log("Jastrow contact-slope boundary:")
+    log("  Continuum contact heuristic: -2Δ_rel ψ + (g_EM/r₁₂) ψ = finite")
+    log("  Finite-box status: supplied one-parameter trial ansatz, not a retained cusp theorem")
+    log(f"  → ψ'(0)/ψ(0) = g_EM/4 = {G_EM/4:.4f}  [supplied contact-slope shape]")
     log()
     log(f"Jastrow form: f_J(r) = exp(-(g_EM r_J / 4) exp(-r/r_J))")
     log(f"  r_J: variational parameter (correlation length)")
@@ -414,7 +416,7 @@ def run_experiment() -> None:
     log()
 
     # ------------------------------------------------------------------
-    # Step 2: Derive Jastrow cusp parameter and scan r_J
+    # Step 2: Scan the supplied Jastrow contact-slope family.
     # ------------------------------------------------------------------
     log("─" * 60)
     log("STEP 2: Jastrow VMC scan over r_J (correlation length)")
@@ -494,7 +496,7 @@ def run_experiment() -> None:
 
     rows = [
         ("Hartree (product)", ratio_hartree, 1.424, "separable ansatz; Hartree target"),
-        (f"Jastrow (r_J={best['r_J']:.0f})", ratio_jastrow, None, "cusp corr. from Z³ kernel"),
+        (f"Jastrow (r_J={best['r_J']:.0f})", ratio_jastrow, None, "supplied one-parameter correlation"),
         ("Full CI", 1.452, 1.452, "exact (historical checkpoint)"),
     ]
     log(f"  {'Method':>24}  {'|E(He)|/|E(He⁺)|':>18}  {'Target':>8}  Notes")
@@ -508,21 +510,21 @@ def run_experiment() -> None:
 
     log()
     log("  DERIVATION STATUS:")
-    log("  ✓ Cusp condition u'(0) = g_EM/4 derived from Z³ Green's function")
-    log("  ✓ Jastrow form f_J(r) = exp(-a exp(-r/r_J)) satisfies both conditions")
-    log("  ✓ VMC variational bound E_VMC ≥ E_exact (Rayleigh-Ritz on l²(Z³×Z³))")
-    log("  ✓ Parameter r_J optimized variationally — no new physics inputs")
+    log("  ✓ Jastrow form f_J(r) = exp(-a exp(-r/r_J)) satisfies the supplied contact-slope shape")
+    log("  ✓ VMC energy is computed on the explicit finite-box Hamiltonian")
+    log("  ✓ Parameter r_J optimized variationally within the supplied one-parameter family")
+    log("  ✗ No retained finite-box Kato theorem or discrete cusp derivation is claimed")
     log()
     log("  WHAT JASTROW CAPTURES:")
     log("  The electron-electron correlation hole: electrons avoid each other")
-    log("  near contact. The cusp coefficient g_EM/4 is the SAME coupling that")
-    log("  enters V_ee — the correlation is driven by the same Z³ kernel.")
+    log("  near contact. The contact-slope coefficient g_EM/4 is tied to the")
+    log("  same V_ee coupling, but remains a supplied trial-family shape here.")
     log()
     log("  WHAT REMAINS BEYOND JASTROW:")
     log("  Three-body and higher correlations (higher-order Jastrow terms)")
     log("  Backflow correlations (momentum-dependent Jastrow)")
-    log("  These would be derived from higher-order terms in the 1/Z expansion")
-    log("  of the two-body resolvent of H₂ on l²(Z³×Z³).")
+    log("  These require separate derivations before they can be used as")
+    log("  retained framework-native inputs.")
     log()
     log("  BLOCKED:")
     log("  ✗ Absolute energy in eV still needs the electron-mass lane")
@@ -563,6 +565,11 @@ def run_experiment() -> None:
             "jastrow_improves_over_hartree",
             ratio_jastrow > ratio_hartree,
             f"hartree={ratio_hartree:.5f}, jastrow={ratio_jastrow:.5f}",
+        ),
+        (
+            "cusp_guided_trial_ansatz_boundary",
+            True,
+            "supplied contact-slope family; not a retained finite-box Kato theorem",
         ),
     ]
     pass_count = 0

@@ -1,0 +1,27 @@
+loop_slug: yt-p1-reaudit-corrected-boundary-20260617
+target: "Align the YT P1 I_S re-audit bridge verifier and notes with the corrected 2026-06-16 P1/Delta_R boundary."
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: corrected_boundary_runner_repair
+target_claim_id: yt_p1_i_s_lattice_pt_citation_note_2026-04-17
+target_blocker_text: "The re-audit bridge runner still expected the invalidated I_v_scalar=3.902 / negative-Delta_R native-candidate bridge after the correction cache reported I_v_scalar≈32.435 and Delta_R≈+51% uncontrolled."
+files_touched:
+  - docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md
+  - docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md
+  - scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
+  - logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt
+open_imports:
+  - "Controlled corrected YT P1 matching remains open."
+  - "Fermion full-doubler subtraction/matching normalization remains open."
+  - "No retained Delta_R or m_t precision claim is made."
+audit_boundary: "No audit-loop run, no audit data edits, no ledger retagging, no main landing."
+verification:
+  - "python3 scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py -> SUMMARY: PASS=72 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py --tail-chars 5000 -> cache refreshed"
+  - "python3 -m py_compile scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py -> pass"
+  - "PYTHONPATH=scripts python3 - <<'PY' ... runner_cache.cache_status(...) -> fresh"
+  - "git diff --check -> pass"
+  - "git diff -- docs/audit/data docs/audit/AUDIT_LEDGER.md docs/audit/AUDIT_QUEUE.md -> no output"
+next_exact_action: "Open review PR; reviewer/audit lane decides landing and re-audit."
+stop_condition: "Science block packaged as source-side PR."

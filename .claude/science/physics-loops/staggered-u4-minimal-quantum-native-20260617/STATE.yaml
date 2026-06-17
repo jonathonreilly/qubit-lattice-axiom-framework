@@ -1,0 +1,18 @@
+loop_slug: staggered-u4-minimal-quantum-native-20260617
+goal: "Unlock audit by repairing the high-descendant U4 conditional single-module row on the current minimal-Quantum surface."
+target_status: proposed_promoted
+cycle_count: 1
+active_route: "Split abstract Cl(3)-module surface from the current one-qubit physical carrier."
+hard_residual: "Full staggered-Dirac realization remains open: Grassmann/JW/Kawamoto-Smit/physical-species gates are separate."
+files_touched:
+  - docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md
+  - scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py
+  - logs/runner-cache/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.txt
+open_imports: []
+no_go_routes:
+  - "Cl(3) representation theory alone does not select k=1; k>=2 counterexamples remain if the current Quantum axiom is dropped."
+trace_gate_classification: direct_blocker_closure
+review_findings: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Run final checks, commit, push, and open a ready PR."
+stop_condition: "Stop this block after PR creation, then rescan for the next uncovered audit unlock."

@@ -6,6 +6,23 @@
 **Primary runner:** [`scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py`](../scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py)
 **Cached output:** [`logs/runner-cache/min_time_step_tied_to_lattice_edge_by_locality_runner.txt`](../logs/runner-cache/min_time_step_tied_to_lattice_edge_by_locality_runner.txt)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** renaming / bounded reachability support only. Effective status
+is audit-derived; this source records only the claim boundary.
+
+The runner checks finite 6-NN reachability and no-diagonal arithmetic, but the
+identity between update tick, record tick, `a_tau`, and one lattice edge is
+introduced as the row's naming convention.
+
+This note may be cited only for the finite reachability facts and for the
+explicit scale-boundary split. It may not be cited as a retained derivation of
+the physical minimum time step, record/update tick identity, clock-rate
+normalization, or absolute time/length scale.
+
+Promotion beyond renaming support requires a retained bridge theorem deriving
+the record/update tick as the time coordinate rather than defining it.
+
 ## Audit context
 
 The framework's spatial minimum is one `Z³` nearest-neighbor **edge** (the `LATTICE` axiom: 6-NN, **no

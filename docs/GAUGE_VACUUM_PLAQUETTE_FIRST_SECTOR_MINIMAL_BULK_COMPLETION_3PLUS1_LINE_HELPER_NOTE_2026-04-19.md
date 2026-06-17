@@ -17,6 +17,21 @@ non-chain-closing wrapper/decorative handle, the helper module is the
 candidate source object. This is source-side routing context only; it
 does not assert an `audit_status` or `effective_status`.
 
+## Source boundary (2026-06-12)
+
+**Boundary:** renaming / helper-wrapper support only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The load-bearing move is helper registration: fixed weights, line
+normalization/parameterization, ordered projection/compression, and
+projector-distance routines. This note may be cited only for that helper
+interface. It may not be cited as a derivation of the complement-line frame,
+the `selected_line` selector, the boundary-first weights, or any downstream
+gauge-vacuum-plaquette theorem.
+
+Promotion beyond wrapper support requires a separate theorem deriving the
+complement-line frame and selector rather than registering the helper choices.
+
 ## Purpose
 
 This wrapper note documents the shared helper layer used by several

@@ -75,6 +75,25 @@ the framework-point `beta = 6` Perron closure and the explicit
 analytic value of `rho_(p,q)(6)`, both of which remain outside this
 narrow note's scope.
 
+## Source boundary (2026-06-12)
+
+**Boundary:** renaming / formal-coefficient packaging support only. Effective
+status is audit-derived; this source records only the claim boundary.
+
+The runner verifies symbolic identities and positivity preconditions, but the
+coefficient sequence `Z_beta^env` is defined from the stripped residual
+eigenvalue sequence rather than derived from an independent unmarked spatial
+Wilson environment integral.
+
+This note may be cited only for the formal diagonal-convolution packaging of
+the already-defined stripped residual operator. It may not be cited as an
+independent derivation of the environment coefficient sequence, an all-weight
+class-function convergence theorem, normalized `rho_(0,0)=1` closure, `L^2`
+operator equality, or a beta=6 physical value.
+
+Promotion beyond renaming support requires a theorem deriving
+`Z_beta^env` from the unmarked-DOF integration rather than defining it.
+
 ## 2026-06-07 all-weight source repair
 
 The 2026-06-07 re-audit target for this row is:

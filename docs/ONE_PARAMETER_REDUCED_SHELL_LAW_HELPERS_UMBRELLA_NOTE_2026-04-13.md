@@ -12,6 +12,21 @@ audit-lane infrastructure for the corresponding helper modules.
 **Runner cache:**
 [`logs/runner-cache/frontier_one_parameter_reduced_shell_law.txt`](../logs/runner-cache/frontier_one_parameter_reduced_shell_law.txt)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** renaming / helper-wrapper support only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The load-bearing move is the creation of a citeable umbrella handle for five
+helper modules. This note may be cited only as a helper-wrapper registry. It
+may not be cited as a derivation of the helper modules, the exterior projector,
+the source-family constructors, the sewing-shell projection, the radial DtN
+kernel, or the parent shell-law theorem.
+
+Promotion beyond wrapper support requires separate retained wrapper notes or
+complete helper-runner sources for the helper modules whose behavior is meant
+to be load-bearing.
+
 ## Purpose
 
 This wrapper note documents the five frontier helper modules that the

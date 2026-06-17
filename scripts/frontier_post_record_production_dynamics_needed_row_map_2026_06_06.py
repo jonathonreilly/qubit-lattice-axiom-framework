@@ -206,7 +206,7 @@ def row_map_checks() -> tuple[list[dict], Counter[str]]:
         buckets[mapped_row(row)["lane"]].append(row)
     counts = Counter({lane: len(items) for lane, items in buckets.items()})
 
-    report("production-dynamics row count is current snapshot", len(rows) == 6, str(len(rows)))
+    report("production-dynamics row count is current snapshot", len(rows) == sum(EXPECTED_LANE_COUNTS.values()), str(len(rows)))
     report("expected production-dynamics claim ids match", set(observed_ids) == set(expected_ids), str(observed_ids))
     report("each expected production row appears once", len(observed_ids) == len(set(observed_ids)) == len(expected_ids))
     report("lane counts match expected", dict(counts) == EXPECTED_LANE_COUNTS, str(counts))

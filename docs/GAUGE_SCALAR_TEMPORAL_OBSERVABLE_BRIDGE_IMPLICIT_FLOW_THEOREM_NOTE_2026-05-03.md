@@ -10,6 +10,22 @@ Monte-Carlo, PDG, or perturbative running data.
 **Primary runner:** `scripts/frontier_gauge_scalar_temporal_observable_bridge_implicit_flow.py`
 **Parent gate:** `docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md`
 
+## Source boundary (2026-06-12)
+
+**Boundary:** bounded response-coordinate identity, not an independent
+observable-bridge derivation. Effective status is audit-derived; this source
+records only the claim boundary.
+
+The inverse-coordinate construction `beta_eff = R_O^{-1}(P_Lambda(beta))` is
+internally valid under the stated monotonicity/in-range premises, but it is a
+coordinate substitution over the full expectation rather than a derivation of
+that expectation from retained framework primitives.
+
+This note may be cited for the exact implicit-coordinate and susceptibility-flow
+identity on the stated finite Wilson surface. It may not be cited as a retained
+derivation of `<P>_full`, a beta=6 physical value, or the parent observable
+bridge quantity.
+
 ## 0. Target
 
 The parent stretch note isolated the residual

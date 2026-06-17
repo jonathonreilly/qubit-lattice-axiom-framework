@@ -10,6 +10,20 @@ audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.txt)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** finite gate map / methodology support. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The runner checks the declared gate rows and firewall booleans; it does not
+derive an unbounded family principle, apply audit verdicts, or promote any row
+to effective retained status.
+
+This note may be cited for finite gate discipline and to name the remaining
+unbounded-family lift. It may not be cited as a retained/unbounded theorem, an
+authority-surface status change, a production-kernel selector, or a physical
+dynamics derivation.
+
 ## Result
 
 This branch turns the post-record dynamics stack into an explicit retained and

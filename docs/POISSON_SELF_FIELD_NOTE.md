@@ -1,7 +1,24 @@
 # Poisson Self-Field: Transverse Profile from a Local Equation
 
 **Date:** 2026-04-06
-**Status:** proposed_retained positive (partial derivation) — transverse profile derived from 2D Poisson; longitudinal falloff still imposed; F~M=0.9997, Born=7.07e-16 on Poisson branch
+**Status:** bounded support / open PDE-origin gate — transverse profile follows
+from a supplied 2D Poisson equation; longitudinal falloff is still imposed;
+F~M=0.9997 and Born=7.07e-16 on the supplied Poisson branch.
+
+## Source boundary (2026-06-12)
+
+**Boundary:** bounded support for a supplied Poisson branch, not a retained
+derivation of the field law. Effective status is audit-derived; this source
+records only the claim boundary.
+
+The note solves and tests a manually specified transverse Poisson equation,
+while the PDE, source, boundary condition, normalization, physical gravity
+readout, and longitudinal law remain supplied or imposed.
+
+This note may be cited for the numerical behavior of the supplied Poisson
+branch and its exact-null/Born-cancellation checks. It may not be cited as a
+retained derivation of gravity, a derived transverse field law from framework
+axioms, or a full 3D field equation.
 
 ## Artifact chain
 

@@ -5,6 +5,22 @@
 **Status:** source-side proposal — independent audit lane owns the verdict
 **Purpose:** Derive the per-site `k = 1` selection (single faithful complex irrep, `H_x = ℂ²`) from the qubit-per-site axiom plus the standard quantum-information definition of "qubit" as the minimal faithful representation of `M_2(ℂ)`. Replaces the prior k=1 ratification clause (`QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § "Hardening II") with a proper derivation candidate.
 
+## Source boundary (2026-06-12)
+
+**Boundary:** axiom-term interpretation / minimal-module identification.
+Effective status is audit-derived; this source records only the claim boundary.
+
+The matrix-algebra classification supports the minimal faithful module
+statement, but the load-bearing move is identifying the axiom word "qubit" with
+the minimal two-dimensional carrier rather than deriving that semantic choice
+from operator algebra alone.
+
+This note may be cited for the standard `M_2(C)` module classification and the
+minimal-faithful `k=1` reading under the qubit-per-site axiom. It may not be
+cited as a retained derivation of the axiom's semantic content or as a
+framework-native proof that excludes all nonminimal multiplicity readings
+without that semantic premise.
+
 **Audit-dispatch parent candidate:** If a future independent audit
 evaluates whether this k=1 derivation is a non-chain-closing
 alias/decorative handle, the candidate parent is

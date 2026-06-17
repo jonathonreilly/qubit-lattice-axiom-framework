@@ -9,6 +9,23 @@ admitted bridge-gap input (user-authorized for this build, flagged); kinematics 
 **Source:** interacting-matter build (`wf_61ab5328`, 3 action candidates × 3 non-perturbative
 methods) + verification.
 
+## Source boundary (2026-06-12)
+
+**Boundary:** bounded exploratory support, not a first-principles
+interacting-dynamics theorem. Effective status is audit-derived; this source
+records only the claim boundary.
+
+The displayed algebraic values and the reported build summaries are useful
+diagnostics, but the source runner does not independently compute the three
+builds, the critical coupling, the continuous `r(g)` curve, or the claimed `C3`
+operator obstruction from retained framework primitives.
+
+This note may be cited for the bounded diagnostic lesson that interactions can
+move the `b=0` wall while exact `r=1/2` remains an unsupplied coupling/channel
+selection. It may not be cited as a retained derivation of the interacting
+matter action, a forced Koide dial, or a first-principles computation of the
+displayed nonperturbative branch.
+
 ## The reframe that motivated it (and was partly vindicated)
 Every prior route (kinematic/free/symmetric/RG-fixed-point) gave `b=0` or an endpoint,
 because those structures reach only symmetry-enhanced/discrete couplings. **Interacting

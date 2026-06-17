@@ -6,6 +6,22 @@
 **Runner:** `scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py` (SCORECARD 7/7).
 **Source:** workflow `wf_400cd07a-108` — 6 attack routes + 3-lens adversarial verification + synthesis (10 agents).
 
+## Source boundary (2026-06-12)
+
+**Boundary:** finite `C3` algebra support plus identification-boundary map.
+Effective status is audit-derived; this source records only the claim boundary.
+
+The runner verifies the displayed finite algebra and the negative that `J_cs`
+does not select `r`, but the claim that the readout gate, carrier
+identification, and zero-section pick are the same gate is a named
+identification over existing choices, not an independent derivation from the
+restricted packet.
+
+This note may be cited to collapse duplicate bookkeeping gates and to preserve
+the finite algebraic negative. It may not be cited as a retained derivation of
+the physical flavor observable, a forced intensive readout, or a proof that the
+carrier identification has been derived from baseline axioms.
+
 ## Question
 Does framework baseline+retained **force** the intensive local Lefschetz density `2/9` as THE physical
 charged-lepton flavor observable — over the *extensive* global equivariant index, which vanishes on

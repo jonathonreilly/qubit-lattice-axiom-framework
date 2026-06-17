@@ -1,0 +1,20 @@
+loop_slug: grown-transfer-live-runner-metadata-20260617
+goal: "Unlock the grown-transfer audit queue row by making the source note's declared primary runner match the cache-backed live verifier."
+target_status: bounded-support
+cycle_count: 1
+active_route: live-runner-source-routing
+target_claim_id: grown_transfer_basin_targeted_repair_note_2026-06-04
+files_touched:
+  - docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md
+  - .claude/science/physics-loops/grown-transfer-live-runner-metadata-20260617/
+open_imports:
+  - gate_b_grown_joint_package_note dependency remains load-bearing for the grown geometry helper.
+  - slow replay caches remain evidence inputs checked by the live packet.
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_loop_disposition: reviewer_owned_not_run
+audit_lane_touched: false
+main_landing_touched: false
+pr_status: pending
+next_exact_action: "Run the live packet and source extractor checks, then commit, push, and open the review PR."
+stop_condition: "One coherent source-routing PR opened; continue campaign from the next audit unlock opportunity if requested."

@@ -1,0 +1,23 @@
+loop_slug: kinetic-bw-chain-runner-h5-repair-20260617
+target: "Repair a live paired-runner failure on the kinetic isotropy conditional row without changing audit verdicts or status surfaces."
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: runner_hygiene
+target_claim_id: kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09
+target_blocker_text: "Runner H5 predicate treated named B-W bridge-chain inspection rows as bridge-chain dependencies, contradicting the source boundary and producing PASS=35 FAIL=1 on latest main."
+files_touched:
+  - scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py
+  - logs/runner-cache/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.txt
+open_imports:
+  - "B-W readout/normalization rule remains open; this PR does not derive it."
+  - "Realized strict tick, K/CPT tick transport, channel envelope, site-license carrier, record-stack spectral reading, and realization/unit readings remain as named residuals."
+audit_boundary: "No audit-loop run, no audit data edits, no ledger retagging, no main landing."
+verification:
+  - "python3 scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py -> SCORECARD: PASS=36 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py --refresh scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py --tail-chars 6000 -> cache refreshed"
+  - "python3 -m py_compile scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py -> pass"
+  - "PYTHONPATH=scripts python3 - <<'PY' ... runner_cache.cache_status(...) -> fresh"
+  - "git diff -- docs/audit/data docs/audit/AUDIT_LEDGER.md -> no output"
+next_exact_action: "Open review PR for the runner predicate/cache repair; independent audit/reviewer decides landing and any re-audit."
+stop_condition: "Science block packaged as PR; campaign should pivot to the next audit unlock after PR creation."

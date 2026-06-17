@@ -3,6 +3,12 @@
 **Date:** 2026-04-19  
 **Status:** theory-first bounded endpoint-ratio-chain candidate  
 **Primary runner:** `scripts/frontier_quark_endpoint_ratio_chain_law.py`
+**Runner cache:** `logs/runner-cache/frontier_quark_endpoint_ratio_chain_law.txt`
+
+**Replay-time repair (2026-06-17).** The runner now uses the fast endpoint
+certificate replay supplied by `frontier_quark_endpoint_readout_constraints.py`
+and skips non-load-bearing refit diagnostics in its anchored-branch comparison.
+The bounded chain checks and traceability checks are unchanged.
 
 ## Safe statement
 

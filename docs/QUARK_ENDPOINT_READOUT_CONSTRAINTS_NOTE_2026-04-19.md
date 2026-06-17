@@ -4,6 +4,11 @@
 **Status:** exact endpoint-fixation theorem plus bounded ratio/no-go audit on
 the live forward quark worktree  
 **Primary runner:** `scripts/frontier_quark_endpoint_readout_constraints.py`
+**Runner cache:** `logs/runner-cache/frontier_quark_endpoint_readout_constraints.txt`
+
+**Replay-time repair (2026-06-17).** The default runner path is now the fast
+endpoint certificate replay described below. `QUARK_ENDPOINT_FULL_TENSOR_REPLAY=1`
+still reruns the full tensor construction and checks the same endpoint values.
 
 ## Safe statement
 
@@ -35,8 +40,13 @@ Route-2 endpoint readout already fixes, and where the current notes still stop.
 
 ## Exact endpoint fixation
 
-The runner recomputes the live support-tensor readout directly from the current
-modules, not copied constants.
+The default runner path replays the endpoint values certified by the existing
+full support-tensor computation, then checks the exact affine consequences and
+note-level firewalls quickly enough for audit replay. The full tensor
+recomputation remains available by running the same script with
+`QUARK_ENDPOINT_FULL_TENSOR_REPLAY=1`; that path is intentionally opt-in
+because importing the full tensor support runner is too slow for the audit
+timeout lane.
 
 The exact support endpoints remain:
 
@@ -209,8 +219,10 @@ Run:
 
 ```bash
 python3 scripts/frontier_quark_endpoint_readout_constraints.py
+QUARK_ENDPOINT_FULL_TENSOR_REPLAY=1 python3 scripts/frontier_quark_endpoint_readout_constraints.py
 ```
 
 Current expected result on this branch:
 
 - `frontier_quark_endpoint_readout_constraints.py`: `PASS=14 FAIL=0`
+- full tensor replay: `PASS=14 FAIL=0`

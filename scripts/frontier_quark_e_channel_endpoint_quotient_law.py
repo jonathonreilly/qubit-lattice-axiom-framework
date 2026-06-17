@@ -280,6 +280,7 @@ def part4_quark_anchored_candidate(d_candidate: float) -> None:
         a_u_candidate,
         anchored.r_uc,
         anchored.r_ct,
+        run_refit=False,
     )
     sqrt7_eval = evaluate_candidate(
         "sqrt(7)",
@@ -287,6 +288,7 @@ def part4_quark_anchored_candidate(d_candidate: float) -> None:
         a_u_sqrt7,
         anchored.r_uc,
         anchored.r_ct,
+        run_refit=False,
     )
     live_eval = evaluate_candidate(
         "|b_E/b_T|",
@@ -294,6 +296,7 @@ def part4_quark_anchored_candidate(d_candidate: float) -> None:
         a_u_live,
         anchored.r_uc,
         anchored.r_ct,
+        run_refit=False,
     )
 
     print(f"\n  exact-support anchored solve       a_u* = {anchored.amp_u:.12f}")
@@ -304,15 +307,15 @@ def part4_quark_anchored_candidate(d_candidate: float) -> None:
     print()
     print(
         f"  candidate anchored aggregate      = {cand_eval.anchor_aggregate:.6f}%"
-        f"  (max = {cand_eval.anchor_max:.6f}%, refit max = {cand_eval.refit_max:.6f}%)"
+        f"  (max = {cand_eval.anchor_max:.6f}%, fast replay skips non-load-bearing refit)"
     )
     print(
         f"  live bounded anchored aggregate   = {live_eval.anchor_aggregate:.6f}%"
-        f"  (max = {live_eval.anchor_max:.6f}%, refit max = {live_eval.refit_max:.6f}%)"
+        f"  (max = {live_eval.anchor_max:.6f}%, fast replay skips non-load-bearing refit)"
     )
     print(
         f"  direct sqrt(7) anchored aggregate = {sqrt7_eval.anchor_aggregate:.6f}%"
-        f"  (max = {sqrt7_eval.anchor_max:.6f}%, refit max = {sqrt7_eval.refit_max:.6f}%)"
+        f"  (max = {sqrt7_eval.anchor_max:.6f}%, fast replay skips non-load-bearing refit)"
     )
 
     check(

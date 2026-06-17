@@ -149,7 +149,15 @@ def refit_objective(a_u: float, point: np.ndarray) -> float:
     return float(np.sum(residuals**2))
 
 
-def evaluate_candidate(label: str, family: str, value: float, anchor_r_uc: float, anchor_r_ct: float) -> CandidateEvaluation:
+def evaluate_candidate(
+    label: str,
+    family: str,
+    value: float,
+    anchor_r_uc: float,
+    anchor_r_ct: float,
+    *,
+    run_refit: bool = True,
+) -> CandidateEvaluation:
     anchor_vus_dev, anchor_vcb_dev, anchor_vub_dev, anchor_j_dev = anchor_deviations(value, anchor_r_uc, anchor_r_ct)
     anchor_aggregate = (
         abs(anchor_vus_dev)
@@ -164,14 +172,19 @@ def evaluate_candidate(label: str, family: str, value: float, anchor_r_uc: float
         abs(anchor_j_dev),
     )
 
-    result = minimize(
-        lambda point: refit_objective(value, point),
-        np.array([anchor_r_uc, anchor_r_ct], dtype=float),
-        method="L-BFGS-B",
-        bounds=[(5.0e-4, 5.0e-3), (4.0e-3, 2.0e-2)],
-        options={"maxiter": 1200},
-    )
-    r_uc, r_ct = map(float, result.x)
+    if run_refit:
+        result = minimize(
+            lambda point: refit_objective(value, point),
+            np.array([anchor_r_uc, anchor_r_ct], dtype=float),
+            method="L-BFGS-B",
+            bounds=[(5.0e-4, 5.0e-3), (4.0e-3, 2.0e-2)],
+            options={"maxiter": 1200},
+        )
+        r_uc, r_ct = map(float, result.x)
+        refit_objective_value = float(result.fun)
+    else:
+        r_uc, r_ct = float(anchor_r_uc), float(anchor_r_ct)
+        refit_objective_value = refit_objective(value, np.array([r_uc, r_ct], dtype=float))
 
     (
         _c13_u_base,
@@ -221,7 +234,7 @@ def evaluate_candidate(label: str, family: str, value: float, anchor_r_uc: float
         anchor_vcb_dev=anchor_vcb_dev,
         anchor_vub_dev=anchor_vub_dev,
         anchor_j_dev=anchor_j_dev,
-        refit_objective=float(result.fun),
+        refit_objective=refit_objective_value,
         refit_aggregate=refit_aggregate,
         refit_max=refit_max,
         r_uc=r_uc,

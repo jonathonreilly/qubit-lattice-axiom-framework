@@ -1,0 +1,20 @@
+loop: confinement-string-tension-boundary-20260617
+date: 2026-06-17
+branch: codex/confinement-string-tension-boundary-20260617
+base: origin/main
+target_claim_id: confinement_string_tension_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+cycle_count: 1
+files_touched:
+  - docs/CONFINEMENT_STRING_TENSION_NOTE.md
+  - scripts/frontier_confinement_string_tension.py
+  - logs/runner-cache/frontier_confinement_string_tension.txt
+  - .claude/science/physics-loops/confinement-string-tension-boundary-20260617/*
+review_loop_disposition: reviewer_owned_not_run
+audit_loop_run: false
+audit_or_ledger_edits: false
+next_exact_action: reviewer extracts or rejects the source-side support-boundary repair
+stop_condition: coherent source repair PR prepared

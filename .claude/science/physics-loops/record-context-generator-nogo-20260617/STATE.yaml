@@ -1,0 +1,24 @@
+loop_slug: record-context-generator-nogo-20260617
+objective: "source-side audit unlock for the Record/pre-record supplied-context generator blocker"
+mode: source_pr_only
+branch: codex/record-context-generator-nogo-20260617
+base: origin/main
+status: checkpoint_pr_ready
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_changed:
+  - docs/RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md
+  - docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md
+  - scripts/frontier_record_context_generator_nonidentifiability_no_go_2026_06_17.py
+  - logs/runner-cache/frontier_record_context_generator_nonidentifiability_no_go_2026_06_17.txt
+  - .claude/science/physics-loops/record-context-generator-nogo-20260617/
+commands_to_verify:
+  - python3 scripts/frontier_record_context_generator_nonidentifiability_no_go_2026_06_17.py
+  - python3 -m py_compile scripts/frontier_record_context_generator_nonidentifiability_no_go_2026_06_17.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_record_context_generator_nonidentifiability_no_go_2026_06_17.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/frontier_record_context_generator_nonidentifiability_no_go_2026_06_17.py
+  - git diff --check
+next_exact_action: "Hand to reviewer; do not audit, land, retag, or keep fresh against main in this worker."

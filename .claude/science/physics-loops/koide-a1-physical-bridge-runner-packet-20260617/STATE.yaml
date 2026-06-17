@@ -1,0 +1,20 @@
+loop_slug: koide-a1-physical-bridge-runner-packet-20260617
+goal: "Expose the existing Koide A1 physical-bridge no-go runner/cache as primary source-note metadata for independent re-audit."
+target_status: exact-support
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+runtime_mode: metadata_runner_packet
+cycle_count: 1
+active_route: existing_runner_registration
+hard_residual: "The physical source-law bridge for the Koide Frobenius-equipartition condition remains open."
+files_touched:
+  - docs/KOIDE_A1_PHYSICAL_BRIDGE_ATTEMPT_2026-04-22.md
+open_imports:
+  - physical_source_law_for_A1
+  - explicit_approval_or_theorem_for_S_block_as_primitive
+trace_gate_classification: direct_blocker_closure
+review_findings: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Verify citation extraction, cache freshness, commit, push, and open a ready review PR."
+stop_condition: "Stop this block after PR creation; do not audit, retag, merge, or refresh unrelated PRs against main."

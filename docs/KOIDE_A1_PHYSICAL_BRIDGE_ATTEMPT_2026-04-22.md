@@ -3,6 +3,8 @@
 **Date:** 2026-04-22
 **Claim type:** no_go
 **Status:** bounded negative attempt record for four named physical-bridge mechanisms; not a global no-go and not a retained-primitive proposal.
+**Primary runner:** [`scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py`](../scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.txt`](../logs/runner-cache/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.txt)
 **References:**
 - `origin/review/scalar-selector-cycle1-theorems`: KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS,
   KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE, KOIDE_Q_DELTA_CLOSURE_PACKAGE_README
@@ -160,8 +162,11 @@ the landscape map; what remains is theorist's choice.
 
 ## 5. Executable no-go runner
 
-Companion runner:
+Primary runner:
 `scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py`.
+
+Primary runner cache:
+`logs/runner-cache/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.txt`.
 
 The runner makes Attempts 1-4 executable as symbolic identities on the
 circulant Hermitian carrier `H = a I + b C + bbar C^2`:

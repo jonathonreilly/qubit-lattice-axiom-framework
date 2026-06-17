@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lepton_block_d12_prime_matching.py
-runner_sha256: 29c1319543f79427a410020199a1183e7c2718557f803a95e11cec5fb0a6ec6f
+runner_sha256: 50d12b0b66f45589662e011f3101ffd06ed73e8cdf48e8ee5fe16b931e83e91d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 

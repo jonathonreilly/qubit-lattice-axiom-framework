@@ -1,6 +1,6 @@
 # Lepton Block D12-Prime Matching - Physical-Operator Open Gate
 
-**Date:** 2026-05-10
+**Date:** 2026-05-10; 2026-06-12 runner/source-surface reroute
 **Claim type:** open_gate
 **Status:** source-note proposal; independent audit owns audit verdict and
 pipeline-derived effective status.

@@ -3,7 +3,8 @@
 **Date:** 2026-05-10 (originally, as the package-level honest-status
 packet); 2026-06-11 (theorem/boundary-input restructure — see changelog
 below); 2026-06-15 (audit-unblock boundary sharpening — see changelog
-below); 2026-06-16 (B3 kinetic-substrate split — see changelog below)
+below); 2026-06-16 (B3 kinetic-substrate split — see changelog below);
+2026-06-17 (B3 supplier-cascade source repair — see changelog below)
 **Claim type:** bounded_theorem
 **Claim scope:** one load-bearing structural-support theorem (T1), one
 declared candidate-map appendix (D1), one bounded numeric readout
@@ -47,6 +48,30 @@ anti-tuning certificates and four falsification legs, checks the
 note and its own source for overclaim/back-propagation tokens, and
 quarantines all PDG comparators in a terminal class-D section.
 Deterministic, stdlib-only, well under one minute.
+
+## Changelog — B3 supplier-cascade source repair (2026-06-17)
+
+The B3 split created a sharper question than the old parent-gate
+language exposed: the hierarchy exponent carrier consumes the
+four-direction count `N = 16` and the matching determinant
+`u_0`-degree, not the full staggered-Dirac realization parent gate's
+species-labeling residual. This repair adds the B3-specific source
+packet
+[`HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md`](HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md)
+as the audit-readable supplier surface:
+
+- B3a remains the approved kinetic-isotropy primitive.
+- B3b-count is the retained `2^d` species-count theorem plus this
+  runner's exact `d = 4` count and determinant-degree recomputation.
+- B3b-boundary remains the retained regulator-dependence no-go.
+- B3b-branch is the current P-FLUX supply line within its licensed
+  two-class surface and at its own bounded grade.
+
+The full `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` remains
+plain context for the broader matter-realization program, not a
+load-bearing hierarchy exponent dependency. This edit does not claim
+B3 as unbounded, does not close B4/B5, and does not set an audit
+verdict.
 
 ## Changelog — B3 kinetic-substrate split (2026-06-16)
 
@@ -266,16 +291,23 @@ by this note.
   (Wilson 1, twisted-mass 2, staggered after Kawamoto-Smit 4,
   domain-wall 1, overlap 1 — same SM continuum limit by Symanzik
   improvement), so `N = 16` is not a regulator-independent theorem.
-  The positive hierarchy use still needs the hierarchy-specific
-  regulator/species realization surface; the staggered-Dirac realization
-  gate (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`,
-  file-pointer context) remains the named source gate. The no-go is
-  consumed here as a boundary-narrowing citation only: it constrains
-  what B3b may claim, it supports no positive formula-closure step of
-  T1. This declaration subsumes P2 of the 2026-05-10 packet: the
-  four-direction kinetic-form surface is now sourced by B3a, while the
-  runner still computes the `d = 3` spatial-only count `8` as a
-  falsification leg for any attempt to omit the tick direction.
+  The hierarchy-specific regulator/species realization surface is now
+  exposed by the B3 supplier-cascade packet
+  [`HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md`](HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md):
+  it says exactly which pieces B3 consumes (primitive graining,
+  retained count, retained no-go boundary, and current P-FLUX branch
+  supplier) and says explicitly that the full staggered-Dirac parent
+  gate's species-labeling residual is not load-bearing for this
+  exponent carrier. The broader staggered-Dirac realization gate
+  (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`,
+  file-pointer context) remains context for the matter-realization
+  program, not a hierarchy exponent authority. The no-go is consumed
+  here as a boundary-narrowing citation only: it constrains what B3b
+  may claim, it supports no positive formula-closure step of T1. This
+  declaration subsumes P2 of the 2026-05-10 packet: the four-direction
+  kinetic-form surface is now sourced by B3a, while the runner still
+  computes the `d = 3` spatial-only count `8` as a falsification leg for
+  any attempt to omit the tick direction.
 - **B4 (open coupling-power transport gate).** The minimal-block
   determinant carries `u_0^16` (T1.ii; recomputed). The formula's
   suppression is `alpha_LM^16 = alpha_bare^16 u_0^(-16)` (identity (S),
@@ -571,6 +603,11 @@ must be recomputed); or if the Planck lane shifts `M_Pl` (elasticity
   regulator-dependent; consumed as a restriction on what this note may
   claim, never as positive formula support and never as a closure of
   the substrate gate.
+- [`HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md`](HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md)
+  — source-side B3 supplier packet: identifies the primitive/count/no-go
+  / P-FLUX cascade actually consumed by the hierarchy exponent carrier
+  and excludes the full staggered parent gate's species-labeling
+  residual as non-load-bearing for this row.
 
 Context file pointers (backticked throughout; deliberately omitted from
 the citation graph as non-load-bearing):

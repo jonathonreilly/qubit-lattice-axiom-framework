@@ -1,0 +1,90 @@
+============================================================================================
+ALL-ORDERS B4 MARGINAL-VELOCITY PROTECTION: SYMMETRY THEOREM + FIRST TWO-LOOP CONFIRMATION
+============================================================================================
+
+--------------------------------------------------------------------------------------------
+PART A  --  the regulated ACTION + MEASURE is B4-invariant (load-bearing premise)
+--------------------------------------------------------------------------------------------
+  [PASS] Wilson plaquette action density invariant under ALL 384 B4 signed axis permutations  --  S0=99.439277, max |S(g)-S0| over 384 elems = 5.684e-14
+  [PASS] staggered eta-phase closes the Kogut-Susskind plaquette identity (eta_mu eta_nu = -eta_nu eta_mu) for every axis pair  --  checked 3072 (x,mu,nu); max |eta_mu eta_nu + eta_nu eta_mu| = 0.000e+00
+  [PASS] free staggered fermion kinetic form D_F(k) invariant under ALL 384 B4 signed axis permutations (the marginal-protecting kinetic object)  --  checked 15360 (k,g) pairs; max |D_F(g.k) - D_F(k)| = 2.842e-14
+  [PASS] per-link Haar measure is left-invariant: V is unitary and U->VU is an EXACT measure-preserving bijection (every VW stays in SU(2), Jacobian 1)  --  |V^dag V - I|=2.22e-16, max|（VW)^dag(VW)-I|=8.88e-16, max|det(VW)-1|=7.78e-16
+  [PASS] site map x -> g.x is a bijection for every sampled B4 element (Grassmann measure reindexes; only a global sign, absorbed in normalization)  --  |sites|=16; every sampled g permutes the site set bijectively
+  => the regulated action S = S_gauge(Wilson) + S_fermion(staggered, eta_0=1)
+     AND the hypercubic measure are EXACTLY B4-invariant.  This is the load-bearing
+     premise: a symmetry of (action + measure) is a symmetry of Z[J] and hence of
+     the effective action Gamma order-by-order.
+
+--------------------------------------------------------------------------------------------
+PART B  --  B4 forces ONE diagonal kinetic coefficient (c_t = c_s); O_h+time-parity leaves two
+--------------------------------------------------------------------------------------------
+  [PASS] spatial O_h alone (+ free temporal coeff) leaves TWO diagonal kinetic coefficients  --  invariant dimension = 2  (c_t, c_s independent)
+  [PASS] B4 (full 4-axis signed permutations) leaves ONE diagonal kinetic coefficient -> c_t = c_s forced  --  invariant dimension = 1  (c_t = c_s)
+  [PASS] symbolic Reynolds average of a generic diagonal form collapses all four coefficients to one value  --  averaged coefficient = c_t/4 + c_x/4 + c_y/4 + c_z/4 (identical in every direction)
+
+--------------------------------------------------------------------------------------------
+PART C  --  ONE-LOOP confirmation, two distinct channels (Sigma_t - Sigma_s = 0 on OS0)
+--------------------------------------------------------------------------------------------
+  [rainbow] nk=8: |Sigma_t - Sigma_s| = 8.674e-19
+  [rainbow] nk=10: |Sigma_t - Sigma_s| = 0.000e+00
+  [rainbow] nk=12: |Sigma_t - Sigma_s| = 6.505e-19
+  [PASS] CHANNEL 1 (gauge rainbow): one-loop marginal Sigma_t - Sigma_s = 0 on OS0 to machine precision  --  max over resolutions = 8.674e-19
+  [power-div] nk=8: |Sigma_t^pd - Sigma_s^pd| = 0.000e+00
+  [power-div] nk=12: |Sigma_t^pd - Sigma_s^pd| = 0.000e+00
+  [power-div] nk=16: |Sigma_t^pd - Sigma_s^pd| = 1.735e-18
+  [PASS] CHANNEL 2 (power-divergent piece): Sigma_t - Sigma_s = 0 on the cut OS0 measure to machine precision  --  max over resolutions = 1.735e-18
+  [PASS] power-divergent temporal and spatial curvatures track exactly across all resolutions (B4 covariance, not a single-grid coincidence)  --  max temporal-vs-spatial gap across 4 resolutions = 1.735e-18
+
+--------------------------------------------------------------------------------------------
+PART D  --  TWO-LOOP confirmation (NEW): genuine 8D dressed-rainbow/sunset, Sigma_t - Sigma_s = 0 on OS0
+--------------------------------------------------------------------------------------------
+  Channel: dressed-rainbow (sunset family) fermion self-energy.
+    fermion line k = p e_mu + q + r  (q,r = TWO independent loop momenta, 8D total)
+    two gluon lines G(q), G(r);  B4-invariant vertex V(q,r)=1+c*sum_nu qhat2_nu(q)qhat2_nu(r)
+    => D_F(p e_mu + q + r) couples q+r JOINTLY: the double sum does NOT factorize (genuine two-loop).
+    Marginal coefficient Sigma_mu = (1/2) d^2 Sigma/dp_mu^2 |_0 extracted ANALYTICALLY inside the
+    integrand (an O(1)-scale nonzero number), so B4 covariance is an EXACT equality, not a noise diff.
+  nk=6 (8D cut-BZ sum, 1679616 points): Sigma_t=-1.737130e-01  Sigma_s=-1.737130e-01
+  [PASS] TWO-LOOP marginal velocity curvature Sigma_t - Sigma_s = 0 on OS0 to quadrature zero  --  |Sigma_t - Sigma_s| = 3.886e-16  (relative 2.237e-15)
+  nk=8 (8D cut-BZ sum, 16777216 points): Sigma_t=-5.573044e-02  Sigma_s=-5.573044e-02
+  [PASS] TWO-LOOP Sigma_t - Sigma_s = 0 holds at a SECOND 8D resolution (not a single-grid coincidence)  --  |Sigma_t - Sigma_s| = 6.245e-17
+  vertex_c=0.0: Sigma_t=-0.0203  |Sigma_t - Sigma_s|=0.00e+00
+  vertex_c=0.7: Sigma_t=-0.1737  |Sigma_t - Sigma_s|=3.89e-16
+  vertex_c=2.0: Sigma_t=-0.4586  |Sigma_t - Sigma_s|=1.72e-15
+  [PASS] TWO-LOOP zero is robust across the integrand (vertex_c=0,0.7,2.0); vertex_c=0 leaves ONLY the 8D fermion-line q+r coupling and still gives the zero  --  max |Sigma_t - Sigma_s| over three distinct integrands = 1.721e-15
+
+--------------------------------------------------------------------------------------------
+PART D'  --  PROOF the two-loop channel is genuinely 8D (two independent loop momenta)
+--------------------------------------------------------------------------------------------
+  [PASS] fermion denominator D_F(p+q+r) does NOT factorize as f(q)g(r): a 1-loop-relabel cannot reproduce this 8D coupling  --  D(q1+r1)D(q2+r2)=717.0336 != D(q1+r2)D(q2+r1)=845.5716  (gap 128.5380)
+  [PASS] full 8D double sum (D_F couples q+r) differs from any factorized 4Dx4D surrogate: r is genuinely a second loop, not a spectator  --  full(8D)=516.6802  vs  factorized(4Dx4D)=20.9183  (relative gap 0.960)
+  [PASS] B4 element g=(axis0<->axis1) acts on BOTH q and r; it maps the direction-0 integrand to the direction-1 integrand  --  sin(k_0)=0.8660=sin((g(q+r))_1)=0.8660; G,Df invariant
+  => the q0<->q1 AND r0<->r1 relabel is a bijection of the 8D summation domain that
+     carries the direction-0 two-loop integrand onto the direction-1 one.  The Part D
+     zero is therefore genuine two-loop B4 covariance, NOT a relabeled one-loop sum.
+
+--------------------------------------------------------------------------------------------
+PART E  --  all-orders argument + FALSIFICATION (B4-breaking xi!=1 internal block)
+--------------------------------------------------------------------------------------------
+  [PASS] FALSIFIER (1-loop): a B4-breaking anisotropic gluon block xi=2 makes Sigma_t - Sigma_s NONZERO  --  |Sigma_t - Sigma_s|(xi=2) = 1.842e-03 (vs ~0 at xi=1)
+  two-loop xi=2: Sigma_t=-1.188886e-01  Sigma_s=-1.188172e-01
+  two-loop xi=1 (control): |Sigma_t - Sigma_s| = 3.886e-16
+  [PASS] FALSIFIER (2-loop): the SAME B4-breaking xi=2 insertion makes the TWO-LOOP Sigma_t - Sigma_s NONZERO  --  |Sigma_t - Sigma_s|(xi=2) = 7.140e-05 (vs ~3.9e-16 at xi=1)
+  [PASS] the two-loop zero is GENUINE B4 covariance: it survives (machine-zero) at xi=1 and breaks at xi!=1 (not a numerical artifact)  --  xi=1 -> 3.9e-16 (machine zero), xi=2 -> 7.1e-05 (nonzero): the zero tracks B4, not the grid
+  [PASS] the first surviving (B4-invariant) lattice anisotropy is the dimension-6 hypercubic term, not the marginal dim-4  --  k^4 dispersion coefficient = -a**2/3 (dimension-6, Planck-suppressed)
+
+  ALL-ORDERS EFFECTIVE-ACTION ARGUMENT (Ward-style, made explicit):
+    (i)   Part A: the regulated action S and the hypercubic measure are EXACTLY B4-invariant.
+    (ii)  Hence Z[J] with B4-covariant sources is B4-invariant, so the effective action
+          Gamma[phi] inherits B4-invariance ORDER BY ORDER in the loop expansion (a symmetry
+          of the regulator is a symmetry of every Gamma^(L)).
+    (iii) Part B: the only B4-invariant diagonal marginal kinetic form has c_t = c_s.
+          Therefore the coefficient of the B4-NON-invariant marginal operator
+          (c_t p_t^2 + c_s p_s^2, c_t != c_s) is forced to ZERO in Gamma to ALL orders.
+    (iv)  Parts C (1-loop, 2 channels) and D (2-loop, genuine 8D) confirm the prediction;
+          Part E falsifies it under a deliberate B4 break -> the zero IS the symmetry.
+    This is NOT order-by-order cancellation; it is one symmetry constraint holding at every order.
+
+============================================================================================
+SUMMARY: PASS=21 FAIL=0
+============================================================================================

@@ -1,0 +1,23 @@
+loop_slug: observable-principle-t1d-firewall-20260617
+objective: "Unlock the observable-principle audit bottleneck by preventing downstream retained-language laundering while T1-d remains conditional."
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Scope downstream citations to the conditional T1-d observable boundary."
+target_claim_id: observable_principle_from_axiom_note
+target_blocker_text: "derive or register a retained/approved readout-identification bridge proving T1-d, or keep all downstream citations explicitly scoped to this conditional boundary."
+files_touched:
+  - docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  - docs/OBSERVABLE_PRINCIPLE_T1D_DOWNSTREAM_CITATION_FIREWALL_2026-06-17.md
+  - scripts/frontier_observable_principle_t1d_downstream_citation_firewall_2026_06_17.py
+  - logs/runner-cache/frontier_observable_principle_t1d_downstream_citation_firewall_2026_06_17.txt
+  - selected downstream docs/scripts with explicit retained observable/logdet wording
+  - .claude/science/physics-loops/observable-principle-t1d-firewall-20260617/
+open_imports:
+  - "T1-d readout-identification bridge remains unproved and not approved."
+  - "A future positive route would need a real readout-context theorem or approved primitive."
+review_loop_disposition: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Cache runner output, run checks, commit, push, and open a review PR."
+stop_condition: "One coherent source-side firewall block packaged as PR; goal remains active for later audit-unlock pivots."

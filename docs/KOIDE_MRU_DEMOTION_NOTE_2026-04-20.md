@@ -73,7 +73,7 @@ quotient at all.
 
 ---
 
-## 1. Path A attempt: can the SO(2)-quotient be derived from the retained observable principle?
+## 1. Path A attempt: can the SO(2)-quotient be derived from the conditional T1-d observable boundary?
 
 ### 1.1 The candidate route
 
@@ -128,7 +128,7 @@ Explicit check:
 - `det(H) = a^3 + b^3 + bbar^3 - 3 a |b|^2` carries the same
   `cos(3 arg b)` dependence, so `log|det|` is **not** SO(2)-invariant.
 
-Therefore the retained observable principle does **not** force the
+Therefore the conditional T1-d observable boundary does **not** force the
 SO(2)-quotient on its own. The generic scalar observable on
 `Herm_circ(3)` depends on both `|b|` and `arg(b)` (through
 `cos(3 arg b)`). The SO(2)-quotient is a genuinely additional
@@ -246,7 +246,7 @@ Effective from this note:
 2. **The MRU closure argument assumes a postulate not derivable from
    retained framework theorems.** Specifically, the scalar-lane
    SO(2)-quotient of the doublet frame is not a consequence of the
-   retained observable principle (spectrum-native scalar observables
+   conditional T1-d observable boundary (spectrum-native scalar observables
    are **not** SO(2)-invariant on `Herm_circ(3)` in general).
 
 3. **The spectrum-operator bridge theorem is the primary retained

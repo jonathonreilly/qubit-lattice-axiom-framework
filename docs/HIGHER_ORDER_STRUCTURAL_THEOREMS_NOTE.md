@@ -246,7 +246,7 @@ Hessian. In information-theoretic terms:
 Koide Q = 2/3  ⟺  σ = 1/2   (the `[0, 1]` midpoint).
 ```
 
-However, the retained `log|det(D)|` generator is **dimension-
+However, the conditional T1-d `log|det(D)|` generator is **dimension-
 weighted** (one log-term per complex irrep, weighted by multiplicity).
 The two-dimensional nontrivial-character subspace
 `E_ω ⊕ E_{ω²}` contributes two log terms (one per complex irrep),

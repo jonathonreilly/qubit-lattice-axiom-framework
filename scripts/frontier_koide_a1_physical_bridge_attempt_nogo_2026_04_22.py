@@ -90,7 +90,7 @@ def main() -> int:
     # ------------------------------------------------------------------
     section("A. Attempt 1 — log|det H| extremum (NOT at A1)")
     # ------------------------------------------------------------------
-    print("  Claim under test: the retained observable principle")
+    print("  Claim under test: the conditional T1-d observable boundary")
     print("  W[J=0] = log|det H| extremizes at A1.")
     print()
     print("  Calculation: log|det H| = log e1 + 2 log e2 = log(a+2b) + 2 log(a-b).")

@@ -24,7 +24,11 @@ observable map; see Changelog. 2026-06-16 T1-d independence guardrail:
 proves that Record additivity plus determinant block factorization does not
 derive the determinant-only readout quotient or the source-blocks-to-records
 clause, so T1-d remains an explicit Boundary rather than axiom-derived
-content.
+content. 2026-06-17 downstream citation firewall:
+[`OBSERVABLE_PRINCIPLE_T1D_DOWNSTREAM_CITATION_FIREWALL_2026-06-17.md`](OBSERVABLE_PRINCIPLE_T1D_DOWNSTREAM_CITATION_FIREWALL_2026-06-17.md)
+updates current source consumers that had described this parent or its
+`log|det|` generator as retained; they now cite it as a conditional T1-d
+observable boundary unless and until independent audit changes that status.
 **Type:** bounded_theorem (finite-algebra `log|det(D+J)|` generator on
 the runner block, using Record-backed finite scalar additivity, the
 positive-source-cone P2 elimination on the consumed finite real source surface,

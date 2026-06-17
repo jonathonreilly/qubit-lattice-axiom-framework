@@ -1,0 +1,172 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_t1d_downstream_citation_firewall_2026_06_17.py
+runner_sha256: 7c5af8881eb900a60baf679b15c550ba822fb362752519e196ce5fa174acd2ee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.36
+status: ok
+----- stdout -----
+OBSERVABLE-PRINCIPLE T1-d DOWNSTREAM CITATION FIREWALL
+
+== Part 0: parent boundary is still conditional ==
+PASS: parent declares T1-d as a Boundary
+PASS: parent says T1-d is not derivable from minimal_axioms
+PASS: T1-d no-go says consumers must not treat T1-d as Record-derived
+PASS: firewall note says it does not add an axiom or retag audit rows
+
+== Part 1: targeted source consumers are scoped ==
+PASS: docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md contains conditional T1-d wording
+PASS: docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md avoids forbidden phrase: retained observable principle
+PASS: docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md avoids forbidden phrase: retained log|det|
+PASS: docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md avoids forbidden phrase: retained `log|det|
+PASS: docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md avoids forbidden phrase: retained scalar observable principle
+PASS: docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md avoids forbidden phrase: retained axiom-native scalar generator
+PASS: docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md avoids forbidden phrase: THE retained additive CPT-even
+PASS: docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md avoids forbidden phrase: Observable-principle (retained)
+PASS: docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md avoids forbidden phrase: retained observable-principle authority
+PASS: docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md contains conditional T1-d wording
+PASS: docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md avoids forbidden phrase: retained observable principle
+PASS: docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md avoids forbidden phrase: retained log|det|
+PASS: docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md avoids forbidden phrase: retained `log|det|
+PASS: docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md avoids forbidden phrase: retained scalar observable principle
+PASS: docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md avoids forbidden phrase: retained axiom-native scalar generator
+PASS: docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md avoids forbidden phrase: THE retained additive CPT-even
+PASS: docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md avoids forbidden phrase: Observable-principle (retained)
+PASS: docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md avoids forbidden phrase: retained observable-principle authority
+PASS: docs/SIGNED_GRAVITY_NATURALLY_HOSTED_ORIENTATION_LINE_NOTE.md contains conditional T1-d wording
+PASS: docs/SIGNED_GRAVITY_NATURALLY_HOSTED_ORIENTATION_LINE_NOTE.md avoids forbidden phrase: retained observable principle
+PASS: docs/SIGNED_GRAVITY_NATURALLY_HOSTED_ORIENTATION_LINE_NOTE.md avoids forbidden phrase: retained log|det|
+PASS: docs/SIGNED_GRAVITY_NATURALLY_HOSTED_ORIENTATION_LINE_NOTE.md avoids forbidden phrase: retained `log|det|
+PASS: docs/SIGNED_GRAVITY_NATURALLY_HOSTED_ORIENTATION_LINE_NOTE.md avoids forbidden phrase: retained scalar observable principle
+PASS: docs/SIGNED_GRAVITY_NATURALLY_HOSTED_ORIENTATION_LINE_NOTE.md avoids forbidden phrase: retained axiom-native scalar generator
+PASS: docs/SIGNED_GRAVITY_NATURALLY_HOSTED_ORIENTATION_LINE_NOTE.md avoids forbidden phrase: THE retained additive CPT-even
+PASS: docs/SIGNED_GRAVITY_NATURALLY_HOSTED_ORIENTATION_LINE_NOTE.md avoids forbidden phrase: Observable-principle (retained)
+PASS: docs/SIGNED_GRAVITY_NATURALLY_HOSTED_ORIENTATION_LINE_NOTE.md avoids forbidden phrase: retained observable-principle authority
+PASS: docs/SIGNED_GRAVITY_SOURCE_CHARACTER_UNIQUENESS_THEOREM_NOTE.md contains conditional T1-d wording
+PASS: docs/SIGNED_GRAVITY_SOURCE_CHARACTER_UNIQUENESS_THEOREM_NOTE.md avoids forbidden phrase: retained observable principle
+PASS: docs/SIGNED_GRAVITY_SOURCE_CHARACTER_UNIQUENESS_THEOREM_NOTE.md avoids forbidden phrase: retained log|det|
+PASS: docs/SIGNED_GRAVITY_SOURCE_CHARACTER_UNIQUENESS_THEOREM_NOTE.md avoids forbidden phrase: retained `log|det|
+PASS: docs/SIGNED_GRAVITY_SOURCE_CHARACTER_UNIQUENESS_THEOREM_NOTE.md avoids forbidden phrase: retained scalar observable principle
+PASS: docs/SIGNED_GRAVITY_SOURCE_CHARACTER_UNIQUENESS_THEOREM_NOTE.md avoids forbidden phrase: retained axiom-native scalar generator
+PASS: docs/SIGNED_GRAVITY_SOURCE_CHARACTER_UNIQUENESS_THEOREM_NOTE.md avoids forbidden phrase: THE retained additive CPT-even
+PASS: docs/SIGNED_GRAVITY_SOURCE_CHARACTER_UNIQUENESS_THEOREM_NOTE.md avoids forbidden phrase: Observable-principle (retained)
+PASS: docs/SIGNED_GRAVITY_SOURCE_CHARACTER_UNIQUENESS_THEOREM_NOTE.md avoids forbidden phrase: retained observable-principle authority
+PASS: docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md contains conditional T1-d wording
+PASS: docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md avoids forbidden phrase: retained observable principle
+PASS: docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md avoids forbidden phrase: retained log|det|
+PASS: docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md avoids forbidden phrase: retained `log|det|
+PASS: docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md avoids forbidden phrase: retained scalar observable principle
+PASS: docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md avoids forbidden phrase: retained axiom-native scalar generator
+PASS: docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md avoids forbidden phrase: THE retained additive CPT-even
+PASS: docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md avoids forbidden phrase: Observable-principle (retained)
+PASS: docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md avoids forbidden phrase: retained observable-principle authority
+PASS: docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md contains conditional T1-d wording
+PASS: docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md avoids forbidden phrase: retained observable principle
+PASS: docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md avoids forbidden phrase: retained log|det|
+PASS: docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md avoids forbidden phrase: retained `log|det|
+PASS: docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md avoids forbidden phrase: retained scalar observable principle
+PASS: docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md avoids forbidden phrase: retained axiom-native scalar generator
+PASS: docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md avoids forbidden phrase: THE retained additive CPT-even
+PASS: docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md avoids forbidden phrase: Observable-principle (retained)
+PASS: docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md avoids forbidden phrase: retained observable-principle authority
+PASS: docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md contains conditional T1-d wording
+PASS: docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md avoids forbidden phrase: retained observable principle
+PASS: docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md avoids forbidden phrase: retained log|det|
+PASS: docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md avoids forbidden phrase: retained `log|det|
+PASS: docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md avoids forbidden phrase: retained scalar observable principle
+PASS: docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md avoids forbidden phrase: retained axiom-native scalar generator
+PASS: docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md avoids forbidden phrase: THE retained additive CPT-even
+PASS: docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md avoids forbidden phrase: Observable-principle (retained)
+PASS: docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md avoids forbidden phrase: retained observable-principle authority
+PASS: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md contains conditional T1-d wording
+PASS: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md avoids forbidden phrase: retained observable principle
+PASS: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md avoids forbidden phrase: retained log|det|
+PASS: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md avoids forbidden phrase: retained `log|det|
+PASS: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md avoids forbidden phrase: retained scalar observable principle
+PASS: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md avoids forbidden phrase: retained axiom-native scalar generator
+PASS: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md avoids forbidden phrase: THE retained additive CPT-even
+PASS: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md avoids forbidden phrase: Observable-principle (retained)
+PASS: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md avoids forbidden phrase: retained observable-principle authority
+PASS: docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md contains conditional T1-d wording
+PASS: docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md avoids forbidden phrase: retained observable principle
+PASS: docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md avoids forbidden phrase: retained log|det|
+PASS: docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md avoids forbidden phrase: retained `log|det|
+PASS: docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md avoids forbidden phrase: retained scalar observable principle
+PASS: docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md avoids forbidden phrase: retained axiom-native scalar generator
+PASS: docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md avoids forbidden phrase: THE retained additive CPT-even
+PASS: docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md avoids forbidden phrase: Observable-principle (retained)
+PASS: docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md avoids forbidden phrase: retained observable-principle authority
+PASS: scripts/frontier_koide_a1_block_democracy_max_entropy.py contains conditional T1-d wording
+PASS: scripts/frontier_koide_a1_block_democracy_max_entropy.py avoids forbidden phrase: retained observable principle
+PASS: scripts/frontier_koide_a1_block_democracy_max_entropy.py avoids forbidden phrase: retained log|det|
+PASS: scripts/frontier_koide_a1_block_democracy_max_entropy.py avoids forbidden phrase: retained `log|det|
+PASS: scripts/frontier_koide_a1_block_democracy_max_entropy.py avoids forbidden phrase: retained scalar observable principle
+PASS: scripts/frontier_koide_a1_block_democracy_max_entropy.py avoids forbidden phrase: retained axiom-native scalar generator
+PASS: scripts/frontier_koide_a1_block_democracy_max_entropy.py avoids forbidden phrase: THE retained additive CPT-even
+PASS: scripts/frontier_koide_a1_block_democracy_max_entropy.py avoids forbidden phrase: Observable-principle (retained)
+PASS: scripts/frontier_koide_a1_block_democracy_max_entropy.py avoids forbidden phrase: retained observable-principle authority
+PASS: scripts/frontier_koide_cone_variational_principle_survey.py contains conditional T1-d wording
+PASS: scripts/frontier_koide_cone_variational_principle_survey.py avoids forbidden phrase: retained observable principle
+PASS: scripts/frontier_koide_cone_variational_principle_survey.py avoids forbidden phrase: retained log|det|
+PASS: scripts/frontier_koide_cone_variational_principle_survey.py avoids forbidden phrase: retained `log|det|
+PASS: scripts/frontier_koide_cone_variational_principle_survey.py avoids forbidden phrase: retained scalar observable principle
+PASS: scripts/frontier_koide_cone_variational_principle_survey.py avoids forbidden phrase: retained axiom-native scalar generator
+PASS: scripts/frontier_koide_cone_variational_principle_survey.py avoids forbidden phrase: THE retained additive CPT-even
+PASS: scripts/frontier_koide_cone_variational_principle_survey.py avoids forbidden phrase: Observable-principle (retained)
+PASS: scripts/frontier_koide_cone_variational_principle_survey.py avoids forbidden phrase: retained observable-principle authority
+PASS: scripts/frontier_koide_moment_ratio_uniformity_theorem.py contains conditional T1-d wording
+PASS: scripts/frontier_koide_moment_ratio_uniformity_theorem.py avoids forbidden phrase: retained observable principle
+PASS: scripts/frontier_koide_moment_ratio_uniformity_theorem.py avoids forbidden phrase: retained log|det|
+PASS: scripts/frontier_koide_moment_ratio_uniformity_theorem.py avoids forbidden phrase: retained `log|det|
+PASS: scripts/frontier_koide_moment_ratio_uniformity_theorem.py avoids forbidden phrase: retained scalar observable principle
+PASS: scripts/frontier_koide_moment_ratio_uniformity_theorem.py avoids forbidden phrase: retained axiom-native scalar generator
+PASS: scripts/frontier_koide_moment_ratio_uniformity_theorem.py avoids forbidden phrase: THE retained additive CPT-even
+PASS: scripts/frontier_koide_moment_ratio_uniformity_theorem.py avoids forbidden phrase: Observable-principle (retained)
+PASS: scripts/frontier_koide_moment_ratio_uniformity_theorem.py avoids forbidden phrase: retained observable-principle authority
+PASS: scripts/frontier_koide_a1_quartic_potential_derivation.py contains conditional T1-d wording
+PASS: scripts/frontier_koide_a1_quartic_potential_derivation.py avoids forbidden phrase: retained observable principle
+PASS: scripts/frontier_koide_a1_quartic_potential_derivation.py avoids forbidden phrase: retained log|det|
+PASS: scripts/frontier_koide_a1_quartic_potential_derivation.py avoids forbidden phrase: retained `log|det|
+PASS: scripts/frontier_koide_a1_quartic_potential_derivation.py avoids forbidden phrase: retained scalar observable principle
+PASS: scripts/frontier_koide_a1_quartic_potential_derivation.py avoids forbidden phrase: retained axiom-native scalar generator
+PASS: scripts/frontier_koide_a1_quartic_potential_derivation.py avoids forbidden phrase: THE retained additive CPT-even
+PASS: scripts/frontier_koide_a1_quartic_potential_derivation.py avoids forbidden phrase: Observable-principle (retained)
+PASS: scripts/frontier_koide_a1_quartic_potential_derivation.py avoids forbidden phrase: retained observable-principle authority
+PASS: scripts/frontier_koide_cone_real_irrep_democracy.py contains conditional T1-d wording
+PASS: scripts/frontier_koide_cone_real_irrep_democracy.py avoids forbidden phrase: retained observable principle
+PASS: scripts/frontier_koide_cone_real_irrep_democracy.py avoids forbidden phrase: retained log|det|
+PASS: scripts/frontier_koide_cone_real_irrep_democracy.py avoids forbidden phrase: retained `log|det|
+PASS: scripts/frontier_koide_cone_real_irrep_democracy.py avoids forbidden phrase: retained scalar observable principle
+PASS: scripts/frontier_koide_cone_real_irrep_democracy.py avoids forbidden phrase: retained axiom-native scalar generator
+PASS: scripts/frontier_koide_cone_real_irrep_democracy.py avoids forbidden phrase: THE retained additive CPT-even
+PASS: scripts/frontier_koide_cone_real_irrep_democracy.py avoids forbidden phrase: Observable-principle (retained)
+PASS: scripts/frontier_koide_cone_real_irrep_democracy.py avoids forbidden phrase: retained observable-principle authority
+PASS: scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py contains conditional T1-d wording
+PASS: scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py avoids forbidden phrase: retained observable principle
+PASS: scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py avoids forbidden phrase: retained log|det|
+PASS: scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py avoids forbidden phrase: retained `log|det|
+PASS: scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py avoids forbidden phrase: retained scalar observable principle
+PASS: scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py avoids forbidden phrase: retained axiom-native scalar generator
+PASS: scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py avoids forbidden phrase: THE retained additive CPT-even
+PASS: scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py avoids forbidden phrase: Observable-principle (retained)
+PASS: scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py avoids forbidden phrase: retained observable-principle authority
+PASS: scripts/signed_gravity_cl3z3_source_character_derivation.py contains conditional T1-d wording
+PASS: scripts/signed_gravity_cl3z3_source_character_derivation.py avoids forbidden phrase: retained observable principle
+PASS: scripts/signed_gravity_cl3z3_source_character_derivation.py avoids forbidden phrase: retained log|det|
+PASS: scripts/signed_gravity_cl3z3_source_character_derivation.py avoids forbidden phrase: retained `log|det|
+PASS: scripts/signed_gravity_cl3z3_source_character_derivation.py avoids forbidden phrase: retained scalar observable principle
+PASS: scripts/signed_gravity_cl3z3_source_character_derivation.py avoids forbidden phrase: retained axiom-native scalar generator
+PASS: scripts/signed_gravity_cl3z3_source_character_derivation.py avoids forbidden phrase: THE retained additive CPT-even
+PASS: scripts/signed_gravity_cl3z3_source_character_derivation.py avoids forbidden phrase: Observable-principle (retained)
+PASS: scripts/signed_gravity_cl3z3_source_character_derivation.py avoids forbidden phrase: retained observable-principle authority
+
+== Part 2: current source scan excludes retained-logdet laundering ==
+PASS: no current non-audit/non-publication source file uses forbidden retained observable/logdet phrases
+PASS: archival raw dispatch text is intentionally excluded from source firewall
+      raw transcript remains historical, not source authority
+
+TOTAL: PASS=150 FAIL=0
+VERDICT: observable-principle T1-d downstream citation firewall passes.
+
+----- stderr -----
+

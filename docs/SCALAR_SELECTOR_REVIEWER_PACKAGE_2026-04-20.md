@@ -95,7 +95,7 @@ The equal-block-measure extremum `E_+ = E_⊥` at fixed `E_+ + E_⊥` recovers `
 
 ### §1.3 Supporting — Moment-Ratio Uniformity (MRU)
 
-On `Herm_circ(3)` with Frobenius metric, the MRU principle — Frobenius-normalized cyclic responses uniform across Z₃ isotypes — is a single scalar equation equivalent to `a² = 2|b|²`. See `scripts/frontier_koide_moment_ratio_uniformity_theorem.py` (26 PASS). MRU is supplementary support only. The cycle-2 demotion note proves that the stronger SO(2)-quotient needed to make MRU load-bearing is **not** derivable from the retained observable principle, so the primary closure remains the spectrum/operator bridge plus the block-total Frobenius route. See `docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`.
+On `Herm_circ(3)` with Frobenius metric, the MRU principle — Frobenius-normalized cyclic responses uniform across Z₃ isotypes — is a single scalar equation equivalent to `a² = 2|b|²`. See `scripts/frontier_koide_moment_ratio_uniformity_theorem.py` (26 PASS). MRU is supplementary support only. The cycle-2 demotion note proves that the stronger SO(2)-quotient needed to make MRU load-bearing is **not** derivable from the conditional T1-d observable boundary, so the primary closure remains the spectrum/operator bridge plus the block-total Frobenius route. See `docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`.
 
 ### §1.4 Supporting obstructions — what is ruled out
 

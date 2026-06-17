@@ -211,7 +211,7 @@ def main() -> int:
     print("  REMAINING TASK: derive V(Φ) from the retained Cl(3)/Z³ framework.")
     print()
     print("  Candidate routes:")
-    print("    1. Expand the retained observable principle W[J] = log|det(D+J)|")
+    print("    1. Expand the conditional T1-d observable boundary W[J] = log|det(D+J)|")
     print("       to quartic order in J and identify V(Φ) as the resulting term.")
     print("    2. Show that the retained 4th-order mixed-Γ cancellation theorem")
     print("       (HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE Theorem 6) forces the")

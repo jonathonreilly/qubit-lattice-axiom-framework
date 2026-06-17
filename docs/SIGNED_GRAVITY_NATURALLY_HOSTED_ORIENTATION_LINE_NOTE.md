@@ -76,7 +76,7 @@ canonical_section_forced=False
 ```
 
 This is the key obstruction. A real line can be naturally present without a
-canonical positive section. The retained `log|det|` observable sees only the
+canonical positive section. The conditional T1-d `log|det|` observable sees only the
 magnitude side:
 
 ```text

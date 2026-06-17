@@ -334,7 +334,7 @@ def candidate_H2():
 
 
 # ---------------------------------------------------------------------------
-# H-3: Partition-function extremum with retained log|det| generator
+# H-3: Partition-function extremum with conditional T1-d log|det| generator
 # ---------------------------------------------------------------------------
 
 
@@ -371,7 +371,7 @@ def candidate_H3():
     This directly matches and extends Agent-5's result.
     """
     print("=" * 88)
-    print("PART H-3: Partition-function extremum with retained log|det| generator")
+    print("PART H-3: Partition-function extremum with conditional T1-d log|det| generator")
     print("=" * 88)
 
     m, y1, y2, y3 = sp.symbols("m y1 y2 y3", real=True, positive=True)
@@ -427,14 +427,14 @@ def candidate_H3():
         f"eigenvalues: {list(eigs.keys())}",
     )
 
-    print("  [AUDIT] H-3 label: RETAINED (observable-principle generator")
-    print("          W[J] = log|det(D + J)| is THE retained additive CPT-even")
+    print("  [AUDIT] H-3 label: CONDITIONAL (observable-principle T1-d boundary")
+    print("          W[J] = log|det(D + J)| is the conditional additive CPT-even")
     print("          scalar per OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md).")
     print("  [RESULT] Its stationary point under a fixed-sum Yukawa constraint")
     print("          is the fully symmetric (degenerate) configuration,")
     print("          giving Q = 1/3, NOT the Koide Q = 2/3 cone.")
     print("  [CONSISTENCY] This directly extends the Agent-5 negative")
-    print("          structural result. The retained log|det| generator")
+    print("          structural result. The conditional T1-d log|det| generator")
     print("          carries NO cross-character coupling on hw=1 with")
     print("          retained scalar baseline D = m I_3.")
     print()
@@ -565,7 +565,7 @@ def candidate_H5():
     But alpha = beta is PRECISELY the Candidate-B character-symmetry
     question that a companion runner closed negatively
     (OBSERVABLE_PRINCIPLE_CHARACTER_SYMMETRY_NOTE.md:
-    retained log|det| does NOT force alpha = beta).
+    conditional T1-d log|det| does NOT force alpha = beta).
 
     So H-5 reduces to "do we have a retained scalar quadratic N on the
     hw=1 triplet that ALREADY has alpha = beta?" Any C_3-invariant

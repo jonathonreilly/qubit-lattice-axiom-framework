@@ -1,0 +1,19 @@
+loop: acphilambda-reta-korbit-refresh-20260617
+goal: "Unlock the ACPHILAMBDA R-eta audited-conditional row by removing a stale K-orbit conditional dependency from the source packet."
+target_claim_id: acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "source-side dependency refresh after K-orbit determinant/orientation became audited-clean at retained-bounded scope"
+files_touched:
+  - docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py
+  - logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt
+open_imports:
+  - "A_R-eta h-class: the registered angle is a fixed-locus density at all."
+  - "A_R-eta h-unit: identity reading in radians."
+  - "Physical charged-lepton carrier/readout context."
+  - "Carrier-gate realization surface."
+pr_status: pending
+next_exact_action: "Commit, push, and open a ready review PR; do not edit audit ledgers or keep older PRs fresh."
+stop_condition: "PR opened for reviewer/auditor extraction."

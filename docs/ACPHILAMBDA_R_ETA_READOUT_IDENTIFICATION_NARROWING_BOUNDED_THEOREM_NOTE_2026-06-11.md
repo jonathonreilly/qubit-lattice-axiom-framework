@@ -1,6 +1,11 @@
 # AC_phi_lambda Sub-Admission (ii) Narrowing: R-eta Decomposes Into a Forced Form Layer Plus One Identification Atom — Bounded Theorem
 
-**Date:** 2026-06-11
+**Date:** 2026-06-11 (2026-06-17 source-side dependency refresh: the
+K-orbit determinant/orientation algebra consumed here is now taken through the
+audited-clean retained-bounded K-orbit note, not through the stale
+`audited_conditional` dependency wording. This refresh does not retire
+`A_R-eta`, the supplied physical readout context, or the carrier-gate
+realization.)
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
@@ -39,10 +44,14 @@ comparator, which uses `r = 1/2`, is **not consumed**).
 
 ## Statement
 
-Write the AC_phi_lambda Hermitian circulant of the carrier context as
-`H(delta) = a I + B e^{i delta} C + B e^{-i delta} C^T` (the form consumed
-from the Tier-A K-orbit note, L2). The R-eta statement of the sibling chain
-note — "the registered C3-breaking phase magnitude is the fixed-locus
+Write the AC_phi_lambda Hermitian circulant of the supplied carrier context as
+`H(delta) = a I + B e^{i delta} C + B e^{-i delta} C^T`. The K/CPT
+orientation algebra on this supplied circulant form is consumed through the
+retained-bounded
+[`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md);
+the physical charged-lepton carrier/readout identification remains a supplied
+context, not a conclusion of that K-orbit algebra. The R-eta statement of the
+sibling chain note — "the registered C3-breaking phase magnitude is the fixed-locus
 spectral density, read directly as the angle: `|delta| = L3(1,2)`" — bundles
 four distinguishable contents:
 
@@ -143,10 +152,32 @@ The objection "the cos3delta channel already assumes R-eta" fails on the
 derivation order (runner S7): the channel result is exact symmetric-function
 algebra on `H(delta)`, symbolic in `{a, B, delta}`, holding as an identity
 for ALL delta, with no density object, no `L3`, and no `2/9` anywhere in the
-computation. The circulant form itself is consumed from the carrier / Tier-A
-K-orbit context, which predates and is independent of R-eta. R-eta enters
-exactly once, at the final identification step — which is why it can be
-isolated as the atom.
+computation. The supplied circulant form and its K/CPT orientation algebra are
+upstream of R-eta; the latter algebra is now routed through the retained-bounded
+K-orbit note, while the physical carrier/readout identification remains outside
+this proof. R-eta enters exactly once, at the final identification step — which
+is why it can be isolated as the atom.
+
+## 2026-06-17 dependency-refresh boundary
+
+The previous source wording listed the K-orbit orientation note as an
+`audited_conditional` dependency. That is no longer the source-side dependency
+state on current `origin/main`: the K-orbit determinant/orientation note is
+audited-clean at retained-bounded scope for the algebra on the supplied
+circulant class. This note therefore no longer asks the ACPHILAMBDA R-eta audit
+to treat the K/CPT sign-flip algebra itself as a live conditional dependency.
+
+What remains open is narrower and unchanged:
+
+- the supplied physical charged-lepton carrier/readout context;
+- the carrier-gate realization surface;
+- the Record-registrable readout-context premise for applying the forced form
+  layer physically;
+- the `A_R-eta` atom itself (`h-class` plus `h-unit`).
+
+This is a source dependency repair only. It does not edit the Tier-A registry,
+retag the ledger, assert `proposed_retained`, or claim that the R-eta
+sub-admission has been retired.
 
 ## Boundary
 
@@ -189,10 +220,12 @@ h-class + h-unit, one real parameter of load).* The note's value is the
 honest split, not a value derivation. Soft spots an auditor should press:
 
 1. the identification of the runner's 3x3 circulant with the physical
-   charged-lepton surface routes through the carrier gate
-   (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`, unaudited) and the
-   Tier-A K-orbit note's L2 form (audited_conditional) — the narrowing is
-   conditional on that context;
+   charged-lepton surface still routes through the carrier gate
+   (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`, unaudited) and a
+   supplied physical readout context. The K-orbit sign-flip algebra on the
+   supplied circulant class is retained-bounded; the remaining conditional
+   context is the physical carrier/readout identification, not the finite
+   K/CPT algebra itself;
 2. "weights forced" is forced *within* the AB/Lefschetz class — class
    membership is h-class, i.e. still admitted; the note does not hide this;
 3. the additive+even sign-strip is re-derived here, but its application to
@@ -203,7 +236,7 @@ honest split, not a value derivation. Soft spots an auditor should press:
    unordered multiset — an auditor should confirm the relabeling is the
    vacuous naming freedom the registry already excludes from the admission.
 
-## Dependencies (live effective_status on origin/main, verified 2026-06-11)
+## Dependencies (source-side dependency state on origin/main, verified 2026-06-17)
 
 - [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
   — meta (the live registry; source of the sub-admission (ii) text being
@@ -213,12 +246,12 @@ honest split, not a value derivation. Soft spots an auditor should press:
 - [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   — **retained_bounded** (the fixed-locus arithmetic this runner
   cross-checks; also where R2 is named LIVE).
-- `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
-  — **audited_conditional** (the circulant form L2 and the K/CPT sign-flip
-  context; consumed here as supplied context, not retained-grade authority).
+- [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
+  — **retained_bounded** for the K/CPT orientation algebra on the supplied
+  circulant class. It does not derive the physical carrier/readout context.
 - `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md`
-  — **retained_pending_chain** (the bounded Tier-A surface for the delta
-  admission this note narrows; target surface, not authority for this proof).
+  — **retained_bounded** (the bounded Tier-A surface for the delta admission
+  this note narrows; target surface, not authority for this proof).
 - [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
   — **retained_no_go** (boundary: why a rational density is not automatically
   a radian — exactly the h-unit component of the atom; respected, not

@@ -31,10 +31,15 @@ Per-check PASS/FAIL lines; final `TOTAL: PASS=N FAIL=0`.
 """
 from __future__ import annotations
 
+from pathlib import Path
+
 import sympy as sp
 
 PASS = 0
 FAIL = 0
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md"
 
 
 def check(name: str, ok, detail: str = "") -> None:
@@ -239,8 +244,9 @@ def main() -> int:
     check("the channel result is an IDENTITY in delta (holds for ALL delta), "
           "so it cannot have assumed any particular value of |delta|",
           sp.simplify(e3 - (a ** 3 - 3 * a * B ** 2 + 2 * B ** 3 * sp.cos(3 * delta))) == 0)
-    check("the circulant form itself is consumed from the carrier/K-orbit "
-          "context, which is independent of (and prior to) R-eta",
+    check("the supplied circulant form and retained-bounded K-orbit algebra are "
+          "upstream of (and independent of) R-eta; the physical readout context "
+          "remains outside this proof",
           True, detail="hostile guard (a) answered: no circularity")
 
     # ------------------------------------------------------------------
@@ -287,6 +293,18 @@ def main() -> int:
     check("no Tier-A registry edit, no audit status set, no admission retired; "
           "this is a source-side narrowing of WHAT sub-admission (ii) admits",
           True)
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    check("SOURCE REFRESH: K-orbit dependency is routed as retained_bounded, not "
+          "as a stale audited_conditional dependency",
+          "audited-clean at retained-bounded scope" in note_text
+          and "K/CPT algebra itself" in note_text
+          and "Tier-A K-orbit note's L2 form (audited_conditional)" not in note_text)
+    check("SOURCE REFRESH: no status promotion or registry/ledger edit is claimed",
+          "This is a source dependency repair only" in note_text
+          and "does not edit the Tier-A registry" in note_text
+          and "retag the ledger" in note_text
+          and "assert `proposed_retained`" in note_text
+          and "A_R-eta" in note_text)
 
     # ------------------------------------------------------------------
     print("\n" + "=" * 88)

@@ -1,0 +1,33 @@
+loop_slug: yt-lsp-pauli-readout-bridge-20260617
+target: yt_lsp_signed_record_source_readout_support_note_2026-05-24
+target_status: exact-support
+current_goal: >
+  Repair the source-side blocker that the Y_T primitive signed source record
+  was previously only represented by an isomorphic signed carrier rather than
+  constructed as the Pauli projective readout record.
+cycle_count: 1
+active_route: direct_joint_spectral_readout_space
+hard_residual: >
+  This does not make the source-action gate neutral EW/Higgs authority and
+  does not close O_H, scalar LSZ, pole rows, matching/running, m_t, or y_t.
+files_touched:
+  - docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md
+  - scripts/frontier_yt_lsp_signed_record_source_readout_support.py
+  - outputs/yt_lsp_signed_record_source_readout_support_2026-05-24.json
+  - logs/runner-cache/frontier_yt_lsp_signed_record_source_readout_support.txt
+dependencies_checked:
+  minimal_axioms: docs/MINIMAL_AXIOMS_2026-06-05.md
+  lsp_canonical_kp_equals_p: retained_bounded_in_current_ledger
+  yt_source_action_support_packet: retained_bounded_in_current_ledger
+open_imports:
+  - neutral_EW_Higgs_source_action_authority
+  - canonical_O_H
+  - scalar_LSZ_normalization
+  - strict_source_Higgs_or_WZ_response_rows
+  - matching_and_running
+trace_gate_classification: direct_blocker_closure
+review_loop_disposition: reviewer_owned_not_run
+audit_status: independent_audit_required
+pr_status: pending
+next_exact_action: commit, push, and open review PR for this source-side repair
+stop_condition: PR opened and verified, then report effectiveness and remaining opportunities

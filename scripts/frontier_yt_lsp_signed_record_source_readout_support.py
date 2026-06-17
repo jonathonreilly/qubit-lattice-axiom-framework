@@ -24,8 +24,8 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
-AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-05-20.md"
-LSP = DOCS / "LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md"
+AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-06-05.md"
+LSP_CANONICAL = DOCS / "LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md"
 SOURCE_ACTION = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 OUTPUT = ROOT / "outputs" / "yt_lsp_signed_record_source_readout_support_2026-05-24.json"
@@ -66,14 +66,17 @@ def max_abs(a: list[float], b: list[float]) -> float:
 
 def part1_source_anchors() -> None:
     print("\nPart 1: source anchors")
-    for path in (NOTE, AXIOMS, LSP, SOURCE_ACTION, LEDGER):
+    for path in (NOTE, AXIOMS, LSP_CANONICAL, SOURCE_ACTION, LEDGER):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
 
     note = read(NOTE)
     check("note declares bounded_theorem", "**Claim type:** bounded_theorem" in note)
     check("note registers this runner", "frontier_yt_lsp_signed_record_source_readout_support.py" in note)
-    check("note cites current qubit axioms", "MINIMAL_AXIOMS_2026-05-20.md" in note)
-    check("note cites LSP projective theorem", "LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md" in note)
+    check("note cites current minimal axioms", "MINIMAL_AXIOMS_2026-06-05.md" in note)
+    check(
+        "note cites canonical LSP projective theorem",
+        "LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md" in note,
+    )
     check("note cites Y_T source-action support packet", "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md" in note)
 
 
@@ -81,7 +84,7 @@ def part2_ledger_status_boundary() -> None:
     print("\nPart 2: ledger boundary")
     rows = json.loads(read(LEDGER))["rows"]
     expected = {
-        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": {
+        "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": {
             "effective_status": {"retained_bounded", "retained"},
             "claim_type": {"bounded_theorem", "positive_theorem"},
         },
@@ -123,9 +126,45 @@ def part3_projective_pauli_readout() -> None:
     evals = sorted(np.linalg.eigvalsh(sigma_z).round(12).tolist())
     check("signed readout spectrum is {-1,+1}", evals == [-1.0, 1.0], evals)
 
-    lsp = read(LSP)
-    check("LSP note records K_P = P", "K_P = P" in lsp)
-    check("LSP note records P E P sequential effect", "P E P" in lsp)
+    lsp = read(LSP_CANONICAL)
+    check("canonical LSP note records K_r = P_r", "K_r = P_r" in lsp or "K_r  =  " in lsp and "P_r" in lsp)
+    check("canonical LSP note records P_r E P_r sequential effect", "P_r E P_r" in lsp or "P E P" in lsp)
+
+
+def part3b_joint_spectral_sample_space() -> None:
+    print("\nPart 3b: joint spectral sample space is the source-record space")
+    identity = np.eye(2, dtype=float)
+    sigma_z = np.array([[1.0, 0.0], [0.0, -1.0]], dtype=float)
+    one_site = {
+        1: (identity + sigma_z) / 2.0,
+        -1: (identity - sigma_z) / 2.0,
+    }
+
+    joint: dict[tuple[int, int], np.ndarray] = {
+        eps: np.kron(one_site[eps[0]], one_site[eps[1]]) for eps in states(2)
+    }
+    zero4 = np.zeros((4, 4), dtype=float)
+    eye4 = np.eye(4, dtype=float)
+
+    check("joint projectors sum to identity", np.allclose(sum(joint.values(), zero4), eye4))
+    check("joint projectors are idempotent", all(np.allclose(p @ p, p) for p in joint.values()))
+    check(
+        "distinct joint projectors are orthogonal",
+        all(np.allclose(pa @ pb, zero4) for ea, pa in joint.items() for eb, pb in joint.items() if ea != eb),
+    )
+
+    recovered_z0 = sum(eps[0] * p for eps, p in joint.items())
+    recovered_z1 = sum(eps[1] * p for eps, p in joint.items())
+    check("coordinate epsilon_0 recovers first-site sigma_z readout", np.allclose(recovered_z0, np.kron(sigma_z, identity)))
+    check("coordinate epsilon_1 recovers second-site sigma_z readout", np.allclose(recovered_z1, np.kron(identity, sigma_z)))
+
+    note = read(NOTE)
+    source_action = read(SOURCE_ACTION)
+    check("note defines sample space as joint spectral outcome set", "joint spectral outcome set" in note)
+    check("note says primitive record is the spectral coordinate function", "spectral coordinate function" in note)
+    check("note rejects extra carrier isomorphism", "not an extra carrier isomorphism" in note)
+    check("source-action packet supplies primitive signed record", "primitive signed record" in source_action)
+    check("source-action packet supplies product RN family", "R_h(epsilon)" in source_action)
 
 
 def part4_rn_score_equals_signed_readout() -> None:
@@ -211,11 +250,12 @@ def part7_firewalls() -> None:
         "does not fix scalar LSZ normalization",
         "does not select `kappa_Y = 0`",
         "does not derive `y_t`",
-        "Boundary:** renaming / compatibility support only",
-        "may not be cited as a retained derivation",
-        "Promotion beyond renaming support requires a retained bridge theorem",
+        "source_boundary: signed_record_readout_exact_support_only",
+        "actual_current_surface_status: exact-support",
         "claim_type_author_hint: bounded_theorem",
         "direct_effective_status_change_allowed_from_this_note: false",
+        "audit_required_before_effective_retained: true",
+        "bare_retained_allowed: false",
     ]
     for phrase in required:
         check(f"required boundary phrase present: {phrase}", phrase in normalized_note)
@@ -228,6 +268,8 @@ def part7_firewalls() -> None:
         "y_t =",
         "m_t =",
         "sqrt(8/9) as an unconditional",
+        "Boundary:** renaming / compatibility support only",
+        "Promotion beyond renaming support requires a retained bridge theorem",
     ]
     for phrase in forbidden:
         check(f"forbidden overclaim absent: {phrase}", phrase not in note)
@@ -236,18 +278,25 @@ def part7_firewalls() -> None:
 def write_output() -> None:
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {
-        "generated_at": "2026-05-24T00:00:00Z",
-        "claim": "Y_T source-action primitive signed RN source record equals native LSP Pauli signed readout",
+        "generated_at": "2026-06-17T00:00:00Z",
+        "claim": "Y_T source-action primitive signed RN source record is the coordinate function on the native LSP Pauli joint spectral readout space",
         "claim_type_author_hint": "bounded_theorem",
-        "source_boundary": "signed_record_readout_support_only",
+        "source_boundary": "signed_record_readout_exact_support_only",
+        "bridge_authorities": [
+            "MINIMAL_AXIOMS_2026-06-05.md",
+            "LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
+            "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
+        ],
+        "actual_current_surface_status": "exact-support",
         "status_authority": "independent_audit_lane_only",
         "proposal_allowed": False,
         "proposal_allowed_reason": (
-            "Readout carrier support only; source/action authority, canonical O_H, "
-            "scalar LSZ, strict pole rows or W/Z bypass, and matching/running remain open."
+            "Exact signed-record readout support only; source/action authority as a neutral EW/Higgs surface, "
+            "canonical O_H, scalar LSZ, strict pole rows or W/Z bypass, and matching/running remain open."
         ),
         "direct_effective_status_change_allowed_from_this_note": False,
-        "audit_required_before_effective_status_change": True,
+        "audit_required_before_effective_retained": True,
+        "bare_retained_allowed": False,
         "pass_count": PASS,
         "fail_count": FAIL,
     }
@@ -262,6 +311,7 @@ def main() -> int:
     part1_source_anchors()
     part2_ledger_status_boundary()
     part3_projective_pauli_readout()
+    part3b_joint_spectral_sample_space()
     part4_rn_score_equals_signed_readout()
     part5_tensor_product_readout_commutes()
     part6_source_family_uniqueness()

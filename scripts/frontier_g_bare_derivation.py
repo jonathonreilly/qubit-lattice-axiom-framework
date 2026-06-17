@@ -577,21 +577,28 @@ def section_G_ledger_visibility():
         kind="BOUNDED",
     )
 
-    # The new theorem rows are seeded by the audit pipeline AFTER this PR
-    # lands and the pipeline is rerun. We check OPTIMISTICALLY: if they are
-    # present, classify them; if absent, mark as bounded (re-seed required).
+    # The repair theorem rows may be absent before pipeline seeding, present
+    # but audited_conditional while the parent gate remains open, or retained
+    # after later independent audit. Section G checks ledger visibility and
+    # declared dependency wiring only; audit status is reported as detail, not
+    # converted into a runner failure marker.
     for cid in (rescaling_id, constraint_id):
         if cid in rows:
             row = rows[cid]
             deps = row.get("deps", [])
             check(
-                f"new row '{cid}' seeded with deps = {deps}",
-                row.get("audit_status") == "unaudited"
-                and row.get("effective_status") == "unaudited",
+                f"repair row '{cid}' visible with declared dependency",
+                cl3_color_id in deps,
                 f"audit_status = {row.get('audit_status', 'missing')}; "
-                f"effective_status = {row.get('effective_status', 'missing')}",
+                f"effective_status = {row.get('effective_status', 'missing')}; "
+                f"deps = {deps}",
                 kind="BOUNDED",
             )
+            if row.get("effective_status") not in {"retained", "retained_bounded"}:
+                print(
+                    "  [BOUNDARY] parent gate remains open until independent audit "
+                    f"retains '{cid}' with closed dependencies"
+                )
         else:
             check(
                 f"new row '{cid}' will be seeded by next audit-pipeline run",

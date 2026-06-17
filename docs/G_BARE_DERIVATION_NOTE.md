@@ -189,6 +189,11 @@ BOUNDED : PASS = 4, FAIL = 0
 TOTAL   : PASS = 55, FAIL = 0
 ```
 
+The runner reports the current audit/effective status of the two repair rows
+in Section G detail. Those statuses keep the parent gate open unless and until
+independent audit retains the repair rows with closed dependencies; they are
+not runner failure markers.
+
 ---
 
 ## Provenance Chain Update

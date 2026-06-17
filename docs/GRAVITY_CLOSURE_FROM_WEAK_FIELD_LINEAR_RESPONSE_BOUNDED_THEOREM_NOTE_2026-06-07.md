@@ -8,6 +8,24 @@ after independent review.
 **Primary runner:** [`scripts/frontier_gravity_closure_from_weak_field_linear_response.py`](../scripts/frontier_gravity_closure_from_weak_field_linear_response.py)
 **Runner cache:** [`logs/runner-cache/frontier_gravity_closure_from_weak_field_linear_response.txt`](../logs/runner-cache/frontier_gravity_closure_from_weak_field_linear_response.txt)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** renaming / bounded weak-field support only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The runner verifies finite neutral-subspace linear algebra after defining the
+weak-field response as `G0 rho`; it does not derive the physical identification
+that gravity is mediated by the same `H` and `G0` as the lattice propagator.
+
+This note may be cited only for the bounded finite linear-response checks and
+the explicit nonlinear boundary. It may not be cited as a retained derivation
+of `L^{-1}=G0`, the gravitational response kernel, the `1/(4 pi r)`
+asymptotic, Poisson/Newton closure, or full self-gravity convergence.
+
+Promotion beyond renaming support requires a perturbative source-coupling
+theorem deriving the gravitational response kernel from lattice dynamics plus
+the cited asymptotic authority.
+
 ## Summary
 
 The emergent-gravity self-consistency note

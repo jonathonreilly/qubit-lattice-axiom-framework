@@ -1,0 +1,24 @@
+loop_slug: su3-dabc-output-cache-sync-20260617
+goal: "Synchronize the declared SU3_DABC runner output with the already-repaired cubic Casimir source packet."
+target_status: exact-support
+actual_current_surface_status: exact-support
+audit_required_before_effective_status_change: true
+base: origin/main
+branch: physics-loop/su3-dabc-output-cache-sync-20260617
+cycle_count: 1
+active_route: runner-output-cache-sync
+target_claim_id: su3_dabc_symmetric_theorem_note_2026-05-02
+target_file:
+  - docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md
+  - scripts/su3_dabc_symmetric_check.py
+  - outputs/su3_dabc_symmetric_check_2026-05-02.txt
+files_touched:
+  - outputs/su3_dabc_symmetric_check_2026-05-02.txt
+open_imports:
+  - "Physical SM-color bridge remains outside this packet; this branch does not address it."
+no_go_routes: []
+trace_gate: direct_blocker_closure
+review_findings: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Commit, push, and open a review PR for the output cache sync."
+stop_condition: "One scoped source-artifact repair completed; continue campaign by selecting the next non-duplicate audit unlock."

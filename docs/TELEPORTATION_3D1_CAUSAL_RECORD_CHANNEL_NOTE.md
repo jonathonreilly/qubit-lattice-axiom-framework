@@ -138,3 +138,18 @@ The runner reports `PASS` for:
 - The artifact supports ordinary quantum state teleportation only. It does not
   transfer matter, mass, charge, energy, or objects, and it does not support
   faster-than-light signaling.
+
+## Downstream Boundary Alignment (2026-06-13)
+
+This note now has an explicit runner guard against the audited downstream
+teleportation boundary stack. The guard requires retained-bounded or audited
+renaming support for the causal-channel, measurement-record,
+apparatus-dynamics, resource-generation, resource-fidelity, retained-axis
+operator-algebra, cross-encoding, three-register, no-signaling, 3D-operator,
+and conclusion-boundary rows before this source artifact can report success.
+
+The alignment is bounded support only. It strengthens the trace from this
+3D+1 record-channel model to the audited state-teleportation planning stack,
+but it still treats the Bell record as supplied and does not derive a physical
+record carrier, durable measurement apparatus, matter transfer, or
+faster-than-light control.

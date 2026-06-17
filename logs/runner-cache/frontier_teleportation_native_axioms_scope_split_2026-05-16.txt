@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_native_axioms_scope_split_2026-05-16.py
-runner_sha256: 507b6d1ce14bef55af03c4d75c197fed564bf7416f15384ed0fe1c49cc70f7b3
+runner_sha256: 8bbf3b38c82d6aae96b05c28e964d9a882fe85b5067bdef443f5df0f9d995215
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 PASS  parent_note_planning_status: Parent note is labeled planning / candidate theory artifact, not retained framework promotion.
@@ -28,8 +28,21 @@ PASS  a3_manhattan_delivery_tick_identity: Manhattan delivery tick recomputes to
 PASS  split_names_surface_b_and_n: Scope-split note explicitly names surfaces B and N.
 PASS  split_does_not_claim_n_closure: Scope-split note does not claim any nature-grade closure.
 PASS  split_does_not_promote_lane: Scope-split note explicitly declines lane promotion and adds no new physics axiom.
+PASS  downstream teleportation boundary: teleportation_causal_channel_note has audited bounded/status support: effective=retained_bounded, audit=audited_clean
+PASS  downstream teleportation boundary: teleportation_measurement_record_note has audited bounded/status support: effective=retained_bounded, audit=audited_clean
+PASS  downstream teleportation boundary: teleportation_apparatus_dynamics_closure_note has audited bounded/status support: effective=retained_bounded, audit=audited_clean
+PASS  downstream teleportation boundary: teleportation_dynamical_resource_generation_note has audited bounded/status support: effective=retained_bounded, audit=audited_clean
+PASS  downstream teleportation boundary: teleportation_resource_fidelity_note has audited bounded/status support: effective=retained_bounded, audit=audited_clean
+PASS  downstream teleportation boundary: teleportation_retained_axis_operator_algebra_closure_note has audited bounded/status support: effective=retained_bounded, audit=audited_clean
+PASS  downstream teleportation boundary: teleportation_cross_encoding_maps_note has audited bounded/status support: effective=retained_bounded, audit=audited_clean
+PASS  downstream teleportation boundary: teleportation_three_register_cross_encoding_note has audited bounded/status support: effective=retained_bounded, audit=audited_clean
+PASS  downstream teleportation boundary: teleportation_no_signaling_audit has audited bounded/status support: effective=retained_bounded, audit=audited_clean
+PASS  downstream teleportation boundary: teleportation_3d_operator_consistent_end_to_end_note has audited bounded/status support: effective=retained_bounded, audit=audited_clean
+PASS  downstream teleportation boundary: teleportation_conclusion_boundary_note has audited bounded/status support: effective=audited_renaming, audit=audited_renaming
+PASS  downstream teleportation boundary: lane remains state-teleportation only with no-transfer boundary: checked conclusion boundary note
+PASS  downstream teleportation boundary: finite planning support is not nature-grade closure: planning closure and nature-grade hold are distinct
 
-SUMMARY: PASS=22 FAIL=0 TOTAL=22
+SUMMARY: PASS=35 FAIL=0 TOTAL=35
 
 SCOPE: This runner verifies the structural scope split between
   B = finite-bookkeeping consistency on audited surfaces, and

@@ -126,6 +126,24 @@ dependency graph explicit for re-audit: the bridge can be checked as an
 exact conditional consequence over these named edges, but it is not a
 retained derivation of hypercharge, matter completion, P-ABJ, or P-REC.
 
+## P-REC boundary route-pruning (2026-06-17)
+
+[`ABJ_STAGGERED_EPSILON_NOT_SPACETIME_GAMMA5_BOUNDARY_NOTE_2026-06-17.md`](ABJ_STAGGERED_EPSILON_NOT_SPACETIME_GAMMA5_BOUNDARY_NOTE_2026-06-17.md)
+records the exact current-surface obstruction to the tempting shortcut
+"staggered `epsilon` anticommutes with `D_staggered`, therefore it is the
+spacetime Clifford `gamma_5`."  The obstruction is algebraic: on the
+current product carrier, site parity acts on the lattice factor and commutes
+with the one-site spatial `Cl(3)` generators; any factored candidate
+`epsilon tensor B`, with `B in M_2(C)`, would require a nonzero one-site
+matrix `B` anticommuting with all three Pauli generators, which the
+retained per-site no-go excludes.
+
+This boundary note does not close P-REC.  It prunes the false route from
+`{epsilon, D_staggered}=0` alone to spacetime `gamma_5`, and it leaves the
+honest remaining route explicit: a separate taste-reconstruction / Dirac-factor
+bridge must identify the staggered carrier with a full spacetime Clifford
+representation, or P-REC remains a declared premise edge.
+
 ## Proof-walk
 
 | Step | Statement | Load-bearing input | Lattice-action input? |

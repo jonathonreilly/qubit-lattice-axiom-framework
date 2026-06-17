@@ -1,0 +1,24 @@
+loop_slug: abj-gamma5-boundary-20260617
+objective: "Unlock the ABJ audited_conditional blocker by source-side science, without auditing or landing."
+target_status: best-honest-status
+actual_current_surface_status: exact negative boundary
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: "Prune the shortcut from staggered epsilon anticommutation to spacetime gamma5."
+target_claim_id: anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26
+target_blocker_text: "add or route a bridge proving that the staggered carrier supplies a spacetime gamma_5 satisfying the Clifford anticommutation relations"
+files_touched:
+  - docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+  - docs/ABJ_STAGGERED_EPSILON_NOT_SPACETIME_GAMMA5_BOUNDARY_NOTE_2026-06-17.md
+  - scripts/frontier_abj_staggered_epsilon_not_spacetime_gamma5_boundary_2026_06_17.py
+  - logs/runner-cache/frontier_abj_staggered_epsilon_not_spacetime_gamma5_boundary_2026_06_17.txt
+  - .claude/science/physics-loops/abj-gamma5-boundary-20260617/
+open_imports:
+  - "P-HY: physical anomaly-relevant U(1)_Y identification for the bounded abelian surface."
+  - "P-COMP: opposite-chirality SU(2)-singlet completion premise."
+  - "P-REC: taste-reconstruction / Dirac-factor bridge from staggered carrier to spacetime Clifford gamma5."
+  - "P-ABJ: ABJ anomaly-to-inconsistency accepted premise."
+review_loop_disposition: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Run the new runner, cache output, commit, push, and open a review PR."
+stop_condition: "One coherent source-side boundary block packaged as PR; goal remains active for later audit-unlock pivots."

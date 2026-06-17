@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/frontier_abj_staggered_epsilon_not_spacetime_gamma5_boundary_2026_06_17.py
+runner_sha256: a493b78d9252f7e92bc29fe4716e99fe4e519c48432a03807ae9a91cf62901e7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.33
+status: ok
+----- stdout -----
+ABJ staggered-epsilon / spacetime-gamma5 boundary runner
+
+== Part 0: source firewall and trace target ==
+PASS: boundary note contains required phrase: actual_current_surface_status: exact negative boundary
+PASS: boundary note contains required phrase: trace_class: negative_route_pruning
+PASS: boundary note contains required phrase: target_claim_id: anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26
+PASS: boundary note contains required phrase: staggered site parity `epsilon` anticommutes
+PASS: boundary note contains required phrase: not a spacetime Clifford-chirality bridge
+PASS: boundary note contains required phrase: does not derive P-REC
+PASS: boundary note contains required phrase: taste-reconstruction
+PASS: boundary note contains required phrase: scripts/frontier_abj_staggered_epsilon_not_spacetime_gamma5_boundary_2026_06_17.py
+PASS: boundary note excludes overclaim phrase: closes P-REC
+PASS: boundary note excludes overclaim phrase: derives P-REC
+PASS: boundary note excludes overclaim phrase: proves P-REC
+PASS: boundary note excludes overclaim phrase: effective retained
+PASS: boundary note excludes overclaim phrase: proposed_retained
+PASS: boundary note excludes overclaim phrase: bare retained
+PASS: ABJ bridge points to the new route-pruning boundary
+PASS: ABJ bridge still declares P-REC rather than deriving it
+PASS: retained Cl(3)->Cl(3,1) source explicitly does not derive spacetime/dynamics
+
+== Part 1: per-site M2(C) has no nonzero gamma5 candidate ==
+PASS: Pauli volume element sigma1 sigma2 sigma3 = i I
+PASS: omega commutes with sigma_1
+PASS: omega does not anticommute with sigma_1
+PASS: omega commutes with sigma_2
+PASS: omega does not anticommute with sigma_2
+PASS: omega commutes with sigma_3
+PASS: omega does not anticommute with sigma_3
+PASS: only B=0 anticommutes with all three Pauli generators ([{a: 0, b: 0, c: 0, d: 0}])
+
+== Part 2: lattice epsilon grades hopping but commutes with spatial Cl(3) ==
+PASS: {epsilon, nearest-neighbor hopping}=0
+PASS: [epsilon, I_site tensor sigma_x]=0
+PASS: {epsilon, I_site tensor sigma_x} != 0
+PASS: [epsilon, I_site tensor sigma_y]=0
+PASS: {epsilon, I_site tensor sigma_y} != 0
+PASS: [epsilon, I_site tensor sigma_z]=0
+PASS: {epsilon, I_site tensor sigma_z} != 0
+
+== Part 3: no factored epsilon tensor B candidate can be gamma5 ==
+PASS: epsilon tensor B anticommutes with all spatial generators only for B=0 ([{a: 0, b: 0, c: 0, d: 0}])
+PASS: the only anticommuting factored candidate cannot square to identity
+
+== Part 4: anticommuting with D does not imply anticommuting with gamma generators ==
+PASS: toy witness has {epsilon, D}=0
+PASS: same epsilon fails {epsilon, bad_generator}=0
+
+== Part 5: supplied Cl(3,1) factor can have gamma5, but is extra structure ==
+PASS: Cl(3,1) witness Gamma_1^2 = 1 I
+PASS: Cl(3,1) witness Gamma_2^2 = 1 I
+PASS: Cl(3,1) witness Gamma_3^2 = 1 I
+PASS: Cl(3,1) witness Gamma_4^2 = -1 I
+PASS: Cl(3,1) witness {Gamma_1, Gamma_2}=0
+PASS: Cl(3,1) witness {Gamma_1, Gamma_3}=0
+PASS: Cl(3,1) witness {Gamma_1, Gamma_4}=0
+PASS: Cl(3,1) witness {Gamma_2, Gamma_3}=0
+PASS: Cl(3,1) witness {Gamma_2, Gamma_4}=0
+PASS: Cl(3,1) witness {Gamma_3, Gamma_4}=0
+PASS: complex gamma5 from supplied Cl(3,1) witness squares to +I
+PASS: supplied Cl(3,1) gamma5 anticommutes with Gamma_1
+PASS: supplied Cl(3,1) gamma5 anticommutes with Gamma_2
+PASS: supplied Cl(3,1) gamma5 anticommutes with Gamma_3
+PASS: supplied Cl(3,1) gamma5 anticommutes with Gamma_4
+PASS: positive witness uses a supplied fourth generator, not the lattice epsilon shortcut (escape hatch preserved; P-REC still needs reconstruction)
+
+TOTAL: PASS=52 FAIL=0
+VERDICT: exact negative boundary; staggered epsilon anticommutation alone does not supply spacetime gamma5.
+
+----- stderr -----
+

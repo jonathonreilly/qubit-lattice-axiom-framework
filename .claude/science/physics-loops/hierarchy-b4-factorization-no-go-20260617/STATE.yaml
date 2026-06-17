@@ -1,0 +1,20 @@
+goal: "Sharpen hierarchy B4 by proving determinant-only evidence cannot supply alpha_LM^16 coupling-power transport."
+target_status: "no-go route pruning"
+runtime_mode: "audit-unlock source PR"
+cycle_count: 1
+active_route: "determinant-only factor-signature obstruction"
+hard_residual: "B4 still needs a framework-native attachment observable supplying alpha_s per taste decoupling, or an equivalent non-determinant transport rule."
+files_touched:
+  - "docs/HIERARCHY_B4_DETERMINANT_ONLY_FACTOR_SIGNATURE_NO_GO_NOTE_2026-06-17.md"
+  - "scripts/frontier_hierarchy_b4_determinant_only_factor_signature_no_go_2026_06_17.py"
+  - "logs/runner-cache/frontier_hierarchy_b4_determinant_only_factor_signature_no_go_2026_06_17.txt"
+open_imports:
+  - "positive B4 attachment-observable identification"
+  - "full hierarchy formula closure"
+no_go_routes:
+  - "determinant-only finite products/powers/quotients cannot transport u_0^16 to alpha_LM^16"
+trace_gate_classification: "negative_route_pruning"
+review_findings: "review-loop not run; reviewer owns review and extraction"
+pr_status: "pending"
+next_exact_action: "Run the new runner, refresh cache, compile, commit, push, and open review PR."
+stop_condition: "PR opened or PR_BACKLOG written if GitHub delivery fails."

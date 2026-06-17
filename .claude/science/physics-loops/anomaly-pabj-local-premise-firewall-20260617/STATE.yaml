@@ -1,0 +1,24 @@
+loop_slug: anomaly-pabj-local-premise-firewall-20260617
+branch: physics-loop/anomaly-pabj-local-premise-firewall-20260617
+base: origin/main
+target_claim_id: anomaly_forces_time_theorem
+target_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: source-graph firewall for local P-ABJ premise
+hard_residual: P-ABJ remains an external declared premise; this block does not derive it.
+files_touched:
+  - docs/ANOMALY_FORCES_TIME_THEOREM.md
+  - scripts/frontier_anomaly_forces_time.py
+  - logs/runner-cache/frontier_anomaly_forces_time.txt
+open_imports:
+  - P-ABJ external anomaly-to-inconsistency premise
+  - P-HY hypercharge identification premise
+  - P-COMP opposite-chirality SU(2)-singlet completion premise
+  - P-REC staggered-to-Clifford chirality reconstruction premise
+  - B-AXIS local single-clock cap premise
+review_loop_disposition: reviewer_owned_not_run
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4206
+next_exact_action: reviewer extracts/lands source firewall if accepted; audit pipeline rebuilds citation graph afterward
+stop_condition: source block packaged and PR opened

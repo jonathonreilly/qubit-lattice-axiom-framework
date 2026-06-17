@@ -814,6 +814,15 @@ def step6_single_clock():
         "B",
         "plain-code provenance references do not enter the citation graph",
     )
+    check(
+        "source sync: P-ABJ companion is plain-text provenance, not a child dependency edge",
+        "](ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)" not in note_text
+        and "plain-text provenance" in note_text
+        and "local declared" in note_text
+        and "`P-ABJ` premise" in note_text,
+        "B",
+        "P-ABJ remains an external declared premise; companion row is audited separately",
+    )
     odd_set = set(dt for dt in range(1, 100) if (3 + dt) % 2 == 0)
     cap_set = set(dt for dt in range(0, 100) if dt <= 1)
     inter = sorted(odd_set & cap_set)

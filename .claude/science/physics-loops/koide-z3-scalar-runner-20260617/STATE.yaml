@@ -1,0 +1,20 @@
+loop: koide-z3-scalar-runner-20260617
+goal: unlock koide_z3_scalar_potential_support_note_2026-04-19 without auditing or retagging
+target_status: exact-support
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/koide-z3-scalar-runner-20260617
+cycle_count: 1
+active_route: remove SciPy compute blocker and register existing primary runner
+files_touched:
+  - docs/KOIDE_Z3_SCALAR_POTENTIAL_SUPPORT_NOTE_2026-04-19.md
+  - scripts/frontier_koide_z3_scalar_potential.py
+  - logs/runner-cache/frontier_koide_z3_scalar_potential.txt
+  - .claude/science/physics-loops/koide-z3-scalar-runner-20260617/
+open_imports:
+  - physical selected point still requires H_* witness or equivalent microscopic selector
+  - one overall charged-lepton scale is not derived here
+trace_gate: direct_blocker_closure
+review_disposition: reviewer_owned_not_run
+audit_disposition: independent_audit_required
+next_exact_action: reviewer should run review-loop and decide whether this runner registration/compute repair queues the Koide Z3 scalar row for audit
+stop_condition: coherent source-side PR opened

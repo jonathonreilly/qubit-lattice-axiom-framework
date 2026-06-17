@@ -31,8 +31,6 @@ import math
 import sys
 
 import numpy as np
-from scipy.linalg import expm
-from scipy.optimize import brentq, minimize_scalar
 
 from frontier_dm_neutrino_postcanonical_polar_section import slot_pair_from_h
 from frontier_dm_neutrino_positive_polar_h_cp_theorem import cp_pair_from_h
@@ -42,7 +40,7 @@ from frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary 
 from frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem import (
     kz_from_h,
 )
-from frontier_koide_selected_line_cyclic_response_bridge import hstar_witness_kappa
+from frontier_higgs_dressed_propagator_v1 import DELTA_STAR, H3, M_STAR, Q_PLUS_STAR
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -54,6 +52,67 @@ SELECTOR = SQRT6 / 3.0
 
 PDG_SQRT = np.sqrt(np.array([0.51099895, 105.6583755, 1776.86], dtype=float))
 PDG_DIR = PDG_SQRT / np.linalg.norm(PDG_SQRT)
+
+
+def expm_hermitian(matrix: np.ndarray) -> np.ndarray:
+    """Matrix exponential for the Hermitian matrices used in this runner."""
+    evals, vecs = np.linalg.eigh(matrix)
+    return vecs @ np.diag(np.exp(evals)) @ vecs.conj().T
+
+
+def bracketed_root(func, left: float, right: float, tol: float = 1.0e-12, max_iter: int = 200) -> float:
+    """Dependency-free bisection replacement for scipy.optimize.brentq."""
+    f_left = float(func(left))
+    f_right = float(func(right))
+    if abs(f_left) < tol:
+        return left
+    if abs(f_right) < tol:
+        return right
+    if f_left * f_right > 0.0:
+        raise ValueError(f"root is not bracketed: f({left})={f_left}, f({right})={f_right}")
+    lo, hi = left, right
+    for _ in range(max_iter):
+        mid = 0.5 * (lo + hi)
+        f_mid = float(func(mid))
+        if abs(f_mid) < tol or 0.5 * (hi - lo) < tol:
+            return mid
+        if f_left * f_mid <= 0.0:
+            hi = mid
+            f_right = f_mid
+        else:
+            lo = mid
+            f_left = f_mid
+    return 0.5 * (lo + hi)
+
+
+def bounded_minimize(func, left: float, right: float, tol: float = 1.0e-12, max_iter: int = 200) -> float:
+    """Golden-section minimizer for the one-dimensional bounded H_* scan."""
+    inv_phi = (math.sqrt(5.0) - 1.0) / 2.0
+    inv_phi2 = (3.0 - math.sqrt(5.0)) / 2.0
+    lo, hi = left, right
+    h = hi - lo
+    c = lo + inv_phi2 * h
+    d = lo + inv_phi * h
+    f_c = float(func(c))
+    f_d = float(func(d))
+    for _ in range(max_iter):
+        if abs(hi - lo) < tol:
+            break
+        if f_c < f_d:
+            hi = d
+            d = c
+            f_d = f_c
+            h = hi - lo
+            c = lo + inv_phi2 * h
+            f_c = float(func(c))
+        else:
+            lo = c
+            c = d
+            f_c = f_d
+            h = hi - lo
+            d = lo + inv_phi * h
+            f_d = float(func(d))
+    return 0.5 * (lo + hi)
 
 
 def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT") -> bool:
@@ -87,7 +146,7 @@ def kz_sel(m: float) -> np.ndarray:
 
 
 def slot_values(m: float) -> tuple[float, float]:
-    x = expm(selected_h(m))
+    x = expm_hermitian(selected_h(m))
     v = float(np.real(x[2, 2]))
     w = float(np.real(x[1, 1]))
     return v, w
@@ -105,6 +164,36 @@ def u_small(m: float) -> float:
 def kappa(m: float) -> float:
     v, w = slot_values(m)
     return (v - w) / (v + w)
+
+
+def hstar_witness_kappa() -> tuple[float, float]:
+    """Local SciPy-free copy of the H_* witness used by this support runner.
+
+    The original helper lives in ``frontier_koide_selected_line_cyclic_response_bridge``
+    and uses SciPy for ``expm`` and bounded minimization.  This runner only
+    needs the one scalar witness, so keeping the implementation local avoids a
+    binary SciPy dependency in the audit path without changing the mathematics.
+    """
+
+    def hstar_small_amp(beta: float) -> np.ndarray:
+        x = expm_hermitian(beta * H3(M_STAR, DELTA_STAR, Q_PLUS_STAR))
+        v = float(np.real(x[2, 2]))
+        w = float(np.real(x[1, 1]))
+        u_small, _ = koide_roots(v, w)
+        return np.array([u_small, v, w], dtype=float)
+
+    def amplitude_cos_similarity(amp: np.ndarray) -> float:
+        return float(np.dot(amp / np.linalg.norm(amp), PDG_DIR))
+
+    def objective(beta: float) -> float:
+        amp = hstar_small_amp(beta)
+        if amp[0] <= 0.0:
+            return 1.0e6
+        return -amplitude_cos_similarity(amp)
+
+    beta_star = bounded_minimize(objective, 0.5934, 0.8)
+    amp = hstar_small_amp(beta_star)
+    return beta_star, float((amp[1] - amp[2]) / (amp[1] + amp[2]))
 
 
 def v_eff(m: float) -> float:
@@ -313,11 +402,11 @@ def part5_honest_gap() -> None:
     c2 = float(np.real(np.trace(K_frozen @ K_frozen @ T)))
     m_V = (-6.0 + math.sqrt(36.0 - 8.0 * (c1 + c2 / 2.0))) / 2.0
 
-    m_pos = float(brentq(u_small, -1.32, -1.25))
+    m_pos = float(bracketed_root(u_small, -1.32, -1.25))
     kappa_pos = kappa(m_pos)
 
     _, kappa_star = hstar_witness_kappa()
-    m_star = float(brentq(lambda m: kappa(m) - kappa_star, -1.3, -1.0))
+    m_star = float(bracketed_root(lambda m: kappa(m) - kappa_star, -1.3, -1.0))
 
     check(
         "Positivity threshold m_pos is where u_small = 0",
@@ -352,7 +441,7 @@ def part6_scale_analysis() -> None:
     print("=" * 88)
 
     _, kappa_star = hstar_witness_kappa()
-    m_star = float(brentq(lambda m: kappa(m) - kappa_star, -1.3, -1.0))
+    m_star = float(bracketed_root(lambda m: kappa(m) - kappa_star, -1.3, -1.0))
     v_star, w_star = slot_values(m_star)
     u_star, _ = koide_roots(v_star, w_star)
 

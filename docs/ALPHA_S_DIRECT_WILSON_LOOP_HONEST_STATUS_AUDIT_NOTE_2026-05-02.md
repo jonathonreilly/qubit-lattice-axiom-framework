@@ -1,6 +1,7 @@
 # α_s Direct Wilson-Loop Honest-Status Audit
 
 **Date:** 2026-05-02
+**Claim type:** open_gate
 **Status:** demotion / status-correction packet for
 [`ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md`](ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md)
 which is currently `proposed_retained, unaudited` in the audit ledger. This
@@ -8,7 +9,7 @@ audit applies the seven retained-proposal certificate criteria honestly and
 recommends demotion to **bounded support theorem on retained graph-first
 surface with admitted Sommer-scale and standard QCD-running imports**.
 **Primary runner:** unchanged — `scripts/frontier_alpha_s_direct_wilson_loop.py`
-PASS=18 FAIL=0 verified 2026-05-02.
+PASS=20 FAIL=0 after the source-boundary refresh.
 
 ## 0. Audit context
 
@@ -26,7 +27,7 @@ The note is currently at `proposed_retained, unaudited` (per
 `audit_ledger.json`). Transitive descendants: 259. Load-bearing score: 9.52.
 
 This review packet does **not** challenge the runner result or the algebra —
-both are verified at PASS=18/0 strict mode. It applies the **seven
+both are verified at PASS=20/0 strict mode. It applies the **seven
 retained-proposal certificate criteria** to the note's actual current
 authority surface and recommends an honest status.
 
@@ -69,12 +70,11 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-Recommended audit-ledger row update:
-- `current_status: bounded` (from `proposed_retained`)
-- `effective_status: bounded` (from `audited_conditional`)
-- `audit ledger verdict: conditional` (deps + literature imports)
-- Mark the Sommer-scale and QCD-running-bridge as admitted standard
-  corrections in the assumption/import ledger.
+Non-authoritative review recommendation for the independent audit lane:
+- classify the route as bounded support unless retained bridge theorems close
+  the named imports;
+- mark the Sommer-scale and QCD-running-bridge as admitted standard
+  corrections in the assumption/import ledger if the audit lane agrees.
 
 ## 3. What the note correctly does
 
@@ -114,7 +114,38 @@ is honest.
 The 259 transitive descendants under `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30`
 should treat the α_s(M_Z) value as a **bounded support input with admitted
 Sommer-scale and QCD-running-bridge corrections**, not as a retained-grade
-zero-input derivation.
+zero-input derivation. Equivalently, downstream rows may cite the value only
+as bounded support input, not as a retained-grade zero-input derivation.
+
+### Downstream source-boundary firewall
+
+Allowed downstream uses of this packet are limited to:
+
+- cite the Wilson-loop/static-potential certificate as a reproducible
+  bounded-support extraction on the stated gauge surface;
+- cite the decoration-trap avoidance check that the `alpha_LM/u0` chain is
+  not used as authority;
+- cite the status correction itself: the broad physical α_s(M_Z) promotion
+  route remains open until its named bridges are supplied.
+
+Forbidden downstream uses without new retained bridge theorems:
+
+- do not cite this packet as a framework-derived Sommer scale;
+- do not cite this packet as a framework-native 4-loop QCD running and
+  threshold-matching bridge;
+- do not cite this packet as a pure-gauge-to-full-QCD sea-quark transfer;
+- do not cite this packet as a retained alpha_s(M_Z) theorem or as a retained
+  zero-input physical prediction;
+- do not use PDG agreement as proof of framework derivation;
+- do not use this packet to close the current axiom-surface normalization
+  dependency.
+
+The broad physical α_s(M_Z) lane can be re-audited only after retained bridge
+theorems supply Sommer scale setting, QCD running/threshold matching,
+pure-gauge-to-full-QCD sea-quark transfer, and current axiom-surface
+normalization. Until then, the runner's numerical PASS result is a
+bounded-support certificate plus a source-boundary guard, not a promotion
+certificate.
 
 ## 7. Cross-references
 

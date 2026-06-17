@@ -33,6 +33,6 @@ no_go_routes:
 trace_gate: direct_blocker_closure
 review_loop_disposition: delegated_to_reviewer
 runner_result: "scripts/frontier_anomaly_forces_time.py: PASS=90 FAIL=0; cache fresh"
-pr_status: pending
-next_exact_action: "Run final checks, commit, push, and open a ready PR."
+pr_status: "opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4281"
+next_exact_action: "Reviewer extraction/review; do not spend time keeping this branch fresh against main."
 stop_condition: "PR opened for reviewer; no audit verdict or main landing performed."

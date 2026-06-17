@@ -207,6 +207,27 @@ framework observable with the fractional-instanton sector, derive the
 determinant/phase-space/coupling-scale data, and verify the
 substrate-specific bridge.
 
+## Downstream Source-Boundary Firewall
+
+This packet may be cited only for the external twisted-`T^4`
+fractional-charge/action algebra and for the schematic dilute-gas
+modeling form under its stated determinant, measure, coupling-scale,
+phase-space, and convergence boundaries. Later framework use must
+separately prove the twisted-`T^4` sector, the determinant/measure/
+coupling-scale prescription, the dilute-gas convergence or condensate
+criterion, and the substrate/observable bridge before importing this
+packet into a framework claim.
+
+Do not cite this packet as a positive hierarchy bridge, a dilute-gas
+condensate closure, a determinant/measure/coupling-scale prescription,
+or a framework substrate/observable identification. Do not use it to
+close `alpha_LM^16`, `v/M_Pl`, any `alpha^N` hierarchy, or any
+framework observable. Those would require a separate framework-native
+note and runner that derive the twisted-`T^4` sector, supply the
+measure and running-coupling data, prove the model-regime conditions,
+and identify the framework substrate and observable without using this
+external packet as a hidden premise.
+
 ## External References
 
 - G. 't Hooft, "A property of electric and magnetic flux in
@@ -270,6 +291,13 @@ symbolic and `mpmath`-equivalent numerical surrogates where needed):
 10. **T10**: boundary disclaimer — note does **not** claim
     `α_LM^16` closure or any hierarchy substitution (and does not
     claim `v/M_Pl = exp(-S_frac)`).
+11. **T11**: downstream source-boundary firewall — runner checks that
+    later framework use must separately prove the twisted-`T^4` sector,
+    determinant/measure/coupling-scale prescription, dilute-gas
+    convergence or condensate criterion, and substrate/observable
+    bridge, and that the packet is not cited as a positive hierarchy
+    bridge, condensate closure, or framework substrate/observable
+    identification.
 
 Expected runner result: `PASS=N`, `FAIL=0`.
 

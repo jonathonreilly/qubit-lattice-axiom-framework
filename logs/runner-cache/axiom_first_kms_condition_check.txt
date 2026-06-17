@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_kms_condition_check.py
-runner_sha256: e44a992ec3c5db242bd4111790a24fd12267939a367bf432e92ce8c52d86a421
+runner_sha256: 0dd70792ba5e25e84bc68b4080fb3fb7b995f09b9052d194b027bf4874e3bce2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
@@ -26,6 +26,30 @@ Setup:
   spec(H)     = [-0.        1.147889  1.919212  2.073275  2.93824   3.510596  4.1677
   4.861641]
   Z(beta_th)  = 1.000001
+
+------------------------------------------------------------------------
+TEST 0: source boundary firewall
+------------------------------------------------------------------------
+  PASS required phrase: **Type:** bounded_theorem / finite two-step transfer support
+  PASS required phrase: **Status authority:** independent audit lane only
+  PASS required phrase: 2026-06-17 Audit-Boundary Repair
+  PASS required phrase: T := T_hat^2
+  PASS required phrase: a_blk := 2 a_τ
+  PASS required phrase: N_τ := L_τ / 2
+  PASS required phrase: path-integral correspondence is claimed only for RP-reconstructed blocked-slice insertions
+  PASS required phrase: tr(T^{N_τ-k} O T^k)
+  PASS required phrase: not a theorem about arbitrary raw-time path-integral insertions
+  PASS required phrase: This is not a claim about arbitrary raw-time or continuum path-integral insertions
+  PASS required phrase: bounded operators on the reconstructed `H_phys`
+  PASS required phrase: Hawking/Unruh/Stefan-Boltzmann uses are context and candidate consumers only
+  PASS required phrase: does not set, predict, promote, or demote any audit outcome
+  PASS required phrase: actual_current_surface_status: bounded-support
+  PASS forbidden phrase absent: **Type:** positive_theorem
+  PASS forbidden phrase absent: Any package note that quotes
+  PASS forbidden phrase absent: This is the load-bearing input for the Hawking temperature block
+  PASS forbidden phrase absent: This is the load-bearing input for the Unruh temperature block
+  PASS forbidden phrase absent: This is the load-bearing input for the Stefan-Boltzmann block
+  STATUS: PASS
 
 ------------------------------------------------------------------------
 TEST 1: KMS identity  F_{A,B}(t + i beta_th) = G_{A,B}(t)
@@ -96,6 +120,7 @@ TEST 5: detailed-balance corollary at z = i beta_th
 ========================================================================
 SUMMARY
 ========================================================================
+  Test 0 (source boundary firewall):       PASS
   Test 1 (KMS identity strip endpoint):    PASS
   Test 2 (strip continuity / bound):       PASS
   Test 3 (equilibrium uniqueness):         PASS

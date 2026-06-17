@@ -1,0 +1,21 @@
+loop: kms-two-step-blocked-repair-20260617
+branch: physics-loop/kms-two-step-blocked-repair-20260617
+base: origin/main@aeb06364f
+goal: "Repair the audited_failed KMS source row without auditing or retagging."
+target_claim_id: axiom_first_kms_condition_theorem_note_2026-05-01
+target_status: bounded-support
+active_route: "source-boundary repair plus runner firewall"
+hard_residual: "Path-integral insertion bookkeeping is only proved for RP-reconstructed blocked observables."
+files_touched:
+  - docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md
+  - scripts/axiom_first_kms_condition_check.py
+  - logs/runner-cache/axiom_first_kms_condition_check.txt
+open_imports:
+  - "RP two-step transfer positivity and spectrum-condition surfaces remain dependency inputs."
+  - "Raw-time/unblocked path-integral insertions remain outside this row."
+  - "Hawking/Unruh/Stefan-Boltzmann consumers still need their own bridges."
+trace_gate: direct_blocker_closure
+review_status: not_run_reviewer_handles
+audit_status: not_audited
+next_exact_action: "Reviewer should inspect the source-boundary repair and decide whether to send the row back to independent audit."
+stop_condition: "PR opened for the coherent KMS source-side repair."

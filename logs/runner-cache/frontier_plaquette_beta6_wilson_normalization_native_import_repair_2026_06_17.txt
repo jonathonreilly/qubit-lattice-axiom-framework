@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_plaquette_beta6_wilson_normalization_native_import_repair_2026_06_17.py
+runner_sha256: a224aac7d348e5e1bc018b3611ae4c784a9ffaff41406b0f38dc779820fd5cc2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Plaquette beta=6 Wilson-normalization import repair verifier
+[PASS] exact beta=6 Wilson algebra gives g_bare^2 = 1 -- g2=1
+[PASS] exact beta relation note identifies the shared Wilson coupling
+[PASS] exact beta relation note states beta/(2Nc) character argument
+[PASS] exact beta relation note fences physical plaquette value
+[PASS] exact beta relation note refuses physical mass-gap bridge
+[PASS] old diagnostic still lists W1-W4 admitted-input set
+[PASS] old diagnostic contains new 2026-06-17 partial import-retirement section
+[PASS] old diagnostic keeps NSPT/MC/F2 conditional after the repair
+[PASS] new note declares exact support and independent audit authority
+[PASS] new note retires only W2, not the whole diagnostic
+[PASS] new note preserves non-perturbative and comparator boundaries
+[PASS] new note gives downstream citation rule for normalization only
+[PASS] new note names remaining unretired inputs
+[PASS] new note routes through native beta relationship
+[PASS] old diagnostic remains runner-local route pruning
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

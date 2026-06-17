@@ -1,0 +1,22 @@
+loop: plaquette-beta6-native-beta-import-20260617
+target_status: exact-support
+current_branch: physics-loop/plaquette-beta6-native-beta-import-20260617
+base: origin/main
+target_claim_id: plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27
+active_route: native_beta_normalization_import_repair
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/PLAQUETTE_BETA6_WILSON_NORMALIZATION_NATIVE_IMPORT_REPAIR_2026-06-17.md
+  - docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md
+  - scripts/frontier_plaquette_beta6_wilson_normalization_native_import_repair_2026_06_17.py
+  - logs/runner-cache/frontier_plaquette_beta6_wilson_normalization_native_import_repair_2026_06_17.txt
+open_imports:
+  - NSPT_coefficient_packet
+  - MC_comparator_0_5934
+  - F2_comparator
+  - nonperturbative_beta6_plaquette_surface
+review_disposition: local_self_check_passed
+next_exact_action: commit, push, open review PR
+stop_condition: PR opened for reviewer/auditor extraction

@@ -1,0 +1,31 @@
+loop_slug: quark-cp-small-correction-bound-20260617
+goal: "Unlock the quark CP-carrier completion audit path by resolving the small-correction interpretation honestly."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Exact fitted-ratio boundary plus bounded capped-carrier parent-slice scan."
+hard_residual: "The parent row still does not derive xi_u, xi_d, comparator targets, or a framework-native non-perturbative carrier normalization."
+files_touched:
+  - docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md
+  - docs/QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md
+  - scripts/frontier_quark_cp_small_correction_boundary.py
+  - logs/runner-cache/frontier_quark_cp_small_correction_boundary.txt
+open_imports:
+  - "parent comparator targets are imported observation/atlas targets"
+  - "xi_u and xi_d remain fitted numerical coefficients"
+  - "bounded capped scan is finite optimizer evidence, not a global supremum proof"
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_loop_disposition: "delegated to reviewer per user instruction; branch-local firewall applied"
+pr_status: "ready to create after commit"
+checks:
+  - "python3 scripts/frontier_quark_cp_small_correction_boundary.py: PASS=9 FAIL=0"
+  - "python3 scripts/frontier_quark_cp_carrier_completion.py: PASS=11 FAIL=0"
+  - "python3 scripts/cached_runner_output.py scripts/frontier_quark_cp_small_correction_boundary.py --check-only: fresh"
+  - "python3 -m py_compile scripts/frontier_quark_cp_small_correction_boundary.py scripts/frontier_quark_cp_carrier_completion.py: pass"
+  - "git diff --check: pass"
+  - "forbidden generated/status diff scan: empty"
+next_exact_action: "Commit, push, and open a ready review PR."
+stop_condition: "One coherent source-side unblock PR opened; then pivot to next audit unlock opportunity."

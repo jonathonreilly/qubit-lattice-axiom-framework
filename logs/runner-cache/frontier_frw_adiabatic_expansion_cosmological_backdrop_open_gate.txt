@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.py
-runner_sha256: 34b19c4a1e1b2c7b955f26826b17d4c3c955a472da11f35b44369fe03629b232
+runner_sha256: 770d039b31a5a4919b6cfbddb33c0459a5b46b390a1529b1b4b0f79d12b13540
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -68,6 +68,17 @@ PASS: source records honest scope phrase: It does **not**
 PASS: source records honest scope phrase: open gate
 PASS: source records honest scope phrase: what would close this
 
+== Part 6: downstream source-boundary firewall ==
+PASS: source contains downstream firewall phrase: Downstream Source-Boundary Firewall
+PASS: source contains downstream firewall phrase: may not be cited downstream as a retained derivation
+PASS: source contains downstream firewall phrase: C1-C3 also may not be moved into a registry, admission file, or premise file
+PASS: source contains downstream firewall phrase: Future use must separately prove or explicitly admit
+PASS: firewall blocks downstream retained use for: C1, C2, or C3
+PASS: firewall blocks downstream retained use for: FRW dynamics
+PASS: firewall blocks downstream retained use for: entropy conservation or adiabatic expansion
+PASS: firewall blocks downstream retained use for: observational cosmology parameters
+PASS: firewall blocks downstream retained use for: parent theorem status
+
 == Result ==
 Framework-derivable / conditional-on-retained-chain ingredients:
   - FRW kinematic reduction surface
@@ -82,7 +93,7 @@ Local supplied premises retained as open:
 Net retirements to bounded-derived: 0 (the bridge re-bases the existing open gate onto an explicit C1-C3 premise packet without eliminating admission).
 No new repo-wide axiom and no claim to derive C1, C2, or C3.
 
-TOTAL: PASS=48 FAIL=0
+TOTAL: PASS=57 FAIL=0
 VERDICT: open gate passes; FRW + adiabatic backdrop decomposition is recorded as an unresolved C1-C3 premise boundary. No new admissions are introduced; no row's effective status is changed.
 
 ----- stderr -----

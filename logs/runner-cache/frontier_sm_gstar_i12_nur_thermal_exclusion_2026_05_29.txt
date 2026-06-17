@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py
-runner_sha256: f6fe920a6569a4e9eeb3b736cd6bd0a068a0be159e1f4498ab2fa24b4cb70fae
+runner_sha256: d18946f6408a5394dca7c6d544080c72eb506aa05428d01f3f98be4ff264f5f1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 
@@ -63,8 +63,10 @@ status: ok
 ----------------------------------------------------------------------------------------
 6. Note / authority cross-checks
 ----------------------------------------------------------------------------------------
+  [PASS] load-bearing authority file exists: SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md
   [PASS] load-bearing authority file exists: NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md
   [PASS] load-bearing authority file exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+  [PASS] load-bearing authority cited as markdown link: SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md
   [PASS] load-bearing authority cited as markdown link: NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md
   [PASS] load-bearing authority cited as markdown link: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
   [PASS] plain-text pointer is non-load-bearing (no markdown-link edge): SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md
@@ -74,6 +76,8 @@ status: ok
   [PASS] note engages the retained Dirac/seesaw no-go
   [PASS] note states branch-independence (both branches -> exclusion)
   [PASS] note names small m_nu as an ADMITTED EMPIRICAL observation (not derived)
+  [PASS] comparator bridge isolates the admitted small-m_nu input
+  [PASS] comparator bridge isolates the thermalization comparator
   [PASS] note records the steelman (N7) FOR g_* = 112 and its rebuttal
   [PASS] note states the honest ceiling: I12 partially-resolved (conditioned on small m_nu)
   [PASS] note states it does NOT fully derive I12 from first principles
@@ -108,10 +112,10 @@ status: ok
 ----------------------------------------------------------------------------------------
 SCORECARD
 ----------------------------------------------------------------------------------------
-  PASS = 66
+  PASS = 70
   FAIL = 0
 
-RESULT: PASS=66 FAIL=0
+RESULT: PASS=70 FAIL=0
 
 ----- stderr -----
 

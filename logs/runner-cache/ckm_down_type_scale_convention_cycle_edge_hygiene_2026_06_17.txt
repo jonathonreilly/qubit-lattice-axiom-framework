@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/ckm_down_type_scale_convention_cycle_edge_hygiene_2026_06_17.py
+runner_sha256: ecd6db6132a1ad2323f6c312b36529bbb32ec5dbb432d6c54c4d398292693988
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+CKM down-type scale-convention cycle-edge hygiene
+==============================================================================
+[PASS] note exists
+[PASS] runner exists
+[PASS] markdown links resolve to retained/anchor load-bearing rows only (['ALPHA_S_DERIVED_NOTE.md', 'CKM_ATLAS_AXIOM_CLOSURE_NOTE.md'])
+[PASS] no markdown link remains to known co-cycle context rows ([])
+[PASS] CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md remains present as plain context
+[PASS] QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md remains present as plain context
+[PASS] DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md remains present as plain context
+[PASS] scope firewall language remains explicit ([])
+[PASS] positive overclaim/status language absent ([])
+[PASS] runner still declares D3 open
+[PASS] runner still reports class-G status unchanged
+[PASS] audit queue read-only evidence still names this row as a cycle target (count=5)
+==============================================================================
+TOTAL: PASS=12 FAIL=0
+==============================================================================
+
+----- stderr -----
+

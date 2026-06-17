@@ -4,11 +4,13 @@
 
 This Pattern A narrow runner verifies, in exact rational arithmetic, the
 conditional algebraic identities (T1)-(T9) that hold inside the explicit
-two-channel source-response toy `T` and the admitted scalar
-`eta_APS = 2/9` declared in the note's (A1)-(A5).
+two-channel source-response toy `T`, with scalar `eta_APS = 2/9` now split
+into a framework-sourced numeric input (A5-num) and an admitted toy endpoint
+transfer (A5-transfer).
 
-All identities are conditional on the named admissions (A1)-(A5); the
-runner makes that explicit by emitting only conditional closeout
+All identities are conditional on the named admissions (A1)-(A4) plus
+(A5-transfer), with (A5-num) sourcing the number; the runner makes that
+explicit by emitting only conditional closeout
 headlines. It does not assert any retained-grade closure or any
 retained-grade no-go.
 
@@ -56,10 +58,10 @@ def banner(title: str) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Admitted toy (A1)-(A5)
+# Admitted toy plus sourced scalar
 # ---------------------------------------------------------------------------
 
-ETA_APS = Fraction(2, 9)  # (A5) admitted APS scalar
+ETA_APS = Fraction(2, 9)  # (A5-num) framework-sourced scalar; transfer remains admitted.
 
 
 def part_t0_source_boundary() -> None:
@@ -76,13 +78,17 @@ def part_t0_source_boundary() -> None:
           "2026-06-12 audit firewall: in-toy algebra only" in note_text
           and "No new axiom, Tier-A admission" in note_flat
           and "audit-status change" in note_flat)
-    check("note records local toy admission packet A_TOY",
-          "A_TOY = (A1, A2, A3, A4, A5)" in note_flat)
-    check("note says A1-A5 are not framework-native facts",
-          "None of `(A1)-(A5)` is promoted to a framework-native fact" in note_flat)
+    check("note records local toy admission packet with split A5",
+          "A_TOY = (A1, A2, A3, A4, A5-transfer) plus A5-num" in note_flat)
+    check("note says only A1-A4 and A5-transfer remain local toy admissions",
+          "none of `(A1)-(A4)` or `(A5-transfer)` is promoted" in note_flat)
+    check("note sources eta_APS = 2/9 from retained-bounded fixed-locus arithmetic",
+          "A5-num" in note_text
+          and "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md" in note_text
+          and "numeric `2/9` local admission" in note_text)
     check("note forbids retained propagation without a bridge theorem",
           "cannot propagate a retained Koide closure" in note_flat
-          and "separate bridge theorem for the admissions" in note_flat)
+          and "separate bridge theorem for the toy carrier and transfer admissions" in note_flat)
 
 
 def q_toy(s: Fraction, z: Fraction) -> Fraction:
@@ -98,7 +104,7 @@ def z_expectation(weight_plus: Fraction) -> Fraction:
 
 
 def delta_open(s_chi: Fraction, c: Fraction) -> Fraction:
-    """(A5) admitted open-endpoint formula: delta = eta_APS * (1 - s_chi) + c."""
+    """(A5-transfer) admitted endpoint formula using sourced eta_APS."""
     return ETA_APS * (Fraction(1) - s_chi) + c
 
 
@@ -189,13 +195,13 @@ def part_t5_endpoint_dimensions() -> None:
 
 
 def part_t6_delta_selected_line() -> None:
-    banner("(T6) delta selected-line conditional value under (A3)+(A4)+(A5)")
+    banner("(T6) delta selected-line conditional value under (A3)+(A4)+(A5-num)+(A5-transfer)")
     delta = delta_open(Fraction(0), Fraction(0))
     check("delta(0, 0) = 2/9", delta == ETA_APS, f"delta={delta}")
 
 
 def part_t7_delta_countermodels() -> None:
-    banner("(T7) delta ambient countermodels under (A5)")
+    banner("(T7) delta ambient countermodels under (A5-num)+(A5-transfer)")
     cases: List[Tuple[str, Fraction, Fraction, Fraction]] = [
         ("closing endpoint (s_chi=0, c=0)", Fraction(0), Fraction(0), Fraction(2, 9)),
         ("spectator endpoint (s_chi=1, c=0)", Fraction(1), Fraction(0), Fraction(0)),
@@ -234,7 +240,7 @@ def part_t8_q_admission_blocker() -> None:
 
 
 def part_t9_delta_admission_blocker() -> None:
-    banner("(T9) delta admission-blocker in-toy under (A5)")
+    banner("(T9) delta admission-blocker in-toy under (A5-num)+(A5-transfer)")
     values = {
         delta_open(Fraction(0), Fraction(0)),
         delta_open(Fraction(1), Fraction(0)),
@@ -242,15 +248,16 @@ def part_t9_delta_admission_blocker() -> None:
         delta_open(Fraction(0), Fraction(1, 9)),
     }
     check(
-        "at least two distinct delta values reachable from (A5) alone",
+        "at least two distinct delta values reachable from (A5-transfer)+(A5-num) alone",
         len(values) >= 2,
         f"|values|={len(values)}, values={sorted(values)}",
     )
-    # Therefore (A5) alone does not entail delta = 2/9; the additional
+    # Therefore the transfer formula plus sourced scalar alone does not entail
+    # delta = 2/9; the additional
     # selection (s_chi, c) = (0, 0) is required.
     delta_only_value_is_2_over_9 = (values == {Fraction(2, 9)})
     check(
-        "in-toy: '(A5) alone => delta = 2/9' fails",
+        "in-toy: '(A5-transfer)+(A5-num) alone => delta = 2/9' fails",
         not delta_only_value_is_2_over_9,
     )
 
@@ -282,13 +289,13 @@ def main() -> int:
         # Explicitly conditional headlines. No retained-grade closure or
         # retained-grade no-go is asserted by this runner.
         print("KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS=TRUE")
-        print("ADMISSIONS_USED=A1_A2_A3_A4_A5")
-        print("ETA_APS_ADMITTED=2/9")
+        print("ADMISSIONS_USED=A1_A2_A3_A4_A5_TRANSFER")
+        print("ETA_APS_FRAMEWORK_SOURCED=2/9")
         print("IF_A1_THEN_Q_AT_ZERO_BACKGROUND_EQUALS_2_OVER_3=TRUE")
         print("IF_A1_AND_Z_NONZERO_THEN_Q_NOT_EQUAL_2_OVER_3=TRUE")
         print("IF_A2_THEN_Z_LABEL_SURVIVES_OBSERVABLE_COMPLETENESS=TRUE")
-        print("IF_A3_A4_A5_AND_SELECTED_LINE_LOCAL_THEN_DELTA_EQUALS_2_OVER_9=TRUE")
-        print("IF_A5_ALONE_THEN_DELTA_NOT_PINNED_TO_2_OVER_9=TRUE")
+        print("IF_A3_A4_A5_TRANSFER_AND_SELECTED_LINE_LOCAL_THEN_DELTA_EQUALS_2_OVER_9=TRUE")
+        print("IF_A5_TRANSFER_ALONE_THEN_DELTA_NOT_PINNED_TO_2_OVER_9=TRUE")
         print("RETAINED_GRADE_CLOSURE_ASSERTED=FALSE")
         print("RETAINED_GRADE_NO_GO_ASSERTED=FALSE")
         return 0

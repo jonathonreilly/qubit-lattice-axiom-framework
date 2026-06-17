@@ -1,0 +1,20 @@
+loop: koide-toy-a5-framework-split-20260617
+goal: "Reduce the Koide dimensionless toy row's local admission load by sourcing the numeric A5 scalar from framework-native retained-bounded C3 fixed-locus arithmetic."
+target_claim_id: koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Split A5 into A5-num and A5-transfer."
+files_touched:
+  - docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py
+  - logs/runner-cache/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.txt
+open_imports:
+  - "A1 two-channel source-response toy carrier"
+  - "A2 central Z label"
+  - "A3 selected-line endpoint algebra"
+  - "A4 based endpoint section"
+  - "A5-transfer endpoint/readout transfer using the sourced scalar"
+pr_status: pending
+next_exact_action: "Verify, commit, push, and open a ready review PR."
+stop_condition: "PR opened; reviewer/auditor decides whether the row can be re-audited with the numeric A5 admission removed."

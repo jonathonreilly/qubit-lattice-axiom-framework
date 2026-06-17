@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py
-runner_sha256: 0b5dda9624fbab85adb555ea1377fc20b160f8b14d47bfaf200bd4f1c3c85878
+runner_sha256: baf9f939e07a8efa99130230baec68a98600ed0fc67fc1056b8fd92b3ddaef13
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,8 +17,9 @@ Koide dimensionless objection - toy conditional algebraic checks
   [PASS] note records 2026-06-07 source-boundary manifest
   [PASS] note claim type is open-gate conditional-support, not bounded_theorem
   [PASS] note records the 2026-06-12 in-toy algebra firewall
-  [PASS] note records local toy admission packet A_TOY
-  [PASS] note says A1-A5 are not framework-native facts
+  [PASS] note records local toy admission packet with split A5
+  [PASS] note says only A1-A4 and A5-transfer remain local toy admissions
+  [PASS] note sources eta_APS = 2/9 from retained-bounded fixed-locus arithmetic
   [PASS] note forbids retained propagation without a bridge theorem
 
 ----------------------------------------------------------------------------------------
@@ -61,12 +62,12 @@ Koide dimensionless objection - toy conditional algebraic checks
   [PASS] spectator channel weight = 0
 
 ----------------------------------------------------------------------------------------
-(T6) delta selected-line conditional value under (A3)+(A4)+(A5)
+(T6) delta selected-line conditional value under (A3)+(A4)+(A5-num)+(A5-transfer)
 ----------------------------------------------------------------------------------------
   [PASS] delta(0, 0) = 2/9  (delta=2/9)
 
 ----------------------------------------------------------------------------------------
-(T7) delta ambient countermodels under (A5)
+(T7) delta ambient countermodels under (A5-num)+(A5-transfer)
 ----------------------------------------------------------------------------------------
   [PASS] closing endpoint (s_chi=0, c=0) -> delta = 2/9  (delta=2/9)
   [PASS] spectator endpoint (s_chi=1, c=0) -> delta = 0  (delta=0)
@@ -81,23 +82,23 @@ Koide dimensionless objection - toy conditional algebraic checks
   [PASS] in-toy: '[observable completeness on (A1)+(A2)] => Q = 2/3' fails
 
 ----------------------------------------------------------------------------------------
-(T9) delta admission-blocker in-toy under (A5)
+(T9) delta admission-blocker in-toy under (A5-num)+(A5-transfer)
 ----------------------------------------------------------------------------------------
-  [PASS] at least two distinct delta values reachable from (A5) alone  (|values|=4, values=[Fraction(0, 1), Fraction(1, 9), Fraction(2, 9), Fraction(1, 3)])
-  [PASS] in-toy: '(A5) alone => delta = 2/9' fails
+  [PASS] at least two distinct delta values reachable from (A5-transfer)+(A5-num) alone  (|values|=4, values=[Fraction(0, 1), Fraction(1, 9), Fraction(2, 9), Fraction(1, 3)])
+  [PASS] in-toy: '(A5-transfer)+(A5-num) alone => delta = 2/9' fails
 
 ========================================================================================
-SUMMARY: PASS=35 FAIL=0
-PASSED: 35/35
+SUMMARY: PASS=36 FAIL=0
+PASSED: 36/36
 ========================================================================================
 KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS=TRUE
-ADMISSIONS_USED=A1_A2_A3_A4_A5
-ETA_APS_ADMITTED=2/9
+ADMISSIONS_USED=A1_A2_A3_A4_A5_TRANSFER
+ETA_APS_FRAMEWORK_SOURCED=2/9
 IF_A1_THEN_Q_AT_ZERO_BACKGROUND_EQUALS_2_OVER_3=TRUE
 IF_A1_AND_Z_NONZERO_THEN_Q_NOT_EQUAL_2_OVER_3=TRUE
 IF_A2_THEN_Z_LABEL_SURVIVES_OBSERVABLE_COMPLETENESS=TRUE
-IF_A3_A4_A5_AND_SELECTED_LINE_LOCAL_THEN_DELTA_EQUALS_2_OVER_9=TRUE
-IF_A5_ALONE_THEN_DELTA_NOT_PINNED_TO_2_OVER_9=TRUE
+IF_A3_A4_A5_TRANSFER_AND_SELECTED_LINE_LOCAL_THEN_DELTA_EQUALS_2_OVER_9=TRUE
+IF_A5_TRANSFER_ALONE_THEN_DELTA_NOT_PINNED_TO_2_OVER_9=TRUE
 RETAINED_GRADE_CLOSURE_ASSERTED=FALSE
 RETAINED_GRADE_NO_GO_ASSERTED=FALSE
 

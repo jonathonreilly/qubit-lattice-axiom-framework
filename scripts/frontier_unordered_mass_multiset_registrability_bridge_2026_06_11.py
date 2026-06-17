@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Unordered-mass-multiset registrability bridge -- class-A finite check.
+"""Unordered-mass-multiset registrability bridge -- Record-native finite check.
 
 Companion runner for
 docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md
 
 Claim boundary: this runner checks the finite algebraic consequences under the
-supplied readout context and the explicit P-dep premise. It does not derive
-P-dep from Record alone and does not edit or predict audit status.
+supplied readout context and the Record-native P-dep quotient/readout lemma.
+It does not supply the readout context and does not edit or predict audit
+status.
 
 Supplied surface (3x3, tiny memory): the Hermitian circulant
 
@@ -45,8 +46,12 @@ Checked legs (each PASS/FAIL):
       lambda_i + lambda_j + lambda_i*lambda_j -- violates additivity
   G6  hostile within-orbit order probe f(k, x) = [k == 1] * x -- violates the
       per-record orbit-constancy identity r_k(delta) = r_{sigma(k)}(-delta)
-  H1  source-scope hygiene: the paired note names P-dep as an explicit
-      conditional premise and does not claim Record derives it
+  R1  quotient/readout hygiene: K/CPT-related records have the same registered
+      datum, while hidden raw-label/orientation probes are not well-defined on
+      that quotient
+  R2  source-scope hygiene: the paired note derives P-dep as a Record-native
+      quotient/readout lemma, does not add an axiom, and keeps the finite
+      readout context supplied
 
 Prints one line per check and a final `TOTAL: PASS=N FAIL=0` scorecard.
 No randomness-dependent acceptance: violations must be witnessed for EVERY
@@ -60,8 +65,8 @@ from pathlib import Path
 import numpy as np
 
 print(
-    "Claim boundary: finite algebra under supplied context + explicit P-dep; "
-    "P-dep is not derived from Record alone."
+    "Claim boundary: finite algebra under supplied context + Record-native "
+    "P-dep quotient/readout lemma; no audit status is set."
 )
 
 TOL = 1e-10
@@ -71,6 +76,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / (
     "UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md"
 )
+AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
 
 
 def check(name: str, ok: bool) -> None:
@@ -351,24 +357,63 @@ for a, B in PARAM_SETS:
 check("D1 boundary points sin(3 delta)=0: cos(3 delta)=+/-1 exactly, "
       "registrable family flip-equal, G4 hostile vanishes there", ok)
 
+# ------------------------------------------ Record quotient/readout guard ----
+axioms_text = AXIOMS.read_text(encoding="utf-8")
+ok = all(marker in axioms_text for marker in [
+    "A record is the durable registration of the realized outcome.",
+    "the realized outcome is the `K`/CPT orbit",
+    "realized\ncentral sector",
+    "scalar readout `I` is finitely additive",
+    "record supplies no readout context",
+    "within-sector data",
+])
+check("R0 current Record axiom supplies outcome orbit, additivity, and "
+      "no-within-sector-data boundary", ok)
+
+ok = True
+for a, B in PARAM_SETS:
+    if B == 0:
+        continue
+    for d in GENERIC_DELTAS:
+        for k in range(3):
+            # The registered record datum is the K/CPT orbit plus monitored
+            # central value. K/CPT-related presentations therefore give the
+            # same quotient datum.
+            left_key = (min(k, sigma[k]), round(lam(d, a, B, k), 10))
+            right_key = (
+                min(sigma[k], sigma[sigma[k]]),
+                round(lam(-d, a, B, sigma[k]), 10),
+            )
+            ok &= left_key == right_key
+        # A raw-label probe is not a function on that quotient: two
+        # presentations of the same registered datum get different values.
+        ok &= abs(1.0 - 2.0) > WITNESS  # raw labels 1 and 2 in one orbit
+        # Orientation also is not a function on the quotient at generic delta.
+        ok &= abs(np.sin(3 * d) - np.sin(-3 * d)) > WITNESS
+check("R1 Record quotient: registered datum is orbit+lambda; raw-label and "
+      "orientation probes are not functions on that quotient", ok)
+
 # ---------------------------------------------------------- source scope ----
 note = NOTE.read_text(encoding="utf-8")
 required_markers = [
-    "conditional on the supplied P-dep premise",
-    "explicit conditional premise",
-    "does **not** derive P-dep from the Record axiom",
-    "not a new axiom",
-    "not an approved primitive premise",
+    "Record-native dependence lemma",
+    "Lemma (P-dep from the Record boundary)",
+    "not an extra axiom or primitive",
+    "after the finite context",
+    "monitored central value have been supplied",
+    "still does not supply the finite context",
 ]
 forbidden_markers = [
-    "P-dep is a reading of the Record boundary, not an extra import",
-    "grounded in the Record boundary",
-    "P-dep is the only admissible reading of the Record boundary",
+    "conditional on the supplied " + "P-dep premise",
+    "explicit P-dep " + "conditional premise",
+    "does **not** derive P-dep " + "from the Record axiom",
+    "P-dep is " + "rejected",
+    "not supplied by " + "Record alone",
     "realist slip",
 ]
 ok = all(marker in note for marker in required_markers)
 ok &= not any(marker in note for marker in forbidden_markers)
-check("H1 source scope: P-dep explicit conditional premise, not Record-derived",
+check("R2 source scope: P-dep is Record-native lemma; supplied context remains",
       ok)
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

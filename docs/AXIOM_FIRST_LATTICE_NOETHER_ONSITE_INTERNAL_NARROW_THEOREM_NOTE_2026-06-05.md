@@ -46,7 +46,9 @@ is a nearest-neighbour bilateral current, that the number-current sign is fixed
 by `d rho/dt + div j = 0`, and that site-mixing generators remain outside the
 onsite/internal theorem. The broad physical claim that this finite exhibit is
 the framework's realized matter kinetic is a downstream realization-gate bridge,
-not a load-bearing input to this row.
+not a load-bearing input to this row. The narrower density/readout identity
+`rho_x = chibar_x chi_x -> a_x^dag a_x` is now supplied by the local CAR bridge
+[`STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md`](STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md).
 
 ## Claim
 
@@ -128,10 +130,11 @@ conventional on the supplied exhibit.
   shift.
 - This note constructs only a finite staggered/Kawamoto-Smit exhibit for the
   carrier-specific current check. It does not derive the broad physical
-  realization/readout bridge, anomaly cancellation, or the claim that this
-  exhibit is the realized matter kinetic. The retained abstract bilinear
+  realization bridge, anomaly cancellation, or the claim that this exhibit is
+  the realized matter kinetic. The local density/readout bridge is supplied by
+  the 2026-06-17 finite CAR theorem cited below. The retained abstract bilinear
   theorem supplies only the carrier-free finite matrix-unit identities; it does
-  not supply that physical realization bridge.
+  not supply the broader physical realization bridge.
 
 ## 1. Setup: the number-conserving bilinear algebra
 
@@ -148,8 +151,10 @@ asserted by name. All symbolic Noether algebra below uses only `(B)`.
 
 The finite-Grassmann/operator carrier — per-site `(chi_x, chibar_x)` generators
 with anticommutation and per-site Fock dimension 2, and the Berezin determinant
-readout — is supplied by the retained substep-1 narrow theorem listed in §6; the
-bilinear current here is built on that surface.
+readout — is supplied by the retained substep-1 narrow theorem listed in §6. The
+local density/readout identification `rho_x = chibar_x chi_x -> a_x^dag a_x`
+is supplied by the 2026-06-17 local CAR bridge listed there; the bilinear
+current here is built on those finite algebraic surfaces.
 
 ## 2. Arbitrary-bilinear symbolic continuity (retained authority + local replay)
 
@@ -271,6 +276,11 @@ narrow theorem.
   readout — the algebraic surface on which the bilinear current is built:
   [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
   (retained-grade).
+- The finite local density/readout bridge identifying
+  `rho_x = chibar_x chi_x` with the CAR number projection `a_x^dag a_x` and
+  normalized onsite U(1) generator:
+  [`STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md`](STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md)
+  (source-side positive theorem pending independent audit).
 - The reality/antisymmetry of the staggered operator used to make `iM`
   Hermitian (the `det = prod(m^2 + lambda^2)` reality mechanism), cited as the
   carrier-positivity surface:
@@ -285,13 +295,16 @@ narrow theorem.
   conditional row; this note states an independent corrected/narrowed theorem
   and does not consume the parent as authority.
 
-**Admitted context input (open gate, named, not a retained dependency):**
+**Supplied finite exhibit (named, not a retained dependency):**
 
 - `staggered_dirac_realization_gate` / the Kawamoto-Smit phase form
   `eta_1 = +1`, `eta_2 = (-1)^{x_1}`, `eta_3 = (-1)^{x_1+x_2}`: the staggered
-  carrier and its phase structure are admitted, exactly as in the parent. This
-  note does not derive them; the U(1) current (4*), the sign fix, and the
-  onsite/internal locality close on the admitted carrier.
+  coefficient matrix and its phase structure are used here as an explicit
+  supplied finite exhibit, exactly as in the parent. This note does not derive
+  the KS phase law, does not promote the realization gate, and does not need the
+  broad realization gate as a load-bearing dependency edge. The U(1) current
+  (4*), sign fix, and onsite/internal locality close on that finite exhibit plus
+  the density bridge above.
 
 **External mathematics (comparator only, not a derivation input):**
 
@@ -307,10 +320,10 @@ action, per-site qubit carrier); (2) the retained abstract bilinear continuity
 theorem for the matrix-unit identities; (3) the finite-Grassmann/operator
 carrier (per-site `(chi_x, chibar_x)`, Fock dim 2, Berezin readout) from the
 retained substep-1 narrow theorem; (4) the finite staggered Kawamoto-Smit
-nearest-neighbour exhibit constructed in this note and runner; (5) the onsite
-U(1) number-density operator `rho_x = chibar_x chi_x` on that finite CAR
-exhibit. The physical realization/readout identification of this exhibit is
-downstream and is not consumed here.
+nearest-neighbour exhibit constructed in this note and runner; (5) the local
+CAR density/readout bridge `rho_x = chibar_x chi_x -> a_x^dag a_x`. The broad
+physical realization identification of the finite KS exhibit is downstream and
+is not consumed here.
 No PDG, fitted, measured, lattice-MC, `beta = 6`, or `g_bare` value is consumed
 as a derivation input; the staggered carrier mass is an arbitrary positive
 bookkeeping constant.
@@ -334,3 +347,5 @@ No load-bearing broad-gate dependency is recorded here. The prior
 staggered-realization parent link has been removed because the onsite/internal
 Noether theorem reconstructs the finite bilinear carrier/exhibit it needs and
 delegates only to retained abstract bilinear and substep-1 authorities.
+
+- [staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17](STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md)

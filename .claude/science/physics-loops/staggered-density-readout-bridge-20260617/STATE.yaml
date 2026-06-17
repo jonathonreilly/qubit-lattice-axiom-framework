@@ -1,0 +1,21 @@
+loop: staggered-density-readout-bridge-20260617
+date: 2026-06-17
+branch: codex/staggered-density-readout-bridge-20260617
+base: origin/main
+target_claim_id: axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05
+target_status: source-side-positive-bridge
+actual_current_surface_status: positive-theorem
+trace_class: upstream_support
+reachability_to_target: supports
+cycle_count: 1
+files_touched:
+  - docs/STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md
+  - scripts/staggered_dirac_local_density_readout_bridge_2026_06_17.py
+  - logs/runner-cache/staggered_dirac_local_density_readout_bridge_2026_06_17.txt
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md
+  - .claude/science/physics-loops/staggered-density-readout-bridge-20260617/*
+review_loop_disposition: reviewer_owned_not_run
+audit_loop_run: false
+audit_or_ledger_edits: false
+next_exact_action: reviewer extracts or rejects the source-side density bridge repair
+stop_condition: coherent source repair PR prepared

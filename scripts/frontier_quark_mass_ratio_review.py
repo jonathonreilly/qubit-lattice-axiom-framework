@@ -7,7 +7,8 @@ Status:
 
 Safe claim:
   This script replays the current down-type and up-type quark mass-ratio
-  runners, preserves their audit output, and prints a packet-level summary.
+  runners, preserves their raw subrunner output, and prints a packet-level
+  summary.
   It does not introduce a new derivation or upgrade the bounded status of the
   underlying lanes.
 """
@@ -106,7 +107,7 @@ def main() -> int:
     print("=" * 72)
     print("  Scope:")
     print("    replay the live down-type and up-type quark mass-ratio runners")
-    print("    keep their raw audit output intact")
+    print("    keep their raw subrunner output intact")
     print("    summarize the honest packet endpoint on current main")
 
     results = [run_runner(repo_root, spec) for spec in RUNNERS]

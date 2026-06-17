@@ -1,0 +1,20 @@
+loop_slug: quark-mass-ratio-runner-20260617
+goal: "Unlock audit readiness for quark_mass_ratio_note_2026-04-18 without auditing or editing audit data."
+target_claim_id: quark_mass_ratio_note_2026-04-18
+base: origin/main@53b951c6fe851129a7a59f17289347b19f68fe19
+branch: codex/quark-mass-ratio-runner-20260617
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+block_count: 1
+files_touched:
+  - docs/QUARK_MASS_RATIO_NOTE_2026-04-18.md
+  - scripts/frontier_quark_mass_ratio_review.py
+  - logs/runner-cache/frontier_quark_mass_ratio_review.txt
+  - .claude/science/physics-loops/quark-mass-ratio-runner-20260617/
+open_imports:
+  - "The full quark spectrum is not retained; the source note preserves bounded package status and open up-sector/CP closure gaps."
+review_loop_disposition: reviewer_owned_not_run
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can run review-loop; audit tooling can then rebuild graph/queue and pick up the primary bundle runner."
+stop_condition: "Coherent source-side runner-readiness repair packaged as a PR."

@@ -8,7 +8,9 @@ route characterization (no-go-flavored)
 **Claim scope (narrow):** Two computed results plus one structural reduction, all on the
 axis-label component of (B-AXIS.2) of
 [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-(audited_conditional). **(1)** On the cubic-symmetric staggered block, the per-axis
+(audited_conditional). **(1)** On the even cubic-symmetric staggered block (equal even
+extent per axis — the standard staggered-fermion even-extent condition; runner block [SCOPE]
+exhibits the odd-extent falsifier), the per-axis
 antiperiodic-boundary-condition Z₂ datum named as the minimal axis-selecting input by
 [`SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`](SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md)
 is **itself transportable around all four axes**: the adjacent signed-permutation
@@ -39,7 +41,7 @@ lane.
 native-on-Z³ probe).
 **Runner:**
 [`scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py`](../scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py)
-(`TOTAL: PASS=20 FAIL=0`, deterministic, no RNG, runtime well under one minute).
+(`TOTAL: PASS=22 FAIL=0`, deterministic, no RNG, runtime well under one minute).
 **Authority role:** source-note proposal. If retained, this row supplies (a) the computed
 S₄-transitivity of the antiperiodic-axis datum (sharpening the 2026-06-11 pin), and (b) the
 characterization that the single-clock axis label has no non-transportable, non-circular
@@ -89,10 +91,14 @@ framing (time off the 4-torus) derive the axis or relocate the admission?
 
 No fitted parameters, no observed values, no new axioms, no axiom-file edits, no imports.
 
-## 3. The S₄-transitivity theorem (computed; runner blocks [S],[T],[REST])
+## 3. The S₄-transitivity theorem (computed; runner blocks [S],[T],[REST],[SCOPE])
 
-On the cubic-symmetric block `L=(4,4,4,4)`, `m=0.3`, time-first staggered phases, with the
-signed exchange `W_{a,b} = P_{a↔b} ∘ diag((-1)^{x_a x_b})`:
+On the **even** cubic-symmetric block `L=(4,4,4,4)`, `m=0.3`, time-first staggered phases, with
+the signed exchange `W_{a,b} = P_{a↔b} ∘ diag((-1)^{x_a x_b})` (even extent is required — the
+periodic staggered η-phase closes consistently across the boundary wrap only for even extent;
+block [SCOPE] exhibits the odd-extent falsifier, `‖W M W^T − M‖ = 6 ≠ 0` at `L=(3,3,3,3)`, and
+the recompute reproduces the exact-zeros independently at `m=0.3, 1.7`, `L=(6,6,6,6)`, and under
+an alternate equivalent staggered-phase convention):
 
 - **[S]** `W_{0,1}` is orthogonal and preserves the periodic staggered hop exactly
   (`‖W M W^T − M‖ = 0`); the plain swap without the sign field fails (`‖P M P^T − P‖ ≈ 22.6 > 1`),

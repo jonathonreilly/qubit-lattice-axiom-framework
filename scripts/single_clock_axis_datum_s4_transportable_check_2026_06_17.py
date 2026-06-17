@@ -160,6 +160,25 @@ print("[T] NOTE: (0,1),(1,2),(2,3) generate S_4, which acts TRANSITIVELY on the 
       "4 axes; the antiperiodic-axis label is therefore a single 4-element orbit.")
 
 # --------------------------------------------------------------------------
+# [SCOPE] even-extent requirement (validity boundary, falsifier).
+#     The exact-zero preservation/transport claims hold on EVEN cubic blocks
+#     only: the periodic staggered eta-phase closes consistently across the
+#     boundary wrap iff the extent is even (the standard staggered-fermion
+#     even-extent condition). On ODD cubic blocks W is still well-defined
+#     (equal extents) but does NOT preserve the periodic hop -- the claim
+#     scope is "even cubic-symmetric block", not all cubic blocks.
+# --------------------------------------------------------------------------
+Lodd = (3, 3, 3, 3)
+Modd, sodd, iodd = build_staggered(Lodd, [1, 1, 1, 1])
+Wodd = signed_exchange(sodd, iodd, 0, 1)
+odd_break = r(Wodd @ Modd @ Wodd.T - Modd)
+check("SCOPE", "EVEN extent is required: at ODD cubic L=(3,3,3,3) W01 does NOT preserve "
+      "the periodic hop (falsifier; claim scope is EVEN cubic)",
+      odd_break > NONTRIV, f"||W M_per W^T - M_per||_odd={odd_break:.3f} (>1: even-extent boundary)")
+check("SCOPE", "...while at EVEN L=(4,4,4,4) it is exact (recap of [S])",
+      r(W01 @ Mper @ W01.T - Mper) < TOL)
+
+# --------------------------------------------------------------------------
 # [REST] restoration + single-axis break (the pin, recomputed)
 # --------------------------------------------------------------------------
 Map0, _, _ = build_staggered(L4, [-1, 1, 1, 1])

@@ -24,9 +24,15 @@ def gell_mann_matrices():
 
 
 def note_boundary_ok() -> bool:
-    text = " ".join(NOTE.read_text(encoding="utf-8").replace("`", "").split()).lower()
+    text = " ".join(
+        NOTE.read_text(encoding="utf-8").replace("`", "").replace("*", "").split()
+    ).lower()
     required = [
+        "claim type: decoration",
         "does not identify the carrier with physical sm quark color",
+        "historical file and runner names use quark/antiquark, but those names are non-binding labels",
+        "they are not physical quark or antiquark state claims",
+        "no consumer may use this row to discharge a physical-color bridge",
         "physical sm-color identification remains excluded",
         "finite-dimensional linear algebra on end(c^3)",
     ]

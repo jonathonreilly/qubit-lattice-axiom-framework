@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py
-runner_sha256: 8580fad1b55440c70f3900e679082cfec2ed294eab6a434db61b01db91ae8e21
+runner_sha256: 4c9d592a7e85565d8af0220686451ebe5c38a553a0888807474c5ce8a1350e26
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.78
+elapsed_sec: 2.11
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -47,10 +47,10 @@ PART 2: TRANSPORT SEARCH FINDS AN OFF-SEED OVERSHOOT WITNESS
  [3.56440e-02 9.64294e-01 6.20000e-05]]
 
 ========================================================================================
-PART 3: CONTINUITY GIVES AN INTERPOLATED CLOSURE WITNESS
+PART 3: CONTINUITY GIVES AN INTERPOLATED DIAGNOSTIC CROSSING
 ========================================================================================
   [PASS] The computed best-eta map crosses 1 on the interpolating seed-preserving family  ((seed,opt)=(0.719082664368,1.052220313050))
-  [PASS] The interpolated witness has eta/eta_obs = 1 on the same parameterized family  (etas=[1.         0.71842553 0.57229394], best column=0)
+  [PASS] The interpolated diagnostic point has eta/eta_obs = 1 on the same parameterized family  (etas=[1.         0.71842553 0.57229394], best column=0)
   [PASS] That closure point is still genuinely off-seed  (x=[0.128516, 1.411729, 0.149755], y=[0.291587, 0.196351, 0.432063], delta=-2.041003068182)
 
   lambda_*  = 0.914106850348
@@ -64,11 +64,15 @@ PART 3: CONTINUITY GIVES AN INTERPOLATED CLOSURE WITNESS
  [4.00640e-02 9.59753e-01 1.83000e-04]]
 
 ========================================================================================
-PART 4: BOTTOM LINE
+PART 4: SELECTOR FIREWALL
 ========================================================================================
   [PASS] The imported transport functional has a constructive interval witness  (seed endpoint below 1, sampled endpoint above 1)
   [PASS] The witness does not select a physical off-seed source law  (selector status remains out of scope)
   [PASS] The remaining issue is the unproven selector/authority bridge  (bounded interval witness only)
+  [PASS] The parent note cites the selector-firewall companion  (DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md)
+  [PASS] The parent note demotes the exact equality point to a diagnostic crossing  (root is reproducibility data, not a selected source law)
+  [PASS] The selector firewall forbids using ETA_OBS as the hidden selector  (observed comparator is not a source-selection theorem)
+  [PASS] The selector firewall preserves future positive selector routes  (future endpoint or lambda theorem remains open)
 
 ========================================================================================
 RESULT
@@ -76,11 +80,11 @@ RESULT
   Bounded construction:
     - the imported fixed seed endpoint is below eta/eta_obs = 1
     - the sampled off-seed endpoint is above eta/eta_obs = 1
-    - interpolation gives an eta/eta_obs = 1 witness on that family
+    - interpolation gives an eta/eta_obs = 1 diagnostic crossing on that family
 
-  No physical selector law or full-stack closure is claimed.
+  No physical selector law, exact eta_obs prediction, or full-stack closure is claimed.
 
-PASS=12  FAIL=0
+PASS=16  FAIL=0
 
 ----- stderr -----
 

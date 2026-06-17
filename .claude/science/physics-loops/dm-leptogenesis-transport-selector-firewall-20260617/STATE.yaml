@@ -1,0 +1,23 @@
+loop: dm-leptogenesis-transport-selector-firewall-20260617
+branch: codex/dm-leptogenesis-transport-selector-firewall-20260617
+base: origin/main
+current_goal: "Repair the audited_numerical_match source boundary for the DM leptogenesis PMNS transport interval row without auditing or retagging."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+target_claim_id: dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16
+target_blocker_text: "selected/interpolated eta/eta_obs=1 root is a numerical match unless a physical source selector is derived"
+review_loop_disposition: reviewer_owned_not_run
+files_touched:
+  - docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md
+  - docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md
+  - scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py
+  - scripts/frontier_dm_leptogenesis_pmns_transport_selector_firewall_2026_06_17.py
+  - logs/runner-cache/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.txt
+  - logs/runner-cache/frontier_dm_leptogenesis_pmns_transport_selector_firewall_2026_06_17.txt
+checks:
+  - "python3 scripts/frontier_dm_leptogenesis_pmns_transport_selector_firewall_2026_06_17.py -> PASS=12 FAIL=0"
+  - "python3 scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py -> PASS=16 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_dm_leptogenesis_pmns_transport_selector_firewall_2026_06_17.py -> status ok"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py -> status ok"
+next_exact_action: "Reviewer should run review-loop and decide whether this source repair is enough to re-open the parent row as bounded interval support plus selector firewall."
+stop_condition: "Science block packaged as a source-side PR; no audit verdict applied."

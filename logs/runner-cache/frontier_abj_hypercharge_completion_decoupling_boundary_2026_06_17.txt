@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/frontier_abj_hypercharge_completion_decoupling_boundary_2026_06_17.py
+runner_sha256: d456f79a5a255bb13a8dbdd3f8d5cac173b0bdb5e9ccdb7a84d3d3ee2c38c704
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+ABJ HYPERCHARGE/COMPLETION DECOUPLING BOUNDARY
+
+== Part 0: source firewall ==
+PASS: new note contains boundary phrase: bounded support / exact boundary
+PASS: new note contains boundary phrase: independent audit lane only
+PASS: new note contains boundary phrase: without introducing a new axiom
+PASS: new note contains boundary phrase: P-HY is still the declared physical identification premise
+PASS: new note contains boundary phrase: P-COMP-min
+PASS: new note contains boundary phrase: Matter content is not anomaly-unique
+PASS: new note contains boundary phrase: The absolute hypercharge scale is a convention
+PASS: new note contains boundary phrase: not a retained closure
+PASS: ABJ bridge routes new boundary phrase: ABJ_HYPERCHARGE_COMPLETION_DECOUPLING_BOUNDARY_NOTE_2026-06-17.md
+PASS: ABJ bridge routes new boundary phrase: P-HY/P-COMP decoupling boundary
+PASS: ABJ bridge routes new boundary phrase: does not derive P-HY or P-COMP
+PASS: left-handed abelian note excludes anomaly-complete U(1)_Y and completion
+PASS: SM decoupled note records minimal RH completion as admitted, not imported
+PASS: SM decoupled note contains full nu_R family check, not Tr[Y]-only
+PASS: no-nu_R note proves uniqueness without neutral-singlet input
+PASS: new note avoids forbidden closure phrase: P-HY is derived
+PASS: new note avoids forbidden closure phrase: P-COMP is derived
+PASS: new note avoids forbidden closure phrase: matter completion is derived
+PASS: new note avoids forbidden closure phrase: is a retained closure
+PASS: new note avoids forbidden closure phrase: sets the audit verdict
+
+== Part 1: left-handed surface anomaly traces ==
+PASS: LH Tr[Y] = 0
+      0
+PASS: LH Tr[Y^3] = -16/9
+      -16/9
+PASS: LH Tr[SU(3)^2 Y] = 1/3
+      1/3
+PASS: LH Tr[SU(2)^2 Y] = 0
+      0
+PASS: LH SU(3)^3 anomaly = +2
+      2
+PASS: three ABJ-relevant LH traces are nonzero
+
+== Part 2: minimal RH hypercharge solution ==
+PASS: RH quadratic discriminant is a rational square
+      disc=4, sqrt=2
+PASS: minimal RH sum y_u+y_d = 2/3
+      2/3
+PASS: minimal RH product y_u*y_d = -8/9
+      -8/9
+PASS: minimal RH y_e = -2
+      -2
+PASS: minimal RH values are {4/3,-2/3,-2}
+
+== Part 3: full minimal content anomaly cancellation ==
+PASS: minimal content Tr[Y] = 0
+      0
+PASS: minimal content Tr[Y^3] = 0
+      0
+PASS: minimal content Tr[SU(3)^2Y] = 0
+      0
+PASS: minimal content Tr[SU(2)^2Y] = 0
+      0
+PASS: minimal content SU(3)^3 = 0
+      0
+PASS: minimal content Witten SU(2) doublet count is even
+      4
+PASS: SU(2)^3 cubic is identically zero for SU(2)
+
+== Part 4: boundary and non-uniqueness checks ==
+PASS: adding neutral nu_R leaves Tr[Y] zero
+      0
+PASS: adding neutral nu_R leaves Tr[Y^3] zero
+      0
+PASS: free nu_R family cancels Tr[SU(3)^2Y] at t=1/2
+      0
+PASS: free nu_R family cancels Tr[Y] at t=1/2
+      0
+PASS: free nu_R family cancels Tr[Y^3] at t=1/2
+      0
+PASS: vectorlike pair preserves Tr[Y] zero
+      0
+PASS: vectorlike pair preserves Tr[Y^3] zero
+      0
+PASS: global Y-scale rescaling preserves Tr[Y] zero
+      0
+PASS: global Y-scale rescaling preserves Tr[Y^3] zero
+      0
+
+TOTAL: PASS=47 FAIL=0
+VERDICT: bounded ABJ hypercharge/completion decoupling boundary passes.
+
+----- stderr -----
+

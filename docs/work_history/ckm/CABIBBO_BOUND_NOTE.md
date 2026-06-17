@@ -4,6 +4,21 @@
 **Status:** historical bounded CKM route note
 **Script:** `scripts/frontier_ckm_mass_basis_nni.py`
 
+## Source boundary (2026-06-12)
+
+**Boundary:** numerical-match / bounded support only. Effective status is
+audit-derived; this work-history note records only the source boundary.
+
+The reported `|V_us| = 0.2251` is a Cabibbo-scale consistency result inside
+the mass-basis NNI package. It load-bears PDG quark masses, PDG comparators,
+and calibrated NNI/flavor coefficients from the bounded CKM route. This note
+may not be cited as a first-principles derivation of quark masses, CKM
+coefficients, the full CKM matrix, or the Cabibbo angle.
+
+Promotion beyond numerical-match support requires deriving the mass inputs and
+NNI coefficients from retained framework dynamics without fitting to CKM/PDG
+targets.
+
 ## Summary
 
 The safe current Cabibbo statement on `main` is:

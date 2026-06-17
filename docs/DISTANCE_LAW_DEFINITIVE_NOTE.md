@@ -5,6 +5,22 @@
 **Status:** bounded review candidate -- high-precision ordered-cubic distance-law closure
 **Claim type:** bounded_theorem
 
+## Source boundary (2026-06-12)
+
+**Boundary:** numerical-match / bounded finite-table support only. Effective
+status is audit-derived; this source records only the claim boundary.
+
+The finite ordered-cubic Dirichlet tables and mass-independence check are
+runner-backed. The sub-percent inverse-square headline depends on selecting
+the scaled-fit `N >= 56` weighted mean, while other extrapolation estimators
+in the same runner output miss the inverse-square exponent by several percent.
+This note may not be cited as an architecture-independent Newton law,
+continuum theorem, or retained estimator-selection theorem.
+
+Promotion beyond numerical-match support requires an independent
+estimator-selection theorem or a pre-registered protocol that selects the
+scaled-fit `N >= 56` weighted mean before looking at the result.
+
 **Audit-lane runner update (2026-05-09):** The primary runner `scripts/frontier_distance_law_definitive.py` previously timed out under the audit-lane 120s default budget; AUDIT_TIMEOUT_SEC=1800 added; runs in 234s under the new budget. The runner's pass/fail semantics are unchanged; this update only ensures the audit-lane sees a complete cache instead of a TIMEOUT row.
 
 **Audit-conditional perimeter (2026-05-09):**

@@ -18,6 +18,22 @@ attempted here and is explicitly excluded from this note's scope.
 This note compresses the controlled `H = 0.25` seed-`0` evidence across the
 two families that currently have it:
 
+## Source boundary (2026-06-12)
+
+**Boundary:** numerical-match / bounded support only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The load-bearing comparison uses two preselected simulation rows at the tuned
+`H = 0.25`, seed-`0` surface. This note may be cited only for the frozen
+Fam1/Fam2 seed-0 sign/order/magnitude comparison. It may not be cited as a
+derivation of the direct-dM magnitudes, the Fam2-deeper-than-Fam1 ordering, a
+family-wide law, a third-family transfer, or a structural explanation of why
+`H = 0.25` and seed `0` are forced.
+
+Promotion beyond numerical-match support requires a separate class-C
+first-principles magnitude/order derivation or a retained theorem selecting
+the `H = 0.25`, seed-`0` surface.
+
 > Keep the controlled `Fam1`, seed `0`, `H = 0.25` control ladder together
 > with the controlled `Fam2`, seed `0`, `H = 0.25` control ladder, and ask
 > what survives if we hold the seed fixed but compare the same fine-`H`

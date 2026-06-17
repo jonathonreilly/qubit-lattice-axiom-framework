@@ -5,7 +5,7 @@
 **Claim type:** bounded_theorem
 **Script:** `scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py`
 **Cache:** `logs/runner-cache/frontier_record_conditional_law_period_scaling_2026_06_11.txt`
-**Status:** source proposal; the audit lane grades. Runner `PASS=16 FAIL=0` — exact
+**Status:** source proposal; the audit lane grades. Runner `PASS=18 FAIL=0` — exact
 finite evolution with a fixed seeded 300-draw sampled-null diagnostic. The null
 comparison is not an exact enumeration of all label permutations or a certified
 finite-sample upper confidence bound. A mandatory
@@ -25,7 +25,7 @@ by recomputing #3554's *other* L=3 event that is positive against the fixed seed
 (monotone)}` — so the stall was **event-specific, not a period property**, and the gap
 comparison is overlap, not doubling. Both events are now recomputed **in-runner**.
 
-## The findings (exact finite evolution plus sampled-null diagnostic — runner `PASS=16 FAIL=0`)
+## The findings (exact finite evolution plus sampled-null diagnostic — runner `PASS=18 FAIL=0`)
 
 **(F1) The L=3 baseline as a set** (both #3554 events that are positive against the
 fixed seeded-null diagnostic, in-runner):
@@ -65,7 +65,8 @@ null_p95(Theta, w, kpref=3, n_draws=300, seed=7777)
 This is a deterministic source-packet diagnostic for the named finite samples
 and seeds. It does not claim an exhaustive permutation-null p95, a certified
 finite-sample upper confidence bound, or a Monte-Carlo-free null theorem. The
-source-positive submitted for independent audit is therefore only:
+source-positive submitted for independent audit is therefore only the
+finite-runner-defined diagnostic:
 
 ```text
 For the stated L=3/L=4 events, occupancies, seeds, depth choices, and fixed
@@ -73,6 +74,33 @@ seeded 300-draw sampled-null protocol, the L=4 tested profiles are monotone
 and their sampled-null diagnostic gaps are comparable-or-larger by the
 displayed median comparison.
 ```
+
+## 2026-06-13 dependency-edge rescope repair
+
+This note does not use the #3554 fixed-prefix-`k` packet, #3507 trajectory
+packet, or the Born-derived-chain/readout premises as load-bearing one-hop
+authorities. Those packets name the historical route and vocabulary that led to
+this finite test, but the current source-positive is exactly the runner-defined
+diagnostic above.
+
+Load-bearing inputs are confined to the finite objects instantiated by
+`scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py`:
+
+- ring sizes `L=3` and `L=4`, color count `N_c=3`, named occupancies
+  `K=5`, `K=6`, and `K=7`, and the displayed seed/depth choices;
+- the explicit sparse Fock evolution and SVD-polar determinant readout
+  constructed in the runner;
+- the fixed seeded 300-draw sampled-null protocol
+  `null_p95(Theta, w, kpref=3, n_draws=300, seed=7777)`;
+- the displayed finite inequalities: the L=3 baseline set, L=4 monotone
+  profiles, half-filling control, and median comparable-or-larger comparison.
+
+The symbols "Born", "record", "instrument", "carrier", "hopping", and
+"U(1)" are therefore labels for the finite diagnostic instantiated in this
+runner, not imported framework closures. A downstream row must not cite this
+packet as a retained derivation of the #3554 fixed-prefix-`k` law, the #3507
+Born-weighted trajectory/readout chain, a physical `U(1)` gauge field, an
+all-permutations null theorem, or a large-period law.
 
 ## What this does and does not claim
 
@@ -86,12 +114,12 @@ displayed median comparison.
   *vectors*; one dense `U_step`), measured at ~1.1–1.5 GB transient peak — safe for a
   single run, with panels serializing any L=4 recompute. The lesson is a standing
   policy entry.
-- Conditionality inherited (#3554/#3507): the Born derived-chain cap (the audit lane
-  grades; statuses volatile — self-verify at every landing); named instruments
-  (`ε=0.6`); supplied `C³` carrier; named hopping (`τ=0.35`); guarded full-rank domain;
-  discrete-time throughout (retained R1 boundaries untouched). The `U(1)` factor is not
-  identified with a physical gauge field. No new axiom, primitive, measure, or weight;
-  `r` untouched.
+- Historical context only (#3554/#3507): this packet does not inherit their
+  audit status as a theorem premise. Named instruments (`ε=0.6`), supplied
+  `C³` carrier, named hopping (`τ=0.35`), guarded full-rank domain, and
+  discrete-time evolution are finite diagnostic inputs here. The `U(1)` factor
+  is not identified with a physical gauge field. No new axiom, primitive,
+  measure, or weight; `r` untouched.
 - Null-diagnostic scope: every displayed p95 value is the p95 of the fixed seeded
   300-draw label-permutation sample implemented by the runner. The source claim is
   the finite, code-defined diagnostic result under that protocol, not an exact
@@ -101,16 +129,16 @@ displayed median comparison.
   borderline-feasible), the `Z³` geometry question, and whether the seed-robust-at-L=4
   monotonicity persists or saturates — open, named, not claimed.
 
-## Cross-references
+## Historical route context (non-load-bearing)
 
 - The named fixed-prefix object and the L=3 events:
-  [`CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md).
+  `CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md`.
 - The det-sector decomposition:
-  [`U1_DET_SECTOR_BI_ORBIT_QUOTIENT_STEP_LAW_BASELINE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-10.md`](U1_DET_SECTOR_BI_ORBIT_QUOTIENT_STEP_LAW_BASELINE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-10.md).
+  `U1_DET_SECTOR_BI_ORBIT_QUOTIENT_STEP_LAW_BASELINE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-10.md`.
 - The finite Born-weighted trajectory/instrument setup:
-  [`UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md`](UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md),
-  with the Born assembly dependency explicitly tracked at
-  [`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md).
+  `UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md`,
+  with Born assembly context at
+  `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`.
 - Standard math (method only): circular statistics; permutation tests;
   quantum-trajectory trees; two-point finite-size comparisons; sparse fermionic
   operator algebra.

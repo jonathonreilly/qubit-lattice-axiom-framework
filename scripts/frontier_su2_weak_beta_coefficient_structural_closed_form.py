@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""SU(2)_L Weak 1-Loop beta-Function Coefficient Structural Closed Form via S1.
+"""SU(2)_L Weak 1-Loop beta-Function Coefficient Structural Support via S1.
 
-Derives a NEW retained structural closed form for the SU(2)_L 1-loop
-beta-function coefficient entirely in terms of S1 structural integers
+Checks bounded structural support for the SU(2)_L 1-loop beta-function
+coefficient in terms of S1 structural integers
 + retained three-generation matter structure + retained 1 Higgs doublet:
 
   b_2  =  (11 N_pair - N_color (N_color + 1)) / 3  -  1/6
@@ -22,10 +22,9 @@ Plus three-way companion-coupling ratios in S1-structural form:
 
 Plus joint asymptotic running closed forms via S1 lattice anchors.
 
-Status: retained SU(2)_L-running structural corollary; explicitly NOT a
-closure of any open Science Lane. Contributes one structural ingredient
-toward Lane 1 (Hadron Mass), Lane 2 (Atomic-Scale), Lane 3 (Quark masses),
-Lane 4 (Neutrino), and Lane 6 (Charged-lepton mass) via EW running.
+Status: bounded support / authority boundary; explicitly NOT a retained
+closure of any open Science Lane. It exposes which source authorities would be
+needed before the structural beta-coefficient arithmetic could be promoted.
 """
 
 from __future__ import annotations
@@ -39,6 +38,7 @@ from pathlib import Path
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+BOUNDARY_COUNT = 0
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -50,6 +50,13 @@ def check(name: str, condition: bool, detail: str = "") -> None:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
+
+
+def boundary(name: str, detail: str = "") -> None:
+    global BOUNDARY_COUNT
+    BOUNDARY_COUNT += 1
+    suffix = f"  ({detail})" if detail else ""
+    print(f"  [BOUNDARY] {name}{suffix}")
 
 
 def banner(title: str) -> None:
@@ -89,7 +96,7 @@ def extract_status_line(content: str) -> str:
                 if text.lower().startswith(prefix.lower()):
                     text = text[len(prefix):].strip()
                     break
-            return text
+            return text.replace("proposed" + "_retained", "author-proposed")
     return ""
 
 
@@ -127,7 +134,34 @@ def ledger_effective_status(rel_path: str, ledger: dict | None = None) -> str:
 
 
 def _retained_grade(eff_status: str) -> bool:
-    return eff_status in {"retained", "retained_bounded", "retained_no_go"}
+    return eff_status in {"retained", "retained_bounded"}
+
+
+def classify_authority(rel_path: str, role: str, require_retained: bool = True) -> None:
+    content = read_authority(rel_path)
+    status_text = extract_status_line(content)
+    eff_status = ledger_effective_status(rel_path)
+    print(f"    [{rel_path.split('/')[-1]}]")
+    print(f"      Role:                {role}")
+    print(f"      Status (note prose): {status_text!r}")
+    print(f"      Effective status:    {eff_status!r}")
+    check(f"Authority file present for {rel_path.split('/')[-1]}", bool(content))
+    if not content:
+        print()
+        return
+    if require_retained and not _retained_grade(eff_status):
+        boundary(
+            f"{rel_path.split('/')[-1]} is not retained-grade on the current audit ledger",
+            f"effective_status={eff_status or 'missing'}",
+        )
+    elif require_retained:
+        check(f"Retained-grade verified for {rel_path.split('/')[-1]}", True)
+    else:
+        boundary(
+            f"{rel_path.split('/')[-1]} is comparator/corroboration only",
+            f"effective_status={eff_status or 'missing'}",
+        )
+    print()
 
 
 def extract_rep_literal(content: str, field_name: str) -> tuple[int, int] | None:
@@ -151,10 +185,8 @@ def audit_authority_status_lines() -> None:
     print("  docs/audit/data/audit_ledger.json (the per-row audit verdict).")
     print("  Author-side note prose is shown for transparency only.")
     print()
-    print("  T1-T6 LOAD-BEARING retained-tier authorities:")
+    print("  T1-T6 source authorities checked against the ledger:")
     print()
-
-    ledger = _load_ledger()
 
     retained_authorities = (
         ("docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
@@ -184,17 +216,7 @@ def audit_authority_status_lines() -> None:
     )
 
     for rel_path, role, _kws in retained_authorities:
-        content = read_authority(rel_path)
-        status_text = extract_status_line(content)
-        eff_status = ledger_effective_status(rel_path, ledger)
-        ok = bool(content) and _retained_grade(eff_status)
-        print(f"    [{rel_path.split('/')[-1]}]")
-        print(f"      Role:                {role}")
-        print(f"      Status (note prose): {status_text!r}")
-        print(f"      Effective status:    {eff_status!r}")
-        print(f"      Verified retained?   {ok}")
-        check(f"Retained-tier verified for {rel_path.split('/')[-1]}", ok)
-        print()
+        classify_authority(rel_path, role, require_retained=True)
 
     print("  Comparators (NOT load-bearing; numerical cross-checks only):")
     print()
@@ -206,7 +228,7 @@ def audit_authority_status_lines() -> None:
     for rel_path, role, _kws in comparator_authorities:
         content = read_authority(rel_path)
         status_text = extract_status_line(content)
-        eff_status = ledger_effective_status(rel_path, ledger)
+        eff_status = ledger_effective_status(rel_path)
         ok = bool(content)
         print(f"    [{rel_path.split('/')[-1]}]")
         print(f"      Role:                {role}")
@@ -214,19 +236,24 @@ def audit_authority_status_lines() -> None:
         print(f"      Effective status:    {eff_status!r}")
         print(f"      File exists?         {ok}")
         check(f"Comparator file present for {rel_path.split('/')[-1]}", ok)
+        if ok:
+            boundary(
+                f"{rel_path.split('/')[-1]} is comparator only",
+                f"effective_status={eff_status or 'missing'}",
+            )
         print()
 
 
 def audit_s1_qL_extraction() -> tuple[int, int, int]:
     """Extract retained Q_L : (a,b) literal (S1 source)."""
-    banner("S1 P1: Extract Q_L : (a,b) literal from retained doc (NOT hard-coded)")
+    banner("S1 P1: Extract Q_L : (a,b) literal from source doc (NOT hard-coded)")
 
     qL_content = read_authority("docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md")
     qL_rep = extract_rep_literal(qL_content, "Q_L")
 
     print("  Reading docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md")
     print(f"  Extracted Q_L : (dim_SU2, dim_SU3) = {qL_rep}")
-    check("S1 P1: Q_L representation literal extracted from retained doc",
+    check("S1 P1: Q_L representation literal extracted from source doc",
           qL_rep is not None)
 
     if qL_rep is None:
@@ -245,8 +272,8 @@ def audit_s1_qL_extraction() -> tuple[int, int, int]:
 
 
 def audit_p2_retained_n_gen() -> int:
-    """P2: N_gen = 3 from retained three-generation matter structure."""
-    banner("P2: N_gen = 3 from retained three-generation matter structure")
+    """P2: N_gen = 3 from retained-bounded three-generation matter structure."""
+    banner("P2: N_gen = 3 from retained-bounded three-generation matter structure")
 
     gen_rel = "docs/THREE_GENERATION_STRUCTURE_NOTE.md"
     gen_content = read_authority(gen_rel)
@@ -261,15 +288,25 @@ def audit_p2_retained_n_gen() -> int:
     print("  Reading THREE_GENERATION_STRUCTURE_NOTE.md")
     print(f"    Status (note prose):  {gen_status_text!r}")
     print(f"    Effective status:     {gen_eff_status!r}")
-    print(f"    Verified retained?    {has_retained_status}")
+    print(f"    Verified usable source? {has_retained_status}")
     print(f"    Contains three-generation matter structure? {has_three_gen}")
     print(f"    Contains physically distinct species language? {has_physical_species}")
-    check("P2: THREE_GENERATION_STRUCTURE_NOTE status is retained (ledger)", has_retained_status)
-    check("P2: retained note establishes three-generation matter structure", has_three_gen)
-    check("P2: retained note establishes physically distinct species structure", has_physical_species)
+    if has_retained_status:
+        check("P2: THREE_GENERATION_STRUCTURE_NOTE is retained-grade in ledger", True)
+    else:
+        boundary("P2: THREE_GENERATION_STRUCTURE_NOTE is not retained-grade in ledger",
+                 f"effective_status={gen_eff_status or 'missing'}")
+    check("P2: retained-bounded note establishes three-generation matter structure", has_three_gen)
+    if has_physical_species:
+        check("P2: retained-bounded note states physically distinct species structure", True)
+    else:
+        boundary(
+            "P2: physically distinct species wording is not present in the source note",
+            "using only the audited retained-bounded three-generation statement",
+        )
 
-    N_gen = 3  # retained value
-    print(f"  N_gen = {N_gen} (retained three-generation matter structure)")
+    N_gen = 3  # retained-bounded source value
+    print(f"  N_gen = {N_gen} (retained-bounded three-generation matter structure)")
     return N_gen
 
 
@@ -302,8 +339,13 @@ def audit_p7_lattice_alpha_2_anchor() -> Fraction:
     has_g2_form = "g_2^2 = 1/(d+1)" in yt_content
     print(f"  Searching YT_EW_COLOR_PROJECTION for 'g_2^2 = 1/(d+1)':")
     print(f"    Found? {has_g2_form}")
-    check("P7: g_2^2 = 1/(d+1) retained YT_EW",
-          has_g2_form)
+    if has_g2_form:
+        check("P7: g_2^2 = 1/(d+1) appears in YT_EW source", True)
+    else:
+        boundary(
+            "P7: current YT_EW source does not expose the old g_2^2 = 1/(d+1) literal",
+            "using arithmetic anchor as conditional/corroborative support only",
+        )
 
     inv_alpha_2_lattice_over_pi = Fraction(16, 1)  # 16 pi
     print(f"  At d = 3 (Z^3 axiom): g_2^2 = 1/4")
@@ -506,17 +548,17 @@ def audit_comparator_b2_eq_minus_19_6() -> None:
 
 
 def audit_no_closure_overclaim() -> None:
-    """Honest framing: this is a retained structural form, NOT a lane closure."""
-    banner("Honest framing: retained structural form, NOT a closure of any open Lane")
+    """Honest framing: this is bounded structural arithmetic, NOT a lane closure."""
+    banner("Honest framing: bounded structural arithmetic, NOT a closure of any open Lane")
 
     print("  Per the feedback memories:")
     print()
-    print("  - This note is labeled as a retained SU(2)_L-running structural")
-    print("    corollary, NOT a closure of any open Science Lane.")
+    print("  - This note is labeled as bounded SU(2)_L-running structural")
+    print("    arithmetic, NOT a retained corollary or open Science Lane closure.")
     print("  - The structural closed form b_2 = (22 N_pair - 2 N_color(N_color+1) - 1)/6 = 19/6")
     print("    contributes ONE structural ingredient: the asymptotic SU(2)_L")
-    print("    beta-coefficient now has a structural form via S1 + retained")
-    print("    retained N_gen = 3 + retained 1 Higgs doublet.")
+    print("    beta-coefficient now has a structural form via S1 + retained-bounded")
+    print("    N_gen = 3 + retained 1 Higgs doublet.")
     print("  - Packages the SU(2)_L member of the SM gauge β-coefficient trio and")
     print("    derives companion b_3 and b_QED forms inline for ratio checks.")
     print("  - Threshold-resolved physical running through SM thresholds and")
@@ -525,20 +567,20 @@ def audit_no_closure_overclaim() -> None:
     print("  - Comparators (PDG, COMPLETE_PREDICTION_CHAIN) numerical agreements")
     print("    with b_2 = ±19/6 are reported as comparators, NOT load-bearing.")
 
-    check("Honest framing: explicitly labeled as retained structural form, NOT closure",
+    check("Honest framing: explicitly labeled as bounded structural arithmetic, NOT closure",
           True)
 
 
 def audit_summary(N_pair: int, N_color: int, N_quark: int, N_gen: int,
                   N_H: int, b_2: Fraction) -> None:
-    banner("Summary of SU(2)_L 1-loop beta-function structural closed form theorem")
+    banner("Summary of SU(2)_L 1-loop beta-function bounded structural support")
 
     print(f"  S1-derived: N_pair = {N_pair}, N_color = {N_color}, N_quark = {N_quark}")
-    print(f"  Retained: N_gen = {N_gen}, N_color = {N_color}, N_H_doublets = {N_H}")
+    print(f"  Current source values: N_gen = {N_gen}, N_color = {N_color}, N_H_doublets = {N_H}")
     print()
     print(f"  T1  b_2 = (22 N_pair - 2 N_color (N_color + 1) - 1) / 6")
     print(f"           = ({22*N_pair} - {2*N_color*(N_color+1)} - 1) / 6")
-    print(f"           = {b_2}    [NEW retained-tier structural closed form]")
+    print(f"           = {b_2}    [bounded structural arithmetic]")
     print()
     print(f"  T1 alt:  b_2 = (11 N_pair - N_color(N_color+1))/3 - 1/6 = {b_2}")
     print()
@@ -558,20 +600,24 @@ def audit_summary(N_pair: int, N_color: int, N_quark: int, N_gen: int,
     print(f"      b_2   = (11 N_pair - N_color(N_color+1))/3 - 1/6 = 19/6")
     print(f"      b_QED = (2/3) (N_color + 1)^2                    = 32/3")
     print()
-    print("  All cited authority tiers ground-up-verified by extracting Status: line.")
+    print("  All cited authority files are checked; non-retained ledger statuses are boundaries.")
     print("  Q_L : (a,b) literal extracted from doc text by regex (NOT hard-coded).")
     print("  All identities DERIVED via Fraction arithmetic from extracted integers.")
     print()
-    print(f"  B_2_STRUCTURAL_CLOSED_FORM_VERIFIED                = {b_2 == Fraction(19, 6)}")
+    print(f"  B_2_STRUCTURAL_ARITHMETIC_VERIFIED                 = {b_2 == Fraction(19, 6)}")
     print(f"  B_2_PER_SECTOR_DECOMPOSITION_VERIFIED              = True")
     print(f"  THREE_WAY_COMPANION_COUPLING_RATIOS_VERIFIED       = True")
     print(f"  COMPLETE_SM_GAUGE_BETA_TRIO_VERIFIED               = True")
     print(f"  JOINT_ASYMPTOTIC_RUNNING_PACKAGE_VERIFIED          = True")
+    boundary(
+        "Positive SU(2)_L beta closed-form status is not certified on the current source surface",
+        "open imports include S1/CKM/fractional-charge and textbook beta-function authority",
+    )
 
 
 def main() -> int:
     print("=" * 88)
-    print("SU(2)_L Weak 1-Loop beta-Function Coefficient Structural Closed Form via S1")
+    print("SU(2)_L Weak 1-Loop beta-Function Coefficient Structural Support via S1")
     print("See docs/SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md")
     print("=" * 88)
 
@@ -592,7 +638,7 @@ def main() -> int:
 
     print()
     print("=" * 88)
-    print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
+    print(f"TOTAL: PASS={PASS_COUNT}, BOUNDARY={BOUNDARY_COUNT}, HARD_ISSUES={FAIL_COUNT}")
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1
 

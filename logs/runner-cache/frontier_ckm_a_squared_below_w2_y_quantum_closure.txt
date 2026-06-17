@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_a_squared_below_w2_y_quantum_closure.py
-runner_sha256: 0d764e0b0e3f8a72a335b29b89af71e460c272cf958a02d988b02447517560d5
+runner_sha256: 12a7054fa75935826236360a9e55d8fee372d4abf2a9c05bc444ce16329bb204
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.14
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
 ----- stdout -----
 ========================================================================================
-A^2 closure below W2 via Identification Source Theorem (S1)
+A^2 bounded arithmetic support below W2 via source-literal S1
 See docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md
 ========================================================================================
 
@@ -19,73 +19,73 @@ Ground-up verification of cited authorities (ledger effective_status)
   docs/audit/data/audit_ledger.json (the per-row audit verdict).
   Author-side note prose is shown for transparency only.
 
-  S1 LOAD-BEARING retained-tier authorities:
+  S1 arithmetic source authorities checked against the ledger:
 
     [LEFT_HANDED_CHARGE_MATCHING_NOTE.md]
       Role:                S1 P2: Q_L : (2,3) source
       Status (note prose): ''
-      Effective status:    'unaudited'
-      Verified retained?   False
-  [FAIL] Retained-tier verified for LEFT_HANDED_CHARGE_MATCHING_NOTE.md
+      Effective status:    'decoration_under_graph_first_su3_integration_note'
+  [PASS] Authority file present for LEFT_HANDED_CHARGE_MATCHING_NOTE.md
+  [BOUNDARY] LEFT_HANDED_CHARGE_MATCHING_NOTE.md is not retained-grade on the current audit ledger  (effective_status=decoration_under_graph_first_su3_integration_note)
 
     [ONE_GENERATION_MATTER_CLOSURE_NOTE.md]
       Role:                S1 P3: u_R, d_R : (1,3) cross-check on N_color
       Status (note prose): ''
       Effective status:    'unaudited'
-      Verified retained?   False
-  [FAIL] Retained-tier verified for ONE_GENERATION_MATTER_CLOSURE_NOTE.md
+  [PASS] Authority file present for ONE_GENERATION_MATTER_CLOSURE_NOTE.md
+  [BOUNDARY] ONE_GENERATION_MATTER_CLOSURE_NOTE.md is not retained-grade on the current audit ledger  (effective_status=unaudited)
 
     [MINIMAL_AXIOMS_2026-04-11.md]
       Role:                S1 P1: gauge-structure context
       Status (note prose): '**SUPERSEDED** by `MINIMAL_AXIOMS_2026-05-03.md` — see that note for the current axiom set.'
       Effective status:    'meta'
-      Verified retained?   False
-  [FAIL] Retained-tier verified for MINIMAL_AXIOMS_2026-04-11.md
+  [PASS] Authority file present for MINIMAL_AXIOMS_2026-04-11.md
+  [BOUNDARY] MINIMAL_AXIOMS_2026-04-11.md is not retained-grade on the current audit ledger  (effective_status=meta)
 
-  Consistency / S5 retained-tier authorities (not load-bearing for S1+S2):
+  Consistency / S5 authorities (not load-bearing for S1+S2):
 
     [WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md]
       Role:                S3: W2 retained A^2 consistency check
       Status (note prose): ''
       Effective status:    'unaudited'
-      Verified retained?   False
-  [FAIL] Retained-tier verified for WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md
+  [PASS] Authority file present for WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md
+  [BOUNDARY] WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md used only as non-load-bearing corroboration  (effective_status=unaudited)
 
     [YT_EW_COLOR_PROJECTION_THEOREM.md]
       Role:                S5: g_2^2, g_Y^2 EW lattice couplings
-      Status (note prose): ''
-      Effective status:    'retained_bounded'
-      Verified retained?   True
-  [PASS] Retained-tier verified for YT_EW_COLOR_PROJECTION_THEOREM.md
+      Status (note prose): 'exact algebraic support for the `K_EW(kappa_EW)` family plus a'
+      Effective status:    'retained_no_go'
+  [PASS] Authority file present for YT_EW_COLOR_PROJECTION_THEOREM.md
+  [BOUNDARY] YT_EW_COLOR_PROJECTION_THEOREM.md used only as non-load-bearing corroboration  (effective_status=retained_no_go)
 
     [CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md]
       Role:                structural-counts package (consistency reference)
       Status (note prose): ''
       Effective status:    'unaudited'
-      Verified retained?   False
-  [FAIL] Retained-tier verified for CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+  [PASS] Authority file present for CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+  [BOUNDARY] CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md used only as non-load-bearing corroboration  (effective_status=unaudited)
 
 
 ----------------------------------------------------------------------------------------
 S1 P1: MINIMAL_AXIOMS gauge-structure context (verified by text)
 ----------------------------------------------------------------------------------------
-  Searching MINIMAL_AXIOMS_2026-04-11.md for retained current consequences:
+  Searching MINIMAL_AXIOMS_2026-04-11.md for source text consequences:
     'exact native SU(2)':                  FOUND
     'structural SU(3)':                    FOUND
     'one-generation matter closure':       FOUND
     'Z^3' substrate:                       FOUND
-  [PASS] S1 P1: MINIMAL_AXIOMS retains 'exact native SU(2)'
-  [PASS] S1 P1: MINIMAL_AXIOMS retains 'graph-first structural SU(3)'
-  [PASS] S1 P1: MINIMAL_AXIOMS retains one-generation matter closure
-  [PASS] S1 P1: MINIMAL_AXIOMS retains Z^3 substrate
+  [PASS] S1 P1: MINIMAL_AXIOMS text contains 'exact native SU(2)'
+  [PASS] S1 P1: MINIMAL_AXIOMS text contains 'graph-first structural SU(3)'
+  [PASS] S1 P1: MINIMAL_AXIOMS text contains one-generation matter closure
+  [PASS] S1 P1: MINIMAL_AXIOMS text contains Z^3 substrate
 
 ----------------------------------------------------------------------------------------
 S1 P2: Extract retained Q_L representation literal (NOT hard-coded)
 ----------------------------------------------------------------------------------------
   Reading docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md
-  Searching for retained literal: Q_L : (a,b)_{Y}
+  Searching for source literal: Q_L : (a,b)_{Y}
   Extracted (dim_SU2, dim_SU3) for Q_L: (2, 3)
-  [PASS] S1 P2: Q_L representation literal extracted from retained doc
+  [PASS] S1 P2: Q_L representation literal extracted from source doc
   [PASS] S1 P2: extracted dim_SU2(Q_L) parses as positive integer (got 2)
   [PASS] S1 P2: extracted dim_SU3(Q_L) parses as positive integer (got 3)
 
@@ -93,11 +93,11 @@ S1 P2: Extract retained Q_L representation literal (NOT hard-coded)
 S1 P3: Extract retained u_R, d_R representation literals (NOT hard-coded)
 ----------------------------------------------------------------------------------------
   Reading docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md
-  Searching for retained literals: u_R : (a,b)_{Y}, d_R : (a,b)_{Y}
+  Searching for source literals: u_R : (a,b)_{Y}, d_R : (a,b)_{Y}
   Extracted (dim_SU2, dim_SU3) for u_R: (1, 3)
   Extracted (dim_SU2, dim_SU3) for d_R: (1, 3)
-  [PASS] S1 P3: u_R representation literal extracted from retained doc
-  [PASS] S1 P3: d_R representation literal extracted from retained doc
+  [PASS] S1 P3: u_R representation literal extracted from source doc
+  [PASS] S1 P3: d_R representation literal extracted from source doc
 
 ----------------------------------------------------------------------------------------
 S1 conclusion: DERIVE N_pair, N_color from retained Q_L : (a,b) literal
@@ -162,44 +162,44 @@ S4: Demoted corroborations (NOT load-bearing -- labeled CORROBORATION ONLY)
   [PASS] S4(ii) CORROBORATION ONLY: g_2^2 = 1/N_pair^2 (not load-bearing)
 
 ----------------------------------------------------------------------------------------
-S5: NEW retained EW-CKM bridge identity (independent corroboration)
+S5: bounded EW-CKM arithmetic check (not positive bridge closure)
 ----------------------------------------------------------------------------------------
   Reading docs/YT_EW_COLOR_PROJECTION_THEOREM.md for retained bare couplings:
-    'g_2^2' AND '1/(d+1)':  FOUND
-    'g_Y^2' AND '1/(d+2)':  FOUND
-  [PASS] S5: YT_EW retains bare g_2^2 = 1/(d+1)
-  [PASS] S5: YT_EW retains bare g_Y^2 = 1/(d+2)
+    'g_2^2' AND '1/(d+1)':  NOT FOUND
+    'g_Y^2' AND '1/(d+2)':  NOT FOUND
+  [PASS] S5 source file present for YT_EW corroboration
+  [BOUNDARY] Current YT_EW source does not expose both old bare-coupling literals as positive bridge inputs  (has_g2=False, has_gY=False)
 
-  Retained YT_EW: g_2^2 = 1/4, g_Y^2 = 1/5
+  Supplied EW arithmetic: g_2^2 = 1/4, g_Y^2 = 1/5
   sin^2(theta_W)|_lattice = g_Y^2/(g_Y^2 + g_2^2) = 4/9
   Derived A^4 = (S1+S2 squared) = (2/3)^2 = 4/9
   Bridge: sin^2(theta_W)|_lattice == A^4? True
   [PASS] S5: sin^2(theta_W)|_lattice = (d+1)/(2d+3) = 4/9
   [PASS] S5: A^4 from S1+S2 squared = 4/9
-  [PASS] S5: NEW retained EW-CKM bridge sin^2(theta_W)|_lattice = A^4 = 4/9
+  [PASS] S5: conditional EW-CKM arithmetic gives sin^2(theta_W)|_lattice = A^4 = 4/9
 
 ----------------------------------------------------------------------------------------
-Verify: closure does NOT promote any support-tier theorem
+Verify: arithmetic support does NOT promote any support-tier theorem
 ----------------------------------------------------------------------------------------
-  Load-bearing closure chain S1+S2 uses ONLY:
-    - LEFT_HANDED_CHARGE_MATCHING_NOTE (retained corollary)
-    - ONE_GENERATION_MATTER_CLOSURE_NOTE (retained, cross-check on N_color)
-    - MINIMAL_AXIOMS_2026-04-11 (retained framework)
+  The arithmetic chain S1+S2 uses ONLY:
+    - LEFT_HANDED_CHARGE_MATCHING_NOTE (currently decoration under the ledger)
+    - ONE_GENERATION_MATTER_CLOSURE_NOTE (currently unaudited)
+    - MINIMAL_AXIOMS_2026-04-11 (meta / superseded axiom note)
 
   Demoted to CORROBORATION ONLY (NOT load-bearing):
     - S4(i) gauge-dimension equality
     - S4(ii) YT_EW numerical g_2^2 = 1/N_pair^2
 
-  No support-tier theorem is promoted to retained.
+  No support-tier, decoration, meta, or unaudited theorem is promoted to retained.
   CL3_TASTE_GENERATION_THEOREM remains support-tier auxiliary only.
-  [PASS] No support-tier promotion in S1+S2 closure derivation chain
+  [PASS] No support-tier promotion in S1+S2 arithmetic chain
 
 ----------------------------------------------------------------------------------------
-Summary of S1+S2 CLOSURE
+Summary of S1+S2 bounded arithmetic support
 ----------------------------------------------------------------------------------------
-  CLOSURE: A^2 below W2 via Identification Source Theorem (S1).
+  BOUNDED SUPPORT: A^2 below W2 via Identification Source arithmetic (S1).
 
-  S1 (load-bearing): retained Q_L : (a,b) literal extracted from
+  S1: Q_L : (a,b) literal extracted from
        LEFT_HANDED_CHARGE_MATCHING_NOTE.md fixes BOTH:
          N_pair  = dim_SU2(Q_L) = 2
          N_color = dim_SU3(Q_L) = 3
@@ -207,23 +207,25 @@ Summary of S1+S2 CLOSURE
   S2 (DERIVED): A^2 = N_pair / N_color = 2/3
 
   S3 (consistency check, not load-bearing):
-       W2 retained A^2 = N_pair/N_color = 2/3 -- reproduced by S1+S2.
+       W2 source text carries A^2 = N_pair/N_color = 2/3 -- reproduced by S1+S2.
 
   S4 (CORROBORATION ONLY, not load-bearing):
        (i)  gauge-dimension dim_fund(SU(N)) = N readings
        (ii) YT_EW numerical g_2^2 = 1/N_pair^2 reading
 
-  S5 (independent retained EW-CKM bridge corroboration):
-       sin^2(theta_W)|_lattice = A^4 = 4/9 from YT_EW + S2 squared.
+  S5 (conditional EW-CKM arithmetic corroboration):
+       if the old YT_EW bare-coupling formulas are supplied,
+       sin^2(theta_W)|_lattice = A^4 = 4/9.
 
-  All cited authority tiers ground-up-verified by extracting Status: line.
+  All cited authority files are checked; non-retained ledger statuses are boundaries.
   All representation literals extracted from doc text by regex (NOT hard-coded).
   A^2 DERIVED via Fraction(N_pair, N_color) from extracted integers.
 
-  A2_BELOW_W2_DERIVATION_CLOSED = True
+  A2_BELOW_W2_ARITHMETIC_SUPPORT = True
+  [BOUNDARY] Positive A^2 closure is not certified on the current source surface  (open imports include decoration/meta/unaudited authority rows)
 
 ========================================================================================
-TOTAL: PASS=27, FAIL=5
+TOTAL: PASS=31, BOUNDARY=8, HARD_ISSUES=0
 ========================================================================================
 
 ----- stderr -----

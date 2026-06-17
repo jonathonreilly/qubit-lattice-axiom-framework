@@ -1,0 +1,30 @@
+loop_slug: ckm-structural-authority-boundary-20260617
+branch: physics-loop/ckm-structural-authority-boundary-20260617
+base: origin/main@a6ce2087acb0856df570548e336f72af8516fdbe
+target_status: bounded-support
+actual_current_surface_status: bounded-support / authority-boundary
+cycle_count: 1
+active_route: authority-boundary demotion plus exact arithmetic preservation
+hard_residual: positive closure is blocked by non-retained-positive source authorities and textbook beta-function import
+files_touched:
+  - docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md
+  - docs/SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md
+  - docs/CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md
+  - scripts/frontier_ckm_a_squared_below_w2_y_quantum_closure.py
+  - scripts/frontier_su2_weak_beta_coefficient_structural_closed_form.py
+  - scripts/frontier_ckm_koide_cross_sector_z3_closure.py
+  - logs/runner-cache/frontier_ckm_a_squared_below_w2_y_quantum_closure.txt
+  - logs/runner-cache/frontier_su2_weak_beta_coefficient_structural_closed_form.txt
+  - logs/runner-cache/frontier_ckm_koide_cross_sector_z3_closure.txt
+open_imports:
+  - left-handed quark source is not retained-positive authority for A2 closure
+  - one-generation matter source is not retained-positive authority for A2 closure
+  - CKM magnitudes structural counts source is not retained-positive authority for cross-sector closure
+  - W2 and YT_EW comparators remain corroborative only
+  - standard one-loop beta-function theorem remains textbook/literature input
+trace_gate_classification: direct_blocker_closure
+review_loop_disposition: skipped_by_user_policy
+review_loop_note: reviewer will run review and extract science; branch self-checks only
+pr_status: pending
+next_exact_action: create commit, push branch, open ready PR for reviewer
+stop_condition: PR opened for coherent bounded-support repair block

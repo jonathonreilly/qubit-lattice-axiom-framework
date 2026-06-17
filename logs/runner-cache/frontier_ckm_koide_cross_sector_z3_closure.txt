@@ -1,47 +1,49 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_koide_cross_sector_z3_closure.py
-runner_sha256: 9afcffb342f1e3b87736917b6941685516fe6d5346d404752dadf6c92c967e4c
+runner_sha256: 0c75f5bd34862e346cbc2f1ea1e9ed05d312b694fd06b6e0f9ec64cf8d66ffc4
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.05
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
 ----- stdout -----
 ========================================================================================
-Cross-sector closure N_gen = N_color = 3 via retained-tier authorities
+Cross-sector N_gen = N_color = 3 bounded source support
 See docs/CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-R1: Read N_gen from THREE_GENERATION_STRUCTURE_NOTE (retained authority)
+R1: Read N_gen from THREE_GENERATION_STRUCTURE_NOTE
 ----------------------------------------------------------------------------------------
   [PASS] THREE_GENERATION_STRUCTURE_NOTE.md exists on retained surface
-  Extracted Status: ''
-  Tier classification (parsed): unknown
-  [FAIL] THREE_GENERATION_STRUCTURE_NOTE has Status text containing 'retained' (no 'support')
+  Extracted Status: 'conditional-support - narrowed spectral plus no-quotient bounded'
+  Tier classification (parsed): support
+  Effective status: 'retained_bounded'
+  [PASS] THREE_GENERATION_STRUCTURE_NOTE is retained-grade in ledger
   [PASS] Authority establishes 'three-generation' matter structure
-  N_gen (read from retained authority): 3
-  [PASS] R1: N_gen = 3 read from retained authority
+  N_gen (read from retained-bounded source): 3
+  [PASS] R1: N_gen = 3 read from retained-bounded source
 
 ----------------------------------------------------------------------------------------
-R2: Read N_color from CKM_MAGNITUDES_STRUCTURAL_COUNTS (retained authority)
+R2: Read N_color from CKM_MAGNITUDES_STRUCTURAL_COUNTS
 ----------------------------------------------------------------------------------------
   [PASS] CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM exists on main
-  Extracted Status: 'proposed_retained structural-identity subtheorem of the proposed_promoted CKM'
-  [PASS] CKM_MAGNITUDES_STRUCTURAL_COUNTS Status text contains 'retained' (no 'support')
+  Extracted Status: ''
+  Effective status: 'unaudited'
+  [BOUNDARY] CKM_MAGNITUDES_STRUCTURAL_COUNTS is not retained-grade in ledger  (effective_status=unaudited)
   Pattern 'n_color = N' search: n_color = 3
-  N_color (read from retained authority): 3
-  [PASS] R2: N_color = 3 read from retained authority
+  N_color (read from source text): 3
+  [PASS] R2: N_color = 3 read from source text
 
 ----------------------------------------------------------------------------------------
-R3: Cross-sector closure N_gen = N_color = 3 by direct retained equality
+R3: Cross-sector equality N_gen = N_color = 3 by direct arithmetic
 ----------------------------------------------------------------------------------------
-  N_gen   (R1, retained from THREE_GENERATION_STRUCTURE) = 3
-  N_color (R2, retained from CKM_MAGNITUDES)             = 3
-  Both retained values are 3, so N_gen = N_color = 3.
-  [PASS] R3: N_gen = 3 (read from retained authority)
-  [PASS] R3: N_color = 3 (read from retained authority)
-  [PASS] R3: N_gen = N_color (direct retained equality)
-  [PASS] R3: N_gen = N_color = 3 (closure)
+  N_gen   (R1, from THREE_GENERATION_STRUCTURE) = 3
+  N_color (R2, from CKM_MAGNITUDES)             = 3
+  Both extracted values are 3, so N_gen = N_color = 3 as arithmetic.
+  [PASS] R3: N_gen = 3 (read from retained-bounded source)
+  [PASS] R3: N_color = 3 (read from source text)
+  [PASS] R3: N_gen = N_color (direct arithmetic equality)
+  [PASS] R3: N_gen = N_color = 3 (bounded support)
 
 ----------------------------------------------------------------------------------------
 Framework primitive: Z^3 spatial substrate (retained axiom)
@@ -50,54 +52,54 @@ Framework primitive: Z^3 spatial substrate (retained axiom)
   [PASS] MINIMAL_AXIOMS retains Z^3 spatial substrate (axiom 2)
 
 ----------------------------------------------------------------------------------------
-Auxiliary support-tier reading (NOT load-bearing for closure)
+Auxiliary support-tier reading (NOT load-bearing for bounded equality)
 ----------------------------------------------------------------------------------------
-  CL3_COLOR_AUTOMORPHISM_THEOREM Status: 'reviewed exact algebraic support theorem on current `main`; numerically verified'
-  CL3_COLOR_AUTOMORPHISM_THEOREM tier:   support
+  CL3_COLOR_AUTOMORPHISM_THEOREM Status: "algebraic SU(3) embedding + Fierz channel-count theorem on the 3D symmetric base subspace of the taste cube. **The identification of this 3D base with physical SM color is a separate retained-bridge requirement, not part of this theorem's load-bearing scope.**"
+  CL3_COLOR_AUTOMORPHISM_THEOREM tier:   retained
 
-  CL3_TASTE_GENERATION_THEOREM Status:   'reviewed exact algebraic support theorem on current `main`; numerically verified'
-  CL3_TASTE_GENERATION_THEOREM tier:     support
+  CL3_TASTE_GENERATION_THEOREM Status:   'representation-theory theorem on the admitted abstract'
+  CL3_TASTE_GENERATION_THEOREM tier:     **Status:** representation-theory theorem on the admitted abstract
 
-  These are SUPPORT-tier on main and are NOT load-bearing for the closure R3.
-  The closure stands on the retained-tier R1 (THREE_GENERATION) + R2 (CKM_MAGNITUDES) only.
+  These are SUPPORT-tier on main and are NOT load-bearing for the equality R3.
+  The equality is bounded by the actual ledger status of R1 and R2.
   The CL3 support-tier theorems are auxiliary structural reading: shared Z^3 provenance motif.
-  [PASS] CL3_COLOR_AUTOMORPHISM is support-tier (not retained closure authority)
-  [PASS] CL3_TASTE_GENERATION is support-tier (not retained closure authority)
+  [BOUNDARY] CL3_COLOR_AUTOMORPHISM note-side status is not a clean support-tier string  (retained)
+  [BOUNDARY] CL3_TASTE_GENERATION note-side status is not a clean support-tier string  (**Status:** representation-theory theorem on the admitted abstract)
   [PASS] CL3 support theorems exist on main (auxiliary reading available)
 
 ----------------------------------------------------------------------------------------
-This closure does NOT promote any support-tier branches to retained
+This bounded equality does NOT promote any support-tier branches
 ----------------------------------------------------------------------------------------
-  The closure R3 is established by direct retained equality of two retained values.
+  The equality R3 is established by direct arithmetic on extracted values.
   It does NOT promote:
     - CL3_COLOR_AUTOMORPHISM_THEOREM (remains support-tier)
     - CL3_TASTE_GENERATION_THEOREM (remains support-tier)
     - Eight prior Koide-bridge SUPPORT-tier branches (they remain support)
     - Cross-sector A²-Koide_VCB bridge SUPPORT_NOTE (remains support)
 
-  The closure is STRUCTURALLY MINIMAL: it equates two independently-retained values.
-  [PASS] No promotion claim: closure is direct retained equality only
+  This remains bounded support until all load-bearing sources are retained-grade.
+  [PASS] No promotion claim: equality is bounded source support only
 
 ----------------------------------------------------------------------------------------
-Summary of CLOSURE
+Summary of bounded source support
 ----------------------------------------------------------------------------------------
-  CLOSURE THEOREM (positive, retained-tier authorities only):
+  BOUNDED SUPPORT (current source authorities):
 
-    R1: N_gen = 3                                    [retained THREE_GENERATION_STRUCTURE]
-    R2: N_color = 3                                  [retained CKM_MAGNITUDES_STRUCTURAL_COUNTS]
-    R3: N_gen = N_color = 3                          [direct retained equality]
+    R1: N_gen = 3                                    [THREE_GENERATION_STRUCTURE]
+    R2: N_color = 3                                  [CKM_MAGNITUDES_STRUCTURAL_COUNTS]
+    R3: N_gen = N_color = 3                          [direct arithmetic equality]
 
-  This is structurally minimal: closure by trivial arithmetic on two retained values.
+  This is structurally minimal arithmetic, not positive closure on current main.
 
   Auxiliary support-tier reading (NOT load-bearing): shared Z^3 provenance motif via
   CL3_COLOR_AUTOMORPHISM and CL3_TASTE_GENERATION (both support-tier on main).
 
-  This note does NOT promote any support-tier branch to retained closure.
+  This note does NOT promote any support-tier or unaudited branch to positive closure.
   Specifically: Koide-bridge SUPPORT branches remain support-tier.
 
 ========================================================================================
-TOTAL: PASS=16, FAIL=1
-PASSED: 16/17
+TOTAL: PASS=14, BOUNDARY=3, HARD_ISSUES=0
+PASSED: 14/14
 ========================================================================================
 
 ----- stderr -----

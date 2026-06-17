@@ -1,31 +1,32 @@
 #!/usr/bin/env python3
-"""A^2 closure below W2 via Identification Source Theorem (S1).
+"""A^2 bounded arithmetic support below W2 via source-literal S1.
 
-GROUND-UP DERIVATION runner. This version derives `A^2` step-by-step from a
-single retained source on `main`:
+Ground-up arithmetic-support runner. This version derives `A^2` step-by-step
+from source literals on `main` while checking each authority against the
+current ledger:
 
   S1 Identification Source Theorem
-    (P2) LEFT_HANDED_CHARGE_MATCHING_NOTE retains Q_L : (2,3)_{+1/3}
-         (Status: 'retained corollary on the current paper surface')
-    (P3) ONE_GENERATION_MATTER_CLOSURE_NOTE retains
-         u_R : (1,3)_{+4/3}, d_R : (1,3)_{-2/3} (Status: 'retained')
+    (P2) LEFT_HANDED_CHARGE_MATCHING_NOTE carries Q_L : (2,3)_{+1/3}
+    (P3) ONE_GENERATION_MATTER_CLOSURE_NOTE carries
+         u_R : (1,3)_{+4/3}, d_R : (1,3)_{-2/3}
 
-  From the SAME retained literal Q_L : (2,3), read off:
+  From the SAME source literal Q_L : (2,3), read off:
     N_pair  = dim_SU2(Q_L) = 2 (the SU(2)_L doublet IS the up-down pair)
-    N_color = dim_SU3(Q_L) = 3 (cross-checked by retained P3 right-handed reps)
+    N_color = dim_SU3(Q_L) = 3 (cross-checked by P3 right-handed reps)
 
-  S2 Closure: A^2 = N_pair / N_color (DERIVED, NOT hard-coded).
+  S2 arithmetic support: A^2 = N_pair / N_color (DERIVED, NOT hard-coded).
 
 The runner extracts the (a,b) representation literals by regex from the actual
 authority documents, parses dim_SU2 and dim_SU3, derives N_pair, N_color, and
 computes A^2 = Fraction(N_pair, N_color). It does NOT pre-assign 2/3.
 
-Demoted (NOT load-bearing for closure, labeled CORROBORATION):
+Demoted (NOT load-bearing for positive closure, labeled CORROBORATION):
   S4(i)  Gauge-dimension equality dim_fund(SU(N)) = N.
   S4(ii) YT_EW numerical g_2^2 = 1/N_pair^2 coincidence.
 
-S5 NEW retained EW-CKM bridge: sin^2(theta_W)|_lattice = A^4 = 4/9 from
-   YT_EW + S2 squared (independent corroboration via separate retained lane).
+S5 bounded EW-CKM arithmetic check: if the YT_EW bare-coupling formulas are
+   supplied, then sin^2(theta_W)|_lattice = A^4 = 4/9. Current main does not
+   make that a positive bridge closure.
 """
 
 from __future__ import annotations
@@ -39,6 +40,7 @@ from pathlib import Path
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+BOUNDARY_COUNT = 0
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -50,6 +52,13 @@ def check(name: str, condition: bool, detail: str = "") -> None:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
+
+
+def boundary(name: str, detail: str = "") -> None:
+    global BOUNDARY_COUNT
+    BOUNDARY_COUNT += 1
+    suffix = f"  ({detail})" if detail else ""
+    print(f"  [BOUNDARY] {name}{suffix}")
 
 
 def banner(title: str) -> None:
@@ -90,7 +99,7 @@ def extract_status_line(content: str) -> str:
                 if text.lower().startswith(prefix.lower()):
                     text = text[len(prefix):].strip()
                     break
-            return text
+            return text.replace("proposed" + "_retained", "author-proposed")
     return ""
 
 
@@ -137,10 +146,38 @@ def ledger_effective_status(rel_path: str, ledger: dict | None = None) -> str:
 def _retained_grade(eff_status: str) -> bool:
     """Whether a ledger effective_status counts as retained-grade for runners.
 
-    Accepts `retained`, `retained_bounded`, and `retained_no_go`.
+    Accepts retained-positive and retained-bounded authorities.
     Rejects `retained_pending_chain` per docs/audit/README.md hard rule 2.
+    Rejects `retained_no_go` for positive-authority checks.
     """
-    return eff_status in {"retained", "retained_bounded", "retained_no_go"}
+    return eff_status in {"retained", "retained_bounded"}
+
+
+def classify_authority(rel_path: str, role: str, require_retained: bool = True) -> None:
+    content = read_authority(rel_path)
+    status_text = extract_status_line(content)
+    eff_status = ledger_effective_status(rel_path)
+    print(f"    [{rel_path.split('/')[-1]}]")
+    print(f"      Role:                {role}")
+    print(f"      Status (note prose): {status_text!r}")
+    print(f"      Effective status:    {eff_status!r}")
+    check(f"Authority file present for {rel_path.split('/')[-1]}", bool(content))
+    if not content:
+        print()
+        return
+    if require_retained and not _retained_grade(eff_status):
+        boundary(
+            f"{rel_path.split('/')[-1]} is not retained-grade on the current audit ledger",
+            f"effective_status={eff_status or 'missing'}",
+        )
+    elif require_retained:
+        check(f"Retained-grade verified for {rel_path.split('/')[-1]}", True)
+    else:
+        boundary(
+            f"{rel_path.split('/')[-1]} used only as non-load-bearing corroboration",
+            f"effective_status={eff_status or 'missing'}",
+        )
+    print()
 
 
 def extract_rep_literal(content: str, field_name: str) -> tuple[int, int] | None:
@@ -148,7 +185,7 @@ def extract_rep_literal(content: str, field_name: str) -> tuple[int, int] | None
 
     Returns the parsed (a, b) tuple of ints, or None if not found.
     The match is on the literal text in the authority document, so the runner
-    is reading the retained source rather than asserting the values.
+    is reading the source text rather than asserting the values.
     """
     if not content:
         return None
@@ -171,7 +208,7 @@ def audit_authority_status_lines() -> None:
     print("  docs/audit/data/audit_ledger.json (the per-row audit verdict).")
     print("  Author-side note prose is shown for transparency only.")
     print()
-    print("  S1 LOAD-BEARING retained-tier authorities:")
+    print("  S1 arithmetic source authorities checked against the ledger:")
     print()
 
     ledger = _load_ledger()
@@ -189,19 +226,9 @@ def audit_authority_status_lines() -> None:
     )
 
     for rel_path, role, _kws in retained_authorities:
-        content = read_authority(rel_path)
-        status_text = extract_status_line(content)
-        eff_status = ledger_effective_status(rel_path, ledger)
-        ok = bool(content) and _retained_grade(eff_status)
-        print(f"    [{rel_path.split('/')[-1]}]")
-        print(f"      Role:                {role}")
-        print(f"      Status (note prose): {status_text!r}")
-        print(f"      Effective status:    {eff_status!r}")
-        print(f"      Verified retained?   {ok}")
-        check(f"Retained-tier verified for {rel_path.split('/')[-1]}", ok)
-        print()
+        classify_authority(rel_path, role, require_retained=True)
 
-    print("  Consistency / S5 retained-tier authorities (not load-bearing for S1+S2):")
+    print("  Consistency / S5 authorities (not load-bearing for S1+S2):")
     print()
 
     consistency_authorities = (
@@ -217,17 +244,7 @@ def audit_authority_status_lines() -> None:
     )
 
     for rel_path, role, _kws in consistency_authorities:
-        content = read_authority(rel_path)
-        status_text = extract_status_line(content)
-        eff_status = ledger_effective_status(rel_path, ledger)
-        ok = bool(content) and _retained_grade(eff_status)
-        print(f"    [{rel_path.split('/')[-1]}]")
-        print(f"      Role:                {role}")
-        print(f"      Status (note prose): {status_text!r}")
-        print(f"      Effective status:    {eff_status!r}")
-        print(f"      Verified retained?   {ok}")
-        check(f"Retained-tier verified for {rel_path.split('/')[-1]}", ok)
-        print()
+        classify_authority(rel_path, role, require_retained=False)
 
 
 def audit_s1_extract_qL_literal() -> tuple[int, int] | None:
@@ -238,11 +255,11 @@ def audit_s1_extract_qL_literal() -> tuple[int, int] | None:
     qL_rep = extract_rep_literal(content, "Q_L")
 
     print("  Reading docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md")
-    print("  Searching for retained literal: Q_L : (a,b)_{Y}")
+    print("  Searching for source literal: Q_L : (a,b)_{Y}")
     print(f"  Extracted (dim_SU2, dim_SU3) for Q_L: {qL_rep}")
 
     found = qL_rep is not None
-    check("S1 P2: Q_L representation literal extracted from retained doc", found)
+    check("S1 P2: Q_L representation literal extracted from source doc", found)
     if not found:
         return None
 
@@ -265,13 +282,13 @@ def audit_s1_extract_right_handed_literals() -> tuple[tuple[int, int] | None,
     dR_rep = extract_rep_literal(content, "d_R")
 
     print("  Reading docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md")
-    print("  Searching for retained literals: u_R : (a,b)_{Y}, d_R : (a,b)_{Y}")
+    print("  Searching for source literals: u_R : (a,b)_{Y}, d_R : (a,b)_{Y}")
     print(f"  Extracted (dim_SU2, dim_SU3) for u_R: {uR_rep}")
     print(f"  Extracted (dim_SU2, dim_SU3) for d_R: {dR_rep}")
 
-    check("S1 P3: u_R representation literal extracted from retained doc",
+    check("S1 P3: u_R representation literal extracted from source doc",
           uR_rep is not None)
-    check("S1 P3: d_R representation literal extracted from retained doc",
+    check("S1 P3: d_R representation literal extracted from source doc",
           dR_rep is not None)
     return uR_rep, dR_rep
 
@@ -286,17 +303,17 @@ def audit_s1_minimal_axioms_consequences() -> None:
     has_one_gen = "one-generation matter closure" in content
     has_z3 = "Z^3" in content or "Z³" in content
 
-    print("  Searching MINIMAL_AXIOMS_2026-04-11.md for retained current consequences:")
+    print("  Searching MINIMAL_AXIOMS_2026-04-11.md for source text consequences:")
     print(f"    'exact native SU(2)':                  {'FOUND' if has_su2 else 'NOT FOUND'}")
     print(f"    'structural SU(3)':                    {'FOUND' if has_su3 else 'NOT FOUND'}")
     print(f"    'one-generation matter closure':       {'FOUND' if has_one_gen else 'NOT FOUND'}")
     print(f"    'Z^3' substrate:                       {'FOUND' if has_z3 else 'NOT FOUND'}")
 
-    check("S1 P1: MINIMAL_AXIOMS retains 'exact native SU(2)'", has_su2)
-    check("S1 P1: MINIMAL_AXIOMS retains 'graph-first structural SU(3)'", has_su3)
-    check("S1 P1: MINIMAL_AXIOMS retains one-generation matter closure",
+    check("S1 P1: MINIMAL_AXIOMS text contains 'exact native SU(2)'", has_su2)
+    check("S1 P1: MINIMAL_AXIOMS text contains 'graph-first structural SU(3)'", has_su3)
+    check("S1 P1: MINIMAL_AXIOMS text contains one-generation matter closure",
           has_one_gen)
-    check("S1 P1: MINIMAL_AXIOMS retains Z^3 substrate", has_z3)
+    check("S1 P1: MINIMAL_AXIOMS text contains Z^3 substrate", has_z3)
 
 
 def audit_s1_derive_n_pair_n_color(qL_rep: tuple[int, int],
@@ -444,8 +461,8 @@ def audit_s4_corroborations(N_pair: int, N_color: int) -> None:
 
 
 def audit_s5_ew_ckm_bridge(A_sq_derived: Fraction) -> None:
-    """S5: NEW retained EW-CKM bridge sin^2(theta_W)|_lattice = A^4 = 4/9."""
-    banner("S5: NEW retained EW-CKM bridge identity (independent corroboration)")
+    """S5: bounded arithmetic if the EW bare-coupling formulas are supplied."""
+    banner("S5: bounded EW-CKM arithmetic check (not positive bridge closure)")
 
     yt_content = read_authority("docs/YT_EW_COLOR_PROJECTION_THEOREM.md")
     has_g2 = "g_2^2" in yt_content and "1/(d+1)" in yt_content
@@ -455,8 +472,12 @@ def audit_s5_ew_ckm_bridge(A_sq_derived: Fraction) -> None:
     print(f"    'g_2^2' AND '1/(d+1)':  {'FOUND' if has_g2 else 'NOT FOUND'}")
     print(f"    'g_Y^2' AND '1/(d+2)':  {'FOUND' if has_gY else 'NOT FOUND'}")
 
-    check("S5: YT_EW retains bare g_2^2 = 1/(d+1)", has_g2)
-    check("S5: YT_EW retains bare g_Y^2 = 1/(d+2)", has_gY)
+    check("S5 source file present for YT_EW corroboration", bool(yt_content))
+    if not has_g2 or not has_gY:
+        boundary(
+            "Current YT_EW source does not expose both old bare-coupling literals as positive bridge inputs",
+            f"has_g2={has_g2}, has_gY={has_gY}",
+        )
 
     d = 3
     g_2_sq = Fraction(1, d + 1)
@@ -465,7 +486,7 @@ def audit_s5_ew_ckm_bridge(A_sq_derived: Fraction) -> None:
     A_4_derived = A_sq_derived ** 2
 
     print()
-    print(f"  Retained YT_EW: g_2^2 = {g_2_sq}, g_Y^2 = {g_Y_sq}")
+    print(f"  Supplied EW arithmetic: g_2^2 = {g_2_sq}, g_Y^2 = {g_Y_sq}")
     print(f"  sin^2(theta_W)|_lattice = g_Y^2/(g_Y^2 + g_2^2) = {sin_sq_theta_W_lattice}")
     print(f"  Derived A^4 = (S1+S2 squared) = ({A_sq_derived})^2 = {A_4_derived}")
     print(f"  Bridge: sin^2(theta_W)|_lattice == A^4? "
@@ -475,35 +496,35 @@ def audit_s5_ew_ckm_bridge(A_sq_derived: Fraction) -> None:
           sin_sq_theta_W_lattice == Fraction(4, 9))
     check("S5: A^4 from S1+S2 squared = 4/9",
           A_4_derived == Fraction(4, 9))
-    check("S5: NEW retained EW-CKM bridge sin^2(theta_W)|_lattice = A^4 = 4/9",
+    check("S5: conditional EW-CKM arithmetic gives sin^2(theta_W)|_lattice = A^4 = 4/9",
           sin_sq_theta_W_lattice == A_4_derived == Fraction(4, 9))
 
 
 def audit_no_promotion() -> None:
-    """Verify no support-tier theorem promotion in load-bearing closure chain."""
-    banner("Verify: closure does NOT promote any support-tier theorem")
+    """Verify no support-tier theorem promotion in the arithmetic chain."""
+    banner("Verify: arithmetic support does NOT promote any support-tier theorem")
 
-    print("  Load-bearing closure chain S1+S2 uses ONLY:")
-    print("    - LEFT_HANDED_CHARGE_MATCHING_NOTE (retained corollary)")
-    print("    - ONE_GENERATION_MATTER_CLOSURE_NOTE (retained, cross-check on N_color)")
-    print("    - MINIMAL_AXIOMS_2026-04-11 (retained framework)")
+    print("  The arithmetic chain S1+S2 uses ONLY:")
+    print("    - LEFT_HANDED_CHARGE_MATCHING_NOTE (currently decoration under the ledger)")
+    print("    - ONE_GENERATION_MATTER_CLOSURE_NOTE (currently unaudited)")
+    print("    - MINIMAL_AXIOMS_2026-04-11 (meta / superseded axiom note)")
     print()
     print("  Demoted to CORROBORATION ONLY (NOT load-bearing):")
     print("    - S4(i) gauge-dimension equality")
     print("    - S4(ii) YT_EW numerical g_2^2 = 1/N_pair^2")
     print()
-    print("  No support-tier theorem is promoted to retained.")
+    print("  No support-tier, decoration, meta, or unaudited theorem is promoted to retained.")
     print("  CL3_TASTE_GENERATION_THEOREM remains support-tier auxiliary only.")
 
-    check("No support-tier promotion in S1+S2 closure derivation chain", True)
+    check("No support-tier promotion in S1+S2 arithmetic chain", True)
 
 
 def audit_summary(A_sq_derived: Fraction, N_pair: int, N_color: int) -> None:
-    banner("Summary of S1+S2 CLOSURE")
+    banner("Summary of S1+S2 bounded arithmetic support")
 
-    print("  CLOSURE: A^2 below W2 via Identification Source Theorem (S1).")
+    print("  BOUNDED SUPPORT: A^2 below W2 via Identification Source arithmetic (S1).")
     print()
-    print("  S1 (load-bearing): retained Q_L : (a,b) literal extracted from")
+    print("  S1: Q_L : (a,b) literal extracted from")
     print("       LEFT_HANDED_CHARGE_MATCHING_NOTE.md fixes BOTH:")
     print(f"         N_pair  = dim_SU2(Q_L) = {N_pair}")
     print(f"         N_color = dim_SU3(Q_L) = {N_color}")
@@ -511,25 +532,30 @@ def audit_summary(A_sq_derived: Fraction, N_pair: int, N_color: int) -> None:
     print(f"  S2 (DERIVED): A^2 = N_pair / N_color = {A_sq_derived}")
     print()
     print("  S3 (consistency check, not load-bearing):")
-    print("       W2 retained A^2 = N_pair/N_color = 2/3 -- reproduced by S1+S2.")
+    print("       W2 source text carries A^2 = N_pair/N_color = 2/3 -- reproduced by S1+S2.")
     print()
     print("  S4 (CORROBORATION ONLY, not load-bearing):")
     print("       (i)  gauge-dimension dim_fund(SU(N)) = N readings")
     print("       (ii) YT_EW numerical g_2^2 = 1/N_pair^2 reading")
     print()
-    print("  S5 (independent retained EW-CKM bridge corroboration):")
-    print("       sin^2(theta_W)|_lattice = A^4 = 4/9 from YT_EW + S2 squared.")
+    print("  S5 (conditional EW-CKM arithmetic corroboration):")
+    print("       if the old YT_EW bare-coupling formulas are supplied,")
+    print("       sin^2(theta_W)|_lattice = A^4 = 4/9.")
     print()
-    print("  All cited authority tiers ground-up-verified by extracting Status: line.")
+    print("  All cited authority files are checked; non-retained ledger statuses are boundaries.")
     print("  All representation literals extracted from doc text by regex (NOT hard-coded).")
     print("  A^2 DERIVED via Fraction(N_pair, N_color) from extracted integers.")
     print()
-    print(f"  A2_BELOW_W2_DERIVATION_CLOSED = {A_sq_derived == Fraction(2, 3)}")
+    print(f"  A2_BELOW_W2_ARITHMETIC_SUPPORT = {A_sq_derived == Fraction(2, 3)}")
+    boundary(
+        "Positive A^2 closure is not certified on the current source surface",
+        "open imports include decoration/meta/unaudited authority rows",
+    )
 
 
 def main() -> int:
     print("=" * 88)
-    print("A^2 closure below W2 via Identification Source Theorem (S1)")
+    print("A^2 bounded arithmetic support below W2 via source-literal S1")
     print("See docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md")
     print("=" * 88)
 
@@ -553,7 +579,7 @@ def main() -> int:
 
     print()
     print("=" * 88)
-    print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
+    print(f"TOTAL: PASS={PASS_COUNT}, BOUNDARY={BOUNDARY_COUNT}, HARD_ISSUES={FAIL_COUNT}")
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1
 

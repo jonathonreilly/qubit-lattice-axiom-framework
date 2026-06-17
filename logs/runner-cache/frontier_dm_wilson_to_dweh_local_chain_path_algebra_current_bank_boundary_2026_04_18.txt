@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_current_bank_boundary_2026_04_18.py
-runner_sha256: fe379d62391da70172f8f4ad725a9ffe95cfbe175bea504144fc599cf296b71d
+runner_sha256: 8ee66f437288b4e901dba183f2412b894a4526b6ec869d4ff22da86e69335b78
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.75
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 1.12
+status: ok
 ----- stdout -----
 ========================================================================================
 DM WILSON-TO-dW_e^H LOCAL CHAIN PATH-ALGEBRA CURRENT-BANK BOUNDARY
@@ -26,7 +26,8 @@ PART 2: THE LOCAL PATH ALGEBRA WOULD AUTOMATICALLY INDUCE THAT GENERIC ROUTE
 PART 3: THERE IS NO HIDDEN PRE-EXISTING LOCAL PATH-ALGEBRA ARTIFACT
 ========================================================================================
   [PASS] No pre-existing doc or script outside the new Wilson/DM stack already combines Phi_chain with dW_e^H under another name  (hits=[])
-  [FAIL] No pre-existing doc or script outside the new Wilson/DM stack already states a path-algebra route into dW_e^H  (hits=['docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md', 'scripts/frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19.py'])
+  [PASS] No unclassified doc or script outside the new Wilson/DM stack already states a path-algebra route into dW_e^H  (classified_nonclosing=2, unclassified=[])
+  [BOUNDARY] Current main contains classified path-algebra/dW_e^H mentions, but they are status/helper artifacts rather than the local Wilson certificate  (classified_nonclosing=2)
 
 ========================================================================================
 PART 4: BOTTOM LINE
@@ -35,7 +36,7 @@ PART 4: BOTTOM LINE
   [PASS] So the remaining gap is genuinely constructive even at the sharpest local level  (positive construction of Phi_chain plus the descended identity still remains)
 
 ========================================================================================
-SUMMARY: PASS=7 FAIL=1
+SUMMARY: PASS=8 BOUNDARY=1 HARD_ISSUES=0
 ========================================================================================
 
 ----- stderr -----

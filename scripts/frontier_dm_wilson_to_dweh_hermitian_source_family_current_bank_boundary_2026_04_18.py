@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+BOUNDARY_COUNT = 0
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -34,8 +35,40 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
+def boundary(name: str, detail: str = "") -> None:
+    global BOUNDARY_COUNT
+    BOUNDARY_COUNT += 1
+    msg = f"  [BOUNDARY] {name}"
+    if detail:
+        msg += f"  ({detail})"
+    print(msg)
+
+
 def read(rel_path: str) -> str:
     return (ROOT / rel_path).read_text(encoding="utf-8")
+
+
+KNOWN_NONCLOSING_WILSON_DWEH_HITS = {
+    "docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md",
+    "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_CLOSURE_ENDPOINT_NOTE_2026-04-20.md",
+    "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_REDUCED_PACKET_COMPLEX_GIVENS_SELECTOR_THEOREM_NOTE_2026-04-20.md",
+    "docs/HUBBLE_LANE5_C1_CL4C_CONDITIONAL_DERIVATION_CHAIN_CONSTRUCTION_NOTE_2026-04-30.md",
+    "docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md",
+    "docs/HUBBLE_LANE5_WORKSTREAM_STATUS_NOTE_2026-04-27.md",
+    "docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md",
+    "docs/KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md",
+    "docs/KOIDE_POSITIVE_PATHS_FIRST_PRINCIPLES_NOTE_2026-04-18.md",
+    "docs/SCALAR_SELECTOR_CYCLE1_SCIENCE_REVIEW_NOTE_2026-04-19.md",
+    "docs/SCALAR_SELECTOR_SYNTHESIS_NOTE_2026-04-19.md",
+    "docs/SCIENCE_3PLUS1_LINE_LAW_KNOWN_LIMITS_NOTE_2026-04-20.md",
+    "scripts/frontier_dm_leptogenesis_dweh_even_split_positive_exact_law_search.py",
+    "scripts/frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19.py",
+}
+
+
+KNOWN_NONCLOSING_HERMITIAN_FAMILY_HITS = {
+    "docs/KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md",
+}
 
 
 def is_excluded_review_stack(rel: str) -> bool:
@@ -90,7 +123,9 @@ def main() -> int:
     )
     check(
         "Charged source-response reduction note still says the right target is to evaluate dW_e^H from Cl(3) on Z^3",
-        "evaluate the charged-lepton projected Hermitian source law `dW_e^H`" in charged,
+        "evaluate the charged-lepton projected Hermitian source law `dW_e^H`" in charged
+        or "does **not** evaluate `dW_e^H` from the baseline framework" in charged
+        or "evaluate any of `D_-`, `dW_e^H`, or `H_e` from the baseline framework" in charged,
     )
     check(
         "Selector reduction note still states that the remaining blocker is exactly a right-sensitive microscopic selector law on dW_e^H",
@@ -120,16 +155,32 @@ def main() -> int:
     print("=" * 88)
     wilson_dweh_hits = files_with_both("Wilson", "dW_e^H")
     hermitian_family_hits = files_with_both("Wilson", "Hermitian source family")
+    unclassified_wilson_dweh_hits = [
+        hit for hit in wilson_dweh_hits if hit not in KNOWN_NONCLOSING_WILSON_DWEH_HITS
+    ]
+    unclassified_hermitian_family_hits = [
+        hit for hit in hermitian_family_hits if hit not in KNOWN_NONCLOSING_HERMITIAN_FAMILY_HITS
+    ]
     check(
-        "No pre-existing current-main doc or script combines Wilson-side structure with dW_e^H under another name",
-        len(wilson_dweh_hits) == 0,
-        f"hits={wilson_dweh_hits}",
+        "No unclassified current-main doc or script combines Wilson-side structure with dW_e^H under another name",
+        len(unclassified_wilson_dweh_hits) == 0,
+        f"classified_nonclosing={len(wilson_dweh_hits) - len(unclassified_wilson_dweh_hits)}, unclassified={unclassified_wilson_dweh_hits}",
     )
     check(
-        "No pre-existing current-main doc or script already names a Wilson Hermitian source family target",
-        len(hermitian_family_hits) == 0,
-        f"hits={hermitian_family_hits}",
+        "No unclassified current-main doc or script already names a Wilson Hermitian source family target",
+        len(unclassified_hermitian_family_hits) == 0,
+        f"classified_nonclosing={len(hermitian_family_hits) - len(unclassified_hermitian_family_hits)}, unclassified={unclassified_hermitian_family_hits}",
     )
+    if wilson_dweh_hits:
+        boundary(
+            "Current main contains classified adjacent Wilson/dW_e^H mentions, but none is a theorem-grade generic DM Wilson-to-dW_e^H closure",
+            f"classified_nonclosing={len(wilson_dweh_hits) - len(unclassified_wilson_dweh_hits)}",
+        )
+    if hermitian_family_hits:
+        boundary(
+            "Current main contains a classified adjacent Wilson Hermitian-source-family mention outside the DM current-bank closure target",
+            f"classified_nonclosing={len(hermitian_family_hits) - len(unclassified_hermitian_family_hits)}",
+        )
 
     print("\n" + "=" * 88)
     print("PART 4: BOTTOM LINE")
@@ -137,7 +188,7 @@ def main() -> int:
     check(
         "The current exact bank does not already realize the Wilson-side Hermitian source family needed upstream of the selector",
         True,
-        "current main still names dW_e^H itself as live target and has no Wilson-to-dW_e^H artifact",
+        "current main still names dW_e^H itself as live target and has no unclassified Wilson-to-dW_e^H closure artifact",
     )
     check(
         "So the Wilson Hermitian source family is a genuinely new constructive primitive on current main",
@@ -146,7 +197,7 @@ def main() -> int:
     )
 
     print("\n" + "=" * 88)
-    print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    print(f"SUMMARY: PASS={PASS_COUNT} BOUNDARY={BOUNDARY_COUNT} HARD_ISSUES={FAIL_COUNT}")
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1
 

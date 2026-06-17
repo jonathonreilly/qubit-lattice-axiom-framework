@@ -1,11 +1,22 @@
 # DM Wilson-to-`dW_e^H` Local Chain Path-Algebra Current-Bank Boundary
 
 **Date:** 2026-04-18
-**Status:** proposed_no_go — exact current-stack nonrealization theorem
-for the sharpest local Wilson object on the DM route (the current stack
-does not already realize the local generator layer / minimal path-algebra
-certificate / current-bank reading under another name)
+**Status:** bounded-support current-stack boundary for the sharpest local
+Wilson object on the DM route; this row does not promote a retained no-go and
+introduces no new axiom
 **Script:** `scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_current_bank_boundary_2026_04_18.py`
+
+## 2026-06-17 source-side repair
+
+Later review work added path-algebra/`dW_e^H` mentions in a DM transport status
+note and a Perron-Frobenius helper script. The runner now classifies those
+specific mentions as non-closing status/helper artifacts and keeps a hard
+failure only for an unclassified pre-existing local Wilson certificate.
+
+This row should therefore be read as a bounded current-bank boundary: it blocks
+the "already hidden under another name" loophole for the local certificate, but
+it is not a positive construction of `Phi_chain` and it is not a retained
+nonrealization theorem.
 
 ## Question
 
@@ -75,7 +86,7 @@ From
 So if the current stack already realized the sharpest local certificate, it
 would already realize the generic Wilson Hermitian source-family route too.
 
-## Theorem 1: the current stack does **not** already realize the minimal local certificate
+## Boundary result: the current stack does **not** already realize the minimal local certificate
 
 Assume the generic current-bank boundary theorem, the local chain path-algebra
 target theorem, and the local minimal-certificate theorem. Then:
@@ -101,8 +112,10 @@ But the generic current-bank boundary theorem already excludes any hidden
 theorem-grade Wilson-to-`dW_e^H` artifact or Wilson Hermitian source family on
 the current stack.
 
-So the current stack cannot already realize the local path-algebra
-certificate.
+So, relative to the currently classified source bank, the current stack cannot
+already realize the local path-algebra certificate without also producing one
+of the unclassified hidden Wilson-to-`dW_e^H` artifacts the runner is designed
+to catch.
 
 ## Corollary 1: local-bank rescans can stop at the sharpest level
 
@@ -145,5 +158,6 @@ It is positive construction of:
 The Wilson route is now audited at the same sharpness level at which it is
 posed.
 
-The stack no longer just has the sharpest local target. It also has the
-matching exact theorem that the current bank still does **not** realize it.
+The stack no longer just has the sharpest local target. It also has a bounded
+current-bank boundary check saying the known status/helper mentions do **not**
+already realize it.

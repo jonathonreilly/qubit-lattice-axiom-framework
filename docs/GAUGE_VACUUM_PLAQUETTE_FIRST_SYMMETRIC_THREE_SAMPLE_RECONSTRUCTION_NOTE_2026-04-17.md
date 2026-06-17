@@ -5,7 +5,8 @@
 the first nontrivial conjugation-symmetric retained coefficient triple is
 recoverable from three explicit regular rational-angle marked holonomies
 **Type:** positive_theorem
-**Runner:** none; restored as a dependency note for current gauge-vacuum runner closure.
+**Primary runner:** [`scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py`](../scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.txt`](../logs/runner-cache/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.txt)
 
 ## Question
 
@@ -162,9 +163,18 @@ It now says:
 
 ## Command
 
-No standalone runner is present on current `main` for this restored dependency
-note.
+The primary runner for the restored dependency note is the current
+three-sample environment-evaluator route runner:
 
-Expected summary:
+```bash
+python3 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py
+```
 
-- `THEOREM PASS=6 SUPPORT=3 FAIL=0`
+The runner verifies the exact first-symmetric restriction of the universal
+three-sample operator, rank-3 invertibility of the named sample matrix, direct
+character-evaluation agreement, and the boundary that the three beta-side
+environment values remain open.
+
+Expected current cached summary:
+
+- `TOTAL: PASS=14, FAIL=0`

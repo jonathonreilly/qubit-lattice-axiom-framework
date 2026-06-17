@@ -1,6 +1,10 @@
 # PR Backlog
 
-No expected backlog. This branch should be pushed and opened as one ready PR:
+No PR backlog remains. Ready PR:
+
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4258
+
+Recovery command if the PR must be recreated:
 
 ```bash
 git push -u origin codex/p2-native-sign-cell-runner-20260617

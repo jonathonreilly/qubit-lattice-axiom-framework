@@ -4,6 +4,8 @@
 
 `p2_wick_rotation_sign_epsilon_closure_narrow_theorem_note_2026-05-27`
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4258
+
 ## What changed
 
 - The P2 runner now checks current C-Sc transfer language instead of stale

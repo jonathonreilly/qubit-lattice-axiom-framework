@@ -123,38 +123,29 @@ def test_non_scalar_atlas_primitives_are_gravity_side() -> None:
     found = [row for row in required_rows if row in atlas]
     missing = [row for row in required_rows if row not in atlas]
 
-    # The atlas may now contain bookkeeping/boundary rows and an explicit
-    # beyond-retained-stack source-principle row for the Majorana lane, but it
-    # still should not contain a realized fermionic charge-2 primitive.
+    # The atlas may now contain classification, boundary/no-go, and admitted
+    # extension-support rows for the Majorana lane, but it still should not
+    # contain a realized fermionic charge-2 primitive.
     row_titles = [title.strip() for title in re.findall(r"^\|\s*([^|]+?)\s*\|", atlas, flags=re.MULTILINE)]
     majorana_titles = [title for title in row_titles if "Majorana" in title]
     pfaffian_titles = [title for title in row_titles if "Pfaffian" in title]
     allowed_majorana_titles = {
-        "Majorana charge-two reduction",
-        "Majorana unique source slot",
-        "Majorana `Z_3` non-activation",
-        "Majorana observable-principle obstruction",
-        "Majorana local Pfaffian uniqueness",
-        "Majorana current-stack exhaustion",
+        "Majorana operator classification",
+        "Majorana finite normal-grammar no-go",
         "Majorana Nambu source principle",
-        "Majorana Nambu radial observable",
-        "Majorana Nambu quadratic comparator",
-        "Majorana source ray",
-        "Majorana background-normalized response",
-        "Majorana axis-exchange fixed point",
-        "Majorana self-dual staircase-lift obstruction",
-        "Majorana algebraic/spectral bridge obstruction",
-        "Majorana scalar-datum transplant obstruction",
-        "Majorana source-response matching obstruction",
-        "Majorana tensor-variational transplant obstruction",
-        "Majorana partition/projective transplant obstruction",
-        "Majorana continuum-bridge transplant obstruction",
+        "Majorana source-ray theorem",
+        "Three-generation Majorana `Z_3` non-activation",
         "Majorana staircase blindness",
         "Majorana no-stationary-scale theorem",
-        "Majorana scale-selector necessity",
+        "Majorana algebraic-bridge obstruction",
+        "Majorana endpoint-exchange midpoint theorem",
+        "Majorana residual-sharing split theorem",
+        "Majorana adjacent singlet-placement + background-normalization theorem pair",
+        "Majorana lower-level pairing no-go",
+        "Three-generation Majorana current-stack zero matrix",
     }
     allowed_pfaffian_titles = {
-        "Majorana local Pfaffian uniqueness",
+        "Pfaffian no-forcing theorem",
     }
     unexpected_majorana_titles = [
         title for title in majorana_titles if title not in allowed_majorana_titles
@@ -162,32 +153,26 @@ def test_non_scalar_atlas_primitives_are_gravity_side() -> None:
     unexpected_pfaffian_titles = [
         title for title in pfaffian_titles if title not in allowed_pfaffian_titles
     ]
-    has_reduction_row = "Majorana charge-two reduction" in majorana_titles
-    has_source_slot_row = "Majorana unique source slot" in majorana_titles
-    has_z3_row = "Majorana `Z_3` non-activation" in majorana_titles
-    has_obs_blocker_row = "Majorana observable-principle obstruction" in majorana_titles
-    has_pfaffian_uniqueness_row = "Majorana local Pfaffian uniqueness" in majorana_titles
-    has_stack_exhaustion_row = "Majorana current-stack exhaustion" in majorana_titles
+    has_operator_classification_row = "Majorana operator classification" in majorana_titles
+    has_finite_normal_nogo_row = "Majorana finite normal-grammar no-go" in majorana_titles
     has_nambu_source_row = "Majorana Nambu source principle" in majorana_titles
-    has_nambu_radial_row = "Majorana Nambu radial observable" in majorana_titles
-    has_nambu_q2_row = "Majorana Nambu quadratic comparator" in majorana_titles
-    has_source_ray_row = "Majorana source ray" in majorana_titles
-    has_bg_norm_row = "Majorana background-normalized response" in majorana_titles
-    has_axis_exchange_row = "Majorana axis-exchange fixed point" in majorana_titles
-    has_self_dual_lift_row = "Majorana self-dual staircase-lift obstruction" in majorana_titles
-    has_alg_bridge_row = "Majorana algebraic/spectral bridge obstruction" in majorana_titles
-    has_scalar_datum_row = "Majorana scalar-datum transplant obstruction" in majorana_titles
-    has_sr_match_row = "Majorana source-response matching obstruction" in majorana_titles
-    has_tensor_var_row = "Majorana tensor-variational transplant obstruction" in majorana_titles
-    has_partition_proj_row = "Majorana partition/projective transplant obstruction" in majorana_titles
-    has_continuum_row = "Majorana continuum-bridge transplant obstruction" in majorana_titles
+    has_source_ray_row = "Majorana source-ray theorem" in majorana_titles
+    has_z3_row = "Three-generation Majorana `Z_3` non-activation" in majorana_titles
     has_staircase_blindness_row = "Majorana staircase blindness" in majorana_titles
     has_no_stationary_scale_row = "Majorana no-stationary-scale theorem" in majorana_titles
-    has_selector_necessity_row = "Majorana scale-selector necessity" in majorana_titles
+    has_alg_bridge_row = "Majorana algebraic-bridge obstruction" in majorana_titles
+    has_endpoint_midpoint_row = "Majorana endpoint-exchange midpoint theorem" in majorana_titles
+    has_residual_sharing_row = "Majorana residual-sharing split theorem" in majorana_titles
+    has_adjacent_background_row = (
+        "Majorana adjacent singlet-placement + background-normalization theorem pair"
+        in majorana_titles
+    )
+    has_lower_level_pairing_nogo_row = "Majorana lower-level pairing no-go" in majorana_titles
+    has_current_stack_zero_row = "Three-generation Majorana current-stack zero matrix" in majorana_titles
 
     check("Atlas contains the current non-scalar tensor/gravity primitive rows", len(found) == len(required_rows),
           f"missing rows={len(missing)}")
-    check("Current atlas Majorana rows are reduction/boundary rows plus the explicit source-principle, local-observable, local-comparator/background-normalization, local fixed-point, self-dual lift boundary, algebraic-bridge boundary, scalar-datum boundary, source-response-matching boundary, tensor-variational transplant boundary, partition/projective transplant boundary, continuum-bridge transplant boundary, and scale-boundary rows", has_reduction_row and has_source_slot_row and has_z3_row and has_obs_blocker_row and has_pfaffian_uniqueness_row and has_stack_exhaustion_row and has_nambu_source_row and has_nambu_radial_row and has_nambu_q2_row and has_source_ray_row and has_bg_norm_row and has_axis_exchange_row and has_self_dual_lift_row and has_alg_bridge_row and has_scalar_datum_row and has_sr_match_row and has_tensor_var_row and has_partition_proj_row and has_continuum_row and has_staircase_blindness_row and has_no_stationary_scale_row and has_selector_necessity_row and len(majorana_titles) >= 22,
+    check("Current atlas Majorana rows are classification, current-stack no-go, admitted-source support, bridge-support, and boundary rows only", has_operator_classification_row and has_finite_normal_nogo_row and has_nambu_source_row and has_source_ray_row and has_z3_row and has_staircase_blindness_row and has_no_stationary_scale_row and has_alg_bridge_row and has_endpoint_midpoint_row and has_residual_sharing_row and has_adjacent_background_row and has_lower_level_pairing_nogo_row and has_current_stack_zero_row and len(majorana_titles) >= 13,
           f"majorana rows={majorana_titles}")
     check("Current atlas Pfaffian rows are boundary/uniqueness rows only", len(unexpected_pfaffian_titles) == 0,
           f"pfaffian rows={pfaffian_titles}")
@@ -195,18 +180,13 @@ def test_non_scalar_atlas_primitives_are_gravity_side() -> None:
           f"unexpected titles={unexpected_majorana_titles}")
 
     print()
-    print("  The atlas now contains Majorana reduction/boundary rows, one")
-    print("  explicit source-principle extension row, positive local")
-    print("  comparator/background-normalization rows, a local self-dual")
-    print("  fixed-point row, a self-dual staircase-lift obstruction row,")
-    print("  an algebraic/spectral bridge obstruction row, a scalar-datum")
-    print("  transplant obstruction row, a source-response matching")
-    print("  obstruction row, a tensor-variational transplant")
-    print("  obstruction row, a partition/projective transplant")
-    print("  obstruction row, a continuum-bridge transplant")
-    print("  obstruction row, and source-selection / scale-boundary")
-    print("  refinements, plus the")
-    print("  existing tensor/gravity objects. None of")
+    print("  The atlas now contains Majorana operator classification,")
+    print("  finite-normal-grammar no-go, Nambu-source support,")
+    print("  source-ray support, three-generation non-activation,")
+    print("  staircase/scale boundaries, algebraic-bridge obstruction,")
+    print("  positive endpoint/residual-sharing/placement support,")
+    print("  lower-level pairing no-go, and a current-stack zero law, plus")
+    print("  the existing tensor/gravity objects. None of")
     print("  them is yet a fully realized fermionic charge-2 primitive with an")
     print("  absolute staircase embedding.")
 

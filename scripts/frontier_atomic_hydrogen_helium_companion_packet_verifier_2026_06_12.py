@@ -106,6 +106,8 @@ def main() -> int:
             "def make_jastrow",
             "def local_energy",
             "g_EM/4",
+            "supplied contact-slope family",
+            "not a retained finite-box Kato theorem",
             "repaired one-electron-density convention",
         ],
         DEPENDENCY_RUNNER: [
@@ -145,6 +147,8 @@ def main() -> int:
             "Jastrow",
             "Full CI",
             "jastrow_inherits_repaired_hartree_normalization",
+            "cusp_guided_trial_ansatz_boundary",
+            "TOTAL: PASS=7, FAIL=0",
         ],
         DEPENDENCY_RUNNER: [
             "PASS=28",
@@ -186,6 +190,21 @@ def main() -> int:
           "Status authority: independent audit lane only" in note_flat)
     check("note says no status lift",
           "no status lift" in note and "confirms source/cache visibility only" in note)
+    check("note records Jastrow boundary repair",
+          "Jastrow contact-slope boundary repair (2026-06-17)" in note
+          and "supplied one-parameter trial family" in note_flat
+          and "not a retained finite-box Kato theorem" in note_flat)
+    jastrow_source = read(JASTROW_RUNNER)
+    forbidden_jastrow_claims = [
+        "STEP 5-EXTENDED: JASTROW CORRELATION  [DERIVED from Z³ kernel]",
+        "CUSP CONDITION (derived from the same Z³ Green's function kernel)",
+        "Cusp condition (derived):",
+        "[DERIVED, same kernel as V_ee]",
+        "derived from Z³ Green's function",
+        "cusp corr. from Z³ kernel",
+    ]
+    check("Jastrow source has no retained-cusp derivation phrasing",
+          not any(claim in jastrow_source for claim in forbidden_jastrow_claims))
 
     print("=" * 72)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

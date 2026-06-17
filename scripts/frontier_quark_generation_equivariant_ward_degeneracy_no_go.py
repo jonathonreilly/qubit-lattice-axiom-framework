@@ -161,6 +161,16 @@ def main() -> int:
         "new note has no direct markdown dependency edge to the unaudited realization gate",
         "(STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)" not in new_text,
     )
+    stale_gate_phrases = (
+        "this note depends on the **staggered-Dirac realization derivation target**",
+        "Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`",
+        "Per `MINIMAL_AXIOMS_2026-05-03.md`",
+        "open physical gate",
+    )
+    check(
+        "new note does not state the realization gate as load-bearing",
+        all(phrase not in new_text for phrase in stale_gate_phrases),
+    )
 
     print()
     print("B. S3 permutation representation on the generation triplet")

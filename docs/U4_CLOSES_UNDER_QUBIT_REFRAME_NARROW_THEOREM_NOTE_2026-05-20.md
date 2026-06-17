@@ -1,8 +1,8 @@
 # U4 Closure Under the 2026-05-20 Qubit Reframe (Narrow)
 
 **Date:** 2026-05-20
-**Type:** positive_theorem candidate (narrow theorem)
-**Claim type:** positive_theorem
+**Type:** axiom-unpacking support note (not a new theorem-grade derivation)
+**Claim type:** bounded_theorem
 **Status:** source-side proposal — independent audit lane owns the verdict
 **Purpose:** Make explicit that the **U4 bridge** ("the framework's
 per-site Hilbert space on the Z^3 substrate IS the Cl(3) faithful
@@ -17,6 +17,21 @@ alias/decorative handle, the candidate parent is
 [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md).
 This is source-side routing context only; it does not assert an
 `audit_status` or `effective_status`.
+
+## Source boundary (2026-06-12)
+
+**Boundary:** axiom-unpacking / renaming support only. The load-bearing move
+is the identification of the older U4 bridge with the one-qubit-per-site
+baseline already supplied by the accepted axiom wording.
+
+This note may be cited only as a compatibility/alias map: under the qubit
+baseline, the older U4 open bridge is no longer a separate input. It may not
+be cited as an independent first-principles derivation of the qubit baseline,
+of `M_2(ℂ) ≅ Cl(3,0)`, of the unique faithful module, or of any downstream
+staggered-Dirac substep beyond this alias map.
+
+Promotion beyond renaming support requires a separate theorem whose proof
+does not simply restate the accepted qubit-per-site baseline.
 
 Under the new axioms, U4 is no longer an open admission. The
 single-faithful-Cl(3)-module-per-site selection is what the
@@ -49,7 +64,7 @@ site `x ∈ Z^3` carries the per-site operator algebra `M_2(ℂ)`, the
 2×2 complex matrix algebra, equivalent under the real-algebra
 isomorphism `M_2(ℂ) ≅ Cl(3,0)`."):
 
-**Theorem (narrow).** For every lattice site `x ∈ Z^3`, the per-site
+**Axiom-unpacking statement (narrow).** For every lattice site `x ∈ Z^3`, the per-site
 Hilbert space `H_x` is `ℂ²`, the unique faithful complex irreducible
 module of the per-site operator algebra `M_2(ℂ) ≅ Cl(3,0)`. The
 multiplicity `k(x)` of the per-site Cl(3) module is exactly `1` (a

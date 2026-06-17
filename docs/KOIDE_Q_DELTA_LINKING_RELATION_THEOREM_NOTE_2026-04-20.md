@@ -6,6 +6,23 @@
 **Claim type:** bounded_theorem
 **Primary runner:** `scripts/frontier_koide_q_delta_formal_ratio_repair.py`
 
+## Source boundary (2026-06-12)
+
+**Boundary:** renaming / definition-level formal identity support only.
+Effective status is audit-derived; this source records only the claim
+boundary.
+
+The exact arithmetic below is useful, but its load-bearing content is the
+substitution of the two definitions `Q_d = 2/d` and `Delta_d = 2/d^2`.
+This note may be cited only for the formal identity `Delta_d = Q_d/d` and
+the rational `d = 3` values. It may not be cited as a Koide selector, a
+Berry/radian bridge, a charged-lepton offset theorem, a PDG comparator, or a
+framework derivation of either defined quantity.
+
+Promotion beyond renaming support requires deriving either `Q_d` or
+`Delta_d` from retained framework inputs, or attaching the formal identity to
+a retained parent claim that supplies independent scientific content.
+
 ## Actual claim
 
 For any integer `d >= 1`, define the two formal dimensionless quantities:

@@ -45,6 +45,22 @@ paper package, whose framework statement remains `Cl(3)` on `Z^3` with
 the audited package boundary recorded in
 `docs/MINIMAL_AXIOMS_2026-04-11.md`.
 
+## Source boundary (2026-06-12)
+
+**Boundary:** renaming / definitional-compression support only. Effective
+status is audit-derived; this source records only the claim boundary.
+
+The four numerical checks are valid after the local dimension, local
+Hermitian Hamiltonian, Born readout, and graph-extraction rule are stipulated.
+This note may be cited only for those operational consequences under the
+stated inputs. It may not be cited as a derivation of the Hamiltonian,
+Hermiticity/locality restriction, Born rule, graph support extraction, or the
+current accepted-input ledger.
+
+Promotion beyond renaming support requires deriving those inputs from a
+strictly smaller retained framework surface, and repairing the Test 4
+source/runner drift before any stronger use.
+
 ## Audit boundary (2026-05-10 refresh of 2026-05-05 verdict; prior 2026-05-11 re-audit confirmed `audited_renaming` and updated `claim_type` to `bounded_theorem`)
 
 The 2026-05-05 audit recorded the verdict `audited_renaming` (load-

@@ -204,17 +204,21 @@ def part6_source_family_uniqueness() -> None:
 def part7_firewalls() -> None:
     print("\nPart 7: firewalls")
     note = read(NOTE)
+    normalized_note = " ".join(note.split())
     required = [
         "does not accept the source-coupled action convention",
         "does not derive canonical `O_H`",
         "does not fix scalar LSZ normalization",
         "does not select `kappa_Y = 0`",
         "does not derive `y_t`",
+        "Boundary:** renaming / compatibility support only",
+        "may not be cited as a retained derivation",
+        "Promotion beyond renaming support requires a retained bridge theorem",
         "claim_type_author_hint: bounded_theorem",
         "direct_effective_status_change_allowed_from_this_note: false",
     ]
     for phrase in required:
-        check(f"required boundary phrase present: {phrase}", phrase in note)
+        check(f"required boundary phrase present: {phrase}", phrase in normalized_note)
 
     forbidden = [
         "Status:** retained",

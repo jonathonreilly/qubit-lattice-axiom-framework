@@ -1,0 +1,21 @@
+loop_slug: shapiro-qa-retest-boundary
+branch: codex/shapiro-qa-retest-boundary-20260617
+base: origin/main@53b951c6f
+objective: source-side audit unlock for shapiro_qa_retest_note
+mode: source_repair_pr
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: shapiro_qa_retest_note
+target_blocker_text: "QA note cited archived failed bridge rows and retained confirmation language without a primary cache verifier for the combined phase/static checks"
+audit_actions_performed: none
+review_loop_disposition: reviewer_owned_not_run
+files_touched:
+  - docs/SHAPIRO_QA_RETEST_NOTE.md
+  - scripts/shapiro_qa_retest_boundary.py
+  - logs/runner-cache/shapiro_qa_retest_boundary.txt
+remaining_blockers:
+  - Base phase-lag cache/source freshness is owned by the base Shapiro-delay repair.
+  - This remains QA consistency only, not physical Shapiro closure.
+next_exact_action: reviewer should inspect whether the bounded QA verifier is ready for re-audit after related Shapiro source repairs.
+stop_condition: coherent source PR opened for this block

@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_resource_from_poisson.py
-runner_sha256: 1b319e081c066147239237256908aef39755fcc01fd3255c1a873f517b43a978
+runner_sha256: 8abcc9f7edfc2b0a73f4aa31e7f15df95b051608a90709fa36b0ed76d065f135
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.59
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
-POISSON/CHSH TELEPORTATION RESOURCE AUDIT
-Status: planning / first artifact; quantum state teleportation resource only
+POISSON/CHSH TELEPORTATION RESOURCE SUPPORT
+Status: bounded offline retained-axis resource support; quantum state teleportation resource only
 Extraction: trace cells/spectator tastes, keep the last KS taste bit per species
 Source packet: scripts/frontier_bell_inequality.py sha256=1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689 lines=711 required_symbols=11 PASS
 Retained-axis source: docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md ledger=retained_bounded required_theorem_snippets=5 PASS
-Source firewall: docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md prep/readout hard residual + native apparatus bridge candidates PASS required_snippets=18
+Source firewall: docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md bounded offline scope + downstream apparatus bridge split PASS required_snippets=22
 Last-taste carrier checks:
   1d_null: envs=4 logical_axis=0 X=xi_last/logical-flip PASS; Z_last Pauli PASS; sublattice Z is last-bit Z
   1d_poisson_chsh: envs=4 logical_axis=0 X=xi_last/logical-flip PASS; Z_last Pauli PASS; sublattice Z is last-bit Z
@@ -26,7 +26,7 @@ Case: 1d_null
   traced Bell max-label tie: Phi+, Psi+ (deterministic report uses Phi+)
   standard teleportation with traced resource: mean fidelity=0.669817, min=0.500038, max=0.987949, max trace error=0.000e+00
   best fixed-env postselected branch: Bell overlap=0.500000 (Phi+), probability=6.250000e-02, CHSH=2.000000, negativity=0.000000
-    env A=((0,), ()) env B=((3,), ())
+    env A=((1,), ()) env B=((1,), ())
   deterministic high-fidelity Bell resource (threshold 0.900): NO
 
 Case: 1d_poisson_chsh
@@ -50,9 +50,10 @@ Case: 2d_poisson_chsh
   deterministic high-fidelity Bell resource (threshold 0.900): YES
 
 Conclusion:
-  A traced deterministic high-fidelity Bell resource was found on at least one Poisson case. This would need independent hardening before promotion.
+  A bounded traced high-fidelity Bell resource was found on at least one Poisson case under the retained-axis logical reduction.
   CHSH violation in the full C^N x C^N state is not by itself a teleportation resource derivation.
   Postselected branches, when present, are diagnostics only in this artifact.
+  Physical deterministic apparatus/preparation remains a downstream bridge, not this row's claim.
 
 ----- stderr -----
 

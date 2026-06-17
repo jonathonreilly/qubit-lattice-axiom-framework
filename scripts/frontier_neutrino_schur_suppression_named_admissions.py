@@ -20,7 +20,11 @@ Pieces:
       theorem (observable_principle_real_d_block_uniqueness): that forces W=log|det(D+J)|
       only for INVERTIBLE REAL ANTI-HERMITIAN D, but the neutrino baseline D=m I is
       real-SYMMETRIC (D^T=+D != -D), outside the domain. det responses: det(mI+jY)=m^16
-      (nilpotent, j-flat) vs det(mI+jGamma_1)=(m^2-j^2)^8 (diagnostics only).
+      (nilpotent, j-flat) vs det(mI+jGamma_1)=(m^2-j^2)^8 (diagnostics only). The
+      companion no-go
+      DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07 proves the
+      in-domain kinetic operator vanishes on the hw=1 generation corners, so ADM-1 is
+      sharpened as negative route-pruning rather than positive readout closure.
   T4  ASSEMBLY: y_nu^eff = j^2/m = (g/sqrt2)^2/32 = g^2/64 (given ADM-1, ADM-2).
   CTRL teeth: wrong m, wrong j, or rescaled S_i break the coefficient.
 
@@ -41,6 +45,7 @@ def check(name, ok): results.append((name, bool(ok)))
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md"
+READOUT_NOGO_PATH = ROOT / "docs" / "DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md"
 
 # --- T2: V_sel = 32 sum phi^2 phi^2 from the RETAINED graph-shift surface ---
 sx = np.array([[0, 1], [1, 0]], dtype=int)
@@ -110,6 +115,8 @@ check("CTRL rescaled 2*S_i: cross-coeff = 512 != 32 (graph-shift normalization h
 # --- Source firewall: the row remains bounded on ADM-1/2/3 ---
 note_text = NOTE_PATH.read_text(encoding="utf-8")
 note_flat = " ".join(note_text.split())
+readout_nogo_text = READOUT_NOGO_PATH.read_text(encoding="utf-8")
+readout_nogo_flat = " ".join(readout_nogo_text.split())
 check("SRC 2026-06-12 firewall keeps ADM-1/2/3 live, no retained promotion",
       "2026-06-12 Admissions-Closure Attempt And No-Go Routing" in note_text
       and "this is bounded support only" in note_flat
@@ -118,6 +125,14 @@ check("SRC ADM-3 positive closure must evade the native even-trace no-go",
       "DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md" in note_text
       and "native pure even-trace Dirac-Higgs transport route is blocked" in note_flat
       and "outside the native even-trace no-go" in note_flat)
+check("SRC ADM-1 det-route no-go is cited, scoped, and does not close the readout",
+      "DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md" in note_text
+      and "the det-uniqueness domain is empty for this readout route" in note_flat
+      and "negative route-pruning only" in note_flat
+      and "ADM-1 still needs a separate framework-native observable-principle" in note_flat
+      and "Theorem (no-go, negative-route-pruning)" in readout_nogo_text
+      and "D_kin` **vanishes on the hw=1 generation corners**" in readout_nogo_text
+      and "Does **not** claim the readout is *never* derivable" in readout_nogo_flat)
 
 n_pass = sum(1 for _, ok in results if ok)
 n_fail = sum(1 for _, ok in results if not ok)

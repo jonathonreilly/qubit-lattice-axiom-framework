@@ -46,7 +46,11 @@ theorem
 *invertible real anti-Hermitian* `D`, but the neutrino mass baseline `D = m·I` is
 real-**symmetric** (`Dᵀ = +D ≠ −D`), outside its domain. So the `(m²−j²)⁸` surface is
 not licensed as the physical response; the det identities are scalar-baseline
-diagnostics only. The physical-readout identification is the admitted input.
+diagnostics only. The companion no-go
+[`DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md`](DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md)
+then identifies the structural cause: the kinetic real anti-Hermitian operator covered by
+det-uniqueness vanishes on the hw=1 generation corners, leaving no invertible in-domain
+`D` for this readout route. The physical-readout identification is the admitted input.
 
 **ADM-2 (g_weak comparator).** `g_weak` as the physical coupling coefficient is a
 registered comparator (G3): a measured coupling matched to data, not derived.
@@ -73,7 +77,12 @@ The current source packet narrows the remaining work as follows:
   theorem does not license the `D = m I` neutrino baseline; its domain
   is invertible real anti-Hermitian `D`. The readout
   `y_nu^(0)/g = 1/sqrt2` therefore remains a physical-readout bridge,
-  not a consequence of the retained determinant theorem.
+  not a consequence of the retained determinant theorem. The companion no-go
+  [`DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md`](DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md)
+  supplies the one-hop route-pruning authority: on the generation-corner
+  sector, the kinetic real anti-Hermitian `D_kin` vanishes, so the
+  det-uniqueness domain is empty for this readout route. This is negative
+  route-pruning only; it does not derive the readout by another path.
 - **ADM-2 stays a comparator.** The physical weak coupling `g` is not
   derived here.
 - **ADM-3 is narrowed but not closed.** The retained graph-shift surface
@@ -105,8 +114,9 @@ Numerically `6.6626×10⁻³`. (The `k_eff ≈ 8.01` DM-staircase reading is dow
 not claimed here.)
 
 All of T1 (Schur return), T2 (V_sel=32 from the retained graph-shift + Hessian), T3
-(raw 1/√2 ratio, det responses, the `D=m·I` domain mismatch), T4 (assembly), and three
-adversarial controls are checked exactly in the runner (`TOTAL: PASS=17 FAIL=0`).
+(raw 1/√2 ratio, det responses, the `D=m·I` domain mismatch), T4 (assembly), the
+ADM-1 det-route no-go citation/scope firewall, and three adversarial controls are checked
+exactly in the runner (`TOTAL: PASS=18 FAIL=0`).
 
 ## Does Not Claim
 
@@ -124,7 +134,10 @@ adversarial controls are checked exactly in the runner (`TOTAL: PASS=17 FAIL=0`)
   weak_vector (`Tr=8δ`), bosonic_normalization bridge (raw 1/√2).
 - ADM-3 narrowing: graph_first_selector_derivation (retained; V_sel form + 32).
 - ADM-1 negative: observable_principle_real_d_block_uniqueness (retained_bounded;
-  domain = invertible real anti-Hermitian D, excludes `m·I`).
+  domain = invertible real anti-Hermitian D, excludes `m·I`), plus
+  [`DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md`](DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md)
+  (no-go route-pruning note; kinetic `D_kin` vanishes on the generation corners, so the in-domain
+  det-uniqueness route is empty there).
 - Sharpens the unaudited parent `dm_neutrino_schur_suppression_theorem` (td~549) by
   pinning its three IF-conditions as precisely-named admissions and narrowing one.
 
@@ -139,6 +152,15 @@ an oversight), and (ii) the **V_sel narrowing** (its form + 32 are derived on th
 retained graph-shift surface; only the φ-space identification is admitted). The neutrino
 mass-scale lane's precise frontier is thereby: the observable-principle readout for the
 `m·I` baseline + the graph-shift↔Dirac-Higgs φ-space bridge.
+
+## 2026-06-17 ADM-1 no-go wiring
+
+This packet now has a one-hop source dependency for the ADM-1 negative route: the
+det-uniqueness path is not merely blocked by the `mI` symmetric-baseline mismatch; the
+companion no-go proves the covered kinetic operator class is zero on the generation
+corners. The consequence is a sharper negative boundary, not positive closure. ADM-1
+still needs a separate framework-native observable-principle for real-symmetric
+corner-localized mass/readout operators, or it remains an admitted physical readout.
 
 ## 2026-06-15 audit-unlock residual certificate
 

@@ -1,0 +1,22 @@
+loop_slug: dm-schur-readout-nogo-wiring-20260617
+goal: "Unlock the audited conditional DM Schur admissions row by wiring ADM-1 to an existing scoped no-go source note, without assigning audit status."
+target_claim_id: dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: negative_route_pruning
+reachability_to_target: partially_closes
+active_route: "ADM-1 det-uniqueness route-pruning dependency wiring"
+files_touched:
+  - docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_neutrino_schur_suppression_named_admissions.py
+  - logs/runner-cache/frontier_neutrino_schur_suppression_named_admissions.txt
+  - .claude/science/physics-loops/dm-schur-readout-nogo-wiring-20260617/
+open_imports:
+  - "ADM-1 positive physical readout remains open; det-uniqueness route only is pruned."
+  - "ADM-2 physical weak coupling g remains comparator-scoped."
+  - "ADM-3 graph-shift-to-Dirac-Higgs phi-space transport remains open outside the native even-trace no-go."
+review_loop_disposition: reviewer_owned_not_run
+audit_authority: "none; this branch does not audit, retag, or update ledger/effective-status/publication/front-door surfaces"
+pr_status: pending
+next_exact_action: "Commit, push, open a ready PR, then rescan unchanged conditional/failed rows for any truly uncovered source-side opportunity."
+stop_condition: "Stop only when the refreshed opportunity scan shows no uncovered source-side repair target not already covered by open PRs."

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/yt_ward_step3_same_1pi_construction_2026_05_10.py
-runner_sha256: 87df628045a8e4b714816938b68f2f0b539af21256a21fabe36d02535f68c9ef
+runner_sha256: d61cf097cd3d149b192f6b5167fbae83c6daeb1a66e80bbbee0ad7c17922fdbf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 
@@ -14,10 +14,21 @@ Part 1: source scope
 [PASS] note contains required scope text: same-1PI bridge remains
 [PASS] note contains required scope text: Does **not** derive `g_bare = 1`
 [PASS] note contains required scope text: not load-bearing dependencies
+[PASS] note contains source-boundary text: Downstream source-boundary firewall
+[PASS] note contains source-boundary text: Allowed downstream uses
+[PASS] note contains source-boundary text: Forbidden downstream uses
+[PASS] note contains source-boundary text: coefficient-bookkeeping diagnostic
+[PASS] note contains source-boundary text: missing same-1PI bridge remains open
+[PASS] note contains source-boundary text: retained same-1PI theorem
+[PASS] note contains source-boundary text: gate equation as a retained theorem
+[PASS] note contains source-boundary text: derivation of `g_bare = 1`
+[PASS] note contains source-boundary text: top-Yukawa derivation
+[PASS] note contains source-boundary text: Wick-level proof
 [PASS] note avoids overclaim/status text: DERIVED tree-level identity
 [PASS] note avoids overclaim/status text: holds. The agreement is enforced
 [PASS] note avoids overclaim/status text: target_claim_type: positive_theorem
 [PASS] note avoids overclaim/status text: audited_clean
+[PASS] source-boundary forbids using the gate as retained same-1PI/top-Yukawa closure
 
 ----------------------------------------------------------------------------------------
 Part 2: symbolic coefficient algebra
@@ -46,7 +57,7 @@ Part 4: H_unit normalization input
 [PASS] Diagonal Wick-contraction count on Q_L is N_iso * N_c = 6
 [PASS] H_unit Wick saturation normalizes the diagonal count to 1  (6/6)
 
-TOTAL: PASS=23, FAIL=0
+TOTAL: PASS=34, FAIL=0
 
 ----- stderr -----
 

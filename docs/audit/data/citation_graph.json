@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_ew_m_residual_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "color_generation_independent_z3_structures_2026-06-05"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "yt_ew_m_residual_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
         "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
         "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
         "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
         "newton_derivation_top4_bridge_note",
-        "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
+        "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
+        "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2d6ffc84538902bf99e8d3c4a8be64c4969806b82388ba3234d36a0e6ba1be1a",
+      "note_hash": "7d1c9756c893afbe5bd48c5613925e3ee079e2dba7f0aaa75ab2d130373e2e96",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

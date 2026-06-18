@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 936 |
+| **retained_bounded** | 937 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 17 |
-| unaudited | 1589 |
+| unaudited | 1588 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 11 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1355 |
+| `audited_clean` | 1356 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1911 |
+| `unaudited` | 1910 |
 
 | claim_type | count |
 |---|---:|
@@ -296,6 +296,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `color_generation_independent_z3_structures_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3910,6 +3911,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The cited finite-rank authority supplies the exact finite-rank field construction, and the cited shell-localization identity supplies the retained shell-helper surface. The included runner and load-bearing helper excerpts compute the shell averages, a/r projection, and metric residuals rather than merely printing constants.
 - **rationale:** Issue: no substantive closure defect in the bounded helper scope. Why this closes: the runner instantiates the lattice finite-rank fields, performs the shell fit, and computes the coarse versus direct Einstein-tensor residuals with PASS=3 FAIL=0, while the one-hop dependencies are retained-grade bounded authorities. Repair target: none for the bounded helper claim. Claim boundary until extended: this does not derive a physically forced shell projection, full tensorial 3+1 completion, or framework-level gravity theorem beyond the finite-grid coarse-residual calculation.
 - **auditor confidence:** medium
+
+### `color_generation_independent_z3_structures_2026-06-05`
+
+- **Note:** [`COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Abstract carrier-level inequivalence of the cited color-center scalar Z3 action and the cited hw=1 axis-cycle Z3 action; no physical SM color or family-label bridge was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-color_generation_independent_z3_structures_2026-06-05-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The color center scalar action has Z3 character (3, 3 omega, 3 omega^2), while the hw=1 generation axis cycle has regular character (3, 0, 0), so the two representations are inequivalent.  _(class `A`)_
+- **chain closes:** True — The retained-bounded cited authorities supply the two abstract carrier actions needed for the comparison. Finite Z3 characters are complete representation invariants, and the non-identity traces and multiplicities differ, so the scoped inequivalence follows without a physical readout bridge.
+- **rationale:** The load-bearing step is an exact algebraic character comparison over two supplied retained-grade abstract representations. The runner source constructs the Z3 cycle and omega scalar matrices, checks traces, generator relabeling, irreducible multiplicities, and Hom-rank obstruction rather than merely printing PASS output. No measured value, tuned scale, or physical color/generation identification enters the scoped conclusion; the no-go discipline check is satisfied for this narrow no-identification statement, not for any broader physical independence claim.
+- **auditor confidence:** high
 
 ### `complex_action_note`
 

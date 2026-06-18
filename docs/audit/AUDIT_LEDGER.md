@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 990 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 35 |
-| unaudited | 1452 |
+| unaudited | 1451 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1436 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 56 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1774 |
+| `unaudited` | 1773 |
 
 | claim_type | count |
 |---|---:|
@@ -1615,6 +1615,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -14107,6 +14108,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The finite Bogoliubov inequality together with E_k = 2 sum_mu(1 - cos k_mu) and I_d(L) = L^-d sum_{k != 0} 1/E_k gives the d=1 exact identity, d=2 logarithmic growth, and finite d=3 window behavior.  _(class `A`)_
 - **chain closes:** True — Within the narrowed scope, the finite matrix inequality closes by spectral/Cauchy-Schwarz algebra and the IR behavior closes from the stated lattice dispersion. The |m_L| extraction and no-SSB theorem do not close here and are not part of the audited clean scope.
 - **rationale:** The runner exits 0 with PASS=5 FAIL=0 and its code computes finite matrix and lattice-sum checks rather than importing the textbook theorem. Independent recheck, without importing the runner, passed random 5x5 Hermitian Gibbs Bogoliubov instances, the exact I_1 identity for multiple L, monotone/log-scale d=2 behavior, and finite d=3 window behavior through L=24. The no-go/admission gate passes only because this clean verdict does not retain the Ward-normalized |m_L| extraction or no-SSB conclusion.
+- **auditor confidence:** high
+
+### `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** External open gate recording the half-action algebra S_half = 4 pi^2/g^2 for boundary-conditioned Q = 1/2 meron/fractional-instanton contexts, with explicit firewall against unregularized finite-action, framework-substrate, and hierarchy-closure uses.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the regularized meron-pair, capped-core, half-volume, or fractional-instanton contexts, the candidate half-instanton scale is S_half = 4 pi^2/g^2, with the regulator/boundary construction remaining load-bearing.  _(class `A`)_
+- **chain closes:** False — The half-action algebra follows from the retained_bounded BPST normalization and Q = 1/2 arithmetic, but the packet does not close the regulator/twist/patching construction for the meron or fractional-instanton sector. That boundary construction remains the missing load-bearing step.
+- **rationale:** Issue: the runner verifies algebraic halving, numerical evaluations, and disclaimer text, but it does not prove the regulator/twist/patching sector that makes the half-action meron/fractional-instanton context available. Why this blocks: the note explicitly makes that boundary construction load-bearing, so the theorem chain does not close from the restricted packet alone. Repair target: provide a retained theorem or full restricted authority deriving the relevant boundary-conditioned Q = 1/2 sector and its action. Claim boundary until fixed: the packet can be cited only as an open external gate and source-boundary firewall for the algebraic half-action target.
 - **auditor confidence:** high
 
 ### `meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30`

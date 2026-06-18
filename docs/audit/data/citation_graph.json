@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "teleportation_taste_readout_operator_model_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "universal_gr_polarization_frame_bundle_attempt"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lanes.generated-geometry.readme"
     },
     {
       "from": "repo.front_door_status",
-      "to": "post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16"
+      "to": "acphilambda_hw_complementation_equivariance_support_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "teleportation_taste_readout_operator_model_note",
         "universal_gr_polarization_frame_bundle_attempt",
         "chiral_split_mass_gravity_note",
         "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
         "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12",
+        "post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16",
         "lanes.generated-geometry.readme",
-        "post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16"
+        "acphilambda_hw_complementation_equivariance_support_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "16babd79b40de38548c6be249793f8d2693eff179e61652e7a8a38f399d1fffb",
+      "note_hash": "5dbd5dbeea5d64ce5731614c8f2aa62332eb3a8af6e9677b70a2a97ce2c991a6",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

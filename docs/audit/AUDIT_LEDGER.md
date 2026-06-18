@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 957 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 24 |
-| unaudited | 1542 |
+| unaudited | 1541 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 27 |
+| ~~audited_conditional~~ | 28 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1387 |
-| `audited_conditional` | 27 |
+| `audited_conditional` | 28 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1864 |
+| `unaudited` | 1863 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 890 |
-| `leaf` | 1424 |
+| `medium` | 891 |
+| `leaf` | 1423 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1544,6 +1544,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_polarization_frame_bundle_attempt` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -20200,6 +20201,27 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The scalar Green tail approaches 1/(4 pi r), and the sampled tensor response Pi_TT(k)-Pi_TT(0) is positive and approximately proportional to 2 - 2 cos k at the two smallest sampled momenta.  _(class `C`)_
 - **chain closes:** True — The runner actually computes the scalar heat-kernel Green values and the finite N=10 Pauli-matrix tensor response, and the reported tensor ratios are positive with the stated finite-grid spread. The source note restricts the conclusion to shape compatibility and does not rely on an absolute Newton constant, tensor/scalar source normalization, or observed-G equality.
 - **rationale:** For the scoped bounded diagnostic, the load-bearing computation is internal finite/numerical evaluation from the displayed lattice and Pauli-matrix definitions, not a renaming or external comparator match. The note explicitly excludes the physical Newton-route equality, GR tensor factor, and nonlinear closure that the packet does not derive. No cited non-retained authority or open bridge is needed for the narrowed claim.
+- **auditor confidence:** high
+
+### `universal_gr_polarization_frame_bundle_attempt`
+
+- **Note:** [`UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate blocker that the direct universal GR route has a canonical scalar-channel selector but only a frame-dependent complement localization orbit, not a canonical full polarization/projector bundle or `Pi_curv`.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-universal_gr_polarization_frame_bundle_attempt-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Two valid `3+1` polarization frames related by a spatial rotation yield different localized channel coefficients for the same kernel.  _(class `A`)_
+- **chain closes:** False — The finite prototype frame-dependence closes as an algebraic matrix check, and the runner does not hard-code the reported `frame_delta`. The broader route-level statement depends on upstream exact scalar, `3+1`, tensor-candidate, quotient-kernel, and blocker notes that are not supplied as cited authorities in the restricted packet.
+- **rationale:** Issue: the load-bearing frame-orbit calculation is local algebra, but the note and runner also import multiple route-level premises by reading upstream docs absent from the cited-authority packet. Why this blocks: the restricted packet can verify a finite prototype localization-orbit diagnostic, not that the full current universal stack supplies all exact inputs and lacks only the named covariant frame/projector primitive. Repair target: add the upstream notes as explicit one-hop dependencies, with their retained status, or narrow the row to the finite algebraic frame-dependence check. Claim boundary until fixed: cite this only as an open-gate diagnostic/source-boundary warning, not as a closed universal GR polarization-bundle theorem.
+- **open / conditional deps cited:**
+  - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
+  - `S3_ANOMALY_SPACETIME_LIFT_NOTE.md`
+  - `UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md`
+  - `UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md`
+  - `UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md`
+  - `UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md`
+  - `UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md`
 - **auditor confidence:** high
 
 ### `universal_gr_polarization_frame_bundle_blocker_note`

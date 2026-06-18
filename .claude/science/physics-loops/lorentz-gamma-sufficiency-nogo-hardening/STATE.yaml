@@ -1,0 +1,22 @@
+loop_slug: lorentz-gamma-sufficiency-nogo-hardening
+date: 2026-06-18
+goal: "Unlock audit progress by hardening the Lorentz gamma/LV-bound sufficiency no-go as a source-side negative route-pruning artifact."
+target_claim_id: emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06
+target_blocker: "missing_bridge_theorem: cheapest repair is to supply retained one-hop authorities deriving the framework-specific one-loop velocity RG, the spatial-only power-divergent mixing coefficient, and the physical anomalous dimension/sufficiency comparison against LV bounds."
+active_route: "Negative route pruning for the physical anomalous-dimension / LV-bound sufficiency sub-blocker only."
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: partially_closes
+files_touched:
+  - docs/GAMMA_FULL_VS_GAMMA_CRIT_DECISIVE_NOGO_NOTE_2026-06-08.md
+  - scripts/frontier_gamma_full_vs_gamma_crit_decisive_nogo_2026_06_08.py
+  - logs/runner-cache/frontier_gamma_full_vs_gamma_crit_decisive_nogo_2026_06_08.txt
+  - .claude/science/physics-loops/lorentz-gamma-sufficiency-nogo-hardening/
+open_imports:
+  - "The interacting Lorentz parent still lacks a framework-specific derivation of the one-loop velocity RG."
+  - "The interacting Lorentz parent still lacks a spatial-only power-divergent mixing coefficient theorem."
+  - "The physical xi=1 vs xi->infty surface selector remains open."
+review_loop_disposition: "not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Commit, push, and open a ready PR for reviewer extraction."
+stop_condition: "One coherent source-side audit-unlock PR opened, then pause with effectiveness review as requested."

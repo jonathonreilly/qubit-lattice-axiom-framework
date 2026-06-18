@@ -1,0 +1,17 @@
+loop_slug: g2-scale-log-rge-bridge-20260618
+target: g_2_v_bounded_interval_narrow_theorem_note_2026-05-17
+status: verified_pending_pr
+actual_current_surface_status: bounded-support
+branch: codex/g2-scale-log-rge-bridge-20260618
+base: origin/main
+files_touched:
+  - docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md
+  - scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py
+  - docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
+open_imports:
+  - u_0(SU(2)) numerical interval
+  - one-loop beta ODE not axiom-derived here
+review_loop: not_run_user_delegated_to_reviewer
+audit_loop: not_run
+next_action: "Commit, push, and open a source-side PR."

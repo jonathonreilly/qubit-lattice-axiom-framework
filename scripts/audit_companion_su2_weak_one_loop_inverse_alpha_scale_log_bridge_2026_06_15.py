@@ -8,6 +8,9 @@ This runner verifies two narrow source-side bridge claims:
 2. The scale logarithm used by the g_2(v) bounded interval row is the
    rounded readout of the hierarchy candidate map
    v_cand = M_Pl * (7/8)^(1/4) * alpha_LM^16.
+3. The same two-decimal scale logarithm is stable under the current
+   repo value-surface readout v = 246.282818290129 GeV and the approved
+   Planck-ruler decimal used by the unit-conversion runner.
 
 It does not derive the textbook one-loop beta law, the SU(2) u0 interval,
 or the physical electroweak VEV identification.
@@ -29,6 +32,10 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md"
 G2_NOTE = ROOT / "docs" / "G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md"
+SCALE_PRIMITIVE = ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
+USABLE_VALUES = ROOT / "docs" / "publication" / "ci3_z3" / "USABLE_DERIVED_VALUES_INDEX.md"
+OBSERVABLE_NOTE = ROOT / "docs" / "OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md"
+UNIT_RUNNER = ROOT / "scripts" / "unit_conversion_is_accepted_non_bounding_ruler_runner.py"
 
 PASS = 0
 FAIL = 0
@@ -62,6 +69,10 @@ def main() -> int:
     section("Part 0: source packet checks")
     note_text = NOTE.read_text(encoding="utf-8")
     g2_text = G2_NOTE.read_text(encoding="utf-8")
+    scale_text = SCALE_PRIMITIVE.read_text(encoding="utf-8")
+    values_text = USABLE_VALUES.read_text(encoding="utf-8")
+    observable_text = OBSERVABLE_NOTE.read_text(encoding="utf-8")
+    unit_runner_text = UNIT_RUNNER.read_text(encoding="utf-8")
     check("bridge note exists", NOTE.exists(), str(NOTE.relative_to(ROOT)))
     for filename in [
         "SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md",
@@ -72,6 +83,24 @@ def main() -> int:
         check(f"bridge cites {filename}", filename in note_text)
     check("bridge explicitly leaves u0(SU2) open", "Does **not** derive the numerical `u_0(SU(2))` interval" in note_text)
     check("g2 note cites this bridge", NOTE.name in g2_text)
+    check(
+        "scale primitive declares the Planck ruler and no dimensionless content",
+        "a^{-1} = M_Pl" in scale_text
+        and "zero dimensionless" in scale_text
+        and "content" in scale_text,
+    )
+    check(
+        "unit-conversion runner records the direct Planck-ruler decimal",
+        "M_Pl_GeV = 1.22e19" in unit_runner_text,
+    )
+    check(
+        "reusable-values index records v = 246.282818290129 GeV",
+        "electroweak scale `v`" in values_text and "246.282818290129 GeV" in values_text,
+    )
+    check(
+        "observable note displays the same EW-scale readout",
+        "`v = 246.282818290129 GeV`" in observable_text,
+    )
 
     section("Part 1: inverse-alpha calculus")
     g = Symbol("g", positive=True, real=True)
@@ -151,6 +180,36 @@ def main() -> int:
         "L=3844/100 is a close rounded surrogate for L_cand",
         delta_l < 0.003,
         detail=f"|L_cand-38.44|={delta_l:.15f}",
+    )
+
+    section("Part 2b: direct value-surface scale-log cross-check")
+    m_pl_direct = 1.22e19
+    m_pl_precise = 1.2209e19
+    v_repo = 246.282818290129
+    log_direct = math.log(m_pl_direct / v_repo)
+    log_precise_direct = math.log(m_pl_precise / v_repo)
+    delta_direct = abs(log_direct - float(l_100))
+    delta_candidate_direct = abs(log_num - log_direct)
+
+    check(
+        "direct log ln(1.22e19 / 246.282818290129) matches displayed value",
+        abs(log_direct - 38.441487082215616) < 1e-12,
+        detail=f"L_direct={log_direct:.15f}",
+    )
+    check(
+        "direct value-surface log is within 0.002 of rounded L=38.44",
+        delta_direct < 0.002,
+        detail=f"|L_direct-38.44|={delta_direct:.15f}",
+    )
+    check(
+        "candidate-map log and direct current-value log differ by less than 0.001",
+        delta_candidate_direct < 0.001,
+        detail=f"|L_cand-L_direct|={delta_candidate_direct:.15f}",
+    )
+    check(
+        "using the hierarchy runner Planck decimal reproduces L_cand",
+        abs(log_precise_direct - log_num) < 1e-12,
+        detail=f"L_precise_direct={log_precise_direct:.15f}",
     )
 
     section("Part 3: g2 denominator sanity with rounded versus candidate log")

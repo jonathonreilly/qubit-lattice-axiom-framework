@@ -1,0 +1,10 @@
+# Assumptions And Imports
+
+| Item | Role in claim | Current class | Source surface | Load-bearing? | Needed for target status? | Retirement path | Disposition |
+|---|---|---|---|---|---|---|---|
+| Scale-reference primitive `a^{-1}=M_Pl` | Converts the lattice natural scale to GeV for `ln(M_Pl/v)` | framework-derived primitive / non-bounding ruler | `SCALE_REFERENCE_PRIMITIVE_NOTE.md`; `axiom_premise_nodes.json` | Yes for X6 bridge | Yes for dimensionful scale log | Already approved as non-bounding primitive | Consumed narrowly |
+| EW scale `v=246.282818290129 GeV` | Low scale in `ln(M_Pl/v)` | current repo-derived/readout surface | `USABLE_DERIVED_VALUES_INDEX.md`; `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` | Yes for numeric log | Yes for X6 bridge | Later hierarchy audit can revise source; runner quantifies log sensitivity | Consumed as current surface, not re-audited here |
+| Planck decimal `1.22e19 GeV` | Existing repo ruler decimal used for physical-unit arithmetic | admitted normalization / ruler decimal | `unit_conversion_is_accepted_non_bounding_ruler_runner.py` | Yes for numeric log | Yes for X6 bridge | Use exact primitive/ruler policy; runner checks `1.2209e19` sensitivity too | Controlled, non-dimensionless |
+| One-loop ODE `d alpha/d ln(mu)=-b alpha^2/(2pi)` | Starting differential equation for RGE integration | standard correction / perturbative ODE convention | SU(2) beta-coefficient row sign convention | Yes for X7 bridge | Yes for X7 integrated form | Deriving perturbative QFT beta dynamics from framework remains future science | Integrated here, not derived |
+| `b_2=19/6` | SU(2)_L coefficient in the ODE | retained/bounded support upstream | `SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md` | Yes | Yes | Already source-side row; audit owns status | Consumed |
+| `u_0(SU(2)) in [0.96,0.98]` | Tadpole interval in downstream `g_2(v)` row | literature import | Trottier / Munster as cited by target row | No for this bridge, yes for target row | Yes for target row retained closure | Native SU(2) MC or analytic nonperturbative matching | Still open |

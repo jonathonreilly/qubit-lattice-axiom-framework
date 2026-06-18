@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
-runner_sha256: 6ab1633d73c0372a14e8843fd54ea11a5a6592efbe7e75189195357b69e8b006
+runner_sha256: 8fba651ff246cd39f53ac2979684d30256941908fdd3b16f529979c029f093b4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -29,6 +29,7 @@ Part 0: source-packet dependency repair checks
   [PASS (A)] (X4) source note does not leave G_BARE_CANONICAL as a load-bearing markdown edge
   [PASS (A)] (X4) source note states the coupling input is not rederived here
   [PASS (A)] (X6/X7) source note cites the framework-local scale/RGE bridge
+  [PASS (A)] (X6) bridge includes direct ruler/current-v scale-log hardening
   [PASS (A)] (X7) source note no longer registers one-loop RGE as a row-local named admission
   [PASS (A)] (X1) source note no longer claims [0.96,0.98] brackets 0.988
   [PASS (A)] (X1) source note says 0.988 is outside the admitted interval
@@ -114,11 +115,11 @@ Part 8: forbidden-import audit
 ----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
-  PASS = 30
+  PASS = 31
   FAIL = 0
   g_2(v_cand approx 246.28 GeV) in [0.659392836186702, 0.682834304553707]
   interval width = 0.0234414683670046
-  PASS=30 FAIL=0
+  PASS=31 FAIL=0
 
 ----- stderr -----
 

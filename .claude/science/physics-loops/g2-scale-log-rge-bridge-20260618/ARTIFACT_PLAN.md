@@ -1,0 +1,22 @@
+# Artifact Plan
+
+Artifacts:
+
+- `docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md`
+- `scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py`
+- updated `docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md`
+- updated `scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py`
+- cached runner outputs for both runners
+
+Verification:
+
+```bash
+python3 scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py
+python3 scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
+python3 scripts/cached_runner_output.py --refresh scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py
+python3 scripts/cached_runner_output.py --refresh scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
+python3 scripts/cached_runner_output.py --check-only scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py
+python3 scripts/cached_runner_output.py --check-only scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
+python3 -m py_compile scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
+git diff --check
+```

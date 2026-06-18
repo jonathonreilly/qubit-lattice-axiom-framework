@@ -7,6 +7,7 @@ core_runner: scripts/teleportation_poisson_finite_extraction_core_2026_06_18.py
 scope_runner: scripts/frontier_teleportation_poisson_resource_scope_repair.py
 base: origin/main@8e3a68da1
 branch: codex/teleportation-poisson-finite-extraction-core-20260618
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4388
 actual_current_surface_status: bounded-support
 trace_class: upstream_support
 reachability_to_target: supports
@@ -24,4 +25,4 @@ verification:
   - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_teleportation_poisson_resource_scope_repair.py -> status ok"
   - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_teleportation_resource_from_poisson.py -> status ok"
 review_loop: delegated_to_codex_reviewer
-next_exact_action: open source-side PR; reviewer/auditor may re-audit the bounded finite-extraction split and parent open-gate boundary
+next_exact_action: reviewer may run review-loop/landing cleanup; independent audit may re-audit the bounded finite-extraction split and parent open-gate boundary

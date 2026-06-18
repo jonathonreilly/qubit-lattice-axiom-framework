@@ -1,6 +1,7 @@
 # Handoff
 
 Branch: `codex/teleportation-poisson-finite-extraction-core-20260618`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4388
 
 This source-side repair targets `teleportation_resource_from_poisson_note` by
 splitting the bounded finite offline extraction from the open native
@@ -27,3 +28,7 @@ Verification:
 Forbidden-surface expectation: no audit ledger, queue, publication, repo
 status, lane registry, or active review queue files should be changed by this
 branch.
+
+Next action: reviewer may run review-loop and landing cleanup. If accepted,
+independent audit can decide whether the finite extraction core is clean
+bounded support while the physical preparation/readout theorem remains open.

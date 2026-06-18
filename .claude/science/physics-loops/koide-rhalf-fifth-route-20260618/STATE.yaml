@@ -1,0 +1,26 @@
+loop_slug: koide-rhalf-fifth-route-20260618
+goal: "Close the source-side blocker on the Koide r=1/2 narrow no-go by adding a fifth distinct N1 route."
+target_status: no-go
+current_audit_surface_on_origin_main: audited_conditional
+origin_main_commit: 0dc347a33
+branch: codex/koide-rhalf-fifth-route-20260618
+cycle_count: 1
+active_route: "C3-compatible coefficient rephasing / doublet-basis calibration"
+hard_residual: "Positive derivation of |b|/a = 1/sqrt(2) remains dynamical or extra-structural."
+files_touched:
+  - docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md
+  - scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py
+  - logs/runner-cache/audit_companion_koide_r_half_not_symmetry_protected_exact.txt
+open_imports:
+  - "No external numerical or literature input is used by the added route."
+no_go_routes:
+  - "C3 invariance leaves r free."
+  - "S3 axis-permutation enhancement forces a twofold degeneracy."
+  - "No intermediate subgroup exists between C3 and S3."
+  - "A unitary singlet/doublet swap is dimension-obstructed."
+  - "C3-compatible coefficient rephasing / doublet-basis rotation preserves |b|^2/a^2."
+trace_gate_classification: direct_blocker_closure
+review_loop_disposition: "not_run_user_deferred_to_codex_reviewer"
+pr_status: pending
+next_exact_action: "Open the review PR and hand it to the reviewer/auditor for independent assessment."
+stop_condition: "One coherent source-side blocker-closure block is packaged."

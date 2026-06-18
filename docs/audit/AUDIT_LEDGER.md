@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 968 |
+| **retained_bounded** | 969 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1503 |
+| unaudited | 1502 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1406 |
+| `audited_clean` | 1407 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1825 |
+| `unaudited` | 1824 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 896 |
-| `leaf` | 1416 |
+| `medium` | 894 |
+| `leaf` | 1418 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -236,6 +236,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3188,6 +3189,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`
   - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
   - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
+- **auditor confidence:** high
+
+### `causal_cone_speed_map_note`
+
+- **Note:** [`CAUSAL_CONE_SPEED_MAP_NOTE.md`](../../docs/CAUSAL_CONE_SPEED_MAP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite configured cone-speed sweep on the center grown family with drift/restore 0.20/0.70, seeds 0..5, source strength 5.0e-05, and c values 0.10 through 1.50, interpreted only as a proxy observable.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-causal_cone_speed_map_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The c-sweep is structured but not monotone across the whole range, with the largest response near c = 1.0, so c is a structured but noisy/non-monotone proxy knob on this family.  _(class `C`)_
+- **chain closes:** True — The primary runner actually constructs the configured grown family, computes the zero control, instantaneous reference, and dynamic cone fields for each c using the included helper source; the note's table matches the cached output. The conclusion is bounded to this finite proxy sweep and explicitly avoids a physical wave-speed claim.
+- **rationale:** The runner is not a print-only or hard-coded expected-value check: it computes the field values, propagates amplitudes, forms centroid shifts, and derives the non-monotone classification from the computed ratios. The cited authorities are retained_bounded and the source note keeps the claim within the configured center-family proxy setting, so their explicit boundaries do not block this bounded conclusion. The arithmetic and classification are internally consistent with the provided stdout: the ratios rise to c = 1.0 and then turn over, excluding a smooth monotone law for this scan.
 - **auditor confidence:** high
 
 ### `causal_distance_tail_note`

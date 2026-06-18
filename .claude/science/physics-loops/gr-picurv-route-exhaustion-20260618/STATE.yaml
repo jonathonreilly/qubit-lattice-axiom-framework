@@ -1,0 +1,27 @@
+loop_slug: gr-picurv-route-exhaustion-20260618
+goal: "Unlock the audited conditional universal_gr_polarization_frame_bundle_blocker_note by adding source-side route-exhaustion support, without auditing or retagging."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+target_claim_id: universal_gr_polarization_frame_bundle_blocker_note
+target_blocker_text: "scope_too_broad: narrow to the finite frame-delta/orbit support result or provide an exhaustive no-go gate covering at least five alternative Pi_curv construction routes."
+active_route: "N1-N8 current-stack Pi_curv route-exhaustion no-go gate"
+files_touched:
+  - docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md
+  - docs/UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md
+  - scripts/frontier_universal_gr_picurv_route_exhaustion_no_go_2026_06_18.py
+open_imports:
+  - "Independent audit must decide whether the new route-exhaustion gate satisfies the conditional row."
+no_go_routes:
+  - A1 extension
+  - quotient-kernel eigenbasis
+  - Casimir block projectors
+  - frame-orbit averaging
+  - complement orbit bundle
+  - finite-rank/exterior helper route
+  - supplied round Regge route
+  - supplied flat-atlas spin-2 route
+review_findings: "local source-boundary self-review pass; independent review-loop not run in this branch."
+pr_status: "pending"
+next_exact_action: "Run verifier/cache checks, commit, push, and open a ready review PR."
+stop_condition: "Stop after PR is opened for reviewer extraction; do not keep old PRs fresh against main."

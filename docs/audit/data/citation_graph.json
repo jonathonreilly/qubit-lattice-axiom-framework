@@ -52266,10 +52266,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05"
     },
     {
@@ -100643,11 +100639,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05",
         "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "eea0dc249a70283b3049e6bec6d0be6d386dd23209d45271ef3bff082f9fdf2f",
+      "note_hash": "28586d02ae27b3cc510444537dbc29db2b91ab994fd51db8803a5f40ac0c4375",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -115716,7 +115711,7 @@
       "open_gate": 180,
       "positive_theorem": 599
     },
-    "edge_count": 13167,
+    "edge_count": 13166,
     "leaf_count": 1144,
     "node_count": 3523,
     "root_count": 1076,

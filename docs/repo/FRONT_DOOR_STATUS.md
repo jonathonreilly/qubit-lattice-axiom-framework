@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1470 |
-| Retained-grade rows, including boxed decorations | 1414 |
+| Applied audit verdicts | 1471 |
+| Retained-grade rows, including boxed decorations | 1415 |
 | Retained positive theorems | 216 |
-| Retained no-go rows | 211 |
+| Retained no-go rows | 212 |
 | Retained bounded rows | 937 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 18 |
-| Unaudited rows | 1587 |
+| Unaudited rows | 1586 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 20 |
 | Audited renaming rows | 11 |
@@ -33,18 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1589 |
-| Ready rows | 149 |
+| Total pending rows | 1588 |
+| Ready rows | 150 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 269 |
-| Medium pending | 447 |
+| Medium pending | 446 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`koide_real_rep_block_count_permitted_not_forced_note_2026-05-30`](../../docs/KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md) - medium; unaudited
+- [`koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04`](../../docs/KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md) - high; unaudited
 - [`gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16`](../../docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - medium; unaudited
 - [`newton_derivation_top4_bridge_note`](../../docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md) - medium; unaudited
 - [`min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`](../../docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
@@ -94,5 +94,5 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
 - `plaquette_self_consistency_note` - critical; 1011 descendants; score 52.983
 - `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
-- `key_terminology` - critical; 1119 descendants; score 46.629
+- `key_terminology` - critical; 1118 descendants; score 46.628
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

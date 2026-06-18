@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 304,
-    "high": 270,
+    "high": 271,
     "leaf": 569,
-    "medium": 469
+    "medium": 467
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -8860,6 +8860,30 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "work_history.ckm.cabibbo_bound_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "work_history.ckm.ckm_mass_basis_nni_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.228,
+      "note_path": "docs/work_history/ckm/CABIBBO_BOUND_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_ckm_mass_basis_nni.py",
+      "transitive_descendants": 52
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "a3_route2_single_clock_c3_obstruction_note_2026-05-08_r2",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17495,28 +17519,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_q_dred_normalization_freedom_no_go_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.426,
-      "note_path": "docs/KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py",
-      "transitive_descendants": 85
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_formation_to_kraus_isometry_bridge_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17683,30 +17685,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py",
       "transitive_descendants": 54
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "work_history.ckm.cabibbo_bound_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "work_history.ckm.ckm_mass_basis_nni_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.7,
-      "note_path": "docs/work_history/ckm/CABIBBO_BOUND_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_ckm_mass_basis_nni.py",
-      "transitive_descendants": 51
     },
     {
       "audit_independence_required": "any_non_self",
@@ -48255,6 +48233,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 160,
-  "total_pending": 1612
+  "ready_count": 159,
+  "total_pending": 1611
 }

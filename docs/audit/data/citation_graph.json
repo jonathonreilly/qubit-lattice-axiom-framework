@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_readout_gate_equals_carrier_identification_2026-05-31"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_q_dred_normalization_freedom_no_go_note_2026-06-15"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "work_history.ckm.cabibbo_bound_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "flavor_readout_gate_equals_carrier_identification_2026-05-31",
         "koide_q_dred_normalization_freedom_no_go_note_2026-06-15",
         "record_formation_to_kraus_isometry_bridge_2026-06-06",
         "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
         "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
-        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19"
+        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
+        "work_history.ckm.cabibbo_bound_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c1e524d3824a9c45c70d1204c94bb1b9e8b51f7123880e391e47e7493e71e610",
+      "note_hash": "99046d95f4e4707379cf2f8aea7768972c7ab7ad80829b86ba7ef0cf62ef0cfb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

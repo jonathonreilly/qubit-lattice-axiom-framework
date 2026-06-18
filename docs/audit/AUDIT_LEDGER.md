@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 215 |
-| **retained_no_go** | 208 |
+| **retained_no_go** | 209 |
 | **retained_bounded** | 928 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1610 |
+| unaudited | 1609 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 10 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1341 |
+| `audited_clean` | 1342 |
 | `audited_conditional` | 17 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1932 |
+| `unaudited` | 1931 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 501 |
-| `medium` | 883 |
+| `high` | 502 |
+| `medium` | 882 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -782,6 +782,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `koide_q_dred_normalization_freedom_no_go_note_2026-06-15` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_minimal_scale_free_selector_note_2026-04-22` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10808,6 +10809,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Exactness gives fibres, not canonical splittings; the closing section a=0, b1=0, b2=0 is exactly the missing primitive-based readout/basepoint law or an equivalent retained canonical-section theorem.  _(class `A`)_
 - **chain closes:** True — The no-go closes within the restricted packet: the note and runner exhibit nontrivial kernels, nonunique section families, and counter-representatives that preserve retained totals while changing Q or delta. No dependency note is required because the audited scope is the algebraic obstruction for the stated projections, not a positive derivation of the missing physical readout law.
 - **rationale:** The runner verifies the load-bearing linear-algebra obstruction rather than hard-coding a target Koide closure: nonzero kernel representatives preserve the retained projections and fail to close the target readouts, while the zero representative is an additional section choice. This supports the no-go claim that exactness/cohomology data alone do not supply the primitive-based basepoint/readout law. Residual risk is scope control: the clean result applies to the explicit retained-projection exact-sequence packet, not to every conceivable future cohomological theorem that might add new structure.
+- **auditor confidence:** high
+
+### `koide_q_dred_normalization_freedom_no_go_note_2026-06-15`
+
+- **Note:** [`KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md`](../../docs/KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Within the reduced two-slot split algebra with split-preserving diagonal source K, the algebra does not select D_red = I_2 over D_red = c I_2 for c > 0 absent an external response-unit normalization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_q_dred_normalization_freedom_no_go_note_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For every c > 0, the baseline D_red = c I_2 satisfies the same split, additivity, and determinant restriction structure after a source-coordinate rescaling.  _(class `A`)_
+- **chain closes:** True — The determinant calculation gives W_c = log(1+k_+/c)+log(1+k_perp/c), and substituting u_i = k_i/c recovers the same normalized law for every c > 0. The zero-source derivative 1/c shows that only an externally fixed source unit can distinguish c, which is outside the audited two-slot algebra.
+- **rationale:** The load-bearing step is an exact finite-dimensional algebraic counterfamily, not a numerical match or a symbol renaming. The runner source genuinely computes the split projectors, determinant identity, source rescaling, derivatives, and dual stationary source with Sympy; the final narrative PASS checks are not load-bearing. The conclusion is narrow: it only says the reduced split/determinant algebra cannot derive the normalization c = 1, while leaving an external physical response-unit theorem or convention as the possible repair.
 - **auditor confidence:** high
 
 ### `koide_q_minimal_scale_free_selector_note_2026-04-22`

@@ -52230,10 +52230,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_q_delta_linking_relation_theorem_note_2026-04-20"
     },
     {
       "from": "repo.repo_organization",
@@ -100629,17 +100629,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
         "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
         "universal_gr_polarization_frame_bundle_blocker_note",
         "finite_rank_gravity_residual_helper_note_2026-04-14",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "axiom_first_kms_condition_theorem_note_2026-05-01",
-        "su3_casimir_fundamental_theorem_note_2026-05-02"
+        "su3_casimir_fundamental_theorem_note_2026-05-02",
+        "koide_q_delta_linking_relation_theorem_note_2026-04-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "92d637c8f4a15fb37282fc5e79ffcf7874159bbea59b91d0e2faaf9935086560",
+      "note_hash": "35d7bee723589e6fab7cea6f9d745a267bd94518e2a5c1f9191e362f4a0980ab",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

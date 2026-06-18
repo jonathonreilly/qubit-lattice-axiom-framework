@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 911 |
+| **retained_bounded** | 910 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1648 |
+| unaudited | 1649 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 3 |
@@ -58,14 +58,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
+| `audit_in_progress` | 3 |
 | `audited_clean` | 1318 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 4 |
 | `audited_renaming` | 3 |
-| `unaudited` | 1970 |
+| `unaudited` | 1971 |
 
 | claim_type | count |
 |---|---:|
@@ -130,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -273,6 +272,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `cl3_taste_generation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1260,7 +1260,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `structured_chokepoint_bridge_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -3520,6 +3519,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Independently, P_swap is an involution with a six-dimensional +1 eigenspace and a two-dimensional -1 eigenspace, giving complementary projectors of ranks 6 and 2. The stated trace, full spectrum, |111> placement, and antisymmetric -1 eigenspace then follow by finite-dimensional linear algebra from the explicit operator definition.
 - **rationale:** The load-bearing step is a genuine class-A algebraic identity on explicitly defined 8x8 matrices, not a physical readout or numerical match. The supplied runner source constructs P_swap and Y exactly over rationals and computes the projector identities, traces, eigenvalues, and eigenspace checks; its expected constants are theorem predicates, not imported calibrated inputs. The provided upstream authorities are retained-grade for the abstract C^8/base/Burnside structures used here, and the open physical-identification bridge is explicitly outside the audited claim scope.
 - **auditor confidence:** high
+
+### `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Cl(3)/O_h algebra lemma: all 48 signed-permutation matrices induce Clifford algebra automorphisms, the pseudoscalar line transforms by det(R), and its O_h average is zero; no strong-CP or lattice-action bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26-panel1-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** For any orthogonal R, the generator map gamma_i -> sum_j R_ij gamma_j preserves the Clifford relations and sends I = gamma_1 gamma_2 gamma_3 to det(R)·I by the Leibniz formula.  _(class `A`)_
+- **chain closes:** True — The tuple is clean because the claim closes as a pure algebraic derivation from the Clifford relations, orthogonality of signed permutation matrices, the universal property, and the determinant action on the top exterior grade. The runner source genuinely enumerates all 48 O_h elements and verifies the relevant Clifford, determinant, pseudoscalar, and averaging identities without importing external comparators or tuned constants.
+- **rationale:** The tuple is clean because the claim closes as a pure algebraic derivation from the Clifford relations, orthogonality of signed permutation matrices, the universal property, and the determinant action on the top exterior grade. The runner source genuinely enumerates all 48 O_h elements and verifies the relevant Clifford, determinant, pseudoscalar, and averaging identities without importing external comparators or tuned constants.
+- **auditor confidence:** judicial
 
 ### `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
 
@@ -17338,19 +17350,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using K = U Sigma V^dag, unitary block conjugation reduces M = [[alpha I,K],[-K^dag,alpha I]] to direct two-by-two blocks [[alpha,sigma_i],[-sigma_i,alpha]], so det(M)=prod_i(alpha^2+sigma_i^2)>0 for alpha>0.  _(class `A`)_
 - **chain closes:** True — The algebra closes independently of the runner: with W=diag(U,V), W^dag M W has off-diagonal Sigma and -Sigma, and a permutation of basis exposes the 2x2 block direct sum. Each factor alpha^2+sigma_i^2 is strictly positive because alpha>0 and sigma_i>=0.
 - **rationale:** The determinant formula is a standard finite-dimensional algebraic identity once the balanced eps decomposition and supplied alpha I diagonal surface are assumed. The note explicitly does not claim that M_W = r d I is framework-forced, does not cover the standard Wilson nearest-neighbour Laplacian, and does not assert parent-row reflection positivity or Wilson-sector sign-problem closure. On that scoped supplied surface, no open dependency or hidden bridge theorem is imported. The runner source performs actual finite-matrix construction and factorisation checks, but the clean verdict rests on the independent SVD/block determinant argument.
-- **auditor confidence:** high
-
-### `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26`
-
-- **Note:** [`STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded O_h sign bridge: with O_h acting as signed spatial permutations and fixing Euclidean time, the Wilson plaquette contribution is invariant under link/plaquette relabeling, epsilon^{ijk} transforms by det(R), and any rank-two tensor slot Q[F]=epsilon^{ijk}F_{0i}F_{jk} transforms by det(R); coefficient exclusion is only conditional on a separately proved O_h-invariant action class and slot covariance.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Using R_{ia}R_{jb}R_{kc} epsilon_{abc}=det(R) epsilon_{ijk}, a rank-two tensor transform gives Q[R.F]=epsilon^{ijk}R_{ia}F_{0a}R_{jb}R_{kc}F_{bc}=det(R)Q[F].  _(class `A`)_
-- **chain closes:** True — The epsilon pseudotensor identity is exact for the 48 signed permutations, and the Q[F] sign law follows by direct index contraction. Wilson plaquette invariance follows from plaquette relabeling plus Re tr(U_P^dagger)=Re tr(U_P), while the strong-CP/action-class consequences remain explicitly conditional and out of scope.
-- **rationale:** The load-bearing tensor sign law is an exact finite-group/index identity, independently re-derived from the Levi-Civita determinant formula and rank-two transformation rule. The runner's random Wilson/F samples are only sanity checks, but the source proof states the analytic reason, and the all-48 epsilon enumeration supports the finite-group part. The no-go/admission-wall gate passes because the note does not assert strong-CP closure, full action-class O_h-invariance, topological-charge discretization covariance, continuum theta bridging, or exclusion of CP-odd slots outside the stated determinant-odd epsilon F F form.
 - **auditor confidence:** high
 
 ### `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`

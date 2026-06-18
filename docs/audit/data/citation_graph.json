@@ -52234,7 +52234,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17"
+      "to": "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17"
     },
     {
       "from": "repo.front_door_status",
@@ -100630,7 +100630,7 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
+        "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
         "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
         "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
@@ -100639,7 +100639,7 @@
         "color_generation_independent_z3_structures_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1187c2036fa72620b56f379df3fc167064f3eaefb406125aab951808cf895033",
+      "note_hash": "da0c450d1a4904ec8290247357d3fd3cd2f0becaff6d39966cf69e44101aefd2",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

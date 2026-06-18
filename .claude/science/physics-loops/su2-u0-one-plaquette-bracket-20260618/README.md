@@ -1,6 +1,7 @@
 # SU(2) u0 One-Plaquette Bracket Loop Pack
 
 Branch: `codex/su2-u0-one-plaquette-bracket-20260618`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4383
 
 Goal: source-side audit unlock for the `g_2(v)` bounded interval row by
 replacing the purely literature-only `u_0(SU(2)) in [0.96,0.98]` interval with

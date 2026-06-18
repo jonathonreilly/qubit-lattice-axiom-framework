@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 214 |
 | **retained_bounded** | 957 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 22 |
-| unaudited | 1545 |
+| open_gate | 23 |
+| unaudited | 1544 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1385 |
+| `audited_clean` | 1386 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1867 |
+| `unaudited` | 1866 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 890 |
-| `leaf` | 1424 |
+| `medium` | 892 |
+| `leaf` | 1422 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1359,6 +1359,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_adiabatic_prep_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_adiabatic_time_evolution_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_apparatus_dynamics_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `teleportation_bell_measurement_circuit_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_causal_channel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_cross_encoding_maps_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_dynamical_resource_generation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -19198,6 +19199,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** This is still planning-level, but it is a nontrivial native apparatus candidate rather than a supplied classical bit channel or a projective measurement placeholder.  _(class `C`)_
 - **chain closes:** True — The runner computes the scoped candidate-model properties directly: the local field first-arrival surface matches the lattice eikonal, the finite transducer and bath suppress record overlaps, Bob remains input-independent before delivery and is restored after delivery, and the candidate ledger is branch independent. The note explicitly withholds the broader physical identifications that would otherwise be hidden premises.
 - **rationale:** The clean result is only for the bounded engineered apparatus candidate, not for a retained microscopic or relativistic apparatus theory. The load-bearing claim closes because the note and live runner keep the carrier/readout/protocol boundary at ordinary quantum state teleportation and expose the remaining Nature-grade blockers instead of smuggling them in. Residual risk is that later promotion beyond this candidate would require separate audits for the unique field equation, continuum detector, microscopic Cl(3)/Z^3 Hamiltonian, and all native apparatus implementations.
+- **auditor confidence:** high
+
+### `teleportation_bell_measurement_circuit_note`
+
+- **Note:** [`TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md`](../../docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Ideal encoded taste-qubit Bell measurement is algebraically decomposed into equivalent ZZ/XX stabilizer parity measurements and a CNOT-H computational-readout circuit, with the physical gate/readout apparatus left open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-teleportation_bell_measurement_circuit_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Pulling the final computational Z measurements back through CNOT(A -> R) followed by H(A) gives Z_A output -> X_A X_R and Z_R output -> Z_A Z_R, so the pulled-back circuit projectors equal P_zx.  _(class `A`)_
+- **chain closes:** True — The Pauli, Bell-projector, and CNOT-H identities close as finite matrix algebra within the stated ideal logical scope. The note does not claim a native physical apparatus, durable readout, or matter/energy transport derivation.
+- **rationale:** The load-bearing claim is a genuine algebraic closure: the circuit Heisenberg pullback and stabilizer projector identities are explicitly computed, and the runner source performs finite matrix checks rather than printing constants. The native taste-surface check instantiates the finite encoded Pauli surface, while the remaining acceptance gates verify algebraic Bell projectors, record mapping, correction fidelity, and no-signaling within the ideal logical model. The downstream boundary helper is bookkeeping for scoped no-transfer/bounded-status alignment and does not supply the Bell-circuit identity itself. Physical implementation of logical gates, readout, records, and the Bell resource remains outside the audited scope, as the note states.
 - **auditor confidence:** high
 
 ### `teleportation_causal_channel_note`

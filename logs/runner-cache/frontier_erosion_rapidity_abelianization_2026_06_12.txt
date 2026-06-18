@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_erosion_rapidity_abelianization_2026_06_12.py
+runner_sha256: 9a35cc6132f95c08a359bdee886673dba584d8dd108b39db20897fa129e47091
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.03
+status: ok
+----- stdout -----
+Erosion rapidity abelianization verification
+Recurrence: p_s=(p+s eps)/(1+s eps p), c_s=c*(1-eps^2)/(1+s eps p)^2
+==============================================================================
+S0 anchors first
+==============================================================================
+landed uniform anchor via recurrence warmup: eps=0.2, rate=0.6666666666666666, frozen=0.6666666666666666
+PASS: S0 landed uniform rate at eps=0.2 is reproduced :: abs_err=0.000e+00, tol=1.0e-14
+landed alternating anchor via recurrence: eps=0.2, product=1, frozen=1
+PASS: S0 landed alternating two-step c-product is 1 :: abs_err=0.000e+00, tol=1.0e-14
+anti-fabrication trajectory: eps=0.2, p_values=['0.125', '0.317073', '0.486239', '0.317073', '0.486239'], max_step_spread=0.192073
+PASS: S0 anti-fabrication: p-trajectory is nonconstant on the frozen word :: max_step_spread=1.921e-01, min_required=5.0e-02
+==============================================================================
+R1 rapidity substitution
+==============================================================================
+sympy tanh-addition residuals: [0, 0]
+PASS: R1 sympy: p -> (p+s eps)/(1+s eps p) is tanh(phi+s theta) :: s=+ residual=0, s=- residual=0
+==============================================================================
+R2 abelianization on fixed words
+==============================================================================
+fixed-grid abelianized path max_err=1.166e-15, worst=eps=0.45, p0=-0.72, word=--+++--+-++, j=11, S_j=1
+PASS: R2 numeric: p_j = tanh(phi_0 + S_j theta) on fixed nonperiodic words :: max_err=1.166e-15, tol=1.0e-13
+==============================================================================
+R3 complete c-law
+==============================================================================
+sympy sech residual: 0
+PASS: R3 sympy: 1 - tanh(x)^2 equals sech(x)^2 :: residual=0
+fixed-grid c-law max_err=9.964e-15, worst=eps=0.45, p0=0.63, word=++++++----
+PASS: R3 numeric: recurrence c_n/c_0 equals endpoint and sech-square laws :: max_err=9.964e-15, tol=1.0e-13
+wave-10 periodic rate max_err=2.193e-15, worst=eps=0.45, word=++++++----, D=2, measured=0.1438763376932222, matrix=0.1438763376932244, imbalance=0.1438763376932224
+PASS: R3 wave-10 rates reproduce recurrence, det(M_w)/lambda_max^2, and r^|D| :: max_err=2.193e-15, tol=1.0e-13
+==============================================================================
+R4 periodic imbalance law
+==============================================================================
+periodic imbalance-law max_err=2.026e-15, worst=eps=0.45, word=++++++----, D=2, matrix=0.1438763376932244, imbalance=0.1438763376932224
+PASS: R4 numeric: per-period rate is r(eps)^|D| on the fixed periodic set :: max_err=2.026e-15, tol=1.0e-13
+uniform D=T max_err=3.331e-16; alternating D=0 max_err=0.000e+00
+PASS: R4 uniform words recover D=T, rate r(eps)^T :: max_err=3.331e-16, tol=1.0e-13
+PASS: R4 alternating words recover D=0, rate 1 :: max_err=0.000e+00, tol=1.0e-13
+==============================================================================
+R5 seeded stretched-decay identity
+==============================================================================
+fixed seeds=(314159, 271828, 161803), eps=0.2, p0=0.18, N=4000, max_log_err=6.079e-69, worst=seed=271828, n=3914, S_n=28
+seed 314159 trajectory n=250: S_n=2, |S_n|/sqrt(n)=0.126491, log(c_n/c_0)=-0.293964, -2 theta |S_n|=-0.81093
+seed 314159 trajectory n=1000: S_n=-20, |S_n|/sqrt(n)=0.632456, log(c_n/c_0)=-6.32697, -2 theta |S_n|=-8.1093
+seed 314159 trajectory n=4000: S_n=-66, |S_n|/sqrt(n)=1.04355, log(c_n/c_0)=-24.9775, -2 theta |S_n|=-26.7607
+PASS: R5 high-precision recurrence log(c_n/c_0) equals the sech-square identity :: max_err=6.079e-69, tol=1.0e-12
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

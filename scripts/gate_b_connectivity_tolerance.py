@@ -69,11 +69,11 @@ def _source_boundary_checks() -> None:
         and "2026-06-12 audit firewall: source index, not dynamics closure" in text,
     )
     _check(
-        "GB-S1b/GB-S2b/GB-S3b residues remain supplied row-local data",
-        "`GB-S1b`" in flat
+        "GB-S1b-b/GB-S2b/GB-S3b residues remain supplied row-local data",
+        "`GB-S1b-b`" in flat
         and "`GB-S2b`" in flat
         and "`GB-S3b`" in flat
-        and "regularized scalar/normalization remains supplied row-local data" in flat
+        and "physical scalar source/boundary/regulator/normalization remains supplied" in flat
         and "physical detector-window/TOWARD/`F~M` semantics remain supplied" in flat
         and "physical selection/dynamical generation of that stencil remains supplied" in flat,
     )

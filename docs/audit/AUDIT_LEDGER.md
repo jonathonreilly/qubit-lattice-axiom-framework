@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1003 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1416 |
+| unaudited | 1415 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
-| ~~audited_renaming~~ | 29 |
+| ~~audited_renaming~~ | 30 |
 | ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -73,24 +73,24 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 59 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
-| `audited_renaming` | 29 |
-| `unaudited` | 1738 |
+| `audited_renaming` | 30 |
+| `unaudited` | 1737 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1727 |
 | `decoration` | 61 |
-| `meta` | 329 |
+| `meta` | 330 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 754 |
+| `positive_theorem` | 753 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 885 |
-| `leaf` | 1427 |
+| `medium` | 884 |
+| `leaf` | 1428 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1753,6 +1753,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -2001,6 +2002,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Since T_m, T_delta, and T_q are all real, their imaginary parts vanish entrywise, so Im(H(m, delta, q_+)_{ij}) = Im(H_base_{ij}) for all entries.  _(class `A`)_
 - **chain closes:** True — The conclusions follow directly from the explicitly given matrices and ordinary matrix algebra. No cited upstream authority, physical identification, fitted value, or external comparator is needed.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the explicit real matrices supplied in the note. The runner source performs symbolic/exact checks of symmetry, rank, traces, trace dependence, and entrywise imaginary-part invariance rather than merely printing constants. The framework instance is only a specialization of the same algebraic closure and does not import a contested external premise.
+- **auditor confidence:** high
+
+### `ai_methodology.raw.canonical_framing_paragraph`
+
+- **Note:** [`ai_methodology/raw/canonical_framing_paragraph.md`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only the source note's registration of a canonical paper-facing AI-disclosure/accountability paragraph and its stated methodology-only boundary.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-ai_methodology.raw.canonical_framing_paragraph-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** This paragraph is the canonical version and may be cited for manuscript disclosure language and methodology framing, but not as a retained physics theorem, runner-backed derivation, or audit result.  _(class `E`)_
+- **chain closes:** True — Within the declared meta scope, the note closes by adoption/definition: it designates the quoted paragraph as canonical disclosure language and explicitly excludes physics-theorem use. No physics derivation or runner-backed scientific claim is established by this packet.
+- **rationale:** The load-bearing act is a definition/adoption of canonical disclosure text, not a derivation from framework premises. The source note itself correctly scopes the artifact as methodology/canonical-text registration only and forbids citation as a retained physics theorem or audit result. Thus the meta registration closes, but any positive-theorem interpretation would be only a definition substitution rather than a scientific derivation.
 - **auditor confidence:** high
 
 ### `ai_methodology.raw.prompts_session_ebae4639_jonreilly`

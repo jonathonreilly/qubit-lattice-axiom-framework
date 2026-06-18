@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1641 |
+| Applied audit verdicts | 1642 |
 | Retained-grade rows, including boxed decorations | 1499 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 218 |
 | Retained bounded rows | 1003 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 37 |
-| Unaudited rows | 1416 |
+| Unaudited rows | 1415 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 61 |
-| Audited renaming rows | 29 |
+| Audited renaming rows | 30 |
 | Audited numerical-match rows | 12 |
 | Citation cycles detected | 7 |
 
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1418 |
-| Ready rows | 2 |
+| Total pending rows | 1417 |
+| Ready rows | 1 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
-| Medium pending | 408 |
+| Medium pending | 407 |
 | Leaf pending | 438 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -77,8 +76,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 925 |
-| Leaf nodes | 1515 |
+| Medium nodes | 924 |
+| Leaf nodes | 1516 |
 
 Top load-bearing rows by graph score:
 

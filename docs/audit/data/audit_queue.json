@@ -3,7 +3,7 @@
     "critical": 307,
     "high": 265,
     "leaf": 438,
-    "medium": 408
+    "medium": 407
   },
   "cycle_break_target_count": 8,
   "cycle_break_targets": [
@@ -131,7 +131,7 @@
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['ai_methodology_note_2026-04-25', 'publication.ci3_z3.readme', 'repo.front_door_status'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 14,
       "primary_break_target": "ai_methodology.raw.canonical_framing_paragraph",
-      "primary_break_target_audit_status": "unaudited",
+      "primary_break_target_audit_status": "audited_renaming",
       "primary_break_target_criticality": "medium",
       "repair_class": "cycle_break_required"
     }
@@ -17450,30 +17450,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "ai_methodology.raw.canonical_framing_paragraph",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ai_methodology_note_2026-04-25"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.407,
-      "note_path": "docs/ai_methodology/raw/canonical_framing_paragraph.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 14
     },
     {
       "audit_independence_required": "any_non_self",
@@ -43110,6 +43086,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 2,
-  "total_pending": 1418
+  "ready_count": 1,
+  "total_pending": 1417
 }

@@ -1,12 +1,12 @@
 # Audit Queue
 
-**Total pending:** 1418
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 2
+**Total pending:** 1417
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 1
 
 By criticality:
 - `critical`: 307
 - `high`: 265
-- `medium`: 408
+- `medium`: 407
 - `leaf`: 438
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
@@ -79,6 +79,6 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 5 | `cycle-0005` | 5 | 630 | `ckm_down_type_scale_convention_support_note_2026-04-22` | critical | unaudited |
 | 6 | `cycle-0006` | 6 | 630 | `ckm_down_type_scale_convention_support_note_2026-04-22` | critical | unaudited |
 | 7 | `cycle-0007` | 2 | 84 | `koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12` | medium | unaudited |
-| 8 | `cycle-0008` | 4 | 14 | `ai_methodology.raw.canonical_framing_paragraph` | medium | unaudited |
+| 8 | `cycle-0008` | 4 | 14 | `ai_methodology.raw.canonical_framing_paragraph` | medium | audited_renaming |
 
 Full queue lives in `data/audit_queue.json`.

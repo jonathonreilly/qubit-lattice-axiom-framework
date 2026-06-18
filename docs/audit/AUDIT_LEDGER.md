@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 963 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 27 |
-| unaudited | 1523 |
+| unaudited | 1522 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 34 |
+| ~~audited_conditional~~ | 35 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1398 |
-| `audited_conditional` | 34 |
+| `audited_conditional` | 35 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1845 |
+| `unaudited` | 1844 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1011 | 52.98 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1027 | 49.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
@@ -1554,6 +1554,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_mru_demotion_note_2026-04-20` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11728,6 +11729,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** A single real anti-Hermitian D on a complex space simultaneously supports the antisymmetric bilinear omega(u,v)=u^T D v and the Hermitian sesquilinear h(u,v)=conj(u)^T(iD)v, so real-matrix D alone does not select the Pfaffian/per-block Wick face.  _(class `A`)_
 - **chain closes:** True — Within the stated boundary, the chain closes: D^T=-D gives both an antisymmetric real bilinear and Hermitian iD form, while the C3 centralizer, Jcs doublet square, Pfaffian/determinant degrees, and Q arithmetic check independently. The missing Wick-face selector is explicitly left out of scope.
 - **rationale:** The runner source performs actual finite matrix and symbolic checks rather than merely printing expected constants, and no helper imports or external comparators are involved. Independent algebra confirms the displayed signs, factors, projections, Pfaffian/determinant degrees, circulant commutation, and Q=(1+2r)/3 arithmetic. The cited authorities are retained-grade for the bounded content consumed here, and their open physical-identification language is not imported as a premise. The no-go discipline section narrows the negative result to one residual selector rather than claiming global impossibility.
+- **auditor confidence:** high
+
+### `koide_records_objectivity_conditional_note_2026-05-31`
+
+- **Note:** [`KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional algebra certificate: supplied equal-block (1,1) sector measure plus supplied records/objectivity maximization imply r=1/2 and Q=2/3, without deriving either selector.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_records_objectivity_conditional_note_2026-05-31-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For general weights w_s log E_+ + w_p log E_perp, the maximum occurs at r*=w_p/(2 w_s); equal weights give r=1/2 and hence Q=(1+2r)/3=2/3.  _(class `A`)_
+- **chain closes:** True — The algebraic extremum closes within the stated conditional scope: once the two selector inputs are supplied, the maximizer and Q value follow. The unrestricted derivation does not close because the equal-block measure and objectivity selector remain supplied premises.
+- **rationale:** Issue: the equal-block (1,1) sector measure and records/objectivity maximization selector are supplied hypotheses, not derived or registered primitives in the restricted packet. Why this blocks: the algebraic maximization is valid, but it cannot be promoted to an unconditional Koide derivation from Record or dephasing. Repair target: derive or explicitly admit one or both selector inputs in a separate source theorem or primitive and wire it as a dependency. Claim boundary until fixed: cite only as a non-circular conditional algebra certificate under the two supplied premises.
+- **open / conditional deps cited:**
+  - `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`
 - **auditor confidence:** high
 
 ### `koide_records_pointer_grounds_block_channel_note_2026-05-31`

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 933 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 16 |
-| unaudited | 1598 |
+| unaudited | 1597 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 11 |
@@ -36,6 +36,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | 1 |
+| `decoration_under_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
@@ -61,26 +62,26 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1350 |
 | `audited_conditional` | 18 |
-| `audited_decoration` | 49 |
+| `audited_decoration` | 50 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1920 |
+| `unaudited` | 1919 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1730 |
-| `decoration` | 51 |
+| `decoration` | 52 |
 | `meta` | 323 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 767 |
+| `positive_theorem` | 766 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 502 |
-| `medium` | 882 |
+| `high` | 501 |
+| `medium` | 883 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -1516,6 +1517,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` |
+| `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
 | `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
@@ -7928,6 +7930,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The load-bearing content is algebraic: a dimension-weighted character-evaluation matrix is simplified into radicals, its determinant is nonzero, and the displayed inverse formula is the exact matrix inverse. The W_A annihilation and the opposite signs of c and e check directly from the same angle identities, and the no-collapse statement is exactly the linear-algebra consequence of rank(F)=3. The runner source computes the character-evaluation matrix rather than merely printing expected constants, though its broader support checks are cross-note text checks and are not needed for this claim's closure. The cited beta6 seam authority remains open only for physical beta-side evaluation, which this source explicitly excludes from scope.
 - **open / conditional deps cited:**
   - `GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Given the retained local Wilson coordinates, radical sample matrix F, and coordinatewise retained positive cone, the adjoint-only family has the unique minimal positive repair r_min=-a^loc_(1,1), yielding a^min and Z^min on W_A,W_B,W_C.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Along the adjoint-only family a=(a^loc_(0,0),a^loc_(1,0),a^loc_(1,1)+t), cone membership is equivalent to t >= -a^loc_(1,1), so the unique minimum is t=-a^loc_(1,1).  _(class `A`)_
+- **chain closes:** True — The current packet supplies the upstream local-Wilson obstruction authority as retained_no_go, including Z^loc, F, and the negative adjoint coordinate. The completion claim then follows by coordinatewise nonnegativity on a one-dimensional half-line; it does not close any broader beta=6 environment realization.
+- **rationale:** Issue: the scoped result is an exact algebraic corollary of the retained parent obstruction rather than an independent framework computation. Why this blocks a clean theorem classification: once a^loc and F^{-1}Z>=0 are accepted, the half-line minimum and completed triple are standard arithmetic. Repair target: an independent promotion would need a new retained theorem realizing or deriving the completed triple beyond the parent inputs. Claim boundary until fixed: unique minimality is audited only along the declared adjoint-only repair route.
+- **decoration parent:** `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`

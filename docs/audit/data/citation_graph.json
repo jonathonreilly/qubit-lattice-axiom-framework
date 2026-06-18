@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "color_generation_independent_z3_structures_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "newton_derivation_top4_bridge_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
         "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
         "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
         "yt_ew_m_residual_note_2026-05-02",
-        "color_generation_independent_z3_structures_2026-06-05"
+        "color_generation_independent_z3_structures_2026-06-05",
+        "newton_derivation_top4_bridge_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "276fbb7b80858ff4f6f5cb8c4fc88e6f0f3cd4fe966378b859fd77c21c33eee0",
+      "note_hash": "fb367a0bfaa48d031e20a586c0543fdda4422c8fc4b5b64bb5780914c1b5dec7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

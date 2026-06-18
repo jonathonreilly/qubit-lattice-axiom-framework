@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1459 |
-| Retained-grade rows, including boxed decorations | 1407 |
+| Applied audit verdicts | 1460 |
+| Retained-grade rows, including boxed decorations | 1408 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 933 |
-| Boxed decorations under retained parents | 48 |
+| Boxed decorations under retained parents | 49 |
 | Open gates | 16 |
-| Unaudited rows | 1598 |
+| Unaudited rows | 1597 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 18 |
 | Audited renaming rows | 11 |
@@ -33,19 +33,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1600 |
+| Total pending rows | 1599 |
 | Ready rows | 155 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 269 |
-| Medium pending | 458 |
+| Medium pending | 457 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md) - medium; unaudited
 - [`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md) - medium; unaudited
+- [`gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md) - medium; unaudited
 - [`industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03`](../../docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md) - medium; unaudited
 - [`koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
 - [`yt_ew_m_residual_note_2026-05-02`](../../docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md) - medium; unaudited
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3523 |
 | Critical nodes | 574 |
-| High nodes | 508 |
-| Medium nodes | 921 |
+| High nodes | 507 |
+| Medium nodes | 922 |
 | Leaf nodes | 1520 |
 
 Top load-bearing rows by graph score:

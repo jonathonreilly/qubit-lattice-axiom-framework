@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 966 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 29 |
-| unaudited | 1511 |
+| unaudited | 1510 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 17 |
+| ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 37 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -68,14 +68,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 17 |
-| `unaudited` | 1833 |
+| `audited_renaming` | 18 |
+| `unaudited` | 1832 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1729 |
+| `bounded_theorem` | 1728 |
 | `decoration` | 56 |
-| `meta` | 325 |
+| `meta` | 326 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
 | `positive_theorem` | 761 |
@@ -1674,6 +1674,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -12047,6 +12048,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The implication from linear response to F~M = 1 closes as standard log-log slope algebra once the upstream Kubo coefficient and the runner's selected linearity subset are accepted. It does not establish an independent positive theorem because the F~M result is forced by the same measured linearity condition used to define the subset.
 - **rationale:** Issue: the decisive step is the algebraic identity that a response proportional to s has log-log slope 1. Why this blocks: the runner's headline 15/41 subset is selected by measured linearity ratios across the same strengths used to fit F~M, so the near-1 F~M result is a corollary of the subset definition rather than an independent derivation of a new battery condition. Repair target: present this as a bounded range-of-validity diagnostic under the true-Kubo parent, or add an independent criterion that does not mathematically enforce the F~M slope. Claim boundary until fixed: the runner supports that its selected linearity-regime families have the reported F~M statistics, conditional on the upstream Kubo coefficient.
 - **decoration parent:** `linear_response_true_kubo_note`
+- **auditor confidence:** high
+
+### `lanes.generated-geometry.readme`
+
+- **Note:** [`lanes/generated-geometry/README.md`](../../docs/lanes/generated-geometry/README.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only the README's metadata/navigation claim: it groups generated-geometry source rows and runner entry points and is not itself authority for the underlying science.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-lanes.generated-geometry.readme-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The README defines its boundary as a lane index/navigation surface only and says it adds no standalone scientific theorem, proof, or bounded computation beyond the cited source notes.  _(class `E`)_
+- **chain closes:** True — The source note's own conclusion is a boundary definition, not a physics derivation. The cited authorities are supplied as retained-bounded inputs for the underlying rows, and the README does not claim more than pointing to them.
+- **rationale:** The load-bearing step is definitional: it assigns lane/navigation scope and explicitly disclaims standalone theorem status. The provided primary runner appears to compute the Gate B bounded comparison rather than merely print constants, but that computation belongs to a cited source note, not to an independent README theorem. No registered primitive is relevant to this metadata boundary.
 - **auditor confidence:** high
 
 ### `lattice_3d_dense_refinement_reconciliation_note`

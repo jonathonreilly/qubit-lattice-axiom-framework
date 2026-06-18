@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "newton_derivation_top4_bridge_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30"
+      "to": "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19",
         "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
         "yt_ew_m_residual_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
         "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
+        "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
         "newton_derivation_top4_bridge_note",
-        "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30"
+        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d16f1a7a5d66a8bd03cc0557dccb4850c1608c59fa5a7d7837fd8f5cfd2cbb01",
+      "note_hash": "61b8b64e1e14faf634566e8985e7eb62f7cbe967652c449bcf5dd3d7a5eb0001",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

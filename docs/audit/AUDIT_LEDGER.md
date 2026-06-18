@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 17 |
-| unaudited | 1591 |
+| unaudited | 1590 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 19 |
+| ~~audited_conditional~~ | 20 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1354 |
-| `audited_conditional` | 19 |
+| `audited_conditional` | 20 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1913 |
+| `unaudited` | 1912 |
 
 | claim_type | count |
 |---|---:|
@@ -1500,6 +1500,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_mru_demotion_note_2026-04-20` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11126,6 +11127,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The block determinant identity for n=3 gives det D = -det(M Mdag), and det(M Mdag)=|det M|^2, so the Hermitian corner-Dirac reading is modulus-squared with paired singular values. The Pfaffian and uniform determinant-power variants reduce to determinant magnitude or unchanged ratios, while the note explicitly leaves non-tested selector routes open.
 - **rationale:** The load-bearing result is a direct algebraic identity for the supplied finite matrix, independently checkable from the block determinant theorem and singular-value pairing. The runner source actually constructs the matrices and verifies the identities rather than importing fitted numbers or external comparators. The no-go discipline gate is satisfied only for the narrow determinant-family route-pruning claim because the packet names and preserves open non-tracial, chiral, finite-gap, explicit block-measure, and other readout routes.
 - **auditor confidence:** medium
+
+### `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`
+
+- **Note:** [`KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Within the Hermitian C3-circulant Yukawa family, r=1/2 is the equal singlet/doublet channel-energy condition and is not forced by the enumerated C3/S3 unitary symmetry routes while preserving three distinct masses.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** C3 leaves r free, S3 axis-permutation symmetry forces a twofold degeneracy, there is no subgroup strictly between C3 and S3, and the 1D singlet cannot be unitarily swapped with the 2D doublet.  _(class `A`)_
+- **chain closes:** False — The finite algebra closes for the four enumerated routes. However the binding no-go discipline gate for a clean no-go is not satisfied because N1 enumerates only four distinct attack routes, below the required five-route stress test.
+- **rationale:** Issue: the algebraic proof and runner support the four listed obstructions, but the source note's N1 route enumeration names only C3, S3, the subgroup gap, and singlet/doublet swap. Why this blocks: current no-go policy requires at least five distinct attack routes before an audited_clean no-go, even when the mathematical core is exact. Repair target: add a fifth distinct checked route or split this into a bounded algebraic support identity for the four listed routes. Claim boundary until fixed: the four-route finite-algebra obstruction is supported, but the row should not land as a clean no-go under the current gate.
+- **auditor confidence:** high
 
 ### `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15`
 

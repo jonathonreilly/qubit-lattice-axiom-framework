@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 212 |
+| **retained** | 213 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 911 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
 | unaudited | 1648 |
-| audit_in_progress | 1 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 3 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 1317 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 1318 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
@@ -132,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -425,6 +423,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `evolving_network_prototype_v6_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ew_current_matching_ozi_suppression_theorem_note_2026-04-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5646,6 +5645,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Completion A with kappa_EW=0 and Completion B with kappa_EW=1 share the retained Fierz ratio, color-blind CMT scaling, and O(1/N_c^2) disconnected size, but give different EW matching factors 9/8 and 1.  _(class `A`)_
 - **chain closes:** True — The chain closes as an algebraic independence witness over the stated restricted packet: the two completions agree on all listed retained primitive data while disagreeing on K_EW. The cited Fierz authority supplies the exact 8/9 channel fraction and explicitly does not derive the matching selector.
 - **rationale:** The load-bearing step is class A rather than a numerical match: the runner recomputes rational channel fractions, CMT cancellation, OZI boundedness, and the two-completion witness. The cited authority is retained-grade for the Fierz/channel ratio, and the source does not import the open matching rule as a premise; it shows that the listed premises do not select it. The no-go gate passes on the restricted packet: attack routes through Fierz arithmetic, CMT scaling, bounded OZI, excluding full-trace readout, and convention or structural-input ratification all require adding a selector not present in the packet.
+- **auditor confidence:** high
+
+### `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`
+
+- **Note:** [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](../../docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling relation, rho_tree identity, and scalar Hessian companion for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** At the neutral Higgs vacuum, the kinetic term gives g^2 v^2/8[(W_mu^1)^2+(W_mu^2)^2] plus v^2/8(g W_mu^3 - g_Y B_mu)^2, equivalently the neutral mass matrix v^2/4 [[g^2,-g g_Y],[-g g_Y,g_Y^2]].  _(class `A`)_
+- **chain closes:** True — The stated gauge representation, Higgs vacuum, hypercharge, and covariant derivative fix the charged norm and the rank-one neutral mass matrix. Exact diagonalization gives the W, Z, and photon spectrum, Q=T_3+Y, e=g sin(theta_W)=g_Y cos(theta_W), and rho_tree=1 without external inputs.
+- **rationale:** The load-bearing step is exact algebra over the note's explicit one-doublet electroweak assumptions, not a numerical match or a symbol renaming. The runner source constructs the Pauli matrices, vacuum actions, mass matrix, eigenvectors, Weinberg rotation, coupling identities, and scalar Hessian symbolically rather than merely printing PASS lines. No cited dependency, primitive import, external comparator, pole-mass input, or loop-level claim is needed for the audited tree-level scope.
 - **auditor confidence:** high
 
 ### `ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09`

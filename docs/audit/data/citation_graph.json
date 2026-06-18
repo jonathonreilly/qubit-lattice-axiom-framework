@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12"
+      "to": "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13",
         "depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12",
         "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12",
         "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
         "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+        "epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12"
+        "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "008d5e96a8d86c240bc37903d119153f3aeec8f7a032af4405df130fa47f963f",
+      "note_hash": "a8e52703d008f411b464fad525d92a3a95f4d34df8f804245311d4abbdb3f6aa",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

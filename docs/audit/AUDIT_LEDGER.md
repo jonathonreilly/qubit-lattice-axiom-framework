@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 974 |
+| **retained_bounded** | 975 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1492 |
+| unaudited | 1491 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1412 |
+| `audited_clean` | 1413 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1814 |
+| `unaudited` | 1813 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 891 |
-| `leaf` | 1421 |
+| `medium` | 894 |
+| `leaf` | 1418 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -360,6 +360,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5014,6 +5015,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the four specified records, the principal-branch depth tail is reproduced by g(theta)=u(theta)-2*pi*J(theta)-mean with J(theta)=round((u(theta)-Arg(exp(i*u(theta))))/(2*pi)).  _(class `A`)_
 - **chain closes:** True — Given F(q)=q^-3 c prod_j(q-r_j), the determinant ratio F(q exp(i delta))/F(q) gives the stated unwrapped root-sum phase, and J applies the integer principal-branch correction. The runner source computes the finite state records, Laurent coefficients, roots, branch correction, and harmonic tails; frozen references are gates, not construction inputs.
 - **rationale:** The load-bearing step is a finite algebraic identity check over the supplied determinant-root inputs, not a renaming or tuned external numerical match. The completed runner reports TOTAL: PASS=49 FAIL=0 and its source actually computes the determinants, root splits, winding, branch jumps, corrected values, weights, and ordering. There are no cited non-retained dependencies or external comparator imports in the restricted packet, and the claim is explicitly bounded to the four supplied records.
+- **auditor confidence:** high
+
+### `depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`DEPTH_LAURENT_ROOT_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/DEPTH_LAURENT_ROOT_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the supplied zB L=3 K3-K6 states, the tested scalar root-moduli expression for T_ge3 is refuted, while the measured depth tail and ordering are recovered from the principal-branch Laurent determinant phase law.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner reconstructs the degree-3 Laurent determinant for the supplied L=3 K3-K6 states, factors the six numerator roots, and verifies that the per-root principal-branch phase sum reproduces the measured ladder weights while the scalar root-moduli formula has large residuals and wrong ordering.  _(class `C`)_
+- **chain closes:** True — Within the declared finite-state scope, the runner constructs the L=3 lattice Hamiltonian and supplied state projectors, computes determinant-polar phase increments and harmonic weights, reconstructs and factors the Laurent determinant, and evaluates the root-power scalar residuals. The hard-coded landed constants are used as anchor checks; the branch-law reproduction, residuals, and orderings are computed by the runner.
+- **rationale:** The source code is not a printout-only or pure expected-value matcher: it performs the determinant, Laurent reconstruction, root factorization, phase-law, harmonic-weight, residual, and ordering computations directly for the scoped finite states. The imported landed values serve as validation anchors, but the contested scalar-form refutation does not rely on those anchors alone. The clean verdict is bounded to the supplied L=3 K3-K6 state evaluations and does not derive state selection, all-L behavior, or impossibility of every scalar root invariant.
 - **auditor confidence:** high
 
 ### `det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12`

@@ -1,12 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
-runner_sha256: 1caf8f8d25f7a679ee19dc65519ac787260c08e933c8995b9da2697300a31655
+runner_sha256: 2088bcbe497ecf4725b39a9151c95606d0a9e47cd2b8967bc7047805e550dadb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 SM GSTAR I12 EMPIRICAL THERMAL COMPARATOR BRIDGE
+PASS: note contains boundary phrase: Actual current-surface status:** conditional-support arithmetic over explicit
+PASS: note contains boundary phrase: Trace class:** upstream_support
+PASS: note contains boundary phrase: Proposal allowed:** false
+PASS: note contains boundary phrase: Bare retained allowed:** false
+PASS: note contains boundary phrase: 2026-06-18 Audit-Scope Repair
+PASS: note contains boundary phrase: the row to be narrowed to pure arithmetic over explicit admitted premises
+PASS: note contains boundary phrase: This source repair takes the second path
+PASS: note contains boundary phrase: No one of A1-A4 is derived here
+PASS: note contains boundary phrase: conditional arithmetic over admitted empirical m_nu and thermal-rate
 PASS: note contains boundary phrase: admitted empirical small-neutrino-mass observation
 PASS: note contains boundary phrase: Gamma_nuR ~ y_nu^2 T
 PASS: note contains boundary phrase: H ~ 1.66 sqrt(g_*) T^2 / M_Pl
@@ -33,9 +42,13 @@ PASS: 0.6 eV generous edge is more than three decades below threshold (3.54)
 PASS: thermalization at 100 GeV implies m_nu above 1 keV (2.063e+03 eV)
 PASS: thermalization at 100 GeV is above 0.6 eV comparator by > 1000x
 PASS: note does not claim audit-retained status
+PASS: note does not allow bare retained wording
+PASS: note marks the arithmetic as conditional-support
 PASS: note keeps small mnu derivation excluded
+PASS: note keeps thermal-rate derivation excluded
+PASS: downstream citation rule prevents retained authority use
 PASS: note denies new axiom
-TOTAL: PASS=28 FAIL=0
+TOTAL: PASS=41 FAIL=0
 VERDICT: bounded comparator bridge passes
 
 ----- stderr -----

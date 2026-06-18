@@ -1,0 +1,13 @@
+slug: sm-gstar-i12-admitted-arithmetic-20260618
+branch: codex/sm-gstar-i12-admitted-arithmetic-20260618
+target_status: conditional-support
+active_route: admitted-premise arithmetic scope repair
+target_claim_id: sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15
+target_blocker_text: "missing_bridge_theorem: provide retained or accepted authority for the empirical m_nu comparator and the Gamma_nuR/H thermalization estimate, or narrow the row to pure arithmetic over explicitly admitted premises."
+files_touched:
+  - docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md
+  - scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
+  - logs/runner-cache/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.txt
+review_loop: "not run; delegated to Codex reviewer"
+audit_or_ledger_edits: false
+next_action: "Reviewer/audit can re-audit as admitted-premise arithmetic over A1-A4."

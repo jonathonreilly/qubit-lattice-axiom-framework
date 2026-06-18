@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_markov_generator_premise_classifier_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "s3_time_tensor_build_memo"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "s3_time_tensor_build_memo"
+      "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "record_markov_generator_premise_classifier_2026-06-06",
         "record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15",
         "record_prerecord_instrument_kernel_gate_2026-06-06",
         "residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13",
         "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
+        "s3_time_tensor_build_memo",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "s3_time_tensor_build_memo"
+        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "65cf04c9e42c8d3a93711cba635ced1447dc581231c3ab3a47f0233d7ab43bdb",
+      "note_hash": "75b0532965de180920fa55d056441481fcc467984ab24022fae213ceb10c3455",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

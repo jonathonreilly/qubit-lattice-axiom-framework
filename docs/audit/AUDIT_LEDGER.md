@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 219 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 993 |
+| **retained_bounded** | 994 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1437 |
+| unaudited | 1436 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 27 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1440 |
+| `audited_clean` | 1441 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1759 |
+| `unaudited` | 1758 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 891 |
-| `leaf` | 1421 |
+| `medium` | 892 |
+| `leaf` | 1420 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1216,6 +1216,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -17821,6 +17822,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner classifies dynamics claims into four premise levels separating post-record information, production kernels, Markov semigroups, and physical-rate models.  _(class `E`)_
 - **chain closes:** False — The finite matrix checks close exactly, but the classifier gates themselves are stipulated as a premise map. No cited authority or first-principles axiom derivation is provided showing that this taxonomy follows rather than being defined.
 - **rationale:** Issue: the load-bearing classifier levels and gates are introduced by definition, not derived from retained inputs or first-principles framework dynamics. Why this blocks: the note can support a reusable taxonomy and exact finite examples, but not a retained derivation of a dynamics law, kernel, bridge, clock, or rate normalization. Repair target: supply a theorem deriving the gate structure from accepted axioms or split the finite algebraic checks from the stipulated classifier surface. Claim boundary until fixed: cite only the premise discipline and the checked two-state examples.
+- **auditor confidence:** high
+
+### `record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15`
+
+- **Note:** [`RECORD_POINTER_CONTROLLED_COUPLING_FINITE_EXAMPLE_BOUNDED_THEOREM_NOTE_2026-06-15.md`](../../docs/RECORD_POINTER_CONTROLLED_COUPLING_FINITE_EXAMPLE_BOUNDED_THEOREM_NOTE_2026-06-15.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The explicit finite qubit controlled-coupling model with Pi_S=sigma_z(S), environment initialized to |0>^n, and t_rec=pi/(4g) forms full singleton pointer records, preserves pointer populations, preserves an already written fragment under a later local controlled step, and does not derive or select g.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At t_rec = pi/(4g), U_rec = exp(-i H_rec t_rec) writes orthogonal pointer-conditioned states into each singleton fragment while H_rec(g)=g sigma_z(S) sum_k sigma_x(E_k) commutes with Pi_S.  _(class `A`)_
+- **chain closes:** True — The controlled Hamiltonian is diagonal in the pointer basis, so pointer populations are preserved, and at pi/(4g) the two conditional X-rotated environment states are orthogonal. The runner constructs the finite Pauli operators, unitaries, reductions, conditional fragment states, and mutual informations directly, with no external comparator or upstream note import.
+- **rationale:** The claim is limited to a concrete finite sufficiency example and explicitly excludes the broader objective-record iff pointer-nondemolition equivalence, pointer derivation, dynamics derivation, coupling selection, beta=6, or gauge-coupling claims. The load-bearing step is an exact finite operator-algebra closure from the declared Hamiltonian, pointer observable, initial environment state, and rescaled recording time. The runner source actually computes the commutators, evolved states, reductions, entropies, mutual informations, orthogonality, persistence, and demolition controls rather than printing constants or importing contested premises.
 - **auditor confidence:** high
 
 ### `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15`

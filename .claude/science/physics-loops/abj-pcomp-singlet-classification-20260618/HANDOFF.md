@@ -1,6 +1,7 @@
 # Handoff
 
 Branch: `codex/abj-pcomp-singlet-classification-20260618`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4309
 
 This block adds an exact scale-free classifier for the arithmetic part of
 the ABJ `P-COMP` premise. It proves that on the native left-handed surface

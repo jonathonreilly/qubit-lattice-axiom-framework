@@ -14,5 +14,6 @@ open_imports:
   - B-AXIS one-clock cap
 trace_gate: direct_blocker_closure_partial
 review_disposition: reviewer_owned_not_run
-pr_status: pending
-next_exact_action: run runner, cache, py_compile, diff guards, commit, push, open PR
+pr_status: opened
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4309
+next_exact_action: reviewer extracts science; next worker can attempt physical P-COMP slot/minimality bridge

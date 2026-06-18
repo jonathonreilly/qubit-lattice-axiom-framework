@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 980 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1476 |
+| unaudited | 1475 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1420 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1798 |
+| `unaudited` | 1797 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 898 |
-| `leaf` | 1414 |
+| `medium` | 891 |
+| `leaf` | 1421 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1584,6 +1584,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gate_b_operator_cauchy_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -8417,6 +8418,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Both the label-grown control family and the geometry-sector candidate family satisfy the zero/neutral, antisymmetry, nonzero signal, sign-orientation, and charge-linearity PASS/FAIL checks on the retained-bounded grown row.  _(class `C`)_
 - **chain closes:** True — The cited grown-distance-law authority is retained_bounded and supplies the bounded grown row. The primary runner and included helper source instantiate the grown geometry, source field, propagation, detector centroid, and transfer checks directly rather than replaying hard-coded expected values.
 - **rationale:** The load-bearing evidence is the completed runner output with PASS=14 FAIL=0, supported by source code that actually computes the quantities under test. The only one-hop cited authority is retained_bounded and is used narrowly to identify the grown-row construction and parameters. The claim remains bounded to this seed-0 finite-runner row and does not establish a family-wide replacement or general geometry-sector theory.
+- **auditor confidence:** high
+
+### `gate_b_operator_cauchy_note_2026-05-10`
+
+- **Note:** [`GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md`](../../docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded audit of the specified Gate B operator-Cauchy probe: resolution refinement on r in {1,2,3,4}, jittered fixed-connectivity ensemble refinement on N in {2,4,8,16,32,64}, and method-mismatch diagnosis for the finite-box restricted strong-field closure row.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-gate_b_operator_cauchy_note_2026-05-10-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Both tested Cauchy gates fail: the resolution-refinement increments have R^2 = 0.5998 and are non-monotone, and the jitter ensemble increments have R^2 = 0.1798 and are non-monotone.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the two stated Gate B Cauchy gates from the supplied harness code and the reported failures follow. The broader no-go phrasing that the method does not extend cleanly to the Gate B family is not clean under the no-go-discipline gate because the packet does not document five distinct alternative attack routes or an N1-N8 stress test.
+- **rationale:** Issue: the computed bounded core supports failure of the two specified operator-Cauchy axes and a finite-box method-mismatch diagnosis, but the source elevates that into a family-level no-go without the required N1-N8 no-go discipline record. Why this blocks: a negative claim may not be recorded as clean when plausible alternative routes, observable bases, scalings, or algebraic reparametrizations have not been explicitly stress-tested or ruled out. Repair target: add a visible no-go-discipline checklist or narrow the claim to the two completed Cauchy gates plus the restricted strong-field method-mismatch note. Claim boundary until fixed: bounded negative evidence for the tested axes only.
 - **auditor confidence:** high
 
 ### `gate_b_poisson_self_gravity_note`

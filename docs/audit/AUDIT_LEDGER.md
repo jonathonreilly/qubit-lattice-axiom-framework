@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 920 |
+| **retained_bounded** | 921 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1628 |
+| unaudited | 1627 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 6 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1330 |
+| `audited_clean` | 1331 |
 | `audited_conditional` | 14 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 6 |
-| `unaudited` | 1950 |
+| `unaudited` | 1949 |
 
 | claim_type | count |
 |---|---:|
@@ -115,7 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 785 | 38.12 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1114 | 36.62 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1113 | 36.62 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1086 | 35.59 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 924 | 34.85 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 34.66 | `unaudited` | unaudited |
@@ -123,7 +123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 206 | 31.19 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1116,6 +1116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -15438,6 +15439,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Record excludes measurement/decoherence dynamics and the Lattice/Quantum/Record baseline fixes neither dynamics nor state, so baseline-consistent no-record witnesses such as H=0, decoupled H, and energy eigenstates defeat unconditional record-formation forcing.  _(class `A`)_
 - **chain closes:** True — The cited axiom memo explicitly excludes dynamics and state selection, and the displayed witnesses are exact countermodels to unconditional forcing. The conclusion is only the narrow no-go against baseline-only unconditional record formation, not a claim that records never form.
 - **rationale:** The load-bearing step is an algebraic/logical closure over the accepted minimal-axiom premise plus exact finite-dimensional unitary witness checks. The runner source computes coherence preservation for H=0 and decoupled dynamics, verifies stationarity for an eigenstate, and treats the coupled decoherence case only as non-load-bearing contrast. The no-go passes the N1-N8 discipline gate because it is scoped to unconditional forcing from the baseline and explicitly leaves conditional record-production models open.
+- **auditor confidence:** high
+
+### `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`
+
+- **Note:** [`RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite qubit S+E model: pointer-population persistence iff [H_int, Pi_S] = 0, plus sufficient redundant record formation for the stated local controlled-copy interaction with fresh/idle fragments under the explicit Darwinism record bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the stated finite S+E model and quantum-Darwinism record convention, persistent pointer records require pointer non-demolition [H_int, Pi_S] = 0, and the nonzero local controlled-copy Hamiltonian g sigma_z(S) tensor sum_k sigma_x(E_k) at t = pi/(4g) suffices to form redundant objective records.  _(class `C`)_
+- **chain closes:** True — Within the explicitly bounded finite model, the Heisenberg commutator criterion and the controlled-copy record calculation close. The runner constructs the Hilbert-space operators, unitaries, partial traces, pointer Holevo information, redundancy, counterexamples, and transfer commutators rather than hard-coding a target result.
+- **rationale:** The note does not claim to derive the Darwinism record bridge, physical dynamics, beta value, or OS record channel; those are either explicit bounded inputs or excluded. The load-bearing finite-model claims are directly checked by dense matrix computation and elementary commutator algebra, with QND-alone counterexamples preventing the main overclaim. The retained-bounded companion and accepted minimal-axiom premise introduce no open dependency downgrade for this scoped bounded theorem.
 - **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`

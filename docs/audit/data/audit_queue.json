@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 304,
-    "high": 283,
+    "high": 282,
     "leaf": 569,
     "medium": 474
   },
@@ -8860,32 +8860,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.7,
-      "note_path": "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py",
-      "transitive_descendants": 103
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "action_normalization_note",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -9017,15 +8991,15 @@
         "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
         "yt_source_action_support_packet_note_2026-05-22"
       ],
-      "direct_in_degree": 13,
+      "direct_in_degree": 14,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.892,
+      "load_bearing_score": 12.17,
       "note_path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
-      "transitive_descendants": 20
+      "transitive_descendants": 35
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -18017,6 +17991,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "record_formation_to_kraus_isometry_bridge_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+        "persistent_record_as_kraus_operator_note_2026-05-20"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.333,
+      "note_path": "docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py",
+      "transitive_descendants": 56
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18322,6 +18321,33 @@
       "ready": true,
       "runner_path": "scripts/newton_derivation_top4_bridge_runner.py",
       "transitive_descendants": 27
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "key_terminology",
+        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+        "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.255,
+      "note_path": "docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_darwinism_bridge_residual_2026_06_05.py",
+      "transitive_descendants": 26
     },
     {
       "audit_independence_required": "any_non_self",
@@ -21385,31 +21411,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_split2_upper_m_slack_floor_endpoint_candidate.py",
-      "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_formation_to_kraus_isometry_bridge_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-        "persistent_record_as_kraus_operator_note_2026-05-20"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.333,
-      "note_path": "docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py",
       "transitive_descendants": 56
     },
     {
@@ -24888,33 +24889,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/gravity_signed_sector_harness.py",
-      "transitive_descendants": 26
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-        "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.255,
-      "note_path": "docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_darwinism_bridge_residual_2026_06_05.py",
       "transitive_descendants": 26
     },
     {
@@ -48727,6 +48701,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 159,
-  "total_pending": 1630
+  "ready_count": 160,
+  "total_pending": 1629
 }

@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-"""Flavor carrier from framework baseline UP: the momentum-factor carrier TYPE is FORCED; the hw=1 triplet LOCUS
-reduces to one named chiral operator-class import (= the framework's recurring chirality gate);
-the basepoint r=1/2 is a separate continuous input.
+"""Flavor carrier parent-boundary runner.
 
-User directive: forget retained/non-retained ledger status; derive from the axioms up.
-Workflow wf_de220c3f-291 (25 agents: 6 axioms-up routes + 3-lens adversarial verify + synth).
-Verdict: carrier_derived_modulo_one_principle (the principle is a GENUINE import, not definitional).
+The momentum-factor carrier TYPE is forced on the finite translation
+representative; the physical hw=1 triplet LOCUS remains a named chiral
+operator-class import; the basepoint r=1/2 and readout class are separate
+inputs. This runner verifies the source boundary of the combined parent note
+and does not write an audit verdict.
+
+Workflow wf_de220c3f-291 (25 agents: 6 axioms-up routes + 3-lens adversarial
+verify + synth).
+Verdict: conditional_parent_with_clean_layer_a_split.
 
 TWO LAYERS (the synthesis' clean split, verified here):
 
@@ -24,16 +28,22 @@ TWO LAYERS (the synthesis' clean split, verified here):
     staircase 0,2r,4r,6r), NOT hw=1. Singling out the hw=1 C_3 triplet requires the staggered/
     Kawamoto-Smit FIRST-ORDER CHIRAL operator = single-mode Grassmann fermionization of the M_2(C)
     qubit + chiral anticommutation {epsilon=(-1)^(x+y+z), D}=0. The current qubit substrate supplies a BOSONIC qubit; these are
-    PREMISES (genuine import). This import COINCIDES with the framework's already-identified generation-
-    ID / Koide-Q=2/3 chirality gate family (the C_3-orbit-splitting chiral grading) -- so the carrier
-    locus aligns with the recurring chirality import rather than adding a separate independent gate.
+    PREMISES (genuine import). This import is gate-aligned with the framework's
+    already-identified generation-ID / Koide-Q=2/3 chirality gate family
+    (the C_3-orbit-splitting chiral grading), but the physical locus bridge
+    remains open.
 
   BASEPOINT r=|b|^2/a^2=1/2: separate continuous Yukawa input, untouched by the discrete pole structure.
 """
 import itertools
+from pathlib import Path
+
 import numpy as np
 import sympy as sp
 
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md"
+SPLIT_NOTE_PATH = ROOT / "docs" / "FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md"
 W = np.exp(2j * np.pi / 3)
 
 
@@ -46,6 +56,10 @@ def check(name, cond, detail=""):
 
 def hw(k):
     return sum(1 for x in k if abs(x - np.pi) < 1e-9)
+
+
+def flat(text):
+    return " ".join(text.split())
 
 
 def main():
@@ -137,17 +151,40 @@ def main():
         abs((1 / 3 + 2 / 3 * 0.5) - 2 / 3) < 1e-12 and abs((1 / 3 + 2 / 3 * 1.0) - 1.0) < 1e-12,
         "discrete pole/corner structure fixes delta=2/9 only; the continuous Yukawa modulus r is a separate input"))
 
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    split_note = SPLIT_NOTE_PATH.read_text(encoding="utf-8")
+    note_flat = flat(note)
+    split_flat = flat(split_note)
+    passed.append(check(
+        "E1 parent source declares open_gate conditional integration map, not bounded theorem",
+        "**Claim type:** open_gate / conditional integration map" in note
+        and "**Claim type:** bounded_theorem" not in note
+        and "not a retained-status proposal" in note_flat))
+    passed.append(check(
+        "E2 clean Layer-A carrier-type theorem is delegated to the 2026-06-15 split",
+        "FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md" in note
+        and "clean Layer-A content should be read through the split theorem" in note_flat
+        and "This split proves only item 1" in split_note
+        and "does not claim that the physical generation locus is forced to be `hw=1`" in split_flat))
+    passed.append(check(
+        "E3 parent keeps hw=1 locus, r=1/2, and readout class explicitly open",
+        "not a removal of the locus premise" in note_flat
+        and "r=1/2` and the readout class" in note_flat
+        and "Does not claim that the physical `hw=1` locus, `r=1/2`, or the readout" in note_flat
+        and "not a new input" not in note_flat
+        and "not a new independent input" not in note_flat))
+
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
-    print("VERDICT: carrier_derived_modulo_one_principle. LAYER A (carrier TYPE = momentum, not position) is")
+    print("VERDICT: conditional_parent_with_clean_layer_a_split. LAYER A (carrier TYPE = momentum, not position) is")
     print("FORCED from framework baseline: [H_dyn,T_mu]=0 + spectral theorem => basis-independent BZ decomposition; local")
     print("observables generation-blind; flavor-separating observables are momentum-block (corner) operators;")
     print("the extensive Gamma_5 position index vanishes. This is the genuine advance -- the position-vs-")
     print("momentum carrier question is dissolved as a theorem of A2. LAYER B (which LOCUS = hw=1 triplet) is")
     print("NOT forced by framework baseline: the dispersion zero locus is all 8 corners and a Wilson operator prefers hw=0;")
     print("the hw=1 C_3 triplet needs the staggered/Kawamoto-Smit first-order CHIRAL operator (single-mode")
-    print("Grassmann + {epsilon,D}=0) -- a genuine import that aligns with the framework's named")
-    print("generation-ID / Koide-Q=2/3 chirality gate family. This is gate alignment, not closure of")
-    print("the physical generation bridge. BASEPOINT r=1/2 remains a separate continuous Yukawa input.")
+    print("Grassmann + {epsilon,D}=0) -- a genuine import that is gate-aligned with the framework's named")
+    print("generation-ID / Koide-Q=2/3 chirality family. This is gate alignment, not closure of")
+    print("the physical generation bridge. BASEPOINT r=1/2 and the readout class remain separate inputs.")
     print("Sources: STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md")
     print("(BlockT1 + {epsilon,D}=0), KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md,")
     print("and KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md.")

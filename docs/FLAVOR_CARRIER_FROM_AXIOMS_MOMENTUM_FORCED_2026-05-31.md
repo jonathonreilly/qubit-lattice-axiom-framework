@@ -1,9 +1,15 @@
 # Flavor carrier from framework baseline up: the momentum-factor carrier TYPE is FORCED; the hw=1 triplet LOCUS reduces to the one chiral operator-class import (the framework's recurring chirality gate); r=1/2 stays a separate input
 
 **Date:** 2026-05-31
-**Claim type:** bounded_theorem
-**Claim boundary:** positive partial derivation (Layer A forced from axioms) + a sharp gate-reduction (Layer B = one named import) + an input separation. Not a full closure.
-**Runner:** `scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py` (SCORECARD 8/8).
+**Claim type:** open_gate / conditional integration map
+**Claim boundary:** positive carrier-type derivation is split into the
+2026-06-15 carrier-type theorem; this parent remains the conditional
+integration map for the physical `hw=1` locus bridge, the `r=1/2`
+input, and the readout-class input. Not a full closure and not a
+retained-status proposal.
+**Status authority:** independent audit lane only. This source note
+does not set or predict an audit outcome.
+**Runner:** `scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py` (SCORECARD 12/12).
 **Source:** workflow `wf_de220c3f-291` — 6 axioms-up routes + 3-lens adversarial verification + synthesis (25 agents). Directive: derive the carrier from framework baseline up, ledger status set aside.
 
 **Post-audit split (2026-06-15).** The clean carrier-type theorem is
@@ -12,6 +18,15 @@ now extracted as
 This parent note remains the combined conditional packet for the physical
 `hw=1` locus bridge, the `r=1/2` input, and the readout-class input. The split
 does not apply an audit verdict; independent audit owns any status change.
+
+**Parent-boundary repair (2026-06-18).** The clean Layer-A content should be
+read through the split theorem above. This parent no longer proposes a bounded
+theorem for the combined carrier package. Its remaining source job is to name
+the open bridges without charging them twice: the staggered/KS `hw=1` locus is
+gate-aligned with the recurring generation-ID/chirality family, but that is not
+a derivation of the physical generation locus; `r=1/2` and the readout class
+remain separate inputs. No new axiom, audit verdict, or physical locus/readout
+closure is introduced here.
 
 ## Question
 The carrier sub-claim is: the physical charged-lepton flavor observable lives on the intrinsic
@@ -62,9 +77,10 @@ the same named chirality-gate family tracked by
 [`KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`](KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md)
 and the scope-limited
 [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md).
-So the carrier *locus* is **not a new independent input**; it collapses into the one recurring chirality
-import family the flavor sector already isolates. This consolidation is a gate alignment, not a proof
-that the physical generation bridge has closed.
+So the carrier *locus* is gate-aligned with the one recurring chirality import
+family the flavor sector already isolates. This is a bookkeeping
+consolidation, not a proof that the physical generation bridge has closed and
+not a removal of the locus premise.
 
 (Note: "physical species = propagator poles / band-degeneracies" is *near-definitional* once you have a
 propagator — granting it changes nothing; it only labels *which* momenta in T³ are species. The genuine
@@ -82,21 +98,24 @@ orthogonal to carrier selection.
 ## Net standing of the charged-lepton flavor inputs (after this attack)
 1. **Carrier TYPE = momentum factor** — **DERIVED** from framework baseline (spectral theorem on commuting translations).
 2. **Carrier LOCUS = hw=1 triplet** — reduces to the **chiral operator-class import** (staggered/KS;
-   single-mode Grassmann + `{ε,D}=0`), which **coincides with** the framework's recurring generation-ID /
-   `Q=2/3` chirality gate — *not a new input*.
+   single-mode Grassmann + `{ε,D}=0`), which is gate-aligned with the framework's recurring generation-ID /
+   `Q=2/3` chirality family. This remains an open physical-locus bridge.
 3. **Basepoint r=1/2** — a separate continuous Yukawa input.
 4. **Readout-class** (retain the index density over the bare character to land δ=2/9, not −1) — a separate
    selection, consistent with the index/η signpost.
 
-This is the campaign's strongest consolidation: the carrier is no longer an independent unexplained
-input. Half of it (momentum type) is a theorem; the other half (locus) is the *same* chirality import the
-rest of the flavor sector pays for once. What remains genuinely free is the continuous `r=1/2` and the
-readout class. Per standing practice, the chirality import is a `gate`, not an airtight impossibility:
-the open physics question is whether a first-order chiral Dirac operator with hw=1 zero-modes can be
-forced from the bosonic `M₂(ℂ)` qubit (the single-mode-Grassmann/`{ε,D}=0` premises), which is the one
-lever that would also discharge generation-ID and `Q=2/3` simultaneously.
+This is the campaign's strongest consolidation of the carrier bookkeeping,
+not closure of the physical carrier. The positive theorem is Layer A, now
+split into the 2026-06-15 carrier-type theorem. Layer B shares the named
+chirality gate with the generation-ID/Koide family but remains an open bridge.
+What remains genuinely free is the continuous `r=1/2` and the readout class.
+Per standing practice, the chirality import is a `gate`, not an airtight
+impossibility: the open physics question is whether a first-order chiral Dirac
+operator with hw=1 zero-modes can be forced from the bosonic `M₂(ℂ)` qubit
+(the single-mode-Grassmann/`{ε,D}=0` premises), which is the one lever that
+would also discharge generation-ID and `Q=2/3` simultaneously.
 
-## Provenance (verified 2026-05-31; derivation stands on framework baseline, ledger status non-constraining per directive)
+## Provenance and boundaries (verified 2026-05-31; parent boundary repaired 2026-06-18)
 - Layer A is a direct framework baseline + spectral-theorem construction (no note authority needed).
 - The Layer-B import premises are sourced to
   [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
@@ -107,3 +126,20 @@ lever that would also discharge generation-ID and `Q=2/3` simultaneously.
 - `δ=2/9` = `L₃(1,2)` equivariant-η density (verified ≠ bare character −1). `Q(F)=1/3+(2/3)r`
   is derived from `F=aI+b(J-I)`, and `r=1/2` is free (verified).
 - Does not load-bear on `closure_c_staggered_dirac_gate` / `koide_phase_aps_eta_parity_route`.
+- Does not claim that the physical `hw=1` locus, `r=1/2`, or the readout
+  class is retained-grade closed.
+- Does not apply or predict an audit verdict.
+
+## Reproduction
+
+```bash
+PYTHONPATH=scripts python3 scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py
+python3 scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py
+```
+
+Expected source-side outputs:
+
+```text
+SCORECARD PASS=12 FAIL=0
+TOTAL: PASS=10 FAIL=0
+```

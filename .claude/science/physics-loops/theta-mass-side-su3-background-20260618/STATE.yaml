@@ -1,0 +1,24 @@
+loop_slug: theta-mass-side-su3-background-20260618
+current_goal: "Harden the theta mass-side epsilon-Hermiticity bridge by directly verifying the SU(3) seeded-background case in the source runner."
+target_status: bounded-support
+runtime_mode: source-side unlock checkpoint
+cycle_count: 1
+block_count: 1
+active_route: exact_runner_verifier
+hard_residual_attacked: "The mass-side theta bridge claimed gauge-background generality while the executable certificate only sampled U(1) and SU(2); this block adds direct SU(3) seeded-background evidence."
+files_touched:
+  - docs/THETA_MASS_SIDE_EPSILON_HERMITICITY_REALITY_BRIDGE_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_theta_mass_side_epsilon_hermiticity_reality_2026_06_11.py
+  - logs/runner-cache/frontier_theta_mass_side_epsilon_hermiticity_reality_2026_06_11.txt
+  - .claude/science/physics-loops/theta-mass-side-su3-background-20260618/
+open_imports:
+  - "K-reality of the physical generation coupling is consumed, not derived."
+  - "The discrete orientation bit remains open."
+  - "Gauge-side theta_gauge is untouched."
+  - "Beyond-bilinear matter terms remain outside this discharge."
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: supports
+review_loop_disposition: not_run_user_reserved_for_reviewer
+pr_status: ready_to_open
+next_exact_action: "Open a ready review PR for the source-side SU(3) verifier block."
+stop_condition: "Checkpoint only; the broader audit-unlock goal remains active."

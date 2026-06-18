@@ -25,8 +25,9 @@ staggered realization, by an exact mechanism:
      so det M is REAL.  Verified as a matrix-identity chain and then
      established for the realization: the gauge-dressed staggered
      operator D(U) satisfies eps D(U) eps = -D(U) = D(U)+ for EVERY
-     unitary link configuration (any gauge group; verified for U(1) and
-     SU(2) backgrounds), and the enumerated epsilon-graded K-real
+     unitary link configuration (any gauge group; verified for U(1),
+     SU(2), and SU(3) seeded backgrounds), and the enumerated
+     epsilon-graded K-real
      bilinear classes -- real site-diagonal taste/generation channels
      (the hw-mixing eps and eps_mu channels included) plus anti-
      Hermitian h.c.-paired one-link taste channels -- preserve the
@@ -62,6 +63,7 @@ Deterministic: all randomness from seeded numpy Generators.
 
 import pathlib
 import re
+import warnings
 
 import numpy as np
 import sympy as sp
@@ -129,7 +131,8 @@ def eps_site(x):
 
 print("=" * 72)
 print("Strong-CP mass side: epsilon-Hermiticity reality on the realization")
-print("box: Z^3 torus, L =", L, "; gauge groups tested: U(1), SU(2)")
+print("box: Z^3 torus, L =", L,
+      "; gauge groups tested: U(1), SU(2), SU(3)")
 print("=" * 72)
 
 # ===================== A. the measure leg (first power) ================
@@ -238,20 +241,51 @@ def build_D_gauge(links, cdim):
     return Dg
 
 
+def random_su3(rng_):
+    """Haar-style SU(3) sample by QR projection of a complex Gaussian."""
+    z = rng_.normal(size=(3, 3)) + 1j * rng_.normal(size=(3, 3))
+    q, r = np.linalg.qr(z)
+    phases = np.diag(r)
+    phases = np.where(np.abs(phases) > 0, phases / np.abs(phases), 1.0)
+    q = q @ np.diag(np.conj(phases))
+    q[:, 0] /= np.linalg.det(q)
+    return q
+
+
+def validate_link(U, cdim):
+    if not np.allclose(U.conj().T @ U, np.eye(cdim), atol=1e-10):
+        raise ValueError("generated link is not unitary")
+    if cdim in (2, 3) and abs(np.linalg.det(U) - 1.0) > 1e-10:
+        raise ValueError(f"generated SU({cdim}) link has det != 1")
+
+
 def random_links(rng_, cdim):
     links = {}
     for x in SITES:
         for mu in range(3):
             if cdim == 1:
-                links[(x, mu)] = np.array(
-                    [[np.exp(2j * np.pi * rng_.random())]])
-            else:
+                U = np.array([[np.exp(2j * np.pi * rng_.random())]])
+            elif cdim == 2:
                 q = rng_.normal(size=4)
                 q = q / np.linalg.norm(q)
-                links[(x, mu)] = np.array(
+                U = np.array(
                     [[q[0] + 1j * q[3], q[2] + 1j * q[1]],
                      [-q[2] + 1j * q[1], q[0] - 1j * q[3]]])
+            elif cdim == 3:
+                U = random_su3(rng_)
+            else:
+                raise ValueError(f"unsupported color dimension: {cdim}")
+            validate_link(U, cdim)
+            links[(x, mu)] = U
     return links
+
+
+def det_phase_sign(M):
+    """Return det(M)/|det(M)| via slogdet, avoiding large-matrix overflow."""
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", RuntimeWarning)
+        sign, _ = np.linalg.slogdet(M)
+    return sign
 
 
 backgrounds = []
@@ -261,6 +295,9 @@ for seed in (1, 2, 3):
 for seed in (1, 2):
     r2 = np.random.default_rng(2000 + seed)
     backgrounds.append(("SU(2)", 2, build_D_gauge(random_links(r2, 2), 2)))
+for seed in (1, 2):
+    r3 = np.random.default_rng(3000 + seed)
+    backgrounds.append(("SU(3)", 3, build_D_gauge(random_links(r3, 3), 3)))
 
 ok = True
 for (gname, cdim, Dg) in backgrounds:
@@ -268,7 +305,8 @@ for (gname, cdim, Dg) in backgrounds:
     if not (np.allclose(Dg.conj().T, -Dg, atol=1e-10)
             and np.allclose(E @ Dg @ E, -Dg, atol=1e-10)):
         ok = False
-check(3, "for EVERY tested unitary background (3x U(1), 2x SU(2)): the "
+check(3, "for EVERY tested unitary background (3x U(1), 2x SU(2), "
+         "2x SU(3)): the "
          "gauge-dressed staggered operator is anti-Hermitian and "
          "eps-odd, so eps D(U) eps = -D(U) = D(U)+ -- the identity "
          "premise holds for the kinetic operator on any gauge "
@@ -318,20 +356,22 @@ for (gname, cdim, Dg) in backgrounds:
         Mfull = Dg + A
         if not np.allclose(E @ Mfull @ E, Mfull.conj().T, atol=1e-10):
             real_ok = False
-        d = np.linalg.det(Mfull)
-        max_imag = max(max_imag, abs(d.imag) / max(abs(d), 1e-300))
-        if abs(d.imag) / max(abs(d), 1e-300) > 1e-8:
+        phase_sign = det_phase_sign(Mfull)
+        rel_imag = abs(phase_sign.imag)
+        max_imag = max(max_imag, rel_imag)
+        if rel_imag > 1e-8:
             real_ok = False
-        signs.add(int(np.sign(d.real)))
+        signs.add(int(np.sign(phase_sign.real)))
 check(4, "REAL site-diagonal taste/generation channels (m0*I + m1*eps "
          "+ c_mu*eps_mu -- the hw-mixing channel classes): "
          "eps(D(U)+A)eps = (D(U)+A)+ holds exactly and det(D(U)+A) is "
-         "REAL for every tested background x parameter point (15 "
+         "REAL for every tested background x parameter point (21 "
          "combinations)", real_ok,
       f"max |Im det|/|det| = {max_imag:.1e}; signs seen: {sorted(signs)}")
 
 ol_ok = True
-for (gname, cdim, Dg) in backgrounds[:3]:
+one_link_backgrounds = [backgrounds[0], backgrounds[3], backgrounds[5]]
+for (gname, cdim, Dg) in one_link_backgrounds:
     E = np.kron(EPSD, np.eye(cdim))
     r3 = np.random.default_rng(3000)
     links = random_links(r3, cdim)
@@ -343,13 +383,13 @@ for (gname, cdim, Dg) in backgrounds[:3]:
             and np.allclose(E @ A1 @ E, -A1, atol=1e-10)
             and np.allclose(E @ Mfull @ E, Mfull.conj().T, atol=1e-10)):
         ol_ok = False
-    d = np.linalg.det(Mfull)
-    if abs(d.imag) / max(abs(d), 1e-300) > 1e-8:
+    phase_sign = det_phase_sign(Mfull)
+    if abs(phase_sign.imag) > 1e-8:
         ol_ok = False
 check(5, "anti-Hermitian h.c.-paired one-link taste channels (the "
          "tested gauge-covariant kinetic-class dressing) are eps-odd "
          "anti-Hermitian, preserve the identity, and keep det REAL on "
-         "the tested backgrounds", ol_ok)
+         "representative U(1), SU(2), and SU(3) backgrounds", ol_ok)
 
 # epsilon-graded K-reality, stated as the exact classification
 m0s, m1s = sp.symbols("m0 m1", real=True)
@@ -386,8 +426,8 @@ phase_c = 0.0
 for (gname, cdim, Dg) in backgrounds[:2]:
     A = np.kron(site_diag_channels(0.9, 0.2, (0.1, -0.07, 0.05))
                 + (0.11 + 0.23j) * EPSD, np.eye(cdim))
-    d = np.linalg.det(Dg + A)
-    phase_c = max(phase_c, abs(np.angle(d)) % np.pi)
+    phase_sign = det_phase_sign(Dg + A)
+    phase_c = max(phase_c, abs(np.angle(phase_sign)) % np.pi)
 ok = phase_c > 1e-3
 check(7, "violation class 1 (K-reality broken): a COMPLEX site-"
          "diagonal coefficient produces a nonzero determinant phase "
@@ -404,9 +444,9 @@ for (gname, cdim, Dg) in backgrounds[:2]:
                  np.eye(cdim))
     Mfull = Dg + A0 + Aherm
     broke = not np.allclose(E @ Mfull @ E, Mfull.conj().T, atol=1e-10)
-    d = np.linalg.det(Mfull)
+    phase_sign = det_phase_sign(Mfull)
     if broke:
-        phase_h = max(phase_h, abs(np.angle(d)) % np.pi)
+        phase_h = max(phase_h, abs(np.angle(phase_sign)) % np.pi)
 ok = phase_h > 1e-3
 check(8, "violation class 2 (epsilon-grading pairing broken): a "
          "HERMITIAN one-link coupling breaks the identity and produces "
@@ -451,9 +491,9 @@ residual("NOT discharged and explicitly out of scope: the gauge-side "
 residual("gauge-group generality: the identity chain det M = "
          "det(eps M eps) = det(M+) = conj(det M) is exact for any "
          "matrix satisfying the premise, and the premise was verified "
-         "on U(1) and SU(2) backgrounds; other unitary groups follow "
-         "the same hop structure but are verified-instances-only "
-         "here.")
+         "on U(1), SU(2), and SU(3) seeded backgrounds; the exact "
+         "argument is still the epsilon-Hermiticity premise, not a "
+         "gauge-group-specific numerical fit.")
 
 print()
 print(f"TOTAL: PASS={_pass} FAIL={_fail}")

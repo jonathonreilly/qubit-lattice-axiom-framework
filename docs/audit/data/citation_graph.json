@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_formation_to_kraus_isometry_bridge_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_ew_m_residual_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "record_formation_to_kraus_isometry_bridge_2026-06-06",
         "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
         "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
         "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
-        "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03"
+        "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
+        "yt_ew_m_residual_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a1bd51c1ee7d1ab22ca0127d2623c77c096238af43d3458c5c41ed61866431f3",
+      "note_hash": "3036f48343a00b8fdb709c512508d945054d59c6556d990f040e5b63cdb9f06b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

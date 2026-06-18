@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 215 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 928 |
+| **retained_bounded** | 929 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1607 |
+| unaudited | 1606 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 10 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1342 |
+| `audited_clean` | 1343 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1929 |
+| `unaudited` | 1928 |
 
 | claim_type | count |
 |---|---:|
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
@@ -375,6 +375,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -5045,6 +5046,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** Issue: the source-selecting rule is an explicit definition of an information-geometric objective plus an imposed eta equality constraint. Why this blocks: the runner computes consequences of that convention, but the convention is not derived from the cited fixed-chart algebra or a retained selector theorem in the packet. Repair target: supply and audit a framework-internal derivation of the selector objective and constraint authority before treating this as source-law theorem authority. Claim boundary until fixed: this is a reproducible post-axiom selector diagnostic, not an independent selector derivation.
 - **open / conditional deps cited:**
   - `DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Sampled multistart runner diagnostic only: on the tested starts and runner-defined fixed N_e seed surface, the runner recovers two dominant stationary closure branches, with the low-action branch giving runner-normalized eta/eta_obs = 1 and Delta S_pair about 0.86975; no certified-global enumeration or selector authority was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the sampled multistart starts, the constrained scan recovers a low-action closure branch and a higher-action closure branch on the runner-defined fixed N_e seed surface, separated by a finite action gap.  _(class `C`)_
+- **chain closes:** True — Within the narrowed runner-diagnostic scope, the primary runner actually constructs closure starts, performs constrained refinements, clusters stationary solutions, computes relative actions and eta readouts through helper code, and the cached output supports the note's numbers. The global selector, branch-completeness, and framework-native readout claims are explicitly outside scope.
+- **rationale:** The source note has been narrowed to the finite sampled-start diagnostic that the runner computes, rather than a global branch theorem or native readout theorem. The primary runner does not merely print the contested branch constants: it generates starts, solves the constrained stationary problem, clusters solutions, and checks the branch count, closure readout, and action gap. The clean verdict applies only to that bounded diagnostic surface; optimizer sampling is not certified branch completeness.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`

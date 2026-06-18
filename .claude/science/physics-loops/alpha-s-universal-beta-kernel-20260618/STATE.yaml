@@ -1,0 +1,11 @@
+loop_id: alpha-s-universal-beta-kernel-20260618
+status: review_ready
+branch: codex/alpha-s-universal-beta-kernel-20260618
+started_at: 2026-06-18
+target: alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02
+claim_status: exact_support_theorem
+audit_action: none
+review_loop: not_run_user_deferred_to_codex_reviewer
+summary: >
+  Added a source-side universal beta0/beta1 kernel theorem for the alpha_s
+  running blocker without changing audit ledgers or status rows.

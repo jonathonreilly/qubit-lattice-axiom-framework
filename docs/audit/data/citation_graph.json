@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "post_record_conditional_audit_evidence_ladder_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "post_record_flow_thermal_stable_setting_certificate_2026-06-06"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "qnm_hardening_feasibility_note"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "qnm_hardening_feasibility_note"
+      "to": "qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "post_record_conditional_audit_evidence_ladder_2026-06-06",
         "post_record_flow_thermal_stable_setting_certificate_2026-06-06",
         "post_record_production_dynamics_needed_row_map_2026-06-06",
         "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
         "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
+        "qnm_hardening_feasibility_note",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "qnm_hardening_feasibility_note"
+        "qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6700044f9f94a38f6894a30f65437f2be6c32b9ede8443006968c1249d14aeb8",
+      "note_hash": "dcba536fad21e25231ecdad64651adc82c2bb010574c9c695951e6692a259d8c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

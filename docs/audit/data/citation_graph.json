@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "distance_law_definitive_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
+      "to": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
         "teleportation_3d1_causal_record_channel_note",
         "wave_direct_dm_h025_seed0_crossfamily_note",
+        "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
         "distance_law_definitive_note",
-        "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
+        "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "47b8207c89b6b306729dc91064affe418acd0553a7f5a2779e6eda4295f523fb",
+      "note_hash": "7eb3db71589f76e16872a52182b5cfc562e6ce14197a8439c2b120faf4d9e9b0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

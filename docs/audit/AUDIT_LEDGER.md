@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 945 |
+| **retained_bounded** | 946 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1571 |
+| unaudited | 1570 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 13 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1368 |
+| `audited_clean` | 1369 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1893 |
+| `unaudited` | 1892 |
 
 | claim_type | count |
 |---|---:|
@@ -1482,6 +1482,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -20824,6 +20825,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given lambda^2 = alpha_s/n_pair and A^2 = n_pair/n_color, substitution forces A^2 lambda^2 = alpha_s/n_color, |V_cb|^2 = alpha_s^2/(n_pair n_color), and |V_ub|_0^2 = alpha_s^3(rho^2+eta^2)/(n_pair^2 n_color).  _(class `A`)_
 - **chain closes:** True — Inside the stated scope, every asserted identity follows by direct symbolic substitution from the hypotheses. The runner checks only class-A algebra and reports PASS=22, FAIL=0, matching the note's deliberately narrow claim boundary.
 - **rationale:** The scoped theorem is not claiming the input identities, a physical observable bridge, or numerical agreement; it only claims algebraic consequences conditional on explicit hypotheses. Those consequences close exactly by substitution, including the n_pair cancellation and the count-substituted forms. No hidden dependency is needed for this narrow claim because the upstream CKM/CP claims are excluded rather than consumed as authority.
+- **auditor confidence:** high
+
+### `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`
+
+- **Note:** [`work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Diagnostic finite-box numerics only: hydrogen level ratios and r0 on the declared lattice operator, helium Hartree product-state row with repaired one-density pair normalization, and N=20 one-parameter Jastrow/VMC improvement; no continuum-limit, absolute-eV, exact-helium, multi-electron, or retained atomic-authority claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The preserved helper runners instantiate the finite-box Z^3 graph-Laplacian Coulomb Hamiltonians and their SHA-pinned caches produce the quoted hydrogen ratios, helium Hartree row, Hartree pair-normalization guard, and Jastrow/VMC improvement.  _(class `C`)_
+- **chain closes:** True — Within the narrowed finite-box scope, the helper sources compute from the cited graph-Laplacian and Coulomb-kernel operators rather than merely printing constants, and the current zero-exit caches are SHA-matched to those sources. The Hartree one-density pair normalization and Jastrow cusp factor also pass direct source-level factor checks; broader physics claims are explicitly outside scope.
+- **rationale:** The restricted packet now includes full helper sources, SHA-current cached outputs, and a packet verifier tying the source note to those artifacts. The cited upstream authorities are retained-grade or accepted axiom premises under the rubric, and the load-bearing computation is the finite-box numerical evaluation of the declared operators, not an external comparator match. Historical Hartree/full-CI and Rydberg-style targets are checkpoints only; they are not needed for the scoped claim to close.
 - **auditor confidence:** high
 
 ### `work_history.ckm.cabibbo_bound_note`

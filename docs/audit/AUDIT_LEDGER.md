@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 969 |
+| **retained_bounded** | 970 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1501 |
+| unaudited | 1500 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -63,29 +63,29 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1407 |
+| `audited_clean` | 1408 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1823 |
+| `unaudited` | 1822 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1728 |
+| `bounded_theorem` | 1729 |
 | `decoration` | 56 |
 | `meta` | 326 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 761 |
+| `positive_theorem` | 760 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 893 |
-| `leaf` | 1419 |
+| `medium` | 894 |
+| `leaf` | 1418 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -242,6 +242,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_propagating_field_live_packet_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `causal_source_placement_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_born_dense_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3298,6 +3299,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `runner_output_empty`
   - `archived_session_log_or_named_numeric_output_missing`
   - `seed_strength_and_geometry_independence_sweeps_not_reproducible`
+- **auditor confidence:** high
+
+### `causal_source_placement_robustness_note`
+
+- **Note:** [`CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md`](../../docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite robustness diagnostic for the declared three-family, three-placement causal-field replay using the supplied runner, helper implementation, and cached output.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-causal_source_placement_robustness_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Family-aware source placement changes the measured causal ratios, but it does not restore a clean portable causal-field signal across all three families.  _(class `C`)_
+- **chain closes:** True — The primary runner and helper source compute the declared source selectors, fields, propagation, detector-centroid shifts, zero controls, and placement-ratio table rather than hard-coding the conclusion. The conclusion is limited to the configured finite replay and does not claim a physical field law or cross-family portability theorem.
+- **rationale:** The cached runner output matches the source note's exact-zero control and placement comparison table, and the source code computes the relevant quantities through the supplied growth, propagation, and centroid routines. The cited authorities are supplied as retained_bounded and are used only to frame the bounded causal-field replay and fixed-anchor boundary, not to import the disclaimed archived 0.45 result or a portability law. Within that bounded scope, the computed ratios plainly vary by family and placement, so the stated deeper placement-sensitive boundary follows.
 - **auditor confidence:** high
 
 ### `central_band_born_dense_sweep_note`

@@ -13,7 +13,7 @@ pipeline after independent review.
 **Source-note proposal disclaimer:** this note is a source-note proposal;
 audit verdict and downstream status are set only by the independent audit lane.
 **Primary runner:** [`scripts/gl_f_identification_bridge_check_2026_06_11.py`](../scripts/gl_f_identification_bridge_check_2026_06_11.py)
-(`TOTAL: PASS=36 FAIL=0`, deterministic, < 5 s, standard library only, exact
+(`TOTAL: PASS=39 FAIL=0`, deterministic, < 5 s, standard library only, exact
 rational arithmetic at `N = 2, 3`)
 **Authority role:** attacks the ONE residual the GL(F)-from-reconstruction
 note declares besides its consumed chain's grades — the
@@ -415,7 +415,7 @@ Deterministic, < 5 s, standard library only. Expected: 36
 `[A]/[B]/[C]/[D]`-tagged PASS lines and the final line
 
 ```text
-TOTAL: PASS=36 FAIL=0
+TOTAL: PASS=39 FAIL=0
 ```
 
 including, among others, the load-bearing lines (verbatim):

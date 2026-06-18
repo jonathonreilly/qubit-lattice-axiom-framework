@@ -1,0 +1,25 @@
+loop_slug: gl-f-reconstruction-packet-verifier-20260617
+goal: "Unlock the audited conditional GL(F) reconstruction row with source-side packet verification and cache/text drift repair."
+target_status: bounded-support
+cycle_count: 1
+active_route: restricted_packet_verifier
+hard_residual: "Derive or explicitly authorize the framework matter-functional/action-surface clause for the Berezin/RP OS functional."
+files_touched:
+  - docs/GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md
+  - docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md
+  - scripts/gl_f_reconstruction_packet_verifier_2026_06_17.py
+  - logs/runner-cache/gl_f_reconstruction_packet_verifier_2026_06_17.txt
+  - .claude/science/physics-loops/gl-f-reconstruction-packet-verifier-20260617/*
+open_imports:
+  - "The physical matter correlation functional is the declared Berezin/RP OS functional."
+  - "GL(F)/FS is not an unconditional baseline theorem or Tier-A admission."
+no_go_routes:
+  - "Do not infer fermionic statistics from dim=2 or ungraded algebra; hard-core ties remain."
+  - "Do not treat the identification bridge as closed beyond clauses I-1 to I-3."
+  - "Do not use PASS=39 cache as status promotion."
+trace_gate_classification: direct_blocker_closure
+trace_reachability: partially_closes
+review_disposition: reviewer_owned
+pr_status: ready_for_reviewer_pr
+next_exact_action: "Reviewer should run review-loop, then decide whether this source-side packet is sufficient to requeue the GL(F) row for independent audit."
+stop_condition: "Current block complete when verifier/cache, loop pack, commit, push, and PR exist."

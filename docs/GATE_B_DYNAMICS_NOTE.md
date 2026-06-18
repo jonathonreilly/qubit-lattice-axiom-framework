@@ -24,11 +24,31 @@ propagation/readout semantics, or `GB-S3` generated-connectivity rule from
 retained framework primitives. This split adds no new axiom, Tier-A admission,
 or audit-status change.
 
+## 2026-06-18 finite radial scalar split
+
+The source-side bridge
+[`GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+splits `GB-S1b` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S1b-a` | finite runner scalar `phi_GB(x)=strength/(r(x,mass)+0.1)` on the supplied coordinate slab | bounded-support source bridge: the scalar is positive, finite, radially monotone in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the source-strength normalization |
+| `GB-S1b-b` | physical Poisson/source equation, boundary condition, regulator selection, and absolute normalization | still open Gate-B runner/physics data |
+
+This removes one avoidable black-box part of the source packet: the runner
+scalar is now an explicit finite radial field with a checked regulator and
+linear normalization dependence. The stronger physical claim remains open:
+this update does not derive the Poisson PDE, the `0.1` finite-core regulator,
+the source strength, `GB-S2` propagation/readout semantics, `GB-S3`
+generated-connectivity rule, a physical gravity readout, or a full Gate B
+dynamics theorem.
+
 ## 2026-06-12 audit firewall: source index, not dynamics closure
 
-The audited missing bridges remain `GB-S1b`, `GB-S2`, and `GB-S3`: the Gate B
-runner's regularized scalar/normalization, propagation/readout semantics, and
-generated-connectivity rule are supplied row-local ingredients. The primary
+The audited missing bridges remain `GB-S1b-b`, `GB-S2`, and `GB-S3`: the Gate
+B runner's physical scalar source/boundary/regulator/normalization,
+propagation/readout semantics, and generated-connectivity rule are supplied
+row-local ingredients. The primary
 connectivity replay and companion manifest verify finite generated-geometry
 behavior inside that supplied packet only.
 
@@ -69,7 +89,7 @@ index rather than as an independent primitive-to-physical-gravity bridge.
 
 | ID | Supplied ingredient | Row-local definition | Status boundary |
 |---|---|---|---|
-| `GB-S1` | valley-linear source/action rule | The runners use the scalar field `f(x) = strength/(r(x, mass)+0.1)` and the forward phase action `S = L(1 - f)` with the declared constants in the paired scripts. | Split by the 2026-06-16 interface note: the linear `S=L(1-phi)` response form has bounded weak-field support (`GB-S1a`), but the Gate B scalar `strength/(r+0.1)`, regulator, and normalization remain supplied (`GB-S1b`). Not fully derived from retained primitives and not a new axiom. |
+| `GB-S1` | valley-linear source/action rule | The runners use the scalar field `f(x) = strength/(r(x, mass)+0.1)` and the forward phase action `S = L(1 - f)` with the declared constants in the paired scripts. | Split by the 2026-06-16 interface note and 2026-06-18 scalar bridge: the linear `S=L(1-phi)` response form has bounded weak-field support (`GB-S1a`), and the finite radial runner scalar has bounded-support as checked algebra on the supplied coordinate slab (`GB-S1b-a`), but the physical Poisson/source equation, regulator choice, and absolute normalization remain supplied (`GB-S1b-b`). Not fully derived from retained primitives and not a new axiom. |
 | `GB-S2` | propagation/readout semantics | The runners use forward-layer path propagation, a central blocked barrier, detector-window mass gain, `TOWARD` sign, and local `F~M` log-slope readouts. | Runner-supplied operational readout for bounded numerical certificates; not a retained physical-gravity readout bridge. |
 | `GB-S3` | generated-connectivity rule | The positive generated-geometry rows use label/offset-preserving forward connectivity with drift/restore companions; KNN and non-label candidates are recorded as controls or bounded negatives where their sign/`F~M` package weakens. | Supplied generated-family rule for this packet only; not yet derived from a local retained growth primitive. |
 

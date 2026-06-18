@@ -1,0 +1,17 @@
+loop_slug: gate-b-radial-scalar-gb-s1b-20260618
+goal: "Unlock the audited-conditional Gate B dynamics row by retiring the opaque finite-scalar-helper portion of GB-S1b where possible."
+target_status: bounded-support
+active_route: "Split GB-S1b into GB-S1b-a finite radial scalar algebra and GB-S1b-b physical Poisson/source normalization."
+current_surface_status: bounded-support source proposal
+trace_class: direct_blocker_closure
+target_claim_id: gate_b_dynamics_note
+files_touched:
+  - docs/GATE_B_DYNAMICS_NOTE.md
+  - docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md
+  - scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py
+open_imports:
+  - "GB-S1b-b physical Poisson/source equation, boundary condition, regulator selection, and absolute normalization remain supplied."
+  - "GB-S2 propagation/readout semantics remain supplied in this independent branch."
+  - "GB-S3 generated connectivity remains supplied in this independent branch."
+next_exact_action: "Run verifier/cache checks, push branch, open review PR."
+stop_condition: "Stop this block after PR creation; continue campaign with the next non-duplicative audit unlock."

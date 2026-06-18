@@ -3,7 +3,7 @@ runner: scripts/gate_b_connectivity_tolerance.py
 runner_sha256: 50289f18b0fc997fcd59a42ee64fc3565320779fb66a49b57984c2814cc0d13f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.77
+elapsed_sec: 3.54
 status: ok
 ----- stdout -----
 ========================================================================================

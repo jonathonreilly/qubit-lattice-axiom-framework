@@ -28,4 +28,11 @@ landing cleanup to the Codex reviewer.
 
 ## PR
 
-Pending.
+Ready PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4378
+
+Remote branch:
+`codex/flavor-rep-channel-core-split-20260618`
+
+Primary commit:
+`a93fdfaf4` (`Split flavor representation channel core`)

@@ -1,13 +1,16 @@
 # PR Backlog
 
-PR creation is pending.
+PR created:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4378
 
-Intended title:
+Title:
 
 ```text
 [physics-loop] flavor rep-channel generation-uniform core bounded-support
 ```
 
-Intended base: `main`
+Base: `main`
 
-Intended branch: `codex/flavor-rep-channel-core-split-20260618`
+Branch: `codex/flavor-rep-channel-core-split-20260618`
+
+Review-loop and landing cleanup remain delegated to the Codex reviewer.

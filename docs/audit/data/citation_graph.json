@@ -52234,7 +52234,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
+      "to": "teleportation_finite_gapped_preparation_path_support_note_2026-06-16"
     },
     {
       "from": "repo.front_door_status",
@@ -52258,7 +52258,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "teleportation_finite_gapped_preparation_path_support_note_2026-06-16"
+      "to": "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07",
+        "teleportation_finite_gapped_preparation_path_support_note_2026-06-16",
         "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
         "teleportation_bell_measurement_circuit_note",
         "teleportation_taste_readout_operator_model_note",
         "universal_gr_polarization_frame_bundle_attempt",
         "chiral_split_mass_gravity_note",
-        "teleportation_finite_gapped_preparation_path_support_note_2026-06-16"
+        "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cbae2735b548f0f7bb9c9fe18cf6ea5e734064fedc367befb91847bb53c89ea1",
+      "note_hash": "b377d421333db2f9cda841973d88fdb2e2b7999ea5e23e93a917fbac528c81e8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

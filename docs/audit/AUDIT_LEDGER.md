@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 954 |
+| **retained_bounded** | 955 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 22 |
-| unaudited | 1548 |
+| unaudited | 1547 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1382 |
+| `audited_clean` | 1383 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1870 |
+| `unaudited` | 1869 |
 
 | claim_type | count |
 |---|---:|
@@ -1360,6 +1360,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_causal_channel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_cross_encoding_maps_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_dynamical_resource_generation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `teleportation_finite_gapped_preparation_path_support_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_initial_state_preparation_probe_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `teleportation_logical_readout_audit` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5 | B | - |
 | `teleportation_measurement_record_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -19208,6 +19209,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** No high-fidelity Bell-resource window appears in this bounded product-state scan at the 0.90 Bell-overlap threshold, while interacting cases open only useful low-fidelity windows after fixed Bell-frame alignment.  _(class `C`)_
 - **chain closes:** True — The runner directly computes the stated finite model, extraction, Bell overlaps, teleportation fidelity estimates, null control, and Bob no-record input-independence for the default bounded cases. The note keeps the claim within ordinary quantum state teleportation and explicitly states the small-surface, sampled-time, ideal-logical-operation limits.
 - **rationale:** The scoped result is a bounded finite/model computation, not a no-go theorem and not merely an open obligation. The live output supports the note's numerical boundary: interacting cases exceed the useful Bell-overlap threshold but remain far below the 0.90 high-fidelity threshold, with null and no-signaling diagnostics passing. No hidden carrier, matter-transfer, FTL, or protocol-readout claim is needed for the bounded statement.
+- **auditor confidence:** high
+
+### `teleportation_finite_gapped_preparation_path_support_note_2026-06-16`
+
+- **Note:** [`TELEPORTATION_FINITE_GAPPED_PREPARATION_PATH_SUPPORT_NOTE_2026-06-16.md`](../../docs/TELEPORTATION_FINITE_GAPPED_PREPARATION_PATH_SUPPORT_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite sampled support only: the declared Poisson/CHSH finite Hamiltonians have an affine sampled path with positive sampled gaps on 1D N=8 and 2D 4x4, and the G=1000 endpoints reproduce the traced logical Bell-resource diagnostics; no physical apparatus/readout or all-G/continuum gap theorem is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-teleportation_finite_gapped_preparation_path_support_note_2026-06-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the finite 1D N=8 and 2D 4x4 surfaces, the runner constructs H(G)=H(0)+G W, verifies equality to the helper Hamiltonian at the sampled G grid, diagonalizes the finite matrices to find positive sampled ground-state gaps, and checks the G=1000 endpoint remains a high-fidelity traced Bell resource.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helpers construct the finite matrices from the stated lattice, staggered Hamiltonian, Poisson Green function, and tensor-product interaction, then compute the sampled eigenvalue gaps and endpoint resource diagnostics rather than reading hard-coded contested constants. The closure is only for the sampled finite support claim, not for physical deterministic preparation or readout.
+- **rationale:** The restricted packet supports the bounded claim as written: the code builds H0 and W, verifies the affine identity against the helper Hamiltonian, computes the finite sampled gaps with eigvalsh, and computes the endpoint Bell, negativity, and teleportation diagnostics through the supplied helper chain. The note explicitly firewalls the open physical apparatus/readout, all-G analytic gap, continuum gap, and schedule-selection claims, so those residuals do not defeat the narrower audited scope. The selected endpoint G=1000 is a declared finite support endpoint rather than an external calibrated comparator, so this is not class G numerical matching.
 - **auditor confidence:** high
 
 ### `teleportation_initial_state_preparation_probe_note`

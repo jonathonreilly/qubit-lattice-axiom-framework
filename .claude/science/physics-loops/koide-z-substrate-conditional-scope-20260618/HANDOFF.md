@@ -1,6 +1,7 @@
 # Handoff
 
 Branch: `codex/koide-z-substrate-conditional-scope-20260618`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4385
 
 This source-side PR repairs the latest conditional audit result for `koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3` by taking the auditor's narrowing route. It preserves the finite orbit-counting/Fourier/no-proper-quotient algebra, but makes physical `Z^3` substrate authority an explicit unsupplied conditional premise.
 
@@ -14,4 +15,3 @@ Verification:
 - `git diff --check`
 
 Forbidden-surface expectation: no audit ledger, queue, publication, repo status, lane registry, or active review queue files should be changed by this branch.
-

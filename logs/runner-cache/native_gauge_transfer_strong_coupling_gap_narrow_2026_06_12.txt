@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_strong_coupling_gap_narrow_2026_06_12.py
+runner_sha256: cc2289013c54f297e5b0255c75f2251fbee0cfde5c7962df2bb4e7a64809d0a3
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.69
+status: ok
+----- stdout -----
+Native gauge-transfer strong-coupling gap bounded runner
+finite packet: NMAX=4, states=25, MODE_MAX=160
+certified interval: 0 <= beta <= 1, K=2/3, p=1
+
+PASS: exact SU(3) character recurrence layers are integer and nonnegative
+      computed layers n=0..30, max multiplicity=46715552988151714680
+PASS: leading coefficient for every 25-packet weight is beta^(p+q)/(p! q! 6^(p+q))
+      (0, 1): beta^1 coefficient 1/6 (multiplicity 1); (1, 0): beta^1 coefficient 1/6 (multiplicity 1); (1, 1): beta^2 coefficient 1/36 (multiplicity 2); (2, 0): beta^2 coefficient 1/72 (multiplicity 1); (2, 1): beta^3 coefficient 1/432 (multiplicity 3); (4, 4): beta^8 coefficient 1/967458816 (multiplicity 70)
+PASS: fundamental channels have exact leading coefficient beta/6
+      c_(1,0) lead=1/6, c_(0,1) lead=1/6
+PASS: exact exponential tail majorant sum_{n>=1} beta^n/n! <= 2 beta on 0<=beta<=1
+      uses n! >= 2^(n-1), hence nontrivial c_lambda/c_0 <= (2/3) beta because d_lambda >= 3
+PASS: exact finite-series intervals satisfy c_lambda/c_0 <= (2/3) beta at beta samples
+      worst certified sample upper=1.803796645007e-01 at (0, 1)
+PASS: ORDER=30 exact-rational series tail at beta=1 is below 1e-33
+      tail_bound=1/7965874946234862729671639040000000
+PASS: beta=0 coefficient transfer is the trivial-channel projector with spectrum {1,0,...}
+      top eigenvalue=1.000000000000, nontrivial max=0.000e+00
+PASS: 25-state coefficient and half-slice transfer ratios obey lambda_1/lambda_0 <= (2/3) beta
+      beta=0.1: diag_ratio=0.016805539320, packet_ratio=0.017085438200, bound=0.066666666667, diag_slope=0.168055393204, packet_slope=0.170854381997, max_diag=(1, 0) | beta=0.5: diag_ratio=0.086795018397, packet_ratio=0.093864721793, bound=0.333333333333, diag_slope=0.173590036795, packet_slope=0.187729443587, max_diag=(1, 0) | beta=1.0: diag_ratio=0.180379664501, packet_ratio=0.206555269216, bound=0.666666666667, diag_slope=0.180379664501, packet_slope=0.206555269216, max_diag=(1, 0)
+PASS: measured small-beta slope at beta=0.1 matches the exact fundamental beta/6 leading term
+      beta=0.1: diag_ratio=0.016805539320, packet_ratio=0.017085438200, bound=0.066666666667, diag_slope=0.168055393204, packet_slope=0.170854381997, max_diag=(1, 0)
+PASS: note contains scope, status-authority, theorem, next-target, and runner markers
+      checked required note markers
+PASS: one-hop authorities are present as markdown links
+      checked authority-link forms
+PASS: note avoids overreach phrases banned for this lane
+      scanned banned phrase set
+
+TOTAL: PASS=12, FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,26 @@
+loop_slug: flavor-readout-open-gate-repair-20260618
+goal: "Repair the audited_renaming source boundary for flavor_readout_gate_equals_carrier_identification_2026-05-31 without editing audit/status surfaces."
+target_status: "open_gate source repair"
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: demotion
+base: origin/main@993b9adb7
+active_route: "source claim-type narrowing plus runner boundary checks"
+files_touched:
+  - docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md
+  - scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py
+  - logs/runner-cache/flavor_readout_gate_equals_carrier_identification_2026_05_31.txt
+  - .claude/science/physics-loops/flavor-readout-open-gate-repair-20260618/
+open_imports:
+  - "Physical charged-lepton flavor observable selection remains the single carrier/basepoint premise."
+  - "This block does not derive lepton_brannen_bae_delta_two_ninths."
+  - "This block does not promote the row beyond open_gate support."
+no_go_routes:
+  - "Do not claim the readout gate is now retained or theorem-grade."
+  - "Do not edit audit ledger, queue, publication status, front door, lane registry, or active review queue."
+trace_gate_classification: direct_blocker_closure
+review_findings: "local source-boundary checks pass; independent review/audit still required"
+pr_status: "ready to open"
+next_exact_action: "Open review PR; then continue to harder science targets if goal resumes."
+stop_condition: "Stop this block after PR creation."

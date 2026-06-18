@@ -38,6 +38,10 @@ PRODUCT_FORM = ROOT / "docs" / (
     "PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_"
     "2026-06-12.md"
 )
+OUTCOME_NO_GO = ROOT / "docs" / (
+    "STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_"
+    "NARROW_NO_GO_NOTE_2026-06-18.md"
+)
 
 PASS = 0
 FAIL = 0
@@ -248,12 +252,14 @@ def textual_checks() -> None:
     busch = BUSCH.read_text(encoding="utf-8")
     minimal = MINIMAL.read_text(encoding="utf-8")
     product = PRODUCT_FORM.read_text(encoding="utf-8")
+    outcome_no_go = OUTCOME_NO_GO.read_text(encoding="utf-8")
 
     note_n = normalize(note)
     gleason_n = normalize(gleason)
     busch_n = normalize(busch)
     minimal_n = normalize(minimal)
     product_n = normalize(product)
+    outcome_no_go_n = normalize(outcome_no_go)
 
     h_lambda_phrase = (
         "specific Hilbert space `H_Λ = ⊗_{x ∈ Λ} ℂ²` for finite `Λ ⊂ Z^3`"
@@ -303,6 +309,13 @@ def textual_checks() -> None:
         "Product-Form Premise Weakens to Outcome-Level Factorization" in product
         and "strictly weaker than state-level product form" in product_n
         and "outcome-level factorization" in note_n,
+    )
+    check(
+        "B7c companion no-go prunes Born-marginals-alone repair route",
+        OUTCOME_NO_GO.name in note
+        and "retained one-copy Born weights plus finite scalar additivity" in outcome_no_go_n
+        and "do not force the two-registration outcome-factorization law" in outcome_no_go_n
+        and "false repair route" in note_n,
     )
 
     firewall_phrases = [
@@ -359,6 +372,7 @@ def textual_checks() -> None:
         "`UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md`",
         "`UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md`",
         "`KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md`",
+        "`STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_NARROW_NO_GO_NOTE_2026-06-18.md`",
     ]
     context_missing = [item for item in backticked_context if item not in note]
     context_linked = [
@@ -407,7 +421,7 @@ def print_stat_and_summary(results: dict[str, bool]) -> None:
     print("SUMMARY:")
     print(
         "K1-K4 verified symbolically; note firewall, dependency links, "
-        "supplied-outcome-factorization boundary, backticked context, and No-promotion statement verified."
+        "supplied-outcome-factorization boundary, companion no-go, backticked context, and No-promotion statement verified."
     )
     print(
         "The only non-retained ingredient isolated by the computation is the "

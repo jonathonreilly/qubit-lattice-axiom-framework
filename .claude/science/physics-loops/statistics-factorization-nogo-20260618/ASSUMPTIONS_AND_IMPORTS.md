@@ -1,0 +1,10 @@
+# Assumptions And Imports
+
+| Item | Role in claim | Current class | Source surface | Load-bearing? | Needed for target status? | Retirement path | Disposition |
+|---|---|---|---|---|---|---|---|
+| One-copy Born form on finite qubit-lattice projections | Supplies one-copy weights `p_s,p_d` used as fixed marginals | retained support | Gleason projection-lattice note | Yes, as context whose insufficiency is tested | Yes | Already retained as context; not reproved here | Used only as input surface for the no-go |
+| Busch/CFMR effect-valued one-qubit Born form | Context for retained one-copy effect weights | retained support | Busch POVM authority bridge | Yes, as context whose insufficiency is tested | Yes | Already retained as context; not reproved here | Used only as input surface for the no-go |
+| Finite scalar additivity on two-outcome quotient | Gives joint-law bookkeeping and marginal constraints | framework-derived bookkeeping | finite probability simplex algebra | Yes | Yes | Proved directly in runner by symbolic parameterization | Discharged inside this block |
+| Born-realizable two-copy witness | Shows the counterexample is realizable by diagonal density matrices, not just abstract bookkeeping | exact support | runner-local matrix calculation | Yes | Yes | Direct symbolic trace checks | Discharged inside this block |
+| Outcome factorization `m(j,k)=p_j p_k` | The premise the W8a statistics atom still needs | unsupported import for unbounded closure | statistics atom source note and audit blocker | No, because the no-go does not assume it | Yes for future positive repair | Record-stack independence, stationarity, or reset/preparation theorem | Remains open; this block proves Born marginals alone cannot retire it |
+| Physical repeated-registration independence | Candidate future theorem behind outcome factorization | unsupported import | unraveling/record-stack lane | No | Yes for future positive repair | New framework-native theorem or controlled demotion | Not claimed or refuted |

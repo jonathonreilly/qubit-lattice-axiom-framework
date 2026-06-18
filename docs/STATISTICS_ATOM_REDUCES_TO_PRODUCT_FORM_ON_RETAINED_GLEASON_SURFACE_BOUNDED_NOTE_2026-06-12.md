@@ -56,6 +56,20 @@ outcome-factorization premise is the supplied bounded premise for this row; it
 is named, not derived or retained. R-D stays proposed; no occupancy cell is
 selected; `r` is never fixed; the occupancy binary stays open.
 
+## 2026-06-18 companion no-go: one-copy Born marginals are insufficient
+
+The companion source-side no-go
+`STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_NARROW_NO_GO_NOTE_2026-06-18.md`
+proves that the retained one-copy Born/Gleason surface plus finite scalar
+additivity does not force the quotient-level law `m(j,k)=p_j p_k`.
+
+That result does not refute future record-stack independence. It only prunes
+the false repair route in which this row's remaining premise is treated as a
+mere corollary of one-copy Born authority. A positive unbounded repair still
+needs a record-stack independence, stationarity, reset/preparation, or other
+framework-native theorem that supplies the registered two-copy quotient
+weights.
+
 ## Boundary
 
 This note proves K1-K4 only in the bounded setting above: retained one-copy
@@ -193,7 +207,9 @@ review; its G2 identification is reproven inline above),
 `FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md`,
 `UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md`,
 `UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md`,
-and `KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md`.
+`KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md`,
+and
+`STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_NARROW_NO_GO_NOTE_2026-06-18.md`.
 
 ## Dependencies
 

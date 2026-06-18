@@ -1,0 +1,25 @@
+loop_slug: statistics-factorization-nogo-20260618
+branch: codex/statistics-factorization-nogo-20260618
+base: origin/main
+current_goal: "Prune the false repair route that one-copy Born/Gleason authority plus finite additivity forces W8a outcome factorization."
+target_status: no-go
+cycle_count: 1
+active_route: "two-outcome joint-law no-go with Born-realizable diagonal witnesses"
+hard_residual: "framework-native record-stack independence, stationarity, or reset/preparation theorem for m(j,k)=p_j p_k"
+files_touched:
+  - docs/STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_NARROW_NO_GO_NOTE_2026-06-18.md
+  - scripts/frontier_statistics_outcome_factorization_not_forced_2026_06_18.py
+  - logs/runner-cache/frontier_statistics_outcome_factorization_not_forced_2026_06_18.txt
+  - docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md
+  - scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py
+  - logs/runner-cache/frontier_statistics_atom_reduces_to_product_form_2026_06_12.txt
+open_imports:
+  - "physical repeated-registration outcome factorization on the registered two-outcome quotient"
+  - "record-stack independence or reset/preparation theorem supplying two-registration product weights"
+no_go_routes:
+  - "derive m(j,k)=p_j p_k from retained one-copy Born marginals plus finite scalar additivity alone"
+trace_gate_classification: negative_route_pruning
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending_pr_creation
+next_exact_action: "Commit, push, open PR, then continue audit-unlock search without refreshing unrelated PR branches."
+stop_condition: "Stop only if refreshed opportunity scan shows no source-side repair, compute unblock, or science route remains."

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 963 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 27 |
-| unaudited | 1524 |
+| unaudited | 1523 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1398 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1846 |
+| `unaudited` | 1845 |
 
 | claim_type | count |
 |---|---:|
@@ -116,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1365 | 39.42 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 907 | 38.83 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 998 | 38.46 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 785 | 38.12 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1113 | 36.62 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1086 | 35.59 | `audited_clean` | **retained_bounded** |
@@ -1548,6 +1548,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9312,6 +9313,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The load-bearing move is a class F symbol-identity step between the gravitational weak-field response kernel and the lattice resolvent G_0. The runner verifies neutral-subspace identities and diagnostics after phi = G_0 rho is imposed, but it does not derive that gravity is mediated by the same H and G_0. The source note's own boundary says this support may not be cited as a retained derivation of L^{-1}=G_0, the gravitational response kernel, the 1/(4 pi r) asymptotic, or nonlinear self-gravity convergence.
 - **open / conditional deps cited:**
   - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
+- **auditor confidence:** high
+
+### `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16`
+
+- **Note:** [`GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](../../docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded fixed-energy one-axis lattice-symbol phase-count bridge deriving n=k_s/k0 and c_E=1/(k0 lambda_axis'(k0)) for slowly varying piecewise-constant scalar-shift cells, conditional on the additive scalar generator shift input.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Dividing the local phase count Phase[s]=sum_j k_{s_j} Delta l_j by k0 gives Phase[s]/k0=sum_j (k_{s_j}/k0) Delta l_j, so the packet index is n_j:=k_{s_j}/k0.  _(class `A`)_
+- **chain closes:** False — The fixed-energy inverse, phase-count identity, first-order coefficient, and ray-angle algebra close once H_s=H_0+sI is granted. The restricted cited authorities do not actually derive the additive scalar generator shift with the stated +s sign and normalization; they only state the weak-field action response and Poisson/source surface.
+- **rationale:** Issue: the load-bearing algebra is valid conditional on H_s=H_0+sI, but the cited SELF_CONSISTENCY_FORCES_POISSON_NOTE text does not supply that scalar generator-shift theorem. Why this blocks: the note claims the shift is inherited from retained one-hop inputs, yet the restricted packet only closes the later phase-count consequences. Repair target: add or cite a retained bounded theorem deriving the additive generator shift, including sign and normalization, from the weak-field action/propagator surface. Claim boundary until fixed: the note supports the conditional axis-symbol eikonal identity and coefficient, not an independently closed gravity scalar-shift bridge.
+- **open / conditional deps cited:**
+  - `SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`
 - **auditor confidence:** high
 
 ### `gravity_full_self_consistency_note`

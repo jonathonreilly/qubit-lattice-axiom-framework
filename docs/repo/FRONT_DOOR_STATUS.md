@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1533 |
+| Applied audit verdicts | 1534 |
 | Retained-grade rows, including boxed decorations | 1447 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
 | Retained bounded rows | 963 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 27 |
-| Unaudited rows | 1524 |
+| Unaudited rows | 1523 |
 | Retained-pending-chain rows | 3 |
-| Audited conditional rows | 33 |
+| Audited conditional rows | 34 |
 | Audited renaming rows | 16 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 7 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1526 |
-| Ready rows | 108 |
+| Total pending rows | 1525 |
+| Ready rows | 107 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
 | Medium pending | 412 |
-| Leaf pending | 543 |
+| Leaf pending | 542 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16`](../../docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) - medium; unaudited
 - [`koide_records_objectivity_conditional_note_2026-05-31`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md) - medium; unaudited
 - [`linear_response_derivation_note`](../../docs/LINEAR_RESPONSE_DERIVATION_NOTE.md) - medium; unaudited
 - [`linear_response_second_order_kubo_note`](../../docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md) - medium; unaudited
 - [`native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`newton_poisson_flat_friedmann_textbook_import_note_2026-05-17`](../../docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - medium; unaudited
 - [`lanes.generated-geometry.readme`](../../docs/lanes/generated-geometry/README.md) - medium; unaudited
-- [`newton_poisson_flat_friedmann_textbook_import_note_2026-05-17`](../../docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - leaf; unaudited
+- [`plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12`](../../docs/PLAQUETTE_ENVIRONMENT_CONTRACTION_COST_VERIFICATION_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -49,8 +49,10 @@ The gate introduces **no new admissions and no new repo-wide
 vocabulary**. It re-bases the cosmology / η-cascade's existing
 backdrop usage onto an explicit named-premise block so the conditional
 chain is exposed rather than implicit. It does **not** promote any
-authority, retire any admission, change any row's `effective_status`,
-or claim that any of C1–C3 are derived from `Cl(3)` on `Z^3`.
+authority, retire the parent admission, change any row's
+`effective_status`, or claim that C1, C2, or the full
+cosmological-fluid application of C3 are derived from `Cl(3)` on
+`Z^3`.
 
 ## Honest framing up front
 
@@ -102,13 +104,24 @@ and no new repo-wide axiom is introduced.
   `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`;
   C3 admits only the non-Λ component labels.
 
+  2026-06-18 C3 kinetic-label partial bridge: the non-Λ ideal kinetic
+  component labels `w_r = 1/3` and `w_m = 0` are no longer pure
+  textbook import on this branch for finite signed-permutation kinetic
+  surfaces; see
+  [FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md](FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md).
+  This does not derive C1 or C2, does not derive the full FRW
+  backdrop, and does not by itself prove that the ideal labels apply
+  to the actual cosmological fluids.
+
 This bridge proves: **if** the retained `S^3` spatial topology is
 combined with the already-conditional FRW kinematic / open-number
 reduction surface and the supplied premise packet C1–C3, **then** the
 cosmological backdrop used by the η-cascade and the late-time
 bounded cosmology variable set is the explicit conditional surface
 recorded below. It does **not** claim to derive C1, C2, or C3 from
-`Cl(3)` on `Z^3`.
+`Cl(3)` on `Z^3`; after the 2026-06-18 partial bridge, the narrower
+statement is that C1, C2, and the full cosmological-fluid application
+of C3 remain outside this parent note.
 
 ## Decomposition table
 
@@ -123,7 +136,7 @@ load-bearing class:
 | `N_eff = 3 + 0.046 = 3.046` (active-neutrino bookkeeping) | `unaudited` positive-theorem (active count 3 from three retained generations; +0.046 textbook) | conditional on retained chain + textbook correction |
 | Cosmological principle (homogeneity + isotropy on scales above the `S^3` ball radius) | not derived; not supplied by any retained note | **local supplied premise C1** |
 | Adiabatic expansion (no entropy injection in the leptogenesis -> CMB window) | not derived; touches inflation-reheating which is bounded-status | **local supplied premise C2** |
-| Standard radiation -> matter -> Lambda equation-of-state taxonomy (`w_r=1/3`, `w_m=0`; `w_Lambda=-1` separately retained) | only `w_Lambda = -1` is retained-grade as a corollary; `w_r=1/3` and `w_m=0` are textbook FRW component labels | **local supplied premise C3** |
+| Standard radiation -> matter -> Lambda equation-of-state taxonomy (`w_r=1/3`, `w_m=0`; `w_Lambda=-1` separately retained) | `w_Lambda = -1` is handled by a separate corollary; `w_r=1/3` and `w_m=0` now have exact finite kinetic bounded support for ideal component labels only | **local supplied premise C3, narrowed by the 2026-06-18 kinetic-label partial bridge; cosmological-fluid application remains supplied** |
 
 The local-supplied-premise label is deliberately non-registry language. This
 note does **not** add C1, C2, or C3 to `docs/audit/data/tier_a_admissions.json`
@@ -134,16 +147,17 @@ and does **not** claim membership in the Tier-A registry.
 | Step | Statement | Load-bearing input |
 |---|---|---|
 | (B1) | The cone-capped cubical ball `M_R = B_R ∪ cone(∂B_R)` is PL homeomorphic to `S^3` for every `R ≥ 2`, supplying the qualitative spatial topology used by the FRW background | Retained S^3 general-R derivation (`S3_GENERAL_R_DERIVATION_NOTE.md`) |
-| (B2) | On the (B1) topology combined with C1 + C3, the homogeneous-isotropic perfect-fluid stress-energy form on a flat FRW background is the relevant cosmology surface; this is the explicit setup already used by the FRW kinematic reduction theorem | C1 + C3 supplied premise packet + already-conditional FRW reduction note |
+| (B2) | On the (B1) topology combined with C1 + C3, the homogeneous-isotropic perfect-fluid stress-energy form on a flat FRW background is the relevant cosmology surface; this is the explicit setup already used by the FRW kinematic reduction theorem | C1 + C3 supplied premise packet + already-conditional FRW reduction note; the ideal non-Lambda kinetic labels in C3 have only partial bounded support from the 2026-06-18 kinetic bridge |
 | (B3) | On the (B2) background plus the retained `w_Λ = −1` corollary, the late-time bounded cosmology variable set has exactly two structural degrees of freedom at fixed admitted radiation `R := Ω_r,0`, by the open-number reduction theorem | Retained dark-energy EOS corollary + already-conditional open-number reduction note |
 | (B4) | On the (B3) background plus C2 (adiabatic expansion), the comoving entropy `s a^3` is conserved across the leptogenesis -> CMB window, which is the load-bearing premise that lets the η-cascade factorize as `η = (s/n_γ) · C_sph · d_N · ε_1 · κ_axiom[H]` (the leptogenesis transport-decomposition theorem) | C2 supplied premise + already-conditional transport-decomposition note |
-| (B5) | The (B4) factorization plus the retained `N_active = 3` and the textbook `Δ N_eff = 0.046` correction yields `N_eff = 3.046` as the radiation-era effective relativistic count used by the cosmology η-cascade | C3 (radiation component label) + already-conditional `N_eff` note |
+| (B5) | The (B4) factorization plus the retained `N_active = 3` and the textbook `Δ N_eff = 0.046` correction yields `N_eff = 3.046` as the radiation-era effective relativistic count used by the cosmology η-cascade | C3 radiation component label, with finite ideal-kinetic support for `w_r=1/3`; already-conditional `N_eff` note; textbook `Δ N_eff` correction remains separate |
 | (B6) | Conclusion: the cosmology η-cascade's cosmological backdrop closes only after admitting C1 + C2 + C3 on top of the retained `S^3` topology and the already-conditional FRW kinematic / open-number / `N_eff` / transport-decomposition chain. This is the admission boundary the bridge records | (B1) + (B2) + (B3) + (B4) + (B5) |
 
 The proof-walk does **not** cite the Wilson plaquette action, staggered
 phases, Brillouin-zone labels, link unitaries, lattice scale `u_0`, a
 Monte Carlo measurement, or a fitted observational value. It does not
-derive C1, C2, or C3 from `Cl(3)` on `Z^3`.
+derive C1, C2, or the full FRW application of C3 from `Cl(3)` on
+`Z^3`.
 
 ## What this admission bridge retires vs leaves admitted
 
@@ -152,23 +166,26 @@ To be explicit about scope:
 **Retired to bounded-derived class on this bridge's surface (no new
 work; only re-basing onto the explicit C1–C3 packet):**
 
-- *Nothing.* No retained-grade row is promoted, demoted, or rebased by
-  this note. The "what's framework-derivable" column simply names the
-  authorities the cosmology η-cascade already cites; the bridge does
-  not change their effective status.
+- The ideal kinetic component labels `w_r = 1/3` and `w_m = 0` are
+  now supported by
+  [FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md](FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md)
+  on finite signed-permutation kinetic surfaces. This is a partial
+  C3 narrowing only. No retained-grade row is promoted, demoted, or
+  rebased by this note, and the parent FRW backdrop remains open.
 
 **Left admitted (the admission boundary recorded by this bridge):**
 
 - **C1** — the cosmological principle beyond the retained `S^3`
   topology;
 - **C2** — adiabatic expansion in the leptogenesis -> CMB window;
-- **C3** — the radiation / matter equation-of-state component labels
-  (`w_Λ = −1` is separately retained-grade and is **not** admitted
-  here).
+- **C3 residual** — the application of the ideal radiation / matter
+  equation-of-state labels to the actual cosmological fluids
+  (`w_Λ = −1` is separately handled and is **not** admitted here).
 
-This is the honest scope: the bridge does not retire any
-cosmological-backdrop admission. It records the admission boundary
-and exposes the conditional chain that the η-cascade depends on,
+This is the honest scope: the bridge retires only the narrow ideal
+kinetic-label import and does not retire the cosmological-backdrop
+admission. It records the admission boundary and exposes the
+conditional chain that the η-cascade depends on,
 parallel to the way
 `HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`
 (non-load-bearing voice-template citation) re-bases the hypercharge
@@ -198,21 +215,19 @@ above; the roadmap items are open and remain so.
   the input/output endpoints of the window, but the in-window
   entropy bookkeeping itself is currently textbook. No retained-grade
   closer exists today.
-- **Closing C3 (EOS component labels).** Would require deriving the
-  pressureless-matter (`w_m = 0`) and ultra-relativistic-radiation
-  (`w_r = 1/3`) equation-of-state labels from the framework's
-  retained matter content and the retained
-  `cosmological_constant_spectral_gap_identity` derivation surface.
-  The `w_Λ = −1` corollary already exists; the open part is the
-  remaining two labels. This is the smallest of the three admissions
-  in scope; the framework's retained matter content already has the
-  three-generation + one-Higgs-doublet structure that ought to
-  control the late-time `w_r`, `w_m` taxonomy, but no current
-  retained row supplies the derivation.
+- **Closing C3 (EOS component labels).** The 2026-06-18 kinetic-label
+  partial bridge derives the ideal finite kinetic labels
+  `w_r = 1/3` and `w_m = 0` on signed-permutation kinetic surfaces.
+  The remaining C3 work is to prove that those ideal labels apply to
+  the actual cosmological fluids used by the η-cascade, with the
+  required homogeneity/isotropy and thermal-history hypotheses made
+  explicit. The `w_Λ = −1` corollary already exists on its own
+  surface.
 
-The roadmap is descriptive only. None of C1, C2, or C3 are claimed
-derivable on the current retained surface, and the bridge does not
-predict that any of them will close.
+The roadmap is descriptive only. C1, C2, and the full
+cosmological-fluid application of C3 are not claimed derivable on the
+current retained surface, and the bridge does not predict that any of
+them will close.
 
 ## Context Surfaces
 
@@ -281,8 +296,8 @@ This bridge does **not** close:
   `Z^3`;
 - derivation of adiabatic expansion (C2) from a framework-retained
   inflation-reheating treatment;
-- derivation of the standard matter / radiation equation-of-state
-  labels (C3);
+- application of the ideal matter / radiation equation-of-state
+  labels to the actual cosmological fluids (C3 residual);
 - the numerical value of `H_0`, `Ω_Λ`, `Ω_m`, or any other late-time
   cosmology observable (those remain on the open-number-reduction
   surface, unchanged);
@@ -298,8 +313,10 @@ This bridge does **not** close:
   untouched by this note).
 
 The bridge re-bases the cosmology η-cascade's existing FRW + adiabatic
-backdrop usage onto the explicit C1–C3 premise packet. It does **not**
-eliminate admission; it formally exposes the conditional chain. It
+backdrop usage onto the explicit C1–C3 premise packet. The 2026-06-18
+C3 kinetic-label partial bridge narrows only the ideal non-Lambda
+component labels; it does **not** eliminate the parent admission. It
+formally exposes the conditional chain. It
 introduces no new repo-wide tag, no new "cosmological backdrop class",
 no new "FRW landing tier", and no new theorem class.
 
@@ -308,7 +325,7 @@ no new "FRW landing tier", and no new theorem class.
 This open gate may not be cited downstream as a retained derivation of any of
 the following:
 
-- C1, C2, or C3;
+- C1, C2, or the full cosmological-fluid application of C3;
 - FRW dynamics;
 - entropy conservation or adiabatic expansion;
 - observational cosmology parameters;
@@ -318,7 +335,7 @@ C1-C3 also may not be moved into a registry, admission file, or premise file
 by citing this packet. Such a move requires a separate source note, runner,
 review, and independent audit. Future use must separately prove or explicitly
 admit the cosmological principle, adiabatic expansion / entropy conservation,
-matter and radiation EOS labels, FRW dynamics, observational-parameter
+matter and radiation EOS label application, FRW dynamics, observational-parameter
 bridges, and any parent-status closure.
 
 ## Verification
@@ -332,6 +349,6 @@ PYTHONPATH=scripts python3 scripts/frontier_frw_adiabatic_expansion_cosmological
 Expected:
 
 ```text
-TOTAL: PASS=57 FAIL=0
-VERDICT: open gate passes; FRW + adiabatic backdrop decomposition is recorded as an unresolved C1-C3 premise boundary. No new admissions are introduced; no row's effective status is changed.
+TOTAL: PASS=62 FAIL=0
+VERDICT: open gate passes; FRW + adiabatic backdrop decomposition is recorded as an unresolved C1-C3 premise boundary with partial bounded support for the ideal non-Lambda C3 kinetic labels. No new admissions are introduced; no row's effective status is changed.
 ```

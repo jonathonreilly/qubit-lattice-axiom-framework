@@ -15,6 +15,6 @@ no_go_routes:
   - "The current cache does not support the old narrow seed-0 slice narrative or a new independent retained family."
 trace_gate: direct_blocker_closure
 review_loop_disposition: delegated
-pr_status: pending
-next_exact_action: "Push branch and open ready PR for reviewer extraction; do not audit, land, or refresh stale PRs."
-stop_condition: "Stop after PR creation for this coherent source-side alignment block."
+pr_status: "opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4374"
+next_exact_action: "Reviewer extracts and backpressures PR #4374; do not audit, land, or refresh stale PRs."
+stop_condition: "Stop after ready PR creation for this coherent source-side alignment block."

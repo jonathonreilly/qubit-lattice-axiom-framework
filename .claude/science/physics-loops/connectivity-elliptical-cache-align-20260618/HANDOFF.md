@@ -4,6 +4,8 @@ This branch repairs the source-side blocker on
 `connectivity_family_v2_elliptical_duplicate_note` without editing audit
 results.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4374
+
 The note now cites the current primary runner and SHA-pinned cache, records the
 45-row inventory, retires the stale `drift = 0.02, seed = 0` targeted row, and
 states the current `25/45` duplicate-boundary result.

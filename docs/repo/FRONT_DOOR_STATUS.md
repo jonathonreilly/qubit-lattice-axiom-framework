@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1432 |
-| Retained-grade rows, including boxed decorations | 1391 |
+| Applied audit verdicts | 1433 |
+| Retained-grade rows, including boxed decorations | 1392 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 921 |
+| Retained bounded rows | 922 |
 | Boxed decorations under retained parents | 48 |
 | Open gates | 14 |
-| Unaudited rows | 1625 |
+| Unaudited rows | 1624 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 14 |
 | Audited renaming rows | 7 |
@@ -33,36 +33,36 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1627 |
+| Total pending rows | 1626 |
 | Ready rows | 162 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
-| High pending | 280 |
+| High pending | 279 |
 | Medium pending | 474 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`restricted_strong_field_closure_note`](../../docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md) - high; unaudited
 - [`teleportation_native_axioms_theory_note`](../../docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md) - high; unaudited
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
 - [`yt_lsp_signed_record_source_readout_support_note_2026-05-24`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md) - high; unaudited
 - [`gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md) - high; unaudited
 - [`yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`](../../docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md) - high; unaudited
 - [`gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md) - high; unaudited
+- [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **430**.
+- Non-retained-grade cited rows in publication tables: **429**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 173 |
-| high | `unaudited` | 155 |
+| high | `unaudited` | 154 |
 | medium | `unaudited` | 93 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
@@ -89,7 +89,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
-- `plaquette_self_consistency_note` - critical; 1011 descendants; score 52.983
-- `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 49.006
-- `key_terminology` - critical; 1119 descendants; score 46.629
+- `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
+- `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
+- `key_terminology` - critical; 1118 descendants; score 46.628
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

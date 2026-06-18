@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 217 |
 | **retained_bounded** | 986 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 31 |
-| unaudited | 1463 |
+| open_gate | 32 |
+| unaudited | 1462 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 20 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1428 |
+| `audited_clean` | 1429 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1785 |
+| `unaudited` | 1784 |
 
 | claim_type | count |
 |---|---:|
@@ -86,8 +86,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 891 |
-| `leaf` | 1421 |
+| `medium` | 890 |
+| `leaf` | 1422 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -800,6 +800,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_dkd_berry_spectator_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11656,6 +11657,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** In the current A_min C3-circulant matrix surface, D^2 = diag(MM†, M†M) makes the Dirac readout singular-value/sign-blind, while M(b)⊗σ_+ has b-independent Fourier generation modes and hence a flat generation bundle.  _(class `A`)_
 - **chain closes:** True — The determinant sign, D^2 block identity, fixed Fourier eigenbasis, and signed-vs-singular Koide contrast follow from the supplied matrix algebra and retained one-hop authorities. The chain closes only for the narrowed algebraic wall, not for any physical branch-selection theorem.
 - **rationale:** Independent algebra checks confirm det([[0,M],[M†,0]]) = -|det M|^2 for three generations, D^2 is the singular-value block square, and M as a polynomial in the cyclic shift has b-independent Fourier generation eigenvectors. The no-go discipline gate passes only because the note is explicitly bounded: Weyl readout, signed Hermitian readout, off-generation/corner realizations, and READOUT_TO_BRANCH_SELECTION_BRIDGE remain open. No external comparator, tuned value, or physical mass bridge is used as a proof input.
+- **auditor confidence:** high
+
+### `koide_dkd_berry_spectator_note_2026-05-31`
+
+- **Note:** [`KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md`](../../docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite Kähler-Dirac form-parity and corrected Lambda^1 embedding checks, plus a sampled Wilson-loop boundary showing the stale zero-Berry spectator claim is not certified.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-koide_dkd_berry_spectator_note_2026-05-31-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With the corrected Lambda^1 embedding, the tested Wilson-loop sweep is not identically zero across sampled kappa and band choices, so the submitted zero-Berry spectator theorem is not certified.  _(class `C`)_
+- **chain closes:** True — The scoped open-gate claim closes: the runner constructs the finite Fock/Kähler-Dirac operators and lifted circulant mass, verifies the algebraic parity facts, and computes nonzero sampled Wilson-loop outputs without hard-coding them. It does not close, and does not claim, a universal Berry spectator theorem.
+- **rationale:** The direct cited authorities are retained-grade for the algebraic background consumed here, and the target note stays inside a narrow bug-repair/open-gate boundary. The runner source performs actual finite matrix construction and Wilson-loop computation rather than importing a fitted value or printing constants. The conclusion is clean only as a boundary result: it blocks reuse of the stale zero-Berry claim and records unresolved Berry-theorem data requirements.
 - **auditor confidence:** high
 
 ### `koide_dweh_cyclic_compression_note_2026-04-18`

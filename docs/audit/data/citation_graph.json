@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_dkd_berry_spectator_note_2026-05-31"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "koide_pointer_record_degeneracy_d3_note_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_pointer_record_degeneracy_d3_note_2026-05-31"
+      "to": "koide_record_sign_agnostic_eta_refuted_2026-06-04"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12",
         "koide_dkd_berry_spectator_note_2026-05-31",
         "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
         "koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18",
         "koide_p1_collapses_frame_residuals_note_2026-06-01",
+        "koide_pointer_record_degeneracy_d3_note_2026-05-31",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "koide_pointer_record_degeneracy_d3_note_2026-05-31"
+        "koide_record_sign_agnostic_eta_refuted_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "30330e2e4df1e2d99f618c34098a1522b0c1139bb77c15d40a11edb5bd3d17f1",
+      "note_hash": "61eb2e7ca0787795d2527a39b311c97ec947baa664cc5499b35af1c50be4ff12",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

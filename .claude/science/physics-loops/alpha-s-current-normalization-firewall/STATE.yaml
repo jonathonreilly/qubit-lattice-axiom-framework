@@ -1,0 +1,30 @@
+loop_slug: alpha-s-current-normalization-firewall
+date: 2026-06-18
+goal: "Retire the stale April minimal-axioms normalization citation from the alpha_s direct Wilson-loop conditional row without auditing, retagging, or promoting the row."
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "current-normalization source-boundary repair"
+target_claim_id: alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02
+target_blocker_text: "missing_bridge_theorem: cheapest next repair is to add retained bridge theorems for Sommer scale setting and 4-loop QCD running/threshold matching, then replace the superseded minimal-axioms normalization citation with current retained or approved premise authority."
+files_touched:
+  - docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md
+  - scripts/frontier_alpha_s_direct_wilson_loop.py
+  - scripts/frontier_alpha_s_direct_wilson_loop_honest_status_audit.py
+  - logs/runner-cache/frontier_alpha_s_direct_wilson_loop.txt
+open_imports:
+  - "Sommer r_0 physical scale setting"
+  - "4-loop QCD running and threshold matching"
+  - "pure-gauge-to-full-QCD sea-quark transfer"
+  - "g_bare = 1 / beta = 6 Wilson normalization authority"
+closed_subblockers:
+  - "The source note no longer routes g_bare = 1 through MINIMAL_AXIOMS_2026-04-11.md."
+  - "The current minimal axiom surface is cited only as the current baseline that explicitly does not supply g_bare = 1."
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_alpha_s_direct_wilson_loop.py -> PASS=21 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_alpha_s_direct_wilson_loop_honest_status_audit.py -> PASS=42 FAIL=0"
+review_loop_disposition: "not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: "pending push and PR"
+next_exact_action: "Push branch and open a ready PR for reviewer extraction."
+stop_condition: "coherent source-side repair block packaged"

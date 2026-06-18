@@ -147,15 +147,15 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
-      "claim_scope": null,
+      "claim_scope": "Bounded finite-dimensional weak-field bridge on finite periodic Z^3 with the constant mode projected out: variational source response, unique local phase-invariant normalized density rho_psi=|psi|^2, and first-order same-source test response with U=-m phi and F=m grad phi, using the retained Z^3 Green-kernel asymptotic only for the large-distance 1/(4 pi r) normalization.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "poisson_self_gravity_loop_v3_note",
@@ -163,15 +163,15 @@
         "self_consistency_forces_poisson_note",
         "poisson_exhaustive_uniqueness_note"
       ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
+      "direct_in_degree": 6,
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.675,
+      "load_bearing_score": 11.18,
       "note_path": "docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py",
-      "transitive_descendants": 288
+      "transitive_descendants": 289
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

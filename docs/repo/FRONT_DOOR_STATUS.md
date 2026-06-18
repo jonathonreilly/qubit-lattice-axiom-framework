@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1465 |
-| Retained-grade rows, including boxed decorations | 1411 |
+| Applied audit verdicts | 1466 |
+| Retained-grade rows, including boxed decorations | 1412 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 935 |
+| Retained bounded rows | 936 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 17 |
-| Unaudited rows | 1592 |
+| Unaudited rows | 1591 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 19 |
 | Audited renaming rows | 11 |
@@ -33,37 +33,37 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1594 |
+| Total pending rows | 1593 |
 | Ready rows | 153 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 269 |
-| Medium pending | 452 |
+| Medium pending | 451 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
 - [`yt_ew_m_residual_note_2026-05-02`](../../docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
 - [`darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05`](../../docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md) - medium; unaudited
-- [`newton_derivation_top4_bridge_note`](../../docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md) - medium; unaudited
 - [`koide_real_rep_block_count_permitted_not_forced_note_2026-05-30`](../../docs/KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md) - medium; unaudited
+- [`newton_derivation_top4_bridge_note`](../../docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md) - medium; unaudited
+- [`gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16`](../../docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **426**.
+- Non-retained-grade cited rows in publication tables: **425**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 173 |
 | high | `unaudited` | 153 |
-| medium | `unaudited` | 87 |
+| medium | `unaudited` | 86 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
 | critical | `audited_conditional` | 1 |
@@ -92,7 +92,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
-- `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
+- `plaquette_self_consistency_note` - critical; 1011 descendants; score 52.983
 - `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
 - `key_terminology` - critical; 1119 descendants; score 46.629
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

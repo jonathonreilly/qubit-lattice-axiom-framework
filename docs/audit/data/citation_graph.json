@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12"
+      "to": "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17",
         "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10",
         "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
         "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12",
         "gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12",
+        "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12"
+        "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dcd82e8880d65ab5cfa783c2ac78b7994854395dae94e133f3c143c03e9b0603",
+      "note_hash": "7e301b4d070bb365e0ed8551f07a6f58563708e58de6b3a0f164595b1f522b43",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

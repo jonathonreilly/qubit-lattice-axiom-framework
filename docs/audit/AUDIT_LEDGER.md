@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 980 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1472 |
+| unaudited | 1471 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 19 |
+| ~~audited_renaming~~ | 20 |
 | ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -70,8 +70,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 19 |
-| `unaudited` | 1794 |
+| `audited_renaming` | 20 |
+| `unaudited` | 1793 |
 
 | claim_type | count |
 |---|---:|
@@ -1710,6 +1710,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -9163,6 +9164,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The note defines Z_beta^env by z_(p,q)^env(beta) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) * lambda_env(beta), so that lambda_env^{-1} C_(Z_beta^env) has the same diagonal eigenvalues as R_beta^env.  _(class `E`)_
 - **chain closes:** True — The displayed identity closes as a formal algebraic consequence of the D2 definition plus the cited finite/formal convolution dictionary. It does not derive Z_beta^env from an independently constructed unmarked spatial Wilson environment; that object is introduced by definition from the residual eigenvalues.
 - **rationale:** The runner verifies exact symbolic consistency after constructing z_env directly as lambda_env * kappa/a^4, which is the contested coefficient sequence definition. The source boundary also states that Z_beta^env is defined from the stripped residual eigenvalue sequence rather than derived from an independent unmarked spatial Wilson environment integral. Thus the formal convolution packaging is valid, but the load-bearing step is definitional rather than an independent theorem.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite box 0 <= p,q <= 4: Peter-Weyl diagonal convolution and structural properties of R[rho] hold, with rho(6) coefficients imported from the retained_bounded companion; the residual-environment coincidence is only definitional packaging.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The decomposition stripping defines the finite-box residual factor's action on chi_(p,q) by a real diagonal scalar, and the bounded companion's rho_(p,q)(6) values determine that sequence on B.  _(class `E`)_
+- **chain closes:** False — The N1/N2 algebra and use of retained_bounded coefficient inputs close. The residual-environment identification does not close as an independent theorem because R_6^env/K_src are defined or constructed from the same diagonal R[rho(6)] that is then stripped back.
+- **rationale:** Issue: N3's residual-environment coincidence is obtained by defining/constructing R_6^env and the runner's K_src from the same diagonal R[rho(6)] that is later recovered. Why this blocks: the finite Peter-Weyl algebra and retained_bounded coefficient input are valid, but they do not independently derive the residual environment factor. Repair target: construct K_6^src and the stripping map from an independently audited source-sector/local-factor theorem, then show the stripped eigenvalues equal the companion rho values. Claim boundary until fixed: finite-box diagonal convolution and bounded coefficient bookkeeping are supported; residual-environment identification remains definitional packaging.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17`

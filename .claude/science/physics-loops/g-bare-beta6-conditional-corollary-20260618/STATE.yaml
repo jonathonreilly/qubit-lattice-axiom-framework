@@ -1,0 +1,9 @@
+lane: g_bare_beta6_conditional_corollary
+date: 2026-06-18
+branch: codex/g-bare-beta6-conditional-corollary-20260618
+target_claim_id: g_bare_derivation_note
+target_note: docs/G_BARE_DERIVATION_NOTE.md
+target_runner: scripts/frontier_g_bare_derivation.py
+status: source_repair_ready_for_review
+audit_action: none
+review_loop: delegated_to_codex_reviewer

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 942 |
+| **retained_bounded** | 943 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1575 |
+| unaudited | 1574 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 13 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1365 |
+| `audited_clean` | 1366 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1897 |
+| `unaudited` | 1896 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 501 |
-| `medium` | 883 |
+| `high` | 502 |
+| `medium` | 882 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -683,6 +683,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9389,6 +9390,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Using K(i)=-i, KDK^{-1}=D, and P D P^{-1}=-D, the note computes Θ_H H Θ_H^{-1}=-i·PDP=-i·(-D)=iD=H.  _(class `A`)_
 - **chain closes:** True — The conclusion follows by algebra from the retained-grade C/P-on-D identities in CPT_EXACT_NOTE plus the immediate real-matrix conjugation rule for D and K(i)=-i. The SME-bilinear identification remains explicitly out of scope and is not needed for L1-L4.
 - **rationale:** The load-bearing step is a direct algebraic conjugation identity over retained-grade finite-lattice inputs, not a definition, renaming, external comparator, or tuned numerical match. The runner source builds the framework matrices directly and checks the claimed matrix identities with no helper imports or hidden constants. The cited bridge's open SME-dictionary issue is explicitly excluded from the audited scope, so it does not carry into this bounded theorem.
+- **auditor confidence:** high
+
+### `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16`
+
+- **Note:** [`HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING_BOUNDED_NOTATION_EQUIVALENCE_NOTE_2026-05-16.md`](../../docs/HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING_BOUNDED_NOTATION_EQUIVALENCE_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact real-variable notation equivalence alpha^N = exp(-c_eff/alpha) for alpha > 0 and positive integer N, including the alpha_LM, N = 16 instance only as a substitution.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Define c_eff(alpha, N) := N alpha ln(1/alpha), which makes -c_eff(alpha, N)/alpha = N ln(alpha) and hence exp(-c_eff/alpha) = alpha^N.  _(class `A`)_
+- **chain closes:** True — The identity follows directly from ln(1/alpha) = -ln(alpha) and real exponentiation. No cited authority, physical bridge, or external input is needed within the stated narrow scope.
+- **rationale:** Within the declared bounded scope, the note proves only an exact algebraic rewrite after defining c_eff as a function of alpha and N. The runner source genuinely checks the symbolic identity, numerical samples, and boundary hygiene, and it imports no physical constants, comparator data, or upstream theorem surfaces. Because the note explicitly denies any derivation of alpha_LM, N = 16, or a hierarchy mechanism, the audited claim closes as a narrow class-A algebraic identity.
 - **auditor confidence:** high
 
 ### `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10`

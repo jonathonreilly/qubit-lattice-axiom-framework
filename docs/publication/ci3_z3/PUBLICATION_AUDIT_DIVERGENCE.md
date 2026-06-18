@@ -18,7 +18,7 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 173 |
-| high | `unaudited` | 154 |
+| high | `unaudited` | 153 |
 | medium | `unaudited` | 92 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
@@ -28,7 +28,7 @@ publication tables phrase it.
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 429
+**Total non-retained-grade rows in publication tables:** 428
 
 ## Per-row breakdown
 
@@ -310,7 +310,6 @@ publication tables phrase it.
 | high | `koide_axiom_native_support_batch_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `koide_microscopic_scalar_selector_target_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | high | `koide_q_eq_3delta_identity_note_2026-04-21` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
-| high | `koide_q_minimal_scale_free_selector_note_2026-04-22` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
 | high | `koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `koide_q_second_order_support_batch_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

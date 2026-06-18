@@ -23,6 +23,7 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md"
+CORE_NOTE = ROOT / "docs" / "MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md"
 
 PASS = 0
 FAIL = 0
@@ -394,6 +395,37 @@ def test_T11_downstream_source_boundary_firewall() -> None:
     )
 
 
+def test_T12_algebra_core_split() -> None:
+    section("T12: 2026-06-18 algebra-core split and upstream authority boundary")
+    text = NOTE.read_text(encoding="utf-8")
+    core = CORE_NOTE.read_text(encoding="utf-8")
+    flat = " ".join(text.split())
+    core_flat = " ".join(core.split())
+    cites_core = "MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md" in text
+    core_is_arithmetic_only = (
+        "action arithmetic only" in flat
+        and "does not derive the meron regulator" in flat
+    )
+    old_overclaim_removed = (
+        "Provides the one-hop authority for the regulator / twist / patching construction"
+        not in text
+    )
+    infra_boundary = (
+        "does **not** supply a retained meron regulator" in text
+        and "framework-substrate, or observable bridge" in text
+    )
+    core_bars_existence = (
+        "It must not be cited as:" in core
+        and "retained meron existence" in core
+        and "a regulator, cap, twist, or patching construction" in core_flat
+    )
+    check("parent cites the 2026-06-18 half-action algebra core split", cites_core)
+    check("parent says the split is action-arithmetic only", core_is_arithmetic_only)
+    check("old regulator/twist/patching authority overclaim is removed", old_overclaim_removed)
+    check("upstream infrastructure boundary excludes meron regulator/substrate bridge", infra_boundary)
+    check("core note bars meron existence and boundary-construction use", core_bars_existence)
+
+
 def main() -> int:
     print("# Meron / fractional-instanton 4 pi^2 / g^2 external gate runner")
     print(f"# Source note: {NOTE.relative_to(ROOT)}")
@@ -408,6 +440,7 @@ def main() -> int:
     test_T9_no_substrate_identification()
     test_T10_no_alpha_LM_16_closure()
     test_T11_downstream_source_boundary_firewall()
+    test_T12_algebra_core_split()
     print(f"\n=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")
     return 0 if FAIL == 0 else 1
 

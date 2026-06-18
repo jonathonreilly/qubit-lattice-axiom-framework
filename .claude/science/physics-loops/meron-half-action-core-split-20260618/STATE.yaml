@@ -1,0 +1,26 @@
+loop: meron-half-action-core-split-20260618
+target_claim_id: meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16
+target_note: docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+core_note: docs/MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md
+target_runner: scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py
+core_runner: scripts/meron_half_action_core_split_2026_06_18.py
+base: origin/main@49228cd03
+branch: codex/meron-half-action-core-split-20260618
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: split closed half-action algebra core from open regulator/twist/patching gate
+blocker_text: "the packet does not close the regulator/twist/patching construction for the meron or fractional-instanton sector"
+repair_summary: >
+  Added a bounded half-action algebra core note and runner deriving
+  S_half = 4*pi^2/g^2 from bounded topological-instanton normalization plus
+  supplied |Q|=1/2, while preserving the parent row as an external open gate
+  for meron/fractional-instanton boundary construction.
+verification:
+  - "PYTHONPATH=scripts python3 scripts/meron_half_action_core_split_2026_06_18.py -> TOTAL: PASS=19 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py -> TOTAL: PASS=32 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/meron_half_action_core_split_2026_06_18.py -> status ok"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py -> status ok"
+review_loop: delegated_to_codex_reviewer
+next_exact_action: open source-side PR; reviewer/auditor may re-audit the algebra core split and parent boundary
+

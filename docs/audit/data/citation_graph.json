@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "gate_b_operator_cauchy_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "gate_b_operator_cauchy_note_2026-05-10"
+      "to": "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15",
         "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
         "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28",
         "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "gate_b_dynamics_note",
+        "gate_b_operator_cauchy_note_2026-05-10",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "gate_b_operator_cauchy_note_2026-05-10"
+        "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dbe06b6cb45950826bbaa269a3cb6d7d84cdeb0bf797b5140a9f65bdd3ff4051",
+      "note_hash": "f7101bd0a99d552588c64a75e02bf116c359468874b93a55311a630ca73353b5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

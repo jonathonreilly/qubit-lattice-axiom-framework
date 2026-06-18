@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 980 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1480 |
+| unaudited | 1479 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 49 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1420 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 49 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1802 |
+| `unaudited` | 1801 |
 
 | claim_type | count |
 |---|---:|
@@ -1578,6 +1578,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_interacting_matter_build_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `g_bare_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7649,6 +7650,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cached current runner completes and computes the quadrant-reflection connectivity, source propagation, detector centroid shifts, and row gate rather than printing preset outcomes. It confirms a nonempty narrow basin: the note's quick subset has 5/9 passing rows and the current full default sweep has 23/45 passing rows, so the bounded non-universal claim closes.
 - **rationale:** The load-bearing claim is bounded to existence of a narrow computational basin, not family-wide or geometry-generic closure. The runner constructs the quadrant-reflection adjacency rule, evaluates zero, plus, minus, neutral, and double-source responses, and counts passing rows under explicit gates; it does not hard-code the pass count or target response signs. The note overstates the representative drift=0.50 quick row as mostly passing, but that wording is not needed for the audited bounded conclusion and the current runner output still supports the stated safe read. Residual risk is limited to the unexpanded imported grown-slice generator, which was not a listed one-hop note in the restricted packet.
 - **auditor confidence:** medium
+
+### `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** External twisted-T4 SU(N) fractional charge/action algebra with canonical g^2=1 numerical values, plus only schematic dilute-gas and condensate-target language under explicit firewall boundaries.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The classical action of the self-dual minimum in the Q = k/N sector is S_frac = (8 pi^2 / g^2) |k/N|.  _(class `A`)_
+- **chain closes:** False — The fractional action and canonical numerical values close algebraically from the upstream fractional Q = k/N arithmetic and Bogomolny/BPST normalization. The full open-gate packet does not close as a theorem because the dilute-gas determinant, measure, coupling scale, convergence/condensate criterion, and any framework substrate or observable bridge remain explicitly open.
+- **rationale:** Issue: the runner checks the algebraic action formula, numerical substitutions, and boundary/firewall prose, but it does not derive the dilute-gas determinant, phase-space measure, running-coupling scale, convergence regime, or condensate criterion. Why this blocks: the safe fractional-charge/action core is supported, but the dilute-gas and condensate portions remain external model-regime premises rather than retained theorem content. Repair target: supply a retained theorem or authority packet for the dilute-gas measure/regime data, or split the algebraic action core into a narrower decoration of the topological-instanton parent. Claim boundary until fixed: cite only the twisted-T4 fractional charge/action algebra and schematic open target, not hierarchy, condensate, substrate, or observable closure.
+- **auditor confidence:** high
 
 ### `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25`
 

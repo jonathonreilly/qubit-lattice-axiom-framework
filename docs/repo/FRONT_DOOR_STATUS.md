@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1598 |
-| Retained-grade rows, including boxed decorations | 1478 |
+| Applied audit verdicts | 1599 |
+| Retained-grade rows, including boxed decorations | 1479 |
 | Retained positive theorems | 219 |
 | Retained no-go rows | 217 |
-| Retained bounded rows | 987 |
+| Retained bounded rows | 988 |
 | Boxed decorations under retained parents | 55 |
 | Open gates | 32 |
-| Unaudited rows | 1459 |
+| Unaudited rows | 1458 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 54 |
 | Audited renaming rows | 20 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1461 |
-| Ready rows | 45 |
+| Total pending rows | 1460 |
+| Ready rows | 44 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 476 |
+| Leaf pending | 475 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`koide_pointer_record_degeneracy_d3_note_2026-05-31`](../../docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md) - medium; unaudited
 - [`koide_record_sign_agnostic_eta_refuted_2026-06-04`](../../docs/KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md) - medium; unaudited
 - [`koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3`](../../docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md) - medium; unaudited
 - [`kubo_fam2_non_convergence_note_2026-05-02`](../../docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md) - medium; unaudited
 - [`landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13`](../../docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
+- [`lattice_3d_nyquist_diffraction_note`](../../docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`lattice_3d_nyquist_diffraction_note`](../../docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md) - leaf; unaudited
+- [`lepton_block_d12_prime_matching_no_go_note_2026-05-10`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

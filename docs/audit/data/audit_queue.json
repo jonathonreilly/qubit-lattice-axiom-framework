@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 265,
-    "leaf": 476,
+    "leaf": 475,
     "medium": 413
   },
   "cycle_break_target_count": 8,
@@ -17455,38 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
-        "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
-        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
-        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
-        "action_normalization_note",
-        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-        "three_generation_observable_theorem_note",
-        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_pointer_record_degeneracy_d3.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_record_sign_agnostic_eta_refuted_2026-06-04",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -17585,6 +17553,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "lattice_3d_nyquist_diffraction_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "valley_linear_asymptotic_bridge_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/lattice_3d_valley_linear_card.py"
+      ],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/lattice_3d_nyquist_diffraction_probe.py",
       "transitive_descendants": 15
     },
     {
@@ -30285,32 +30279,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lattice_3d_nyquist_diffraction_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "valley_linear_asymptotic_bridge_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/lattice_3d_valley_linear_card.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_3d_nyquist_diffraction_probe.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44202,6 +44170,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 45,
-  "total_pending": 1461
+  "ready_count": 44,
+  "total_pending": 1460
 }

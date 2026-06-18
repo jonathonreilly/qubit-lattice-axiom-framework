@@ -1,0 +1,22 @@
+loop: koide-q-reduced-cycle-edge-20260618
+goal: "Break the apparent Koide Q-reduced 2-node audit cycle by making the obstruction note's parent reference context-only, without changing audit status."
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: source_graph_false_edge_hygiene
+target_claim_id: koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12
+target_blocker_text: "cycle_break_required: co-cycle citations to koide_q_reduced_observable_restriction_theorem_2026-04-22 must be informational/see-also references, and a source-graph repair pass must strip or rewrite those markdown links."
+files_touched:
+  - docs/KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md
+  - scripts/koide_q_reduced_cycle_edge_hygiene_2026_06_18.py
+  - logs/runner-cache/koide_q_reduced_cycle_edge_hygiene_2026_06_18.txt
+open_imports:
+  - "The physical charged-lepton reduced-carrier/readout theorem remains open."
+  - "The D_red = I_2 physical source-unit normalization remains open."
+no_go_routes:
+  - "Treating the parent determinant theorem as a proof premise for the obstruction is rejected; it is trace context only."
+review_disposition: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: "Open review PR and let reviewer/auditor process the cycle-edge repair."
+stop_condition: "PR opened for the coherent source-side cycle repair."

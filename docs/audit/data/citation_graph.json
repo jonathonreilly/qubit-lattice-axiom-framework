@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_interacting_matter_build_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
+      "to": "gate_b_dynamics_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "flavor_interacting_matter_build_note_2026-05-30",
         "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31",
         "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15",
         "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
         "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28",
+        "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
+        "gate_b_dynamics_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "672af07d086d214ff62efa0025e8eac1a169d7a5ff49fda8d31bc0b6114e7ef5",
+      "note_hash": "438776b399e5d72c51d8660cebaef15167687c03e01374680211e1209bb3f0e9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

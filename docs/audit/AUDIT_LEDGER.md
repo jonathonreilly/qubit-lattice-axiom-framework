@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 979 |
+| **retained_bounded** | 980 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1482 |
+| unaudited | 1481 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1418 |
+| `audited_clean` | 1419 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1804 |
+| `unaudited` | 1803 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 892 |
-| `leaf` | 1420 |
+| `medium` | 899 |
+| `leaf` | 1413 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -507,6 +507,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7191,6 +7192,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Restoring the Fierz exchange channel makes a self-consistent b!=0 branch and leaves exact r=1/2 dependent on an unsupplied matter-action coupling/channel ratio rather than a C3-symmetric dynamical selection.  _(class `E`)_
 - **chain closes:** False — The runner does not compute the three interacting builds, the critical coupling, the continuous r(g) curve, or the C3 operator obstruction; it prints those claims as constants/narrative. The missing step is a retained derivation or executable first-principles computation of the matter-action channel and its nonperturbative branch.
 - **rationale:** Issue: the load-bearing interacting-dynamics claims are hard-coded narrative in the runner, with only the epsilon generation-blindness and Q(r) conversions actually checked algebraically. Why this blocks: the conclusion depends on an admitted matter-action vertex/coupling-channel bridge and on a C3 no-go boundary not established by any cited retained authority in the restricted packet. Repair target: supply a retained derivation or executable first-principles runner for the three builds, critical coupling, r(g), and C3 obstruction, plus a no-go discipline checklist for the wall language. Claim boundary until fixed: the packet supports a bounded diagnostic lesson, not a retained derivation of interacting flavor dynamics or exact r=1/2 selection.
+- **auditor confidence:** high
+
+### `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31`
+
+- **Note:** [`FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md`](../../docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite lane-vs-channel algebra for Q, the Casimir swap non-forcing check, and the det_C/det_R branch consequences; not a derivation that the charged-lepton sector is forced to r=1/2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite algebra gives Q=1/3+(2/3)r, so {1/3, 2/3, 1} are settings of the single ratio r, and the two equal-power mode-count conventions solve to det_C: r=1/2 and det_R: r=1.  _(class `A`)_
+- **chain closes:** True — The displayed Q identity follows directly from the stated eigenvalue/circulant algebra and is independent of scale and phase. The det_C and det_R branch equations are finite algebraic consequences, while the stronger lane-selection/exhaustiveness theorem is explicitly excluded from the retained scope.
+- **rationale:** The retained bounded core is exact algebra over the provided inputs: Q depends only on r, the listed Koide values are lane-points of that one observable, and the two mode-count branch equations give the stated r and Q values. The runner source performs these computations rather than merely printing the scorecard, while its dependency checks are bookkeeping/status verification. The note does not retain the broader charged-lepton assignment theorem, so that excluded extension does not block the bounded claim.
 - **auditor confidence:** high
 
 ### `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30`

@@ -1,0 +1,37 @@
+=== Source-boundary checks ===
+[PASS] note declares boundary: leading-order continuity matching kernel
+[PASS] note declares boundary: This note does not derive physical threshold masses.
+[PASS] note declares boundary: This note does not supply higher-loop MSbar decoupling constants.
+[PASS] note declares boundary: This note does not promote any downstream alpha_s(M_Z) value to retained status.
+[PASS] parent QCD-low bridge points to this threshold kernel
+
+=== SU(3) beta0 algebra ===
+[PASS] b0(n_f=6) = 7
+[PASS] b0(n_f=5) = 23/3
+[PASS] b0(n_f=4) = 25/3
+[PASS] b0(n_f=3) = 9
+[PASS] one flavor changes b0 by -2/3
+[PASS] asymptotic-freedom slopes positive through n_f=16
+
+=== Segment and semigroup checks ===
+[PASS] fixed-n_f affine inverse-coupling segment equals integrated beta equation
+[PASS] fixed-n_f segments compose as a semigroup
+[PASS] upward and downward maps invert on the same segment
+
+=== Lambda transition checks ===
+[PASS] Lambda reconstructed from alpha inverts the one-loop solution
+[PASS] threshold Lambda transition preserves alpha_s continuity
+[PASS] 5-to-4 flavor sample raises Lambda below the threshold
+
+=== Multi-threshold kernel checks ===
+[PASS] three threshold events are emitted
+[PASS] every threshold event is exactly continuous in inverse coupling
+[PASS] piecewise threshold kernel equals the summed-log closed form
+
+=== Domain guards and falsifiers ===
+[PASS] domain guard rejects non-descending thresholds
+[PASS] domain guard rejects thresholds outside the running interval
+[PASS] domain guard rejects skipped flavor crossings
+[PASS] falsifier detects a non-continuous threshold jump
+
+SUMMARY: PASS=24 FAIL=0

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1569 |
+| unaudited | 1568 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1369 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1891 |
+| `unaudited` | 1890 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 502 |
-| `medium` | 882 |
+| `high` | 503 |
+| `medium` | 881 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -1520,6 +1520,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15514,6 +15515,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For H=aI+bC+conj(b)C^2, Tr(pi_plus(H))=3a and Tr(pi_perp(H))=b Tr(C)+conj(b) Tr(C^2)=0, so tau_M(H)=Tr(H)=3a and the literal linear trace form cannot distinguish doublet amplitude.  _(class `A`)_
 - **chain closes:** True — The degeneracy follows from elementary C3 circulant algebra: C and C^2 are traceless, so the doublet part contributes zero to the linear trace functional. The runner's M1 subcheck verifies zero tau-minus-trace delta, C/C^2 tracelessness, and the separate BAE saddle ratio for the log-functional candidate; broader P-BAE primitive closure is excluded.
 - **rationale:** The no-go is local and exact: the proposed linear trace functional is just ordinary trace on Hermitian C3 circulants, hence it is blind to doublet amplitude at fixed a and cannot supply the required block-weight distinction. The proof does not need the open target proposal or review PR as authority; it follows from Tr(C)=Tr(C^2)=0 and the displayed decomposition. The runner's relevant M1 subtest passes and the note explicitly withholds any retained claim for the broader P-BAE primitive program.
+- **auditor confidence:** high
+
+### `primitive_p_lh_content_proposal_note_2026-05-10_pplh`
+
+- **Note:** [`PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md`](../../docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate audit of three proposed substrate-side primitives for selecting SM LH/RH content over Pati-Salam, including the negative synthesis that no single candidate closes the gap from the existing physical Cl(3)/Z^3 context alone.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-primitive_p_lh_content_proposal_note_2026-05-10_pplh-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** None of the three candidates is a clean single-primitive solution on the existing physical Cl(3)/Z^3 inputs alone; the strongest path is {P-LH-1 + P-LH-3}, which imports order-one, KO-dim-6 J, and the finite algebra C ⊕ Cl⁺(3) ⊕ M_3(C).  _(class `A`)_
+- **chain closes:** False — The packet supports toy Pauli-representation consistency checks and the source-boundary caveat, but it does not derive the order-one condition, KO-dim-6 real structure, or finite algebra from the registered framework baseline. The missing step is a framework-native bridge theorem for those NCG primitives.
+- **rationale:** Issue: the claimed best route depends on unapproved NCG structures: order-one, KO-dim-6 J, and C ⊕ Cl⁺(3) ⊕ M_3(C). Why this blocks: the runner checks small structural identities and hard-coded comparative verdicts, but does not derive those primitives from the physical Cl(3)/Z^3 baseline. Repair target: supply and audit a framework-native derivation or approved primitive-registry update for the imported NCG ingredients. Claim boundary until fixed: the note is valid only as an open-gate design map, not a framework-derived SM LH/RH content theorem or primitive approval.
 - **auditor confidence:** high
 
 ### `product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12`

@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/su2_u0_single_plaquette_beta16_native_interval_2026_06_18.py
+runner_sha256: e2aa9b85d9fa2aa5b3e2b32e5169a6afb869cf24b104421763de899a4cd6ebc7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+SU(2) beta=16 one-plaquette u0 native interval certificate
+P_SU2(beta=16) = 0.907814845880750517616655328746266000706212386584219122513458
+u0_SU2(beta=16) = 0.976111254449673255612569608004019655458630927679668157735776
+[PASS] partition function is positive
+[PASS] quadrature expectation lies in (-1, 1)
+[PASS] Bessel ratio matches independent quadrature (abs diff=0.0)
+[PASS] P_SU2(beta=16) lies in [0.9078, 0.9079]
+[PASS] u0_SU2(beta=16) lies in [0.9761, 0.9762]
+[PASS] u0_SU2(beta=16) lies in parent interval [0.96, 0.98]
+[PASS] native tight interval is subset of parent interval
+[PASS] new note carries required status firewall fields
+[PASS] new note excludes observed g2, fitted selector, and literature numerical interval load-bearing roles
+[PASS] parent note routes X1 through the native bridge
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

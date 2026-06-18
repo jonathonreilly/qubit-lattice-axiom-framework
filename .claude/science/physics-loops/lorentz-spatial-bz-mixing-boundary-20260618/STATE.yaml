@@ -1,0 +1,23 @@
+loop_slug: lorentz-spatial-bz-mixing-boundary-20260618
+goal: "Supply source-side exact support for one named blocker in the interacting emergent-Lorentz conditional row."
+target_status: exact-support
+current_audit_surface_on_origin_main: audited_conditional
+origin_main_commit: 0dc347a33
+branch: codex/lorentz-spatial-bz-mixing-boundary-20260618
+cycle_count: 1
+active_route: "Spatial central-difference artifact projection"
+hard_residual: "One-loop RG coefficients, physical power-divergent coefficient, fixed-point gamma, and LV-bound sufficiency remain open."
+files_touched:
+  - docs/EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md
+  - scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.py
+  - logs/runner-cache/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.txt
+  - docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md
+open_imports:
+  - "Interacting one-loop velocity RG coefficients."
+  - "Physical coefficient multiplying the spatial-only channel."
+  - "Fixed-point anomalous dimension and LV-bound sufficiency."
+trace_gate_classification: direct_blocker_closure
+review_loop_disposition: "not_run_user_deferred_to_codex_reviewer"
+pr_status: pending
+next_exact_action: "Open review PR for the partial exact-support bridge."
+stop_condition: "One coherent source-side support block is packaged."

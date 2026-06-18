@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.py
+runner_sha256: febe100be89a2bdb5341e09ff21c03d9672c4a0595ab8a5f4d1d7ecefae7e47c
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+========================================================================================
+Spatial-BZ power-mixing boundary: spatial-only scalar channel
+========================================================================================
+
+PART 1: spatial central-difference expansion
+PASS: central-difference dispersion has quartic spatial artifact -- a**4*k**6/360 - a**2*k**4/12 + k**2
+PASS: continuous-time kinetic term has no a^2 p0^4 lattice artifact
+
+PART 2: quartic artifact has no time component
+PASS: time-time second variation is zero
+PASS: time-space second variations are zero
+PASS: spatial second variation is nonzero before projection
+
+PART 3: O_h orbit average of the spatial quadratic projection
+PASS: O_h orbit average is a single spatial scalar -- Matrix([[4*kx**2 + 4*ky**2 + 4*kz**2, 0, 0], [0, 4*kx**2 + 4*ky**2 + 4*kz**2, 0], [0, 0, 4*kx**2 + 4*ky**2 + 4*kz**2]])
+
+PART 4: resulting marginal channel is spatial-only, coefficient open
+PASS: projected four-dimensional channel has zero p0^2 coefficient
+PASS: projected four-dimensional channel has equal spatial coefficients -- Matrix([[0, 0, 0, 0], [0, 4*kx**2 + 4*ky**2 + 4*kz**2, 0, 0], [0, 0, 4*kx**2 + 4*ky**2 + 4*kz**2, 0], [0, 0, 0, 4*kx**2 + 4*ky**2 + 4*kz**2]])
+PASS: the theorem fixes the support channel, not the physical coefficient -- delta c_t = 0, delta c_s = lambda remains an open coefficient
+
+========================================================================================
+TOTAL: PASS=9 FAIL=0
+========================================================================================
+VERDICT: exact support for a spatial-only O_h-scalar marginal mixing channel; one-loop coefficient/gamma/LV sufficiency remain open.
+
+----- stderr -----
+

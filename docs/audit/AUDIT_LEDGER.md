@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 917 |
+| **retained_bounded** | 918 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
 | unaudited | 1634 |
-| audit_in_progress | 1 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 6 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1327 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1328 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
@@ -132,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -751,6 +749,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kahler_dirac_silent_on_measure_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -10255,6 +10254,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For H = a I + b C + bbar C^2, the orthogonal projections give E_+(H)=3a^2 and E_perp(H)=6|b|^2, so the equal-weight constrained log functional is extremized at E_+=E_perp, equivalently kappa=2, while the clock action rho(C^k)=omega^k C^k gives the stated d=3 irrep-count uniqueness.  _(class `A`)_
 - **chain closes:** True — T1-T3 close by direct matrix algebra: tr(C)=tr(C^2)=0, C is unitary, the trace line is Frobenius-orthogonal to the {C,C^2} block, and log E_+ + log E_perp on a fixed positive sum is maximized at equality. T4 closes from the retained cited authority defining the nontrivial clock action rho(M)=Omega^{-1}MOmega, proving rho(C^k)=omega^k C^k and the trivial/doublet/sign count.
 - **rationale:** The restricted packet supplies a retained bridge for the clock-action convention that previously would have been the only serious missing premise. Independent formula inventory finds the displayed factors and signs consistent: ||aI||_F^2=3a^2, the two off-identity circulant modes contribute 3|b|^2 each with zero cross trace, the equal-weight log optimum is E_+=E_perp, and the d=2..6 multiplicity table matches 1, floor((d-1)/2), and the even-d sign line. The note explicitly excludes the F1-vs-F3 canonical-weighting selection and physical charged-lepton identification, so the open derivation gap is not load-bearing for this narrowed algebraic theorem.
+- **auditor confidence:** high
+
+### `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-algebra claim on Herm_circ(d): the stipulated block-total Frobenius carrier gives one scalar slot per real isotype, yields kappa = 2 at d = 3 under the equal-weight log law, and d = 3 is unique for one trivial plus one doublet real-isotype pattern.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For H = a I + b C + bbar C^2, the block-total Frobenius slots are E_+ = 3 a^2 and E_perp = 6 |b|^2, so maximizing log E_+ + log E_perp at fixed E_+ + E_perp gives E_+ = E_perp and hence kappa = a^2/|b|^2 = 2.  _(class `A`)_
+- **chain closes:** True — The Frobenius norm formulas, constrained log extremum, and Hermitian-circulant multiplicity formula are exact algebra within the stipulated block-total carrier. The physical canonical-measure or scalar-lane quotient claim is explicitly outside the audited scope.
+- **rationale:** The load-bearing step is a direct algebraic computation and optimization, not a numerical comparator or symbol renaming. The runner source visibly computes the projector identities, Frobenius formulas, finite multiplicity scan, synthetic consistency checks, and law separation; its PDG line is diagnostic only and not a PASS gate. The cited retained_bounded authorities are used only for the MRU weight context, while the source itself excludes physical canonicity of the block-total carrier from the theorem.
 - **auditor confidence:** high
 
 ### `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`

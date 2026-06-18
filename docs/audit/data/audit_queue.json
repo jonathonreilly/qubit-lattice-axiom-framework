@@ -3,7 +3,7 @@
     "critical": 304,
     "high": 269,
     "leaf": 569,
-    "medium": 450
+    "medium": 449
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -17470,30 +17470,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_ew_m_residual_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.115,
-      "note_path": "docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/yt_ew_m_residual_channel_check.py",
-      "transitive_descendants": 48
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "color_generation_independent_z3_structures_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17646,7 +17622,7 @@
         "minimal_axioms",
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/frontier_atomic_hydrogen_lattice_companion.py",
@@ -17654,12 +17630,12 @@
         "scripts/frontier_atomic_helium_jastrow_companion.py",
         "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py"
       ],
-      "load_bearing_score": 5.17,
+      "load_bearing_score": 6.144,
       "note_path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py",
-      "transitive_descendants": 17
+      "transitive_descendants": 24
     },
     {
       "audit_independence_required": "any_non_self",
@@ -47665,6 +47641,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 152,
-  "total_pending": 1592
+  "ready_count": 151,
+  "total_pending": 1591
 }

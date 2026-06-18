@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 216 |
-| **retained_no_go** | 210 |
+| **retained_no_go** | 211 |
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 17 |
-| unaudited | 1590 |
+| unaudited | 1589 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 11 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1354 |
+| `audited_clean` | 1355 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1912 |
+| `unaudited` | 1911 |
 
 | claim_type | count |
 |---|---:|
@@ -1474,6 +1474,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -20679,6 +20680,19 @@ Why this blocks: a separate retained bounded theorem would duplicate algebraic c
 Repair target: box this note under the Fierz channel-count parent, or re-promote only if a later revision adds independent physical content such as a retained EW-current selector or a new comparator not already attached to the parent.
 Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebra under the parent; it should be treated as decoration, not as an independent retained bounded theorem.
 - **decoration parent:** `ew_current_fierz_channel_decomposition_note_2026-05-01`
+- **auditor confidence:** high
+
+### `yt_ew_m_residual_note_2026-05-02`
+
+- **Note:** [`YT_EW_M_RESIDUAL_NOTE_2026-05-02.md`](../../docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** CMT scalar factorization scales the singlet and adjoint Fierz channels uniformly by u_0^2, so CMT alone cannot select the adjoint channel over the singlet channel.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-yt_ew_m_residual_note_2026-05-02-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the stipulated scalar CMT factorization G_full = u_0 G_V, the Fierz definitions give S(G_full) = u_0^2 S(G_V) and C(G_full) = u_0^2 C(G_V), so the factorization is channel-blind.  _(class `A`)_
+- **chain closes:** True — The scoped no-go follows directly by substituting u_0 G_V into the cited Fierz channel definitions: both channel functionals are quadratic in G and therefore acquire the same scalar factor. This closes only the naive CMT-selection route, not the full EW-current matching rule.
+- **rationale:** The runner source actually computes the Fierz decomposition, diagonal limit, scalar u_0 scaling, and Haar-SU(N) consistency checks rather than merely printing pass/fail constants. The load-bearing channel-blindness result is an exact algebraic consequence of the provided Fierz definitions and the stipulated scalar factorization, with no external comparator or tuned numerical input. The verdict is clean only for the narrowed no-go that CMT factorization alone cannot distinguish S from C; the source correctly leaves full physical EW-current matching outside this closure.
 - **auditor confidence:** high
 
 ### `yt_ew_matching_rule_m_note_2026-05-02`

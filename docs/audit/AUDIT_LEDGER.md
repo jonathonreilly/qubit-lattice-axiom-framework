@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 909 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1658 |
+| unaudited | 1657 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 2 |
-| ~~audited_conditional~~ | 7 |
+| ~~audited_conditional~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 1 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 1313 |
-| `audited_conditional` | 7 |
+| `audited_conditional` | 8 |
 | `audited_decoration` | 45 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 4 |
 | `audited_renaming` | 2 |
-| `unaudited` | 1980 |
+| `unaudited` | 1979 |
 
 | claim_type | count |
 |---|---:|
@@ -1448,6 +1448,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1907,6 +1908,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The stated four primitives admit the seven listed distinct kernels, all passing the primitive checks while producing different transverse moments, so w(theta) is not uniquely determined on that surface.  _(class `C`)_
 - **chain closes:** True — The runner constructs multiple admissible angular kernels, checks the primitive properties, and computes distinct second and fourth transverse moments. The no-go is correctly bounded because it does not rule out adding a higher-order isotropy, Lagrangian, or observable-matching axiom.
 - **rationale:** The load-bearing negative result is an explicit counterexample family, not a definition, renaming, or tuned numerical match. The supplied retained-grade authorities support the routing clarification that the boost lane is on the staggered/Laplacian carrier rather than the directional-measure kernel. Some runner checks are narrative summaries, but the computed witness family and fixed-carrier checks are sufficient for the bounded audited scope.
+- **auditor confidence:** high
+
+### `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bridge: assuming P-ABJ/P1, P-HY, P-COMP, P-REC, and the cited retained inputs, the LH anomaly arithmetic plus Clifford parity force d_t to be a positive odd integer, not d_t = 1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-015204-1f6874e3-anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** (B5)-(B6): gamma_5 existence forces d = d_s + d_t even, and with retained d_s = 3 this gives d_t in {1, 3, 5, ...}.  _(class `A`)_
+- **chain closes:** True — The exact anomaly traces, SM-singlet cancellation witness, Clifford even-dimension step, and d_s=3 parity arithmetic close over the declared premise edges. The closure is conditional because P-HY, P-COMP, and P-REC are not derived by the restricted packet.
+- **rationale:** Issue: The exact algebraic part is sound; the runner checks the LH anomaly traces, RH cancellation witness, Clifford volume-element parity, and d_s=3 parity arithmetic without external numerical comparators. Why this blocks full clean closure: P-HY, P-COMP, and P-REC are declared premise edges rather than retained derivations in the restricted packet. Repair target: retained bridge theorems or approved premise registrations for those edges; claim boundary until fixed is the stated bounded conditional d_t in odd positives, not d_t=1 or an unconditional hypercharge/completion/chirality derivation.
+- **open / conditional deps cited:**
+  - `ANOMALY_FORCES_TIME_THEOREM.md`
 - **auditor confidence:** high
 
 ### `architecture_portability_sweep_note`

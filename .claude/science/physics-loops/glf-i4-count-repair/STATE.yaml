@@ -1,0 +1,21 @@
+loop_slug: glf-i4-count-repair
+date: 2026-06-18
+base: origin/main@35563d085f7f7842c0081945655596c63e44876c
+branch: codex/glf-i4-count-repair-20260618
+target_claim_id: gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11
+target_note: docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md
+target_status: best-honest-status
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: partially_closes
+active_route: source-accounting repair for the post-audit PASS-count mismatch
+hard_residual: "I-4 matter-functional clause remains unsupplied"
+files_touched:
+  - docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md
+  - .claude/science/physics-loops/glf-i4-count-repair/
+open_imports:
+  - matter-functional clause I-4
+review_loop: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+audit_actions: none
+next_exact_action: "Open a ready PR for reviewer extraction; do not update audit-ledger/status surfaces."
+stop_condition: "Coherent source-side repair packaged for reviewer."

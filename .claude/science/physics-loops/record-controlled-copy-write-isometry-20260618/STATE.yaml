@@ -1,0 +1,36 @@
+loop_id: record-controlled-copy-write-isometry-20260618
+status: packaged_for_review
+created: 2026-06-18
+branch: codex/record-controlled-copy-write-isometry-20260618
+base: origin/main@ad0134e6f
+goal: "Source-side audit unlock for record_formation_to_kraus_isometry_bridge_2026-06-06, without editing audit/status surfaces."
+target_claim_id: record_formation_to_kraus_isometry_bridge_2026-06-06
+target_prior_audit_status: audited_conditional
+target_note: docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md
+new_support_note: docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md
+new_runner: scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py
+updated_runner: scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py
+runner_cache:
+  - logs/runner-cache/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.txt
+  - logs/runner-cache/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.txt
+audit_blocker: "missing_bridge_theorem: derive the ideal pointer-label record-write isometry from the finite controlled-copy/fresh-fragment dynamics, or narrow the ledger scope to the already-supplied projective write premise."
+actual_current_surface_status: exact-support
+conditional_surface_status: "bounded-support for the explicit finite controlled-copy/fresh-fragment record model"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The branch closes the source-side ideal-write bridge only for the explicit finite controlled-copy model; arbitrary dynamics, quantum-Darwinism derivation, Born rule, and framework-wide record-production remain outside scope."
+trace_class: direct_blocker_closure
+reachability_to_target: closes_source_side_blocker
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle_count: 1
+review_loop_disposition: deferred_to_external_reviewer_by_user_instruction
+open_imports:
+  - derivation of the quantum-Darwinism record reading from Minimal Axioms
+  - arbitrary persistent dynamics to normalized isometry
+  - physical Hamiltonian/action/coupling/clock/rate selection
+  - Born rule or probability law from post-record counts
+  - downstream generation/Koide/selector choices
+forbidden_surfaces_touched: false
+next_exact_action: "Open review PR, then let independent reviewer/auditor decide whether the source-side repair moves the audited_conditional row."

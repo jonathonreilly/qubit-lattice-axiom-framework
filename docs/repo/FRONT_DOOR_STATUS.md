@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1458 |
+| Applied audit verdicts | 1459 |
 | Retained-grade rows, including boxed decorations | 1407 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 933 |
 | Boxed decorations under retained parents | 48 |
-| Open gates | 15 |
-| Unaudited rows | 1599 |
+| Open gates | 16 |
+| Unaudited rows | 1598 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 18 |
 | Audited renaming rows | 11 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1601 |
-| Ready rows | 156 |
+| Total pending rows | 1600 |
+| Ready rows | 155 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
-| High pending | 270 |
+| High pending | 269 |
 | Medium pending | 458 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - high; unaudited
 - [`gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md) - medium; unaudited
 - [`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md) - medium; unaudited
 - [`industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03`](../../docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md) - medium; unaudited
 - [`koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
 - [`yt_ew_m_residual_note_2026-05-02`](../../docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
+- [`newton_derivation_top4_bridge_note`](../../docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

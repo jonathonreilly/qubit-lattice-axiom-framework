@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 304,
-    "high": 270,
+    "high": 269,
     "leaf": 569,
     "medium": 458
   },
@@ -8860,34 +8860,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "rconn_derived_note",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "graph_first_su3_integration_note",
-        "native_gauge_closure_note",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.926,
-      "note_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_rconn_kappa_ew_register_not_read.py",
-      "transitive_descendants": 42
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "a3_route2_single_clock_c3_obstruction_note_2026-05-08_r2",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17508,17 +17480,17 @@
       "deps": [
         "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py"
       ],
-      "load_bearing_score": 6.228,
+      "load_bearing_score": 6.755,
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_2026_04_19.py",
-      "transitive_descendants": 52
+      "transitive_descendants": 53
     },
     {
       "audit_independence_required": "any_non_self",
@@ -47931,6 +47903,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 156,
-  "total_pending": 1601
+  "ready_count": 155,
+  "total_pending": 1600
 }

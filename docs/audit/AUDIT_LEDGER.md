@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 217 |
 | **retained_bounded** | 988 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 32 |
-| unaudited | 1458 |
+| open_gate | 33 |
+| unaudited | 1457 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 20 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1431 |
+| `audited_clean` | 1432 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1780 |
+| `unaudited` | 1779 |
 
 | claim_type | count |
 |---|---:|
@@ -858,6 +858,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_readout_lane_demarcation_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_reality_type_permitted_not_forced_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_record_sign_agnostic_eta_refuted_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_pointer_grounds_block_channel_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -12503,6 +12504,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** A single real anti-Hermitian D on a complex space simultaneously supports the antisymmetric bilinear omega(u,v)=u^T D v and the Hermitian sesquilinear h(u,v)=conj(u)^T(iD)v, so real-matrix D alone does not select the Pfaffian/per-block Wick face.  _(class `A`)_
 - **chain closes:** True — Within the stated boundary, the chain closes: D^T=-D gives both an antisymmetric real bilinear and Hermitian iD form, while the C3 centralizer, Jcs doublet square, Pfaffian/determinant degrees, and Q arithmetic check independently. The missing Wick-face selector is explicitly left out of scope.
 - **rationale:** The runner source performs actual finite matrix and symbolic checks rather than merely printing expected constants, and no helper imports or external comparators are involved. Independent algebra confirms the displayed signs, factors, projections, Pfaffian/determinant degrees, circulant commutation, and Q=(1+2r)/3 arithmetic. The cited authorities are retained-grade for the bounded content consumed here, and their open physical-identification language is not imported as a premise. The no-go discipline section narrows the negative result to one residual selector rather than claiming global impossibility.
+- **auditor confidence:** high
+
+### `koide_record_sign_agnostic_eta_refuted_2026-06-04`
+
+- **Note:** [`KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md`](../../docs/KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Narrow open-gate diagnosis that the tested sign-blind and eta-only Koide readout shortcuts are insufficient, while future framework-native signed-readout routes remain open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-koide_record_sign_agnostic_eta_refuted_2026-06-04-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Record additivity alone does not distinguish the tested additive sign-sensitive and sign-blind functionals, and the eta count is not enough to reconstruct the signed Koide denominator.  _(class `A`)_
+- **chain closes:** True — The direct-sum additivity, sign-erasure, eta counterexample, and r-to-Q algebra are elementary finite algebra checks within the stated scope. The PDG charged-lepton comparator is explicitly non-load-bearing and only confirms signed and unsigned square-root readouts coincide on positive observed inputs.
+- **rationale:** The note is scoped as an open_gate route diagnosis and does not claim a new readout rule, a physical Koide derivation, or a universal no-go against signed readouts. Its load-bearing facts close by elementary algebra and finite counterexample, with the accepted Record premise used only for the additivity boundary. The runner source computes the advertised checks rather than merely printing pass lines; the one external PDG comparator is marked and used as non-load-bearing sanity only.
 - **auditor confidence:** high
 
 ### `koide_records_objectivity_conditional_note_2026-05-31`

@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "s3_time_tensor_build_memo"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
+      "to": "taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "s3_time_tensor_build_memo",
         "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
         "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16",
         "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
         "source_resolved_exact_green_self_consistent_note",
+        "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
+        "taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a04ff7624095c00ee5dc9a3813bf4dcb9301f0af88a544eb68f8322b36b9a34a",
+      "note_hash": "05b5e60e43d6acb8711f1ccad6238da960c8a397b6485334aca6e762a0129215",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

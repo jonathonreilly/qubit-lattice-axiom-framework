@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 304,
     "high": 267,
-    "leaf": 541,
+    "leaf": 540,
     "medium": 413
   },
   "cycle_break_target_count": 7,
@@ -17415,28 +17415,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "linear_response_second_order_kubo_note",
+      "claim_id": "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "no_go",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "linear_response_true_kubo_note"
+        "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
       ],
       "direct_in_degree": 2,
       "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/global_coherence_off_scaffold.py",
-        "scripts/independent_generators_heldout.py",
-        "scripts/universality_classifier.py"
-      ],
+      "helper_runner_paths": [],
       "load_bearing_score": 5.087,
-      "note_path": "docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md",
+      "note_path": "docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/linear_response_second_order_kubo.py",
+      "runner_path": "scripts/carrier_attachment_chirality_gate_consolidation_runner.py",
       "transitive_descendants": 16
     },
     {
@@ -30233,36 +30235,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
-        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
-        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/carrier_attachment_chirality_gate_consolidation_runner.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45876,6 +45848,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 106,
-  "total_pending": 1525
+  "ready_count": 105,
+  "total_pending": 1524
 }

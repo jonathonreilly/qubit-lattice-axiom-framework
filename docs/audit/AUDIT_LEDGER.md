@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 963 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 28 |
-| unaudited | 1523 |
+| unaudited | 1522 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1399 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1845 |
+| `unaudited` | 1844 |
 
 | claim_type | count |
 |---|---:|
@@ -107,8 +107,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1401 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 890 | 59.80 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1027 | 49.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1084 | 40.58 | `unaudited` | unaudited |
@@ -1555,6 +1555,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_mru_demotion_note_2026-04-20` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -12762,6 +12763,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The detector-only heuristic `kubo_heuristic = cz_weighted - cz_free`, computed from free detector amplitudes reweighted by `1/|z-z_src|`, is compared against the finite-difference measured response across the frozen 44-family log.  _(class `A`)_
 - **chain closes:** True — For the declared open-gate scope, the chain closes: the runner parses the frozen 44-family log and recomputes the reported correlations, sign counts, threshold summary, measured-response ceiling, and source-boundary firewall. It does not close, and does not claim to close, the literal `<z*deltaH>_0` Kubo theorem.
 - **rationale:** The primary runner source is a frozen-log verifier, not a first-principles derivation runner, and its checks match that limited role: `SCORECARD PASS=15 FAIL=0`. The source note preserves the no-fit versus tuned split and repeatedly forbids reuse as a literal first-order Kubo theorem or closed compact-principle derivation. The clean verdict is therefore clean only at `open_gate` scope: a reproducible detector-only heuristic record with explicit downstream firewall.
+- **auditor confidence:** high
+
+### `linear_response_second_order_kubo_note`
+
+- **Note:** [`LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md`](../../docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite second-order Kubo null replay on the 44-family panel, plus the source note's accompanying broader Kubo-Taylor boundary language.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-linear_response_second_order_kubo_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Adding 1/2*kubo2*s^2 to the first-order Kubo prediction leaves the strict linearity-regime subset at 15/44 and increases the s=0.008 aggregate residual from 5.6090 to 5.7221 on the named runner.  _(class `C`)_
+- **chain closes:** False — The runner/cache support the finite second-order null result, but the source still preserves broader all-orders/no-higher-order Taylor-boundary language. The missing step is a remainder/convergence/non-analyticity theorem or an explicit higher-order computation covering the failing families.
+- **rationale:** Issue: the completed runner substantively computes A/B/C propagators and supports the reported second-order null replay, but the note also extrapolates that finite result into structural claims about all higher Taylor orders. Why this blocks: a second-order replay cannot by itself rule out higher-order terms, a different expansion point, or a controlled non-perturbative treatment. Repair target: narrow all citable conclusion text to the finite second-order replay, or add a retained remainder/non-analyticity/higher-order theorem. Claim boundary until fixed: the supported result is only that the implemented second-order term does not improve the declared 44-family finite panel at the cached strengths.
 - **auditor confidence:** high
 
 ### `linear_response_true_kubo_note`

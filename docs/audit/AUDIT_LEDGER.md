@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 979 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1483 |
+| unaudited | 1482 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1418 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1805 |
+| `unaudited` | 1804 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 891 |
-| `leaf` | 1421 |
+| `medium` | 892 |
+| `leaf` | 1420 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1575,6 +1575,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_interacting_matter_build_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `g_bare_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7177,6 +7178,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In the Fourier/idempotent decomposition, the equal-doublet U(1) is scalar on the singlet and doublet projectors so U H U^dagger = H for circulant H, while the opposite doublet charge P1 - P2 has unequal doublet eigenvalues and is outside span{Ps,Pd}.  _(class `A`)_
 - **chain closes:** True — The projector algebra closes directly: Ps and Pd commute with C, any C3-circulant H is diagonal in the same Fourier basis, and U is scalar on the two idempotent blocks, so conjugation is inert. Also P1+P2=Pd, whereas P1-P2 has Fourier eigenvalues (0,1,-1), impossible for any alpha Ps + beta Pd whose doublet eigenvalues are equal.
 - **rationale:** The load-bearing math is a genuine class-A finite matrix identity over the supplied C3/idempotent inputs and retained one-hop authorities. An independent Fourier-basis check confirms the commutation, conjugation inertness, equal-doublet projector identity, and outside-span status of the opposite charge without relying on the runner implementation. The note explicitly demotes the observed sector ordering to a non-load-bearing comparator and does not claim a global sector selector or blanket absence of continuous doublet actions.
+- **auditor confidence:** high
+
+### `flavor_interacting_matter_build_note_2026-05-30`
+
+- **Note:** [`FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md`](../../docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded diagnostic claim that the supplied runner supports only elementary epsilon/Q algebra while the interacting b!=0 branch, r(g) behavior, and C3 obstruction are not derived in the packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-flavor_interacting_matter_build_note_2026-05-30-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Restoring the Fierz exchange channel makes a self-consistent b!=0 branch and leaves exact r=1/2 dependent on an unsupplied matter-action coupling/channel ratio rather than a C3-symmetric dynamical selection.  _(class `E`)_
+- **chain closes:** False — The runner does not compute the three interacting builds, the critical coupling, the continuous r(g) curve, or the C3 operator obstruction; it prints those claims as constants/narrative. The missing step is a retained derivation or executable first-principles computation of the matter-action channel and its nonperturbative branch.
+- **rationale:** Issue: the load-bearing interacting-dynamics claims are hard-coded narrative in the runner, with only the epsilon generation-blindness and Q(r) conversions actually checked algebraically. Why this blocks: the conclusion depends on an admitted matter-action vertex/coupling-channel bridge and on a C3 no-go boundary not established by any cited retained authority in the restricted packet. Repair target: supply a retained derivation or executable first-principles runner for the three builds, critical coupling, r(g), and C3 obstruction, plus a no-go discipline checklist for the wall language. Claim boundary until fixed: the packet supports a bounded diagnostic lesson, not a retained derivation of interacting flavor dynamics or exact r=1/2 selection.
 - **auditor confidence:** high
 
 ### `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30`

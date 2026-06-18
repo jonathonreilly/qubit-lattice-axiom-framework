@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 265,
-    "leaf": 504,
+    "leaf": 503,
     "medium": 413
   },
   "cycle_break_target_count": 8,
@@ -17455,31 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12",
-        "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_epsstar_curve_pt_boundary_2026_06_12.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17580,6 +17555,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/flavor_interacting_matter_build_2026_05_30.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "action_normalization_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_action_normalization.py",
+        "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py"
+      ],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py",
       "transitive_descendants": 15
     },
     {
@@ -30280,34 +30283,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
-        "action_normalization_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_action_normalization.py",
-        "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44982,6 +44957,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 73,
-  "total_pending": 1489
+  "ready_count": 72,
+  "total_pending": 1488
 }

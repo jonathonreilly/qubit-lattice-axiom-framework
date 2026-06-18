@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 977 |
+| **retained_bounded** | 978 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1487 |
+| unaudited | 1486 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1416 |
+| `audited_clean` | 1417 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1809 |
+| `unaudited` | 1808 |
 
 | claim_type | count |
 |---|---:|
@@ -445,6 +445,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
@@ -6306,6 +6307,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner separately computes the fixed-eta PT response fit chi(mu0,eta)/eta^2 = a + b eta^2 and the finite-T mu*(T)^2 root-locus slope, then compares the extrapolated alpha and m=0.2 kernel split against the stated gaps and sign-flip inequalities.  _(class `C`)_
 - **chain closes:** True — The included runner constructs the finite Harper/PT matrices, diagonalizes the GL grid, computes the T=0 branch, eta-sequence Richardson fit, finite-T root-locus slope, and m=0.2 split directly. The frozen constants are used as post-computation gates rather than as inputs to the extrapolant or slope calculation.
 - **rationale:** The source and runner agree on the bounded finite-cell scope, and the runner performs the load-bearing computations rather than printing or importing the contested values. The eta^2 fit arithmetic, residual bound, gap comparison, and sign inequalities are internally consistent with the packet values. No cited authority or unclosed primitive is needed for the restricted finite-cell statement, and the note explicitly avoids continuum, full-surface, or gauge-self-energy claims.
+- **auditor confidence:** high
+
+### `epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12`
+
+- **Note:** [`EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md`](../../docs/EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-cell sampled PT-boundary result on Q=24, Ly=2, N=48, GL=20 for m={0,0.2,0.3,0.5} and T={0.15,0.2,0.3,0.4}, with bounded mean collapse, monotone sampled eps*(T), disclosed m-trend, and regression characterizations only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite two-band Harper/PT runner computes mu*_PT(m,T) on the stated mass-temperature grid and shows that mu*_PT(m,T)^2 - m^2 has a per-temperature mean eps*(T)^2 with maximum relative spread below 2%.  _(class `C`)_
+- **chain closes:** True — The runner source directly constructs the finite Harper/PT matrices, evaluates the full PT response, bisects roots, and derives the eps*(T) table from those computed roots. The cited authorities are retained_bounded and no external comparator, empirical value, or hidden bridge is needed for the stated finite-grid scope.
+- **rationale:** The load-bearing result is a first-principles finite-dimensional computation on the declared Harper/PT surface, not a renaming or imported curve. The only imported numerical anchor is used as a provenance sanity check, while the eps*(T) values and spreads are computed from the PT roots in the runner. The printed root table also supports the disclosed residual pattern: per-temperature collapse values decrease with m and have residual signs (+,+,+,-). The claim is clean only within its bounded sampled-grid scope and does not establish continuum behavior or exact m-independence.
 - **auditor confidence:** high
 
 ### `equivalence_principle_harness_note`

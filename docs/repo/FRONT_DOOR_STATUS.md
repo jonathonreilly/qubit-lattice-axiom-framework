@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1570 |
-| Retained-grade rows, including boxed decorations | 1464 |
+| Applied audit verdicts | 1571 |
+| Retained-grade rows, including boxed decorations | 1465 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
-| Retained bounded rows | 977 |
+| Retained bounded rows | 978 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 31 |
-| Unaudited rows | 1487 |
+| Unaudited rows | 1486 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 45 |
 | Audited renaming rows | 18 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1489 |
-| Ready rows | 73 |
+| Total pending rows | 1488 |
+| Ready rows | 72 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 504 |
+| Leaf pending | 503 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12`](../../docs/EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12`](../../docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`flavor_interacting_matter_build_note_2026-05-30`](../../docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md) - medium; unaudited
+- [`flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31`](../../docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31`](../../docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md) - leaf; unaudited
+- [`flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

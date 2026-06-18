@@ -1,0 +1,15 @@
+lane: abj-prec-spintaste-core
+date: 2026-06-18
+status: source_pr_ready
+target: anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26
+closed_core:
+  - finite spin/taste Cl4
+  - taste-singlet spin gamma5
+  - epsilon taste-dressed boundary
+remaining:
+  - physical anomaly-carrying chirality identification
+  - interacting/gauged single-taste continuum context
+  - P-HY
+  - P-COMP
+  - P-ABJ
+  - B-AXIS

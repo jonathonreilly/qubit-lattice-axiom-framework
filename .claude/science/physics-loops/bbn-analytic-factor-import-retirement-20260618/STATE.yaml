@@ -1,0 +1,25 @@
+loop_slug: bbn-analytic-factor-import-retirement-20260618
+date: 2026-06-18
+branch: codex/bbn-analytic-factor-import-retirement-20260618
+target_claim_id: bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: conditional on P1-P4 physical/comparator premise packet
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: retire the avoidable textbook-math import for the Planck analytic factor
+files_touched:
+  - docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md
+  - scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
+  - logs/runner-cache/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.txt
+open_imports:
+  - P1 proton rest mass
+  - P2 present-day CMB temperature
+  - P3 H_100/G/metrology critical-density unit inputs
+  - P4 Cyburt residual comparator convention
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+review_loop_disposition: not_run_user_delegated
+next_exact_action: reviewer should re-audit the row as a conditional admission bridge with the analytic Planck factor internally certified
+stop_condition: coherent source-side import-retirement block packaged for PR

@@ -20,6 +20,8 @@ retired_imports:
   - "GB-S3a: label/offset-preserving 3x3 forward stencil as arbitrary row-local graph import."
 trace_gate_classification: direct_blocker_closure
 review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
-pr_status: pending
-next_exact_action: "Run verification checks, commit, push, and open a ready PR."
-stop_condition: "PR opened or GitHub delivery failure recorded in PR_BACKLOG.md."
+pr_status: "open ready PR https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4405"
+remote_branch: codex/gate-b-gb-s3-stencil-bridge-20260618
+commit: 72d548156b7b019d19b984587d818d38df39c8c7
+next_exact_action: "Codex reviewer should run review-loop/landing cleanup and decide whether GB-S3a is audit-ready."
+stop_condition: "Source-side PR opened; remaining Gate B bridges stay outside this branch."

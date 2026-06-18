@@ -15,4 +15,11 @@ Verification:
 Review-loop was not run because the user delegated review-loop and
 landing cleanup to the Codex reviewer.
 
-Next action: open a ready PR for reviewer extraction.
+PR:
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4405
+- Branch: `codex/gate-b-gb-s3-stencil-bridge-20260618`
+- Commit: `72d548156b7b019d19b984587d818d38df39c8c7`
+
+Next action: reviewer should run review-loop/landing cleanup and decide
+whether `GB-S3a` is audit-ready.

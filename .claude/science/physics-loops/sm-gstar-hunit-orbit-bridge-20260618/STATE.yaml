@@ -1,0 +1,24 @@
+loop: sm-gstar-hunit-orbit-bridge-20260618
+target_status: bounded-support
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: supplied-doublet neutral/radial orbit support for R-HIGGS
+target_claim_id: sm_gstar_higgs_sector_count_stretch_note_2026-05-29
+hard_residual: "H_unit scalar-singlet support cannot derive the full SU(2)_L thermal doublet, but can support a neutral/radial carrier once the doublet is independently supplied."
+files_touched:
+  - docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md
+  - scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py
+  - docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md
+  - scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
+  - outputs/sm_gstar_hunit_neutral_radial_orbit_support_2026-06-18.json
+  - logs/runner-cache/sm_gstar_hunit_neutral_radial_orbit_2026_06_18.txt
+open_imports:
+  - "Full one-complex SU(2)_L thermal EWSB doublet field-content derivation from H_unit remains open."
+  - "Downstream gstar row still relies on retained-bounded declared-inventory premise."
+no_go_routes:
+  - "Direct H_unit scalar-singlet -> full fundamental doublet equivariant bridge, Hom_SU(2)(trivial,fundamental)=0."
+review_loop_disposition: delegated_to_codex_reviewer
+pr_status: pending
+next_exact_action: "Run focused support/gstar/no-go checks, commit, push, and open review PR."
+stop_condition: "Stop this block after PR is opened; continue campaign by scanning for another independent unlock target."

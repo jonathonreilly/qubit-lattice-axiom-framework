@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 21 |
-| unaudited | 1566 |
+| unaudited | 1565 |
 | meta | 322 |
-| ~~audited_numerical_match~~ | 7 |
+| ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 14 |
 | ~~audited_conditional~~ | 23 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -65,9 +65,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 23 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
-| `audited_numerical_match` | 7 |
+| `audited_numerical_match` | 8 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1888 |
+| `unaudited` | 1887 |
 
 | claim_type | count |
 |---|---:|
@@ -1610,6 +1610,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -20361,6 +20362,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The seed-1 control runner is the load-bearing H=0.25 point and reproduces the S=0.004 row with dM_early=+0.004411, dM_late=+0.006255, delta_hist=-0.001843, and R_hist=-29.47%, hardened by the S=0 null and S=0.002/0.004/0.008 ladder.  _(class `C`)_
 - **chain closes:** True — The one-hop dependency is retained_bounded for the same Fam1 seed-1 H=0.25 control ladder, and the primary no-argument wrapper pins exactly family=Fam1, seed=1, H=0.25 before delegating to the included computation helpers. The cached runner output matches the source row and summary; independent arithmetic from the printed values confirms the negative signs, R_hist scale, and approximately 5.2% scaled-spread.
 - **rationale:** Clean within the stated bounded scope. The runner is not a constant-printer: the wrapper pins the intended Fam1/seed1/H=0.25 arguments, the helper constructs source histories and wave/beam responses, and the cache completes under the declared 1800 s budget. The note also correctly demotes the H=0.5/H=0.35 comparison rows and broader cross-seed/portability discussion to non-load-bearing context.
+- **auditor confidence:** high
+
+### `wave_direct_dm_h025_seed0_crossfamily_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Frozen Fam1/Fam2 seed-0, H=0.25, strength-0.004 direct-dM comparison with per-family null, sign, spread, and selected-row ordering checks; no portability or stable amplitude law.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-wave_direct_dm_h025_seed0_crossfamily_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note compresses two preselected Fam1/Fam2 seed-0 H=0.25 control rows and concludes that both share negative sign and weak-field control while Fam2 is deeper than Fam1 at strength 0.004.  _(class `G`)_
+- **chain closes:** True — The bounded two-row compression follows from the cited retained-grade control notes and the frozen logs parsed by the runner. The packet does not derive the magnitudes, H/seed selection, or a family-wide law, but those are explicitly outside the audited scope.
+- **rationale:** Issue: the runner verifies hard-coded expected values against frozen logs for two preselected H=0.25, seed-0 rows, so the load-bearing step is numerical-match compression rather than first-principles derivation. Why this blocks: the packet does not derive the row magnitudes, the H/seed selection, or a portability law from the framework baseline. Repair target: provide a class-C derivation selecting the surface and computing the direct-dM magnitudes/order, or keep the claim at the current two-row numerical scope. Claim boundary until fixed: the Fam1/Fam2 seed-0 sign, weak-field control, and Fam2-deeper-than-Fam1 ordering are supported only on the frozen tuned surface.
 - **auditor confidence:** high
 
 ### `wave_direct_dm_h025_seed1_crossfamily_note`

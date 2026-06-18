@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "teleportation_3d1_causal_record_channel_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "wave_direct_dm_h025_seed0_crossfamily_note"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "koide_readout_lane_demarcation_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "distance_law_definitive_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_readout_lane_demarcation_note_2026-05-30"
+      "to": "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "teleportation_3d1_causal_record_channel_note",
         "wave_direct_dm_h025_seed0_crossfamily_note",
         "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
         "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
         "distance_law_breakpoint_note",
+        "koide_readout_lane_demarcation_note_2026-05-30",
         "distance_law_definitive_note",
-        "koide_readout_lane_demarcation_note_2026-05-30"
+        "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c810953d0256df66fa694e11b49ba747f099ac22521988694f64b142dd6a7fd",
+      "note_hash": "9bb323aacc0bfa58f2c263be9172b6d480daf0f5cfcd220a9e92c6901723f3c4",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

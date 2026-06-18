@@ -3,7 +3,7 @@
     "critical": 304,
     "high": 267,
     "leaf": 569,
-    "medium": 428
+    "medium": 427
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -17415,35 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_h025_seed0_crossfamily_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_h025_fam1_seed0_control_note",
-        "wave_direct_dm_h025_fam2_seed0_control_note",
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note",
-        "wave_direct_dm_h025_fam2_seed1_control_note",
-        "wave_direct_dm_h025_high_band_boundary_note",
-        "wave_direct_dm_h025_fam2_seed0_boundary_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.024,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py",
-      "transitive_descendants": 22
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -17556,6 +17527,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.392,
+      "note_path": "docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py",
+      "transitive_descendants": 20
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "distance_law_definitive_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17573,28 +17566,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_distance_law_definitive.py",
       "transitive_descendants": 19
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.085,
-      "note_path": "docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py",
-      "transitive_descendants": 5
     },
     {
       "audit_independence_required": "any_non_self",
@@ -47016,6 +46987,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 135,
-  "total_pending": 1568
+  "ready_count": 134,
+  "total_pending": 1567
 }

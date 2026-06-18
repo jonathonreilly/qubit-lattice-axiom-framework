@@ -17,12 +17,14 @@ bridges rather than another citation to textbook WKB language:
 2. a fixed-energy eikonal/Fermat identification proving `n = k/k0` on the
    framework surface.
 
-This note supplies the second bridge: the fixed-energy eikonal index
-`n = k/k0` as a direct phase-count identity on the bounded scalar dispersion
-packet. The scalar generator shift and its weak-field sign are cited from
-existing retained-bounded source packets below; they are not newly derived by
-this note. It does not add an axiom and does not import a textbook result as a
-proof input.
+This note supplies the fixed-energy eikonal index `n = k/k0` as a direct
+phase-count identity on the bounded scalar dispersion packet. The scalar
+generator shift sign and fixed-energy normalization are now supplied by the
+2026-06-18 source-side bridge
+[`GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md):
+the generator term is `H_s = H_0 + s I`, and the action-normalized weak-field
+variable on this packet is `phi_action = c_E s`. It does not add an axiom and
+does not import a textbook result as a proof input.
 
 ## One-Hop Inputs
 
@@ -31,9 +33,15 @@ proof input.
   supplies the sign convention in which a positive weak field lowers the
   normalized test action, `S_test(phi;x) = L_test (1 - phi(x))`, on the
   bounded test-source packet.
+- [`GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+  is the source-side shift/sign bridge for this packet. It proves that the
+  locally constant scalar generator term is `+s I`, that positive `s` lowers
+  the fixed-energy phase action, and that the action-normalized weak-field
+  variable is `phi_action = c_E s` with
+  `c_E = 1/(k0 lambda_axis'(k0))`.
 - [`SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md)
   is the retained-bounded source packet for the scalar field entering the
-  propagator/action surface. This note uses its scalar-shift packet as an
+  propagator/action surface. This note uses its scalar-field packet as an
   input; it does not rederive universal matter coupling.
 - The axis graph-Laplacian dispersion is the finite-lattice symbol
   `lambda_axis(k) = 2 - 2 cos(k)` used by the Premise (4) packet.
@@ -52,11 +60,11 @@ weak-field cell:
     lambda_axis(k_s) + s = E.
 ```
 
-Here `s` is the scalar shift supplied by the cited source packet, with the
-sign convention cross-checked against the weak-field source-response bridge:
-positive field decreases the normalized action, so the shifted fixed-energy
-symbol is written with `+s` and therefore has smaller local wavenumber at
-fixed `E`.
+Here `s` is the scalar generator shift supplied by the 2026-06-18 sign bridge,
+with the sign convention cross-checked against the weak-field source-response
+bridge: positive field decreases the normalized action, so the shifted
+fixed-energy symbol is written with `+s` and therefore has smaller local
+wavenumber at fixed `E`.
 
 For `0 < E < 4` and `|s| << E`, the exact local wavenumber is
 
@@ -112,9 +120,10 @@ value of `G_Newton`.
 
 ### 1. Additive scalar shift
 
-On a constant-field cell, once the scalar generator-shift packet supplies
-`H_s = H_0 + s I`, the spectral consequence is immediate: adding a scalar term
-`s I` shifts every plane-wave eigenvalue by `s`:
+On a constant-field cell, the 2026-06-18 shift/sign bridge supplies
+`H_s = H_0 + s I` and the action normalization `phi_action = c_E s`. The
+spectral consequence is immediate: adding a scalar term `s I` shifts every
+plane-wave eigenvalue by `s`:
 
 ```text
     H_0 e^{ikx} = lambda_axis(k) e^{ikx}
@@ -122,9 +131,10 @@ On a constant-field cell, once the scalar generator-shift packet supplies
 ```
 
 This is finite-dimensional spectral algebra conditional on the cited scalar
-shift packet. The physical weak-field sign for the scalar action shift is not
-guessed here; it is inherited from the retained-bounded weak-field
-source-response bridge's test-action convention.
+shift/sign bridge. The physical weak-field sign for the scalar action shift is
+not guessed here; it is inherited from the retained-bounded weak-field
+source-response bridge's test-action convention and normalized by
+`c_E = 1/(k0 lambda_axis'(k0))` on the fixed-energy packet.
 
 ### 2. Fixed-energy inverse
 
@@ -203,8 +213,9 @@ constant.
 
 - Bounded to the axis symbol and slowly varying piecewise-constant scalar
   packet. It is not a full arbitrary-graph WKB theorem.
-- The scalar generator shift is a cited retained-bounded input, not a new
-  derivation inside this note.
+- The scalar generator shift/sign and fixed-energy action normalization are
+  cited from the 2026-06-18 source-side bridge, not promoted by this note into
+  arbitrary-graph WKB or physical `G_Newton` normalization.
 - The scalar weak-field sign is inherited from the retained-bounded
   source-response bridge. This note does not derive a universal matter
   coupling theorem.
@@ -225,5 +236,5 @@ PYTHONPATH=scripts python3 scripts/frontier_gravity_fixed_energy_eikonal_index_b
 Expected result:
 
 ```text
-TOTAL: PASS=32 FAIL=0
+TOTAL: PASS=36 FAIL=0
 ```

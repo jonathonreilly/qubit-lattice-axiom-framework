@@ -1,0 +1,12 @@
+# Trace Gate
+
+Required checks before handoff:
+
+```bash
+PYTHONPATH=scripts python3 scripts/frontier_gravity_scalar_shift_sign_normalization_2026_06_18.py
+PYTHONPATH=scripts python3 scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py
+python3 scripts/cached_runner_output.py scripts/frontier_gravity_scalar_shift_sign_normalization_2026_06_18.py --check-only
+python3 scripts/cached_runner_output.py scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py --check-only
+python3 -m py_compile scripts/frontier_gravity_scalar_shift_sign_normalization_2026_06_18.py scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py scripts/cached_runner_output.py scripts/runner_cache.py
+git diff --check
+```

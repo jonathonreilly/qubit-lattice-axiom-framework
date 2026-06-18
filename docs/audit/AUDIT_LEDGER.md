@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 995 |
+| **retained_bounded** | 996 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1434 |
+| unaudited | 1433 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 27 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1443 |
+| `audited_clean` | 1444 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1756 |
+| `unaudited` | 1755 |
 
 | claim_type | count |
 |---|---:|
@@ -1232,6 +1232,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_delay_proxy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `ring_monodromy_does_not_force_car_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -18049,6 +18050,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner-verified frozen table of instantaneous vs. retarded deflections, oscillating-source readouts, and tail-decay percentages is exactly computed and cache-matched on the h=0.5, W=6, L=30 harness.  _(class `C`)_
 - **chain closes:** True — The narrowed load-bearing core closes: the completed runner cache matches the frozen table, and the supplied source computes the lattice propagation and retarded fields rather than printing constants. The admitted frequency-fingerprint/branch-worth synthesis is not used as a load-bearing theorem.
 - **rationale:** The displayed runner-table values match the cache output, and the ratio 0.78 is the rounded quotient of the displayed retarded and instantaneous deflections. The source constructs the lattice, field schedules, propagation, oscillating-source fields, and tail-decay readouts numerically, with no helper imports, hard-coded expected outputs, or external comparator. All cited one-hop authorities are retained_bounded, and the note explicitly splits the unsupplied fingerprint/branch-worth bridge into non-load-bearing editorial synthesis.
+- **auditor confidence:** high
+
+### `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure algebraic SU(3) statement on the cited Gell-Mann carrier and d^{abc} tensor: complex-conjugate generators preserve the bracket and flip the cubic anomaly index, giving A(3bar)=-1 and two-copy contribution -2, without auditing any matter-existence or physical-color bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting T^a_{Rbar}=-(T^a_R)^* into the cubic anomaly trace gives Tr_{Rbar}[Tbar^a {Tbar^b,Tbar^c}] = -(Tr_R[T^a_R {T^b_R,T^c_R}])^* = -(1/2) A(R) d^{abc}, hence A(Rbar)=-A(R).  _(class `A`)_
+- **chain closes:** True — The sign flip follows from the odd number of generator factors under Tbar= -T^* plus trace conjugation and real d^{abc}. The cited algebraic carrier and d-symbol decomposition are retained-grade for this algebraic scope, and no physical SM color or right-handed matter existence premise is used.
+- **rationale:** The proof is a direct finite-dimensional matrix-trace identity over the retained algebraic SU(3) inputs. The runner source actually constructs the Gell-Mann generators, d and f symbols, conjugate generators, and sample higher representations at exact sympy precision rather than merely printing pass counts. The note keeps the physical-color identification and right-handed matter-content existence outside scope, so the open bridge language in upstream notes is not imported by this row.
 - **auditor confidence:** high
 
 ### `ring_monodromy_does_not_force_car_note_2026-06-04`

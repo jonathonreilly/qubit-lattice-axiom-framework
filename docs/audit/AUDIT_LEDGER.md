@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 993 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 35 |
-| unaudited | 1442 |
+| unaudited | 1441 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 57 |
+| ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1439 |
-| `audited_conditional` | 57 |
+| `audited_conditional` | 58 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1764 |
+| `unaudited` | 1763 |
 
 | claim_type | count |
 |---|---:|
@@ -1624,6 +1624,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -16886,6 +16887,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The same rational target vector can select different kernels under different supplied loss weights, so target vector and loss weights are supplied rule data for this finite selection interface.  _(class `A`)_
 - **chain closes:** True — Independent arithmetic matches the finite witness: k3 has endpoint_ba=0 and second_is_b=3/4, while k4 has endpoint_ba=1/2 and second_is_b=1/4. With target (1/3,2/3), weights (100,1) uniquely select k4 and weights (1,100) uniquely select k3, so target alone does not determine the selection under the supplied objective.
 - **rationale:** The load-bearing calculation is finite algebra over explicitly supplied rational data, and the runner source computes the laws, statistic vectors, weighted losses, and blocking cases rather than merely printing constants. The cited authorities are retained-grade for the restricted supplied-rule and kernel-firewall surfaces. The no-go discipline gate is satisfied only for this narrow firewall: any broader claim that Record can never derive target vectors or weights is expressly outside scope and is not ratified here.
+- **auditor confidence:** high
+
+### `post_record_selector_tangent_readout_weight_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Given supplied finite selector/tangent/readout carrier data, supplied nonnegative readout weights, and a supplied positive tangent metric/Hessian, the packet checks exact finite normalization and quadratic positivity while leaving selector/readout authority open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-post_record_selector_tangent_readout_weight_prototype_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** supplied finite tangent/readout carrier + supplied positive tangent metric or Hessian + supplied nonnegative readout weights + exact normalization and quadratic check => finite readout/tangent weight certificate  _(class `A`)_
+- **chain closes:** False — The finite algebra closes only under the supplied packet assumptions, but the full chain from Record or retained cited inputs to those supplied structures does not. Missing step: a retained derivation or explicit approved acceptance of the carrier, readout weights/map, and positive metric/Hessian.
+- **rationale:** Issue: the runner verifies exact finite normalization, SPD, and quadratic checks only after the carrier, readout weights/map, and tangent metric/Hessian are supplied. Why this blocks: neither the source note nor the cited conditional/meta subdivision derives or approves those structures from Record, and no listed primitive covers selector/readout/metric/weight authority. Repair target: a retained bridge theorem or approved primitive accepting those structures within scope. Claim boundary until fixed: the packet is a supplied finite weight certificate and row-bookkeeping support, not selector/tangent/readout authority or a Record-derived positive theorem.
+- **open / conditional deps cited:**
+  - `POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `post_record_source_measure_trace_normalization_prototype_2026-06-06`

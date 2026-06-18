@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 934 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 16 |
-| unaudited | 1596 |
+| unaudited | 1595 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 11 |
@@ -36,6 +36,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | 1 |
+| `decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
@@ -62,26 +63,26 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1351 |
 | `audited_conditional` | 18 |
-| `audited_decoration` | 50 |
+| `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1918 |
+| `unaudited` | 1917 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1730 |
-| `decoration` | 52 |
+| `decoration` | 53 |
 | `meta` | 323 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 766 |
+| `positive_theorem` | 765 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 501 |
-| `medium` | 883 |
+| `high` | 502 |
+| `medium` | 882 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -1518,6 +1519,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` |
+| `gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
 | `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -7929,6 +7931,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner constructs a zero extension and a positive decaying-tail extension that agree on the retained first-sector packet and completed three-sample triple while inducing different Perron/Perron-Jacobi data for the same source operator J.  _(class `C`)_
 - **chain closes:** True — The equality side closes algebraically: the tail is zero on the retained support, and the three-sample check uses only the retained projection. The transfer and Perron/Jacobi side is computed from explicit finite matrices, with no import of the contested underdetermination conclusion.
 - **rationale:** The primary runner is not a print-only certificate: it constructs the two packets, forms the transfer matrices, computes eigenpairs, moments, and Jacobi coefficients, and asserts both equality on retained data and separation in Perron/Jacobi readouts. The load-bearing helper path computes retained packet, sampling, Wilson coefficient, recurrence, and eigen/Jacobi primitives rather than importing the contested conclusion; hard-coded expected values in helper main blocks are not on the parent runner's load-bearing path. The note's boundary is narrow and matches the executable evidence: it claims only finite underdetermination inside the two constructed extensions, not a full Wilson-environment or continuum theorem.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic retained first-symmetric-sector normalization of the completed vector v_min into the packet (z00_min, rho_ret), with reconstruction of Z_min on the three named samples.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Define z00_min = v_min(0,0) and rho_ret = v_min / z00_min, so that Z_min = z00_min E_3 rho_ret.  _(class `A`)_
+- **chain closes:** True — Given the completed retained vector v_min with nonzero first coordinate, normalization by z00_min gives rho_ret(0,0)=1 and z00_min E_3 rho_ret = E_3 v_min = Z_min. This closes only the truncated retained packet statement, not extension to the full beta=6 environment data.
+- **rationale:** The runner normalizes an imported completed-sector vector and checks the resulting reconstruction, so the load-bearing work is algebra over the parent completion claim rather than a new first-principles computation. The factorization and character-measure authorities support the packet vocabulary only within the stated truncated/finite scope. The result is therefore a valid decoration of the completed first-sector triple, not an independent positive theorem about the full beta=6 environment extension.
+- **decoration parent:** `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17`

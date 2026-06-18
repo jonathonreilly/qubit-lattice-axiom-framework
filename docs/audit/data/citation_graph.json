@@ -52234,15 +52234,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19"
     },
     {
       "from": "repo.front_door_status",
       "to": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17"
     },
     {
       "from": "repo.front_door_status",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
         "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19",
         "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
+        "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
         "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
         "yt_ew_m_residual_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
         "newton_derivation_top4_bridge_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "18d480fd7579bd49e330e9ab0fec3b1ef4607b5d2d77ae2a00957869af425b2d",
+      "note_hash": "3f896391143d424b8aff0a63be7967dd4981f5105f037cfbbf29a53fbdaad724",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

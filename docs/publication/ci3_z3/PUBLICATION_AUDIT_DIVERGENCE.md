@@ -18,8 +18,8 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 173 |
-| high | `unaudited` | 153 |
-| medium | `unaudited` | 90 |
+| high | `unaudited` | 154 |
+| medium | `unaudited` | 89 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
 | critical | `audited_conditional` | 1 |
@@ -260,6 +260,7 @@ publication tables phrase it.
 | high | `dark_energy_eos_retained_corollary_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `dm_abcc_retained_measurement_closure_theorem_note_2026-04-21` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md |
 | high | `dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
+| high | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `dm_leptogenesis_hrad_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `dm_leptogenesis_pmns_constructive_continuity_closure_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `dm_leptogenesis_pmns_constructive_projected_source_selector_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
@@ -379,7 +380,6 @@ publication tables phrase it.
 | medium | `dm_candidate_mass_window_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `dm_flagship_closure_review_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
-| medium | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_leptogenesis_pmns_even_response_sole_axiom_boundary_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_leptogenesis_pmns_microscopic_selector_reduction_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_leptogenesis_pmns_minimal_a13_sheet_selector_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

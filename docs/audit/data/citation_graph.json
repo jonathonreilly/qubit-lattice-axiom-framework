@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "causal_field_reconciliation_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
         "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
         "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
         "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
         "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
         "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04"
+        "grown_transfer_basin_targeted_repair_note_2026-06-04",
+        "causal_field_reconciliation_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8c960b74284d944f722f07c87ed23c634751137b54f90cde13e1fefa1ba9c3f6",
+      "note_hash": "f0b8f79372cd37c42fd48c236eaa3021771a507c11289df7f36188cf269ddedc",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

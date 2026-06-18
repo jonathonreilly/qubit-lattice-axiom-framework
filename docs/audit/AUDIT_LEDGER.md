@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 214 |
 | **retained_bounded** | 957 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 23 |
-| unaudited | 1543 |
+| open_gate | 24 |
+| unaudited | 1542 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1386 |
+| `audited_clean` | 1387 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1865 |
+| `unaudited` | 1864 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 893 |
-| `leaf` | 1421 |
+| `medium` | 890 |
+| `leaf` | 1424 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -101,7 +101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1639 | 144.68 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
@@ -1374,6 +1374,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_poisson_resource_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_resource_fidelity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `teleportation_retained_axis_operator_algebra_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -19416,6 +19417,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** After reordering into |b>_logical x |e>_env, the retained-axis Pauli and Bell operators factor as standard logical qubit operators tensored with I_env, so the ideal protocol reduces to ordinary two-qubit teleportation on the logical factor.  _(class `A`)_
 - **chain closes:** True — The stated KS block decomposition directly gives O_logical x I_env for retained-axis operators, spectator-sign cancellation for native-Z when d>1, and environment flipping for fixed-X when a != d-1. The Bell projector and teleportation claims then reduce to standard two-qubit Pauli/Bell algebra on the logical factor.
 - **rationale:** The theorem is self-contained in the restricted packet and closes by finite block-matrix algebra. Independent formula checks confirm the Bell-projector signs, the 1/4 normalization, the native-Z spectator average to zero for d>1, the fixed-X iff a=d-1 condition, and the correction/fidelity identity up to irrelevant branch phase. The runner genuinely constructs the relevant operators and verifies 96 algebraic cases without hidden helper imports or external comparators, while explicitly leaving physical apparatus, noise, preparation, and durable record gates outside scope.
+- **auditor confidence:** high
+
+### `teleportation_taste_readout_operator_model_note`
+
+- **Note:** [`TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md`](../../docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite KS site/taste operator-factorization audit for the retained last taste bit over dims 1,2,3 and sides 2,4: retained-axis operators factor as O_logical tensor I_env, while native sublattice parity Z does not in dim > 1; physical readout, noise, heralding, and transport remain outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-teleportation_taste_readout_operator_model_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On each environment block, Z_native|_e = sigma_s Z_logical with sigma_s = (-1)^(sum spectator bits); for dim > 1 opposite spectator sectors give opposite signs, so no single O_logical tensor I_env factorization exists and the Frobenius projection averages to zero.  _(class `C`)_
+- **chain closes:** True — The block decomposition directly shows the spectator-sign obstruction for native parity and the environment-blind factorization of retained-axis Z/X and derived projectors. The runner source constructs the finite KS basis and native/axis operators, projects onto logical tensor environment blocks, and computes the stated residual pattern rather than merely printing constants.
+- **rationale:** The finite operator-factorization claim closes on its own scoped terms: the runner computes block projections and residuals from constructed lattice/taste operators, and the algebraic argument is also supported by the retained_bounded RALA closure theorem T1, T2, and T4. The hard-coded expected pass/fail rules are consistency assertions applied after residual computation, not substitutes for the residual calculation. The helper boundary checks are cross-note status guards and do not supply the operator-factorization result. No external comparator, tuned input scale, or physical apparatus bridge is used for the scoped claim.
 - **auditor confidence:** high
 
 ### `teleportation_three_register_cross_encoding_note`

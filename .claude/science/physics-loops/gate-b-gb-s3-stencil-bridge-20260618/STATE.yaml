@@ -1,0 +1,25 @@
+loop_slug: gate-b-gb-s3-stencil-bridge-20260618
+goal: "Partially retire Gate B GB-S3 by deriving the label/offset-preserving forward stencil as a native finite-range Z^3 relation."
+target_status: bounded-support
+mode: source-side_unlock_pr
+cycle_count: 1
+active_route: lattice_forward_stencil_bridge
+hard_residual: "GB-S1b scalar normalization/regulator, GB-S2 propagation/readout semantics, and GB-S3b physical/growth-rule selection remain open."
+files_touched:
+  - docs/GATE_B_DYNAMICS_NOTE.md
+  - docs/GATE_B_GB_S3_LATTICE_FORWARD_STENCIL_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+  - scripts/gate_b_gb_s3_lattice_forward_stencil_bridge_2026_06_18.py
+  - scripts/gate_b_source_packet_manifest_2026_06_09.py
+  - logs/runner-cache/gate_b_gb_s3_lattice_forward_stencil_bridge_2026_06_18.txt
+  - logs/runner-cache/gate_b_source_packet_manifest_2026_06_09.txt
+open_imports:
+  - GB-S1b
+  - GB-S2
+  - GB-S3b
+retired_imports:
+  - "GB-S3a: label/offset-preserving 3x3 forward stencil as arbitrary row-local graph import."
+trace_gate_classification: direct_blocker_closure
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Run verification checks, commit, push, and open a ready PR."
+stop_condition: "PR opened or GitHub delivery failure recorded in PR_BACKLOG.md."

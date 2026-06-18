@@ -52,10 +52,11 @@ def main() -> int:
         and "I_GateB" in body,
     )
     check(
-        "GB-S1 discloses valley-linear source/action as supplied only",
-        "GB-S1" in body
-        and "valley-linear source/action rule" in body
-        and "not derived from retained primitives" in lower,
+        "GB-S1 discloses split source/action boundary",
+        "GB-S1a" in body
+        and "GB-S1b" in body
+        and "linear `S=L(1-phi)` response form has bounded weak-field support" in body
+        and "not fully derived from retained primitives" in lower,
     )
     check(
         "GB-S2 discloses propagation/readout semantics as supplied only",
@@ -64,10 +65,11 @@ def main() -> int:
         and "not a retained physical-gravity readout bridge" in lower,
     )
     check(
-        "GB-S3 discloses generated-connectivity rule as supplied only",
-        "GB-S3" in body
-        and "generated-connectivity rule" in body
-        and "not yet derived from a local retained growth primitive" in lower,
+        "GB-S3 discloses native stencil split and remaining selection blocker",
+        "GB-S3a" in body
+        and "GB-S3b" in body
+        and "label/offset-preserving forward stencil has bounded native finite-range support" in body
+        and "physical/growth-rule selection" in lower,
     )
     check(
         "manifest preserves no-new-axiom and no-clean-theorem boundary",
@@ -85,9 +87,10 @@ def main() -> int:
     print(f"\nSUMMARY: PASS={PASS} FAIL={FAIL}")
     print(f"runner_check_breakdown = {{A: {PASS}, B: 0, C: 0, D: 0, total_pass: {PASS}}}")
     print(
-        "VERDICT: the Gate B row exposes the supplied source packet as row-local "
-        "manifest data and does not promote it to an axiom, primitive, retained "
-        "premise, physical-gravity bridge, or clean Gate B dynamics theorem."
+        "VERDICT: the Gate B row exposes the remaining supplied source packet as "
+        "row-local manifest data, records partial GB-S1/GB-S3 bridge splits, and "
+        "does not promote it to an axiom, primitive, retained premise, "
+        "physical-gravity bridge, or clean Gate B dynamics theorem."
     )
     return 0 if FAIL == 0 else 1
 

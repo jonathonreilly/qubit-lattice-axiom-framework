@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/gate_b_gb_s3_lattice_forward_stencil_bridge_2026_06_18.py
+runner_sha256: a0c6668de8ce7eaa24b2706e9d6b9a560913660e6a43c43cd75efa58e48ff5e2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Gate B GB-S3 lattice forward-stencil bridge
+========================================================================
+n_layers=4 half=3 edges=1083
+[PASS] stencil has exactly the 3x3 forward offset set
+       [(1, -1, -1), (1, -1, 0), (1, -1, 1), (1, 0, -1), (1, 0, 0), (1, 0, 1), (1, 1, -1), (1, 1, 0), (1, 1, 1)]
+[PASS] all stencil edges are finite-range local on Z^3
+       Manhattan range is bounded by 3
+[PASS] all stencil edges advance one layer
+[PASS] interior stencil is translation-covariant in transverse directions
+[PASS] label-stencil adjacency is independent of coordinate drift
+[PASS] coordinate KNN recomputation is a different rule under drift
+       diff_low=484, diff_high=1230
+[PASS] bridge note carries status firewall
+[PASS] bridge note keeps GB-S3b and Gate B closure open
+[PASS] parent Gate B note splits GB-S3 through this bridge
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

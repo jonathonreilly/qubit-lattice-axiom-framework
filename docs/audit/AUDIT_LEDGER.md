@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 952 |
+| **retained_bounded** | 953 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 22 |
-| unaudited | 1552 |
+| unaudited | 1551 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1379 |
+| `audited_clean` | 1380 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1874 |
+| `unaudited` | 1873 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 884 |
-| `leaf` | 1430 |
+| `medium` | 885 |
+| `leaf` | 1429 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -955,6 +955,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
@@ -13431,6 +13432,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For 0 <= x,y <= a and beta >= 1, the saddle diagonal satisfies |beta^(-3/2) r_sad_(p,q)(beta) - H(x,y) exp[-Q(x,y)]| <= K_geom(a) beta^(-1/2), with K_geom(a)=6a^4+3a^2+3a+1, and the scaled half-slice factors are contractions.  _(class `A`)_
 - **chain closes:** True — The displayed polynomial expansion, Gaussian tail estimate, contraction argument, and ratio perturbation inequality close from the provided definitions and retained-grade one-hop inputs. The exact Wilson determinant remainder, true Wilson tail, explicit K, beta_0, and half-line gap theorem are named as outside the claimed scope.
 - **rationale:** Independent formula checks confirm the beta^(-1/2) saddle-profile constant, the A2 tail bound, the contraction of exp((beta/2)(J-I)), and the perturbation ratio inequality. The runner source performs witness computations and source-hygiene checks without importing a contested fitted K or promoting the non-authority L_sample. The source note is carefully bounded and does not claim the missing Wilson-to-saddle estimate or the full operator-norm remainder.
+- **auditor confidence:** high
+
+### `native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12`
+
+- **Note:** [`NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md`](../../docs/NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Scalar integer-order Bessel local-CLT expansion for k >= 0, t >= 1, a = k/sqrt(t), with P_1(a) and an explicit all-a absolute remainder bound; no SU(3) determinant or operator-tail assembly is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note bounds the core expansion error plus the Gaussian and actual tails by an absolute integral remainder B_abs/t^2, then evaluates sqrt(2/pi) B_abs = C_0 to obtain the all-a scalar error bound.  _(class `A`)_
+- **chain closes:** True — The expansion follows directly from the supplied scalar integral representation using elementary cosine-series inequalities, Gaussian Fourier differentiation, and explicit tail bounds. The cited SU(3) authority is only needed to identify the repository convention for the I_k atom, and it is retained_bounded.
+- **rationale:** The load-bearing proof is an exact scalar analytic closure from the integral representation, not a fitted numerical match or a definition-only substitution. Independent checking confirms the sign of the s^4/(24t) correction, the fourth-derivative formula for P_1(a), and the conversion of the core and tail Gaussian moments into the displayed C_0. The runner source is consistent with this: it hard-codes the derived formulas for hygiene and witness checks, while scipy.special.ive is used only as a numerical witness, not as the proof input.
 - **auditor confidence:** high
 
 ### `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23`

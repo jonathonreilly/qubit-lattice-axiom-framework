@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 304,
     "high": 267,
-    "leaf": 569,
+    "leaf": 568,
     "medium": 414
   },
   "cycle_break_target_count": 7,
@@ -17415,30 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.67,
-      "note_path": "docs/NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_2026_06_12.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "quark_c3_oriented_ward_splitter_support_note_2026-04-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17560,6 +17536,28 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_universal_gr_polarization_frame_bundle.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "chiral_split_mass_gravity_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_chiral_split_mass_gravity.py",
       "transitive_descendants": 17
     },
     {
@@ -30267,28 +30265,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "chiral_split_mass_gravity_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.822,
-      "note_path": "docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_chiral_split_mass_gravity.py",
-      "transitive_descendants": 4
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -30922,6 +30898,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/linear_response_second_order_kubo.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12",
+        "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12.py",
       "transitive_descendants": 1
     },
     {
@@ -35709,32 +35711,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/native_gauge_transfer_diagonal_domination_rung_nine_bounded_2026_06_12.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12",
-        "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12.py",
       "transitive_descendants": 1
     },
     {
@@ -46636,5 +46612,5 @@
     }
   ],
   "ready_count": 126,
-  "total_pending": 1554
+  "total_pending": 1553
 }

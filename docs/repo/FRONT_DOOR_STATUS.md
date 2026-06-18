@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1505 |
-| Retained-grade rows, including boxed decorations | 1432 |
+| Applied audit verdicts | 1506 |
+| Retained-grade rows, including boxed decorations | 1433 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 214 |
-| Retained bounded rows | 952 |
+| Retained bounded rows | 953 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 22 |
-| Unaudited rows | 1552 |
+| Unaudited rows | 1551 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 25 |
 | Audited renaming rows | 16 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1554 |
+| Total pending rows | 1553 |
 | Ready rows | 126 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
 | Medium pending | 414 |
-| Leaf pending | 569 |
+| Leaf pending | 568 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`quark_c3_oriented_ward_splitter_support_note_2026-04-28`](../../docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md) - medium; unaudited
 - [`su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`teleportation_bell_measurement_circuit_note`](../../docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md) - medium; unaudited
 - [`teleportation_taste_readout_operator_model_note`](../../docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md) - medium; unaudited
 - [`universal_gr_polarization_frame_bundle_attempt`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md) - medium; unaudited
-- [`chiral_split_mass_gravity_note`](../../docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md) - leaf; unaudited
+- [`chiral_split_mass_gravity_note`](../../docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md) - medium; unaudited
+- [`record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 574 |
 | High nodes | 507 |
-| Medium nodes | 923 |
-| Leaf nodes | 1519 |
+| Medium nodes | 924 |
+| Leaf nodes | 1518 |
 
 Top load-bearing rows by graph score:
 

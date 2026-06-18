@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
-runner_sha256: 81b4a7a47556e426102a7ebfb392cd635ce6a34b453a7aa7767715bd653e7819
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.40
-status: ok
------ stdout -----
 ==========================================================================
  audit_companion_lattice_noether_onsite_internal_2026_06_05.py
  Onsite/internal-restricted lattice Noether theorem, corrected U(1) sign.
@@ -68,6 +60,3 @@ status: ok
 
 TOTAL: 14 PASS / 0 FAIL
 BOUNDARY GUARD: PASS retained abstract authority is cited; finite exhibit is not promoted and no gate edge is present
-
------ stderr -----
-

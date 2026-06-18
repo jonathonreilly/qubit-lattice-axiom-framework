@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1551 |
+| Applied audit verdicts | 1552 |
 | Retained-grade rows, including boxed decorations | 1453 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
 | Retained bounded rows | 967 |
 | Boxed decorations under retained parents | 53 |
-| Open gates | 29 |
-| Unaudited rows | 1506 |
+| Open gates | 30 |
+| Unaudited rows | 1505 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 40 |
 | Audited renaming rows | 18 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1508 |
-| Ready rows | 92 |
+| Total pending rows | 1507 |
+| Ready rows | 91 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 523 |
+| Leaf pending | 522 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`beta6_plaquette_multicube_resummation_relocation_note_2026-05-31`](../../docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md) - medium; unaudited
 - [`beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 - [`capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12`](../../docs/CAPTURE_DEFICIT_EXACT_TAIL_ACCOUNTING_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`causal_cone_speed_map_note`](../../docs/CAUSAL_CONE_SPEED_MAP_NOTE.md) - medium; unaudited
 - [`causal_impact_parameter_note`](../../docs/CAUSAL_IMPACT_PARAMETER_NOTE.md) - medium; unaudited
+- [`causal_source_placement_robustness_note`](../../docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`causal_source_placement_robustness_note`](../../docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md) - leaf; unaudited
+- [`commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12`](../../docs/COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

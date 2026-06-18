@@ -1,0 +1,24 @@
+loop_slug: theta-determinant-mass-side-wiring-20260618
+branch: codex/theta-determinant-mass-side-wiring-20260618
+base: origin/main
+status: pr_ready
+target_status: bounded-support
+active_route: source-edge wiring from theta P2 determinant exhaustion to the mass-side epsilon-Hermiticity bridge
+target_claim_id: theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11
+target_blocker: "add or cite a retained action-level bridge reducing the Gaussian vacuum-weight mass-orientation dependence det(D+M) to the supplied arg det(M_u M_d) datum under theta_eff, and separately retain or explicitly quarantine the W2 physical-registrability identification."
+files_touched:
+  - docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
+  - logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt
+  - .claude/science/physics-loops/theta-determinant-mass-side-wiring-20260618/
+open_imports:
+  - W2 physical registrability is still not derived.
+  - The cited mass-side epsilon-Hermiticity bridge is a source-side dependency pending independent audit.
+  - K-reality, the orientation bit, gauge theta, multi-plaquette classes, beyond-bilinear matter terms, and source insertions remain live boundaries.
+verification:
+  - python3 scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
+  - python3 scripts/frontier_theta_mass_side_epsilon_hermiticity_reality_2026_06_11.py
+  - python3 -m py_compile scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py scripts/frontier_theta_mass_side_epsilon_hermiticity_reality_2026_06_11.py
+review_loop: reviewer_owned_not_run_per_user_direction
+next_exact_action: reviewer should inspect whether this source edge is the right dependency path before any audit requeue or status action.

@@ -1,0 +1,19 @@
+loop_slug: h0125-archive-firewall-20260618
+goal: package H0125 archived failure firewall as source-side audit unlock
+target_status: demotion
+base: origin/main@c7106461c
+active_route: archive firewall packaging
+hard_residual: full numerical H0125 failure diagnostic remains unwritten
+files_touched:
+  - archive_unlanded/h0125-unverifiable-numerical-diagnostics-2026-04-30/H0125_FAILURE_DERIVATION.md
+  - archive_unlanded/h0125-unverifiable-numerical-diagnostics-2026-04-30/README.md
+  - logs/runner-cache/h0125_archive_firewall_2026_06_16.txt
+open_imports:
+  - full same-model diagnostic for transfer norms, beam sigma, detector probability, and SNR
+trace_gate:
+  trace_class: direct_blocker_closure
+  reachability_to_target: partially_closes
+review_disposition: pass
+pr_status: pending
+next_exact_action: verify, commit, push, open PR
+stop_condition: one coherent source-side PR opened for this block

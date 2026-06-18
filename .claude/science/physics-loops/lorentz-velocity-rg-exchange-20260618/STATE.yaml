@@ -1,0 +1,26 @@
+loop_slug: lorentz-velocity-rg-exchange-20260618
+target_claim_id: emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06
+target_status: audited_conditional
+mode: science-fix
+branch: codex/lorentz-velocity-rg-exchange-20260618
+base: origin/main
+cycle_count: 1
+active_route: velocity_rg_exchange_matrix_exact_support
+hard_residual: "Physical one-loop coefficients, spatial-only power-divergent coefficient, anomalous dimension, and LV-bound sufficiency remain outside this packet."
+files_touched:
+  - docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md
+  - docs/EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md
+  - scripts/frontier_emergent_lorentz_velocity_rg_exchange_matrix_2026_06_18.py
+  - logs/runner-cache/frontier_emergent_lorentz_velocity_rg_exchange_matrix_2026_06_18.txt
+open_imports:
+  - "Framework-native derivation of positive one-loop mutual-drag coefficients a,b."
+  - "Framework-native spatial-only power-divergent mixing coefficient."
+  - "Physical anomalous dimension and sufficiency comparison against LV bounds."
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_disposition: not_run_by_request
+pr_status: ready_for_reviewer
+next_exact_action: "Reviewer can extract the exact exchange-matrix support and decide whether to queue the narrowed sub-blocker for audit."
+stop_condition: "Algebraic one-loop exchange-matrix import is source-side discharged; physical coefficient bridges remain."

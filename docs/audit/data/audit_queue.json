@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 304,
     "high": 267,
-    "leaf": 546,
+    "leaf": 545,
     "medium": 412
   },
   "cycle_break_target_count": 7,
@@ -17415,41 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19",
-        "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
-        "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
-        "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
-        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py"
-      ],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PACKET_THEOREM_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17558,6 +17523,35 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "linear_response_derivation_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "linear_response_true_kubo_note",
+        "minimal_axioms_2026-05-03"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/global_coherence_off_scaffold.py",
+        "scripts/independent_generators_heldout.py",
+        "scripts/universality_classifier.py"
+      ],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/LINEAR_RESPONSE_DERIVATION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/linear_response_derivation.py",
       "transitive_descendants": 16
     },
     {
@@ -30230,35 +30224,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "linear_response_derivation_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "linear_response_true_kubo_note",
-        "minimal_axioms_2026-05-03"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/global_coherence_off_scaffold.py",
-        "scripts/independent_generators_heldout.py",
-        "scripts/universality_classifier.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/LINEAR_RESPONSE_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/linear_response_derivation.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "linear_response_second_order_kubo_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -31452,6 +31417,41 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_implicit_flow.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py",
+        "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py",
+        "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
+        "scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py",
+        "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+        "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+        "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+        "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
+        "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
+        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_2026_04_19.py",
       "transitive_descendants": 0
     },
     {
@@ -38672,41 +38672,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/gauge_vacuum_plaquette_derived_word_chain_end_to_end_composition_bounded_theorem_2026_06_12.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
-        "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
-        "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
-        "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
-        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_2026_04_19.py",
       "transitive_descendants": 0
     },
     {
@@ -45995,5 +45960,5 @@
     }
   ],
   "ready_count": 110,
-  "total_pending": 1529
+  "total_pending": 1528
 }

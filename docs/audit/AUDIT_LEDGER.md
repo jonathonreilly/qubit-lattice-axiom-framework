@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 962 |
+| **retained_bounded** | 963 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 27 |
-| unaudited | 1527 |
+| unaudited | 1526 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1397 |
+| `audited_clean` | 1398 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1849 |
+| `unaudited` | 1848 |
 
 | claim_type | count |
 |---|---:|
@@ -107,8 +107,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1027 | 49.01 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
@@ -594,6 +594,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8284,6 +8285,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The load-bearing move is helper registration: fixed weights, line normalization/parameterization, ordered projection/compression, and projector-distance routines.  _(class `E`)_
 - **chain closes:** True — The restricted packet shows the module defines the named helper symbols and routines. This closes only as interface registration; it does not derive the complement-line frame, selected_line selector, boundary-first weights, or downstream plaquette theorem.
 - **rationale:** The primary runner is a module/helper file with no executed assertions and empty stdout; its load-bearing content is definition of constants and routines plus imports of upstream computations. The source note itself states that promotion beyond wrapper support requires a separate theorem deriving the complement-line frame and selector. Therefore the audited claim is a citeable helper registration, not a first-principles derivation or algebraic closure.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PACKET_THEOREM_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PACKET_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited claim is the finite zero-extension/witness-branch computation of one explicit Perron/Jacobi first-layer packet for the retained first-sector data, not physical selection of the framework-point Wilson environment packet or universal Loewner minimality.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner constructs T_sel, extracts its Perron state, and verifies alpha0=m1, beta1^2=m2-m1^2, beta1>0 for the displayed packet.  _(class `C`)_
+- **chain closes:** True — The cited authorities are retained-grade bounded inputs for the narrowed zero-extension surface and the factorized-class local diagonal. The primary runner then computes the transfer matrix, Perron vector, Jacobi coefficients, and Hankel moments directly from those inputs; the open universal-minimality and physical-selection bridges are explicitly outside scope.
+- **rationale:** Within the bounded branch stated by the note, the load-bearing step is an actual finite matrix/Perron/Jacobi computation, not a hard-coded numerical comparison. The primary runner does include one prose-status check against the sibling note, but the packet values and identities are computed through the helper chain from retained bounded inputs. The note does not import the still-open universal Loewner or framework-point selection claims.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19`

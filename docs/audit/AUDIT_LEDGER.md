@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 944 |
+| **retained_bounded** | 945 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1572 |
+| unaudited | 1571 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 13 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1367 |
+| `audited_clean` | 1368 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1894 |
+| `unaudited` | 1893 |
 
 | claim_type | count |
 |---|---:|
@@ -122,7 +122,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 924 | 34.85 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 34.66 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 734 | 33.02 | `unaudited` | unaudited |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
+| 22 | `kinetic_isotropy_primitive` | meta | critical | 1004 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
@@ -1305,6 +1305,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `structured_chokepoint_bridge_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -18346,6 +18347,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using K = U Sigma V^dag, unitary block conjugation reduces M = [[alpha I,K],[-K^dag,alpha I]] to direct two-by-two blocks [[alpha,sigma_i],[-sigma_i,alpha]], so det(M)=prod_i(alpha^2+sigma_i^2)>0 for alpha>0.  _(class `A`)_
 - **chain closes:** True — The algebra closes independently of the runner: with W=diag(U,V), W^dag M W has off-diagonal Sigma and -Sigma, and a permutation of basis exposes the 2x2 block direct sum. Each factor alpha^2+sigma_i^2 is strictly positive because alpha>0 and sigma_i>=0.
 - **rationale:** The determinant formula is a standard finite-dimensional algebraic identity once the balanced eps decomposition and supplied alpha I diagonal surface are assumed. The note explicitly does not claim that M_W = r d I is framework-forced, does not cover the standard Wilson nearest-neighbour Laplacian, and does not assert parent-row reflection positivity or Wilson-sector sign-problem closure. On that scoped supplied surface, no open dependency or hidden bridge theorem is imported. The runner source performs actual finite-matrix construction and factorisation checks, but the clean verdict rests on the independent SVD/block determinant argument.
+- **auditor confidence:** high
+
+### `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded algebraic O_h sign bridge: Wilson plaquette invariance under signed spatial permutations, the epsilon pseudotensor sign law, and the determinant-odd transformation of epsilon^{ijk}F_{0i}F_{jk} for an already O_h-covariant rank-two F; coefficient exclusion is only the stated conditional consequence.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If F_{0i} transforms as a spatial vector and F_{jk} as an antisymmetric spatial rank-two tensor, then the R factors in epsilon^{ijk} F_{0i} F_{jk} contract to the determinant character, so Q[R.F] = det(R) Q[F].  _(class `A`)_
+- **chain closes:** True — The epsilon identity is exact finite signed-permutation algebra, and the rank-two tensor transformation contracts directly with it. Wilson invariance follows from plaquette permutation plus Re tr(U_P^dagger)=Re tr(U_P); concrete topological-charge discretization covariance is correctly left outside the audited scope.
+- **rationale:** The load-bearing identity is a genuine algebraic closure over signed permutation matrices, not a definition or numerical fit. The cited upstream authority is retained_bounded and is used only as companion determinant-character context, while the epsilon and Wilson statements close from finite O_h tensor algebra and standard plaquette orientation behavior. The runner is substantive rather than print-only: it enumerates O_h, checks epsilon on all 48 elements, and samples Wilson and abstract F transformations; it does not prove named lattice topological-charge covariance, but the note explicitly keeps that as a separate antecedent.
 - **auditor confidence:** high
 
 ### `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1485 |
-| Retained-grade rows, including boxed decorations | 1423 |
+| Applied audit verdicts | 1486 |
+| Retained-grade rows, including boxed decorations | 1424 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 213 |
-| Retained bounded rows | 944 |
+| Retained bounded rows | 945 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 19 |
-| Unaudited rows | 1572 |
+| Unaudited rows | 1571 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 22 |
 | Audited renaming rows | 13 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1574 |
-| Ready rows | 141 |
+| Total pending rows | 1573 |
+| Ready rows | 140 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
-| Medium pending | 434 |
+| Medium pending | 433 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26`](../../docs/STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - medium; unaudited
 - [`work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md) - medium; unaudited
 - [`lattice_3d_inverse_square_kernel_helper_note_2026-04-04`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) - medium; unaudited
 - [`teleportation_3d1_causal_record_channel_note`](../../docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md) - medium; unaudited
 - [`wave_direct_dm_h025_seed0_crossfamily_note`](../../docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md) - medium; unaudited
-- [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
 - [`su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
+- [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
+- [`koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02`](../../docs/KOIDE_MATTER_ATTACHMENT_GRADED_STATISTICS_GATE_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

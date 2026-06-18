@@ -11,20 +11,20 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3375 |
-| Applied audit verdicts | 1412 |
-| Retained-grade rows, including boxed decorations | 1387 |
-| Retained positive theorems | 217 |
-| Retained no-go rows | 208 |
-| Retained bounded rows | 918 |
+| Ledger rows | 3381 |
+| Applied audit verdicts | 1396 |
+| Retained-grade rows, including boxed decorations | 1371 |
+| Retained positive theorems | 212 |
+| Retained no-go rows | 206 |
+| Retained bounded rows | 909 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 14 |
-| Unaudited rows | 1636 |
+| Unaudited rows | 1658 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 7 |
 | Audited renaming rows | 2 |
 | Audited numerical-match rows | 4 |
-| Citation cycles detected | 6 |
+| Citation cycles detected | 7 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -33,13 +33,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1641 |
-| Ready rows | 160 |
-| Cycle-break targets | 6 |
+| Total pending rows | 1663 |
+| Ready rows | 165 |
+| Cycle-break targets | 7 |
 | Critical pending | 332 |
-| High pending | 288 |
-| Medium pending | 463 |
-| Leaf pending | 558 |
+| High pending | 289 |
+| Medium pending | 473 |
+| Leaf pending | 569 |
 
 Next ready rows by queue order:
 
@@ -57,13 +57,13 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **434**.
+- Non-retained-grade cited rows in publication tables: **436**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 180 |
-| high | `unaudited` | 159 |
-| medium | `unaudited` | 90 |
+| high | `unaudited` | 158 |
+| medium | `unaudited` | 93 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
 
@@ -73,19 +73,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3517 |
+| Citation-graph nodes | 3523 |
 | Critical nodes | 574 |
-| High nodes | 508 |
-| Medium nodes | 921 |
-| Leaf nodes | 1514 |
+| High nodes | 507 |
+| Medium nodes | 922 |
+| Leaf nodes | 1520 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1634 descendants; score 142.675
-- `three_generation_observable_theorem_note` - critical; 1045 descendants; score 65.031
+- `minimal_axioms` - critical; 1640 descendants; score 144.680
+- `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
-- `plaquette_self_consistency_note` - critical; 1009 descendants; score 52.980
-- `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 50.006
-- `key_terminology` - critical; 1119 descendants; score 47.629
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 922 descendants; score 45.350
+- `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
+- `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
+- `key_terminology` - critical; 1118 descendants; score 46.628
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

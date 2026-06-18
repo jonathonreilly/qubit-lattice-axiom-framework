@@ -1,5 +1,5 @@
 {
-  "cycle_count": 6,
+  "cycle_count": 7,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -404,9 +404,47 @@
         }
       ],
       "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0007",
+      "decision": null,
+      "edges": [
+        {
+          "from": "koide_q_reduced_observable_restriction_theorem_2026-04-22",
+          "to": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12"
+        },
+        {
+          "from": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
+          "to": "koide_q_reduced_observable_restriction_theorem_2026-04-22"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 83,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "koide_q_reduced_observable_restriction_theorem_2026-04-22",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md",
+          "title": "Koide Q Reduced Observable Restriction Theorem",
+          "transitive_descendants": 83
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md",
+          "title": "Koide Q Reduced Carrier Physical-Identification Obstruction",
+          "transitive_descendants": 83
+        }
+      ],
+      "requires_lemma_extraction": false
     }
   ],
   "length_counts": {
+    "2": 1,
     "3": 1,
     "4": 3,
     "5": 1,

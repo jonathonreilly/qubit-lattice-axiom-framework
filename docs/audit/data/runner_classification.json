@@ -4944,6 +4944,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_corner_transfer_fixed_gauge_background_2026_06_12.py"
     },
+    "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 10,
+        "B": 3,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py"
+    },
     "cosmological_constant_result_2026-04-12": {
       "assert_count": 0,
       "counts": {
@@ -5819,6 +5831,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_depth_laurent_root_closed_form_2026_06_12.py"
+    },
+    "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 3,
+        "B": 1,
+        "C": 15,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_det_holonomy_trivial_hermitian_positive_circulant_2026_06_12.py"
     },
     "det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12": {
       "assert_count": 1,
@@ -9635,6 +9659,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/equivalence_principle_harness.py"
+    },
+    "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py"
     },
     "erosion_exact_recurrence_path_product_threshold_obstruction_bounded_theorem_note_2026-06-12": {
       "assert_count": 1,
@@ -18660,6 +18696,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_q_readout_factorization_theorem.py"
     },
+    "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 5,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.py"
+    },
     "koide_q_reduced_observable_restriction_theorem_2026-04-22": {
       "assert_count": 0,
       "counts": {
@@ -24767,6 +24815,30 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_plaquette_c6_derivation_framework_su3_narrow.py"
+    },
+    "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 75,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/plaquette_environment_contraction_cost_verification_bounded_2026_06_12.py"
+    },
+    "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 80,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/plaquette_environment_quotient_equivariance_narrow_theorem_2026_06_12.py"
     },
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
@@ -49403,6 +49475,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 10,
+        "B": 3,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_cosmological_constant.py": {
       "assert_count": 0,
       "claims": [
@@ -50150,6 +50237,21 @@
         "B": 1,
         "C": 7,
         "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_det_holonomy_trivial_hermitian_positive_circulant_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 1,
+        "C": 15,
+        "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -54119,6 +54221,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_erosion_exact_recurrence_path_product_2026_06_12.py": {
@@ -59886,6 +60003,21 @@
         "D": 0
       },
       "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 5,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
       "dominant_class": "A",
       "exists": true
     },
@@ -78387,6 +78519,36 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/plaquette_environment_contraction_cost_verification_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 75,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/plaquette_environment_quotient_equivariance_narrow_theorem_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 80,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/plaquette_marked_slice_bulk_average_translation_bridge_2026_06_12.py": {
       "assert_count": 1,
       "claims": [
@@ -81931,16 +82093,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 561,
+    "decoration_candidates": 562,
     "dominant_class_distribution": {
-      "A": 436,
-      "B": 491,
-      "C": 1182,
+      "A": 438,
+      "B": 492,
+      "C": 1185,
       "D": 411,
       "none": 457
     },
-    "runners_classified": 2977,
-    "runners_with_C": 1603,
-    "runners_with_D": 951
+    "runners_classified": 2983,
+    "runners_with_C": 1608,
+    "runners_with_D": 953
   }
 }

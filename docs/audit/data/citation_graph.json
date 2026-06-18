@@ -7309,6 +7309,14 @@
       "to": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
     },
     {
+      "from": "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12",
+      "to": "realized_state_primitive"
+    },
+    {
       "from": "cosmological_constant_result_2026-04-12",
       "to": "dark_energy_eos_note"
     },
@@ -8043,6 +8051,10 @@
     {
       "from": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
       "to": "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07"
+    },
+    {
+      "from": "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12",
+      "to": "minimal_axioms"
     },
     {
       "from": "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
@@ -12083,6 +12095,14 @@
     {
       "from": "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16",
       "to": "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
+      "to": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
+    },
+    {
+      "from": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
+      "to": "minimal_axioms"
     },
     {
       "from": "erosion_exact_recurrence_path_product_threshold_obstruction_bounded_theorem_note_2026-06-12",
@@ -22937,8 +22957,40 @@
       "to": "koide_q_so2_phase_erasure_support_note_2026-04-25"
     },
     {
+      "from": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
+      "to": "koide_q_reduced_observable_restriction_theorem_2026-04-22"
+    },
+    {
+      "from": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
+      "to": "three_generation_observable_theorem_note"
+    },
+    {
+      "from": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
+      "to": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
+      "to": "koide_q_readout_factorization_theorem_2026-04-22"
+    },
+    {
+      "from": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
+      "to": "koide_q_minimal_scale_free_selector_note_2026-04-22"
+    },
+    {
+      "from": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
+      "to": "flavor_readout_gate_equals_carrier_identification_2026-05-31"
+    },
+    {
       "from": "koide_q_reduced_observable_restriction_theorem_2026-04-22",
       "to": "koide_q_dred_normalization_freedom_no_go_note_2026-06-15"
+    },
+    {
+      "from": "koide_q_reduced_observable_restriction_theorem_2026-04-22",
+      "to": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12"
     },
     {
       "from": "koide_q_reduced_observable_restriction_theorem_2026-04-22",
@@ -29583,6 +29635,30 @@
     {
       "from": "plaquette_c6_derivation_framework_su3_narrow_theorem_note_2026-05-27",
       "to": "graph_first_su3_integration_note"
+    },
+    {
+      "from": "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+    },
+    {
+      "from": "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
+      "to": "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
+    },
+    {
+      "from": "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
+      "to": "su3_wigner_l3_treewidth_infeasible_2026-05-04"
+    },
+    {
+      "from": "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12",
+      "to": "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12"
+    },
+    {
+      "from": "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12",
+      "to": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+    },
+    {
+      "from": "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12",
+      "to": "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
     },
     {
       "from": "plaquette_marked_slice_bulk_average_translation_bridge_narrow_theorem_note_2026-06-12",
@@ -52154,19 +52230,35 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+      "to": "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26"
     },
     {
       "from": "repo.front_door_status",
-      "to": "scalar_trace_tensor_no_go_note"
+      "to": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02"
+      "to": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
     },
     {
       "from": "repo.front_door_status",
-      "to": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
+      "to": "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16"
     },
     {
       "from": "repo.repo_organization",
@@ -61698,6 +61790,21 @@
       "runner_path": "scripts/frontier_corner_transfer_fixed_gauge_background_2026_06_12.py",
       "title": "Corner Transfer Extends To Fixed Gauge Backgrounds -- Bounded Note"
     },
+    "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12": {
+      "claim_id": "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "realized_state_primitive"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "04ca319a84b196c5da99047cf3422b7902de0b008742f4beb453fb120602d0be",
+      "path": "docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py",
+      "title": "Correlator Cycle Phases on the Circulant Surface Are Readback, Blind, or State-Contingent (Bounded)"
+    },
     "cosmological_constant_result_2026-04-12": {
       "claim_id": "cosmological_constant_result_2026-04-12",
       "claim_type_author_hint": null,
@@ -62837,6 +62944,20 @@
       "path": "docs/DEPTH_LAURENT_ROOT_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
       "runner_path": "scripts/frontier_depth_laurent_root_closed_form_2026_06_12.py",
       "title": "Depth Laurent Roots: the Scalar Root-Moduli Closed Form Is REFUTED; the Depth Tail Follows the Full Principal-Branch Phase Law and the Root-Set Ordering (Bounded Refutation)"
+    },
+    "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12": {
+      "claim_id": "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "db3234dad03957b8b81e835751ba983e274be5d75569aba275a6bdb8a5d13184",
+      "path": "docs/DET_HOLONOMY_TRIVIAL_ON_HERMITIAN_POSITIVE_CIRCULANT_EDGE_CONTENT_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_det_holonomy_trivial_hermitian_positive_circulant_2026_06_12.py",
+      "title": "Det-Holonomy Is Trivial on Hermitian Positive Circulant Edge Content (Bounded Wall)"
     },
     "det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12": {
       "claim_id": "det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12",
@@ -69680,6 +69801,21 @@
       "runner_path": null,
       "title": "Equivalence Principle \u2014 Meta Demotion (No Measured-Exponent Claim)"
     },
+    "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12": {
+      "claim_id": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5edadbb1bc4a6b4992eecff1048309717fdccbb3a68a24e102c4c0f296e4025f",
+      "path": "docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py",
+      "title": "Equivariant Wilson-Eta Densities Vanish on the Tested Window - Bounded Note"
+    },
     "erosion_exact_recurrence_path_product_threshold_obstruction_bounded_theorem_note_2026-06-12": {
       "claim_id": "erosion_exact_recurrence_path_product_threshold_obstruction_bounded_theorem_note_2026-06-12",
       "claim_type_author_hint": "bounded_theorem",
@@ -73440,7 +73576,7 @@
         "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
         "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
       ],
-      "note_hash": "780fec5d91e33147019afde023a3be32e86c7ae434ab46c785f2ed266a219ad3",
+      "note_hash": "0424ed5473adcdf084ce5fad78a50a0c49367740c19f510b5d5a876f91b5f74b",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md",
       "runner_path": "scripts/gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06_12.py",
       "title": "Gauge-Vacuum Plaquette Adjacent-Word Contraction Derived Narrow Theorem"
@@ -73470,7 +73606,7 @@
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "88c02008339e2649ae0bcf7b10daed30f2879b60a9a6823c7d9f03625ab88a9d",
+      "note_hash": "c175c6f83499797d47da422de855fb20ab125986623ba7544aef7eeac89a6f1c",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction (Formal Algebraic Lemma)"
@@ -83211,6 +83347,26 @@
       "runner_path": "scripts/frontier_koide_q_readout_factorization_theorem.py",
       "title": "Koide Q Readout Factorization Theorem"
     },
+    "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12": {
+      "claim_id": "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "koide_q_reduced_observable_restriction_theorem_2026-04-22",
+        "three_generation_observable_theorem_note",
+        "minimal_axioms",
+        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+        "koide_q_readout_factorization_theorem_2026-04-22",
+        "koide_q_minimal_scale_free_selector_note_2026-04-22",
+        "flavor_readout_gate_equals_carrier_identification_2026-05-31"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "4e67d8a4b0898341770bdb4a743bb3866423c248ef4e15e22e52a832c80e363c",
+      "path": "docs/KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md",
+      "runner_path": "scripts/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.py",
+      "title": "Koide Q Reduced Carrier Physical-Identification Obstruction"
+    },
     "koide_q_reduced_observable_restriction_theorem_2026-04-22": {
       "claim_id": "koide_q_reduced_observable_restriction_theorem_2026-04-22",
       "claim_type_author_hint": "bounded_theorem",
@@ -83218,12 +83374,13 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "koide_q_dred_normalization_freedom_no_go_note_2026-06-15",
+        "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12",
         "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
         "koide_q_readout_factorization_theorem_2026-04-22",
         "koide_q_minimal_scale_free_selector_note_2026-04-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "323f343cf830daf3c36815e867c84ad7868887ceb257bc4a90c8c6f2adfebd83",
+      "note_hash": "149dd62e657d42e4444f47f088e04d9f8a0375bfce9a8262b11cbbd896382260",
       "path": "docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md",
       "runner_path": "scripts/frontier_koide_q_reduced_observable_restriction_theorem.py",
       "title": "Koide Q Reduced Observable Restriction Theorem"
@@ -92850,6 +93007,38 @@
       "runner_path": "scripts/frontier_plaquette_c6_derivation_framework_su3_narrow.py",
       "title": "SU(3) Wilson Plaquette Strong-Coupling c_6 = 24 Framework-Bounded Factorization Note"
     },
+    "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12": {
+      "claim_id": "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+        "su3_wigner_intertwiner_block3_theorem_note_2026-05-03",
+        "su3_wigner_l3_treewidth_infeasible_2026-05-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "73bb2ba8821508bb16e38c80a7d2b6095ddade7e90819ad4e00f70083f5b091d",
+      "path": "docs/PLAQUETTE_ENVIRONMENT_CONTRACTION_COST_VERIFICATION_BOUNDED_NOTE_2026-06-12.md",
+      "runner_path": "scripts/plaquette_environment_contraction_cost_verification_bounded_2026_06_12.py",
+      "title": "Plaquette Environment Contraction Cost Verification, Bounded"
+    },
+    "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12": {
+      "claim_id": "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
+        "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+        "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "703660350950e0ea437e3e6a38ef4e41acc78cbaab3bd58775650538ba5f6f00",
+      "path": "docs/PLAQUETTE_ENVIRONMENT_QUOTIENT_EQUIVARIANCE_NARROW_THEOREM_NOTE_2026-06-12.md",
+      "runner_path": "scripts/plaquette_environment_quotient_equivariance_narrow_theorem_2026_06_12.py",
+      "title": "Plaquette Environment Quotient Equivariance Narrow Theorem Note"
+    },
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10": {
       "claim_id": "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -100440,13 +100629,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "scalar_trace_tensor_no_go_note",
-        "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
-        "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
+        "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26",
+        "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+        "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "03bd6adedd2472177c62359f4b332bfb3d04c1edfc7ce302ab298337b406d12f",
+      "note_hash": "076a22fe42ef8049a71f7cd1929c05bfe9e4ea913ab71d202307c73184b776ce",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -115491,27 +115684,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1287,
+      "bounded_theorem": 1292,
       "decoration": 2,
       "meta": 284,
       "no_go": 195,
       "none": 1450,
-      "open_gate": 105,
+      "open_gate": 106,
       "positive_theorem": 194
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1691,
+      "bounded_theorem": 1696,
       "decoration": 2,
       "meta": 284,
       "no_go": 301,
       "none": 461,
-      "open_gate": 179,
+      "open_gate": 180,
       "positive_theorem": 599
     },
-    "edge_count": 13141,
-    "leaf_count": 1142,
-    "node_count": 3517,
+    "edge_count": 13164,
+    "leaf_count": 1145,
+    "node_count": 3523,
     "root_count": 1077,
-    "runners_with_path": 3103
+    "runners_with_path": 3109
   }
 }

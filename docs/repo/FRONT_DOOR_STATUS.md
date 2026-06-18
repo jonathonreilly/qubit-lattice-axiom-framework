@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1399 |
-| Retained-grade rows, including boxed decorations | 1371 |
+| Applied audit verdicts | 1400 |
+| Retained-grade rows, including boxed decorations | 1372 |
 | Retained positive theorems | 212 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 909 |
+| Retained bounded rows | 910 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 14 |
 | Unaudited rows | 1655 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1660 |
-| Ready rows | 162 |
+| Total pending rows | 1659 |
+| Ready rows | 161 |
 | Cycle-break targets | 7 |
-| Critical pending | 329 |
+| Critical pending | 328 |
 | High pending | 289 |
 | Medium pending | 473 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
-- [`g_bare_constraint_vs_convention_theorem_note_2026-05-03`](../../docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md) - critical; audit_in_progress
 - [`staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07`](../../docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) - critical; unaudited
 - [`observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - critical; unaudited
 - [`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`](../../docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) - critical; unaudited
 - [`cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26`](../../docs/CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - critical; unaudited
+- [`universal_gr_polarization_frame_bundle_blocker_note`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
